@@ -2,7 +2,7 @@
 uid: learn.design-a-hybrid-network-architecture.4-working-with-hybrid-networks
 metadata:
   title: Working with hybrid networks on Azure
-  description: TODO
+  description: Explore hybrid networking patterns in Azure, the features and limitations of individual services and an overview of the hub-spoke architecture.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
@@ -13,3 +13,48 @@ title: Working with hybrid networks on Azure
 durationInMinutes: 10
 content: |
   [!include[](includes/4-working-with-hybrid-networks.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'Why are VPN Gateways simpler to implement than ExpressRoute?'
+    choices:
+    - content: ExpressRoute does not support Resource Manager templates
+      isCorrect: false
+      explanation: ExpressRoute does support Resource Manager templates.
+    - content: Template connectivity models
+      isCorrect: false
+      explanation: Connectivity models are templates to a degree but still require configuration, these also exist in ExpressRoute.
+    - content: Connectivity to the Microsoft Cloud Platform
+      isCorrect: false
+      explanation: VPN gateways do not provide connectivity to the all Microsoft Cloud platform services.
+    - content: Familiarity with network architects
+      isCorrect: true
+      explanation: VPN Gateway is a similar technology for connecting networks and has been used on-premises for decades.
+  - content: 'How are VPN Gateway connections to on-premises routed?'
+    choices:
+    - content: Through a private VPN connection
+      isCorrect: false
+      explanation: VPN Gateways do not use a private connection.
+    - content: Over the public internet
+      isCorrect: true
+      explanation: VPN Gateway sends encrypted traffic between on-premises and the Azure network over the public internet.
+    - content: Through the Azure data-center
+      isCorrect: false
+      explanation: VPN gateways are used to connect to an Azure network in your subscription not to an Azure data-center. 
+    - content: By provisioning a traffic manager
+      isCorrect: false
+      explanation: Traffic managers help with routing and traffic filtering but not for on-premises.
+  - content: 'Which is a benefit of a hub-spoke architecture?'
+    choices:
+    - content: Greater cost visibility
+      isCorrect: false
+      explanation: A hub-spoke architecture can help towards cost reduction not visibility.
+    - content: Greater security
+      isCorrect: false
+      explanation: A hub-spoke architecture may be more secure but it is not normally thought of as a benefit.
+    - content: Greater business visibility
+      isCorrect: true
+      explanation: The hub becomes the core of the business and provides the foundations for much deeper business insight.
+    - content: Faster network communications
+      isCorrect: false
+      explanation: A hub-spoke architecture could help towards increased network speed but it is not guaranteed to remove network bottlenecks.

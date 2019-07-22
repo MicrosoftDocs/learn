@@ -2,7 +2,7 @@
 uid: learn.design-a-hybrid-network-architecture.5-choosing-hybrid-architecture
 metadata:
   title: Choosing a hybrid network architecture on Azure
-  description: TODO
+  description: See some hybrid networking scenarios that may use AzureVPN Gateways and Azure ExpressRoute.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
@@ -13,3 +13,48 @@ title: Choosing a hybrid network architecture on Azure
 durationInMinutes: 10
 content: |
   [!include[](includes/5-choosing-hybrid-architecture.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'What is a valid use case for using Azure ExpressRoute?'
+    choices:
+    - content: Mission-critical workloads
+      isCorrect: true
+      explanation: ExpressRoute is the recommended service for mission-critical large-scale workloads.
+    - content: For prototyping
+      isCorrect: false
+      explanation: ExpressRoute is not the best connectivity method for prototyping in Azure as it is expensive and takes time to set up.
+    - content: Dev/Test workloads
+      isCorrect: false
+      explanation: ExpressRoute is not the most suitable connection method for dev/test workloads as it is expensive and takes time to set up.
+    - content: Small production workloads
+      isCorrect: false
+      explanation: VPN Gateway is better suited for small production workloads and lower traffic throughput.
+  - content: 'Why would an organization choose VPN Gateway over Azure ExpressRoute?'
+    choices:
+    - content: Bandwidth limitations 
+      isCorrect: false
+      explanation: ExpressRoute has a wide selection of available bandwidths.
+    - content: Cost and Traffic Volume
+      isCorrect: true
+      explanation: VPN Gateway is cheaper than ExpressRoute and is more suited for smaller traffic volumes.
+    - content: Redundancy support
+      isCorrect: false
+      explanation: Both services have redundancy support through adding them to an Azure availability zone.
+    - content: Lack of ExpressRoute partners
+      isCorrect: false
+      explanation: There is a rich ecosystem of system integrators and partners for ExpressRoute.
+  - content: 'What is the preferred connectivity method for Remote Desktop Connections (RDC)?'
+    choices:
+    - content: Site-to-Site VPN
+      isCorrect: false
+      explanation: Site-to-site VPN connections are to connect on-premises datacenters with Azure.
+    - content: Azure ExpressRoute
+      isCorrect: false
+      explanation: Azure ExpressRoute is for high volume mission-critical workloads.
+    - content: Point-to-site VPN
+      isCorrect: true
+      explanation: A point-to-site VPN connection should be used for RDC scenarios from a local client machine to Azure.
+    - content: Direct connection to Azure VM
+      isCorrect: false
+      explanation: It's possible to directly connect to an Azure VM, but it's not the recommended method.

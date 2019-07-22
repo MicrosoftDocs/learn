@@ -2,7 +2,7 @@
 uid: learn.design-a-hybrid-network-architecture.3-expressroute-for-hybrid-networks
 metadata:
   title: Using Azure ExpressRoute for hybrid networks
-  description: TODO
+  description: Explore on-premises hybrid connectivity using Azure ExpressRoute, an overview of the components available in ExpressRoute, and walkthrough of a reference architecture supporting this topology.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
@@ -13,3 +13,48 @@ title: Using Azure ExpressRoute for hybrid networks
 durationInMinutes: 10
 content: |
   [!include[](includes/3-expressroute-for-hybrid-networks.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'Which of the following is a valid connectivity model for Azure ExpressRoute?'
+    choices:
+    - content: A cross-network connection
+      isCorrect: false
+      explanation: Cross network connections and ExpressRoute are supported but the correct model is via a colocated facility through a Cloud Exchange provider.
+    - content: A point-to-point ethernet network
+      isCorrect: true
+      explanation: A point-to-point ethernet connection is used to connects on-premises datacenters and offices to Azure through a point-to-point ethernet link.
+    - content: Azure vnet-to-vnet connectivity
+      isCorrect: false
+      explanation: Vnet-to-vnet connections can be configured in ExpressRoute but it is not a connectivity model.
+    - content: A point-to-site network
+      isCorrect: false
+      explanation: A point-to-site network is a connectivity model for a VPN Gateway.
+  - content: 'What is the lowest available bandwidth for Azure ExpressRoute?'
+    choices:
+    - content: 1 Gbps
+      isCorrect: false
+      explanation: A 1-Gbps bandwidth connection is available with ExpressRoute but is not the lowest.
+    - content: 100 Mbps
+      isCorrect: false
+      explanation: A 100-Mbps bandwidth connection is available with ExpressRoute but is not the lowest.
+    - content: 50 Mbps
+      isCorrect: true
+      explanation: A 50-Mbps bandwidth connection is the lowest available with Azure ExpressRoute SKUs.
+    - content: 25 Mbps
+      isCorrect: false
+      explanation: A 25-Mbps bandwidth connection is not available with ExpressRoute.
+  - content: 'How can a VPN Gateway be used with Azure ExpressRoute?'
+    choices:
+    - content: VPN Gateway is used to connect to a CloudExchange provider
+      isCorrect: false
+      explanation: CloudExchange providers are used in a colocated ExpressRoute model, a VPN Gateway is not used.
+    - content: VPN Gateway is used for ExpressRoute to connect to on-premises networks
+      isCorrect: false
+      explanation: A VPN Gateway is a separate resource to Azure ExpressRoute.
+    - content: VPN Gateway can't be combined with ExpressRoute
+      isCorrect: false
+      explanation: A VPN Gateway combined with ExpressRoute is a supported architecture.
+    - content: As a coexisting connection for failover
+      isCorrect: true
+      explanation: A VPN Gateway can be configured for a failover route if there's a loss of connectivity to an Azure ExpressRoute circuit.
