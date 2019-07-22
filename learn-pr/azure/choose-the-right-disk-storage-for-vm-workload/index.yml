@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of Azure disk storage
   - Basic knowledge of Azure virtual machines and virtual machine types
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/choose-the-right-disk-storage-for-vm-workload.svg
 badge:
   uid: learn.choose-the-right-disk-storage-for-vm-workload.badge
 levels: 
