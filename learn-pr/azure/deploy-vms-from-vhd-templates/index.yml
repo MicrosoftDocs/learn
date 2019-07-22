@@ -18,7 +18,7 @@ abstract: |
   - Create a virtual machine from an existing virtual machine image
 prerequisites: |
   - Basic knowledge of Azure virtual machines
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/deploy-vms-from-vhd-templates.svg
 badge:
   uid: learn.deploy-vms-from-vhd-templates
 levels: 
