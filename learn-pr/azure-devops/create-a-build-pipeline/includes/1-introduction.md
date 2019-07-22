@@ -10,7 +10,7 @@ She also remembers that they picked three of the problems to fix within the next
 
 ![Azure Boards showing the initial three tasks](../../shared/media/build-initial-tasks.png)
 
-Mara decides to take an initial pass on the biggest issue, **Stabilize the build server**, herself. She won't try to fix everything. Instead, she's going to see if she can use Azure Pipelines to replicate the current build process. She's convinced that Azure Pipelines provides enough benefits that the process will be improved just by using it. If she's right, she'll show her version to the team to see if she can make them more enthusiastic.
+Mara decides to take an initial pass on the biggest issue, **Stabilize the build server**, herself. She won't try to fix everything. Instead, she's going to see if she can use Azure Pipelines to replicate the current build process. She's convinced that Azure Pipelines provides enough benefits to improve the process. If she's right, she'll show her version to the team to see if she can make them more enthusiastic.
 
 ## Learning objectives
 
@@ -38,7 +38,7 @@ This environment lets you complete the exercises in this and future modules. You
 
 ## Meet the team
 
-You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module.
+You met the Space Game web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module.
 
 :::row:::
 
@@ -50,4 +50,4 @@ You met the _Space Game_ web team at Tailspin Toys in previous modules. As a ref
 
 :::row-end:::
 
-Mara has prior experience with DevOps and is helping the team adopt a more streamlined process using Azure DevOps.
+Mara has prior experience with DevOps and is helping the team adopt a more streamlined process by using Azure DevOps.
