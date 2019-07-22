@@ -2,7 +2,7 @@
 uid: learn.design-a-geographically-distributed-application.4-geo-distributed-app
 metadata:
   title: Design a geographically distributed application architecture
-  description: In this unit, you'll learn how to use resource groups and Azure Storage to underpin a distributed app.
+  description: Design a geographically distributed application architecture
   ms.date: 06/30/2019
   author: jboeshart
   ms.author: jaboes

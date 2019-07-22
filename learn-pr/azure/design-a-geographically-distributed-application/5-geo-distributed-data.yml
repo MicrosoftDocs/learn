@@ -2,7 +2,7 @@
 uid: learn.design-a-geographically-distributed-application.5-geo-distributed-data
 metadata:
   title: Design a geographically distributed data architecture
-  description: In this unit, you'll learn how to ensure that your data storage technology is robust against regional failures.
+  description: Design a geographically distributed data architecture
   ms.date: 06/30/2019
   author: jboeshart
   ms.author: jaboes
