@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Azure Solution Architect - Infrastructure Operations/design-a-holistic-monitoring-strategy-on-azure</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-6.7%" y="-7.8%" width="113.3%" height="115.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0964956975 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M0,10 C0,15.51375 4.4859375,20 10,20 C15.5140625,20 20,15.51375 20,10 C20,4.4859375 15.5140625,0 10,0 C4.4859375,0 0,4.4859375 0,10 Z" id="path-4"></path>
+        <filter x="-5.0%" y="-5.0%" width="110.0%" height="120.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M20.0395727,44.0713446 L30.0866224,44.086713 L33.6382264,36.2617903 C33.8664875,35.7588835 34.4592163,35.5362391 34.9621231,35.7645003 C35.209916,35.8769694 35.401173,36.0855647 35.491771,36.3421628 L39.8196093,48.5997829 C40.003482,49.1205605 40.5747138,49.3936759 41.0954914,49.2098032 C41.4036989,49.1009834 41.6392732,48.8484089 41.7263883,48.5333778 L44.2958568,39.2415024 C44.443055,38.7091951 44.993903,38.3970024 45.5262104,38.5442005 C45.8045634,38.6211731 46.0360471,38.8147273 46.1610903,39.0750528 L48.3326299,43.5959513 C48.5717557,44.093784 49.1691785,44.3035073 49.6670111,44.0643816 C49.8933801,43.9556489 50.0705517,43.765725 50.1633138,43.5323564 L53.3831582,35.4319521 C53.5871614,34.9187259 54.1685908,34.6680512 54.681817,34.8720544 C54.9643728,34.984368 55.1804801,35.2191365 55.2690604,35.5100071 L58.6138291,46.4932027 C58.7747238,47.0215315 59.3334498,47.3193957 59.8617787,47.1585011 C60.0588541,47.0984847 60.2325843,46.9790663 60.3592183,46.8165716 L64.5959908,41.380019 C64.974956,40.8937375 65.5570115,40.609408 66.1735213,40.609408 L75.028242,40.609408" id="path-6"></path>
+        <filter x="-3.6%" y="0.1%" width="107.3%" height="108.8%" filterUnits="objectBoundingBox" id="filter-7">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Azure-Solution-Architect---Infrastructure-Operations" transform="translate(-50.000000, -860.000000)">
+            <g id="Azure-Solution-Architect---Infrastructure-Operations/design-a-holistic-monitoring-strategy-on-azure" transform="translate(50.000000, 860.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Monitor" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(17.000000, 24.000000)">
+                            <path d="M0.714285714,33 L0.714285714,38.4 C0.714285714,40.38 2.37366071,42 4.40178571,42 L56.0267857,42 C58.0549107,42 59.7142857,40.38 59.7142857,38.4 L59.7142857,33 L0.714285714,33" id="Fill-1285" fill="#E1E4E1"></path>
+                            <path d="M5.625,0 C3.63125,0 2,1.65 2,3.66666667 L2,33 L60,33 L60,3.66666667 C60,1.65 58.36875,0 56.375,0 L5.625,0 Z M56.2,2 C57.1927,2 58,2.81290625 58,3.8125 L58,31 L4,31 L4,3.8125 C4,2.81290625 4.8073,2 5.8,2 L56.2,2 L56.2,2 Z" id="Fill-1287" fill="#182A37"></path>
+                            <path d="M3,3.875 C3,2.8409375 3.82225,2 4.83333333,2 L56.1666667,2 C57.17775,2 58,2.8409375 58,3.875 L58,32 L3,32 L3,3.875" id="Fill-1288" fill="#30404D"></path>
+                            <path d="M4.83742216,2 L30,2 L21.016843,32 L3,32 L3,3.875 C3,2.8409375 3.82408384,2 4.83742216,2" id="Fill-1289" fill="#384B58"></path>
+                            <path d="M30,0 L29.4462813,1.83333333 L4.625,1.83333333 C3.62540625,1.83333333 2.8125,2.65558333 2.8125,3.66666667 L2.8125,32.0547802 L20.5849688,32.0547802 L20.03125,33 L1,33 L1,3.66666667 C1,1.65 2.63125,0 4.625,0 L30,0 Z" id="Fill-1290" fill="#30404D"></path>
+                            <polyline id="Fill-1291" fill="#E1E4E1" points="37.7142857 50 22.7142857 50 24.5892857 42 35.8392857 42 37.7142857 50"></polyline>
+                            <path d="M37.6678617,50 L35.867931,42 L24.4004846,42 L24,43.7777778 L28.0003461,43.7777778 C28.9948079,43.7777778 29.8002769,44.5733333 29.8002769,45.5555556 L29.8002769,50 L37,50" id="Fill-1292" fill="#CDD6D8"></path>
+                            <path d="M40.7142857,50 C40.7142857,50.55 40.3017857,51 39.797619,51 L19.6309524,51 C19.1267857,51 18.7142857,50.55 18.7142857,50 C18.7142857,49.45 19.1267857,49 19.6309524,49 L39.797619,49 C40.3017857,49 40.7142857,49.45 40.7142857,50" id="Fill-1293" fill="#E1E4E1"></path>
+                            <path d="M19.6309524,51 L39.797619,51 C40.3017857,51 40.7142857,50.55 40.7142857,50 L18.7142857,50 C18.7142857,50.55 19.1267857,51 19.6309524,51" id="Fill-1294" fill="#CDD6D8"></path>
+                        </g>
+                    </g>
+                    <g id="Azure-logo" mask="url(#mask-2)">
+                        <g transform="translate(63.000000, 53.000000)">
+                            <g id="Azure-Cirlce">
+                                <path d="M-1.5,10 C-1.5,3.65751038 3.65751038,-1.5 10,-1.5 C16.3424896,-1.5 21.5,3.65751038 21.5,10 C21.5,16.3422777 16.342389,21.5 10,21.5 C3.65761099,21.5 -1.5,16.3422777 -1.5,10 Z" id="Path" stroke="#55A2FF" stroke-width="3"></path>
+                                <g id="Path">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                                    <use fill="#F7CB64" fill-rule="evenodd" xlink:href="#path-4"></use>
+                                </g>
+                                <path d="M13.4301189,0.606060581 C17.2597603,2.00878386 20,5.69037631 20,10 C20,15.51375 15.5140625,20 10,20 C7.99968668,20 6.13467361,19.4096139 4.57003547,18.393961 C5.64028721,18.7859734 6.7956191,19 8,19 C13.5140625,19 18,14.51375 18,9 C18,5.48631566 16.1784742,2.39010397 13.4301167,0.606059136 Z" id="Combined-Shape" fill="#EFB252"></path>
+                            </g>
+                            <g id="Azure-black" transform="translate(3.000000, 4.000000)">
+                                <polygon id="Path" fill="#FFFFFF" points="3 9.99902376 13 10 7.61421628 1 5.97387606 5.34526521 9.12393682 8.95834689"></polygon>
+                                <polygon id="Path" fill="#FFFFFF" points="7 0 3.22870908 3.2488401 0 8.99083399 2.91228567 8.99083399 2.91228567 9"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="monitor-line" mask="url(#mask-2)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                        <use stroke="#FFFFFF" stroke-width="2" xlink:href="#path-6"></use>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

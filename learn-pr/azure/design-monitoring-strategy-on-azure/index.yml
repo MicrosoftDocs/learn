@@ -17,7 +17,7 @@ abstract: |
 prerequisites: | 
   - Basic knowledge of Azure services
   - Basic knowledge of operational concepts, such as monitoring, logging, and alerting
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/design-monitoring-strategy-on-azure.svg
 levels:
 - intermediate
 roles:
