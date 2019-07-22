@@ -118,6 +118,7 @@ os.makedirs('outputs', exist_ok=True)
 # note that the file saved in the outputs folder automatically uploads into the experiment record
 joblib.dump(value=model, filename='outputs/knn_mnist_model.pkl')
 ```
+Notice that the last line of the training script saves the model as a pickle file in the outputs folder of the experiment workspace.  You use this pickle file later to deploy the model.
 
 Now, you must add a **utils** script, as shown below, for loading data and creating an estimator so that it's easier to scale your work in the future. An estimator object is used to submit the run. Create your estimator by running the following code to define:
 
