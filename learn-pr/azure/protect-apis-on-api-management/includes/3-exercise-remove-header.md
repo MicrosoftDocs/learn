@@ -70,7 +70,7 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
     |**Name** | Type `apim-CensusData<random number>`; the random number is to ensure that the name is globally unique. |
     | **Subscription** | Concierge Subscription |
     | **Resource group** | Select the existing resource group **<rgn>[sandbox resource group name]</rgn>** |
-    | **Location** | Select West Europe or South East Asia. | <!-- These are the only two locations supported by both the consumption tier and the sandbox. --> 
+    | **Location** | Select from one of the following: North Central US, West US, West Europe, North Europe, Southeast Asia, and Australia East. The Consumption tier used in this exercise is only available in these regions. |
     | **Organization Name** | Type `Government-Census`. |
     | **Administrator Email** | Type your own email address. |
     | **Pricing Tier** | Select `Consumption (preview)`. |
@@ -98,7 +98,6 @@ Now import the Census API into the API Management gateway:
     > You will notice that, when you tab out of the box, some of the other fields will be populated for you, this is because you have used OpenAPI which specifies all of the required connection details.
 
 1. Leave the other settings at their defaults, and then click **Create**.
-1. On the API details page, click **Settings**, and then click **Save**.
 
 ## Test the API
 
@@ -115,7 +114,7 @@ Let's see what data is returned in from the API by default:
 
 ## Remove Headers
 
-The final step is to remove the two headers **X-Powered-By** and **Server**:
+Now we'll add a policy to remove the **X-Powered-By** header from responses sent by the API:
 
 1. Select **Census Data** and then, at the top of the screen, select the **Design** tab.
 1. Select **All operations**, and then in the **Outbound processing** section, click the **</>** icon.
@@ -142,4 +141,4 @@ You should now be able to run a test to demonstrate that the headers are removed
 
     ![Headers Removed Test](../media/3-headers-removed.png)
 
-1. The **X-Powered-By** should not be in the response.
+1. The **X-Powered-By** header should not be in the response.

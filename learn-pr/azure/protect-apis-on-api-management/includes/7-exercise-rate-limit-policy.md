@@ -16,7 +16,7 @@ To apply a **throttling** policy within API Management, follow these steps:
 
     ![Overview of API management](../media/7-apply-throttling-policy.png)
 
-1. Replace the entire `<inbound>` with the following code:
+1. Replace the entire `<inbound>` element with the following code:
 
     ```XML
     <inbound>

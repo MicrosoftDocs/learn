@@ -1,4 +1,4 @@
-If an API that you host includes it original URL in responses, clients may be able to bypass your API Management policies by connecting directly to the API. You can prevent that by masking the original URL in API responses.
+If an API that you host includes its original URL in responses, clients may be able to bypass your API Management policies by connecting directly to the API. You can prevent that by masking the original URL in API responses.
 
 The Government census API includes its URL in this way. You want to make sure that all requests go through API Management.
 

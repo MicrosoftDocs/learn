@@ -10,9 +10,12 @@ The response body of an API call contains the data that is being requested. In t
 
 ![Links in Response Body](../media/4-links-in-body.png)
 
-These links are based on the Census API endpoints and need to be masked to show only the API Management URLs. Otherwise, a malicious user could attempt to access the data through a less secured API.
+These links are based on the Census API endpoints and need to be masked to show the API Management URLs instead.
 
 To achieve this configuration, we will create a transformation policy.
+
+> [!NOTE]
+> It's best practice to secure the backend API by configuring it to require a client certificate and then configuring API Management to supply that certificate. It this configuration, no one can call the backend API directly and circumvent your API Management gateway because they don't have a certificate that's recognized by the backend. 
 
 ## Transformation Policy
 
