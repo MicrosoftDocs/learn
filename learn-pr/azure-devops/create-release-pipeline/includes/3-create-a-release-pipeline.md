@@ -1,45 +1,69 @@
-Here we describe all of the pieces they will need to create a deployment pipeline.
+Andy and Mara are going to create a simple CD pipeline to demo to the rest of the team. The pipeline will be a POC that they'll improve on and expand as they learn more and get feedback from Tim and Amita. They're sitting in a conference room, ready to get started.
 
-Resources:
+"I've never build a CD pipeline before," Andy says. "Have you?" It's new to me, too," Mara answers. 
 
-[ILT Content Link](https://courses.microsoft.com/courses/course-v1:ELMS+AZ-400.3+2019_T1/course/?azure-portal=true)
+"Given we're both newbies," Andy says, "I was thinking that we already have a working automated pipeline--our build pipeline. We could start with that." Mara laughs. "Great minds. We could probably adapt the build .yml file. But what do we need to turn our build pipeline into a simple CD pipeline?"
 
-From this link, the relevant breadcrumbs are below:
+## What makes up a simple pipeline
 
-Course > Design a Release Strategy > Release Strategy Recommendations > Release Strategy - Introduction and Overview
+Andy says, "Here's what I think we need to start." He makes a list on the whiteboard:
 
-Course > Design a Release Strategy > Release Strategy Recommendations > Artifacts and Artifact sources
+* An artifact
+* A trigger
+* At least one stage 
+* Tasks for each stage
 
-Course > Design a Release Strategy > Release Strategy Recommendations > Considerations for choosing the right artifact source
+"The artifact will be the .zip file we already create in the build pipeline. The trigger can also stay the same. When there's a change in version control, the pipeline starts."
 
-Course > Design a Release Strategy > Release Strategy Recommendations > Deployment Stages
+## What is a stage
 
-Course > Design a Release Strategy > Release Strategy Recommendations > Considerations for setting up Deployment Stages
+"I think that's a great start and pretty straightforward," Mara says. "Lets define a *stage* as a major division in a pipeline. Every stage is independent of every other stage. We could have a stage that builds the app, another that runs some tests, there's lots of possibilities. But we want to keep it simple so what about two stages?" She writes on the board:
 
-Course > Set Up a Release Managment Workflow > Create a Release Pipeline > Build and Release Tasks
+* Build stage -- builds the artifact
+* Deploy stage -- installs the artifact???
 
-Course > Set Up a Release Managment Workflow > Create a Release Pipeline > Important Deployment Tasks
+"Those could be the stages and the tasks for each stage. The question is, where should we deploy the artifact?"
 
-Course > Set Up a Release Managment Workflow > Create a Release Pipeline > Agents, Agent Pools and Queues
+## What are some deployment options
 
-Course > Set Up a Release Managment Workflow > Create a Release Pipeline > Release Agent Jobs Introduction
+"At a really high level," Andy says, "do you want to deploy on premises or to Azure?" "I vote for the cloud," Mara says. "It'll be super fast and easy to set up a POC." 
 
-Course > Set Up a Release Managment Workflow > Create a Release Pipeline > Using Release Jobs
+"I agree," Andy says. "Here are a few cloud options to consider." He makes a list:
 
-Course > Set Up a Release Managment Workflow > Create a Release Pipeline > Release Variables
+* VM
+* Azure App Service
+* Container
 
-## What do I need to build my pipeline?
+"I know containers are really popular right now," Mara says. Compared to VMs, they're lightweight in terms of resouces. I also know that they're easy to replace and scale up. They're interesting but I'm nervous about learning about two new technologies at once. I'd rather just concentrate on building the pipeline."
 
-Multistage explanation here
+"I'm with you," says Andy. "That leaves VMs or Azure App Services." I think VMs would be a better choice if we were moving some line-of-business app that needed it's own particular environment to the cloud. We're not doing anything that big." 
 
-### What do I deploy?
+"That leaves Azure App Service," Mara says. "That would be my choice. It's designed to work with Azure DevOps and it comes with a lot of advantages. It's a platform-as-a-service (PaaS) environment for web apps so it takes a lot of the burden off of us. We wont' have to worry about infrastructure and we get a lot of benefits, like security, load balancing, and autoscaling."
 
-Sources - Artifacts
+## How to gain visibility
 
-### Build and Release Tasks
+"Great," Andy says. "Did we forget anything?"
 
-### Deployment Tasks
+"We got some visibililty into the build pipeline by adding a dashboard that shows build history. I don't want to lose that insight. Let's add a dashboard that keeps track of our release history." 
 
-### Release Agent Jobs
+**NOTE-is this what the dashboard will do?**
 
-### Release Variables
+"You got it," Andy says.
+
+## Summary
+
+Andy and Mara are ready to start. They're going to:
+
+* Use the existing build platform as the basis of the CD pipeline
+* Have a build stage that creates the artifact
+* Have a deploy stage that installs the artifact to Azure App Service
+* Have a dashboard that shows the release history
+
+
+
+
+
+
+
+
+
