@@ -27,11 +27,11 @@ quiz:
     - content: "Use open-source code only from reputable authors."
       isCorrect: false
       explanation: "Even the most reputable authors can inadvertently publish vulnerable code."
-  - content: "Why is it important to assess the license that's associated with every open source component you use?"
+  - content: "Why is it important to assess the license that's associated with every open-source component you use?"
     choices:
     - content: "Some licenses have provisions that might not be acceptable to your company's use of open source."
       isCorrect: true
-      explanation: "As an example, some licenses require you to make public any changes you make to an open source library. Doing so might reveal trade secrets that you want to protect."
+      explanation: "As an example, some licenses require you to make public any changes you make to an open-source library. Doing so might reveal trade secrets that you want to protect."
     - content: "It helps you choose a license for your own open source projects."
       isCorrect: false
       explanation: "Although you can learn  how other projects define their license terms, the focus here is on ensuring that the licenses you use are acceptable to your company's use of open source."

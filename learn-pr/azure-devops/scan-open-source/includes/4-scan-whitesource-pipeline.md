@@ -55,13 +55,13 @@ Here you'll install the **WhiteSource Bolt** extension for Azure Pipelines. This
 
 ## Add tasks to the pipeline configuration
 
-Here you'll use the built-in task `WhiteSource Bolt@19` that's provided by the WhiteSource Bolt extension to scan your open source dependencies when the pipeline runs.
+Here you'll use the built-in task `WhiteSource Bolt@19` that's provided by the WhiteSource Bolt extension to scan your open-source dependencies when the pipeline runs.
 
 1. From Visual Studio Code, open **azure-pipelines.yml** and replace its contents with the following:
 
     [!code-yml[](code/4-azure-pipelines.yml?highlight=54-55)]
 
-    The `WhiteSource Bolt@19` task, which runs before the `PublishBuildArtifacts@1` task, is highlighted. It analyzes your open source dependencies for known vulnerabilities, as well as licenses and prepares reports that you can review directly from Azure Pipelines.
+    The `WhiteSource Bolt@19` task, which runs before the `PublishBuildArtifacts@1` task, is highlighted. It analyzes your open-source dependencies for known vulnerabilities, as well as licenses and prepares reports that you can review directly from Azure Pipelines.
 
 ## Watch Azure Pipelines build the application
 
@@ -121,6 +121,6 @@ The team gets together to look at the results.
 
 ## Limit scanning to pull requests
 
-In this example, the scan took about 30 seconds to run. Although this doesn't add much time to the overall build, the time might increase as you use additional open source libraries.
+In this example, the scan took about 30 seconds to run. Although this doesn't add much time to the overall build, the time might increase as you use additional open-source libraries.
 
-As an optional exercise, you can limit the scans to run only during pull request builds to the `master` branch, just as you did in the [Scan code for vulnerabilities in your build pipeline](/learn/modules/scan-for-vulnerabilities/6-scan-pull-request?azure-portal=true) module. Doing so helps standard CI builds to finish more quickly while still helping you discover potential vulnerabilities and understand how you're licensing open source components before you merge code into the `master` branch.
+As an optional exercise, you can limit the scans to run only during pull request builds to the `master` branch, just as you did in the [Scan code for vulnerabilities in your build pipeline](/learn/modules/scan-for-vulnerabilities/6-scan-pull-request?azure-portal=true) module. Doing so helps standard CI builds to finish more quickly while still helping you discover potential vulnerabilities and understand how you're licensing open-source components before you merge code into the `master` branch.
