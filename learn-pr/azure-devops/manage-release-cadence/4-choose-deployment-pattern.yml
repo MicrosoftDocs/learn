@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.manage-release-cadence.4-choose-deployment-pattern
+title: Choose a deployment pattern for continuous delivery in Azure DevOps
+metadata:
+  title: Choose a deployment pattern for continuous delivery in Azure DevOps
+  description: Choose a deployment pattern for continuous delivery in Azure DevOps
+  ms.date: 09/01/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-choose-deployment-pattern.md)]
