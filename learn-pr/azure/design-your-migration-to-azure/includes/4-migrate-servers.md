@@ -4,11 +4,9 @@ You've presented your findings to the IT Director and you now wish to continue w
 
 In this unit, you'll review Azure Site Recovery and how it can be used to migrate specific workloads to Azure.
 
-
-
 ## What is Azure Site Recovery?
 
-![The flow of migration from on-premises vCenter VMWare virtual machines to Azure with Azure Site Recovery](../media/vm-migration.png)
+![The flow of migration from on-premises vCenter VMWare virtual machines to Azure with Azure Site Recovery](../media/4-vm-migration.svg)
 
 Azure Site Recovery is designed to manage a disaster recovery plan, and can replicate workloads from a primary site to a secondary site if there's an outage. When an issue occurs at the primary site, the Site Recovery service can be automatically invoked and the virtual machines that are protected will be replicated to a secondary location to continue running. The failover could be an on-premises to Azure failover, or a failover from one Azure region to another. 
 
@@ -51,7 +49,7 @@ Once the steps to configure the source and target environments are complete, the
 
 In the Azure portal, select the recovery point from which the virtual machine should failover/migrate to, and then select to have the machine shut down before beginning failover. After a period of time, check to ensure the virtual machine appears in Azure. Once it appears, right-click the virtual machine, and then select **Complete Migration**, which will finish the current migration and tidy up any temporary migration data.
 
-![Screenshot of the Azure Site Recovery dashboard](../media/azure-site-recovery-dashboard.png)
+![Screenshot of the Azure Site Recovery dashboard](../media/4-azure-site-recovery-dashboard.png)
 
 ## Post migration steps
 
@@ -59,7 +57,7 @@ After the migration has taken place, clean up tasks are needed to ensure that th
 
 Cleanup tasks vary by environment but one example would be to ensure full connectivity to the machines via Remote Desktop Connection. Another example is updating any connection strings for databases or web apps.
 
-Review the security settings of the virtual machine after the migration. Restrict network access for unused services with Network Security Groups (NSGs), and deploy Azure Disk Encryption (ADE) to secure the disks from data theft and unauthorized access.
+Review the security settings of the virtual machine after the migration. Restrict network access for unused services with network security groups, and deploy Azure Disk Encryption to secure the disks from data theft and unauthorized access.
 
 Consider improving the resilience of the migrated machines by adding a backup schedule using Azure Backup, and replicating the machines to at least a secondary region.
 

@@ -4,11 +4,11 @@ In this unit, you'll cover some of the considerations and methods you can use to
 
 ## Plan your migration to Azure
 
-![Stages of migration, Assess, Migrate, Optimize, and Monitor](../media/planning-process.png)
+![Stages of migration, Assess, Migrate, Optimize, and Monitor](../media/2-planning-process.png)
 
 You can help improve the chances of a successful migration by assessing and planning the scope of work, before you begin any migration activity. Implementing the plan will reduce the likelihood of issues arising further down the line. Consider taking a four-phased approach to your company's migration planning.
 
-![Assess stage](../media/assess.png)
+![Assess stage](../media/2-assess.png)
 
 ### Migration scope and planning
 
@@ -60,7 +60,7 @@ Microsoft provides lots of tools to help you plan and complete the four phases o
 |[Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/)                             | Monitor  | Monitor your entire estates performance, including app health via enhanced telemetry, and set up notifications
 |[Azure Backup](https://docs.microsoft.com/azure/backup/)                                     | Monitor  | Backup all your VMs and SQL databases
 
-![Migrate stage](../media/migrate.png)
+![Migrate stage](../media/2-migrate.png)
 
 ### Deploy target cloud infrastructure
 
@@ -88,19 +88,19 @@ For the Database migrations, the high-level steps are:
 
 Decommission all your on-premise systems once all the required workloads are proven, through testing, to have been successfully migrated to Azure. Your company could make the decision to retain the on-premise infrastructure and use it as a secondary location for disaster recovery.
 
-![Optimize stage](../media/optimize.png)
+![Optimize stage](../media/2-optimize.png)
 
 ### Analyze running costs
 
 Using **Azure Cost Management** you can start analyzing your Azure costs at any level your choose. For example, by choosing subscriptions in the portal, you can see a breakdown of all the resources for that subscription. Or you could view a resource group, and again see all the costs associated with all the resources in just the selected group.
 
-![Screenshot of the cost analysis section of the Azure portal, showing a resource group](../media/cost-analysis.png)
+![Screenshot of the cost analysis section of the Azure portal, showing a resource group](../media/2-cost-analysis.png)
 
 ### Review opportunities to improve
 
 Azure Cost Management shows you cost reduction advice from Azure Advisor. The advice includes suggestions like reducing the performance of underutilized VMs, making use of additional discounts, or reserving resources instead of paying as-you-go.
 
-![Monitor stage](../media/monitor.png)
+![Monitor stage](../media/2-monitor.png)
 
 ### Integrate health and performance monitoring
 

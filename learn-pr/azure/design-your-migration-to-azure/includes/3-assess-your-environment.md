@@ -21,15 +21,14 @@ After you create a **Project**, Azure Migrate needs you to complete two phases t
 
 ### Discover machines
 
-<!-- TODO: Insert picture similar to this, Azure Migrate Architecture -->
-
-![Azure Migrate Architecture](../media/3-azuremigrate-architecture.png)
+![Azure Migrate Architecture](../media/3-azure-migrate-architecture.svg)
 
 The Azure portal will guide you through the process of downloading a **collector appliance**, which carries out the discovery of VMs in your environment. The collector appliance is available to download to your vCenter Server in the OVA (Open Virtualization Appliance) format. Import, and spin up, the collector appliance, and complete its configuration to connect it to the Azure Migrate project.
 
 The collector uses VMware PowerCLI cmdlets to do agentless data collection on your VMware estate. The collector collects data about VM cores, memory, disk sizes, and network adapters. Where applicable the collector also gathers performance data like CPU and memory usage, disk IOPS, disk throughput, and network output.
 
 To receive and store the collected data, Azure Migrate requires that you open port 443 between your internal network and Azure for:
+
 - The collector and the Azure Migrate service.
 - The collector and the vCenter Server.
 - The on-premises VM and Log Analytics Workplace.
@@ -38,7 +37,7 @@ When the data collection is complete, it's pushed to your Azure Migrate project.
 
 If your company wants details on how the VMs are related to each other (via a visualization of dependencies), you can install agents to collect that data. Azure Migrate will prompt you to install the **Microsoft Monitoring Agent** and **Dependency Agent** on each VM. The agents are available for both Windows and Linux.
 
-![Screenshot of the Azure Migrate assessment showing missing agents](../media/machines-no-agent.png)
+![Screenshot of the Azure Migrate assessment showing missing agents](../media/3-machines-no-agent.png)
 
 After these agents are installed and configured, they collect data like FQDN, OS, IP addresses, MAC addresses, running processes, and incoming/outgoing TCP connections.
 
@@ -46,5 +45,5 @@ After these agents are installed and configured, they collect data like FQDN, OS
 
 Azure Migrate can now assess your environments readiness to be migrated to Azure. In the portal, select the Assessments section, and then select **Create assessment**. An assessment with default settings will be created. These default settings can be edited later by editing the properties of the assessment.
 
-![Azure Migrate Assessment Overview screen](../media/assessment-overview.png)
+![Azure Migrate Assessment Overview screen](../media/3-assessment-overview.png)
 
