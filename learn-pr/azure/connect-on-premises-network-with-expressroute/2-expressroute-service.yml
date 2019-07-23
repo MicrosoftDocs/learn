@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.connect-on-premises-network-with-expressroute.2-what-is-expressroute
+uid: learn.connect-on-premises-network-with-expressroute.2-expressroute-service
 metadata:
   title: What is the Azure ExpressRoute service
   description: What is the Azure ExpressRoute service
@@ -12,7 +12,7 @@ metadata:
 title: What is the Azure ExpressRoute service
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-what-is-expressroute.md)]
+  [!include[](includes/2-expressroute-service.md)]
 quiz:
   title: Check your knowledge
   questions:

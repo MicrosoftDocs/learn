@@ -25,7 +25,7 @@ products:
 - azure
 units:
 - learn.connect-on-premises-network-with-expressroute.1-introduction
-- learn.connect-on-premises-network-with-expressroute.2-what-is-expressroute
+- learn.connect-on-premises-network-with-expressroute.2-expressroute-service
 - learn.connect-on-premises-network-with-expressroute.3-how-expressroute-works
 - learn.connect-on-premises-network-with-expressroute.4-when-to-choose-expressroute
 - learn.connect-on-premises-network-with-expressroute.5-summary
