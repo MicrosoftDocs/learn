@@ -1,42 +1,36 @@
-Your first task is to plan your company's migration to Azure. You have a set amount of time to put this plan together before presenting it to the IT Director and other leaders around the business.
+Your first task is to plan your company's migration to Azure. You need to put together a plan that you can then present to your leadership team to get their support and approval.
 
 In this unit, you'll cover some of the considerations and methods you can use to plan for your migration to Azure. Every situation is different, but by following some principles, you can achieve your goals in the best possible way in the shortest amount of time.
 
 ## Plan your migration to Azure
 
+You can use a framework of **Assess**, **Migrate**, **Optimize**, and **Monitor** as a path for migration. Each stage focuses on a particular aspect of ensuring a migration is successful.
+
 ![Stages of migration, Assess, Migrate, Optimize, and Monitor](../media/2-planning-process.png)
 
-You can help improve the chances of a successful migration by assessing and planning the scope of work, before you begin any migration activity. Implementing the plan will reduce the likelihood of issues arising further down the line. Consider taking a four-phased approach to your company's migration planning.
+Let's take a look at what's involved at each phase.
 
 ![Assess stage](../media/2-assess.png)
 
-### Migration scope and planning
-
-Before you do anything, you should decide which servers, applications, and services are in the scope for migration. You may tie the migration work in to a data center consolidation project, and try to use the exercise to remove outdated hardware from your environment. Once you know what the goal is, you can start involving people across the business who will be affected, and have an interest in the work.
-
-Work with your business areas to decide how to migrate these workloads, using the identified scope of what will be migrated:
-
-**Rehost**: Simple recreate your existing infrastructure in Azure, choosing this approach will have the least impact as it needs minimal changes
-
-**Refactor**: Take the opportunity to take advantage of Azure as a PaaS, reducing the time to release software, and reduce the ongoing maintenance costs. Small enhancements to run more efficiently in the cloud can have large impacts on performance
-
-**Rearchitect**: You may be forced to rearchitect some systems to enable them to be migrated. Other apps could be changed to become cloud native, or take advantage of new approaches to software like containerization
-
-**Rebuild**: You may need to rebuild software if the cost to rearchitect is more than starting again from scratch
-
-**Replace**: While you're reviewing your estate, there are chances that third-party applications could completely replace your companies bespoke apps.
-
-### Involve key stakeholders
-
-In any modern business, the IT estate/services will be consumed by everyone in some way or another,  a prime example being line-of-business applications. Applications are used by specific sections of the business and include application owners and superusers, who have a wealth of experience to call on. Involving these people in the planning stage will help, as they can offer guidance in areas where the knowledge of the person running the project may have gaps. Often each area of the business will appoint business owners to manage specific sections.
-
 ### Discovery and evaluation
+
+Start will a full assessment of your current environment. Identify which servers, applications, and services are in the scope for migration. By identifying the services and systems that may be migrated, you can bring in the IT and business teams that work with these services. Bring these teams in early in the process, to ensure they can provide guidance, feedback, and support for the migration.
 
 Now you can produce a full inventory and dependency map to determine how in scope servers and services communicate. A modern business could have hundreds of applications spread across the estate. Each application needs to be fully investigated before any work takes place.
 
-Azure Migrate helps in this scenario, once run, it produces useful information about the underlying servers and their  profile information. You can garner information, such as compute usage and performance metrics, which you then use to feed in to your overall plan.
+For each application, there are various options for the migration process. These could be one of the following:
 
-Once you have a full picture of the environment in scope for migration, an evaluation can be formed about best way to approach each stage. Run through the migration process end to end with a simple server or application first. Completing a migration on a small scale will give you an idea of the possible issues. You can then use the gained experience to preempt issues before moving on to more complex servers and applications.
+- **Rehost**: Recreate your existing infrastructure in Azure, choosing this approach will have the least impact as it needs minimal changes.
+- **Refactor**: Take the opportunity to take advantage of Azure as a PaaS, reducing the time to release software, and reduce the ongoing maintenance costs. Small enhancements to run more efficiently in the cloud can have large impacts on performance.
+- **Rearchitect**: You may be forced to rearchitect some systems to enable them to be migrated. Other apps could be changed to become cloud native, or take advantage of new approaches to software, such as containers or microservices.
+- **Rebuild**: You may need to rebuild software if the cost to rearchitect is more than starting again from scratch.
+- **Replace**: While you're reviewing your estate, there are chances that third-party applications could completely replace your companies bespoke apps. Evaluate software-as-a-service options that can be used to replace the existing application.
+
+Review each application and which of these options is the best fit.
+
+### Involve key stakeholders
+
+Applications are used by specific sections of the business and include application owners and superusers, who have a wealth of experience to call on. Involving these people in the planning stage will increase the chance of a successful migration These resources can offer guidance in areas where the knowledge of the person running the project may have gaps. Often each area of the business will appoint business owners to manage specific sections.
 
 ### Estimate cost savings
 
@@ -44,33 +38,36 @@ Part of the business's plan to migrate to Azure could be to reduce costs, as mov
 
 ### Identify tools
 
-Microsoft provides lots of tools to help you plan and complete the four phases of migration. In some migrations, you may only need to use one or two of the tools. 
+There are several tools and services available to help you plan and complete the four phases of migration. In some migrations, you may only need to use one or two of the tools.
 
-| Tool | Phase | Use |
+| Service/Tool | Phase | Use |
 |------|-------|-------|
-|[Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview)                   | Assess   | If you're using VMWare vCenter Server (version greater than 5.5) running Windows or Linux on the VMs
-|[Service Map](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)           | Assess   | Maps communication between application components on Windows or Linux. Helps you identify dependencies when scoping what to migrate
-|[Azure TCO Calculator](https://azure.microsoft.com/pricing/tco/calculator)                   | Assess   | Estimate your monthly running costs in Azure
-|[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) | Migrate  | Move VMs from on-premise to Azure
-|[Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview)        | Migrate  | Uses the Data Migration Assistant and the Azure portal to manage the whole process of moving database workloads to Azure
-|[Azure Data Box](https://docs.microsoft.com/azure/databox-family/)                           | Migrate  | Efficiently move large datasets either offline or online data to Azure (over the network or by shipping physical disks to an Azure datacenter)
-|[Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview)                  | Migrate  | Assess SQL databases for compatibility, then used to perform the migration of schema and data
-|[Data Migration Tool](https://docs.microsoft.com/azure/cosmos-db/import-data)                | Migrate  | Migrate existing databases to Azure Cosmos DB
-|[Azure Cost Management](https://docs.microsoft.com/azure/cost-management/)                   | Optimize | Monitor, control, and optimize ongoing Azure costs
-|[Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/)                             | Monitor  | Monitor your entire estates performance, including app health via enhanced telemetry, and set up notifications
-|[Azure Backup](https://docs.microsoft.com/azure/backup/)                                     | Monitor  | Backup all your VMs and SQL databases
+| [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview)                   | Assess   | If you're using VMWare vCenter Server (version greater than 5.5) running Windows or Linux on the VMs |
+| [Service Map](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)           | Assess   | Maps communication between application components on Windows or Linux. Helps you identify dependencies when scoping what to migrate |
+| [Azure TCO Calculator](https://azure.microsoft.com/pricing/tco/calculator)                   | Assess   | Estimate your monthly running costs in Azure |
+| [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) | Migrate  | Move VMs from on-premise to Azure |
+| [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview)        | Migrate  | Uses the Data Migration Assistant and the Azure portal to manage the whole process of moving database workloads to Azure |
+| [Azure Data Box](https://docs.microsoft.com/azure/databox-family/)                           | Migrate  | Efficiently move large datasets either offline or online data to Azure |
+| [Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview)                  | Migrate  | Assess SQL databases for compatibility, then used to perform the migration of schema and data |
+| [Data Migration Tool](https://docs.microsoft.com/azure/cosmos-db/import-data)                | Migrate  | Migrate existing databases to Azure Cosmos DB |
+| [Azure Cost Management](https://docs.microsoft.com/azure/cost-management/)                   | Optimize | Monitor, control, and optimize ongoing Azure costs |
+| [Azure Advisor](https://azure.microsoft.com/services/advisor/)                               | Optimize | Optimize your Azure resources for high availability, performance, and cost |
+| [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/)                             | Monitor  | Monitor your entire estates performance, including app  health via enhanced telemetry, and set up notifications |
+| [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel/)                       | Monitor  | Intelligent security analytics for your applications |
 
 ![Migrate stage](../media/2-migrate.png)
 
 ### Deploy target cloud infrastructure
 
-The scope for your migration has been defined as your company's current VMware machines and existing relational databases. In this scenario, you don't need to pre-create the resources in Azure. The two tools you'll use to do the migration **Azure Site Recovery** and the **Azure Database Migration Service** will create the required Azure resources for you.
+You will need to create the destination systems and services on Azure to migrate to. The scope for your migration has been defined as your company's current VMware machines and existing relational databases. In this scenario, you don't need to pre-create the resources in Azure. The two tools you'll use to do the migration **Azure Site Recovery** and the **Azure Database Migration Service** will create the required Azure resources for you.
 
-In other situations, you may need to set up resources in Azure to have them available to be migrated to.
+In other situations, you may need to set up resources in Azure to have them available as a migration destination.
 
-### Move on-premises workloads
+### Migrate workloads
 
-Each tool will guide you through the migration, and the steps to complete them are covered in future units. At a high level these steps are:
+It's often best to start with a small migration, as opposed to migrating a large, business-critical workload. This allows you to increase familiarity with the tools, processes, and procedures for migration. It can reduce the risk of issues when you migrate larger workloads. As you become more comfortable with the migration process, you can continue to larger and more business-critical workloads.
+
+<!-- Each tool will guide you through the migration, and the steps to complete them are covered in future units. At a high level these steps are:
 
 1. Prepare the source (vCenter Server) and target (Azure) environments.
 1. Set up and start the replication between the two.
@@ -82,13 +79,15 @@ For the Database migrations, the high-level steps are:
 1. Assess your on-premises databases.
 1. Migrate the schemas.
 1. Create and run an Azure Database Migration Service project to move the data.
-1. Monitor the migration.
+1. Monitor the migration. -->
 
 ### Decommission on-premises infrastructure
 
-Decommission all your on-premise systems once all the required workloads are proven, through testing, to have been successfully migrated to Azure. Your company could make the decision to retain the on-premise infrastructure and use it as a secondary location for disaster recovery.
+Decommission all your on-premise systems once all the migrated workloads have been tested and validated to have been successfully migrated to Azure. Even after decommissioning the systems, it can be beneficial to retain backups and archive data from the migrated systems. This provides you a historical archive of data in the event they are needed. This data could be stored on-premises, or in a cloud storage service, such as Azure blob storage.
 
 ![Optimize stage](../media/2-optimize.png)
+
+With your services migrated, it's important to optimize them to ensure they are running as efficiently as possible from a cost and performance standpoint. 
 
 ### Analyze running costs
 
