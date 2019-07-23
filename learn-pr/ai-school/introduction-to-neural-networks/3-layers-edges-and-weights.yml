@@ -12,4 +12,35 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 15
 content: |
-  [!include[](includes/3-layers-edges-and-weights.md)] 
+  [!include[](includes/3-layers-edges-and-weights.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Edges:"
+    choices:
+    - content: "Connect nodes to one another"
+      isCorrect: true
+      explanation: "Correct. Edges connect nodes from layer to layer."
+    - content: "Are nodes that are at the edge of layers"
+      isCorrect: false
+      explanation: "Incorrect. Edges are not a type of node, edges connect nodes."
+    - content: "Are layers that are at the front or end of the neural network"
+      isCorrect: false
+      explanation: "Incorrect. Edges connect nodes (and thus layers) together, but edges are not layers themselves."
+    - content: "Hide layers from the programmer."
+      isCorrect: false
+      explanation: "Incorrect. Edges can't hide layers, they connect nodes (and thus layers) together."
+  - content: "Before training, weights are usually:"
+    choices:
+    - content: "All very high (positive) numbers"
+      isCorrect: false
+      explanation: "Incorrect. If the weights are all very high the neural network is likely to have very poor performance."
+    - content: "Random numbers."
+      isCorrect: true
+      explanation: "Correct. We randomize the weights so the cost does not get stuck in a local minima."
+    - content: "All zeros."
+      isCorrect: false
+      explanation: "Incorrect. If the weights are all zeros no data will flow through the neural network."
+    - content: "All very low (negative) numbers."
+      isCorrect: false
+      explanation: "Incorrect. While weights can be negative, they do not all start out negative."
