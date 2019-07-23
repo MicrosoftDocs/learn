@@ -12,4 +12,21 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-support-vector-machines.md)] 
+  [!include[](includes/3-support-vector-machines.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "An SVM uses a hyperplane to:"
+    choices:
+    - content: "Separate data points into categories."
+      isCorrect: true
+      explanation: "Correct. Hyperplanes determine the category prediction for an example."
+    - content: "Evenly distribute data of different classes across the feature space."
+      isCorrect: false
+      explanation: "Incorrect. Hyperplanes are used to best fit examples into categories."
+    - content: "Shuttle data efficiently through memory."
+      isCorrect: false
+      explanation: "Incorrect. Hyperplanes are used to categorize examples."
+    - content: "Predict another dimension."
+      isCorrect: false
+      explanation: "Incorrect. Hyperplanes don't predict dimensions."

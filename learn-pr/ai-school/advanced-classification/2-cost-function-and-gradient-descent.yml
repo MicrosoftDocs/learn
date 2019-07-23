@@ -12,4 +12,21 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-cost-function-and-gradient-descent.md)] 
+  [!include[](includes/2-cost-function-and-gradient-descent.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Gradient descent tries to find parameters to get a cost to be:"
+    choices:
+    - content: "As high as possible."
+      isCorrect: false
+      explanation: "Incorrect. Gradient descent optimizes but finding a minima for the cost."
+    - content: "As low as possible."
+      isCorrect: true
+      explanation: "Correct. Gradient descent finds parameters to give a minimum cost value."
+    - content: "Even."
+      isCorrect: false
+      explanation: "Incorrect. Gradient descent tried to minimize cost."
+    - content: "Negative."
+      isCorrect: false
+      explanation: "Incorrect. Gradient descent does not make cost negative."
