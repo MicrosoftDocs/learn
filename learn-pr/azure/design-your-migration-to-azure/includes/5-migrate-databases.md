@@ -28,7 +28,7 @@ As your companies database needs are simple, the fastest and cheapest option is 
 
 ## Overview of database migrations
 
-![Database migrations](../media/database-migration.png)
+![Database migrations](../media/5-database-migration.svg)
 
 The **Data Migration Assistant (DMA)** will guide you through the process. You'll take your existing relational databases, split out the database schema, and then recreate them in the destination Azure SQL database. With the new schema in place, the data for each database can then be copied to Azure. Finally, you'll check the new databases are performing as expected.
 
@@ -49,7 +49,7 @@ Ensure all the communication ports are open, and check the connectivity between 
 
 The assessment will generate a report on completion, with a set of recommendations and alternative approaches that could be taken for the migration. You'll see any compatibility issues between the source and destination databases that could cause the migration to fail. Address the issues in the report, running it as many times as you need to ensure the issues have been fixed.
 
-![Sample DMA Report](../media/2dma-assessment.png)
+![Sample DMA Report](../media/5-dma-assessment.png)
 
 A sample Data Migration Assistant report.  
 
@@ -59,7 +59,7 @@ Each database has a schema, which represents the structure of the entire databas
 
 To use the DMA to migrate the schema, create a new **Migration** project. Select the source server as your on-premises SQL server, and the target server to be your Azure SQL database. Set the scope of the migration to **Schema Only**. After you connect to the source database, choose the schema objects to deploy to the new Azure SQL database. The DMA will create a script to do the required actions, selecting **Deploy Schema** will run the script. Once complete check the target server to ensure the database has been configured correctly.
 
-![Screenshot of the DMA exporting a schema](../media/dma-migrate-schema.png)
+![Screenshot of the DMA exporting a schema](../media/5-dma-migrate-schema.png)
 
 ### Prepare your Azure environment
 
