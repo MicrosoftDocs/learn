@@ -27,4 +27,4 @@ tasks:
   azure:
     resource:
       type: "Microsoft.ApiManagement/service"
-  hint: "Follow the instructions above to create an API app and API Management resource"
+  hint: "Follow the instructions above to create an API app and API Management resource."

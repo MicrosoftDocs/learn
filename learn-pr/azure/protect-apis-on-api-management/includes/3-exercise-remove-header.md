@@ -33,7 +33,7 @@ To save time, let's start by running a script to host our RESTful API in Azure. 
 1. To navigate into the repo folder locally, run the following command:
 
     ```bash
-    cd mslearn-protect-apis-on-api-management.git
+    cd mslearn-protect-apis-on-api-management
     ```
 
 1. As its name suggests, setup.sh is the script you will run to create our test API. This script generates a public web app that exposes an OpenAPI interface:
