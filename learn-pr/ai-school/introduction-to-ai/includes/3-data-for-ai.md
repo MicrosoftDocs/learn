@@ -7,14 +7,5 @@ There are two key kinds of data we will use again and again:
 
 1. __Features__ are aspects of an event/object/person that we are interested in. These can be continuous or categorical. For example, a person’s features might include their height (continuous) and favorite sport (categorical).
 2. __Labels__ are categories we put events/objects/people into. For example, we might label a cake “good” or “bad”; label a person a “republican”, “independent”, or “democrat”, or label a particular image as “containing fish” or “not containing fish”.
-  
-## Summary
-
-Here we introduced:
-
-* __Continuous variables__ - measurable data points, such as weight and temperature.
-* __Categories__ - such as fixed / broken, acceptable / unacceptable.
-* __Features__ - data points for an example (event/object/person) such as hair color or height. Features can be continuous variables or categories.
-* __Labels__ - categories we assign to data points.
 
 Next up we'll do a quick programming exercise. This exercise will quickly walk you through how to set up and use Azure Notebooks. It's nice and easy, so don't worry.
