@@ -15,4 +15,3 @@ In this module, you'll:
 
 - Knowledge of cloud and traditional architecture concepts
 - Knowledge of networking, compute, and database systems
-- 
