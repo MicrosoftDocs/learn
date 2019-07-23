@@ -17,7 +17,7 @@ To achieve this configuration, we will create a transformation policy.
 > [!NOTE]
 > It's best practice to secure the backend API by configuring it to require a client certificate and then configuring API Management to supply that certificate. It this configuration, no one can call the backend API directly and circumvent your API Management gateway because they don't have a certificate that's recognized by the backend.
 
-## Transformation Policy
+## Transformation policy
 
 A transformation policy modifies the content of an API call. Some transformation policies apply to the header and others apply to the body. The following transforms are available:
 

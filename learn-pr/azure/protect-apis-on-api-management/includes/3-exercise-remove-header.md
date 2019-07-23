@@ -110,7 +110,7 @@ Let's see what data is returned in from the API by default:
 
 1. Notice that **X-Powered-By** appears in the response and shows that the framework is ASP.NET.
 
-## Remove Headers
+## Remove headers
 
 Now we'll add a policy to remove the **X-Powered-By** header from responses sent by the API:
 
@@ -130,7 +130,7 @@ Now we'll add a policy to remove the **X-Powered-By** header from responses sent
 
 1. Click the **Save** button.
 
-## Test the Removal of Headers
+## Test the removal of headers
 
 You should now be able to run a test to demonstrate that the headers are removed:
 
