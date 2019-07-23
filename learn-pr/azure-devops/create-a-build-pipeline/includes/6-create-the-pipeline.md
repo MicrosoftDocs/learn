@@ -159,26 +159,26 @@ In practice, you might add build tasks one at at time, push up your changes, and
 
     Remember that not all build activities map to a built-in task. For example, there's no built-in task that runs the node-sass utility or writes build info to a text file. To run general system commands, you use the `CmdLine@2` or `script` task. The pipeline uses the `script` task because it's a common shortcut for `CmdLine@2`.
 
-    In the build step that writes information about the build to file, notice these elements:
+    In the build step that writes information about the build to a file, notice these elements:
 
     * `$(Build.DefinitionName)`
     * `$(Build.BuildId)`
     * `$(Build.BuildNumber)`
 
-    These are built-in variables that the system provides that you can use in your pipeline.
+    These elements are built-in variables that the system provides for use in your pipelines.
 
-    * `$(Build.DefinitionName)` specifies the name of the build pipeline, such as "SpaceGame-Web-CI".
-    * `$(Build.BuildId)` is a numeric identifier for the completed build, such as 115.
-    * `$(Build.BuildNumber)` is name of the completed build. You can configure the format, but by default the build number includes the current date followed by the build number for that day. An example build number is "20190329.1".
+    * `$(Build.DefinitionName)` specifies the name of the build pipeline. For example, "SpaceGame-Web-CI."
+    * `$(Build.BuildId)` is a numeric identifier for the completed build, like 115.
+    * `$(Build.BuildNumber)` is name of the completed build. You can configure the format, but by default the build number includes the current date followed by the build number for that day. An example build number is "20190329.1."
 
-    You can also define your own variables, which you'll do shortly.
+    You can also define your own variables, which you'll do soon.
 
-    You may have also noticed the `DotNetCoreInstaller@0` task as the first build step. Mara remembered that her build script didn't install required build tools. Although the build agent comes with a number of .NET Core SDK versions, this task enables her to easily specify the version she needs to use on the build agent.
+    You might have also noticed the `DotNetCoreInstaller@0` task, which is the first build step. Mara remembered that her build script didn't install required build tools. Although the build agent comes with a number of .NET Core SDK versions, this task lets her easily specify the version she needs to use on the build agent.
 
-1. Similar to what you did earlier, run the following Git commands from the integrated terminal to add **azure-pipelines.yml** to the index, commit the change, and push the change up to GitHub.
+1. Run the following Git commands from the integrated terminal to add azure-pipelines.yml to the index, commit the change, and push the change up to GitHub. These steps are similar to steps you performed earlier.
 
     > [!TIP]
-    > Remember to save **azure-pipelines.yml** before running these Git commands.
+    > Remember to save azure-pipelines.yml before you run these Git commands.
 
     ```bash
     git add azure-pipelines.yml
@@ -190,28 +190,28 @@ In practice, you might add build tasks one at at time, push up your changes, and
 
     Pushing the branch to GitHub triggers the build process in Azure Pipelines.
 
-1. From Azure DevOps, navigate to your build. To do so, select **Pipelines** from the side of the page and then select **Builds**. You see your commit message and that the build is running using the code from the `build-pipeline` branch.
+1. In Azure DevOps, navigate to your build. To do so, select **Pipelines** on the side of the page and then select **Builds**. You see your commit message and that the build is running using the code from the `build-pipeline` branch:
 
     ![Azure Pipelines showing the latest build](../media/6-build-history.png)
 
     > [!TIP]
     > If you don't see the build right away, wait a few moments or refresh the page.
-    > In the rare case where Azure Pipelines does not pick up your build, you can manually queue the build by clicking the **Queue** button. When prompted, enter the Git branch you want to build from, in this case, `build-pipeline`.
+    > In the rare case where Azure Pipelines doesn't pick up your build, you can manually queue the build by selecting **Queue**. When prompted, enter the Git branch you want to build from, in this case, `build-pipeline`.
 
 1. Select your build and trace the build tasks as they run.
 
-    As an example, here's what happens when the `gulp@1` task runs to perform the gulp tasks that minify JavaScript and CSS assets.
+    For example, here's what happens when the `gulp@1` task runs to perform the gulp tasks that minify JavaScript and CSS assets:
 
-    ![Azure Pipelines showing the complete list of build tasks](../media/6-gulp-task.png)
+    ![Tracing the gulp tasks](../media/6-gulp-task.png)
 
-    If any step fails, you would see the error in the output so you can diagnose and repair the failure.
+    If any step fails, you'll see the error in the output so you can diagnose and repair the failure.
 
-    Earlier, you saw the minimum number of steps needed to prepare the VM, fetch the latest source code from GitHub, and clean up. This time, when the build completes, you see the entire set of tasks needed to build the application.
+    Earlier, you saw the minimum number of steps needed to prepare the VM, fetch the latest source code from GitHub, and clean up. This time, when the build completes, you see the entire set of tasks needed to build the application:
 
     ![Azure Pipelines showing the complete list of build tasks](../media/6-add-build-tasks.png)
 
-1. After you build completes, click the **Summary** tab.
+1. After your build completes, select the **Summary** tab.
 
-    You see the overall progression of the build. From there you can jump to the build logs or the associated change on GitHub.
+    You see the overall progression of the build. From there, you can jump to the build logs or the associated change on GitHub.
 
     ![Azure Pipelines showing the build summary](../media/6-build-summary.png)

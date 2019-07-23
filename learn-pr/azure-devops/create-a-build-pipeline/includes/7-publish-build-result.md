@@ -1,30 +1,30 @@
-At this point, you're able to build the _Space Game_ web project through the pipeline.
+At this point, you're able to build the Space Game web project through the pipeline.
 
 But where do the results of the build go? Right now, the output of the build remains on the temporary build server. Mara needs a way to hand off this build to Amita so she can begin testing.
 
-You can store build artifacts in Azure Pipelines so that they're later available to others on your team after the build completes. That's what you'll do here. As a bonus, you'll also refactor the build configuration to use variables to make the configuration easier to read and keep up to date.
+You can store build artifacts in Azure Pipelines so they're later available to others on your team after the build completes. That's what you'll do here. As a bonus, you'll also refactor the build configuration to use variables to make the configuration easier to read and keep up to date.
 
 > [!NOTE]
-> Azure Pipelines enables you to automatically deploy the built application to a testing or production environment running in the cloud or in your datacenter. For now, Mara's goal is only to produce builds that she can hand off to QA using their existing processes.
+> Azure Pipelines enables you to automatically deploy the built application to a testing or production environment running in the cloud or in your datacenter. For now, Mara's goal is only to produce builds that she can hand off to QA by using their existing processes.
 
 ## Publish the build to the pipeline
 
 In .NET Core, you can package your application as a .zip file. You can then use the built-in `PublishBuildArtifacts@1` task to publish the .zip file to Azure Pipelines.
 
-1. From Visual Studio Code, modify **azure-pipelines.yml** like this.
+1. In Visual Studio Code, modify azure-pipelines.yml as you see here:
 
     [!code-yml[](code/7-azure-pipelines-1.yml?highlight=40-51)]
 
-    This version of **azure-pipelines.yml** resembles the previous version, but adds two additional tasks.
+    This version of azure-pipelines.yml looks like the previous version, but it adds two additional tasks.
 
-    The first task uses the `DotNetCoreCLI@2` task to _publish_, or package, the application's build results (including its dependencies) into a folder. The `zipAfterPublish` argument specifies to add the built results to a .zip file.
+    The first task uses the `DotNetCoreCLI@2` task to *publish*, or package, the application's build results (including its dependencies) into a folder. The `zipAfterPublish` argument specifies to add the built results to a .zip file.
 
     The second task uses the `PublishBuildArtifacts@1` task to publish the .zip file to Azure Pipelines. The `condition` argument specifies to run the task only when the previous task succeeds. `succeeded()` is the default condition, so you don't need to specify it. But we show it here to illustrate its use.
 
-1. From the integrated terminal, add **azure-pipelines.yml** to the index, commit the change, and push the change up to GitHub.
+1. From the integrated terminal, add azure-pipelines.yml to the index, commit the change, and push the change up to GitHub.
 
     > [!TIP]
-    > Remember to save **azure-pipelines.yml** before running these Git commands.
+    > Remember to save azure-pipelines.yml before you run these Git commands.
 
     ```bash
     git add azure-pipelines.yml
@@ -34,7 +34,7 @@ In .NET Core, you can package your application as a .zip file. You can then use 
 
 1. As you did earlier, from Azure Pipelines, trace the build through each of the steps.
 
-    When the build completes, you see the **Artifacts** button appear.
+    When the build completes, you see the **Artifacts** button appear:
 
     ![Azure Pipelines showing the Artifacts button](../media/7-artifacts-button.png)
 
