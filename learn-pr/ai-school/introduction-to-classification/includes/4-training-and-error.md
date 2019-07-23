@@ -32,21 +32,4 @@ That's the end of the unit and module! Here we learned:
 * __Irreducible error__ - data points that the model cannot possibly predict accurately.
 * __Bayes error__ - the lowest possible error rate, where an algorithm cannot become any more accurate.  
 
-During this module we walked through the basics of classification algorithms, and learned:
-
-__Classification__
-
-* __Classification__ is assigning labels to new data. For example, predicting whether a future soccer match will be a “win” or “loss”.
-
-__Logistic regression__
-
-* Is a classification algorithm.  
-* Produces a line of best fit to data from previous events.  
-* Can be used to give us the probability that something is true, or an event will happen.  
-  
-__Models__
-
-* __AI often learns iteratively__ - starting with a bad approximation and changing variables (like line-slope) until a model becomes accurate.
-* The real world is very variable, and so __we cannot expect our models to become 100% accurate__.
-
 Now that you’ve had an introduction to classification, let’s wrap up everything you’ve learned with a knowledge check.
