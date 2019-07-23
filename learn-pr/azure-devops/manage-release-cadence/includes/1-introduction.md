@@ -1,4 +1,4 @@
-In this module, you'll join the Tailspin web team as they ....
+In this module, you'll join the Tailspin web team as they decide on a deployment pattern for releasing the Space Game web site.
 
 quick summary of deployment patterns - most of this will go on the next unit
 
