@@ -25,7 +25,7 @@ ExpressRoute enables direct access to the following services in all regions:
 - Microsoft Office 365
 - Microsoft Dynamics 365
 - Azure compute services, such as Azure virtual machines
-- Azure cloud services, such as Cosmos DB and Azure storage
+- Azure cloud services, such as Azure Cosmos DB and Azure Storage
 
 Office 365 was created to be accessed securely and reliably via the Internet. Because of this, we recommend ExpressRoute for specific scenarios. For information about using ExpressRoute to access Office 365, visit the Azure ExpressRoute for Office 365 article linked in the **Learn more** section at the end of this module.
 
@@ -33,7 +33,7 @@ Office 365 was created to be accessed securely and reliably via the Internet. Be
 
 You can enable ExpressRoute Global Reach to exchange data across your on-premises sites by connecting your ExpressRoute circuits. For example, if you have a private data center in California connected to ExpressRoute in Silicon Valley, and another private data center in Texas connected to ExpressRoute in Dallas, with ExpressRoute Global Reach, you can connect your private data centers together through two ExpressRoute circuits. Your cross-data-center traffic will traverse through Microsoft's network.
 
-### Dynamic Routing
+### Dynamic routing
 
 ExpressRoute uses the Border Gateway Protocol (BGP) routing protocol. BGP is used to exchange routes between on-premise networks and resources running in Azure. This protocol enables dynamic routing between your on-premises network and services running in the Microsoft cloud.
 
@@ -42,18 +42,18 @@ ExpressRoute uses the Border Gateway Protocol (BGP) routing protocol. BGP is use
 ExpressRoute supports three connection models that you can use to connect between your on-premises network and the Microsoft cloud:
 
 - CloudExchange co-location
-- Point-to-point Ethernet connection
+- Point-to-point ethernet connection
 - Any-to-any connection
 
-![Azure Connectivity models  ](../media/2-azure-connectivity-models.svg)
+![Azure Connectivity models](../media/2-azure-connectivity-models.svg)
 
 ### Co-located at cloud exchange
 
 Co-located providers can normally offer both Layer 2 and Layer 3 connections between your infrastructure, which may be located in the co-location facility, and the Microsoft cloud. For example, if your datacenter is co-located at a cloud exchange such as an ISP, you can request a virtual cross-connection to the Microsoft cloud.
 
-### Point-point Ethernet connections
+### Point-point ethernet connections
 
-Point-to-point connections provide Layer 2 and Layer 3 connectivity between your on-premises site and Microsoft Azure.  You can connect your offices or datacenters to Azure using the point-to-point links. For example, if you have an on-premises datacenter, you can use a point-to-point Ethernet link to connect to Microsoft.
+Point-to-point connections provide Layer 2 and Layer 3 connectivity between your on-premises site and Microsoft Azure.  You can connect your offices or datacenters to Azure using the point-to-point links. For example, if you have an on-premises datacenter, you can use a point-to-point ethernet link to connect to Microsoft.
 
 ### Any-to-any networks
 
@@ -61,4 +61,4 @@ With point-to-point connectivity, you can integrate your WAN with Microsoft Azur
 
 ## Security considerations
 
-With ExpressRoute, your data doesn’t travel over the public Internet, so it's not exposed to the potential risks associated with Internet communications. ExpressRoute is a private connection from your on-premises infrastructure to your Azure infrastructure. Even if you have an ExpressRoute connection, DNS queries, certificate revocation list checking, and content delivery network (CDN) requests are still sent over the public Internet.
+With ExpressRoute, your data doesn’t travel over the public internet, so it's not exposed to the potential risks associated with internet communications. ExpressRoute is a private connection from your on-premises infrastructure to your Azure infrastructure. Even if you have an ExpressRoute connection, DNS queries, certificate revocation list checking, and content delivery network (CDN) requests are still sent over the public internet.
