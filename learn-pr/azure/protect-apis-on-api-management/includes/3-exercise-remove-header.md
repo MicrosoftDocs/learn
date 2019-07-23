@@ -26,16 +26,14 @@ To save time, let's start by running a script to host our RESTful API in Azure. 
 
 1. To clone the repo that contains the source for our app, run the following `git clone` command in the Cloud Shell:
 
-    <!-- TODO: the URL in the following command must be replaced when the location of the GitHub repo is known -->
-
     ```bash
-    git clone https://github.com/GeekEffect/CensusData.git
+    git clone https://github.com/MicrosoftDocs/mslearn-protect-apis-on-api-management.git
     ```
 
 1. To navigate into the repo folder locally, run the following command:
 
     ```bash
-    cd CensusData
+    cd mslearn-protect-apis-on-api-management.git
     ```
 
 1. As its name suggests, setup.sh is the script you will run to create our test API. This script generates a public web app that exposes an OpenAPI interface:

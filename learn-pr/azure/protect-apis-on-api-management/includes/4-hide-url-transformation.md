@@ -15,7 +15,7 @@ These links are based on the Census API endpoints and need to be masked to show 
 To achieve this configuration, we will create a transformation policy.
 
 > [!NOTE]
-> It's best practice to secure the backend API by configuring it to require a client certificate and then configuring API Management to supply that certificate. It this configuration, no one can call the backend API directly and circumvent your API Management gateway because they don't have a certificate that's recognized by the backend. 
+> It's best practice to secure the backend API by configuring it to require a client certificate and then configuring API Management to supply that certificate. It this configuration, no one can call the backend API directly and circumvent your API Management gateway because they don't have a certificate that's recognized by the backend.
 
 ## Transformation Policy
 
@@ -32,7 +32,7 @@ A transformation policy modifies the content of an API call. Some transformation
 | **Set HTTP header** | Assigns a value to an existing response or request header, or adds a new response or request header. |
 | **Set query string parameter** | Adds, replaces the value of, or deletes a request query string parameter. |
 | **Rewrite URL** | Converts a request URL from its public form to the form expected by the web service. |
-| **Transform XML using an XSLT** | Applies an XSL transformation to the XML in the request or response body. | 
+| **Transform XML using an XSLT** | Applies an XSL transformation to the XML in the request or response body. |
 | | |
 
 You will use the **Mask URLs in Content** transform to alter the links in the following exercise.

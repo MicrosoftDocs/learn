@@ -8,10 +8,6 @@ As the lead developer, you'll look at how to set up a secured API gateway, which
 
 The Azure API Management service is hosted in the Azure cloud and is positioned between your APIs and the Internet. An **Azure API gateway** is an instance of the Azure API Management service.
 
-<!-- TODO: Insert picture similar to this, source  Serverless Integration Design Patterns with Azure, Packt Publishing -->
-
-![Overview of API management](../media/2-api-management-overview.png)
-
 Publishers of APIs use the Azure portal to control how each API is exposed to consumers. For example, you might want some APIs to be freely available to developers, for demo purposes, and access to other APIs to be tightly controlled.
 
 ## Response headers
@@ -25,7 +21,6 @@ In the census example, it is important that you remove the following headers:
 | Header | Detail |
 |---------|---------|
 | X-Powered-By | This header allows callers to see the technology stack being used. It could allow a malicious user to attempt to exploit any bugs within that stack. |
-| Server | This header exposes the web server being used. It could be useful information for a malicious user to attempt to access the secured information. |
 | | |
 
 ## API management setup

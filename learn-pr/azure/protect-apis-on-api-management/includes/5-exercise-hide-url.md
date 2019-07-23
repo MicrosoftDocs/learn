@@ -15,9 +15,11 @@ The following exercise will demonstrate how to apply the **Mask URL** transforma
 1. Under **API management**, click **APIs**, and then select **Census Data**. 
 1. On the top of the screen, select the **Design** tab, and then select **All operations**.
 1. In the **Outbound** processing section, click the **</>** icon.
-1. Position the cursor inside the `<outbound>` element and then, in the right window, under **Transformation policies**, click **+ Mask URLs in content**:
+1. Inside the `<outbound>` element, below the `<set-header-name>` element you added previously, add the following element:
 
-    ![Mask URL Policy](../media/5-maskurl.png)
+    ```XML
+    <redirect-content-urls />
+    ```
 
 1. Click the **Save** button
 

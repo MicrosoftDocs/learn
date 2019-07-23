@@ -25,6 +25,8 @@ To apply a **throttling** policy within API Management, follow these steps:
     </inbound>
     ```
 
+1. Click the **Save** button
+
 Your policy file should contain all three policies, similar to this code:
 
 ```XML
