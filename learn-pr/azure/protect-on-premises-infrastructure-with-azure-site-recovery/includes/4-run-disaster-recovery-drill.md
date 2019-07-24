@@ -1,24 +1,10 @@
-Disaster recovery drills enable you to test your company's ability to recover from a disaster without impacting any of the company's live services.
+Disaster recovery drills enable you to test your company's ability to recover from a disaster without impacting production services.
 
 After you've produced a BCDR plan alongside your stakeholders, you've been asked to explore the options for how the system can be tested without interrupting live service. You wish to learn more about recovery drills and how they can verify your Site Recovery solution is set up and will work correctly.
 
 In this unit, you'll gain an understanding of recovery time and recovery point objectives. You'll see how you can then use a recovery drill to test that Azure Site Recovery has been configured correctly to meet these objectives.
 
 ## Disaster recovery drill
-
-A disaster recovery drill is a way to test and ensure that your solution works and produces the result you would expect, in the timescale that meets your recovery time objectives (RTO). An RTO, along with a Recovery Point Objective (RPO) are both important and should be defined in your disaster recovery plan. Both help to realize the maximum tolerable hours your business can be without specified services, and what the data recovery process should be. However, there are differences between the two.
-
-### Recovery Time Objective (RTO)
-
-RTO is a measure of the maximum amount of time your business can survive for after a disaster, before things are restored to normal service. Let's assume your RTO is 12 hours, meaning operations can continue for 12 hours without the businesses core services functioning. If the downtime is 24 hours, this delay would cause your business serious harm.
-
-### Recovery Point Objective (RPO)
-
-RPO is a measure of the maximum amount of data loss that's acceptable during a disaster. A business can typically decide to do a backup every 24 hours, 12 hours, or even in real time, but if there's a disaster there will always be some data loss. If your backup occurred every 24 hours, at midnight, and a disaster happened at 9am the following day, then nine hours of data would be lost. If the companies RPO was 12 hours, it would be ok as only nine hours have passed. However, if the RPO was four hours then there would be a problem and damage would occur to the business.
-
-Once the above metrics have been considered and recorded in your BCDR plan, then a recovery drill can be done to ensure that your DR solution meets the defined RTO and RPO objectives.
-
-## Executing the recovery drill
 
 Azure Site Recovery allows you to do a full disaster recovery test without impacting your existing live environment. Recovery plans are created within Site Recovery and allow for the automation of recovery tasks, model specific applications around its dependencies, such as it needing Active Directory or DNS to function. Recovery plans also allows you to test your disaster recovery.
 
@@ -40,7 +26,7 @@ From within the dashboard replicated items and test failovers can be monitored, 
 
 <!-- Insert picture similar to this, Azure Migrate Architecture -->
 
-![Sample DMA Report](../media/3-site-recovery-overview.png)
+![Site recovery overview](../media/3-site-recovery-overview.png)
 
 **(1) Backup or Site Recovery**: This enables you to switch between the Back or the Site Recovery dashboards. In the above example you are on the Site Reovery tab.
 

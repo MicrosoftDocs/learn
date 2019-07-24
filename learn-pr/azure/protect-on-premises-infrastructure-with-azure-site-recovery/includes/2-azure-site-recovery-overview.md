@@ -10,7 +10,17 @@ In certain types of businesses, a loss of service can cause nothing more than di
 
 BCDR plans are formal documents that companies draw up that cover the scope, and actions, that should be taken when a disaster or large-scale outage happens. Each outage is assessed on its own merit. For example, a DR plan will come into action when a whole data center loses power, or relevant in this scenario, an earthquake hits and has damaged communications lines that render a data center useless until fixed. A disaster of that size could bring services down for days, not hours, so a full BCDR plan would need to be invoked to get the service back online.
 
-Azure offers a straightforward and flexible way to replicate services and network loads to the cloud. As the cloud is off premises, it is not impacted by the same risks that on-premises data centers can face such as earthquakes and loss of power. Azure offers two tools that assist in providing DR to on-premises environments, **Azure Site Recovery**, and **Azure Backup**.
+As part of your BCDR plan, identify the recovery time objectives (RTO) and recovery point objectives (RPO) for your applications. Both help to realize the maximum tolerable hours your business can be without specified services, and what the data recovery process should be. Let's look closer at each.
+
+![An illustration showing the duration, in hours, of the recovery point objective and recovery time objective from the time of the disaster.](../media/4-rto-rpo.png)
+
+### Recovery Time Objective (RTO)
+
+RTO is a measure of the maximum amount of time your business can survive for after a disaster, before things are restored to normal service. Let's assume your RTO is 12 hours, meaning operations can continue for 12 hours without the businesses core services functioning. If the downtime is 24 hours, this delay would cause your business serious harm.
+
+### Recovery Point Objective (RPO)
+
+RPO is a measure of the maximum amount of data loss that's acceptable during a disaster. A business can typically decide to do a backup every 24 hours, 12 hours, or even in real time, but if there's a disaster there will always be some data loss. If your backup occurred every 24 hours, at midnight, and a disaster happened at 9am the following day, then nine hours of data would be lost. If the companies RPO was 12 hours, it would be ok as only nine hours have passed. However, if the RPO was four hours then there would be a problem and damage would occur to the business.
 
 ## What is Azure Site Recovery?
 

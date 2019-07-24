@@ -1,4 +1,4 @@
-Azure Site Recovery gives you the flexibility to manually failover to Azure, or failback to on-premises machines. 
+Azure Site Recovery gives you the flexibility to failover to Azure if a disaster occurs, and failback to on-premises machines when the event is over.
 
 You now wish to do a full failover for the rest of the protected environment to Azure, after successfully running a failover drill on a single test virtual machine. You'll then do the failback once failover has completed successfully.
 

@@ -27,11 +27,13 @@ Site Recovery provides application-aware replication for many types of workloads
 Active Directory and DNS can be configured for an automated failover, they would normally be completed first in the scope of the overall recovery plan so that the Active Directory and DNS name resolution is available for when the other applications are failed over. You can have Active Directory up and running in a few minutes. Site Recovery protects the virtual machine that hosts your domain controller and DNS.
 
 ### SQL Server
+
 ![Diagram showing how Site Recovery can protect a SQL Server cluster](../media/standalone-cluster-local.png)
 
 Site Recovery can be used alongside SQL specific high availability technologies such as Always On availability groups. Standalone servers or clusters are supported for replication to Azure or a secondary site. Azure Site Recovery can also scale peak loads by 'bursting' them onto larger VMs in Azure. Test failovers and compliance checks can be run on demand, or scheduled, without impacting the live environment.
 
 ### SharePoint
+
 ![Diagram showing the complexity of a high-demand SharePoint farm architecture, including web servers, app servers, and database servers](../media/sharepointarch.png)
 
 Protecting SharePoint with Site Recovery allows for the all the servers that makes up the solution to be failed over at the same time. In the above example, a high-demand server farm can include Web, App, and Database server groups. The constant replication to Azure allows any updates deployed to the live environment to be automatically deployed to the replica to allow for patch consistency during a failover.
@@ -54,8 +56,8 @@ SAP NetWeaver and non-NetWeaver production application components can be replica
 
 ### IIS
 
-Protecting IIS allows for full automation of the recovery plan should the replicated environment need to be failed over to. It can be performed in a 'one click' fashion and IP addressing can be completed pre failover by mapping the primary and recovery networks prior to fail over. Scripts can be used during failover to update application dependencies and bindings.
+Protecting IIS allows for full automation of the recovery plan should you need to fail over to the replicated environment. Protection for IIS servers can be easily enabled and IP addressing can be properly configured by mapping the primary and recovery networks prior to fail over. Scripts can be used during failover to update application dependencies and bindings. This enables a one-click failover for multiple web applications on the web servers, thus eliminating the scope for confusion in the event of a disaster.
 
 ### Citrix XenApp & XenDesktop
 
-Full protection is available for Citrix using Site Recovery as you can protect all the different layers that make up the whole Citrix solution, AD, DNS, SQL, and Citrix-specific servers such as the StoreFront server. They can all be part of the same recovery plan and once replication is in the place, the replicated environment can be used as a test platform.
+Full protection is available for Citrix using Site Recovery.  You can protect all aspects of your Citrix solution, AD, DNS, SQL, and Citrix-specific servers such as the StoreFront server. They can all be part of the same recovery plan and once replication is in the place, the replicated environment can be used as a test platform.
