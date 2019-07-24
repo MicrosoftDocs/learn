@@ -16,17 +16,20 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which is the first stage of the Azure migration process?"
+  - content: "What service can be used to migrate large quantities of data to Azure?"
     choices:
-    - content: "Migrate"
+    - content: "Azure TCO Calculator"
       isCorrect: false
-      explanation: "This is not the first stage of the migration process, the migration comes second in the plan."
-    - content: "Assess"
+      explanation: "Azure TCO Calculator is used to estimate costs on Azure."
+    - content: "Azure Data Box"
       isCorrect: true
-      explanation: "You cannot perform a migration until proper planning has taken place."
-    - content: "Optimize"
+      explanation: "Correct, Azure Data Box can be used to migrate large amounts of data to Azure."
+    - content: "Azure Advisor"
       isCorrect: false
-      explanation: "This is not the first stage of the migration process, this comes third in the plan."
+      explanation: "Azure Advisor is used to improve your environment with recommended best practices."
+    - content: "Azure Sentinel"
+      isCorrect: false
+      explanation: "Azure Sentinel is a SEIM service on Azure."
   - content: "In your scenario which two tools will your company be using in the migrate phase?"
     choices:  
     - content: "Azure Site Recovery, Azure Database Migration Service"
