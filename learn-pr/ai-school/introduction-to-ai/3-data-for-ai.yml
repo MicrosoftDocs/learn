@@ -12,4 +12,21 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-data-for-ai.md)] 
+  [!include[](includes/3-data-for-ai.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Continuous variables and categories are:"
+    choices:
+    - content: "Continuous variables are a class of something (approved and unapproved, fixed and broken), while categories are things that can be measured in numbers (height, weight etc.)."
+      isCorrect: false
+      explanation: "Incorrect. Continuous variables are not a class, and categories are not measured in numbers."
+    - content: "Continuous variables are things that can be measured in numbers (height, weight etc.), while categories are a specific set of numbers to represent something."
+      isCorrect: false
+      explanation: "Incorrect. While continuous variables are measurable data points, categories are not a class not a specific set of numbers."
+    - content: "Continuous variables are things that can be measured in numbers (height, weight etc.), while categories are a class of something (approved and unapproved, fixed and broken)."
+      isCorrect: true
+      explanation: "Correct. Continuous variables are measurable data points, and categories are a distinct class of something."
+    - content: "Continuous variables whole numbers that represent data points, while categories are a class of something (approved and unapproved, fixed and broken)."
+      isCorrect: false
+      explanation: "Incorrect. Continuous variables do not need to be whole numbers."
