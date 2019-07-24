@@ -25,4 +25,3 @@ The *HC-series* of VMs are optimized for applications driven by dense computatio
 ## Remote Direct Memory Access
 
 A subset of the H-series – the H16r and H16mr SKUs – and both the HB and HC-series VMs also use a second low-latency, high-throughput network interface called Remote Direct Memory Access (RDMA). The RDMA can give a significant boost to the performance of Message Passing Interface (MPI) applications.
-
