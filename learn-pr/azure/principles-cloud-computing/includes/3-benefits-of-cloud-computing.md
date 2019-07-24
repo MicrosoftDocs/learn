@@ -6,7 +6,7 @@ Let's learn some of the top benefits of cloud computing.
   :::column span="3":::
 ## It’s cost-effective
 
-Cloud computing provides a **pay-as-you-go** or **consumption-based** pricing model. Rather than paying upfront for a pre-defined amount of computing resources or hardware, you can rent hardware and pay for the resources that you actually use.
+Cloud computing provides a **pay-as-you-go** or **consumption-based** pricing model. 
 
 This consumption-based model brings with it many benefits, including:
 
@@ -107,9 +107,7 @@ Cloud providers offer a broad set of policies, technologies, controls, and exper
 
 When it comes to physical security &ndash; threats to cloud infrastructure, cloud providers invest heavily in walls, cameras, gates, security personnel, and so on, to protect physical assets. They also have strict procedures in place to ensure employees have access only to those resources that they’ve been authorized to manage.
 
-Then there’s digital security. One thing that makes the cloud unique is that you rent compute and storage resources from a shared pool. Plus, data can travel in many different ways &ndash; within a datacenter, between datacenters, and over the internet.
-
-For example, you want only authorized users to be able to log into virtual machines or storage systems running in the cloud. The responsibility for securing these resources is shared between you and the cloud provider. Cloud providers offer tools that help you mitigate security threats but you must use these tools to protect the resources you use.
+Let us talk about digital security. You want only authorized users to be able to log into virtual machines or storage systems running in the cloud. Cloud providers offer tools that help you mitigate security threats and you must use these tools to protect the resources you use.
 
 ## Summary
 

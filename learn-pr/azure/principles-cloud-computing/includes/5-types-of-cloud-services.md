@@ -27,8 +27,6 @@ IaaS is commonly used in the following scenarios:
 
 - **Test and development.** Teams can quickly set up and dismantle test and development environments, bringing new applications to market faster. IaaS makes scaling development and testing environments, fast and economical.
 
-- **Website hosting.** Running websites using IaaS can be less expensive compared to traditional web hosting.
-
 - **Storage, backup, and recovery.** Organizations avoid the capital outlay and complexity of storage management, which typically requires skilled staff to manage data and meet legal and compliance requirements. IaaS is useful for managing unpredictable demand and steadily growing storage needs. IaaS can also simplify the planning and management of backup and recovery systems.
 
 :::row:::
