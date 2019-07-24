@@ -6,7 +6,7 @@ In this unit, you'll look at Azure Migrate, a service you use to assess readines
 
 ## What is Azure Migrate?
 
-Azure Migrate is a free service provided by Microsoft that assesses On-premises VMware virtual machines for running in Azure. The service helps with the performance-based sizing calculations (virtual machine sizing, compute/storage) of the machines that you'll migrate, allowing you to estimate the ongoing cost of running these machines in Azure. Finally, the service allows the visualization of dependencies for those machines and helps you to create groups, so they can be assessed and ultimately migrated to Azure at the same time. Giving you confidence that nothing will be left behind.
+Azure Migrate is a free service provided by Microsoft that assesses on-premises VMware virtual machines for running in Azure. The service helps with the performance-based sizing calculations (virtual machine sizing, compute/storage) of the machines that you'll migrate, allowing you to estimate the ongoing cost of running these machines in Azure. Finally, the service allows the visualization of dependencies for those machines and helps you to create groups, so they can be assessed and ultimately migrated to Azure at the same time. Giving you confidence that nothing will be left behind.
 
 Azure Migrate has limitations, and currently only assess VMware-based virtual machines. When you use Azure Migrate, the assessments produced are created within a **Project**, which is set up within the Azure portal. Each project has a collector appliance, which discovers up to 1,500 VMs. You'll need to create additional projects if your company has more than 1,500 VMs or multiple vCenter Server instances. Up to 20 projects are supported per Azure subscription.
 
@@ -23,7 +23,7 @@ After you create a **Project**, Azure Migrate needs you to complete two phases t
 
 ![Azure Migrate Architecture](../media/3-azure-migrate-architecture.svg)
 
-The Azure portal will guide you through the process of downloading a **collector appliance**, which carries out the discovery of VMs in your environment. The collector appliance is available to download to your vCenter Server in the OVA (Open Virtualization Appliance) format. Import, and spin up, the collector appliance, and complete its configuration to connect it to the Azure Migrate project.
+The Azure portal will guide you through the process of downloading a collector appliance, which carries out the discovery of VMs in your environment. The collector appliance is available to download to your vCenter Server in the OVA (Open Virtualization Appliance) format. Import, and spin up, the collector appliance, and complete its configuration to connect it to the Azure Migrate project.
 
 The collector uses VMware PowerCLI cmdlets to do agentless data collection on your VMware estate. The collector collects data about VM cores, memory, disk sizes, and network adapters. Where applicable the collector also gathers performance data like CPU and memory usage, disk IOPS, disk throughput, and network output.
 

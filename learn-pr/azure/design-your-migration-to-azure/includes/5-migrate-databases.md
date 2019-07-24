@@ -1,6 +1,6 @@
 The Azure Database Migration Service enables online and offline migrations from multiple database sources to Azure data platforms with minimal downtime. The service uses the Data Migration Assistant to generate assessment reports, identified tasks are then performed by the Azure Database Migration Service.
 
-During the early stages of the migration project the IT Director requested that the current SQL cluster, which hosts several lines of business application databases, be included. With the required due diligence completed and the finer details that make up the SQL cluster have been noted, the migration can now take place.
+During the early stages of the migration project the IT Director requested that the current SQL cluster, which hosts several line of business application databases, be included.
 
 In this unit, you'll see how to use the the **Data Migration Assistant (DMA)** and **Azure Database Migration Service (DMS)** together. They provide a way to move on-premises SQL server databases efficiently to Azure.
 
@@ -30,18 +30,18 @@ As your companies database needs are simple, the fastest and cheapest option is 
 
 ![Database migrations](../media/5-database-migration.svg)
 
-The **Data Migration Assistant (DMA)** will guide you through the process. You'll take your existing relational databases, split out the database schema, and then recreate them in the destination Azure SQL database. With the new schema in place, the data for each database can then be copied to Azure. Finally, you'll check the new databases are performing as expected.
+The **Data Migration Assistant (DMA)** will guide you through the process of migrating your database. You'll take your existing relational databases, split out the database schema, and then recreate them in the destination Azure SQL database. With the new schema in place, the data for each database can then be copied to Azure. Finally, you'll check the new databases are performing as expected.
 
 ### Prerequisites
 
 Both offline and online migrations have the same prerequisite tasks:
 
-- **Download the DMA**: Download and install it locally on your on-premises SQL servers.
-- **Create an Azure VNET**: Created for the Azure Database Migration Service using the Azure Resource Manager deployment model. It provides connectivity to the on-premises environment.
-- **Configure the NSG (Network Security Group)**: The NSG associated with the new VNET should allow inbound connectivity to the service via ports 443, 53, 9354, 445, and 12000.
-- **Configure the Windows Firewall**: Using Windows Firewall, you must configure it to allow the Database Migration Service to connect over port 1433. 1434 can also be opened up, if multiple named instances on dynamic ports exist on the same server.
-- **Configure credentials**: Add **Control Server** permissions to the credentials used to connect to the source SQL server instance. Add **Control Database** permissions to the credentials used to connect to the target Azure SQL database.
-- **Provision your target database in Azure**: Create the database for the target of the migration. It should be sized appropriately for the migrated workload.
+- **Download the DMA** - Download and install it locally on your on-premises SQL servers.
+- **Create an Azure VNET** - Created for the Azure Database Migration Service using the Azure Resource Manager deployment model. It provides connectivity to the on-premises environment.
+- **Configure the NSG (Network Security Group)** - The NSG associated with the new VNET should allow inbound connectivity to the service via ports 443, 53, 9354, 445, and 12000.
+- **Configure the Windows Firewall** - Using Windows Firewall, you must configure it to allow the Database Migration Service to connect over port 1433. 1434 can also be opened up, if multiple named instances on dynamic ports exist on the same server.
+- **Configure credentials** - Add **Control Server** permissions to the credentials used to connect to the source SQL server instance. Add **Control Database** permissions to the credentials used to connect to the target Azure SQL database.
+- **Provision your target database in Azure** - Create the database for the target of the migration. It should be sized appropriately for the migrated workload.
 
 ### Assess the on-premises databases
 
@@ -49,9 +49,9 @@ Ensure all the communication ports are open, and check the connectivity between 
 
 The assessment will generate a report on completion, with a set of recommendations and alternative approaches that could be taken for the migration. You'll see any compatibility issues between the source and destination databases that could cause the migration to fail. Address the issues in the report, running it as many times as you need to ensure the issues have been fixed.
 
-![Sample DMA Report](../media/5-dma-assessment.png)
+A Data Migration Assistant report will look similar to the following.
 
-A sample Data Migration Assistant report.  
+![Sample DMA Report](../media/5-dma-assessment.png)  
 
 ### Migrate the schema using the DMA
 
@@ -61,13 +61,7 @@ To use the DMA to migrate the schema, create a new **Migration** project. Select
 
 ![Screenshot of the DMA exporting a schema](../media/5-dma-migrate-schema.png)
 
-### Prepare your Azure environment
-
-There is an important step you need to take to prepare Azure to use the DMS before starting the full database data migration:
-
-- **Register the Microsoft.DataMigration resource provider**: In the Azure portal, check that the **Microsoft.DataMigration** resource provider is enabled for your subscription.
-
-### Migrate your data with a DMS
+### Migrate your data with DMS
 
 In the Azure portal, follow these steps to create a DMS instance, and then run it to migrate the data in your databases:
 
@@ -77,3 +71,5 @@ In the Azure portal, follow these steps to create a DMS instance, and then run i
 - **Identify the databases**: Map the relevant target database on the target server to the source server.
 - **Run and monitor the migration**: Select the **Run migration** button to start the migration. The migration activity screen will appear. Track the progress until the process shows as "completed."
 - **Check the migrated databases**: After all the required databases are migrated, they should be checked to ensure they're working.
+
+Once complete, your schema and data will be migrated to Azure SQL Database. You can then shut down and decommission your databases and servers on-premises.
