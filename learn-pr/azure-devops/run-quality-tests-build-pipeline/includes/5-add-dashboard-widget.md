@@ -1,6 +1,6 @@
 Andy and Mara are excited to show Amita the progress they've made. They've already set up a dashboard. Now they can monitor pull requests and visualize the health of their builds.
 
-Here you'll add a widget to your dashboard to help you visualize your test runs over time.
+In this unit, you add a widget to your dashboard to help visualize your test runs over time.
 
 Amita takes a look and is excited.
 
@@ -10,22 +10,24 @@ Amita takes a look and is excited.
 
 ## Add the widget to the dashboard
 
-1. From your Azure DevOps project, select **Overview** and then **Dashboards**.
+1. In your Azure DevOps project, select **Overview**, and then select **Dashboards**.
 
     > [!NOTE]
     > If you ran the template to create the Azure DevOps project, you won't see the dashboard widgets you set up in previous modules.
 
-1. Click **Edit**.
-1. From the **Add Widget** pane, search for **Test Results Trend**.
+1. Select **Edit**.
+1. In the **Add Widget** pane, search for **Test Results Trend**.
 1. Drag **Test Results Trend** to the canvas.
-1. Click the gear icon to configure the widget.
-    1. Under **Build pipeline**, select your pipeline.
-    1. Keep all other settings at their default.
-1. Click **Save**.
-1. Click **Done Editing**.
+1. Select the gear icon to configure the widget.
 
-Although the widget shows only one test run, you now have a way to visualize and track test runs over time. Here's an example that shows a few successful test runs.
+    a. Under **Build pipeline**, select your pipeline.
 
-![The Test Results Trend widget showing passing tests](../media/5-test-results-trend-widget.png)
+    b. Keep the other default settings.
+1. Select **Save**.
+1. Select **Done Editing**.
 
-If you begin to see test failures, you can click on a point in the graph to navigate directly to that build.
+Although the widget displays only one test run, you now have a way to visualize and track test runs over time. Here's an example that shows a few successful test runs.
+
+![The Test Results Trend widget displaying passing tests](../media/5-test-results-trend-widget.png)
+
+If you begin to see test failures, you can click a point on the graph to navigate directly to that build.
