@@ -1,0 +1,31 @@
+For high-intensity tasks with specialized requirements, you may need to use specialized Virtual Machines (VMs).
+
+The 3D models used in your engineering organization require many calculations to render and use memory resources intensively. You find that standard VMs render these models relatively slowly. These delays affect the productivity of your engineers and you'd like to avoid them.
+
+Here, you'll learn about VM tiers in Azure that support specialized high-performance tasks.
+
+## H-series VMs
+
+As the solution architect for the engineering organization, you've already seen how Azure Batch orchestrates 100s and 1000s of nodes working together in parallel. The emphasis is on the sheer number of VMs that can be orchestrated in parallel. This process means that work is achieved in a fraction of the time. However, some use cases also call for especially powerful VMs with exceptional CPU, memory, and networking capabilities. In these cases, use Azure VM HPC instances. HPC Instances are a series of Azure VMs expressly designed to cater for some of the harder aspects of HPC scenarios.
+
+Azure *H-series* VMs are a family of the most powerful and fastest CPU-based VMs on Azure. These VMs are optimized for applications that require high CPU frequencies or large amounts of memory per core requirements. The basic H-series is well suited to use cases like genomic research, seismic and reservoir simulation, financial risk modeling, and molecular modeling. 
+
+The VMs feature the Intel Xeon E5-2667 v3 Haswell 3.2 GHz CPU with DDR4 memory. Configurations range from 8 cores and 56 GB at the lower end – the H8 SKU – to 16 cores and 224 GB at the higher end – the H16m SKU.
+
+> [!NOTE]
+> As soon as you start considering VMs of this size and power, you might need to create a support request to increase your subscription's allowed number of cores. You can create a support request easily and automatically in the Azure portal. Although the standard minimum core allowance varies according to Azure subscription type, H-series VMs feature a minimum of eight cores. Trying to deploy multiple basic H-series VMs would soon cause provisioning problems. Use the Azure VM Pricing Details page to ensure that the kind of VMs you want to deploy are available in your region.
+
+All these HPC instances can be used in concert with Azure Batch. When you set up an Azure Batch pool, you can specify that H-series VMs should be used.
+
+### HB-series VMs
+
+The *HB-series* of VMs specifically target applications requiring extreme memory bandwidth, particularly fluid dynamics, explicit finite element analysis, and weather modeling. HB VMs have 60 AMD EPYC 7551 processor cores, with 4 GB of RAM per CPU core and 240 GB of memory overall. HB-series VMs provide more than 260 GB/sec of memory bandwidth. This bandwidth is 33 percent faster than x86 alternatives and 2.5x faster than is standard for most current HPC customers.
+
+### HC-series VMs
+
+The *HC-series* of VMs are optimized for applications driven by dense computation, such as implicit finite element analysis, reservoir simulation, and computational chemistry. HC VMs have 44 Intel Xeon Platinum 8168 processor cores, with 8 GB of RAM per CPU core and 352 GB of memory overall. HC-series VMs support Intel software tools such as the Intel Math Kernel Library, and feature an all-cores clock speed greater than 3 GHz for most workloads.
+
+## Remote Direct Memory Access
+
+A subset of the H-series – the H16r and H16mr SKUs – and both the HB and HC-series VMs also use a second low-latency, high-throughput network interface called Remote Direct Memory Access (RDMA). The RDMA can give a significant boost to the performance of Message Passing Interface (MPI) applications.
+
