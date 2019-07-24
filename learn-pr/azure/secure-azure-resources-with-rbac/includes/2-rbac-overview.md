@@ -72,6 +72,6 @@ The following example shows how the Marketing group has been assigned the Contri
 
 RBAC is an allow model. What this means is that when you are assigned a role, RBAC allows you to perform certain actions, such as read, write, or delete. So, if one role assignment grants you read permissions to a resource group and a different role assignment grants you write permissions to the same resource group, you will have write permissions on that resource group.
 
-RBAC has something called `NotActions` permissions. `NotActions` is not a deny rule – it is simply a convenient way to create a set of allowed permissions when specific permissions need to be excluded.
+RBAC has something called `NotActions` permissions. Use `NotActions` to create a set of allowed permissions when specific permissions need to be excluded. The access granted by a role, the effective permissions, is computed by subtracting the `NotActions` operations from the `Actions` operations.
 
 In this unit, you learned the basics of how RBAC works. Now that you have the RBAC fundamentals out of the way, you can get your hands dirty by starting to use RBAC. The easiest way to get started is to use the Azure portal. The rest of this module has you perform hands-on exercises related to RBAC.
