@@ -10,7 +10,7 @@ Organizations use HPC to solve varied business problems. Your requirements may b
 
 ### Finite element analysis
 
-Finite element analysis deals with problems that involve complex questions of engineering physics. Such problems might include heat transfer, structural analysis, mass transport, and electromagnetic potential. To solve these problems, large systems are subdivided into smaller chunks called finite elements, and reassembled into a larger system of equations. 
+Finite element analysis deals with problems that involve complex questions of engineering physics. Such problems might include heat transfer, structural analysis, mass transport, and electromagnetic potential. To solve these problems, large systems are subdivided into smaller chunks called finite elements, and reassembled into a larger system of equations.
 
 Examples include car crash simulation and weather prediction. You can emphasize the most interesting aspects of the system. For example, car crash simulation might focus on the front of the vehicle while weather simulations can optimize for identifying extreme weather events. Using finite element analysis to model car crashes merely requires the specification of the vehicle's structural geometry and material composition. The mathematical variations for what might happen in a car crash over a couple of seconds are so vast that you might need HPC to model it properly.
 
