@@ -9,7 +9,7 @@ Azure storage accounts are used to house all data objects such as files, blobs, 
 
 Data in Azure is replicated to ensure it's always available if a datacenter or region becomes inaccessible, or a specific piece of hardware fails. There are four different replication options available:
 
-- Locally redundant storage (LRS
+- Locally redundant storage (LRS)
 - Zone redundant storage (ZRS)
 - Geographically redundant storage (GRS)
 - Read-access geo-redundant storage (RA-GRS)
