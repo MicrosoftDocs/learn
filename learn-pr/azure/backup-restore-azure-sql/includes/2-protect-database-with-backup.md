@@ -6,13 +6,13 @@ Here, you will learn about Azure SQL Database backups and how to use them effect
 
 ## Azure SQL Database backups storage
 
-SQL Database automatically creates database backups. The backups are kept for between 7 and 35 days. The retention time depends on the purchasing model and the service tier you chose when you created your database. When the backups are complete, they are stored as blobs in a Read-Access Geo Redundant Storage (RA-GRS) account in your Azure subscription. To ensure protection against a data center outage, they are replicated to a paired data centre.
+SQL Database automatically creates database backups. The backups are kept for between 7 and 35 days. The retention time depends on the purchasing model and the service tier you chose when you created your database. When the backups are complete, they are stored as blobs in a Read-Access Geo Redundant Storage (RA-GRS) account in your Azure subscription. To ensure protection against a data center outage, they are replicated to a paired data center.
 
 Azure SQL Database uses SQL Server technology to make these types of backups:
 
 - **Full backups.** In a full backup, everything in the database and the transaction logs is backed up. SQL Database makes a full backup once a week.
 - **Differential backups.** In a differential backup, everything that changed since the last full backup is backed up. SQL Database makes a differential backup every 12 hours.
-- **Transactional backups.** In a transactional backup, the contents of the transaction logs are backed up. SQL Database makes a transaction log backup every five to ten minutes. Transactional backups enable administrators to restore up to a specific point in time, such the moment before data was mistakenly deleted.
+- **Transactional backups.** In a transactional backup, the contents of the transaction logs are backed up. SQL Database makes a transaction log backup every five to 10 minutes. Transactional backups enable administrators to restore up to a specific point in time, such the moment before data was mistakenly deleted.
 
 These backups can be used to restore an existing database, restore a deleted database up to the point in time when it was deleted, restore the database to an alternative location or region, and to restore a database from a long-term backup using Long Term Retention (LTR). When a failure occurs, you may lose changes from up to five minutes ago, if the live transaction logs are lost. If the transaction logs are intact, you can restore up to the moment that the failure occurred. 
 
