@@ -4,15 +4,14 @@ Your first task is to create a scale set, and configure it to run a web server â
 
 ## Deploy a virtual machine scale set
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
-1. In the Cloud Shell window on the right, start the Code editor and create a file named **cloud-init.yaml**.
+1. Sign in to the Azure portal using your own account, and open the Azure Cloud Shell.
+2. In the Cloud Shell, start the Code editor and create a file named **cloud-init.yaml**.
 
     ```bash
     code cloud-init.yaml
     ```
 
-2. Add the following text to the file:
+3. Add the following text to the file:
 
     ```Text
     #cloud-config
@@ -30,13 +29,21 @@ Your first task is to create a scale set, and configure it to run a web server â
 
     This file contains the configuration information for installing nginx on the VMs in the scale set:
 
-3. Press Ctrl-S to save the file, and then press Ctrl-Q to close the Code editor.
+4. Press Ctrl-S to save the file, and then press Ctrl-Q to close the Code editor.
 
-4. Run the following command to create the virtual machine scale set:
+5. Run the following command to create a new resource group named **scalesetrg** for your scale set:
+
+    ```azurecli
+    az group create \
+      --location westus \
+      --name scalesetrg
+    ```
+
+6. Run the following command to create the virtual machine scale set:
 
     ```azurecli
     az vmss create \
-      --resource-group <rgn>[sandbox resource group]</rgn> \
+      --resource-group scalesetrg \
       --name webServerScaleSet \
       --image UbuntuLTS \
       --upgrade-policy-mode automatic \
@@ -57,7 +64,7 @@ Your first task is to create a scale set, and configure it to run a web server â
     ```azurecli
     az network lb probe create \
       --lb-name webServerScaleSetLB \
-      --resource-group <rgn>[sandbox resource group]</rgn> \
+      --resource-group scalesetrg \
       --name webServerHealth \
       --port 80 \
       --protocol Http \
@@ -70,7 +77,7 @@ Your first task is to create a scale set, and configure it to run a web server â
 
     ```azurecli
     az network lb rule create \
-      --resource-group <rgn>[sandbox resource group]</rgn> \
+      --resource-group scalesetrg \
       --name webServerLoadBalancerRuleWeb \
       --lb-name webServerScaleSetLB \
       --probe-name webServerHealth \
@@ -83,28 +90,26 @@ Your first task is to create a scale set, and configure it to run a web server â
 
 ## Test the virtual machine scale set
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your MSLearn account.
+1. In the Azure portal, in the left pane, select **Resource groups**, and then select the **scalesetrg** resource group.
 
-2. In the left pane, select **Resource groups**, and then select the <rgn>[sandbox resource group]</rgn> resource group.
+2. Select the **webServerScaleSet** virtual machine scale set.
 
-3. Select the **webServerScaleSet** virtual machine scale set.
-
-4. On the **Overview** page, note the public IP address of the virtual machine scale set.
+3. On the **Overview** page, note the public IP address of the virtual machine scale set.
 
     ![Screenshot of the Azure portal, showing the Overview page for the virtual machine scale set](../media/3-vmss-properties.png)
 
-5. Under **Settings**, select **Instances**, and verify that the scale set contains two running VMs.
+4. Under **Settings**, select **Instances**, and verify that the scale set contains two running VMs.
 
     ![Screenshot of the Azure portal, showing the instances for the virtual machine scale set](../media/3-vmss-instances.png)
 
-6. Select **Operating system,** and verify that the VMs are running Ubuntu Linux.
+5. Select **Operating system,** and verify that the VMs are running Ubuntu Linux.
 
     ![Screenshot of the Azure portal, showing the operating system for the virtual machine scale set](../media/3-vmss-operating-system.png)
 
-7. Select **Size**. The VMs should be running on DS1_v2 hardware
+6. Select **Size**. The VMs should be running on DS1_v2 hardware
 
     ![Screenshot of the Azure portal, showing the size of the virtual machines in the scale set](../media/3-vmss-size.png)
 
-8. In your web browser, go to the public IP address of the scale set. Verify that the message **Hello World from VM Scale Set !**<!--CE:Is this correct, with a space between 'Set' and '!'?--> appears.
+7. In your web browser, go to the public IP address of the scale set. Verify that the message **Hello World from VM Scale Set !**<!--CE:Is this correct, with a space between 'Set' and '!'?--> appears.
 
     ![Screenshot of the web app](../media/3-web-app.png)

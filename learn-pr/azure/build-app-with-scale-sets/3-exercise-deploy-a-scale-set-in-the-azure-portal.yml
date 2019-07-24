@@ -13,7 +13,7 @@ metadata:
   ROBOTS: NOINDEX
 
 durationInMinutes: 5
-azureSandbox: true
+azureSandbox: false
 interactive: bash
 content: |
   [!include[](includes/3-exercise-deploy-a-scale-set-in-the-azure-portal.md)]

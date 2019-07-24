@@ -6,9 +6,7 @@ In this exercise, you'll configure autoscaling, and define scale rules that scal
 
 ## Create a scale-out scale rule
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
-1. Return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). If necessary, sign in using your MSLearn account.
+1. Return to the Azure portal.
 
 2. Go to the page for the virtual machine scale set.
 

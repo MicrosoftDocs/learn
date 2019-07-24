@@ -29,7 +29,7 @@ In this exercise, you'll use a custom script extension to roll out a new version
     ```azurecli
     az vmss show \
         --name webServerScaleSet \
-        --resource-group <rgn>[Sandbox resource group]</rgn> \
+        --resource-group scalesetrg \
         --query upgradePolicy.mode
     ```
 
@@ -43,7 +43,7 @@ In this exercise, you'll use a custom script extension to roll out a new version
         --version 2.0 \
         --name CustomScript \
         --vmss-name webServerScaleSet \
-        --resource-group <rgn>[Sandbox resource group]</rgn> \
+        --resource-group scalesetrg \
         --settings @appV2.json
     ```
 
@@ -54,11 +54,11 @@ In this exercise, you'll use a custom script extension to roll out a new version
     ```azurecli
     az network public-ip show \
         --name webServerScaleSetLBPublicIP \
-        --resource-group <rgn>[Sandbox resource group]</rgn> \
+        --resource-group scalesetrg \
         --output tsv \
         --query ipAddress
     ```
 
-2. Using your web browser, go to the public address of the scale set load balancer in the web browser. Verify that the message **This is the updated app installed on the Virtual Machine Scale Set !<!--CE:Should this space be here?-->** appears.
+2. Using your web browser, go to the public address of the scale set load balancer in the web browser. Verify that the message **This is the updated app installed on the Virtual Machine Scale Set** appears.
 
     ![Screenshot of the updated web app](../media/7-web-app.png)

@@ -13,6 +13,6 @@ metadata:
   ROBOTS: NOINDEX
 
 durationInMinutes: 5
-azureSandbox: true
+azureSandbox: false
 content: |
   [!include[](includes/5-exercise-configure-a-virtual-machine-scale-set.md)]
