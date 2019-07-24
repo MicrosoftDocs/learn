@@ -6,7 +6,7 @@ In this unit, you'll gain an understanding of recovery time and recovery point o
 
 ## Disaster recovery drill
 
-Azure Site Recovery allows you to do a full disaster recovery test without impacting your existing live environment. Recovery plans are created within Site Recovery and allow for the automation of recovery tasks, model specific applications around its dependencies, such as it needing Active Directory or DNS to function. Recovery plans also allows you to test your disaster recovery.
+Azure Site Recovery allows you to do a full disaster recovery test without impacting your existing live environment. Recovery plans are created within Site Recovery and allow for the automation of recovery tasks, model-specific applications around its dependencies, such as it needing Active Directory or DNS to function. Recovery plans also allows you to test your disaster recovery.
 
 Once a recovery plan is created on the Azure portal, it can be executed for test purposes. Follow these steps:
 
@@ -28,7 +28,7 @@ From within the dashboard replicated items and test failovers can be monitored, 
 
 ![Site recovery overview](../media/3-site-recovery-overview.png)
 
-**(1) Backup or Site Recovery**: This enables you to switch between the Back or the Site Recovery dashboards. In the above example you are on the Site Reovery tab.
+**(1) Backup or Site Recovery**: This enables you to switch between the Back or the Site Recovery dashboards. In the above example, you are on the Site Recovery tab.
 
 **(2) Replicated items**: **Healthy** means that replication is running normally with no warnings. **Warning** means that one or more issues have been identified that could affect replication have been detected. **Critical** means that one or more critical replication errors have been identified.
 
