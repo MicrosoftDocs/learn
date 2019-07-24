@@ -12,9 +12,6 @@ Azure *H-series* VMs are a family of the most powerful and fastest CPU-based VMs
 
 The VMs feature the Intel Xeon E5-2667 v3 Haswell 3.2 GHz CPU with DDR4 memory. Configurations range from 8 cores and 56 GB at the lower end – the H8 SKU – to 16 cores and 224 GB at the higher end – the H16m SKU.
 
-> [!NOTE]
-> As soon as you start considering VMs of this size and power, you might need to create a support request to increase your subscription's allowed number of cores. You can create a support request easily and automatically in the Azure portal. Although the standard minimum core allowance varies according to Azure subscription type, H-series VMs feature a minimum of eight cores. Trying to deploy multiple basic H-series VMs would soon cause provisioning problems. Use the Azure VM Pricing Details page to ensure that the kind of VMs you want to deploy are available in your region.
-
 All these HPC instances can be used in concert with Azure Batch. When you set up an Azure Batch pool, you can specify that H-series VMs should be used.
 
 ### HB-series VMs
