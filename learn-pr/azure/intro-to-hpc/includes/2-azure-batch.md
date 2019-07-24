@@ -1,5 +1,3 @@
-You can use Azure Batch to provision and distribute load between VMs and other compute resources.
-
 As the solution architect for the engineering organization, you need to understand the options available for batch processing and High-Performance Computing (HCP) on Azure. This knowledge will help to determine how you can efficiently render the 3D models of the facilities which the company designs – and how you store all of the related statistical data that's produced.
 
 Because of the sheer array of HPC and batch processing choices available on Azure, you talk with an Azure expert who advises you to focus on three options: Azure Batch, Azure VM HPC Instances, and Microsoft HPC Pack. You'll look at each in the following units. It's important to note that these choices aren't classically exclusive. They build upon one other and can be thought of as different tools in a toolbox.
@@ -20,7 +18,7 @@ Azure Batch has several components that act together. An *Azure Batch Account* f
 
 ## Azure Batch in action
 
-When you create Batch tasks, the scheduling and management engine determines the  optimal plan for allocating and scheduling tasks across the specified compute capacity during the initial creation of an Azure Batch pool. 
+When you create Batch tasks, the scheduling and management engine determines the  optimal plan for allocating and scheduling tasks across the specified compute capacity during the initial creation of an Azure Batch pool.
 
 In a series of 100 tasks and 10 nodes, for example, Batch schedules the first 10 tasks onto those 10 nodes. Batch immediately allocates later tasks when nodes finish processing. For spiky workloads, you can configure scaling rules, which Batch also handles automatically. If you provision 100 VMs with no Batch context, you'll have to code these scheduling and work allocation mechanisms by hand.
 
