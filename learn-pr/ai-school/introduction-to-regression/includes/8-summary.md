@@ -1,9 +1,9 @@
-In this module, you were introduced to AI, machine learning, and deep learning. You covered the fundamental concepts of AI, and set up your programming environment in Azure Notebooks.
+In this module, you were introduced to regression and modelling datasets using regression models. You covered the fundamental concepts of regression, simple linear regression, multiple linear regression, and polynomial regression.
 
 Now that you have reviewed this module, you should be able to:
 
-* Learn what AI, Machine Learning and Deep Learning are.
-* Learn how to use Python on Azure Notebooks.
-* Learn what models, error and cost are.
+* Articulate the fundamentals of regression.
+* Apply simple linear regression, multiple linear regression, and polynomial regression predictive models.
+* Model non-linear data sets.
 
 Congratulations, that's the end of the module! In the next module, we have an introduction to classification.
