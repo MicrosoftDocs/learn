@@ -12,4 +12,21 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 40
 content: |
-  [!include[](includes/4-multiple-linear-regression.md)] 
+  [!include[](includes/4-multiple-linear-regression.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "The word ‘multiple’ in the name ‘multiple linear regression’ means that:"
+    choices:
+    - content: "It predicts multiple features using one feature."
+      isCorrect: false
+      explanation: "Incorrect. It only predicts one feature."
+    - content: "It predicts multiple features using multiple features."
+      isCorrect: false
+      explanation: "Incorrect. Many features are used but it only predicts one feature."
+    - content: "It uses multiple features to predict one other feature."
+      isCorrect: true
+      explanation: "Correct. For example, we might use height and weight to predict shoe size."
+    - content: "It predicts one feature to using one feature."
+      isCorrect: false
+      explanation: "Incorrect. Multiple features are used."
