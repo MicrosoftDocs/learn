@@ -13,7 +13,7 @@ title: Failover and failback
 durationInMinutes: 4
 content: |
   [!include[](includes/5-failover-and-failback.md)]
-  quiz:
+quiz:
   title: Check your knowledge
   questions:
   - content: "What is meant by the terms failover, and failback in the context of disaster recovery?"
