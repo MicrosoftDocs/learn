@@ -14,7 +14,7 @@ summary: Scan open-source components for security vulnerabilities and assess the
 abstract: |
   In this module, you will:
   - Learn which tools you can use to inspect open-source software packages for security and license ratings
-  - Access package and license ratings for open-source components using WhiteSource Bolt
+  - Access package and license ratings for open-source components by using WhiteSource Bolt
   - Analyze the results of the scan so you can take the appropriate action
 prerequisites: |
   - An Azure DevOps account
