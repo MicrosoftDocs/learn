@@ -40,7 +40,7 @@ In the portal, you can examine the default retention policy and adapt it to your
 1. On the **Configure policies** tab, click the **sql-erp-db** database, and then click **Configure retention**.
 1. In the **Point In Time Restore Configuration** drop-down list, select **28**.
 
-    ![Screenshot of the Azure portal showing the database restore options for PITR](../media/3-configure-backup-pitr-retention.PNG)
+    ![Screenshot of the Azure portal showing the database restore options for PITR](../media/3-configure-backup-pitr-retention.png)
 
 1. Click **Apply**, and then click **Yes**.
 
