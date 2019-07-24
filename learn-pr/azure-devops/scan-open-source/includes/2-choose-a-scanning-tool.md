@@ -1,6 +1,6 @@
 In this section, you'll examine a few tools that scan for known vulnerabilities and for license ratings in the open-source components that your application uses.
 
-Recall that in [Scan code for vulnerabilities in your build pipeline](/learn/modules/scan-for-vulnerabilities?azure-portal=true), Tim from the Tailspin web team needed to provide a report to the security consultant that showed which security vulnerabilities were in the code and the potential impact of those vulnerabilities. The team used SonarCloud to perform the scan, which provided Tim with the report he needed.
+Recall that in [Scan code for vulnerabilities in your build pipeline](/learn/modules/scan-for-vulnerabilities?azure-portal=true), Tim from the Tailspin web team needed to provide a report to the security consultant that showed which security vulnerabilities were in the code and the potential impact of those vulnerabilities. The team used SonarCloud to do the scan, which provided Tim with the report he needed.
 
 Let's check in with the team at their weekly meeting and see how things are progressing.
 
@@ -14,7 +14,7 @@ Let's check in with the team at their weekly meeting and see how things are prog
 
 **Andy**: I've heard of GPL. That stands for GNU General Public License. What's the issue?
 
-**Tim**: Well, it turns out that if you modify certain open-source libraries, even if it's to fix a bug or make a minor enhancement, you may be required to make those changes publicly available. Those changes could include intellectual property we want to protect. There's this big conversation happening with our legal team to identify what's next. I'm worried that this might affect our team as well.
+**Tim**: Well, it turns out that if you modify certain open-source libraries, even if it's to fix a bug or make a minor enhancement, you might be required to make those changes publicly available. Those changes could include intellectual property we want to protect. There's this big conversation happening with our legal team to identify what's next. I'm worried that this might affect our team as well.
 
 **Amita**: I wasn't aware that this project used much open-source software.
 
@@ -56,11 +56,11 @@ Their [Azure Pipelines extension](https://marketplace.visualstudio.com/items?ite
 
 [Veracode](https://www.veracode.com?azure-portal=true) is a code scanning tool that integrates with Azure Pipelines to help you find vulnerabilities early in the development process. 
 
-Their [Azure Pipelines extension](https://marketplace.visualstudio.com/items?itemName=Veracode.veracode-vsts-build-extension&azure-portal=true) stops the build process if there is a severe security risk and gives you guidance on finding and fixing the vulnerability.
+Their [Azure Pipelines extension](https://marketplace.visualstudio.com/items?itemName=Veracode.veracode-vsts-build-extension&azure-portal=true) stops the build process if there's a severe security risk and gives you guidance on finding and fixing the vulnerability.
 
 ### WhiteSource Bolt
 
-[WhiteSource Bolt](https://bolt.whitesourcesoftware.com?azure-portal=true) is a tool for scanning open-source dependencies for vulnerabilities and licensing. It supports over 200 programming languages and gives guidance on fixing the vulnerabilities. There are reports for vulnerabilities, licensing, and inventory. 
+[WhiteSource Bolt](https://bolt.whitesourcesoftware.com?azure-portal=true) is a tool for scanning open-source dependencies for vulnerabilities and licensing. It supports more than 200 programming languages and gives guidance on fixing the vulnerabilities. There are reports for vulnerabilities, licensing, and inventory. 
 
 Their [Azure Pipelines extension](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt&azure-portal=true) allows for extensive policy configuration as well as viewing the results from the Azure Pipelines portal.
 

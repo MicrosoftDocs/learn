@@ -1,8 +1,8 @@
 In this module, you'll scan open-source components for security vulnerabilities and assess their license ratings.
 
-It's important to have an inventory of the open-source components that your project uses. You need to understand which libraries have vulnerability issues, when those vulnerabilities were addressed, and what versions you can use. Based on this information, you might even choose to use a different library or write your own.
+It's important to have an inventory of the open-source components that your project uses. It's important to understand which libraries have vulnerability issues, when those vulnerabilities were addressed, and what versions you can use. Based on this information, you might even choose to use a different library or write your own.
 
-You also need to understand what licenses these libraries use. Some licenses require you to make public any code that uses that library if you've made changes to the library's code. This is problematic when your source code is not open source as well. Of course, you'll need to check with your own legal team to determine which licenses you can use.
+You also need to understand what licenses these libraries use. Some licenses require you to make public any code that uses that library if you've made changes to the library's code. This requirement is problematic when your source code is not open source as well. You'll need to check with your own legal team to determine which licenses you can use.
 
 In [Scan code for vulnerabilities in your build pipeline](/learn/modules/scan-for-vulnerabilities?azure-portal=true), you used SonarCloud to scan for potential vulnerabilities in your source code during the build process.
 

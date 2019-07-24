@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "How can you make sure an open source component you use doesn't have security defects?"
+  - content: "How can you make sure an open-source component you use doesn't have security defects?"
     choices:
     - content: "Examine the component's documentation to understand known vulnerabilities."
       isCorrect: false
@@ -37,4 +37,4 @@ quiz:
       explanation: "Although you can learn  how other projects define their license terms, the focus here is on ensuring that the licenses you use are acceptable to your company's use of open source."
     - content: "It's not important. Open source refers to free, unrestricted use of the software."
       isCorrect: false
-      explanation: "Most open-source components come with licensing terms. Always understand the terms you are agreeing to."
+      explanation: "Most open-source components come with licensing terms. Always understand the terms you're agreeing to."
