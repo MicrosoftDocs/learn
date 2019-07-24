@@ -5,7 +5,8 @@ After implementing and testing your recovery plan within Azure, you wish to ensu
 In this unit, you'll see how to use RBAC to give teams, and specific people, restricted access to the abilities of Azure Site Recovery.
 
 ## Role-based access control
-![A diagram showing roles with different levels of access, to different levels of resources.](../media/4-rbac-least-privilege.png)
+
+![A diagram showing roles with different levels of access, to different levels of resources.](../media/6-rbac-least-privilege.png)
 
 Using RBAC allows you as the administrator of the system to segregate duties, with a team or to individuals, to perform a task. Rather than granting everybody full permissions to an Azure subscription that would be insecure, only the permissions to perform the task needed should be granted. Best practice states that the least privilege should be assigned for a person, or group involved, to perform the task they need.
 
@@ -34,7 +35,8 @@ There are several built-in roles in Azure that are below, although extra roles c
 - **User Access Administrator**: the ability to manage user access to Azure resources
 
 ### Scope
-![A diagram showing how the levels that can be scoped in an Azure account, from the top-level Management Group, through Subscriptions, to Resource Groups, and at the lowest level a specific resource like a VM or database.](../media/5-rbac-scope.png)
+
+![A diagram showing how the levels that can be scoped in an Azure account, from the top-level Management Group, through Subscriptions, to Resource Groups, and at the lowest level a specific resource like a VM or database.](../media/6-rbac-scope.png)
 
 The scope is the selection or set of resources that the access created in the role section. The scope of a permission can be set at multiple hierarchical levels to further restrict the permission. In that hierarchy, a parent/child relationship comes in to play, as in, if a permission is assigned to a parent object, all child objects of that parent inherit that permission also. The hierarchy is:
 

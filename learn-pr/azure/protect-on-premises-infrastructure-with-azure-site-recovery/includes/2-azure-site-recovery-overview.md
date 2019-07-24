@@ -37,7 +37,7 @@ Some notable features of Azure Site Recovery are:
 
 ## Setting up Azure Site Recovery
 
-![Diagram showing the Azure Site Recovery architecture](../media/1-Arch-enhanced.png)
+![Diagram showing the Azure Site Recovery architecture](../media/2-arch-enhanced.png)
 
 There are several components that need to be set up to enable Azure Site Recovery:
 

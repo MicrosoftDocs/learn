@@ -26,7 +26,7 @@ From within the dashboard replicated items and test failovers can be monitored, 
 
 <!-- Insert picture similar to this, Azure Migrate Architecture -->
 
-![Site recovery overview](../media/3-site-recovery-overview.png)
+![Site recovery overview](../media/4-site-recovery-overview.png)
 
 **(1) Backup or Site Recovery**: This enables you to switch between the Back or the Site Recovery dashboards. In the above example, you are on the Site Recovery tab.
 
