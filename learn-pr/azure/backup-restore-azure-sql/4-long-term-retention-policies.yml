@@ -2,7 +2,7 @@
 uid: learn.backup-restore-azure-sql.4-long-term-retention-policies
 metadata:
   title: Retain backup history with long-term retention policies
-  description: Retain backup history with long-term retention policies
+  description: In this unit, you'll learn how to configure Azure SQL Database to keep data for up to 10 years.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Retain backup history with long-term retention policies
-durationInMinutes: 10
+durationInMinutes: 5
 content: |
   [!include[](includes/4-long-term-retention-policies.md)]

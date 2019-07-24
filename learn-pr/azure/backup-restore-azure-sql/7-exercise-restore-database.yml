@@ -2,7 +2,7 @@
 uid: learn.backup-restore-azure-sql.7-exercise-restore-database
 metadata:
   title: Exercise - Recover data by restoring an Azure SQL Database
-  description: Exercise - Recover data by restoring an Azure SQL Database
+  description: In this unit, you'll recover from a mistaken database modification by restoring a backup.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
@@ -10,8 +10,7 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Exercise - Recover data by restoring an Azure SQL Database
-durationInMinutes: 10
-interactive: bash
+durationInMinutes: 7
 azureSandbox: true
 content: |
   [!include[](includes/7-exercise-restore-database.md)]
