@@ -14,6 +14,5 @@ metadata:
 
 durationInMinutes: 5
 azureSandbox: false
-interactive: bash
 content: |
   [!include[](includes/7-exercise-update-applications-in-virtual-machine-scale-sets.md)]
