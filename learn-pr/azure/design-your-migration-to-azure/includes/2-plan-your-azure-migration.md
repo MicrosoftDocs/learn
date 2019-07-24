@@ -107,6 +107,6 @@ Azure Cost Management shows you cost reduction advice from Azure Advisor. The ad
 
 You can set up alerts based on a range of data sources, from specific metric values like CPU usage, specific text in log files, health metrics, or an autoscale metric.
 
-It's also important to have security logging and visibility into security events across your enterprise. The Azure Sentinel service provides SEIM capabilities along with artificial intelligence to help you protect, detect, and respond to security events.
+It's also important to have security logging and visibility into security events across your enterprise. **Azure Sentinel** provides SEIM capabilities along with artificial intelligence to help you protect, detect, and respond to security events.
 
 The remainder of this module will focus on the **Assess** and **Migrate** stages. Additional resources to help you with the **Optimize** and **Monitor** stages can be found in the **Learn more** section at the end of this module.
