@@ -67,7 +67,7 @@ In other situations, you may need to set up resources in Azure to have them avai
 
 It's often best to start with a small migration, as opposed to migrating a large, business-critical workload. This allows you to increase familiarity with the tools, processes, and procedures for migration. It can reduce the risk of issues when you migrate larger workloads. As you become more comfortable with the migration process, you can continue to larger and more business-critical workloads.
 
-<!-- Each tool will guide you through the migration, and the steps to complete them are covered in future units. At a high level these steps are:
+Each tool will guide you through the migration, and the steps to complete them are covered in future units. At a high level these steps are:
 
 1. Prepare the source (vCenter Server) and target (Azure) environments.
 1. Set up and start the replication between the two.
@@ -79,15 +79,15 @@ For the Database migrations, the high-level steps are:
 1. Assess your on-premises databases.
 1. Migrate the schemas.
 1. Create and run an Azure Database Migration Service project to move the data.
-1. Monitor the migration. -->
+1. Monitor the migration.
 
 ### Decommission on-premises infrastructure
 
-Decommission all your on-premise systems once all the migrated workloads have been tested and validated to have been successfully migrated to Azure. Even after decommissioning the systems, it can be beneficial to retain backups and archive data from the migrated systems. This provides you a historical archive of data in the event they are needed. This data could be stored on-premises, or in a cloud storage service, such as Azure blob storage.
+Once all the migrated workloads have been tested and validated to have been successfully migrated to Azure, you can decommission all your on-premises systems. Even after decommissioning the systems, it can be beneficial to retain backups and archive data from the migrated systems. This provides you a historical archive of data in the event they are needed. This data could be stored on-premises, or in a cloud storage service, such as Azure blob storage.
 
 ![Optimize stage](../media/2-optimize.png)
 
-With your services migrated, it's important to optimize them to ensure they are running as efficiently as possible from a cost and performance standpoint. 
+With your services migrated, it's important to optimize them to ensure they are running as efficiently as possible from a cost and performance standpoint.
 
 ### Analyze running costs
 
@@ -97,7 +97,7 @@ Using **Azure Cost Management** you can start analyzing your Azure costs at any 
 
 ### Review opportunities to improve
 
-Azure Cost Management shows you cost reduction advice from Azure Advisor. The advice includes suggestions like reducing the performance of underutilized VMs, making use of additional discounts, or reserving resources instead of paying as-you-go.
+Azure Cost Management shows you cost reduction advice from Azure Advisor. The advice includes suggestions like reducing the performance of underutilized VMs, making use of additional discounts, or reserving resources instead of paying as-you-go. Azure Advisor will also show you recommendations on network security, high availability, and performance. Review the recommendations that Advisor presents to further optimize your environment.
 
 ![Monitor stage](../media/2-monitor.png)
 
@@ -107,6 +107,6 @@ Azure Cost Management shows you cost reduction advice from Azure Advisor. The ad
 
 You can set up alerts based on a range of data sources, from specific metric values like CPU usage, specific text in log files, health metrics, or an autoscale metric.
 
-### Set up data protection, backup, and disaster recovery
+It's also important to have security logging and visibility into security events across your enterprise. The Azure Sentinel service provides SEIM capabilities along with artificial intelligence to help you protect, detect, and respond to security events.
 
-Once everything is up and running, and being monitored, Azure has a good set of tools to protect those workloads. From replicating the infrastructure to handle disaster recovery, to having VMs located around the world to improve performance.
+The remainder of this module will focus on the **Assess** and **Migrate** stages. Additional resources to help you with the **Optimize** and **Monitor** stages can be found in the **Learn more** section at the end of this module.

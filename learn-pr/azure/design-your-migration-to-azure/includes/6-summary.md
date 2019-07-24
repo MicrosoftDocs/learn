@@ -11,3 +11,13 @@ To learn more about the tools and services available to help you migrate to Azur
 - [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview)
 - [Physical server to Azure disaster recovery architecture](https://docs.microsoft.com/azure/site-recovery/physical-azure-architecture)
 - [Hyper-V to Azure disaster recovery architecture](https://docs.microsoft.com/azure/site-recovery/hyper-v-azure-architecture)
+
+For information on optimizing your environment, see the following Microsoft Learn modules.
+
+- [Predict costs and optimize spending for Azure](https://docs.microsoft.com/learn/modules/predict-costs-and-optimize-spending/)
+- [Design for efficiency and operations in Azure](https://docs.microsoft.com/learn/modules/design-for-efficiency-and-operations-in-azure/)
+
+For information on monitoring your environment, see the following articles.
+
+- [Azure Monitor overview](https://docs.microsoft.com/azure/azure-monitor/overview)
+- [Azure Sentinel overview](https://docs.microsoft.com/azure/sentinel/overview)
