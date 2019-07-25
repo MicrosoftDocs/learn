@@ -1,8 +1,8 @@
 Over the pervious learning paths (Links here), the team has been slowly integrating an Azure DevOps strategy into their current processes. They have created Boards to help them begin using a more Agile aproach to development, and they have set up a build pipeline to automate their builds. 
 
-Here you'll make sure that your environment reflects the team's efforts so far.
+Here you make sure that your environment reflects the team's efforts so far.
 
-To do this you will:
+To do this, you:
 
 > [!div class="checklist"]
 > * Get the SpaceGame Web source code from GitHub
@@ -22,7 +22,7 @@ Visual Studio Code comes with an integrated terminal so you can edit files and w
 1. From the **View** menu, select **Terminal**.
 1. From the drop-down box, select **bash**.
 
-    <!-- ![Selecting the Bash shell in Visual Studio Code](../media/3-vscode-bash.png) -->(Screenshot)
+    ![Selecting the Bash shell in Visual Studio Code](../media/4-vscode-bash.png)
     The terminal window enables you to choose among any shell that's installed on your system, such as Bash, Zsh, and PowerShell.
 
     Here you'll use Bash. Git for Windows provides Git Bash, which makes it easy to run Git commands.
@@ -67,7 +67,7 @@ To fork the _Space Game_ web project into your GitHub account:
 1. Navigate to the [Space Game](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web?azure-portal=true) web project.
 1. Click the **Fork** button.
 
-    <!-- ![The Fork button on GitHub](../media/3-github-fork-button.png) -->(screenshot)
+    ![The Fork button on GitHub](../media/4-github-fork-button.png)
 1. Follow the instructions to fork the repository into your account.
 
 #### Clone your fork locally
@@ -81,7 +81,7 @@ To clone the _Space Game_ web project to your computer:
 1. Navigate to your fork of the _Space Game_ web project on GitHub.
 1. Click the **Clone or download** button. Then click the button next to the URL that's shown to copy the URL to your clipboard.
 
-    <!-- ![The Clone or download button on GitHub](../media/3-github-clone-button.png) -->(screenshot)
+    ![The Clone or download button on GitHub](../media/4-github-clone-button.png)
 1. From Visual Studio Code, navigate to the terminal window and run the `git clone` command. Replace the URL that's shown with the contents of your clipboard.
 
     ```bash
@@ -158,10 +158,7 @@ This learning path also builds on the [Evolve your DevOps practices](/learn/path
 
 At this point, you have two options:
 
-1. Continue with the Azure DevOps project you created in the _Evolve your DevOps practices_ learning path.
 1. Run a template that sets up everything for you in your Azure DevOps organization.
-
-You can continue using your existing project if you completed the previous modules and have the Tailspin project set up in Azure DevOps. Run the template if you don't have the project set up or want to repeat this module from a fresh environment.
 
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=create-build-pipeline&azure-portal=true)
@@ -169,7 +166,7 @@ You can continue using your existing project if you completed the previous modul
 From the Azure DevOps Demo Generator site, perform these steps to run the template.
 
 1. Click **Sign In** and accept the usage terms.
-1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - Pipeline**. Then click **Create Project**.
+1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - Release**. Then click **Create Project**.
 
     ![Creating a project through the Azure DevOps Demo Generator](../media/4-create-new-project.png)
 
@@ -212,9 +209,9 @@ At the end of this module, you'll move the card to the **Done** column after you
 
 ## Create the initial build pipeline
 
-Here we will create the same basic build pipeline we create in **(Create Build Pipeline module link here)**. This will give us a place to start for our multistage release pipeline.
+Here you create the same basic build pipeline we created in **TODO: (Create Build Pipeline module link here)**. This will give you a place to start for your multistage release pipeline.
 
- Mulitstage pipelines are a preview feature. This means that they will shortly become integrated into the standard Azure DevOps experience, but for now we will need to turn on this feature.
+ Mulitstage pipelines are a preview feature. This means that they will shortly become integrated into the standard Azure DevOps experience, but for now you need to turn on this feature.
 
 ### Turn on multistage pipelines in Azure DevOps
 
@@ -222,8 +219,8 @@ Here we will create the same basic build pipeline we create in **(Create Build P
 
   1. Right-click your profile
   1. Select Preview features
-  1. Turn on Multi Stage Pipelines **(screenshot)**
-  1. Notice that separate **Pipelines** menu entries for **Release** and **Build** are now gone. This is because we will do our build and release from the same pipeline.
+  1. Turn on Multi Stage Pipelines **TODO: (screenshot)**
+  1. Notice that separate **Pipelines** menu entries for **Release** and **Build** are now gone. This is because you will now do your build and release from the same pipeline.
 
 ### Add the build pipeline
 
@@ -278,3 +275,5 @@ You'll notice that we have set it up to use stages and jobs. For now, we only ha
     You see a .zip file that contains your built application and its dependencies.
 
     ![The Artifacts explorer showing the packaged application](../media/5-artifacts-explorer.png)
+
+You now have a build pipeline for the Space Game web project. Next, you will add the deployment stage to this pipeline.

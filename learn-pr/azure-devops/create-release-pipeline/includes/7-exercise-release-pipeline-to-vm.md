@@ -1,6 +1,6 @@
-**Change File Name**
+TODO: Change File Name
 
-Just like we did in the Build LP, we will want a way to easily monitor our deployments. Here we will add a release dashboard to Azure DevOps.
+Just like we did in the Build LP, we will want a way to easily monitor our deployments. Here you add a release dashboard to Azure DevOps.
 
 Exercise - Add a dashboard widget for the deploy
 

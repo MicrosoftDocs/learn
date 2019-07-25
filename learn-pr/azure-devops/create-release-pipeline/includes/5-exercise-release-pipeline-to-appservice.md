@@ -2,18 +2,20 @@ The team has been using a build pipeline to automate their build processes. Now,
 
 Let's follow them as they create their first automated deployment.
 
-Here you'll create a release pipeline using multistage pipelines. To do this you will:
+Here you create a release pipeline using multistage pipelines. To do this you:
 
 > [!div class="checklist"]
 > * Create an App Service in Azure to host the website
 > * Use multistage pipelines to create a build and release pipeline
 > * See the website deployed to an Azure AppService
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
+<!-- [!include[](../../../includes/azure-sandbox-activate.md)] -->
 
 ## Create the AppService
 
-1. Once the sandbox is activated, navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+TODO: Since we are not using the sandbox anymore, have them create a resource group.
+
+1. Navigate to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. On the left side, find **App Services** and click on it to open the App Services page.
 1. In the App Services page click the **+ Add** to add a new Azure App Service.
 1. On the Web App page
@@ -22,9 +24,9 @@ Here you'll create a release pipeline using multistage pipelines. To do this you
     1. Give your Web App a unique name. For example *TailspinSpaceGame1234*.
     1. For **Publish** choose **Code**.
     1. For **Runtime stack** choose **.NET Core 2.1**.
-    1. For **Operating system** choose **Windows**. This will help us later when we want to use deployment slots. (TODO - check this)
+    1. For **Operating system** choose **Linux**. 
     1. Choose your closest region.
-    1. For **Sku and size** click the link and navigate to the **Dev / Test** tab. Choose the **D1** option. This will help us later when we want to use deployment slots. (Screenshot)
+    1. For **Sku and size** click the link and navigate to the **Dev / Test** tab. Choose the **D1** option. 
     1. Click **Review and Create** and then **Create**.
     1. Your resource is being created. After it's created, note the name and URL of your Web App for later.
 
@@ -73,6 +75,4 @@ Here we'll add the stage, job, and tasks we need to deploy the build artifact to
 ## See your website deployed
 
 1. From the Azure portal, navigate to your App Service and click the **Browse** button.
-1. You should see the web site deployed to the App Service at that URL. (Screenshot)
-
-TODO: Add AppService sandbox validation. See create-build-agent.yml
+1. You see the web site deployed to the App Service at that URL. (Screenshot)

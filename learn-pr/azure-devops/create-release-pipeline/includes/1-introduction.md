@@ -21,6 +21,8 @@ You'll also need to set up a development environment on your Windows, macOS, or 
 
 This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
 
+In addition, this module requires you to bring your own Azure subscription. If you don't have one, go to the [Microsoft Azure Portal](https://azure.microsoft.com?azure-portal=true) and create an account.
+
 [!include[](../../shared/includes/project-details-note.md)]
 
 ## Meet the team
@@ -32,6 +34,8 @@ You met the _Space Game_ web team at Tailspin Toys in previous modules. As a ref
 [!include[](../../shared/includes/meet-andy-short-col.md)]
 
 [!include[](../../shared/includes/meet-amita-short-col.md)]
+
+[!include[](../../shared/includes/meet-tim-short-col.md)]
 
 [!include[](../../shared/includes/meet-mara-short-col.md)]
 
