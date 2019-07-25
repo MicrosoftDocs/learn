@@ -31,7 +31,6 @@ units:
 - learn.protect-on-premises-infrastructure-with-azure-site-recovery.3-workloads-supported-by-azure-site-recovery
 - learn.protect-on-premises-infrastructure-with-azure-site-recovery.4-run-disaster-recovery-drill
 - learn.protect-on-premises-infrastructure-with-azure-site-recovery.5-failover-and-failback
-- learn.protect-on-premises-infrastructure-with-azure-site-recovery.6-rbac
-- learn.protect-on-premises-infrastructure-with-azure-site-recovery.7-summary
+- learn.protect-on-premises-infrastructure-with-azure-site-recovery.6-summary
 badge:
   uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.badge
