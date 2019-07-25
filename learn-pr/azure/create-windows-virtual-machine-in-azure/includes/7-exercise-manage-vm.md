@@ -70,7 +70,7 @@ Deployment should complete quickly.
 
 ## Apply the security group
 
-Recall that we can apply the security group to a network interface to guard a single VM, or to a subnet where it would apply to any resources on that subnet. The latter approach tends to be the most common so let's do that. We could get to this resource in Azure through either the virtual network resource or indirectly through the VM, which is using the virtual network.
+Recall that we can apply the security group to a network interface to guard a single VM, or to a subnet where it would apply to any resources on that subnet. Applying the security group to the subnet will make it easier to manage our rules across multiple servers, so let's configure this. We could get to this resource in Azure through either the virtual network resource or indirectly through the VM, which is using the virtual network.
 
 1. Switch to the **Overview** panel for the virtual machine. You can find the VM under **All Resources**.
 
@@ -89,6 +89,22 @@ Recall that we can apply the security group to a network interface to guard a si
 1. Select your new security group: **test-vp-nsg2**.
 
 1. Click **Save** to save the change. It will take a minute to apply to the network.
+
+## Remove the security group from the network interface
+
+We applied the network security group to the subnet, so let's remove the security group from the network interface. This will keep all the effective rules for the server contained to the security group on the subnet, making it easier to manage.
+
+1. Switch to the **Overview** panel for the virtual machine. You can find the VM under **All Resources**.
+
+1. Select the **Networking** item in the **Settings** section.
+
+1. Select the link for the **Network Interface** to view the properties of the network interface for this server.
+
+1. In the **Settings** section, select the **Network security group** item.
+
+1. Click **Edit**, then select the network security group.
+
+1. On the **Choose network security group** panel, select **None**, then select **Save**.
 
 ## Verify the rules
 
