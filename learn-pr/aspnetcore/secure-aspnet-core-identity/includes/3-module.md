@@ -262,7 +262,7 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
     public string LastName { get; set; }
     ```
 
-    The properties in the preceding snippet represent additional columns to be created in the underlying `AspNetUsers` table.
+    The properties in the preceding snippet represent additional columns to be created in the underlying `AspNetUsers` table. Both properties are required and are therefore annotated with the `[Required]` attribute. The `[Required]` attribute also results in a non-null constraint in the underlying database table column. Additionally, the `[MaxLength]` attribute indicates that a maximum length of 100 characters is allowed. The underlying table column's data type is defined accordingly.
 
 1. Add the following `using` statement to the top of *ContosoPetsUser.cs*:
 
@@ -316,6 +316,59 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
     };
     ```
 
-1. <!--TODO: Explain changes to Manage Index page -->
+1. Update *Pages/Shared/_LoginPartial.cshtml* to display the first and last name collected during user registration. The highlighted lines in the following snippet are needed:
 
-1. <!--TODO: Run migration before deploy -->
+    [!code-cshtml[](../code/3-loginpartial.cshtml?highlight=9-10,13)]
+
+1. Create and apply an EF Core Migration to update the underlying data store:
+
+    ```bash
+    dotnet ef migrations add UpdateUser && \
+        dotnet ef database update
+    ```
+
+1. In *Identity/Pages/Account/Manage/Index.cshtml.cs*, make the following changes to support the name text boxes.
+    1. Add the following two properties to the `InputModel` class:
+
+    ```csharp
+    [Required]
+    [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 1)]
+    [Display(Name = "First Name")]
+    public string FirstName { get; set; }
+
+    [Required]
+    [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 1)]
+    [Display(Name = "Last Name")]
+    public string LastName { get; set; }
+    ```
+
+    1. Incorporate the highlighted changes in the `OnGetAsync` method:
+
+    [!code-csharp[](../code/3-account-manage-index-ongetasync.cshtml.cs?highlight=19-20)]
+
+    1. Incorporate the highlighted changes in the `OnPostAsync` method:
+
+    [!code-csharp[](../code/3-account-manage-index-onpostasync.cshtml.cs?highlight=14-16)]
+
+1. Run the following command to confirm that the first and last name are stored in the database:
+
+    ```bash
+    db -Q "SELECT UserName, Email, FirstName, LastName FROM dbo.AspNetUsers" -Y 25
+    ```
+
+    A variation of the following output displays:
+
+    ```text
+    UserName                  Email                     FirstName                 LastName
+    ------------------------- ------------------------- ------------------------- -------------------------
+    kai.klein@contoso.com     kai.klein@contoso.com
+    jana.heinrich@contoso.com jana.heinrich@contoso.com Jana                      Heinrich
+    ```
+
+    The user registered prior to adding `FirstName` and `LastName` to the schema doesn't have data in those columns.
+
+1. Run the following command to view the table schema:
+
+    ```bash
+    db -Q "select COLUMN_NAME, IS_NULLABLE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME='AspNetUsers'" -Y 20
+    ```
