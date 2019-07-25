@@ -49,11 +49,9 @@ The scope is the selection or set of resources that the access created in the ro
 
 RBAC has three built-in Azure Site Recovery roles to control the management of Site Recovery tasks:
 
-1. **Site Recovery Contributor**: has all the permissions required to manage Azure Site Recover operations in a Recovery Services Vault. The role is best suited to disaster recovery administrators who enable and manage DR for your organization.
-
-2. **Site Recovery Operator**: has permissions to execute and manage fail over and failback operations, however this role doesn't have permission to administer replication, create or delete vaults, or assign access rights to other users. It's best suited for administrators who need to fail over or failback the infrastructure when required.
-
-3. **Site Recovery Reader**: has permissions to view all Site Recovery specific management operations, it's best suited to someone who is asked to monitor the operational environment, and who acts on failures or issues with the Site Recovery protection.
+- **Site Recovery Contributor**: has all the permissions required to manage Azure Site Recover operations in a Recovery Services Vault. The role is best suited to disaster recovery administrators who enable and manage DR for your organization.
+- **Site Recovery Operator**: has permissions to execute and manage fail over and failback operations, however this role doesn't have permission to administer replication, create or delete vaults, or assign access rights to other users. It's best suited for administrators who need to fail over or failback the infrastructure when required.
+- **Site Recovery Reader**: has permissions to view all Site Recovery specific management operations, it's best suited to someone who is asked to monitor the operational environment, and who acts on failures or issues with the Site Recovery protection.
 
 For new virtual machines that need to be protected the permissions that are required are as follows. A custom role could be created that had these permissions pre-assigned to it to ease administration if necessary.
 
