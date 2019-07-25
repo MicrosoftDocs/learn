@@ -97,7 +97,7 @@ Andy says, "I see your point. We need to do some more research on this and we're
 
 "For quality control, we could use gates. A gate would let us automatically  collect health signals from external services and then promote the release only when all the signals are successful at the same time."
 
-"I'm interested in that," says Mara. Let's talk aobut it later."
+"I'm interested in that," says Mara. Let's talk about it later."
 
 ## What release management tools can I use?
 
