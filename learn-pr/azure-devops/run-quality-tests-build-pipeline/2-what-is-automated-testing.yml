@@ -46,6 +46,6 @@ quiz:
     - content: "A comprehensive suite of unit and integration tests is run during each stage of the build process."
       isCorrect: false
       explanation: "Tests should complete as quickly as possible, especially those that happen during the development and build phases."
-    - content: "Tests cover both the team's application code and all open source libraries the application uses."
+    - content: "Tests cover both the team's application code and all open-source libraries the application uses."
       isCorrect: false
       explanation: "Typically, your tests should cover only your code."
