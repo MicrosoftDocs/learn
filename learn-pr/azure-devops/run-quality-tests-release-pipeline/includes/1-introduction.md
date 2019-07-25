@@ -1,85 +1,43 @@
-What tests do you run once the service is operational? What are integration and functional tests? What quality tests will we run? Will Amita write them? If not, who will. Can we show her using Azure Test Plan for manual tests? Is there any way to show her starting to learn to write automated tests?
+In [Create a release management workflow](/learn/modules/create-a-release-management-workflow?azure-portal=true), you helped the Tailspin web team as they design and build a release management workflow. This workflow enables the team to move changes through each of the various stages, such as testing and staging, all the way out to a production environment that's available to your users.
 
-# SCENARIO
+Recall that in the test stage, Amita tests the web application manually  as she always did. When she's satisfied, she manually promotes the application to the pre-production stage, where management can 
 
-* The team meets to talk about their release workflow. Andy demos.
-* Amita: This is great. I now have a consistent environment to automatically receive builds, test them, and then promote them to an environment where leadership can review and approve changes. I no longer need to manually download and install build artifacts on my test servers. Running unit tests also helps helping Andy and Mara catch regressions before they reach me. But is there anything else we can do to speed up the process? I don't want to be the one holding us up.
-* Andy: I think so. There are a lot of things you need to take care of to help ensure a high-quality release. Let's talk more about what tasks you take care of and we can see if any of them can be automated.
+In [Run quality tests in your build pipeline using Azure Pipelines](/learn/modules/run-quality-tests-build-pipeline?azure-portal=true), you ran unit and code coverage tests during the build process to help ensure that only high-quality [XYZ], and to help make sure you didn't break anything along the way. But what kinds of tests do you run once the service is operational?
 
-# DESIGN A TEST STRATEGY
+In this module, you'll learn how to add functional and non-functional testing to your [test plan]. Along the way, you'll help Amita map her manual test practices to automated UI tests to [help things go faster.] (Talk about how she'll be writing code?)
 
-## What kinds of tests can I run?
+## Learning objectives
 
-References:
-* Configure Automated Integration and Functional Test Automation > Configure Automated Integration and Functional Test Automation
-* Configure Automated Integration and Functional Test Automation > Lab (Setting up and Running Load Tests)
-* Configure Automated Integration and Functional Test Automation > Lab (Setting up and Running Functional Tests)
-* Configure Automated Integration and Functional Test Automation > Setting up and Running Availability Tests
+In this module, you will:
 
-Talk about how you ran unit and code coverage tests earlier, during the build phase. Talk about why it was appropriate to run them there. Here are a few kinds of tests you might run during the deployment stages (discuss why you run them there and not earlier (it's because you now have infrastructure to test on)):
+- A
+- B
+- C
 
-* Load tests
-* Functional tests
-* Availability tests
+## Prerequisites
 
-### Manual versus automated testing
+TODO: Update
 
-References:
-* Configure Automated Integration and Functional Test Automation > Configure Automated Integration and Functional Test Automation
+TODO: Also talk about how you need your own Azure sub and how to set one up :/
 
-## Where can my tests run?
+The prerequisites are the same as the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true) module.
 
-References:
-* Configure Automated Integration and Functional Test Automation > Setting up Test Infrastructure
+Make sure you have the _Space Game_ project loaded in Visual Studio Code and your _Space Game_ project on GitHub handy.
 
-Tests might run:
-* On the agent (hosted or one you provide)
-* On test infrastructure, either on-prem or in the cloud
+## Meet the team
 
-## What kinds of tooling are available?
+You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module.
 
-* Azure Test Plans
-* Selenium
-* OWASP ZAP
-* SpecFlow
-* Azure Availability or Load Tests (look these up)
+:::row:::
 
-# EXERCISE - SETUP
+[!include[](../../shared/includes/meet-andy-short-col.md)]
 
-* Set up environment
-  * Run template
+[!include[](../../shared/includes/meet-amita-short-col.md)]
 
-# EXERCISE - DEPLOY THE APPLICATION
+[!include[](../../shared/includes/meet-tim-short-col.md)]
 
-* Initialize sandbox and create web app (with 3 slots?) through the CLI
-* Trigger pipelines to build the app (which branch?)
+[!include[](../../shared/includes/meet-mara-short-col.md)]
 
-# EXERCISE - PLAN UI TESTS
+:::row-end:::
 
-# EXERCISE - RUN UI TESTS WITH SELENIUM
-
-* Pull down branch
-* Run Selenium tests locally (head vs headless)
-* Modify pipeline to run tests on Windows agent
-* Push and run through pipeline
-* See results
-
-* Fetch branch with starter build config
-  * This branch will include an additional .csproj that contains Selenium tests
-  * [Reference](https://docs.microsoft.com/azure/devops/pipelines/test/continuous-test-selenium?view=azure-devops)
-* Change (or add) deployment stage to **Hosted VS2017**.
-* `git commit && git push` - watch it build, deploy, & **run tests** in the pipeline.
-* Verify the results in the pipeline.
-* Manually promote the build to Preprod.
-
-# EXERCISE - RUN MANUAL TESTS WITH AZURE TEST PLANS
-
-TBD 
-
-# EXERCISE - RUN LOAD TESTS USING AZURE TEST PLANS
-
-(This wasn't working with the new pipeline structure - revisit or cut)
-
-# EXERCISE - CLEANUP
-
-# SUMMARY
+Mara has prior experience with DevOps and is helping the team adopt a more automated process using Azure DevOps.

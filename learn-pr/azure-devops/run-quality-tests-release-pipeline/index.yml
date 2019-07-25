@@ -36,6 +36,13 @@ products:
 #- azure-devops
 units:
 - learn.azdo.run-quality-tests-release-pipeline.1-introduction
+- learn.azdo.run-quality-tests-release-pipeline.2-design-test-strategy
+- learn.azdo.run-quality-tests-release-pipeline.3-set-up-environment
+- learn.azdo.run-quality-tests-release-pipeline.4-plan-ui-tests
+- learn.azdo.run-quality-tests-release-pipeline.5-create-ui-tests
+- learn.azdo.run-quality-tests-release-pipeline.6-plan-load-tests
+- learn.azdo.run-quality-tests-release-pipeline.7-create-load-tests
+- learn.azdo.run-quality-tests-release-pipeline.8-clean-up-environment
 - learn.azdo.run-quality-tests-release-pipeline.9-summary
 badge:
   uid: learn.azdo.run-quality-tests-release-pipeline.badge

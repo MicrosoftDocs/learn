@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.run-quality-tests-release-pipeline.5-create-ui-tests
+title: Exercise - Create UI tests using Selenium
+metadata:
+  title: Exercise - Create UI tests using Selenium
+  description: Create UI tests using Selenium.
+  ms.date: 09/01/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-create-ui-tests.md)]

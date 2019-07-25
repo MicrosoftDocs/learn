@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.run-quality-tests-release-pipeline.7-create-load-tests
+title: Exercise - Set up your Azure DevOps environment
+metadata:
+  title: Exercise - Set up your Azure DevOps environment
+  description: Run a template to set up your Azure DevOps environment.
+  ms.date: 09/01/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-create-load-tests.md)]
