@@ -16,18 +16,18 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/5-use-data-volumes.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.ContainerInstance/containerGroups"
-      name: aci-demo-files
-  hint: ""
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.Storage/storageAccounts"
-      kind: Storage
-  hint: ""
+#tasks:
+#- action: exists
+#  environment: azure
+#  azure:
+#    resource:
+#      type: "Microsoft.ContainerInstance/containerGroups"
+#      name: aci-demo-files
+#  hint: ""
+#- action: exists
+#  environment: azure
+#  azure:
+#    resource:
+#      type: "Microsoft.Storage/storageAccounts"
+#      kind: Storage
+#  hint: ""
