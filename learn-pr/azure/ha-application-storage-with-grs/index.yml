@@ -1,17 +1,24 @@
 ### YamlMime:Module
-uid: learn-pr.ha-application-storage-with-grs
+uid: learn.ha-application-storage-with-grs
 metadata:
-  title: ha-application-storage-with-grs
-  description: ...
-  ms.date: ...
+  title: Make your application storage highly available with read-access geo-redundant storage
+  description: Learn how to make your application storage highly available by ensuring you can fail over resources if there's an Azure region failure.
+  ms.date: 05/21/19
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: ha-application-storage-with-grs
-summary: ...
-abstract: ...
-prerequisites: ...
+title: Make your application storage highly available with read-access geo-redundant storage
+summary: Learn how to make your application storage highly available by ensuring you can fail over resources if there's an Azure region failure.
+abstract: |
+  In this module, you will:
+  - Identify the features of RA-GRS storage 
+  - Identify the application design considerations when using RA-GRS 
+  - Implement the Circuit Breaker pattern in a sample application 
+prerequisites: |
+  - Basic knowledge of Azure storage accounts
+  - Familiarity with C#
+  - Ability to install software locally (Visual Studio, Fiddler, Git)
 iconUrl: /learn/achievements/ha-application-storage-with-grs.svg
 levels:
 - beginner
@@ -20,11 +27,11 @@ roles:
 products:
 - azure
 units:
-  - learn-pr.ha-application-storage-with-grs.1-introduction
-  - learn-pr.ha-application-storage-with-grs.2-storage-account-replication-features
-  - learn-pr.ha-application-storage-with-grs.3-exercise-create-storage-account
-  - learn-pr.ha-application-storage-with-grs.4-designing-applications-ha-dr
-  - learn-pr.ha-application-storage-with-grs.5-deploy-ha-application
-  - learn-pr.ha-application-storage-with-grs.6-summary
+  - learn.ha-application-storage-with-grs.1-introduction
+  - learn.ha-application-storage-with-grs.2-storage-account-replication-features
+  - learn.ha-application-storage-with-grs.3-exercise-create-storage-account
+  - learn.ha-application-storage-with-grs.4-designing-applications-ha-dr
+  - learn.ha-application-storage-with-grs.5-exercise-deploy-ha-application
+  - learn.ha-application-storage-with-grs.6-summary
 badge:
-  uid: learn-pr.ha-application-storage-with-grs.badge
+  uid: learn.ha-application-storage-with-grs.badge

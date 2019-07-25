@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn-pr.ha-application-storage-with-grs.6-summary
+uid: learn.ha-application-storage-with-grs.6-summary
 metadata:
-  title: 6-summary
-  description: ...
-  ms.date: ...
+  title: Summary
+  description: Summary
+  ms.date: 05/21/19
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: 6-summary
+title: Summary
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]
