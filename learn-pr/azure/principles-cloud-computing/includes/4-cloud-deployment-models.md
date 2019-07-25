@@ -55,7 +55,7 @@ In a private cloud, you create a cloud environment in your own datacenter and pr
 This approach has several advantages:
 
 - You can ensure the configuration can support any scenario or legacy application
-- You can control (and responsibility) over security
+- You have control (and responsibility) over security
 - Private clouds can meet strict security, compliance, or legal requirements
 - Economies at scale and integration with Azure Security Center
 

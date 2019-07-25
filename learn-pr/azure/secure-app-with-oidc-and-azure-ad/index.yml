@@ -12,7 +12,7 @@ title: Secure your application with OpenID Connect and Azure AD
 summary: Use OpenID Connect in your application to allow users to securely sign in with Azure AD identities.
 abstract: | 
   In this module, you will:
-  - Determine Authentication needs of your application
+  - Understand the authentication needs of your application
   - Create an Azure AD tenant and configure application registration for your application
   - Deploy an application that uses OpenID Connect to authenticate users
 prerequisites: | 

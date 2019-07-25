@@ -18,7 +18,7 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 1. Select you function again, and in the **index.js** JavaScript file, add a reference to the **crypto-js** library at the start of the file, above the `module.exports` statement.
 
     ```JavaScript
-    var CryptoJS = require('crypto');
+    var Crypto = require('crypto');
     ```
 
 1. In the body of the function, after the `context.log` statement, add the following code. Replace *\<default key\> with the default key that you copied to the clipboard earlier:
