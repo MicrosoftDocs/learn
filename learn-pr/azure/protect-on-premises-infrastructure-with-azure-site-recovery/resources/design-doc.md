@@ -1,4 +1,4 @@
-## Title
+# Title
 
 Protect your on-premises infrastructure with Azure Site Recovery
 
@@ -110,8 +110,8 @@ Details the options and capabilities for protecting on-premises environments wit
 
 Supporting documentation:
 
-About DR for VMware - https://docs.microsoft.com/en-us/azure/site-recovery/vmware-azure-about-disaster-recovery
-Physical server to Azure - https://docs.microsoft.com/en-us/azure/site-recovery/physical-azure-architecture
-https://docs.microsoft.com/en-us/azure/site-recovery/site-recovery-workload
+About DR for VMware - https://docs.microsoft.com/azure/site-recovery/vmware-azure-about-disaster-recovery
+Physical server to Azure - https://docs.microsoft.com/azure/site-recovery/physical-azure-architecture
+https://docs.microsoft.com/azure/site-recovery/site-recovery-workload
 
 *Knowledge checks won't be separate units, but included at the bottom of the learn units*
