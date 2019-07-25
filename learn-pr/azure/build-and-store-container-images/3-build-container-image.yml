@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-container-registry.build-image
 metadata:
-  title: Exercise - Build container images with Azure Container Registry
-  description: Build container images with Azure Container Registry
+  title: Exercise - Build container images with Azure Container Registry Tasks
+  description: Build container images with ACR Tasks
   ms.date: 09/24/2018
   #TODO: Update with real author name.
   author: markjulmar
@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Build container images with Azure Container Registry
+title: Exercise - Build container images with Azure Container Registry Tasks
 interactive: bash
 azureSandbox: true
 durationInMinutes: 15
