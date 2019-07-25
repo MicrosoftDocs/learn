@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.run-quality-tests-release-pipeline.4-plan-ui-tests
-title: Exercise - Set up your Azure DevOps environment
+title: Plan your UI tests
 metadata:
-  title: Exercise - Set up your Azure DevOps environment
-  description: Run a template to set up your Azure DevOps environment.
+  title: Plan your UI tests
+  description: Plan your UI tests.
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche
