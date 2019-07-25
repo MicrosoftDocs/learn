@@ -80,6 +80,6 @@ One thing to understand is that these categories are layers on top of each other
 - PaaS requires less user management. The cloud provider manages the operating systems, and the user is responsible for the applications and data they run and store.
 - SaaS requires the least amount of management. The cloud provider is responsible for managing everything, and the end user just uses the software.
 
-## Summary
+## Combine cloud services to fit your needs
 
 IaaS, PaaS, and SaaS each contain different levels of managed services. You may easily use a combination of these types of infrastructure. You could use Office 365 on your company’s computers (SaaS), and in Azure, you could host your VMs (IaaS) and use Azure SQL Database (PaaS) to store your data. With the cloud’s flexibility, you can use any combination that provides you with the maximum result.
