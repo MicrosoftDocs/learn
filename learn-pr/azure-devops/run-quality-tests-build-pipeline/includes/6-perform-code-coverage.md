@@ -121,7 +121,7 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 
 ## Create a branch
 
-Now that you're able to build a code coverage report locally, you're ready to add tasks to your build pipeline, which performs the same tasks.
+Now that you can build a code coverage report locally, you're ready to add tasks to your build pipeline, which performs the same tasks.
 
 In this part, you create a branch named `code-coverage`, based on the `unit-tests` branch, to hold your work. In practice, you would ordinarily create this branch from the `master` branch.
 
@@ -134,7 +134,7 @@ In this part, you create a branch named `code-coverage`, based on the `unit-test
 
 ## Add build tasks
 
-In this section, you add to your build pipeline tasks that measure code coverage.
+In this section, you add tasks that measure code coverage to your build pipeline.
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* like this:
 
@@ -153,7 +153,7 @@ In this section, you add to your build pipeline tasks that measure code coverage
 
 Here you push your changes to GitHub and see the pipeline run. Recall that you're currently in the `code-coverage` branch.
 
-1. In the integrated terminal, add *azure-pipelines.yml* to the index, commit the changes, and push the branch up to GitHub.
+In the integrated terminal, add *azure-pipelines.yml* to the index, commit the changes, and push the branch up to GitHub.
 
     ```bash
     git add azure-pipelines.yml
@@ -176,7 +176,7 @@ Here you see the tests run in the pipeline and then visualize the results from A
 
 ## Add the dashboard widget
 
-In the previous part, you added the **Test Results Trend** widget to your dashboard. This lets others quickly review test result trends over time.
+In the previous part, you added the **Test Results Trend** widget to your dashboard, which lets others quickly review test result trends over time.
 
 Here you'll add a second widget that summarizes code coverage.
 
@@ -207,7 +207,7 @@ Here you'll add a second widget that summarizes code coverage.
 
 You now have code coverage set up in your pipeline. Although your existing code coverage is low, you have a baseline that you can improve over time.
 
-Later, you can configure coverlet to check to see whether your tests provide a minimum threshold of coverage. Your threshold might be 30%, 50%, or 80% coverage, depending on your requirements. The build will fail if less than this amount is covered by your tests.
+Later, you can configure coverlet to check to see whether your tests provide a minimum threshold of coverage. Your threshold might be 30 percent, 50 percent, or 80 percent coverage, depending on your requirements. The build will fail if less than this amount is covered by your tests.
 
 ## Remove code coverage files
 
