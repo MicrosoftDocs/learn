@@ -2,7 +2,7 @@ At this point, you have a way to run unit tests as changes move through the buil
 
 It's always a good idea to run your tests locally before you submit changes to the pipeline. But what happens when someone forgets and submits a change that breaks the build?
 
-In this part, you help the team fix a broken build that's caused by a failing unit test. Here, you'll:
+In this unit, you help the team fix a broken build that's caused by a failing unit test. Here, you will:
 
 > [!div class="checklist"]
 > * Get starter code from the Microsoft GitHub repository.
@@ -114,22 +114,22 @@ Let's say that Andy was in a hurry and pushed up his work without running the te
 
 In practice, you won't always manually trace the build as it runs. Here are a few ways you might discover the failure:
 
-* An email notification from Azure DevOps.
+* **An email notification from Azure DevOps**
 
     Azure DevOps sends you an email notification when the build is complete. The subject line starts with "[Build failed]" when the build fails.
 
     ![A portion of a build failed email notification](../media/7-email-notification.png)
-* Azure Test Plans
+* **Azure Test Plans**
 
     In Azure DevOps, select **Test Plans**, and then select **Runs**. You see the recent test runs, including the one that just ran. Select the latest completed test. You see that two of the eight tests failed.
 
     ![Test run outcome showing two failed tests](../media/7-test-run-outcome.png)
-* The dashboard
+* **The dashboard**
 
-    In Azure DevOps, select **Overview**, and then select **Dashboards**. You see the failure appear in the **Test Results Trend** widget. The **Code Coverage** widget is blank, indicating that code coverage was not run.
+    In Azure DevOps, select **Overview**, and then select **Dashboards**. You see the failure appear in the **Test Results Trend** widget. The **Code Coverage** widget is blank, which indicates that code coverage was not run.
 
     ![The dashboard widget showing a failed test](../media/7-dashboard-failed-test.png)
-* The build badge
+* **The build badge**
 
     Although the `failed-test` branch doesn't include the build badge in the *README.md* file, here's what you would see on GitHub when the build fails:
 
