@@ -16,25 +16,25 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/4-use-environment-variables.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.ContainerInstance/containerGroups"
-      name: aci-demo
-  hint: ""
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.ContainerInstance/containerGroups"
-      name: aci-demo-secure
-  hint: ""
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.DocumentDB/databaseAccounts"
-      kind: GlobalDocumentDB
-  hint: ""
+#tasks:
+#- action: exists
+#  environment: azure
+#  azure:
+#    resource:
+#      type: "Microsoft.ContainerInstance/containerGroups"
+#      name: aci-demo
+#  hint: ""
+#- action: exists
+#  environment: azure
+#  azure:
+#    resource:
+#      type: "Microsoft.ContainerInstance/containerGroups"
+#      name: aci-demo-secure
+#  hint: ""
+#- action: exists
+#  environment: azure
+#  azure:
+#    resource:
+#      type: "Microsoft.DocumentDB/databaseAccounts"
+#      kind: GlobalDocumentDB
+#  hint: ""
