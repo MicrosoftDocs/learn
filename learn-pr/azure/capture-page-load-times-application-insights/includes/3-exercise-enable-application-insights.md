@@ -22,7 +22,7 @@ You need to set up a name, a resource group, a location, and some other properti
 
 1. In the **Subscription** list, select **Concierge subscription**.
 1. Under **Resource Group**, select **Use existing** and then select the sandbox resource group, <rgn>[Sandbox resource group]</rgn>.
-1. In the **App name** box, enter a unique name for your app. For example, you could use **&lt;yourname&gt;svideoapp**. The name you choose must be unique within the .azurewebsites.net domain.
+1. In the **App name** box, enter a unique name for your app. For example, you could use **\<yourname\>;svideoapp**. The name you choose must be unique within the .azurewebsites.net domain.
 1. Leave **Publish** at **Code**.
 1. Set the **Runtime stack** to **.NET Core 2.1**. This will move the **Operating System** to **Windows**. Leave it at Windows. Notice that when you did this selection, the **Monitoring** tab appeared. We will skip this tab for now.
     > [!NOTE]
