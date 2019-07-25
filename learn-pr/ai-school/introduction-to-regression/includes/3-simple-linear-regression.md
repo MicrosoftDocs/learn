@@ -10,14 +10,6 @@ All data contains variability. This means that a straight-line prediction will a
 
 Error is a natural part of building a model. In AI, it’s a tool rather than something to avoid. *Simple linear regression finds a best line by calculating which straight line would give the least amount of error*.
 
-In this course, we don’t need to get into the math, but understanding the error function can be helpful with interpreting results. If you’d like to get into how the math works, go through the optional sections below.
-
-## Optional - The math behind linear regression
-
-To calculate the error for regression, we calculate the __difference__ between each __data point__ and the __predicted value__ given by the model (green lines). We then square each of these numbers, then add them together.  
-  
-__Why square the numbers?__ Using a squared value ensures that the model pays attention to data that are far from the average. Without this, values that are particularly high or low can be mostly ignored by the model, or the model can end up biased (not pass through the average position of all data points). A side effect of this is that our models can sometimes be ruined by bad data points - for example, data that wasn’t collected properly, or an outlier measurement that is unlikely to occur again. There are also other, more complex mathematical reasons for using a squared value, but these go beyond the scope of this course.
-
 ### Programming exercise
 
 > Let's try out simple linear regression in Azure Notebooks. We’re going to try to predict the customer’s satisfaction with certain chocolate bar recipes.    
