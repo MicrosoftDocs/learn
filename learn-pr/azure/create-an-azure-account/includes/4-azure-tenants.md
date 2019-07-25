@@ -12,7 +12,7 @@ When it comes to Azure AD tenants, there is no concrete definition of "organizat
 
 Azure AD tenants and subscriptions have a many-to-one trust relationship: A tenant can be associated with multiple Azure subscriptions, but every subscription is associated with only one tenant. This structure allows organizations to manage multiple subscriptions and set security rules across all the resources contained within them.
 
-Here's a simple representation of how accounts, subscriptions, tenants, and resources work together.
+Here's a simple representation of how account owners, subscriptions, tenants, and resources work together.
 
 ![An illustration showing two different Azure AD tenants. One tenant has two subscriptions, and each subscription is linked to a set of Azure resources. The other tenant has one subscription that is linked to a different set of Azure resources.](../media/4-azure-ad-tenant.png)
 
