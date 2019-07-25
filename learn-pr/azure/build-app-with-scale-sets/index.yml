@@ -20,7 +20,7 @@ prerequisites: |
   - Basic knowledge of load balancing concepts
 iconUrl: http://via.placeholder.com/120x120
 badge:
-  uid: learn.build-app-with-scale-sets
+  uid: learn.build-app-with-scale-sets.badge
 levels: 
 - beginner
 roles: 
@@ -32,8 +32,8 @@ units:
 - learn.build-app-with-scale-sets.introduction
 - learn.build-app-with-scale-sets.features-and-benefits-of-virtual-machine-scale-sets
 - learn.build-app-with-scale-sets.exercise-deploy-a-scale-set-in-the-azure-portal
-- learn.build-app-with-scale-sets.configuring-a-virtual-machine-scale-set
-- learn.build-app-with-scale-sets.exercise-configuring-a-virtual-machine-scale-set
-- learn.build-app-with-scale-sets.installing-and-updating-applications-in-virtual-machine-scale-sets
-- learn.build-app-with-scale-sets.exercise-updating-applications-in-virtual-machine-scale-sets
+- learn.build-app-with-scale-sets.configure-a-virtual-machine-scale-set
+- learn.build-app-with-scale-sets.exercise-configure-a-virtual-machine-scale-set
+- learn.build-app-with-scale-sets.install-and-update-applications-in-virtual-machine-scale-sets
+- learn.build-app-with-scale-sets.exercise-update-applications-in-virtual-machine-scale-sets
 - learn.build-app-with-scale-sets.summary

@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-app-with-scale-sets.exercise-updating-applications-in-virtual-machine-scale-sets
-title: Exercise - Updating applications in virtual machine scale sets
+uid: learn.build-app-with-scale-sets.exercise-update-applications-in-virtual-machine-scale-sets
+title: Exercise - Update applications in virtual machine scale sets
 
 metadata:
   title: Exercise - Updating applications in virtual machine scale sets
@@ -13,5 +13,6 @@ metadata:
   ROBOTS: NOINDEX
 
 durationInMinutes: 5
+azureSandbox: false
 content: |
-  [!include[](includes/7-exercise-updating-applications-in-virtual-machine-scale-sets.md)]
+  [!include[](includes/7-exercise-update-applications-in-virtual-machine-scale-sets.md)]

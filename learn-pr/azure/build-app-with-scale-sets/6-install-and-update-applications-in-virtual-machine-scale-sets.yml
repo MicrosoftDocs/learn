@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-app-with-scale-sets.installing-and-updating-applications-in-virtual-machine-scale-sets
-title: Installing and updating applications in virtual machine scale sets
+uid: learn.build-app-with-scale-sets.install-and-update-applications-in-virtual-machine-scale-sets
+title: Install and update applications in virtual machine scale sets
 
 metadata:
   title: Installing and updating applications in virtual machine scale sets
@@ -14,4 +14,4 @@ metadata:
 
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-installing-and-updating-applications-in-virtual-machine-scale-sets.md)]
+  [!include[](includes/6-install-and-update-applications-in-virtual-machine-scale-sets.md)]

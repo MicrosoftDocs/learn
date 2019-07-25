@@ -1,91 +1,115 @@
-<!-- Topic sentence -->
+You have identified the need to use a scale set to run the web application for the shipping company. Using a scale set will enable the shipping company to maintain short response times for users, as the workload varies.
 
-<!-- Scenario sub-task -->
+Your first task is to create a scale set, and configure it to run a web server – in this case, **nginx**. When you've configured the scale set correctly, you'll deploy your web application. Then you'll set up a health probe that Azure uses to verify the availability of each virtual machine in the scale set. Finally, you'll test the scale set by sending requests from a web browser.
 
-<!-- Task performed in the exercise -->
+## Deploy a virtual machine scale set
 
-<!-- Optional image (this should be either an image of the completed solution or the section that is being completed in the greater solution)-->
+1. Sign in to the Azure portal using your own account, and open the Azure Cloud Shell.
+2. In the Cloud Shell, start the Code editor and create a file named **cloud-init.yaml**.
 
-## [Part 1 title]
+    ```bash
+    code cloud-init.yaml
+    ```
 
-<!-- Introduction paragraph -->
+3. Add the following text to the file:
 
-1. <!-- Step 1 -->
+    ```Text
+    #cloud-config
+    package_upgrade: true
+    packages:
+      - nginx
+    write_files:
+      - owner: www-data:www-data
+      - path: /var/www/html/index.html
+        content: |
+            Hello world from VM Scale Set !
+    runcmd:
+      - service nginx restart
+    ```
 
-1. <!-- Step 2 -->
+    This file contains the configuration information for installing nginx on the VMs in the scale set:
 
-1. <!-- Step n -->
+4. Press Ctrl-S to save the file, and then press Ctrl-Q to close the Code editor.
 
-## [Part 2 title]
+5. Run the following command to create a new resource group named **scalesetrg** for your scale set:
 
-<!-- Introduction paragraph -->
+    ```azurecli
+    az group create \
+      --location westus \
+      --name scalesetrg
+    ```
 
-1. <!-- Step 1 -->
+6. Run the following command to create the virtual machine scale set:
 
-1. <!-- Step 2 -->
+    ```azurecli
+    az vmss create \
+      --resource-group scalesetrg \
+      --name webServerScaleSet \
+      --image UbuntuLTS \
+      --upgrade-policy-mode automatic \
+      --custom-data cloud-init.yaml \
+      --admin-username azureuser \
+      --generate-ssh-keys
+    ```
 
-1. <!-- Step n -->
+    By default, the virtual machine scale set is created with two instances and a load balancer.
 
-## [Part n title]
+    > [!NOTE]
+    > The **custom-data** flag specifies that the virtual machine should be configured using the settings in the **cloud-init.yaml** file once it has been created. You can use a cloud-init file to install additional packages, configure security, and write to files when the machine is first installed. For more information, see [Cloud-init support for virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/linux/using-cloud-init)
 
-<!-- Introduction paragraph -->
+## Configure the virtual machine scale set
 
-1. <!-- Step 1 -->
+1. Run the following command to add a health probe to the load balancer:
 
-1. <!-- Step 2 -->
+    ```azurecli
+    az network lb probe create \
+      --lb-name webServerScaleSetLB \
+      --resource-group scalesetrg \
+      --name webServerHealth \
+      --port 80 \
+      --protocol Http \
+      --path /
+    ```
 
-1. <!-- Step n -->
+    The health probe pings the root of the website through port 80. If the website doesn't respond, the server is considered unavailable, and the load balancer won't route traffic towards it.
 
-## [Result part title]
+2. Run the following command to configure the load balancer to route HTTP traffic to the instances in the scale set:
 
-<!-- Introduction paragraph -->
+    ```azurecli
+    az network lb rule create \
+      --resource-group scalesetrg \
+      --name webServerLoadBalancerRuleWeb \
+      --lb-name webServerScaleSetLB \
+      --probe-name webServerHealth \
+      --backend-pool-name webServerScaleSetLBBEPool \
+      --backend-port 80 \
+      --frontend-ip-name loadBalancerFrontEnd \
+      --frontend-port 80 \
+      --protocol tcp
+    ```
 
-1. <!-- Optional step 1 -->
+## Test the virtual machine scale set
 
-1. <!-- Optional step 2 -->
+1. In the Azure portal, in the left pane, select **Resource groups**, and then select the **scalesetrg** resource group.
 
-1. <!-- Optional step n -->
+2. Select the **webServerScaleSet** virtual machine scale set.
 
-## Notes from design doc
-**Exercise - Deploy a scale set in the Azure portal**
+3. On the **Overview** page, note the public IP address of the virtual machine scale set.
 
-Deploy a Scale Set of Ubuntu VMs configured with nginx acting as a web server.
+    ![Screenshot of the Azure portal, showing the Overview page for the virtual machine scale set](../media/3-vmss-properties.png)
 
-1.  
+4. Under **Settings**, select **Instances**, and verify that the scale set contains two running VMs.
 
-In the Cloud Shell, use the Code editor to create the following YAML file. Name file **cloud-init.yaml** The YAML file contains the configuration information for installing nginx on the VMs in a scale set:
+    ![Screenshot of the Azure portal, showing the instances for the virtual machine scale set](../media/3-vmss-instances.png)
 
-<code class="language-yaml">#cloud-configpackage_upgrade: truepackages:  - nginxwrite_files:  - owner: www-data:www-data  - path: /var/www/html/index.html    content: |      Hello world from VM Scale Set !runcmd:  - service nginx restart</code>
+5. Select **Operating system,** and verify that the VMs are running Ubuntu Linux.
 
-2.  
+    ![Screenshot of the Azure portal, showing the operating system for the virtual machine scale set](../media/3-vmss-operating-system.png)
 
-Create the scale set with the following command:
+6. Select **Size**. The VMs should be running on DS1_v2 hardware
 
-<code class="language-azurecli">az vmss create \  --resource-group <sandbox resource group> \  --name webServerScaleSet \  --image UbuntuLTS \  --upgrade-policy-mode automatic \  --custom-data cloud-init.yaml \  --admin-username azureuser \  --generate-ssh-keys</code>
+    ![Screenshot of the Azure portal, showing the size of the virtual machines in the scale set](../media/3-vmss-size.png)
 
-By default, the virtual machine scale set is created with two instances and a load balancer.
+7. In your web browser, go to the public IP address of the scale set. Verify that the message **Hello World from VM Scale Set !**<!--CE:Is this correct, with a space between 'Set' and '!'?--> appears.
 
-3.  
-
-Add a health probe to the load balancer (the load balancer may fail to route traffic to a web server if it cannot detect the health of any servers)
-
-<code class="language-azurecli">az network lb probe create \  --lb-name webServerScaleSetLB \  --resource-group <sandbox resource group> \  --name webServerHealth \  --port 80 \  --protocol Http \  --path /</code>
-
-4.  
-
-Run the following command to configure the load balancer to route HTTP traffic to the instances in the scale set.
-
-<code class="language-azurecli">az network lb rule create \  --resource-group <sandbox resource group> \  --name webServerLoadBalancerRuleWeb \  --lb-name webServerScaleSetLB \  --probe-name webServerHealth \  --backend-pool-name webServerScaleSetLBBEPool \  --backend-port 80 \  --frontend-ip-name loadBalancerFrontEnd \  --frontend-port 80 \  --protocol tcp</code>
-
-Examine the Scale Set in Azure portal:
-
-1.  Go to the Sandbox resource group and select the virtual machine scale set
-2.  Make a note of the public IP address of the scale set
-3.  Click Instances, and verify that the scale set contains two running VMs
-4.  Click Operating system, and verify that the VMs are running Ubuntu Linux
-5.  Click Size. The VMs should be running on DS1_v2 hardware
-
-Test the scale set:
-
-1.  In the web browser, navigate to the public IP address of the scale set:
-2.  Verify that the message **Hello World from virtual machine scale set** appears
+    ![Screenshot of the web app](../media/3-web-app.png)

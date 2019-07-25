@@ -1,12 +1,13 @@
-<sentence 1>
 
-<sentence 2>
+Managing virtual machines at scale can be challenging, especially when your users' usage patterns vary and demand on applications fluctuate. You want to be able to increase and decrease your virtual machine resources to match these demands, while keeping a consistent virtual machine configuration to ensure application stability. This way, you maintain throughput and responsiveness while minimizing the costs associated with continually running a large collection of virtual machines.
 
-<sentence 3>
+Imagine that you work for a domestic shipping company. Your customers use one of the company's websites to manage and check the status of their shipments. This website is deployed to virtual machines that are hosted on-premises. You've noticed an uptake on usage on the site that is placing strain on the virtual machines' resources. However, you can't adjust to fluctuations in load without manually intervening, and creating or deallocating virtual machines. You decide to move the application to Azure and need a solution that will automatically handle fluctuations in load, to ensure consistent performance for the website. You also need to quickly roll out application updates to these servers while minimizing impact to end-users.
+
+This module shows you how to create a virtual machine scale set, and deploy an application. Application maintenance is also a concern. You'll learn how to update an application that's deployed across a virtual machine scale set.
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Identify the features and capabilities of virtual machine scale sets
 - Identify the use cases for running applications on virtual machine scale sets
@@ -15,9 +16,5 @@ In this module, you will:
 ## Prerequisites
 
 - Basic knowledge of Azure virtual machines
-- Basic knowledge of load balancing concepts
-
-## Notes from design doc
-**Introduction**
-
-A domestic shipping company has a web site that customers can use to manage and check the status of their shipments. This site currently runs on virtual machines on-premises, and the company is moving this application to Azure. They currently have a fixed capacity on-premises and are unable to adjust to fluctuations in load without manually intervening and creating or deallocating virtual machines. They need a solution that will automatically handle these fluctuations in load to ensure consistent performance for their web site. They also need a way to quickly roll out application updates to the servers while minimizing impact to end users.
+- Basic knowledge of load-balancing concepts
+  

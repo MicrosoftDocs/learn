@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-app-with-scale-sets.exercise-configuring-a-virtual-machine-scale-set
-title: Exercise - Configuring a virtual machine scale set
+uid: learn.build-app-with-scale-sets.exercise-configure-a-virtual-machine-scale-set
+title: Exercise - Configure a virtual machine scale set
 
 metadata:
   title: Exercise - Configuring a virtual machine scale set
@@ -13,5 +13,6 @@ metadata:
   ROBOTS: NOINDEX
 
 durationInMinutes: 5
+azureSandbox: false
 content: |
-  [!include[](includes/5-exercise-configuring-a-virtual-machine-scale-set.md)]
+  [!include[](includes/5-exercise-configure-a-virtual-machine-scale-set.md)]
