@@ -98,7 +98,7 @@ As you did earlier, you fetch the `failed-test` branch from GitHub and check out
 
 ## See the test failure in the pipeline
 
-Let's say that Andy was in a hurry and pushed up his work without running the tests one final time. Luckily, the pipeline can help us catch issues early when there are unit tests. You'll see that here.
+Let's say that Andy was in a hurry and pushed up his work without running the tests one final time. Luckily, the pipeline can help you catch issues early when there are unit tests. You can see that here.
 
 1. In Azure Pipelines, trace the build as it runs through the pipeline.
 1. Expand the **Run unit tests - Release** task as it runs.
@@ -152,7 +152,7 @@ Mara notices the build failure and checks in with Andy.
 
 ### Reproduce the failure locally
 
-Here you'll reproduce the failure locally, just like Mara and Andy.
+In this section, you reproduce the failure locally, just like Mara and Andy.
 
 1. In Visual Studio Code, open the integrated terminal.
 1. In the terminal, run this `dotnet build` command to build the application:
