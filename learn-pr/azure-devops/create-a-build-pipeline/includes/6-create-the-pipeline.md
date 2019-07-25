@@ -1,4 +1,4 @@
-At this point, Mara has defined a build configuration for the Space Game web site. Now it's your turn. You're going to create a pipeline and produce your first build artifact.
+At this point, Mara has defined a build configuration for the *Space Game* web site. Now it's your turn. You're going to create a pipeline and produce your first build artifact.
 
 As you saw, Mara uses a YAML file to define the build. When you create a pipeline, the process prompts you for your YAML file. The project doesn't have this file yet.
 
@@ -16,7 +16,7 @@ At a minimum, the YAML file needs to define the agent to use. Remember that a *b
     > [!IMPORTANT]
     > On Windows, be sure to select **YAML** in the **Save as type** list.
 
-1. In azure-pipelines.yml, specify the Ubuntu 16.04 image pool and save the file.
+1. In **azure-pipelines.yml**, specify the Ubuntu 16.04 image pool and save the file.
 
     ```yml
     pool:
@@ -29,7 +29,7 @@ At a minimum, the YAML file needs to define the agent to use. Remember that a *b
     git status
     ```
 
-    You see that azure-pipelines.yml is untracked. New files are untracked until you add them to Git's index, or staging area.
+    You see that **azure-pipelines.yml** is untracked. New files are untracked until you add them to Git's index, or staging area.
 
 1. Run `git add` to add the file to the index:
 
@@ -51,7 +51,7 @@ At a minimum, the YAML file needs to define the agent to use. Remember that a *b
 
     If this is your first time running `git push`, you'll be prompted to enter your GitHub credentials. Remember, if you're using two-factor authentication with GitHub, enter your personal access token instead of your password.
 
-If you return to your repo on GitHub and refresh the page, you'll see that azure-pipelines.yml is part of your `master` branch. You can select the file to verify its contents.
+If you return to your repo on GitHub and refresh the page, you'll see that **azure-pipelines.yml** is part of your `master` branch. You can select the file to verify its contents.
 
 ![The YAML file on GitHub](../media/6-github-view-file.png)
 
@@ -98,7 +98,7 @@ Now that you have a working build process, you can start to add build tasks.
 
 Remember that you're working from the `master` branch. You'll now create a branch named `build-pipeline` to hold your work. The branch gives you a place to experiment and get your build working completely without affecting the rest of the team.
 
-You can add build tasks to azure-pipelines.yml directly from Azure Pipelines. Azure Pipelines will commit your changes directly to your branch. But here you'll modify azure-pipelines.yml locally and upload your changes. Doing it this way lets you practice your Git skills watch the pipeline automatically build the application when you push up changes.
+You can add build tasks to **azure-pipelines.yml** directly from Azure Pipelines. Azure Pipelines will commit your changes directly to your branch. But here you'll modify **azure-pipelines.yml** locally and upload your changes. Doing it this way lets you practice your Git skills watch the pipeline automatically build the application when you push up changes.
 
 In practice, you might add build tasks one at at time, push up your changes, and watch the build run. Here, you'll add all the build tasks we identified earlier at one time.
 
@@ -108,7 +108,7 @@ In practice, you might add build tasks one at at time, push up your changes, and
     git checkout -b build-pipeline
     ```
 
-1. In Visual Studio Code, modify azure-pipelines.yml like this:
+1. In Visual Studio Code, modify **azure-pipelines.yml** as you see here:
 
     ```yml
     pool:
@@ -175,10 +175,10 @@ In practice, you might add build tasks one at at time, push up your changes, and
 
     You might have also noticed the `DotNetCoreInstaller@0` task, which is the first build step. Mara remembered that her build script didn't install required build tools. Although the build agent comes with a number of .NET Core SDK versions, this task lets her easily specify the version she needs to use on the build agent.
 
-1. Run the following Git commands from the integrated terminal to add azure-pipelines.yml to the index, commit the change, and push the change up to GitHub. These steps are similar to steps you performed earlier.
+1. Run the following Git commands from the integrated terminal to add **azure-pipelines.yml** to the index, commit the change, and push the change up to GitHub. These steps are similar to steps you performed earlier.
 
     > [!TIP]
-    > Remember to save azure-pipelines.yml before you run these Git commands.
+    > Remember to save **azure-pipelines.yml** before you run these Git commands.
 
     ```bash
     git add azure-pipelines.yml
