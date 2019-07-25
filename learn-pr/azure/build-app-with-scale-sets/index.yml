@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of Azure virtual machines
   - Basic knowledge of load balancing concepts
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/build-scalable-application-with-azure-virtual-machine-scale-sets-social.svg
 badge:
   uid: learn.build-app-with-scale-sets.badge
 levels: 
