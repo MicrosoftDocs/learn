@@ -24,7 +24,7 @@ Start by creating a new web app resource in the Azure portal:
     | **Name**             | *Enter a unique name*                                    |
     | **Publish**          | Code                                                     |
     | **Runtime stack**    | ASP.NET V4.7                                             |
-    | **Operating System** | Linux                                                    |
+    | **Operating System** | Windows                                                    |
     | **Region**           | *Select a region from the note above*                    |
     | **Windows Plan**     | *Leave default*                                          |
     | **Sku and size**     | *Leave default*                                          |
@@ -117,7 +117,7 @@ Next you'll create a deployment slot where you can stage new versions of the web
 
 Set up the new slot to use git deployment, just like you did for the production slot. Follow these steps:
 
-1. In the Azure portal, on the left, select **All resources**. In the list of all resources, you'll see both the production web app and the staging slot. These are represented as separate apps. Select the staging slot to go to its **Overview** page.
+1. In the Azure portal, on the left, select **All resources**. In the list of all resources, you'll now see two web app entries: deployment slots are represented as separate apps in the portal. Select the entry representing the staging slot to go to its **Overview** page.
 1. Under **Deployment**, select **Deployment Center**.
 1. Select **Local Git** > **Continue**.
 1. Select **App Service build service** > **Continue** > **Finish**.

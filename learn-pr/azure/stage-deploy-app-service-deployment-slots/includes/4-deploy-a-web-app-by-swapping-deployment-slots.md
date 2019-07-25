@@ -70,3 +70,5 @@ If you want to be able to test before you swap, you'll need a more complex deplo
 To configure auto swap for a slot, navigate to the **Configuration > General settings** page for the slot in the Azure portal. Under **Deployment Slot**, set **Auto swap enabled** to **On**, select the target slot from the dropdown menu, then select **Save** at the top.
 
 ![Configure auto swap](../media/4-configure-auto-swap.png)
+
+This option is only available on slots other than the production slot.
