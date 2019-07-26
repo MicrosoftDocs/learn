@@ -1,4 +1,4 @@
-At this point, you're able to build the *Space Game* web project through the pipeline.
+At this point, you can build the *Space Game* web project through the pipeline.
 
 But where do the results of the build go? Right now, the output of the build remains on the temporary build server. Mara needs a way to hand off this build to Amita so she can begin testing.
 
@@ -85,9 +85,9 @@ You'll now use variables to define these values one time. You'll then reference 
 
     Notice the `variables` section, which defines these variables:
 
-    * `buildConfiguration`. This specifies the build configuration.
-    * `wwwrootDir`. This specifies the path to the **wwwroot** directory.
-    * `dotnetSdkVersion`. This specifies the .NET Core SDK version to use.
+    * `buildConfiguration`. Specifies the build configuration.
+    * `wwwrootDir`. Specifies the path to the **wwwroot** directory.
+    * `dotnetSdkVersion`. Specifies the .NET Core SDK version to use.
 
     To reference these variables, you use the `$()` syntax just as you do for built-in variables. Here's the step that runs node-sass to convert Sass files to CSS. It references the `wwwrootDir` variable to obtain the path to the **wwwroot** directory.
 

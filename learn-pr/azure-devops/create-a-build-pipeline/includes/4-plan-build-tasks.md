@@ -60,7 +60,7 @@ dotnet publish --no-build --configuration Release --output /tmp/Release
 
 The `/tmp` directory mimics the team's network share.
 
-After she runs the script, Mara realizes that it's incomplete. For example, it doesn't deal with errors. It doesn't notify anyone if there are build errors and, even when there are errors, it keeps running. It also doesn't install the tools each step requires.
+After she runs the script, Mara realizes that it's incomplete. For example, it doesn't deal with errors. It doesn't notify anyone if build errors occur. Even when there are errors, it keeps running. It also doesn't install the tools each step requires.
 
 ## What are Azure Pipelines tasks?
 

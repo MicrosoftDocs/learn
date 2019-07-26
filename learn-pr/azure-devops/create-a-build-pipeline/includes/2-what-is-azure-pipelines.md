@@ -20,7 +20,7 @@ And Azure Pipelines works with many different languages and application types. I
 
 **Amita**: I know it's selfish, but why do I care? One of my big problems is that I never know when a build is ready to test. Sometimes someone remembers to update the spreadsheet, but a lot of times they forget. It seems like I'm the last person to know.
 
-**Mara**: Right, that's something we can easily fix. We can set up the pipeline to notify you automatically, either through email or some other kind of notification, when a build is ready. You'll never have to wait for someone to remind you again.
+**Mara**: Right, that's something we can easily fix. We can set up the pipeline to notify you automatically, either through email or some other notification, when a build is ready. You'll never have to wait for someone to remind you again.
 
 **Amita**: Okay, so your goal right now is to build the app and let me know when it's ready?
 
@@ -34,9 +34,9 @@ Mara moves to the whiteboard and draws the pipeline.
 
 ![A hand-drawn illustration of a CI pipeline](../media/2-whiteboard-pipeline-with-callouts.png)
 
-This is my continuous integration (CI) pipeline. CI is the process of automating the build and testing of code every time a team member commits changes to version control. I know we don't do automated testing yet, but give it time.
+This is my continuous integration (CI) pipeline. *CI* is the process of automating the build and testing of code every time a team member commits changes to version control. I know we don't do automated testing yet, but give it time.
 
-A *pipeline* defines the continuous integration process for the app. It's made up of steps called _tasks_ ![Callout 1](../../shared/media/callout-01.png). It can be thought of as a script that defines how your build, test, and deployment steps are run. I'm going to try and map our scripts to tasks.
+A *pipeline* defines the continuous integration process for the app. It's made up of steps called *tasks* ![Callout 1](../../shared/media/callout-01.png). It can be thought of as a script that defines how your build, test, and deployment steps are run. I'm going to try to map our scripts to tasks.
 
 The pipeline runs when you submit code changes ![Callout 2](../../shared/media/callout-02.png). You can configure the pipeline to run automatically, or you can run it manually. You connect your pipeline to a source repository like GitHub, Bitbucket, or Subversion. We'll use GitHub. One of our tasks for this sprint is to start using GitHub.
 

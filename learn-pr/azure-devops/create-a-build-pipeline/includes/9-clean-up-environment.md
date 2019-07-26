@@ -9,7 +9,7 @@ You'll now move the work item you assigned to yourself earlier in this module, *
 
 In practice, "Done" often means that your users have working software. Here, you'll mark this work as complete because you have a working build system on Azure Pipelines.
 
-At the end of each Sprint, or work iteration, you and your team might hold a retrospective meeting, where you share the work you completed, what went well during the Sprint, and what could be improved.
+At the end of each Sprint, or work iteration, you and your team might hold a retrospective meeting. At these meetings, you share the work you completed, what went well during the Sprint, and what could be improved.
 
 To complete the work item:
 

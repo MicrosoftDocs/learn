@@ -2,7 +2,7 @@ This module is all about setting up a continuous integration (CI) pipeline for y
 
 The *Space Game* web team is being pulled in many directions. Andy, the lead dev, is running from one meeting to another and never has any time. Amita, the QA person, is helping a tester on another team. Tim, who's in ops, is upgrading his servers and hasn't been seen for days. Mara's dream of a true DevOps team is stalled (again).
 
-But she isn't giving up. She remembers that she and the team used Azure Boards to create a backlog of issues with the build process.
+But she isn't giving up. She remembers that she and the team used Azure Boards to create a backlog of issues with the build process:
 
 ![Backlog of tasks](../../shared/media/build-all-tasks.png)
 
@@ -23,7 +23,7 @@ In this module, you will:
 
 ## Prerequisites
 
-If you don't already have an [Azure DevOps](https://dev.azure.com?azure-portal=true) organization, go through the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path before starting this module.
+If you don't already have an [Azure DevOps](https://dev.azure.com?azure-portal=true) organization, work through the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path before starting this module.
 
 You'll also need to set up a development environment on your Windows, macOS, or Linux system. You'll need:
 
@@ -38,7 +38,7 @@ This environment lets you complete the exercises in this and future modules. You
 
 ## Meet the team
 
-You met the *Space Game* web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module.
+You met the *Space Game* web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module:
 
 :::row:::
 

@@ -1,6 +1,6 @@
-Get ready to start building a CI pipeline with Azure Pipelines. The first step is to build and run the Space Game web app on your local machine. Understanding how to build software locally will prepare you to repeat the process in the pipeline.
+Get ready to start building a CI pipeline with Azure Pipelines. The first step is to build and run the *Space Game* web app on your local machine. Understanding how to build software locally will prepare you to repeat the process in the pipeline.
 
-Mara is going to do exactly that and, by following the procedures, you'll be able to do the same thing. Everyone on the team, including Mara, uses Visual Studio Code to build and run applications. But the team uses a centralized version control system for its code, and Mara is more comfortable with GitHub, so she's going to use that. If you've never used GitHub, don't worry. Just follow along for now. All will be explained here and in later modules.
+Mara is going to do exactly that and, by following the procedures, you can do the same thing. Everyone on the team, including Mara, uses Visual Studio Code to build and run applications. But the team uses a centralized version control system for its code, and Mara is more comfortable with GitHub, so she's going to use that. If you've never used GitHub, don't worry. Just follow along for now. All will be explained here and in later modules.
 
 ## Prepare Visual Studio Code
 
@@ -47,16 +47,16 @@ Here you'll get the source code from GitHub and set up Visual Studio Code so tha
 
 ### Create a fork
 
-The first step is to fork the Space Game web project so you can work with and modify the source files.
+The first step is to fork the *Space Game* web project so you can work with and modify the source files.
 
 A *fork* is a copy of a GitHub repository. The copy exists in your account and enables you to make any changes you want without affecting the original project.
 
-Although you can propose changes to the original project, here you'll work with the Space Game web project as though it were the original project owned by Mara and her team.
+Although you can propose changes to the original project, here you'll work with the *Space Game* web project as though it were the original project owned by Mara and her team.
 
-To fork the Space Game web project into your GitHub account:
+To fork the *Space Game* web project into your GitHub account:
 
 1. In a web browser, go to [GitHub](https://github.com?azure-portal=true) and sign in.
-1. Go to the [Space Game](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web?azure-portal=true) web project.
+1. Go to the [*Space Game*](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web?azure-portal=true) web project.
 1. Select **Fork**.
 
     ![The Fork button on GitHub](../media/3-github-fork-button.png)
@@ -64,13 +64,13 @@ To fork the Space Game web project into your GitHub account:
 
 ### Clone your fork locally
 
-You now have a copy of the Space Game web project in your GitHub account. Here you'll download, or *clone*, a copy to your computer so you can work with it.
+You now have a copy of the *Space Game* web project in your GitHub account. Here you'll download, or *clone*, a copy to your computer so you can work with it.
 
 A clone, just a like a fork, is a copy of a repository. When you clone a repository, you can make changes, verify they work as you expect, and then upload those changes back to GitHub. You can also synchronize your local copy with changes other authenticated users have made to GitHub's copy of your repository.
 
-To clone the Space Game web project to your computer:
+To clone the *Space Game* web project to your computer:
 
-1. Go to your fork of the Space Game web project on GitHub.
+1. Go to your fork of the *Space Game* web project on GitHub.
 1. Select **Clone or download**. Then select the button next to the URL that's shown to copy the URL to your clipboard.
 
     ![The Clone or download button on GitHub](../media/3-github-clone-button.png)
@@ -129,10 +129,10 @@ upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.
 
 ### Open the project in the file explorer
 
-In Visual Studio Code, your terminal window points to the root directory of the Space Game web project. Here you'll open the project from the file explorer so you can view its structure and work with files.
+In Visual Studio Code, your terminal window points to the root directory of the *Space Game* web project. Here you'll open the project from the file explorer so you can view its structure and work with files.
 
 1. On the **File** menu, select **Open** or **Open Folder**.
-1. Navigate to the root directory of the Space Game web project.
+1. Navigate to the root directory of the *Space Game* web project.
 
     (You can run the `pwd` command in the terminal window to see the full path if you need a reminder.)
 
@@ -157,11 +157,11 @@ Now that you have the web application, you can build and run it locally.
     dotnet run --configuration Release --no-build --project Tailspin.SpaceGame.Web
     ```
 
-    .NET Core solution files can contain more than one project. The `--project` argument specifies the project for the Space Game web application.
+    .NET Core solution files can contain more than one project. The `--project` argument specifies the project for the *Space Game* web application.
 
 ## Verify the application is running
 
-In development mode, the Space Game web site is configured to run on port 5000.
+In development mode, the *Space Game* web site is configured to run on port 5000.
 
 From a new browser tab, navigate to [http://localhost:5000](http://localhost:5000?azure-portal=true) to see the running application.
 
