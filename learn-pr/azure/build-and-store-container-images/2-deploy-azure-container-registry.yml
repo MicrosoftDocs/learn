@@ -16,10 +16,10 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/2-deploy-acr.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.ContainerRegistry/registries"
-  hint: "Run the `az acr create` command as shown to create your container registry."
+#tasks:
+#- action: exists
+#  environment: azure
+#  azure:
+#    resource:
+#      type: "Microsoft.ContainerRegistry/registries"
+#  hint: "Run the `az acr create` command as shown to create your container registry."
