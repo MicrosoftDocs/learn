@@ -19,8 +19,8 @@ Site Recovery provides application-aware replication for many types of workloads
 - **App-consistent snapshots**: Snapshots taken for recovery purposes can view information in memory, and pending I/O operations, which allow for quick recovery times as the application is ready to go upon switching to the replica VM
 - **Integration with SQL AlwaysOn**: AlwaysOn is an enterprise-level alternative to normal database mirroring techniques
 - **Flexible recovery plans**: The ability to recover an entire application stack with a single click, both manual and scripted actions can be incorporated into the overall plan
- - **Network Management**: The automated ability to simplify the reservation of IP addresses, configure load balancers and integration with Azure Traffic Manager
- - **Automation library**: Production ready scripts that can be downloaded and integrated with the recovery plan to provide a fully automated recovery if needed
+  - **Network Management**: The automated ability to simplify the reservation of IP addresses, configure load balancers and integration with Azure Traffic Manager
+  - **Automation library**: Production ready scripts that can be downloaded and integrated with the recovery plan to provide a fully automated recovery if needed
 
 ### Active Directory & DNS
 

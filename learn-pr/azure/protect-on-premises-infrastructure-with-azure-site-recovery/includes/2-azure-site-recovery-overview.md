@@ -1,14 +1,14 @@
-**Azure Site Recovery** is more than just a tool to help you recover from system outages. Azure Site Recovery will replicate workloads between a primary and secondary site, and can also be used to migrate VMs from on-premises infrastructure to Azure. 
+**Azure Site Recovery** is more than just a tool to help you recover from system outages. Azure Site Recovery will replicate workloads between a primary and secondary site, and can also be used to migrate VMs from on-premises infrastructure to Azure.
 
-Your first task to secure your workloads from earthquakes, is to review the companies current business continuity and disaster recovery plan (BCDR). Identify the different recovery objectives and scope for the systems that need protection.
+Your first task to protect your workloads from earthquakes is to review the companies current business continuity and disaster recovery plan (BCDR). You need to identify the different recovery objectives and scope for the systems that need protection.
 
-In this unit, you'll investigate how Azure Site Recovery can help achieve these goals by harnessing the power of the cloud and then study the tools that can make the failover and recovery of resources possible.
+In this unit, you'll investigate how Azure Site Recovery can help achieve these goals and make failover and recovery of resources possible in the event of a disaster.
 
 ## Business continuity and disaster recovery
 
-In certain types of businesses, a loss of service can cause nothing more than disruption to your staff and users. For other companies, every second that systems are unavailable costs the company millions in lost revenue, or financial penalities for breaking agreements written for the availability of services you provide.
+Loss of service can cause disruption to your staff and users. Every second that systems are unavailable can cause the company lost revenue, or financial penalities for breaking agreements written for the availability of services you provide.
 
-BCDR plans are formal documents that companies draw up that cover the scope, and actions, that should be taken when a disaster or large-scale outage happens. Each outage is assessed on its own merit. For example, a DR plan will come into action when a whole data center loses power, or relevant in this scenario, an earthquake hits and has damaged communications lines that render a data center useless until fixed. A disaster of that size could bring services down for days, not hours, so a full BCDR plan would need to be invoked to get the service back online.
+Business continuity and disaster recovery (BCDR) plans are formal documents that companies draw up that cover the scope and actions that should be taken when a disaster or large-scale outage happens. Each outage is assessed on its own merit. For example, a DR plan will come into action when a whole data center loses power, or relevant in this scenario, an earthquake hits and has damaged communications lines that render a data center useless until fixed. A disaster of that size could bring services down for days, not hours, so a full BCDR plan would need to be invoked to get the service back online.
 
 As part of your BCDR plan, identify the recovery time objectives (RTO) and recovery point objectives (RPO) for your applications. Both help to realize the maximum tolerable hours your business can be without specified services, and what the data recovery process should be. Let's look closer at each.
 
@@ -41,7 +41,7 @@ Some notable features of Azure Site Recovery are:
 
 There are several components that need to be set up to enable Azure Site Recovery:
 
-- **Networking**:  A valid Azure network is required for the replicated virtual machines to use.
+- **Networking**:  A valid Azure virtual network is required for the replicated virtual machines to use.
 - **Recovery Service vault**:  A vault in your Azure subscription that stores the migrated VMs when a failover is run. The vault also contains the replication policy, and the source and target locations for replication/failover.
 - **Credentials**:  The credentials you use for Azure need to have the **Virtual Machine Contributor** and **Site Recovery Contributor** roles to allow permission to modify both the VM and the storage is connects to.
 - **Configuration Server**:  An on-premises VMware server fulfills several roles during the failover/replication process. It's obtained from the Azure portal as an OVA for easy deployment. The configuration server includes a:
