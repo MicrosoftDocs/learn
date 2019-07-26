@@ -2,7 +2,7 @@ The first step to using Azure Databricks is to create and deploy a Databricks wo
 
 ## Deploy an Azure Databricks workspace
 
-1. Open the Azure Portal.
+1. Open the Azure portal.
 1. Click **Create a Resource** in the top left
 1. Search for "Databricks"
 1. Select *Azure Databricks*
@@ -14,7 +14,7 @@ The first step to using Azure Databricks is to create and deploy a Databricks wo
    - **Subscription**: Choose the Azure subscription in which to deploy the workspace.
    - **Resource Group**: Use **Create new** and provide a name for the new resource group.
    - **Location**: Select a location near you for deployment. For the list of regions that are supported by Azure Databricks, see [Azure services available by region](https://azure.microsoft.com/regions/services/).  
-   - **Pricing Tier**: **Trial (Premium - 14 days Free DBUs)**. If you've already used your trial benefit, that option will be unavailable. In that case you can select **Premium** but you will be charged for your useage.
+   - **Pricing Tier**: **Trial (Premium - 14 days Free DBUs)**. If you've already used your trial benefit, that option will be unavailable. In that case you can select **Premium** but you will be charged for your usage.
 
 1. Accept the terms and conditions.
 1. Select **Create**.
