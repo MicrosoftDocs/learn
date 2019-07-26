@@ -1,6 +1,6 @@
 Watch this video from Brad Smith, President and Chief Legal Officer at Microsoft, as he shares what Microsoft is learning in our own AI journey. He also provides some useful perspectives on how businesses can engage with AI responsibly as they introduce AI in their own products and services and within their organization.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWunDs]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Y4Bl]
 
 In this executive insight video, you heard how Microsoft is seeing a surge of breakthroughs with AI and is asking important questions about how to design, build, and use AI to create a positive impact.
 
