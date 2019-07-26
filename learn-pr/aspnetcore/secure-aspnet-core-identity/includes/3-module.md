@@ -272,6 +272,13 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
     The preceding resolves the data annotation attributes in the previous step.
 
+1. Create and apply an EF Core Migration to update the underlying data store:
+
+    ```bash
+    dotnet ef migrations add UpdateUser && \
+        dotnet ef database update
+    ```
+
 1. In *Register.cshtml*, add the following markup to the line after `<div asp-validation-summary="All" class="text-danger"></div>`:
 
     ```cshtml
@@ -320,13 +327,6 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
     [!code-cshtml[](../code/3-loginpartial.cshtml?highlight=9-10,13)]
 
-1. Create and apply an EF Core Migration to update the underlying data store:
-
-    ```bash
-    dotnet ef migrations add UpdateUser && \
-        dotnet ef database update
-    ```
-
 1. In *Identity/Pages/Account/Manage/Index.cshtml.cs*, make the following changes to support the name text boxes.
     1. Add the following two properties to the `InputModel` class:
 
@@ -370,5 +370,25 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 1. Run the following command to view the table schema:
 
     ```bash
-    db -Q "select COLUMN_NAME, IS_NULLABLE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME='AspNetUsers'" -Y 20
+    db -Q "SELECT COLUMN_NAME, IS_NULLABLE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME='AspNetUsers'" -Y 20
+    ```
+
+    The following output displays:
+
+    [!code-text[](../code/3-table-schema-output.txt?highlight=18-19)]
+
+1. Run the following command to view the keys in the `AspNetUsers` table:
+
+    ```bash
+    db -Q "exec sp_pkeys 'AspNetUsers'" -Y 20
+    ```
+
+    The following output displays:
+
+    ```text
+    TABLE_QUALIFIER      TABLE_OWNER          TABLE_NAME           COLUMN_NAME          KEY_SEQ PK_NAME
+    -------------------- -------------------- -------------------- -------------------- ------- --------------------
+    ContosoPets          dbo                  AspNetUsers          Id                         1 PK_AspNetUsers
+    
+    (1 rows affected)
     ```
