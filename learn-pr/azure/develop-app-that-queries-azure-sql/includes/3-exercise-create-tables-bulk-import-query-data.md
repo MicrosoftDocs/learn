@@ -103,7 +103,7 @@ In this exercise, you'll create a database server and a single database by using
 
 Let's create the database and server to store the data for the app.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the account that you used to activate Sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the account that you used to activate the sandbox.
 
 1. In the left pane, select **+ Create a resource**, **Databases**, and then **SQL Database**.
 
@@ -155,9 +155,9 @@ You can now create the tables to store the data from the .csv files.
     |---|---|
     | Authorization type | SQL server authentication |
     | Login | azuresql |
-    | Password | Specify the password you used when you created this user. |
+    | Password | Specify the password that you used when you created this user. |
 
-1. In the **Query 1** pane, enter the following SQL statement, and then select **Run**. This statement creates a new table to hold course information. Verify that the statement runs without any errors.
+1. In the **Query 1** pane, enter the following SQL statement, and then select **Run**. This statement creates a new table to hold the course information. Verify that the statement runs without any errors.
 
     ```SQL
     CREATE TABLE Courses
@@ -169,7 +169,7 @@ You can now create the tables to store the data from the .csv files.
 
     ![The Query editor window in the Azure portal. The user has entered a statement to create the Courses table](../media/3-create-table-courses-annotated.png)
 
-1. Overwrite the existing statement with the following statement that creates a table to hold modules. Select **Run**, and then verify that the statement runs without any errors.
+1. Overwrite the existing statement with the following statement that creates a table to hold the modules. Select **Run**, and then verify that the statement runs without any errors.
 
     ```SQL
     CREATE TABLE Modules
@@ -215,7 +215,7 @@ You can now create the tables to store the data from the .csv files.
     export AZURE_PASSWORD=[enter your password]
     ```
 
-1. Run the **bcp** utility to create a format file from the schema of the **courses** table in the database. The format file specifies that the data will be in character format (`-c`) and separated by commas (`-t,`).
+1. Run the `bcp` utility to create a format file from the schema of the **Courses** table in the database. The format file specifies that the data will be in character format (`-c`) and separated by commas (`-t,`).
 
     ```bash
     bcp "$DATABASE_NAME.dbo.courses" format nul -c -f courses.fmt -t, -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD
@@ -236,7 +236,7 @@ You can now create the tables to store the data from the .csv files.
     2       SQLCHAR             0       50      "\n"   2     CourseName                                   SQL_Latin1_General_CP1_CI_AS
     ```
 
-1. Review the file. The data in the first column of the comma-separated file will go into the **CourseID column** of the *Courses* table. The second field will go into the **CourseName** column. The second column is character-based and has a collation that's associated with it. The fields separator in the file is expected to be a comma. The row terminator (after the second field) should be a newline character. In a real-world scenario, your data might not be organized this neatly. You might have different field separators and fields in a different order from the columns. In that situation, you can edit the format file to change these items on a field-by-field basis. Press Ctrl+q to close the editor.
+1. Review the file. The data in the first column of the comma-separated file will go into the **CourseID column** of the **Courses** table. The second field will go into the **CourseName** column. The second column is character-based and has a collation that's associated with it. The fields separator in the file is expected to be a comma. The row terminator (after the second field) should be a newline character. In a real-world scenario, your data might not be organized this neatly. You might have different field separators and fields in a different order from the columns. In that situation, you can edit the format file to change these items on a field-by-field basis. Press Ctrl+q to close the editor.
 
 1. Run the following command to import the data in the **courses.csv** file in the format that's specified by the amended **courses.fmt** file. The `-F 2` flag directs the `bcp` utility to start importing data from line 2 in the data file. The first line contains headers.
 
@@ -282,7 +282,7 @@ You can now create the tables to store the data from the .csv files.
 
 1. Return to the Azure portal.
 
-1. In the pane on the left side in the Azure portal, select **SQL databases**.
+1. In the pane on the left side, select **SQL databases**.
 
 1. On the **SQL databases** page, select **coursedatabase*NNN***.
 
@@ -294,7 +294,7 @@ You can now create the tables to store the data from the .csv files.
     |---|---|
     | Authorization type | SQL server authentication |
     | Login | azuresql |
-    | Password | Enter the password for this user |
+    | Password | Enter the password for this user. |
 
 1. In the **Query 1** pane, enter the following SQL statement, and then select **Run**.
 
@@ -331,4 +331,4 @@ You can now create the tables to store the data from the .csv files.
 
 1. At the `1>` prompt, type **exit** to close the `sqlcmd` utility.
 
-You created a single database by using SQL Database. Next, you used the query editor in the Azure portal to create tables. You then used the **bcp** utility to upload data from a series of comma-delimited data files. Finally, you ran queries against the tables in the database from the query editor in the Azure portal and from the `sqlcmd` utility in Cloud Shell.
+You created a single database by using SQL Database. Next, you used the query editor in the Azure portal to create tables. You then used the `bcp` utility to upload data from a series of comma-delimited data files. Finally, you ran queries against the tables in the database from the query editor in the Azure portal and from the `sqlcmd` utility in Cloud Shell.

@@ -6,9 +6,9 @@ To save time, you'll work with a pre-existing web application. You'll add the co
 
 You'll do the following things:
 
-- Create a class that holds the course name, module title, and sequence for each module in the database.
-- Create a data access controller class that retrieves the information from the database.
-- Edit the code that's behind the index page in the web app to create a data access controller object and fetch the data.
+- Create a *class* that holds the course name, module title, and sequence for each module in the database.
+- Create a *data access controller class* that retrieves the information from the database.
+- Edit the code that's behind the index page in the web app to create a *data access controller object* and fetch the data.
 - Edit the index page to display the data.
 
 ## Deploy and run the pre-existing web app
@@ -159,7 +159,7 @@ Now let's add to the application the code to retrieve course data from the datab
 
 1. Leave the code editor open, and switch to the Azure portal. In the pane on the left side, click **SQL databases**, and select your database.
 
-1. Under **Settings**, select **Connection strings**. Copy the ADO.NET connection string to the clipboard.
+1. Under **Settings**, select **Connection strings**. Copy the **ADO.NET** connection string to the clipboard.
 
     ![The connection string pane in the Azure portal.](../media/5-connection-string-annotated.png)
 
