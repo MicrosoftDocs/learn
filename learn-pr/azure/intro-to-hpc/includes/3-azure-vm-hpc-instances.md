@@ -6,7 +6,7 @@ Here, you'll learn about VM tiers in Azure that support specialized high-perform
 
 ## H-series VMs
 
-As the solution architect for the engineering organization, you've already seen how Azure Batch orchestrates 100s and 1000s of nodes working together in parallel. The emphasis is on the sheer number of VMs that can be orchestrated in parallel. This process means that work is achieved in a fraction of the time. However, some use cases also call for especially powerful VMs with exceptional CPU, memory, and networking capabilities. In these cases, use Azure VM HPC instances. HPC Instances are a series of Azure VMs expressly designed to cater for some of the harder aspects of HPC scenarios.
+As the solution architect for the engineering organization, you've already seen how Azure Batch orchestrates hundreds and thousands of nodes working together in parallel. The emphasis is on the sheer number of VMs that can be orchestrated in parallel. This process means that work is achieved in a fraction of the time. However, some use cases also call for especially powerful VMs with exceptional CPU, memory, and networking capabilities. In these cases, use Azure VM HPC instances. HPC Instances are a series of Azure VMs expressly designed to cater for some of the harder aspects of HPC scenarios.
 
 Azure *H-series* VMs are a family of the most powerful and fastest CPU-based VMs on Azure. These VMs are optimized for applications that require high CPU frequencies or large amounts of memory per core requirements. The basic H-series is well suited to use cases like genomic research, seismic and reservoir simulation, financial risk modeling, and molecular modeling. 
 
@@ -42,8 +42,8 @@ Some HPC tasks are both compute-intensive and graphics-intensive. Suppose, for e
 
 ### NC-series VMs
 
-The *NC-series* of VMs use the NVIDIA Tesla K80 GPU card and Intel Xeon E5-2690 v3 processors. This the lowest-cost of the N-series tiers, but VMs in this tier are capable of graphics-intensive applications. They also support NVIDIA's CUDA platform, so that you can use the GPUs to run compute instructions.
+The *NC-series* of VMs use the NVIDIA Tesla K80 GPU card and Intel Xeon E5-2690 v3 processors. This series is the lowest-cost of the N-series tiers, but VMs in this tier are capable of graphics-intensive applications. They also support NVIDIA's CUDA platform, so that you can use the GPUs to run compute instructions.
 
 ### ND-series VMs
 
-The *ND-series* of VMs is optimized for AI and Deep Learning workloads. They use the NVIDIA Tesla P40 GPU card and Intel Xeon E5-2690 v4 processors. They are particularly fast at running single-precision floating point operations, which are used by AI frameworks including Microsoft Cognitive Toolkit, TensorFlow, and Caffe.
+The *ND-series* of VMs is optimized for AI and Deep Learning workloads. They use the NVIDIA Tesla P40 GPU card and Intel Xeon E5-2690 v4 processors. They are fast at running single-precision floating point operations, which are used by AI frameworks including Microsoft Cognitive Toolkit, TensorFlow, and Caffe.

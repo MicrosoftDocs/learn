@@ -6,17 +6,17 @@ Here, you'll learn about Azure Batch.
 
 ## What is HPC?
 
-Their are many different industries that require very powerful computing resources for specialized tasks. For example:
+There are many different industries that require very powerful computing resources for specialized tasks. For example:
 
 - In genetic sciences, gene sequencing.
 - In oil and gas exploration, reservoir simulations.
-- In finance, market modelling.
-- In engineering, physical system modelling.
-- In meteorology, weather modelling.
+- In finance, market modeling.
+- In engineering, physical system modeling.
+- In meteorology, weather modeling.
 
-These tasks require processors that can carry out instructions extremely fast. It's also helpful to run many processor in parallel to obtain answers within a practical time duration. On-premises HPC systems are built with many powerful CPUs and, for graphics-intensive tasks, GPUs. They aslo require fast disks and high-speed memory.
+These tasks require processors that can carry out instructions extremely fast. It's also helpful to run many processors in parallel to obtain answers within a practical time duration. On-premises HPC systems are built with many powerful CPUs and, for graphics-intensive tasks, GPUs. They also require fast disks and high-speed memory.
 
-Azure enables you to perform HPC tasks in the cloud, without building your own expensive HPC hardware. An Azure HPC system also has the advantage that you can dynamically add resources as they are needed, and remove them when demand falls. Azure makes it easy to co-ordinate an HPC task across many virtual machines (VMs) and supports very powerful VM sizes.
+Azure enables you to perform HPC tasks in the cloud, without building your own expensive HPC hardware. An Azure HPC system also has the advantage that you can dynamically add resources as they are needed, and remove them when demand falls. Azure makes it easy to coordinate an HPC task across many virtual machines (VMs) and supports powerful VM sizes.
 
 ## Azure Batch
 
