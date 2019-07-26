@@ -112,7 +112,7 @@ Your Azure SQL database is now up and running. You have many options to further 
 
 You can also specify which systems can access your database through the firewall. Initially, the firewall prevents all access to your database server from outside of Azure.
 
-For your prototype, you only need to access the database from your laptop. Later, you can whitelist additional systems, such as your mobile app.
+For your prototype, you only need to access the database from your laptop. Later, you can add additional systems, such as your mobile app.
 
 Let's enable your development computer to access the database through the firewall now.
 
