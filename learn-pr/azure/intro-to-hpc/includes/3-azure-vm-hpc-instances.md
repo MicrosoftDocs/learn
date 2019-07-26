@@ -38,7 +38,7 @@ Both HC-series and HB-series VMs use a 100GB/sec Mellanox EDR Infiniband interco
 
 ## N-series VMs
 
-Some HPC tasks are both compute-intensive and graphics-intensive. Suppose, for example, you are modelling behavior of a wing in a wind tunnel, and you want to show a live visualization to help engineers understand that behavior. For these applications, consider using N-service VMs, which include single or multiple NVIDIA GPUs. 
+Some HPC tasks are both compute-intensive and graphics-intensive. Suppose, for example, you are modeling behavior of a wing in a wind tunnel, and you want to show a live visualization to help engineers understand that behavior. For these applications, consider using N-service VMs, which include single or multiple NVIDIA GPUs. 
 
 ### NC-series VMs
 
