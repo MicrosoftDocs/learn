@@ -279,6 +279,32 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
         dotnet ef database update
     ```
 
+1. Run the following command to view the table schema:
+
+    ```bash
+    db -Q "SELECT COLUMN_NAME, IS_NULLABLE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME='AspNetUsers'" -Y 20
+    ```
+
+    The following output displays:
+
+    [!code[](../code/3-table-schema-output.txt?highlight=18-19)]
+
+1. Run the following command to view the keys in the `AspNetUsers` table:
+
+    ```bash
+    db -Q "exec sp_pkeys 'AspNetUsers'" -Y 20
+    ```
+
+    The following output displays:
+
+    ```text
+    TABLE_QUALIFIER      TABLE_OWNER          TABLE_NAME           COLUMN_NAME          KEY_SEQ PK_NAME
+    -------------------- -------------------- -------------------- -------------------- ------- --------------------
+    ContosoPets          dbo                  AspNetUsers          Id                         1 PK_AspNetUsers
+    
+    (1 rows affected)
+    ```
+
 1. In *Register.cshtml*, add the following markup to the line after `<div asp-validation-summary="All" class="text-danger"></div>`:
 
     ```cshtml
@@ -350,6 +376,8 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
     [!code-csharp[](../code/3-account-manage-index-onpostasync.cshtml.cs?highlight=14-16)]
 
+<!-- TODO: az webapp up, add a new user -->
+
 1. Run the following command to confirm that the first and last name are stored in the database:
 
     ```bash
@@ -366,29 +394,3 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
     ```
 
     The user registered prior to adding `FirstName` and `LastName` to the schema doesn't have data in those columns.
-
-1. Run the following command to view the table schema:
-
-    ```bash
-    db -Q "SELECT COLUMN_NAME, IS_NULLABLE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME='AspNetUsers'" -Y 20
-    ```
-
-    The following output displays:
-
-    [!code-text[](../code/3-table-schema-output.txt?highlight=18-19)]
-
-1. Run the following command to view the keys in the `AspNetUsers` table:
-
-    ```bash
-    db -Q "exec sp_pkeys 'AspNetUsers'" -Y 20
-    ```
-
-    The following output displays:
-
-    ```text
-    TABLE_QUALIFIER      TABLE_OWNER          TABLE_NAME           COLUMN_NAME          KEY_SEQ PK_NAME
-    -------------------- -------------------- -------------------- -------------------- ------- --------------------
-    ContosoPets          dbo                  AspNetUsers          Id                         1 PK_AspNetUsers
-    
-    (1 rows affected)
-    ```
