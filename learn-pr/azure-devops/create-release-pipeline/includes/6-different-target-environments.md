@@ -1,13 +1,25 @@
 TODO: Rename file
 
-The team needs a way to monitor releases just like they did with builds. Talk about dashboards.
+When you release and deploy at a fast cadence, you need a way to monitor the health and history of your releases.
 
-Resources:
+Let's listen in on the team as they discuss the next steps.
 
-[ILT Content Link](https://courses.microsoft.com/courses/course-v1:ELMS+AZ-400.3+2019_T1/course/?azure-portal=true)
+(The team needs a way to monitor releases just like they did with builds.)
 
-From this link, the relevant breadcrumbs are below:
+Andy and Mara have just finished demonstrating the the proof of concept build and release pipeline to the team.
 
-Course > Set Up a Release Management Workflow > Automate Inspection of Health > Automate Inspection of Health
+**Amita:** If I can get these releases to my test environment on a regular cadence, this will save a lot of time getting a feature through QA. 
 
-(Just talking about dashboard right now. The other techniques will be added in a later module.)
+**Mara:** Exactly, we can take this release pipeline and expand on it to create a deployment workflow. 
+
+**Amita:** This is great, but how do I know if what I get in the test environment is valid? What I mean is, where do I go to see the health of my build and release?
+
+**Andy:** Remember the dashboard we made to monitor the health of the builds? Well, we can do the same thing for the releases. This way, we can monitor the health of the whole pipeline, and anyone interested can check in on the system and see what is happening.
+
+**Tim:** Irwin will like that.
+
+**Amita:** Can we add that dashboard to the proof of concept? I want to see what sort of monitoring is available.
+
+**Andy:** Always thinking QA. Yes, let's see what widgets we can add to the dashboard.
+
+The team gathers around Andy's laptop.

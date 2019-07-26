@@ -47,27 +47,26 @@ The Tailspin team is starting to feel better about their build process. They’v
 
 Everyone on the team is in the meeting room waiting for Irwin, the product manager, who says he wants to talk to them. They’re looking forward to telling him about the progress they’ve made. But when Irwin walks in, he doesn’t look happy. He starts talking right away.
 
-“I had a meeting this morning with the execs. They want to know why we’re taking so long to release our games and websites. Our closest competitors get new features and new games out there much faster than we do. We need to speed things up. I’m not just saying this to you. I’m saying it to all the teams. What can we do to help your team deploy faster?” He looks around. “Anyone?”
+**Irwin:** I had a meeting this morning with the execs. They want to know why we’re taking so long to release our games and websites. Our closest competitors get new features and new games out there much faster than we do. We need to speed things up. I’m not just saying this to you. I’m saying it to all the teams. What can we do to help your team deploy faster? *He looks around*. Anyone?
 
-Andy clears his throat. “This is a little sudden but we’re a bit ahead of you. We’ve been automating our build process and that’s been helpful. Maybe now it’s time to extend our automation to how we deploy our apps.”
+Andy clears his throat. 
 
-Irwin asks, “How do you do this?”
+**Andy:** This is a little sudden but we’re a bit ahead of you. We’ve been automating our build process and that’s been helpful. Maybe now it’s time to extend our automation to how we deploy our apps.
 
-Mara says, “We created an automated build pipeline with Azure Pipelines. It builds an artifact that Amita can test. We could also use Azure Pipelines to build a continuous delivery pipeline (CD).”
+**Irwin:** How do you do this?
 
-“Which is what?”
+**Mara:** We created an automated build pipeline with Azure Pipelines. It builds an artifact that Amita can test. We could also use Azure Pipelines to build a continuous delivery pipeline (CD).
 
-“It’s a pipeline that...
+**Irwin:** Which is what?
 
-Irwin's mobile beeps. He reads a text, mutters under his breath, and says, "I'm really sorry but this is urgent. I have to go. Why don't you all figure out this CD business and get back to me--soon." 
+**Mara:** It’s a pipeline that...
 
-Andy looks around at his team. "Coffee?"
+Irwin's mobile beeps. He reads a text and mutters under his breath.
 
+**Irwin:** I'm really sorry but this is urgent. I have to go. Why don't you all figure out this CD business and get back to me--soon.
 
+Andy looks around at his team. 
 
+**Andy:** Coffee?
 
-
-
-
-
-
+Andy and crew head to the coffeshop to hammer out a plan.

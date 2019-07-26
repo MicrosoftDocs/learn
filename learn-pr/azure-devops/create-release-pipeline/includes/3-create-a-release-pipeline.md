@@ -32,11 +32,11 @@ Those could be the stages and the tasks for each stage. The question is, where s
 
 ## What are some deployment options
 
-**Andy:** At a really high level, do you want to deploy on premises or to Azure? 
+**Andy:** At a really high level, do you want to deploy on premises or to Azure?
 
 **Mara:** I vote for the cloud. It'll be super fast and easy to set up a POC.
 
-**Andy:** I agree. Here are a few cloud options to consider. 
+**Andy:** I agree. Here are a few cloud options to consider.
 
 He makes a list:
 
@@ -54,9 +54,7 @@ He makes a list:
 
 **Andy:** Great. Did we forget anything?
 
-**Mara:** We got some visibility into the build pipeline by adding a dashboard that shows build history. I don't want to lose that insight. Let's add a dashboard that keeps track of our release history.
-
-**NOTE-is this what the dashboard will do?**
+**Mara:** We got some visibility into the build pipeline by adding a dashboard that shows build history. I don't want to lose that insight. Let's add a dashboard that keeps track of our release health and history.
 
 **Andy:** You got it.
 
@@ -67,4 +65,4 @@ Andy and Mara are ready to start. They're going to:
 * Use the existing build platform as the basis of the CD pipeline
 * Have a build stage that creates the artifact
 * Have a deploy stage that installs the artifact to Azure App Service
-* Have a dashboard that shows the release history
+* Have a dashboard that shows the release health and history
