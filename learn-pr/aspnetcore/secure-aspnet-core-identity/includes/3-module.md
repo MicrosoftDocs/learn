@@ -282,28 +282,52 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 1. Run the following command to view the table schema:
 
     ```bash
-    db -Q "SELECT COLUMN_NAME, IS_NULLABLE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME='AspNetUsers'" -Y 20
+    db -Q "SELECT COLUMN_NAME, IS_NULLABLE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH AS MAX_LENGTH FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME='AspNetUsers'" -Y 20
     ```
 
     The following output displays:
 
-    [!code[](../code/3-table-schema-output.txt?highlight=18-19)]
+    ```console
+    COLUMN_NAME          IS_NULLABLE DATA_TYPE            MAX_LENGTH
+    -------------------- ----------- -------------------- -----------
+    Id                   NO          nvarchar                     450
+    UserName             YES         nvarchar                     256
+    NormalizedUserName   YES         nvarchar                     256
+    Email                YES         nvarchar                     256
+    NormalizedEmail      YES         nvarchar                     256
+    EmailConfirmed       NO          bit                         NULL
+    PasswordHash         YES         nvarchar                      -1
+    SecurityStamp        YES         nvarchar                      -1
+    ConcurrencyStamp     YES         nvarchar                      -1
+    PhoneNumber          YES         nvarchar                      -1
+    PhoneNumberConfirmed NO          bit                         NULL
+    TwoFactorEnabled     NO          bit                         NULL
+    LockoutEnd           YES         datetimeoffset              NULL
+    LockoutEnabled       NO          bit                         NULL
+    AccessFailedCount    NO          int                         NULL
+    FirstName            NO          nvarchar                     100
+    LastName             NO          nvarchar                     100
+    ```
+
+    The presence of the `FirstName` and `LastName` properties of the `ContosoPetsUser` class correspond to the `FirstName` and `LastName` columns in the preceding output. A data type of `nvarchar(100)` was assigned because of the `[MaxLength(100)]` attribute. The non-null constraint was added because of the `[Required]` attribute.
 
 1. Run the following command to view the keys in the `AspNetUsers` table:
 
     ```bash
-    db -Q "exec sp_pkeys 'AspNetUsers'" -Y 20
+    db -Q "exec sp_pkeys 'AspNetUsers'" -Y 15
     ```
 
     The following output displays:
 
-    ```text
-    TABLE_QUALIFIER      TABLE_OWNER          TABLE_NAME           COLUMN_NAME          KEY_SEQ PK_NAME
-    -------------------- -------------------- -------------------- -------------------- ------- --------------------
-    ContosoPets          dbo                  AspNetUsers          Id                         1 PK_AspNetUsers
-    
+    ```console
+    TABLE_QUALIFIER TABLE_OWNER     TABLE_NAME      COLUMN_NAME     KEY_SEQ PK_NAME
+    --------------- --------------- --------------- --------------- ------- ---------------
+    ContosoPets     dbo             AspNetUsers     Id                    1 PK_AspNetUsers
+
     (1 rows affected)
     ```
+
+## Customize the user registration form
 
 1. In *Register.cshtml*, add the following markup to the line after `<div asp-validation-summary="All" class="text-danger"></div>`:
 
@@ -325,58 +349,76 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 1. In *Register.cshtml.cs*, add the following code to support the name text boxes.
     1. Add the following properties to the `InputModel` class:
 
-    ```csharp
-    [Required]
-    [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 1)]
-    [Display(Name = "First Name")]
-    public string FirstName { get; set; }
+        ```csharp
+        [Required]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 1)]
+        [Display(Name = "First Name")]
+        public string FirstName { get; set; }
 
-    [Required]
-    [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 1)]
-    [Display(Name = "Last Name")]
-    public string LastName { get; set; }
-    ```
+        [Required]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 1)]
+        [Display(Name = "Last Name")]
+        public string LastName { get; set; }
+        ```
 
     1. Modify the `OnPostAsync` method such that the `user` variable is assigned to the following:
 
-    ```csharp
-    var user = new ContosoPetsUser
-    {
-        FirstName = Input.FirstName,
-        LastName = Input.LastName,
-        UserName = Input.Email,
-        Email = Input.Email,
-    };
-    ```
+        ```csharp
+        var user = new ContosoPetsUser
+        {
+            FirstName = Input.FirstName,
+            LastName = Input.LastName,
+            UserName = Input.Email,
+            Email = Input.Email,
+        };
+        ```
+
+## Customize the site header
 
 1. Update *Pages/Shared/_LoginPartial.cshtml* to display the first and last name collected during user registration. The highlighted lines in the following snippet are needed:
 
     [!code-cshtml[](../code/3-loginpartial.cshtml?highlight=9-10,13)]
 
+## Customize the profile management form
+
 1. In *Identity/Pages/Account/Manage/Index.cshtml.cs*, make the following changes to support the name text boxes.
     1. Add the following two properties to the `InputModel` class:
 
-    ```csharp
-    [Required]
-    [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 1)]
-    [Display(Name = "First Name")]
-    public string FirstName { get; set; }
+        ```csharp
+        [Required]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 1)]
+        [Display(Name = "First Name")]
+        public string FirstName { get; set; }
 
-    [Required]
-    [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 1)]
-    [Display(Name = "Last Name")]
-    public string LastName { get; set; }
-    ```
+        [Required]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 1)]
+        [Display(Name = "Last Name")]
+        public string LastName { get; set; }
+        ```
 
     1. Incorporate the highlighted changes in the `OnGetAsync` method:
 
-    [!code-csharp[](../code/3-account-manage-index-ongetasync.cshtml.cs?highlight=19-20)]
+        [!code-csharp[](../code/3-account-manage-index-ongetasync.cshtml.cs?highlight=19-20)]
 
     1. Incorporate the highlighted changes in the `OnPostAsync` method:
 
-    [!code-csharp[](../code/3-account-manage-index-onpostasync.cshtml.cs?highlight=14-16)]
+        [!code-csharp[](../code/3-account-manage-index-onpostasync.cshtml.cs?highlight=14-16)]
 
-<!-- TODO: az webapp up, add a new user -->
+## Build, deploy, and test
+
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
+
+1. Deploy the site by running the following command:
+
+    ```bash
+    az webapp up
+    ```
+
+    The preceding command deploys the app to Azure App Service. The *.azure/config* file contains the configuration values used by `az webapp up`.
+
+1. In your browser, navigate to the app. Select **Logout**.
+
+1. Select **Register** and use the newly modified form to register a new user.
 
 1. Run the following command to confirm that the first and last name are stored in the database:
 
@@ -386,7 +428,7 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
     A variation of the following output displays:
 
-    ```text
+    ```console
     UserName                  Email                     FirstName                 LastName
     ------------------------- ------------------------- ------------------------- -------------------------
     kai.klein@contoso.com     kai.klein@contoso.com
@@ -394,3 +436,23 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
     ```
 
     The user registered prior to adding `FirstName` and `LastName` to the schema doesn't have data in those columns.
+
+1. Run the following command to view the primary key for the `AspNetUsers` table:
+
+    ```bash
+    db -i $setupWorkingDirectory/list-aspnetusers-pk.sql -Y 15
+    ```
+
+    The following output shows that the `Id` column is the unique identifier for a user account:
+
+    ```console
+    Table           Column          Primary key
+    --------------- --------------- ---------------
+    AspNetUsers     Id              PK_AspNetUsers
+    ```
+
+## Login as first user, update FName, LName
+
+## MFA - Turn up QR code
+
+## Admin creation
