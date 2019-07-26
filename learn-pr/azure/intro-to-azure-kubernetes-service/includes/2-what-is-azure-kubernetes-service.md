@@ -69,7 +69,7 @@ However, this view might be slightly misleading as there are a few aspects to ke
 With all the benefits you receive with Kubernetes, keep in mind that you're responsible for maintaining your Kubernetes cluster. For example, you need to manage OS upgrades and the Kubernetes installation and upgrades. You also manage the hardware configuration of the host machines, such as networking, memory, and storage.
 
 > [!NOTE]
-> Kubernetes is sometimes abbreviated to **K8s**. The 8 represents the 8 characters between the K and the s of the word K[*ubernetes*]s.
+> Kubernetes is sometimes abbreviated to **K8s**. The 8 represents the 8 characters between the K and the s of the word K[*ubernete*]s.
 
 ## What is Azure Kubernetes Service?
 
