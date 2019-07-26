@@ -20,6 +20,12 @@ You'll see that 3D rendering is a classic use case for HPC in the cloud. A singl
 
 The underlying infrastructure will be improved as technology upgrades become available. Azure Batch also lets you use some of the most important 3D rendering packages like Maya, 3D Studio Max, and Chaos V-Ray. You pay any licensing fees by the hour. Because rendering is particularly taxing on the CPU, deploying H-Series VMs into Azure Batch pools provides an efficient solution.
 
+This diagram shows a typical Azure Batch architecture that you can use to support 3D rendering:
+
+<!--TODO: This diagram is taken from https://docs.microsoft.com/azure/architecture/example-scenario/infrastructure/video-rendering. Create a Learn version. -->
+
+![Azure Batch 3D rendering architecture](../media/5-architecture-video-rendering.png)
+
 ### DNA analysis
 
 Genomics, the study of an individual organism's complete set of DNA, is also well-suited to cloud-based HPC techniques. Genome research typically involves vast amounts of data. The configuration of DNA is tracked across a sufficiently large number of individuals to identify significant variation. On average, there are around 25,000 genes in the human body, each consisting of instructions of between 500 and 2.3 million letters. HPC in the cloud allows enormous amounts of data to be stored and worked with efficiently, without major capital expenditure on technology that will soon be improved.
@@ -27,6 +33,12 @@ Genomics, the study of an individual organism's complete set of DNA, is also wel
 ### Computer-aided design
 
 Computer-aided design (CAD), which has some similarities to both finite element analysis and 3D Batch rendering, is another good use case for HPC in the cloud. CAD accelerates product design and testing, and allows complex visualizations and simulations to be done on the resulting artifacts.
+
+This diagram shows a possible architecture that you could use to publish a CAD Software-as-a-Service product, based on N- and H-series VMs in Azure. 
+
+<!-- TODO: This diagram is taken from https://docs.microsoft.com/azure/architecture/example-scenario/apps/hpc-saas. Create a Learn version and simplify. -->
+
+![Architecture for SaaS CAD](../media/5-architecture-hpc-saas.png)
 
 ### Computational fuild dynamics
 

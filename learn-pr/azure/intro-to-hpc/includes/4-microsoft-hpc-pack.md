@@ -8,6 +8,8 @@ Here, you will learn how the HPC Pack can manage HPC infrastructure.
 
 In researching options for the engineering organization, you've looked at Azure Batch and Azure HPC Instances. But what if you want to have full control of the management and scheduling of your clusters of VMs? What if you have significant investment in on-premises infrastructure in your data center? HPC Pack offers a series of installers for Windows that allows you to configure your own control and management plane, and highly flexible deployments of on-premises and cloud nodes. By contrast with the exclusively cloud-based Azure Batch, HPC Pack has the flexibility to deploy to on-premises and the cloud. It uses a hybrid of both to burst to the cloud when your on-premises reserves are insufficient.
 
+![HPC Pack Hybrid](../media/4-hpc-pack-hybrid.png)
+
 From the knowledge you've acquired in this module, try thinking about Microsoft HPC Pack as a version of the Azure Batch management and scheduling control layer over which you have full control, and for which you have responsibility. Deployment of HPC Pack isn't a trivial affair – it requires Windows Server 2012 or later.
 
 ## Planning for HPC Pack

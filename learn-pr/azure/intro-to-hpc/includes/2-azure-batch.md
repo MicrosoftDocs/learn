@@ -1,8 +1,22 @@
-As the solution architect for the engineering organization, you need to understand the options available for batch processing and High-Performance Computing (HCP) on Azure. This knowledge will help to determine how you can efficiently render the 3D models of the facilities which the company designs – and how you store all of the related statistical data that's produced.
+As the solution architect for the engineering organization, you need to understand the options available for batch processing and High-Performance Computing (HPC) on Azure. This knowledge will help to determine how you can efficiently render the 3D models of the facilities which the company designs – and how you store all of the related statistical data that's produced.
 
 Because of the sheer array of HPC and batch processing choices available on Azure, you talk with an Azure expert who advises you to focus on three options: Azure Batch, Azure VM HPC Instances, and Microsoft HPC Pack. You'll look at each in the following units. It's important to note that these choices aren't classically exclusive. They build upon one other and can be thought of as different tools in a toolbox.
 
 Here, you'll learn about Azure Batch.
+
+## What is HPC?
+
+Their are many different industries that require very powerful computing resources for specialized tasks. For example:
+
+- In genetic sciences, gene sequencing.
+- In oil and gas exploration, reservoir simulations.
+- In finance, market modelling.
+- In engineering, physical system modelling.
+- In meteorology, weather modelling.
+
+These tasks require processors that can carry out instructions extremely fast. It's also helpful to run many processor in parallel to obtain answers within a practical time duration. On-premises HPC systems are built with many powerful CPUs and, for graphics-intensive tasks, GPUs. They aslo require fast disks and high-speed memory.
+
+Azure enables you to perform HPC tasks in the cloud, without building your own expensive HPC hardware. An Azure HPC system also has the advantage that you can dynamically add resources as they are needed, and remove them when demand falls. Azure makes it easy to co-ordinate an HPC task across many virtual machines (VMs) and supports very powerful VM sizes.
 
 ## Azure Batch
 
@@ -12,9 +26,13 @@ Azure Batch is ideally suited to heavy workloads such as financial risk modeling
 
 ## Components of Azure Batch
 
-Azure Batch has several components that act together. An *Azure Batch Account* forms a container for all of the main Batch elements. Within the Batch account, you typically create Batch *pools* of VMs running either Windows or Linux. You set up *Batch jobs* that work like logical containers with configurable settings for the real unit of work in Batch known as *Batch tasks*. This unit of work is highly flexible and can run either command-line instructions or entire applications. Optionally, you might associate an Azure Storage account with the Azure Batch account. You'll then upload and download data inputs and outputs. You'll also provide application installers for the Batch tasks that need them.
+Azure Batch has several components that act together. An *Azure Batch Account* forms a container for all of the main Batch elements. Within the Batch account, you typically create Batch *pools* of VMs, which are often called nodes, running either Windows or Linux. You set up *Batch jobs* that work like logical containers with configurable settings for the real unit of work in Batch known as *Batch tasks*. This unit of work is highly flexible and can run either command-line instructions or entire applications. Optionally, you might associate an Azure Storage account with the Azure Batch account. You'll then upload and download data inputs and outputs. You'll also provide application installers for the Batch tasks that need them.
 
-<!--todo: Diagram illustrating the main components of Azure Batch as described above, clearly showing the VMs acting within the context of a Batch account -->
+This diagram shows a client application or hosted service interacting with Azure Batch to upload input, create jobs, monitor tasks, and download output:
+
+<!--TODO: This diagram is taken from https://docs.microsoft.com/azure/batch/batch-technical-overview. Create a Learn version. Remove numbered circles. -->
+
+![Components of Azure Batch](../media/2-components-of-azure-batch.png)
 
 ## Azure Batch in action
 

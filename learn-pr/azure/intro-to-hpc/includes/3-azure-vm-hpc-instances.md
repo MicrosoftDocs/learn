@@ -25,3 +25,25 @@ The *HC-series* of VMs are optimized for applications driven by dense computatio
 ## Remote Direct Memory Access
 
 A subset of the H-series – the H16r and H16mr SKUs – and both the HB and HC-series VMs also use a second low-latency, high-throughput network interface called Remote Direct Memory Access (RDMA). The RDMA can give a significant boost to the performance of Message Passing Interface (MPI) applications.
+
+MPI is a protocol for communication between computers as they run complex HPC tasks in parallel. To use it, your developers must use an implementation of the protocol, which is usually a library of routines in a .dll. 
+
+Ask your developers if they are using MPI. If the answer is yes, you should ensure that the VM tier and size you select supports the protocol. Otherwise, your nodes will not communicate at the highest possible speed.
+
+## Infiniband interconnects
+
+Infiniband is a data interconnect hardware standard for HPC that is often used to accelerate communications between components both within a single server and between servers. It has been designed to support the highest speeds and the lowest latency for messages between CPUs and between processors and storage components.
+
+Both HC-series and HB-series VMs use a 100GB/sec Mellanox EDR Infiniband interconnect in non-blocking tree configuration to boost hardware performance.
+
+## N-series VMs
+
+Some HPC tasks are both compute-intensive and graphics-intensive. Suppose, for example, you are modelling behavior of a wing in a wind tunnel, and you want to show a live visualization to help engineers understand that behavior. For these applications, consider using N-service VMs, which include single or multiple NVIDIA GPUs. 
+
+### NC-series VMs
+
+The *NC-series* of VMs use the NVIDIA Tesla K80 GPU card and Intel Xeon E5-2690 v3 processors. This the lowest-cost of the N-series tiers, but VMs in this tier are capable of graphics-intensive applications. They also support NVIDIA's CUDA platform, so that you can use the GPUs to run compute instructions.
+
+### ND-series VMs
+
+The *ND-series* of VMs is optimized for AI and Deep Learning workloads. They use the NVIDIA Tesla P40 GPU card and Intel Xeon E5-2690 v4 processors. They are particularly fast at running single-precision floating point operations, which are used by AI frameworks including Microsoft Cognitive Toolkit, TensorFlow, and Caffe.
