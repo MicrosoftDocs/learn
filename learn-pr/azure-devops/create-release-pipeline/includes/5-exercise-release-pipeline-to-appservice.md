@@ -11,30 +11,31 @@ Here you create a release pipeline using multistage pipelines. To do this you:
 
 <!-- [!include[](../../../includes/azure-sandbox-activate.md)] -->
 
-## Create the AppService
+## Create the App Service
 
 TODO: Since we are not using the sandbox anymore, have them create a resource group.
 
-1. Navigate to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. On the left side, find **App Services** and click on it to open the App Services page.
 1. In the App Services page click the **+ Add** to add a new Azure App Service.
 1. On the Web App page
     1. Make sure your subscription says **Concierge Subscription**
-    1. Select your existing resource group  <rgn>[Resource Group Name]</rgn>.
+    1. Select your existing resource group <rgn>[Resource Group Name]</rgn>.
     1. Give your Web App a unique name. For example *TailspinSpaceGame1234*.
     1. For **Publish** choose **Code**.
     1. For **Runtime stack** choose **.NET Core 2.1**.
-    1. For **Operating system** choose **Linux**. 
+    1. For **Operating system** choose **Linux**.
     1. Choose your closest region.
-    1. For **Sku and size** click the link and navigate to the **Dev / Test** tab. Choose the **D1** option. 
+    1. For **Sku and size** click the link and navigate to the **Dev / Test** tab. Choose the **D1** option.
     1. Click **Review and Create** and then **Create**.
     1. Your resource is being created. After it's created, note the name and URL of your Web App for later.
+1. TODO: Have the learner browser to the URL and see the default page. Show a screenshot here as well.
 
-TODO - Link to the MSLearn module on creating an AppService
+TODO - In the summary, link to the Learn learning path on working with App Service
 
-## Create the multistage pipeline to build and deploy to the App Service
+## Build the application and deploy it to App Service
 
-Here we'll add the deploy stage to the pipeline to deploy our build artifact to the App Service we set up in the Azure portal.
+Here you add the deploy stage to the pipeline to deploy your build artifact to App Service you set up previously through the Azure portal.
 
 ### Create a service connection to the App Service
 
@@ -50,6 +51,8 @@ Our pipeline will need to access our app service. In order to do this without ha
 1. Click **OK**.
 
 ### Add stage and deployment tasks to the pipeline
+
+TODO: Remember to add a pipeline variable and reference it in `WebAppName` in the build config.
 
 Here we'll add the stage, job, and tasks we need to deploy the build artifact to our app service.
 

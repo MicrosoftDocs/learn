@@ -17,6 +17,7 @@ abstract: |
   - Create a release pipeline to deploy to an Azure AppService
   - Create a release dashboard to monitor the success of the deployments
 prerequisites: |
+  - An Azure subscription
   - An Azure DevOps account
   - Visual Studio Code
   - .NET Core 2.1
@@ -42,7 +43,8 @@ units:
 - learn.azdo.create-release-pipeline.5-exercise-release-pipeline-to-appservice
 - learn.azdo.create-release-pipeline.6-different-target-environments
 - learn.azdo.create-release-pipeline.7-exercise-release-pipeline-to-vm
-- learn.azdo.create-release-pipeline.8-clean-up-environment
-- learn.azdo.create-release-pipeline.9-summary
+- learn.azdo.create-release-pipeline.8-plan-upcoming-sprint
+- learn.azdo.create-release-pipeline.9-clean-up-environment
+- learn.azdo.create-release-pipeline.10-summary
 badge:
   uid: learn.azdo.create-release-pipeline.badge

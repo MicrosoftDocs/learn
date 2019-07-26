@@ -1,22 +1,19 @@
 You're all done with the tasks for this module. Here, you move the work item to the **Done** state on Azure Boards and clean up your Azure DevOps environment.
 
 > [!IMPORTANT]
-> This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps if you ran the template earlier in this module. 
+> This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps if you ran the template earlier in this module.
 
-## Move the work item to Done
+## Clean up Azure resources
 
-Here, you'll move the work item you assigned to yourself earlier in this module, **Deploy to a test environment**, to the **Done** column.
+(Add lead-in text to the introduction that mentions you'll do this)
 
-In practice, the definition of "Done" often means working software in the hands of your users. For learning purposes, here you'll mark this work as complete because you have a working build system on Azure Pipelines.
+(Rough copy taken from another module:)
 
-At the end of each Sprint, or work iteration, you and your team might hold a retrospective meeting, where you share the work you completed, what went well in the Sprint, and what could be improved.
-
-To complete the work item:
-
-1. From Azure DevOps, navigate to **Boards** and then select **Boards** from the menu.
-1. Move the **Deploy to a test environment** work item from the **Doing** to the **Done** column.
-
-    ![Azure Boards showing the card in the Done column](../media/8-azure-boards-wi1-done.png)
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
+1. Go to the Resource Group that contains your App Service plan.
+1. Select **Delete resource group**.
+1. Type the name of the resource group in the confirmation text box.
+1. Select **Delete**.
 
 ## Disable the pipeline or delete your project
 

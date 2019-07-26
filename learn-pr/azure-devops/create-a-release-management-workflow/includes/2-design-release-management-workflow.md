@@ -110,7 +110,7 @@ Andy says, "I see your point. We need to do some more research on this and we're
 * Supports approval and gates
 * Is easy to extend
 
-"There are a lot of options out there. A few I know about are Jenkins, Circle CI, GitLabs Piplines, and Azure DevOps Pipeline.
+"There are a lot of options out there. A few I know about are Jenkins, Circle CI, GitLab, and Azure Pipelines.
 
 "Jenkins is open source and on-prem unless we use a third party. It's got a lot of plug-ins and many companies use it. I don't know if we can use it for approvals and quality gates. Circle CI can be cloud-based or on prem. I think we would need to customize it. GitLab Pipelines is a part of GitLab, which is a single application for the entire software development lifecycle. It might be bigger than we want right now. My vote is Azure DevOps Pipeline."
 
