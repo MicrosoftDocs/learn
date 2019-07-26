@@ -77,7 +77,7 @@ In this exercise, you'll create a database server and a single database by using
     cat studyplans.csv
     ```
 
-    This file contains the data that specifies which modules a student must pass to complete a course successfully. The **Sequence** column specifies the order in which the student should take each module. For example, for course 1 (Computer Science) the student must take module CS101 before taking module MA101. Part of the data is shown here.
+    This file contains the data that specifies which modules a student must pass to complete a course successfully. The **Sequence** column shows the order in which the student should take each module. For example, for course 1 (Computer Science) the student must take module CS101 before module MA101. Part of the data is shown here.
 
     ```text
     Course ID,Module Code,Sequence
@@ -101,7 +101,7 @@ In this exercise, you'll create a database server and a single database by using
 
 ## Create a database server and database by using SQL Database
 
-Let's create the database and server to store the data for the application.
+Let's create the database and server to store the data for the app.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the account that you used to activate Sandbox.
 
@@ -139,7 +139,7 @@ Let's create the database and server to store the data for the application.
 
 ## Create the tables
 
-You can now create the tables that will store the data from the .csv files.
+You can now create the tables to store the data from the .csv files.
 
 1. In pane on the left side of the Azure portal, select **SQL databases**.
 
@@ -206,7 +206,7 @@ You can now create the tables that will store the data from the .csv files.
     cd ~/educationdata
     ```
 
-1. Create variables that you will use in the later steps. Replace `NNN` with the number that you used for your database and server.
+1. Create the variables that you will use in the later steps. Replace `NNN` with the number that you used for your database and server.
 
     ```bash
     export DATABASE_NAME=coursedatabaseNNN
@@ -236,15 +236,15 @@ You can now create the tables that will store the data from the .csv files.
     2       SQLCHAR             0       50      "\n"   2     CourseName                                   SQL_Latin1_General_CP1_CI_AS
     ```
 
-1. Review the file. The data in the first column of the comma-separated file will go into the **CourseID column** in the *Courses* table. The second field will go into the **CourseName** column. The second column is character-based and has a collation that's associated with it. Additionally, the fields separator in the file is expected to be a comma. And the row terminator (after the second field) should be a newline character. In a real-world scenario, your data might not be organized this neatly. You might have different field separators and fields in a different order from the columns. In that situation, you can edit the format file to change these items on a field-by-field basis. Press Ctrl-q to close the editor.
+1. Review the file. The data in the first column of the comma-separated file will go into the **CourseID column** of the *Courses* table. The second field will go into the **CourseName** column. The second column is character-based and has a collation that's associated with it. The fields separator in the file is expected to be a comma. The row terminator (after the second field) should be a newline character. In a real-world scenario, your data might not be organized this neatly. You might have different field separators and fields in a different order from the columns. In that situation, you can edit the format file to change these items on a field-by-field basis. Press Ctrl+q to close the editor.
 
-1. Run the following command to import the data in the **courses.csv** file in the format that's specified in the amended **courses.fmt** file. The `-F 2` flag causes the `bcp` utility to start importing data from line 2 in the data file. The first line contains headers.
+1. Run the following command to import the data in the **courses.csv** file in the format that's specified by the amended **courses.fmt** file. The `-F 2` flag directs the `bcp` utility to start importing data from line 2 in the data file. The first line contains headers.
 
     ```bash
     bcp "$DATABASE_NAME.dbo.courses" in courses.csv -f courses.fmt -S "$DATABASE_SERVER.database.windows.net" -U $AZURE_USER -P $AZURE_PASSWORD -F 2
     ```
 
-    Verify that `bcp` utility imports nine rows and doesn't report any errors.
+    Verify that `bcp` utility imports 9 rows and doesn't report any errors.
 
 1. Run the following sequence of operations to import the data for the **dbo.Modules** table from the **modules.csv** file.
 
@@ -314,7 +314,7 @@ You can now create the tables that will store the data from the .csv files.
 
     This time you should see the modules in the **Results** window. There are 16 rows.
 
-1. Switch back to the Cloud Shell, and run the following command to connect to the database.
+1. Switch back to Cloud Shell, and run the following command to connect to the database.
 
     ```bash
     sqlcmd -S "$DATABASE_SERVER.database.windows.net" -d "$DATABASE_NAME" -U $AZURE_USER -P $AZURE_PASSWORD
@@ -331,4 +331,4 @@ You can now create the tables that will store the data from the .csv files.
 
 1. At the `1>` prompt, type **exit** to close the `sqlcmd` utility.
 
-You've created a single database by using SQL Database. Next, you used the query editor in the Azure portal to create tables. You then used the **bcp** utility to upload data from a series of comma-delimited data files. Finally, you ran queries against the tables in the database from the query editor in the Azure portal and from the `sqlcmd` utility in the Cloud Shell.
+You created a single database by using SQL Database. Next, you used the query editor in the Azure portal to create tables. You then used the **bcp** utility to upload data from a series of comma-delimited data files. Finally, you ran queries against the tables in the database from the query editor in the Azure portal and from the `sqlcmd` utility in Cloud Shell.

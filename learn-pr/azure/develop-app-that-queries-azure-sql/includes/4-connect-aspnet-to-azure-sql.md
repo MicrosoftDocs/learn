@@ -1,10 +1,10 @@
-There are various ways to connect to databases within the Azure SQL Database service from an application. For .NET applications, you can use the `System.Data.SqlClient` library.
+There are various ways to connect to databases within the Azure SQL Database service from an application. For .NET apps, you can use the `System.Data.SqlClient` library.
 
 The web app for the university must fetch and display the data that you uploaded to your SQL database. In this unit, you will learn how to connect to a database from a web app and use the `System.Data.SqlClient` library to process data.
 
 ## System.Data.SqlClient library overview
 
-The `System.Data.SqlClient` library is a collection of types and methods that you can use to connect to a SQL Server database that's running on-premises or in the cloud on SQL Database. The library provides a generalized interface for retrieving and maintaining data. You can use the `System.Data.SqlClient` library to run SQL commands, run transactional operations, and retrieve data. You can parameterize these operations to avoid problems that are associated with SQL-injection attacks. If an operation fails, the `System.Data.SqlClient` library provides error information through specialized exception and error classes. You handle these exceptions just like any other type of exception in a .NET application.
+The `System.Data.SqlClient` library is a collection of types and methods that you can use to connect to a SQL Server database that's running on-premises or in the cloud on SQL Database. The library provides a generalized interface for retrieving and maintaining data. You can use the `System.Data.SqlClient` library to run SQL commands and transactional operations and to retrieve data. You can parameterize these operations to avoid problems that are associated with SQL-injection attacks. If an operation fails, the `System.Data.SqlClient` library provides error information through specialized exception and error classes. You handle these exceptions just like any other type of exception in a .NET application.
 
 The `System.Data.SqlClient` library is available in the *System.Data.SqlClient* NuGet package.
 
@@ -53,9 +53,9 @@ using (SqlConnection con = new SqlConnection(connectionString))
 // Connection is now closed
 ```
 
-## Define a SQL command or query
+## Define an SQL command or query
 
-Create an `SqlCommand` object to specify an SQL command or query to run. The following example shows an SQL **DELETE** statement that removes rows for a given customer from a table that's named **Orders**. You can parameterize commands. This example uses a parameter that's named *CustID* for the **CustomerID** value. Additionally, the line that sets the `CommandType` property of the `SqlCommand` object to `Text` indicates that the command is an SQL statement. You can also run a stored procedure rather than an SQL statement. In that case, you set the `CommandType` to `StoredProcedure`.
+Create an `SqlCommand` object to specify an SQL command or query to run. The following example shows an SQL **DELETE** statement that removes rows for a given customer from an **Orders** table. You can parameterize commands. This example uses a parameter that's named *CustID* for the **CustomerID** value. The line that sets the `CommandType` property of the `SqlCommand` object to `Text` indicates that the command is an SQL statement. You can also run a stored procedure rather than an SQL statement. In that case, you set the `CommandType` to `StoredProcedure`.
 
 ```C#
 SqlCommand deleteOrdersForCustomer = new SqlCommand("DELETE FROM Orders WHERE CustomerID = @custID", con);
@@ -78,7 +78,7 @@ queryCmd.CommandType = CommandType.Text;
 
 ## Run a command
 
-If your `SqlCommand` object references an SQL statement that doesn't return a result set, you run the command by using the `ExecuteNonQuery` method. If the command succeeds, it returns the number of rows that are affected by the operation. The next example shows how to run the **deleteOrdersForCustomer** command shown earlier.
+If your `SqlCommand` object references an SQL statement that doesn't return a result set, run the command by using the `ExecuteNonQuery` method. If the command succeeds, it returns the number of rows that are affected by the operation. The next example shows how to run the **deleteOrdersForCustomer** command that was shown earlier.
 
 ```C#
 int numDeleted = deleteOrdersForCustomer.ExecuteNonQuery();
@@ -88,7 +88,7 @@ If you expect the command to take a while to run, you can use the `ExecteNonQuer
 
 ## Execute a query and fetch data
 
-If your `SqlCommand` contains an SQL SELECT statement, you run it by using the `ExecuteReader` method. This method returns an `SqlDataReader` object that you can use to iterate through the results and process each row in turn. You retrieve the data from an `SqlReader` object by using the `Read` method. This method returns *true* if a row is found and *false* if there are no more rows left to read. After a row is read, the data for that row is available in the fields in the `SqlReader` object. Each field shares the same name as the corresponding column in the original SELECT statement. However, the data in each field is retrieved as an untyped `object`, so you must convert it to the appropriate type before you can use it. The following code shows how to run the **queryCmd** command that we illustrated earlier to fetch the data one row at a time.
+If your `SqlCommand` contains an SQL SELECT statement, you run it by using the `ExecuteReader` method. This method returns an `SqlDataReader` object that you can use to iterate through the results and process each row in turn. You retrieve the data from an `SqlReader` object by using the `Read` method. This method returns *true* if a row is found and *false* if there are no more rows left to read. After a row is read, the data for that row is available in the fields in the `SqlReader` object. Each field has the same name as the corresponding column in the original SELECT statement. However, the data in each field is retrieved as an untyped `object`, so you must convert it to the appropriate type before you can use it. The following code shows how to run the **queryCmd** command that we illustrated earlier to fetch the data one row at a time.
 
 ```C#
 SqlDataReader rdr = queryCmd.ExecuteReader();

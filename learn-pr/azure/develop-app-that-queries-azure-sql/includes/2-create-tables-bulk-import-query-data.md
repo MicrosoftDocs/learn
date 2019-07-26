@@ -1,4 +1,4 @@
-The university needs a location to store data that's currently in text files. They want to make the data relational to improve the ability to query and access it. They've selected a single database in Azure SQL Database as the storage service for this data. Let's take a look at SQL Database and see how to upload and query data.
+The university needs a location to store data that's currently in text files. They want to make the data relational to improve the ability to access it. They've selected a single database in Azure SQL Database as the storage service for this data. Let's take a look at SQL Database and see how to upload and query data.
 
 ## Create a single database by using the Azure portal
 
@@ -6,23 +6,23 @@ SQL Database is a relational database service that's based on the latest stable 
 
 You can create a single database through the Azure portal or by using Azure PowerShell or CLI.
 - To use the Azure portal, select **SQL databases** under **Favorites**, or select **+Create a resource**, **Databases**, and then **SQL Database**.
-- To use the CLI, run the **az sql server create** and **az sql db create** commands.
+- To use CLI, run the **az sql server create** and **az sql db create** commands.
 - To use PowerShell, run the **New-AzSqlServer** and **New-AzSqlDatabase** commands.
 
-![Screenshots of the Azure portal show the ways to create a new Azure SQL database.](../media/2-create-database.png)
+![Screenshots of the Azure portal show ways to create a new Azure SQL database.](../media/2-create-database.png)
 
 When you create a single database, you're prompted to specify the server to manage it. You can create a new server or use an existing server.
 
-When you create a new server, you're prompted to specify a server admin user name and password. You'll use these credentials to connect to the server to perform administrative tasks and to access the databases that the server controls. SQL Database also supports Azure Active Directory (Azure AD) authentication. But you must always create an admin account when you create a new server and then grant access to accounts that are stored in Azure AD.
+When you create a new server, you're prompted to specify a server admin user name and password. You'll use these credentials to connect to the server to do administrative tasks and to access the databases that the server controls. SQL Database also supports Azure Active Directory (Azure AD) authentication. But you must always create an admin account when you create a new server and then grant access to accounts that are stored in Azure AD.
 
 Each database server is protected by a firewall to block potentially malicious processes. You can open the firewall to other Azure services. And you can selectively enable access to other computers based on their IP address or address range. SQL Database also provides advanced data security that enables you to:
 - Specify the sensitivity of data in individual columns in tables.
 - Assess the vulnerability of your databases and take necessary remediation steps.
 - Send alerts when a threat is detected.
 
-You can provision resources by using the virtual core (vCore) model, which specifies the resources (memory, I/O, and CPU) to allocate. This functionality lets you scale the compute and storage resources independently. Alternatively, you can assign resources in terms of database transaction units (DTUs). A DTU is a measure of the calibrated cost of the resources that are needed to perform a benchmarked transaction.
+You provision resources by using the virtual core (vCore) model, which specifies the resources (memory, I/O, and CPU) to allocate. You can scale the compute and storage resources independently. Or, you can assign resources in terms of database transaction units (DTUs). A DTU is a measure of the calibrated cost of the resources that you need to perform a benchmarked transaction.
 
-If you have multiple databases and the resource requirements of these databases fluctuate, you can use SQL elastic pool.This feature enables sharing a pool of resources among pooled databases as demand requires.
+If you have multiple databases and the resource needs of the databases fluctuate, you can use SQL elastic pool. This feature enables sharing a pool of resources among pooled databases as demand requires.
 
 When you create a database, you also specify how the data will be collated. A *collation* defines the rules that the database uses for sorting and comparing data. It also specifies the character set to use for text data. You can change the collation after you've created the database, but it's best not to change it after the database contains data.
 
@@ -57,7 +57,7 @@ To access the query editor in the Azure portal, go to the page for your database
 
 ![The SQL Database sign-in page in the Azure portal](../media/2-sign-in-annotated.png)
 
-You enter your SQL code in the query pane and then click **Run** to execute it. If the SQL statement is a query, any rows that are returned appear in the **Results** pane. The **Messages** pane displays information such as the number of rows returned or any errors that occurred:
+You enter your SQL code in the query pane and then click **Run** to execute it. If the SQL statement is a query, any rows that are returned appear in the **Results** pane. The **Messages** pane displays information like the number of rows returned or any errors that occurred:
 
 ![The query editor in the Azure portal with the various panes highlighted](../media/2-query-editor-annotated.png)
 
@@ -166,7 +166,7 @@ The important line is "5 rows copied". This reports the number of lines in the s
 
 ## Query data
 
-Verify that the import was successful by querying the data. You can use the query editor from the Azure portal. Or you can use the `sqlcmd` utility to connect to the database from the command line. In either case, you can run a `SELECT` statement such as this:
+Verify that the import was successful by querying the data. You can use the query editor from the Azure portal. Or you can use the `sqlcmd` utility to connect to the database from the command line. In either case, you run a `SELECT` statement such as this:
 
 ```SQL
 SELECT *

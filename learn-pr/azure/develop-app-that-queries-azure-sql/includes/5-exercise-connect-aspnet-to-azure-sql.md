@@ -11,7 +11,7 @@ You'll do the following things:
 - Edit the code that's behind the index page in the web app to create a data access controller object and fetch the data.
 - Edit the index page to display the data.
 
-## Deploy and run the pre-existing web application
+## Deploy and run the pre-existing web app
 
 1. Change your working directory to the **education** folder.
 
@@ -31,11 +31,11 @@ You'll do the following things:
 
 1. When the web application has been deployed, the output will show an *App_url* with the URL of the web site. Open this site in a new tab.
 
-    ![The education web app running. Currently, no data appears.](../media/5-web-app-no-data.png)
+    ![The education web app running. Currently, no data is displayed.](../media/5-web-app-no-data.png)
 
-    You want the web app to display a list of courses and the modules that make up each course. Currently, the app doesn't retrieve or display this data. So, you need to update the code to get the data from the database and display it to the user.
+    You want the web app to display a list of courses and the modules that make up each course. Currently, the app doesn't retrieve or display this data. So, you need to update the code to get the data from the database and display it.
 
-## Add code to the web application to retrieve data
+## Add code to the web app to retrieve data
 
 Now let's add to the application the code to retrieve course data from the database.
 
@@ -75,7 +75,7 @@ Now let's add to the application the code to retrieve course data from the datab
     public int Sequence { get; }
     ```
 
-    This code defines a set of read-only fields that will contain the data for each row that's displayed by the web application.
+    This code defines a set of read-only fields that will contain the data for each row that's displayed by the web app.
 
 1. Replace the comment `// TODO: Create a constructor that initializes the fields behind the properties` with the following constructor.
 
@@ -175,7 +175,7 @@ Now let's add to the application the code to retrieve course data from the datab
     using (SqlConnection con = new SqlConnection(connectionString))
     ```
 
-    This code creates a new `SqlConnection` object that uses your connection string to connect to the database by using.
+    This code creates a new `SqlConnection` object that uses your connection string to connect to the database.
 
 1. Replace the comment `// TODO: Specify the SQL query to run` with the following statements.
 
@@ -287,7 +287,7 @@ Now let's add to the application the code to retrieve course data from the datab
 
 ## Add code to the web app to display the data
 
-The application can now retrieve the data. Now, update the application to display the course data to the user.
+The application can now retrieve the course data. Now, update the app to display the data to the user.
 
 1. In Cloud Shell, move to the **education/Pages** folder.
 
@@ -490,7 +490,7 @@ With the application fully configured to retrieve and display the course data to
     cd ~/education
     ```
 
-2. Run the following commands to build and deploy the updated web application.
+2. Run the following commands to build and deploy the updated web app.
 
     ```bash
     az webapp up \
