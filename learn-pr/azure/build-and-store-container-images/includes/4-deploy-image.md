@@ -3,12 +3,6 @@ Container images can be pulled from Azure Container Registry using many containe
 <!-- Activate the sandbox -->
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
-First, create a variable in the Cloud Shell named `ACR_NAME` with the name of your container registry in lowercase (for example, instead of "MyContainer" make the value "mycontainer"). This variable is used throughout this unit.
-
-```azurecli
-ACR_NAME=<acrName>
-```
-
 ## About registry authentication
 
 Azure Container Registry does not support unauthenticated access; all operations on a registry require a login. Registries support two types of identities:
@@ -25,30 +19,20 @@ The admin account provides a quick option to try a new registry. You enable the 
 
 In this exercise, we will enable the registry admin account and use it to deploy your image to an Azure Container Instance from the command line.
 
-Run the following commands to enable the admin account on your registry and retrieve its username and password.
+1. Run the following command in the Cloud Shell to enable the admin account on your registry.
 
-```azurecli
-az acr update -n $ACR_NAME --admin-enabled true
-az acr credential show --name $ACR_NAME
-```
+    ```azurecli
+    az acr update -n $ACR_NAME --admin-enabled true
+    ```
 
-The output is similar to below. Take note of the `username` and the value for `password`.
+1. Now run the following command in the Cloud Shell to retrieve the username and password for the admin account you enabled in the preceding step.
 
-```output
-{  
-  "passwords": [
-    {
-      "name": "password",
-      "value": "aaaaa"
-    },
-    {
-      "name": "password2",
-      "value": "bbbbb"
-    }
-  ],
-  "username": "ccccc"
-}
-```
+    ```azurecli
+    az acr credential show --name $ACR_NAME
+    ```
+
+    Take note of the `username` and  `password` values that are returned from this command. You will need them in this exercise.
+
 
 ## Deploy a container with Azure CLI
 

@@ -56,6 +56,6 @@ quiz:
     choices:
     - content: "Yes"
       isCorrect: true
-      explanation: Azure SQL Database enforces encryption (SSL/TLS) at all times for all conections
+      explanation: Azure SQL Database enforces encryption (SSL/TLS) at all times for all connections
     - content: "No"
       isCorrect: false
