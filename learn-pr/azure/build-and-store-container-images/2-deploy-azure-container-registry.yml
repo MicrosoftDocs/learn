@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Deploy Azure Container Registry
+title: Exercise - Deploy Azure Container Registry
 durationInMinutes: 2
 interactive: bash
 azureSandbox: true
