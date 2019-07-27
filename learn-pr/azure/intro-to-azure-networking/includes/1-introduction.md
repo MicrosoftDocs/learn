@@ -1,4 +1,4 @@
-You just started working at startup that's fundamentally disrupting the vitamin industry with simple customization and affordable monthly subscriptions. While business is booming on the e-commerce site, your data center is starting to struggle to keep up with user demand. Your service fails when too many users login at the same time, and you're facing more scheduled and unscheduled maintenance windows than you'd like.
+You just started working at a startup that's fundamentally disrupting the vitamin industry with simple customization and affordable monthly subscriptions. While business is booming on the e-commerce site, your data center is starting to struggle to keep up with user demand. Your service fails when too many users login at the same time, and you're facing more scheduled and unscheduled maintenance windows than you'd like.
 
 ![An overloaded server in your data center](../media/1-heading.png)
 
