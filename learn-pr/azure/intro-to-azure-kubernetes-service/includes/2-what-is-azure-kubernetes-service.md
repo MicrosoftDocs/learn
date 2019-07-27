@@ -22,7 +22,7 @@ You realize that you have to scale out your solution to meet customer demand. On
 
 The above deployment is cumbersome, sometimes error prone and doesn't easily scale single services. For example, you might find you can't easily scale only the caching service used in the web application. Containers help solve these types of problems.
 
-The container concept gives us three mayor benefits:
+The container concept gives us three major benefits:
 
 1. **A container is immutable** - the unchanging nature of a container allows it to be deployed and run reliably with the same behavior from one compute environment to another. A container image tested in a QA environment is the same container image deployed to production.
 
