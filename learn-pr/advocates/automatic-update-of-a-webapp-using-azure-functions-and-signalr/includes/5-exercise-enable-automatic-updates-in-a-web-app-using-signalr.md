@@ -19,7 +19,7 @@ You'll need to add a SignalR account to your sandbox subscription.
 
     ```bash
     az resource update \
-      --resource-type Microsoft.SignalRService/SignalR
+      --resource-type Microsoft.SignalRService/SignalR \
       --name $SIGNALR_SERVICE_NAME \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --set properties.features[flag=ServiceMode].value=Serverless
