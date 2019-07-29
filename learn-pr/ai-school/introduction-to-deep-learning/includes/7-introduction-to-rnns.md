@@ -26,20 +26,6 @@ LSTMs are quite complex behind the scenes so we won’t worry about the in-depth
 
 With GRUs, what you need to know for now is that they hold some advantages over LSTM networks for sequence problems because they are simpler. Training time decreases with simplification, allowing better results in some circumstances because training is more effective overall.
 
-### Programming exercise
-
-> Let's try out RNNs in Azure Notebooks.  
->  
-> **Python users** click __[here](https://notebooks.azure.com/home/libraries/Python "here")__ to go to your library.  
-> Select the exercise `11. Recurrent Neural Networks - Python.ipynb`.  
-> Then click then click __'Run on Free Compute'__.  
->  
-> **R users** click __[here](https://notebooks.azure.com/home/libraries/R-Exercises "here")__ to go to your library.  
-> Select the exercise `11. Recurrent Neural Networks - R.ipynb`.  
-> Then click then click __'Run on Free Compute'__.  
->  
-> If you haven’t set up your library and Azure Notebooks account the links above won't work. For instructions to get started click [__here__](https://aischool.microsoft.com/en-us/machine-learning/learning-paths/ml-crash-course/introduction-to-ai/introduction-to-azure-notebooks).
-
 ## Summary
 
 In this section we covered:
@@ -47,3 +33,5 @@ In this section we covered:
 * __Recurrent neural network__ (RNN) - a class of neural network that excels at analyzing and predicting data in a sequence.
 * __LSTM__ - a variation of RNNs that is very good at connecting previous data to current data where there is a long gap.
 * __GRU__ - a variation of LSTM that is simpler - meaning a decrease in training time, which can be quite beneficial sometimes.
+
+Next up we'll build an RNN model in Azure Notebooks.
