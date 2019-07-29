@@ -31,8 +31,10 @@ units:
 - learn-wwl.advanced-classification-models.introduction
 - learn-wwl.advanced-classification-models.cost-function-and-gradient-descent
 - learn-wwl.advanced-classification-models.support-vector-machines
+- learn-wwl.advanced-classification-models.exercise-support-vector-machines
 - learn-wwl.advanced-classification-models.testing-a-model
 - learn-wwl.advanced-classification-models.advanced-svms
+- learn-wwl.advanced-classification-models.exercise-advanced-svms
 - learn-wwl.advanced-classification-models.summary
 badge: 
   uid: learn-wwl.advanced-classification-models.badge #add the uid for your achievement badge.

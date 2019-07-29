@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-advanced-svms.md)]
+  [!include[](includes/6-advanced-svms.md)]
 quiz:
   title: Check your knowledge
   questions:

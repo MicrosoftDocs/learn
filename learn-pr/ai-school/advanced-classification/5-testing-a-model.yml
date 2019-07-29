@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-testing-a-model.md)]
+  [!include[](includes/5-testing-a-model.md)]
 quiz:
   title: Check your knowledge
   questions:

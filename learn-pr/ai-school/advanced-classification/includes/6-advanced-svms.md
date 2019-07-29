@@ -43,18 +43,4 @@ Often you may have a category in your dataset you want to use as a feature – s
 
 A one-hot vector is a vector (list) where each position in the list represents a different category. The vector is filled with 0’s and with one 1. In the example above we are representing 4 animals, where a 1 in the first position represents a cat, and a 1 in the fourth position represents a rabbit. Now your category is useable by a machine learning model.
 
-## Programming exercise
-
-> Next up we'll do a programming exercise making more advanced SVM models.  
->  
-> We will walk through how easy it is to make an SVM model and change its kernel. We’re going to use SVM models to classify two types of protein based on their various characteristics.  
->  
-> **Python users** click __[here](https://notebooks.azure.com/home/libraries/Python "here")__ to go to your library.  
-> Select the exercise `07. Advanced SVMs - Python.ipynb` exercise.  
-> Then click then click __'Run on Free Compute'__.  
->  
-> **R users** click __[here](https://notebooks.azure.com/home/libraries/R-Exercises "here")__ to go to your library.  
-> Select the exercise `07. Advanced SVMs - R.ipynb`.  
-> Then click then click __'Run on Free Compute'__.  
->  
-> If you haven’t set up your library and Azure Notebooks account the links above won't work. For instructions to get started click [__here__](https://aischool.microsoft.com/en-us/machine-learning/learning-paths/ml-crash-course/introduction-to-ai/introduction-to-azure-notebooks).
+Next up we'll do a programming exercise making more advanced SVM models.  
