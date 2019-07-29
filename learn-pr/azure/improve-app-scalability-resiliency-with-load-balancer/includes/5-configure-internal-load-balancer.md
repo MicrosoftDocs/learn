@@ -20,13 +20,13 @@ This architecture is common and allows you to scale out. The presentation layer 
 
 ## Configure an internal load balancer
 
-In the current healthcare portal scenario, there is an application tier, which hosts business logic and is called by the presentation tier. The application tier is also deployed on two virtual machines and is a web application hosting web services. To allow the front-end web portal to survive losing a connection to an entire data center, you will set up an internal load balancer using availability zones.
+In the healthcare portal scenario, there is an application tier, which hosts business logic and is called by the presentation tier. The application tier is also deployed on two virtual machines and is a web application hosting web services. To allow the front-end web portal to continue to serve client requests if a application tier server fails, you will set up an internal load balancer to distribute traffic to the appliction tier servers.
 
 You can configure an internal load balancer in almost the same way as an external load balancer, but with these differences:
 
 - When you create the load balancer, for the **Type** value, select **Internal**. When you choose this setting, the front-end IP address of the load balancer is not exposed to the internet. 
 - Assign a private IP address for the front-end of the load balancer, not a public IP address.
-- Place the load balancer in the protected virtual network that contains the virtual machines you want to balance.
+- Place the load balancer in the protected virtual network that contains the virtual machines you want to handle the requests.
 
 The internal load balancer should only be visible to the front-end presentation tier. All the virtual machines hosting the business tier are in one virtual network so an internal load balancer can be used to distribute traffic to those virtual machines.
 
@@ -36,4 +36,4 @@ The internal load balancer should only be visible to the front-end presentation 
 
 ## Choose distribution mode
 
-In the healthcare portal, the application tier is stateless, so we don't need to use source IP affinity. Therefore, the default distribution mode of a five-tuple hash can be used. This mode offers the greatest scalability and resilience as the virtual machine that will handle the request is decided by the load balancer, purely on the basis of the healthiest and least worked virtual machine in the set.
+In the healthcare portal, the application tier is stateless, so we don't need to use source IP affinity. Therefore, the default distribution mode of a five-tuple hash can be used. This mode offers the greatest scalability and resilience, as the load balancer will route traffic to any healthy server.
