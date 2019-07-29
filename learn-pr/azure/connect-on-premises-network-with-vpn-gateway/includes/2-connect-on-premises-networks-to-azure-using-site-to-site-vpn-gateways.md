@@ -81,7 +81,7 @@ The following diagram shows this combination of resources and their relationship
 
 To connect your datacenter to a VPN gateway, you'll need these on-premises resources:
 
-- A VPN device that supports policy-based or route-based VPN gateways (see [here](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices) for information on device compatibility to Azure VPN gateways)
+- A VPN device that supports policy-based or route-based VPN gateways
 - A public-facing (internet-routable) IPv4 address
 
 ## High availability scenarios
