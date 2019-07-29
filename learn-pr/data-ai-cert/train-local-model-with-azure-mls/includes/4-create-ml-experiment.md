@@ -34,6 +34,7 @@ ws = Workspace.create(
 With a `Workspace` object, you can create an `Experiment` and a `run` with the Azure ML SDK:
 
 ```python
+from azureml.core import Experiment
 #Create an experiment
 experiment = Experiment(workspace = ws, name = "my-first-experiment")
 
@@ -56,7 +57,15 @@ run.complete()
 
 ## View the logged results
 
-When the run finishes, you can view the experiment run in the Azure portal. To print a URL that links to the results for the last run, use the following code:
+Once the job has finished, the code below will display some details about the job you just ran. 
+
+```python
+from azureml.widgets import RunDetails
+
+RunDetails(run).show()
+```
+
+You can view the experiment run in the Azure portal. To print a URL that links to the results for the last run, use the following code:
 
 ```python
 print(run.get_portal_url())

@@ -20,13 +20,17 @@ We'll start by creating a web app to monitor. Follow these steps:
 
 You need to set up a name, a resource group, a location, and some other properties for your web app. Follow these steps:
 
-1. In the **App name** box, enter a unique name for your app. For example, you could use **&lt;yourname&gt;svideoapp**. The name you choose must be unique within the .azurewebsites.net domain.
 1. In the **Subscription** list, select **Concierge subscription**.
 1. Under **Resource Group**, select **Use existing** and then select the sandbox resource group, <rgn>[Sandbox resource group]</rgn>.
-1. Leave the default values for the **OS**, **Publish**, **App Service plan/Location**, and **Application Insights** options.
+1. In the **App name** box, enter a unique name for your app. For example, you could use **\<yourname\>;svideoapp**. The name you choose must be unique within the .azurewebsites.net domain.
+1. Leave **Publish** at **Code**.
+1. Set the **Runtime stack** to **.NET Core 2.1**. This will move the **Operating System** to **Windows**. Leave it at Windows. Notice that when you did this selection, the **Monitoring** tab appeared. We will skip this tab for now.
     > [!NOTE]
     > In this module, you'll enable Application Insights as a separate step, after the web app is created. If you were to enable it here, the end result would be the same.
-1. At the bottom of the blade, select **Create**.
+1. Select your **Region**.
+1. Leave the default values for **App Service plan/Location**
+1. At the bottom of the blade, select **Review and create**.
+1. Review the configuration and select **Create**.
 1. When the web app is created, in the left pane, select **All resources**.
 1. In the list of resources, select the web app you just created.
 1. Scroll down on the **Overview** page. Notice that, even without Application Insights, some statistics appear, like the frequency of 500 errors and the rate of requests.
@@ -42,7 +46,7 @@ To enable Application Insights on an app, follow these steps:
 
     ![Web app navigation blade](../media/3-web-app-nav-blade.png)
 
-1. On the **Application Insights** page, select **Turn on site extension**.
+1. On the **Application Insights** page, make sure **Enable** is selected.
 1. Under **Create a new resource**, in the **New resource name** box, enter **videoappinsights**.
 1. In the **Location** list, select a location, and then select **Apply**. If the **Apply monitoring settings** box appears, select **Yes**.
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
@@ -54,8 +58,8 @@ To enable Application Insights on an app, follow these steps:
 Because you can inject the Application Insights JavaScript SDK into the video web app without involving developers, and because this will generate more data for performance analysis, you want to enable client-side monitoring. To do this, follow these steps:
 
 1. If the web app's blade isn't already visible, select **All resources** in the left pane, and then select the web app you created earlier.
-1. Under **Settings** on the left, select **Application Settings**.
-1. On the **Application Settings** page, scroll down to the **Application settings** section, select **Show values**, and then select **Add new setting**.
+1. Under **Settings** on the left, select **Configuration**. You will be on the **Application Settings** tab.
+1. On the **Application Settings** page select **+ New application setting**.
 
     ![Add new application setting](../media/3-enable-client-side-monitoring.png)
 

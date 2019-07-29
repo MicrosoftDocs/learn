@@ -30,6 +30,9 @@ products:
 - azure-cosmos-db
 - vs
 - vs-code
+- dotnet
+- aspnet-core
+- dotnet-core
 units:
 #TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
 - learn.cosmos-db-app-with-vscode.1-introduction

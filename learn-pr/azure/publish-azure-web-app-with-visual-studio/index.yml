@@ -31,6 +31,10 @@ roles:
 - developer
 products:
 - azure
+- dotnet
+- aspnet-core
+- dotnet-core
+- dotnet-standard
 units:
 #TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
 - learn.publish-azure-web-app-with-visual-studio.1-introduction
