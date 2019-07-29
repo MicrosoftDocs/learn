@@ -10,7 +10,7 @@ Andy also thinks that adding the unit tests now will give them a head start as t
 
 A number of unit test frameworks are available for C# applications. Mara chooses NUnit because it's popular with the community and she's used it before.
 
-Here's the unit test you'll work with, along with Mara and Andy.
+Here's the unit test you're working with, along with Mara and Andy.
 
 ```csharp
 [TestCase("Milky Way")]
@@ -69,7 +69,7 @@ You might read this line as:
 
 > _Assert that the game region of each returned score matches the provided game region._
 
-Here's the process you'll follow:
+Here's the process to follow:
 
 1. Fetch a branch from the Microsoft GitHub repository that contains the unit tests.
 1. Run the tests locally to verify that they pass.
