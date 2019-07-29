@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
   zone_pivot_groups: azure-interface
-title: Exercise - title
+title: Exercise - Configure a public load balancer
 durationInMinutes: 10
 interactive: bash
 azureSandbox: true
