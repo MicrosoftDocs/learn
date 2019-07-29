@@ -33,7 +33,7 @@ units:
 - learn-wwl.introduction-to-ai.data-for-ai
 - learn-wwl.introduction-to-ai.introduction-to-azure-notebooks
 - learn-wwl.introduction-to-ai.walkthrough-of-azure-notebooks
-- learn-wwl.introduction-to-ai.learn-ai-key-concepts
+- learn-wwl.introduction-to-ai.models-error-and-cost
 - learn-wwl.introduction-to-ai.summary
 badge: 
   uid: learn-wwl.introduction-to-ai.badge #add the uid for your achievement badge.
