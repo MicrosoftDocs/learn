@@ -12,20 +12,6 @@ Polynomial regression is actually a simple modification of multiple linear regre
 
 As polynomial regression and multiple linear regression are easy and quick to use, it is common to approach regression problems by using both algorithms to get an idea of how different algorithms may perform on your data set.
 
-### Programming exercise
-
-> Next up we'll go through a programming exercise on polynomial regression.
->    
-> **Python users** click __[here](https://notebooks.azure.com/home/libraries/Python "here")__ to go to your library.  
-> Select the exercise `04. Polynomial Regression - Python.ipynb` exercise.  
-> Then click then click __'Run on Free Compute'__.  
->  
-> **R users** click __[here](https://notebooks.azure.com/home/libraries/R-Exercises "here")__ to go to your library.  
-> Select the exercise `04. Polynomial Regression - R.ipynb`.  
-> Then click then click __'Run on Free Compute'__.  
->  
-> If you haven’t set up your library and Azure Notebooks account the links above won't work. For instructions to get started click [__here__](https://aischool.microsoft.com/en-us/machine-learning/learning-paths/ml-crash-course/introduction-to-ai/introduction-to-azure-notebooks).
-
 ## Summary
 
 All done! Here we covered:
@@ -33,4 +19,4 @@ All done! Here we covered:
 * __Non-linear data sets__ - many relationships can not be predicted by a straight line - we need a non-linear model.
 * __Polynomial regression__ - variation of linear regression that can model non-linear data sets.
 
-Next up we have a brief overview of how to select good features for your data set.
+Next up we will build a polynomial regression model in Azure Notebooks.

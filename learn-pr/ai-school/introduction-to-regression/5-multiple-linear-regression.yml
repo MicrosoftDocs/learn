@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 40
 content: |
-  [!include[](includes/4-multiple-linear-regression.md)]
+  [!include[](includes/5-multiple-linear-regression.md)]
 quiz:
   title: Check your knowledge
   questions:

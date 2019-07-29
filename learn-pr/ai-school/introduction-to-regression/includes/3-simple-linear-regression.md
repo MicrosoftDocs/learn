@@ -10,25 +10,11 @@ All data contains variability. This means that a straight-line prediction will a
 
 Error is a natural part of building a model. In AI, it’s a tool rather than something to avoid. *Simple linear regression finds a best line by calculating which straight line would give the least amount of error*.
 
-### Programming exercise
-
-> Let's try out simple linear regression in Azure Notebooks. We’re going to try to predict the customer’s satisfaction with certain chocolate bar recipes.    
->  
-> **Python users** click __[here](https://notebooks.azure.com/home/libraries/Python "here")__ to go to your library.  
-> Select the exercise `02. Linear Regression - Python.ipynb`.  
-> Then click then click __'Run on Free Compute'__.  
->  
-> **R users** click __[here](https://notebooks.azure.com/home/libraries/R-Exercises "here")__ to go to your library.  
-> Select the exercise `02. Linear Regression - R.ipynb`.  
-> Then click then click __'Run on Free Compute'__.  
->  
-> If you haven’t set up your library and Azure Notebooks account the links above won't work. For instructions to get started click [__here__](https://aischool.microsoft.com/en-us/machine-learning/learning-paths/ml-crash-course/introduction-to-ai/introduction-to-azure-notebooks).
-
 ## Summary
 
-Phew. That's your first AI model done! Here we covered:
+Here we covered:
 
 * __Simple linear regression__ - uses one feature to predict a value.
 * __Linear regression__ - fits the line that gives the least amount of error.
 
-Next up we're going to do more linear regression - using multiple features.
+Next up we're going to build a simple linear regression model in Azure Notebooks.
