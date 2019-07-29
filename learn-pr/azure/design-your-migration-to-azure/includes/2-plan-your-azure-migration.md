@@ -14,11 +14,11 @@ Let's take a look at what's involved at each phase.
 
 ### Discovery and evaluation
 
-Start will a full assessment of your current environment. Identify which servers, applications, and services are in the scope for migration. By identifying the services and systems that may be migrated, you can bring in the IT and business teams that work with these services. Bring these teams in early in the process, to ensure they can provide guidance, feedback, and support for the migration.
+Start will a full assessment of your current environment. Identify which servers, applications, and services are in the scope for migration. By identifying the services and systems that may be migrated, you can bring in the IT and business teams that work with these services. Bring these teams in as early as possible in the process, to ensure they can provide guidance, feedback, and support for the migration.
 
-Now you can produce a full inventory and dependency map to determine how in scope servers and services communicate. A modern business could have hundreds of applications spread across the estate. Each application needs to be fully investigated before any work takes place.
+Now you can produce a full inventory and dependency map to determine how servers and services that are in scope of migration communicate with each other. A modern business could have hundreds of applications spread across the estate. Each application needs to be fully investigated before any work takes place.
 
-For each application, there are various options for the migration process. These could be one of the following:
+For each application, there are multiple migration options. The migration options are:
 
 - **Rehost**: Recreate your existing infrastructure in Azure, choosing this approach will have the least impact as it needs minimal changes.
 - **Refactor**: Take the opportunity to take advantage of Azure as a PaaS, reducing the time to release software, and reduce the ongoing maintenance costs. Small enhancements to run more efficiently in the cloud can have large impacts on performance.
@@ -30,7 +30,7 @@ Review each application and which of these options is the best fit.
 
 ### Involve key stakeholders
 
-Applications are used by specific sections of the business and include application owners and superusers, who have a wealth of experience to call on. Involving these people in the planning stage will increase the chance of a successful migration These resources can offer guidance in areas where the knowledge of the person running the project may have gaps. Often each area of the business will appoint business owners to manage specific sections.
+Applications are used by specific sections of the business and include application owners and superusers, who have a wealth of experience to call on. Involving these people in the planning stage will increase the chance of a successful migration. These resources can offer guidance in areas where the knowledge of the person running the project may have gaps. Often each area of the business will appoint business owners to manage specific sections.
 
 ### Estimate cost savings
 
@@ -59,7 +59,7 @@ There are several tools and services available to help you plan and complete the
 
 ### Deploy target cloud infrastructure
 
-You will need to create the destination systems and services on Azure to migrate to. The scope for your migration has been defined as your company's current VMware machines and existing relational databases. In this scenario, you don't need to pre-create the resources in Azure. The two tools you'll use to do the migration **Azure Site Recovery** and the **Azure Database Migration Service** will create the required Azure resources for you.
+You will need to create the destination systems and services on Azure to migrate to. The scope for your migration has been defined as your company's current VMware machines and existing relational databases. In this scenario, you don't need to pre-create the resources in Azure. The two tools you'll use to do the migration, **Azure Site Recovery** and the **Azure Database Migration Service**, will create the required Azure resources for you.
 
 In other situations, you may need to set up resources in Azure to have them available as a migration destination.
 
@@ -107,6 +107,6 @@ Azure Cost Management shows you cost reduction advice from Azure Advisor. The ad
 
 You can set up alerts based on a range of data sources, from specific metric values like CPU usage, specific text in log files, health metrics, or an autoscale metric.
 
-It's also important to have security logging and visibility into security events across your enterprise. **Azure Sentinel** provides SEIM capabilities along with artificial intelligence to help you protect, detect, and respond to security events.
+It's also important to have event logging and visibility into security events across your enterprise. **Azure Sentinel** provides SEIM capabilities along with artificial intelligence to help you protect, detect, and respond to security events.
 
 The remainder of this module will focus on the **Assess** and **Migrate** stages. Additional resources to help you with the **Optimize** and **Monitor** stages can be found in the **Learn more** section at the end of this module.
