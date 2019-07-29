@@ -8,44 +8,4 @@ When you have a large neural network, it might seem that a lot of data will be t
 
 There are many activation functions that we can apply to a neural network. ReLu and tanh are two of the most popular activation functions used with neural networks today.
 
-### Optional: Activation functions explained
-
-Based on the output of the node, an activation function determines if the node should be turned “on”. It evaluates the value of the output, and if it is below a certain threshold it stops the output - turning the node “off”.  
-  
-Different activation functions have different thresholds for turning a node off. Many activation functions will limit the value of the output to a maximum of 1.  
-  
-Some modern algorithms, such as reptile, can automatically test different activation functions and give you the best result.
-
-### Optional: Bias
-
-Each layer in a neural network can optionally contain a bias. A bias is a node which does not take in any data, but is always “on”. This allows for more flexibility of neural networks.  
-  
-![TBC](../media/5.4_Bias_fixed__2_.png)
-  
-Bias is commonly represented by the number 1 (i.e. they are always “on”). The value of the bias is added onto the value that the node receives from all connections.  
-  
-![TBC](../media/5.4_BiasWeights_fixed_copy.png)
-  
-In the picture above, the bias the the node receives is 1 * w1. Bias nodes always output 1, so the blue node will always receive the weight of the edge that connects itself with the bias.
-  
-![TBC](../media/5.4_BiasNetwork_fixed_4x.png)
-  
-As data comes into a node, it is changed by the weight of the edge and the bias.  
-  
-This result is evaluated by the activation function as it is leaving the node, when the result is due to be sent to the next layer. 
-
-### Bias summary
-
-Edges connect nodes from different layers together, and contain a weight. Weights are a value which is multiplied to the data coming into the node. The weights are initially random, and are optimized by gradient descent.  
-  
-Each layer in a neural network can optionally contain a bias - a single node which does not take input and is always “on”.
-
-## Summary
-
-That's activation functions! To recap:
-
-* __Activation functions__ regulate the output of nodes, and can stop the node outputting any data at all (turning the node “off”).
-* The type of activation functions are user decided, and AI practitioners experiment with different activation functions to see which one gives the best result.
-* __ReLu__ and __tanh__ are two of the most popular activation functions and are generally tried first.
-
 Next up we'll cover a different type of gradient descent - stochastic gradient descent (SGD), and see how neural networks use gradient descent with an animation.

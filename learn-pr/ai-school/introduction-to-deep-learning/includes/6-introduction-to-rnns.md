@@ -10,7 +10,7 @@ An RNN can analyze or predict a word based on the previous words in a sentence -
 
 RNNs contain cells - where additional state is stored. This additional state is useful because the RNN can remember important information used for predictions - such as past tense. If early on in a sentence a user has written “We '__were__' going to”, an RNN can remember that the word 'were' is in the past tense inside a unit, so it may output “We were going to __fly__ to Canada” instead of “We were going to __flew__ to Canada.”
 
-Standard RNNs struggle when there is a large gap between previous data that is relevant and current data. To solve this problem, AI practitioners commonly use two similar types of RNNs - __long short-term memory__ networks (__LSTM__), and __gated recurrent unit__ networks (__GRU__). 
+Standard RNNs struggle when there is a large gap between previous data that is relevant and current data. To solve this problem, AI practitioners commonly use two similar types of RNNs - __long short-term memory__ networks (__LSTM__), and __gated recurrent unit__ networks (__GRU__).
 
 ### LSTM
 
