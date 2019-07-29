@@ -1,4 +1,4 @@
-In this unit, you'll learn about the benefits of automated testing and the kinds of testing you can perform. You'll also learn what makes a good test and be introduced to the various testing tools that are available to you.
+In this unit, you learn about the benefits of automated testing and the kinds of testing you can perform. You also learn what makes a good test and be introduced to the various testing tools that are available to you.
 
 Let's begin by checking in with the Tailspin Toys web team.
 
@@ -104,7 +104,7 @@ As an example, let's say you have a function that performs an arithmetic operati
 
 Code coverage testing computes the percentage of your code that's covered by your unit tests. Code coverage testing can include conditional branches in your code to ensure that a function is completely covered.
 
-The greater your code coverage percentage, the more confident you can be that you won't later discover a bug in code that wasn't fully tested. You don't need to reach 100 percent code coverage. In fact, when you start you'll likely find that you have a low percentage. But that gives you a starting point from which you can add additional tests that cover problematic or frequently used code.
+The greater your code coverage percentage, the more confident you can be that you won't later discover a bug in code that wasn't fully tested. You don't need to reach 100 percent code coverage. In fact, when you start, you'll likely find that you have a low percentage. But that gives you a starting point from which you can add additional tests that cover problematic or frequently used code.
 
 ### Keep unit tests isolated
 
