@@ -6,7 +6,7 @@ Here, you will learn how the features of Load Balancer help you to create robust
 
 ## Distributing traffic with Azure Load Balancer
 
-Azure Load Balancer is a service you can use to spread demand across multiple virtual machines. Use Azure Load Balancer to scale applications and create high availability for your virtual machines and services. Load balancers use a hash-based distribution algorithm. By default, a Five-tuple hash is used to map traffic to available servers. The hash is made from the following elements:
+Azure Load Balancer is a service you can use to distribute traffic across multiple virtual machines. Use Azure Load Balancer to scale applications and create high availability for your virtual machines and services. Load balancers use a hash-based distribution algorithm. By default, a five-tuple hash is used to map traffic to available servers. The hash is made from the following elements:
 
 - **Source IP** – the IP address of the requesting client.
 - **Source port** – the port of the requesting client.
