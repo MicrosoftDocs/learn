@@ -168,6 +168,7 @@ You could use the widgets module from the **azureml** package to monitor your ru
 ```python
 # monitor the run
 from azureml.widgets import RunDetails
+
 RunDetails(run).show()
 ```
 

@@ -33,6 +33,11 @@ experiment = Experiment(workspace = ws, name = "my-third-experiment")
 The first step is to define the machine learning objective by using AutoMLConfig, as illustrated in the following code:
 
 ```python
+from azureml.core.experiment import Experiment
+from azureml.core.workspace import Workspace
+from azureml.train.automl import AutoMLConfig
+import logging
+
 automl_config = AutoMLConfig(task = 'regression',
                   iteration_timeout_minutes = 10,
                   iterations = 10,
