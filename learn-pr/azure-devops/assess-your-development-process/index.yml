@@ -18,6 +18,7 @@ abstract: |
   - Understand how the VSM gives you a good starting place to discuss your current DevOps practices
 prerequisites: None
 iconUrl: /learn/achievements/azure-devops/assess-your-software-development-process.svg
+ratingEnabled: true
 levels:
 - intermediate
 roles:

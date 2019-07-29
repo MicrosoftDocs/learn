@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.provision-azure-sql-db.4-connect-add-data
-title: Connect to your database and add sample data
+title: Exercise - Connect to your database and add sample data
 metadata:
-  title: Connect to your database and add sample data
+  title: Exercise - Connect to your database and add sample data
   description: Connect to your database and add sample data
   ms.date: 09/24/2018
   #TODO: Update with real author name.

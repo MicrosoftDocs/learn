@@ -11,40 +11,40 @@ You now have a .NET core app that can connect to the Azure Batch service, and ha
 
 Using the Batch client API you'll use the following methods to create, delete, and monitor the components of your app:
 
----
+___
 - **batchClient.PoolOperations.CreatePool**: you added this to the app in the previous exercise
 - **batchClient.PoolOperations.DeletePoolAsync**
----
+___
 - **batchClient.JobOperations.CreateJob**
 - **batchClient.JobOperations.AddTaskAsync**
 - **batchClient.JobOperations.DeleteJobAsync**
----
+___
 - **batchClient.Utilities.CreateTaskStateMonitor**
----
+___
 
 ## File Management
 
 You'll use the storage account you created earlier to create containers to store the input and output files in blob storage. From the Azure Storage Blob client library, you'll use the following classes and methods:
 
----
+___
 - **CloudStorageAccount**: use this object to gain access to the created Storage account
 - **CloudStorageAccount.Parse(storageConnectionString)**: connects to the Storage account
 - **storageAccount.CreateCloudBlobClient**: create a CloudBlobClient
----
+___
 - **CloudBlobClient**: use this object to create a container
 - **blobClient.GetContainerReference(containerName)**: enables the creation of containers
----
+___
 - **CloudBlobContainer**: use this object to create blob storage
 - **container.GetBlockBlobReference(blobName)**: creates a CloudBlockBlob
 - **container.CreateIfNotExistsAsync**: creates the container if it doesn't exist
 - **container.DeleteIfExistsAsync**: deletes the container if it exists
----
+___
 - **CloudBlockBlob**: use this object to add or remove files to blob storage
 - **blobData.UploadFromFileAsync(filePath)**: upload the specified local file to Azure Storage
 - **blobData.GetSharedAccessSignature(sasConstraints)**: get a shared access signature URI to be used to access the uploaded video
----
+___
 - **ResourceFile.FromUrl(blobSasUri, blobName)**: provides a filepath to the video in Azure Storage
----
+___
 
 A number of steps need to be taken to enable an app to transfer files to Azure Storage. The console app will also need to enable the Batch tasks to write their output to blob storage.
 

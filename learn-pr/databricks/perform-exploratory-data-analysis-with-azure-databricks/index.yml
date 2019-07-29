@@ -23,8 +23,8 @@ levels:
 - beginner
 roles:
 - developer
-- solution-architect
-- business-analyst
+- data-scientist
+- data-engineer
 products:
 - azure
 - azure-databricks

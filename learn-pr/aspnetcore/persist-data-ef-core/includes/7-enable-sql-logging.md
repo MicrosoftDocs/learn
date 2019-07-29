@@ -1,4 +1,4 @@
-EF Core integrates automatically with the logging mechanisms of ASP.NET Core. Since ASP.NET Core apps emit logs as console output by default, the text file *ContosoPets.Api.log* contains the EF Core log output. EF Core masks parameter values in the generated SQL appearing in the logs.
+EF Core integrates automatically with the logging mechanisms of ASP.NET Core. Since ASP.NET Core apps emit logs as console output by default, the text file *:::no-loc text="ContosoPets.Api.log":::* contains the EF Core log output. EF Core masks parameter values in the generated SQL appearing in the logs.
 
 ```console
 info: Microsoft.EntityFrameworkCore.Database.Command[20101]
@@ -14,17 +14,17 @@ A developer on the team has enlisted a database administrator (DBA) to assist wi
 
 To ease production troubleshooting, the Operations Manager wants SQL queries to be tagged with the calling method's name. The tags should be visible in the Application Insights telemetry.
 
-1. Modify the `Logging` section of *ContosoPets.Api/appsettings.Development.json* to include a property named `EnableSqlParameterLogging`. The property should have a value of `true`. Save your changes.
+1. Modify the `Logging` section of *:::no-loc text="ContosoPets.Api/appsettings.Development.json":::* to include a property named `EnableSqlParameterLogging`. The property should have a value of `true`. Save your changes.
 
     [!code-json[](../code/7-appsettings.Development.json?range=2-9&highlight=2)]
 
-1. In the `ConfigureServices` method of *Startup.cs*, chain the `EnableSensitiveDataLogging` call after the `UseSqlServer` call. Save your changes.
+1. In the `ConfigureServices` method of *:::no-loc text="Startup.cs":::*, chain the `EnableSensitiveDataLogging` call after the `UseSqlServer` call. Save your changes.
 
     [!code-csharp[](../code/7-enable-sensitive-logging.cs?highlight=3)]
 
     The preceding code reads a `Logging:EnableSqlParameterLogging` property value from the environment-specific application settings file. The property value determines whether parameter logging is enabled.
 
-1. Modify the `GetOrderById` method of *Services/OrderService.cs* in the *ContosoPets.DataAccess* project to include the highlighted line. Save your changes.
+1. Modify the `GetOrderById` method of *:::no-loc text="Services/OrderService.cs":::* in the *:::no-loc text="ContosoPets.DataAccess":::* project to include the highlighted line. Save your changes.
 
     ::: zone pivot="linq"
 
@@ -40,7 +40,7 @@ To ease production troubleshooting, the Operations Manager wants SQL queries to 
 
     The preceding code added a `TagWith` call to emit a comment above the generated SQL in the logs. The resulting double-hyphen SQL comment (`--`) will contain the name of the method from which the generated SQL originated. This technique is supported only for read queries. It becomes useful when sifting through large log files containing several distinct queries.
 
-1. Modify the `GetById` method of *Services/OrderService.cs* to include the highlighted line. Save your changes.
+1. Modify the `GetById` method of *:::no-loc text="Services/OrderService.cs":::* to include the highlighted line. Save your changes.
 
     ::: zone pivot="linq"
 

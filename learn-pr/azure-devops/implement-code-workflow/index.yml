@@ -24,6 +24,7 @@ prerequisites: |
   - Git
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/implement-a-code-workflow-in-your-build-pipeline.svg
+ratingEnabled: true
 levels:
 - intermediate
 roles:

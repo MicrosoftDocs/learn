@@ -16,10 +16,10 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/2-run-aci.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.ContainerInstance/containerGroups"
-  hint: "Make sure to create the container groups."
+#tasks:
+#- action: exists
+#  environment: azure
+#  azure:
+#    resource:
+#      type: "Microsoft.ContainerInstance/containerGroups"
+#  hint: "Make sure to create the container groups."

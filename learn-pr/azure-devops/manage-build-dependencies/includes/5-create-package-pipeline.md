@@ -42,18 +42,18 @@ To clone the **mslearn-tailspin-spacegame-web-models** projects to your computer
     git clone --branch master --single-branch https://github.com/your-name/mslearn-tailspin-spacegame-web-models.git
     ```
 
-1. Move to the **mslearn-tailspin-spacegame-web-modules** directory. This is the root directory of your repository.
+1. Move to the **mslearn-tailspin-spacegame-web-models** directory. This is the root directory of your repository.
 
     ```bash
-    cd mslearn-tailspin-spacegame-web-modules
+    cd mslearn-tailspin-spacegame-web-models
     ```
 
 ### Open the project and examine the configuration
 
-In Visual Studio Code, your terminal window points to the root directory of the **mslearn-tailspin-spacegame-web-modules** project. Here you'll open the project from the file explorer so that you can view its structure and work with files.
+In Visual Studio Code, your terminal window points to the root directory of the **mslearn-tailspin-spacegame-web-models** project. Here you'll open the project from the file explorer so that you can view its structure and work with files.
 
 1. From the **File** menu, select **Open** or **Open Folder**.
-1. Navigate to the root directory of the **mslearn-tailspin-spacegame-web-modules** project.
+1. Navigate to the root directory of the **mslearn-tailspin-spacegame-web-models** project.
 
     You see the directory and file tree in the file explorer.
 

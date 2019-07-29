@@ -96,7 +96,7 @@ By default, VPN gateways are deployed as two instances in an *active/standby* co
 
 ### Active/active
 
-With the introduction of suppoort for the BGP routing protocol, you can also deploy VPN gateways in an *active/active* configuration. In this configuration, you assign a unique public IP address to each instance. You then create separate tunnels from the on-premises device to each IP address. You can extend the high availability by deploying an additional VPN device on-premises. BGP (Border Gateway Protocol) is required so that in the case of the failure of one of the VPN gateway instances, the on-premises device can quickly switch to the remaining tunnel.
+With the introduction of support for the BGP routing protocol, you can also deploy VPN gateways in an *active/active* configuration. In this configuration, you assign a unique public IP address to each instance. You then create separate tunnels from the on-premises device to each IP address. You can extend the high availability by deploying an additional VPN device on-premises.
 
 ![Active/active virtual network Gateway](../media/2-dual-redundancy.svg)
 

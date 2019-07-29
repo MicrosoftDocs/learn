@@ -25,7 +25,7 @@ Here you'll add a property to one of the model classes, named `Score`, that prov
 
 Here you'll work from the copy of Visual Studio Code for the **Tailspin.SpaceGame.Web.Models** project.
 
-1. From Visual Studio Code, open **Tailspin.SpaceGame.Web.Models/ModelsScore.cs** and add the following highlighted property to the list of properties already there.
+1. From Visual Studio Code, open **Tailspin.SpaceGame.Web.Models/Models/Score.cs** and add the following highlighted property to the list of properties already there.
 
     [!code-csharp[](code/7-score-property.cs?highlight=23-25)]
 

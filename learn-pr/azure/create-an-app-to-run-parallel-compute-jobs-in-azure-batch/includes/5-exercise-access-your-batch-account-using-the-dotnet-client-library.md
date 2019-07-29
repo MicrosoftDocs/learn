@@ -37,7 +37,7 @@ You'll complete the remaining exercises in this module in the Cloud Shell.
     dotnet add package Microsoft.Azure.Batch
     ```
 
-1. Run the following command in the Cloud Shell to save your resource group to an environment variable so we can use it in subsequent commands. Repalce `[YOUR RESOURCE GROUP]` with the name of the resource group you selected when creating the Batch account. 
+1. Run the following command in the Cloud Shell to save your resource group to an environment variable so we can use it in subsequent commands. Replace `[YOUR RESOURCE GROUP]` with the name of the resource group you selected when creating the Batch account. 
 
     ```bash
     export RESOURCE_GROUP=[YOUR RESOURCE GROUP]
