@@ -2,7 +2,7 @@ In this section, you'll make sure that your Azure DevOps organization is set up 
 
 The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey.
 
-This learning path also builds on the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path. There, you set up your Azure DevOps organization and create a task backlog on Azure Boards by using the basic process.
+This learning path also builds on the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path. There, you set up your Azure DevOps organization and create a task backlog on Azure Boards by using the Basic process.
 
 ## Run the template
 
@@ -26,7 +26,7 @@ From the Azure DevOps Demo Generator site, take these steps to run the template.
     > You need to select this option for the template to connect to your GitHub repository. Select this option even if you've already forked the _Space Game_ web site project. The template uses your existing fork.
 1. Select **Create Project**.
 
-    ![Create a project through the Azure DevOps Demo Generator](../media/3-create-new-project.png)
+    ![Creating a project through the Azure DevOps Demo Generator](../media/3-create-new-project.png)
 
     It takes a few moments for the template to run.
 1. Select **Navigate to project** to go to your project in Azure DevOps.
@@ -58,7 +58,7 @@ To set up the work item:
 
 1. From the **Check open source code for vulnerabilities and licensing terms** work item, select the down arrow at the bottom of the card. Then assign the work item to yourself.
 
-    ![Assign the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
+    ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
 1. Move the work item from the **To Do** to the **Doing** column.
 
     ![Azure Boards showing the card in the Doing column](../media/3-azure-boards-wi5-doing.png)

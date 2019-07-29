@@ -18,7 +18,7 @@ Let's check in with the team at their weekly meeting and see how things are prog
 
 **Amita**: I wasn't aware that this project used much open-source software.
 
-**Andy**: That's correct. But some components might include other components that we haven't checked for security vulnerabilities, or haven't checked how they're licensed. We'd better make sure of where we stand before we move forward.
+**Andy**: It's indeed surprising how much open-source we use. We use frameworks such as Bootstrap and jQuery to make it easier to work with JavaScript and CSS. In fact, some components include other components that we haven't checked for security vulnerabilities, or haven't checked how they're licensed. We'd better make sure of where we stand before we move forward.
 
 **Amita**: Licenses can be hard to read and interpret. Do we need a lawyer to help?
 

@@ -10,7 +10,7 @@ In this module, you'll perform a similar process. Here you'll use WhiteSource Bo
 
 In this module, you will:
 
-* Describe what tools you can use to inspect open-source software packages for security and license ratings
+* Learn which tools you can use to inspect open-source software packages for security and license ratings
 * Access package and license ratings for open-source components by using WhiteSource Bolt
 * Analyze the results of the scan so you can take the appropriate action
 
@@ -36,4 +36,4 @@ You met the _Space Game_ web team at Tailspin Toys in previous modules. As a ref
 
 :::row-end:::
 
-Mara has prior experience with Azure DevOps and is helping the team use it to adopt a more streamlined process.
+Mara has prior experience with DevOps and is helping the team adopt a more automated process by using Azure DevOps.
