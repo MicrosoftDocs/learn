@@ -221,7 +221,7 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
     ```bash
     dotnet aspnet-codegenerator identity \
         --dbContext ContosoPetsAuth \
-        --files "Account.Manage.Index;Account.Register" \
+        --files "Account.Manage.EnableAuthenticator;Account.Manage.Index;Account.Register" \
         --userClass ContosoPetsUser \
         --force
     ```
@@ -231,13 +231,15 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
     * *Data/ContosoPetsUser.cs*
     * *Pages/Account/Manage/_ManageNav.cshtml*
     * *Pages/Account/Manage/_ViewImports_.cshtml*
+    * *Pages/Account/Manage/EnableAuthenticator.cshtml*
+    * *Pages/Account/Manage/EnableAuthenticator.cshtml.cs*
     * *Pages/Account/Manage/Index.cshtml*
     * *Pages/Account/Manage/Index.cshtml.cs*
     * *Pages/Account/Manage/ManageNavPages.cs*
     * *Pages/Account/Register.cshtml*
     * *Pages/Account/Register.cshtml.cs*
 
-    Additionally, the *Data/ContosoPetsAuth.cs* file, which existed prior to running the preceding command, was overwritten. *ContosoPetsAuth.cs* now references the newly created `ContosoPetsUser` class.
+    Additionally, the *Data/ContosoPetsAuth.cs* file, which existed prior to running the preceding command, was overwritten. *ContosoPetsAuth.cs* now references the newly created `ContosoPetsUser` class. The *EnableAuthenticator* Razor Page was scaffolded, though it won't be modified until later in the module.
 
 1. Make the following changes to *Pages/Shared/_LoginPartial.cshtml*:
 
@@ -453,6 +455,41 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
 ## Login as first user, update FName, LName
 
-## MFA - Turn up QR code
+<!-- TODO -->
+
+## Multi-factor authentication &mdash; Generate QR code
+
+1. Add the following page handler to *Pages/Account/Manage/EnableAuthenticator.cshtml.cs*:
+
+    ```csharp
+    public IActionResult OnGetToken([FromServices] QRCodeService qrCodeService)
+    {
+        if(string.IsNullOrEmpty(AuthenticatorUri))
+        {
+            return Forbid();
+        }
+
+        return File(
+            qrCodeService.GetQRCodeAsPng(AuthenticatorUri), "image/png");
+    }
+    ```
+
+1. In *Pages/Account/Manage/EnableAuthenticator.cshtml*, replace the following HTML:
+
+    ```html
+    <div id="qrCode"></div>
+    ```
+
+    With the following HTML:
+
+    ```html
+    <div id="qrCode">
+        <img src="?handler=token" alt="QR code" />
+    </div>
+    ```
+
+    In the preceding code, the `img` element's `src` attribute invokes the `OnGetToken` page handler.
 
 ## Admin creation
+
+<!-- TODO -->
