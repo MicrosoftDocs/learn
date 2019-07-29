@@ -7,13 +7,11 @@ A public load balancer maps the public IP address and port number of incoming tr
 By default, Azure Load Balancer distributes network traffic equally among virtual machine instances. The following distribution modes are also possible if a different behavior is required:
 
 - **Five-tuple hash.** The default distribution mode for Azure Load Balancer is a five-tuple hash. The tuple is composed of the source IP, source port, destination IP, destination port, and protocol type. Because the source port is included in the hash, and the source port changes for each session, clients may be directed to a different virtual machine for each session.
-- **Source IP affinity.** This distribution mode is also known as session affinity or client IP affinity. To map traffic to the available servers, the mode uses a 2-tuple hash (from the source IP address and destination IP address) or 3-tuple hash (from the source IP address, destination IP address, and protocol type). The hash ensures that requests from a given client are always sent to the same virtual machine behind the load balancer. 
-
-<!-- TODO: Create images similar to the two below, taken from: https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-distribution-mode -->
-
+  
 ![Hash-based distribution](../media/3-load-balancer-distribution.png)
 
-![Session Affinity](../media/3-load-balancer-session-affinity.png)
+- **Source IP affinity.** This distribution mode is also known as session affinity or client IP affinity. To map traffic to the available servers, the mode uses a 2-tuple hash (from the source IP address and destination IP address) or 3-tuple hash (from the source IP address, destination IP address, and protocol type). The hash ensures that requests from a given client are always sent to the same virtual machine behind the load balancer. 
+  ![Session Affinity](../media/3-load-balancer-session-affinity.png)
 
 ## Choose a distribution mode
 
