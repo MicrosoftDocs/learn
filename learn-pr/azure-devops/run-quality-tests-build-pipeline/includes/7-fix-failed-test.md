@@ -302,7 +302,7 @@ In this part, you fix the error by changing the code back to its original state 
 
     ![The dashboard showing a passing tests on the Test Results Trend widget](../media/7-dashboard-passing-test.png)
 
-    As a bonus, the added unit test increases the percentage of code covered from around 14% to 17%.
+    As a bonus, the added unit test increases the percentage of code covered from around 14 percent to 17 percent.
 
     ![The Code Coverage widget showing an increased amount of coverage](../media/7-dashboard-widget.png)
 
