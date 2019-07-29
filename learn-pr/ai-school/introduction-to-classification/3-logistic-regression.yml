@@ -3,7 +3,7 @@ uid: learn-wwl.introduction-to-classification.logistic-regression
 title: Logistic Regression 
 metadata:
   title: Logistic Regression
-  description: Here we use Azure Notebooks to introduce a simple but powerful classification algorithm - logistic regression. 
+  description: Here we introduce a simple but powerful classification algorithm - logistic regression. 
   ms.date: 06/30/2019
   author: markjulmar
   ms.author: rawortma
