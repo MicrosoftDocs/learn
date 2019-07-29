@@ -34,7 +34,6 @@ units:
 - learn-wwl.deep-learning.introduction-to-cnns
 - learn-wwl.deep-learning.tools-for-deep-learning
 - learn-wwl.deep-learning.introduction-to-rnns
-- learn-wwl.deep-learning.knowledge-check
 - learn-wwl.deep-learning.summary
 badge: 
   uid: learn-wwl.deep-learning.badge #add the uid for your achievement badge.

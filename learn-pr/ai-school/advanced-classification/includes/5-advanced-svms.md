@@ -36,7 +36,7 @@ There are several types of kernels you can use for the kernel trick, including l
 
 You just need to know the different kernels exist, and you should try several of them to try to improve your models accuracy. Luckily, it’s very easy to try different kernels, so let’s give it a go.
 
-### Optional: Using a category as a feature - one-hot vectors
+### Using a category as a feature - one-hot vectors
 Often you may have a category in your dataset you want to use as a feature – such as a products country of origin. To use a category as a feature you represent the category as a __one-hot vector__.
 
 ![TBC if we keep in optional content](../media/3.2_OneHotVector.png)
@@ -58,5 +58,3 @@ A one-hot vector is a vector (list) where each position in the list represents a
 > Then click then click __'Run on Free Compute'__.  
 >  
 > If you haven’t set up your library and Azure Notebooks account the links above won't work. For instructions to get started click [__here__](https://aischool.microsoft.com/en-us/machine-learning/learning-paths/ml-crash-course/introduction-to-ai/introduction-to-azure-notebooks).
-
-Now that you’ve been introduced to more advanced classification concepts and models, let’s wrap up everything you’ve learned with a knowledge check.

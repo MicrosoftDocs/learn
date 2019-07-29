@@ -12,4 +12,35 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-logistic-regression.md)] 
+  [!include[](includes/3-logistic-regression.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Simple logistic regression can choose between how many categories?"
+    choices:
+    - content: "2 categories"
+      isCorrect: true
+      explanation: "Correct. It is a binary classification algorithm."
+    - content: "3 categories"
+      isCorrect: false
+      explanation: "Incorrect. Simple logistic regression a binary classification algorithm - it does not predict several categories."
+    - content: "As many as the data provides"
+      isCorrect: false
+      explanation: "Incorrect. Simple logistic regression cannot predict several categories even if the data set provides them."
+    - content: "0"
+      isCorrect: false
+      explanation: "Incorrect. Simple logistic regression has to predict categories."
+  - content: "Logistic regression is based on a line that is what shape?"
+    choices:
+    - content: "Straight."
+      isCorrect: false
+      explanation: "Incorrect. While certain parts of the line are straight, the overall line is not linear."
+    - content: "Bell shaped."
+      isCorrect: false
+      explanation: "Incorrect. While certain parts of the line are curved, the curve does not produce a bell shaped line."
+    - content: "S-Shaped."
+      isCorrect: true
+      explanation: "Correct. The curve in the line is based on a s-shape"
+    - content: "Pointy."
+      isCorrect: false
+      explanation: "Incorrect. The line is not pointy."

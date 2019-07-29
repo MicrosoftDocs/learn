@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.neural-networks.summary
+uid: learn-wwl.introduction-to-classification.summary
 title: Summary
 metadata:
   title: Summary
@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 15
+durationInMinutes: 2 
 content: |
-  [!include[](includes/9-summary.md)] 
+  [!include[](includes/5-summary.md)] 

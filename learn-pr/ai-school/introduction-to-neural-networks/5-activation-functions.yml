@@ -12,4 +12,21 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-activation-functions.md)] 
+  [!include[](includes/5-activation-functions.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which is correct?"
+    choices:
+    - content: "Activation functions determine if data flows from one node to another."
+      isCorrect: true
+      explanation: "Correct. Activation functions can turn a node 'off', meaning that no data flows from that node to others."
+    - content: "It is obvious which activation function to use, before starting training."
+      isCorrect: false
+      explanation: "Incorrect. You must experiment with different activation functions to optimize your neural network models."
+    - content: "There are only two activation functions available: ReLu and tanh."
+      isCorrect: false
+      explanation: "Incorrect. While ReLu and tanh are two of the most popular activation functions, there are many different activation functions."
+    - content: "Sigmoid is always the first activation function you should try."
+      isCorrect: false
+      explanation: "Incorrect. There is no rule that you have to try a specific activation function first."

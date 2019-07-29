@@ -20,18 +20,4 @@ Feature scaling is reformatting your data set so all your features are within a 
   
 Some modern AI tools use feature scaling automatically for you.
 
-## Summary
-
-Well done! Here we covered:
-
-### Good features
-
-* Appear in the data set more than once.
-* Do not contain duplicates.
-* Do not contain missing values.
-* Do not contain bad data points (i.e. a height that is negative or 0).
-* Do not contain anomalies (unless you're trying to predict anomalies).  
-
-__Feature scaling__ - adjusting the values of your features so they are are within a similar range.
-
-Now that you’ve had an introduction to regression, let’s wrap up everything you’ve learned with a knowledge check.
+Next up we have a summary of the module.

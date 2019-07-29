@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.introduction-to-regression.selecting-features
+title: Selecting features for your data set
+metadata:
+  title: Selecting features for your data set
+  description: Here we will briefly cover how to select features for your data set, and how to use feature scaling - a great trick that will help almost any AI model.
+  ms.date: 06/30/2019
+  author: markjulmar
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 20 
+content: |
+  [!include[](includes/6-selecting-features.md)] 

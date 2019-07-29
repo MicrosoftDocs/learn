@@ -12,4 +12,35 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-introduction-to-classification.md)] 
+  [!include[](includes/2-introduction-to-classification.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following is a classification problem?"
+    choices:
+    - content: "Predicting whether a person will buy a product or not."
+      isCorrect: true
+      explanation: "Correct. Predicting whether someone is going to be 'a customer' or 'not a customer' is a classification problem."
+    - content: "Predicting the amount of wheat that a field will grow."
+      isCorrect: false
+      explanation: "Incorrect. The amount of wheat that a field will grow is a number, not a category."
+    - content: "Predicting how long a freezer will take to freeze a cup of water."
+      isCorrect: false
+      explanation: "Incorrect. The time taken would be a number, not a category."
+    - content: "Predicting the cost of gas for a car trip."
+      isCorrect: false
+      explanation: "Incorrect. The cost of gas would be a number."
+  - content: "To train, supervised categorization algorithms need:"
+    choices:
+    - content: "Examples of data that have labels, such a pictures of dogs with the type of dogs for each picture."
+      isCorrect: true
+      explanation: "Correct. Supervised categorization algorithms need categorization labels for the data they are given."
+    - content: "Human supervision to prevent the algorithms crashing or reporting errors."
+      isCorrect: false
+      explanation: "Incorrect. While humans must write the categorization algorithms, once they are stable and running they do not need human supervision."
+    - content: "A variety of labels presented as input, instead of data, such as lots of names of car without seeing the pictures of the car themselves."
+      isCorrect: false
+      explanation: "Incorrect. The data provided for training supervised algorithms must also contain a label."
+    - content: "Large numbers of cat and dog images."
+      isCorrect: false
+      explanation: "Incorrect. Supervised categorization algorithms do more than predict cat and dog images."

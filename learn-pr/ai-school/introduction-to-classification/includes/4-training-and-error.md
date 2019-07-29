@@ -16,7 +16,7 @@ It is important to understand that all data has variability, which means that a 
 
 Note the outlier data points (indicated by the red dashes around them.) These outliers are examples of data that the model cannot possibly predict accurately. This error is known as “irreducible error” or “Bayes error”.
 
-### Optional: Data quality
+## Data quality
 
 Much of the work in building an AI system is thinking about what data we need, how to get it, and - this is vitally important - evaluating the data quality. Checking for missing or incorrect values and removing or correcting data is called **data cleaning**.
 
@@ -32,4 +32,4 @@ That's the end of the unit and module! Here we learned:
 * __Irreducible error__ - data points that the model cannot possibly predict accurately.
 * __Bayes error__ - the lowest possible error rate, where an algorithm cannot become any more accurate.  
 
-Now that you’ve had an introduction to classification, let’s wrap up everything you’ve learned with a knowledge check.
+Now that you’ve had an introduction to classification, let’s wrap up everything you’ve learned with a quick summary of the module.

@@ -33,4 +33,4 @@ All done! Here we covered:
 * __Non-linear data sets__ - many relationships can not be predicted by a straight line - we need a non-linear model.
 * __Polynomial regression__ - variation of linear regression that can model non-linear data sets.
 
-That's the end of this module. There's some optional content next, or you can jump straight onto module 3 - advanced classification.
+Next up we have a brief overview of how to select good features for your data set.
