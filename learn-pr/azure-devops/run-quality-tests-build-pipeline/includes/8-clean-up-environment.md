@@ -7,7 +7,7 @@ You're all done with the tasks for this module. You can now move the work item t
 
 In this part, you move the work item that you assigned to yourself earlier in this module, **Create unit tests**, to the **Done** column.
 
-In practice, the definition of "Done" often means working software in the hands of your users. For learning purposes, here you'll mark this work as complete because you have working unit tests and code coverage tests set up in your build pipeline.
+In practice, the definition of "Done" often means that working software is in the hands of your users. In this unit, for learning purposes, you mark this work as complete because you have working unit tests and code coverage tests set up in your build pipeline.
 
 At the end of each sprint, or work iteration, you and your team might hold a retrospective meeting, where you share the work you completed, what went well in the sprint, and what could be improved.
 
@@ -48,7 +48,7 @@ To disable the pipeline:
 
 ### Option 2: Delete the Azure DevOps project
 
-This option deletes your Azure DevOps project, including what's on Azure Boards and your build pipeline. In future modules, you'll be able to run another template that brings up a new project in a state where this one leaves off. Choose this option if you don't need your Azure DevOps project for future reference.
+This option deletes your Azure DevOps project, including what's on Azure Boards and your build pipeline. In future modules, you'll be able to run another template that brings up a new project in a state where this one leaves off. Choose this option to delete your Azure DevOps project if you don't need it for future reference.
 
 To delete the project:
 
