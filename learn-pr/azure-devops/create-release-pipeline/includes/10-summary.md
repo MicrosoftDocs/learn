@@ -22,3 +22,4 @@ Links to modules that talk about the different deployment targets
   * Windows VM
   * Kubernetes (e.g. containers)
   * Functions (find relevant link or cut this)
+* [Service connection](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?azure-portal=true)

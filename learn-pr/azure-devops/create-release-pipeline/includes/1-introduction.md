@@ -1,8 +1,10 @@
-Talk about CD and release pipeline.
+Releasing and delivering software can be a long and tedious process. A build may have to move from a *development* environment to a *testing* environment and then to *staging* and finally to *production*. Each of these stages in the deployment process may have extensive set up procedures and gates and approval processes before the build is allowed to move to the next stage. 
+
+A good release and deployment strategy will have deployments happening quickly. Automation of a majority of the deployment processes allows new software feature to move through the stages at a faster pace, which allows for faster deployments, and thus faster feature releases. Azure Pipelines provides this automation.
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you:
 
 - Learn about continuous delivery
 - Create a release pipeline that deploys an app to an Azure AppService

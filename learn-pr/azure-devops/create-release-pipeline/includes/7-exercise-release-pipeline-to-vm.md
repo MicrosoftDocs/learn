@@ -1,14 +1,6 @@
 TODO: Change File Name
 
-Just like we did in the (Build LP), we will want a way to easily monitor our deployments. Here you add a release dashboard to Azure DevOps.
-
-Exercise - Add dashboard widgets to monitor the build and release pipeline
-
-Resources:
-
-[ILT Content Link](https://courses.microsoft.com/courses/course-v1:ELMS+AZ-400.3+2019_T1/course/?azure-portal=true)
-
-Course > Set Up a Release Management Workflow > Automate Inspection of Health > Lab
+Just like you did in the ([Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true) learning path, you will want a way to easily monitor your deployments. Here you add a release dashboard to Azure DevOps.
 
 ## Add dashboard widgets
 
