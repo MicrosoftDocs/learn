@@ -231,7 +231,7 @@ Mara and Andy decide to change the code back to its original state and then veri
 
 ## Fix the error
 
-In this part, you fix the error by changing the code back to its original state and running the tests to verify the fix.
+In this section, you fix the error by changing the code back to its original state and running the tests to verify the fix.
 
 1. In Visual Studio Code, open *Tailspin.SpaceGame.Web/LocalDocumentDBRepository.cs* from the file explorer.
 1. Modify the `GetItemsAsync` method as shown here:
