@@ -29,11 +29,11 @@ products:
 - sql-server
 units:
 - learn-sqlserver.sql-server-discovery-using-map.1-introduction
-- learn-sqlserver.sql-server-discovery-using-map.2-decide-if-map-is-right-for-your-task
+- learn-sqlserver.sql-server-discovery-using-map.2-decide-map-right-your-task
 - learn-sqlserver.sql-server-discovery-using-map.3-install-map
-- learn-sqlserver.sql-server-discovery-using-map.4-collect-and-assess-inventory-data
-- learn-sqlserver.sql-server-discovery-using-map.5-exercise-to-install-map
-- learn-sqlserver.sql-server-discovery-using-map.6-exercise-collect-and-assess-inventory-data
+- learn-sqlserver.sql-server-discovery-using-map.4-collect-assess-inventory-data
+- learn-sqlserver.sql-server-discovery-using-map.5-exercise-install-map
+- learn-sqlserver.sql-server-discovery-using-map.6-exercise-collect-assess-inventory-data
 - learn-sqlserver.sql-server-discovery-using-map.7-module-summary
 badge: 
   uid: learn-sqlserver.sql-server-discovery-using-map.badge
