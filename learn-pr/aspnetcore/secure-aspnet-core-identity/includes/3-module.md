@@ -474,6 +474,8 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
     }
     ```
 
+    In the preceding page handler, property injection provides a reference to the `QRCodeService` singleton service. `QRCodeService` is responsible for interactions with a third-party library which generates QR codes.
+
 1. In *Pages/Account/Manage/EnableAuthenticator.cshtml*, replace the following HTML:
 
     ```html
