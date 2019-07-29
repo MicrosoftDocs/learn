@@ -26,7 +26,7 @@ Policy-based VPN gateways specify statically the IP address of packets that shou
 
 ### Route-based VPNs
 
-If defining which IP addresses are behind each tunnel is too cumbersome, route-based gateways can be used. In this devices IPSec tunnels are modeled as a network interface or VTI (virtual tunnel interface), and a routing protocol will decide across which one of these tunnel interfaces to send each packet. Route-based VPNs are the preferred connection method for on-premises devices, since they are more resilient to topology changes such as the creation of new subnets, for example. Use a route-based VPN gateway if you need any of the following types of connectivity:
+If defining which IP addresses are behind each tunnel is too cumbersome, route-based gateways can be used. In this devices IPSec tunnels are modeled as a network interface or VTI (virtual tunnel interface), and IP routing (static routes or dynamic routing protocols) will decide across which one of these tunnel interfaces to send each packet. Route-based VPNs are the preferred connection method for on-premises devices, since they are more resilient to topology changes such as the creation of new subnets, for example. Use a route-based VPN gateway if you need any of the following types of connectivity:
 
 - Connections between virtual networks
 - Point-to-site connections
@@ -37,9 +37,9 @@ Key features of route-based VPNs gateways in Azure include:
 
 - Supports IKEv2.
 - Uses any-to-any (wildcard) traffic selectors.
-- Uses *dynamic routing*, where routing/forwarding tables direct traffic to different IPSec tunnels. The source and destination networks aren't defined, as they are in policy-based VPNs. But data packets are encrypted as they traverse interfaces based on network routing tables.
+- Can use *dynamic routing protocols*, where routing/forwarding tables direct traffic to different IPSec tunnels. In this case, the source and destination networks are not statically defined as they are in policy-based VPNs or even in route-based VPNs with static routing. Instead, data packets are encrypted based on network routing tables that are created dynamically using routing protocols such as BGP (Border Gateway Protocol).
 
-Both types of VPN gateways in Azure use pre-shared key as the only method of authentication. Both types also rely on Internet Key Exchange (IKE) in either version 1 or version 2 and Internet Protocol Security (IPSec). IKE is used to set up a security association (an agreement of the encryption) between two endpoints. This association is then passed to the IPSec suite, which encrypts and decrypts data packets encapsulated in the VPN tunnel.
+Both types of VPN gateways (route-based and policy-based) in Azure use pre-shared key as the only method of authentication. Both types also rely on Internet Key Exchange (IKE) in either version 1 or version 2 and Internet Protocol Security (IPSec). IKE is used to set up a security association (an agreement of the encryption) between two endpoints. This association is then passed to the IPSec suite, which encrypts and decrypts data packets encapsulated in the VPN tunnel.
 
 ## VPN gateway sizes
 
