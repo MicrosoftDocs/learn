@@ -17,7 +17,7 @@ abstract: |
   - Use SonarCloud to scan your code locally and as part of your build pipeline.
   - Limit your scanning to pull requests only by using conditions.
 prerequisites: |
-  - An Azure DevOps account
+  - An Azure DevOps organization
   - Visual Studio Code
   - .NET Core 2.1
   - Git

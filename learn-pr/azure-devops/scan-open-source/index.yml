@@ -17,7 +17,7 @@ abstract: |
   - Access package and license ratings for open-source components by using WhiteSource Bolt
   - Analyze the results of the scan so you can take the appropriate action
 prerequisites: |
-  - An Azure DevOps account
+  - An Azure DevOps organization
   - Visual Studio Code
   - .NET Core 2.1
   - Git

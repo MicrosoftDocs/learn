@@ -18,7 +18,7 @@ abstract: |
   - Add a dashboard widget to visualize your build history
   - Set up a rule on your GitHub repository to require a reviewer
 prerequisites: |
-  - An Azure DevOps account
+  - An Azure DevOps organization
   - Visual Studio Code
   - .NET Core 2.1
   - Git

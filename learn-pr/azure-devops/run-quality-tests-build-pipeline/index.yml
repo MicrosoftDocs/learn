@@ -19,7 +19,7 @@ abstract: |
   - Perform code coverage testing to see how much of your code is covered by unit tests
   - See a test fail in the pipeline and then fix the failure
 prerequisites: |
-  - An Azure DevOps account
+  - An Azure DevOps organization
   - Visual Studio Code
   - .NET Core 2.1
   - Git
