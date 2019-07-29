@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.introduction-to-regression.introduction-to-regression
-title: Introduction to regression
+title: Introduction to Regression
 metadata:
-  title: Introduction to regression
+  title: Introduction to Regression
   description: This unit is an introduction to regression - predicting values using features.
   ms.date: 06/30/2019
   author: markjulmar

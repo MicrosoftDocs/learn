@@ -31,6 +31,7 @@ units:
 - learn-wwl.unsupervised-learning.introduction
 - learn-wwl.unsupervised-learning.introduction-to-unsupervised-learning
 - learn-wwl.unsupervised-learning.k-means-clustering
+- learn-wwl.unsupervised-learning.exercise-k-means
 - learn-wwl.unsupervised-learning.summary
 - learn-wwl.unsupervised-learning.well-done
 badge: 
