@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn-sqlserver.sql-server-discovery-using-map.5-exercise-install-map
+title: Exercise - Install the Microsoft Assessment and Planning Toolkit
+metadata:
+  title: Exercise - Install the Microsoft Assessment and Planning Toolkit
+  description: Exercise - Install the Microsoft Assessment and Planning Toolkit
+  ms.date: 01/31/2019
+  author: geoffallix
+  ms.author: v-gea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+  ROBOTS: NOINDEX
+labId: 46781
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-exercise-install-map.md)]

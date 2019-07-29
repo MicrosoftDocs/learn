@@ -1,6 +1,6 @@
 Now that your build agent is running and can receive build jobs, let's see it in action. Here you'll modify a basic build configuration that we provide to build the _Space Game_ web site using your agent and not the Microsoft-hosted agent.
 
-As an optional step, at the end you'll remove the agent pool from your Azure DevOps account.
+As an optional step, at the end you'll remove the agent pool from your Azure DevOps organization.
 
 ## Fetch the branch from GitHub
 
@@ -71,7 +71,7 @@ Here you'll see the build run in the pipeline using your build agent.
 
 ## Optional: Remove your build pool
 
-For future reference, you can keep the build pool configuration in your Azure DevOps account. But keep in mind that the VM we provide will no longer be available to you after your sandbox session ends.
+For future reference, you can keep the build pool configuration in your Azure DevOps organization. But keep in mind that the VM we provide will no longer be available to you after your sandbox session ends.
 
 In fact, Azure DevOps will detect that the agent is offline. Azure Pipelines will check for an available agent the next time a build is queued using the **MyAgentPool** pool.
 

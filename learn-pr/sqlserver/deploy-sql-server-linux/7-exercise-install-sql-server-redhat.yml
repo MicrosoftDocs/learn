@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn-sqlserver.deploy-sql-server-linux.7-exercise-install-sql-server-redhat
+title: Exercise - Install SQL Server on Red Hat
+metadata:
+  title: Exercise - Install SQL Server on Red Hat
+  description: In this unit, you will install and configure SQL Server on a Red Hat Enterprise Linux (RHEL) server.
+  ms.date: 06/11/2019
+  author: alistairmatthews
+  ms.author: v-alism
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/7-exercise-install-sql-server-redhat.md)]
