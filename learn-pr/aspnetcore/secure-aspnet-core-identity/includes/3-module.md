@@ -457,24 +457,20 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
 <!-- TODO -->
 
-## Multi-factor authentication &mdash; Generate QR code
+## Multi-factor authentication &mdash; generate QR code
 
-1. Add the following page handler to *Pages/Account/Manage/EnableAuthenticator.cshtml.cs*:
+1. Open *Pages/Account/Manage/EnableAuthenticator.cshtml.cs* and make the following changes:
+    1. Add the following property to store the QR code base-64 string representation:
 
     ```csharp
-    public IActionResult OnGetToken([FromServices] QRCodeService qrCodeService)
-    {
-        if(string.IsNullOrEmpty(AuthenticatorUri))
-        {
-            return Forbid();
-        }
-
-        return File(
-            qrCodeService.GetQRCodeAsPng(AuthenticatorUri), "image/png");
-    }
+    public string QrCodeAsBase64 { get; set; }
     ```
 
-    In the preceding page handler, property injection provides a reference to the `QRCodeService` singleton service. `QRCodeService` is responsible for interactions with a third-party library which generates QR codes.
+    1. Incorporate the highlighted changed into the `OnGetAsync` page handler:
+
+    [!code-csharp[](../code/3-account-manage-enableauthn-ongetasync.cs?highlight=1,10)]
+
+    In the preceding page handler, parameter injection provides a reference to the `QRCodeService` singleton service. `QRCodeService` is responsible for interactions with a third-party library which generates QR codes.
 
 1. In *Pages/Account/Manage/EnableAuthenticator.cshtml*, replace the following HTML:
 
@@ -486,11 +482,9 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
     ```html
     <div id="qrCode">
-        <img src="?handler=token" alt="QR code" />
+        <img alt="embedded QR code" src="data:image/png;base64,@Model.QrCodeAsBase64" />
     </div>
     ```
-
-    In the preceding code, the `img` element's `src` attribute invokes the `OnGetToken` page handler.
 
 ## Admin creation
 
