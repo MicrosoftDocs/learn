@@ -1,6 +1,6 @@
 **Azure Site Recovery** is more than just a tool to help you recover from system outages. Azure Site Recovery will replicate workloads between a primary and secondary site, and can also be used to migrate VMs from on-premises infrastructure to Azure.
 
-Your first task to protect your workloads from earthquakes is to review the companies current business continuity and disaster recovery plan (BCDR). You need to identify the different recovery objectives and scope for the systems that need protection.
+Your first task to protect your workloads from earthquakes is to review the company's current BCDR plan. You need to identify the different recovery objectives and scope for the systems that need protection.
 
 In this unit, you'll investigate how Azure Site Recovery can help achieve these goals and make failover and recovery of resources possible in the event of a disaster.
 
@@ -8,7 +8,7 @@ In this unit, you'll investigate how Azure Site Recovery can help achieve these 
 
 Loss of service can cause disruption to your staff and users. Every second that systems are unavailable can cause the company lost revenue, or financial penalities for breaking agreements written for the availability of services you provide.
 
-Business continuity and disaster recovery (BCDR) plans are formal documents that companies draw up that cover the scope and actions that should be taken when a disaster or large-scale outage happens. Each outage is assessed on its own merit. For example, a DR plan will come into action when a whole data center loses power, or relevant in this scenario, an earthquake hits and has damaged communications lines that render a data center useless until fixed. A disaster of that size could bring services down for days, not hours, so a full BCDR plan would need to be invoked to get the service back online.
+BCDR plans are formal documents that companies draw up that cover the scope and actions that should be taken when a disaster or large-scale outage happens. Each outage is assessed on its own merit. For example, a DR plan will come into action when a whole data center loses power, or relevant in this scenario, an earthquake hits and has damaged communications lines that render a data center useless until fixed. A disaster of that size could bring services down for days, not hours, so a full BCDR plan would need to be invoked to get the service back online.
 
 As part of your BCDR plan, identify the recovery time objectives (RTO) and recovery point objectives (RPO) for your applications. Both help to realize the maximum tolerable hours your business can be without specified services, and what the data recovery process should be. Let's look closer at each.
 

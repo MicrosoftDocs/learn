@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Azure Site Recovery overview
-durationInMinutes: 7
+durationInMinutes: 10
 content: |
   [!include[](includes/2-azure-site-recovery-overview.md)]
 quiz:
