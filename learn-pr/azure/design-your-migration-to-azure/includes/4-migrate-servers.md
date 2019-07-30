@@ -27,14 +27,14 @@ For your company, you are focused on moving VMware and database workloads to Azu
 - **Automatic discovery account**: Create an account at vCenter level and then assign the relevant permissions.
 - **Mobility service account**: Install the Mobility service on each virtual machine. You can do the service by a push installation from the Azure console, or a manual install. If using the push installation, the account needs permission to install software on each of the virtual machines.
 - **Connection after migration**: Enable Remote Desktop Protocol (RDP) on each virtual machine, and configure the Windows Firewall appropriately **before** migration.
-- **Setup the configuration server**: The configuration server coordinates the communication between the on-premises environment and Azure. Deploy the Open Virtualization Application (OVA) template to a highly available virtual machine in your VMware environment.
+- **Set up the configuration server**: The configuration server coordinates the communication between the on-premises environment and Azure. Deploy the Open Virtualization Application (OVA) template to a highly available virtual machine in your VMware environment.
 
 ## Migrate on-premises VMs to Azure
 
 There are also several settings that need to be configured for the task of migrating on-premises virtual machines to Azure, they are:
 
 - **Set a protection goal**: For VMware environments set the goal to, on-premises migration to Azure using the VMware vSphere Hypervisor.
-- **Setup the target environment**: The target environment is set in the portal by selecting the Azure subscription and Resource Manager deployment model you wish to use. Select migrating VMware to Azure, Site Recovery will then verify a valid network exists in Azure that the migrated virtual machines will connect to.
+- **Set up the target environment**: The target environment is set in the portal by selecting the Azure subscription and Resource Manager deployment model you wish to use. Select migrating VMware to Azure, Site Recovery will then verify a valid network exists in Azure that the migrated virtual machines will connect to.
 - **Create a replication policy**: A replication policy contains settings such as a Recovery Point Objective (RPO) threshold. The policy is associated with the configuration server that has been deployed.
 - **Enable replication**: Enable the replication at the Recovery Service vault level.
   - **Configure the Source**: The source is the configuration server, the machine type is 'virtual machines', the vSphere host is the vCenter server on-premises, and the process server is the configuration server.

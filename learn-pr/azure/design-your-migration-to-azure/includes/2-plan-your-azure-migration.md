@@ -14,7 +14,7 @@ Let's take a look at what's involved at each phase.
 
 ### Discovery and evaluation
 
-Start will a full assessment of your current environment. Identify which servers, applications, and services are in the scope for migration. By identifying the services and systems that may be migrated, you can bring in the IT and business teams that work with these services. Bring these teams in as early as possible in the process, to ensure they can provide guidance, feedback, and support for the migration.
+Start with a full assessment of your current environment. Identify which servers, applications, and services are in the scope for migration. By identifying the services and systems that may be migrated, you can bring in the IT and business teams that work with these services. Bring these teams in as early as possible in the process, to ensure they can provide guidance, feedback, and support for the migration.
 
 Now you can produce a full inventory and dependency map to determine how servers and services that are in scope of migration communicate with each other. A modern business could have hundreds of applications spread across the estate. Each application needs to be fully investigated before any work takes place.
 
@@ -67,7 +67,7 @@ In other situations, you may need to set up resources in Azure to have them avai
 
 It's often best to start with a small migration, as opposed to migrating a large, business-critical workload. This allows you to increase familiarity with the tools, processes, and procedures for migration. It can reduce the risk of issues when you migrate larger workloads. As you become more comfortable with the migration process, you can continue to larger and more business-critical workloads.
 
-Each tool will guide you through the migration, and the steps to complete them are covered in future units. At a high level these steps are:
+Each tool will guide you through the migration, and the steps to complete them are covered in future units. At a high level, these steps are:
 
 1. Prepare the source (vCenter Server) and target (Azure) environments.
 1. Set up and start the replication between the two.
@@ -91,7 +91,7 @@ With your services migrated, it's important to optimize them to ensure they are 
 
 ### Analyze running costs
 
-Using **Azure Cost Management** you can start analyzing your Azure costs at any level your choose. For example, by choosing subscriptions in the portal, you can see a breakdown of all the resources for that subscription. Or you could view a resource group, and again see all the costs associated with all the resources in just the selected group.
+Using **Azure Cost Management** you can start analyzing your Azure costs at different management scopes. For example, by choosing subscriptions in the portal, you can see a breakdown of all the resources for that subscription. Or you could view a resource group, and again see all the costs associated with all the resources in just the selected group.
 
 ![Screenshot of the cost analysis section of the Azure portal, showing a resource group](../media/2-cost-analysis.png)
 
