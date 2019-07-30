@@ -34,7 +34,7 @@ quiz:
       explanation: "Hosting services such as NuGet make it easy for you to upload packages, as well as for others to discover and use them."
     - content: "On a public network file share."
       isCorrect: false
-      explanation: "Although this is possible, others might not be able to discover your package. It also adds responsibilty on your part to ensure the network share is secure."
+      explanation: "Although this is possible, others might not be able to discover your package. It also adds responsibility on your part to ensure the network share is secure."
     - content: "Behind your firewall."
       isCorrect: false
       explanation: "Others won't be able to access packages behind your firewall."
