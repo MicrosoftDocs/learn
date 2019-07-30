@@ -243,6 +243,10 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
     Additionally, the *Data/ContosoPetsAuth.cs* file, which existed prior to running the preceding command, was overwritten. *ContosoPetsAuth.cs* now references the newly created `ContosoPetsUser` class. The *EnableAuthenticator* Razor Page was scaffolded, though it won't be modified until later in the module.
 
+1. In the `Configure` method of *IdentityHostingStartup.cs*, the call to `AddDbContext` needs to be made aware of the new Identity user type. Incorporate the following highlighted change:
+
+    [!code-csharp[](../code/Areas/Identity/3-IdentityHostingStartup-Configure.cs?highlight=12)]
+
 1. Make the following changes to *Pages/Shared/_LoginPartial.cshtml*:
 
     * Add `@using ContosoPets.Ui.Areas.Identity.Data` to the top.
@@ -251,7 +255,7 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
     The first four lines of *_LoginPartial.cshtml* will resemble the following code:
 
-    [!code-cshtml[](../code/3-loginpartial.cshtml?range=1-4)]
+    [!code-cshtml[](../code/Pages/Shared/3-_LoginPartial.cshtml?range=1-4)]
 
     The preceding step created the `ContosoPetsUser` class, which is to be used instead of the default `IdentityUser`. *Pages/Shared/_LoginPartial.cshtml* wasn't updated automatically, so the appropriate changes must be made by hand.
 
@@ -265,7 +269,7 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
         [Required]
         [MaxLength(100)]
         public string FirstName { get; set; }
-    
+
         [Required]
         [MaxLength(100)]
         public string LastName { get; set; }
@@ -320,13 +324,13 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
     The presence of the `FirstName` and `LastName` properties of the `ContosoPetsUser` class correspond to the `FirstName` and `LastName` columns in the preceding output. A data type of `nvarchar(100)` was assigned because of the `[MaxLength(100)]` attribute. The non-null constraint was added because of the `[Required]` attribute.
 
-1. Run the following command to view the keys in the `AspNetUsers` table:
+1. Run the following command to view the primary key for the `AspNetUsers` table:
 
     ```bash
     db -i $setupWorkingDirectory/list-aspnetusers-pk.sql -Y 15
     ```
 
-    The following output displays:
+    The following output shows that the `Id` column is the unique identifier for a user account:
 
     ```console
     Table           Column          Primary key
@@ -392,7 +396,7 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
 1. Update *Pages/Shared/_LoginPartial.cshtml* to display the first and last name collected during user registration. The highlighted lines in the following snippet are needed:
 
-    [!code-cshtml[](../code/3-loginpartial.cshtml?highlight=9-10,13)]
+    [!code-cshtml[](../code/Pages/Shared/3-_LoginPartial.cshtml?highlight=9-10,13)]
 
 ## Customize the profile management form
 
@@ -413,13 +417,28 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
     1. Incorporate the highlighted changes in the `OnGetAsync` method:
 
-        [!code-csharp[](../code/3-account-manage-index-ongetasync.cshtml.cs?highlight=19-20)]
+        [!code-csharp[](../code/Areas/Identity/Pages/Account/Manage/3-Index.cshtml.cs?name=snippet_OnGetAsync&highlight=19-20)]
 
     1. Incorporate the highlighted changes in the `OnPostAsync` method:
 
-        [!code-csharp[](../code/3-account-manage-index-onpostasync.cshtml.cs?highlight=14-16)]
+        [!code-csharp[](../code/Areas/Identity/Pages/Account/Manage/3-Index.cshtml.cs?name=snippet_OnPostAsync&highlight=14-16)]
 
     Save your changes.
+
+1. In *Areas/Identity/Pages/Account/Manage/Index.cshtml*, add the following markup to the line immediately after `<div asp-validation-summary="All" class="text-danger"></div>`:
+
+    ```cshtml
+    <div class="form-group">
+        <label asp-for="Input.FirstName"></label>
+        <input asp-for="Input.FirstName" class="form-control" />
+        <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Input.LastName"></label>
+        <input asp-for="Input.LastName" class="form-control" />
+        <span asp-validation-for="Input.LastName" class="text-danger"></span>
+    </div>
+    ```
 
 ## Build, deploy, and test
 
@@ -454,20 +473,6 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
     The user registered prior to adding `FirstName` and `LastName` to the schema doesn't have data in those columns.
 
-1. Run the following command to view the primary key for the `AspNetUsers` table:
-
-    ```bash
-    db -i $setupWorkingDirectory/list-aspnetusers-pk.sql -Y 15
-    ```
-
-    The following output shows that the `Id` column is the unique identifier for a user account:
-
-    ```console
-    Table           Column          Primary key
-    --------------- --------------- ---------------
-    AspNetUsers     Id              PK_AspNetUsers
-    ```
-
 ## Login as first user, update FName, LName
 
 <!-- TODO -->
@@ -475,7 +480,7 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 ## Multi-factor authentication &mdash; generate QR code
 
 1. Open *Pages/Account/Manage/EnableAuthenticator.cshtml.cs* and make the following changes:
-    1. Add the following property to store the QR code base-64 string representation:
+    1. Add the following property to the `EnableAuthenticatorModel` class to store the QR code base-64 string representation:
 
         ```csharp
         public string QrCodeAsBase64 { get; set; }
@@ -483,9 +488,15 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
     1. Incorporate the highlighted changes in the `OnGetAsync` page handler:
 
-        [!code-csharp[](../code/3-account-manage-enableauthn-ongetasync.cs?highlight=1,10)]
+        [!code-csharp[](../code/Areas/Identity/Pages/Account/Manage/3-EnableAuthenticator-OnGetAsync.cs?highlight=1,10)]
 
     In the preceding page handler, parameter injection provides a reference to the `QRCodeService` singleton service. `QRCodeService` is responsible for interactions with a third-party library which generates QR codes.
+
+    1. Add the following `using` statement to resolve the reference to `QRCodeService`:
+
+        ```csharp
+        using ContosoPets.Ui.Services;
+        ```
 
 1. In *Pages/Account/Manage/EnableAuthenticator.cshtml*, replace the following HTML:
 

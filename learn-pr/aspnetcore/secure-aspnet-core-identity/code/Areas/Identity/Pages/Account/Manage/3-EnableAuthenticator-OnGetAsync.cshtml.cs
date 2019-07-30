@@ -1,4 +1,4 @@
-public async Task<IActionResult> OnGetAsync([FromServices] QrCodeService qrCodeService)
+public async Task<IActionResult> OnGetAsync([FromServices] QRCodeService qrCodeService)
 {
     var user = await _userManager.GetUserAsync(User);
     if (user == null)
