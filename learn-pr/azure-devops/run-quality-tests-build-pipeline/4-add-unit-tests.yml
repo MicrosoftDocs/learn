@@ -3,7 +3,7 @@ uid: learn.azdo.run-quality-tests-build-pipeline.4-add-unit-tests
 title: Exercise - Add unit tests to your application
 metadata:
   title: Exercise - Add unit tests to your application
-  description: Add a unit test to the application that tests an unstable feature.
+  description: Add a unit test that tests an unstable feature.
   ms.date: 06/21/2019
   author: tpetchel
   ms.author: thpetche
