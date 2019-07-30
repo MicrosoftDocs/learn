@@ -211,12 +211,12 @@ The documentation explains how to set up [self-hosted Linux agents](https://docs
     * From the extracted files, run a shell script named **config.sh** to configure the agent and register the agent with Azure Pipelines.
     * From the extracted files, run a shell script named **svc.sh** to install and start the agent service.
 
-    The script uses environment variables to enable you to provide details about your Azure DevOps account. Here's a summary.
+    The script uses environment variables to enable you to provide details about your Azure DevOps organization. Here's a summary.
 
     | Bash variable       | Description                          | Default |
     |---------------------|--------------------------------------|---------|
     | `AZP_AGENT_VERSION` | The [version of the agent software](https://github.com/Microsoft/azure-pipelines-agent/releases?azure-portal=true) to install | The version we last used to test this module |
-    | `AZP_URL`           | The URL of your Azure DevOps account | (None) |
+    | `AZP_URL`           | The URL of your Azure DevOps organization | (None) |
     | `AZP_TOKEN`         | Your personal access token           | (None) |
     | `AZP_AGENT_NAME`    | Your agent's name as it appears in Azure DevOps | The system's hostname |
     | `AZP_POOL`          | The name of your agent pool          | **Default** |
@@ -239,7 +239,7 @@ The documentation explains how to set up [self-hosted Linux agents](https://docs
     export AZP_AGENT_NAME=MyLinuxAgent
     ```
 
-1. Set the `AZP_URL` environment variable to specify the URL to your Azure DevOps account.
+1. Set the `AZP_URL` environment variable to specify the URL to your Azure DevOps organization.
 
     Replace **organization** with yours. You can get the name from the browser tab that's showing Azure DevOps.
 

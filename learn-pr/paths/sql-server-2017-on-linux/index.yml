@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn-sqlserver.sql-server-2017-on-linux
+metadata:
+  title: SQL Server 2017 on Linux
+  #TODO: Update description for search engines.
+  description: Description of path for search engines.
+  author: geoffallix
+  ms.author: v-gea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+title: SQL Server 2017 on Linux
+#TODO: Update summary, shown on learning path page and browse card.
+summary: Description of path, shown on learning path landing page and browse card.
+#TODO: Verify or update prequisites.
+prerequisites: None
+iconUrl: /learn/achievements/sqlserver/sql-server-2017-on-linux.svg
+levels: 
+#TODO: Verify applicable levels.
+- beginner
+roles: 
+#TODO: Verify applicable roles.
+- administrator
+products: 
+#TODO: Update with correct taxonomy.
+- sql-server
+modules:
+#TODO: Check that the correct modules are included.
+- learn-sqlserver.introduction-sql-server-linux
+- learn-sqlserver.deploy-sql-server-linux
+- learn-sqlserver.automatically-tune-sql-server-linux
+- learn-sqlserver.run-sql-server-2017-linux-containers
+trophy: 
+  #TODO: Update with more applicable UID.
+  uid: learn-sqlserver.sql-server-2017-on-linux.trophy

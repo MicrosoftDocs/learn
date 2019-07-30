@@ -18,7 +18,7 @@ abstract: |
   - Bring up and configure your own agent to work with Azure Pipelines
   - Connect your agent to a pipeline and build your application
 prerequisites: |
-  - An Azure DevOps account
+  - An Azure DevOps organization
   - Visual Studio Code
   - .NET Core 2.1
   - Git
