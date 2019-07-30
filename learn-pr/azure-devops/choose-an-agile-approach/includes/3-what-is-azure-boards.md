@@ -35,9 +35,14 @@ Andy can identify with these issues, but the rest of the team has questions.
 
 **Mara**: Before we add any issues, let's talk a bit more about what everyone is working on.
 
+:::row:::
+  :::column span="4":::
 Each team member shares what they're working on and other concerns they have. As a brainstorming activity, they add sticky notes to a whiteboard. Their whiteboard fills up quickly.
-
+  :::column-end:::
+  :::column:::
 ![A whiteboard containing sticky notes](../media/3-whiteboard.png)
+  :::column-end:::
+:::row-end:::
 
 Eventually the team settles on seven top issues. Andy volunteers to add tasks to Azure Boards while everyone watches. Here's what the board looks like.
 
