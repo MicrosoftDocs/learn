@@ -74,7 +74,7 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
     * The Entity Framework Core database context class, named `ContosoPetsAuth`, is configured with the appropriate connection string.
     * The ASP.NET Core Identity services are registered, including the default UI (based on Bootstrap version 4), token providers, and cookie-based authentication.
 
-1. In *IdentityHostingStartup.cs*, add the following code to the block of `using` statements at the top:
+1. In *IdentityHostingStartup.cs*, add the following code to the block of `using` statements at the top. Save your changes.
 
     ::: zone pivot="pg"
 
@@ -95,6 +95,8 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
     ```csharp
     app.UseAuthentication();
     ```
+
+    Save your changes.
 
 1. Run the following command to print the database connection string to the console:
 
@@ -120,7 +122,7 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
 
     ```json
     "ConnectionStrings": {
-        "ContosoPetsAuthConnection": "Data Source=azsql684457488.database.windows.net;Initial Catalog=ContosoPets;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
+        "ContosoPetsAuthConnection": "Data Source={HOST NAME}.database.windows.net;Initial Catalog=ContosoPets;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
     }
     ```
 
@@ -247,32 +249,37 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
     * Change `@inject SignInManager<IdentityUser> SignInManager` to `@inject SignInManager<ContosoPetsUser> SignInManager`.
     * Change `@inject UserManager<IdentityUser> UserManager` to `@inject UserManager<ContosoPetsUser> UserManager`.
 
+    The first four lines of *_LoginPartial.cshtml* will resemble the following code:
+
+    [!code-cshtml[](../code/3-loginpartial.cshtml?range=1-4)]
+
     The preceding step created the `ContosoPetsUser` class, which is to be used instead of the default `IdentityUser`. *Pages/Shared/_LoginPartial.cshtml* wasn't updated automatically, so the appropriate changes must be made by hand.
 
     > [!TIP]
     > As an alternative to manually editing the *_LoginPartial.cshtml* file, it can be deleted prior to running the scaffold tool. The *_LoginPartial.cshtml* file will be recreated with references to the new `ContosoPetsUser` class.
 
-1. Update *ContosoPetsUser.cs* so that it supports storage and retrieval of the additional user profile data. Add the following properties:
+1. Update *Areas/Identity/Data/ContosoPetsUser.cs* so that it supports storage and retrieval of the additional user profile data. Make the following changes:
+    1. Add the following properties:
 
-    ```csharp
-    [Required]
-    [MaxLength(100)]
-    public string FirstName { get; set; }
+        ```csharp
+        [Required]
+        [MaxLength(100)]
+        public string FirstName { get; set; }
+    
+        [Required]
+        [MaxLength(100)]
+        public string LastName { get; set; }
+        ```
 
-    [Required]
-    [MaxLength(100)]
-    public string LastName { get; set; }
-    ```
+        The properties in the preceding snippet represent additional columns to be created in the underlying `AspNetUsers` table. Both properties are required and are therefore annotated with the `[Required]` attribute. The `[Required]` attribute also results in a non-null constraint in the underlying database table column. Additionally, the `[MaxLength]` attribute indicates that a maximum length of 100 characters is allowed. The underlying table column's data type is defined accordingly.
 
-    The properties in the preceding snippet represent additional columns to be created in the underlying `AspNetUsers` table. Both properties are required and are therefore annotated with the `[Required]` attribute. The `[Required]` attribute also results in a non-null constraint in the underlying database table column. Additionally, the `[MaxLength]` attribute indicates that a maximum length of 100 characters is allowed. The underlying table column's data type is defined accordingly.
+    1. Add the following `using` statement to the top of the file:
 
-1. Add the following `using` statement to the top of *ContosoPetsUser.cs*:
+        ```csharp
+        using System.ComponentModel.DataAnnotations;
+        ```
 
-    ```csharp
-    using System.ComponentModel.DataAnnotations;
-    ```
-
-    The preceding resolves the data annotation attributes in the previous step.
+        The preceding resolves the data annotation attributes in the previous step.
 
 1. Create and apply an EF Core Migration to update the underlying data store:
 
@@ -316,22 +323,20 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 1. Run the following command to view the keys in the `AspNetUsers` table:
 
     ```bash
-    db -Q "exec sp_pkeys 'AspNetUsers'" -Y 15
+    db -i $setupWorkingDirectory/list-aspnetusers-pk.sql -Y 15
     ```
 
     The following output displays:
 
     ```console
-    TABLE_QUALIFIER TABLE_OWNER     TABLE_NAME      COLUMN_NAME     KEY_SEQ PK_NAME
-    --------------- --------------- --------------- --------------- ------- ---------------
-    ContosoPets     dbo             AspNetUsers     Id                    1 PK_AspNetUsers
-
-    (1 rows affected)
+    Table           Column          Primary key
+    --------------- --------------- ---------------
+    AspNetUsers     Id              PK_AspNetUsers
     ```
 
 ## Customize the user registration form
 
-1. In *Register.cshtml*, add the following markup to the line after `<div asp-validation-summary="All" class="text-danger"></div>`:
+1. In *Areas/Identity/Pages/Account/Register.cshtml*, add the following markup to the line immediately after `<div asp-validation-summary="All" class="text-danger"></div>`:
 
     ```cshtml
     <div class="form-group">
@@ -348,7 +353,7 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
     With the preceding markup, a **First Name** and a **Last Name** text box are added to the user registration form.
 
-1. In *Register.cshtml.cs*, add the following code to support the name text boxes.
+1. In *Areas/Identity/Pages/Account/Register.cshtml.cs*, add support for the name text boxes.
     1. Add the following properties to the `InputModel` class:
 
         ```csharp
@@ -363,7 +368,13 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
         public string LastName { get; set; }
         ```
 
-    1. Modify the `OnPostAsync` method such that the `user` variable is assigned to the following:
+    1. Modify the `OnPostAsync` method to populate set the `FirstName` and `LastName` properties on the `ContosoPetsUser` object. Replace the following code:
+
+        ```csharp
+        var user = new ContosoPetsUser { UserName = Input.Email, Email = Input.Email };
+        ```
+
+        With the following code:
 
         ```csharp
         var user = new ContosoPetsUser
@@ -374,6 +385,8 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
             Email = Input.Email,
         };
         ```
+
+        With the preceding change, the `FirstName` and `LastName` properties are set to the user input from the registration form.
 
 ## Customize the site header
 
@@ -405,6 +418,8 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
     1. Incorporate the highlighted changes in the `OnPostAsync` method:
 
         [!code-csharp[](../code/3-account-manage-index-onpostasync.cshtml.cs?highlight=14-16)]
+
+    Save your changes.
 
 ## Build, deploy, and test
 
@@ -462,13 +477,13 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 1. Open *Pages/Account/Manage/EnableAuthenticator.cshtml.cs* and make the following changes:
     1. Add the following property to store the QR code base-64 string representation:
 
-    ```csharp
-    public string QrCodeAsBase64 { get; set; }
-    ```
+        ```csharp
+        public string QrCodeAsBase64 { get; set; }
+        ```
 
-    1. Incorporate the highlighted changed into the `OnGetAsync` page handler:
+    1. Incorporate the highlighted changes in the `OnGetAsync` page handler:
 
-    [!code-csharp[](../code/3-account-manage-enableauthn-ongetasync.cs?highlight=1,10)]
+        [!code-csharp[](../code/3-account-manage-enableauthn-ongetasync.cs?highlight=1,10)]
 
     In the preceding page handler, parameter injection provides a reference to the `QRCodeService` singleton service. `QRCodeService` is responsible for interactions with a third-party library which generates QR codes.
 
