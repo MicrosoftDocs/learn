@@ -1,6 +1,6 @@
-You've met the Tailspin team and learned a bit about their problems. Mara, the newest team member, is trying to convince her teammates that a DevOps approach using the services in Azure DevOps is a great way to solve them. She's taken it upon herself to do a value stream mapping exercise, and she's shown everyone the results. 
+You've met the Tailspin team and learned a bit about their problems. Mara, the newest team member, is trying to convince her teammates that a DevOps approach, using the services in Azure DevOps, is a great way to solve them. She's taken it upon herself to do a value stream mapping exercise, and she's shown everyone the results.
 
-Her next goal is to convince the Tailspin team to take their first DevOps steps by using an Agile approach and Azure Boards, a part of the Azure DevOps suite. Azure Boards helps teams collaborate and plan work better. This module shows how the team creates its first board.
+Her next goal is to convince the Tailspin team to take their first DevOps steps by using an Agile approach and Azure Boards, a part of the Azure DevOps suite. Azure Boards helps teams collaborate and plan their work better. This module shows how the team creates its first board.
 
 In this module, you will:
 
