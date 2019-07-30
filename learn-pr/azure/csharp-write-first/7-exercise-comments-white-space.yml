@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.csharp-write-first.hello-world
+uid: learn.languages.csharp-write-first.compiling-fixing-errors
 title: Introduction
 metadata:
   title: Introduction
@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 6
+durationInMinutes: 5
 interactive: csharp
 content: |
-  [!include[](includes/2-hello-world.md)]
+  [!include[](includes/7-compiling-fixing-errors.md)]

@@ -1,18 +1,23 @@
 ### YamlMime:Module
 uid: learn.languages.csharp-write-first
 metadata:
-  title: Setup your C# beginner development environment with Visual Studio 2019 Community Edition
-  description: Get started learning C# by istalling and configuring the tools you'll need to build real applications.
+  title: Write your first C# code
+  description: Get started learning C# by writing a dozen tiny code examples to learn about data types, literals, strings, calling methods, string concatenation, performing math operations, code comments and more!
   ms.date: 07/29/2019
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Setup your C# beginner development environment with Visual Studio 2019 Community Edition
-summary: Get started learning C# by istalling and configuring the tools you'll need to build real applications.
+title: Write your first C# code
+summary: Get started learning C# by writing a dozen tiny code examples to learn about data types, literals, strings, calling methods, string concatenation, performing math operations, code comments and more!
 abstract: |
   In this module, you will:
-  - Install and configure Visual Studio 2019 Community Edition
+  - Write your first lines of C# code to print information to a console
+  - Work with literal data, learning about the different types of data in C# like string, char, int, float and bool
+  - Create, set, get and initialize variables
+  - Perform string concatenation and numeric addition
+  - Write and understand the purpose of code comments
+  - Understand the functional and proper use of whitespace
 prerequisites: None
 ratingEnabled: true
 iconUrl: /learn/achievements/csharp-write-first.svg
@@ -24,12 +29,12 @@ products:
 - dotnet
 units:
 - learn.languages.csharp-write-first.introduction
-- learn.languages.csharp-write-first.hello-world
-- learn.languages.csharp-write-first.writing-reading-console
-- learn.languages.csharp-write-first.string-int-literals
-- learn.languages.csharp-write-first.string-int-variables
-- learn.languages.csharp-write-first.initializing-variables
-- learn.languages.csharp-write-first.compiling-fixing-errors
+- learn.languages.csharp-write-first.exercise-hello-world
+- learn.languages.csharp-write-first.exercise-literal-values
+- learn.languages.csharp-write-first.declaring-variables
+- learn.languages.csharp-write-first.exercise-variables
+- learn.languages.csharp-write-first.exercise-operations
+- learn.languages.csharp-write-first.exercise-comments-white-space
 - learn.languages.csharp-write-first.knowledge-check
 - learn.languages.csharp-write-first.summary
 

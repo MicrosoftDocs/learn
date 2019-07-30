@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-write-first.initializing-variables
+title: Exercise - Set, get, and initialize values in variables
+metadata:
+  title: Exercise - Set, get, and initialize values in variables
+  description: Use variables to assign values, retrieve values and initialize their values.
+  ms.date: 07/29/2019
+  author: bobtabor-msft
+  ms.author: rtabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+interactive: csharp
+content: |
+  [!include[](includes/5-initializing-variables.md)]

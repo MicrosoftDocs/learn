@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-write-first.performing-operations
+title: Exercise - Perform basic operations on your variables
+metadata:
+  title: Exercise - Perform basic operations on your variables
+  description: Learn how to concatenate strings and add int variables.
+  ms.date: 07/29/2019
+  author: bobtabor-msft
+  ms.author: rtabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+interactive: csharp
+content: |
+  [!include[](includes/6-performing-operations.md)]

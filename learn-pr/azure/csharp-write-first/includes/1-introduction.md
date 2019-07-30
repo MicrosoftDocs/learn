@@ -1,13 +1,5 @@
-This is an introduction paragraph.
+The C# programming language allows you to build many types of applications, from business applications to analyze and process data, dynamic web applications, games, financial or scientific applications, cloud-based applications, mobile applications and more.
 
-## This is the first heading
+But with every journey, you must start with a single step, and that step is this module.  Furthermore, writing lots of tiny code examples is the best way to get started learning a new programming language.  This module will put you through the paces of writing messages to a console window, diagnose errors in your code, work with literal data of all types (and will explain what a literal is), create and work with variables, concatenate data, add data, comment your code, understand how the compiler works, and more.
 
-This explains the purpose of this section.
-
-### Step 1 - Do the first thing
-
-Instructions for the first thing go here.
-
-### Step 2 - Do the second thing
-
-Instructions for the second thing go here.
+By the end of this module, you will be able to build simple applications that work with many different types of data and output the result to the user.  But more importantly, you will have established a foundation to build more interesting and important applications.

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-write-first.string-int-variables
-title: Introduction
+title: Exercise - Declare and name variables
 metadata:
-  title: Introduction
-  description: Begin your software development journey by learning one of the most popular programming languages.
+  title: Exercise - Declare and name variables
+  description: Learn how to declare variables by selecting their data type and giving them a proper name
   ms.date: 07/29/2019
   author: bobtabor-msft
   ms.author: rtabor
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-string-int-variables.md)]
+  [!include[](includes/4-string-int-variables.md)]
