@@ -2,7 +2,7 @@ Data science involves model selection and the determination of hyperparameter va
 
 Automated machine learning (AutoML) provides an automated solution.  It does this by letting the Azure Machine Learning service run all the models concurrently, comparing the results, and recommending the best model for the job based on the training scores.
 
-Many models include parameters that can't be learned from the model-training process. These are called *hyperparameters*, and they usually have a large affect on model accuracy. Data scientists typically experiment with different values until they find the optimal values. This is a time-consuming manual process. The AutoML HyperDrive service makes it possible to find optimal hyperparameter values automatically.
+Many models include parameters that can't be learned from the model-training process. These are called *hyperparameters*, and they usually have a large effect on model accuracy. Data scientists typically experiment with different values until they find the optimal values. This is a time-consuming manual process. The AutoML HyperDrive service makes it possible to find optimal hyperparameter values automatically.
 
 ![The diagram shows the Azure AutoML framework.](../media/3-automl-framework.png)
 
