@@ -3,7 +3,7 @@ uid: learn.design-your-migration-to-azure.4-migrate-servers
 metadata:
   title: Migrate servers with Azure Site Recovery
   description: Review Azure Site Recovery and see how it can be used to migrate specific workloads to Azure
-  ms.date: 04/30/2019
+  ms.date: 07/30/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
