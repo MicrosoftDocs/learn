@@ -1,7 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-data-at-rest.classify-your-data-and-protect-confidential-information.
 title: Classify your data and protect confidential information.
-
 metadata:
   title: Classify your data and protect confidential information.
   description: Classify your data and protect confidential information.
@@ -11,7 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-
 durationInMinutes: 10
 content: |
   [!include[](includes/2-classify-data-protect-confidential-information.md)]

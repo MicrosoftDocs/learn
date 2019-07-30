@@ -1,7 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-data-at-rest.secure-data-at-rest-in-azure-sql-and-cosmos-db
 title: Secure data at rest in Azure SQL and Cosmos DB
-
 metadata:
   title: Secure data at rest in Azure SQL and Cosmos DB
   description: Secure data at rest in Azure SQL and Cosmos DB
@@ -11,7 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-
 durationInMinutes: 10
 content: |
   [!include[](includes/4-secure-azure-sql-cosmos-db-data.md)]
