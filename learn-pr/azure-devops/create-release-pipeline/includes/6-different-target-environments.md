@@ -1,6 +1,6 @@
 TODO: Rename file
 
-When you release and deploy at a fast cadence, you need a way to monitor the health and history of your releases.
+When you release and deploy at a rapid pace, it is important to understand the health and history of your releases. Looking at your health trend data and history regularly can help to diagnose potential problems before they become critical.
 
 Let's listen in on the team as they discuss the next steps.
 
@@ -8,13 +8,13 @@ Andy and Mara have just finished demonstrating the the proof of concept build an
 
 **Amita:** If I can get these releases to my test environment on a regular cadence, this will save a lot of time getting a feature through QA. 
 
-**Mara:** Exactly, we can take this release pipeline and expand on it to create a deployment workflow. 
+**Mara:** Exactly! We can take this release pipeline and expand on it to create a deployment workflow. 
 
 **Tim:** That workflow could include my staging environment too.
 
 The team is excited to see what the new pipeline can do and they all start talking at once.
 
-**Andy:** Wait a second. One step at a time. Yes, I think we can do all of this and more, but this is just s proof of concept. We'll work on expanding it later.
+**Andy:** Wait a second. One step at a time. Yes, I think we can do all of this and more, but this is just a proof of concept. We'll work on expanding it later.
 
 **Amita:** This is great, but how do we know if what we have in this environment is valid? What I mean is, where do I go to see the health of the builds and releases?
 

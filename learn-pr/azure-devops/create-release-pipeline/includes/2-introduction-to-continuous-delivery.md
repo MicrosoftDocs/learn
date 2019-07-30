@@ -69,7 +69,9 @@ We've already put some of these things into place and we all think they've impro
 
 ## Why do I need continuous delivery?
 
-Continuous delivery helps software teams deliver reliable software updates quickly and on a regular cadence. This ensures that customers and stakeholders have the latest features and fixes right away alleviating potential frustrations. Let's continue to listen in on the team as they talk this out.
+Continuous delivery helps software teams deliver reliable software updates to their customers on a rapid cadence. This ensures that customers and stakeholders have the latest features and fixes quickly. 
+
+Let's continue to listen in on the team as they talk this out.
 
 **Andy:** Thanks, Mara, we need CD because, as we all know, the world has changed. Releases with new features are happening faster. Updates and bug fixes need to be available right away. It isn't just that management wants this. They're simply reacting to the demands of our customers. If customers can't get what they want from us, they'll go somewhere else.
 
@@ -112,7 +114,7 @@ The team leaves Andy and Mara to work out the details.
 
 Jenkins is open source and on-prem unless we use a third party. It's got a lot of plug-ins and many companies use it. I don't know if we can use it for approvals and quality gates. Circle CI can be cloud-based or on prem. I think we would need to customize it. GitLab Pipelines is a part of GitLab, which is a single application for the entire software development lifecycle. It might be bigger than we want right now. My vote is Azure DevOps Pipeline.
 
-**Andy:** I like it. It's worked great for us so far and we don't have to learn another new technology."
+**Andy:** I like it. It's worked great for us so far and we don't have to learn another new technology.
 
 **Mara:** Great. Let's get started on the pipeline details.
 

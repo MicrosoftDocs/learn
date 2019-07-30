@@ -100,13 +100,13 @@ From your Azure DevOps portal:
 
     When the build completes, you see the **Artifacts** button appear. We'll use this artifact as our source for the deploy stage.
 
-    ![Azure Pipelines showing the Artifacts button](../media/5-artifacts-button.png)
+    ![Azure Pipelines showing the Artifacts button](../media/4-artifacts-button.png)
 
 1. Click the **Artifacts** button, then click **drop**. The **Artifacts explorer** appears.
 1. From the **Artifacts explorer**, expand the **drop** folder.
 
     You see a .zip file that contains your built application and its dependencies.
 
-    ![The Artifacts explorer showing the packaged application](../media/5-artifacts-explorer.png)
+    ![The Artifacts explorer showing the packaged application](../media/4-artifacts-explorer.png)
 
 You now have a build pipeline for the _Space Game_ web project. Next, you will add the deployment stage to this pipeline.

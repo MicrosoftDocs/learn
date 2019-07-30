@@ -1,24 +1,3 @@
-SCRAPS:
-
-* A trigger
-* At least one stage 
-* Tasks for each stage
-
-The artifact will be the .zip file we already create in the build pipeline. The trigger can also stay the same. When there's a change in version control, the pipeline starts.
-
-## How to gain visibility
-
-**Andy:** Great. Did we forget anything?
-
-**Mara:** We got some visibility into the build pipeline by adding a dashboard that shows build history. I don't want to lose that insight. Let's add a dashboard that keeps track of our release health and history.
-
-**Andy:** You got it.
-
-(This was part of "the plan")
-
-* Have a dashboard that shows the release health and history
-
------
 In this part, you plan the simple Azure Pipelines CD pipeline.
 
 Andy and Mara are going to create a simple CD pipeline to demo to the rest of the team. The pipeline will be a Proof of concept that they'll improve on and expand as they learn more and get feedback from Tim and Amita. They're sitting in a conference room, ready to get started.
@@ -41,9 +20,9 @@ Let's follow along with Andy and Mara as they plan their proof of concept.
 
 He draws a diagram on the whiteboard.
 
-TODO: (The diagram shows a package, an environment, an arrow between them, and a question mark over the arrow.)
+![A hand-drawn illustration of an artifact to a deployment environment](../media/3-whiteboard-1.png)
 
-**Andy:** We already have the build artifact - the .zip file that's produced by our exiting build pipeline. But how to we deploy it to some live environment?
+**Andy:** We already have the ![Callout 1](../../shared/media/callout-01.png) build artifact - the .zip file that's produced by our exiting build pipeline. But how do we deploy it to some ![Callout 2](../../shared/media/callout-02.png) live environment?
 
 **Mara:** In the CD pipelines I've worked with, we used stages to define each phase of the deployment process, such as building the artifact and deploying the artifact to the various testing and production environments. Each stage breaks down into tasks, just like the ones we use in our existing build pipeline.
 
@@ -55,9 +34,9 @@ A _stage_ is a part of the pipeline that can run independently and be triggered 
 
 Mara updates the diagram on the whiteboard.
 
-TODO: (The diagram now shows two stages. The first represents the build stage; the second the deploy stage.)
+![A hand-drawn illustration of a deployment pipeline with 2 stages](../media/3-whiteboard-3.png)
 
-**Mara:** We've already defined the tasks for the build stage in our pipeline. For the deployment stage, we can create a similar stage that includes tasks that deploy the build to some environment.
+**Mara:** We've already defined the tasks for the ![Callout 1](../../shared/media/callout-01.png) build stage in our pipeline. For the ![Callout 2](../../shared/media/callout-02.png) deployment stage, we can create a similar stage that includes tasks that deploy the build to some environment.
 
 The question is, where should we deploy the artifact?
 
@@ -138,4 +117,8 @@ Andy and Mara are ready to start. They're going to:
 * Have a build stage that creates the artifact
 * Have a deploy stage that deploys the artifact to Azure App Service
 
-TODO: (Possibly add a final diagram here that extends the previous one with more specific details. Add "Azure Pipelines" to the top. Label the environment with "Azure App Service".)
+![A hand-drawn illustration of a deployment pipeline with 2 stages](../media/3-whiteboard-4.png)
+
+**Andy:** So we will use ![Callout 1](../../shared/media/callout-01.png) Azure Pipelines to deploy to an ![Callout 2](../../shared/media/callout-02.png) Azure AppService. We will take the existing ![Callout 3](../../shared/media/callout-03.png) build artifact as the source for the ![Callout 4](../../shared/media/callout-04.png) deploy stage. The tasks in the deploy stage will ![Callout 5](../../shared/media/callout-05.png) download the artifact and ![Callout 6](../../shared/media/callout-06.png) deploy the build to the Azure App Service using a service connection.
+
+**Mara:** That about sums it up. Let's get started.

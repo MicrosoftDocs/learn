@@ -1,11 +1,9 @@
-You're all done with the tasks for this module. 
+You're all done with the tasks for this module.
 
 > [!IMPORTANT]
 > This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps if you ran the template earlier in this module.
 
 ## Clean up Azure resources
-
-(Rough copy taken from another module:)
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. Go to the Resource Group that contains your App Service plan.
