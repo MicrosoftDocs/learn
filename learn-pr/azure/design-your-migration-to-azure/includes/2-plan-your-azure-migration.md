@@ -20,11 +20,11 @@ Now you can produce a full inventory and dependency map to determine how servers
 
 For each application, there are multiple migration options. The migration options are:
 
-- **Rehost**: Recreate your existing infrastructure in Azure, choosing this approach will have the least impact as it needs minimal changes.
-- **Refactor**: Take the opportunity to take advantage of Azure as a PaaS, reducing the time to release software, and reduce the ongoing maintenance costs. Small enhancements to run more efficiently in the cloud can have large impacts on performance.
+- **Rehost**: Recreate your existing infrastructure in Azure, choosing this approach will have the least impact as it needs minimal changes. This typically involves moving virtual machines from your datacenter to virtual machines on Azure.
+- **Refactor**: Move services running on virtual machines to platform-as-a-service (PaaS) services. This can reduce operational requirements, improve release agility, and keep your costs low. Small enhancements to run more efficiently in the cloud can have large impacts on performance.
 - **Rearchitect**: You may be forced to rearchitect some systems to enable them to be migrated. Other apps could be changed to become cloud native, or take advantage of new approaches to software, such as containers or microservices.
 - **Rebuild**: You may need to rebuild software if the cost to rearchitect is more than starting again from scratch.
-- **Replace**: While you're reviewing your estate, there are chances that third-party applications could completely replace your companies bespoke apps. Evaluate software-as-a-service options that can be used to replace the existing application.
+- **Replace**: While you're reviewing your estate, there are chances that third-party applications could completely replace your custom applications. Evaluate software-as-a-service (SaaS) options that can be used to replace the existing application.
 
 Review each application and which of these options is the best fit.
 
