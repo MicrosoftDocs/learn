@@ -11,8 +11,6 @@ Here you create a release pipeline using multistage pipelines. To do this you:
 
 ## Create the App Service
 
-TODO: Since we are not using the sandbox anymore, have them create a resource group.
-
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. On the left side, find **App Services** and click on it to open the App Services page.
 1. In the App Services page click the **+ Add** to add a new Azure App Service.

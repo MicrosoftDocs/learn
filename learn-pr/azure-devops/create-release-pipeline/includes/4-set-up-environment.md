@@ -38,23 +38,7 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 
 ## Create the initial build pipeline
 
-TODO: Convert this to have the learner fetch and checkout an existing branch that we provide. Rough steps (for when we want them to run it.):
-
-1. `git fetch upstream ...`
-1. `git checkout ...`
-1. `git commit --allow-empty` (look for an example in our other modules)
-1. `git push origin ...`
-1. Watch it run.
-
-TODO: Use this in the steps below:
-
----
-
-1. As an optional step, open **azure-pipelines.yml** from Visual Studio code and familiarize yourself with the initial configuration.
-
-    The configuration resembles the basic one you created in the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline/6-create-the-pipeline?azure-portal=true) module. It builds only the application's Release configuration.
-
----
+Here you turn on multistage pipelines and add the build pipeline.
 
 ### Turn on multistage pipelines in Azure DevOps
 
