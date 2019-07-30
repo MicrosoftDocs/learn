@@ -32,7 +32,7 @@ products:
 - azure-storage
 units:
 - learn.secure-data-at-rest.introduction
-- learn.secure-data-at-rest.classify-your-data-and-protect-confidential-information.
+- learn.secure-data-at-rest.classify-your-data-and-protect-confidential-information
 - learn.secure-data-at-rest.secure-data-at-rest-with-azure-storage-service-encryption
 - learn.secure-data-at-rest.secure-data-at-rest-in-azure-sql-and-cosmos-db
 - learn.secure-data-at-rest.keep-your-keys-and-secrets-safe-using-azure-key-vault
