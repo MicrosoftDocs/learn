@@ -1,18 +1,20 @@
-In [Create a release management workflow](/learn/modules/create-a-release-management-workflow?azure-portal=true), you helped the Tailspin web team as they design and build a release management workflow. This workflow enables the team to move changes through each of the various stages, such as testing and staging, all the way out to a production environment that's available to your users.
+In [Create a release management workflow](/learn/modules/create-a-release-management-workflow?azure-portal=true), you helped the Tailspin web team design and build a release management workflow. This workflow enables the team to move changes through a series of stages, such as the dev stage and the test stage, all the way out to a production environment that's available to your users.
 
-Recall that in the test stage, Amita tests the web application manually  as she always did. When she's satisfied, she manually promotes the application to the pre-production stage, where management can 
+**NOTE--I thought it was just through Staging (pre-production) because they can't move to production without management sayso**
 
-In [Run quality tests in your build pipeline using Azure Pipelines](/learn/modules/run-quality-tests-build-pipeline?azure-portal=true), you ran unit and code coverage tests during the build process to help ensure that only high-quality [XYZ], and to help make sure you didn't break anything along the way. But what kinds of tests do you run once the service is operational?
+Right now, in the test stage, Amita still tests the web application manually as she always has. When she's satisfied, she manually promotes the application to staging, where management reviews the new features and decides if they want to make the release publicly available.  
 
-In this module, you'll learn how to add functional and non-functional testing to your [test plan]. Along the way, you'll help Amita map her manual test practices to automated UI tests to [help things go faster.] (Talk about how she'll be writing code?)
+In [Run quality tests in your build pipeline using Azure Pipelines](/learn/modules/run-quality-tests-build-pipeline?azure-portal=true), you incorporated unit and code coverage tests into the build process. These help ensure that there are no regression bugs and that the code meets a company's standards for quality and style. But what kinds of tests do you run once a service is operational and actually deployed to an environment?
+
+In this module, you'll work with Amita and Tim as they learn how to add functional and non-functional tests to the pipeline. 
 
 ## Learning objectives
 
 In this module, you will:
 
-- A
-- B
-- C
+- Learn what functional and non-functional tests are
+- Add a functional UI test to the pipeline's test environment
+- Add a non-functional load test to the pipeline's staging environment
 
 ## Prerequisites
 

@@ -13,3 +13,5 @@ Roberta: I did all the prep work, I just need to come back and set the procedure
 * `git commit && git push` - watch it build, deploy, & **run tests** in the pipeline.
 * Verify the results in the pipeline.
 * Manually promote the build to Preprod.
+
+Amita is impressed and feels a bit excited about writing code to control her web browser. Perhaps Mara shows her some resources (tutorials, reference documentation) so Amita can continue writing tests. Amita can then write and verify additional tests and submit them to GitHub and have them run through the pipeline just like the developers.
