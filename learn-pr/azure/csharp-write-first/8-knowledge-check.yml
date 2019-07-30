@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-write-first.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Check your knowledge
+  description: Review what you've learned
+  ms.date: 07/29/2019
+  author: bobtabor-msft
+  ms.author: rtabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+  ROBOTS: NOINDEX
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Is this a knowledge check?"
+    choices:
+    - content: "Possibly"
+      isCorrect: false
+      explanation: "That would imply it might not be."
+    - content: "Maybe"
+      isCorrect: false
+      explanation: "That would imply it might not be."
+    - content: "Could be"
+      isCorrect: false
+      explanation: "That would imply it might not be."
+    - content: "Yes"
+      isCorrect: true
+      explanation: "Correct!  This is a knowledge check."

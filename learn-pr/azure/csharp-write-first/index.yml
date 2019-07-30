@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.languages.csharp-write-first
+metadata:
+  title: Setup your C# beginner development environment with Visual Studio 2019 Community Edition
+  description: Get started learning C# by istalling and configuring the tools you'll need to build real applications.
+  ms.date: 07/29/2019
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Setup your C# beginner development environment with Visual Studio 2019 Community Edition
+summary: Get started learning C# by istalling and configuring the tools you'll need to build real applications.
+abstract: |
+  In this module, you will:
+  - Install and configure Visual Studio 2019 Community Edition
+prerequisites: None
+ratingEnabled: true
+iconUrl: /learn/achievements/csharp-write-first.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+units:
+- learn.languages.csharp-write-first.introduction
+- learn.languages.csharp-write-first.hello-world
+- learn.languages.csharp-write-first.writing-reading-console
+- learn.languages.csharp-write-first.string-int-literals
+- learn.languages.csharp-write-first.string-int-variables
+- learn.languages.csharp-write-first.initializing-variables
+- learn.languages.csharp-write-first.compiling-fixing-errors
+- learn.languages.csharp-write-first.knowledge-check
+- learn.languages.csharp-write-first.summary
+
+badge:
+  uid: learn.languages.csharp-write-first.badge
