@@ -25,7 +25,7 @@ After you create a **Project**, Azure Migrate needs you to complete two phases t
 
 The Azure portal will guide you through the process of downloading a collector appliance, which carries out the discovery of VMs in your environment. The collector appliance is available to download to your vCenter Server in the OVA (Open Virtualization Appliance) format. Import, and spin up, the collector appliance, and complete its configuration to connect it to the Azure Migrate project.
 
-The collector uses VMware PowerCLI cmdlets to do agentless data collection on your VMware estate. The collector collects data about VM cores, memory, disk sizes, and network adapters. Where applicable the collector also gathers performance data like CPU and memory usage, disk IOPS, disk throughput, and network output.
+The collector uses VMware PowerCLI cmdlets to do agentless data collection on your VMware estate. The collector collects data about VM cores, memory, disk sizes, and network adapters. Where applicable, the collector also gathers performance data like CPU and memory usage, disk IOPS, disk throughput, and network output.
 
 To receive and store the collected data, Azure Migrate requires that you open port 443 between your internal network and Azure for:
 

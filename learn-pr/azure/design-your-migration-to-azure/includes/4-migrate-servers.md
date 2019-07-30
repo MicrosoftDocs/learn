@@ -34,14 +34,14 @@ For your company, you are focused on moving VMware and database workloads to Azu
 There are also several settings that need to be configured for the task of migrating on-premises virtual machines to Azure, they are:
 
 - **Set a protection goal**: For VMware environments set the goal to, on-premises migration to Azure using the VMware vSphere Hypervisor.
-- **Setup the target environment**: The target environment is set in the portal by selecting the Azure subscription and Resource Manger deployment model you wish to use. Select migrating VMware to Azure, Site Recovery will then verify a valid network exists in Azure that the migrated virtual machines will connect to.
+- **Setup the target environment**: The target environment is set in the portal by selecting the Azure subscription and Resource Manager deployment model you wish to use. Select migrating VMware to Azure, Site Recovery will then verify a valid network exists in Azure that the migrated virtual machines will connect to.
 - **Create a replication policy**: A replication policy contains settings such as a Recovery Point Objective (RPO) threshold. The policy is associated with the configuration server that has been deployed.
-- **Enable replication**: Enable the replication the Recovery Service vault level.
-  - Configure the Source. The source is the configuration server, the machine type is 'virtual machines', the vSphere host is the vCenter server on-premises, and the process server is the configuration server.
-  - Configure the target. On the target selection, the target is Azure, the subscription is your Azure subscription, the resource group is your target resource group, the network selection is the target network you want migrated virtual machines to connect to, and the subnet is that of the target network.
+- **Enable replication**: Enable the replication at the Recovery Service vault level.
+  - **Configure the Source**: The source is the configuration server, the machine type is 'virtual machines', the vSphere host is the vCenter server on-premises, and the process server is the configuration server.
+  - **Configure the target**: On the target selection, the target is Azure, the subscription is your Azure subscription, the resource group is your target resource group, the network selection is the target network you want migrated virtual machines to connect to, and the subnet is that of the target network.
   - Select the virtual machines to migrate.
-  - Configure the properties by selecting the domain account used by the process server to install the Mobility service on the VMware machines. Disks that aren't required to be replicated can be de-selected. By default, all the disks used by a virtual machine are migrated.
-  - Select the replication policy. This policy sets the App-consistent snapshot frequency, RPO threshold, and recovery point retention period.
+  - **Configure the properties**: Select the domain account used by the process server to install the Mobility service on the VMware machines. Disks that aren't required to be replicated can be de-selected. By default, all the disks used by a virtual machine are migrated.
+  - **Select the replication policy**: The replication policy sets the App-consistent snapshot frequency, RPO threshold, and recovery point retention period.
 
 ## Start the migration
 
