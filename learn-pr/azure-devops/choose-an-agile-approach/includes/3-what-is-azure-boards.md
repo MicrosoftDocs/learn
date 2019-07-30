@@ -19,7 +19,7 @@ Perhaps it's easier to show you. Here's Azure Boards using the Basic process.
 * **Capability Maturity Model Integration (CMMI)**. This is really for large organizations and it's pretty complicated so I didn't use it.
 * **Scrum**. Scrum depends on a Scrum master who leads the Scrum team. The Scrum master makes sure everybody understands Scrum theory, practices, and rules. We don't have a Scrum master; that's someone who's usually received some training and certification so I didn't pick that one either.
 * **Agile**. This seemed like the obvious choice since I'm always talking about Agile, but it has a few more things to consider than the simplest option.
-* **Basic**. Basic is, well, basic. It's simple but gives us enough power to start doing effective planning right away, and that's why I picked it. The Basic workflow is pretty simple; you move work from **To Do** to **Doing** to **Done**.
+* **Basic**. Basic is, well, basic. It's simple but gives us enough power to start doing effective planning right away, and that's why I picked it. In the Basic workflow, you move work from **To Do** to **Doing** to **Done**.
 
 **Amita**: OK, let's use it to get started. We can switch to something else, right?
 

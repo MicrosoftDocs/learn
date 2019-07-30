@@ -10,7 +10,7 @@ After they shipped the release, Mara and Andy sat down for coffee. They were bot
 
 **Mara**: I have and I think we could make things easier here, too. I really believe DevOps can help us.
 
-**Andy**: I remember we did a value stream mapping exercise, but now what? We've got to get started on the new release. I thought we were done with DevOps.
+**Andy**: I remember we did a Value Stream Mapping exercise, but now what? We've got to get started on the new release. I thought we were done with DevOps.
 
 **Mara**: There's a lot more we can do. I think we should take the first step and do some Agile planning. We can use Azure Boards to help us.
 
@@ -29,6 +29,6 @@ After they shipped the release, Mara and Andy sat down for coffee. They were bot
 
  **Mara**: It's not magic, but we can do it bit by bit, and Azure DevOps gives us the tools we need to implement Agile practices. For now, when we want to plan, we can use Azure Boards. First, can you explain the build process to me and help me identify the big problems?
 
- After a lot of coffee, Mara and Andy identify the biggest problems in the build process. All the issues came up during the last release. After Andy leaves, Mara looks at her scribbled notes and decides to do a little Agile planning herself. On her own, she uses the Basic process on Azure Boards to get all the problems in one place.
+ After lots of coffee, Mara and Andy identify the biggest problems in the build process. All the issues came up during the last release. After Andy leaves, Mara looks at her scribbled notes and decides to do a little Agile planning herself. On her own, she uses the Basic process on Azure Boards to get all the problems in one place.
 
 Her next step is to show the board to the team and get them involved.
