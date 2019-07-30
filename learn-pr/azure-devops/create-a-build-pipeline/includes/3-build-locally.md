@@ -4,7 +4,7 @@ Mara is going to do exactly that and, by following the procedures, you can do th
 
 ## Prepare Visual Studio Code
 
-Here you'll set up Visual Studio Code so you can build the website locally and work with source files.
+First you'll set up Visual Studio Code so you can build the website locally and work with source files.
 
 Visual Studio Code comes with an integrated terminal, so you can edit files and work from the command line all from one place.
 
@@ -43,7 +43,7 @@ At a minimum, you'll need to complete the following steps. Run these commands fr
 
 ## Get the source code
 
-Here you'll get the source code from GitHub and set up Visual Studio Code so that you can run the app and work with source code files.
+Now you'll get the source code from GitHub and set up Visual Studio Code so that you can run the app and work with source code files.
 
 ### Create a fork
 
@@ -57,21 +57,21 @@ To fork the *Space Game* web project into your GitHub account:
 
 1. In a web browser, go to [GitHub](https://github.com?azure-portal=true) and sign in.
 1. Go to the [*Space Game*](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web?azure-portal=true) web project.
-1. Select **Fork**.
+1. Select **Fork**:
 
     ![The Fork button on GitHub](../media/3-github-fork-button.png)
 1. Follow the instructions to fork the repository into your account.
 
 ### Clone your fork locally
 
-You now have a copy of the *Space Game* web project in your GitHub account. Here you'll download, or *clone*, a copy to your computer so you can work with it.
+You now have a copy of the *Space Game* web project in your GitHub account. Now you'll download, or *clone*, a copy to your computer so you can work with it.
 
 A clone, just a like a fork, is a copy of a repository. When you clone a repository, you can make changes, verify they work as you expect, and then upload those changes back to GitHub. You can also synchronize your local copy with changes other authenticated users have made to GitHub's copy of your repository.
 
 To clone the *Space Game* web project to your computer:
 
 1. Go to your fork of the *Space Game* web project on GitHub.
-1. Select **Clone or download**. Then select the button next to the URL that's shown to copy the URL to your clipboard.
+1. Select **Clone or download**. Then select the button next to the URL that's shown to copy the URL to your clipboard:
 
     ![The Clone or download button on GitHub](../media/3-github-clone-button.png)
 1. In Visual Studio Code, go to the terminal window and run the `git clone` command. Replace the URL that's shown here with the contents of your clipboard:
@@ -98,14 +98,14 @@ Run this `git remote` command to list your remotes:
 git remote -v
 ```
 
-You see that you have both fetch (download) and push (upload) access to your repository.
+You see that you have both fetch (download) and push (upload) access to your repository:
 
 ```output
 origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (fetch)
 origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (push)
 ```
 
-Here, *origin* specifies your repository on GitHub. When you fork code from another repository, it's common to name the original remote (the one you forked from) as *upstream*.
+*Origin* specifies your repository on GitHub. When you fork code from another repository, it's common to name the original remote (the one you forked from) as *upstream*.
 
 Run this `git remote add` command to create a remote named *upstream* that points to the Microsoft repository:
 
@@ -119,7 +119,7 @@ Run `git remote` a second time to see the changes:
 git remote -v
 ```
 
-You see that you still have both fetch (download) and push (upload) access to your repository. You also now have fetch access from the Microsoft repository.
+You see that you still have both fetch (download) and push (upload) access to your repository. You also now have fetch access from the Microsoft repository:
 
 ```output
 origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (fetch)
@@ -129,7 +129,7 @@ upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.
 
 ### Open the project in the file explorer
 
-In Visual Studio Code, your terminal window points to the root directory of the *Space Game* web project. Here you'll open the project from the file explorer so you can view its structure and work with files.
+In Visual Studio Code, your terminal window points to the root directory of the *Space Game* web project. You'll now open the project from the file explorer so you can view its structure and work with files.
 
 1. On the **File** menu, select **Open** or **Open Folder**.
 1. Navigate to the root directory of the *Space Game* web project.
