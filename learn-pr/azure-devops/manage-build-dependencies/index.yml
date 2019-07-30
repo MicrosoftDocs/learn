@@ -18,7 +18,7 @@ abstract: |
   - Connect an application to your package and build the application in Azure Pipelines
   - Push up a change to your package and update your application to use it
 prerequisites: |
-  - An Azure DevOps account
+  - An Azure DevOps organization
   - Visual Studio Code
   - .NET Core 2.1
   - Git

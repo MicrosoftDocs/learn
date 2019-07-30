@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn-sqlserver.deploy-sql-server-linux.9-exercise-install-sql-server-docker
+title: Exercise -  Install SQL Server on Docker
+metadata:
+  title: Exercise - Install SQL Server on Docker
+  description: In this unit, you will install Docker and then use it to host a SQL Server 2017 container.
+  ms.date: 06/11/2019
+  author: alistairmatthews
+  ms.author: v-alism
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+  ROBOTS: NOINDEX
+interactive: bash
+azureSandbox: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-exercise-install-sql-server-docker.md)]

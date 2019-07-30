@@ -97,6 +97,16 @@
                 "dest": "modules"
             },
             {
+                "src": "sqlserver",
+                "files": [
+                    "**/*.yml"
+                ],
+                "exclude": [
+                    "**/includes/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "wwl-mba",
                 "files": [
                     "**/*.yml"
