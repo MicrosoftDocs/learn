@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.module-uid.3-metric-alerts
+uid: learn.incident-response-with-alerting-on-azure.3-metric-alerts
 metadata:
   title: Use metric alerts to alert on performance issues in your Azure environment
-  description: TODO
+  description: Investigate the different kinds of metric alerts supported by Azure Monitor.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Use metric alerts to alert on performance issues in your Azure environment
-durationInMinutes: 10
+durationInMinutes: 4
 content: |
   [!include[](includes/3-metric-alerts.md)]
