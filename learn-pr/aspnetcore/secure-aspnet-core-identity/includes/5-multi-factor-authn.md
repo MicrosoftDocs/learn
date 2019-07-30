@@ -9,7 +9,7 @@
 
     1. Incorporate the highlighted changes in the `OnGetAsync` page handler:
 
-        [!code-csharp[](../code/Areas/Identity/Pages/Account/Manage/5-EnableAuthenticator-OnGetAsync.cs?highlight=1,10)]
+        [!code-csharp[](../code/Areas/Identity/Pages/Account/Manage/5-EnableAuthenticator-OnGetAsync.cshtml.cs?highlight=1,10)]
 
         In the preceding page handler, parameter injection provides a reference to the `QRCodeService` singleton service. `QRCodeService` is responsible for interactions with a third-party library which generates QR codes.
 
