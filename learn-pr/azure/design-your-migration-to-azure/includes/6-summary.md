@@ -1,6 +1,6 @@
 In this module, you learned about planning a migration to Azure, and how in-depth planning, scoping, and due diligence can offer tangible benefits at migration time.
 
-You also learned about a selection of tools offered to assist in your migration. First, **Azure Migrate** offers a comprehensive way to assess your existing environment and offering recommendations about sizing and compute requirements for your different workloads. Second, **Azure Site Recovery** can be used to migrate servers to the Azure platform. Last, **Azure Database Migration Service** helps you move SQL workloads from On-premises servers to Azure, like Azure Migrate it provides comprehensive guidance and recommendations to assist you.
+You also learned about a selection of services offered to assist in your migration. First, **Azure Migrate** offers a comprehensive way to assess your existing environment and offers recommendations about sizing and compute requirements for your different workloads. Second, **Azure Site Recovery** can be used to migrate servers to Azure virtual machines. Last, **Azure Database Migration Service** helps you move SQL workloads from on-premises servers to Azure. Similar to Azure Migrate, it provides comprehensive guidance and recommendations to assist you.
 
 ## Learn more
 
