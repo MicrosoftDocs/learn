@@ -25,7 +25,7 @@
     <div id="qrCode"></div>
     ```
 
-    With the following HTML:
+    With the following markup:
 
     ```cshtml
     <div id="qrCode">
