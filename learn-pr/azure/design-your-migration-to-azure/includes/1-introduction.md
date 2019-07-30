@@ -1,4 +1,4 @@
-There are several tools that can help you achieve a successful migration of services to Azure these include **Azure Migrate**, **Azure Site Recovery** and the **Azure Database Migration service**.
+There are several services that can help you achieve a successful migration of resources to Azure. These services include **Azure Migrate**, **Azure Site Recovery** and the **Azure Database Migration service**.
 
 You're the solution architect for a manufacturing company that is planning to move several data centers to Azure. You've been asked to plan your migration, and identify the tools and services you can use to migrate your company's services. Your workloads consist primarily of VMware virtual machine-based workloads with data stored in relational databases.
 
