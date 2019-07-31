@@ -68,6 +68,8 @@ Your GitHub repository likely already has your latest changes to your `build-pip
 
 1. Ensure that **base** specifies your forked repository and not Microsoft's repository.
 
+    ![Animation on how to set the right base branch](../media/4-pull-request.gif)
+
     ![The compare to base dropdowns](../media/4-github-set-base.png)
 
     > [!IMPORTANT]
