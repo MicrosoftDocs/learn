@@ -10,7 +10,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone pivot="windows"
 
-1. In the Cloud Shell window on the right, run the following commands to create a Windows DataCenter Server virtual machine running IIS. When prompted for the Admin password, enter **Pa55w.rdDemo**:
+1. In the Cloud Shell window on the right, run the following commands to create a Windows DataCenter Server virtual machine running IIS. When prompted for the Admin password, enter a password of your choice:
 
     ```azurecli
     az vm create \
@@ -44,13 +44,13 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 3. In the web browser, navigate to the public IP address of the virtual machine. Verify that a web page displaying the name of the virtual machine (MyWindowsVM):
 
-    ![Screenshot of the web page from the virtual machine](../media/4-original-vm-web-page.png)
+    ![Screenshot of the web page from the Windows virtual machine](../media/4-original-vm-web-page.png)
 
 ::: zone-end
 
 ::: zone pivot="linux"
 
-1. In the Cloud Shell window on the right, run the following commands to create an Ubuntu Server virtual machine running nginx. When prompted for the Admin password, enter **Pa55w.rdDemo**:
+1. In the Cloud Shell window on the right, run the following commands to create an Ubuntu Server virtual machine running nginx. When prompted for the Admin password, enter a password of your choice:
 
     ```azurecli
     az vm create \
@@ -78,13 +78,13 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
     ```azurecli
     az vm list-ip-addresses \
         --resource-group <rgn>[Sandbox reource group name]</rgn> \
-        --name UbuntuVM \
+        --name MyUbuntuVM \
         --output table
     ```
 
 3. In the web browser, navigate to the public IP address of the virtual machine. Verify that a web page displaying the name of the virtual machine (MyUbuntuVM):
 
-    ![Screenshot of the web page from the virtual machine](../media/4-original-ubuntu-web-page.png)
+    ![Screenshot of the web page from the Ubuntu virtual machine](../media/4-original-ubuntu-web-page.png)
 
 ::: zone-end
 
@@ -102,23 +102,35 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 1. In the **Connect to virtual machine** window, click **Download RDP File**.
 
+    ![Screenshot of the Windows virtual machin page, highlighting the **Connect** button and RDP download](../media/4-connect-to-windows-vm.png)
+
 1. When the RDP file has downloaded, click it to open an RDP connection to the virtual machine.
 
 1. In the **Remote Desktop Connection** dialog box, click **Connect**.
 
+    ![Screenshot RDP Connection dialog box](../media/4-rdp-dialog.png)
+
 1. In the **Windows Security** dialog box, click **More choices**, and then click **Use a different account**.
 
-1. Sign in with the username **azureuser**, and password **Pa55w.rdDemo**.
+1. Sign in with the username **azureuser**, and the Admin password you used when you created the original virtual machine.
 
 1. In the **Remote Desktop Connection** dialog box, click **Yes** to proceed.
 
+    ![Screenshot RDP Connection dialog box](../media/4-rdp-proceed.png)
+
 1. On the virtual machine, click the Windows button in the bottom left-hand corner of the screen.
+
+    ![The Windows button in the Windows taskbar](../media/4-windows-taskbar.png)
 
 1. On the **Start** page, click the down arrow.
 
+    ![The Windows Start page](../media/4-windows-start-page.png)
+
 1. Right-click **Command Prompt**, and then click **Run as administrator**.
 
-1. In the Command Prompt window, run the following command the directory:
+    ![Opening the Windows Command Prompt as Administrator](../media/4-open-command-prompt.png)
+
+1. In the Command Prompt window, run the following command to execute the **Sysprpe** utility:
 
     ```command
     C:\windows\system32\sysprep\sysprep
@@ -131,6 +143,8 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
     | System Cleanup Action | Enter System Out-of-Box Experience (OOBE) |
     | Generalize | Check  |
     | Shutdown Options | Shutdown |
+
+    ![Screenshot of the Sysprep dialog box](../media/4-sysprep.png)
 
 1. Wait for the sysprep utility to complete. The connection to the virtual machine will be terminated when sysprep has finished and shut down the virtual machine. In the **Remote Desktop Connection** message box, click **OK**.
 
@@ -216,7 +230,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ## Create a virtual machine using the new image
 
-1. Run the following command to create a new virtual machine using the **MyVMImage** image. If you're creating a virtual machine based on a Windows image, you'll be prompted for the Admin password. In this case, enter **Pa55w.rdDemo**:
+1. Run the following command to create a new virtual machine using the **MyVMImage** image. If you're creating a virtual machine based on a Windows image, you'll be prompted for the Admin password. Enter the Admin password you used when you created the original virtual machine:
 
     ```azurecli
     az vm create \

@@ -1,12 +1,10 @@
-You've learnt about Azure images, how you can use a generalized image to build pre-configured virtual machines, and how you can use a specialized image as a snapshot of a virtual machine at a particular point in time.
+You've learned about Azure images, how you can use a generalized image to build pre-configured virtual machines, and how you can use a specialized image as a snapshot of a virtual machine at a particular point in time.
 
 In the sample scenario, you need to create generalized images for a variety of virtual machines. Some of these virtual machines will run Windows, while others require Linux.
 
 In this unit, you'll learn how to customize an image, and then generalize this image so you can use it to deploy virtual machines. You can create virtual machines running Windows and Linux, but the tools and techniques to use to build a generalized image vary according to the operating system.
 
-## Generalize a virtual machine
-
-::: zone pivot="windows"
+## Generalize a Windows virtual machine
 
 If you're building a Windows image, you can use the **sysprep** utility to prepare a virtual machine for generalization. Sysprep removes server-specific information from the image, such as the hostname, user sign-in information, and logs. Sysprep also removes any machine-specific identifiers used internally by Windows.
 
@@ -43,9 +41,7 @@ az vm deallocate \
     --name <virtual machine name>
 ```
 
-::: zone-end
-
-::: zone pivot="linux"
+## Generalize a Linux virtual machine
 
 If you're building a Linux image, you use the **waagent** tool to prepare a virtual machine for generalization. The **waagent** tool performs a number of tasks, including deleting the most recently created user account, removing public SSH keys, resetting the host name and other machine-specific details, and cleaning log files.
 
@@ -91,8 +87,6 @@ az vm generalize \
     --name <virtual machine name>
 ```
 
-::: zone-end
-
 ## Create an image from a generalized virtual machine
 
 Once you have generalized the virtual machine, you can create an image. The image will include all of the disks associated with the virtual machine. You can create an image from the generalized virtual machine using the Azure portal, the Azure CLI, or PowerShell.
@@ -133,8 +127,6 @@ az image create \
     --source <generalized virtual machine>
 ```
 
-For more information, visit [Create a managed image of a generalized VM in Azure](https://docs.microsoft.com/azure/virtual-machines/windows/capture-image-resource).
-
 ## Create a new virtual machine from a generalized image
 
 You can build a new virtual machine using your generalized image. The simplest way to do this is to use the Azure portal. Go to the page for your image, and select **+ Create VM**. You'll then be prompted for the machine-specific details, such as the virtual machine name, user account, virtual machine size, network ports to open, and so on.
@@ -165,48 +157,23 @@ For more information, see [Create a VM from a managed image](https://docs.micros
 
 ## Create a snapshot of a VHD
 
-A virtual machine image contains an image of every VHD in the virtual machine. You can also create separate snapshot images of a VHD at any time. A snapshot is a read-only copy of a VHD. You can use a snapshot to restore a VHD to the state it was in when the snapshot was taken. You can take a set of snapshots of the VHDs for a virtual machine to create a *golden image* of the virtual machine.
+A virtual machine image contains an image of every VHD in the virtual machine. You can also create separate snapshot images of a VHD at any time. A snapshot is a read-only copy of a VHD. You can use a snapshot to restore a VHD to the state it was in when the snapshot was taken.
 
 > [!IMPORTANT]
-> If you taking a golden image of a virtual machine that spans several VHDs, you must ensure that the virtual machine is quiescent, and that you take a snapshot of every VHD. Failure to do this can result in inconsistencies if you need to restore the virtual machine from these snapshots.
-> 
-> Additionally, don't confuse the snapshots taken for a golden image with those that you can schedule using the virtual machine backup facility. A virtual machine backup is intended to help you recover from a hardware or software failure. A golden image is typically used to provide a set of VHDs from which you can roll out a new set of virtual machines to a given state, or restore a system to a specified state.
+> If you're taking an image of a virtual machine that spans several VHDs, you must ensure that the virtual machine is quiescent, and that you take a snapshot of every VHD. Failure to do this can result in inconsistencies if you need to restore the virtual machine from these snapshots.
 
 Unlike creating an image of a virtual machine, capturing a snapshot of a VHD is a non-destructive process, and you can continue running virtual machines using the VHD afterwards.
 
-To create a snapshot of a VHD using the Azure portal:
+You can create a snapshot of a VHD in several ways:
 
-- Click **+ Create a resource**, and in the **Search the Marketplace** box enter **Snapshot**.
-- On the **Create snapshot** page, provide a name, resource group, and location for the snapshot, and specify the source disk to copy. The source disk must be a managed disk.
-
+- Using the Azure portal:
+  
   ![Screenshot of the Create Snapshot page in the Azure portal](../media/3-create-snapshot.png)
 
-To create a VHD snapshot with PowerShell, run the following commands. These commands locate the operating system disk for the virtual machine and copy it. If you want to take a snapshot of one of the data disks, replace the **SourceUri** argument in the second command with `$vm.StorageProfile.DataDisks[*n*].ManagedDisk.Id`, where *n* is the data disk number (0 for the first data disk, 1, for the second, and so on):
+- Using the `New-AzSnapshotConfig` and `New-AzSnapshot` cmdlets in Azure PowerShell. You specify the source disk with the `New-AzSnapshotConfig` cmdlet, and provide these details to the `New-AzSnapshot` cmdlet to actually create the snapshot.
+- Using the `az snapshot create` command in the Azure CLI.
 
-```powershell
-$vm = get-azvm -ResourceGroupName <resource group> `
-    -Name <virtual machine name>
-
-$snapshot =  New-AzSnapshotConfig `
-    -SourceUri $vm.StorageProfile.OsDisk.ManagedDisk.Id  `
-    -Location <virtual machine location> ` 
-    -CreateOption copy
-
-New-AzSnapshot -Snapshot $snapshot `
-    -SnapshotName <snapshot name> `
-    -ResourceGroupName <resource group>
-```
-
-If you're using the Azure CLI, you can create a VHD snapshot with the following command. In this example, the named VHD must be in the resource group specified by the `--resource-group` flag:
-
-```azurecli
-az snapshot create \
-    --resource-group <resource-group> \
-    --name <snapshot name> \
-    --source <virtual hard disk>
-```
-
-After you've created a snapshot, you can export it for safekeeping. In the Azure portal, go to the page for the newly created snapshot, and select Export. You can generate a temporary, secure URL from where you can download the snapshot as a VHD file.
+After you've created a snapshot, you can export it for safekeeping. In the Azure portal, go to the page for the newly created snapshot, and select **Export**.
 
 ![Screenshot of the Snapshot page in the Azure portal](../media/3-export-snapshot.png)
 

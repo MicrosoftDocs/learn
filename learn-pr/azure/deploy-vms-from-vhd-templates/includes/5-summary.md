@@ -5,6 +5,8 @@ In this module you've learned about customized virtual machine images and how yo
 - Create a virtual machine image
 - Create a virtual machine from an existing virtual machine image
 
+In the finance organization scenario, you can use this knowledge to build a customized virtual machine image configured to meet the organization;s requirements. You can then use this image to roll out virtual machines across the entire organization.
+
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
 ## Learn more
@@ -12,3 +14,4 @@ In this module you've learned about customized virtual machine images and how yo
 - [Create a managed image of a generalized VM in Azure](https://docs.microsoft.com/azure/virtual-machines/windows/capture-image-resource)
 - [How to create an image of a virtual machine or VHD](https://docs.microsoft.com/azure/virtual-machines/linux/capture-image)
 - [Create a Windows VM from a specialized disk by using PowerShell](https://docs.microsoft.com/azure/virtual-machines/windows/create-vm-specialized)
+- [Introduction to Azure managed disks](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview)
