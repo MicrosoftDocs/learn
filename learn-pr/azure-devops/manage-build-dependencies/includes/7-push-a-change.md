@@ -54,9 +54,9 @@ Now that you've added the new property to the `Score` class, and verified the pr
 
     Here, we bump the version from 1.0.0 to 2.0.0 to make the change clear. In practice, you would follow the versioning scheme for the kind of package you're working with.
 
-    For example, according to Semantic Versioning, bumping the major version to 2 tells others that the package is not backwards compatible with applications that use version 1 of that package. Those who use the package wouldn't need to modify their application to adapt to any breaking changes.
+    For example, according to Semantic Versioning, bumping the major version to 2 tells others that the package is not backward compatible with applications that use version 1 of that package. Those who use the package wouldn't need to modify their application to adapt to any breaking changes.
 
-    Popular open source projects provide documentation in the form of a _changelog_ that explains the changes made in each version, as well as how to migrate from one major version to the next.
+    Popular open-source projects provide documentation in the form of a _changelog_ that explains the changes made in each version, as well as how to migrate from one major version to the next.
 
 1. Stage, commit, and push your changes.
 
