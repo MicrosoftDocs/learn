@@ -89,14 +89,14 @@ Semantic Versioning is a popular versioning scheme. Here's the format:
 Here is what each of these parameters means:
 
 * A new **Major** version introduces breaking changes. Applications typically need to update how they use the package to work with a new major version.
-* A new **Minor** version introduces new features, but is backwards-compatible with earlier versions.
-* A new **Patch** introduces backwards-compatible bug fixes, but not new features.
+* A new **Minor** version introduces new features, but is backward compatible with earlier versions.
+* A new **Patch** introduces backward compatible bug fixes, but not new features.
 
 The **-Suffix** part is optional and identifies the package as a pre-release version. For example, 1.0.0-beta1 might identify the package as the first beta pre-release build for the 1.0.0 release.
 
 When you reference a package, you do so by version number.
 
-Here is an example of installing a package by using PowerShell, using a specific version number.
+Here is an example of installing a package by using PowerShell and a specific version number.
 
 ```powershell
 Install-Package -Name "Json.NET" -Version 12.0.2
@@ -110,7 +110,7 @@ Many frameworks enable you to specify allowable ranges of package versions to in
 
 For example, in NuGet, version "1.0" means the first version that's equal to or greater than 1.0. "[1.0]" specifies to install version 1.0 only, and not a newer version.
 
-Here are a few other examples.
+Here are a few other examples:
 
 | This notation: | Selects:                                                                            |
 |----------------|-------------------------------------------------------------------------------------|
@@ -121,7 +121,7 @@ Here are a few other examples.
 
 As each maintainer releases a new package version, you can evaluate what's changed and test your application against it. When you're ready, you can update the package's version number in your configuration, and submit the change to your build pipeline.
 
-Here's an example of the package dependencies from our Tailspin-SpaceGame-Web project file. In this project, we depend on packages like Newtonsoft.Json, and you can see that we specify version 12.0.1 of that package.
+Here's an example of the package dependencies from our Tailspin-SpaceGame-Web project file. In this project, we depend on packages such as Newtonsoft.Json, and you can see that we specify version 12.0.1 of that package.
 
 ```xml
 <ItemGroup>
