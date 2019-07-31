@@ -15,4 +15,4 @@ azureSandbox: true
 interactive: bash-editor
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-add-identity.md)]
+  [!include[](includes/4-customize-identity.md)]
