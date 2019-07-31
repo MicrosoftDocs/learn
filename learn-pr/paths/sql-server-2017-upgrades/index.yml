@@ -1,30 +1,23 @@
 ### YamlMime:LearningPath
 uid: learn-sqlserver.sql-server-2017-upgrades
 metadata:
-  title: SQL Server 2017 upgrades
-  #TODO: Update description for search engines.
-  description: Description of path for search engines.
+  title: SQL Server upgrades
+  description: Running the latest version of SQL Server provides you with numerous performance and functionality benefits while also extending the support of your database platform. In this learning path you will learn how to take an inventory of your SQL Server deployments using the Microsoft Assessment and Planning toolkit, how to upgrade SQL Server databases using the Data Migration Assistant, and how to optimize your updated system using both the Data Experimentation Assistant and Query Tuning Assistant.
   author: geoffallix
   ms.author: v-gea
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 title: SQL Server 2017 upgrades
-#TODO: Update summary, shown on learning path page and browse card.
-summary: Description of path, shown on learning path landing page and browse card.
-#TODO: Verify or update prequisites.
-prerequisites: None
+summary: Running the latest version of SQL Server provides you with numerous performance and functionality benefits while also extending the support of your database platform. In this learning path you will learn how to take an inventory of your SQL Server deployments using the Microsoft Assessment and Planning toolkit, how to upgrade SQL Server databases using the Data Migration Assistant, and how to optimize your updated system using both the Data Experimentation Assistant and Query Tuning Assistant.
+prerequisites: Basic understanding of SQL Server database administration.
 iconUrl: /learn/achievements/sqlserver/sql-server-2017-upgrades.svg
 levels: 
-#TODO: Verify applicable levels.
-- beginner
+- intermediate
 roles: 
-#TODO: Verify applicable roles.
-- administrator
+- data-engineer
 products: 
-#TODO: Update with correct taxonomy.
 - sql-server
 modules:
-#TODO: Check that the correct modules are included.
 - learn-sqlserver.introduction-upgrading-sql-server
 - learn-sqlserver.sql-server-discovery-using-map
 - learn-sqlserver.assess-convert-sql-server-databases-using-dma
