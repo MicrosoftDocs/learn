@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.analyze-costs-create-budgets-azure-cost-management.exercise-create-budget
+title: Exercise - Create your first budget
+metadata:
+  title: Exercise - Create your first budget
+  description: Exercise - Create your first budget
+  ms.date: 7/31/2019
+  author: bandersmsft
+  ms.author: banders
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+interactive: azure-portal
+azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-exercise-create-budget.md)]
