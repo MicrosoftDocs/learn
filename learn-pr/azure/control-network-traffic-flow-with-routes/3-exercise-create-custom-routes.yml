@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.module-uid.3-exercise-create-custom-routes
+uid: learn.control-network-traffic-flow-with-routes.3-exercise-create-custom-routes
 metadata:
-  title: Exercise - title
-  description: TODO
+  title: Exercise - Create custom routes
+  description: Create custom routes
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Exercise - title
+title: Exercise - Create custom routes
 durationInMinutes: 10
 interactive: bash
 azureSandbox: true

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.module-uid.6-summary
+uid: learn.control-network-traffic-flow-with-routes.7-summary
 metadata:
   title: Summary
-  description: TODO
+  description: Summary
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
@@ -12,4 +12,4 @@ metadata:
 title: Summary
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/7-summary.md)]
