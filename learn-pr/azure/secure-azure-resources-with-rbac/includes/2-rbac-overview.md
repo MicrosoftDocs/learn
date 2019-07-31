@@ -72,6 +72,12 @@ The following example shows how the Marketing group has been assigned the Contri
 
 RBAC is an allow model. What this means is that when you are assigned a role, RBAC allows you to perform certain actions, such as read, write, or delete. So, if one role assignment grants you read permissions to a resource group and a different role assignment grants you write permissions to the same resource group, you will have write permissions on that resource group.
 
-RBAC has something called `NotActions` permissions. Use `NotActions` to create a set of allowed permissions when specific permissions need to be excluded. The access granted by a role, the effective permissions, is computed by subtracting the `NotActions` operations from the `Actions` operations.
+RBAC has something called `NotActions` permissions. Use `NotActions` to create a set of allowed permissions. The access granted by a role, the effective permissions, is computed by subtracting the `NotActions` operations from the `Actions` operations. For example, the [Contributor](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor) role has both Actions and NotActions. The wildcard (*) in Actions indicates that it can perform all operations on the control plane. Then you subtract the following operations in NotActions to compute the effective permissions:
+
+- Delete roles and role assignments
+- Create roles and role assignments
+- Grants the caller User Access Administrator access at the tenant scope
+- Create or update any blueprint artifacts
+- Delete any blueprint artifacts
 
 In this unit, you learned the basics of how RBAC works. Now that you have the RBAC fundamentals out of the way, you can get your hands dirty by starting to use RBAC. The easiest way to get started is to use the Azure portal. The rest of this module has you perform hands-on exercises related to RBAC.
