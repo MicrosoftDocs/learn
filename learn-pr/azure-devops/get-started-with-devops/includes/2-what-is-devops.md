@@ -4,21 +4,21 @@ Mara has called a short meeting with her teammates. Everyone has shown up but no
 
 **Mara**: Hi, thanks for coming. I wanted to talk more about our value stream map and how we can make our processes more efficient.
 
-Mara's value stream map is still on the whiteboard from their previous meeting.
+Mara's value stream map is still on the whiteboard from their previous meeting:
 
 ![A whiteboard showing the value stream map](../media/2-vsm-whiteboard1.png)
 
-**Mara**: Our value stream map shows where we lose efficiency delivering value to our customers. Just like everyone else, we can improve. And we can decide which areas to tackle first.
+**Mara**: Our value stream map shows where we lose efficiency in delivering value to our customers. Just like everyone else, we can improve. And we can decide which areas to tackle first.
 
 **Andy**: This shows us where we have problems but not what to do about them.
 
-**Mara**: Right, it's an exercise that helps point us in the right direction. As for what to do about our problems, I think that DevOps will help us. At my last company, our deployment rates went way up, lead times were much faster, and operations had far fewer incidents. It took us a while to get there but it was worth it. DevOps isn't a quick fix.
+**Mara**: Right, it's an exercise that helps point us in the right direction. As for what to do about our problems, I think DevOps will help us. At my last company, our deployment rates went way up, lead times were much faster, and operations had far fewer incidents. It took us a while to get there but it was worth it. DevOps isn't a quick fix.
 
 **Tim**: I know someone who just got a job as a DevOps engineer. I think it's more for developers. That sounds like you, Andy.
 
 **Mara**: DevOps isn't a job title.
 
-**Amita**: Is there any software program we can get that will help us along or a template? Maybe there's a DevOps spreadsheet.
+**Amita**: Is there any software program we can get that will help us along, or a template? Maybe there's a DevOps spreadsheet.
 
 **Mara**: DevOps isn't a piece of software.
 
@@ -89,5 +89,5 @@ When considering what DevOps is, it's also important to make sure we understand 
 
 - A methodology
 - A specific piece of software
-- A quick-fix for an organization's challenges
+- A quick fix for an organization's challenges
 - Just a team or a job title (although these titles are reasonably common in the industry)

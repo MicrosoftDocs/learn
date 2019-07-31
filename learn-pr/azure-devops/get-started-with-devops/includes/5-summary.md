@@ -1,4 +1,4 @@
-In this module, you learned about what DevOps is (and what it is *not*) and about the Microsoft DevOps suite, Azure DevOps. You also set up an account in Azure DevOps and created an organization.
+In this module, you learned about what DevOps is (and what it's *not*) and about the Microsoft DevOps suite, Azure DevOps. You also set up an account in Azure DevOps and created an organization.
 
 In a comparison between elite performers and low performers, elite performers deploy more frequently, more quickly, and with fewer failures. This helps them better adapt to changing market conditions, experiment with new features, and recover from incidents with greater resiliency. DevOps gives you a path to becoming an elite performer.
 

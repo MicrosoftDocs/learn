@@ -12,7 +12,7 @@ Azure DevOps provides several tools you can use for better team collaboration. I
 |![Azure Pipelines](../media/azure-pipelines.png)|[Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines?azure-portal=true). These will let us build, test, and deploy with CI/CD that works with any language, platform, and cloud.|
 |![Azure Test Plans](../media/azure-test-plans.png)|[Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans?azure-portal=true). These are manual and exploratory testing tools.|
 
-Those are the three I was thinking about using now. There are two other services we can think about later.
+Those are the three I was thinking about using right now. There are two other services we can think about later.
 
 | | |
 |-|-|
