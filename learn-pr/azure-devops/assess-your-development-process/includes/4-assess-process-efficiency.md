@@ -1,10 +1,10 @@
-Creating a value stream map, or VSM, helps you analyze your current release cycle process. The purpose of a VSM is to visually show where in the process a team creates value and where there's waste. The goal, of course, is to have a process that delivers maximum value to the customer with minimum waste. A VSM can help you pinpoint those areas that either don't contribute any value or actually reduce the value of the product.
+Creating a *value stream map*, or VSM, helps you analyze your current release cycle process. The purpose of a VSM is to visually show where in the process a team creates value and where there's waste. The goal, of course, is to arrive at a process that delivers maximum value to the customer with minimum waste. A VSM can help you pinpoint those areas that either don't contribute any value or that actually reduce the value of the product.
 
 Let's see how Tailspin measures up.
 
 Mara, who's new to the team, is going to create a VSM to help her understand the existing process. With a VSM, she'll get a sense of where the team fits into the DevOps maturity model. As it turns out, more mature teams typically release faster, with greater confidence, and with fewer bugs than less mature teams.
 
-Mara knows she doesn't understand everything yet. So she's going to create a quick VSM on the whiteboard in the meeting room. There will be some gaps and unanswered questions, but that's okay. It's a start. When she's done as much as she can, she'll share it with the team. The VSM will give everyone a common starting point for identifying the first steps towards improving how Tailspin develops and releases its websites.
+Mara knows she doesn't understand everything yet. So she's going to create a quick VSM on the whiteboard in the meeting room. There will be some gaps and unanswered questions, but that's okay. It's a start. When she's done as much as she can, she'll share it with the team. The VSM will give everyone a common starting point for identifying the first steps toward improving how Tailspin develops and releases its websites.
 
 Let's take a look at her map.
 
@@ -44,7 +44,7 @@ Eventually, Tim deploys the feature and the feature makes it to the customer her
 
 Now we can look at the key performance metrics and see how we measure up.
 
-*Total lead time* is the time it takes for a feature to make it to the customer. *Process time* is the time spent on a feature that has value to the customer. The *activity ratio* is process time divided by total lead time.
+*Total lead time* is the time it takes for a feature to make it to the customer. *Process time* is the time spent on a feature that has value to the customer. The *activity ratio* is process time divided by total lead time:
 
 $${Activity\ ratio = }{\dfrac{Process\ time}{Total\ lead\ time}}$$
 

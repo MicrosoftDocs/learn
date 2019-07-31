@@ -1,6 +1,6 @@
 As you can see, Mara and her team face a number of challenges. Although releases happen eventually, Mara feels they can happen much more frequently and efficiently.
 
-Mara hopes she can convince the team it's at least worth testing out a DevOps approach. Perhaps they can apply a few Azure DevOps practices to finish up work on the _Space Game_ website.
+Mara hopes she can convince the team it's at least worth testing out a DevOps approach. Perhaps they can apply a few Azure DevOps practices as they finish up work on the _Space Game_ website.
 
 ## What is Azure DevOps?
 
