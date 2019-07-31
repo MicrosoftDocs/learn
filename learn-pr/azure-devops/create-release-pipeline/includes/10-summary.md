@@ -13,6 +13,7 @@ Learn more about integrating Azure DevOps with other CI/CD tools:
 * [Continuously deploy from a Jenkins build](https://docs.microsoft.com/azure/devops/pipelines/release/integrate-jenkins-pipelines-cicd?view=azure-devops&tabs=yaml&azure-portal=true)
 * [CircleCI artifacts for Release Pipeline](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-circleci-extension&azure-portal=true)
 * [GitLab Integration for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=onlyutkarsh.gitlab-integration&azure-portal=true)
+* Travis
 
 Learn more about deploying to various environments:
 

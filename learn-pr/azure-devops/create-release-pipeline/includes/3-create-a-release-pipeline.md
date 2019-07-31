@@ -61,7 +61,7 @@ Andy lists these options on the whiteboard:
 * Azure App Service
 * Serverless computing
 
-> ![Note]
+> [!Note]
 > More information on each of these options can be found in the summary of this module.
 
 **Mara:** I know containers and serverless computing are really popular right now. Compared to VMs, they're both lightweight in terms of resources. I also know that they're easy to replace and scale up. They're both interesting but I'm nervous learning about two new technologies at once. I'd rather just concentrate on building the pipeline.

@@ -1,4 +1,4 @@
-The team has been using a build pipeline to automate their build processes. Now, the team has decided to edit the pipeline to add the deployment stage. They deploy to an Azure AppService as proof of concept.
+The team has been using a build pipeline to automate their build processes. They have decided to edit the pipeline to add the deployment stage. They will deploy to an Azure AppService as proof of concept.
 
 Let's follow them as they create their first automated deployment.
 
@@ -35,8 +35,10 @@ Here you add the deploy stage to the pipeline to deploy your build artifact to t
 
 ### Create a service connection to the App Service
 
-> ![Important]
-> If the account you used for the App Service in Azure is different from the account you are using for Azure DevOps, add the Azure user account to Azure DevOps. TODO: Get the steps.
+> [!Important]
+> If the account you used for the App Service in Azure is different from the account you are using for Azure DevOps, add the Azure user account to Azure DevOps. 
+
+TODO: Get the steps.
 
 Your pipeline will need to access your app service. In order to do this without having to hard code your subscription ID in the pipeline, we will create a service connection.
 
