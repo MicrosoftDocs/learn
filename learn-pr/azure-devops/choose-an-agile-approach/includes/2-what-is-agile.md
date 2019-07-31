@@ -10,7 +10,7 @@ After they shipped the release, Mara and Andy sat down for coffee. They were bot
 
 **Mara**: I have and I think we could make things easier here, too. I really believe DevOps can help us.
 
-**Andy**: I remember we did a value-stream-mapping exercise, but now what? We've got to get started on the new release. I thought we were done with DevOps.
+**Andy**: I remember we did a value-stream mapping exercise, but now what? We've got to get started on the new release. I thought we were done with DevOps.
 
 **Mara**: There's a lot more we can do. I think we should take the first step and do some Agile planning. We can use Azure Boards to help us.
 
