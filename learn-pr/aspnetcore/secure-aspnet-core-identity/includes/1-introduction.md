@@ -14,6 +14,6 @@ In this module, you will:
 
 * Experience writing C# at the beginner level
 * Experience using relational databases and SQL as a developer
-* Familiarity with Entity Framework Core Migrations
+* Familiarity with Entity Framework (EF) Core migrations
 * Ability to write Razor at the beginner level
-* A TOTP authenticator app, such as Microsoft Authenticator (available in the [Google Play Store](https://play.google.com/store/apps/details?id=com.azure.authenticator) or the [Apple App Store](https://apps.apple.com/app/microsoft-authenticator/id983156458))
+* A time-based one-time password (TOTP) authenticator app, such as Microsoft Authenticator (available in the [Google Play Store](https://play.google.com/store/apps/details?id=com.azure.authenticator) or the [Apple App Store](https://apps.apple.com/app/microsoft-authenticator/id983156458))

@@ -69,7 +69,7 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
         The preceding resolves the data annotation attributes in the previous step.
 
-1. Create and apply an EF Core Migration to update the underlying data store:
+1. Create and apply an EF Core migration to update the underlying data store:
 
     ```bash
     dotnet ef migrations add UpdateUser && \

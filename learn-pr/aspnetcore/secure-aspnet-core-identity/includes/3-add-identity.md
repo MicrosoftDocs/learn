@@ -6,7 +6,7 @@
     dotnet tool install -g dotnet-aspnet-codegenerator
     ```
 
-    The scaffolder will be used to add the Identity components to the project.
+    The scaffolder is a .NET Core global tool which will be used to add the Identity components to the project.
 
 1. Add the following NuGet package to the project:
 
@@ -14,13 +14,24 @@
     dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
     ```
 
-1. Add the Identity Razor Class Library to the project. Run the following command from the project root:
+    The package installs code generation templates which are used by the `dotnet-aspnet-codegenerator` tool.
+
+    > [!TIP]
+    > Run `dotnet aspnet-codegenerator -h` to lists the available generators.
+
+1. Add the Identity components to the project. Run the following command from the project root:
 
     ```bash
     dotnet aspnet-codegenerator identity \
         --useDefaultUI \
         --dbContext ContosoPetsAuth
     ```
+
+    In the preceding command:
+
+    * The generator identified as `identity` is used to add Identity framework to the project.
+    * The `--useDefaultUI` option indicates that a Razor Class Library containing the default UI elements will be used. Bootstrap version 3 will be used to style the components.
+    * The `--dbContext` option to indicate the name of an EF Core database context class to generate.
 
 1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)]
 
@@ -71,7 +82,7 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
 
     * The Azure Key Vault Configuration provider is used to retrieve the database username and password.
     * The database username and password are injected into the connection string stored in *appsettings.json*.
-    * The Entity Framework Core database context class, named `ContosoPetsAuth`, is configured with the appropriate connection string.
+    * The EF Core database context class, named `ContosoPetsAuth`, is configured with the appropriate connection string.
     * The ASP.NET Core Identity services are registered, including the default UI (based on Bootstrap version 4), token providers, and cookie-based authentication.
 
 1. In *IdentityHostingStartup.cs*, add the following code to the block of `using` statements at the top. Save your changes.
@@ -134,7 +145,7 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
 
 ## Update the database
 
-1. Create and run an EF Migration to update the database:
+1. Create and run an EF Core migration to update the database:
 
     ```bash
     dotnet ef migrations add CreateIdentitySchema && \
