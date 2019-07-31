@@ -17,7 +17,10 @@
     The package installs code generation templates which are used by the `dotnet-aspnet-codegenerator` tool.
 
     > [!TIP]
-    > Run `dotnet aspnet-codegenerator -h` to lists the available generators.
+    > To view the available generators:
+    > 
+    > * In the command shell, run `dotnet aspnet-codegenerator -h`.
+    > * In Visual Studio, right-click the project in **Solution Explorer** and select **Add** > **New Scaffolded Item**.
 
 1. Add the Identity components to the project. Run the following command from the project root:
 
@@ -34,6 +37,17 @@
     * The `--dbContext` option to indicate the name of an EF Core database context class to generate.
 
 1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)]
+
+    An *Areas* directory structure appears in the project root:
+
+    * *Areas*
+        * *Identity*
+            * *Data*
+                * *ContosoPetsAuth.cs*
+            * *Pages*
+                * *_ValidationScriptsPartial.cshtml*
+                * *_ViewStart.cshtml*
+            * *IdentityHostingStartup.cs*
 
 ::: zone pivot="pg"
 

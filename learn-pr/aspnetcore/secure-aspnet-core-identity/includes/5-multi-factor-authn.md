@@ -1,4 +1,6 @@
-## Multi-factor authentication &mdash; generate QR code
+## Configure multi-factor authentication
+
+<!-- TODO: add lead-in text that talks about using a QR code -->
 
 1. Open *Pages/Account/Manage/EnableAuthenticator.cshtml.cs* and make the following changes:
     1. Add the following property to the `EnableAuthenticatorModel` class to store the QR code base-64 string representation:
