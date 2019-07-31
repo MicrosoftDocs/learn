@@ -15,7 +15,7 @@ Here you'll create an Azure DevOps project.
 
     The **Create a project to get started** dialog box opens. Or if this is your first project, you'll already be prompted to create your project.
 1. In the **Project name** field, type **Space Game - web**.
-1. In the **Description** field, type **The Space Game web site**.
+1. In the **Description** field, type **The Space Game website**.
 1. Under **Visibility**, you choose whether to make your project public or private. For now, you can choose private.
 
     Creators of open source projects will often choose public visibility so that others can view active issues and build status.
