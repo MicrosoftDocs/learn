@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-aspnet-core-identity.6-grant-admin-rights
+metadata:
+  title: Exercise - Grant administrative rights to a user
+  description: Learn how to manage user roles in an ASP.NET Core web app.
+  ms.date: 05/22/2019
+  author: scottaddie
+  ms.author: scaddie
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+  ROBOTS: NOINDEX
+  zone_pivot_groups: aspnet-core-identity-data-store
+title: Exercise - Grant administrative rights to a user
+azureSandbox: true
+interactive: bash-editor
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-grant-admin-rights.md)]

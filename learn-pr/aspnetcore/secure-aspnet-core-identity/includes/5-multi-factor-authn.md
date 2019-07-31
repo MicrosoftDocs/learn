@@ -34,7 +34,3 @@
         <img alt="embedded QR code" src="data:image/png;base64,@Model.QrCodeAsBase64" />
     </div>
     ```
-
-## Admin creation
-
-<!-- TODO -->

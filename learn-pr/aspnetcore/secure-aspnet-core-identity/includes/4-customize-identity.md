@@ -29,7 +29,7 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
 1. In the `Configure` method of *IdentityHostingStartup.cs*, the call to `AddDbContext` needs to be made aware of the new Identity user type. Incorporate the following highlighted change:
 
-    [!code-csharp[](../code/Areas/Identity/4-IdentityHostingStartup-Configure.cs?highlight=12)]
+    [!code-csharp[](../code/Areas/Identity/IdentityHostingStartup-Configure.cs?name=snippet_ConfigureAddDbContext&highlight=10)]
 
 1. Make the following changes to *Pages/Shared/_LoginPartial.cshtml*:
 
