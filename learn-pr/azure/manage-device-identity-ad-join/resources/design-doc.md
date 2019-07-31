@@ -49,7 +49,7 @@ Identify the subtasks of *module title*
 
 1. **Introduction**
 
-   You work for a large book publisher that's deploying Windows 10 to laptops used by employees in the organization. Your organization already uses Azure Active Directory with Azure Multi-Factor Authentication (Azure MFA) enabled to manage user identities and help protect the organization's resources. You want to add another layer of security by restricting access to your organization resources to only devices that are managed by your organization and are deemed compliant by your mobile device management (MDM) system.
+   You work for a large book publisher that's deploying Windows 10 to employees' laptops. Your organization uses Azure Active Directory with Azure Multi-Factor Authentication enabled. You use these services to manage user identities and help protect the organization's resources. You want to add another layer of security for devices. Specifically, you want to restrict access to the organization's resources to only devices that are managed by your organization and are deemed compliant by your mobile device management (MDM) system.
 
 1. **Learning-content unit title**
 
@@ -94,23 +94,25 @@ Conceptual content to include:
   - Supported devices
   - Non-supported environmental configurations 
   - Prereqs for device identity management
-  - Tools & features you'd use as best practice (MDM tool that supports Azure AD intergration & conditional access for devices)
-  - If you're using MFA, user's don't have to do MFA when they're using an MDM compliant & AD joined device AND conditional access is marked as compliant. 
+- Tools & features you'd use as best practice (MDM tool that supports Azure AD intergration & conditional access for devices - right now that's only Intune)
+- If you're using MFA, user's don't have to do MFA when they're using an MDM compliant & AD joined device AND conditional access is marked as compliant. You have the option on the conditional access device settings to set AND/OR condition when you set the checkboxes for compliant, MFA, etc. If you needed to be super secure for something like a payroll app, maybe you'd require MFA AND compliant device. Need to be sure to discuss those options.
+ - Discuss what settings there are for devices identity management and conditional access like local admin on devices etc. By default, **Additional local administrators on Azure AD joined devices** is enabled. This adds global admin and [device admin](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#device-administrators) roles as local admin on device.
   
-  For scenario, solution is to use AD joined for Windows 10 machines. They can have on-premises AD with SSO & AD Connect set up. But that doesn't require the "Hybrid Azure AD joined" setup. They can bypass that and just join to Azure AD and not on-premises AD. It's easier to do it that way. Employees could still BYOD as long as they're Windows 10 devices and they want to sign in using their organizational account (and want to enroll/join the organization).
+- For scenario, solution is to use AD joined for Windows 10 machines. They can have on-premises AD with SSO & AD Connect set up. But that doesn't require the "Hybrid Azure AD joined" setup. They can bypass that and just join to Azure AD and not on-premises AD. It's easier to do it that way. Employees could still BYOD as long as they're Windows 10 devices and they want to sign in using their organizational account (and want to enroll/join the organization).
 
 - What is enterprise state roaming and why you'd set it up
 - What's conditional access and why you'd use this? There is some coverage as it relates to users  in module: [Secure your Azure resources with conditional access](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-conditional-access/)
 - End user experience to join and then to sign in.
 
 
-- Tasks involved: 
+Tasks involved: 
    - [Configure device settings in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings)
    - [Configure MDM provider](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan#configure-your-mobility-settings)
    - [Configure enterprise state roaming](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-enable)
    - [Configure Conditional Access - Require device to be marked as compliant](https://docs.microsoft.com/azure/active-directory/conditional-access/require-managed-devices#require-device-to-be-marked-as-compliant)
    - End-user task: [Join Windows 10 device during first run](https://docs.microsoft.com/en-us/azure/active-directory/devices/azuread-joined-devices-frx)
-   - Sign in to Azure using joined device
+    - View list of joined devices some time later (as admin)
+   - [Disable/delete](https://docs.microsoft.com/azure/active-directory/devices/manage-stale-devices)
 
 ## Resources
 - [Plan your AD Join implementation - configure device settings](https://docs.microsoft.com/en-us/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings)
@@ -121,3 +123,4 @@ Conceptual content to include:
 - [How SSO to on-premises resources works on Azure AD joined devices](https://docs.microsoft.com/en-us/azure/active-directory/devices/azuread-join-sso)
 - [Tutorial: Join a new Windows 10 device with Azure AD during a first run](https://docs.microsoft.com/en-us/azure/active-directory/devices/azuread-joined-devices-frx)
 - Related module in progress: [Enable single-sign on with Azure Active Directory Connect](https://github.com/MicrosoftDocs/learn-pr/blob/NEW-enable-sso-with-aad-connect/learn-pr/azure/enable-sso-with-aad-connect/resources/design-doc.md)
+- [Manage stale devices in Azure AD](https://docs.microsoft.com/azure/active-directory/devices/manage-stale-devices)
