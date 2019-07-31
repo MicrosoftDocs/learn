@@ -87,10 +87,7 @@ The next step is to enable IP forwarding for **nva.** When traffic is sent to th
 1. Run the following command to enable IP forwarding within the NVA.
 
     ```bash
-    ssh -t azureuser@$NVAIP 'sudo sysctl -w net.ipv4.ip_forward=1; exit;'
+    ssh -t -o StrictHostKeyChecking=no azureuser@$NVAIP 'sudo sysctl -w net.ipv4.ip_forward=1; exit;'
     ```
 
-    At the `Are you sure you want to continue connecting (yes/no)?` message, type **yes**.
-
     When prompted, enter the password you used when you created the VM.
-
