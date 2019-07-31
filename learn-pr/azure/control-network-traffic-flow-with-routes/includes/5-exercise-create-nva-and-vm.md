@@ -1,6 +1,6 @@
 In the next stage of your security implementation, you'll deploy a network virtual appliance to secure and monitor traffic between your front-end public servers and internal private servers. You'll configure the appliance to forward IP traffic. If IP forwarding isn't enabled, then traffic that has been routed through your appliance will never be received by its intended destination servers.
 
-In this exercise, you'll deploy the **nva** network appliance to the **dmzsubnet** subnet. You'll then enable IP forwarding so that traffic from **publicsubnet**, and traffic that uses the custom route, is sent to the **privatesubnet** subnet.
+In this exercise, you'll deploy the *nva* network appliance to the *dmzsubnet* subnet. You'll then enable IP forwarding so that traffic from *publicsubnet*, and traffic that uses the custom route, is sent to the *privatesubnet* subnet.
 
 ![Network virtual appliance with IP forwarding enabled](../media/5-nva-ip-forwarding.png)
 
@@ -23,7 +23,7 @@ To build the network virtual appliance, you'll deploy an Ubuntu LTS instance.
         --admin-password <password>
     ```
 
-1. Run the following commands to retrieve the public IP address of the appliance VM and save it to the variable named *NVAIP*.
+1. Run the following commands to retrieve the public IP address of the appliance virtual machine and save it to the variable named `NVAIP`.
 
     ```azurecli
     NVAIP="$(az vm list-ip-addresses \
@@ -37,7 +37,7 @@ To build the network virtual appliance, you'll deploy an Ubuntu LTS instance.
 
 ## Enable IP forwarding for the Azure network interface
 
-The next step is to enable IP forwarding for **nva.** When traffic is sent to the NVA, if the traffic, which is received by the NVA is for another target, the NVA will route that traffic to its correct destination.
+The next step is to enable IP forwarding for *nva*. When traffic is sent to the NVA, if the traffic, which is received by the NVA is for another target, the NVA will route that traffic to its correct destination.
 
 1. Run the following command to obtain the ID of the NVA network interface.
 
@@ -62,7 +62,7 @@ The next step is to enable IP forwarding for **nva.** When traffic is sent to th
     echo $NICNAME
     ```
 
-1. Run the following command to enable IP forwarding for the Azure network interface.
+1. Run the following command to enable IP forwarding for the network interface.
 
     ```azurecli
     az network nic update --name $NICNAME \
@@ -72,7 +72,7 @@ The next step is to enable IP forwarding for **nva.** When traffic is sent to th
 
 ## Enable IP forwarding in the appliance
 
-1. Run the following command to save the public IP address of the NVA VM to the variable, *NVAIP*.
+1. Run the following command to save the public IP address of the NVA virtual machine to the variable, `NVAIP`.
 
     ```azurecli
     NVAIP="$(az vm list-ip-addresses \
@@ -90,4 +90,4 @@ The next step is to enable IP forwarding for **nva.** When traffic is sent to th
     ssh -t -o StrictHostKeyChecking=no azureuser@$NVAIP 'sudo sysctl -w net.ipv4.ip_forward=1; exit;'
     ```
 
-    When prompted, enter the password you used when you created the VM.
+    When prompted, enter the password you used when you created the virtual machine.

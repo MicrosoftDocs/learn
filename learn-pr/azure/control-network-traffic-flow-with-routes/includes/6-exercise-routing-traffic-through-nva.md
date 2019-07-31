@@ -48,9 +48,9 @@ The next step is to deploy a virtual machine into the public and private subnets
         --subnet privatesubnet \
         --image UbuntuLTS \
         --admin-username azureuser \
-        --admin-password <password> \
+        --no-wait \
         --custom-data cloud-init.txt \
-        --no-wait
+        --admin-password <password>
     ```
 
 1. Run the following command to check that the virtual machines are running. We're using the Linux `watch` command to run the `az vm list` command periodically, which allows you to monitor the progress.
