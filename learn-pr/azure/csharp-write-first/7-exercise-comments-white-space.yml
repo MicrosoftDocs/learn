@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.csharp-write-first.compiling-fixing-errors
+uid: learn.languages.csharp-write-first.exercise-comments-white-space
 title: Introduction
 metadata:
   title: Introduction
@@ -13,4 +13,4 @@ metadata:
 durationInMinutes: 5
 interactive: csharp
 content: |
-  [!include[](includes/7-compiling-fixing-errors.md)]
+  [!include[](includes/7-exercise-comments-white-space.md)]

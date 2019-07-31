@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.csharp-write-first.initializing-variables
+uid: learn.languages.csharp-write-first.exercise-variables
 title: Exercise - Set, get, and initialize values in variables
 metadata:
   title: Exercise - Set, get, and initialize values in variables
@@ -13,4 +13,4 @@ metadata:
 durationInMinutes: 1
 interactive: csharp
 content: |
-  [!include[](includes/5-initializing-variables.md)]
+  [!include[](includes/5-exercise-variables.md)]

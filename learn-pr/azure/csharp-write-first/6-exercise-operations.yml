@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.csharp-write-first.performing-operations
+uid: learn.languages.csharp-write-first.exercise-operations
 title: Exercise - Perform basic operations on your variables
 metadata:
   title: Exercise - Perform basic operations on your variables
@@ -13,4 +13,4 @@ metadata:
 durationInMinutes: 5
 interactive: csharp
 content: |
-  [!include[](includes/6-performing-operations.md)]
+  [!include[](includes/6-exercise-operations.md)]
