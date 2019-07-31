@@ -1,4 +1,4 @@
-The first step to setting up a DevOps practice is to assess your current process. Let's do that with the Tailspin team and see how Azure DevOps can help.
+The first step to setting up a DevOps practice is to assess your current process. Let's do that with the Tailspin team and see how DevOps can help.
 
 After Irwin the product manager leaves, Amita says, "We need help. I don't know when these fixes are due, but I do know it's soon. We're not set up for a fast turnaround. Plus, the new _Space Game_ website will have to wait until we get this mess solved &mdash; and that game is coming up fast."
 
@@ -26,7 +26,7 @@ Over coffee, Mara listens and tries to take notes. There's a lot of information 
 :::column span="4":::
 When she looks at her pile of notes, Mara knows she needs to organize all this information. Organizing it will make it easier to evaluate the processes. She's convinced a DevOps approach will solve many of the team's problems, but she needs a way to present her case to the team.
 
-An Azure DevOps practice often begins with an understanding of your existing processes. From there, you can evaluate what's working well, what's not, and focus on what to fix first.
+A DevOps practice often begins with an understanding of your existing processes. From there, you can evaluate what's working well, what's not, and focus on what to fix first.
 :::column-end:::
 :::column:::
 ![Mara at the coffee shop taking notes on her tablet](../media/3-taking-notes.jpg)
