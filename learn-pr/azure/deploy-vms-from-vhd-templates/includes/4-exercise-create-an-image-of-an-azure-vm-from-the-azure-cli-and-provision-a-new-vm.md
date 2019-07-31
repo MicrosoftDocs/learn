@@ -130,7 +130,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
     ![Opening the Windows Command Prompt as Administrator](../media/4-open-command-prompt.png)
 
-1. In the Command Prompt window, run the following command to execute the **Sysprpe** utility:
+1. In the Command Prompt window, run the following command to execute the **Sysprep** utility:
 
     ```command
     C:\windows\system32\sysprep\sysprep
@@ -147,6 +147,8 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
     ![Screenshot of the Sysprep dialog box](../media/4-sysprep.png)
 
 1. Wait for the sysprep utility to complete. The connection to the virtual machine will be terminated when sysprep has finished and shut down the virtual machine. In the **Remote Desktop Connection** message box, click **OK**.
+
+    ![Screenshot of the **Session Ended** dialog box](../media/4-session-ended.png)
 
 1. In the Cloud Shell window, run the following command to deallocate the virtual machine:
 
