@@ -37,7 +37,7 @@ Some notable features of Azure Site Recovery are:
 
 ## Setting up Azure Site Recovery
 
-![Diagram showing the Azure Site Recovery architecture](../media/2-arch-enhanced.png)
+![Diagram showing the Azure Site Recovery architecture](../media/2-arch-enhanced.svg)
 
 There are several components that need to be set up to enable Azure Site Recovery:
 
@@ -53,7 +53,7 @@ There are several components that need to be set up to enable Azure Site Recover
 
 ## The replication process
 
-![Azure Site Recovery architecture](../media/2-replication-architecture.png)
+![Azure Site Recovery architecture](../media/2-replication-architecture.svg)
 
 Once the pre-requisite tasks have been set up, replication of the machines can be begin. They are replicated in accordance with the created replication policy and during the initial stages the first copy, the server data is replicated to Azure storage. Once the initial replication completes, a second replication, this time for the delta changes to the virtual machine, are replicated to Azure with those changes.
 

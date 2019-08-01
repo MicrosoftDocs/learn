@@ -28,13 +28,11 @@ Active Directory and DNS can be configured for an automated failover, they would
 
 ### SQL Server
 
-![Diagram showing how Site Recovery can protect a SQL Server cluster](../media/3-standalone-cluster-local.png)
-
 Site Recovery can be used alongside SQL specific high availability technologies such as Always On availability groups. Standalone servers or clusters are supported for replication to Azure or a secondary site. Azure Site Recovery can also scale peak loads by 'bursting' them onto larger VMs in Azure. Test failovers and compliance checks can be run on demand, or scheduled, without impacting the live environment.
 
 ### SharePoint
 
-![Diagram showing the complexity of a high-demand SharePoint farm architecture, including web servers, app servers, and database servers](../media/3-sharepointarch.png)
+![Diagram showing the complexity of a high-demand SharePoint farm architecture, including web servers, app servers, and database servers](../media/3-sharepointarch.svg)
 
 Protecting SharePoint with Site Recovery allows for the all the servers that makes up the solution to be failed over at the same time. In the above example, a high-demand server farm can include Web, App, and Database server groups. The constant replication to Azure allows any updates deployed to the live environment to be automatically deployed to the replica to allow for patch consistency during a failover.
 

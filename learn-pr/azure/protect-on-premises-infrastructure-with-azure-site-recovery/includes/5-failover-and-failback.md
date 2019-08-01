@@ -10,7 +10,7 @@ A failover is the process that takes place when the decision is made to invoke t
 
 Failing back is the reverse of the above where the previous live environment (now the replica environment, as a failover has taken place) takes back its original role, becoming the live environment again. After the failover has happened in the first instance, a re-protection phase needs to happen where you bring back in to sync the original environment with the new live environment. This process allows the failover and failback to happen without any data loss. The re-protection phase will likely be a lengthy process, as the old live environment needs to be re-established as working correctly after the disaster.  
 
-![Diagram showing the cyclic nature of failing over, and then failing back, and how the replication to re-protect VM works.](../media/5-failover-failback.png)
+![Diagram showing the cyclic nature of failing over, and then failing back, and how the replication to re-protect VM works.](../media/5-failover-failback.svg)
 
 The four stages of a failover and failback actions are:
 
