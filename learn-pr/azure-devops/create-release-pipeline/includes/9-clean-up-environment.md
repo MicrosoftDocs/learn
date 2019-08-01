@@ -1,13 +1,9 @@
-You're all done with the tasks for this module. Here, you move the work item to the **Done** state on Azure Boards and clean up your Azure DevOps environment.
+You're all done with the tasks for this module.
 
 > [!IMPORTANT]
 > This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps if you ran the template earlier in this module.
 
 ## Clean up Azure resources
-
-(Add lead-in text to the introduction that mentions you'll do this)
-
-(Rough copy taken from another module:)
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. Go to the Resource Group that contains your App Service plan.
@@ -16,9 +12,6 @@ You're all done with the tasks for this module. Here, you move the work item to 
 1. Select **Delete**.
 
 ## Disable the pipeline or delete your project
-
-> [!IMPORTANT]
-> You can skip this part if you plan to continue to the next module using the same Azure DevOps project.
 
 Each module in this learning path provides a template you can run to create a clean environment for the duration of the module.
 

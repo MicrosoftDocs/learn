@@ -1,8 +1,8 @@
-In this part, you XYZ.
+In this part, you folow the Tailspin team as they discuss using a continuous delivery pipeline for feature releases. 
 
-The Tailspin team is starting to feel better about their build process. They’ve got an automated version running on Azure Pipelines, which means the build environment is stable. Amita knows immediately when there’s an artifact for her to test. She’s finding fewer bugs because Andy and Mara have started to add unit tests and code quality tests. Life is looking good.
+The Tailspin team is starting to feel better about their build process. They’ve got an automated version running on Azure Pipelines, which means the build environment is stable. Amita knows immediately when there’s an artifact for her to test. She’s finding fewer bugs because Andy and Mara have started to add unit tests and code quality tests. Life is looking good. Let's check in with the team.
 
-## TODO: Good morning
+## Morning meeting
 
 Everyone on the team is in the meeting room waiting for Irwin, the product manager, who says he wants to talk to them. They’re looking forward to telling him about the progress they’ve made. But when Irwin walks in, he doesn’t look happy. He starts talking right away.
 
@@ -30,7 +30,7 @@ Andy looks around at his team.
 
 Andy and crew head to the coffee shop to hammer out a plan.
 
-## TODO: Meeting at the coffee shop
+## Discuss continuous delivery
 
 The team is having a meeting over coffee. Irwin, the product manager, has told them they need to start releasing new versions of the web site faster and he's left it up to them to figure out how to do it.
 
@@ -50,7 +50,7 @@ She starts crumbling her scone into little pieces.
 
 ## What is continuous delivery?
 
-Continuous delivery (CD) is XYZ... Here, we ...
+Continuous delivery (CD) is what makes frequent, reliable delivery of software possible. Let's listen to Mara as she explains it to the team.
 
 **Mara:** To me, CD and DevOps are inseparable. Remember that we defined DevOps as the union of people, process, and products to enable continuous delivery of value to our end users.
 
@@ -69,7 +69,9 @@ We've already put some of these things into place and we all think they've impro
 
 ## Why do I need continuous delivery?
 
-Continuous delivery enables ...
+Continuous delivery helps software teams deliver reliable software updates to their customers on a rapid cadence. This ensures that customers and stakeholders have the latest features and fixes quickly. 
+
+Let's continue to listen in on the team as they talk this out.
 
 **Andy:** Thanks, Mara, we need CD because, as we all know, the world has changed. Releases with new features are happening faster. Updates and bug fixes need to be available right away. It isn't just that management wants this. They're simply reacting to the demands of our customers. If customers can't get what they want from us, they'll go somewhere else.
 
@@ -93,12 +95,29 @@ Tim laughs.
 
 **Amita:** Good luck, you two.
 
+The team leaves Andy and Mara to work out the details.
+
 ## What continuous delivery tools can I use?
 
-TODO: Talk about some options: Jenkins, Circle CI, GitLab, and Azure Pipelines.
+**Mara:** Where do you want to start?
 
-TODO: Change the previous section to better lead-in to this section. This section needs to flow better with the previous.
+**Andy:** First, we need to agree on our release management tool. Let's make sure the tool we choose:
 
-TODO: As an idea, talk about how Azure DevOps integrates with other CI/CD solutions. We could even talk about that being a decision point - if you had an existing investment, in say, Jenkins, you can integrate Jenkins with Azure DevOps. At the end, perhaps point to some resources.
+* Supports our version control system
+* Supports multiple pipeline stages
+* Makes it easy for us to create the tasks for each stage
+* Supports triggers
+* Supports approval and gates
+* Is easy to extend
 
-TODO: As an idea, the team talks about how they could continue to use, say, Jenkins, if they had an existing investment in it. But they decide to continue to use Azure Pipelines because that's what they're currently using.
+**Mara:** Azure DevOps integrates with several other CI/CD solutions. There are a lot of options out there and we don't already have an investment in one. If we did, it would make sense to go with that one. Let's look at the few I know about, Jenkins, Circle CI, GitLab, Travis, and Azure Pipelines.
+
+TODO: Table here
+
+Jenkins is open source and on-prem unless we use a third party. It's got a lot of plug-ins and many companies use it. I don't know if we can use it for approvals and quality gates. Circle CI can be cloud-based or on prem. I think we would need to customize it. GitLab Pipelines is a part of GitLab, which is a single application for the entire software development lifecycle. It might be bigger than we want right now. My vote is Azure DevOps Pipeline.
+
+**Andy:** I like it. It's worked great for us so far and we don't have to learn another new technology.
+
+**Mara:** Great. Let's get started on the pipeline details.
+
+Andy and Mara move to a conference room to plan their continuous deployment pipeline.
