@@ -8,7 +8,7 @@ Let's start by creating the server login that we'll use for the exercises in thi
 
 ## Add a user to the master database
 
-1. In Azure Data Studio, make sure that you are sill connected to the master database located under the SQL Server instance you created in the previous unit (in the section "Create new connections in Azure Data Studio").
+1. In Azure Data Studio, make sure that you are still connected to the master database located under the SQL Server instance you created in the previous unit (in the section "Create new connections in Azure Data Studio").
 
 1. Go to the **Servers** list in the menu on the left side of Azure Data Studio. Under the SQL Data Warehouse connection you made to the master database, expand **Databases** and **System Databases**. Right-click **master** and select **New Query**.
 
