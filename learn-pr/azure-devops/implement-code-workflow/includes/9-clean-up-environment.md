@@ -5,7 +5,7 @@ You're all done with the tasks for this module. In this unit, you move the work 
 
 ## Move the work item to Done
 
-In this section, you move the work item that you assigned to yourself earlier in this module, **Create a Git-based workflow**, to the **Done** column.
+In this section, you move the work item that you previously assigned to yourself, **Create a Git-based workflow**, to the **Done** column.
 
 In practice, the definition of "Done" often means that working software is in the hands of your users. In this unit, for learning purposes, you mark this work as complete, because you and the Tailspin team have started an improved code workflow that uses Git and GitHub.
 
@@ -27,7 +27,7 @@ Each module in this learning path provides a template that you can run to create
 
 Running multiple templates creates multiple Azure Pipelines projects, each pointing to the same GitHub repository. This action can cause multiple pipelines to run each time you push a change to your GitHub repository. This action, in turn, can cause you to run out of free build minutes on our hosted agents. Therefore, it's important to disable or delete your pipeline before you move on to the next module.
 
-Choose either of the following options.
+Choose either of the next two options.
 
 ### Option 1: Disable the pipeline
 
