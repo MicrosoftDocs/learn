@@ -1,4 +1,4 @@
-You are a manager within your organization. Your team has been using Azure for the last several months and now has multiple resources that have been created and are costing you money. You would like to understand Cost Management best practices and analyze which resources are the primary drivers of your monthly bill. You would also like to set thresholds on your team's Azure expenses in order to stay within the budget that has been allocated to you by the finance department of your organization.
+You're a manager within your organization. Your team has been using Azure for the last several months. The team now has multiple resources that are costing you money. You want to understand cost management best practices and analyze which resources are costing the most on your monthly bill. You also want to set thresholds on your team's Azure expenses. Your team needs to stay within the budget that's given to you by the organization's finance department.
 
 ## Learning objectives
 
@@ -11,5 +11,5 @@ In this module, you'll:
 ## Prerequisites
 
 - "Owner" access to an Azure subscription (a free trial is sufficient)
-- Five or more Azure resources created within your subscription that have been accruing cost for at least 1 month
-- Basic familiarity with the Azure Portal
+- Five or more Azure resources created within your subscription that have been accruing cost for at least one month
+- Basic familiarity with the Azure portal

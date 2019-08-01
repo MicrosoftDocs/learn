@@ -2,23 +2,23 @@
 uid: learn.azure.analyze-costs-create-budgets-azure-cost-management
 metadata:
   title: "Analyze costs and create budgets with Azure Cost Management"
-  description: "Learn how to use Cost Analysis to understand how your costs accrue each month."
+  description: "Learn how to use cost analysis to understand how your costs accrue each month."
   ms.date: 7/31/2019
   author: bandersmsft
   ms.author: banders
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Analyze costs and create budgets with Azure Cost Management"
-summary: "Learn how to use Cost Analysis to understand how your costs accrue each month. Use this understanding to create an Azure budget to monitor and alert on your costs."
+summary: "Learn how to use cost analysis to understand how your costs accrue each month. Use this understanding to create an Azure budget to monitor and alert on your costs."
 abstract: |
   In this module, you will:
   - Set up your organization for success when using Cost Management
-  - Analyze costs on a subscription using Cost Analysis
+  - Analyze costs on a subscription using cost analysis
   - Create your first Azure budget based on your analysis
 prerequisites: |
   - "Owner" access to an Azure subscription (a free trial is sufficient)
-  - Five or more Azure resources created within your subscription that have been accruing cost for at least 1 month
-  - Basic familiarity with the Azure Portal
+  - Five or more Azure resources created within your subscription that have been accruing cost for at least one month
+  - Basic familiarity with the Azure portal
 iconUrl: http://via.placeholder.com/120x120
 levels: 
 - beginner

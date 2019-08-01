@@ -23,7 +23,7 @@ Analyze costs and create budgets with Azure Cost Management
 ## Prerequisites
 
 - "Owner" access to an Azure subscription (a free trial is sufficient)
-- Five or more Azure resources created within your subscription that have been accruing cost for at least 1 month
+- Five or more Azure resources created within your subscription that have been accruing cost for at least one month
 - Basic familiarity with the Azure Portal
 
 ## Summary
