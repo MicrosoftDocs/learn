@@ -22,7 +22,7 @@ Although you can learn Git with just a few commands, full mastery will enable yo
 
 The workflow you used in this module is a standard way to get started. Your team can refine it to suit your needs. You'll find many resources and perspectives on the web from various teams with varying needs.
 
-[Understanding the GitHub flow](https://guides.github.com/introduction/flow?azure-portal=true) introduces an approach that's similar to what you saw in this module, and it includes tips you can include in your own workflow.
+[Understanding the GitHub flow](https://guides.github.com/introduction/flow?azure-portal=true) introduces an approach that's similar to what you saw in this module, and it includes tips that you can apply to your own workflow.
 
 [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model?azure-portal=true) proposes a more advanced branching and merging strategy.
 
