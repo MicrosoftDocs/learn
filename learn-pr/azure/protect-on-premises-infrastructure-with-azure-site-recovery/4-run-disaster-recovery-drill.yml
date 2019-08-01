@@ -3,7 +3,7 @@ uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.4-run-dis
 metadata:
   title: Run a disaster recovery drill
   description: Understand recovery time and recovery point objectives, and see how a recovery drill can test that Azure Site Recovery has been configured correctly to meet these objectives.
-  ms.date: 04/30/2019
+  ms.date: 08/01/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial

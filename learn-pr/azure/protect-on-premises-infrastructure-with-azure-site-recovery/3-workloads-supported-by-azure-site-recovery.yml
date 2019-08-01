@@ -3,7 +3,7 @@ uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.3-workloa
 metadata:
   title: Workloads supported for protection with Azure Site Recovery
   description: Explore the application-level protection you can take advantage of to protect your companies different workloads.
-  ms.date: 04/30/2019
+  ms.date: 08/01/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
