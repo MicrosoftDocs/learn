@@ -1,6 +1,6 @@
 It's important for members of the team to know the status of the build. An easy way to quickly determine the build status is to add a build badge to the *README.md* file on GitHub. Let's check in on the team to see how it's done.
 
-Andy is at his desk sifting through his emails. He's answering the third email that's related to the status of the build for the _Space Game_ web site.
+Andy is at his desk sifting through his emails. He's answering the third email that's related to the status of the build for the _Space Game_ website.
 
 **Andy**: There has to be some way to automate a status message. We have the pipeline, so we should be able to put a status somewhere. Maybe Mara knows how we can do it.
 
@@ -66,9 +66,9 @@ In this section, you commit your changes to the `master` branch on GitHub.
 
 **Andy**: Mara, you just made a change directly to `master`. Why didn't you use the flow you taught me? You know, with the feature branches.
 
-**Mara**: We could have done that. But sometimes when people are only changing the Readme file or other documentation files, they commit to `master` right then. Plus, you and I were able to verify the work together before we merged the change.
+**Mara**: We could have done that. But sometimes when people are changing only the Readme file or other documentation files, they commit to `master` right then. Plus, you and I were able to verify the work together before we merged the change.
 
-But this brings up a good point. If we can all just commit to master when we want to, we could be letting problems in the code slip into our master branch.
+But this brings up a good point. If we can all just commit to `master` when we want to, we could be letting problems in the code slip into our master branch.
 
 **Andy**: I've been meaning to talk to you about that.
 
