@@ -16,31 +16,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'What is Network Access control?'
+  - content: "How do Network Security Groups help you control the flow of traffic in your virtual networks?"
     choices:
-    - content: A firewall for Azure Virtual Networks
+    - content: "They have strict rules defined to block inbound traffic from the internet, that can't be modified."
       isCorrect: false
-      explanation: Network access control is not a firewall.
-    - content: The act of limiting connectivity to/from specific resources.
+      explanation: "There are default rules, and one does restrict access to inbound traffic from the internet. However it can be overridden."
+    - content: "They act like a stateful firewall, monitoring network traffic and enforcing policies you define."  
+      isCorrect: false
+      explanation: "This is how the Azure Firewall works, not Network Security Groups."
+    - content: "They allow you to create traffic rules, which can allow or deny traffic over specified ports and protocols. "
       isCorrect: true
-      explanation: Network access controls to make sure that your Azure services are accessible to only users and devices you want.
-    - content: A feature of Azure Active Directory
-      isCorrect: false
-      explanation: Network access control is not a feature of Azure AD.
-    - content: The act of creating subnets for Azure Virtual Networks
-      isCorrect: false
-      explanation: Network access control is not a term for creating vnet subnets.
-  - content: 'Which of the following is not supported by default when using Azure Firewall?'
+      explanation: "This is the correct definition of a Network Security Group."     
+  - content: "How does using an Azure ExpressRoute help improve your security?"
     choices:
-    - content: Monitoring of activity logs
-      isCorrect: false
-      explanation: The monitoring of activity logs is enabled by default for all Azure services. 
-    - content: Highly Available networks
-      isCorrect: false
-      explanation: Azure Firewall has high availability built in with no configuration needed.
-    - content: Peered virtual networks
-      isCorrect: false
-      explanation: Traffic for directly peered virtual networks is routed directly by Azure Firewall.
-    - content: Forced tunneling to an on-premises network
+    - content: "It provides a dedicated private connection between your on-premises resources and Azure. Extra security is possible by adding network security appliances between edge routers."
       isCorrect: true
-      explanation: Azure Firewall doesn't support forced tunneling to your on-premises network by default.
+      explanation: "This is the correct definition of an ExpressRoute."
+    - content: "It provides a base layer of security by allowing you to segment and isolate your Azure resources."
+      isCorrect: false
+      explanation: "Segmenting of resources happens when you create virtual networks and have resources assigned to them."
+    - content: "It provides quick access to all the Azure backbone resources, allowing you to connect your resources directly without going outside the Azure network."
+      isCorrect: false
+      explanation: "Using an ExpressRoute isn't about speed, or Service Endpoints connections."

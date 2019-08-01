@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.hub-and-spoke-network-architecture
 metadata:
-  title: Centralize your core services using hub and spoke Azure VNet architecture
+  title: Centralize your core services using hub and spoke Azure Virtual Network architecture
   description: Design a network architecture in Azure that allows for growth & flexibility, secure isolation of critical resources, low administrative overhead, and communication with on-premises network resources.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Centralize your core services using hub and spoke Azure VNet architecture
+title: Centralize your core services using hub and spoke Azure Virtual Network architecture
 summary: Design a network architecture in Azure that allows for growth & flexibility, secure isolation of critical resources, low administrative overhead, and communication with on-premises network resources.
 abstract: | 
   In this module, you will:
@@ -29,7 +29,6 @@ units:
 - learn.hub-and-spoke-network-architecture.2-implementing-hub-spoke
 - learn.hub-and-spoke-network-architecture.3-planning-virtual-networks
 - learn.hub-and-spoke-network-architecture.4-exercise-implementing-hub-spoke
-- learn.hub-and-spoke-network-architecture.5-knowledge-check
 - learn.hub-and-spoke-network-architecture.6-secure-hub-spoke
 - learn.hub-and-spoke-network-architecture.7-summary
 badge:
