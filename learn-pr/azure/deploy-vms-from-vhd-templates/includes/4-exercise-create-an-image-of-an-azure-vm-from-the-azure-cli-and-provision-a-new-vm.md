@@ -102,7 +102,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 1. In the **Connect to virtual machine** window, click **Download RDP File**.
 
-    ![Screenshot of the Windows virtual machin page, highlighting the **Connect** button and RDP download](../media/4-connect-to-windows-vm.png)
+    ![Screenshot of the Windows virtual machine page, highlighting the **Connect** button and RDP download](../media/4-connect-to-windows-vm.png)
 
 1. When the RDP file has downloaded, click it to open an RDP connection to the virtual machine.
 
