@@ -56,7 +56,7 @@ To set up the work item:
 
     ![Azure DevOps showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
 
-1. From the **Create a Git-based workflow** work item, select the **To Do** down arrow, and then assign the work item to yourself.
+1. In the **Create a Git-based workflow** work item, select the **To Do** down arrow, and then assign the work item to yourself.
 
     ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
 1. Drag the work item from the **To Do** column to the **Doing** column.
