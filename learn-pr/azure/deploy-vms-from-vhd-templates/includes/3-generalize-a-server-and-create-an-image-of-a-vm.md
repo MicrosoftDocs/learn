@@ -155,8 +155,6 @@ az vm create \
     --location <location of image>
 ```
 
-For more information, see [Create a VM from a managed image](https://docs.microsoft.com/azure/virtual-machines/windows/create-vm-generalized-managed).
-
 ## Create a snapshot of a VHD
 
 A virtual machine image contains an image of every VHD in the virtual machine. You can also create separate snapshot images of a VHD at any time. A snapshot is a read-only copy of a VHD. You can use a snapshot to restore a VHD to the state it was in when the snapshot was taken.
