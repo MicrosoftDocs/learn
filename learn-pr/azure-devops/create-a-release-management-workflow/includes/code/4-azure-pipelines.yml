@@ -5,7 +5,7 @@ variables:
 
 stages:
 - stage: 'Build'
-  displayName: 'Build Stage'
+  displayName: 'Build stage'
   jobs:
   - job: Build
     displayName: 'Build job'
@@ -63,13 +63,13 @@ stages:
         pathToPublish: '$(Build.ArtifactStagingDirectory)'
         artifactName: 'drop'
 
-- stage: 'Deploy'
-  displayName: 'Deploy Testing Stage'
+- stage: 'DeployDev'
+  displayName: 'Dev stage'
   dependsOn: Build
   jobs:
 
-  - job: DeployTest
-    displayName: 'Deploy test job'
+  - job: DeployDev
+    displayName: 'Deploy to dev environment'
     pool:
       vmImage: 'Ubuntu-16.04'
     steps: 
@@ -85,10 +85,8 @@ stages:
       displayName: 'Azure App Service Deploy: website'
       inputs:
         azureSubscription: 'Sandbox'
-        DeployToSlotOrASEFlag: true
-        ResourceGroupName: TailspinResourceGroup
-        SlotName: Dev
+        resourceGroupName: TailspinResourceGroup
         appType: 'webAppLinux'
-        WebAppName: 'TailspinGame30346'
-        StartupCommand: 'dotnet Tailspin.SpaceGame.Web.dll'
-        Package: $(System.ArtifactsDirectory)/**/*.zip
+        webAppName: 'TailspinGame30346'
+        startupCommand: 'dotnet Tailspin.SpaceGame.Web.dll'
+        package: $(System.ArtifactsDirectory)/**/*.zip

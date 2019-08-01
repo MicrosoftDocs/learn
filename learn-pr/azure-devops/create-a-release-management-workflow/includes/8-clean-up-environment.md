@@ -6,6 +6,10 @@ You're all done with the tasks for this module. Here, you'll move the work item 
 > [!IMPORTANT]
 > This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps if you ran the template earlier in this module.
 
+## TEAR DOWN RESOURCES
+
+DELETE THE RESOURCE GROUP.
+
 ## Move the work item to Done
 
 Here, you'll move the work item you assigned to yourself earlier in this module, **Investigate hosted vs private build servers**, to the **Done** column.

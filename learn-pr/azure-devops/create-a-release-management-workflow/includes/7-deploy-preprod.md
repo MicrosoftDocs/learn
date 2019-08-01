@@ -1,1 +1,4 @@
-TODO: Roberta, ignore this page.
+STEPS
+
+1. ADD STAGE
+1. ADD APPROVAL

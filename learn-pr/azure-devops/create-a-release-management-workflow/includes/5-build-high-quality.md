@@ -1,3 +1,6 @@
+MAKE THIS AN EXERCISE UNIT? AND ADD GATE TO END OF PIPELINE
+(pre-deploy or post-deploy? check docs)
+
 Mara and Amita are talking in the break room. Amita says, "I really like the way the pipeline is shaping up and I feel a lot more comfortable with automation. I can see how it speeds up the release process but also makes it easier to have repeatable results. I also like having tests in the pipeline. 
 
 "I remember that Andy mentioned quality gates and I thought they sounded interesting. Do you know much about them?"

@@ -68,3 +68,89 @@ To set up the work item:
     <!-- ![Azure Boards showing the card in the Doing column](../media/3-azure-boards-wi7-doing.png) -->
 
 At the end of this module, you'll move the card to the **Done** column after you've completed the task.
+
+## Create the Azure App Service environments
+
+Here, you create the environments that receive the build artifact as the change moves through the pipeline. You create one App Service instance that corresponds to each of the dev, test, staging, and production environments.
+
+> [!IMPORTANT]
+> Remember that you need your own Azure subscription to complete the exercises in this module. [Get started for free](https://azure.microsoft.com?azure-portal=true) if you don't have a subscription that you can use.
+
+### Bring up Cloud Shell through the Azure portal
+
+In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you brought up App Service through the Azure portal. Although the portal is a great way to explore what's available on Azure or to perform basic tasks, bringing up components such as App Service can become tedious and repetitive.
+
+In this module, you bring up four App Service instances using the Azure command-line interface (CLI). You can access the Azure CLI from a terminal or through Visual Studio Code. Here, you access the Azure CLI from Azure Cloud Shell, a browser-based shell experience that's hosted in the cloud. Cloud Shell comes with the Azure CLI configured for you to use with your Azure subscription.
+
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
+1. From the menu bar, select Cloud Shell.
+
+    ![Selecting Cloud Shell from the menu bar](../../shared/media/azure-portal-menu-cloud-shell.png)
+
+    > [!NOTE]
+    > Cloud Shell requires an Azure storage resource to persist any files you create while working in Cloud Shell. On first launch, Cloud Shell prompts to create a resource group, storage account, and Azure Files share on your behalf. This is a one-time step and will be automatically attached for all future Cloud Shell sessions.
+
+### Select an Azure region
+
+**TODO:**
+
+A _region_ is one or more Azure data centers within a specific geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an App Service instance, is assigned a region.
+
+To make the commands easier to run, start by selecting a default region. After you specify the default region, later commands use that region unless you specify a different region.
+
+```bash
+az configure --defaults location=westus2
+```
+
+### Create the App Service instances
+
+1. BLAH
+
+    ```bash
+    webappsuffix=$RANDOM
+    ```
+
+    This is for learning purposes. Name will be part of hostname. In practice, you'd choose ...
+
+1. BLAH
+
+    ```bash
+    az group create --location westus --name TailspinResourceGroup
+    ```
+
+1. BLAH
+
+    ```bash
+    az appservice plan create --name myAppServicePlan --resource-group TailspinResourceGroup --sku P2V2
+    ```
+
+1. BLAH
+
+    ```bash
+    az webapp create --name TailspinGame-Dev-$webappsuffix --resource-group TailspinResourceGroup --plan myAppServicePlan
+    az webapp create --name TailspinGame-Test-$webappsuffix --resource-group TailspinResourceGroup --plan myAppServicePlan
+    az webapp create --name TailspinGame-Staging-$webappsuffix --resource-group TailspinResourceGroup --plan myAppServicePlan
+    az webapp create --name TailspinGame-$webappsuffix --resource-group TailspinResourceGroup --plan myAppServicePlan
+    ```
+
+1. BLAH Get URLs
+
+    ```blah
+    az webapp list \
+      --resource-group TailspinResourceGroup \
+      --query "[].{hostName: defaultHostName, state: state}" \
+      --output table
+    ```
+
+    ```output
+    HostName                                     State
+    -------------------------------------------  -------
+    tailspingame-4216.azurewebsites.net          Running
+    tailspingame-test-4216.azurewebsites.net     Running
+    tailspingame-staging-4216.azurewebsites.net  Running
+    tailspingame-dev-4216.azurewebsites.net      Running
+    ```
+
+1. NAVIGATE TO ONE OR TWO
+
+    SHOW SCREENSHOT

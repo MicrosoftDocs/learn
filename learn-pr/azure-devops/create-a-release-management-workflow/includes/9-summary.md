@@ -1,5 +1,14 @@
 This is a placeholder.
 
+[Connect to Microsoft Azure](https://docs.microsoft.com/azure/devops/pipelines/library/connect-to-azure?view=azure-devops)
+
+https://docs.microsoft.com/azure/devops/pipelines/build/triggers?view=azure-devops&tabs=yaml
+
+https://docs.microsoft.com/azure/devops/pipelines/release/approvals/?view=azure-devops
+
+service principals (security - /Users/thpetche/Dev/tpetchel/learn-pr/learn-pr/azure/design-for-security-in-azure
+)
+
 ## Notes - 7/2 - IGNORE HERE TO END
 
 ILT references:
