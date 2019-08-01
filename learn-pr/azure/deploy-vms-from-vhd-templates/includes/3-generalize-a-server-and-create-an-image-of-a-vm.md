@@ -6,7 +6,7 @@ In this unit, you'll learn how to customize an image, and then generalize this i
 
 ## Generalize a Windows virtual machine
 
-If you're building a Windows image, you can use the **sysprep** utility to prepare a virtual machine for generalization. Sysprep removes server-specific information from the image, such as the hostname, user sign-in information, and logs. Sysprep also removes any machine-specific identifiers used internally by Windows.
+If you're building a Windows image, you use the **sysprep** utility to prepare a virtual machine for generalization. Sysprep removes server-specific information from the image, such as the hostname, user sign-in information, and logs. Sysprep also removes any machine-specific identifiers used internally by Windows.
 
 > [!IMPORTANT]
 > Running **sysprep** is a destructive process, and you cannot easily reverse its effects. Backup your virtual machine first.
@@ -27,10 +27,12 @@ To generalize a Windows VM, follow these steps:
 
     ![Image of the Sysprep dialog box](../media/3-sysprep.png)
 
-After the virtual machine has been shut down, you must deallocate while it's in this *clean* state. If you're using PowerShell, run the following command:
+After the virtual machine has been shut down, you must deallocate it while it's in this *clean* state. If you're using PowerShell, run the following command:
 
 ```powershell
-Stop-AzVM -ResourceGroupName <resource group> -Name <virtual machine name> -Force
+Stop-AzVM -ResourceGroupName <resource group> `
+    -Name <virtual machine name> `
+    -Force
 ```
 
 If you're running the Azure CLI, use the following command instead:
@@ -95,7 +97,7 @@ To create an image in the Azure portal, go to the page for the virtual machine, 
 
 ![Image of the virtual machine page in the Azure portal](../media/3-virtual-machine.png)
 
-On the **Create image** page that follows, give your image a name and specify a resource group in which to store the image. You can optionally remove the virtual machine once the image has been created. Additionally, you can create resilient images that are backed by zone-redundant storage. This feature provides increased availability for your images. You can select **On** for **Zone resiliency** to enable this feature.
+On the **Create image** page that follows, give your image a name and specify a resource group in which to store the image. You can optionally remove the virtual machine once the image has been created. Additionally, you can create resilient images that are backed by zone-redundant storage. This feature provides increased availability for your images. Select **On** for **Zone resiliency** to enable this feature.
 
 ![Screenshot of the Create Image page in the Azure portal](../media/3-create-image.png)
 
@@ -129,7 +131,7 @@ az image create \
 
 ## Create a new virtual machine from a generalized image
 
-You can build a new virtual machine using your generalized image. The simplest way to do this is to use the Azure portal. Go to the page for your image, and select **+ Create VM**. You'll then be prompted for the machine-specific details, such as the virtual machine name, user account, virtual machine size, network ports to open, and so on.
+You can build a new virtual machine using your generalized image. The simplest way to do this is to use the Azure portal. Go to the page for your image, and select **+ Create VM**. You'll be prompted for the machine-specific details, such as the virtual machine name, user account, virtual machine size, network ports to open, and so on.
 
 Alternatively, you can use the PowerShell `New-AzVm` command, or the Azure CLI `az vm create` command. The examples below illustrate the syntax:
 
@@ -164,98 +166,12 @@ A virtual machine image contains an image of every VHD in the virtual machine. Y
 
 Unlike creating an image of a virtual machine, capturing a snapshot of a VHD is a non-destructive process, and you can continue running virtual machines using the VHD afterwards.
 
-You can create a snapshot of a VHD in several ways:
-
-- Using the Azure portal:
-  
-  ![Screenshot of the Create Snapshot page in the Azure portal](../media/3-create-snapshot.png)
-
-- Using the `New-AzSnapshotConfig` and `New-AzSnapshot` cmdlets in Azure PowerShell. You specify the source disk with the `New-AzSnapshotConfig` cmdlet, and provide these details to the `New-AzSnapshot` cmdlet to actually create the snapshot.
-- Using the `az snapshot create` command in the Azure CLI.
-
-After you've created a snapshot, you can export it for safekeeping. In the Azure portal, go to the page for the newly created snapshot, and select **Export**.
-
-![Screenshot of the Snapshot page in the Azure portal](../media/3-export-snapshot.png)
-
 ## Create a virtual machine from VHD snapshots
 
 Rebuilding a virtual machine from a set of VHD snapshots is a two-step process:
 
-1. For each snapshot, create a new managed disk. Specify the snapshot as the source of the managed disk. You can do this in the Azure portal, as shown in the following image:
+1. For each snapshot, create a new managed disk. Specify the snapshot as the source of the managed disk. The simplest way to do this is to use in the Azure portal, as shown in the following image:
 
   ![Screenshot of the Create Manage Disk page in the Azure portal](../media/3-managed-disk.png)
 
-  You can also create a managed disk from a snapshot the Azure CLI with the `az disk create ... --source <snapshot name>` command, or from PowerShell by using the following series of commands:
-
-  ```powershell
-  $snapshot = Get-AzSnapshot `
-      -ResourceGroupName <snapshot resource group> `
-      -SnapshotName <snapshot name>
-  
-  $diskConfig = New-AzDiskConfig `
-      -DiskSizeGB 30 `
-      -AccountType Standard_LRS `
-      -Location $snapshot.Location `
-      -SourceResourceId $snapshot.Id `
-      -CreateOption Copy
-
-   New-AzureRmDisk `
-      -Disk $diskConfig `
-      -ResourceGroupName <managed disk resource group> `
-      -DiskName <managed disk name>
-  ```
-
-2. Create the new virtual machine using these disks. You can use the PowerShell `New-AzVm` command, or the Azure CLI `az vm create` command for this task. The code snippets below show some examples. These examples assume that you've created three VHDs; one disk containing the operating system (Linux in this case) and two data disks, from snapshots:
-
-  ```powershell
-  # PowerShell
-
-  $osdisk = Get-AzDisk `
-      -ResourceGroupName <managed disk resource group> `
-      -DiskName <operating system disk>
-
-  $datadisk1 = Get-AzDisk `
-      -ResourceGroupName <managed disk resource group> `
-      -DiskName <data disk 1>
-
-  $datadisk2 = Get-AzDisk `
-      -ResourceGroupName <managed disk resource group> `
-      -DiskName <data disk 2>
-
-  $vm = New-AzVMConfig `
-      -VMName <new virtual machine name> `
-      -VMSize <virtual achine size>
-
-  $vm = Set-AzVMOSDisk `
-      -CreateOption Attach `
-      -VM $vm `
-      -ManagedDiskId $osdisk.Id
-
-  $vm = Add-AzVMDataDisk `
-    -CreateOption Attach -Lun 0 `
-    -VM $vm `
-    -ManagedDiskId $datadisk1.Id
-
-  $vm = Add-AzVMDataDisk `
-    -CreateOption Attach -Lun 1 `
-    -VM $vm `
-    -ManagedDiskId $datadisk2.Id
-
-  New-AzVm `
-    -VM $vm `
-    -ResourceGroupName <resource group> `
-    -Location <location of managed disks> `
-    <additional network configuration parameters - not shown>
-  ```
-
-  ```azurecli
-  # Azure CLI
-
-  az vm create \
-      --resource-group <resource group> \
-      --name <new virtual machine name> \
-      --os-type linux \
-      --attach-os-disk <operating system disk> \
-      --attach-data-disks <data disk 1> \
-      --attach-data-disks <data disk 2>
-  ```
+2. Create the new virtual machine using these managed disks. Again, the most straightforward approach is to use the Azure portal.

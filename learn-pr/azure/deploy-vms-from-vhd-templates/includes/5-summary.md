@@ -5,7 +5,7 @@ In this module you've learned about customized virtual machine images and how yo
 - Create a virtual machine image
 - Create a virtual machine from an existing virtual machine image
 
-In the finance organization scenario, you can use this knowledge to build a customized virtual machine image configured to meet the organization;s requirements. You can then use this image to roll out virtual machines across the entire organization.
+In the finance organization scenario, you can use this knowledge to build a customized virtual machine image configured to meet the organization's requirements. You can then use this image to roll out virtual machines across the entire organization.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
