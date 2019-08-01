@@ -11,15 +11,15 @@ The demos in this module provide an opportunity to see Azure in action.
 
 In this module, you will:
 
-- Review an application server lift-and-shift migration demo using Azure Migrate
+- Watch a demo that shows an application server lift-and-shift migration that uses Azure Migrate
 
-- Watch a demo that shows how to modernize an application using Azure Logic Apps
+- Watch a demo that shows how to modernize an application by using Azure Logic Apps
 
-- Recognize the value of Azure as illustrated by these demos
+- Recognize the value of Azure, as illustrated by these demos
 
 | | |
 | ---: | :--- |
-| ![Icon of lightbulb](../media/lightbulb.png)| *Does your organization have workloads running on Windows Server 2008/2008 R2 or SQL Server 2008/2008 R2? If so, consider whether the scenario demonstrated in the next unit applies to your situation.*|
+| ![Light bulb icon](../media/lightbulb.png)| *Does your organization have workloads that run on Windows Server 2008/2008 R2 or SQL Server 2008/2008 R2? If so, consider whether the scenario demonstrated in the next unit applies to your situation.*|
 |
 
-Next, let's review an example of a lift and shift Azure migration demo.
+Next, let's view a demo of a lift-and-shift Azure migration.
