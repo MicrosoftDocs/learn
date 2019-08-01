@@ -1,6 +1,6 @@
 Watch this video from Steve Guggenheimer, Corporate Vice President of AI & ISV Engagement, as he shares a high-level overview of how Microsoft is developing new AI services and embedding AI into existing products - as well as an explanation of how these technologies can benefit your business.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtIyP]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Y20y]
 
 In many cases, organizations would prefer to leverage existing AI services for common horizontal processes, rather than build their own solutions. Here, Goggenheimer reviewed how to use the infrastructure and rich data sets around you to reinforce your company’s digital feedback loop.
 

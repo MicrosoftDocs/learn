@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-diagnose-application-startup-errors-with-kudu-console.5-exercise-diagnose-application-event-log-using-kudu-console
+title: Exercise -  Diagnose application event log using Kudu console
+metadata:
+  title: Exercise -  Diagnose application event log using Kudu console
+  description: Diagnose application event log using Kudu console
+  ms.date: 06/21/2019
+  author: sowmyasubramaniam 
+  ms.author: sosubra 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+azureSandbox: true
+durationInMinutes: 6
+interactive: bash
+content: |
+  [!include[](includes/5-exercise-diagnose-application-event-log-using-kudu-console.md)]

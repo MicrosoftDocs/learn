@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-requirements-for-custom-computer-vision-api.examine-custom-vision-training-api
+title: Examine the Custom Vision Prediction API
+metadata:
+  title: Examine the Custom Vision Prediction API
+  description: Examine the Custom Vision Prediction API
+  ms.date: 07/22/2019
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-examine-the-custom-vision-prediction-api.md)]
