@@ -32,7 +32,7 @@ products:
 - azure-cost-management
 units:
 - learn.azure.analyze-costs-create-budgets-azure-cost-management.introduction
-- learn.azure.analyze-costs-create-budgets-azure-cost-management.cost-management-principals
+- learn.azure.analyze-costs-create-budgets-azure-cost-management.cost-management-principles
 - learn.azure.analyze-costs-create-budgets-azure-cost-management.evaluate-costs-using-cost-analysis
 - learn.azure.analyze-costs-create-budgets-azure-cost-management.exercise-see-trends
 - learn.azure.analyze-costs-create-budgets-azure-cost-management.build-budgets-alerts
