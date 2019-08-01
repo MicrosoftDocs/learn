@@ -14,7 +14,10 @@ Andy is putting together a report of the progress the team is making. He's in th
 
 ## What's the dashboard?
 
-The dashboard is a customizable area in Azure DevOps where you can add widgets and extensions to help you visualize areas of your DevOps solution. For example, you can add a widget to show the history of your builds over time, or give you a burn down of the work in progress, or show you the current pull requests.
+The dashboard is a customizable area in Azure DevOps where you can add widgets and extensions to help you visualize areas of your DevOps solution. For example, you can add a widget to:
+* Show the history of your builds over time.
+* Give you a *burn down* view of the work in progress.
+* Show you the current pull requests.
 
 ## Add a build history widget to the dashboard
 
@@ -39,7 +42,7 @@ The dashboard is a customizable area in Azure DevOps where you can add widgets a
     ![Azure Pipelines showing the Build History widget](../media/7-build-history-widget.png)
 1. Hover over each build to view the build number, when the build was completed, and the elapsed build time. 
 
-   Each build succeeded, so the bars on the widget are all green. If the build had failed build, it would appear in red.
+   Each build succeeded, so the bars on the widget are all green. If the build had failed, it would appear in red.
 1. Select one of the bars to drill down into that build.
 
 To display more widgets, select the **Extension Gallery** link at the bottom of the **Add Widget** pane.
