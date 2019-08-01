@@ -22,12 +22,12 @@ In this section, you set up a rule on GitHub that requires at least one reviewer
 
 ### Add the rule
 
-1. In GitHub, go to your _Space Game_ project's repository.
+1. In GitHub, go to your _Space Game_ project repository.
 1. Select the **Settings** tab near the top of the page.
 1. On the menu, select **Branches**.
 1. Make sure that **master** is selected as your default branch.
-1. Select the **Add rule** button.
-1. Under **Branch name pattern**, enter *master*.
+1. Select **Add rule**.
+1. Under **Branch name pattern**, enter **master**.
 1. Select the **Require pull request reviews before merging** check box.
 1. Keep the **Required approving reviews** value at **1**.
 1. To create the rule in the `master` branch, select **Create**.
@@ -38,7 +38,7 @@ In this section, you set up a rule on GitHub that requires at least one reviewer
 
 ### Submit the fix
 
-In this section, you submit a fix to the typing error on the home page. Recall that the word *official* is mistyped as *oficial*.
+In this section, you submit a fix to the typing error on the home page. Recall that the word "official" is mistyped as "oficial".
 
 ![The Space Game website showing a typing error](../media/5-web-site-revised-text.png)
 
@@ -84,7 +84,7 @@ In this section, you submit a fix to the typing error on the home page. Recall t
     git commit -m "Fix typing error on the home page"
     ```
 
-    In practice, you ordinarily build and run the site locally to verify the change. In this unit, let's skip that step for brevity.
+    In practice, you would ordinarily build and run the site locally to verify the change. In this unit, for the sake of brevity, let's skip that step.
 1. Push the branch to GitHub.
     ```bash
     git push origin bugfix/home-page-typo
@@ -116,7 +116,7 @@ In this section, you submit a fix to the typing error on the home page. Recall t
 
 In future modules, you'll continue working with the Tailspin team and the _Space Game_ website. To limit each module to new concepts only, you'll base your new work on the original `master` branch that came with your fork of the _Space Game_ repository on GitHub.
 
-To ensure that the branches you create later will properly integrate with the `master` branch, reset your GitHub repository's `master` branch to its original state.
+To ensure that the branches you create later will integrate properly with the `master` branch, reset your GitHub repository's `master` branch to its original state.
 
 > [!WARNING]
 > The process you follow here involves temporarily deleting the branch protection rule that you set up earlier, fetching the `master` branch from the Microsoft repository, and then performing a _force push_ of that branch to your repository.
@@ -125,7 +125,7 @@ To ensure that the branches you create later will properly integrate with the `m
 
 To delete the branch protection rule that you set up earlier, do the following:
 
-1. In GitHub, go to your _Space Game_ project's repository.
+1. In GitHub, go to your _Space Game_ project repository.
 1. Select the **Settings** tab.
 1. On the menu, select **Branches**.
 1. Under **Branch protection rules**, select the rule named **master** that you set up earlier in this unit.
