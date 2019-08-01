@@ -1,6 +1,6 @@
-It's important to choose a code flow strategy that fits in with how your team works. There are several strategies to consider, and you'll find links that explain them at the end of the module. The Tailspin web team uses a code flow strategy based on Git and GitHub.
+It's important to choose a code flow strategy that fits in with how your team works. There are several strategies to consider, and you'll find links that explain them at the end of the module. The Tailspin web team uses a code flow strategy that's based on Git and GitHub.
 
-When Mara set up Azure Boards, she and the team identified a few initial tasks to address. One of them was to create a Git-based workflow.
+When Mara set up Azure Boards, she and the team identified a few initial tasks to address. One task was to create a Git-based workflow.
 
 ![Azure Boards showing the initial three tasks](../../shared/media/build-initial-tasks.png)
 
@@ -16,7 +16,7 @@ Andy gives a heavy sigh.
 
 **Andy**: Fine, just let me know when they are available.
 
-**Mara**: You know Andy, maybe we should think about implementing a Git workflow now. It's on our board. If we were using distributed version control, you wouldn't be blocked. It would be much easier for all of us to work together on the same project. It's also a task on our board to increase visibility so all the stakeholders know what everyone is doing. I think a distributed source control system like Git would help there as well.
+**Mara**: You know, Andy, maybe we should think about implementing a Git workflow now. It's on our board. If we were using distributed version control, you wouldn't be blocked. It would be much easier for all of us to work together on the same project. It's also a task on our board to increase visibility so all the stakeholders know what everyone is doing. I think a distributed source control system like Git would help there as well.
 
 **Andy**: I've been wanting to try Git for a while. I just never seem to have the time. Is it difficult to learn or set up? If it seems reasonable, maybe we could work on it now. I'm tired of always putting things off. 
 
@@ -34,13 +34,13 @@ Mara and Andy move to the whiteboard for a discussion on version control.
 
 **Andy**: Like when I went to the conference. I couldn't get to the code.
 
-**Mara**: Right! And you were blocked ![Callout 2](../../shared/media/callout-02.png) from checking out the files you needed today, because I have them checked out. We could use a branching strategy with TFVC to solve the blocking issue, but in our current configuration, merging might get a bit more complicated.
+**Mara**: Right! And you were blocked ![Callout 2](../../shared/media/callout-02.png) from checking out the files you needed today, because I have them checked out. We could use a branching strategy with TFVC to solve the blocking issue but, in our current configuration, merging might get a bit more complicated.
 
 And remember when we had that breaking change ![Callout 3](../../shared/media/callout-03.png) merged into the main repository? No one could get any work done until we got that solved. That problem is always lurking, because we're all using the same copy of the code.
 
-On the right is a drawing of _distributed version control_. We still have a main or _master_ repository ![Callout 4](../../shared/media/callout-04.png) that's the stable version of the code base, but each developer has their own copy ![Callout 5](../../shared/media/callout-05.png) of it to work from. This frees us up to experiment and try different approaches without affecting the main repository or locking other developers out of the files they're working with.
+On the right is a drawing of _distributed version control_. We still have a main, or `master`, repository ![Callout 4](../../shared/media/callout-04.png) that's the stable version of the code base, but each developer has their own copy ![Callout 5](../../shared/media/callout-05.png) of it to work from. This frees us up to experiment and try a variety of approaches without affecting the main repository or locking other developers out of the files they're working with.
 
-Distributed version control also ensures that only working code ![Callout 6](../../shared/media/callout-06.png) gets merged into the master repository. We could even set it up to where code can't merge until it has been reviewed.
+Distributed version control also ensures that only working code ![Callout 6](../../shared/media/callout-06.png) gets merged into the master repository. We could even set it up to where code can't be merged until it's been reviewed.
 
 What's cool about Azure DevOps is that it works well with both centralized and distributed version control systems.
 
@@ -54,9 +54,9 @@ What's cool about Azure DevOps is that it works well with both centralized and d
 
 ## Where can I host my repository?
 
-**Mara**: When deciding where to host our repositories, we have a few options. For example, we can host them on a local server, in Bitbucket, or GitHub. Bitbucket and GitHub are hosting solutions that are web-based. We can access them from anywhere.
+**Mara**: When we're deciding where to host our repositories, we have a few options. For example, we can host them on a local server, in Bitbucket, or in GitHub. Bitbucket and GitHub are web-based hosting solutions. We can access them from anywhere.
 
-**Andy**: Have you used either of these?
+**Andy**: Have you used either of them?
 
 **Mara**: I've used GitHub in the past. It has features that are important to developers, like easy access to change logs and version control features from either the command line or the online portal.
 
@@ -64,11 +64,11 @@ What's cool about Azure DevOps is that it works well with both centralized and d
 
 ## How do I work with Git?
 
-**Mara**: Like I mentioned before, with distributed systems, developers are free to access any file they need without affecting other developers' work, since they have their own copy of the repository. A _clone_ is your local copy of a repository.
+**Mara**: Like I mentioned before, with distributed systems, developers are free to access any file they need without affecting other developers' work, because they have their own copy of the repository. A _clone_ is your local copy of a repository.
 
-When we work on a feature or a bug fix, we usually want to try out different approaches until we find the best solution. But trying out code on your copy of the main codebase isn't a good idea since you may not want to keep the first few tries.
+When we work on a feature or a bug fix, we usually want to try out different approaches until we find the best solution. But trying out code on your copy of the main codebase isn't a good idea, because you may not want to keep the first few tries.
 
-To give you a better option, Git has a feature called _branching_, where you can maintain as many copies as you want and only merge back the one you want to keep. This keeps the main branch stable.
+To give you a better option, Git has a feature called _branching_, where you can maintain as many copies as you want and merge back only the one you want to keep. This keeps the main branch stable.
 
 **Andy**: I get the concepts so far. How do I check in my code?
 
@@ -151,7 +151,7 @@ You're finally ready to propose your changes to the remote `master` branch. To d
 
 **Andy**: This all looks complicated and hard to learn.
 
-**Mara**: Git can seem intimidating because it's so powerful. But after you get a hang of the flow, it starts to feel natural.
+**Mara**: Git can seem intimidating because it's so powerful. But after you get the hang of the flow, it starts to feel natural.
 
 You'll use only a few commands daily. Here's a summary:
 
