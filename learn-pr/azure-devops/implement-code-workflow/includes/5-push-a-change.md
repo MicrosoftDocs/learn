@@ -1,6 +1,6 @@
 In this unit, you practice the complete code workflow by pushing a small change to the _Space Game_ website to GitHub.
 
-Mara has been given the task of changing some text on the home page of the website, *Index.cshtml*. Here, you'll follow along.
+Mara has been given the task of changing some text on the home page of the website, *Index.cshtml*. In this unit, you'll follow along.
 
 Let's briefly review the steps to follow to complete the task:
 
@@ -127,12 +127,12 @@ Before you create a branch, it's a good idea to adhere to a naming convention. F
     > [!TIP]
     > Visual Studio Code also provides an easy way to search for text in files. To access the search pane, select the magnifying glass icon in the side pane.
 
-1. Replace the text in the previous step with the following misspelled text, and then save the file.
+1. Replace the text in the previous step with the following "mistyped" text, and then save the file:
 
     ```html
     <p>Welcome to the oficial Space Game site!</p>
     ```
-    Note that the misspelled word "oficial" is intentional. We'll address that error later in this module.
+    Note that the word "oficial" is intentionally mistyped. We'll address that error later in this module.
 
 1. In your terminal, run the following `dotnet build` command to build the application:
 
@@ -152,7 +152,7 @@ Before you create a branch, it's a good idea to adhere to a naming convention. F
 
     ![The Space Game website](../media/5-web-site-revised-text.png)
 
-    When you're finished, return to the terminal window and press Ctrl + C to stop the running application.
+    When you're finished, return to the terminal window, and then press Ctrl+C to stop the running application.
 
 ## Commit and push your branch
 
@@ -181,7 +181,7 @@ Here you'll stage your changes to *Index.cshtml*, commit the change to your bran
     The `-m` argument specifies the commit message. The commit message becomes part of a changed file's history. It helps reviewers understand the change as well as help future maintainers understand how the file changed over time.
 
     > [!TIP]
-    > The best commit messages complete the sentence "If you apply this commit, you will ..."
+    > The best commit messages complete the sentence, "If you apply this commit, you will ..."
 
     If you omit the `-m` argument, Git brings up a text editor where you can detail the change. This option is useful when you want to specify a commit message that spans multiple lines. The text up to the first blank line specifies the commit title.
 
@@ -294,6 +294,6 @@ In this section, you submit a pull request just as you did previously.
     The pull request window is displayed. As before, a pull request triggers Azure Pipelines to build your application by default.
 
 1. Optionally, select the **Details** link or go to your project on Azure DevOps and watch the pipeline run.
-1. When the build is complete, go back to your pull request on GitHub.
+1. When the build is finished, go back to your pull request on GitHub.
 1. Select **Merge pull request**, and then select **Confirm merge**.
-1. Select the **Delete branch** button to delete the `feature/home-page-text` branch from GitHub.
+1. Select **Delete branch** to delete the `feature/home-page-text` branch from GitHub.
