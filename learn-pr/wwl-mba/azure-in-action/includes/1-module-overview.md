@@ -2,7 +2,7 @@
 
 The demonstrations in this module show you the ease with which you can adopt Azure and some of the benefits of running your solutions on Azure. You’ll also see some of the specific tools available within Azure to help you migrate to the cloud, modernize your solutions by using new cloud capabilities, and even continuously monitor and update your solutions in the cloud.  
 
-A key time to consider migration and modernization to Azure is when your business is on the verge of an expansion or upgrade. For example, maybe your server hardware or software is reaching the end of its lifecycle, or you need to add capacity to your datacenter. These can be opportune moments to consider the cloud as part of your new or upgraded infrastructure.
+A key time to consider migration to Azure and modernization is when your business is on the verge of an expansion or upgrade. For example, maybe your server hardware or software is reaching the end of its lifecycle, or you need to add capacity to your datacenter. These can be opportune moments to consider the cloud as part of your new or upgraded infrastructure.
 
 > [!NOTE]
 > Extended support for SQL Server 2008/2008 R2 ends on July 9, 2019. Extended support for Windows Server 2008/2008 R2 ends on January 14, 2020. Now is a good time to evaluate new options for innovation and modernization with cloud technologies.
@@ -15,7 +15,7 @@ In this module, you will:
 
 - Watch a demo that shows how to modernize an application by using Azure Logic Apps
 
-- Recognize the value of Azure, as illustrated by these demos
+- Recognize the value of Azure, as illustrated by the demos
 
 | | |
 | ---: | :--- |

@@ -1,20 +1,20 @@
 ﻿## Introduction
 
-When an application is outgrowing the local infrastructure on which it's hosted, you need to look at other options to meet its demands. The Azure cloud platform offers a number of platforms and service offerings to host applications.
+When an application is outgrowing the local infrastructure that it's hosted on, you need to look at other options to meet its demands. Azure Cloud Services provides a number of platforms and service offerings to host applications.
 
-Tailwind Traders is a local retail company that's in the process of expanding its business worldwide. To do that, IT needs to scale the company's applications with robust solutions that allow the company to reach more customers without worrying about application performance.
+Tailwind Traders is a local retail company that's expanding its business worldwide. To do that, IT needs to scale the company's applications with robust solutions that allow the company to reach more customers without worrying about application performance.
 
-In this demo, you'll see the process by which Tailwind Traders can host its Rewards application in Azure App Service and modernize it with Azure Logic Apps.
+In this demo, you'll see the process by which Tailwind Traders can host its rewards application in Azure App Service and modernize it with Azure Logic Apps.
 
 ## Migrate and modernize applications
 
 |||
 | :--- | :--- |
-| ![Play video icon](../media/video-icon.png)| David, Senior Product Marketing Manager for Azure Application Development, demonstrates how easy it can be to migrate and modernize an application.|
+| ![Play video icon](../media/video-icon.png)| David, Senior Product Marketing Manager for Azure Application Development, demonstrates how easy it can be to migrate and modernize an app.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3dj5N]
 
-You've just seen how easy it is to migrate an application by using Azure App Service and then update it without changing any code by using Azure Logic Apps. Automation of manual tasks like this one will allow Tailwind Traders to scale, making it possible for them to expand their business.
+You've just seen how easy it is to migrate an application by using Azure App Service and then update it without changing any code by using Azure Logic Apps. Automation of manual tasks like this one will allow Tailwind Traders to scale, making it possible for the company to expand business.
 
 ### Key points
 

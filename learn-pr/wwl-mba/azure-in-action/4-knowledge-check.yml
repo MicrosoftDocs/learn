@@ -15,11 +15,11 @@ content: |
   [!include[](includes/4-knowledge-check.md)] 
 quiz:
   questions:
-  - content: "What is the name of the Azure tool that gathers metadata from on-premises servers to assist with cloud migration and operation recommendations?"
+  - content: "What's the name of the Azure tool that gathers metadata from on-premises servers to assist with cloud migration and operation recommendations?"
     choices:
     - content: "Azure Migrate collector"
       isCorrect: true
-      explanation: "Correct. The Azure Migrate collector is a virtual appliance that collects metadata from on-premises servers and sends it to the migration project. Azure Migrate then uses the collector appliance data to make application-specific migration recommendations, including cost estimates for both migration and operation in the cloud."
+      explanation: "Correct. The Azure Migrate collector is a virtual appliance that collects metadata from on-premises servers and sends it to the migration project. Azure Migrate then uses the collector appliance data to make application-specific migration recommendations, including cost estimates for migration and for operation in the cloud."
     - content: "Azure Hybrid Benefit"
       isCorrect: false
       explanation: "Incorrect. Azure Hybrid Benefit allows you to capitalize on your existing Windows licensing investments by providing discounts for VMs turned on in Azure."
@@ -33,7 +33,7 @@ quiz:
     choices:
     - content: "Application authentication"
       isCorrect: true
-      explanation: "Correct. Administrators can fully control access to an app by activating authentication providers like a Microsoft account, Facebook, Google, and Twitter. Admins can even put the app behind an Active Directory tenant."
+      explanation: "Correct. Admins can fully control access to an app by activating authentication providers like a Microsoft account, Facebook, Google, and Twitter. Admins can even put the app behind an Active Directory tenant."
     - content: "Azure Hybrid Benefit"
       isCorrect: false
       explanation: "Incorrect. Azure Hybrid Benefit allows you to capitalize on your existing Windows licensing investments by providing discounts for VMs turned on in Azure. It's not a configurable option provided by Azure App Service."
@@ -70,5 +70,5 @@ quiz:
       explanation: "Incorrect. Azure DevOps is a comprehensive solution that spans from development to project management to deployment to operations. It doesn't offer the ability to modernize apps."
     - content: "Application Insights"
       isCorrect: false
-      explanation: "Incorrect. Application Insights allows an administrator to monitor application performance in real time. It doesn't offer a way to modernize applications."
+      explanation: "Incorrect. Application Insights allows administrators to monitor application performance in real time. It doesn't offer a way to modernize applications."
     

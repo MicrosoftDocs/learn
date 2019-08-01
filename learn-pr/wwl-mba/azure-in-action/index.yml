@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: See Azure in action
-summary: Many organizations are eager to take advantage of the benefits of cloud computing by migrating their existing applications and workloads to the cloud from their on-premises datacenters. The competitive advantages of higher efficiency, greater flexibility, lower costs, and better performance are appealing, but it can feel daunting to get started. To help you get started with migration, the demos in this module provide an opportunity to see Azure in action.
+summary: Many organizations are eager to take advantage of the benefits of cloud computing by migrating their existing apps and workloads to the cloud from their on-premises datacenters. The competitive advantages of higher efficiency, greater flexibility, lower costs, and better performance are appealing, but getting started can feel intimidating. To help you get started with migration, the demos in this module provide an opportunity to see Azure in action.
 abstract: |
   In this module, you will:
   - Watch a demo that shows an application server lift-and-shift migration that uses Azure Migrate
