@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "Azure Migrate appliance"
       isCorrect: true
-      explanation: "Correct. The Azure Migrate appliance is a virtual appliance that collects metadata from on-premises servers and sends it to the migration project. Azure Migrate then uses the collector appliance data to make application-specific migration recommendations, including cost estimates for migration and for operation in the cloud."
+      explanation: "Correct. The Azure Migrate appliance is a virtual appliance that collects metadata from on-premises servers and sends it to the migration project. Azure Migrate then uses the appliance data to make application-specific migration recommendations, including cost estimates for migration and for operation in the cloud."
     - content: "Azure Hybrid Benefit"
       isCorrect: false
       explanation: "Incorrect. Azure Hybrid Benefit allows you to capitalize on your existing Windows licensing investments by providing discounts for VMs turned on in Azure."
