@@ -8,10 +8,11 @@ By default, Azure Load Balancer distributes network traffic equally among virtua
 
 - **Five-tuple hash.** The default distribution mode for Azure Load Balancer is a five-tuple hash. The tuple is composed of the source IP, source port, destination IP, destination port, and protocol type. Because the source port is included in the hash, and the source port changes for each session, clients may be directed to a different virtual machine for each session.
   
-![Hash-based distribution](../media/3-load-balancer-distribution.png)
+    ![Hash-based distribution](../media/3-load-balancer-distribution.png)
 
 - **Source IP affinity.** This distribution mode is also known as session affinity or client IP affinity. To map traffic to the available servers, the mode uses a 2-tuple hash (from the source IP address and destination IP address) or 3-tuple hash (from the source IP address, destination IP address, and protocol type). The hash ensures that requests from a given client are always sent to the same virtual machine behind the load balancer. 
-  ![Session Affinity](../media/3-load-balancer-session-affinity.png)
+
+    ![Session Affinity](../media/3-load-balancer-session-affinity.png)
 
 ## Choose a distribution mode
 
@@ -28,7 +29,7 @@ Set-AzLoadBalancer -LoadBalancer $lb
 To add session persistence through the Azure portal:
 
 1. In the Azure portal, open the load balancer resource.
-1. Edit the relevent of the **Load-balancing rules**.
+1. Edit the relevant of the **Load-balancing rules**.
 1. Change the **Session persistence** value to **Client IP**
 
 ![Configuring IP affinity](../media/4-screenshot-session-persistence.png)
@@ -39,6 +40,6 @@ Remote Desktop Gateway is a Windows service that you can use to enable clients o
 
 ## Azure Load Balancer and media upload
 
-Another use case for source IP affinity is media upload. In many implementations, a client initiates a session through a TCP protocol and connects to a destination IP address. This connection remains open throughout the upload to monitor progess, but the file is uploaded through a separate UDP protocol. 
+Another use case for source IP affinity is media upload. In many implementations, a client initiates a session through a TCP protocol and connects to a destination IP address. This connection remains open throughout the upload to monitor progress, but the file is uploaded through a separate UDP protocol. 
 
 With the five-tuple hash, the TCP and UDP connections are likely to be sent to different destination IP addresses by the load balancer, which stops the upload from completing successfully. Use source IP affinity to fix this problem.

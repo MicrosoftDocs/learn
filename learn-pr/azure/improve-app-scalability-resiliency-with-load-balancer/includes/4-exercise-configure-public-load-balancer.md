@@ -4,8 +4,6 @@ In your healthcare organization, you want to load balance the client traffic, to
 
 Here, you will create a load balancer resource and use it to distributed load across the virtual machines.
 
-<!-- TODO: Availability set creation causes an error in the sandbox. Fine in a paid subscription. Amend sandbox policies? -->
-
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
 ## Deploy the patient portal web application

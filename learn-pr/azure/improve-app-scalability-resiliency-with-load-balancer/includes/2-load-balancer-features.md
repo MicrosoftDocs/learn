@@ -14,8 +14,6 @@ Azure Load Balancer is a service you can use to distribute traffic across multip
 - **Destination port** – the destination port of the request.
 - **Protocol type** – the specified protocol type, For example, HTTP, HTTPS, HTTP/2.
 
-<!-- TODO: Create a graphic based on this image. Source URL: https://docs.microsoft.com/azure/load-balancer/media/load-balancer-overview/load-balancer-distribution.png -->
-
 ![Overview of Load Balancer](../media/2-load-balancer-distribution.png)
 
 Azure Load Balancer supports inbound and outbound scenarios, provides low latency and high throughput, and scales up to millions of flows for all TCP and UDP applications.
@@ -34,15 +32,11 @@ To achieve high availability with load balancer, you can choose to use availabil
 
 An availability set is a logical grouping that you use to isolate virtual machine resources from each other when they're deployed. Azure ensures that the virtual machines you put in an availability set run across multiple physical servers, compute racks, storage units, and network switches. If there's a hardware or software failure, only a subset of your virtual machines is affected – your overall solution stays operational. Availability sets are essential for building reliable cloud solutions.
 
-<!-- TODO: Create an image similar to the one below, taken from: https://thebackroomtech.com/wp-content/uploads/azure-availability-sets.png -->
-
 ![Overview of Availability Sets](../media/2-availability-sets.png)
 
 ### Availability zones
 
 An availability zone offers groups of one or more data centers that have independent power, cooling, and networking. The virtual machines in an availability zone are placed in different physical locations within the same region. Use this architecture when you want to ensure that, when an entire data center fails, you can continue to serve users.
-
-<!-- TODO: Create an image similar to the one below. Source URL: https://docs.microsoft.com/azure/availability-zones/media/az-overview/az-graphic-two.png -->
 
 ![Overview of Availability Zones](../media/2-az-graphic-two.png)
 

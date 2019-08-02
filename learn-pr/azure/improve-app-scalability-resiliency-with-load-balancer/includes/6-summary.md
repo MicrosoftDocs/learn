@@ -2,7 +2,7 @@ In this module, you learned about Azure Load Balancers and how they can be used 
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
-##Learn more
+## Learn more
 
 - [Load Balancer](https://docs.microsoft.com/azure/load-balancer/)
 - [What is Azure Load Balancer?](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview)
