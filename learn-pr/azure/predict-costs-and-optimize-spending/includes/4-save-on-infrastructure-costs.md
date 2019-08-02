@@ -8,7 +8,7 @@ When you activate this benefit, you will own a separate Azure subscription under
 
 The credit amount varies based on the program level, and you should check the documentation for more details on how much credit you receive for your specific subscription level. For example:
 - $50 per month for VS Professional
-- $150 per month for Enterprise.
+- $150 per month for Enterprise
 
 > [!IMPORTANT]
 > The monthly Azure credit for Visual Studio subscribers is for **development and testing only** and does not carry a financially-backed SLA. Azure will suspend any instance (VM or cloud service) that runs continuously for more than 120 hours or if it's determined that the instance is being used for production. This benefit is made available to Visual Studio subscribers on a best efforts basis; there is no guarantee of capacity availability.
