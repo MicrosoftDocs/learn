@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.module-uid.3-storage-metrics
+uid: learn.monitor-diagnose-and-troubleshoot-azure-storage.3-storage-metrics
 metadata:
   title: Troubleshoot with storage metrics
-  description: TODO
+  description: Troubleshoot with storage metrics
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
