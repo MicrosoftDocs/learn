@@ -39,9 +39,9 @@ Next, you would normally create a resource group for all your related Azure reso
 
 ### Steps to create a service plan
 
-When you run Web Apps, using the Azure App Service, you pay for the Azure compute resources used by the app, and this depends on the App Service plan associated with your Web Apps. Service plans determine the region used for the app datacenter, number of VMs used, and pricing tier.
+When you run Web Apps using the Azure App Service, you pay for the Azure compute resources that are used by the app, and the resource costs depend on the App Service plan associated with your Web Apps. Service plans determine the region used for the app datacenter, number of VMs used, and pricing tier.
 
-1. Create an App Service plan to run your app. The following command specifies the free pricing tier or VM instance details, but you can run `az appservice plan create --help` to see the other pricing tiers.
+1. Create an App Service plan to run your app. The following command specifies the free pricing tier, but you can run `az appservice plan create --help` to see the other pricing tiers.
 
    > [!NOTE]
    > The name of the app and plan must be _unique_ in all of Azure. The variables that you created earlier will assign random values as suffixes to make sure they're unique. However, if you receive an error when you are creating any resources, you should run the commands listed earlier to reset all of the variables with new random values.
@@ -68,7 +68,7 @@ When you run Web Apps, using the Azure App Service, you pay for the Azure comput
 
 ### Steps to create a web app
 
-Next, you'll create the web app in your service plan. You can deploy the code at the same time, but for our example, we'll do this as separate steps.
+Next, you'll create the web app in your service plan. You can deploy the code at the same time, but for our example, we'll create the web app and deploy the code as separate steps.
 
 1. To create the web app, you'll supply web app name and the name of the app plan you created above. Just like the app plan name, the web app name must be unique, and the variables that you created earlier will assign random values that should be sufficient for this exercise.
 
@@ -90,9 +90,9 @@ Next, you'll create the web app in your service plan. You can deploy the code at
    popupwebapp-12345  Central US  Running  Learn-12345678-1234-1234-1234-123456789abc  popupwebapp-12345.azurewebsites.net  popupappplan-54321
    ```
 
-   Make a note of the **DefaultHostName** listed in the table; this is the reachable web address for the new website. Azure will make your website available through the unique app name in the `azurewebsites.net` domain. For example, if my app name was "popupwebapp-mslearn123", then my website URL would be: `http://popupwebapp-mslearn123.azurewebsites.net`.
+   Make a note of the **DefaultHostName** listed in the table; this address is the URL for the new website. Azure will make your website available through the unique app name in the `azurewebsites.net` domain. For example, if my app name was "popupwebapp-mslearn123", then my website URL would be: `http://popupwebapp-mslearn123.azurewebsites.net`.
 
-1. Your site has a "QuickStart" page created by Azure that you can see either in a browser, or with CURL, just use the **DefaultHostName**:
+1. Your site has a "quickstart" page created by Azure that you can see either in a browser, or with CURL, just use the **DefaultHostName**:
 
    ```bash
    curl $AZURE_WEB_APP.azurewebsites.net
