@@ -2,7 +2,7 @@ In the sample scenario, your organization is rolling out a new environment on Az
 
 In this exercise, you'll start with an existing virtual machine and generalize it. You'll create an image from the generalized virtual machine, and then use this image to create a further virtual machine.
 
-## Setup
+## Create a virtual machine
 
 In this task, you'll quickly create a virtual machine that runs a simple web app. The web app displays the name of the host machine. You'll use this virtual machine as the basis for the rest of the exercise.
 
@@ -10,7 +10,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone pivot="windows"
 
-1. In the Cloud Shell window on the right, run the following commands to create a Windows DataCenter Server virtual machine running IIS. When prompted for the Admin password, enter a password of your choice:
+1. In the Cloud Shell window on the right, run the following commands to create a Windows Server Datacenter virtual machine running IIS. When prompted for the *azureuser* password, enter a password of your choice.
 
     ```azurecli
     az vm create \
@@ -33,7 +33,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
         --settings '{"commandToExecute":"powershell Add-WindowsFeature Web-Server; powershell Add-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\" -Value $($env:computername)"}'
     ```
 
-2. Run the following command to find the public IP address of the new virtual machine:
+2. Run the following command to find the public IP address of the new virtual machine.
 
     ```azurecli
     az vm list-ip-addresses \
@@ -42,7 +42,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
         --output table
     ```
 
-3. In the web browser, navigate to the public IP address of the virtual machine. Verify that a web page displaying the name of the virtual machine (MyWindowsVM):
+3. In the web browser, navigate to the public IP address of the virtual machine. Verify that a web page displaying the name of the virtual machine, *MyWindowsVM*.
 
     ![Screenshot of the web page from the Windows virtual machine](../media/4-original-vm-web-page.png)
 
@@ -50,7 +50,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone pivot="linux"
 
-1. In the Cloud Shell window on the right, run the following commands to create an Ubuntu Server virtual machine running nginx. When prompted for the Admin password, enter a password of your choice:
+1. In the Cloud Shell window on the right, run the following commands to create an Ubuntu Server virtual machine running Nginx. When prompted for the *azureuser* password, enter a password of your choice.
 
     ```azurecli
     az vm create \
@@ -73,7 +73,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
         --settings '{"commandToExecute":"apt-get -y update && apt-get -y install nginx && hostname > /var/www/html/index.html"}'
     ```
 
-2. Run the following command to find the public IP address of the new virtual machine:
+2. Run the following command to find the public IP address of the new virtual machine.
 
     ```azurecli
     az vm list-ip-addresses \
@@ -82,7 +82,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
         --output table
     ```
 
-3. In the web browser, navigate to the public IP address of the virtual machine. Verify that a web page displaying the name of the virtual machine (MyUbuntuVM):
+3. In the web browser, navigate to the public IP address of the virtual machine. Verify that a web page displaying the name of the virtual machine *MyUbuntuVM*.
 
     ![Screenshot of the web page from the Ubuntu virtual machine](../media/4-original-ubuntu-web-page.png)
 
@@ -92,7 +92,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone pivot="windows"
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your MSLearn account.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. In the menu pane on the left, click **Resource groups**, and then click the <rgn>[Sandbox resource group name]</rgn> resource group.
 
@@ -112,7 +112,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 1. In the **Windows Security** dialog box, click **More choices**, and then click **Use a different account**.
 
-1. Sign in with the username **azureuser**, and the Admin password you used when you created the original virtual machine.
+1. Sign in with the username *azureuser*, and the Admin password you used when you created the original virtual machine.
 
 1. In the **Remote Desktop Connection** dialog box, click **Yes** to proceed.
 
@@ -130,7 +130,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
     ![Opening the Windows Command Prompt as Administrator](../media/4-open-command-prompt.png)
 
-1. In the Command Prompt window, run the following command to execute the **Sysprep** utility:
+1. In the Command Prompt window, run the following command to execute the **Sysprep** utility.
 
     ```command
     C:\windows\system32\sysprep\sysprep
@@ -150,7 +150,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
     ![Screenshot of the **Session Ended** dialog box](../media/4-session-ended.png)
 
-1. In the Cloud Shell window, run the following command to deallocate the virtual machine:
+1. In the Cloud Shell window, run the following command to deallocate the virtual machine.
 
     ```azurecli
     az vm deallocate \
@@ -162,15 +162,13 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone pivot="linux"
 
-1. In the Cloud Shell window, run the following command to connect to the Ubuntu virtual machine. Replace *\<ip address\>* with the public IP address of the virtual machine, that you noted during the Setup task.
+1. In the Cloud Shell window, run the following command to connect to the Ubuntu virtual machine. Replace `<ip address>` with the public IP address of the virtual machine, that you noted during the Setup task.
 
     ```bash
-    ssh <ip address>
+    ssh -o StrictHostKeyChecking=no <ip address>
     ```
 
-   At the **Are you sure you want to continue connecting (yes/no)?** prompt, type **yes** and press Enter
-
-1. Run the following command to prepare the virtual machine for generalization:
+1. Run the following command to prepare the virtual machine for generalization.
 
     ```bash
     sudo waagent -deprovision+user
@@ -178,13 +176,13 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
     At the **Do you want to proceed (y/n)** prompt, type **y** and press Enter.
 
-1. When the operation has completed, run the following command to close the connection to the virtual machine:
+1. When the operation has completed, run the following command to close the connection to the virtual machine.
 
     ```bash
     exit
     ```
 
-1. In the Cloud Shell, run the following command to deallocate the virtual machine:
+1. In the Cloud Shell, run the following command to deallocate the virtual machine.
 
     ```azurecli
     az vm deallocate \
@@ -192,7 +190,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
         --name MyUbuntuVM
     ```
 
-1. Run the following command to generalize the virtual machine:
+1. Run the following command to generalize the virtual machine.
 
     ```azurecli
     az vm generalize \
@@ -206,7 +204,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone pivot="windows"
 
-1. Run the following command to create a virtual machine image named **MyVMImage** from the generalized virtual machine:
+1. Run the following command to create a virtual machine image named *MyVMImage* from the generalized virtual machine.
 
     ```azurecli
     az image create \
@@ -219,7 +217,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone pivot="linux"
 
-1. Run the following command to create a virtual machine image named **MyVMImage** from the generalized virtual machine:
+1. Run the following command to create a virtual machine image named *MyVMImage* from the generalized virtual machine.
 
     ```azurecli
     az image create \
@@ -232,7 +230,9 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ## Create a virtual machine using the new image
 
-1. Run the following command to create a new virtual machine using the **MyVMImage** image. If you're creating a virtual machine based on a Windows image, you'll be prompted for the Admin password. Enter the Admin password you used when you created the original virtual machine:
+::: zone pivot="linux"
+
+1. Run the following command to create a new virtual machine using the *MyVMImage* image.
 
     ```azurecli
     az vm create \
@@ -243,7 +243,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
       --generate-ssh-keys
     ```
 
-1. Run the following command to open port 80 on the new virtual machine:
+1. Run the following command to open port 80 on the new virtual machine.
 
     ```azurecli
     az vm open-port \
@@ -252,7 +252,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
         --port 80
     ````
 
-1. Run the following command to find the public IP address of the new virtual machine:
+1. Run the following command to find the public IP address of the new virtual machine.
 
     ```azurecli
     az vm list-ip-addresses \
@@ -261,4 +261,41 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
         --output table
     ```
 
-1. In the web browser, navigate to the public IP address of the new virtual machine. Verify that a web page displaying the name of the virtual machine from which the image was built (MyWindowsVM or MyUbuntuVM).
+1. In the web browser, navigate to the public IP address of the new virtual machine. Verify that a web page displaying the name of the virtual machine from which the image was built, *MyUbuntuVM*.
+
+::: zone-end
+
+::: zone pivot="windows"
+
+1. Run the following command to create a new virtual machine using the *MyVMImage* image. Enter the *azureuser* password you used when you created the original virtual machine.
+
+    ```azurecli
+    az vm create \
+      --resource-group <rgn>[Sandbox reource group name]</rgn> \
+      --name MyVMFromImage \
+      --image MyVMImage \
+      --admin-username azureuser \
+      --generate-ssh-keys
+    ```
+
+1. Run the following command to open port 80 on the new virtual machine.
+
+    ```azurecli
+    az vm open-port \
+        --name MyVMFromIMage \
+        --resource-group <rgn>[Sandbox resource group name]</rgn> \
+        --port 80
+    ````
+
+1. Run the following command to find the public IP address of the new virtual machine.
+
+    ```azurecli
+    az vm list-ip-addresses \
+        --resource-group <rgn>[Sandbox reource group name]</rgn> \
+        --name MyVMFromImage \
+        --output table
+    ```
+
+1. In the web browser, navigate to the public IP address of the new virtual machine. Verify that a web page displaying the name of the virtual machine from which the image was built, *MyWindowsVM*.
+
+::: zone-end

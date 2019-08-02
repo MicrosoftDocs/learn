@@ -28,7 +28,7 @@ You can also build your own virtual machine images and VHDs from scratch by usin
 
 You can extend an existing virtual machine image with your own software. You can then use the image as a basis for deploying additional virtual machines in your organization. For example, if you have an in-house system that you need to roll out across all of your virtual machines, you can create an image that includes this system, and then build your virtual machines from this image.
 
-## What is a Generalized virtual image?
+## What is a generalized virtual image?
 
 You can create your own custom virtual machine image in one of two ways:
 
@@ -51,7 +51,7 @@ You'll learn how to generalize an image in unit 3.
 > [!NOTE]
 > A generalized image that you use to provision other virtual machines with the same configuration is sometimes referred to as a *Golden Image*.
 
-## What is a Specialized virtual image?
+## What is a specialized virtual image?
 
 A specialized virtual image is a copy of a live virtual machine once it has reached a specific state. For example, a specialized image might contain a copy of the configured operating system, software, user accounts, databases, connection information, and other data for your system. You can use a specialized virtual image as a backup of your system at a particular point in time. If you need to recover after a catastrophic failure, or you just need to roll back the virtual machine, you can restore your virtual machine from this image.
 
@@ -61,7 +61,7 @@ If you use a specialized image to create a new virtual machine, the new virtual 
 
 You can store the VHDs for a virtual machine image in the following locations:
 
-- In an Azure-managed disk account.
+- In an Azure managed disk account.
 - In blob storage in your own Azure storage account (an unmanaged disk).
 
 Both types of account store a VHD as a page blob. A managed disk account provides improved availability, and a more predictable performance than an unmanaged disk. Additionally, a managed disk can have a bigger size and fewer resource limits than an unmanaged disk. Microsoft recommends that you use managed disks, as they provide improved performance and stability over unmanaged disks.
