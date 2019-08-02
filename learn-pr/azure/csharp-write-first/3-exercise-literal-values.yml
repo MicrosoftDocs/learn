@@ -3,7 +3,7 @@ uid: learn.languages.csharp-write-first.exercise-literal-values
 title: Exercise - Working with literal values
 metadata:
   title: Exercise - Working with literal values
-  description: Learn how to output values of different data types including char, int, float and bool.
+  description: Learn how to output values of different data types including char, int, float, and bool.
   ms.date: 07/29/2019
   author: bobtabor-msft
   ms.author: rtabor

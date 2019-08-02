@@ -1,41 +1,56 @@
+Since variables are temporary storage containers for data, they are meant to be written to and read from.  You'll get a chance do both in the following exercise.
 
+## Exercise - Working with variables
 
-## Assign a value to a variable
+In this exercise, you'll declare a variable, assign it a value, retrieve its value, and more.
+
+### Step 1: Delete all of the code in the code editor.
+
+Use your mouse to highlight all of the text in the code editor, then select the `backspace` or `del` key to remove everything.
+
+Later, we'll learn a different, less destructive technique for disabling the lines of code you no longer want to execute.
+
+### Step 2: Declare a variable and assign a value to it.
 
 To assign a value to a variable, you use the *assignment operator*, which is a single equals character `=`.
 
-Here's an example:
+Add the following code in the code editor:
 
-```csharp
+```csharp-interactive
 string firstName;
 firstName = "Bob";
 ```
 Assigning a value is also referred to as "setting the variable", or simply, a "set" operation.
 
-It's important to notice that assignment happens from left to right.  If you were to reverse the order, you would confuse the C# compiler:
+### Step 3:  Attempt to improperly assign a value to a variable.
 
-```csharp
+It's important to notice that assignment happens from left to right.  If you reverse the order, you will confuse the C# compiler.
+
+Modify the code you wrote in Step 2 to the following:
+
+```csharp-interactive
 string firstName;
 "Bob" = firstName;
 ```
-The first error you would see:
+
+Now, run the code.  The first error you would see in the output console:
 
 ```output
 (2,1): error CS0131: The left-hand side of an assignment must be a variable, property or indexer
 ```
 
-### You must assign a value of the correct data type to the variable
+### Step 4: Improperly assign a value of the incorrect data type to the variable.
 
-Ealier we said that C# was designed to enforce types.  When working with variables, this means you cannot assign a value of one data type to a variable declared to hold a different data type.
+Earlier we said that C# was designed to enforce types.  When working with variables, this means you cannot assign a value of one data type to a variable declared to hold a different data type.
 
-This will not work:
+Modify the code you wrote in Step 3 to the following:
 
-```csharp
-int value;
-value = "Bob";
+```csharp-interactive
+int firstName;
+firstName = "Bob";
 ```
 
-Output:
+Now, run the code.  You will see the following error in the output console:
 
 ```output
 (2,9): error CS0029: Cannot implicitly convert type 'string' to 'int'
@@ -45,9 +60,11 @@ The error message hints at what the C# compiler tries to do behind the scenes.  
 
 You'll learn more about implicit and explicit type conversion in other modules.
 
-## Retrieve a value from a variable
+## Step 5: Retrieve a value you stored in the variable.
 
 To retrieve a value from a variable, you just use the name of the variable.  This example will set a variable's value, then retrieve that value and print it to the console.
+
+Modify the code you wrote in Step 4 to the following:
 
 ```csharp-interactive
 string firstName;
@@ -55,7 +72,7 @@ firstName = "Bob";
 Console.WriteLine(firstName);
 ```
 
-The output:
+Now, run the code.  You will see the following in the output console:
 
 ```output
 Bob
@@ -63,9 +80,11 @@ Bob
 
 Retrieving a value from a variable is also referred to as "getting the variable", or simply, a "get" operation.
 
-### Re-assigning the value of a variable
+### Step 6: Reassign the value of a variable.
 
-You can re-use and re-assign the variable as many times as you want.  This example illustrates that idea:
+You can reuse and reassign the variable as many times as you want.  This example illustrates that idea.
+
+Modify the code you wrote in Step 5 to the following:
 
 ```csharp-interactive
 string firstName;
@@ -79,35 +98,46 @@ firstName = "Grant";
 Console.WriteLine(firstName);
 ```
 
-## Initializing variables
+### Step 7: Initialize the variable.
 
 You must set a value to a variable before you can get the value from the variable.  Otherwise, you will see an error.
 
+Modify the code you wrote in Step 6 to the following:
+
 ```csharp-interative
-string value;
-Console.WriteLine(value);
+string firstName;
+Console.WriteLine(firstName);
 ```
 
-Output:
+Now, run the code.  You will see the following in the output console:
 
 ```
-(2,19): error CS0165: Use of unassigned local variable 'value'
+(2,19): error CS0165: Use of unassigned local variable 'firstName'
 ```
 
 To avoid this, it's recommended that you set the value as soon as possible after you declare it.
 
 In fact, you can perform both the declaration and setting the value of the variable in one line of code.  This technique is called *initializing* the variable.
 
-Here's an example using `string`:
+Modify the code you wrote earlier in this step to the following:
 
 ```csharp-interactive
 string value = "Bob";
 Console.WriteLine(value);
 ```
 
-Here's another example using `int`:
+Now, run the code.  You should see the following.
 
-```csharp-interactive
-int value = 123;
-Console.WriteLine(123);
+```output
+Bob
 ```
+
+## Recap
+
+Here's the main takeaways you learned about working with variables so far:
+
+- You must assign (set) a value to a variable before you can retrieve (get) a value from a variable
+- You can initialize a variable by assigning a value to the variable at the point of declaration
+- Assignment happens from left to right
+- You use a single equals character as the assignment operator
+- To retrieve the value from the variable, you merely use the variable's name

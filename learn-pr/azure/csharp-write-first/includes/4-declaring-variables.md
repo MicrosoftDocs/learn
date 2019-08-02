@@ -1,4 +1,4 @@
-A literal is *literally* a hard coded value.  However, to build applications, we'll want to work with values that vary, or are variable.  In other words, we will want to work with data that comes from users, from files or from the network.  To work with those values, we'll need to give them a name so we can reference them in our code understanding that their value may change.
+A literal is *literally* a hard-coded value.  However, to build applications, we'll want to work with values that vary, or are variable.  In other words, we will want to work with data that comes from users, from files, or from the network.  To work with those values, we'll need to give them a name so we can reference them in our code understanding that their value may change.
 
 ## What is a variable?
 
@@ -22,14 +22,14 @@ A software developer once famously said "The hardest part of software developmen
 
 Variable names:
 
-- Can contain alphanumeric characters and the understore character.  Special characters like the pound `#` or dollar sign `$` are forbidden.
+- Can contain alphanumeric characters and the understore character.  Special characters like the pound `#` or dollar sign `$` are not allowed.
 - Must begin with an alphabetical letter or an underscore, not a number.  Developers use the underscore for a special purpose, so try to not use that for now.
 - Must NOT be a C# keyword.  For example, you cannot do the following: `float float;` or `string string;`.
-- Are case sensitive, meaning that `string Value;` and `string value;` are two different variables.
+- Are case-sensitive, meaning that `string Value;` and `string value;` are two different variables.
 - Should use **camel case**, which is a style of writing that uses a lower-case letter at the beginning of the first word and an upper-case letter at the beginning of each subsequent word.  For example: `string thisIsCamelCase;`.
 - Should be descriptive and meaningful in your application.  You should choose a name for your variable that represents the kind of data it will hold.
 - Should be one or more entire words appended together.  Don't use contractions because the name of the variable (and therefore its purpose) may be unclear to others who are reading your code.
-- Should not include the data type of the variable.  You might see some advice to use a style like `string strValue;`.  No one does that any more.
+- Should not include the data type of the variable.  You might see some advice to use a style like `string strValue;`.  No one does that anymore.
 
 The example `string firstName;` follows all of these rules and conventions, assuming I want to use this variable to store data that represents someone's first name.
 
@@ -47,4 +47,12 @@ float particlesPerMillion;
 bool processedCustomer;
 ```
 
-Now that we know how to declare a variable, let's learn how to set, retrieve and initialize the value of a variable.
+## Recap
+
+Here's the main takeaways you've learned so far about variables:
+
+- Variables are temporary values you store in the computer's memory
+- Before you can use a variable, you have to declare it 
+- Declaring a variable requires that you first select a data type for the kind of data you want to store, and then give the variable a name that follows the rules
+
+Now that we know how to declare a variable, let's learn how to set, retrieve, and initialize the value of a variable.

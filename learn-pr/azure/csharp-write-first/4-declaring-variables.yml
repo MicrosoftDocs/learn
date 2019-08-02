@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-write-first.declaring-variables
-title: Exercise - Declare and name variables
+title: Declare and name variables
 metadata:
-  title: Exercise - Declare and name variables
+  title: Declare and name variables
   description: Learn how to declare variables by selecting their data type and giving them a proper name
   ms.date: 07/29/2019
   author: bobtabor-msft

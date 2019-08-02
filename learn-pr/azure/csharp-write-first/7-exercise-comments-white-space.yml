@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-write-first.exercise-comments-white-space
-title: Introduction
+title: Exercise - Use Comments and White Space
 metadata:
-  title: Introduction
-  description: Begin your software development journey by learning one of the most popular programming languages.
+  title: Exercise - Use Comments and White Space
+  description: Learn how to communicate with the compile while creating more human-readable code.
   ms.date: 07/29/2019
   author: bobtabor-msft
   ms.author: rtabor

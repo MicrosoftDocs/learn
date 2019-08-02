@@ -2,7 +2,7 @@ In this first hands-on exercise, you'll use C# to print a hallowed programmer's 
 
 ## Write your first line of code
 
-There's a long standing tradition amongst software developers to print the phrase "Hello World!" to a command line or console window.  As you'll see, you can learn a lot about act of programming and the C# programming language from this simple exercise.
+There's a long standing tradition among software developers to print the phrase "Hello World!" to a command line or console window.  As you'll see, you can learn a lot about act of programming and the C# programming language from this simple exercise.
 
 ### Step 1: Type the code into the .NET Editor
 
@@ -34,7 +34,7 @@ Hello World!
 
 ### What to do if you got an error
 
-Writing C# code is an *exercise in precision*.  If you type just one character incorrectly, you will see an error message in the Output area.
+Writing C# code is an *exercise in precision*.  If you type just one character incorrectly, you'll see an error message in the Output area.
 
 For example, if you were to incorrectly use a lower-case `c` in `console` like so:
 
@@ -48,7 +48,7 @@ We would see the following error message:
 (1,1): error CS0103: The name 'console' does not exist in the current context
 ```
 
-The key is the `(1,1)` which indicates the line and column where the error occurred.  C# is a case-sensitive language, meaning that the C# compiler considers the words `console` and `Console` as different as the words `cat` and `dog`.  Sometimes the error message can be a bit misleading, so you'll need to understand the true reason why the error exists, and that comes through learning more about C#'s syntax.
+The key is the `(1,1)` which indicates the line and column where the error occurred.  C# is a case-sensitive language, meaning that the C# compiler considers the words `console` and `Console` as different as the words `cat` and `dog`.  Sometimes the error message can be a bit misleading.  You'll need to understand the true reason why the error exists, and that comes through learning more about C#'s syntax.
 
 Similarly, if you used single-quotation marks to surround the literal string `Hello World!` like so:
 
@@ -62,49 +62,51 @@ You would see the following error message:
 (1,19): error CS1012: Too many characters in character literal
 ```
 
-Again, line 1, character 19 points us to the culprit.  We can use this as a clue as we investigate the problem.  But what does the error message mean?  What exactly is a "character literal"?  While we will discuss literals of various data types (including character literals) in just a moment, our advice for now is to be extremely careful when you are typing code.
+Again, line 1, character 19 points us to the culprit.  We can use the message as a clue as we investigate the problem.  But what does the error message mean?  What exactly is a "character literal"?  While we'll discuss literals of various data types (including character literals) in just a moment, our advice for now is to be careful when you're typing code.
 
-Fortunately, errors are never permanent.  You merely spot the error, fix it, and re-run your application.
+Fortunately, errors are never permanent.  You merely spot the error, fix it, and rerun your application.
 
-If you got an error, please take your time, look closely, and examine each character and make sure you typed exactly this line of code.
+If you got an error, take your time, look closely, and examine each character and make sure you typed exactly this line of code.
+
+The code editor is constantly monitoring the code you write by performing pre-compilation to find potential errors.  It will try to help you by adding red-squiggly lines beneath code that will produce a compilation error.
 
 Common mistakes new programmers make:
 
-- Using lower-case letters instead of captalizing `C` in `Console`, or the letters `W` or `L` in `WriteLine`
+- Using lower-case letters instead of capitalizing `C` in `Console`, or the letters `W` or `L` in `WriteLine`
 - Using a comma instead of a period between `Console` and `WriteLine`
 - Forgetting double-quotation marks, or using single-quotation to surround the phrase `Hello World!`
 - Forgetting a semi-color at the end of the command
 
-Each of these mistakes prevent your code from compiling successfully.
+Each of these mistakes prevents your code from compiling successfully.
 
 ## What is compilation?
 
 Compilation takes source code (the code you've written) and converts it into an executable format.
 
-Programming languages like C# allow you to write instructions that you want the computer to carry out.  Even though most higher-level programming languages seem cryptic, they can be more easily understood than the a computer's preferred lower-level language which is expressed by turning millions of switches either on or off.  Compilers bridge these two worlds by translating your human-readable instructions into a computer-understandable set of instructions.
+Programming languages like C# allow you to write instructions that you want the computer to carry out.  Even though most higher-level programming languages seem cryptic, they can be more easily understood than the computer's preferred lower-level language, which is expressed by turning millions of switches either on or off.  Compilers bridge these two worlds by translating your human-readable instructions into a computer-understandable set of instructions.
 
 ## What is syntax?
 
-The syntax is the keywords, the operators (those special keyboard characters like the semicolon or parenthesis), and the rules of a programming language.  The single line of code you typed followed about a dozen different syntax rules and used at least four operators.  There's a lot of syntax to learn, but fortunately each concept is simple.  Don't give up!  You can learn it!
+The syntax is the keywords, the operators (those special keyboard characters like the semicolon or parenthesis), and the rules of a programming language.  The single line of code you typed followed about a dozen different syntax rules and used at least four operators.  There's much to learn, but fortunately each concept is simple.  Don't give up!  You can learn it!
 
 ## How did your code work?
 
-When you ran your code, you saw that the message ```Hello World!``` was printed to the output pane.  When the phrase is surrounded by double-quotation marks in your C# code, it's called a **literal string**.  In other words, we literally wanted the characters `H`, `e`, `l`, `l`, `o`, and so on sent to the output.
+When you ran your code, you saw that the message ```Hello World!``` was printed to the output pane.  When the phrase is surrounded by double-quotation marks in your C# code, it's called a **literal string**.  In other words, we literally wanted the characters `H`, `e`, `l`, `l`, `o`, and so on, sent to the output.
 
-The `WriteLine()` part is called a **method**.  You can always spot a method because it has a set of parenthesis after it.  Each method has one job.  The `WriteLine()` method's job is to write a line of data to the output window.  The data that's printed is sent in between the opening and closing parenthesis as an input parameter.  Some methods need input parameters, some do not, but if you want to invoke a method you must always use the parenthesis after the method's name.  The parentheses are known as the *method invocation operator*.
+The `WriteLine()` part is called a **method**.  You can always spot a method because it has a set of parenthesis after it.  Each method has one job.  The `WriteLine()` method's job is to write a line of data to the output window.  The data that's printed is sent in between the opening and closing parenthesis as an input parameter.  Some methods need input parameters, others don't.  But if you want to invoke a method you must always use the parenthesis after the method's name.  The parentheses are known as the *method invocation operator*.
 
-The `Console` part is called a **class**.  Classes "own" methods, or perhaps a better way to say it is that methods live inside of a class.  To visit the method, you must know which class it lives inside of.  For now, think of a class as a way to store and organize all of the methods that do similar things.  In this case, all of the methods that work with textual output in a console like our Output window are defined inside of the Console class.
+The `Console` part is called a **class**.  Classes "own" methods, or perhaps a better way to say it is that methods live inside of a class.  To visit the method, you must know which class it's in.  For now, think of a class as a way to store and organize all of the methods that do similar things.  In this case, all of the methods that operate on our Output window are defined inside of the Console class.
 
 There was also a dot, or period, that separated the class name `Console` and the method name `WriteLine()`.  The period is the *member access operator*.  In other words, the dot is how you "navigate" from the class to one of it's methods.
 
-Finally, there was a semi-colon at the end of the line.  This is the *end of statement operator*.  A **statement** is a complete instruction in C#, and the semi-colon tells the compiler that we're finished typing the command.
+Finally, there was a semi-colon at the end of the line.  This is the *end of statement operator*.  A **statement** is a complete instruction in C#.  The semi-colon tells the compiler that we're finished typing the command.
 
-Don't worry if all of these ideas and terms don't make sense just yet.  For now, all you really need to remember is that if you want to print a message to an output window like a console:
+Don't worry if all of these ideas and terms don't make sense.  For now, all you really need to remember is that if you want to print a message to an output window like a console:
 
 - use `Console.WriteLine("Your message here");`
 - capitalize `Console`, `Write`, and `Line`
 - use the correct *punctuation* since they have a special role in C#
-- if you make a mistake, just spot it, fix it and re-run ... you can't really fail
+- if you make a mistake, just spot it, fix it and rerun ... you can't really fail
 
 > [!TIP]
 > Create a cheat sheet for yourself until you've memorized certain key commands.

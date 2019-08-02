@@ -14,17 +14,45 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Is this a knowledge check?"
+  - content: "Our company wants to keep track of our warehouse inventory.  Which variable data type should be used to store the count of items on hand for each product?"
     choices:
-    - content: "Possibly"
+    - content: "string"
       isCorrect: false
-      explanation: "That would imply it might not be."
-    - content: "Maybe"
+      explanation: "If the count of items in our inventory were stored in a string, we would not be able to easily add or subtract items."
+    - content: "bool"
       isCorrect: false
-      explanation: "That would imply it might not be."
-    - content: "Could be"
+      explanation: "Since bool only represents true or false, we could only keep track of whether we had some items or no items.  That may not be useful."
+    - content: "float"
       isCorrect: false
-      explanation: "That would imply it might not be."
-    - content: "Yes"
+      explanation: "It's possible to use the float data type for this purpose since it stores numbers.  However, we do not need to store fractional numbers of items in our inventory."
+    - content: "int"
       isCorrect: true
-      explanation: "Correct!  This is a knowledge check."
+      explanation: "Correct!  We would need to add items and subtract items as our inventory changes.  The int data type is the best data type for this data."
+  - content: 'What is wrong with this line of code?  `Console.WriteLine("What is wrong with me?")`'
+    choices:
+    - content: "The `L` in `WriteLine` should be lower-case."
+      isCorrect: false
+      explanation: "The `L` should be upper case."
+    - content: "It's missing a semi-colon at the end"
+      isCorrect: true
+      explanation: "Correct!  The semi-colon must be used at the end of a code statement."
+    - content: "The string should use single-quotes."
+      isCorrect: false
+      explanation: "A string literal must be surrounded in double-quotes.  A char literal is surrounded in single quotes."
+    - content: "A comma should be used instead of a dot between `Console` and `WriteLine`."
+      isCorrect: false
+      explanation: "The dot is the member access operator and allows you to access the methods of a class."
+  - content: "Which of the following variables names should be avoided."
+    choices:
+    - content: "$DATA"
+      isCorrect: true
+      explanation: "The `$` cannot be used in a variable name.  Furthermore, you should not use all upper case characters for a variable name."    
+    - content: "registrationComplete"
+      isCorrect: false
+      explanation: "This is a valid variable name."
+    - content: "flag"
+      isCorrect: false
+      explanation: "This is a valid variable name."
+    - content: "yes"
+      isCorrect: false
+      explanation: "Admittedly, this is not a great variable name however it is valid."

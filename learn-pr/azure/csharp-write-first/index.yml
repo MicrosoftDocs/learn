@@ -13,8 +13,8 @@ summary: Get started learning C# by writing a dozen tiny code examples to learn 
 abstract: |
   In this module, you will:
   - Write your first lines of C# code to print information to a console
-  - Work with literal data, learning about the different types of data in C# like string, char, int, float and bool
-  - Create, set, get and initialize variables
+  - Work with literal data, learning about the different types of data in C# like string, char, int, float, and bool
+  - Create, set, get, and initialize variables
   - Perform string concatenation and numeric addition
   - Write and understand the purpose of code comments
   - Understand the functional and proper use of whitespace
