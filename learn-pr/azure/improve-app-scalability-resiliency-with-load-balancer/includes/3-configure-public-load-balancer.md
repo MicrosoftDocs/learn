@@ -32,7 +32,7 @@ To add session persistence through the Azure portal:
 1. Edit the relevant of the **Load-balancing rules**.
 1. Change the **Session persistence** value to **Client IP**
 
-![Configuring IP affinity](../media/4-screenshot-session-persistence.png)
+![Configuring IP affinity](../media/3-screenshot-session-persistence.png)
 
 ## Azure Load Balancer and Remote Desktop Gateway
 
