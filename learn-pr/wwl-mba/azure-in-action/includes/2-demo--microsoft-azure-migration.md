@@ -20,9 +20,9 @@ You’ve just seen how Azure Migrate, Azure Database Migration Service, and Azur
 
 - Use Azure Migrate to easily discover and assess your on-premises virtual machines. When you use Azure Migrate for this process, your IT department won't need to manually count servers and determine specs.
 
-- The Azure Migrate collector will help you evaluate your physical on-premises servers and work with vSphere to assess virtual servers.
+- The Azure Migrate appliance will help you evaluate your physical on-premises servers and work with vSphere to assess virtual servers.
 
-- The collector appliance gathers metadata from on-premises servers running both Windows and Linux and sends it to the migration project. Azure Migrate then uses the collector appliance data to make application-specific migration recommendations, including cost estimates for migration and for operation in the cloud.
+- The Azure Migrate appliance gathers metadata from on-premises servers running both Windows and Linux and sends it to the migration project. Azure Migrate then uses the appliance data to make application-specific migration recommendations, including cost estimates for migration and for operation in the cloud.
 
 - Azure Hybrid Benefit allows you to capitalize on your existing Windows licensing investments by providing discounts for VMs turned on in Azure.
 
