@@ -110,7 +110,7 @@ In this section, you submit a fix to the typing error on the home page. Recall t
 1. Select the **Use your Administrator privileges to merge this pull request** check box, and then select **Confirm merge**.
 
    Your change is merged.
-1. To delete the `bugfix/home-page-typo` branch, select **Delete branch**
+1. To delete the `bugfix/home-page-typo` branch, select **Delete branch**.
 
 ## Revert your master branch to its original state
 
