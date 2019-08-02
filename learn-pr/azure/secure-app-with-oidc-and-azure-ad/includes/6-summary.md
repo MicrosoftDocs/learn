@@ -1,6 +1,6 @@
 In this module, you have explored the OpenID Connect concepts for authentication.
 
-By using an example application, you used the OpenID Connect ASP.NET OWIN middleware to sign in users from a single Azure AD tenant. You can now enable your applications to sign in with Azure AD identities. This will simplify login for your users by enabling them to sign in with the same accounts that they use for Office 365.
+By using an example application, you used the OpenID Connect ASP.NET OWIN middleware to sign in users from a single Azure Active Directory (Azure AD) tenant. Users now sign in with the same accounts that they use for Office 365.
 
 ## Clean up
 

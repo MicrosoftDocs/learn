@@ -12,13 +12,13 @@ In this exercise, you'll configure an application to authenticate users against 
     git clone https://github.com/MicrosoftDocs/mslearn-secure-app-with-oidc-and-azure-ad.git
     ```
 
-1. Move to the mslearn-secure-app-with-oidc-and-azure-ad/app folder.
+1. Move to the `mslearn-secure-app-with-oidc-and-azure-ad/app` folder.
 
     ```bash
     cd ~/mslearn-secure-app-with-oidc-and-azure-ad
     ```
 
-1. Update the appsettings.json file to specify the configuration details to enable the application to communicate with Azure AD. Open this file in the code editor.
+1. Update the `appsettings.json` file to specify the configuration details to enable the application to communicate with Azure AD. Open this file in the code editor.
 
     ```bash
     code ./app/appsettings.json
@@ -68,7 +68,7 @@ In this exercise, you'll configure an application to authenticate users against 
 
 Now let's configure the app registration to authorize the URL of the web service:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select your user name in the upper-right corner, and then select **Switch directory**. Choose the Learn Module AAD Tenant directory that you created earlier. Sign in if you're prompted.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select your user name in the upper-right corner, and then select **Switch directory**. Choose the **Learn Module AAD Tenant** directory that you created earlier. Sign in if you're prompted.
 
 1. In the left pane, select **Azure Active Directory**.
 
@@ -84,9 +84,9 @@ Now let's configure the app registration to authorize the URL of the web service
 
 1. Under **Implicit grant**, select **ID tokens**.
 
-    ![Screenshot of an app registration](../media/5-update-registration.png)
-
 1. Select **Save**.
+
+    ![Screenshot of an app registration](../media/5-update-registration.png)
 
 ## Test the application
 
@@ -96,8 +96,8 @@ Now let's configure the app registration to authorize the URL of the web service
 
     ![Screenshot of the dialog box that requests consent](../media/5-request-consent.png)
 
-1. Select **Accept**. The web app then appears. The title bar includes your authenticated username, indicating you've been successfully logged in with the identity in the Learn Module AAD Tenant directory.
+1. Select **Accept**. The web app then appears. The title bar includes your authenticated username, indicating that you've been successfully logged in with the identity in the Learn Module AAD Tenant directory.
 
-You've now created the application registration and the web app itself. You've configured both these objects with the information that they need to locate each other.
+You've now created both the application registration and the web app itself. You've configured these objects with the information that they need to locate each other.
 
 Now that the web app is configured to authenticate against Azure AD, you can use that directory to manage all the user accounts that can access your application. The same accounts that grant users access to services like Office 365 can now be used to access your app. Users have to remember only one set of credentials for both systems. Administrators have less work to do because each user has only one account.

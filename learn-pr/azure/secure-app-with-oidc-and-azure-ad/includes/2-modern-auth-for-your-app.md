@@ -6,7 +6,7 @@ Let's look at the standards and services that you can use for authentication.
 
 ## What is Azure Active Directory?
 
-*Azure Active Directory (Azure AD)* is Microsoft's cloud-based identity and access management service. It simplifies authentication for developers by providing identity as a service. It supports industry-standard protocols such as OAuth 2.0 and OpenID Connect. 
+Azure Active Directory (Azure AD) is Microsoft's cloud-based identity and access management service. It simplifies authentication for developers by providing identity as a service. It supports industry-standard protocols such as OAuth 2.0 and OpenID Connect. 
 
 Azure AD allows users to sign in and view resources. And it has features to help secure your identities, such as Identity Protection and multi-factor authentication.
 
@@ -16,7 +16,7 @@ Microsoft services such as Azure and Office 365 use Azure AD to store and manage
 
 Users authenticate in two stages:
 
-1. The identity provider verifies the identity of users that exist in the directory. Upon successful authentication, tokens are issued that contain information related to the successful authentication.
+1. The identity provider verifies the identity of users who exist in the directory. Upon successful authentication, tokens are issued that contain information related to the successful authentication.
 1. The user passes those tokens to the application. The application must validate the user’s security tokens to ensure that authentication was successful.
 
 Let’s consider a basic scenario where identity is required: a user in a web browser needs to authenticate to a web application. Consider the following diagram for this scenario:
