@@ -27,7 +27,7 @@ To generalize a Windows VM, follow these steps:
 
     ![Image of the Sysprep dialog box](../media/3-sysprep.png)
 
-After the virtual machine has been shut down, you must deallocate it while it's in this *clean* state. If you're using PowerShell, run the following command:
+After the virtual machine has been shut down, you must deallocate it while it's in this clean state. If you're using PowerShell, run the following command:
 
 ```powershell
 Stop-AzVM -ResourceGroupName <resource group> `
@@ -53,7 +53,7 @@ To generalize a Linux virtual machine, sign into the machine, and run the follow
 waagent -deprovision+user
 ```
 
-You'll receive a series of warning messages similar to the following (in this example, *azureuser* is the name of the user account created when the virtual machine was built):
+You'll receive a series of warning messages similar to the following. In this example, *azureuser* is the name of the user account created when the virtual machine was built.
 
 ```text
 WARNING! The waagent service will be stopped.
@@ -63,9 +63,9 @@ WARNING! /etc/resolv.conf will be deleted.
 WARNING! azureuser account and entire home directory will be deleted.
 ```
 
-You should then disconnect from the virtual machine:
+You should then disconnect from the virtual machine.
 
-Finally, you must deallocate and generalize the virtual machine while it's in this *clean* state. If you're using PowerShell, run the following series of commands:
+Finally, you must deallocate and generalize the virtual machine while it's in this clean state. If you're using PowerShell, run the following series of commands:
 
 ```powershell
 Stop-AzVM -ResourceGroupName <resource group> `
@@ -159,8 +159,7 @@ az vm create \
 
 A virtual machine image contains an image of every VHD in the virtual machine. You can also create separate snapshot images of a VHD at any time. A snapshot is a read-only copy of a VHD. You can use a snapshot to restore a VHD to the state it was in when the snapshot was taken.
 
-> [!IMPORTANT]
-> If you're taking an image of a virtual machine that spans several VHDs, you must ensure that the virtual machine is quiescent, and that you take a snapshot of every VHD. Failure to do this can result in inconsistencies if you need to restore the virtual machine from these snapshots.
+If you're taking an image of a virtual machine that spans several VHDs, you must ensure that all disk activity has stopped, and that you take a snapshot of every VHD. Failure to do this can result in inconsistencies if you need to restore the virtual machine from these snapshots. By stopping the virtual machine, you can ensure that there is no disk activity and that a successful snapshot is taken.
 
 Unlike creating an image of a virtual machine, capturing a snapshot of a VHD is a non-destructive process, and you can continue running virtual machines using the VHD afterwards.
 
@@ -168,8 +167,8 @@ Unlike creating an image of a virtual machine, capturing a snapshot of a VHD is 
 
 Rebuilding a virtual machine from a set of VHD snapshots is a two-step process:
 
-1. For each snapshot, create a new managed disk. Specify the snapshot as the source of the managed disk. The simplest way to do this is to use in the Azure portal, as shown in the following image:
+- For each snapshot, create a new managed disk. Specify the snapshot as the source of the managed disk. The simplest way to do this is to use in the Azure portal, as shown in the following image:
 
   ![Screenshot of the Create Manage Disk page in the Azure portal](../media/3-managed-disk.png)
 
-2. Create the new virtual machine using these managed disks. Again, the most straightforward approach is to use the Azure portal.
+- Create the new virtual machine using these managed disks. This can be done through PowerShell, the Azure CLI, or through the portal.
