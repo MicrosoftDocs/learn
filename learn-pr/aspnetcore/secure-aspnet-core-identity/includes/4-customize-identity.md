@@ -27,9 +27,9 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
     Additionally, the *Data/ContosoPetsAuth.cs* file, which existed prior to running the preceding command, was overwritten. *ContosoPetsAuth.cs* now references the newly created `ContosoPetsUser` class. The *EnableAuthenticator* Razor Page was scaffolded, though it won't be modified until later in the module.
 
-1. In the `Configure` method of *IdentityHostingStartup.cs*, the call to `AddDbContext` needs to be made aware of the new Identity user type. Incorporate the following highlighted change:
+1. In the `Configure` method of *IdentityHostingStartup.cs*, the call to `AddDefaultIdentity` needs to be made aware of the new Identity user type. Incorporate the following highlighted change:
 
-    [!code-csharp[](../code/Areas/Identity/IdentityHostingStartup-Configure.cs?name=snippet_ConfigureAddDbContext&highlight=10)]
+    [!code-csharp[](../code/Areas/Identity/IdentityHostingStartup-Configure.cs?name=snippet_ConfigureAddDefaultIdentity&highlight=1)]
 
 1. Make the following changes to *Pages/Shared/_LoginPartial.cshtml*:
 
@@ -61,7 +61,7 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
         The properties in the preceding snippet represent additional columns to be created in the underlying `AspNetUsers` table. Both properties are required and are therefore annotated with the `[Required]` attribute. The `[Required]` attribute also results in a non-null constraint in the underlying database table column. Additionally, the `[MaxLength]` attribute indicates that a maximum length of 100 characters is allowed. The underlying table column's data type is defined accordingly.
 
-    1. Add the following `using` statement to the top of the file:
+    1. Add the following `using` statement to the top of the file. Save your changes.
 
         ```csharp
         using System.ComponentModel.DataAnnotations;
@@ -75,6 +75,59 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
     dotnet ef migrations add UpdateUser && \
         dotnet ef database update
     ```
+
+::: zone pivot="pg"
+
+1. Examine the `AspNetUsers` table by performing the following steps:
+    1. Run the following command to view the table schema:
+
+        ```bash
+        db -c '\d "AspNetUsers"'
+        ```
+
+        Scrollable output containing the following displays:
+
+        ```console
+                                           Table "public.AspNetUsers"
+                Column        |           Type           | Collation | Nullable |        Default
+        ----------------------+--------------------------+-----------+----------+-----------------------
+         Id                   | text                     |           | not null |
+         UserName             | character varying(256)   |           |          |
+         NormalizedUserName   | character varying(256)   |           |          |
+         Email                | character varying(256)   |           |          |
+         NormalizedEmail      | character varying(256)   |           |          |
+         EmailConfirmed       | boolean                  |           | not null |
+         PasswordHash         | text                     |           |          |
+         SecurityStamp        | text                     |           |          |
+         ConcurrencyStamp     | text                     |           |          |
+         PhoneNumber          | text                     |           |          |
+         PhoneNumberConfirmed | boolean                  |           | not null |
+         TwoFactorEnabled     | boolean                  |           | not null |
+         LockoutEnd           | timestamp with time zone |           |          |
+         LockoutEnabled       | boolean                  |           | not null |
+         AccessFailedCount    | integer                  |           | not null |
+         FirstName            | character varying(100)   |           | not null | ''::character varying
+         LastName             | character varying(100)   |           | not null | ''::character varying
+        ```
+
+        The presence of the `FirstName` and `LastName` properties of the `ContosoPetsUser` class correspond to the `FirstName` and `LastName` columns in the preceding output. A data type of `character varying(100)` was assigned because of the `[MaxLength(100)]` attribute. The non-null constraint was added because of the `[Required]` attribute.
+
+    1. Scroll down until the following index information displays:
+
+        ```console
+        Indexes:
+            "PK_AspNetUsers" PRIMARY KEY, btree ("Id")
+            "UserNameIndex" UNIQUE, btree ("NormalizedUserName")
+            "EmailIndex" btree ("NormalizedEmail")
+        ```
+
+        The `PK_AspNetUsers` index shows that the `Id` column is the unique identifier for a user account.
+
+    1. Press <kbd>q</kbd> to exit the text viewer.  
+
+::: zone-end
+
+::: zone pivot="sql"
 
 1. Run the following command to view the table schema:
 
@@ -121,6 +174,8 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
     --------------- --------------- ---------------
     AspNetUsers     Id              PK_AspNetUsers
     ```
+
+::: zone-end
 
 ## Customize the user registration form
 
@@ -184,6 +239,23 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
 ## Customize the profile management form
 
+1. In *Areas/Identity/Pages/Account/Manage/Index.cshtml*, add the following markup to the line immediately after `<div asp-validation-summary="All" class="text-danger"></div>`:
+
+    ```cshtml
+    <div class="form-group">
+        <label asp-for="Input.FirstName"></label>
+        <input asp-for="Input.FirstName" class="form-control" />
+        <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Input.LastName"></label>
+        <input asp-for="Input.LastName" class="form-control" />
+        <span asp-validation-for="Input.LastName" class="text-danger"></span>
+    </div>
+    ```
+    
+    Save your changes.
+
 1. In *Identity/Pages/Account/Manage/Index.cshtml.cs*, make the following changes to support the name text boxes.
     1. Add the following two properties to the `InputModel` class:
 
@@ -209,21 +281,6 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
         Save your changes.
 
-1. In *Areas/Identity/Pages/Account/Manage/Index.cshtml*, add the following markup to the line immediately after `<div asp-validation-summary="All" class="text-danger"></div>`:
-
-    ```cshtml
-    <div class="form-group">
-        <label asp-for="Input.FirstName"></label>
-        <input asp-for="Input.FirstName" class="form-control" />
-        <span asp-validation-for="Input.FirstName" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Input.LastName"></label>
-        <input asp-for="Input.LastName" class="form-control" />
-        <span asp-validation-for="Input.LastName" class="text-danger"></span>
-    </div>
-    ```
-
 ## Build, deploy, and test
 
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
@@ -236,11 +293,33 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
     The preceding command deploys the app to Azure App Service. The *.azure/config* file contains the configuration values used by `az webapp up`.
 
-1. In your browser, navigate to the app. Select **Logout**.
+1. In your browser, navigate to the app. Select **Logout** if you're still logged in.
 
 1. Select **Register** and use the newly modified form to register a new user.
 
 1. Run the following command to confirm that the first and last name are stored in the database:
+
+    ::: zone pivot="pg"
+
+    ```bash
+    db -c 'SELECT "UserName", "Email", "FirstName", "LastName" FROM "AspNetUsers"'
+    ```
+
+    A variation of the following output displays:
+
+    ```console
+             UserName          |            Email          | FirstName | LastName
+    ---------------------------+---------------------------+-----------+----------
+     kai.klein@contoso.com     | kai.klein@contoso.com     |           |
+     jana.heinrich@contoso.com | jana.heinrich@contoso.com | Jana      | Heinrich
+    (2 rows)
+    ```
+
+    The user registered prior to adding `FirstName` and `LastName` to the schema doesn't have data in those columns.
+
+    ::: zone-end
+
+    ::: zone pivot="sql"
 
     ```bash
     db -Q "SELECT UserName, Email, FirstName, LastName FROM dbo.AspNetUsers" -Y 25
@@ -257,6 +336,7 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
     The user registered prior to adding `FirstName` and `LastName` to the schema doesn't have data in those columns.
 
-## Login as first user, update FName, LName
+    ::: zone-end
 
-<!-- TODO -->
+<!-- TODO maybe -->
+<!-- ## Login as first user, update FName, LName -->

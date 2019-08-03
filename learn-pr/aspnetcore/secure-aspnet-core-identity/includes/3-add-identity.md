@@ -67,6 +67,25 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
 
     ::: zone pivot="pg"
 
+    ```csharp
+    public void Configure(IWebHostBuilder builder)
+    {
+        builder.ConfigureServices((context, services) => {
+            var npgsqlConnBuilder = new NpgsqlConnectionStringBuilder(
+                context.Configuration.GetConnectionString("ContosoPetsAuthConnection"));
+            npgsqlConnBuilder.Username = context.Configuration["DbUsername"];
+            npgsqlConnBuilder.Password = context.Configuration["DbPassword"];
+
+            services.AddDbContext<ContosoPetsAuth>(options =>
+                options.UseNpgsql(npgsqlConnBuilder.ConnectionString));
+
+            services.AddDefaultIdentity<IdentityUser>()
+                .AddDefaultUI(UIFramework.Bootstrap4)
+                .AddEntityFrameworkStores<ContosoPetsAuth>();
+        });
+    }
+    ```
+
     ::: zone-end
 
     ::: zone pivot="sql"
@@ -102,6 +121,10 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
 1. In *IdentityHostingStartup.cs*, add the following code to the block of `using` statements at the top. Save your changes.
 
     ::: zone pivot="pg"
+    
+    ```csharp
+    using Npgsql;
+    ```
 
     ::: zone-end
 
@@ -127,6 +150,10 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
 
     ::: zone pivot="pg"
 
+    ```bash
+    echo $postgreSqlConnectionString
+    ```
+
     ::: zone-end
 
     ::: zone pivot="sql"
@@ -140,6 +167,12 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
 1. In *:::no-loc text="appsettings.json":::*, replace the connection string for `ContosoPetsAuthConnection` with the connection string from the previous step. The `ConnectionStrings` section should look similar to the following:
 
     ::: zone pivot="pg"
+    
+    ```json
+    "ConnectionStrings": {
+        "ContosoPetsAuthConnection": "Server={HOST NAME}.postgres.database.azure.com;Database=contosopets;Port=5432;Ssl Mode=Require;"
+    }
+    ```
 
     ::: zone-end
 
@@ -177,11 +210,17 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
     The following output appears, which confirms the creation of the tables.
 
     ```console
-     tablename 
-    -----------
-    ToDo
-    ToDo
-    ToDo
+           tablename
+    -----------------------
+     __EFMigrationsHistory
+     AspNetRoleClaims
+     AspNetUserClaims
+     AspNetUserLogins
+     AspNetRoles
+     AspNetUserRoles
+     AspNetUsers
+     AspNetUserTokens
+    (8 rows)
     ```
 
     ::: zone-end

@@ -1,4 +1,3 @@
-#region snippet_ConfigureAddDbContext
 public void Configure(IWebHostBuilder builder)
 {
     builder.ConfigureServices((context, services) => {
@@ -10,12 +9,15 @@ public void Configure(IWebHostBuilder builder)
         services.AddDbContext<ContosoPetsAuth>(options =>
             options.UseSqlServer(sqlConnBuilder.ConnectionString));
 
-        services.AddDefaultIdentity<IdentityUser>()
-            .AddDefaultUI(UIFramework.Bootstrap4)
-            .AddEntityFrameworkStores<ContosoPetsAuth>();
+#region snippet_ConfigureAddDefaultIdentity
+services.AddDefaultIdentity<ContosoPetsUser>()
+    .AddDefaultUI(UIFramework.Bootstrap4)
+    .AddEntityFrameworkStores<ContosoPetsAuth>();
+#endregion
+
     });
 }
-#endregion
+
 
 #region snippet_ConfigureAddClaims
 public void Configure(IWebHostBuilder builder)
