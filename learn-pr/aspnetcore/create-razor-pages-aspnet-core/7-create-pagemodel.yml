@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.create-razor-pages-aspnet-core.7-create-pagemodel
+metadata:
+  title: Code the Create RazorPage PageModel Class 
+  description: Review a basic Razor Pages PageModel class elements and add a Post handler method.
+  ms.date: 07/31/2019
+  author: wadepickett
+  ms.author: wpickett
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+  ROBOTS: NOINDEX
+title: Code the Create RazorPage PageModel Class
+azureSandbox: true
+interactive: bash
+durationInMinutes: 12
+content: |
+  [!include[](includes/7-create-pagemodel.md)]

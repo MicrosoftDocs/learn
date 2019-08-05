@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.create-razor-pages-aspnet-core
+metadata:
+  title: Create a web UI with ASP.NET Core
+  description: "In this module, you'll learn how to create web pages using Razor with ASP.NET Core and .NET Core."
+  ms.date: 07/31/2019
+  author: wadepickett
+  ms.author: wpickett
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+title: Create a web UI with ASP.NET Core
+summary: ASP.NET Core supports creating webpages using Razor, an HTML template engine in ASP.NET Core. In this module, you'll learn how to create web pages using Razor with ASP.NET Core and .NET Core.
+abstract: | 
+  In this module, you will:
+  - Understand when and why to use Razor Pages for your ASP.NET Core application.
+  - Use the .NET Core CLI to create a new Razor page and its paired C# code behind page containing the page model.
+  - Add a reference to a Data Transfer Object (DTO).
+  - Walk through the life cycle of example HTTP request logic that uses a typed HTTPClient service architecture.
+  - Add (inject) the HTTP request service into your own page model.
+  - Add UI support for create, update and delete (CRUD) operations.
+  - Deploy & Test
+prerequisites: |
+  - A basic understanding of C#.
+  - At least an introductory experience with ASP.NET 4.x or ASP.NET Core.
+  - Knowledge of HTML.
+  - Knowledge of RESTful services and HTTP action verbs.
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+- aspnet-core
+- dotnet-core
+units:
+- learn.create-razor-pages-aspnet-core.1-introduction
+- learn.create-razor-pages-aspnet-core.2-setup-environment
+- learn.create-razor-pages-aspnet-core.3-why-when-use-razor-pages
+- learn.create-razor-pages-aspnet-core.4-explore-example-project
+- learn.create-razor-pages-aspnet-core.5-run-razor-pages-project
+- learn.create-razor-pages-aspnet-core.6-new-razor-page-create-form
+- learn.create-razor-pages-aspnet-core.7-create-pagemodel
+- learn.create-razor-pages-aspnet-core.8-lifecycle-httpclient
+- learn.create-razor-pages-aspnet-core.9-deploy-and-test
+- learn.create-razor-pages-aspnet-core.10-knowledge-check
+- learn.create-razor-pages-aspnet-core.11-summary
+iconUrl: /learn/achievements/create-razor-pages-aspnet-core.svg
+badge:
+  uid: learn.create-razor-pages-aspnet-core.badge
