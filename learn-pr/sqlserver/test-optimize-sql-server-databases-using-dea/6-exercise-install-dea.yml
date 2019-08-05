@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn-sqlserver.test-optimize-sql-server-databases-using-dea.6-exercise-install-dea
+title: Exercise - Install the Database Experimentation Assistant
+metadata:
+  title: Exercise - Install the Database Experimentation Assistant
+  description: Exercise - Install the Database Experimentation Assistant
+  ms.date: 01/31/2019
+  author: geoffallix
+  ms.author: v-gea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+  ROBOTS: NOINDEX
+labId: 46875
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-exercise-install-dea.md)]

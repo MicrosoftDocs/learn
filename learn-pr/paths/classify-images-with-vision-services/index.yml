@@ -26,5 +26,6 @@ modules:
 - learn.data-ai.identify-faces-with-computer-vision
 - learn.create-computer-vision-service
 - learn.classify-images-with-custom-vision-services
+- learn.wwl.evaluate-requirements-for-custom-computer-vision-api
 trophy:
   uid: learn.data-ai.classify-images-with-vision-services.trophy

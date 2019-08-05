@@ -11,7 +11,7 @@ A geo-replicated registry provides the following benefits:
 - No additional egress fees, as images are pulled from a local, replicated registry in the same region as your container host
 - Single management of a registry across multiple regions
 
-## Replicate a registry to multiple locations
+## 	Create a replicated region for an Azure Container Registry.
 
 In this exercise, you'll use the `az acr replication create` Azure CLI command to replicate your registry from one region to another. 
 
@@ -65,4 +65,10 @@ Keep in mind that you are not limited to the Azure CLI to list your image replic
 
 ## Summary
 
-You've now successfully replicated a container image to multiple Azure datacenters using the Azure CLI. 
+In this module you learned about the Azure Container Registry. You deployed your own registry, added a custom container and created a container image. Finally you saw how easy it is to replicate the registry across Azure regions. 
+
+## Learn More
+
+[Azure Container Registry (ACR) documentation](https://docs.microsoft.com/azure/container-registry/)
+
+[Docker on Azure](https://docs.microsoft.com/azure/docker/)

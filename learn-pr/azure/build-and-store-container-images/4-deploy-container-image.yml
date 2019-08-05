@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Deploy images from Azure Container Registry
+title: Exercise - Deploy images from Azure Container Registry
 durationInMinutes: 20
 interactive: bash
 azureSandbox: true

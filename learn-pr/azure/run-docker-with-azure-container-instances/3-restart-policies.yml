@@ -16,10 +16,10 @@ azureSandbox: true
 durationInMinutes: 6
 content: |
   [!include[](includes/3-restart-policy.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.ContainerInstance/containerGroups"
-  hint: "Make sure to create the container groups."
+#tasks:
+#- action: exists
+#  environment: azure
+#  azure:
+#    resource:
+#      type: "Microsoft.ContainerInstance/containerGroups"
+#  hint: "Make sure to create the container groups."

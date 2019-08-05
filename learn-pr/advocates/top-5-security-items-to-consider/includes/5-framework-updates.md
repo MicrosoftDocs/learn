@@ -1,4 +1,4 @@
-Many developers consider the frameworks and libraries they use to build their software with to be primarily decided by features or personal preference. However, the framework that you choose is an important decision, not only from a design and functionality perspective but also from a _security_ perspective. Choosing a framework with modern security features and keeping it up to date is one of the best ways to ensure your apps are secure.
+Many developers consider the frameworks and libraries they use to build their software with to be primarily decided by features or personal preference. However, the framework that you choose is an important decision, not only from a design and functionality perspective but also from a _security_ perspective. Choosing a framework with modern security features and keeping it up-to-date is one of the best ways to ensure your apps are secure.
 
 ## Choose your framework carefully
 
@@ -6,13 +6,13 @@ The most important factor regarding security when choosing a framework is how we
 
 Often "well supported" is synonymous with "modern". Older frameworks tend to either be replaced or eventually fade in popularity. Even if you have significant experience with (or many apps written in) an older framework, you'll be better off choosing a modern library that has the features you need. Modern frameworks tend to build on the lessons learned by earlier iterations which makes choosing them for new apps a form of threat surface reduction. You will have one more app to worry about if a vulnerability is discovered in the older framework that your legacy applications are written in.
 
-For more information on secure design and reducing threat surface, see [Design For Security in Azure](/learn/azure/design-for-security-in-azure/index.yml).
+For more information on secure design and reducing threat surface, see [Design For Security in Azure](https://docs.microsoft.com/learn/modules/design-for-security-in-azure/).
 
 ## Keep your framework updated
 
 Software development frameworks, such as Java Spring and .NET Core release updates and new versions regularly. These updates include new features, removal of old features, and often security fixes or improvements. When we allow our frameworks to become out of date, it creates "technical debt". The further out of date we get, the harder and riskier it will be to bring our code up to the latest version. In addition, much like the initial framework choice, staying on older versions of the framework open you up to more security threats which have been fixed in newer releases of the framework.
 
-As an example, from 2016-2017, [over 30 vulnerabilities](https://www.cvedetails.com/product/6117/Apache-Struts.html?vendor_id=45) were found in the Apache Struts framework. These were quickly addressed by the development team, but some companies didn't apply the patches and [paid the price in the form of a data breach](https://www.zdnet.com/article/equifax-confirms-apache-struts-flaw-it-failed-to-patch-was-to-blame-for-data-breach/). **Make sure to keep your frameworks and libraries up to date**.
+As an example, from 2016-2017, [over 30 vulnerabilities](https://www.cvedetails.com/product/6117/Apache-Struts.html?vendor_id=45) were found in the Apache Struts framework. These were quickly addressed by the development team, but some companies didn't apply the patches and [paid the price in the form of a data breach](https://www.zdnet.com/article/equifax-confirms-apache-struts-flaw-it-failed-to-patch-was-to-blame-for-data-breach/). **Make sure to keep your frameworks and libraries up-to-date**.
 
 ### How do I update my framework?
 
@@ -25,7 +25,7 @@ More specialized libraries such as JavaScript frameworks, or .NET components can
 
 ## Take advantage of built-in security
 
-Always check to see what security features your frameworks offer. **Never** roll your own security if there's a standard technique or capability built in. In addition, rely on proven algorithms and workflows because these have often been scrutinized by a lot of experts, critiqued and strengthened so you can be assured that they are reliable and secure.
+Always check to see what security features your frameworks offer. **Never** roll your own security if there's a standard technique or capability built in. In addition, rely on proven algorithms and workflows because these have often been scrutinized by many experts, critiqued and strengthened so you can be assured that they are reliable and secure.
 
 The .NET Core framework has countless security features, here are a few core starting places in the documentation.
 * [Authentication -Identity Management](https://docs.microsoft.com/aspnet/core/security/authentication/index?view=aspnetcore-2.1)
@@ -42,11 +42,11 @@ Each one of these features was written by experts in their field, and then batte
 
 ## Azure Security Center
 
-When using Azure to host your web applications Security Center will warn you if your frameworks are out of date as part of the recommendations tab.  Don't forget to look there from time to time to see if there are any warnings related to your apps.
+When using Azure to host your web applications, Security Center will warn you if your frameworks are out of date as part of the recommendations tab.  Don't forget to look there from time to time to see if there are any warnings related to your apps.
 
 ![Azure Security Center recommending a framework upgrade.](../media/5-ASCFramework.png)
 
 
 ## Summary
 
-Whenever possible, choose a modern framework to build your apps, always use the built-in security features, and make sure you keep it up to date. These simple rules will help to ensure your application starts on a solid foundation.
+Whenever possible, choose a modern framework to build your apps, always use the built-in security features, and make sure you keep it up-to-date. These simple rules will help to ensure your application starts on a solid foundation.

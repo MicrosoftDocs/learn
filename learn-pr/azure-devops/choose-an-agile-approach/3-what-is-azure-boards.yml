@@ -37,7 +37,7 @@ quiz:
       explanation: "Azure Boards supports four popular planning types &mdash; CMMI, Agile, Scrum, and Basic."
     - content: "A way to list all of your projects."
       isCorrect: false
-      explanation: "Your Azure DevOps account can have multiple projects. You can set up Azure Boards to plan and track work for each one of them."
+      explanation: "Your Azure DevOps organization can have multiple projects. You can set up Azure Boards to plan and track work for each one of them."
   - content: "A _sprint_ is:"
     choices:
     - content: "A fixed amount of time a team has to complete a set of tasks."

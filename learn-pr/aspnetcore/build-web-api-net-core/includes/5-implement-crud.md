@@ -15,7 +15,7 @@ The following sections demonstrate how to support each of these four actions in 
 
 ## Retrieve a product
 
-Replace the `// GET by ID action` comment in *Controllers/ProductsController.cs* with the following:
+Replace the `// GET by ID action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following:
 
 ```csharp
 [HttpGet("{id}")]
@@ -47,7 +47,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 ## Add a product
 
-Replace the `// POST action` comment in *Controllers/ProductsController.cs* with the following:
+Replace the `// POST action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following:
 
 ```csharp
 [HttpPost]
@@ -79,7 +79,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 ## Modify a product
 
-Replace the `// PUT action` comment in *Controllers/ProductsController.cs* with the following:
+Replace the `// PUT action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following:
 
 ```csharp
 [HttpPut("{id}")]
@@ -116,7 +116,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 ## Remove a product
 
-Replace the `// DELETE action` comment in *Controllers/ProductsController.cs* with the following:
+Replace the `// DELETE action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following:
 
 ```csharp
 [HttpDelete("{id}")]
@@ -157,7 +157,7 @@ Run the following command:
 dotnet run > ContosoPets.Api.log &
 ```
 
-The web API is running and is ready for testing via curl.
+The web API is running and is ready for testing via `curl`.
 
 > [!IMPORTANT]
-> Don't forget to check *ContosoPets.Api.log* for troubleshooting information, if required.
+> Don't forget to check *:::no-loc text="ContosoPets.Api.log":::* for troubleshooting information, if required.

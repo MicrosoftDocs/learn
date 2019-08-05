@@ -4,7 +4,7 @@ Organizations have enormous amounts of data, and the ultimate goal is getting im
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this short video to learn how Microsoft Power BI helps organizations generate business insights, create a culture of data-driven decision making, and address common challenges.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this short video to learn how Microsoft Power BI helps organizations generate business insights, create a culture of data-driven decision making, and address common challenges.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqGZf]
 
@@ -14,7 +14,7 @@ Businesses want to empower people with insights at the point of decision.
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to learn more about how Microsoft Power BI helps organizations experience their data in a real-time, customized, and intuitive way.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn more about how Microsoft Power BI helps organizations experience their data in a real-time, customized, and intuitive way.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqWCC]
 
@@ -29,7 +29,7 @@ To effectively create a Modern BI experience that drives data-driven decision ma
 
 The Microsoft BI platform offers the flexibility that organizations need to transition to Modern BI on their terms. In the cloud, we are primarily relying on Power BI to deliver business insights, with data connections to many cloud data sources and SaaS apps. In addition to cloud data sources, organizations can access on-premises data sources such as SQL Server Analysis Services using the on-premises data gateway.
 
-![Microsoft business intelligence diagram](../media/microsoft_business_intelligence.png)
+![Microsoft business intelligence diagram](../media/microsoft-business-intelligence.png)
 
 ### How is modern business intelligence used?
 
@@ -37,7 +37,7 @@ Modern BI is used across industries.
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch the following video on customer momentum.|
+|![Icon indicating play video](../media/video-icon.png)|Watch the following video on customer momentum.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqWCA]
 

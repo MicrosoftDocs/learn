@@ -27,7 +27,7 @@ iconUrl: /learn/achievements/azure-devops/build-applications-with-azure-devops.s
 levels:
 - intermediate
 roles:
-#- devops-engineer
+- devops-engineer
 - administrator
 - developer
 - solution-architect
