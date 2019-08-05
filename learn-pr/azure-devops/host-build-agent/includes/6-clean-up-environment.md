@@ -46,7 +46,7 @@ To disable the pipeline:
 
     Your pipeline will no longer process build requests.
 
-### Option 2 - Delete the Azure DevOps project
+### Option 2: Delete the Azure DevOps project
 
 This option deletes your Azure DevOps project, including what's on Azure Boards and your build pipeline. In future modules, you'll be able to run another template that brings up a new project in a state where this one leaves off. Choose this option if you don't need your DevOps project for future reference.
 
