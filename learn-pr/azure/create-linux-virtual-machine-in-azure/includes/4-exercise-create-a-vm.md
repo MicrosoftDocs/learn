@@ -68,13 +68,13 @@ We'll start with the **Basics** section. These instructions are for the Sandbox 
 
 Recall that we will get an OS disk (/dev/sda) and a temporary disk (/dev/sdb). Let's add a data disk as well:
 
-1. Click the **Create and attach a new disk** link in the **DATA DISKS** section.
+1. Click the **Create and attach a new disk** link in the **Data disks** section.
 
     ![Screenshot of the Azure portal showing the Create a new disk blade.](../media/3-add-data-disk.png)
 
 1. You can take all the defaults: **Premium SSD**, the auto-generated name, size of **1023** GiB, and **None (empty disk)** for **Source type**, although notice that source type is where you could use a snapshot or Azure Blob storage to create a VHD.
 
-1. Click **OK** to create the disk and go back to the **DATA DISKS** section.
+1. Click **OK** to create the disk and go back to the **Data disks** section.
 
 1. There should now be a new disk in the first row.
 
@@ -86,7 +86,7 @@ Recall that we will get an OS disk (/dev/sda) and a temporary disk (/dev/sdb). L
 
 1. In a production environment where we already have other components, you'd want to utilize an _existing_ virtual network. That way, your VM can communicate with the other cloud services in your solution. If there isn't one defined in this location yet, you can create it here and configure the:
     - **Address space**: The overall IPV4 space available to this network.
-    - **Subnet range**: The first subnet to subdivide the address space - it must fit within the defined address space. Once the VNet is created, you can add additional subnets.
+    - **Subnets**: The first subnet to subdivide the address space - it must fit within the defined address space. Once the VNet is created, you can add additional subnets.
 
 > [!NOTE]
 > By default, Azure will create a virtual network, network interface, and public IP for your VM. It's not trivial to change the networking options after the VM has been created, so always double-check the network assignments on services you create in Azure. For this exercise, the defaults should work fine.
