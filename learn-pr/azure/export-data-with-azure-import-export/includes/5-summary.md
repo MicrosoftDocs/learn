@@ -1,4 +1,4 @@
-In this module, you've learned about the Azure Import/Export service. You've seen how to use it to transfer data in and out of Azure storage by creating import and export jobs. You've also learned when you should consider using the Import/Export service, or when other data transfer solutions are more appropriate.
+In this module, you've learned about the Azure Import/Export service. You've seen how to use it to transfer data in and out of Azure storage by creating import and export jobs. You've also learned the factors to consider in choosing the Import/Export service versus other data transfer solutions in any particular situation.
 
 ## Learn more
 

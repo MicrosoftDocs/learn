@@ -19,25 +19,25 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: When should you use AzCopy rather than the Azure Import/Export service?
+  - content: When should you use AzCopy instead of the Azure Import/Export service?
     choices:
-    - content: To import or export small amounts of data from Azure storage when network latency isn't an issue.
+    - content: To import or export small amounts of data from Azure storage when network latency isn't an issue
       isCorrect: true
       explanation: Use AzCopy to transfer small to moderate amounts of data online across the network.
-    - content:  To import or export large amounts of data.
+    - content:  To import or export large amounts of data
       isCorrect: false
       explanation: Use Azure Import/Export to export large amounts of data offline. For import, use Azure Import/Export in regions where Azure Data Box devices aren't supported.
-    - content: To transfer data from Azure Storage to on-premises storage while you are offline.
+    - content: To transfer data from Azure Storage to on-premises storage while you are offline
       isCorrect: false
       explanation: AzCopy requires an active connection to your storage account in Azure. To do an offline transfer, use the Import/Export service or Data Box Family.
-  - content: When should you use Azure Import/Export service rather than Data Box Family?
+  - content: When should you use Azure Import/Export service instead of Data Box Family?
     choices:
-    - content: To transfer data using an online connection.
+    - content: To transfer data using an online connection
       isCorrect: false
       explanation: The Import/Export service is an offline solution. You can transfer data over a network connection using Data Box Edge or Data Box Gateway.
-    - content: To use a Microsoft-supplied device instead of disks you supply. 
+    - content: To use a Microsoft-supplied device instead of disks you supply
       isCorrect: false
-      explanation: Data Box Family uses Microsoft-supplied devices to transfer data from your on-premises location into Azure storage. 
-    - content: To export data from Azure storage while offline.
+      explanation: Data Box Family uses Microsoft-supplied devices to transfer data from your on-premises location to Azure storage. 
+    - content: To export data from Azure storage while you're offline
       isCorrect: true
       explanation: Data Box Family doesn't support exporting data from Azure storage. 
