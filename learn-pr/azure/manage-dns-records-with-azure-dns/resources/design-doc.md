@@ -55,6 +55,7 @@ Identify the subtasks of *Manage DNS records with Azure DNS*
         - How do you point your external domain at azure DNS zone
         - use nslookup to query the SOA record of the zone to prove. (nslookup -type=SOA contoso.net)
         - Configure custom DNS settings
+    - Explain the DNS records and configuration that are required to address the scanario in unit 1
 
 1. **Exercise - Create DNS Zone and A record using Azure DNS**
 
@@ -62,7 +63,8 @@ Identify the subtasks of *Manage DNS records with Azure DNS*
     1. Setup Recordset
     1. Create an A record
     1. Demonstrate it working
-    1. https://docs.microsoft.com/en-gb/azure/dns/dns-getstarted-portal#test-the-name-resolution
+
+    See: [Quickstart: Create an Azure DNS zone and record using the Azure portal](https://docs.microsoft.com/en-gb/azure/dns/dns-getstarted-portal#test-the-name-resolution)
 
 1. **Create Alias records for Azure private and public DNS**
 
@@ -76,11 +78,15 @@ Identify the subtasks of *Manage DNS records with Azure DNS*
         - What problems do they solve, IP changes, load balanced environment
         - How are they created, through the public IP, through the zone
 
+    > [!NOTE]
+    > How to configure private DNS zones must be included to cover the information required for the Administrator certification.
+
 1. **Exercise - Create Alias records for Azure  DNS**
 
     1. Create a shell script to setup the environment of a load balancer with two VMs and a public IP (See Notes for script info)
     1. Add an alias record to the public IP by creating a DNS zone 
-    3. https://azure.microsoft.com/en-gb/blog/announcing-alias-records-for-azure-dns/
+
+    See: [Announcing Alias records for Azure DNS](https://azure.microsoft.com/en-gb/blog/announcing-alias-records-for-azure-dns/)
 
 1. **Summary**
 
