@@ -8,19 +8,19 @@ In this unit, you'll explore the application-level protection you can take advan
 
 Site Recovery can replicate any app running on a supported machine:
 
-- **Azure VM**: Replication is available for any workload running on a supported Azure virtual machine
-- **Hyper-V VM**:  Protection is available for any workload running on a Hyper-V virtual machine
-- **Physical servers**: Protection is available for Windows and Linux operating systems
-- **VMware VM**: Protection is available for any workload running in a VMware virtual machine
+- **Azure VM** - Replication is available for any workload running on a supported Azure virtual machine.
+- **Hyper-V VM** - Protection is available for any workload running on a Hyper-V virtual machine.
+- **Physical servers** - Protection is available for Windows and Linux operating systems.
+- **VMware VM** - Protection is available for any workload running in a VMware virtual machine.
 
 Site Recovery provides application-aware replication for many types of workloads or applications that run on top of the server operating system. Application replication is supported for many different workloads. Taking advantage of the integration with specific workloads has many benefits during normal replication, and also during failover. Some of the features offered include:
 
-- **Near synchronous replication**: Data is written to the primary storage and the replica, almost, simultaneously to allow for low recovery times
-- **App-consistent snapshots**: Snapshots taken for recovery purposes can view information in memory, and pending I/O operations, which allow for quick recovery times as the application is ready to go upon switching to the replica VM
-- **Integration with SQL AlwaysOn**: AlwaysOn is an enterprise-level alternative to normal database mirroring techniques
-- **Flexible recovery plans**: The ability to recover an entire application stack with a single click, both manual and scripted actions can be incorporated into the overall plan
-  - **Network Management**: The automated ability to simplify the reservation of IP addresses, configure load balancers and integration with Azure Traffic Manager
-  - **Automation library**: Production ready scripts that can be downloaded and integrated with the recovery plan to provide a fully automated recovery if needed
+- **Near synchronous replication** - Data is written to the primary storage and the replica, almost, simultaneously to allow for low recovery times.
+- **App-consistent snapshots** - Snapshots taken for recovery purposes can view information in memory, and pending I/O operations, which allow for quick recovery times as the application is ready to go upon switching to the replica VM.
+- **Integration with SQL AlwaysOn** - AlwaysOn is an enterprise-level alternative to normal database mirroring techniques.
+- **Flexible recovery plans** - The ability to recover an entire application stack with a single click, both manual and scripted actions can be incorporated into the overall plan.
+  - **Network Management** - The automated ability to simplify the reservation of IP addresses, configure load balancers and integration with Azure Traffic Manager.
+  - **Automation library** - Production ready scripts that can be downloaded and integrated with the recovery plan to provide a fully automated recovery if needed.
 
 ### Active Directory & DNS
 
