@@ -5,14 +5,14 @@ title: Exercise - Deploy a scale set in the Azure portal
 metadata:
   title: Exercise - Deploy a scale set in the Azure portal
   description: Exercise - Deploy a scale set in the Azure portal
-  ms.date: 6/17/2019
+  ms.date: 8/5/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 
-durationInMinutes: 5
+durationInMinutes: 10
 azureSandbox: false
 content: |
   [!include[](includes/3-exercise-deploy-a-scale-set-in-the-azure-portal.md)]

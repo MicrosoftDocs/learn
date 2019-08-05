@@ -5,13 +5,13 @@ title: Features and benefits of virtual machine scale sets
 metadata:
   title: Features and benefits of virtual machine scale sets
   description: Features and benefits of virtual machine scale sets
-  ms.date: 6/17/2019
+  ms.date: 8/5/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 
-durationInMinutes: 5
+durationInMinutes: 7
 content: |
   [!include[](includes/2-features-and-benefits-of-virtual-machine-scale-sets.md)]

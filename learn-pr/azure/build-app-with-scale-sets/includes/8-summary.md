@@ -2,7 +2,7 @@ In this module, you looked at the features of virtual machine scale sets. You sa
 
 You applied your knowledge to shipping company's system. You deployed their web site using a scale set, and you configured the scale set to scale out and back in as the CPU utilization across the virtual machines increased and decreased. You also rolled out a new version of the web application across the scale set while allowing the virtual machines to continue running. These features will enable users to access the system while maintaining a good response time, even when the application is being updated.
 
-## Tidy up
+## Clean up
 
 - In the Cloud Shell, run the following command to delete the **scalesetrg** resource group. This action also removes the scale set.
 
