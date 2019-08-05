@@ -45,12 +45,13 @@ APPNAME=$(az webapp list --query [0].name --output tsv)
 APPRG=$(az webapp list --query [0].resourceGroup --output tsv)
 APPPLAN=$(az appservice plan list --query [0].name --output tsv)
 APPSKU=$(az appservice plan list --query [0].sku.name --output tsv)
+APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
 ```
 
 Now, run `az webapp up` with the appropriate values. Make sure you are in the `helloworld` directory before running this command.
 
 ```bash
-az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU
+az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
 ```
 
 The deployment will take a couple minutes, during which time you'll see status output.
