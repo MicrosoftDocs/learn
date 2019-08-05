@@ -21,12 +21,20 @@ The Site Recovery dashboard can be used to monitor recovery operations, includin
 
 From within the dashboard replicated items and test failovers can be monitored, each replicated item under both categories will be placed into a particular **state** for easy viewing of a healthy item compared to one with issues. See below:
 
-![Site recovery overview](../media/4-site-recovery-overview.png)
+![Site Recovery overview](../media/4-site-recovery-overview.png)
 
-**(1) Backup or Site Recovery**: This enables you to switch between the Back or the Site Recovery dashboards. In the above example, you are on the Site Recovery tab.
+**(1) Backup or Site Recovery** - This enables you to switch between the Back or the Site Recovery dashboards. In the above example, you are on the Site Recovery tab.
 
-**(2) Replicated items**: **Healthy** means that replication is running normally with no warnings. **Warning** means that one or more issues have been identified that could affect replication have been detected. **Critical** means that one or more critical replication errors have been identified.
+**(2) Replicated items** - **Healthy** means that replication is running normally with no warnings. **Warning** means that one or more issues have been identified that could affect replication have been detected. **Critical** means that one or more critical replication errors have been identified.
 
-**(3) Failover test success**: **Test Recommended** means that specific machines have not had a failover since Site Recovery protection was enabled. **Performed successfully** means that one or more machines replicated successfully. **Not applicable** means that machines are not currently eligible for a test failover.
+**(3) Failover test success** - **Test Recommended** means that specific machines have not had a failover since Site Recovery protection was enabled. **Performed successfully** means that one or more machines replicated successfully. **Not applicable** means that machines are not currently eligible for a test failover.
 
-**(4) Configuration issues**: **Missing configurations** means that a necessary setting is missing. **Missing resources** means that a specified resource can't be found or isn't available. For example, a deleted resource such as a virtual network. **Subscription quota** means that available amount of resource available for your subscription and whether there's enough to do a failover. **Software Updates** the availability of new software updates and information about out-of-date software.
+**(4) Configuration issues** - **Missing configurations** means that a necessary setting is missing. **Missing resources** means that a specified resource can't be found or isn't available. For example, a deleted resource such as a virtual network. **Subscription quota** means that available amount of resource available for your subscription and whether there's enough to do a failover. **Software Updates** the availability of new software updates and information about out-of-date software.
+
+**(5) Error Summary** - Any errors will be shown here for easy access, enabling you to quickly identify any issues in your environment.
+
+**(6) Infrastructure view** - Here you will see a visualization of your replication infrastructure and a display of health.
+
+**(7) Recovery Plans** - View recovery plans for your infrastructure.
+
+**(8) Jobs - Last 24 hours** - Easily see the status of any jobs that may be in progress, waiting, or that have failed.

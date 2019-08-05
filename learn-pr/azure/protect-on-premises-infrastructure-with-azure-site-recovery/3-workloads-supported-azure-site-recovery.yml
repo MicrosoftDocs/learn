@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.3-workloads-supported-by-azure-site-recovery
+uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.3-workloads-supported-azure-site-recovery
 metadata:
   title: Workloads supported for protection with Azure Site Recovery
   description: Explore the application-level protection you can take advantage of to protect your companies different workloads.
@@ -12,7 +12,7 @@ metadata:
 title: Workloads supported for protection with Azure Site Recovery
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-workloads-supported-by-azure-site-recovery.md)]
+  [!include[](includes/3-workloads-supported-azure-site-recovery.md)]
 quiz:
   title: Check your knowledge
   questions:

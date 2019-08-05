@@ -1,6 +1,6 @@
-**Azure Site Recovery** is more than just a tool to help you recover from system outages. Azure Site Recovery will replicate workloads between a primary and secondary site, and can also be used to migrate VMs from on-premises infrastructure to Azure.
+Azure Site Recovery is more than just a tool to help you recover from system outages. Azure Site Recovery will replicate workloads between a primary and secondary site, and can also be used to migrate VMs from on-premises infrastructure to Azure.
 
-Your first task to protect your workloads from earthquakes is to review the company's current BCDR plan. You need to identify the different recovery objectives and scope for the systems that need protection.
+Your first task to protect your workloads from earthquakes is to review the company's current business continuity and disaster recovery (BCDR) plan. You need to identify the different recovery objectives and scope for the systems that need protection.
 
 In this unit, you'll investigate how Azure Site Recovery can help achieve these goals and make failover and recovery of resources possible in the event of a disaster.
 
@@ -28,12 +28,12 @@ Azure Site Recovery is designed to contribute to your disaster recovery plan and
 
 Some notable features of Azure Site Recovery are:
 
-- **Central management**:  Replication is set up, managed, failover, and failback can be invoked all from within the Azure portal
-- **On-premises virtual machine replication**:  On-premise virtual machines can be replicated to Azure, or to secondary on-premise data center if necessary
-- **Azure virtual machine replication**:  Azure virtual machines can be replicated from one region to another
-- **App consistency during failover**:  Using recovery points and application-consistent snapshots, during replication virtual machines are kept in a consistent state at all times
-- **Flexible failover**:  Failovers can be run on demand as a test, or triggered during an actual disaster. Tests can be run to simulate a DR scenario without interruption to your live service
-- **Network integration**:  Site Recovery can manage network management during a replication/DR scenario, including reserved IP addresses and load balancers so that when the virtual machine is working in its new location
+- **Central management** -  Replication is set up, managed, failover, and failback can be invoked all from within the Azure portal.
+- **On-premises virtual machine replication** -  On-premise virtual machines can be replicated to Azure, or to secondary on-premise data center if necessary.
+- **Azure virtual machine replication** -  Azure virtual machines can be replicated from one region to another.
+- **App consistency during failover** -  Using recovery points and application-consistent snapshots, during replication virtual machines are kept in a consistent state at all times.
+- **Flexible failover** - Failovers can be run on demand as a test, or triggered during an actual disaster. Tests can be run to simulate a DR scenario without interruption to your live service.
+- **Network integration** - Site Recovery can manage network management during a replication/DR scenario, including reserved IP addresses and load balancers so that when the virtual machine is working in its new location.
 
 ## Setting up Azure Site Recovery
 
@@ -41,12 +41,12 @@ Some notable features of Azure Site Recovery are:
 
 There are several components that need to be set up to enable Azure Site Recovery:
 
-- **Networking**:  A valid Azure virtual network is required for the replicated virtual machines to use.
-- **Recovery Service vault**:  A vault in your Azure subscription that stores the migrated VMs when a failover is run. The vault also contains the replication policy, and the source and target locations for replication/failover.
-- **Credentials**:  The credentials you use for Azure need to have the **Virtual Machine Contributor** and **Site Recovery Contributor** roles to allow permission to modify both the VM and the storage is connects to.
-- **Configuration Server**:  An on-premises VMware server fulfills several roles during the failover/replication process. It's obtained from the Azure portal as an OVA for easy deployment. The configuration server includes a:
-  - **Process Server**:  This server acts as a gateway for the replication traffic and optimizes it before sending it over the WAN to Azure, it caches, compresses, and encrypts the traffic. The process server also installs the Mobility service onto the all the physical and virtual machines targeted for failover/replication.
-  - **Master Target Server**:  This machine handles the replication process during a failback from Azure.
+- **Networking** - A valid Azure virtual network is required for the replicated virtual machines to use.
+- **Recovery Service vault** - A vault in your Azure subscription that stores the migrated VMs when a failover is run. The vault also contains the replication policy, and the source and target locations for replication/failover.
+- **Credentials** - The credentials you use for Azure need to have the **Virtual Machine Contributor** and **Site Recovery Contributor** roles to allow permission to modify both the VM and the storage Site Recovery is connected to.
+- **Configuration Server** - An on-premises VMware server fulfills several roles during the failover/replication process. It's obtained from the Azure portal as an OVA for easy deployment. The configuration server includes a:
+  - **Process Server** - This server acts as a gateway for the replication traffic and optimizes it before sending it over the WAN to Azure, it caches, compresses, and encrypts the traffic. The process server also installs the Mobility service onto the all the physical and virtual machines targeted for failover/replication.
+  - **Master Target Server** - This machine handles the replication process during a failback from Azure.
 
 > [!IMPORTANT]
 > If you want to be able to fail back from Azure to on-premises environment, VMware vCenter with a Configuration server needs to be available even if you are only replicating physical machines to Azure. You cannot fail back to physical servers.
@@ -55,7 +55,7 @@ There are several components that need to be set up to enable Azure Site Recover
 
 ![Azure Site Recovery architecture](../media/2-replication-architecture.svg)
 
-Once the pre-requisite tasks have been set up, replication of the machines can be begin. They are replicated in accordance with the created replication policy and during the initial stages the first copy, the server data is replicated to Azure storage. Once the initial replication completes, a second replication, this time for the delta changes to the virtual machine, are replicated to Azure with those changes.
+Once the pre-requisite tasks have been set up, replication of the machines can begin. They are replicated in accordance with the created replication policy and during the initial stages the first copy, the server data is replicated to Azure storage. Once the initial replication completes, a second replication, this time for the delta changes to the virtual machine, are replicated to Azure with those changes.
 
 ## Testing and monitoring a failover
 
@@ -65,10 +65,10 @@ The first task when attempting a recovery drill is to verify your test virtual m
 
 Recovery drills can be started from the **Settings > Replicated Items** section of the Azure portal. The target virtual machine should be selected and then the **Test Failover** menu item should be selected for the latest processed recovery point. Select the Azure network in the same menu. Finally, start the recover job by selecting **OK** on the network selection screen.
 
-The status of the recovery job and the replicated virtual machine is accessed via the **Overview** section of the Recovery Services vault. Replicated items are granted different status's of:
+The status of the recovery job and the replicated virtual machine is accessed via the **Overview** section of the Recovery Services vault. Replicated items will have a status of:
 
-- **Healthy**
-- **Warning**: if there's an issue that could impact replication
-- **Critical**: if a critical replication error has been detected
+- **Healthy** - replication is operating normally.
+- **Warning** - Indication there's an issue that could impact replication.
+- **Critical** - Indication a critical replication error has been detected.
 
-The replicated VM will be set to a status of **Performed successfully** if all went well, or **Test recommended** if a test hasn't yet been done. The VM will also be set to **Test recommended** if the recommended gap between tests, which is six months, has lapsed.
+The replicated VM will be set to a status of **Performed successfully** if all went well, or **Test recommended** if a test hasn't yet been done. The VM will also be set to **Test recommended** if it's been more than six months since the last test.
