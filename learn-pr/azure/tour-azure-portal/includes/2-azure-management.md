@@ -1,6 +1,6 @@
-You can configure and manage Azure using a broad range of tools and platforms. There are tools available for the command line, language-specific Software Development Kits (SDKs), developer tools, tools for migration, and many others. 
+You can configure and manage Azure using a broad range of tools and platforms. There are tools available for the command line, language-specific Software Development Kits (SDKs), developer tools, tools for migration, and many others.
 
-Tools that are commonly used for day-to-day management and interaction include: 
+Tools that are commonly used for day-to-day management and interaction include:
 
 - **Azure portal** for interacting with Azure via a Graphical User Interface (GUI)
 - **Azure PowerShell** and **Azure Command-Line Interface** (CLI) for command line and automation-based interactions with Azure
@@ -9,14 +9,14 @@ Tools that are commonly used for day-to-day management and interaction include:
 
 ## Azure portal
 
-The [Azure portal](https://portal.azure.com) is a public website that you can access with any web browser. Once you sign in with your Azure account, you can create, manage and monitor any available Azure services. You can identify a service you're looking for, get links for help on a topic, and deploy, manage, and delete resources. It also guides you through complex administrative tasks using wizards and tooltips.
+The [Azure portal](https://portal.azure.com) is a public website that you can access with any web browser. Once you sign in with your Azure account, you can create, manage, and monitor any available Azure services. You can identify a service you're looking for, get links for help on a topic, and deploy, manage, and delete resources. It also guides you through complex administrative tasks using wizards and tooltips.
 
 ![Screenshot of the Azure portal](../media/2-azure-portal.png)
 
 The dashboard view provides high-level details about your Azure environment. You can customize the dashboard by moving and resizing tiles, and displaying services you're interested in.
 
 The portal doesn't provide any way to automate repetitive tasks. For example, to set up multiple VMs, you would need to create them one at a time by completing the wizard for each VM. This makes the portal approach time-consuming and error-prone for complex tasks.
- 
+
 ## Azure PowerShell
 
 Azure PowerShell is a module that you can install for Windows PowerShell, or PowerShell Core, which is a cross-platform version of PowerShell that runs on Windows, Linux or macOS. Azure PowerShell enables you to connect to your Azure subscription and manage resources. Windows PowerShell and PowerShell Core provide services such as the shell window and command parsing. Azure PowerShell then adds the Azure-specific commands.
@@ -24,7 +24,7 @@ Azure PowerShell is a module that you can install for Windows PowerShell, or Pow
 For example, Azure PowerShell provides the `New-AzureRmVM` command that creates a virtual machine for you inside your Azure subscription. To use it, you would launch PowerShell, install the Azure PowerShell module, sign in to your Azure account using the command `Connect-AzureRMAccount`, and then issue a command such as:
 
 ```powershell
-New-AzureRmVm `
+New-AzVM `
     -ResourceGroupName "MyResourceGroup" `
     -Name "TestVm" `
     -Image "UbuntuLTS"
@@ -94,7 +94,7 @@ We'll use the Cloud Shell in Microsoft Learn for many of the interactive exercis
 The [Microsoft Azure mobile app](https://aka.ms/azuremobileapp/) allows you to access, manage, and monitor all your Azure accounts and resources from your iOS or Android phone or tablet. Once installed, you can:
 
 - Check the current status and important metrics of your services
-- Stay informed with notifications and alerts about important health issues 
+- Stay informed with notifications and alerts about important health issues
 - Quickly diagnose and fix issues anytime, anywhere
 - Review the latest Azure alerts
 - Start, stop, and restart virtual machines or web apps
