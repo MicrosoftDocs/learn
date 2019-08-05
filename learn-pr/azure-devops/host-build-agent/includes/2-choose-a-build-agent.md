@@ -85,8 +85,8 @@ Microsoft-hosted agents have a few limitations, which include:
 
 * **Build duration**: A build job can run for up to six hours.
 * **Disk space**: Hosted agents provide at least 10 GB of storage for your sources and your build outputs.
-* **CPU, memory, and network** Hosted agents run on Microsoft Azure general purpose VMs. [Standard_DS2_v2](https://docs.microsoft.com/azure/virtual-machines/windows/sizes-general?azure-portal=true#dsv2-series) describes the CPU, memory, and network characteristics you can expect.
-* **Interactivity**: You can't log on to a hosted agent.
+* **CPU, memory, and network**: Hosted agents run on Microsoft Azure general purpose VMs. [Standard_DS2_v2](https://docs.microsoft.com/azure/virtual-machines/windows/sizes-general?azure-portal=true#dsv2-series) describes the CPU, memory, and network characteristics you can expect.
+* **Interactivity**: You can't sign in to a hosted agent.
 * **File shares**: You can't drop build artifacts to Universal Naming Convention (UNC) file shares.
 
 Although hosted agents are relatively easy to set up, there are some benefits to using your own build agents, aside from the limitations we just described.
@@ -105,7 +105,7 @@ When you set up a private agent, you provide the infrastructure that the builds 
 
 For example, you can:
 
-* **Set up the build agent manually**: You bring up the system, log on, and interactively install your build tools and the agent software.
+* **Set up the build agent manually**: You bring up the system, sign in, and interactively install your build tools and the agent software.
 * **Automate the process**: You bring up the system and run a script or tool to install your build tools and the agent software. You can configure the agent after the system comes online or during the provisioning process.
 
     For example, when you run build agents on Azure, you can use what's called an _Azure Resource Manager template_ to bring up the system and configure it to act as a build agent, all in one step. [Terraform](https://www.terraform.io?azure-portal=true) by HashiCorp is another way to automate the process. Terraform works with many types of infrastructure, including Azure.
