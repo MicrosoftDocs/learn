@@ -22,7 +22,7 @@ Imagine that you have an Azure Pipelines project that receives build requests ma
 
 When a build is triggered, Azure Pipelines selects an available build agent from the pool. If all agents are busy, the process waits for one to become available.
 
-When you use a Microsoft-hosted agent, you specify the VM image to use from the pool. Here's an example from your existing build configuration, which uses an Ubuntu 16.04 build agent:
+When you use a Microsoft-hosted agent, you specify the VM image to use from the pool. Here's an example from your existing build configuration that uses an Ubuntu 16.04 build agent:
 
 ```yml
 pool:
