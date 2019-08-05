@@ -2,7 +2,7 @@
 uid: learn.improve-app-scalability-resiliency-with-load-balancer.3-configure-public-load-balancer
 metadata:
   title: Configure a public load balancer
-  description: TODO
+  description: In this unit, you will learn how to choose and configure a distribution mode in Azure Load Balancer.
   ms.date: 05/31/2019
   author: jboeshart
   ms.author: jaboes

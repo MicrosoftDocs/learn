@@ -2,16 +2,17 @@
 uid: learn.improve-app-scalability-resiliency-with-load-balancer.4-exercise-configure-public-load-balancer
 metadata:
   title: Exercise - Configure a public load balancer
-  description: TODO
+  description: In this unit, you'll create a load balancer and use it to distribute requests between two virtual machines.
   ms.date: 05/31/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Exercise - title
+  zone_pivot_groups: azure-interface
+title: Exercise - Configure a public load balancer
 durationInMinutes: 10
 interactive: bash
 azureSandbox: true
 content: |
-  [!include[](includes/4-exercise-configure-a-public-load-balancer.md)]
+  [!include[](includes/4-exercise-configure-public-load-balancer.md)]
