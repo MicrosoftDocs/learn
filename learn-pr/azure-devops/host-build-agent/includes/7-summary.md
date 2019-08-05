@@ -2,7 +2,7 @@ In this module, you set up your own private build agent by using a virtual machi
 
 Although a Microsoft-hosted agent often does everything you need, there are times when you might consider using your own build agent.
 
-There are a few factors to consider when you decide to use a Microsoft-hosted agent rather use your own. These factors include how much compute power and disk space you need and how much time is required for your builds to run.
+There are a few factors to consider when you decide to use a Microsoft-hosted agent rather than use your own. These factors include how much compute power and disk space you need and how much time is required for your builds to run.
 
 When you configure a private build agent, it's yours to configure however you want. As a tradeoff, you also need to keep your system updated with the latest security patches and build tools.
 
