@@ -81,7 +81,7 @@ The preceding code defines an authorization policy named `Admin`. The policy req
     touch ./Areas/Identity/ClaimsPrincipalFactory.cs
     ```
 
-1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)] 
+1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)]
 
 1. Populate *Areas/Identity/ClaimsPrincipalFactory.cs* with the following code:
 

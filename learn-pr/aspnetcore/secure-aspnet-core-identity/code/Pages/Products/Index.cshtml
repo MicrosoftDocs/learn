@@ -1,4 +1,4 @@
-#region snippet_ModelIsAdmin
+<!-- <snippet_ModelIsAdmin> -->
 <td>
     @if (Model.IsAdmin)
     {
@@ -6,11 +6,11 @@
     <a href="#" onclick="deleteProduct('@product.Id', antiForgeryToken())">Delete</a>
     }
 </td>
-#endregion
+<!-- </snippet_ModelIsAdmin> -->
 
-#region snippet_AddProductLink
+<!-- <snippet_AddProductLink> -->
 @if (Model.IsAdmin)
 {
 <a asp-page="./Create">Add Product</a>
 }
-#endregion
+<!-- </snippet_AddProductLink> -->
