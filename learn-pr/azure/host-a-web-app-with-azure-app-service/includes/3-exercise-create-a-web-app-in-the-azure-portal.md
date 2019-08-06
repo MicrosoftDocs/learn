@@ -28,7 +28,7 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
     | **Operating System** | Windows | The operating system used on the virtual servers that run your app. |
     | **Region** | *Select a region from the note above* | The geographical region from which your app will be hosted. |
     | **Windows Service Plan** | *Leave default* | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
-    | **Sku and size** | *Leave default* | The pricing tier of the plan being created. This determines the performance characteristics of the virtual servers that power your app, and the features it has access to. Try selecting **Change size** to open the Spec Picker wizard and see the options available. When you're finished, close the Spec Picker with the close button in the upper-right corner. |
+    | **Sku and size** | F1 | The pricing tier of the plan being created. This determines the performance characteristics of the virtual servers that power your app, and the features it has access to. To select the F1 tier, select **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1** from the list, then select Apply. |
 
 1. Navigate to the **Monitoring** tab at the top of the page and toggle **Enable Application Insights** to **No**.
 
