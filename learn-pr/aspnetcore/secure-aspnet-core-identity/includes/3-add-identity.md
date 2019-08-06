@@ -120,6 +120,9 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
     * The EF Core database context class, named `ContosoPetsAuth`, is configured with the appropriate connection string.
     * The ASP.NET Core Identity services are registered, including the default UI (based on Bootstrap version 4), token providers, and cookie-based authentication.
 
+    > [!NOTE]
+    > The Azure Key Vault configuration provider is configured in the `ConfigureKeyVault` method in *Program.cs*.
+
 1. In *IdentityHostingStartup.cs*, add the following code to the block of `using` statements at the top. Save your changes.
 
     ::: zone pivot="pg"
