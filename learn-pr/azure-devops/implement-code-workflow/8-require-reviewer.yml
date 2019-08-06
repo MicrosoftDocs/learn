@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.implement-code-workflow.8-require-reviewer
-title: Exercise - Add a rule to require a reviewer
+title: Exercise - Add a rule to require a review
 metadata:
-  title: Exercise - Add a rule to require a reviewer
-  description: Set up a rule on GitHub that requires a reviewer to approve changes before those changes can be merged into the master branch.
+  title: Exercise - Add a rule to require a review
+  description: Set up a rule on GitHub that requires a reviewer to approve changes before they can be merged into the master branch.
   ms.date: 06/21/2019
   author: tpetchel
   ms.author: thpetche

@@ -14,6 +14,7 @@ The first step is to create the `score.py` file that consumes the model, like be
 from sklearn.externals import joblib
 from sklearn.linear_model import Ridge
 from azureml.core.model import Model
+import json
 
 def init():
     global model

@@ -1,4 +1,4 @@
-The Azure Portal has a lot of features and services available; let's look at some of the more common areas you'll tend to use. First, take a moment to hover your mouse pointer over each of the icons in the top menu bar for a few seconds each. You should see a tooltip label pop up for each one. This is the name of the menu item. You will use these icons later.
+The Azure portal has several features and services available; let's look at some of the more common areas you'll tend to use. First, take a moment to hover your mouse pointer over each of the icons in the top menu bar for a few seconds each. You should see a tooltip label pop-up for each one. This is the name of the menu item. You will use these icons later.
 
 ![Screenshot of the Azure portal icon bar](../media/5-portal-icon-bar.png)
 
@@ -28,7 +28,7 @@ The Azure Portal has a lot of features and services available; let's look at som
 
 1. If any notifications appear, hover your mouse over one of them. Click the **X** that appears in that notification to dismiss it.
 
-1. To the right of **Dismiss**, click **All**. You should have no notifications showing.
+1. Click **Dismiss all**. You should have no notifications showing.
 
 1. Click the **X** in the top right-hand corner to close the **Notifications** pane.
 
@@ -38,7 +38,7 @@ The Azure Portal has a lot of features and services available; let's look at som
 
 The Azure Cloud Shell allows you to use a command-line interface (CLI) to execute commands in your Azure subscription. You can access it by clicking the (`>_`) icon in the toolbar. However, it isn't available in the Sandbox environment - so you will only be able to do this in your own active subscriptions. You can also navigate to <https://shell.azure.com> to launch a Cloud Shell in the browser independent of the portal.
 
-When you launch the shell, you will see a Welcome window. You can choose either a **Bash** or **PowerShell** environment, depending on your personal preferences. You can also change the shell at anytime through the language drop-down on the left side of the shell.
+When you launch the shell, you will see a Welcome window. You can choose either a **Bash** or **PowerShell** environment, depending on your personal preferences. You can also change the shell at any time through the language drop-down on the left side of the shell.
 
 Finally, there are a variety of management and programming tools included in the created environment.
 

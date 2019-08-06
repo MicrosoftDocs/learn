@@ -42,17 +42,3 @@ quiz:
     - content: A people group
       isCorrect: false
       explanation: "A collection of friends, although technically a collection, is called a *person group*. A person group is list or collection of people (persons)."
-  - content: "In both the Face API and the Emotion API, which of the following terms describes the rectangular coordinates of a face that's detected in an image? (Choose one.)"
-    choices:
-    - content: Score
-      isCorrect: false
-      explanation: "In the Face API and the Emotion API, rectangular face coordinates are called a *location*. The location includes the top, left, height, and width of a region in the image that displays a face."
-    - content: Confidence
-      isCorrect: false
-      explanation: "In the Face API and the Emotion API, rectangular face coordinates are called a *location*. The location includes the top, left, height, and width of a region in the image that displays a face."
-    - content: Location
-      isCorrect: true
-      explanation: "In the Face API and the Emotion API, rectangular face coordinates are called a *location*. The location includes the top, left, height, and width of a region in the image that displays a face."
-    - content: Position
-      isCorrect: false
-      explanation: "In the Face API and the Emotion API, rectangular face coordinates are called a *location*. The location includes the top, left, height, and width of a region in the image that displays a face."

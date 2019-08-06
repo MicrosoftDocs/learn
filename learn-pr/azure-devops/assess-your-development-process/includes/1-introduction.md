@@ -6,4 +6,4 @@ In this module, you will:
 
 - Learn about value stream maps (VSMs)
 - Use a VSM to get a sense of where the release process needs improvement
-- Understand how the VSM gives you a good starting place to discuss your current DevOps practices
+- Understand how the VSM gives you a good starting point to discuss your current DevOps practices

@@ -1,3 +1,101 @@
+The team is having their weekly meeting and Andy is demoing the CD pipeline. They watch as a successful build moves through the pipeline, from one stage to another, until the web app is finally deployed to staging. 
+
+Amita say, "I'm so happy with the pipeline. It makes my life much easier. For one thing, I automatically get a release deployed to the test environment. That means I don't have to manually download and install build artifacts on my test servers. That's a big time saver.
+
+"Also, the unit tests that Mara and Andy wrote eliminate all the regression bugs before I get the release. That's a major source of frustation gone and I don't spend time finding and documenting them. 
+
+"But I'm worried that all the testing I do is still manual. It's slow and we can't show anything to management until I'm done. It's hard because the testing is important. It's how we make sure the users get the right experience. On the other hand, the pressure is on to do everything faster."
+
+Andy says, "I'm sure we can help you. What kind of tests take up most of your time?"
+
+"I think it's the UI tests," Amita says. I have to click through every step to make sure I get the correct result and I have to do it for every browser we support. It's very time consuming and, because the web site is getting more complicated, it's not practical in the long run."
+
+Mara says, "UI tests are considered to be functional tests."
+
+"As opposed to what--non-functional tests?" Tim asks.
+
+"Exactly," Mara says, laughing. "And non-functional tests are something you, in particular, care about."
+
+"Okay, I'm confused," Tim says.
+
+##Functional and non-functional tests
+"Functional tests," Mara says, "verify that each function of the software does what it should. How the software implements a function isn't important, only that the software does the right thing. You provide an input and check that the output is what you expected. That's how Mara tests the UI. For example, if she selects the top player on the leaderboard, she expects to see that player's profile.
+
+"Non-functional tests check characteristics like performance and reliability. An example of a non-functional test is checking to see how many people can simultaneously log in to the app. Load testing would be another example. Those are things you care about, Tim."
+
+"They are," Tim says. "I need to think about this for a bit. I might want to add some automation to the pipeline myself but I'm not sure yet what I want to do. Are there good and bad candidates for automated testing?"
+
+## Good candidates for automated testing
+
+***NOTE--the ILT page on this topic is a mess and I think some of it's wrong. Maybe we can talk it through but I'm skipping it for now.**
+
+Andy looks at Amita. "It sounds like you might be ready for some functional testing."
+
+"I am," Amita says. She looks at Andy and Mara. "We still have some time left. Want to help me plan an automated UI test?"
+
+"Absolutely," Mara answers, but let's get a few preliminaries out of the way. What tool should we use and how do we run the test?"
+
+##Tools for writing functional test
+When it comes to writing functional tests, what are the options we know about?" Mara asks. She starts writing on the board. "Here's a few options."
+
+* Selenium. 
+* PowerShell
+* SpecFlow
+
+
+"That's a good list," Andy says. "Selenium is a portable open source software-testing framework for web applications. It runs on most operating systems and it supports all modern browsers and multiple languages. I've used it before.
+
+"PowerShell is a general task automation and configuration management framework from Microsoft. There's a command line shell and an associated scripting language.
+
+"I know a little about SpecFlow," Mara says. "It's for .NET projects. It lets you define application behavior using a simple language called Gherkin."
+
+Andy looks at Amita. "I know this is new to you, so do you mind if I pick Selenium? I have some experience with it and it supports languages I already know. It also will give us automatic support for multiple browsers."
+
+"Sure," says Amita. "It's better if one of us comes in with some experience."
+
+## How to run a functional test
+
+"One thing I'm excited about," says Mara, is that now we can test in a production-like environment, where the app is actually running. Functional tests like UI tests make a lot of sense in that context. We can run them in Amita's test stage. 
+
+"We also have a choice about whether we run the tests on an agent, one of Microsoft's or one we host, or on test infrastructure, either on-prem or in the cloud."
+
+"Again, let's stick with what we know," Andy says. Let's use a Microsoft-hosted Windows build agent.
+
+## Functional test summary
+
+"OK," Mara says. So here's what we're going to do:
+
+* Run Selenium UI tests from a Microsoft-hosted Windows build agent.
+* Have the tests fetch the web content from the app that's running on App service, in the test environment.
+* Run the tests on all the browsers we support.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Note: Rough notes throughout -- feel free to move, reorder, and change things.
 Overall, I want to tee up a discussion about making Amita's life better and the test stage more robust. I want to drive towards a decision to add at least one functional (UI test w/ Selenium) test and one non-functional test (load testing with Apache JMeter) to the test stage. Both are forms of automated testing. Amita will still focus on the user experience by running a few quick tests before promoting to pre-production.
 

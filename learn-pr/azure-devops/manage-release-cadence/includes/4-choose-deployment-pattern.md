@@ -1,3 +1,6 @@
+***NOTE--as discussed with Thomas, squashed together this into 2. We've been loading info to that page. We can always break it up if we want since, with artwork it could seem too long.**
+
+
 Here we go into the different deployment patterns and why you would use them. This needs artwork for each pattern to break up the text. 
 
 TODO: come up with artwork for each pattern

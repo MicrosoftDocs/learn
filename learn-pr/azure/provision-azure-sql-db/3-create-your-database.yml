@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.provision-azure-sql-db.3-create-your-database
-title: Create your Azure SQL database
+title: Exercise - Create your Azure SQL database
 metadata:
-  title: Create your Azure SQL database
+  title: Exercise - Create your Azure SQL database
   description: Create your Azure SQL database
   ms.date: 09/24/2018
   #TODO: Update with real author name.

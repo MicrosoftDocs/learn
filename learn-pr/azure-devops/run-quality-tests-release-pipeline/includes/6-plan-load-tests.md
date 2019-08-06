@@ -1,12 +1,19 @@
-Note: Just like the prior two modules, this one will prep for the next unit, setting up load testing.
 
-Typically, you run load tests in more of a pre-production environment that more closely resembles the production environment. For now, you'll run it in the test environment, just like the Selenium UI tests.
+The load tests will use Apache JMeter to access the web application from many simulated users at the same time. Again, the tests will fetch the web content from the app running on App Service, in the test environment.
 
-Because of that, perhaps this is where Tim can get involved, given he has experience running load tests. But just like Amita, Tim's less of a coder (although he has experience running batch scripts and working with different kinds of configuration files, but he's really an ops guy.)
+Mara drops in to see Tim. "Hi there, I was wondering if you'd thought more about what kind of non-functional test you want to automate?"
 
-Perhaps Andy does a similar exercise with Tim - map out what Tim currently does and then automate it.
+"I have. I want to do a load test. I want to test the app under normal and peak conditions."
 
-Roberta: I can come back and flesh this out more. I have this proven out; just need to write it up.
+"That's great," says Mara. "Can I work with you? I've never written a load test. What tool do you use now?"
+
+"I use Apache JMeter. It's an open-source load testing tool for analyzing and measuring performance. I'm hoping we can integrate it into the pipeline. I think the output is XML."
+
+"I think we can," Mara answers. "We may need to convert the output to something Azure Pipelines understands, but that shouldn't be too hard. So we'll use a Microsoft-hosted agent to run the tests, just like we did with Amita. Instead of running it in the test environment though, we can run it in staging.
+
+"I think it's a great idea to start with tools and tests you're familiar with. Do you have any kind of script that you normally use for load testing? We could convert it to an automated test."
+
+Tim points to his computer screen. "There you go."
 
 Rough steps:
 
