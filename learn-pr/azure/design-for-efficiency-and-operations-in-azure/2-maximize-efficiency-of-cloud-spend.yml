@@ -5,9 +5,8 @@ metadata:
   title: Maximize efficiency of cloud spend
   description: In this unit, we'll discuss how to maximize the efficiency of your cloud expenditures
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: jboeshart
+  ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
