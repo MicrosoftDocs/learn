@@ -2,7 +2,7 @@ To use Azure Import/Export, you create a job that specifies the data that you wa
 
 In the film production company scenario, you've decided that using the Azure Import/Export service will meet your requirements. Now you need to understand how to create an export job.
 
-In this unit, you'll learn how to use your own disk drives to export data between your on-premises storage and Azure storage. You'll see how to create import and export jobs, and how to monitor the progress of an import or export job.
+In this unit, you'll learn how to use your own disk drives to export data between your on-premises storage and Azure Storage. You'll see how to create import and export jobs, and how to monitor the progress of an import or export job.
 
 ## Export data from Azure
 
@@ -10,12 +10,12 @@ You can use the Import/Export service to export data from Azure Blob storage onl
 
 You must have the following items to support the export process:
 
-- An active Azure subscription and an Azure storage account holding your data in blob storage
+- An active Azure subscription and an Azure Storage account holding your data in Azure Blob storage
 - A system running a supported version of Windows
 - BitLocker enabled on the Windows system
 - WAImportExport version 1 downloaded and installed from the Microsoft Download Center
 - An active account with a shipping carrier like FedEX or DHL for shipping drives to an Azure datacenter
-- A set of disks that you can send to an Azure datacenter on which to copy the data from Azure storage
+- A set of disks that you can send to an Azure datacenter on which to copy the data from Azure Storage
 
 The following diagram summarizes the export process:
 
@@ -40,7 +40,7 @@ To export data, you complete the following steps:
 1. **Check job status**
 
    - Receive disks: When the datacenter receives the disks, Microsoft updates the status of the job to indicate that the disks have arrived.
-   - Transfer data: Microsoft copies the data from blob storage to your disks. The status of the job is changed to show that data is in the process of being transferred. When the transfer is complete, the job status is updated again. It can take several days to transfer the data to your disks, depending on the size of the export job.
+   - Transfer data: Microsoft copies the data from Azure Blob storage to your disks. The status of the job is changed to show that data is in the process of being transferred. When the transfer is complete, the job status is updated again. It can take several days to transfer the data to your disks, depending on the size of the export job.
    - Package disks: Microsoft prepares the disks for shipping.  The drives are encrypted through BitLocker.
    - Ship: Microsoft sends the disks back to the return address specified in the export job, and updates the status of the job again.
 
@@ -50,10 +50,10 @@ To export data, you complete the following steps:
 
 ## Import data to Azure
 
-Before you import data to Azure storage, you must have the following items:
+Before you import data to Azure Storage, you must have the following items:
 
 - An active Azure subscription.
-- Minimum of one Azure storage account.
+- Minimum of one Azure Storage account.
 - A system running a supported version of Windows.
 - BitLocker enabled on the Windows system.
 - The correct version of the WAImportExport tool. Install version 1 to import data to Azure Blob storage or version 2 to import to Azure Files. Download this tool from the Microsoft Download Center.
@@ -99,8 +99,8 @@ To import data, complete the following steps:
 1. **Check job status**
 
    - Receive disks: The disks are received at the Azure datacenter. Microsoft updates the import job to indicate that the disks have arrived. You can track the job status from your import job page in the Azure portal.
-   - Transfer data: Microsoft copies the data from the disks into the specified storage account. This can take some time, depending on the volume of data and number of disks. There's no SLA for this process, but it should be complete in 7 to 10 days after receipt of the disks. Microsoft updates the status of the job to indicate that the data is being transferred. When the transfer is complete, Microsoft changes the status of the job to indicate that the data is now available in Azure storage.
-   - Package disks: After the data has been uploaded to Azure storage, Microsoft repackages your disks. The job status is updated.
+   - Transfer data: Microsoft copies the data from the disks into the specified storage account. This can take some time, depending on the volume of data and number of disks. There's no SLA for this process, but it should be complete in 7 to 10 days after receipt of the disks. Microsoft updates the status of the job to indicate that the data is being transferred. When the transfer is complete, Microsoft changes the status of the job to indicate that the data is now available in Azure Storage.
+   - Package disks: After the data has been uploaded to Azure Storage, Microsoft repackages your disks. The job status is updated.
    - Ship: Microsoft sends the disks back to you, using your selected carrier. The job status is changed to indicate that the job is now completed.
 
 1. **Receive disks**

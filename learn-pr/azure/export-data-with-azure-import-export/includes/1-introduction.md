@@ -11,4 +11,4 @@ In this module, you'll:
 
 ## Prerequisites
 
-- Familiarity with Azure Storage and Azure blobs
+- Familiarity with Azure Storage and Azure Blob storage

@@ -33,7 +33,7 @@ Azure Storage Explorer is a free tool that you can use to connect to Azure Stora
 
 A version of Azure Storage Explorer is provided in the Azure portal.
 
-You can also use Azure PowerShell and the Azure CLI to upload and download data. These interfaces are programmatic, enabling you to produce complex, scripted solutions that can incorporate transformations, mergers, and filtering as the data is transferred.
+You can also use Azure PowerShell and Microsoft Azure CLI to upload and download data. These interfaces are programmatic, enabling you to produce complex, scripted solutions that can incorporate transformations, mergers, and filtering as the data is transferred.
 
 ## Select the right tool for the job
 
@@ -44,4 +44,4 @@ The following table summarizes the considerations for choosing the most appropri
 | Large dataset | Low-bandwidth network or direct connectivity to on-premises storage is limited by organization policies |  Azure Import/Export for export;  Data Box Disk or Data Box for import where supported; otherwise use Azure Import/Export|
 | Large dataset | High-bandwidth network: 1 gigabit per second (Gbps) - 100 Gbps | AZCopy for online transfers; or to import data, Azure Data Factory, Azure Data Box Edge, or Azure Data Box Gateway |
 | Large dataset | Moderate-bandwidth network: 100 megabits per second (Mbps) - 1 Gbps | Azure Import/Export for export or Azure Data Box family for import where supported |
-| Small dataset: a few GBs to a few TBs | Low to moderate-bandwidth network: up to 1 Gbps | If transferring only a few files, use Azure Storage Explorer, Azure portal, AZCopy, or Microsoft AZ CLI |
+| Small dataset: a few GBs to a few TBs | Low to moderate-bandwidth network: up to 1 Gbps | If transferring only a few files, use Azure Storage Explorer, Azure portal, AZCopy, or AZ CLI |
