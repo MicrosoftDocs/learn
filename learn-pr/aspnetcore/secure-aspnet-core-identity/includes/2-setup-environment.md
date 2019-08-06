@@ -1,6 +1,6 @@
 In this unit, you'll set up the development environment for the module. You'll also gain an understanding of the resulting project.
 
-ASP.NET Core Identity supports many data stores. This module focuses on just two of the possible data stores. Use the toggle above to select your preference.
+ASP.NET Core Identity is a membership system that adds user registration and login capabilities to an ASP.NET Core web UI. As an alternative to local account creation, Identity supports external login providers such as Facebook and Twitter. Membership data is persisted in a data store. Data store support includes, but isn't limited to, SQL Server, PostgreSQL, and SQLite. This module focuses on just two of the possible data stores. Use the toggle above to select your preference.
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
@@ -35,29 +35,43 @@ The preceding command retrieves and runs a setup script from a GitHub repository
 * Displays connection information for the Azure resources.
 * Launches the Cloud Shell Editor to view the starter code.
 
+## Review project requirements
+
+Your stakeholders have defined the following business requirements:
+
+* There are two types of authenticated users for the system: employees and administrators.
+* Anonymous users aren't allowed to view the product catalog.
+* Employees can only view the product catalog.
+* Administrators can modify products.
+* Upon successful login, the user's first and last name should appear in the app's header.
+
+Your development team makes the following technical decisions:
+
+* Identity data should be isolated in its own database.
+* The database tables supporting Identity should belong to the default schema.
+* Administrators will self-enroll using a single-use token.
+* The app must support logging in with multi-factor authentication using a TOTP authenticator app.
+* The database credentials should be stored in Azure Key Vault.
+
 ## Review starter code
 
 The app consists of a single ASP.NET Core Razor Pages project named *ContosoPets.Ui*. The project contains the user interface for viewing and managing product data. The product data is obtained via an external ASP.NET Core web API.
 
-<!-- TODO: Diagram depicting starter app architecture and discussion -->
+Of particular interest are the following files and directories in *ContosoPets.Ui*:
 
-Your stakeholders have defined the following business requirements:
+|Name              |Description                                                    |
+|------------------|---------------------------------------------------------------|
+|*:::no-loc text="Controllers/AdminTokenController.cs":::* |Exposes `AdminRegistrationTokenService` as an HTTP endpoint. Unused until Unit 6.|
+|*:::no-loc text="Pages/Products/":::*            |Contains web UI for CRUD operations.|
+|*:::no-loc text="Services/AdminRegistrationTokenService.cs":::* |Generates tokens allowing administrators to self-register. Unused until Unit 6.|
+|*:::no-loc text="Services/ProductService.cs":::*          |Manages all interactions with the external ASP.NET Core web API.|
+|*:::no-loc text="Services/QRCodeService.cs":::*          |Manages the creation of QR codes for supporting multi-factor authentication. Unused until Unit 5.|
+|*:::no-loc text="wwwroot/js/product.js":::*          |Enables deletion of a product from *:::no-loc text="Pages/Products/Index.cshtml":::* without a server-side postback.|
+|*:::no-loc text="Program.cs":::*            |Serves as the app's main entry point and registers the Azure Key Vault configuration provider.|
+|*:::no-loc text="Startup.cs":::*            |Configures services and the app's HTTP request pipeline.|
 
-* There are three types of authenticated users for the system: employees and administrators.
-* The identity solution must support logging in with two-factor authentication.
-* Anonymous users can only view the product catalog.
-* Administrators can modify products.
-
-Your team makes the following technical decisions:
-
-* The database tables supporting Identity should reside in an `auth` schema.
-* Administrators will self-enroll using a single-use token.
-
-<!-- TODO: add the database diagram showing existing tables -->
-
-## Review ASP.NET Core Identity architecture
-
-<!-- TODO: Diagram depicting Identity architecture and discussion -->
+> [!NOTE]
+> Azure Key Vault is used to securely store and retrieve sensitive data. The starter code implements it to demonstrate one possible way to secure database credentials. It's unrelated to Identity and therefore out of scope for this module. [Learn more about Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/).
 
 ## Verify database connectivity
 
