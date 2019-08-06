@@ -59,7 +59,7 @@ By default, Azure SQL Database prevents access to the server to execute queries.
 
 ## Add data to the database
 
-Now let's add a table and a sample record to the database: 
+Now let's add a table and a sample record to the database. It is helpful to have some data in the database to to prove that our backups and restores work later in the module.
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources** and then click the **sql-erp-db** database.
 1. Click **Query editor**, and then sign in with the credentials **dbadmin** and **P4ssw0rd**.
