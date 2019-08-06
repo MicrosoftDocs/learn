@@ -1,8 +1,8 @@
-In this unit, you will review the structure of a basic Razor Page *:::no-loc text="PageModel":::* class and its elements. You will add a *:::no-loc text="POST":::* event handler method for the *:::no-loc text="Create":::* Razor Page form. Finally, you will walk through the *:::no-loc text="Product"::* model class and its DataAttributes that drive both client-side and server-side validation.
+In this unit, you'll review the structure of a basic Razor Page *:::no-loc text="PageModel":::* class and its elements. You'll add a *:::no-loc text="POST":::* event handler method for the *:::no-loc text="Create":::* Razor Page form. Finally, you'll walk through the *:::no-loc text="Product"::* model class and its DataAttributes that drive both client-side and server-side validation.
 
 ## Examine the structure of a basic Razor Pages *:::no-loc text="PageModel":::* class file
 
-Open the *:::no-loc text="Create.cshtml.cs":::* *:::no-loc text="PageModel":::* class file located in the *:::no-loc text="ContosoPets.Ui/Pages/Products/":::* directory. You may remember, that when you created a new Razor Page called *:::no-loc text="Create":::*, its *:::no-loc text="PageModel":::* class file named *:::no-loc text="Create.cshtml.cs":::* was also generated. Examine the contents. It should contain the following C# code.:
+Open the *:::no-loc text="Create.cshtml.cs":::* *:::no-loc text="PageModel":::* class file located in the *:::no-loc text="ContosoPets.Ui/Pages/Products/":::* directory. You may remember, that when you created a new Razor Page called *:::no-loc text="Create":::*, its *:::no-loc text="PageModel":::* class file named *:::no-loc text="Create.cshtml.cs":::* was generated. Examine the contents. It should contain the following C# code:
 
  ```csharp
 namespace Contoso.UI.Pages.Products
@@ -17,8 +17,8 @@ namespace Contoso.UI.Pages.Products
 }
 ```
 
-A Razor Page's *:::no-loc text="PageModel":::* class file is where you define its page handlers for requests sent to the page, and data used to render the page. This keeps those concerns separate from the Razor Page, your application more modular, and much easier to maintain.
-By convention, the *:::no-loc text="PageModel":::* class is called *:::no-loc text="<PageName>Model":::* and is in the same namespace as the Razor Page. In this case the `CreateModel` class in the namespace of `ContosoPets.Ui.Pages.Products`.
+A Razor Page's *:::no-loc text="PageModel":::* class file defines any page handlers for requests sent to the page, and data used to render the page. The *:::no-loc text="PageModel":::* keeps those concerns separate from the Razor Page, your application more modular, and much easier to maintain.
+By convention, the *:::no-loc text="PageModel":::* class is called *:::no-loc text="<PageName>Model":::* and is in the same namespace as the Razor Page. In this case, the `CreateModel` class in the namespace of `ContosoPets.Ui.Pages.Products`.
 
 Currently the `CreateModel` class handles the GET request by default and does nothing with it.
 
@@ -71,7 +71,7 @@ namespace ContosoPets.Ui.Pages.Products
 
 [!INCLUDE[OS-specific keyboard shortcuts](../../includes/keyboard-shortcuts-table.md)]
 
-The *:::no-loc text="CreateModel":::* class now has an *:::no-loc text="OnPostAsync":::* handler method, which runs on *:::no-loc text="POST":::* requests (when the user posts the *:::no-loc text="Create":::* form).
+The *:::no-loc text="CreateModel":::* class now has an *:::no-loc text="OnPostAsync":::* handler method. *:::no-loc text="OnPostAsync":::* runs on *:::no-loc text="POST":::* requests (when the user posts the *:::no-loc text="Create":::* form).
 The *:::no-loc text="Async":::* naming suffix is optional but is often used by convention for asynchronous functions.
 
 ```csharp
@@ -88,15 +88,15 @@ public async Task<IActionResult> OnPostAsync()
 }
 ```
 
-The *:::no-loc text="OnPost":::* handler will need to do the following for this application:
+The *:::no-loc text="OnPost":::* handler will need to do the following tasks for this application:
 
 * Verify the user-submitted data posted to the *:::no-loc text="PageModel":::* are valid.
-* If the attempted *:::no-loc text="PageModel":::* changes are not valid the *:::no-loc text="Create":::* page needs to be presented again to the user, with a message clarifying the input requirements.
-* If the *:::no-loc text="PageModel":::* update is valid, then data changes are passed to a service called *:::no-loc text="ProductService":::* that will handle the concern of HTTP requests and responses to the web API.
+* If the attempted *:::no-loc text="PageModel":::* changes are not valid, the *:::no-loc text="Create":::* page is presented again to the user. A message is displayed clarifying the input requirements.
+* If the *:::no-loc text="PageModel":::* update is valid, then data changes are passed to a service called *:::no-loc text="ProductService":::*. *:::no-loc text="ProductService":::* will handle the concern of HTTP requests and responses to the web API.
 
 ## Binding the *:::no-loc text="Product":::* model
 
-The `CreateModel` class needs access to the *:::no-loc text="Product":::* model. It wil validate and pass *:::no-loc text="Product":::* entries from the *:::no-loc text="Create":::* form. It does so by using the *:::no-loc text="[BindProperty]":::* attribute in the following code:
+The `CreateModel` class needs access to the *:::no-loc text="Product":::* model. It will validate and pass *:::no-loc text="Product":::* entries from the *:::no-loc text="Create":::* form. It does so by using the *:::no-loc text="[BindProperty]":::* attribute in the following code:
 
 ```csharp
 [BindProperty]
@@ -116,9 +116,9 @@ if (!ModelState.IsValid)
 }
 ```
 
-In the preceding code, *:::no-loc text="ModelState":::* represents errors from model binding and validation. If the *:::no-loc text="ModelState":::* it is not valid then the *:::no-loc text="Create":::* page is presented again to the user. In the previous unit you saw how the *:::no-loc text="Create":::* Razor Page takes advantage of ASP.NET Core's built-in client-side form input validation to responsively provide the user with input validation feedback.
+In the preceding code, *:::no-loc text="ModelState":::* represents errors from model binding and validation. If the *:::no-loc text="ModelState":::* isn't valid, then the *:::no-loc text="Create":::* page is presented again to the user. In the previous unit, you saw how the *:::no-loc text="Create":::* Razor Page takes advantage of ASP.NET Core's built-in client-side form input validation to responsively provide the user with input validation feedback.
 
-If the *:::no-loc text="ModelState":::* is valid, then the *:::no-loc text="OnPostAsync":::* handler will proceed to call upon an instance of *:::no-loc text="ProductService":::* which is responsible for HTTP requests and responses for the web API.
+If the *:::no-loc text="ModelState":::* is valid, then the *:::no-loc text="OnPostAsync":::* handler will proceed to call upon an instance of *:::no-loc text="ProductService":::*. *:::no-loc text="ProductService":::* is responsible for HTTP requests and responses for the web API.
 
 ```csharp
 await _productService.CreateProduct(Product);
@@ -128,7 +128,7 @@ return RedirectToPage("Index");
 
 ## Defining validation rules for the product model using DataAnnotations
 
-This project uses a central model file *:::no-loc text="Product.cs":::* for *:::no-loc text="Product":::* model validation and operations. It is used by all Razor Page *:::no-loc text="PageModels":::* involved in UI for Product CRUD operations, and is used to validate product data received from the web api. By convention it is stored in the *:::no-loc text="Models/":::* directory. The `Product` model class namespace is `ContosoPets.Ui.Models`.
+This project uses a central model file *:::no-loc text="Product.cs":::* for *:::no-loc text="Product":::* model validation and operations. It's used by all Razor Page *:::no-loc text="PageModels":::* involved in UI for Product CRUD operations, and is used to validate product data received from the web api. By convention it's stored in the *:::no-loc text="Models/":::* directory. The `Product` model class namespace is `ContosoPets.Ui.Models`.
 
 Your new `CreateModel` class gained access to any model types defined in the `ContosoPets.Ui.Models` namespace, including the `Product` model, with the following *:::no-loc text="using":::* directive:
 
@@ -164,7 +164,7 @@ The *:::no-loc text="Product":::* class uses the `[Required]` and the `[Range]` 
 
 If you decide to enforce more validation rules, you can easily modify attributes in just one place, the *:::no-loc text="Product":::* model, without being required to modify any of the *:::no-loc text="PageModel":::* class files in the project. A significant benefit!
 
-There is a very comprehensive set of DataAnnotation attributes available to you through *:::no-loc text="System.ComponentModel.DataAnnotations":::*. For the scope of this module we have only provided a very small and simplified example.
+There is a comprehensive set of DataAnnotation attributes available to you through *:::no-loc text="System.ComponentModel.DataAnnotations":::*. For the scope of this module, we have only provided a very small and simplified example.
 
 ## The *:::no-loc text="Product":::* Model as a Data Transfer Object
 
@@ -172,7 +172,7 @@ The *:::no-loc text="Product":::* model also serves as a Data Transfer Object (D
 
 ## Injecting the ContosoPets.UI ProductService Service that handles HTTP requests
 
-As a final step the *:::no-loc text="OnPost":::* method in your `CreateModel` class passes the validated data to a service class named `ProductService`. The `ProductService` class is an example of a typed *:::no-loc text="HTTPClient":::* service architecture. Simply put, the `ProductService` class is responsible for executing all HTTP requests to the web API so that code is maintained in one place. Furthermore it is registered at startup as a service so that it may be injected where needed. It is injected in this project for all *:::no-loc text="PageModel":::* classes that initiate Crud operations for their Razor Pages. We will walk through an example of `ProductService` HTTP request logic lifecycle in the next unit.
+As a final step, the *:::no-loc text="OnPost":::* method in your `CreateModel` class passes the validated data to a service class named `ProductService`. The `ProductService` class is an example of a typed *:::no-loc text="HTTPClient":::* service architecture. Simply put, the `ProductService` class is responsible for executing all HTTP requests to the web API so that code is maintained in one place. Furthermore it is registered at startup as a service so that it may be injected where needed. It is injected in this project for all *:::no-loc text="PageModel":::* classes that initiate Crud operations for their Razor Pages. We will walk through an example of `ProductService` HTTP request logic lifecycle in the next unit.
 
 The `ProductService` class was made available to the `Create` *:::no-loc text="PageModel":::* class with the following *:::no-loc text="using":::* statement:
 
@@ -196,7 +196,7 @@ public class CreateModel : PageModel
     }
 ```
 
-ASP.NET Core supports the Inversion of Control (IoC) pattern using Dependency Injection (DI). This allows the `ProductService` service to be injected directly into the constructor of this class where it's used. The framework takes on the responsibility of creating an instance of the class and disposing of it when it's no longer needed. The `ProductService` class defines a constructor, `CreateModel` that the service provides to the app. This interface is implemented by a concrete type, `ProductService`. This IoC design pattern allows ASP.NET Core developers to avoid the inherited costs of a class taking a direct dependency on another class.
+ASP.NET Core supports the Inversion of Control (IoC) pattern using Dependency Injection (DI). This pattern allows the `ProductService` service to be injected directly into the constructor of this class where it's used. The framework takes on the responsibility of creating an instance of the class and disposing of it when it's no longer needed. The `ProductService` class defines a constructor, `CreateModel` that the service provides to the app. This interface is implemented by a concrete type, `ProductService`. This IoC design pattern allows ASP.NET Core developers to avoid the inherited costs of a class taking a direct dependency on another class.
 
 The following code calls the `CreateModel` method, passing the `Product` Data Transfer Object (DTO) which will be sent by HTTP request to the web API.
 

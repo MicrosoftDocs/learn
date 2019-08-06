@@ -28,15 +28,15 @@ The preceding command rebuilds your *:::no-loc text="ContosoPets.UI":::* applica
     az webapp up
 ```
 
-The preceding command runs a script created specifically for the purpose of provisioning a public endpoint for this project. Please be patient as it may take several minutes.
+The preceding command runs a script created specifically for the purpose of provisioning a public endpoint for this project. Be patient as it may take several minutes.
 
-Something like the following should eventually display to indicate the web API is being deployed.
+Something like the following text should eventually display to indicate the web API is being deployed.
 
 ```console
 Starting zip deployment. This operation can take a while to complete...
 ```
 
-Once your project has been successfully hosted. You should see something like the following:
+Once your project has been successfully hosted. You should see something like the following text:
 
 ```console
 You can launch the app at http://webapp<random ID number here>.azurewebsites.net

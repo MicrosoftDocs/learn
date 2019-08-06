@@ -1,4 +1,4 @@
-In this unit, you'll set up the development environment for the module which will contain the ContosoPets.UI example project.
+In this unit, you'll set up the development environment for the module, which will contain the ContosoPets.UI example project.
 
 ## Set up development environment
 
@@ -26,4 +26,4 @@ You will see the following list of ContosoPets.UI project directories and files:
 * *:::no-loc text="Program.cs":::*
 * *:::no-loc text="StartUp.cs":::*
 
-In addition, a web API has been deployed to a public endpoint for which the *:::no-loc text="ContosoPets.UI":::* example will provide a client front end. This endpoint will be called in a later step.
+In addition, a web API has been deployed to a public endpoint. The *:::no-loc text="ContosoPets.UI":::* example will provide a client front end for the web API. This endpoint will be called in a later step.

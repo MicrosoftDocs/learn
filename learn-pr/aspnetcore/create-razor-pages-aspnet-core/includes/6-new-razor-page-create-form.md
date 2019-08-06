@@ -1,8 +1,8 @@
-In this unit, you will create a form in the *:::no-loc text="ContosoPets.UI":::* project using Razor Pages to seperate the logic of the page from its presentation.
+In this unit, you will create a form in the *:::no-loc text="ContosoPets.UI":::* project using Razor Pages to separate the logic of the page from its presentation.
 
 ## Use the .NET Core CLI to create a new Razor Page
 
-The *:::no-loc text="ContosoPets.UI":::* project directory should be currently open in the [Azure Cloud Shell editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor). If it is not, then repeat the set up steps in the previous *Set up the environment* unit.
+The *:::no-loc text="ContosoPets.UI":::* project directory should be currently open in the [Azure Cloud Shell editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor). If it is not, then repeat the set-up steps in the previous *Set up the environment* unit.
 
 Run the following command in the command shell:
 
@@ -139,6 +139,6 @@ The `type`, `data-val-range-min`, `data-val-range-max` and error response are dy
 
 The following is the completed *:::no-loc text="Create":::* form rendered in the browser displaying its validation messages after the user's input failed to pass data validation.
 
-![Completed Create Product Form](../media/6-new-razor-page-createproduct-form/createproduct-validation.png)
+![Completed Create Product Form](../media/6-new-razor-page-create-form/createproduct-validation.png)
 
 Now that the *:::no-loc text="Create":::* Razor Page form has been created, let's explore its *:::no-loc text="PageModel":::* class file and modify it to handle the *:::no-loc text="Create":::* page's *:::no-loc text="POST":::* event and data.
