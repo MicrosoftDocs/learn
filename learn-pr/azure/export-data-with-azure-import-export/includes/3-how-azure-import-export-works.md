@@ -6,7 +6,7 @@ In this unit, you'll learn how to use your own disk drives to export data betwee
 
 ## Export data from Azure
 
-You can use the Import/Export service to export data from Azure Blob Storage only. You can't export data that's stored in Azure Files.
+You can use the Import/Export service to export data from Azure Blob storage only. You can't export data that's stored in Azure Files.
 
 You must have the following items to support the export process:
 
@@ -56,7 +56,7 @@ Before you import data to Azure storage, you must have the following items:
 - Minimum of one Azure storage account.
 - A system running a supported version of Windows.
 - BitLocker enabled on the Windows system.
-- The correct version of the WAImportExport tool. Install version 1 to import data to Azure Blobs or version 2 to import to Azure Files. Download this tool from the Microsoft Download Center.
+- The correct version of the WAImportExport tool. Install version 1 to import data to Azure Blob storage or version 2 to import to Azure Files. Download this tool from the Microsoft Download Center.
 - An active shipping carrier account like FedEX or DHL for shipping drives to an Azure datacenter.
   
 The following diagram summarizes the steps involved to import data:
