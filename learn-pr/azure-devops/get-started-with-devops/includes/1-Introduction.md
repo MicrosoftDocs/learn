@@ -2,7 +2,7 @@ Azure DevOps can help your team release code in a more efficient, cooperative, a
 
 In the [previous module](/learn/modules/assess-your-development-process?azure-portal=true), you met the team at Tailspin Toys. They're working on a new game but they've got many problems with their release process. These problems are affecting the quality of the products they deliver to their customers. The team knows they need to change but they don't know how.
 
-The newest team member, Mara, believes DevOps will help. Her goal is to convince her teammates. She'll explain more about the value stream mapping (VSM) exercise she started in the previous module. Hopefully, her explanation will show the team why Azure DevOps is the way forward.
+The newest team member, Mara, believes DevOps will help. Her goal is to convince her teammates. She'll explain more about the value stream mapping (VSM) exercise she started in the previous module. Hopefully, her explanation will show the team why DevOps is the way forward.
 
 ## Learning objectives
 
