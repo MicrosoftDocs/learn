@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn-wwl.introduction-to-regression
 metadata:
-  title: Introduction to Regression
-  description: This is an introduction to regression - predicting numbers using an AI model - Linear Regression.
+  title: Predict numeric values with regression
+  description: This is an introduction to regression – making predictions about the real world using machine learning regression algorithms. Here we will use variations of linear regression to predict numeric values.
   ms.date: 06/30/2019
-  author: markjulmar
-  ms.author: rawortma
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: markjulmar
-title: Introduction to Regression
-summary: This is an introduction to regression - predicting numbers using an AI model - Linear Regression.
+title: Predict numeric values with regression
+summary: This is an introduction to regression – making predictions about the real world using machine learning regression algorithms. Here we will use variations of linear regression to predict numeric values.
 abstract: | 
   In this module, you will:
-  - Learn the fundamentals of regression.
-  - Learn how to make simple linear regression, multiple linear regression, and polynomial regression predictive models.
+  - Make predictive models with simple linear regression and multiple linear regression.
+  - Make predictive models with polynomial regression.
   - Learn about non-linear data sets.
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
