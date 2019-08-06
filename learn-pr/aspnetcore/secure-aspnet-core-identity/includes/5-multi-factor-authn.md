@@ -53,11 +53,11 @@
 
 1. Follow the on-screen instructions to register and verify your authenticator app for this user.
 
-    > [!TIP]
-    > If using Microsoft Authenticator, use the following steps to add the account to the app:
-    > 1. Select the three dots in the upper right.
-    > 1. Select *Add account*.
-    > 1. Select *Other account*.
-    > 1. Scan the QR code as indicated.
+    Using Microsoft Authenticator as an example, follow these steps to add the account to the app:
+
+    1. Select the kebab menu (vertical ellipsis) in the upper right.
+    1. Select **Add account**.
+    1. Select **Other account**.
+    1. Scan the QR code as indicated.
 
 1. Select **Logout**, and then log in again with the same user. Note the user is prompted for a token from the authenticator app. Provide the token value to log in.

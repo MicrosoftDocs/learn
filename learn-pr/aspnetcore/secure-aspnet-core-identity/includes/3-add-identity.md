@@ -131,6 +131,8 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
     using Npgsql;
     ```
 
+    The preceding code resolves the reference to the `NpgsqlConnectionStringBuilder` class referenced in the `Configure` method.
+
     ::: zone-end
 
     ::: zone pivot="sql"

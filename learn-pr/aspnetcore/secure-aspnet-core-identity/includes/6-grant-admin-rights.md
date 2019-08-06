@@ -127,40 +127,17 @@ The preceding code defines an authorization policy named `Admin`. The policy req
 
     1. In that same file, make the highlighted change to `OnPostAsync`:
 
-    ```csharp
-    // TODO: This needs to be a snippet, highlight IsAdmin
-    var user = new ContosoPetsUser
-    {
-        FirstName = Input.FirstName,
-        LastName = Input.LastName,
-        UserName = Input.Email,
-        Email = Input.Email,
-        IsAdmin = (Input.AdminCreationKey == _adminService.CreationKey),
-    };
-    ```
+        [!code-csharp[](../code/Areas/Identity/Pages/Account/Register.cshtml.cs?highlight=7)]
 
-    1. In *Areas/Identity/Pages/Account/Register.cshtml.cs*, add the following:
+    1. In *Areas/Identity/Pages/Account/Register.cshtml*, add the following:
 
-    ```cshtml
-    @* TODO: snippet, highlight AdminCreationKey *@
-    <div class="form-group">
-        <label asp-for="Input.ConfirmPassword"></label>
-        <input asp-for="Input.ConfirmPassword" class="form-control" />
-        <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Input.AdminCreationKey"></label>
-        <input asp-for="Input.AdminCreationKey" class="form-control" />
-        <span asp-validation-for="Input.AdminCreationKey" class="text-danger"></span>
-    </div>
-    <button type="submit" class="btn btn-primary">Register</button>
-    ```
+        [!code-cshtml[](../code/Areas/Identity/Pages/Account/Register.cshtml?highlight=6-10)]
 
     1. In *Areas/Identity/Data/ContosoUser.cs*, add the following property:
 
-    ```csharp
-    public bool IsAdmin { get; set; }
-    ```
+        ```csharp
+        public bool IsAdmin { get; set; }
+        ```
 
 ## Test admin claim
 

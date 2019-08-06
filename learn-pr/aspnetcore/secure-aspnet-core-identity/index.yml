@@ -39,6 +39,8 @@ units:
 - learn.secure-aspnet-core-identity.4-customize-identity
 - learn.secure-aspnet-core-identity.5-multi-factor-authn
 - learn.secure-aspnet-core-identity.6-grant-admin-rights
+- learn.secure-aspnet-core-identity.7-knowledge-check
+- learn.secure-aspnet-core-identity.8-summary
 iconUrl: /learn/achievements/aspnetcore/secure-aspnet-core-identity.svg
 badge:
   uid: learn.secure-aspnet-core-identity.badge
