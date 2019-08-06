@@ -1,4 +1,4 @@
-## Title
+# Title
 
 Protect your APIs on Azure API Management
 
