@@ -9,7 +9,7 @@ In this unit, you'll learn how to customize an image, and then generalize this i
 If you're building a Windows image, you use the **sysprep** utility to prepare a virtual machine for generalization. Sysprep removes server-specific information from the image, such as the hostname, user sign-in information, and logs. Sysprep also removes any machine-specific identifiers used internally by Windows.
 
 > [!IMPORTANT]
-> Running **sysprep** is a destructive process, and you cannot easily reverse its effects. Backup your virtual machine first.
+> Running **sysprep** is a destructive process, and you cannot easily reverse its effects. Back up your virtual machine first.
 
 To generalize a Windows VM, follow these steps:
 
@@ -107,8 +107,6 @@ On the **Create image** page that follows, give your image a name and specify a 
 If you're using PowerShell or the Azure CLI, you can create a virtual machine image from a generalized and deallocated virtual machine using the following commands. In both examples, the image will be created in the same resource group as the original virtual machine:
 
 ```powershell
-# PowerShell
-
 $vm = Get-AzVM -ResourceGroupName <resource group> `
     -Name <generalized virtual machine>
 
@@ -121,8 +119,6 @@ New-AzImage -Image $image `
 ```
 
 ```azurecli
-# Azure CLI
-
 az image create \
     --name <image name> \
     --resource-group <resource group> \
@@ -136,8 +132,6 @@ You can build a new virtual machine using your generalized image. The simplest w
 Alternatively, you can use the PowerShell `New-AzVm` command, or the Azure CLI `az vm create` command. The examples below illustrate the syntax:
 
 ```powershell
-# PowerShell
-
 New-AzVm `
     -ResourceGroupName <resource group> `
     -Name <new virtual machine name> `
@@ -146,8 +140,6 @@ New-AzVm `
 ```
 
 ```azurecli
-# Azure CLI
-
 az vm create \
     --resource-group <resource group> \
     --name <new virtual machine name> \

@@ -4,19 +4,19 @@ In the sample scenario, your organization is considering creating and configurin
 
 In this unit, you'll learn more about VHDs, and how you can use them to create standard customized disks for building virtual machines for your own organization.
 
-## What is an Azure Virtual Hard Disk?
+## What is an Azure virtual hard disk?
 
-A VHD is conceptually similar to a real hard disk. You can use a VHD to host the operating system and run a virtual machine. A VHD can also hold databases, and other user-defined folders, files, and data. A VHD can hold anything that you can store on a real hard disk. A virtual machine can contain multiple VHDs. Typically, a virtual machine has an *operating system VHD* on which the operating system is installed, and one or more *data VHDs* that contain the applications and other user-specific data used by the virtual machine.
+A VHD is conceptually similar to a physical hard disk. You can use a VHD to host the operating system and run a virtual machine. A VHD can also hold databases, and other user-defined folders, files, and data. A VHD can hold anything that you can store on a physical hard disk. A virtual machine can contain multiple VHDs. Typically, a virtual machine has an *operating system VHD* on which the operating system is installed, and one or more *data VHDs* that contain the applications and other user-specific data used by the virtual machine.
 
-The difference between a VHD and a real hard disk is that a VHD is stored as a virtual file in Azure, rather than a piece of real hardware.
+The difference between a VHD and a physical hard disk is that a VHD is stored as a virtual file in Azure, rather than a piece of physical hardware.
 
-Compared to real disks, VHDs have several advantages, including:
+Compared to physical disks, VHDs have several advantages, including:
 
-- High availability. You can store a VHD as an Azure-managed disk. Managed disks are replicated across three datacenters. If one datacenter has connectivity issues, your VHD is still available in two other locations.
-- Physical security. A VHD is stored in the cloud rather than as a device held on-premises. You can control who has access to a VHD using Azure's security features, and you can audit the changes made to a VHD. Managed VHDs are also encrypted, to protect them further. These features make it more difficult for a disk to be stolen or mislaid. It's also easier to track the provenance of a VHD, so you can be sure that it contains the correct software of a specific version.
-- Durability. Because a VHD isn't a physical piece of hardware, it won't wear out or suffer from some form of media failure.
-- Scalability. You can create many virtual machines from the same VHDs simultaneously with minimal contention (contrast this with attempting to set up 100 machines from the same DVD mounted as a shared device on your on-premises network).
-- Cost/Performance benefits. Azure provides several different types of VHD, ranging from those stored on high-performance, dedicated SSDs in a datacenter, to lower-performance, lower-cost VHDs stored on shared hard disk drives. You can select the type of VHD depending on your throughput and cost requirements. For a complete description of the different types of VHD available, and their performance and cost profiles, read [What disk types are available in Azure?](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types)
+- High availability - You can store a VHD as an Azure-managed disk. Managed disks are replicated across three datacenters. If one datacenter has connectivity issues, your VHD is still available in two other locations.
+- Physical security - A VHD is stored in the cloud rather than as a device held on-premises. You can control who has access to a VHD using Azure's security features, and you can audit the changes made to a VHD. Managed VHDs are also encrypted, to protect them further. These features make it more difficult for a disk to be stolen or mislaid. It's also easier to track the provenance of a VHD, so you can be sure that it contains the correct software of a specific version.
+- Durability - Because a VHD isn't a physical piece of hardware, it won't wear out or suffer from some form of media failure.
+- Scalability - You can create many virtual machines from the same VHDs simultaneously with minimal contention (contrast this with attempting to set up 100 machines from the same DVD mounted as a shared device on your on-premises network).
+- Cost and performance - Azure provides several different types of VHD, ranging from those stored on high-performance, dedicated SSDs in a datacenter, to lower-performance, lower-cost VHDs stored on shared hard disk drives. You can select the type of VHD depending on your throughput and cost requirements. For a complete description of the different types of VHD available, and their performance and cost profiles, read [What disk types are available in Azure?](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types)
 
 ## What is a virtual machine image?
 
@@ -46,26 +46,12 @@ You must reset these items back to a default state before using the image to cre
 
 When you create a new virtual machine using a generalized image, you have to supply items such as the hostname, user account details, and other information that was removed by the generalization process.
 
-You'll learn how to generalize an image in unit 3.
-
-> [!NOTE]
-> A generalized image that you use to provision other virtual machines with the same configuration is sometimes referred to as a *Golden Image*.
-
 ## What is a specialized virtual image?
 
 A specialized virtual image is a copy of a live virtual machine once it has reached a specific state. For example, a specialized image might contain a copy of the configured operating system, software, user accounts, databases, connection information, and other data for your system. You can use a specialized virtual image as a backup of your system at a particular point in time. If you need to recover after a catastrophic failure, or you just need to roll back the virtual machine, you can restore your virtual machine from this image.
 
 If you use a specialized image to create a new virtual machine, the new virtual machine will retain all of the data (including the host name, user accounts, and other settings) from the image.
 
-## Where are virtual machine images stored?
+## Storage of disk images
 
-You can store the VHDs for a virtual machine image in the following locations:
-
-- In an Azure managed disk account.
-- In blob storage in your own Azure storage account (an unmanaged disk).
-
-Both types of account store a VHD as a page blob. A managed disk account provides improved availability, and a more predictable performance than an unmanaged disk. Additionally, a managed disk can have a bigger size and fewer resource limits than an unmanaged disk. Microsoft recommends that you use managed disks, as they provide improved performance and stability over unmanaged disks.
-
-The easiest way to create a managed disk is to use the **All services** page in the Azure portal. Search for **Disks**, and select the **Disks** service.
-
-![Image of the Services page in the Azure portal](../media/2-azure-portal.png)
+A managed image resource can be created from a generalized virtual machine (VM) that is stored as either a managed disk or an unmanaged disk in a storage account. The image can then be used to create multiple VMs.
