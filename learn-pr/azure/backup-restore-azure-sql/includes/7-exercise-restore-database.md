@@ -4,7 +4,7 @@ You want to reassure yourself that you can restore a backed-up database to a spe
 
 Here, you will perform trial restores from automated Azure SQL Database backups.
 
-> [!NOTE]
+> [!IMPORTANT]
 > The first automatic backup operation must be complete before your can restore a database. Don't start this exercise until 15 minutes or so after you completed the exercise in unit 3.
 
 ## Add a new table to the database
