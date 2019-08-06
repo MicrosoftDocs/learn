@@ -21,7 +21,7 @@ quiz:
   questions:
   - content: When should you use AzCopy instead of the Azure Import/Export service?
     choices:
-    - content: To import or export small amounts of data from Azure storage when network latency isn't an issue
+    - content: To import or export small amounts of data from Azure Storage when network latency isn't an issue
       isCorrect: true
       explanation: Use AzCopy to transfer small to moderate amounts of data online across the network.
     - content:  To import or export large amounts of data
@@ -37,7 +37,7 @@ quiz:
       explanation: The Import/Export service is an offline solution. You can transfer data over a network connection using Data Box Edge or Data Box Gateway.
     - content: To use a Microsoft-supplied device instead of disks you supply
       isCorrect: false
-      explanation: Data Box Family uses Microsoft-supplied devices to transfer data from your on-premises location to Azure storage. 
-    - content: To export data from Azure storage while you're offline
+      explanation: Data Box Family uses Microsoft-supplied devices to transfer data from your on-premises location to Azure Storage. 
+    - content: To export data from Azure Storage while you're offline
       isCorrect: true
-      explanation: Data Box Family doesn't support exporting data from Azure storage. 
+      explanation: Data Box Family doesn't support exporting data from Azure Storage. 

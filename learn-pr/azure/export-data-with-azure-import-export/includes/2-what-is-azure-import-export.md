@@ -14,9 +14,9 @@ Azure Import/Export is an Azure service that's used to migrate large quantities 
 
 The Azure Import/Export service is ideally suited to situations where you must upload or download large amounts of data, but your network backbone doesn't have sufficient capacity or reliability to support large-scale transfers. You typically use this service to:
 
-- Migrate large amounts of data from on-premises to Azure, as a one-off task
+- Migrate large amounts of data from on-premises to Azure, as a one-time task
 - Back up your data on-premises in Azure Storage
-- Recover large amounts of data that you previously stored in Azure storage
+- Recover large amounts of data that you previously stored in Azure Storage
 - Distribute data from Azure Storage to customer sites
 
 ## The WAImportExport tool
