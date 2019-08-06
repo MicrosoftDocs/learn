@@ -112,7 +112,7 @@ The preceding code defines an authorization policy named `Admin`. The policy req
 
 1. In the `Configure` method of *IdentityHostingStartup.cs*, make the following highlighted changes:
 
-    [!code-csharp[](../code/Areas/Identity/IdentityHostingStartup.cs?name=snippet_ConfigureAddClaims&highlight=15)]
+    [!code-csharp[](../code/Areas/Identity/IdentityHostingStartup-Configure.cs?name=snippet_ConfigureAddClaims&highlight=15)]
 
     The preceding configures Identity to use `ClaimsPrincipalFactory` when generating the claims for the logged in user.
 
