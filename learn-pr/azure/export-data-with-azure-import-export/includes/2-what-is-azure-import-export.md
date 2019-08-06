@@ -1,8 +1,8 @@
 Azure Import/Export provides a way for organizations to export data from Azure storage to an on-premises location. The service offers a secure, reliable, and cost-effective method to export large amounts of data.
 
-You can also use Azure Import/Export to import data to Azure storage from an on-premises location. However, we recommend that you use an Azure Data Box device when you're in a region where the Azure Data Box family is supported. Importing data by using the Azure Data Box family service is easier than using Azure Import/Export.
+You can also use Azure Import/Export to import data to Azure storage from an on-premises location. However, we recommend that you use an Azure Data Box device when you're in a region where the Azure Data Box family is supported. Importing data by using one of the products in the Azure Data Box family is easier than using Azure Import/Export.
 
-When you're moving large amounts of data between locations, speed and reliability are fundamental requirements. Even the fastest networks have bandwidth limitations. If you need to transfer tens of terabytes of data between remote sites, the operation could take several days. Additionally, if the transfer fails at some point, you don't want to have to start the whole process again from the beginning. The Azure Import/Export service is designed to address these issues.
+When you're moving large amounts of data between locations, speed and reliability are fundamental requirements. Even the fastest networks have bandwidth limitations. If you need to transfer tens of terabytes (TB) of data between remote sites, the operation could take several days. Additionally, if the transfer fails at some point, you don't want to have to start the whole process again from the beginning. The Azure Import/Export service is designed to address these issues.
 
 In the film production company scenario, you need a reliable and secure way to transfer 200 TB of film footage from Azure storage to your local facility as quickly as possible. You decide to investigate using the Azure Import/Export service as a means of accomplishing this task.
 
@@ -10,7 +10,7 @@ In this unit, you'll learn more about the Azure Import/Export service. You'll al
 
 ## The Azure Import/Export service
 
-Azure Import/Export is an Azure service that's used to migrate large quantities of data between an on-premises location and an Azure storage account. By using the service, you send and receive physical disks that contain your data between your on-premises location and an Azure datacenter. You ship data using your own disk drives. These disk drives can be Serial ATA (SATA) hard-disk drives (HDDs) or solid-state drives (SSDs).
+Azure Import/Export is an Azure service that's used to migrate large quantities of data between an on-premises location and an Azure storage account. By using the service, you send and receive physical disks that contain your data between your on-premises location and an Azure datacenter. You ship data that's stored on your own disk drives. These disk drives can be Serial ATA (SATA) hard-disk drives (HDDs) or solid-state drives (SSDs).
 
 The Azure Import/Export service is ideally suited to situations where you must upload or download large amounts of data, but your network backbone doesn't have sufficient capacity or reliability to support large-scale transfers. You typically use this service to:
 
@@ -25,8 +25,8 @@ If you're importing data into Azure storage, your data must be written to disk i
 
 The WAImportExport tool performs the following tasks:
 
-- Prepares disk drives to be shipped to the Azure datacenter. WAImportExport formats the drive and checks it for errors before data is copied to disks.
-- Encrypts the data on the drive (optional).
+- Prepares disk drives to be shipped to the Azure datacenter. WAImportExport formats the drive and checks it for errors before data is copied to the disks.
+- Encrypts the data on the drive.
 - Quickly scans the data and determines how many physical drives are required to hold the data being transferred.
 - Creates the journal files that are used for import and export operations.
 A journal file contains information about the drive serial number, encryption key, and storage account. Each drive you prepare with the Azure Import/Export tool has a single journal file.
@@ -34,7 +34,7 @@ A journal file contains information about the drive serial number, encryption ke
 There are two versions of this tool:
 
 - Version 1 supports import or export of data to or from Azure Blob Storage.
-- Version 2 supports import of data into Azure files.
+- Version 2 supports import of data into Azure Files.
 
 Download the appropriate version of WAImportExport from the Microsoft Download Center. The WAImportExport tool is compatible only with 64-bit Windows operating systems.
 

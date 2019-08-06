@@ -21,16 +21,16 @@ quiz:
   questions:
   - content: What does the Azure Import/Export service do?
     choices:
-    - content: Migrate large amounts of data between on-premises storage and Azure by using disks supplied by Microsoft
+    - content: Migrates large amounts of data between on-premises storage and Azure by using disks supplied by Microsoft
       isCorrect: false
       explanation: You supply the disks when you use Azure Import/Export.
-    - content: Transfer large amounts of data between on-premises storage and Azure by using a high-bandwidth network connection
+    - content: Transfers large amounts of data between on-premises storage and Azure by using a high-bandwidth network connection
       isCorrect: false
       explanation: Azure Import/Export is an offline solution. You transfer data by using disks that you ship to an Azure datacenter.
-    - content: Transfer large amounts of data between on-premises storage and an Azure storage account without tying up network bandwidth
+    - content: Transfers large amounts of data between on-premises storage and an Azure storage account without tying up network bandwidth
       isCorrect: true
       explanation: You send and receive physical disks holding your data between your on-premises location and an Azure datacenter.
-  - content: What is the purpose of the WAImportExport tool?
+  - content: What's the purpose of the WAImportExport tool?
     choices:
     - content: Use it to copy files to a disk to import data into Azure storage.
       isCorrect: false
