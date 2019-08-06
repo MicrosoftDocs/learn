@@ -4,11 +4,10 @@ metadata:
   title: Design for availability and recoverability in Azure
   description: Learn how to handle infrastructure and service failure, recover from the loss of data, and recover from a disaster by designing availability and recoverability into your architecture.
   ms.date: 09/24/2018
-  author: phillipgibson
-  ms.author: pgibson
+  author: jboeshart
+  ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: jaboes
 title: Design for availability and recoverability in Azure
 summary: Learn how to handle infrastructure and service failure, recover from the loss if data, and recover from a disaster by designing availability and recoverability into your architecture.
 abstract: |
