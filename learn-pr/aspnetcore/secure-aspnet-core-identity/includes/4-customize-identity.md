@@ -1,6 +1,10 @@
-## Customize the user account data
+By default, Identity represents a user with an `IdentityUser` class. One way to extend the data being captured at registration time is to create a class deriving from `IdentityUser`. In this unit, a derived class named `ContosoPetsUser` is created. `ContosoPetsUser` will contain properties to store the user's first and last name.
 
-By default, Identity represents a user with an `IdentityUser` class. One way to extend the data being captured at registration time is to create a class deriving from `IdentityUser`. UI changes are also required to collect the additional user profile information. The following steps explain the process of collecting a first and last name for the registered user.
+![derived IdentityUser class](../media/4-contosopetsuser.png)
+
+UI changes are also required to collect the additional user profile information. The following steps explain the process of collecting a first and last name for the registered user.
+
+## Customize the user account data
 
 1. Add the user registration files to the project:
 
@@ -25,7 +29,13 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
     * *Pages/Account/Register.cshtml*
     * *Pages/Account/Register.cshtml.cs*
 
-    Additionally, the *Data/ContosoPetsAuth.cs* file, which existed prior to running the preceding command, was overwritten. *ContosoPetsAuth.cs* now references the newly created `ContosoPetsUser` class. The *EnableAuthenticator* Razor Page was scaffolded, though it won't be modified until later in the module.
+    Additionally, the *Data/ContosoPetsAuth.cs* file, which existed prior to running the preceding command, was overwritten. The `ContosoPetsAuth` class declaration now references the newly created user type of `ContosoPetsUser`:
+
+    ```csharp
+    public class ContosoPetsAuth : IdentityDbContext<ContosoPetsUser>
+    ```
+
+    The *EnableAuthenticator* Razor Page was scaffolded, though it won't be modified until later in the module.
 
 1. In the `Configure` method of *IdentityHostingStartup.cs*, the call to `AddDefaultIdentity` needs to be made aware of the new Identity user type. Incorporate the following highlighted change:
 

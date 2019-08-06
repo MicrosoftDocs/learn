@@ -1,4 +1,4 @@
-An online dog toy retailer named Contoso Pets is creating an app for employees to view and manage their product catalog. You're asked to develop such a project.
+An online dog toy retailer, named Contoso Pets, is creating an app for employees to view and manage their product catalog. You're asked to develop such a project.
 
 This module explores using ASP.NET Core Identity to create login and registration capabilities, multi-factor authentication, and claims-based authorization.
 

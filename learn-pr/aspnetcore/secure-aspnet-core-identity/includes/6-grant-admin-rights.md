@@ -6,9 +6,9 @@
 
 ```csharp
 services.AddAuthorization(options =>
-                options.AddPolicy("Admin", policy =>
-                    policy.RequireAuthenticatedUser()
-                          .RequireClaim("IsAdmin", bool.TrueString)));
+    options.AddPolicy("Admin", policy =>
+        policy.RequireAuthenticatedUser()
+            .RequireClaim("IsAdmin", bool.TrueString)));
 ```
 
 The preceding code defines an authorization policy named `Admin`. The policy requires that the user is authenticated and has an `IsAdmin` claim set to `True`.
