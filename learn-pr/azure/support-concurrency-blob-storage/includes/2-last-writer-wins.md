@@ -1,4 +1,4 @@
-﻿Cloud-based storage gives organizations the flexibility to work on files globally. Using economies of scale, large amounts of storage is available at a fraction of the cost of traditional storage. Companies have to handle files being accessed concurrently when writing applications that use it.
+Cloud-based storage gives organizations the flexibility to work on files globally. Using economies of scale, large amounts of storage is available at a fraction of the cost of traditional storage. Companies have to handle files being accessed concurrently when writing applications that use it.
 
 Your company's authoring app stores data in Blob Storage. The app was written when there was only one or two reporters in the team. The newsroom has dramatically increased in size, and there are now issues with work being overwritten and lost.
 
@@ -14,4 +14,4 @@ Even though there can be data lost, last writer wins can be a valid strategy in 
 
 ## Blob Storage Concurrency
 
-Multiple users accessing data at the same time will liekly cause concurrency issues when using Azure blob storage. To solve these problems, Blob storage supports two different approaches to resolving concurrency. An app can choose to resolve concurrency *optimistically*, or *pessimistically*. We'll explain these terms later in the module.
+Multiple users accessing data at the same time will likely cause concurrency issues when using Azure blob storage. To solve these problems, Blob storage supports two different approaches to resolving concurrency. An app can choose to resolve concurrency *optimistically*, or *pessimistically*. We'll explain these terms later in the module.
