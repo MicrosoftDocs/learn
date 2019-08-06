@@ -41,5 +41,3 @@ response = await client.PostAsync(serviceEndpointUrl, content);
 
 string data = await response.Content.ReadAsStringAsync();
 ```
-
-<!-- Custom vision service is GA: https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/release-notes -->
