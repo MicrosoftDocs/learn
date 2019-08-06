@@ -117,14 +117,14 @@ Identify the subtasks of *Improve the performance of an API by adding a caching 
 
 - This module uses caching as a vehicle for introducing policy more generally. The prerequistes only assume the most basic of knowledge around publishing an API in APIM.
 - Policy expressions are not covered in this module.
-- Use zipdeploy to quickly deploy to app service instead of doing the git dance. See https://docs.microsoft.com/en-us/learn/modules/instrument-web-app-code-with-application-insights/5-instrument-the-application for an example.
+- Use zipdeploy to quickly deploy to app service instead of doing the git dance. See https://docs.microsoft.com/learn/modules/instrument-web-app-code-with-application-insights/5-instrument-the-application for an example.
 - The sample code should be an ASP.NET Core web api and should use Swashbuckle/Swagger to publish an OpenAPI spec that can then be consumed in APIM. At least one operation on the API should be interesting enough to showcase the capabilities of APIM caching policies (varying by param, etc.)
 
 Reference links:
 
-- [What is API Management?](https://docs.microsoft.com/en-us/azure/api-management/api-management-key-concepts)
-- [Policies in Azure API Management](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-policies)
-- [How to set or edit Azure API Management policies](https://docs.microsoft.com/en-us/azure/api-management/set-edit-policies)
-- [API Management caching policies](https://docs.microsoft.com/en-us/azure/api-management/api-management-caching-policies)
-- [Add caching to improve performance in Azure API Management](https://docs.microsoft.com/en-us/azure/api-management/api-management-howto-cache)
-- [API Management policies reference index](https://docs.microsoft.com/en-us/azure/api-management/api-management-policies)
+- [What is API Management?](https://docs.microsoft.com/azure/api-management/api-management-key-concepts)
+- [Policies in Azure API Management](https://docs.microsoft.com/azure/api-management/api-management-howto-policies)
+- [How to set or edit Azure API Management policies](https://docs.microsoft.com/azure/api-management/set-edit-policies)
+- [API Management caching policies](https://docs.microsoft.com/azure/api-management/api-management-caching-policies)
+- [Add caching to improve performance in Azure API Management](https://docs.microsoft.com/azure/api-management/api-management-howto-cache)
+- [API Management policies reference index](https://docs.microsoft.com/azure/api-management/api-management-policies)
