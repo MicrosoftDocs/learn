@@ -1,3 +1,5 @@
+<!-- TODO: Intro text -->
+
 ## Add Identity to the project
 
 1. Install the ASP.NET Core code scaffolder:

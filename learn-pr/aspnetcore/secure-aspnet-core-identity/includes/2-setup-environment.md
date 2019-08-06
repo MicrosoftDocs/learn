@@ -43,21 +43,15 @@ The app consists of a single ASP.NET Core Razor Pages project named *ContosoPets
 
 Your stakeholders have defined the following business requirements:
 
-<!-- * General Data Protection Regulation (GDPR) requirements should be met with regards to data retention and protection. -->
-<!-- * There are three types of users for the system: anonymous, customers, and administrators. Customers and administrators must register. -->
-* There are two types of users for the system: anonymous and administrators.
-* Administrative rights are reserved for Contoso Pets employees.
-* Administrators must logged in to manage product data.
-* Support logging in with two-factor authentication.
+* There are three types of authenticated users for the system: employees and administrators.
+* The identity solution must support logging in with two-factor authentication.
 * Anonymous users can only view the product catalog.
-<!-- * Customers can access their order history. -->
-* Administrators can modify products, but can't view order history for privacy reasons.
+* Administrators can modify products.
 
 Your team makes the following technical decisions:
 
 * The database tables supporting Identity should reside in an `auth` schema.
-<!-- * Each record in the existing `Customers` table should be associated with an account. -->
-* Administrators will self-enroll using a single-use token created by an existing administrator.
+* Administrators will self-enroll using a single-use token.
 
 <!-- TODO: add the database diagram showing existing tables -->
 

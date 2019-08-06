@@ -1,3 +1,5 @@
+<!-- TODO: Introduction text that explains the need to create a ClaimsPrincipalFactory -->
+
 ## Grant administrative rights to a user
 
 1. In the `ConfigureServices` method of *Startup.cs*, replace the `// Add call to AddAuthorization` comment with the following code:
@@ -73,13 +75,15 @@ The preceding code defines an authorization policy named `Admin`. The policy req
         using Microsoft.AspNetCore.Authorization;
         ```
 
-1. Do claims stuff:
+1. Execute the following command to create an empty file named *Areas/Identity/ClaimsPrincipalFactory.cs*:
 
-    [!code-csharp[](../code/Areas/Identity/IdentityHostingStartup.cs?name=snippet_ConfigureAddClaims&highlight=15)]
+    ```bash
+    touch ./Areas/Identity/ClaimsPrincipalFactory.cs
+    ```
 
-1. touch ClaimsPrincipalFactory.cs
+1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)] 
 
-1. Give it code:
+1. Populate *Areas/Identity/ClaimsPrincipalFactory.cs* with the following code:
 
     ```csharp
     using ContosoPets.Ui.Areas.Identity.Data;
@@ -106,7 +110,83 @@ The preceding code defines an authorization policy named `Admin`. The policy req
     }
     ```
 
-1. Make Account pages changes
-    1. Register.cshtml.cs
-    1. Register.cshtml
-    1. ContosoPetsUser.cs
+1. In the `Configure` method of *IdentityHostingStartup.cs*, make the following highlighted changes:
+
+    [!code-csharp[](../code/Areas/Identity/IdentityHostingStartup.cs?name=snippet_ConfigureAddClaims&highlight=15)]
+
+    The preceding configures Identity to use `ClaimsPrincipalFactory` when generating the claims for the logged in user.
+
+1. Modify the registration page to allow administrators to register using the following steps:
+    1. In *Areas/Identity/Pages/Account/Register.cshtml.cs*, add the following property to the `InputModel` class:
+
+        ```csharp
+        [DataType(DataType.Password)]
+        [Display(Name = "Admin creation key")]
+        public long? AdminCreationKey { get; set; }
+        ```
+
+    1. In that same file, make the highlighted change to `OnPostAsync`:
+
+    ```csharp
+    // TODO: This needs to be a snippet, highlight IsAdmin
+    var user = new ContosoPetsUser
+    {
+        FirstName = Input.FirstName,
+        LastName = Input.LastName,
+        UserName = Input.Email,
+        Email = Input.Email,
+        IsAdmin = (Input.AdminCreationKey == _adminService.CreationKey),
+    };
+    ```
+
+    1. In *Areas/Identity/Pages/Account/Register.cshtml.cs*, add the following:
+
+    ```cshtml
+    @* TODO: snippet, highlight AdminCreationKey *@
+    <div class="form-group">
+        <label asp-for="Input.ConfirmPassword"></label>
+        <input asp-for="Input.ConfirmPassword" class="form-control" />
+        <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Input.AdminCreationKey"></label>
+        <input asp-for="Input.AdminCreationKey" class="form-control" />
+        <span asp-validation-for="Input.AdminCreationKey" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+    ```
+
+    1. In *Areas/Identity/Data/ContosoUser.cs*, add the following property:
+
+    ```csharp
+    public bool IsAdmin { get; set; }
+    ```
+
+## Test admin claim
+
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
+
+1. Deploy the site by running the following command:
+
+    ```bash
+    az webapp up
+    ```
+
+1. Navigate to your app and login with an existing user, if required. Select **Products** from near the top. Note that your user is is not presented links to edit, delete, or create products.
+
+1. Attempt to navigate directly to the **Create Product** page by navigating to: `https://[web app name].azurewebsites.net/products/create`. Note that this use is forbidden from navigating to the page.
+
+1. Select **Logout**.
+
+1. Obtain an administrator self-enrollment token using the following command:
+
+    ```bash
+    echo $(wget -q -O - $webAppUrl/api/admintoken)
+    ```
+
+    > [!NOTE]
+    > This administrator self-enrollment mechanism is for illustrative purposes only and should not be used in production environments.
+
+1. In the web app, register a new user, using the token from the previous step for the **Admin creation key** field.
+
+1. Once logged in with the new administrative user, note that the administrative user can view, edit, and create products.

@@ -297,6 +297,9 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
 1. Select **Register** and use the newly modified form to register a new user.
 
+    > [!NOTE]
+    > The validation constraints on the **First Name** and **Last Name** fields reflect the annotations on the `FirstName` and `LastName` properties of `InputModel`.
+
 1. Run the following command to confirm that the first and last name are stored in the database:
 
     ::: zone pivot="pg"
@@ -338,5 +341,15 @@ By default, Identity represents a user with an `IdentityUser` class. One way to 
 
     ::: zone-end
 
-<!-- TODO maybe -->
-<!-- ## Login as first user, update FName, LName -->
+## Test the changes to the profile management form
+
+1. In the browser with your web app, select **Logout**.
+
+1. Log in with the first user you created.
+
+1. Click the **Hello, !** link to navigate to the profile management form.
+
+    > [!NOTE]
+    > The link doesn't display correctly because there aren't yet any values for `FirstName` or `LastName` for this user.
+
+1. Enter valid values for **First Name** and **Last Name** and then select **Save**.
