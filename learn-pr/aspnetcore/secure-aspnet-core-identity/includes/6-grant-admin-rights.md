@@ -45,7 +45,7 @@ The preceding code defines an authorization policy named `Admin`. The policy req
 
 1. In *Pages/Products/Index.cshtml*, update the **Edit**, **Delete**, and **Add Product** links with the highlighted code:
 
-    [!code-cshtml[](../code/Pages/Products/Index.cshtml?name=snippet_ModelIsAdmin&highlight=2-3,6)
+    [!code-cshtml[](../code/Pages/Products/Index.cshtml?name=snippet_ModelIsAdmin&highlight=2-3,6)]
 
     [!code-cshtml[](../code/Pages/Products/Index.cshtml?name=snippet_AddProductLink&highlight=1-2,4)]
 
