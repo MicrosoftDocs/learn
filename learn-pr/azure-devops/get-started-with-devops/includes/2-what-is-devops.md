@@ -8,7 +8,7 @@ Mara's value stream map is still on the whiteboard from their previous meeting:
 
 ![A whiteboard showing the value stream map](../media/2-vsm-whiteboard1.png)
 
-**Mara**: Our value stream map shows where we lose efficiency in delivering value to our end-users. Just like everyone else, we can improve. And we can decide which areas to tackle first.
+**Mara**: Our value stream map shows where we lose efficiency in delivering value to our end users. Just like everyone else, we can improve. And we can decide which areas to tackle first.
 
 **Andy**: This shows us where we have problems but not what to do about them.
 
@@ -30,7 +30,7 @@ Mara's value stream map is still on the whiteboard from their previous meeting:
 
 **Mara**: Here's the definition I like to use:
 
-> _DevOps is the union of people, process, and products to enable continuous delivery of value to our end-users._
+> _DevOps is the union of people, process, and products to enable continuous delivery of value to our end users._
 
 Our goal is to give our customers games they'll love. We do that by working together with a shared set of practices and tools.
 
