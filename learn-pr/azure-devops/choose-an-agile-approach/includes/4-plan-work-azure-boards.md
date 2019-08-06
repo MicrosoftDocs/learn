@@ -64,7 +64,7 @@ Although Mara and her team identified a number of issues, here you'll add the th
 
 1. In the **To Do** column, select the green **+** button next to the **New item** field.
 1. Enter **Stabilize the build server** and then press <kbd>Enter</kbd>.
-1. Select the ellipses (**...**), and then select **Open**.
+1. Select the ellipsis (**...**), and then select **Open**.
 1. In the **Description** field, enter this text:
 
     > The build server keeps falling over. The OS, Ubuntu 16.04, requires security patches and updates. It's also a challenge to keep build tools and other software up to date.
