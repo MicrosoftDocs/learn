@@ -4,7 +4,7 @@ In the previous unit, you configured peering connections between the virtual net
 
 Remember, peering connections are nontransitive. Intermediate virtual networks don't allow connectivity to flow through them to connected virtual networks. **SalesVNet** can communicate with **MarketingVNet**. **ResearchVNet** can communicate with **MarketingVNet**. **MarketingVNet** can communicate with both **SalesVNet** and **ResearchVNet**. The only communication that's not permitted is between **SalesVNet** and **ResearchVNet**. Even though **SalesVNet** and **ResearchVNet** are both connected to **MarketingVNet**, they can't communicate with each other because they're not directly peered to each other.
 
-Let's confirm the connectivity across the peering connections. To do this, you'll first create a connection from Azure Cloud Shell to a target VM's *public* IP address. Then you'll connect from the target to the destination VM by using the destination's *private* IP address.
+Let's confirm the connectivity across the peering connections. To do this, you'll first create a connection from Azure Cloud Shell to a target VM's *public* IP address. Then you'll connect from the target VM to the destination VM by using the destination VM's *private* IP address.
 
 > [!IMPORTANT]
 > To test the virtual network peering connection, connect to the private IP address assigned to each VM.
