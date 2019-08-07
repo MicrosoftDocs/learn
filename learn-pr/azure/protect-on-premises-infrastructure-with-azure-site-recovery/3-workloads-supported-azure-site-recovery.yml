@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.3-workloads-supported-azure-site-recovery
+metadata:
+  title: Workloads supported for protection with Azure Site Recovery
+  description: Explore the application-level protection you can take advantage of to protect your companies different workloads.
+  ms.date: 08/01/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Workloads supported for protection with Azure Site Recovery
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-workloads-supported-azure-site-recovery.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which of the following features of Site Recovery aide application workloads in a seamless failover?
+    choices:
+    - content: App consistent snapshots, Near synchronous replication, SQL AlwaysOn integration
+      isCorrect: true
+      explanation: All three are features within Site Recovery that aide application workloads with failover
+    - content: App consistent snapshots, Flexible recovery plans, Database mirroring
+      isCorrect: false
+      explanation: Database mirroring is a feature of SQL AlwaysOn, not Site Recovery specifically
+    - content: Asynchronous replication, SQL AlwaysOn integration, Database mirroring
+      isCorrect: false
+      explanation: Neither asynchronous replication or Database mirroring are features of Site Recovery
+  - content: How does IIS in particular benefit from application replication?
+    choices: 
+    - content: IIS virtual directory replication, Load balanced site traffic, Script integration
+      isCorrect: false
+      explanation: Neither IIS virtual directory replication or Load balance site traffic are features of Site Recovery, Script integration is however.
+    - content: One click failover, Script integration, Network mapping
+      isCorrect: true
+      explanation: All of the above are features of Site Recovery that support application replication
+    - content: Manual failover and failback only, DHCP network address backup, One click failover
+      isCorrect: false
+      explanation: Manual failover/failback and DHCP network address backup are not features of Site Recovery, One click failover is however
