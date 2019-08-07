@@ -18,7 +18,7 @@ For clarity, let's break these workflow stages out into discrete steps:
 
 If you plan to order Data Box Heavy, make sure that it will fit through the entrance of your premises, and that you have at least two people to handle it. It's a massive device that weighs around 500 lbs and that arrives on wheels.
 
-We'll cover the specific steps to use Azure Data Box Disks later in this unit.
+We'll cover the specific steps to use Azure Data Box Disk later in this unit.
 
 ### Copy data using standard tools
 
@@ -56,7 +56,7 @@ For your vehicle data, you'd follow these steps to order a Data Box Disk to impo
 
 1. **Set up and copy data to the device**
    - For the autonomous vehicle scenario, we recommend that you connect the disks directly to the onboard Linux or Windows computer in the car. With Azure Data Box Disk, you can connect multiple disks simultaneously and run multiple copy jobs in parallel.
-   - Azure Data Box Disk supports Azure Block Blob, Azure Page Blob, Azure Files, and Managed Disks storage types for upload to Azure. The disks come with a predefined folder structure, based on the storage type. Copy data into the appropriate folder for your storage type: PageBlob, BlockBlob, AzureFile, or ManagedDisk.
+   - Azure Data Box Disk supports Azure block blob, Azure page blob, Azure Files, and Azure Managed Disks storage types for upload to Azure. The disks come with a predefined folder structure, based on the storage type. Copy data into the appropriate folder for your storage type: PageBlob, BlockBlob, AzureFile, or ManagedDisk.
    - Validate the files by running DataBoxDiskValidation.cmd, which is provided in the DataBoxDiskImport folder. Select option 1 to validate the files. If you have time, we recommend that you generate checksums by selecting option 2. Generating a checksum may take some time, depending on the data size.
    - The first three days are billed as a single day, as a grace period, with one-off shipping and order processing fees. After the first three days, there's a per-day cost for each SSD.
 
