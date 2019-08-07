@@ -31,7 +31,7 @@ With ExpressRoute, you can obtain speeds of up to 10 Gbps when connecting to the
 
 ### Availability and connectivity
 
-Microsoft guarantees a minimum of 99.95% availability for an ExpressRoute dedicated circuit.
+Microsoft guarantees a minimum of 99.95 percent availability for an ExpressRoute dedicated circuit.
 
 With ExpressRoute enabled, you can connect to Microsoft through one of several peering connections and have access to regions within the same geopolitical region. For example, if you connect to Microsoft through ExpressRoute in France, you'll have access to all Microsoft services hosted in Western Europe.
 

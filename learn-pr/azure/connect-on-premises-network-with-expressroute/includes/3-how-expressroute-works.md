@@ -1,4 +1,4 @@
-You've learned about the purpose of Azure ExpressRoute service, and the services for which you can use it. Now you're ready to start learning about how the service works. You'll see how it interacts with Azure and on-premises networks to help create a secure and reliable connection between your on-premises datacenter and the Microsoft cloud.
+You've learned about the purpose of the Azure ExpressRoute service, and the services for which you can use it. Now you're ready to start learning about how the service works. You'll see how it interacts with Azure and on-premises networks to help create a secure and reliable connection between your on-premises datacenter and the Microsoft cloud.
 
 In this unit, you'll learn how to create and use Azure circuits to connect your on-premises networks to the cloud. You'll see the steps that you need to take to create a circuit. You'll also learn about the other components of an ExpressRoute connection, which work together to form a connection from your on-premises datacenter to the Microsoft cloud.
 
@@ -114,7 +114,7 @@ If you're using the Azure portal, you connect a peering to a virtual network gat
 
 In each ExpressRoute circuit, there are two connections from the connectivity provider to two different Microsoft edge routers. This configuration occurs automatically. It provides a degree of availability within a single location.
 
-Consider setting up ExpressRoute circuits in different peering locations to provide high availability and protect against a regional outage. For example, you might create circuits in the US East and US Central regions and connect these circuits to your virtual network. This way, if one ExpressRoute circuit goes down, you won't lose connectivity to your resource and you can fail over the connection to another ExpressRoute circuit.
+Consider setting up ExpressRoute circuits in different peering locations to provide high availability and help protect against a regional outage. For example, you might create circuits in the US East and US Central regions and connect these circuits to your virtual network. This way, if one ExpressRoute circuit goes down, you won't lose connectivity to your resource and you can fail over the connection to another ExpressRoute circuit.
 
 You can also have multiple circuits across different providers to ensure that your network stays available even if an outage affects all circuits from a single approved provider. You can set the **Connection Weight** property to prefer one circuit to another.
 
