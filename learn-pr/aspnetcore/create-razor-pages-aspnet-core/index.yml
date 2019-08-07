@@ -21,7 +21,6 @@ abstract: |
   - Deploy & Test
 prerequisites: |
   - A basic understanding of C#.
-  - At least an introductory experience with ASP.NET 4.x or ASP.NET Core.
   - Knowledge of HTML.
   - Knowledge of RESTful services and HTTP action verbs.
 levels:
