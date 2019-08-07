@@ -4,7 +4,6 @@ The .NET Core CLI is the simplest way to create, build, and run an ASP.NET Core 
 
 ## Run the Razor Pages project and explore its UI
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
 
 ### Build and run the *:::no-loc text="ContosoPets.UI":::* project
 
