@@ -1,4 +1,4 @@
-As the administrator for the autonomous vehicle company, you need an easy, secure, and relatively inexpensive way to regularly import the enormous amounts of telemetry data that your vehicles generate every day. But you can't dedicate your entire network bandwidth to the task. You decide to look at Azure Data Box family, a family of physical and virtual devices that aims to solve this type of problem. Each device is designed to meet the slightly different needs and priorities of customers looking for a solution in this space.
+As the administrator for the autonomous vehicle company, you need an easy, secure, and relatively inexpensive way to regularly import the enormous amounts of telemetry data that your vehicles generate every day. But you can't dedicate your entire network bandwidth to the task. You decide to look at the Azure Data Box family, a cluster of physical and virtual devices that aims to solve this type of problem. Each device is designed to meet the slightly different needs and priorities of customers looking for a solution in this space.
 
 In this unit, you'll learn about the five products in the Azure Data Box family.
 

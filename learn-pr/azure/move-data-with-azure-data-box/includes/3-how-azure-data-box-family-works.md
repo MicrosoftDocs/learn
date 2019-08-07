@@ -1,14 +1,14 @@
-After looking at the options for moving data, you decide that Azure Data Box Disk is the best choice. You don't need to dedicate your entire network bandwidth to the task of importing your data to Azure. As the administrator for your organization, you need to better understand the overall workflow involved in getting the data into Azure.
+After looking at the options for moving data, you decide that Azure Data Box Disk is the best choice. You don't want to dedicate your entire network bandwidth to the task of importing your data to Azure. As the administrator for your organization, you need to better understand the overall workflow involved in getting the data into Azure.
 
 In this unit, you'll learn how to use Azure Data Box Disk and the other devices in the Azure Data Box family.
 
 ## Azure Data Box family workflow
 
-The following diagram shows the high-level steps you take when you order a device from the Azure Data Box family.
+The following diagram shows the high-level steps you take when you order a device from the Azure Data Box family:
 
 ![Diagram that shows the high-level Azure Data Box workflow](../media/3-import-azure-data-box-process.png)
 
-When you decide to use an Azure Data Box device, you complete the following high-level steps:
+For clarity, let's break these out into discrete steps:
 
 1. Create an order in the Azure portal.
 1. Receive the device from the Azure datacenter. Connect to and unlock the device.
@@ -18,7 +18,7 @@ When you decide to use an Azure Data Box device, you complete the following high
 
 If you plan to order Data Box Heavy, make sure that it will fit through the entrance of your premises, and that you have at least two people to handle it. It's a massive device that weighs around 500 lbs and that arrives on wheels.
 
-We'll cover the specific steps to use Azure Data Box disks later in this unit.
+We'll cover the specific steps to use Azure Data Box Disks later in this unit.
 
 ### Copy data using standard tools
 
@@ -26,7 +26,7 @@ You can copy data by using standard tools. For example, drag and drop files with
 
 ### Use Azure Storage file-naming conventions and size limits
 
-When you copy data, all the standard Azure Storage naming conventions apply.
+When you copy data, all the standard Azure Storage naming conventions apply:
 
 -  Subfolder names should be lowercase, between 3 and 63 characters, and consist only of letters, numbers, and hyphens. Consecutive hyphens aren't allowed.
 - Directory and file names for Azure Files shouldn't exceed 255 characters.
