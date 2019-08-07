@@ -50,7 +50,7 @@ Now that your finished *:::no-loc text="ContosoPets.UI":::* application has been
 
 ```bash
     echo $webAppURL
-```
+    ```
 
 1. Click on the resulting URL in the command shell to view the running web application in your local default browser.
 
