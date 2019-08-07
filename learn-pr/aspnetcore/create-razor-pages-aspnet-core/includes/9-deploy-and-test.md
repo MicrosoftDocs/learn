@@ -25,7 +25,7 @@ The preceding command rebuilds your *:::no-loc text="ContosoPets.UI":::* applica
 1. Run the following command in the command shell:
 
 ```bash
-    az webapp up
+az webapp up
 ```
 
 The preceding command runs a script created specifically for the purpose of provisioning a public endpoint for this project. Be patient as it may take several minutes.
