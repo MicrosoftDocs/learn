@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Create a web UI with ASP.NET Core
-summary: ASP.NET Core supports creating webpages using Razor, an HTML template engine in ASP.NET Core. In this module, you'll learn how to create web pages using Razor with ASP.NET Core and .NET Core.
+summary: ASP.NET Core supports creating webpages using a built-in templating engine called Razor. In this module, you'll learn how to create webpages using Razor with ASP.NET Core.
 abstract: | 
   In this module, you will:
   - Understand when and why to use Razor Pages for your ASP.NET Core application.
