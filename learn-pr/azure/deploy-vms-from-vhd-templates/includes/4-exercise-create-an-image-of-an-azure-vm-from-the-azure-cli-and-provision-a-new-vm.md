@@ -16,7 +16,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
     az vm create \
         --name MyWindowsVM \
         --resource-group <rgn>[Sandbox resource group name]</rgn> \
-        --image Win2012R2Datacenter \
+        --image Win2019Datacenter \
         --admin-username azureuser
 
     az vm open-port \
@@ -118,15 +118,13 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
     ![Screenshot RDP Connection dialog box](../media/4-rdp-proceed.png)
 
-1. On the virtual machine, click the Windows button in the bottom left-hand corner of the screen.
+1. On the virtual machine, click the Search button in the bottom left-hand corner of the screen.
 
-    ![The Windows button in the Windows taskbar](../media/4-windows-taskbar.png)
+    ![The Search button in the Windows taskbar](../media/4-windows-taskbar.png)
 
-1. On the **Start** page, click the down arrow.
+1. In the **Type here to search** box, type **Command Prompt**, but *don't* press Enter.
 
-    ![The Windows Start page](../media/4-windows-start-page.png)
-
-1. Right-click **Command Prompt**, and then click **Run as administrator**.
+1. In the **Best match** window, right-click the **Command Prompt** app, and then click **Run as administrator**.
 
     ![Opening the Windows Command Prompt as Administrator](../media/4-open-command-prompt.png)
 
