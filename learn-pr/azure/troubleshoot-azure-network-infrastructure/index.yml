@@ -26,7 +26,6 @@ products:
 - azure
 units:
 - learn.troubleshoot-azure-network-infrastructure.1-introduction
-- learn.troubleshoot-azure-network-infrastructure.2-troubleshoot-with-network-watcher
 - learn.troubleshoot-azure-network-infrastructure.2-troubleshoot-networking-using-network-watcher
 - learn.troubleshoot-azure-network-infrastructure.3-exercise-troubleshoot-with-network-watcher
 - learn.troubleshoot-azure-network-infrastructure.3-exercise-troubleshoot-networking-using-network-watcher

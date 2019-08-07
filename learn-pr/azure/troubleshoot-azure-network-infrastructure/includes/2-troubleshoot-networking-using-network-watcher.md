@@ -1,99 +1,138 @@
-Network Watcher includes several tools that you can use to monitor your virtual networks and VMs.
+Network Watcher includes several tools that you can use to monitor your virtual networks and Virtual Machines (VMs). To effectively make use of Network Watcher, it's important to understand all the available tooling options and the purpose of each tool.
 
 In your engineering company, you want to enable your staff to choose the right Network Watcher tool for each troubleshooting task. To complete this task, they need to understand the all the options available and the kinds of problems each tool can solve.
 
-In this module, you will look at Azure Network Watcher monitoring and diagnostic tools such as connection monitor, IP flow verify, next hop, packet capture, connection troubleshoot and effective security rules. We will also look at some use case scenarios for the tools towards the end of the module. 
+Here, we'll look at the Network Watcher tool categories, the tools in each category, and how each tool is applied using example use cases.
 
-## Networking Watcher monitoring tools
+## What is Network Watcher?
 
-Network Watcher is an Azure service that brings together a combination of tools in a central place to diagnose the health of Azure networking. In your Azure environments, it can also help analyze usage and act as a central logging center for Azure network resources. Network diagnostic and visualization tools available with Network Watcher help you understand, diagnose, and gain insights into your network in Azure.
+Network Watcher is an Azure service that brings together a combination of tools in a central place to diagnose the health of Azure networking. The Network Watcher tools are divided into two categories:
 
-Azure Network Watcher gives you a centralized hub for identifying network glitches, CPU spikes, connectivity problems, memory leaks, and other issues before they impact your business. There are different tools available to use and each tool has a unique purpose:
+- Monitoring tools
+- Diagnostics tools
 
-### Topology
+With tools to monitor for and diagnose problems, Network Watcher gives you a centralized hub for identifying network glitches, CPU spikes, connectivity problems, memory leaks, and other issues before they impact your business.
 
-The topology tool displays your virtual network (VNet), its resources, its interconnections, and their relationships with each other. You can use the tool to visualize your infrastructure. A good understanding of this infrastructure is the first step in any troubleshooting task.
+## Network Watcher monitoring tools
 
-To view the topology in your Azure network:
+Network Watchers provides us with three monitoring tools:
 
-1. In the Azure portal, navigate to **All Services > Networking > Network Watcher**.
-1. Select **Topology**. To generate the topology, requires a Network Watcher in the same region as the virtual network.
-1. Select a subscription, the resource group of a virtual network, and then select the virtual network itself. In the following screenshot, a topology is shown for a virtual network named *MyVNet*:
+- Topology
+- Connection Monitor
+- Network Performance Monitor
 
-    ![Virtual network topology as shown in Network Watcher](../media/network-watcher-topology.png)
+Let's look at each of these tools in turn.
 
-### Connection Monitor
+### What is the Topology tool?
 
-The connection monitor tool provides a way to check that connections work between Azure resources. This tool helps to identify latency between resources and catch changes that will impact connectivity, such as changes to the network configuration or Network Security Group (NSG) rule changes. It can probe VMs at regular intervals to look for failures or changes. If there is an issue, it tells you why it occurred and how to fix it. Connection monitor often serves to monitor network communication between two infrastructure-as-a-service (IaaS) VMs, but it can also monitor an IP address or fully qualified domain name (FQDN).
+The Topology tool generates a graphical display of your Microsoft Azure Virtual Network (VNet), its resources, its interconnections, and their relationships with each other.
 
-### Network Performance Monitor
+Suppose you have to troubleshoot a VNet created by your colleagues. Unless you were involved in the creation process of network, you might not know about all the aspects of the created infrastructure. You can use the Topology tool to visualize and understand the infrastructure you're dealing with, before you start troubleshooting.
+
+We use the Azure portal to view the topology of an Azure network. In the Azure portal, we'll:
+
+1. Navigate to **All Services > Networking > Network Watcher**.
+1. Select **Topology**.
+1. Select a subscription, the resource group of a virtual network, and then select the virtual network itself.
+
+> [!NOTE]
+> To generate the topology, you need a Network Watcher in the same region as the virtual network.
+
+Here's an example of a topology generated for a virtual network named MyVNet:
+
+![Virtual network topology as shown in Network Watcher](../media/network-watcher-topology.png)
+
+### What is the Connection Monitor tool?
+
+The Connection Monitor tool provides a way to check that connections work between Azure resources. 
+
+Use this tool to check that two VMs can communicate, if you want them to. This tool also measures the latency between resources and can catch changes that will impact connectivity, such as changes to the network configuration or Network Security Group (NSG) rule changes. It can probe VMs at regular intervals to look for failures or changes. 
+
+If there is an issue, Connection Monitor tells you why it occurred and how to fix it. As well as monitoring VMs, Connection Monitor can also examine an IP address or fully qualified domain name (FQDN).
+
+### What is the Network Performance Monitor tool?
 
 The Network Performance Monitor (NPM) tool gives you the ability to track and alert on latency and packet drops over time. It enables you to have a centralized view of your network. 
 
-To monitor your hybrid connections using NPM, ensure that the associated workspace is in a supported region. NPM can monitor connectivity between networks and applications in any part of the world, from a workspace that is hosted in one of the following regions:
+When you decide to monitor your hybrid connections using NPM, check that the associated workspace is in a supported region. 
 
-- West Europe
-- West Central US
-- East US
-- East Japan
-- South East Asia
-- South East Australia
-- South UK
-- US Government Virginia
-
-NPM allows you to  monitor endpoint to endpoint connectivity:
+NPM allows you to  monitor endpoint-to-endpoint connectivity:
 
 - Between branches and data centers.
 - Between VNets.
-- For your on-premises and cloud connections.
+- For your on-premises to cloud connections.
 - For express route circuits.
 
 ## Network Watcher diagnostic tools
 
-The Network Monitor tools that you can use to diagnose connectivity and performance issues include:
+Network Watcher includes seven diagnostic tools:
 
-### IP flow verify
+- IP flow verify
+- Next hop
+- Effective security rules
+- Effective route
+- Packet capture
+- Connection troubleshoot
+- VPN troubleshoot
 
-This tool uses a 5-tuple packet parameter-based verification mechanism to detect whether packets inbound or outbound are allowed or denied from a VM. Within the tool, you specify a local and remote port, TCP/UDP, the local IP, the remote IP, the VM, and the VM's network card. IP flow verify will also tell you if an NSG rule is denying traffic.
+Let's examine each tool and find out how they can help us to solve problems.
 
-### Next hop
+### What is the IP flow verify tool?
 
-This tool determines the next hop for packets routed in the Azure network topology. Next hop can help identify routing problems. When you run the tool, it returns the next hop in the route. With this tool, you specify a VM to run it from and a destination IP address. The tool specifies the next hop type, such as the internet, VNet, VNet peering, or Microsoft Edge. This information helps discover traffic that is not routing to the correct place.
+The IP flow verify tool tells you if packets are allowed or denied to a specific virtual machine. If a packet is denied by a network security group, the tool also tells you the name of that group, so you can fix the problem.
 
-### Effective security rules
+This tool uses a 5-tuple packet parameter-based verification mechanism to detect whether packets inbound or outbound are allowed or denied from a VM. Within the tool, you specify a local and remote port, TCP/UDP, the local IP, the remote IP, the VM, and the VM's network card. 
 
-This tool enables you to view the network security groups that are associated with the chosen interface. You can view inbound and outbound rules. This tool comes in handy as your infrastructure grows and you have to view more than one rule or route.
+### What is the next hop tool?
 
-### Effective route
+When a VM sends a packet to a destination, it might take multiple hops in its journey. For example, if the destination is a VM in a different VNet, then the next hop might be the VNet gateway, which routes the packet to the destination VM. Other possible next hops include the internet, a virtual appliance, or Microsoft Edge.
 
-The effective routes for each network interface attached to a VM are a combination of route tables that have been manually created, Azure's default routes, and any routes propagated from on-premises networks through Border Gateway Protocol (BGP). Understanding the effective routes for a network interface is helpful when troubleshooting routing problems. You can view the effective routes for any network interface that is attached to a running VM. When outbound traffic is sent from a subnet, Azure selects a route based on the destination IP address. It uses the longest prefix match algorithm. For example, suppose a route table has two routes: 
-     
-- One route specifies the 10.0.0.0/24 address prefix
-- The other route specifies the 10.0.0.0/16 address prefix.
-   
-Azure routes traffic destined for 10.0.0.5, to the next hop type specified in the route with the 10.0.0.0/24 address prefix, because 10.0.0.0/24 is a longer prefix than 10.0.0.0/16. Azure picks this route even though 10.0.0.5 is within both address prefixes. 
+With the next hop tool, you can determine how a packet gets from a VM to any destination. You specify the source VM, source NIC, source IP address, and destination IP address and the tool determines where the packet is sent. You can use this tool to diagnose problems caused by incorrect routing tables.
 
-The route table consists of: 
+### What is the security group view tool?
 
--	**System routes**. Azure automatically creates system routes and assigns the routes to each subnet in a virtual network. You can't create or remove system routes but you can override some system routes with custom routes.
-- **Custom routes**. You create custom routes by exchanging border gateway protocol (BGP) routes between your on-premises network gateway and an Azure network.
-- **User-defined routes**. You can create user-defined routes in Azure to override Azure's default system routes, or to add additional routes to a subnet's route table. In Azure, you create a route table, then associate the route table virtual network subnets.
+Network Security Groups (NSGs) are used in Azure networking like firewalls to filter packets based on their source and destination IP address and port numbers. They are a vital tool, which you use to ensure security by carefully controlling the surface area of the VMs that users can connect to. However, they are a frequent source of networking problems, because a mistakenly configured NSG rule can prevent legitimate communication.
 
-### Packet capture
+If two VMs cannot communicate because an NSG rule blocks them, it can be difficult to diagnose which rule is causing the problem. The security group view tool in Network Watcher addresses this challenge by displaying effective rules.
 
-This tool allows you to capture incoming and outgoing network traffic packets for a VM. You can also automate remote packet capture with triggers to actively capture traffic. 
+To use the tool, you choose a VM and its network card. The tool displays all the NSG rules that apply to that card. It's easy to determine a blocking rule by viewing this list. 
 
-The packet capture tool requires the Network Watcher Agent VM Extension to be present on the monitored VM. This extension is automatically installed when you start a packet capture session in the Azure portal.
+You can also use the tool to spot vulnerabilities for your VM caused by open ports that should be closed.
+
+### What is the packet capture tool?
+
+You can use the packet capture tool to record all of the packets sent to and from a VM of your choice. By reviewing these captures, you can diagnose anomalies, such as traffic that is not expected on a private VNet, or gather statistics about network traffic. 
+
+In order to use this tool, the VM that you select must have the packet capture VM extension installed and running. This step happens automatically, when you start a packet capture session.
 
 The default usage limit for packet capture is 100 packet capture sessions per region and the maximum limit is 10,000. These limits are for the number of sessions only, not saved captures. You can save packets captured in Azure storage or locally on your PC.
 
-### Connection troubleshoot
+### What is the connection troubleshoot tool?
 
-This tool provides the capability to detect connectivity issues on a TCP or ICMP connection from a VM to a VM, URI, FQDN, or IP address. This tool helps identify if connectivity issues are a platform or a user configuration issue. It gives insight into the fault type, such as a guest firewall on a VM, NSG rule, DNS, or a user-defined route (UDR). Connection troubleshoot also displays the latency associated with each hop in a route.
+You can use the connection troubleshooter tool to check that a TCP connection can be made from a source VM to a destination VM. You can also specify a destination Fully Qualified Domain Name (FQDN), URI, or IP address. 
 
-### VPN troubleshoot
+If the connection is made successfully, information about the communication is displayed, including:
 
-This tool provides the ability to troubleshoot the virtual network gateway connections. This tool will run diagnostics on a VNet gateway connection and return a health diagnosis. The capability can be called through the portal, PowerShell, Azure CLI, or REST API. When called, Network Watcher diagnoses the health of the gateway or connection, and returns the appropriate results. The request is a long-running transaction. The results are returned once the diagnosis is completed. The table below shows a few examples of different fault types that are available.
+- The latency in milliseconds. 
+- The number of probe packets sent.
+- The number of hops in the complete route to the destination.
+
+If the connection is unsuccessful, you will see details of the fault. Fault types include:
+
+- CPU. The connection failed because of high CPU utilization.
+- Memory. The connection failed because of high memory utilization.
+- GuestFirewall. The connection was blocked by a firewall outside Azure.
+- DNSResolution. The destination IP address could not be resolved.
+- NetworkSecurityRule. The connection was blocked by an NSG.
+- UserDefinedRoute. There is an incorrect user route in a routing table.
+
+### What is the VPN troubleshoot tool?
+
+You can use the VPN troubleshoot tool diagnose problems with VNet gateway connections. This tool will run diagnostics on a VNet gateway connection and return a health diagnosis. 
+
+When you start the VPN troubleshoot tool, Network Watcher diagnoses the health of the gateway or connection, and returns the appropriate results. The request is a long-running transaction. 
+
+The table below shows a few examples of different fault types that are available.
 
 | Fault Type | Reason | Log |
 | --- | --- | --- |
