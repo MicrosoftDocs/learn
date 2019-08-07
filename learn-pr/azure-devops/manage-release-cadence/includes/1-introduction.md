@@ -1,6 +1,6 @@
 In the previous module, you helped the Tailspin team set up an automated CD pipeline, complete with multiple stages and both functional and non-functional tests. 
 
-In this module, you'll help the team solve another problem. How do they implement a deployment pattern that lets them release to production in a way that's best both for the company and for their users? You'll help them evaluate the different possibilities and then implement the one they decide on. 
+In this module, you'll help the team solve another problem. How do they implement a deployment pattern that lets them release to production in a way that's best both for the company and for their users? You'll help them evaluate the different possibilities and then implement the one they decide on.
 
 ## Learning objectives
 

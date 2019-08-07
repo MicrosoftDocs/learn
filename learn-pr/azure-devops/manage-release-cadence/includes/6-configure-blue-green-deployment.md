@@ -1,19 +1,22 @@
 Exercise  - Roberta just ignore this
 
-In [Create a release management workflow](/learn/modules/create-a-release-management-workflow?azure-portal=true), you built a traditional deployment pipeline that deploys a web application to Azure App Service on a development slot, a test slot, and a pre-production staging slot. Here we will build on that workflow to add the *Blue Green* deployment pattern.
+In [Create a release management workflow](/learn/modules/create-a-release-management-workflow?azure-portal=true), you built a traditional deployment pipeline that deploys a web application to Azure App Service on a development environment, a test environment, and a pre-production staging environment. Here we will build on that workflow to add the *Blue Green* deployment pattern.
 
 > [!div class="checklist"]
+> * Add a slot to the Staging environment called *Production*.
 > * Add manual step to swap staging and production slots.
 > * change a color on the site
-> * run pipeline
-> * manually swap - add the manual part when it works later
-> * check the staging and production sites to see the swap. 
+> * run the pipeline
+> * manually swap  TODO: add the manual part when it works later, for now just swap it on success.
+> * check the staging and production sites to see the swap.
+
+## Add a slot for Production
 
 ## Add a stage to swap Staging and Production slots
 
-Here you will use the **AzureAppServiceManage@0** task to swap slots. This task can also be used to start, stop, restart, slot delete, install site extensions or enable continuous monitoring for an Azure App Service. Click [here](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-app-service-manage?view=azure-devops?azure-portal=true) for more information on this task.
+Here you will use the [**AzureAppServiceManage@0**](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-app-service-manage?view=azure-devops?azure-portal=true) task to swap slots. This task can also be used to start, stop, restart, slot delete, install site extensions or enable continuous monitoring for an Azure App Service.
 
-1. Open the **azure-pipelines.yml** file and add the highlighted stage at the bottom. 
+1. Open the **azure-pipelines.yml** file and add the highlighted stage at the bottom.
 
 > [!IMPORTANT]
 > If you copy and paste the entire contents, go back and edit your **WebAppName**.
@@ -27,7 +30,7 @@ Here you will use the **AzureAppServiceManage@0** task to swap slots. This task 
 
     ```bash
     git add azure-pipelines.yml
-    git commit -m "Add Staging to Production swap to the pipeline"
+    git commit -m "Add the Staging to Production swap to the pipeline"
     git push origin release-cadence
     ```
 

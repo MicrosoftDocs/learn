@@ -4,12 +4,10 @@ Here we will need to get the learner to the place they left off in the [Create a
 
 > [!div class="checklist"]
 > * Get the new branch with azure-pipelines.yml that deploys to dev, test, and staging
-> * Create web app on Azure using AppService (CLI) with dev, test, staging, production slots
+> * Create web app on Azure using AppService (CLI) with dev, test, staging, production slots - TODO: See what the previous module has.
 > * Edit pipeline yml with your variable names
 > * Get the Azure DevOps project from the template
 > * Verify the app is deployed.
-
-TODO: Sandbox with CLI
 
 ## Get the source code
 
@@ -23,6 +21,8 @@ TODO: Sandbox with CLI
     As you did in previous modules, the format of this command enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
 
 ## Create an Azure AppService with deployment slots
+
+TODO: See what previous module has
 
 ```bash
 webappname=TailspinGame$RANDOM
@@ -43,6 +43,8 @@ az webapp deployment slot list --name $webappname --resource-group TailspinResou
 ```
 
 ### Create the service connection
+
+TODO: Get the service connection creation part from Module 1 and replace this
 
 * Select **Service Principal Authentication**.
 
