@@ -214,14 +214,14 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
     ```console
            tablename
     -----------------------
-     __EFMigrationsHistory
      AspNetRoleClaims
      AspNetRoles
      AspNetUserClaims
      AspNetUserLogins
      AspNetUserRoles
-     AspNetUsers
      AspNetUserTokens
+     AspNetUsers
+     __EFMigrationsHistory
     (8 rows)
     ```
 
