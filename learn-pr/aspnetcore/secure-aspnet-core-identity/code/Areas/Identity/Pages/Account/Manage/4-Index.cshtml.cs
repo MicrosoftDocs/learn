@@ -72,3 +72,26 @@ public async Task<IActionResult> OnPostAsync()
     return RedirectToPage();
 }
 #endregion
+
+#region snippet_FirstAndLastNameInputModel
+public class InputModel
+{
+    [Required]
+    [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 1)]
+    [Display(Name = "First Name")]
+    public string FirstName { get; set; }
+
+    [Required]
+    [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 1)]
+    [Display(Name = "Last Name")]
+    public string LastName { get; set; }
+
+    [Required]
+    [EmailAddress]
+    public string Email { get; set; }
+
+    [Phone]
+    [Display(Name = "Phone number")]
+    public string PhoneNumber { get; set; }
+}
+#endregion

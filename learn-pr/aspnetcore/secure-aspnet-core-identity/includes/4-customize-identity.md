@@ -6,7 +6,7 @@ UI changes are also required to collect the additional user profile information.
 
 ## Customize the user account data
 
-1. Add the user registration files to the project:
+1. Add the user registration files to be modified to the project:
 
     ```bash
     dotnet aspnet-codegenerator identity \
@@ -16,58 +16,59 @@ UI changes are also required to collect the additional user profile information.
         --force
     ```
 
-    The preceding command adds the following files to the *Areas/Identity* directory:
+    In the preceding command:
 
-    * *Data/ContosoPetsUser.cs*
-    * *Pages/Account/Manage/_ManageNav.cshtml*
-    * *Pages/Account/Manage/_ViewImports_.cshtml*
-    * *Pages/Account/Manage/EnableAuthenticator.cshtml*
-    * *Pages/Account/Manage/EnableAuthenticator.cshtml.cs*
-    * *Pages/Account/Manage/Index.cshtml*
-    * *Pages/Account/Manage/Index.cshtml.cs*
-    * *Pages/Account/Manage/ManageNavPages.cs*
-    * *Pages/Account/Register.cshtml*
-    * *Pages/Account/Register.cshtml.cs*
+    * The `--dbContext` option provides the tool with knowledge of the existing `DbContext`-derived class named `ContosoPetsAuth`.
+    * The `--files` option specifies a semicolon-delimited list of unique files to be added to the *Identity* area.
+    * The `--userClass` option results in the creation of an `IdentityUser`-derived class named `ContosoPetsUser`.
+    * The `--force` option causes existing files in the *Identity* area to be overwritten.
 
-    Additionally, the *Data/ContosoPetsAuth.cs* file, which existed prior to running the preceding command, was overwritten. The `ContosoPetsAuth` class declaration now references the newly created user type of `ContosoPetsUser`:
+    > [!TIP]
+    > Run the `dotnet aspnet-codegenerator identity --listFiles` command from the project root to view valid values for the `--files` option.
+
+    The following files are added to the *Areas/Identity* directory:
+
+    * **Data/**
+        * *ContosoPetsUser.cs*
+    * **Pages/Account/**
+        * *Register.cshtml*
+        * *Register.cshtml.cs*
+    * **Pages/Account/Manage/**
+        * *_ManageNav.cshtml*
+        * *_ViewImports.cshtml*
+        * *EnableAuthenticator.cshtml*
+        * *EnableAuthenticator.cshtml.cs*
+        * *Index.cshtml*
+        * *Index.cshtml.cs*
+        * *ManageNavPages.cs*
+
+    Additionally, the *Data/ContosoPetsAuth.cs* file, which existed prior to running the preceding command, was overwritten because the `--force` option was used. The `ContosoPetsAuth` class declaration now references the newly created user type of `ContosoPetsUser`:
 
     ```csharp
     public class ContosoPetsAuth : IdentityDbContext<ContosoPetsUser>
     ```
 
-    The *EnableAuthenticator* Razor Page was scaffolded, though it won't be modified until later in the module.
+    The *EnableAuthenticator* Razor page was scaffolded, though it won't be modified until later in the module.
 
 1. In the `Configure` method of *IdentityHostingStartup.cs*, the call to `AddDefaultIdentity` needs to be made aware of the new Identity user type. Incorporate the following highlighted change:
 
     [!code-csharp[](../code/Areas/Identity/IdentityHostingStartup-Configure.cs?name=snippet_ConfigureAddDefaultIdentity&highlight=1)]
 
-1. Make the following changes to *Pages/Shared/_LoginPartial.cshtml*:
+1. Update *Pages/Shared/_LoginPartial.cshtml* to incorporate the following highlighted changes:
 
-    * Add `@using ContosoPets.Ui.Areas.Identity.Data` to the top.
-    * Change `@inject SignInManager<IdentityUser> SignInManager` to `@inject SignInManager<ContosoPetsUser> SignInManager`.
-    * Change `@inject UserManager<IdentityUser> UserManager` to `@inject UserManager<ContosoPetsUser> UserManager`.
+    [!code-cshtml[](../code/Pages/Shared/4-_LoginPartial.cshtml?range=1-6&highlight=2-4)]
 
-    The first four lines of *_LoginPartial.cshtml* will resemble the following code:
+    The preceding changes update the user type passed to both `SignInManager<T>` and `UserManager<T>` in the `@inject` directives. Instead of the default `IdentityUser` type, `ContosoPetsUser` user is now referenced. The `@using` directive was added to resolve the `ContosoPetsUser` references.
 
-    [!code-cshtml[](../code/Pages/Shared/4-_LoginPartial.cshtml?range=1-4)]
-
-    The preceding step created the `ContosoPetsUser` class, which is to be used instead of the default `IdentityUser`. *Pages/Shared/_LoginPartial.cshtml* wasn't updated automatically, so the appropriate changes must be made by hand.
+    *Pages/Shared/_LoginPartial.cshtml* is physically located outside of the *Identity* area. Consequently, the file wasn't updated automatically. The appropriate changes had be made manually.
 
     > [!TIP]
     > As an alternative to manually editing the *_LoginPartial.cshtml* file, it can be deleted prior to running the scaffold tool. The *_LoginPartial.cshtml* file will be recreated with references to the new `ContosoPetsUser` class.
 
-1. Update *Areas/Identity/Data/ContosoPetsUser.cs* so that it supports storage and retrieval of the additional user profile data. Make the following changes:
-    1. Add the following properties:
+1. Update *Areas/Identity/Data/ContosoPetsUser.cs* to support storage and retrieval of the additional user profile data. Make the following changes:
+    1. Add the `FirstName` and `LastName` properties:
 
-        ```csharp
-        [Required]
-        [MaxLength(100)]
-        public string FirstName { get; set; }
-
-        [Required]
-        [MaxLength(100)]
-        public string LastName { get; set; }
-        ```
+        [!code-csharp[](../code/Areas/Identity/Data/ContosoPetsUser.cs?highlight=3-5,7-9)]
 
         The properties in the preceding snippet represent additional columns to be created in the underlying `AspNetUsers` table. Both properties are required and are therefore annotated with the `[Required]` attribute. The `[Required]` attribute also results in a non-null constraint in the underlying database table column. Additionally, the `[MaxLength]` attribute indicates that a maximum length of 100 characters is allowed. The underlying table column's data type is defined accordingly.
 
@@ -77,7 +78,7 @@ UI changes are also required to collect the additional user profile information.
         using System.ComponentModel.DataAnnotations;
         ```
 
-        The preceding resolves the data annotation attributes in the previous step.
+        The preceding code resolves the data annotation attributes introduced in the previous step.
 
 1. Create and apply an EF Core migration to update the underlying data store:
 
@@ -95,7 +96,7 @@ UI changes are also required to collect the additional user profile information.
         db -c '\d "AspNetUsers"'
         ```
 
-        Scrollable output containing the following displays:
+        The following output displays:
 
         ```console
                                            Table "public.AspNetUsers"
@@ -120,7 +121,7 @@ UI changes are also required to collect the additional user profile information.
          LastName             | character varying(100)   |           | not null | ''::character varying
         ```
 
-        The presence of the `FirstName` and `LastName` properties of the `ContosoPetsUser` class correspond to the `FirstName` and `LastName` columns in the preceding output. A data type of `character varying(100)` was assigned because of the `[MaxLength(100)]` attribute. The non-null constraint was added because of the `[Required]` attribute.
+        The `FirstName` and `LastName` properties in the `ContosoPetsUser` class correspond to the `FirstName` and `LastName` columns in the preceding output. A data type of `character varying(100)` was assigned to each of the two columns because of the `[MaxLength(100)]` attributes. The non-null constraint was added because of the `[Required]` attributes.
 
     1. Scroll down until the following index information displays:
 
@@ -169,7 +170,7 @@ UI changes are also required to collect the additional user profile information.
     LastName             NO          nvarchar                     100
     ```
 
-    The presence of the `FirstName` and `LastName` properties of the `ContosoPetsUser` class correspond to the `FirstName` and `LastName` columns in the preceding output. A data type of `nvarchar(100)` was assigned because of the `[MaxLength(100)]` attribute. The non-null constraint was added because of the `[Required]` attribute.
+    The `FirstName` and `LastName` properties in the `ContosoPetsUser` class correspond to the `FirstName` and `LastName` columns in the preceding output. A data type of `nvarchar(100)` was assigned to each of the two columns because of the `[MaxLength(100)]` attributes. The non-null constraint was added because of the `[Required]` attributes.
 
 1. Run the following command to view the primary key for the `AspNetUsers` table:
 
@@ -191,35 +192,14 @@ UI changes are also required to collect the additional user profile information.
 
 1. In *Areas/Identity/Pages/Account/Register.cshtml*, add the following markup to the line immediately after `<div asp-validation-summary="All" class="text-danger"></div>`:
 
-    ```cshtml
-    <div class="form-group">
-        <label asp-for="Input.FirstName"></label>
-        <input asp-for="Input.FirstName" class="form-control" />
-        <span asp-validation-for="Input.FirstName" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Input.LastName"></label>
-        <input asp-for="Input.LastName" class="form-control" />
-        <span asp-validation-for="Input.LastName" class="text-danger"></span>
-    </div>
-    ```
+    [!code-cshtml[](../code/Areas/Identity/Pages/Account/4-Register-FirstAndLastName.cshtml?range=1-19&highlight=5-14)]
 
-    With the preceding markup, a **First Name** and a **Last Name** text box are added to the user registration form.
+    With the preceding markup, **First Name** and **Last Name** text boxes are added to the user registration form.
 
 1. In *Areas/Identity/Pages/Account/Register.cshtml.cs*, add support for the name text boxes.
-    1. Add the following properties to the `InputModel` class:
+    1. Add the `FirstName` and `LastName` properties to the `InputModel` class:
 
-        ```csharp
-        [Required]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 1)]
-        [Display(Name = "First Name")]
-        public string FirstName { get; set; }
-
-        [Required]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 1)]
-        [Display(Name = "Last Name")]
-        public string LastName { get; set; }
-        ```
+        [!code-csharp[](../code/Areas/Identity/Pages/Account/4-Register-FirstAndLastName.cshtml.cs?highlight=3-11)]
 
     1. Modify the `OnPostAsync` method to populate set the `FirstName` and `LastName` properties on the `ContosoPetsUser` object. Replace the following code:
 
@@ -243,53 +223,32 @@ UI changes are also required to collect the additional user profile information.
 
 ## Customize the site header
 
-1. Update *Pages/Shared/_LoginPartial.cshtml* to display the first and last name collected during user registration. The highlighted lines in the following snippet are needed:
+Update *Pages/Shared/_LoginPartial.cshtml* to display the first and last name collected during user registration. The highlighted lines in the following snippet are needed:
 
-    [!code-cshtml[](../code/Pages/Shared/4-_LoginPartial.cshtml?highlight=9-10,13)]
+[!code-cshtml[](../code/Pages/Shared/4-_LoginPartial.cshtml?highlight=9-10,13)]
 
 ## Customize the profile management form
 
-1. In *Areas/Identity/Pages/Account/Manage/Index.cshtml*, add the following markup to the line immediately after `<div asp-validation-summary="All" class="text-danger"></div>`:
+1. In *Areas/Identity/Pages/Account/Manage/Index.cshtml*, add the following markup to the line immediately after `<div asp-validation-summary="All" class="text-danger"></div>`. Save your changes.
 
-    ```cshtml
-    <div class="form-group">
-        <label asp-for="Input.FirstName"></label>
-        <input asp-for="Input.FirstName" class="form-control" />
-        <span asp-validation-for="Input.FirstName" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Input.LastName"></label>
-        <input asp-for="Input.LastName" class="form-control" />
-        <span asp-validation-for="Input.LastName" class="text-danger"></span>
-    </div>
-    ```
-    
-    Save your changes.
+    [!code-cshtml[](../code/Areas/Identity/Pages/Account/Manage/4-Index-FirstAndLastName.cshtml?range=1-16&highlight=3-12)]
 
-1. In *Identity/Pages/Account/Manage/Index.cshtml.cs*, make the following changes to support the name text boxes.
-    1. Add the following two properties to the `InputModel` class:
+1. In *Areas/Identity/Pages/Account/Manage/Index.cshtml.cs*, make the following changes to support the name text boxes.
+    1. Add the `FirstName` and `LastName` properties to the `InputModel` class:
 
-        ```csharp
-        [Required]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 1)]
-        [Display(Name = "First Name")]
-        public string FirstName { get; set; }
-
-        [Required]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 1)]
-        [Display(Name = "Last Name")]
-        public string LastName { get; set; }
-        ```
+        [!code-csharp[](../code/Areas/Identity/Pages/Account/Manage/Index.cshtml.cs?name=snippet_FirstAndLastNameInputModel&highlight=3-6,8-11)]
 
     1. Incorporate the highlighted changes in the `OnGetAsync` method:
 
         [!code-csharp[](../code/Areas/Identity/Pages/Account/Manage/4-Index.cshtml.cs?name=snippet_OnGetAsync&highlight=19-20)]
 
-    1. Incorporate the highlighted changes in the `OnPostAsync` method:
+        The preceding code supports retrieving the first and last names for display in the corresponding text boxes of the profile management form.
+
+    1. Incorporate the highlighted changes in the `OnPostAsync` method. Save your changes.
 
         [!code-csharp[](../code/Areas/Identity/Pages/Account/Manage/4-Index.cshtml.cs?name=snippet_OnPostAsync&highlight=14-16)]
 
-        Save your changes.
+        The preceding code supports updating the first and last names in the database's `AspNetUsers` table.
 
 ## Build, deploy, and test
 
@@ -305,12 +264,19 @@ UI changes are also required to collect the additional user profile information.
 
 1. In your browser, navigate to the app. Select **Logout** if you're still logged in.
 
+    > [!TIP]
+    > If you need the URL to your app, display it with the following command:
+    >
+    > ```bash
+    > echo $webAppUrl
+    > ```
+
 1. Select **Register** and use the newly modified form to register a new user.
 
     > [!NOTE]
-    > The validation constraints on the **First Name** and **Last Name** fields reflect the annotations on the `FirstName` and `LastName` properties of `InputModel`.
+    > The validation constraints on the **First Name** and **Last Name** fields reflect the data annotations on the `FirstName` and `LastName` properties of `InputModel`.
 
-1. Run the following command to confirm that the first and last name are stored in the database:
+1. Run the following command to confirm that the first and last names are stored in the database:
 
     ::: zone pivot="pg"
 
@@ -327,8 +293,6 @@ UI changes are also required to collect the additional user profile information.
      jana.heinrich@contoso.com | jana.heinrich@contoso.com | Jana      | Heinrich
     (2 rows)
     ```
-
-    The user registered prior to adding `FirstName` and `LastName` to the schema doesn't have data in those columns.
 
     ::: zone-end
 
@@ -347,13 +311,13 @@ UI changes are also required to collect the additional user profile information.
     jana.heinrich@contoso.com jana.heinrich@contoso.com Jana                      Heinrich
     ```
 
-    The user registered prior to adding `FirstName` and `LastName` to the schema doesn't have data in those columns.
-
     ::: zone-end
+
+    The user registered prior to adding `FirstName` and `LastName` to the schema. Consequently, the associated `AspNetUsers` table record doesn't have data in those columns.
 
 ## Test the changes to the profile management form
 
-1. In the browser with your web app, select **Logout**.
+1. In the browser window displaying your web app, select **Logout**.
 
 1. Log in with the first user you created.
 
@@ -362,4 +326,4 @@ UI changes are also required to collect the additional user profile information.
     > [!NOTE]
     > The link doesn't display correctly because there aren't yet any values for `FirstName` or `LastName` for this user.
 
-1. Enter valid values for **First Name** and **Last Name** and then select **Save**.
+1. Enter valid values for **First Name** and **Last Name**. Select **Save**.
