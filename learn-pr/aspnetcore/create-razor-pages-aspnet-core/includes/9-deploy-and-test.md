@@ -22,7 +22,7 @@ The preceding command rebuilds your *:::no-loc text="ContosoPets.UI":::* applica
 
 ### Deploy your *:::no-loc text="ContosoPets.UI":::* application to a public endpoint hosted on Azure App Service
 
-1. Run the following command in the command shell:
+Run the following command in the command shell:
 
 ```bash
 az webapp up
