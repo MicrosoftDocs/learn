@@ -1,10 +1,10 @@
-As the administrator for the autonomous vehicle company, you need an easy, secure, and relatively inexpensive way to regularly import the enormous amounts of telemetry data that your vehicles generate every day. But you can't dedicate your entire network bandwidth to the task. You decide to look at the Azure Data Box family, a cluster of physical and virtual devices that aims to solve this type of problem. Each device is designed to meet the slightly different needs and priorities of customers looking for a solution in this space.
+As the administrator for the autonomous vehicle company, you need an easy, secure, and relatively inexpensive way to regularly import the enormous amounts of telemetry data that your vehicles generate every day. But you can't dedicate your entire network bandwidth to the task. You decide to look at the Azure Data Box family, an ensemble of physical and virtual devices that aims to solve this type of problem. Each device is designed to meet the slightly different needs and priorities of customers looking for a solution in this space.
 
 In this unit, you'll learn about the five products in the Azure Data Box family.
 
 ## Azure Data Box products
 
-The Azure Data Box family can be divided into two groups, for *offline* and *online* data transfer usage. Offline data transfer allows you to move large amounts of data to Azure whenever you have time, network bandwidth, or cost constraints. Because your organization doesn't want to tie up its network bandwidth while shifting the vehicle data to Azure, this solution might be ideal.
+The Azure Data Box family can be divided into two groups, for *offline* and *online* data transfer. Offline data transfer allows you to move large amounts of data to Azure whenever you have time, network bandwidth, or cost constraints. Because your organization doesn't want to tie up its network bandwidth while shifting the vehicle data to Azure, this solution might be ideal.
 
 ### Offline data transfer
 

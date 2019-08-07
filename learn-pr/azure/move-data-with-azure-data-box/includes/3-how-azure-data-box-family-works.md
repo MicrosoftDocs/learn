@@ -4,11 +4,11 @@ In this unit, you'll learn how to use Azure Data Box Disk and the other devices 
 
 ## Azure Data Box family workflow
 
-The following diagram shows the high-level steps you take when you order a device from the Azure Data Box family:
+The following diagram shows the high-level steps for ordering a device from the Azure Data Box family:
 
 ![Diagram that shows the high-level Azure Data Box workflow](../media/3-import-azure-data-box-process.png)
 
-For clarity, let's break these out into discrete steps:
+For clarity, let's break these workflow stages out into discrete steps:
 
 1. Create an order in the Azure portal.
 1. Receive the device from the Azure datacenter. Connect to and unlock the device.
@@ -22,13 +22,13 @@ We'll cover the specific steps to use Azure Data Box Disks later in this unit.
 
 ### Copy data using standard tools
 
-You can copy data by using standard tools. For example, drag and drop files with File Explorer. Or, use any Server Message Block (SMB)-compatible file-copy tool like Robocopy.
+You can copy data by using standard tools. For example, use File Explorer to drag and drop files. Or, use any Server Message Block (SMB)-compatible file-copy tool like Robocopy.
 
 ### Use Azure Storage file-naming conventions and size limits
 
 When you copy data, all the standard Azure Storage naming conventions apply:
 
--  Subfolder names should be lowercase, between 3 and 63 characters, and consist only of letters, numbers, and hyphens. Consecutive hyphens aren't allowed.
+-  Subfolder names should be lowercase, from 3 to 63 characters, and consist only of letters, numbers, and hyphens. Consecutive hyphens aren't allowed.
 - Directory and file names for Azure Files shouldn't exceed 255 characters.
 - File size must not exceed ~4.75 tebibytes (TiB) for block blobs, ~8 TiB for page blobs, and ~1 TiB for Azure Files.
 
@@ -51,13 +51,13 @@ For your vehicle data, you'd follow these steps to order a Data Box Disk to impo
    - Create an order in the portal, and specify the amount of data, source country, and destination region.
 
 1. **Receive the device from Azure Datacenter**
-   - The service assigns between one and five 8-TB BitLocker-encrypted SSDs (up to 35 TB of usable capacity) and ships them within 10 days. If you need more than 35 TB, you can create more orders.
+   - The service assigns from one to five 8-TB BitLocker-encrypted SSDs (up to 35 TB of usable capacity) and ships them within 10 days. If you need more than 35 TB, you can create more orders.
    - When you receive the disks, sign in to the Azure portal and go to the **Device Details** page for Data Box Disk. Get the passkey. Download the right version of the Data Box Disk unlocker tool for your operating system.
 
 1. **Set up and copy data to the device**
    - For the autonomous vehicle scenario, we recommend that you connect the disks directly to the onboard Linux or Windows computer in the car. With Azure Data Box Disk, you can connect multiple disks simultaneously and run multiple copy jobs in parallel.
    - Azure Data Box Disk supports Azure Block Blob, Azure Page Blob, Azure Files, and Managed Disks storage types for upload to Azure. The disks come with a predefined folder structure, based on the storage type. Copy data into the appropriate folder for your storage type: PageBlob, BlockBlob, AzureFile, or ManagedDisk.
-   - Validate the files by running DataBoxDiskValidation.cmd, which is provided in the DataBoxDiskImport folder. Select option 1 to validate the files. If you have time, we recommend that you generate checksums by selecting option 2. Generating a checksum may take some time depending on the data size.
+   - Validate the files by running DataBoxDiskValidation.cmd, which is provided in the DataBoxDiskImport folder. Select option 1 to validate the files. If you have time, we recommend that you generate checksums by selecting option 2. Generating a checksum may take some time, depending on the data size.
    - The first three days are billed as a single day, as a grace period, with one-off shipping and order processing fees. After the first three days, there's a per-day cost for each SSD.
 
 1. **Ship device to Azure datacenter**
