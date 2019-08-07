@@ -12,7 +12,7 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 10
-interactive: bash-editor
+interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/7-blob-uploads-and-downloads.md)]
