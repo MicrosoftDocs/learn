@@ -15,9 +15,9 @@ abstract: |
   - Identify the tools available to manage and troubleshoot network connectivity in Azure
   - Select the proper tool to manage and troubleshoot network connectivity for various use cases
 prerequisites: | 
-  - Basic familiarity with Azure networking concepts such as IP addressing, subnetting, routing, and network security groups
-  - Basic familiarity with Azure network integration concepts such as VPNs, ExpressRoute, and peering
-iconUrl: http://via.placeholder.com/120x120
+  - Basic familiarity with Azure networking concepts (IP addressing, subnets, routing, network security groups)
+  - Basic familiarity with Azure network integration concepts (VPN, ExpressRoute, peering)
+iconUrl: /learn/achievements/troubleshoot-azure-network-infrastructure.svg
 levels:
 - beginner
 roles:
