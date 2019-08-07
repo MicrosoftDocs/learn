@@ -1,9 +1,9 @@
-<!-- TODO: Intro text that talks about using a QR code -->
+As
 
 ## Configure multi-factor authentication
 
-1. Open *Pages/Account/Manage/EnableAuthenticator.cshtml.cs* and make the following changes:
-    1. Add the following property to the `EnableAuthenticatorModel` class to store the QR code base-64 string representation:
+1. Open *Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml.cs* and make the following changes:
+    1. Add the following property to the `EnableAuthenticatorModel` class to store the QR code's base-64 string representation:
 
         ```csharp
         public string QrCodeAsBase64 { get; set; }
@@ -15,13 +15,13 @@
 
         In the preceding page handler, parameter injection provides a reference to the `QRCodeService` singleton service. `QRCodeService` is responsible for interactions with a third-party library which generates QR codes.
 
-    1. Add the following `using` statement to resolve the reference to `QRCodeService`, then save your changes:
+    1. Add the following `using` statement to resolve the reference to `QRCodeService`. Save your changes.
 
         ```csharp
         using ContosoPets.Ui.Services;
         ```
 
-1. In *Pages/Account/Manage/EnableAuthenticator.cshtml*, replace the following HTML:
+1. In *Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml*, replace the following HTML. Save your changes.
 
     ```html
     <div id="qrCode"></div>
@@ -35,13 +35,11 @@
     </div>
     ```
 
-    Save your changes.
-
 ## Test multi-factor authentication
 
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
 
-1. Deploy the site by running the following command:
+1. Deploy the app by running the following command:
 
     ```bash
     az webapp up

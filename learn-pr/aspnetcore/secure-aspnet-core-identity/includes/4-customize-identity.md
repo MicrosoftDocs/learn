@@ -254,7 +254,7 @@ Update *Pages/Shared/_LoginPartial.cshtml* to display the first and last name co
 
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
 
-1. Deploy the site by running the following command:
+1. Deploy the app by running the following command:
 
     ```bash
     az webapp up
