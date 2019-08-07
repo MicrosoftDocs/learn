@@ -1,8 +1,8 @@
-The Custom Vision Service web portal is an easy way to train a model by uploading tagged images. This approach is the most common way to train, test, and publish a model. However, sometimes a business need might require a model to be prepared (or re-trained) based on incoming data available to the applications using the service. In these cases, the app can leverage the **Training API** to add and tag new images and publish a new iteration of the Custom Vision Service.
+The Custom Vision service web portal is an easy way to train a model by uploading tagged images. This approach is the most common way to train, test, and publish a model. But sometimes a business need might require a model to be prepared (or re-trained) based on incoming data available to the applications using the service. In these cases, the app can use the Training API to add and tag new images and publish a new iteration of the Custom Vision service.
 
-Similar to making predictions, the Training API provides HTTP methods for adding and tagging training images to a project. The process of calling and consuming the response is identical to the Prediction API - just using different endpoints.
+Like the Prediction API, the Training API provides HTTP methods for adding   training images to a project and tagging them. The process of calling and consuming the response is identical to the Prediction API process. It just uses different endpoints.
 
-The underlying method used to send tagged training images is the Custom Vision **CreateImages** method, and, just like the Prediction API, the Custom Vision Training API provides separate methods for uploading binary files versus supplying publicly available image URLs.
+The Custom Vision **CreateImages** method is the underlying method used to send tagged training images. Just like the Prediction API, the Custom Vision Training API provides separate methods for uploading binary files and for supplying publicly available image URLs:
 
 - **CreateImagesFromFiles** includes one or more encoded image files, and optional tags, to create images. There is a limit of 64 images and 20 tags.
 - **CreateImagesFromUrls**: specifies one or more URLs, and optional tags, to create images. There is a limit of 64 images and 20 tags.
