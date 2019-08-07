@@ -42,7 +42,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
         --output table
     ```
 
-3. In the web browser, navigate to the public IP address of the virtual machine. Verify that a web page displaying the name of the virtual machine, *MyWindowsVM*.
+3. In the web browser, navigate to the public IP address of the virtual machine. Verify that a web page displaying the name of the virtual machine, *MyWindowsVM*, appears.
 
     ![Screenshot of the web page from the Windows virtual machine](../media/4-original-vm-web-page.png)
 
@@ -82,7 +82,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
         --output table
     ```
 
-3. In the web browser, navigate to the public IP address of the virtual machine. Verify that a web page displaying the name of the virtual machine *MyUbuntuVM*.
+3. In the web browser, navigate to the public IP address of the virtual machine. Verify that a web page displaying the name of the virtual machine *MyUbuntuVM* appears.
 
     ![Screenshot of the web page from the Ubuntu virtual machine](../media/4-original-ubuntu-web-page.png)
 
