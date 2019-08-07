@@ -48,7 +48,7 @@ Now that your finished *:::no-loc text="ContosoPets.UI":::* application has been
 
 1. Run the following command in the command shell to get the hosted application's URL:
 
-```bash
+	```bash
     echo $webAppUrl
     ```
 
