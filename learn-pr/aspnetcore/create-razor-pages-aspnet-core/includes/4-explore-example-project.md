@@ -6,18 +6,18 @@ The *ContosoPets.UI* project directory should be currently open in the [Azure Cl
 
 Examine the following ContosoPets.UI files and directories by clicking on them in the Azure Cloud Shell window on the right:
 
-    |Name                     |Description                                                                           |
-    |-------------------------|--------------------------------------------------------------------------------------|
-    |*:::no-loc text="Pages/":::*                 |Contains Razor Pages and supporting files. Each Razor page is a pair of files:        |
-    |                         | * A *:::no-loc text=".cshtml":::* file that contains markup with C# code using Razor syntax.             |
-    |                         | * A *:::no-loc text=".cshtml.cs":::* *PageModel":::* class file that defines:                                |
-    |                         |   * Page handlers for requests sent to the page.                                     |
-    |                         |   * Data used to render the page.                                                    |
-    |*:::no-loc text="wwwroot/":::*               |Contains static assets, such as HTML files, JavaScript files, and CSS files.          |
-    |*:::no-loc text="Models/":::*                |Contains Model files. This project uses one central model file for model validation.  |
-    |*:::no-loc text="Program.cs":::*             |Contains a *Main* method: The app's managed entry point.                              |
-    |*:::no-loc text="ContosoPets.UI.csproj":::*  |Contains configuration metadata for the project, such as dependencies.                |
-    |*:::no-loc text="Startup.cs":::*             |Configures app behavior, such as routing between pages.                               |
+    |Name                   |Description                                                                          |
+    |-----------------------|-------------------------------------------------------------------------------------|
+    |*:::no-loc text="Pages/":::*                   |Contains Razor Pages and supporting files. Each Razor page is a pair of files:       |
+    |                       | * A *:::no-loc text=".cshtml":::* file that contains markup with C# code using Razor syntax.                  |
+    |                       | * A *:::no-loc text=".cshtml.cs":::* *PageModel":::* class file that defines:                                       |
+    |                       |   * Page handlers for requests sent to the page.                                        |
+    |                       |   * Data used to render the page.                                                       |
+    |*:::no-loc text="wwwroot/":::*               |Contains static assets, such as HTML files, JavaScript files, and CSS files.         |
+    |*:::no-loc text="Models/":::*                |Contains Model files. This project uses one central model file for model validation. |
+    |*:::no-loc text="Program.cs":::*             |Contains a *Main* method: The app's managed entry point.                             |
+    |*:::no-loc text="ContosoPets.UI.csproj":::*  |Contains configuration metadata for the project, such as dependencies.               |
+    |*:::no-loc text="Startup.cs":::*             |Configures app behavior, such as routing between pages.                              |
 
 ### Razor Page files and their paired *PageModel* class file
 
@@ -63,16 +63,16 @@ The following are routing examples for this completed project:
 
     |  URL                              |  Maps to this Razor Page          |
     |-----------------------------------|-----------------------------------|
-    |  *:::no-loc text="www.domain.com":::*                   |  *:::no-loc text="/Pages/index.cshtml":::*               |
-    |  *:::no-loc text="www.domain.com/index":::*              |  *:::no-loc text="/Pages/index.cshtml":::*               |
-    |  *:::no-loc text="www.domain.com/products":::*            |  *:::no-loc text="/Pages/Products/index.cshtml":::*     |                                                  
-    |  *:::no-loc text="www.domain.com/products/create":::*     |  *:::no-loc text="/Pages/Products/create.cshtml":::*    |
+    |*:::no-loc text="www.domain.com":::*                   |*:::no-loc text="/Pages/index.cshtml":::*               |
+    |*:::no-loc text="www.domain.com/index":::*              |*:::no-loc text="/Pages/index.cshtml":::*               |
+    |*:::no-loc text="www.domain.com/products":::*            |*:::no-loc text="/Pages/Products/index.cshtml":::*     |                                                  
+    |*:::no-loc text="www.domain.com/products/create":::*     |*:::no-loc text="/Pages/Products/create.cshtml":::*    |
 
 ### Organizing groups of related Razor Pages
 
 The *:::no-loc text="ContosoPets.UI":::* project's purpose is to provide a basic UI client to execute Create, Read, Update, and Delete (CRUD) operations through your company's web API endpoint to manage product listings.
 The *:::no-loc text="Pages/Product":::* directory groups all the Razor Pages that provide the UI for those CRUD operations and thier *:::no-loc text="PageModel":::* class files.
-For the *:::no-loc text="ContosoPets.UI":::* application the same model validation will be used for more than one Razor Page for HTTP calls to the hosted web API.
+For the *:::no-loc text="ContosoPets.UI":::* application the same model validation will be used for more than one Razor Page for HTTP requests to the hosted web API.
 
 ### The HTTP request service
 

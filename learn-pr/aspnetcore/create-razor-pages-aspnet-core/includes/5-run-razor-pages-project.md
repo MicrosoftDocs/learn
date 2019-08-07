@@ -11,7 +11,7 @@ The .NET Core CLI is the simplest way to create, build, and run an ASP.NET Core 
 1. Run the following command in the command shell to verify you are still at the *:::no-loc text="ContosoPets.UI":::* directory:
 
     ```bash
-    cd ./razor-pages-example/src/ContosoPets.UI
+    cd ~/contoso-pets/src/ContosoPets.Ui
     ```
 
     [!INCLUDE[OS-specific keyboard shortcuts](../../../includes/azure-cloudshell-copy-paste-tip.md)]
@@ -27,7 +27,7 @@ The .NET Core CLI is the simplest way to create, build, and run an ASP.NET Core 
 1. Run the following .NET Core CLI command in the command shell:
 
     ```bash
-    dotnet run > ContosoPets.UI.log &
+    dotnet run > ContosoPets.UI
     ```
 
     The preceding command:
@@ -37,11 +37,10 @@ The .NET Core CLI is the simplest way to create, build, and run an ASP.NET Core 
     * Builds the project code.
     * Hosts the web application with ASP.NET Core's Kestrel web server.
     * Displays the background task's process ID.
-    * Writes logging output to *:::no-loc text="ContosoPets.UI.log":::*
 
- .NET Core emits logging information and blocks command shell input. However, in our current environment for the purposes of this example, the command shell needs to be used to test the running app. Therefore, the `dotnet run` output is redirected to a *:::no-loc text="ContosoPets.UI.log":::* text file so you can view the log in the current environment. Additionally, the `&` runs the app as a background task to unblock command shell input.
+The web application is hosted at both `http://localhost:5000` and `https://localhost:5001` by default. This module uses the secure URL beginning with `https`. You can stop the *:::no-loc text="ContosoPets.UI":::* application from running at any time by pressing <kbd>Ctrl+C</kbd>. 
 
-The web application is hosted at both `http://localhost:5000` and `https://localhost:5001` by default. This module uses the secure URL beginning with `https`. You can stop the *:::no-loc text="ContosoPets.UI":::* application from running at any time by pressing <kbd>Ctrl+C</kbd>.
+We can't view the *:::no-loc text="ContosoPets.UI":::* application's pages in a browser, since it is not yet hosted on a public endpoint.  We will host the the app on a public endpoint in a following step.
 
 > [!IMPORTANT]
 > Check *:::no-loc text="ContosoPets.UI.log":::* if you encounter any unexpected behavior. If the build fails or other errors occur, the log file's information helps to troubleshoot. If you make code changes, run `kill $(pidof dotnet)` to stop all .NET Core apps before attempting to run again.
