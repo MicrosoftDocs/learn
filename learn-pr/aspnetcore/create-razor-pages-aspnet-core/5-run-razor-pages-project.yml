@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-razor-pages-aspnet-core.5-run-razor-pages-project
 metadata:
-  title: Compile and Run the Razor Pages Project
+  title: Compile and run the Razor Pages project
   description: Compile, run, and tour the example Razor Pages project.
   ms.date: 07/31/2019
   author: wadepickett
