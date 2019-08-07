@@ -64,6 +64,6 @@ Your new Create Razor Page will render.
 
 Validation messages should appear next to the name and price.
 
-1. Enter the following valid *:::no-loc text="Name":::* and *:::no-loc text="Price":::* values to test  client-side input validation:  Enter any name for *:::no-loc text="Name":::*. Enter '30' for *:::no-loc text="Price":::*.
+1. Enter the following valid *:::no-loc text="Name":::* and *:::no-loc text="Price":::* values to test client-side input validation: Enter any name for *:::no-loc text="Name":::*. Enter '30' for *:::no-loc text="Price":::*.
 
 If the *:::no-loc text="Name":::* and *:::no-loc text="Price":::* passed input validation, and the web API accepted the new data, you are returned to the products page that should now include your new product entry in the list.
