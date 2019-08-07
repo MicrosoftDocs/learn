@@ -28,7 +28,7 @@ Run the following command in the command shell:
 az webapp up
 ```
 
-The preceding command runs a script created specifically for the purpose of provisioning a public endpoint for this project. Be patient as it may take several minutes.
+The preceding command runs a script to provision a public endpoint for this project. Be patient, as it may take several minutes.
 
 Something like the following text should eventually display to indicate the web API is being deployed.
 
