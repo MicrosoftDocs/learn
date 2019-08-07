@@ -236,7 +236,7 @@ Update *Pages/Shared/_LoginPartial.cshtml* to display the first and last name co
 1. In *Areas/Identity/Pages/Account/Manage/Index.cshtml.cs*, make the following changes to support the name text boxes.
     1. Add the `FirstName` and `LastName` properties to the `InputModel` class:
 
-        [!code-csharp[](../code/Areas/Identity/Pages/Account/Manage/Index.cshtml.cs?name=snippet_FirstAndLastNameInputModel&highlight=3-6,8-11)]
+        [!code-csharp[](../code/Areas/Identity/Pages/Account/Manage/4-Index.cshtml.cs?name=snippet_FirstAndLastNameInputModel&highlight=3-6,8-11)]
 
     1. Incorporate the highlighted changes in the `OnGetAsync` method:
 
