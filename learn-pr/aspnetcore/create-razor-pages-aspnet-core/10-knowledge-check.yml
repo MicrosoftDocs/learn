@@ -41,7 +41,7 @@ quiz:
       choices:
       - content: "The `@page` directive indicates the page can handle HTTP requests and is what makes a page a Razor Page."
         isCorrect: true
-        explanation: "The '@page` directive is what makes a page a Razor Page and it must be the first directive on the page. The `@page` directive indicates the page can handle HTTP requests."
+        explanation: "The `@page` directive is what makes a page a Razor Page and it must be the first directive on the page. The `@page` directive indicates the page can handle HTTP requests."
       - content: "The `@page` directive is an example of a Tag Helper."
         isCorrect: false
         explanation: "Tag Helpers are components for automating HTML generation in Razor Pages. By design they are reusable, customizable building blocks. Most built-in Tag Helpers in ASP.NET Core extend standard HTML elements you are familiar with and provide additional server-side attributes for the element."
