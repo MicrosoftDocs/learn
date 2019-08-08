@@ -14,7 +14,7 @@ Now that you have added a *:::no-loc text="Create":::* Razor Page form and its *
 
 1. Run the following command:
 
-```bash
+    ```bash
 dotnet build
 ```
 
