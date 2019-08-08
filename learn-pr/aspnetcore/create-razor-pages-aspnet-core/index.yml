@@ -22,7 +22,7 @@ abstract: |
 prerequisites: |
   - Experience writing C# at the beginner level
   - Ability to write HTML at an intermediate level
-  - Knowledge of RESTful services and HTTP action verbs.
+  - Knowledge of RESTful services and HTTP action verbs
 levels:
 - beginner
 roles:
