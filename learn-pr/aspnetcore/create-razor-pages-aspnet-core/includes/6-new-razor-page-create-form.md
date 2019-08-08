@@ -109,7 +109,7 @@ The *:::no-loc text="Label Tag Helper":::* extends the standard HTML *:::no-loc 
 
 ### The *:::no-loc text="Input Tag Helper":::*
 
-The following markup uses the *:::no-loc text="Input Tag Helper":::*. It extends the standard HTML `<input>` element. It also uses an `[asp-for]` attribute to specifiy a *:::no-loc text="PageModel":::* property.
+The following markup uses the Input Tag Helper. It extends the standard HTML `<input>` element. It also uses an `asp-for` attribute to specify a *:::no-loc text="PageModel":::* property.
 
 ```cshtml
 <input asp-for="Product.Name" class="form-control" />
