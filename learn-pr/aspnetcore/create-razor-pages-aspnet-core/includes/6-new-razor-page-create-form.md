@@ -6,7 +6,7 @@ The *:::no-loc text="ContosoPets.UI":::* project directory should be currently o
 
 1. Run the following command in the command shell:
 
-```bash
+	```bash
 pushd $srcWorkingDirectory/ContosoPets.Ui/Pages/Products
 ```
 
