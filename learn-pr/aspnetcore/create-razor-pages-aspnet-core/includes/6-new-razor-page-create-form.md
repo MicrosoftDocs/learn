@@ -10,7 +10,7 @@ The *:::no-loc text="ContosoPets.UI":::* project directory should be currently o
 pushd $srcWorkingDirectory/ContosoPets.Ui/Pages/Products
 	```
 
- The current directory changes to the *:::no-loc text="Products/":::* directory.
+	The current directory changes to the *:::no-loc text="Products/":::* directory.
 
 Run the following .NET Core CLI command in the command shell at the current directory.
 
