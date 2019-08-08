@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-razor-pages-aspnet-core.6-new-razor-page-create-form
 metadata:
-  title: Create the Razor Page for a Create Product form
+  title: Create the Razor page for a create product form
   description: Review the basic elements of a Razor Page and create a Razor Page form.
   ms.date: 07/31/2019
   author: wadepickett
