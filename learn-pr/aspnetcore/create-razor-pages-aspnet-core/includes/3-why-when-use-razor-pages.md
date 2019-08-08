@@ -11,7 +11,7 @@ Razor Pages use a simple markup syntax called *Razor* for embedding server-based
 
 ### Separation of concerns in the *:::no-loc text="PageModel":::*
 
-Razor Pages provide a separation of concern for page-related data properties and logic operations in a *:::no-loc text="PageModel":::* class file. the class file is in C#. A model object typically defines data properties and encapsulates any logic or operations related to those data properties. A RazorPages *PageModel* more specifically encapsulates the data properties and logic operations scoped just to its Razor Page. It defines page handlers for requests sent to the page and for the data used to render the page.
+Razor Pages enforces separation of concerns for page-related data properties and logic operations in a C# *:::no-loc text="PageModel":::* class file. A model object typically defines data properties and encapsulates any logic or operations related to those data properties. A Razor Pages *PageModel* more specifically encapsulates the data properties and logic operations scoped just to its Razor page. It defines page handlers for requests sent to the page and for the data used to render the page.
 
 ## When to use Razor Pages
 
