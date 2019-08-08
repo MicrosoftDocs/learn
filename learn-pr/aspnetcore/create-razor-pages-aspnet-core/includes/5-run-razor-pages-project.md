@@ -17,7 +17,7 @@ The .NET Core CLI is the simplest way to create, build, and run an ASP.NET Core 
 
     The current directory is now at the *:::no-loc text="ContosoPets.UI":::* directory.
 
-1. Run the following command in the command shell to view the project:
+1. If required, run the following command in the command shell to view the project:
 
     ```bash
     code .
