@@ -128,7 +128,7 @@ The following is the generated HTML output from the *:::no-loc text="Input Tag H
 
 ### The *:::no-loc text="Validation Message Tag Helper":::*
 
-The following markup uses the **:::no-loc text="Validation Message Tag Helper":::* It displays a validation message for a single property on your model.
+The following markup uses the *:::no-loc text="Validation Message Tag Helper":::*. It displays a validation message for a single property on your model.
 
 ```cshtml
  <span asp-validation-for="Product.Price" class="text-danger"></span>
