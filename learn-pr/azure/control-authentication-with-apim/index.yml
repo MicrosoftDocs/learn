@@ -17,7 +17,7 @@ abstract: |
 prerequisites: | 
   - Basic understanding of certificates
   - Basic understanding of API Management
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/control-authentication-with-apim.svg
 levels:
 - intermediate
 roles:
