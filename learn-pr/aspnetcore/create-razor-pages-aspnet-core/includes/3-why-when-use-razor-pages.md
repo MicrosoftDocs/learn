@@ -26,7 +26,7 @@ Razor Pages allow you to keep your ASP.NET Core pages organized in a simpler way
 * All view (page) specific logic and page properties defined in the Razor Page's (*:::no-loc text="PageModel":::*) can be kept together in their own namespace and directory.
 * Groups of related pages can be kept in their own namespace and directory.
 
-ASP.NET Core also supports the Model-View-Controller (MVC) pattern for building web apps. The Model defines the fundamental behaviors and data for the app and its components. The View provides the user interface. In ASP.NET Core, the View is defined using Razor syntax. The Controller is a class that receives requests and handles user actions.
+ASP.NET Core also supports the MVC pattern for building web apps. The Model defines the fundamental behaviors and data for the app and its components. The View uses HTML and Razor syntax to provide the UI. The Controller is a class that receives requests and handles user actions.
 
 Use the MVC pattern in your ASP.NET Core apps when you prefer that pattern for building web apps with a clear separation between the model, view, and controller.
 
