@@ -59,7 +59,7 @@ The following markup from your new Razor Page is an example of an `@` symbol fol
 }
 ```
 
-A Razor Page supports Razor syntax which allows you to combine HTML and C#. The C# code defines the dynamic rendering logic for the page on the server-side. The default Razor language is HTML. Rendering HTML from Razor markup is no different than rendering HTML from an HTML file. HTML markup in *:::no-loc text=".cshtml":::* Razor Page files is rendered by the server unchanged. In Razor Pages you can use HTML as you are used to while taking advantage of powerful and time saving razor features as you learn to use them.
+A Razor Page supports Razor syntax which allows you to combine HTML and C#. The C# code defines the dynamic rendering logic for the page on the server-side. The default Razor language is HTML. Rendering HTML from Razor markup is no different than rendering HTML from an HTML file. HTML markup in *:::no-loc text=".cshtml":::* Razor Page files is rendered by the server unchanged. In Razor Pages, you can use HTML as you are used to while taking advantage of powerful and time saving razor features as you learn to use them.
 
 ## Add form markup to the *Create* Razor Page
 
