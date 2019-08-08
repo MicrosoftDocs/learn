@@ -319,9 +319,7 @@ Update *Pages/Shared/_LoginPartial.cshtml* to display the first and last name co
 
 ## Test the changes to the profile management form
 
-1. In the browser window displaying your web app, select **Logout**.
-
-1. Log in with the first user you created.
+1. In the web app, log in with the first user you created.
 
 1. Click the **Hello, !** link to navigate to the profile management form.
 

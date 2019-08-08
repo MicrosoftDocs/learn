@@ -1,4 +1,4 @@
-<!-- TODO: add lead-in fluff? ¯\_(ツ)_/¯ -->
+In this unit, <!-- TODO -->
 
 ## Configure multi-factor authentication
 

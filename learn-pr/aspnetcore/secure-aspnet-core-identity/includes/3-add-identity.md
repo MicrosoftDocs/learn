@@ -290,4 +290,15 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
 
 1. Click the **Register** link in the app's header. Complete the form to create a new account.
 
-    After successful registration, notice that you're redirected back to the homepage. The app's header displays your email address and a **Logout** link.
+    After successful registration:
+
+    * You're redirected to the homepage.
+    * The app's header displays your email address and a **Logout** link.
+    * A cookie named `.AspNetCore.Identity.Application` is created.
+
+1. Click the **Logout** link in the app's header.
+
+    After successful logout:
+
+    * You're redirected to a page titled **Log out** located at the */Identity/Account/Logout* route.
+    * The `.AspNetCore.Identity.Application` cookie is deleted.
