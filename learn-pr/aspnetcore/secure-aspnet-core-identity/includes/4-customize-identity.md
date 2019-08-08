@@ -92,107 +92,109 @@ UI changes are also required to collect the additional user profile information.
 
     The `UpdateUser` EF Core migration applied a Data Definition Language (DDL) change script to the `AspNetUsers` table's schema. Specifically, `FirstName` and `LastName` columns were added.
 
-1. Examine the impact on the `AspNetUsers` table with the following steps.
+## Examine the `AspNetUsers` table
+
+Let's analyze the impact of the `UpdateUser` EF Core migration on the `AspNetUsers` table's schema.
 
 ::: zone pivot="pg"
 
-    1. Run the following command to view the table schema:
-    
-        ```bash
-        db -c '\d "AspNetUsers"'
-        ```
-    
-        The following output displays:
-    
-        <!-- TODO: can the Collation column be removed from the output? -->
-    
-        ```console
-                                            Table "public.AspNetUsers"
-                Column        |           Type           | Collation | Nullable |        Default
-        ----------------------+--------------------------+-----------+----------+-----------------------
-            Id                   | text                     |           | not null |
-            UserName             | character varying(256)   |           |          |
-            NormalizedUserName   | character varying(256)   |           |          |
-            Email                | character varying(256)   |           |          |
-            NormalizedEmail      | character varying(256)   |           |          |
-            EmailConfirmed       | boolean                  |           | not null |
-            PasswordHash         | text                     |           |          |
-            SecurityStamp        | text                     |           |          |
-            ConcurrencyStamp     | text                     |           |          |
-            PhoneNumber          | text                     |           |          |
-            PhoneNumberConfirmed | boolean                  |           | not null |
-            TwoFactorEnabled     | boolean                  |           | not null |
-            LockoutEnd           | timestamp with time zone |           |          |
-            LockoutEnabled       | boolean                  |           | not null |
-            AccessFailedCount    | integer                  |           | not null |
-            FirstName            | character varying(100)   |           | not null | ''::character varying
-            LastName             | character varying(100)   |           | not null | ''::character varying
-        ```
-    
-        The `FirstName` and `LastName` properties in the `ContosoPetsUser` class correspond to the `FirstName` and `LastName` columns in the preceding output. A data type of `character varying(100)` was assigned to each of the two columns because of the `[MaxLength(100)]` attributes. The non-null constraint was added because of the `[Required]` attributes.
-    
-    1. Scroll down until the following index information displays:
-    
-        ```console
-        Indexes:
-            "PK_AspNetUsers" PRIMARY KEY, btree ("Id")
-            "UserNameIndex" UNIQUE, btree ("NormalizedUserName")
-            "EmailIndex" btree ("NormalizedEmail")
-        ```
-    
-        The `PK_AspNetUsers` index shows that the `Id` column is the unique identifier for a user account.
-    
-    1. Press <kbd>q</kbd> to exit the text viewer.
+1. Run the following command to view the table schema:
+
+    ```bash
+    db -c '\d "AspNetUsers"'
+    ```
+
+    The following output displays:
+
+    <!-- TODO: can the Collation column be removed from the output? -->
+
+    ```console
+                                        Table "public.AspNetUsers"
+            Column        |           Type           | Collation | Nullable |        Default
+    ----------------------+--------------------------+-----------+----------+-----------------------
+        Id                   | text                     |           | not null |
+        UserName             | character varying(256)   |           |          |
+        NormalizedUserName   | character varying(256)   |           |          |
+        Email                | character varying(256)   |           |          |
+        NormalizedEmail      | character varying(256)   |           |          |
+        EmailConfirmed       | boolean                  |           | not null |
+        PasswordHash         | text                     |           |          |
+        SecurityStamp        | text                     |           |          |
+        ConcurrencyStamp     | text                     |           |          |
+        PhoneNumber          | text                     |           |          |
+        PhoneNumberConfirmed | boolean                  |           | not null |
+        TwoFactorEnabled     | boolean                  |           | not null |
+        LockoutEnd           | timestamp with time zone |           |          |
+        LockoutEnabled       | boolean                  |           | not null |
+        AccessFailedCount    | integer                  |           | not null |
+        FirstName            | character varying(100)   |           | not null | ''::character varying
+        LastName             | character varying(100)   |           | not null | ''::character varying
+    ```
+
+    The `FirstName` and `LastName` properties in the `ContosoPetsUser` class correspond to the `FirstName` and `LastName` columns in the preceding output. A data type of `character varying(100)` was assigned to each of the two columns because of the `[MaxLength(100)]` attributes. The non-null constraint was added because of the `[Required]` attributes.
+
+1. Scroll down until the following index information displays:
+
+    ```console
+    Indexes:
+        "PK_AspNetUsers" PRIMARY KEY, btree ("Id")
+        "UserNameIndex" UNIQUE, btree ("NormalizedUserName")
+        "EmailIndex" btree ("NormalizedEmail")
+    ```
+
+    The `PK_AspNetUsers` index shows that the `Id` column is the unique identifier for a user account.
+
+1. Press <kbd>q</kbd> to exit the text viewer.
 
 ::: zone-end
 
 ::: zone pivot="sql"
 
-    1. Run the following command to view the table schema:
-    
-        ```bash
-        db -Q "SELECT COLUMN_NAME, IS_NULLABLE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH AS MAX_LENGTH FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME='AspNetUsers'" -Y 20
-        ```
-    
-        The following output displays:
-    
-        ```console
-        COLUMN_NAME          IS_NULLABLE DATA_TYPE            MAX_LENGTH
-        -------------------- ----------- -------------------- -----------
-        Id                   NO          nvarchar                     450
-        UserName             YES         nvarchar                     256
-        NormalizedUserName   YES         nvarchar                     256
-        Email                YES         nvarchar                     256
-        NormalizedEmail      YES         nvarchar                     256
-        EmailConfirmed       NO          bit                         NULL
-        PasswordHash         YES         nvarchar                      -1
-        SecurityStamp        YES         nvarchar                      -1
-        ConcurrencyStamp     YES         nvarchar                      -1
-        PhoneNumber          YES         nvarchar                      -1
-        PhoneNumberConfirmed NO          bit                         NULL
-        TwoFactorEnabled     NO          bit                         NULL
-        LockoutEnd           YES         datetimeoffset              NULL
-        LockoutEnabled       NO          bit                         NULL
-        AccessFailedCount    NO          int                         NULL
-        FirstName            NO          nvarchar                     100
-        LastName             NO          nvarchar                     100
-        ```
-    
-        The `FirstName` and `LastName` properties in the `ContosoPetsUser` class correspond to the `FirstName` and `LastName` columns in the preceding output. A data type of `nvarchar(100)` was assigned to each of the two columns because of the `[MaxLength(100)]` attributes. The non-null constraint was added because of the `[Required]` attributes.
-    
-    1. Run the following command to view the primary key for the `AspNetUsers` table:
-    
-        ```bash
-        db -i $setupWorkingDirectory/list-aspnetusers-pk.sql -Y 15
-        ```
-    
-        The following output shows that the `Id` column is the unique identifier for a user account:
-    
-        ```console
-        Table           Column          Primary key
-        --------------- --------------- ---------------
-        AspNetUsers     Id              PK_AspNetUsers
-        ```
+1. Run the following command to view the table schema:
+
+    ```bash
+    db -Q "SELECT COLUMN_NAME, IS_NULLABLE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH AS MAX_LENGTH FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME='AspNetUsers'" -Y 20
+    ```
+
+    The following output displays:
+
+    ```console
+    COLUMN_NAME          IS_NULLABLE DATA_TYPE            MAX_LENGTH
+    -------------------- ----------- -------------------- -----------
+    Id                   NO          nvarchar                     450
+    UserName             YES         nvarchar                     256
+    NormalizedUserName   YES         nvarchar                     256
+    Email                YES         nvarchar                     256
+    NormalizedEmail      YES         nvarchar                     256
+    EmailConfirmed       NO          bit                         NULL
+    PasswordHash         YES         nvarchar                      -1
+    SecurityStamp        YES         nvarchar                      -1
+    ConcurrencyStamp     YES         nvarchar                      -1
+    PhoneNumber          YES         nvarchar                      -1
+    PhoneNumberConfirmed NO          bit                         NULL
+    TwoFactorEnabled     NO          bit                         NULL
+    LockoutEnd           YES         datetimeoffset              NULL
+    LockoutEnabled       NO          bit                         NULL
+    AccessFailedCount    NO          int                         NULL
+    FirstName            NO          nvarchar                     100
+    LastName             NO          nvarchar                     100
+    ```
+
+    The `FirstName` and `LastName` properties in the `ContosoPetsUser` class correspond to the `FirstName` and `LastName` columns in the preceding output. A data type of `nvarchar(100)` was assigned to each of the two columns because of the `[MaxLength(100)]` attributes. The non-null constraint was added because of the `[Required]` attributes.
+
+1. Run the following command to view the primary key for the table:
+
+    ```bash
+    db -i $setupWorkingDirectory/list-aspnetusers-pk.sql -Y 15
+    ```
+
+    The following output shows that the `Id` column is the unique identifier for a user account:
+
+    ```console
+    Table           Column          Primary key
+    --------------- --------------- ---------------
+    AspNetUsers     Id              PK_AspNetUsers
+    ```
 
 ::: zone-end
 
