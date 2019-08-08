@@ -18,7 +18,7 @@ pushd $srcWorkingDirectory/ContosoPets.Ui/Pages/Products
 	dotnet new page --name Create
 	```
 
-A new Razor Page named *:::no-loc text="Create.cshtml":::* and its *:::no-loc text="PageModel":::* class file named *:::no-loc text="Create.cshtml.cs":::* are created in the *:::no-loc text="ContosoPets.Ui/Pages/Products/":::* directory. By convention the Razor Page and its *:::no-loc text="PageModel":::* class file share the same name and location.
+	A new Razor page named *:::no-loc text="Create.cshtml":::* and its *:::no-loc text="PageModel":::* class file named *:::no-loc text="Create.cshtml.cs":::* are created in the *:::no-loc text="ContosoPets.Ui/Pages/Products/":::* directory. By convention, the Razor page and its *:::no-loc text="PageModel":::* class file share the same name and location.
 
 ## Examine the structure of a basic Razor Page
 
