@@ -37,7 +37,7 @@ pushd $srcWorkingDirectory/ContosoPets.Ui/Pages/Products
  The preceding default Razor Page contains:
 
 * Reserved Razor keywords:
-** The *:::no-loc text="@page":::* directive is what makes this a Razor Page. It indicates this page can handle HTTP requests. The *:::no-loc text="@page":::* directive must be the first directive on a Razor Page.
+	* The `@page` directive is what makes this a Razor page. It indicates this page can handle HTTP requests. The `@page` directive must be the first directive on a Razor page.
 ** The *:::no-loc text="@model":::* directive is Razor syntax specifying the type of the model made available to the Razor Page. In this case the *:::no-loc text="ContosoPets.UI.Pages.Products.Create":::* PageModel-derived class. *:::no-loc text="ContosoPets.UI.Pages.Products.CreateModel":::* was automatically defined in the *:::no-loc text="Create.cshtml.cs":::* class file. The *:::no-loc text="Create.cshtml.cs":::* file was generated when you made a new Razor Page named *:::no-loc text="Create":::*.
 * C# code: *:::no-loc text="@";;;* character is followed by C# code. The *:::no-loc text="@";;;* character starts C# inline expressions, single statement blocks, and multi-statement blocks.
 * HTML such as an *:::no-loc text="<h1>":::* tag. 
