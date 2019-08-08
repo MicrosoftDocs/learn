@@ -14,7 +14,18 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
     dotnet tool install -g dotnet-aspnet-codegenerator
     ```
 
-    The scaffolder is a .NET Core global tool that will be used to add the default Identity components to the project. The scaffolder also enables customization in the next unit.
+    If successfully installed, the following output appears:
+
+    ```console
+    You can invoke the tool using the following command: dotnet-aspnet-codegenerator
+    Tool 'dotnet-aspnet-codegenerator' (version '<VERSION>') was successfully installed.
+    ```
+
+    The scaffolder is a .NET Core global tool that will:
+
+    * Be used to add the default Identity components to the project.
+    * Enable customization of Identity UI components in the next unit.
+    * Be invoked via `dotnet aspnet-codegenerator` in this module.
 
 1. Add the following NuGet package to the project:
 
@@ -66,6 +77,8 @@ Run the following command from the project root to install the PostgreSQL databa
 ```bash
 dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
 ```
+
+This NuGet package provides EF Core with knowledge of how to interact with a PostgreSQL database.
 
 ::: zone-end
 
@@ -160,7 +173,7 @@ dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
     app.UseAuthentication();
     ```
 
-1. Run the following command to print the database connection string to the console:
+1. Run the following command to print the database connection string to the console. Copy the connection string to your clipboard.
 
     ```bash
     echo $dbConnectionString
