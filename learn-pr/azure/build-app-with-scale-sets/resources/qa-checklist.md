@@ -1,3 +1,11 @@
+metadata:
+  title: QA Checklist
+  ms.date: 8/5/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+
 # QA checklist
 
 1. Shape
