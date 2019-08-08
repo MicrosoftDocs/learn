@@ -4,7 +4,7 @@ Now that you have added a *:::no-loc text="Create":::* Razor Page form and its *
 
 ### Build your *:::no-loc text="ContosoPets.UI":::* application
 
-1. Run the following command in the command shell to ensure you are still at the project directory:
+1. Run the following command in the command shell to return to the project directory:
 
     ```bash
     cd ./razor-pages-example/src/ContosoPets.UI
