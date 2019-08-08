@@ -4,7 +4,7 @@ In this unit, you will create a form in the *:::no-loc text="ContosoPets.UI":::*
 
 The *:::no-loc text="ContosoPets.UI":::* project directory should be currently open in the [Azure Cloud Shell editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor). If it's not, repeat the setup steps in the previous *Set up the environment* unit.
 
-Run the following command in the command shell:
+1. Run the following command in the command shell:
 
 ```bash
 pushd $srcWorkingDirectory/ContosoPets.Ui/Pages/Products
