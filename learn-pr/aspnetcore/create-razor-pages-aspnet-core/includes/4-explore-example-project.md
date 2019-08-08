@@ -68,7 +68,7 @@ The following are routing examples for this completed project:
     |*:::no-loc text="www.domain.com/products":::*            |*:::no-loc text="/Pages/Products/index.cshtml":::*     |                                                  
     |*:::no-loc text="www.domain.com/products/create":::*     |*:::no-loc text="/Pages/Products/create.cshtml":::*    |
 
-### Organizing groups of related Razor Pages
+### Organize groups of related Razor pages
 
 The *:::no-loc text="ContosoPets.UI":::* project's purpose is to provide a basic UI client to execute Create, Read, Update, and Delete (CRUD) operations through your company's web API endpoint to manage product listings.
 The *:::no-loc text="Pages/Product":::* directory groups all the Razor Pages that provide the UI for those CRUD operations and thier *:::no-loc text="PageModel":::* class files.
