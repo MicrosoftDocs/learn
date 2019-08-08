@@ -31,7 +31,7 @@ A model object defines data properties and encapsulates logic or operations rela
 
 By convention, model class files are located in a *:::no-loc text="Models/":::* directory. As previously mentioned, a model object defines data properties and encapsulates logic or operations related to those data properties.
 
-The *:::no-loc text="ContosoPets.UI":::* project has a model class file named *:::no-loc text="Product.cs":::* stored in the *:::no-loc text="Models/":::* directory. The *:::no-loc text="Product":::* model class defines the data properties for a Product. The PageModels for all RazorPages in this project that center on CRUD operations for products, use this single `Product` model.
+The *:::no-loc text="ContosoPets.UI":::* project has a model class file named *:::no-loc text="Product.cs":::* stored in the *:::no-loc text="Models/":::* directory. The *:::no-loc text="Product":::* model class defines the data properties for a product. All PageModels in the project that center on CRUD operations for products use this single `Product` model.
 
 ### DataAnnotations
 
