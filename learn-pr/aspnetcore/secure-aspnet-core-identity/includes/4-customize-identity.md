@@ -92,7 +92,7 @@ UI changes are also required to collect the additional user profile information.
 
     The `UpdateUser` EF Core migration applied a Data Definition Language (DDL) change script to the `AspNetUsers` table's schema. Specifically, `FirstName` and `LastName` columns were added.
 
-## Examine the `AspNetUsers` table
+## Examine the table schema changes
 
 Let's analyze the impact of the `UpdateUser` EF Core migration on the `AspNetUsers` table's schema.
 
