@@ -7,7 +7,7 @@ Now that you have added a *:::no-loc text="Create":::* Razor Page form and its *
 1. Run the following command in the command shell to return to the project directory:
 
     ```bash
-    cd ./razor-pages-example/src/ContosoPets.UI
+    popd
     ```
 
     The current directory should now be the *:::no-loc text="ContosoPets.UI":::* directory.
