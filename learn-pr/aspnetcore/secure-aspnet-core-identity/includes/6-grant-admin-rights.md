@@ -121,7 +121,7 @@ The preceding code defines an authorization policy named `Admin`. The policy req
 
         ```csharp
         [DataType(DataType.Password)]
-        [Display(Name = "Admin creation key")]
+        [Display(Name = "Admin enrollment key")]
         public long? AdminCreationKey { get; set; }
         ```
 
@@ -160,6 +160,6 @@ The preceding code defines an authorization policy named `Admin`. The policy req
     > [!NOTE]
     > This administrator self-enrollment mechanism is for illustrative purposes only and should not be used in production environments.
 
-1. In the web app, register a new user, using the token from the previous step for the **Admin creation key** field.
+1. In the web app, register a new user. The token from the previous step should be provided in the **Admin enrollment key** text box.
 
 1. Once logged in with the new administrative user, note that the administrative user can view, edit, and create products.
