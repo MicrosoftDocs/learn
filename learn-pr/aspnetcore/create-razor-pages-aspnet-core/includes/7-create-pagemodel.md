@@ -20,7 +20,7 @@ namespace Contoso.UI.Pages.Products
 A Razor Page's *:::no-loc text="PageModel":::* class file defines any page handlers for requests sent to the page, and data used to render the page. The *:::no-loc text="PageModel":::* keeps those concerns separate from the Razor Page, your application more modular, and much easier to maintain.
 By convention, the *:::no-loc text="PageModel":::* class is called *:::no-loc text="<PageName>Model":::* and is in the same namespace as the Razor Page. In this case, the `CreateModel` class in the namespace of `ContosoPets.Ui.Pages.Products`.
 
-Currently the `CreateModel` class handles the GET request by default and does nothing with it.
+Currently, the `CreateModel` class handles the HTTP GET request and does nothing with it.
 
 You can add handler methods for any HTTP verb. The most common handlers are:
 
