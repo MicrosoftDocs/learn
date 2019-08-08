@@ -1,4 +1,4 @@
-
+<!-- TODO: add lead-in fluff? ¯\_(ツ)_/¯ -->
 
 ## Configure multi-factor authentication
 
@@ -39,11 +39,7 @@
 
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
 
-1. Deploy the app by running the following command:
-
-    ```bash
-    az webapp up
-    ```
+1. [!INCLUDE[az webapp up command](../../includes/az-webapp-up-command.md)]
 
 1. Navigate to the site and login with either registered user (if required). Select **Hello, [First Name] [Last Name]!** link to navigate to the profile management page, and then select **Two-factor authentication**.
 

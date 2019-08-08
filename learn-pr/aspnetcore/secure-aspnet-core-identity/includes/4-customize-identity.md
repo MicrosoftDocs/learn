@@ -83,6 +83,8 @@ UI changes are also required to collect the additional user profile information.
 
         The preceding code resolves the data annotation attributes applied to the `FirstName` and `LastName` properties.
 
+## Update the database
+
 1. Create and apply an EF Core migration to update the underlying data store:
 
     ```bash
@@ -90,23 +92,19 @@ UI changes are also required to collect the additional user profile information.
         dotnet ef database update
     ```
 
-    The `UpdateUser` EF Core migration applied a Data Definition Language (DDL) change script to the `AspNetUsers` table's schema. Specifically, `FirstName` and `LastName` columns were added.
+    The `UpdateUser` EF Core migration applied a DDL change script to the `AspNetUsers` table's schema. Specifically, `FirstName` and `LastName` columns were added.
 
-## Examine the table schema changes
-
-Let's analyze the impact of the `UpdateUser` EF Core migration on the `AspNetUsers` table's schema. After completing the following steps, you'll gain an understanding of the impact extending the Identity data model has on the underlying data store.
+    Let's analyze the impact of the `UpdateUser` EF Core migration on the `AspNetUsers` table's schema. After completing the following steps, you'll gain an understanding of the impact extending the Identity data model has on the underlying data store.
 
 ::: zone pivot="pg"
 
-1. Run the following command to view the table schema:
+2. Run the following command to view the table schema:
 
     ```bash
     db -c '\d "AspNetUsers"'
     ```
 
     The following output displays:
-
-    <!-- TODO: can the Collation column be removed from the output? -->
 
     ```console
                                         Table "public.AspNetUsers"
@@ -133,7 +131,7 @@ Let's analyze the impact of the `UpdateUser` EF Core migration on the `AspNetUse
 
     The `FirstName` and `LastName` properties in the `ContosoPetsUser` class correspond to the `FirstName` and `LastName` columns in the preceding output. A data type of `character varying(100)` was assigned to each of the two columns because of the `[MaxLength(100)]` attributes. The non-null constraint was added because of the `[Required]` attributes.
 
-1. Scroll down until the following index information displays:
+3. Scroll down until the following index information displays:
 
     ```console
     Indexes:
@@ -144,13 +142,13 @@ Let's analyze the impact of the `UpdateUser` EF Core migration on the `AspNetUse
 
     The `PK_AspNetUsers` index shows that the `Id` column is the unique identifier for a user account.
 
-1. Press <kbd>q</kbd> to exit the text viewer.
+4. Press <kbd>q</kbd> to exit the text viewer.
 
 ::: zone-end
 
 ::: zone pivot="sql"
 
-1. Run the following command to view the table schema:
+2. Run the following command to view the table schema:
 
     ```bash
     db -Q "SELECT COLUMN_NAME, IS_NULLABLE, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH AS MAX_LENGTH FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME='AspNetUsers'" -Y 20
@@ -182,7 +180,7 @@ Let's analyze the impact of the `UpdateUser` EF Core migration on the `AspNetUse
 
     The `FirstName` and `LastName` properties in the `ContosoPetsUser` class correspond to the `FirstName` and `LastName` columns in the preceding output. A data type of `nvarchar(100)` was assigned to each of the two columns because of the `[MaxLength(100)]` attributes. The non-null constraint was added because of the `[Required]` attributes.
 
-1. Run the following command to view the primary key for the table:
+3. Run the following command to view the primary key for the table:
 
     ```bash
     db -i $setupWorkingDirectory/list-aspnetusers-pk.sql -Y 15
@@ -200,7 +198,7 @@ Let's analyze the impact of the `UpdateUser` EF Core migration on the `AspNetUse
 
 ## Customize the user registration form
 
-1. In *Areas/Identity/Pages/Account/Register.cshtml*, add the following markup to the line immediately after `<div asp-validation-summary="All" class="text-danger"></div>`:
+1. In *Areas/Identity/Pages/Account/Register.cshtml*, add the following highlighted markup:
 
     [!code-cshtml[](../code/Areas/Identity/Pages/Account/4-Register-FirstAndLastName.cshtml?range=1-19&highlight=5-14)]
 
@@ -239,7 +237,7 @@ Update *Pages/Shared/_LoginPartial.cshtml* to display the first and last name co
 
 ## Customize the profile management form
 
-1. In *Areas/Identity/Pages/Account/Manage/Index.cshtml*, add the following markup to the line immediately after `<div asp-validation-summary="All" class="text-danger"></div>`. Save your changes.
+1. In *Areas/Identity/Pages/Account/Manage/Index.cshtml*, add the following highlighted markup. Save your changes.
 
     [!code-cshtml[](../code/Areas/Identity/Pages/Account/Manage/4-Index-FirstAndLastName.cshtml?range=1-16&highlight=3-12)]
 
@@ -264,13 +262,7 @@ Update *Pages/Shared/_LoginPartial.cshtml* to display the first and last name co
 
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
 
-1. Deploy the app by running the following command:
-
-    ```bash
-    az webapp up
-    ```
-
-    The preceding command deploys the app to Azure App Service. The *.azure/config* file contains the configuration values used by `az webapp up`.
+1. [!INCLUDE[az webapp up command](../../includes/az-webapp-up-command.md)]
 
 1. In your browser, navigate to the app. Select **Logout** if you're still logged in.
 

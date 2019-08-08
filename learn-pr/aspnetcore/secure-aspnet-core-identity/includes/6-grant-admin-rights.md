@@ -143,11 +143,7 @@ The preceding code defines an authorization policy named `Admin`. The policy req
 
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
 
-1. Deploy the site by running the following command:
-
-    ```bash
-    az webapp up
-    ```
+1. [!INCLUDE[az webapp up command](../../includes/az-webapp-up-command.md)]
 
 1. Navigate to your app and login with an existing user, if required. Select **Products** from near the top. Note that your user is is not presented links to edit, delete, or create products.
 

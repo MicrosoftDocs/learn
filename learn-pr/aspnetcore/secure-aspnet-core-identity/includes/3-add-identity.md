@@ -214,6 +214,8 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
         dotnet ef database update
     ```
 
+    The `CreateIdentitySchema` EF Core migration applied a Data Definition Language (DDL) change script to create the tables supporting Identity.
+
 1. Run the following command to list the tables in the database:
 
     ::: zone pivot="pg"
@@ -275,11 +277,7 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
 
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
 
-1. Deploy the app to Azure App Service by running the following command:
-
-    ```bash
-    az webapp up
-    ```
+1. [!INCLUDE[az webapp up command](../../includes/az-webapp-up-command.md)]
 
     > [!NOTE]
     > The *.azure/config* file in the project root contains the configuration values used by `az webapp up`.
