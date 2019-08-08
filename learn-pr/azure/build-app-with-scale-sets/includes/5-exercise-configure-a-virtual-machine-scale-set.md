@@ -4,23 +4,27 @@ Additionally, to save costs, you also want to get the scale set to scale back in
 
 In this exercise, you'll configure autoscaling, and define scale rules that scale out and back again, according to the CPU utilization of the system.
 
+> [!NOTE]
+> This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to use the REST API to retrieve metrics.
+> If you want to complete this exercise but you don't have an Azure subscription or prefer not to use your own account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+
 ## Create a scale-out scale rule
 
-1. Return to the Azure portal.
+1. Return to the [Azure portal](https://portal.azure.com).
 
-2. Go to the page for the virtual machine scale set.
+1. Go to the page for the virtual machine scale set.
 
-3. On the virtual machine scale set page, under **Settings**, select **Scaling**.
+1. On the virtual machine scale set page, under **Settings**, select **Scaling**.
 
-4. Select **Enable autoscale**.
+1. Select **Custom autoscale**.
 
     ![Screenshot of the virtual machine scale set page](../media/5-enable-autoscale.png)
 
-5. In the **Default** scale rule, set the **Scale mode** to **Scale based on a metric**, and then select **+ Add a rule**.
+1. In the **Default** scale rule, check that the **Scale mode** is set to **Scale based on a metric**, and then select **+ Add a rule**.
 
    ![Screenshot of the virtual machine scale set page](../media/5-add-rule.png)
 
-6. On the **Scale rule** page, specify the following settings, and then select **Add**:
+1. On the **Scale rule** page, specify the following settings, and then select **Add**:
 
     | Property  | Value  |
     |---|---|
@@ -39,7 +43,7 @@ In this exercise, you'll configure autoscaling, and define scale rules that scal
 
 1. In the **Default** scale rule, select **+ Add a rule** again.
 
-2. On the **Scale rule** page, specify the following settings, and then select **Add**:
+1. On the **Scale rule** page, specify the following settings, and then select **Add**:
 
     | Property  | Value  |
     |---|---|
@@ -54,7 +58,7 @@ In this exercise, you'll configure autoscaling, and define scale rules that scal
     | Instance count | 1 |
     | Cool down (minutes) | 5 |
 
-3. Select **Save**.
+1. Select **Save**.
 
     The **Default** scale condition now contains two scale rules. One rule scales the number of instances out, and another rule scales the number of instances back in again.
 

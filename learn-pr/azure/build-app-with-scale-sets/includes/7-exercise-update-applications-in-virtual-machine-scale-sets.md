@@ -2,27 +2,13 @@ In the shipping company scenario, you installed a web application by creating th
 
 In this exercise, you'll use a custom script extension to roll out a new version of the web app. You'll amend the message output by the **nginx** server – but you can use the same approach to do more substantial updates.
 
-## Create a custom script to update the web application
+> [!NOTE]
+> This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to use the REST API to retrieve metrics.
+> If you want to complete this exercise but you don't have an Azure subscription or prefer not to use your own account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
-1. In the Cloud Shell, start the Code editor and create a file named **appv2.json**.
+## Deploy the web application's update using a custom script extension
 
-    ```bash
-    code appv2.json
-    ```
-
-2. Add the following text to the file:
-
-    ```json
-    {
-        "commandToExecute": "echo This is the updated app installed on the Virtual Machine Scale Set ! > /var/www/html/index.html"
-    }
-    ```
-
-    The `commandToExecute` field contains the script that will be run to update the web application.
-
-3. Press Ctrl-S to save the file, and then press Ctrl-Q to close the Code editor.
-
-## Deploy the update using a custom script extension
+1. Return to the [Azure portal](https://portal.azure.com).
 
 1. Run the following command to view the current upgrade policy for the scale set:
 
@@ -37,14 +23,13 @@ In this exercise, you'll use a custom script extension to roll out a new version
 
 1. Run the following command to apply the update script:
 
-    ```azurecli
-    az vmss extension set \
-        --publisher Microsoft.Azure.Extensions \
-        --version 2.0 \
-        --name CustomScript \
-        --vmss-name webServerScaleSet \
-        --resource-group scalesetrg \
-        --settings @appV2.json
+    ```az vmss extension set \
+    --publisher Microsoft.Azure.Extensions \
+    --version 2.0 \
+    --name CustomScript \
+    --vmss-name webServerScaleSet \
+    --resource-group scalesetrg \
+    --settings "{\"commandToExecute\": \"echo This is the updated app installed on the Virtual Machine Scale Set ! > /var/www/html/index.html\"}"
     ```
 
 ## Test the updated web application
@@ -59,6 +44,6 @@ In this exercise, you'll use a custom script extension to roll out a new version
         --query ipAddress
     ```
 
-2. Using your web browser, go to the public address of the scale set load balancer in the web browser. Verify that the message **This is the updated app installed on the Virtual Machine Scale Set** appears.
+1. Using your web browser, go to the public address of the scale set load balancer in the web browser. Verify that the message **This is the updated app installed on the Virtual Machine Scale Set** appears.
 
     ![Screenshot of the updated web app](../media/7-web-app.png)

@@ -2,9 +2,13 @@ You have identified the need to use a scale set to run the web application for t
 
 Your first task is to create a scale set, and configure it to run a web server – in this case, **nginx**. When you've configured the scale set correctly, you'll deploy your web application. Then you'll set up a health probe that Azure uses to verify the availability of each virtual machine in the scale set. Finally, you'll test the scale set by sending requests from a web browser.
 
+> [!NOTE]
+> This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to use the REST API to retrieve metrics.
+> If you want to complete this exercise but you don't have an Azure subscription or prefer not to use your own account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+
 ## Deploy a virtual machine scale set
 
-1. Sign in to the Azure portal using your own account, and open the Azure Cloud Shell.
+1. Sign in to the [Azure portal](https://portal.azure.com) using your own account, and open the Azure Cloud Shell.
 2. In the Cloud Shell, start the Code editor and create a file named **cloud-init.yaml**.
 
     ```bash

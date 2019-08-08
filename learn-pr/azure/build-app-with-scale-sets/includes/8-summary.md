@@ -19,4 +19,5 @@ You applied your knowledge to shipping company's system. You deployed their web 
 - [Using Application Health extension with virtual machine scale sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-health-extension)
 - [Working with large virtual machine scale sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-placement-groups)
 - [Custom Script Extension for Windows](https://docs.microsoft.com/azure/virtual-machines/extensions/custom-script-windows)
-- [Use the Azure Custom Script Extension Version 2 with Linux virtual machines](https://docs.microsoft.com/azure/virtual-machines/extensions/custom-script-linux).
+- [Use the Azure Custom Script Extension Version 2 with Linux virtual machines](https://docs.microsoft.com/azure/virtual-machines/extensions/custom-script-linux)
+- [Use the Application Health extension with virtual machine scale sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-health-extension)
