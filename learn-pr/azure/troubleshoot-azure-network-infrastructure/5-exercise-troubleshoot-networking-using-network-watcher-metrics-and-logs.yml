@@ -11,5 +11,6 @@ metadata:
   ROBOTS: NOINDEX
 title: Exercise - Troubleshoot networking using Network Watcher metrics and logs
 durationInMinutes: 10
+azureSandbox: true
 content: |
   [!include[](includes/5-exercise-troubleshoot-networking-using-network-watcher-metrics-and-logs.md)]

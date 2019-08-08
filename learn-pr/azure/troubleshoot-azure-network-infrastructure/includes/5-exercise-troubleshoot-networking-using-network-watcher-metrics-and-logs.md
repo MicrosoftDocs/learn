@@ -14,7 +14,7 @@ NSG flow logging requires Microsoft.Insights provider. To register for the Micro
 1. In the search bar, type **microsoft.insights**. 
 1. If the status of the **microsoft.insghts** provider is **Unregistered**, then click **Register**.
 
-    ![Registering the Insights provider](../media/microsoft-insights.png)
+    ![Registering the Insights provider](../media/5-microsoft-insights.png)
 
 ## Create a storage account
 
@@ -36,7 +36,7 @@ Now, create a storage account for the NSG flow logs:
 
 1. Click **Review + create** and then click **Create**.
 
-    ![Creating a storage account](../media/storage-account.png)
+    ![Creating a storage account](../media/5-storage-account.png)
 
 ## Create log analytics workspace
 
@@ -54,7 +54,7 @@ To view the NSG flow logs, you will use log analytics. To install log analytics:
     | Pricing tier | Per GB |
     | | |
 
-    ![Creating a log analytics workspace](../media/log-analytics-workspace.PNG)
+    ![Creating a log analytics workspace](../media/5-log-analytics-workspace.png)
 
 ## Enable flow logging
 

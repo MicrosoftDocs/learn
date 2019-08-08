@@ -12,7 +12,7 @@ Here, you will troubleshoot connectivity between two VMs in different subnets.
 
 Let's start by creating the problematic infrastructure, which includes a configuration error:
 
-1. To create the virtual network **MyVNet1** and **FrontendSubnet**, run this command:
+1. In the Cloud Shell, to create the virtual network **MyVNet1** and **FrontendSubnet**, run this command:
 
     ```bash
     az network vnet create --resource-group <rgn>[sandbox resource group name]</rgn> \
@@ -99,8 +99,6 @@ Now let's use the Azure CLI to set up Network Watcher in the same region as the 
 
 To enable Network Watcher, run this command:
 
-<!-- TODO: This command currently causes a policy error in the sandbox. Policy to be updated to allow network watcher. -->
-
 ```bash
 az network watcher configure --resource-group <rgn>[sandbox resource group name]</rgn> \ 
   --locations EastUS \
@@ -115,8 +113,7 @@ Now you can use Network Watcher to troubleshoot connectivity between two VMs in 
 1. Navigate to **All Services > Networking > Network Watcher** and then click **Topology**.
 1. In the drop-down lists, select the only subscription and resource group. Network Watcher displays your network topology:
 
-    ![Network topology](../media/network-topology.png)
-
+    ![Network topology](../media/3-network-topology.png)
 
 ## Use connection monitor to run tests from the backend to the frontend
 
@@ -135,7 +132,7 @@ The topology appears to be correct. Let's set up some tests in connection monito
     | Probing interval | 30 seconds |
     | | |
 
-    ![Back-to-front RDP test](../media/back-to-front-rdp-test.png)
+    ![Back-to-front RDP test](../media/3-back-to-front-rdp-test.png)
 
 1. Click **+ Add** and then configure a second test with these values, and then click **Add**:
 
@@ -213,7 +210,7 @@ Let's use the IP flow test tool to obtain more information:
     | Remote port | 3389 |
     | | |
 
-    ![IP flow test](../media/ip-flow-test.png)
+    ![IP flow test](../media/3-ip-flow-test.png)
 
 1. Examine the results. They show that access is denied due to NSG and security rule. 
 

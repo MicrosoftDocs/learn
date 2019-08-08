@@ -40,7 +40,7 @@ We use the Azure portal to view the topology of an Azure network. In the Azure p
 
 Here's an example of a topology generated for a virtual network named MyVNet:
 
-![Virtual network topology as shown in Network Watcher](../media/network-watcher-topology.png)
+![Virtual network topology as shown in Network Watcher](../media/2-network-watcher-topology.png)
 
 ### What is the Connection Monitor tool?
 

@@ -8,16 +8,24 @@ In this module, you will focus on flow logs, diagnostic logs, and traffic analyt
 
 Each Microsoft Azure resource can be used up to its quota. Each subscription has separate quotas and usage is tracked per subscription. Only one instance of Network Watcher is required per subscription per region. This instance gives you a view of usage and quotas, so that you can see if you are at risk of hitting a quota. 
 
-To view the usage and quota information, navigate to **All Services > Networking > Network Watcher**, and then scroll to the bottom of the list and select **usage and quota**. You can view more granular data based on usage and the location where the resources are being used. You can view data for metrics such as:
+To view the usage and quota information, navigate to **All Services > Networking > Network Watcher**, and then select **Usage and quotas**. You can view more granular data based on usage and the location where the resources are being used. You can view data for metrics such as:
 
 - Network interfaces
 - Network security groups
 - Virtual networks
 - Public IP addresses
 
+![Usage and quotas](../media/4-usage-and-quotas.png)
+
 ## Logs
 
-Network diagnostic logs provide granular data to better understand connectivity and performance issue.
+Network diagnostic logs provide granular data, which you can use to better understand connectivity and performance issue. There are three log display tools in Network Watcher:
+
+- Flow logs
+- Diagnostic logs
+- Traffic analytics
+
+Let's look at each of these tools in turn.
 
 ### Flow logs
 
@@ -31,43 +39,33 @@ In flow logs you can view information about ingress and egress IP traffic on net
 
 This diagram shows the work flow that NSG follows:
 
-![NSG Workflow](../media/nsg-rule-flow.png)
+![NSG Workflow](../media/4-nsg-rule-flow.png)
 
-If you have a large infrastructure in Azure, you may have to view 100 logs or more. The data in flow logs is stored in a JSON file. It can be difficult to gain insights into flow logging data by manually searching the log files. You can use Power BI to help visual NSG flow logs. In Power BI, you can view the logs by:
+If you have a large infrastructure in Azure, you may have to view hundreds of logs. The data in flow logs is stored in a JSON file. It can be difficult to gain insights into flow logging data by manually searching the log files. You can use Power BI to help visualize NSG flow logs. In Power BI, you can view the logs by. for example:
 
 - Top talkers (IP add)
 - Flows by direction (inbound and outbound)
 - Flows by decision (allowed and denied)
 - Flows by destination port
 
-There are many more ways to customize Power BI to match your needs. 
-
 You can also use open-source tools to analyze your logs, such as Elastic Stack, Grafana, and Graylog.
 
 > [!NOTE]
-> NSG flow logs do not support storage accounts on classic Azure portal. 
+> NSG flow logs do not support storage accounts on the classic Azure portal. 
 
 ### Diagnostic logs
 
-In Network Watcher, the Diagnostic Logs tool is a central place to enable and disable logs for Azure networking resources, such as NSGs, public IPs, load balancers, and application gateways. You can store and view diagnostic logs using Log Analytics.
+In Network Watcher, the Diagnostic Logs tool is a central place to enable and disable logs for Azure networking resources, such as NSGs, public IPs, load balancers, and application gateways. Once you have enabled the logs that interest you, you can use the tools to query and view log entries. 
+
+As for flow logs, you can import diagnostic logs into Power BI and other tools to analyze them.
 
 ### Traffic Analytics
 
-Use the Traffic Analytics tool to investigate user and application activity across your cloud networks. The tool gives insights into network activity across subscriptions. You can diagnose security threats, such as open ports, VMs communicating with known bad networks, and traffic flow patterns. Traffic Analytics analyses NSG flow logs across Azure regions and subscriptions. You can use the data to optimize network performance. This tool requires log analytics. The Log Analytics workspace must exist in one of the following supported regions:
+Use the Traffic Analytics tool to investigate user and application activity across your cloud networks. 
 
-- Canada Central
-- West Central US
-- West US 2
-- East US
-- France Central
-- West Europe
-- UK South
-- Australia Southeast
-- Southeast Asia
-- Korea Central
-- Central India
-- Japan East
-- US Gov Virginia
+The tool gives insights into network activity across subscriptions. You can diagnose security threats, such as open ports, VMs communicating with known bad networks, and traffic flow patterns. Traffic Analytics analyzes NSG flow logs across Azure regions and subscriptions. You can use the data to optimize network performance. 
+
+This tool requires log analytics. The Log Analytics workspace must exist in a supported region.
 
 ## Use case scenarios
 
