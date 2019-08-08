@@ -51,7 +51,7 @@ Now listening on: https://localhost:5001
 Now listening on: http://localhost:5000
 ```
 
-The output describes the situation after starting your app: the application is running and listening at port 5000 and 5001.
+The preceding output indicates the application is running and listening on ports 5000 and 5001.
 
 1. Press <kbd>Ctrl+C</kbd> to stop the app.
 
