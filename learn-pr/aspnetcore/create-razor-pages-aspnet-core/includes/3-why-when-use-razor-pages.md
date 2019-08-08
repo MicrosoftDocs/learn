@@ -19,7 +19,7 @@ Use Razor Pages in your ASP.NET Core application when:
 
 * You want to generate dynamic UI for a browser from your ASP.NET Core application.
 * You prefer a page-focused approach to developing web apps, where the page markup and *:::no-loc text="PageModel":::* are in close proximity.
-* You want your page-focused ASP.NET Core application to use shared common HTML structures across your site and reusable partial views.
+* You want your page-focused ASP.NET Core application to use shared common HTML elements across your site and reusable partial views.
 
 Razor Pages allow you to keep your ASP.NET Core pages organized in a simpler way:
 
