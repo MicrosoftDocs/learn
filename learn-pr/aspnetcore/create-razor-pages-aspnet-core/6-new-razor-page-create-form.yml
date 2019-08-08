@@ -11,7 +11,7 @@ metadata:
   ROBOTS: NOINDEX
 title: Create the Razor Page for a Create Product form
 azureSandbox: true
-interactive: bash
+interactive: bash-editor
 durationInMinutes: 9
 content: |
   [!include[](includes/6-new-razor-page-create-form.md)]
