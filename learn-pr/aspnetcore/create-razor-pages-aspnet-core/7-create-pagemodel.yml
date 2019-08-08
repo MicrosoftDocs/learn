@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
   ROBOTS: NOINDEX
-title: Code the Create RazorPage PageModel Class
+title: Modify the page model
 azureSandbox: true
 interactive: bash
 durationInMinutes: 12
