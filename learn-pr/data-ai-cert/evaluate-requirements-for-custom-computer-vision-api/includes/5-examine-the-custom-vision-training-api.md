@@ -28,7 +28,7 @@ The Training API endpoint is available in the **Settings** pane of your Custom V
 
 After you identify the proper URL, you invoke it with an HTTP PUT request, passing the request in the body and the training key as a request header with the name `Training-Key`.
 
-The body of the request can be structured using most available media types - `"application/json"`, `"application/xml"`, `"text/xml"`, or `"application/x-www-form-urlencoded"`. You can select the easiest one to work within your language or framework. The `Content-Type` header value will determine the content payload type you supply.
+You can use most available media types to structure the body of the request: `"application/json"`, `"application/xml"`, `"text/xml"`, or `"application/x-www-form-urlencoded"`. You can choose the one that's easiest to work with in your language or framework. The `Content-Type` header value will determine the content payload type you supply.
 
 Each **CreateImages** request takes a list of images (or URLs) and an optional set of tags. Here's an example of a valid request body for **CreateImagesFromUrls** (in JSON):
 
@@ -46,7 +46,7 @@ Each **CreateImages** request takes a list of images (or URLs) and an optional s
 }
 ```
 
-The `tagIds` collections are optional and can be omitted if empty. You can supply tags either per-image (if they are different for each image), or for the entire collection of images through the second tag collection. You must provide the unique identifier for the tag - this can be retrieved from the web portal, or using HTTP `GET` to invoke the `{endpoint}/customvision/v3.0/training/projects/{projectId}/tags` method. Here's an example response:
+The `tagIds` collections are optional. You can be omit them if you're not using them. You can supply tags either per-image (if they're different for each image) or for the entire collection of images through the second tag collection. You must provide the unique identifier for the tag. You can retrieve this identifier from the web portal or by using HTTP GET to invoke the `{endpoint}/customvision/v3.0/training/projects/{projectId}/tags` method. Here's an example response:
 
 ```json
 [
@@ -76,7 +76,7 @@ The `tagIds` collections are optional and can be omitted if empty. You can suppl
 
 ### Calling the service
 
-Once the request is built, an HTTP `PUT` method is used to invoke the API. Here's an example in C#:
+After you've built the request, you can use an HTTP PUT method to invoke the API. Here's an example in C#:
 
 ```csharp
 public async Task<string> AddTrainingImageAsync(string url, string trainingKey, string[] imageUrls, string[] tags)
@@ -93,7 +93,7 @@ public async Task<string> AddTrainingImageAsync(string url, string trainingKey, 
 }
 ```
 
-In Python, the code would look something like:
+In Python, the code would look something like this example:
 
 ```python
 import http.client, urllib.request, urllib.parse, urllib.error, base64
@@ -118,7 +118,7 @@ except Exception as e:
 
 ### Processing the result
 
-The response coming back from the service will be in the same format as the request (this can be influenced through the `Accepts` header value). The returned object will have an overall result (`isBatchSuccessful`) and an entry for each passed image to indicate whether it was processed or not. Here's an example result for the `CreateImagesFromUrls` method.
+The response coming back from the service will be in the same format as the request. (You can influence this behavior by using the `Accepts` header value.) The returned object will have an overall result (`isBatchSuccessful`) and an entry for each passed image to indicate whether it was processed. Here's an example result for the `CreateImagesFromUrls` method:
 
 ```json
 {
