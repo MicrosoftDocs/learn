@@ -32,7 +32,6 @@ A new Razor Page named *:::no-loc text="Create.cshtml":::* and its *:::no-loc te
 @{
 }
 
-<h1>Create</h1>
 ```
 
  The preceding default Razor Page contains:
