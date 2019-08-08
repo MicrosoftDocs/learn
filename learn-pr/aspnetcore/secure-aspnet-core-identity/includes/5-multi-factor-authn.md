@@ -17,7 +17,7 @@ To avoid distracting from the focus on Identity, the boilerplate to support QR c
 1. Open *Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml.cs* and make the following changes:
     1. Add the following property to the `EnableAuthenticatorModel` class to store the QR code's base-64 string representation:
 
-        [!code-csharp[](../code/5-EnableAuthenticator.cshtml.cs?name=snippet_QrCodeAsBase64&highlight=7)]
+        [!code-csharp[](../code/Areas/Identity/Pages/Account/Manage/5-EnableAuthenticator.cshtml.cs?name=snippet_QrCodeAsBase64&highlight=7)]
 
     1. Incorporate the highlighted changes in the `OnGetAsync` page handler:
 

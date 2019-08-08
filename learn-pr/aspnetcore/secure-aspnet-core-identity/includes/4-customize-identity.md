@@ -55,7 +55,7 @@ UI changes are also required to collect the additional user profile information.
 
 1. In the `Configure` method of *IdentityHostingStartup.cs*, the call to `AddDefaultIdentity` needs to be made aware of the new Identity user type. Incorporate the following highlighted change, and save the file.
 
-    [!code-csharp[](../code/Areas/Identity/IdentityHostingStartup-Configure.cs?name=snippet_ConfigureAddDefaultIdentity&highlight=1)]
+    [!code-csharp[](../code/Areas/Identity/IdentityHostingStartup.cs?name=snippet_ConfigureAddDefaultIdentity&highlight=1)]
 
 1. Update *Pages/Shared/_LoginPartial.cshtml* to incorporate the following highlighted changes. Save your changes.
 
