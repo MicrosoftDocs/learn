@@ -105,7 +105,7 @@ The following markup uses the *:::no-loc text="Label Tag Helper":::* which conta
 <label asp-for="Product.Name" class="control-label"></label>
 ```
 
-The *:::no-loc text="Label Tag Helper":::* extends the standard HTML *:::no-loc text="<label>":::* element. As is common for many Razor Tag Helpers, it uses a *:::no-loc text="asp-for":::* attribute which takes a specified *:::no-loc text="PageModel":::* property. The *:::no-loc text="PageModel":::* property is defined in C#. In this case the value of the *:::no-loc text="PageModel":::* `Product.Name` property will be rendered as the content for an HTML `<label>` element. The `[asp-for]` attribute is scoped to the *:::no-loc text="PageModel":::* for the Razor Page, so the `@` symbol is not used. The label is dynamic as is needed here, but remains compact and easy to add in your markup.
+The *:::no-loc text="Label Tag Helper":::* extends the standard HTML *:::no-loc text="<label>":::* element. As is common for many Razor Tag Helpers, it uses a *:::no-loc text="asp-for":::* attribute which takes a specified *:::no-loc text="PageModel":::* property. The *:::no-loc text="PageModel":::* property is defined in C#. In this case, the value of the *:::no-loc text="PageModel":::* `Name` property will be rendered as the content for an HTML `<label>` element. The `[asp-for]` attribute is scoped to the *:::no-loc text="PageModel":::* for the Razor page, so the `@` symbol isn't used. The label is dynamic as is needed here, but remains compact and easy to add in your markup.
 
 ### The *:::no-loc text="Input Tag Helper":::*
 
