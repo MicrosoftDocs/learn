@@ -131,7 +131,7 @@ The following is the generated HTML output from the *:::no-loc text="Input Tag H
 The following markup uses the *:::no-loc text="Validation Message Tag Helper":::*. It displays a validation message for a single property on your model.
 
 ```cshtml
- <span asp-validation-for="Product.Price" class="text-danger"></span>
+<span asp-validation-for="Product.Price" class="text-danger"></span>
 ```
 The *:::no-loc text="Input Tag Helper":::* adds HTML5 attributes prefixed with `data-` to input elements. The attributes are based on properties in your C# model classes. While responsive client-side validation occurs, validation is also performed on the server which is more secure.
 
