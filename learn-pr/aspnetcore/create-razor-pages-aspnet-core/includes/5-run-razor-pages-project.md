@@ -37,7 +37,6 @@ The .NET Core CLI is the simplest way to create, build, and run an ASP.NET Core 
     * Hosts the web application with ASP.NET Core's Kestrel web server.
 
 The web application is hosted at both `http://localhost:5000` and `https://localhost:5001` by default. This module uses the secure URL beginning with `https`. You can stop the *:::no-loc text="ContosoPets.UI":::* application from running at any time by pressing <kbd>Ctrl+C</kbd>. 
-
 We can't view the *:::no-loc text="ContosoPets.UI":::* application's pages in a browser, since it is not yet hosted on a public endpoint.  We will host the the app on a public endpoint in a following step.
 
 > [!IMPORTANT]
