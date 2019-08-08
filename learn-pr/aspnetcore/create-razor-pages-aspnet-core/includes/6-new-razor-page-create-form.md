@@ -63,7 +63,7 @@ A Razor Page supports Razor syntax which allows you to combine HTML and C#. The 
 
 ## Add form markup to the Create Razor page
 
- Open your *:::no-loc text="Create.cshtml":::* Razor Page located in the *:::no-loc text="ContosoPets.Ui/Pages/Products/":::* directory and replace the contents with the following, and save your changes:
+Open your *:::no-loc text="Create.cshtml":::* Razor page, located in the *:::no-loc text="ContosoPets.Ui/Pages/Products/":::* directory. Replace the contents with the following, and save your changes.
 
 ```cshtml
 @page
