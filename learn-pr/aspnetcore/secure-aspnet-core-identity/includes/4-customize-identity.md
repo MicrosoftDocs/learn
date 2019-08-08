@@ -24,7 +24,7 @@ UI changes are also required to collect the additional user profile information.
     * The `--force` option causes existing files in the *Identity* area to be overwritten.
 
     > [!TIP]
-    > Run the `dotnet aspnet-codegenerator identity --listFiles` command from the project root to view valid values for the `--files` option.
+    > Run the `dotnet aspnet-codegenerator identity --listFiles --force` command from the project root to view valid values for the `--files` option.
 
     The following files are added to the *Areas/Identity* directory:
 
