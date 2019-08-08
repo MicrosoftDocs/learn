@@ -23,7 +23,7 @@ Examine the following ContosoPets.UI files and directories by clicking on them i
 
 The *:::no-loc text="Pages":::* directory is where all Razor Pages are stored and organized in your ASP.NET Core application.
 
-Razor Pages have a *:::no-loc text=".cshtml":::* extension. By convention its associated *:::no-loc text="PageModel":::* class file uses the same name but with a *:::no-loc text=".cs":::* appended since it is in C#. For example, the Razor Page *:::no-loc text="index.cshtml":::* has an associated *:::no-loc text="PageModel":::* Class file for *:::no-loc text="index.cshtml.cs":::*.
+A Razor page has a *:::no-loc text=".cshtml":::* file extension. By convention, its associated *:::no-loc text="PageModel":::* C# class file uses the same name but with a *:::no-loc text=".cs":::* appended. For example, the Razor page *:::no-loc text="Index.cshtml":::* has an associated *:::no-loc text="PageModel":::* class file for *:::no-loc text="Index.cshtml.cs":::*.
 
 A model object defines data properties and encapsulates logic or operations related to those data properties. A *:::no-loc text="PageModel":::* is essentially the same thing, but is a model that more specifically encapsulates the data properties and logic operations scoped just to its Razor Page. The `PageModel` class allows separation of the logic of a Razor Page from its presentation. It defines page handler methods for requests sent to the page and for the data used to render the page. A handler method is the method that is executed as a result of a request. For example, an `OnGet` method in the Razor Pages's `PageModel` class would be automatically executed for an HTTP `GET` request.
 
