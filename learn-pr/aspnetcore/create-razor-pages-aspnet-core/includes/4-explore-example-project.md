@@ -47,7 +47,7 @@ The ContosoPets.UI application uses three shared partial Razor Pages, which are 
 * *:::no-loc text="_CookieConsentPartial.cshtml":::*: Provides a cookie consent alert and functionality incorporated in all Razor Pages in this project.
 * *:::no-loc text="_ValidationScriptsPartial.cshtml":::*: Provides validation functionality such as client-side form input validation and cross-site antiforgery validation, available to all Razor Pages in this project.
 
-### Layouts and Partial View files
+### Layouts and partial view files
 
 * Layouts: In ASP.NET Core, layouts are *:::no-loc text=".cshtml":::* files that define a top-level template for views in the app. Apps don't require a layout. Apps can define more than one layout, with different views specifying different layouts. Most web apps have a common layout that provides a consistent user experience. The layout typically includes common user interface elements such as the app header, navigation or menu elements, and footer. Common HTML structures such as scripts and stylesheets are also frequently used by many pages within an app. All of these shared elements may be defined in a layout file, which can then be referenced by any view used within the app. Layouts reduce duplicate code in views.
 
