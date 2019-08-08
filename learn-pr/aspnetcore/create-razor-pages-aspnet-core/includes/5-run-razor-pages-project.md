@@ -102,7 +102,7 @@ Now that your *:::no-loc text="ContosoPets.UI":::* application has been hosted o
 
 1. Click on the resulting URL in the command shell to view the running web application in your local default browser.
 
-1. Click on *:::no-loc text="Products Admin":::* near the top right.
+1. Click on *:::no-loc text="Products Admin":::* near the top.
 
 You should see the following page:
 
