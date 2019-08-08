@@ -75,7 +75,7 @@ If you run the app on your own machine, you'd be able to direct a browser to 'ht
     az webapp up
     ```
 
-The preceding Azure CLI command provisions a public endpoint for this project. The first time the endpoint is provisioned it will take longer, please be patient as it may take several minutes.
+The preceding Azure CLI command provisions a public endpoint for this project. Be patient, as the first deployment of the application will take longer.
 
 Something like the following text should eventually display to indicate the web UI is being deployed.
 
