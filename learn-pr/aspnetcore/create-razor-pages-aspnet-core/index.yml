@@ -16,7 +16,7 @@ abstract: |
   - Use the .NET Core CLI to scaffold a new Razor page.
   - Add a reference to a Data Transfer Object (DTO).
   - Understand the HTTP request life cycle of the Razor page.
-  - Add (inject) the HTTP request service into your own page model.
+  - Inject a dependent HTTP service class into the page model.
   - Add UI support for Create, Read, Update, and Delete (CRUD) operations.
   - Deploy & Test
 prerequisites: |
