@@ -14,7 +14,7 @@ pushd $srcWorkingDirectory/ContosoPets.Ui/Pages/Products
 
 1. Run the following .NET Core CLI command in the command shell at the current directory.
 
-```bash
+	```bash
 dotnet new page --name Create
 ```
 
