@@ -155,7 +155,7 @@ namespace ContosoPets.Ui.Models
 }
 ```
 
-DataAnnotations are simple attributes used to specify behavior that you want to enforce on the model properties they're applied to.
+Data annotations are simple attributes used to specify behavior that you want to enforce on the model properties to which they're applied.
 
 The *:::no-loc text="Product":::* class uses the `[Required]` and the `[Range]` attributes:
 
