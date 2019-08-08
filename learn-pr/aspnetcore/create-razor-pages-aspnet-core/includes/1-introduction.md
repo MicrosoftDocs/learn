@@ -1,4 +1,4 @@
-Imagine your company or an affiliate has product data available through a web API. You want to quickly create a front-end web application that will allow your team to view, create, update, and delete that data exposed from the web API endpoint. Your application also needs to be structured in a way that you can continue to expand and build on it, keeping View and Data model concerns separate.
+Imagine your company or an affiliate offers product data through a web API. You want to quickly create a front-end web application that allows your team to view, create, update, and delete that data exposed from the web API endpoint. Your application also needs to be structured in a way that you can continue to expand and build upon, keeping view and data model concerns separate.
 
 In this module, you'll build a cross-platform ASP.NET Core Razor Pages web application with .NET Core and C#. The web application will call an example pre-made web API to retrieve data it will display, allow the user to manipulate, and update to the web API endpoint.
 
