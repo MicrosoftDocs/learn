@@ -20,7 +20,7 @@ abstract: |
   - Add UI support for Create, Read, Update, and Delete (CRUD) operations.
   - Deploy and test the application.
 prerequisites: |
-  - A basic understanding of C#.
+  - Experience writing C# at the beginner level
   - Knowledge of HTML.
   - Knowledge of RESTful services and HTTP action verbs.
 levels:
