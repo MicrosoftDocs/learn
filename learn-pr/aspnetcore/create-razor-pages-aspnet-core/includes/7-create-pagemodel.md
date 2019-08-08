@@ -164,7 +164,7 @@ The *:::no-loc text="Product":::* class uses the `[Required]` and the `[Range]` 
 
 If you decide to enforce more validation rules, you can easily modify attributes in just one place, the *:::no-loc text="Product":::* model, without being required to modify any of the *:::no-loc text="PageModel":::* class files in the project. A significant benefit!
 
-There is a comprehensive set of DataAnnotation attributes available to you through *:::no-loc text="System.ComponentModel.DataAnnotations":::*. For the scope of this module, we have only provided a very small and simplified example.
+There is a comprehensive set of data annotation attributes available to you through `System.ComponentModel.DataAnnotations`. For the scope of this module, a small and simplified example is provided.
 
 ## The *:::no-loc text="Product":::* Model as a Data Transfer Object
 
