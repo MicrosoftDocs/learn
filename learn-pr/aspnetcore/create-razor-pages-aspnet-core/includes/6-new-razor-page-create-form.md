@@ -30,7 +30,6 @@ A new Razor Page named *:::no-loc text="Create.cshtml":::* and its *:::no-loc te
 @page
 @model ContosoPets.Ui.Pages.CreateModel
 @{
-    ViewData["Title"] = "Create";
 }
 
 <h1>Create</h1>
