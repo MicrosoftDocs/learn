@@ -2,14 +2,6 @@
 
 Build a scalable application with virtual machine scale sets
 
-metadata:
-  title: Design document
-  ms.date: 8/5/2019
-  author: jboeshart
-  ms.author: jaboes
-  ms.prod: learning-azure
-  ROBOTS: NOINDEX
-
 ## Role(s)
 
 - Solution Architect

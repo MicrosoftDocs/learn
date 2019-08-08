@@ -1,13 +1,5 @@
 # QA checklist
 
-metadata:
-  title: QA Checklist
-  ms.date: 8/5/2019
-  author: jboeshart
-  ms.author: jaboes
-  ms.prod: learning-azure
-  ROBOTS: NOINDEX
-
 1. Shape
 1. Metadata
 1. Introduction
