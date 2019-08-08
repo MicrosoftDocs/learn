@@ -4,16 +4,13 @@ You've considered encryption at rest, and walked through how it's achieved with 
 
 You've seen how Azure Key Vault is used to manage all of your keys and secrets in a secure and central location. Azure Key Vault also increases the robustness and security of your applications.
 
-Here's some useful links for reference:
+## Learn more
 
-[Azure Key Vault](https://azure.microsoft.com/en-gb/services/key-vault/)
+To learn more about data security on Azure, please visit the following articles.
 
-[Azure SQL Database](https://azure.microsoft.com/en-gb/services/sql-database/)
-
-[Azure Cosmos DB](https://azure.microsoft.com/en-gb/services/cosmos-db/)
-
-[Azure Storage](https://azure.microsoft.com/en-gb/services/storage/)
-
-[Azure Security Center](https://azure.microsoft.com/en-gb/services/security-center/)
-
-[Azure encryption overview](https://docs.microsoft.com/en-us/azure/security/security-azure-encryption-overview)
+- [Azure Key Vault](https://azure.microsoft.com/services/key-vault/)
+- [Azure SQL Database](https://azure.microsoft.com/services/sql-database/)
+- [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db/)
+- [Azure Storage](https://azure.microsoft.com/services/storage/)
+- [Azure Security Center](https://azure.microsoft.com/services/security-center/)
+- [Azure encryption overview](https://docs.microsoft.com/azure/security/security-azure-encryption-overview)
