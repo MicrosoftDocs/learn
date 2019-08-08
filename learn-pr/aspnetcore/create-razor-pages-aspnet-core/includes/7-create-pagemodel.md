@@ -201,7 +201,7 @@ ASP.NET Core supports the Inversion of Control (IoC) pattern using Dependency In
 The following code calls the `CreateModel` method, passing the `Product` Data Transfer Object (DTO) which will be sent by HTTP request to the web API.
 
 ```csharp
- await _productService.CreateProduct(Product);
+await _productService.CreateProduct(Product);
 ```
 
 We will explore the lifecycle of the *:::no-loc text="ContosoPets.UI":::* project's `ProductService` HTTP request logic later in this module.
