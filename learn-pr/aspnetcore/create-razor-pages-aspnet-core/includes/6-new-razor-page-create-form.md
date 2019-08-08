@@ -95,7 +95,7 @@ Your *:::no-loc text="Create":::* Razor Page now contains HTML plus Razor syntax
 
 ## Razor Tag Helpers
 
-Tag Helpers are components for automating HTML generation in Razor Pages. By design they are reusable, customizable building blocks that will save you time. Most built in Tag Helpers in ASP.NET Core are extending standard HTML elements you are familiar with and provide additional server-side attributes for the element, making them more robust. There are three Tag Helpers on this page: *:::no-loc text="Label":::*, *:::no-loc text="Input":::* and *:::no-loc text="Validation Message":::*. ASP.NET Core is extending the standard HTML tag by adding attributes.
+Tag Helpers are components for automating HTML generation in ASP.NET Core web applications. By design, they're reusable, customizable building blocks that save you time. Most built-in Tag Helpers extend standard HTML elements you're familiar with and provide additional server-side attributes for the element, making them more robust. There are three Tag Helpers on this page: Label, Input, and Validation Message. ASP.NET Core extends the standard HTML element by adding attributes.
 
 ### The *:::no-loc text="Label Tag Helper":::*
 
