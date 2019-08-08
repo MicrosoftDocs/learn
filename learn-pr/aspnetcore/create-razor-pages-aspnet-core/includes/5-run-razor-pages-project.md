@@ -97,7 +97,7 @@ Now that your *:::no-loc text="ContosoPets.UI":::* application has been hosted o
 1. Run the following command in the command shell to get the hosted application's URL:
 
     ```bash
-    echo $webAppURL
+    echo $webAppUrl
     ```
 
 1. Click on the resulting URL in the command shell to view the running web application in your local default browser.
