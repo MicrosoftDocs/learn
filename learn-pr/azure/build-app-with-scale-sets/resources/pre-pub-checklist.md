@@ -1,3 +1,5 @@
+# Pre-publication checklist
+
 metadata:
   title: Pre-pub Checklist
   ms.date: 8/5/2019
@@ -6,7 +8,7 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 
-# Pre-publication checklist
+
 1. Metadata
 1. Content/Media/assets
 1. Index.yml

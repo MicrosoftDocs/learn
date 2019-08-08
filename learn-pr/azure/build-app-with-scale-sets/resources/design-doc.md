@@ -1,3 +1,7 @@
+## Title
+
+Build a scalable application with virtual machine scale sets
+
 metadata:
   title: Design document
   ms.date: 8/5/2019
@@ -5,10 +9,6 @@ metadata:
   ms.author: jaboes
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-
-## Title
-
-Build a scalable application with virtual machine scale sets
 
 ## Role(s)
 
