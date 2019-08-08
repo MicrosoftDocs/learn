@@ -204,7 +204,7 @@ The following code calls the `CreateModel` method, passing the `Product` Data Tr
 await _productService.CreateProduct(Product);
 ```
 
-We will explore the lifecycle of the *:::no-loc text="ContosoPets.UI":::* project's `ProductService` HTTP request logic later in this module.
+The lifecycle of the *:::no-loc text="ContosoPets.UI":::* project's `ProductService` HTTP request logic is explored later in this module.
 
 ## Use an *:::no-loc text="Anchor Tag Helper":::* to link to the new *:::no-loc text="Create":::* Razor Page
 
