@@ -15,7 +15,7 @@ abstract: |
   - Understand when and why to use Razor Pages for your ASP.NET Core application.
   - Use the .NET Core CLI to scaffold a new Razor page.
   - Add a reference to a Data Transfer Object (DTO).
-  - Walk through the life cycle of example HTTP request logic that uses a typed HTTPClient service architecture.
+  - Understand the HTTP request life cycle of the Razor page.
   - Add (inject) the HTTP request service into your own page model.
   - Add UI support for Create, Read, Update, and Delete (CRUD) operations.
   - Deploy & Test
