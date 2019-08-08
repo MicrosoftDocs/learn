@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.deploy-vms-from-vhd-templates.disk-imaging-capabilities-for-azure-virtual-machines
+uid: learn.deploy-vms-from-vhd-templates.2-azure-vm-disk-imaging-capabilities
 title: Disk imaging capabilities for Azure virtual machines
 metadata:
   title: Disk imaging capabilities for Azure virtual machines
@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-disk-imaging-capabilities-for-azure-virtual-machines.md)]
+  [!include[](includes/2-azure-vm-disk-imaging-capabilities.md)]
 quiz:
   title: Check your knowledge
   questions:

@@ -30,8 +30,8 @@ products:
 - azure
 - azure-virtual-machines
 units:
-- learn.deploy-vms-from-vhd-templates.introduction
-- learn.deploy-vms-from-vhd-templates.disk-imaging-capabilities-for-azure-virtual-machines
-- learn.deploy-vms-from-vhd-templates.generalize-a-server-and-create-an-image-of-a-vm
-- learn.deploy-vms-from-vhd-templates.exercise-create-an-image-of-an-azure-vm-from-the-azure-cli-and-provision-a-new-vm
-- learn.deploy-vms-from-vhd-templates.summary
+- learn.deploy-vms-from-vhd-templates.1-introduction
+- learn.deploy-vms-from-vhd-templates.2-azure-vm-disk-imaging-capabilities
+- learn.deploy-vms-from-vhd-templates.3-generalize-server-create-image
+- learn.deploy-vms-from-vhd-templates.4-exercise-create-image-provision-vm
+- learn.deploy-vms-from-vhd-templates.5-summary
