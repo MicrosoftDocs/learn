@@ -1,13 +1,12 @@
-Exercise  - Roberta just ignore this
-
 In [Create a release management workflow](/learn/modules/create-a-release-management-workflow?azure-portal=true), you built a traditional deployment pipeline that deploys a web application to Azure App Service on a development environment, a test environment, and a pre-production staging environment. Here we will build on that workflow to add the *Blue Green* deployment pattern.
+
+In this exercise you:
 
 > [!div class="checklist"]
 > * Add a slot to the Staging environment called *Production*.
-> * Add manual step to swap staging and production slots.
+> * Add a step to the pipeline to swap staging and production slots.
 > * change a color on the site
 > * run the pipeline
-> * manually swap  TODO: add the manual part when it works later, for now just swap it on success.
 > * check the staging and production sites to see the swap.
 
 ## Add a slot for Production

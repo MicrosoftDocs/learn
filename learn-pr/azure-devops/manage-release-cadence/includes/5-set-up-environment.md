@@ -1,13 +1,13 @@
-Roberta, ignore this file, it is just to get your environment set up to do the lab.
+Here you make sure you are up to date with where the team left off before you add Blue Green deployment to the pipeline. This unit will get you to the place you left off in the [Create a release management workflow](/learn/modules/create-a-release-management-workflow?azure-portal=true) module.
 
-Here we will need to get the learner to the place they left off in the [Create a release management workflow](/learn/modules/create-a-release-management-workflow?azure-portal=true) module.
+The steps are:
 
 > [!div class="checklist"]
 > * Get the new branch with azure-pipelines.yml that deploys to dev, test, and staging
-> * Create web app on Azure using AppService (CLI) with dev, test, staging, production slots - TODO: See what the previous module has.
+> * Create web apps on Azure using AppService (CLI) with dev, test, and staging applications - TODO: See what the previous module has.
 > * Edit pipeline yml with your variable names
 > * Get the Azure DevOps project from the template
-> * Verify the app is deployed.
+> * Verify the app is deployed to each environment.
 
 ## Get the source code
 
@@ -22,7 +22,7 @@ Here we will need to get the learner to the place they left off in the [Create a
 
 ## Create an Azure AppService with deployment slots
 
-TODO: See what previous module has
+TODO: See what release management workflow module has
 
 ```bash
 webappname=TailspinGame$RANDOM
