@@ -35,7 +35,6 @@ The .NET Core CLI is the simplest way to create, build, and run an ASP.NET Core 
     * Retrieves and installs any required project dependencies for this project.
     * Builds the project code.
     * Hosts the web application with ASP.NET Core's Kestrel web server.
-    * Displays the background task's process ID.
 
 The web application is hosted at both `http://localhost:5000` and `https://localhost:5001` by default. This module uses the secure URL beginning with `https`. You can stop the *:::no-loc text="ContosoPets.UI":::* application from running at any time by pressing <kbd>Ctrl+C</kbd>. 
 
