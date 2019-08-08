@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
   ROBOTS: NOINDEX
-title: Create the Razor Page for a Create Product form
+title: Create the Razor page for a create product form
 azureSandbox: true
 interactive: bash-editor
 durationInMinutes: 9
