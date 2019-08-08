@@ -70,7 +70,7 @@ namespace ContosoPets.Ui.Services
 
 Let's examine how `ProductService` is made available as a service at startup.
 
-In the following code the `ProductService` class constructor takes a parameter of an instance of `HttpClient` (`System.Net.Http.HttpClient`).
+In the following code, the `ProductService` class constructor takes a parameter of an instance of `HttpClient` (`System.Net.Http.HttpClient`).
 
 ```csharp
       public ProductService(
