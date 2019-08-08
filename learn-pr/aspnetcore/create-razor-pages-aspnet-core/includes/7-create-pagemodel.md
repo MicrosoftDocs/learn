@@ -69,8 +69,6 @@ namespace ContosoPets.Ui.Pages.Products
 }
 ```
 
-[!INCLUDE[OS-specific keyboard shortcuts](../../includes/keyboard-shortcuts-table.md)]
-
 The *:::no-loc text="CreateModel":::* class now has an *:::no-loc text="OnPostAsync":::* handler method. *:::no-loc text="OnPostAsync":::* runs on *:::no-loc text="POST":::* requests (when the user posts the *:::no-loc text="Create":::* form).
 The *:::no-loc text="Async":::* naming suffix is optional but is often used by convention for asynchronous functions.
 
