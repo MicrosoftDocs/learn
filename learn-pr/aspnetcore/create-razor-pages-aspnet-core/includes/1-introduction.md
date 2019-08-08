@@ -18,7 +18,7 @@ In this module, you will:
 * Walk through the life cycle of an example HTTP request.
 * Deploy & Test.
 
-At the end of this module there are links to content providing deeper dives for each feature area introduced.
+At the end of this module, there are links to content providing deeper dives for each feature area introduced.
 
 ## Prerequisites
 
