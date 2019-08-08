@@ -2,7 +2,7 @@ In this module, you looked at the features of virtual machine scale sets. You sa
 
 You applied your knowledge to shipping company's system. You deployed their web site using a scale set, and you configured the scale set to scale out and back in as the CPU utilization across the virtual machines increased and decreased. You also rolled out a new version of the web application across the scale set while allowing the virtual machines to continue running. These features will enable users to access the system while maintaining a good response time, even when the application is being updated.
 
-## Tidy up
+## Clean up
 
 - In the Cloud Shell, run the following command to delete the **scalesetrg** resource group. This action also removes the scale set.
 
@@ -19,4 +19,5 @@ You applied your knowledge to shipping company's system. You deployed their web 
 - [Using Application Health extension with virtual machine scale sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-health-extension)
 - [Working with large virtual machine scale sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-placement-groups)
 - [Custom Script Extension for Windows](https://docs.microsoft.com/azure/virtual-machines/extensions/custom-script-windows)
-- [Use the Azure Custom Script Extension Version 2 with Linux virtual machines](https://docs.microsoft.com/azure/virtual-machines/extensions/custom-script-linux).
+- [Use the Azure Custom Script Extension Version 2 with Linux virtual machines](https://docs.microsoft.com/azure/virtual-machines/extensions/custom-script-linux)
+- [Use the Application Health extension with virtual machine scale sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-health-extension)

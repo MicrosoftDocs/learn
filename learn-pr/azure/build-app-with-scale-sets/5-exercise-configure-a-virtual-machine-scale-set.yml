@@ -5,14 +5,14 @@ title: Exercise - Configure a virtual machine scale set
 metadata:
   title: Exercise - Configuring a virtual machine scale set
   description: Exercise - Configuring a virtual machine scale set
-  ms.date: 6/17/2019
+  ms.date: 8/5/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 
-durationInMinutes: 5
+durationInMinutes: 10
 azureSandbox: false
 content: |
   [!include[](includes/5-exercise-configure-a-virtual-machine-scale-set.md)]
