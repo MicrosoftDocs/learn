@@ -42,7 +42,7 @@ We can't view the *:::no-loc text="ContosoPets.UI":::* application's pages in a 
 > [!IMPORTANT]
 > Check *:::no-loc text="ContosoPets.UI.log":::* if you encounter any unexpected behavior. If the build fails or other errors occur, the log file's information helps to troubleshoot. If you make code changes, run `kill $(pidof dotnet)` to stop all .NET Core apps before attempting to run again.
 
-Something like the following should display to indicate your application is being hosted:
+A variation of the following output displays to indicate your application is being hosted:
 
 ```console
 Hosting environment: Development
