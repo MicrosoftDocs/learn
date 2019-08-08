@@ -1,4 +1,5 @@
 # Pre-publication checklist
+
 1. Metadata
 1. Content/Media/assets
 1. Index.yml
