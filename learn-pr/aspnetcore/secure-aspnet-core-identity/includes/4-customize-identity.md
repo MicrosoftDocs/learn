@@ -94,7 +94,7 @@ UI changes are also required to collect the additional user profile information.
 
 ## Examine the table schema changes
 
-Let's analyze the impact of the `UpdateUser` EF Core migration on the `AspNetUsers` table's schema.
+Let's analyze the impact of the `UpdateUser` EF Core migration on the `AspNetUsers` table's schema. After completing the following steps, you'll gain an understanding of the impact extending the Identity data model has on the underlying data store.
 
 ::: zone pivot="pg"
 
