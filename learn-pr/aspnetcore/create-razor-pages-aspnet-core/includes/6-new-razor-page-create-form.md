@@ -7,7 +7,7 @@ The *:::no-loc text="ContosoPets.UI":::* project directory should be currently o
 Run the following command in the command shell:
 
 ```bash
-cd ./razor-pages-example/src/ContosoPets.Ui/Pages/Products
+pushd $srcWorkingDirectory/ContosoPets.Ui/Pages/Products
 ```
 
  The current directory changes to the *:::no-loc text="Products/":::* directory.
