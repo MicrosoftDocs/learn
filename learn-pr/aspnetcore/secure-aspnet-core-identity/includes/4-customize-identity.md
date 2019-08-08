@@ -30,7 +30,10 @@ UI changes are also required to collect the additional user profile information.
 
     * **Data/**
         * *ContosoPetsUser.cs*
+    * **Pages/**
+        * *_ViewImports.cshtml*
     * **Pages/Account/**
+        * *_ViewImports.cshtml*
         * *Register.cshtml*
         * *Register.cshtml.cs*
     * **Pages/Account/Manage/**
