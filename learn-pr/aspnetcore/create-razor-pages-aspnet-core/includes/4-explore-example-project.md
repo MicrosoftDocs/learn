@@ -39,7 +39,7 @@ Models in ASP.NET Core often make use of data annotations to constrain or custom
 
 ## The *Pages/Shared/* directory
 
-Partial markup elements that are shared across several Razor Pages are located by convention in a *:::no-loc text="Pages/Shared":::* directory.
+Partial markup elements that are shared across several Razor pages are located by convention in a *:::no-loc text="Pages/Shared":::* directory.
 
 The ContosoPets.UI application uses three shared partial Razor Pages, which are included automatically when you create a new *ASP.NET Core Web Application* project:
 
