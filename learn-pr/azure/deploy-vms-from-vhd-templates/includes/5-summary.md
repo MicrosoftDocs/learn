@@ -1,16 +1,20 @@
-<sentence 1>
+In this module you've learned about customized virtual machine images and how you can use them to deploy virtual machines. You saw how to:
 
-## Notes from design doc
-**Summary + Cleanup**
+- Create a specialized virtual hard disk
+- Create a virtual machine from an existing managed disk
+- Create a virtual machine image
+- Create a virtual machine from an existing virtual machine image
 
-How did you solve the problem in the initial scenario with the knowledge learned in the module?
+In the finance organization scenario, you can use this knowledge to build a customized virtual machine image configured to meet the organization's requirements. You can then use this image to roll out virtual machines across the entire organization.
 
-*   Identified the methods to create a Specialized and Generalized VHD.
-*   Identified the steps to Generalize a Windows Server and a Linux VM
-*   Created a VHD image of a running machine
-*   Created a VHD image from a snapshiop]
-*   Created instances from the VHD images
+[!include[](../../../includes/azure-sandbox-cleanup.md)]
 
-Clean up
+## Learn more
 
-*   Remove instances and associated storage and snapshots from Azure Portal
+Visit the following articles for more information on disk imaging on Azure.
+
+- [Create a managed image of a generalized VM in Azure](https://docs.microsoft.com/azure/virtual-machines/windows/capture-image-resource)
+- [How to create an image of a virtual machine or VHD](https://docs.microsoft.com/azure/virtual-machines/linux/capture-image)
+- [Create a Windows VM from a specialized disk by using PowerShell](https://docs.microsoft.com/azure/virtual-machines/windows/create-vm-specialized)
+- [Introduction to Azure managed disks](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview)
+- [Create a VM from a managed image](https://docs.microsoft.com/azure/virtual-machines/windows/create-vm-generalized-managed).
