@@ -8,11 +8,11 @@ Recall the two terms we defined:
 
 ## Cleanup
 
-To avoid additional costs in your Azure account, delete the **mslearn-amls** resource group. To remove all the resources we created in this module, follow these steps.
+To avoid additional costs in your Azure account, delete the resource group you created for this learning path. To remove all the resources we created in this module, follow these steps.
 
 1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Find the **mslearn-amls** resource group by selecting **Resource groups** in the Azure sidebar.
+1. Find the resource group by selecting **Resource groups** in the Azure sidebar.
 
 1. Select the resource group, and right-click on the row to open the context menu. You also can use the "..." button on the far-right side of the row.
 
