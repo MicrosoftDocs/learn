@@ -19,7 +19,7 @@ Examine the following ContosoPets.UI files and directories by clicking on them i
     |*:::no-loc text="ContosoPets.UI.csproj":::*  |Contains configuration metadata for the project, such as dependencies.               |
     |*:::no-loc text="Startup.cs":::*             |Configures app behavior, such as routing between pages.                              |
 
-### Razor Page files and their paired *PageModel* class file
+### Razor page files and their paired *PageModel* class file
 
 The *:::no-loc text="Pages":::* directory is where all Razor Pages are stored and organized in your ASP.NET Core application.
 
