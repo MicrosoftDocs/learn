@@ -8,7 +8,7 @@ The *:::no-loc text="ContosoPets.UI":::* project directory should be currently o
 
 	```bash
 pushd $srcWorkingDirectory/ContosoPets.Ui/Pages/Products
-```
+	```
 
  The current directory changes to the *:::no-loc text="Products/":::* directory.
 
