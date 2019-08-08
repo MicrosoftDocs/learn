@@ -1,5 +1,6 @@
 You can use Azure Functions and Azure API Management to build complete APIs with a microservices architecture.
 
+<!-- TODO: I think this intro is inaccurate. My assumption is that our online store is up and running and the Function Apps are in existent as our business logic. The tasks is to give partners the ability to interact with our store functionality, hence the need to create an API. You already have the microservices. That's why, in the exercises that follow, we don't create functions, we just expose them as an API. Please modify this introduction.  -->
 Suppose you work for an online store that has built multiple Azure Functions. You have been asked to integrate these functions into a unified API to expose to partners. A visitor to the website store will need to be able to see products details and place orders.
 
 You want to implement this system by using separate microservices such as:
@@ -14,9 +15,9 @@ In this module, you will learn how to use API Management to assemble multiple mi
 
 In this module, you will:
 
-- Identify the value of API Management in a serverless application.
-- Import Function Apps as APIs.
-- Expose multiple Function Apps through a single API in API Management.
+- Identify the value of Azure API Management in a serverless application
+- Import an Azure Function App as an API in Azure API Management
+- Import multiple Azure Function apps as a single API in Azure API Management
 
 ## Prerequisites
 
