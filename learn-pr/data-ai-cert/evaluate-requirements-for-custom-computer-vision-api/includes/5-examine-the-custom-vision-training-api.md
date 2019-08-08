@@ -4,29 +4,29 @@ Like the Prediction API, the Training API provides HTTP methods for adding   tra
 
 The Custom Vision **CreateImages** method is the underlying method used to send tagged training images. Just like the Prediction API, the Custom Vision Training API provides separate methods for uploading binary files and for supplying publicly available image URLs:
 
-- **CreateImagesFromFiles** includes one or more encoded image files, and optional tags, to create images. There is a limit of 64 images and 20 tags.
-- **CreateImagesFromUrls**: specifies one or more URLs, and optional tags, to create images. There is a limit of 64 images and 20 tags.
+- **CreateImagesFromFiles** includes one or more encoded image files, and optional tags, to create images. There's a limit of 64 images and 20 tags.
+- **CreateImagesFromUrls** specifies one or more URLs, and optional tags, to create images. There's a limit of 64 images and 20 tags.
 
 > [!NOTE]
-> There are several additional methods available in the training API which allow you to create and find projects, create and delete tags, train projects, etc. Everything you can do in the portal, you can generally do with the REST API.
+> There are several additional methods available in the Training API that allow you to create and find projects, create and delete tags, train projects, and more. Everything you can do in the portal, you can generally do with the REST API.
 
-The endpoints all have the same basic format as the Prediction API:
+The endpoints all have the same basic format as endpoints in the Prediction API:
 
 ```text
 https://{endpoint}/customvision/v3.0/training/projects/{projectId}/images/{imageType}
 ```
 
-Where:
+In this URL:
 
-- `{endpoint}` is the location endpoint the service was created in, for example, **southcentralus.api.cognitive.microsoft.com**.
-- `{projectId}` is a unique project identifier that is used to specify the Custom Vision Service.
-- `{imageType}` is either **urls** when the images are passed as URLs, or **files** when the images are passed encoded data in the body of the request.
+- `{endpoint}` is the location endpoint the service was created in, for example, `southcentralus.api.cognitive.microsoft.com`.
+- `{projectId}` is a unique project identifier that's used to specify the Custom Vision service.
+- `{imageType}` is either `urls`, when the images are passed as URLs, or `files` when the images are passed as encoded data in the body of the request.
 
 ### Building a request
 
-The Training API endpoint is available in the **Settings** pane of your Custom Vision Service project in the web portal. This page is also where you can find the _Training Key_, which is necessary to authorize calls to the Training API services. Once you have these two pieces of information, you are ready to use the **CreateImages** methods.
+The Training API endpoint is available in the **Settings** pane of your Custom Vision service project in the web portal. You can also find the *training key* on this page. You need the training key to authorize calls to the Training API services. After you have these two pieces of information, you're ready to use the **CreateImages** methods.
 
-Once the proper URL is identified, you invoke it with an HTTP `PUT` request passing the request in the body and the training key as a request header with the name `Training-Key.`
+After you identify the proper URL, you invoke it with an HTTP PUT request, passing the request in the body and the training key as a request header with the name `Training-Key`.
 
 The body of the request can be structured using most available media types - `"application/json"`, `"application/xml"`, `"text/xml"`, or `"application/x-www-form-urlencoded"`. You can select the easiest one to work within your language or framework. The `Content-Type` header value will determine the content payload type you supply.
 

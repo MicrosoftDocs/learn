@@ -44,7 +44,7 @@ The specific endpoint details are available in the Custom Vision service portal.
 
 ### Constructing the HTTP request
 
-After you've identified the proper URL, you invoke it by using an HTTP PUT request. Remember that you need to pass a prediction key with the request. This key is provided as a request header with the name `Prediction-Key`.
+After you identify the proper URL, you invoke it by using an HTTP PUT request. Remember that you need to pass a prediction key with the request. This key is provided as a request header with the name `Prediction-Key`.
 
 For example, the following C# code sends an image URL to the Prediction API with the given endpoint and prediction key.
 
