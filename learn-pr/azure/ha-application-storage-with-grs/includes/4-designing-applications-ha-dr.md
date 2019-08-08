@@ -8,7 +8,7 @@ When you configure a storage account GRS or RA-GRS, the client writes data to th
 
 ![Replication workflow](../media/4-primary-secondary-replication.png)
 
-If the primary region hosting your geo-redundant storage becomes unavailable, you can failover to the secondary region.
+If the primary region hosting your geo-redundant storage becomes unavailable, you can fail over to the secondary region.
 
 When failover occurs, the secondary region becomes the new primary region, and all data is then accessible from your new primary. All DNS records, which relate to your storage account, have their DNS endpoints updated to point to the new primary region. This redirection doesn't require any changes to your application code.
 
@@ -35,7 +35,7 @@ There are several factors you need to consider when designing your application t
 
 - **High availability** - This is the capability of the application to continue to function in a healthy state in the event there is a hardware fault, server fault, or network issues impacting one or more components of the application.
 
-- **Disaster recovery** - This is the ability to recover the application if there's a major incident impacting the services hosting the application such as a datacenter outage, or complete regional outage. Disaster recovery includes manually failing over an application using Azure Site Recovery. Azure Site Recovery enables you to failover servers between Azure regions or Azure backups. You can then restore a database or application from backup.
+- **Disaster recovery** - This is the ability to recover the application if there's a major incident impacting the services hosting the application such as a datacenter outage, or complete regional outage. Disaster recovery includes manually failing over an application using Azure Site Recovery. Azure Site Recovery enables you to fail over servers between Azure regions or Azure backups. You can then restore a database or application from backup.
 
 - **Eventual consistency** - RA-GRS works by replicating data from the primary endpoint to the secondary endpoint. The data, which is replicated between the regions, is not available at the secondary location immediately. Eventual consistency means that all the transactions on the primary region will eventually appear in the secondary region. The data isn't lost, but there may be some lag.
 
@@ -79,12 +79,12 @@ Be prepared to handle stale data if it is read from a secondary region. As descr
 
 ### Use the Circuit Breaker pattern
 
-In distributed environments, communication between remote resources can fail because of slow network connections, resources timeouts, resources being offline, or a transmission problem corrupting data in transit. A majority of the time these issues are transient and resolves themselves. If the application retries the same operation, it often succeeds.
+In distributed environments, communication between remote resources can fail because of slow network connections, resources timeouts, resources being offline, or a transmission problem corrupting data in transit. A majority of the time, these issues are transient and resolve themselves. If the application retries the same operation, it often succeeds.
 
 In some situations, when the outage is severe, it makes sense for the application to stop retrying the operation and instead initiate failover to a secondary site.
-To prevent an application to keep retrying operations that have failed, you can implement the Circuit Breaker pattern. 
+To prevent an application to keep retrying operations that have failed, you can implement the Circuit Breaker pattern.
 
-The Circuit Breaker pattern forces the application to failover to the secondary site allowing the application to resume its normal service. At the same time, the circuit breaker will continue to check if the resources on the primary site are back online, and when they do come online, it will allow the application to reconnect to the primary site. The circuit breaker acts as a proxy; it monitors the service, and if there's a failure in the service, it prevents the application from retrying that endpoint and forces it to go to an alternative endpoint.
+The Circuit Breaker pattern forces the application to fail over to the secondary site allowing the application to resume its normal service. At the same time, the circuit breaker continues to check if the resources on the primary site are back online, and when they do come online, it allows the application to reconnect to the primary site. The circuit breaker acts as a proxy; it monitors the service, and if there's a failure in the service, it prevents the application from retrying that endpoint and forces it to go to an alternative endpoint.
 
 The difference between the Circuit Breaker pattern and the Retry pattern is that the Retry pattern allows an application to keep retrying a connection to a resource, which may be offline. The Circuit Breaker pattern prevents this behavior and failover the application to the secondary connection.
 
@@ -92,6 +92,6 @@ The purpose of implementing a Circuit Breaker pattern is to provide stability to
 
 Use the Circuit Breaker pattern to prevent an application from trying connections to resources, which have failed, and instead redirecting the connection to working resources to minimize disruption. Don't use the Circuit Breaker pattern for accessing local or in-memory data structures, as circuit breakers would add overhead to the system.
 
-When you implement the Circuit Breaker pattern, set the **LocationMode** of read requests appropriately. Most of the time, you should set this mode to **PrimaryThenSecondary**. If the read from the primary location times out, then the secondary location will be used. However, this process can slow an application down if performed repeatedly. Once the circuit breaker has detected that the primary location is unavailable, it should switch the mode to **SecondaryOnly**. This switch will ensure that read operations don't wait for a timeout from the primary location before trying the secondary. When the circuit breaker estimates that the primary location has been repaired, it can revert back to the **PrimaryThenSecondary** mode.
+When you implement the Circuit Breaker pattern, set the **LocationMode** of read requests appropriately. Most of the time, you should set this mode to **PrimaryThenSecondary**. If the read from the primary location times out, then the secondary location is used. However, this process can slow an application down if performed repeatedly. Once the circuit breaker has detected that the primary location is unavailable, it should switch the mode to **SecondaryOnly**. This switch ensures that read operations don't wait for a timeout from the primary location before trying the secondary. When the circuit breaker estimates that the primary location has been repaired, it can revert back to the **PrimaryThenSecondary** mode.
 
 For more information, see [Circuit Breaker pattern](https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker)

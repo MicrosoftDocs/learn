@@ -1,4 +1,4 @@
-As part of the project to configure your healthcare application to be highly available, you need to create and configure an Azure storage account. You can use Read-Access Geo-Replica-Storage (RA-GRS), to enable the storage account to failover to another region, if an Azure region failure occurs.
+As part of the project to configure your healthcare application to be highly available, you need to create and configure an Azure storage account. You can use Read-Access Geo-Replica-Storage (RA-GRS), to enable the storage account to fail over to another region, if an Azure region failure occurs.
 
 ## Azure storage accounts
 Azure storage accounts are used to house all data objects such as files, blobs, tables, and disks for virtual machines. The data you store in a storage account can be accessed from any location globally via HTTP or HTTPS and is highly available and secure.
@@ -58,9 +58,9 @@ When using RA-GRS, you need to ensure your application knows which endpoint it's
 
 RA-GRS is ideal for applications, which require high-availability
 
-A new feature currently in preview allows you to initiate failover between primary and secondary regions from the Portal, Powershell, or Azure CLI. When the primary endpoint becomes unavailable, you can failover to the secondary endpoint.
+A new feature currently in preview allows you to initiate failover between primary and secondary regions from the Portal, Powershell, or Azure CLI. When the primary endpoint becomes unavailable, you can fail over to the secondary endpoint.
 
-Once failover and DNS endpoint updates are complete, the storage account is set back to LRS. You are responsible for reverting the replication settings from LRS to RAGRS or GRS once the primary region becomes available again.
+Once failover and DNS endpoint updates are complete, the storage account is set back to LRS. You're responsible for reverting the replication settings from LRS to RAGRS or GRS once the primary region becomes available again.
 
 ## When to use different types of redundant storage
 
