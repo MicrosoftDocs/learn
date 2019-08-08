@@ -109,6 +109,6 @@ You should see the following page:
 
 This is the rendered *:::no-loc text="Index.cshtml":::* Razor Page located in the *:::no-loc text="Pages/Product/":::* directory of your *:::no-loc text="ContosoPets.UI":::* project. The URL ends with *:::no-loc text="Product":::*. Razor Pages is using the directory structure within the *:::no-loc text="Pages":::* directory as the convention for routing requests by default.
 
-This Razor Page has requested a list of available products from the web API. Currently you can only choose to read the current list of products and edit or delete an existing product.
+This Razor Page has requested a list of available products from the web API. Currently, you can only choose to read the current list of products and edit or delete an existing product.
 
 Now that you have verified you can successfully build, run, and deploy the existing project, let's modify it so the user can create new product entries that are validated and sent to the web API.
