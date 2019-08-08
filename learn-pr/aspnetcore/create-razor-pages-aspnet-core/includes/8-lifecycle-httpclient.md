@@ -95,7 +95,6 @@ The `BaseAddress` URI that the `HttpClient` instance will use for all requests t
 
 ```json
   "ProductService": {
-    // "BaseAddress": "https://<web-app-name>.azurewebsites.net",
     "BaseAddress": "http://localhost:55964",
     "ControllerRoute": "/api/products"
   },
