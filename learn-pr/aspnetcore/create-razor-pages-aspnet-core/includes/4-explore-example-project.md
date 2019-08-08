@@ -70,7 +70,7 @@ The following are routing examples for this completed project:
 
 ### Organize groups of related Razor pages
 
-The *:::no-loc text="ContosoPets.UI":::* project's purpose is to provide a basic UI client to execute Create, Read, Update, and Delete (CRUD) operations through your company's web API endpoint to manage product listings.
+The *:::no-loc text="ContosoPets.UI":::* project's purpose is to provide a basic UI client to execute CRUD operations through your company's web API endpoint to manage product listings.
 The *:::no-loc text="Pages/Product":::* directory groups all the Razor Pages that provide the UI for those CRUD operations and thier *:::no-loc text="PageModel":::* class files.
 For the *:::no-loc text="ContosoPets.UI":::* application the same model validation will be used for more than one Razor Page for HTTP requests to the hosted web API.
 
