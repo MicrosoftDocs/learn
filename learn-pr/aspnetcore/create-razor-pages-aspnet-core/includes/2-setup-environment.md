@@ -1,4 +1,4 @@
-In this unit, you'll set up the development environment for the module, which will contain the ContosoPets.UI example project.
+In this unit, you'll set up the development environment for the module, which will contain the *:::no-loc text="ContosoPets.UI":::* starter project.
 
 ## Set up development environment
 
