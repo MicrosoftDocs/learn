@@ -5,8 +5,8 @@ metadata:
   title: Create a new API in API Management from a Function App
   description: In this unit, you will learn about serverless apps and microservices and how you can build such architectures by using API Management.
   ms.date: 05/29/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: AndrewJByrne
+  ms.author: anbyrne
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
