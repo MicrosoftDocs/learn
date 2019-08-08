@@ -1,54 +1,318 @@
-Your business grows, and the demand rises in Europe and Asia. Most of your infrastructure is cloud-based. Users are reporting a slow website. Your company is based in USA. To provide the customers in Europe and Asia a better service, your company has decided to replicate the infrastructure already existent in Azure. The company would also like to be able to ensure that any future infrastructure could be tracked with a version control system like Git.  
+[!include[](../../../includes/azure-sandbox-activate.md)]
 
-You have been asked to choose an appropriate provisioning tool. Your provisioning tool should be scalable enough to provision resources for even large infrastructures. It should also be easy to use and easily customizable.  
+Your organization grows, and demand rises in Europe and Asia. Your organization is based in the USA. Most of your infrastructure is cloud-based. Your European users are reporting a slow website. To provide the customers in Europe better service, your company has asked you to create a new and improved web server for Europe. The machine must be configured as an IIS web server when it is provisioned.
 
-Which provisioning tool will allow you to replicate your current infrastructure and redeploy into Europe and Asia after tweaking the relevant parameters (Location, resource groups and subscription)?
+You have been asked to choose appropriate provisioning tools. Your provisioning tools should be scalable enough to provision resources for even large infrastructures in the future. Your tools should also be easy to use and easily customizable.
 
-## Recommended provisioning tool
+In this exercise, you will provision a web server to meet the requirrments.
 
-Azure Resource Manager templates will enable you to download your USA datacenter configuration as a JSON file, tweak the necessary parameters, and deploy the same infrastructure for Europe and Asia customers in a few minutes.
+### Provision a web server
 
-Let's use our decision criteria to see how Azure Resource Manager templates would help us in this scenario:
+You will use multiple tools together. Azure Resource Manager templates will enable you to create a  template outlining the environment for your web server. Your Azure Resource Manager template can also help you define a state that can be applied to your web server at the point of provisioning. You can apply your desired state by defining a DSC extension handler inside of your Azure Resource Manager template. The DSC handler helps you enforce a state that you define in a DSC configuration.
 
-| Criteria               | How does it match up?                                        |
-| ---------------------- | ------------------------------------------------------------ |
-| Scalability            | Recall that Azure Resource Manager templates are highly scalable and ideal in a case like this for deploying large infrastructure. |
-| Ease of setup         | It is easy to create Azure Resource Manager templates. You can even use templates created previously and build on them to make your own changes to an infrastructure. This approach would be helpful in our case, since we could export the template, and then edit it to provision the same infrastructure in different regions. |
-| Management             | Since these templates are only in JSON format, and easily readable and editable, they can easily be introduced into a version control system to track future changes and test out templates before they are even deployed. |
-| Interoperability       | Azure Resource Manager templates are designed to be useable with other tools. You can use them with Azure CLI, or PowerShell to automate future deployments for any future infrastructure. Alternatively, you could even use the templates with the Azure portal to replicate the entire infrastructure with a few clicks. |
-| Configuration Language | Azure Resource Manager templates are JSON-based. JSON is easy to read.  We would also easily be able to integrate these templates into our current development process. We could create and run tests, and destroy entire test environments through simple automated processes that fit into our development workflow. |
-| | |
+In the following exercise, you will use an Azure Resource Manager template to provision a virtual machine. The DSC extension handler that will be included in the template that will be used to enforce your state on the virtual machine.
 
-Here are the steps that would allow you to create a copy of the current infrastructure in these other regions:
+1. First, create your state configuration. In this case you will configure a IIS web server on your machine.
 
-1. You should already have some virtual machines created in Azure. Export the config file (JSON) for their infrastructure with the Azure portal. Execute the export by selecting **Resource groups**, then selecting the resource group you want, then selecting all of the resources you want to export. Select **Export template > Download**.
-1. In order to create a new environment in a different region, all you have to do is edit the JSON template that you've downloaded and make necessary changes to properties, to make sure they are reflective of the new region and new infrastructure. You can create a new resource group for the new region at a later stage. As an example, below we have looked at a virtual machine resource in the template and changed its location to Western Europe.
+    ```powershell
+        Configuration Webserver
+        {
+          param ($MachineName)
+        
+          Node $MachineName
+          {
+            #Install the IIS Role
+            WindowsFeature IIS
+            {
+              Ensure = "Present"
+              Name = "Web-Server"
+            }
+        
+            #Install ASP.NET 4.5
+            WindowsFeature ASP
+            {
+              Ensure = "Present"
+              Name = "Web-Asp-Net45"
+            }
+        
+             WindowsFeature WebServerManagementConsole
+            {
+                Name = "Web-Mgmt-Console"
+                Ensure = "Present"
+            }
+          }
+        } 
+    ```
+    
+1. Save the file as Webserver.ps1
+
+1. Compress your Webserver.ps1 file into a .zip folder named Webserver.
+
+1. Now you create an Azure Resource Manager template. Below is an skeleton template, which you can use as a baseline. Save it as *template.json*.
+   
+    ```json
+    {
+        "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+        "contentVersion": "1.0.0.0",
+        "parameters": {  },
+        "variables": {  },
+        "resources": [  ]
+    }
+    ```
+    
+1. You use the parameters section to define which values you can input when you are deploying your template. In the parameters section, you add parameters the as shown below. Remove any comments.
+
+    ```json
+            "diskType": {
+                "type": "string",
+                "defaultValue": "Standard_LRS",
+                "allowedValues": [
+                    "Standard_LRS",
+                    "Premium_LRS"
+                ],
+                "metadata": {
+                    "description": "Type of Storage for disks"
+                }
+            },
+            "vmName": {
+                "type": "string",
+                "metadata": {
+                    "description": "Name of the VM"
+                }
+            },
+            "vmSize": {
+                "type": "string",
+                "defaultValue": "Standard_A2",
+                "metadata": {
+                    "description": "Size of the VM"
+                }
+            },
+            "imageSKU": {
+                "type": "string",
+                "defaultValue": "2012-R2-Datacenter",
+                "allowedValues": [
+                    "2008-R2-SP1",
+                    "2012-Datacenter",
+                    "2012-R2-Datacenter"
+                ],
+                "metadata": {
+                    "description": "Image SKU"
+                }
+            },
+            "adminUsername": {
+                "type": "string",
+                "metadata": {
+                    "description": "Admin username"
+                }
+            },
+            "adminPassword": {
+                "type": "securestring",
+                "metadata": {
+                    "description": "Admin password"
+                }
+            },
+    /* Location of your DSC configuration */
+            "modulesUrl": {
+                "type": "string",
+                "metadata": {
+                    "description": "URL for the DSC configuration module. NOTE: Can be a Github url(raw) to the zip file"
+                }
+            },
+    /* The function to run in your DSC configuration */
+            "configurationFunction": {
+                "type": "string",
+                "defaultValue": "Webserver.ps1\\Webserver",
+                "metadata": {
+                    "description": "DSC configuration function to call"
+                }
+            },
+            "location": {
+                "type": "string",
+                "defaultValue": "[resourceGroup().location]",
+                "metadata": {
+                    "description": "Location for all resources."
+                }
+            }
+    ```
+    
+1. The variables section allows you to define variables you can reuse inside of your template. They are useful because you would only need to change the value in the variables section if you ever needed to change it, and that change will be reflected across the whole of the template. Use variables for your template as shown below.
 
     ```json
     {
-        "type": "Microsoft.Compute/virtualMachines",
-        "apiVersion": "2018-10-01",
-        "name": "[parameters('virtualMachines_backEndVM_name')]",
-        "location": "westeurope",
-        "dependsOn": [
-            "[resourceId('Microsoft.Network/networkInterfaces', parameters('networkInterfaces_backendvm672_name'))]"
-        ],
-        "properties": { ...
-        }
+        "virtualNetworkName": "dscVNET",
+        "vnetID": "[resourceId('Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]",
+        "vnetAddressPrefix": "10.0.0.0/16",
+        "subnet1Name": "dscSubnet-1",
+        "subnet1Prefix": "10.0.0.0/24",
+        "subnet1Ref": "[concat(variables('vnetID'),'/subnets/', variables('subnet1Name'))]",
+        "publicIPAddressType": "Dynamic",
+        "publicIPAddressName": "dscPubIP",
+        "nicName": "dscNIC",
+        "imagePublisher": "MicrosoftWindowsServer",
+        "imageOffer": "WindowsServer",
+        "vmExtensionName": "dscExtension"
     }
     ```
+    
+1. The resources section holds all of the resources you want to provision. Because you will be provisioning a virtual machine, you will have to include a virtual network, a public IP address, a network interface, along with the DSC extension handler for your desired state configuration. You use individual resources to add all of those components. Add resources as shown below.
 
-1. Once you've changed all of the necessary values, import the file into Azure with the Azure portal. Select **Create resource**, then search for and select *Template Deployment* in the search field.
-1. The template deployment pane appears. Select **Create** > **Build your own template in the editor > Load file**, load your template, then select **Save**, then fill in the fields as appropriate.
-1. Agree to the terms and conditions, then select **Purchase**.
-You have now deployed an entirely new infrastructure in another region.
+    ```json
+        
+        {   /* Your IP address resource*/
+            "apiVersion": "2015-05-01-preview",
+            "type": "Microsoft.Network/publicIPAddresses",
+            "name": "[variables('publicIPAddressName')]",
+            "location": "[parameters('location')]",
+            "properties": {
+                "publicIPAllocationMethod": "[variables('publicIPAddressType')]"
+            }
+        },
+        {    /* Your virtual network resource */
+            "apiVersion": "2015-05-01-preview",
+            "type": "Microsoft.Network/virtualNetworks",
+            "name": "[variables('virtualNetworkName')]",
+            "location": "[parameters('location')]",
+            "properties": {
+                "addressSpace": {
+                    "addressPrefixes": [
+                        "[variables('vnetAddressPrefix')]"
+                    ]
+                },
+                "subnets": [
+                    {
+                        "name": "[variables('subnet1Name')]",
+                        "properties": {
+                            "addressPrefix": "[variables('subnet1Prefix')]"
+                        }
+                    }
+                ]
+            }
+        },
+        {    /* Your network interface resource */
+            "apiVersion": "2015-05-01-preview",
+            "type": "Microsoft.Network/networkInterfaces",
+            "name": "[variables('nicName')]",
+            "location": "[parameters('location')]",
+            "dependsOn": [
+                "[concat('Microsoft.Network/publicIPAddresses/', variables('publicIPAddressName'))]",
+                "[concat('Microsoft.Network/virtualNetworks/', variables('virtualNetworkName'))]"
+            ],
+            "properties": {
+                "ipConfigurations": [
+                    {
+                        "name": "ipconfig1",
+                        "properties": {
+                            "privateIPAllocationMethod": "Dynamic",
+                            "publicIPAddress": {
+                                "id": "[resourceId('Microsoft.Network/publicIPAddresses', variables('publicIPAddressName'))]"
+                            },
+                            "subnet": {
+                                "id": "[variables('subnet1Ref')]"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {    /* Your virtual machine resource*/
+            "apiVersion": "2017-03-30",
+            "type": "Microsoft.Compute/virtualMachines",
+            "name": "[parameters('vmName')]",
+            "location": "[parameters('location')]",
+            "dependsOn": [
+                "[concat('Microsoft.Network/networkInterfaces/', variables('nicName'))]"
+            ],
+            "properties": {
+                "hardwareProfile": {
+                    "vmSize": "[parameters('vmSize')]"
+                },
+                "osProfile": {
+                    "computerName": "[parameters('vmName')]",
+                    "adminUsername": "[parameters('adminUsername')]",
+                    "adminPassword": "[parameters('adminPassword')]"
+                },
+                "storageProfile": {
+                    "imageReference": {
+                        "publisher": "[variables('imagePublisher')]",
+                        "offer": "[variables('imageOffer')]",
+                        "sku": "[parameters('imageSKU')]",
+                        "version": "latest"
+                    },
+                    "osDisk": {
+                        "name": "[concat(parameters('vmName'), '_OSDisk')]",
+                        "caching": "ReadWrite",
+                        "createOption": "FromImage",
+                        "managedDisk": {
+                            "storageAccountType": "[parameters('diskType')]"
+                        }
+                    }
+                },
+                "networkProfile": {
+                    "networkInterfaces": [
+                        {
+                            "id": "[resourceId('Microsoft.Network/networkInterfaces', variables('nicName'))]"
+                        }
+                    ]
+                }
+            }
+        },
+        { /* Your DSC extension */
+            "type": "Microsoft.Compute/virtualMachines/extensions",
+            "name": "[concat(parameters('vmName'),'/', variables('vmExtensionName'))]",
+            "apiVersion": "2015-05-01-preview",
+            "location": "[parameters('location')]",
+            "dependsOn": [
+                "[concat('Microsoft.Compute/virtualMachines/', parameters('vmName'))]"
+            ],
+            "properties": {
+                "publisher": "Microsoft.Powershell",
+                "type": "DSC",
+                "typeHandlerVersion": "2.19",
+                "autoUpgradeMinorVersion": true,
+                "settings": {
+                    /*Location of your state configuration. Points to a parameter which you can set when you deploy your template.*/
+                    "ModulesUrl": "[parameters('modulesUrl')]",
+                    /*The function to call in your configuration.*/
+                    "ConfigurationFunction": "[parameters('configurationFunction')]",
+                    "Properties": {
+                        "MachineName": "[parameters('vmName')]"
+                    }
+                },
+                "protectedSettings": null
+            }
+        }
+    ```
 
-## Reasons not to use the other provisioning tools
+    Once you have put your template together, you can deploy your template using Azure CLI, Azure PowerShell or the Azure portal. You will use Azure CLI to deploy your template.
 
-| Provisioning tool                       | Reason                                                     |
-| --------------------------------------- | :----------------------------------------------------------- |
-| Custom Script Extension                 | Custom Script Extensions wouldn't create the virtual machines for you. They are designed to add configurations or software to a machine that exists already.  In addition, some configurations could potentially require reboots, and custom scripts would not be an ideal tool for those kinds of configurations. |
-| Azure Desired State Configuration (DSC) | DSC is more scalable than custom scripts to set your configurations, and allows for configurations that may require reboots on the machine. But the same problem remains, DSC alone would not help you provision the virtual machines.  You would still need to create a Resource Manager template to ensure the actual machines are replicated. |
-| Azure Automation State Configuration    | Azure Automation State Configuration would be a good solution for the configuration needs of a high scale infrastructure that already exists. Once your migration is done, it would be a good tool to use to ensure that all machines have configurations automatically pushed to them and to ensure each machine also provides detailed reporting on its state. But the initial problem still remains, this service would not be used by itself at the first stage of provisioning. |
-| Terraform                               | Terraform is useful for making sure multiple resources in multiple different cloud environments are similar. But in this case, we are only dealing with Azure.  In addition, some resources that exist in Azure may not be available to provision using Terraform and may take some time before they are available for provisioning. |
-| Chef                                    | You would need to create an additional server for Chef, which can only run on Linux/Unix based machines. In addition, you would also have to learn a language called Ruby to create your configurations. Both of these add unnecessary overhead in terms of time and complexity. |
+1. Create a resource group by running the following command.
+    ```powershell
+    az group create -l eastus -n <your-resource-group>
+    ```
+    Your resource group for your sandbox is <rgn>[sandbox resource group name]</rgn>
+    
+1. You should validate and test your deployment before you attempt a real deployment. Run the below command to test whether your deployment would be successful. Because you have set parameters in your template, you can follow the prompts to set the different values for those parameters.
+    ```powershell
+    az group deployment validate  --resource-group <your-resource-group>  --template-file <your-template-file>
+    ```
+    
+1. The location of your template file is $HOME/template.json when you are using the sandbox.
+
+1. When are prompted for a **modulesURL**, input the location of your configuration file. For this exercise, we've chosen to upload it to a Github repository. So we can use a Github URL as shown below.
+    ```
+    Please provide string value for 'modulesUrl' (? for help): https://github.com/you/yourrepo/raw/master/Webserver.zip
+    ```
+    After this prompt, Azure will attempt to validate your template.
+1. If your deployment is validated, you will see information about your deployment. Pay special attention to the error key, it should be null.
+1. If you there are no errors, your template has been validated and can be deployed. Run the below command to deploy the template.
+    ```powershell
+        az group deployment create --resource-group <your-resource-group> --template-file <path-to-your-template>
+    ```
+1. Follow the prompts to complete your deployment. It may take a few minutes for deployment to finish.
+1. Once everything has been set up, your virtual machine will be created and configured  as an IIS webserver. List all of the resources in the resource group to confirm everything has been set up. Run the below command.
+    ```
+    az resource list --resource-group <your-resource-group>
+    ```
+    You should see all of your resources listed. This means deployment was successful.
+
+You have provisioned a web server using Azure Resource Manager templates and enforced a desired state configuration on your machine through a DSC extension handler.

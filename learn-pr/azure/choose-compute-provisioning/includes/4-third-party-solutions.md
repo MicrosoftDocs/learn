@@ -1,13 +1,12 @@
-Let's consider Chef and Terraform against the same criteria as in the previous unit:
+Let's consider Chef and Terraform against the same criteria as in the previous unit.
 
 ## Chef
 
-- **Scalability** - Highly scalable for provisioning compute resources from small to large infrastructure.
-- **Ease of setup** - Master/agent setup. The Chef server runs on the master machine and the Chef clients run as agents on each client machine. You can provision a Chef server through the Azure portal.
-- **Ease of management** - The management of Chef can be difficult as it uses its own configuration language called Ruby. So, you may need a programmer to manage the configuration.
+- **Ease of setup** - The Chef server runs on the master machine and Chef clients run as agents on each of your client machines. You can also use hosted Chef and get started much faster instead of having to running your own server.
+- **Ease of management** - The management of Chef can be difficult as it uses its a Ruby based domain specific language. So, you may need a programmer to manage the configuration.
 - **Interoperability** - Chef server only works under Linux/Unix, but the Chef client can be on Windows.
-- **Configuration language** – Ruby
-- **Limitation/drawbacks** - Templating language can be hard to learn, especially for those developers not already familiar with the Ruby programming language. Other platforms have better pre-configured deployment scripts.
+- **Configuration language** – A Ruby based domain specific language.
+- **Limitation/drawbacks** - The language can be take time to learn, especially for those not already familiar with the Ruby programming language.
 
 ### Scenario
 
@@ -21,10 +20,9 @@ Chef is suitable for high scale infrastructure deployment and configuration, and
 
 ## Terraform
 
-- **Scalability** - Highly scalable for provisioning compute resources from small to large infrastructure.
 - **Ease of setup** - In order to install Terraform, all you have to do is download the right version corresponding to your operating system, and install it.
 - **Management** - Terraform is easy to manage.
-- **Interoperability** - Supports Amazon Web Services, Microsoft Azure, and Google cloud platform.
+- **Interoperability** - Supports Azure, Amazon Web Services, and Google Cloud Platform.
 - **Configuration language** - Terraform uses Hashicorp Configuration Language (HCL). Alternately you can also use JSON (JavaScript Object Notation).
 - **Limitation/Drawbacks** - Because Terraform is a tool managed separately from Azure, it is reasonable to expect that there will be instances where you will not be able to provision a service or a resource, because it may take some time for an Azure resource or service to be represented and available to provision using Terraform.
 
@@ -36,4 +34,4 @@ Terraform would be a good solution for this scenario and would make it possible 
 
 ### Summary
 
-Terraform allows you to plan the infrastructure as code, and gives you a preview of what the code will create. You can have that code peer-reviewed, so it helps to minimize errors in configuration. Terraform will allow you to structure, and also deploy your cloud infrastructure by taking a preventative approach to unforeseen issues.
+Terraform allows you to plan the infrastructure as code, and gives you a preview of what the code will create. You can have that code peer-reviewed, so it helps to minimize errors in configuration. Supports infrastructure configurations across multiple different cloud service providers.
