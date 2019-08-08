@@ -1,6 +1,6 @@
 As the Solution Architect for the health care system, you're now ready to start implementing the design to deploy a highly available application. You're also going to download and install Fiddler that you'll use to test the application.
 
-In the health care system, your application should automatically fail over and use the storage accounts at the secondary location if there's a failure connecting to the primary region holding your data in Azure storage. The circuit breaker should force the application to behave in this manner. When the primary location is back online, the circuit breaker should reroute the application back to the primary region. Before committing to full-blown development of the health care application, you want to test this approach using a sample application with dummy data.
+In the health care system, your application should automatically failover and use the storage accounts at the secondary location if there's a failure connecting to the primary region holding your data in Azure storage. The circuit breaker should force the application to behave in this manner. When the primary location is back online, the circuit breaker should reroute the application back to the primary region. Before committing to full-blown development of the health care application, you want to test this approach using a sample application with dummy data.
 
 In this exercise, you’ll run an application that shows how you can use the Circuit Breaker pattern with an RA-GRS storage account. The application switches to the secondary storage account when a problem is detected, and fails back to the primary location when it's available again. The application uploads a file to blob storage, it then loops, repeatedly downloading the same file. If there's an error reading the storage account from the primary location, the application retries the operation. If the retry fails after a number of repeated attempts, the application switches to the storage account at the secondary location. The application reads the data from the secondary location until the number of reads has exceeded a specified threshold. The application then attempts to switch back to the primary location, but returns to the secondary location if the primary location is still unavailable.
 
@@ -200,7 +200,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
         if (retryCount >= retryThreshold)
         {
 
-            // Check to see if we can fail over to secondary.
+            // Check to see if we can failover to secondary.
             if (blobClient.DefaultRequestOptions.LocationMode != LocationMode.SecondaryOnly)
             {
                 blobClient.DefaultRequestOptions.LocationMode = LocationMode.SecondaryOnly;
@@ -267,7 +267,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
     }
     ```
 
-    The JavaScript code you added to the Fiddler **OnBeforeResponse** function returns an HTTP 503 (Service Unavailable) error for requests to the primary storage account location, to simulate the storage endpoint being unaccessible. The circuit breaker code in the sample application should detect this failure and fail over to using the secondary storage location. The data was previously replicated from the primary to the secondary storage location by Azure, so the data should be accessible.
+    The JavaScript code you added to the Fiddler **OnBeforeResponse** function returns an HTTP 503 (Service Unavailable) error for requests to the primary storage account location, to simulate the storage endpoint being unaccessible. The circuit breaker code in the sample application should detect this failure and failover to using the secondary storage location. The data was previously replicated from the primary to the secondary storage location by Azure, so the data should be accessible.
 
 6. On the **File** menu, click **Save**.
 

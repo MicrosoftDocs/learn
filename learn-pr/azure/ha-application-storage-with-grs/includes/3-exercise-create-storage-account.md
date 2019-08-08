@@ -27,7 +27,7 @@ In this step, you'll create a new storage account. This storage account hosts th
 
     Make a note of the value of the **\$STORAGEACCT** variable, in case you need to recreate it in a later exercise.
 
-    This step sets the replication policy of the storage account to RA-GRS to enable the application to fail over to the secondary region in the event of an outage.
+    This step sets the replication policy of the storage account to RA-GRS to enable the application to failover to the secondary region in the event of an outage.
 
 1. Verify the replication status by running the following command:
 
