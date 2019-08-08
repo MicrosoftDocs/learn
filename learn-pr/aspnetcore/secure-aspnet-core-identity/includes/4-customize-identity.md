@@ -209,7 +209,7 @@ Let's analyze the impact of the `UpdateUser` EF Core migration on the `AspNetUse
 1. In *Areas/Identity/Pages/Account/Register.cshtml.cs*, add support for the name text boxes.
     1. Add the `FirstName` and `LastName` properties to the `InputModel` class:
 
-        [!code-csharp[](../code/Areas/Identity/Pages/Account/4-Register-FirstAndLastName.cshtml.cs?highlight=3-11)]
+        [!code-csharp[](../code/Areas/Identity/Pages/Account/4-Register-FirstAndLastName.cshtml.cs?highlight=3-6,8-11)]
 
     1. Modify the `OnPostAsync` method to populate set the `FirstName` and `LastName` properties on the `ContosoPetsUser` object. Replace the following code:
 
