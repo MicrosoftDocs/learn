@@ -15,7 +15,7 @@ Razor Pages enforces separation of concerns for page-related data properties and
 
 ## When to use Razor Pages
 
-Use Razor Pages in your ASP.NET Core app when:
+Use Razor Pages in your ASP.NET Core application when:
 
 * You want to generate dynamic UI for a browser from your ASP.NET Core application.
 * You prefer a page-focused approach to developing web apps, where the page markup and *:::no-loc text="PageModel":::* are in close proximity.
