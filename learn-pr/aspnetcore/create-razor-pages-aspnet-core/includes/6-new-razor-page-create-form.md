@@ -51,7 +51,7 @@ pushd $srcWorkingDirectory/ContosoPets.Ui/Pages/Products
 
 ## Render HTML and transition to C#
 
-The following markup from your new Razor Page is an example of an *:::no-loc text="@";;;* symbol followed by C# code. The C# code in this case is simply setting the *:::no-loc text="Title":::* element of this Razor Page's ViewData to *:::no-loc text="Create":::*. Razor syntax uses the *:::no-loc text="@";;;* symbol to transition from HTML to C#. If the *:::no-loc text="@";;;* symbol is followed by a Razor reserved keyword, then it transitions into Razor-specific markup, otherwise it transitions to C#. Razor evaluates the C# expressions and renders them in the HTML output.
+The following markup from your new Razor Page is an example of an `@` symbol followed by C# code. The C# code is setting the `ViewData` collection's `Title` key value to `Create`. Razor syntax uses the `@` symbol to transition from HTML to C#. If the `@` symbol is followed by a Razor reserved keyword, it transitions into Razor-specific markup; otherwise, it transitions to C#. Razor evaluates the C# expressions and renders them in the HTML output.
 
 ```cshtml
 @{
