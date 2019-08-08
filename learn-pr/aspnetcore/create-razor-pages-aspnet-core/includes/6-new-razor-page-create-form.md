@@ -12,7 +12,7 @@ pushd $srcWorkingDirectory/ContosoPets.Ui/Pages/Products
 
 	The current directory changes to the *:::no-loc text="Products/":::* directory.
 
-Run the following .NET Core CLI command in the command shell at the current directory.
+1. Run the following .NET Core CLI command in the command shell at the current directory.
 
 ```bash
 dotnet new page --name Create
