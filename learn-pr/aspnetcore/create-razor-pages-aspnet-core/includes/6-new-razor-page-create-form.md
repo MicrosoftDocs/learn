@@ -2,7 +2,7 @@ In this unit, you will create a form in the *:::no-loc text="ContosoPets.UI":::*
 
 ## Use the .NET Core CLI to create a new Razor Page
 
-The *:::no-loc text="ContosoPets.UI":::* project directory should be currently open in the [Azure Cloud Shell editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor). If it is not, then repeat the set-up steps in the previous *Set up the environment* unit.
+The *:::no-loc text="ContosoPets.UI":::* project directory should be currently open in the [Azure Cloud Shell editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor). If it's not, repeat the setup steps in the previous *Set up the environment* unit.
 
 Run the following command in the command shell:
 
