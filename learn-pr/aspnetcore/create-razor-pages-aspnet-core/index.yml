@@ -18,7 +18,7 @@ abstract: |
   - Understand the HTTP request life cycle of the Razor page.
   - Inject a dependent HTTP service class into the page model.
   - Add UI support for Create, Read, Update, and Delete (CRUD) operations.
-  - Deploy & Test
+  - Deploy and test the application.
 prerequisites: |
   - A basic understanding of C#.
   - Knowledge of HTML.
