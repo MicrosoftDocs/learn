@@ -78,7 +78,7 @@ If we run the app on our own machine, we would be able to direct a browser to 'h
 
 The preceding Azure CLI command provisions a public endpoint for this project. The first time the endpoint is provisioned it will take longer, please be patient as it may take several minutes.
 
-Something like the following text should eventually display to indicate the web API is being deployed.
+Something like the following text should eventually display to indicate the web UI is being deployed.
 
 ```console
 Starting zip deployment.  This operation can take a while to complete...
