@@ -15,7 +15,7 @@ pushd $srcWorkingDirectory/ContosoPets.Ui/Pages/Products
 1. Run the following .NET Core CLI command in the command shell at the current directory.
 
 	```bash
-dotnet new page --name Create
+	dotnet new page --name Create
 ```
 
 A new Razor Page named *:::no-loc text="Create.cshtml":::* and its *:::no-loc text="PageModel":::* class file named *:::no-loc text="Create.cshtml.cs":::* are created in the *:::no-loc text="ContosoPets.Ui/Pages/Products/":::* directory. By convention the Razor Page and its *:::no-loc text="PageModel":::* class file share the same name and location.
