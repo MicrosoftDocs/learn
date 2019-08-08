@@ -15,7 +15,7 @@ Now that you have added a *:::no-loc text="Create":::* Razor Page form and its *
 1. Run the following command:
 
     ```bash
-dotnet build
+    dotnet build
 ```
 
 The preceding command rebuilds your *:::no-loc text="ContosoPets.UI":::* application with your latest saved changes.
