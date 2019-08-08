@@ -24,7 +24,7 @@ pushd $srcWorkingDirectory/ContosoPets.Ui/Pages/Products
 
 1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)]
 
-1. Open your new *:::no-loc text="Create.cshtml":::* Razor Page located in the *:::no-loc text="ContosoPets.Ui/Pages/Products/":::* directory to examine the contents. It should look like the following:
+1. Open your new *:::no-loc text="Create.cshtml":::* Razor page, located in the *:::no-loc text="ContosoPets.Ui/Pages/Products/":::* directory, to examine the contents. It looks like the following:
 
 ```cshtml
 @page
