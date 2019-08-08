@@ -16,45 +16,45 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What is Microsoft Peering?"
+  - content: "What is Microsoft peering?"
     choices:
-    - content: "It provides a direct connection from your on-premises network to an Azure datacenter"
+    - content: "It provides a direct connection from your on-premises network to an Azure datacenter."
       isCorrect: false
-      explanation: "No. The Microsoft Peering enables you to connect your on-premises network to Office 365 services and Dynamic 365."
-    - content: "It enables you to connect your on-premises network to Office 365 services and Dynamic 365."
+      explanation: "No. Microsoft peering enables you to connect your on-premises network to Office 365 services and Dynamics 365."
+    - content: "It enables you to connect your on-premises network to Office 365 services and Dynamics 365."
       isCorrect: true
-      explanation: "This is the correct answer"
+      explanation: "This is the correct answer."
     - content: "It provides a connection between your on-premises network and an ExpressRoute provider."
       isCorrect: false
-      explanation: "No. The Microsoft Peering enables you to connect your on-premises network to Office 365 services and Dynamic 365."
+      explanation: "No. Microsoft peering enables you to connect your on-premises network to Office 365 services and Dynamics 365."
     - content: "It provides a point-to-site connection for computers in your on-premises location to Office 365 services."
       isCorrect: false
-      explanation: "No. The Microsoft Peering enables you to connect your on-premises network to Office 365 services and Dynamic 365."
+      explanation: "No. Microsoft peering enables you to connect your on-premises network to Office 365 services and Dynamics 365."
   - content: "What is an ExpressRoute circuit?"
     choices:
     - content: "An ExpressRoute circuit implements a site-to-site connection across a VPN connection to an Azure datacenter."
       isCorrect: false
-      explanation: "No. A circuit provides a physical connection for transmitting data through the ExpressRoute provider's edge routers to the Microsoft edge-routers."
+      explanation: "No. A circuit provides a physical connection for transmitting data through the ExpressRoute provider's edge routers to the Microsoft edge routers."
     - content: "An ExpressRoute circuit is a direct hard-wired connection between your on-premises datacenter and an Azure datacenter."
       isCorrect: false
-      explanation: "No. A circuit provides a physical connection for transmitting data through the ExpressRoute provider's edge routers to the Microsoft edge-routers."
-    - content: "A backup service that provides connectivity to the Microsoft Cloud if your VPN connection fails."
+      explanation: "No. A circuit provides a physical connection for transmitting data through the ExpressRoute provider's edge routers to the Microsoft edge routers."
+    - content: "A backup service that provides connectivity to the Microsoft cloud if your VPN connection fails."
       isCorrect: false
-      explanation: "No. A circuit provides a physical connection for transmitting data through the ExpressRoute provider's edge routers to the Microsoft edge-routers."
-    - content: "A circuit provides a physical connection for transmitting data through the ExpressRoute provider's edge routers to the Microsoft edge-routers."
+      explanation: "No. A circuit provides a physical connection for transmitting data through the ExpressRoute provider's edge routers to the Microsoft edge routers."
+    - content: "A circuit provides a physical connection for transmitting data through the ExpressRoute provider's edge routers to the Microsoft edge routers."
       isCorrect: true
       explanation: "This is the correct answer."
   - content: "What security benefits does Azure ExpressRoute provide?"
     choices:
-    - content: "An ExpressRoute connection is automatically encrypted, protecting traffic passing across the Internet to the Microsoft Cloud."
+    - content: "An ExpressRoute connection is automatically encrypted, to help protect traffic that passes across the internet to the Microsoft cloud."
       isCorrect: false
-      explanation: "No. ExpressRoute uses a dedicated, private network to connect to the Microsoft Cloud. Traffic doesn't traverse the Internet, making it difficult to intercept."
+      explanation: "No. ExpressRoute uses a dedicated, private network to connect to the Microsoft cloud. Traffic doesn't traverse the internet, so it's difficult to intercept."
     - content: "The speed at which data traverses an ExpressRoute connection makes it impossible to intercept by network monitors and packet sniffers."
       isCorrect: false
-      explanation: "No. ExpressRoute uses a dedicated, private network to connect to the Microsoft Cloud. Traffic doesn't traverse the Internet, making it difficult to intercept."
-    - content: "ExpressRoute uses a dedicated, private network to connect to the Microsoft Cloud. Traffic doesn't traverse the public Internet, making it difficult to intercept."
+      explanation: "No. ExpressRoute uses a dedicated, private network to connect to the Microsoft cloud. Traffic doesn't traverse the internet, so it's difficult to intercept."
+    - content: "ExpressRoute uses a dedicated, private network to connect to the Microsoft cloud. Traffic doesn't traverse the public internet, so it's difficult to intercept."
       isCorrect: true
-      explanation: "This is the correct answer"
-    - content: "ExpressRoute uses a proprietary transmission protocol that constantly varies, making it difficult to intercept traffic."
+      explanation: "This is the correct answer."
+    - content: "ExpressRoute uses a proprietary transmission protocol that constantly varies, so it's difficult to intercept traffic."
       isCorrect: false
-      explanation: "No. ExpressRoute uses a dedicated, private network to connect to the Microsoft Cloud. Traffic doesn't traverse the Internet, making it difficult to intercept."
+      explanation: "No. ExpressRoute uses a dedicated, private network to connect to the Microsoft cloud. Traffic doesn't traverse the internet, so it's difficult to intercept."
