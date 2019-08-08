@@ -11,13 +11,14 @@ metadata:
   #ms.learn-contact: luken
 title: Classify images with the Microsoft Custom Vision Service
 summary: Create, train and test a custom image classification model using the Custom Vision Service to accurately identify paintings from famous artists.
-abstract:  | 
+abstract:  |
   In this module, you will:
   - Create a Custom Vision Service project
   - Train a Custom Vision Service model with tagged images
   - Test a Custom Vision Service model
   - Call your custom model's prediction endpoint over HTTP 
-prerequisites: None
+prerequisites:  |
+  [!include[](../../includes/azure-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/classify-images-with-custom-vision-service.svg
 levels:
 - beginner

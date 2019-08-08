@@ -28,7 +28,7 @@ In this unit you will install the Azure Cosmos DB extension for Visual Studio, a
     > [!NOTE]
     > If you do not see the Concierge Subscription listed, ensure you logged into Azure in Visual Studio Code using the same account used to create the sandbox. Additionally, if you have filtered your Azure subscriptions in the Azure Account extension, verify the Concierge Subscription is checked in the `> Azure: Select Subscriptions` command.
 
-1. Click the __+__ button to start creating a Cosmos DB account. You will be asked to select the subscription if you have more than one.
+1. Click the __+__ button to start creating an Azure Cosmos DB account. You will be asked to select the subscription if you have more than one.
 
 1. In the text box at the top of the screen, enter a unique name for your Azure Cosmos DB account, and then press enter. The account name can contain only lowercase letters, numbers and the '-' character, and must be between 3 and 31 characters.
 

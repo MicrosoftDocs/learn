@@ -120,7 +120,7 @@ First, let's store some resource names so we can use them later.
     ```
     
     ```output
-    Name            : fotosharesVM-data
+    Name            : fotoshareVM-data
     DiskSizeGB      : 1023
     Lun             : 0
     Caching         : ReadOnly
@@ -175,7 +175,7 @@ We have only one data disk at the moment. The `Lun` field is important. It's the
     ```
     
     ```output
-    Name            : fotosharesVM-data
+    Name            : fotoshareVM-data
     DiskSizeGB      : 1023
     Lun             : 0
     Caching         : ReadOnly

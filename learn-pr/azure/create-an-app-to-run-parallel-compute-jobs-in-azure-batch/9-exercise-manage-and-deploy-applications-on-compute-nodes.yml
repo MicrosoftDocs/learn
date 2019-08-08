@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.exercise-manage-and-deploy-applications-on-compute-nodes
+title: Exercise - Manage and deploy applications on compute nodes
+metadata:
+  title: Exercise - Manage and deploy applications on compute nodes
+  description: In this hands-on exercise, you'll add code to run tasks on compute nodes.
+  ms.date: 06/01/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/9-exercise-manage-and-deploy-applications-on-compute-nodes.md)]

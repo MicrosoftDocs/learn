@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.exercise-create-a-pool-of-compute-nodes-to-run-our-jobs
+title: Exercise - Create a pool of compute nodes to run our jobs
+metadata:
+  title: Exercise - Create a pool of compute nodes to run our jobs
+  description: In this hands-on exercise, you'll add a pool to your Batch account using the .NET client library.
+  ms.date: 06/01/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-exercise-create-a-pool-of-compute-nodes-to-run-our-jobs.md)]

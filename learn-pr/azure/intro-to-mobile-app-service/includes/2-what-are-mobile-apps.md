@@ -13,19 +13,19 @@ When creating mobile applications with Azure, it's helpful to think about the ap
 
 Typically when we think of "apps" we think about a client application running on a consumer mobile device from companies like Apple and Google. This is the part of the app that the user interacts with.
 
-It's also common to have supporting services to manage, data, identity etc. *Mobile Apps in Azure App Service* is a collection of backend services commonly used to support mobile client apps.
+It's also common to have supporting services to manage data, identity, and so on. *Mobile Apps in Azure App Service* is a collection of backend services commonly used to support mobile client apps.
 
 It's important to know that Azure Mobile Apps provides those backend services, but you still need to build the mobile client app that runs on the mobile device. This will be done using mobile development tools and SDKs, and will require a developer with mobile development skills.
 
 ## Mobile Apps features
 
-![Features of Mobile Apps in Azure App Service](../media/mobile-apps-services.png)
+![Features of Mobile Apps in Azure App Service](../media/2-mobile-apps-services.png)
 
 ### Data access
 
-Mobile Apps provides a backend service that can be defined using either ASP.NET or node.js. This allows for an OData v3 source that can be linked to either an Azure SQL Database or an on-premises hosted SQL server. The data access service is based on Entity Framework, which allows your app to integrate with several SQL or NoSQL data providers including Azure Table Storage, MongoDB, and Azure Cosmos DB. 
+Mobile Apps provides a backend service that can be defined using either ASP.NET or node.js. This allows for an OData v3 source that can be linked to either an Azure SQL Database or an on-premises hosted SQL server. For ASP.NET, the data access service is based on Entity Framework, which allows your app to integrate with several SQL or NoSQL data providers including Azure Table Storage, MongoDB, and Azure Cosmos DB. 
 
-The data can be accessed via REST or using a Microsoft provided client SDK.
+The data can also be accessed via REST or using a Microsoft provided client SDK.
 
 ### Offline sync
 

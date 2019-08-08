@@ -2,8 +2,6 @@ In this module, you learned how to use Azure Blob storage to store web applicati
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
-To clean up your Cloud Shell storage, delete the `mslearn-store-data-in-azure` directory.
-
 <!---TODO: Remove further reading
 ## Further reading
 

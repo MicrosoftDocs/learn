@@ -16,18 +16,18 @@ In this unit, you'll use the Azure portal to create a new registry in Azure Cont
 
     ![Screenshot that shows the New blade in Azure portal showing the Container options available in Azure Marketplace](../media/3-search-container-registry-annotated.png)
 
-1. Specify the values in the following table for each of the properties, and then select **Create**:
+1. Specify the values in the following table for each of the properties:
 
-    | Property       | Value                                                                |
-    |----------------|----------------------------------------------------------------------|
-    | Name           | Enter a unique name and make a note of it for later.                 |
-    | Subscription   | **Concierge Subscription**                                           |
+    | Property | Value |
+    |---|---|
+    | Registry name | Enter a unique name and make a note of it for later. |
+    | Subscription | **Concierge Subscription** |
     | Resource Group | Use the existing resource group <rgn>[Sandbox resource group]</rgn>. |
-    | Location       | Use the default location.                                            |
-    | Admin user     | **Enable**                                                           |
-    | SKU            | **Standard**                                                         |
+    | Location | Use the default location. |
+    | Admin user | **Enable** |
+    | SKU | **Standard** |
 
-1. Wait until the container registry has been created before you continue.
+1. Click **Create**. Wait until the container registry has been created before you continue.
 
 ## Build a Docker image and upload it to Azure Container Registry
 

@@ -23,14 +23,14 @@ Now it's time to switch to the Databricks workspace and get hands-on with some b
 1. Choose the folder for the language you prefer to use, open the corresponding folder, and then open the notebook. 
 1. Follow the instructions within the notebook until you've completed the entire notebook. Then continue with the remaining notebooks in order:
 
-   - *01-Course-Overview-and-Setup*: This notebook gets you started with your Databricks workspace.
-   - *02-ETL-Process-Overview*: This notebook contains exercises to help you query large data files and visualize your results.
-   - *03-Connecting-to-Azure-Blob-Storage*: You do basic data aggregation and joins in this notebook.
-   - *04-Connecting-to-JDBC*: This notebook lists the steps for accessing data from various sources by using Databricks.
-   - *05-Applying-Schemas-to-JSON*: In this notebook, you learn how to query JSON and hierarchical data with DataFrames.
-   - *06-Corrupt-Record-Handling*: This notebook lists exercises that help you create an Azure Data Lake Storage Gen2 storage account and use Databricks DataFrames to query and analyze this data.
-   - *07-Loading-Data-and-Productionalizing*: Here you use Databricks to query and analyze data stores in Azure Data Lake Storage Gen2.
-   - *Parsing-Nested-Data*: This notebook is in the *Optional* subfolder. It includes a sample project you can explore later.
+   - **01-Course-Overview-and-Setup**: This notebook gets you started with your Databricks workspace.
+   - **02-ETL-Process-Overview**: This notebook contains exercises to help you query large data files and visualize your results.
+   - **03-Connecting-to-Azure-Blob-Storage**: You do basic data aggregation and joins in this notebook.
+   - **04-Connecting-to-JDBC**: This notebook lists the steps for accessing data from various sources by using Databricks.
+   - **05-Applying-Schemas-to-JSON**: In this notebook, you learn how to query JSON and hierarchical data with DataFrames.
+   - **06-Corrupt-Record-Handling**: This notebook lists exercises that help you create an Azure Data Lake Storage Gen2 storage account and use Databricks DataFrames to query and analyze this data.
+   - **07-Loading-Data-and-Productionalizing**: Here you use Databricks to query and analyze data stores in Azure Data Lake Storage Gen2.
+   - **Parsing-Nested-Data**: This notebook is in the *Optional* subfolder. It includes a sample project you can explore later.
 
 > [!NOTE]
 > You'll find corresponding notebooks within the *Solutions* subfolder. These notebooks contain finished cells for exercises that ask you to complete one or more challenges. Refer to these if you get stuck or simply want to see the solution.

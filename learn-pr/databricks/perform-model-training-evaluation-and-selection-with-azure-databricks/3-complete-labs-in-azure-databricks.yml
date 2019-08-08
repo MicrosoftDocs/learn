@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Train, evaluate, and select a machine-learning model by using Azure Databricks
-durationInMinutes: 45
+durationInMinutes: 30
 content: |
   [!include[](includes/3-complete-labs-in-azure-databricks.md)]

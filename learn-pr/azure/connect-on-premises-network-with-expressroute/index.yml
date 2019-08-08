@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.connect-on-premises-network-with-expressroute
+metadata:
+  title: Connect your on-premises network to the Microsoft global network by using ExpressRoute
+  description: Connect your on-premises systems and users to Azure and Office 365 by using ExpressRoute for private, dedicated, and guaranteed throughput connectivity.
+  ms.date: 07/17/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Connect your on-premises network to the Microsoft global network by using ExpressRoute
+summary: Connect your on-premises systems and users to Azure and Office 365 by using ExpressRoute for private, dedicated, and guaranteed throughput connectivity.
+abstract: | 
+  In this module, you will:
+  - Describe the features and capabilities of ExpressRoute
+  - Describe the use cases for using ExpressRoute to integrate traditional networks with Azure
+prerequisites: | 
+  - Basic knowledge of network concepts
+iconUrl: /learn/achievements/connect-on-premises-network-with-expressroute.svg
+levels:
+- beginner
+roles:
+- solution-architect
+- administrator
+products:
+- azure
+units:
+- learn.connect-on-premises-network-with-expressroute.1-introduction
+- learn.connect-on-premises-network-with-expressroute.2-expressroute-service
+- learn.connect-on-premises-network-with-expressroute.3-how-expressroute-works
+- learn.connect-on-premises-network-with-expressroute.4-choose-expressroute
+- learn.connect-on-premises-network-with-expressroute.5-summary
+badge:
+  uid: learn.connect-on-premises-network-with-expressroute.badge

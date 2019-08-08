@@ -52,7 +52,7 @@ Deployment should complete quickly. When it's finished, we can add new rules to 
 
     The advanced mode provides the ability to customize the rule completely. However, if you need to configure a known protocol, the basic mode is a bit easier to work with.
 
-1. Switch to the basic mode.
+1. Switch to the **Basic** mode.
 
 1. Add the information for our HTTP rule:
 
@@ -93,9 +93,11 @@ Port 80 is open on the NSG applied to the subnet, but it's still going to be blo
 
 1. In the **Settings** section, select the **Networking** item.
 
-1. In the **Inbound port rules** section you should see the NSG rules for the subnet, then the NSG rules for the network interface just below it. In the NSG rules for the network interface, select **Add inbound port rule**.
+1. You should see the NSG rules for the subnet in the top section and the NSG rules for the network interface in the bottom section of the same tab. In the bottom section, for the NSG rules for the network interface, select **Add inbound port rule**.
 
-1. Switch to the basic mode.
+    ![Screenshot that shows the "Add inbound port rule" button in the network security group > network interface section.](../media/8-add-rule-network-interface.png)
+
+1. Switch to the **Basic** mode.
 
 1. Add the information for our HTTP rule:
 

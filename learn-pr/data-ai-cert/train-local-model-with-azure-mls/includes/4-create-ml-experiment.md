@@ -34,6 +34,7 @@ ws = Workspace.create(
 With a `Workspace` object, you can create an `Experiment` and a `run` with the Azure ML SDK:
 
 ```python
+from azureml.core import Experiment
 #Create an experiment
 experiment = Experiment(workspace = ws, name = "my-first-experiment")
 
@@ -43,9 +44,28 @@ run.log("trial",1)
 run.complete()
 ```
 
+> [!IMPORTANT]
+> If you have more than 300 MB of content or 2000 files in the current notebook folder, you might get the following error:
+>
+> ![Screenshot of error when you the current folder has > 300 MB.](../media/6-experiment_over300mberror.png)
+>
+> This happens because Azure Machine Learning runs training scripts by copying the entire script folder to the target compute context, and then takes a snapshot. The storage limit for experiment snapshots is 300 MB and/or 2000 files.
+>
+> There are a number of ways to resolve this issue.  If you don't need all the files and can work within the default space constraints, the easiest solution is to exit the notebook, create a new folder with only what you need, open that folder and create the notebook there. On a local machine, you can stop the Jupyter Notebook service, change to the new folder at a command prompt and restart Jupyter Notebook.  On Azure Notebook, just create a new project and copy what you need to it. Then create your notebook there.  
+>
+> If you cannot get the data within the constraints, then read through [the documentation](https://docs.microsoft.com/azure/machine-learning/service/how-to-save-write-experiment-files#limits) to explore other options.
+
 ## View the logged results
 
-When the run finishes, you can view the experiment run in the Azure portal. To print a URL that links to the results for the last run, use the following code:
+Once the job has finished, the code below will display some details about the job you just ran. 
+
+```python
+from azureml.widgets import RunDetails
+
+RunDetails(run).show()
+```
+
+You can view the experiment run in the Azure portal. To print a URL that links to the results for the last run, use the following code:
 
 ```python
 print(run.get_portal_url())
@@ -53,4 +73,4 @@ print(run.get_portal_url())
 
 Navigate to the presented URL in a browser window to see the results of the experiment. It should open the Azure portal and display something like the below screenshot.
 
-![The screenshot depicts the my-first-experiment results in a browser window.](../media/5-experiment-result.png)
+![A screenshot showing the my-first-experiment results in a browser window.](../media/5-experiment-result.png)

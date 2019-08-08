@@ -16,11 +16,11 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/6-troubleshoot-aci.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.ContainerInstance/containerGroups"
-      name: mycontainer
-  hint: ""
+#tasks:
+#- action: exists
+#  environment: azure
+#  azure:
+#    resource:
+#      type: "Microsoft.ContainerInstance/containerGroups"
+#      name: mycontainer
+#  hint: ""

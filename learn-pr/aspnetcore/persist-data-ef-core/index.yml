@@ -18,8 +18,8 @@ abstract: |
   - Write and test CRUD queries.
   - Enable logging of the generated SQL.
 prerequisites: |
-  - A basic understanding of C#
-  - Knowledge of relational databases and SQL
+  - Experience writing C# at the beginner level
+  - Experience using relational databases and SQL as a developer
 levels:
 - intermediate
 roles:
@@ -43,6 +43,6 @@ units:
 - learn.persist-data-ef-core.7-enable-sql-logging
 - learn.persist-data-ef-core.8-knowledge-check
 - learn.persist-data-ef-core.9-summary
-iconUrl: /learn/achievements/persist-data-ef-core.svg
+iconUrl: /learn/achievements/aspnetcore/persist-data-ef-core.svg
 badge:
   uid: learn.persist-data-ef-core.badge

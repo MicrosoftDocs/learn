@@ -22,4 +22,4 @@ tasks:
   azure:
     resource:
       type: "Microsoft.DocumentDB/databaseAccounts"
-  hint: "Follow the directions to create a Cosmos DB account."
+  hint: "Follow the directions to create an Azure Cosmos DB account."

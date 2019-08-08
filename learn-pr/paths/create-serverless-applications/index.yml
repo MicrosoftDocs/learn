@@ -27,9 +27,12 @@ products:
 - azure-storage
 - azure-cloud-shell
 modules:
+- learn.choose-azure-service-to-integrate-and-automate-business-processes
 - learn.create-serverless-logic-with-functions
 - learn.execute-azure-function-with-triggers
 - learn.chain-azure-functions-data-using-input-output-bindings
-#TODO: Add post-Ignite - learn.build-a-serverless-web-app
+- learn.azure-create-long-running-serverless-workflow-with-durable-functions
+- learn.develop-test-deploy-azure-functions-with-visual-studio
+- learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook
 trophy:
   uid: learn.create-serverless-applications.trophy

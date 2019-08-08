@@ -1,10 +1,17 @@
 ## Abstract
 
+:::row:::
+:::column span="2":::
 In the last unit, we discussed the societal implications of AI and the responsibility of enterprises to anticipate and mitigate unintended consequences of AI technology. In light of this responsibility, enterprises are finding the need to create internal policies and practices to guide their AI efforts, whether they are deploying third-party AI solutions or developing their own.
 
 At Microsoft, we’ve recognized six principles that we believe should guide AI development and use: fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability. For us, these principles are the cornerstone of a responsible and trustworthy approach to AI, especially as intelligent technology becomes more prevalent in the products and services we use every day.
 
 We recognize that every individual, company, and region will have their own beliefs and standards that should be reflected in their AI journey. We want to share our perspective as you consider developing your own guiding principles.
+:::column-end:::
+:::column span="2":::
+![Six Principles Guiding Microsoft Responsible AI Development and Use - Fairness, Reliability and safety, privacy and security, inclusiveness, transparency, accountability](../media/3.2.1.A.Responsible-AI---Establishing-guiding-principles-unit.jpg)
+:::column-end:::
+:::row-end:::
 
 ## Microsoft’s six guiding principles
 
@@ -36,9 +43,16 @@ Inclusive design practices can help system developers understand and address pot
 
 ### Transparency
 
+:::row:::
+:::column span="2":::
 Underlying the preceding values are two foundational principles that are essential for ensuring the effectiveness of the rest: transparency and accountability. When AI systems are used to help inform decisions that have tremendous impacts on people’s lives, it is critical that people understand how those decisions were made. For example, a bank might use an AI system to decide whether a person is creditworthy, or a company might use an AI system to determine the most qualified candidates to hire.
 
 A crucial part of transparency is what we refer to as intelligibility, or the useful explanation of the behavior of AI systems and their components. Improving intelligibility requires that stakeholders comprehend how and why they function so that they can identify potential performance issues, safety and privacy concerns, biases, exclusionary practices, or unintended outcomes. We also believe that those who use AI systems should be honest and forthcoming about when, why, and how they choose to deploy them.
+:::column-end:::
+:::column span="2":::
+![Microsoft Inclusive Design Principles: recognize exclusion, solve for one, extend to many, learn from diversity](../media/3.2.1.B.Responsible-AI---Establishing-guiding-principles-unit1.jpg)
+:::column-end:::
+:::row-end:::
 
 ### Accountability
 

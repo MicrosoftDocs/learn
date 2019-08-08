@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn-sqlserver.introduction-sql-server-linux.2-what-sql-server-linux
+title: What is SQL Server on Linux?
+metadata:
+  title: What is SQL Server on Linux?
+  description: In this unit, you will learn why SQL Server has been released for running on Linux and why you might choose this platform.
+  ms.date: 06/11/2019
+  author: alistairmatthews
+  ms.author: v-alism
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-what-sql-server-linux.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How can SQL Server run on Linux?"
+    choices:
+    - content: "The SQL Server code has been ported to the Linux kernel."
+      isCorrect: false
+      explanation: "SQL Server on Linux runs on a platform abstraction layer, it has not been ported."
+    - content: "SQL Server runs on a platform abstraction layer."
+      isCorrect: true
+      explanation: "Both SQL Server on Linux and SQL Server for Windows run on top of the SQL Platform Abstraction Layer (SQLPAL)."
+    - content: "A new version of SQL Server has been created for Linux"
+      isCorrect: false
+      explanation: "SQL Server on Linux runs on a platform abstraction layer, it is not a new version specifically for Linux."
+  - content: "What is a container?"
+    choices:
+    - content: "A fully virtualized operating system, running in the cloud."
+      isCorrect: false
+      explanation: "A container does not include a full copy of an OS, and can run locally or in the cloud."
+    - content: "A system using a shared but isolated host operating system."
+      isCorrect: true
+      explanation: "A containerized virtualization system shares the host operating system while still isolating the applications and services."
+    - content: "An abstraction layer to allow SQL Server to run on Linux."
+      isCorrect: false
+      explanation: "A container is a form of abstraction, but it is not specifically for Linux or for SQL Server."

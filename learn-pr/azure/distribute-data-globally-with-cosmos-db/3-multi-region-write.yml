@@ -29,7 +29,7 @@ quiz:
     choices:
     - content: "Last-Writer-Wins"
       isCorrect: true
-      explanation: "Conflict resolution is built-in to Cosmos DB and is performed on the server, inside the database engine. Last-Writer-Wins is the default policy."
+      explanation: "Conflict resolution is built-in to Azure Cosmos DB and is performed on the server, inside the database engine. Last-Writer-Wins is the default policy."
     - content: "A custom user-defined procedure"
       isCorrect: false
       explanation: "User-defined procedures are supported, but they are not the default mechanism for handling conflicts."

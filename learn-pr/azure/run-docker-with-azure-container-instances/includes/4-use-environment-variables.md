@@ -1,6 +1,6 @@
 Environment variables enable you to dynamically configure the application or script the container runs. You can use the Azure CLI, PowerShell, or the Azure portal to set variables when you create the container. Secured environment variables enable you to prevent sensitive information from displaying in the container's output.
 
-Here, you'll create an Azure Cosmos DB instance and use environment variables to pass the connection information to an Azure container instance. An application in the container uses the variables to write and read data from Cosmos DB. You will create both an environment variable and a secured environment variable so you can see the difference between them.
+Here, you'll create an Azure Cosmos DB instance and use environment variables to pass the connection information to an Azure container instance. An application in the container uses the variables to write and read data from Azure Cosmos DB. You will create both an environment variable and a secured environment variable so you can see the difference between them.
 
 ## Deploy Azure Cosmos DB
 
@@ -24,10 +24,10 @@ Here, you'll create an Azure Cosmos DB instance and use environment variables to
 
     `$COSMOS_DB_NAME` specifies your unique database name. The command prints the endpoint address for your database. Here, the command saves this address to the Bash variable `COSMOS_DB_ENDPOINT`.
 
-1. Run `az cosmosdb list-keys` to get the Azure Cosmos DB connection key and store it in a Bash variable named `COSMOS_DB_MASTERKEY`.
+1. Run `az cosmosdb keys list` to get the Azure Cosmos DB connection key and store it in a Bash variable named `COSMOS_DB_MASTERKEY`.
 
     ```azurecli
-    COSMOS_DB_MASTERKEY=$(az cosmosdb list-keys \
+    COSMOS_DB_MASTERKEY=$(az cosmosdb keys list \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --name $COSMOS_DB_NAME \
       --query primaryMasterKey \

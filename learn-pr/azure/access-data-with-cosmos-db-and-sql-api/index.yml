@@ -35,6 +35,7 @@ units:
 - learn.access-data-with-cosmos-db-and-sql-api.3-add-data
 - learn.access-data-with-cosmos-db-and-sql-api.4-query-types
 - learn.access-data-with-cosmos-db-and-sql-api.5-run-queries
+- learn.access-data-with-cosmos-db-and-sql-api.stored-procs-and-udfs
 - learn.access-data-with-cosmos-db-and-sql-api.6-javascript-programming
 - learn.access-data-with-cosmos-db-and-sql-api.7-summary
 badge:

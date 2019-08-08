@@ -22,8 +22,6 @@ The general guidance is, if the combined resources you would need for individual
 
 At a minimum, it is recommended to add at least two S3 databases or fifteen S0 databases to a single pool for it to have potential cost savings.
 
-[insert image]
-
 Depending on the performance tier, you can add up to 100 or 500 databases to a single pool.
 
 ## Create an elastic pool

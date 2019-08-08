@@ -80,20 +80,33 @@ Other emerging intelligent technologies will raise similar issues in the future,
 
 ## Addressing future labor and workplace needs
 
+:::row:::
+:::column span="2":::
 AI is already significantly shifting how people prepare for, find, and accomplish work. Increasingly, workers will have to learn how to maximize the benefits of using emerging intelligent technology in their workplace. Gartner predicts that by 2021, 70% of enterprises will integrate AI to assist employee’s productivity.<sup>2</sup> But like other major new technologies, AI raises concerns about long-term impact on employment.
 
 A recent study by Accenture concluded that “AI could double annual economic growth rates in 2035 by changing the nature of work and creating a new relationship between man and machine.” Reference this article in the summary section of the module. That’s why, at Microsoft, we are focused on creating AI that augments human abilities rather than replacing them. We aim to empower the workforce by developing AI technology that leverages the unique strengths of computers—such as probabilistic reasoning and pattern recognition—with the creativity, ingenuity, and capacity for meaning-making of humans.
 
 Yet as the pace of technological innovation and disruption is accelerating, we are seeing a widening skills gap in critical areas of foundational knowledge and expertise. The McKinsey Global Institute estimates that, by 2024, there will be 250,000 unfilled U.S. data science job openings.<sup>4</sup> To realize the potential of AI, we must first address the ability of those in the current and future workforce to adapt to, engage with, and fundamentally understand these technological advances and transformations.
-
+:::column-end:::
+:::column span="2":::
+![2021 - 70% of enterprises will integrate AI to assist employee's productivity. 2024 - there will be 250,000 unfilled U.S. data science job openings. 2035 - AI could double annual economic growth rates by changing the nature of work and creating a new relationship between man and machine.](../media/3.3.1.A.Responsible-AI---Governance-and-external-engagements.jpg)
+:::column-end:::
+:::row-end:::
 We believe enterprises have an important role to play in helping people get the training they need to thrive in today’s shifting economy. At Microsoft, we are focusing on three areas: preparing students for tomorrow’s jobs, helping workers prepare for the changing economy, and helping match workers to 21st century job opportunities.
 
 According to the 2018 WEF Future of Jobs Report, many companies have been focusing their upskilling and retraining efforts on those people who already have higher skills and value to the company. For Microsoft, this means constantly looking for ways to work together to support people in this changing economy. Our publicly available Microsoft Professional Program now has an AI track bringing together expert instructors, provide hands-on labs, offer AI-specific online courses and instructional videos. We have also developed a developer-focused AI School, which provides online videos and other assets that help build professional AI skills. We’re also seeing unique partnerships to further skills development and employability. For example, the Skillful Initiative, a partnership with the Markle Foundation in the US, helps match people with employers and fill high-demand jobs.
 
 ## Contributing solutions to societal challenges
 
+:::row:::
+:::column span="2":::
 By harnessing the power of AI, we have an opportunity to help individuals, organizations, and governments solve some of society’s most daunting problems. AI can help people collect, process, and analyze data, turning it into actionable insights that can accelerate advances in health and wellbeing, education, agriculture, and climate change mitigation. We invite all enterprises to consider making their AI-infused technologies widely available to improve the lives of people around the world.
 
 At Microsoft, we are working to empower those striving to solve humanitarian issues and create a more sustainable and accessible world with technology, resources, and expertise through our AI for Good initiative. We’ve committed $115 million over the next five years to provide financial grants, technology investments, and partnerships that combine our AI and data science experience with these individuals’ and organizations’ core expertise. AI for Good includes three programs: AI for Accessibility, AI for Earth, and AI for Humanitarian Action, which are already supporting nearly 250 projects across the globe.
+:::column-end:::
+:::column span="2":::
+![Microsoft AI for Good initiative. A. Ai for Accessibility, B. AI for Earth, C. AI for Humanitarian Action. Microsoft is committed, with nearly 250 projects across the flobe, and $115 million allocated to the AI for Good initiative over the next five years.](../media/3.3.1.B.Responsible-AI---Governance-and-external-engagements-unit1.jpg)
+:::column-end:::
+:::row-end:::
 
 Next, let’s take a look at the advantages and disadvantages of different governance models.

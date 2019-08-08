@@ -42,7 +42,7 @@ Now that your .NET Core app has been updated to display detailed information, tr
 To retrieve all the vertices/nodes in your graph, run the following command:
 
 ```bash
-dotnet run "g.E()"
+dotnet run "g.V()"
 ```
 
 Your app should display a message indicating the number of vertices/nodes in your graph, together with all of the information for your vertices/nodes; for example:

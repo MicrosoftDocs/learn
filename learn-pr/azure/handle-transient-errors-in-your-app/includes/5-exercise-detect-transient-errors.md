@@ -4,7 +4,7 @@ You'll now add code to detect transient errors in your team's chat app. You can 
 
 ## Set up the database
 
-The first thing to do is configure the app's back end. It uses a Cosmos DB with a Mongo API. We'll use the following set of instructions to set up the database through the Azure CLI.
+The first thing to do is configure the app's back end. It uses an Azure Cosmos DB with a Mongo API. We'll use the following set of instructions to set up the database through the Azure CLI.
 
 1. Run the following command in the Cloud Shell to set a variable called COSMOS_DB_NAME with a random name for our database.
 
@@ -94,7 +94,7 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
 
     ![The chat console app interface at startup, showing the New, Read All, and Quit commands.](../media/5-app-interface.png)
 
-1. To test the app, type **N** and enter a name and message for a new message. Type **R** to read all messages posted to date. Type **Q** to quit the app. If you quit the app and the restart, notice that the messages you typed  in the last session are available. That's because the app is connecting to our Mongo DB in Cosmos DB to retrieve all this data. 
+1. To test the app, type **N** and enter a name and message for a new message. Type **R** to read all messages posted to date. Type **Q** to quit the app. If you quit the app and the restart, notice that the messages you typed  in the last session are available. That's because the app is connecting to our Mongo DB in Azure Cosmos DB to retrieve all this data. 
 
 Let's see what happens when we break the connection to the backend database.
 
@@ -110,7 +110,7 @@ Let's see what happens when we break the connection to the backend database.
 
     [!code-csharp[](../src/csharp-chatapp/Program.cs?range=69-78&highlight=72)]
 
-    The Find method queries all the documents in the Cosmos DB. But, what if a transient error occurs while we try that operation? Let's start by catching that error. 
+    The Find method queries all the documents in the Azure Cosmos DB. But, what if a transient error occurs while we try that operation? Let's start by catching that error. 
 
 1. Replace the `getAllChats()` implementation with the code in the following block. Notice that we include a small helper method called `diagnose()` to print the exception message.
 
@@ -367,7 +367,7 @@ Let's see what happens when we break the connection to the backend database.
 
 1. You should see a database account with a name beginning with **learn-cosmos-db-**. Select that database account.
 
-1. In the Cosmos DB panel, select **Firewall and virtual networks**.
+1. In the Azure Cosmos DB panel, select **Firewall and virtual networks**.
 
 1. Select **Selected networks**.
 
@@ -375,7 +375,7 @@ Let's see what happens when we break the connection to the backend database.
 
 1. Select **I understand that the current settings will block all VNets and IPs including Azure portal**.
 
-1. Select **Save** to save the firewall configuration updates. These changes have enabled a firewall for the Cosmos DB account, which will block access from the Cloud Shell, simulating a connection outage.
+1. Select **Save** to save the firewall configuration updates. These changes have enabled a firewall for the Azure Cosmos DB account, which will block access from the Cloud Shell, simulating a connection outage.
 
     > [!NOTE]
     > It can take a while for these firewall updates to complete, so wait for them to finish before proceeding to the next step.
@@ -389,7 +389,7 @@ Let's see what happens when we break the connection to the backend database.
 1. When the firewall configuration update has finished successfully, return to the browser and try sending more messages. Observe the messages displayed in the Cloud Shell. The app is still running, but we are catching transient errors caused by the lost connection to the database.
 ::: zone-end
 
-To disable the firewall and let the app read and write to the Cosmos DB database again, perform the following steps.
+To disable the firewall and let the app read and write to the Azure Cosmos DB database again, perform the following steps.
 
 1. Visit the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
@@ -397,7 +397,7 @@ To disable the firewall and let the app read and write to the Cosmos DB database
 
 1. You should see a database account with a name beginning with **learn-cosmos-db-**. Select that database account.
 
-1. In the Cosmos DB panel, select **Firewall and virtual networks**.
+1. In the Azure Cosmos DB panel, select **Firewall and virtual networks**.
 
 1. Select **All networks** and then select **Save** at the bottom of the screen. 
 1. Wait for the firewall configuration updates to finish, which can take a few minutes

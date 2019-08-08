@@ -3,7 +3,7 @@ uid: learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.7-use-the-cass
 title: Use Cassandra for web analytics
 metadata:
   title: Use Cassandra for web analytics
-  description: Describe a scenario where the Cassandra API might be a good choice for Cosmos DB.
+  description: Describe a scenario where the Cassandra API might be a good choice for Azure Cosmos DB.
   ms.date: 04/24/2019
   author: rmcmurray
   ms.author: robmcm

@@ -24,7 +24,7 @@ Clone the lab archives that provide sample notebooks with detailed steps for bas
 
 ## Complete the following notebooks
 
-- *01 Model Training Selection Evaluation*: This notebook explains how to prepare your dataset. You'll import a sample dataset and use some basic functions to clean the data.
-- *02 Basic Regression with Azure Databricks*: This notebook contains techniques for basic regression. You'll use the dataset you imported in the first notebook and do basic regression on it.
-- *03 Classification with Azure Databricks*: This notebook details how to resolve classification problems. You'll use the scenarios from the sample dataset with different classification models.
-- *04 Advanced Regression with Azure Databricks*: In this notebook, you'll go through some advanced regression techniques and use them to further train and evaluate your machine-learning model.
+- **01 Model Training Selection Evaluation**: This notebook explains how to prepare your dataset. You'll import a sample dataset and use some basic functions to clean the data.
+- **02 Basic Regression with Azure Databricks**: This notebook contains techniques for basic regression. You'll use the dataset you imported in the first notebook and do basic regression on it.
+- **03 Classification with Azure Databricks**: This notebook details how to resolve classification problems. You'll use the scenarios from the sample dataset with different classification models.
+- **04 Advanced Regression with Azure Databricks**: In this notebook, you'll go through some advanced regression techniques and use them to further train and evaluate your machine-learning model.
