@@ -21,7 +21,7 @@ abstract: |
   - Deploy and test the application.
 prerequisites: |
   - Experience writing C# at the beginner level
-  - Knowledge of HTML.
+  - Ability to write HTML at an intermediate level
   - Knowledge of RESTful services and HTTP action verbs.
 levels:
 - beginner
