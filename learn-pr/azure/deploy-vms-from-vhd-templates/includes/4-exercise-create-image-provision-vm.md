@@ -8,7 +8,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
-::: zone pivot="windows"
+::: zone pivot="windows-cloud"
 
 1. In the Cloud Shell window on the right, run the following commands to create a Windows Server Datacenter virtual machine running IIS. When prompted for the *azureuser* password, enter a password of your choice.
 
@@ -48,7 +48,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone-end
 
-::: zone pivot="linux"
+::: zone pivot="linux-cloud"
 
 1. In the Cloud Shell window on the right, run the following commands to create an Ubuntu Server virtual machine running Nginx. When prompted for the *azureuser* password, enter a password of your choice.
 
@@ -90,7 +90,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ## Generalize the virtual machine
 
-::: zone pivot="windows"
+::: zone pivot="windows-cloud"
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
@@ -158,7 +158,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone-end
 
-::: zone pivot="linux"
+::: zone pivot="linux-cloud"
 
 1. In the Cloud Shell window, run the following command to connect to the Ubuntu virtual machine. Replace `<ip address>` with the public IP address of the virtual machine, that you noted during the Setup task.
 
@@ -200,7 +200,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ## Create a virtual machine image
 
-::: zone pivot="windows"
+::: zone pivot="windows-cloud"
 
 1. Run the following command to create a virtual machine image named *MyVMImage* from the generalized virtual machine.
 
@@ -213,7 +213,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone-end
 
-::: zone pivot="linux"
+::: zone pivot="linux-cloud"
 
 1. Run the following command to create a virtual machine image named *MyVMImage* from the generalized virtual machine.
 
@@ -228,7 +228,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ## Create a virtual machine using the new image
 
-::: zone pivot="linux"
+::: zone pivot="linux-cloud"
 
 1. Run the following command to create a new virtual machine using the *MyVMImage* image.
 
@@ -263,7 +263,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone-end
 
-::: zone pivot="windows"
+::: zone pivot="windows-cloud"
 
 1. Run the following command to create a new virtual machine using the *MyVMImage* image. Enter the *azureuser* password you used when you created the original virtual machine.
 

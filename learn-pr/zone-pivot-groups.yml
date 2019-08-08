@@ -164,11 +164,3 @@ groups:
       title: LINQ
     - id: fluent
       title: Fluent
-- id: vm-os
-  title: Virtual machine operating system
-  prompt: Choose your operating system
-  pivots:
-    - id: linux
-      title: Linux
-    - id: windows
-      title: Windows
