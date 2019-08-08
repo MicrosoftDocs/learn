@@ -10,7 +10,7 @@ The separation of Custom Vision API subscription keys makes it easy to provide k
 
 ## Supplying a subscription key
 
-Every programmatic call to the Custom Vision APIs require that one of these subscription keys be passed to the service as a request header value. For example, if the code were calling the Prediction API in C#, you'd use the `DefaultRequestHeaders` collection to add the prediction key to the request with the key `Prediction-Key`:
+Every programmatic call to the Custom Vision APIs requires that one of these subscription keys be passed to the service as a request header value. For example, if the code were calling the Prediction API in C#, you'd use the `DefaultRequestHeaders` collection to add the prediction key to the request with the key `Prediction-Key`:
 
 ```csharp
 string predictionKey = "...";
@@ -18,7 +18,7 @@ HttpClient client = new HttpClient();
 client.DefaultRequestHeaders.Add("Prediction-Key", predictionKey)
 ```
 
-The same code in Ruby would look something like:
+The same code in Ruby would look something like this example:
 
 ```ruby
 request['Prediction-Key'] = '{prediction key}'

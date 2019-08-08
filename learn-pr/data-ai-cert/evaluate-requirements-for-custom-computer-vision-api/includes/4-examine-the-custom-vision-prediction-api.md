@@ -1,4 +1,4 @@
-The most common task an application or script will do with the Custom Vision service is requesting image predictions through the Prediction API. This process involves sending an authorized web request to the subscription endpoint and processing the information returned from the call.
+The most common task an application or script will do with the Custom Vision service is request image predictions through the Prediction API. This task involves sending an authorized web request to the subscription endpoint and processing the information returned from the call.
 
 > [!TIP]
 > For testing purposes, subscribers can practice using the Prediction API through the [Custom Vision Prediction API testing console](https://southcentralus.dev.cognitive.microsoft.com/docs/services/Custom_Vision_Prediction_3.0/operations/5c82db60bf6a2b11a8247c19 "Custom Vision Prediction API testing console"). Be sure to select the testing console that's associated with the region where the service is deployed.
@@ -8,7 +8,7 @@ The most common task an application or script will do with the Custom Vision ser
 You access the Prediction API through a public web endpoint that's specific to your registered Custom Vision service. There are two APIs available, depending on the project type: image classification and object detection.
 
 #### Image classification
-Image classification analyzes a supplied image and returns a list of labels (tags) identified in the image. Several endpoints are supplied. These are the two most commonly used endpoints:
+Image classification analyzes a supplied image and returns a list of labels (tags) identified in the image. Several endpoints are supplied. Here are the two most commonly used endpoints:
 
 - **ClassifyImage** accepts a binary payload (`"application/octet-stream"`) as a byte array that contains the image data.
 - **ClassifyImageUrl** accepts a JSON payload (`"application/json"`) that specifies a publicly available image URL.
@@ -38,7 +38,7 @@ In this URL:
 
 ### Locating the project URL
 
-The specific endpoint details are available in the Custom Vision service portal. Selecting the **View Endpoint** button on the **Predictions** tab or the **Prediction URL** option on the **Performance** tab will display a dialog box similar to this one:
+The specific endpoint details are available in the Custom Vision service portal. If you select the **View Endpoint** button on the **Predictions** tab or the **Prediction URL** option on the **Performance** tab, you'll see a dialog box similar to this one:
 
 ![Screenshot showing the two defined prediction endpoints for a Custom Vision service](../media/4-image-url.png)
 
@@ -46,7 +46,7 @@ The specific endpoint details are available in the Custom Vision service portal.
 
 After you identify the proper URL, you invoke it by using an HTTP PUT request. Remember that you need to pass a prediction key with the request. This key is provided as a request header with the name `Prediction-Key`.
 
-For example, the following C# code sends an image URL to the Prediction API with the given endpoint and prediction key.
+For example, the following C# code sends an image URL to the Prediction API with the given endpoint and prediction key:
 
 ```csharp
 public async Task<string> MakePredictionRequestAsync(string url, string predictionKey, string imageUrl)
@@ -61,7 +61,7 @@ public async Task<string> MakePredictionRequestAsync(string url, string predicti
 }
 ```
 
-In Python 3, the same code might look something like this code:
+In Python 3, the same code might look something like this example:
 
 ```python
 import http.client, urllib.request, urllib.parse, urllib.error, base64
@@ -85,7 +85,7 @@ except Exception as e:
 ```
 
 > [!NOTE]
-> The Prediction API methods also accept an optional query string parameter named `application` to identify the app that's invoking the service. This value can be used to track the applications using the Custom Vision service.
+> The Prediction API methods also accept an optional query string parameter named `application` to identify the app that's invoking the service. This value can be used to track the applications that are using the Custom Vision service.
 
 ### Passing image files directly
 

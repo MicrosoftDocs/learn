@@ -1,4 +1,4 @@
-The Custom Vision service web portal is an easy way to train a model by uploading tagged images. This approach is the most common way to train, test, and publish a model. But sometimes a business need might require a model to be prepared (or re-trained) based on incoming data available to the applications using the service. In these cases, the app can use the Training API to add and tag new images and publish a new iteration of the Custom Vision service.
+The Custom Vision service web portal is an easy way to train a model by uploading tagged images. This approach is the most common way to train, test, and publish a model. But sometimes a business need might require a model to be prepared (or retrained) based on incoming data available to the applications that are using the service. In these cases, the app can use the Training API to add and tag new images and publish a new iteration of the Custom Vision service.
 
 Like the Prediction API, the Training API provides HTTP methods for adding   training images to a project and tagging them. The process of calling and consuming the response is identical to the Prediction API process. It just uses different endpoints.
 
@@ -20,7 +20,7 @@ In this URL:
 
 - `{endpoint}` is the location endpoint the service was created in, for example, `southcentralus.api.cognitive.microsoft.com`.
 - `{projectId}` is a unique project identifier that's used to specify the Custom Vision service.
-- `{imageType}` is either `urls`, when the images are passed as URLs, or `files` when the images are passed as encoded data in the body of the request.
+- `{imageType}` is either `urls`, when the images are passed as URLs, or `files`, when the images are passed as encoded data in the body of the request.
 
 ### Building a request
 
@@ -46,7 +46,7 @@ Each **CreateImages** request takes a list of images (or URLs) and an optional s
 }
 ```
 
-The `tagIds` collections are optional. You can be omit them if you're not using them. You can supply tags either per-image (if they're different for each image) or for the entire collection of images through the second tag collection. You must provide the unique identifier for the tag. You can retrieve this identifier from the web portal or by using HTTP GET to invoke the `{endpoint}/customvision/v3.0/training/projects/{projectId}/tags` method. Here's an example response:
+The `tagIds` collections are optional. You can omit them if you're not using them. You can supply tags either per-image (if they're different for each image) or for the entire collection of images through the second tag collection. You must provide the unique identifier for the tag. You can retrieve this identifier from the web portal or by using HTTP GET to invoke the `{endpoint}/customvision/v3.0/training/projects/{projectId}/tags` method. Here's an example response:
 
 ```json
 [

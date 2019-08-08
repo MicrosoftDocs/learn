@@ -19,8 +19,8 @@ The Custom Vision APIs are the perfect way to use the power of artificial intell
 
 In general, the methods provided by the Custom Vision APIs fall into these categories:
 
-- **Training**: Manage projects (classifiers) and upload, tag, and manage training images
-- **Prediction**: Make predictions based on classification models
+- **Training**. Manage projects (classifiers) and upload, tag, and manage training images.
+- **Prediction**, Make predictions based on classification models.
 
 As with the related Computer Vision API, to call the Custom Vision APIs, you simply make a secure web request. For example, here's a simplified version of what a call to a Custom Vision API might look like in Python:
 
