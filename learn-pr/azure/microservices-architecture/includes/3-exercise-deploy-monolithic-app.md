@@ -44,7 +44,10 @@ Let's start by deploying the application. First, we'll need to great the Azure r
 1. Run this command to set a variable with the name of the App Service.
 
     ```bash
-    APPSERVICENAME="$(az webapp list --query '[].name' --output tsv)"
+    APPSERVICENAME="$(az webapp list \
+                        --resource-group <rgn>[sandbox resource group]</rgn> \
+                        --query '[].name' \
+                        --output tsv)"
     ```
 
 1. Now let's set up the App Service to use local git, allowing us to deploy code to the site. Run the following command.
