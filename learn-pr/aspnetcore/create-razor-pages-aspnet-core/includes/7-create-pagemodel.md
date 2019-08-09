@@ -101,7 +101,7 @@ The `CreateModel` class needs access to the *:::no-loc text="Product":::* model.
 public Product Product { get; set; }
 ```
 
-Binding to properties can reduce the amount of code you have to write. Binding reduces code by using the same property to render fields such as in *:::no-loc text="<input asp-for="Product.Name">":::*.
+Binding to properties can reduce the amount of code you have to write. Binding reduces code by using the same property to render fields such as in `<input asp-for="Product.Name">`.
 
 ## Built-in server-side model validation using ASP.NET Core *:::no-loc text="Data Annotations":::*
 
