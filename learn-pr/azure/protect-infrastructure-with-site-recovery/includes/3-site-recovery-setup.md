@@ -36,7 +36,7 @@ Run the following commands in the Cloud Shell. This will create your companies i
     ```
 
     > [!NOTE]
-    > This can take up to five minutes to complete, while it is running continue with this module.
+    > This can take up to five minutes to complete. While it is running continue with this module.
 
 ## Disaster recovery preparation with Azure Site Recovery
 
