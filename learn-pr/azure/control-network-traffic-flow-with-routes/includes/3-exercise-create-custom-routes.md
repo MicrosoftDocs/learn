@@ -10,7 +10,7 @@ In this exercise, you'll create the route table, custom route, and subnets. You'
 
 ## Create a route table and custom route
 
-The first task is create a new routing table, and then add a custom route for all traffic intended for the **privatesubnet** subnet.
+The first task is to create a new routing table, and then add a custom route for all traffic intended for the **privatesubnet** subnet.
 
 1. In the Cloud Shell window on the right, run the following command to create a route table.
 
