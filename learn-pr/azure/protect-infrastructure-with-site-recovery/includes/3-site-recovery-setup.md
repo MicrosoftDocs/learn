@@ -1,4 +1,4 @@
-Now you know about the capabilities of Azure Site Recovery (Azure Site Recovery), you can begin to think about preparation for disaster recovery in your Azure environment.
+Now you know about the capabilities of Azure Site Recovery, you can begin to think about preparation for disaster recovery in your Azure environment.
 
 Using your organizations BCDR plan, you now need to run through the Azure Site Recovery configurations and set a preparation plan in motion that fits with your organizations BCDR goals.
 
