@@ -12,7 +12,7 @@ metadata:
   zone_pivot_groups: aspnet-core-identity-data-store
 title: Exercise - Grant administrative rights to a user
 azureSandbox: true
-interactive: bash-editor
+interactive: bash
 durationInMinutes: 10
 content: |
   [!include[](includes/6-grant-admin-rights.md)]

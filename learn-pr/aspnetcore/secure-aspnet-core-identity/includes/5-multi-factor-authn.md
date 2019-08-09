@@ -14,7 +14,7 @@ To avoid distracting from the focus on Identity, the boilerplate to support QR c
 
 ## Customize multi-factor authentication
 
-1. Open *Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml.cs* and make the following changes:
+1. Open *Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml.cs* and make the following changes and save:
     1. Add the following property to the `EnableAuthenticatorModel` class to store the QR code's base-64 string representation:
 
         [!code-csharp[](../code/Areas/Identity/Pages/Account/Manage/5-EnableAuthenticator.cshtml.cs?name=snippet_QrCodeAsBase64&highlight=7)]
@@ -25,43 +25,43 @@ To avoid distracting from the focus on Identity, the boilerplate to support QR c
 
         In the preceding page handler, parameter injection provides a reference to the `QRCodeService` singleton service. `QRCodeService` is responsible for interactions with a third-party library that generates QR codes.
 
-    1. Add the following `using` statement to resolve the reference to `QRCodeService`. Save your changes.
+    1. Add the following `using` statement to the top of the file to resolve the reference to `QRCodeService`. Save your changes.
 
         ```csharp
         using ContosoPets.Ui.Services;
         ```
 
-1. In *Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml*, replace the following HTML. Save your changes.
+1. In *Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml*, make the following highlighted changes and save:
 
-    ```html
-    <div id="qrCode"></div>
-    ```
+    [!code-csharp[](../code/Areas/Identity/Pages/Account/Manage/5-EnableAuthenticator.cshtml?highlight=4-6)]
 
-    With the following markup:
-
-    ```cshtml
-    <div id="qrCode">
-        <img alt="embedded QR code" src="data:image/png;base64,@Model.QrCodeAsBase64" />
-    </div>
-    ```
+    The preceding markup embeds the base-64 encoded image in the page.
 
 ## Test multi-factor authentication
 
-1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
 
 1. [!INCLUDE[az webapp up command](../../includes/az-webapp-up-command.md)]
 
-1. Navigate to the site and login with either registered user (if necessary). Select **Hello, [First name] [Last name]!** link to navigate to the profile management page, and then select **Two-factor authentication**.
+1. Navigate to the site and log in with either registered user (if not already logged in). Select **Hello, [First name] [Last name]!** link to navigate to the profile management page, and then select **Two-factor authentication**.
 
-1. Select **Set up authenticator app**.
+1. Select **Add authenticator app**.
 
 1. Follow the on-screen instructions to register and verify your authenticator app for this user.
 
     Using Microsoft Authenticator as an example, follow these steps to add the account to the app:
 
+    1. Open the Microsoft Authenticator app.
     1. Select the kebab menu (vertical ellipsis) in the upper right.
     1. Select **Add account**.
-    1. Select **Other account**.
+    1. Select **Other account (Google, Facebook, etc.)**.
     1. Scan the QR code as indicated.
+    1. Enter the verification code provided in Microsoft Authenticator, and select **Verify**.
 
-1. Select **Logout**, and then log in again with the same user. Note the user is prompted for a token from the authenticator app. Provide the token value to log in.
+1. Select **Logout**, and then log in again with the same user.
+
+1. Select the **Hello, [First name] [Last name]!** link again.
+
+1. Select the **Two-factor authentication** tab.
+
+    Because Microsoft Authenticator has been set up, a **Set up authenticator app** and a **Reset authenticator app** button display.

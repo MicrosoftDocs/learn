@@ -24,7 +24,11 @@ UI changes are also required to collect the additional user profile information.
     * The `--force` option causes existing files in the *Identity* area to be overwritten.
 
     > [!TIP]
-    > Run the `dotnet aspnet-codegenerator identity --listFiles --force` command from the project root to view valid values for the `--files` option.
+    > Run the following command from the project root to view valid values for the `--files` option:
+    >
+    > ```bash
+    > dotnet aspnet-codegenerator identity --listFiles --force
+    > ```
 
     The following files are added to the *Areas/Identity* directory:
 
@@ -32,18 +36,18 @@ UI changes are also required to collect the additional user profile information.
         * *ContosoPetsUser.cs*
     * **Pages/**
         * *_ViewImports.cshtml*
-    * **Pages/Account/**
-        * *_ViewImports.cshtml*
-        * *Register.cshtml*
-        * *Register.cshtml.cs*
-    * **Pages/Account/Manage/**
-        * *_ManageNav.cshtml*
-        * *_ViewImports.cshtml*
-        * *EnableAuthenticator.cshtml*
-        * *EnableAuthenticator.cshtml.cs*
-        * *Index.cshtml*
-        * *Index.cshtml.cs*
-        * *ManageNavPages.cs*
+        * **Account/**
+            * *_ViewImports.cshtml*
+            * *Register.cshtml*
+            * *Register.cshtml.cs*
+            * **Manage/**
+                * *_ManageNav.cshtml*
+                * *_ViewImports.cshtml*
+                * *EnableAuthenticator.cshtml*
+                * *EnableAuthenticator.cshtml.cs*
+                * *Index.cshtml*
+                * *Index.cshtml.cs*
+                * *ManageNavPages.cs*
 
     Additionally, the *Data/ContosoPetsAuth.cs* file, which existed prior to running the preceding command, was overwritten because the `--force` option was used. The `ContosoPetsAuth` class declaration now references the newly created user type of `ContosoPetsUser`:
 
@@ -53,7 +57,7 @@ UI changes are also required to collect the additional user profile information.
 
     The *EnableAuthenticator* Razor page was scaffolded, though it won't be modified until later in the module.
 
-1. In the `Configure` method of *IdentityHostingStartup.cs*, the call to `AddDefaultIdentity` needs to be made aware of the new Identity user type. Incorporate the following highlighted change, and save the file.
+1. In the `Configure` method of *Areas/Identity/IdentityHostingStartup.cs*, the call to `AddDefaultIdentity` needs to be made aware of the new Identity user type. Incorporate the following highlighted change, and save the file.
 
     [!code-csharp[](../code/Areas/Identity/IdentityHostingStartup.cs?name=snippet_ConfigureAddDefaultIdentity&highlight=1)]
 
@@ -63,7 +67,7 @@ UI changes are also required to collect the additional user profile information.
 
     The preceding changes update the user type passed to both `SignInManager<T>` and `UserManager<T>` in the `@inject` directives. Instead of the default `IdentityUser` type, `ContosoPetsUser` user is now referenced. The `@using` directive was added to resolve the `ContosoPetsUser` references.
 
-    *Pages/Shared/_LoginPartial.cshtml* is physically located outside of the *Identity* area. Consequently, the file wasn't updated automatically. The appropriate changes had be made manually.
+    *Pages/Shared/_LoginPartial.cshtml* is physically located outside of the *Identity* area. Consequently, the file wasn't updated automatically by the scaffold tool. The appropriate changes had be made manually.
 
     > [!TIP]
     > As an alternative to manually editing the *_LoginPartial.cshtml* file, it can be deleted prior to running the scaffold tool. The *_LoginPartial.cshtml* file will be recreated with references to the new `ContosoPetsUser` class.
@@ -110,28 +114,28 @@ UI changes are also required to collect the additional user profile information.
                                         Table "public.AspNetUsers"
             Column        |           Type           | Collation | Nullable |        Default
     ----------------------+--------------------------+-----------+----------+-----------------------
-        Id                   | text                     |           | not null |
-        UserName             | character varying(256)   |           |          |
-        NormalizedUserName   | character varying(256)   |           |          |
-        Email                | character varying(256)   |           |          |
-        NormalizedEmail      | character varying(256)   |           |          |
-        EmailConfirmed       | boolean                  |           | not null |
-        PasswordHash         | text                     |           |          |
-        SecurityStamp        | text                     |           |          |
-        ConcurrencyStamp     | text                     |           |          |
-        PhoneNumber          | text                     |           |          |
-        PhoneNumberConfirmed | boolean                  |           | not null |
-        TwoFactorEnabled     | boolean                  |           | not null |
-        LockoutEnd           | timestamp with time zone |           |          |
-        LockoutEnabled       | boolean                  |           | not null |
-        AccessFailedCount    | integer                  |           | not null |
-        FirstName            | character varying(100)   |           | not null | ''::character varying
-        LastName             | character varying(100)   |           | not null | ''::character varying
+     Id                   | text                     |           | not null |
+     UserName             | character varying(256)   |           |          |
+     NormalizedUserName   | character varying(256)   |           |          |
+     Email                | character varying(256)   |           |          |
+     NormalizedEmail      | character varying(256)   |           |          |
+     EmailConfirmed       | boolean                  |           | not null |
+     PasswordHash         | text                     |           |          |
+     SecurityStamp        | text                     |           |          |
+     ConcurrencyStamp     | text                     |           |          |
+     PhoneNumber          | text                     |           |          |
+     PhoneNumberConfirmed | boolean                  |           | not null |
+     TwoFactorEnabled     | boolean                  |           | not null |
+     LockoutEnd           | timestamp with time zone |           |          |
+     LockoutEnabled       | boolean                  |           | not null |
+     AccessFailedCount    | integer                  |           | not null |
+     FirstName            | character varying(100)   |           | not null | ''::character varying
+     LastName             | character varying(100)   |           | not null | ''::character varying
     ```
 
     The `FirstName` and `LastName` properties in the `ContosoPetsUser` class correspond to the `FirstName` and `LastName` columns in the preceding output. A data type of `character varying(100)` was assigned to each of the two columns because of the `[MaxLength(100)]` attributes. The non-null constraint was added because of the `[Required]` attributes.
 
-3. Scroll down until the following index information displays:
+3. Scroll down in the command shell until the following index information displays:
 
     ```console
     Indexes:
@@ -142,7 +146,7 @@ UI changes are also required to collect the additional user profile information.
 
     The `PK_AspNetUsers` index shows that the `Id` column is the unique identifier for a user account.
 
-4. Press <kbd>q</kbd> to exit the text viewer.
+4. Press <kbd>q</kbd> to exit the text viewer in the command shell.
 
 ::: zone-end
 
@@ -207,25 +211,13 @@ UI changes are also required to collect the additional user profile information.
 1. In *Areas/Identity/Pages/Account/Register.cshtml.cs*, add support for the name text boxes.
     1. Add the `FirstName` and `LastName` properties to the `InputModel` class:
 
-        [!code-csharp[](../code/Areas/Identity/Pages/Account/4-Register-FirstAndLastName.cshtml.cs?highlight=3-6,8-11)]
+        [!code-csharp[](../code/Areas/Identity/Pages/Account/4-Register-FirstAndLastName.cshtml.cs?name=snippet_InputModel)]
 
-    1. Modify the `OnPostAsync` method to populate set the `FirstName` and `LastName` properties on the `ContosoPetsUser` object. Replace the following code:
+        The `[Display]` attributes define the label text to be associated with the text boxes.
 
-        ```csharp
-        var user = new ContosoPetsUser { UserName = Input.Email, Email = Input.Email };
-        ```
+    1. Modify the `OnPostAsync` method to populate set the `FirstName` and `LastName` properties on the `ContosoPetsUser` object. Make the following highlighted changes:
 
-        With the following code:
-
-        ```csharp
-        var user = new ContosoPetsUser
-        {
-            FirstName = Input.FirstName,
-            LastName = Input.LastName,
-            UserName = Input.Email,
-            Email = Input.Email,
-        };
-        ```
+        [!code-csharp[](../code/Areas/Identity/Pages/Account/4-Register-FirstAndLastName.cshtml.cs?name=snippet_OnPostAsync&highlight=6-12)]
 
         With the preceding change, the `FirstName` and `LastName` properties are set to the user input from the registration form.
 
@@ -248,7 +240,7 @@ Update *Pages/Shared/_LoginPartial.cshtml* to display the first and last name co
 
     1. Incorporate the highlighted changes in the `OnGetAsync` method:
 
-        [!code-csharp[](../code/Areas/Identity/Pages/Account/Manage/4-Index.cshtml.cs?name=snippet_OnGetAsync&highlight=19-20)]
+        [!code-csharp[](../code/Areas/Identity/Pages/Account/Manage/4-Index.cshtml.cs?name=snippet_OnGetAsync&highlight=18-20)]
 
         The preceding code supports retrieving the first and last names for display in the corresponding text boxes of the profile management form.
 
@@ -260,7 +252,7 @@ Update *Pages/Shared/_LoginPartial.cshtml* to display the first and last name co
 
 ## Build, deploy, and test
 
-1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
 
 1. [!INCLUDE[az webapp up command](../../includes/az-webapp-up-command.md)]
 
@@ -315,7 +307,7 @@ Update *Pages/Shared/_LoginPartial.cshtml* to display the first and last name co
 
     ::: zone-end
 
-    The user registered prior to adding `FirstName` and `LastName` to the schema. Consequently, the associated `AspNetUsers` table record doesn't have data in those columns.
+    The first user registered prior to adding `FirstName` and `LastName` to the schema. Consequently, the associated `AspNetUsers` table record doesn't have data in those columns.
 
 ## Test the changes to the profile management form
 
@@ -327,3 +319,8 @@ Update *Pages/Shared/_LoginPartial.cshtml* to display the first and last name co
     > The link doesn't display correctly because there aren't yet any values for `FirstName` or `LastName` for this user.
 
 1. Enter valid values for **First name** and **Last name**. Select **Save**.
+
+    The following things occur:
+
+    * A **Your profile has been updated** message appears at the top of the form.
+    * The app header updates to **Hello, [First name] [Last name]!**.

@@ -12,7 +12,7 @@ metadata:
   zone_pivot_groups: aspnet-core-identity-data-store
 title: Exercise - Configure multi-factor authentication
 azureSandbox: true
-interactive: bash-editor
+interactive: bash
 durationInMinutes: 10
 content: |
   [!include[](includes/5-multi-factor-authn.md)]

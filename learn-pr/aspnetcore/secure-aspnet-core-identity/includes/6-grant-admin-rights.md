@@ -13,13 +13,9 @@ The products catalog page should be visible only to authenticated users. However
 
         The preceding code causes the page to require authentication. Anonymous users won't be allowed to view this page and will be redirected to the login page.
 
-    1. Replace the `// Add using Microsoft.AspNetCore.Authorization;` comment with the following code:
+    1. Uncomment the `//using Microsoft.AspNetCore.Authorization;` line at the top of the file.
 
-        ```csharp
-        using Microsoft.AspNetCore.Authorization;
-        ```
-
-        The preceding resolves the `[Authorize]` attribute in the previous step.
+        The preceding change resolves the `[Authorize]` attribute in the previous step.
 
     1. Replace the `// Add IsAdmin property` comment with the following property:
 
@@ -43,7 +39,11 @@ The products catalog page should be visible only to authenticated users. However
 
 1. In *Pages/Products/Index.cshtml*, update the **Edit**, **Delete**, and **Add Product** links with the highlighted code:
 
+    **Edit & Delete links:**
+
     [!code-cshtml[](../code/Pages/Products/Index.cshtml?name=snippet_ModelIsAdmin&highlight=2-3,6)]
+
+    **Add Product link:**
 
     [!code-cshtml[](../code/Pages/Products/Index.cshtml?name=snippet_AddProductLink&highlight=1-2,4)]
 
@@ -73,13 +73,9 @@ The **Create Product** and **Edit Product** pages should be accessible only to a
 
         The preceding code enforces that the `Admin` policy requirements are satisfied. Anonymous users will be redirected to the login page. Authenticated users who don't satisfy the policy requirements are presented an **Access denied** message.
 
-    1. Replace the `// Add using Microsoft.AspNetCore.Authorization;` comment with the following code:
+    1. Uncomment the `//using Microsoft.AspNetCore.Authorization;` line at the top of the file.
 
-        ```csharp
-        using Microsoft.AspNetCore.Authorization;
-        ```
-
-        The preceding resolves the `[Authorize(Policy = "Admin")]` attribute in the previous step.
+        The preceding change resolves the `[Authorize(Policy = "Admin")]` attribute in the previous step.
 
 1. In *Pages/Products/**Edit**.cshtml.cs*, apply the same changes as in the previous step:
     1. Replace the `// Add [Authorize(Policy = "Admin")] attribute` comment with the following attribute:
@@ -88,11 +84,7 @@ The **Create Product** and **Edit Product** pages should be accessible only to a
         [Authorize(Policy = "Admin")]
         ```
 
-    1. Replace the `// Add using Microsoft.AspNetCore.Authorization;` comment with the following code:
-
-        ```csharp
-        using Microsoft.AspNetCore.Authorization;
-        ```
+    1. Uncomment the `//using Microsoft.AspNetCore.Authorization;` line at the top of the file.
 
 ## Modify the registration page
 
@@ -125,11 +117,11 @@ Modify the registration page to allow administrators to register using the follo
 
 ## Test admin claim
 
-1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
 
 1. [!INCLUDE[az webapp up command](../../includes/az-webapp-up-command.md)]
 
-1. Navigate to your app and login with an existing user, if necessary. Select **Products** from near the top. The user isn't presented links to edit, delete, or create products.
+1. Navigate to your app and log in with an existing user, if not already logged in. Select **Products** from the header. Notice the user isn't presented links to edit, delete, or create products.
 
 1. Attempt to navigate directly to the **Create Product** page by navigating to: `https://[web app name].azurewebsites.net/Products/Create`. The user is forbidden from navigating to the page.
 
@@ -141,12 +133,14 @@ Modify the registration page to allow administrators to register using the follo
     echo $(wget -q -O - $webAppUrl/api/admintoken)
     ```
 
-    > [!NOTE]
+    > [!WARNING]
     > The administrator self-enrollment mechanism is for illustrative purposes only. The */api/Admin* endpoint for obtaining a token should be secured before using in a production environment.
 
 1. In the web app, register a new user. The token from the previous step should be provided in the **Admin enrollment key** text box.
 
-1. Once logged in with the new administrative user, the administrative user can view, edit, and create products.
+1. Once logged in with the new administrative user, click the **Products** link in the header.
+
+    Note that the administrative user can view, edit, and create products.
 
 ## Examine the AspNetUserClaims table
 
@@ -155,18 +149,16 @@ Run the following command:
 ::: zone pivot="pg"
 
 ```bash
-# TODO - Verify this.
-db -c 'SELECT u.Email, c.ClaimType, c.ClaimValue FROM AspNetUserClaims AS c INNER JOIN AspNetUsers AS u ON c.UserId = u.Id'
+db -c 'SELECT u."Email", c."ClaimType", c."ClaimValue" FROM "AspNetUserClaims" AS c INNER JOIN "AspNetUsers" AS u ON c."UserId" = u."Id"'
 ```
 
 A variation of the following output appears:
 
 ```console
-TODO -- This is SQL, not PostgreSQL
-
-Email                     ClaimType  ClaimValue
-------------------------- ---------- ----------
-scott@contoso.com         IsAdmin    True
+        Email         | ClaimType | ClaimValue
+----------------------+-----------+------------
+ scott@contoso.com    | IsAdmin   | True
+(1 row)
 ```
 
 ::: zone-end
