@@ -4,7 +4,7 @@ In this module, you'll explore Azure Site Recovery and understand the features i
 
 ## Learning objectives
 
-In this module, you'll:
+In this module, you will:
 
 - Identify the features and protection capabilities Azure Site Recovery provides to on-premises infrastructure.
 - Identify the requirements for enabling protection of on-premises infrastructure.
