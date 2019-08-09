@@ -11,7 +11,7 @@ In this exercise, we'll deploy a monolithic application on Azure App Service and
 
 Let's start by deploying the application. First, we'll need to great the Azure resources to host the application.
 
-1. Run this command to deploy the resources needed for this application.
+1. Run this command to deploy the resources needed for this application. This deployment will take a few minutes.
 
     ```azurecli
     az group deployment create \
