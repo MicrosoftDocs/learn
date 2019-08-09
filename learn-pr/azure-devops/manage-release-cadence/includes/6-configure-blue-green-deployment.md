@@ -11,11 +11,13 @@ In this exercise you:
 
 ## Add a slot for Production
 
+TODO: Base this off of Module 2 when it is complete.
+
 ## Add a stage to swap Staging and Production slots
 
 Here you will use the [**AzureAppServiceManage@0**](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-app-service-manage?view=azure-devops?azure-portal=true) task to swap slots. This task can also be used to start, stop, restart, slot delete, install site extensions or enable continuous monitoring for an Azure App Service.
 
-1. Open the **azure-pipelines.yml** file and add the highlighted stage at the bottom.
+1. Open the **azure-pipelines.yml** file and add the highlighted stage at the bottom. TODO: Get module 2's pipeline when it is done.
 
 > [!IMPORTANT]
 > If you copy and paste the entire contents, go back and edit your **WebAppName**.

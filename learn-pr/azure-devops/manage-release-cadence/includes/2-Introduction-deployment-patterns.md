@@ -21,37 +21,37 @@ Here are the possibilities that Azure DevOps gives us:
 
 A blue-green deployment reduces risk and downtime by running two identical environments. These environments are called blue and green. At any time, only one of the environments is live. Let's say blue is live. As we prepare a new release, we would do our final tests in the green environment. Once the software is working in the green environment, we would just switch the router so that all incoming requests go to the green environment. Blue-green deployment also gives us a fast way to do a rollback. If anything goes wrong we simply switch the router back to the blue environment.
 
-ARTWORK
+![Diagram of applications swapping IP addresses](../media/2-blue-green-deployment.png)
 
 ## Canary releases
 
 A canary release is a way to identify potential problems as soon as possible without exposing all our users to the issue at once. The idea is that we would expose a new feature only to a small subset of users before making it available to everyone. We would monitor what happens when we release the the feature. If the canary release has problems, we can apply a fix. After the canary release is known to be stable, we can move it to the actual production environment.
 
-ARTWORK
+![Diagram of load balancer sending some traffic to a canary version](../media/2-canary-deployment.png)
 
 ## Feature toggles
 
 Feature toggles let us "flip a switch” at runtime. We can deploy new software without exposing any other new or changed functionality to our users. Mara and I would build new features behind a toggle. When a release occurs, the feature is “off” so it's not impacting the production software. Depending on how we configure the toggle, we can flip the switch to "on" and expose it how we want. For example, we could expose it to a small, select number of users to see how they react. We could expose it to a random sample of users. We could simply let it go live to everyone. Also, I'm not sure if this isn't more of a convenience for Mara and me. The big advantage to feature toggles is that it helps us avoid too much branching. Merging branches can be painful.
 
-ARTWORK
+![Diagram of coded if statement for on or off feature](../media/2-feature-toggles.png)
 
 ## Dark launches
 
 A dark launch is similar to a canary release or switching a feature toggle. Rather than expose a new feature to everyone, we would release it to a small set of users. Those users don't know they're being used as test users and we wouldn't even highlight the new feature to them. That's why it's a dark launch. The Software is gradually or unobtrusively released to users so we can get feedback and test performance.
 
-ARTWORK
+![Diagram of load balancer sending some traffic to the new feature](../media/2-dark-launches.png)
 
 ## A/B testing
 
 A/B testing compares two versions of a webpage or app against each other to determine which one performs better. A/B testing is like an experiment we would run. We would show two or more variations of a page to users at random,and then use statistical analysis to decide which variation performs better for our goals.
 
-ARTWORK
+![Diagram of two apps and the analytics](../media/2-a-b-testing.png)
 
 ## Progressive exposure deployment
 
 Progressive exposure deployment is sometimes called ring-based deployment. It's another way of limiting the impact changes have on users while making sure those changes are valid in a production environment. Rings are basically an extension of the canary stage. The canary release releases to a stage to measure impact. Adding another ring is essentially the same thing. With a ring-based deployment, we would deploy changes to risk-tolerant customers first, and then progressively roll out to a larger set of customers.
 
-ARTWORK
+![Diagram of a progression of larger groups](../media/2-progressive-exposure-deployment.png)
 
 ## Implementing the Blue-Green deployment
 
