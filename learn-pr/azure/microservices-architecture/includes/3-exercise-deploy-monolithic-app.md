@@ -2,13 +2,7 @@ Now that we've talked a bit about monolithic and microservices architectures, le
 
 Fabrikam has currently added the drone service into their existing application.
 
-Include an image of what is being deployed, including the logical setup of the application.
-
-What we're deploying:
-- App service
-- Application insights
-- Storage account for Application insights data
-- ???
+In this exercise, we'll deploy a monolithic application on Azure App Service and enable Application Insights to get visibility into telemetry and application performance.
 
 <!-- Activate the sandbox -->
 [!include[](../../../includes/azure-sandbox-activate.md)]
@@ -25,7 +19,7 @@ Let's start by deploying the application. First, we'll need to great the Azure r
         --template-uri https://raw.githubusercontent.com/MicrosoftDocs/mslearn-microservices-architecture/master/deployment/azuredeploy.json
     ```
 
-1. Git is already installed Azure Cloud Shell but you'll want to set your username and email for your cloud shell account. In the Cloud Shell on the right, type the following commands, replacing the `<your name>` and `<your email>` placeholders with your own name and email (without the braces):
+1. We're going to use App Service Git integration to deploy and update the web application. Git is already installed Azure Cloud Shell but you'll need to set your username and email for your cloud shell account. In the Cloud Shell on the right, type the following commands, replacing the `<your name>` and `<your email>` placeholders with your own name and email (without the braces).
 
     ```bash
     git config --global user.name "<your name>"
