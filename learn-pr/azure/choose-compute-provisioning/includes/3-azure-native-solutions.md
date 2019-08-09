@@ -32,7 +32,7 @@ The custom script extension is good for small configurations after provisioning,
 
 ## Azure desired state configuration (DSC) extension
 
-- **Ease of setup** – Easy to read, update and store. Configurations simply state what state you want to achieve, the logic behind the set up of the state is abstracted from the script author. The primary use case for the DSC extension is to bootstrap a virtual machine to the Azure Automation State Configuration (DSC) service. The setup is fairly easy.
+- **Ease of setup** – Easy to read, update, and store. Configurations simply state what state you want to achieve, the logic behind the setup of the state is abstracted from the script author. The primary use case for the DSC extension is to bootstrap a virtual machine to the Azure Automation State Configuration (DSC) service. The setup is fairly easy.
 - **Management** – DSC democratizes configuration management across servers.
 - **Interoperability** –  Used with Azure Automation State Configuration. Can be configured through the Azure portal, or Azure PowerShell, Azure Resource Manager templates.
 - **Configuration language** - PowerShell.
@@ -40,13 +40,13 @@ The custom script extension is good for small configurations after provisioning,
 
 ### Scenario
 
-The organization you work for is testing a new application, which requires new virtual machines to be identical, so that the application can be accurately tested. The company wants to ensure that the virtual machines have the exact same configuration settings. You notice that some of these settings require multiple restarts of each virtual machine.Your organization does not you to simply run scripts to make changes to machines, it wants an singular state configuration that all machines meet at the point of provisioning. Any error handling to achieve the state should be abstracted away as much as possible from the state configuration. Configurations should be easy to read.
+The organization you work for is testing a new application, which requires new virtual machines to be identical, so that the application can be accurately tested. The company wants to ensure that the virtual machines have the exact same configuration settings. You notice that some of these settings require multiple restarts of each virtual machine. Your organization does not you to run scripts to make changes to machines, it wants a singular state configuration that all machines meet at the point of provisioning. Any error handling to achieve the state should be abstracted away as much as possible from the state configuration. Configurations should be easy to read.
 
-You decide to use DSC. DSC configurations are easy to read.  You can declare a singular identical state for all virtual machines.You can abstract away any error handling logic from your state configurations and maintain simple and clean state configurations. You can also ensure that the configurations are successful even after a reboot.
+You decide to use DSC. DSC configurations are easy to read.  You can declare a singular identical state for all virtual machines. You can abstract away any error handling logic from your state configurations and maintain simple and clean state configurations. You can also ensure that the configurations are successful even after a reboot.
 
 ### Summary
 
-DSC is easy to read, update and store. DSC configurations help you declare the state your machines should be in at the point they are provisioned, rather than instructions detailing how to put the machines in a certain state. Without Azure Automation State Configuration, you have to manage your own DSC configurations and orchestration. DSC can achieve more when coupled with Azure Automation State Configuration.
+DSC is easy to read, update, and store. DSC configurations help you declare the state your machines should be in at the point they are provisioned, rather than having instructions that detail how to put the machines in a certain state. Without Azure Automation State Configuration, you have to manage your own DSC configurations and orchestration. DSC can achieve more when coupled with Azure Automation State Configuration.
 
 ## Azure automation state configuration
 
@@ -63,7 +63,7 @@ Based on the requirements provided to you by your organization, you decide that 
 
 ### Summary
 
-The Azure Automation State Configuration service is good for automating your DSC configurations, along with the management of machines that need those configurations, and getting centralized reporting back from each machine. You can use DSC without Azure Automation State Configuration, particularly for if you want to administer a smaller amount of machines on an ad-hoc basis. For larger and more complicated scenarios that need orchestration, Azure Automation State Configuration is the solution you need. All of your needed configurations and features can be pushed to all of the machines, and applied equally, with minimal effort.
+The Azure Automation State Configuration service is good for automating your DSC configurations, along with the management of machines that need those configurations, and getting centralized reporting back from each machine. You can use DSC without Azure Automation State Configuration, particularly for if you want to administer a smaller number of machines on an ad-hoc basis. For larger and more complicated scenarios that need orchestration, Azure Automation State Configuration is the solution you need. All of the configurations and features that you need can be pushed to all of the machines, and applied equally, with minimal effort.
 
 ## Azure Resource Manager templates
 

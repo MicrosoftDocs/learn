@@ -3,10 +3,10 @@ Let's consider Chef and Terraform against the same criteria as in the previous u
 ## Chef
 
 - **Ease of setup** - The Chef server runs on the master machine and Chef clients run as agents on each of your client machines. You can also use hosted Chef and get started much faster instead of having to running your own server.
-- **Ease of management** - The management of Chef can be difficult as it uses its a Ruby based domain specific language. So, you may need a programmer to manage the configuration.
+- **Ease of management** - The management of Chef can be difficult as it uses a Ruby-based domain-specific language. So, you may need a programmer to manage the configuration.
 - **Interoperability** - Chef server only works under Linux/Unix, but the Chef client can be on Windows.
-- **Configuration language** – A Ruby based domain specific language.
-- **Limitation/drawbacks** - The language can be take time to learn, especially for those not already familiar with the Ruby programming language.
+- **Configuration language** – A Ruby-based domain-specific language.
+- **Limitation/drawbacks** - The language can take time to learn, especially for those developers not already familiar with the Ruby programming language.
 
 ### Scenario
 
@@ -34,4 +34,4 @@ Terraform would be a good solution for this scenario and would make it possible 
 
 ### Summary
 
-Terraform allows you to plan the infrastructure as code, and gives you a preview of what the code will create. You can have that code peer-reviewed, so it helps to minimize errors in configuration. Supports infrastructure configurations across multiple different cloud service providers.
+Terraform allows you to plan the infrastructure as code, and gives you a preview of what the code will create. You can have that code peer-reviewed, so it helps to minimize errors in configuration. Terraform supports infrastructure configurations across multiple different cloud service providers.

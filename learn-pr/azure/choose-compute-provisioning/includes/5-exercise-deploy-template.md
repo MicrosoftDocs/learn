@@ -1,18 +1,18 @@
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
-Your organization grows, and demand rises in Europe and Asia. Your organization is based in the USA. Most of your infrastructure is cloud-based. Your European users are reporting a slow website. To provide the customers in Europe better service, your company has asked you to create a new and improved web server for Europe. The machine must be configured as an IIS web server when it is provisioned.
+Your organization grows, and demand rises in Europe and Asia. Your organization is based in the USA. Most of your infrastructure is cloud-based. Your European users are reporting a slow website. To provide better service to the customers in Europe, your company has asked you to create a new and improved web server for Europe. The machine must be configured as an IIS web server when it is provisioned.
 
 You have been asked to choose appropriate provisioning tools. Your provisioning tools should be scalable enough to provision resources for even large infrastructures in the future. Your tools should also be easy to use and easily customizable.
 
-In this exercise, you will provision a web server to meet the requirrments.
+In this exercise, you will provision a web server to meet the requirements.
+
+[!include[](../../../includes/azure-sandbox-activate.md)]
 
 ### Provision a web server
 
-You will use multiple tools together. Azure Resource Manager templates will enable you to create a  template outlining the environment for your web server. Your Azure Resource Manager template can also help you define a state that can be applied to your web server at the point of provisioning. You can apply your desired state by defining a DSC extension handler inside of your Azure Resource Manager template. The DSC handler helps you enforce a state that you define in a DSC configuration.
+You will use multiple tools together. Azure Resource Manager templates will enable you to create a template outlining the environment for your web server. Your Azure Resource Manager template can also help you define a state that can be applied to your web server at the point of provisioning. You can apply your desired state by defining a DSC extension handler inside of your Azure Resource Manager template. The DSC handler helps you enforce a state that you define in a DSC configuration.
 
 In the following exercise, you will use an Azure Resource Manager template to provision a virtual machine. The DSC extension handler that will be included in the template that will be used to enforce your state on the virtual machine.
 
-1. First, create your state configuration. In this case you will configure a IIS web server on your machine.
+1. First, create your state configuration. In this case, you will configure a IIS web server on your machine.
 
     ```powershell
         Configuration Webserver
@@ -45,10 +45,8 @@ In the following exercise, you will use an Azure Resource Manager template to pr
     ```
     
 1. Save the file as Webserver.ps1
-
 1. Compress your Webserver.ps1 file into a .zip folder named Webserver.
-
-1. Now you create an Azure Resource Manager template. Below is an skeleton template, which you can use as a baseline. Save it as *template.json*.
+1. Now you create an Azure Resource Manager template. Below is a skeleton template, which you can use as a baseline. Save it as *template.json*.
    
     ```json
     {
@@ -283,36 +281,46 @@ In the following exercise, you will use an Azure Resource Manager template to pr
         }
     ```
 
-    Once you have put your template together, you can deploy your template using Azure CLI, Azure PowerShell or the Azure portal. You will use Azure CLI to deploy your template.
+    Once you have put your template together, you can deploy your template using Azure CLI, Azure PowerShell, or the Azure portal. You will use Azure CLI to deploy your template.
 
 1. Create a resource group by running the following command.
+
     ```powershell
     az group create -l eastus -n <your-resource-group>
     ```
+
     Your resource group for your sandbox is <rgn>[sandbox resource group name]</rgn>
     
-1. You should validate and test your deployment before you attempt a real deployment. Run the below command to test whether your deployment would be successful. Because you have set parameters in your template, you can follow the prompts to set the different values for those parameters.
+1. Validate and test your deployment before you attempt a real deployment. Run the below command to test whether your deployment would be successful. Because you have set parameters in your template, you can follow the prompts to set the different values for those parameters.
+
     ```powershell
     az group deployment validate  --resource-group <your-resource-group>  --template-file <your-template-file>
     ```
     
 1. The location of your template file is $HOME/template.json when you are using the sandbox.
 
-1. When are prompted for a **modulesURL**, input the location of your configuration file. For this exercise, we've chosen to upload it to a Github repository. So we can use a Github URL as shown below.
+1. When are prompted for a **modulesURL**, input the location of your configuration file. For this exercise, we've chosen to upload it to a GitHub repository. So we can use a GitHub URL as shown below.
+
     ```
     Please provide string value for 'modulesUrl' (? for help): https://github.com/you/yourrepo/raw/master/Webserver.zip
     ```
+
     After this prompt, Azure will attempt to validate your template.
+
 1. If your deployment is validated, you will see information about your deployment. Pay special attention to the error key, it should be null.
-1. If you there are no errors, your template has been validated and can be deployed. Run the below command to deploy the template.
+1. If there are no errors, your template has been validated and can be deployed. Run the below command to deploy the template.
+
     ```powershell
         az group deployment create --resource-group <your-resource-group> --template-file <path-to-your-template>
     ```
+
 1. Follow the prompts to complete your deployment. It may take a few minutes for deployment to finish.
 1. Once everything has been set up, your virtual machine will be created and configured  as an IIS webserver. List all of the resources in the resource group to confirm everything has been set up. Run the below command.
+    
     ```
     az resource list --resource-group <your-resource-group>
     ```
+    
     You should see all of your resources listed. This means deployment was successful.
 
 You have provisioned a web server using Azure Resource Manager templates and enforced a desired state configuration on your machine through a DSC extension handler.
