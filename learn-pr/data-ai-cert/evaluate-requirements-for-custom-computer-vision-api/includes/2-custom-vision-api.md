@@ -32,7 +32,7 @@ response = conn.getresponse()
 data = response.read()
 ```
 
-To make the same API call in C#, just change the language-specific syntax:
+The same API call in C# is similar:
 
 ```csharp
 HttpClient client = new HttpClient();
