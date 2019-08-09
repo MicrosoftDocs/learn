@@ -26,7 +26,7 @@ The .NET Core CLI is the simplest way to create, build, and run an ASP.NET Core 
 1. Run the following .NET Core CLI command in the command shell:
 
     ```bash
-    dotnet run > ContosoPets.UI
+    dotnet run
     ```
 
     The preceding command:
@@ -62,7 +62,7 @@ If you run the app on your own machine, you'd be able to direct a browser to 'ht
 1. Run the following command in the command shell to ensure you are still at the project directory:
 
     ```bash
-    cd ./razor-pages-example/src/ContosoPets.UI
+    cd ~/razor-pages-example/src/ContosoPets.UI
     ```
 
     [!INCLUDE[OS-specific keyboard shortcuts](../../../includes/azure-cloudshell-copy-paste-tip.md)]
