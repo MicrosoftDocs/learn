@@ -4,15 +4,15 @@ Suppose you have decided to use OpenID Connect with your transportation company'
 
 A tenant is an instance of Azure AD that represents an organization. It's a dedicated instance of Azure AD that an organization or app developer receives when the organization or app developer creates a relationship with Microsoft, like signing up for Azure, Microsoft Intune, or Office 365.
 
-Each Azure AD tenant is distinct and separate from other Azure AD tenants. It has its own representation of work and school identities, and app registrations. An app registration inside your tenant can allow authentications from accounts only within your tenant or across all tenants.
+Each Azure AD tenant is distinct and separate from other Azure AD tenants. An Azure AD tenant has its own representation of work and school identities, and app registrations. An app registration inside your tenant can allow authentication from accounts only within your tenant or across all tenants.
 
-Azure AD tenants are created in the .onmicrosoft.com domain by default. You can't delete or change this name, but you can add your own registered domain name, and then create users and app registrations within that domain.
+Azure AD tenants are created in the *.onmicrosoft.com* domain by default. You can't delete or change this name, but you can add your own registered domain name, and then create users and app registrations within that domain.
 
 Azure AD tenants can be created only in the Azure portal.
 
 ## Register a web app
 
-Within the Azure tenant, you'll need a registration for the application. The registration is a record of security details for the application in Azure AD. A registration ensures that Azure AD can identify the application along with the user. A registration includes these details:
+Within the Azure AD tenant, you'll need a registration for the application. The registration is a record of security details for the application in Azure AD. A registration ensures that Azure AD can identify the application and the user. An app registration includes these details:
 
 - **Name**. This value identifies the registration and application.
 - **Application type**. Use the **Web app/API** type for websites or web APIs that are accessed through the HTTP protocol. Use the **Native** type for applications that are installed on a user's device or computer.
@@ -32,7 +32,7 @@ For example, if you have an ASP.NET Core 2.X web app, and you need to use the Op
 - `ida:Tenant`. This configuration value is the identity of the Azure AD directory that contains the application registration.
 - `ida:ClientId`. This configuration value is the GUID that uniquely identifies the client registration.
 
-Then, configure the OpenID Connect middleware in the `Startup.ConfigureServices` method:
+Then, configure the authentication middleware in the `Startup.ConfigureServices` method:
 
 ```csharp
 services.Configure<CookiePolicyOptions>(options =>
