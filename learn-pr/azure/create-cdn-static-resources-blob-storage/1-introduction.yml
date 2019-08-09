@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-content-delivery-network-azure-cdn-blob-services.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 4/30/2019
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

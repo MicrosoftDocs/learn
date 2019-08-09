@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.streaming-in-azure-databricks
 metadata:
-  title: Work with streaming data in Azure Databricks - Learn
-  description: Learn how to analyze and process streaming data using Azure Event Hubs, Spark Structured Streaming, and Databricks Delta.
+  title: Work with streaming data in Azure Databricks
+  description: Learn how to analyze and process streaming data by using Azure Event Hubs, Spark Structured Streaming, and Databricks Delta.
   ms.date: 02/20/2019
-  author: barlanmsft
+  author: barlan
   ms.author: barlan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: barlan
 title: Work with streaming data in Azure Databricks
-summary: Learn how to analyze and process streaming data using Azure Event Hubs, Spark Structured Streaming, and Databricks Delta.
+summary: Learn how to analyze and process streaming data by using Azure Event Hubs, Spark Structured Streaming, and Databricks Delta.
 abstract:  | 
   In this module, you will:
   - Use Spark Structured Streaming, Azure Event Hubs, and Databricks Delta to read from and write to streams. 
-  - Process streaming data using Azure Databricks.
+  - Process streaming data by using Azure Databricks.
 prerequisites:  | 
   [!include[](../../includes/azure-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/streaming-in-azure-databricks.svg
@@ -24,6 +24,7 @@ roles:
 - developer
 - solution-architect
 products:
+- azure
 - azure-databricks
 units:
 - learn.streaming-in-azure-databricks.1-introduction

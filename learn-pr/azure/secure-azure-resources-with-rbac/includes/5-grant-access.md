@@ -1,7 +1,5 @@
 A co-worker named Alain at First Up Consultants needs the ability to create and manage virtual machines for a project he is working on. Your manager has asked that you handle this request. Using the best practice to grant users the least privileges to get their work done, you decide to assign Alain the Virtual Machine Contributor role for a resource group.
 
-[!include[](../../../includes/azure-lab-environment-not-available.md)]
-
 ## Grant access
 
 Follow these steps to assign the Virtual Machine Contributor role to a user at the resource group scope.

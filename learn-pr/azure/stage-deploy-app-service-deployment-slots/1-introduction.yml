@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.stage-deploy-app-service-deployment-slots.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Learn about the kind of problems that deployment slots can solve.
+  ms.date: 03/27/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

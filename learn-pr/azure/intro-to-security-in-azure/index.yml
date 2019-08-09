@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.introduction-to-security
 metadata:
-  title: Security, responsibility and trust in Azure - Learn
+  title: Security, responsibility and trust in Azure
   description: Discuss the basic concepts for protecting your infrastructure and data when you work in the cloud. Understand what responsibilities are yours and what Azure takes care of for you.
   ms.date: 09/24/2018
   author: jasallen
@@ -19,6 +19,7 @@ abstract: |
   - Learn how to protect your network and virtual networks
   - Learn about advanced services and features Azure provides to keep your services and data secure and safe
 prerequisites: None
+ratingEnabled: true
 iconUrl: /learn/achievements/intro-to-security-in-azure.svg
 levels:
 - beginner

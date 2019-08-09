@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn-wwl.foster-ai-culture-sales
+metadata:
+  title: Discover how to foster an AI-ready culture in sales
+  description: A successful AI strategy in sales must consider cultural issues, as well as business issues. The goal of this module is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
+  ms.date: 04/26/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: barlan
+title: Discover how to foster an AI-ready culture in sales
+summary: A successful AI strategy in sales must consider cultural issues, as well as business issues. The goal of this module is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
+abstract: | 
+  In this module, you will:
+  - Recognize the key elements of an AI-ready organizational culture in sales.
+  - Explain how Microsoft incorporated AI into our sales processes.
+  - Identify opportunities for change to achieve an AI-ready culture in your sales department. 
+prerequisites: None
+iconUrl: /learn/achievements/foster-ai-ready-culture-sales.svg
+levels: 
+- intermediate
+roles: 
+- functional-consultant
+- business-user
+products: 
+- azure
+- dynamics
+- m365
+units: 
+- learn-wwl.foster-ai-culture-sales.introduction
+- learn-wwl.foster-ai-culture-sales.sales-case-study-introduction
+- learn-wwl.foster-ai-culture-sales.sales-executive-qa
+- learn-wwl.foster-ai-culture-sales.sales-case-study-resolution
+- learn-wwl.foster-ai-culture-sales.knowledge-check
+- learn-wwl.foster-ai-culture-sales.summary-and-resources
+badge: 
+  uid: learn-wwl.foster-ai-culture-sales.badge #add the uid for your achievement badge.

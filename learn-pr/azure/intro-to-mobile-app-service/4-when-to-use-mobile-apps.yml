@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-intro-mobile-app-service.when-to-use-mobile-apps
+title: When to use Azure Mobile Apps?
+
+metadata:
+  title: When to use Azure Mobile Apps?
+  description: When to use Azure Mobile Apps?
+  ms.date: 4/26/2019
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-when-to-use-mobile-apps.md)]

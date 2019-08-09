@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.identify-faces-with-computer-vision.knowledge-check
-title: Knowledge check - Implement the Computer Vision Face API
+title: Knowledge check - Use the Computer Vision Face API
 metadata:
-  title: Knowledge check - Implement the Computer Vision Face API
-  description: Knowledge check - Implement the Computer Vision Face API
+  title: Knowledge check - Use the Computer Vision Face API
+  description: Check how much you know about how to use the Face API in Azure Cognitive Services 
   ms.date: 01/07/2019
   author: gerryaobrien
   ms.author: gerryo
@@ -14,45 +14,45 @@ durationInMinutes: 7
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following concepts **is not** part of the Cognitive Services Face API? (Choose one)"
+  - content: "Which of the following concepts *isn't* part of the Cognitive Services Face API? (Choose one.)"
     choices:
     - content: Face verification
       isCorrect: false
-      explanation: "Concepts (and methods) provided by the Face API fall into the following categories: verification, detection, identification, similarity, and grouping."
+      explanation: "Concepts (and methods) that are used in the Face API fall into the following categories: verification, detection, identification, similarity, and grouping."
     - content: Face detection
       isCorrect: false
-      explanation: "Concepts (and methods) provided by the Face API fall into the following categories: verification, detection, identification, similarity, and grouping."
+      explanation: "Concepts (and methods) that are used in the Face API fall into the following categories: verification, detection, identification, similarity, and grouping."
     - content: Face identification
       isCorrect: false
-      explanation: "Concepts (and methods) provided by the Face API fall into the following categories: verification, detection, identification, similarity, and grouping."
+      explanation: "Concepts (and methods) that are used in the Face API fall into the following categories: verification, detection, identification, similarity, and grouping."
     - content: Face morphing
       isCorrect: true
-      explanation: "Concepts (and methods) provided by the Face API fall into the following categories: verification, detection, identification, similarity, and grouping. Manipulation of faces, i.e.; 'morphing' is not part of the Face API."
+      explanation: "Concepts (and methods) that are used in the Face API fall into the following categories: verification, detection, identification, similarity, and grouping. Manipulation of faces (*morphing*) is not part of the Face API."
     - content: Face matching
       isCorrect: false
-      explanation: "Concepts (and methods) provided by the Face API fall into the following categories: verification, detection, identification, similarity, and grouping."
-  - content: "You have 20 friends you want to add to a collection, and you have been provided with four face images for each friend. Each face image is referred to as a face, and each friend is referred to as a person. What is this collection of friends referred to, in the Face API?  (Choose one)"
+      explanation: "Concepts (and methods) that are used in the Face API fall into the following categories: verification, detection, identification, similarity, and grouping."
+  - content: "You want to add 20 friends to a collection, and you have four face images for each friend. Each face image is referred to as a *face*, and each friend is referred to as a *person*. In the Face API, what is this collection of friends called? (Choose one.)"
     choices:
     - content: A person group
       isCorrect: true
-      explanation: "A person group is list or collection of people (persons). The collection of friends, although technically a 'collection' is referred to as a person group."
+      explanation: "A collection of friends, although technically a collection, is called a *person group*. A person group is list or collection of people (persons)."
     - content: A person collection
       isCorrect: false
-      explanation: "A person group is list or collection of people (persons). The collection of friends, although technically a 'collection' is referred to as a person group."
+      explanation: "A collection of friends, although technically a collection, is called a *person group*. A person group is list or collection of people (persons)."
     - content: A people group
       isCorrect: false
-      explanation: "A person group is list or collection of people (persons). The collection of friends, although technically a 'collection' is referred to as a person group."
-  - content: "Which of the following terms is used, in both the Face and Emotion API, to describe and define the rectangular coordinates of a face detected in an image? (Choose one) "
+      explanation: "A collection of friends, although technically a collection, is called a *person group*. A person group is list or collection of people (persons)."
+  - content: "In both the Face API and the Emotion API, which of the following terms describes the rectangular coordinates of a face that's detected in an image? (Choose one.)"
     choices:
-    - content: score
+    - content: Score
       isCorrect: false
-      explanation: "When using the Face and Emotion API, all rectangular face coordinates are referred to as a location, specifically the top, left, height, and width of a region in the image displaying a face."
-    - content: confidence
+      explanation: "In the Face API and the Emotion API, rectangular face coordinates are called a *location*. The location includes the top, left, height, and width of a region in the image that displays a face."
+    - content: Confidence
       isCorrect: false
-      explanation: "When using the Face and Emotion API, all rectangular face coordinates are referred to as a location, specifically the top, left, height, and width of a region in the image displaying a face."
-    - content: location
+      explanation: "In the Face API and the Emotion API, rectangular face coordinates are called a *location*. The location includes the top, left, height, and width of a region in the image that displays a face."
+    - content: Location
       isCorrect: true
-      explanation: "When using the Face and Emotion API, all rectangular face coordinates are referred to as a location, specifically the top, left, height, and width of a region in the image displaying a face."
-    - content: position
+      explanation: "In the Face API and the Emotion API, rectangular face coordinates are called a *location*. The location includes the top, left, height, and width of a region in the image that displays a face."
+    - content: Position
       isCorrect: false
-      explanation: "When using the Face and Emotion API, all rectangular face coordinates are referred to as a location, specifically the top, left, height, and width of a region in the image displaying a face."
+      explanation: "In the Face API and the Emotion API, rectangular face coordinates are called a *location*. The location includes the top, left, height, and width of a region in the image that displays a face."

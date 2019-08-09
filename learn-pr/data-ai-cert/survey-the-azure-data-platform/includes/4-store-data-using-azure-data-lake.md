@@ -1,23 +1,35 @@
-Azure Data Lake storage is a Hadoop-compatible data repository that can store any size or type of data.  Azure Data Lake is available in two offerings; Generation 1 (Gen1) or Generation 2 (Gen2).  Gen1 users do not have to upgrade to Gen2., but Gen2 combines the storage services from Gen1 with the benefits of Azure Blob Storage and is performance tuned for processing big data analytics solutions.
+Azure Data Lake Storage is a Hadoop-compatible data repository that can store any size or type of data. This storage service is available as Generation 1 (Gen1) or Generation 2 (Gen2). Data Lake Storage Gen1 users don't have to upgrade to Gen2, but they forgo some benefits. 
 
-Gen2 includes new features like a hierarchical file system, and developers can access the data either through the Blob API or the Azure Data Lake File API (ADLS). An additional benefit to Gen 2 is that it can act a storage layer for a wide range of compute platforms including Azure Databricks, Hadoop or Azure HDInsight without the need to load the data into those systems.
+Data Lake Storage Gen2 users take advantage of Azure Blob storage, a hierarchical file system, and performance tuning that helps them process big-data analytics solutions. In Gen2, developers can access data through either the Blob API or the Data Lake file API. Gen2 can also act as a storage layer for a wide range of compute platforms, including Azure Databricks, Hadoop, and Azure HDInsight, but data doesn't need to be loaded into the platforms.
 
-## When to Use It
+## Where to use Data Lake Storage Gen2
 
-Azure Data Lake is designed for customers who require the ability to store massive amounts of data for big data analytics use cases.  For example, Contoso Life Sciences, a cancer research center, analyzes Petabyte scale of genetic data, patient data, and billions of records of related sample data as part of their research.  Azure Data Lake Gen2's ability to reduce computation times will make Contoso's Life Sciences research faster and less expensive.  Additionally, the compute aspect that sits above this storage can vary and include platforms including HDInsight, Hadoop, Cloudera, Azure Databricks, and Hortonworks.
+Data Lake Storage is designed to store massive amounts of data for big-data analytics. For example, Contoso Life Sciences is a cancer research center that analyzes petabytes of genetic data, patient data, and records of related sample data. Data Lake Storage Gen2 reduces computation times, making the research faster and less expensive. 
 
-## Key Features
+The compute aspect that sits above this storage can vary. The aspect can include platforms like HDInsight, Hadoop, Cloudera, Azure Databricks, and Hortonworks.
 
-Key features of Azure Data Lake include unlimited scalability, Hadoop compatibility, security support for both Access Control Lists (ACLs), POSIX-compliance and an optimized ABFS driver designed for big data analytics, zone redundant storage and geo-redundant storage.
+## Key features
 
-## Ingesting Data
+Here are the key features of Data Lake Storage: 
 
-To ingest data, a Data Engineer can use either the Azure Data Factory, Apache Sqoop, Azure Storage Explorer or the AzCopy Tool, PowerShell, or Visual Studio.  To import file sizes above 2Gb using the File Upload feature, Data Engineers must use PowerShell or Visual Studio.  The AzCopy Tool supports a maximum file size of 1Tb and will automatically split into multiple files if the data file exceeds 200Gb.
+* Unlimited scalability
+* Hadoop compatibility
+* Security support for both access control lists (ACLs)
+* POSIX compliance
+* An optimized Azure Blob File System (ABFS) driver that's designed for big-data analytics
+* Zone-redundant storage
+* Geo-redundant storage
 
-## Querying Data
+## Data ingestion
 
-In the past, Data Engineers can query data in Azure Data Lake Store using U-SQL for Gen1. With the introduction of Gen 2, you can use the Azure Blob Storage API or the Azure Data Lake System (ADLS) API.
+To ingest data into your system, use Azure Data Factory, Apache Sqoop, Azure Storage Explorer, the AzCopy tool, PowerShell, or Visual Studio. To use the File Upload feature to import file sizes above 2 GB, use PowerShell or Visual Studio. AzCopy supports a maximum file size of 1 TB and automatically splits data files that exceed 200 GB.
 
-## Securing Data
+## Queries
 
-Since Azure Data Lake supports Azure Active Directory Access Control Lists (ACL), security administrators can use familiar Active Directory Security Groups to control data access.  Role Based Access Control (RBAC) is available in Gen1.  Built-in Security Groups include ReadOnlyUsers, WriteAccessUsers, and FullAccessUsers.  Enabling the firewall option will limit traffic to only Azure services.  Azure Data Lake automatically encrypts data at rest, protecting data privacy.
+In Data Lake Storage Gen1, data engineers query data by using the U-SQL language. In Gen 2, use the Azure Blob Storage API or the Azure Data Lake System (ADLS) API.
+
+## Data security
+
+Because Data Lake Storage supports Azure Active Directory ACLs, security administrators can control data access by using the familiar Active Directory Security Groups. Role-based access control (RBAC) is available in Gen1. Built-in security groups include ReadOnlyUsers, WriteAccessUsers, and FullAccessUsers. 
+
+Enable the firewall to limit traffic to only Azure services. Data Lake Storage automatically encrypts data at rest, protecting data privacy.

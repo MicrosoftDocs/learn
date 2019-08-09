@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.create-sql-db
+title: Create an Azure SQL DB to hold results
+metadata:
+  title: Create an Azure SQL DB to hold results
+  description: Create an Azure SQL DB to hold results
+  ms.date: 5/1/2019
+  author: ShanaMatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+azureSandbox: true
+interactive: bash
+content: |
+  [!include[](includes/10-create-sql-db.md)]

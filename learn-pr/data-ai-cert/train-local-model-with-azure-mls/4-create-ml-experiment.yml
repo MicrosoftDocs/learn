@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.train-local-model-with-azure-mls.create-ml-experiment
+title: Exercise - Create a machine learning experiment
+metadata:
+  title: Exercise - Create a machine learning experiment
+  description: Exercise - Create a machine learning experiment
+  ms.date: 01/31/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-create-ml-experiment.md)]

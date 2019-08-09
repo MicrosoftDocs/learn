@@ -4,7 +4,7 @@ In the following exercise you will review the agent connectivity to log analytic
 
 ## Review Agent Connectivity to Log Analytics
 
-Perform the following steps in the Azure portal to assess if connectivity between the agent and log analytics has taken place. Start by signing into the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account with which you activated the sandbox.
+Perform the following steps in the Azure portal to assess if connectivity between the agent and log analytics has taken place. Start by signing into the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account with which you activated the sandbox.
 
 1. In the portal, click on the **Virtual machines** option in the left pane and click on the newly create virtual machine.
 2. Click on the **Overview** menu option.

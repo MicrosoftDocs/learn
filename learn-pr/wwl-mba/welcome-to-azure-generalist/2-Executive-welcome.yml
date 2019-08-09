@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.welcome-to-the-azure-generalist.2-executive-welcome
+title: Executive welcome
+metadata:
+  title: Executive welcome
+  description: Microsoft Azure consists of an ever-expanding set of cloud services to help organizations meet business challenges. It gives you the freedom to build, manage, and deploy applications on a massive, global network using your favorite tools and frameworks.
+  ms.date: 01/31/2019
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-executive-welcome.md)]

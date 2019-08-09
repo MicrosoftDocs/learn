@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.create-azure-resources
+title: Create storage account to hold photos
+metadata:
+  title: Create storage account to hold photos
+  description: Create storage account to hold photos
+  ms.date: 5/1/2019
+  author: ShanaMatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+azureSandbox: true
+interactive: bash
+content: |
+  [!include[](includes/3-create-azure-resources.md)]

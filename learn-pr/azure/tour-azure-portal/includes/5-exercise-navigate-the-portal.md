@@ -143,7 +143,7 @@ Finally, there are a variety of management and programming tools included in the
 
 1. Click "..." then **View my bill** to navigate to the **Cost Management + Billing - Invoices** page, which helps you analyze where Azure is generating costs.
 
-1. In the **Subscription or reserved instance** dropdown menu in the right pane, select your subscription.
+1. If you're using your own account and not sandbox, you can select a subscription from the drop-down list.
 
 1. Click a billing period.
 

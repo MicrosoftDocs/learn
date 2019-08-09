@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.classify-user-feedback-with-the-text-analytics-api
 metadata:
-  title: Discover sentiment in text with the Text Analytics API - Learn
+  title: Discover sentiment in text with the Text Analytics API
   description: Learn how to use the Text Analytics API to discover sentiment in user feedback.
   ms.date: 09/24/2018
   author: AndrewJByrne

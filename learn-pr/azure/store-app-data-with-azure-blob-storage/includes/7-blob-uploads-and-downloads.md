@@ -36,7 +36,7 @@ public Task Save(Stream fileStream, string name)
 ```
 
 > [!NOTE]
-> The stream-based upload code shown here is more efficient than reading the file into a byte array before sending it to Azure Blob storage. However, the ASP.NET Core `IFormFile` technique we use to get the file from the client is not a true end-to-end streaming implementation and is only appropriate for handling uploads of small files. See the Further Reading section at the end of this module for information about fully streamed file uploads.
+> The stream-based upload code shown here is more efficient than reading the file into a byte array before sending it to Azure Blob storage. However, the ASP.NET Core `IFormFile` technique we use to get the file from the client is not a true end-to-end streaming implementation and is only appropriate for handling uploads of small files.
 
 ### Download
 

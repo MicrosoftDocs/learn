@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.intro-to-azure-dsvm.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 01/31/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which if the following is a reason to use an Azure Data Science Virtual Machine?"
+    choices: 
+    - content: "You want to create an Azure Databricks workspace."
+      isCorrect: false
+      explanation: "This is not correct. Azure Databricks is a Big Data platform that can be provisioned from the Azure portal."
+    - content: "You want to get a jump start on data science work."
+      isCorrect: true
+      explanation: "That is correct. The purpose of Data Science Virtual Machines is to give a data scientist the tools they need, pre-installed, and ready to go."
+    - content: "You want to deploy a web application to it."
+      isCorrect: false
+      explanation: "This is not correct.  The Data Science Virtual Machine is not intended for use as a web application platform. "
+  
+  - content: "Which of the following is installed on a Data Science Virtual Machine?"
+    choices: 
+    - content: "Azure Data Warehouse"
+      isCorrect: false
+      explanation: "That is not correct. Azure Data Warehouse is a Platform as a Service not installable on a virtual machine."
+    - content: "Jupyter Notebook"
+      isCorrect: true
+      explanation: "That is correct. Jupyter Notebook is installed on Data Science Virtual Machines and provides a great data science development tool."
+    - content: "Azure Machine Learning Studio"
+      isCorrect: false
+      explanation: "That is not correct. Azure Machine Learning Studio is a GUI based drag and drop machine learning tool available via a cloud portal."

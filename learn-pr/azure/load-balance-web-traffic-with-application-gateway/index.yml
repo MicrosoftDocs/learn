@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.load-balance-web-traffic-with-application-gateway
+metadata:
+  title: Load balance your web service traffic with Application Gateway
+  description: Improve application resilience by distributing load across multiple servers and use path-based routing to direct web traffic.
+  ms.date: 05/02/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Load balance your web service traffic with Application Gateway
+summary: Improve application resilience by distributing load across multiple servers and use path-based routing to direct web traffic.
+abstract: | 
+  In this module, you will:
+  - Identify the load balancing capabilities of Application Gateway
+  - Create an Application Gateway and configure load balancing
+  - Configure an Application Gateway to use URL path-based routing
+prerequisites: | 
+  - Knowledge of basic networking concepts
+  - Familiarity with Azure virtual machines and Azure App Service
+  - Familiarity with Azure virtual networking
+iconUrl: /learn/achievements/load-balance-web-traffic-with-application-gateway.svg
+levels:
+- beginner
+roles:
+- solution-architect
+- administrator
+products:
+- azure
+units:
+- learn.load-balance-web-traffic-with-application-gateway.1-introduction
+- learn.load-balance-web-traffic-with-application-gateway.2-routing-traffic-with-application-gateway
+- learn.load-balance-web-traffic-with-application-gateway.3-exercise-create-web-sites
+- learn.load-balance-web-traffic-with-application-gateway.4-create-configure-application-gateway
+- learn.load-balance-web-traffic-with-application-gateway.5-exercise-create-configure-application-gateway
+- learn.load-balance-web-traffic-with-application-gateway.6-exercise-test-application-gateway
+- learn.load-balance-web-traffic-with-application-gateway.7-summary
+badge:
+  uid: learn.load-balance-web-traffic-with-application-gateway.badge

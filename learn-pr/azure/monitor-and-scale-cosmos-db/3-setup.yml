@@ -1,0 +1,24 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-azure-cosmos-db.3-setup
+title: Exercise - Create and populate your Cosmos DB collections
+metadata:
+  title: Create and populate an Azure Cosmos DB
+  description: Create and populate an Azure Cosmos DB using an open source console application
+  ms.date: 02/25/2019
+  author: natke
+  ms.author: nakersha
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+interactive: bash
+azureSandbox: true
+durationInMinutes: 20
+content: |
+  [!include[](includes/3-setup.md)]
+tasks:
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.DocumentDB/databaseAccounts"
+  hint: "Use the instructions above to create a Cosmos DB database."  

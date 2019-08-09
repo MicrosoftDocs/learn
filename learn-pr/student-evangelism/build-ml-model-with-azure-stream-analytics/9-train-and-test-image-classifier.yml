@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.train-and-test-image-classifier
+title: Train and Test the Image Classifier
+metadata:
+  title: Train and Test the Image Classifier
+  description: Train and Test the Image Classifier
+  ms.date: 5/1/2019
+  author: ShanaMatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 15
+azureSandbox: true
+content: |
+  [!include[](includes/9-train-and-test-image-classifier.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What are the three training statistics do you get after training an image classification model in the Custom Vision service?"
+    choices:
+    - content: "Precision, Recall, and AP"
+      isCorrect: true
+      explanation: "Correct. These three will help you determine how well your model performs."
+    - content: "Precision, Recall, and MP"
+      isCorrect: false
+      explanation: "MP isn't a training statistic."
+    - content: "Precision, Recollect, AP"
+      isCorrect: false
+      explanation: "Recollect isn't a training statistic."

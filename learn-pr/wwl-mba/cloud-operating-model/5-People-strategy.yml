@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.cloud-operating-model.5-people-strategy
+title: People strategy
+metadata:
+  title: People strategy
+  description: Learn how to design a people strategy for your cloud adoption
+  ms.date: 1/31/2018
+  author: alinamacelaru
+  ms.author: a-almace
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-people-strategy.md)]

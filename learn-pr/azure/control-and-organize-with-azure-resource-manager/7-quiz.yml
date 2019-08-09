@@ -22,7 +22,7 @@ quiz:
     - content: 'False'
       isCorrect: true
 
-  - content: 'Tags applied at a resource group level are propogated to resources within the resource group.'
+  - content: 'Tags applied at a resource group level are propagated to resources within the resource group.'
     choices:
     - content: 'True'
       explanation: 'Tags are not inherited. You need to apply tags to every supported resource that you need tagged.'

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.intro-to-data-science-in-azure.what-is-modeling
+title: What is modeling?
+metadata:
+  title: What is modeling?
+  description: What is modeling?
+  ms.date: 01/31/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-what-is-modeling.md)]

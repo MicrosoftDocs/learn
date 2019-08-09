@@ -1,23 +1,22 @@
-We'll start by creating an experiment in Azure ML Studio that uses a pre-built data set around building energy considerations.
+We'll start in Azure Machine Learning Studio by creating an experiment. The experiment uses a prebuilt dataset that relates to building energy considerations.
 
-## Create the Sample Experiment
+In this exercise, you'll import a dataset into Machine Learning Studio. There you'll experiment with it to publish a web service. This simple experiment shows how to create a machine learning model that you can publish and consume as a web service.
 
-In this exercise you will import a data set into Azure ML Studio and use that to create an experiment that will be used to publish a web service. The experiment we create will not be complex and is only used to illustrate how to create a machine learning model and to publish and consume it as a web service.
+To import a dataset into Machine Learning Studio:
 
-1. Download and extract the [Building Data.zip](https://github.com/MicrosoftDocs/mslearn-work-with-vision-cognitive-services/blob/master/Building%20Data.zip?raw=true) file for use as the dataset.
-
-1. Navigate to the Azure ML Studio portal [https://studio.azureml.net](https://studio.azureml.net?azure-portal=true). 
-1. Sign in using the Microsoft account associated with your Azure account.
-1. Click the Datasets icon on the left nav bar of Azure Machine Learning Studio.  
-1. Click the **New** button in the lower left corner to upload the dataset.
-1. Choose **DataSet**, then **From Local File**.
-1. Click **Choose File** and locate the file you just downloaded and select it.
-1. Select the Check Mark in the lower right corner to upload the dataset.
+1. Download and extract the [Building Data.zip](https://github.com/MicrosoftDocs/mslearn-work-with-vision-cognitive-services/blob/master/Building%20Data.zip?raw=true) file. This is the dataset.
+1. Go to the [Machine Learning Studio portal](https://studio.azureml.net?azure-portal=true). 
+1. Sign in by using the Microsoft account that's associated with your Azure account.
+1. On the left navigation bar of Machine Learning Studio, select the **Datasets** icon.  
+1. In the lower-left corner, select the **New** button to upload the dataset.
+1. Select **DataSet** > **From Local File**.
+1. Select **Choose File** and then select the file you just downloaded.
+1. In the lower-right corner, select the check mark to upload the dataset.
 1. Verify that **Building Data.csv** is listed as a dataset.
-1. Click the Experiments icon in Azure ML Studio.
-1. Click **New** to create a new experiment and select **Blank Experiment**.
-1. Expand the **Saved Datasets** and then **My Datasets** folders and locate **Building Data.csv**.  
+1. In Machine Learning Studio, select the **Experiments** icon.
+1. Select **New** > **Blank Experiment**.
+1. Select **Saved Datasets** > **My Datasets** > **Building Data.csv**.  
 
-    ![Adding a data set](../media/5-create-an-experiment-in-ML-studio-dataset-selection.png)
+    ![Add a dataset in Machine Learning Studio](../media/5-create-an-experiment-in-ML-studio-dataset-selection.png)
 
-1. Drag and drop this dataset onto the designer surface.
+1. Drag this dataset onto the designer surface.

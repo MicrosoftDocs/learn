@@ -1,0 +1,32 @@
+{
+  "OrderTime": "4:21 PM",
+  "id": "e152c6b5-2d9b-f232-6f58-de17190ecfec",
+  "OrderStatus": "NEW",
+  "Item": {
+    "id": "52841410-7500-828d-e932-66f166e6f87f",
+    "Title": "8vlyf0jyvexfv3f",
+    "Category": "Books",
+    "UPC": "74:8585:249",
+    "Website": "https://pzr.khdftcp.com",
+    "ReleaseDate": "2019-01-10T16:21:41.039088-08:00",
+    "Condition": "NEW",
+    "Merchant": "24/7",
+    "ListPricePerItem": 13.41,
+    "PurchasePrice": 12.76,
+    "Currency": "USD"
+  },
+  "Quantity": 24,
+  "PaymentInstrumentType": 1,
+  "PurchaseOrderNumber": "422-40277-87",
+  "Customer": {
+    "id": "297b2be8-f31f-cd84-4013-5a9a13a8aae6",
+    "FirstName": "Clair",
+    "LastName": "Weber",
+    "Email": "Clair.Weber@yahoo.com",
+    "StreetAddress": "594 Stoltenberg Divide",
+    "ZipCode": "93267-7740",
+    "State": "VT"
+  },
+  "ShippingDate": "2019-01-16T16:21:41.65195-08:00",
+  "Data": "2FgYt+9u0FiL4Q=="
+}

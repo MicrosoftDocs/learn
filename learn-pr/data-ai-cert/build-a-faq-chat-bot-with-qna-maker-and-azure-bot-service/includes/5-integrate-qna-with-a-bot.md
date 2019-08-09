@@ -2,18 +2,18 @@ Now that you've created and published your QnA knowledge base, it's time to lear
 
 ## Search for Web App Bot
 
-1. Sign in to the [Azure portal](https://portal.zure.com?azure-portal=true).
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 1. Select **Create a resource** in the sidebar.
 1. In the Azure Marketplace search box, enter **bot**, and then select Enter.
-1. Select **Web App Bot**.
+1. Select **Web App Bot**. This will create both a web site for your bot and register your bot with Azure Bot Service.
 
     ![Search for bot in Marketplace and select Web App Bot](../media/5-integrate-qna-with-bot-webappbot.png)
 
 1. Select **Create**.
-1. Provide the details for the new bot, giving it a unique name.
+1. Provide the details for the new bot, giving it a unique name, such as *yourname-bot*.
 1. Select a subscription.
-1. Put the bot in the resource group you're using for these exercises.
-1. Select the **S1** pricing tier.
+1. Select the resource group you used previously, such as *LearnRG*.
+1. Select the **S1** pricing tier, which is the Standard tier.
 1. Select **Bot Template**, select **SDK v3**, and then select **C#** for the language.
 
     ![Select SDK v3 and C# for the language](../media/5-integrate-qna-with-bot-sdk-choice.png)

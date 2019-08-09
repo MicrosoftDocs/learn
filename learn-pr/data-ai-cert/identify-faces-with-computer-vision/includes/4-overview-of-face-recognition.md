@@ -1,16 +1,16 @@
-Face **recognition** is used in many areas, including security, natural user interfaces, image analysis, mobile apps, and robotics. 
+The face detection API provides information about detected faces in an image, but isn't designed to identify or recognize a _specific_ face. However, the Face API provides this capability through a Facial recognition API.
 
-The ability to leverage artificial intelligence to perform face recognition and matching is one of the more powerful aspects of the Azure Cognitive Services Face API offering.
+*Facial recognition* is used in many areas, including security, natural user interfaces, image analysis, mobile apps, and robotics. 
 
-![Face concepts](../media/4-face-recognition-concepts.png)
+The ability to use artificial intelligence to recognize and match faces is one of the more powerful aspects of the Face API.
 
-## Clarifying terms
+![A group of related faces](../media/4-face-recognition-concepts.png)
 
-To help clarify some differences between detection, and recognition, let's switch it up and by asking (and answering) are a few questions:
+## Face detection vs. Face recognition
 
-- Do two faces belong to the same person? This defines **verification**.
-- Does this person "look like" other people? This defines **similarity**.
-- Do all of these faces belong together? This defines **grouping**.
-- Who is this person out of this entire group of people? This defines **identification**.
+Facial recognition builds on the facial detection API by analyzing the landmarks in two or more pictures to determine if the same face is present. There are four aspects which can be determined through this analysis.
 
-All of these aspects define the elements of face **recognition**.
+1. Do two images of a face belong to the same person? This defines *verification*.
+1. Does this person look like other people? This defines *similarity*.
+1. Do all of these faces belong together? This defines *grouping*.
+1. Who is this person in this group of people? This defines *identification*.

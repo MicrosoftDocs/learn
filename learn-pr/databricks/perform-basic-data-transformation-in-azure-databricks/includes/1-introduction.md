@@ -1,19 +1,21 @@
 
-Databricks use DataFrames, where the core structure of data is immutable, to query, process, and analyze a large volume of data. Being immutable means that the data stored can't be changed once it's created. So how do you use Databricks if there's a requirement to change the original data created using DataFrame? You can change the format for the original data using transformation. 
+Azure Databricks uses DataFrames to query, process, and analyze large volumes of data. The core structure of the data in a DataFrame is immutable. Being immutable means that the data structure can't be changed after it's created. 
 
-Data transformation is one the most important aspect of data integration during data warehousing process. When you receive data from variety of sources in different unstructured format, you need to transform and structure it into a common format before warehousing it. This transformation makes your data easy to use for any further analysis purposes.
+So how do you use Databricks if you need to change the structure of the original data? You can change the format for the original data through *data transformation*.
 
-There are different transformation techniques that can be selected based on the complexity of the raw data and the final output requirements. The basic transformation includes applying simple schemas to a semi-structured or tabular raw data or using built-in functions to clean corrupt data.
+Data transformation is one of the most important aspects of the data-warehousing process. When you receive data in different unstructured formats, you need to integrate the data into a common format before warehousing it. This transformation makes your data easy to use for any further analysis.
 
-Databricks provide the capabilities to perform the end-to-end process of data extraction from the source, transformation, and finally loading into the target database. This entire process is call extract, transform, load (ETL).
+Based on the complexity of the raw data and your final output requirements, there are different transformation techniques you can use. For example, you might apply schemas to semistructured or tabular raw data. You might also use built-in functions to clean up corrupt data.
+
+Databricks supports the end-to-end process of extracting data from the source, transforming that data, and finally loading the data into the target database. This entire process is known as extract, transform, and load (ETL).
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
-- Transform data in Azure Databricks by applying schemas to JSON data
-- Handle corrupt records
-- Load and productionalize data
-- Apply standard and custom transformations
-- Clean data 
-- Manage tables
+- Transform data in Azure Databricks by applying schemas to JSON data.
+- Handle corrupt records.
+- Load data and put it into production.
+- Apply standard and custom transformations.
+- Clean up data.
+- Manage tables.

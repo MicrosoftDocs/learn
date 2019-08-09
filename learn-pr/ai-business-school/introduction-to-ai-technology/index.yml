@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn-wwl.intro-to-ai-technology
+metadata:
+  title: Introduction to AI technology
+  description: This module provides a high-level overview of the primary concepts of AI and the technologies behind it. We then dive into how Microsoft is turning the latest advancements in AI into tools, products, and services that can be leveraged by organizations.
+  ms.date: 04/26/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: barlan
+title: Introduction to AI technology
+summary: This module provides a high-level overview of the primary concepts of AI and the technologies behind it. We then dive into how Microsoft is turning the latest advancements in AI into tools, products, and services that can be leveraged by organizations.
+abstract: | 
+  In this module, you will:
+  - Describe the primary technological components of an AI strategy.
+  - Describe the methods of Machine Learning.
+  - Articulate how AI technology can solve business problems.
+prerequisites: None
+iconUrl: /learn/achievements/introduction-to-ai-technology.svg
+levels: 
+- beginner
+roles: 
+- functional-consultant
+- business-user
+products: 
+- azure
+- dynamics
+- m365
+units: 
+- learn-wwl.intro-to-ai-technology.introduction
+- learn-wwl.intro-to-ai-technology.explore-state-of-the-art-ai-technology
+- learn-wwl.intro-to-ai-technology.introduction-to-ai-technology
+- learn-wwl.intro-to-ai-technology.microsoft-ai-approach
+- learn-wwl.intro-to-ai-technology.introduction-to-ml-and-dl
+- learn-wwl.intro-to-ai-technology.knowledge-check
+- learn-wwl.intro-to-ai-technology.summary-and-resources
+badge: 
+  uid: learn-wwl.intro-to-ai-technology.badge #add the uid for your achievement badge.

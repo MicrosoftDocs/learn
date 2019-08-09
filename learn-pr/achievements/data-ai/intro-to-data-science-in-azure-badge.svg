@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Explore Data Science tools in Azure/introduction-to-data-science-in-azure</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-8.3%" y="-7.2%" width="116.7%" height="114.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0975147192 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M39,64.1588252 L42.997101,64.1588252 L42.997101,73.423629 L40.8529607,73.423629 L40.8529607,65.8794316 L39,65.8794316 L39,64.1588252 Z M48.5824542,73.5824542 C46.3059595,73.5824542 44.611824,71.8486123 44.611824,68.7912271 C44.611824,65.7338418 46.3059595,64 48.5824542,64 C50.8721842,64 52.5530843,65.7338418 52.5530843,68.7912271 C52.5530843,71.8486123 50.8721842,73.5824542 48.5824542,73.5824542 Z M48.5824542,71.7691997 C49.6545243,71.7691997 50.3957086,70.8956611 50.3957086,68.7912271 C50.3957086,66.6867931 49.6545243,65.8132544 48.5824542,65.8132544 C47.5236194,65.8132544 46.7824351,66.6867931 46.7824351,68.7912271 C46.7824351,70.8956611 47.5236194,71.7691997 48.5824542,71.7691997 Z M53.0957371,64.1588252 L57.0928382,64.1588252 L57.0928382,73.423629 L54.9486979,73.423629 L54.9486979,65.8794316 L53.0957371,65.8794316 L53.0957371,64.1588252 Z" id="path-4"></path>
+        <filter x="-0.7%" y="-1.3%" width="101.4%" height="105.2%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="0.25" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.249094203 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Explore-Data-Science-tools-in-Azure" transform="translate(-50.000000, -260.000000)">
+            <g id="Explore-Data-Science-tools-in-Azure/introduction-to-data-science-in-azure" transform="translate(50.000000, 260.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="sparks" mask="url(#mask-2)" stroke-linecap="round">
+                        <g transform="translate(16.000000, 26.000000)">
+                            <g id="Group" transform="translate(5.906158, 18.013965) rotate(-90.000000) translate(-5.906158, -18.013965) translate(-11.593842, 12.513965)">
+                                <path d="M17.2955479,7.91207818 L17.2955479,0.744913508" id="Line" stroke="#FFFFFF" stroke-width="3"></path>
+                                <path d="M32.6701896,9.76800424 L33.7024875,7.91207818" id="Line-Copy-2" stroke="#FFFFFF" stroke-width="3"></path>
+                                <path d="M0.752206029,9.76800424 L1.78450397,7.91207818" id="Line-Copy-3" stroke="#FFFFFF" stroke-width="3" transform="translate(1.336556, 8.807974) scale(1, -1) translate(-1.336556, -8.807974) "></path>
+                                <path d="M11.4438041,9.82479134 L7.86022173,2.65762666" id="Line" stroke="#FFFFFF" stroke-width="3" transform="translate(9.652013, 6.241209) rotate(14.000000) translate(-9.652013, -6.241209) "></path>
+                                <path d="M26.7308741,9.82479134 L23.1472918,2.65762666" id="Line-Copy" stroke="#FFFFFF" stroke-width="3" transform="translate(24.939083, 6.241209) scale(1, -1) rotate(14.000000) translate(-24.939083, -6.241209) "></path>
+                            </g>
+                            <g id="Group-Copy" transform="translate(58.853265, 18.013965) scale(-1, 1) rotate(-90.000000) translate(-58.853265, -18.013965) translate(41.353265, 12.513965)">
+                                <path d="M17.2955479,7.91207818 L17.2955479,0.744913508" id="Line" stroke="#FFFFFF" stroke-width="3"></path>
+                                <path d="M32.6701896,9.76800424 L33.7024875,7.91207818" id="Line-Copy-2" stroke="#FFFFFF" stroke-width="3"></path>
+                                <path d="M0.752206029,9.76800424 L1.78450397,7.91207818" id="Line-Copy-3" stroke="#FFFFFF" stroke-width="3" transform="translate(1.336556, 8.807974) scale(1, -1) translate(-1.336556, -8.807974) "></path>
+                                <path d="M11.4438041,9.82479134 L7.86022173,2.65762666" id="Line" stroke="#FFFFFF" stroke-width="3" transform="translate(9.652013, 6.241209) rotate(14.000000) translate(-9.652013, -6.241209) "></path>
+                                <path d="M26.7308741,9.82479134 L23.1472918,2.65762666" id="Line-Copy" stroke="#FFFFFF" stroke-width="3" transform="translate(24.939083, 6.241209) scale(1, -1) rotate(14.000000) translate(-24.939083, -6.241209) "></path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Chemistry" mask="url(#mask-2)">
+                        <g transform="translate(24.000000, 12.000000)">
+                            <g id="Group-7" opacity="0.300000012" transform="translate(13.090909, 0.000000)">
+                                <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="3.92334545" cy="7.85367273" r="3.73527273"></circle>
+                                <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="16.7354182" cy="9.42021818" r="3.0288"></circle>
+                                <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="12.2016" cy="2.304" r="1.81483636"></circle>
+                                <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="10.3872" cy="14.2477091" r="1.18341818"></circle>
+                            </g>
+                            <g id="Group-3" filter="url(#filter-3)" transform="translate(0.000000, 14.815078)">
+                                <path d="M46.9824,53.4109091 L33.6567273,20.8381091 C33.4743273,20.4200727 33.3154909,20.0552727 33.1645091,19.7419636 L33.1645091,3.49090909 L35.7826909,3.49090909 C36.7461818,3.49090909 37.5281455,2.70894545 37.5281455,1.74545455 C37.5281455,0.781090909 36.7461818,0 35.7826909,0 L11.3463273,0 C10.3819636,0 9.60087273,0.781090909 9.60087273,1.74545455 C9.60087273,2.70894545 10.3819636,3.49090909 11.3463273,3.49090909 L13.9645091,3.49090909 L13.9645091,19.7419636 C13.8135273,20.0552727 13.6538182,20.4200727 13.4722909,20.8381091 L0.145745455,53.4109091 C-0.0890181818,53.9502545 -0.0366545455,54.5725091 0.286254545,55.0656 C0.608290909,55.5578182 1.15810909,55.8545455 1.74632727,55.8545455 L45.3826909,55.8545455 C45.9709091,55.8545455 46.5207273,55.5578182 46.8427636,55.0656 C47.1648,54.5725091 47.2180364,53.9502545 46.9824,53.4109091" id="Fill-103" fill="#E1E4E1"></path>
+                                <path d="M27.0554182,31.4181818 C27.8251636,30.8910545 29.1002182,30.5454545 30.5463273,30.5454545 C31.9924364,30.5454545 33.2683636,30.8910545 34.0372364,31.4181818 L42.8605091,52.3636364 L4.26850909,52.3636364 L13.0917818,31.4181818 C13.8615273,30.8910545 15.1365818,30.5454545 16.5826909,30.5454545 C18.0288,30.5454545 19.3047273,30.8910545 20.0736,31.4181818 C20.8433455,31.9453091 22.1184,32.2909091 23.5645091,32.2909091 C25.0106182,32.2909091 26.2865455,31.9453091 27.0554182,31.4181818" id="Fill-104" fill="#7CB65A"></path>
+                                <path d="M46.9824,53.4109091 L33.6567273,20.8381091 C33.4743273,20.4200727 33.3154909,20.0552727 33.1645091,19.7419636 L33.1645091,3.49090909 L35.7826909,3.49090909 C36.7461818,3.49090909 37.5281455,2.70894545 37.5281455,1.74545455 L24.4372364,1.74545455 C23.9554909,1.74545455 23.5645091,2.13643636 23.5645091,2.61818182 L23.5645091,3.49090909 L13.9645091,3.49090909 L13.9645091,5.23636364 L21.8190545,5.23636364 C22.7825455,5.23636364 23.5645091,6.01745455 23.5645091,6.98181818 L23.5645091,19.9714909 C23.5645091,20.0386909 23.568,20.1058909 23.5758545,20.1730909 L27.2954182,52.1620364 C27.4167273,53.1988364 26.6059636,54.1090909 25.5621818,54.1090909 L0.0130909091,54.1090909 C0.0130909091,54.4442182 0.0977454545,54.7767273 0.286254545,55.0656 C0.608290909,55.5578182 1.15810909,55.8545455 1.74632727,55.8545455 L45.3826909,55.8545455 C45.9709091,55.8545455 46.5207273,55.5578182 46.8427636,55.0656 C47.1648,54.5725091 47.2180364,53.9502545 46.9824,53.4109091" id="Fill-107" fill="#C5CCCD"></path>
+                                <path d="M30.5463273,30.5454545 C29.1002182,30.5454545 27.8251636,30.8910545 27.0554182,31.4181818 C26.5509818,31.7637818 25.8152727,32.0194909 24.9704727,32.1626182 L27.2954182,52.1620364 C27.3041455,52.2301091 27.2971636,52.2964364 27.2971636,52.3636364 L42.8605091,52.3636364 L34.0372364,31.4181818 C33.2683636,30.8910545 31.9924364,30.5454545 30.5463273,30.5454545" id="Fill-108" fill="#69994E"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="101" mask="url(#mask-2)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                        <use fill="#E1E4E1" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

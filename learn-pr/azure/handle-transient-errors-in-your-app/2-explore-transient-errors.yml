@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.handle-transient-errors-in-your-app.2-explore-transient-errors
+title: Describe common types of transient errors your app may encounter
+metadata:
+  title: Describe common types of transient errors your app may encounter
+  description: An overview of the different kinds of errors, and a generic approach to resolved them.
+  ms.date: 04/10/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-explore-transient-errors.md)]

@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.analyze-climate-data-with-azure-notebooks.summary
+title: Summary and knowledge check
+metadata:
+  title: Summary and knowledge check
+  description: Confirm that you understand the steps required to create and use an Azure Notebook.
+  ms.date: 02/25/2018
+  author: JeffProsise
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+content: |
+  [!include[](includes/8-summary.md)]
+durationInMinutes: 10
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "What is a strength of using Jupyter Notebooks?"
+    choices:
+    - content: "Can use different databases by choosing different kernels."
+      isCorrect: false
+      explanation: "Kernels don't do anything with databases."
+    - content: "Can use different languages by choosing different kernels."
+      isCorrect: true
+      explanation: "Different kernels can allow you to use a specific language in a notebook."
+    - content: "Can use different themes by choosing different kernels."
+      isCorrect: false
+      explanation: "Kernels don't do anything with choosing a theme."
+
+  - content: "What kind of line can a linear regression help create?"
+    choices:
+    - content: "Differentiation"
+      isCorrect: false
+      explanation: "The line doesn't show a differentiation of the data."
+    - content: "Slope"
+      isCorrect: false
+      explanation: "The slope is part of the line but doesn't describe the line."
+    - content: "Trend"
+      isCorrect: true
+      explanation: "The trend line helps show how the data is trending over time."
+
+  - content: "What types of cells can you have in a Jupyter notebook?"
+    choices:
+    - content: "Markdown and Code"
+      isCorrect: false
+      explanation: "These are the only types of cells we used in our notebook, but there are more possible!"
+    - content: "Editable and Uneditable"
+      isCorrect: false
+      explanation: "All cell types in Jupyter notebooks can be edited once you've selected them and entered edit mode."
+    - content: "Markdown, Code, and Raw NBConvert"
+      isCorrect: true
+      explanation: "While we only used Markdown and Code cells, Raw NBConvert cells are also available and allow for entering data inline."

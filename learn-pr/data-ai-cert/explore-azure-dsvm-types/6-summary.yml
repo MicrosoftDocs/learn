@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.explore-azure-dsvm-types.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 01/31/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "You want to learn about how to use Azure services related to machine learning with as little fuss as possible installing and configuring software and locating demonstration scripts.  Which Data Science Virtual Machine type would best suit these needs?"
+    choices: 
+    - content: "Deep Learning DSVM"
+      isCorrect: false
+      explanation: "This is not correct.  It is built on a Linux image which does not support some of the Microsoft tools.  Also, the Deep Learning VM is much more expensive to run."
+    - content: "Windows 2016 DSVM"
+      isCorrect: true
+      explanation: "This is correct.  The Windows 2016 gives you the most popular data science tools installed and configured and includes many sample scripts for using Azure machine learning related services."
+    - content: "Geo AI Data Science VM with ArcGIS DSVM"
+      isCorrect: false
+      explanation: "This is not correct.  This virtual machine is more expensive and intended for specific use cases that involve geospatial problems."
+
+  - content: "You need to train deep learning models to do image recognition using a lot of training data in the form of images.  Which DSVM configuration would be best for the fastest model training?"
+    choices: 
+    - content: "Windows 2016 with standard CPUs."
+      isCorrect: false
+      explanation: "This is not correct.  This VM is not optimized to support deep learning."
+    - content: "Geo AI Data Science VM with ArcGIS DSVM"
+      isCorrect: false
+      explanation: "This is not correct.  Although this VM can perform deep learning, it also includes addition unneeded commercial software that adds to the cost."
+    - content: "Deep Learning VM which is configured to use GPUs."
+      isCorrect: true
+      explanation: "This is correct.  The DSVM includes all the software needed for training deep learning models and use graphic processor units (GPUs) which perform calculations much faster than standard CPUs."
+
+  - content: "Which Linux-Based version DSVM supports deep learning?"
+    choices: 
+    - content: "Ubuntu Linux DSVM"
+      isCorrect: true
+      explanation: "This is correct.  Only the Data Science VM running on Ubuntu supports deep learning."
+    - content: "CentOS Linux DSVM"
+      isCorrect: false
+      explanation: "This is not correct.  The Data Science VM running on CentOS does not include the tools for deep learning."
+    - content: "Fedora Linux DSVM"
+      isCorrect: false
+      explanation: "This is not correct.  A Fedora DSVM is not available."

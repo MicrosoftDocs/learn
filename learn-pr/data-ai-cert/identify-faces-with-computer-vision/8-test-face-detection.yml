@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.identify-faces-with-computer-vision.test-face-detection
-title: Exercise - Testing the Face Detection API
+title: Exercise - Test the Face Detection API
 metadata:
-  title: Exercise - Testing the Face Detection API
-  description: Test the Face Detection API on your subscription using the web-based testing console
+  title: Exercise - Test the Face Detection API
+  description: Test the Face Detection API on your subscription by using the web-based testing console
   ms.date: 01/7/2019
   author: gerryaobrien
   ms.author: gerryo

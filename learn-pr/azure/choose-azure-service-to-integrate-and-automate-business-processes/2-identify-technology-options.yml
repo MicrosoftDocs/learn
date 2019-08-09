@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-azure-service-to-integrate-and-automate-business-processes.2-identify-technology-options
+title: Identify the technology options
+metadata:
+  title: Identify the technology options
+  description: Identify the technology options
+  ms.date: 04/10/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-identify-technology-options.md)]

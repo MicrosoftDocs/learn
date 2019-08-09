@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.train-local-model-with-azure-mls.simple-log-regression-model
+title: Exercise - Load the data for a simple logistic regression model
+metadata:
+  title: Exercise - Load the data for a simple logistic regression model
+  description: Exercise - Load the data for a simple logistic regression model
+  ms.date: 01/31/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-simple-log-regression-model.md)]

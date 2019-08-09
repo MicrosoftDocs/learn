@@ -29,22 +29,22 @@ quiz:
     choices:
     - content: 'Public cloud'
       isCorrect: false
-      explanation: "A hybrid cloud is a public and private cloud combined. You can run your new applications on commodity hardware you rent from the public cloud and maintain your specialized mainframe hardware on-premeses."
+      explanation: "A hybrid cloud is a public and private cloud combined. You can run your new applications on commodity hardware you rent from the public cloud and maintain your specialized mainframe hardware on-premises."
     - content: 'Private cloud'
       isCorrect: false
-      explanation: "A hybrid cloud is a public and private cloud combined. You can run your new applications on commodity hardware you rent from the public cloud and maintain your specialized mainframe hardware on-premeses."
+      explanation: "A hybrid cloud is a public and private cloud combined. You can run your new applications on commodity hardware you rent from the public cloud and maintain your specialized mainframe hardware on-premises."
     - content: 'Hybrid cloud'
       isCorrect: true
-      explanation: "A hybrid cloud is a public and private cloud combined. You can run your new applications on commodity hardware you rent from the public cloud and maintain your specialized mainframe hardware on-premeses."
+      explanation: "A hybrid cloud is a public and private cloud combined. You can run your new applications on commodity hardware you rent from the public cloud and maintain your specialized mainframe hardware on-premises."
 
   - content: "You're developing an application and want to focus on building, testing, and deploying. You don't want to worry about managing the underlying hardware or software. Which cloud service type is best for you?"
     choices:
-    - content: 'Infrastructure-as-a-service'
+    - content: 'Infrastructure as a Service (IaaS)'
       isCorrect: false
-      explanation: "Platform-as-a-service is the best choice here because the PaaS services handle the IT management tasks for you, so you can focus on writing code."
-    - content: 'Platform-as-a-service'
+      explanation: "Platform as a Service is the best choice here because the PaaS services handle the IT management tasks for you, so you can focus on writing code."
+    - content: 'Platform as a Service (PaaS)'
       isCorrect: true
-      explanation: "Platform-as-a-service is the best choice here because the PaaS services handle the IT management tasks for you, so you can focus on writing code."
-    - content: 'Software-as-a-service'
+      explanation: "Platform as a Service is the best choice here because the PaaS services handle the IT management tasks for you, so you can focus on writing code."
+    - content: 'Software as a Service (SaaS)'
       isCorrect: false
-      explanation: "Platform-as-a-service is the best choice here because the PaaS services handle the IT management tasks for you, so you can focus on writing code."
+      explanation: "Platform as a Service is the best choice here because the PaaS services handle the IT management tasks for you, so you can focus on writing code."

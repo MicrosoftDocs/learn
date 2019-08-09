@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-content-delivery-network-azure-cdn-blob-services.5-customize-manage-cdn-behavior
+title: Customize and Manage CDN behavior
+metadata:
+  title: Customize and manage CDN behavior
+  description: Customize and manage CDN behavior
+  ms.date: 4/30/2019
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-customize-manage-cdn-behavior.md)]

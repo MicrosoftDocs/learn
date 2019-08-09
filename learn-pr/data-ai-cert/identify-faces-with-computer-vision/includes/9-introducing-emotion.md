@@ -1,16 +1,18 @@
-While working with your Face API service, you might have noticed it can return general emotion values through the **Detect method emotion** attribute. It's also likely you noticed the returned information was a bit sparse, and typically only registered a level of happiness. The Azure Cognitive Services Emotion API builds on this feature, by providing additional methods and algorithms for detecting a rich set of emotion in images displaying human faces.
+While working with your Face API service, you might notice that it can return general emotion values through the **Detect method emotion** attribute. You probably also notice that the returned information is sparse and typically only registers a level of happiness. 
 
-![Emotion concepts](../media/8-introducing-emotion-concepts.png)
+The Cognitive Services Emotion API builds on these results by using additional methods and algorithms to detect a rich set of emotions in images of human faces.
 
-The Emotion API provides advanced face analysis algorithms to evaluate a confidence level for the following set of emotions: **anger**, **contempt**, **disgust**, **fear**, **happiness**, **neutral** (the absence of emotion), **sadness**, and **surprise**.
+![Two people's faces express emotion](../media/8-introducing-emotion-concepts.png)
 
-## Scores and Locations
+The Emotion API provides advanced face analysis algorithms to assign a confidence level for the following emotions: anger, contempt, disgust, fear, happiness, neutral (the absence of emotion), sadness, and surprise.
 
-When using the Emotion API, detected faces are associated with face **locations**, as with the Face API, however a collection of values is added to the payload describing the likelihood of various emotions—based on a variation of confidence levels, referred to as **scores**.
+## Scores and locations
 
-- **Score**: The likelihood or level of "confidence" a face is displaying a specific emotion
-- **Location**: The top, left, height, and width of a region in the image displaying a face
+As in the Face API, the Emotion API associates detected faces with face *locations*. But the Emotion API adds a collection of values to the payload describing the likelihood of various emotions. The analysis is based on a variation of confidence levels, referred to as *scores*.
 
-![Scores and locations in the Emotion API](../media/8-introducing-emotion-score-location.png)
+- **Score**: The likelihood or level of confidence that a face displays a specific emotion
+- **Location**: The top, left, height, and width of a region in the image that displays a face
 
-Scores, just like confidence levels, are similar to percentages, using a range of 0.0 to 1.0. The higher the value, the more certain the service is of the accuracy of an emotion.
+![A group of faces are analyzed by the Emotion API. JSON code shows the scores and locations of the faces](../media/8-introducing-emotion-score-location.png)
+
+Scores, just like confidence levels, are similar to percentages. Their range is 0.0 to 1.0. The higher the value, the more certain the service is that the emotion is accurate.

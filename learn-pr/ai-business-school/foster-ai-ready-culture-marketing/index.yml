@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn-wwl.foster-ai-culture-marketing
+metadata:
+  title: Discover how to foster an AI-ready culture in marketing
+  description: A successful AI strategy in marketing must consider cultural issues as well as business issues. The goal of this module is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
+  ms.date: 04/26/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: barlan
+title: Discover how to foster an AI-ready culture in marketing
+summary: A successful AI strategy in marketing must consider cultural issues as well as business issues. The goal of this module is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
+abstract: | 
+  In this module, you will:
+  - Recognize the key elements of an AI-ready organizational culture in marketing.
+  - Explain how Microsoft incorporated AI into their marketing processes.
+  - Identify opportunities for change to achieve an AI-ready culture in your marketing department.
+prerequisites: None
+iconUrl: /learn/achievements/foster-ai-ready-culture-marketing.svg
+levels: 
+- intermediate
+roles: 
+- functional-consultant
+- business-user
+products: 
+- azure
+- dynamics
+- m365
+units: 
+- learn-wwl.foster-ai-culture-marketing.introduction
+- learn-wwl.foster-ai-culture-marketing.marketing-case-study-introduction
+- learn-wwl.foster-ai-culture-marketing.marketing-executive-qa
+- learn-wwl.foster-ai-culture-marketing.marketing-case-study-resolution
+- learn-wwl.foster-ai-culture-marketing.knowledge-check
+- learn-wwl.foster-ai-culture-marketing.summary-and-resources
+badge: 
+  uid: learn-wwl.foster-ai-culture-marketing.badge #add the uid for your achievement badge.

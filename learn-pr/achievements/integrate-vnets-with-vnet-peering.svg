@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Azure Solution Architect - Infrastructure Operations/distribute-your-services-across-azure-virtual-networks-and-integrate-using-vnet-peering</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-7.8%" y="-12.9%" width="115.7%" height="125.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.104534647 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <circle id="path-4" cx="12.5" cy="12.5" r="12.5"></circle>
+        <filter x="-4.0%" y="-4.0%" width="108.0%" height="116.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-6" cx="12.5" cy="12.5" r="12.5"></circle>
+        <filter x="-4.0%" y="-4.0%" width="108.0%" height="116.0%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-8" cx="12.5" cy="12.5" r="12.5"></circle>
+        <filter x="-4.0%" y="-4.0%" width="108.0%" height="116.0%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Azure-Solution-Architect---Infrastructure-Operations" transform="translate(-50.000000, -460.000000)">
+            <g id="Azure-Solution-Architect---Infrastructure-Operations/distribute-your-services-across-azure-virtual-networks-and-integrate-using-vnet-peering" transform="translate(50.000000, 460.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="network" mask="url(#mask-2)">
+                        <g transform="translate(7.000000, 13.000000)">
+                            <path d="M23.3449567,69.8182251 L14.4411905,69.8182251 C11.4409032,69.8182251 9,67.3773219 9,64.3770346 C9,61.3767473 11.4409032,58.9358441 14.4411905,58.9358441 C14.7165345,58.9358441 14.9933278,58.9607203 15.2904119,59.0131338 C16.3425155,55.4488721 19.5881955,53 23.3449567,53 C27.9818502,53 31.7540692,56.7722191 31.7540692,61.4091125 C31.7540692,66.046006 27.9818502,69.8182251 23.3449567,69.8182251 Z" id="Cloud" fill="#FFFFFF" fill-rule="nonzero"></path>
+                            <g id="network" filter="url(#filter-3)" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(15.000000, 22.000000)">
+                                <g id="Stand">
+                                    <path d="M48.7826087,25.5566667 L2.2173913,25.5566667 C0.992282609,25.5566667 0,24.5611111 0,23.3344444 C0,22.1066667 0.992282609,21.1122222 2.2173913,21.1122222 L48.7826087,21.1122222 C50.0066087,21.1122222 51,22.1066667 51,23.3344444 C51,24.5611111 50.0066087,25.5566667 48.7826087,25.5566667" id="Fill-453" fill="#182A37"></path>
+                                    <polygon id="Fill-455" fill="#182A37" points="22.173913 23.3344444 28.826087 23.3344444 28.826087 0.00111111111 22.173913 0.00111111111"></polygon>
+                                    <path d="M22.173913,2.22222222 L22.173913,3.33333333 L24.3913043,3.33333333 C25.0033043,3.33333333 25.5,3.83111111 25.5,4.44444444 L25.5,17.7777778 L28.826087,17.7777778 L28.826087,2.22222222 L22.173913,2.22222222" id="Fill-473" fill="#12202B"></path>
+                                    <path d="M0,23.3344444 C0,24.5611111 0.993391304,25.5566667 2.2173913,25.5566667 L48.7826087,25.5566667 C50.0066087,25.5566667 51,24.5611111 51,23.3344444 L51,23.3333333 L0,23.3333333 L0,23.3344444" id="Fill-474" fill="#12202B"></path>
+                                    <path d="M34.3695652,27.7788889 C34.3695652,28.39 33.8706522,28.89 33.2608696,28.89 L17.7391304,28.89 C17.1293478,28.89 16.6304348,28.39 16.6304348,27.7788889 L16.6304348,18.89 C16.6304348,18.2788889 17.1293478,17.7788889 17.7391304,17.7788889 L33.2608696,17.7788889 C33.8706522,17.7788889 34.3695652,18.2788889 34.3695652,18.89 L34.3695652,27.7788889" id="Fill-475" fill="#30404D"></path>
+                                    <path d="M33.2608696,17.7788889 L25.5,17.7788889 L25.5,24.4444444 C25.5,25.6722222 24.5077174,26.6666667 23.2826087,26.6666667 L16.6304348,26.6666667 L16.6304348,27.7788889 C16.6304348,28.39 17.1293478,28.89 17.7391304,28.89 L33.2608696,28.89 C33.8706522,28.89 34.3695652,28.39 34.3695652,27.7788889 L34.3695652,18.89 C34.3695652,18.2788889 33.8706522,17.7788889 33.2608696,17.7788889" id="Fill-476" fill="#182A37"></path>
+                                </g>
+                            </g>
+                            <path d="M74.3261062,25.3090648 L57.4306745,25.3090648 C54.4363212,25.3090648 52,22.8727435 52,19.8783903 C52,17.5484318 53.4896642,15.5010314 55.6734832,14.7559006 C56.1292797,9.81225503 60.2665184,6 65.274982,6 C70.1561688,6 74.2598157,9.6793785 74.8470164,14.4724676 C77.598003,14.7355718 79.7567806,17.0596349 79.7567806,19.8783903 C79.7567806,22.8727435 77.3204594,25.3090648 74.3261062,25.3090648 Z" id="Cloud" fill="#FFFFFF" fill-rule="nonzero" opacity="0.900000036"></path>
+                            <g id="azure-logo" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(28.000000, 0.000000)">
+                                <g id="Oval">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                                    <use fill="#4D84CD" fill-rule="evenodd" xlink:href="#path-4"></use>
+                                </g>
+                                <g id="Azure-Logo" transform="translate(5.000000, 6.000000)" fill="#FFFFFF">
+                                    <polygon id="Path" points="3.36206897 12.3711884 14.7413793 12.3724138 8.61272887 1.07586207 6.74613483 6.5299191 10.3306867 11.0649595"></polygon>
+                                    <polygon id="Path" points="8.01724138 0 3.83723913 4.07785448 0.25862069 11.2850468 3.48652353 11.2850468 3.48652353 11.2965517"></polygon>
+                                </g>
+                            </g>
+                            <g id="azure-logo" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(58.000000, 33.000000)">
+                                <g id="Oval">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                                    <use fill="#4D84CD" fill-rule="evenodd" xlink:href="#path-6"></use>
+                                </g>
+                                <g id="Azure-Logo" transform="translate(5.000000, 6.000000)" fill="#FFFFFF">
+                                    <polygon id="Path" points="3.36206897 12.3711884 14.7413793 12.3724138 8.61272887 1.07586207 6.74613483 6.5299191 10.3306867 11.0649595"></polygon>
+                                    <polygon id="Path" points="8.01724138 0 3.83723913 4.07785448 0.25862069 11.2850468 3.48652353 11.2850468 3.48652353 11.2965517"></polygon>
+                                </g>
+                            </g>
+                            <g id="azure-logo" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 33.000000)">
+                                <g id="Oval">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
+                                    <use fill="#4D84CD" fill-rule="evenodd" xlink:href="#path-8"></use>
+                                </g>
+                                <g id="Azure-Logo" transform="translate(5.000000, 6.000000)" fill="#FFFFFF">
+                                    <polygon id="Path" points="3.36206897 12.3711884 14.7413793 12.3724138 8.61272887 1.07586207 6.74613483 6.5299191 10.3306867 11.0649595"></polygon>
+                                    <polygon id="Path" points="8.01724138 0 3.83723913 4.07785448 0.25862069 11.2850468 3.48652353 11.2850468 3.48652353 11.2965517"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

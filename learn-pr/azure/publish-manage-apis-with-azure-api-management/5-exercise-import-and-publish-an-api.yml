@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.publish-manage-apis-with-azure-api-management.5-exercise-import-and-publish-an-api
+title: Exercise - Import and publish an API
+metadata:
+  title: Exercise - Import and publish an API
+  description: Exercise - Import and publish an API
+  ms.date: 05/02/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/5-exercise-import-and-publish-an-api.md)]

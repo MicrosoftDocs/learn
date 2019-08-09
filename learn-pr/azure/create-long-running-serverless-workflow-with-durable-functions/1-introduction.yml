@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-create-long-running-serverless-workflow-with-durable-functions.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 04/24/2019
+  author: andrewjbyrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

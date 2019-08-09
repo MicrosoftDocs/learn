@@ -10,11 +10,6 @@ achievements:
   title: Make your virtual machines highly available
   summary: Make your virtual machines highly available
   iconUrl: /learn/achievements/make-your-virtual-machines-highly-available.svg
-- uid: learn.intro-to-containers.badge
-  type: badge
-  title: Introduction to Containers badge
-  summary: Badge for the 'Introduction to Containers' module.
-  iconUrl: /learn/achievements/intro-to-containers.svg
 - uid: learn.scale-and-size-virtual-machines.badge
   type: badge
   title: Scale and size Virtual Machines in Azure

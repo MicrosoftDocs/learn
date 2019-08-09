@@ -178,7 +178,7 @@ Now that we have added the required libraries to enable reading configuration, w
 
     ```javascript
     #!/usr/bin/env node
-    require('dotenv').load();
+    require('dotenv').config();
     // ... more code follows
     ```
 ::: zone-end

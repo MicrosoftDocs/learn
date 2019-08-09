@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.data-ai.create-and-publish-a-luis-model
 metadata:
-  title: Create and publish a natural language machine learning model with LUIS - Learn
-  description: In this module, we'll introduce you to the concept of language understanding (LUIS) and how to build and publish a LUIS model for testing - Learn
+  title: Add conversational intelligence to your apps by using Language Understanding Intelligent Service (LUIS)
+  description: In this module, we'll introduce you to Language Understanding Intelligent Service (LUIS) and show how to build and publish a LUIS model
   ms.date: 1/24/2019
   author: gerryaobrien
   ms.author: gerryo
@@ -10,15 +10,16 @@ metadata:
   ms.prod: learning-azure
   #ms.learn-contact: smmark
 abstract: | 
-  In this module you will:
-  - Gain an understanding of what LUIS is
-  - Learn about key features of LUIS such as intents and utterances
-  - Build and publish a LUIS model
-title: Create and publish a natural language machine learning model with LUIS
-summary: In this module, we'll introduce you to the concept of language understanding (LUIS) and how to create a LUIS application with Intents
-cardDescription: Introducing conversational intelligence through the use of language understanding (LUIS)
+  In this module, you'll:
+  - Learn what LUIS is.
+  - Learn about key features of language understanding, such as intents and utterances.
+  - Build and publish a natural-language machine-learning model.
+title: Add conversational intelligence to your apps by using Language Understanding Intelligent Service (LUIS)
+summary: In this module, we'll introduce you to Language Understanding Intelligent Service (LUIS) and show how to create a LUIS application.
+cardDescription: Introduction to adding conversational intelligence to your apps by using language understanding (LUIS)
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/create-and-publish-a-luis-model.svg
+ratingEnabled: true
 levels: 
 - intermediate
 roles:

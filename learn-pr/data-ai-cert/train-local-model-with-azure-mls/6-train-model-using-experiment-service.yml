@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.train-local-model-with-azure-mls.train-model-using-experiment-service
+title: Exercise - Train a model using the Experimentation Service
+metadata:
+  title: Exercise - Train a model using the Experimentation Service
+  description: Exercise - Train a model using the Experimentation Service
+  ms.date: 01/31/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-train-model-using-experiment-service.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.store-access-data-cosmos-graph-api.determine-graph-database-fits-data-needs-of-your-application
+title: Determine if a graph database fits the data needs of your application
+metadata:
+  title: Determine if a graph database fits the data needs of your application
+  description: Determine if a graph database fits the data needs of your application
+  ms.date: 05/03/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-determine-graph-database-fits-data-needs-of-your-application.md)]

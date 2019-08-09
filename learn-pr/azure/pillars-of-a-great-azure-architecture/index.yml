@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.pillars-of-a-great-azure-architecture
 metadata:
-  title: Pillars of a great Azure architecture - Learn
+  title: Pillars of a great Azure architecture
   description: You want to build great things on Azure, but you’re not sure exactly what that means. Using key principles throughout your architecture regardless of technology choice, can help you design, build, and continuously improve your architecture.
   ms.date: 09/24/2018
   author: JoshLuedeman

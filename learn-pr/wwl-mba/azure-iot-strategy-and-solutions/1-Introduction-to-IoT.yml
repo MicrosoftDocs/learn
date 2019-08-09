@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.azure-iot-strategy-and-solutions.1-introduction-to-iot
+title: Introduction to Internet of Things (IoT)
+metadata:
+  title: Introduction to Internet of Things (IoT)
+  description: .
+  ms.date: 01/31/2019
+  author: msmkitris1
+  ms.author: mkitris
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-Introduction-to-IoT.md)]

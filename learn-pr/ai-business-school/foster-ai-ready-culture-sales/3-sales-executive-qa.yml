@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.foster-ai-culture-sales.sales-executive-qa
+title: Discover how to foster an AI-ready culture in sales - Executive Q&A
+metadata:
+  title: Discover how to foster an AI-ready culture in sales - Executive Q&A
+  description: In this executive insight video Jean-Phlippe Courtois, Executive Vice President and President, Microsoft Global Sales, Marketing and Operations how is his leadership team creating an AI-Ready Culture, the role of the chain of command, from first-line managers to leadership to build trust on AI and his reflections on where to start with AI.
+  ms.date: 04/26/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-sales-executive-qa.md)] 

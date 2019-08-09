@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.interactive-deep-learning
 metadata:
-  title: Interactive deep learning with Jupyter, Docker and PyTorch on the Data Science Virtual Machine - Learn
+  title: Interactive deep learning with Jupyter, Docker and PyTorch on the Data Science Virtual Machine
   description: Learn to train deep learning models with Jupyter, PyTorch and the Data Science Virtual Machine.
   ms.date: 09/24/2018
   author: aribornstein

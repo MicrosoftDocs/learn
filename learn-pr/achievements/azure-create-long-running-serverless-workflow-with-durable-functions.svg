@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>NA/create-a-long-running-serverless-workflow-with-durable-functions</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-6.7%" y="-6.8%" width="113.3%" height="113.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.104567308 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="N/A-20" transform="translate(-50.000000, -260.000000)">
+            <g id="NA/create-a-long-running-serverless-workflow-with-durable-functions" transform="translate(50.000000, 260.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <path d="M74.3261062,35.3090648 L57.4306745,35.3090648 C54.4363212,35.3090648 52,32.8727435 52,29.8783903 C52,27.5484318 53.4896642,25.5010314 55.6734832,24.7559006 C56.1292797,19.812255 60.2665184,16 65.274982,16 C70.1561688,16 74.2598157,19.6793785 74.8470164,24.4724676 C77.598003,24.7355718 79.7567806,27.0596349 79.7567806,29.8783903 C79.7567806,32.8727435 77.3204594,35.3090648 74.3261062,35.3090648 Z" id="Cloud" fill="#FFFFFF" fill-rule="nonzero" opacity="0.900000036" mask="url(#mask-2)"></path>
+                    <g id="Group-14" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(18.546926, 22.500000)">
+                            <polyline id="Fill-380" fill="#4B6588" points="59.0009219 16.59375 29.5009219 59 41.3009219 16.59375 59.0009219 16.59375"></polyline>
+                            <polyline id="Fill-381" fill="#CCDEE8" points="29.5009219 59 0.000921875 16.59375 17.7009219 16.59375 29.5009219 59"></polyline>
+                            <polyline id="Fill-382" fill="#7DA0BA" points="59.0009219 16.59375 41.3009219 16.59375 33.4336406 0 45.2336406 0 59.0009219 16.59375"></polyline>
+                            <polyline id="Fill-383" fill="#D4E7F0" points="25.5672813 0 17.7009219 16.59375 0.000921875 16.59375 13.7672813 0 25.5672813 0"></polyline>
+                            <polyline id="Fill-384" fill="#9FC1D4" points="41.3009219 16.59375 17.7009219 16.59375 25.5672812 0 33.4336406 0 41.3009219 16.59375"></polyline>
+                            <polyline id="Fill-385" fill="#7799B1" points="41.3009219 16.59375 29.5009219 59 17.7009219 16.59375 41.3009219 16.59375"></polyline>
+                            <path d="M20.2821719,15.671875 C19.2653438,15.671875 18.4384219,14.8449531 18.4384219,13.828125 C18.4384219,13.31925 18.0254219,12.90625 17.5165469,12.90625 C17.0076719,12.90625 16.5946719,13.31925 16.5946719,13.828125 C16.5946719,14.8449531 15.76775,15.671875 14.7509219,15.671875 C14.2420469,15.671875 13.8290469,16.084875 13.8290469,16.59375 C13.8290469,17.102625 14.2420469,17.515625 14.7509219,17.515625 C15.76775,17.515625 16.5946719,18.3425469 16.5946719,19.359375 C16.5946719,19.86825 17.0076719,20.28125 17.5165469,20.28125 C18.0254219,20.28125 18.4384219,19.86825 18.4384219,19.359375 C18.4384219,18.3425469 19.2653438,17.515625 20.2821719,17.515625 C20.7910469,17.515625 21.2040469,17.102625 21.2040469,16.59375 C21.2040469,16.084875 20.7910469,15.671875 20.2821719,15.671875" id="Fill-386" fill="#FFFFFE"></path>
+                        </g>
+                    </g>
+                    <path d="M30.8449567,68.8182251 L21.9411905,68.8182251 C18.9409032,68.8182251 16.5,66.3773219 16.5,63.3770346 C16.5,60.3767473 18.9409032,57.9358441 21.9411905,57.9358441 C22.2165345,57.9358441 22.4933278,57.9607203 22.7904119,58.0131338 C23.8425155,54.4488721 27.0881955,52 30.8449567,52 C35.4818502,52 39.2540692,55.7722191 39.2540692,60.4091125 C39.2540692,65.046006 35.4818502,68.8182251 30.8449567,68.8182251 Z" id="Cloud" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

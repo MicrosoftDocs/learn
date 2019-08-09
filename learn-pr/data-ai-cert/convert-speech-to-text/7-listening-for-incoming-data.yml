@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.convert-speech-to-text.listening-for-incoming-data
-title: Listening for Incoming Translation Data
+title: Listen for incoming translation data
 metadata:
-  title: Listening for Incoming Translation Data
-  description: Learn how to listen for incoming translation data
+  title: Listen for incoming translation data
+  description: Learn how to listen for incoming translation data.
   ms.date: 01/11/2019
   author: gerryaobrien
   ms.author: gerryo

@@ -1,44 +1,25 @@
-You decide to deploy Azure AD and use conditional access policies that Azure require Multi-Factor Authentication when anyone accesses the Azure portal. You need to create a directory and get temporary licenses in place.
-
-[!include[](../../../includes/azure-lab-environment-not-available.md)]
-
-## Launch lab and sign in to the Azure portal
-
-1. Click the link above to launch the lab.
-
 > [!NOTE]
-> After launching the lab, the username and password you need to sign in with is located on the **Resources** tab next to the instructions.
+> This exercise is optional. You may complete the steps below in your own account. Charges may occur.
 
-![A screenshot showing Azure Portal Sandbox login items with selection boxes drawing attention to the Resources tab and the correct login option](../media/3-sandbox-login.png)
-
-Make a note of the number at the end of the username, as shown below. You will need that number later in this exercise.
-
-![A screenshot showing Azure Portal Sandbox Lab Resources with selection box drawing attention to the number at the end of the user name](../media/3-user-number.png)
-
-If at any time during this lab when you want to start over, you can exit the Lab Sandbox and create a fresh one with the link above.
+You decide to deploy Azure AD and use conditional access policies that Azure require Multi-Factor Authentication when anyone accesses the Azure portal. You need to create a directory and get temporary licenses in place.
 
 ## Create a directory
 
-You will create a new Active Directory for First Up Consultants in the Sandbox Portal, where you can test without fear of impacting production users. If you'd prefer doing this exercise on your own Azure account and subscription, log into the [Azure portal](https://portal.azure.com?azure-portal=true) now. Be advised that doing so may impact your existing account and subscription billing. Choose this option only if you are certain of the implications. We recommend using the Lab Sandbox environment.
+You will create a new Active Directory for First Up Consultants in the Sandbox Portal, where you can test without fear of impacting production users. 
+
+1. log into the [Azure portal](https://portal.azure.com?azure-portal=true).
 
 1. In the left navigation pane, click **Create a resource** > **Identity** > **Azure Active Directory**.
 
 1. In the **Create directory** blade, provide the following values for the **Organization name** and **Initial domain name**:
 
    1. Organization Name: `First Up Consultants`.
-   2. Initial Domain Name: `firstupconsultants<XXXXXXX>` where <XXXXXXX> is the number you previously made a note of that appears after the username, as shown in the screenshot above.
+   2. Initial Domain Name: `firstupconsultants<XXXXXXX>` where XXXXXXX is a word or number you add to give the domain a unique name.
+   3. Tap the **Create** button.
 
 1. Wait for the directory to be created. Make a note of the full domain name, as shown below. Click the link to switch to the new directory.
 
 ![A screenshot showing Create Active Directory with selection boxes drawing attention to the domain name and the location of the link to click](../media/3-create-directory.png)
-
-## Get trial licenses
-
-To use features like conditional access and Multi-Factor Authentication, you will need at least a trial license. The following steps walk you through how to enable a trial license:
-
-1. In the Azure AD **Overview** pane, click the **Start a free trial** link.
-
-1. Under the item **Azure AD Premium P2**, click **Free trial**, and then click **Activate**.
 
 ## Create a test user
 

@@ -1,8 +1,10 @@
 Once you've replicated your data in multiple regions, you can take advantage of the automated failover solutions Azure Cosmos DB provides. Automated failover is a feature that comes into play when there's a disaster or other event that takes one of your read or write regions offline, and it redirects requests from the offline region to the next most prioritized region. 
 
-For your online clothing site, which you just replicated into West US 2, East US, and Japan East, you can prioritize that if the East US goes offline, you can redirect reads to West US 2 instead of Japan East, to limit latency.
+If you enable multi-region writes when creating the Azure Cosmos DB account, every region is both read and write. So if a regional failure happens the SDK will redirect to the next closest region and this region supports both read and write requests. So the concept of automatic and manual failover is applicable to single-region write account only. 
 
-In this unit you'll learn about how failover works and set the priority for the regions in which your company's data has been replicated.
+For your online clothing site, which you just replicated into West US 2, East US, and Japan East. Assuming it's a single-write region, you can prioritize that if the East US goes offline, you can redirect reads to West US 2 instead of Japan East, to limit latency.
+
+In this unit you'll learn about how failover works and see how you'd set the priority for the regions in which your company's data has been replicated. 
 
 ## Failover basics
 
@@ -25,6 +27,8 @@ Once the affected region recovers from the outage, all the affected Cosmos DB ac
 Now let's modify the read region for your database.
 
 ## Set read region priorities
+
+ The following steps apply when you have a single-region write Cosmos DB account. If you enabled multi-region writes when you created your Cosmos DB account, you can't complete the following steps.
 
 1. In the Azure portal, on the **Replicate data globally** screen, click **Automatic Failover**. Automatic failover is only enabled if the database has already been replicated to more than one region.
 2. On the **Automatic Failover** screen, change **Enable Automatic Failover** to **ON**.

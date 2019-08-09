@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.azure-iot-strategy-and-solutions.5-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: .
+  ms.date: 01/31/2019
+  author: msmkitris1
+  ms.author: mkitris
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-Knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which common IoT challenges do customers often face that Azure IoT can help address? "
+    choices:
+    - content: "Cost, complexity, and security"
+      isCorrect: true
+      explanation: "Correct. Azure IoT has a comprehensive set of solutions that help customers reduce costs, simplify complexity, and mitigate security concerns."
+    - content: "Complexity, security, and flexibility"
+      isCorrect: false
+      explanation: "Incorrect. While Azure IoT does offer flexibility across hybrid and cloud environments, this is not one of the common business challenges that customers face."
+    - content: "Cost and security"
+      isCorrect: false
+      explanation: "Incorrect. Cost and security are certainly challenges, but there is a better answer."
+    - content: "Cost and complexity"
+      isCorrect: false
+      explanation: "Incorrect. Cost and complexity are certainly challenges, but there is a better answer."
+  - content: "Which of the following best describes how IoT works?"
+    choices:
+    - content: "A microcontroller unit (MCU) embedded in a connected device, either alongside or in place of existing MCU(s), enhances security, productivity, and opportunity for product manufacturers."
+      isCorrect: false
+      explanation: "Incorrect. The Azure Sphere is a microcontroller unit embedded in a connected device, either alongside or in place of existing MCU(s), to enhance security, productivity, and opportunity for product manufacturers."
+    - content: "Remote monitoring helps maintain the health of your solution by tracking events such as device creation, device failures, and device connections."
+      isCorrect: false
+      explanation: "Incorrect. While IoT Hub is a managed service that allows you to monitor the health of your solution, there is a better answer to this question."
+    - content: "Real-time data and alerts streamline logistics and decision-making."
+      isCorrect: false
+      explanation: "Incorrect. IoT enables real-time data and alerts to streamline logistics, but there is a better answer to this question."
+    - content: "A set of things, connected to the Internet, collects insights that then enable people or machines to take actions based on data."
+      isCorrect: true
+      explanation: "Correct. IoT is a network of Internet connected devices that communicate embedded sensor data to the cloud. Once data is collected, it becomes possible to analyze it to gain meaningful, actionable insights."
+  - content: "Which IoT subsystem consumes data, integrates with business processes and places the data in storage?"
+    choices:
+    - content: "IoT devices"
+      isCorrect: false
+      explanation: "Incorrect. IoT devices (and/or on-premise edge gateways) collect data and send it to the cloud."
+    - content: "Cloud gateway service"
+      isCorrect: false
+      explanation: "Incorrect. A cloud gateway service, or hub, to securely accepts data from devices and provides device management capabilities."
+    - content: "Stream processors"
+      isCorrect: true
+      explanation: "Correct. Stream processors consume that data from IoT devices, integrate with business processes, and place the data into storage."
+    - content: "User interface"
+      isCorrect: false
+      explanation: "Incorrect. A user interface to visualizes telemetry data and facilitates device management."
+  - content: "What are the most common IoT solutions used across industries?"
+    choices:
+    - content: "IoT devices, stream processors, cloud gateways, storage, UI reporting and tools, business integration"
+      isCorrect: false
+      explanation: "Incorrect.  IoT devices, stream processors, cloud gateways, storage, UI reporting and tools, business integration are IoT subsystems, not solutions."
+    - content: "Remote monitoring, predictive maintenance, facilities management, connected manufacturing, and fleet management"
+      isCorrect: true
+      explanation: "Correct. Remote monitoring, predictive maintenance, facilities management, connected manufacturing, and fleet management are the most common IoT solutions used across various industries today."
+    - content: "Empower employees, engage customers, optimize operations, transform products"
+      isCorrect: false
+      explanation: "Incorrect. Empower employees, engage customers, optimize operations, and transform products are the digital transformation pillars that may be enabled by IoT, but they are not IoT solutions."
+    - content: "Cloud migration, application modernization, microservices, serverless computing, DevOps"
+      isCorrect: false
+      explanation: "Incorrect. These are components of application migration and modernization, not IoT solutions."

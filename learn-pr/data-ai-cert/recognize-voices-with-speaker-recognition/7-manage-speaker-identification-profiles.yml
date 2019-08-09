@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.recognize-voices-with-speaker-recognition.manage-speaker-identification-profiles
-title: Manage Speaker Identification Profiles
+title: Manage speaker identification profiles
 metadata:
-  title: Manage Speaker Identification Profiles
-  description: Gain an understanding of how to manage speaker identification profiles on your subscription
+  title: Manage speaker identification profiles
+  description: Learn how to manage the speaker identification profiles in your subscription.
   ms.date: 01/11/2019
   author: gerryaobrien
   ms.author: gerryo

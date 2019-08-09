@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.design-for-security
 metadata:
-  title: Design for security in Azure - Learn
+  title: Design for security in Azure
   description: Learn how to incorporate security into your architecture design, and discover the tools that Azure provides to help you create a secure environment through all the layers of your architecture.
   ms.date: 09/24/2018
   author: cbellee

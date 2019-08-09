@@ -1,73 +1,86 @@
-We want our bot to understand how to:
+Our next step for the PictureBotLUIS app is creating intents that map to user requests. We want our picture-management bot to understand how to:
 
-- Search/find pictures
-- Share pictures on social media
-- Order prints of pictures
-- Greet the user (although this can also be done other ways, as we'll see later)
+- Find pictures.
+- Share pictures on social media.
+- Order prints of pictures.
+- Greet the user.
 
-Let’s create intents for the user requesting each of these.
+Let’s create intents for each of these items.
 
 > [!NOTE]
-> There is one intent already present called "None". Random utterances that don’t map to any of your intents may be mapped to this intent.
+> There is one intent already present named **None**. Random utterances that don’t map to any of your intents can be mapped to this intent.
 
-1. Click **Create new intent**.
-1. Name the first intent "Greeting" and click **Done**.
+1. Select **+ Create new intent**.
+1. Name the first intent **Greeting**, and then select **Done**.
 
-    Because our scenario for this application is to integrate with a Bot, provide examples of things that users might say when greeting the Bot initially
+    Because our scenario for this application is to integrate with a bot, you'll provide examples of utterances that users might say when greeting the bot initially.
 
-1. Type a greeting, such as "hello" and press Enter
-1. Repeat the previous step to create values for each of the following, "hi", "hola", "yo", "hey", "greetings"
+1. Enter a greeting utterance, such as **hello**, and press Enter.
+1. Repeat the previous step to create values for each of the following utterances: **hi**, **hola**, **yo**, **hey**, **greetings**.
 
-    > [!NOTE]
-    > You should always provide at least five examples.
-    
-1. Your utterances should reflect similar to this
+    > [!TIP]
+    > You should always provide at least five example utterances for each intent.
 
-    ![Utterances added for the Greeting Intent](../media/4-exercise-add-intents-utterances.png)
+1. Your utterances for the **Greeting** intent should look similar to the following image:
+
+    ![Utterances for the Greeting intent](../media/4-exercise-add-intents-utterances.png)
+
+1. Create another intent named **SearchPics**.
+1. Add the following values as utterances for the **SearchPics** intent:
+
+    - **find outdoor pics**
+    - **are there pictures of a train?**
+    - **find pictures of food**
+    - **search for photos of boys playing**
+    - **give me colorful pictures**
+    - **show me beach pics**
+    - **I want to find dog photos**
+    - **find pictures of german shepherds**
+    - **search for pictures of men indoors**
+    - **show me pictures of men wearing glasses**
+    - **I want to see pics of smiling people**
+    - **show me baby pics**
 
 ## Create entities
 
-Next, let's create the entities we need. In this case, we'll create an entity that can capture a specific ask by a user, for example, when the user requests to search the pictures, they may specify what they are looking for.
+Next, let's create the entities we need to capture specific requests from users. For example, when users want to search the pictures, they might specify what they're looking for.
 
-1. Click on **Entities** in the left-hand column and then click **Create new entity**.
-1. Give it an entity name "facet" and entity type **Simple**. Then click **Done**.
+1. In the left column, select **Entities**, and then select **Create new entity**.
 
-    ![Adding an entity called facet, of type Simple](../media/4-exercise-add-intents-entity.png)
+1. Name the entity **facet** (to represent one way to identify an image).
 
-1. Create a new Intent called "SearchPics". Use the same steps as above.
-1. Add the following values as utterances for the SearchPics intent:
-    - Find outdoor pics
-    - Are there pictures of a train?
-    - Find pictures of food.
-    - Search for photos of boys playing
-    - Give me pics of business women
-    - Show me beach pics
-    - I want to find dog photos
-    - Search for pictures of men indoors
-    - Show me pictures of men wearing glasses
-    - I want to see pics of sad boys
-    - Show me happy baby pics
+1. Select **Simple** for **Entity type**. Then select **Done**.
 
-## Selecting the facet entity
+    ![Adding an entity named facet, of type Simple](../media/4-exercise-add-intents-entity.png)
 
-Once we have some utterances, we have to teach LUIS how to pick out the search topic as the "facet" entity. Whatever the "facet" entity picks up is what will be searched.
+## Map search subjects to the facet entity
 
-1. Hover and click the key word, or click consecutive words to select a group of words, and then select the "facet" entity.
+Next, we have to teach LUIS how to pick out the search subject as the **facet** entity. Whatever the **facet** entity picks up is what the app will search for.
 
-> [!TIP]
-> Using multiple words, such as business women is a bit tricky.
->
-> Click the first word, move the cursor to the second word and click again, then move the cursor into the facet selection pop-up, without going out of the borders, or you will lose the selection.
+1. Switch back to the Intents and select the **SearchPics** intent.
 
-1. Your progress should look similar to this.
+1. Hover over the utterance and click the keyword that specifies the _search subject_, and then select the **facet** entity. For example, if the utterance is "show me baby pics", the subject would be "baby".
 
-    ![Keywords selected as facets, shown by the term facet in square brackets](../media/4-exercise-add-intents-facet-entity.png)
+    ![Screenshot showing utterance selection to tie it to an entity](../media/4-select-facet-on-utterance.png)
 
-1. Add two more Intents with related utterances according to this list:
-    - SharePic - "Share this pic", "Can you tweet that?", "post to Twitter"
-    - OrderPic - "Print this picture", "I would like to order prints", "Can I get an 8x10 of that one?", "Order wallets"
+   > [!TIP]
+   > Using multiword keywords, such as "german shepherds", is a bit tricky.
+   >
+   > Click the first word in the keyword, move the cursor to the second word, and then click again. Then move the cursor into the entity selection pop-up list. Be sure not to move the cursor outside the borders, or you'll lose the selection.
 
-1. To finish out the Intents and entities exercise, add some utterances to the existing None intent, that don't match the context of this LUIS app. Examples are:
-    - "I'm hungry for pizza"
-    - "Search videos"
-    - "Show me how to drive a car"
+1. Your progress should look similar to the following image:
+
+    ![Keywords selected as facet entities, shown by the term "facet" selected in the image](../media/4-exercise-add-intents-facet-entity.png)
+
+1. Add two more intents with related utterances, as shown in the following table:
+
+    | Intent name | Utterances |
+    |---------|---------|
+    | **SharePic** | **Share this pic**, **Can you tweet that?**, **Post to Twitter** |
+    | **OrderPic** | **Print this picture**, **I would like to order prints**, **Can I get an 8x10 of that one?**, **Order wallets** |
+
+1. To finish out the exercise, add some utterances to the existing **None** intent. Make sure these utterances don't match the context of this LUIS app. Some examples are:
+
+    - **I'm hungry for pizza**
+    - **Search videos**
+    - **Show me how to drive a car**

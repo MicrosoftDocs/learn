@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.introduction-to-azure-areas-and-solutions.6-summary-and-resources
+title: Summary and resources
+metadata:
+  title: Summary and resources
+  description: .
+  ms.date: 01/31/2019
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary-and-resources.md)]

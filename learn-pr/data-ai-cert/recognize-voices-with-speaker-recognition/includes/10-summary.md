@@ -1,18 +1,16 @@
 
-In this module, you've learned that Speaker Recognition is composed of two main aspects: verification and identification.
+In this module, you've learned that speaker recognition is composed of two main aspects: verification and identification.
 
-Speaker Verification APIs can automatically verify and authenticate users using their voice or speech.  Voice has unique characteristics that can be used to identify a person, just like a fingerprint. Using voice as a signal for access control and authentication scenarios has emerged as a new innovative tool – essentially offering better security that simplifies the authentication experience for customers.
+The Speaker Verification API can automatically verify and authenticate users by using their voice or speech. Each voice has unique characteristics that can be used to identify a person, just like a fingerprint. Using voice for access control not only offers better security, but also simplifies the authentication experience for customers.
 
-Speaker Identification APIs can automatically identify the person speaking in an audio file, given a group of prospective speakers. The input audio is paired against the provided group of speakers, and in the case that there's a match found, the speaker identity is returned. All speakers should go through an enrollment process first to get their voice registered to the system, and have a voice print created.
+Given a group of prospective speakers, the Speaker Identification API can automatically identify the person speaking in an audio file. The API compares the input audio to the provided group of speakers, and if it finds a match, it returns the speaker's identity. All the speakers you want to compare should go through an enrollment process first to get their voices registered to the system and have voice prints created.
 
 ## Cleanup
 
-To avoid any unexpected costs in your Azure account, delete the **mslearn-speakerapi** resource group. This will remove all of the resources we created in this module. Here's the steps you need to do.
+To avoid any unexpected costs in your Azure account, delete the **mslearn-speakerapi** resource group. Deleting this group will remove all the resources we created in this module. Here are the steps you need to take:
 
-1. Find the **mslearn-speakerapi** resource group. Select **Resource groups** in the Azure sidebar to quickly locate it.
-
-1. Select the resource group and either right-click on the row, or use the "..." button on the far-right side of the row to open the context menu.
-
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. In the left pane, select **Resource groups**, and then find the **mslearn-speakerapi** resource group.
+1. Select the resource group, and either right-click the row or use the **ellipsis** (...) button to open the context menu.
 1. Select **Delete resource group**.
-
-1. Type the name of the resource group and click **Delete**. Azure will de-provision all of the resources for you.
+1. Enter the name of the **mslearn-speakerapi** resource group, and then select **Delete**. Azure will remove all the resources for you.

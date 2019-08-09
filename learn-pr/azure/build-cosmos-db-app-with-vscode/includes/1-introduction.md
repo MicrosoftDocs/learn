@@ -16,5 +16,5 @@ In this module, you will:
 ## Prerequisites
 
 - Must have [Visual Studio Code](https://code.visualstudio.com/) installed
-- Must have [.NET Core 2.1](https://www.microsoft.com/net/download) installed
+- Must have [.NET Core 2.1 SDK or later versions](https://www.microsoft.com/net/download) installed
 - Must have the [Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account) extension installed in Visual Studio Code

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.exercise-monitor-azure-batch-job-in-cli
+metadata:
+  title: Exercise - Monitor your Azure Batch job in the CLI
+  description: Exercise - Monitor your Azure Batch job in the CLI
+  ms.date: 05/06/2019
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Exercise - Monitor your Azure Batch job in the CLI
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-exercise-monitor-azure-batch-job-in-cli.md)]

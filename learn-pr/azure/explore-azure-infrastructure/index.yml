@@ -3,8 +3,8 @@ uid: learn.explore-azure-infrastructure
 title: Core Cloud Services - Azure architecture and service guarantees
 summary: Azure provides a global network of secure datacenters you can deploy your services into. Learn about the physical architecture of Azure, how redundancy is provided, and what sort of service guarantees Microsoft provides.
 metadata:
-  title: Core Cloud Services - Explore Azure architecture and service guarantees - Learn
-  description: Azure provides a global secure network of physical datacenters you can deploy your services into. Learn about the physical architecture of Azure, how redundancy is provided, and what sort of service guarantees Microsoft provides - Learn.
+  title: Core Cloud Services - Explore Azure architecture and service guarantees
+  description: Azure provides a global secure network of physical datacenters you can deploy your services into. Learn about the physical architecture of Azure, how redundancy is provided, and what sort of service guarantees Microsoft provides.
   ms.date: 12/29/2018
   author: markjulmar
   ms.author: smmark
@@ -17,6 +17,7 @@ abstract: |
     - Understand the service level agreements provided by Azure
     - Learn how to provide your own service level agreements for your apps
 prerequisites: None
+ratingEnabled: true
 iconUrl: /learn/achievements/explore-azure-infrastructure.svg
 levels:
 - beginner

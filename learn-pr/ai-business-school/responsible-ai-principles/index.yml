@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn-wwl.responsible-ai-guiding-principles
+metadata:
+  title: Identify guiding principles for responsible AI in your business
+  description: At Microsoft, we’ve recognized six principles that we believe should guide AI development and use fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability. For us, these principles are the cornerstone of a responsible and trustworthy approach to AI, especially as intelligent technology becomes more prevalent in the products and services we use every day. We recognize that every individual, company, and region will have their own beliefs and standards that should be reflected in their AI journey. We want to share our perspective as you consider developing your own guiding principles.
+  ms.date: 04/26/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: barlan
+title: Identify guiding principles for responsible AI in your business
+summary: At Microsoft, we’ve recognized six principles that we believe should guide AI development and use fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability. For us, these principles are the cornerstone of a responsible and trustworthy approach to AI, especially as intelligent technology becomes more prevalent in the products and services we use every day. We recognize that every individual, company, and region will have their own beliefs and standards that should be reflected in their AI journey. We want to share our perspective as you consider developing your own guiding principles.
+abstract: | 
+  In this module, you will:
+  - Describe the importance of engaging with AI in a responsible manner.
+  - Identify six guiding principles to develop and use AI responsibly.
+  - Determine the elements of an AI governance system.
+prerequisites: None
+iconUrl: /learn/achievements/responsible-ai-principles.svg
+levels: 
+- intermediate
+roles: 
+- functional-consultant
+- business-user
+products: 
+- azure
+- dynamics
+- m365
+units: 
+- learn-wwl.responsible-ai-guiding-principles.introduction
+- learn-wwl.responsible-ai-guiding-principles.implications-responsible-ai-leadership
+- learn-wwl.responsible-ai-guiding-principles.implications-responsible-ai-practical
+- learn-wwl.responsible-ai-guiding-principles.guiding-principles
+- learn-wwl.responsible-ai-guiding-principles.governance-external-engagement
+- learn-wwl.responsible-ai-guiding-principles.model-ai-governance
+- learn-wwl.responsible-ai-guiding-principles.knowledge-check
+- learn-wwl.responsible-ai-guiding-principles.summary-and-resources
+badge: 
+  uid: learn-wwl.responsible-ai-guiding-principles.badge #add the uid for your achievement badge.

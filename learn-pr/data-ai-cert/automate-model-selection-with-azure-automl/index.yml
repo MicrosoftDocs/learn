@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.data-ai.automate-model-selection-with-azure-automl
+metadata:
+  title: Automate the ML model selection with Azure Machine Learning service
+  description: Automate the ML model selection with Azure Machine Learning service
+  ms.date: 03/18/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: smmark
+title: Automate the ML model selection with Azure Machine Learning service
+summary: Automate the ML model selection with Azure Machine Learning service
+abstract: | 
+  In this module, you will:
+  - Learn how to streamline machine learning by using Azure Machine Learning pipelines
+  - Automate model and hyperparameter selection by using Azure Machine Learning pipelines
+  - Create a Python script that uses the Azure Machine Learning service's AutoML to recommend a model
+  - Test the recommended model from your Python script
+prerequisites: None
+iconUrl: /learn/achievements/data-ai/automate-model-selection-with-azure-automl-badge.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure
+- azure-machine-learning-service
+units:
+- learn.data-ai.automate-model-selection-with-azure-automl.introduction
+- learn.data-ai.automate-model-selection-with-azure-automl.understand-ml-pipeline
+- learn.data-ai.automate-model-selection-with-azure-automl.what-is-automl
+- learn.data-ai.automate-model-selection-with-azure-automl.automl-recommend-model
+- learn.data-ai.automate-model-selection-with-azure-automl.summary
+badge:
+  uid: learn.data-ai.automate-model-selection-with-azure-automl.badge

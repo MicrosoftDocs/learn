@@ -2,8 +2,8 @@
 uid: learn.data-ai.import-data-into-asdw-with-polybase.summary
 title: Summary
 metadata:
-  title: Summary - Learn
-  description: Summary - Learn
+  title: Summary
+  description: Summary
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill
@@ -17,26 +17,26 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "Mike is the data engineer for Contoso and has a Data Warehouse created with a database named Crystal. Within the database is a table named DimSuppliers. The suppliers' information is stored in a single text file named Suppliers.txt and is 1200MB in size. It is currently stored in a container with an Azure Blob store. Your Azure SQL Data warehouse is configured as Gen 2 DW30000c. How can Mike maximize the performance of the data load? "
+  - content: "Mike is the data engineer for Contoso and has a data warehouse created with a database named Crystal. Within the database is a table named DimSuppliers. The suppliers' information is stored in a single text file named Suppliers.txt and is 1,200 MB in size. It's currently stored in a container with an Azure blob store. Your Azure SQL Data Warehouse is configured as Gen 2 DW30000c. How can Mike maximize the performance of the data load?"
     choices: 
     - content: "Increase the Gen 2 DWU units."
       isCorrect: false
-      explanation: "That is not the correct answer. Gen 2 DW30000c is the highest limit and cannot be scaled beyond this."
-    - content: "Split the text file into 60 files of 20MB each."
+      explanation: "That's not the correct answer. Gen 2 DW30000c is the highest limit and can't be scaled beyond this size."
+    - content: "Split the text file into 60 files of 20 MB each."
       isCorrect: true
-      explanation: "That is the correct answer. Separating the single text file of Suppliers.txt into 60 files can take advantage of the fact that Gen 2 DW30000c uses 60 compute nodes and the parallelism of the data load can be evenly spread for quicker performance."
+      explanation: "That's the correct answer. Separating the single text file of Suppliers.txt into 60 files can take advantage of the fact that Gen 2 DW30000c uses 60 compute nodes and the parallelism of the data load can be evenly spread for quicker performance."
     - content: "Use Gen 1 DW6000."
       isCorrect: false
-      explanation: "That is not the correct answer. Gen 1 compute nodes has less power than Gen 2 compute nodes and will not improve the performance."
+      explanation: "That's not the correct answer. Gen 1 compute nodes have less power than Gen 2 compute nodes and won't improve the performance."
 
-  - content: "Mike is the data engineer for Contoso and has a Data Warehouse created with a database name Crystal. He has created a master key, followed by a database scoped credential. What should he create next?"
+  - content: "Mike is the data engineer for Contoso and has a data warehouse created with a database named Crystal. Mike created a master key, followed by a database-scoped credential. What should he create next?"
     choices: 
     - content: "An external table."
       isCorrect: false
-      explanation: "That is not the correct answer. Mike must have an external data source before he creates an external table."
+      explanation: "That's not the correct answer. Mike must have an external data source before he creates an external table."
     - content: "An external data source."
       isCorrect: true
-      explanation: "That is the correct answer. Once the master key and the database scoped credential is created, Mike should create an external data source that contains a url to the Blob location and the name of the database scoped credential."
+      explanation: "That's the correct answer. After the master key and the database-scoped credential are created, Mike should create an external data source that contains a URL to the blob location and the name of the database-scoped credential."
     - content: "A physical table."
       isCorrect: false
-      explanation: "That is not the correct answer.  Mike must have an external data source and an external table before he can create a physical table."
+      explanation: "That's not the correct answer. Mike must have an external data source and an external table before he can create a physical table."

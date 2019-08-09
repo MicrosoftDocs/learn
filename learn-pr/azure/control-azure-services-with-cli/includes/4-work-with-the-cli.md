@@ -6,10 +6,24 @@ The Azure CLI lets you control nearly every aspect of every Azure resource. You 
 
 Commands in the CLI are structured in _groups_ and _subgroups_. Each group represents a service provided by Azure, and the subgroups divide commands for these services into logical groupings. For example, the `storage` group contains subgroups including **account**, **blob**, **storage**, and **queue**.
 
-So, how do you find the particular commands you need? One way is to use `az find`. For example, if you want to find commands that might help you manage a storage blob, you can use the following find command:
+So, how do you find the particular commands you need? One way is to use `az find`, the AI robot that uses the Azure documentation to tell you more about commands, the CLI and more. 
+
+Example - find the most popular commands related to the word **blob**.
 
 ```azurecli
-az find -q blob
+az find blob
+```
+
+Example - Show me the most popular commands for an Azure CLI command group, such as `az vm`.
+
+```azurecli
+az find 'az vm'
+```
+
+Example - Show me the most popular parameters and subcommands for an Azure CLI command.
+
+```azurecli
+az find 'az vm create'
 ```
 
 If you already know the name of the command you want, the `--help` argument for that command will get you more detailed information on the command, and for a command group, a list of the available subcommands. So, with our storage example, here's how you can get a list of the subgroups and commands for managing blob storage:
