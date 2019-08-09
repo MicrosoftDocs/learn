@@ -1,0 +1,33 @@
+### YamlMime:Module
+uid: learn.iot.iot-test
+metadata:
+  title: IoT Test
+  description: TBD
+  ms.date: 09/30/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  #ms.learn-contact: smmark
+  ms.prod: learning-azure
+title: IoT Test
+summary: TBD
+abstract: |
+  In this module, you will:
+  - TBD
+prerequisites: |
+  - TBD
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- solution-architect
+products:
+- azure
+- azure-clis
+- azure-iot-central
+units:
+- learn.iot.iot-test.introduction
+badge:
+  uid: learn.iot.iot-test.badge
