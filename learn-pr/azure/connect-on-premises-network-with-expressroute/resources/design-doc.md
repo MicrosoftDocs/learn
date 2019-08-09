@@ -54,7 +54,7 @@ Identify the subtasks of *Connect your on-premises network to the Microsoft glob
          - Connecting on-premises networks to Azure
          - Connecting to SaaS offerings in Azure, such as Office 365
          - What else is ExpressRoute beneficial for?
-        - Call out that ExpressRoute needs to be implemented through a Provider. See [Azure Expressroute providers and locations](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-locations))
+        - Call out that ExpressRoute needs to be implemented through a Provider. See [Azure Expressroute providers and locations](https://docs.microsoft.com/azure/expressroute/expressroute-locations))
     - What features and benefits does Azure ExpressRoute provide?  
         - Layer 3 connectivity
         - Connectivity to Microsoft cloud services in all regions
