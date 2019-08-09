@@ -1,17 +1,8 @@
-<!-- TODO: Introduction text that explains the need to create a ClaimsPrincipalFactory -->
+In this unit, you'll create a new user with administrative privileges. A demonstration of creating and storing user claims is provided. An authorization policy is also defined to determine whether an authenticated user has elevated privileges in the UI.
 
-## Grant administrative rights to a user
+## Secure the products catalog
 
-1. In the `ConfigureServices` method of *Startup.cs*, replace the `// Add call to AddAuthorization` comment with the following code:
-
-```csharp
-services.AddAuthorization(options =>
-    options.AddPolicy("Admin", policy =>
-        policy.RequireAuthenticatedUser()
-            .RequireClaim("IsAdmin", bool.TrueString)));
-```
-
-The preceding code defines an authorization policy named `Admin`. The policy requires that the user is authenticated and has an `IsAdmin` claim set to `True`.
+The products catalog page should be visible only to authenticated users. However, only administrators are allowed to edit, create, and delete products.
 
 1. In *Pages/Products/Index.cshtml.cs*, apply the following changes:
     1. Replace the `// Add [Authorize] attribute` comment with the following attribute:
@@ -20,20 +11,7 @@ The preceding code defines an authorization policy named `Admin`. The policy req
         [Authorize]
         ```
 
-    1. Replace the `// Add IsAdmin property` comment with the following property:
-
-        ```csharp
-        public bool IsAdmin => HttpContext.User.HasClaim("IsAdmin", bool.TrueString);
-        ```
-
-    1. Replace the `// Add IsAdmin check` comment with the following code:
-
-        ```csharp
-        if(!IsAdmin)
-        {
-            return Forbid();
-        }
-        ```
+        The preceding code causes the page to require authentication. Anonymous users won't be allowed to view this page and will be redirected to the login page.
 
     1. Replace the `// Add using Microsoft.AspNetCore.Authorization;` comment with the following code:
 
@@ -43,11 +21,48 @@ The preceding code defines an authorization policy named `Admin`. The policy req
 
         The preceding resolves the `[Authorize]` attribute in the previous step.
 
+    1. Replace the `// Add IsAdmin property` comment with the following property:
+
+        ```csharp
+        public bool IsAdmin =>
+            HttpContext.User.HasClaim("IsAdmin", bool.TrueString);
+        ```
+
+        The preceding code determines whether the authenticated user has an `IsAdmin` claim with a value of `True`. The result of this evaluation is stored in a read-only property named `IsAdmin`.
+
+    1. Replace the `// Add IsAdmin check` comment in the `OnDelete` method with the following code:
+
+        ```csharp
+        if (!IsAdmin)
+        {
+            return Forbid();
+        }
+        ```
+
+        When an authenticated employee attempts to delete a product via the UI or by manually sending an HTTP DELETE request to this page, an HTTP 403 status code is returned.
+
 1. In *Pages/Products/Index.cshtml*, update the **Edit**, **Delete**, and **Add Product** links with the highlighted code:
 
     [!code-cshtml[](../code/Pages/Products/Index.cshtml?name=snippet_ModelIsAdmin&highlight=2-3,6)]
 
     [!code-cshtml[](../code/Pages/Products/Index.cshtml?name=snippet_AddProductLink&highlight=1-2,4)]
+
+    The preceding changes cause the links to be rendered only when the authenticated user is an administrator.
+
+## Register and apply the authorization policy
+
+The **Create Product** and **Edit Product** pages should be accessible only to administrators. To encapsulate the authorization criteria for such pages, an `Admin` policy will be created.
+
+1. In the `ConfigureServices` method of *Startup.cs*, replace the `// Add call to AddAuthorization` comment with the following code:
+
+    ```csharp
+    services.AddAuthorization(options =>
+        options.AddPolicy("Admin", policy =>
+            policy.RequireAuthenticatedUser()
+                .RequireClaim("IsAdmin", bool.TrueString)));
+    ```
+
+    The preceding code defines an authorization policy named `Admin`. The policy requires that the user is authenticated and has an `IsAdmin` claim set to `True`.
 
 1. In *Pages/Products/**Create**.cshtml.cs*, apply the following changes:
     1. Replace the `// Add [Authorize(Policy = "Admin")] attribute` comment with the following attribute:
@@ -56,13 +71,17 @@ The preceding code defines an authorization policy named `Admin`. The policy req
         [Authorize(Policy = "Admin")]
         ```
 
+        The preceding code enforces that the `Admin` policy requirements are satisfied. Anonymous users will be redirected to the login page. Authenticated users who don't satisfy the policy requirements are presented an **Access denied** message.
+
     1. Replace the `// Add using Microsoft.AspNetCore.Authorization;` comment with the following code:
 
         ```csharp
         using Microsoft.AspNetCore.Authorization;
         ```
 
-1. In *Pages/Products/**Edit**.cshtml.cs*, apply the following changes:
+        The preceding resolves the `[Authorize(Policy = "Admin")]` attribute in the previous step.
+
+1. In *Pages/Products/**Edit**.cshtml.cs*, apply the same changes as in the previous step:
     1. Replace the `// Add [Authorize(Policy = "Admin")] attribute` comment with the following attribute:
 
         ```csharp
@@ -75,69 +94,34 @@ The preceding code defines an authorization policy named `Admin`. The policy req
         using Microsoft.AspNetCore.Authorization;
         ```
 
-1. Execute the following command to create an empty file named *Areas/Identity/ClaimsPrincipalFactory.cs*:
+## Modify the registration page
 
-    ```bash
-    touch ./Areas/Identity/ClaimsPrincipalFactory.cs
-    ```
+Modify the registration page to allow administrators to register using the following steps.
 
-1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)]
+1. In *Areas/Identity/Pages/Account/Register.cshtml.cs*, make the following changes:
+    1. Add the following property to the `InputModel` class:
 
-1. Populate *Areas/Identity/ClaimsPrincipalFactory.cs* with the following code:
+        [!code-csharp[](../code/Areas/Identity/Pages/Account/6-Register.cshtml.cs?name=snippet_AdminEnrollmentKey&highlight=3-5)]
 
-    ```csharp
-    using ContosoPets.Ui.Areas.Identity.Data;
-    using Microsoft.AspNetCore.Identity;
-    using Microsoft.Extensions.Options;
-    using System.Security.Claims;
-    using System.Threading.Tasks;
+    1. Apply the highlighted change to the `OnPostAsync` method:
 
-    namespace ContosoPets.Ui.Areas.Identity
-    {
-        public class ClaimsPrincipalFactory : UserClaimsPrincipalFactory<ContosoPetsUser>
-        {
-            public ClaimsPrincipalFactory(UserManager<ContosoPetsUser> userManager, IOptions<IdentityOptions> optionsAccessor) : base(userManager, optionsAccessor)
-            {
-            }
+        [!code-csharp[](../code/Areas/Identity/Pages/Account/6-Register.cshtml.cs?name=snippet_OnPostAsync&highlight=1-3,20-22)]
 
-            protected override async Task<ClaimsIdentity> GenerateClaimsAsync(ContosoPetsUser user)
-            {
-                var identity = await base.GenerateClaimsAsync(user);
-                identity.AddClaim(new Claim("IsAdmin", user.IsAdmin.ToString()));
-                return identity;
-            }
-        }
-    }
-    ```
+        In the preceding code:
 
-1. In the `Configure` method of *IdentityHostingStartup.cs*, make the following highlighted changes:
+        * The `[FromServices]` attribute provides an instance of `AdminRegistrationTokenService` from the IoC container.
+        * The `UserManager` class's `AddClaimAsync` method is invoked to save an `IsAdmin` claim in the `AspNetUserClaims` table.
 
-    [!code-csharp[](../code/Areas/Identity/IdentityHostingStartup-Configure.cs?name=snippet_ConfigureAddClaims&highlight=15)]
-
-    The preceding configures Identity to use `ClaimsPrincipalFactory` when generating the claims for the logged in user.
-
-1. Modify the registration page to allow administrators to register using the following steps:
-    1. In *Areas/Identity/Pages/Account/Register.cshtml.cs*, add the following property to the `InputModel` class:
+    1. Add the following code to the top of the file. It resolves the `AdminRegistrationTokenService` and `Claim` class references in the `OnPostAsync` method:
 
         ```csharp
-        [DataType(DataType.Password)]
-        [Display(Name = "Admin enrollment key")]
-        public long? AdminCreationKey { get; set; }
+        using ContosoPets.Ui.Services;
+        using System.Security.Claims;
         ```
 
-    1. In that same file, make the highlighted change to `OnPostAsync`:
+1. In *Areas/Identity/Pages/Account/Register.cshtml*, add the following markup:
 
-        [!code-csharp[](../code/Areas/Identity/Pages/Account/Register.cshtml.cs?highlight=7)]
-
-    1. In *Areas/Identity/Pages/Account/Register.cshtml*, add the following:
-
-        [!code-cshtml[](../code/Areas/Identity/Pages/Account/Register.cshtml?highlight=6-10)]
-
-    1. In *Areas/Identity/Data/ContosoUser.cs*, add the following property:
-
-        ```csharp
-        public bool IsAdmin { get; set; }
-        ```
+    [!code-cshtml[](../code/Areas/Identity/Pages/Account/6-Register.cshtml?highlight=6-10)]
 
 ## Test admin claim
 
@@ -145,9 +129,9 @@ The preceding code defines an authorization policy named `Admin`. The policy req
 
 1. [!INCLUDE[az webapp up command](../../includes/az-webapp-up-command.md)]
 
-1. Navigate to your app and login with an existing user, if required. Select **Products** from near the top. Note that your user is is not presented links to edit, delete, or create products.
+1. Navigate to your app and login with an existing user, if necessary. Select **Products** from near the top. The user isn't presented links to edit, delete, or create products.
 
-1. Attempt to navigate directly to the **Create Product** page by navigating to: `https://[web app name].azurewebsites.net/products/create`. Note that this use is forbidden from navigating to the page.
+1. Attempt to navigate directly to the **Create Product** page by navigating to: `https://[web app name].azurewebsites.net/Products/Create`. The user is forbidden from navigating to the page.
 
 1. Select **Logout**.
 
@@ -158,8 +142,49 @@ The preceding code defines an authorization policy named `Admin`. The policy req
     ```
 
     > [!NOTE]
-    > This administrator self-enrollment mechanism is for illustrative purposes only and should not be used in production environments.
+    > The administrator self-enrollment mechanism is for illustrative purposes only. The */api/Admin* endpoint for obtaining a token should be secured before using in a production environment.
 
 1. In the web app, register a new user. The token from the previous step should be provided in the **Admin enrollment key** text box.
 
-1. Once logged in with the new administrative user, note that the administrative user can view, edit, and create products.
+1. Once logged in with the new administrative user, the administrative user can view, edit, and create products.
+
+## Examine the AspNetUserClaims table
+
+Run the following command:
+
+::: zone pivot="pg"
+
+```bash
+# TODO - Verify this.
+db -c 'SELECT u.Email, c.ClaimType, c.ClaimValue FROM AspNetUserClaims AS c INNER JOIN AspNetUsers AS u ON c.UserId = u.Id'
+```
+
+A variation of the following output appears:
+
+```console
+TODO -- This is SQL, not PostgreSQL
+
+Email                     ClaimType  ClaimValue
+------------------------- ---------- ----------
+scott@contoso.com         IsAdmin    True
+```
+
+::: zone-end
+
+::: zone pivot="sql"
+
+```bash
+db -Q "SELECT u.Email, c.ClaimType, c.ClaimValue FROM dbo.AspNetUserClaims AS c INNER JOIN dbo.AspNetUsers AS u ON c.UserId = u.Id" -Y25 -y10
+```
+
+A variation of the following output appears:
+
+```console
+Email                     ClaimType  ClaimValue
+------------------------- ---------- ----------
+scott@contoso.com         IsAdmin    True
+```
+
+::: zone-end
+
+The `IsAdmin` claim is stored as a key-value pair in the `AspNetUserClaims` table. The `AspNetUserClaims` record is associated with the user record in the `AspNetUsers` table.

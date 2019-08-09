@@ -202,7 +202,7 @@ UI changes are also required to collect the additional user profile information.
 
     [!code-cshtml[](../code/Areas/Identity/Pages/Account/4-Register-FirstAndLastName.cshtml?range=1-19&highlight=5-14)]
 
-    With the preceding markup, **First Name** and **Last Name** text boxes are added to the user registration form.
+    With the preceding markup, **First name** and **Last name** text boxes are added to the user registration form.
 
 1. In *Areas/Identity/Pages/Account/Register.cshtml.cs*, add support for the name text boxes.
     1. Add the `FirstName` and `LastName` properties to the `InputModel` class:
@@ -326,4 +326,4 @@ Update *Pages/Shared/_LoginPartial.cshtml* to display the first and last name co
     > [!NOTE]
     > The link doesn't display correctly because there aren't yet any values for `FirstName` or `LastName` for this user.
 
-1. Enter valid values for **First Name** and **Last Name**. Select **Save**.
+1. Enter valid values for **First name** and **Last name**. Select **Save**.

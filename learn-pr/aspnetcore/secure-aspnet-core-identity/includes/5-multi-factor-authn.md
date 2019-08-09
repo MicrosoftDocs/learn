@@ -51,7 +51,7 @@ To avoid distracting from the focus on Identity, the boilerplate to support QR c
 
 1. [!INCLUDE[az webapp up command](../../includes/az-webapp-up-command.md)]
 
-1. Navigate to the site and login with either registered user (if necessary). Select **Hello, [First Name] [Last Name]!** link to navigate to the profile management page, and then select **Two-factor authentication**.
+1. Navigate to the site and login with either registered user (if necessary). Select **Hello, [First name] [Last name]!** link to navigate to the profile management page, and then select **Two-factor authentication**.
 
 1. Select **Set up authenticator app**.
 
