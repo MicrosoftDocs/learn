@@ -46,7 +46,7 @@ Adding this CD pipeline in this learning path reduced:
 
 These changes reduce the total lead time from 22 days to 10 days. Substitute these numbers into the equation and we get:
 
-$${Activity\ ratio\ =\ }{\dfrac{5\ days}{10\ days}}{ = .50}$$   T
+$${Activity\ ratio\ =\ }{\dfrac{5\ days}{10\ days}}{ = .50}$$
 
 Multiply the result by 100% and you get **50%**.
 
