@@ -25,7 +25,7 @@ The **next hop type** shows the network path taken by traffic sent to each addre
 
 The diagram below gives an overview of system routes and how traffic flows between subnets and the internet by default. You can see from the diagram that traffic flows freely between the two subnets and the Internet.
 
-![Traffic flowing between subnets and Internet](../media/2-system-routes-subnets-internet.png)
+![Traffic flowing between subnets and Internet](../media/2-system-routes-subnets-internet.svg)
 
 Within Azure, there are additional system routes. Azure will create these routes if you enable the following capabilities:
 
@@ -40,13 +40,13 @@ Both of these capabilities allow virtual networks within Azure to be connected t
 
 The diagram below shows two virtual networks with peering configured, but with user-defined routes configured to route traffic through an NVA or a VPN Gateway.
 
-![Virtual network peering with User-defined routes](../media/2-vnet-peering-udrs.png)
+![Virtual network peering with User-defined routes](../media/2-vnet-peering-udrs.svg)
 
 ### Virtual Network Gateway
   
 Use a virtual network gateway to send encrypted traffic between Azure and on-premises over the internet, and to send encrypted traffic between Azure networks. A virtual network gateway contains routing tables and gateway services.
 
-![The structure of a Virtual Network Gateway](../media/2-vnet-gateway.png)
+![The structure of a Virtual Network Gateway](../media/2-vnet-gateway.svg)
 
 ### VirtualNetworkServiceEndpoint
 
@@ -78,7 +78,7 @@ A network gateway in your on-premises network can exchange routes with a virtual
 
 You typically use BGP to advertise on-premises routes to Azure when you are connected to an Azure datacenter through Azure Express Route. You can also configure BGP if you connect to an Azure virtual network using a VPN site-to-site connection. The diagram below shows a topology with paths that can transit data between Azure VPN Gateway and on-premises networks
 
-![Diagram showing an example of using the Border Gateway Protocol](../media/2-bgp.png)
+![Diagram showing an example of using the Border Gateway Protocol](../media/2-bgp.svg)
 
 BGP offers network stability because routers can quickly change connections to send packets if a connection path goes down.
 
@@ -91,4 +91,3 @@ If multiple routes have the same address prefix, then Azure selects the route ba
 - User-defined routes
 - BGP routes
 - System routes
-  

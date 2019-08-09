@@ -2,7 +2,7 @@ As part of your security strategy, you want to control how network traffic is ro
 
 You'll configure the network so that all traffic flowing from the **publicsubnet** to the **privatesubnet** subnet will be routed through a network virtual appliance. To make this happen, you'll create a custom route for **publicsubnet**, to route this traffic to the **dmzsubnet** subnet. Later, you'll deploy a network virtual appliance to **dmzsubnet**.  
 
-![Virtual network, subnets, and route table](../media/3-vnet-subnets-route-table.png)
+![Virtual network, subnets, and route table](../media/3-vnet-subnets-route-table.svg)
 
 In this exercise, you'll create the route table, custom route, and subnets. You'll then associate the route table with a subnet.
 
