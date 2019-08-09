@@ -79,4 +79,4 @@ Let's start by deploying the application. First, we'll need to great the Azure r
                     --query [].name \
                     --output tsv)
 
-TODO - add screenshot
+![Screenshot of the Drone Delivery web site](../media/3-web-site-before.png)
