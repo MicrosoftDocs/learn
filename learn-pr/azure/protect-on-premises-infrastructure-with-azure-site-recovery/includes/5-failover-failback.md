@@ -14,9 +14,9 @@ A failback is the reverse of a failover. The previous live environment (which is
 
 The four stages of failover and failback actions are:
 
-- **Failover to Azure**: If the on-premises primary site goes down, the decision to fail over to Azure (or your secondary site) is made, which creates virtual machines from the primary replicated data.
+- **Fail over to Azure**: If the on-premises primary site goes down, the decision to fail over to Azure (or your secondary site) is made, which creates virtual machines from the primary replicated data.
 - **Reprotect Azure virtual machines**: After the failover occurs, the Azure virtual machines must be reprotected so that they can replicate changes back to the on-premises environment after the disaster is averted. Virtual machines are powered off to ensure data consistency.
-- **Failback to on-premises**: When the on-premises site is back up and running, it's possible to fail over back to that environment. It then becomes the live environment again. You can't fail back to physical servers. All systems must fail back to virtual machines.
+- **Fail back to on-premises**: When the on-premises site is back up and running, it's possible to fail over back to that environment. It then becomes the live environment again. You can't fail back to physical servers. All systems must fail back to virtual machines.
 - **Reprotect on-premises virtual machines**: Reprotection of the on-premises virtual machines takes place so that they start replicating to Azure after the failback has happened successfully.
 
 ## Failback policies
