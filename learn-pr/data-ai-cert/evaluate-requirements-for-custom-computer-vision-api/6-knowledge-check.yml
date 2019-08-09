@@ -66,7 +66,7 @@ quiz:
       explanation: "Creating a service to identify image formats and color variations is a built-in feature of the Computer Vision APIs. This task isn't likely to be an effective use of the Custom Vision APIs."
     - content: "Creating a service to identify a plant species in images."
       isCorrect: true
-      explanation: "The Custom Vision APIs are designed to identify tagged (classified) elements of any type of image or characteristic of an image. Creating a service to identify image formats and color variations is a built-in feature of the Computer Vision API. This task isn't likely to be an effective use of the Custom Vision APIs. The Emotion API would be used to evaluate whether the people in an image are happy or sad. This task isn't likely to be an effective use of the Custom Vision APIs."
+      explanation: "Correct! The Custom Vision APIs are designed to identify tagged (classified) elements of any type of image or characteristic of an image."
     - content: "Creating a service to identify the textual information in images."
       isCorrect: false
       explanation: "Creating a service to extract printed text from an image is a built-in feature of the Computer Vision API. This task isn't likely to be an effective use of the Custom Vision APIs."
