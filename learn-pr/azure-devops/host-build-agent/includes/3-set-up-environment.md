@@ -18,7 +18,7 @@ At this point, you can follow either of two options:
 To run the template, on the Azure DevOps Demo Generator site, do the following:
 
 1. Select **Sign In**, and accept the usage terms.
-1. On the **Create New Project** page, select your Azure DevOps organization, and then enter a project name, such as **Space Game - web - Tests**.
+1. On the **Create New Project** page, select your Azure DevOps organization, and then enter a project name, such as **Space Game - web - Agent**.
 1. Select **Fork repository on GitHub**, and then select **Authorize**. If a window appears, authorize access to your GitHub account.
 
     > [!IMPORTANT]
@@ -32,7 +32,7 @@ To run the template, on the Azure DevOps Demo Generator site, do the following:
 1. Select **Navigate to project** to go to your project in Azure DevOps.
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/learn/modules/implement-code-workflow/9-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
+> The [Clean up your Azure DevOps environment](/learn/modules/host-build-agent/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
 
 ## Move the work item to Doing
 
