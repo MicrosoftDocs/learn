@@ -1,14 +1,6 @@
-In this module you ...
+In this module, you set up *Blue Green deployment* to speed up the deployment process for new features.
 
-Great Work! The team now has a way to automate the releases and they can get the new features to the management team for approval quickly. This will save 5 days in the workflow!
-
-(Talk about the end of the Build LP and the SVM. I will make a new whiteboard for the map for here. We can show great improvement with Azure DevOps)
-
------------
-Adapted from last module in LP2:
- In this module, you set up *Blue Green deployment* to speed up the deployment process for new features.
-
-There are several deployment patterns to choose from. Choosing a deployment pattern depends on your reasons for the deployment as well as your infrastructure.
+There are several deployment patterns to choose from. Choosing a deployment pattern depends on your reasons for the deployment as well as your infrastructure. Do you have canary testers in place, or will you choose testers that don't know they are testers with dark launching? If you have a set of testers that progress from a small trusted set, to a larger set, then you may use progressive exposure deployment. Perhaps you want to test if one version performs better than another version with A/B testing. The team chose Blue Green deployment so that management can test what is in staging and approve it for production.
 
 Andy and Tim have finished their experiment with Blue Green deployment and have shown it to the team. Let's check in to hear their results.
 
@@ -42,13 +34,21 @@ In previous learning paths, the team has reduced:
 
 Adding this CD pipeline in this learning path reduced:
 
-* TODO: Get he VSM and calculate it all
+* The time it takes to get the build into the test environment from **three days** to **one day**
 
-These changes reduce the total lead time from 22 days to XXX days. Substitute these numbers into the equation and we get:
+    They did so by adding deployment to the Azure Pipeline where every day at 3:00 AM the build in the development environment is deployed to the test environment.
+* The time is takes to get the tested build into staging from **two days** to **zero days**.
 
-$${Activity\ ratio\ =\ }{\dfrac{5\ days}{15\ days}}{ = .33}$$   TODO: Rework the equation
+    They did so by adding a step to the deployment pipeline that allows Amita to manually deploy a tested build to staging for management approval.
+* The time it takes to get the approved build from staging to production from **one day** to **zero days**.
 
-Multiply the result by 100% and you get **XX%**.
+    They did this by adding a step to the deployment pipeline to allow management to manually deploy the staging build to production when they approve the feature changes.
+
+These changes reduce the total lead time from 22 days to 10 days. Substitute these numbers into the equation and we get:
+
+$${Activity\ ratio\ =\ }{\dfrac{5\ days}{10\ days}}{ = .50}$$   T
+
+Multiply the result by 100% and you get **50%**.
 
 Although there's always room for improvement, this is a very positive change for the team. Not only do customers receive value more quickly, the Tailspin team now spends less time waiting and more time doing what they enjoy most &mdash; delivering features they know their customers will love.
 
@@ -56,14 +56,14 @@ Although there's always room for improvement, this is a very positive change for
 
 Congratulations. You've completed the final module in the _Deploy applications with Azure DevOps_ learning path. In this learning path, you accomplished a lot, including:
 
-* XYZ
-* XYZ
-* XYZ
-* XYZ
+* Using multistage pipelines in Azure Pipelines to add a deployment stage.
+* Implemented a deployment workflow where you automated moving a build through development, testing, and staging.
+* Tested the builds in the test environment.
+* Deployed the build to production using Blue Green deployment.
 
 The focus of this learning path is on the workflow of deploying applications, making sure your application environments are secure, and managing a release cadence.
 
-You can automate ... all using Azure Pipelines.
+You can automate all these steps using Azure Pipelines.
 
 For more self-paced, hands-on learning around Azure DevOps, also check out [Azure DevOps Labs](https://www.azuredevopslabs.com?azure-portal=true).
 

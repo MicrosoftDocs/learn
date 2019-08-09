@@ -50,9 +50,14 @@ Here you'll make a visible change to the web site to see the swap more clearly.
     git push origin release-cadence
     ```
 
-1. From Azure Pipelines, trace the build through each of the steps. (Screenshot)
+1. From Azure Pipelines, trace the build through each of the steps. 
+
+(Screenshot)
+
 1. Navigate to each of the URLs for each of the stages, you will see the web site deployed with the color change to Production, but the color change will be missing from Staging. This is because Staging and Production have swapped.
 
 (Screenshot)
 
 At this point, you could roll back the change by swapping with staging again, or you could roll forward by pushing another change through the pipeline.
+
+Great Work! The team now has a way to automate the releases and they can get new features to the management team for approval quickly.
