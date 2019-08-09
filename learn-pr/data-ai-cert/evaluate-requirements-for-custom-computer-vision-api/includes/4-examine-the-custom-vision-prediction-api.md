@@ -34,7 +34,7 @@ In this URL:
 - `{imageType}` is either `url`, when the image is passed as a URL, or `image`, when the image is passed as binary data in the body of the request.
 
 > [!IMPORTANT]
-> The API you call, Detect vs. Classify, is based on the *type* of project you create in the Custom Vision service. If you don't call the proper API, the service will return `400 Bad Request - Invalid project type for operation`.
+> The API you call, Detect versus Classify, is based on the *type* of project you create in the Custom Vision service. If you don't call the proper API, the service will return `400 Bad Request - Invalid project type for operation`.
 
 ### Locating the project URL
 
