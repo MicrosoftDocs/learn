@@ -24,6 +24,6 @@ You'll see the following list of ContosoPets.UI project directories and files:
 * *:::no-loc text="appsettings.json":::*
 * *:::no-loc text="ContosoPets.UI.csproj":::*
 * *:::no-loc text="Program.cs":::*
-* *:::no-loc text="StartUp.cs":::*
+* *:::no-loc text="Startup.cs":::*
 
 A web API has also been deployed to a public endpoint. The *:::no-loc text="ContosoPets.UI":::* example will provide a client front end for the web API. This endpoint will be called in a later step.
