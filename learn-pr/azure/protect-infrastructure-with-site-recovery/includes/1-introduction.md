@@ -1,7 +1,7 @@
 
-You work for Lamna Healthcare Company and it recently suffered an IT outage because of building damage from a hurricane. To reduce the chance an outage would happen again, you're asked to protect the infrastructure using Azure Site Recovery. Your company wants to take advantage of the replication and recovery features it offers. Your company wants to configure protection for its VMs to fail over to a secondary Azure region in the event of a disaster.
+Your organization has recently suffered an outage due to building damage in your datacenter from a hurricane. To prevent this from happening in the future, You are now moving this infrastructure to Azure as you want to take advantage of the replication and recovery features available in Azure. You have a number of virtual machines running in Azure already, and now wish to configure protection for them to fail over to a secondary Azure region in the event of a disaster.
 
-In this module, you'll learn about **Azure Site Recovery** and explore the features applicable to a Business Continuity and Disaster Recovery (BCDR) plan.
+In this module, you'll learn about **Azure Site Recovery** and explore the features applicable to a business continuity and disaster recovery (BCDR) plan.
 
 ## Learning objectives
 
