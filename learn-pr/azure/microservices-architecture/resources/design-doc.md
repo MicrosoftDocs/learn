@@ -171,6 +171,6 @@ Identify the subtasks of *Decompose a monolithic application into a microservice
 
 ## Notes
 
-Module based on this document from the Architecture Center - https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices
+Module based on this document from the Architecture Center - https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices
 
-Related article on monolithic apps - https://docs.microsoft.com/en-us/dotnet/standard/containerized-lifecycle-architecture/design-develop-containerized-apps/monolithic-applications
+Related article on monolithic apps - https://docs.microsoft.com/dotnet/standard/containerized-lifecycle-architecture/design-develop-containerized-apps/monolithic-applications
