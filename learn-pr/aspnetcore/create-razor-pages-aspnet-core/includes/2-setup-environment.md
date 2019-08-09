@@ -10,7 +10,7 @@ Run the following command in the command shell. Be patient, as setup can take a 
 
 When the development environment has completed set up, the project *:::no-loc text="ContosoPets.UI":::* project directory opens in the [Azure Cloud Shell editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor).
 
-You'll see the following list of ContosoPets.UI project directories and files:
+You'll see the following list of project directories and files:
 
 * *:::no-loc text="bin":::*
 * *:::no-loc text="Extensions/":::*
