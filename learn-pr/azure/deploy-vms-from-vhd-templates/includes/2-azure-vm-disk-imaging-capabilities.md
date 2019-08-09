@@ -1,6 +1,6 @@
 An Azure virtual machine runs in the cloud, in an Azure datacenter. You don't have direct access to the physical hardware on which the virtual machine runs, or the hard disks that the virtual machine uses. When you create a virtual machine, you specify a virtual machine image to use. This image contains the operating system, and optionally other preconfigured software. Azure uses this image to create a new virtual hard disk (VHD) from which it can boot your virtual machine. You can then tailor the virtual machine by configuring and installing additional applications, according to your requirements.
 
-In the sample scenario, your organization is considering creating and configuring customized images that can be used to deploy servers. You need to understand what customized images are, and how they can benefit the company.
+In the sample scenario, your organization is considering creating and configuring customized images that can be used to deploy servers. You want to know what customized images are, and how they can benefit the company.
 
 In this unit, you'll learn more about VHDs, and how you can use them to create standard customized disks for building virtual machines for your own organization.
 
