@@ -1,8 +1,8 @@
-Azure Site Recovery (Site Recovery) can duplicate your workloads between Azure regions. You can also use Site Recovery to migrate VMs from other environments, such as on-premises infrastructure, to Azure.  You'll see that Site Recovery can be used for much more than just a backing up and restoring infrastructure.
+Azure Site Recovery can replicate your virtual machine workloads between Azure regions. You can also use Site Recovery to migrate VMs from other environments, such as on-premises infrastructure, to Azure.  You'll see that Site Recovery can be used for much more than just a backing up and restoring infrastructure.
 
 Your organization recently suffered an outage caused by a hurricane. You'll identify the Site Recovery features required to protect your Azure virtual machines (VMs) by enabling failing over to a secondary Azure region.
 
-In this unit, you'll learn about the Site Recovery features that will help to prevent future outages.
+In this unit, you'll learn about the Site Recovery features that will help to handle future outages.
 
 ## Site Recovery features
 
@@ -37,7 +37,7 @@ Site Recovery allows you to use accelerated networking for any Azure virtual mac
 
 ### Disaster recovery (DR) drills
 
-Site Recovery allows you to do disaster recovery drills, after all pre-requisite configuration tasks are complete. Running a DR drill enables you to validate the replication strategy for your environment without losing data, having downtime, or compromising your production environment. Drills don't affect your production environment, and are great way to test that you have correctly configured everything.
+Site Recovery allows you to perform disaster recovery drills, after all pre-requisite configuration tasks are complete. Running a DR drill enables you to validate the replication strategy for your environment without losing data, having downtime, or compromising your production environment. Drills don't affect your production environment, and are great way to test that you have correctly configured everything.
 
 ### Flexible failover and failback
 
