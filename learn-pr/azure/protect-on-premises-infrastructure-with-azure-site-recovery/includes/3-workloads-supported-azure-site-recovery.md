@@ -19,7 +19,7 @@ Site Recovery provides application-aware replication for many types of workloads
 - **App-consistent snapshots**: Snapshots taken for recovery purposes can view information in memory and pending I/O operations, which allows for quick recovery times. The application is ready to go after switching to the replica VM.
 - **Integration with SQL Always On**: Always On is an enterprise-level alternative to normal database mirroring techniques.
 - **Flexible recovery plans**: The ability to recover an entire application stack with a single click. Both manual and scripted actions can be incorporated into the overall plan.
-  - **Network Management**: The automated ability to simplify the reservation of IP addresses, configure load balancers, and integrate with Azure Traffic Manager.
+  - **Network management**: The automated ability to simplify the reservation of IP addresses, configure load balancers, and integrate with Azure Traffic Manager.
   - **Automation library**: Production-ready scripts that can be downloaded and integrated with the recovery plan to provide a fully automated recovery, if needed.
 
 ### Active Directory and DNS
@@ -54,8 +54,8 @@ SAP NetWeaver and non-NetWeaver production application components can be replica
 
 ### IIS
 
-Protecting IIS allows for full automation of the recovery plan if you need to fail over to the replicated environment. Protection for IIS servers can be easily enabled, and IP addressing can be properly configured by mapping the primary and recovery networks prior to fail over. Scripts can be used during failover to update application dependencies and bindings. This approach enables a one-click failover for multiple web applications on the web servers, and eliminates the scope for confusion in the event of a disaster.
+Protecting IIS allows for full automation of the recovery plan if you need to fail over to the replicated environment. Protection for IIS servers can be easily enabled, and IP addressing can be properly configured by mapping the primary and recovery networks prior to fail over. Scripts can be used during failover to update application dependencies and bindings. This approach enables a one-click failover for multiple web applications on the web servers and eliminates the scope for confusion in the event of a disaster.
 
 ### Citrix XenApp and XenDesktop
 
-Full protection is available for Citrix by using Site Recovery. You can protect all aspects of your Citrix solution, Active Directory, DNS, SQL, and Citrix-specific servers such as the StoreFront server. They all can be part of the same recovery plan. After replication is in place, the replicated environment can be used as a test platform.
+Full protection is available for Citrix by using Site Recovery. You can protect all aspects of your Citrix solution, Active Directory, DNS, SQL Server, and Citrix-specific servers, such as the StoreFront server. They all can be part of the same recovery plan. After replication is in place, you can use the replicated environment as a test platform.
