@@ -20,7 +20,7 @@ Micro-segmentation allows the firewall to inspect all packets both at Layer-4, a
 
 Some NVAs require multiple network interfaces. One network interface is normally dedicated to the management network for the appliance, while additional network interfaces manage and control the traffic processing. Once you’ve deployed the NVA, you may then configure the appliance to route the traffic through the proper interface.
 
-### User-defined routing
+### User-defined routes
 
 For most environments, the default system routes already defined by Azure are enough to get your environments up and running. In certain cases you should create a routing table, and add custom routes. Some examples are:
 
