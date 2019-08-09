@@ -8,9 +8,9 @@ In this unit, you'll explore some of the tools that you can use to provision com
 
 If you only plan to install a few virtual machines, then it's easy to manually configure them. However, if you want to implement an architecture with many servers in Azure, it will take a long time to create the virtual machines, configure the operating system, install software, configure that software, and apply any updates. 
 
-For each virtual machine, this is a complex task. When you have to perform such a task many times, it's easy to make a mistake, perhaps as you lose concentration, or when you are disturbed by co-workers.
+For each virtual machine, this task is complex. When you have to perform such a task many times, it's easy to make a mistake, perhaps as you lose concentration, or when you are disturbed by coworkers.
 
-Also remember that you may need to redeploy the architecture, for example to recover from an attack or disaster. If your architecture is to support software testing, then you might want to redeploy before every testing cycle, to ensure a clean testing environment. If your manual deployment takes several hours, this is not ideal.
+Also remember that you may need to redeploy the architecture, for example to recover from an attack or disaster. If your architecture is to support software testing, then you might want to redeploy before every testing cycle, to ensure a clean testing environment. If your manual deployment takes several hours, it is not ideal.
 
 What you need to solve these issues is some way to automate the deployment of virtual machines. For each virtual machine, such a solution must be able to:
 
@@ -19,7 +19,7 @@ What you need to solve these issues is some way to automate the deployment of vi
 - Install software. For example, you might need to install a web server or a database server.
 - App updates. For example, you might need to apply service packs or hotfixes to the operating system and the installed software.
 
-With a solution like that, you can create a complete architecture in the form of a script or a configuration file, and then deploy it in a single operation. The automated deployment reduces configuration mistakes, and accelerates the complete deployment. It may take time to create an debug the script or configuration file, but once that's created, you realize greate savings in terms of costs and administrative time.  
+With a solution like that, you can create a complete architecture in the form of a script or a configuration file, and then deploy it in a single operation. The automated deployment reduces configuration mistakes, and accelerates the complete deployment. It may take time to create and debug the script or configuration file, but once that's created, you realize great savings in terms of costs and administrative time.  
 
 ## Custom scripts
 
