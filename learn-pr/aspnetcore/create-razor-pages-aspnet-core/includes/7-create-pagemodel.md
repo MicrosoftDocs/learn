@@ -1,4 +1,4 @@
-In this unit, you'll review the structure of a basic Razor Page *:::no-loc text="PageModel":::* class and its elements. You'll add a *:::no-loc text="POST":::* event handler method for the *:::no-loc text="Create":::* Razor Page form. Finally, you'll walk through the *:::no-loc text="Product"::* model class and its DataAttributes that drive both client-side and server-side validation.
+In this unit, you'll review the structure of a basic Razor Page *:::no-loc text="PageModel":::* class and its elements. You'll add a *:::no-loc text="POST":::* event handler method for the *:::no-loc text="Create":::* Razor Page form. Finally, you'll walk through the `Product` model class and its DataAttributes that drive both client-side and server-side validation.
 
 ## Examine the structure of a basic Razor Pages *:::no-loc text="PageModel":::* class file
 
@@ -92,9 +92,9 @@ The *:::no-loc text="OnPost":::* handler will need to do the following tasks for
 * If the attempted *:::no-loc text="PageModel":::* changes are not valid, the *:::no-loc text="Create":::* page is presented again to the user. A message is displayed clarifying the input requirements.
 * If the *:::no-loc text="PageModel":::* update is valid, then data changes are passed to a service called *:::no-loc text="ProductService":::*. *:::no-loc text="ProductService":::* will handle the concern of HTTP requests and responses to the web API.
 
-## Binding the *:::no-loc text="Product":::* model
+## Binding the `Product` model
 
-The `CreateModel` class needs access to the *:::no-loc text="Product":::* model. It will validate and pass *:::no-loc text="Product":::* entries from the *:::no-loc text="Create":::* form. It does so by using the *:::no-loc text="[BindProperty]":::* attribute in the following code:
+The `CreateModel` class needs access to the `Product` model. It will validate and pass `Product` entries from the *:::no-loc text="Create":::* form. It does so by using the *:::no-loc text="[BindProperty]":::* attribute in the following code:
 
 ```csharp
 [BindProperty]
@@ -126,7 +126,7 @@ return RedirectToPage("Index");
 
 ## Defining validation rules for the product model using DataAnnotations
 
-This project uses a central model file *:::no-loc text="Product.cs":::* for *:::no-loc text="Product":::* model validation and operations. It's used by all Razor Page *:::no-loc text="PageModels":::* involved in UI for Product CRUD operations, and is used to validate product data received from the web api. By convention it's stored in the *:::no-loc text="Models/":::* directory. The `Product` model class namespace is `ContosoPets.Ui.Models`.
+This project uses a central model file *:::no-loc text="Product.cs":::* for `Product` model validation and operations. It's used by all Razor Page *:::no-loc text="PageModels":::* involved in UI for Product CRUD operations, and is used to validate product data received from the web api. By convention it's stored in the *:::no-loc text="Models/":::* directory. The `Product` model class namespace is `ContosoPets.Ui.Models`.
 
 Your new `CreateModel` class gained access to any model types defined in the `ContosoPets.Ui.Models` namespace, including the `Product` model, with the following *:::no-loc text="using":::* directive:
 
@@ -160,13 +160,13 @@ The *:::no-loc text="Product":::* class uses the `[Required]` and the `[Range]` 
 * The `[Required]` attribute indicates that a property must have a value.
 * The `[Range]` attribute constrains a value to within a specified range.
 
-If you decide to enforce more validation rules, you can easily modify attributes in just one place, the *:::no-loc text="Product":::* model, without being required to modify any of the *:::no-loc text="PageModel":::* class files in the project. A significant benefit!
+If you decide to enforce more validation rules, you can easily modify attributes in just one place, the `Product` model, without being required to modify any of the *:::no-loc text="PageModel":::* class files in the project. A significant benefit!
 
 There is a comprehensive set of data annotation attributes available to you through `System.ComponentModel.DataAnnotations`. For the scope of this module, a small and simplified example is provided.
 
 ## The *:::no-loc text="Product":::* Model as a Data Transfer Object
 
-The *:::no-loc text="Product":::* model also serves as a Data Transfer Object (DTO). A DTO is an object that defines the data that will be sent over the network, in this case to the web API. The *:::no-loc text="ContosoPets.UI":::* `ProductService` class that handles all HTTP requests uses the *:::no-loc text="Product":::* model as a DTO that defines valid *:::no-loc text="Product":::* data that can be sent to send and receive from the web API.
+The `Product` model also serves as a Data Transfer Object (DTO). A DTO is an object that defines the data that will be sent over the network, in this case to the web API. The *:::no-loc text="ContosoPets.UI":::* `ProductService` class that handles all HTTP requests uses the `Product` model as a DTO that defines valid *:::no-loc text="Product":::* data that can be sent to send and receive from the web API.
 
 ## Injecting the ContosoPets.UI ProductService Service that handles HTTP requests
 
