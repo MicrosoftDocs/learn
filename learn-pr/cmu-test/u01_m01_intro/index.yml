@@ -1,18 +1,25 @@
 ### YamlMime:Module
 uid: learn.cmu-test.u01-m01-intro
 metadata:
-  title: Cloud Computing Overview
-  description: Cloud Computing Overview
+  title: Get an overview of Cloud Computing
+  description: Cloud computing overview
   ms.date: 06/1/2019
   author: markjulmar
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Cloud Computing Overview
-summary: Cloud Computing Overview
+title: Get an overview of Cloud Computing
+summary: Cloud computing overview
 abstract: | 
-  In this module, you will:
-  - TBD
+  This module was designed with these learning objectives in mind:
+  - Explain the concept of cloud computing
+  - Briefly understand how computing systems across domains dealt with scale before the cloud
+  - Briefly recall the recent history of cloud computing, illustrating its evolution
+  - List some of the enabling technologies in cloud computing, and discuss their significance
+  - Differentiate cloud service models, such as IaaS, PaaS, and SaaS
+  - Enumerate the different types of clouds, and compare and contrast them
+  - List some of the common cloud providers and their associated cloud stacks
+  - Recall popular cloud use case scenarios
 prerequisites: None
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
