@@ -43,3 +43,21 @@ quiz:
     - content: "A model where the client must buy and own every aspect related to IT"
       isCorrect: true
       explanation: "Great Job! Cloud computing transforms IT from products to services and strives to eliminate up-front costs and ownership of IT resources. In cloud computing the client does not have to buy and own every aspect related to IT."
+  
+  - content: "What are the drawbacks of an organization owning an IT solution?"
+    choices:
+    - content: "Upfront Cost"
+      isCorrect: false
+      explanation: "Thats right, but is this the only drawback of owning an IT solution?"
+    - content: "Maintainance"
+      isCorrect: false
+      explanation: "Thats right, but is this the only drawback of owning an IT solution?"
+    - content: "Fixed size"
+      isCorrect: false
+      explanation: "Thats right, but is this the only drawback of owning an IT solution?"
+    - content: "Low average utilization"
+      isCorrect: false
+      explanation: "Thats right, but is this the only drawback of owning an IT solution?"
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Thats right, but is this the only drawback of owning an IT solution?"
