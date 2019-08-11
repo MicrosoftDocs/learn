@@ -1,17 +1,18 @@
 ### YamlMime:Module
+#LP name: Introduction to the Cloud with Carnegie Mellon
 uid: learn.cmu-test.u01-m01-intro
 metadata:
-  title: Get an overview of Cloud Computing
+  title: Foundations of Cloud Computing
   description: Cloud computing overview
   ms.date: 06/1/2019
   author: markjulmar
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Get an overview of Cloud Computing
-summary: Cloud computing overview
+title: Foundations of Cloud Computing
+summary: Discover cloud computing, how it works, and why it matters to you with Carnegie Mellon's online Intro to Cloud Computing course textbook. 
 abstract: | 
-  This module was designed with these learning objectives in mind:
+  In this module you will:
   - Explain the concept of cloud computing
   - Briefly understand how computing systems across domains dealt with scale before the cloud
   - Briefly recall the recent history of cloud computing, illustrating its evolution
