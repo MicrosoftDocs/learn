@@ -47,5 +47,23 @@ quiz:
       isCorrect: true
       explanation: "Correct! Networking, web 2.0, and virtualization are all enabling technologies for cloud computing."
     - content: "The internet, large disk sizes, and Java"
-      isCorrect: true
+      isCorrect: false
       explanation: "The internet is crucial for cloud computing, but bigger disk sizes and Java weren't the crucial developments."
+
+  - content: "Advances in which area led to faster communication, enabling the cloud computing model of leasing compute resources from a remote data center over the internet?"
+    choices:
+    - content: "Utility computing"
+      isCorrect: false
+      explanation: "Incorrect. The contribution of utility computing is not faster communication."
+    - content: "Networking"
+      isCorrect: true
+      explanation: "Correct! Advances in networking led to faster communication, which made distributed applications practical and an important part of cloud computing today."
+    - content: "Programming models"
+      isCorrect: false
+      explanation: "Incorrect. The contribution of utility computing is not faster communication."
+    - content: "Virtualization"
+      isCorrect: false
+      explanation: "Incorrect. The contribution of virtualization is not faster communication."
+    - content: "Distributed/parallel computing"
+      isCorrect: false
+      explanation: "Incorrect. The contribution of distributed/parallel computing is not faster communication."
