@@ -46,7 +46,7 @@ SaaS is any application in which the end user has access to a software applicati
 
 The following video (Video 1.2) reviews these services:
 
-> [!VIDEO <https://youtube.com/embed/ltJmJEI0gGA]>
+> [!VIDEO <https://youtube.com/embed/ltJmJEI0gGA>]
 
 _Video 1.2: Service Models in Cloud Computing._ ([Alternative version](../media/video_1_service_models.pdf))
 

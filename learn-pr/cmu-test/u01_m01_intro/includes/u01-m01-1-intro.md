@@ -32,7 +32,7 @@ The transformation of a certain technology from a product to a service is not ne
 
 The following video (Video 1.1) discusses the transformation of IT from a product to a service:
 
-> [!VIDEO <https://youtube.com/embed/HaVqHgg7zv4]>
+> [!VIDEO <https://youtube.com/embed/HaVqHgg7zv4>]
 
 _Video 1.1: Introduction to Cloud Computing._ ([Alternative version](../media/video_1_intro.pdf))
 
