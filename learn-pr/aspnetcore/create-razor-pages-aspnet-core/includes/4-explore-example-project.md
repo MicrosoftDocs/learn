@@ -6,18 +6,18 @@ The *ContosoPets.UI* project directory should be currently open in the [Azure Cl
 
 Examine the following ContosoPets.UI files and directories by clicking on them in the Azure Cloud Shell window on the right:
 
-    |Name                   |Description                                                                          |
-    |-----------------------|-------------------------------------------------------------------------------------|
-    |*:::no-loc text="Pages/":::*                   |Contains Razor Pages and supporting files. Each Razor page is a pair of files:       |
-    |                       | * A *:::no-loc text=".cshtml":::* file that contains markup with C# code using Razor syntax.                  |
-    |                       | * A *:::no-loc text=".cshtml.cs":::* *PageModel":::* class file that defines:                                       |
-    |                       |   * Page handlers for requests sent to the page.                                        |
-    |                       |   * Data used to render the page.                                                       |
-    |*:::no-loc text="wwwroot/":::*               |Contains static assets, such as HTML files, JavaScript files, and CSS files.         |
-    |*:::no-loc text="Models/":::*                |Contains Model files. This project uses one central model file for model validation. |
-    |*:::no-loc text="Program.cs":::*             |Contains a *Main* method: The app's managed entry point.                             |
-    |*:::no-loc text="ContosoPets.UI.csproj":::*  |Contains configuration metadata for the project, such as dependencies.               |
-    |*:::no-loc text="Startup.cs":::*             |Configures app behavior, such as routing between pages.                              |
+|Name                   |Description                                                                          |
+|-----------------------|-------------------------------------------------------------------------------------|
+|*:::no-loc text="Pages/":::*                   |Contains Razor Pages and supporting files. Each Razor page is a pair of files:       |
+|                       | * A *:::no-loc text=".cshtml":::* file that contains markup with C# code using Razor syntax.                  |
+|                       | * A *:::no-loc text=".cshtml.cs":::* *PageModel":::* class file that defines:                                       |
+|                       |   * Page handlers for requests sent to the page.                                        |
+|                       |   * Data used to render the page.                                                       |
+|*:::no-loc text="wwwroot/":::*               |Contains static assets, such as HTML files, JavaScript files, and CSS files.         |
+|*:::no-loc text="Models/":::*                |Contains Model files. This project uses one central model file for model validation. |
+|*:::no-loc text="Program.cs":::*             |Contains a *Main* method: The app's managed entry point.                             |
+|*:::no-loc text="ContosoPets.UI.csproj":::*  |Contains configuration metadata for the project, such as dependencies.               |
+|*:::no-loc text="Startup.cs":::*             |Configures app behavior, such as routing between pages.                              |
 
 ### Razor page files and their paired *PageModel* class file
 
@@ -31,11 +31,11 @@ A model object defines data properties and encapsulates logic or operations rela
 
 By convention, model class files are located in a *:::no-loc text="Models/":::* directory. As previously mentioned, a model object defines data properties and encapsulates logic or operations related to those data properties.
 
-The *:::no-loc text="ContosoPets.UI":::* project has a model class file named *:::no-loc text="Product.cs":::* stored in the *:::no-loc text="Models/":::* directory. The *:::no-loc text="Product":::* model class defines the data properties for a product. All PageModels in the project that center on CRUD operations for products use this single `Product` model.
+The *:::no-loc text="ContosoPets.UI":::* project has a model class file named *:::no-loc text="Product.cs":::* stored in the *:::no-loc text="Models/":::* directory. The `Product` model class defines the data properties for a product. All PageModels in the project that center on CRUD operations for products use this single `Product` model.
 
 ### DataAnnotations
 
-Models in ASP.NET Core often make use of data annotations to constrain or customize model properties. Data annotations are attributes used to specify behavior that you want to enforce on the model properties to which they're applied. For example, a range of minimum and maximum acceptable values. The *:::no-loc text="ContosoPets.UI":::* project has a *:::no-loc text="Model":::* class file named *:::no-loc text="Product.cs":::* that uses data annotations to define constraints for its data properties. For example, a `Name` property is always required, and a `Price` property must have a value between the range of `0.01` and `9999.99`. Since this module often refers to the `Product` Model and its data properties, it's important to understand where that model class is stored.
+Models in ASP.NET Core often make use of data annotations to constrain or customize model properties. Data annotations are attributes used to specify behavior that you want to enforce on the model properties to which they're applied. For example, a range of minimum and maximum acceptable values. The *:::no-loc text="ContosoPets.UI":::* project has a model class file named *:::no-loc text="Product.cs":::* that uses data annotations to define constraints for its data properties. For example, a `Name` property is always required, and a `Price` property must have a value between the range of `0.01` and `9999.99`. Since this module often refers to the `Product` model and its data properties, it's important to understand where that model class is stored.
 
 ## The *Pages/Shared/* directory
 
