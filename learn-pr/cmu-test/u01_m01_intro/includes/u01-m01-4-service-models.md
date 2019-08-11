@@ -148,7 +148,7 @@ There are certain scenarios in which PaaS may not be ideal, such as:
 
 Google App Engine is an example of a PaaS. Using Google's APIs, developers can create Web and mobile applications that run on Google's infrastructure.
 
-## The Infrastructure-as-a-Service Model
+### The Infrastructure-as-a-Service Model
 
 > [!div class="alert is-tip"]
 > ### Infrastructure as a service
@@ -170,13 +170,13 @@ IaaS has the following characteristics:
 - IaaS providers usually have different resource offerings at different costs and follow a utility pricing model (typically calculated hourly).
 - The same physical resources are shared among multiple users.
 
-## Pricing Models
+### Pricing Models
 
 Unlike the SaaS pricing model (which is a subscription- or advertisement-based model) or the PaaS model (which usually is priced in terms of number of transactions or bandwidth or storage used), IaaS usually is priced on an hourly basis, per instance. For example, Amazon Elastic Compute Cloud (EC2) offers a spectrum of compute resources as virtualized OS instances, which vary in compute, memory, storage, and bandwidth. At the time of writing, the Amazon EC2 t2.micro instance costs about 1.3 cents an hour when provisioned at Amazon's Northern Virginia data center.
 
 Cloud providers can also choose to bill on a prorated or non-prorated basis. On a prorated basis, each partial hour is billed partially, while on a non-prorated basis, each partial hour is billed as a full hour. This difference becomes significant when IaaS users need a large number of instances for a short period of time for burst processing. Amazon EC2 instances are billed on a non-prorated basis.
 
-## Use Cases for IaaS
+### Use Cases for IaaS
 
 IaaS makes sense in a number of situations:
 
@@ -191,6 +191,6 @@ IaaS may not be the best option when:
 - When applications have strict quality-of-service (QoS) requirements.
 - When organizations have existing in-house customized infrastructure to meet their IT needs.
 
-## Examples of IaaS
+### Examples of IaaS
 
 Amazon Web Services (AWS), Microsoft Azure and Rackspace are cloud service providers that offer IaaS products. Specifically, AWS's Elastic Compute Cloud (EC2) is one of the first commercially successful IaaS products. AWS EC2 rents out instances from various data center locations scattered around the world. Users can choose from various instance types, from a low-memory, single CPU (which costs about several cents an hour), all the way up to multicore, high-performance, GPU-accelerated instances (which can cost up to several US dollars an hour).
