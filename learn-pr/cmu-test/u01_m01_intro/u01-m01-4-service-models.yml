@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.cmu-test.u01-m01-intro.u01-m01-4-service-models
-title: Cloud Building Blocks and Service Models
+title: Building blocks of the cloud
 metadata:
-  title: Cloud Building Blocks and Service Models
+  title: Building blocks of the cloud
   description: Cloud Building Blocks and Service Models
   ms.date: 06/1/2019
   author: markjulmar
@@ -16,6 +16,67 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
+
+  - content: "What kind of service model would you classify Office 365 as?"
+    choices:
+    - content: "Infrastructure as a service (IaaS)"
+      isCorrect: false
+      explanation: "Incorrect. Think about what Office 365 offers to the end user."
+    - content: "Platform as a service (PaaS)"
+      isCorrect: false
+      explanation: "Incorrect. Think about what Office 365 offers to the end user."
+    - content: "Software as a service (Saas)"
+      isCorrect: true
+      explanation: "Correct! Office 365 and other Web-based productivity services are examples of software as a service. Software (in this case, document management and collaborative editing) is developed in a Web-based form and served to users over the Internet."
+  
+  - content: "What kind of service model would you classify Google App Engine as?"
+    choices:
+    - content: "Infrastructure as a service (IaaS)"
+      isCorrect: false
+      explanation: "Incorrect. Think about what Google App Engine offers to its subscribers."
+    - content: "Platform as a service (PaaS)"
+      isCorrect: true
+      explanation: "Correct! Google App Engine is an example of platform as a service. Google App Engine allows developers to make their own applications using Google's platform that run on Google's infrastructure."
+    - content: "Software as a service (Saas)"
+      isCorrect: false
+      explanation: "Incorrect. Think about what Google App Engine offers to its subscribers."
+
+    - content: "What kind of service model would you classify Amazon Elastic Compute Cloud (EC2) as?"
+    choices:
+    - content: "Infrastructure as a service (IaaS)"
+      isCorrect: true
+      explanation: "Correct! Amazon Elastic Compute Cloud (EC2) is a service that rents out computing resources, such as CPU, memory, disk, and network bandwidth in the form of virtualized instances."
+    - content: "Platform as a service (PaaS)"
+      isCorrect: false
+      explanation: "Incorrect. Think about what Amazon EC2 offers to its subscribers."
+    - content: "Software as a service (Saas)"
+      isCorrect: false
+      explanation: "Incorrect. Think about what Amazon EC2 offers to its subscribers."
+
+  - content: "Which of the following is true about Saas?"
+    choices:
+    - content: "SaaS is a software model in which updates and patches are not required to be installed manually by every single end-user."
+      isCorrect: false
+      explanation: "That is not quite right. SaaS is a software model in which updates and patches are not required to be installed manually by every single end-user, but is this the only valid response?"
+    - content: "SaaS is a software model in which a cloud vendor hosts services. Those services are made available to end users over a network, typically the Internet."
+      isCorrect: false
+      explanation: "That is not quite right. Cloud vendors do host services with SaaS, but is this the only valid response?"
+    - content: "SaaS is software that is made available to the end user over a browser or mobile application."
+      isCorrect: false
+      explanation: "That is not quite right. Software is made available to the end user over a browser or mobile application with SaaS, but is this the only valid response?"
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Correct! All of the statements above are true about SaaS."
+  
+  - content: "A company is creating new algorithms for accurate face recognition software. The company is interested in moving to the cloud for its application development needs. Is software as a service the right model for this particular project?"
+    choices: 
+    - content: "Yes"
+      isCorrect: false
+      explanation: "Incorrect. Because the company is creating its own algorithms for face recognition, SaaS may not provide enough flexibility for the company to write software from scratch. The company should consider PaaS or IaaS instead."
+    - content: "No"
+      isCorrect: true
+      explanation: "Correct! The company should consider PaaS or IaaS instead because it needs to develop new software and not just use existing software."
+
   - content: "As mentioned above, Google App Engine (GAE) is an example of PaaS. Given that you read the PaaS section, which of the following statements about GAE is *incorrect?*"
     choices:
     - content: "The applications deployed on GAE have the same security, privacy, and data protection policies as that of Google's applications. Hence, end users can take advantage of the reliability, performance, and security of Google's infrastructure."
@@ -32,13 +93,11 @@ quiz:
     choices:
     - content: "IaaS providers do not allow clients to scale resources on demand."
       isCorrect: false
-      explanation: "Incorrect. IaaS providers allow clients to scale resource on demand. Consider the service functionality of an IaaS provider such as Amazon EC2. What are 
-				the features? What are the limitations?"
+      explanation: "Incorrect. IaaS providers allow clients to scale resource on demand. Consider the service functionality of an IaaS provider such as Amazon EC2. What are the features? What are the limitations?"
     - content: "IaaS providers provide computing resources to clients in the form of instances, or virtual machines."
       isCorrect: true
       explanation: "Correct!."
     - content: "Users are aware of whom they share physical resources with."
       isCorrect: false
-      explanation: "Incorrect. IaaS cloud providers do not indicate how the resources are shared among multiple users. Consider the service functionality of an IaaS provider such as Amazon EC2. What are 
-				the features? What are the limitations?"
+      explanation: "Incorrect. IaaS cloud providers do not indicate how the resources are shared among multiple users. Consider the service functionality of an IaaS provider such as Amazon EC2. What are the features? What are the limitations?"
 
