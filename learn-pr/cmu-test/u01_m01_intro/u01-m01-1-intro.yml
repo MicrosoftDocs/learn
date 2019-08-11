@@ -49,7 +49,7 @@ quiz:
     - content: "Upfront Cost"
       isCorrect: false
       explanation: "Thats right, but is this the only drawback of owning an IT solution?"
-    - content: "Maintainance"
+    - content: "Maintenance"
       isCorrect: false
       explanation: "Thats right, but is this the only drawback of owning an IT solution?"
     - content: "Fixed size"
