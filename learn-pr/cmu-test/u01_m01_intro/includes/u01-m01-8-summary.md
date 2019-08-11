@@ -1,6 +1,6 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u01_intro\_u01_m01_intro\x-oli-workbook_page\_u01_m01_8_summary.xml -->
 
-##  Introduction to Cloud Computing Summary
+## Foundations of Cloud Computing Summary
 
 - Cloud computing is the delivery of computing as a service over a network, whereby distributed resources are provided to the end user as a utility.
 - The idea of utility computing originated in the 1950s and 1960s, but the enabling technologies evolved decades later and have finally matured to a state in which cloud computing is a viable option for organizations to invest in.

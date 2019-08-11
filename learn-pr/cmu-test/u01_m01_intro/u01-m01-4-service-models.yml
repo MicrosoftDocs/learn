@@ -25,7 +25,7 @@ quiz:
     - content: "Platform as a service (PaaS)"
       isCorrect: false
       explanation: "Incorrect. Think about what Office 365 offers to the end user."
-    - content: "Software as a service (Saas)"
+    - content: "Software as a service (SaaS)"
       isCorrect: true
       explanation: "Correct! Office 365 and other Web-based productivity services are examples of software as a service. Software (in this case, document management and collaborative editing) is developed in a Web-based form and served to users over the Internet."
   
@@ -37,7 +37,7 @@ quiz:
     - content: "Platform as a service (PaaS)"
       isCorrect: true
       explanation: "Correct! Google App Engine is an example of platform as a service. Google App Engine allows developers to make their own applications using Google's platform that run on Google's infrastructure."
-    - content: "Software as a service (Saas)"
+    - content: "Software as a service (SaaS)"
       isCorrect: false
       explanation: "Incorrect. Think about what Google App Engine offers to its subscribers."
 
@@ -49,11 +49,11 @@ quiz:
     - content: "Platform as a service (PaaS)"
       isCorrect: false
       explanation: "Incorrect. Think about what Amazon EC2 offers to its subscribers."
-    - content: "Software as a service (Saas)"
+    - content: "Software as a service (SaaS)"
       isCorrect: false
       explanation: "Incorrect. Think about what Amazon EC2 offers to its subscribers."
 
-  - content: "Which of the following is true about Saas?"
+  - content: "Which of the following is true about SaaS?"
     choices:
     - content: "SaaS is a software model in which updates and patches are not required to be installed manually by every single end-user."
       isCorrect: false

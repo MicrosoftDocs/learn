@@ -1,6 +1,6 @@
 <!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u01_intro\_u01_m01_intro\x-oli-workbook_page\_u01_m01_0_module_intro.xml -->
 
-Welcome to this online course on cloud computing. This domain is emerging and fast-evolving. Here, we will introduce the big picture of cloud computing, as well as explain how it has evolved to its current state. Learning these concepts will give you a better understanding about some of the motivating factors behind cloud computing services and why it is one of the fastest growing technology segments in the industry today. 
+Welcome to this online course on cloud computing. This domain is emerging and fast-evolving. Here, we will introduce the big picture of cloud computing, as well as explain how it has evolved to its current state. Learning these concepts will give you a better understanding about some of the motivating factors behind cloud computing services and why it is one of the fastest growing technology segments in the industry today.
 
 In the first learning path of the course, we will:
 
