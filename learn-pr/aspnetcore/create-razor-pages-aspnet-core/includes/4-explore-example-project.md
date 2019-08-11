@@ -61,12 +61,12 @@ Razor Pages uses the directory structure within the *:::no-loc text="Pages":::* 
 
 The following are routing examples for this completed project:
 
-    |  URL                              |  Maps to this Razor Page          |
-    |-----------------------------------|-----------------------------------|
-    |*:::no-loc text="www.domain.com":::*                   |*:::no-loc text="/Pages/index.cshtml":::*               |
-    |*:::no-loc text="www.domain.com/index":::*              |*:::no-loc text="/Pages/index.cshtml":::*               |
-    |*:::no-loc text="www.domain.com/products":::*            |*:::no-loc text="/Pages/Products/index.cshtml":::*     |                                                  
-    |*:::no-loc text="www.domain.com/products/create":::*     |*:::no-loc text="/Pages/Products/create.cshtml":::*    |
+|  URL                              |  Maps to this Razor Page          |
+|-----------------------------------|-----------------------------------|
+|*:::no-loc text="www.domain.com":::*                   |*:::no-loc text="/Pages/index.cshtml":::*               |
+|*:::no-loc text="www.domain.com/index":::*              |*:::no-loc text="/Pages/index.cshtml":::*               |
+|*:::no-loc text="www.domain.com/products":::*            |*:::no-loc text="/Pages/Products/index.cshtml":::*     |                                                  
+|*:::no-loc text="www.domain.com/products/create":::*     |*:::no-loc text="/Pages/Products/create.cshtml":::*    |
 
 ### Organize groups of related Razor pages
 
