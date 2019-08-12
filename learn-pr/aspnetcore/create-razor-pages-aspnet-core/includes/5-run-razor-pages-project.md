@@ -43,7 +43,7 @@ You can stop the *:::no-loc text="ContosoPets.UI":::* application from running a
 We can't view the *:::no-loc text="ContosoPets.UI":::* application's pages in a browser, since it is not yet hosted on a public endpoint.  We will host the the app on a public endpoint in a following step.
 
 > [!IMPORTANT]
-> Check *:::no-loc text="ContosoPets.UI.log":::* if you encounter any unexpected behavior. If the build fails or other errors occur, the log file's information helps to troubleshoot. If you make code changes, run `kill $(pidof dotnet)` to stop all .NET Core apps before attempting to run again.
+> If you make code changes, run `kill $(pidof dotnet)` to stop all .NET Core apps before attempting to run again.
 
 A variation of the following output displays to indicate your application is being hosted:
 
