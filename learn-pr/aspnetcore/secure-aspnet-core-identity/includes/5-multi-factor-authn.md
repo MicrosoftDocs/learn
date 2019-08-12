@@ -54,7 +54,7 @@ To avoid distracting from the focus on Identity, the boilerplate to support QR c
 
 1. Click the **Accept** link in the banner to accept the privacy and cookie policy. Refresh the page.
 
-    A cookie named *.AspNet.Consent* is created to mark acceptance of the policy. It expires one year from the acceptance date.
+    A cookie named *:::no-loc text=".AspNet.Consent":::* is created to mark acceptance of the policy. It expires one year from the acceptance date.
 
 1. Select the **Add authenticator app** button.
 
