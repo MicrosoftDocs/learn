@@ -18,7 +18,7 @@ Razor Pages enforces separation of concerns for page-related data properties and
 Use Razor Pages in your ASP.NET Core application when:
 
 * You want to generate dynamic UI for a browser from your ASP.NET Core application.
-* You prefer a page-focused approach to developing web apps, where the page markup and *:::no-loc text="PageModel":::* are in close proximity.
+* You prefer a page-focused approach to developing web applications, where the page markup and *:::no-loc text="PageModel":::* are in close proximity.
 * You want your page-focused ASP.NET Core application to use shared common HTML elements across your site and reusable partial views.
 
 Razor Pages allow you to keep your ASP.NET Core pages organized in a simpler way:
@@ -26,9 +26,9 @@ Razor Pages allow you to keep your ASP.NET Core pages organized in a simpler way
 * All view (page) specific logic and page properties defined in the Razor page's (*:::no-loc text="PageModel":::*) can be kept together in their own namespace and directory.
 * Groups of related pages can be kept in their own namespace and directory.
 
-ASP.NET Core also supports the MVC pattern for building web apps. The Model defines the fundamental behaviors and data for the app and its components. The View uses HTML and Razor syntax to provide the UI. The Controller is a class that receives requests and handles user actions.
+ASP.NET Core also supports the MVC pattern for building web applications. The Model defines the fundamental behaviors and data for the application and its components. The View uses HTML and Razor syntax to provide the UI. The Controller is a class that receives requests and handles user actions.
 
-Use the MVC pattern in your ASP.NET Core apps when you prefer that pattern for building web apps with a clear separation between the model, view, and controller.
+Use the MVC pattern in your ASP.NET Core applications when you prefer that pattern for building web applications with a clear separation between the model, view, and controller.
 
 Razor Pages was introduced with ASP.NET Core 2.0 and is built on the same infrastructure as ASP.NET Core MVC. Both Razor Pages and MVC can be used within the same ASP.NET Core app. ASP.NET Core MVC is outside of the scope for this module.
 
