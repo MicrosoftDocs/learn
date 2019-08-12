@@ -4,11 +4,11 @@ In the health care system, your application should automatically fail over and u
 
 In this exercise, you’ll run an application that shows how you can use the Circuit Breaker pattern with an RA-GRS storage account. The application switches to the secondary storage account when a problem is detected, and fails back to the primary location when it's available again. The application uploads a file to blob storage, it then loops, repeatedly downloading the same file. If there's an error reading the storage account from the primary location, the application retries the operation. If the retry fails after a number of repeated attempts, the application switches to the storage account at the secondary location. The application reads the data from the secondary location until the number of reads has exceeded a specified threshold. The application then attempts to switch back to the primary location, but returns to the secondary location if the primary location is still unavailable.
 
-![Failover Visual](../media/5-exercise-failover-visual.png)
+![A diagram that shows the exercise scenario for configuring failover](../media/5-exercise-failover-visual.png)
 
 ## What is Fiddler?
 
-The Fiddler tool is a third-party tool that is used to help you debug applications, in particular web applications. It captures network traffic between computers, and based on the result, uses its event-based scripting subsystem to halt connections. In this exercise, you'll use Fiddler to monitor the connection to the storage account for the health care application. When the application detects that consultants are no longer able to download blobs from storage, it will initiate failover to the secondary storage account. When it detects that the primary connection is available again, it will redirect the connections to the primary location. You'll see the traffic being directed to the different storage account endpoints in Fiddler.
+The Fiddler tool is a third-party tool that is used to help you debug applications, in particular web applications. It captures network traffic between computers, and based on the result, uses its event-based scripting subsystem to halt connections. In this exercise, you'll use Fiddler to monitor the connection to the storage account for the health care application. When the application detects that consultants are no longer able to download blobs from storage, it will start failover to the secondary storage account. When it detects that the primary connection is available again, it will redirect the connections to the primary location. You'll see the traffic being directed to the different storage account endpoints in Fiddler.
 
 If you don't have Fiddler installed already, download it and install from the [Telerik Fiddler home page](https://www.telerik.com/fiddler).
 
@@ -37,7 +37,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
 4. On the **HTTPS** tab, select **Decrypt HTTPS traffic**. If you're prompted to install additional certificates from Fiddler, accept them, then close Fiddler and restart it.
 
-    ![Fiddler, showing the **HTTPS** tab in the **Options** dialog box](../media/5-fiddler-options.png)
+    ![A screenshot of the Fiddler application, showing the **HTTPS** configuration tab in the **Options** dialog box](../media/5-fiddler-options.png)
 
 ## Examine the sample application
 
@@ -200,7 +200,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
         if (retryCount >= retryThreshold)
         {
 
-            // Check to see if we can fail over to secondary.
+            // Check to see if we can failover to secondary.
             if (blobClient.DefaultRequestOptions.LocationMode != LocationMode.SecondaryOnly)
             {
                 blobClient.DefaultRequestOptions.LocationMode = LocationMode.SecondaryOnly;
@@ -249,11 +249,11 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
     The application starts by uploading a file to your Azure storage account. The application waits until the file has been replicated to the secondary storage account location, and then loops, downloading the file repeatedly. The application displays a message with an iteration number, and a prefix indicating that file was downloaded from the primary location. For example, *P0* for the first iteration, *P1* for the second iteration, and so on.
 
-    ![The output of the sample application, showing the messages displayed as the data is repeatedly downloaded](../media/5-app-download.png)
+    ![A screenshot of the output from the sample application, showing the messages displayed as the data is repeatedly downloaded](../media/5-app-download.png)
 
 2. While the app is running, switch to Fiddler. Fiddler shows the HTTP traffic uploading the file to your storage account and then downloading the data again. The left-hand pane should display a list of requests sent to your storage account, similar to the following image:
 
-    ![Fiddler, showing the traffic sent to your Azure storage account by the sample application](../media/5-fiddler-status.png)
+    ![A screenshot of the Fiddler application, showing the traffic sent to your Azure storage account by the sample application](../media/5-fiddler-status.png)
 
 3. Return to the application window and press any key to pause it.
 
@@ -267,7 +267,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
     }
     ```
 
-    The JavaScript code you added to the Fiddler **OnBeforeResponse** function returns an HTTP 503 (Service Unavailable) error for requests to the primary storage account location, to simulate the storage endpoint being unaccessible. The circuit breaker code in the sample application should detect this failure and fail over to using the secondary storage location. The data was previously replicated from the primary to the secondary storage location by Azure, so the data should be accessible.
+    The JavaScript code you added to the Fiddler **OnBeforeResponse** function returns an HTTP 503 (Service Unavailable) error for requests to the primary storage account location, to simulate the storage endpoint being unaccessible. The circuit breaker code in the sample application should detect this failure and failover to using the secondary storage location. The data was previously replicated from the primary to the secondary storage location by Azure, so the data should be accessible.
 
 6. On the **File** menu, click **Save**.
 
@@ -275,7 +275,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
 8. In Fiddler, you'll see HTTP 503 errors being generated against the primary location. The application window will display the message *Retrying event because of error reading the primary*. After five retries, the circuit breaker in the application switches to the secondary location and starts reading from there instead. You'll see messages with the "S" prefix (for secondary) rather than "P". After reading from the secondary account for a short period, the circuit breaker will attempt to switch back to the primary location. This will fail, so the circuit breaker will revert to the secondary location for another period. This process will continue until the primary location becomes available again:
 
-    ![The output of the sample application, showing the switch from the primary account to the secondary account](../media/5-app-switch.png)
+    ![A screenshot of the output from the sample application, showing the switch from the primary account to the secondary account](../media/5-app-switch.png)
 
 9. Press a key to pause the application once again.
 

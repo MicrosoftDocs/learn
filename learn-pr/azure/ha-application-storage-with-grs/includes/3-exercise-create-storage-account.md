@@ -2,9 +2,9 @@ As the solution architect for the health care system, you want to start preparin
 
 In this exercise, you'll create an Azure storage account and configure the account for RA-GRS. By default the storage account is set to LRS when you create it. You'll change this mode to RA-GRS as you want the application to be highly available. The storage account will be used as a disaster recovery feature to ensure the application is always running.
 
-As the first step you will create an Azure storage account. The storage account will be used to store the application data.
+As the first step you'll create an Azure storage account. The storage account will be used to store the application data.
 
-![Exercise scenario storage account visual](../media/3-storage-account-overview.png) 
+![A diagram that shows the exercise scenario storage account configuration](../media/3-storage-account-overview.png)
 
 ## Create an Azure storage account
 
@@ -27,7 +27,7 @@ In this step, you'll create a new storage account. This storage account hosts th
 
     Make a note of the value of the **\$STORAGEACCT** variable, in case you need to recreate it in a later exercise.
 
-    This step sets the replication policy of the storage account to RA-GRS to enable the application to fail over to the secondary region in the event of an outage.
+    This step sets the replication policy of the storage account to RA-GRS to enable the application to fail over to the secondary region if there's an outage.
 
 1. Verify the replication status by running the following command:
 
@@ -53,7 +53,7 @@ In this step, you'll create a new storage account. This storage account hosts th
 
 ## Azure storage account failover
 
-In this step you will use the Cloud Shell to view the replication status of your storage account. 
+In this step, you'll use the Cloud Shell to view the replication status of your storage account.
 
 1. Run the following command in the Cloud Shell to view the status of the primary and secondary locations.
 
