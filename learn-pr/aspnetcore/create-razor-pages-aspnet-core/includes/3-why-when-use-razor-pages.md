@@ -31,5 +31,3 @@ ASP.NET Core also supports the MVC pattern for building web applications. The Mo
 Use the MVC pattern in your ASP.NET Core applications when you prefer that pattern for building web applications with a clear separation between the model, view, and controller.
 
 Razor Pages was introduced with ASP.NET Core 2.0 and is built on the same infrastructure as ASP.NET Core MVC. Both Razor Pages and MVC can be used within the same ASP.NET Core app. ASP.NET Core MVC is outside of the scope for this module.
-
-Next, let's explore the *:::no-loc text="ContosoPets.UI":::* Razor Pages project.
