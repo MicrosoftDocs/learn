@@ -62,22 +62,14 @@ If you run the app on your own machine, you'd be able to direct a browser to 'ht
 
 ### Deploy your *:::no-loc text="ContosoPets.UI":::* application to a public endpoint hosted on Azure App Service
 
-1. Run the following command in the command shell to ensure you are still at the project directory:
-
-    ```bash
-    cd ~/razor-pages-example/src/ContosoPets.UI
-    ```
-
-    [!INCLUDE[OS-specific keyboard shortcuts](../../../includes/azure-cloudshell-copy-paste-tip.md)]
-
-    The current directory changes to the newly created *:::no-loc text="ContosoPets.UI":::* directory.
-
 1. Run the following command in the command shell:
 
     ```bash
     az webapp up
     ```
-
+    
+[!INCLUDE[OS-specific keyboard shortcuts](../../../includes/azure-cloudshell-copy-paste-tip.md)]
+    
 The preceding Azure CLI command provisions a public endpoint for this project. Be patient, as the first deployment of the application will take longer.
 
 Something like the following text should eventually display to indicate the web UI is being deployed.
