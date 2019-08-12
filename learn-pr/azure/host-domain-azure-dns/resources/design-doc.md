@@ -43,7 +43,7 @@ Identify the subtasks of *Manage DNS records with Azure DNS*
 
 1. **Introduction**
 
-    You recently bought the custom domain name wideworldimporters.com from a domain name registrar. The domain name is for a new website your organization plans to launch. You need a hosting service for DNS domains. This hosting service would resolve the wideworldimporters.com domain to the IP address of your web server. You're already using Azure to build your website. To manage your domain, you decide to use Azure DNS. With Azure DNS, you can keep things simple and be able to use the same credentials, APIs, tools, and billing as your other Azure services.  
+    You recently bought the custom domain name wideworldimporters.com from a domain name registrar. The domain name is for a new website your organization plans to launch. You need a hosting service for DNS domains. This hosting service would resolve the wideworldimporters.com domain to the IP address of your web server. You're already using Azure to build your website. To manage your domain, you decide to use Azure DNS. With Azure DNS, you can keep things simple and use the same credentials, APIs, tools, and billing as your other Azure services.  
 
 1. **What is Azure DNS?**
     - What does Azure DNS do?
@@ -102,7 +102,7 @@ Identify the subtasks of *Manage DNS records with Azure DNS*
     1. Change public IP.
     1. Verify name still resolves.
 
-    See: [Announcing Alias records for Azure DNS](https://azure.microsoft.com/en-gb/blog/announcing-alias-records-for-azure-dns/)
+    See: [Announcing Alias records for Azure DNS](https://azure.microsoft.com/blog/announcing-alias-records-for-azure-dns/)
 
 1. **Summary**
 
