@@ -21,7 +21,7 @@ UI changes are also required to collect the additional user profile information.
     * The `--dbContext` option provides the tool with knowledge of the existing `DbContext`-derived class named `ContosoPetsAuth`.
     * The `--files` option specifies a semicolon-delimited list of unique files to be added to the *Identity* area.
     * The `--userClass` option results in the creation of an `IdentityUser`-derived class named `ContosoPetsUser`.
-    * The `--force` option causes existing files in the *Identity* area to be overwritten.
+    * The `--force` option causes existing files in the *:::no-loc text="Identity":::* area to be overwritten.
 
     > [!TIP]
     > Run the following command from the project root to view valid values for the `--files` option:
@@ -30,49 +30,49 @@ UI changes are also required to collect the additional user profile information.
     > dotnet aspnet-codegenerator identity --listFiles --force
     > ```
 
-    The following files are added to the *Areas/Identity* directory:
+    The following files are added to the *:::no-loc text="Areas/Identity":::* directory:
 
-    * **Data/**
-        * *ContosoPetsUser.cs*
-    * **Pages/**
-        * *_ViewImports.cshtml*
-        * **Account/**
-            * *_ViewImports.cshtml*
-            * *Register.cshtml*
-            * *Register.cshtml.cs*
-            * **Manage/**
-                * *_ManageNav.cshtml*
-                * *_ViewImports.cshtml*
-                * *EnableAuthenticator.cshtml*
-                * *EnableAuthenticator.cshtml.cs*
-                * *Index.cshtml*
-                * *Index.cshtml.cs*
-                * *ManageNavPages.cs*
+    * **:::no-loc text="Data/":::**
+        * *:::no-loc text="ContosoPetsUser.cs":::*
+    * **:::no-loc text="Pages/":::**
+        * *:::no-loc text="_ViewImports.cshtml":::*
+        * **:::no-loc text="Account/":::**
+            * *:::no-loc text="_ViewImports.cshtml":::*
+            * *:::no-loc text="Register.cshtml":::*
+            * *:::no-loc text="Register.cshtml.cs":::*
+            * **:::no-loc text="Manage/":::**
+                * *:::no-loc text="_ManageNav.cshtml":::*
+                * *:::no-loc text="_ViewImports.cshtml":::*
+                * *:::no-loc text="EnableAuthenticator.cshtml":::*
+                * *:::no-loc text="EnableAuthenticator.cshtml.cs":::*
+                * *:::no-loc text="Index.cshtml":::*
+                * *:::no-loc text="Index.cshtml.cs":::*
+                * *:::no-loc text="ManageNavPages.cs":::*
 
-    Additionally, the *Data/ContosoPetsAuth.cs* file, which existed prior to running the preceding command, was overwritten because the `--force` option was used. The `ContosoPetsAuth` class declaration now references the newly created user type of `ContosoPetsUser`:
+    Additionally, the *:::no-loc text="Data/ContosoPetsAuth.cs":::* file, which existed prior to running the preceding command, was overwritten because the `--force` option was used. The `ContosoPetsAuth` class declaration now references the newly created user type of `ContosoPetsUser`:
 
     ```csharp
     public class ContosoPetsAuth : IdentityDbContext<ContosoPetsUser>
     ```
 
-    The *EnableAuthenticator* Razor page was scaffolded, though it won't be modified until later in the module.
+    The *:::no-loc text="EnableAuthenticator":::* Razor page was scaffolded, though it won't be modified until later in the module.
 
-1. In the `Configure` method of *Areas/Identity/IdentityHostingStartup.cs*, the call to `AddDefaultIdentity` needs to be made aware of the new Identity user type. Incorporate the following highlighted change, and save the file.
+1. In the `Configure` method of *:::no-loc text="Areas/Identity/IdentityHostingStartup.cs":::*, the call to `AddDefaultIdentity` needs to be made aware of the new Identity user type. Incorporate the following highlighted change, and save the file.
 
     [!code-csharp[](../code/Areas/Identity/IdentityHostingStartup.cs?name=snippet_ConfigureAddDefaultIdentity&highlight=1)]
 
-1. Update *Pages/Shared/_LoginPartial.cshtml* to incorporate the following highlighted changes. Save your changes.
+1. Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to incorporate the following highlighted changes. Save your changes.
 
     [!code-cshtml[](../code/Pages/Shared/4-_LoginPartial.cshtml?range=1-6&highlight=2-4)]
 
     The preceding changes update the user type passed to both `SignInManager<T>` and `UserManager<T>` in the `@inject` directives. Instead of the default `IdentityUser` type, `ContosoPetsUser` user is now referenced. The `@using` directive was added to resolve the `ContosoPetsUser` references.
 
-    *Pages/Shared/_LoginPartial.cshtml* is physically located outside of the *Identity* area. Consequently, the file wasn't updated automatically by the scaffold tool. The appropriate changes had be made manually.
+    *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* is physically located outside of the *:::no-loc text="Identity":::* area. Consequently, the file wasn't updated automatically by the scaffold tool. The appropriate changes had be made manually.
 
     > [!TIP]
-    > As an alternative to manually editing the *_LoginPartial.cshtml* file, it can be deleted prior to running the scaffold tool. The *_LoginPartial.cshtml* file will be recreated with references to the new `ContosoPetsUser` class.
+    > As an alternative to manually editing the *:::no-loc text="_LoginPartial.cshtml":::* file, it can be deleted prior to running the scaffold tool. The *:::no-loc text="_LoginPartial.cshtml":::* file will be recreated with references to the new `ContosoPetsUser` class.
 
-1. Update *Areas/Identity/Data/ContosoPetsUser.cs* to support storage and retrieval of the additional user profile data. Make the following changes:
+1. Update *:::no-loc text="Areas/Identity/Data/ContosoPetsUser.cs":::* to support storage and retrieval of the additional user profile data. Make the following changes:
     1. Add the `FirstName` and `LastName` properties:
 
         [!code-csharp[](../code/Areas/Identity/Data/ContosoPetsUser.cs?highlight=3-5,7-9)]
@@ -202,13 +202,13 @@ UI changes are also required to collect the additional user profile information.
 
 ## Customize the user registration form
 
-1. In *Areas/Identity/Pages/Account/Register.cshtml*, add the following highlighted markup:
+1. In *:::no-loc text="Areas/Identity/Pages/Account/Register.cshtml":::*, add the following highlighted markup:
 
     [!code-cshtml[](../code/Areas/Identity/Pages/Account/4-Register-FirstAndLastName.cshtml?range=1-19&highlight=5-14)]
 
     With the preceding markup, **First name** and **Last name** text boxes are added to the user registration form.
 
-1. In *Areas/Identity/Pages/Account/Register.cshtml.cs*, add support for the name text boxes.
+1. In *:::no-loc text="Areas/Identity/Pages/Account/Register.cshtml.cs":::*, add support for the name text boxes.
     1. Add the `FirstName` and `LastName` properties to the `InputModel` class:
 
         [!code-csharp[](../code/Areas/Identity/Pages/Account/4-Register-FirstAndLastName.cshtml.cs?name=snippet_InputModel)]
@@ -223,17 +223,17 @@ UI changes are also required to collect the additional user profile information.
 
 ## Customize the site header
 
-Update *Pages/Shared/_LoginPartial.cshtml* to display the first and last name collected during user registration. The highlighted lines in the following snippet are needed:
+Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to display the first and last name collected during user registration. The highlighted lines in the following snippet are needed:
 
 [!code-cshtml[](../code/Pages/Shared/4-_LoginPartial.cshtml?highlight=9-10,13)]
 
 ## Customize the profile management form
 
-1. In *Areas/Identity/Pages/Account/Manage/Index.cshtml*, add the following highlighted markup. Save your changes.
+1. In *:::no-loc text="Areas/Identity/Pages/Account/Manage/Index.cshtml":::*, add the following highlighted markup. Save your changes.
 
     [!code-cshtml[](../code/Areas/Identity/Pages/Account/Manage/4-Index-FirstAndLastName.cshtml?range=1-16&highlight=3-12)]
 
-1. In *Areas/Identity/Pages/Account/Manage/Index.cshtml.cs*, make the following changes to support the name text boxes.
+1. In *:::no-loc text="Areas/Identity/Pages/Account/Manage/Index.cshtml.cs":::*, make the following changes to support the name text boxes.
     1. Add the `FirstName` and `LastName` properties to the `InputModel` class:
 
         [!code-csharp[](../code/Areas/Identity/Pages/Account/Manage/4-Index.cshtml.cs?name=snippet_FirstAndLastNameInputModel&highlight=3-6,8-11)]

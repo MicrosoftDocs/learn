@@ -57,16 +57,16 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
 
 1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)]
 
-    An *Areas* directory structure appears in the project root:
+    An *:::no-loc text="Areas":::* directory structure appears in the project root:
 
-    * *Areas*
-        * *Identity*
-            * *Data*
-                * *ContosoPetsAuth.cs*
-            * *Pages*
-                * *_ValidationScriptsPartial.cshtml*
-                * *_ViewStart.cshtml*
-            * *IdentityHostingStartup.cs*
+    * *:::no-loc text="Areas":::*
+        * *:::no-loc text="Identity":::*
+            * *:::no-loc text="Data":::*
+                * *:::no-loc text="ContosoPetsAuth.cs":::*
+            * *:::no-loc text="Pages":::*
+                * *:::no-loc text="_ValidationScriptsPartial.cshtml":::*
+                * *:::no-loc text="_ViewStart.cshtml":::*
+            * *:::no-loc text="IdentityHostingStartup.cs":::*
 
 ::: zone pivot="pg"
 
@@ -84,7 +84,7 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
 
 ## Configure the database connection
 
-1. Replace the `Configure` method of *Areas/Identity/IdentityHostingStartup.cs* with the following:
+1. Replace the `Configure` method of *:::no-loc text="Areas/Identity/IdentityHostingStartup.cs":::* with the following code:
 
     ::: zone pivot="pg"
 
@@ -141,11 +141,11 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
         connBuilder.Password = context.Configuration["DbPassword"];
         ```
 
-    * The database username and password are injected into the connection string stored in *appsettings.json*.
+    * The database username and password are injected into the connection string stored in *:::no-loc text="appsettings.json":::*.
     * The EF Core database context class, named `ContosoPetsAuth`, is configured with the appropriate connection string.
     * The Identity services are registered, including the default UI (based on Bootstrap version 4), token providers, and cookie-based authentication.
 
-1. Also in *IdentityHostingStartup.cs*, add the following code to the block of `using` statements at the top. Save your changes.
+1. Also in *:::no-loc text="IdentityHostingStartup.cs":::*, add the following code to the block of `using` statements at the top. Save your changes.
 
     ::: zone pivot="pg"
 
@@ -167,11 +167,13 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
 
     ::: zone-end
 
-1. In the `Configure` method of *Startup.cs*, replace the `// Add the app.UseAuthentication code` comment with the following code. Save your changes.
+1. In the `Configure` method of *:::no-loc text="Startup.cs":::*, replace the `// Add the app.UseAuthentication code` comment with the following code. Save your changes.
 
     ```csharp
     app.UseAuthentication();
     ```
+
+    The preceding code enables authentication capabilities. More specifically, an instance of the ASP.NET Core authentication middleware is added to the app's HTTP request-handling pipeline.
 
 1. Run the following command to print the database connection string to the console. Copy the connection string to your clipboard.
 
@@ -292,20 +294,20 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
 
 ## Add the login and registration link
 
-1. In *Pages/Shared/_Layout.cshtml*, replace the `@* Add the _LoginPartial partial view *@` comment with the following. Save your changes.
+1. In *:::no-loc text="Pages/Shared/_Layout.cshtml":::*, replace the `@* Add the _LoginPartial partial view *@` comment with the following. Save your changes.
 
     ```cshtml
     <partial name="_LoginPartial" />
     ```
 
-    The preceding markup renders the `_LoginPartial` partial view within the header of any page that uses the default layout. `_LoginPartial` was added by the Identity scaffold. This partial view presents the user with **Log in** and **Register** links if the user is not signed in.
+    The preceding markup renders the `_LoginPartial` partial view within the header of any page that uses the default layout. `_LoginPartial` was added by the Identity scaffold. This partial view presents the user with **Log in** and **Register** links if the user isn't signed in.
 
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
 
 1. [!INCLUDE[az webapp up command](../../includes/az-webapp-up-command.md)]
 
     > [!NOTE]
-    > The *.azure/config* file in the project root contains the configuration values used by `az webapp up`.
+    > The *:::no-loc text=".azure/config":::* file in the project root contains the configuration values used by `az webapp up`.
 
 1. Run the following command to view the app's URL. Navigate to that URL in your browser.
 
@@ -319,11 +321,11 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
 
     * You're redirected to the homepage.
     * The app's header displays your email address and a **Logout** link.
-    * A cookie named *.AspNetCore.Identity.Application* is created. Identity preserves user sessions with cookie-based authentication.
+    * A cookie named *:::no-loc text=".AspNetCore.Identity.Application":::* is created. Identity preserves user sessions with cookie-based authentication.
 
 1. Click the **Logout** link in the app's header.
 
     After successful logout:
 
-    * You're redirected to a page titled **Log out** located at the */Identity/Account/Logout* route.
-    * The *.AspNetCore.Identity.Application* cookie is deleted to terminate the user session.
+    * You're redirected to a page titled **Log out** located at the *:::no-loc text="/Identity/Account/Logout":::* route.
+    * The *:::no-loc text=".AspNetCore.Identity.Application":::* cookie is deleted to terminate the user session.

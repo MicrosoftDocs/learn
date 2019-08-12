@@ -81,9 +81,9 @@ Your development team makes the following technical decisions:
 
 ## Review starter code
 
-The app consists of a single ASP.NET Core Razor Pages project named *ContosoPets.Ui*. The project contains the user interface for viewing and managing product data. The product data is obtained via an external ASP.NET Core web API.
+The app consists of a single ASP.NET Core Razor Pages project named *:::no-loc text="ContosoPets.Ui":::*. The project contains the user interface for viewing and managing product data. The product data is obtained via an external ASP.NET Core web API.
 
-Of particular interest are the following files and directories in *ContosoPets.Ui*:
+Of particular interest are the following files and directories in *:::no-loc text="ContosoPets.Ui":::*:
 
 |Name              |Description                                                    |
 |------------------|---------------------------------------------------------------|

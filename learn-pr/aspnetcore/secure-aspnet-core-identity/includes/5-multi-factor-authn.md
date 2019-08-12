@@ -7,14 +7,14 @@ Multiple strategies exist for generating the QR code. An example includes using 
 To avoid distracting from the focus on Identity, the boilerplate to support QR code generation has been provided. The supporting changes include:
 
 * The NuGet package, `QRCoder`, has already been installed in the project.
-* All interactions with the `QRCoder` library are abstracted away in the *Services/QRCodeService.cs* file. The `QRCodeService` class:
+* All interactions with the `QRCoder` library are abstracted away in the *:::no-loc text="Services/QRCodeService.cs":::* file. The `QRCodeService` class:
     * Uses constructor injection to gain access to an instance of the library's `QRCodeGenerator` class.
     * Exposes the `GetQRCodeAsBase64` method to return the base-64 encoded string. The QR code dimensions are determined by the integer value passed to `GetGraphic`. In this case, the generated QR code will be composed of blocks sized four pixels squared.
-* `QRCodeService` is registered as a singleton service in the IoC container within *Startup.cs*.
+* `QRCodeService` is registered as a singleton service in the IoC container within *:::no-loc text="Startup.cs":::*.
 
 ## Customize multi-factor authentication
 
-1. Open *Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml.cs* and make the following changes and save:
+1. Open *:::no-loc text="Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml.cs":::* and make the following changes and save:
     1. Add the following property to the `EnableAuthenticatorModel` class to store the QR code's base-64 string representation:
 
         [!code-csharp[](../code/Areas/Identity/Pages/Account/Manage/5-EnableAuthenticator.cshtml.cs?name=snippet_QrCodeAsBase64&highlight=7)]
@@ -31,7 +31,7 @@ To avoid distracting from the focus on Identity, the boilerplate to support QR c
         using ContosoPets.Ui.Services;
         ```
 
-1. In *Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml*, make the following highlighted changes and save:
+1. In *:::no-loc text="Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml":::*, make the following highlighted changes and save:
 
     [!code-csharp[](../code/Areas/Identity/Pages/Account/Manage/5-EnableAuthenticator.cshtml?highlight=4-6)]
 

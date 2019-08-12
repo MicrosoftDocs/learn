@@ -4,7 +4,7 @@ In this unit, you'll create a new user with administrative privileges. A demonst
 
 The products catalog page should be visible only to authenticated users. However, only administrators are allowed to edit, create, and delete products.
 
-1. In *Pages/Products/Index.cshtml.cs*, apply the following changes:
+1. In *:::no-loc text="Pages/Products/Index.cshtml.cs":::*, apply the following changes:
     1. Replace the `// Add [Authorize] attribute` comment with the following attribute:
 
         ```csharp
@@ -37,7 +37,7 @@ The products catalog page should be visible only to authenticated users. However
 
         When an authenticated employee attempts to delete a product via the UI or by manually sending an HTTP DELETE request to this page, an HTTP 403 status code is returned.
 
-1. In *Pages/Products/Index.cshtml*, update the **Edit**, **Delete**, and **Add Product** links with the highlighted code:
+1. In *:::no-loc text="Pages/Products/Index.cshtml":::*, update the **Edit**, **Delete**, and **Add Product** links with the highlighted code:
 
     **Edit & Delete links:**
 
@@ -53,7 +53,7 @@ The products catalog page should be visible only to authenticated users. However
 
 The **Create Product** and **Edit Product** pages should be accessible only to administrators. To encapsulate the authorization criteria for such pages, an `Admin` policy will be created.
 
-1. In the `ConfigureServices` method of *Startup.cs*, replace the `// Add call to AddAuthorization` comment with the following code:
+1. In the `ConfigureServices` method of *:::no-loc text="Startup.cs":::*, replace the `// Add call to AddAuthorization` comment with the following code:
 
     ```csharp
     services.AddAuthorization(options =>
@@ -64,7 +64,7 @@ The **Create Product** and **Edit Product** pages should be accessible only to a
 
     The preceding code defines an authorization policy named `Admin`. The policy requires that the user is authenticated and has an `IsAdmin` claim set to `True`.
 
-1. In *Pages/Products/**Create**.cshtml.cs*, apply the following changes:
+1. In *:::no-loc text="Pages/Products/**Create**.cshtml.cs":::*, apply the following changes:
     1. Replace the `// Add [Authorize(Policy = "Admin")] attribute` comment with the following attribute:
 
         ```csharp
@@ -77,7 +77,7 @@ The **Create Product** and **Edit Product** pages should be accessible only to a
 
         The preceding change resolves the `[Authorize(Policy = "Admin")]` attribute in the previous step.
 
-1. In *Pages/Products/**Edit**.cshtml.cs*, apply the same changes as in the previous step:
+1. In *:::no-loc text="Pages/Products/**Edit**.cshtml.cs":::*, apply the same changes as in the previous step:
     1. Replace the `// Add [Authorize(Policy = "Admin")] attribute` comment with the following attribute:
 
         ```csharp
@@ -90,7 +90,7 @@ The **Create Product** and **Edit Product** pages should be accessible only to a
 
 Modify the registration page to allow administrators to register using the following steps.
 
-1. In *Areas/Identity/Pages/Account/Register.cshtml.cs*, make the following changes:
+1. In *:::no-loc text="Areas/Identity/Pages/Account/Register.cshtml.cs":::*, make the following changes:
     1. Add the following property to the `InputModel` class:
 
         [!code-csharp[](../code/Areas/Identity/Pages/Account/6-Register.cshtml.cs?name=snippet_AdminEnrollmentKey&highlight=3-5)]
@@ -111,7 +111,7 @@ Modify the registration page to allow administrators to register using the follo
         using System.Security.Claims;
         ```
 
-1. In *Areas/Identity/Pages/Account/Register.cshtml*, add the following markup:
+1. In *:::no-loc text="Areas/Identity/Pages/Account/Register.cshtml":::*, add the following markup:
 
     [!code-cshtml[](../code/Areas/Identity/Pages/Account/6-Register.cshtml?highlight=6-10)]
 
@@ -134,7 +134,7 @@ Modify the registration page to allow administrators to register using the follo
     ```
 
     > [!WARNING]
-    > The administrator self-enrollment mechanism is for illustrative purposes only. The */api/Admin* endpoint for obtaining a token should be secured before using in a production environment.
+    > The administrator self-enrollment mechanism is for illustrative purposes only. The *:::no-loc text="/api/Admin":::* endpoint for obtaining a token should be secured before using in a production environment.
 
 1. In the web app, register a new user. The token from the previous step should be provided in the **Admin enrollment key** text box.
 
