@@ -72,7 +72,7 @@ If you run the app on your own machine, you'd be able to direct a browser to 'ht
     
 The preceding Azure CLI command provisions a public endpoint for this project. Be patient, as the first deployment of the application will take longer.
 
-Something like the following text should eventually display to indicate the web UI is being deployed.
+A variation of the following output eventually displays to indicate the web UI is being deployed:
 
 ```console
 Starting zip deployment.  This operation can take a while to complete...
