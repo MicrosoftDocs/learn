@@ -10,7 +10,7 @@ Run the following command in the command shell. Be patient, as setup can take a 
 
 When the development environment has completed set up, the project *:::no-loc text="ContosoPets.UI":::* project directory opens in the [Azure Cloud Shell editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor).
 
-You'll see the following list of project directories and files:
+You'll see the following list of *:::no-loc text="ContosoPets.UI":::* project directories and files:
 
 * *:::no-loc text="bin":::*
 * *:::no-loc text="Extensions/":::*
@@ -26,4 +26,4 @@ You'll see the following list of project directories and files:
 * *:::no-loc text="Program.cs":::*
 * *:::no-loc text="Startup.cs":::*
 
-A web API has also been deployed to a public endpoint. The *:::no-loc text="ContosoPets.UI":::* example will provide a client front end for the web API. This endpoint will be called in a later step.
+In addition, a web API has been deployed to a public endpoint. The *:::no-loc text="ContosoPets.UI":::* project will provide a client front end for the web API. This endpoint will be called in a later step.
