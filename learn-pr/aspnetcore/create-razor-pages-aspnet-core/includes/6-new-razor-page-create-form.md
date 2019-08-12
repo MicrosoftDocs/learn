@@ -15,7 +15,7 @@ The *:::no-loc text="ContosoPets.UI":::* project directory should be currently o
 1. Run the following .NET Core CLI command in the command shell at the current directory.
 
 	```bash
-	dotnet new page --name Create
+	dotnet new page --name Create --namespace ContosoPets.Ui.Pages.Products 
 	```
 
 	A new Razor page named *:::no-loc text="Create.cshtml":::* and its *:::no-loc text="PageModel":::* class file named *:::no-loc text="Create.cshtml.cs":::* are created in the *:::no-loc text="ContosoPets.Ui/Pages/Products/":::* directory. By convention, the Razor page and its *:::no-loc text="PageModel":::* class file share the same name and location.
@@ -26,13 +26,13 @@ The *:::no-loc text="ContosoPets.UI":::* project directory should be currently o
 
 1. Open your new *:::no-loc text="Create.cshtml":::* Razor page, located in the *:::no-loc text="ContosoPets.Ui/Pages/Products/":::* directory, to examine the contents. It looks like the following:
 
-```cshtml
-@page
-@model ContosoPets.Ui.Pages.CreateModel
-@{
-}
+	```cshtml
+	@page
+	@model ContosoPets.Ui.Pages.CreateModel
+	@{
+	}
 
-```
+	```
 
  The preceding default Razor Page contains:
 
