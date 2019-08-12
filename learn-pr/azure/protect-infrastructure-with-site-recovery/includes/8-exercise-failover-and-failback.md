@@ -6,7 +6,7 @@ In this exercise, you'll complete a failover for a VM using powershell, and fail
 
 ## Fail over a VM to a secondary region using PowerShell
 
-1. Sign into the [Azure portal](https://portal.azure.com) with your own credentials.
+1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with your own credentials.
 1. Start a Cloud Shell and switch it to PowerShell.
 1. Run the following commands.
     ```powershell
