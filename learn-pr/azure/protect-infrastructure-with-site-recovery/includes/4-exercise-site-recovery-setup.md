@@ -12,7 +12,7 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the por
 
 ## Create a Recovery Services Vault
 
-1. Sign into the [Azure portal](https://portal.azure.com) with your own credentials.
+1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with your own credentials.
 1. Select **+ Create a resource** option on the top-left hand side of the portal.
 1. Under the **Azure Marketplace**, select **IT & Management Tools**, then select **Backup and Site Recovery**.
 1. For the **Resource Group** select **east-coast-datacenter**.
