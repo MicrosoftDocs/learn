@@ -1,10 +1,10 @@
 In this unit, you'll use the Azure Cloud Shell editor to explore some of the ContosoPets.UI project files to understand their organization and purpose.
 
-## Examine the ContosoPets.UI project files and directories
+## Examine the *:::no-loc text="ContosoPets.UI":::* project files and directories
 
-The *ContosoPets.UI* project directory should be currently open in the [Azure Cloud Shell editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor). If it isn't, then repeat the set-up steps in the previous unit.
+The *:::no-loc text="ContosoPets.UI":::* project directory should be currently open in the [Azure Cloud Shell editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor). If it isn't, then repeat the set-up steps in the previous unit.
 
-Examine the following ContosoPets.UI files and directories by clicking on them in the Azure Cloud Shell window on the right:
+Examine the following *:::no-loc text="ContosoPets.UI":::* files and directories by clicking on them in the Azure Cloud Shell window on the right:
 
 |Name                   |Description                                                                          |
 |-----------------------|-------------------------------------------------------------------------------------|
@@ -41,7 +41,7 @@ Models in ASP.NET Core often make use of data annotations to constrain or custom
 
 Partial markup elements that are shared across several Razor pages are located by convention in a *:::no-loc text="Pages/Shared":::* directory.
 
-The ContosoPets.UI application uses three shared partial Razor Pages, which are included automatically when you create a new *ASP.NET Core Web Application* project:
+The *:::no-loc text="ContosoPets.UI":::* application uses three shared partial Razor Pages, which are included automatically when you create a new *ASP.NET Core Web Application* project:
 
 * *:::no-loc text="_Layout.cshtml":::*: Provides common layout elements across multiple Razor Pages.
 * *:::no-loc text="_CookieConsentPartial.cshtml":::*: Provides a cookie consent alert and functionality incorporated in all Razor Pages in this project.
@@ -57,7 +57,7 @@ Layouts and partial views are outside of the scope of this module. At the end of
 
 ## The *Pages* directory structure and routing requests
 
-Razor Pages uses the directory structure within the *:::no-loc text="Pages":::* directory as the convention for routing requests by default. An index page located in the root of the *:::no-loc text="Pages":::* directory, for example, is the default page for the app's site. In the ContosoPets.UI's *:::no-loc text="Pages/Products":::* directory, you'll find a collection of Razor pages, including an *:::no-loc text="Index.cshtml":::* page. Requests routed to *:::no-loc text="/Product/":::* will be directed to use the default *:::no-loc text="index.cshtml":::* page physically located at *:::no-loc text="/Products/Index.cshtml":::* for example. The *:::no-loc text="ContosoPets.UI":::* project has all of its Razor Pages (*:::no-loc text=".cshtml":::*) and related *:::no-loc text="PageModel":::* class files (*:::no-loc text=".cshtml.cs":::*) grouped conveniently in *:::no-loc text="/Pages/Products/":::*. Any passed route parameter values are made accessible through a property. ASP.NET Core offers robust routing features. For the scope of this project, we are using simple project directory for route mapping.
+Razor Pages uses the directory structure within the *:::no-loc text="Pages":::* directory as the convention for routing requests by default. An index page located in the root of the *:::no-loc text="Pages":::* directory, for example, is the default page for the app's site. In the *:::no-loc text="ContosoPets.UI":::* *:::no-loc text="Pages/Products":::* directory, you'll find a collection of Razor pages, including an *:::no-loc text="Index.cshtml":::* page. Requests routed to *:::no-loc text="/Product/":::* will be directed to use the default *:::no-loc text="index.cshtml":::* page physically located at *:::no-loc text="/Products/Index.cshtml":::* for example. The *:::no-loc text="ContosoPets.UI":::* project has all of its Razor Pages (*:::no-loc text=".cshtml":::*) and related *:::no-loc text="PageModel":::* class files (*:::no-loc text=".cshtml.cs":::*) grouped conveniently in *:::no-loc text="/Pages/Products/":::*. Any passed route parameter values are made accessible through a property. ASP.NET Core offers robust routing features. For the scope of this project, we are using simple project directory for route mapping.
 
 The following are routing examples for this completed project:
 
