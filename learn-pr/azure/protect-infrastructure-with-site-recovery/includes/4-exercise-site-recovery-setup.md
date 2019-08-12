@@ -34,35 +34,29 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the por
 
     ![Screenshot showing the vm selection pane](../media/select-vms.png)
 
-1. On the Select virtual machines pane, select both virtual machines.
+1. On the **Select virtual machines** pane, select both virtual machines.
 1. Select OK.
 
     ![Screenshot of the configure settings pane, and where to select customize.](../media/customize-settings.png)
 
-1. Select Customize.
+1. Select **Customize**.
 
     ![Screenshot sowing selecting the east coast resource group](../media/customize-target.png)
 
 1. In the **Target resource group**, change it to **east-coast-datacenter**.
-1. For each VM, change the cache storage to asrcacheXXXX, where XXX is a random number.
+1. For each VM, change the cache storage to asrcacheXXXX, where XXXX is a random number.
 1. Select **OK**.
-1. Select **Create target resources**.
-
-    > [!NOTE]
-    > Don't close the pane and wait for the target resources to be created.
+1. Select **Create target resources**. Wait for the target resources to be created.
 
     ![Screenshot showing the enable replication option](../media/enable-replication.png)
 
-1. Once the resources have been created, you can select **Enable replication**.
-
-    > [!NOTE]
-    > This step can take up to 15 minutes. Continue to the next steps to see how to monitor progress.
+1. Once the resources have been created, you can select **Enable replication**. This step can take up to 15 minutes. Continue to the next steps to monitor the progress.
 
 ## Monitor replication progress
 
-1. On the left of the portal, select All resources.
+1. On the left of the portal, select **All resources**.
 1. In the list of resources, select the **Recovery Services vault** named **lamna-vault**.
-1. On the left under Monitoring, select **Site Recovery jobs**.
+1. On the left under **Monitoring**, select **Site Recovery jobs**.
 1. In the jobs list, select the **In progress** link to view how the replication setup is progressing.
 
     ![Screenshot of all the Site Recovery jobs](../media/site-recovery-jobs.png)
