@@ -45,7 +45,18 @@ To avoid distracting from the focus on Identity, the boilerplate to support QR c
 
 1. Navigate to the site and log in with either registered user (if not already logged in). Select **Hello, [First name] [Last name]!** link to navigate to the profile management page, and then select **Two-factor authentication**.
 
-1. Select **Add authenticator app**.
+    Notice the presence of the following message on the page:
+
+    ```console
+    Privacy and cookie policy have not been accepted.
+    You must accept the policy before you can enable two factor authentication.
+    ```
+
+1. Click the **Accept** link in the banner to accept the privacy and cookie policy. Refresh the page.
+
+    A cookie named *.AspNet.Consent* is created to mark acceptance of the policy. It expires one year from the acceptance date.
+
+1. Select the **Add authenticator app** button.
 
 1. Follow the on-screen instructions to register and verify your authenticator app for this user.
 
@@ -56,12 +67,22 @@ To avoid distracting from the focus on Identity, the boilerplate to support QR c
     1. Select **Add account**.
     1. Select **Other account (Google, Facebook, etc.)**.
     1. Scan the QR code as indicated.
-    1. Enter the verification code provided in Microsoft Authenticator, and select **Verify**.
+    1. Enter the verification code provided in Microsoft Authenticator in the **Verification Code** text box.
+    1. Select **Verify**.
+
+    Upon successful verification, the page displays a **Your authenticator app has been verified.** banner and some recovery codes.
 
 1. Select **Logout**, and then log in again with the same user.
 
 1. Select the **Hello, [First name] [Last name]!** link again.
 
-1. Select the **Two-factor authentication** tab.
+1. Enter the verification code from the TOTP app in the **Authenticator code** text box, and click **Log in**.
 
-    Because Microsoft Authenticator has been set up, a **Set up authenticator app** and a **Reset authenticator app** button display.
+1. Select **Hello, [First name] [Last name]!**. Then, select the **Two-factor authentication** tab.
+
+    Because Microsoft Authenticator has been set up, the following buttons appear:
+
+    * **Disable 2FA**
+    * **Reset recovery codes**
+    * **Set up authenticator app**
+    * **Reset authenticator app**

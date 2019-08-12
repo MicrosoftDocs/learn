@@ -211,7 +211,7 @@ UI changes are also required to collect the additional user profile information.
 1. In *:::no-loc text="Areas/Identity/Pages/Account/Register.cshtml.cs":::*, add support for the name text boxes.
     1. Add the `FirstName` and `LastName` properties to the `InputModel` class:
 
-        [!code-csharp[](../code/Areas/Identity/Pages/Account/4-Register-FirstAndLastName.cshtml.cs?name=snippet_InputModel)]
+        [!code-csharp[](../code/Areas/Identity/Pages/Account/4-Register-FirstAndLastName.cshtml.cs?name=snippet_InputModel&highlight=3-6,8-11)]
 
         The `[Display]` attributes define the label text to be associated with the text boxes.
 
@@ -265,10 +265,12 @@ Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to display the fi
     > echo $webAppUrl
     > ```
 
-1. Select **Register** and use the newly modified form to register a new user.
+1. Select **Register** and use the updated form to register a new user.
 
     > [!NOTE]
     > The validation constraints on the **First Name** and **Last Name** fields reflect the data annotations on the `FirstName` and `LastName` properties of `InputModel`.
+
+    After registering, you're redirected to the homepage. The app's header now contains **Hello, [First name] [Last name]!**.
 
 1. Run the following command to confirm that the first and last names are stored in the database:
 
@@ -316,11 +318,8 @@ Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to display the fi
 1. Click the **Hello, !** link to navigate to the profile management form.
 
     > [!NOTE]
-    > The link doesn't display correctly because there aren't yet any values for `FirstName` or `LastName` for this user.
+    > The link doesn't display correctly because the `AspNetUsers` table's row for this user doesn't contain values for `FirstName` and `LastName`.
 
 1. Enter valid values for **First name** and **Last name**. Select **Save**.
 
-    The following things occur:
-
-    * A **Your profile has been updated** message appears at the top of the form.
-    * The app header updates to **Hello, [First name] [Last name]!**.
+    The app's header updates to **Hello, [First name] [Last name]!**.

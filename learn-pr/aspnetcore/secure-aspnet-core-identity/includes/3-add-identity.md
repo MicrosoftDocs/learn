@@ -320,12 +320,9 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
     After successful registration:
 
     * You're redirected to the homepage.
-    * The app's header displays your email address and a **Logout** link.
+    * The app's header displays **Hello [Email address]** and a **Logout** link.
     * A cookie named *:::no-loc text=".AspNetCore.Identity.Application":::* is created. Identity preserves user sessions with cookie-based authentication.
 
 1. Click the **Logout** link in the app's header.
 
-    After successful logout:
-
-    * You're redirected to a page titled **Log out** located at the *:::no-loc text="/Identity/Account/Logout":::* route.
-    * The *:::no-loc text=".AspNetCore.Identity.Application":::* cookie is deleted to terminate the user session.
+    After successful logout, the *:::no-loc text=".AspNetCore.Identity.Application":::* cookie is deleted to terminate the user session.
