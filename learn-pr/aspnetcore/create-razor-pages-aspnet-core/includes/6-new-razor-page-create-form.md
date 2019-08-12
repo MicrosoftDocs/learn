@@ -39,7 +39,7 @@ The *:::no-loc text="ContosoPets.UI":::* project directory should be currently o
 * Reserved Razor keywords:
 	* The `@page` directive is what makes this a Razor page. It indicates this page can handle HTTP requests. The `@page` directive must be the first directive on a Razor page.
 	* The `@model` directive is Razor syntax specifying the type of the model made available to the Razor page. In this case, the `ContosoPets.UI.Pages.Products.Create` `PageModel`-derived class. `ContosoPets.UI.Pages.Products.CreateModel` was automatically defined in the *:::no-loc text="Create.cshtml.cs":::* class file. *:::no-loc text="Create.cshtml.cs":::* was generated when you made a new Razor page named *:::no-loc text="Create":::*.
-* HTML: Such as an <h1> tag.
+* HTML: Such as an `<h1>` tag.
 * C# code: The `@` character starts single-statement C# blocks. Multi-statement C# blocks can be created when using `@{}`. For example:
 
 	```cshtml
