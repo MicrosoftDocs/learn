@@ -31,50 +31,62 @@ Evaluate Azure DNS. Create a DNS zone for the domain name. Create DNS records in
 
 ## Chunk your content into subtasks
 
-Identify the subtasks of *module title*
+Identify the subtasks of *Manage DNS records with Azure DNS*
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
+| Create DNS records in Azure | You decide to evaluate Azure DNS | Exercise | Create DNS zone and records for your domain | Yes |
+| Create Private and Public DNS zones | You decide to evaluate Azure DNS | Exercise | Create DNS zone and records for your domain | Yes |
+| Create Alias records for Azure DNS  | You decide to evaluate Azure DNS | Exercise | Create DNS zone and records for your domain | Yes |
 
 ## Outline the units
-
-*Add more units as needed for your content*
 
 1. **Introduction**
 
     You recently bought the custom domain name wideworldimporters.com from a domain name registrar. The domain name is for a new website your organization plans to launch. You need a hosting service for DNS domains. This hosting service would resolve the wideworldimporters.com domain to the IP address of your web server. You decide to evaluate Azure DNS.
 
-1. **Learning-content unit title**
+1. **Create DNS records in Azure**
 
-    List the content that will enable the learner to *subtask*:
+    - Describe how DNS works 
+        - Domains mapped to IP addresses
+        - IPv4 and IPv6 can both be mapped if applicable
+        - Different types of records, MX, A, CNAME, what do they do?
+    - Create a DNS zone
+        - How do you point your external domain at azure DNS zone
+        - use nslookup to query the SOA record of the zone to prove. (nslookup -type=SOA contoso.net)
+        - Configure custom DNS settings
+    - Explain the DNS records and configuration that are required to address the scanario in unit 1
 
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+1. **Exercise - Create DNS Zone and A record using Azure DNS**
 
-1. **Knowledge check**
+    1. Create DNS Zone
+    1. Setup Recordset
+    1. Create an A record
+    1. Demonstrate it working
 
-    What types of questions will test *learning objective*?
+    See: [Quickstart: Create an Azure DNS zone and record using the Azure portal](https://docs.microsoft.com/en-gb/azure/dns/dns-getstarted-portal#test-the-name-resolution)
 
-    - Question type
-    - Question type
+1. **Create Alias records for Azure private and public DNS**
 
-1. **Exercise - exercise unit title**
+    > [!NOTE]
+    > Private DNS zones are in preview, expected live end of July
 
-    List the steps which apply the learning content from previous unit:
+      - Private v Public DNS Zones 
+        - Differences between the two,
+        - describe how you link a VNET to create private zone
+      - Alias Records
+        - What problems do they solve, IP changes, load balanced environment
+        - How are they created, through the public IP, through the zone
 
-    1. Step
-    1. Step
-    1. Step
+    > [!NOTE]
+    > How to configure private DNS zones must be included to cover the information required for the Administrator certification.
+
+1. **Exercise - Create Alias records for Azure  DNS**
+
+    1. Create a shell script to setup the environment of a load balancer with two VMs and a public IP (See Notes for script info)
+    1. Add an alias record to the public IP by creating a DNS zone 
+
+    See: [Announcing Alias records for Azure DNS](https://azure.microsoft.com/en-gb/blog/announcing-alias-records-for-azure-dns/)
 
 1. **Summary**
 
@@ -92,6 +104,10 @@ Identify the subtasks of *module title*
   - Custom DNS settings
   - Different record types and we'd you need them (E.g. MX records for email). Cover alias records as that's differentiator from other DNS hosting services. Relate alias records to the scenario where they're hosting their website on Azure and using Load Balancer. 
   - Tie configurations back to scenario - what settings/records would they pick to fit the scenario.
+  - The following creates a load balanced environment with a public IP, so can be used to setup the final exercise
+git clone https://github.com/GeekEffect/load-balancer-setup.git
+cd load-balancer-setup
+bash setup.sh
 
 ## Resources
 
