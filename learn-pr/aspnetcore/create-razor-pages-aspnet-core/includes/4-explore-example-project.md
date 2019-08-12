@@ -10,12 +10,12 @@ Examine the following *:::no-loc text="ContosoPets.UI":::* files and directories
 |-----------------------|-------------------------------------------------------------------------------------|
 |*:::no-loc text="Pages/":::*                   |Contains Razor Pages and supporting files. Each Razor page is a pair of files:       |
 |                       | * A *:::no-loc text=".cshtml":::* file that contains markup with C# code using Razor syntax.                  |
-|                       | * A *:::no-loc text=".cshtml.cs":::* *PageModel":::* class file that defines:                                       |
+|                       | * A *:::no-loc text=".cshtml.cs":::* *PageModel":::* class file that defines:                                  |
 |                       |   * Page handlers for requests sent to the page.                                        |
 |                       |   * Data used to render the page.                                                       |
 |*:::no-loc text="wwwroot/":::*               |Contains static assets, such as HTML files, JavaScript files, and CSS files.         |
 |*:::no-loc text="Models/":::*                |Contains Model files. This project uses one central model file for model validation. |
-|*:::no-loc text="Program.cs":::*             |Contains a *Main* method: The app's managed entry point.                             |
+|*:::no-loc text="Program.cs":::*             |Contains a *Main* method, the app's managed entry point.                             |
 |*:::no-loc text="ContosoPets.UI.csproj":::*  |Contains configuration metadata for the project, such as dependencies.               |
 |*:::no-loc text="Startup.cs":::*             |Configures app behavior, such as routing between pages.                              |
 
@@ -72,8 +72,8 @@ The following are routing examples for this completed project:
 
 The *:::no-loc text="ContosoPets.UI":::* project's purpose is to provide a basic UI client to execute CRUD operations through your company's web API endpoint to manage product listings.
 The *:::no-loc text="Pages/Product":::* directory groups all the Razor pages that provide the UI for those CRUD operations and their *:::no-loc text="PageModel":::* class files.
-For the *:::no-loc text="ContosoPets.UI":::* application the same model validation will be used for more than one Razor Page for HTTP requests to the hosted web API.
+For the *:::no-loc text="ContosoPets.UI":::* application, the same model validation will be used for more than one Razor page for HTTP requests to the hosted web API.
 
 ### The HTTP request service
 
-This *:::no-loc text="ContosoPets.UI":::* project has its `Product` related HTTP request logic and properties encapsulated in a class. It handles all `Product` related requests to the web API endpoint. It is made available for use throughout the scope of the application as a service. The class file for that service has been stored in a *:::no-loc text="Services/":::* directory by convention. You will examine this service in detail later in this module.
+This *:::no-loc text="ContosoPets.UI":::* project has its `Product`-related HTTP request logic and properties encapsulated in a class. It handles all `Product`-related requests to the web API endpoint. It's made available for use throughout the scope of the application as a service. The class file for that service has been stored in a *:::no-loc text="Services/":::* directory, by convention. You'll examine this service in detail later in this module.
