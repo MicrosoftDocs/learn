@@ -1,2 +1,2 @@
 > [!NOTE]
-> Make sure you activate the sandbox before you continue.
+> Be sure to activate the sandbox before you continue.

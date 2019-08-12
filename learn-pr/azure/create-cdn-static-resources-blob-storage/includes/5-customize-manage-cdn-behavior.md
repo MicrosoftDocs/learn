@@ -33,7 +33,7 @@ When you've configured the cdnverify subdomain and the CNAME for the domain mapp
 
 ### Adding a custom domain
 
-To add a custom domain, go to the CDN endpoint that you created, and under **Settings**, click **Custom domains**. In the **Custom domain** blade, click **Custom domain**, then in the **Add a custom domain**, under **Custom hostname**, enter the hostname that matches the CNAME record in your custom domain, such as www.contoso.com.
+To add a custom domain, go to the CDN endpoint that you created, and under **Settings**, click **Custom domains**. In the **Custom domain** blade, click **Custom domain**, then in the **Add a custom domain**, under **Custom hostname**, enter the hostname that matches the CNAME record in your custom domain, such as www\.contoso.com.
 
 ![Add a custom domain](../media/5-custom-domain.png)
 

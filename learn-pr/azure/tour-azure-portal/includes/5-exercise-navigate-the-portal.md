@@ -69,7 +69,7 @@ Finally, there are a variety of management and programming tools included in the
 
 1. Click the **Settings** (cog) icon in the top menu bar and, under **Language**, select **Español**, and then click the **Refresh** button. If a **Translate this page** dialog box appears, close the box. Note that the whole portal is now in Spanish.
 
-1. Click the **Settings** (cog) icon in the top menu bar and, under **Language**, select **English**. Click the **Actualizar** button. The portal returns to English.
+1. Click the **Settings** (cog) icon in the top menu bar and, under **Idioma**, select **English**. Click the **Actualizar** button. The portal returns to English.
 
 ## Feedback blade
 

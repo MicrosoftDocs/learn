@@ -72,7 +72,7 @@ Now let's configure the app registration to authorize the URL of the web service
 
 1. In the left pane, select **Azure Active Directory**.
 
-1. Under **Manage**, select **App Registrations**. Then select the **WebApp-OpenIDConnect-DotNet** registration that you created in the previous exercise.
+1. Under **Manage**, select **App registrations**. Then select the **WebApp-OpenIDConnect-DotNet** registration that you created in the previous exercise.
 
 1. Select **Authentication**.
 
