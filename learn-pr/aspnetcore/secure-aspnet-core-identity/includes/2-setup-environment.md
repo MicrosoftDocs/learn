@@ -4,6 +4,26 @@ Membership data is persisted using a data store and persistence mechanism of you
 
 The intricacies of interacting with the underlying database are abstracted away by EF Core. Therefore, EF Core generally makes it possible to use any of its database providers with Identity. Example database providers include, but aren't limited to, PostgreSQL and SQLite. PostgreSQL, however, is a third-party provider and is therefore not eligible for support from Microsoft. Identity also provides the flexibility to use a persistence mechanism of your choosing. Dapper is one popular alternative.
 
+The following diagram depicts the Identity architecture used in this module:
+
+::: zone pivot="pg"
+
+![architecture diagram](../media/2-architecture-diagram-pg.png)
+
+::: zone-end
+
+::: zone pivot="sql"
+
+![architecture diagram](../media/2-architecture-diagram-sql.png)
+
+::: zone-end
+
+In the preceding diagram:
+
+* The *ASP.NET Core Razor Pages* app represents the web UI to which Identity support will be added in this module.
+* The *Identity Manager* layer contains classes used from the `Microsoft.AspNetCore.Identity` namespace. Examples of such classes used explicitly in this module are `SignInManager<TUser>` and `UserManager<TUser>`.
+* The *EF Core Identity Store* layer contains classes from the `Microsoft.AspNetCore.Identity.EntityFrameworkCore` namespace. An example of such a class used implicitly in this module is `UserStore<TUser>`.
+
 In this unit, you'll set up the development environment for the module. You'll also gain an understanding of the resulting project. This module focuses on just two of the possible EF Core data stores. Use the toggle above to select your preference.
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
