@@ -8,9 +8,9 @@ You'll use read-access-geo-redundant storage to make your application and data h
 
 In this module, you will:
 
-- Identify the features of RA-GRS storage.
-- Identify the application design considerations when using RA-GRS.
-- Implement the Circuit Breaker pattern in a sample application.
+- Identify the features of RA-GRS storage
+- Identify the application design considerations when using RA-GRS
+- Implement the Circuit Breaker pattern in a sample application
 
 ## Prerequisites
 

@@ -50,7 +50,7 @@ Keep in mind that your data in the secondary region is not accessible until the 
 
 ### What is Read-access Geo-redundant storage (RA-GRS)?
 
-![A diagram that shows an overview of ra-geo-redundant storage allowing read and write access to a primary account and read only access to a secondary account with replicated data](../media/2-ra-grs-redundant-storage.png)
+![A diagram that shows an overview of ra-geo-redundant storage allowing read and write access to a primary account and read-only access to a secondary account with replicated data](../media/2-ra-grs-redundant-storage.png)
 
 Geo-redundant storage provides 99.9999999999999999% durability as it replicates data and objects to a secondary region. When failover starts, DNS entries pointing to the primary region are updated to point to the secondary region. Microsoft currently controls the DNS failover process.
 
@@ -58,7 +58,7 @@ When using RA-GRS, you need to ensure your application knows which endpoint it's
 
 RA-GRS is ideal for applications, which require high-availability
 
-A new feature currently in preview allows you to initiate failover between primary and secondary regions from the Portal, Powershell, or Azure CLI. When the primary endpoint becomes unavailable, you can fail over to the secondary endpoint.
+A new feature currently in preview allows you to start failover between primary and secondary regions from the Portal, Powershell, or Azure CLI. When the primary endpoint becomes unavailable, you can fail over to the secondary endpoint.
 
 Once failover and DNS endpoint updates are complete, the storage account is set back to LRS. You're responsible for reverting the replication settings from LRS to RAGRS or GRS once the primary region becomes available again.
 
