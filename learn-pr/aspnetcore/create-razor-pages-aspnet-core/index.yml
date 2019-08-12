@@ -13,12 +13,14 @@ summary: ASP.NET Core supports creating webpages using a built-in templating eng
 abstract: | 
   In this module, you will:
   - Understand when and why to use Razor Pages for your ASP.NET Core application.
-  - Use the .NET Core CLI to scaffold a new Razor page.
+  - Use the .NET Core CLI to create a new Razor page and its paired C# PageModel class file.
+  - Complete the projects Create, Read Update and Delete (CRUD) operations by adding a Create form using Razor syntax.
+  - Add built-in client-side form input validation using Razor's Input Tag Helper.
+  - Add built-in server-side model validation using Data Annotations.
   - Add a reference to a Data Transfer Object (DTO).
-  - Understand the HTTP request life cycle of the Razor page.
-  - Inject a dependent HTTP service class into the page model.
-  - Add UI support for Create, Read, Update, and Delete (CRUD) operations.
-  - Deploy and test the application.
+  - Consume a RESTful service from your PageModel.
+  - Walk through the life cycle of an example HTTP request.
+  - Deploy & Test.
 prerequisites: |
   - Experience writing C# at the beginner level
   - Ability to write HTML at an intermediate level
