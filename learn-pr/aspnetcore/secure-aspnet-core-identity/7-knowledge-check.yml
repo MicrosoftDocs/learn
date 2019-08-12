@@ -15,36 +15,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "In an entity class, what is the property naming convention for a primary key?"
+    - content: "Suppose you want to add an `IsEmployee` claim to the authenticated user. Where would that claim be persisted?"
       choices:
-      - content: "`Key` or `<entity name>Key`"
+      - content: "All user claims are stored in the `AspNetUsers` table."
         isCorrect: false
-        explanation: "`Key` and the `Key` suffix aren't naming conventions recognized by EF Core. To make such a property the primary key, it must be annotated with the `[Key]` attribute."
-      - content: "`Id` or `<entity name>Id`"
+        explanation: "The `AspNetUsers` table is intended for storage of user profile data. While claims could be stored here, customization is needed to do so."
+      - content: "All user claims are stored in the `AspNetUserClaims` table."
         isCorrect: true
-        explanation: "`Id` or `<entity name>Id` are inferred by EF Core to be the primary key."
-      - content: "`<entity name>`"
+        explanation: "Identity's `UserManager<TUser>` class contains `AddClaimAsync` and `AddClaimsAsync` methods which store a claim or claims, respectively, in the `AspNetUserClaims` table."
+      - content: "All user claims are persisted in memory using session state."
         isCorrect: false
-        explanation: "`<entity name>` is more suitable as a navigation property name. To make such a property the primary key, it must be annotated with the `[Key]` attribute."
-    - content: "Within the underlying EF Core architecture, the Database Provider component serves what purpose?"
+        explanation: "Session state is transient and scoped to the lifetime of the session. Session state data isn't persisted to a data store."
+    - content: "Which of the following is a Microsoft-supported data store for Identity with EF Core?"
       choices:
-      - content: "Translates object graph changes to SQL."
+      - content: "SQL Server"
         isCorrect: false
-        explanation: "The EF Core Provider is the component responsible for translating object graph changes to SQL."
-      - content: "Manages the connection to the database engine and executes generated SQL in the database."
+        explanation: "SQL Server is one example of a Microsoft-supported data store."
+      - content: "SQLite"
+        isCorrect: false
+        explanation: "SQLite is one example of a Microsoft-supported data store."
+      - content: "SQL Server and SQLite"
         isCorrect: true
-        explanation: "A Database Provider is the component responsible for managing the connection to the database engine. It also executes the generated SQL in the database."
-      - content: "Represents an active connection to a database."
-        isCorrect: false
-        explanation: "A class deriving from `DbContext` represents an active connection to a database."
-    - content: "Suppose you want to write a read-only query. How do you indicate to EF Core that object graph change tracking is unnecessary?"
+        explanation: "Identity supports both SQL Server and SQLite out-of-the-box with no third-party packages."
+    - content: "Identity creates a cookie named *.AspNetCore.Identity.Application* to preserve a user session. By default, when is the cookie created and when is it deleted?"
       choices:
-      - content: "Set the entity's state to `EntityState.Unchanged`."
+      - content: "The cookie is created when the user navigates to the login page. The cookie is destroyed when the browser is closed."
         isCorrect: false
-        explanation: "The entity is being tracked automatically by the `DbContext`. Manually setting the `Unchanged` state fools the `DbContext` into thinking there were no object graph changes."
-      - content: "Chain the `ToListAsync()` method call to the LINQ query or fluent method chain."
-        isCorrect: false
-        explanation: "The `ToListAsync` method returns the result set as a `List<T>` collection."
-      - content: "Chain the `AsNoTracking()` method call to the entity object."
+        explanation: "Successful authentication on the login page is required to create the cookie. By default, the user must explicitly log out before the cookie is deleted. The `isPersistent` parameter of the `SignInManager<TUser>` class's `SignInAsync` method is used to configure deletion of the cookie upon browser close."
+      - content: "The cookie is created after successfully authenticating on the login page. The cookie is destroyed when the **Logout** link is clicked."
         isCorrect: true
-        explanation: "By default, change tracking is enabled for queries that return entity types."
+        explanation: "The `SignInManager<TUser>` class is responsible for managing the cookie. The `SignInAsync` and `SignOutAsync` methods are used for cookie creation and deletion, respectively."
+      - content: "The cookie is created when the user navigates to the login page. The cookie is destroyed when the **Logout** link is clicked."
+        isCorrect: false
+        explanation: "Successful authentication on the login page is required to create the cookie."

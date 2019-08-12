@@ -1,6 +1,6 @@
 Identity works out-of-the-box without any customization. The standard Identity UI components are packaged in a .NET Standard Razor Class Library (RCL). Because an RCL is used, scant few files are added to the project.
 
-Identity relies on Entity Framework (EF) Core for membership data management by default. After applying the initial EF Core migration, the supporting database tables are created. The database tables used by Identity look like the following diagram:
+After applying the initial EF Core migration, the supporting database tables are created. The database tables used by Identity look like the following diagram:
 
 ![database diagram](../media/3-identity-tables.png)
 
