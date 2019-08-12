@@ -50,7 +50,7 @@ Use a virtual network gateway to send encrypted traffic between Azure and on-pre
 
 ### VirtualNetworkServiceEndpoint
 
-Use virtual network endpoints extend your private address space in Azure by providing a direct connection to your Azure resources. This process will restrict the flow of traffic and allow your Azure virtual machines to access the Storage account directly from the private address space and deny access from a public virtual machine. As you enable service endpoints, Azure will create routes in the route table to direct this traffic.
+Virtual network endpoints extend your private address space in Azure by providing a direct connection to your Azure resources. This process will restrict the flow of traffic and allow your Azure virtual machines to access the Storage account directly from the private address space and deny access from a public virtual machine. As you enable service endpoints, Azure will create routes in the route table to direct this traffic.
 
 ## Custom routes
 
