@@ -1,3 +1,5 @@
+If you've gone through [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true) , you've come a long way.
+
 Continuous delivery helps software teams deliver reliable software updates to their customers on a rapid cadence. This ensures that customers and stakeholders have the latest features and fixes quickly.
 
 In this module, you worked with the Tailspin team to get the first step of this process in place. You discussed the benefits of continuous delivery, created a multistage Azure pipeline to build and deploy the web site to Azure App Services, and added a dashboard for visibility. Great job!
@@ -24,3 +26,7 @@ Learn more about deploying to various environments:
   * Kubernetes (e.g. containers)
   * Functions (find relevant link or cut this)
 * [Service connection](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?azure-portal=true)
+
+TODO - In the summary, link to the Learn learning path on working with App Service
+
+App service - VNet - https://docs.microsoft.com/azure/app-service/web-sites-integrate-with-vnet

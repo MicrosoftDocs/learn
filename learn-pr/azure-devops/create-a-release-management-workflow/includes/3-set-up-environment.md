@@ -74,7 +74,7 @@ At the end of this module, you'll move the card to the **Done** column after you
 Here, you create the environments that receive the build artifact as the change moves through the pipeline. You create one App Service instance that corresponds to each of the dev, test, staging, and production environments.
 
 > [!IMPORTANT]
-> Remember that you need your own Azure subscription to complete the exercises in this module. [Get started for free](https://azure.microsoft.com?azure-portal=true) if you don't have a subscription that you can use.
+> Remember that you need your own Azure subscription to complete the exercises in this module.
 
 ### Bring up Cloud Shell through the Azure portal
 

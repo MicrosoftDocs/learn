@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.create-release-pipeline.2-introduction-to-continuous-delivery
+uid: learn.azdo.create-release-pipeline.2-what-is-cd
 title: Introduction to continuous delivery with Azure DevOps
 metadata:
   title: Introduction to continuous delivery with Azure DevOps
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-introduction-to-continuous-delivery.md)]
+  [!include[](includes/2-what-is-cd.md)]
