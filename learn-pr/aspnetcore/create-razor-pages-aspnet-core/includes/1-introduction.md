@@ -12,7 +12,7 @@ In this module, you will:
 * Use the .NET Core CLI to create a new Razor page and its paired C# PageModel class file.
 * Complete the projects Create, Read, Update, and Delete (CRUD) operations by adding a *Create* form using Razor syntax.
 * Add built-in, client-side form input validation using Razor's Input Tag Helper.
-* Add built-in server-side model validation using *Data Annotations*.
+* Add built-in, server-side model validation using *Data Annotations*.
 * Add a reference to a Data Transfer Object (DTO).
 * Consume a RESTful service from your PageModel.
 * Walk through the life cycle of an example HTTP request.
