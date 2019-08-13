@@ -48,7 +48,7 @@ Now let's redeploy the application. We'll deploy our refactored service on Azure
 
 1. Now that our service is running on an Azure Function, we need to point our drone application to that function. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Select **App Services** on the left, then select your **packageservicefunction** function.
+1. Select **App Services** on the left, then select your **packageservicefunction-abc** function.
 
 1. In the **Function Apps** overview, select your **PackageServiceFunction** function.
 

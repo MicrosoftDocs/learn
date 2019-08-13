@@ -14,7 +14,7 @@ We'll run some performance tests against the application as it is currently conf
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Select **App Services** on the left, then select your App Service.
+1. Select **App Services** on the left, then select your **microserviceslearnmodule-abc** Web App.
 
 1. In the **Development Tools** section, select **Performance test**.
 
@@ -36,7 +36,7 @@ We'll run some performance tests against the application as it is currently conf
 
 Allow several minutes for your test to execute and complete. Once it completes, select the completed test in the **Recent runs**.
 
-Notice in the test results the average response time is pretty high. In the example below it's 43.31 seconds, pretty poor performance for an API call.
+Notice in the test results the average response time is pretty high. In the example below it's 30.51 seconds, pretty poor performance for an API call.
 
 ![Screenshot of performance test results](../media/5-results.png)
 
