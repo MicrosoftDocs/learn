@@ -1,4 +1,4 @@
-By default, the ASP.NET Core project templates using Identity include multi-factor authentication support for TOTP authenticator apps. The template's **Configure authenticator app** form provides a 32-character registration key to seed the token value. In this unit, you'll customize the **Configure authenticator app** form to provide a QR code containing the registration key.
+By default, the ASP.NET Core project templates using Identity include multi-factor authentication support for TOTP authenticator apps. The Razor Pages template's **Configure authenticator app** form provides a 32-character registration key to seed the token value. In this unit, you'll customize the **Configure authenticator app** form to provide a QR code containing the registration key. The QR code will serve as an alternative authentication mechanism to the 32-character key.
 
 Multiple strategies exist for generating the QR code. An example includes using a third-party JavaScript library. In this unit, however, a third-party NuGet package is used to generate the QR code with C#. The resulting QR code image is injected into an HTML placeholder element as a base-64 encoded string.
 
