@@ -33,7 +33,7 @@ Let's start by deploying the application. First, we'll need to great the Azure r
     cd mslearn-microservices-architecture
     ```
 
-1. Next, run this command to set up a deployment user. This user will be used to access the git repo on the App Service. Replace `<username>` and `<password>`, including the brackets, with a new username and password. The username must be unique within Azure. The password must be at least eight characters long, with two of the following three elements: letters, numbers, and symbols.
+1. Next, run this command to set up a deployment user. This user will be used to access the git repo on the App Service. Replace `<username>` and `<password>` with a new username and password. The username must be unique within Azure. The password must be at least eight characters long, with two of the following three elements: letters, numbers, and symbols.
 
     ```azurecli
     az webapp deployment user set --user-name <username> --password <password>
