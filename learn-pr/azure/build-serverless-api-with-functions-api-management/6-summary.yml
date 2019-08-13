@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-serverless-api-with-functions-api-management.6-summary
-title: Introduction
+title: Summary
 metadata:
-  title: Introduction
+  title: Summary
   description: In this unit, you will review what you have learned about Azure Functions and how to use API Management to integrate them into APIs.
   ms.date: 05/29/2019
   author: nickwalkmsft

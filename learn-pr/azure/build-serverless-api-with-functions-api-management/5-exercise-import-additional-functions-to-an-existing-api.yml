@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Import additional Functions to an existing API
   description: In this unit, you will add an second function to a product in Azure API Management and test your integrated API.
   ms.date: 05/29/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: AndrewJByrne
+  ms.author: anbyrne
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
