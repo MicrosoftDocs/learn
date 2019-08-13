@@ -64,7 +64,7 @@ Let's start by deploying the application. First, we'll need to great the Azure r
     git remote add azure https://<deploymentuser>@$APPSERVICENAME.scm.azurewebsites.net/$APPSERVICENAME.git
     ```
 
-1. Run the following command to deploy the application to App Service. Enter the password of the deployment user you created in a previous step.
+1. Run the following command to deploy the application to App Service. Enter the password of the deployment user you created previously.
 
     ```bash
     git push azure master

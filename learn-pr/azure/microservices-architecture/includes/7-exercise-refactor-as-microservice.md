@@ -14,8 +14,14 @@ Now let's redeploy the application. We'll deploy our refactored service on Azure
 1. Run this command to set up environment variables pointed to our services.
 
     ```azurecli
-    APPSERVICENAME="$(az webapp list --query '[].name' --output tsv)"
-    FUNCTIONAPPNAME="$(az functionapp list --query '[].name' --output tsv)"
+    APPSERVICENAME="$(az webapp list \
+                        --resource-group <rgn>[sandbox resource group]</rgn> \
+                        --query '[].name' \
+                        --output tsv)"
+    FUNCTIONAPPNAME="$(az functionapp list \
+                        --resource-group <rgn>[sandbox resource group]</rgn> \
+                        --query '[].name' \
+                        --output tsv)"
     ```
 
 1. Run this command to set up git for our function.
@@ -40,18 +46,16 @@ Now let's redeploy the application. We'll deploy our refactored service on Azure
 
 ## Deploy the updated DroneDelivery application
 
-<!-- get the function URL and token -->
-1. Now that our service is running on an Azure Function, we need to point our Drone application to that Function. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Now that our service is running on an Azure Function, we need to point our drone application to that function. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Select **App Services** on the left, then select your **packageservicefunction** function.
 
-1. In the Function Apps overview, select your **PackageServiceFunction** function.
+1. In the **Function Apps** overview, select your **PackageServiceFunction** function.
 
     TODO - insert screenshot
 
-1. Select **</> Get function URL**, copy the URL and keep handy. You'll need it again shortly.
+1. Select **</> Get function URL**, copy the URL and it keep handy. You'll need it again shortly.
 
-<!-- # update appsettings.json with Function URL and token -->
 1. Back in Cloud Shell run these commands to open *appsettings.json* in the Code editor.
 
     ```bash
@@ -59,13 +63,13 @@ Now let's redeploy the application. We'll deploy our refactored service on Azure
     code src/DroneDelivery-after/appsettings.json
     ```
 
-1. Now we need the URL that we copied a couple steps ago. The URL should look something like this:
+1. Now you need the URL that you copied a couple steps ago. The URL should look something like this:
 
     `https://packageservicefunction-abc.azurewebsites.net/api/packages/{id}?code=SvrbiyhjXJUdTPXrkcUtY6bQaUf7OXQjWvnM0Gq63hFUhbH2vn6qYA==`
 
     In the Code editor, there are two values you need to replace with values from this URL, `PackageServiceUri` and `PackageServiceFunctionCode`. In `PackageServiceUri` replace `<URL_OF_PackageService_Function>` with the corresponding value from your URL.
 
-    In `PackageServiceFunctionCode` replace the `<PackageServiceFunction code>` with the code in your URL. You'll want everything after the `code=` and will include the `==` at the end. Once complete, your *appsettings.json* file should look like this:
+    In `PackageServiceFunctionCode` replace the `<PackageServiceFunction code>` with the code in your URL. You'll want everything after the `code=` including the `==` at the end. Once complete, your *appsettings.json* file should look like this:
 
     ```json
     {
@@ -80,7 +84,7 @@ Now let's redeploy the application. We'll deploy our refactored service on Azure
     }
     ```
 
-1. Press **Ctrl-s** to save the file, and **Ctrl-q** to close the Code editor.
+1. Press `Ctrl-s` to save the file, and `Ctrl-q` to close the Code editor.
 
 1. Run this command to open up the *.deployment* file in the Code editor.
 
@@ -104,4 +108,3 @@ Now let's redeploy the application. We'll deploy our refactored service on Azure
     git commit -m "Updating application to use the Azure Function"
     git push azure master
     ```
-
