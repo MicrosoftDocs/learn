@@ -56,13 +56,14 @@ The next step is to deploy a virtual machine into the public and private subnets
 1. Run the following command to check that the virtual machines are running. We're using the Linux `watch` command to run the `az vm list` command periodically, which allows you to monitor the progress.
 
     ```bash
-    watch -d -n 5 az vm list \
+    watch -d -n 5 "az vm list \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --output table \
-        --show-details
+        --show-details \
+        --query '[*].{Name:name, ProvisioningState:provisioningState, PowerState:powerState}' \
+        --output table"
     ```
 
-    After the status of both virtual machines is shown as *Running*, press `Ctrl-c` to halt the command and continue with the exercise.
+    A **ProvisioningState** of **Succeeded** and a **PowerState** of **VM running** indicates a successful deployment. When all three VMs are running, you're ready to move on. Press `Ctrl-c` to stop the command and continue on with the exercise.
 
 1. Run the following command to save the public IP address of the *public* virtual machine to a variable named `PUBLICIP`.
 
