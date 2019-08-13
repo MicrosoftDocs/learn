@@ -1,4 +1,4 @@
-To move their application to a microservices architecture, Fabrikam needs to evaluate their current application and determine the scope and boundary of each microservice. To do this, they are going to use the domain-driven design (DDD) framework. Let's see how they apply this to their application.
+To move their application to a microservices architecture, Fabrikam needs to evaluate their current application and determine the scope and boundary of each microservice. To do this, they are going to use the *domain-driven design* (DDD) framework. Let's see how they apply this to their application.
 
 > [!NOTE]
 > This article doesn't show a complete and comprehensive domain analysis. We deliberately kept the example brief to illustrate the main points. For more information on DDD, please see the *Learn more* section in the summary at the end of this module.
@@ -48,7 +48,7 @@ This is where the DDD concept of bounded contexts comes into play. A bounded con
 
 ![Diagram of the bounded contexts for the drone application](../media/6-bounded-contexts.svg)
 
-### Apply tactical domain-driven design patterns
+### Define entities, aggregates, and services
 
 Tactical DDD is when you define your domain models with more precision. The tactical patterns are applied within a single bounded context. In a microservices architecture, we are particularly interested in the entity and aggregate patterns. Applying these patterns will help us to identify natural boundaries for the services in our application. As a general principle, a microservice should be no smaller than an aggregate, and no larger than a bounded context.
 
@@ -62,7 +62,7 @@ There are several tactical DDD patterns to consider:
 
 ![Diagram of the drone domain model](../media/6-drone-ddd.png)
 
-From these scenarios, the Fabrikam development team identified the following entities.
+In their system, the Fabrikam development team identified the following entities.
 
 - Delivery
 - Package
@@ -106,6 +106,6 @@ Above all, it's important to be pragmatic, and remember that domain-driven desig
 
 ## Applying to the drone application
 
-For Fabrikam's application, all of these services are reside in their existing monolithic application. Now that they've identified where they decompose their application into microservices, they are going to start with the package service. 
+For Fabrikam's application, all of these services reside in their existing monolithic application. Now that they've identified where they decompose their application into microservices, they are going to start with the package service.
 
 The package service currently has a focused development team, has exhibited performance issues related to scalability, and is a great candidate to begin the decomposition of their application.
