@@ -128,5 +128,4 @@ Package managers | NuGet if you are using the WebJobs SDK | Nuget and NPM |
 Can be part of an App Service application | Yes | No |
 Provides close control of `JobHost` | Yes | No |
 
-
-Now you know what design-first and code-first technologies are available to you, how do you narrow you choice down for a given scenario? We'll look at this question in the next unit. 
+Now you know what design-first and code-first technologies are available to you, how do you narrow you choice down for a given scenario? We'll look at this question in the next unit.
