@@ -12,7 +12,7 @@ metadata:
 title: Troubleshoot networking using Network Watcher monitoring and diagnostic tools
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-troubleshoot-networking-using-network-watcher.md)]
+  [!include[](includes/2-troubleshoot-networking-with-network-watcher.md)]
 quiz:
   questions:
   - content: "To capture traffic on a VM, Azure Network Watcher requires the..."
