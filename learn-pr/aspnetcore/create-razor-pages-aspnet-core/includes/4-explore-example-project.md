@@ -10,7 +10,7 @@ Examine the following *:::no-loc text="ContosoPets.UI":::* files and directories
 |-----------------------|-------------------------------------------------------------------------------------|
 |*:::no-loc text="Pages/":::*                   |Contains Razor Pages and supporting files. Each Razor page is a pair of files:       |
 |                       | * A *:::no-loc text=".cshtml":::* file that contains markup with C# code using Razor syntax.                  |
-|                       | * A *:::no-loc text=".cshtml.cs":::* *PageModel":::* class file that defines:                                  |
+|                       | * A *:::no-loc text=".cshtml.cs":::* `PageModel` class file that defines:                                  |
 |                       |   * Page handlers for requests sent to the page.                                        |
 |                       |   * Data used to render the page.                                                       |
 |*:::no-loc text="wwwroot/":::*               |Contains static assets, such as HTML files, JavaScript files, and CSS files.         |
