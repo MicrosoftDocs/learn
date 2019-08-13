@@ -15,18 +15,18 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Suppose you want to add an `IsEmployee` claim to the authenticated user. Where would that claim be persisted?"
+    - content: "Suppose you want to add an `IsEmployee` claim to the authenticated user. By default, where is that claim persisted?"
       choices:
       - content: "All user claims are stored in the `AspNetUsers` table."
         isCorrect: false
         explanation: "The `AspNetUsers` table is intended for storage of user profile data. While claims could be stored here, customization is needed to do so."
       - content: "All user claims are stored in the `AspNetUserClaims` table."
         isCorrect: true
-        explanation: "Identity's `UserManager<TUser>` class contains `AddClaimAsync` and `AddClaimsAsync` methods which store a claim or claims, respectively, in the `AspNetUserClaims` table."
+        explanation: "Identity's `UserManager<TUser>` class contains `AddClaimAsync` and `AddClaimsAsync` methods, which store a claim or claims, respectively. Claims are stored in the `AspNetUserClaims` table."
       - content: "All user claims are persisted in memory using session state."
         isCorrect: false
         explanation: "Session state is transient and scoped to the lifetime of the session. Session state data isn't persisted to a data store."
-    - content: "Which of the following is a Microsoft-supported data store for Identity with EF Core?"
+    - content: "Which of the following options is a Microsoft-supported data store for Identity with EF Core?"
       choices:
       - content: "SQL Server"
         isCorrect: false
