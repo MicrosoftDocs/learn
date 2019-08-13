@@ -14,4 +14,4 @@ azureSandbox: true
 interactive: bash
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-setup-environment.md)]
+  [!include[](includes/3-setup-environment.md)]

@@ -13,4 +13,4 @@ title: Compile and Run the Razor Pages Project
 azureSandbox: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-why-when-use-razor-pages.md)]
+  [!include[](includes/2-why-when-use-razor-pages.md)]

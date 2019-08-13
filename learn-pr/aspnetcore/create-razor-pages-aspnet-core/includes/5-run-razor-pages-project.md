@@ -36,7 +36,7 @@ The .NET Core CLI is the simplest way to create, build, and run an ASP.NET Core 
     * Builds the project code.
     * Hosts the web application with ASP.NET Core's Kestrel web server.
 
-The web application is hosted at both `http://localhost:5000` and `https://localhost:5001` by default. This module uses the secure URL beginning with `https`. 
+The web application is hosted at both `http://localhost:5000` and `https://localhost:5001` by default. This module uses the secure URL beginning with `https`.
 
 You can stop the *:::no-loc text="ContosoPets.UI":::* application from running at any time by pressing <kbd>Ctrl+C</kbd>. 
 
@@ -67,9 +67,9 @@ If you run the app on your own machine, you'd be able to direct a browser to 'ht
     ```bash
     az webapp up
     ```
-    
+
 [!INCLUDE[OS-specific keyboard shortcuts](../../../includes/azure-cloudshell-copy-paste-tip.md)]
-    
+
 The preceding Azure CLI command provisions a public endpoint for this project. Be patient, as the first deployment of the application will take longer.
 
 A variation of the following output eventually displays to indicate the web UI is being deployed:
