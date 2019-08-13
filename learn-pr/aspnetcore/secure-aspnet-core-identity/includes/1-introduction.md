@@ -8,8 +8,9 @@ In this module, you will:
 
 * Configure Identity support in an existing ASP.NET Core web app.
 * Provide new user registration capabilities.
-* Provide multi-factor login capabilities.
-* Implement claims-based authorization using a policy.
+* Extend Identity UI components.
+* Customize multi-factor login capabilities.
+* Implement policy-based authorization using claims.
 * Customize and extend the underlying Identity data store.
 
 ## Prerequisites
