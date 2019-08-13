@@ -3,7 +3,7 @@ uid: learn.secure-aspnet-core-identity.5-multi-factor-authn
 metadata:
   title: Exercise - Configure multi-factor authentication
   description: Learn how to configure multi-factor authentication support in an ASP.NET Core web app.
-  ms.date: 05/22/2019
+  ms.date: 08/20/2019
   author: scottaddie
   ms.author: scaddie
   ms.topic: interactive-tutorial

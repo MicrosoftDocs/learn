@@ -60,6 +60,7 @@ In the preceding diagram:
 * The *ASP.NET Core Razor Pages* app represents the web UI to which Identity support will be added in this module.
 * The *Identity Manager* layer contains classes used from the `Microsoft.AspNetCore.Identity` namespace. Examples of such classes used explicitly in this module are `SignInManager<TUser>` and `UserManager<TUser>`.
 * The *EF Core Identity Store* layer contains classes from the `Microsoft.AspNetCore.Identity.EntityFrameworkCore` namespace. An example of such a class used implicitly in this module is `UserStore<TUser>`.
+* The *Database Provider* is a database-specific library that accepts SQL and executes it.
 
 ## Review project requirements
 
