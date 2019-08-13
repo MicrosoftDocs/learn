@@ -5,8 +5,8 @@ metadata:
   title: Import additional Functions to an existing API
   description: In this unit, you will learn about common issues with the microservices architecture and how you can address them by adding functions to existing APIs in API Management.
   ms.date: 05/29/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: AndrewJByrne
+  ms.author: anbyrne
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

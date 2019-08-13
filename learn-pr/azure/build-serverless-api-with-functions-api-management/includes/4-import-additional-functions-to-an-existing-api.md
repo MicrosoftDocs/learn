@@ -1,8 +1,9 @@
 Microservices architectures can be difficult to manage. For example, you rely on each team implementing cross-cutting requirements, such as security, in a consistent way.
 
+<!-- TODO We have two functions - Order Details and Product Details - we don't have order placement or order shipping. Let's align the scenario with the example code in this module. -->
 In the online store, your developer teams have built the product details, order placement, and order shipping microservices at different host URLs. Also the order shipping service responds by using XML. You want to ensure that all responses are in JSON format to make things easier for the client app developers.
 
-Here, you will see how API Management can be used to assemble disparate microservices into a consistent product under one domain name and with consistent behavior.
+Here, you will see how API Management can be used to assemble disparate microservices into a consistent product under one domain name and with consistent behavior. <!-- TODO This is an over-commitment for this unit. We don't show any of this assembly or show how it will be done. I would potentially delete everything above this line. -->
 
 ## Microservices architecture challenges
 
@@ -29,3 +30,5 @@ By adding multiple APIs, Functions, and other services to API Management, you ca
 API Management also includes helpful tools - you can test each microservice and its operations to ensure that they behave in accordance with your requirements. You can also monitor the behavior and performance of deployed services.
 
 Azure API Management supports importing Azure Function Apps as new APIs or appending them to existing APIs. The process automatically generates a host key in the Azure Function App, which is then assigned to a named value in Azure API Management.
+
+<!-- TODO - Again we drop the student off here without context as to what's going to happen next. -->
