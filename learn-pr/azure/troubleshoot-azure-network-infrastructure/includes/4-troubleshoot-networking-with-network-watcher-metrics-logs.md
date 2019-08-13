@@ -15,7 +15,7 @@ To view the usage and quota information, navigate to **All Services > Networking
 - Virtual networks
 - Public IP addresses
 
-![A screenshot showing usage and quotas using the Network Watcher](../media/4-usage-and-quotas.png)
+[![](../media/4-usage-and-quotas.png "A screenshot showing usage and quotas using the Network Watcher")](../media/4-usage-and-quotas-expanded-1.png#lightbox)
 
 ## Logs
 
@@ -61,24 +61,24 @@ As for flow logs, you can import diagnostic logs into Power BI and other tools t
 
 ### Traffic Analytics
 
-Use the Traffic Analytics tool to investigate user and application activity across your cloud networks. 
+Use the Traffic Analytics tool to investigate user and application activity across your cloud networks.
 
-The tool gives insights into network activity across subscriptions. You can diagnose security threats, such as open ports, VMs communicating with known bad networks, and traffic flow patterns. Traffic Analytics analyzes NSG flow logs across Azure regions and subscriptions. You can use the data to optimize network performance. 
+The tool gives insights into network activity across subscriptions. You can diagnose security threats, such as open ports, VMs communicating with known bad networks, and traffic flow patterns. Traffic Analytics analyzes NSG flow logs across Azure regions and subscriptions. You can use the data to optimize network performance.
 
 This tool requires log analytics. The Log Analytics workspace must exist in a supported region.
 
 ## Use case scenarios
 
-Now let's look at some use case scenarios where Azure Network Watcher metrics and logs can be helpful. 
+Now let's look at some use case scenarios where Azure Network Watcher metrics and logs can be helpful.
 
 ### Customer reports of slow performance
 
 To resolve slow performance issues, we need to determine the root cause of the problem:
 
 - Is there too much traffic throttling our server?
-- Is the VM size appropriate for the job? 
+- Is the VM size appropriate for the job?
 - Are the scalability thresholds set appropriately?
-- Are there any malicious attacks happening? 
+- Are there any malicious attacks happening?
 - Is the VM storage configuration correct?
 
 First, check that the VM size is appropriate for the job. Next, enable Azure Diagnostics on the VM to get more granular data for specific metrics, such as CPU usage and memory usage. To enable VM diagnostics via the portal, go to the **VM**, click **Diagnostics Settings**, and then turn on diagnostics.
@@ -117,7 +117,7 @@ To resolve this high memory utilization, consider these solutions:
 
 - For immediate relief or page file usage, increase the size of the VM to add memory, then monitor.
 - Investigate the issue further. Locate that application or process and troubleshoot it. If you know the application, see if you can cap the memory allocation.
- 
+
 #### Disk bottleneck
 
 Network performance may also be related to the storage subsystem of the VM. You can investigate the storage account for the VM in the portal. To identify issues with storage, look at performance metrics from the storage account diagnostics and the VM diagnostics. Look for key trends when the issues occur within the time range of the issue.
@@ -144,4 +144,4 @@ If you've reached this point and still haven't diagnosed the problem, there may 
 
 By default, all subnets can communicate in Azure. So, if two VMs on two subnets can't communicate, there must be a configuration that is blocking communication. Before checking the flow logs, run the IP Flow Verify tool from the frontend VM to the backend VM. This tool runs a logical test on the rules on the network.
 
-If the result is an NSG on the backend subnet blocking all communication, reconfigure that NSG. For security purposes, you must block some communication with the frontend since the frontend is exposed to the public internet. By blocking communication to the backend, we limit the amount of exposure in the event of a malware or security attack. However, if the NSG blocks everything, then it's incorrectly configured. Enable the specific protocols and ports that are required. 
+If the result is an NSG on the backend subnet blocking all communication, reconfigure that NSG. For security purposes, you must block some communication with the frontend since the frontend is exposed to the public internet. By blocking communication to the backend, we limit the amount of exposure in the event of a malware or security attack. However, if the NSG blocks everything, then it's incorrectly configured. Enable the specific protocols and ports that are required.

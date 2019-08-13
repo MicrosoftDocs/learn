@@ -1,4 +1,4 @@
-Network Watcher includes several tools that you can use to monitor your virtual networks and Virtual Machines (VMs). To effectively make use of Network Watcher, it's essential to understand all the available tooling options and the purpose of each tool.
+Network Watcher includes several tools that you can use to monitor your virtual networks and virtual machines (VMs). To effectively make use of Network Watcher, it's essential to understand all the available tooling options and the purpose of each tool.
 
 In your engineering company, you want to enable your staff to choose the right Network Watcher tool for each troubleshooting task. To complete this task, they need to understand all the options available and the kinds of problems each tool can solve.
 
@@ -40,7 +40,7 @@ We use the Azure portal to view the topology of an Azure network. In the Azure p
 
 Here's an example of a topology generated for a virtual network named MyVNet:
 
-![A diagram tha shows a virtual network topology as shown in Network Watcher](../media/2-network-watcher-topology.png)
+[![](../media/2-network-watcher-topology.png "A diagram that shows a virtual network topology as shown in Network Watcher")](../media/2-network-watcher-topology-expanded-1.png#lightbox)
 
 ### What is the Connection Monitor tool?
 
@@ -115,17 +115,17 @@ You use the connection troubleshoot tool to check TCP connectivity between a sou
 
 If the connection is successful, information about the communication is displayed, including:
 
-- The latency in milliseconds
-- The number of probe packets sent
-- The number of hops in the complete route to the destination
+- The latency in milliseconds.
+- The number of probe packets sent.
+- The number of hops in the complete route to the destination.
 
 If the connection is unsuccessful, you'll see details of the fault. Fault types include:
 
-- CPU. The connection failed because of high CPU utilization
-- Memory. The connection failed because of high memory utilization
-- GuestFirewall. The connection was blocked by a firewall outside Azure
-- DNSResolution. The destination IP address couldn't be resolved
-- NetworkSecurityRule. The connection was blocked by an NSG
+- CPU. The connection failed because of high CPU utilization.
+- Memory. The connection failed because of high memory utilization.
+- GuestFirewall. The connection was blocked by a firewall outside Azure.
+- DNSResolution. The destination IP address couldn't be resolved.
+- NetworkSecurityRule. The connection was blocked by an NSG.
 - UserDefinedRoute. There's an incorrect user route in a routing table.
 
 ### What is the VPN troubleshoot tool?
@@ -138,9 +138,9 @@ The table below shows a few examples of different fault types that are available
 
 | Fault Type | Reason | Log |
 | --- | --- | --- |
-| NoFault | When no error is detected | Yes |
-| GatewayNotFound | Cannot find gateway or gateway is not provisioned | No |
-| PlannedMaintenance | Gateway instance is under maintenance | No |
+| NoFault | When no error is detected. | Yes |
+| GatewayNotFound | Cannot find gateway or gateway is not provisioned. | No |
+| PlannedMaintenance | Gateway instance is under maintenance. | No |
 | UserDrivenUpdate | This fault occurs when a user update is in progress. The update could be a resize operation.| No |
 | VipUnResponsive | This fault occurs when the primary instance of the gateway can't be reached due to a health probe failure.| No |
 | PlatformInActive | There is an issue with the platform.| No |

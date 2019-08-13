@@ -1,8 +1,8 @@
-Network Watcher makes it easier to diagnose configuration errors prevent Virtual Machines (VMs) from communicating.
+Network Watcher makes it easier to diagnose configuration errors prevent virtual machines (VMs) from communicating.
 
 Suppose you have two VMs that can't communicate. You want to diagnose the problem and resolve it as fast as possible. You want to use Network Watcher to do that.
 
-Here, you'll troubleshoot connectivity between two VMs in different subnets. 
+Here, you'll troubleshoot connectivity between two VMs in different subnets.
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
@@ -113,7 +113,7 @@ Now you can use Network Watcher to troubleshoot connectivity between two VMs in 
 1. Navigate to **All Services > Networking > Network Watcher** and then click **Topology**.
 1. In the drop-down lists, select the only subscription and resource group. Network Watcher displays your network topology:
 
-    ![Network topology](../media/3-network-topology.png)
+    [![](../media/3-network-topology.png "A screenshot that shows the exercise network topology")](../media/3-network-topology-expanded-1.png#lightbox)
 
 ## Use connection monitor to run tests from the backend to the frontend
 
@@ -215,7 +215,3 @@ Let's use the IP flow test tool to obtain more information:
 1. Examine the results. They show that access is denied due to NSG and security rule.
 
 In this exercise, you have successfully used network watcher tools to discover the connectivity issue between the two subnets. One way communication is allowed but one way is to blocked due to NSG rules.
-
-
-
-

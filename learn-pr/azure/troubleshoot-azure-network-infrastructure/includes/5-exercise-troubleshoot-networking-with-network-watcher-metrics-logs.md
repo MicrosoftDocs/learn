@@ -1,18 +1,18 @@
 In Network Watcher, metrics and logs can diagnose complex configuration problems.
 
-Suppose you have two Virtual Machines (VMs) that can't communicate. You want to obtain as much information as you can to diagnose the problem.
+Suppose you have two virtual machines (VMs) that can't communicate. You want to obtain as much information as you can to diagnose the problem.
 
 In this unit, you will troubleshoot by using Network Watcher metrics and logs. You will use the NSG flow logs to diagnose the connectivity issue between the two VMs.
 
 ## Register the Insights provider
 
-NSG flow logging requires Microsoft. Insights provider. Complete the following steps to register for the Microsoft.Insights provider: 
+NSG flow logging requires Microsoft. Insights provider. Complete the following steps to register for the Microsoft.Insights provider:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account that you used to activate the sandbox.
 1. In the top-left corner of the portal, click **All services**. In the Filter box, type **Subscriptions**. When **Subscriptions** appears in the search results, click it.
 1. Select the **Concierge** subscription, and then under **Settings**, click **Resource providers**.
-1. In the search bar, type **microsoft.insights**. 
-1. If the status of the **microsoft.insghts** provider is **Unregistered**, then click **Register**.
+1. In the search bar, type **microsoft.insights**.
+1. If the status of the **microsoft.insights** provider is **Unregistered**, then click **Register**.
 
  ![A screenshot showing the registered Insights provider](../media/5-microsoft-insights.png)
 
@@ -23,20 +23,20 @@ Now, create a storage account for the NSG flow logs:
 1. In the top-left corner of portal, click **Create a resource > Storage > Storage account**.
 1. In the **Create storage account** page, fill in these settings:
 
- | Setting | Value |
- | --- | --- |
- | Subscription | Concierge |
- | Resource group | <rgn>[sandbox resource group name]</rgn> |
- | Storage account name | nsglogstorage1 |
- | Location | East US |
- | Performance | Standard |
- | Account kind | StorageV2 |
- | Replication | Read-access geo-redundant storage |
- | Access tier | Hot |
+     | Setting | Value |
+     | --- | --- |
+     | Subscription | Concierge |
+     | Resource group | <rgn>[sandbox resource group name]</rgn> |
+     | Storage account name | nsglogstorage1 |
+     | Location | East US |
+     | Performance | Standard |
+     | Account kind | StorageV2 |
+     | Replication | Read-access geo-redundant storage |
+     | Access tier | Hot |
 
 1. Click **Review + create** and then click **Create**.
 
- ![A screenshot showing how to create a storage account](../media/5-storage-account.png)
+     ![A screenshot showing how to create a storage account](../media/5-storage-account.png)
 
 ## Create log analytics workspace
 
@@ -45,16 +45,16 @@ To view the NSG flow logs, you will use log analytics. To install log analytics:
 1. In the top-left corner of the portal, click **All services**. In the Filter box, type **Log analytics**. When **Log analytics workspaces** appears in the search results, click it.
 1. Click **+ Add**, complete the page with these values, and then click **OK**:
 
- | Setting | Value |
- | --- | --- |
- | Log Analytics Workspace | testsworkspace |
- | Subscription | Concierge |
- | Resource group | <rgn>[sandbox resource group name]</rgn> |
- | Location | East US |
- | Pricing tier | Per GB |
- | | |
+     | Setting | Value |
+     | --- | --- |
+     | Log Analytics Workspace | testsworkspace |
+     | Subscription | Concierge |
+     | Resource group | <rgn>[sandbox resource group name]</rgn> |
+     | Location | East US |
+     | Pricing tier | Per GB |
+     | | |
 
- ![A screenshot showing how to create a log analytics workspace](../media/5-log-analytics-workspace.png)
+     ![A screenshot showing how to create a log analytics workspace](../media/5-log-analytics-workspace.png)
 
 ## Enable flow logging
 
@@ -86,17 +86,17 @@ Now you're ready to generate some network traffic between VMs to catch in the fl
 
 1. Open a command prompt, and then execute this command:
 
- ```cmd
- telnet 10.10.2.4 80
- ```
+     ```cmd
+     telnet 10.10.2.4 80
+     ```
 
 1. Execute this command:
 
- ```cmd
- telnet 10.10.2.4 443
- ```
- 
-Both connections fail after a few seconds. 
+     ```cmd
+     telnet 10.10.2.4 443
+     ```
+
+Both connections fail after a few seconds.
 
 ## Diagnose the problem
 
@@ -121,14 +121,14 @@ Connections on ports 80 and 443 should now work without problems:
 
 1. In the RDP client, connected to **FrontendVM**, at the command prompt, execute this command:
 
- ```cmd
- telnet 10.10.2.4 80
- ```
+     ```cmd
+     telnet 10.10.2.4 80
+     ```
 
 1. Execute this command:
 
- ```cmd
- telnet 10.10.2.4 443
- ```
+     ```cmd
+     telnet 10.10.2.4 443
+     ```
 
 Both connections should now work.

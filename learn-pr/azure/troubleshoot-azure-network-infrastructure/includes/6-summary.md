@@ -9,7 +9,7 @@ In this module, you learned about the four tool categories and the features offe
 - NSG Flow logs
 - Diagnostic logs
 
-Azure Network Watcher enables engineers to *monitor*, *diagnose* and *gain insight* into their network health and performance.
+Azure Network Watcher enables engineers to *monitor*, *diagnose, and *gain insight* into their network health and performance.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 

@@ -1,4 +1,4 @@
-You can create complex and flexible setups in Azure that network many Virtual Machines (VMs) together to satisfy your needs. However, just like in an on-premises network, configuration errors can result in problems that are challenging to troubleshoot. When you have to diagnose networking problems in Azure, use Network Watcher.
+You can create complex and flexible setups in Azure that network many virtual machines (VMs) together to satisfy your needs. However, just like in an on-premises network, configuration errors can result in problems that are challenging to troubleshoot. When you have to diagnose networking problems in Azure, use Network Watcher.
 
 Suppose you are the Azure architect for an engineering company. You have deployed a VM in Azure, and the VM has network connectivity issues. You want to learn how to troubleshoot and fix the problem so that you can help your colleagues to do the same if they face the same issues in the future.
 
