@@ -24,4 +24,4 @@ At the end of this module, there are links to content providing deeper dives for
 
 * Experience writing C# at the beginner level.
 * Familiarity with RESTful service concepts and HTTP action verbs, such as GET, POST, PUT, and DELETE.
-* Knowledge of HTML.
+* Ability to write HTML at an intermediate level.
