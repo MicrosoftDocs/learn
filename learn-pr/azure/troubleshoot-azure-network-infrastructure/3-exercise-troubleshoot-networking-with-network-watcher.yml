@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.troubleshoot-azure-network-infrastructure.3-exercise-troubleshoot-networking-using-network-watcher
+uid: learn.troubleshoot-azure-network-infrastructure.3-exercise-troubleshoot-networking-with-network-watcher
 metadata:
   title: Exercise - Troubleshoot networking using Network Watcher monitoring and diagnostic tools
   description: In this unit, you will set up a virtual network with constituent VMs and then use Network Watcher to view the topology and monitor connections.
@@ -14,4 +14,4 @@ interactive: bash
 azureSandbox: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-exercise-troubleshoot-networking-using-network-watcher.md)]
+  [!include[](includes/3-exercise-troubleshoot-networking-with-network-watcher.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.troubleshoot-azure-network-infrastructure.2-troubleshoot-networking-using-network-watcher
+uid: learn.troubleshoot-azure-network-infrastructure.2-troubleshoot-networking-with-network-watcher
 metadata:
   title: Troubleshoot networking using Network Watcher monitoring and diagnostic tools
   description: In this unit, you will learn about the features of Azure Network Watcher that you can use to diagnose problems in an Azure virtual network.

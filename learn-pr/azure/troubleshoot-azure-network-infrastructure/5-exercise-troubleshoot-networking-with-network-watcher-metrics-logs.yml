@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.troubleshoot-azure-network-infrastructure.5-exercise-troubleshoot-networking-using-network-watcher-metrics-and-logs
+uid: learn.troubleshoot-azure-network-infrastructure.5-exercise-troubleshoot-networking-with-network-watcher-metrics-logs
 metadata:
   title: Exercise - Troubleshoot networking using Network Watcher metrics and logs
   description: In this unit, you will use flow logging to diagnose a connectivity issue.
@@ -13,4 +13,4 @@ title: Exercise - Troubleshoot networking using Network Watcher metrics and logs
 durationInMinutes: 10
 azureSandbox: true
 content: |
-  [!include[](includes/5-exercise-troubleshoot-networking-using-network-watcher-metrics-and-logs.md)]
+  [!include[](includes/5-exercise-troubleshoot-networking-with-network-watcher-metrics-logs.md)]
