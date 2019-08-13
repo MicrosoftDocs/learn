@@ -34,10 +34,10 @@ We'll run some performance tests against the application as it is currently conf
 
 ## Review test results
 
-1. Allow several minutes for your test to execute and complete. Once it completes, select the completed test in the **Recent runs**.
+Allow several minutes for your test to execute and complete. Once it completes, select the completed test in the **Recent runs**.
 
-1. Notice in the test results the average response time is pretty high. In the example below it's 43.31 seconds, pretty poor performance for an API call.
+Notice in the test results the average response time is pretty high. In the example below it's 43.31 seconds, pretty poor performance for an API call.
 
-    ![Screenshot of performance test results](../media/5-results.png)
+![Screenshot of performance test results](../media/5-results.png)
 
-Let's see if we can improve the performance of the application.
+Fabrikam suspects that the monolithic architecture is preventing services from scaling, leading to the poor performance seen here. Let's see if we can identify the bottleneck and improve the performance of the application.
