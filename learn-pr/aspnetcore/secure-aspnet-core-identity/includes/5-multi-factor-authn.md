@@ -1,6 +1,6 @@
-By default, Identity includes multi-factor authentication support for TOTP authenticator apps. However, the default implementation only provides a 32-character registration key to seed the token value. In this unit, you'll customize the **Configure authenticator app** form to provide a QR code containing the registration key.
+By default, the ASP.NET Core project templates using Identity include multi-factor authentication support for TOTP authenticator apps. The template's **Configure authenticator app** form provides a 32-character registration key to seed the token value. In this unit, you'll customize the **Configure authenticator app** form to provide a QR code containing the registration key.
 
-Multiple strategies exist for generating the QR code. An example includes using a third-party JavaScript library. In this unit, however, a third-party NuGet package is used to generate the QR code with C#. The resulting QR code image is injected into an HTML element as a base-64 encoded string.
+Multiple strategies exist for generating the QR code. An example includes using a third-party JavaScript library. In this unit, however, a third-party NuGet package is used to generate the QR code with C#. The resulting QR code image is injected into an HTML placeholder element as a base-64 encoded string.
 
 ## Examine the QR code generation infrastructure
 
@@ -52,7 +52,7 @@ To avoid distracting from the focus on Identity, the boilerplate to support QR c
     You must accept the policy before you can enable two factor authentication.
     ```
 
-1. Click the **Accept** link in the banner to accept the privacy and cookie policy. Refresh the page.
+1. Click the **Accept** link in the privacy and cookie use policy banner to accept the policy. Refresh the page.
 
     A cookie named *:::no-loc text=".AspNet.Consent":::* is created to mark acceptance of the policy. It expires one year from the acceptance date.
 
