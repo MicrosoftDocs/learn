@@ -10,7 +10,7 @@ In this module, you will:
 
 * Understand when and why to use Razor Pages for your ASP.NET Core application.
 * Use the .NET Core CLI to create a new Razor page and its paired C# PageModel class file.
-* Complete the projects Create, Read Update and Delete (CRUD) operations by adding a *Create* form using Razor syntax.
+* Complete the projects Create, Read, Update, and Delete (CRUD) operations by adding a *Create* form using Razor syntax.
 * Add built-in client-side form input validation using Razor's Input Tag Helper.
 * Add built-in server-side model validation using *Data Annotations*.
 * Add a reference to a Data Transfer Object (DTO).
