@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-razor-pages-aspnet-core.2-setup-environment
+uid: learn.create-razor-pages-aspnet-core.3-setup-environment
 metadata:
   title: Set up the environment
   description: Provision Azure resources, download the ASP.NET Core starter project, and tour the starter project.
