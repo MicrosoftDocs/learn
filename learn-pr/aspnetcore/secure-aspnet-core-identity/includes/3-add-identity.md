@@ -1,6 +1,6 @@
 Identity works out-of-the-box without any customization. The standard Identity UI components are packaged in a .NET Standard Razor Class Library (RCL). Because an RCL is used, scant few files are added to the project.
 
-After applying the initial EF Core migration, the supporting database tables are created. The database tables used by Identity look like the following diagram:
+After applying the initial EF Core migration, the supporting database tables are created. The following diagram depicts the schemas of the supporting tables:
 
 ![database diagram](../media/3-identity-tables.png)
 
@@ -292,7 +292,7 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
 
     ::: zone-end
 
-## Add the login and registration link
+## Add the login and registration links
 
 1. In *:::no-loc text="Pages/Shared/_Layout.cshtml":::*, replace the `@* Add the _LoginPartial partial view *@` comment with the following. Save your changes.
 
@@ -325,4 +325,4 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
 
 1. Click the **Logout** link in the app's header.
 
-    After successful logout, the *:::no-loc text=".AspNetCore.Identity.Application":::* cookie is deleted to terminate the user session.
+    After successfully logging out, the *:::no-loc text=".AspNetCore.Identity.Application":::* cookie is deleted to terminate the user session.
