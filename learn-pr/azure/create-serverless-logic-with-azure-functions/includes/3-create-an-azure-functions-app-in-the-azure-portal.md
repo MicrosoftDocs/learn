@@ -32,7 +32,7 @@ Let's create a function app in the Azure portal.
 
 1. Select the existing resource group called "**<rgn>[sandbox resource group name]</rgn>**".
 
-1. Select **Windows** for OS.
+1. Select **Windows** for **OS**.
 
 1. For **Hosting Plan**, select **Consumption Plan**, which is the serverless hosting option.
 
@@ -40,7 +40,7 @@ Let's create a function app in the Azure portal.
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-1. For **Runtime Stack**, select JavaScript from the dropdown, which is the language in which we implement the function examples in this exercise.
+1. For **Runtime Stack**, select **Node.js** from the dropdown, which is the language in which we implement the function examples in this exercise.
 
 1. Create a new storage account. Azure will give it a name based on the app name. You can change it if you like, but it must also be unique.
 

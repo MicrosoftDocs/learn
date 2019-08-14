@@ -76,7 +76,7 @@ public static class Function1
 }
 ```
 
-The function returns a value containing any output data and results, wrapped in an *IAsynResult* object. The value is returned in the body of the HTTP response for the request.
+The function returns a value containing any output data and results, wrapped in an *IActionResult* object. The value is returned in the body of the HTTP response for the request.
 
 Different types of trigger receive different input parameters and return types. The next example shows the code generated for a Blob trigger. In this example, the contents of the blob is made accessible through a *Stream* object, and the name of the blob is also provided. No data is returned by the trigger; its purpose is to read and process the data in the named blob:
 

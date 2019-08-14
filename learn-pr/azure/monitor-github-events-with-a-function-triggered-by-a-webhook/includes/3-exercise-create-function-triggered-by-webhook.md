@@ -23,7 +23,7 @@ In this exercise, you'll create an Azure Function, and trigger the function usin
     | OS | Windows |
     | Hosting Plan | Consumption plan |
     | Location | Accept the default location |
-    | Runtime Stack | **JavaScript** |
+    | Runtime Stack | **Node.js** |
     | Storage | Create new, and accept the default name |
 
 1. Click **Create**, and wait for the function app to be deployed before continuing.

@@ -38,15 +38,13 @@ Once you are logged into the Azure portal, we can start exploring things. In the
 
 1. Another way to locate services is to refine the list with filters and search terms. On the **New** blade, you may have noticed the search box at the top. This is the quickest way to filter what services you see, but this search checks every Azure service to get its results. If you'd like to learn how to filter after selecting a category, continue to the next steps.
 
-1. On the **Compute** blade, you can see these various options at the top, a search box and some labeled dropdown boxes.
+1. On the **Compute** blade, you can see these various options at the top and a search box.
 
-1. Type `virtual machine images` into the search box and press ENTER. You should now see a filtered list of Compute services related to virtual machine images.
+1. Type `virtual machine images` into the search box and press <kbd>Enter</kbd>. You see a filtered list of Compute services related to virtual machine images.
 
-1. Explore the available dropdown filter boxes by clicking on the down arrow (it looks a bit like a chevron) and try some of them out. When you are satisfied, move on to the next step.
+1. Select any of the results that interest you to learn more about that service, including how to get started. Click the **X** in the corner to explore a different service. When you're done, move to the next step.
 
-1. Click the **X** in the right-hand end of the search box. This will erase your search term but does not reset any of the drop-down filters you've set. You can either reset those manually, or simply close the **Compute** blade with the X icon in the upper right corner and re-open it. When you are finished trying out the search and filtering options, move on to the next step.
-
-1. Click the **X** at the top right-hand corner to close the **Compute** blade.
+1. Click the **X** in the right-hand end of the search box. This will erase your search term but does not reset any of the drop-down filters you've set. You can either reset those manually, or simply close the **Compute** blade with the **X** icon in the upper right corner and re-open it. When you are finished trying out the search and filtering options, move on to the next step.
 
 1. Click the **X** at the top right-hand corner to close the **Marketplace** blade. Now you will see the **New** blade once again.
 

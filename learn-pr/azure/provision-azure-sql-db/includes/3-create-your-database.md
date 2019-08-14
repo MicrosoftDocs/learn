@@ -71,19 +71,6 @@ Over time if you realize you need additional compute power to keep up with deman
 
    ![Screenshot of the Azure portal showing the Create a resource blade with the Databases section selected and the Create a resource, Databases, and SQL Database buttons highlighted.](../media/3-create-db.png)
 
-1. Under **Server**, click **Configure required settings**, fill out the form, then click **Select**. Here's more information on how to fill out the form:
-
-    | Setting      | Value |
-    | ------------ | ----- |
-    | **Server name** | A globally unique [server name](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). |
-    | **Server admin login** | A [database identifier](https://docs.microsoft.com/sql/relational-databases/databases/database-identifiers) that serves as your primary administrator login name. |
-    | **Password** | Any valid password that has at least eight characters and contains characters from three of these categories: uppercase characters, lowercase characters, numbers, and non-alphanumeric characters. |
-    | **Location** | Any valid location from the available list below. |
-
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
-
-1. Click **Pricing tier** to specify the service tier. Select the **Basic** service tier, then click **Apply**.
-
 1. Use these values to fill out the rest of the form.
 
     | Setting      | Value |
@@ -91,11 +78,24 @@ Over time if you realize you need additional compute power to keep up with deman
     | **Database name** | **Logistics** |
     | **Subscription** | Your subscription |
     | **Resource group** |  Use the existing group <rgn>[sandbox resource group name]</rgn> |
-    | **Select source** | **Blank database** |
-    | **Want to use SQL elastic pool?** | **Not now** |
+    | **Want to use SQL elastic pool?** | **No** |
+    | **data source** | **None** |
     | **Collation** | **SQL_Latin1_General_CP1_CI_AS** |
 
-1. Click **Create** to create your Azure SQL database.
+1. Under **Server**, click **Create new**, fill out the form, then click **OK**. Here's more information on how to fill out the form:
+
+    | Setting      | Value |
+    | ------------ | ----- |
+    | **Server name** | A globally unique [server name](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). |
+    | **Server admin login** | A [database identifier](https://docs.microsoft.com/sql/relational-databases/databases/database-identifiers) that serves as your primary administrator login name. |
+    | **Password** | Any valid password that has at least eight characters and contains characters from three of these categories: uppercase characters, lowercase characters, numbers, and non-alphanumeric characters. |
+    | **Location** | Any valid location from the available list below. |
+    |**Allow Azure services to access server**| This checkbox should be checked. |
+
+    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+
+
+1. Click **Review + Create** to create your Azure SQL database.
 
     > [!IMPORTANT]
     > Remember your server name, admin login, and password for later.
@@ -112,7 +112,7 @@ Your Azure SQL database is now up and running. You have many options to further 
 
 You can also specify which systems can access your database through the firewall. Initially, the firewall prevents all access to your database server from outside of Azure.
 
-For your prototype, you only need to access the database from your laptop. Later, you can whitelist additional systems, such as your mobile app.
+For your prototype, you only need to access the database from your laptop. Later, you can add additional systems, such as your mobile app.
 
 Let's enable your development computer to access the database through the firewall now.
 

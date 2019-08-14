@@ -77,6 +77,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
     ```bash
    cd ~/mslearn-hotel-reservation-system/src/HotelReservationSystemTestClient
+    ```
 
 1. Edit the App.config file in this folder by using the code editor:
 
