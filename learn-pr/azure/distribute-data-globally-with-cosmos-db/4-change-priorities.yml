@@ -2,7 +2,7 @@
 uid: learn.distribute-data-globally-with-cosmos-db.4-change-priorities
 metadata:
   title: Change global read and write priorities
-  description: Learn how change the read and write prioritites for your global regions.
+  description: Learn how to change the read and write priorities for your global regions.
   ms.date: 09/24/2018
   author: rmcmurray
   ms.author: robmcm
