@@ -4,7 +4,7 @@ In this unit, you'll set up the development environment for the module. You'll a
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
-Run the following command in the command shell. The command reflects your data store choice in the toggle above. Be patient, as setup can take a few minutes to complete.
+Run the following command in the command shell. The command reflects your data store choice in the toggle above. Be patient, as setup can take a few minutes to complete. Continue reading while the script runs.
 
 ::: zone pivot="pg"
 
