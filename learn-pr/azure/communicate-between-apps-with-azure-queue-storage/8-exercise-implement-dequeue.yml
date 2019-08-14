@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.communicate-between-applications-with-azure-queue-storage.8-exercise-implement-dequeue
-title: Retrieve a message from the queue
+title: Exercise - Retrieve a message from the queue
 metadata:
-  title: Retrieve a message from the queue
+  title: Exercise - Retrieve a message from the queue
   description: Retrieve a message from the queue
   ms.date: 09/24/2018
   author: cryophobia
