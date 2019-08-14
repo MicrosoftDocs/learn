@@ -53,16 +53,23 @@ The products catalog page should be visible only to authenticated users. However
 
 The **Create Product** and **Edit Product** pages should be accessible only to administrators. To encapsulate the authorization criteria for such pages, an `Admin` policy will be created.
 
-1. In the `ConfigureServices` method of *:::no-loc text="Startup.cs":::*, replace the `// Add call to AddAuthorization` comment with the following code:
+1. In the `ConfigureServices` method of *:::no-loc text="Startup.cs":::*, make the following changes:
+    1. Replace the `// Add call to AddAuthorization` comment with the following code:
 
-    ```csharp
-    services.AddAuthorization(options =>
-        options.AddPolicy("Admin", policy =>
-            policy.RequireAuthenticatedUser()
-                .RequireClaim("IsAdmin", bool.TrueString)));
-    ```
+        ```csharp
+        services.AddAuthorization(options =>
+            options.AddPolicy("Admin", policy =>
+                policy.RequireAuthenticatedUser()
+                    .RequireClaim("IsAdmin", bool.TrueString)));
+        ```
 
-    The preceding code defines an authorization policy named `Admin`. The policy requires that the user is authenticated and has an `IsAdmin` claim set to `True`.
+        The preceding code defines an authorization policy named `Admin`. The policy requires that the user is authenticated and has an `IsAdmin` claim set to `True`.
+
+    1. Incorporate the following highlighted code:
+
+        [!code-csharp[](../code/6-Startup.cs?highlight=2-3)]
+
+        The `AuthorizePage` method call secures the *:::no-loc text="/Products/Edit":::* Razor Page route by applying the `Admin` policy. An advantage to this approach is that the Razor Page being secured requires no modifications. The authorization aspect is instead managed in *Startup.cs*. Anonymous users will be redirected to the login page. Authenticated users who don't satisfy the policy requirements are presented an **Access denied** message.
 
 1. In *:::no-loc text="Pages/Products/Create.cshtml.cs":::*, apply the following changes:
     1. Replace the `// Add [Authorize(Policy = "Admin")] attribute` comment with the following attribute:
@@ -71,20 +78,11 @@ The **Create Product** and **Edit Product** pages should be accessible only to a
         [Authorize(Policy = "Admin")]
         ```
 
-        The preceding code enforces that the `Admin` policy requirements are satisfied. Anonymous users will be redirected to the login page. Authenticated users who don't satisfy the policy requirements are presented an **Access denied** message.
+        The preceding code represents an alternative to the `AuthorizePage` method call in *:::no-loc text="Startup.cs":::*. The `[Authorize]` attribute enforces that the `Admin` policy requirements are satisfied. Anonymous users will be redirected to the login page. Authenticated users who don't satisfy the policy requirements are presented an **Access denied** message.
 
     1. Uncomment the `//using Microsoft.AspNetCore.Authorization;` line at the top of the file.
 
         The preceding change resolves the `[Authorize(Policy = "Admin")]` attribute in the previous step.
-
-1. In *:::no-loc text="Pages/Products/Edit.cshtml.cs":::*, apply the same changes as in the previous step:
-    1. Replace the `// Add [Authorize(Policy = "Admin")] attribute` comment with the following attribute:
-
-        ```csharp
-        [Authorize(Policy = "Admin")]
-        ```
-
-    1. Uncomment the `//using Microsoft.AspNetCore.Authorization;` line at the top of the file.
 
 ## Modify the registration page
 
@@ -129,7 +127,7 @@ Modify the registration page to allow administrators to register using the follo
     echo "$webAppUrl/Products/Create"
     ```
 
-    The user is forbidden from navigating to the page. An **Access denied** message is displayed.
+    The user is forbidden from navigating to the page. An **Access denied** message is displayed. Similarly, the user will be forbidden from navigating to a route such as *:::no-loc text="/Products/Edit/1":::* route.
 
 1. Select **Logout**.
 
@@ -146,7 +144,7 @@ Modify the registration page to allow administrators to register using the follo
 
 1. Once logged in with the new administrative user, click the **Products** link in the header.
 
-    Note that the administrative user can view, edit, and create products.
+    The administrative user can view, edit, and create products.
 
 ## Examine the AspNetUserClaims table
 
