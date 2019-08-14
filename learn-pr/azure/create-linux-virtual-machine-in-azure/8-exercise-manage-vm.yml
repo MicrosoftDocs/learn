@@ -5,14 +5,13 @@ metadata:
   title: Configure network settings
   description: Configure network settings
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 10
-# TODO: interactive: azure-portal
+# interactive: azure-portal
 azureSandbox: true
 content: |
   [!include[](includes/8-exercise-manage-vm.md)]
