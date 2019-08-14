@@ -2,7 +2,7 @@
 uid: learn.design-a-geographically-distributed-application.2-geo-distributed-architecture
 metadata:
   title: Design a geographically distributed architecture
-  description: Design a geographically distributed architecture
+  description: In this unit, you will learn how to modify a scalable, single-region architecture in Azure to be resilient to regional outages.
   ms.date: 06/30/2019
   author: jboeshart
   ms.author: jaboes
@@ -27,14 +27,14 @@ quiz:
     - content: "By multiplying together the individual SLAs for any of the services being used."
       isCorrect: true
       explanation: "A simple example would be an app consisting of Azure App Service (99.95% SLA) and Azure Active Directory (99.9% SLA); the resultant SLA will be 99.85%."
-  - content: "Complete this sentence: the overall resiliency of an app running in the cloud can be assessed by considering..."
+  - content: "You are modifying an application architecture that uses Azure DNS to resolve host names to IP addresses. You want the new architecture to support failover to a standby region. What should you do with Azure DNS?"
     choices:
-    - content: "How well it has been architected and coded."
-      isCorrect: false
-      explanation: "An app could be extremely well-architected from an abstract point of view, but if it is not sensitive to the peculiarities of a cloud environment, it will not be resilient."
-    - content: "The SLAs of those services underpinning the application."
-      isCorrect: false
-      explanation: "SLAs merely establish a baseline of uptime; they won't solve coding or architecture issues."
-    - content: "How well it has been architected to deal with any gaps or chokepoints of running in the cloud."
+    - content: "Make no changes to Azure DNS."
       isCorrect: true
-      explanation: "Assessing overall resiliency requires consideration of how well the application has been architected to deal with running in the cloud."
+      explanation: "Azure DNS records are replicated globally by default."
+    - content: "Configure Azure DNS to replicate its records to the standby region."
+      isCorrect: false
+      explanation: "This configuration is not necessary or possible. Azure DNS records are replicated globally by default."
+    - content: "Replace Azure DNS with Azure Traffic Manager."
+      isCorrect: false
+      explanation: "Azure Traffic Manager cannot store DNS records for name resolution."

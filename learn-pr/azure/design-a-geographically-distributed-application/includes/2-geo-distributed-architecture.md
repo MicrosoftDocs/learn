@@ -1,49 +1,124 @@
-The decisions you make early in an app project about architecture can have a profound impact on the performance of the final app. To make these decisions, you must understand distributed apps and their structures.
+Azure is a global system. By designing an architecture that is present in more than one Azure region, you can build an application that is resilient to even region-wide disasters.
 
-As you start to develop the architecture for the shipping company's application, it might be useful to compare traditional on-premises architectural styles. How well do those styles transfer to the cloud?
+In your shipping company, your shipments tracking portal is scalable, because you have built it by using a range of Azure services that have scalability built-in. It's also resilient to many failures, because its components can have multiple instances. However, your board of directors has become concerned that a large-scale disaster could cause an interuption in service, because the portal is entirely contained in the East US Azure region. You want to propose a modified architecture that can failover to a second region, if East US fails.
 
-Here, you will learn how Azure supports a distributed app architecture.
+Here, you'll learn why such an architecture is advantageous for business-critical applications and see an overview of it. In later units, you'll see further details of the networking, application services, and data components in the proposed distributed architecture. 
 
-## Architecting for the cloud
+## Original web app architecture
 
-Some of the principles of architecting applications for traditional environments are directly transferable to the cloud. However, there are also significant differences. In a traditional deployment environment, you typically dedicate hardware in a particular location to your application. This choice is based on an estimation of the resources you'll need when it's at peak usage. 
+Your shipments tracking portal has the architecture shown in this diagram:
 
-App usage is frequently under this peak and, consequently, many of the dedicated resources sit unused. In a cloud environment, by contrast, you scale infinitely and on demand. If your application is used heavily, you instantaneously provision more resources to deal with it. When it becomes idle again, you disable those resources. You only pay for what you use.
+<!-- TODO: This diagram is taken from the following location. A Learn version should be created by the design team: https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/scalable-web-app -->
 
-One aspect of this infinite scale in the cloud is that failure becomes an expected condition, and a natural part of the environment, not an anomaly. When you have one large powerful server sitting on-premises, over which you have full control, and an IT Ops team exclusively dedicated to its monitoring and maintenance, failures are more rare and recovery is quicker. 
+![A scalable web app architecture](../media/2-scalable-web-app.png)
 
-When you have millions of virtual machines based on commodity hardware sitting in a data center with associated networking equipment, power, cooling, and cabling, it's likely that some part of that infrastructure *will* occasionally fail. Many Azure services have a premium SKU whereby you can pay for more premium-grade hardware, but the problem doesn't go away entirely. 
+The entire application is hosted in a single resource group and all components are created in the East US region. This arrangement creates the resilience weakness because, if the East US region fails, the portal becomes unavailable to users. Let's examine the components of the architecture.
 
-Azure's controlling infrastructure deals with this expected condition by carrying out constant health probes. Azure also shifts deployed services from an intermittently failing part of the data center to a healthy one seamlessly and transparently. IT Ops teams in the cloud go to work on the failing hardware.
+### Networking
 
-## Service Level Agreements
+The shipment tracking portal has these networking components:
 
-Most Azure services offer a Service Level Agreement (SLA) or a guarantee of uptime. When you design an application architecture that consists of multiple Azure services, think of the overall SLA for the app as a composite of all those SLAs. You calculate this SLA by multiplying together the SLAs of the component services. A simple example would be an app that consists of Azure App Service (99.95% SLA) and Azure Active Directory (99.9% SLA); the resultant SLA will be 99.85%. 
+- **Azure DNS.** To resolve host names to IP addresses, you have configured the Azure DNS service. This setup means that you can manage your DNS records by using your Azure credentials in the Azure portal. Records are automatically distributed globally to Azure's network of DNS servers.
+- **Application Gateway.** To balance traffic between multiple instances of the web front end, you have set up Azure Application Gateway. This type of load balancer is localized to one Azure region.
+- **Azure CDN.** To maximize the speed of delivery for unsecured static content, such as graphics files, you've set up Azure CDN. THe global service caches static content at points of presence all around the world.
 
-You can expect the combined availability of those services to be 99.85%. However, such SLAs merely address the uptime of the services on which the application is built. A sound, 'cloud-native' application architecture and coding method are also crucial to its overall resiliency and fault-tolerance. 
+### Application Services
 
-Suppose you have an Azure App Service trying to retrieve data from an Azure SQL Database, and the latter has a momentary hardware problem that's being shifted elsewhere in the data center. The front end can be coded in a way that prepares the database to deal with such failures, and trys again in an intelligent way so that the database isn't flooded with requests. This kind of intelligent retry logic and other proven methods will help secure a truly resilient app architecture.
+To respond to user requests and deliver content rapidly, your architecture uses these application components:
 
-## Azure is worldwide
+- **Azure Active Directory.** All users have accounts in Azure AD. This directory is automatically replicated globally.
+- **Azure App Service.** The Azure App Service runs two front ends; a set of dynamic web pages and a web API. Browsers access the web pages. Mobile apps and other clients, use the web API.
+- **Azure Function Apps.** Your developers have implemented all background tasks as function apps. Some of these tasks run on a regular schedule. Other tasks operate on message in the queue.
+- **Azure Storage Queues.** If the App Service must call a function app, it places a message in a queue in the Azure Storage account. Function apps watch these queues and take action on message when they appear. By using a queue, you ensure that the application is robust at times of high demand, because messages are handled in order and will not be lost or timed out.
+- **Redis cache.** You use a Redis cache between the front-end app service and the data storage systems to maximize the performance of queries.
+- **Azure Blob Storage.** Static content, such as graphics and video files, are kept as Binary Large Objects (Blobs) in an Azure Storage account. These are delivered throught the Azure CDN.
+- **Azure Search.**  To enable users to search your content, and to provide search suggestions and fuzzy search results, you have implemented the Azure Search service.
 
-Applications built for Azure typically have access to an infrastructure that spans the globe. You can place resources in whichever Azure region is closest to your customers. You'll see that SLAs for cloud services are rarely 100%. One reason for this situation is that it's impossible to secure entire regions against natural events or human error. Historically, many public cloud outages occur because of regional failures. In 2012, for example, Hurricane Sandy took out a number of Manhattan data centers. Consequently, a key part of making any cloud architecture resilient and highly available is to ensure it spans more than one region.
+### Data Storage
 
-Such an architecture can fail over easily and reliably to a secondary region with minimal loss of data. But even a multi-regional architecture is vulnerable to data loss. No architecture can provide 100% reliability and 100% uptime. The goal is to provide as much reliability as possible, and understand and defend against any problematic choke points. You use design patterns and strategies that have been adapted or devised for a cloud environment.
+You're using two services to store data such as order details and tracking data:
 
-## The shipping company architecture
+- **Azure SQL Database.** Relational data, including order and customer details, are kept in SQL Database tables.
+- **Cosmos DB.** Semi-structure data, including the product catalog, are kept in Cosmos DB.
 
-If you examine the application mentioned in the introduction, you'll see it uses several Azure services. To solidify the architecture against the possibility of a regional failure, you'll need to ensure that none of the Azure services used are tightly coupled to a single region. In some cases, like Azure DNS and the Azure CDN, this loose coupling is an integral part of the service. In other cases, you'll need to explicitly duplicate your resources in another region, and provide a mechanism to effect a failover if there's a failure.
+## Issues with the original architecture
 
-Azure is designed to cope with momentary failures in the data center by making constant probes and a readiness to shift around resources. Azure has been designed so that regions are explicitly paired. For the purposes of this module, we'll deploy our app in West Europe and, if necessary, fail over to North Europe.
+The existing architecture for the tracking portal is designed to be scalable. Many components scale out, because you can add instances of those components to increase capacity. For example, if demand is high and responses to user requests is slow, you can consider adding more instances of the front end web app in the App Service. 
 
-It's worth reviewing the original plan for the shipping company's application architecture. At that time, they thought a single region would be sufficient. This process will better enable us to see how to take an existing app and make it fault tolerant across regions. The shipping company has a website hosted Azure App Service for direct consumers. It also has a web API interaction with other businesses through their APIs, also in the App Service. To improve performance and scalability, static resources like images, CSS, and HTML files are fetched from the Azure CDN. Typically, Azure SQL Database provides the information to fulfill website read operations, like tracking shipments. But over time that data will increasingly be fetched from Redis Cache. 
+This also helps to increase availability, because when an individual instance fails, the Application Gateway can route requests to other instances. 
 
-Write operations (like creating, updating, and deleting shipments) are added to an Azure Queue storage queue that triggers a Function App. When the Function App is triggered by the addition of a message to the queue, it attempts to write to SQL Database, and remove the message from the queue if successful. Cosmos DB is used to hold overall product catalog data, because different manufacturers may describe their offerings with different schemas. This scenario is ideally suited for Cosmos DB. Again, over time, this information may be retrieved from Redis Cache instead. Domain name resolution is provided by Azure DNS. Website authentication is provided by Azure AD.
+### Regional failures
 
-<!--Todo: diagram of this architecture based in a single region based on the diagram here https://docs.microsoft.com/en-gb/azure/architecture/reference-architectures/app-service-web-app/multi-region-->
+Some large events have the potential to interrupt an entire Azure region. Azure datacenters are designed to be highly resilient but a large weather event such as a hurricane or flood can interrupt service from the region. 
 
-Replicate those parts of the system that can be replicated in a pair of regions. These parts include Azure App Service, Function App, Redis Cache, and the queue. For other services, like SQL Database and Cosmos DB, it's more a case of flipping a switch so that they become present in other regions. The architecture uses some supporting services that are inherently multi-region, like Azure DNS, Azure AD, and Azure CDN. Finally, the global Traffic Manager service is used as an orchestrator to switch incoming traffic from one region to another if there's regional failure.
+This is an unusual occurance, and many companies feel that they can sustain that risk. However, for your tracking portal, the consequences of a regional failure could be so negative that your executives have decided to eliminate that risk. You must find a way to remove it.
 
-<!--Todo: diagram of this architecture based in two regions for failover based on the diagram here https://docs.microsoft.com/en-gb/azure/architecture/reference-architectures/app-service-web-app/multi-region-->
+### Service Level Agreements
 
-In the following units, we'll consider the networking, application and data components of this architecture, and how to make them multi-regional.
+Most Azure services offer a Service Level Agreement (SLA) or a guarantee of uptime. When you design an application architecture that consists of multiple Azure services, think of the overall SLA for the app as a composite of all those SLAs. 
+
+You calculate this SLA by multiplying together the SLAs of the component services. A simple example would be an app that consists of Azure App Service (99.95% SLA) and Azure Active Directory (99.9% SLA); the resultant SLA will be 99.85%. 
+
+If this percentage uptime is not enough for your application, one way to improve it is to arrange for the application to fail over onto another region.
+
+### Global, regional, and configurable components
+
+In your original architecture, some components all global by default and so are not vulnerable to a regional failure. You don't have to do anything about these components. 
+
+Some components are confined to a single region, such as the Application Gateway. You'll have to select an alternate service for these components.
+
+Some components can be configured to support multiple regions. For example, you can use the Geo-Redundant Storage (GRS) option in the Azure Storage account that store static content. GRS replicates blobs to another region.
+
+This table shows which components are global, regional, and configurable:
+
+| Component | Support for multiple regions | Comments |
+| --- | --- | --- |
+| Azure DNS | Global | No changes are necessary. |
+| Application Gateway | Regional | Each instance of Application Gateway is located in a single region. |
+| Azure CDN | Global | No changes are necessary, content is cached globally by default. |
+| Azure Active Directory | Global | No changes are necessary. |
+| Azure App Service | Regional | Each instance of the app is located in a single region. |
+| Azure Function Apps | Regional | Each instance of the function app is located in a single region. |
+| Azure Storage Queues | Configurable | You can choose to replicate a Storage Account to multiple regions. |
+| Azure Redis Cache | Regional |  Each instance of the cache is located in a single region. |
+| Azure Blob Storage | Configurable | You can choose to replicate a Storage Account to multiple regions. |
+| Azure Search | Regional |  Each instance of the search service is located in a single region. |
+| Azure SQL Database | Configurable | You can use geo-replication to synchronize data to multiple regions |
+| Azure Cosmos DB | Configurable | You can use geo-replication to synchronize data to multiple regions |
+| | |
+
+## Proposed distributed architecture
+
+After some investigation, you propose the architecture in this diagram:
+
+<!-- TODO: This diagram is taken from the following location. A Learn version should be created by the design team: https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/multi-region -->
+
+![Highly-available architecture](../media/2-multi-region-web-app-diagram.png)
+
+In this architecture, there is an active region (East US) and a standby region (West US). Under ordinary circumstances, all requests are handled by the components in the East US region. If there is a disaster that causes that region to fail, the application fails over onto the West US region.
+
+Let's examine, at a high level, how you have modified the original architecture. You examine these changes in more detail in later units.
+
+### Networking
+
+Azure DNS and Azure CDN are global systems by default and already resilient to regional failures. They remain in place in the same configuration.
+
+An instance of Azure Application Gateway, however, is contained within a region. By replacing this service with Azure Traffic Manager, you remove this vulnerability. Also, you can configure Traffic Manager to poll instances of the App Service in multiple regions. If the East US App Service becomes unavailable, it's Traffic Manager that handles the fail over to West US.
+
+### Application Services
+
+Azure AD is a global system and needs no modification.
+
+Azure Storage accounts, which contain static content blobs and queues, can be configured to replicate content to multiple regions. Use one of the geo-redundant storage options.
+
+The other components, including the App Service, Function Apps, the Redis cache, and Azure Search are regional. In the new architecture, create duplicate instances of these components in the West US region. In this way, when a failover occurs, the new region can take over smoothly. There may be minor consequences - for example, the Redis cache in West US will not contain any data, so there may be a temporary fall in performance that subsequently recovers automatically as the new cache fills.
+
+### Data Storage
+
+Both Azure SQL Database and Azure Cosmos DB support geo-replication of data to other regions. Configure these services to replicate East US data to the equivalent services in West US.
+
+## Regional Pairs
+
+An Azure region is area with a single geography that contains one or more Azure datacenters. All regions are paired with another region in the same geography. Within these pairs, updates and planned maintenance are done on only one region at a time. Also, if there is a failure that affects multiple regions, at least one region in each pair will be prioritized for rapid recovery. 
+
+That's why it is best practice to place a two-region architecture for your app on the two regions in a regional pair. For example, East US is paired with West US, so your proposed architecture uses East US for its active region and West US for its standby region.

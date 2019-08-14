@@ -10,5 +10,6 @@ Finally, you saw how to make the data architecture highly available and multi-re
 
 ## Learn more
 
-- [Run a web application in multiple Azure regions for high availability](https://docs.microsoft.com/en-gb/azure/architecture/reference-architectures/app-service-web-app/multi-region)
-- [Azure Paired Regions page](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)
+- [Improve scalability in an Azure web application](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/scalable-web-app)
+- [Run a web application in multiple Azure regions for high availability](https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/multi-region)
+- [Business continuity and disaster recovery (BCDR): Azure Paired Regions](https://docs.microsoft.com/azure/best-practices-availability-paired-regions)
