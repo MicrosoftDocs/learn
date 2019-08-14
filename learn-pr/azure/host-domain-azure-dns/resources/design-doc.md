@@ -18,7 +18,7 @@ Azure DNS
 
 ## Prerequisites
 
-Basic knowledge of networking concepts like DNS and IP addresses
+Basic knowledge of networking concepts like name resolution and IP addresses
 
 ## Summary
 
@@ -86,7 +86,7 @@ Identify the subtasks of *Manage DNS records with Azure DNS*
 
     See: [Quickstart: Create an Azure DNS zone and record using the Azure portal](https://docs.microsoft.com/azure/dns/dns-getstarted-portal#test-the-name-resolution)
 
-1. **Use alias record to dynamically resolve name for Azure resource**
+1. **Dynamically resolve resource name by using alias record**
 
   
       - Alias Records
