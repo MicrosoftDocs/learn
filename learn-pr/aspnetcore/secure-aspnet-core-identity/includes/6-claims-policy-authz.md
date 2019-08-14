@@ -64,7 +64,7 @@ The **Create Product** and **Edit Product** pages should be accessible only to a
 
     The preceding code defines an authorization policy named `Admin`. The policy requires that the user is authenticated and has an `IsAdmin` claim set to `True`.
 
-1. In *:::no-loc text="Pages/Products/**Create**.cshtml.cs":::*, apply the following changes:
+1. In *:::no-loc text="Pages/Products/\**Create**.cshtml.cs":::*, apply the following changes:
     1. Replace the `// Add [Authorize(Policy = "Admin")] attribute` comment with the following attribute:
 
         ```csharp
@@ -77,7 +77,7 @@ The **Create Product** and **Edit Product** pages should be accessible only to a
 
         The preceding change resolves the `[Authorize(Policy = "Admin")]` attribute in the previous step.
 
-1. In *:::no-loc text="Pages/Products/**Edit**.cshtml.cs":::*, apply the same changes as in the previous step:
+1. In *:::no-loc text="Pages/Products/\**Edit**.cshtml.cs":::*, apply the same changes as in the previous step:
     1. Replace the `// Add [Authorize(Policy = "Admin")] attribute` comment with the following attribute:
 
         ```csharp
@@ -123,7 +123,13 @@ Modify the registration page to allow administrators to register using the follo
 
 1. Navigate to your app and log in with an existing user, if not already logged in. Select **Products** from the header. Notice the user isn't presented links to edit, delete, or create products.
 
-1. Attempt to navigate directly to the **Create Product** page by navigating to: `https://[web app name].azurewebsites.net/Products/Create`. The user is forbidden from navigating to the page.
+1. In the browser's address bar, navigate directly to the **Create Product** page. That page's URL can be obtained by running the following command:
+
+    ```bash
+    echo "$webAppUrl/Products/Create"
+    ```
+
+    The user is forbidden from navigating to the page. An **Access denied** message is displayed.
 
 1. Select **Logout**.
 

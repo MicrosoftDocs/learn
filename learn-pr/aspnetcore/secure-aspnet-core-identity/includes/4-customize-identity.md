@@ -268,7 +268,7 @@ Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to display the fi
 1. Select **Register** and use the updated form to register a new user.
 
     > [!NOTE]
-    > The validation constraints on the **First Name** and **Last Name** fields reflect the data annotations on the `FirstName` and `LastName` properties of `InputModel`.
+    > The validation constraints on the **First name** and **Last name** fields reflect the data annotations on the `FirstName` and `LastName` properties of `InputModel`.
 
     After registering, you're redirected to the homepage. The app's header now contains **Hello, [First name] [Last name]!**.
 

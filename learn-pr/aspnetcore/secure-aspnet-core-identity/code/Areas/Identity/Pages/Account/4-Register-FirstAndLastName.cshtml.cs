@@ -43,9 +43,9 @@ public async Task<IActionResult> OnPostAsync(string returnUrl = null)
             Email = Input.Email,
         };
         var result = await _userManager.CreateAsync(user, Input.Password);
-#endregion
         if (result.Succeeded)
         {
+#endregion
             _logger.LogInformation("User created a new account with password.");
 
             var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);

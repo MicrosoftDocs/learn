@@ -320,7 +320,7 @@ This NuGet package provides EF Core with knowledge of how to interact with a Pos
     After successful registration:
 
     * You're redirected to the homepage.
-    * The app's header displays **Hello [Email address]** and a **Logout** link.
+    * The app's header displays **Hello [Email address]!** and a **Logout** link.
     * A cookie named *:::no-loc text=".AspNetCore.Identity.Application":::* is created. Identity preserves user sessions with cookie-based authentication.
 
 1. Click the **Logout** link in the app's header.

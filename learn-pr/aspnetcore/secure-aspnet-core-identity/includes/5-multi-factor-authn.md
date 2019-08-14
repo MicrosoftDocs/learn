@@ -62,21 +62,21 @@ To avoid distracting from the focus on Identity, the boilerplate to support QR c
 
     Using Microsoft Authenticator as an example, follow these steps to add the account to the app:
 
-    1. Open the Microsoft Authenticator app.
-    1. Select the kebab menu (vertical ellipsis) in the upper right.
-    1. Select **Add account**.
-    1. Select **Other account (Google, Facebook, etc.)**.
-    1. Scan the QR code as indicated.
-    1. Enter the verification code provided in Microsoft Authenticator in the **Verification Code** text box.
-    1. Select **Verify**.
+        1. Open the Microsoft Authenticator app.
+        1. Select the kebab menu (vertical ellipsis) in the upper right.
+        1. Select **Add account**.
+        1. Select **Other account (Google, Facebook, etc.)**.
+        1. Scan the QR code as indicated.
+        1. Enter the verification code provided in Microsoft Authenticator in the **Verification Code** text box.
+        1. Select **Verify**.
 
-    Upon successful verification, the page displays a **Your authenticator app has been verified.** banner and some recovery codes.
+    Upon successful verification, the page displays a **Your authenticator app has been verified** banner and some recovery codes.
 
 1. Select **Logout**, and then log in again with the same user.
 
 1. Select the **Hello, [First name] [Last name]!** link again.
 
-1. Enter the verification code from the TOTP authenticator app in the **Authenticator code** text box, and click **Log in**.
+1. Enter the verification code from the TOTP authenticator app in the **Authenticator code** text box. Select the **Log in** button.
 
 1. Select **Hello, [First name] [Last name]!**. Then, select the **Two-factor authentication** tab.
 
