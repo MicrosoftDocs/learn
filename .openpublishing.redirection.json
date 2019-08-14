@@ -269,6 +269,11 @@
       "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/prepare-your-dev-environment-for-azure-development/4-summary",
       "redirect_document_id": true
-    }
+    },
+    {
+      "source_path": "learn-pr/azure/create-windows-virtual-machine-in-azure/7-exercise-manage-vm.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure/8-summary",
+      "redirect_document_id": true
+    },
   ]
 }
