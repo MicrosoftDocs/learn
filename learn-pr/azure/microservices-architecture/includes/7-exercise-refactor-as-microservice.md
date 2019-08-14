@@ -1,11 +1,8 @@
-
-Show how the app now calls an API instead of an internal service.
-
-Need a diagram of what we're updating and deploying
+Now that Fabrikam has analyzed their application, they are now ready to start the refactoring process to actually move services out of their monolithic architecture into microservices. Let's modify the application to move the package processing service into a microservice.
 
 ## Refactor application
 
-Before we deploy the updated application, let's take a look at how it was updated. The monolithic app has a service to process packages, *PackageProcessor.cs*. The Fabrikam team pulled this out into the microservice. 
+Before we deploy the updated application, let's take a look at how it was updated. The monolithic app has a service to process packages, *PackageProcessor.cs*. The Fabrikam team pulled this out into the microservice.
 
 Now let's redeploy the application. We'll deploy our refactored service on Azure Functions first, then deploy the refactored application on App Service, and point it to the function.
 
@@ -63,13 +60,13 @@ Now let's redeploy the application. We'll deploy our refactored service on Azure
     code src/DroneDelivery-after/appsettings.json
     ```
 
-1. Now you need the URL that you copied a couple steps ago. The URL should look something like this:
+1. Now you need the URL that you copied a couple steps ago. The URL should look similar to this:
 
     `https://packageservicefunction-abc.azurewebsites.net/api/packages/{id}?code=SvrbiyhjXJUdTPXrkcUtY6bQaUf7OXQjWvnM0Gq63hFUhbH2vn6qYA==`
 
     In the Code editor, there are two values you need to replace with values from this URL, `PackageServiceUri` and `PackageServiceFunctionCode`. In `PackageServiceUri` replace `<URL_OF_PackageService_Function>` with the corresponding value from your URL.
 
-    In `PackageServiceFunctionCode` replace the `<PackageServiceFunction code>` with the code in your URL. You'll want everything after the `code=` including the `==` at the end. Once complete, your *appsettings.json* file should look like this:
+    In `PackageServiceFunctionCode` replace the `<PackageServiceFunction code>` with the code in your URL. You'll want everything after the `code=` including the `==` at the end. Once complete, your *appsettings.json* file should look similar to this:
 
     ```json
     {

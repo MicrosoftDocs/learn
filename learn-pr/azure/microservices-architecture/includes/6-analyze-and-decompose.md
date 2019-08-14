@@ -100,8 +100,6 @@ Now we're ready to go from domain model to application design. Here's an approac
 
 Above all, it's important to be pragmatic, and remember that domain-driven design is an iterative process. When in doubt, start with more coarse-grained microservices. Splitting a microservice into two smaller services is easier than refactoring functionality across several existing microservices.
 
-<!-- ![Diagram of the shipping bounded context](../media/6-shipping-bounded-context.png) -->
-
 ![Diagram of the microservices](../media/6-drone-delivery.png)
 
 ## Applying to the drone application
