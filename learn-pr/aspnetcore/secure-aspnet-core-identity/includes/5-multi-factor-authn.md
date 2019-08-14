@@ -67,8 +67,11 @@ To avoid distracting from the focus on Identity, the boilerplate to support QR c
     1. Select **Add account**.
     1. Select **Other account (Google, Facebook, etc.)**.
     1. Scan the QR code as indicated.
-    1. Enter the verification code provided in Microsoft Authenticator in the **Verification Code** text box.
-    1. Select **Verify**.
+    1. Select Finish to verify the 32-character key.
+
+1. Enter the verification code provided by your TOTP app in the **Verification Code** text box.
+
+1. Select **Verify**.
 
     Upon successful verification, the page displays a **Your authenticator app has been verified** banner and some recovery codes.
 
