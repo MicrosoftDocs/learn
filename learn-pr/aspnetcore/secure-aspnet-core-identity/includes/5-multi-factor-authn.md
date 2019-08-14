@@ -33,7 +33,7 @@ To avoid distracting from the focus on Identity, the boilerplate to support QR c
 
 1. In *:::no-loc text="Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml":::*, make the following highlighted changes and save:
 
-    [!code-csharp[](../code/Areas/Identity/Pages/Account/Manage/5-EnableAuthenticator.cshtml?highlight=4-6)]
+    [!code-cshtml[](../code/Areas/Identity/Pages/Account/Manage/5-EnableAuthenticator.cshtml?highlight=4-6)]
 
     The preceding markup embeds the base-64 encoded image in the page.
 
