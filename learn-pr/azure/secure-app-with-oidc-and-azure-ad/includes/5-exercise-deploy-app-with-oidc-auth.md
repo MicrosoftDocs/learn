@@ -50,6 +50,7 @@ In this exercise, you'll configure an application to authenticate users against 
       },
       "AllowedHosts": "*"
     }
+    ```
 
 1. Select **Ctrl+S** to save the file and **Ctrl+Q** to close the code editor.
 
