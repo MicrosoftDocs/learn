@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-linux-vm-in-azure.3-exercise-generate-ssh-key
-title: Decide an authentication method for SSH
+title: Exercise - Decide an authentication method for SSH
 metadata:
-  title: Decide an authentication method for SSH
+  title: Exercise - Decide an authentication method for SSH
   description: Decide an authentication method for SSH
   ms.date: 09/24/2018
   author: cwatson-cat
