@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-linux-vm-in-azure.8-exercise-manage-vm
-title: Configure network settings
+title: Exercise - Configure network settings
 metadata:
-  title: Configure network settings
+  title: Exercise - Configure network settings
   description: Configure network settings
   ms.date: 09/24/2018
   author: cwatson-cat
