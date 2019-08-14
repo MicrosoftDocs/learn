@@ -26,7 +26,7 @@ units:
 - learn.azure.host-domain-azure-dns.what-is-azure-dns
 - learn.azure.host-domain-azure-dns.configure-azure-dns-host-domain
 - learn.azure.host-domain-azure-dns.exercise-create-dns-zone-a-record
-- learn.azure.host-domain-azure-dns.use-alias-record
+- learn.azure.host-domain-azure-dns.resolve-name-alias-record
 - learn.azure.host-domain-azure-dns.exercise-create-alias-records
 - learn.azure.host-domain-azure-dns.summary
 badge:
