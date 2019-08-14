@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.host-domain-azure-dns.exercise-create-alias-records
+title: Exercise - Create alias records for Azure DNS
+metadata:
+  title: Exercise - Create alias records for Azure DNS
+  description: Exercise - Create alias records for Azure DNS
+  ms.date: 08/13/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+  zone_pivot_groups: 
+interactive: bash
+azureSandbox: true
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-exercise-create-alias-records.md)]
