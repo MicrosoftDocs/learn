@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.lp01-m00-cloud-overview.lp01-m00-01-cloud-computing
+title: Define cloud computing
+metadata:
+  title: Define cloud computing
+  description: Definition of cloud computing
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/lp01-m00-01-cloud-computing.md)]

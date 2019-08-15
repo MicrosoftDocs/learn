@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.lp01-m00-cloud-overview.lp01-m00-02-before-the-cloud
+title: Before the cloud
+metadata:
+  title: Before the cloud
+  description: Pre-Cloud Computing Domains and Applications
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 26
+content: |
+  [!include[](includes/lp01-m00-02-before-the-cloud.md)]

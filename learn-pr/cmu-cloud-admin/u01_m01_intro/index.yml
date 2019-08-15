@@ -1,0 +1,39 @@
+### YamlMime:Module
+#LP name: Introduction to the Cloud with Carnegie Mellon
+uid: learn.cmu-cloud-admin.lp01-m00-cloud-overview
+metadata:
+  title: Cloud Overview
+  description: Cloud overview
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Foundations of Cloud Computing
+summary: Discover the cloud, how it works, and why it matters to you, with Carnegie Mellon's online Cloud Administration course textbook. 
+abstract: | 
+  In this module you will:
+  - TBD
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.cmu-cloud-admin.lp01-m00-cloud-overview.lp01-m00-00-intro
+- learn.cmu-cloud-admin.lp01-m00-cloud-overview.lp01-m00-01-cloud-computing
+- learn.cmu-cloud-admin.lp01-m00-cloud-overview.lp01-m00-02-before-the-cloud
+- learn.cmu-cloud-admin.lp01-m00-cloud-overview.lp01-m00-03-evolution
+- learn.cmu-cloud-admin.lp01-m00-cloud-overview.lp01-m00-04-service-models
+- learn.cmu-cloud-admin.lp01-m00-cloud-overview.lp01-m00-05-types
+- learn.cmu-cloud-admin.lp01-m00-cloud-overview.lp01-m00-06-cloud-stacks
+- learn.cmu-cloud-admin.lp01-m00-cloud-overview.lp01-m00-07-economics
+- learn.cmu-cloud-admin.lp01-m00-cloud-overview.lp01-m00-08-benefits-risks-challenges
+- learn.cmu-cloud-admin.lp01-m00-cloud-overview.lp01-m00-09-sla
+- learn.cmu-cloud-admin.lp01-m00-cloud-overview.lp01-m00-10-use-cases
+- learn.cmu-cloud-admin.lp01-m00-cloud-overview.lp01-m00-11-summary
+badge:
+  uid: learn.cmu-cloud-admin.lp01-m00-cloud-overview.badge
