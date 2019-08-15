@@ -147,6 +147,6 @@ The `type`, `data-val-range-min`, `data-val-range-max` and error response are dy
 
 The following is the completed *:::no-loc text="Create":::* form rendered in the browser displaying its validation messages after the user's input failed to pass data validation.
 
-![Completed Create Product Form](../media/6-new-razor-page-create-form/createproduct-validation.png)
+![Completed Create Product Form](../media/5-new-razor-page-create-form/createproduct-validation.png)
 
 Now that the *:::no-loc text="Create":::* Razor Page form has been created, let's explore its *:::no-loc text="PageModel":::* class file and modify it to handle the *:::no-loc text="Create":::* page's *:::no-loc text="POST":::* event and data.

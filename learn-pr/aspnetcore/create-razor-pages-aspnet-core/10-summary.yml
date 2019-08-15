@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-razor-pages-aspnet-core.11-summary
+uid: learn.create-razor-pages-aspnet-core.10-summary
 metadata:
   title: Summary
   description: Summary
@@ -14,4 +14,4 @@ azureSandbox: true
 interactive: bash
 durationInMinutes: 1
 content: |
-  [!include[](includes/11-summary.md)]
+  [!include[](includes/10-summary.md)]

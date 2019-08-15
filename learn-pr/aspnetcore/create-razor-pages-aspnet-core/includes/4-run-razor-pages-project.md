@@ -97,7 +97,7 @@ Now that your *:::no-loc text="ContosoPets.UI":::* application has been hosted o
 
 You should see the following page:
 
-![The ContosoPets.UI Product Admin page](../media/5-run-razor-pages-project/product-admin.png)
+![The ContosoPets.UI Product Admin page](../media/4-run-razor-pages-project/product-admin.png)
 
 This is the rendered *:::no-loc text="Index.cshtml":::* Razor Page located in the *:::no-loc text="Pages/Product/":::* directory of your *:::no-loc text="ContosoPets.UI":::* project. The URL ends with *:::no-loc text="Product":::*. Razor Pages is using the directory structure within the *:::no-loc text="Pages":::* directory as the convention for routing requests by default.
 
