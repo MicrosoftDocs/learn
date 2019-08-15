@@ -6,7 +6,7 @@ Recall that our goal is to move an existing Linux server running Apache to Azure
 
 We can create Linux VMs with the Azure portal, the Azure CLI, or Azure PowerShell. The easiest approach when you are starting with Azure is to use the portal because it walks you through the required information and provides hints and helpful messages during the creation:
 
-1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true).
+1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure subscription.
 
 1. Click **Create a resource** in the upper-left corner of the Azure portal.
 

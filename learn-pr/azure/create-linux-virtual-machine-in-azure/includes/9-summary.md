@@ -7,7 +7,7 @@ You learned that while SSH allows us to interact with the operating system and s
 
  1. In Azure, select **Resource groups** on the left.
 
- 1. Find the **learn-clvm-rg** resource group, or whatever resource group name you used,  and select it.
+ 1. Find the **learn-create-linux-vm-rg** resource group, or whatever resource group name you used,  and select it.
 
  1. In the **Overview** tab of the resource group, select **Delete resource group**.
 
