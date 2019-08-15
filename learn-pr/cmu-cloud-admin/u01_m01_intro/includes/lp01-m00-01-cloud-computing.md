@@ -1,28 +1,16 @@
----
-title: Cloud Computing
----
-
-+----------------------------------------+
-| Learning Objective                     |
-| ==================                     |
-+========================================+
-| Explain the concept of cloud computing |
-+----------------------------------------+
-
 Cloud computing offers the use of computing resources as a service over a network. The "cloud" is simply a large distributed computing infrastructure whose services are available to end users in much the same that electricity is available to customers of power companies. Similar to some other domains, cloud computing came about through the maturity of enabling technologies while attempting to satisfy economic needs. In this course, we will provide an introduction to cloud computing and then cover relevant topics, in varying detail, including hardware and software infrastructure, resource management (virtualization), cloud storage, and programming models.
 
-What is Cloud Computing?
-========================
+# What is Cloud Computing?
 
-Cloud computing is defined as follows:
-
-The delivery of computing as a service over a network, whereby distributed resources are provided to the end user as a utility
+> [!div class="alert is-tip"]
+> ### Cloud Computing
+>
+> _(definition)_ The delivery of computing as a service over a network, whereby distributed resources are provided to the end user as a utility.
 
 Information Technology (IT) has become an essential requirement for most organizations to function effectively. Typically, and depending on a specific organization's needs, IT has three components as depicted in Figure 1.1: application software, development platforms, and underlying infrastructure.
 
-![https://oli.cmu.edu/repository/webcontent/0ea6fc470a0001dc68390ea2588ab51d/\_u01\_intro/\_u01\_m01\_intro/webcontent/IT\_components.png](media/image1.png){width="4.6875in" height="2.25in"}
-
-Figure 1.1: Typical components of Information Technology
+![Figure 1.1: Typical Components of Information Technology.](../media/IT_components.png)
+_Figure 1.1: Typical Components of Information Technology._
 
 Traditionally, an organization that needs to deploy a particular IT solution has to procure, set up, and maintain the infrastructure and the application. Some organizations may decide to develop their own software, in which case they need to manage development platforms as well. The organization hence \"owns\" the solution, which allows full control over the solution, including, for example, access security and customization. However, ownership has some drawbacks:
 
