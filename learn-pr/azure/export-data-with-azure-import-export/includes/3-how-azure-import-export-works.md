@@ -94,7 +94,7 @@ To import data, complete the following steps:
 
 1. **Ship**
 
-   Use a supported carriers like DHL or FedEx to ship the drives to the Azure datacenter. The carrier provides a tracking number. You add this tracking number to the import job.
+   Use a supported carrier like DHL or FedEx to ship the drives to the Azure datacenter. The carrier provides a tracking number. You add this tracking number to the import job.
 
 1. **Check job status**
 
