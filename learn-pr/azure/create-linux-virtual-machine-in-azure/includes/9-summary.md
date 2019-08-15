@@ -9,7 +9,7 @@ You learned that while SSH allows us to interact with the operating system and s
 
  1. Find the **learn-clvm-rg** resource group, or whatever resource group name you used,  and select it.
 
- 1. You will be on the **Overview** tab of the resource group. At the top, select **Delete resource group**.
+ 1. In the **Overview** tab of the resource group, select **Delete resource group**.
 
  1. This opens a new dialog box. Type the name of the resource group  again and select **Delete**. This will delete all of the resources we created in this module.
 
