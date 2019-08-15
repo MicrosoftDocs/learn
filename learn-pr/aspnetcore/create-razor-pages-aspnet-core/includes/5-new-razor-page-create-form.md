@@ -91,6 +91,7 @@ Open your *:::no-loc text="Create.cshtml":::* Razor page, located in the *:::no-
     </div>
 </form>
 ```
+
 [!INCLUDE[OS-specific keyboard shortcuts](../../includes/keyboard-shortcuts-table.md)]
 
 Your *:::no-loc text="Create":::* Razor Page now contains HTML plus Razor syntax for a basic form. The *:::no-loc text="Create":::* page's purpose is to allow a user to create a new ContosoPets product entry with *:::no-loc text="Name":::* and *:::no-loc text="Price":::* values. Although there is relatively little markup in this file, there are some dynamic features provided through Razor Tag Helpers.

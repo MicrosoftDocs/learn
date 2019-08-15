@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-razor-pages-aspnet-core.9-deploy-and-test
+uid: learn.create-razor-pages-aspnet-core.8-deploy-and-test
 metadata:
   title: Deploy and test the ContosoPets.UI project 
   description: Deploy and test the ContosoPets.UI project.
@@ -12,6 +12,6 @@ metadata:
 title: Deploy and test the ContosoPets.UI project 
 azureSandbox: true
 interactive: bash
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
-  [!include[](includes/9-deploy-and-test.md)]
+  [!include[](includes/8-deploy-and-test.md)]

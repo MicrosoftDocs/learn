@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-aspnetcore
   ROBOTS: NOINDEX
 title: Compile and Run the Razor Pages Project
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/2-why-when-use-razor-pages.md)]

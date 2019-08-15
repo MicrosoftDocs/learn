@@ -12,6 +12,6 @@ metadata:
 title: Summary
 azureSandbox: true
 interactive: bash
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
   [!include[](includes/11-summary.md)]

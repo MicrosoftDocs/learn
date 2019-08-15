@@ -166,7 +166,7 @@ There is a comprehensive set of data annotation attributes available to you thro
 
 ## The *:::no-loc text="Product":::* Model as a Data Transfer Object
 
-The `Product` model also serves as a Data Transfer Object (DTO). A DTO is an object that defines the data that will be sent over the network, in this case to the web API. The *:::no-loc text="ContosoPets.UI":::* `ProductService` class that handles all HTTP requests uses the `Product` model as a DTO that defines valid *:::no-loc text="Product":::* data that can be sent to send and receive from the web API.
+The `Product` model also serves as a Data Transfer Object (DTO). A DTO is an object that defines the data that will be sent over the network, in this case to the web API. The *:::no-loc text="ContosoPets.UI":::* `ProductService` class that handles all HTTP requests uses the `Product` model as a DTO that defines valid *:::no-loc text="Product":::* data that can be sent to and receive from the web API.
 
 ## Injecting the ContosoPets.UI ProductService Service that handles HTTP requests
 

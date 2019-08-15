@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-razor-pages-aspnet-core.7-create-pagemodel
+uid: learn.create-razor-pages-aspnet-core.6-create-pagemodel
 metadata:
   title: Modify the page model 
   description: Review a basic Razor Pages `PageModel` class elements and add a Post handler method.
@@ -12,6 +12,6 @@ metadata:
 title: Modify the page model
 azureSandbox: true
 interactive: bash
-durationInMinutes: 12
+durationInMinutes: 8
 content: |
-  [!include[](includes/7-create-pagemodel.md)]
+  [!include[](includes/6-create-pagemodel.md)]

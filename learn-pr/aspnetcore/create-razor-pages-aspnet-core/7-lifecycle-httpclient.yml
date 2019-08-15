@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-razor-pages-aspnet-core.8-lifecycle-httpclient
+uid: learn.create-razor-pages-aspnet-core.7-lifecycle-httpclient
 metadata:
   title: The life cycle of the HTTP request logic 
   description: Walk through the life cycle of the HTTP request logic using a typed HTTPClient service architecture.
@@ -12,6 +12,6 @@ metadata:
 title: The life cycle of the HTTP request logic 
 azureSandbox: true
 interactive: bash
-durationInMinutes: 10
+durationInMinutes: 4
 content: |
-  [!include[](includes/8-lifecycle-httpclient.md)]
+  [!include[](includes/7-lifecycle-httpclient.md)]

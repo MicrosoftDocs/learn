@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-razor-pages-aspnet-core.5-run-razor-pages-project
+uid: learn.create-razor-pages-aspnet-core.4-run-razor-pages-project
 metadata:
   title: Compile and run the Razor Pages project
   description: Compile, run, and tour the example Razor Pages project.
@@ -12,6 +12,6 @@ metadata:
 title: Compile and run the Razor Pages project
 azureSandbox: true
 interactive: bash
-durationInMinutes: 13
+durationInMinutes: 10
 content: |
-  [!include[](includes/5-run-razor-pages-project.md)]
+  [!include[](includes/4-run-razor-pages-project.md)]
