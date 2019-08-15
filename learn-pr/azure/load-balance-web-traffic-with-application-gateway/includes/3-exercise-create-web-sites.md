@@ -75,8 +75,8 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
     You should see output similar to the following. Ensure the **PowerState** is **VM running** for both virtual machines before continuing.
 
     ```output
-    Name          ResourceGroup                         PowerState    PublicIps    Fqdns    Location        Zones
-    ------------  ------------------------------------  ------------  -----------  -------  --------------  -------
+    Name          ResourceGroup                               PowerState    PublicIps    Fqdns    Location        Zones
+    ------------  ------------------------------------------  ------------  -----------  -------  --------------  -------
     webServer1    <rgn>[sandbox resource group]</rgn>  VM running                          southcentralus
     webServer2    <rgn>[sandbox resource group]</rgn>  VM running                          southcentralus
     ```
