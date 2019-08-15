@@ -33,7 +33,7 @@ Azure Storage Explorer is a free tool that you can use to connect to Azure Stora
 
 A version of Azure Storage Explorer is provided in the Azure portal.
 
-You can also use Azure PowerShell and Microsoft Azure CLI to upload and download data. These interfaces are programmatic, enabling you to produce complex, scripted solutions that can incorporate transformations, mergers, and filtering as the data is transferred.
+You can also use Azure PowerShell and the Azure CLI to upload and download data. These interfaces are programmatic, enabling you to produce complex, scripted solutions that can incorporate transformations, mergers, and filtering as the data is transferred.
 
 ## Select the right tool for the job
 
