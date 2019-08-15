@@ -1,7 +1,6 @@
-Before we can create a Linux virtual machine in Azure, we will need to think about remote access. We want to be able to sign in to our Linux web server to configure the software and perform maintenance. The default approach to administering Linux VMs hosted in Azure is SSH.
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-<!-- Activate the sandbox -->
-[!include[](../../../includes/azure-sandbox-activate.md)]
+Before we can create a Linux virtual machine in Azure, we will need to think about remote access. We want to be able to sign in to our Linux web server to configure the software and perform maintenance. The default approach to administering Linux VMs hosted in Azure is SSH.
 
 ## What is SSH?
 
@@ -29,8 +28,6 @@ On Linux, Windows 10, and MacOS, you can use the built-in `ssh-keygen` command t
 
 > [!NOTE]
 > We will use Azure Cloud Shell, which will store the generated keys in Azure in your private storage account. You can also type these commands directly into your local shell if you prefer. You will need to adjust the instructions throughout this module to reflect a local session if you take this approach.
-
-[!include[](../../../includes/azure-sandbox-activate.md)]
 
 Here is the minimum command necessary to generate the key pair for an Azure VM. This will create an SSH protocol 2 (SSH-2) RSA public-private key pair. The minimum length is 2048, but for the sake of this learning module we will use 4096.
 
