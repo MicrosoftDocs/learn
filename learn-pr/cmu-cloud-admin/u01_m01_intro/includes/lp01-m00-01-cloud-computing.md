@@ -14,13 +14,10 @@ _Figure 1.1: Typical Components of Information Technology._
 
 Traditionally, an organization that needs to deploy a particular IT solution has to procure, set up, and maintain the infrastructure and the application. Some organizations may decide to develop their own software, in which case they need to manage development platforms as well. The organization hence \"owns\" the solution, which allows full control over the solution, including, for example, access security and customization. However, ownership has some drawbacks:
 
-1.  Organizations must pay up-front to buy a particular solution, which commits significant capital for long-lived IT resources.
-
-2.  Organizations are solely responsible for managing their IT solutions. Organizations must have hardware-maintenance contracts in place or maintain and upgrade the hardware themselves. System administrators must be hired to monitor hardware and software, both of which have to be updated and maintained. Organizations also have to pay for power and cooling to keep the hardware running. Therefore, in addition to up-front costs, organizations must budget for recurring costs.
-
-3.  The IT solution typically has a fixed size -- for example, a specified number of servers -- and must be scaled as demand changes. For example, as the number of employees or customers grows, the organization must purchase additional hardware and/or software to keep up with increasing demand.
-
-4.  Typically, on-premises IT systems suffer from low average *utilization*, which refers to the proportion of time (expressed usually as a percentage) that an IT system is being used to capacity. For example, email services in a large organization typically see a spike in traffic each morning, when people sign in and check email. Utilization tapers off towards close of business and is substantially lower after hours. Further, since IT systems consume energy, even at idle, they leave a substantial carbon footprint.
+1. Organizations must pay up-front to buy a particular solution, which commits significant capital for long-lived IT resources.
+1. Organizations are solely responsible for managing their IT solutions. Organizations must have hardware-maintenance contracts in place or maintain and upgrade the hardware themselves. System administrators must be hired to monitor hardware and software, both of which have to be updated and maintained. Organizations also have to pay for power and cooling to keep the hardware running. Therefore, in addition to up-front costs, organizations must budget for recurring costs.
+1. The IT solution typically has a fixed size -- for example, a specified number of servers -- and must be scaled as demand changes. For example, as the number of employees or customers grows, the organization must purchase additional hardware and/or software to keep up with increasing demand.
+1. Typically, on-premises IT systems suffer from low average *utilization*, which refers to the proportion of time (expressed usually as a percentage) that an IT system is being used to capacity. For example, email services in a large organization typically see a spike in traffic each morning, when people sign in and check email. Utilization tapers off towards close of business and is substantially lower after hours. Further, since IT systems consume energy, even at idle, they leave a substantial carbon footprint.
 
 Many of the disadvantages listed above emanate from the ownership of IT. However, with the evolution of computing technology, it is no longer necessary for organizations to own IT systems. Many of the IT needs of organizations can be provided to them as *services*. **Cloud computing is the transformation of owned IT products into services that can be leased from a *cloud service provider* (CSP) such as Amazon, Alibaba, Microsoft, or Google**.
 
@@ -30,11 +27,9 @@ In cloud computing, users or organizations use computing resources as a service 
 
 The cloud model offers users and organizations several benefits, including:
 
--   Reduced up-front cost, as IT services can be obtained in a pay-as-you-go model
-
--   The convenience of fast resource provisioning, which significantly reduces the time to market for IT solutions
-
--   Rapid scalability of computing resources, as they can be scaled up and down on demand.
+- Reduced up-front cost, as IT services can be obtained in a pay-as-you-go model
+- The convenience of fast resource provisioning, which significantly reduces the time to market for IT solutions
+- Rapid scalability of computing resources, as they can be scaled up and down on demand.
 
 Cloud providers\' resources are shared by multiple users, thereby improving utilization and reducing carbon footprint.
 
