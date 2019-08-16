@@ -1,36 +1,36 @@
-Your first task is to plan your company's migration to Azure. You need to put together a plan that you can then present to your leadership team to get their support and approval.
+Your first task is to plan your company's migration to Azure. You need to put together a plan to present to your leadership team, to get their support and approval.
 
-In this unit, you'll cover some of the considerations and methods you can use to plan for your migration to Azure. Every situation is different, but by following some principles, you can achieve your goals in the best possible way in the shortest amount of time.
+In this unit, you'll cover some considerations and methods that you can use to plan your migration to Azure. Every situation is different, but by following some principles, you can achieve your goals in the best possible way and in the shortest amount of time.
 
 ## Plan your migration to Azure
 
-You can use a framework of **Assess**, **Migrate**, **Optimize**, and **Monitor** as a path for migration. Each stage focuses on a particular aspect of ensuring a migration is successful.
+You can use a framework of Assess, Migrate, Optimize, and Monitor as a path for migration. Each stage focuses on a particular aspect of ensuring the success of a migration.
 
 ![Stages of migration, Assess, Migrate, Optimize, and Monitor](../media/2-planning-process.png)
 
-Let's take a look at what's involved at each phase.
+Let's look at what's involved at each stage.
 
 ![Assess stage](../media/2-assess.png)
 
 ### Discovery and evaluation
 
-Start with a full assessment of your current environment. Identify which servers, applications, and services are in the scope for migration. By identifying the services and systems that may be migrated, you can bring in the IT and business teams that work with these services. Bring these teams in as early as possible in the process, to ensure they can provide guidance, feedback, and support for the migration.
+Start with a full assessment of your current environment. Identify the servers, applications, and services that are in scope for migration. You can then bring in the IT and business teams that work with those services. By bringing these teams in as early as possible in the process, you ensure that they can provide guidance, feedback, and support for the migration.
 
-Now you can produce a full inventory and dependency map to determine how servers and services that are in scope of migration communicate with each other. A modern business could have hundreds of applications spread across the estate. Each application needs to be fully investigated before any work takes place.
+Next, produce a full inventory and dependency map of servers and services that are in scope for migration. This inventory and map determine how those services communicate with each other. A modern business might have hundreds of applications spread across the estate. Each application must be fully investigated before any work takes place.
 
-For each application, there are multiple migration options. The migration options are:
+For each application, there are multiple migration options:
 
-- **Rehost**: Recreate your existing infrastructure in Azure, choosing this approach will have the least impact as it needs minimal changes. This typically involves moving virtual machines from your datacenter to virtual machines on Azure.
-- **Refactor**: Move services running on virtual machines to platform-as-a-service (PaaS) services. This can reduce operational requirements, improve release agility, and keep your costs low. Small enhancements to run more efficiently in the cloud can have large impacts on performance.
-- **Rearchitect**: You may be forced to rearchitect some systems to enable them to be migrated. Other apps could be changed to become cloud native, or take advantage of new approaches to software, such as containers or microservices.
-- **Rebuild**: You may need to rebuild software if the cost to rearchitect is more than starting again from scratch.
-- **Replace**: While you're reviewing your estate, there are chances that third-party applications could completely replace your custom applications. Evaluate software-as-a-service (SaaS) options that can be used to replace the existing application.
+- **Rehost**: Recreate your existing infrastructure in Azure. Choosing this approach has the least impact because it requires minimal changes. It typically involves moving virtual machines from your data center to virtual machines on Azure.
+- **Refactor**: Move services running on virtual machines to platform-as-a-service (PaaS) services. This approach can reduce operational requirements, improve release agility, and keep your costs low. Small enhancements to run more efficiently in the cloud can have large impacts on performance.
+- **Rearchitect**: You might be forced to rearchitect some systems so that they can be migrated. Other apps could be changed to become cloud native, or to take advantage of new approaches to software, such as containers or microservices.
+- **Rebuild**: You might need to rebuild software if the cost to rearchitect it is more than that of starting from scratch.
+- **Replace**: While you're reviewing your estate, there's a chance that third-party applications could completely replace your custom applications. Evaluate software-as-a-service (SaaS) options that can be used to replace  existing applications.
 
-Review each application and which of these options is the best fit.
+Review each application to determine which option is the best fit.
 
 ### Involve key stakeholders
 
-Applications are used by specific sections of the business and include application owners and superusers, who have a wealth of experience to call on. Involving these people in the planning stage will increase the chance of a successful migration. These resources can offer guidance in areas where the knowledge of the person running the project may have gaps. Often each area of the business will appoint business owners to manage specific sections.
+Applications are used by specific sections of the business. The owners and superusers of applications have a wealth of experience to call on. Involving these people in the planning stage increases the chance of a successful migration. These resources can offer guidance in areas where the knowledge of the person running the project may have gaps. Often each area of the business will appoint business owners to manage specific sections.
 
 ### Estimate cost savings
 
