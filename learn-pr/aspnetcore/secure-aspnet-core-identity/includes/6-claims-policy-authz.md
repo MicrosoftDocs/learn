@@ -24,7 +24,7 @@ The products catalog page should be visible only to authenticated users. However
             HttpContext.User.HasClaim("IsAdmin", bool.TrueString);
         ```
 
-        The preceding code determines whether the authenticated user has an `IsAdmin` claim with a value of `True`. The result of this evaluation is stored in a read-only property named `IsAdmin`.
+        The preceding code determines whether the authenticated user has an `IsAdmin` claim with a value of `True`. The result of this evaluation is accessed via a read-only property named `IsAdmin`.
 
     1. Replace the `// Add IsAdmin check` comment in the `OnDelete` method with the following code:
 

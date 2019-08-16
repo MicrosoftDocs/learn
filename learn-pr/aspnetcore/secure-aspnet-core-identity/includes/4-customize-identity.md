@@ -49,7 +49,7 @@ UI changes are also required to collect the additional user profile information.
                 * *:::no-loc text="Index.cshtml.cs":::*
                 * *:::no-loc text="ManageNavPages.cs":::*
 
-    Additionally, the *:::no-loc text="Data/ContosoPetsAuth.cs":::* file, which existed prior to running the preceding command, was overwritten because the `--force` option was used. The `ContosoPetsAuth` class declaration now references the newly created user type of `ContosoPetsUser`:
+    Additionally, the *:::no-loc text="Data/ContosoPetsAuth.cs":::* file, which existed before running the preceding command, was overwritten because the `--force` option was used. The `ContosoPetsAuth` class declaration now references the newly created user type of `ContosoPetsUser`:
 
     ```csharp
     public class ContosoPetsAuth : IdentityDbContext<ContosoPetsUser>
@@ -96,9 +96,35 @@ UI changes are also required to collect the additional user profile information.
         dotnet ef database update
     ```
 
-    The `UpdateUser` EF Core migration applied a DDL change script to the `AspNetUsers` table's schema. Specifically, `FirstName` and `LastName` columns were added.
+    The `UpdateUser` EF Core migration applied a DDL change script to the `AspNetUsers` table's schema. Specifically, `FirstName` and `LastName` columns were added, as seen in the following migration output excerpt:
 
-    Let's analyze the impact of the `UpdateUser` EF Core migration on the `AspNetUsers` table's schema. After completing the following steps, you'll gain an understanding of the impact extending the Identity data model has on the underlying data store.
+    ::: zone pivot="pg"
+
+    ```console
+    info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1,005ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      ALTER TABLE "AspNetUsers" ADD "FirstName" character varying(100) NOT NULL DEFAULT '';
+    info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+        Executed DbCommand (517ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+        ALTER TABLE "AspNetUsers" ADD "LastName" character varying(100) NOT NULL DEFAULT '';
+    ```
+
+    ::: zone-end
+
+    ::: zone pivot="sql"
+
+    ```console
+    info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+        Executed DbCommand (37ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+        ALTER TABLE [AspNetUsers] ADD [FirstName] nvarchar(100) NOT NULL DEFAULT N'';
+    info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+        Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+        ALTER TABLE [AspNetUsers] ADD [LastName] nvarchar(100) NOT NULL DEFAULT N'';
+    ```
+
+    ::: zone-end
+
+    Complete the following steps to analyze the impact of the `UpdateUser` EF Core migration on the `AspNetUsers` table's schema. You'll gain an understanding of the impact extending the Identity data model has on the underlying data store.
 
 ::: zone pivot="pg"
 
@@ -182,7 +208,7 @@ UI changes are also required to collect the additional user profile information.
     LastName             NO          nvarchar                     100
     ```
 
-    The `FirstName` and `LastName` properties in the `ContosoPetsUser` class correspond to the `FirstName` and `LastName` columns in the preceding output. A data type of `nvarchar(100)` was assigned to each of the two columns because of the `[MaxLength(100)]` attributes. The non-null constraint was added because of the `[Required]` attributes.
+    The `FirstName` and `LastName` properties in the `ContosoPetsUser` class correspond to the `FirstName` and `LastName` columns in the preceding output. A data type of `nvarchar(100)` was assigned to each of the two columns because of the `[MaxLength(100)]` attributes. The non-null constraint was added because of the `[Required]` attributes. Existing rows show empty strings in the new columns.
 
 3. Run the following command to view the primary key for the table:
 
@@ -215,11 +241,11 @@ UI changes are also required to collect the additional user profile information.
 
         The `[Display]` attributes define the label text to be associated with the text boxes.
 
-    1. Modify the `OnPostAsync` method to populate set the `FirstName` and `LastName` properties on the `ContosoPetsUser` object. Make the following highlighted changes:
+    1. Modify the `OnPostAsync` method to set the `FirstName` and `LastName` properties on the `ContosoPetsUser` object. Make the following highlighted changes:
 
         [!code-csharp[](../code/Areas/Identity/Pages/Account/4-Register-FirstAndLastName.cshtml.cs?name=snippet_OnPostAsync&highlight=6-12)]
 
-        With the preceding change, the `FirstName` and `LastName` properties are set to the user input from the registration form.
+        The preceding change sets the `FirstName` and `LastName` properties to the user input from the registration form.
 
 ## Customize the site header
 

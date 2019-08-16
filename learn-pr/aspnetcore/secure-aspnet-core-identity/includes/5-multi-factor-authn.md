@@ -60,7 +60,7 @@ To avoid distracting from the focus on Identity, the boilerplate to support QR c
 
 1. Follow the on-screen instructions to register and verify your authenticator app for this user.
 
-    Using Microsoft Authenticator as an example, follow these steps to add the account to the app:
+    Using Microsoft Authenticator on Android as an example, follow these steps to add the account to the app:
 
     1. Open the Microsoft Authenticator app.
     1. Select the kebab menu (vertical ellipsis) in the upper right.
