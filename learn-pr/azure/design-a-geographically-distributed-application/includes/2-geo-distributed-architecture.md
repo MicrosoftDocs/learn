@@ -93,6 +93,8 @@ After some investigation, you propose the architecture in this diagram:
 
 <!-- TODO: This diagram is taken from the following location. A Learn version should be created by the design team: https://docs.microsoft.com/azure/architecture/reference-architectures/app-service-web-app/multi-region -->
 
+<!-- NOTE: The above article has just been changed to use Front Door instead of Traffic Manager. I've made that change here as well. -->
+
 ![Highly-available architecture](../media/2-multi-region-web-app-diagram.png)
 
 In this architecture, there is an active region (East US) and a standby region (West US). Under ordinary circumstances, all requests are handled by the components in the East US region. If there is a disaster that causes that region to fail, the application fails over onto the West US region.
@@ -103,7 +105,7 @@ Let's examine, at a high level, how you have modified the original architecture.
 
 Azure DNS and Azure CDN are global systems by default and already resilient to regional failures. They remain in place in the same configuration.
 
-An instance of Azure Application Gateway, however, is contained within a region. By replacing this service with Azure Traffic Manager, you remove this vulnerability. Also, you can configure Traffic Manager to poll instances of the App Service in multiple regions. If the East US App Service becomes unavailable, it's Traffic Manager that handles the fail over to West US.
+An instance of Azure Application Gateway, however, is contained within a region. By replacing this service with Azure Front Door, you remove this vulnerability. Also, you can configure Front Door to poll instances of the App Service in multiple regions. If the East US App Service becomes unavailable, it's Front Door that handles the fail over to West US.
 
 ### Application Services
 
