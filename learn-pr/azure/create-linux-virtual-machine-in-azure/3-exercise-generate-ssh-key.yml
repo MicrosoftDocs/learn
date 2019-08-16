@@ -11,7 +11,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 10
-interactive: bash
-azureSandbox: true
+# interactive: bash
 content: |
   [!include[](includes/3-exercise-generate-ssh-key.md)]
