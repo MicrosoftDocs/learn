@@ -11,7 +11,7 @@ The products catalog page should be visible only to authenticated users. However
         [Authorize]
         ```
 
-        The preceding code causes the page to require authentication. Anonymous users won't be allowed to view this page and will be redirected to the login page.
+        The preceding attribute describes user authentication requirements for the page. In this case, there are no requirements beyond the user being authenticated. Anonymous users aren't allowed to view the page and are redirected to the login page.
 
     1. Uncomment the `//using Microsoft.AspNetCore.Authorization;` line at the top of the file.
 
