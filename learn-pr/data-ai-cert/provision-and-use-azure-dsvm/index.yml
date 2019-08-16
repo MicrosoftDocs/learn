@@ -18,7 +18,7 @@ abstract: |
   - Learn about the Jupyter Notebook
   - Create a Jupyter Notebook
   - Learn about the learning tools that are pre-installed on a Data Science Virtual Machine
-prerequisites: None
+prerequisites: An Azure subscription
 iconUrl: /learn/achievements/data-ai/provision-and-use-azure-dsvm-badge.svg
 levels:
 - beginner

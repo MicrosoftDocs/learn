@@ -50,7 +50,7 @@ Keep in mind you want to set your server storage size at 20 GB, compute Gen 5 su
 
 2. The system will take a few minutes to process the information when executed. Go ahead and wait for the command to complete.
 
-3. Once command has completed done, a JavaScript Object Notation (JSON) string that describes the server is returned. If there was a failure, an error message is displayed. You can use this error information to review and fix your command parameters and try again.
+3. Once the command has completed, a JavaScript Object Notation (JSON) string that describes the server is returned. If there was a failure, an error message is displayed. You can use this error information to review and fix your command parameters and try again.
 
    The JSON object will look something like:
 

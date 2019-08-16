@@ -59,12 +59,23 @@ If you return to your repo on GitHub and refresh the page, you'll see that **azu
 
 1. In Azure DevOps, navigate to the **SpaceGame-Web** project.
 1. Select **Pipelines**, either from the project page or from the left pane.
-1. Select **New pipeline**.
+1. Select **Create pipeline**.
 1. On the **Connect** tab, select **GitHub**.
 
     When prompted, enter your GitHub credentials.
 1. On the **Select** tab, select your **mslearn-tailspin-spacegame-web** repository.
-1. Select **Approve and install**.
+1. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve and install**.
+1. On the **Review** tab, note the initial build configuration.
+
+    ![](../media/6-initial-pipeline-yml.png)
+
+    This is the configuration you pushed to GitHub earlier.
+
+    > [!NOTE]
+    > For learning purposes, here you build your pipeline configuration one step at a time, starting with just the build agent.
+    > In practice, you can skip the creation of the initial *azure-pipelines.yml* file and let Azure Pipelines create it for you.
+    > Azure Pipelines can detect your project type, such as ASP.NET Core, Java, or Go, and provide an initial pipeline configuration for that app type.
+
 1. On the **Review** tab, select **Run** to save your changes and start the build.
 
 ## Watch the pipeline run

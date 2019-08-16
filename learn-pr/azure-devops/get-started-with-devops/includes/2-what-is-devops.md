@@ -32,6 +32,12 @@ Mara's value stream map is still on the whiteboard from their previous meeting:
 
 > _DevOps is the union of people, process, and products to enable continuous delivery of value to our end users._
 
+In fact, Abel Wang, a Cloud Advocate at Microsoft, has a great set of videos with quick answers to some of our big questions. Let's see how Abel defines DevOps.
+
+**Let's ask Abel**
+
+> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-DevOps--One-Dev-Question/player]
+
 Our goal is to give our customers games they'll love. We do that by working together with a shared set of practices and tools.
 
 **Amita**: What does that mean? What shared practices? What shared tools?
