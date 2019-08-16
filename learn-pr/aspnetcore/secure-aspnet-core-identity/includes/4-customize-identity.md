@@ -209,7 +209,7 @@ UI changes are also required to collect the additional user profile information.
     With the preceding markup, **First name** and **Last name** text boxes are added to the user registration form.
 
 1. In *:::no-loc text="Areas/Identity/Pages/Account/Register.cshtml.cs":::*, add support for the name text boxes.
-    1. Add the `FirstName` and `LastName` properties to the `InputModel` class:
+    1. Add the `FirstName` and `LastName` properties to the `InputModel` nested class:
 
         [!code-csharp[](../code/Areas/Identity/Pages/Account/4-Register-FirstAndLastName.cshtml.cs?name=snippet_InputModel&highlight=3-6,8-11)]
 
@@ -234,7 +234,7 @@ Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to display the fi
     [!code-cshtml[](../code/Areas/Identity/Pages/Account/Manage/4-Index-FirstAndLastName.cshtml?range=1-16&highlight=3-12)]
 
 1. In *:::no-loc text="Areas/Identity/Pages/Account/Manage/Index.cshtml.cs":::*, make the following changes to support the name text boxes.
-    1. Add the `FirstName` and `LastName` properties to the `InputModel` class:
+    1. Add the `FirstName` and `LastName` properties to the `InputModel` nested class:
 
         [!code-csharp[](../code/Areas/Identity/Pages/Account/Manage/4-Index.cshtml.cs?name=snippet_FirstAndLastNameInputModel&highlight=3-6,8-11)]
 

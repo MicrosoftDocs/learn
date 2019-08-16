@@ -89,7 +89,7 @@ The **Create Product** and **Edit Product** pages should be accessible only to a
 Modify the registration page to allow administrators to register using the following steps.
 
 1. In *:::no-loc text="Areas/Identity/Pages/Account/Register.cshtml.cs":::*, make the following changes:
-    1. Add the following property to the `InputModel` class:
+    1. Add the following property to the `InputModel` nested class:
 
         [!code-csharp[](../code/Areas/Identity/Pages/Account/6-Register.cshtml.cs?name=snippet_AdminEnrollmentKey&highlight=3-5)]
 
