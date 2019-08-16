@@ -22,8 +22,8 @@ Let's start by deploying the application. First, we'll need to great the Azure r
 1. Now that we have the resources created, let's deploy the application. First, run this command to pull down the source code from the sample repository.
 
     ```azurecli
-    git clone https://github.com/MicrosoftDocs/mslearn-microservices-architecture.git
-    cd mslearn-microservices-architecture/src/before
+    git clone https://github.com/MicrosoftDocs/mslearn-microservices-architecture.git ~/mslearn-microservices-architecture
+    cd ~/mslearn-microservices-architecture/src/before
     ```
 
 1. Run this command to zip up the application code, which we'll use to deploy to the App Service.
