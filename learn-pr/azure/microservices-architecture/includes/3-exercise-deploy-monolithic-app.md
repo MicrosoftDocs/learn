@@ -19,29 +19,20 @@ Let's start by deploying the application. First, we'll need to great the Azure r
         --template-uri https://raw.githubusercontent.com/MicrosoftDocs/mslearn-microservices-architecture/master/deployment/azuredeploy.json
     ```
 
-1. We're going to use App Service Git integration to deploy and update the web application. Git is already installed Azure Cloud Shell but you'll need to set your username and email for your cloud shell account. In the Cloud Shell on the right, type the following commands, replacing the `<your name>` and `<your email>` placeholders with your own name and email (without the braces).
-
-    ```bash
-    git config --global user.name "<your name>"
-    git config --global user.email "<your email>"
-    ```
-
-1. Now that we have the resources created, lets deploy the application. First, run this command to pull down the source code from the sample repository.
+1. Now that we have the resources created, let's deploy the application. First, run this command to pull down the source code from the sample repository.
 
     ```azurecli
     git clone https://github.com/MicrosoftDocs/mslearn-microservices-architecture.git
-    cd mslearn-microservices-architecture
+    cd mslearn-microservices-architecture/src/before
     ```
 
-1. Next, run this command to set up a deployment user. This user will be used to access the git repo on the App Service. Replace `<username>` and `<password>` with a new username and password. The username must be unique within Azure. The password must be at least eight characters long, with two of the following three elements: letters, numbers, and symbols.
+1. Run this command to zip up the application code, which we'll use to deploy to the App Service.
 
-    ```azurecli
-    az webapp deployment user set --user-name <username> --password <password>
+    ```bash
+    zip -r DroneDelivery-before.zip
     ```
 
-    Note this username and password for later use.
-
-1. Run this command to set a variable with the name of the App Service.
+1. Run this command to set a variable with the name of your App Service.
 
     ```bash
     APPSERVICENAME="$(az webapp list \
@@ -50,24 +41,22 @@ Let's start by deploying the application. First, we'll need to great the Azure r
                         --output tsv)"
     ```
 
-1. Now let's set up the App Service to use local git, allowing us to deploy code to the site. Run the following command.
+1. Run this command to configure the App Service to run a build as part of the deployment.
 
     ```azurecli
-    az webapp deployment source config-local-git \
+    az webapp config appsettings set \
         --resource-group <rgn>[sandbox resource group]</rgn> \
-        --name $APPSERVICENAME
+        --name $APPSERVICENAME \
+        --settings SCM_DO_BUILD_DURING_DEPLOYMENT=true
     ```
 
-1. Run this command to add the git location as a remote. Replace `<deploymentuser>` with the deployment user you created earlier.
+1. Run the following command to deploy the application to App Service.
 
-    ```bash
-    git remote add azure https://<deploymentuser>@$APPSERVICENAME.scm.azurewebsites.net/$APPSERVICENAME.git
-    ```
-
-1. Run the following command to deploy the application to App Service. Enter the password of the deployment user you created previously.
-
-    ```bash
-    git push azure master
+    ```azurecli
+    az webapp deployment source config-zip \
+        --resource-group <rgn>[sandbox resource group]</rgn> \
+        --name $APPSERVICENAME \
+        --src DroneDelivery-before.zip
     ```
 
 1. Once complete, you can confirm the deployment was successful by visiting the web site of your App Service. Run this command to get the URL, and click on it to open the page.
