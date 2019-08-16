@@ -20,7 +20,7 @@ In this unit, you'll configure continuous deployment for the web app and create 
 1. In the Azure Cloud Shell, go to the SampleWeb/Pages folder. This folder contains the source code for the HTML pages that are displayed by the web app:
 
     ```bash
-    cd ~/mslearn-deploy-run-container-app-service/SampleWeb/Pages
+    cd ~/mslearn-deploy-run-container-app-service/dotnet/SampleWeb/Pages
     ```
 
 1. Run the following commands to replace the default page in the web app (Index.cshtml) with a new version that has an additional item in the carousel control. These commands simulate continued development on the app and add a new page to the carousel.
@@ -33,7 +33,7 @@ In this unit, you'll configure continuous deployment for the web app and create 
 1. Run the next set of commands to rebuild the image for the web app and push it to Container Registry. Replace `<container_registry_name>` with the name of your registry. Don't forget the `.` at the end of the second command.
 
     ```bash
-    cd ~/mslearn-deploy-run-container-app-service
+    cd ~/mslearn-deploy-run-container-app-service/dotnet
     az acr build --registry <container_registry_name> --image webimage .
     ```
 
