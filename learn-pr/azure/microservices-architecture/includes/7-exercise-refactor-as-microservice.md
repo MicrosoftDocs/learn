@@ -21,52 +21,54 @@ Now let's redeploy the application. We'll deploy our refactored service on Azure
                         --output tsv)"
     ```
 
-1. Run this command to set up git for our function.
-
-    ```azurecli
-    az functionapp deployment source config-local-git \
-        --resource-group <rgn>[sandbox resource group]</rgn> \
-        --name $FUNCTIONAPPNAME
-    ```
-
-1. Run this command to add a remote repo pointing to the function app. Replace `<deploymentuser>` with the deployment user you created earlier.
+1. Let's build and zip up the application code for the function.
 
     ```bash
-    git remote add azurefunction https://<deploymentuser>@$FUNCTIONAPPNAME.scm.azurewebsites.net/$FUNCTIONAPPNAME.git
+    cd ~/mslearn-microservices-architecture/src/after
+    dotnet build ./PackageService/PackageService.csproj -c Release
+    cd PackageService/bin/Release/netcoreapp2.2
+    zip -r PackageService.zip .
     ```
 
 1. Run this command to push the code to the Azure Function. Enter the password of the deployment user you created earlier.
 
-    ```bash
-    git push azurefunction master
+    ```azurecli
+    az functionapp deployment source config-zip \
+        --resource-group <rgn>[sandbox resource group]</rgn> \
+        --name $FUNCTIONAPPNAME 
+        --src PackageService.zip
     ```
 
 ## Deploy the updated DroneDelivery application
 
-1. Now that our service is running on an Azure Function, we need to point our drone application to that function. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+Now that our service is running on an Azure Function, we need to point our drone application to that function.
 
-1. Select **App Services** on the left, then select your **packageservicefunction-abc** function.
+1. We first need to get the access code for the function, so we can successfully call it from the application. Run the following commands to retrieve this code. You'll display the function app name and code, for use in the next steps.
 
-1. In the **Function Apps** overview, select your **PackageServiceFunction** function.
+    ```azurecli
+    RESOURCEGROUPID=$(az group show \
+                        --resource-group <rgn>[sandbox resource group]</rgn> \
+                        --query id \
+                        --output tsv)
+    FUNCTIONCODE=$(az rest \
+                        --method post \
+                        --query default \
+                        --output tsv \
+                        --uri "https://management.azure.com$RESOURCEGROUPID/providers/Microsoft.Web/sites/$FUNCTIONAPPNAME/functions/PackageServiceFunction/listKeys?api-version=2018-02-01")
+    echo "FunctionName - $FUNCTIONAPPNAME"
+    echo "FunctionCode - $FUNCTIONCODE"
+    ```
 
-    TODO - insert screenshot
-
-1. Select **</> Get function URL**, copy the URL and it keep handy. You'll need it again shortly.
-
-1. Back in Cloud Shell run these commands to open *appsettings.json* in the Code editor.
+1. In Cloud Shell run these commands to open *appsettings.json* in the Code editor.
 
     ```bash
     cd ~/mslearn-microservices-architecture
     code src/DroneDelivery-after/appsettings.json
     ```
 
-1. Now you need the URL that you copied a couple steps ago. The URL should look similar to this:
+1. In the Code editor, there are two values you need to replace; `PackageServiceUri` and `PackageServiceFunctionCode`. In `PackageServiceUri` replace `<FunctionName>` with the name of your function.
 
-    `https://packageservicefunction-abc.azurewebsites.net/api/packages/{id}?code=SvrbiyhjXJUdTPXrkcUtY6bQaUf7OXQjWvnM0Gq63hFUhbH2vn6qYA==`
-
-    In the Code editor, there are two values you need to replace with values from this URL, `PackageServiceUri` and `PackageServiceFunctionCode`. In `PackageServiceUri` replace `<URL_OF_PackageService_Function>` with the corresponding value from your URL.
-
-    In `PackageServiceFunctionCode` replace the `<PackageServiceFunction code>` with the code in your URL. You'll want everything after the `code=` including the `==` at the end. Once complete, your *appsettings.json* file should look similar to this:
+    In `PackageServiceFunctionCode` replace the `<FunctionCode>` with function code you just retrieved. Once complete, your *appsettings.json* file should look similar to this:
 
     ```json
     {
@@ -83,25 +85,13 @@ Now let's redeploy the application. We'll deploy our refactored service on Azure
 
 1. Press `Ctrl-s` to save the file, and `Ctrl-q` to close the Code editor.
 
-1. Run this command to open up the *.deployment* file in the Code editor.
+1. Run this command to deploy the updated application to App Service.
 
     ```bash
-    code .deployment
-    ```
-
-1. In the *.deployment* file, replace `DroneDelivery-before` with `DroneDelivery-after` in both occurrences. The file should look like this:
-
-    ```text
-    [config]
-    project = src/DroneDelivery-after/DroneDelivery-after.csproj
-    ```
-
-1. Press **Ctrl-s** to save the file, and **Ctrl-q** to close the Code editor.
-
-1. Run this command to add and commit the updated files and deploy the application.
-
-    ```bash
-    git add .deployment src/DroneDelivery-after/appsettings.json
-    git commit -m "Updating application to use the Azure Function"
-    git push azure master
+    cd ~/mslearn-microservices-architecture/after
+    zip -r DroneDelivery-after.zip . -x ./PackageService/\*
+    az webapp deployment source config-zip \
+        --resource-group <rgn>[sandbox resource group]</rgn> \
+        --name $APPSERVICENAME \
+        --src DroneDelivery-after.zip
     ```
