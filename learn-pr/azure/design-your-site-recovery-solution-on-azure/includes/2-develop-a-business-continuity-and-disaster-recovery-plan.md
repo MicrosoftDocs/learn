@@ -12,7 +12,7 @@ You must also identify the key infrastructures that compose the environment for 
 
 ## Identify recovery time objectives and recovery point objectives
 
-Recovery time objective (RTO) is the amount of time beyond which it's unacceptable for an application to be unavailable after a failure. For example, you may find it unacceptable for your application to be down for longer than an hour, because of the serious loss to the business after one hour. Critical applications will require the shorter a RTO.
+Recovery time objective (RTO) is the amount of time beyond which it's unacceptable for an application to be unavailable after a failure. For example, you may find it unacceptable for your application to be down for longer than an hour, because of the serious loss to the business after one hour. Critical applications will require a shorter RTO.
 
 Recovery point objective (RPO) refers to how old your working data is allowed to be at the point of recovery. For example, if your application is down you may only find it acceptable for it to run on data that is less than half an hour old once the application is recovered. Some applications can function with older data, but for some applications it is critical that the application runs on the freshest data possible at all times. It is up to you to figure out your RTO and RPO based on your organization's understanding of the risk and cost that would be introduced because of the loss of any data and downtime.
 
@@ -22,7 +22,7 @@ Any PaaS services you use can come with their own requirements you need to consi
 
 - Turn on SQL Database Auditing. You can use auditing to monitor for suspicious activity or human mistakes.
 - Create a readable secondary in a different region through Active Geo-Replication.
-- Shard your databases. This will help you achieve fault isolation for your databases.
+- Shard your databases. Sharding means you want to spread large numbers of similar structured data across separate databases.
 - Perform a geo-restore so you can recover from outage and restore your database to another region.
 - Point-in-time-restore will help you recover from human mistakes. Only Standard and Premium tier give you longer point-in-time restores of up to 35 days. Basic tier only gives you 7 days.
 
@@ -59,6 +59,14 @@ Azure comes with features that are designed from the ground up to help you achie
 
 You must consider creating Availability Sets. Availability Sets allow you to isolate your virtual machines when you provision them in Azure. When you place virtual machines in Availability Sets, you are ensuring that your virtual machines are running on separate servers, using multiple different network switches, and racks among other things. Regardless of whether a software problem causes a failure, or a hardware failure occurs, your Availability Sets ensure you have another set of virtual machines running. Physical hardware in an availability set is spread across multiple update and fault domains. A single update domain consists of a virtual machines and the hardware they run on, that can be updated and restarted simultaneously. A fault domain refers to a set of virtual machines that use the same networking, power sources and storage.
 
+![Availability Set](../media/2-availability-sets.png)
+
+<!---Feel free to format this diagram according to your own standards-->
+
 ### Availability Zones
 
-You must also consider Azure Availability Zones to keep your applications running. These Availability Zones are separate physical places in a single Azure region. Each one of these locations consists of at least one datacenter, and they are designed to use their own separate networking, cooling systems, and separate power. You will usually have a minimum of three of these zones in each region. This means that your virtual machines that are hosting your applications for example, are spread over three update domains and three fault domains. This means these virtual machines in three different regions are never updated simultaneously. You can manually set a specific type of resource to be in a specific zone with some resources such as virtual machines. And some services such as SQL Database, copy across multiple availability zones automatically for you.
+You must also consider Azure Availability Zones to keep your applications running. These Availability Zones are separate physical places in a single Azure region. Each one of these locations consists of at least one datacenter, and they are designed to use their own separate networking, cooling systems, and separate power. If one location fails, another one location can be used. You will usually have a minimum of three of these zones in each region. This means that your virtual machines that are hosting your applications for example, are spread over three update domains and three fault domains. This means that these virtual machines in three different regions are never updated simultaneously. You can manually set a specific type of resource to be in a specific zone with some resources, such as virtual machines. And some services such as SQL Database will copy across multiple availability zones automatically for you.
+
+![Availability Zones](../media/2-availability-zones.png)
+
+<!---Feel free to format this diagram according to your own standards-->

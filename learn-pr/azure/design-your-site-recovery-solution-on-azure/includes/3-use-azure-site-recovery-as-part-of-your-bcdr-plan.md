@@ -10,12 +10,12 @@ Azure Site Recovery helps you simplify your BCDR. Azure Site Recovery lets you c
 Azure Site Recovery can replicate different types of targets. As an example, Azure Site Recovery makes it possible for you to configure disaster recovery for your Azure virtual machines. You can replicate your Azure virtual machines from a primary to a secondary region. Your on-premises virtual machines can be replicated too, along with workloads.
 
 Every time you replicate over to Azure, the associated data is put into Azure storage. This means your data is kept resilient as a result. If a failover is triggered, Azure virtual machines are created for you using this data that is replicated and stored in Azure storage.
-Azure Site Recovery helps you meet your recovery time objective. This is because Azure Site Recovery can perform continuous replication for your Azure virtual machines and VMware virtual machines. Replication can be as often as very 30 seconds for any Hyper-V virtual machines. This reduces your recovery time objective. You can make you recovery time objective even shorter if you use Azure Traffic Manager with your Azure Site Recovery service.
+Azure Site Recovery helps you meet your recovery time objective. This is because Azure Site Recovery can perform continuous replication for your Azure virtual machines and VMware virtual machines. Replication can be as often as every 30 seconds for any Hyper-V virtual machines. This reduces your recovery time objective. You can make you recovery time objective even shorter if you use Azure Traffic Manager with your Azure Site Recovery service.
 Azure Site Recovery can recover to application-consistent snapshots. Azure Site Recovery takes snapshots of all data that is in memory, all data that is on disk, and all of the transactions that are in process.
 
 You can use Azure Site Recovery's recovery plans to group your virtual machines, add scripts, manual actions, and failover and recover your multi-tier applications that are spread across different virtual machines. You can set up Azure automation runbooks to work with your recovery plans.
 
-You should always test your disaster recovery plan. Azure Site Recovery let's you run disaster recovery tests with no disruption to your running replication.
+You should always test your disaster recovery plan. Azure Site Recovery lets you run disaster recovery tests with no disruption to your running replication.
 
 If you are using other BCDR technologies, you may be able to integrate those as well. For example, if you are using SQL Server Always On to protect your databases, you can use Azure Site Recovery to help manage failovers of your availability groups.
 
@@ -23,7 +23,7 @@ If you are using other BCDR technologies, you may be able to integrate those as 
 
 ![alt text](../media/3-asr-backup-diagram.png)
 
-<!--Please feel free to style this diagram-->
+<!---Feel free to format this diagram according to your own standards-->
 
 Above is an example solution incorporating both Azure Backup and Azure Site Recovery.
 
@@ -45,7 +45,7 @@ You can protect your Azure virtual machines and replicate them from a source reg
 
 You can also replicate to your own secondary site. You can replicate both Hyper-V and VMware based machines (managed by System Center), and your physical services. Azure Site recovery can replicate any of your workloads that are running on any of the machines that are supported.
 
-You should always check regions that are supported for use of Azure Site Recovery. You can find more details about support with [this tool](https://azure.microsoft.com/global-infrastructure/services/?products=&regions=). You must also check whether your individual scenario supports replication to a region. For example, Brazil South [can't be used](https://docs.microsoft.com/en-us/azure/site-recovery/azure-to-azure-support-matrix#region-support) as a target region for replication when replicating between Azure regions.
+You should always check regions that are supported for use of Azure Site Recovery. You can find more details about support with [the region support tool](https://azure.microsoft.com/global-infrastructure/services/?products=&regions=). You must also check whether your individual scenario supports replication to a region. For example, Brazil South as a target region for replication when replicating between Azure regions.
 
 There are some replication requirements and restrictions, and these depend on your scenario. As an example, your physical servers must be 64-bit, and BitLocker must be turned off.
 

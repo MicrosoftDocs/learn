@@ -20,11 +20,15 @@ An active-active architecture lets you distribute and load-balance demand betwee
 
 In contrast, with an active-passive cluster type architecture, you can run identical Azure virtual machines where one node is active and in use, and the other one is passive and not in use. The only time the passive node is used is when the active node has a failure.
 
+![Active-active example](../media/4-active-active-cluster.png)
+
+Above is a high level example of an active-active cluster in action. 
+
+<!---Feel free to format this diagram according to your own standards-->
+
 Because each of your nodes are running in an active-active scenario simultaneously, you are going to be facing more running costs on a day-to-day basis in an active-active scenario for machines that have the same capability as in an active/passive cluster. An active/passive cluster could comparatively help you lower your day-to-day running costs because your active node would not be running all the time. On the other hand, because you will only be running the active node in an active-passive cluster, you are will not be as flexible to meet fluctuating demand as you would with an active-active cluster.
 
-Resources like Azure availability sets will make it possible for you to achieve high availability through multiple nodes. If something happens to one machine, like hardware failures, or network outages affect one machine, another one can be available to keep things running. You can also use Azure virtual machine scale sets to run identical machines that work in unison to scale up and down in direct response to demand. Azure Load Balancer, through its HA ports rules, will also make it possible for you to achieve active-active or active-passive clustering with your machines.
-
-
+Resources like Azure availability sets will make it possible for you to achieve high availability through multiple nodes. If something happens to one machine, like hardware failures, or network outages affect one machine, another one can be available to keep things running. You can also use Azure virtual machine scale sets to create an active-active cluster and run identical machines that work in unison to scale up and down in direct response to demand. Azure Load Balancer, through its HA ports rules, will also make it possible for you to achieve active-active or active-passive clustering with your machines. 
 
 ## Fail over and fail back your applications
 
@@ -46,12 +50,14 @@ You should first understand the options that are available to you for monitoring
 
 You need to also understand how the various tools available can help you. For example, you can use Azure Security Center to analyze the security of your whole infrastructure, look for, and respond to threats. Azure Security Center can notify you of security alerts, and can send notifications through email.
 
-You use Azure Application Insights to monitor the health of all of your applications throughout the whole of your applications' lifecycles. Azure Application Insights can capture telemetry data from your applications running on-premises or in Azure. You can monitor response times, failure rates, and create your own custom metrics. Azure Application Insights can send alerts on any of your applications through email or for example, through the alert API. You can collect all of your telemetry data and store it somewhere for processing, to gain insight and learn more.
+You use Azure Application Insights to monitor the health of all of your applications throughout the whole of your applications' lifecycles. Azure Application Insights can capture telemetry data from your applications running on-premises or in Azure. You can monitor response times, failure rates, and create your own custom metrics. Azure Application Insights can send alerts on any of your applications through email or for example, through the alert API. You can collect all of your telemetry data and store it somewhere for processing to gain insight and learn more.
 
 You use Azure Monitor as a single solution for you to collect, analyze and take action based on all of the telemetry data collected on your applications and their infrastructures. Azure Monitor hooks into other tools such as Azure Application Insights, to help you learn and gain understanding of applications and their environments. Azure Monitor can also notify you through alerts, or alternatively perform an automated process to address the issue that caused an alert. Azure Monitor will also allow you to monitor your resources and will auto-scale your resources for you according to rules you set based on metrics.
 
 Use these Azure tools together to address monitoring and notifications for your applications. This will enable you to make smarter applications, keep your applications secure, and rapidly respond to demand by auto-scaling when needed.
 
+<!--- Below is a diagram showing a scenario to be used the knowledge check that follows.-->
 
+![hybrid network](../media/4-hybrid-network.png)
 
-Below is a diagram showing a scenario for the knowledge check. 
+<!---Feel free to format this diagram according to your own standards-->

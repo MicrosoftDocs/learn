@@ -18,8 +18,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: '![hybrid network](../media/4-hybrid-network.png)
-          You are running your infrastructure partially in the cloud and partially on-premises. The diagram above illustrates this. How could you enable real-time switching of traffic if there are future power issues?'
+  - content: You are running your infrastructure partially in the cloud and partially on-premises. The diagram above illustrates this. How could you enable real-time switching of traffic if there are future power issues?
     choices:
     - content: Use Azure Traffic Manager to probe the health of the endpoints.
       isCorrect: true
