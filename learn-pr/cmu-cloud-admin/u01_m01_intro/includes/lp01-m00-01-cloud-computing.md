@@ -10,6 +10,7 @@ Cloud computing offers the use of computing resources as a service over a networ
 Information Technology (IT) has become an essential requirement for most organizations to function effectively. Typically, and depending on a specific organization's needs, IT has three components as depicted in Figure 1.1: application software, development platforms, and underlying infrastructure.
 
 ![Figure 1.1: Typical Components of Information Technology.](../media/IT_components.png)
+
 _Figure 1.1: Typical Components of Information Technology._
 
 Traditionally, an organization that needs to deploy a particular IT solution has to procure, set up, and maintain the infrastructure and the application. Some organizations may decide to develop their own software, in which case they need to manage development platforms as well. The organization hence \"owns\" the solution, which allows full control over the solution, including, for example, access security and customization. However, ownership has some drawbacks:
@@ -34,5 +35,7 @@ The cloud model offers users and organizations several benefits, including:
 Cloud providers\' resources are shared by multiple users, thereby improving utilization and reducing carbon footprint.
 
 Despite all of its advantages, cloud computing is a rapidly evolving technology that comes with its own challenges that must be understood and assessed before moving to the cloud. For example, deploying complex applications to the cloud invariably requires apps to be adapted to use features and services offered by the host cloud provider. Vendor lock-in becomes a real risk because an application built to run in one vendor's public cloud typically requires modification to run in someone else's cloud. Specific benefits, risks, and challenges are discussed later in this module.
+
+
 
 \[Activity M0-P1\]

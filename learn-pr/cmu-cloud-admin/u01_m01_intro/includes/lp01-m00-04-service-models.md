@@ -7,6 +7,7 @@ Before we discuss service models, let us think about the layers of hardware and 
 Figure 1.5 provides a useful abstraction of cloud computing by dividing it into four layers: application software, development platforms, resource sharing, and infrastructure. The infrastructure layer includes the physical resources in a data center. The resource-sharing layer uses a combination of hardware and software to facilitate the sharing of the physical resources while offering a certain level of isolation. The development-platform layer provides functional support for cloud applications. Finally, the application-software layer hosts the applications themselves.
 
 ![Figure 1.5: Cloud computing building blocks.](../media/cloud_computing_stack.png)
+
 _Figure 1.5: Cloud computing building blocks._
 
 The four layers can be further quantified this way:
@@ -44,6 +45,7 @@ Services offered by cloud providers fall into three categories known as *service
 Figure 1.6 illustrates the differences. In a traditional (non-cloud) computing environment, you own the hardware and the software and are responsible for deploying and maintaining them. If a server needs more RAM, you are responsible for installing it; if an operating system requires patching, you're responsible for that, too. With IaaS, by contrast, the cloud service provider provides virtualized hardware in the form of virtual machines. With a few commands or button clicks, you can create a virtual machine complete with an operating system. You are responsible for keeping the operating system patched and installing and maintaining any software that runs in the virtual machine. But you are no longer responsible for maintaining hardware.
 
 ![Figure 1.6: Cloud service models.](../media/cloud-service-models.png)
+
 _Figure 1.6: Cloud service models._
 
 PaaS goes a step further and provides a platform for developing and running applications that you install and maintain. Significantly, the cloud provider takes responsibility for maintaining the platform itself. A great example of a PaaS cloud service is Azure App Service, which provides one or more virtual machines complete with an operating system (Windows or Linux), a web server such as Internet Information Services (IIS), and a runtime stack such as Node.js, PHP, or ASP.NET Core for hosting web sites and web apps. It also offers automatic scaling and built-in load balancing. In short, it provides a complete platform for hosting web apps and allows you to focus on writing apps rather than installing and maintaining hardware and software.
@@ -195,6 +197,7 @@ However, there are situations where SaaS may not be the right choice, such as:
 [^1]: <https://www.zdnet.com/article/linux-now-dominates-azure/>  "ZDNet (2018). ​*Linux now dominates Azure*"
 
 1. _ZDNet (2018). ​*Linux now dominates Azure*. <https://www.zdnet.com/article/linux-now-dominates-azure/>_
+
 
 
 \[Activity M0-P4-A, M0-P4-B\]

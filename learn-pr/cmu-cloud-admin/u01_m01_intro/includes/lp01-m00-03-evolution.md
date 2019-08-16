@@ -1,6 +1,7 @@
 The cloud-computing concept first appeared during the early 1950s, when several academics, including Herb Grosch, John McCarthy, and Douglas Parkhill<sup>[1]</sup>, envisioned computing as a utility similar to electric power. Over the next few decades, several emerging technologies laid the foundations for cloud computing (Figure 1.3). More recently, rapid growth of the World Wide Web and the advent of large Internet giants, such as Microsoft, Google, and Amazon, finally led to the creation of an economic and business environment that allowed the cloud-computing model to flourish.
 
 ![Figure 1.3: Evolution of cloud computing.](../media/table.png)
+
 _Figure 1.3: Evolution of cloud computing._
 
 # Evolution of Computing
@@ -44,6 +45,8 @@ Programming models for clouds give users the flexibility to express parallel pro
 1. _Simson L. Garfinkel (1999). *Architects of the Information Society: Thirty-Five Years of the Laboratory for Computer Science at MIT*. MIT Press._
 
 2. _Michelle Bailey (2009). *The Economics of Virtualization: Moving Toward an Application-Based Cost Model*. VMware Sponsored IDC Whitepaper._
+
+
 
 \[Activity M0-P3-A\]
 \[Activity M0-P3-B, M0-P3-C\]

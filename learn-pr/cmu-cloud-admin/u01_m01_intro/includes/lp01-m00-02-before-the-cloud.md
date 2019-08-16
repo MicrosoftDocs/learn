@@ -29,6 +29,7 @@ Business computing has addressed scale through vertical and horizontal scaling a
 The late 1990s marked a steady increase in the adoption of these computing applications and platforms across domains. Soon, software was expected to not only be functional, but also capable of producing value and insight for business and personal requirements. The use of these applications became collaborative; applications were mixed and matched to feed information to each other. IT was no longer just a cost center for a company, but a source of innovation and efficiency.
 
 ![Figure 1.2: Comparing Traditional and Internet-Scale Computing.](../media/traditional_vs_internet_scale.png)
+
 _Figure 1.2: Comparing Traditional and Internet-Scale Computing._
 
 The 21st century has been marked by an explosion in the volume and capacity of wireless communications, the World Wide Web, and the Internet. These changes have led to a network- and data-driven society, where producing, disseminating, and accessing digitized information is simplified. The Internet has created a global marketplace of more than 4 billion users. This rise in data and connections is valuable to businesses. Data creates value in several ways, including by enabling experimentation, segmenting populations, and supporting decision-making with automation<sup>[1][^1]</sup>. By embracing digital technologies, the world's top 10 economies were expected to increase their output by more than a trillion dollars between 2015 and 2020<sup>[2][^2]</sup>.
