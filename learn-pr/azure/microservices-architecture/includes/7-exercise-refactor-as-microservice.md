@@ -30,7 +30,7 @@ Now let's redeploy the application. We'll deploy our refactored service on Azure
     zip -r PackageService.zip .
     ```
 
-1. Run this command to push the code to the Azure Function. Enter the password of the deployment user you created earlier.
+1. Run this command to push the code to the Azure Function.
 
     ```azurecli
     az functionapp deployment source config-zip \
