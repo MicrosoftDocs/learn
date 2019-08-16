@@ -97,6 +97,8 @@ The team leaves Andy and Mara to work out the details.
 
 ## What continuous delivery tools can I use?
 
+After the meeting ends, Andy and Mara plan next steps. They are using Azure Pipelines to build their software. They want to see whether it can also help them with their release process.
+
 **Mara:** Where do you want to start?
 
 **Andy:** First, we need to agree on our release management tool. Let's make sure the tool we choose:
@@ -106,14 +108,14 @@ The team leaves Andy and Mara to work out the details.
 * Makes it easy to define the deployment tasks we need to perform.
 * Is easy to extend.
 
-**Mara:** Azure DevOps integrates with several other CI/CD solutions. There are a lot of options out there and we don't already have an investment in one. If we did, it would make sense to go with that one. Popular CI/CD systems include Jenkins, Circle CI, GitLab, Travis, and Azure Pipelines.
+**Mara:** Azure DevOps integrates with several other CI/CD solutions. There are a lot of options out there and we don't already have an investment in one. If we did, it would make sense to go with that one. Popular CI/CD systems include Jenkins, Circle CI, GitLab, Travis CI, and Azure Pipelines.
 
 These tools have their similarities but each also has its strengths. Some of these tools are open source, some are free, and some you have to pay for. They each also provide built-in integrations with other software tools.
 
-For example, Jenkins is open source. Jenkins has a lot of plug-ins and many companies use it. You can run Circle CI in the cloud-based or on-premises. I think we would need to customize it. GitLab Pipelines is a part of GitLab, which is a single application for the entire software development lifecycle. It might be bigger than we want right now. My vote is to stay with Azure Pipelines.
+For example, Jenkins is open source. Jenkins has a lot of plug-ins and many companies use it. You can run Circle CI in the cloud-based or on-premises. I think we would need to customize it. GitLab is a single application for the entire software development lifecycle. It might be bigger than we want right now. My vote is to stay with Azure Pipelines.
 
 **Andy:** I agree. Azure Pipelines has worked great for us so far and we don't have to learn another new technology.
 
 **Mara:** Great. Let's get started on the pipeline details.
 
-Andy and Mara move to a conference room to plan their continuous deployment pipeline.
+Andy and Mara move to a conference room to plan their CD pipeline.

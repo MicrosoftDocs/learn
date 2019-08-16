@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.create-release-pipeline.2-what-is-cd
-title: Introduction to continuous delivery with Azure DevOps
+title: What is continuous delivery?
 metadata:
-  title: Introduction to continuous delivery with Azure DevOps
-  description: Introduction to continuous delivery with Azure DevOps
+  title: What is continuous delivery?
+  description: What is continuous delivery?
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche

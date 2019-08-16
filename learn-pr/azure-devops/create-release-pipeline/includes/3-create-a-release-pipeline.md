@@ -30,7 +30,7 @@ Andy draws a diagram on the whiteboard.
 
 A _stage_ is a part of the pipeline that can run independently and be triggered by different mechanisms, such as the success of the previous stage, a schedule, or even manually. You learn more about these mechanisms in the next module.
 
-**Mara:** I think that's a great start and pretty straightforward. Let's define a *stage* as a major division in a pipeline. Every stage is independent of every other stage. We could have a stage that builds the app and another stage that runs tests. There are many possibilities. But we want to keep it simple so what about two stages?
+**Mara:** I think that's a great start and pretty straightforward. Let's define a *stage* as a major division in a pipeline. Every stage is independent of every other stage. We could have a stage that builds the app and another stage that runs tests. There are many possibilities. Because we want to keep it simple, how about we start with two stages?
 
 Mara updates the diagram on the whiteboard.
 
@@ -42,7 +42,7 @@ The question is, where should we deploy the artifact?
 
 ## Where can I host my deployments?
 
-Azure Pipelines enables you to deploy to just about any kind of environment &mdash; whether it's on-premises or in the cloud. Let's listen in and see what the team decides.
+Azure Pipelines enables you to deploy to just about any kind of environment: whether it's on-premises or in the cloud. Let's listen in and see what the team decides.
 
 **Andy:** At a really high level, do you want to deploy on-premises or to the cloud?
 
@@ -68,7 +68,7 @@ Andy lists these options on the whiteboard:
 
 **Andy:** I'm with you. That leaves VMs or Azure App Service. I think VMs would be a better choice if we were moving some line-of-business app, one that needs its own particular environment, to the cloud. We're not doing anything that big.
 
-**Mara:** That leaves App Service. That would be my choice. It's designed to work with Azure DevOps and it comes with a lot of advantages. It's a platform-as-a-service (PaaS) environment for web apps so it takes a lot of the burden off of us. We won't have to worry about infrastructure. It also comes with security features and enables us to perform load balancing, and automatic scaling.
+**Mara:** That leaves App Service. That would be my choice. It's designed to work with Azure DevOps and it comes with a lot of advantages. It's a platform-as-a-service (PaaS) environment for web apps so it takes a lot of the burden off of us. We won't have to worry about infrastructure. It also comes with security features and enables us to perform load balancing and automatic scaling.
 
 **Andy:** That sounds like what we need. Let's use App Service. This is just a proof of concept anyway. We can always change it if we want to try something else.
 
@@ -76,11 +76,11 @@ Andy lists these options on the whiteboard:
 
 For Azure Pipelines to deploy your software, it needs to authenticate with the target environment. Azure Pipelines provides different authentication mechanisms, and the one you use depends on the target environment you're deploying to. You'll find more information on these mechanisms at the end of this module.
 
-**Andy:** We have our build artifact, and we know we will do the build and deployment in steps. We've also defined the target environment for our deployment. My question now is, how does Azure Pipelines authenticate with the target environment? I know this will be one of Tim's concerns. We need to ensure the process is secure.
+**Andy:** We have our build artifact, and we know we will do the build and deployment in stages. We've also defined the target environment for our deployment. My question now is, how does Azure Pipelines authenticate with the target environment? I know this will be one of Tim's concerns. We need to ensure the process is secure.
 
 After a bit of research, Andy and Mara come up with the general steps they need to allow Azure Pipelines to deploy to App Service.
 
-1. Specify the target deployment environment in the build configuration.
+1. Specify the target deployment environment in the pipeline configuration.
 1. Provide a way for Azure Pipelines to authenticate access to that environment.
 1. Use Azure Pipelines tasks to deploy the build artifact to that environment.
 
@@ -98,7 +98,7 @@ This task requires a few inputs. They are:
 
 * `buildType`: This specifies whether we want the artifacts from the current build or a specific build. For now, we want to deploy the current build.
 * `downloadType`: This specifies whether to download a single artifact or all the artifacts associated with this build. We want to download the _zip_ file that contains the web application package.
-* `artifactName`: This specifies the name of the artifact to download. We need this because we need to specify the name of the _zip_ file.
+* `artifactName`: This specifies the name of the artifact to download. We need this to specify the name of the _zip_ file.
 * `downloadPath`: This specifies where to find the artifact on the build agent.
 
 ### AzureRmWebAppDeployment@4
@@ -109,20 +109,20 @@ This task also requires a few inputs. They are:
 
 * `azureSubscription`: This is the service connection we talked about earlier. We need this to authenticate with the target environment.
 * `appType`: This specifies the App Service environment. These include Linux, Windows, containers, and serverless environments. We're deploying to Linux.
-* `webAppName`: This specifies the name of our App Service.
+* `webAppName`: This specifies the name of our App Service instance.
 * `startupCommand`: This specifies the command to run to launch the web application. We need this to make sure our web app is started. Because our web application uses .NET Core, our startup command is `dotnet Tailspin.SpaceGame.Web.dll`.
-* `package`: This specifies where to find the package to deploy.
+* `package`: This specifies where on the build agent to find the package to deploy.
 
 ### How does Azure Pipelines connect to Azure?
 
-The team mentioned how a _service connection_ would enable them to more easily connect to Azure resources from Azure DevOps.
+Mara mentioned how a _service connection_ would enable them to more easily connect to Azure resources from Azure DevOps.
 
 You can use Azure Pipelines to deploy to just about any type of environment. That environment can run in the cloud or in your datacenter. Your environment can be:
 
-* A virtual machine
-* A containerized environment such as Kubernetes
-* A managed service such as App Service
-* A serverless environment such as Azure Functions
+* A virtual machine.
+* A containerized environment, such as Kubernetes.
+* A managed service, such as App Service.
+* A serverless environment, such as Azure Functions.
 
 To deploy your app to an Azure resource, such as a virtual machine or App Service, you need what's called a _service connection_.
 

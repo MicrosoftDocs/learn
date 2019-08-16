@@ -1,32 +1,35 @@
-If you've gone through [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true) , you've come a long way.
+Great work. You've successfully deployed the _Space Game_ website to App Service using Azure Pipelines. If you've gone through the [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true) learning path, then you know this is a big step. You now have a live environment that you can run additional tests on or release to your users.
 
-Continuous delivery helps software teams deliver reliable software updates to their customers on a rapid cadence. This ensures that customers and stakeholders have the latest features and fixes quickly.
+Continuous delivery helps you to deliver reliable software updates to your customers at a more rapid pace. This helps ensure that your customers have the latest features and fixes as soon as you you're ready to release them. Having a release dashboard helps your team and your stakeholders understand the heath and the frequency of your releases.
 
-In this module, you worked with the Tailspin team to get the first step of this process in place. You discussed the benefits of continuous delivery, created a multistage Azure pipeline to build and deploy the web site to Azure App Services, and added a dashboard for visibility. Great job!
+Setting up Azure Pipelines to publish the _Space Game_ website to App Service is a great first step for the team. But this is just the beginning. In the modules that follow, you help the team expand their release pipeline to include additional stages and tests. Doing so will help the team feel more confident about their releases.
 
 ## Learn more
 
-Here you find more information about compute options:
+Here are some additional resources you can use to further your understanding.
 
-* [Core Cloud Services - Azure compute options](/learn/modules/intro-to-azure-compute?azure-portal=true)
+### Learn about compute options on Azure
 
-Learn more about integrating Azure DevOps with other CI/CD tools:
+In this module, you deployed a website to Azure App Service. You can use Azure Pipelines to deploy to just about any kind of environment, including a virtual machine or containerized environment.
+
+The [Core Cloud Services - Azure compute options](/learn/modules/intro-to-azure-compute?azure-portal=true) module goes into further detail about the kinds of compute options Azure provides.
+
+You'll work more with App Service in the modules that follow. You can also follow the [Deploy a website to Azure with Azure App Service](/learn/paths/deploy-a-website-with-azure-app-service?azure-portal=true) learning path to learn more about App Service.
+
+### Deploy to your preferred environment
+
+After you choose where you want to deploy your applications, learn how to use Azure Pipelines to deploy to that environment.
+
+* [Deploy an Azure Web App](https://docs.microsoft.com/azure/devops/pipelines/targets/webapp?view=azure-devops&tabs=yaml&azure-portal=true)
+* [Deploy to a Linux Virtual Machine](https://docs.microsoft.com/azure/devops/pipelines/apps/cd/deploy-linuxvm-deploygroups?view=azure-devops&azure-portal=true)
+* [Deploy to a Windows Virtual Machine](https://docs.microsoft.com/azure/devops/pipelines/apps/cd/deploy-webdeploy-iis-deploygroups?view=azure-devops&azure-portal=true)
+* [Deploy a Docker container app to Azure Kubernetes Service](https://docs.microsoft.com/azure/devops/pipelines/apps/cd/deploy-aks?view=azure-devops&azure-portal=true)
+* [Build and deploy Java to Azure Functions](https://docs.microsoft.com/azure/devops/pipelines/languages/java-function?view=azure-devops&azure-portal=true)
+
+### Integrate with other CI/CD tools
+
+Azure DevOps enables you to build upon your investment with other CI/CD tools. Learn how Azure DevOps integrates with Jenkins, CircleCI, and GitLab.
 
 * [Continuously deploy from a Jenkins build](https://docs.microsoft.com/azure/devops/pipelines/release/integrate-jenkins-pipelines-cicd?view=azure-devops&tabs=yaml&azure-portal=true)
 * [CircleCI artifacts for Release Pipeline](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-circleci-extension&azure-portal=true)
 * [GitLab Integration for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=onlyutkarsh.gitlab-integration&azure-portal=true)
-* Travis
-
-Learn more about deploying to various environments:
-
-* [Deploy your app](https://docs.microsoft.com/azure/devops/pipelines/?view=azure-devops#deploy-your-app?azure-portal=true)
-  * [Deploy an Azure Web App](https://docs.microsoft.com/en-us/azure/devops/pipelines/targets/webapp?view=azure-devops&tabs=yaml&azure-portal=true)
-  * Linux VM
-  * Windows VM
-  * Kubernetes (e.g. containers)
-  * Functions (find relevant link or cut this)
-* [Service connection](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?azure-portal=true)
-
-TODO - In the summary, link to the Learn learning path on working with App Service
-
-App service - VNet - https://docs.microsoft.com/azure/app-service/web-sites-integrate-with-vnet

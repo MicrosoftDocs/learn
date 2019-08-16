@@ -13,7 +13,9 @@ To complete this module, you need your own [Azure subscription](https://azure.mi
 
 If you use different Microsoft accounts to sign into Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account you use to sign in to Azure. [Add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?view=azure-devops&tabs=browser&azure-portal=true) explains how to add a user. When you add the user, choose the Basic access level.
 
-Then sign out of Azure DevOps and sign in again under the Microsoft account you use to sign in to Azure.
+<!-- TODO: NOT SURE WHETHER BASIC WILL WORK OR IF YOU NEED HIGHER. -->
+
+Then sign out of Azure DevOps and sign in again under the Microsoft account you use to sign in to your Azure subscription.
 
 ## Get the Azure DevOps project
 
@@ -30,20 +32,22 @@ The modules in this learning path form a progression, where you follow the Tails
 
 From the Azure DevOps Demo Generator site, perform these steps to run the template.
 
-1. Click **Sign In** and accept the usage terms.
-1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - Release**. Then click **Create Project**.
+1. Select **Sign In** and accept the usage terms.
+1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - Release**. Then select **Create Project**.
 
     ![Creating a project through the Azure DevOps Demo Generator](../media/4-create-new-project.png)
 
+    <!-- TODO: Generate the template, update link & screenshot -->
+
     It takes a few moments for the template to run.
-1. Click **Navigate to project** to go to your project in Azure DevOps.
+1. Select **Navigate to project** to go to your project in Azure DevOps.
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/learn/modules/create-a-build-pipeline/9-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
+> The [Clean up your Azure DevOps environment](/learn/modules/create-release-pipeline/8-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
 
 ## Create the initial build pipeline
 
-Here you turn on multistage pipelines and create an initial pipeline configuration that builds the application to produce a build artifact.
+Here, you turn on multistage pipelines and create an initial pipeline configuration that builds the application to produce a build artifact.
 
 ### Turn on multi-stage pipelines in Azure DevOps
 
@@ -75,7 +79,7 @@ Here, you create an initial pipeline configuration that builds the web applicati
 
     Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
 
-1. As an optional step, open **azure-pipelines.yml** from Visual Studio Code and familiarize yourself with the initial configuration.
+1. As an optional step, open *azure-pipelines.yml* from Visual Studio Code and familiarize yourself with the initial configuration.
 
     The configuration resembles the basic one you created in the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline/6-create-the-pipeline?azure-portal=true) module. It builds only the application's Release configuration. For learning purposes, this configuration does not run quality or security checks that you set up in previous modules.
 
@@ -99,11 +103,11 @@ Here, you create an initial pipeline configuration that builds the web applicati
 
     ![](../../shared/media/pipeline-trace-build.png)
 
-1. After the build completes, press the back button to return to the summary page.
+1. After the build completes, select the back button to return to the summary page.
 
     ![](../../shared/media/pipeline-navigate-pipeline-summary.png)
 
-1. From the summary page, select your published artifact.
+1. On the summary page, select your published artifact.
 
     ![](../../shared/media/pipeline-navigate-published-artifact.png)
 

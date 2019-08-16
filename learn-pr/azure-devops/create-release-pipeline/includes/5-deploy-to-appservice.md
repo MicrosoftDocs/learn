@@ -5,7 +5,7 @@ Let's follow Andy and Mara as they create their first automated deployment.
 > [!IMPORTANT]
 > Remember that you need your own Azure subscription to complete the exercises in this module.
 
-Here you create multi-stage pipeline that includes a build stage and a deployment stage. To do this, you:
+Here, you create multi-stage pipeline that includes a build stage and a deployment stage. To do this, you:
 
 > [!div class="checklist"]
 > * Create an App Service instance to host the website.
@@ -20,8 +20,8 @@ There are several ways to bring up App Service. Here you use the Azure portal be
 
 We won't go into many of the details about how App Service works or the configuration options you can select from. We point you to more information about App Service at the end of this module.
 
-> [!NOTE]
-The [Clean up your Azure DevOps environment](/learn/modules/create-a-build-pipeline/9-clean-up-environment?azure-portal=true) page in this module explains how to tear down your App Service instance after you're done with it.
+> [!IMPORTANT]
+> The [Clean up your Azure DevOps environment](/learn/modules/create-release-pipeline/8-clean-up-environment?azure-portal=true) page in this module explains how to tear down your App Service instance after you're done with it. Cleaning up when you're done ensures you don't build up additional costs.
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. On the left side, select **App Services**.
@@ -38,7 +38,7 @@ The [Clean up your Azure DevOps environment](/learn/modules/create-a-build-pipel
     | **Operating System** | **Linux**                                                                                     |
     | **Region**           | Select any region, preferably one close to you.                                               |
     | **Linux Plan**       | Keep the default value.                                                                       |
-    | **Sku and size**     | Select **Change size**. Then select the **Dev / Test** tab, and then select **B1**. Click **Apply**. |
+    | **Sku and size**     | Select **Change size**. Then select the **Dev / Test** tab, and then select **B1**. Select **Apply**. |
 
     Your App Service instance requires a unique name because that name becomes part of the domain name. In practice, you would choose a name that describes your service.
 
@@ -54,7 +54,7 @@ The [Clean up your Azure DevOps environment](/learn/modules/create-a-build-pipel
 
     ![](../media/5-app-service-details.png)
 
-1. Click the URL shown in the details section.
+1. Select the URL shown in the details section.
 
     From a new browser tab, you see the default home page for your app.
 
@@ -65,14 +65,14 @@ The [Clean up your Azure DevOps environment](/learn/modules/create-a-build-pipel
     Keep this browser tab open for later.
 
 > [!NOTE]
-> For learning purposes, here you use the default network settings, which makes your site accessible from the internet. In practice, you would likely configure an Azure virtual network that places your website in a non-internet routable network that's accessible to only you and your team. Later, when you're ready, you can reconfigure your network to make the website available to your users.
+> For learning purposes, here you use the default network settings, which makes your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a non-internet routable network that's accessible to only you and your team. Later, when you're ready, you can reconfigure your network to make the website available to your users.
 
 ## Create a service connection
 
-Here you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service.
+Here, you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service.
 
 > [!IMPORTANT]
-> Make sure that you're signed in to both Azure and Azure DevOps under the same Microsoft account.
+> Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
 
 1. In Azure DevOps, go to your **Space Game - web - Release** project.
 1. Select **Project settings** from the bottom corner of the page.
@@ -91,15 +91,15 @@ Here you create a service connection that enables Azure Pipelines to access your
 
     During the process, you'll likely be prompted to sign in to your Microsoft account.
 
-1. Click **OK**.
+1. Select **OK**.
 
     Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps is unable to connect, you'll have the chance to sign in a second time.
 
 ## Add the build stage to the pipeline
 
-Here you convert your existing build pipeline to use the multi-stage feature of Azure Pipelines. You'll update your build configuration to define one stage that performs the build and then you'll watch the pipeline run.
+Here you convert your existing build pipeline to use the multi-stage feature of Azure Pipelines. You update your build configuration to define one stage that performs the build and then you watch the pipeline run.
 
-Recall that your build pipeline defines the agent pool, variables, and tasks that are required to build your app. Here are the first few lines from your current build configuration:
+Recall that your build pipeline defines the agent pool, variables, and tasks that are required to build your app. As a refresher, here are the first few lines from your current build configuration:
 
 ```yml
 pool:
@@ -123,7 +123,7 @@ steps:
 
 A _multi-stage pipeline_ enables you to define distinct deployment phases as your change makes its way through the pipeline. Each stage defines the agent, variable, and steps required to carry out that phase of the deployment. In this module, you define one stage to perform the build, and a second stage to deploy the web application to App Service.
 
-To convert your existing build configuration to a multi-stage pipeline, you add a `stages` section to your configuration. You then add one more more `stage` sections to define each phase of your deployment.
+To convert your existing build configuration to a multi-stage pipeline, you add a `stages` section to your configuration. You then add one or more `stage` sections to define each phase of your deployment.
 
 Stages also break down into jobs, A _job_ is a series of steps that run sequentially as a unit. You'll work with jobs shortly.
 
@@ -184,7 +184,7 @@ To do so, you define a second stage and use the `DownloadBuildArtifacts@0` and `
 
     [!code-yml[](code/5-azure-pipelines-2.yml?highlight=64-)]
 
-    Notice the use of the `DownloadBuildArtifacts@0` and `AzureRmWebAppDeployment@4` tasks. `$(ServiceConnectionName)` and `$(WebAppName)` read the service connection name and the web app name, respectively, from your pipeline variables.
+    Notice the use of the `DownloadBuildArtifacts@0` and `AzureRmWebAppDeployment@4` tasks. `$(WebAppName)` reads the web app name from your pipeline variables.
 
 1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub.
 
@@ -217,5 +217,4 @@ When you created your App Service instance, you saw the default website that's c
 
     ![](../media/5-deployed-website.png)
 
-Congratulations! You've successfully deployed the _Space Game_ website to App Service using Azure Pipelines. This gives you a live environment that you can run additional tests on or release to your users.
-
+Congratulations! You've successfully deployed the _Space Game_ website to App Service using Azure Pipelines.
