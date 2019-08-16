@@ -12,7 +12,7 @@ The devices in the offline grouping include:
 
 - **Data Box Disk**: Provides one ~35-TB transfer to Azure. Connect and copy data over USB.
 - **Data Box**: Provides one ~80-TB transfer to Azure per order. Connect and copy data to the device over standard network interface protocols like SMB and NFS.
-- **Data Box Heavy**: Provides one ~800-TB transfer to Azure. Use high-throughput network interfaces to connect and copy data to the device. This process uses standard network interfaces protocols like SMB and NFS. Data Box Heavy is like two Data Boxes, each with an independent node.
+- **Data Box Heavy**: Provides one ~800-TB transfer to Azure. Use high-throughput network interfaces to connect and copy data to the device. This process uses standard network interface protocols like SMB and NFS. Data Box Heavy is like two Data Boxes, each with an independent node.
 
 ### Online data transfer
 
