@@ -93,7 +93,7 @@ Modify the registration page to allow administrators to register using the follo
 
         [!code-csharp[](../code/Areas/Identity/Pages/Account/6-Register.cshtml.cs?name=snippet_AdminEnrollmentKey&highlight=3-5)]
 
-    1. Apply the highlighted change to the `OnPostAsync` method:
+    1. Apply the highlighted changes to the `OnPostAsync` method:
 
         [!code-csharp[](../code/Areas/Identity/Pages/Account/6-Register.cshtml.cs?name=snippet_OnPostAsync&highlight=1-3,20-22)]
 
