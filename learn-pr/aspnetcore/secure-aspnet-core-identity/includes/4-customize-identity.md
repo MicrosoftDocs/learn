@@ -146,7 +146,7 @@ UI changes are also required to collect the additional user profile information.
 
     The `PK_AspNetUsers` index shows that the `Id` column is the unique identifier for a user account.
 
-4. Press <kbd>q</kbd> to exit the text viewer in the command shell.
+4. Press the <kbd>q</kbd> key to exit the text viewer in the command shell.
 
 ::: zone-end
 
