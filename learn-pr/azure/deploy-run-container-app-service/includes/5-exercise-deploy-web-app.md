@@ -42,12 +42,22 @@ In this unit, you'll create a new web app by using the Docker image stored in Az
 
 1. Use the **All resources** view in the Azure portal to go to the **Overview** page of the web app you just created.
 
-1. Select the **Browse** button to open the site in a new browser tab.
+2. Select the **Browse** button to open the site in a new browser tab.
 
-1. After the cold-start delay while your app's Docker image loads and starts, you'll see a page like this:
+::: zone pivot="csharp"
 
-    ![Screenshot of the sample web app](../media/5-sample-web-app.png)
+3. After the cold-start delay while your app's Docker image loads and starts, you'll see a page like this:
 
-1. Select the arrows in the carousel control at the top of the page to rotate through three pages of content.
+    ![Screenshot of the sample web app](../media/5-sample-web-app-dotnet.png)
+
+::: zone-end
+
+::: zone pivot="javascript"
+
+3. After the cold-start delay while your app's Docker image loads and starts, you'll see a page like this:
+
+    ![Screenshot of the sample web app](../media/5-sample-web-app-node.png)
+
+::: zone-end
 
 App Service is now hosting the app from your Docker image.
