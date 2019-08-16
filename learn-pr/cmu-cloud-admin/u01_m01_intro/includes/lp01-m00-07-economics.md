@@ -9,9 +9,13 @@ An organization's IT costs are many-fold, which include expenses for hardware an
 The business model for IT software has evolved over the years into the following forms:
 
 1. **Traditional model**: An organization purchases licensed software, which it then owns and maintains.
+
 1. **Open-source model**: Software is essentially free, but the organization pays vendor support costs.
+
 1. **Outsourcing model**: An organization hires another company, possibly overseas, to manage and maintain the software.
+
 1. **Hybrid model**: A software vendor sells highly standardized software to many clients, along with software management and support, thereby amortizing costs of expertise, software management, and support across several clients.
+
 1. **Cloud computing model**: Software is developed and delivered over the Internet to many clients at lower costs.
 
 ## Reducing Capital Expenditure
