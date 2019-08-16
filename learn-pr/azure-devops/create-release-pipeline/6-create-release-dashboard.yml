@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.create-release-pipeline.7-create-release-dashboard
+uid: learn.azdo.create-release-pipeline.6-create-release-dashboard
 title: Exercise - Set up a deployment dashboard
 metadata:
   title: Exercise - Set up a deployment dashboard
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-create-release-dashboard.md)]
+  [!include[](includes/6-create-release-dashboard.md)]

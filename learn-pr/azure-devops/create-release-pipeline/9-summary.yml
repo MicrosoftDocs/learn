@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.create-release-pipeline.10-summary
+uid: learn.azdo.create-release-pipeline.9-summary
 title: Summary
 metadata:
   title: Summary
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/10-summary.md)]
+  [!include[](includes/9-summary.md)]

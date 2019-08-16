@@ -40,10 +40,9 @@ units:
 - learn.azdo.create-release-pipeline.3-create-a-release-pipeline
 - learn.azdo.create-release-pipeline.4-set-up-environment
 - learn.azdo.create-release-pipeline.5-deploy-to-appservice
-- learn.azdo.create-release-pipeline.6-different-target-environments
-- learn.azdo.create-release-pipeline.7-create-release-dashboard
-- learn.azdo.create-release-pipeline.8-plan-upcoming-sprint
-- learn.azdo.create-release-pipeline.9-clean-up-environment
-- learn.azdo.create-release-pipeline.10-summary
+- learn.azdo.create-release-pipeline.6-create-release-dashboard
+- learn.azdo.create-release-pipeline.7-plan-upcoming-sprint
+- learn.azdo.create-release-pipeline.8-clean-up-environment
+- learn.azdo.create-release-pipeline.9-summary
 badge:
   uid: learn.azdo.create-release-pipeline.badge
