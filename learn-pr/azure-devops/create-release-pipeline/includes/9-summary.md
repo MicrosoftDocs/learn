@@ -8,7 +8,7 @@ Setting up Azure Pipelines to publish the _Space Game_ website to App Service is
 
 Here are some additional resources you can use to further your understanding.
 
-### Learn about compute options on Azure
+### Choose the right compute option for your app
 
 In this module, you deployed a website to Azure App Service. You can use Azure Pipelines to deploy to just about any kind of environment, including a virtual machine or containerized environment.
 

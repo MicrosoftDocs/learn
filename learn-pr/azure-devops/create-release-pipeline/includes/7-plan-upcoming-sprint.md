@@ -26,6 +26,4 @@ The team agrees. Mara sets up a sprint iteration and adds these tasks:
 
 ![Azure Board showing the tasks for this sprint](../media/8-board-with-issues.png)
 
-<!-- TODO: Redo these and recap -->
-
 Each of these tasks relates to what you'll do in the next three modules. You don't need to add these tasks to Azure Boards now. You'll run a template that populates Azure Boards with these tasks, just as you did in previous modules.
