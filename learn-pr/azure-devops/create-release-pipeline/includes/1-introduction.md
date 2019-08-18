@@ -51,6 +51,8 @@ You met the _Space Game_ web team at Tailspin Toys in previous modules. As a ref
 
 [!include[](../../shared/includes/meet-mara-short-col.md)]
 
+[!include[](../../shared/includes/meet-irwin-short-col.md)]
+
 :::row-end:::
 
 Mara has prior experience with DevOps and is helping the team adopt a more streamlined process using Azure DevOps.
