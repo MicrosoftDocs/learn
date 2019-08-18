@@ -95,6 +95,14 @@ Tim laughs.
 
 The team leaves Andy and Mara to work out the details.
 
+## How does continuous delivery compare to continuous deployment?
+
+In the DevOps community, you might hear the terms _continuous delivery_ and _continuous deployment_. Do these terms mean the same thing? In this short video, Abel Wang, Cloud Advocate at Microsoft, explains the difference.
+
+**Ask Abel**
+
+> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-the-difference-between-Continuous-Delivery-and-Continuous-Deployment--One-Dev-Question/player?format=ny]
+
 ## What continuous delivery tools can I use?
 
 After the meeting ends, Andy and Mara plan next steps. They are using Azure Pipelines to build their software. They want to see whether it can also help them with their release process.
