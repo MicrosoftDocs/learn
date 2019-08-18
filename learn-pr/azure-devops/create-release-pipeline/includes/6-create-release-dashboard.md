@@ -40,12 +40,18 @@ To help others find what they need, you can create a second dashboard that focus
 
 1. In Azure DevOps, select **Overview** from the pane on the left. Then select **Dashboards**.
 1. From the drop-down menu, select **+ New dashboard**.
+
+    ![](../media/6-dashboard-new-dashboard.png)
+
 1. Name the dashboard **Space Game Releases**.
 1. Select **Create**.
 
 Your dashboard is created. To find this dashboard later, select **Overview** and then **Dashboards**. Expand the **All dashboards** section to see your dashboards.
 
-![](../media/7-dashboard-all-dashboards.png)
+![](../media/6-dashboard-all-dashboards.png)
+
+> [!IMPORTANT]
+> **TODO:** I've tried this several times, and none of these widgets work because I don't have a release pipeline. We need to resolve this ASAP.
 
 ## Add the Deployment Status widget
 
