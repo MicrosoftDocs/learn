@@ -81,11 +81,9 @@ stages:
         artifactName: 'drop'
         downloadPath: '$(Build.ArtifactStagingDirectory)'
 
-    - task: AzureRmWebAppDeployment@4
+    - task: AzureWebApp@1
       displayName: 'Azure App Service Deploy: website'
       inputs:
         azureSubscription: 'TailspinServiceConnection'
-        appType: 'webAppLinux'
-        webAppName: '$(WebAppName)'
-        startupCommand: 'dotnet Tailspin.SpaceGame.Web.dll'
+        appName: '$(WebAppName)'
         package: $(System.ArtifactsDirectory)/**/*.zip

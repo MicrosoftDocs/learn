@@ -179,13 +179,13 @@ To add the variable:
 
 Here, you extend your configuration by adding a deployment stage that deploys the _Space Game_ web application to App Service.
 
-To do so, you define a second stage and use the `DownloadBuildArtifacts@0` and `AzureRmWebAppDeployment@4` tasks to download the build artifact from the pipeline and perform the deployment.
+To do so, you define a second stage and use the `DownloadBuildArtifacts@0` and `AzureWebApp@1` tasks to download the build artifact from the pipeline and perform the deployment.
 
 1. From Visual Studio Code, replace the contents of *azure-pipelines.yml* with this.
 
     [!code-yml[](code/5-azure-pipelines-2.yml?highlight=64-)]
 
-    Notice the use of the `DownloadBuildArtifacts@0` and `AzureRmWebAppDeployment@4` tasks. `$(WebAppName)` reads the web app name from your pipeline variables.
+    Notice the use of the `DownloadBuildArtifacts@0` and `AzureWebApp@1` tasks. `$(WebAppName)` reads the web app name from your pipeline variables.
 
 1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub.
 

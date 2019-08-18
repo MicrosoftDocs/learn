@@ -86,7 +86,7 @@ After a bit of research, Andy and Mara come up with the general steps they need 
 
 **Mara:** According to our research, we need to create what's called a _service connection_ to specify the target environment and authenticate access to it. Once we define the service connection, it will be available for all of our tasks to use.
 
-Then we need to use the built-in tasks [DownloadBuildArtifacts@0](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/download-build-artifacts?azure-portal=true) and [AzureRmWebAppDeployment@4](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-rm-web-app-deployment?azure-portal=true).
+Then we need to use the built-in tasks [DownloadBuildArtifacts@0](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/download-build-artifacts?azure-portal=true) and [AzureWebApp@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-rm-web-app?view=azure-devops?azure-portal=true).
 
 **Andy:** I have the tasks here. Let's see what they do for us.
 
@@ -101,16 +101,14 @@ This task requires a few inputs. They are:
 * `artifactName`: This specifies the name of the artifact to download. We need this to specify the name of the _zip_ file.
 * `downloadPath`: This specifies where to find the artifact on the build agent.
 
-### AzureRmWebAppDeployment@4
+### AzureWebApp@1
 
-You use the `AzureRmWebAppDeployment@4` task to deploy a web application to App Service. This task works with a number of programming languages and frameworks, including ASP.NET, ASP.NET Core, PHP, Java, Python, Go, and Node.js. We use this task to perform the deployment. To use it, though, we have to have App Service running on our Azure subscription.
+You use the `AzureWebApp@1` task to deploy a web application to App Service. This task works with a number of programming languages and frameworks, including ASP.NET, ASP.NET Core, PHP, Java, Python, Go, and Node.js. We use this task to perform the deployment. To use it, though, we have to have App Service running on our Azure subscription.
 
 This task also requires a few inputs. They are:
 
 * `azureSubscription`: This is the service connection we talked about earlier. We need this to authenticate with the target environment.
-* `appType`: This specifies the App Service environment. These include Linux, Windows, containers, and serverless environments. We're deploying to Linux.
-* `webAppName`: This specifies the name of our App Service instance.
-* `startupCommand`: This specifies the command to run to launch the web application. We need this to make sure our web app is started. Because our web application uses .NET Core, our startup command is `dotnet Tailspin.SpaceGame.Web.dll`.
+* `appName`: This specifies the name of our App Service instance.
 * `package`: This specifies where on the build agent to find the package to deploy.
 
 ### How does Azure Pipelines connect to Azure?
