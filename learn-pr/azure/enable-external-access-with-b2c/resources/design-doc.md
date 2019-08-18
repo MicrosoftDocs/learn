@@ -37,9 +37,9 @@ Identify the subtasks of *Enable secure external user access for your applicatio
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- |---|---|---|---|
-| Manage consumer identities with Azure AD B2C | Implement a secure identity solution for the application | Knowledge check | 1 | Yes |
+| What is Azure AD B2C? | Implement a secure identity solution for the application | Knowledge check | 1 | Yes |
 | Use multi-factor authentication to protect your application | Implement a secure identity solution for the application | Knowledge check | 2 | Yes |
-| Set up Azure AD B2C with MFA through the Azure portal | Implement a secure identity solution for the application | Exercise | 1, 2 | Yes |
+| Configure Azure AD B2C with MFA | Implement a secure identity solution for the application | Exercise | 1, 2 | Yes |
 
 ## Outline the units
 
@@ -47,9 +47,9 @@ Identify the subtasks of *Enable secure external user access for your applicatio
 
     You're the solution architect for a health care organization. Your organization is publishing an application that allows patients to view their health records. You need to implement a secure identity solution for the application to protect the sensitive health data of your patients.
 
-1. **Manage consumer identities with Azure AD B2C**
+2. **What is Azure AD B2C?**
 
-    Describe the following points and concepts:
+    Explain the purpose of Azure AD B2C. Describe the following points and concepts:
 
     - What is a *user journey* in Azure B2C?
     - Using secure protocols and tokens for user journeys.
@@ -62,12 +62,12 @@ Identify the subtasks of *Enable secure external user access for your applicatio
     - What should you do to enable your applications to be ready for Azure AD B2C?
     - Your organization wants you to make it possible for patients to use their own personal social media accounts to access their health records. How would you meet this requirement?
 
-1. **Use multi-factor authentication to protect your application**
+3. **Use multi-factor authentication to protect your application**
 
     In the scenario, the health care organization has an application. You need to allow patients to access their health records from this application. You can implement automated access control decisions for accessing your cloud apps that are based on conditions. Conditional access policies are enforced after the first-factor authentication has been completed. Cover the following points:
 
     - The additional layers of protection available to your applications with MFA.
-    - How to implement multi-factor authentication in Azure
+    - Options for implementing multi-factor authentication in Azure (brief - details are in the next unit)
     - Occasions when you may need to disable MFA.
 
     **Unit Notes:**
@@ -97,14 +97,20 @@ Identify the subtasks of *Enable secure external user access for your applicatio
     - You want to set up multi-factor authentication for the application. You notice you are unable to set up new conditional access policies. What might have happened?
     - Your organization wants to enable users in the local office to sign in to the application without being prompted for multi-factor authentication.  How could you meet this expectation?
 
-1. **Exercise - Set up Azure AD B2C with MFA through the Azure portal**
+4. **Configure Azure B2C with MFA**
+
+    Walk through the process of implementing MFA in Azure B2C, using the portal. Describe the options available at each stage of the process. Summarize the experience of the end-user of an application once B2C and MFA are set up (how do they run an app, what will they see during authentication, what information will they be expected to provide?).
+
+5. **Exercise - Set up Azure AD B2C with MFA through the Azure portal**
+
+    The exercise uses the sample scenario as a specific example of B2C with MFA. Perform the following tasks:
 
     - Create an Azure AD B2C tenant.
     - Register your application in Azure AD B2C.
     - Create user flows in Azure AD B2C.
     - Set multi-factor authentication on the user flow.
 
-1. **Summary**
+6. **Summary**
 
     In this module, you've learned how Azure AD B2C can be used as an identity solution to protect the sensitive health data of patients. You've also learned how multi-factor authentication can be used with Azure AD B2C to add an additional layer of protection for your application.
 
