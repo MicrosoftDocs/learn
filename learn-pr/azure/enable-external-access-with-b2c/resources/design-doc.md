@@ -45,7 +45,7 @@ Identify the subtasks of *Enable secure external user access for your applicatio
 
 1. **Introduction**
 
-    You are the solution architect for a health care organization. Your organization is publishing an application that allows patients to view their health records. You need to implement a secure identity solution for the application to protect the sensitive health data of your patients.
+    You're the solution architect for a health care organization. Your organization is publishing an application that allows patients to view their health records. You need to implement a secure identity solution for the application to protect the sensitive health data of your patients.
 
 1. **Manage consumer identities with Azure AD B2C**
 
@@ -72,12 +72,12 @@ Identify the subtasks of *Enable secure external user access for your applicatio
 
     **Unit Notes:**
 
-    Conditional access policy has 2 key parts:
+    Conditional access policy has two key parts:
 
     - Conditions – Specified conditions that need to be met
     - Action – defined action steps once the conditions are met.
 
-    Azure MFA helps safeguard access to data and customer-facing applications while maintaining simplicity for users. It provides additional security by requiring a second form of authentication and delivers strong authentication via a range of easy to use authentication methods. The security of two-step verification lies in its layered approach. Compromising multiple authentication factors presents a significant challenge for attackers. Even if an attacker manages to learn the user's password, it is useless without also having possession of the additional authentication method. MFA provides additional security for your identities by requiring two or more elements for full authentication. These elements fall into three categories:
+    Azure MFA helps safeguard access to data and customer-facing applications while maintaining simplicity for users. It provides additional security by requiring a second form of authentication and delivers strong authentication via a range of easy to use authentication methods. The security of two-step verification lies in its layered approach. Compromising multiple authentication factors presents a significant challenge for attackers. Even if an attacker manages to learn the user's password, it's useless without also having possession of the additional authentication method. MFA provides additional security for your identities by requiring two or more elements for full authentication. These elements fall into three categories:
 
     - Something you know
     - Something you possess
@@ -87,15 +87,15 @@ Identify the subtasks of *Enable secure external user access for your applicatio
 
     MFA policies can be enforced at the tenant, app, or individual user level. Example second factors include:
 
-    - Mobile app, e.g. Authenticator
+    - Mobile app, for example, Authenticator
     - Mobile app verification code
 
-    Azure AD B2C directories are separate from standard Azure AD directories and can be created in the Azure portal. Azure AD B2C enables you to customize and control how customers sign up, sign in, and manage their profiles when using your applications. This includes applications developed for iOS, Android, and .NET, among others. Azure AD B2C provides a social identity login experience, while at the same time protecting your customer identity profile information.  
+    Azure AD B2C directories are separate from standard Azure AD directories and can be created in the Azure portal. Azure AD B2C enables you to customize and control how customers sign up, sign in, and manage their profiles when using your applications. This includes applications developed for iOS, Android, and .NET, among others. Azure AD B2C provides a social identity sign in experience, while at the same time protecting your customer identity profile information.  
 
     **Knowledge check**
 
     - You want to set up multi-factor authentication for the application. You notice you are unable to set up new conditional access policies. What might have happened?
-    - Your organization wants to allow users in the local office to be able to sign in to the application without being prompted for multi-factor authentication.  How could you meet this expectation?
+    - Your organization wants to enable users in the local office to sign in to the application without being prompted for multi-factor authentication.  How could you meet this expectation?
 
 1. **Exercise - Set up Azure AD B2C with MFA through the Azure portal**
 
@@ -106,7 +106,7 @@ Identify the subtasks of *Enable secure external user access for your applicatio
 
 1. **Summary**
 
-    In this module, you have learned how Azure AD B2C can be used as an identity solution to protect the sensitive health data of patients. You have also learned how multi-factor authentication can be used with Azure AD B2C to add an additional layer of protection for your application.
+    In this module, you've learned how Azure AD B2C can be used as an identity solution to protect the sensitive health data of patients. You've also learned how multi-factor authentication can be used with Azure AD B2C to add an additional layer of protection for your application.
 
 ## Notes
 
