@@ -34,9 +34,9 @@ Mara's value stream map is still on the whiteboard from their previous meeting:
 
 In fact, Abel Wang, a Cloud Advocate at Microsoft, has a great set of videos with quick answers to some of our big questions. Let's see how Abel defines DevOps.
 
-**Let's ask Abel**
+**Ask Abel**
 
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-DevOps--One-Dev-Question/player]
+> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-DevOps--One-Dev-Question/player?format=ny]
 
 Our goal is to give our customers games they'll love. We do that by working together with a shared set of practices and tools.
 
