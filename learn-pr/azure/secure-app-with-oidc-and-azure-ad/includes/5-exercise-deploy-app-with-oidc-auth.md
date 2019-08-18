@@ -50,6 +50,7 @@ In this exercise, you'll configure an application to authenticate users against 
       },
       "AllowedHosts": "*"
     }
+    ```
 
 1. Select **Ctrl+S** to save the file and **Ctrl+Q** to close the code editor.
 
@@ -58,7 +59,7 @@ In this exercise, you'll configure an application to authenticate users against 
     ```azurecli
     az webapp up \
         --resource-group <rgn>[Sandbox resource group]</rgn> \
-        --sku B1 \
+        --sku F1 \
         --name educationapp-$RANDOM
     ```
 
@@ -72,7 +73,7 @@ Now let's configure the app registration to authorize the URL of the web service
 
 1. In the left pane, select **Azure Active Directory**.
 
-1. Under **Manage**, select **App Registrations**. Then select the **WebApp-OpenIDConnect-DotNet** registration that you created in the previous exercise.
+1. Under **Manage**, select **App registrations**. Then select the **WebApp-OpenIDConnect-DotNet** registration that you created in the previous exercise.
 
 1. Select **Authentication**.
 

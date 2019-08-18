@@ -67,6 +67,4 @@ There's no suggestion in the scenario that shop staff should be able to modify t
 
 It seems sensible that the development of the custom connector and the workflow should be done by the same person or team. Since these must be developers, it's best to use Azure Logic Apps.
 
-<!-- TODO: A video that illustrates this the decision flow, applied to this specific scenario, may help to engage the student. -->
-
 As this exercise shows, we can narrow down the technology to use for a given solution by simply understanding the business process and the audience. 

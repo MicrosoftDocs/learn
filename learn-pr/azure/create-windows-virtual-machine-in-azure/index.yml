@@ -37,7 +37,6 @@ units:
 - learn.create-a-windows-vm-in-azure.4-connect-to-a-windows-virtual-machine
 - learn.create-a-windows-vm-in-azure.5-exercise-connect-to-a-windows-vm-using-rdp
 - learn.create-a-windows-vm-in-azure.6-manage-vm
-- learn.create-a-windows-vm-in-azure.7-exercise-manage-vm
 - learn.create-a-windows-vm-in-azure.8-summary
 badge:
   uid: learn.create-a-windows-vm-in-azure.badge

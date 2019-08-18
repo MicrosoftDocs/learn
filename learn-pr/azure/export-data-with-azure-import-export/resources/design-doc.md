@@ -117,10 +117,10 @@ Identify the subtasks of *module title*
 
 ## Resources
 
-- [What is Azure Import/Export service?](https://docs.microsoft.com/en-us/azure/storage/common/storage-import-export-service)
-- [Azure Import/Export requirements](https://docs.microsoft.com/en-us/azure/storage/common/storage-import-export-requirements)
-- [Use the Azure Import/Export service to import data to Azure Blob Storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-import-export-data-to-blobs?)
+- [What is Azure Import/Export service?](https://docs.microsoft.com/azure/storage/common/storage-import-export-service)
+- [Azure Import/Export requirements](https://docs.microsoft.com/azure/storage/common/storage-import-export-requirements)
+- [Use the Azure Import/Export service to import data to Azure Blob Storage](https://docs.microsoft.com/azure/storage/common/storage-import-export-data-to-blobs?)
 - [Choose an Azure solution for data transfer](https://docs.microsoft.com/azure/storage/common/storage-choose-data-transfer-solution?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)
-- [Scenarios: Data transfer for large datasets with moderate to high network bandwidth](https://docs.microsoft.com/en-us/azure/storage/common/storage-solution-large-dataset-moderate-high-network)
+- [Scenarios: Data transfer for large datasets with moderate to high network bandwidth](https://docs.microsoft.com/azure/storage/common/storage-solution-large-dataset-moderate-high-network)
 - [Pricing](https://azure.microsoft.com/en-ca/pricing/details/storage-import-export/)
-- Related service: [What is Azure Data Box?](https://docs.microsoft.com/en-us/azure/databox/data-box-overview)
+- Related service: [What is Azure Data Box?](https://docs.microsoft.com/azure/databox/data-box-overview)
