@@ -75,6 +75,6 @@ Identify the subtasks of **Diagnose startup errors in your application using Kud
 
     - [Azure DevOps Work Item](https://ceapex.visualstudio.com/Microsoft%20Learn/_workitems/edit/53156/)
 
-    - [Docs guide](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/azure-apps/troubleshoot?view=aspnetcore-2.2)
+    - [Docs guide](https://docs.microsoft.com/aspnet/core/host-and-deploy/azure-apps/troubleshoot?view=aspnetcore-2.2)
 
 

@@ -40,7 +40,7 @@ In this unit, you'll use the Azure portal to create a new registry in Azure Cont
 1. Move to the source folder:
 
     ```bash
-    cd mslearn-deploy-run-container-app-service
+    cd mslearn-deploy-run-container-app-service/dotnet
     ```
 
 1. Run the following command. This command sends the folder's contents to Azure Container Registry, which uses the instructions in the Docker file to build the image and store it. Replace `<container_registry_name>` with the name of the registry you created earlier. Take care not to leave out the `.` character at the end of the command.

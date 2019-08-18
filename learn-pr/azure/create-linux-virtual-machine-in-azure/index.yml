@@ -4,8 +4,8 @@ metadata:
   title: Create a Linux virtual machine in Azure
   description: In this module, we'll discuss how to create a Linux virtual machine using the Azure portal.
   ms.date: 09/24/2018
-  author: markjulmar
-  ms.author: smmark
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: smmark
@@ -17,7 +17,7 @@ abstract: |
     - Create a Linux virtual machine using the Azure portal
     - Connect to a running Linux virtual machine using SSH
     - Install software and change the network configuration on a VM using the Azure portal
-prerequisites: None
+prerequisites: An Azure subscription
 iconUrl: /learn/achievements/create-linux-virtual-machine-in-azure.svg
 levels:
 - beginner
