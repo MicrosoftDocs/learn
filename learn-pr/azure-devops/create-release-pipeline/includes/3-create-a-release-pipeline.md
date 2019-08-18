@@ -66,7 +66,7 @@ Andy lists these options on the whiteboard:
 
 **Mara:** I know containers and serverless computing are really popular right now. Compared to VMs, they're both lightweight in terms of resources. I also know that they're easy to replace and scale up. They're both interesting but I'm nervous learning about two new technologies at the same time. I'd rather concentrate just on building the pipeline.
 
-**Andy:** I'm with you. That leaves VMs or Azure App Service. I think VMs would be a better choice if we were moving some line-of-business app, one that needs its own particular environment, to the cloud. We're not doing anything that big.
+**Andy:** I'm with you. That leaves VMs or App Service. I think VMs would be a better choice if we were moving some line-of-business app, one that needs its own particular environment, to the cloud. We're not doing anything that big.
 
 **Mara:** That leaves App Service. That would be my choice. It's designed to work with Azure DevOps and it comes with a lot of advantages. It's a platform-as-a-service (PaaS) environment for web apps so it takes a lot of the burden off of us. We won't have to worry about infrastructure. It also comes with security features and enables us to perform load balancing and automatic scaling.
 

@@ -5,7 +5,7 @@ You're all done with the tasks for this module. Here, you tear down the Azure re
 
 ## Clean up Azure resources
 
-Here, you delete your App Service instance. One way to delete Azure resources, such as an App Service instance, is to delete its parent resource group. Deleting a resource group deletes all resources in that group.
+Here, you delete your Azure App Service instance. One way to delete Azure resources, such as an App Service instance, is to delete its parent resource group. Deleting a resource group deletes all resources in that group.
 
 To clean up your resource group:
 

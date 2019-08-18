@@ -1,4 +1,4 @@
-The Tailspin team has been using a build pipeline to automate their build processes. They've decided to extend the pipeline to include a deployment stage. This stage deploys to App Service as a proof of concept that Andy and Mara will share with the team.
+The Tailspin team has been using a build pipeline to automate their build processes. They've decided to extend the pipeline to include a deployment stage. This stage deploys to Azure App Service as a proof of concept that Andy and Mara will share with the team.
 
 Let's follow Andy and Mara as they create their first automated deployment.
 

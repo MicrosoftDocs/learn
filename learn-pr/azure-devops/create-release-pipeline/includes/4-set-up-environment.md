@@ -117,6 +117,6 @@ Here, you create an initial pipeline configuration that builds the web applicati
 
     ![](../../shared/media/pipeline-view-published-artifact.png)
 
-    You can manually download and install the build artifact in your own environment, just as Amita did in the previous learning path. In this module, you add a deployment stage that automatically deploys the build artifact to App Service.
+    You can manually download and install the build artifact in your own environment, just as Amita did in the previous learning path. In this module, you add a deployment stage that automatically deploys the build artifact to Azure App Service.
 
 You now have a build pipeline for the _Space Game_ web project. Next, you add the deployment stage to the pipeline.
