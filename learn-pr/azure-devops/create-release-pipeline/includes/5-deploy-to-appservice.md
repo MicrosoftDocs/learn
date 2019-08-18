@@ -133,7 +133,7 @@ Before we add the deployment stage to the pipeline, let's first convert the exis
 
     [!code-yml[](code/5-azure-pipelines-1.yml?highlight=1-6)]
 
-    > [!TIP]
+    > [!IMPORTANT]
     > In YAML, whitespace is important. This change affects all of the whitespace in your file, so we recommend that you replace the entire file with what you see here. The highlighted sections illustrate the use of stages and jobs.
 1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub.
 
@@ -169,6 +169,7 @@ To add the variable:
 1. In Azure DevOps, under **Pipelines**, select **Library**.
 
     ![](../media/5-pipelines-library.png)
+1. Select **+ Variable group**.
 1. Under **Properties**, enter **Release Pipeline** for the variable group name.
 1. Under **Variables**, select **+ Add**.
 1. Enter **WebAppName** as the name of your variable. Enter your App Service instance's name, such as **TailspinSpaceGame1234**, as its value.
