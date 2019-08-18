@@ -120,7 +120,15 @@ After the meeting ends, Andy and Mara plan next steps. They are using Azure Pipe
 
 These tools have their similarities but each also has its strengths. Some of these tools are open source, some are free, and some you have to pay for. They each also provide built-in integrations with other software tools.
 
-For example, Jenkins is open source. Jenkins has a lot of plug-ins and many companies use it. You can run Circle CI in the cloud-based or on-premises. I think we would need to customize it. GitLab is a single application for the entire software development lifecycle. It might be bigger than we want right now. My vote is to stay with Azure Pipelines.
+For example, Jenkins is open source. Jenkins has a lot of plug-ins and many companies use it. You can run Circle CI in the cloud-based or on-premises. I think we would need to customize it. GitLab is a single application for the entire software development lifecycle. It might be bigger than we want right now.
+
+The point is, there are a number of options. Here's a short video where Abel talks about using DevOps best practices to deploy code to Azure.
+
+**Ask Abel**
+
+> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Can-I-use-DevOps-best-practices-to-get-my-code-deployed-in-Azure--One-Dev-Question/player?format=ny]
+
+**Mara:** My vote is to stay with Azure Pipelines.
 
 **Andy:** I agree. Azure Pipelines has worked great for us so far and we don't have to learn another new technology.
 
