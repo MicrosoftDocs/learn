@@ -1,4 +1,6 @@
-$1000
+Suppose you need to quickly determine if a customer's purchase is eligible for a promotional discount.  If the amount of the sale is greater than $1000, then discount the purchase by $100.  If the amount is $1000 or less, only discount the sale by $50.
+
+\t
 
 \\t
 
