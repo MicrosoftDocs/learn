@@ -91,12 +91,10 @@ Identify the subtasks of *Enable secure external collaboration for your applicat
     - Test your policy with simulated sign-in through What If.
     - Sign in with the guest credentials to test MFA process.
 
-    **Knowledge check**
-
 7. **Summary**
 
     In this module, you've learned how you can enable organizations to securely collaborate with one another through Azure AD B2B. You've also learned how multi-factor authentication can help you provide an additional layer of security for your shared applications and services.
 
 ## Notes
 
-MFA in B2B - https://docs.microsoft.com/azure/active-directory/b2b/conditional-access
+- MFA in B2B - https://docs.microsoft.com/azure/active-directory/b2b/conditional-access
