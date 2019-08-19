@@ -13,4 +13,4 @@ When you create a web app from a Docker image, you configure the following prope
 - The tag. This item indicates which version of the image to use from the repository. By convention, the most recent version is given the tag *latest* when it's built.
 - Startup File. This item is the name of an executable file or a command to be run when the image is loaded. It's equivalent to the command that you can supply to Docker when running an image from the command line by using `docker run`. If you're deploying a ready-to-run, containerized app that already has the `ENTRYPOINT` and/or `COMMAND` values configured, you don't need to fill this in.
 
-After you have configured the web app, the Docker image is pulled and run as a "cold start" operation the first time a user attempts to visit the site. The app might take a few seconds to start initially, but thereafter it will be available immediately.
+After you've configured the web app, the Docker image is pulled and run as a "cold start" operation the first time a user attempts to visit the site. The app might take a few seconds to start initially, but thereafter it will be available immediately.
