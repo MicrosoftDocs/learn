@@ -1,3 +1,7 @@
+$1000
+
+\\t
+
 Now that Fabrikam has analyzed their application, they are now ready to start the refactoring process to actually move services out of their monolithic architecture into microservices. Let's modify the application to move the package processing service into a microservice.
 
 ## Refactor application
@@ -20,7 +24,7 @@ public class PackageProcessor : IPackageProcessor
     }
 ```
 
-
+This service handles all the details for scheduling a package for delivery
 
 ### Drone Delivery after
 
