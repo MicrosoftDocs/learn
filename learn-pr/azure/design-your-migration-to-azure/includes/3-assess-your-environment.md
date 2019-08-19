@@ -10,7 +10,7 @@ Azure Migrate is a free service, provided by Microsoft, that assesses on-premise
 
 Azure Migrate has limitations: currently, it assesses only VMware-based virtual machines. When you use Azure Migrate, the assessments it produces are created within a *project* that is set up in the Azure portal. Each project has a collector appliance that discovers up to 1,500 VMs. You'll need to create additional projects if your company has more than 1,500 VMs or multiple vCenter Server instances. Up to 20 projects are supported per Azure subscription.
 
-## Working with Azure Migrate
+## Work with Azure Migrate
 
 Before creating a project, you can group the VMs according to the various types of VM workloads that you have, assessing and potentially migrating them together. For example, you might group all servers that run a common application. After you've defined the groups you need, create your project.
 

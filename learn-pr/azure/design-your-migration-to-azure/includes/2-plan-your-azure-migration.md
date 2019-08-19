@@ -57,7 +57,7 @@ Several tools and services are available to help you plan and complete the four 
 
 ![Migrate stage](../media/2-migrate.png)
 
-### Deploy target cloud infrastructure
+### Deploy cloud infrastructure targets
 
 You'll need destination systems and services on Azure to migrate to. The scope of your migration has been defined as your company's current VMware machines and existing relational databases. In this scenario, you don't need to create the resources in Azure beforehand. The two tools you'll use to do the migration, Azure Site Recovery and the Azure Database Migration Service, will create the required Azure resources for you.
 
@@ -107,9 +107,9 @@ Azure Monitor can capture health and performance information from Azure VMs if y
 
 You can set up alerts based on a range of data sources, such as:
 
-- Specific metric values like CPU usage
-- Specific text in log files
-- Health metrics
+- Specific metric values like CPU usage.
+- Specific text in log files.
+- Health metrics.
 - An Autoscale metric.
 
 It's also important to have event logging and visibility into security events across your enterprise. Azure Sentinel provides security information and event-management (SIEM) capabilities, along with artificial intelligence to help you protect against, detect, and respond to security events.

@@ -15,7 +15,7 @@ You'll also learn about Azure Site Recovery, which can be used to migrate virtua
 In this module, you'll:
 
 * Discover how Azure Migrate can assess your existing workloads and plan your Azure Migration.
-* Discover how Azure Site Recovery and the Azure Database Migration Service can migrate your systems to Azure.
+* Learn how Azure Site Recovery and the Azure Database Migration Service can migrate your systems to Azure.
 
 ## Prerequisites
 

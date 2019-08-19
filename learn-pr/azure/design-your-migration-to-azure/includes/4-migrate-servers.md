@@ -38,7 +38,7 @@ For your company, you are focused on moving VMware and database workloads to Azu
 There are also several settings that must be configured for the task of migrating on-premises virtual machines to Azure:
 
 - **Set a protection goal**: For VMware environments, set the goal to on-premises migration to Azure by using the VMware vSphere Hypervisor.
-- **Set up the target environment**: Set the target environment in the Azure portal by selecting the Azure subscription and Resource Manager deployment model you wish to use. Select migrating VMware to Azure. Site Recovery will then verify that a valid network exists in Azure, to which the migrated virtual machines will connect.
+- **Set up the target environment**: Set the target environment in the Azure portal by selecting the Azure subscription and Resource Manager deployment model you want to use. Select migrating VMware to Azure. Site Recovery will then verify that a valid network exists in Azure, to which the migrated virtual machines will connect.
 - **Create a replication policy**: A replication policy contains settings such as a Recovery Point Objective (RPO) threshold. The policy is associated with the configuration server that has been deployed.
 - **Enable replication**: Enable the replication at the Recovery Service vault level.
   - **Configure the source**:
@@ -47,10 +47,10 @@ There are also several settings that must be configured for the task of migratin
     - The vSphere host is the vCenter Server on-premises.
     - The process server is the configuration server.
   - **Configure the target**: On the target selection:
-    - The target is Azure
-    - The subscription is your Azure subscription
-    - The resource group is your target resource group
-    - The network selection is the target network that you want migrated virtual machines to connect to
+    - The target is Azure.
+    - The subscription is your Azure subscription.
+    - The resource group is your target resource group.
+    - The network selection is the target network that you want migrated virtual machines to connect to.
     - The subnet is that of the target network.
   - **Select the virtual machines to migrate**.
   - **Configure the properties**: Select the domain account used by the process server to install the Mobility service on the VMware machines. You can cancel the selection for any disks that aren't to be replicated. By default, all the disks used by a virtual machine are migrated.

@@ -41,7 +41,7 @@ Both offline and online migrations have the same prerequisite tasks:
 - **Configure the network security group**: The security group associated with the new virtual network should allow inbound connectivity to the service via ports 443, 53, 9354, 445, and 12000.
 - **Configure the Windows Firewall**: You must configure the firewall to allow the Database Migration Service to connect over port 1433. You can also open port 1434 if multiple named instances on dynamic ports exist on the same server.
 - **Configure credentials**: 
-  - Add CONTROL SERVER permissions to the credentials used to connect to the source SQL Server instance. 
+  - Add CONTROL SERVER permissions to the credentials used to connect to the source SQL Server instance.
   - Add CONTROL DATABASE permissions to the credentials used to connect to the target Azure SQL Database instance.
 - **Provision your target database in Azure**: Create the database that is to be the target of the migration. Size it appropriately for the migrated workload.
 
