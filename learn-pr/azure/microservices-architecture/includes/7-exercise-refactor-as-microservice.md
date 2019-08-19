@@ -95,3 +95,7 @@ Now that our service is running on an Azure Function, we need to point our drone
         --name $APPSERVICENAME \
         --src DroneDelivery-after.zip
     ```
+
+## Test performance of new architecture
+
+Now that we have moved the problematic service to an microservice running on an Azure Function, let's see how this impacted application performance.
