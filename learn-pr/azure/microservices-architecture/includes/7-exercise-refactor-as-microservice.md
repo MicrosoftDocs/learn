@@ -1,9 +1,3 @@
-Suppose you need to quickly determine if a customer's purchase is eligible for a promotional discount.  If the amount of the sale is greater than $1000, then discount the purchase by $100.  If the amount is $1000 or less, only discount the sale by $50.
-
-\t
-
-\\t
-
 Now that Fabrikam has analyzed their application, they are now ready to start the refactoring process to actually move services out of their monolithic architecture into microservices. Let's modify the application to move the package processing service into a microservice.
 
 ## Refactor application
