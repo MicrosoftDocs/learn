@@ -8,8 +8,8 @@ In this module, you'll see how to configure backup and long-term data retention 
 
 At the end of this module, you will be able to:
 
-1. Configure backup and retention of a single Azure SQL database.
-2. Restore a single Azure SQL database.
+- Configure backup and retention of a single Azure SQL database.
+- Restore a single Azure SQL database.
 
 ## Prerequisites
 
