@@ -11,13 +11,13 @@ Clone the lab archives that provide sample notebooks with detailed steps for bas
 1. In the left pane, select **Workspace**, select **Users**, and then select your username (the entry with the house icon).
 1. In the pane that appears, select the downward-pointing chevron next to your name, and then select **Import**.
 
- ![A screenshot showing the menu option to import the archive](../media/import-archive.png)
+    ![A screenshot showing the menu option to import the archive](../media/import-archive.png)
 
 1. In the **Import Notebooks** pane, select **URL**, and paste in the following URL:
 
- ```
- https://github.com/MicrosoftDocs/mslearn-model-training-selection-evaluation/blob/master/DBC/03-model-training-selection-evaluation.dbc?raw=true
- ```
+    ```
+    https://github.com/MicrosoftDocs/mslearn-model-training-selection-evaluation/blob/master/DBC/03-model-training-selection-evaluation.dbc?raw=true
+    ```
 
 1. Select **Import**.
 
