@@ -4,6 +4,71 @@ Now that Fabrikam has analyzed their application, they are now ready to start th
 
 Before we deploy the updated application, let's take a look at how it was updated. The monolithic app has a service to process packages, *PackageProcessor.cs*. The Fabrikam team pulled this out into the microservice.
 
+### Drone Delivery before
+
+In PackageProcessor.cs there is a PackageProcessor class that does the call to the package processing natively in the monolithic app. 
+
+```csharp
+public class PackageProcessor : IPackageProcessor
+    {
+        public Task<PackageGen> CreatePackageAsync(PackageInfo packageInfo)
+        {
+            //Uses common data store e.g. SQL Azure tables
+            Utility.DoWork(100);
+            return Task.FromResult(new PackageGen { Id = packageInfo.PackageId });
+        }
+    }
+```
+
+
+
+### Drone Delivery after
+
+In the after, the PackageProcessor has been changed to a PackageServiceCaller. It still implements the IPackageProcessor interface, but instead makes an HTTP call to the microservice. 
+
+```csharp
+public class PackageServiceCaller : IPackageProcessor
+    {
+        private readonly HttpClient httpClient;
+
+        public static string FunctionCode { get; set; }
+
+        public PackageServiceCaller(HttpClient httpClient)
+        {
+            this.httpClient = httpClient;
+        }
+
+        public async Task<PackageGen> CreatePackageAsync(PackageInfo packageInfo)
+        {
+            var result = await httpClient.PutAsJsonAsync($"{packageInfo.PackageId}?code={FunctionCode}", packageInfo);
+            result.EnsureSuccessStatusCode();
+
+            return new PackageGen { Id = packageInfo.PackageId };
+        }
+    }
+```
+
+The microservice will be deployed on an Azure Function and contains the following code.
+
+```csharp
+public static class PackageServiceFunction
+    {
+        [FunctionName("PackageServiceFunction")]
+        public static Task<IActionResult> Run(
+            [HttpTrigger(AuthorizationLevel.Function, "put", Route = "packages/{id}")] HttpRequest req,
+            string id, ILogger log)
+        {
+            log.LogInformation("C# HTTP trigger function processed a request.");
+
+            //Uses common data store e.g. SQL Azure tables
+            Utility.DoWork(100);
+            return Task.FromResult((IActionResult)new CreatedResult("http://example.com", null));
+        }
+    }
+```
+
+By putting this code on an Azure Function, this service can scale independently.
+
 Now let's redeploy the application. We'll deploy our refactored service on Azure Functions first, then deploy the refactored application on App Service, and point it to the function.
 
 ## Deploy Azure Function
