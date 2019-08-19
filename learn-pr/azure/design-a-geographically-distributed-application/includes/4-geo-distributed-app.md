@@ -1,29 +1,52 @@
-Consider carefully how each component of your app behaves across locations and when there's a failure.
+When your networking components route requests to multiple regions to mitigate the effects of a regional outage, you must design application services that can respond to those requests in both primary and standby regions.
 
-To make the shipping application architecture fault-tolerant and resilient to the failure of an entire region, you need to explicitly duplicate certain components in a paired region. This duplication includes Azure App Service, the Function App, Redis Cache, and the queue. You'll have two of each of these services in respective regions.
+Suppose you've decided to use Azure Front Door in priority mode to send requests to the Azure App Service in East US. When a regional failure occurs and East US is not available, you want to send those requests to West US instead. Now, you want to understand how to configure resources in West US to support these failovers. You want to design all application services in West US.
 
-Here, you'll learn how to use resource groups and Azure Storage accounts in a distributed app.
+Here, you'll learn about Active Directory, static content storage, web apps, web APIs, queues, Azure functions, and data caches in a multi-region architecture.
 
-## Using resource groups
+<!-- TODO: The design team should recreate this diagram in MSLearn style -->
 
-For ease of administration and management, you'll group resources together in the most logical resource group combinations. All of the resources that share the same lifecycle should be grouped together. For example, you should place the components of the shipping company's architecture for the primary region in one resource group. The components of the secondary region can go in another resource group. Traffic Manager, which sits outside and orchestrates between the regions, should have its own independent resource group. In this way, all the components that belong together are managed and administered using the same tools.
+![Multi-region architecture application services](../media/3-multi-region-web-app-services.png)
 
-Other services are less tied to a single region. For example:
+## Azure Active Directory
 
-- **Azure DNS**, which provides domain name resolution. You looked at this area in the last unit.
-- **Azure AD**, which will provide authentication services for the app.
-- **The Azure CDN**, which serves static content from locations closest to the user and is present in multiple point-of-presence (POP) locations. There are more POPs than Azure has regions.
+In your shipments tracking portal, users can track deliver without setting up a user account by entering a tracking number. However, regular users can register for membership to access advanced features, such as delivery promptness and other statistics. User accounts for this functionality, and also for system administrators, are stored in Azure Active Directory (AD).
 
-<!-- todo: DIAGRAM based on the one here https://docs.microsoft.com/en-us/azure/cdn/cdn-overview but clearly showing POPs in more (or different) areas than there are Azure regions. This will illustrate the point that a number of Azure services are highly multiregional out of the box-->
+Azure AD is designed as a global system by default. As such it's not vulnerable to regional failures and you don't have to modify this component of the system.
 
-## Azure Storage
+## Azure Blob Storage
 
-The best approach for Azure Storage is to use read-access geo-redundant storage (RA-GRS). Data is replicated to the secondary paired region and, if there's a regional outage, there will be read-only access to data in the secondary region.
+Static content, such as images and videos, are stored in Azure Storage accounts as Binary Large Objects (Blobs) and served to users through the Azure CDN. 
 
-You'll have some important data loss possibilities when a problem affects Azure Storage in a region. RA-GRS also provides for data being written to a secondary region but this replication happens asynchronously. If you've a problem in Azure Storage, it might be that certain writes aren't replicated to the secondary region, so there's some data loss. 
+In your original architecture, the storage account is contained in a single region, because you chose to use Locally Redundant Storage (LRS), where data is replicated only within a single datacenter. If there is a regional outage, the account is unavailable but any static content that has already been cached by the CDN remains available to users. The same is true of Zone Redundant Storage (ZRS) - although data is relicated to different datacenters, all those datacenters are in the same region, so the storage account is affected by regional outages.
 
-The decision about whether to do a full failover to the secondary region is taken by the Azure Storage team rather than at a user's discretion. There could be a period of time when you only have read access to the secondary region, and no write access. As you've seen throughout this module, your app needs to be robust against the possibility of momentary failures that aren't attributable to the failure of a region and therefore won't trigger a full failover. You can build some mitigations into your app to guard against these kinds of failures. The application should already be designed to retry writes in case there's a failure. 
+There's chance that, during the outage, a user might request a static file that is not yet in the CDN cache. This would result in a graphic or video that can't be displayed. If you want to eliminate this possibility, you can replicate the storage account to multiple regions by choosing a geo-redundant storage option. You can choose a read-only replication option if you can support the inability to add static content during a regional outage. Choose from Read-Access Geo-Redundant Storage (RA-GRS) or Read-Acces Geo-Zone-Redundant Storage (RA-GZRS) based on your budget and the percentage up time that you need.
 
-These retry attempts need to be intelligent. If a given service is experiencing problems, there's no point hammering it, so retries should be exponentially spaced out. After a sufficiently long period of retries without success, it might be worth manually switching to a queue in another region. This action would collect writes while the primary region is experiencing problems – but not so severe as to have triggered a full failover. 
+## Azure App Service and Azure Function Apps
 
-Other possible mitigations include providing read-only access to the system for a period, and deliberately reducing the available functionality. For example, the UI to create and manage shipments could be grayed out while the application subsystems are experiencing problems.
+The Azure App Service hosts a web app that implements the user interface of the shipments tracking portal for web browsers. It also hosts a web API that mobile apps can call to find out about shipments. Background tasks run as Azure Function apps. These components have been written by your developers by using the ASP.NET framework. 
+
+Each Azure App Service is localized to a single Azure region. To support the new multi-region architecture, create a second App Service in the secondary region (West US) and deploy the ASP.NET project to it. Configure the Azure Front Door priority routing mode to send requests to this instance, when the primary region is unavailable.
+
+To ensure that failover is as smooth as possible, make sure that the ASP.NET application does not store any session state information in memory. For example, if your code stored a list of the users shipments in memory, then this list would be lost if a failover occurred and may affect users. Talk to your developers about this issue. 
+
+If no session state is stored, each web request is handled independently as it arrives, and two subsequent requests can be handled by different instances with no impact on users. If a failover occurs in the middle of a user's session, they shouldn't notice.
+
+As for App Services, create a separate instance of the Azure Function in the secondary region and deploy the same custom code to it as runs in the primary region. 
+
+> [!IMPORTANT]
+> When you deploy an update to the custom code in the App Service or Function App service, remember to distribute it to all the instances of the App Service. If you want to automate this process, Azure DevOps has tools that can help.
+
+## Azure Storage Queues
+
+In your original single-region architecture, you used a queue in an Azure Storage account to manage communications between the App Service and the function app. When the web app or the web API needs to run a background task, it places a message with all the required information in the queue. The function app monitors the queue for new messages, and executes the background task by running the necessary queries against the data stores. 
+
+When you use a queue like this, you can manage high demand in an orderly way. When there are many background tasks to run, the queue may build up but tasks will not be dropped by an over-utilized function app. The function apps can work through the queue and reduce its size when demand falls. If demand persists, you can increase the number of instances of the function app. 
+
+For the multi-region version of the shipments tracking portal, you must make sure that queue items are not lost when failover occurs. Because the queue is in Azure Storage, you can utlitize a redandancy option as you did for the static content blob storage. However, you can't use a read-access redundancy option, because the App Service must add items to the queue, and the function app must remove completed items from the queue. Use Geo-Redundant Storage (GRS) or Geo-Zone-Redundant Storage (GZRS) instead. 
+
+## Azure Redis Cache
+
+You're using Azure Redis Cache to maximize the performance of data storage. When the web app, web API, or function apps query the databases, they send the query through Redis, which caches the results. Subsequent queries for similar data can be satisfied from memory in the Redis cache, and do not need to run a query on the database server.
+
+For the multi-region architecture, create a Redis Cache instance in both primary and standby regions. Remember that, when a failover occurs, the Redis Cache in the standby region is likely to be empty. That won't cause any errors, but performance may temporarily drop, as data fills the new cache. 

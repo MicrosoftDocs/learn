@@ -4,6 +4,10 @@ You've decided to rearchitect your shipping portal in Azure to reduce its vulner
 
 Here, you'll learn how Azure DNS, Traffic Manager, Front Door, and Azure CDN can support the shipping company's app architecture.
 
+<!-- TODO: The design team should recreate this diagram in MSLearn style -->
+
+![Multi-region distributed application networking components](../media/3-multi-region-web-app-networking.png)
+
 ## Azure DNS
 
 You'll host the domains and name records needed by your app by using Azure DNS, a first-party Azure service provides name resolution entirely through the Azure infrastructure. Because it's inherently multi-regional, the SLA for the Azure DNS guarantees that valid DNS requests receive a response from at least one Azure DNS name server all the time, even when your primary region is unavailable.
