@@ -1,6 +1,6 @@
 Diagnosing and troubleshooting issues for an application hosted in a cloud environment can be more complicated than in traditional environments. To support these types of applications successfully, you should monitor them and understand how to diagnose and troubleshoot any aspects of them and their dependent technologies. A combination of tools and logging can be used to identify issues. 
 
-The new Automobile Distribution customer portal uses Azure Storage to store uploaded files. As there are some concerns about the performance of storing files in the portal, the first step to diagnosing any issues is knowing which troubleshooting tools are available.
+The new Automobile Distribution customer portal uses Azure Storage to store uploaded files. As there are some concerns about the performance of storing files in the portal, the first step to diagnosing any issues is knowing which troubleshooting tools you can use.
 
 In this unit, you'll learn about some of the different tools you can use to analyze issues with Azure Storage.
 
@@ -17,7 +17,7 @@ The Azure portal gives you a graphical way to view and monitor storage performan
 - Assess how your applications are doing over time.
 - Configure alerts to notify you of any behavior that is out of the ordinary.
 
-You monitor the performance of a storage account using the **Metrics (classic)** tab on the page for the storage account in the Azure portal. The image below shows an example, displaying the ingress and egress rates, end-to-end latency, and success rate for requests sent to blob storage in a storage account:
+You can monitor the performance of a storage account using the **Overview** tab on the storage account page. Scroll down to the monitoring section and choose what to show data for. The image below shows an example the ingress, egress, avergae latency, and erquest breakdown for blob storage in a storage account:
 
 ![Screenshot of the Metrics page for a storage account in the Azure portal](../media/2-block-blob-metrics.png)
 
