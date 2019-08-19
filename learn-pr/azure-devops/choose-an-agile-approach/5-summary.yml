@@ -3,7 +3,7 @@ uid: learn.azdo.choose-an-agile-approach.5-summary
 title: Summary
 metadata:
   title: Summary
-  description: See how to continue your journey by configuring build pipelines that continuously build, test, and verify your applications.
+  description: Learn how to continue your journey by configuring build pipelines that continuously build, test, and verify your applications.
   ms.date: 06/21/2019
   author: tpetchel
   ms.author: thpetche

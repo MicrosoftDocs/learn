@@ -117,25 +117,25 @@ Now the API is secured with a key, we can test the API with and without a key:
 
 1. To make a request without passing a subscription key, in the Cloud Shell, copy and paste the following cURL command, and substitute the name of the API gateway that you created above:
 
-    ```bash
-    curl -X GET https://[Name Of Gateway].azure-api.net/api/Weather/53/-1
-    ```
-
-    This command should return a 401 Access Denied error, similar to the one below:
-
-    ```json
-    { "statusCode": 401, "message": "Access denied due to missing subscription key. Make sure to include subscription key when making requests to an API." }
-    ```
+   ```bash
+   curl -X GET https://[Name Of Gateway].azure-api.net/api/Weather/53/-1
+   ```
+   
+   This command should return a 401 Access Denied error, similar to the one below:
+   
+   ```json
+   { "statusCode": 401, "message": "Access denied due to missing subscription key. Make sure to include subscription key when making requests to an API." }
+   ```
 
 1. Finally, add the subscription key to the request and rerun it. Remember to substitute the name of the API gateway:
-
-    ```Azure Cloud Shell
-    curl -X GET https://[Name Of Gateway].azure-api.net/api/Weather/53/-1 \
-      -H 'Ocp-Apim-Subscription-Key: [Subscription Key]'
-    ```
-
-    This command should result in a successful response similar to the one below:
-
-    ```json
-    {"mainOutlook":{"temperature":32,"humidity":34},"wind":{"speed":11,"direction":239.0},"date":"2019-05-16T00:00:00+00:00","latitude":53.0,"longitude":-1.0}
-    ```
+   
+   ```Azure Cloud Shell
+   curl -X GET https://[Name Of Gateway].azure-api.net/api/Weather/53/-1 \
+     -H 'Ocp-Apim-Subscription-Key: [Subscription Key]'
+   ```
+   
+   This command should result in a successful response similar to the one below:
+   
+   ```json
+   {"mainOutlook":{"temperature":32,"humidity":34},"wind":{"speed":11,"direction":239.0},"date":"2019-05-16T00:00:00+00:00","latitude":53.0,"longitude":-1.0}
+   ```

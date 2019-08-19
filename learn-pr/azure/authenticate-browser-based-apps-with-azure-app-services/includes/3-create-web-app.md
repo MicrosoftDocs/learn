@@ -21,8 +21,8 @@ Start by creating an App Service Plan, ready for your web apps.
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)] 
 
-1. Leave **Pricing tier**, as its default value. 
-1. In the **New App Service Plan** pane, select **Review and Create**, and then select **Create**.
+1. Under **Pricing tier**, select **Change size**. In the Spec Picker window that appears, select the **Dev / Test** tab, select **F1**, then select **Apply**.
+1. Select **Review and Create**, and then select **Create**.
 1. Wait until the App Service plan has deployed before continuing with the exercise. You can verify status of the deployment through the notification bell icon on the top menu.
 
 ### Create a Web App

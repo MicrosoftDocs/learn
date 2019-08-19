@@ -16,8 +16,8 @@ In this unit, you'll create a new web app by using the Docker image stored in Az
 
     | Property | Value |
     |---|---|
-    | Subscription | **Concierge Subscription** |
-    | Resource Group | Use the existing resource group **<rgn>[Sandbox resource group]</rgn>.** |
+    | Subscription | Select your default Azure subscription in which you are allowed to create and manage resources. |
+    | Resource Group | Reuse the existing resource group **learn-deploy-container-acr-rg**. |
     | Name | Enter a unique name and make a note of it for later. |
     | Publish | **Docker Image** |
     | OS | **Linux** |

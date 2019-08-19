@@ -64,7 +64,7 @@ public class Program
 3. Deploy the project to a new web app. The web app name must be unique in Azure App Service, so add your name in front of `HotelApp` when you specify a name for the new web app `[<yourname>HotelApp]`:
 
 ```bash
-az webapp up --name [<yourname>HotelApp] --resource-group <rgn>[Sandbox resource group]</rgn> --sku S1
+az webapp up --name [<yourname>HotelApp] --resource-group <rgn>[Sandbox resource group]</rgn> --sku F1
 ```
 
 You will need to wait till the web app creation process is complete before clicking on the **Check your work** button.

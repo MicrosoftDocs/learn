@@ -64,5 +64,3 @@ The following factors will influence your choice:
 - Integrations: You want to integrate the maintenance workflow with the Logic App that you build for the bike booking and hire process in the previous unit. Although it is possible to call a WebJob from a Logic App, the integration between Logic Apps and Functions is closer. For example, you can more easily control your call to a Function from the Logic Apps designer.
 
 For these reasons, we'll select Azure Function to manage your bike maintenance business process.
-
-<!-- TODO: A video that illustrates this the decision flow, applied to this specific scenario, may help to engage the student. -->

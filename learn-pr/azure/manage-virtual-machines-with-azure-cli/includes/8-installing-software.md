@@ -20,13 +20,13 @@ exit
 
 ## Retrieve our default page
 
-1. In Azure Cloud Shell, use `curl` to read the default page from your Linux web server. Alternatively, you can open a new browser tab and browse to the public IP address.
+1. In Azure Cloud Shell, use `curl` to read the default page from your Linux web server using the following command, replacing `{public-ip}` with the public IP you found previously. (Alternatively, you can open a new browser tab and try to browse to the public IP address.)
 
 ```azurecli
-curl 40.83.165.85
+curl {public-ip}
 ```
 
-It will fail because the Linux virtual machine doesn't expose port 80 (`http`) through the built-in firewall. Luckily, the Azure CLI has a command for that: `vm open-port`. 
+This command will fail because the Linux virtual machine doesn't expose port 80 (`http`) through the built-in firewall. Luckily, the Azure CLI has a command for that: `vm open-port`. 
 
 1. Type the following into Cloud Shell to open port 80:
 

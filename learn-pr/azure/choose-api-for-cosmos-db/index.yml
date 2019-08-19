@@ -20,7 +20,7 @@ abstract: |
   -	Choose the appropriate API for your Azure Cosmos DB account
 prerequisites: |
   - Familiarity with database concepts
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/choose-the-appropriate-api-for-cosmos-db-storage.svg
 levels:
 - beginner
 roles:
