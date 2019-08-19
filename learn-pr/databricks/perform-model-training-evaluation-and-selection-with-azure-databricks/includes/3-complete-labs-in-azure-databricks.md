@@ -33,15 +33,15 @@ The notebook uses the *scikit-learn: Machine Learning in Python* library. You ne
 
 1. Select your cluster and then select the Libraries tab. This tab gives you the option to uninstall or install a new library. Click the **Install New** button.
 
-     ![A screenshot showing the menu option to select the Databricks cluster](../media/3-configure-cluster-step2.png)
+     ![A screenshot showing the menu option to install Databricks cluster libraries](../media/3-configure-cluster-step2.png)
 
 1. In the dialog presented, select the **PyPI** Library Source and enter the library name and the version number of the library. Enter **scikit-learn==0.19.1** as the Package name to install *scikit-learn version 0.19.1*. Click **Install** to install the specified library.
 
-    ![A screenshot showing the menu option to select the Databricks cluster](../media/3-configure-cluster-step3.png)
+    ![A screenshot showing how to specify the Databricks cluster library to install](../media/3-configure-cluster-step3.png)
 
 1. The library and version number will now show as one of the install libraries on your cluster once the library is installed.
 
-    ![A screenshot showing the menu option to select the Databricks cluster](../media/3-configure-cluster-final.png)
+    ![A screenshot showing the installed Databricks cluster library](../media/3-configure-cluster-final.png)
 
 ## Complete the following notebooks
 
