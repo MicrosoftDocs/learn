@@ -58,16 +58,15 @@ Create a JavaScript web application with Express.js and VS Code and publish it t
         - Why would you use a template engine instead of HTML directly?
 
 2. **Create an Express.js web application with Visual Studio Code**
-    - What is a terminal?
-        - Cover integrated terminal in Visual Studio Code
-    - What is Node.js?
+    - What is Node.js (brief overview only)?
     - Considerations for installing Node.js
         - How to install Node.js
     - Considerations for installing Express.js
         - How to install Express.JS
         - What does the Express Generator do?
-    - Structure of an Express.js application
-    - Deploy your Express.js application to test locally
+    - Creating an Express.js application using Visual Studio Code
+        - Structure of an Express.js application
+        - Deploy your Express.js application to test locally
 
 3. **Exercise - Create an Express.js web application with Visual Studio Code**
     - Set up the integrated terminal in Visual Studio Code
