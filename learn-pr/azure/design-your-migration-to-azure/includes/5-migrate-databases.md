@@ -18,8 +18,8 @@ Azure Database Migration Service has two pricing tiers:
 Your relational database can be migrated to a number of different destinations in Azure:
 
 - **Single Azure SQL Database instance**: A fully managed, single SQL database.
-- **Azure SQL Database managed instance**: 100% compatible with SQL Server Enterprise Edition Database Engine, but missing some minimal SQL Server features.
-- **SQL Server on Azure VM**: An infrastructure-as-a-service (IaaS) offering that runs a full version of SQL Server and supports all the features of SQL Server.
+- **Azure SQL Database managed instance**: 100% compatible with SQL Server Enterprise Edition Database Engine, but missing some minor SQL Server features.
+- **SQL Server on Azure Virtual Machines**: An infrastructure-as-a-service (IaaS) offering that runs a full version of SQL Server and supports all the features of SQL Server.
 - **Azure Database for MySQL**: An Azure database service based on the MySQL Community Edition, versions 5.6 and 5.7.
 - **Azure Database for PostgresSQL**: An Azure database service based on the community version of the PostgreSQL database engine.
 - **Azure Cosmos DB**: A globally distributed, multi-model, fully managed database service.
@@ -43,7 +43,7 @@ Both offline and online migrations have the same prerequisite tasks:
 - **Configure credentials**: 
   - Add CONTROL SERVER permissions to the credentials used to connect to the source SQL Server instance. 
   - Add CONTROL DATABASE permissions to the credentials used to connect to the target Azure SQL Database instance.
-- **Provision your target database in Azure**: Create the database that is to be the target of the migration. It should be sized appropriately for the migrated workload.
+- **Provision your target database in Azure**: Create the database that is to be the target of the migration. Size it appropriately for the migrated workload.
 
 ### Assess the on-premises databases
 
@@ -63,7 +63,7 @@ To use the Data Migration Assistant to migrate the schema, create a new **Migrat
 
 ![Screenshot of the Data Migration Assistant exporting a schema](../media/5-dma-migrate-schema.png)
 
-### Migrate your data with DMS
+### Migrate your data with Database Migration Service
 
 In the Azure portal, follow these steps to create a instance of Azure Database Migration Service, and then to run it to migrate the data in your databases:
 
@@ -76,4 +76,4 @@ In the Azure portal, follow these steps to create a instance of Azure Database M
     1. Track the progress until the process shows as completed.
 1. After all the required databases are migrated, check them to make sure they're working.
 
-When these steps are complete, your schema and data will have been migrated to the Azure SQL Database instance. You can then shut down and decommission your on-premises databases and servers.
+When these steps are complete, your schema and data have been migrated to the Azure SQL Database instance. You can then shut down and decommission your on-premises databases and servers.
