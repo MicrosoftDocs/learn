@@ -94,7 +94,7 @@ In this step, you're going to use Azure CLI commands to create a Node.js Web app
 1. Run the following commands in the Cloud Shell to deploy the web app.
 
    ```azurecli
-   az appservice plan create --name $appPlan --resource-group $resourceGroup --location $appLocation --sku B1 --is-linux
+   az appservice plan create --name $appPlan --resource-group $resourceGroup --location $appLocation --sku FREE --is-linux
    az webapp create --name $appName --resource-group $resourceGroup --plan $appPlan --runtime "node|6.10" --deployment-source-url $gitRepo
    ```
 
