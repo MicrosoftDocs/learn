@@ -33,55 +33,81 @@ Create a JavaScript web application with Express.js and VS Code and publish it t
 ## Chunk your content into subtasks
 
 | Subtask                                           | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet?  | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
-|---------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------|---------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| Create an Express.js web application in VS Code   | Create an Express.js web application in VS Code                   | Exercise                                                 | Create an Express.js web application in VS Code   | Yes                                                                                                                            |
-| Publish the app to Azure App Service              | Publish the app to Azure App Service                              | Exercise                                                 | Publish the app to Azure App Service              | Yes                                                                                                                            |
-| Update the app in VS Code and publish the updates | Update the app in VS Code and publish the updates                 | Exercise                                                 | Update the app in VS Code and publish the updates | Yes                                                                                                                            |
+| ------------------------------------------------- | ------------------------------------------------------------ | -------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------------------ |
+| Create an Express.js web application in VS Code   | Create an Express.js web application in VS Code              | Exercise                                                 | Create an Express.js web application in VS Code   | Yes                                                          |
+| Publish the app to Azure App Service              | Publish the app to Azure App Service                         | Exercise                                                 | Publish the app to Azure App Service              | Yes                                                          |
+| Update the app in VS Code and publish the updates | Update the app in VS Code and publish the updates            | Exercise                                                 | Update the app in VS Code and publish the updates | Yes                                                      |
 
 ## Outline the units
 
-*Add more units as needed for your content*
-
 1. **Introduction**
 
-    Provide a scenario of a real-world job-task that shows how the technology is used in practice (from the module proposal):
+    You work as a web developer for a video game studio. Your organization is launching a brand new video game they have been developing in secret. This year's biggest video game expo is happening in just a few weeks. The studio wants a brand new website to be ready for the launch as soon as possible to maximize exposure. The site must have a live countdown to the date of the studio's on-stage announcement where they'll finally reveal their new video game. The studio isn't sure about the exact details they want to put up on the website, but they'll know closer to the day of their announcement. You must be able to easily and rapidly update the site with the details when the time comes.
 
-    *Add your scenario [(Guidance)](id-guidance-scenarios.md)*
+1. **What is Express.js?**
+    - What is Express.js?
+      - Explain the purpose and structure of Express.js. Cover the following points:
+        - Use routing to respond to clients
+        - Use middleware execute code against requests
+        - Use template engines to serve static files
+    - Why use Express.js and Visual Studio Code to make an Azure web app?
 
-1. **Learning-content unit title**
+    **Knowledge Check**
+        - You need to run a piece of code every time a client requests to view a webpage. What kind of request method route do you need to define in your routing?
+        - You need to be able to add a timestamp to each response that shows when the client sent the app a request. What will you implement to achieve this?
+        - Why would you use a template engine instead of HTML directly?
 
-    List the content that will enable the learner to *subtask*:
+2. **Create an Express.js web application with Visual Studio Code**
+    - What is a terminal?
+        - Cover integrated terminal in Visual Studio Code
+    - What is Node.js?
+    - Considerations for installing Node.js
+        - How to install Node.js
+    - Considerations for installing Express.js
+        - How to install Express.JS
+        - What does the Express Generator do?
+    - Structure of an Express.js application
+    - Deploy your Express.js application to test locally
 
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+3. **Exercise - Create an Express.js web application with Visual Studio Code**
+    - Set up the integrated terminal in Visual Studio Code
+    - Install Node.js
+    - Install the Express Generator
+    - Scaffold an Express.js application
+    - Set up a template engine for Express.js
+    - Use a route with a template to render a countdown
+    - Deploy your application
 
-1. **Knowledge check**
+4. **Publish your application to Azure App Service with Visual Studio Code**
+    - What is Azure App Service?
+        - What is an Azure App Service plan?
+        - Options for creating an Azure App Service plan
+    - Why use Azure App Service for your application?
+    - Describe the deployment process through Visual Studio Code
+    - Describe the debugging process through Visual Studio Code
 
-    What types of questions will test *learning objective*?
+5. **Exercise -  Publish your application to Azure App Service with Visual Studio Code**
+    - Install the Azure App Service extension
+    - Sign in to your Azure account through the Azure App Service explorer
+    - Deploy a new Azure App Service Web App using the Azure App Service extension
+    - Browse your web app
+    - Debug your web app
 
-    - Question type
-    - Question type
+6. **Update the app in Visual Studio Code and publish the updates**
+    - What are a production and test environments?
+    - Deployment slots
+        - Make changes for the appropriate slot (production or testing)
+        - Swap and rollback deployment slots
+        - Auto swap for continuous development
+    - Push updates with Visual Studio Code
+7. **Exercise - Update the app in Visual Studio Code and publish the updates**
+    - Make changes to your web app using Visual Studio Code
+    - Push your changes to the Azure App Service
 
-1. **Exercise - exercise unit title**
+8. **Summary**
 
-    List the steps which apply the learning content from previous unit:
+    Your organization needed you to rapidly create a website for their upcoming video game event. You needed to be able to easily and rapidly make changes to the site whenever changes were required.  You decided to create an Express.js application using Visual Studio Code and publish your application to the Azure App Service for hosting. The Azure App Service also made it possible for you to easily publish any updates to your website.
 
-    1. Step
-    1. Step
-    1. Step
-
-1. **Summary**
-
-    How did you solve the problem in the initial scenario with the knowledge learned in the module? 
-    
-    *Add your summary [(Guidance)](id-guidance-module-summary-unit.md)*
 
 ## Notes
 
