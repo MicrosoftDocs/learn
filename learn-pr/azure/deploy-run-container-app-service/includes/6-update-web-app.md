@@ -4,7 +4,7 @@ In the example scenario, the development team adds new features and enhancements
 
 In this unit, you'll configure the continuous deployment of a web app that uses an image in Azure Container Registry.
 
-## What is a webhook
+## What is a webhook?
 
 Azure App Service supports continuous deployment using *webhooks*. A webhook is a service offered by Azure Container Registry. Services and applications can subscribe to the webhook to receive notifications about updates to images in the registry. A web app that uses App Service can subscribe to an Azure Container Registry webhook to receive notifications about updates to the image that contains the web app. When the image is updated, and App Service receives a notification, your app automatically restarts the site and pulls the latest version of the image.
 
