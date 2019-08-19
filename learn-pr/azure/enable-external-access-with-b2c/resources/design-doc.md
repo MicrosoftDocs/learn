@@ -116,4 +116,4 @@ Identify the subtasks of *Enable secure external user access for your applicatio
 
 ## Notes
 
-    MFA in B2C - https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-reference-mfa
+- MFA in B2C - https://docs.microsoft.com/azure/active-directory-b2c/active-directory-b2c-reference-mfa
