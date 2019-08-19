@@ -29,13 +29,13 @@ There are several other tools you can use to transfer data across the network.
 
 ### Azure Storage Explorer
 
-Azure Storage Explorer is a free, downloadable application that you can run on Windows, Mac, or Linux. It provides a graphical user interface (GUI) that you can use to explore blobs, files, queues, and tables in Azure Storage accounts. If you transfer only a few files at a time and you don't need to automate transfers, Storage Explorer is an ideal solution.
+Azure Storage Explorer is a free, downloadable application that you can run on Windows, Mac, or Linux. It provides a graphical user interface (GUI) that you can use to explore blobs, files, queues, and tables in Azure storage accounts. If you transfer only a few files at a time and you don't need to automate transfers, Storage Explorer is an ideal solution.
 
 If you don't want to install an application, but you have a browser, you can use the Storage Explorer page in the Azure portal to transfer files.
 
 ### Azure Data Factory
 
-Azure Data Factory is a service that enables you to organize, move, and transform large quantities of data from many different sources. In Data Factory, you create data pipelines that ingest data from relational databases, NoSQL databases, and other systems. You can use Azure Machine Learning, Hadoop, Spark, and other services to process and transform that data. Then, at the end of the pipeline, you can publish the transformed data to Azure SQL Data Warehouse, Azure SQL Database, CosmosDB, and Azure Storage.
+Azure Data Factory is a service that enables you to organize, move, and transform large quantities of data from many different sources. In Data Factory, you create data pipelines that ingest data from relational databases, NoSQL databases, and other systems. You can use Azure Machine Learning, Hadoop, Spark, and other services to process and transform that data. Then, at the end of the pipeline, you can publish the transformed data to Azure SQL Data Warehouse, Azure SQL Database, Azure Cosmos DB, and Azure Storage.
 
 Use this service, if you have complex data transformation needs but don't want to write scripts or compile code.
 
@@ -43,9 +43,9 @@ Use this service, if you have complex data transformation needs but don't want t
 
 Microsoft provides a range of optimized command-line tools, which you can call with individual commands or assemble into scripts, and which can move data into Azure. These tools include:
 
-- **AzCopy.** You can call this command-line program from any script to transfer blobs or files to an Azure Storage account. 
-- **Azure PowerShell.** PowerShell is a scripting interface and language designed to help administrators automate complex tasks by running commands called **cmdlets**. The Azure PowerShell module provides a range of cmdlets to work with Azure. These include cmdlets that you can use to upload data into Azure Storage accounts, Azure SQL Database, CosmosDB, and other destinations. For example, to upload a file to an Azure Storage blob, use the `Set-AzStorageBlobContent` cmdlet.
-- **Azure CLI.** Azure CLI is a command-line tool that you can call from PowerShell and Bash scripts to work with Azure. It includes options that can move data into Azure locations. For example, use the command `az storage blob upload` to upload a file to an Azure Storage blob.
+- **AzCopy.** You can call this command-line program from any script to transfer blobs or files to an Azure storage account. 
+- **Azure PowerShell.** PowerShell is a scripting interface and language designed to help administrators automate complex tasks by running commands called **cmdlets**. The Azure PowerShell module provides a range of cmdlets to work with Azure. These include cmdlets that you can use to upload data into Azure storage accounts, Azure SQL Database, Azure Cosmos DB, and other destinations. For example, to upload a file to an Azure Storage blob, use the `Set-AzStorageBlobContent` cmdlet.
+- **Azure CLI.** The Azure CLI is a command-line tool that you can call from PowerShell and Bash scripts to work with Azure. It includes options that can move data into Azure locations. For example, use the command `az storage blob upload` to upload a file to an Azure Storage blob.
 
 Scripting tools are easy for administrators and non-developers to use. If you have people with developer skills who are able to write compiled code, you can consider using programming languages to orchestrate data transfer into Azure. Your code must call the Azure Storage Representational State Transfer (REST) application programming interfaces (APIs). The REST APIs are a set of web services that you can call from many different programming languages. Developers can use .NET languages, Java, Python, Node.js, C++, PHP, among other languages, to call these APIs. They'll choose the one they're most familiar with.
 

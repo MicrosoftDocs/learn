@@ -62,7 +62,7 @@ For your vehicle data, you'd follow these steps to order a Data Box Disk to impo
 
 1. **Ship device to Azure datacenter**
 
-   Ship the disks back to Azure, using the provided shipping label for your regional carrier. When the device is received by the Azure datacenter, the data is copied to your Azure Storage account.
+   Ship the disks back to Azure, using the provided shipping label for your regional carrier. When the device is received by the Azure datacenter, the data is copied to your Azure storage account.
 1. **View data in Azure Storage**
 
    Check for any errors, and verify that the data has been copied to your storage account.
