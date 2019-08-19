@@ -15,9 +15,9 @@ In this unit, you'll configure continuous deployment for the web app and create 
 
     ![Screenshot that shows the webhook for Container Registry](../media/7-acr-webhook.png)
 
-::: zone pivot="csharp"
-  
 ## Update the web app and test the webhook
+
+::: zone pivot="csharp"
 
 1. In the Azure Cloud Shell, go to the dotnet/SampleWeb/Pages folder. This folder contains the source code for the HTML pages that are displayed by the web app:
 
