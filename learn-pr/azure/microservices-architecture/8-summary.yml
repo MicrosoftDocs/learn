@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.microservices-architecture.9-summary
+uid: learn.microservices-architecture.8-summary
 metadata:
   title: Summary
   description: TODO
@@ -12,4 +12,4 @@ metadata:
 title: Summary
 durationInMinutes: 2
 content: |
-  [!include[](includes/9-summary.md)]
+  [!include[](includes/8-summary.md)]
