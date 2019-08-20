@@ -102,7 +102,7 @@ Now let's redeploy the application. We'll deploy our refactored service on Azure
     ```azurecli
     az functionapp deployment source config-zip \
         --resource-group <rgn>[sandbox resource group]</rgn> \
-        --name $FUNCTIONAPPNAME 
+        --name $FUNCTIONAPPNAME \
         --src PackageService.zip
     ```
 
