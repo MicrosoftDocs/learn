@@ -33,7 +33,6 @@ units:
 - learn.microservices-architecture.5-exercise-monolith-performance
 - learn.microservices-architecture.6-analyze-and-decompose
 - learn.microservices-architecture.7-exercise-refactor-as-microservice
-- learn.microservices-architecture.8-exercise-deploy-microservice-on-functions
-- learn.microservices-architecture.9-summary
+- learn.microservices-architecture.8-summary
 badge:
   uid: learn.microservices-architecture.badge
