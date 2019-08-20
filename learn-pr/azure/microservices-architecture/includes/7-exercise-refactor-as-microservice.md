@@ -8,7 +8,7 @@ Let's look closer at the actual changes that have been made.
 
 ### Drone Delivery before
 
-If you take a look at the [DroneDelivery-before](https://github.com/MicrosoftDocs/mslearn-microservices-architecture/tree/master/src/before/DroneDelivery-before) application code that we initially deployed you'll see a *services* folder. Within that folder, in *PackageProcessor.cs* there is a *PackageProcessor* class that performs the package processing natively in the monolithic app. In this example it performs some work that is resource intensive. You could imagine a real world scenario where this might be calculating delivery times, delivery routes, and updating data sources with this information.
+The core functionality of the package processing is handled by the `PackageProcessor` class in the [*PackageProcessor.cs*](https://github.com/MicrosoftDocs/mslearn-microservices-architecture/blob/master/src/before/DroneDelivery-before/Services/PackageProcessor.cs) file. In this example it performs some work that is resource intensive. You could imagine a real world scenario where this might be calculating delivery times, delivery routes, and updating data sources with this information.
 
 ```csharp
 public class PackageProcessor : IPackageProcessor
