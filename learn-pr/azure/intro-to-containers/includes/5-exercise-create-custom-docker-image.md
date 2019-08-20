@@ -31,7 +31,7 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
 4. Add the following commands to the Dockerfile. These commands fetch an image containing the .NET Core Framework SDK. The project files for the web app (`HotelReservationSystem.csproj`) and the library project (`HotelReservationSystemTypes.csproj`) are copied to the /src folder in the container. The `*`dotnet restore`*` command downloads the dependencies required by these projects from NuGet.
 
     ```Dockerfile
-    FROM microsoft/dotnet:2.1-sdk
+    FROM mcr.microsoft.com/dotnet/core/sdk:2.2
     WORKDIR /src
     COPY ["HotelReservationSystem/HotelReservationSystem.csproj", "HotelReservationSystem/"]
     COPY ["HotelReservationSystemTypes/HotelReservationSystemTypes.csproj", "HotelReservationSystemTypes/"]
