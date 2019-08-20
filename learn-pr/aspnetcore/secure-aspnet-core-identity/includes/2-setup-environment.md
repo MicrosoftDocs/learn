@@ -1,4 +1,6 @@
-In this unit, you'll set up the development environment for the module. You'll also gain an understanding of Identity architecture and the resulting starter project. This module focuses on just two of the possible EF Core data stores. Use the toggle above to select your preference.
+In this unit, you'll gain an understanding of Identity architecture. You'll start by running a script to set up the module's Linux development environment. The script downloads a cross-platform starter project and provisions Azure resources to support tasks throughout the module. Identity will be added to the starter project. No prior Linux experience is necessary.
+
+This module focuses on just two of the possible EF Core data stores supported by Identity. Use the toggle above to select your preference.
 
 ## Set up development environment
 
@@ -39,9 +41,9 @@ ASP.NET Core Identity is a membership system that adds user registration and log
 
 As an alternative to local account creation, Identity supports external login providers such as Facebook and Twitter. User sessions are preserved using cookie-based authentication. By default, a cookie is created upon log in and destroyed upon log out.
 
-Membership data is persisted using a data store and persistence mechanism of your choosing. The default persistence mechanism is an Object-Relational Mapper (O/RM) called Entity Framework (EF) Core. The default data store is SQL Server.
+Membership data is persisted using a data store and data access technology of your choosing. The default data access technology is an Object-Relational Mapper (O/RM) called Entity Framework (EF) Core. The default data store is SQL Server.
 
-The intricacies of interacting with the underlying database are abstracted away by EF Core. Therefore, EF Core generally makes it possible to use any of its database providers with Identity. Example database providers include, but aren't limited to, PostgreSQL and SQLite. PostgreSQL, however, is a third-party provider and is therefore not eligible for support from Microsoft. Identity also provides the flexibility to use a persistence mechanism of your choosing. Dapper is one popular alternative.
+The intricacies of interacting with the underlying database are abstracted away by EF Core. Therefore, EF Core generally makes it possible to use any of its database providers with Identity. Database providers are available for PostgreSQL, SQLite, and several other data stores. PostgreSQL, however, is a third-party provider and is therefore not eligible for support from Microsoft. Identity also provides the flexibility to use a data access technology of your choosing. Dapper is one popular alternative.
 
 The following diagram depicts the Identity architecture used in this module:
 
@@ -62,7 +64,7 @@ In the preceding diagram:
 * The *ASP.NET Core Razor Pages* app represents the web UI to which Identity support will be added in this module.
 * The *Identity Manager* layer contains classes used from the `Microsoft.AspNetCore.Identity` namespace. Examples of such classes used explicitly in this module are `SignInManager<TUser>` and `UserManager<TUser>`.
 * The *EF Core Identity Store* layer contains classes from the `Microsoft.AspNetCore.Identity.EntityFrameworkCore` namespace. An example of such a class used implicitly in this module is `UserStore<TUser>`.
-* The *Database Provider* is a database-specific library that accepts SQL and executes it.
+* The *Database Provider* is a database-specific library that accepts SQL from the *EF Core Provider* (not pictured) and executes it.
 
 ## Review project requirements
 
@@ -100,7 +102,7 @@ Of particular interest are the following files and directories in *:::no-loc tex
 |*:::no-loc text="Startup.cs":::*            |Configures services and the app's HTTP request pipeline.|
 
 > [!NOTE]
-> Azure Key Vault is used to securely store and retrieve sensitive data. The starter code implements it to demonstrate one possible way to secure database credentials. It's unrelated to Identity and therefore out of scope for this module. [Learn more about Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/).
+> Azure Key Vault is used to securely store and retrieve sensitive data. The starter code implements it to demonstrate one possible way to secure database credentials. It's unrelated to Identity and therefore out of scope for this module. See the `ConfigureKeyVault` method in the *:::no-loc text="Program.cs":::* file for the Key Vault registration code.
 
 ## Verify database connectivity
 
