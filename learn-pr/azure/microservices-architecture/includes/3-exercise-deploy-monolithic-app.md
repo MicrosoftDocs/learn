@@ -50,7 +50,7 @@ Let's start by deploying the application. First, we'll need to great the Azure r
         --settings SCM_DO_BUILD_DURING_DEPLOYMENT=true
     ```
 
-1. Run the following command to deploy the application to App Service.
+1. And now, run the following command to deploy the application to App Service. This will take a few minutes to complete.
 
     ```azurecli
     az webapp deployment source config-zip \
