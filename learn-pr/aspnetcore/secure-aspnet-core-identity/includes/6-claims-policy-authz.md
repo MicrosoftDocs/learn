@@ -41,11 +41,11 @@ The products catalog page should be visible only to authenticated users. However
 
     **Edit & Delete links:**
 
-    [!code-cshtml[](../code/Pages/Products/Index.cshtml?name=snippet_ModelIsAdmin&highlight=2-3,6)]
+    [!code-cshtml[](../code/pages/products/index.cshtml?name=snippet_modelisadmin&highlight=2-3,6)]
 
     **Add Product link:**
 
-    [!code-cshtml[](../code/Pages/Products/Index.cshtml?name=snippet_AddProductLink&highlight=1-2,4)]
+    [!code-cshtml[](../code/pages/products/index.cshtml?name=snippet_addproductlink&highlight=1-2,4)]
 
     The preceding changes cause the links to be rendered only when the authenticated user is an administrator.
 
@@ -67,7 +67,7 @@ The **Create Product** and **Edit Product** pages should be accessible only to a
 
     1. Incorporate the following highlighted code:
 
-        [!code-csharp[](../code/6-Startup.cs?highlight=2-3)]
+        [!code-csharp[](../code/6-startup.cs?highlight=2-3)]
 
         The `AuthorizePage` method call secures the *:::no-loc text="/Products/Edit":::* Razor Page route by applying the `Admin` policy. An advantage to this approach is that the Razor Page being secured requires no modifications. The authorization aspect is instead managed in *Startup.cs*. Anonymous users will be redirected to the login page. Authenticated users who don't satisfy the policy requirements are presented an **Access denied** message.
 
@@ -91,11 +91,11 @@ Modify the registration page to allow administrators to register using the follo
 1. In *:::no-loc text="Areas/Identity/Pages/Account/Register.cshtml.cs":::*, make the following changes:
     1. Add the following property to the `InputModel` nested class:
 
-        [!code-csharp[](../code/Areas/Identity/Pages/Account/6-Register.cshtml.cs?name=snippet_AdminEnrollmentKey&highlight=3-5)]
+        [!code-csharp[](../code/areas/identity/pages/account/6-register.cshtml.cs?name=snippet_adminenrollmentkey&highlight=3-5)]
 
     1. Apply the highlighted changes to the `OnPostAsync` method:
 
-        [!code-csharp[](../code/Areas/Identity/Pages/Account/6-Register.cshtml.cs?name=snippet_OnPostAsync&highlight=1-3,20-22)]
+        [!code-csharp[](../code/areas/identity/pages/account/6-register.cshtml.cs?name=snippet_onpostasync&highlight=1-3,20-22)]
 
         In the preceding code:
 
@@ -111,7 +111,7 @@ Modify the registration page to allow administrators to register using the follo
 
 1. In *:::no-loc text="Areas/Identity/Pages/Account/Register.cshtml":::*, add the following markup:
 
-    [!code-cshtml[](../code/Areas/Identity/Pages/Account/6-Register.cshtml?highlight=6-10)]
+    [!code-cshtml[](../code/areas/identity/pages/account/6-register.cshtml?highlight=6-10)]
 
 ## Test admin claim
 

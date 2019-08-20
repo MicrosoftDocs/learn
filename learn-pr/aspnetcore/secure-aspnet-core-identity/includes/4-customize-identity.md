@@ -59,11 +59,11 @@ UI changes are also required to collect the additional user profile information.
 
 1. In the `Configure` method of *:::no-loc text="Areas/Identity/IdentityHostingStartup.cs":::*, the call to `AddDefaultIdentity` needs to be made aware of the new Identity user type. Incorporate the following highlighted change, and save the file.
 
-    [!code-csharp[](../code/Areas/Identity/IdentityHostingStartup.cs?name=snippet_ConfigureAddDefaultIdentity&highlight=1)]
+    [!code-csharp[](../code/areas/identity/identityhostingstartup.cs?name=snippet_configureadddefaultidentity&highlight=1)]
 
 1. Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to incorporate the following highlighted changes. Save your changes.
 
-    [!code-cshtml[](../code/Pages/Shared/4-_LoginPartial.cshtml?range=1-6&highlight=2-4)]
+    [!code-cshtml[](../code/pages/shared/4-_loginpartial.cshtml?range=1-6&highlight=2-4)]
 
     The preceding changes update the user type passed to both `SignInManager<T>` and `UserManager<T>` in the `@inject` directives. Instead of the default `IdentityUser` type, `ContosoPetsUser` user is now referenced. The `@using` directive was added to resolve the `ContosoPetsUser` references.
 
@@ -75,7 +75,7 @@ UI changes are also required to collect the additional user profile information.
 1. Update *:::no-loc text="Areas/Identity/Data/ContosoPetsUser.cs":::* to support storage and retrieval of the additional user profile data. Make the following changes:
     1. Add the `FirstName` and `LastName` properties:
 
-        [!code-csharp[](../code/Areas/Identity/Data/ContosoPetsUser.cs?highlight=3-5,7-9)]
+        [!code-csharp[](../code/areas/identity/data/contosopetsuser.cs?highlight=3-5,7-9)]
 
         The properties in the preceding snippet represent additional columns to be created in the underlying `AspNetUsers` table. Both properties are required and are therefore annotated with the `[Required]` attribute. The `[Required]` attribute also results in a non-null constraint in the underlying database table column. Additionally, the `[MaxLength]` attribute indicates that a maximum length of 100 characters is allowed. The underlying table column's data type is defined accordingly.
 
@@ -230,20 +230,20 @@ UI changes are also required to collect the additional user profile information.
 
 1. In *:::no-loc text="Areas/Identity/Pages/Account/Register.cshtml":::*, add the following highlighted markup:
 
-    [!code-cshtml[](../code/Areas/Identity/Pages/Account/4-Register-FirstAndLastName.cshtml?range=1-19&highlight=5-14)]
+    [!code-cshtml[](../code/areas/identity/pages/account/4-register-firstandlastname.cshtml?range=1-19&highlight=5-14)]
 
     With the preceding markup, **First name** and **Last name** text boxes are added to the user registration form.
 
 1. In *:::no-loc text="Areas/Identity/Pages/Account/Register.cshtml.cs":::*, add support for the name text boxes.
     1. Add the `FirstName` and `LastName` properties to the `InputModel` nested class:
 
-        [!code-csharp[](../code/Areas/Identity/Pages/Account/4-Register-FirstAndLastName.cshtml.cs?name=snippet_InputModel&highlight=3-6,8-11)]
+        [!code-csharp[](../code/areas/identity/pages/account/4-register-firstandlastname.cshtml.cs?name=snippet_inputmodel&highlight=3-6,8-11)]
 
         The `[Display]` attributes define the label text to be associated with the text boxes.
 
     1. Modify the `OnPostAsync` method to set the `FirstName` and `LastName` properties on the `ContosoPetsUser` object. Make the following highlighted changes:
 
-        [!code-csharp[](../code/Areas/Identity/Pages/Account/4-Register-FirstAndLastName.cshtml.cs?name=snippet_OnPostAsync&highlight=6-12)]
+        [!code-csharp[](../code/areas/identity/pages/account/4-register-firstandlastname.cshtml.cs?name=snippet_onpostasync&highlight=6-12)]
 
         The preceding change sets the `FirstName` and `LastName` properties to the user input from the registration form.
 
@@ -251,28 +251,28 @@ UI changes are also required to collect the additional user profile information.
 
 Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to display the first and last name collected during user registration. The highlighted lines in the following snippet are needed:
 
-[!code-cshtml[](../code/Pages/Shared/4-_LoginPartial.cshtml?highlight=9-10,13)]
+[!code-cshtml[](../code/pages/shared/4-_loginpartial.cshtml?highlight=9-10,13)]
 
 ## Customize the profile management form
 
 1. In *:::no-loc text="Areas/Identity/Pages/Account/Manage/Index.cshtml":::*, add the following highlighted markup. Save your changes.
 
-    [!code-cshtml[](../code/Areas/Identity/Pages/Account/Manage/4-Index-FirstAndLastName.cshtml?range=1-16&highlight=3-12)]
+    [!code-cshtml[](../code/areas/identity/pages/account/manage/4-index-firstandlastname.cshtml?range=1-16&highlight=3-12)]
 
 1. In *:::no-loc text="Areas/Identity/Pages/Account/Manage/Index.cshtml.cs":::*, make the following changes to support the name text boxes.
     1. Add the `FirstName` and `LastName` properties to the `InputModel` nested class:
 
-        [!code-csharp[](../code/Areas/Identity/Pages/Account/Manage/4-Index.cshtml.cs?name=snippet_FirstAndLastNameInputModel&highlight=3-6,8-11)]
+        [!code-csharp[](../code/areas/identity/pages/account/manage/4-index.cshtml.cs?name=snippet_firstandlastnameinputmodel&highlight=3-6,8-11)]
 
     1. Incorporate the highlighted changes in the `OnGetAsync` method:
 
-        [!code-csharp[](../code/Areas/Identity/Pages/Account/Manage/4-Index.cshtml.cs?name=snippet_OnGetAsync&highlight=18-20)]
+        [!code-csharp[](../code/areas/identity/pages/account/manage/4-index.cshtml.cs?name=snippet_ongetasync&highlight=18-20)]
 
         The preceding code supports retrieving the first and last names for display in the corresponding text boxes of the profile management form.
 
     1. Incorporate the highlighted changes in the `OnPostAsync` method. Save your changes.
 
-        [!code-csharp[](../code/Areas/Identity/Pages/Account/Manage/4-Index.cshtml.cs?name=snippet_OnPostAsync&highlight=14-16)]
+        [!code-csharp[](../code/areas/identity/pages/account/manage/4-index.cshtml.cs?name=snippet_onpostasync&highlight=14-16)]
 
         The preceding code supports updating the first and last names in the database's `AspNetUsers` table.
 
