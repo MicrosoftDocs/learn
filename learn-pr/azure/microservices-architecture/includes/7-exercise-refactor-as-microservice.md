@@ -129,8 +129,8 @@ Now that our service is running on an Azure Function, we need to point our drone
 1. In Cloud Shell run these commands to open *appsettings.json* in the Code editor.
 
     ```bash
-    cd ~/mslearn-microservices-architecture
-    code src/DroneDelivery-after/appsettings.json
+    cd ~/mslearn-microservices-architecture/src/after
+    code ./DroneDelivery-after/appsettings.json
     ```
 
 1. In the Code editor, there are two values you need to replace; `PackageServiceUri` and `PackageServiceFunctionCode`. In `PackageServiceUri` replace `<FunctionName>` with the name of your function.
@@ -155,8 +155,7 @@ Now that our service is running on an Azure Function, we need to point our drone
 1. Run this command to deploy the updated application to App Service.
 
     ```bash
-    cd ~/mslearn-microservices-architecture/after
-    zip -r DroneDelivery-after.zip . -x ./PackageService/\*
+    zip -r DroneDelivery-after.zip . -x \*/obj/\* \*/bin/\*
     az webapp deployment source config-zip \
         --resource-group <rgn>[sandbox resource group]</rgn> \
         --name $APPSERVICENAME \
@@ -165,4 +164,4 @@ Now that our service is running on an Azure Function, we need to point our drone
 
 ## Test performance of new architecture
 
-Now that we have moved the problematic service to an microservice running on an Azure Function, let's see how this impacted application performance.
+Now that we have moved the resource constrained service to an microservice running on an Azure Function, let's see how this impacted application performance.
