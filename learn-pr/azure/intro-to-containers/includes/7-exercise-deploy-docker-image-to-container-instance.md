@@ -4,37 +4,35 @@ You previously packaged and tested your web app as a local Docker image. You now
 
 In this exercise, you'll rebuild the image for the web app and upload it to Azure Container Registry. You'll use the Azure Container Instance service to run the image.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 ## Create a container registry
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your MSLearn account.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with your Azure subscription.
 
 1. Choose **Create a resource**, select **Containers**, and then click **Container Registry**
 
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
-
     ![Screenshot that shows the New blade in Azure portal showing the Container options available in Azure Marketplace](../media/7-search-container-registry.png)
 
-2. Specify the values in the following table for each of the properties, and then click **Create**. For the registry name, select a name of your choice. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters. For more information on naming, see [Naming conventions for Azure resources](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)
+1. Specify the values in the following table for each of the properties, and then click **Create**. For the registry name, select a name of your choice. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters. For more information on naming, see [Naming conventions for Azure resources](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)
 
     | Property  | Value  |
     |---|---|
     | Name | Choose a unique name |
-    | Subscription | Concierge Subscription  |
-    | Resource Group | Use the existing resource group <rgn>[Sandbox resource group]</rgn> |
-    | Location | Use the default location |
-    | Admin user | Enable |
-    | SKU | Standard |
+    | Subscription | Select your default Azure subscription in which you are allowed to create and manage resources. |
+    | Resource Group | Create a new resource group with the name **learn-deploy-container-aci-rg** so that it will be easier to clean up these resources when you're finished with the module. If you choose a different resource group name, remember it for the rest of the exercises in this module. |
+    | Location | Select a location that is close to you. |
+    | Admin user | **Enable** |
+    | SKU | **Standard** |
 
     > [!NOTE]
     > This exercise enables the admin account, for uploading images and testing the registry. In a production environment, you should disable the admin account and switch to Azure Active Directory Identities once you are satisfied that the registry is operating as expected.
 
-3. Wait until the container registry has been deployed before continuing.
+1. Wait until the container registry has been deployed before continuing.
 
-4. Select **All resources**, select your registry, and then click **Access keys**.
+1. Select **All resources**, select your registry, and then click **Access keys**.
 
-5. Make a note of the **Registry name**, **Login server**, **Username**, and **password** for your registry.
+1. Make a note of the **Registry name**, **Login server**, **Username**, and **password** for your registry.
 
     ![Screenshot that shows the Access Key information for the registry](../media/7-access-keys.png)
 
@@ -102,7 +100,7 @@ For the rest of the exercise, you'll return to the Azure portal running in the s
     | Image registry username | Enter the username for your registry |
     | Image registry password | Enter the password for your registry |
     | Subscription | Concierge Subscription  |
-    | Resource Group | Use the existing resource group <rgn>[Sandbox resource group]</rgn> |
+    | Resource Group | Reuse the existing resource group **learn-deploy-container-aci-rg**. |
     | Location | Use the default location |
 
 1. On the **Configuration** page, specify the values in the following table for each of the properties, and then click **OK**.
