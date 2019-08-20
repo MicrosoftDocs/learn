@@ -1,12 +1,10 @@
-In this exercise, you add a release dashboard to Azure DevOps.
+In this exercise, you examine a few of the analytics features that Azure Pipelines provides.
 
 Irwin asked the Tailspin team how they can release faster. Building an automated release pipeline is a great step towards that. As you release more rapidly, it's important to understand the health and history of your releases. Looking at health trends regularly can help you diagnose potential problems before those problems become critical.
 
-Before you set up your release dashboard, let's listen in on the Tailspin team at their morning meeting.
+Before we take a look at some of your pipeline's analytics, let's listen in on the Tailspin team at their morning meeting.
 
 ## How can I track the health of my entire pipeline?
-
-In the [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true) learning path, you created a dashboard that tracks the status of build and test runs over time. You can add widgets to the dashboard that also track the health of your deployments.
 
 It's the following morning. At the team meeting, Andy and Mara have just finished demonstrating the build and release pipeline that they set up as a proof of concept.
 
@@ -16,7 +14,7 @@ It's the following morning. At the team meeting, Andy and Mara have just finishe
 
 **Tim:** That workflow could include a staging environment as well. I could do additional stress testing before we present new features to management for final approval.
 
-The team is excited to see what the new pipeline can do and they all start talking at once.
+The team is excited to see what the new pipeline can do and they all start talking at the same time.
 
 **Andy:** I'm excited about this as well. But let's take things one step at a time. Yes, I think we can do all of this and more, but this is just a proof of concept. We'll work on expanding it later.
 
@@ -26,72 +24,55 @@ The team is excited to see what the new pipeline can do and they all start talki
 
 **Tim:** Irwin will like that.
 
-**Amita:** Can we add that dashboard to the proof of concept? I want to see what sort of monitoring is available.
-
-**Andy:** Amita, you always approach things from a QA perspective. Yes, let's see what widgets we can add to the dashboard.
+**Andy:** Let's build a release dashboard after we've defined a more complete release workflow. For now, let's first look at some of the built-in analytics that Azure Pipelines provides.
 
 The team gathers around Andy's laptop.
 
-## Create a release dashboard
+## What information does pipeline analytics provide?
 
-You ran a template earlier to set up your Azure DevOps project. This project does not include any dashboard widgets. But recall that you added build and test quality widgets to the dashboard in previous modules.
+Every pipeline provides reports that include metrics, trends, and insights that can help you to improve the efficiency of your pipeline.
 
-To help others find what they need, you can create a second dashboard that focuses only on deployment health. Let's create that dashboard now.
+These reports include:
 
-1. In Azure DevOps, select **Overview** from the pane on the left. Then select **Dashboards**.
-1. From the drop-down menu, select **+ New dashboard**.
+* The overall pass rate of your pipeline.
+* The pass rate of any tests that are run in the pipeline.
+* The average duration of your pipeline runs, including the build tasks that take the most time to complete.
 
-    ![](../media/6-dashboard-new-dashboard.png)
+You'll examine the analytics for your pipeline shortly. Here's a sample report that shows pass rate and duration for a project with many pipeline runs.
 
-1. Name the dashboard **Space Game Releases**.
-1. Select **Create**.
+> [!div class="mx-imgBorder"]
+> ![Azure Pipelines showing a sample report that covers many pipeline runs](../media/6-analyticstab.png)
 
-Your dashboard is created. To find this dashboard later, select **Overview** and then **Dashboards**. Expand the **All dashboards** section to see your dashboards.
+You can filter the results to focus in on a time range or activity on a specific Git branch.
 
-![](../media/6-dashboard-all-dashboards.png)
+Azure DevOps also provides this information as an OData feed that you can use to publish reports and notifications to other systems such as Power BI, Microsoft Teams, or Slack. You can learn more about analytics feeds at the end of this module.
 
-> [!IMPORTANT]
-> **TODO:** I've tried this several times, and none of these widgets work because I don't have a release pipeline. We need to resolve this ASAP.
+## Explore your pipeline's analytics
 
-## Add the Deployment Status widget
+Let's examine a few of your pipeline's analytics. Here's how.
 
-1. From the **Space Game Releases** dashboard, select **Add a widget**.
-1. Enter **Deployment Status** in the search box.
-1. Drag the **Deployment Status** widget onto the canvas.
-1. Select the gear icon.
-1. 
-1. Under **Linked release pipelines** select your pipeline and make sure both boxes are checked. TODO: Screenshot
-1. Select **Save**
+1. In Azure Pipelines, navigate to your pipeline.
+1. Select the **Analtyics** tab.
 
-### Add a Release Pipeline Overview and Build History widgets
+    > [!div class="mx-imgBorder"]
+    > ![Azure Pipelines showing the Analytics tab](../media/6-select-analytics-tab.png)
 
-1. Search for **Release Pipeline Overview** in the Add Widget pane on the right.
-1. Drag it on to the dashboard.
-1. Select the gear icon to configure the widget.
-1. Select your release TODO: get the name
-1. Select **Save**
-1. Search for **Build History** in the Add Widget pane on the right.
-1. Drag it on to the dashboard.
-1. Select your build **Tailspin-SpaceGame-web**.
-1. Select **Save**
+1. Note the pass rates and average duration of your pipeline runs.
 
-### Add Health Overview and Health Detail widgets
+    > [!div class="mx-imgBorder"]
+    > ![Azure Pipelines showing the report overview](../media/6-pipeline-analytics-overview.png)
 
-1. At the bottom of the Add Widget pane, select the **Extension Gallery** link.
-1. When the Marketplace browser window opens, make sure you are on the **Azure DevOps** tab.
-1. Search for **Team project Health**.  TODO: Screenshot
-1. Install this extension
-1. Back in Azure DevOps, refresh this screen to make sure you have the extension installed.
-1. Select the **Edit** icon at the top to open the Add Widget pane. TODO: Screenshot
-1. Search for **Release Health Overview** and add it to the dashboard.
-1. Configure the widget.
-1. Search for **Release Health Details** and add it to the dashboard.
-1. Configure the widget.
-1. Search for and add **Build Health Overview** and **Build Health Details**
-1. Configure these widgets.
+1. Under **Pipeline pass rate**, select **View full report**.
 
-TODO: Screenshot of entire dashboard.
+    > [!div class="mx-imgBorder"]
+    > ![Azure Pipelines showing the full report](../media/6-pipeline-failure-report.png)
 
-**Amita:** This is great. And it will make Irwin happy to have something to show management.
+    At this point, you have a basic pipeline report that contains data for just a few runs.
 
-**Andy:** Right! But this is just the proof of concept. Now, we need to take this POC and expand on it to create a whole release and deployment workflow.
+**Amita:** This is great. However, I don't see a lot of data there yet.
+
+**Andy:** That's right. As we perform more runs over a period of time, we'll collect more data. We can use this data to gain a greater sense of the health of the pipeline and where we can make it more efficient.
+
+**Mara:** For example, I see that the task that runs `npm install` takes the most time to complete. Do we need to fix that? Perhaps we can cache the Node.js packages that we use on one of our servers to make it run faster.
+
+**Andy:** I always appreciate your willingness to improve things. But let's hold off on that for now. Time will reveal where the pipeline is slow or inefficient. From there, we can decide which improvements are truly worth tackling.
