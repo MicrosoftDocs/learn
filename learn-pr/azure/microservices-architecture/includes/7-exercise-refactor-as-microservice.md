@@ -2,11 +2,13 @@ Now that Fabrikam has analyzed their application, they are now ready to start th
 
 ## Refactor application
 
-Before we deploy the updated application, let's take a look at how it was updated. The monolithic app has a service to process packages, *PackageProcessor.cs*. The Fabrikam team pulled this out into the microservice.
+Before we deploy the updated application, let's take a look at how it was updated. The monolithic app has a service to process packages, *PackageProcessor.cs*. After analyzing the performance of the application, this service was identified as a performance bottleneck. As customers continue to increase the demand for drone deliveries, this service becomes heavily loaded while it handles the scheduling and logistics for drone deliveries. This service is also fully managed by a dedicated team, and moving this service to a microservice would not only help with performance, but with improved development agility.
+
+Let's look closer at the actual changes that have been made.
 
 ### Drone Delivery before
 
-In PackageProcessor.cs there is a PackageProcessor class that does the call to the package processing natively in the monolithic app. 
+If you take a look at the [DroneDelivery-before](https://github.com/MicrosoftDocs/mslearn-microservices-architecture/tree/master/src/before/DroneDelivery-before) application code that we initially deployed you'll see a *services* folder. Within that folder, in *PackageProcessor.cs* there is a *PackageProcessor* class that performs the package processing natively in the monolithic app. In this example it performs some work that is resource intensive. You could imagine a real world scenario where this might be calculating delivery times, delivery routes, and updating data sources with this information.
 
 ```csharp
 public class PackageProcessor : IPackageProcessor
@@ -20,11 +22,11 @@ public class PackageProcessor : IPackageProcessor
     }
 ```
 
-This service handles all the details for scheduling a package for delivery
+As requests for this service increase, resource utilization increases and is capped at the physical resources allocated to the monolithic appliction. If deployed on App Service, we can scale this up and out, but you'd ideally like this heavily used resource to scale independently to optimize performance and costs. In this scenario, we'll use Azure Functions to do just that.
 
 ### Drone Delivery after
 
-In the after, the PackageProcessor has been changed to a PackageServiceCaller. It still implements the IPackageProcessor interface, but instead makes an HTTP call to the microservice. 
+If you take a look at the [DroneDelivery-after](https://github.com/MicrosoftDocs/mslearn-microservices-architecture/blob/master/src/before/DroneDelivery-before/Services/PackageProcessor.cs) application code that we will deploy shortly, you'll see that the `PackageProcessor` class has been changed to a `PackageServiceCaller` class. It still implements the IPackageProcessor interface, but instead makes an HTTP call to the microservice.
 
 ```csharp
 public class PackageServiceCaller : IPackageProcessor
@@ -48,7 +50,7 @@ public class PackageServiceCaller : IPackageProcessor
     }
 ```
 
-The microservice will be deployed on an Azure Function and contains the following code.
+The microservice will be deployed on an Azure Function. It's code can be found in [*PackageServiceFunction.cs*](https://github.com/MicrosoftDocs/mslearn-microservices-architecture/blob/master/src/after/PackageService/PackageServiceFunction.cs) and contains the following code.
 
 ```csharp
 public static class PackageServiceFunction
@@ -67,7 +69,7 @@ public static class PackageServiceFunction
     }
 ```
 
-By putting this code on an Azure Function, this service can scale independently.
+By putting this code on an Azure Function, this service can scale independently as user load increases. This allows you to keep the services for the remaining application code optimized for the rest of the application, while allowing the package service to scale out as more requests for drone deliveries come in to the system.
 
 Now let's redeploy the application. We'll deploy our refactored service on Azure Functions first, then deploy the refactored application on App Service, and point it to the function.
 
