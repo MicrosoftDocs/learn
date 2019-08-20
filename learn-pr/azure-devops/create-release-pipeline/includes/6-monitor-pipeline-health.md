@@ -38,12 +38,12 @@ These reports include:
 * The pass rate of any tests that are run in the pipeline.
 * The average duration of your pipeline runs, including the build tasks that take the most time to complete.
 
-You'll examine the analytics for your pipeline shortly. Here's a sample report that shows pass rate and duration for a project with many pipeline runs.
+You'll examine the analytics for your pipeline shortly. Here's a sample report that shows pass rate and duration for a project that has many pipeline runs.
 
 > [!div class="mx-imgBorder"]
 > ![Azure Pipelines showing a sample report that covers many pipeline runs](../media/6-analyticstab.png)
 
-You can filter the results to focus in on a time range or activity on a specific Git branch.
+You can filter the results to focus in on a time range or the activity on a specific Git branch.
 
 Azure DevOps also provides this information as an OData feed that you can use to publish reports and notifications to other systems such as Power BI, Microsoft Teams, or Slack. You can learn more about analytics feeds at the end of this module.
 
@@ -71,7 +71,7 @@ Let's examine a few of your pipeline's analytics. Here's how.
 
 **Amita:** This is great. However, I don't see a lot of data there yet.
 
-**Andy:** That's right. As we perform more runs over a period of time, we'll collect more data. We can use this data to gain a greater sense of the health of the pipeline and where we can make it more efficient.
+**Andy:** That's right. We'll collect more data as we perform more runs over time. We'll use this data to gain a greater sense of the health of the pipeline and where we can make it more efficient.
 
 **Mara:** For example, I see that the task that runs `npm install` takes the most time to complete. Do we need to fix that? Perhaps we can cache the Node.js packages that we use on one of our servers to make it run faster.
 

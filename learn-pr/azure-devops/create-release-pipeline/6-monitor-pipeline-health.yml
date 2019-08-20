@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.create-release-pipeline.6-monitor-pipeline-health
+title: Exercise - Monitor the health of your pipeline
+metadata:
+  title: Exercise - Monitor the health of your pipeline
+  description: Exercise - Monitor the health of your pipeline
+  ms.date: 09/01/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-monitor-pipeline-health.md)]

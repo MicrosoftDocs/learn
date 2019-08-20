@@ -10,7 +10,7 @@ In this module, you'll:
 
 - Learn what continuous delivery (CD) is, why it's important, and what tools you can use.
 - Create a basic release pipeline that deploys a web application to Azure App Service.
-- Create a release dashboard that monitors the status of each deployment.
+- Examine pipeline analytics to understand the health and history of your releases.
 
 ## Prerequisites
 
