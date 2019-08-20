@@ -60,7 +60,7 @@ Docker Hub contains many thousands of images. You can search and browse a regist
 
 ![Screenshot of the Docker Hub search page](../media/2-docker-hub-search.png)
 
-You use the `docker pull` command with the image name to retrieve an image. By default, Docker will download the image tagged `latest` from that repository on Docker Hub if you specify only the repository name. Keep in mind that you can modify the command to pull different tags and from different repositories. This example fetches the image with the tag `aspnetapp` from the *microsoft/dotnet-samples* repository (this image contains a simple ASP.NET web app).
+You use the `docker pull` command with the image name to retrieve an image. By default, Docker will download the image tagged `latest` from that repository on Docker Hub if you specify only the repository name. Keep in mind that you can modify the command to pull different tags and from different repositories. This example fetches the image with the tag `aspnetapp` from the *mcr.microsoft.com/dotnet/core/samples:aspnetapp* repository. This image contains a simple ASP.NET Core web app.
 
 > [!NOTE]
 > The examples in this unit are intended to show the syntax of the various Docker commands. You don't need to run these commands while reading this unit. The exercises that follow this unit will guide you through working with Docker directly.
@@ -121,7 +121,7 @@ The command maps port 80 in the container to port 8080 on your computer. If you 
 
 ## Containers and files
 
-If a running container makes changes to the files in its image, those changes only exist in the container where the changes are made. Unless you take specific steps to preserve the state of a container, these changes will be lost when the container is removed. Similarly, multiple containers based on the same image that run simultaneously do not share the files in the image &mdash; each container has its own independent copy. Any data written by one container to its filesystem are not visible to the other.
+If a running container makes changes to the files in its image, those changes only exist in the container where the changes are made. Unless you take specific steps to preserve the state of a container, these changes will be lost when the container is removed. Similarly, multiple containers based on the same image that run simultaneously do not share the files in the image - each container has its own independent copy. Any data written by one container to its filesystem are not visible to the other.
 
 It's possible to add writable volumes to a container. A volume represents a filesystem that can be mounted by the container, and is made available to the application running in the container. The data in a volume does persist when the container stops, and multiple containers can share the same volume. The details for creating and using volumes are outside the scope of this module.
 
@@ -137,7 +137,7 @@ docker ps
 
 The output includes the status of the container. *Up* if it is running, *Exited* if it has terminated, among other values such as the command line flags specified when the image was started, and additional information. Docker lets you run multiple containers from the same image simultaneously, so each container is assigned a unique ID as well as a unique human-readable name. Most Docker commands used to manage individual containers can use either the ID or the name to refer to a specific container.
 
-In the output below, you can see two containers. The *PORTS* field shows that the container with ID `lucid-jang` is the image running with port 80 on the Docker host mapped to port 8080 on your computer. The `youthful_heisenberg` instance is the container for the previous run of the image. The *COMMAND** field shows the command that the container ran to start the application in the image. In this case, for both containers, it is *dotnet aspnetapp.dll*. Note that the image ID for the containers is also the same because both containers are executing the same image.
+In the output below, you can see two containers. The *PORTS* field shows that the container with ID `lucid-jang` is the image running with port 80 on the Docker host mapped to port 8080 on your computer. The `youthful_heisenberg` instance is the container for the previous run of the image. The *COMMAND* field shows the command that the container ran to start the application in the image. In this case, for both containers, it is *dotnet aspnetapp.dll*. Note that the image ID for the containers is also the same because both containers are executing the same image.
 
 ```console
 CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
