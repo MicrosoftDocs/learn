@@ -121,6 +121,6 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
     docker rm reservations
     ```
 
-1. Leave the *reservationsystem* in your the local registry. You will use this image in the next exercise.
+1. Leave the *reservationsystem* in the local registry. You will use this image in the next exercise.
 
 You've now created an image for your web app and run it using a Docker container.
