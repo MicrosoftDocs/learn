@@ -29,7 +29,7 @@ Let's start by deploying the application. First, we'll need to great the Azure r
 1. Run this command to zip up the application code, which we'll use to deploy to the App Service.
 
     ```bash
-    zip -r DroneDelivery-before.zip
+    zip -r DroneDelivery-before.zip .
     ```
 
 1. Run this command to set a variable with the name of your App Service.
