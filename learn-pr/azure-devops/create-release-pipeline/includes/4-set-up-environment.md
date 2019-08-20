@@ -99,7 +99,7 @@ Here, you create an initial pipeline configuration that builds the web applicati
     git push origin release-pipeline
     ```
 
-1. From Azure Pipelines, go to the build and trace the build as it runs.
+1. In Azure Pipelines, go to the build and trace the build as it runs.
 
     ![](../../shared/media/pipeline-trace-build.png)
 

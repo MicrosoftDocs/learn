@@ -145,7 +145,7 @@ Before we add the deployment stage to the pipeline, let's first convert the exis
     git commit -m "Add a build stage to the pipeline"
     git push origin release-pipeline
     ```
-1. From Azure Pipelines, go to the build and trace the build as it runs.
+1. In Azure Pipelines, go to the build and trace the build as it runs.
 1. After the build completes, press the back button to return to the summary page.
 
     ![](../media/5-pipeline-build-stage-summary.png)
@@ -195,7 +195,7 @@ To do so, you define a second stage and use the `DownloadBuildArtifacts@0` and `
     git push origin release-pipeline
     ```
 
-1. From Azure Pipelines, trace the build and deploy through each of the stages.
+1. In Azure Pipelines, trace the build and deploy through each of the stages.
 1. After the pipeline finishes, press the back button to return to the summary page.
 
     ![](../media/5-pipeline-deployment-summary.png)

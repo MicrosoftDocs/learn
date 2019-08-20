@@ -31,7 +31,7 @@ This option disables the pipeline so that it does not process further build requ
 
 To disable the pipeline:
 
-1. From Azure Pipelines, navigate to your pipeline.
+1. In Azure Pipelines, navigate to your pipeline.
 1. Select the **Edit** button.
 
     ![Azure Pipelines showing the location of the Edit button](../../shared/media/azure-pipelines-edit-button.png)
