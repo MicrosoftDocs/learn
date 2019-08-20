@@ -1,8 +1,8 @@
-In this exercise, we'll look at another process from our bike rental business and decide what technology best fits our needs. We'll consider the technical aspects of the process as well as audience and how our process needs to evolve. 
+In this exercise, we'll look at another process from our bike rental business and decide what technology best fits our needs. We'll consider the technical aspects of the process as well as audience and how our process needs to evolve.
 
 ## Scenario
 
-Your bike technicians currently use a spreadsheet to record the actions they took to repair and maintain each bike when it arrives back from a hire. Difficulties have arisen when spare parts are needed, because the hire staff have no way of knowing when a bike is waiting for repairs or parts. This problem has resulted in bikes being rented to customers with worn brake pads, flat tires, and other faults that make damage our brand as a high-quality bike rental company.
+Your bike technicians currently use a spreadsheet to record the actions they took to repair and maintain each bike when it arrives back from a hire. Difficulties have arisen when spare parts are needed, because the hire staff have no way of knowing when a bike is waiting for repairs or parts. This problem has resulted in bikes being rented to customers with worn brake pads, flat tires, and other faults that may damage our brand as a high-quality bike rental company.
 
 You want to build a system that governs the maintenance and repair process and allows everyone to find answers to the following questions.
 
@@ -11,7 +11,7 @@ You want to build a system that governs the maintenance and repair process and a
 - Which bikes are currently available to hire?
 - Which bikes are currently unavailable to hire?
 - For each bike that is unavailable:
-  - Why can't we hire them out? 
+  - Why can't we hire them out?
   - Are we waiting for any parts, and what are those parts?
   - When is the bike likely to be available again for hire?
 
