@@ -63,7 +63,7 @@ UI changes are also required to collect the additional user profile information.
 
 1. Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to incorporate the following highlighted changes. Save your changes.
 
-    [!code-cshtml[](../code/pages/shared/4-_loginpartial.cshtml?range=1-6&highlight=2-4)]
+    [!code-cshtml[](../code/pages/shared/4-loginpartial.cshtml?range=1-6&highlight=2-4)]
 
     The preceding changes update the user type passed to both `SignInManager<T>` and `UserManager<T>` in the `@inject` directives. Instead of the default `IdentityUser` type, `ContosoPetsUser` user is now referenced. The `@using` directive was added to resolve the `ContosoPetsUser` references.
 
@@ -251,7 +251,7 @@ UI changes are also required to collect the additional user profile information.
 
 Update *:::no-loc text="Pages/Shared/_LoginPartial.cshtml":::* to display the first and last name collected during user registration. The highlighted lines in the following snippet are needed:
 
-[!code-cshtml[](../code/pages/shared/4-_loginpartial.cshtml?highlight=9-10,13)]
+[!code-cshtml[](../code/pages/shared/4-loginpartial.cshtml?highlight=9-10,13)]
 
 ## Customize the profile management form
 
