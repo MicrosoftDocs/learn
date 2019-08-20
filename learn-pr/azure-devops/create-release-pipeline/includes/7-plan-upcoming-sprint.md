@@ -1,4 +1,4 @@
-With the proof of concept a success and monitoring in place, the team is once again excited to see what this pipeline can do. Everyone begins talking at once again and there are a lot of questions being thrown at Andy and Mara. 
+With the proof of concept a success and some basic monitoring in place, the team is once again excited to see what this pipeline can do. Everyone begins talking at once again and there are a lot of questions being thrown at Andy and Mara. 
 
 Andy glances at Mara and clears his throat.
 
