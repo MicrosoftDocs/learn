@@ -33,3 +33,13 @@ Azure DevOps enables you to build upon your investment with other CI/CD tools. L
 * [Continuously deploy from a Jenkins build](https://docs.microsoft.com/azure/devops/pipelines/release/integrate-jenkins-pipelines-cicd?view=azure-devops&tabs=yaml&azure-portal=true)
 * [CircleCI artifacts for Release Pipeline](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.vss-services-circleci-extension&azure-portal=true)
 * [GitLab Integration for Azure Pipelines](https://marketplace.visualstudio.com/items?itemName=onlyutkarsh.gitlab-integration&azure-portal=true)
+
+### Go deeper
+
+These resources provide more information on some of the topics that are covered in this module.
+
+* [Design for security in Azure](https://docs.microsoft.com/learn/modules/design-for-security-in-azure/)
+* [Secure your Azure resources with role-based access control (RBAC)](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac/)
+* [Service connections](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml)
+* [Pipeline reports](https://docs.microsoft.com/azure/devops/pipelines/reports/pipelinereport?view=azure-devops)
+* [Explore the Analytics OData metadata](https://docs.microsoft.com/azure/devops/report/extend-analytics/analytics-metadata?view=azure-devops) 
