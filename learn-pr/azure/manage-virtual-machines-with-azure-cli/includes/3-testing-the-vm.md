@@ -11,10 +11,10 @@ When you create a virtual machine, it gets assigned a public IP address that is 
 
 ## Connecting to the VM with SSH
 
-With the public IP address we can quickly test that the Linux VM is up and running using the Secure Shell (`ssh`) tool. Remember that we set our admin name to `aldis`, so we have to specify that. Make sure to use the public IP address from _your_ running instance.
+With the public IP address we can quickly test that the Linux VM is up and running using the Secure Shell (`ssh`) tool. Remember that we set our admin name to `azureuser`, so we have to specify that. Make sure to use the public IP address from *your* running instance.
 
 ```azurecli
-ssh <public-ip-address> -l aldis
+ssh azureuser@<public-ip-address>
 ```
 
 > [!NOTE]
@@ -38,7 +38,7 @@ individual files in /usr/share/doc/*/copyright.
 
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
-aldis@SampleVM:~$
+azureuser@SampleVM:~$
 ```
 
-Try a few commands as practice and when you are finished, sign out of the shell (type `logout` or `exit` in the shell).
+Try a few commands, such as `ps` or `ls` as practice. When you are finished, sign out of the virtual machine by typing `exit` or `logout`.
