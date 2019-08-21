@@ -58,7 +58,8 @@ az vm create \
     --name SampleVM2 \
     --image Debian \
     --admin-username azureuser \
-    --generate-ssh-keys --verbose \
+    --generate-ssh-keys \
+    --verbose \
     --size "Standard_DS5_v2"
 ```
 
