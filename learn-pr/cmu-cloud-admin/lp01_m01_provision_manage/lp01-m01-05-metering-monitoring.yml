@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.lp01-m01-provision-manage.lp01-m01-05-metering-monitoring
+title: Metering and Monitoring
+metadata:
+  title: Metering and Monitoring
+  description: Metering and Monitoring
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 4
+content: |
+  [!include[](includes/lp01-m01-05-metering-monitoring.md)]
