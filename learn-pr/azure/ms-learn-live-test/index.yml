@@ -1,0 +1,29 @@
+### YamlMime:Module
+uid: learn.azure.ms-learn-live
+metadata:
+  title: Microsoft Learn LIVE!
+  description: Microsoft Learn LIVE!
+  ms.date: 8/21/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Microsoft Learn LIVE!
+summary: This is a placeholder for Microsoft Learn LIVE! testing
+abstract: Use this to execute Learn Live instructions
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+badge:
+  uid: learn.azure.ms-learn-live.badge
+levels: 
+- beginner
+roles: 
+- developer
+products:
+- azure
+- azure-portal
+- azure-cloud-shell
+- azure-app-service
+- azure-sql-database
+units:
+- learn.azure.ms-learn-live.introduction

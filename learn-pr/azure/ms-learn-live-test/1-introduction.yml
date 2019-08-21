@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.ms-learn-live.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 8/21/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+azureSandbox: true
+interactive: bash
+durationInMinutes: 3
+content: |
+  [!include[](includes/introduction.md)]
