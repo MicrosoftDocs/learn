@@ -11,7 +11,7 @@ In this unit, you'll explore what you need to prepare for a disaster recovery sc
 > [!NOTE]
 > If you want to complete the following exercises, but you don't have an Azure subscription, or prefer not to use your own account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
-Run the following commands in the Cloud Shell. This will create your companies infrastructure in Azure to use in the next exercise. This includes a virtual network, two VMs, and a storage account for the vault.
+Run the following commands in the Cloud Shell. The script creates your companies infrastructure in Azure to use in the next exercise. A virtual network, two VMs, and a storage account for the vault will be created.
 
 ![Network topology diagram showing the resources that will be created by the next steps](../media/3-deployed-infrastructure.png)
 
@@ -41,7 +41,7 @@ Run the following commands in the Cloud Shell. This will create your companies i
 
 ## Disaster recovery preparation with Azure Site Recovery
 
-Azure Site Recovery will manage and orchestrate your DR process for Azure VMs or on-premises machines. However, to enable this there are several components you need to configure:
+Azure Site Recovery will manage and orchestrate your DR process for Azure VMs or on-premises machines. However, to enable it there are several components you need to configure:
 
 - Add a Recovery Services Vault
 - Organize target resources
@@ -50,15 +50,15 @@ Azure Site Recovery will manage and orchestrate your DR process for Azure VMs or
 
 ## Recovery Services Vault
 
-To enable Azure Site Recovery to complete disaster recovery replication it requires a recovery services vault. These vaults use storage accounts to store data backups, VM configuration settings, and workloads. To meet Azure Site Recovery requirements simply provision a recovery services vault using the portal or the Azure CLI.
+To enable Azure Site Recovery to complete disaster recovery replication, it requires a recovery services vault. These vaults use storage accounts to store data backups, VM configuration settings, and workloads. To meet Azure Site Recovery requirements, simply provision a recovery services vault using the portal or the Azure CLI.
 
 ## Target resources
 
-The target resources for Azure Site Recovery replication has to be in a different Azure region. The storage account that stores the backed up data must also be in a different region to the resources being protected. Check the target region allows you to create virtual machines, and that the region has enough resources to be able to match the size of the existing VMs.
+The target resources for Azure Site Recovery replication have to be in a different Azure region. The storage account that stores the backed up data must also be in a different region to the resources being protected. Check the target region allows you to create virtual machines, and the region has enough resources to match the size of the existing VMs.
 
 ## Outbound network connectivity & URLs
 
-If you're using Virtual Machines originally created in Azure, the required network connectivity will have been set up for you automatically. If you've migrated on-premises VMs to Azure, you may need to update your network connectivity.
+If you're using Virtual Machines originally created in Azure, the required network connectivity will have been set up for you automatically. When you migrate on-premises VMs to Azure, you may need to update your network connectivity.
 
 Azure Site Recovery requires outbound connectivity on the virtual machines that you wish to replicate. Azure Site Recovery does not support controlling network connectivity via an authentication proxy.
 
@@ -76,7 +76,7 @@ If you would prefer to control the connectivity using IP addresses instead, then
 
 ## Updating Azure VM certs
 
-Every Azure VM you wish to replicate requires the latest root certificates, without them you will not be able to register it with Azure Site Recovery. This is done to ensure security is kept watertight. A windows VM will need to have all the latest windows updates installed so that the machine has up-to-date trusted root certificates. A linux VM requires the same but you will need to contact your distributor.
+Every Azure VM you wish to replicate requires the latest root certificates, without them you will not be able to register it with Azure Site Recovery. A windows VM will need to have all the latest windows updates installed so that the machine has up-to-date trusted root certificates. A linux VM requires the same but you will need to contact your distributor.
 
 ## Account permissions
 
