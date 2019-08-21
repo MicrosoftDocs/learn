@@ -18,7 +18,7 @@ abstract: |
   - Train and evaluate a classifier built with TensorFlow. 
   - Create an image classifier by using deep learning. 
 prerequisites:  | 
-  [!include[](../../includes/azure-subscription-prerequisite.md)]
+  [!include[](../../includes/azure-databricks-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/deep-learning-in-azure-databricks.svg
 levels:
   - intermediate

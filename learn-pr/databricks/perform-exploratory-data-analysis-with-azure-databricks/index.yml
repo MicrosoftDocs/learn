@@ -17,7 +17,7 @@ abstract: |
   - Do basic exploratory data analysis with Azure Databricks.
   - Create a simple regression model. 
 prerequisites:  | 
-  [!include[](../../includes/azure-subscription-prerequisite.md)]
+  [!include[](../../includes/azure-databricks-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/performing-exploratory-data-analysis-with-azure-databricks.svg
 levels:
 - beginner

@@ -17,7 +17,7 @@ abstract:  |
   - Handle corrupt records.
   - Load data and put it into production.
 prerequisites:  | 
-  [!include[](../../includes/azure-subscription-prerequisite.md)]
+  [!include[](../../includes/azure-databricks-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/perform-basic-data-transformation-in-azure-databricks.svg
 levels:
 - intermediate

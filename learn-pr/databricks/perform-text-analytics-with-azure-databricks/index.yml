@@ -18,7 +18,7 @@ abstract: |
   - Train and evaluate multiple machine learning models for text classification. 
   - Create a text classifier using deep learning. 
 prerequisites:  | 
-  [!include[](../../includes/azure-subscription-prerequisite.md)]
+  [!include[](../../includes/azure-databricks-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/performing-text-analytics-with-azure-databricks.svg
 levels:
   - intermediate

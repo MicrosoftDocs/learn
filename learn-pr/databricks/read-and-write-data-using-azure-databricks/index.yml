@@ -18,7 +18,7 @@ abstract:  |
   - Combine inputs from files and data stores such as Azure SQL Database.
   - Transform and store that data for advanced analytics.
 prerequisites:  | 
-  [!include[](../../includes/azure-subscription-prerequisite.md)]
+  [!include[](../../includes/azure-databricks-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/read-and-write-data-using-azure-databricks.svg
 levels:
 - intermediate

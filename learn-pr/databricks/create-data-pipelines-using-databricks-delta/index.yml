@@ -19,7 +19,7 @@ abstract:  |
   - Perform optimizations in Delta.
   - Implement a Lambda Architecture by processing batch and streaming data with Delta.
 prerequisites:  | 
-  [!include[](../../includes/azure-subscription-prerequisite.md)]
+  [!include[](../../includes/azure-databricks-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/create-data-pipelines-using-databricks-delta.svg
 levels:
 - intermediate
