@@ -18,8 +18,8 @@
             "defaultValue": "hr-records-ip",
             "type": "String"
         },
-        "virtualNetworks_lamna_vnet_name": {
-            "defaultValue": "lamna-vnet",
+        "virtualNetworks_asr_vnet_name": {
+            "defaultValue": "asr-vnet",
             "type": "String"
         },
         "networkInterfaces_patient_records71_name": {
@@ -467,7 +467,7 @@
         {
             "type": "Microsoft.Network/virtualNetworks",
             "apiVersion": "2019-04-01",
-            "name": "[parameters('virtualNetworks_lamna_vnet_name')]",
+            "name": "[parameters('virtualNetworks_asr_vnet_name')]",
             "location": "westus2",
             "properties": {
                 "provisioningState": "Succeeded",
@@ -767,9 +767,9 @@
         {
             "type": "Microsoft.Network/virtualNetworks/subnets",
             "apiVersion": "2019-04-01",
-            "name": "[concat(parameters('virtualNetworks_lamna_vnet_name'), '/default')]",
+            "name": "[concat(parameters('virtualNetworks_asr_vnet_name'), '/default')]",
             "dependsOn": [
-                "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_lamna_vnet_name'))]"
+                "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_asr_vnet_name'))]"
             ],
             "properties": {
                 "provisioningState": "Succeeded",
@@ -800,7 +800,7 @@
             "location": "westus2",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_hr_records_ip_name'))]",
-                "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_lamna_vnet_name'), 'default')]",
+                "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_asr_vnet_name'), 'default')]",
                 "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_hr_records_nsg_name'))]"
             ],
             "properties": {
@@ -818,7 +818,7 @@
                                 "id": "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_hr_records_ip_name'))]"
                             },
                             "subnet": {
-                                "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_lamna_vnet_name'), 'default')]"
+                                "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_asr_vnet_name'), 'default')]"
                             },
                             "primary": true,
                             "privateIPAddressVersion": "IPv4"
@@ -847,7 +847,7 @@
             "location": "westus2",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_patient_records_ip_name'))]",
-                "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_lamna_vnet_name'), 'default')]",
+                "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_asr_vnet_name'), 'default')]",
                 "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_patient_records_nsg_name'))]"
             ],
             "properties": {
@@ -865,7 +865,7 @@
                                 "id": "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_patient_records_ip_name'))]"
                             },
                             "subnet": {
-                                "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_lamna_vnet_name'), 'default')]"
+                                "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_asr_vnet_name'), 'default')]"
                             },
                             "primary": true,
                             "privateIPAddressVersion": "IPv4"

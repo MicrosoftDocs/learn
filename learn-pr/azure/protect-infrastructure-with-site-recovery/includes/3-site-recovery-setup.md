@@ -4,35 +4,36 @@ Using your organizations BCDR plan, you now need to run through the Azure Site R
 
 In this unit, you'll explore what you need to prepare for a disaster recovery scenario to take advantage of Azure Site Recovery's automated features.
 
-![Diagram showing how Azure Site Recovery keeps an updated version of VM disks to enable replication from a source region to a target region.](../media/enable-replication-step-2.png)
+![Diagram showing how Azure Site Recovery keeps an updated version of VM disks to enable replication from a source region to a target region.](../media/3-enable-replication-step-2.png)
 
 ## Environment setup
 
 > [!NOTE]
 > If you want to complete the following exercises, but you don't have an Azure subscription, or prefer not to use your own account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
-Run the following commands in the Cloud Shell. This will create your companies infrastructure in Azure to use in the next exercise.
+Run the following commands in the Cloud Shell. This will create your companies infrastructure in Azure to use in the next exercise. This includes a virtual network, two VMs, and a storage account for the vault.
+
+![Network topology diagram showing the resources that will be created by the next steps](../media/3-deployed-infrastructure.png)
 
 1. Sign into the [Azure portal](https://portal.azure.com) with your own credentials, and start a Cloud Shell session.
 
-1. Copy the Azure Resource Manager json templates to create the Lamna Healthcare Company's infrastructure.
+1. Copy the Azure Resource Manager json templates to create your company's infrastructure.
 
     ```bash
-    curl https://raw.githubusercontent.com/... > deploy.json
+    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-protect-infrastructure-with-azure-site-recovery/master/deploy.json > deploy.json
     ```
-    <!-- TODO replace with live github repo -->
 
 1. Run the following command to create resource groups and the company's infrastructure.
 
     ```azurecli
-    az group create --name west-coast-datacenter --location westus2
-    az group create --name east-coast-datacenter --location eastus2
+    az group create --name west-coast-rg --location westus2
+    az group create --name east-coast-rg --location eastus2
 
     az group deployment create \
         --name asrDeployment \
         --template-file deploy.json \
         --parameters storageAccounts_asrcache_name=asrcache$RANDOM \
-        --resource-group west-coast-datacenter
+        --resource-group west-coast-rg
     ```
 
     > [!NOTE]
@@ -49,11 +50,11 @@ Azure Site Recovery will manage and orchestrate your DR process for Azure VMs or
 
 ## Recovery Services Vault
 
-To enable Azure Site Recovery to complete disaster recovery replication requires a recovery services vault. Recovery Services is a data storage service in Azure. It stores data backups, VM configuration settings, and workloads. To meet Azure Site Recovery requirements is as simple as provisioning a recovery services vault using the portal or the Azure CLI.
+To enable Azure Site Recovery to complete disaster recovery replication it requires a recovery services vault. These vaults use storage accounts to store data backups, VM configuration settings, and workloads. To meet Azure Site Recovery requirements simply provision a recovery services vault using the portal or the Azure CLI.
 
 ## Target resources
 
-The target for Azure Site Recovery replication has to be in a different Azure region. The storage account to store the backed-up data must also reside in a different region to the resource being protected. Check the target region allows you to create virtual machines, and that the region has enough resources to be able to match the size of the existing VMs.
+The target resources for Azure Site Recovery replication has to be in a different Azure region. The storage account that stores the backed up data must also be in a different region to the resources being protected. Check the target region allows you to create virtual machines, and that the region has enough resources to be able to match the size of the existing VMs.
 
 ## Outbound network connectivity & URLs
 
