@@ -8,13 +8,13 @@ The last thing we want to try on our VM is to install a web server. One of the e
     az vm list-ip-addresses --name SampleVM --output table
     ```
 
-1. Next, open an `ssh` connection to *SampleVM* like you did when we tested it.
+1. Next, open an `ssh` connection to *SampleVM*.
 
     ```bash
     ssh azureuser@<PublicIPAddress>
     ```
 
-1. In the presented shell, execute the following command to install the `nginx` web server.
+1. Once you are logged in to the virtual machine, execute the following command to install the `nginx` web server.
 
     ```bash
     sudo apt-get -y update && sudo apt-get -y install nginx
@@ -30,7 +30,7 @@ The last thing we want to try on our VM is to install a web server. One of the e
 
 1. In Azure Cloud Shell, use `curl` to read the default page from your Linux web server using the following command, replacing `<PublicIPAddress>` with the public IP you found previously. Alternatively, you can open a new browser tab and try to browse to the public IP address.
 
-    ```azurecli
+    ```bash
     curl -m 10 <PublicIPAddress>
     ```
 
@@ -49,7 +49,7 @@ The last thing we want to try on our VM is to install a web server. One of the e
 
 1. Run the `curl` command again.
 
-    ```azurecli
+    ```bash
     curl -m 10 <PublicIPAddress>
     ```
 
