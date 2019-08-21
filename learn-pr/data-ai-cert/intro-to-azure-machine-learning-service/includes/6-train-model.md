@@ -16,9 +16,9 @@ Follow these steps to create a workspace in the Azure portal.
 
     | Field | Description |
     |-------|-------------|
-    | Workspace name | Enter a unique name for your workspace. In this example, you use **docs-ws**. The names must be unique across the resource group. Use a name that is easy to remember and different from workspaces that others create. |
+    | Workspace name | Enter a unique name for your workspace. In this example, you use **AMLSLearnworkspace**. The names must be unique across the resource group. Use a name that is easy to remember and different from workspaces that others create. |
     | Subscription | Select the Azure subscription that you want to use. |
-    | Resource group | Use an existing resource group in your subscription or enter a name to create a new resource group. A *resource group* is a container that holds related resources for an Azure solution. In this example, you use **docs-aml**. |
+    | Resource group | Use an existing resource group in your subscription or enter a name to create a new resource group. A *resource group* is a container that holds related resources for an Azure solution. In this example, you use **rgAMLSLearnworkspace**. |
     | Location | Select the location closest to your users and the data resources. This location is where the workspace is created. |
     
     ![The screenshot depicts the required information for creating a Machine Learning service workspace, which includes boxes for Workspace name, Subscription, Resource group, and Location.](../media/6-create-ml-service-workspace.png)
