@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.lp01-m01-provision-manage.lp01-m00-04-service-models
-title: Building blocks of the cloud
+uid: learn.cmu-cloud-admin.lp01-m01-provision-manage.lp01-m01-04-resource-organization
+title: Resource Organization
 metadata:
-  title: Building blocks of the cloud
-  description: Cloud Building Blocks and Service Models
+  title: Resource Organization
+  description: Resource Organization
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 22
 content: |
-  [!include[](includes/lp01-m00-04-service-models.md)]
+  [!include[](includes/lp01-m01-04-resource-organization.md)]

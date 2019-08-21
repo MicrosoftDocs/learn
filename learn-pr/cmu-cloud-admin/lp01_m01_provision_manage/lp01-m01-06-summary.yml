@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.lp01-m01-provision-manage.lp01-m00-06-cloud-stacks
-title: Major cloud providers
+uid: learn.cmu-cloud-admin.lp01-m01-provision-manage.lp01-m01-06-summary
+title: Summary
 metadata:
-  title: Major cloud providers
-  description: Popular Cloud Stacks
+  title: Summary
+  description: Summary
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 12
 content: |
-  [!include[](includes/lp01-m00-06-cloud-stacks.md)]
+  [!include[](includes/lp01-m01-06-summary.md)]

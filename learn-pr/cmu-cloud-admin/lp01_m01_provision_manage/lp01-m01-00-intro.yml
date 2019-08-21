@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.lp01-m01-provision-manage.lp01-m00-00-intro
+uid: learn.cmu-cloud-admin.lp01-m01-provision-manage.lp01-m01-00-intro
 title: Introduction
 metadata:
   title: Introduction
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
-  [!include[](includes/lp01-m00-00-intro.md)]
+  [!include[](includes/lp01-m01-00-intro.md)]

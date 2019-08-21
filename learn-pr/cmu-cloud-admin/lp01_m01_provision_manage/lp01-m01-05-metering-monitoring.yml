@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.lp01-m01-provision-manage.lp01-m00-05-types
-title: Types of clouds
+uid: learn.cmu-cloud-admin.lp01-m01-provision-manage.lp01-m01-05-metering-monitoring
+title: Metering and Monitoring
 metadata:
-  title: Types of clouds
-  description: Cloud Deployment Models
+  title: Metering and Monitoring
+  description: Metering and Monitoring
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 4
 content: |
-  [!include[](includes/lp01-m00-05-types.md)]
+  [!include[](includes/lp01-m01-05-metering-monitoring.md)]

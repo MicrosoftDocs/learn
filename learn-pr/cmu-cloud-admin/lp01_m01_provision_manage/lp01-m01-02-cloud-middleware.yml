@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.lp01-m01-provision-manage.lp01-m00-02-before-the-cloud
-title: Before the cloud
+uid: learn.cmu-cloud-admin.lp01-m01-provision-manage.lp01-m01-02-cloud-middleware
+title: Cloud Middleware
 metadata:
-  title: Before the cloud
-  description: Pre-Cloud Computing Domains and Applications
+  title: Cloud Middleware
+  description: Cloud Middleware
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 26
 content: |
-  [!include[](includes/lp01-m00-02-before-the-cloud.md)]
+  [!include[](includes/lp01-m01-02-cloud-middleware.md)]

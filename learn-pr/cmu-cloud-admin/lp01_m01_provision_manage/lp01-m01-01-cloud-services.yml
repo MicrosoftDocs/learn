@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.lp01-m01-provision-manage.lp01-m00-01-cloud-computing
-title: Define cloud computing
+uid: learn.cmu-cloud-admin.lp01-m01-provision-manage.lp01-m01-01-cloud-services
+title: Cloud Services
 metadata:
-  title: Define cloud computing
-  description: Definition of cloud computing
+  title: Cloud Services
+  description: Cloud Services
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
-  [!include[](includes/lp01-m00-01-cloud-computing.md)]
+  [!include[](includes/lp01-m01-01-cloud-services.md)]

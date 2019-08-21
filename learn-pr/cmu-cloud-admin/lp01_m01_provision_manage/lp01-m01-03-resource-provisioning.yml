@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.lp01-m01-provision-manage.lp01-m00-03-evolution
-title: The evolution of cloud computing
+uid: learn.cmu-cloud-admin.lp01-m01-provision-manage.lp01-m01-03-resource-provisioning
+title: Resource Provisioning
 metadata:
-  title: The evolution of cloud computing
-  description: Evolution of Cloud Computing
+  title: Resource Provisioning
+  description: Resource Provisioning
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 15
 content: |
-  [!include[](includes/lp01-m00-03-evolution.md)]
+  [!include[](includes/lp01-m01-03-resource-provisioning.md)]
 quiz:
   title: Check your knowledge
   questions:
