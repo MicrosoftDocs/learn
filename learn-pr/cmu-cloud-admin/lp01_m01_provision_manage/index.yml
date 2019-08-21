@@ -13,7 +13,11 @@ title: Provision and Manage Cloud Service
 summary: TBD
 abstract: | 
   In this module you will:
-  - TBD
+  - Describe the different types of services available from cloud providers and list some examples of the kinds of services they provide
+  - Recall the various features provided by cloud middleware
+  - Describe the resource provisioning process from the context of a cloud service provider
+  - Discuss approaches to organizing cloud resources and the benefits of doing so
+  - Recall the issues related to resource metering for cloud service providers
 prerequisites: None
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
