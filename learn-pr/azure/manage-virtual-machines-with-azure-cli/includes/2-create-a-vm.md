@@ -47,7 +47,14 @@ In addition, it's helpful to add the `--verbose` flag to see progress while the 
 Let's create a new Linux virtual machine. Execute the following command in Azure Cloud Shell to create a Debian Linux machine in the "West US" location. Change the location if that one isn't nearby.
 
 ```azurecli
-az vm create --resource-group <rgn>[sandbox resource group name]</rgn> --name SampleVM --image Debian --admin-username aldis --generate-ssh-keys --location westus --verbose 
+az vm create \
+  --resource-group <rgn>[sandbox resource group name]</rgn> \
+  --name SampleVM \
+  --image Debian \
+  --admin-username aldis \
+  --generate-ssh-keys \
+  --location westus \
+  --verbose 
 ```
 
 [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
