@@ -6,7 +6,7 @@ It is strongly recommended that you use [Azure Notebooks](https://notebooks.azur
 
 ## Using a local development install
 
-If you are not using Azure Notebook and are running the code example locally, you need to perform the steps below to install the Python scikit-learn package and the Azure ML SDK as described below.
+If you are not using Azure Notebook and are running the code example locally, you need to perform the steps below to install the Python scikit-learn package and the Azure ML SDK.
 
 You will process the sample data using [NumPy](http://www.numpy.org/) and [scikit-learn](https://scikit-learn.org/stable/index.html) which are common scientific package for Python. You will also need to install the Azure ML SDK which connects you to the Azure Machine Learning service workspace. 
 
