@@ -2,18 +2,28 @@
 #LP name: Introduction to the Cloud with Carnegie Mellon
 uid: learn.cmu-cloud-admin.lp01-m00-cloud-overview
 metadata:
-  title: Cloud Overview
+  title: Cloud 
   description: Cloud overview
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Foundations of Cloud Computing
+title: Foundations of Cloud Computing for Administrators
 summary: Discover the cloud, how it works, and why it matters to you, with Carnegie Mellon's online Cloud Administration course textbook. 
 abstract: | 
   In this module you will:
-  - TBD
+  - Explain the concept of cloud computing
+  - Briefly understand how computing systems across domains dealt with scale before the cloud
+  - Briefly recall the recent history of cloud computing, illustrating its evolution
+  - List some of the enabling technologies in cloud computing, and discuss their significance
+  - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
+  - Enumerate the different types of clouds, and compare and contrast them
+  - List some of the common cloud providers and the features offered in their cloud stacks
+  - Articulate the economic benefits of the cloud paradigm for cloud users and cloud service providers
+  - Discuss some of the advantages and disadvantages of the cloud paradigm
+  - Define SLAs and SLOs and describe their importance in Cloud Computing
+  - Recall popular cloud use case scenarios
 prerequisites: None
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
