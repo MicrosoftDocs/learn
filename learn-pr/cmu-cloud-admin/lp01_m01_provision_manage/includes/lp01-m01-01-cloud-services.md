@@ -98,7 +98,7 @@ The cloud is continually evolving, and with that evolution comes new types of se
 
 All of the aforementioned services work independently, but cloud architects frequently combine these services to form end-to-end solutions designed to solve specific business problems. Figure 2.1 shows one such solution -- one that combines several services provided by Microsoft Azure to provide a near-real-time analysis of polar-bear sightings in a region of the Arctic.
 
-![](media/architecture-diagram-example.png){width="6.5in" height="2.9604166666666667in"}
+![](../media/architecture-diagram-example.png)
 
 Figure 2.1: Combining services to build end-to-end solutions
 
@@ -106,7 +106,7 @@ In this solution, motion-activated cameras positioned at strategic locations thr
 
 If the answer is yes, an Azure Function retrieves the corresponding photo from Blob Storage and passes it to Azure's Custom Vision Service, which has been trained to determine with a high degree of certainty whether a picture contains a polar bear. The Azure Function writes the result to an Azure SQL Database. Microsoft Power BI monitors the database and updates a dashboard to show where polar bears are being spotted (Figure 2.2).
 
-![](media/polar-bear-map.png){width="6.354166666666667in" height="4.166666666666667in"}
+![](../media/polar-bear-map.png){width="6.354166666666667in" height="4.166666666666667in"}
 
 Figure 2.2: Power BI dashboard showing polar-bear sightings
 
