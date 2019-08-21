@@ -56,9 +56,10 @@ We didn't specify a size when we created our VM - so Azure selected a default ge
 az vm create \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
     --name SampleVM2 \
-    --image Debian \
+    --image UbuntuLTS \
     --admin-username azureuser \
-    --generate-ssh-keys --verbose \
+    --generate-ssh-keys \
+    --verbose \
     --size "Standard_DS5_v2"
 ```
 

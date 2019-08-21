@@ -19,7 +19,7 @@ abstract:  |
   - Create, or attach to, a Spark cluster
   - Identify the types of tasks that are well suited to the unified analytics engine Apache Spark.
 prerequisites:  | 
-  [!include[](../../includes/azure-subscription-prerequisite.md)]
+  [!include[](../../includes/azure-databricks-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/intro-to-azure-databricks.svg
 levels:
 - intermediate

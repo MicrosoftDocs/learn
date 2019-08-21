@@ -11,5 +11,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 10
+azureSandbox: true
 content: |
   [!include[](includes/2-create-azure-dsvm.md)]

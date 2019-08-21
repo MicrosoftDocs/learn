@@ -17,7 +17,7 @@ abstract:  |
   - Access Azure SQL Data Warehouse from Azure Databricks by using the SQL Data Warehouse connector. 
   - Use Apache Spark with Azure Blob storage and PolyBase in SQL Data Warehouse to efficiently transfer large volumes of data between a Databricks cluster and a SQL Data Warehouse instance.
 prerequisites:  | 
-  [!include[](../../includes/azure-subscription-prerequisite.md)]
+  [!include[](../../includes/azure-databricks-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/understanding-the-sql-dw-connector-with-azure-databricks.svg
 levels:
 - intermediate

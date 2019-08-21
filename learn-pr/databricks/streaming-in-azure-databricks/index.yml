@@ -16,7 +16,7 @@ abstract:  |
   - Use Spark Structured Streaming, Azure Event Hubs, and Databricks Delta to read from and write to streams. 
   - Process streaming data by using Azure Databricks.
 prerequisites:  | 
-  [!include[](../../includes/azure-subscription-prerequisite.md)]
+  [!include[](../../includes/azure-databricks-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/streaming-in-azure-databricks.svg
 levels:
 - intermediate

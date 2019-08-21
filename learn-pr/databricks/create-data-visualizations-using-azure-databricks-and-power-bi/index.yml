@@ -18,7 +18,7 @@ abstract:  |
   - Use advanced visualization techniques with Matplotlib.
   - Build custom reports in Power BI.
 prerequisites:  | 
-  [!include[](../../includes/azure-subscription-prerequisite.md)]
+  [!include[](../../includes/azure-databricks-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/create-data-visualizations-using-azure-databricks-and-power-bi.svg
 levels:
 - intermediate

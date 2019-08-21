@@ -9,5 +9,3 @@ In this module, you will:
 - Learn about the Jupyter Notebook.
 - Create a Jupyter Notebook.
 - Learn about the learning tools that are preinstalled on a DSVM.
-
-[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
