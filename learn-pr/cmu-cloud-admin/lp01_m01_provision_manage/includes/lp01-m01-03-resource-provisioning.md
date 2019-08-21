@@ -24,7 +24,7 @@ A resource-provisioning system for the cloud generally has the following sub-par
 
 As an example, Figure 2.4 shows the typical steps for a customer provisioning a virtual machine from a Cloud Service Provider:
 
-![https://oli.cmu.edu/repository/webcontent/0ea6fc470a0001dc68390ea2588ab51d/\_u02\_data\_centers/\_u02\_m03\_software\_stack/webcontent/provisioning.png](media/image1.png){width="6.5in" height="3.550625546806649in"}
+![https://oli.cmu.edu/repository/webcontent/0ea6fc470a0001dc68390ea2588ab51d/\_u02\_data\_centers/\_u02\_m03\_software\_stack/webcontent/provisioning.png](media/iaas-provisioning.png){width="6.5in" height="3.550625546806649in"}
 
 Figure 2.4: Typical end-to-end IaaS provisioning steps
 
