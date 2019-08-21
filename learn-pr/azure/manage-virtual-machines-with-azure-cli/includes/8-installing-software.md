@@ -4,7 +4,7 @@ The last thing we want to try on our VM is to install a web server. One of the e
 
 1. Locate the public IP address of your Linux virtual machine. Remember you can use the `vm list-ip-addresses` command to look it up.
 
-1. Next, open an `ssh` connection to the machine like you did when we tested it. Remember you will need to pass in the admin name ("**aldis**").
+1. Next, open an `ssh` connection to the machine like you did when we tested it. Remember you will need to pass in the admin name `azureuser`.
 
 1. In the presented shell, execute the following command to install the `nginx` web server.
 
@@ -31,7 +31,10 @@ This command will fail because the Linux virtual machine doesn't expose port 80 
 1. Type the following into Cloud Shell to open port 80:
 
 ```azurecli
-az vm open-port --port 80 --resource-group <rgn>[sandbox resource group name]</rgn> --name SampleVM
+az vm open-port \
+    --port 80 \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name SampleVM
 ```
 
 It will take a moment to add the network rule and open the port through the firewall. Try `curl` again. This time it should return data. You can see the page in a browser as well.

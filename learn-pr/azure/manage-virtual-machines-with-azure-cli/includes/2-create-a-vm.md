@@ -51,7 +51,7 @@ az vm create \
   --resource-group <rgn>[sandbox resource group name]</rgn> \
   --name SampleVM \
   --image Debian \
-  --admin-username aldis \
+  --admin-username azureuser \
   --generate-ssh-keys \
   --location westus \
   --verbose 
@@ -75,7 +75,7 @@ Accepted: vm_deploy_vzKnQDyyq48yPUO4VrSDfFIi81vHKZ9g (Microsoft.Resources/deploy
 
 You can override these auto-generated resource names using optional parameters to `vm create`, such as `--vnet-name` and `--public-ip-address-dns-name`.
 
-We are specifying the administrator account name through the `admin-username` flag to be **"aldis"**. If you omit this, the `vm create` command will use your _current user name_. Since the rules for account names are different for each OS, it's safer to specify a specific name. 
+We are specifying the administrator account name through the `admin-username` flag to be `azureuser`. If you omit this, the `vm create` command will use your *current user name*. Since the rules for account names are different for each OS, it's safer to specify a specific name. 
 
 > [!NOTE]
 > Common names such as "root" and "admin" are not allowed for most images.
