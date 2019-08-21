@@ -24,7 +24,7 @@ compute_target = ComputeTarget.create(ws, compute_name, provisioning_config)
 print('Compute target created')
 ```
 
-## Retrieve the MNIST Data
+## Retrieve the MNIST data
 
 If you did not already do 'Exercise - Load the data for a simple logistic regression model', you will need to run the code below to get the data for this experiment.  
 
