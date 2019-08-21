@@ -1,5 +1,5 @@
 
-Your organization has recently suffered an outage due to building damage in your datacenter from a hurricane. To prevent this from happening in the future, You are now moving this infrastructure to Azure as you want to take advantage of the replication and recovery features available in Azure. You have a number of virtual machines running in Azure already, and now wish to configure protection for them to fail over to a secondary Azure region in the event of a disaster.
+Your organization has recently suffered an outage because of building damage in your datacenter from a hurricane. To reduce the chance of outages happening in the future, you're moving this infrastructure to Azure as you want to take advantage of the replication and recovery features available in Azure. You have a number of virtual machines running in Azure already, and now wish to configure protection for them to fail over to a secondary Azure region if there's a disaster.
 
 In this module, you'll learn about **Azure Site Recovery** and explore the features applicable to a business continuity and disaster recovery (BCDR) plan.
 
