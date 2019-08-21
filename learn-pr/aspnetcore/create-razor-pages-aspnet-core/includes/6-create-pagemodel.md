@@ -18,7 +18,7 @@ namespace Contoso.UI.Pages.Products
 ```
 
 A Razor Page's *:::no-loc text="PageModel":::* class file defines any page handlers for requests sent to the page, and data used to render the page. The *:::no-loc text="PageModel":::* keeps those concerns separate from the Razor Page, your application more modular, and much easier to maintain.
-By convention, the *:::no-loc text="PageModel":::* class is called *:::no-loc text="<PageName>Model":::* and is in the same namespace as the Razor Page. In this case, the `CreateModel` class in the namespace of `ContosoPets.Ui.Pages.Products`.
+By convention, the *:::no-loc text="PageModel":::* class is named *:::no-loc text="<PageName>Model":::* and is in the same namespace as the Razor Page. In this case, the `CreateModel` class in the namespace of `ContosoPets.Ui.Pages.Products`.
 
 Currently, the `CreateModel` class handles the HTTP GET request and does nothing with it.
 
@@ -88,7 +88,7 @@ public async Task<IActionResult> OnPostAsync()
 
 The *:::no-loc text="OnPost":::* handler will need to do the following tasks for this application:
 
-* Verify the user-submitted data posted to the *:::no-loc text="PageModel":::* are valid.
+* Verify the user-submitted data posted to the *:::no-loc text="PageModel":::* is valid.
 * If the attempted *:::no-loc text="PageModel":::* changes are not valid, the *:::no-loc text="Create":::* page is presented again to the user. A message is displayed clarifying the input requirements.
 * If the *:::no-loc text="PageModel":::* update is valid, then data changes are passed to a service called *:::no-loc text="ProductService":::*. *:::no-loc text="ProductService":::* will handle the concern of HTTP requests and responses to the web API.
 
@@ -166,11 +166,11 @@ There is a comprehensive set of data annotation attributes available to you thro
 
 ## The *:::no-loc text="Product":::* Model as a Data Transfer Object
 
-The `Product` model also serves as a Data Transfer Object (DTO). A DTO is an object that defines the data that will be sent over the network, in this case to the web API. The *:::no-loc text="ContosoPets.UI":::* `ProductService` class that handles all HTTP requests uses the `Product` model as a DTO that defines valid *:::no-loc text="Product":::* data that can be sent to and receive from the web API.
+The `Product` model also serves as a Data Transfer Object (DTO). A DTO is an object that defines the data that will be sent over the network, in this case to the web API. The *:::no-loc text="ContosoPets.UI":::* `ProductService` class that handles all HTTP requests uses the `Product` model as a DTO that defines valid *:::no-loc text="Product":::* data that can be sent to and received from the web API.
 
 ## Injecting the ContosoPets.UI ProductService Service that handles HTTP requests
 
-As a final step, the *:::no-loc text="OnPost":::* method in your `CreateModel` class passes the validated data to a service class named `ProductService`. The `ProductService` class is an example of a typed *:::no-loc text="HTTPClient":::* service architecture. Simply put, the `ProductService` class is responsible for executing all HTTP requests to the web API so that code is maintained in one place. Furthermore it is registered at startup as a service so that it may be injected where needed. It is injected in this project for all *:::no-loc text="PageModel":::* classes that initiate Crud operations for their Razor Pages. We will walk through an example of `ProductService` HTTP request logic lifecycle in the next unit.
+As a final step, the *:::no-loc text="OnPost":::* method in your `CreateModel` class passes the validated data to a service class named `ProductService`. The `ProductService` class is an example of a typed *:::no-loc text="HTTPClient":::* service architecture. Simply put, the `ProductService` class is responsible for executing all HTTP requests to the web API so that code is maintained in one place. Furthermore it is registered at startup as a service so that it may be injected where needed. It is injected in this project for all *:::no-loc text="PageModel":::* classes that initiate Crud operations for their Razor Pages. You will walk through an example of `ProductService` HTTP request logic lifecycle in the next unit.
 
 The `ProductService` class was made available to the `Create` *:::no-loc text="PageModel":::* class with the following *:::no-loc text="using":::* statement:
 
@@ -178,7 +178,7 @@ The `ProductService` class was made available to the `Create` *:::no-loc text="P
 using ContosoPets.Ui.Services;
 ```
 
-The `ProductService` service is injected directly into `CreateModel` by implementing it as a type, using dependency injection:
+The `ProductService` service is injected directly into `CreateModel` by including it as a constructor parameter, using dependency injection:
 
 ```csharp
 public class CreateModel : PageModel
@@ -194,7 +194,7 @@ public class CreateModel : PageModel
     }
 ```
 
-ASP.NET Core supports the Inversion of Control (IoC) pattern using Dependency Injection (DI). This pattern allows the `ProductService` service to be injected directly into the constructor of this class where it's used. The framework takes on the responsibility of creating an instance of the class and disposing of it when it's no longer needed. The `ProductService` class defines a constructor, `CreateModel` that the service provides to the app. This interface is implemented by a concrete type, `ProductService`. This IoC design pattern allows ASP.NET Core developers to avoid the inherited costs of a class taking a direct dependency on another class.
+ASP.NET Core supports the Inversion of Control (IoC) pattern using Dependency Injection (DI). This pattern allows the `ProductService` service to be injected directly into the constructor of this class where it's used. The framework takes on the responsibility of creating an instance of the class and disposing of it when it's no longer needed. The `ProductService` class defines a constructor, `CreateModel` that the service provides to the app. This interface is implemented by a concrete type, `ProductService`. This IoC design pattern allows ASP.NET Core developers to avoid the inherent costs of a class taking a direct dependency on another class.
 
 The following code calls the `CreateModel` method, passing the `Product` Data Transfer Object (DTO) which will be sent by HTTP request to the web API.
 
@@ -220,4 +220,4 @@ Now that the *:::no-loc text="Create.cshtml":::* Razor Page and its *:::no-loc t
 
 The preceding highlighted code uses an *:::no-loc text="Anchor Tag Helper":::* to direct the user to the *:::no-loc text="ContosoPets.Ui/Pages/Products/Create.cshtml":::* Razor Page located in the same directory as the Index page. The *:::no-loc text="Anchor Tag Helper":::* enhances the standard HTML anchor `(<a ... ></a>` tag by adding new attributes, such as the `[asp-page-handler]` attribute used to route to specific page handlers or the `[asp-page]` attribute, as used here, to set an anchor tag's `href` attribute value to a specific page.
 
-Next, let's explore the lifecycle of the *:::no-loc text="ContosoPets.UI":::* project's `ProductService` HTTP request logic.
+Next, you will explore the lifecycle of the *:::no-loc text="ContosoPets.UI":::* project's `ProductService` HTTP request logic.

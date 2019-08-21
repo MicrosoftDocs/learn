@@ -2,7 +2,7 @@ In this unit, you will step through the lifecycle of the *:::no-loc text="Contos
 
 # Advantages of using a typed *:::no-loc text="HTTPClient":::* service architecture
 
-As mentioned in the previous unit, the `ProductService` class is an example of a typed `HttpClient` service architecture and is responsible for managing HTTP requests to the web API. Provided as a typed service you have the advantage of injecting it as a type directly into the CRUD operation PageModel classes in this project. Using this architecture provides the advantage of letting the framework take on the responsibility of creating an instance the `HttpClient` class and disposing of it when it's no longer needed. This is a great feature for a project such as this one which will make use of `HttpClient` instances for each CRUD operation.
+As mentioned in the previous unit, the `ProductService` class is an example of a typed `HttpClient` service architecture and is responsible for managing HTTP requests to the web API. Provided as a typed service you have the advantage of injecting it as a constructor parameter directly into the PageModel classes in this project. Using this architecture provides the advantage of letting the framework take on the responsibility of creating an instance of the `HttpClient` class and disposing of it when it's no longer needed. This is a great feature for a project such as this one which will make use of `HttpClient` instances for each CRUD operation.
 
 ## Examine the structure of the *:::no-loc text="ProductService":::* class file and walk through its registration and instantiation as a typed service
 
@@ -100,7 +100,7 @@ The `BaseAddress` URI that the `HttpClient` instance will use for all requests t
   },
 ```
 
-Now that we walked through how `ProductService` is made available to the application as a service at startup, let's walk through the lifecycle of its `CreateProduct` method.
+Now that you walked through how `ProductService` is made available to the application as a service at startup, let's walk through the lifecycle of its `CreateProduct` method.
 
 ## Walk through the lifecycle of the `CreateProduct` method
 
@@ -124,7 +124,7 @@ public async Task<IActionResult> OnPostAsync()
 
 In the preceding code, if the `ModelState` is not valid, then the `Page` helper method is called. `Page` returns an instance of `PageResult`.
 
-If the `ModelState` is valid, then the `OnPostAsync` method calls the `ProductService` class's `CreateProduct` method and passes an instance of `HttpClient` to the `ProductService` as seen in the following code:
+If the `ModelState` is valid, then the `OnPostAsync` method calls the `ProductService` class's `CreateProduct` method and passes an instance of `Product` model, as seen in the following code:
 
 ```csharp
 await _productService.CreateProduct(Product);
@@ -141,7 +141,7 @@ return RedirectToPage("Index");
         }
 ```
 
-As pointed out previously, the `ProductService` service was injected directly into `CreateModel` by implementing it as a type, using DI.
+As pointed out previously, the `ProductService` service was injected directly into `CreateModel` by including it as a constructor parameter, using DI.
   
 Once the ASP.NET Core runtime determines the `HTTPClient` instance is no longer in use, it automatically disposes of it.
 
