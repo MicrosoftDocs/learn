@@ -2,9 +2,17 @@ The last thing we want to try on our VM is to install a web server. One of the e
 
 ## Install NGINX web server
 
-1. Locate the public IP address of your Linux virtual machine. Remember you can use the `vm list-ip-addresses` command to look it up.
+1. Locate the public IP address of your *SampleVM* Linux virtual machine.
 
-1. Next, open an `ssh` connection to the machine like you did when we tested it. Remember you will need to pass in the admin name `azureuser`.
+    ```azurecli
+    az vm list-ip-addresses --name SampleVM --output table
+    ```
+
+1. Next, open an `ssh` connection to *SampleVM* like you did when we tested it.
+
+    ```bash
+    ssh azureuser@<PublicIPAddress>
+    ```
 
 1. In the presented shell, execute the following command to install the `nginx` web server.
 
