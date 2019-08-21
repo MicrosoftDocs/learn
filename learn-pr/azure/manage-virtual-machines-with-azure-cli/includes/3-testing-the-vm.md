@@ -41,4 +41,4 @@ permitted by applicable law.
 azureuser@SampleVM:~$
 ```
 
-Try a few commands as practice and when you are finished, sign out of the shell (type `logout` or `exit` in the shell).
+Try a few commands, such as `ps` or `ls` as practice. When you are finished, sign out of the virtual machine by typing `exit` or `logout`.
