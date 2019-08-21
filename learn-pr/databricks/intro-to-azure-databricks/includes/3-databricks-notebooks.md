@@ -23,9 +23,6 @@ The notebooks are backed by clusters, or networked computers, that work together
 1. Specify your cluster configuration. While on the 14 day free trial, the defaults will be sufficient. When the trial is ended, you may prefer to change `Min Workers` to zero. That will allow the compute resources to shut down when you are not in a coding exercise and reduce your charges.
 1. Select **Create Cluster**.
 
-> [!NOTE]
-> Check with your local system administrator to see if there is a recommended default cluster at your company to use for the rest of the class. Making new cluster will incur costs.
-
 ## Create a notebook
 
 1. On the left-hand menu of your Databricks workspace, select **Home**.
