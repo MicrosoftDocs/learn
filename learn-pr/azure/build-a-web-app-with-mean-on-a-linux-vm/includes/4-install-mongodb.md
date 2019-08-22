@@ -44,6 +44,21 @@ Here you'll install MongoDB with just a few commands. You'll work from the SSH c
     sudo systemctl status mongodb
     ```
 
+    You should see the service running.
+
+    ```output
+    azureuser@MeanStack:~$ sudo systemctl status mongodb
+    ● mongodb.service - An object/document-oriented database
+      Loaded: loaded (/lib/systemd/system/mongodb.service; enabled; vendor preset: enabled)
+      Active: active (running) since Thu 2019-08-22 16:46:30 UTC; 9s ago
+        Docs: man:mongod(1)
+    Main PID: 18360 (mongod)
+      CGroup: /system.slice/mongodb.service
+              └─18360 /usr/bin/mongod --config /etc/mongodb.conf
+
+    Aug 22 16:46:30 MeanStack systemd[1]: Started An object/document-oriented database.
+    ```
+
 1. Run `mongod --version` to verify the installation.
 
     ```bash
