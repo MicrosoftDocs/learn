@@ -29,7 +29,7 @@ You can add handler methods for any HTTP verb. The most common handlers are:
 
 The *:::no-loc text="Create":::* page is a form and requires an *:::no-loc text="OnPost handler method":::*.
 
-## Adding an *:::no-loc text="OnPost handler method":::* to the `Create` *:::no-loc text="PageModel":::* class
+## Adding an `OnPost` handler method to the `Create` *:::no-loc text="PageModel":::* class
 
 Replace the code in the *:::no-loc text="Create.cshtml.cs":::* *:::no-loc text="PageModel":::* class file located in the *:::no-loc text="ContosoPets.Ui/Pages/Products/":::* directory with the following, and save your changes:
 
@@ -103,7 +103,7 @@ public Product Product { get; set; }
 
 Binding to properties can reduce the amount of code you have to write. Binding reduces code by using the same property to render fields such as in `<input asp-for="Product.Name">`.
 
-## Built-in server-side model validation using ASP.NET Core *:::no-loc text="Data Annotations":::*
+## Built-in server-side model validation using ASP.NET Core data annotations
 
 Model binding and validation functionality are built-in when you create a ASP.NET Core web application. Both automatically occur before the execution of a Razor Page's handler method. So the *:::no-loc text="OnPostAsync":::* handler method only needs to verify the outcome of that validation.
 
@@ -124,7 +124,7 @@ await _productService.CreateProduct(Product);
 return RedirectToPage("Index");
 ```
 
-## Defining validation rules for the product model using DataAnnotations
+## Defining validation rules for the product model using data annotations
 
 This project uses a central model file *:::no-loc text="Product.cs":::* for `Product` model validation and operations. It's used by all Razor Page *:::no-loc text="PageModels":::* involved in UI for Product CRUD operations, and is used to validate product data received from the web api. By convention it's stored in the *:::no-loc text="Models/":::* directory. The `Product` model class namespace is `ContosoPets.Ui.Models`.
 
@@ -164,11 +164,11 @@ If you decide to enforce more validation rules, you can easily modify attributes
 
 There is a comprehensive set of data annotation attributes available to you through `System.ComponentModel.DataAnnotations`. For the scope of this module, a small and simplified example is provided.
 
-## The *:::no-loc text="Product":::* Model as a Data Transfer Object
+## The *:::no-loc text="Product":::* model as a data transfer object
 
 The `Product` model also serves as a Data Transfer Object (DTO). A DTO is an object that defines the data that will be sent over the network, in this case to the web API. The *:::no-loc text="ContosoPets.UI":::* `ProductService` class that handles all HTTP requests uses the `Product` model as a DTO that defines valid *:::no-loc text="Product":::* data that can be sent to and received from the web API.
 
-## Injecting the ContosoPets.UI ProductService Service that handles HTTP requests
+## Injecting the ContosoPets.UI ProductService service that handles HTTP requests
 
 As a final step, the *:::no-loc text="OnPost":::* method in your `CreateModel` class passes the validated data to a service class named `ProductService`. The `ProductService` class is an example of a typed *:::no-loc text="HTTPClient":::* service architecture. Simply put, the `ProductService` class is responsible for executing all HTTP requests to the web API so that code is maintained in one place. Furthermore it is registered at startup as a service so that it may be injected where needed. It is injected in this project for all *:::no-loc text="PageModel":::* classes that initiate Crud operations for their Razor Pages. You will walk through an example of `ProductService` HTTP request logic lifecycle in the next unit.
 
