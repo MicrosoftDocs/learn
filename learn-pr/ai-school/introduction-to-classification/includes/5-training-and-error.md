@@ -22,14 +22,4 @@ Much of the work in building an AI system is thinking about what data we need, h
 
 It is common in machine learning and statistics to have datasets that have missing values. It is important, however, to be careful about how we deal with these missing values. For example, let’s say we are working with medical test results. Not all possible medical tests are run on each person, which leaves blanks in our dataset. It is important that we are careful with these empty entries. If we use a 0, for example, where no blood-pressure test was taken, and feed this data to an AI model, that model will assume that some people had blood pressure measurements of 0mmHg. This is likely to mean that the machine learning model will not perform well.
 
-## Summary
-
-Now you’ve been walked through the basics of classification algorithms, and used logistic regression to predict the probability of a team winning a football (soccer) match! We’ve also covered training a model, and error. Well done.
-
-That's the end of the unit and module! Here we learned:
-
-* __Training__ - the AI algorithm changes the variables it uses to make predictions until it reaches its lowest error rate.
-* __Irreducible error__ - data points that the model cannot possibly predict accurately.
-* __Bayes error__ - the lowest possible error rate, where an algorithm cannot become any more accurate.  
-
 Now that you’ve had an introduction to classification, let’s wrap up everything you’ve learned with a quick summary of the module.

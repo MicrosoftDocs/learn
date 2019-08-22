@@ -18,13 +18,4 @@ Deep learning and other variations of neural networks are very similar. The diff
 
 So to predict that what’s in this red square is part of an elephant’s ear, the neural network would look closely around the red square, and not at the grass at the bottom of the image.
 
-## Summary
-
-Neural networks aren't difficult if we break them down to their individual components. Here we introduced:
-
-* __Nodes__ - parts of the neural network that combine data from other nodes, and output the combined data to nodes further down the neural network.
-* __Input layer__ - the features from an example we input into the model, the same as we have used previously in the course.
-* __Output layer__ - where we apply the labels to the examples.
-* __Hidden layers__ - where nodes are contained and data travels through. These layers are not seen in the training set.
-
 Don't worry if that didn't completely make sense - the next unit reviews layers and how they connect.

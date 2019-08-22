@@ -20,13 +20,4 @@ In practice clustering tends to be used for social network analysis, computer cl
 
 There many types of cluster analysis, but AI practitioners tend to use k-means clustering for quick analysis. For in-depth unsupervised learning, there are many tools - you can use support vector machines (support vector clustering), neural networks, and so on. Next we’ll look at k-means clustering.
 
-## Summary
-
-Well done! In this section we covered:
-
-* __Unsupervised learning__ - when we don't have labels for our data sets.
-* Unsupervised learning is discovering patterns or groupings in this unlabeled data.
-* __Cluster analysis__ - a popular type of unsupervised learning.
-* __k-means clustering__ - a popular type of cluster analysis used by AI practitioners.
-
 Next up we've got k-means! Stick with us - we're nearly at the end.

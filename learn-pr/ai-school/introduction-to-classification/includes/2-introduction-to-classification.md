@@ -22,11 +22,4 @@ So if we want to predict the breed of dogs, we would create a data set and label
 
 There are lots of different classification algorithms we can use. We’ll use a simple, but powerful, classification algorithm next - __logistic regression__.
 
-## Summary
-
-Well done! In this step, we covered:
-
-* __Classification models__ sort examples into different categories.
-* __Logistic regression__ a classification algorithm that can use one or many features to predict a category.
-
 Stay with us! Don't worry if you feel a bit lost right now - next up we'll walk you through logistic regression.

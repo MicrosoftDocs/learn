@@ -12,11 +12,4 @@ Polynomial regression is actually a simple modification of multiple linear regre
 
 As polynomial regression and multiple linear regression are easy and quick to use, it is common to approach regression problems by using both algorithms to get an idea of how different algorithms may perform on your data set.
 
-## Summary
-
-All done! Here we covered:
-
-* __Non-linear data sets__ - many relationships can not be predicted by a straight line - we need a non-linear model.
-* __Polynomial regression__ - variation of linear regression that can model non-linear data sets.
-
 Next up we will build a polynomial regression model in Azure Notebooks.

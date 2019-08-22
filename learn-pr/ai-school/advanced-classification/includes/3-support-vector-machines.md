@@ -23,13 +23,5 @@ Data points on the margin are called support vectors (hence, the model is called
 ![Scatter plot showing a non-linear support vector machine. The plot has two types of data points - green and blue data points. They are on opposite diagonal sides of the plot, divided by a non-linear black line that represents the hyperplane. There are two red lines either side of the black line, which intersects with several of the data points on each side - these are margins. There are no data points between the red lines.](../media/2.4_SupportVectorMachines-02.png)
 
 New examples introduced to an SVM model are labeled with a category based on which side of the margin they fall upon. If desired, the number of hyperplanes can be increased, allowing many different types of labels. This is useful in text and image classification. SVMs have been widely applied in biology in areas such as accurately classifying proteins and DNA sequences.
-
-
-## Summary
-
-Here we covered:
-* __Hyperplanes__ - the line separating categories for SVMs.
-* __Support vectors__ - the data points from different categories that are closest to those of the other category.
-* __Margin__ - the boundary between categories in which no data points are placed - decided by the support vectors.  
   
 Next up we'll open up Azure Notebooks and try out a basic SVM.

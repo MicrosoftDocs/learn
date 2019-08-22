@@ -37,6 +37,7 @@ There are several types of kernels you can use for the kernel trick, including l
 You just need to know the different kernels exist, and you should try several of them to try to improve your models accuracy. Luckily, it’s very easy to try different kernels, so let’s give it a go.
 
 ### Using a category as a feature - one-hot vectors
+
 Often you may have a category in your dataset you want to use as a feature – such as a products country of origin. To use a category as a feature you represent the category as a __one-hot vector__.
 
 ![TBC if we keep in optional content](../media/3.2_OneHotVector.png)

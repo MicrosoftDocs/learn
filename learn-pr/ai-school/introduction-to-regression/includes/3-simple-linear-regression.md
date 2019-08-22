@@ -10,11 +10,4 @@ All data contains variability. This means that a straight-line prediction will a
 
 Error is a natural part of building a model. In AI, it’s a tool rather than something to avoid. *Simple linear regression finds a best line by calculating which straight line would give the least amount of error*.
 
-## Summary
-
-Here we covered:
-
-* __Simple linear regression__ - uses one feature to predict a value.
-* __Linear regression__ - fits the line that gives the least amount of error.
-
 Next up we're going to build a simple linear regression model in Azure Notebooks.

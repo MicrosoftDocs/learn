@@ -14,14 +14,4 @@ If a neural network model is taking a long time to train, you can try SGD instea
 
 Forward propagation and backpropagation are how neural networks optimize their weights and produce accurate output. Don't worry about the details - here’s a nice diagram showing how they work!
 
-## Summary
-
-Well done! To recap on SGD:
-
-* __SGD picks one random example__, and checks the cost of this with the cost function.
-* The __weights are adjusted__ using gradient descent.
-* __SGD picks a new random example__ to check the cost, and so on until a minimum cost is reached.
-* When a minimum cost is reached, SGD randomizes the parameters and begins again to attempt to achieve a better result.
-* Forward propagation and back-propagation exist, and the algorithm does them for you. You don't need to know the details.
-
 That's it! Next up we'll do a programming exercise in Azure notebooks - advanced neural networks (don't worry, we'll easily walk you through it).

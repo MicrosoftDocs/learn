@@ -25,13 +25,5 @@ Learning rates are particularly important in complex models - if a learning rate
 In practice it’s a good idea to find an adequate learning rate, rather than spending time trying to find an optimal one. An adequate learning rate is large enough that your model is trained efficiently, but not so small that you cannot find a minima. It is perfectly acceptable to find an appropriate learning rate through trial and error.
 
 ![TBC if we keep in optional content](../media/2.3_LearningRate-01.png)
-
-## Summary
-
-We’ve covered the two core methods powering AI:
-
-* __Cost__ - our error metric.
-* __Cost function__ - calculates the cost of an AI model.
-* __Gradient descent__ - changes a model’s predictions to decrease the cost, making predictions more accurate.
   
 Next up we'll look at one of the most elegant solutions in machine learning - support vector machines.
