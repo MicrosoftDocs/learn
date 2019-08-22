@@ -4,7 +4,7 @@ In this module, you walked through the Razor Pages related architecture of a bas
 
 [!INCLUDE[](../../../includes/azure-sandbox-cleanup.md)]
 
-## Next Steps
+## Next steps
 
 Take a deeper dive into the documentation. The following ASP.NET Core features and concepts were introduced in this module:
 
