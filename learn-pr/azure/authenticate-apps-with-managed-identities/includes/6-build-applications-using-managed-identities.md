@@ -57,7 +57,7 @@ az identity delete \
 
 ## Using Managed Identity with Azure Key Vault
 
-Azure Key Vault provides a short-cut for the authentication process. The `AzureTokenServiceProvider` class has the `KeyVaultTokenCallback` property, which returns a delegate. An application uses this delegate to generate and authenticate the access token for the Key Vault service, based on the managed identity of the app. A `KeyVaultClient` object, which is used to access secrets in a key vault, can invoke the delegate using an `AuthenticationCallback` object. The code below shows how to create a `KeyVaultClient` object that authenticates the managed ID of an app.
+Azure Key Vault provides the means of delegating the authentication process. The `AzureTokenServiceProvider` class has the `KeyVaultTokenCallback` property, which returns a delegate. An application uses this delegate to generate and authenticate the access token for the Key Vault service, based on the managed identity of the app. A `KeyVaultClient` object, which is used to access secrets in a key vault, can invoke the delegate using an `AuthenticationCallback` object. The code below shows how to create a `KeyVaultClient` object that authenticates the managed ID of an app.
 
 ```C#
 KeyVaultClient keyVaultClient = new KeyVaultClient(
