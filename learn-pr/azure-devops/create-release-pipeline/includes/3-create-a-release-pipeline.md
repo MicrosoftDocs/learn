@@ -66,7 +66,7 @@ Andy lists these options on the whiteboard:
 
 **Mara:** I know containers and serverless computing are really popular right now. Compared to VMs, they're both lightweight in terms of resources. I also know that they're easy to replace and scale up. They're both interesting but I'm nervous learning about two new technologies at the same time. I'd rather concentrate just on building the pipeline.
 
-**Andy:** I'm with you. That leaves VMs or App Service. I think VMs would be a better choice if we were moving some line-of-business app, one that needs its own particular environment, to the cloud. We're not doing anything that big.
+**Andy:** I'm with you. That leaves VMs or App Service. I think VMs would be a better choice if we were moving a line-of-business app, one that requires full access to some particular environment, to the cloud. We're not doing anything that big.
 
 **Mara:** That leaves App Service. That would be my choice. It's designed to work with Azure DevOps and it comes with a lot of advantages. It's a platform-as-a-service (PaaS) environment for web apps so it takes a lot of the burden off of us. We won't have to worry about infrastructure. It also comes with security features and enables us to perform load balancing and automatic scaling.
 
@@ -97,9 +97,25 @@ You use the `DownloadBuildArtifacts@0` task to download artifacts. We need this 
 This task requires a few inputs. They are:
 
 * `buildType`: This specifies whether we want the artifacts from the current build or a specific build. For now, we want to deploy the current build.
-* `downloadType`: This specifies whether to download a single artifact or all the artifacts associated with this build. We want to download the _zip_ file that contains the web application package.
 * `artifactName`: This specifies the name of the artifact to download. We need this to specify the name of the _zip_ file.
 * `downloadPath`: This specifies where to find the artifact on the build agent.
+
+Here's an example that downloads the latest package from the pipeline to the build agent:
+
+```yml
+- task: DownloadBuildArtifacts@0
+  inputs:
+    buildType: 'current'
+    artifactName: 'drop'
+    downloadPath: '$(Build.ArtifactStagingDirectory)'
+```
+
+The `download` task is a shortcut for the `DownloadBuildArtifacts@0` task. Here's an example that uses the `download` task to download the same artifact from the pipeline:
+
+```yml
+- download: current
+  artifact: drop
+```
 
 ### AzureWebApp@1
 
@@ -110,6 +126,55 @@ This task also requires a few inputs. They are:
 * `azureSubscription`: This is the service connection we talked about earlier. We need this to authenticate with the target environment.
 * `appName`: This specifies the name of our App Service instance.
 * `package`: This specifies where on the build agent to find the package to deploy.
+
+Here's an example that uses `AzureWebApp@1` to deploy the contents of _MyPackage.zip_ to an App Service instance that's named "MyWebApp":
+
+```yml
+- task: AzureWebApp@1
+  displayName: 'Deploy to Azure App Service'
+  inputs:
+    azureSubscription: 'MyServiceConnection'
+    appName: 'MyWebApp'
+    package: '**/MyPackage.zip'
+```
+
+The `azureSubscription` part specifies the service connection that's named "MyServiceConnection". You'll work with service connections shortly.
+
+### What are jobs, environments, and strategies?
+
+Your existing build pipeline defines a build agent, pipeline variables, and the tasks needed to build your software.
+
+The deployment part of your pipeline contains these same elements. In addition, your deployment configuration will typically also define one or more jobs, environments, and strategies.
+
+Here's an example configuration that you'll run later in this module. This configuration deploys the _Space Game_ website to App Service.
+
+[!code-yml[](code/3-azure-pipelines.yml?highlight=4-5,8,11-13)]
+
+#### Jobs
+
+A _job_ is a series of steps that run sequentially as a unit. Every pipeline stage has one job by default even when that stage does not use the `job` keyword.
+
+A job can run on in an agent pool, on a container, or directly on the Azure DevOps server. The example job shown here runs on an Ubuntu build agent.
+
+You can specify the conditions under which each job runs. The example job shown here does not define any conditions. By default, a job runs if it does not depend on any other job, or if all of the jobs that it depends on have completed and succeeded.
+
+You can also run jobs parallel or sequentially. Using your existing build pipeline as an example, you can use parallel jobs to build your software on Windows, Linux and macOS build agents simultaneously.
+
+A _deployment job_ is a special type of job that plays an important role in your deployment stages. Deployment jobs record the status of your deployments in Azure Pipelines, providing you with an audit trail. Deployment jobs also help you define your deployment strategy, which we define shortly.
+
+#### Environments
+
+In Azure Pipelines, an _environment_ is an abstract representation of your deployment environment, such as a Kubernetes cluster, an App Service instance, or a virtual machine.
+
+In this module, you have one environment: the App Service instance the team is using for their proof of concept. In future modules, you'll work with other environments, including _Dev_, _Test_, _Staging_, and _Production_.
+
+An environment records the deployment history for an environment to help you identify the source of changes. Pipeline environments also enable you to specify which pipelines are authorized to deploy to a specific target environment.
+
+In the next module, you'll use environments to define a release approval, or a way to pause the pipeline until an approver accepts or rejects the release.
+
+#### Strategies
+
+A _strategy_ defines how your application is rolled-out. You'll learn more about strategies such as blue-green and canary in a future module. For now, you'll use what's called the _runOnce_ strategy to download the _Space Game_ package from the pipeline and deploy it to App Service.
 
 ### How does Azure Pipelines connect to Azure?
 
@@ -146,6 +211,6 @@ Andy and Mara are ready to begin. They're going to:
 
 ![A hand-drawn illustration of a deployment pipeline that contains two stages](../media/3-whiteboard-4.png)
 
-**Andy:** We will use ![Callout 1](../../shared/media/callout-01.png) Azure Pipelines to deploy to ![Callout 2](../../shared/media/callout-02.png) App Service. We take the existing ![Callout 3](../../shared/media/callout-03.png) build artifact as the input to the ![Callout 4](../../shared/media/callout-04.png) deployment stage. The tasks in the deployment stage ![Callout 5](../../shared/media/callout-05.png) download the artifact and ![Callout 6](../../shared/media/callout-06.png) deploy the artifact to the App Service by using a service connection.
+**Andy:** We will use ![Callout 1](../../shared/media/callout-01.png) Azure Pipelines to deploy to ![Callout 2](../../shared/media/callout-02.png) App Service. We take the existing ![Callout 3](../../shared/media/callout-03.png) build artifact as the input to the ![Callout 4](../../shared/media/callout-04.png) deployment stage. The tasks in the deployment stage ![Callout 5](../../shared/media/callout-05.png) download the artifact and use a service connection to ![Callout 6](../../shared/media/callout-06.png) deploy the artifact to App Service.
 
 **Mara:** That about sums it up. Let's get started.
