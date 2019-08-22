@@ -31,8 +31,8 @@ We won't go into many of the details about how App Service works or the configur
     | Field                | Value                                                                                         |
     |----------------------|-----------------------------------------------------------------------------------------------|
     | **Subscription**     | Your Azure subscription                                                                       |
-    | **Resource Group**   | Select **Create new** and then enter **TailspinAppServiceRG** as the resource group name.     |
-    | **Name**             | Provide a unique name, such as **TailspinSpaceGame1234**                                      |
+    | **Resource Group**   | Select **Create new** and then enter **tailspin-space-game-rg** as the resource group name.   |
+    | **Name**             | Provide a unique name, such as **tailspin-space-game-web-1234**                               |
     | **Publish**          | **Code**                                                                                      |
     | **Runtime stack**    | **.NET Core 2.1**                                                                             |
     | **Operating System** | **Linux**                                                                                     |
@@ -82,12 +82,12 @@ Here, you create a service connection that enables Azure Pipelines to access you
     The **Add an Azure Resource Manager service connection** dialog appears.
 1. From the dialog, ensure **Service Principal Authentication** is selected. Then fill in these fields:
 
-    | Field               | Value                         |
-    |---------------------|-------------------------------|
-    | **Connection name** | **TailspinServiceConnection** |
-    | **Scope level**     | **Subscription**              |
-    | **Subscription**    | Your Azure subscription       |
-    | **Resource Group**  | **TailspinAppServiceRG**      |
+    | Field               | Value                                        |
+    |---------------------|----------------------------------------------|
+    | **Connection name** | **Resource Manager - Tailspin - Space Game** |
+    | **Scope level**     | **Subscription**                             |
+    | **Subscription**    | Your Azure subscription                      |
+    | **Resource Group**  | **tailspin-space-game-rg**                   |
 
     During the process, you'll likely be prompted to sign in to your Microsoft account.
 
@@ -123,11 +123,9 @@ steps:
 
 A _multi-stage pipeline_ enables you to define distinct deployment phases as your change makes its way through the pipeline. Each stage defines the agent, variable, and steps required to carry out that phase of the deployment. In this module, you define one stage to perform the build, and a second stage to deploy the web application to App Service.
 
-To convert your existing build configuration to a multi-stage pipeline, you add a `stages` section to your configuration. You then add one or more `stage` sections to define each phase of your deployment.
+To convert your existing build configuration to a multi-stage pipeline, you add a `stages` section to your configuration. You then add one or more `stage` sections to define each phase of your deployment. Stages also break down into jobs, which are a series of steps that run sequentially as a unit.
 
-Stages also break down into jobs, A _job_ is a series of steps that run sequentially as a unit. You'll work with jobs shortly.
-
-Before we add the deployment stage to the pipeline, let's first convert the existing build configuration to be multi-stage.
+Before we add the deployment stage to the pipeline, let's first convert the existing build configuration to a multi-stage pipeline.
 
 1. From your project in Visual Studio Code, open *azure-pipelines.yml* file and replace its contents with this.
 
@@ -156,7 +154,7 @@ Before we add the deployment stage to the pipeline, let's first convert the exis
 
 Here you add a variable to your pipeline that stores the name of your web app in App Service.
 
-When you set up App Service earlier, you assigned it a name, such as **TailspinSpaceGame1234**.
+When you set up App Service earlier, you assigned it a name, such as **tailspin-space-game-web-1234**.
 
 The deployment stage you'll define shortly uses this name to identify which App Service instance to deploy to.
 
@@ -172,20 +170,20 @@ To add the variable:
 1. Select **+ Variable group**.
 1. Under **Properties**, enter **Release Pipeline** for the variable group name.
 1. Under **Variables**, select **+ Add**.
-1. Enter **WebAppName** as the name of your variable. Enter your App Service instance's name, such as **TailspinSpaceGame1234**, as its value.
+1. Enter **WebAppName** as the name of your variable. Enter your App Service instance's name, such as **tailspin-space-game-web-1234**, as its value.
 1. Select **Save** near the top of the page to save your variable group to the pipeline.
 
 ## Add the deployment stage to the pipeline
 
 Here, you extend your configuration by adding a deployment stage that deploys the _Space Game_ web application to App Service.
 
-To do so, you define a second stage and use the `DownloadBuildArtifacts@0` and `AzureWebApp@1` tasks to download the build artifact from the pipeline and perform the deployment.
+To do so, you define a second stage and use the `download` and `AzureWebApp@1` tasks to download the build artifact from the pipeline and perform the deployment.
 
 1. From Visual Studio Code, replace the contents of *azure-pipelines.yml* with this.
 
     [!code-yml[](code/5-azure-pipelines-2.yml?highlight=64-)]
 
-    Notice the use of the `DownloadBuildArtifacts@0` and `AzureWebApp@1` tasks. `$(WebAppName)` reads the web app name from your pipeline variables.
+    Notice the use of the `download` and `AzureWebApp@1` tasks. `$(WebAppName)` reads the web app name from your pipeline variables.
 
 1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub.
 

@@ -11,9 +11,9 @@ To clean up your resource group:
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. Select **Resource groups** from the menu.
-1. Select your resource group, **TailspinAppServiceRG**.
+1. Select your resource group, **tailspin-space-game-rg**.
 1. Select **Delete resource group**.
-1. Enter **TailspinAppServiceRG** into the text box and then select **Delete**.
+1. Enter **tailspin-space-game-rg** into the text box and then select **Delete**.
 
     After the deletion process completes, you are taken back to the list of resource groups in your Azure subscription.
 
