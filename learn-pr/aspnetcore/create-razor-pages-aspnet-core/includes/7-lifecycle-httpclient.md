@@ -1,6 +1,6 @@
 In this unit, you will step through the lifecycle of the *:::no-loc text="ContosoPets.UI":::* project's `ProductService` class HTTP request logic.
 
-# Advantages of using a typed *:::no-loc text="HTTPClient":::* service architecture
+## Advantages of using a typed *:::no-loc text="HTTPClient":::* service architecture
 
 As mentioned in the previous unit, the `ProductService` class is an example of a typed `HttpClient` service architecture and is responsible for managing HTTP requests to the web API. Provided as a typed service you have the advantage of injecting it as a constructor parameter directly into the PageModel classes in this project. Using this architecture provides the advantage of letting the framework take on the responsibility of creating an instance of the `HttpClient` class and disposing of it when it's no longer needed. This is a great feature for a project such as this one which will make use of `HttpClient` instances for each CRUD operation.
 
