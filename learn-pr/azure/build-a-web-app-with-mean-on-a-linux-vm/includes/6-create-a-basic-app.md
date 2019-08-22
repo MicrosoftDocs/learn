@@ -440,10 +440,10 @@ You're now ready to test out your Node.js web application!
 
     You see the index page, which includes a web form.
 
-    ![A web page with a form and submission button.](../media/6-book-page.png)
+    ![A screenshot of the book web page with a form and submission button.](../media/6-book-page.png)
 
     Try adding a few books to the database. Each time you add a book, the page updates the complete list of books.
 
-    ![](../media/6-book-sample-entries.png)
+    ![A screenshot of the book web page with sample data populated](../media/6-book-sample-entries.png)
 
     You can also click the **Delete** button to delete a book from the database.
