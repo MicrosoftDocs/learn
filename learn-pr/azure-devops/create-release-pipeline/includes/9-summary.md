@@ -38,8 +38,12 @@ Azure DevOps enables you to build upon your investment with other CI/CD tools. L
 
 These resources provide more information on some of the topics that are covered in this module.
 
+* [Jobs](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml)
+* [Deployment jobs](https://docs.microsoft.com/azure/devops/pipelines/process/deployment-jobs?view=azure-devops)
+* [Environments]()
+* [STRATEGIES]()
 * [Design for security in Azure](https://docs.microsoft.com/learn/modules/design-for-security-in-azure/)
-* [Secure your Azure resources with role-based access control (RBAC)](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac/)
+* [Secure your Azure resources with RBAC](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac/)
 * [Service connections](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml)
 * [Pipeline reports](https://docs.microsoft.com/azure/devops/pipelines/reports/pipelinereport?view=azure-devops)
-* [Explore the Analytics OData metadata](https://docs.microsoft.com/azure/devops/report/extend-analytics/analytics-metadata?view=azure-devops) 
+* [Explore the Analytics OData metadata](https://docs.microsoft.com/azure/devops/report/extend-analytics/analytics-metadata?view=azure-devops)
