@@ -41,7 +41,7 @@ units:
 - learn.create-razor-pages-aspnet-core.5-new-razor-page-create-form
 - learn.create-razor-pages-aspnet-core.6-create-pagemodel
 - learn.create-razor-pages-aspnet-core.7-lifecycle-httpclient
-- learn.create-razor-pages-aspnet-core.8-deploy-and-test
+- learn.create-razor-pages-aspnet-core.8-deploy-test
 - learn.create-razor-pages-aspnet-core.9-knowledge-check
 - learn.create-razor-pages-aspnet-core.10-summary
 iconUrl: /learn/achievements/create-razor-pages-aspnet-core.svg
