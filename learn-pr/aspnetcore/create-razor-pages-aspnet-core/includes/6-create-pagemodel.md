@@ -29,7 +29,7 @@ You can add handler methods for any HTTP verb. The most common handlers are:
 
 The *:::no-loc text="Create":::* page is a form and requires an *:::no-loc text="OnPost handler method":::*.
 
-## Adding an *:::no-loc text="OnPost handler method":::* to the `Create` *:::no-loc text="PageModel":::* class.
+## Adding an *:::no-loc text="OnPost handler method":::* to the `Create` *:::no-loc text="PageModel":::* class
 
 Replace the code in the *:::no-loc text="Create.cshtml.cs":::* *:::no-loc text="PageModel":::* class file located in the *:::no-loc text="ContosoPets.Ui/Pages/Products/":::* directory with the following, and save your changes:
 
