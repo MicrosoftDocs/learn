@@ -39,8 +39,8 @@ units:
 - learn.secure-aspnet-core-identity.2-setup-environment
 - learn.secure-aspnet-core-identity.3-add-identity
 - learn.secure-aspnet-core-identity.4-customize-identity
-- learn.secure-aspnet-core-identity.5-multi-factor-authn
-- learn.secure-aspnet-core-identity.6-claims-policy-authz
+- learn.secure-aspnet-core-identity.5-multi-factor-authentication
+- learn.secure-aspnet-core-identity.6-claims-policy-authorization
 - learn.secure-aspnet-core-identity.7-knowledge-check
 - learn.secure-aspnet-core-identity.8-summary
 iconUrl: /learn/achievements/aspnetcore/secure-aspnet-core-identity.svg
