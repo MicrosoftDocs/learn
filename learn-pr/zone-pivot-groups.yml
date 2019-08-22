@@ -57,7 +57,7 @@ groups:
     - id: powershell
       title: PowerShell
     - id: portal
-      title: Azure Portal
+      title: Azure portal
 - id: dev-lang-csharp-javascript
   title: Development language
   prompt: Choose your development language
