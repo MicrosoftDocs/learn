@@ -61,29 +61,25 @@ stages:
       displayName: 'Publish Artifact: drop'
       condition: succeeded()
 
-- stage: 'Deploy'
-  displayName: 'Deploy the web application'
-  dependsOn: 'Build'
+- stage: 'DeployDev'
+  displayName: 'Deploy to dev environment'
+  dependsOn: Build
   jobs:
-  - job: 'Deploy'
-    displayName: 'Deploy to App Service'
+  - deployment: Deploy
     pool:
       vmImage: 'Ubuntu-16.04'
-
+    environment: dev
     variables:
     - group: 'Release Pipeline'
-
-    steps:
-    - task: DownloadBuildArtifacts@0
-      inputs:
-        buildType: 'current'
-        downloadType: 'single'
-        artifactName: 'drop'
-        downloadPath: '$(Build.ArtifactStagingDirectory)'
-
-    - task: AzureWebApp@1
-      displayName: 'Azure App Service Deploy: website'
-      inputs:
-        azureSubscription: 'TailspinServiceConnection'
-        appName: '$(WebAppName)'
-        package: $(System.ArtifactsDirectory)/**/*.zip
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - download: current
+            artifact: drop
+          - task: AzureWebApp@1
+            displayName: 'Azure App Service Deploy: website'
+            inputs:
+              azureSubscription: 'Resource Manager - Tailspin - Space Game'
+              appName: '$(WebAppName)'
+              package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
