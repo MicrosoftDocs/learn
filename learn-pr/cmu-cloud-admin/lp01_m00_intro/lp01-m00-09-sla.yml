@@ -45,4 +45,4 @@ quiz:
         explanation: "Correct! The up-time for the solution is the product of the up-times for the individual services that comprise it."
       - content: "95.20%"
         isCorrect: false
-        explanation: "Incorrect. Given that the solution is "down" if either service is unavailable, the combined up-time must be less than the individual up-times."
+        explanation: "Incorrect. Given that the solution is 'down' if either service is unavailable, the combined up-time must be less than the individual up-times."
