@@ -53,13 +53,13 @@ Now listening on: http://localhost:5000
 
 The preceding output indicates the application is running and listening on ports 5000 and 5001.
 
-1. Press <kbd>Ctrl+C</kbd> to stop the app.
+* Press <kbd>Ctrl+C</kbd> to stop the app.
 
 If you run the app on your own machine, you'd be able to direct a browser to 'https://localhost:5001' to view the resulting page. To view the application, deploy it to a public endpoint hosted on Azure App Service.
 
 ### Deploy your *:::no-loc text="ContosoPets.UI":::* application to a public endpoint hosted on Azure App Service
 
-1. Run the following command in the command shell:
+* Run the following command in the command shell:
 
     ```bash
     az webapp up
