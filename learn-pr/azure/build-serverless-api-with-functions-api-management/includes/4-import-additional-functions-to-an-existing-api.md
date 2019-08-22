@@ -1,9 +1,15 @@
 Microservices architectures can be difficult to manage. For example, you rely on each team implementing cross-cutting requirements, such as security, in a consistent way.
 
 <!-- TODO We have two functions - Order Details and Product Details - we don't have order placement or order shipping. Let's align the scenario with the example code in this module. -->
-In the online store, your developer teams have built the product details, order placement, and order shipping microservices at different host URLs. Also the order shipping service responds by using XML. You want to ensure that all responses are in JSON format to make things easier for the client app developers.
 
-Here, you will see how API Management can be used to assemble disparate microservices into a consistent product under one domain name and with consistent behavior. <!-- TODO This is an over-commitment for this unit. We don't show any of this assembly or show how it will be done. I would potentially delete everything above this line. -->
+<!-- AJM: Done -->
+
+In the online store, your developer teams have built the product details and order details microservices at different host URLs. Also the order details service responds by using XML. You want to ensure that all responses are in JSON format to make things easier for the client app developers.
+
+Here, you will learn about the features of API Management that you can use to integrate different microservices and present them to client applications with consistent behavior at a single URL.
+<!-- TODO This is an over-commitment for this unit. We don't show any of this assembly or show how it will be done. I would potentially delete everything above this line. -->
+
+<!-- AJM: I've revised the sentence. Again, I'm following this guidance so I haven't deleted it: https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format -->
 
 ## Microservices architecture challenges
 
@@ -14,7 +20,7 @@ However, the microservices architecture can also present challenges, such as:
 - Client apps are coupled to microservices. If you want to change the location or definition of the microservice, you may have to reconfigure or update the client app.
 - Each microservice may be presented under different domain names or IP addresses. This presentation can give an impression of inconsistency to users and can negatively affect your branding.
 - It can be difficult to enforce consistent API rules and standards across all microservices. For example, one team may prefer to respond with XML and another may prefer JSON.
-- You are reliant on individual teams to implement security in their microservice correctly. It is difficult to impose these requirements centrally.
+- You're reliant on individual teams to implement security in their microservice correctly. It's difficult to impose these requirements centrally.
 
 By using Azure API Management, you can address these issues.
 
@@ -32,3 +38,7 @@ API Management also includes helpful tools - you can test each microservice and 
 Azure API Management supports importing Azure Function Apps as new APIs or appending them to existing APIs. The process automatically generates a host key in the Azure Function App, which is then assigned to a named value in Azure API Management.
 
 <!-- TODO - Again we drop the student off here without context as to what's going to happen next. -->
+
+<!-- AJM: Fixed -->
+
+In the next unit, you'll add the order details microservice to the Online Store API that you created in unit 3. By doing that, you'll integrate order details with the product details microservice and present them both in the same domain as part of an integrated API.

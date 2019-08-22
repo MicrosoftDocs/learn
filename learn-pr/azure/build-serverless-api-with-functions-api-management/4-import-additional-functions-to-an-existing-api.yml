@@ -3,7 +3,7 @@ uid: learn.build-serverless-api-with-functions-api-management.4-import-additiona
 title: Import additional functions to an existing API
 metadata:
   title: Import additional functions to an existing API
-  description: In this unit, you will learn about common issues with the microservices architecture and how you can address them by adding functions to existing APIs in API Management.
+  description: In this unit, you'll learn about common issues with the microservices architecture and how you can address them by adding functions to existing APIs in API Management.
   ms.date: 05/29/2019
   author: AndrewJByrne
   ms.author: anbyrne
