@@ -26,10 +26,10 @@ quiz:
         isCorrect: true
         explanation: "Correct! The answer is (31 * 24 *60) * 0.0005 = 22 minutes."
       - content: "33 minutes"
-        isCorrect: true
+        isCorrect: false
         explanation: "Incorrect. The answer is (31 * 24 * 60) * 0.0005."
       - content: "44 minutes"
-        isCorrect: true
+        isCorrect: false
         explanation: "Incorrect. The answer is (31 * 24 * 60) * 0.0005."
   
     - content: "Suppose you build a solution consisting of two interconnected cloud services, each of which comes with an SLA guaranteeing that the service will be up at least 99.50% of the time. What is the expected minimum up-time for the solution as a whole?"
