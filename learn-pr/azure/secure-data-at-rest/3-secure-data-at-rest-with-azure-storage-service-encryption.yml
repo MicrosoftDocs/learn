@@ -16,11 +16,11 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: Your organization has Linux virtual machines on Azure, and you want to enable Azure Disk Encryption to ensure that all of the disks are secured. What process must you undertake?
+  - content: Your organization has Linux virtual machines on Azure, and you want to enable Azure OS Disk Encryption to ensure that all of the OS disks are secured. What process must you undertake?
     choices:
     - content: Ensure the Azure Key Vault and the virtual machines are in the same region, create a backup, enable disk encryption, then sign in to the machine to monitor it while encryption takes place.
       isCorrect: false
-      explanation: Don't use a Linux machine while encryption is taking place.
+      explanation: Don't use a Linux machine while this encryption is taking place.
     - content: Ensure the Azure Key Vault and the virtual machines are in the same region, create a back-up, enable disk encryption, and avoid using the machines while encryption takes place.
       isCorrect: true
       explanation: Creating a backup or snapshot ensures your machines are safe if something goes wrong during encryption. Because we're dealing with Linux, it's a good idea to avoid using the machines while encryption takes place.
