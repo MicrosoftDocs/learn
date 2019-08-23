@@ -67,6 +67,7 @@ Use the following steps to clone the Event Hubs GitHub repository with `git`. Yo
     cd ~
     git clone https://github.com/Azure/azure-event-hubs.git
     ```
+
     The repository is cloned to your home folder.
 
 ## Edit SimpleSend.java
@@ -106,6 +107,7 @@ You'll need to write out your edits using <kbd>Ctrl+O</kbd>, and then <kbd>ENTER
     ```bash
     echo $NS_NAME
     ```
+
     When you create an Event Hubs namespace, a 256-bit SAS key called **RootManageSharedAccessKey** is created that has an associated pair of primary and secondary keys that grant send, listen, and manage rights to the namespace. In the previous unit, you displayed the key using an Azure CLI command, and you can also find this key by opening the **Shared access policies** page for your Event Hubs namespace in the Azure portal.
 
 1. Save **SimpleSend.java** either through the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
