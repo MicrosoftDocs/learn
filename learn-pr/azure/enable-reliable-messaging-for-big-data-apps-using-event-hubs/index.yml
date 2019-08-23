@@ -29,7 +29,6 @@ products:
 - azure
 - azure-event-hubs
 units:
-#TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
 - learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.1-introduction
 - learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.2-create-an-event-hub-using-azure-cli
 - learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.3-exercise-create-an-event-hub-using-azure-cli
