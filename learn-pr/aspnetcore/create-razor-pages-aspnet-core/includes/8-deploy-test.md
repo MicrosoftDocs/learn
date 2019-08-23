@@ -18,7 +18,7 @@ Now that you have added a *:::no-loc text="Create":::* Razor Page form and its *
     dotnet build
     ```
 
-The preceding command rebuilds your *:::no-loc text="ContosoPets.UI":::* application with your latest saved changes.
+    The preceding command rebuilds your *:::no-loc text="ContosoPets.UI":::* application with your latest saved changes.
 
 ### Deploy your *:::no-loc text="ContosoPets.UI":::* application to a public endpoint hosted on Azure App Service
 
@@ -48,9 +48,9 @@ Now that your finished *:::no-loc text="ContosoPets.UI":::* application is hoste
 
 1. Run the following command in the command shell to get the hosted application's URL:
 
-	```bash
-	echo $webAppUrl
-	```
+   ```bash
+   echo $webAppUrl
+   ```
 
 1. Click on the resulting URL in the command shell to view the running web application in your local default browser.
 
@@ -58,14 +58,14 @@ Now that your finished *:::no-loc text="ContosoPets.UI":::* application is hoste
 
 1. Select *:::no-loc text="Add Product":::*.
 
-Your new Create Razor Page will render.
+   Your new Create Razor Page will render.
 
 1. Enter the following invalid *:::no-loc text="Name":::* and *:::no-loc text="Price":::* values to test client-side input validation. Enter no text at all for *:::no-loc text="Name":::*. Enter '0' for *:::no-loc text="Price":::*.
 
-Validation messages should appear next to the name and price.
+   Validation messages should appear next to the name and price.
 
 1. Enter the following valid *:::no-loc text="Name":::* and *:::no-loc text="Price":::* values to test client-side input validation: Enter any name for *:::no-loc text="Name":::*. Enter '30' for *:::no-loc text="Price":::*.
 
-If the *:::no-loc text="Name":::* and *:::no-loc text="Price":::* passed input validation, and the web API accepted the new data, you are returned to the products page that should now include your new product entry in the list.
+   If the *:::no-loc text="Name":::* and *:::no-loc text="Price":::* passed input validation, and the web API accepted the new data, you are returned to the products page that should now include your new product entry in the list.
 
 1. When you are finished testing your application, close the browser, and in the command shell press <kbd>Ctrl+C</kbd> to stop it.
