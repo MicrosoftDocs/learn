@@ -16,7 +16,7 @@ Once a feature has been evaluated and tested successfully, it might be released 
 
 There are two types of previews available:
 
-- **Private Preview**. This means that an Azure feature is available to * specific* Azure customers for evaluation purposes. This is typically by invite only and issued directly by the product team responsible for the feature or service.
+- **Private Preview**. This means that an Azure feature is available to *specific* Azure customers for evaluation purposes. This is typically by invite only and issued directly by the product team responsible for the feature or service.
 - **Public Preview**. This means that an Azure feature is available to *all* Azure customers for evaluation purposes. These previews can be turned on through the preview features page as detailed below.
 
 ### Finding preview features

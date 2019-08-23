@@ -34,7 +34,6 @@ units:
 - learn.design-for-security.4-infrastructure-protection
 - learn.design-for-security.5-encryption
 - learn.design-for-security.6-network-security
-#TODO: Add - learn.design-for-security.7-application-security
 - learn.design-for-security.8-summary
 badge:
   uid: learn.design-for-security.badge

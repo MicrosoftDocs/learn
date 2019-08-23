@@ -5,10 +5,11 @@ metadata:
   title: Authentication providers and endpoints
   description: Authentication providers and endpoints
   ms.date: 03/27/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: nickwalkmsft
+  ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 durationInMinutes: 15
 content: |
   [!include[](includes/4-authentication-providers-and-endpoints.md)]
