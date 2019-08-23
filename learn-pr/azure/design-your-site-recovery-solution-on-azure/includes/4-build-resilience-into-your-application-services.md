@@ -12,7 +12,7 @@ You can use Azure to make your on-premises applications geo-redundant. The benef
 
 By using a VPN site-to-site connection, you can extend the on-premises network to a virtual network that's running a replica of your infrastructure in a different region inside Azure. Azure Traffic Manager can be used to monitor the health of your on-premises network. If something happens to the on-premises location, you could then use the replica infrastructure in Azure that's located in an entirely different geographical region.
 
-Similarly, you could set up geo-redundancy for your applications running inside Azure. For example, if your applications run on a group of Azure virtual machines in a virtual network, you can replicate the same set-up in another region for geo-redundancy. Through virtual network peering, you connect two separate virtual networks that are treated as one. This process means that traffic for these two networks doesn't go though the public internet or a gateway. And this means resources can directly connect to other resources as though they were in the same network. In this case, Traffic Manager looks at both regions for you by monitoring the health of each endpoint. If something happens to your primary region, demand is routed to your secondary region.
+Similarly, you could set up geo-redundancy for your applications running inside Azure. For example, if your applications run on a group of Azure virtual machines in a virtual network, you can replicate the same set-up in another region for geo-redundancy. Through virtual network peering, you connect two separate virtual networks that are treated as one. This process means that traffic for these two networks doesn't go though the public internet or a gateway. Resources can directly connect to other resources as though they were in the same network. In this case, Traffic Manager looks at both regions for you by monitoring the health of each endpoint. If something happens to your primary region, demand is routed to your secondary region.
 
 ## Add high availability clusters
 
@@ -28,7 +28,7 @@ Shown above is a high-level example of an active-active cluster in action.
 
 In contrast, with an active-passive cluster type architecture, you can run Azure virtual machines where one node is active and in use – and the other node is passive and not in use. You use the passive node only when the active node has a failure.
 
-Because each of your nodes are running in an active-active scenario simultaneously, you are going to be facing more running costs on a day-to-day basis in an active-active scenario, if the machines have the same specifications as machines in an active/passive cluster. An active-passive cluster could comparatively help you lower daily running costs because the active node wouldn't be running continuously. However, because you'll only be running the active node in an active-passive cluster, you won't be as flexible to meet fluctuating demand as you would with an active-active cluster.
+Because each of your nodes is running in an active-active scenario simultaneously, you are going to be facing more running costs on a day-to-day basis in an active-active scenario, if the machines have the same specifications as machines in an active/passive cluster. An active-passive cluster could comparatively help you lower daily running costs because the active node wouldn't be running continuously. However, because you'll only be running the active node in an active-passive cluster, you won't be as flexible to meet fluctuating demand as you would with an active-active cluster.
 
 Resources like Azure availability sets help you to achieve high availability through multiple nodes. If something affects one machine – like hardware failures or network outages – another machine can be available to keep things running. You could also use Azure virtual machine scale sets to create an active-active cluster and run machines that work to scale up and down in direct response to demand. Azure Load Balancer, through its HA ports rules, will also help you to achieve active-active or active-passive clustering for your machines.
 
@@ -38,7 +38,7 @@ Your organization has infrastructure for its applications running on-premises. Y
 
 If there's a failure, you can smoothly redirect client traffic to an infrastructure created for you in Azure. Use Traffic Manager to create a Traffic Manager profile and set a priority routing method. Then you create two endpoints – one for your on-premises environment and another for the environment that you want to set up on Azure.
 
-Since you are normally running an on-premises environment and want another one in Azure to just failover to, you can set priority 1 for the on-premises environment and priority 2 for your environment on Azure. This is how Traffic Manager knows how to route the traffic between the two environments. Traffic Manager keeps routing traffic to your on-premises environment until it notices that the endpoint isn't healthy anymore. If that's the case, Traffic Manager will route traffic to your second environment, in Azure. Azure Site Recovery only starts running your virtual machines in Azure if a failover is triggered. If a disaster occurs, you can use Azure Site Recovery to start a failover from the on-premises environment to the Azure environment.
+Since you are normally running an on-premises environment and want another one in Azure only to fail over to, you can set priority 1 for the on-premises environment and priority 2 for your environment on Azure. This priority is how Traffic Manager knows how to route the traffic between the two environments. Traffic Manager keeps routing traffic to your on-premises environment until it notices that the endpoint isn't healthy anymore. If that's the case, Traffic Manager will route traffic to your second environment, in Azure. Azure Site Recovery only starts running your virtual machines in Azure if a failover is triggered. If a disaster occurs, you can use Azure Site Recovery to start a failover from the on-premises environment to the Azure environment.
 
 Traffic Manager gives you the ability to set the frequency of probing to monitor your endpoints. You configure Traffic Manager to monitor the health of your endpoints between 30 seconds for regular probes, to 10-second intervals for faster probes.
 
@@ -46,7 +46,7 @@ After a failover is completed, clients are directed transparently to the new end
 
 ## Implement a monitoring and notification strategy
 
-It's important to understand that your applications and the associated infrastructure will experience periodic pressures and must respond by changing appropriately. You could be dealing with security patches, updates and other changes that affect your applications and their infrastructures. You may even need to occasionally change your applications' configurations and structure substantially in response to serious pressures.
+It's important to understand that your applications and the associated infrastructure will experience periodic pressures and must respond by changing appropriately. You could be dealing with security patches, updates, and other changes that affect your applications and their infrastructures. You may even need to occasionally change your applications' configurations and structure substantially in response to serious pressures.
 
 You can't predict all the changes. Instead, you monitor for any changes so you can respond appropriately and timely – and then learn from them.
 
@@ -62,6 +62,6 @@ Use these Azure tools together to address monitoring and notifications for your 
 
 <!--- Below is a diagram showing a scenario to be used with the knowledge check that follows.-->
 
-![hybrid network](../media/4-hybrid-network.png)
+![Hybrid network](../media/4-hybrid-network.png)
 
 <!---Feel free to format this diagram according to your own standards-->

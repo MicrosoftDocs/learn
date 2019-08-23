@@ -11,7 +11,7 @@ You can store specified groups of your databases in an availability replica. Alw
 
 You can also set secondary replicas to be readable. This way, clients can access your data from multiple databases and increased demand is between multiple replicas.
 
-Always On Availability Groups run on top of a Windows Server Failover Cluster that consists of a group of machines working in unison. This gives you high availability for the workloads that run on those machines. With Always On Availability Groups, each node (machine) in your cluster hosts a replica, whether primary or secondary, and each replica holds a group of databases.
+Always On Availability Groups run on top of a Windows Server Failover Cluster that consists of a group of machines working in unison. This architecture gives you high availability for the workloads that run on those machines. With Always On Availability Groups, each node (machine) in your cluster hosts a replica, whether primary or secondary, and each replica holds a group of databases.
 
 ![Availability Group example](../media/5-availability-group-example.png)
 
@@ -19,7 +19,7 @@ Always On Availability Groups can be configured in Azure by creating two availab
 
 ## Automate backups with Azure SQL Database
 
-Azure SQL Database can make backups of your databases that are stored between seven and 35 days. SQL Database uses geo-redundant storage to store backups and provides read access to your data in a different region. Your databases are safe even if something happens to a data center. You can extend the retention of backups for up to 10 years by establishing long-term retention policies on single databases or elastic pools. All database backups in SQL Database are encrypted at rest – all SQL databases you create will automatically have transparent data encryption enabled by default.
+Azure SQL Database can make backups of your databases that are stored between 7 and 35 days. SQL Database uses geo-redundant storage to store backups and provides read access to your data in a different region. Your databases are safe even if something happens to a data center. You can extend the retention of backups for up to 10 years by establishing long-term retention policies on single databases or elastic pools. All database backups in SQL Database are encrypted at rest – all SQL databases you create will automatically have transparent data encryption enabled by default.
 
 SQL Database does backups automatically for you in the background – it creates backups of your databases on different intervals, depending on the type of backup. For example, SQL Database creates backups for transaction logs at an interval of 5-10 minutes. SQL Database also creates full backups of your databases every week, and differential backups – for any data that has changed since the last full backup – every 12 hours. The first full backup happens as soon as your database is created. How long it takes to complete a full backup depends on the size of your database. Backups are kept in storage blobs that provide read access, and then copied into a paired data center.
 
