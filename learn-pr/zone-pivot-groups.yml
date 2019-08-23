@@ -178,7 +178,7 @@ groups:
       title: Visual Studio
 - id: visualstudio
   title: Visual Studio
-  prompt: Choose your verion of Visual Studio
+  prompt: Choose your version of Visual Studio
   pivots:
     - id: vs2015
       title: Visual Studio 2015
