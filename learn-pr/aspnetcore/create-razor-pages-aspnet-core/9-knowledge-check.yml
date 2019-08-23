@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.create-razor-pages-aspnet-core.9-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Summary
+  ms.date: 07/31/2019
+  author: wadepickett
+  ms.author: wpickett
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+  ROBOTS: NOINDEX
+title: Knowledge check
+durationInMinutes: 2
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which following statement is true for Razor Pages?"
+      choices:
+      - content: "You should use Razor Pages for an ASP.NET app that is not focused on generating HTML, such as a web API."
+        isCorrect: false
+        explanation: "Use Razor Pages in any ASP.NET Core web apps where you need a page-centric approach for defining UI logic using a combination of HTML, CSS, and C#"
+      - content: "Razor Pages cannot co-exist in an ASP.NET Core MVC application."
+        isCorrect: false
+        explanation: "Razor Pages support are built into ASP.NET Core MVC and can co-exist within an MVC application."
+      - content: "A productivity advantage of Razor Pages is that it keeps together what tends to change together for views in your application."
+        isCorrect: true
+        explanation: "Use Razor Pages to keep ASP.NET Core pages organized in a simpler way: So that all view (page) specific logic and page properties (view model) can be kept in the same proximity."
+    - content: "What statement best describes a Razor Page `PageModel`?"
+      choices:
+      - content: "A RazorPage `PageModel` encapsulates the logic operations scoped just to its Razor Page."
+        isCorrect: true
+        explanation: "A Razor Page `PageModel` encapsulates the data properties and logic operations scoped just to its Razor Page.  It is defined in a '.cshtml.cs' file using the same name and within the same directory by convention."
+      - content: "A Razor Page `PageModel` provides top level view templates using Razor Syntax."
+        isCorrect: false
+        explanation: "A Layout '.cshtml' file defines a top level template for a view using Razor Syntax."
+      - content: "A Razor Page `PageModel` is a partial Razor markup file used to break up large markup files into smaller components."
+        isCorrect: false
+        explanation: "A Partial view is a '.cshtml' Razor markup file that renders HTML output within another markup file's rendered output. Partial views are used to break up large markup files into smaller reusable components."
+    - content: "What statement best describes the `@page` directive?"
+      choices:
+      - content: "The `@page` directive indicates the page can handle HTTP requests and is what makes a page a Razor Page."
+        isCorrect: true
+        explanation: "The `@page` directive is what makes a page a Razor Page and it must be the first directive on the page. The `@page` directive indicates the page can handle HTTP requests."
+      - content: "The `@page` directive is an example of a Tag Helper."
+        isCorrect: false
+        explanation: "Tag Helpers are components for automating HTML generation in Razor Pages. By design they are reusable, customizable building blocks. Most built-in Tag Helpers in ASP.NET Core extend standard HTML elements you are familiar with and provide additional server-side attributes for the element."
+      - content: "The `@page` directive is used to specify and enforce model property behavior."
+        isCorrect: false
+        explanation: "DataAnnotations are used to specify behavior that you want to enforce on the model properties they're applied to. They are simple attributes that can be applied to properties in your model class file."
