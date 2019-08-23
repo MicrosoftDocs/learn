@@ -22,17 +22,17 @@ Perform the following steps in the Azure portal to assess if connectivity betwee
 
 ![Microsoft Monitoring Agent](../media/5-microsoft-monitoring-agent.png "Microsoft Monitoring Agent")
 
-10. Click **OK** to close the **Microsoft Monitoring Agent Properties** window.
-11. In the **All Control Panel Items** window, click **Administrative Tools**.
-12. In the **Administrative Tools** window, double-click **Event Viewer**.
-13. Expand **Applications and Services Logs**, and then click **Operations Manager**, and then maximize the **Event Viewer** window.
-14. In the **Operations Manager** view, click the **Event ID** column heading to sort the list by Event ID.
-15. Observe Event IDs 3000 and 5002. These events indicate that the computer has registered with the Log Analytics workspace and is receiving configuration. Event ID 5002 is shown below.
+11. Click **OK** to close the **Microsoft Monitoring Agent Properties** window.
+12. In the **All Control Panel Items** window, click **Administrative Tools**.
+13. In the **Administrative Tools** window, double-click **Event Viewer**.
+14. Expand **Applications and Services Logs**, and then click **Operations Manager**, and then maximize the **Event Viewer** window.
+15. In the **Operations Manager** view, click the **Event ID** column heading to sort the list by Event ID.
+16. Observe Event IDs 3000 and 5002. These events indicate that the computer has registered with the Log Analytics workspace and is receiving configuration. Event ID 5002 is shown below.
 
 ![Event ID 5002](../media/5-event-id-5002.png "Event ID 5002")
 
-16. Close the Event Viewer and all other windows that were opened.
-17. Close the Remote Desktop Connection application.
+17. Close the Event Viewer and all other windows that were opened.
+18. Close the Remote Desktop Connection application.
 
 ## Schedule Update Deployments
 
@@ -43,8 +43,8 @@ Here you will learn how to schedule updates for the virtual machine.
 3. In the **Update classifications** drop down list, check only **Critical updates** and **Security updates**.
 4. In the **Schedule settings** field, under **Starts** increment the time up one hour.
 5. In the **Recurrence** field, click **Recurring**.
-5. In the **Recur every** field, configure update to occur once every week on Sunday as shown below, and then click **OK**.
+6. In the **Recur every** field, configure update to occur once every week on Sunday as shown below, and then click **OK**.
 
 ![Configure Once a Week](../media/5-configure-recurring-schedule-edited.png "Configure Once a Week")
 
-6. In the **New update deployment** pane, click **Create**.
+7. In the **New update deployment** pane, click **Create**.
