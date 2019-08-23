@@ -1,4 +1,4 @@
-Recently your department moved all of their infrastructure to Azure. There are many VMs serving up web sites and email functions. You have been tasked to keep these VMs up to date with the latest patches and security releases. You decide to roll out the Update Management solution to all of the VMs in your enterprise. 
+Recently your department moved all of their infrastructure to Azure. There are many VMs serving up web sites and email functions. You have been tasked to keep these VMs up-to-date with the latest patches and security releases. You decide to roll out the Update Management solution to all of the VMs in your enterprise. 
 
 In the following exercise you will review the agent connectivity to log analytics and, learn how to schedule update deployments.
 
@@ -6,7 +6,7 @@ In the following exercise you will review the agent connectivity to log analytic
 
 Perform the following steps in the Azure portal to assess if connectivity between the agent and log analytics has taken place. Start by signing into the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account with which you activated the sandbox.
 
-1. In the portal, click on the **Virtual machines** option in the left pane and click on the newly create virtual machine.
+1. In the portal, click on the **Virtual machines** option in the left pane and click on the newly created virtual machine.
 2. Click on the **Overview** menu option.
 3. In the virtual machine page, make note of the **Public IP Address** as shown below.
 
