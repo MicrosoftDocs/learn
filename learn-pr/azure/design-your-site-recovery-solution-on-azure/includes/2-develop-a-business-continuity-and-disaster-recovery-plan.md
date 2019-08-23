@@ -1,71 +1,73 @@
-You must develop a business continuity and disaster recovery plan so you can design an appropriate site recovery solution.
+You need to develop a business continuity and disaster recovery plan so you can design an appropriate site recovery solution.
 
-Your organization wants you to design a site recovery strategy for your applications. You need to understand the specific requirements involved in building site recovery for your hybrid environment. You need to understand what tools are available in Azure that can be part of your plan.
+Your organization wants you to design a site recovery strategy for your applications. First, you need to understand the specific requirements involved in building site recovery for your hybrid environment. You need to also understand what tools are available in Azure to help you.
 
-In this unit, you will learn how to identify key infrastructures. You will learn how to identify your recovery time objectives and your recovery point objectives. You will learn what requirements might be in place in any PaaS services you might be using. You will learn how to plan for backup and disaster recovery. And you will learn some of the Azure features that will help you when building a site recovery solution in Azure.
+In this unit, you'll learn how to identify key infrastructures, recovery time objectives, and recovery point objectives. You'll learn what requirements might be relevant with any PaaS services you might be using. You'll also learn how to plan for backup and disaster recovery. You'll also discover some of the Azure features that will help you to build a site recovery solution.
 
-## Identify key stakeholders and key infrastructures
+## Identify key stakeholders and infrastructures
 
-You must identify everyone who has a stake in your applications remaining functional. These stakeholders can be the users, external or internal. Your support staff, and anyone required for manual input in the BCDR process has a stake in your applications remaining functional. Other applications and services that rely on your applications being functional can also be stakeholders in their own right.
+Identify everyone who has a stake in your applications remaining functional. These stakeholders can be external or internal users. Your support staff, and anyone required for manual input in the BCDR process, have a stake in your applications remaining functional. Other applications and services that rely on your applications being functional can also be stakeholders.
 
-You must also identify the key infrastructures that compose the environment for your applications. These are typically the virtual machines, the components and networks of your machines, and any other services that run along side them. If the infrastructure running your applications consists of multiple machines and services that span across an on-premises and remote cloud-based network, you include them regardless of whether they are on-premises or in the cloud.
+Identify the key infrastructures that compose the environment for your applications. These infrastructures are typically the machines, and the components and networks of your machines – and any other services that run alongside them.
 
 ## Identify recovery time objectives and recovery point objectives
 
-Recovery time objective (RTO) is the amount of time beyond which it's unacceptable for an application to be unavailable after a failure. For example, you may find it unacceptable for your application to be down for longer than an hour, because of the serious loss to the business after one hour. Critical applications will require a shorter RTO.
+Recovery time objective (RTO) is the amount of time beyond which it's unacceptable for an application to be unavailable after a failure. For example, you might find it unacceptable for your application to be down for longer than an hour – because of the potential loss to the business after this time. Critical applications will require a shorter RTO.
 
-Recovery point objective (RPO) refers to how old your working data is allowed to be at the point of recovery. For example, if your application is down you may only find it acceptable for it to run on data that is less than half an hour old once the application is recovered. Some applications can function with older data, but for some applications it is critical that the application runs on the freshest data possible at all times. It is up to you to figure out your RTO and RPO based on your organization's understanding of the risk and cost that would be introduced because of the loss of any data and downtime.
+Recovery point objective (RPO) refers to how old your working data is allowed to be at the point of recovery. For example, if your application is down, you might find it's only acceptable for it to run on data that's less than half an hour old after recovery. Some applications can function with older data, but for others it's critical to always run on the freshest data possible. You calculate RTO and RPO based on your organization's understanding of the risk and the cost incurred through the loss of data and downtime.
 
 ## Identify any PaaS requirements
 
-Any PaaS services you use can come with their own requirements you need to consider for them to be part of your BCDR plan. For example, SQL Database has the following considerations:
+Any PaaS services you might want to make part of your BCDR plan may have their own requirements. For example, SQL Database has the following considerations:
 
-- Turn on SQL Database Auditing. You can use auditing to monitor for suspicious activity or human mistakes.
+- Turn on SQL Database Auditing. You can use auditing to monitor for suspicious activity or human error.
 - Create a readable secondary in a different region through Active Geo-Replication.
-- Shard your databases. Sharding means you want to spread large numbers of similar structured data across separate databases.
+- Shard your databases. Use sharding when you want to spread large numbers of similar data across separate databases.
 - Perform a geo-restore so you can recover from outage and restore your database to another region.
-- Point-in-time-restore will help you recover from human mistakes. Only Standard and Premium tier give you longer point-in-time restores of up to 35 days. Basic tier only gives you 7 days.
+- Point-in-time restore will help you recover from human mistakes. Only Standard and Premium tier give you longer point-in-time restores of up to 35 days. Basic tier gives you only seven days.
 
-It is important to understand what the requirements are, so that you know how they affect your BCDR process.
+It's important to understand the relevant requirements, so you know how they affect the BCDR process.
 
-## Plan data backup and disaster recovery
+## Plan disaster recovery and data backup
 
 ### Disaster recovery
 
-Disaster recovery refers to a process that helps you restore your applications to a functional state after a catastrophic incident that could result in disastrous loss.
+Disaster recovery refers to a process that helps you restore your applications to a functional state after an incident that could result in serious loss.
 
-You need to consider several things for your disaster recovery process to be successful. You need to evaluate what kind of business impact any potential failures will have. You need to also consider automating the recovery process as much as you can. For example, use alerts to notify services and users. There may inevitably be some parts of your disaster recovery process that needs human input, this means you need to document the process as much as possible. You also need to regularly simulate disasters against your process, so your disaster recovery process remains effective.
+To devise a successful disaster recovery process, you first need to evaluate what kind of business impact any potential failures will have. Consider automating the recovery process as much as possible. Inevitably, some parts of your disaster recovery process will involve human input, so you need to fully document the process. You need to also regularly simulate disasters, so your recovery process remains effective.
 
-Azure Site Recovery, through its recovery plans, can help you automate your disaster recovery process by allowing you to define how machines can be failed over, and the order in which they are to be restarted after having been failed over successfully. Azure Site Recovery in this way helps you automate tasks in your recover process and further helps you reduce your recovery time objective. Azure Site Recovery also make it possible to test your failovers and so test the overall effectiveness of your recovery process periodically.
+Azure Site Recovery has plans that help automate your disaster recovery by allowing you to define how machines are failed over – and the order in which they're restarted after being successfully failed over. In this way, Azure Site Recovery helps to automate tasks and further reduce your recovery time objective. You also use Azure Site Recovery to periodically test failovers and the overall effectiveness of the recovery process.
 
 ### Data backups
 
-Backups exist to protect applications from accidental deletion or corruption of data. They are essentially functioning versions of parts of your application backed up from an earlier point in time.
+Backups protect applications from accidental deletion or corruption of data. You can't decide to create a disaster recovery process and ignore backups. Your recovery point objective depends on how often and how regularly you run backup processes. For example, if you have a backup process configured to execute every two hours – and you experience a disaster five minutes before the next backup – you'll lose 1 hour and 55 minutes of data. Having more frequent backups means you achieve a reduced RPO. In your overall plan, you must include a detailed backup process.
 
-You can't decide create a disaster recovery process and ignore backups. Your recovery point objective depends on how often and how regularly you run backup processes. To illustrate, if you have a backup process configured to execute every two hours, and you experience a disaster 5 minutes before your next backup, you will lose 1 hour and 55 minutes of data. Performing more frequent backups means you achieve a reduced RPO. In your overall plan, you must include a detailed backup process.
+Use Azure Backup to back up your on-premises data and machines to the cloud – or keep their backups on-premises. Depending on the type of machine, you can back up individual files, folders, volumes, or the entire machine.
+Backup allows you to secure backed up data, both at rest and while it's in transit. Your data is replicated three times in a data center, through locally redundant storage (LRS) for Azure Backup.
 
-Azure Backup makes it possible for you to back up your on-premises data and machines to the cloud, or keep their backups on-premises. Depending on the type of machine, you can back up individual files, folders, volumes, or the entire virtual machine.
-Azure backup allows you secure your backed up data both at rest and while it is in transit. Your data is replicated three times in a datacenter through locally redundant storage (LRS) for Azure Backup. Additionally, you can replicate your data to a secondary region many miles away from the original data with geo-redundant storage (GRS) for Azure Backup. You are able to achieve application-consistent backups. This means your backups don't need you to add fixes to restore your backups successfully. You are able to have up to 9999 backup copies for each of your instances (machines or workloads) on Azure. This means that if your backup frequency is daily because you have a recovery point objective of 24 hours, you can have recovery points that cover a span of 27 years before you have hit your limit of recovery points you can use for restoration.
+Additionally, you could replicate data to a secondary region that's miles away from the original data with geo-redundant storage (GRS) for Azure Backup. You can also achieve application-consistent backups so you don't need to add manual fixes to restore successfully. You might have up to 9,999 backup copies for each of your instances (machines or workloads) on Azure. If your backup frequency is daily – with a 24-hour recovery point – you could have recovery points that span a 27-year period before you hit the limit of recovery points you use for restoration.
 
 ## Use Azure native features
 
-Azure comes with features that are designed from the ground up to help you achieve your objectives for your business continuity and disaster recovery. Below are some of these features.
+Azure comes with features designed from the ground up to help you achieve your objectives for business continuity and disaster recovery. Take a look at some of these features:
 
 ### Region pairing
 
- Every Azure region is paired with a different region in the same part of the world. Some regions, such as Brazil have a region pair that is not in the same part of the world. In a region pair, the regions are never updated simultaneously. Rather they are updated one by one. If something happens to one region in the same part of the world, another one is available. As part of your BCDR planning, it is important to use region pairing so you can take advantage of the isolation it provides. You will be able to decrease the amount of time it takes to recover from a failure and you will be able to increase availability.
+Most Azure regions are paired with a different region in the same part of the world geographically. However, there are exceptions – Brazil, for example, has a region pair that's not in the same part of the world. In a region pair, the regions are never updated simultaneously. Instead, the regions are updated one by one. If something happens to one region, another one becomes available. As part of your BCDR planning, it's important to use region pairing to take advantage of the isolation it provides. You'll reduce the amount of time it takes to recover from a failure and increase your availability.
 
-### Availability Sets
+### Availability sets
 
-You must consider creating Availability Sets. Availability Sets allow you to isolate your virtual machines when you provision them in Azure. When you place virtual machines in Availability Sets, you are ensuring that your virtual machines are running on separate servers, using multiple different network switches, and racks among other things. Regardless of whether a software problem causes a failure, or a hardware failure occurs, your Availability Sets ensure you have another set of virtual machines running. Physical hardware in an availability set is spread across multiple update and fault domains. A single update domain consists of a virtual machines and the hardware they run on, that can be updated and restarted simultaneously. A fault domain refers to a set of virtual machines that use the same networking, power sources and storage.
+Consider creating availability sets. Availability sets will  allow you to isolate virtual machines when you provision them in Azure. When you place virtual machines in availability sets, you're ensuring that they're running on separate servers, using multiple different network switches, and racks, among other things. Regardless of whether a software problem causes a failure, or a hardware failure occurs, availability sets can ensure you have another set of virtual machines running. Physical hardware in an availability set is spread across multiple update and fault domains. A single update domain consists of virtual machines – and the hardware they run on – that can be updated and restarted simultaneously. A fault domain refers to a set of virtual machines that use the same networking, power sources, and storage.
 
 ![Availability Set](../media/2-availability-sets.png)
 
 <!---Feel free to format this diagram according to your own standards-->
 
-### Availability Zones
+### Availability zones
 
-You must also consider Azure Availability Zones to keep your applications running. These Availability Zones are separate physical places in a single Azure region. Each one of these locations consists of at least one datacenter, and they are designed to use their own separate networking, cooling systems, and separate power. If one location fails, another one location can be used. You will usually have a minimum of three of these zones in each region. This means that your virtual machines that are hosting your applications for example, are spread over three update domains and three fault domains. This means that these virtual machines in three different regions are never updated simultaneously. You can manually set a specific type of resource to be in a specific zone with some resources, such as virtual machines. And some services such as SQL Database will copy across multiple availability zones automatically for you.
+To help keep your applications running, consider using Azure availability zones. These availability zones are separate physical places in a single Azure region. Each location consists of at least one data center, and is designed to use its own separate networking, cooling systems, and power. If one location fails, another can be used. You'll usually have a minimum of three zones in each region.
+
+Implementing availability zones means that your machines are spread over at least three update domains and three fault domains. These virtual machines, in three different regions, are never updated simultaneously. You can manually set a specific type of resource to be in a specific zone with some resources – such as virtual machines. And some services, such as SQL Database, will automatically copy across multiple availability zones.
 
 ![Availability Zones](../media/2-availability-zones.png)
 
