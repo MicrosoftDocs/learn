@@ -4,8 +4,8 @@ metadata:
   title: Authenticate browser-based apps with Azure App Services
   description: In this module, you will look at how to authenticate users using Azure App Services and various providers.
   ms.date: 03/04/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: nickwalkmsft
+  ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Authenticate browser-based apps with Azure App Services
@@ -22,8 +22,10 @@ levels:
 - beginner
 roles:
 - administrator
+- developer
 products:
 - azure
+- azure-app-service
 units:
 - learn.authenticate-browser-based-apps-with-azure-app-services.1-introduction
 - learn.authenticate-browser-based-apps-with-azure-app-services.2-apps-and-authentication
