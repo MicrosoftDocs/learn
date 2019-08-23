@@ -5,9 +5,8 @@ metadata:
   title: Configure applications to send or receive messages through an Event Hub
   description: Configure applications to send or receive messages through an Event Hub
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: nickwalkmsft
+  ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

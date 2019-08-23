@@ -3,6 +3,7 @@ Some applications place greater demands on data storage than others. Apps such a
 When creating your VMs or adding new disks, you have a few choices which will have a dramatic impact on disk performance, starting with the _type_ of storage you choose.
 
 ## Types of disks 
+
 Azure Disks are designed for 99.999% availability. 
 
 There are three performance tiers for storage that you can choose from when creating your disks -- Premium SSD Disks, Standard HDD storage, and Standard SSD. Depending on the VM size, you can mix and match these disk types.
@@ -39,6 +40,7 @@ Managed disks are the newer and **recommended disk storage model**. They elegant
 With all the additional benefits, including the guaranteed performance characteristics, you should always choose managed disks for new VMs.
 
 ### Disk comparison
+
 The following table provides a comparison of Standard HDD, Standard SSD, and Premium SSD to help you decide what to use.
 
 |    | Azure Premium Disk |Azure Standard SSD Disk          | Azure Standard HDD Disk 
