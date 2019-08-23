@@ -28,7 +28,7 @@ roles:
 products:
 - azure
 - azure-virtual-machines
-- azure-cli
+- azure-clis
 units:
 #TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
 - learn.manage-vms-with-azure-cli-data.1-what-is-the-cli
