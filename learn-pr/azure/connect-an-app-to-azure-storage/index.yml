@@ -16,7 +16,7 @@ abstract: |
   - Explore the data types and services supported by an Azure storage account.
   - Create a new Azure storage account using the Azure portal.
   - Create a new application and connect the app to an Azure Storage account.
-prerequisites: Some programming expierience in either C# or Javascript
+prerequisites: Some programming experience in either C# or JavaScript
 iconUrl: /learn/achievements/connect-an-app-to-azure-storage.svg
 levels:
 - beginner
