@@ -1,4 +1,4 @@
-In this part, you follow the Tailspin team as they discuss how a continuous delivery (CD) pipeline can help them with their upcoming release.
+In this part, you follow the Tailspin team as they discuss how a CD pipeline can help them with their upcoming release.
 
 The Tailspin team is starting to feel better about their build process. They've got an automated process running on Azure Pipelines, which means the build environment is stable. Amita knows immediately when there's an artifact for her to test. She's finding fewer bugs because Andy and Mara have started to add unit tests and code quality tests. Life is looking good. Let's check in with the team.
 
@@ -8,13 +8,13 @@ Everyone on the team is in the meeting room waiting for Irwin, the product manag
 
 **Irwin:** I had a meeting this morning with the management team. They want to know why we're taking so long to release our games and websites. Our closest competitors get new features and new games out there much faster than we do. We need to speed things up. I'm not just saying this to you. I'm saying it to all the teams. What can we do to help your team deploy faster?
 
-Irwin He looks around. Andy clears his throat.
+Irwin looks around. Andy clears his throat.
 
 **Andy:** This is a little sudden but we're a bit ahead of you. We've been automating how we build our websites. Maybe now it's time to extend our automation to our release process.
 
-**Irwin:** How do you do this?
+**Irwin:** How would you do that?
 
-**Mara:** We created an automated build pipeline with Azure Pipelines. It builds an artifact that Amita can test. We could also use Azure Pipelines to build a continuous delivery, or CD, pipeline.
+**Mara:** We created an automated build pipeline with Azure Pipelines. It builds an artifact that Amita can test. We could also build a continuous delivery, or CD, pipeline.
 
 **Irwin:** Which is what?
 
@@ -38,17 +38,15 @@ Mara nods. Amita and Tim look unhappy.
 
 **Tim:** I don't really know what CD is, but if it means losing control of my production environment, I won't do it.
 
-**Amita:** If it means all the tests are automated, what am I supposed to do? It's not just my job. I don't think we should sacrifice the user experience just to meet some arbitrary deadline.
+**Amita:** If it means all the tests are automated, what am I supposed to do? It's not only about my job. I don't think we should sacrifice the user experience just to meet some arbitrary deadline.
 
 Amita starts crumbling her scone into little pieces.
 
-**Andy:** Tim, you won't lose control over your production environment. And Amita, you're correct, we should never sacrifice the user experience. Let's talk a bit about what continuous delivery is so we all understand each other. Mara, want to try?
+**Andy:** Tim, you won't lose control over your production environment. And Amita, you're correct, we should never sacrifice the user experience. Let's talk a bit about what CD is so we all understand each other. Mara, want to try?
 
 **Mara:** Sure.
 
 ## What is continuous delivery?
-
-Continuous delivery (CD) is what makes frequent, reliable delivery of software possible. Let's listen to Mara as she explains it to the team.
 
 **Mara:** To me, CD and DevOps are inseparable. Remember that we defined DevOps as the union of people, process, and products to enable continuous delivery of value to our end users.
 
@@ -63,21 +61,21 @@ CD by itself is a set of processes, tools and techniques that makes rapid, relia
 * We all are responsible for the release process. We no longer work in silos.
 * We always try to improve.
 
-We've already put many of these idea into place and we all agree they've improved how we work. CD is an extension of what we've already started.
+We've already put many of these ideas into place and we all agree they've improved how we work. CD is an extension of what we've already started.
 
 ## Why do I need continuous delivery?
 
-Continuous delivery helps software teams deliver reliable software updates to their customers on a rapid cadence. CD helps ensure that both customers and stakeholders have the latest features and fixes quickly.
+CD helps software teams deliver reliable software updates to their customers on a rapid cadence. CD helps ensure that both customers and stakeholders have the latest features and fixes quickly.
 
 Let's continue to listen in on the team as they talk this out.
 
-**Andy:** Thanks, Mara, we need CD because, as we all know, the world has changed. Releases with new features are happening faster. Updates and bug fixes need to be available right away. It isn't just that management wants this. They're simply reacting to the demands of our customers. If customers can't get what they want from us, they'll go somewhere else.
+**Andy:** Thanks, Mara. We need CD because, as we all know, the world has changed. Releases with new features are happening faster. Updates and bug fixes need to be available right away. It isn't just our management that wants to speed up our releases. They're simply reacting to the demands of our customers. If customers can't get what they want from us, they'll go somewhere else.
 
-The old way of doing things, where we were all keep quiet in our separate silos is too slow and, honestly, it's frustrating for all of us.
+The old way of doing things, where we all worked in our separate silos and didn't talk to each other is too slow and, honestly, it's frustrating for all of us.
 
 We need to work together if we're going to succeed. All of us have seen how automation gives us a reliable, repeatable, and faster process for building artifacts. CD will bring those benefits to an entire release pipeline.
 
-Amita, I think your life has gotten better since we added tests to the build pipeline so you weren't getting regression bugs and you also started getting automatic updates when builds were ready.
+Amita, I think your life has gotten better since we added tests to the build pipeline. You aren't getting regression bugs. You're also getting automatic updates that tell you when builds are ready.
 
 Tim, I'm going to ask you to be patient. I know you haven't seen a lot of benefit yet, but I promise you, you will. When you're home on the weekends instead of here because we keep crashing your production environment, you'll be happier. Can I ask you both to give CD a chance?
 
@@ -105,7 +103,7 @@ In the DevOps community, you might hear the terms _continuous delivery_ and _con
 
 ## What continuous delivery tools can I use?
 
-After the meeting ends, Andy and Mara plan next steps. They are using Azure Pipelines to build their software. They want to see whether it can also help them with their release process.
+After the meeting ends, Andy and Mara plan next steps. They use Azure Pipelines to build their software. They want to look at their options to see what tools, including Azure Pipelines, are available to help them with their release process.
 
 **Mara:** Where do you want to start?
 
@@ -116,13 +114,13 @@ After the meeting ends, Andy and Mara plan next steps. They are using Azure Pipe
 * Makes it easy to define the deployment tasks we need to perform.
 * Is easy to extend.
 
-**Mara:** Azure DevOps integrates with several other CI/CD solutions. There are a lot of options out there and we don't already have an investment in one. If we did, it would make sense to go with that one. Popular CI/CD systems include Jenkins, Circle CI, GitLab, Travis CI, and Azure Pipelines.
+**Mara:** Azure DevOps integrates with several other CI/CD solutions. There are a lot of options out there and we don't already have an investment in any of them. If we did, it would make sense to simply use that one. Popular CI/CD systems include Jenkins, Circle CI, GitLab, Travis CI, and Azure Pipelines.
 
-These tools have their similarities but each also has its strengths. Some of these tools are open source, some are free, and some you have to pay for. They each also provide built-in integrations with other software tools.
+These tools have their similarities but each also has its particular strengths. Some of these tools are open source, some are free, and some you have to pay for. They each also provide built-in integrations with other software tools.
 
-For example, Jenkins is open source. Jenkins has a lot of plug-ins and many companies use it. You can run Circle CI in the cloud-based or on-premises. I think we would need to customize it. GitLab is a single application for the entire software development lifecycle. It might be bigger than we want right now.
+For example, Jenkins is open source. It has a lot of plug-ins and many companies use it. You can run Circle CI in the cloud or on premises. I think we would need to customize it. GitLab is a single application for the entire software development lifecycle. It might be bigger than we want right now. Of course, we can keep using Azure Pipelines.
 
-The point is, there are a number of options. Here's a short video where Abel talks about using DevOps best practices to deploy code to Azure.
+My point is there are many possibilities. Here's a short video where Abel talks about using DevOps best practices to deploy code to Azure.
 
 **Ask Abel**
 

@@ -19,7 +19,7 @@ Then sign out of Azure DevOps and sign in again under the Microsoft account you 
 
 ## Get the Azure DevOps project
 
-Here, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You do so by running a template that creates a project for you in Azure DevOps.
+Here, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You do this by running a template that creates a project for you in Azure DevOps.
 
 The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey. For learning purposes, each module has an associated Azure DevOps project.
 
@@ -47,7 +47,7 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 
 ## Create the initial build pipeline
 
-Here, you turn on multistage pipelines and create an initial pipeline configuration that builds the application to produce a build artifact.
+Here, you turn on multistage pipelines and create an initial pipeline configuration that builds the application and produces a build artifact.
 
 ### Turn on multi-stage pipelines in Azure DevOps
 
@@ -65,7 +65,7 @@ From Azure DevOps:
 
 ### Create the initial pipeline configuration
 
-Here, you create an initial pipeline configuration that builds the web application. This ensures that your project is set up correctly to build from your GitHub repository. This build configuration resembles the one you set up in previous modules.
+Here, you create an initial pipeline configuration that builds the web application. This ensures that your project is set up to build from your GitHub repository. This build configuration resembles the one you set up in previous modules.
 
 1. From Visual Studio Code, open the integrated terminal.
 1. Run the following `git fetch` and `git checkout` commands to download a branch named `release-pipeline` from Microsoft's repository and switch to that branch.
@@ -81,7 +81,7 @@ Here, you create an initial pipeline configuration that builds the web applicati
 
 1. As an optional step, open *azure-pipelines.yml* from Visual Studio Code and familiarize yourself with the initial configuration.
 
-    The configuration resembles the basic one you created in the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline/6-create-the-pipeline?azure-portal=true) module. It builds only the application's Release configuration. For learning purposes, this configuration does not run quality or security checks that you set up in previous modules.
+    The configuration resembles the basic one you created in the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline/6-create-the-pipeline?azure-portal=true) module. It builds only the application's Release configuration. For learning purposes, this configuration does not run the quality or security checks that you set up in previous modules.
 
 1. Run the following `git commit` command to add an empty entry to your commit history.
 
@@ -89,9 +89,9 @@ Here, you create an initial pipeline configuration that builds the web applicati
     git commit --allow-empty -m "Trigger the pipeline"
     ```
 
-    This step is for learning purposes and is not typical. We provide starter code that you don't yet need to modify. The `--allow-empty` flag ensures that the next step successfully pushes the branch to GitHub and triggers Azure Pipelines to run.
+    This step is for learning purposes and is not typical. We provide starter code that you don't need to modify now. The `--allow-empty` flag ensures that the next step successfully pushes the branch to GitHub and triggers Azure Pipelines to run.
 
-    If you were to omit this step, the `git push` command you run in the next step would not take any action, and therefore wouldn't trigger Azure Pipelines to run.
+    If you omitted this step, the `git push` command you run in the next step wouldn't take any action, and therefore wouldn't trigger Azure Pipelines to run.
 
 1. Run the following `git push` command to upload the branch to your GitHub repository.
 

@@ -1,6 +1,6 @@
-In the [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true) learning path, you helped the Tailspin team use Azure DevOps to plan and build a continuous integration (CI) pipeline for the _Space Game_ website.
+In the [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true) learning path, you helped the Tailspin team use Azure DevOps to plan and build a continuous integration pipeline for the _Space Game_ website.
 
-The Tailspin team's big release is approaching quickly. The team can use Azure DevOps to build and test their code, but how will they deploy the application to an environment that's available to their users?
+The Tailspin team's big release is approaching. The team can use Azure DevOps to build and test their code, but how can they quickly deploy the application to an environment that's available to their users?
 
 In this module, you'll continue your journey with the Tailspin team as they set up a continuous delivery (CD) pipeline for the _Space Game_ website.
 
@@ -8,7 +8,7 @@ In this module, you'll continue your journey with the Tailspin team as they set 
 
 In this module, you'll:
 
-- Learn what continuous delivery (CD) is, why it's important, and what tools you can use.
+- Learn what CD is, why it's important, and what tools you can use.
 - Create a basic release pipeline that deploys a web application to Azure App Service.
 - Examine pipeline analytics to understand the health and history of your releases.
 
@@ -21,7 +21,7 @@ To follow the progression from the beginning, be sure to first complete these le
 * [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true)
 * [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true)
 
-To take just this module, go through these modules first to get set up with Azure DevOps and set up your development environment.
+If you want to start with this learning path, first go through these two modules to set up Azure DevOps and your development environment.
 
 * [Get started with Azure DevOps](/learn/modules/get-started-with-devops?azure-portal=true)
 * [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true)

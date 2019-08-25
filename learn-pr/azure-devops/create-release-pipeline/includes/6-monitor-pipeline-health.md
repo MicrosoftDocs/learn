@@ -1,30 +1,30 @@
 In this exercise, you examine a few of the analytics features that Azure Pipelines provides.
 
-Irwin asked the Tailspin team how they can release faster. Building an automated release pipeline is a great step towards that. As you release more rapidly, it's important to understand the health and history of your releases. Looking at health trends regularly can help you diagnose potential problems before those problems become critical.
+Irwin asked the Tailspin team how they can release faster. Building an automated release pipeline is a great step towards releasing quickly and reliably. As you release more often and more rapidly, it's important to understand the health and history of your releases. Looking at health trends regularly can help you diagnose potential problems before those problems become critical.
 
 Before we take a look at some of your pipeline's analytics, let's listen in on the Tailspin team at their morning meeting.
 
 ## How can I track the health of my entire pipeline?
 
-It's the following morning. At the team meeting, Andy and Mara have just finished demonstrating the build and release pipeline that they set up as a proof of concept.
+It's the following morning. At the team meeting, Andy and Mara have just finished demonstrating the build and release pipeline that they set up as a POC.
 
 **Amita:** This is fantastic. Having just the build pipeline was a great step, but I still had to manually install the build artifact in my lab so I could test it. If I can get these releases to my test environment on a regular schedule, that would save a lot of time getting new features through QA.
 
-**Mara:** Exactly! We can expand our release pipeline to create a more complete deployment workflow.
+**Mara:** Exactly! And remembember, we can always expand our release pipeline to include more stages. The final goal is to create a complete deployment workflow.
 
-**Tim:** That workflow could include a staging environment as well. I could do additional stress testing before we present new features to management for final approval.
+**Tim:** A staging environment would be great. I could do additional stress testing before we present new features to management for final approval.
 
 The team is excited to see what the new pipeline can do and they all start talking at the same time.
 
-**Andy:** I'm excited about this as well. But let's take things one step at a time. Yes, I think we can do all of this and more, but this is just a proof of concept. We'll work on expanding it later.
+**Andy:** I'm excited, too. But let's take things one step at a time. Yes, I think we can do all of this and more, but this is just a POC. We'll work on expanding it over time.
 
-**Amita:** This is great, but how do we know if what we have in this environment is valid? What I mean is, where do I go to see the health of the builds and releases?
+**Amita:** A big question for me is how do we know if what we have in this environment is valid? What I mean is, where do I go to see the health of the releases?
 
-**Andy:** Remember the dashboard we created to monitor the health of the builds? We can do the same thing for the releases. This way, we can monitor the health of the whole pipeline, and anyone interested can check in on the system and see what's happening.
+**Andy:** Remember the dashboard we created to monitor the health of the builds? We can do the same thing for the releases. We'll be able to monitor the health of the whole pipeline, and anyone interested can check in on the system and see what's happening.
 
 **Tim:** Irwin will like that.
 
-**Andy:** Let's build a release dashboard after we've defined a more complete release workflow. For now, let's first look at some of the built-in analytics that Azure Pipelines provides.
+**Andy:** Let's hold off on building a release dashboard until after we've defined a more complete release workflow. For now, let's look at some of the built-in analytics that Azure Pipelines provides.
 
 The team gathers around Andy's laptop.
 
@@ -36,7 +36,7 @@ These reports include:
 
 * The overall pass rate of your pipeline.
 * The pass rate of any tests that are run in the pipeline.
-* The average duration of your pipeline runs, including the build tasks that take the most time to complete.
+* The average duration of your pipeline runs, including the build tasks, which take the most time to complete.
 
 You'll examine the analytics for your pipeline shortly. Here's a sample report that shows pass rate and duration for a project that has many pipeline runs.
 
@@ -52,7 +52,7 @@ Azure DevOps also provides this information as an OData feed that you can use to
 Let's examine a few of your pipeline's analytics. Here's how.
 
 1. In Azure Pipelines, navigate to your pipeline.
-1. Select the **Analtyics** tab.
+1. Select the **Analytics** tab.
 
     > [!div class="mx-imgBorder"]
     > ![Azure Pipelines showing the Analytics tab](../media/6-select-analytics-tab.png)
@@ -69,7 +69,7 @@ Let's examine a few of your pipeline's analytics. Here's how.
 
     At this point, you have a basic pipeline report that contains data for just a few runs.
 
-**Amita:** This is great. However, I don't see a lot of data there yet.
+**Amita:** That's the information I want but I don't see a lot of data there yet.
 
 **Andy:** That's right. We'll collect more data as we perform more runs over time. We'll use this data to gain a greater sense of the health of the pipeline and where we can make it more efficient.
 

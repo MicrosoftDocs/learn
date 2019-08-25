@@ -1,26 +1,24 @@
-With the proof of concept a success and some basic monitoring in place, the team is once again excited to see what this pipeline can do. Everyone begins talking at once again and there are a lot of questions being thrown at Andy and Mara. 
+With the POC a success and some basic monitoring in place, the team is once again excited to see what this pipeline can do. Tim and Amita start asking Andy and Mara a lot of questions. 
 
 Andy glances at Mara and clears his throat.
 
-**Andy:** Hold on. We need to step back and think about this in terms of our new Agile approach to things. We finished our last sprint when we created our backlog by using Azure Boards and our pipeline by using Azure Pipeline. We need to set up CD as our next sprint and a clear picture of where we want to go with this. Let's get some tasks in place for the next sprint.
+**Andy:** Hold on. We need to step back and think about this in terms of our new Agile approach to things. We finished our last sprint by accomplishing two goals. We created our backlog by using Azure Boards and we created our pipeline by using Azure Pipelines. Now we need to set up our next sprint iteration. What's our goal and what tasks will let us accomplish it?
 
-**Amita:** Andy is right. Irwin asked us to find a way to speed up deployments. I think that should be the focus of the next sprint. Remember our value stream map? We still have a number of areas we can speed up.
+**Amita:** Andy is right. Irwin asked us to find a way to speed up deployments. I think that should be the focus of the next sprint. Remember our value stream map? We still have a number of areas where we can improve by cutting down the time it takes us do some activities.
 
 <!-- TODO: Show screenshot of VSM -->
 
-See? we are still slow at running quality tests.
+See? we're still slow at running quality tests.
 
-**Tim:** Exactly. And we are still bottle-necked at getting management to approve new features and getting changes out to production.
+**Tim:** Exactly. And we've still got a bottle-neck at deploying changes to production because management needs to approve new features first.
 
-The team talks and brainstorms a bit.
-
-**Mara:** Great. Then we can start planning what tasks we will accomplish in this sprint. It sounds like we need to:
+**Mara:** It sounds like we can start planning what tasks we'll accomplish in this sprint. We need to:
 
 - **Define a release management workflow**
 - **Automate quality tests**
 - **Improve release cadence**
 
-If we all agree, I will add these tasks to Azure Boards.
+If that seems right, I'll add these tasks to Azure Boards.
 
 The team agrees. Mara sets up a sprint iteration and adds these tasks:
 

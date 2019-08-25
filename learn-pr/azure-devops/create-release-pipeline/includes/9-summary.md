@@ -1,12 +1,12 @@
-Great work. You've successfully deployed the _Space Game_ website to Azure App Service using Azure Pipelines. If you've gone through the [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true) learning path, then you know this is a big step. You now have a live environment that you can run additional tests on or release to your users.
+Great work. You've successfully deployed the _Space Game_ website to Azure App Service using Azure Pipelines. If you've gone through the [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true) learning path, then you know this is a big step. You now have a live environment! Take advantage of it and run additional tests or make it available to your users.
 
-Continuous delivery helps you to deliver reliable software updates to your customers at a more rapid pace. This helps ensure that your customers have the latest features and fixes as soon as you you're ready to release them. Having basic pipeline analytics in place helps your team analyze hot spots and areas for improvement.
+CD helps you deliver reliable software updates to your customers as rapidly as the business demands. Your customers can have the latest features and fixes as soon as you're ready to release them. With the analytics provided by Azure Pipelines, your team can pinpoint hot spots and areas for improvement.
 
-Setting up Azure Pipelines to publish the _Space Game_ website to App Service is a great first step for the team. But this is just the beginning. In the modules that follow, you help the team expand their release pipeline to include additional stages and tests. Doing so will help the team feel more confident about their releases.
+Setting up Azure Pipelines to publish the _Space Game_ website to App Service is a great first step for the team. But this is just the beginning. In the modules that follow, you help the team expand their release pipeline to include additional stages and tests. Each improvement to the pipeline will give the team more confidence in the quality of their releases.
 
 ## Learn more
 
-Here are some additional resources you can use to further your understanding.
+Here are some additional resources you can use to learn more Azure resources, App Service, and many other topics.
 
 ### Choose the right compute option for your app
 
