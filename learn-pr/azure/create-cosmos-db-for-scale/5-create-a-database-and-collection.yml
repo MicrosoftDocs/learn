@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Create a database and container in Azure Cosmos DB
   description: Apply what you've learned about request units and partitioning to build an Azure Cosmos DB database and container built for scale. 
   ms.date: 09/24/2018
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

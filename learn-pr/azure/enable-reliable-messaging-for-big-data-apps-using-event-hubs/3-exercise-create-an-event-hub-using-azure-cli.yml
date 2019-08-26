@@ -5,9 +5,8 @@ metadata:
   title: Exercise - Use the Azure CLI to Create an Event Hub
   description: Use the Azure CLI to Create an Event Hub
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: chrvaw
+  author: nickwalkmsft
+  ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

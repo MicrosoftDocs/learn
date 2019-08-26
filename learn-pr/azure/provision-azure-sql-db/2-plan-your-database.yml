@@ -5,9 +5,8 @@ metadata:
   title: Plan your Azure SQL database
   description: Plan your Azure SQL database
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

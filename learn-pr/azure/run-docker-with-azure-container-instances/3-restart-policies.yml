@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.run-docker-containers-aci.3-restart-policy
 metadata:
-  title: Control Azure Container Instances restart behavior
+  title: Exercise - Control Azure Container Instances restart behavior
   description: Control Container Instances restart behavior.
   ms.date: 09/24/2018
   author: cryophobia
@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Control restart behavior
+title: Exercise - Control restart behavior
 durationInMinutes: 6
 content: |
   [!include[](includes/3-restart-policy.md)]
