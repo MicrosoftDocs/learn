@@ -1,18 +1,26 @@
 You're now ready to create a new Event Hub. After creating the Event Hub, you'll use the Azure portal to view your new hub.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 ## Set some defaults in the Azure CLI
 
-Let's start by providing some default values for the Azure CLI in the Cloud Shell. This will keep you from having to type these in every time. In particular, let's set the _resource group_ and _location_. Select a location from the following list.
+1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure subscription.
 
-[!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
+1. Click on the Cloud Shell button to open it. When prompt, choose the Bash command-line option.
 
-Then type the following command into the Azure CLI, make sure to replace the location with one close to you.
+    ![Screenshot showing Cloud Shell access button](../media/3-portal-cloudshell-access.png)
 
-```azurecli
-az configure --defaults group=<rgn>[sandbox Resource Group]</rgn> location=westus2
-```
+1. Create a new resource group with the name **learn-big-data-messaging-rg** so that it will be easier to clean up these resources when you are finished with the module. If you choose a different resource group name, remember it for the rest of the exercises in this module.
+
+    ```azurecli
+    az group create --name learn-big-data-messaging-rg --location westus2
+    ```
+
+1. You can also set default values for the Azure CLI in the Cloud Shell. This will keep you from having to type these in every time. In particular, let's set the _resource group_ and _location_. Type the following command into the Azure CLI, make sure to replace the location with one close to you.
+
+    ```azurecli
+    az configure --defaults group=learn-big-data-messaging-rg location=westus2
+    ```
 
 ## Create an Event Hubs namespace
 
@@ -24,7 +32,7 @@ Use the following steps to create an Event Hubs namespace using bash shell suppo
     > |Parameter      |Description|
     > |---------------|-----------|
     > |--name (required)      |Enter a 6-50 characters-long unique name for your Event Hubs namespace. The name should contain only letters, numbers, and hyphens. It should start with a letter and end with a letter or number.|
-    > |--resource-group (required) | This will be the pre-created Azure sandbox resource group supplied from the defaults. |
+    > |--resource-group (required) | This will be the **learn-big-data-messaging-rg** resource group supplied from the defaults. |
     > |--l (optional)     |Enter the location of your nearest Azure datacenter, this will use your default.|
     > |--sku (optional) | The pricing tier for the namespace [Basic | Standard], defaults to _Standard_. This determines the connections and consumer thresholds. |
 
@@ -53,7 +61,7 @@ Use the following steps to create an Event Hubs namespace using bash shell suppo
     > [!div class="mx-tableFixed"]
     > |Parameter      |Description|
     > |---------------|-----------|
-    > |--resource-group (required)  | This will be the pre-created Azure sandbox resource group supplied from the defaults. |
+    > |--resource-group (required)  | This will be the **learn-big-data-messaging-rg** resource group configured from the defaults. |
     > |--namespace-name (required)  | Enter the name of the namespace you created. |
 
     This command returns a JSON block with the connection string for your Event Hubs namespace that you'll use later to configure your publisher and consumer applications. Save the value of the following keys for later use.
@@ -100,8 +108,6 @@ Use the following steps to create your new Event Hub:
 ## View the Event Hub in the Azure portal
 
 Next, let's see what this looks like in the Azure portal.
-
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Find your Event Hubs namespace using the Search bar at the top of portal.
 
