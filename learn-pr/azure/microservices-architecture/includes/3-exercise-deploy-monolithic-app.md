@@ -4,9 +4,6 @@ Fabrikam has currently added the drone service into their existing application.
 
 In this exercise, we'll deploy a monolithic application on Azure App Service and enable Application Insights to get visibility into telemetry and application performance.
 
-<!-- Activate the sandbox -->
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Deploy a monolithic application on Azure App Service
 
 Let's start by deploying the application. First, we'll need to great the Azure resources to host the application.
