@@ -10,9 +10,9 @@ Each cloud resource that a CSP offers has an associated cost or set of costs. Ca
 
 A key advantage of cloud computing is that customers "rent" resources from the CSP and only pay for the resources that they use. Computing these costs, however, isn't trivial. For example, provisioning a virtual machine in Azure incurs a per-hour cost for the VM, a per-GB-month cost for storage, and a per-GB-month cost for data egress. Customers also pay for the virtual network to which the VM belongs and the resources that comprise it. The challenge for the cloud service provider is to accurately capture usage metrics for all of these resources. Figure 2.9 shows a typical breakdown of the metrics that apply to individual service models. Metering and monitoring usage for millions of customers employing tens or hundreds of services every month generates gigabytes of logs each minute, and customers must be charged accordingly. The most popular model used to define such metrics is called the chargeback model.
 
-![https://oli.cmu.edu/repository/webcontent/0ea6fc470a0001dc68390ea2588ab51d/\_u02\_data\_centers/\_u02\_m03\_software\_stack/webcontent/metering1.png](../media/metering.png){width="6.5in" height="3.85125in"}
+![Figure 2.9: Metering in different types of cloud services](../media/metering.png)
 
-Figure 2.9: Metering in different types of cloud services
+_Figure 2.9: Metering in different types of cloud services._
 
 # Chargeback Model
 
@@ -22,9 +22,9 @@ In the chargeback model, service owners measure resource usage and charge costs 
 
 Azure Cost Management is a service that helps organizations plan their spend on cloud services and monitor that spend over time. It works with both Azure and AWS. It provides several key features to organizations that use it, including cost analysis, budgeting, and recommendations (Figure 2.10).
 
-![](../media/cost-management-portal.png){width="6.5in" height="4.927083333333333in"}
+![Figure 2.10: The Azure Cost Management portal](../media/cost-management-portal.png)
 
-Figure 2.10: The Azure Cost Management portal[^1]
+_Figure 2.10: The Azure Cost Management portal<sup>[1][^1]</sup>._
 
 **Cost analysis** provides tools for analyzing costs and spotting patterns, trends, and anomalies. Predefined views are provided to get users up and running quickly examining accumulated costs and cost forecasts. Customized views can also be created.
 
@@ -34,6 +34,8 @@ Figure 2.10: The Azure Cost Management portal[^1]
 
 Cost Management is available for all Azure subscriptions. AWS costs are incorporated by integrating with the Cost and Usage reporting feature in AWS. Reports are stored in AWS S3 storage buckets and imported into Azure Cost Management for analysis.
 
-\[Activity M1-P5-A, M1-P5-B\]
+### References
 
-[^1]: Source: <https://azure.microsoft.com/en-us/services/cost-management/>
+1. Source: <https://azure.microsoft.com/en-us/services/cost-management/>
+
+[^1]: <https://azure.microsoft.com/en-us/services/cost-management/>

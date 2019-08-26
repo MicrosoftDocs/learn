@@ -2,9 +2,9 @@ Middleware is a general term for software that serves to \"glue together\" separ
 
 Cloud middleware refers to the software platform that controls and coordinates different cloud services and makes it possible for users to issue service requests and cloud providers to manage their infrastructure. Cloud middleware consists of multiple abstraction layers that hide system complexity and that enable communication between various applications, services, and devices that are part of a cloud service (Figure 2.3).
 
-![https://oli.cmu.edu/repository/webcontent/0ea6fc470a0001dc68390ea2588ab51d/\_u02\_data\_centers/\_u02\_m03\_software\_stack/webcontent/middleware.png](../media/middleware-features.png){width="6.5in" height="3.9278576115485566in"}
+![Figure 2.3: Cloud middleware features](../media/middleware-features.png)
 
-Figure 2.3: Cloud middleware features
+_Figure 2.3: Cloud middleware features._
 
 # Cloud Middleware Features
 
@@ -23,5 +23,3 @@ There are a number of distinct and important features that cloud middleware prov
 **User management and security**: Cloud middleware must also provide support for access control and employ standard security practices for the management of various types of credentials that control access to individual resources. The user-management system in the middleware should provide features that allow cloud clients to create and destroy entities such as users and groups, and configure the Access Control Lists (ACLs) that define the resources that individual users and groups have access to.
 
 **User interface and APIs**: Finally, cloud middleware must make available a client-facing set of APIs. It is also typical of cloud middleware to provide user-friendly interfaces (typically in the form of web interfaces), where clients can log in and manage their provisioned resources and make service requests.
-
-\[Activity M1-P2\]

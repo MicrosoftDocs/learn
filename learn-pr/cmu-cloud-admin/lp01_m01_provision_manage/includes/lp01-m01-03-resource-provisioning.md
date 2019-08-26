@@ -8,42 +8,28 @@ Here, we will focus on understanding some of the high-level steps that a CSP mus
 
 A resource-provisioning system for the cloud generally has the following sub-parts:
 
-1.  Access to a physical pool of resources -- generally thousands or millions of servers, interconnected by a network as well as a pool of storage devices.
-
-2.  An identity-management subsystem that maintains and validates end users' credentials for accessing many different types of resources; it can also support role-based access control.
-
-3.  A metering and monitoring system to detect utilization of physical resources and consumption of services.
-
-4.  A billing and charge-management system to map the metered resources to physical costs and take appropriate actions based on the user's allowed privileges.
-
-5.  A resource manager that works with a hypervisor to map physical resources to virtual abstractions.
-
-6.  The provisioning system will provide management and monitoring APIs as well as a web front-end.
+1. Access to a physical pool of resources -- generally thousands or millions of servers, interconnected by a network as well as a pool of storage devices.
+1. An identity-management subsystem that maintains and validates end users' credentials for accessing many different types of resources; it can also support role-based access control.
+1. A metering and monitoring system to detect utilization of physical resources and consumption of services.
+1. A billing and charge-management system to map the metered resources to physical costs and take appropriate actions based on the user's allowed privileges.
+1. A resource manager that works with a hypervisor to map physical resources to virtual abstractions.
+1. The provisioning system will provide management and monitoring APIs as well as a web front-end.
 
 # Cloud End-to-End Service Provisioning Flow
 
 As an example, Figure 2.4 shows the typical steps for a customer provisioning a virtual machine from a Cloud Service Provider:
 
-![https://oli.cmu.edu/repository/webcontent/0ea6fc470a0001dc68390ea2588ab51d/\_u02\_data\_centers/\_u02\_m03\_software\_stack/webcontent/provisioning.png](../media/iaas-provisioning.png){width="6.5in" height="3.550625546806649in"}
+![Figure 2.4: Typical end-to-end IaaS provisioning steps](../media/iaas-provisioning.png)
 
-Figure 2.4: Typical end-to-end IaaS provisioning steps
+_Figure 2.4: Typical end-to-end IaaS provisioning steps._
 
 The steps illustrated in Figure 2.4 are explained as follows:
 
-1.  The customer logs on to the portal and is authenticated by the identity management system.
-
-2.  Based on the customer's entitlement, the portal extracts a subset of services that the user can order from the service catalogue and constructs a 'request catalog'.
-
-3.  The customer selects a service, e.g. a virtual server of a particular size. Each service has a set of technical requirements (for example, the amount of vRAM and vCPU) and business requirements (for example, high-availability or SLA requirements) associated with it.
-
-4.  The orchestration tool extracts the technical service information from the service catalog and decomposes the service into individual parts, such as compute resource configuration, network configuration, and so on.
-
-5.  The provisioning process is initiated.
-
-6.  The virtual machine running on the server is provisioned using the server/compute domain manager.
-
-7.  The network, including firewalls and load balancers, as well the storage is provisioned by the network, network services and storage domain managers.
-
-8.  Charging is initiated for billing/chargeback and the change management case is closed and the customer is notified accordingly.
-
-\[Activity M1-P3\]
+1. The customer logs on to the portal and is authenticated by the identity management system.
+1. Based on the customer's entitlement, the portal extracts a subset of services that the user can order from the service catalogue and constructs a 'request catalog'.
+1. The customer selects a service, e.g. a virtual server of a particular size. Each service has a set of technical requirements (for example, the amount of vRAM and vCPU) and business requirements (for example, high-availability or SLA requirements) associated with it.
+1. The orchestration tool extracts the technical service information from the service catalog and decomposes the service into individual parts, such as compute resource configuration, network configuration, and so on.
+1. The provisioning process is initiated.
+1. The virtual machine running on the server is provisioned using the server/compute domain manager.
+1. The network, including firewalls and load balancers, as well the storage is provisioned by the network, network services and storage domain managers.
+1. Charging is initiated for billing/chargeback and the change management case is closed and the customer is notified accordingly.
