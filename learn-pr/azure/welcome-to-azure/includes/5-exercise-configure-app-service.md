@@ -58,7 +58,7 @@ For example, the **Settings** section gives you access to configure various aspe
 ## Scale up your App Service
 
 > [!NOTE]
-> The sandbox has limits in allowing us to set and applying scaling options. However, you'll still be able to follow along in the portal to see the available options. You're welcome to test these options in your personal Azure subscription. However, keep in mind that additional costs will apply.
+> The sandbox has limits in so far as allowing us to change any of our current scaling options. However, you'll still be able to follow along in the portal to see the options available. You're welcome to test these options in your personal Azure subscription. However, keep in mind that additional costs will apply.
 
 1. Find the *Settings* configuration section for your App Service. Click on **Scale up (App service plan)**.
 
@@ -74,11 +74,11 @@ For example, the **Settings** section gives you access to configure various aspe
 
     Within each category, there are recommended pricing tiers that will allow us to scale the resources available to our App service. These pricing tiers give us access to the additional features mentioned above.
 
-    [ ![Screenshot showing App Service graphs](../media/5-scale.png)](../media/5-scale-expanded.png#lightbox)
+    [ ![](../media/5-scale.png "Screenshot showing App Service graphs")](../media/5-scale-expanded.png#lightbox)
 
 1. Click the **Apply** button to activate the new price tier.
 
     > [!NOTE]
     > Some pricing tiers do not allow for direct migration without redeploying your site. For example, in the production tab, you'll notice that all but the S1 pricing tier is supported for our current scale unit. If we decided that we'd like to move to P1V2, then we'll need to redeploy our application.
 
-    [ ![Screenshot showing App Service graphs](../media/5-scale-support.png)](../media/5-scale-support-expanded.png#lightbox)
+    [ ![](../media/5-scale-support.png "Screenshot showing App Service graphs")](../media/5-scale-support-expanded.png#lightbox)

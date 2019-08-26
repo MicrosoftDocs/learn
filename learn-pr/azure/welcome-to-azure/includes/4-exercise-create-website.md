@@ -38,7 +38,7 @@ In the free Azure sandbox environment you'll use the pre-created resource group 
 
     You'll notice how the portal updates it's itself and present additional UI that either provides you with options to refine selection or update configuration variables. We call these panels *blades*.
 
-    [ ![Screenshot showing Azure marketplace](../media/4-azure-marketplace.png)](../media/4-azure-marketplace-expanded.png#lightbox)
+    [![](../media/4-azure-marketplace.png "Screenshot showing Azure marketplace")](../media/4-azure-marketplace-expanded.png#lightbox)
 
 1. We have several application types to choose from, and unfortunately, we'll not discuss each in detail. You're however welcome to go through the list and explore each item at a later stage. Since we know that we want to install WordPress, we can do a quick search for it. In the *search box* above the listed application options, type in **WordPress**. Select the default *WordPress* option from the list of options available.
 
@@ -49,7 +49,7 @@ In the free Azure sandbox environment you'll use the pre-created resource group 
 
 1. In the newly presented blade, you'll typically find additional information about the item you're about to install. Make sure to review this information. Click the **Create** button when ready.
 
-    [ ![Screenshot showing WordPress image information](../media/4-create-site.png)](../media/4-create-site-expanded.png#lightbox)
+    [![](../media/4-create-site.png "Screenshot showing WordPress image information")](../media/4-create-site-expanded.png#lightbox)
 
 1. Recall from earlier, that we'll use a wizard type interface to create our website. The newly presented blade is our first step in this process. Here, we have to set some values for the required options.
 
@@ -64,7 +64,7 @@ In the free Azure sandbox environment you'll use the pre-created resource group 
 
     Here is a screenshot to give you an idea of the configuration values. Finally, click on the **Create** button to start the deployment of your new site.
 
-    [![Screenshot showing app service configuration information](../media/4-config-info-create.png)](../media/4-config-info-create-expanded.png#lightbox)
+    [![](../media/4-config-info-create.png "Screenshot showing app service configuration information")](../media/4-config-info-create-expanded.png#lightbox)
 
 ## Verify your website is running
 
@@ -82,7 +82,7 @@ We can track the progress of the deployment at any time.
 
     Notice how resources are listed as they're created and the status changes to green checkmarks as each component in the deployment completes. 
 
-    [![Screenshot showing the notification information](../media/4-deployment-progress.png)](../media/4-deployment-progress-expanded.png)
+    [![](../media/4-deployment-progress.png "Screenshot showing the notification information")](../media/4-deployment-progress-expanded.png)
 
 1. Once the deployment status message change to **Your deployment is complete**, you'll notice the status in the notification dialogue changes to *Deployment succeeded*. Click on the **Go to Resource** button to navigate to the App Service overview.
 
@@ -90,7 +90,7 @@ We can track the progress of the deployment at any time.
 
 1. Find the URL in the Overview section.
 
-    [![Screenshot showing overview of App Service information and url location](../media/4-website-url.png)](../media/4-website-url-expanded.png#lightbox)
+    [![](../media/4-website-url.png "Screenshot showing overview of App Service information and url location")](../media/4-website-url-expanded.png#lightbox)
 
     Copy the **URL** information. Open a new tab in your browser and use the information to browse to your new WordPress site. You can now configure your WordPress website and add content.
 
