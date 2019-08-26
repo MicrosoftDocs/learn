@@ -26,7 +26,7 @@ quiz:
       explanation: "Azure SQL Database is a great choice for simplicity and cost effectiveness, but is missing advanced features of SQL Server such as the ability to run SQL Agent jobs."
     - content: "SQL Server on Azure Virtual Machines"
       isCorrect: true
-      explanation: "Running SQL Server inside an Azure Virtual Machines instance offers you the ability to life and shift your on-premises SQL Server workloads, because you're running your chosen version of SQL Server in a VM."
+      explanation: "Running SQL Server inside an Azure Virtual Machines instance offers you the ability to lift and shift your on-premises SQL Server workloads, because you're running your chosen version of SQL Server in a VM."
   - content: "Name the two permissions that must be added to the credentials used to connect to your source SQL Server instance during a planned migration."
     choices:
     - content: "CONTROL SERVICES, CONTROL DATABASE"
