@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.microservices-architecture.6-analyze-and-decompose
+uid: learn.microservices-architecture.5-analyze-and-decompose
 metadata:
   title: Analyze an application and identify decomposition boundaries
   description: TODO
@@ -12,4 +12,4 @@ metadata:
 title: Analyze an application and identify decomposition boundaries
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-analyze-and-decompose.md)]
+  [!include[](includes/5-analyze-and-decompose.md)]

@@ -69,3 +69,13 @@ Let's start by deploying the application. First, we'll need to great the Azure r
                     --output tsv)
 
 ![Screenshot of the Drone Delivery web site](../media/3-web-site-before.png)
+
+## Perform load test against application
+
+1. On the home page for your deployed application, click the **Send Requests** button. This simulates the submission of 100 requests through the applicaiton.
+
+1. For the first request, you'll see a result of around 8-12 seconds to process 100 messages. If you refresh the page and resubmit if prompted, this may drop by about half, but will still take around five seconds per request.
+
+    ![Screenshot of the Drone Delivery web site after running the performance test](../media/5-performance-test.png)
+
+Fabrikam suspects that the monolithic architecture is preventing heavily utilized services from scaling, leading to the poor performance seen here. Let's see if we can identify the bottleneck and improve the performance of the application.
