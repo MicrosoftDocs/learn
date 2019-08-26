@@ -20,6 +20,7 @@ Get your first Azure IoT Central app working in minutes
 - Azure account
 - An introductory knowledge of the purpose of Azure IoT.
 - A working knowledge of how to navigate a web portal.
+- Good working knowledge of Visual Studio Code, or Visual Studio 2017+
 
 ## Summary
 
@@ -88,5 +89,5 @@ and can recall or redirect trucks that are overheating.
 1. **Summary**
 
     By completing all steps of the tutorial the user will have an up-and-running IoT Central app that visually demonstrates the power of an IoT Central dashboard in monitoring
-    and sending commands to remote devices. The visual interactive nature of the app shows the value of IoT Central in its ability to communicate with remote devices,receivemessages and telemetry from these devices, and importantly, to send commands to these devices to change their objectives appropriately.
+    and sending commands to remote devices. The visual interactive nature of the app shows the value of IoT Central in its ability to communicate with remote devices, receive messages and telemetry from these devices, and importantly, to send commands to these devices to change their objectives appropriately.
 

@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.your-first-iot-central-app.4-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 09/01/2019
+  author: PeterTurcan
+  ms.author: v-pettur
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Summary
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'question 1?'
+    choices: 
+    - content: 'True'
+      isCorrect: false
+      explanation: Stuff.
+    - content: 'False'
+      isCorrect: true
+      explanation: more stuff.
+
+  - content: 'question 2?'
+    choices: 
+    - content: 'answer text'
+      isCorrect: false
+      explanation: stuff.
+    - content: 'answer text'
+      isCorrect: true
+      explanation: stuff.
+    - content: 'answer text'
+      isCorrect: false
+      explanation: stuff.
