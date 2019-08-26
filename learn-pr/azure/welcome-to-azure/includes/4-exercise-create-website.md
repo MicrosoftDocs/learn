@@ -84,13 +84,13 @@ We can track the progress of the deployment at any time.
 
     [![Screenshot showing the notification information](../media/4-deployment-progress.png)](../media/4-deployment-progress-expanded.png)
 
-1. Once the deployment status message change to **Your deployment is complete**, you'll notice the status in the notification dialogue changes to *Deployment Succeeded*. Click on the **Go to Resource** button to navigate to the App Service overview.
+1. Once the deployment status message change to **Your deployment is complete**, you'll notice the status in the notification dialogue changes to *Deployment succeeded*. Click on the **Go to Resource** button to navigate to the App Service overview.
 
     ![Screenshot showing deployment status in the notification dialogue](../media/4-deployment-complete.png)
 
 1. Find the URL in the Overview section.
 
-    [![Screenshot showing overview of website and url location](../media/4-website-url.png)](../media/4-website-url-expanded.png#lightbox)
+    [![Screenshot showing overview of App Service information and url location](../media/4-website-url.png)](../media/4-website-url-expanded.png#lightbox)
 
     Copy the **URL** information. Open a new tab in your browser and use the information to browse to your new WordPress site. You can now configure your WordPress website and add content.
 
