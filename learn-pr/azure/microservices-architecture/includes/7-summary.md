@@ -1,4 +1,4 @@
-You've now learned what consists of monolithic and microservices architectures. You've deployed an example of a monolithic application and refactored it to use a microservice deployed on Azure Functions. You've also looked at the high-level details of *domain-driven design*, a framework you can use to analyze and decompose an application.
+Your application architecture will likely have more complexity, different challenges, and different organizational structure than our example posed here. You've now learned what consists of monolithic and microservices architectures. You've deployed an example of a monolithic application and refactored it to use a microservice deployed on Azure Functions. You've also looked at the high-level details of *domain-driven design*, a framework you can use to analyze and decompose an application.
 
 ## Learn more
 
