@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.advanced-classification-models.exercise-support-vector-machines
-title: Programming Exercise - Support Vector Machines
+title: Exercise - Support Vector Machines
 metadata:
-  title: Programming Exercise - Support Vector Machines
+  title: Exercise - Support Vector Machines
   description: Here we will build a SVM model in Azure notebooks.
   ms.date: 06/30/2019
   author: markjulmar

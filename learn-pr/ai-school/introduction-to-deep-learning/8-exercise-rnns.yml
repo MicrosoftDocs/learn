@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.deep-learning.exercise-rnns
-title: Programming Exercise - RNNs
+title: Exercise - RNNs
 metadata:
-  title: Programming Exercise - RNNs
+  title: Exercise - RNNs
   description: Here we will build an RNN model in Azure Notebooks.
   ms.date: 06/30/2019
   author: markjulmar

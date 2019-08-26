@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.advanced-classification-models.exercise-advanced-svms
-title: Programming Exercise - Advanced SVMs
+title: Exercise - Advanced SVMs
 metadata:
-  title: Programming Exercise - Advanced SVMs
+  title: Exercise - Advanced SVMs
   description: Here we will build differnt variations of SVMs in Azure Notebooks.
   ms.date: 06/30/2019
   author: markjulmar

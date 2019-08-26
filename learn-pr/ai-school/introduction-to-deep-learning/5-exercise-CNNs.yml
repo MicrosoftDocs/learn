@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.deep-learning.exercise-cnns
-title: Programming Exercise - CNNs
+title: Exercise - CNNs
 metadata:
-  title: Programming Exercise - CNNs
+  title: Exercise - CNNs
   description: Here we build a CNN model in Azure Notebooks.
   ms.date: 06/30/2019
   author: markjulmar

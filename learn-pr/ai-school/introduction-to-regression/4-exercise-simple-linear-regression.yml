@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.introduction-to-regression.exercise-simple-linear-regression
-title: Programming Exercise - Simple Linear Regression
+title: Exercise - Simple Linear Regression
 metadata:
-  title: Programming Exercise - Simple Linear Regression
+  title: Exercise - Simple Linear Regression
   description: Here we learn how to build a simple linear regression model in Azure Notebooks.
   ms.date: 06/30/2019
   author: markjulmar

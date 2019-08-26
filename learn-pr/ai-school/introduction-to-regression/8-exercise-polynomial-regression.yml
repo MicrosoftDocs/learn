@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.introduction-to-regression.exercise-polynomial-regression
-title: Programming Exercise - Polynomial Regression
+title: Exercise - Polynomial Regression
 metadata:
-  title: Programming Exercise - Polynomial Regression
+  title: Exercise - Polynomial Regression
   description: Here we build a polynomial regression model in Azure Notebooks.
   ms.date: 06/30/2019
   author: markjulmar
