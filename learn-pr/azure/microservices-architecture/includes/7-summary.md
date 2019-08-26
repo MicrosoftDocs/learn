@@ -1,4 +1,4 @@
-We have identified the features and capabilities of microservices. We've discussed the differences between a monolith and microservices architecture. We've gone through service decomposition for a monolithic application and redeployed it as a microservice.
+You've now learned what consists of monolithic and microservices architectures. You've deployed an example of a monolithic application and refactored it to use a microservice deployed on Azure Functions. You've also looked at the high-level details of *domain-driven design*, a framework you can use to analyze and decompose an application.
 
 ## Learn more
 

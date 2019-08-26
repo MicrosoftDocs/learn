@@ -2,14 +2,6 @@ There are many reasons that you might choose to change the architecture of a sys
 
 As their drone shipping business grows, system load increases. The current architecture is straining under the load and they would like to be able to provide better flexibility in scaling the application that isn't available in the current monolithic architecture. Improving the application's scalability is one of the drivers for Fabrikam to look at moving their application to a microservices architecture.
 
-## Challenges with the monolithic architecture
-
-- The package service has been identified as a critical part of the business and was originally part of the monolith
-- Setting up a "tiger team" that is going to have full control over this piece of the business
-- Because it's in the monolith, the team cannot operate autonomously, has to rely on shared data and data structures, and is unable to iterate as quickly as they need
-- They want to move fast and break things
-- Need independent scalability for their service to meet customer demands
-
 ## Scaling monolith vs scaling microservices
 
 One of the primary benefits to a microservices architecture comes in the increased scaling capabilities. Because services are separated out, it's much easier to scale each service individually as load increases across them.
@@ -20,4 +12,10 @@ On a monolithic architecture, scaling this service individually would also requi
 
 On a microservices architecture, since each service is separate, we could scale the API independently of the other services. This increases our efficiency, as we don't need to consume the resources of unnecessary services.
 
-Let's take a look at the performance of the application in its current, monolithic state.
+## Challenges with the Drone Delivery monolithic architecture
+
+The package service has been identified as a critical part of the business and was originally part of the monolith. Customers have dramatically increased their reliance on it, and performance is negatively impacted as this load increases. To address this, Fabrikam has dedicated a development team that is going to have full control over this piece of the business. They will have the ability to develop and iterate on this service, and will be solely responsible for all aspects of the package service.
+
+Because it's in the monolith, the team cannot operate autonomously. They have to rely on shared data and data structures, and are unable to iterate as quickly as they need. Along with the performance and scalability issues, this service is identified as a prime candidate for a microservice.
+
+Let's take a closer look at how Fabrikam can analyze and decompose their application to take advantage of a microservices architecture.
