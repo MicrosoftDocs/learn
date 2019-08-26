@@ -80,9 +80,9 @@ We can track the progress of the deployment at any time.
 
     ![Screenshot showing the notification information](../media/4-notification-bell-info.png)
 
-    Notice how resources are listed as they're created and the status changes to green checkmarks as each component in the deployment completes. 
+    Notice how resources are listed as they're created and the status changes to green checkmarks as each component in the deployment completes.
 
-    [![](../media/4-deployment-progress.png "Screenshot showing the notification information")](../media/4-deployment-progress-expanded.png)
+    [![](../media/4-deployment-progress.png "Screenshot showing the notification information")](../media/4-deployment-progress-expanded.png#lightbox)
 
 1. Once the deployment status message change to **Your deployment is complete**, you'll notice the status in the notification dialogue changes to *Deployment succeeded*. Click on the **Go to Resource** button to navigate to the App Service overview.
 

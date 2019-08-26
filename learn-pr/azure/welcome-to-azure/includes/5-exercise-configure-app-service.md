@@ -12,11 +12,11 @@ Let's have a look at some of this information.
 
 1. Click on the **Dashboard** link on the left sidebar to access a list of all resources in your subscription.
 
-    [ ![Screenshot showing the learn subscription with new resources](../media/5-dashboard-resources.png)](../media/5-dashboard-resources-expanded.png#lightbox)
+    [ ![Screenshot showing the MS Learn sandbox subscription with new resources](../media/5-dashboard-resources.png)](../media/5-dashboard-resources-expanded.png#lightbox)
 
 1. Click on the **App Service** with the name you chose it in the previous exercise.
 
-    [ ![Screenshot showing the learn subscription with new resources](../media/5-select-app-service.png)](../media/5-select-app-service-expanded.png#lightbox)
+    [ ![Screenshot showing the App Service](../media/5-select-app-service.png)](../media/5-select-app-service-expanded.png#lightbox)
 
 1. By default, the *App Service*'s overview is displayed, if not click **Overview**.
 

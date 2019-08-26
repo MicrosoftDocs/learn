@@ -28,7 +28,7 @@ Accessing the Cloud Shell from within the Azure portal is done using the Cloud S
     az list az account list --output table
     ```
 
-    Copy the SubscriptionId that matches the sandbox subscription we're using for MS Learn.
+    Copy the `SubscriptionId` that matches the sandbox subscription we're using for MS Learn.
 
 1. Run the `az account set --subscription xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx` to set the subscription context.
 
@@ -51,7 +51,7 @@ Accessing the Cloud Shell from within the Azure portal is done using the Cloud S
 
     ```bash
     {
-    "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/resourceGroups/learn-welcome-azure-rg/providers/Microsoft.Web/sites/BlogFor",
+    "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/resourceGroups/Learn-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/providers/Microsoft.Web/sites/BlogFor",
     "identity": null,
     "kind": "app",
     "location": "centralus",
@@ -71,7 +71,7 @@ Accessing the Cloud Shell from within the Azure portal is done using the Cloud S
 1. We'll use the `az webapp stop --id ` to stop the web application running in our App Service. Run the following command to stop the web app. Make sure to replace the example ID value with the value you copied earlier. In our example to command would look like the following snippet:
 
     ```bash
-    az webapp stop --id "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/resourceGroups/learn-welcome-azure-rg/providers/Microsoft.Web/sites/BlogFor"
+    az webapp stop --id "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/resourceGroups/Learn-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/providers/Microsoft.Web/sites/BlogFor"
     ```
 
 1. Open the website in a new browser tab. You'll find the URL to the site in the overview of the App service in the portal. You'll see a message in your browser that reads:
@@ -81,7 +81,7 @@ Accessing the Cloud Shell from within the Azure portal is done using the Cloud S
 1. Finally, let's restart the web app by running the `az webapp stop --id ` command. un the following command to start the web app. Make sure to replace the example ID value with the value you copied earlier. In our example to command would look like the following snippet:
 
     ```bash
-    az webapp stop --id "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/resourceGroups/learn-welcome-azure-rg/providers/Microsoft.Web/sites/BlogFor"
+    az webapp stop --id "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/resourceGroups/Learn-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/providers/Microsoft.Web/sites/BlogFor"
     ```
 
 1. Switch back to the tab for your website and refresh the page. Your website will be available after a couple of seconds.
