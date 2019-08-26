@@ -37,7 +37,3 @@ Along with the benefits and risks, there are several challenges associated with 
 - **Movement of data**: Use of public clouds typically requires connecting to the cloud over the Internet. Because of this requirement, movement of data to and from the cloud is significantly slower than in an organization\'s local area network (LAN). Although the cloud allows applications to target large amounts of data (big data), data movement can become a limiting factor for cloud adoption. For example, Amazon and Microsoft allow clients to upload large datasets for free or ship hard disks so the data on them can be loaded into the cloud.
 
 - **Quality of service (QoS):** As mentioned earlier, cloud infrastructure is typically shared among many users. This sharing presents a challenge for cloud providers to offer QoS assurances to their clients. This challenge could disallow certain performance-sensitive applications from being migrated to the cloud. QoS in clouds is an important area in cloud research. For example, regulating I/O bandwidth to specific virtual machines could offer predictable performance for critical applications.
-
-
-
-\[Activity M0-P8-A, M0-P8-B, M0-P8-C\]

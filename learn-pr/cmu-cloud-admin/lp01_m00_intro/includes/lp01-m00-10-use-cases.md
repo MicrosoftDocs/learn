@@ -105,7 +105,3 @@ The explosion in ML and AI research, investment, advances, and applications in r
 [^6]: <https://customers.microsoft.com/story/bp-mining-oil-gas-azure-machine-learning>  "Microsoft (2019). *BP explores Azure AI to boost safety, increase efficiency, and drive business success*."
 
 [^7]: <https://cloud.google.com/customers/igenius/>  "Google. *iGenius: Creating crystal, the first virtual digital marketing advisor*."
-
-
-
-\[Activity M0-P10\]

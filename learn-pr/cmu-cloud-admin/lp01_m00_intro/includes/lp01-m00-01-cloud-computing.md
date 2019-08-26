@@ -35,7 +35,3 @@ The cloud model offers users and organizations several benefits, including:
 Cloud providers\' resources are shared by multiple users, thereby improving utilization and reducing carbon footprint.
 
 Despite all of its advantages, cloud computing is a rapidly evolving technology that comes with its own challenges that must be understood and assessed before moving to the cloud. For example, deploying complex applications to the cloud invariably requires apps to be adapted to use features and services offered by the host cloud provider. Vendor lock-in becomes a real risk because an application built to run in one vendor's public cloud typically requires modification to run in someone else's cloud. Specific benefits, risks, and challenges are discussed later in this module.
-
-
-
-\[Activity M0-P1\]

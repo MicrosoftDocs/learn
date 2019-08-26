@@ -27,7 +27,3 @@ In a hybrid cloud, the infrastructure includes an owned private cloud and a leas
 _Figure 1.9: Hybrid cloud._
 
 Other types of clouds continue to emerge. One example is *community clouds*, which share infrastructure among different organizations that have common security or other concerns. Various non-profit organizations that work closely with government might build and share a community cloud. Another type is *distributed clouds*, which provide cloud users with access to machines at different geographical locations. An example is Cloud\@Home, which leverages volunteered resources as a shared resource.
-
-
-
-\[Activity M0-P5-A, M0-P5-B, M0-P5-C\]

@@ -84,6 +84,3 @@ _Figure 1.12: Google Cloud Platform regions<sup>[4][^4]</sup>._
 [^3]: <https://azure.microsoft.com/en-us/global-infrastructure/regions/>  "Microsoft (2019). *Azure regions*."
 
 [^4]: <https://cloud.google.com/about/locations/>  "Google (2019). *Meet our network*."
-
-
-\[Activity M0-P6-A, M0-P6-B\]

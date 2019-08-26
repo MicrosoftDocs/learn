@@ -45,7 +45,3 @@ Cloud service providers undertake the difficult task of building and maintaining
 - **Buying power**: Cloud service providers can purchase equipment in bulk from manufacturers, which can lead to major discounts over smaller buyers. In addition, cloud providers standardize their servers and equipment, which helps in lowering purchase and support costs compared to smaller IT departments.
 
 Cloud providers such as Amazon, Microsoft, and Google build dozens of data centers all over the world in order to achieve economy of scale and to minimize latency by minimizing the distance between data centers and users.
-
-
-
-\[Activity M0-P7-A, M0-P7-B, M0-P7-C, M0-P7-D\]

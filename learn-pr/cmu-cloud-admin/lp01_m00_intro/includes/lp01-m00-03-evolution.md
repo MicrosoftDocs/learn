@@ -45,8 +45,3 @@ Programming models for clouds give users the flexibility to express parallel pro
 1. _Simson L. Garfinkel (1999). *Architects of the Information Society: Thirty-Five Years of the Laboratory for Computer Science at MIT*. MIT Press._
 
 2. _Michelle Bailey (2009). *The Economics of Virtualization: Moving Toward an Application-Based Cost Model*. VMware Sponsored IDC Whitepaper._
-
-
-
-\[Activity M0-P3-A\]
-\[Activity M0-P3-B, M0-P3-C\]
