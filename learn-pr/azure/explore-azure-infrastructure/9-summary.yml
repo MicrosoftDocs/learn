@@ -20,13 +20,13 @@ quiz:
     choices:
     - content: 'Region'
       isCorrect: true
-      explanation: "Correct. Azure organizes infrastructure around _regions_ which include multiple datacenters. You can pick the region you want resources deployed into. You can't select a specific datacenter or location within a datacenter."
+      explanation: "Correct. Azure organizes infrastructure around _regions_, which include multiple datacenters. You can pick the region you want resources deployed into. You can't select a specific datacenter or location within a datacenter."
     - content: 'Datacenter'
       isCorrect: false
-      explanation: "Azure organizes infrastructure around _regions_ which include multiple datacenters."
+      explanation: "Azure organizes infrastructure around _regions_, which include multiple datacenters."
     - content: 'Server rack'
       isCorrect: false
-      explanation: "Azure organizes infrastructure around _regions_ which include multiple datacenters. You can't select a specific datacenter or location within a datacenter."
+      explanation: "Azure organizes infrastructure around _regions_, which include multiple datacenters. You can't select a specific datacenter or location within a datacenter."
   - content: "To use Azure datacenters that are made available with power, cooling, and networking capabilities independent from other datacenters in a region, choose a region that supports _________?"
     choices:
     - content: 'Geography distribution'
@@ -43,7 +43,7 @@ quiz:
       - content: "The service level agreement of the associated resource."
         isCorrect: false
         explanation: "The service level agreement gives you a guarantee of the availability of the resource, not of the application itself."
-      - content: "Whether the application supports an availability zone."
+      - content: "Application support for an availability zone."
         isCorrect: false
         explanation: "Only the underlying resources used in the application support availability zones."
       - content: "The overall time that a system is functional and working."
