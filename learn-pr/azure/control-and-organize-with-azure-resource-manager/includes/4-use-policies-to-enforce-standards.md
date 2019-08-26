@@ -22,7 +22,7 @@ We'd like to ensure that all resources have the **Department** tag associated wi
 
 1. Back on the **New policy definition** dialog, for **Name** give your policy a name of **Enforce tag on resource**.
 
-1. For the **Description**, enter **This policy enforces the existence of a tag on a resource.**
+1. For the **Description**, enter `This policy enforces the existence of a tag on a resource.`
 
 1. For **Category** select **Use existing** and then select the **General** category.
 
@@ -97,7 +97,7 @@ Now that we have assigned the policy to our resource group, any attempts to crea
 
 1. Add a **Department:Finance** tag to the list.
 
-	![Image of the portal showing a new Department tag](../media/4-add-department-tag.PNG)
+    ![Image of the portal showing a new Department tag](../media/4-add-department-tag.PNG)
 
 1. Now click **Review + create**. Validation should now pass, and if you click **Create** your storage account will be created.
 
