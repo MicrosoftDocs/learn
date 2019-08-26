@@ -49,7 +49,7 @@ Both offline and online migrations have the same prerequisite tasks:
 
 Ensure that all the communication ports are open, and check the connectivity between the source and destination servers before the migration tasks begin. Using the Data Migration Assistant, create an **Assessment** project, give the project a name, and select the source and target servers. Provide the connection details for the source server, including credentials with permission to access it. On the database selection screen, choose the database you want to migrate.
 
-The assessment will generates a report on completion, including a set of recommendations and alternative approaches that could be taken for the migration. You'll see any compatibility issues between the source and destination databases that could cause the migration to fail. Address the issues in the report, running it as many times as you need to make sure that the issues have been fixed.
+The assessment will generate a report on completion, including a set of recommendations and alternative approaches that could be taken for the migration. You'll see any compatibility issues between the source and destination databases that could cause the migration to fail. Address the issues in the report, running it as many times as you need to make sure that the issues have been fixed.
 
 A Data Migration Assistant report looks like this:
 
@@ -65,7 +65,7 @@ To use the Data Migration Assistant to migrate the schema, create a new **Migrat
 
 ### Migrate your data with Database Migration Service
 
-In the Azure portal, follow these steps to create a instance of Azure Database Migration Service, and then to run it to migrate the data in your databases:
+In the Azure portal, follow these steps to create an instance of Azure Database Migration Service, and then to run it to migrate the data in your databases:
 
 1. Create an instance of Azure Database Migration Service. Choose the pricing tier based on whether you need an online or offline migration.
 1. Create a new migration project. Choose the type of migration you want to perform, either offline or online.
