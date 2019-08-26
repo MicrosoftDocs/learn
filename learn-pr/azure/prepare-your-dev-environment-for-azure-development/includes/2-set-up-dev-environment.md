@@ -26,7 +26,7 @@ Visual Studio Code supports Windows, Linux, and macOS. To install Visual Studio 
 
 ::: zone pivot="vstudio"
 
-Visual Studio is a full featured integrated development environment (IDE) for a wide range of programming application types and languages. Visual Studio has a full set of tools and features that are specifically targetted at developing applications with Microsoft Azure. These features provide support for Azure development, debugging, and deployment tools that are tightly integrated with the IDE.
+Visual Studio is a full featured integrated development environment (IDE) for a wide range of programming application types and languages. Visual Studio has a full set of tools and features that are specifically targeted at developing applications with Microsoft Azure. These features provide support for Azure development, debugging, and deployment tools that are tightly integrated with the IDE.
 
 ## Visual Studio
 
