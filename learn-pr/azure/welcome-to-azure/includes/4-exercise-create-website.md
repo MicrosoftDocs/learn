@@ -44,8 +44,8 @@ In the free Azure sandbox environment you'll use the pre-created resource group 
 
     ![Screenshot showing search results for the term WordPress](../media/4-search-select-wordpress.png)
 
-> [!NOTE]
-> There are several selections available relating WordPress that you would have noticed in this step. Each of these items provides you with different options regarding the operating system and the amount of configuration to customize the application. Be aware that not all of these options are enabled in the sandbox. You'll have to try the different options in your personal Azure subscription where additional costs will apply.
+    > [!NOTE]
+    > There are several selections available relating WordPress that you would have noticed in this step. Each of these items provides you with different options regarding the operating system and the amount of configuration to customize the application. Be aware that not all of these options are enabled in the sandbox. You'll have to try the different options in your personal Azure subscription where additional costs will apply.
 
 1. In the newly presented blade, you'll typically find additional information about the item you're about to install. Make sure to review this information. Click the **Create** button when ready.
 

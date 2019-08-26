@@ -33,7 +33,7 @@ units:
 - learn.welcome-to-azure.3-tour-of-azure-services
 - learn.welcome-to-azure.4-exercise-create-website
 - learn.welcome-to-azure.5-exercise-configure-app-service
-- learn.welcome-to-azure.6-exercise-cloudshell
+- learn.welcome-to-azure.6-exercise-cloud-shell
 - learn.welcome-to-azure.7-knowledge-check
 - learn.welcome-to-azure.8-summary
 badge:

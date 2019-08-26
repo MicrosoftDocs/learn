@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.welcome-to-azure.6-exercise-cloudshell
+uid: learn.welcome-to-azure.6-exercise-cloud-shell
 title: Exercise - Access an App Service using Azure Cloud Shell
 metadata:
   title: Exercise - Scale up
@@ -14,4 +14,4 @@ interactive: bash
 azureSandbox: true
 durationInMinutes: 4
 content: |
-  [!include[](includes/6-exercise-cloudshell.md)]
+  [!include[](includes/6-exercise-cloud-shell.md)]

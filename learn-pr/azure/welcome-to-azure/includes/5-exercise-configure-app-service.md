@@ -45,7 +45,7 @@ Scaling out, or horizontal scaling means to add extra virtual machines to power 
 
 When you have more time, feel free to go through each section and explore the various options available.
 
-## How to change the App Service configuration?
+## How to change the App Service configuration
 
 The App Services has many configurable options available and group in sections of functionality.
 
