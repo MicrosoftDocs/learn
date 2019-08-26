@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "True or false: If you enable Azure Disk Encryption (ADE) on a Windows VM it will use DM-Crypt to encrypt the data on your Virtual Hard Disks."
+  - content: "True or false: If you enable Azure Disk Encryption (ADE) on a Windows VM, it will use DM-Crypt to encrypt the data on your Virtual Hard Disks."
     choices:
     - content: "True"
       isCorrect: false
@@ -24,7 +24,7 @@ quiz:
     - content: "False"
       isCorrect: true
       explanation: "Windows VMs are encrypted using BitLocker. Linux VMs will use DM-Crypt."
-  - content: "True or false: When using Azure Key Vault to secure keys used for Azure Disk Encryption (ADE) you must ensure the Azure Key Vault access policies are configured to permit at least one security principal."
+  - content: "True or false: When using Azure Key Vault to secure keys used for Azure Disk Encryption (ADE), you must ensure the Azure Key Vault access policies are configured to permit at least one security principal."
     choices:
     - content: "True"
       isCorrect: false
