@@ -6,7 +6,7 @@ You're now ready to create a new Event Hub. After creating the Event Hub, you'll
 
 1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure subscription.
 
-1. Click on the Cloud Shell button to open it. When prompt, choose the Bash command-line option.
+1. Click on the Cloud Shell button to open it. When prompted, choose the Bash command-line option.
 
     ![Screenshot showing Cloud Shell access button](../media/3-portal-cloudshell-access.png)
 
