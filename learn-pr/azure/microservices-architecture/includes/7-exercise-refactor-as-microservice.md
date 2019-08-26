@@ -162,6 +162,18 @@ Now that our service is running on an Azure Function, we need to point our drone
         --src DroneDelivery-after.zip
     ```
 
+1. With the site redeployed, refresh your page and you should see that it has been updated.
+
+    ![Screenshot of the redeployed Drone Delivery web site](../media/7-web-site-after.png)
+
 ## Test performance of new architecture
 
 Now that we have moved the resource constrained service to an microservice running on an Azure Function, let's see how this impacted application performance.
+
+1. On the home page of your web site, select **Send Requests**. This will submit requests from your monolithic app to the microservice running on an Azure Function.
+
+1. The first attempt may give similar results to the monolithic application. Refresh the page and resubmit the request if prompted. Do this several times, and you should see **100 messages sent in 1 seconds**.
+
+    ![Screenshot of performance of the Drone Delivery site after moving to a microservices architecture](../media/7-web-site-fast.png)
+
+The initial attempt was slower while the Azure Function warmed up. Once it was up and running, the response time was significantly better than when this code was running in the monolithic architecture. This piece of the architecture can now be sacaled out almost infinitely while still providing the same performance. By running moving this application code to a microservice we have improved performance by five to ten times.
