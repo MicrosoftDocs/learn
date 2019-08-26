@@ -16,14 +16,3 @@ azureSandbox: true
 durationInMinutes: 4
 content: |
   [!include[](includes/6-exercise-cloudshell.md)]
-# Verify the VM named "myVM" exists and is running as a Standard_DS3_v2.
-#tasks:
-#- action: exists
-#  environment: azure
-#  azure:
-#    resource:
-#      type: "Microsoft.Compute/virtualMachines"
-#      properties:
-#        hardwareProfile:
-#          vmSize: Standard_DS3_v2
-#  hint: "Run the `az vm resize` command as shown to resize your virtual machine."
