@@ -36,7 +36,7 @@ quiz:
     choices:
     - content: "The OS disk (C:)"
       isCorrect: false
-      explanation: "You can store data files on the OS disk; however, you may want to optimize that disk for OS performance by selecting a Premium SSD type which could be an expensive way to store your data."
+      explanation: "You can store data files on the OS disk; however, you may want to optimize that disk for OS performance by selecting a Premium SSD type, which could be an expensive way to store your data."
     - content: "The Temporary disk (D:)"
       isCorrect: false
       explanation: "The temporary disk is not persistent. You should not write important data to this disk."
