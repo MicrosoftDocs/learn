@@ -10,7 +10,6 @@ metadata:
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 abstract: |
   In this module, you will:
     - Explore the physical structure of Azure infrastructure
