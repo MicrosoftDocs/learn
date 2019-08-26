@@ -11,8 +11,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 10
-# TODO:Add Azure Portal Interactivity
-# interactive: azure-portal
 azureSandbox: true
 content: |
   [!include[](includes/3-exercise-create-a-vm.md)]

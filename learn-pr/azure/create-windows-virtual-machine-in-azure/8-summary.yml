@@ -11,15 +11,12 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 3
-# TODO:Add Azure Portal Interactivity
-# interactive: azure-portal
 azureSandbox: true
 content: |
   [!include[](includes/8-summary.md)]
 quiz:
   title: Check your knowledge
   questions:
-
   - content: "When creating a Windows virtual machine in Azure, which port would you open using the INBOUND PORT RULES in order to allow remote-desktop access?"
     choices:
     - content: "HTTPS"
@@ -31,7 +28,6 @@ quiz:
     - content: "RDP (3389)"
       isCorrect: true
       explanation: "The Remote Desktop Protocol (RDP) uses port 3389 by default so this is the standard port you would open if you wanted to use an RDP client to administer your Windows virtual machines."
-
   - content: "Suppose you have an application running on a Windows virtual machine in Azure. What is the best-practice guidance on where the app should store data files?"
     choices:
     - content: "The OS disk (C:)"
@@ -43,7 +39,6 @@ quiz:
     - content: "An attached data disk"
       isCorrect: true
       explanation: "Dedicated data disks are generally considered the best place to store application data files. They can be larger than OS disks and you can optimize them for the cost and performance characteristics appropriate for your data."
-
   - content: "What is the final rule that is applied in every Network Security Group?"
     choices:
     - content: "Allow All"
