@@ -24,7 +24,7 @@ quiz:
     - content: "Assess Azure readiness, migrate with confidence, migrate databases"
       isCorrect: false
       explanation: "Migrate databases isn't a feature of Azure Migrate. You use Azure Database Migration Service for database migration."
-    - content: "Obtain VM size recommendations, assess Azure readiness, assess Physical Servers"
+    - content: "Obtain VM size recommendations, assess Azure readiness, assess physical servers"
       isCorrect: false
       explanation: "Azure Migrate can't be used to assess physical servers. Third-party partner tools are required to do that."
   - content: "What is the order of steps to complete an Azure readiness assessment?"
