@@ -1,6 +1,5 @@
 Recall that our company processes video content on Windows VMs. A new city has contracted us to process their traffic cameras, but it's a model we've not worked with before. We need to create a new Windows VM and install some proprietary codecs so we can begin processing and analyzing their images.
 
-<!-- Activate the sandbox -->
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
 ## Create a new Windows virtual machine
