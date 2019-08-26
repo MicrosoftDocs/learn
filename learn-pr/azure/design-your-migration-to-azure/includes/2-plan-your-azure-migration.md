@@ -65,7 +65,7 @@ In other situations, you may need to set up resources in Azure to have them avai
 
 ### Migrate workloads
 
-It's often best to start with a small migration instead of migrating a large, business-critical workload. This approach lets you to become familiar with the tools, processes, and procedures for migration. It can reduce the risk of issues when you migrate larger workloads. As you become more comfortable with the migration process, you can progress to larger and more business-critical workloads.
+It's often best to start with a small migration instead of migrating a large, business-critical workload. This approach lets you become familiar with the tools, processes, and procedures for migration. It can reduce the risk of issues when you migrate larger workloads. As you become more comfortable with the migration process, you can progress to larger and more business-critical workloads.
 
 Each tool will guide you through the migration. The steps to complete them are covered in later units. At a high level, the steps are:
 
