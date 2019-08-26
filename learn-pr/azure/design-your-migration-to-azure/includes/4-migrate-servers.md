@@ -2,7 +2,7 @@ After running Azure Migrate, you can decide which of your servers are good candi
 
 You've presented your findings to the IT Director and now you want to continue with a test migration to assess the end-to-end process. You've chosen to use Azure Site Recovery to complete the migration of virtual machines.
 
-In this unit, you'll review Azure Site Recovery and how it use it to migrate specific workloads to Azure.
+In this unit, you'll review Azure Site Recovery and how to use it to migrate specific workloads to Azure.
 
 ## What is Azure Site Recovery?
 
