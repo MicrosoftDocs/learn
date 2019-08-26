@@ -28,7 +28,7 @@ Before you start to use Site Recovery for either a failover or a straight migrat
 
 For your company, you are focused on moving VMware and database workloads to Azure. While the preceding section focused on Azure tasks, this section details tasks to prepare the on-premises VMware estate to ensure connectivity to Azure.
 
-- **Automatic discovery account**: Create an account at vCenter level, and then assign the relevant permissions.
+- **Automatic discovery account**: Provide an account with access to VMware servers to discover virtual machines, and orchestrate replication, failover, and failback. This can be a user on the vCenter server or vSphere host with appropriate permissions.
 - **Mobility service account**: Install the Mobility service on each virtual machine. You can do either a push installation from the Azure console or a manual installation. If you use the push installation, the account needs permission to install software on each of the virtual machines.
 - **Connection after migration**: Enable Remote Desktop Protocol (RDP) on each virtual machine, and configure the Windows Firewall appropriately *before* migration.
 - **Set up the configuration server**: The configuration server coordinates communication between the on-premises environment and Azure. Deploy the Open Virtualization Application (OVA) template to a highly available virtual machine in your VMware environment.

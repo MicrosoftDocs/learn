@@ -2,7 +2,7 @@ Your first task is to plan your company's migration to Azure. You need to put to
 
 In this unit, you'll cover some considerations and methods that you can use to plan your migration to Azure. Every situation is different, but by following some principles, you can achieve your goals in the best possible way and in the shortest amount of time.
 
-## Plan your migration to Azure
+## Azure migration framework
 
 You can use a framework of Assess, Migrate, Optimize, and Monitor as a path for migration. Each stage focuses on a particular aspect of ensuring the success of a migration.
 
