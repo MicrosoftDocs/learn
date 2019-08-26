@@ -27,7 +27,7 @@ quiz:
       explanation: "The remote-desktop connection does not use SSH."
     - content: "RDP (3389)"
       isCorrect: true
-      explanation: "The Remote Desktop Protocol (RDP) uses port 3389 by default so this is the standard port you would open if you wanted to use an RDP client to administer your Windows virtual machines."
+      explanation: "The Remote Desktop Protocol (RDP) uses port 3389 by default so this port is the standard port you would open if you wanted to use an RDP client to administer your Windows virtual machines."
   - content: "Suppose you have an application running on a Windows virtual machine in Azure. What is the best-practice guidance on where the app should store data files?"
     choices:
     - content: "The OS disk (C:)"
