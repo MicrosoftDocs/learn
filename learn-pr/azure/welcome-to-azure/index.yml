@@ -31,8 +31,8 @@ units:
 - learn.welcome-to-azure.1-introduction
 - learn.welcome-to-azure.2-what-is-azure
 - learn.welcome-to-azure.3-tour-of-azure-services
-- learn.welcome-to-azure.4-exercise-create-a-website
-- learn.welcome-to-azure.5-add-web-server
+- learn.welcome-to-azure.4-exercise-create-website
+- learn.welcome-to-azure.5-exercise-configure-app-service
 - learn.welcome-to-azure.6-scale-up
 - learn.welcome-to-azure.7-knowledge-check
 - learn.welcome-to-azure.8-summary

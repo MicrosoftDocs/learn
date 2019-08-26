@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.welcome-to-azure.6-scale-up
-title: Exercise - Scale up
+uid: learn.welcome-to-azure.6-exercise-cloudshell
+title: Exercise - Access an App Service using Azure Cloud Shell
 metadata:
   title: Exercise - Scale up
-  description: Scale up your virtual machine to give it more compute power and memory.
-  ms.date: 09/24/2018
-  author: markjulmar
-  ms.author: smmark
+  description: Access an App Service using Azure Cloud Shell to automate administration tasks.
+  ms.date: 08/22/2019
+  author: cryophobia
+  ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -15,7 +15,7 @@ interactive: bash
 azureSandbox: true
 durationInMinutes: 4
 content: |
-  [!include[](includes/6-scale-up.md)]
+  [!include[](includes/6-exercise-cloudshell.md)]
 # Verify the VM named "myVM" exists and is running as a Standard_DS3_v2.
 #tasks:
 #- action: exists

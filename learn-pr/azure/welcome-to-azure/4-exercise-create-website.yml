@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.welcome-to-azure.4-exercise-create-a-website
+uid: learn.welcome-to-azure.4-exercise-create-website
 title: Exercise - Create a website hosted in Azure
 metadata:
   title: Exercise - Create a website hosted in Azure
@@ -14,4 +14,4 @@ metadata:
 azureSandbox: true
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-exercise-create-a-website.md)]
+  [!include[](includes/4-exercise-create-website.md)]
