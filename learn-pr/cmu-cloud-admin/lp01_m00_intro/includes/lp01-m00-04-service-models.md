@@ -197,8 +197,3 @@ However, there are situations where SaaS may not be the right choice, such as:
 [^1]: <https://www.zdnet.com/article/linux-now-dominates-azure/>  "ZDNet (2018). ​*Linux now dominates Azure*"
 
 1. _ZDNet (2018). ​*Linux now dominates Azure*. <https://www.zdnet.com/article/linux-now-dominates-azure/>_
-
-
-
-\[Activity M0-P4-A, M0-P4-B\]
-\[Activity M0-P4-C, M0-P4-D, M0-P4-E, M0-P4-F, M0-P4-G\]

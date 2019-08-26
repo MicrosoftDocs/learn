@@ -84,7 +84,3 @@ The cloud was a logical successor that combined many of the features of the solu
 [^2]: <https://newsroom.accenture.com/subjects/strategy/increased-use-of-digital-technologies-could-add-over-1-trillion-dollars-to-worlds-top-10-economies-in-2020-according-to-new-study-from-accenture.htm>  "Accenture (2015). *Increased Use of Digital Technologies Could Add \$1.36 Trillion to World's Top 10 Economies in 2020*."
 
 [^3]: <https://www.google.com/insidesearch/howsearchworks/thestory/>  "Google Inc. (2015). *How Search Works*"
-
-
-
-\[Activity M0-P2\]
