@@ -97,7 +97,7 @@ Now that we have assigned the policy to our resource group, any attempts to crea
 
 1. Add a **Department:Finance** tag to the list.
 
-	![Image of the portal showing a new Department tag](../media/4-add-department-tag.PNG)
+    ![Image of the portal showing a new Department tag](../media/4-add-department-tag.PNG)
 
 1. Now click **Review + create**. Validation should now pass, and if you click **Create** your storage account will be created.
 
