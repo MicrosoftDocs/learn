@@ -28,6 +28,8 @@ roles:
 - administrator
 products:
 - azure
+- azure-app-service
+- azure-container-registry
 units:
 - learn.azure.deploy-run-container-app-service.1-introduction
 - learn.azure.deploy-run-container-app-service.2-build-store-images
