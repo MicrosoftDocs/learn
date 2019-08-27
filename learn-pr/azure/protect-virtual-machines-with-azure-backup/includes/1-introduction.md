@@ -1,6 +1,6 @@
-Your company has several critical virtual machine workloads running on Azure. As the lead Solution Architect, you've been asked to ensure the company can recover these VMs if there's data loss or corruption. You've been asked to use the built-in capabilities of Azure Backup to protect these VMs.
+Your company has several critical virtual machine workloads running on Azure. As the lead Solution Architect, you've been asked to ensure the company can recover these virtual machines if there's data loss or corruption. You've been asked to use the built-in capabilities of Azure Backup to protect these virtual machines.
 
-Azure Backup is a service that allows you to back up Azure virtual machines, on-premises VMs, SQL databases, and other application workloads. Every backup is encrypted at rest, and can be kept for a user-defined retention period.
+Azure Backup is a service that allows you to back up Azure virtual machines, on-premises virtual machines, SQL databases, and other application workloads. Every backup is encrypted at rest, and can be kept for a user-defined retention period.
 
 In this module, you'll learn about Azure Backup, and see how you would use the Azure portal to back up and restore a machine.
 
