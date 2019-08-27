@@ -60,10 +60,10 @@ Finally, Azure allows *tags* to be applied to individual resources as well as re
 
 ### References
 
-1. _Azure subscription and service limits, quotas, and constraints; Storage limits: <https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits#storage-limits>._
+1. _Azure subscription and service limits, quotas, and constraints; Storage limits: <https://docs.microsoft.com/azure/azure-subscription-service-limits#storage-limits>._
 
 1. _AWS Service Limits -- Amazon Simple Storage Service (Amazon S3) Limits: <https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html#limits_s3>._
 
-[^1]: <https://docs.microsoft.com/en-us/azure/azure-subscription-service-limits#storage-limits>  "Azure subscription and service limits, quotas, and constraints; Storage limits."
+[^1]: <https://docs.microsoft.com/azure/azure-subscription-service-limits#storage-limits>  "Azure subscription and service limits, quotas, and constraints; Storage limits."
 
 [^2]: <https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html#limits_s3>  "AWS Service Limits -- Amazon Simple Storage Service (Amazon S3) Limits."
