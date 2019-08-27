@@ -27,7 +27,7 @@ In this exercise, you'll see how to restore a successful backup to replace a VM 
 
 ### Stop the VM to allow for the restore
 
-A backup can't be restored if the VM is allocated and running.; if you forget to stop the VM, you'll see an error that is similar to the following example.
+A backup can't be restored if the VM is allocated and running. If you forget to stop the VM, you'll see an error that is similar to the following example.
 
 ![Screenshot showing the error details when a VM is running](../media/6-restore-error.png)
 

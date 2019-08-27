@@ -1,4 +1,4 @@
-Companies who have a Business Continuity and Disaster Recovery (BCDR) plan will typically schedule test runs to ensure the business can successfully recover from disasters. With your backups created for your VMs, you can now use them to test recovering from a VM failure.
+Companies who have a business continuity and disaster recovery (BCDR) plan will typically schedule test runs to ensure the business can successfully recover from disasters. With your backups created for your VMs, you can now use them to test recovering from a VM failure.
 
 After doing a successful backup of your servers, you would now like to explore the options available to you to restore them as part of your forthcoming BCDR testing.
 
@@ -38,7 +38,7 @@ Select the date to restore and then select **Mount**, to mount the recovery poin
 
 ## Restore an encrypted virtual machine
 
-Azure Backup supports the back up and restore of machines encrypted using **Azure Disk Encryption (ADE)**. ADE integrates with the Azure Key Vault to manage the relevant secrets that are associated with the encrypted disk. For an additional layer or security, **Key Vault Encryption (KEKs)** Keys can be used to encrypt the secrets before they're written to the Key Vault.
+Azure Backup supports the backup and restore of machines encrypted using **Azure Disk Encryption (ADE)**. ADE integrates with the Azure Key Vault to manage the relevant secrets that are associated with the encrypted disk. For an additional layer or security, **Key Vault Encryption (KEKs)** Keys can be used to encrypt the secrets before they're written to the Key Vault.
 
 Certain limitations apply when you restore encrypted virtual machines:
 

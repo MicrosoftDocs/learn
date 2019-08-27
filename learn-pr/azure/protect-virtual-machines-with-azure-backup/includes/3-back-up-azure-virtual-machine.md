@@ -1,4 +1,4 @@
-You want to ensure the back up and restore jobs you put in place offer a way to recover your companies high risk servers. With this requirement in mind, you want to investigate the best way to implement back up for your virtual machines.
+You want to ensure the backup and restore jobs you put in place offer a way to recover your companies high risk servers. With this requirement in mind, you want to investigate the best way to implement back up for your virtual machines.
 
 Virtual machines that are hosted on Azure can take advantage of Azure Backup. You can easily back up and restore machines without installing additional software. 
 
@@ -20,7 +20,7 @@ Depending on how the snapshot is taken, and what it includes, different levels o
   - For Linux machines, you'll need to write custom pre or post scripts per app to capture the application state
   - Provides complete consistency for the virtual machine itself and all running applications
 - **File-system consistent consistency**:
-  - If VSS fails on Windows, or the pre and post scripts fail on Linux, Azure Backup will still create a file-system consistent snapshot
+  - If VSS fails on Windows, or the pre and post-scripts fail on Linux, Azure Backup will still create a file-system consistent snapshot
   - During a recovery, no corruption occurs within the machine, but installed applications need to do their own cleanup during start up to become consistent
 - **Crash-consistent consistency**:
   - Occurs typically if the virtual machine in question is shut down at the time of the backup
@@ -44,7 +44,7 @@ There's a cost for every virtual machine backed up, and it starts as soon as the
 
 ## Backup agents
 
-Azure Backup makes use of agents to support a variety of back up scenarios. The agents can be installed directly on physical or virtual machines, or be part of a dedicated backup server. The agent you choose will differ slightly depending on whether you need to backup an entire virtual machine, files and folders, or running apps.
+Azure Backup makes use of agents to support a variety of backup scenarios. The agents can be installed directly on physical or virtual machines, or be part of a dedicated backup server. The agent you choose will differ slightly depending on whether you need to backup an entire virtual machine, files and folders, or running apps.
 
 ### Azure Backup virtual machine extension
 
@@ -58,7 +58,7 @@ If your company's virtual machines are in Azure, and you don't require file leve
 
 ![Azure MABS Architecture](../media/3-azure-mabs-backup-architecture.png)
 
-The Microsoft Azure Backup Server (MABS) agent installed on an Azure or on-premises virtual machine allows that machine to back up to an Microsoft Azure Backup server. The MABS agent can back up and restore SQL and other application services. Workloads like Exchange and SharePoint can also be supported by using the **AzureBackupWindowsWorkload** extension. Machines and workloads are backed up to a Microsoft Azure Backup Server, although this doesn't move these backups to an Azure Recovery Services vault; if you need to move your backups to an Azure Recovery Services vault, you'll need to install the MARS agent.
+The Microsoft Azure Backup Server (MABS) agent installed on an Azure or on-premises virtual machine allows that machine to back up to a Microsoft Azure Backup server. The MABS agent can back up and restore SQL and other application services. Workloads like Exchange and SharePoint can also be supported by using the **AzureBackupWindowsWorkload** extension. Machines and workloads are backed up to a Microsoft Azure Backup Server, although this doesn't move these backups to an Azure Recovery Services vault; if you need to move your backups to an Azure Recovery Services vault, you'll need to install the MARS agent.
 
 ### Microsoft Azure Recovery Services agent
 
@@ -85,7 +85,7 @@ When used in conjunction with an Azure Backup Server, the MARS agent will copy t
 Azure Backup offers the ability to back up virtual machines encrypted with **Azure Disk Encryption**. **Azure Storage** also encrypts your backed-up data at rest using **Storage Service Encryption**, and your data is automatically decrypted when retrieved.
 
 - **Azure Disk Encryption (ADE)**:
-  - Encrypts your operating system, data disks, and integrates with **BitLocker Encryption Keys (BEKs)**, which are safe guarded in a Key Vault as secrets. Integration with **Azure Key Vault Encryption Keys (KEKs)** is also supported.
+  - Encrypts your operating system, data disks, and integrates with **BitLocker Encryption Keys (BEKs)**, which are safeguarded in a Key Vault as secrets. Integration with **Azure Key Vault Encryption Keys (KEKs)** is also supported.
   - During the backup procedure, both BEKs and KEKs are backed up and encrypted; users with appropriate permissions can then restore the Keys and Secrets if needed, and also recover an encrypted virtual machine
 - **Storage Service Encryption (SEE)**:
   - Encrypts your backups when at rest after it has been copied to the vault. When a restore operation is called for the backed-up data, it is automatically decrypted and ready for use.

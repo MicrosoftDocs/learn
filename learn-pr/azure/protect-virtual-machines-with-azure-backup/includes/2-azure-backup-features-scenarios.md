@@ -1,18 +1,18 @@
-Azure Backup isn't a single service that can back up one type of virtual machine. Azure Backup is a suite of components that make it easy to back up machines and workloads in Azure or on-premises. For Windows users, some components allow for specific workloads like SQL Server or SharePoint to have additional back up and restore options.
+Azure Backup isn't a single service that can back up one type of virtual machine. Azure Backup is a suite of components that make it easy to back up machines and workloads in Azure or on-premises. For Windows users, some components allow for specific workloads like SQL Server or SharePoint to have additional backup and restore options.
 
-To address your company's Business Continuity and Disaster Recovery (BCDR) plan, there must be a full back up and restore capability for all of your high risk servers. You've been asked to enable and test back up and restore functionality for these critical Windows and Linux assets.
+To address your company's Business Continuity and Disaster Recovery (BCDR) plan, there must be a full backup and restore capability for all of your high risk servers. You've been asked to enable and test back up and restore functionality for these critical Windows and Linux assets.
 
 In this unit, you'll look at how Azure Backup works, and study some of the supported use cases for Azure Backup.
 
 ## What is Azure Backup?
 
-Azure Backup provides cloud-based back up and restore services for both Azure and on-premises virtual machines. Data, workloads, and machine state can all be backed up automatically at a granular level. Azure Backup offers tight integration with Microsoft-specific applications such as SQL, SharePoint, and Exchange. Backups are stored in Azure, which provides data redundancy, as the backups are not stored at a particular physical location that could be vulnerable to fire or other disaster. In contrast to traditional backup solutions that can take considerable effort to set up, Azure Backup is easily managed through the Azure portal, and backups are stored in an Azure Recovery Services vault after you set up the appropriate component on the target machine.
+Azure Backup provides cloud-based backup and restore services for both Azure and on-premises virtual machines. Data, workloads, and machine state can all be backed up automatically at a granular level. Azure Backup offers tight integration with Microsoft-specific applications such as SQL, SharePoint, and Exchange. Backups are stored in Azure, which provides data redundancy, as the backups are not stored at a particular physical location that could be vulnerable to fire or other disaster. In contrast to traditional backup solutions that can take considerable effort to set up, Azure Backup is easily managed through the Azure portal, and backups are stored in an Azure Recovery Services vault after you set up the appropriate component on the target machine.
 
 ### Azure Backup versus Azure Site Recovery
 
 Both Azure Backup and Azure Site Recovery are services that can help when disaster strikes, but they have their differences.
 
-- **Azure Site Recovery** - replicates virtual machine workloads to secondary locations for failover in the event of a disaster that affects a whole site.
+- **Azure Site Recovery** - replicates virtual machine workloads to secondary locations for failover if a disaster that affects a whole site.
 - **Azure Backup** - recovers data more granularly; for example: virtual machine disks, or files and folders that have become corrupted or accidentally deleted by users.
 
 ### Why use Azure Backup?
