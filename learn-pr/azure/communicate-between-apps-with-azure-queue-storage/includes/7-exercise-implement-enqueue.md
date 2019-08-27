@@ -182,7 +182,7 @@ C#'s `async` and `await` keywords were not valid keywords in **Main** methods un
     
       <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>netcoreapp2.0</TargetFramework>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
         <LangVersion>7.1</LangVersion> 
       </PropertyGroup>
     ...
