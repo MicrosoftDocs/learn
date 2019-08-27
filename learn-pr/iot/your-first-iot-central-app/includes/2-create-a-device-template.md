@@ -1,17 +1,30 @@
 
+The data communicated between a remote device, and IoT Central, is specified in a _device template_. The device template specifies all the required details about the data to be communicated, so that both the device and IoT Central have all they need to make sense of the communication.
 
+In this unit we will create a device template for a refrigerated truck. When we do this, a simulated refrigerated truck device is created for us by default. This simulated device allows us to do some testing of the template before committing to real devices. In the following unit we will examine this first level of testing.
 
+## Create a device template
 
+1. Click on the app name in the home screen of your IoT Central apps, and then select **Device Templates** from the menu on the left-hand side.
+
+2. On the right-hand side of the screen, click **+ New** to start the process.
+3. You will next see a range  of **New Template** options, select **Custom**.
+  > [!TIP]
+  > Take note of the other options, **MXChip**, **Raspberry Pi**, and so on, just in case you need them in a future project!
+
+4. Enter the name for your template: "RefrigeratedTruck".
 
 ![Create a new device template](../media/refrigerated-trucks-new-template.png)
 
+5. Click on the template when it is created, and note that a template consists of **Measurements**, **Settings**, **Properties**, **Commands**, **Rules**, and a **Dashboard**. Our refrigerated truck will need entries in most of these.
 
-
+  > [!NOTE]
+  > We are creating this template with all we need for the modules that follow this one, so the purpose of these entries might not be immediately obvious to you, but all should become clear as you work through this set of modules. It is possible to complete a template, then come back to it and add more entries, but this can involve creating multiple _versions_ of a template, which we will avoid in this first set of Learn modules.
 
 
 ## Measurements
 
-Measurements covers four types of values: Telemetry, State, Event, Location. Our scenario requires at least one of each of these for the refrigerated truck. We need to go through them carefully and enter all the required data. One of the most important entries is the **Field Name**. Make sure to enter this accurately, as this is the name that will be used when devices communicate values to the IoT Central app - an exact match is needed.
+Measurements are data transmitted by the device, and covers four types of values: Telemetry, State, Event, and Location. Our scenario requires at least one of each of these for the refrigerated truck. We need to go through them carefully and enter all the required data. The most important entry is the **Field Name**. Make sure to enter this accurately, as this is the name that will be used when devices communicate values to the IoT Central app. When we come to write code in the next module, the reference in the code and the **Field Name** must be an exact match.
 
 
 
