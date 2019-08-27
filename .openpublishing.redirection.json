@@ -277,17 +277,17 @@
     },
     {
       "source_path": "learn-pr/azure/welcome-to-azure/4-create-a-vm.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/welcome-to-azure/4-exercise-create-website",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/welcome-to-azure/4-exercise-create-website",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/welcome-to-azure/5-add-web-server.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/welcome-to-azure/5-exercise-configure-app-service",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/welcome-to-azure/5-exercise-configure-app-service",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/welcome-to-azure/6-scale-up.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/welcome-to-azure/6-exercise-cloud-shell",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/welcome-to-azure/6-exercise-cloud-shell",
       "redirect_document_id": false
     }
   ]
