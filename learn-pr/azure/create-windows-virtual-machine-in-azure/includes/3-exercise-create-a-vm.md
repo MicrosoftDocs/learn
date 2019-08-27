@@ -1,6 +1,5 @@
 Recall that our company processes video content on Windows VMs. A new city has contracted us to process their traffic cameras, but it's a model we've not worked with before. We need to create a new Windows VM and install some proprietary codecs so we can begin processing and analyzing their images.
 
-<!-- Activate the sandbox -->
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
 ## Create a new Windows virtual machine
@@ -19,7 +18,7 @@ We can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell.
 
 The VM creation experience in the portal is presented in a "wizard" format to walk you through all the configuration areas for the VM. Clicking the "Next" button will take you to the next configurable section. However, you can move between the sections at will with the tabs running across the top that identify each section.
 
-![Screenshot showing the create a virtual machine experience in the Azure portal.](../media/3-azure-portal-create-vm.png)
+![Screenshot showing the virtual machine creation experience in the Azure portal.](../media/3-azure-portal-create-vm.png)
 
 Once you fill in all the required options (identified with red stars), you can skip the remainder of the wizard experience and start creating the VM through the **Review + Create** button at the bottom.
 
@@ -90,7 +89,7 @@ Recall we will get an OS disk (C:) and Temporary disk (D:). Let's add a data dis
 
 1. Click **Next** to move to the Networking section.
 
-1. In a production system where we already have other components, we'd want to utilize an _existing_ virtual network. That way our VM can communicate with the other cloud services in our solution. If there isn't one defined in this location yet, we can create it here and configure the:
+1. In a production system, where we already have other components, we'd want to utilize an _existing_ virtual network. That way our VM can communicate with the other cloud services in our solution. If there isn't one defined in this location yet, we can create it here and configure the:
     - **Address space**: the overall IPV4 space available to this network.
     - **Subnet range**: the first subnet to subdivide the address space - it must fit within the defined address space. Once the VNet is created you can add additional subnets.
 

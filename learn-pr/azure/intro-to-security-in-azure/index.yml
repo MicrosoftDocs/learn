@@ -4,11 +4,10 @@ metadata:
   title: Security, responsibility and trust in Azure
   description: Discuss the basic concepts for protecting your infrastructure and data when you work in the cloud. Understand what responsibilities are yours and what Azure takes care of for you.
   ms.date: 09/24/2018
-  author: jasallen
-  ms.author: jasdeb
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Security, responsibility and trust in Azure
 summary: Discuss the basic concepts for protecting your infrastructure and data when you work in the cloud. Understand what responsibilities are yours and what Azure takes care of for you.
 abstract: |  
@@ -28,6 +27,7 @@ roles:
 - solution-architect
 products:
 - azure
+- azure-active-directory
 units:
 - learn.introduction-to-security.1-introduction
 - learn.introduction-to-security.2-shared-responsibility

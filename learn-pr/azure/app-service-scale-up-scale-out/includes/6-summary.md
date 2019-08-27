@@ -5,7 +5,9 @@ In this module, you learned how to:
 
 These two features enable you to support a varying load in a web app while still remaining cost effective.
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+## Clean up
+
+Use the Azure portal to delete the **mslearn-scale** resource group from your subscription.
 
 ## Learn more
 
