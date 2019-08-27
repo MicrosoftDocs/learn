@@ -10,12 +10,12 @@ Every subnet has these default system routes:
 
 |Address prefixes  |Next hop type |
 |---------|---------|
-|Unique to the virtual network    | Virtual network |
-|0.0.0.0/0     | Internet        |
-|10.0.0.0/8     | None        |
+|Unique to the virtual network | Virtual network |
+|0.0.0.0/0 | Internet |
+|10.0.0.0/8 | None |
 |172.16.0.0/12 | None |
-|192.168.0.0/16 | None        |
-|100.64.0.0/10 | None        |
+|192.168.0.0/16 | None |
+|100.64.0.0/10 | None |
 
 The **next hop type** shows the network path taken by traffic sent to each address prefix. The hop type can be one of:
 
