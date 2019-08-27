@@ -31,4 +31,4 @@ If necessary, you can define multiple routing tables in Azure. The same routing 
 
 ## Network virtual appliances in a highly available architecture
 
-By routing traffic through an NVA, it becomes a critical piece of your infrastructure. Any failures will directly impact the ability of your services to communicate, so it's important to include a highly available architecture in your NVA deployment. There are several methods of achieving high availability when using NVAs. You can find more information about using NVAs in highly available scenarios at [Deploy highly available network virtual appliances](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha)
+By routing traffic through an NVA, it becomes a critical piece of your infrastructure. Any failures will directly impact the ability of your services to communicate, so it's important to include a highly available architecture in your NVA deployment. There are several methods of achieving high availability when using NVAs. You can find more information about using NVAs in highly available scenarios in the *Learn more* section at the end of this module.
