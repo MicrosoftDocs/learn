@@ -3,9 +3,9 @@ uid: learn.protect-virtual-machines-with-azure-backup.2-azure-backup-features-sc
 metadata:
   title: Azure Backup features and scenarios
   description: See how Azure Backup works, and some of the supported use cases for Azure Backup.
-  ms.date: 08/10/2019
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 08/27/2019
+  author: jboeshart
+  ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -16,11 +16,11 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which is the best way to back up an entire Linux Azure virtual machine?"
+  - content: "Which is the best way to back up an entire Azure virtual machine running Linux?"
     choices:
     - content: Use the Azure Backup extension
       isCorrect: true
-      explanation: Azure Backup works on Azure VMs without the need to install an agent. It meets the goal of a disk level backup.
+      explanation: Azure Backup works on Azure virtual machines without the need to install an agent. It meets the goal of a disk level backup.
     - content: Use the MABS or DPM agent
       isCorrect: false
       explanation: The MABS or DPM agents could be used in this scenario, but the agents would need be installed and configured, which would require more effort to achieve the same goal as the Azure Backup agent. 

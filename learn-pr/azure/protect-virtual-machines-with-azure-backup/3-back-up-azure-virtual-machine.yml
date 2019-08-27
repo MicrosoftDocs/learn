@@ -3,9 +3,9 @@ uid: learn.protect-virtual-machines-with-azure-backup.3-back-up-azure-virtual-ma
 metadata:
   title: Backing up an Azure virtual machine
   description: Explore all the methods of backing up machines provided by Azure Backup, and make a decision on which method to implement for your company.
-  ms.date: 08/10/2019
-  author: rmcmurray
-  ms.author: robmcm
+  ms.date: 08/27/2019
+  author: jboeshart
+  ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
