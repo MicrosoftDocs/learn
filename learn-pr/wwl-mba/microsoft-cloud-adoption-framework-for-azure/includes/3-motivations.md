@@ -61,10 +61,8 @@ Here are the key points from this unit:
 - The Cloud Adoption Framework for Azure enables an actionable cloud journey that rapidly delivers on the desired business outcomes.
 - There are three main stages of the Cloud Adoption Framework: Plan, Ready, and Adopt.
 - Motivations for cloud adoption include:
-
   - Critical business events, such as end of support for mission-critical technologies.
   - Migration triggers, such as cost saving and operations optimization.
   - Innovation triggers, such as scaling to meet market or geographical demands.
-
 
 You've learned about the motivation triggers that begin a cloud adoption journey for organizations. Next, let’s talk about how to define the strategy for your cloud adoption journey.

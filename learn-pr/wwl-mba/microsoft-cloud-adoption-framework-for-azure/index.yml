@@ -2,14 +2,14 @@
 uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure
 metadata:
   title: Microsoft Cloud Adoption Framework for Azure
-  description: This module covers the basics of how to use the Cloud Adoption Framework for Azure. It's a set of documentation, implementation guidance, best practices, and tools. The Cloud Adoption Framework aids in aligning the strategy for business, people, and technology to enable the desired business outcomes that guide the cloud journey. We describe how to identify opportunities and develop a strategy based on real-world examples of cloud adoption.
+  description: This module covers the basics of how to use the Cloud Adoption Framework for Azure, which is a set of documentation, implementation guidance, best practices, and tools. The Cloud Adoption Framework aids in aligning the strategy for business, people, and technology to enable the desired business outcomes that guide the cloud journey. We describe how to identify opportunities and develop a strategy based on real-world examples of cloud adoption.
   ms.date: 6/11/2019
   author: dragosapostu
   ms.author: a-drapos
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Microsoft Cloud Adoption Framework for Azure
-summary: This module covers the basics of how to use the Cloud Adoption Framework for Azure. It's a set of documentation, implementation guidance, best practices, and tools. The Cloud Adoption Framework aids in aligning the strategy for business, people, and technology to enable the desired business outcomes that guide the cloud journey. We describe how to identify opportunities and develop a strategy based on real-world examples of cloud adoption.
+summary: This module covers the basics of how to use the Cloud Adoption Framework for Azure, which is a set of documentation, implementation guidance, best practices, and tools. The Cloud Adoption Framework aids in aligning the strategy for business, people, and technology to enable the desired business outcomes that guide the cloud journey. We describe how to identify opportunities and develop a strategy based on real-world examples of cloud adoption.
 abstract: |
   In this module, you will:
   - Learn how to use the Cloud Adoption Framework to identify where your organization is in the digital transformation journey.
