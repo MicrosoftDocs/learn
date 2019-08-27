@@ -11,7 +11,5 @@ metadata:
   ROBOTS: NOINDEX
 title: Exercise - Optimize applications across regions by using performance routing
 durationInMinutes: 7
-interactive: bash
-azureSandbox: true
 content: |
   [!include[](includes/5-exercise-performance-routing.md)]

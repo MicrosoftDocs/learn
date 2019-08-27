@@ -1,6 +1,8 @@
 In this module, you learned how to create a WebJob and deploy it to Azure by associating it with a web app in Visual Studio. You also learned how to create triggers in the WebJob by using the WebJobs SDK.
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+## Clean up
+
+Use the Azure portal to delete the **mslearn-webjobs** resource group from your subscription.
 
 ## Learn more
 
