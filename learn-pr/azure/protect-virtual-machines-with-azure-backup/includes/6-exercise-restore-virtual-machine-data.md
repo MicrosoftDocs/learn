@@ -6,7 +6,7 @@ In this exercise, you'll see how to restore a successful backup to replace a VM 
 
 ### Create a storage account to use as a staging location
 
-1. Sign into the [Azure portal](https://portal.azure.com) using the same account you used in the previous exercise.
+1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) using the same account you used in the previous exercise.
 
 1. Select **All Services**, and then search for **storage accounts**. From the list, select **Storage accounts**.
 
@@ -15,11 +15,8 @@ In this exercise, you'll see how to restore a successful backup to replace a VM 
 1. Select **+ Add**, and then use the following information to create a storage account:
 
     - **Resource Group** - select **vmbackups**.
-
     - **Storage account name** - enter a unique name like **restorestagingYYYYMMDD**, where YYYYMMDD is replaced with today's date.
-
     - **Location** - select **(US) West US 2**.
-
     - Select **Review + create**.
 
     ![Specify storage account options](../media/6-specify-storage-account-options.png)
@@ -31,7 +28,6 @@ In this exercise, you'll see how to restore a successful backup to replace a VM 
 ### Stop the VM to allow for the restore
 
 A backup can't be restored if the VM is allocated and running.; if you forget to stop the VM, you'll see an error that is similar to the following example.
-
 
 ![Screenshot showing the error details when a VM is running](../media/6-restore-error.png)
 
@@ -68,11 +64,8 @@ The Recovery Services vaults are accessible at the subscription level. However, 
 1. In the **Restore Configuration** window, use the following information to configure the restore:
 
     - Select **Replace Existing**.
-
     - **Restore Type** - select **Replace Disk(s)**, this is the restore point that will be used to replace the existing VM's disks.
-
     - **Staging Location** - select the storage account you created previously.
-
     - Select **OK**.
 
     ![Screenshot showing the restore configuration options](../media/6-restore-configuration.png)
@@ -88,4 +81,3 @@ The Recovery Services vaults are accessible at the subscription level. However, 
 1. Select the restore job, you can now monitor the progress of the VM restore:
     - **Job Progress**: Real-time percentage of the job as a whole
     - **Sub Tasks**: Shows the status of the current task within the job
-

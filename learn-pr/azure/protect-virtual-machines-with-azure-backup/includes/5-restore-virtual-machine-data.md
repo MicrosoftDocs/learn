@@ -9,25 +9,21 @@ In this unit, you'll learn about the different options for restoring an Azure VM
 You have several options when you are restoring a machine from backup:
 
 - **Create a new VM**
-    - This is the quickest method to get a virtual machine up and running with default settings from a Restore Point.
-    - You can choose the **Name**, **Resource Group**, **VNet**, and **Storage Type** before doing the restore.
-
+  - This is the quickest method to get a virtual machine up and running with default settings from a Restore Point.
+  - You can choose the **Name**, **Resource Group**, **VNet**, and **Storage Type** before doing the restore.
 - **Restore disk**
-    - Restores the backed-up disk so that it can be used to create a new virtual machine. A template is provided within the portal to allow you to customize the new machine
-    - The restore copies the Virtual Hard Disk (VHD) to your chosen **Storage Account**. The VHD should be in the same location as the **Recovery Service vault** you're using
+  - Restores the backed-up disk so that it can be used to create a new virtual machine. A template is provided within the portal to allow you to customize the new machine
+  - The restore copies the virtual hard disk (VHD) to your chosen storage account. The VHD should be in the same location as the *Recovery Service vault you're using
     - You can also attach the restored disk to an existing virtual machine
-
 - **Replace existing**
-     - Restore a disk and use it to replace the disk on an existing virtual machine
-     - Azure Backup takes a snapshot of the virtual machine before the recovered disk is attached, it stores it in a staging location you specify. The **Recovery Service vault** stores the snapshot according to your retention policy
-     - Replace existing only supports unencrypted managed virtual machines
+  - Restore a disk and use it to replace the disk on an existing virtual machine
+  - Azure Backup takes a snapshot of the virtual machine before the recovered disk is attached, it stores it in a staging location you specify. The Recovery Service vault stores the snapshot according to your retention policy
+  - Replace existing only supports unencrypted managed virtual machines
 
-Each of these restore options can be useful in different situations; for example:
+Each of these restore options can be useful in different situations. For example:
 
-- **Create a new VM** could be used to quickly create a development server from the live versions backup. 
-
+- **Create a new virtual machine** could be used to quickly create a development server from the live versions backup.
 - **Restore disk** could be used to create a new virtual machine; this option allows for customization of the virtual machine before it's created. You can add configuration settings, like extra network adaptors, or an increased memory size. Using this option also allows for customization using Powershell.
-
 - **Replace existing** allows a disk to be restored and replaced on an existing virtual machine; this could be useful in cases where an operating system disk has failed during an update operation and can only be recovered with a restore.
 
 ## Recover files from a backup
@@ -47,9 +43,6 @@ Azure Backup supports the back up and restore of machines encrypted using **Azur
 Certain limitations apply when you restore encrypted virtual machines:
 
 - Virtual machines can only be backed up and restored to the same subscription and region that they're a member of, and the subscription and region have to be the same as the **Recovery Services Vault** that you use.
-
 - Azure Backup only supports standalone key encryption; any key that is part of a certificate isn't supported currently.
-
 - File or folder level restores are not supported with encrypted virtual machines; to restore to that level of granularity, the whole virtual machine has to be restored, and then the file or folders can be manually copied.
-
 - The **Replace existing VM** option isn't available for encrypted virtual machines.

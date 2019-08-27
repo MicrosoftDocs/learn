@@ -1,18 +1,18 @@
-Your company is running a combination of Windows and Linux workloads, and you've been asked to prove Azure Backup is a good fit for both kinds of VMs. Using a combination of Azure CLI and the Azure portal, you're going protect both kinds of VMs with Azure Backup.
+Your company is running a combination of Windows and Linux workloads, and you've been asked to prove Azure Backup is a good fit for both kinds of virtual machines. Using a combination of Azure CLI and the Azure portal, you're going protect both kinds of virtual machines with Azure Backup.
 
-Azure Backup can be quickly enabled for VMs in Azure. You can enable Azure Backup from the portal, the azure CLI, or with powershell commands.
+Azure Backup can be quickly enabled for virtual machines in Azure. You can enable Azure Backup from the portal, the Azure CLI, or with PowerShell commands.
 
-In this exercise, you'll create a VM, setup, and then start an Azure Backup.
+In this exercise, you'll create a virtual machine, setup, and then start an Azure Backup.
 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to back up virtual machines with Azure Backup.
 > If you want to complete this exercise, but you don't have an Azure subscription, or prefer not to use your own account, you'll need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
-## Create a backup for Azure VMs
+## Create a backup for Azure virtual machines
 
 ### Set up the environment
 
-1. Sign into the [Azure portal](https://portal.azure.com/), and select the Cloud Shell.
+1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true), and select the Cloud Shell.
 
     ![Start the Cloud Shell](../media/4-azure-portal-cloudshell.png)
 
@@ -50,7 +50,7 @@ az vm create \
     --no-wait
 ```
 
-### Create a Linux VM using Azure CLI
+### Create a Linux virtual machine using Azure CLI
 
 Create the **NW-RHEL01** virtual machine by using the following command.
 
@@ -68,15 +68,15 @@ az vm create \
 
 The above can take a few minutes to complete, wait for this command to finish before moving on to the next step.
 
-### Enable backup for a VM using the Azure portal
+### Enable backup for a virtual machine using the Azure portal
 
 1. Select **All Services** and then search for **Virtual Machines**. From the list, select **Virtual Machines**.
 
-    ![Screenshot showing searching for VMs](../media/4-portal-vms.png)
+    ![Screenshot showing searching for virtual machines](../media/4-portal-vms.png)
 
-1. From the list, select the **NW-RHEL01** VM you created.
+1. From the list, select the **NW-RHEL01** virtual machine you created.
 
-    ![Screenshot showing selecting a VM](../media/4-portal-select-linux-vm.png)
+    ![Screenshot showing selecting a virtual machine](../media/4-portal-select-linux-vm.png)
 
 1. In the sidebar, scroll down to **Operations**, select **Backup**, and then use the following information to create a backup:
 
@@ -90,7 +90,7 @@ The above can take a few minutes to complete, wait for this command to finish be
 
     ![Screenshot showing the backup options](../media/4-portal-azure-backup.png)
 
-1. After the deployments completes, select **NW-RHEL01** from the list of VMs.
+1. After the deployments completes, select **NW-RHEL01** from the list of virtual machines.
 
 1. The backup settings for the virtual machine can be accessed from the virtual machine menu by scrolling down to **Operations** and selecting **Backup**.
 
@@ -102,7 +102,7 @@ The above can take a few minutes to complete, wait for this command to finish be
 
 ### Enable a backup with Azure CLI
 
-1. Using the Cloud Shell, enable a backup for **NW-APP01** VM.
+1. Using the Cloud Shell, enable a backup for **NW-APP01** virtual machine.
 
     ```azurecli
     az backup protection enable-for-vm \
@@ -131,7 +131,7 @@ The above can take a few minutes to complete, wait for this command to finish be
     860d4dca-9603-4a4e-9f3b-93f242a0a64d  ConfigureBackup  Completed   NW-RHEL01    2019-08-01T06:13:33.860598+00:00  0:00:31.256773    
     ```
 
-1. Do an initial backup of the VM, instead of waiting for the schedule to run it.
+1. Do an initial backup of the virtual machine, instead of waiting for the schedule to run it.
 
     ```azurecli
     az backup protection backup-now \
@@ -146,11 +146,11 @@ The above can take a few minutes to complete, wait for this command to finish be
 
 ## Monitoring backups in the portal
 
-### View the status of a backup for a single VM
+### View the status of a backup for a single virtual machine
 
 1. Sign into the [Azure portal](https://portal.azure.com/), and select **All resources** on the left of the portal.
 
-1. Select the **NW-APP01** VM.
+1. Select the **NW-APP01** virtual machine.
 
 1. Under **Operations**, select **Backup**.
 
