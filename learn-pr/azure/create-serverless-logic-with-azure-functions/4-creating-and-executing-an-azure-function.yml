@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-serverless-logic-with-functions.4-creating-and-executing-an-azure-function
-title: 
+title: Run your code on-demand with Azure Functions
 metadata:
   title: Run your code on-demand with Azure Functions
   description: Run your code on-demand with Azure Functions
