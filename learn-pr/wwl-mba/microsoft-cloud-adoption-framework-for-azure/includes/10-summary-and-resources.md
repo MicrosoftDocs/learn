@@ -19,20 +19,10 @@ Here are the six key takeaways from this module:
 :::column:::
 
 - The three main components of the Cloud Adoption Framework—Plan, Ready, and Adopt—can be applied to different stages for cloud adopters. They should be revisited often because cloud adoption is an ongoing journey, not a destination.
-- A modernization trigger is an event that initiates the cloud adoption journey for an enterprise. The most common modernization triggers include:
-
-    - Data center contracts expiring.
-    - The need to deliver applications and features faster.
-    - Urgent capacity needs.
-    - A software or hardware refresh.
-    - The need to address security threats.
-    - Compliance.
-    - Enabling new business opportunities. 
-    - Software end of support.
-
+- A modernization trigger is an event that initiates the cloud adoption journey for an enterprise. The most common modernization triggers include datacenter contracts expiring, the need to deliver applications and features faster, urgent capacity needs, a software or hardware refresh, the need to address security threats, compliance, enabling new business opportunities, and software end of support.
 - The Plan phase focuses on aligning technology decisions to business priorities, with clear business outcomes and setting the proper cloud rationalization approach.
 - Readying your people, organization process, and environment for cloud adoption are critical factors in the success of your cloud adoption journey.
-- Adopting the cloud technologies defined in your plan and for which you have readied your organization  depends on what you're actually doing. Are you migrating or innovating with a new workload to the cloud?
+- Adopting the cloud technologies defined in your plan and for which you have readied your organization depends on what you're actually doing. Are you migrating or innovating with a new workload to the cloud?
 - Governing and managing your cloud environment is as critical to your successful cloud adoption as any other stage. As such, it should be considered and executed properly.
 
 :::column-end:::
