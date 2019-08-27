@@ -89,38 +89,44 @@ For the rest of the exercise, you'll return to the Azure portal running in the s
 
     ![Screenshot that shows the New blade in Azure portal showing the Container options available in Azure Marketplace](../media/7-search-container-instance.png)
 
-1. On the **Basics** page, specify the values in the following table for each of the properties, and then click **OK**.
+    There are several pieces of information that need configuration for our Container Instance. We'll start by setting the resource group information and container details. Then we'll configure the container's network options and restart policy.
+
+1. On the **Basics** page, specify the values in the following table for each of the properties, and then click **Next: Networking &gt;**.
 
     | Property  | Value  |
     |---|---|
-    | Name | hotelsysteminstance |
-    | Container image type | Private |
-    | Container image | \<*registry-name*\>.azurecr.io/reservationsystem:latest |
+    | Subscription | Select your default Azure subscription in which you are allowed to create and manage resources.  |
+    | Resource Group | Reuse the existing resource group **learn-deploy-container-aci-rg**. |
+    | Container Name | hotelsysteminstance |
+    | Region | Use the default location |
+    | Image type | Private |
+    | Image name | \<*registry-name*\>.azurecr.io/reservationsystem:latest |
     | Image registry login server | Enter the login server name for your registry |
     | Image registry username | Enter the username for your registry |
     | Image registry password | Enter the password for your registry |
-    | Subscription | Concierge Subscription  |
-    | Resource Group | Reuse the existing resource group **learn-deploy-container-aci-rg**. |
-    | Location | Use the default location |
+    | OS Type | Linux |
+    | Size | Leave the default *Size* set a **1 vcpu, 1.5 Gib memory, 0 gpus** |
 
-1. On the **Configuration** page, specify the values in the following table for each of the properties, and then click **OK**.
+1. On the **Networking** page, specify the values in the following table for each of the properties, and then click **Next: Advanced &gt;**.
 
     | Property  | Value  |
     |---|---|
-    | OS Type | Linux |
-    | Number of cores | 1 |
-    | Memory (GB) | 1.5 |
-    | Public IP address | Yes  |
-    | DNS name label | Choose a unique name. This will be used as part of the container's URL. |
+    | Include public IP address | Yes  |
     | Port | 80 |
     | Open additional ports | No |
     | Port protocol | TCP |
+    | DNS name label | Choose a unique name. This will be used as part of the container's URL. |
+
+1. On the **Advanced** page, specify the values in the following table for each of the properties, and then click **Review + create**.
+
+    | Property  | Value  |
+    |---|---|
     | Restart policy | Always |
     | Environment variable | *leave blank* |
     | Add additional environment variables | No |
     | Command override | *leave blank *|
 
-1. On the **Summary** page, wait for validation to complete, and correct any errors if necessary. Click **OK**.
+1. On the **Summary** page, wait for validation to complete, and correct any errors if necessary. Click **Create**.
 
 1. When the container instance has been created, click **All resources**, and go to the page for the container instance.
 
