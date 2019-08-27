@@ -19,9 +19,9 @@ quiz:
 
   - content: 'What three pieces of data are needed to create a connection string?'
     choices: 
-    - content: ''
+    - content: 'Device Id, Primary Key, Secondary Key'
       isCorrect: false
-      explanation: stuff.
+      explanation: Nope, the secondary key is a backup key and not usually required.
     - content: 'Scope Id, Device Id, Primary Key'
       isCorrect: true
       explanation: Correct.

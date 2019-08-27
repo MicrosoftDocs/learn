@@ -1,5 +1,5 @@
 
-The data communicated between a remote device, and IoT Central, is specified in a _device template_. The device template specifies all the required details about the data to be communicated, so that both the device and IoT Central have all they need to make sense of the communication.
+The data communicated between a remote device, and IoT Central, is specified in a _device template_. The device template specifies all the required details about the data, so that both the device and IoT Central have all they need to make sense of the communication.
 
 In this unit we will create a device template for a refrigerated truck. When we do this, a simulated refrigerated truck device is created for us by default. This simulated device allows us to do some testing of the template before committing to real devices. In the following unit we will examine this first level of testing.
 
@@ -7,7 +7,7 @@ In this unit we will create a device template for a refrigerated truck. When we 
 
 1. Click on the app name in the home screen of your IoT Central apps, and then select **Device Templates** from the menu on the left-hand side.
 
-2. On the right-hand side of the screen, click **+ New** to start the process.
+2. On the right-hand side of the screen, click **+ New** to create a new template.
 3. You will next see a range  of **New Template** options, select **Custom**.
   > [!TIP]
   > Take note of the other options, **MXChip**, **Raspberry Pi**, and so on, just in case you need them in a future project!
@@ -16,14 +16,14 @@ In this unit we will create a device template for a refrigerated truck. When we 
 
 ![Create a new device template](../media/refrigerated-trucks-new-template.png)
 
-5. Click on the template when it is created, and note that a template consists of **Measurements**, **Settings**, **Properties**, **Commands**, **Rules**, and a **Dashboard**. Our refrigerated truck will need entries in most of these.
+5. Click on the template name when it is created, and note that a template consists of **Measurements**, **Settings**, **Properties**, **Commands**, **Rules**, and a **Dashboard**. Our refrigerated truck will need entries in most of these.
 
   > [!NOTE]
-  > We are creating this template with all we need for the modules that follow this one, so the purpose of these entries might not be immediately obvious to you, but all should become clear as you work through this set of modules. It is possible to complete a template, then come back to it and add more entries, but this can involve creating multiple _versions_ of a template, which we will avoid in this first set of Learn modules.
+  > We are creating this template with all we need for the modules that follow this one, so the purpose of these entries might not be immediately obvious, but all should become clear as you work through this set of modules. It is possible to complete a template, then come back to it and add more entries, but this can involve managing multiple _versions_ of a template, which we will avoid in this first set of Learn modules.
 
 ## Measurements
 
-Measurements are data transmitted by the device, and covers four types of values: Telemetry, State, Event, and Location. Our scenario requires at least one of each of these for the refrigerated truck. We need to go through them carefully and enter all the required data. The most important entry is the **Field Name**. Make sure to enter this accurately, as this is the name that will be used when devices communicate values to the IoT Central app. When we come to write code in the next module, the reference in the code and the **Field Name** must be an exact match.
+_Measurements_ are data transmitted by the device, and covers four types of values: Telemetry, State, Event, and Location. Our scenario requires at least one of each of these for the refrigerated truck. We need to go through the measurements carefully, and enter all the required data. The most important entry is the **Field Name**. Make sure to enter this accurately, as this is the name that will be used when devices communicate values to the IoT Central app. When we come to write code in the next module, the reference in the code and the **Field Name** must be an exact match.
 
 ### Telemetry
 
@@ -49,13 +49,13 @@ States are important, they let the operator know what is going on. A state in Io
 
 ![Create cooling system state for the simulated device](../media/refrigerated-trucks-cooling.png)
 
-3. A more complex state is the state of the truck itself. If all goes well a truck's normal routing might be: _ready_, _enroute_, _delivering_, _returning_, _loading_, and back to _ready_ again.  However, we should add the _dumping_ state to cater for when melted contents needs to be disposed of! Create this state, and give each entry an appropriate color.
+3. A more complex state is the state of the truck itself. If all goes well a truck's normal routing might be: _ready_, _enroute_, _delivering_, _returning_, _loading_, and back to _ready_ again.  However, we should add the _dumping_ state to cater for when melted contents need to be disposed of! Create this state, and give each entry an appropriate color.
 
 ![Create truck state for the simulated device](../media/refrigerated-trucks-state.png)
 
 ### Event
 
-Events are issues triggered by the device and communicated to the IoT Central app. Events can be one of three types: error, warning, or informational. 
+Events are issues triggered by the device, and communicated to the IoT Central app. Events can be one of three types: error, warning, or informational. 
 
 One possible event a device might trigger is a conflicting command. An example might be a truck is returning empty from a customer, but receives a command to deliver its contents to another customer. The conflict is caused by the device (the truck) being unable to act on the command. If this occurs, it is a good idea for the device to trigger an event to warn the operator of the IoT Central app, with a "warning" class of event.
 
@@ -63,7 +63,7 @@ One possible event a device might trigger is a conflicting command. An example m
 
 ![Create conflict event for the simulated device](../media/refrigerated-trucks-conflict.png)
 
-2. A second event that we will add is simply informational. When a truck receives a command to deliver to a customer, and the truck is able to perform the task, the truck trigger a change-of-customer-id event. Add this event now.
+2. A second event that we will add is simply informational. When a truck receives a command to deliver to a customer, and the truck is able to perform the task, the truck triggers a change-of-customer-id event. Add this event now.
 
 ![Create customer event for the simulated device](../media/refrigerated-trucks-customer.png)
 
@@ -84,9 +84,9 @@ You should have now completed adding all the measurements we need. Validate the 
 
 ## Settings
 
-A setting contains device configuration data. In our refrigerated truck example, we are going to define an optimal temperature for the contents as a setting. This optimal temperature might conceivably change with different types of content, different weather conditions, or whatever might be appropriate. A setting has an initial default value, which may not need to be changed, but the ability to change it easily and quickly is there, if needed.
+A _Setting_ contains device configuration data. In our refrigerated truck example, we are going to define an optimal temperature for the contents as a setting. This optimal temperature might conceivably change with different types of content, different weather conditions, or whatever might be appropriate. A setting has an initial default value, which may not need to be changed, but the ability to change it easily and quickly is there, if needed.
 
-A setting is a single value. If more complex sets of data need to be transmitted to a device, a command (see below) might be the more appropriate way of handling it.
+A setting is a single value. If more complex sets of data need to be transmitted to a device, a Command (see below) might be the more appropriate way of handling it.
 
 1. Click on the **Settings** title under the device template name, and add a single setting to set an optimal contents temperature.
 
@@ -94,7 +94,7 @@ A setting is a single value. If more complex sets of data need to be transmitted
 
 ## Properties
 
-Properties of a device are typically constant values, that are communicated to IoT Central app once when communication is initiated. In our refrigerated truck scenario, a good example of a property would be the license plate of the truck, or some similar unique Id.
+_Properties_ of a device are typically constant values, that are communicated to the IoT Central app once when communication is first initiated. In our refrigerated truck scenario, a good example of a property would be the license plate of the truck, or some similar unique truck Id.
 
 1. Click on the **Properties** title under the device template name, and add a single property to contain a truck Id.
 
@@ -102,7 +102,7 @@ Properties of a device are typically constant values, that are communicated to I
 
 ## Commands
 
-Commands are sent by the operator of the IoT Central app to the remote devices.
+_Commands_ are sent by the operator of the IoT Central app to the remote devices.
 
 For refrigerated trucks, there are two commands we should add: a command to deliver the contents to a customer (identified by a customer Id), and a command to recall the truck to base.
 
@@ -112,7 +112,7 @@ For refrigerated trucks, there are two commands we should add: a command to deli
 ![Create a go to customer command for the simulated device](../media/refrigerated-trucks-goto.png)
 
   > [!TIP]
-  > You can use the corner icon in the lower-right corner of the box displaying the command, to stretch the bounding rectangle to display all elements of the command.
+  > You can use the corner icon in the lower-right corner of the box displaying the command, to stretch the bounding rectangle so that all elements of the command are displayed fully.
 
 3. Enter another new command, this time with no input fields, but with "Recall" as the **Display Name**, and "cmdRecall" as the **Field Name**.
 4. Validate that your two commands match the image below.
@@ -121,8 +121,4 @@ For refrigerated trucks, there are two commands we should add: a command to deli
 
 Commands are similar to settings, but note that a command can contain no, or multiple, input fields if necessary, whereas a setting is limited to a single value.
 
-Now, in the next unit, we can validate that we have at least some of the device template entries correct.
-
-
-
-
+Now, in the next unit, we can do some validation of our device template.
