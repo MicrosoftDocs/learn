@@ -17,53 +17,14 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "When did the general ideas about cloud computing and utility computing emerge?"
-    choices:
-    - content: "Between 1950 and 1966"
+  - content: "Provisioning a new virtual machine in the cloud requires many steps that can take several minutes to complete. At what point during the provisioning process does the cloud service provider typically start charging the customer for a virtual machine?"
+    choices: 
+    - content: "When the provisioning process begins"
+      isCorrect: false
+      explanation: "Incorrect. This would mean that the customer is charged for a virtual machine that is not yet available."
+    - content: "Midway through the provisioning process"
+      isCorrect: false
+      explanation: "Incorrect. This would mean that the customer is charged for a virtual machine that is not yet available."
+    - content: "When the provisioning process ends"
       isCorrect: true
-      explanation: "Correct! The idea of utility computing emerged in the 1950s and 1960s when mainframes were prevalent and expensive, and computer engineers were figuring out ways to share a mainframe among multiple users (such as time sharing). The idea of utility computing is mainly attributed to Professor John McCarthy in the 1960s."
-    - content: "Between 1995 and 2000"
-      isCorrect: false
-      explanation: "That is not quite right. The ideas behind utility computing have been around since much earlier than that."
-    - content: "Between 2006 and the present"
-      isCorrect: false
-      explanation: "That is not quite right. The ideas behind utility computing have been around since much earlier than that."
-
-  - content: "Which technology enables multiple servers to be consolidated into the same physical server?"
-    choices:
-    - content: "Internet Technologies"
-      isCorrect: false
-      explanation: "That is not quite right. The Internet does enable fast, efficient communication between connected devices, but it's not the primary technology that enables servers to be consolidated."
-    - content: "Virtualization"
-      isCorrect: true
-      explanation: "Correct! Virtualization is the primary enabler for server consolidation."
-    - content: "Grid Computing"
-      isCorrect: false
-      explanation: "That is not quite right. Grid computing consolidates a large number of computers as a distributed system to allow the execution of large compute problems."
-
-  - content: "What are the three enabling technologies of cloud computing?"
-    choices:
-    - content: "Networking, web 2.0, and virtualization"
-      isCorrect: true
-      explanation: "Correct! Networking, web 2.0, and virtualization are all enabling technologies for cloud computing."
-    - content: "The internet, large disk sizes, and Java"
-      isCorrect: false
-      explanation: "The internet is crucial for cloud computing, but bigger disk sizes and Java weren't the crucial developments."
-
-  - content: "Advances in which area led to faster communication, enabling the cloud computing model of leasing compute resources from a remote data center over the internet?"
-    choices:
-    - content: "Utility computing"
-      isCorrect: false
-      explanation: "Incorrect. The contribution of utility computing is not faster communication."
-    - content: "Networking"
-      isCorrect: true
-      explanation: "Correct! Advances in networking led to faster communication, which made distributed applications practical and an important part of cloud computing today."
-    - content: "Programming models"
-      isCorrect: false
-      explanation: "Incorrect. The contribution of utility computing is not faster communication."
-    - content: "Virtualization"
-      isCorrect: false
-      explanation: "Incorrect. The contribution of virtualization is not faster communication."
-    - content: "Distributed/parallel computing"
-      isCorrect: false
-      explanation: "Incorrect. The contribution of distributed/parallel computing is not faster communication."
+      explanation: "Correct! This prevents the customer from being charged before the virtual machine is ready to be used."
