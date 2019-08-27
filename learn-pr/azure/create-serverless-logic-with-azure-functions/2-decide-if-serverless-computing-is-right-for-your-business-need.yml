@@ -5,9 +5,8 @@ metadata:
   title: Decide if serverless computing is right for your business needs
   description: Decide if serverless computing is right for your business needs
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: AndrewJByrne
+  ms.author: anbyrne
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
