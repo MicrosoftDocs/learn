@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.your-first-iot-central-app.1-introduction
+uid: learn.add-a-real-device-to-iot-central.1-introduction
 metadata:
   title: Introduction
-  description: Create an Azure IoT Central app
+  description: Describes what's needed to create a real device.
   ms.date: 09/01/2019
   author: PeterTurcan
   ms.author: v-pettur

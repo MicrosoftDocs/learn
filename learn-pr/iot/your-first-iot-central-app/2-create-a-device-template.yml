@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Create a device template
-durationInMinutes: 5
+durationInMinutes: 15
 content: |
   [!include[](includes/2-create-a-device-template.md)]

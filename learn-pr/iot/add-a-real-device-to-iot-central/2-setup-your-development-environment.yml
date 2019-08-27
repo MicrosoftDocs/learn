@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.add-a-real-device-to-iot-central.2-setup-your-development-environment
+metadata:
+  title: Setup your development environment
+  description: Download and install the tools needed for IoT Central code development.
+  ms.date: 09/01/2019
+  author: PeterTurcan
+  ms.author: v-pettur
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title:  Setup your development environment
+durationInMinutes: 10
+content: |
+  [!include[](includes/1-setup-your=development-environment.md)]

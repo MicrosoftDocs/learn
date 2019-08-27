@@ -21,16 +21,13 @@ In this unit we will create a device template for a refrigerated truck. When we 
   > [!NOTE]
   > We are creating this template with all we need for the modules that follow this one, so the purpose of these entries might not be immediately obvious to you, but all should become clear as you work through this set of modules. It is possible to complete a template, then come back to it and add more entries, but this can involve creating multiple _versions_ of a template, which we will avoid in this first set of Learn modules.
 
-
 ## Measurements
 
 Measurements are data transmitted by the device, and covers four types of values: Telemetry, State, Event, and Location. Our scenario requires at least one of each of these for the refrigerated truck. We need to go through them carefully and enter all the required data. The most important entry is the **Field Name**. Make sure to enter this accurately, as this is the name that will be used when devices communicate values to the IoT Central app. When we come to write code in the next module, the reference in the code and the **Field Name** must be an exact match.
 
-
-
 ### Telemetry
 
-Telemetry is the values transmitted by sensors. We only implement one sensor in our scenario, the temperature of a truck's contents. The frequency with which this information is transmitted is determined by the device. In order for an operator to respond to an abnormal situation, the frequency of the transmission will need to be set appropriately. 
+Telemetry is the values transmitted by sensors. We only implement one sensor in our scenario, the temperature of a truck's contents. The frequency with which this information is transmitted is determined by the device. In order for an operator to respond to an abnormal situation, the frequency of the transmission will need to be set appropriately.
 
 Notice that a minimum and maximum value are specified for a telemetry value, these values are only used by a simulated device to mimic the values from a real device. A real device can transmit any value. The units of the telemetry is a text value to show on charts and tables, IoT Central does not have any inherent understanding of degrees Celsius, or any other possible physical unit.
 
@@ -56,7 +53,6 @@ States are important, they let the operator know what is going on. A state in Io
 
 ![Create truck state for the simulated device](../media/refrigerated-trucks-state.png)
 
-
 ### Event
 
 Events are issues triggered by the device and communicated to the IoT Central app. Events can be one of three types: error, warning, or informational. 
@@ -74,7 +70,6 @@ One possible event a device might trigger is a conflicting command. An example m
   > [!NOTE]
   > One reason we add this event is to keep track of which truck is going to which customer. In a later module we implement multiple trucks and a single dashboard to monitor them, and having this event helps provide a record of what is going on.
 
-
 ### Location
 
 A location is probably the most important, and yet one of the easiest measurements to add to a device template. Under the hood, it consists of a latitude, longitude, and an optional altitude, for the device.
@@ -87,7 +82,6 @@ You should have now completed adding all the measurements we need. Validate the 
 
 ![Validate all the measurements for the simulated device](../media/refrigerated-trucks-measurements.png)
 
-
 ## Settings
 
 A setting contains device configuration data. In our refrigerated truck example, we are going to define an optimal temperature for the contents as a setting. This optimal temperature might conceivably change with different types of content, different weather conditions, or whatever might be appropriate. A setting has an initial default value, which may not need to be changed, but the ability to change it easily and quickly is there, if needed.
@@ -97,7 +91,6 @@ A setting is a single value. If more complex sets of data need to be transmitted
 1. Click on the **Settings** title under the device template name, and add a single setting to set an optimal contents temperature.
 
 ![Create an optimal temperature setting for the simulated device](../media/refrigerated-trucks-optimal.png)
-
 
 ## Properties
 

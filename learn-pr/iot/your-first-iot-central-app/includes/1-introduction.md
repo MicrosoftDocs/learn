@@ -18,9 +18,10 @@ In the scenario that follows, you operate a fleet of refrigerated trucks.
 IoT Central provides all you need to handle this scenario. To spread the workload, we build this scenario across three modules.
 
 In this first module you will:
-  - Create an Azure IoT Central custom app
-  - Create a device template for a refrigerated truck
-  - Perform initial tests of the device template using a default simulated device
+
+- Create an Azure IoT Central custom app
+- Create a device template for a refrigerated truck
+- Perform initial tests of the device template using a default simulated device
 
 In the modules that follow this one, you will add code to support real refrigerated trucks with routes selected by Azure Maps, and be able to track all of them on an IoT Central dashboard!
 ![Trucks on routes visualized in IoT Central app](../media/refrigerated-trucks-intro-map.png)
@@ -43,4 +44,4 @@ In the modules that follow this one, you will add code to support real refrigera
 
 6. In you home page, a large icon for your  **Refrigerated Trucks** app should now appear.
 
-That is all that is needed to create the app. The next step is to specify a device template. 
+That is all that is needed to create the app. The next step is to specify a device template.

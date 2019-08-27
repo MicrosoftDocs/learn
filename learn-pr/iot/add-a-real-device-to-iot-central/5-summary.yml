@@ -1,0 +1,78 @@
+### YamlMime:ModuleUnit
+uid: learn.add-a-real-device-to-iot-central.5-summary
+metadata:
+  title: Summary
+  description: Summary of the second of three IoT Central modules.
+  ms.date: 09/01/2019
+  author: PeterTurcan
+  ms.author: v-pettur
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Summary
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'What three pieces of data are needed to create a connection string?'
+    choices: 
+    - content: ''
+      isCorrect: false
+      explanation: stuff.
+    - content: 'Scope Id, Device Id, Primary Key'
+      isCorrect: true
+      explanation: Correct.
+    - content: ''
+      isCorrect: false
+      explanation: stuff.
+    - content: ''
+      isCorrect: false
+      explanation: stuff.
+
+  - content: 'What does this line of Node.JS do: ```setInterval(sendTruckTelemetry, 5000);``` ?'
+    choices: 
+    - content: 'Creates an interval, so the sendTruckTelemetry method is called every 50 seconds.'
+      isCorrect: false
+      explanation: Nope, the timing is wrong.
+    - content: 'Creates an interval, so the sendTruckTelemetry method is called every 5 seconds.'
+      isCorrect: true
+      explanation: Correct, this call is the basis for regular IoT Central telemetry.
+    - content: 'Creates an interval, so the sendTruckTelemetry method is called with 5000 as a parameter.'
+      isCorrect: false
+      explanation: Nope, 5000 is not a parameter to sendTruckTelemetry.
+    - content: 'Creates an interval, where sendTruckTelemetry is a parameter containing the telemetry data.'
+      isCorrect: false
+      explanation: Incorrect, sendTruckTelemetry is a method name.
+
+  - content: 'What three pieces of data are needed to create a connection string?'
+    choices: 
+    - content: ''
+      isCorrect: false
+      explanation: stuff.
+    - content: 'Scope Id, Device Id, Primary Key'
+      isCorrect: true
+      explanation: Correct.
+    - content: ''
+      isCorrect: false
+      explanation: stuff.
+    - content: ''
+      isCorrect: false
+      explanation: stuff.
+
+  - content: 'What three pieces of data are needed to create a connection string?'
+    choices: 
+    - content: ''
+      isCorrect: false
+      explanation: stuff.
+    - content: 'Scope Id, Device Id, Primary Key'
+      isCorrect: true
+      explanation: Correct.
+    - content: ''
+      isCorrect: false
+      explanation: stuff.
+    - content: ''
+      isCorrect: false
+      explanation: stuff.

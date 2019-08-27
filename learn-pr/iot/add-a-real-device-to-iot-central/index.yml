@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.add-a-real-device-to-Azure-IoT-Central
+metadata:
+  title: Simulate a real device in your first Azure IoT Central app using Node.JS and Azure Maps
+  description: In this module, add code to simulate a refrigerated truck, and use Azure Maps to find the best routes.
+  ms.date: 09/01/2019
+  author: PeterTurcan
+  ms.author: v-pettur
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Simulate a real device in your first Azure IoT Central app using Node.JS and Azure Maps
+summary: >
+  This is the second of three modules that builds an IoT Central app to monitor and command a fleet of refrigerated trucks. This second module adds code to simulate a refrigerated truck, using Azure Maps to find the best routes.
+abstract: | 
+  In this module, you will:
+  - Set up your development environment
+  - Generate connection strings for a real device
+  - Create a Node.JS application for the device
+  - Control the device from the IoT Central app
+prerequisites:
+  - Completed the previous **Create your first app using the Azure IoT Central web portal** module
+  - Introductory knowledge of Node.JS
+  - Introductory knowledge of Azure Maps
+  - An Azure Maps account
+  - A working knowledge of either Visual Studio Code, or Visual Studio
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- beginner
+roles:
+ - Developer
+products:
+- Azure IoT Central
+- Azure Maps
+- Azure Cloud Shell
+units:
+- learn.add-a-real-device-to-iot-central,introduction
+- learn.add-a-real-device-to-iot-central,setup-your-development-environment
+- learn.add-a-real-device-to-iot-central,create-a-real-device-in-nodejs
+- learn.add-a-real-device-to-iot-central,test-your-iot-device
+- learn.add-a-real-device-to-iot-central,summary
+badge:
+  uid: learn.iot.iot-test.badge
