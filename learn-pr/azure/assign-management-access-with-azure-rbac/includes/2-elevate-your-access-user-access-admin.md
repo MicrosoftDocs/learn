@@ -6,13 +6,13 @@ However, the global administrator for Azure AD can temporarily elevate permissio
 
 Some typical use cases include:
 
- - To regain lost access to a given Azure subscription or management group.
-  - To grant an administrator or another user access to a given Azure subscription or management group.
-  - To view an organization's Azure subscriptions or management groups.
-  - To give rights to an automation app, so it can access Azure subscriptions or management groups.
+- To regain lost access to a given Azure subscription or management group.
+- To grant an administrator or another user access to a given Azure subscription or management group.
+- To view an organization's Azure subscriptions or management groups.
+- To give rights to an automation app, so it can access Azure subscriptions or management groups.
 
 Although the two permission schemes are separate, there are many instances – particularly relating to employee churn – where the global AD administrator will need to elevate their permissions. The global AD administrator can then assign the User Access Administrator role to other members of the same organization. This process hands off the controlling and delegating access to Azure resources at a granular level to someone responsible for that task. Equally, on the security principle of least privilege, they should remove those elevated permissions for themselves when the User Access Administrator role has been successfully assigned.
 
    ![User Access Admin Elevated Privilege](../media/2-elevate-access.png)
 
-Assigning the employee management access to a subscription can be done with the Azure portal. You use the 'Access management for Azure resources' toggle in the Azure Active Directory blade. <!--CE:Please sense check the following sentence. I'm not sure I understand the meaning of 'call' and 'call'.-->You could also use the Get-AzRoleAssignment and Remove-AzRoleAssignment for a user at the root scope – or call the REST API elevate Access call with a role assignment JSON object.
+Assigning the employee management access to a subscription can be done with the Azure portal. You use the 'Access management for Azure resources' toggle in the Azure Active Directory blade. You could also use the Get-AzRoleAssignment and Remove-AzRoleAssignment for a user at the root scope – or use a REST API elevate Access call with a role assignment JSON object.
