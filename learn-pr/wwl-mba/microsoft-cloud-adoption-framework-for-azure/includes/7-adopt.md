@@ -1,6 +1,6 @@
 ﻿At this point, you've established your business justification and defined your business outcomes. You've prepared your organization. Your people and your Azure environment are ready to deploy your prioritized applications. You're ready to adopt cloud technologies following the selected digital estate rationalization path.
 
-As discussed, your organization has unique motivations to adopt the cloud. However, they all converge into "migration" or "innovation" to the cloud.
+As discussed, your organization has unique motivations to adopt the cloud. They all converge into *migration* or *innovation* to the cloud.
 
 ## Cloud migration
 

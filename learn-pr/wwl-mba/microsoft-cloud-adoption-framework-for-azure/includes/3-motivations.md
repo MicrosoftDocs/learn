@@ -67,4 +67,4 @@ Here are the key points from this unit:
   - Innovation triggers, such as scaling to meet market or geographical demands.
 
 
-You learned about the motivation triggers that begin a cloud adoption journey for organizations. Next, let’s talk about how to define the strategy for your cloud adoption journey.
+You've learned about the motivation triggers that begin a cloud adoption journey for organizations. Next, let’s talk about how to define the strategy for your cloud adoption journey.

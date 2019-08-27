@@ -6,14 +6,14 @@ The cloud fundamentally changes how organizations procure and use technology res
 
 ## How is it structured?
 
-The Cloud Adoption Framework helps customers undertake a simplified cloud journey in three main stages: 
+The Cloud Adoption Framework helps customers undertake a simplified cloud journey in three main stages:
 - Plan 
 - Ready
 - Adopt
 
 These three main stages are preceded by a business strategy phase and surrounded by an operations phase that expands through the cloud adoption journey.
 
-![Diagram of the three stages of the Cloud Adoption Framework - Plan, Ready, and Adopt. These stages are preceded by the Strategy phase and surrounded by the Operate phase, which spans the cloud adoption journey. ](../media/ic-caf-2.jpg)
+![Diagram of the three stages of the Cloud Adoption Framework: Plan, Ready, and Adopt. These stages are preceded by the Strategy phase and surrounded by the Operate phase, which spans the cloud adoption journey. ](../media/ic-caf-2.jpg)
 
 The Cloud Adoption Framework contains detailed information to cover an end-to-end cloud adoption journey:
 

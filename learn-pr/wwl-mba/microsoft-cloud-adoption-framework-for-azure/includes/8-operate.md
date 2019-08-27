@@ -1,4 +1,4 @@
-﻿The process of adopting the cloud is a journey, not a destination. Along the way, there are clear milestones and tangible business benefits. The final state of cloud adoption is unknown when a company begins the journey. As your organization moves or deploys new applications to the cloud, this final state starts to form. It’s important to consider the following aspects of managing and operating a cloud platform:
+﻿The process of adopting the cloud is a journey, not a destination. Along the way, there are clear milestones and tangible business benefits. The final state of cloud adoption is unknown when an organization begins the journey. As your organization moves or deploys new applications to the cloud, this final state starts to form. It’s important to consider the following aspects of managing and operating a cloud platform:
 
 - **Define governance solutions for your cloud environment** that meet your organization’s business needs, provide agility, and control risks.
 - **Manage your cloud environment based on the governance solutions** to allow it to evolve, grow, and adapt to your organization’s changing business needs.
@@ -150,7 +150,7 @@ An *incremental governance* approach empowers these traits. Incremental govern
 
 ## Cloud management
 
-The goal of the Cloud Adoption Framework Operation methodology is to maximize ongoing business returns by creating balance between stability and operational costs. Stable business operations lead to stable revenue streams. Controlled operational costs reduce the overhead to drive more profit from the business processes. To create this balance, follow the two-step process outlined here.
+The goal of the Cloud Adoption Framework Operate methodology is to maximize ongoing business returns by creating balance between stability and operational costs. Stable business operations lead to stable revenue streams. Controlled operational costs reduce the overhead to drive more profit from the business processes. To create this balance, follow the two-step process outlined here.
 
 ### Business stability
 
@@ -310,7 +310,7 @@ Here are the key points from this unit:
 - As your organization moves or deploys new applications to the cloud, it’s important to consider these aspects of operating a cloud platform:
     - Define governance solutions for your cloud environment.
     - Manage your cloud environment.
-- The Cloud Adoption Framework governance model identifies key areas of importance. Each area relates to different types of risks the company must address as it adopts more cloud services. There are five disciplines of cloud governance: cost management, security baseline, resource consistency, identity baseline, and deployment acceleration.
-- The goal of the Cloud Adoption Framework Operation methodology is to maximize ongoing business returns by creating balance between business stability and cloud operations costs.
+- The Cloud Adoption Framework governance model identifies key areas of importance. Each area relates to different types of risks the organization must address as it adopts more cloud services. There are five disciplines of cloud governance: cost management, security baseline, resource consistency, identity baseline, and deployment acceleration.
+- The goal of the Cloud Adoption Framework Operate methodology is to maximize ongoing business returns by creating balance between business stability and cloud operations costs.
 
 Next, let's see what you've learned about the Cloud Adoption Framework with a knowledge check.
