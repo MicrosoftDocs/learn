@@ -4,21 +4,23 @@ The sample application we use for this exercise displays the region it's running
 
 In this exercise, you set up Traffic Manager to use the United States endpoint as the primary, failing over to the Asian endpoint if any errors occur.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 ## Create a new Traffic Manager profile
 
-1. In Azure Cloud Shell, run this command to create a Traffic Manager profile.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true). Open the Cloud Shell and run these commands to create a new resource group and Traffic Manager profile. Fill in `<location>` in the first command with your choice of Azure region (you can list all available regions with `az account list-locations --query [].name`).
 
     ```azurecli
+    az group create --name mslearn-trafficmanager --location <location>
+
     az network traffic-manager profile create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group mslearn-trafficmanager \
         --name TM-MusicStream-Priority \
         --routing-method Priority \
         --unique-dns-name TM-MusicStream-Priority-$RANDOM
     ```
 
-    You use these parameters in this command:
+    You use these parameters in the second command:
 
     - **--routing-method Priority**: Creates the Traffic Manager profile by using the priority routing method.
     - **--unique-dns-name**: Creates the globally unique domain name `<unique-dns-name>.trafficmanager.net`. We use the `$RANDOM` Bash function to return a random whole number to ensure that the name is unique.
@@ -31,13 +33,13 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
     EASTAPP="MusicStore-EastAsia-$RANDOM"
 
     az appservice plan create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group mslearn-trafficmanager \
         --name MusicStore-EastAsia-Plan \
         --location eastasia \
         --sku S1
 
     az webapp create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group mslearn-trafficmanager \
         --name $EASTAPP \
         --plan MusicStore-EastAsia-Plan \
         --runtime "node|10.6" \
@@ -52,13 +54,13 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
     WESTAPP="MusicStore-WestUS-$RANDOM"
 
     az appservice plan create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group mslearn-trafficmanager \
         --name MusicStore-WestUS-Plan \
         --location westus2 \
         --sku S1
 
     az webapp create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group mslearn-trafficmanager \
         --name $WESTAPP \
         --plan MusicStore-WestUS-Plan \
         --runtime "node|10.6" \
@@ -71,13 +73,13 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
 
     ```azurecli
     WestId=$(az webapp show \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group mslearn-trafficmanager \
         --name $WESTAPP \
         --query id \
         --out tsv)
 
     az network traffic-manager endpoint create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group mslearn-trafficmanager \
         --profile-name TM-MusicStream-Priority \
         --name "Primary-WestUS" \
         --type azureEndpoints \
@@ -85,13 +87,13 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
         --target-resource-id $WestId
 
     EastId=$(az webapp show \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group mslearn-trafficmanager \
         --name $EASTAPP \
         --query id \
         --out tsv)
 
     az network traffic-manager endpoint create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group mslearn-trafficmanager \
         --profile-name TM-MusicStream-Priority \
         --name "Failover-EastAsia" \
         --type azureEndpoints \
@@ -105,7 +107,7 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
 
     ```azurecli
     az network traffic-manager endpoint list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group mslearn-trafficmanager \
         --profile-name TM-MusicStream-Priority \
         --output table
     ```
@@ -121,7 +123,7 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
     nslookup $EASTAPP.azurewebsites.net
     # Retrieve the address for the Traffic Manager profile
     nslookup $(az network traffic-manager profile show \
-                --resource-group <rgn>[sandbox resource group name]</rgn> \
+                --resource-group mslearn-trafficmanager \
                 --name TM-MusicStream-Priority \
                 --query dnsConfig.fqdn \
                 --out tsv)
@@ -133,7 +135,7 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
 
     ```bash
     echo http://$(az network traffic-manager profile show \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group mslearn-trafficmanager \
         --name TM-MusicStream-Priority \
         --query dnsConfig.fqdn \
         --out tsv)
@@ -149,7 +151,7 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
 
     ```bash
     az network traffic-manager endpoint update \
-        --resource-group <rgn>[sandbox resource group name]</rgn>  \
+        --resource-group mslearn-trafficmanager  \
         --name "Primary-WestUS" \
         --profile-name TM-MusicStream-Priority \
         --type azureEndpoints \
@@ -165,7 +167,7 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
     nslookup $EASTAPP.azurewebsites.net
     # Retrieve the address for the Traffic Manager profile
     nslookup $(az network traffic-manager profile show \
-                --resource-group <rgn>[sandbox resource group name]</rgn> \
+                --resource-group mslearn-trafficmanager \
                 --name TM-MusicStream-Priority \
                 --query dnsConfig.fqdn \
                 --out tsv)
