@@ -59,7 +59,7 @@ az vm create \
     --resource-group $RGROUP \
     --name NW-RHEL01 \
     --size Standard_DS1_v2 \
-    --image Canonical:UbuntuServer:18.04-LTS:latest \
+    --image RedHat:RHEL:7-RAW:latest \
     --authentication-type ssh \
     --generate-ssh-keys \
     --vnet-name NorthwindInternal \
@@ -80,15 +80,15 @@ The above can take a few minutes to complete, wait for this command to finish be
 
 1. In the sidebar, scroll down to **Operations**, select **Backup**, and then use the following information to create a backup:
 
-    - **Recovery Services vault** - select **Create new**, and type **azure-backup** for the name.
-
-    - **Resource group** - select the **vmbackups** resource group that you created earlier.
-
-    - **Choose a backup policy** - select **(new) DailyPolicy**, which is a daily backup at 12:00 PM UTC, and a retention range of 180 days.
-
-    - Select **Enable Backup**.
+    | | |
+    |-|-|
+    | **Recovery Services vault** | Select **Create new**, and type **azure-backup** for the name. |
+    | **Resource group** | Select the **vmbackups** resource group that you created earlier. |
+    | **Choose a backup policy** | Select **(new) DailyPolicy**, which is a daily backup at 12:00 PM UTC, and a retention range of 180 days. |
 
     ![Screenshot showing the backup options](../media/4-portal-azure-backup.png)
+
+1. Select **Enable Backup**.
 
 1. After the deployments completes, select **NW-RHEL01** from the list of virtual machines.
 

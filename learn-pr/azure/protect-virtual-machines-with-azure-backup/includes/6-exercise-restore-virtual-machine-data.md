@@ -1,4 +1,4 @@
-A few days after your first Azure virtual machine backup was completed, the server has had issues and it needs to be restored from a backup. You want to restore the virtual machine's disk and attach it to the problematic live server, and then track the restore to ensure that it has completed successfully.
+A few days after your first Azure virtual machine backup was completed, the server had issues and it needs to be restored from a backup. You want to restore the virtual machine's disk and attach it to the problematic live server, and then track the restore to ensure that it has completed successfully.
 
 In this exercise, you'll see how to restore a successful backup to replace a VM that has become corrupted, and monitor its progress.
 
@@ -14,12 +14,15 @@ In this exercise, you'll see how to restore a successful backup to replace a VM 
 
 1. Select **+ Add**, and then use the following information to create a storage account:
 
-    - **Resource Group** - select **vmbackups**.
-    - **Storage account name** - enter a unique name like **restorestagingYYYYMMDD**, where YYYYMMDD is replaced with today's date.
-    - **Location** - select **(US) West US 2**.
-    - Select **Review + create**.
+    | | |
+    |-|-|
+    | **Resource Group** | Select **vmbackups**. |
+    | **Storage account name** | enter a unique name like **restorestagingYYYYMMDD**, where YYYYMMDD is replaced with today's date. |
+    | **Location** | select **(US) West US 2**. |
 
     ![Specify storage account options](../media/6-specify-storage-account-options.png)
+
+1. Select **Review + create**.
 
 1. On the **Create storage account** page, select **Create**.
 
@@ -61,14 +64,16 @@ The Recovery Services vaults are accessible at the subscription level. However, 
 
     ![Screenshot showing selecting a restore point](../media/6-restore-point.png)
 
-1. In the **Restore Configuration** window, use the following information to configure the restore:
+1. In the **Restore Configuration** window, select **Replace Existing** and use the following information to configure the restore:
 
-    - Select **Replace Existing**.
-    - **Restore Type** - select **Replace Disk(s)**, this is the restore point that will be used to replace the existing VM's disks.
-    - **Staging Location** - select the storage account you created previously.
-    - Select **OK**.
+    | | |
+    |-|-|
+    | **Restore Type** | Select **Replace Disk(s)**, this is the restore point that will be used to replace the existing VM's disks. |
+    | **Staging Location** | select the storage account you created previously. |
 
     ![Screenshot showing the restore configuration options](../media/6-restore-configuration.png)
+
+1. Select **OK**.
 
 1. On the confirmation screen, select **Restore**.
 

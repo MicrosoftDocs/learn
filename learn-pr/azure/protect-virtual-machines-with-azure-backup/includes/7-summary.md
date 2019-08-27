@@ -6,7 +6,9 @@ You can now use Azure Backup to protect your environment against data loss or di
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
-## More information
+## Learn more
+
+For more information on Azure Backup, visit the following articles.
 
 - [Latest Azure Backup pricing and availability](https://azure.microsoft.com/pricing/details/backup)
 - [Documentation for the Azure Backup service](https://docs.microsoft.com/azure/backup/)
