@@ -5,7 +5,6 @@ As your organization moves forward in your cloud adoption journey, proper planni
 In this stage, you focus on two main actions:
 
 - **Rationalize your digital estate:** Understand the organization's current digital estate to maximize return and minimize risks by running a Workload Assessment.
-
 - **Create your cloud adoption plan:** Develop a plan where prioritized workloads are defined and aligned with business outcomes.
 
 ## Rationalize your digital estate

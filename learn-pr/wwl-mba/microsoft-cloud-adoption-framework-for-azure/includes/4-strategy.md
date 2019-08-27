@@ -1,4 +1,4 @@
-﻿In the last unit, we identified common *motivation triggers* for moving to the cloud. Now, let’s explore how to define your *business strategy* to respond to those triggers. A strong business strategy helps you to stay focused on your path toward digital transformation and realize business value more quickly.
+﻿In the last unit, we identified common motivation triggers for moving to the cloud. Now, let’s explore how to define your business strategy to respond to those triggers. A strong business strategy helps you to stay focused on your path toward digital transformation and realize business value more quickly.
 
 When you define your cloud business strategy, you should consider business impact, turnaround time, global reach, performance, and more. Here are key areas you need to focus on:
 
@@ -102,7 +102,6 @@ Here are the key points from this unit:
     - Define your business justification by identifying business value opportunities.
     - Select the right technology.
     - Establish clear business outcomes to drive transparency and engagement.
-
 - Some common business justifications for cloud adoption include cost, scale, productivity, and reliability.
 - Financial planning for cloud adoption requires organizations to decide whether to expand on-premises capabilities or move certain applications and functions off-premises to cloud-delivered services.
 - Microsoft provides tools to support you in your financial planning: 
