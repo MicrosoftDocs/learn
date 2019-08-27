@@ -27,8 +27,10 @@ products:
 - azure-active-directory
 units:
 - learn.azure.assign-management-access-with-azure-rbac.introduction
-- learn.azure.assign-management-access-with-azure-rbac.elevate-your-access-to-user-access-admin
-- learn.azure.assign-management-access-with-azure-rbac.identify-appropriate-role-to-assign
+- learn.azure.assign-management-access-with-azure-rbac.elevate-your-access-user-access-admin
+- learn.azure.assign-management-access-with-azure-rbac.3-knowledge-check
+- learn.azure.assign-management-access-with-azure-rbac.identify-appropriate-role-assign
+- learn.azure.assign-management-access-with-azure-rbac.5-knowledge-check
 - learn.azure.assign-management-access-with-azure-rbac.exercise-elevate-permissions
 - learn.azure.assign-management-access-with-azure-rbac.summary
 badge:
