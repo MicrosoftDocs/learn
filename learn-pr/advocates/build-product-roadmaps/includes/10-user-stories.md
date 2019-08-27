@@ -21,12 +21,13 @@ A good user story contains:
 
 Let’s look at an example story for our recommendation engine.
 
-> Story: Build a content-based recommendation algorithm. 
-> Priority: 1
-> * As a customer, I want to see recommendations based on my prior purchases, so I can find the best items to buy.
-> * etc...
-> Test: The algorithm returns three content-based recommendations for a customer’s user ID.
-> Estimate: 3 days.
+* Summary: Build a content-based recommendation algorithm. 
+* Priority: 1
+* Stories
+  * As a customer, I want to see recommendations based on my prior purchases, so I can find the best items to buy.
+  * etc. ...
+* Test: The algorithm returns three content-based recommendations for a customer’s user ID.
+* Estimate: 3 days.
 
 ## Subject
 
