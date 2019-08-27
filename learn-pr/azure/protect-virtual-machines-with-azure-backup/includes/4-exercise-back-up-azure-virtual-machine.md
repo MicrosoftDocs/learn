@@ -2,7 +2,7 @@ Your company is running a combination of Windows and Linux workloads, and you've
 
 Azure Backup can be quickly enabled for virtual machines in Azure. You can enable Azure Backup from the portal, the Azure CLI, or with PowerShell commands.
 
-In this exercise, you'll create a virtual machine, setup, and then start an Azure Backup.
+In this exercise, you'll create a virtual machine, setup a backup, and start a backup.
 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to back up virtual machines with Azure Backup.
@@ -35,7 +35,7 @@ In this exercise, you'll create a virtual machine, setup, and then start an Azur
 
 ### Create a Windows Virtual Machine using Azure CLI
 
-Create the **NW-APP01** virtual machine by using the following command.
+Create the **NW-APP01** virtual machine by using the following command. Replace `<password>` with a password of your choice.
 
 ```azurecli
 az vm create \
@@ -46,8 +46,8 @@ az vm create \
     --subnet NorthwindInternal1 \
     --image Win2016Datacenter \
     --admin-username admin123 \
-    --admin-password Password123456 \
-    --no-wait
+    --no-wait \
+    --admin-password <password>
 ```
 
 ### Create a Linux virtual machine using Azure CLI
