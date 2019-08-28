@@ -8,7 +8,6 @@ metadata:
   ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
- #ms.learn-contact: jediet
 title: Create a Windows virtual machine in Azure
 summary: Azure virtual machines (VMs) enable you to create dedicated compute resources in minutes that can be used just like a physical desktop or server machine.
 abstract:  |
