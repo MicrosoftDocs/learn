@@ -4,7 +4,7 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 09/24/2018
-  author: patridge 
+  author: patridge
   ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -14,10 +14,9 @@ durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
-
   - content: "Suppose you work at a startup with limited funding. Why might you prefer Azure data storage over an on-premises solution?"
     choices:
-    - content: "To ensure you run on a specific brand of hardware which will let you to form a marketing partnership with that hardware vendor." 
+    - content: "To ensure you run on a specific brand of hardware which will let you to form a marketing partnership with that hardware vendor."
       isCorrect: false
       explanation: "There are no large, up-front capital expenditures (CapEx) with Azure. You pay monthly for only the services you use (OpEx)."
     - content: "The Azure pay-as-you-go billing model lets you avoid buying expensive hardware."
@@ -26,13 +25,12 @@ quiz:
     - content: "To get exact control over the location of your data store."
       isCorrect: false
       explanation: "There are no large, up-front capital expenditures (CapEx) with Azure. You pay monthly for only the services you use (OpEx)."
-
   - content: "Which of the following situations would yield the most benefits from relocating an on-premises data store to Azure?"
     choices:
     - content: "Unpredictable storage demand that increases and decreases multiple times throughout the year."
       isCorrect: true
       explanation: "Azure data storage is flexible. You can quickly and easily add or remove capacity. You can increase performance to handle spikes in load or decrease performance to reduce costs. In all cases, you pay for only what you use."
-    - content: "Long-term, steady growth in storage demand." 
+    - content: "Long-term, steady growth in storage demand."
       isCorrect: false
       explanation: "Azure data storage is flexible. You can quickly and easily add or remove capacity. You can increase performance to handle spikes in load or decrease performance to reduce costs. In all cases, you pay for only what you use."
     - content: "Consistent, unchanging storage demand."
