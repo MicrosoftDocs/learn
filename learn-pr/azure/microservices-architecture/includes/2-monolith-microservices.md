@@ -2,17 +2,17 @@ Fabrikam has integrated their new drone service into their existing application,
 
 ## What is a monolithic architecture?
 
-A monolithic architecture is an architecture where all components for an application are co-located within a single unit. This unit is typically constrained within a single runtime instance of the application. Traditional applications often consist of a web interface, a services layer, and a data layer. In a monolithic architecture, these are combined on an instance of the application.
+A monolithic architecture is an architecture where all components for an application are colocated within a single unit. This unit is typically constrained within a single runtime instance of the application. Traditional applications often consist of a web interface, a services layer, and a data layer. In a monolithic architecture, these are combined on an instance of the application.
 
 ![Logical diagram of a monolithic architecture](../media/2-monolith.svg)
 
-Monolithic architecture are often suitable solutions for small applications, but can become unwieldy as the application grows. What was originally a small application, can quickly become a complex system that is difficult to scale, difficult to deploy to, and difficult to innovate on.
+Monolithic architectures are often suitable solutions for small applications, but can become unwieldy as the application grows. What was originally a small application, can quickly become a complex system that is difficult to scale, difficult to deploy to, and difficult to innovate on.
 
 Because the all services are contained within a single unit, it brings challenges especially as their business, and subsequent system load, grows. Some of these challenges are:
 
 - Difficult to scale services independently
 - Complex to develop and manage deployments as the codebase grows, slowing releases and new feature implementation
-- Tied to a single technology stack, limiting innovation in new platforms and SDK's
+- Tied to a single technology stack, limiting innovation in new platforms and SDKs
 - Data schema updates can be increasingly difficult
 
 These challenges can be addressed by looking at alternative architectures, such as a microservices architecture.
@@ -25,9 +25,9 @@ A microservices architecture consists of services that are small, independent, a
 
 A microservice is small enough that a single small team of developers can write and maintain it. Because services can be deployed independently, a team can update an existing service without rebuilding and redeploying the entire application.
 
-Each service is typically responsible for it's own data. It's data structure is isolated, so that upgrades or changes to schema aren't dependant on other services. Requests for data typically is handled through API's, and provide a well-defined and consistent access model, hiding internal implementation details from service consumers.
+Each service is typically responsible for its own data. Its data structure is isolated, so that upgrades or changes to schema aren't dependent on other services. Requests for data typically are handled through APIs, and provide a well-defined and consistent access model, hiding internal implementation details from service consumers.
 
-Because each service is independent, they can leverage different technology stacks, frameworks, and SDK's. It's common to see services rely on REST calls for service-to-service communication using well-defined APIs instead of RPC or other custom communication methods.
+Because each service is independent, they can leverage different technology stacks, frameworks, and SDKs. It's common to see services rely on REST calls for service-to-service communication using well-defined APIs instead of RPC or other custom communication methods.
 
 Microservice architectures are technology agnostic, but you will often see containers or serverless technologies used for their implementation. Continuous deployment and continuous integration (CI/CD) is frequently used to increase the speed and quality of development activities.
 
@@ -48,11 +48,11 @@ Because microservices are deployed independently, it's easier to manage bug fixe
 
 #### Small code, small teams
 
-A microservice should be small enough that a single feature team can build, test, and deploy it. Small code bases are easier to understand. In a large monolithic application, there is a tendency over time for code dependencies to become tangled, so that adding a new feature requires touching code in a lot of places. By not sharing code or data stores, a microservices architecture minimizes dependencies, and that makes it easier to add new features. Small team sizes also promote greater agility. The "two-pizza rule" says that a team should be small enough that two pizzas can feed the team. Obviously that's not an exact metric and depends on team appetites! But the point is that large groups tend be less productive, because communication is slower, management overhead goes up, and agility diminishes.
+A microservice should be small enough that a single feature team can build, test, and deploy it. Small code bases are easier to understand. In a large monolithic application, there is a tendency over time for code dependencies to become tangled, so that adding a new feature requires touching code in many places. By not sharing code or data stores, a microservices architecture minimizes dependencies, and that makes it easier to add new features. Small team sizes also promote greater agility. The "two-pizza rule" says that a team should be small enough that two pizzas can feed the team. Obviously that's not an exact metric and depends on team appetites! But the point is that large groups tend to be less productive, because communication is slower, management overhead goes up, and agility diminishes.
 
 #### Mix of technologies
 
-Teams can pick the technology that best fits their service, using a mix of technology stacks as appropriate. This allows each team to evolve the technologies that support their service independently. Services can use different development languages, cloud services, SDK's, and more, because of this independent. This allows teams to pick the best options for their service, while minimizing any external impact to consumers of the service.
+Teams can pick the technology that best fits their service, using a mix of technology stacks as appropriate. This allows each team to evolve the technologies that support their service independently. Services can use different development languages, cloud services, SDKs, and more, because of this independent. This allows teams to pick the best options for their service, while minimizing any external impact to consumers of the service.
 
 #### Resiliency
 
@@ -64,7 +64,7 @@ A microservices architecture allows each microservice to be scaled independently
 
 #### Data isolation
 
-It improves the ability to perform data schema updates, because only a single microservice is affected. In a monolithic application, schema updates can become very challenging, because different parts of the application may all touch the same data, making any alterations to the schema risky. You can update a schema, but keep your API surface intact so that service consumers have the same experience, regardless of the underlying data architecture.
+It improves the ability to perform data schema updates, because only a single microservice is affected. In a monolithic application, schema updates can become challenging, because different parts of the application may all touch the same data, making any alterations to the schema risky. You can update a schema, but keep your API surface intact so that service consumers have the same experience, regardless of the underlying data architecture.
 
 ### Potential challenges of a microservices architecture
 
@@ -105,11 +105,11 @@ To be successful with microservices requires a mature DevOps culture. Correlated
 
 #### Versioning
 
-Updates to a service must not break services that depend on it. Multiple services could be updated at any given time, so without careful design, you might have problems with backward or forward compatibility. Services that lag on adopting new API versions can increase the resources and maintenance required for older API's.
+Updates to a service must not break services that depend on it. Multiple services could be updated at any given time, so without careful design, you might have problems with backward or forward compatibility. Services that lag on adopting new API versions can increase the resources and maintenance required for older APIs.
 
 #### Skill set
 
-Microservices are highly distributed systems. These distributed systems often require a different skill set to properly develop, manage, and maintain. Carefully evaluate whether the team has the skills and experience to be successful, and allow for the time and planning your teams will need to evolve their abilities.
+Microservices are highly distributed systems. These distributed systems often require a different skill set to properly develop, manage, and maintain. Carefully evaluate whether the team has the skills and experience to be successful. Allow for the time and planning your teams will need to evolve their abilities.
 
 ## When should you choose a microservices architecture?
 

@@ -72,7 +72,7 @@ Let's start by deploying the application. First, we'll need to great the Azure r
 
 ## Perform load test against application
 
-Now let's test out the performance of the application in it's monolithic architecture.
+Now let's test out the performance of the application in its monolithic architecture.
 
 1. On the home page for your deployed application, click the **Send Requests** button. This simulates the submission of 100 requests through the application.
 
