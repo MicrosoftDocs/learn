@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
   ROBOTS: NOINDEX
-title: Compile and run the Razor Pages project
+title: When and why to use Razor Pages
 durationInMinutes: 8
 content: |
   [!include[](includes/2-why-when-use-razor-pages.md)]
