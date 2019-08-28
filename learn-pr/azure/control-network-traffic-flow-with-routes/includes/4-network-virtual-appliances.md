@@ -10,7 +10,7 @@ Network virtual appliances (NVA) are virtual machines, normally running Linux, w
 
 An NVA often includes various protection layers, like a firewall, WAN optimizer, application delivery controllers, routers, load balancers, proxies, SD-WAN edge, and more.
 
-![Visualization of a network architecture with a network virtual appliance](../media/4-dmz-nvas.svg)
+![Visualization of a network architecture with a network virtual appliance](../media/4-nva.svg)
 
 Firewall appliances can be deployed into a virtual network in different configurations. You can put a firewall appliance in a DMZ subnet in the virtual network, or if you want more control of security, you can implement a micro-segmentation approach.
 

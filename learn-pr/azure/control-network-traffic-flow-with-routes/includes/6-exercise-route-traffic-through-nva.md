@@ -110,7 +110,7 @@ The final step is to use the Linux `traceroute` utility to show how traffic is b
 
     Notice that the first hop is to 10.0.2.4. This address is the private IP address for *nva*. The second hop is to the address of *private* (10.0.1.4). Remember that in the first exercise, you added this route to the route table and linked the table to the *publicsubnet*  subnet. So all traffic from *public* to *private* is being routed through network virtual appliance.
 
-   ![Route from public to private](../media/6-public-to-private-routing.svg)
+   ![Route from public to private](../media/6-public-private-route.svg)
 
 1. Run the following command to trace the route from *private* to *public*. Enter the password for the *azureuser* account when prompted.
 
@@ -128,6 +128,6 @@ The final step is to use the Linux `traceroute` utility to show how traffic is b
 
     The *private* virtual machine is using default routes, and traffic is being routed directly between the subnets.
 
-   ![Route from private to public](../media/6-private-to-public-routing.svg)
+   ![Route from private to public](../media/6-private-public-route.svg)
 
 You've now configured routing between subnets to direct traffic from the public Internet through the *dmzsubnet* subnet before it reaches the private subnet. You've added a virtual machine acting as an NVA in the *dmzsubnet* subnet. You can implement logic in this NVA to detect potentially malicious requests, and block them before they reach their intended targets.

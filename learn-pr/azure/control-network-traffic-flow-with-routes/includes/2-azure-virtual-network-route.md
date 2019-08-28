@@ -40,13 +40,13 @@ Both of these capabilities allow virtual networks within Azure to be connected t
 
 The diagram below shows two virtual networks with peering configured, but with user-defined routes configured to route traffic through an NVA or a VPN Gateway.
 
-![Virtual network peering with User-defined routes](../media/2-vnet-peering-udrs.svg)
+![Virtual network peering with User-defined routes](../media/2-virtual-network-peering-udrs.svg)
 
 ### Virtual Network Gateway
   
 Use a virtual network gateway to send encrypted traffic between Azure and on-premises over the internet, and to send encrypted traffic between Azure networks. A virtual network gateway contains routing tables and gateway services.
 
-![The structure of a Virtual Network Gateway](../media/2-vnet-gateway.svg)
+![The structure of a Virtual Network Gateway](../media/2-virtual-network-gateway.svg)
 
 ### VirtualNetworkServiceEndpoint
 
