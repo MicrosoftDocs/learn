@@ -32,15 +32,15 @@ quiz:
     choices: 
     - content: Resource group 
       isCorrect: false
-      explanation: A function app is a way to organize and collectively manage your functions. A function app is comprised of one or more individual functions that are managed together by Azure App Service. All the functions in a function app share the same pricing plan, continuous deployment and runtime version. 
+      explanation: A function app is a way to organize and collectively manage your functions. A function app is comprised of one or more individual functions that are managed together by Azure App Service. All the functions in a function app share the same pricing plan, continuous deployment, and runtime version. 
     - content: Function app
       isCorrect: true
-      explanation: A function app is a way to organize and collectively manage your functions. A function app is comprised of one or more individual functions that are managed together by Azure App Service. All the functions in a function app share the same pricing plan, continuous deployment and runtime version. 
+      explanation: A function app is a way to organize and collectively manage your functions. A function app is comprised of one or more individual functions that are managed together by Azure App Service. All the functions in a function app share the same pricing plan, continuous deployment, and runtime version. 
     - content: Function collection
       isCorrect: false
       explanation: A function app is a way to organize and collectively manage your functions. A function app is comprised of one or more individual functions that are managed together by Azure App Service. All the functions in a function app share the same pricing plan, continuous deployment and runtime version. 
 
-  - content: We secured our function against unknown HTTP callers by requiring a function-specific API key be passed with each call. Which of the following is the name header in the HTTP requests that needs to contain this key?
+  - content: We secured our function against unknown HTTP callers by requiring a function-specific API key be passed with each call. Which of the following fields is the name header in the HTTP requests that needs to contain this key?
     choices: 
     - content: "x-functions-key"
       isCorrect: true
