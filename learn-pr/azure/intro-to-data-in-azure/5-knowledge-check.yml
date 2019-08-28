@@ -36,3 +36,14 @@ quiz:
     - content: "Consistent, unchanging storage demand."
       isCorrect: false
       explanation: "Azure data storage is flexible. You can quickly and easily add or remove capacity. You can increase performance to handle spikes in load or decrease performance to reduce costs. In all cases, you pay for only what you use."
+  - content: "A newly released mobile app using Azure data storage has just been mentioned by a celebrity on social media, seeing a huge spike in user volume. To meet the unexpected new user demand, what feature of pay-as-you-go storage will be most beneficial?"
+    choices:
+    - content: "The ability to provision and deploy new infrastructure quickly"
+      isCorrect: true
+      explanation: "As the user demand increases, the agility to deploy new servers or services as needed can help scale to meet the increased user load."
+    - content: "The ability to predict the service costs in advance"
+      isCorrect: false
+      explanation: "With pay-as-you-go service, costs are based on usage. In this case of an unexpected spike in user demand, the costs will not be easily predicted, especially if you need to add new infrastructure to meet the demand."
+    - content: "The ability to meet compliance requirements for data storage"
+      isCorrect: false
+      explanation: "While meeting any compliance obligations is important, it will not directly help you meet a sudden increase in user demand. Adding additional infrastructure quickly will be much more helpful."
