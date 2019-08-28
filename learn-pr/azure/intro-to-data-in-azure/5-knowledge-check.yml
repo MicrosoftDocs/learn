@@ -16,7 +16,7 @@ quiz:
   questions:
   - content: "Suppose you work at a startup with limited funding. Why might you prefer Azure data storage over an on-premises solution?"
     choices:
-    - content: "To ensure you run on a specific brand of hardware which will let you to form a marketing partnership with that hardware vendor."
+    - content: "To ensure you run on a specific brand of hardware, which will let you form a marketing partnership with that hardware vendor."
       isCorrect: false
       explanation: "There are no large, up-front capital expenditures (CapEx) with Azure. You pay monthly for only the services you use (OpEx)."
     - content: "The Azure pay-as-you-go billing model lets you avoid buying expensive hardware."

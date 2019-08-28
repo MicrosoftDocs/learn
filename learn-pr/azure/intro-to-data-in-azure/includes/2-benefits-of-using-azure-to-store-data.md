@@ -1,4 +1,4 @@
-To address the storage problem for your online learning portal, you're considering storing your data in the cloud. But you're concerned about security, backup, and disaster recovery. On top of that, you're worried about how difficult it could be to manage cloud-hosted data. So, here's what you need to know.
+To address the storage problem for your online learning portal, you're considering storing your data in the cloud. But you're concerned about security, backup, and disaster recovery. On top of those issues, you're worried about how difficult it could be to manage cloud-hosted data. So, here's what you need to know.
 
 The Azure data storage options are cloud-based, secure, and scalable. Its features address the key challenges of cloud storage and provide you with a reliable and durable storage solution.
 
@@ -15,7 +15,7 @@ Here are some of the important benefits of Azure data storage:
 - **Support for data analytics**: supports performing analytics on your data consumption.
 - **Encryption capabilities**: data is encrypted to make it highly secure; you also have tight control over who can access the data.
 - **Multiple data types**: Azure can store almost any type of data you need. It can handle video files, text files, and even large binary files like virtual hard disks. It also has many options for your relational and NoSQL data.
-- **Data storage in virtual disks**: Azure also has the capability of storing up to 8 TB of data in its virtual disks. This is a significant capability when you're storing heavy data such as videos and simulations.
+- **Data storage in virtual disks**: Azure also has the capability of storing up to 8 TB of data in its virtual disks. This capability is significant when you're storing heavy data such as videos and simulations.
 - **Storage tiers**: storage tiers to prioritize access to data based on frequently used versus rarely used information.
 
 ## Types of data
@@ -26,4 +26,4 @@ There are three primary types of data that Azure Storage is designed to hold.
 
 1. **Semi-structured data**. Semi-structured data doesn't fit neatly into tables, rows, and columns. Instead, semi-structured data uses _tags_ or _keys_ that organize and provide a hierarchy for the data. Semi-structured data is also referred to as *non-relational* or *NoSQL* data.
 
-1. **Unstructured data**. Unstructured data encompasses data that has no designated structure to it. This also means that there are no restrictions on the kinds of data it can hold. For example, a blob can hold a PDF document, a JPG image, a JSON file, video content, etc. As such, unstructured data is becoming more prominent as businesses try to tap into new data sources.
+1. **Unstructured data**. Unstructured data encompasses data that has no designated structure to it. This lack of structure also means that there are no restrictions on the kinds of data it can hold. For example, a blob can hold a PDF document, a JPG image, a JSON file, video content, etc. As such, unstructured data is becoming more prominent as businesses try to tap into new data sources.

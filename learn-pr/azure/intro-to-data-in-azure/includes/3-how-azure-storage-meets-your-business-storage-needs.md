@@ -140,9 +140,9 @@ Azure offers three storage tiers for blob object storage:
 
 1. **Hot storage tier**: optimized for storing data that is accessed frequently.
 
-1. **Cool storage tier**: optimized for data that is infrequently accessed and stored for at least 30 days.
+1. **Cool storage tier**: optimized for data that are infrequently accessed and stored for at least 30 days.
 
-1. **Archive storage tier**: for data that is rarely accessed and stored for at least 180 days with flexible latency requirements.
+1. **Archive storage tier**: for data that are rarely accessed and stored for at least 180 days with flexible latency requirements.
 
 :::column-end:::
 :::row-end:::
