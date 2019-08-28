@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
-uid: learn.control-network-traffic-flow-with-routes.6-exercise-routing-traffic-through-nva
+uid: learn.control-network-traffic-flow-with-routes.6-exercise-route-traffic-through-nva
 metadata:
-  title: Exercise - Routing traffic through the NVA
+  title: Exercise - Route traffic through the NVA
   description: Route traffic through the NVA
   ms.date: 08/28/2019
   author: jboeshart
@@ -9,9 +9,9 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Exercise - Routing traffic through the NVA
+title: Exercise - Route traffic through the NVA
 durationInMinutes: 10
 interactive: bash
 azureSandbox: true
 content: |
-  [!include[](includes/6-exercise-routing-traffic-through-nva.md)]
+  [!include[](includes/6-exercise-route-traffic-through-nva.md)]

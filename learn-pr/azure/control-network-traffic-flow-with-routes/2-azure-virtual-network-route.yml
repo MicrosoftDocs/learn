@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.control-network-traffic-flow-with-routes.2-routing-capabilities-of-azure-vnets
+uid: learn.control-network-traffic-flow-with-routes.2-azure-virtual-network-route
 metadata:
   title: Identify routing capabilities of an Azure Virtual Network
   description: Identify routing capabilities of an Azure Virtual Network
@@ -12,7 +12,7 @@ metadata:
 title: Identify routing capabilities of an Azure Virtual Network
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-routing-capabilities-of-azure-vnets.md)]
+  [!include[](includes/2-azure-virtual-network-route.md)]
 quiz:
   title: Check your knowledge
   questions:
