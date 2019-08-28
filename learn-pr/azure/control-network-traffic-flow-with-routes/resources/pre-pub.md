@@ -1,4 +1,4 @@
-Pre-publication checklist
+# Pre-publication checklist
 
 Content/Media/assets
 
