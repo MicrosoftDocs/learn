@@ -1,37 +1,39 @@
 Azure Backup is a suite of components that make it easy to back up machines and workloads in Azure or on-premises. Azure Backup also enables workloads like SQL Server or SharePoint to have additional backup and restore options.
 
-To address your company's business continuity and disaster recovery (BCDR) plan, there must be a full backup and restore capability for all of your high risk servers. You've been asked to enable and test back up and restore functionality for these critical Windows and Linux assets.
+To address your company's business continuity and disaster recovery (BCDR) plan, there must be a full backup and restore capability for all of your high-risk servers. You've been asked to enable and test backup and restore functionality for these critical Windows and Linux assets.
 
 In this unit, you'll look at how Azure Backup works, and study some of the supported use cases for Azure Backup.
 
 ## What is Azure Backup?
 
-Azure Backup provides cloud-based backup and restore services for both Azure and on-premises virtual machines. Data, workloads, and machine state can all be backed up automatically at a granular level. Azure Backup offers integration with Microsoft-specific applications such as SQL Server, SharePoint, and Exchange. In contrast to traditional backup solutions that can take considerable effort to set up, Azure Backup is easily managed through the Azure portal, and backups are stored in an Azure Recovery Services vault after you set up the appropriate component on the target machine.
+Azure Backup provides cloud-based backup and restore services for both Azure and on-premises virtual machines. Data, workloads, and machine state can all be backed up automatically at a granular level. Azure Backup offers integration with Microsoft-specific applications such as SQL Server, SharePoint, and Exchange. 
+
+In contrast to traditional backup solutions that can take considerable effort to set up, Azure Backup is easily managed through the Azure portal. Backups are stored in an Azure Recovery Services vault after you set up the appropriate component on the target machine.
 
 ### Azure Backup versus Azure Site Recovery
 
-Both Azure Backup and Azure Site Recovery are services that provide system recovery, but they have their differences.
+Azure Backup and Azure Site Recovery are services that provide system recovery, but they have their differences:
 
-- **Azure Site Recovery** - replicates virtual machine workloads to secondary locations for failover if a disaster that affects a whole site.
-- **Azure Backup** - recovers data more granularly. For example, virtual machine disks, or files and folders that have become corrupted or accidentally deleted by users.
+- **Azure Site Recovery**: Replicates virtual machine workloads to secondary locations for failover if a disaster affects a whole site.
+- **Azure Backup**: Recovers data more granularly. For example, it recovers virtual machine disks, or files and folders that became corrupted or were accidentally deleted by users.
 
 ### Why use Azure Backup?
 
-Traditional backup solutions, such as disk and tape, do not offer the highest level of integration with cloud-based solutions. Azure Backup has several benefits over more traditional backup solutions:
+Traditional backup solutions, such as disk and tape, don't offer the highest level of integration with cloud-based solutions. Azure Backup has several benefits over more traditional backup solutions:
 
-- **Automatic storage management** - The ability to maintain a fully Azure-based backup solution, or a heterogeneous solution where data is backed up and stored both on-premises and in Azure. Using on-premises storage devices are free, and storing within Azure uses a pay-as-you-go model.
+- **Automatic storage management**: The ability to maintain a fully Azure-based backup solution, or a heterogeneous solution where data is backed up and stored both on-premises and in Azure. Using on-premises storage devices are free, and storing within Azure uses a pay-as-you-go model.
 
-- **High availability** - Being cloud-based means that the backup service is redundant and highly available by nature. The service doesn't need to be maintained, upgraded, or patched as a traditional solution would be.
+- **High availability**: Because the service is cloud based, it's redundant and highly available by nature. The service doesn't need to be maintained, upgraded, or patched as a traditional solution would be.
 
-- **Unlimited data transfer** - Allows unlimited inbound and outbound backup traffic to your Azure subscription.
+- **Unlimited data transfer**: Allows unlimited inbound and outbound backup traffic to your Azure subscription.
 
-- **Data security** - Using AES256 bit encryption for on-premises virtual machines and Storage Service Encryption (SSE) for Azure virtual machines. Data is secured at rest on the Azure platform, and then decrypted when accessed by an authorized person or service.
+- **Data security**: Using AES256 bit encryption for on-premises virtual machines and Storage Service Encryption (SSE) for Azure virtual machines. Data is secured at rest on the Azure platform, and then decrypted when accessed by an authorized person or service.
 
-- **No limit retention times** -Long and short-term options are available to keep your data depending on your data retention policy.
+- **No limit retention times**: Long and short-term options are available to keep your data depending on your data retention policy.
 
-- **Highly available storage** - There are two types of storage for ensuring data is always available:
-  - Locally Redundant (LRS) - replicates data three times within the same region
-  - Geo-redundant storage (GRS) - Replicates data to another region within the geography. This is the default, and it is the most recommended option as it uses LRS in a primary and a secondary region.
+- **Highly available storage**: There are two types of storage for ensuring data is always available:
+  - Locally Redundant (LRS): Replicates data three times within the same region
+  - Geo-redundant storage (GRS): Replicates data to another region within the geography. This is the default, and it is the most recommended option as it uses LRS in a primary and a secondary region.
 
 ### Azure Backup types
 

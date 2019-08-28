@@ -1,22 +1,22 @@
 ### YamlMime:Module
 uid: learn.protect-virtual-machines-with-azure-backup
 metadata:
-  title: Protect your virtual machines with Azure Backup
-  description: Use Azure Backup to protect the data for on-premises servers, virtual machines, virtualized workloads, SQL server, Azure Files and more.
+  title: Protect your virtual machines by using Azure Backup
+  description: Use Azure Backup to help protect the data for on-premises servers, virtual machines, virtualized workloads, SQL Server, Azure Files, and more.
   ms.date: 08/27/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Protect your virtual machines with Azure Backup
-summary: Use Azure Backup to protect the data for on-premises servers, virtual machines, virtualized workloads, SQL server, Azure Files and more.
+title: Protect your virtual machines by using Azure Backup
+summary: Use Azure Backup to help protect the data for on-premises servers, virtual machines, virtualized workloads, SQL Server, Azure Files, and more.
 abstract: | 
   In this module, you'll:
-  - Identify the scenarios for which Azure Backup provides back up and restore capabilities
+  - Identify the scenarios for which Azure Backup provides backup and restore capabilities
   - Back up and restore an Azure virtual machine
 prerequisites: | 
   - Basic knowledge of Azure virtual machines
-  - Basic knowledge of virtual machine disk storage
+  - Basic knowledge of disk storage for virtual machines
 iconUrl: /learn/achievements/protect-virtual-machines-with-azure-backup.svg
 levels:
 - beginner
