@@ -27,7 +27,6 @@ roles:
 - administrator
 products:
 - azure
-- azure-virtual-network
 - azure-virtual-machines
 units:
 - learn.control-network-traffic-flow-with-routes.1-introduction
