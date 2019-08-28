@@ -13,7 +13,7 @@ Domain-driven design is an approach to system design originally introduced by Er
 
 Domain-driven design (DDD) provides a framework that can get you most of the way to a set of well-designed microservices. DDD has two distinct phases, *strategic* and *tactical*. In strategic DDD, you are defining the large-scale structure of the system. Strategic DDD helps to ensure that your architecture remains focused on business capabilities. Tactical DDD provides a set of design patterns that you can use to create the domain model. These patterns include entities, aggregates, and domain services. These tactical patterns will help you to design microservices that are both loosely coupled and cohesive.
 
-![Diagram of the steps for domain-driven design](../media/6-ddd-process.png)
+![Diagram of the steps for domain-driven design](../media/6-ddd-process.svg)
 
 During the strategic phase of DDD, you are mapping out the business domain and defining bounded contexts for your domain models. Tactical DDD is when you define your domain models with more precision. The tactical patterns are applied within a single bounded context. In a microservices architecture, we are particularly interested in the entity and aggregate patterns. Applying these patterns will help us to identify natural boundaries for the services in our application. As a general principle, a microservice should be no smaller than an aggregate, and no larger than a bounded context.
 
@@ -60,7 +60,7 @@ There are several tactical DDD patterns to consider:
 - **Domain and application services** - In DDD terminology, a service is an object that implements some logic without holding any state. Evans distinguishes between domain services, which encapsulate domain logic, and application services, which provide technical functionality, such as user authentication or sending an SMS message. Domain services are often used to model behavior that spans multiple entities.
 - **Domain events** Domain events can be used to notify other parts of the system when something happens. As the name suggests, domain events should mean something within the domain. For example, "a record was inserted into a table" is not a domain event. "A delivery was cancelled" is a domain event. Domain events are especially relevant in a microservices architecture. Because microservices are distributed and don't share data stores, domain events provide a way for microservices to coordinate with each other.
 
-![Diagram of the drone domain model](../media/6-drone-ddd.png)
+![Diagram of the drone domain model](../media/6-drone-ddd.svg)
 
 In their system, the Fabrikam development team identified the following entities.
 
@@ -100,7 +100,7 @@ Now we're ready to go from domain model to application design. Here's an approac
 
 Above all, it's important to be pragmatic, and remember that domain-driven design is an iterative process. When in doubt, start with more coarse-grained microservices. Splitting a microservice into two smaller services is easier than refactoring functionality across several existing microservices.
 
-![Diagram of the microservices](../media/6-drone-delivery.png)
+![Diagram of the microservices](../media/6-drone-delivery.svg)
 
 ## Applying to the drone application
 
