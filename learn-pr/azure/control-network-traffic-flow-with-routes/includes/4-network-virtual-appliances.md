@@ -16,7 +16,7 @@ Firewall appliances can be deployed into a virtual network in different configur
 
 With the micro-segmentation approach you can create dedicated subnets for the firewall, and then deploy web applications and other services in other subnets. All traffic is routed through the firewall and inspected by the NVAs. You enable forwarding on the virtual appliance network interfaces to pass traffic that is accepted on to the appropriate subnet.
 
-Micro-segmentation allows the firewall to inspect all packets both at Layer-4, and in the case of application-aware appliances, Layer-7. When you deploy an NVA to Azure, it acts as a router, forwarding requests between the subnets on the virtual network.
+Micro-segmentation allows the firewall to inspect all packets both at layer 4, and for application-aware appliances, layer 7. When you deploy an NVA to Azure, it acts as a router, forwarding requests between the subnets on the virtual network.
 
 Some NVAs require multiple network interfaces. One network interface is normally dedicated to the management network for the appliance, while additional network interfaces manage and control the traffic processing. Once you’ve deployed the NVA, you may then configure the appliance to route the traffic through the proper interface.
 
