@@ -44,6 +44,6 @@ units:
 - learn.create-razor-pages-aspnet-core.8-deploy-test
 - learn.create-razor-pages-aspnet-core.9-knowledge-check
 - learn.create-razor-pages-aspnet-core.10-summary
-iconUrl: /learn/achievements/create-a-web-ui-with-aspnet-core.svg
+iconUrl: /learn/achievements/aspnetcore/create-a-web-ui-with-aspnet-core.svg
 badge:
   uid: learn.create-razor-pages-aspnet-core.badge
