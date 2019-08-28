@@ -99,7 +99,7 @@ The final step is to use the Linux `traceroute` utility to show how traffic is b
     ssh -t -o StrictHostKeyChecking=no azureuser@$PUBLICIP 'traceroute private --type=icmp; exit'
     ```
 
-    The output should look similar to the following example:
+    If you receive an error stating `bash: traceroute: command not found`, wait a minute and retry the command. The automated installation of `traceroute` can take a minute or two after virtual machine deployment. Once successful, the output should look similar to the following example:
 
     ```Text
     traceroute to private.kzffavtrkpeulburui2lgywxwg.gx.internal.cloudapp.net (10.0.1.4), 64 hops max
