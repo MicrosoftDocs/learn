@@ -1,7 +1,7 @@
 While the Azure portal is an easy method to create a workspace, a more common technique is to create it as part of you tool setup. As an example, we can use the Azure Machine Learning SDK for Python to create a workspace using the Python language.
 
 > [!NOTE]
-> You will need to have Python 3.7 or better installed to complete this exercise.
+> You will need to have Python 3.7 or higher installed to complete this exercise.
 
 ## Verify Python installation
 
