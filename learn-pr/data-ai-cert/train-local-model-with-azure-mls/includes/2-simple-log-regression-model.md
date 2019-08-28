@@ -18,8 +18,6 @@ pip install -U scikit-learn azureml-sdk
 
 This installs several related packages which are useful in processing data in Python.
 
-## End of instructions for running in a local environment
-
 ## Retrieve the MNIST data
 
 Run the following code in a notebook cell to retrieve the MNIST dataset and save it to a local **data** folder.
