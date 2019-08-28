@@ -2,8 +2,8 @@
 uid: learn.microservices-architecture.6-exercise-refactor-microservice
 metadata:
   title: Exercise - Refactor a service within the monolith as a microservice
-  description: TODO
-  ms.date: 04/30/2019
+  description: Exercise - Refactor a service within the monolith as a microservice
+  ms.date: 08/30/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial

@@ -2,8 +2,8 @@
 uid: learn.microservices-architecture.3-exercise-deploy-monolithic-app
 metadata:
   title: Exercise - Deploy a monolithic application on App Service
-  description: TODO
-  ms.date: 04/30/2019
+  description: Exercise - Deploy a monolithic application on App Service
+  ms.date: 08/30/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
