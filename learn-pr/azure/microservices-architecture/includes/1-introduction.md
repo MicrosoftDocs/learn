@@ -4,8 +4,6 @@ Fabrikam, Inc. has recently launched a drone delivery service, to compliment the
 
 To support this new line of business, they have integrated new capabilities into the current system they use to manage their shipping business line, which is based on a monolithic architecture. Their drone business has become popular, and is straining the performance and development of the system. Fabrikam wants to continue to iterate on their system to quickly add new functionality and capabilities, and adjust to their customer's demands. This is driving Fabrikam to evolve their application from a monolithic architecture to a microservices architecture.
 
-<!-- This scenario involves a fairly complicated domain. Some of the business concerns include scheduling drones, tracking packages, managing user accounts, and storing and analyzing historical data. Moreover, Fabrikam wants to get to market quickly and then iterate quickly, adding new functionality and capabilities. The application needs to operate at cloud scale, with a high service level objective (SLO). Fabrikam also expects that different parts of the system will have very different requirements for data storage and querying. All of these considerations lead Fabrikam to choose a microservices architecture for the Drone Delivery application. -->
-
 ## Learning objectives
 
 In this module, you will:
