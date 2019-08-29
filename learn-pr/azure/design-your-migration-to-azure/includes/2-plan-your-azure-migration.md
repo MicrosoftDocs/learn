@@ -42,7 +42,7 @@ Several tools and services are available to help you plan and complete the four 
 
 | Service or tool | Stage | Use |
 |------|-------|-------|
-| [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview)                   | Assess   | Helps you migrate if you're using a VMWare vCenter Server version later than 5.5 and running Windows or Linux on the VMs. |
+| [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview)                   | Assess   | Perform assessment and migration of VMware VMs, Hyper-V VMs, cloud VMs, and physical servers to Azure. |
 | [Service Map](https://docs.microsoft.com/azure/azure-monitor/insights/service-map)           | Assess   | Maps communication between application components on Windows or Linux. Helps you identify dependencies when scoping what to migrate. |
 | [Azure TCO Calculator](https://azure.microsoft.com/pricing/tco/calculator)                   | Assess   | Estimates your monthly running costs in Azure. |
 | [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) | Migrate  | Moves VMs from on-premises to Azure. |
