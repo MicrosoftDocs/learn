@@ -1,8 +1,8 @@
-Companies who have a business continuity and disaster recovery (BCDR) plan will typically schedule test runs to ensure the business can successfully recover from disasters. With your backups created for your VMs, you can now use them to test recovering from a VM failure.
+Companies that have a business continuity and disaster recovery (BCDR) plan will typically schedule test runs to ensure that the business can successfully recover from disasters. With your backups created for your VMs, you can now use them to test recovering from a VM failure.
 
-After doing a successful backup of your servers, you would now like to explore the options available to you to restore them as part of your BCDR testing.
+Now that you have successfully backed up your servers, you want to explore the options available for restoring them as part of your BCDR testing.
 
-In this unit, you'll learn about the different options for restoring an Azure VM from a previous backup.
+In this unit, you'll learn about the options for restoring an Azure VM from a previous backup.
 
 ## Restore options
 
