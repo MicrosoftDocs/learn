@@ -2,14 +2,14 @@
 uid: learn.microservices-architecture
 metadata:
   title: Decompose a monolithic application into a microservices architecture
-  description: Improve development agility, deployment, fault tolerance, and scalability by moderninzing your application with a microservices architecture.
+  description: Improve development agility, deployment, fault tolerance, and scalability by modernizing your application with a microservices architecture.
   ms.date: 08/30/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Decompose a monolithic application into a microservices architecture
-summary: Improve development agility, deployment, fault tolerance, and scalability by moderninzing your application with a microservices architecture.
+summary: Improve development agility, deployment, fault tolerance, and scalability by modernizing your application with a microservices architecture.
 abstract: | 
   In this module, you will:
   - Identify the properties and benefits of a microservices application
