@@ -8,9 +8,9 @@ One of the primary benefits to a microservices architecture comes in the increas
 
 We can see this in the drone delivery system. In the monolithic architecture, all services are contained within a single instance of the application. They expose an API interface to customers to submit and manage delivery requests. As customer requests increase, load on the system increases, requiring more resources to be allocated to the system to avoid negatively impacting end-user experience.
 
-On a monolithic architecture, scaling this service individually would also require the resources for the other services, since they are contained within each application instance. This is inefficient, as load for the other services may be minimal, not requiring the additional resource utilization.
+In a monolithic architecture, scaling this service individually would also require scaling the resources for the other services, since they are contained within each application instance. This is inefficient, as load for the other services may be minimal, not requiring the additional resource utilization.
 
-On a microservices architecture, since each service is separate, we could scale the API independently of the other services. This increases our efficiency, as we don't need to consume the resources of unnecessary services.
+In a microservices architecture, since each service is separate, we could scale the API independently of the other services. This increases our efficiency, as we don't need to consume the resources of unnecessary services.
 
 ## Challenges with the Drone Delivery monolithic architecture
 

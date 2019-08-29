@@ -8,7 +8,7 @@ A monolithic architecture is an architecture where all components for an applica
 
 Monolithic architectures are often suitable solutions for small applications, but can become unwieldy as the application grows. What was originally a small application, can quickly become a complex system that is difficult to scale, difficult to deploy to, and difficult to innovate on.
 
-Because the all services are contained within a single unit, it brings challenges especially as their business, and subsequent system load, grows. Some of these challenges are:
+Because all services are contained within a single unit, it brings challenges especially as their business, and subsequent system load, grows. Some of these challenges are:
 
 - Difficult to scale services independently
 - Complex to develop and manage deployments as the codebase grows, slowing releases and new feature implementation
