@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.control-network-traffic-flow-with-routes.2-azure-virtual-network-route
+metadata:
+  title: Identify routing capabilities of an Azure Virtual Network
+  description: Identify routing capabilities of an Azure Virtual Network
+  ms.date: 08/28/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Identify routing capabilities of an Azure Virtual Network
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-azure-virtual-network-route.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Why would you use a custom route in a virtual network?"
+      choices:
+      - content: "To load balance the traffic in your virtual network"
+        isCorrect: false
+        explanation: "This answer is incorrect. A custom route isn't used to load balance traffic. Load balancing is for directing traffic to one or more Azure virtual machines"
+      - content: "So that you can connect to your Azure Virtual Machines using RDP or SSH"
+        isCorrect: false
+        explanation: "This answer is incorrect. To control RDP or SSH access to Azure virtual machines, you would use network security groups, not custom routes."
+      - content: "To control the flow of traffic in your Azure virtual network"
+        isCorrect: true
+        explanation: "This is the correct answer. Custom routes are used to override the default Azure routing so that you can route traffic through a network virtual appliance (NVA)"
+      - content: "So that you can connect to resources in another virtual network hosted in Azure"
+        isCorrect: false
+        explanation: "This answer is incorrect. Custom routes aren't used control access to resources in other virtual networks"
+    - content: "Why might you use virtual network peering?"
+      choices:
+      - content: "To connect virtual networks together in the same region"
+        isCorrect: true
+        explanation: "This is the correct answer. Virtual network peering is used to connect two or more virtual networks together. Once peered, the networks become one and resources across virtual networks can communicate with one another. "
+      - content: "To enable the functionality to assign public IP addresses to all your resources across multiple virtual networks"
+        isCorrect: false
+        explanation: "This answer is incorrect. Virtual network peering has no link to assigning public IPs to your resources. virtual network peering is used for connecting networks and has no bearing on public IP address assignment."
+      - content: "So that you can enable load balancers to control traffic flow across your virtual networks"
+        isCorrect: false
+        explanation: "This answer is incorrect. Load balancers aren't required to enable communication between virtual networks. Load balancers control traffic between two or more endpoints, but virtual network peering is used to connect virtual network together."
+      - content: "So that you can run custom reports to scan and identify what resources are running across all of your virtual networks, as opposed to running reports on each virtual network."
+        isCorrect: false
+        explanation: "This answer is incorrect. You can run reports at the subscription level to identify what resources you have running. virtual network peering has no influence on this."
