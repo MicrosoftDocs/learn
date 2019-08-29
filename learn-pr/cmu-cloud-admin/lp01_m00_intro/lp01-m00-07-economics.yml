@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 7
+durationInMinutes: 10
 content: |
   [!include[](includes/lp01-m00-07-economics.md)]
 quiz:
