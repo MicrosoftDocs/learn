@@ -18,9 +18,9 @@ quiz:
   questions:
   - content: "In order to configure an internal load balancer. Which configuration is required?"
     choices:
-    - content: "Virtual machines should be in the same VNET."
+    - content: "Virtual machines should be in the same virtual network."
       isCorrect: true
-      explanation: "The virtual machines that you distribute load to with a load balancer must be in the same VNET."
+      explanation: "The virtual machines that you distribute load to with a load balancer must be in the same virtual network."
     - content: "Virtual machines must be publicly accessible."
       isCorrect: false
       explanation: "Virtual machines behind an internal load balancer should not be accessed publicly. The load balancer provides the access point."

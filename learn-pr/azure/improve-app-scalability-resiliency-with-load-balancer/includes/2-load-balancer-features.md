@@ -18,7 +18,7 @@ Azure Load Balancer is a service you can use to distribute traffic across multip
 
 Azure Load Balancer supports inbound and outbound scenarios, provides low latency and high throughput, and scales up to millions of flows for all TCP and UDP applications.
 
-Load balancers aren't physical instances. Load balancer objects are used to express how Azure configures its infrastructure to meet your requirements. 
+Load balancers aren't physical instances. Load balancer objects are used to express how Azure configures its infrastructure to meet your requirements.
 
 To achieve high availability with load balancer, you can choose to use availability sets and availability zones to ensure that virtual machines are always available:
 
@@ -51,19 +51,19 @@ Basic load balancers allow:
 - Port forwarding
 - Automatic reconfiguration
 - Health probes
-- Outbound connections through Secure Network Address Translation (SNAT)
+- Outbound connections through source network address translation (SNAT)
 - Diagnostics through Azure Log Analytics for public-facing load balancers
 
-These load balancers can be used with any application and require nothing from that application. They can only be used with availability sets.
+Basic load balancers can only be used with availability sets.
 
 Standard load balancers support all of the basic features. They also allow:
 
 - HTTPS health probes
 - Availability zones
-- Diagnostics through Azure Monitor supporting multi-dimensional metrics
-- High Availability (HA) ports
+- Diagnostics through Azure Monitor supporting multidimensional metrics
+- High availability (HA) ports
 - Outbound rules
-- A guaranteed Service Level Agreement (SLA) (99.99% for two or more virtual machines)
+- A guaranteed service level agreement (SLA) (99.99% for two or more virtual machines)
 
 ## Internal and external load balancers
 

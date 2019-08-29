@@ -1,4 +1,4 @@
-As the solution architect for the healthcare portal, you need to distribute the load from the client browsers over the Virtual Machines (virtual machines) in your web farm. You'll need to set up a load balancer and configure the virtual machines to be balanced.
+As the solution architect for the healthcare portal, you need to distribute the load from the client browsers over the virtual machines in your web farm. You'll need to set up a load balancer and configure the virtual machines to be balanced.
 
 A public load balancer maps the public IP address and port number of incoming traffic to the private IP address and port number of a virtual machine in the backend pool. The responses are then returned to the client. By applying load-balancing rules, you distribute specific types of traffic across multiple virtual machines or services.
 
@@ -10,17 +10,17 @@ By default, Azure Load Balancer distributes network traffic equally among virtua
   
     ![Hash-based distribution](../media/3-load-balancer-distribution.svg)
 
-- **Source IP affinity.** This distribution mode is also known as session affinity or client IP affinity. To map traffic to the available servers, the mode uses a 2-tuple hash (from the source IP address and destination IP address) or 3-tuple hash (from the source IP address, destination IP address, and protocol type). The hash ensures that requests from a given client are always sent to the same virtual machine behind the load balancer. 
+- **Source IP affinity.** This distribution mode is also known as session affinity or client IP affinity. To map traffic to the available servers, the mode uses a 2-tuple hash (from the source IP address and destination IP address) or 3-tuple hash (from the source IP address, destination IP address, and protocol type). The hash ensures that requests from a given client are always sent to the same virtual machine behind the load balancer.
 
     ![Session Affinity](../media/3-load-balancer-session-affinity.svg)
 
 ## Choose a distribution mode
 
-In the healthcare portal example, imagine that a developer requirement of the presentation tier is to use in-memory sessions to store the logged user's profile as they interact with the portal. 
+In the healthcare portal example, imagine that a developer requirement of the presentation tier is to use in-memory sessions to store the logged user's profile as they interact with the portal.
 
-In this scenario, the load balancer must provide source IP affinity to maintain a user's session – the profile will only be stored on the virtual machine that the client first connected to. When you create the load balancer endpoint, you must specify the distribution mode by using the PowerShell example below.
+In this scenario, the load balancer must provide source IP affinity to maintain a user's session. The profile will only be stored on the virtual machine that the client first connected to since that IP address will be directed to the same server. When you create the load balancer endpoint, you must specify the distribution mode by using the PowerShell example below.
 
-```Powershell
+```powershell
 $lb = Get-AzLoadBalancer -Name MyLb -ResourceGroupName MyResourceGroup
 $lb.LoadBalancingRules[0].LoadDistribution = 'sourceIp'
 Set-AzLoadBalancer -LoadBalancer $lb
@@ -40,6 +40,6 @@ Remote Desktop Gateway is a Windows service that you can use to enable clients o
 
 ## Azure Load Balancer and media upload
 
-Another use case for source IP affinity is media upload. In many implementations, a client initiates a session through a TCP protocol and connects to a destination IP address. This connection remains open throughout the upload to monitor progress, but the file is uploaded through a separate UDP protocol. 
+Another use case for source IP affinity is media upload. In many implementations, a client initiates a session through a TCP protocol and connects to a destination IP address. This connection remains open throughout the upload to monitor progress, but the file is uploaded through a separate UDP protocol.
 
 With the five-tuple hash, the TCP and UDP connections are likely to be sent to different destination IP addresses by the load balancer, which stops the upload from completing successfully. Use source IP affinity to fix this problem.
