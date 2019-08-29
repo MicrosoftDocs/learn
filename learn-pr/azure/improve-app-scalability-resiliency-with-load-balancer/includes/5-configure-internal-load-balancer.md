@@ -1,4 +1,4 @@
-As well as balancing requests from users to front-end servers, you can also use Azure Load Balancer to distribute traffic from front-end server evenly between back-end servers.
+As well as balancing requests from users to front-end servers, you can also use Azure Load Balancer to distribute traffic from front-end servers evenly between back-end servers.
 
 In your healthcare organization, front-end servers call business logic that is hosted on a middle tier. You want to ensure that the middle tier is as scalable and resilient as the front end. You want to use a load balancer to distribute requests from the front-end servers evenly among the middle-tier servers. This way, you'll scale the middle-tier servers out to achieve the highest capacity possible. You'll also ensure that the middle-tier is resilient to failures because, when a server fails, the load balancer will automatically reroute traffic.
 
@@ -12,7 +12,7 @@ The healthcare portal is split into a three-tiered architecture:
 - Application (Business) Tier
 - Data Tier
 
-![Diagram of three tier architecture](../media/5-three-tier-architecture.jpg)
+![Diagram of three tier architecture](../media/5-three-tier-architecture.svg)
 
 This architecture is common and allows you to scale out. The presentation layer is public facing, the other tiers are only accessible within the local Azure virtual network. The previous exercise created an external load balancer to balance the virtual machines in the presentation layer.
 
@@ -28,7 +28,7 @@ You can configure an internal load balancer in almost the same way as an externa
 
 The internal load balancer should only be visible to the front-end presentation tier. All the virtual machines hosting the business tier are in one virtual network so an internal load balancer can be used to distribute traffic to those virtual machines.
 
-![Diagram of Internal Load Balancer](../media/5-internal-load-balancer.png)
+![Diagram of Internal Load Balancer](../media/5-internal-load-balancer.svg)
 
 ## Choose distribution mode
 
