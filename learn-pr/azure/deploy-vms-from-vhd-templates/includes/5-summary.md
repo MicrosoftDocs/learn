@@ -18,3 +18,4 @@ Visit the following articles for more information on disk imaging on Azure.
 - [Create a Windows VM from a specialized disk by using PowerShell](https://docs.microsoft.com/azure/virtual-machines/windows/create-vm-specialized)
 - [Introduction to Azure managed disks](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview)
 - [Create a VM from a managed image](https://docs.microsoft.com/azure/virtual-machines/windows/create-vm-generalized-managed)
+- For a complete description of the different types of VHD available, and their performance and cost profiles, read [What disk types are available in Azure?](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types)

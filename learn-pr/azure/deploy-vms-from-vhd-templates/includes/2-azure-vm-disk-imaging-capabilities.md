@@ -1,12 +1,12 @@
-An Azure virtual machine runs in the cloud, in an Azure datacenter. You don't have direct access to the physical hardware on which the virtual machine runs, or the hard disks that the virtual machine uses. When you create a virtual machine, you specify a virtual machine image to use. This image contains the operating system, and optionally other preconfigured software. Azure uses this image to create a new virtual hard disk (VHD) from which it can boot your virtual machine. You can then tailor the virtual machine by configuring and installing additional applications, according to your requirements.
+An Azure virtual machine runs in the cloud, in an Azure datacenter. When you create a virtual machine, you specify a virtual machine image to use. This image contains the operating system, and optionally other preconfigured software. Azure uses this image to create a new virtual hard disk (VHD) from which it can boot your virtual machine. You can then customize the virtual machine by configuring and installing additional applications, according to your requirements.
 
 In the sample scenario, your organization is considering creating and configuring customized images that can be used to deploy servers. You want to know what customized images are, and how they can benefit the company.
 
-In this unit, you'll learn more about VHDs, and how you can use them to create standard customized disks for building virtual machines for your own organization.
+In this unit you'll learn more about virtual hard disks, and how you can use them to create standard customized disks for building virtual machines for your own organization.
 
 ## What is an Azure virtual hard disk?
 
-A VHD is conceptually similar to a physical hard disk. You can use a VHD to host the operating system and run a virtual machine. A VHD can also hold databases, and other user-defined folders, files, and data. A VHD can hold anything that you can store on a physical hard disk. A virtual machine can contain multiple VHDs. Typically, a virtual machine has an *operating system VHD* on which the operating system is installed, and one or more *data VHDs* that contain the applications and other user-specific data used by the virtual machine.
+A virtual hard disk (VHD) is conceptually similar to a physical hard disk. You can use a VHD to host the operating system and run a virtual machine. A VHD can also hold databases, and other user-defined folders, files, and data. A VHD can hold anything that you can store on a physical hard disk. A virtual machine can contain multiple VHDs. Typically, a virtual machine has an *operating system VHD* on which the operating system is installed, and one or more *data VHDs* that contain the applications and other user-specific data used by the virtual machine.
 
 The difference between a VHD and a physical hard disk is that a VHD is stored as a virtual file in Azure, rather than a piece of physical hardware.
 
@@ -16,7 +16,7 @@ Compared to physical disks, VHDs have several advantages, including:
 - Physical security - A VHD is stored in the cloud rather than as a device held on-premises. You can control who has access to a VHD using Azure's security features, and you can audit the changes made to a VHD. Managed VHDs are also encrypted, to protect them further. These features make it more difficult for a disk to be stolen or mislaid. It's also easier to track the provenance of a VHD, so you can be sure that it contains the correct software of a specific version.
 - Durability - Because a VHD isn't a physical piece of hardware, it won't wear out or suffer from some form of media failure.
 - Scalability - You can create many virtual machines from the same VHDs simultaneously with minimal contention (contrast this with attempting to set up 100 machines from the same DVD mounted as a shared device on your on-premises network).
-- Cost and performance - Azure provides several different types of VHD, ranging from those stored on high-performance, dedicated SSDs in a datacenter, to lower-performance, lower-cost VHDs stored on shared hard disk drives. You can select the type of VHD depending on your throughput and cost requirements. For a complete description of the different types of VHD available, and their performance and cost profiles, read [What disk types are available in Azure?](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types)
+- Cost and performance - Azure provides several different types of VHD, ranging from those stored on high-performance, dedicated SSDs, to lower-performance, lower-cost VHDs stored on shared hard disk drives. You can select the type of VHD depending on your throughput and cost requirements. 
 
 ## What is a virtual machine image?
 
