@@ -18,10 +18,10 @@ The following diagram shows what happens when the primary region fails.
 
 > [!IMPORTANT]
 > Failover is automatic and controlled by Microsoft. A manual failover of an Azure storage account is not possible in a majority of the Azure regions. However, a new feature has been made available in WestUS2 and CentralUS regions, where you can manually failover the storage account using the following command:
->
-> ```azurecli
-> az storage account failover --name "storgeaccountname"`.
-> ```
+
+```bash
+az storage account failover --name "storgeaccountname"`.
+```
 
 ## Implications of storage account failover
 
@@ -39,15 +39,15 @@ There are several factors you need to consider when designing your application t
 
 - **Eventual consistency** - RA-GRS works by replicating data from the primary endpoint to the secondary endpoint. The data, which is replicated between the regions, isn't available at the secondary location immediately. Eventual consistency means that all the transactions on the primary region will eventually appear in the secondary region. The data isn't lost, but there may be some lag.
 
- The table below shows the effects of eventual consistency in the health care system. When new or updated records are written to primary region, the latest records are immediately available in the primary storage location. These updates are eventually propagated to the secondary regions, but there may be a delay before propagation occurs. An application reading data from a secondary location may see out-of-date data for a short while.
+    The table below shows the effects of eventual consistency in the health care system. When new or updated records are written to primary region, the latest records are immediately available in the primary storage location. These updates are eventually propagated to the secondary regions, but there may be a delay before propagation occurs. An application reading data from a secondary location may see out-of-date data for a short while.
 
- | Time | Transaction | Replication | Last Sync Time | Result |
- | ------| -------- | --------------- | --------------- | ------ |
- | T0 | Doctor adds patient record| - | - | Transaction added but not replicated |
- | T1 | - | Record replicated | T1 | Last Sync Time field updated |
- | T2 | Consultant updates patient record | -|T1 | Record updated on primary but not replicated |
- | T3 | Read records from secondary region | | | When you read data from the secondary, you get stale data as updates hasn't yet been replicated from the primary |
- | T4 | - | Records replicate | - | Data at secondary now updated. Last Sync Time updated |
+    | Time | Transaction | Replication | Last Sync Time | Result |
+    | ------| -------- | --------------- | --------------- | ------ |
+    | T0 | Doctor adds patient record| - | - | Transaction added but not replicated |
+    | T1 | - | Record replicated | T1 | Last Sync Time field updated |
+    | T2 | Consultant updates patient record | -|T1 | Record updated on primary but not replicated |
+    | T3 | Read records from secondary region | | | When you read data from the secondary, you get stale data as updates hasn't yet been replicated from the primary |
+    | T4 | - | Records replicate | - | Data at secondary now updated. Last Sync Time updated |
 
 ## Best practices for cloud-based applications with RA-GRS
 

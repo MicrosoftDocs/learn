@@ -31,11 +31,11 @@ In this step, you'll create a new storage account. This storage account hosts th
 
 1. Verify the replication status by running the following command:
 
-   ```azurecli
-   az storage account show \
-     --name $STORAGEACCT \
-     --query "[statusOfPrimary, statusOfSecondary]"
-   ```
+    ```bash
+        az storage account show \
+            --name $STORAGEACCT \
+            --query "[statusOfPrimary, statusOfSecondary]"
+    ```
 
    The status of the primary and secondary sites should both be listed as *available*.
 
@@ -43,10 +43,10 @@ In this step, you'll create a new storage account. This storage account hosts th
 
 1. Switch to the Cloud Shell window in the browser, and run the following command to obtain the connection string for the storage account you created in the previous exercise:
 
-    ```azurecli
-    az storage account show-connection-string \
-        --name $STORAGEACCT \
-        --resource-group <rgn>[Sandbox resource group]</rgn>
+    ```bash
+        az storage account show-connection-string \
+            --name $STORAGEACCT \
+            --resource-group <rgn>[Sandbox resource group]</rgn>
     ```
 
 1. Copy the output connection string and save it for reference later on in this module.
@@ -57,12 +57,12 @@ In this step, you'll use the Cloud Shell to view the replication status of your 
 
 1. Run the following command in the Cloud Shell to view the status of the primary and secondary locations.
 
-   ````azurecli
-   az storage account show \
-     --name $STORAGEACCT \
-     --expand geoReplicationStats \
-     --query "[primaryEndpoints, secondaryEndpoints, geoReplicationStats]"
-   ````
+    ```bash
+        az storage account show \
+            --name $STORAGEACCT \
+            --expand geoReplicationStats \
+            --query "[primaryEndpoints, secondaryEndpoints, geoReplicationStats]"
+    ```
 
    The output shows useful information relating to the primary endpoint, the secondary endpoint, and the last time data was synchronized across regions
 
