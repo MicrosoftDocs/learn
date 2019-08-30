@@ -45,7 +45,7 @@ Identify the subtasks of Monitor and troubleshoot your end-to-end Azure network 
 
 1. **Introduction**
 
-   Companies that use Virtual Machines (VMs) in Azure may need tools to troubleshoot communication problems.
+   Companies that use virtual machines (VMs) in Azure may need tools to troubleshoot communication problems.
 
    You are the Azure architect at for an engineering company. One of your colleagues has deployed a VM in Azure and is having network connectivity issues. You’re the Azure architect for the project, so they have come to you for help. You’ve worked through these issues in the past and would like to help your colleague learn how they can troubleshoot these issues themselves if they come up in the future. You take them through the tools in Azure Network Watcher to help them identify and remediate the issues.
 

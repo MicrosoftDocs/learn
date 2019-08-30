@@ -2,8 +2,8 @@
 uid: learn.troubleshoot-azure-network-infrastructure
 metadata:
   title: Monitor and troubleshoot your end-to-end Azure network infrastructure using network monitoring tools
-  description: Use Network Watcher tools, diagnostics, and logs to help find and fix networking issues in your Azure infrastructure.
-  ms.date: 04/30/2019
+  description: In this unit, you will learn how to investigate and diagnose problems in your Azure virtual networks by using Network Watcher and other tools.
+  ms.date: 06/04/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -22,15 +22,14 @@ levels:
 - beginner
 roles:
 - solution-architect
-- administrator
 products:
 - azure
 units:
 - learn.troubleshoot-azure-network-infrastructure.1-introduction
-- learn.troubleshoot-azure-network-infrastructure.2-troubleshoot-with-network-watcher
-- learn.troubleshoot-azure-network-infrastructure.3-exercise-troubleshoot-with-network-watcher
-- learn.troubleshoot-azure-network-infrastructure.4-troubleshoot-with-metrics-logs
-- learn.troubleshoot-azure-network-infrastructure.5-exercise-troubleshoot-with-metrics-logs
+- learn.troubleshoot-azure-network-infrastructure.2-troubleshoot-networking-with-network-watcher
+- learn.troubleshoot-azure-network-infrastructure.3-exercise-troubleshoot-networking-with-network-watcher
+- learn.troubleshoot-azure-network-infrastructure.4-troubleshoot-networking-with-network-watcher-metrics-logs
+- learn.troubleshoot-azure-network-infrastructure.5-exercise-troubleshoot-networking-with-network-watcher-metrics-logs
 - learn.troubleshoot-azure-network-infrastructure.6-summary
 badge:
   uid: learn.troubleshoot-azure-network-infrastructure.badge
