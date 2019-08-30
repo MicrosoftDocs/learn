@@ -2,9 +2,9 @@ After you've chosen whether to use managed or unmanaged disks, next you have to 
 
 Suppose that your on-premises network includes the following systems:
 
-- A business-critical sales database that supports a highly utilized sales app in the east of the United States.
+- A business-critical care scheme sales database that supports a highly utilized sales app in the east of the United States.
 - The same sales database running in Brazil.
-- A web site that displays products from the sales database.
+- A web site that displays healthcare products from the sales database.
 - A test environment for new versions of the web site.
 
 You want to migrate each of these systems onto Azure virtual machines and you want to select the optimal disk types for each.
@@ -45,7 +45,7 @@ Ultra disks are a new disk type and currently have some limitations:
 - They can only be attached to virtual machines that are in availability zones.
 - They can only be attached to ES/DS v3 virtual machines.
 - They can only be used as data disks and can only be created as empty disks.
-- They do not support disk snapshots, VM images, scale sets, Azure disk encryption, Azure Backups, or Azure Site Recovery.
+- They do not support disk snapshots, virtual machine images, scale sets, Azure disk encryption, Azure Backups, or Azure Site Recovery.
 
 Some workloads place intensive loads on disk storage. For example, top-tier databases and SAP HANA need fast performance and are transaction-heavy. If you have such a workload, and if premium SSDs have caused performance bottlenecks, consider using ultra SSDs.
 

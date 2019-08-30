@@ -1,6 +1,6 @@
 You can choose whether to let Azure manage the storage infrastructure for your virtual hard disks, or manage that infrastructure yourself. 
 
-Suppose you have a variety of virtual machines in your on-premises network that you want to migrate to Azure. In most cases, you're happy to let Azure manage virtual hard disks. However, you have a database server that hosts a large database. You've been asked to keep a close control over the storage for this database so that you can manage costs carefully. You're also interested in minimizing storage costs for two servers that host a microservice for your accounting application.
+Suppose you have a variety of virtual machines running heathcare workloads in your on-premises network that you want to migrate to Azure. In most cases, you're happy to let Azure manage virtual hard disks. However, you have a database server that hosts a large database. You've been asked to keep a close control over the storage for this database so that you can manage costs carefully. You're also interested in minimizing storage costs for two servers that host a microservice for your accounting application.
 
 In this unit, you'll see how to choose between managed and unmanaged disks. You'll also learn about disk roles and ephemeral disks.
 
