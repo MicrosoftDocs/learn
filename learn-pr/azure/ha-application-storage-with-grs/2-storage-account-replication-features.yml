@@ -2,7 +2,7 @@
 uid: learn.ha-application-storage-with-grs.2-storage-account-replication-features
 metadata:
   title: Understand the role of an Azure storage account and the associated replication features 
-  description: Understand the role of an Azure storage account and the associated replication features 
+  description: Learn how an Azure storage account is configured to allow for replication and high-availability of data. 
   ms.date: 05/21/19
   author: jboeshart
   ms.author: jaboes
@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Understand the role of an Azure storage account and the associated replication features 
-durationInMinutes: 5
+durationInMinutes: 6
 content: |
   [!include[](includes/2-storage-account-replication-features.md)]

@@ -1,4 +1,6 @@
-As part of the project to configure your healthcare application to be highly available, you need to create and configure an Azure storage account. You can use Read-Access Geo-Replica-Storage (RA-GRS), to enable the storage account to fail over to another region, if an Azure region failure occurs.
+As part of the project to configure your healthcare application to be highly available, you need to create and configure an Azure storage account. Recall that your application allows doctors and consultants in the field to upload images from visits with patients. These images contain essential clinical information, and these images need to be available even if an Azure region fails
+
+Let's see how an Azure storage account is configured to allow for replication and high-availability of data.
 
 ## Azure storage accounts
 Azure storage accounts are used to house all data objects such as files, blobs, tables, and disks for virtual machines. The data you store in a storage account can be accessed from any location globally via HTTP or HTTPS and is highly available and secure.
