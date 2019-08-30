@@ -16,7 +16,7 @@ durationInMinutes: 10
 content: |
   [!include[](includes/3-disk-types-for-virtual-machines.md)]
 quiz:
-  titles: "Check your knowledge"
+  title: "Check your knowledge"
   questions:
   - content: "You need the best disk performance for a new virtual server in the West Europe region. What disk type should you use?"
     choices:

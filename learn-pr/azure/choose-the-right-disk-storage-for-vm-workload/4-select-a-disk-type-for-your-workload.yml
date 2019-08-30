@@ -36,7 +36,7 @@ quiz:
       explanation: "Although larger standard SSD sizes support this IOPS, it is not guaranteed and may occasionally drop below 1,100. Premium SSDs do have a guaranteed performance level."
     - content: "Use standard HDDs instead of standard SSDs."
       isCorrect: false
-      expanation: "Standard SSDs and standard HDDs don't guarantee an IOPS value."
+      explanation: "Standard SSDs and standard HDDs don't guarantee an IOPS value."
     - content: "Use unmanaged disks instead of managed disks."
       isCorrect: false
       explanation: "Managed disks and unmanaged disks don't guarantee an IOPS value."
