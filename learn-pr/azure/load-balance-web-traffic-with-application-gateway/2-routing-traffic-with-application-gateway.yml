@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Routing traffic with Application Gateway
+title: Route traffic with Application Gateway
 durationInMinutes: 10
 content: |
   [!include[](includes/2-routing-traffic-with-application-gateway.md)]
