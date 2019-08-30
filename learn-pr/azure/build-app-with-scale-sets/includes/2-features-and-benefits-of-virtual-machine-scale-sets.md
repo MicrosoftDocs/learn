@@ -30,9 +30,9 @@ Sometimes, you may need to add or remove a number of the machines in a scale set
 
 Vertical scaling adds more resources such as memory, CPU power, or disk space to the virtual machines.
 
-In contrast to horizontal scaling, where new identical size virtual machines are added or removed from a  scale set, vertical scaling focuse on increasing the size of the actual virtual machines in the scale sets.  For example, you might want to reduce the CPU performance of a group of virtual machines in a scale set.  In this case, you may not necessarily need an entire group of machines removed. In scale sets, you create rules based on metrics that automatically trigger an increase in the sizes of the VMs.  Vertical scaling typically requires rebooting the affected virtual machines in the scale set. This process can lead to a temporary degradation in performance across the scale set while the virtual machines restart.
+In contrast to horizontal scaling, where new identical size virtual machines are added or removed from a scale set, vertical scaling focuses on increasing the size of the actual virtual machines in the scale sets.  For example, you might want to reduce the CPU performance of a group of virtual machines in a scale set.  In this case, you may not necessarily need an entire group of machines removed. In scale sets, you create rules based on metrics that automatically trigger an increase in the sizes of the VMs.  Vertical scaling typically requires rebooting the affected virtual machines in the scale set. This process can lead to a temporary degradation in performance across the scale set while the virtual machines restart.
 
-## Scaling a scale-set
+## Scaling a scale set
 
 Virtual machine scale sets address the need to quickly create and manage the virtual machines for a fluctuating workload. You can configure two types of scaling for a scale-set:
 

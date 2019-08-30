@@ -27,7 +27,7 @@ Your first task is to create a scale set, and configure it to run a web server â
           - owner: www-data:www-data
           - path: /var/www/html/index.html
             content: |
-                Hello world from VM Scale Set !
+                Hello world from Virtual Machine Scale Set !
         runcmd:
           - service nginx restart
     ```
@@ -115,6 +115,6 @@ Your first task is to create a scale set, and configure it to run a web server â
 
     ![Screenshot of the Azure portal, showing the size of the virtual machines in the scale set](../media/3-vmss-size.png)
 
-1. In your web browser, go to the public IP address of the scale set. Verify that the message **Hello World from VM Scale Set !**<!--CE:Is this correct, with a space between 'Set' and '!'?--> appears.
+1. In your web browser, go to the public IP address of the scale set. Verify that the message ```Hello World from Virtual Machine Scale Set !``` appears.
 
     ![Screenshot of the web app](../media/3-web-app.png)
