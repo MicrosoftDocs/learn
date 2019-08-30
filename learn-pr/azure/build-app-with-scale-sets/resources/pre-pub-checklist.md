@@ -41,4 +41,4 @@
 
 ### Exercises
 - [X] All exercise units have *Exercise - * prefix on titles
-- [] Ensure that the Azure DevOps Work Item Lab Enabled and Lab Type fields are completed
+- [x] Ensure that the Azure DevOps Work Item Lab Enabled and Lab Type fields are completed

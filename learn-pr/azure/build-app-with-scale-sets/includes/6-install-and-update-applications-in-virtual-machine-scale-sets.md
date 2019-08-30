@@ -1,6 +1,6 @@
 When you deploy an application across a scale set, you need a mechanism that updates your application consistently, across all instances in the scale set. You achieve this outcome by using a custom script extension.
 
-In the shipping company scenario, you need a quick way to roll out updates to the application while minimizing disruption to the end users. A custom script extension is the ideal mechanism to do this operation.
+In the shipping company scenario, you need a quick way to roll out updates to the application while minimizing disruption to the end users. A custom script extension is an ideal mechanism to do this operation.
 
 In this unit, you'll learn how to use a custom script extension to update an application running on a scale set.
 
@@ -63,7 +63,7 @@ az vmss extension set \
 The virtual machines are updated using the strategy defined by the upgrade policy for the scale set. You specify this policy when you first create the scale set. The upgrade policy can have one of the following three modes:
 
 - **Automatic**. The scale set makes no guarantees about when the virtual machines are upgraded. They could all be brought down and updated at the same time, causing a service outage.
-- **Rolling**. The scale set rolls out the update in batches across the virtual machines in the scale set – there's an optional pause to minimize or eliminate service outage. In this mode, machines in the scale set might be running different versions of the app for a short time. This mode requires that you either add a health probe to the scale set, or apply the Application Health extension to the scale set.
+- **Rolling**. The scale set rolls out the update in batches across the virtual machines in the scale set – there's an optional pause to minimize or eliminate service outage. In this mode, machines in the scale set might be running different versions of the app for a short time. This mode requires that you either add a health probe to the scale set or apply the Application Health extension to the scale set.
 - **Manual**. Existing virtual machines in the scale set aren't updated. All changes must be done manually – this is the default mode.
 
 To specify the upgrade policy mode when you provision a virtual machine scale set, use the `upgrade-policy-mode` option. The following code shows an example using the Azure CLI:  

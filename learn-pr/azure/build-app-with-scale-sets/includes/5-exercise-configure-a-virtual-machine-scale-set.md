@@ -1,12 +1,12 @@
-In the shipping company scenario, you have noticed that users' response times start to increase significantly when the overall CPU utilization of the virtual machines in the scale set exceeds 75 percent. This is causing dissatisfaction amongst the users. You need to arrange for the virtual machine scale set hosting your web application to scale horizontally when the system hits this threshold, to reduce the length of time users are waiting.
+Recall from earlier that your customers use one of the company's websites to manage and check the status of their shipments. This website is deployed to virtual machines and hosted on-premises. You notice that users' accessing the company's website, experience significant delays in response times when the overall CPU utilization of the virtual machines exceeds 75 percent. You need to arrange the virtual machine scale set hosting your web application to scale horizontally when the system hits this threshold.
 
 Additionally, to save costs, you also want to get the scale set to scale back in when demand drops and the overall CPU utilization across the scale set drops below 50 percent.
 
 In this exercise, you'll configure autoscaling, and define scale rules that scale out and back again, according to the CPU utilization of the system.
 
 > [!NOTE]
-> This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to use the REST API to retrieve metrics.
-> If you want to complete this exercise but you don't have an Azure subscription or prefer not to use your own account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+> This exercise is optional. If you don't have an Azure account, you can read through the instructions to understand how to use the REST API to retrieve metrics.
+> If you want to complete this exercise, but you don't have an Azure subscription or prefer not to use your account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 ## Create a scale-out scale rule
 
