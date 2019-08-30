@@ -2,12 +2,14 @@ In this first hands-on exercise, you'll use C# to print a hallowed programmer's 
 
 ## Write your first line of code
 
-There's a long standing tradition among software developers to print the phrase "Hello World!" to a command line or console window.  As you'll see, you can learn a lot about act of programming and the C# programming language from this simple exercise.
+There's a long standing tradition among software developers to print the phrase "Hello World!" to a command line or console window.  As you'll see, you can learn a lot about programming and the C# programming language from this simple exercise.
 
 ### Step 1: Type the code into the .NET Editor
 
+The .NET Editor and output pane provide a great in-browser experience that's perfect for this tutorial approach.  Later, you'll graduate to use either Visual Studio Code or the full Visual Studio IDE to build larger and more interesting code examples -- even entire applications.
+
 > [!NOTE] 
-> You might be tempted to use the `Copy` or `Run` button below and skip all the typing.  However, we encourage you to experience the _pride and accomplishment_ of typing this line of code yourself.  Typing the code yourself builds muscle memory and helps you gain insights that you wouldn't get otherwise.
+> You might be tempted to use the `Copy` or `Run` button below and skip all the typing.  However, we encourage you to type this line of code yourself.  Typing the code yourself builds muscle memory and helps you gain insights that you wouldn't get otherwise.
 
 Type this code into the .NET Editor on the right:
 
@@ -21,8 +23,8 @@ We'll explain how and why it works soon.  But first, you should see it running a
 
 The green Run button performs two tasks:
 
-- It compiles your code into an executable format that a computer can understand
-- It runs your compiled application and outputs the desired command
+- It compiles your code into an executable format that a computer can understand.
+- It runs your compiled application and outputs the desired command.
 
 ### Step 3: In the output window, observe the result
 
@@ -32,11 +34,11 @@ You should see the following output:
 Hello World!
 ```
 
-### What to do if you got an error
+### What to do if you see an error message
 
-Writing C# code is an *exercise in precision*.  If you type just one character incorrectly, you'll see an error message in the Output area.
+Writing C# code is an *exercise in precision*.  If you type just one character incorrectly, you'll see an error message in the Output area when you run the code.
 
-For example, if you were to incorrectly use a lower-case `c` in `console` like so:
+For example, if you were to incorrectly use a lower-case `c` in the word `console` like so:
 
 ```csharp-interactive
 console.WriteLine("Hello World!");
@@ -48,7 +50,9 @@ We would see the following error message:
 (1,1): error CS0103: The name 'console' does not exist in the current context
 ```
 
-The key is the `(1,1)` which indicates the line and column where the error occurred.  C# is a case-sensitive language, meaning that the C# compiler considers the words `console` and `Console` as different as the words `cat` and `dog`.  Sometimes the error message can be a bit misleading.  You'll need to understand the true reason why the error exists, and that comes through learning more about C#'s syntax.
+The first part `(1,1)` indicates the line and column where the error occurred.  But what does this error message mean?
+
+C# is a case-sensitive language, meaning that the C# compiler considers the words `console` and `Console` as different as the words `cat` and `dog`.  Sometimes the error message can be a bit misleading.  You'll need to understand the true reason why the error exists, and that comes through learning more about C#'s syntax.
 
 Similarly, if you used single-quotation marks to surround the literal string `Hello World!` like so:
 
@@ -62,13 +66,13 @@ You would see the following error message:
 (1,19): error CS1012: Too many characters in character literal
 ```
 
-Again, line 1, character 19 points us to the culprit.  We can use the message as a clue as we investigate the problem.  But what does the error message mean?  What exactly is a "character literal"?  While we'll discuss literals of various data types (including character literals) in just a moment, our advice for now is to be careful when you're typing code.
+Again, line 1, character 19 points us to the culprit.  We can use the message as a clue as we investigate the problem.  But what does the error message mean?  What exactly is a "character literal"?  While we'll discuss literals of various data types (including character literals) in another module, our advice for now is to be careful when you're typing code.
 
 Fortunately, errors are never permanent.  You merely spot the error, fix it, and rerun your application.
 
-If you got an error, take your time, look closely, and examine each character and make sure you typed exactly this line of code.
+If you got an error when you ran your code, take a moment, look closely, and examine each character and make sure you typed this line of code exactly.
 
-The code editor is constantly monitoring the code you write by performing pre-compilation to find potential errors.  It will try to help you by adding red-squiggly lines beneath code that will produce a compilation error.
+The code editor is constantly monitoring the code you write by performing pre-compilation to find potential errors.  It will try to help you by adding red-squiggly lines beneath code that will produce an error.
 
 Common mistakes new programmers make:
 
@@ -79,34 +83,29 @@ Common mistakes new programmers make:
 
 Each of these mistakes prevents your code from compiling successfully.
 
-## What is compilation?
+Assuming you were successful in the previous steps, let's continue on.
 
-Compilation takes source code (the code you've written) and converts it into an executable format.
+### Step 4: Add new lines of code in the .NET Editor to print additional messages
 
-Programming languages like C# allow you to write instructions that you want the computer to carry out.  Even though most higher-level programming languages seem cryptic, they can be more easily understood than the computer's preferred lower-level language, which is expressed by turning millions of switches either on or off.  Compilers bridge these two worlds by translating your human-readable instructions into a computer-understandable set of instructions.
+Below the first line of code, modify the code you wrote so that it includes three additional lines:
 
-## What is syntax?
+```csharp-interactive
+Console.WriteLine("Hello World!");
 
-The syntax is the keywords, the operators (those special keyboard characters like the semicolon or parenthesis), and the rules of a programming language.  The single line of code you typed followed about a dozen different syntax rules and used at least four operators.  There's much to learn, but fortunately each concept is simple.  Don't give up!  You can learn it!
+Console.Write("Congratulations!");
+Console.Write(" ");
+Console.Write("You wrote your first lines of code!");
+```
 
-## How did your code work?
+Press the green Run button again.  This time, you should see the following output.
 
-When you ran your code, you saw that the message ```Hello World!``` was printed to the output pane.  When the phrase is surrounded by double-quotation marks in your C# code, it's called a **literal string**.  In other words, we literally wanted the characters `H`, `e`, `l`, `l`, `o`, and so on, sent to the output.
+```output
+Hello World!
+Congratulations! You wrote your first lines of code!
+```
 
-The `WriteLine()` part is called a **method**.  You can always spot a method because it has a set of parenthesis after it.  Each method has one job.  The `WriteLine()` method's job is to write a line of data to the output window.  The data that's printed is sent in between the opening and closing parenthesis as an input parameter.  Some methods need input parameters, others don't.  But if you want to invoke a method you must always use the parenthesis after the method's name.  The parentheses are known as the *method invocation operator*.
+So, you can see that we used two different techniques to print a message.  The first technique used `Console.WriteLine()` to print an entire message to the output console.  At the end of the line, it added a line feed similar to how you might use the `Enter` or `Return` key on your keyboard to create a new line of text.  
 
-The `Console` part is called a **class**.  Classes "own" methods, or perhaps a better way to say it is that methods live inside of a class.  To visit the method, you must know which class it's in.  For now, think of a class as a way to store and organize all of the methods that do similar things.  In this case, all of the methods that operate on our Output window are defined inside of the Console class.
+The second technique used `Console.Write()` to print to the output console, but at the end, it doesn't add a line feed.  So, the next call to `Console.Write()` prints an additional message to the same line.
 
-There was also a dot, or period, that separated the class name `Console` and the method name `WriteLine()`.  The period is the *member access operator*.  In other words, the dot is how you "navigate" from the class to one of it's methods.
-
-Finally, there was a semi-colon at the end of the line.  This is the *end of statement operator*.  A **statement** is a complete instruction in C#.  The semi-colon tells the compiler that we're finished typing the command.
-
-Don't worry if all of these ideas and terms don't make sense.  For now, all you really need to remember is that if you want to print a message to an output window like a console:
-
-- use `Console.WriteLine("Your message here");`
-- capitalize `Console`, `Write`, and `Line`
-- use the correct *punctuation* since they have a special role in C#
-- if you make a mistake, just spot it, fix it and rerun ... you can't really fail
-
-> [!TIP]
-> Create a cheat sheet for yourself until you've memorized certain key commands.
+Beyond two techniques for printing messages to the output console, there's more to learn from this exercise.  What do all of these words and symbols mean?

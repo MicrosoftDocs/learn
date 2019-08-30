@@ -2,22 +2,20 @@
 uid: learn.languages.csharp-write-first
 metadata:
   title: Write your first C# code
-  description: Get started learning C# by writing a dozen tiny code examples to learn about data types, literals, strings, calling methods, string concatenation, performing math operations, code comments and more!
-  ms.date: 07/29/2019
+  description: Get started by writing tiny code examples to learn the basics of the C# syntax!
+  ms.date: 08/30/2019
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Write your first C# code
-summary: Get started learning C# by writing a dozen tiny code examples to learn about data types, literals, strings, calling methods, string concatenation, performing math operations, code comments and more!
+summary: Get started by writing tiny code examples to learn the basics of the C# syntax!
 abstract: |
   In this module, you will:
-  - Write your first lines of C# code to print information to a console
-  - Work with literal data, learning about the different types of data in C# like string, char, int, float, and bool
-  - Create, set, get, and initialize variables
-  - Perform string concatenation and numeric addition
-  - Write and understand the purpose of code comments
-  - Understand the functional and proper use of whitespace
+  - Write your first lines of C# code
+  - Use two different techniques to print a message to a text console
+  - Diagnose errors when you type code incorrectly
+  - Identify different C# syntax elements like operators, classes, and methods
 prerequisites: None
 ratingEnabled: true
 iconUrl: /learn/achievements/csharp-write-first.svg
@@ -30,11 +28,9 @@ products:
 units:
 - learn.languages.csharp-write-first.introduction
 - learn.languages.csharp-write-first.exercise-hello-world
-- learn.languages.csharp-write-first.exercise-literal-values
-- learn.languages.csharp-write-first.declaring-variables
-- learn.languages.csharp-write-first.exercise-variables
-- learn.languages.csharp-write-first.exercise-operations
-- learn.languages.csharp-write-first.exercise-comments-white-space
+- learn.languages.csharp-write-first.how-it-works
+- learn.languages.csharp-write-first.challenge
+- learn.languages.csharp-write-first.solution
 - learn.languages.csharp-write-first.knowledge-check
 - learn.languages.csharp-write-first.summary
 
