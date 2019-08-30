@@ -6,7 +6,7 @@ Here, you'll learn how to use load balancers to distribute internal traffic.
 
 ## Configure an internal load balancer
 
-In the healthcare portal scenario, there is an web tier that handles reqeusts from users, and connects to databases to retrieve data for the users. The database tier is also deployed on two virtual machines. To allow the front-end web portal to continue to serve client requests if an database server fails, you will set up an internal load balancer to distribute traffic to the database servers.
+In the healthcare portal scenario, there is a web tier that handles requests from users, and connects to databases to retrieve data for the users. The database tier is also deployed on two virtual machines. To allow the front-end web portal to continue to serve client requests if a database server fails, you will set up an internal load balancer to distribute traffic to the database servers.
 
 You can configure an internal load balancer in almost the same way as an external load balancer, but with these differences:
 

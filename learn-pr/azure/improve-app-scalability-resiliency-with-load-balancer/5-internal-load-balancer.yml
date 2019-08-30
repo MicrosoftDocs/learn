@@ -2,8 +2,8 @@
 uid: learn.improve-app-scalability-resiliency-with-load-balancer.5-internal-load-balancer
 metadata:
   title: Internal load balancers
-  description: In this unit, you will learn how to configure Azure Load Balancer to distribute internal traffic between resources.
-  ms.date: 05/31/2019
+  description: Internal load balancers
+  ms.date: 08/31/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "In order to configure an internal load balancer. Which configuration is required?"
+  - content: "Which configuration is required to configure an internal load balancer?"
     choices:
     - content: "Virtual machines should be in the same virtual network."
       isCorrect: true

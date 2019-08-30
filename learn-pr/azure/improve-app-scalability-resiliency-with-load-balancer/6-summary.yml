@@ -2,14 +2,14 @@
 uid: learn.improve-app-scalability-resiliency-with-load-balancer.6-summary
 metadata:
   title: Summary
-  description: In this unit, you'll review what you have learned about Azure Load Balancer.
-  ms.date: 05/31/2019
+  description: Summary
+  ms.date: 08/31/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Summary
-durationInMinutes: 5
+durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
