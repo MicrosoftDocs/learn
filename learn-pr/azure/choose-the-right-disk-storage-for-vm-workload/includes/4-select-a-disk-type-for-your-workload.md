@@ -4,7 +4,9 @@ In your healthcare organization, you have a business critical system that manage
 
 In this unit, you'll examine the requirements for each virtual server in the proposed cloud-based system and see why a particular disk type is optimal.
  
-<!-- Optional image](./media/optional-image.png)-->
+![On-premises servers for the prescription drugs stocks database](../media/4-on-premises-servers.png)
+
+<!-- TODO: Design team should create a MS Learn-style version of this diagram -->
 
 ## Production database server
 
@@ -16,8 +18,6 @@ This requirement makes the decision simple: the maximum size for premium SSDs is
 
 Remember that ultra SSDs can only be attached to virtual machines in availability zones. This requirement provides high availability, because the virtual servers are not vulnerable to a datacenter-wide hardware failure. It also means that you should use managed disks, which Azure automatically replicates across the availability zones where virtual machines are hosted. Managed disks also support the encryption you need.
 
-<!--[Optional image](./media/optional-image.png)-->
-
 ## Data warehouse servers
 
 Next, you want to consider the servers that host the prescription drug data warehouse: data from the production database is regularly exported to this data warehouse and restructured to make it easier to analyze long-term trends. These servers also host data cubes that are designed to support your complex reporting needs. 
@@ -25,8 +25,6 @@ Next, you want to consider the servers that host the prescription drug data ware
 In your on-premises system, there is a data warehouse server in your main datacenter and also several in regional offices. You've created a virtual machine image for these data warehouse servers and you will use it to simplify the deployment of multiple instances of the virtual machine in multiple Azure regions. Your analysis indicates that these servers require high-performance disks, but not the extreme performance required by the production database server.
 
 The highest performance disks in Azure are premium SSDs and ultra SSDs. However, ultra disks don't currently support virtual machine images. Therefore premium SSDs are the optimal disk type for data disks in this workload. None of your requirements for data warehousing require unmanaged disks, so you choose managed disks to reduce administrative overhead.
-
-<!--[Optional image](./media/optional-image.png)-->
 
 ## Standby database server
 
@@ -37,8 +35,6 @@ Because this virtual machine will not be used most of the time, you've been aske
 You find that the budget is unlikely to stretch to premium SSDs. In these circumstances, standard SSDs are the best choice, because they have equal or better performance than the equivalent size of standard HDD and more consistent performance.
 
 You carefully consider whether it's possible to make further saving by using unmanaged disks but you remember that this database should be encrypted wherever it's stored. That encryption requires managed disks.
-
-<!--[Optional image](./media/optional-image.png)-->
 
 ## Administrative web interface
 

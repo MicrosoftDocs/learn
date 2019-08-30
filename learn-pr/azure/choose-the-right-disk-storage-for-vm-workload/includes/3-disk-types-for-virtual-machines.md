@@ -51,8 +51,6 @@ Some workloads place intensive loads on disk storage. For example, top-tier data
 
 In the scenario above, ultra SSDs are the best disks to use for the sales database in the east of the United States. This system is business-critical and IO intensive. It's also in a region where you can use ultra disks
 
-<!--[Optional image](./media/optional-image.png)-->
-
 ## Premium SSD
 
 Premium SSDs are the next tier down from ultra disks in terms of performance, but still provide high throughput and IOPS with low latency. Premium disks don't have the current limitations of ultra disks. For example, they are available in all regions and can be used with virtual machines that are outside of availability zones. 
@@ -78,7 +76,7 @@ If you need higher performance than standard disks provide, or if you can't sust
 
 In the scenario above, premium SSDs are the best disks to use for the sales database in Brazil. This system is business-critical and IO intensive but you cannot use ultra disks in South American datacenters. Premium disks provide the maximum performance in this region.
 
-<!--[Optional image](./media/optional-image.png)-->
+![Creating a premium SSD](../media/3-create-a-premium-ssd.png)
 
 ## Standard SSD
 
@@ -100,7 +98,7 @@ Choose to use standard SSDs when you have budgetary constraints and a workload t
 
 In the scenario above, standard SSDs are the best disks to use for the web servers. This system is business-critical and requires good performance but it is not IO intensive. 
 
-<!--[Optional image](./media/optional-image.png)-->
+![Selecting a size for a standard SSD](../media/3-select-a-standard-ssd-size.png)
 
 ## Standard HDD
 
@@ -119,5 +117,3 @@ This table illustrates the performance characteristics of Standard HDDs in sever
 Choose to use standard HDDs when you want to minimize costs for less critical workloads and development or test environments.
 
 In the scenario above, standard HDDs are the best disks to use for the test environment. This system is not business-critical or IO intensive. Load is unlikely to be large and the impact of variations in performance is limited.
-
-<!--[Optional image](./media/optional-image.png)-->

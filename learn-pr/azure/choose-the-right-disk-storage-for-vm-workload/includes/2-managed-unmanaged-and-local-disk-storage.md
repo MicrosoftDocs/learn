@@ -47,7 +47,9 @@ Each disk can take one of three roles in a virtual machine:
 - **Data Disk.** You can add one or more data virtual disks to each virtual machine to store data. For example, database files, web site static content, or custom application code should be stored on data disks. The number of data disks you can add depends on the virtual machine size. Each data disk has a maximum capacity of 32,767 GB.
 - **Temporary Disk.** Each virtual machine contains a single temporary disk, which is used for short-term storage applications such as page files and swap files. The contents of temporary disks are lost during maintenance events so do not use these disks for critical data. Temporary disks are unmanaged in Azure. 
 
-<!-- TODO: Screenshot of these disks in disk manager within a VM -->
+You can administer OS disks and data disks in the **Disks** page of the virtual machine in the Azure portal:
+
+![Editing disks in the Azure portal](../media/2-edit-disks-in-portal.png)
 
 ## Ephemeral OS disks
 
