@@ -48,4 +48,4 @@
 ## Summary
 - [x] Between 90 and 180 words
 - [x] Gives a high level summary (now that you understand x, you can do y ....)
-- [x] Includes cleanup instructions when nessesary
+- [x] Includes cleanup instructions when necessary
