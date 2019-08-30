@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-for-performance-and-scalability.2-scaling-up-and-scaling-out
-title: Scaling up and scaling out
+title: Leverage scaling up and scaling out in your architecture
 metadata:
-  title: Scaling up and scaling out
+  title: Leverage scaling up and scaling out in your architecture
   description: In this unit we'll discuss how to leverage scaling up and scaling out in your architecture
   ms.date: 09/24/2018
   author: jboeshart
