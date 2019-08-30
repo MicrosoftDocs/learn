@@ -4,7 +4,7 @@ title: Exercise - Create an image of an Azure VM from the Azure CLI and provisio
 metadata:
   title: Exercise - Create an image of an Azure VM from the Azure CLI and provision a new VM.
   description: Exercise - Create an image of an Azure VM from the Azure CLI and provision a new VM.
-  ms.date: 6/12/2019
+  ms.date: 8/31/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -13,6 +13,6 @@ metadata:
   zone_pivot_groups: platform-cloud
 interactive: bash
 azureSandbox: true
-durationInMinutes: 10
+durationInMinutes: 15
 content: |
   [!include[](includes/4-exercise-create-image-provision-vm.md)]

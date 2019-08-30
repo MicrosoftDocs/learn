@@ -2,61 +2,61 @@
 
 Content/Media/assets
 
-- [ ] Remove regions ("en-US") from URLs
+- [x] Remove regions ("en-US") from URLs
 
-- [ ] Final images/screenshots are present
+- [x] Final images/screenshots are present
 
-- [ ] Badge images are present
+- [x] Badge images are present
 
-- [ ] Verify Acrolinx score for all content (score > 80)
+- [x] Verify Acrolinx score for all content (score > 80)
 
 Index.yml
 
-- [ ] Title is set and conforms to standards
+- [x] Title is set and conforms to standards
 
-- [ ] Description is set and follows guidelines (doesn't duplicate title)
+- [x] Description is set and follows guidelines (doesn't duplicate title)
 
-- [ ] Summary is set and follows guidelines
+- [x] Summary is set and follows guidelines
 
-- [ ] cardDescription is set if summary is more than 2 sentences
+- [x] cardDescription is set if summary is more than 2 sentences
 
-- [ ] Abstract is set and lists objectives (no periods)
+- [x] Abstract is set and lists objectives (no periods)
 
-- [ ] Prerequisites are set, or set to "None"
+- [x] Prerequisites are set, or set to "None"
 
-- [ ] ms.date is set to publication date
+- [x] ms.date is set to publication date
 
-- [ ] Author and ms.author are set
+- [x] Author and ms.author are set
 
-- [ ] ms.prod is set to "learning-azure"
+- [x] ms.prod is set to "learning-azure"
 
-- [ ] iconUrl is set and points to a valid svg
+- [x] iconUrl is set and points to a valid svg
 
-- [ ] badge has uid child node and uses module UID + ".badge"
+- [x] badge has uid child node and uses module UID + ".badge"
 
-- [ ] all units are listed in the proper order
+- [x] all units are listed in the proper order
 
 Unit YAML files
 
-- [ ] uid is set and matches index.yml
+- [x] uid is set and matches index.yml
 
-- [ ] Title is set and conforms to standards
+- [x] Title is set and conforms to standards
 
-- [ ] ms.date is set to initial publish date
+- [x] ms.date is set to initial publish date
 
-- [ ] Author and ms.author are set
+- [x] Author and ms.author are set
 
-- [ ] durationInMinutes is set to an accurate value
+- [x] durationInMinutes is set to an accurate value
 
-- [ ] interactive is set to bash or powershell (if cloud shell is used)
+- [x] interactive is set to bash or powershell (if cloud shell is used)
 
-- [ ] azureSandbox is set to true if Sandbox is needed
+- [x] azureSandbox is set to true if Sandbox is needed
 
-- [ ]  Knowledge checks reviewed for spelling and accuracy
+- [x]  Knowledge checks reviewed for spelling and accuracy
 
-- [ ] ROBOTS: NOINDEX is in metadata block
+- [x] ROBOTS: NOINDEX is in metadata block
 
 Exercises
 
-- [ ] All exercise units have "Exercise -"  prefix on titles
+- [x] All exercise units have "Exercise -"  prefix on titles
 

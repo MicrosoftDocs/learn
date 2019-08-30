@@ -3,7 +3,7 @@ uid: learn.deploy-vms-from-vhd-templates
 metadata:
   title: Deploy Azure virtual machines from VHD templates
   description: Standardize and automate your virtual machine deployments to minimize manual configuration, variance, and error.
-  ms.date: 6/12/2019
+  ms.date: 8/31/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial

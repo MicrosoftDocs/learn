@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.deploy-vms-from-vhd-templates.2-azure-vm-disk-imaging-capabilities
-title: Disk imaging capabilities for Azure virtual machines
+title: Disk image capabilities for Azure virtual machines
 metadata:
-  title: Disk imaging capabilities for Azure virtual machines
-  description: Disk imaging capabilities for Azure virtual machines
-  ms.date: 6/12/2019
+  title: Disk image capabilities for Azure virtual machines
+  description: Disk image capabilities for Azure virtual machines
+  ms.date: 8/31/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial

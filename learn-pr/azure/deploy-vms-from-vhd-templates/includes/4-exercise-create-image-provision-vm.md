@@ -36,10 +36,10 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 2. Run the following command to find the public IP address of the new virtual machine.
 
     ```azurecli
-    az vm list-ip-addresses \
+    echo http://$(az vm list-ip-addresses \
         --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --name MyWindowsVM \
-        --output table
+        --output tsv)
     ```
 
 3. In the web browser, navigate to the public IP address of the virtual machine. Verify that a web page displaying the name of the virtual machine, *MyWindowsVM*, appears.
@@ -76,10 +76,10 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 2. Run the following command to find the public IP address of the new virtual machine.
 
     ```azurecli
-    az vm list-ip-addresses \
+    echo http://$(az vm list-ip-addresses \
         --resource-group <rgn>[Sandbox reource group name]</rgn> \
         --name MyUbuntuVM \
-        --output table
+        --output txv)
     ```
 
 3. In the web browser, navigate to the public IP address of the virtual machine. Verify that a web page displaying the name of the virtual machine *MyUbuntuVM* appears.
@@ -253,10 +253,10 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 1. Run the following command to find the public IP address of the new virtual machine.
 
     ```azurecli
-    az vm list-ip-addresses \
+    echo http://$(az vm list-ip-addresses \
         --resource-group <rgn>[Sandbox reource group name]</rgn> \
         --name MyVMFromImage \
-        --output table
+        --output tsv)
     ```
 
 1. In the web browser, navigate to the public IP address of the new virtual machine. Verify that a web page displaying the name of the virtual machine from which the image was built, *MyUbuntuVM*.
@@ -288,10 +288,10 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 1. Run the following command to find the public IP address of the new virtual machine.
 
     ```azurecli
-    az vm list-ip-addresses \
+    echo http://$(az vm list-ip-addresses \
         --resource-group <rgn>[Sandbox reource group name]</rgn> \
         --name MyVMFromImage \
-        --output table
+        --output tsv)
     ```
 
 1. In the web browser, navigate to the public IP address of the new virtual machine. Verify that a web page displaying the name of the virtual machine from which the image was built, *MyWindowsVM*.
