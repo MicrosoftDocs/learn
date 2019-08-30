@@ -11,7 +11,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 interactive: bash
-azureSandbox: true
 durationInMinutes: 2
 content: |
   [!include[](includes/9-cleanup.md)]
