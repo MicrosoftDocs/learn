@@ -26,7 +26,6 @@ roles:
 products:
 - azure
 units:
-#TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
 - learn.azure.gather-metrics-from-blob-storage.1-introduction
 - learn.azure.gather-metrics-from-blob-storage.2-viewing-blob-metrics-in-azure-portal
 - learn.azure.gather-metrics-from-blob-storage.3-exercise-specify-monitor-blob-metrics
