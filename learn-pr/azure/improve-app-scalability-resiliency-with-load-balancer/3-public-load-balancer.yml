@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.improve-app-scalability-resiliency-with-load-balancer.3-configure-public-load-balancer
+uid: learn.improve-app-scalability-resiliency-with-load-balancer.3-public-load-balancer
 metadata:
   title: Configure a public load balancer
   description: In this unit, you will learn how to choose and configure a distribution mode in Azure Load Balancer.
@@ -12,4 +12,4 @@ metadata:
 title: Configure a public load balancer
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-configure-public-load-balancer.md)]
+  [!include[](includes/3-public-load-balancer.md)]

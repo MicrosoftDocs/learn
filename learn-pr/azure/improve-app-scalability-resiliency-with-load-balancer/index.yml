@@ -30,7 +30,7 @@ units:
 - learn.improve-app-scalability-resiliency-with-load-balancer.2-load-balancer-features
 - learn.improve-app-scalability-resiliency-with-load-balancer.3-configure-public-load-balancer
 - learn.improve-app-scalability-resiliency-with-load-balancer.4-exercise-configure-public-load-balancer
-- learn.improve-app-scalability-resiliency-with-load-balancer.5-configure-internal-load-balancer
+- learn.improve-app-scalability-resiliency-with-load-balancer.5-internal-load-balancer
 - learn.improve-app-scalability-resiliency-with-load-balancer.6-summary
 badge:
   uid: learn.improve-app-scalability-resiliency-with-load-balancer.badge

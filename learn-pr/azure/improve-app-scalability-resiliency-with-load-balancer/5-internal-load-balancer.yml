@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
-uid: learn.improve-app-scalability-resiliency-with-load-balancer.5-configure-internal-load-balancer
+uid: learn.improve-app-scalability-resiliency-with-load-balancer.5-internal-load-balancer
 metadata:
-  title: Configure an internal load balancer
+  title: Internal load balancers
   description: In this unit, you will learn how to configure Azure Load Balancer to distribute internal traffic between resources.
   ms.date: 05/31/2019
   author: jboeshart
@@ -9,10 +9,10 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Configure an internal load balancer
+title: Internal load balancer
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-configure-internal-load-balancer.md)]
+  [!include[](includes/5-internal-load-balancer.md)]
 quiz:
   title: Check your knowledge
   questions:
