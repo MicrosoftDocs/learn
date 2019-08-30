@@ -17,7 +17,7 @@ abstract:  |
   - Clean data 
   - Manage tables
 prerequisites:  | 
-  [!include[](../../includes/azure-subscription-prerequisite.md)]
+  [!include[](../../includes/azure-databricks-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/perform-advanced-data-transformation-in-azure-databricks.svg
 levels:
 - intermediate

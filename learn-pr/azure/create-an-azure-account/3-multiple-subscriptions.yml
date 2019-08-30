@@ -5,8 +5,8 @@ metadata:
   title: Using multiple Azure subscriptions; billing and access management
   description: Using multiple Azure subscriptions; billing and access management
   ms.date: 01/1/2019
-  author: markjulmar
-  ms.author: smmark
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

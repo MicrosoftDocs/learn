@@ -57,7 +57,7 @@ groups:
     - id: powershell
       title: PowerShell
     - id: portal
-      title: Azure Portal
+      title: Azure portal
 - id: dev-lang-csharp-javascript
   title: Development language
   prompt: Choose your development language
@@ -178,7 +178,7 @@ groups:
       title: Visual Studio
 - id: visualstudio
   title: Visual Studio
-  prompt: Choose your verion of Visual Studio
+  prompt: Choose your version of Visual Studio
   pivots:
     - id: vs2015
       title: Visual Studio 2015
@@ -186,3 +186,11 @@ groups:
       title: Visual Studio 2017
     - id: vs2019
       title: Visual Studio 2019
+- id: aspnet-core-identity-data-store
+  title: Identity-Data-Store
+  prompt: Choose the ASP.NET Core Identity data store
+  pivots:
+    - id: pg
+      title: PostgreSQL
+    - id: sql
+      title: SQL Server

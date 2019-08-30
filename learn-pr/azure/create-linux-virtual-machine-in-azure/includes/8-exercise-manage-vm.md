@@ -1,10 +1,12 @@
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
+
 Let's apply a network security group to our network, so that we only allow HTTP traffic through our server.
 
 ## Create a network security group
 
 Azure should have created a security group for us because we indicated we wanted SSH access. But let's create a new security group, so you can walk through the entire process. This is particularly important if you decide to create your virtual network _before_ your VMs. As mentioned earlier, security groups are _optional_ and not necessarily created with the network.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click the **Create a resource** button in the left-corner sidebar to start a new resource creation.
+1. In the [Azure portal](https://portal.azure.com/?azure-portal=true), click the **Create a resource** button in the left-corner sidebar to start a new resource creation.
 
 1. Type **Network security group** into the filter box and select the matching item in the list.
 

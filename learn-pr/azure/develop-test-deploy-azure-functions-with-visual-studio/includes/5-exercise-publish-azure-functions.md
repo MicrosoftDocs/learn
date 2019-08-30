@@ -12,8 +12,6 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
 1. Click **Create a resource**, click **Compute**, and then click **Function App**.
 
-    <!-- NOTE TO REVIEWER. Current sandbox policy prohibits creating Azure Function Apps. The steps in this exercise have been written to assume that this restriction will be removed for this module -->
-
 1. In the **Function App** window, specify the following settings:
 
     > [!NOTE]

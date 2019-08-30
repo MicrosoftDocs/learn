@@ -4,8 +4,8 @@ metadata:
   title: Create an Azure function triggered by a webhook
   description: Create an Azure function triggered by a webhook
   ms.date: 04/30/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: AndrewJByrne
+  ms.author: anbyrne
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

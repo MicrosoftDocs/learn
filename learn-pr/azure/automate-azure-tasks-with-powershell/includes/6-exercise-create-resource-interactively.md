@@ -27,19 +27,19 @@ Let's create a new Azure VM with PowerShell.
       > - Have a digit
       > - Have a special character (Regex match [\W_])
     - Add the `-OpenPorts` parameter and pass "22" as the port - this will let us SSH into the machine.
- 
+
     ```powershell
     New-AzVm -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -Name "testvm-eus-01" -Credential (Get-Credential) -Location "East US" -Image UbuntuLTS -OpenPorts 22
     ```
 
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
-    
+
 1. This will take a few minutes to complete. Once it does, you can query it and assign the VM object to a variable (`$vm`).
 
     ```powershell
     $vm = Get-AzVM -Name "testvm-eus-01" -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
     ```
-    
+
 1. Then query the value to dump out the information about the VM:
 
     ```powershell
@@ -62,7 +62,7 @@ Let's create a new Azure VM with PowerShell.
     ProvisioningState : Succeeded
     StorageProfile    : {ImageReference, OsDisk, DataDisks}
     ```
-    
+
 1. You can reach into complex objects through a dot (".") syntax. For example, to see the properties in the `VMSize` object associated with the HardwareProfile section you can type:
 
     ```powershell
@@ -88,7 +88,6 @@ Let's create a new Azure VM with PowerShell.
     ```
 
     Go ahead and log out by typing `exit`.
-
 
 ## Delete a VM
 
@@ -127,7 +126,7 @@ This is because the `Remove-AzVM` command _just deletes the VM_. It doesn't clea
     ```powershell
     $vm | Remove-AzNetworkInterface –Force
     ```
-    
+
 1. Delete the managed OS disks and storage account
 
     ```powershell

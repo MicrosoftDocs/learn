@@ -2,7 +2,7 @@
 uid: learn.design-your-migration-to-azure.1-introduction
 metadata:
   title: Introduction
-  description: There are several tools that can help you achieve a successful migration of services to Azure, these include Azure Migrate, Azure Site Recovery and the Azure Database Migration service.
+  description: Several tools can help you migrate services successfully to Azure. They are Azure Migrate, Azure Site Recovery, and the Azure Database Migration Service.
   ms.date: 07/30/2019
   author: jboeshart
   ms.author: jaboes

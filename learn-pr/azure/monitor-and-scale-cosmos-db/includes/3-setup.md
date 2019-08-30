@@ -1,6 +1,5 @@
 In this unit, you'll create an Azure Cosmos DB account and use a console application to populate the database.
 
-<!-- Activate the sandbox -->
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
 ## Create your database account
