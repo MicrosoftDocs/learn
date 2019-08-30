@@ -32,15 +32,17 @@ Suppose you have to troubleshoot a VNet created by your colleagues. Unless you w
 We use the Azure portal to view the topology of an Azure network. In the Azure portal, we'll:
 
 1. Navigate to **All Services > Networking > Network Watcher**.
+
 1. Select **Topology**.
+
 1. Select a subscription, the resource group of a virtual network, and then select the virtual network itself.
 
-> [!NOTE]
-> To generate the topology, you need a Network Watcher in the same region as the virtual network.
+    > [!NOTE]
+    > To generate the topology, you need a Network Watcher in the same region as the virtual network.
 
-Here's an example of a topology generated for a virtual network named MyVNet:
+    Here's an example of a topology generated for a virtual network named MyVNet:
 
-[![](../media/2-network-watcher-topology.png "A diagram that shows a virtual network topology as shown in Network Watcher")](../media/2-network-watcher-topology-expanded-1.png#lightbox)
+    [![](../media/2-network-watcher-topology.png "A diagram that shows a virtual network topology as shown in Network Watcher")](../media/2-network-watcher-topology-expanded-1.png#lightbox)
 
 ### What is the Connection Monitor tool?
 

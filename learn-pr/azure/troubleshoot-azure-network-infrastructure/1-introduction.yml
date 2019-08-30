@@ -2,7 +2,7 @@
 uid: learn.troubleshoot-azure-network-infrastructure.1-introduction
 metadata:
   title: Introduction
-  description: In this unit, you will learn about a business problem that can be addressed by using Azure network troubleshooting tools.
+  description: Learn how to investigate and diagnose problems in your Azure virtual networks by using Network Watcher and other tools.
   ms.date: 13/08/2019
   author: jboeshart
   ms.author: jaboes
@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Introduction
-durationInMinutes: 10
+durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

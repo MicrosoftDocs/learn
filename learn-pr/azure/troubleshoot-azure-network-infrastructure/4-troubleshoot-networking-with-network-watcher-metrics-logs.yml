@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Troubleshoot networking using Network Watcher metrics and logs
-durationInMinutes: 10
+durationInMinutes: 9
 content: |
   [!include[](includes/4-troubleshoot-networking-with-network-watcher-metrics-logs.md)]

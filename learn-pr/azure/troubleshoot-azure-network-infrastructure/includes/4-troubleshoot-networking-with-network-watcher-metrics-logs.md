@@ -15,6 +15,8 @@ To view the usage and quota information, navigate to **All Services > Networking
 - Virtual networks
 - Public IP addresses
 
+Here is an example of the 
+
 [![](../media/4-usage-and-quotas.png "A screenshot showing usage and quotas using the Network Watcher")](../media/4-usage-and-quotas-expanded-1.png#lightbox)
 
 ## Logs

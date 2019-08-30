@@ -12,6 +12,6 @@ metadata:
 title: Exercise - Troubleshoot networking using Network Watcher monitoring and diagnostic tools
 interactive: bash
 azureSandbox: true
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/3-exercise-troubleshoot-networking-with-network-watcher.md)]
