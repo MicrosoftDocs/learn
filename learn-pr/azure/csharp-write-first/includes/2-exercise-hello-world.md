@@ -104,7 +104,9 @@ Hello World!
 Congratulations! You wrote your first lines of code!
 ```
 
-So, you can see that we used two different techniques to print a message.  The first technique used `Console.WriteLine()` to print an entire message to the output console.  At the end of the line, it added a line feed similar to how you might use the `Enter` or `Return` key on your keyboard to create a new line of text.  
+Admittedly, the new lines of code we added could easily be shortened to a single line of code like we did in Step 1.  However, we wanted you to learn a second technique to print a message to the output console.  
+
+The first technique used `Console.WriteLine()` to print an entire message to the output console.  At the end of the line, it added a line feed similar to how you might use the `Enter` or `Return` key on your keyboard to create a new line of text.  
 
 The second technique used `Console.Write()` to print to the output console, but at the end, it doesn't add a line feed.  So, the next call to `Console.Write()` prints an additional message to the same line.
 

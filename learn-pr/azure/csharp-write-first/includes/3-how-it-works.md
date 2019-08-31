@@ -22,7 +22,7 @@ When you typed code into the .NET Editor, you may have noticed subtle changes to
 
 Let's focus on the following line of code you wrote:
 
-```csharp-interactive
+```csharp
 Console.WriteLine("Hello World!");
 ```
 
@@ -48,26 +48,10 @@ Don't worry if all of these ideas and terms don't make sense.  For now, all you 
 
 ## Understanding the flow of execution
 
-Recall that in step 4 of the previous exercise, we added more code to print a second message.
+Also, it's important to understand the flow of execution.  In other words, our code instructions were executed in order, one line at a time, until there were no more instructions to execute.
 
-```csharp-interactive
-Console.WriteLine("Hello World!");
+Later, you'll learn how to change the flow of execution by skipping over certain lines of code when a condition is met.  You'll change the flow of execution by iterating over the same lines of code a certain number of times, or iterating over the same lines of code until a condition is met.  You'll change the flow of execution by moving lines of code into a different code structure called a method, then you'll call those lines as needed throughout your entire program.
 
-Console.Write("Congratulations!");
-Console.Write(" ");
-Console.Write("You wrote your first lines of code!");
-```
-
-Admittedly, we could have shortened those three additional lines of code into a single additional line of code like so:
-
-```csharp-interactive
-Console.WriteLine("Hello World!");
-
-Console.Write("Congratulations! You wrote your first lines of code!");
-```
-
-However, we wanted you to see the difference between the `Console.WriteLine()` method and the `Console.Write()` method.
-
-Also, it's important to understand the flow of execution.  In other words, our code instructions were executed in order, one line at a time, until there were no more instructions to execute.  Later, you'll learn how to change the flow of execution by skipping over certain lines of code when a condition is met.  You'll change the flow of execution by iterating over the same lines of code a certain number of times, or iterating over the same lines of code until a condition is met.  You'll learn how to move lines of code into a different code structure called a method so that you can call those lines as needed throughout your entire program.  The flow of execution in this application was simple, but you'll learn why and how to change the order in which the code is executed.
+The flow of execution in this application was simple, but you'll learn why and how to change the code's order of execution.
 
 Now let's test what you've learned.  Each module features a simple challenge and if you get stuck, we'll supply you with a solution.  In the next unit, you'll get a chance to write some C# on your own.
