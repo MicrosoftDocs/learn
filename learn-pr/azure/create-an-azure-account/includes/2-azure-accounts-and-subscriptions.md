@@ -4,16 +4,16 @@ With a free Azure account and subscription, you can build, test, and deploy ente
 
 ## What is an Azure account?
 
-An _Azure account_ is tied to a specific identity and holds information like:
+An _Azure account_ is an identity in either Azure AD, or a directory that is trusted by Azure AD, such as a work or school organization. It holds information such as:
 
 - Name, email, and contact preferences
 - Billing information such as a credit card
 
-An Azure account is what you use to sign in to the Azure website and administer or deploy services. Every Azure account is associated with one or more  _subscriptions_.
+You use an Azure account to sign in to the Azure website and administer or deploy services. Every Azure account is associated with one or more  _subscriptions_.
 
 ## What is an Azure subscription?
 
-An _Azure subscription_ is a logical container used to provision resources in Microsoft Azure. It holds the details of all your resources like virtual machines, databases, and so on.
+An _Azure subscription_ is a logical container used to provision resources in Microsoft Azure. It holds the details of all your resources like virtual machines, databases, and so on. Every Azure subscription is associated with Azure AD. Users and services that access the resources of the subscription first need to authenticate with Azure AD.
 
 ### Subscription types
 
