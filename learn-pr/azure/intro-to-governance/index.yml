@@ -8,7 +8,6 @@ metadata:
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Apply and monitor infrastructure standards with Azure Policy
 summary: Learn about governance and management in Azure services.
 abstract: |
@@ -25,6 +24,7 @@ roles:
 - developer
 - administrator
 - solution-architect
+#- security-engineer
 products:
 - azure
 units:

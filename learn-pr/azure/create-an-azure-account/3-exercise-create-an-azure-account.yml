@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-exercise-create-an-azure-account.md)]
+  [!include[](includes/3-exercise-create-an-azure-account.md)]
