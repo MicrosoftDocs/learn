@@ -48,10 +48,6 @@ Don't worry if all of these ideas and terms don't make sense.  For now, all you 
 
 ## Understanding the flow of execution
 
-Also, it's important to understand the flow of execution.  In other words, our code instructions were executed in order, one line at a time, until there were no more instructions to execute.
-
-Later, you'll learn how to change the flow of execution by skipping over certain lines of code when a condition is met.  You'll change the flow of execution by iterating over the same lines of code a certain number of times, or iterating over the same lines of code until a condition is met.  You'll change the flow of execution by moving lines of code into a different code structure called a method, then you'll call those lines as needed throughout your entire program.
-
-The flow of execution in this application was simple, but you'll learn why and how to change the code's order of execution.
+Also, it's important to understand the flow of execution.  In other words, your code instructions were executed in order, one line at a time, until there were no more instructions to execute.  Some instructions will require the CPU to wait before it can continue.  Other  instructions can be used to change the flow of execution.  You'll learn about these special situations as you learn more C# syntax and methods in the .NET Class Library.
 
 Now let's test what you've learned.  Each module features a simple challenge and if you get stuck, we'll supply you with a solution.  In the next unit, you'll get a chance to write some C# on your own.

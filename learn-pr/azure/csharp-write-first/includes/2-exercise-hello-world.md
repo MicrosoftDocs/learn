@@ -6,10 +6,9 @@ There's a long standing tradition among software developers to print the phrase 
 
 ### Step 1: Type the code into the .NET Editor
 
-The .NET Editor and output pane provide a great in-browser experience that's perfect for this tutorial approach.  Later, you'll graduate to use either Visual Studio Code or the full Visual Studio IDE to build larger and more interesting code examples -- even entire applications.
+The .NET Editor and output pane provide a great in-browser experience that's perfect for this tutorial approach.  The .NET Editor is located on the right-hand side of this web page.  The output pane is below it.
 
-> [!NOTE] 
-> You might be tempted to use the `Copy` or `Run` button below and skip all the typing.  However, we encourage you to type this line of code yourself.  Typing the code yourself builds muscle memory and helps you gain insights that you wouldn't get otherwise.
+Later, you'll graduate to use either Visual Studio Code or the full Visual Studio IDE to build larger and more interesting code examples -- even entire applications.
 
 Type this code into the .NET Editor on the right:
 
@@ -18,6 +17,9 @@ Console.WriteLine("Hello World!");
 ```
 
 We'll explain how and why it works soon.  But first, you should see it running and ensure you didn't type it incorrectly.  To do that, you'll run your code.
+
+> [!NOTE] 
+> You might be tempted to use the `Copy` or `Run` button below and skip all the typing.  However, we encourage you to type this line of code yourself.  Typing the code yourself builds muscle memory and helps you gain insights that you wouldn't get otherwise.
 
 ### Step 2: Press the green Run button 
 
@@ -72,7 +74,8 @@ Fortunately, errors are never permanent.  You merely spot the error, fix it, and
 
 If you got an error when you ran your code, take a moment, look closely, and examine each character and make sure you typed this line of code exactly.
 
-The code editor is constantly monitoring the code you write by performing pre-compilation to find potential errors.  It will try to help you by adding red-squiggly lines beneath code that will produce an error.
+> [!NOTE]
+> The code editor is constantly monitoring the code you write by performing pre-compilation to find potential errors.  It will try to help you by adding red-squiggly lines beneath code that will produce an error.
 
 Common mistakes new programmers make:
 
