@@ -1,10 +1,17 @@
-The C# programming language allows you to build many types of applications, from business applications to analyze and process data, dynamic web applications, games, financial or scientific applications, cloud-based applications, mobile applications, and more.  But how do you get started?
+The C# programming language allows you to build many types of applications, like:
 
-Suppose you want to become an author who writes fiction novels.  What would you need to know?  Obviously, you would need to understand the absolute basics to communicate to your readers: a command of the alphabet and a strong vocabulary.  You would need an understanding of grammar and basic sentence structure.  You would have been taught how to structure paragraphs and how to convey emotion through wording choices.  Once you have mastered these foundational concepts, then you could learn more advanced concepts specific to writing fiction novels, like character development and creating a story arch with plot points.
+- business applications to capture, analyze, and process data
+- dynamic web applications that can be accessed from a web browser
+- games, both 2D and 3D
+- financial and scientific applications
+- cloud-based applications
+- mobile applications
 
-Similarly, before you can build entire applications with C#, you would need to begin with small foundational concepts and build on them.
+But how do you get started?
 
 By far, the best way to learn how to code is to *write* code as much code as possible.  So, we encourage you to type along with the exercises in this module and the others in this learning path.  Typing the code yourself in each exercise and solving small coding challenges will accelerate your learning.
+
+Furthermore, you need to begin learning small foundational concepts and build on them with continual practice and exploration.
 
 In this module, you will:
   - Write your first lines of C# code
