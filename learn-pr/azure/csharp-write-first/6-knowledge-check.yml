@@ -25,7 +25,7 @@ quiz:
     - content: "The compiler primarily executes your code."
       isCorrect: false
       explanation: "The compiler doesn't execute your code, but makes it possible for your code to be executed."
-    - content: "The compiler primarly converts your code into an executable format that the computer can understand."
+    - content: "The compiler primarily converts your code into an executable format that the computer can understand."
       isCorrect: true
       explanation: "Correct!"
   - content: "Which of the following statements is **true** about C#."
