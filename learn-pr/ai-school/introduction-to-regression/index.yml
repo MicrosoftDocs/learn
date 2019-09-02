@@ -29,7 +29,6 @@ products:
 - azure
 units: 
 - learn-wwl.introduction-to-regression.introduction
-- learn-wwl.introduction-to-regression.introduction-to-regression
 - learn-wwl.introduction-to-regression.simple-linear-regression
 - learn-wwl.introduction-to-regression.exercise-simple-linear-regression
 - learn-wwl.introduction-to-regression.multiple-linear-regression
