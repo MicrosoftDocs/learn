@@ -39,6 +39,7 @@ units:
 - learn.introduction-to-security.5-network-security
 - learn.introduction-to-security.6-azure-information-protection
 - learn.introduction-to-security.7-advanced-threat-protection
+- learn.introduction-to-security.microsoft-sdl
 - learn.introduction-to-security.8-summary
 badge:
   uid: learn.introduction-to-security.badge
