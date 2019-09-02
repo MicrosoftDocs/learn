@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.introduction-to-regression.simple-linear-regression
-title: Simple Linear Regression
+title: Predict values with linear regression
 metadata:
-  title: Simple Linear Regression
+  title: Predict values with linear regression 
   description: Let's quickly go through predicting a number using one feature.
   ms.date: 06/30/2019
   author: markjulmar
@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-simple-linear-regression.md)]
+  [!include[](includes/2-simple-linear-regression.md)]
 quiz:
   title: Check your knowledge
   questions:
