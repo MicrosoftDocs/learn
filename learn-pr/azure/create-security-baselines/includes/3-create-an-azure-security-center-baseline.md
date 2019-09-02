@@ -93,7 +93,7 @@ Azure Security Center may recommend that you add a web application firewall (WAF
 
 ### Enable Vulnerability Assessment - Level 1
 
-The vulnerability assessment in Azure Security Center is part of the Security Center virtual machine (VM) recommendations. If Security Center doesn't find a vulnerability assessment solution installed on your VM, it recommends that you install one. A partner agent, after being deployed, starts reporting vulnerability data to the partner’s management platform. In turn, the partner's management platform provides vulnerability and health monitoring data back to Security Center.
+The vulnerability assessment in Azure Security Center is part of the Security Center virtual machine (VM) recommendations. If Security Center doesn't find a vulnerability assessment solution installed on your VM, it recommends that you install one. A partner agent, after being deployed, starts reporting vulnerability data to the partner's management platform. In turn, the partner's management platform provides vulnerability and health monitoring data back to Security Center.
 
 1. Sign in to the Azure portal.
 1. Select **Security Policy** on the **Security Center** main menu.
@@ -153,7 +153,7 @@ Azure Security Center will recommend that you enable Transparent Data Encryption
 
 ### Set Security Contact Email and Phone Number - Level 1
 
-Azure Security Center will recommend that you provide security contact details for your Azure subscription if you haven’t already. This information will be used by Microsoft to contact you if the Microsoft Security Response Center (MSRC) discovers that your customer data has been accessed by an unlawful or unauthorized party. MSRC performs select security monitoring of the Azure network and infrastructure and receives threat intelligence and abuse complaints from third parties.
+Azure Security Center will recommend that you provide security contact details for your Azure subscription if you haven't already. This information will be used by Microsoft to contact you if the Microsoft Security Response Center (MSRC) discovers that your customer data has been accessed by an unlawful or unauthorized party. MSRC performs select security monitoring of the Azure network and infrastructure and receives threat intelligence and abuse complaints from third parties.
 
 1. Sign in to the Azure portal.
 1. Select **Security Policy** on the **Security Center** main menu.
@@ -163,7 +163,7 @@ Azure Security Center will recommend that you provide security contact details f
 
 ### Enable Send me emails about alerts - Level 1
 
-Azure Security Center will recommend that you provide security contact details for your Azure subscription if you haven’t already.
+Azure Security Center will recommend that you provide security contact details for your Azure subscription if you haven't already.
 
 1. Sign in to the Azure portal.
 1. Select **Security Policy** on the **Security Center** main menu.
@@ -173,7 +173,7 @@ Azure Security Center will recommend that you provide security contact details f
 
 ### Enable Send email also to subscription owners - Level 1
 
-Azure Security Center will recommend that you provide security contact details for your Azure subscription if you haven’t already.
+Azure Security Center will recommend that you provide security contact details for your Azure subscription if you haven't already.
 
 1. Sign in to the Azure portal.
 1. Select **Security Policy** on the **Security Center** main menu.

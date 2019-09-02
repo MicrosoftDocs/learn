@@ -1,4 +1,4 @@
-Microsoft’s cybersecurity group in conjunction with the Center for Internet Security ([CIS](https://www.cisecurity.org/)) developed best practices to help establish security baselines for the Azure platform.
+Microsoft's cybersecurity group in conjunction with the Center for Internet Security ([CIS](https://www.cisecurity.org/)) developed best practices to help establish security baselines for the Azure platform.
 
 ![A diagram of the workflow for securing Azure workloads with CIS benchmark.](../media/1-cis-benchmark.png)
 

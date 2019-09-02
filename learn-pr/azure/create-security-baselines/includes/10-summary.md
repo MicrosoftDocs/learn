@@ -1,6 +1,6 @@
 We've covered a lot of ground in this module to create a baseline security checklist for commonly used Azure services. Let's quickly recap what we've gone through.
 
-1. **Turn on Azure Security Center - it's free** - Upgrade your Azure subscription to Azure Security Center Standard. Security Center’s Standard tier helps you find and fix security vulnerabilities, apply access and application controls to block malicious activity, detect threats using analytics and intelligence, and respond quickly when under attack.
+1. **Turn on Azure Security Center - it's free** - Upgrade your Azure subscription to Azure Security Center Standard. Security Center's Standard tier helps you find and fix security vulnerabilities, apply access and application controls to block malicious activity, detect threats using analytics and intelligence, and respond quickly when under attack.
 
 1. **Adopt CIS Benchmarks** - Apply them to existing tenants.
 
