@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.ha-application-storage-with-grs.4-designing-applications-ha-dr
+uid: learn.ha-application-storage-with-grs.4-design-applications-ha-dr
 metadata:
   title: Design HA applications to handle disaster recovery
   description: Learn how to design HA applications to handle disaster recovery
@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Design HA Applications to handle disaster recovery
+title: Design HA applications to handle disaster recovery
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-designing-applications-ha-dr.md)]
+  [!include[](includes/4-design-applications-ha-dr.md)]
