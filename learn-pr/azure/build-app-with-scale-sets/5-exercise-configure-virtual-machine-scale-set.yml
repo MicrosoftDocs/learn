@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-app-with-scale-sets.exercise-configure-a-virtual-machine-scale-set
+uid: learn.build-app-with-scale-sets.exercise-configure-virtual-machine-scale-set
 title: Exercise - Configure a virtual machine scale set
 
 metadata:
   title: Exercise - Configuring a virtual machine scale set
   description: Exercise - Configuring a virtual machine scale set
-  ms.date: 08/05/2019
+  ms.date: 09/02/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -15,4 +15,4 @@ metadata:
 durationInMinutes: 10
 azureSandbox: false
 content: |
-  [!include[](includes/5-exercise-configure-a-virtual-machine-scale-set.md)]
+  [!include[](includes/5-exercise-configure-virtual-machine-scale-set.md)]
