@@ -35,6 +35,7 @@ units:
 - learn.introduction-to-security.2a-azure-security-center
 - learn.introduction-to-security.3-identity-and-access
 - learn.introduction-to-security.4-encryption
+- learn.introduction-to-security.certificates
 - learn.introduction-to-security.5-network-security
 - learn.introduction-to-security.6-azure-information-protection
 - learn.introduction-to-security.7-advanced-threat-protection

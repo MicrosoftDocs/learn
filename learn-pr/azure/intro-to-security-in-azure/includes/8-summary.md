@@ -18,3 +18,7 @@ Here are some places to go to learn more about what we've covered today:
 - [Azure Security Center planning and operations guide](https://docs.microsoft.com/azure/security-center/security-center-planning-and-operations-guide)
 - [What is Microsoft Azure Information Protection?](https://docs.microsoft.com/azure/information-protection/what-is-information-protection/)
 - [Azure Advanced Threat Protection](https://azure.microsoft.com/features/azure-advanced-threat-protection/)
+- [Configuring SSL for an application in Azure](https://docs.microsoft.com/azure/cloud-services/cloud-services-configure-ssl-certificate-portal).
+- [What are service certificates?](https://docs.microsoft.com/azure/cloud-services/cloud-services-certs-create)
+- [What are management certificates?](https://docs.microsoft.com/azure/cloud-services/cloud-services-certs-create)
+- [Get started with Key Vault certificates](https://docs.microsoft.com/azure/key-vault/certificate-scenarios)
