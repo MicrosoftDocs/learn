@@ -44,17 +44,3 @@ quiz:
     - content: "Negative error."
       isCorrect: false
       explanation: "Incorrect. The error can not be negative."
-  - content: "For linear regression: At x=10, we have a data point at y=4. At x=10, our line gives a predicted value of y= 7. What is the error (squared difference) at this data point?"
-    choices:
-    - content: "0"
-      isCorrect: false
-      explanation: "Incorrect. Error comes from the y component, not the x."
-    - content: "3"
-      isCorrect: false
-      explanation: "Incorrect. Remember to square the difference."
-    - content: "9"
-      isCorrect: true
-      explanation: "Correct. y=4 for the data point, but y=7 for the predicted value. 7 – 4 = 3. We then square the value: 3 ^ 2 = 9."
-    - content: "-9"
-      isCorrect: false
-      explanation: "Incorrect. As the error is the squared difference, the error cannot be negative."
