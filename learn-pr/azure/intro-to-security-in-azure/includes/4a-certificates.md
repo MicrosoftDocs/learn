@@ -1,12 +1,13 @@
 As mentioned previously, Transport Layer Security (TLS) is the basis for encryption of website data in transit. TLS uses _certificates_ to encrypt and decrypt data. However, these certificates have a lifecycle that requires administrator management. A common security problem with websites is having expired TLS certificates that open security vulnerabilities.
 
+Certificates used in Azure are **x.509 v3** can be signed by a trusted certificate authority, or they can be self-signed. A self-signed certificate is signed by its own creator; therefore, it is not trusted by default. Most browsers can ignore this problem. However, you should only use self-signed certificates when developing and testing your cloud services. These certificates can contain a private or a public key and have a thumbprint that provides a means to identify a certificate in an unambiguous way. This thumbprint is used in the Azure configuration file to identify which certificate a cloud service should use.
+
 ## Types of certificates
 
-Certificates are used in Azure for cloud services (service certificates), and for authenticating with the management API (management certificates).
+Certificates are used in Azure for two primary purposes and are given a specific designation based on their intended use.
 
-Certificates used in Azure are **x.509 v3** can be signed by a trusted certificate authority, or they can be self-signed. A self-signed certificate is signed by its own creator; therefore, it is not trusted by default. Most browsers can ignore this problem. However, you should only use self-signed certificates when developing and testing your cloud services.
-
-Certificates used by Azure can contain a private or a public key. Certificates have a thumbprint that provides a means to identify them in an unambiguous way. This thumbprint is used in the Azure configuration file to identify which certificate a cloud service should use.
+1. **Service certificates** are used for cloud services
+1. **Management certificates** are used for authenticating with the management API
 
 ### Service certificates
 

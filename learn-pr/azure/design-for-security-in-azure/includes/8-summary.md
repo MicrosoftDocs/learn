@@ -18,4 +18,13 @@ Encryption is often the last layer of defense against access to your data. By us
 
 ### Network security
 
-Finally, we talked through securing your network. We looked at ways to secure traffic flow between applications and the internet. We described some ways to secure traffic flow amongst applications. And we wrapped up by looking at how to secure traffic flow between users and an application.
+Finally, we talked through securing your network. We looked at ways to secure traffic flow between applications and the Internet. We described some ways to secure traffic flow amongst applications. And we wrapped up by looking at how to secure traffic flow between users and an application.
+
+## Further reading
+
+To learn more about some of the topics discussed in this module, refer to the following external resources.
+
+- [Azure Architecture Center](https://docs.microsoft.com/azure/architecture/)
+- [Defense in Depth in Azure](https://azure.microsoft.com/resources/videos/defense-in-depth-security-in-azure/)
+- [Building zero-trust networks with Microsoft 365](https://www.microsoft.com/security/blog/2018/06/14/building-zero-trust-networks-with-microsoft-365/)
+- [Start using Azure Active Directory Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started)

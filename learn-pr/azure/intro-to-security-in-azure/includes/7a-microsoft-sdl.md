@@ -118,6 +118,4 @@ For more information about incident responses, see:
 
 * [Microsoft Security Response Center](https://www.microsoft.com/msrc)
 
-### Summary
-
 By introducing standardized security and compliance considerations throughout all phases of the development process, developers can help reduce the likelihood of vulnerabilities in products and services and avoid repeating the same security mistakes. Similarly, security integration throughout the operations lifecycle will assist in maintaining the integrity of those products and services. These Operational Security Assurance practices should align with the development processes. This will result in less time, and therefore cost, being spent on triage and response after the fact, and provide your customers with assurance that your products are highly secure.
