@@ -4,7 +4,7 @@ The most fundamental type of regression is linear regression. Linear regression 
 
 Simple linear regression is when we use one feature (x) to predict y. Below we have a data set with men's height (x) and shoe size (y):
 
-[shoe size chart without trend line]
+![Scatter plot graph showing height and shoe size. The Y-axis represents show size and the X-axis represents height in centimeters. The graph shows shoe size beginning at 6, with height at 120 centimeters. As height increases to 200 centimeters, shoe size increases, almost perfectly linearly, from 6 to 15.](../media/2-1-b.png)
 
 This will be our *training data*, which allows linear regression to identify the trend line. In this case, a straight line fits the data very well and so linear regression is appropriate.
 
