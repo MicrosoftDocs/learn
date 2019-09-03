@@ -30,7 +30,7 @@ units:
   - learn.ha-application-storage-with-grs.1-introduction
   - learn.ha-application-storage-with-grs.2-storage-account-replication-features
   - learn.ha-application-storage-with-grs.3-exercise-create-storage-account
-  - learn.ha-application-storage-with-grs.4-designing-applications-ha-dr
+  - learn.ha-application-storage-with-grs.4-design-applications-ha-dr
   - learn.ha-application-storage-with-grs.5-exercise-deploy-ha-application
   - learn.ha-application-storage-with-grs.6-summary
 badge:
