@@ -97,7 +97,7 @@ Identify the subtasks of *Enable secure external user access for your applicatio
     - You want to set up multi-factor authentication for the application. You notice you are unable to set up new conditional access policies. What might have happened?
     - Your organization wants to enable users in the local office to sign in to the application without being prompted for multi-factor authentication.  How could you meet this expectation?
 
-4. **Configure Azure B2C with MFA**
+4. **Configure Azure AD B2C with MFA**
 
     Walk through the process of implementing MFA in Azure B2C, using the portal. Describe the options available at each stage of the process. Summarize the experience of the end-user of an application once B2C and MFA are set up (how do they run an app, what will they see during authentication, what information will they be expected to provide?).
 

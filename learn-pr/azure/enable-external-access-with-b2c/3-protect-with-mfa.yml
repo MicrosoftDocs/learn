@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.enable-external-access-with-b2c.3-protect-with-mfa
+metadata:
+  title: Use multi-factor authentication to protect your application
+  description: Use multi-factor authentication to protect your application
+  ms.date: 09/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Use multi-factor authentication to protect your application
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-protect-with-mfa.md)]
