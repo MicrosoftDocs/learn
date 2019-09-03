@@ -11,6 +11,7 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 15
-# interactive: bash
+interactive: bash
+azureSandbox: true
 content: |
   [!include[](includes/6-exercise-connect-to-a-linux-vm-using-ssh.md)]
