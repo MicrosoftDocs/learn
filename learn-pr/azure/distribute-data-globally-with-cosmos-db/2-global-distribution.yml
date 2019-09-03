@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.distribute-data-globally-with-cosmos-db.2-global-distribution
 metadata:
-  title: Distribute data globally
+  title: Exercise - Distribute data globally
   description: Learn how to use Azure Cosmos DB to replicate your data in multiple regions around the world.
   ms.date: 09/24/2018
   author: rmcmurray
@@ -9,8 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Distribute data globally
-# interactive: azure-portal
+title: Exercise - Distribute data globally
 azureSandbox: true
 durationInMinutes: 8
 content: |

@@ -5,7 +5,6 @@ metadata:
   title: Check your knowledge
   description: 'Knowledge check for "Build a chat bot with the Azure Bot Service"'
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
   author: AndrewJByrne
   ms.author: anbyrne
   ms.topic: interactive-tutorial

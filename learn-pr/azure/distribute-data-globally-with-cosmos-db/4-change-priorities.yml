@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.distribute-data-globally-with-cosmos-db.4-change-priorities
 metadata:
-  title: Change global read and write priorities
+  title: Exercise - Change global read and write priorities
   description: Learn how to change the read and write priorities for your global regions.
   ms.date: 09/24/2018
   author: rmcmurray
@@ -9,8 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Change global read and write priorities
-# interactive: azure-portal
+title: Exercise - Change global read and write priorities
 azureSandbox: true
 durationInMinutes: 5
 content: |
