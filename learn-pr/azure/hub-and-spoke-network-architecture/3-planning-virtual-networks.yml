@@ -29,10 +29,10 @@ quiz:
       explanation: "Network service endpoints allow your resources to communicate privately with other Azure resources like Azure Storage. They can't be used to communicate between your own resources."
   - content: "What's the limit for the number of virtual networks you can connect to an ExpressRoute?"
     choices:
-    - content: 10
+    - content: "10"
       isCorrect: false
       explanation: "This is correct for a standard ExpressRoute circuit, but it isn't the only limit."
-    - content: 100
+    - content: "100"
       isCorrect: false
       explanation: "This is correct for a premium-add on ExpressRoute with a 10-Gbps or larger circuit, but it isn't the only limit."
     - content: Depends on the size of the circuit
