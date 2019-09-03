@@ -1,16 +1,16 @@
-Now that Fabrikam has analyzed their application, they are now ready to start the refactoring process to actually move services out of their monolithic architecture into microservices. Let's modify the application to move the package processing service into a microservice.
+Now that Fabrikam has analyzed their application, they're ready to start the refactoring process to move services out of their monolithic architecture into microservices. Let's modify the application to move the package processing service into a microservice.
 
-![Visualization of the resources for the drone delivery application](../media/6-drone-delivery-microservices.svg)
+![Visualization of the resources for the Drone Delivery application](../media/6-drone-delivery-microservices.svg)
 
-## Refactor application
+## Refactor the application
 
-Before we deploy the updated application, let's take a look at how it was updated. The monolithic app has a service to process packages, *PackageProcessor.cs*. After analyzing the performance of the application, this service was identified as a performance bottleneck. As customers continue to increase the demand for drone deliveries, this service becomes heavily loaded while it handles the scheduling and logistics for drone deliveries. This service is also fully managed by a dedicated team, and moving this service to a microservice would not only help with performance, but with improved development agility.
+Before we deploy the updated application, let's take a look at how it was updated. The monolithic app has a service to process packages, *PackageProcessor.cs*. After the performance of the application was analyzed, this service was identified as a performance bottleneck. As customers increase the demand for drone deliveries, this service becomes heavily loaded while it handles the scheduling and logistics for drone deliveries. This service is fully managed by a dedicated team. Moving this service to a microservice helps with performance and provides improved development agility.
 
-Let's look closer at the actual changes that have been made.
+Let's look closer at the changes that were made.
 
-### Drone Delivery before
+### Drone delivery before
 
-The core functionality of the package processing is handled by the `PackageProcessor` class in the [*PackageProcessor.cs*](https://github.com/MicrosoftDocs/mslearn-microservices-architecture/blob/master/src/before/DroneDelivery-before/Services/PackageProcessor.cs) file. In this example, it performs some work that is resource intensive. You could imagine a real world scenario where this might be calculating delivery times, delivery routes, and updating data sources with this information.
+The core functionality of the package processing is handled by the `PackageProcessor` class in the [*PackageProcessor.cs*](https://github.com/MicrosoftDocs/mslearn-microservices-architecture/blob/master/src/before/DroneDelivery-before/Services/PackageProcessor.cs) file. In this example, it performs some work that is resource intensive. A real-world scenario might include calculating delivery times and delivery routes and updating data sources with this information.
 
 ```csharp
 public class PackageProcessor : IPackageProcessor
@@ -24,11 +24,11 @@ public class PackageProcessor : IPackageProcessor
     }
 ```
 
-As requests for this service increase, resource utilization increases and is capped at the physical resources allocated to the monolithic application. If deployed on App Service, we can scale this up and out, but you'd ideally like this heavily used resource to scale independently to optimize performance and costs. In this scenario, we'll use Azure Functions to do just that.
+As requests for this service increase, resource utilization increases and is capped at the physical resources allocated to the monolithic application. If this service is deployed on Azure App Service, we can scale it up and out. Ideally, you want this heavily used resource to scale independently to optimize performance and costs. In this scenario, we use Azure Functions to do just that.
 
-### Drone Delivery after
+### Drone delivery after
 
-If you take a look at the [DroneDelivery-after](https://github.com/MicrosoftDocs/mslearn-microservices-architecture/blob/master/src/before/DroneDelivery-before/Services/PackageProcessor.cs) application code that we will deploy shortly, you'll see that the `PackageProcessor` class has been changed to a `PackageServiceCaller` class. It still implements the IPackageProcessor interface, but instead makes an HTTP call to the microservice.
+If you take a look at the [DroneDelivery-after](https://github.com/MicrosoftDocs/mslearn-microservices-architecture/blob/master/src/before/DroneDelivery-before/Services/PackageProcessor.cs) application code that we will deploy shortly, you see that the `PackageProcessor` class was changed to a `PackageServiceCaller` class. It still implements the IPackageProcessor interface, but instead it makes an HTTP call to the microservice.
 
 ```csharp
 public class PackageServiceCaller : IPackageProcessor
@@ -52,7 +52,7 @@ public class PackageServiceCaller : IPackageProcessor
     }
 ```
 
-The microservice will be deployed on an Azure Function. Its code can be found in [*PackageServiceFunction.cs*](https://github.com/MicrosoftDocs/mslearn-microservices-architecture/blob/master/src/after/PackageService/PackageServiceFunction.cs) and contains the following code.
+The microservice will be deployed on an Azure function. Its code can be found in [*PackageServiceFunction.cs*](https://github.com/MicrosoftDocs/mslearn-microservices-architecture/blob/master/src/after/PackageService/PackageServiceFunction.cs) and contains the following code.
 
 ```csharp
 public static class PackageServiceFunction
@@ -71,11 +71,11 @@ public static class PackageServiceFunction
     }
 ```
 
-By putting this code on an Azure Function, this service can scale independently as user load increases. This allows you to keep the services for the remaining application code optimized for the rest of the application, while allowing the package service to scale out as more requests for drone deliveries come in to the system.
+By putting this code on Azure Functions, this service can scale independently as user load increases. You can keep the services for the remaining application code optimized for the rest of the application. The package service scales out as more requests for drone deliveries come in to the system.
 
-Now let's redeploy the application. We'll deploy our refactored service on Azure Functions first, then deploy the refactored application on App Service, and point it to the function.
+Now let's redeploy the application. First, we deploy our refactored service on Azure Functions. Then we deploy the refactored application on App Service, and point it to the function.
 
-## Deploy Azure Function
+## Deploy the function app
 
 1. Run this command to set up environment variables pointed to our services.
 
@@ -90,7 +90,7 @@ Now let's redeploy the application. We'll deploy our refactored service on Azure
                         --output tsv)"
     ```
 
-1. Let's build and zip up the application code for the function.
+1. Let's build and zip up the application code for the function app.
 
     ```bash
     cd ~/mslearn-microservices-architecture/src/after
@@ -99,7 +99,7 @@ Now let's redeploy the application. We'll deploy our refactored service on Azure
     zip -r PackageService.zip .
     ```
 
-1. Run this command to push the code to the Azure Function.
+1. Run this command to push the code to the function app.
 
     ```azurecli
     az functionapp deployment source config-zip \
@@ -108,11 +108,11 @@ Now let's redeploy the application. We'll deploy our refactored service on Azure
         --src PackageService.zip
     ```
 
-## Deploy the updated DroneDelivery application
+## Deploy the updated Drone Delivery application
 
-Now that our service is running on an Azure Function, we need to point our drone application to that function.
+Now that our service is running on Azure Functions, we need to point our drone application to that function app.
 
-1. We first need to get the access code for the function, so we can successfully call it from the application. Run the following commands to retrieve this code. You'll display the function app name and code, for use in the next steps.
+1. We first need to get the access code for the function app so that we can successfully call it from the application. Run the following commands to retrieve this code. You display the function app name and code for use in the next steps.
 
     ```azurecli
     RESOURCEGROUPID=$(az group show \
@@ -128,31 +128,31 @@ Now that our service is running on an Azure Function, we need to point our drone
     echo "FunctionCode - $FUNCTIONCODE"
     ```
 
-1. In Cloud Shell run these commands to open *appsettings.json* in the Code editor.
+1. In Azure Cloud Shell, run these commands to open *appsettings.json* in the code editor.
 
     ```bash
     cd ~/mslearn-microservices-architecture/src/after
     code ./DroneDelivery-after/appsettings.json
     ```
 
-1. In the Code editor, there are two values you need to replace; `PackageServiceUri` and `PackageServiceFunctionCode`. In `PackageServiceUri` replace `<FunctionName>` with the name of your function.
+1. In the code editor, replace the values `PackageServiceUri` and `PackageServiceFunctionCode`. In `PackageServiceUri`, replace `<FunctionName>` with the name of your function app.
 
-    In `PackageServiceFunctionCode` replace the `<FunctionCode>` with function code you retrieved. Once complete, your *appsettings.json* file should look similar to this:
+    In `PackageServiceFunctionCode`, replace the `<FunctionCode>` with the function code you retrieved. Your *appsettings.json* file should look similar to this:
 
     ```json
     {
-      "Logging": {
+        "Logging": {
         "LogLevel": {
-          "Default": "Warning"
+            "Default": "Warning"
         }
-      },
-      "AllowedHosts": "*",
-      "PackageServiceUri": "https://packageservicefunction-abc.azurewebsites.net/api/packages/",
-      "PackageServiceFunctionCode": "SvrbiyhjXJUdTPXrkcUtY6bQaUf7OXQjWvnM0Gq63hFUhbH2vn6qYA=="
+        },
+        "AllowedHosts": "*",
+        "PackageServiceUri": "https://packageservicefunction-abc.azurewebsites.net/api/packages/",
+        "PackageServiceFunctionCode": "SvrbiyhjXJUdTPXrkcUtY6bQaUf7OXQjWvnM0Gq63hFUhbH2vn6qYA=="
     }
     ```
 
-1. Press `Ctrl-s` to save the file, and `Ctrl-q` to close the Code editor.
+1. Select Ctrl+S to save the file, and select Ctrl+Q to close the code editor.
 
 1. Run this command to deploy the updated application to App Service.
 
@@ -164,18 +164,20 @@ Now that our service is running on an Azure Function, we need to point our drone
         --src DroneDelivery-after.zip
     ```
 
-1. With the site redeployed, refresh your page and you should see that it has been updated.
+1. With the site redeployed, refresh your page and you should see that it updated.
 
-    ![Screenshot of the redeployed Drone Delivery web site](../media/7-web-site-after.png)
+    ![Screenshot of the redeployed Drone Delivery website](../media/7-web-site-after.png)
 
-## Test performance of new architecture
+## Test the performance of the new architecture
 
-Now that we have moved the resource constrained service to a microservice running on an Azure Function, let's see how this impacted application performance.
+Now that we've moved the resource-constrained service to a microservice that runs on Azure Functions, let's see how this change affected application performance.
 
-1. On the home page of your web site, select **Send Requests**. This will submit requests from your monolithic app to the microservice running on an Azure Function.
+1. On the home page of your website, select **Send Requests**. This action submits requests from your monolithic app to the microservice that runs on an Azure function.
 
-1. The first attempt may give similar results to the monolithic application. Refresh the page and resubmit the request if prompted. Do this several times, and you should see **100 messages sent in 1 second**.
+1. The first attempt might give similar results to the monolithic application. Refresh the page, and resubmit the request if prompted. Do this step several times, and you should see **100 messages sent in 1 second**.
 
     ![Screenshot of performance of the Drone Delivery site after moving to a microservices architecture](../media/7-web-site-fast.png)
 
-The initial attempt was slower while the Azure Function started up. Once it was up and running, the response time was significantly better than when this code was running in the monolithic architecture. This piece of the architecture can now be scaled out almost infinitely while still providing the same performance. By moving this application code to a microservice, we have improved performance by five to 10 times. Because Fabrikam has a dedicated development team for this service can also iterate on this microservice and realize the benefits of increased agility and feature releases.
+The initial attempt was slower while the function app started up. After it was up and running, the response time was significantly better than when this code was running in the monolithic architecture. 
+
+This piece of the architecture can now be scaled out almost infinitely while it still provides the same performance. By moving this application code to a microservice, we've improved performance by 5 to 10 times. Because Fabrikam has a dedicated development team for this service, they can also iterate on this microservice and realize the benefits of increased agility and feature releases.
