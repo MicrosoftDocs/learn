@@ -8,6 +8,10 @@ A basic version of this predictive model could use two features, weight and hors
 
 It's common to use hundreds or thousands of features, but it becomes nearly impossible to visualize as a graph above three dimensions.
 
+## Choosing features for multiple linear regression
 
+You can select which features to use to train your models, and using good features will allow your models to become more accurate. Usually, good features are things which are related to what you want to measure or predict. For example, if you are using a machine learning model to try to identify the breed of a dog, features such as tail curl, weight, height and ear droop might be quite useful, whereas the dog’s age is not likely to be very useful.
 
-Next up we will build a multiple linear regression model and visualize it.
+For most kinds of machine learning, selecting features yourself can be important in making accurate models.
+
+Features should appear in the data set many times, as models need many examples in order to learn. If you gathered data about three species of flowers to predict their petal length, adding a single example of a new species would not be recommended.

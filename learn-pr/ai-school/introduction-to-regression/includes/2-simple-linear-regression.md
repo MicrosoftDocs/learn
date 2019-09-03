@@ -16,7 +16,7 @@ The training data allows us to create a linear regression model that knows the t
 
 With the previous example, we could predict a person’s shoe size when we only know their height. If we are asked to guess the shoe size of someone who is 180 centimeters tall, we can use that line to guess a little over 14.
 
-## How it knows where to put the line
+### How it knows where to put the line
 
 All data contains variability. This means that a straight-line prediction will almost never perfectly pass through every data point. In the graph below, the dashed red lines show where our model doesn't exactly fit the data – the error. For example, at x = 1, the model predicts that y = 5. We have a data point, however, at x=1 and can see that the value is actually 6. This means the prediction error for this data point is 1.
 
