@@ -27,18 +27,16 @@ Understand the structure of role definitions. Identify role properties to use fo
 ## Learning objectives
 
 1. Identify role definition structure and properties
-1. Create a custom user role
-1. Test custom role definition
+1. Create and manage a custom user role
 
 ## Chunk your content into subtasks
 
-Identify the subtasks of *module title*
+Identify the subtasks of *Create custom roles for Azure resources with role-based access control (RBAC)*
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
+| Create custom roles in Azure | grant users the minimum access permissions they need to do their job | Exercise | Identify role definition structure and properties | YES |
+| Managing custom roles | grant users the minimum access permissions they need to do their job| Exercise | Test custom role definition | YES |
 
 ## Outline the units
 
@@ -48,38 +46,53 @@ Identify the subtasks of *module title*
 
     You work for an organization where your team manages a website hosted on Azure VMs. You're assigned the Owner role for the subscription that contains the website's resources. To keep your Azure resources secure, you segregate duties within your team and only grant users the minimum access permissions they need to do their job. You have a new employee that's responsible for managing VMs within the subscription. They need to be able to monitor the VMs and do troubleshooting tasks like restarting the VMs.
 
-1. **Learning-content unit title**
+1. **What are custom roles in Azure?**
 
-    List the content that will enable the learner to *subtask*:
+    Sometimes, the roles that are built into Azure don't grant the precise level of access that you need. In such cases, you can create a custom role by using PowerShell or Azure CLI commands.
 
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+    - Describe AD and RBAC differences with regard to custom roles
+    - Assigning custom roles?
+        - Cover who can be assigned e.g. users, groups, service principals and managed identities
+        - Who can assign and who can create custom roles (Owner RBAC role for scope or User Access Administrator RBAC role)
+    - Role Definition and structure
+        - Describe as a collection of permissions 
+        - Detail the format of the permissions e.g. {Company}.{ProviderName}/{resourceType}/{action}
+    - Determining permissions
+        - Examine scenario with regard VM permissions, probably determine the current default permissions are not restrictive enough, so will need custom role
+        - Determine required permissions. Resource provider operations (Actions/NotActions), Data operations (DataActions/NotDataActions), Scope (AssignableScopes) 
+        
+        > [!NOTE]
+        > Currently, you cannot set AssignableScopes to a management group scope. This may be available by the time the module is complete. So we'll need to revisit this and update content when management scope is available.
 
-    **Knowledge check**
 
-    What types of questions will test *learning objective*?
+1. **Exercise - Create a custom role**
 
-    - Question type
-    - Question type
+   1. Discover permissions needed in the scenario
+   1. Create JSON file with role definition
+   1. Run CLI command to create custom role
+   1. List custom role in CLI
+   1. Assign role to user
+   1. Test role
 
-1. **Exercise - exercise unit title**
+1. **Manage custom roles**
 
-    List the steps which apply the learning content from previous unit:
+    - List roles
+        - How you can list, update, and delete custom roles (portal, PowerShell, CLI, REST options)
+        - Discuss how AssignableScopes can be used to determine who can edit the role
+    - Relate back to the scenario to demonstrate how you would use this to keep track of custom roles and assignments
 
-    1. Step
-    1. Step
-    1. Step
+1. **Exercise - View and manage a custom role**
+
+   View custom role in Azure portal
+   1. Update custom role in CLI
+   1. Delete custom role in CLI
+   1. Demonstrate the edited list after each change
 
 1. **Summary**
 
-    How did you solve the problem in the initial scenario with the knowledge learned in the module?
+    In the scenario, you wanted to grant access to the new employee so that they could monitor and troubleshoot the VMs that host your website in Azure. However, to maximize security, you wanted to prevent that employee from taking any other actions. By creating a custom role in a JSON file, and then applying it using the Azure CLI, you've staisfied those requirements.
+
+    The built-in RBAC roles in Azure are versatile and often satisfactory for many organizations. You might not need to create custom roles. However, if you have very specific requirements or want to keep a close control of permissions, custom RBAC roles can be used to enable people to do their jobs and prevent malicious actions.
 
 ## Notes
 
