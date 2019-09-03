@@ -4,13 +4,13 @@ You applied your knowledge to the shipping company's system. You deployed their 
 
 ## Clean up
 
-- In the Cloud Shell, run the following command to delete the **scalesetrg** resource group. This action also removes the scale set.
+In Cloud Shell, run the following command to delete the **scalesetrg** resource group. This action also removes the scale set.
 
-    ```bash
-        az group delete \
-          --name scalesetrg \
-          --yes
-    ```
+```bash
+    az group delete \
+      --name scalesetrg \
+      --yes
+```
 
 ## Learn more
 
