@@ -6,18 +6,6 @@ If you have done some data science before you might be used to seeing logistic r
 
 ![Scatter plot showing a logistic regression with only one feature. The Y-axis represents satisfaction likelihood and the X-axis represent coca percent. The blue data points on the bottom of the Y-axis, with low levels of cocoa percent. The green data points are at the top of the Y-axis with high levels of cocoa percent. There is a non-linear black line that divides the two categories.](../media/3.1_LogisticRegression-02.png)
 
-## Classification predicts labels
+Classification differs from the regression algorithms – where we try to predict a number rather than a category. If we wanted to predict the speed a bird can fly or the price of a house, that would be a regression problem. Predicting if a customer is satisfied or dissatisfied is a classification problem.
 
-In machine learning, when we predict an example’s category, we __label__ the example with a category. Labels don’t have to be binary - a label might be a breed of a dog or the species of a tree. Email spam filters are another example of a classification algorithm (spam or not spam).
-
-Classification differs from the regression algorithms – where we try to predict a number rather than a category. If we wanted to predict the speed a bird can fly or the price of a house, that would be a regression problem. Here we're going to predict if a customer is satisfied or dissatisfied. This is a classification problem.
-
-### How we predict labels
-  
-To build a classification model we need to use training examples that are already labeled. The model learns from these labeled examples, and will be able to predict labels for new unlabeled examples.
-
-So if we want to predict the breed of dogs, we would create a data set and label the examples ourselves with the features of dogs (height, weight, fur color, ear shape, etc.). If we label enough features in a big enough data set of dogs, we can create a machine learning model that can guess the breed of any new dog we meet.
-
-There are lots of different classification algorithms we can use. We’ll use a simple, but powerful, classification algorithm next - __logistic regression__.
-
-Stay with us! Don't worry if you feel a bit lost right now - next up we'll walk you through logistic regression.
+There are lots of different classification models we can use. We’ll use a simple, but powerful, classification algorithm next - __logistic regression__.
