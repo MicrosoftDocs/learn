@@ -23,7 +23,7 @@ quiz:
       explanation: 'Azure App Service is a PaaS service, reserved instances are a feature for select compute services.'
     - content: 'A non-production virtual machine that is automatically shut down in off-hours when not in use.'
       isCorrect: false
-      explanation: 'Since this virtual machine won''t run the majority of the time it won't fully use the instance reservation, and isn't a good candidate for a reserved instance.'
+      explanation: 'Since this virtual machine won't run the majority of the time it won't fully use the instance reservation, and isn't a good candidate for a reserved instance.'
     - content: 'An ExpressRoute circuit.'
       isCorrect: false
       explanation: 'ExpressRoute is a network service, reserved instances are a feature for select compute services.'
