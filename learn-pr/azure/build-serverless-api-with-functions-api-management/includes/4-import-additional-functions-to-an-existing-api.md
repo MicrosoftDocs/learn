@@ -41,4 +41,4 @@ Azure API Management supports importing Azure Function Apps as new APIs or appen
 
 <!-- AJM: Fixed -->
 
-In the next unit, you'll add the order details microservice to the Online Store API that you created in unit 3. By doing that, you'll integrate order details with the product details microservice and present them both in the same domain as part of an integrated API.
+In the next unit, you'll add the order details microservice to the Online Store API that you created in the preceding exercise. By doing that, you'll integrate order details with the product details microservice and present them both in the same domain as part of an integrated API.

@@ -26,7 +26,7 @@ In this exercise, you will add an Azure Function to Azure API Management. Later 
     bash setup.sh
     ```
 
-    The `setup.sh` script creates the two functions that you use in this module and deploys the code that responds to requests. It also sets up a storage account that the functions need. The functions are both have URLs in the **azurewebsites.net** domain. The function names include random numbers for uniqueness. The script may take a few minutes to complete.
+    The `setup.sh` script creates the two functions that you use in this module and deploys the code that responds to requests. It also sets up a storage account that the functions need. The functions both have URLs in the **azurewebsites.net** domain. The function names include random numbers for uniqueness. The script may take a few minutes to complete.
 
     ![Results of the setup.sh script](../media/3-script-results.png)
 
@@ -47,7 +47,7 @@ Now, let's test the Product Details function, to see how it behaves before we ad
 1. Select **All Resources**.
 1. Select the app service with a name beginning with **ProductFunction**. The random number was appended by the setup script to ensure uniqueness. <!-- TODO: Break this up into two instructions. The second instruction should be more explicit and tell the learner to select the App Service with the name beginning with ProductFunction. Should also explain the naming convention used.  -->
 <!-- AJM: Done -->
-1. Under **Functions**, select **ProductDetails**, and then select **Test**, as highlighted in this screenshot: 
+1. Under **Functions**, select **ProductDetails**, and then select **Test**, as highlighted in the following screenshot: 
 
     ![Test the ProductDetails function](../media/3-test-product-details-function.png)
 <!-- TODO ... as highlighted in the following screenshot -->

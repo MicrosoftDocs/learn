@@ -61,4 +61,4 @@ The consumption tier uses the same underlying service components as the previous
 
 I think it's OK to say what we'll do next, so I've added this next sentence: -->
 
-In the next unit, you complete an exercise where you create an API Management and add a function to it.
+In the next unit, we'll create an API Management instance and add a function to it.
