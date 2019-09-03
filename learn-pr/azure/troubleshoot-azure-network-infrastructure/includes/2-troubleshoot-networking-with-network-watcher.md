@@ -48,7 +48,7 @@ We use the Azure portal to view the topology of an Azure network. In the Azure p
 
 The Connection Monitor tool provides a way to check that connections work between Azure resources.
 
-Use this tool to check that two VMs can communicate if you want them to. This tool also measures the latency between resources and can catch changes that will impact connectivity, such as changes to the network configuration or Network Security Group (NSG) rule changes. It can probe VMs at regular intervals to look for failures or changes.
+Use this tool to check that two VMs can communicate if you want them to. This tool also measures the latency between resources and can catch changes that will impact connectivity, such as changes to the network configuration or network security group (NSG) rule changes. It can probe VMs at regular intervals to look for failures or changes.
 
 If there is an issue, Connection Monitor tells you why it occurred and how to fix it. As well as monitoring VMs, Connection Monitor can also examine an IP address or fully qualified domain name (FQDN).
 
@@ -93,9 +93,9 @@ With the next hop tool, you can determine how a packet gets from a VM to any des
 
 ### What is the security group view tool?
 
-The security group view tool in Network Watcher is used to display all the effective Network Security Group rules applied to a network interface.
+The security group view tool in Network Watcher is used to display all the effective network security group rules applied to a network interface.
 
-Network Security Groups (NSGs) are used in Azure networking to filter packets based on their source and destination IP address and port numbers. NSGs are vital to ensure security by carefully controlling the surface area of the VMs that users can access. Keep in mind though that a mistakenly configured NSG rule could prevent legitimate communication. As a result, NSGs frequently result in a source of networking problems.
+Network security groups (NSGs) are used in Azure networking to filter packets based on their source and destination IP address and port numbers. NSGs are vital to ensure security by carefully controlling the surface area of the VMs that users can access. Keep in mind though that a mistakenly configured NSG rule could prevent legitimate communication. As a result, NSGs frequently result in a source of networking problems.
 
 For example, if two VMs can't communicate because an NSG rule blocks them, it can be difficult to diagnose which rule is causing the problem. You'll use the security group view tool in Network Watcher to display all the effective NSG rules and help you diagnose which rule is causing the specific problem.
 

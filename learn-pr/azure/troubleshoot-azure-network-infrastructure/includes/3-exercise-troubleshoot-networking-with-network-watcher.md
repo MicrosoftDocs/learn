@@ -12,7 +12,7 @@ Here, you'll troubleshoot connectivity between two VMs in different subnets.
 
 Let's start by creating the problematic infrastructure, which includes a configuration error:
 
-1. In the Cloud Shell, to create the virtual network **MyVNet1** and **FrontendSubnet**, run this command:
+1. In Cloud Shell, to create the virtual network **MyVNet1** and **FrontendSubnet**, run this command:
 
     ```bash
         az network vnet create --resource-group <rgn>[sandbox resource group name]</rgn> \
@@ -60,7 +60,7 @@ Let's start by creating the problematic infrastructure, which includes a configu
           --admin-password Demouser@123
     ```
 
-1. To create a Network Security Group, run this command:
+1. To create a network security group, run this command:
 
     ```bash
         az network nsg create --name MyNsg \

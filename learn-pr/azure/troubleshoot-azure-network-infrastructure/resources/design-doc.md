@@ -128,7 +128,7 @@ Identify the subtasks of Monitor and troubleshoot your end-to-end Azure network 
    1. Describe the main logs
 
       - Flow logs - solution to capture logs related to the network traffic that is allowed or denied by the security rules.
-      - Network security group (NSG) flow logs allows you to view information about ingress and egress IP traffic through a Network security groups. NSG flow logs do not support Storage accounts (classic)
+      - Network security group (NSG) flow logs allows you to view information about ingress and egress IP traffic through a network security group. NSG flow logs do not support Storage accounts (classic)
       - Diagnostic logs - logs for Azure networking resources such as network security groups, public IP addresses, load balancers, virtual network gateways, and application gateways.
       - Traffic Analytics - monitors your cloud environment and provides visibility into user and application activity across Azure. Traffic Analytics analyzes NSG Flow logs across Azure regions and subscriptions and equips you with actionable information to optimize network performance.
 
@@ -158,14 +158,14 @@ Identify the subtasks of Monitor and troubleshoot your end-to-end Azure network 
          - Topology
          - Connection troubleshoots
          - Role Based Access Control
-         - Network Security Group View
+         - Network security group View
 
 1. **Exercise - Troubleshoot networking using Network Watcher metrics and logs**
 
    In this exercise, students configure NSG flow logs for the VMs they created in the previous exercise. They use the flow logs to troubleshoot an incorrect configuration.
 
    1. Introduce a configuration problem that prevents correct communication between the VMs. This problem should be something that can be diagnosed from a flow log.
-   1. Configure a Network Security Group (NSG)
+   1. Configure a network security group (NSG)
    1. Register the Microsoft.Insights provider
    1. Enable the NSG flow log
    1. Generate network traffic between VMs that will be caught in the flow log.

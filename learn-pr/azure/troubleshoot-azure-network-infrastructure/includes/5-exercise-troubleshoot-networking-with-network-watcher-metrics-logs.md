@@ -153,4 +153,4 @@ Connections on ports 80 and 443 should now work without problems:
         telnet 10.10.2.4 443
     ```
 
-1. **Both** connections should now work.
+**Both** connections should now work.
