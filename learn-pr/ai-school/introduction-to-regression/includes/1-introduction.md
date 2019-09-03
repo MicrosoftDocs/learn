@@ -1,4 +1,4 @@
-Regression can be thought of as looking for a trend line in our data. When used in machine learning, that line allows us to predict a numeric value based on features. We could use regressions to predict things like:
+Regression can be thought of as looking for a trend line in our data. When used in machine learning, that line allows us to predict a numeric value based on features. We could use regression to predict things like:
 
 * How much money something will cost
 * What's the expected temperature tomorrow
@@ -8,11 +8,11 @@ For example, if we had a data set with just two features, year and temperature, 
 
 ![Line graph describing the annual temperature. The Y-axis represents temperature abnormality and the X-axis represents the year. The graph shows temperature variation over the years, starting at -0.2-celsius abnormality at 1880. The data points vary between 0 celsius and -0.4 celsius until 1940, but with trend upwards to 1 celsius from 1940 to 2020](../media/2-1-a.png)
 
-**Regression fits a line through data**. Here we the features we are using are people’s height and shoe size, which allow us to answer if tall people have bigger feet.
+**Regression fits a line through data**. Here the features we are using are people’s height and shoe size, which allow us to answer if tall people have bigger feet.
 
 ![Scatter plot graph showing height and shoe size with a line of best fit showing a linear relationship between shoe size and height. The Y-axis represents show size and the X-axis represents height in centimeters. The graph shows shoe size beginning at 6, with height at 120 centimeters. As height increases to 200 centimeters, shoe size increases, almost perfectly linearly, from 6 to 15.](../media/2-1-d.png)
 
-Because these regression models let us understand relationships like height in relation to shoe size, we can use to predict a label (someones shoe size) if we have a relevant feature (their height). If we have enough examples, the trend line can be very accurate.
+Because these regression models let us understand relationships like shoe size in relation to height, we can use to predict a label (someones shoe size) if we have a relevant feature (their height). If we have enough examples, the trend line can be very accurate.
 
 Seeing these trend lines is relatively easy when we only are using one feature to predict another. The accuracy of predictions goes up when we have more relevant features, but it's much harder to see the trends visually. Below we are charting three features, **car weight**, **horsepower**, and **fuel efficiency**.
 
@@ -28,6 +28,6 @@ From the three examples above, if we have enough data points to plot, we might b
 
 **In this module, you will learn to:**
 
-* Make linear regression models with simple linear regression and multiple linear regression
-* Make non-linear regression models with polynomial regression
-* Use predictive models to predict numeric values
+* Build simple linear regression and multiple linear regression models
+* Model non-linear data with polynomial regression models
+* Use these models to predict numeric values
