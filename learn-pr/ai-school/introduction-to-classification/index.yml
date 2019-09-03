@@ -31,7 +31,8 @@ units:
 - learn-wwl.introduction-to-classification.introduction
 - learn-wwl.introduction-to-classification.logistic-regression
 - learn-wwl.introduction-to-classification.exercise-logistic-regression
-- learn-wwl.introduction-to-classification.training-and-error
+- learn-wwl.introduction-to-classification.support-vector-machines
+- learn-wwl.introduction-to-classification.exercise-svms
 - learn-wwl.introduction-to-classification.summary
 badge: 
   uid: learn-wwl.introduction-to-classification.badge #add the uid for your achievement badge.
