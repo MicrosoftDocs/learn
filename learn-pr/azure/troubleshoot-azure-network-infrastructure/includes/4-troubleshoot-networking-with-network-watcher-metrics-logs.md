@@ -15,7 +15,7 @@ To view the usage and quota information, navigate to **All Services > Networking
 - Virtual networks
 - Public IP addresses
 
-Here is an example of the 
+Here is an example that shows usage and quotas in the portal.
 
 [![](../media/4-usage-and-quotas.png "A screenshot showing usage and quotas using the Network Watcher")](../media/4-usage-and-quotas-expanded-1.png#lightbox)
 
@@ -96,7 +96,7 @@ Let's assume you have a VM that has been running fine. However, the VM's perform
 When looking at performance issues, examine trends, and understand if they affect our server. Use the monitoring graphs from the portal to spot trends. There are different types of patterns that you may see on the monitoring graph:
 
 - **Isolated spikes**. A spike could be related to a scheduled task or expected event. If you know what this task is, does it run at the required performance level? If the performance is OK, you may not need to increase capacity.
-- **Spike up and constant**. A new workload could cause this trend. Enable monitoring in the VM to find out what processes cause the load. The increased consumption can be due to inefficient code, or normal consumption. If it's normal consumption, does the process operate at the required performance level?
+- **Spike up and constant**. A new workload could cause this trend. Enable monitoring in the VM to find out what processes cause the load. The increased consumption can be due to inefficient code, or normal consumption. If the consumption is normal, does the process operate at the required performance level?
 - **Constant**. Has your VM always been like this? If so, you should identify the processes that consume most resources and consider adding more capacity.
 - **Steadily increasing**. Do you see a constant increase in consumption? If so, this trend could indicate inefficient code or a process taking on more user workload.
 
