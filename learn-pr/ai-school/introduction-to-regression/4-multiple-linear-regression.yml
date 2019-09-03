@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.introduction-to-regression.multiple-linear-regression
-title: Multiple Linear Regression
+title: Predict values with multiple Linear Regression
 metadata:
-  title: Multiple Linear Regression
+  title: Predict values with multiple Linear Regression
   description: Here we use linear regression again - but this time we use multiple features for predictions.
   ms.date: 06/30/2019
   author: markjulmar
@@ -10,9 +10,9 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 40
+durationInMinutes: 6
 content: |
-  [!include[](includes/5-multiple-linear-regression.md)]
+  [!include[](includes/4-multiple-linear-regression.md)]
 quiz:
   title: Check your knowledge
   questions:
