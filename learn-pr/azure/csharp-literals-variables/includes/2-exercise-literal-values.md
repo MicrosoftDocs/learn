@@ -27,14 +27,14 @@ Console.WriteLine('b');
 
 If you type the following code:
 
-```csharp
+```csharp-interactive
 Console.WriteLine('Hello World!');
 ```
 
 You would get the following error:
 
 ```output
-Too many characters in character literal
+(1,19): error CS1012: Too many characters in character literal
 ```
 
 The C# compiler was expecting a single character (since you used the character literal syntax) but you supplied 12 characters instead!
@@ -51,6 +51,12 @@ Add the following line of code in the code editor:
 
 ```csharp-interactive
 Console.WriteLine(123);
+```
+
+If you run the code, you'll get the following output.
+
+```output
+123
 ```
 
 The term *int* is short for integer, which you may recognize from studying math.  In C#, they're officially referred to as "int", but frequently known by their alter ego "integer".
@@ -90,8 +96,8 @@ Console.WriteLine(false);
 This will produce the following output:
 
 ```output
-true
-false
+True
+False
 ```
 
 The term *bool* is short for *boolean, which you may also recognize from studying math.  In C#, they're officially referred to as "bool", but often developers use the term "boolean".
@@ -117,7 +123,7 @@ Console.WriteLine("123");
 Console.WriteLine(123);
 
 Console.WriteLine("true");
-Console.WriteLie(true);
+Console.WriteLine(true);
 ```
 
 However, that's merely how they're printed to screen.  The fact is that the kinds of things you can do with the underlying `int` or `bool` will be different than their `string` equivalent.

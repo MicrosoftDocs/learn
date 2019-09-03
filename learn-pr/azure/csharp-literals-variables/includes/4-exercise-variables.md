@@ -112,7 +112,7 @@ You must set variable to a value before you can get the value from the variable.
 
 Modify the code you wrote in Step 6 to match the following code:
 
-```csharp-interative
+```csharp-interactive
 string firstName;
 Console.WriteLine(firstName);
 ```
