@@ -1,12 +1,4 @@
-## Training
 
-So in the programming exercise, how did the models we built ‘train’ themselves to improve their accuracy?
-
-![Scatter plot showing a logistic regression classification. The Y-axis represents independent variable 2, and the X-axis represents independent variable 1. The plot is roughly divided in two diagonally, with blue data points on one side, and green data points on the other side. There is a black line of best fit, which moves iteratively from the bottom of the X-axis to divide the data points diagonally.](../media/3.3_ClassificationTraining.gif)
-
-The diagram above shows an algorithm trying to find the line that best separates the blue from the green dots. As you can see above, the algorithm changes its variables (the starting point and gradient of the line) until it finds the line that most accurately does so. This process of adjusting these variables is called __training__. Once the algorithm has completed training, and we can use it to predict new examples, it’s called a model.
-
-There are many different ways training can work. One common method is to start with a random guess (in this case, a random line), and see whether adjustments (for example, a more or less steep gradient) give a better result. This process is repeated until adjustments do not improve the model any further, until the improvements for a change are small, or some sort of attempt limit is reached.
 
 ## Error
 
