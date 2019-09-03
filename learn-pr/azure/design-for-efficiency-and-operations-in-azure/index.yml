@@ -8,6 +8,7 @@ metadata:
   ms.author: thovuy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  #ms.learn-contact: jaboes
 title: Design for efficiency and operations in Azure
 summary: Learn how to design an Azure architecture that is cost- and operationally-efficient, eliminates waste, and gives you full visibility into what's happening in your environment.
 abstract:  | 
