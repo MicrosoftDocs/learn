@@ -143,7 +143,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
 ## Configure path-based routing
 
-Now we need to configure path-based routing for our Application gateway. We'll route requests to **/VehicleRegistration/** to the **vmPool** and requests to **/LicenseRenewal/** to the **appServicePool**. Any requests without any URL context will be routed to the **vmPool** ad a default.
+Now we need to configure path-based routing for our Application gateway. We'll route requests to **/VehicleRegistration/** to the **vmPool** and requests to **/LicenseRenewal/** to the **appServicePool**. Any requests without any URL context will be routed to the **vmPool** as a default.
 
 1. Run the following command to create the path map for the **vmPool**.
 
