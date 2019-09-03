@@ -71,11 +71,11 @@ public static class PackageServiceFunction
     }
 ```
 
-By putting this code on an Azure function, this service can scale independently as user load increases. You can keep the services for the remaining application code optimized for the rest of the application. The package service scales out as more requests for drone deliveries come in to the system.
+By putting this code on Azure Functions, this service can scale independently as user load increases. You can keep the services for the remaining application code optimized for the rest of the application. The package service scales out as more requests for drone deliveries come in to the system.
 
 Now let's redeploy the application. First, we deploy our refactored service on Azure Functions. Then we deploy the refactored application on App Service, and point it to the function.
 
-## Deploy the Azure function
+## Deploy the function app
 
 1. Run this command to set up environment variables pointed to our services.
 
@@ -90,7 +90,7 @@ Now let's redeploy the application. First, we deploy our refactored service on A
                         --output tsv)"
     ```
 
-1. Let's build and zip up the application code for the function.
+1. Let's build and zip up the application code for the function app.
 
     ```bash
     cd ~/mslearn-microservices-architecture/src/after
@@ -99,7 +99,7 @@ Now let's redeploy the application. First, we deploy our refactored service on A
     zip -r PackageService.zip .
     ```
 
-1. Run this command to push the code to the Azure function.
+1. Run this command to push the code to the function app.
 
     ```azurecli
     az functionapp deployment source config-zip \
@@ -110,9 +110,9 @@ Now let's redeploy the application. First, we deploy our refactored service on A
 
 ## Deploy the updated Drone Delivery application
 
-Now that our service is running on an Azure function, we need to point our drone application to that function.
+Now that our service is running on Azure Functions, we need to point our drone application to that function app.
 
-1. We first need to get the access code for the function so that we can successfully call it from the application. Run the following commands to retrieve this code. You display the function app name and code for use in the next steps.
+1. We first need to get the access code for the function app so that we can successfully call it from the application. Run the following commands to retrieve this code. You display the function app name and code for use in the next steps.
 
     ```azurecli
     RESOURCEGROUPID=$(az group show \
@@ -135,7 +135,7 @@ Now that our service is running on an Azure function, we need to point our drone
     code ./DroneDelivery-after/appsettings.json
     ```
 
-1. In the code editor, replace the values `PackageServiceUri` and `PackageServiceFunctionCode`. In `PackageServiceUri`, replace `<FunctionName>` with the name of your function.
+1. In the code editor, replace the values `PackageServiceUri` and `PackageServiceFunctionCode`. In `PackageServiceUri`, replace `<FunctionName>` with the name of your function app.
 
     In `PackageServiceFunctionCode`, replace the `<FunctionCode>` with the function code you retrieved. Your *appsettings.json* file should look similar to this:
 
@@ -170,7 +170,7 @@ Now that our service is running on an Azure function, we need to point our drone
 
 ## Test the performance of the new architecture
 
-Now that we've moved the resource-constrained service to a microservice that runs on an Azure function, let's see how this change affected application performance.
+Now that we've moved the resource-constrained service to a microservice that runs on Azure Functions, let's see how this change affected application performance.
 
 1. On the home page of your website, select **Send Requests**. This action submits requests from your monolithic app to the microservice that runs on an Azure function.
 
@@ -178,6 +178,6 @@ Now that we've moved the resource-constrained service to a microservice that run
 
     ![Screenshot of performance of the Drone Delivery site after moving to a microservices architecture](../media/7-web-site-fast.png)
 
-The initial attempt was slower while the Azure function started up. After it was up and running, the response time was significantly better than when this code was running in the monolithic architecture. 
+The initial attempt was slower while the function app started up. After it was up and running, the response time was significantly better than when this code was running in the monolithic architecture. 
 
 This piece of the architecture can now be scaled out almost infinitely while it still provides the same performance. By moving this application code to a microservice, we've improved performance by 5 to 10 times. Because Fabrikam has a dedicated development team for this service, they can also iterate on this microservice and realize the benefits of increased agility and feature releases.
