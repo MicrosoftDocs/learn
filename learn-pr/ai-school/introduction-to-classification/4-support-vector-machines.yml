@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.introduction-to-classification.training-and-error
-title: Training and Error 
+title: Predict categories with support vector machines 
 metadata:
-  title: Training and Error
+  title: Predict categories with support vector machines
   description: Here we look at how our model 'trained' itself to improve its accuracy.
   ms.date: 06/30/2019
   author: markjulmar
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-training-and-error.md)] 
+  [!include[](includes/4-support-vector-machines.md)] 

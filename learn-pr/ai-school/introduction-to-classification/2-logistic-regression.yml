@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.introduction-to-classification.logistic-regression
-title: Logistic Regression 
+title: Perform binary classification with logistic regression 
 metadata:
-  title: Logistic Regression
+  title: Perform binary classification with logistic regression
   description: Here we introduce a simple but powerful classification algorithm - logistic regression. 
   ms.date: 06/30/2019
   author: markjulmar
