@@ -36,7 +36,7 @@ A backup can't be restored if the VM is allocated and running. If you forget to 
 
 To prevent this error, use the following steps:
 
-1. In the left menu, select **Virtual machines**, and then select **NW-APP01**.
+1. On the left menu, select **Virtual machines**, and then select **NW-APP01**.
 
     ![Screenshot of the VM overview page](../media/6-vm-overview.png)
 
@@ -52,7 +52,7 @@ To prevent this error, use the following steps:
 
 The Recovery Services vaults are accessible at the subscription level. When you're viewing the VM, Azure provides a quick link to the specific vault under **Operations**.
 
-1. In the left menu, under **Operations**, select **Backup**.
+1. On the left menu, under **Operations**, select **Backup**.
 
     ![Screenshot of the "Backup" operation for a VM](../media/6-vm-backup-menu.png)
 

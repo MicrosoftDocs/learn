@@ -46,7 +46,7 @@ There's a cost for every virtual machine backed up, and it starts as soon as the
 
 ## Backup agents
 
-Azure Backup uses agents to support a variety of backup scenarios. The agents can be installed directly on physical or virtual machines, or be part of a dedicated backup server. The agent that you choose will differ slightly depending on whether you need to backup an entire virtual machine, files and folders, or running apps.
+Azure Backup uses agents to support a variety of backup scenarios. The agents can be installed directly on physical or virtual machines, or be part of a dedicated backup server. The agent that you choose will differ slightly depending on whether you need to back up an entire virtual machine, files and folders, or running apps.
 
 ### Azure Backup virtual machine extension
 
@@ -64,13 +64,13 @@ If your company's virtual machines are in Azure, and you don't require file-leve
 
 The Microsoft Azure Backup Server (MABS) agent installed on an Azure or on-premises virtual machine allows that machine to back up to an Azure Backup server. The MABS agent can back up and restore SQL and other application services. You can also support workloads like Exchange and SharePoint by using the *AzureBackupWindowsWorkload* extension. 
 
-Machines and workloads are backed up to an Azure Backup server, although this doesn't move these backups to a Recovery Services vault. If you need to move your backups to a Recovery Services vault, install the MARS agent.
+Machines and workloads are backed up to an Azure Backup server, although this doesn't move these backups to a Recovery Services vault. If you need to move your backups to a Recovery Services vault, install the Microsoft Azure Recovery Services (MARS) agent.
 
 ### Microsoft Azure Recovery Services agent
 
 ![MARS architecture](../media/3-azure-mars-backup-architecture.png)
 
-Azure Backup uses the Microsoft Azure Recovery Services (MARS) agent to back up Windows files, folders, and system state data to a Recovery Services vault. The agent is installed manually on the machines that you're backing up. 
+Azure Backup uses the MARS agent to back up Windows files, folders, and system state data to a Recovery Services vault. The agent is installed manually on the machines that you're backing up. 
 
 The MARS agent enhances the levels of backup if it's installed alongside the Azure Backup extension on an Azure virtual machine. MARS enables on-premises Windows machines to be backed up directly to a Recovery Services vault.
 
