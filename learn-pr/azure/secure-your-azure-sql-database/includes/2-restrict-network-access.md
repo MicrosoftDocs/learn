@@ -2,7 +2,9 @@ Users will connect to our app server to enter orders, update their account, and 
 
 ## Firewall rules
 
-Azure SQL Database has a built-in firewall that is used to allow and deny network access to both the database server itself, as well as individual databases. Firewall rules are configured at the server and/or database level, and will specifically state which network resources are allowed to establish a connection to the database. Depending on the level, the rules you can apply will be as follows:
+Azure SQL Database has a built-in firewall that is used to allow and deny network access to both the database server itself, as well as individual databases. Initially, all public access to your Azure SQL Database is blocked by the SQL Database firewall. To access a database server, you must specify one or more server-level IP firewall rules that enable access to your Azure SQL Database. You use the IP firewall rules to specify which IP address ranges from the Internet are allowed, and whether Azure applications can attempt to connect to your Azure SQL Database.
+
+Firewall rules are configured at the server and/or database level, and will specifically state which network resources are allowed to establish a connection to the database. Depending on the level, the rules you can apply will be as follows:
 
 - **Server-level firewall rules**
   - Allow access to Azure services
@@ -11,13 +13,16 @@ Azure SQL Database has a built-in firewall that is used to allow and deny networ
 - **Database-level firewall rules**
   - IP address rules
 
+> [!NOTE]
+> SQL Data Warehouse only supports server-level IP firewall rules, and not database-level IP firewall rules.
+
 Let's take a closer look at how these rules work.
 
 ### Server-level firewall rules
 
 These rules enable clients to access your entire Azure SQL server, that is, all the databases within the same logical server. There are three types of rules that can be applied at the server level.
 
-The **Allow access to Azure services** rule allows services within Azure to connect to your Azure SQL Database. When enabled, this setting allows communications from all Azure public IP addresses. This includes all Azure Platform as a Service (PaaS) services, such as Azure App Service and Azure Container Service, as well as Azure VMs that have outbound internet access. This rule can be configured through the **ON/OFF** option in the firewall pane in the portal, or by an IP rule that has 0.0.0.0 as the start and end IP addresses.
+The **Allow access to Azure services** rule allows services within Azure to connect to your Azure SQL Database. When enabled, this setting allows communications from all Azure public IP addresses. This includes all Azure Platform as a Service (PaaS) services, such as Azure App Service and Azure Container Service, as well as Azure VMs that have outbound Internet access. This rule can be configured through the **ON/OFF** option in the firewall pane in the portal, or by an IP rule that has 0.0.0.0 as the start and end IP addresses.
 
 ![Allow access to Azure services network diagram](../media/2-allow-azure-services.png)
 
@@ -53,6 +58,8 @@ The downside to database-level rules is that you can only use IP address rules. 
 Lastly, database-level firewall rules can be created and manipulated only through T-SQL.
 
 ## Restricting network access in practice
+
+Whenever possible, as a best practice, use database-level IP firewall rules to enhance security and to make your database more portable. Use server-level IP firewall rules for administrators and when you have several databases with the same access requirements, and you don't want to spend time configuring each database individually.
 
 Let's take a look at how these work in practice, and how you can secure network access to only allow what is necessary. Recall that we created an Azure SQL Database logical server, a database, and the _appServer_ Linux VM acting as an application server. This scenario is often seen when a database has been migrated to Azure SQL Database and resources inside of a virtual network need to access it. The firewall feature of Azure SQL Database can be used in many scenarios, but this is an example that has practical applicability and demonstrates how each of the rules functions.
 
