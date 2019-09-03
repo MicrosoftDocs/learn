@@ -34,9 +34,9 @@ Your first task is to create a scale set, and configure it to run a web server â
 
     This file contains the configuration information for installing nginx on the VMs in the scale set:
 
-4. Press Ctrl-S to save the file, and then press Ctrl-Q to close the Code editor.
+1. Press Ctrl-S to save the file, and then press Ctrl-Q to close the Code editor.
 
-5. Run the following command to create a new resource group named **scalesetrg** for your scale set:
+1. Run the following command to create a new resource group named **scalesetrg** for your scale set:
 
     ```bash
         az group create \
@@ -44,7 +44,7 @@ Your first task is to create a scale set, and configure it to run a web server â
           --name scalesetrg
     ```
 
-6. Run the following command to create the virtual machine scale set:
+1. Run the following command to create the virtual machine scale set:
 
     ```bash
         az vmss create \
@@ -60,7 +60,7 @@ Your first task is to create a scale set, and configure it to run a web server â
     By default, the virtual machine scale set is created with two instances and a load balancer.
 
     > [!NOTE]
-    > The **custom-data** flag specifies that the virtual machine should be configured using the settings in the **cloud-init.yaml** file once it has been created. You can use a cloud-init file to install additional packages, configure security, and write to files when the machine is first installed. For more information, see [Cloud-init support for virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/linux/using-cloud-init)
+    > The **custom-data** flag specifies that the virtual machine should be configured using the settings in the **cloud-init.yaml** file once it has been created. You can use a cloud-init file to install additional packages, configure security, and write to files when the machine is first installed. For more information, see [Cloud-init support for virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/linux/using-cloud-init).
 
 ## Configure the virtual machine scale set
 
