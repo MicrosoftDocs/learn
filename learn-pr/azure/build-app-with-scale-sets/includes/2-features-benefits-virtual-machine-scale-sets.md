@@ -1,67 +1,75 @@
-Azure virtual machine scale set provides a scalable way to run applications on a set of virtual machines. The virtual machines in this type of scale set all have the same configuration and run the same applications. As demand grows, the number of virtual machines running in the scale set increases. As demand slackens off, excess virtual machines can be shut down. Azure virtual machine scale sets are ideal for scenarios that include compute, big data, and container workloads. 
+Azure Virtual Machine Scale Sets provides a scalable way to run applications on a set of virtual machines (VMs). The VMs in this type of scale set all have the same configuration and run the same applications. As demand grows, the number of VMs running in the scale set increases. As demand slackens, excess VMs can be shut down. Azure Virtual Machine Scale Sets is ideal for scenarios that include compute workloads, big-data workloads, and container workloads. 
 
-Your customers use one of the company's websites to manage and check the status of their shipments. As the website is accessed globally, it is sometimes difficult to predict what the load is likely to be at any particular time of day. Additionally, loading might vary seasonally, with December being a busy time due to the holidays at the end of the year. You decide to use a virtual machine scale set to handle the fluctuating load while maintaining a low response time for customer requests.
+In our example scenario, your customers use one of the company's websites to manage and check the status of their shipments. Because the website is accessed globally, the load is sometimes difficult to predict at any particular time of day. Additionally, loading might vary seasonally, with December being busy because of the holidays at the end of the year. You decide to use a virtual machine scale set to handle the fluctuating load while maintaining a low response time for customer requests.
 
-In this unit, you'll explore the features of virtual machine scale sets. By the end of this unit, you'll be able to describe how a scale set works. You'll understand how a scale set supports scale-out and scale-up scenarios. You'll see how you can use autoscaling and schedule-based scaling to adjust the resources available to a scale set.
+In this unit, you'll explore the features of virtual machine scale sets. By the end of this unit, you'll be able to describe how a scale set works. You'll understand how a scale set supports scale-out and scale-up scenarios. You'll see how to use autoscaling and schedule-based scaling to adjust the resources available to a scale set.
 
 ## What is a virtual machine scale set?
 
-Virtual machine scale sets in Azure are designed to allow you to deploy and manage many load-balanced, identical virtual machines running with the same configurations. Virtual machine scale sets are intelligent enough to automatically scale up or down the total number of virtual machine instances. A scale set can also change the size of virtual machine instances.
+Virtual machine scale sets in Azure are designed to allow you to deploy and manage many load-balanced, identical VMs. These machines run with the same configurations. Virtual machine scale sets are intelligent enough to automatically scale up or down the number of VM instances. A scale set can also change the size of VM instances.
 
-The criteria used to activate up or downscale can depend on actual demand and usage, or a customized schedule. Scale sets apply the same configuration to a group of virtual machines simultaneously, rather than requiring that you manually configure each instance individually.
+The criteria used to activate the upscale or downscale can depend on a customized schedule or actual demand and usage. Scale sets apply the same configuration to a group of VMs simultaneously. They don't require you to manually configure instances individually.
 
-A scale set uses a load-balancer to distribute requests across the virtual machine instances. A scale set uses a health probe to determine the availability of each instance. The health probe *pings* the instance. If the instance responds, the scale set knows the instance is still available. If the ping fails or times out, the scale set knows the instance is unavailable. The scale set will avoid sending requests to this instance.
+A scale set uses a load balancer to distribute requests across the VM instances. It uses a health probe to determine the availability of each instance. The health probe *pings* the instance. If the instance responds, the scale set knows the instance is still available. If the ping fails or times out, the scale set knows the instance is unavailable and doesn't send requests to it.
 
-Virtual machine scale sets support both Linux and Windows virtual machines in Azure. However, keep in mind that you're limited to 1,000 virtual machines running on a single scale set.
+Virtual machine scale sets support both Linux and Windows VMs in Azure. However, keep in mind that you're limited to running 1,000 VMs on a single scale set.
 
-Scale sets are great candidates when you're dealing with large workloads that have varying and unpredictable demand. Because virtual machine scale sets offer identical virtual machines scaled and load-balanced in response to demand, they automatically provide a highly available environment.
+If you deal with large workloads whose demand varies and is unpredictable, scale sets are a great solution. Because virtual machine scale sets offer identical VMs scaled and load-balanced in response to demand, they automatically provide a highly available environment.
 
 ## Scaling options for scale sets
 
-Scale sets are designed for cost-effectiveness. New virtual machine instances are only created when needed. There are two ways a scale set can scale virtual machines;  **horizontal scaling** and **vertical scaling**.
+Scale sets are designed for cost-effectiveness. New VM instances are created only when needed. A scale set can scale VMs either horizontally or vertically.
 
 ### What is horizontal scaling?
 
-Horizontal scaling adds more virtual machines to a scale set.
+*Horizontal scaling* is the process of adding or removing several VMs in a scale set.
 
-Sometimes, you may need to add or remove a number of the machines in a scale set, depending on demand. It might be that you don't need to run some of these machines during quieter periods of the week or day when there's less demand. You manually adjust the number of virtual machines in a scale set by increasing or decreasing the instance count. However, in many cases, it's a good idea to create rules that automatically add or remove virtual machines. These rules are based on metrics – they ensure that the right number of virtual machines are added, depending on the demand or schedule.  This process of adding or removing several virtual machines is called horizontal scaling.
+Sometimes you might need to add or remove machines in a scale set, depending on demand. For example, you might not need to run some machines during periods of the week or day when demand is low. You could manually adjust the number of VMs in a scale set by increasing or decreasing the instance count. But in many cases, it's better to automatically add or remove VMs by using rules. The rules are based on metrics. They ensure that the right number of VMs are added, depending on the demand or schedule. 
 
 ### What is vertical scaling?
 
-Vertical scaling adds more resources such as memory, CPU power, or disk space to the virtual machines.
+*Vertical scaling* is the process of adding resources such as memory, CPU power, or disk space to VMs.
 
-In contrast to horizontal scaling, where new identical size virtual machines are added or removed from a scale set, vertical scaling focuses on increasing the size of the actual virtual machines in the scale sets.  For example, you might want to reduce the CPU performance of a group of virtual machines in a scale set.  In this case, you may not necessarily need an entire group of machines removed. In scale sets, you create rules based on metrics that automatically trigger an increase in the sizes of the VMs.  Vertical scaling typically requires rebooting the affected virtual machines in the scale set. This process can lead to a temporary degradation in performance across the scale set while the virtual machines restart.
+In contrast to horizontal scaling, where new, identically sized VMs are added to or removed from a scale set, vertical scaling focuses on increasing the size of the VMs in the scale set.  
+
+For example, you might want to reduce the CPU performance of a group of VMs in a scale set.  In this case, you might not necessarily need to remove an entire group of machines. In scale sets, you create rules based on metrics. These rules automatically trigger an increase in the sizes of the VMs.  
+
+Vertical scaling typically requires rebooting the affected VMs in the scale set. This process can lead to temporary degraded performance across the scale set while the VMs restart.
 
 ## Scaling a scale set
 
-Virtual machine scale sets address the need to quickly create and manage the virtual machines for a fluctuating workload. You can configure two types of scaling for a scale-set:
+Virtual machine scale sets address the need to quickly create and manage VMs for a fluctuating workload. You can configure two types of scaling for a scale set:
 
-- **Scheduled**. You can proactively schedule the scale set to deploy one or *N* number of additional instances to fulfill a spike in traffic and then scale back down once the spike ends.
+- **Scheduled scaling**: You can proactively schedule the scale set to deploy one or *N* number of additional instances to accommodate a spike in traffic and then scale back down when the spike ends.
 
-- **Autoscale**. Where the workload is variable, and not always able to be scheduled, you can employ metric based threshold scaling. Autoscale will horizontally scale-out based upon node utilization, then scale back in when the resources have returned to a baseline level.
+- **Autoscaling**: If the workload is variable and can't always be scheduled, you can use metric-based threshold scaling. Autoscaling horizontally scales out based on node usage. It then scales back in when the resources return to a baseline.
 
-Both these options address the requirement to scale while managing the costs associated with that. The following examples describe scenarios where you might employ different types of scaling.
+Both of these options address the requirement to scale while managing associated costs. The following examples describe scenarios where you might use different types of scaling.
 
 ### Scheduled scaling
 
-Suppose you're part of the DevOps team for a large food delivery company. Friday night is typically your busiest time, and conversely, 7 AM on a Wednesday is generally your quietest time. Azure charges based on the consumption of resources, so don't run services you're not going to need. If you require 100 web servers to meet your demand on a Friday night, you're happy to pay for them. However, if you only need two servers on a Wednesday morning, you don't want to pay for the additional 98 idle servers. To manage your costs while fulfilling operational requirements, you might look to use scheduled autoscaling.
+Suppose you're part of the DevOps team for a large food delivery company. Friday night is typically your busiest time. Conversely, 7 AM on Wednesday is generally your quietest time. 
+
+Azure charges based on the consumption of resources, so don't run services you don't need. If you need 100 web servers to meet your demand on a Friday night, you're happy to pay for them. But if you need only two servers on a Wednesday morning, you don't want to pay for the 98 idle servers. To manage your costs while fulfilling operational requirements, consider using scheduled autoscaling.
 
 ### Autoscaling
 
-Suppose you're on the DevOps team for a popular footwear company. There's a product launch coming up, and you believe there will be a significant demand for your service. However, the nature of the spike in demand might be unpredictable and hard to quantify. You want the service to meet demand by scaling horizontally as the current resources are used. Use metrics-based autoscaling for this scenario. This type of autoscaling scales out your infrastructure as demand rises, and scales back in when it declines.
+Suppose you're on the DevOps team for a popular footwear company. As a product launch approaches, you think you'll see significant demand for your service. However, the demand spike might be unpredictable and hard to quantify. You want your service to meet demand by scaling horizontally as current resources are used. 
 
-## Reduce costs using low-priority scale sets
+For this scenario, use metrics-based autoscaling. This type of autoscaling scales out your infrastructure as demand rises. It scales back in when demand declines.
 
-A low-priority virtual machine scale set allows you to use Azure compute at reduced cost savings of up to 80 percent. The global Azure infrastructure frequently has underused compute resources available. A low-priority scale set has virtual machines provisioned through this underused compute capability.
+## Reducing costs by using low-priority scale sets
 
-When you use these virtual machines, you have to keep in mind that they are temporary and availability depends on size, region, time of day, and so on. There is also no SLA for these virtual machines.
+A low-priority virtual machine scale set allows you to use Azure compute resources at cost savings of up to 80 percent. The global Azure infrastructure frequently has underused compute resources available. A low-priority scale set provisions VMs through this underused compute capability.
 
-When this computing power is needed again by Azure, you'll receive a notification that a specific virtual machine will be removed from your scale set. If you need to perform clean-up or gracefully exit code on your virtual machine, you can use Azure scheduled events to react to this notification within the virtual machine. You can also instruct the scale set to try to create another virtual machine to replace the one that's being removed. The creation of the new virtual machine is, however, not guaranteed.
+When you use these VMs, keep in mind that they're temporary. Availability depends on size, region, time of day, and so on. These VMs have no SLA.
+
+When Azure needs the computing power again, you'll receive a notification about the VM that will be removed from your scale set. If you need to  clean up or gracefully exit code on your VM, you can use Azure Scheduled Events to react to the notification within the VM. You can also make the scale set try to create another VM to replace the one that's being removed. The creation of the new VM is, however, not guaranteed.
 
 In a low-priority scale set, you specify two kinds of removal:
 
-- **Delete** – the entire virtual machine is removed, including all of the underlying disks.
+- **Delete**: The entire VM is removed, including all of the underlying disks.
 
-- **Deallocate** – the virtual machine is halted, and the processing and memory resources are deallocated. Disks are left intact and data is kept. You're charged for the disk space while the virtual machine isn't running.  
+- **Deallocate**: The VM is stopped. The processing and memory resources are deallocated. Disks are left intact and data is kept. You're charged for the disk space while the VM isn't running.  
 
-Low-priority scale sets are useful for workloads that run with interruptions or when you need to use larger virtual machines at a much-reduced cost. However, you have to keep in mind that you can't control when a virtual machine might be removed.
+Low-priority scale sets are useful for workloads that run with interruptions or when you need larger VMs at a much-reduced cost. Just keep in mind that you can't control when a VM might be removed.
