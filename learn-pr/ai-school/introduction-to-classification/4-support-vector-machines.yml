@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 10
+durationInMinutes: 6
 content: |
   [!include[](includes/4-support-vector-machines.md)]
 quiz:
