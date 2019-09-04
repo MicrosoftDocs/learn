@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.introduction-to-classification.testing-predictions
-title: Exercise - Support vector machines 
+title: Test model accuracy 
 metadata:
-  title: Exercise - Support vector machines
+  title: Test model accuracy
   description: Here we look at how our model 'trained' itself to improve its accuracy.
   ms.date: 06/30/2019
   author: markjulmar
