@@ -94,7 +94,7 @@ Now,we can add the **ProductDetails** function to the API Management instance:
 
     ![Completing the import of a Function App](../media/3-complete-import-of-function.png)
 
-## Test the OnlineStore product
+## Test the OnlineStore products endpoint
 
 You now have a functional product details API in the API Management instance that you created. Let's test that API, by using the API Management tools in the Azure portal:
 
