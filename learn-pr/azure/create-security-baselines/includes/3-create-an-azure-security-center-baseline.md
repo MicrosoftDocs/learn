@@ -22,6 +22,11 @@ ASC is offered in two pricing tiers, **Free** and **Standard**. The Standard tie
 
     ![Screenshot the getting started with Azure security Center blade](../media/3-asc-get-started.png)
 
+### Azure Security Center built-in security polices
+The policies are grouped into four functional groups as shown below.
+   ![Screenshot of the Security policy AuditIfNotExists](../media/3-asc-security-policies.png)
+The enabled policies define the ASC recommendations. Currently Enable Monitoring in Azure Security Center is in **Preview** so the listed policies are subject to change.
+
 ### Enable the automatic provision of a monitoring agent - Level 1
 
 When automatic provisioning is enabled, Security Center installs the Microsoft Monitoring Agent on all supported Azure VMs and any new ones that are created. **Automatic provisioning is strongly recommended**.
@@ -40,10 +45,15 @@ Azure Security Center monitors daily Windows and Linux virtual machines (VMs) an
 1. Sign in to the Azure portal.
 1. Select **Security Policy** on the **Security Center** main menu.
 1. The **Policy Management** screen is displayed.
-1. Choose a subscription or management group from the displayed list .
-1. Select **Security Policy**.
-1. Ensure **System Updates** is set to **On**.
-1. Select **Save**
+1. Choose a subscription or management group from the displayed list.
+1. Check that **System updates should be installed on your machines** is one of the policies.
+1. Click the **Enable Monitoring in Azure Security Center** link.
+
+    ![Screenshot of the Security policy Azure security Center blade](../media/3-asc-enable-system-updates.png)
+1. In this example, the ASC agent has not been deployed to a VM or physical machine so the message **AuditIfNotExists** is displayed. AuditIfNotExists enables auditing on resources that match the if condition. If the resource is not deployed, **NotExists** is displayed. 
+    ![Screenshot of the Security policy AuditIfNotExists](../media/3-asc-enable-auditing.png)
+If enabled, **Audit** is displayed. If deployed but disabled, **Disabled** is displayed.
+    ![Screenshot of the Security policy AuditIfNotExists](../media/3-state-of-audit.png)
 
 ### Enable Security Configurations - level 1
 
@@ -51,139 +61,82 @@ Azure Security Center monitors security configurations by applying a set of over
 
 1. Sign in to the Azure portal.
 1. Select **Security Policy** on the **Security Center** main menu.
-1. Select the applicable subscription.
-1. Click on **Security Policy**.
-1. Set **Security Configuration** to **On**.
+1. The **Policy Management** screen is displayed.
+1. Choose a subscription or management group from the displayed list.
+1. Check that **Vulnerabilities in security configuration on your virtual machine scale sets should be remediated** is one of the policies.
 
-### Enable Endpoint Protection - Level 1
+    ![Screenshot of the Security policy Azure security Center blade](../media/3-asc-enable-system-updates.png)
+
+### All of the following policies that have a (*) in their title are listed in the **Security policies** blade as described above
+
+### Enable Endpoint Protection (*) - Level 1
 
 Endpoint protection is recommended for all virtual machines.
 
-1. Sign in to the Azure portal.
-1. Select **Security Policy** on the **Security Center** main menu.
-1. Select the applicable subscription.
-1. Click on **Security Policy**.
-1. Set **Endpoint Protection** to **On**.
-
-### Enable Disk Encryption - Level 1
+### Enable Disk Encryption (*) - Level 1
 
 Azure Security Center recommends that you apply disk encryption if you have Windows or Linux VM disks that are not encrypted using Azure Disk Encryption. Disk Encryption lets you encrypt your Windows and Linux IaaS VM disks. Encryption is recommended for both the OS and data volumes on your VM.
 
-1. Sign in to the Azure portal.
-1. Select **Security Policy** on the **Security Center** main menu.
-1. Select the applicable subscription.
-1. Click on **Security Policy**.
-1. Set **Disk Encryption** to **On**.
-
-### Enable Network Security Groups - Level 1
+### Enable Network Security Groups (*) - Level 1
 
 Azure Security Center recommends that you enable a network security group (NSG) if one is not already enabled. NSGs contain a list of Access Control List (ACL) rules that allow or deny network traffic to your VM instances in a Virtual Network. NSGs can be associated with either subnets or individual VM instances within that subnet. When an NSG is associated with a subnet, the ACL rules apply to all the VM instances in that subnet. In addition, traffic to an individual VM can be restricted further by associating an NSG directly to that VM.
 
-1. Sign in to the Azure portal.
-1. Select **Security Policy** on the **Security Center** main menu.
-1. Select the applicable subscription.
-1. Click on **Security Policy**.
-1. Set **Network Security Groups** to **On**.
-
-### Enable Web Application Firewall - Level 1
+### Enable Web Application Firewall (*) - Level 1
 
 Azure Security Center may recommend that you add a web application firewall (WAF) from a Microsoft partner to secure your web applications.
 
-1. Sign in to the Azure portal.
-1. Select **Security Policy** on the **Security Center** main menu.
-1. Select the applicable subscription.
-1. Click on **Security Policy**.
-1. Set **Web Application Firewall** to **On**.
-
-### Enable Vulnerability Assessment - Level 1
+### Enable Vulnerability Assessment (*) - Level 1
 
 The vulnerability assessment in Azure Security Center is part of the Security Center virtual machine (VM) recommendations. If Security Center doesn't find a vulnerability assessment solution installed on your VM, it recommends that you install one. A partner agent, after being deployed, starts reporting vulnerability data to the partner's management platform. In turn, the partner's management platform provides vulnerability and health monitoring data back to Security Center.
 
-1. Sign in to the Azure portal.
-1. Select **Security Policy** on the **Security Center** main menu.
-1. Select the applicable subscription.
-1. Click on **Security Policy**.
-1. Set **Vulnerability assessment** to **On**.
-
-### Enable Storage Encryption - Level 1
+### Enable Storage Encryption (*) - Level 1
 
 When this setting is enabled, any new data in Azure Blobs and Files will be encrypted.
 
-1. Sign in to the Azure portal.
-1. Select **Security Policy** on the **Security Center** main menu.
-1. Select the applicable subscription.
-1. Click on **Security Policy**.
-1. Set **Storage Encryption** to **On**.
-
-### Enable JIT Network Access - Level 1
+### Enable JIT Network Access (*) - Level 1
 
 Just-in-time (JIT) virtual machine (VM) access can be used to lock down inbound traffic to your Azure VMs, reducing exposure to attacks while providing easy access to connect to VMs when needed.
 
-1. Sign in to the Azure portal.
-1. Select **Security Policy** on the **Security Center** main menu.
-1. Select the applicable subscription.
-1. Click on **Security Policy**.
-1. Set **JIT Network Access** to **On**.
-
-### Enable Adaptive Application Controls - Level 1
+### Enable Adaptive Application Controls (*) - Level 1
 
 Adaptive application control is an intelligent, automated end-to-end application whitelisting solution from Azure Security Center. It helps you control which applications can run on your Azure and non-Azure VMs (Windows and Linux), which, among other benefits, helps harden your VMs against malware. Security Center uses machine learning to analyze the applications running on your VMs and helps you apply the specific whitelisting rules using this intelligence. This capability greatly simplifies the process of configuring and maintaining application whitelisting policies.
 
-1. Sign in to the Azure portal.
-1. Select **Security Policy** on the **Security Center** main menu.
-1. Select the applicable subscription.
-1. Click on **Security Policy**.
-1. Set **Adaptive Application Controls** to **On**.
-
-### Enable SQL Auditing & Threat Detection - Level 1
+### Enable SQL Auditing & Threat Detection (*) - Level 1
 
 Azure Security Center will recommend that you turn on auditing and threat detection for all databases on your Azure SQL servers if auditing is not already enabled. Auditing and threat detection can help you maintain regulatory compliance, understand database activity, and gain insight into discrepancies and anomalies that could indicate business concerns or suspected security violations.
 
-1. Sign in to the Azure portal.
-1. Select **Security Policy** on the **Security Center** main menu.
-1. Select the applicable subscription.
-1. Click on **Security Policy**.
-1. Set **SQL auditing & Threat detection** to **On**.
-
-### Enable SQL Encryption - Level 1
+### Enable SQL Encryption (*) - Level 1
 
 Azure Security Center will recommend that you enable Transparent Data Encryption (TDE) on SQL databases if TDE is not already enabled. TDE protects your data and helps you meet compliance requirements by encrypting your database, associated backups, and transaction log files at rest, without requiring changes to your application.
-
-1. Sign in to the Azure portal.
-1. Select **Security Policy** on the **Security Center** main menu.
-1. Select the applicable subscription.
-1. Click on **Security Policy**.
-1. Set **SQL Encryption** to **On**.
 
 ### Set Security Contact Email and Phone Number - Level 1
 
 Azure Security Center will recommend that you provide security contact details for your Azure subscription if you haven't already. This information will be used by Microsoft to contact you if the Microsoft Security Response Center (MSRC) discovers that your customer data has been accessed by an unlawful or unauthorized party. MSRC performs select security monitoring of the Azure network and infrastructure and receives threat intelligence and abuse complaints from third parties.
 
 1. Sign in to the Azure portal.
-1. Select **Security Policy** on the **Security Center** main menu.
-1. Select the applicable subscription.
-1. Click on **Email Notifications**.
-1. Ensure a valid security contact email address and phone number are set.
+1. Select **Cost Management + Billing** on the right side of the main menu.
+1. The **Contact info** screen is displayed.
+1. Enter or validate the contact information displayed.
+
+    ![Screenshot of the Contact information Azure security Center blade](../media/3-contact-info.png)
 
 ### Enable Send me emails about alerts - Level 1
 
 Azure Security Center will recommend that you provide security contact details for your Azure subscription if you haven't already.
 
 1. Sign in to the Azure portal.
-1. Select **Security Policy** on the **Security Center** main menu.
-1. CLick on security policy subscription.
-1. Click on **Email notifications**.
-1. Set **Send me emails about alerts** to **On**.
+1. Select **Security Center** on the right side of the main menu.
+1. The **Pricing & settings** screen is displayed.
+1. Click on the subscription.
+1. Click **Email notifications**.
+1. Select **Save**.
+    ![Screenshot of the alert email notification Azure security Center blade](../media/3-asc-email-notifications.png)
 
 ### Enable Send email also to subscription owners - Level 1
 
 Azure Security Center will recommend that you provide security contact details for your Azure subscription if you haven't already.
 
-1. Sign in to the Azure portal.
-1. Select **Security Policy** on the **Security Center** main menu.
-1. CLick on security policy subscription.
-1. Click on **Email notifications**.
-1. Set **Send email also to subscription owners** to **On**.
+1. Using the above **Email notifications** form, additional emails can be added separated by commas.
 
 > [!TIP]
 > Remember to select **Save** if you make changes to any of the settings.
