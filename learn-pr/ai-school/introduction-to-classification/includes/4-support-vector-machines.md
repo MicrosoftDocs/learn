@@ -16,7 +16,7 @@ It is important to understand that all data has variability, which means that a 
 
 Note the outlier data points (indicated by the red dashes around them.) These outliers are examples of data that the model cannot possibly predict accurately. This error is known as “irreducible error” or “Bayes error”.
 
-## Data quality
+### Data quality
 
 Much of the work in building an AI system is thinking about what data we need, how to get it, and - this is vitally important - evaluating the data quality. Checking for missing or incorrect values and removing or correcting data is called **data cleaning**.
 

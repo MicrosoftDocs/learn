@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.introduction-to-classification.exercise-svms
-title: Predict categories with support vector machines 
+title: Exercise - Support vector machines 
 metadata:
-  title: Predict categories with support vector machines
+  title: Exercise - Support vector machines
   description: Here we look at how our model 'trained' itself to improve its accuracy.
   ms.date: 06/30/2019
   author: markjulmar

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.introduction-to-classification.support-vector-machines
-title: Exercise - Support vector machines 
+title: Predict categories with support vector machines 
 metadata:
-  title: Exercise - Support vector machines
+  title: Predict categories with support vector machines
   description: Here we use Azure Notebooks to build a support vector machine model.
   ms.date: 06/30/2019
   author: markjulmar
