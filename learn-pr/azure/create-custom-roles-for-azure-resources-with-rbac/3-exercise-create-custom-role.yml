@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-custom-roles-rbac.exercise-create-custom-role
+title: Exercise - Create a custom role
+metadata:
+  title: Exercise - Create a custom role
+  description: Learn how to create a custom role in Azure
+  ms.date: 09/04/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+azureSandbox: false
+content: |
+  [!include[](includes/3-exercise-create-custom-role.md)]
