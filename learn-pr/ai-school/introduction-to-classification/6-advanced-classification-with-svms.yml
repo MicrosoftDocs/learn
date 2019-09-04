@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.introduction-to-classification.advanced-svms
-title: Exercise - Support vector machines 
+title: Improving predictions with support vector machines  
 metadata:
-  title: Exercise - Support vector machines
+  title: Improving predictions with support vector machines
   description: Here we look at how our model 'trained' itself to improve its accuracy.
   ms.date: 06/30/2019
   author: markjulmar
