@@ -18,7 +18,9 @@ ASC is offered in two pricing tiers, **Free** and **Standard**. The Standard tie
 1. Select **Save**
 
     > [!NOTE]
-    > If you're still in a free tier, the portal might lock you on the **Getting started** option. You can enable the Standard tier from this screen as well.
+    > If you're still in a free tier, the portal might lock you on the **Getting started** option, as shown below. You can enable the Standard tier from this screen as well.
+
+    ![Screenshot the getting started with Azure security Center blade](../media/3-asc-get-started.png)
 
 ### Enable the automatic provision of a monitoring agent - Level 1
 
@@ -26,9 +28,10 @@ When automatic provisioning is enabled, Security Center installs the Microsoft M
 
 1. Sign in to the Azure portal.
 1. Select **Security Policy** on the **Security Center** main menu.
-1. On the row of the subscription, select **Edit settings**.
-1. In the **Data Collection** tab, set **Auto provisioning** to **On**.
-1. Select **Save**
+1. On the row of the subscription, select the subscription on which agents will be installed.
+1. Click on **Install agents**.
+
+    ![Screenshot the getting started with Azure security Center blade](../media/3-asc-install-agents.png)
 
 ### Enable System Updates - Level 1
 
@@ -36,7 +39,8 @@ Azure Security Center monitors daily Windows and Linux virtual machines (VMs) an
 
 1. Sign in to the Azure portal.
 1. Select **Security Policy** on the **Security Center** main menu.
-1. Select the **Security Policy subscription**.
+1. The **Policy Management** screen is displayed.
+1. Choose a subscription or management group from the displayed list .
 1. Select **Security Policy**.
 1. Ensure **System Updates** is set to **On**.
 1. Select **Save**
