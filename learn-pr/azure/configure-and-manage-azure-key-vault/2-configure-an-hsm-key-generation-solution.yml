@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-security.configure-and-manage-azure-key-vault.configure-an-hsm-key-generation-solution
+title: Configure a Hardware Security Module Key-generation Solution
+metadata:
+  title: Configure a Hardware Security Module Key-generation Solution
+  description: Configure a Hardware Security Module Key-generation Solution
+  ms.date: 09/9/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-configure-an-hsm-key-generation-solution.md)]
