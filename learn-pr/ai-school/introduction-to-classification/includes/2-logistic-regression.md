@@ -4,9 +4,9 @@ In machine learning, when we predict an example’s category, we __label__ the e
   
 To build a classification model we need to use training examples that are already labeled. The model learns from these labeled examples, and will be able to predict labels for new unlabeled examples.
 
-So if we want to predict the breed of dogs, we would create a data set and label the examples ourselves with the features of dogs (height, weight, fur color, ear shape, etc.). If we label enough features in a big enough data set of dogs, we can create a machine learning model that can guess the breed of any new dog we meet.
+So if we want to predict the breed of dogs, we could create a data set and label the examples ourselves with the features of dogs (height, weight, fur color, ear shape, etc.). If we label enough features in a big enough data set of dogs, we can create a machine learning model that can guess the breed of any new dog we meet.
 
-## Training
+### Training
 
 In the exercises, the models we build ‘train’ themselves to improve their accuracy.
 
@@ -18,14 +18,14 @@ There are many different ways training can work. One common method is to start w
 
 ## Logistic Regression
 
-Logistic regression is a binary classification model, meaning it predicts 2 categories (e.g. yes or no, win or loss). Don’t be fooled by the ‘regression’ in the name, this simply means that it predicts the probability of a category.
+Logistic regression is a binary classification model, meaning it predicts 2 categories (e.g. yes or no, win or loss etc.). Don’t be fooled by the ‘regression’ in the name, this simply means that it predicts the probability of a category.
 
 In the plot below we compare customer satisfaction with different cocoa percentages using logistic regression.
 
 ![Scatter plot showing a logistic regression with only one feature. The Y-axis represents satisfaction likelihood and the X-axis represent coca percent. The blue data points on the bottom of the Y-axis, with low levels of cocoa percent. The green data points are at the top of the Y-axis with high levels of cocoa percent. There is a non-linear black line that divides the two categories.](../media/3.1_LogisticRegression-02.png)
 
-Logistic regression can plot a curve that can help us predict the likelihood that a customer is satisfied based on the cocoa percentage of the chocolate bar.
+Logistic regression can plot a curve that can help us predict the likelihood that a customer is satisfied based on the cocoa percentage of the chocolate bar. Behind the scenes, logistic regression uses a powerful equation which can plot complex curves to accurately separate examples into categories.
 
-Logistic regression is a nice, easy introduction to classification models. Similar to the variations of linear regression, variations of logistic regression can model some quite complicated data and even predict multiple categories.
+Logistic regression is a nice, easy introduction to classification algorithms. Similar to the variations of linear regression we have covered, variations of logistic regression can model some quite complicated data and even predict multiple categories.
 
-Next up we have a programming exercise to do - we'll use logistic regression to predict which team will win a football (soccer) match.  
+Next up we have a programming exercise to do - we'll use logistic regression to predict which team will win a football (soccer) match.

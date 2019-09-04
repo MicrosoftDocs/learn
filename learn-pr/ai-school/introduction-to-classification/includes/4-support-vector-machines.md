@@ -8,6 +8,20 @@ A hyperplane is a boundary that divides data points - SVMs can try to find a hyp
 
 This is like our logistic regression programming exercise, but the SVM tries to make the margin between the two lines as large as possible. This is known as a maximum margin SVM. This is done so the SVM is as accurate as possible when you introduce new data.
 
+## Support vectors and margins
+
+The SVM calculates the hyperplanes and margins by using the data points from the different categories that are closest together.  
+  
+These data points are called support vectors - this is where SVMs get their name from.
+  
+![Scatter plot showing a linear support vector machine. The plot has two classes of data points - green and blue data points. They are on opposite diagonal sides of the plot, divided by a black line that represents the hyperplane. There are two red lines either side of the black line, which intersects with several of the data points on each side - these are margins. There are no data points between the red lines. The data points that the red lines intersect with are labeled as 'support vectors'.](../media/2.4_SupportVectorMachines-01.png)
+
+Data points on the margin are called support vectors (hence, the model is called a support vector machine). SVMs can perform well with large, non-linear, complex data sets too.
+
+![Scatter plot showing a non-linear support vector machine. The plot has two types of data points - green and blue data points. They are on opposite diagonal sides of the plot, divided by a non-linear black line that represents the hyperplane. There are two red lines either side of the black line, which intersects with several of the data points on each side - these are margins. There are no data points between the red lines.](../media/2.4_SupportVectorMachines-02.png)
+
+New examples introduced to an SVM model are labeled with a category based on which side of the margin they fall upon. If desired, the number of hyperplanes can be increased, allowing many different types of labels. This is useful in text and image classification. SVMs have been widely applied in biology in areas such as accurately classifying proteins and DNA sequences.
+
 ## Error
 
 It is important to understand that all data has variability, which means that a models accuracy cannot usually reach 100%.
