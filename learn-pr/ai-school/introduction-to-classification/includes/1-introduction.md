@@ -6,6 +6,6 @@ If you have done some data science before you might be used to seeing logistic r
 
 ![Scatter plot showing a logistic regression with only one feature. The Y-axis represents satisfaction likelihood and the X-axis represent coca percent. The blue data points on the bottom of the Y-axis, with low levels of cocoa percent. The green data points are at the top of the Y-axis with high levels of cocoa percent. There is a non-linear black line that divides the two categories.](../media/3.1_LogisticRegression-02.png)
 
-Classification differs from the regression algorithms – where we try to predict a number rather than a category. If we wanted to predict the speed a bird can fly or the price of a house, that would be a regression problem. Predicting if a customer is satisfied or dissatisfied is a classification problem.
+Classification is different to regression – where we try to predict a number rather than a category. If we wanted to predict the speed a bird can fly or the price of a house, that would be a regression problem. Predicting if a customer is satisfied or dissatisfied is a classification problem.
 
 There are lots of different classification models we can use. We’ll use a simple, but powerful, classification algorithm next - __logistic regression__.
