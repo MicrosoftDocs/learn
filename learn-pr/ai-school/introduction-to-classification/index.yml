@@ -33,6 +33,7 @@ units:
 - learn-wwl.introduction-to-classification.exercise-logistic-regression
 - learn-wwl.introduction-to-classification.support-vector-machines
 - learn-wwl.introduction-to-classification.exercise-svms
+- learn-wwl.introduction-to-classification.testing-predictions
 - learn-wwl.introduction-to-classification.advanced-svms
 - learn-wwl.introduction-to-classification.exercise-advanced-svms
 - learn-wwl.introduction-to-classification.summary
