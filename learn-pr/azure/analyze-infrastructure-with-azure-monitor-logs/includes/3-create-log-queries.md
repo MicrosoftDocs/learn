@@ -20,11 +20,11 @@ You can find the Log Analytics tool in the Azure portal and use it to run sample
 
 You use the Kusto Query Language to query log information for your services running in Azure. A Kusto query is a read-only request to process data and return results. You state the querying plain text, using a data-flow model designed to make the syntax easy to read, author, and automate. The query uses schema entities that are organized in a hierarchy similar to that of SQL Database: databases, tables, and columns.
 
-A Kusto query consists of a sequence of query statements, delimited by a semicolon (;), with at least one statement being a tabular expression statement. A tabular expression statement formats the data arranged in a table-like mesh of columns and rows.
+A Kusto query consists of a sequence of query statements, delimited by a semicolon (`;`), with at least one statement being a tabular expression statement. A tabular expression statement formats the data arranged in a table-like mesh of columns and rows.
 
-The syntax of a tabular expression statement has tabular data flow from one tabular query operator to another, starting with data source. A data source could be a table in a database, or an operator that produces data. The data then flows through a set of data transformation operators that are bound together with the pipe (|) delimiter.
+The syntax of a tabular expression statement has tabular data flow from one tabular query operator to another, starting with data source. A data source could be a table in a database, or an operator that produces data. The data then flows through a set of data transformation operators that are bound together with the pipe (`|`) delimiter.
 
-For example, the following Kusto query has a single tabular expression statement. The statement starts with a reference to a table called Events (the database that hosts this table is implicit here, and part of the connection information). The data (the rows) for that table are then filtered by the value of the StartTime column, and then filtered further by the value of the State column. The query then returns the count of "surviving" rows.
+For example, the following Kusto query has a single tabular expression statement. The statement starts with a reference to a table called `Events`. The database that hosts this table is implicit here, and part of the connection information. The data for that table, stored in rows, are then filtered by the value of the `StartTime` column, and then filtered further by the value of the `State` column. The query then returns the count of the resulting rows.
 
 ```kusto
 Events
@@ -36,7 +36,7 @@ Events
 > [!NOTE]
 > The Kusto query language used by Azure Monitor is case-sensitive. Language keywords are typically written in lower-case. When using names of tables or columns in a query, make sure to use the correct case.
 
-Events (captured from the Event Logs of computers being monitored) are just one type of data source. Azure Monitor provides many other types of data sources. For example, the Heartbeat data source reports the health of all computers reporting to your Log Analytics workspace. You can also capture data from performance counters, and update management records.
+Events, captured from the event logs of computers being monitored, are just one type of data source. Azure Monitor provides many other types of data sources. For example, the `Heartbeat` data source reports the health of all computers reporting to your Log Analytics workspace. You can also capture data from performance counters, and update management records.
 
 The example retrieves the most recent heartbeat record for each computer. The computer is identified by its IP address. In this example, the `summarize` aggregation with the `arg_max` function. returns the record with the most recent value for each IP address.
 
