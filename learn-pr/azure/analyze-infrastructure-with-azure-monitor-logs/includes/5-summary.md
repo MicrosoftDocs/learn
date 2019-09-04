@@ -4,8 +4,12 @@ You saw how to:
 
 - Explore the types of data collected by Azure Monitor.
 - Create Azure Monitor log queries to extract information from the log dat
-  
+
+You can now use Azure Monitor in your environment to analyze your environment and troubleshoot issues.
+
 ## Learn more
+
+For more information on Azure Monitor, visit the following articles.
 
 - [Azure Monitor Overview](https://docs.microsoft.com/azure/azure-monitor/overview)
 - [Writing efficient log queries in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-performance)

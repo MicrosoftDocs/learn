@@ -21,12 +21,12 @@ quiz:
     - content: "Azure Monitor can collect data from a variety of sources, as the Application event log, the operating system (Windows and Linux), Azure resources, and custom data sources."
       isCorrect: true
       explanation: "This answer is correct"
-    - content: "Information about potential security threats to your system."
+    - content: "Azure billing details."
       isCorrect: false
-      explanation: "Azure does not perform any form of threat analysis. You may be able to use the usage information gathered to determine what types of threats your system is exposed to, however"
-    - content: "Authentication and authorization records as users connect to your system."
+      explanation: "Azure Monitor does not collect information related to billing. You can use Azure Cost Management to track this information."
+    - content: "Backups of database transaction logs"
       isCorrect: false
-      explanation: "Azure Monitor does not record authentication or authorization information for these scenarios."
+      explanation: "Azure Monitor does perform backups of database transaction logs. You can use Azure Backup for backups of your systems."
   - content: "What two fundamental types of data are collected by Azure Monitor?"
     choices:
     - content: "Logs and metrics"
