@@ -10,18 +10,18 @@ The following diagram gives a high-level view of Azure Monitor. On the left are 
 
 Azure Monitor collects data automatically from a range of components. For example:
 
-- **Application data.** Data that relates to your custom application code. 
-- **Operating system data.** Data from the Windows or Linux virtual machines that host your application.
-- **Azure resource data.** Data that relates to the operations of an Azure resource, such as a web app or a load balancer.
-- **Azure subscription data.** Data that relates to your subscription, and includes data about Azure health and availability.
-- **Azure tenant data.** Data about your Azure tenent-level services, such as Azure Active Directory.
+- **Application data**- Data that relates to your custom application code. 
+- **Operating system data** - Data from the Windows or Linux virtual machines that host your application.
+- **Azure resource data** - Data that relates to the operations of an Azure resource, such as a web app or a load balancer.
+- **Azure subscription data** - Data that relates to your subscription, and includes data about Azure health and availability.
+- **Azure tenant data** - Data about your Azure tenent-level services, such as Azure Active Directory.
 
 Because Azure Monitor is an automatic system, it begins to collect data from these sources as soon as you create Azure resources such as virtual machines and web apps. However, you can extend the data that Azure Monitor collects by:
 
-- **Enabling diagnostics.** For some resources, such as Azure SQL Database, you only receive full information about a resource after you have enabled diagnostic logging for it. You can use the Azure portal, Azure CLI, or PowerShell to enable diagnostics.
-- **Adding an agent.** For virtual machines, you can install the Log Analytics agent and configure it to send data to a Log Analytics workspace. This agent increases the amount of information that is sent to Azure Monitor.
+- **Enabling diagnostics** - For some resources, such as Azure SQL Database, you only receive full information about a resource after you have enabled diagnostic logging for it. You can use the Azure portal, Azure CLI, or PowerShell to enable diagnostics.
+- **Adding an agent** - For virtual machines, you can install the Log Analytics agent and configure it to send data to a Log Analytics workspace. This agent increases the amount of information that is sent to Azure Monitor.
 
-Your developers might also want to send data to Azure Monitor from custom code, such as a Web app, Azure Function, or mobile app. They send data by calling the Data Collector API. This is a REST interface, that you communicate with through port 80, and is compatible with a wide variety of development frameworks, such as .NET Framework, Node.JS, and Python. Developers can choose their favorite language and framework to log data in Azure Monitor.
+Your developers might also want to send data to Azure Monitor from custom code, such as a Web app, Azure Function, or mobile app. They send data by calling the Data Collector API. This is a REST interface, that you communicate with through HTTP, and is compatible with a wide variety of development frameworks, such as .NET Framework, Node.JS, and Python. Developers can choose their favorite language and framework to log data in Azure Monitor.
 
 ### Logs
 
