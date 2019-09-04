@@ -1,8 +1,8 @@
-Support vector machines (SVMs) are one of the most elegant solutions in machine learning and are vital tools in biology, and many other areas of science and industry.. They can be used for both classification and regression problems, and can be easily coded in Python and R. In this module, we'll use them for classification.
+Support vector machines (SVMs) are one of the most elegant solutions in machine learning and are vital tools in biology, and many other areas of science and industry. They can be used for both classification and regression problems, and can be easily coded in Python and R. In this module, we'll use them for classification.
 
 ## Hyperplanes
 
-A hyperplane is a boundary that divides data points - SVMs can try to find a hyperplane that separates different kinds of data points as accurately as possible. In the example below, it has separated the dots on the bottom left (blue) from those in the top right (green) using the black line (hyperplane). Data points are classified based on which side of the black line they fall upon.
+A hyperplane is a boundary that divides data points - SVMs try to find a hyperplane that separates different kinds of data points as accurately as possible. In the example below, it has separated the dots on the bottom left (blue) from those in the top right (green) using the black line (hyperplane). Data points are classified based on which side of the black line they fall upon.
 
 ![Scatter plot showing a linear support vector machine. The plot has two classes of data points - green and blue data points. They are on opposite diagonal sides of the plot, divided by a black line, which represents the hyperplane. There are two red lines either side of the black line, which intersects with several of the data points on each side - these are margins. There are no data points between the red lines.](../media/2.4_LinearSupportVectorMachine.png)
 
@@ -22,7 +22,7 @@ Data points on the margin are called support vectors (hence, the model is called
 
 New examples introduced to an SVM model are labeled with a category based on which side of the margin they fall upon. If desired, the number of hyperplanes can be increased, allowing many different types of labels. This is useful in text and image classification. SVMs have been widely applied in biology in areas such as accurately classifying proteins and DNA sequences.
 
-## Error
+### Error
 
 It is important to understand that all data has variability, which means that a models accuracy cannot usually reach 100%.
 

@@ -4,7 +4,7 @@ In machine learning, when we predict an example’s category, we __label__ the e
   
 To build a classification model we need to use training examples that are already labeled. The model learns from these labeled examples, and will be able to predict labels for new unlabeled examples.
 
-So if we want to predict the breed of dogs, we could create a data set and label the examples ourselves with the features of dogs (height, weight, fur color, ear shape, etc.). If we label enough features in a big enough data set of dogs, we can create a machine learning model that can guess the breed of any new dog we meet.
+So if we want to predict the breed of dogs, we could create a data set with the features of dogs (height, weight, fur color, ear shape, etc.) and label the examples ourselves. If we label enough examples in a big enough data set of dogs, we can create a machine learning model that can predict the breed of any new dog we meet.
 
 ### Training
 
