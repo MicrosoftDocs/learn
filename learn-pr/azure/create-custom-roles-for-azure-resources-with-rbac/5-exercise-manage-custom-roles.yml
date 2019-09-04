@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-custom-roles-rbac.exercise-manage-custom-roles
+title: Exercise - View and manage a custom roles
+metadata:
+  title: Exercise - View and manage a custom roles
+  description: Learn how to manage a custom role in Azure
+  ms.date: 09/04/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+azureSandbox: false
+content: |
+  [!include[](includes/5-exercise-manage-custom-roles.md)]

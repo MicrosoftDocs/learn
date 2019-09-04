@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-custom-roles-rbac.custom-roles-for-azure-resources
+title: What are custom roles in Azure?
+metadata:
+  title: What are custom roles in Azure?
+  description: Learn about custom roles for access management in Azure
+  ms.date: 09/04/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-what-are-custom-roles.md)]
