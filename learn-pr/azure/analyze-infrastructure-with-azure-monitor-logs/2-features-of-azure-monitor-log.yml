@@ -13,3 +13,28 @@ title: Features of Azure Monitor logs
 durationInMinutes: 10
 content: |
   [!include[](includes/2-features-of-azure-monitor-log.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What data does Azure Monitor collect?"
+    choices:
+    - content: "Azure Monitor can collect data from a variety of sources, as the Application event log, the operating system (Windows and Linux), Azure resources, and custom data sources."
+      isCorrect: true
+      explanation: "This answer is correct"
+    - content: "Information about potential security threats to your system."
+      isCorrect: false
+      explanation: "No. Azure does not perform any form of threat analysis. You may be able to use the usage information gathered to determine what types of threats your system is exposed to, however"
+    - content: "Authentication and authorization records as users connect to your system."
+      isCorrect: false
+      explanation: "No. Azure Monitor does not record authentication or authorization information for these scenarios."
+  - content: "What two fundamental types of data are collected by Azure Monitor?"
+    choices:
+    - content: "Logs and metrics"
+      isCorrect: true
+      explanation: "All data collected by Azure Monitor fits into one of two fundamental types, metrics and logs. Metrics are numerical values that describe some aspect of a system at a particular point in time. Logs contain different kinds of data, such as Event information, organized into records."
+    - content: "Username and password"
+      isCorrect: false
+      explanation: "No. You may be able to track which users are connecting to your system, but items such as passwords are not recorded."
+    - content: "Email notifications and Errors"
+      isCorrect: false
+      explanation: "No. Use Azure Monitor to send an Email Notifications for Azure Security Center Alerts. Azure Security Center allows you to provide a security contact that will receive email notifications for Security Alerts."

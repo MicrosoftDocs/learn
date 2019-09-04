@@ -1,22 +1,21 @@
 ### YamlMime:Module
 uid: learn.analyze-infrastructure-with-azure-monitor-logs
 metadata:
-  title: Module title
-  description: TODO
+  title: Analyze your Azure infrastructure with Azure Monitor logs
+  description: Use Azure Monitor logs to extract valuable information about your infrastructure from log data.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Module title
-summary: TODO
+title: Analyze your Azure infrastructure with Azure Monitor logs
+summary: Use Azure Monitor logs to extract valuable information about your infrastructure from log data.
 abstract: | 
   In this module, you will:
-  - TODO
-  - TODO
-  - TODO
+  - Identify the features and capabilities of Azure Monitor logs.
+  - Create basic Azure Monitor log queries to extract information from log data.
 prerequisites: | 
-  - TODO
+  - None
 iconUrl: /learn/achievements/analyze-infrastructure-with-azure-monitor-logs.svg
 levels:
 - beginner
