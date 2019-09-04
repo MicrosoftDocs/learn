@@ -1,4 +1,4 @@
-## Title
+# Title
 
 Analyze your Azure infrastructure with Azure Monitor logs
 
