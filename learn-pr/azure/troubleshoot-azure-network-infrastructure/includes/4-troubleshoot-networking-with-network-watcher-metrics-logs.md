@@ -1,6 +1,6 @@
-If you want to diagnose a problem quickly, you have to understand the information that is available in the Network Watcher logs.
+If you want to diagnose a problem quickly, you have to understand the information that's available in the Azure Network Watcher logs.
 
-In your engineering company, you want to ensure your staff can minimize the time it takes to diagnose and resolve any network configuration problem. You want to ensure they know which information is available in which logs.
+In your engineering company, you want to minimize the time it takes for your staff to diagnose and resolve any network configuration problem. You want to ensure they know which information is available in which logs.
 
 In this module, you'll focus on flow logs, diagnostic logs, and traffic analytics. You'll learn how these tools can help to troubleshoot the Azure network.
 

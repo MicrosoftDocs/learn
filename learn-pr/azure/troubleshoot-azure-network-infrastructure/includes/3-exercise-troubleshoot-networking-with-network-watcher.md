@@ -1,4 +1,4 @@
-Network Watcher makes it easier to diagnose configuration errors prevent virtual machines (VMs) from communicating.
+Azure Network Watcher helps you diagnose configuration errors that prevent virtual machines (VMs) from communicating.
 
 Suppose you have two VMs that can't communicate. You want to diagnose the problem and resolve it as fast as possible. You want to use Network Watcher to do that.
 
@@ -12,7 +12,7 @@ Here, you'll troubleshoot connectivity between two VMs in different subnets.
 
 Let's start by creating the problematic infrastructure, which includes a configuration error:
 
-1. In Cloud Shell, to create the virtual network **MyVNet1** and **FrontendSubnet**, run this command:
+1. In Azure Cloud Shell, run this command to create the virtual network **MyVNet1** and the subnet **FrontendSubnet**:
 
     ```bash
         az network vnet create --resource-group <rgn>[sandbox resource group name]</rgn> \
@@ -23,7 +23,7 @@ Let's start by creating the problematic infrastructure, which includes a configu
           --location EastUS
     ```
 
-1. To deploy a VM in **Frontend subnet**, run this command:
+1. Run this command to deploy a VM in **FrontendSubnet**:
 
     ```bash
         az vm create --resource-group <rgn>[sandbox resource group name]</rgn> \
@@ -37,7 +37,7 @@ Let's start by creating the problematic infrastructure, which includes a configu
           --admin-password Demouser@123
     ```
 
-1. To create the **Backend subnet**, run this command:
+1. Run this command to create the subnet called **BackendSubnet**:
 
     ```bash
         az network vnet subnet create --address-prefixes 10.10.2.0/24 \
@@ -46,7 +46,7 @@ Let's start by creating the problematic infrastructure, which includes a configu
           --vnet-name MyVNet1
     ```
 
-1. To deploy a virtual machine in **Backend subnet**, run this command:
+1. Run this command to deploy a virtual machine in **BackendSubnet**:
 
     ```bash
         az vm create --resource-group <rgn>[sandbox resource group name]</rgn> \
@@ -60,7 +60,7 @@ Let's start by creating the problematic infrastructure, which includes a configu
           --admin-password Demouser@123
     ```
 
-1. To create a network security group, run this command:
+1. Run this command to create a network security group (NSG):
 
     ```bash
         az network nsg create --name MyNsg \
@@ -68,7 +68,7 @@ Let's start by creating the problematic infrastructure, which includes a configu
             --location EastUS
     ```
 
-1. To create an NSG configuration mistake that prevents communication between the VMs, run this command:
+1. Run this command to create an NSG configuration mistake that prevents communication between the VMs:
 
     ```bash
         az network nsg rule create --resource-group <rgn>[sandbox resource group name]</rgn> \
@@ -84,7 +84,7 @@ Let's start by creating the problematic infrastructure, which includes a configu
           --description "Deny from specific IP address ranges on 80, 443 and 3389."
     ```
 
-1. To associate a network security group to a subnet, run this command:
+1. Run this command to associate a network security group to a subnet:
 
     ```bash
         az network vnet subnet update --resource-group <rgn>[sandbox resource group name]</rgn> \
@@ -107,23 +107,23 @@ To enable Network Watcher, run this command:
 
 ## Use Network Watcher to show the topology
 
-Now you can use Network Watcher to troubleshoot connectivity between two VMs in different subnets. Your colleague has reported connectivity issue over HTTP/HTTPS and RDP protocol between the two VMs. First, investigate the network topology:
+Now you can use Network Watcher to troubleshoot connectivity between two VMs in different subnets. Your colleague has reported a connectivity issue over HTTP/HTTPS and the RDP protocol between the two VMs. First, investigate the network topology:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the account that you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the account that you used to activate the sandbox.
 
-1. Navigate to **All Services > Networking > Network Watcher** and then click **Topology**.
+1. Go to **All Services** > **Networking** > **Network Watcher**, and then select **Topology**.
 
-1. In the drop-down lists, select the only subscription and resource group. Network Watcher displays your network topology:
+1. In the drop-down lists, select the subscription and resource group. Network Watcher displays your network topology:
 
     [![](../media/3-network-topology.png "A screenshot that shows the exercise network topology")](../media/3-network-topology-expanded-1.png#lightbox)
 
-## Use connection monitor to run tests from the backend to the frontend
+## Use connection monitor to run tests from the back end to the front end
 
-The topology appears to be correct. Let's set up some tests in connection monitor to obtain more information. Start by creating two tests from the backend VM to the frontend VM:
+The topology appears to be correct. Let's set up some tests in Connection Monitor to get more information. Start by creating two tests from the back-end VM to the front-end VM:
 
-1. Under **Monitoring**, click **Connection monitor**, and then click **+ Add**.
+1. Under **Monitoring**, select **Connection Monitor**, and then select **+ Add**.
 
-1. Configure the connection monitor with these values, and then click **Add**:
+1. Configure Connection Monitor with these values, and then select **Add**:
 
     | Setting | Value |
     | --- | --- |
@@ -137,7 +137,7 @@ The topology appears to be correct. Let's set up some tests in connection monito
 
     ![Back-to-front RDP test](../media/3-back-to-front-rdp-test.png)
 
-1. Click **+ Add** and then configure a second test with these values, and then click **Add**:
+1. Select **+ Add**. Configure a second test with these values, and then select **Add**:
 
     | Setting | Value |
     | --- | --- |
@@ -149,23 +149,23 @@ The topology appears to be correct. Let's set up some tests in connection monito
     | Probing interval | 30 seconds |
     | | |
 
-1. In the list of tests, click **Back-to-front-RDP-test**, click **...**. and then click **Start**.
+1. In the list of tests, select **Back-to-front-RDP-test**, select the ellipsis (**...**), and then select **Start**.
 
 1. Examine the results.
 
-1. In the list of tests, click **Back-to-front-HTTP-test**, click **...**. and then click **Start**.
+1. In the list of tests, select **Back-to-front-HTTP-test**, select **...**, and then select **Start**.
 
 1. Examine the results.
 
-The results should show that no traffic flows from the backend VM to the frontend VM.
+The results should show that no traffic flows from the back-end VM to the front-end VM.
 
-## Use connection monitor to run tests from the frontend to the backend
+## Use Connection Monitor to run tests from the front end to the back end
 
 Run the same tests in the opposite direction:
 
-1. Under **Monitoring**, click **Connection monitor**, and then click **+ Add**.
+1. Under **Monitoring**, select **Connection monitor**, and then select **+ Add**.
 
-1. Configure the connection monitor with these values, and then click **Add**:
+1. Configure Connection Monitor with these values, and then select **Add**:
 
     | Setting | Value |
     | --- | --- |
@@ -177,7 +177,7 @@ Run the same tests in the opposite direction:
     | Probing interval | 30 seconds |
     | | |
 
-1. Click **+ Add** and then configure a second test with these values, and then click **Add**:
+1. Select **+ Add**. Configure a second test with these values, and then select **Add**:
 
     | Setting | Value |
     | --- | --- |
@@ -189,23 +189,23 @@ Run the same tests in the opposite direction:
     | Probing interval | 30 seconds |
     | | |
 
-1. In the list of tests, click **Front-to-back-RDP-test**, click **...**. and then click **Start**.
+1. In the list of tests, select **Front-to-back-RDP-test**, select **...**, and then select **Start**.
 
 1. Examine the results.
 
-1. In the list of tests, click **Front-to-back-HTTP-test**, click **...**. and then click **Start**.
+1. In the list of tests, select **Front-to-back-HTTP-test**, select **...**, and then select **Start**.
 
 1. Examine the results.
 
-The results should show that traffic flows without problems from the frontend VM to the backend VM.
+The results should show that traffic flows without problems from the front-end VM to the back-end VM.
 
-## Use IP flow to test the connection
+## Use IP flow verify to test the connection
 
-Let's use the IP flow test tool to obtain more information:
+Let's use the IP flow verify tool to get more information:
 
-1. Under **Network diagnostic tools**, click **IP flow verify**.
+1. Under **Network diagnostic tools**, select **IP flow verify**.
 
-1. Configure the test with these values, and then click **Check**:
+1. Configure the test with these values, and then select **Check**:
 
     | Setting | Value |
     | --- | --- |
@@ -221,8 +221,8 @@ Let's use the IP flow test tool to obtain more information:
     | Remote port | 3389 |
     | | |
 
-    ![A screenshot showing an IP flow test](../media/3-ip-flow-test.png)
+    ![A screenshot that shows an IP flow test](../media/3-ip-flow-test.png)
 
-1. Examine the results. They show that access is denied due to NSG and security rule.
+1. Examine the results. They show that access is denied because of NSG and security rules.
 
-In this exercise, you have successfully used network watcher tools to discover the connectivity issue between the two subnets. One way communication is allowed but one way is to blocked due to NSG rules.
+In this exercise, you have successfully used Network Watcher tools to discover the connectivity issue between the two subnets. Communication is allowed one way but blocked the other way because of NSG rules.
