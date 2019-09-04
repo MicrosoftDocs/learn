@@ -149,7 +149,7 @@ You can now create the tables to store the data from the .csv files.
 
     ![The database page in the Azure portal with the query editor option highlighted](../media/3-query-editor-annotated.png)
 
-1. On the **coursedatabase*NNN* - Query editor** page, enter the following details, and then select **OK** to connect to the database service.
+1. On the **coursedatabase<em>NNN</em> - Query editor** page, enter the following details, and then select **OK** to connect to the database service.
 
     | Property  | Value  |
     |---|---|
@@ -288,7 +288,7 @@ You can now create the tables to store the data from the .csv files.
 
 1. On the **coursedatabase<em>NNN</em>** page, under **Overview**, select **Query editor**.
 
-1. On the **coursedatabase*NNN* - Query editor** page, enter the following details, and then select **OK** to connect to the database service.
+1. On the **coursedatabase<em>NNN</em> - Query editor** page, enter the following details, and then select **OK** to connect to the database service.
 
     | Property  | Value  |
     |---|---|
