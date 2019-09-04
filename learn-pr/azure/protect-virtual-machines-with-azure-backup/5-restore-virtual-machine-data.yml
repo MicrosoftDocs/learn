@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.protect-virtual-machines-with-azure-backup.5-restore-virtual-machine-data
+metadata:
+  title: Restore virtual machine data
+  description: Learn about the different options for restoring an Azure VM from a previous backup.
+  ms.date: 08/27/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Restore virtual machine data
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-restore-virtual-machine-data.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which restore type should be selected if you wish to replace a disk on an existing virtual machine?"
+    choices:
+    - content: Create a new VM
+      isCorrect: false
+      explanation: Selecting this option doesn't allow the disk of an existing VM to be replaced.
+    - content: Restore Disk
+      isCorrect: false
+      explanation: Selecting this option doesn't allow for you to replace a disk on an existing VM, it however does allow a disk to be restored and then be used to create a new VM.
+    - content: Replace Existing
+      isCorrect: true
+      explanation: Selecting this option allows for a disk to be restored and then used to replace a disk on an existing VM.
+  - content: "You wish to replace a disk on an existing VM but receive an error, what could be the possible reason?"
+    choices:
+    - content: The existing VM has been deleted and is no longer available
+      isCorrect: true
+      explanation: If the VM was deleted, then the disk can't be restored.
+    - content: The existing VM is part of a different resource group in your Azure subscription
+      isCorrect: false
+      explanation: The resource group that the VM belongs doesn't matter in this particular case.
+    - content: The existing VM is powered off
+      isCorrect: false
+      explanation: The VM being powered off has no impact and the disk could still be replaced.
