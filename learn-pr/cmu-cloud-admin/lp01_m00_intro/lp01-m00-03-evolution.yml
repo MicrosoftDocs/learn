@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 15
+durationInMinutes: 12
 content: |
   [!include[](includes/lp01-m00-03-evolution.md)]
 quiz:

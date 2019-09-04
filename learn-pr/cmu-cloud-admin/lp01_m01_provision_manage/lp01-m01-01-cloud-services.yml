@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 7
+durationInMinutes: 13
 content: |
   [!include[](includes/lp01-m01-01-cloud-services.md)]
 quiz:

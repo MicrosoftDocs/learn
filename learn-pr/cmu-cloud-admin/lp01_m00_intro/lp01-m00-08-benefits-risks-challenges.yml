@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 8
+durationInMinutes: 11
 content: |
   [!include[](includes/lp01-m00-08-benefits-risks-challenges.md)]
 quiz:

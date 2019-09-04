@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 22
+durationInMinutes: 24
 content: |
   [!include[](includes/lp01-m00-04-service-models.md)]
 quiz:

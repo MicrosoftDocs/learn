@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 4
+durationInMinutes: 8
 content: |
   [!include[](includes/lp01-m00-05-types.md)]
 quiz:
