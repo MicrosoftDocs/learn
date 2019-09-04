@@ -3,7 +3,7 @@ uid: learn.analyze-infrastructure-with-azure-monitor-logs.3-create-log-queries
 metadata:
   title: Create basic Azure Monitor log queries to extract information from log data
   description: Create basic Azure Monitor log queries to extract information from log data
-  ms.date: 04/30/2019
+  ms.date: 09/09/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
