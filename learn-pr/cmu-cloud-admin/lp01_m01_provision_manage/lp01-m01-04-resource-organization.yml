@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 22
+durationInMinutes: 9
 content: |
   [!include[](includes/lp01-m01-04-resource-organization.md)]
 quiz:

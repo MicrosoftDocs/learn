@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 3
+durationInMinutes: 12
 content: |
   [!include[](includes/lp01-m00-10-use-cases.md)]
 quiz:
