@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 7
+durationInMinutes: 6
 content: |
   [!include[](includes/2-simple-linear-regression.md)]
 quiz:
