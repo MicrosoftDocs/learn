@@ -18,16 +18,16 @@ Role-based access control for Azure resources
 
 ## Prerequisites
 
-- Familiarity with role-based access control (RBAC) for Azure resources
+- Basic knowledge of access management concepts in Azure like role-based access control (RBAC) for Azure resources
 
 ## Summary
 
-Understand the structure of role definitions. Identify role properties to use for custom role. Create custom role and assign to user. Test custom user role.
+Understand the structure of role definitions for access control. Identify the role properties to use that define your custom role permissions. Create a custom role and assign to a user.
 
 ## Learning objectives
 
 1. Identify role definition structure and properties
-1. Create and manage a custom user role
+1. Create and manage a custom user role for Azure resource access management
 
 ## Chunk your content into subtasks
 
@@ -35,8 +35,12 @@ Identify the subtasks of *Create custom roles for Azure resources with role-base
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| Create custom roles in Azure | grant users the minimum access permissions they need to do their job | Exercise | Identify role definition structure and properties | YES |
-| Managing custom roles | grant users the minimum access permissions they need to do their job| Exercise | Test custom role definition | YES |
+| Identify permissions needed for scenario|grant users the minimum access permissions they need to do their job|Exercise (in Create unit)|Identify role definition structure and properties|yes |
+| Create custom role in Azure | grant users the minimum access permissions they need to do their job | Exercise | Create and manage a custom user role  | YES |
+|Assign custom role | grant users the minimum access permissions they need to do their job | Exercise | Create and manage a custom user role | No with create exercise |
+|Test custom role | grant users the minimum access permissions they need to do their job | Exercise | Create and manage a custom user role | No with create exercise |
+| View custom roles | grant users the minimum access permissions they need to do their job| Exercise | Create and manage a custom user role | No with other manage tasks |
+| Manage (update and delete) custom roles | grant users the minimum access permissions they need to do their job| Exercise | Create and manage a custom user role | YES with view task |
 
 ## Outline the units
 
@@ -83,14 +87,14 @@ Identify the subtasks of *Create custom roles for Azure resources with role-base
 
 1. **Exercise - View and manage a custom role**
 
-   View custom role in Azure portal
+   1. View custom role in Azure portal
    1. Update custom role in CLI
    1. Delete custom role in CLI
    1. Demonstrate the edited list after each change
 
 1. **Summary**
 
-    In the scenario, you wanted to grant access to the new employee so that they could monitor and troubleshoot the VMs that host your website in Azure. However, to maximize security, you wanted to prevent that employee from taking any other actions. By creating a custom role in a JSON file, and then applying it using the Azure CLI, you've staisfied those requirements.
+    In the scenario, you wanted to grant access to the new employee so that they could monitor and troubleshoot the VMs that host your website in Azure. However, to maximize security, you wanted to prevent that employee from taking any other actions. By creating a custom role in a JSON file, and then applying it using the Azure CLI, you've satisfied those requirements.
 
     The built-in RBAC roles in Azure are versatile and often satisfactory for many organizations. You might not need to create custom roles. However, if you have very specific requirements or want to keep a close control of permissions, custom RBAC roles can be used to enable people to do their jobs and prevent malicious actions.
 
