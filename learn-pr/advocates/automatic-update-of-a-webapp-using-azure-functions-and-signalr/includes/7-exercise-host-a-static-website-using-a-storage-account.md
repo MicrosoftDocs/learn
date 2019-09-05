@@ -73,14 +73,15 @@ Now Visual Studio Code is configured to use the sandbox resources and avoid any 
 1. Follow the prompts to provide the following information.
 
    | Name              | Value                                                                    |
-   | ----------------- | ------------------------------------------------------------------------ |
-   | Function app      | Select **Create new Function App in Azure... Advanced**                  |
-   | Function app name | Enter a globally unique name. Valid characters are `a-z`, `0-9`, and `-`.|
-   | OS                | Select **Windows**                                                       |
-   | Plan              | Select **Consumption**                                                   |
-   | Language          | Select **JavaScript**                                                    |
-   | Resource group    | Select **<rgn>[sandbox resource group name]</rgn>**                      |
-   | Storage account   | Select the account you created earlier                                   |
+   | ------------------------------- | ------------------------------------------------------------------------ |
+   | Function app                    | Select **Create new Function App in Azure... Advanced**                  |
+   | Function app name               | Enter a globally unique name. Valid characters are `a-z`, `0-9`, and `-`.|
+   | OS                              | Select **Windows**                                                       |
+   | Plan                            | Select **Consumption**                                                   |
+   | Language                        | Select **JavaScript**                                                    |
+   | Resource group                  | Select **<rgn>[sandbox resource group name]</rgn>**                      |
+   | Storage account                 | Select the account you created earlier                                   |
+   | Application Insights resource   | Select **Skip for now**                                                  |
 
     A new function app is created in Azure and the deployment begins. The Azure Functions Visual Studio Code extension first creates the Azure resources and then deploys the function app.
 
