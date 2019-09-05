@@ -1,29 +1,24 @@
-This is a placeholder.
+Nice job! Your pipeline is really taking shape. You and the Tailspin team have moved from a basic proof of concept to a more complete build and release pipeline that contains additional stages and environments. You can use these stages and environments to further test your changes before making those changes available to your users.
 
-[Connect to Microsoft Azure](https://docs.microsoft.com/azure/devops/pipelines/library/connect-to-azure?view=azure-devops)
+In this module, you learned about some of the ways to control how changes move from from one stage to the next. Let's review the pipeline you built in this module. This image shows your pipeline's overall shape:
 
-https://docs.microsoft.com/azure/devops/pipelines/build/triggers?view=azure-devops&tabs=yaml
+![](../media/2-add-staging-stage-approval.png)
 
-https://docs.microsoft.com/azure/devops/pipelines/release/approvals/?view=azure-devops
+The _Dev_, _Test_, and _Staging_ stages each deploy the build artifact to its own Azure App Service environment.
 
-service principals (security - /Users/thpetche/Dev/tpetchel/learn-pr/learn-pr/azure/design-for-security-in-azure
-)
+* When a change is pushed to GitHub, a _CI trigger_ causes the _Build_ stage to run. The _Build_ stage produces a build artifact as its output.
+* The _Dev_ stage runs only when the change happens in the _release_ branch. You use a _condition_ to specify this requirement.
+* The _Test_ stage runs at 3 A.M. each morning. This stage runs only when the _release_ branch contains changes since the last run. You use a _scheduled trigger_ to specify when the _Test_ stage runs.
+* The _Staging_ stage runs only after you approve the changes in the _Test_ stage. You add a _release approval_ to the **staging** environment to pause the pipeline until you approve or reject the change.
 
-## Notes - 7/2 - IGNORE HERE TO END
+Keep in mind that this pipeline satisfies the Tailspin team's requirements. The shape of your pipeline &mdash; the stages and deployment environments, as well as how changes flow through your pipeline &mdash; depend on the needs of your team and the needs of the apps and services your team builds.
 
-ILT references:
+Although the team is making steps towards improving their release cadence, there's room for additional improvements. For example, Amita from QA must manually test and approve builds before the team can present new features to management. In the next module, you'll work with the Tailspin team as they automate additional testing so that changes can move through the pipeline even faster.
 
-- Release Strategy Recommendations > Release Strategy - Introduction and Overview
-- Release Strategy Recommendations > Delivery and Deployment Cadence, Schedules and Triggers
-  - Release Strategy Recommendations > Demo - Selecting your Delivery and Deployment Cadence
-  - Release Strategy Recommendations > Considerations for Release Approvals
-  - Release Strategy Recommendations > Demo - Setting up Manual Approval
-  - Release Strategy Recommendations > Demo - Setting up a Release Gate
-  - Building a High Quality Release Pipeline > Building a High-Quality Release pipeline
-  - Building a High Quality Release Pipeline > Using release gates as quality gate (NOTE: Use code coverage in the exercise)
-  - Building a High Quality Release Pipeline > Release Notes and Documentation
-- Choosing the Right Release Management Tool > Overview Release Management Tools (NOTE: We weren't sure of the value here?)
-  - Choosing the Right Release Management Tool > Release Management Tools Comparison
-* Automate Inspection of Health > Automate Inspection of Health (NOTE: This is more about feedback; Release gates and Events might be workflow)
-  * Automate Inspection of Health > Release gates
-* Implement Blue Green Deployment > Deployment Slots
+## Learn more
+
+In this module, you worked with conditions, triggers, and approvals. Here are some additional resources you can use to learn more.
+
+* [Conditions](https://docs.microsoft.com/azure/devops/pipelines/process/conditions?view=azure-devops&tabs=yaml&azure-portal=true)
+* [Build pipeline triggers](https://docs.microsoft.com/azure/devops/pipelines/build/triggers?view=azure-devops&tabs=yaml&azure-portal=true)
+* [Approvals and other checks](https://docs.microsoft.com/azure/devops/pipelines/process/approvals?view=azure-devops&azure-portal=true)

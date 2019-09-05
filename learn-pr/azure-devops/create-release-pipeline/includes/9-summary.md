@@ -38,12 +38,11 @@ Azure DevOps enables you to build upon your investment with other CI/CD tools. L
 
 These resources provide more information on some of the topics that are covered in this module.
 
-* [Jobs](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml)
-* [Deployment jobs](https://docs.microsoft.com/azure/devops/pipelines/process/deployment-jobs?view=azure-devops)
-* [Environments]()
-* [STRATEGIES]()
-* [Design for security in Azure](https://docs.microsoft.com/learn/modules/design-for-security-in-azure/)
-* [Secure your Azure resources with RBAC](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac/)
-* [Service connections](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml)
-* [Pipeline reports](https://docs.microsoft.com/azure/devops/pipelines/reports/pipelinereport?view=azure-devops)
-* [Explore the Analytics OData metadata](https://docs.microsoft.com/azure/devops/report/extend-analytics/analytics-metadata?view=azure-devops)
+* [Jobs](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml&azure-portal=true)
+* [Deployment jobs](https://docs.microsoft.com/azure/devops/pipelines/process/deployment-jobs?view=azure-devops&azure-portal=true)
+* [Environments](https://docs.microsoft.com/azure/devops/pipelines/process/environments?view=azure-devops&azure-portal=true)
+* [Design for security in Azure](https://docs.microsoft.com/learn/modules/design-for-security-in-azure/?azure-portal=true)
+* [Secure your Azure resources with RBAC](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac/?azure-portal=true)
+* [Service connections](https://docs.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml&azure-portal=true)
+* [Pipeline reports](https://docs.microsoft.com/azure/devops/pipelines/reports/pipelinereport?view=azure-devops&azure-portal=true)
+* [Explore the Analytics OData metadata](https://docs.microsoft.com/azure/devops/report/extend-analytics/analytics-metadata?view=azure-devops&azure-portal=true)

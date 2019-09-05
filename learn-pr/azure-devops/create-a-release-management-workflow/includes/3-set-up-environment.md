@@ -1,56 +1,67 @@
-* TODO: Roberta, ignore this page.
-* TODO: This is copied from another module. Update it for this module.
-* TODO: Be sure the learner adds a user if needed. "If you're using a different MS account on Learn than your Azure DevOps organization, add Learn account now. Click on link in email to sign in as that user."
 
-In this part, you'll make sure that your Azure DevOps organization is set up to complete the rest of this module.
 
-The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey.
+In this section, you make sure that your Azure DevOps organization is set up to complete the rest of this module.
 
-This learning path also builds on the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path. There, you set up your Azure DevOps organization and created a task backlog on Azure Boards using the Basic process.
+To do this, you:
 
-## Run the template
+> [!div class="checklist"]
+> * Add a user to ensure Azure DevOps can connect to your Azure subscription.
+> * Set up an Azure DevOps project for this module.
+> * Move the work item for this module on Azure Boards to the **Doing** column.
+> * Create the Azure App Service environments.
+> * Create pipeline variables that define the names of your App Service environments.
 
-At this point, you have two options:
+## Add a user to Azure DevOps
 
-1. Continue with the Azure DevOps project you created in the _Evolve your DevOps practices_ learning path.
+To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). In this module, you connect to your Azure subscription from Azure Pipelines. To simplify the process, you need to sign in to both your Azure subscription and your Azure DevOps organization under the same Microsoft account.
+
+If you use different Microsoft accounts to sign into Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account you use to sign in to Azure. [Add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?view=azure-devops&tabs=browser&azure-portal=true) explains how to add a user. When you add the user, choose the Basic access level.
+
+<!-- TODO: NOT SURE WHETHER BASIC WILL WORK OR IF YOU NEED HIGHER. -->
+
+Then sign out of Azure DevOps and sign in again under the Microsoft account you use to sign in to your Azure subscription.
+
+## Get the Azure DevOps project
+
+Here, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You do this by running a template that creates a project for you in Azure DevOps.
+
+The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey. For learning purposes, each module has an associated Azure DevOps project.
+
+### Run the template
+
 1. Run a template that sets up everything for you in your Azure DevOps organization.
 
-You can continue using your existing project if you completed the previous modules and have the Tailspin project set up in Azure DevOps. Run the template if you don't have the project set up or want to repeat this module from a fresh environment.
-
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=host-build-agent&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=create-build-pipeline&azure-portal=true)
 
 From the Azure DevOps Demo Generator site, perform these steps to run the template.
 
-1. Click **Sign In** and accept the usage terms.
-1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - Agent**.
-1. Select **Fork repository on GitHub** and then click **Authorize**. If a window appears, authorize access to your GitHub account.
+1. Select **Sign In** and accept the usage terms.
+1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - Release workflow**. Then select **Create Project**.
 
-    > [!IMPORTANT]
-    > You need to select this option for the template to connect to your GitHub repository. Select this option even if you've already forked the _Space Game_ web site project. The template uses your existing fork.
-1. Click **Create Project**.
+    ![Creating a project through the Azure DevOps Demo Generator](../media/4-create-new-project.png)
 
-    <!-- ![Creating a project through the Azure DevOps Demo Generator](../media/3-create-new-project.png) -->
+    <!-- TODO: Generate the template, update link & screenshot -->
 
     It takes a few moments for the template to run.
-1. Click **Navigate to project** to go to your project in Azure DevOps.
+1. Select **Navigate to project** to go to your project in Azure DevOps.
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/learn/modules/host-build-agent/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
+> The [Clean up your Azure DevOps environment](/learn/modules/create-a-release-management-workflow/8-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
 
 ## Move the work item to Doing
 
 In this part, you'll assign a work item to yourself that relates to this module on Azure Boards. You'll also move the work item to the **Doing** state. In practice, you and your team would assign work items at the start of each Sprint, or work iteration.
 
-Assigning work in this way gives you a checklist to work from. It gives others on your team visibility into what you're working on and how much work is left. It also helps the team enforce Work in Progress, or WIP, limits so that the team doesn't take on too much work at one time.
+Assigning work in this way gives you a checklist to work from. It gives others on your team visibility into what you're working on and how much work is left. It also helps the team enforce Work in Progress (WIP) limits so that the team doesn't take on too much work at one time.
 
-Recall that the team settled on these seven top issues.
+Recall that the team settled on these three top issues for the current sprint.
 
-![Backlog of tasks](../../shared/media/build-all-tasks.png)
+![Backlog of tasks](../../shared/media/deploy-all-tasks.png)
 
-Here you'll move the seventh item, **Investigate hosted vs private build servers** to the **Doing** column and assign yourself to the work item.
+Here you'll move the first item, **Define a release management workflow** to the **Doing** column and assign yourself to the work item.
 
-Recall that **Investigate hosted vs private build servers** relates to setting up a private build agent to see if it brings the team any added benefits over using the Microsoft-hosted agents.
+Recall that **Define a release management workflow** relates to defining a release management workflow for the _Space Game_ web site.
 
 <!-- ![Work item details](../media/3-work-item-details.png) -->
 
@@ -60,7 +71,7 @@ To set up the work item:
 
     ![Azure DevOps showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
 
-1. From the **Investigate hosted vs private build servers** work item, click the down arrow at the bottom of the card. Then assign the work item to yourself.
+1. From the **Define a release management workflow** work item, click the down arrow at the bottom of the card. Then assign the work item to yourself.
 
     ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
 1. Move the work item from the **To Do** to the **Doing** column.
@@ -71,19 +82,19 @@ At the end of this module, you'll move the card to the **Done** column after you
 
 ## Create the Azure App Service environments
 
-Here, you create the environments that receive the build artifact as the change moves through the pipeline. You create one App Service instance that corresponds to each of the dev, test, staging, and production environments.
+Here, you create the environments that receive the build artifact as the change moves through the pipeline. You create one App Service instance that corresponds to each of the _Dev_, _Test_, and _Staging_ environments.
+
+In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you brought up App Service through the Azure portal. Although the portal is a great way to explore what's available on Azure or to perform basic tasks, bringing up components such as App Service can become tedious and repetitive.
+
+In this module, you bring up four App Service instances using the Azure command-line interface (CLI). You can access the Azure CLI from a terminal or through Visual Studio Code. Here, you access the Azure CLI from Azure Cloud Shell, a browser-based shell experience that's hosted in the cloud. Cloud Shell comes with the Azure CLI configured for you to use with your Azure subscription.
 
 > [!IMPORTANT]
 > Remember that you need your own Azure subscription to complete the exercises in this module.
 
 ### Bring up Cloud Shell through the Azure portal
 
-In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you brought up App Service through the Azure portal. Although the portal is a great way to explore what's available on Azure or to perform basic tasks, bringing up components such as App Service can become tedious and repetitive.
-
-In this module, you bring up four App Service instances using the Azure command-line interface (CLI). You can access the Azure CLI from a terminal or through Visual Studio Code. Here, you access the Azure CLI from Azure Cloud Shell, a browser-based shell experience that's hosted in the cloud. Cloud Shell comes with the Azure CLI configured for you to use with your Azure subscription.
-
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
-1. From the menu bar, select Cloud Shell.
+1. From the menu bar, select Cloud Shell. When prompted, select the **Bash** experience.
 
     ![Selecting Cloud Shell from the menu bar](../../shared/media/azure-portal-menu-cloud-shell.png)
 
@@ -92,65 +103,179 @@ In this module, you bring up four App Service instances using the Azure command-
 
 ### Select an Azure region
 
-**TODO:**
-
 A _region_ is one or more Azure data centers within a specific geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an App Service instance, is assigned a region.
 
 To make the commands easier to run, start by selecting a default region. After you specify the default region, later commands use that region unless you specify a different region.
 
-```bash
-az configure --defaults location=westus2
-```
+1. From Cloud Shell, run the following `az account list-locations` command to list the regions that are available from your Azure subscription.
+
+    ```azurecli
+    az account list-locations --query "[].{Name: name, DisplayName: displayName}" --output table
+    ```
+
+1. From the **Name** column in the output, choose a region that's close to you, for example, **eastasia** or **westus2**.
+
+1. Run `az configure` to set your default region. Replace **<REGION>** with the name of the region you chose.
+
+    ```bash
+    az configure --defaults location=<REGION>
+    ```
+
+    Here's an example that sets **westus2** as the default region.
+
+    ```bash
+    az configure --defaults location=westus2
+    ```
 
 ### Create the App Service instances
 
-1. BLAH
+Here, you create the App Service instances for the three stages you'll deploy to: _Dev_, _Test_, and _Staging_.
+
+To do so, you:
+
+1. Generate a random number that makes your web app's domain name unique.
+
+    This is for learning purposes. In practice, you would choose a domain name that matches the name of your application or service.
+1. Create a resource group that contains all of your App Service instances.
+
+    For learning purposes, you create one resource group that contains all of your App Service instances. In practice, you might create a separate resource group for each App Service instance so that you can better control the lifecycle of each App Service instance.
+
+1. Create an App Service plan.
+
+    An App Service plan defines the CPU, memory, and storage resources that are provided for your web app to run. Here you use the **B1 Basic** plan, which is intended for apps that have lower traffic requirements. The **Standard** and **Premium** plans are for production workloads and run on dedicated virtual machine instances.
+
+1. Create the App Service instances, one for each of the  _Dev_, _Test_, and _Staging_ environments.
+1. Get the hostname for each of your environments.
+1. Verify that each environment is running and that the home page is accessible.
+
+> [!NOTE]
+> For learning purposes, here you use the default network settings, which makes your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a non-internet routable network that's accessible only to you and your team. Later, when you're ready, you could reconfigure your network to make the website available to your users.
+
+1. From Cloud Shell, generate a random number that makes your web app's domain name unique
 
     ```bash
     webappsuffix=$RANDOM
     ```
 
-    This is for learning purposes. Name will be part of hostname. In practice, you'd choose ...
-
-1. BLAH
+1. Run the following `az group create` command to create a resource group that's named **tailspin-space-game-rg**.
 
     ```bash
-    az group create --location westus --name TailspinResourceGroup
+    az group create --name tailspin-space-game-rg
     ```
 
-1. BLAH
+1. Run the following `az appservice plan create` command to create a resource group that's named **tailspin-space-game-asp**.
 
     ```bash
-    az appservice plan create --name myAppServicePlan --resource-group TailspinResourceGroup --sku P2V2
+    az appservice plan create \
+      --name tailspin-space-game-asp \
+      --resource-group tailspin-space-game-rg \
+      --sku B1
     ```
 
-1. BLAH
+    The `--sku` argument specifies the **B1** plan, which runs on the **Basic** tier.
+
+    > [!IMPORTANT]
+    > If the **B1** SKU is not available as part of your Azure subscription, [choose a different plan](https://azure.microsoft.com/pricing/details/app-service/linux/), such as **S1** (**Standard**).
+
+1. Run the following `az webapp create` commands to create the three App Service instances, one for each of the  _Dev_, _Test_, and _Staging_ environments.
 
     ```bash
-    az webapp create --name TailspinGame-Dev-$webappsuffix --resource-group TailspinResourceGroup --plan myAppServicePlan
-    az webapp create --name TailspinGame-Test-$webappsuffix --resource-group TailspinResourceGroup --plan myAppServicePlan
-    az webapp create --name TailspinGame-Staging-$webappsuffix --resource-group TailspinResourceGroup --plan myAppServicePlan
-    az webapp create --name TailspinGame-$webappsuffix --resource-group TailspinResourceGroup --plan myAppServicePlan
+    az webapp create \
+      --name tailspin-space-game-web-dev-$webappsuffix \
+      --resource-group tailspin-space-game-rg \
+      --plan tailspin-space-game-asp
+
+    az webapp create \
+      --name tailspin-space-game-web-test-$webappsuffix \
+      --resource-group tailspin-space-game-rg \
+      --plan tailspin-space-game-asp
+
+    az webapp create \
+      --name tailspin-space-game-web-staging-$webappsuffix \
+      --resource-group tailspin-space-game-rg \
+      --plan tailspin-space-game-asp
     ```
 
-1. BLAH Get URLs
+1. Run the following `az webapp list` command to list the hostname and state of each App Service instance.
 
     ```blah
     az webapp list \
-      --resource-group TailspinResourceGroup \
+      --resource-group tailspin-space-game-rg \
       --query "[].{hostName: defaultHostName, state: state}" \
       --output table
     ```
 
+    Note the hostname for each running service. You'll need these hostnames later when you verify your work. Here's an example:
+
     ```output
-    HostName                                     State
-    -------------------------------------------  -------
-    tailspingame-4216.azurewebsites.net          Running
-    tailspingame-test-4216.azurewebsites.net     Running
-    tailspingame-staging-4216.azurewebsites.net  Running
-    tailspingame-dev-4216.azurewebsites.net      Running
+    HostName                                                 State
+    -------------------------------------------------------  -------
+    tailspin-space-game-web-dev-21017.azurewebsites.net      Running
+    tailspin-space-game-web-test-21017.azurewebsites.net     Running
+    tailspin-space-game-web-staging-21017.azurewebsites.net  Running
     ```
 
-1. NAVIGATE TO ONE OR TWO
+1. As an optional step, go to one or more of the names listed to verify they are running and that the default home page appears.
 
-    SHOW SCREENSHOT
+    You see this:
+
+    > [!div class="mx-imgBorder"]
+    > ![](../media/3-app-service-default.png)
+
+## Create pipeline variables in Azure Pipelines
+
+In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you added a variable to your pipeline that stores the name of your web app in App Service. Here, you do the same. However, this time, you add one variable for each of the App Service instances that corresponds to the _Dev_, _Test_, and _Staging_ stages in your pipeline.
+
+Remember that, although you could hard code these names in your pipeline configuration, defining them as variables makes your configuration more reusable. Plus, if the name of your App Service instances change, you can update the variables and trigger your pipeline without modifying your configuration.
+
+To add the variable:
+
+1. In Azure DevOps, go to your **Space Game - web - Release workflow** projecet.
+1. Under **Pipelines**, select **Library**.
+
+    ![](../../create-release-pipeline/media/5-pipelines-library.png)
+1. Select **+ Variable group**.
+1. Under **Properties**, enter **Release Pipeline** for the variable group name.
+1. Under **Variables**, select **+ Add**.
+1. Enter **WebAppNameDev** as the name of your variable. Enter the name of the App Service instance that corresponds do your _Dev_ environment, such as **tailspin-space-game-web-dev-1234**, as its value.
+1. Repeat steps 5 and 6 two more times to create variables for your _Test_ and _Staging_ environments.
+
+    | Variable name         | Example value                            |
+    |-----------------------|------------------------------------------|
+    | **WebAppNameTest**    | **tailspin-space-game-web-test-1234**    |
+    | **WebAppNameStaging** | **tailspin-space-game-web-staging-1234** |
+
+1. Select **Save** near the top of the page to save your variable to the pipeline.
+
+    Your variable group resembles this one:
+
+    > [!div class="mx-imgBorder"]
+    > ![](../media/3-library-variable-group.png)
+
+## Create a service connection
+
+Here, you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the previous module.
+
+> [!IMPORTANT]
+> Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
+
+1. In Azure DevOps, go to your **Space Game - web - Release workflow** project.
+1. Select **Project settings** from the bottom corner of the page.
+1. Under **Pipelines**, select **Service connections**.
+1. Select **+ New service connection** and then choose **Azure Resource Manager**.
+
+    The **Add an Azure Resource Manager service connection** dialog appears.
+1. From the dialog, ensure **Service Principal Authentication** is selected. Then fill in these fields:
+
+    | Field               | Value                                        |
+    |---------------------|----------------------------------------------|
+    | **Connection name** | **Resource Manager - Tailspin - Space Game** |
+    | **Scope level**     | **Subscription**                             |
+    | **Subscription**    | Your Azure subscription                      |
+    | **Resource Group**  | **tailspin-space-game-rg**                   |
+
+    During the process, you might be prompted to sign in to your Microsoft account.
+
+1. Select **OK**.
+
+    Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps is unable to connect, you'll have the chance to sign in a second time.

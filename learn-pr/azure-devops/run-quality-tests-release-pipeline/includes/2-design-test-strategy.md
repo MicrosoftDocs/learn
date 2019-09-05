@@ -1,3 +1,26 @@
+TODO: This is a paste from the previous module. Refactor it to talk about release gates only.
+
+### What are release approvals and release gates?
+
+A *release approval* is a way to pause the pipeline until an approver accepts or rejects the release. A *release gate* is an automated way to query an external service before promoting from one stage to the next. You can combine approvals, gates, and triggers to define your release cadence.
+
+Tim clears his throat.
+
+**Tim:** What about me? I still need some way to deploy the app to my production environment and that depends on management signing off on new features. Those triggers won't work.
+
+**Andy:** I see your point. I think what you're looking for is a *release approval* and maybe a *release gate*.
+
+**Andy:** With a release approval attached to a stage, the pipeline deployment stops until someone signs off, like our management. We could enable a manual deployment approval to move from staging to production.
+
+**Andy:** For quality control, we could use release gates. A gate would let us automatically collect health signals from external services and then promote the release only when all the signals are successful at the same time.
+
+**Amita:** I'm interested in release gates as well. I'd like to automatically check whether we have any active bugs before I promote from test to staging.
+
+**Mara:** Absolutely! Let's talk about it later.
+
+---
+
+
 The team is having their weekly meeting and Andy is demoing the CD pipeline. They watch as a successful build moves through the pipeline, from one stage to another, until the web app is finally deployed to staging. 
 
 Amita say, "I'm so happy with the pipeline. It makes my life much easier. For one thing, I automatically get a release deployed to the test environment. That means I don't have to manually download and install build artifacts on my test servers. That's a big time saver.
