@@ -18,13 +18,12 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
         --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --image Win2019Datacenter \
         --admin-username azureuser
+    ```
 
-    az vm open-port \
-        --name MyWindowsVM \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
-        --port 80
+1. Run the following command to install IIS and set up a default web page.
 
-    az vm extension set \
+    ```azurecli
+        az vm extension set \
         --name CustomScriptExtension \
         --version 1.9.4 \
         --vm-name MyWindowsVM \
@@ -33,7 +32,16 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
         --settings '{"commandToExecute":"powershell Add-WindowsFeature Web-Server; powershell Add-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\" -Value $($env:computername)"}'
     ```
 
-2. Run the following command to find the public IP address of the new virtual machine.
+1. Run the following command to open up port 80 to the web server.
+
+    ```azurecli
+        az vm open-port \
+        --name MyWindowsVM \
+        --resource-group <rgn>[Sandbox resource group name]</rgn> \
+        --port 80
+    ```
+
+1. Run the following command to find the public IP address of the new virtual machine.
 
     ```azurecli
     echo http://$(az vm list-ip-addresses \
@@ -42,7 +50,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
         --output tsv)
     ```
 
-3. In the web browser, navigate to the public IP address of the virtual machine. Verify that a web page displaying the name of the virtual machine, *MyWindowsVM*, appears.
+1. In the web browser, navigate to the public IP address of the virtual machine. Verify that a web page displaying the name of the virtual machine, *MyWindowsVM*, appears.
 
     ![Screenshot of the web page from the Windows virtual machine](../media/4-original-vm-web-page.png)
 
@@ -73,7 +81,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
         --settings '{"commandToExecute":"apt-get -y update && apt-get -y install nginx && hostname > /var/www/html/index.html"}'
     ```
 
-2. Run the following command to find the public IP address of the new virtual machine.
+1. Run the following command to find the public IP address of the new virtual machine.
 
     ```azurecli
     echo http://$(az vm list-ip-addresses \
@@ -82,7 +90,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
         --output txv)
     ```
 
-3. In the web browser, navigate to the public IP address of the virtual machine. Verify that a web page displaying the name of the virtual machine *MyUbuntuVM* appears.
+1. In the web browser, navigate to the public IP address of the virtual machine. Verify that a web page displaying the name of the virtual machine *MyUbuntuVM* appears.
 
     ![Screenshot of the web page from the Ubuntu virtual machine](../media/4-original-ubuntu-web-page.png)
 
