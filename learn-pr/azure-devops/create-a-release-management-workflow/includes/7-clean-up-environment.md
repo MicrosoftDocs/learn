@@ -1,27 +1,49 @@
-TODO: Roberta, ignore this page.
-TODO: This is copied from another module. Update it for this module.
-
 You're all done with the tasks for this module. Here, you'll move the work item to the **Done** state on Azure Boards and clean up your Azure DevOps environment.
 
 > [!IMPORTANT]
-> This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps if you ran the template earlier in this module.
+> This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. It also helps ensure that you're not charged for Azure resources after you complete this module.
 
-## TEAR DOWN RESOURCES
+## Clean up Azure resources
 
-DELETE THE RESOURCE GROUP.
+Here, you delete your Azure App Service instances. The easiest way to do that is to delete their parent resource group. Deleting a resource group deletes all resources in that group.
+
+In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you managed Azure resources through the Azure portal. Here, you tear down your deployment by using the Azure CLI through Azure Cloud Shell, similar to how you created these resources earlier in this module.
+
+To clean up your resource group:
+
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
+1. From the menu bar, select Cloud Shell. When prompted, select the **Bash** experience.
+
+    ![Selecting Cloud Shell from the menu bar](../../shared/media/azure-portal-menu-cloud-shell.png)
+
+1. Run the following `az group delete` command to delete the resource group you used in this module, **tailspin-space-game-rg**.
+
+    ```bash
+    az group delete --name tailspin-space-game-rg
+    ```
+
+    When prompted, enter **y** to confirm the operation.
+
+1. As an optional step, run the following `az group list` command after the previous command completes.
+
+    ```bash
+    az group list --output table
+    ```
+
+    You see that the resource group **tailspin-space-game-rg** no longer exists.
 
 ## Move the work item to Done
 
-Here, you'll move the work item you assigned to yourself earlier in this module, **Investigate hosted vs private build servers**, to the **Done** column.
+Here, you'll move the work item you assigned to yourself earlier in this module, **Define a release management workflow**, to the **Done** column.
 
-In practice, the definition of "Done" often means working software in the hands of your users. For learning purposes, here you'll mark this work as complete because you have a private build agent working on Azure Pipelines.
+In practice, the definition of "Done" often means working software in the hands of your users. For learning purposes, here you'll mark this work as complete because the goal for the Tailspin team is to define a release management workflow they can use to deliver new features.
 
-At the end of each Sprint, or work iteration, you and your team might hold a retrospective meeting, where you share the work you completed, what went well in the Sprint, and what could be improved.
+At the end of each sprint, or work iteration, you and your team might hold a retrospective meeting, where you share the work you completed, what went well in the sprint, and what could be improved.
 
 To complete the work item:
 
 1. From Azure DevOps, navigate to **Boards** and then select **Boards** from the menu.
-1. Move the **Investigate hosted vs private build servers** work item from the **Doing** to the **Done** column.
+1. Move the **Define a release management workflow** work item from the **Doing** to the **Done** column.
 
     <!-- ![Azure Boards showing the card in the Done column](../media/6-azure-boards-wi7-done.png) -->
 
@@ -59,7 +81,7 @@ This option deletes your Azure DevOps project, including what's on Azure Boards 
 
 To delete the project:
 
-1. From Azure DevOps, navigate to your project. Earlier, we recommended that you name this project **Space Game - web - Agent**.
+1. From Azure DevOps, navigate to your project. Earlier, we recommended that you name this project **Space Game - web - Release workflow**.
 1. Click the gear icon next to the project name.
 
     The icon might not appear until you move your mouse over that area.

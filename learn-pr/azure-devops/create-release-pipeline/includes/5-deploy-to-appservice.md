@@ -89,7 +89,7 @@ Here, you create a service connection that enables Azure Pipelines to access you
     | **Subscription**    | Your Azure subscription                      |
     | **Resource Group**  | **tailspin-space-game-rg**                   |
 
-    During the process, you'll likely be prompted to sign in to your Microsoft account.
+    During the process, you might be prompted to sign in to your Microsoft account.
 
 1. Select **OK**.
 

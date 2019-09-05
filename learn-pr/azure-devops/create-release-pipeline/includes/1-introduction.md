@@ -4,6 +4,11 @@ The Tailspin team's big release is approaching. The team can use Azure DevOps to
 
 In this module, you'll continue your journey with the Tailspin team as they set up a continuous delivery (CD) pipeline for the _Space Game_ website.
 
+<!-- TODOs:
+1. Create the repo on GitHub (and reference it in setup)
+1. Use the publish and download tasks
+-->
+
 ## Learning objectives
 
 In this module, you'll:

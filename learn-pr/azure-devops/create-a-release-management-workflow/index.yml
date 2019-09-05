@@ -1,28 +1,29 @@
 ### YamlMime:Module
 uid: learn.azdo.create-a-release-management-workflow
 metadata:
-  title: Create a release management workflow - Learn
-  description: Create a release management workflow
+  title: Create a release management workflow with Azure Pipelines - Learn
+  description: Create a release management workflow with Azure Pipelines
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
-title: Create a release management workflow
-summary: Create a release management workflow
+title: Create a release management workflow with Azure Pipelines
+summary: Create a release management workflow with Azure Pipelines
 abstract: |
   In this module, you will:
-  - Compare the various tools and methods you can use to define a release management workflow
-  - Identify what makes a high-quality release pipeline
-  - Promote a build through the development, test, and staging environments
+  - Identify the stages, or major divisions of the pipeline, that you need.
+  - Understand when to use conditions, triggers, and approvals to promote changes from one stage to the next.
+  - Promote a build through the _Dev_, _Test_, and _Staging_ stages.
 prerequisites: |
+  - An Azure subscription
   - An Azure DevOps account
   - Visual Studio Code
   - .NET Core 2.1
   - Git
   - A GitHub account
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/azure-devops/create-a-release-management-workflow.svg
 levels:
 - intermediate
 roles:
@@ -38,10 +39,9 @@ units:
 - learn.azdo.create-a-release-management-workflow.2-design-release-management-workflow
 - learn.azdo.create-a-release-management-workflow.3-set-up-environment
 - learn.azdo.create-a-release-management-workflow.4-deploy-dev
-- learn.azdo.create-a-release-management-workflow.5-build-high-quality
-- learn.azdo.create-a-release-management-workflow.6-deploy-test
-- learn.azdo.create-a-release-management-workflow.7-deploy-preprod
-- learn.azdo.create-a-release-management-workflow.8-clean-up-environment
-- learn.azdo.create-a-release-management-workflow.9-summary
+- learn.azdo.create-a-release-management-workflow.5-deploy-test
+- learn.azdo.create-a-release-management-workflow.6-deploy-preprod
+- learn.azdo.create-a-release-management-workflow.7-clean-up-environment
+- learn.azdo.create-a-release-management-workflow.8-summary
 badge:
   uid: learn.azdo.create-a-release-management-workflow.badge
