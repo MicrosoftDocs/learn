@@ -4,11 +4,10 @@ metadata:
   title: Apply and monitor infrastructure standards with Azure Policy
   description: Learn about governance and management in Azure services.
   ms.date: 12/27/2018
-  author: markjulmar
-  ms.author: smmark
+  author: patridge
+  ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Apply and monitor infrastructure standards with Azure Policy
 summary: Learn about governance and management in Azure services.
 abstract: |

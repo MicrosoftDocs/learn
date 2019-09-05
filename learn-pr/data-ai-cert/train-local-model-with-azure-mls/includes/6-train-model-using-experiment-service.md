@@ -20,6 +20,26 @@ provisioning_config = AmlCompute.provisioning_configuration(
 
 # create the cluster
 compute_target = ComputeTarget.create(ws, compute_name, provisioning_config)
+
+print('Compute target created')
+```
+
+## Retrieve the MNIST data
+
+If you did not already do 'Exercise - Load the data for a simple logistic regression model', you will need to run the code below to get the data for this experiment.  
+
+```python
+import os
+import urllib.request
+
+#create a folder for the dataset
+os.makedirs('./data', exist_ok = True)
+
+# load dataset to the directory--as you can see, you must load train sets and test sets separately
+urllib.request.urlretrieve('http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz', filename='./data/train-images.gz')
+urllib.request.urlretrieve('http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz', filename='./data/train-labels.gz')
+urllib.request.urlretrieve('http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz', filename='./data/test-images.gz')
+urllib.request.urlretrieve('http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz', filename='./data/test-labels.gz')
 ```
 
 ## Load data and create a modeling script
@@ -29,8 +49,19 @@ Depending on the location and format of the data source, there are various ways 
 ```python
 #upload data by using get_default_datastore()
 ds = ws.get_default_datastore()
-ds.upload(src_dir='./data_mnist', target_path='mnist', overwrite=True, show_progress=True)
+ds.upload(src_dir='./data', target_path='mnist', overwrite=True, show_progress=True)
 ```
+
+> [!IMPORTANT]
+> If you have more than 300 MB of content or 2000 files in the current notebook folder, you might get the following error:
+>
+> ![Screenshot of error when you the current folder has > 300 MB.](../media/6-experiment_over300mberror.png)
+>
+> This happens because Azure Machine Learning runs training scripts by copying the entire script folder to the target compute context, and then takes a snapshot. The storage limit for experiment snapshots is 300 MB and/or 2000 files.
+>
+> There are a number of ways to resolve this issue.  If you don't need all the files and can work within the default space constraints, the easiest solution is to exit the notebook, create a new folder with only what you need, open that folder and create the notebook there. On a local machine, you can stop the Jupyter Notebook service, change to the new folder at a command prompt and restart Jupyter Notebook.  On Azure Notebook, just create a new project and copy what you need to it. Then create your notebook there.  
+>
+> If you cannot get the data within the constraints, then read through [the documentation](https://docs.microsoft.com/azure/machine-learning/service/how-to-save-write-experiment-files#limits) to explore other options.
 
 Then you create a directory to save your training Python code:
 
@@ -135,10 +166,13 @@ os.makedirs('outputs', exist_ok=True)
 
 # note that the file saved in the outputs folder automatically uploads into the experiment record
 joblib.dump(value=model, filename='outputs/knn_mnist_model.pkl')
+
+print('Training script saved')
 ```
+
 Notice that the last line of the training script saves the model as a pickle file in the outputs folder of the experiment workspace.  You use this pickle file later to deploy the model.
 
-Now, you must add a **utils** script, as shown below, for loading data and creating an estimator so that it's easier to scale your work in the future. An estimator object is used to submit the run. Create your estimator by running the following code to define:
+ An estimator object is used to submit the run. Create your estimator by running the following code to define:
 
 - The name of the estimator object, `est`.
 - The directory that contains your scripts. All the files in this directory are uploaded into the cluster nodes for running.
@@ -165,6 +199,16 @@ est = Estimator(source_directory=folder_training_script,
 ```
 
 ## Submit the model, monitor the run, and retrieve the results
+
+We need to create an Experiment to run the model training in.
+
+```python
+from azureml.core import Experiment
+
+#Create an experiment
+exp = Experiment(workspace = ws, name = "amls-learn-experiment")
+print('Experiment created')
+```
 
 The last step is running the model. Sign in with your Azure account if prompted to do so.
 

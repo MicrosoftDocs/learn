@@ -5,10 +5,11 @@ metadata:
   title: Authentication tokens
   description: Authentication tokens
   ms.date: 03/27/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: nickwalkmsft
+  ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/6-authentication-tokens.md)]

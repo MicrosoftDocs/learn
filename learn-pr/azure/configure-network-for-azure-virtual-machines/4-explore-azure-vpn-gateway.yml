@@ -5,11 +5,11 @@ metadata:
   title: Explore Azure VPN Gateway
   description: Explore Azure VPN Gateway
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/4-explore-azure-vpn-gateway.md)]

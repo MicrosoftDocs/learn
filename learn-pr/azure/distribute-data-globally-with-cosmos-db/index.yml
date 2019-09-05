@@ -8,7 +8,6 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Distribute your data globally with Azure Cosmos DB
 summary: Learn how to distribute your data globally with Azure Cosmos DB.
 abstract: |

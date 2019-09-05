@@ -8,12 +8,12 @@ You'll configure two separate applications; one acts as the message sender (**Si
 
 The Java receiver application, that you'll configure in this unit, stores messages in Azure Blob Storage. Blob Storage requires a storage account.
 
-1. Create a storage account (general-purpose V2) using the `storage account create` command. Remember we set a default resource group and location, so even though those parameters are normally _required_, we can leave them off.
+1. In the Cloud Shell, create a storage account (general-purpose V2) using the `storage account create` command. Remember we set a default resource group and location, so even though those parameters are normally _required_, we can leave them off.
 
     |Parameter      |Description|
     |---------------|-----------|
     |--name (required)  | A name for your storage account. |
-    |--resource-group (required)  |The resource group owner. We'll use the pre-created sandbox resource group.|
+    |--resource-group (required)  |The resource group owner. We'll use the **learn-big-data-messaging-rg** resource group.|
     |--location (optional)    |An optional location if you want the storage account in a specific place vs. the resource group location.|
 
     Set the storage account name into a variable. It must be composed of all lower-case letters, numbers, with hyphen separators allowed. It also must be unique within Azure.

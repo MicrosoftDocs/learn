@@ -4,28 +4,26 @@ Suppose you've chosen to use Azure App Service deployment slots to streamline th
 
 Here you'll set up a web app and add a new deployment slot to it for staging. You'll also deploy different versions of the web app to those slots.
 
-[!INCLUDE [Activate the sandbox](../../../includes/azure-sandbox-activate.md)]
-
-[!INCLUDE [Select an Azure region](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 ## Create a web app
 
 Start by creating a new web app resource in the Azure portal:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the account that you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 1. Select **Create a resource**.
 1. Select **Web** > **Web App**.
 1. Fill out the wizard like this:
 
     | Field                | Value                                                    |
     |----------------------|----------------------------------------------------------|
-    | **Subscription**     | Concierge Subscription                                   |
-    | **Resource Group**   | Select <rgn>[Sandbox resource group]</rgn> from the menu |
+    | **Subscription**     | Select the subscription you'd like to use to complete the exercise                                |
+    | **Resource Group**   | Create a new resource group named **mslearn-slots** |
     | **Name**             | *Enter a unique name*                                    |
     | **Publish**          | Code                                                     |
     | **Runtime stack**    | ASP.NET V4.7                                             |
     | **Operating System** | Windows                                                    |
-    | **Region**           | *Select a region from the note above*                    |
+    | **Region**           | *Select a region near you*                   |
     | **Windows Plan**     | *Leave default*                                          |
     | **Sku and size**     | *Leave default*                                          |
 
@@ -48,7 +46,7 @@ Use any of the usual deployment tools for your web app and its deployment slots.
 
 Now you'll set up the git client in Cloud Shell and use it to clone a sample web app. Follow these steps:
 
-1. On the right side of the Cloud Shell window, enter the following commands to set up your git username and email address. These commands aren't associated with any account or sign-up, and you can use whatever values you like.
+1. In the Azure portal, open the Cloud Shell. Enter the following commands to set up your git username and email address. These commands aren't associated with any account or sign-up, and you can use whatever values you like.
 
     ```bash
     git config --global user.name "<your name>"

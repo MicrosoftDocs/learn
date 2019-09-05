@@ -96,7 +96,8 @@ In this unit, you'll configure the virtual networks with a subnet, add a gateway
 
     ```azurecli
     az network local-gateway list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> --output table
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --output table
     ```
 
 This diagram shows the resources that you've deployed:
