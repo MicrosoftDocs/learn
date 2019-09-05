@@ -36,7 +36,10 @@ Remember Multi-Factor Authentication feature for devices and browsers that are t
 1. Sign in to the Azure portal.
 1. On the left, select **Azure Active Directory** > **Users** > **All users**.
 1. Select **Multi-Factor Authentication**.
-1. Ensure that **Allow users to remember multi-factor authentication on devices they trust** is **Disabled**.
+1. Select **users**, then click **Manage users settings**.
+1. Ensure that **Restore multi-factoe authentication on all remembered devices** is **Selected**.
+
+    ![Screenshot of the Azure portal showing the Multi-Factor Authentication option to Manage user settings](../media/2-block-remembering-mfa-on-trusted-devices.png)
 
 ### About guests - Level 1
 
@@ -46,6 +49,8 @@ Ensure that no guest users exist, or alternatively if the business requires gues
 1. On the left, select **Azure Active Directory** > **Users** > **All users**.
 1. Select the **Show** drop down and select **Guest users only**.
 1. Verify that there are no guest users listed (`USER TYPE=Guest`).
+
+    ![Screenshot of the Azure portal showing AAD listing guest users](../media/2-guest-users.png)
 
 ### Password options
 
@@ -61,6 +66,8 @@ With dual identification set, an attacker would require compromising both the id
 1. Go to **Authentication methods**.
 1. Set the **Number of methods required to reset** to **2**.
 
+    ![Screenshot of the Azure portal showing AAD listing guest users](../media/2-require-two-methods.png)
+
 ### Establish an interval for reconfirming user authentication methods - Level 1
 
 If authentication reconfirmation is set to disabled, register users will never be prompted to re-confirm their authentication information.
@@ -69,7 +76,9 @@ If authentication reconfirmation is set to disabled, register users will never b
 1. On the left, select **Azure Active Directory** > **Users**.
 1. Go to **Password reset**.
 1. Go to **Registration**
-1. Ensure that **Number of days before users are asked to re-confirm their authentication information** is not set to **0**.
+1. Ensure that **Number of days before users are asked to re-confirm their authentication information** is not set to **0**. The default is 180 days.
+
+    ![Screenshot of the Azure portal showing the form for number of days to re-confirm info](../media/2-days-till-re-confirm.png)
 
 ### Members and guests can invite - Level 2
 
@@ -78,7 +87,10 @@ This should be set to **No**. Restricting invitations through administrators onl
 1. Sign in to the Azure portal.
 1. On the left, select **Azure Active Directory** > **Users**.
 1. Go to **User settings**.
+1. Go to **External users**, click **Manage external collaboration settings**.
 1. Ensure that **Members can invite** is set to **No**.
+
+    ![Screenshot of the Azure portal showing AAD listing guest users](../media/2-members-can-invite.png)
 
 ### Users to create and manage security groups - Level 2
 
