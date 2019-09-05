@@ -21,19 +21,17 @@ summary: |
 
 cardDescription: Learn how configure release pipelines that continuously build, test, and deploy your applications.
 prerequisites: None
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/azure-devops/deploy-applications-with-azure-devops.svg
 levels:
-# TODO
 - intermediate
 roles:
-#TODO: Are there specific roles we should be targetting?
+- devops-engineer
 - administrator
 - developer
 - solution-architect
 products:
-#TODO: Create appropriate product labels
 - azure
-#- azure-devops
+- azure-devops
 modules:
 - learn.azdo.create-release-pipeline
 - learn.azdo.create-a-release-management-workflow
