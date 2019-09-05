@@ -1,16 +1,17 @@
-You have identified the need to use a scale set to run the web application for the shipping company. Using a scale set will enable the shipping company to maintain short response times for users, as the workload varies.
+In the example scenario, you've decided to use a scale set to run the web application for the shipping company. Using a scale set, the shipping company can maintain short response times for users as the workload varies.
 
-Your first task is to create a scale set, and configure it to run a web server â€“ in this case, **nginx**. When you've configured the scale set correctly, you'll deploy your web application. Then you'll set up a health probe that Azure uses to verify the availability of each virtual machine in the scale set. Finally, you'll test the scale set by sending requests from a web browser.
+Your first task is to create a scale set. You'll configure it to run a web server, in this case **nginx**. When you've configured the scale set correctly, you'll deploy your web application. Then you'll set up a health probe that Azure will use to verify the availability of each VM in the scale set. Finally, you'll test the scale set by sending requests from a web browser.
 
 > [!NOTE]
-> This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to use the REST API to retrieve metrics.
-> If you want to complete this exercise but you don't have an Azure subscription or prefer not to use your own account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+> This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to use the REST API to retrieve metrics. 
+>
+> If you want to complete this exercise but you don't have an Azure subscription or prefer not to use your own account, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 ## Deploy a virtual machine scale set
 
-1. Sign in to the [Azure portal](https://portal.azure.com) using your own account, and open the Azure Cloud Shell.
+1. Sign in to the [Azure portal](https://portal.azure.com) and open Azure Cloud Shell.
 
-1. In the Cloud Shell, start the Code editor and create a file named **cloud-init.yaml**.
+1. In Cloud Shell, start the code editor and create a file named *cloud-init.yaml*.
 
     ```bash
           code cloud-init.yaml
@@ -32,9 +33,9 @@ Your first task is to create a scale set, and configure it to run a web server â
           - service nginx restart
     ```
 
-    This file contains the configuration information for installing nginx on the VMs in the scale set:
+    This file contains configuration information to install nginx on the VMs in the scale set.
 
-1. Press Ctrl-S to save the file, and then press Ctrl-Q to close the Code editor.
+1. Press Ctrl+S to save the file. Then press Ctrl+Q to close the code editor.
 
 1. Run the following command to create a new resource group named **scalesetrg** for your scale set:
 
@@ -57,10 +58,12 @@ Your first task is to create a scale set, and configure it to run a web server â
           --generate-ssh-keys
     ```
 
-    By default, the virtual machine scale set is created with two instances and a load balancer.
+    By default, the new virtual machine scale set has two instances and a load balancer.
 
     > [!NOTE]
-    > The **custom-data** flag specifies that the virtual machine should be configured using the settings in the **cloud-init.yaml** file once it has been created. You can use a cloud-init file to install additional packages, configure security, and write to files when the machine is first installed. For more information, see [Cloud-init support for virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/linux/using-cloud-init).
+    > The `custom-data` flag specifies that the VM configuration should use the settings in the *cloud-init.yaml* file after it has been created. You can use a cloud-init file to install additional packages, configure security, and write to files when the machine is first installed. 
+    >
+    > For more information, see [Cloud-init support for VMs in Azure](https://docs.microsoft.com/azure/virtual-machines/linux/using-cloud-init).
 
 ## Configure the virtual machine scale set
 
@@ -76,7 +79,7 @@ Your first task is to create a scale set, and configure it to run a web server â
           --path /
     ```
 
-    The health probe pings the root of the website through port 80. If the website doesn't respond, the server is considered unavailable, and the load balancer won't route traffic towards it.
+    The health probe pings the root of the website through port 80. If the website doesn't respond, the server is considered unavailable. The load balancer won't route traffic to the server.
 
 1. Run the following command to configure the load balancer to route HTTP traffic to the instances in the scale set:
 
@@ -95,7 +98,7 @@ Your first task is to create a scale set, and configure it to run a web server â
 
 ## Test the virtual machine scale set
 
-1. In the Azure portal, in the left pane, select **Resource groups**, and then select the **scalesetrg** resource group.
+1. In the Azure portal, on the left, select **Resource groups** > **scalesetrg**.
 
 1. Select the **webServerScaleSet** virtual machine scale set.
 
@@ -103,17 +106,17 @@ Your first task is to create a scale set, and configure it to run a web server â
 
     ![Screenshot of the Azure portal, showing the Overview page for the virtual machine scale set](../media/3-vmss-properties.png)
 
-1. Under **Settings**, select **Instances**, and verify that the scale set contains two running VMs.
+1. Under **Settings**, select **Instances**. Verify that the scale set contains two running VMs.
 
     ![Screenshot of the Azure portal, showing the instances for the virtual machine scale set](../media/3-vmss-instances.png)
 
-1. Select **Operating system,** and verify that the VMs are running Ubuntu Linux.
+1. Select **Operating system**. Verify that the VMs are running Ubuntu Linux.
 
     ![Screenshot of the Azure portal, showing the operating system for the virtual machine scale set](../media/3-vmss-operating-system.png)
 
-1. Select **Size**. The VMs should be running on DS1_v2 hardware
+1. Select **Size**. The VMs should be running on DS1_v2 hardware.
 
-    ![Screenshot of the Azure portal, showing the size of the virtual machines in the scale set](../media/3-vmss-size.png)
+    ![Screenshot of the Azure portal, showing the size of the VMs in the scale set](../media/3-vmss-size.png)
 
 1. In your web browser, go to the public IP address of the scale set. Verify that the message ```Hello World from Virtual Machine Scale Set !``` appears.
 
