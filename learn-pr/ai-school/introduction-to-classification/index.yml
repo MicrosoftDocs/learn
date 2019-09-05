@@ -31,6 +31,7 @@ units:
 - learn-wwl.introduction-to-classification.introduction
 - learn-wwl.introduction-to-classification.logistic-regression
 - learn-wwl.introduction-to-classification.exercise-logistic-regression
+- learn-wwl.introduction-to-classification.cost-function-and-gradient-descent
 - learn-wwl.introduction-to-classification.support-vector-machines
 - learn-wwl.introduction-to-classification.exercise-svms
 - learn-wwl.introduction-to-classification.testing-predictions

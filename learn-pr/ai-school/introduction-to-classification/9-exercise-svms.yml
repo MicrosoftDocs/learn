@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.introduction-to-classification.exercise-svms
-title: Exercise - Support vector machines 
+uid: learn-wwl.introduction-to-classification.exercise-advanced-svms
+title: Exercise - Advanced support vector machines 
 metadata:
-  title: Exercise - Support vector machines
+  title: Exercise - Advanced support vector machines
   description: Here we look at how our model 'trained' itself to improve its accuracy.
   ms.date: 06/30/2019
   author: markjulmar
@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 8
+durationInMinutes: 12
 content: |
-  [!include[](includes/5-exercise-svms.md)] 
+  [!include[](includes/9-exercise-svms.md)] 

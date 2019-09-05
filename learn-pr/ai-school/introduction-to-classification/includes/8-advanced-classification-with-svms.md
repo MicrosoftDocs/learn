@@ -12,15 +12,17 @@ The plot above is an example of a hard-margin SVM. The hyperplane (black line) i
   
 ![Scatter plot showing a soft margin support vector machine. The plot has two classes of data points - green and blue data points. They are on opposite diagonal sides of the plot, divided by a black line, which represents the hyperplane. There are two red lines either side of the black line, which intersects with several of the data points on each side - these are margins. There are two green data points inside the margins, but unlike the hard margin svm they are not labeled as violations.](../media/2.9_AdvancedSVMs-01.png)
 
-The plot above is a soft-margin SVM, where the algorithm is penalized less for data points that fall within the margin. As such, it fits a sensible hyperplane to the data rather than being skewed by a few data points. In practice, it can be worth experimenting with both types of SVMs to try and achieve a higher accuracy.
+The plot above is a soft-margin SVM, where the algorithm is penalized less for data points that fall within the margin. As such, it fits a sensible hyperplane to the data rather than being skewed by a few data points.
 
-Advanced SVMs are easy to use on complex data sets. You don’t need to know the details in depth, but it’s good to have an idea of what different tools can do if you run into a difficult data set. One of the most well known tools are kernels.
+In practice, it is recommended to experiment with several different types of models to try and achieve higher accuracy. Advanced SVMs are easy to use on complex data sets. You don’t need to know the details in depth, but it’s good to have an idea of what different tools can do if you run into a difficult data set. One of the most well known tools are kernels.
 
 ## Kernels
 
 SVMs can optimize predictions by use of kernel methods - a type of algorithm that analyzes patterns. The kernel trick is the most widely used kernel method. It uses calculus to separate the data and calculate a line of best fit that can be non-linear.
 
 There are several types of kernels you can use for the kernel trick, including linear, polynomial, gaussian, and sigmoid (S-shaped) kernels. These have different properties which give different margins to separate your examples. While practitioners tend to try polynomial kernels and gaussian kernels first, there is no general best choice of kernel.
+
+Parameters, such as kernels, that you can set before training a model are known **hyperparameters**. They change the way an algorithm trains and operates, so practitioners often change them to *tune* a model so it has better performance. While practitioners tend to try certain hyperparameters first, such as polynomial kernels and gaussian kernels, there is no general best choice for hyperparameters.
 
 ###### Linear Kernel
 
@@ -34,4 +36,4 @@ There are several types of kernels you can use for the kernel trick, including l
 
 ![Scatter plot showing a RBF kernel. The plot has three classes of data points - green, yellow, and blue data points. They are roughly in a circle shape divided into three. There is a non-linear black line which divides the three - with there being three lines coming from the centre of the plot in order to classify the data points correctly. There are two red lines either side of the black line, which intersects with several of the data points on each side - these are margins. There are several data points that are within the margin.](../media/3.0_Kernels-03.png)
 
-You just need to know the different kernels exist, and you should try several of them to try to improve your models accuracy. Luckily, it’s very easy to try different kernels, so let’s give it a go.
+You just need to know the different kernels exist, and you should try several of them to try to improve your models accuracy. Luckily, it’s very easy to try different hyperparameters, so let’s give it a go.
