@@ -107,7 +107,9 @@ Use the following steps to configure the Azure Storage account to host a static 
    | ----------------- | ----------------------------------------------------------------- |
    | Storage account   | Select the account you created earlier.                           |
    | Default file      | Select **index.html** as the index document name for the account. |
-   | Error document    | Press **Enter** to accept the default 404 error document path.    |
+   | Error document    | Enter **index.html** for the default 404 error document path.     |
+
+The error document path is the page the browser will load when a routing error occurs. This is important for JavaScript frameworks like Vue.js which have client-side routing.
 
 ## Deploy the web application to Azure Storage
 
