@@ -7,7 +7,8 @@ Included with each recommendation are the basic steps to follow in the Azure por
 In addition to the key material, the following attributes may be specified. In a JSON Request, the attributes keyword and braces, `{ }`, are required even if there are no attributes specified. For example, `IntDate`, optional, default is "forever". The **exp** (expiration time) attribute identifies the expiration time on or after which the key MUST NOT be used for cryptographic operation,except for certain operation types under particular conditions. The processing of the exp attribute requires that the current date/time MUST be before the expiration date/time listed in the exp attribute. It is thus recommended that you rotate your keys in the key vault and set an explicit expiry time for all keys. This ensures that the keys cannot be used beyond their assigned lifetimes. Key Vault stores and manages secrets as sequences of octets (8-bit bytes),with a maximum size of 25k bytes each. For highly sensitive data, clients should consider additional layers of protection for data. Encrypting data using a separate protection key prior to storage in Key Vault is one example.
 
 1. Sign in to the Azure portal.
-1. Go to the **Key vaults** blade.
+1. Go to the **Key vaults** blade, if not listed on the left menu, search for **Key vaults**.
+1. Select **Key Vaults**.
 1. For each key vault, click on **Keys**.
 1. Ensure that each key in the vault has **EXPIRATION DATE** set as appropriate.
 
@@ -19,6 +20,9 @@ Securely store and tightly control access to tokens, passwords, certificates, AP
 1. Go to the **Key vaults** blade.
 1. For each key vault, click on **Secrets**.
 1. Ensure that each secret in the vault has **EXPIRATION DATE** set as appropriate.
+1. The following illustrates setting expiration date on a password,
+
+ ![Screenshot of setting Key Vault expiration date](../media/9-akv-expiration.png)
 
 ### Set resource locks for mission-critical Azure resources - Level 2
 
@@ -29,5 +33,9 @@ As an administrator, you may need to lock a subscription, resource group, or res
 
 1. Sign in to the Azure portal.
 1. In the Settings blade for the resource, resource group, or subscription that you wish to lock, select **Locks**.
+
+ ![Screenshot of setting Key Vault lock](../media/9-lock1.png)
 1. To add a lock, select **Add**.
 1. Give the lock a name and lock level, i.e. **CanNotDelete or ReadOnly**. Optionally, you can add notes that describe the lock.
+
+ ![Screenshot of setting Key Vault naming the lock](../media/9-lock2.png)
