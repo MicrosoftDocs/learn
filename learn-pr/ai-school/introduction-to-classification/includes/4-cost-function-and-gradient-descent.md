@@ -1,12 +1,12 @@
-In the previous module, you saw the logistic regression algorithm optimize the number of correctly classified examples. Optimization is achieved by two methods that happen behind the scenes in AI: cost function and gradient descent.
+In the previous exercise, you saw the logistic regression algorithm optimize the number of correctly classified examples. Optimization is achieved by two methods that happen behind the scenes in AI: cost function and gradient descent.
 
-### Cost function refresher
+## Cost function refresher
 
 * __Cost__ is our error metric, which we want to get as low as possible.
 * We determine our cost with the __cost function__.
 * Different AI models have different cost functions.
 
-### Gradient descent
+## Gradient descent
 
 Gradient descent optimizes the AI models to minimize their cost. It is the most widely used optimization algorithm in AI and is used in some form in almost all model training set-ups. There are several variations for different applications, but they all use the same core concepts.
 
@@ -25,5 +25,3 @@ Learning rates are particularly important in complex models - if a learning rate
 In practice it’s a good idea to find an adequate learning rate, rather than spending time trying to find an optimal one. An adequate learning rate is large enough that your model is trained efficiently, but not so small that you cannot find a minima. It is perfectly acceptable to find an appropriate learning rate through trial and error.
 
 ![TBC if we keep in optional content](../media/2.3_LearningRate-01.png)
-  
-Next up we'll look at one of the most elegant solutions in machine learning - support vector machines.
