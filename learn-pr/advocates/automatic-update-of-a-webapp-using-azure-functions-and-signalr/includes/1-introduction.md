@@ -14,4 +14,4 @@ In this module, you will:
 ## Prerequisites
 
 - Ability to read JavaScript.
-- Familiarity with Azure Functions, Azure Cosmos DB,  and Visual Studio Code.
+- Familiarity with Azure Functions, Azure Cosmos DB, Azure Storage, and Visual Studio Code.
