@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.create-a-release-management-workflow.7-deploy-preprod
+uid: learn.azdo.create-a-release-management-workflow.6-deploy-preprod
 title: Exercise - Deploy to the Pre-production environment
 metadata:
   title: Exercise - Deploy to the Pre-production environment
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-deploy-preprod.md)]
+  [!include[](includes/6-deploy-preprod.md)]
