@@ -92,7 +92,7 @@ Now Visual Studio Code is configured to use the sandbox resources and avoid any 
 
 1. Open **public/index.html.js** and replace `<FUNCTION_APP_ENDPOINT>` with the function's endpoint.
 
-1. Next, upload your local settings to Azure by opening the command palette via **F1** and select **Azure Functions: Upload local settings**. When prompted, choose to overwrite all settings.
+1. Next, upload your local settings to Azure by opening the command palette via **F1** and select **Azure Functions: Upload local settings**. When prompted, choose the function app you just created, and choose to overwrite all settings.
 
 ## Configure static websites in Azure Storage
 
