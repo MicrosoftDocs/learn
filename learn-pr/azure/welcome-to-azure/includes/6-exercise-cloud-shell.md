@@ -1,4 +1,4 @@
-The Azure portal offers a convenient user interface to search, install, and access the various Azure offerings available. You'll, however, find, that some of these tasks are repetitive and are candidates for automation using a command-line enabled interface.
+The Azure portal offers a convenient user interface to search, install, and access the various Azure offerings available. You'll find, however, some of these tasks are repetitive and are candidates for automation using a command-line enabled interface.
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
@@ -25,7 +25,7 @@ Accessing the Cloud Shell from within the Azure portal is done using the Cloud S
 1. Our first step is to make sure that we work with the correct Azure subscription before we change any settings. We'll use the `az account list` list command. By default, the command returns a *json* string. We'll format the output to make this information easier to work with. Run the following command.
 
     ```bash
-    az list az account list --output table
+    az account list --output table
     ```
 
     Copy the `SubscriptionId` that matches the sandbox subscription we're using for MS Learn.
@@ -78,10 +78,10 @@ Accessing the Cloud Shell from within the Azure portal is done using the Cloud S
 
     ![Screenshot showing pre-configured WordPress website](../media/6-stopped-site.png)
 
-1. Finally, let's restart the web app by running the `az webapp stop --id ` command. un the following command to start the web app. Make sure to replace the example ID value with the value you copied earlier. In our example to command would look like the following snippet:
+1. Finally, let's restart the web app by running the `az webapp stop --id ` command. Run the following command to start the web app. Make sure to replace the example ID value with the value you copied earlier. In our example to command would look like the following snippet:
 
     ```bash
-    az webapp stop --id "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/resourceGroups/Learn-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/providers/Microsoft.Web/sites/BlogFor"
+    az webapp start --id "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/resourceGroups/Learn-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/providers/Microsoft.Web/sites/BlogFor"
     ```
 
 1. Switch back to the tab for your website and refresh the page. Your website will be available after a couple of seconds.
