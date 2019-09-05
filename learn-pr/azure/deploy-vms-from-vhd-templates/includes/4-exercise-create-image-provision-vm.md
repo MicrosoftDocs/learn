@@ -164,6 +164,14 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
         --name MyWindowsVM
     ```
 
+1. Run the following command to generalize the virtual machine.
+
+    ```azurecli
+    az vm generalize \
+        --resource-group <rgn>[Sandbox reource group name]</rgn> \
+        --name MyUbuntuVM
+    ```
+
 ::: zone-end
 
 ::: zone pivot="linux-cloud"
@@ -280,8 +288,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
       --resource-group <rgn>[Sandbox reource group name]</rgn> \
       --name MyVMFromImage \
       --image MyVMImage \
-      --admin-username azureuser \
-      --generate-ssh-keys
+      --admin-username azureuser
     ```
 
 1. Run the following command to open port 80 on the new virtual machine.
