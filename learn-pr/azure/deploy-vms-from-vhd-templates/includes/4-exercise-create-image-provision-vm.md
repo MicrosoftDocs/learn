@@ -260,7 +260,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
     ```azurecli
     az vm open-port \
-        --name MyVMFromIMage \
+        --name MyVMFromImage \
         --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --port 80
     ````
@@ -269,9 +269,10 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
     ```azurecli
     echo http://$(az vm list-ip-addresses \
-        --resource-group <rgn>[Sandbox reource group name]</rgn> \
-        --name MyVMFromImage \
-        --output tsv)
+                    --resource-group <rgn>[Sandbox resource group name]</rgn> \
+                    --name MyVMFromImage \
+                    --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
+                    --output tsv)
     ```
 
 1. In the web browser, navigate to the public IP address of the new virtual machine. Verify that a web page displaying the name of the virtual machine from which the image was built, *MyUbuntuVM*.
@@ -294,7 +295,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
     ```azurecli
     az vm open-port \
-        --name MyVMFromIMage \
+        --name MyVMFromImage \
         --resource-group <rgn>[Sandbox resource group name]</rgn> \
         --port 80
     ````
@@ -304,7 +305,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
     ```azurecli
     echo http://$(az vm list-ip-addresses \
                     --resource-group <rgn>[Sandbox resource group name]</rgn> \
-                    --name MyWindowsVM \
+                    --name MyVMFromImage \
                     --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
                     --output tsv)
     ```
