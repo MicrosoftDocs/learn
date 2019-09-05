@@ -1,5 +1,5 @@
-- stage: 'DeployDev'
-  displayName: 'Deploy to dev environment'
+- stage: 'Dev'
+  displayName: 'Deploy to the Dev environment'
   dependsOn: Build
   jobs:
   - deployment: Deploy

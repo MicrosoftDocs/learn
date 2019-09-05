@@ -1,6 +1,6 @@
 variables:
   buildConfiguration: 'Release'
-  releaseBranchName: 'release-workflow'
+  releaseBranchName: 'release'
 
 schedules:
 - cron: '0 3 * * *'
@@ -69,8 +69,8 @@ stages:
     - publish: '$(Build.ArtifactStagingDirectory)'
       artifact: drop
 
-- stage: 'DeployDev'
-  displayName: 'Deploy to dev environment'
+- stage: 'Dev'
+  displayName: 'Deploy to the dev environment'
   dependsOn: Build
   condition: |
     and
@@ -98,9 +98,9 @@ stages:
               appName: '$(WebAppNameDev)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
 
-- stage: 'DeployTest'
-  displayName: 'Deploy to test environment'
-  dependsOn: DeployDev
+- stage: 'Test'
+  displayName: 'Deploy to the test environment'
+  dependsOn: Dev
   #condition: eq(variables['Build.Reason'], 'Schedule')
   jobs:
   - deployment: Deploy

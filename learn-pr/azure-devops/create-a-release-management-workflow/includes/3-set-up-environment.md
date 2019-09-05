@@ -15,7 +15,7 @@ To do this, you:
 
 To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). In this module, you connect to your Azure subscription from Azure Pipelines. To simplify the process, you need to sign in to both your Azure subscription and your Azure DevOps organization under the same Microsoft account.
 
-If you use different Microsoft accounts to sign into Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account you use to sign in to Azure. [Add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?view=azure-devops&tabs=browser&azure-portal=true) explains how to add a user. When you add the user, choose the Basic access level.
+If you use different Microsoft accounts to sign into Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account you use to sign in to Azure. [Add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?view=azure-devops&tabs=browser&azure-portal=true) explains how to add a user. When you add the user, choose the **Basic** access level.
 
 <!-- TODO: NOT SURE WHETHER BASIC WILL WORK OR IF YOU NEED HIGHER. -->
 
@@ -39,7 +39,7 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 1. Select **Sign In** and accept the usage terms.
 1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - Release workflow**. Then select **Create Project**.
 
-    ![Creating a project through the Azure DevOps Demo Generator](../media/4-create-new-project.png)
+    <!-- ![Creating a project through the Azure DevOps Demo Generator](../media/4-create-new-project.png) -->
 
     <!-- TODO: Generate the template, update link & screenshot -->
 
@@ -51,7 +51,7 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 
 ## Move the work item to Doing
 
-In this part, you'll assign a work item to yourself that relates to this module on Azure Boards. You'll also move the work item to the **Doing** state. In practice, you and your team would assign work items at the start of each Sprint, or work iteration.
+In this part, you assign a work item to yourself that relates to this module on Azure Boards. You also move the work item to the **Doing** state. In practice, you and your team would assign work items at the start of each sprint, or work iteration.
 
 Assigning work in this way gives you a checklist to work from. It gives others on your team visibility into what you're working on and how much work is left. It also helps the team enforce Work in Progress (WIP) limits so that the team doesn't take on too much work at one time.
 
@@ -59,7 +59,7 @@ Recall that the team settled on these three top issues for the current sprint.
 
 ![Backlog of tasks](../../shared/media/deploy-all-tasks.png)
 
-Here you'll move the first item, **Define a release management workflow** to the **Doing** column and assign yourself to the work item.
+Here you move the first item, **Define a release management workflow** to the **Doing** column and assign yourself to the work item.
 
 Recall that **Define a release management workflow** relates to defining a release management workflow for the _Space Game_ web site.
 
@@ -78,7 +78,7 @@ To set up the work item:
 
     <!-- ![Azure Boards showing the card in the Doing column](../media/3-azure-boards-wi7-doing.png) -->
 
-At the end of this module, you'll move the card to the **Done** column after you've completed the task.
+At the end of this module, you move the card to the **Done** column after you've completed the task.
 
 ## Create the Azure App Service environments
 
@@ -115,7 +115,7 @@ To make the commands easier to run, start by selecting a default region. After y
 
 1. From the **Name** column in the output, choose a region that's close to you, for example, **eastasia** or **westus2**.
 
-1. Run `az configure` to set your default region. Replace **<REGION>** with the name of the region you chose.
+1. Run `az configure` to set your default region. Replace **\<REGION>** with the name of the region you chose.
 
     ```bash
     az configure --defaults location=<REGION>
@@ -220,7 +220,10 @@ To do so, you:
     You see this:
 
     > [!div class="mx-imgBorder"]
-    > ![](../media/3-app-service-default.png)
+    > ![The default home page on Azure App Service](../media/3-app-service-default.png)
+
+> [!IMPORTANT]
+> Remember, the [Clean up your Azure DevOps environment](/learn/modules/create-a-release-management-workflow/8-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
 
 ## Create pipeline variables in Azure Pipelines
 
@@ -233,24 +236,26 @@ To add the variable:
 1. In Azure DevOps, go to your **Space Game - web - Release workflow** projecet.
 1. Under **Pipelines**, select **Library**.
 
-    ![](../../create-release-pipeline/media/5-pipelines-library.png)
+    ![Azure Pipelines showing the Library menu option](../../create-release-pipeline/media/5-pipelines-library.png)
 1. Select **+ Variable group**.
 1. Under **Properties**, enter **Release Pipeline** for the variable group name.
 1. Under **Variables**, select **+ Add**.
 1. Enter **WebAppNameDev** as the name of your variable. Enter the name of the App Service instance that corresponds do your _Dev_ environment, such as **tailspin-space-game-web-dev-1234**, as its value.
-1. Repeat steps 5 and 6 two more times to create variables for your _Test_ and _Staging_ environments.
+1. Repeat steps 5 and 6 two more times to create variables for your _Test_ and _Staging_ environments, as shown in this table:
 
     | Variable name         | Example value                            |
     |-----------------------|------------------------------------------|
     | **WebAppNameTest**    | **tailspin-space-game-web-test-1234**    |
     | **WebAppNameStaging** | **tailspin-space-game-web-staging-1234** |
 
+    Be sure to replace each example value with the App Service instance that corresponds to your environment.
+
 1. Select **Save** near the top of the page to save your variable to the pipeline.
 
     Your variable group resembles this one:
 
     > [!div class="mx-imgBorder"]
-    > ![](../media/3-library-variable-group.png)
+    > ![Azure Pipeline showing the variable group](../media/3-library-variable-group.png)
 
 ## Create a service connection
 

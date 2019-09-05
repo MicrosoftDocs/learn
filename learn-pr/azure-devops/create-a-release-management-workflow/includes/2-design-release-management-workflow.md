@@ -45,7 +45,7 @@ When defining a release management process, it's important to first identify whi
 
 Mara moves to the whiteboard and sketches their existing pipeline.
 
-![](../media/2-build-deploy.png)
+![A whiteboard showing the Build and Deploy stages](../media/2-build-deploy.png)
 
 **Mara:** The _Build_ stage builds the source code and produces a package: a _.zip_ file in our case. The _Deploy_ stage deploys that _.zip_ file, the _Space Game_ website, to App Service. What comes next?
 
@@ -61,52 +61,79 @@ Mara moves to the whiteboard and sketches their existing pipeline.
 
 Mara updates her drawing on the whiteboard. She replaces "Deploy" with "Dev" to show the _Dev_ stage.
 
-![](../media/2-add-dev-stage.png)
+![A whiteboard showing the Build and Dev stages](../media/2-add-dev-stage.png)
 
 **Andy:** This brings up an interesting point. We want to build the app each time we push a change to GitHub. Does that mean each build will be deployed to the _Dev_ stage after it completes?
 
 **Mara:** Building continuously provides us with feedback about our build and test health. But we only want to deploy to the _Dev_ stage when we merge code into some central branch: either `master` or some other release branch. I'll update the drawing to show that requirement.
 
-![](../media/2-add-dev-stage-trigger.png)
+![A whiteboard showing the Build and Dev stages](../media/2-add-dev-stage-trigger.png)
 
-**Mara:** I think this will be relatively easy to accomplish. We need to define a *trigger* that deploys to the _Dev_ stage only when changes happen on a release branch.
+**Mara:** I think this will be relatively easy to accomplish. We need to define a *condition* that deploys to the _Dev_ stage only when changes happen on a release branch.
 
-### What are triggers?
+## What are conditions?
 
-A *trigger* defines when a stage runs. Azure Pipelines provides a few different types of triggers to help you control when each stage runs.
+In Azure Pipelines, a _condition_ enables you to run a task or job based on the state of the pipeline. You worked with conditions in previous modules.
 
-**Mara:** In Azure Pipelines, we can use triggers to control our release cadence. Here are our choices:
+As a refresher, some of the conditions you can specify are:
 
-* A manual trigger
-* A scheduled trigger
-* A continuous deployment trigger
+> [!div class="checklist"]
+> * Only when all previous dependent tasks have succeeded.
+> * Even if a previous dependency has failed, unless the run was canceled.
+> * Even if a previous dependency has failed, even if the run was canceled.
+> * Only when a previous dependency has failed.
+> * Some custom condition.
 
-**Mara:** A manual trigger is where people deploy a release by hand. A scheduled trigger starts a deployment at a specific time. A continuous deployment trigger is where an event, such as a successful build, triggers a deployment.
+Here's a basic example:
 
-As an example, let's say that you want to deploy to the _Dev_ environment after the _Build_ stage completes. But you want to only deploy builds that happen in the `release` branch. You might include this `trigger` section in your build configuration:
-
-```yml
-trigger:
-  branches:
-    include:
-    - 'release' # run only when the release branch is updated
+``` yml
+steps:
+  - script: echo Hello!
+    condition: always()
 ```
 
-You can further control the behavior of your pipeline by specifying which file paths trigger the build. Here's an example that skips the stage if the only files that were changed relate to documentation files.
+The `always()` condition causes this task to print "Hello!" unconditionally, even if previous tasks failed.
+
+Here's the condition that's used if you don't specify one:
 
 ```yml
-trigger:
-  branches:
-    include:
-    - 'release' # run only when the release branch is updated
-  paths:
-    exclude:
-    - docs/*    # don't run when only files under the docs folder are updated
+condition: succeeded()
 ```
 
-By default, a stage is triggered when a change is pushed to any file on any branch.
+The `succeeded()` built-in function checks whether the previous task succeeded. If the previous task failed, this task and subsequent tasks with the same condition are skipped.
 
-**Mara:** Triggers enable us to control which changes make it to which stages. We can produce a build artifact for any change to validate our builds are healthy. When we're ready, we can merge changes into a release branch and promote the build to the _Dev_ stage.
+Here, you want to build a condition that specifies that:
+
+* The previous task succeeded.
+* The name of the current Git branch is "release".
+
+To build this condition, you use the built-in `and()` function. This function checks whether each of its conditions is true. If any condition isn't true, the overall condition fails.
+
+To get the name of the current branch, you use the built-in `Build.SourceBranchName` variable. There are a few ways to access variables within a condition. Here you use the `variables[]` syntax.
+
+To test a variable's value, you can use the built-in `eq()` function. This function checks whether its arguments are equal.
+
+With that in mind, here's the condition you apply to run the _Dev_ stage only when the current branch name is "release":
+
+```yml
+condition: |
+  and
+  (
+    succeeded(),
+    eq(variables['Build.SourceBranchName'], 'release')
+  )
+```
+
+The first condition in the `and()` function checks whether the previous task succeeded. The second condition checks whether the current branch name equals "release".
+
+In YAML, you use the `|` syntax to define a string that spans multiple lines. You could define the condition on a single line, but we write it this way to make it more readable.
+
+> [!NOTE]
+> In this module, we use the _release_ branch as an example. You can combine conditions to define the behavior you need. For example, you could build a condition that runs the stage only when the build is triggered by a pull request against the _master_ branch.
+
+You'll work with a more complete example shortly when you set up the _Dev_ stage.
+
+**Mara:** Conditions enable us to control which changes make it to which stages. We can produce a build artifact for any change to validate that our builds are healthy. When we're ready, we can merge changes into a release branch and promote the build to the _Dev_ stage.
 
 ## Add the Test stage
 
@@ -116,9 +143,9 @@ By default, a stage is triggered when a change is pushed to any file on any bran
 
 Mara adds the _Test_ stage to her drawing on the whiteboard.
 
-![](../media/2-add-test-stage.png)
+![A whiteboard showing the Build, Dev, and Test stages](../media/2-add-test-stage.png)
 
-**Amita:** One concern I have is how often I need to test the app. I get an email that notifies me whenever Mara or Andy make a change. Changes happen throughout the day, and I never know when to jump in. I think I'd like to see a build once a day. Maybe it can be there when I get come in to the office. Can we do that?
+**Amita:** One concern I have is how often I need to test the app. I get an email that notifies me whenever Mara or Andy make a change. Changes happen throughout the day, and I never know when to jump in. I think I'd like to see a build once a day. Maybe it can be there when I get in to the office. Can we do that?
 
 **Andy:** Sure. Why don't we deploy to _Test_ during off-hours? Let's say we send you a build every day at 3 A.M.
 
@@ -126,17 +153,26 @@ Mara adds the _Test_ stage to her drawing on the whiteboard.
 
 Mara updates her drawing to show that the build moves from the _Dev_ stage to the _Test_ stage at 3 A.M. each morning.
 
-![](../media/2-add-test-stage-schedule.png)
+![A whiteboard showing the Build, Dev, and Test stages](../media/2-add-test-stage-schedule.png)
 
 **Amita:** I'm feeling better. However, what do we use to control when each stage runs?
 
+### What are triggers?
+
+A *trigger* defines when a stage runs. Azure Pipelines provides a few different types of triggers to help you control when each stage runs.
+
+**Mara:** In Azure Pipelines, we can use triggers to control our release cadence. Here are our choices:
+
+* A continuous integration (CI) trigger
+* A pull request (PR) trigger
+* A scheduled trigger
+* A build completion trigger
+
+**Mara:** CI and PR triggers enable you to control which branches participate in the overall build process. We want to build the project when a change is made on any branch. A scheduled trigger starts a deployment at a specific time. A build completion trigger runs a build when another build, such as one for a dependent component, completes successfully. It seems like we want a scheduled trigger.
+
 ### What are scheduled triggers?
 
-TODO: UTC
-
-TODO: Online cron expression builders
-
-Earlier, we mentioned scheduled triggers as a type of trigger. A scheduled trigger uses [cron syntax](https://docs.microsoft.com/azure/devops/pipelines/build/triggers?view=azure-devops&tabs=yaml#supported-cron-syntax) to cause a build to run on a defined schedule.
+A scheduled trigger uses [cron syntax](https://docs.microsoft.com/azure/devops/pipelines/build/triggers?view=azure-devops&tabs=yaml&azure-portal=true#supported-cron-syntax) to cause a build to run on a defined schedule.
 
 On Unix and Linux systems, cron is a popular way to schedule jobs to run on a set time interval or at a specific time. In Azure Pipelines, scheduled triggers use the cron syntax to define when a stage runs.
 
@@ -170,7 +206,10 @@ To specify 3 A.M. only on days Monday through Friday, you would use:
 
 > **0 3 \* \* 1-5**
 
-To set up a scheduled trigger in Azure Pipelines, you need two things. First, you need a `schedules` section in your YAML file. Here's an example:
+> [!NOTE]
+> The time zone for cron schedules is Coordinated Universal Time (UTC), so in this example, 3 A.M. refers to 3 A.M. in UTC.
+
+To set up a scheduled trigger in Azure Pipelines, you need a `schedules` section in your YAML file. Here's an example:
 
 ```yml
 schedules:
@@ -190,19 +229,21 @@ Here:
 
     Here, we specify `false` because we need to deploy only when the `release` branch has changed since the last run.
 
-The second part of a scheduled trigger is a condition that checks whether the reason for the build is a scheduled run. Recall from earlier modules that a _condition_ enables you to run a stage or task based on the state of the pipeline. For example, you might run a stage only when the previous stage completed without error.
+The entire pipeline runs when Azure Pipelines executes a scheduled trigger. The pipeline also runs under other conditions, such as when you push a change to GitHub. To run a stage only in response to a scheduled trigger, you can use a condition that checks whether the reason for the build is a scheduled run.
 
 Here's an example:
 
 ```yml
-- stage: 'DeployTest'
-  displayName: 'Deploy to Test environment'
+- stage: 'Test'
+  displayName: 'Deploy to the Test environment'
   condition: and(succeeded(), eq(variables['Build.Reason'], 'Schedule'))
 ```
 
-This stage, `DeployTest`, runs only when the previous stage succeeds and the built-in `Build.Reason` pipeline variable equals "Schedule".
+This stage, `Test`, runs only when the previous stage succeeds and the built-in `Build.Reason` pipeline variable equals "Schedule".
 
 You'll see a more complete example later in this module.
+
+**Mara:** Triggers enable us to control which changes make it to which stages. We can produce a build artifact for any change to validate our builds are healthy. When we're ready, we can merge changes into a release branch and promote the build to the _Dev_ stage.
 
 **Amita:** I like this. I don't even have to pick up the release by hand anymore and install it. It'll be all ready for me.
 
@@ -210,13 +251,13 @@ You'll see a more complete example later in this module.
 
 ### Add the Staging stage
 
-**Tim:** That leaves me. I need an environment to run additional stress testing on. We also need an environment from where we can demo the release to management to get their approval. Let's call that _Staging_.
+**Tim:** That leaves me. I need an environment to run additional stress testing. We also need an environment that we can demo to management to get their approval. Let's call that _Staging_.
 
 **Andy:** Well said, Tim. Having a staging, or pre-production, environment is an important piece here. It's often the last stop before a feature or bug fix makes it to our users.
 
 Mara adds the _Staging_ stage to her drawing on the whiteboard.
 
-![](../media/2-add-staging-stage.png)
+![A whiteboard showing the Build, Dev, Test, and Staging stages](../media/2-add-staging-stage.png)
 
 **Amita:** I know that we use a scheduled trigger to promote changes from the _Dev_ stage to the _Test_ stage. But how will we promote changes from _Test_ to _Staging_? Does that also happen on a schedule?
 
@@ -226,13 +267,13 @@ Mara adds the _Staging_ stage to her drawing on the whiteboard.
 
 Mara updates her drawing to show that the build moves from _Test_ to _Staging_ only when Amita approves it.
 
-![](../media/2-add-staging-stage-approval.png)
+![A whiteboard showing the Build, Dev, Test, and Staging stages](../media/2-add-staging-stage-approval.png)
 
 **Tim:** I could also see us using release approvals to promote from _Staging_ to _Production_, after managements signs off. We could even provide management with direct access to the approval button. That would give management clear sign-off steps, and could save us from having extra meetings. But how do release approvals work?
 
 #### What are release approvals?
 
-A *release approval* is a way to pause the pipeline until an approver accepts or rejects the release. You can combine approvals and triggers to define your release cadence.
+A *release approval* is a way to pause the pipeline until an approver accepts or rejects the release. You can combine approvals, conditions, and triggers to define your release cadence.
 
 Recall that in [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you defined an _environment_ in your pipeline configuration to represent your deployment environment. Here's an example from your existing pipeline:
 
@@ -250,7 +291,7 @@ Azure Pipelines gives you the flexibility to automate what you're able to, while
 
 **Mara:** You raise a good point. DevOps is really about automating repetitive and error-prone tasks. There are times when human intervention is still necessary, for example, when gaining approval from management before we release new features.
 
-**Mara:** As we gain experience with our automated deployments, we can automate more of our manual steps to speed up the process. For example, perhaps we can automate additional quality checks in the test stage so Amita doesn't have to approve each build.
+**Mara:** As we gain experience with our automated deployments, we can automate more of our manual steps to speed up the process. For example, perhaps we can automate additional quality checks in the _Test_ stage so Amita doesn't have to approve each build.
 
 **Tim:** Sounds great. Let's go with this plan for now and see how we can speed things up later.
 
@@ -264,20 +305,20 @@ Let's review the Tailspin team's plan as they move towards next steps.
 
 Mara points to the whiteboard.
 
-![](../media/2-add-staging-stage-approval.png)
+![A whiteboard showing the Build, Dev, Test, and Staging stages](../media/2-add-staging-stage-approval.png)
 
 **Mara:** To summarize, our steps are to:
 
-1. Produce a build artifact each time we push a change to GitHub. This happens in the build stage.
-1. Deploy the build artifact to the _Dev_ stage. This happens automatically when the build stage succeeds and the change is on a release branch.
-1. Deploy the build artifact to the test stage each morning at 3 A.M. This happens automatically by using a scheduled trigger.
-1. Deploy the build artifact to staging after Amita tests and approves the build. This happens by using a manual trigger.
+1. Produce a build artifact each time we push a change to GitHub. This happens in the _Build_ stage.
+1. Deploy the build artifact to the _Dev_ stage. This happens automatically when the build stage succeeds and the change is on the _release_ branch.
+1. Deploy the build artifact to the _Test_ stage each morning at 3 A.M. This happens automatically by using a scheduled trigger.
+1. Deploy the build artifact to _Staging_ after Amita tests and approves the build. This happens by using a release approval.
 
 Later, we can deploy the build artifact to a production environment after management approves the build.
 
 **Amita:** Is this going to be hard to do? It seems like a lot of work.
 
-**Mara:** I don't think it will be too bad. Every stage is separate from every other stage. Stages are discrete environments where we deploy the app. Each stage has its own set of tasks. What happens in the test stage, for example, stays in the test stage.
+**Mara:** I don't think it will be too bad. Every stage is separate from every other stage. Stages are discrete environments where we deploy the app. Each stage has its own set of tasks. What happens in the _Test_ stage, for example, stays in the _Test_ stage.
 
 **Mara:** Every stage also has its own environment. For example, in our pipeline, during the _Build_ stage, the environment is the build agent. When we deploy the app to a different stage, such as _Dev_ or _Test_, the environment can be something else. It could be a VM, a container, or a managed service like App Service, which is what we're using.
 

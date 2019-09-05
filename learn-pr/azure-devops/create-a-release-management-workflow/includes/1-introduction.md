@@ -10,9 +10,9 @@ A good release management workflow enables you to release more frequently and mo
 
 In this module, you will:
 
-- Compare the various tools and methods you can use to define a release management workflow
-- Identify what makes a high-quality release pipeline
-- Promote a build through the development, test, and staging environments
+- Identify the stages, or major divisions of the pipeline, that you need.
+- Understand when to use conditions, triggers, and approvals to promote changes from one stage to the next.
+- Promote a build through the _Dev_, _Test_, and _Staging_ stages.
 
 ## Prerequisites
 

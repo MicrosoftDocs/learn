@@ -2,20 +2,18 @@ The team has a plan and is ready to begin implementing their release management 
 
 At this point, the team's pipeline has two stages. The first stage produces the build artifact and the second stage deploys the _Space Game_ web application to App Service. Here, you follow along with Andy and Mara as they modify the pipeline to deploy to the App Service environment that corresponds to the _Dev_ stage.
 
-This branch you work with serves as the _release_ branch that triggers the deployment to the _Dev_ stage. In practice, you would choose an appropriate name for your release branch, such as `release`. As your process matures, you can trigger releases as changes make their way into the `master` branch.
-
 ## Fetch the branch from GitHub
 
-Here, you fetch the `release-workflow` branch from GitHub and checkout, or switch to, that branch.
+Here, you fetch the `release` branch from GitHub and checkout, or switch to, that branch.
 
 This branch serves as your _release_ branch. It contains the _Space Game_ project you worked with in the previous modules and an Azure Pipelines configuration to start with.
 
 1. In Visual Studio Code, open the integrated terminal.
-1. Run the following `git` commands to fetch a branch named `release-workflow` from Microsoft's repository and switch to that branch.
+1. Run the following `git` commands to fetch a branch named `release` from Microsoft's repository and switch to that branch.
 
     ```bash
-    git fetch upstream release-workflow
-    git checkout release-workflow
+    git fetch upstream release
+    git checkout release
     ```
 
     The format of this command enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
@@ -34,9 +32,9 @@ Here you modify your pipeline configuration to deploy the build to the _Dev_ sta
 
     This configuration resembles the one you built in the previous module, where you and the team built a proof of concept around continuous deployment. However, note these differences, which are highlighted in the code example:
 
-    1. This configuration defines variables at the top of the file that are used throughout the pipeline. These variables define which configuration to build (**Release**) and the name of your release branch (**release-workflow**).
-    1. The **DeployDev** stage uses a condition that specifies to run the stage only when the previous stage succeeds and the current branch is **release-workflow**. This ensures that release features only are deployed to the _Dev_ environment.
-    1. The deployment step uses the variable name **WebAppNameDev** to deploy to the App Service instance that's associated with the _Dev_ environment.
+    1. This configuration defines variables at the top of the file that are used throughout the pipeline. These variables define which configuration to build (**Release**) and the name of your release branch (**release**).
+    1. The **Dev** stage uses a condition that specifies to run the stage only when the previous stage succeeds and the current branch is **release**. This ensures that release features only are deployed to the _Dev_ environment.
+    1. The deployment step uses the variable that's named **WebAppNameDev** to deploy to the App Service instance that's associated with the _Dev_ environment.
 
 1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub.
 
@@ -46,7 +44,7 @@ Here you modify your pipeline configuration to deploy the build to the _Dev_ sta
     ```bash
     git add azure-pipelines.yml
     git commit -m "Deploy to the Dev stage"
-    git push origin release-workflow
+    git push origin release
     ```
 
 1. In Azure Pipelines, go to the build and trace the build as it runs.

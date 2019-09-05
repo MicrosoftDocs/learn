@@ -1,4 +1,4 @@
-Your release pipeline now has three stages: _Build_, _Dev_, and _Test_. You and the Tailspin team have one more stage to implment: the _Staging_ stage.
+Your release pipeline now has three stages: _Build_, _Dev_, and _Test_. You and the Tailspin team have one more stage to implement: _Staging_.
 
 In this part, you'll:
 
@@ -8,9 +8,9 @@ In this part, you'll:
 
 ## Create the Staging environment
 
-Here, you create an environment in Azure Pipelines for the _Staging_ environment. For learning purposes, you assign yourself as the approver. In practice, you would assign the users who are required to sign off on changes before those changes move to the next stage. For the Tailspin team, Amita approves changes as they move from _Test_ to _Staging_.
+Here, you create an environment in Azure Pipelines for the _Staging_ Stage. For learning purposes, you assign yourself as the approver. In practice, you would assign the users who are required to sign off on changes before those changes move to the next stage. For the Tailspin team, Amita approves changes as they move from _Test_ to _Staging_.
 
-Recall that, earlier in this module, you specified `environment` settings for both the _Dev_ and _Test_ stages. Here's an example for the _Dev_ stage. 
+Recall that, earlier in this module, you specified `environment` settings for both the _Dev_ and _Test_ stages. Here's an example for the _Dev_ stage.
 
 [!code-yml[](code/2-azure-pipelines.yml?highlight=8)]
 
@@ -20,7 +20,7 @@ To create the **staging** environment:
 
 1. From Azure Pipelines, select **Environments**.
 
-    ![](../media/7-pipelines-environments.png)
+    ![Azure Pipelines showing the Environments menu option](../media/7-pipelines-environments.png)
 
 1. Select **New environment**.
 1. Under **Name**, enter **staging**.
@@ -28,7 +28,7 @@ To create the **staging** environment:
 1. Select **Create**.
 1. On the **staging** environment page, select the drop down menu, then select **Checks**.
 
-    ![](../media/7-environments-staging-checks.png)
+    ![Azure Pipelines showing the Checks menu option](../media/7-environments-staging-checks.png)
 
 1. On the **Use manual approvals** page, select **Create**.
 1. Under **Approvers**, select **Add users and groups** and then select your account.
@@ -37,9 +37,9 @@ To create the **staging** environment:
     > Approve this change when it's ready for staging.
 1. Select **Create**.
 
-## Promote changes to the Staging stage
+## Promote changes to Staging
 
-Here you modify your pipeline configuration to deploy the build to the _Staging_ stage.
+Here, you modify your pipeline configuration to deploy the build to the _Staging_ stage.
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* like this.
 
@@ -55,14 +55,14 @@ Here you modify your pipeline configuration to deploy the build to the _Staging_
     ```bash
     git add azure-pipelines.yml
     git commit -m "Deploy to Staging"
-    git push origin release-workflow
+    git push origin release
     ```
 
 1. In Azure Pipelines, go to the build and trace the build as it runs.
 
     When the build reaches the _Staging_ stage, you see that the pipeline waits for all checks to pass. In this case there is one check: the manual release approval.
 
-    ![](../media/7-pipeline-review.png)
+    ![Azure Pipelines showing the Staging stage, which requires manual approval](../media/7-pipeline-review.png)
 
 1. Select **Review**, then select **Approve**.
 

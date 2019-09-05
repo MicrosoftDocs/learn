@@ -13,10 +13,11 @@ title: Create a release management workflow
 summary: Create a release management workflow
 abstract: |
   In this module, you will:
-  - Compare the various tools and methods you can use to define a release management workflow
-  - Identify what makes a high-quality release pipeline
-  - Promote a build through the development, test, and staging environments
+  - Identify the stages, or major divisions of the pipeline, that you need.
+  - Understand when to use conditions, triggers, and approvals to promote changes from one stage to the next.
+  - Promote a build through the _Dev_, _Test_, and _Staging_ stages.
 prerequisites: |
+  - An Azure subscription
   - An Azure DevOps account
   - Visual Studio Code
   - .NET Core 2.1

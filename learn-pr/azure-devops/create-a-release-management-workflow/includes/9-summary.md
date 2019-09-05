@@ -2,7 +2,7 @@ Nice job! Your pipeline is really taking shape. You and the Tailspin team have m
 
 In this module, you learned about some of the ways to control how changes move from from one stage to the next. Let's review the pipeline you built in this module. This image shows your pipeline's overall shape:
 
-![](../media/2-add-staging-stage-approval.png)
+![A whiteboard showing the Build, Dev, Test, and Staging stages](../media/2-add-staging-stage-approval.png)
 
 The _Dev_, _Test_, and _Staging_ stages each deploy the build artifact to its own Azure App Service environment.
 

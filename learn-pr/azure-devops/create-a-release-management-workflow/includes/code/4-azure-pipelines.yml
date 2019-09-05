@@ -1,6 +1,6 @@
 variables:
   buildConfiguration: 'Release'
-  releaseBranchName: 'release-workflow'
+  releaseBranchName: 'release'
 
 stages:
 - stage: 'Build'
@@ -61,8 +61,8 @@ stages:
     - publish: '$(Build.ArtifactStagingDirectory)'
       artifact: drop
 
-- stage: 'DeployDev'
-  displayName: 'Deploy to dev environment'
+- stage: 'Dev'
+  displayName: 'Deploy to the dev environment'
   dependsOn: Build
   condition: |
     and

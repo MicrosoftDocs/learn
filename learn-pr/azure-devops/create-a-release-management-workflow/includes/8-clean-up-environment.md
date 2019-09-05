@@ -1,7 +1,7 @@
 You're all done with the tasks for this module. Here, you'll move the work item to the **Done** state on Azure Boards and clean up your Azure DevOps environment.
 
 > [!IMPORTANT]
-> This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps if you ran the template earlier in this module.
+> This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. It also helps ensure that you're not charged for Azure resources after you complete this module.
 
 ## Clean up Azure resources
 
@@ -38,7 +38,7 @@ Here, you'll move the work item you assigned to yourself earlier in this module,
 
 In practice, the definition of "Done" often means working software in the hands of your users. For learning purposes, here you'll mark this work as complete because the goal for the Tailspin team is to define a release management workflow they can use to deliver new features.
 
-At the end of each sprint, or work iteration, you and your team might hold a retrospective meeting, where you share the work you completed, what went well in the Sprint, and what could be improved.
+At the end of each sprint, or work iteration, you and your team might hold a retrospective meeting, where you share the work you completed, what went well in the sprint, and what could be improved.
 
 To complete the work item:
 
