@@ -6,8 +6,6 @@ In this exercise, you'll start with an existing virtual machine and generalize i
 
 In this task, you'll quickly create a virtual machine that runs a simple web app. The web app displays the name of the host machine. You'll use this virtual machine as the basis for the rest of the exercise.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ::: zone pivot="windows-cloud"
 
 1. In the Cloud Shell window on the right, run the following commands to create a Windows Server Datacenter virtual machine running IIS. When prompted for the *azureuser* password, enter a password of your choice.
