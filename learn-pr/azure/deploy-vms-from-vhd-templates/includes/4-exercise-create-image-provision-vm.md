@@ -168,7 +168,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
     ```azurecli
     az vm generalize \
         --resource-group <rgn>[Sandbox reource group name]</rgn> \
-        --name MyUbuntuVM
+        --name MyWindowsVM
     ```
 
 ::: zone-end
