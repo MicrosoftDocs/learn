@@ -1,15 +1,15 @@
-As part of the project to configure your healthcare application to be highly available, you need to create and configure an Azure storage account. Recall that your application allows doctors and consultants in the field to upload images from visits with patients. These images contain essential clinical information, and they need to be available even if an Azure region fails.
+As part of the project to make your healthcare application highly available, you need to create and configure an Azure storage account. Recall that your application will allow doctors and consultants in the field to upload images from visits with patients. These images contain essential clinical information, and they must be available even if an Azure region fails.
 
 Let's see how an Azure storage account is configured to allow for replication and high availability of data.
 
 ## Azure storage accounts
-Azure storage accounts are used to house all data objects, such as files, blobs, tables, and disks for virtual machines. The data you store in a storage account can be accessed from any location globally via HTTP or HTTPS and is highly available and secure.
+Azure storage accounts are used to house data objects, such as files, blobs, tables, and disks for virtual machines. The data that you store in a storage account can be accessed from any location globally via HTTP or HTTPS and is highly available and secure.
 
-![A diagram of the available storage types that are accessible as read-access geo-redundant storage](../media/2-ra-grs-storage-account.png)
+![The storage types that are accessible as read-access geo-redundant storage](../media/2-ra-grs-storage-account.png)
 
 ## Data redundancy
 
-Data in Azure is replicated to ensure that it's always available if a datacenter or region becomes inaccessible, or a specific piece of hardware fails. There are four available replication options:
+Data in Azure is replicated to ensure that it's always available, even if a datacenter or region becomes inaccessible or a specific piece of hardware fails. You have four replication options:
 
 - Locally redundant storage (LRS)
 - Zone-redundant storage (ZRS)
@@ -26,7 +26,7 @@ Locally redundant storage replicates data and stores three copies across fault d
 
 LRS protects your data from hardware failures, but you aren't protected if there's a datacenter outage. For example, if Array 1 in UK South suffers a hardware failure, your data is still available on Array 2. If the entire datacenter suffers a failure, you would most likely lose your data.
 
-LRS is the cheapest replication option available. It also offers the least durability, because you can potentially lose all your data during a datacenter outage, depending on the severity of the outage.
+LRS is the least expensive replication option available. It also offers the least durability, because you can potentially lose all your data during a datacenter outage, depending on the severity of the outage.
 
 ### What is zone-redundant storage (ZRS)?
 
@@ -44,9 +44,9 @@ ZRS offers 99.999999999999 percent durability of data. However, ZRS might not pr
 
 ![An overview of geo-redundant storage](../media/2-geo-redundant-storage.png)
 
-Geo-redundant storage provides multiple levels of replication. Your data is replicated three times within the primary region, and then this set is replicated to a secondary region.
+Geographically redundant, or geo-redundant, storage provides multiple levels of replication. Your data is replicated three times within the primary region, and then this set is replicated to a secondary region.
 
-GRS provides you with the highest level of durability, because you finish with six copies of your data. This durability means that even if there's a datacenter failure or regional issues in the primary region, your data is always available. If the primary region fails, Azure storage is still available in the secondary region. The secondary region is automatically paired to the primary region based on the primary region you selected. This pairing configuration can't be changed.
+GRS provides the highest level of durability, because you finish with six copies of your data. Such durability means that even if there's a datacenter failure or regional issues in the primary region, your data is always available. If the primary region fails, Azure storage is still available in the secondary region. The secondary region is automatically paired to the primary region based on the primary region you selected. This pairing configuration can't be changed.
 
 Keep in mind that your data in the secondary region is inaccessible until the primary region has failed across to the secondary region. At this point, the secondary region becomes the active region (primary), and your data becomes accessible.
 
@@ -60,7 +60,7 @@ When you use RA-GRS, you need to ensure that your application knows which endpoi
 
 RA-GRS is ideal for applications, which require high availability.
 
-A new feature currently in preview allows you to start failover between primary and secondary regions from the Azure portal, PowerShell, or the Azure CLI. When the primary endpoint becomes unavailable, you can fail over to the secondary endpoint.
+A new feature currently in preview allows you to start a failover between primary and secondary regions from the Azure portal, PowerShell, or the Azure CLI. When the primary endpoint becomes unavailable, you can fail over to the secondary endpoint.
 
 After the failover and DNS endpoint updates are complete, the storage account is set back to LRS. You're responsible for reverting the replication settings from LRS to RA-GRS or GRS after the primary region becomes available again.
 
