@@ -10,6 +10,8 @@ The second customization tells the Azure Functions extension to use the advanced
 
 ### Add concierge tenant to Visual Studio Code
 
+The following steps associate the free Azure subscription created for you with Visual Studio Code. At the end of the tutorial you'll follow steps to restore Visual Studio Code back to its original settings. 
+
 1. In the Cloud Shell, run the following command and copy the tenant ID to your clipboard.
 
     ```bash
