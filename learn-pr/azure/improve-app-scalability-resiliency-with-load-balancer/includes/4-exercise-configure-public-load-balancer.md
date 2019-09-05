@@ -238,10 +238,9 @@ When you use PowerShell to configure a load balancer, you must create the back-e
 1. Run the following command to get the public IP address of the load balancer and the URL for your web site.
 
     ```Powershell
-    $lbip = $(Get-AzPublicIPAddress `
+    Write-Host http://$($(Get-AzPublicIPAddress `
       -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
-      -Name "myPublicIP" | select IpAddress)
-    Write-Host http://$lbip
+      -Name "myPublicIP").IpAddress)
     ```
 
 ::: zone-end
@@ -301,6 +300,13 @@ Let's use the Azure CLI to create the load balancer and its associated resources
 1. Connect the virtual machines to the backend pool by updating the network interfaces you created in the script with the backend pool information.
 
     ```Azure CLI
+    az network nic ip-config update \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --nic-name webNic1 \
+      --name ipconfig1 \
+      --lb-name myLoadBalancer \
+      --lb-address-pools myBackEndPool
+
     az network nic ip-config update \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --nic-name webNic2 \
