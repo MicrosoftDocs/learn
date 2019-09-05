@@ -37,7 +37,7 @@ Your first task is to create a scale set. You'll configure it to run a web serve
 
 1. Press Ctrl+S to save the file. Then press Ctrl+Q to close the code editor.
 
-1. Run the following command to create a new resource group named **scalesetrg** for your scale set:
+1. Run the following command to create a new resource group named `scalesetrg` for your scale set:
 
     ```bash
         az group create \
