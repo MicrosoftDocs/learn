@@ -2,7 +2,7 @@ As the solution architect for your organization's healthcare system, you want to
 
 In this exercise, you create an Azure storage account and configure the account for RA-GRS. By default, the storage account is set to LRS when you create it. Because you want the application to be highly available, you'll change the mode to RA-GRS. The storage account will be used as a disaster recovery feature to ensure that the application is always running.
 
-As the first step, you create an Azure storage account to use to store the application data.
+As the first step, you create an Azure storage account for storing the application data.
 
 ![The storage account configuration](../media/3-storage-account-overview.png)
 
@@ -54,9 +54,7 @@ In this step, you create a storage account. The storage account hosts the health
 
 ## Azure storage account failover
 
-In this step, you use Cloud Shell to view the replication status of your storage account.
-
-To view the status of the primary and secondary locations, run the following command:
+In this step, you use Cloud Shell to view the replication status of your storage account. To view the status of the primary and secondary locations, run the following command:
 
 ```bash
     az storage account show \
@@ -67,4 +65,4 @@ To view the status of the primary and secondary locations, run the following com
 
 The output shows useful information that's related to the primary endpoint, the secondary endpoint, and the last time data was synchronized across regions.
 
-If the command returns the error *Last sync time is unavailable for account healthcareappnnnn*, wait a few minutes and then repeat the command.
+If the command returns the error *Last sync time is unavailable for account healthcareappnnnn*, wait a few minutes, and then repeat the command.
