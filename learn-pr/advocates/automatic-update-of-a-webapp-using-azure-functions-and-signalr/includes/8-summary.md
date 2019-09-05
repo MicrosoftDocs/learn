@@ -35,3 +35,7 @@ The following steps return the settings of your Visual Studio Code instance back
 ### Sign out and back in
 
 Once the tenant is removed from the Azure extension settings, open the command palette and select **Azure: Sign Out** and then **Azure: Sign In**.
+
+## Additional Resources
+
+- Learn more about [Azure Cosmos DB input bindings for Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-bindings-cosmosdb-v2)
