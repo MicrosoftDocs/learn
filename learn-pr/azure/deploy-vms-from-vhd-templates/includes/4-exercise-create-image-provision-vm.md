@@ -43,9 +43,10 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
     ```azurecli
     echo http://$(az vm list-ip-addresses \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
-        --name MyWindowsVM \
-        --output tsv)
+                 --resource-group <rgn>[Sandbox resource group name]</rgn> \
+                 --name MyWindowsVM \
+                 --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
+                 --output tsv)
     ```
 
 1. In the web browser, navigate to the public IP address of the virtual machine. Verify that a web page displaying the name of the virtual machine, *MyWindowsVM*, appears.
