@@ -31,7 +31,7 @@ First, deploy your patient portal application across two virtual machines within
     bash create-high-availability-vm-with-sets.sh <rgn>[sandbox resource group name]</rgn>
     ```
 
-1. When the script finishes, in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources**. All the dependencies that you need for your virtual machine to run are automatically installed. Make a note of the location where they were created. In the next sections, create the load balancer in the same location.
+1. When the script finishes, in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **Resource groups**, then select the **<rgn>[sandbox resource group name]</rgn>** resource group. Review the resources that were created by the script.
 
 ::: zone pivot="portal"
 
@@ -157,12 +157,10 @@ First, we need a public IP address for the load balancer.
 1. In PowerShell, create a new public IP address.
 
     ```Powershell
-    $RgList = Get-AzureRmResourceGroup
-    $RgName = <rgn>[sandbox resource group name]</rgn>
-    $Location = $RgList[0].Location
+    $Location = $(Get-AzureRmResourceGroup -ResourceGroupName <rgn>[sandbox resource group name]</rgn>).Location
 
     $publicIP = New-AzPublicIpAddress `
-      -ResourceGroupName $RgName `
+      -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
       -Location $Location `
       -AllocationMethod "Static" `
       -Name "myPublicIP"
@@ -215,7 +213,7 @@ When you use PowerShell to configure a load balancer, you must create the back-e
 
     ```Powershell
     $lb = New-AzLoadBalancer `
-      -ResourceGroupName $RgName `
+      -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
       -Name 'MyLoadBalancer' `
       -Location $Location `
       -FrontendIpConfiguration $frontendIP `
@@ -227,8 +225,8 @@ When you use PowerShell to configure a load balancer, you must create the back-e
 1. Connect the virtual machines to the backend pool by updating the network interfaces that the script created with the backend pool information.
 
     ```Powershell
-    $nic1 = Get-AzureRmNetworkInterface -ResourceGroupName $RgName -Name "webNic1"
-    $nic2 = Get-AzureRmNetworkInterface -ResourceGroupName $RgName -Name "webNic2"
+    $nic1 = Get-AzureRmNetworkInterface -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -Name "webNic1"
+    $nic2 = Get-AzureRmNetworkInterface -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -Name "webNic2"
 
     $nic1.IpConfigurations[0].LoadBalancerBackendAddressPools = $backendPool
     $nic2.IpConfigurations[0].LoadBalancerBackendAddressPools = $backendPool
@@ -241,7 +239,7 @@ When you use PowerShell to configure a load balancer, you must create the back-e
 
     ```Powershell
     $lbip = $(Get-AzPublicIPAddress `
-      -ResourceGroupName $RgName `
+      -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
       -Name "myPublicIP" | select IpAddress)
     Write-Host http://$lbip
     ```
@@ -257,10 +255,8 @@ Let's use the Azure CLI to create the load balancer and its associated resources
 1. Create a new public IP address.
 
     ```Azure CLI
-    RgName='<rgn>[sandbox resource group name]</rgn>'
-
     az network public-ip create \
-      --resource-group $RgName \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
       --allocation-method Static \
       --name myPublicIP
     ```
@@ -269,7 +265,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
 
     ```Azure CLI
     az network lb create \
-      --resource-group $RgName \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
       --name myLoadBalancer \
       --public-ip-address myPublicIP \
       --frontend-ip-name myFrontEndPool \
@@ -280,7 +276,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
 
     ```Azure CLI
     az network lb probe create \
-      --resource-group $RgName \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
       --lb-name myLoadBalancer \
       --name myHealthProbe \
       --protocol tcp \
@@ -291,7 +287,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
 
     ```Azure CLI
     az network lb rule create \
-      --resource-group $RgName \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
       --lb-name myLoadBalancer \
       --name myHTTPRule \
       --protocol tcp \
@@ -306,7 +302,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
 
     ```Azure CLI
     az network nic ip-config update \
-      --resource-group $RgName \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
       --nic-name webNic2 \
       --name ipconfig1 \
       --lb-name myLoadBalancer \
@@ -317,7 +313,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
 
     ```Azure CLI
     echo http://$(az network public-ip show \
-                    --resource-group $RgName \
+                    --resource-group <rgn>[sandbox resource group name]</rgn> \
                     --name myPublicIP \
                     --query ipAddress \
                     --output tsv)
