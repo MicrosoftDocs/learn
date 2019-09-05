@@ -48,7 +48,7 @@ Console.WriteLine("Decimal quotient: " + decimalQuotient);
 
 If you run the code, you will see the following output:
 
-```csharp-interactive
+```output
 decimal quotient: 1.4
 ```
 

@@ -4,13 +4,7 @@ Now that we can store values in variables, let's combine literal and variable da
 
 Often we'll want to combine strings together, or rather, perform *string concatenation*.  Or perhaps we'll want to perform mathematical operations on numeric data, like addition.  This exercise will allow you to work with both literal and variable data to perform these basic operations on your data.
 
-### Step 1: Delete all of the code in the code editor.
-
-Use your mouse to highlight all of the text in the code editor, then select the `backspace` or `del` key to remove everything.
-
-Later, we'll learn a different, less destructive technique for disabling the lines of code you no longer want to execute.
-
-### Step 2: Concatenate a literal string and a variable.
+### Step 1: Concatenate a literal string and a variable.
 
 To concatenate two strings together, you use the *string concatenation operator*, which is the plus symbol `+`.
 
@@ -28,16 +22,16 @@ Now, run the code.  You'll see the following result in the output console:
 Hello Bob
 ```
 
-### Step 3: Concatenate a literal string and a variable.
+### Step 2: Concatenate a literal string and a variable.
 
-You can perform several concatenation operations in the same line of code.
+You can perform multiple concatenation operations in the same line of code.
 
 Modify the code you wrote in Step 2 to the following:
 
 ```csharp-interactive
 string firstName = "Bob";
-string greeting = "Tabor";
-string message = greeting + " " + lastName;
+string greeting = "Hello";
+string message = greeting + " " + firstName;
 Console.WriteLine(message);
 ```
 
@@ -49,9 +43,9 @@ Now, run the code.  You'll see the following result in the output console:
 Hello Bob
 ```
 
-### Step 4: Avoiding intermediate variables.
+### Step 3: Avoiding intermediate variables.
 
-In steps 2 and 3, we used an extra variable to hold the new string that resulted from the concatenation operation.  Unless you have a good reason to do so, you can (and should) avoid adding another variable and instead perform the concatenation operation as you need it.
+In steps 1 and 2, we used an extra variable to hold the new string that resulted from the concatenation operation.  Unless you have a good reason to do so, you can (and should) avoid adding another variable and instead perform the concatenation operation as you need it.
 
 Modify the code you wrote in Step 3 to match the following code:
 

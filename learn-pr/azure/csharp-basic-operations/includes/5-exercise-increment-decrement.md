@@ -15,22 +15,22 @@ There are several techniques to perform an increment and decrement.  The followi
 int value = 1;
 
 value = value + 1;
-Console.WriteLine($"First increment: {value}");
+Console.WriteLine("First increment: " + value);
 
 value += 1;
-Console.WriteLine($"Second increment: {value}");
+Console.WriteLine("Second increment: " + value);
 
 value++;
-Console.WriteLine($"Third increment: {value}");
+Console.WriteLine("Third increment: " + value);
 
 value = value - 1;
-Console.WriteLine($"First decrement: {value}");
+Console.WriteLine("First decrement: " + value);
 
 value -= 1;
-Console.WriteLine("Second decrement: {value}");
+Console.WriteLine("Second decrement: " + value);
 
 value--;
-Console.WriteLine("Third decrement: {value}");
+Console.WriteLine("Third decrement: " + value);
 ```
 
 If you run the code, you'll see the following output.
