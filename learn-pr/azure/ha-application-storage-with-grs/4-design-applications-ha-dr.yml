@@ -2,7 +2,7 @@
 uid: learn.ha-application-storage-with-grs.4-design-applications-ha-dr
 metadata:
   title: Design HA applications to handle disaster recovery
-  description: Learn how to design HA applications to handle disaster recovery
+  description: In this unit, you learn how to design HA applications to handle disaster recovery.
   ms.date: 05/21/19
   author: jboeshart
   ms.author: jaboes
