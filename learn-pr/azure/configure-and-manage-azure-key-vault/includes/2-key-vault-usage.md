@@ -1,4 +1,6 @@
-There are three concepts in an Azure Key Vault: _vaults_, _keys_, and _secrets_.
+Azure Key Vault is a centralized cloud service for storing application secrets such as encryption keys, certificates, and server-side tokens. Key Vault helps you control your applications' secrets by keeping them in a single central location and providing secure access, permissions control, and access logging.
+
+There are three primary concepts used in an Azure Key Vault: _vaults_, _keys_, and _secrets_.
 
 ## Vaults
 
@@ -6,48 +8,73 @@ You use Azure Key Vault to create multiple secure containers, called vaults. Vau
 
 You can create and manage vaults using command line tools such as Azure PowerShell or the Azure CLI, using the REST API, or through the Azure portal.
 
+For example, here's a sample Azure CLI command line to create a new vault in a resource group:
+
+```azurecli
+az keyvault create \
+    --resource-group <resource-group> \
+    --name <your-unique-vault-name>
+```
+
+Here's the same command using Azure PowerShell:
+
+```powershell
+New-AzKeyVault -Name <your-unique-vault-name> -ResourceGroupName <resource-group>
+```
+
 ## Keys
 
 Keys are the central actor in the Azure Key Vault service. A given key in a key vault is a cryptographic asset destined for a particular use such as the asymmetric master key of Microsoft Azure RMS, or the asymmetric keys used for SQL Server TDE (Transparent Data Encryption), CLE (Column Level Encryption) and Encrypted backup.
 
-Your keys must stay 'out of sight' from the applications that are using them. One user adds keys to a key vault. Applications must use your keys by calling cryptography methods on the Key Vault service. The Key Vault service performs the requested operation within its hardened boundary. The application never has direct access to the keys.
+Microsoft and your apps don't have access to the stored keys directly. One a key is created or added to a key vault. Applications must use your keys by calling cryptography methods on the Key Vault service. The Key Vault service performs the requested operation within its hardened boundary. The application never has direct access to the keys.
 
 Keys can be single instanced (only one key exists) or be versioned. In the versioned case, a key is an object with a primary (active) key and a collection of one or more secondary (archived) keys created when keys are rolled (renewed). Key Vault supports asymmetric keys (RSA 2048). Your applications may use these for encryption or digital signatures.
 
-Finally, keys can be hardware-protected using a Hardware Security Module (HSM) or software-protected.
+There are two variations on keys in Key Vault: hardware-protected, and software-protected.
 
 ### Hardware protected keys
 
-The Key Vault service performs all cryptographic operations on HSM-protected keys inside Hardware Security Modules. HSMs provide a hardened, tamper-resistant environment for cryptographic processing and key generation. The Key Vault service internally uses Thales nShield HSMs validated to FIPS 140-2 Level 2.
+The Key Vault service supports using HSMs that provide a hardened, tamper-resistant environment for cryptographic processing and key generation. Azure has dedicated HSMs validated to FIPS 140-2 Level 2 that Key Vault uses to generate or store keys. These HSM-backed keys are always locked to the boundary of the HSM. When you ask the Key Vault service to decrypt or sign with a key, the operation is performed inside an HSM.
+
+You can import keys from your own hardware security modules (HSMs) and transfer them to Key Vault without leaving the HSM boundary. This scenario is often referred to as _bring your own key_, or BYOK. More details on generating your own HSM-protected key and then transferring it to Azure Key Vault is available in the summary of this module. You can also use these Azure HSMs directly through the Microsoft Azure Dedicated Hardware Security Module (HSM) service if you need to migrate HSM-protected apps or maintain a high security compliance requirement.
 
 ### Software protected keys
 
-Cryptographic operations on software-protected keys are done in software. In general, they offer most of the same assurances as HSM-protected keys except the FIPS 140-2 Level 2 assurance:
+Key Vault can also generate and protect keys using software-based RSA and ECC algorithms. In general, software-protected keys offer most of the features as HSM-protected keys except the FIPS 140-2 Level 2 assurance:
 
-- Your key is still isolated from the application in a container that you manage
-- It's stored encrypted with HSMs
-- You can monitor usage using Key Vault logs.
+- Your key is still isolated from the application (and Microsoft) in a container that you manage
+- It's stored _at rest_ encrypted with HSMs
+- You can monitor usage using Key Vault logs
+
+The primary difference (besides price) with a software-protected key is when cryptographic operations are performed, they are done in software using Azure compute services while for HSM-protected keys the cryptographic operations are performed within the HSM.
 
 > [!TIP]
-> For production use, it's recommended to use HSM-protected keys and use software-protected keys in only test/pilot scenarios.
+> For production use, it's recommended to use HSM-protected keys and use software-protected keys in only test/pilot scenarios. There is an additional charge for HSM-backed keys per-month if the key is used in that month. The summary page has a link to the pricing details for Azure Key Vault.
+
+You determine the key generation type when you create the key. For example, the Azure PowerShell command `Add-AzureKeyVaultKey` has a `Destination` parameter that can be set to either `Software` or `HSM`:
+
+```powershell
+$key = Add-AzureKeyVaultKey -VaultName 'contoso' -Name 'MyFirstKey' -Destination 'HSM'
+```
 
 ## Secrets
 
-Secrets are small, less than 25 kilobytes, data blobs protected by a key that is automatically generated as part of creating a Key Vault. Secrets exist to simplify the process of persisting sensitive settings that almost every application has: storage account keys, SQL connection strings, data encryption keys, etc.
+Secrets are small (less than 10K) data blobs protected by a HSM-generated key created with the Key Vault. Secrets exist to simplify the process of persisting sensitive settings that almost every application has: storage account keys, .PFX files, SQL connection strings, data encryption keys, etc.
 
 ## Key vault uses
 
 With these three elements, an Azure Key Vault helps address the following issues:
 
-- **Secrets management**. Azure Key Vault can securely store and tightly control access to tokens, passwords, certificates, API keys, and other secrets.
+- **Secrets management**. Azure Key Vault can securely store (with HSMs) and tightly control access to tokens, passwords, certificates, API keys, and other secrets.
 - **Key management**. Azure Key Vault is a cloud-based key management solution, making it easier to create and control the encryption keys used to encrypt your data. Azure services such as App Service integrate directly with Azure Key Vault and can decrypt secrets without knowledge of the encryption keys.
 - **Certificate management**. Azure Key Vault is also a service that lets you easily provision, manage, and deploy public and private SSL/TLS certificates for use with Azure and your internal connected resources. It can also request and renew TLS certificates through partnerships with certificate authorities, providing a robust solution for certificate lifecycle management.
-- **Store secrets backed by hardware security modules (HSMs)**. The secrets and keys can be protected by software, or FIPS 140-2 Level 2 validated HSMs.
 
 > [!IMPORTANT]
 > **Key Vault is designed to store configuration secrets for server applications.** It's not intended for storing data belonging to your app's users, and it shouldn't be used in the client-side part of an app. This is reflected in its performance characteristics, API, and cost model.
 >
 > User data should be stored elsewhere, such as in an Azure SQL database with Transparent Data Encryption, or a storage account with Storage Service Encryption. Secrets used by your application to access those data stores can be kept in Key Vault.
+
+### Best practices
 
 Here are some security best practices for using Azure Key Vault.
 

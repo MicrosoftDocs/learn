@@ -1,36 +1,24 @@
-Access to a key vault is controlled through two interfaces: the management plane, and the data plane.
+Key Vault access has two facets: the management of the Key Vault itself, and accessing the data contained in the Key Vault. Documentation refers to these as  the _management plane_ and the _data plane_.
 
-The **management plane** provides operations to manage the service such as:
+These two areas are separated because the creation of the Key Vault (a management operation) is a different role than storing and retrieving a secret stored in the Key Vault. To access a key vault, all users or applications must have proper _authentication_ to identify the caller, and _authorization_ to determine the operations the caller can perform.
 
-- Creating and deleting key vaults
-- Retrieving key vault properties
-- Updating access policies
+## Authentication
 
-The **data plane** provides access to the data. This plane is where you add, update, and delete the keys, secrets, and certificates contained in the vault.
+Azure Key Vault uses Azure Active Directory to authenticate users and applications that try to access a vault. Authentication is always performed by associated the Azure AD tenant of the subscription that the Key Vault is part of and every user or app making a request must be known to the AAD. There is no support for anonymous access to a Key Vault.
 
-To access a key vault, all users or applications must have proper _authentication_ to identify the caller, and _authorization_ to determine the operations the caller can perform.
+## Authorization
 
-## Key Vault authentication
+Management operations (creating a new Azure Key Vault) uses role-based access control (RBAC). There is a built-in role **Key Vault Contributor** that provides access to management features of key vaults, but doesn't allow access to the key vault data. This is the recommended role to use. There's also a **Contributor** role which includes full administration rights - including the ability to grant access to the data plane.
 
-Authentication () is performed by associated the Azure AD tenant of the subscription that the Key Vault is part of. 
-
-1. **User + application access**. The application accesses a Key Vault on behalf of a signed-in user known to AAD. This is most often used with interactive apps such as web apps or desktop-based apps.
-
-1. **Application-only access**. The application runs as a standalone service and has a managed identity known to AAD.
-
-For both types of access, the application authenticates with Azure AD and acquires a token to grant access to a resource through the REST API.
-
-## Key vault authorization
-
-For authorization, the management plane uses role-based access control (RBAC) and includes a built-in role **Key Vault Contributor** that provides access to management features of key vaults, but doesn't allow access to the key vault data. This is the recommended role to use - there's also a **Contributor** role which includes full administration rights - including the ability to grant access to the data plane.
-
-The data plane uses a Key Vault access policy. A Key Vault access policy is a permission set assigned to a user or managed identity to read, write, and/or delete secrets and keys. You can create an access policy using the CLI, REST API, or Azure portal as shown below.
+Reading and writing data in the Key Vault uses a separate Key Vault _access policy_. A Key Vault access policy is a permission set assigned to a user or managed identity to read, write, and/or delete secrets and keys. You can create an access policy using the CLI, REST API, or Azure portal as shown below.
 
 ![Screenshot showing the Add KeyVault policy screen in the Azure portal](../media/3-add-key-vault-policy.png)
 
 The system has a list of predefined management options which define the permissions allowed for this policy - here we have **Key, Secret, & Certificate Management** selected which is appropriate to manage secrets in the Key Vault. You can then customize the permissions as desired by changing the **Key permissions** entries. For example, we could adjust the permissions to only allow _read_ operations:
 
 ![Screenshot showing the permission list cut down to read only in the Azure portal](../media/3-permissions.png)
+
+Developers will usually only need `Get` and `List` permissions to a development-environment vault. A lead or senior developer will need full permissions to the vault to change and add secrets when necessary. Full permissions to production-environment vaults are typically reserved for senior operations staff. For applications, often only `Get` permissions are required as they will just need to retrieve secrets.
 
 ## Restricting network access
 

@@ -8,5 +8,5 @@ Read Azure Key Vault documentation on topics we covered in this module.
 
 - [What is Azure Key Vault?](https://docs.microsoft.com/azure/key-vault/key-vault-overview)
 - [Azure Key Vault pricing](https://azure.microsoft.com/pricing/details/key-vault/)
-- [Azure Key Vault PowerShell cmdlets](https://docs.microsoft.com/powershell/module/azurerm.keyvault/)
 - [Certificate operations](https://docs.microsoft.com/rest/api/keyvault/certificate-operations)
+- [Implementing bring your own key (BYOK) for Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-hsm-protected-keys)

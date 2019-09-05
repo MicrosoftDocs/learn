@@ -1,3 +1,4 @@
+To get some quick experience with Azure Key Vault, let's create a new Key Vault and do the most basic operation available: store a secret. Creating a vault in the Azure portal requires no initial configuration. Your signed-in user identity is automatically granted the full set of secret management permissions and you can start adding secrets immediately. Once you have a vault, adding and managing secrets can be done from any Azure administrative interface, including the Azure portal, the Azure CLI, and Azure PowerShell.
 
 ## Create a new Azure Key Vault
 
@@ -46,7 +47,7 @@ You can create and retrieve secrets from the Azure Key Vault as long as you are 
 Get-AzureRmKeyVault
 ```
 
-This will return the created vault:
+This will return the created vault with the name **VaultamortDiary**.
 
 ```output
 Vault Name          : VaultamortDiary
@@ -55,7 +56,7 @@ Location            : northcentralus
 Resource ID         : /subscriptions/xyz/providers/Microsoft.KeyVault/vaults/VaultamortDiary
 ```
 
-With the name of the vault and the key, you can retrieve the value:
+With the name of the vault and the key, you can retrieve the secret value:
 
 ```powershell
 (Get-AzKeyVaultSecret -vaultName "VaultamortDiary" -name "HiddenLocation").SecretValueText
@@ -67,4 +68,5 @@ This returns our set value:
 Third star on the right
 ```
 
-The module [Manage secrets in your server apps with Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/) shows how do use the Azure CLI and various programming languages to create Key Vaults, and set and retrieve secrets.
+> [!NOTE]
+> The module [Manage secrets in your server apps with Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/) shows how do use the Azure CLI and various programming languages to create Key Vaults, and set and retrieve secrets.
