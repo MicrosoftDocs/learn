@@ -117,7 +117,7 @@ Now you can use Network Watcher to troubleshoot connectivity between two VMs in 
 
     [![](../media/3-network-topology.png "A screenshot that shows the exercise network topology")](../media/3-network-topology-expanded-1.png#lightbox)
 
-## Use connection monitor to run tests from the back end to the front end
+## Use Connection Monitor to run tests from the back end to the front end
 
 The topology appears to be correct. Let's set up some tests in Connection Monitor to get more information. Start by creating two tests from the back-end VM to the front-end VM:
 
