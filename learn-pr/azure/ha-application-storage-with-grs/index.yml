@@ -12,9 +12,9 @@ title: Make your application storage highly available with read-access geo-redun
 summary: In this module, you learn how to make your application storage highly available by ensuring that you can fail over resources if there's an Azure region failure.
 abstract: |
   In this module, you will:
-  - Identify the features of RA-GRS storage. 
-  - Identify the application design considerations when you use RA-GRS. 
-  - Implement the Circuit Breaker pattern in a sample application. 
+  - Identify the features of RA-GRS storage
+  - Identify the application design considerations when you use RA-GRS
+  - Implement the Circuit Breaker pattern in a sample application 
 prerequisites: |
   - Basic knowledge of Azure storage accounts
   - Familiarity with C#
