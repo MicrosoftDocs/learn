@@ -10,7 +10,7 @@
 
 Ensuring that your organization's business leaders are well prepared and educated on cloud concepts, terminology, and business value is critical to a successful cloud adoption journey. A solid foundation among business leaders and teams within the organization creates a healthy, connected organization. You want to avoid silos and obstacles while you prepare the organization for success in their cloud adoption journey.
 
-IT staff members might feel anxious about their roles and positions as they realize that a different set of skills is needed to support cloud solutions. Agile employees who explore and learn new cloud technologies can lead the adoption of cloud services and help an organization understand and embrace the associated changes.
+IT staff members might feel anxious about their roles and positions as they realize that a different set of skills is needed to support cloud solutions. However, agile employees are a great asset to the adoption. They explore and learn new cloud technologies and can lead the adoption of cloud services. They also help an organization understand and embrace the associated changes.
 
 Microsoft and partners offer a variety of options to help organizations develop these strategic skills with Microsoft Azure services. Training resources are available on Microsoft Learn to make this transition even easier. You can access specific learning resources for business users, solution architects, cloud administrators, and developers.
 
