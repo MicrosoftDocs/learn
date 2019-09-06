@@ -4,8 +4,6 @@ Azure provides services that can help transform the way your organization delive
 
 ## Clean up resources
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
-
 1. In Azure, select **Resource groups** on the left.
 
 1. Find the **learn-wordpress-blog-rg** resource group, or whatever resource group name you used,  and select it.
