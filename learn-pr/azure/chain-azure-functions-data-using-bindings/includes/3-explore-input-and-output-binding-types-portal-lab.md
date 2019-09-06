@@ -66,7 +66,7 @@ Now that we have a function app, it's time to create a function. A function is a
 1. Add the query string value `&name=Azure` to the end of this URL, and then press Enter on your keyboard to execute the request. You should see a response similar to the following response returned by the function displayed in your browser.
 
     ```output
-    <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">Hello Azure</string>
+    Hello Azure
     ```
 
 As you can see from this exercise so far, you have to select a trigger type when you create a function. Every function has one and only one trigger. In this example, we're using an HTTP trigger, which means that our function starts when it receives an HTTP request. The default implementation, shown in the following screenshot in JavaScript, responds with the value of the parameter *name* it received in the query string or body of the request. If no string was provided, the function responds with a message that asks whomever is calling to supply a name value.
