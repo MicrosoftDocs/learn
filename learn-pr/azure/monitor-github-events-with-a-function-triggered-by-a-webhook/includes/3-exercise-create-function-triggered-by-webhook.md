@@ -1,6 +1,4 @@
-Imagine that your IT department's management want to monitor the Company's Technology Wiki, and you've decided that an Azure Function will need to be triggered by Wiki updates for this to happen.
-
-In this exercise, you'll create an Azure Function, and trigger the function using a webhook.
+In this first exercise, you'll create your code to parse the Wiki event messages in Azure Functions. You'll configure your function to run when a webhook message is received.
 
 ## Create a Function App
 
@@ -8,7 +6,7 @@ In this exercise, you'll create an Azure Function, and trigger the function usin
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your MS Learn account.
 
-1. Select the **+ Create a resource** button found on the upper left-hand corner of the Azure portal, click **Compute**, and then click **Function App**.
+1. Select the **+ Create a resource** button found on the upper left-hand corner of the Azure portal, then select **Compute** > **Function App**.
 
 1. On the **Function App** page, enter the following settings:
 
