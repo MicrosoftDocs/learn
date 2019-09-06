@@ -133,7 +133,7 @@ For the app to run, you need to add the connection settings for your cloud servi
 1. Return to Visual Studio Code, open a third terminal instance, and enter the following command to update the stock prices. Immediately return to the browser and observe that the values for stock ABC change within a few seconds.
 
     ```bash
-    npm run update
+    npm run update-data
     ```
 
 When you're done, stop the running processes.
