@@ -113,7 +113,7 @@ If you scale up the VM and the CPU is still running at above 95 percent, is this
 
 #### Memory bottlenecks
 
-You can view the amount of memory that the VM use. Logs will help you understand the trend and if it maps to the time at which you see issues. You should not have less than 100 MB of available memory at any time. Watch out for the following trends:
+You can view the amount of memory that the VM uses. Logs will help you understand the trend and if it maps to the time at which you see issues. You should not have less than 100 MB of available memory at any time. Watch out for the following trends:
 
 - **Spike up and constant consumption**. High memory utilization might not be the cause of bad performance. Some applications, such as relational database engines, are memory intensive by design. But if there are multiple memory-hungry applications, you might see bad performance because memory contention causes trimming and paging to disk. These processes will cause a negative performance impact.
 - **Steadily increasing consumption**. This trend might be an application *warming up*. It's common when database engines start up. However, it might also be a sign of a memory leak in an application. 

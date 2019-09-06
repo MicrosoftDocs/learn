@@ -90,7 +90,7 @@ When a VM sends a packet to a destination, it might take multiple hops in its jo
 
 With the next hop tool, you can determine how a packet gets from a VM to any destination. You specify the source VM, source network adapter, source IP address, and destination IP address. The tool then determines the packet's destination. You can use this tool to diagnose problems caused by incorrect routing tables.
 
-### What is the Security group view tool?
+### What is the security group view tool?
 
 The security group view tool in Network Watcher displays all the effective NSG rules applied to a network interface.
 
@@ -108,7 +108,7 @@ You use the packet capture tool to record all of the packets sent to and from a 
 
 To use this tool, the VM that you select must have the packet capture VM extension installed and running. This step happens automatically when you start a packet capture session.
 
-The default usage limit is 100 packet capture sessions per region, and the maximum limit is 10,000. These limits are for the number of sessions only, not saved captures. You can save packets captured in Azure Storage or locally on your computer.
+The default usage limit is 100 packet capture sessions per region, and the overall limit is 10,000. These limits are for the number of sessions only, not saved captures. You can save packets captured in Azure Storage or locally on your computer.
 
 ### What is the connection troubleshoot tool?
 
@@ -159,7 +159,7 @@ To troubleshoot this issue, use the IP flow verify tool. This tool lets you spec
 
 In this case, use IP flow verify to specify the VM's IP address and the RDP port 3389. Then specify the remote VM's IP address and port. Choose the TCP protocol and then select **Check**.
 
-Suppose that the result shows that access was denied because of the NSG rule **DefaultInboundDenyAll**. The solution is to change the NSG rule.
+Suppose the result shows that access was denied because of the NSG rule **DefaultInboundDenyAll**. The solution is to change the NSG rule.
 
 ### A VPN connection isn't working
 

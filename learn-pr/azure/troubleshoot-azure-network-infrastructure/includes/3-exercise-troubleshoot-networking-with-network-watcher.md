@@ -84,7 +84,7 @@ Let's start by creating the problematic infrastructure, which includes a configu
           --description "Deny from specific IP address ranges on 80, 443 and 3389."
     ```
 
-1. Run this command to associate a network security group to a subnet:
+1. Run this command to associate a network security group with a subnet:
 
     ```bash
         az network vnet subnet update --resource-group <rgn>[sandbox resource group name]</rgn> \
@@ -132,7 +132,7 @@ The topology appears to be correct. Let's set up some tests in Connection Monito
     | Virtual machine | BackendVM |
     | Destination virtual machine | FrontendVM |
     | Port | 3389 |
-    | Probing interval | 30 seconds |
+    | Probing interval (seconds) | 30 |
     | | |
 
     ![Back-to-front RDP test](../media/3-back-to-front-rdp-test.png)
@@ -146,7 +146,7 @@ The topology appears to be correct. Let's set up some tests in Connection Monito
     | Virtual machine | BackendVM |
     | Destination virtual machine | FrontendVM |
     | Port | 80 |
-    | Probing interval | 30 seconds |
+    | Probing interval (seconds) | 30 |
     | | |
 
 1. In the list of tests, select **Back-to-front-RDP-test**, select the ellipsis (**...**), and then select **Start**.
@@ -174,7 +174,7 @@ Run the same tests in the opposite direction:
     | Virtual machine | FrontendVM |
     | Destination virtual machine | BackendVM |
     | Port | 3389 |
-    | Probing interval | 30 seconds |
+    | Probing interval (seconds) | 30 |
     | | |
 
 1. Select **+ Add**. Configure a second test with these values, and then select **Add**:
@@ -186,7 +186,7 @@ Run the same tests in the opposite direction:
     | Virtual machine | FrontendVM |
     | Destination virtual machine | BackendVM |
     | Port | 80 |
-    | Probing interval | 30 seconds |
+    | Probing interval (seconds) | 30 |
     | | |
 
 1. In the list of tests, select **Front-to-back-RDP-test**, select **...**, and then select **Start**.
