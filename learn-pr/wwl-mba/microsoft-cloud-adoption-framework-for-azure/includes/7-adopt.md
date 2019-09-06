@@ -139,7 +139,7 @@ Replicate on-premises functionality by using cloud native technology.
 
 **Optimize**
 
-Balance performance and price, and deliver the right experience within budget.
+Balance performance and price, which delivers the right experience within budget.
 
 :::column-end:::
 :::row-end:::
