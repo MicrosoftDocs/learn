@@ -33,7 +33,7 @@ Organizations find different triggers to adopt new technologies like Azure. Some
 Some common migration and innovation triggers include:
 
 - Preparation for new technical capabilities
-- Adjustments to scale to meet market or geographic demands
+- Gaining scale to meet market or geographic demands
 - Cost savings
 - Reduction in vendor or technical complexity
 - Optimization of internal operations
