@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-app-scalability-resiliency-with-load-balancer.2-load-balancer-features
+metadata:
+  title: Azure Load Balancer features and capabilities
+  description: Azure Load Balancer features and capabilities
+  ms.date: 08/31/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Azure Load Balancer features and capabilities
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-load-balancer-features.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the default distribution type for traffic through a load balancer?"
+    choices:
+    - content: "Source IP affinity"
+      isCorrect: false
+      explanation: "Five-tuple hash is the default."
+    - content: "Five-tuple hash"
+      isCorrect: true
+      explanation: "Five-tuple hash is the default."
+    - content: "Three-tuple hash"
+      isCorrect: false
+      explanation: "Five-tuple hash is the default."
+  - content: "What is the main advantage of an availability set?"
+    choices:
+    - content: "It allows virtual machines to be available across data center failures."
+      isCorrect: false
+      explanation: "Availability zones, not sets, provide availability across data center failures."
+    - content: "It allows virtual machines to be available across physical server failures."
+      isCorrect: true
+      explanation: "Availabilty sets allow virtual machines to remain available when a physical server fails."
+    - content: "It allows virtual machines to be grouped into logical categories."
+      isCorrect: false
+      explanation: "While this capability is a benefit, it is not the main reason for availability sets."

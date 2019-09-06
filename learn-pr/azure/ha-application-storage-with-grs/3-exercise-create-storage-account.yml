@@ -2,8 +2,8 @@
 uid: learn.ha-application-storage-with-grs.3-exercise-create-storage-account
 metadata:
   title: Exercise - Create an Azure storage account
-  description: In this exercise learn how to prepare the foundations for a highly available application by creating an Azure storage account.
-  ms.date: 05/21/19
+  description: In this exercise, you learn how to prepare the foundations for a highly available application by creating an Azure storage account.
+  ms.date: 09/03/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
