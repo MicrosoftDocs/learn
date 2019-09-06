@@ -1,3 +1,5 @@
+[!include[](../../../includes/azure-sandbox-activate.md)]
+
 Before you begin, make sure you have the following software installed on your machine:
 
 - [Node.js](https://nodejs.org/download/)
@@ -5,9 +7,6 @@ Before you begin, make sure you have the following software installed on your ma
 - [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) (min. version 2.6.666)
 - [Azure Functions extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
 - [Azure Storage extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestorage)
-
-
-[!include[](../../../includes/azure-sandbox-activate.md)]
 
 ## Download sample app code
 
