@@ -27,7 +27,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
 1. Use Git to download the sample code. Open a Git command prompt window, and run the following command to download the circuit breaker sample application to your computer. Replace *\<folder>* with a convenient location on your hard drive:
 
-    ```cmd
+    ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-ha-application-storage-with-grs <folder>
     ```
 
@@ -48,7 +48,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 1. Switch to the Cloud Shell window in the browser.
 1. To obtain the connection string for the storage account you created in the previous exercise, run the following command:
 
-    ```bash
+    ```azurecli
         az storage account show-connection-string \
             --name $STORAGEACCT \
             --resource-group <rgn>[Sandbox resource group]</rgn>
@@ -62,7 +62,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
 1. In the `Program` class, locate the following statement:
 
-    ```C#
+    ```csharp
         static string storageConnectionString = "<Add your storage connection string here>";
     ```
 
@@ -70,7 +70,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
 1. Scroll down to the start of the `RunCircuitBreakerAsync` method:
 
-    ```C#
+    ```csharp
         /// <summary>
         /// Main method. Sets up the objects needed, then performs a loop
         ///   to perform a blob operation repeatedly, responding to the Retry and Response Received events.
@@ -80,7 +80,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
 1. In this method, locate the following block of code:
 
-    ```C#
+    ```csharp
         // Define a reference to the actual blob.
         CloudBlockBlob blockBlob = null;
     
@@ -93,7 +93,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
 1. Examine the block of code that follows these statements:
 
-    ```C#
+    ```csharp
         // Set the location mode to secondary so you can check just the secondary data center.
         BlobRequestOptions options = new BlobRequestOptions();
         options.LocationMode = LocationMode.SecondaryOnly;
@@ -127,7 +127,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
 1. Examine the following statement:
 
-    ```C#
+    ```csharp
         // Set the starting LocationMode to PrimaryThenSecondary. 
         // Note that the default is PrimaryOnly. 
         // You must have RA-GRS enabled to use this.
@@ -138,7 +138,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
 1. Scroll down to the following block of code:
 
-    ```C#
+    ```csharp
     for (int i = 0; i < 1000; i++)
     {
             if (blobClient.DefaultRequestOptions.LocationMode == LocationMode.SecondaryOnly)
@@ -156,7 +156,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
 1. Examine the following block. Some statements have been omitted, to focus on the logic of this code:
 
-    ```C#
+    ```csharp
         // Set up an operation context for the downloading the blob.
         OperationContext operationContext = new OperationContext();
 
@@ -191,7 +191,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
 1. Scroll down to the **OperationContextRetrying** method:
 
-    ```C#
+    ```csharp
     /// Retry Event handler 
     /// If it has retried more times than allowed, and it's not already pointed to the secondary location,
     ///   flip it to the secondary location and reset the retry count.
@@ -223,7 +223,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
 1. Find the `OperationContextRequestCompleted` method:
 
-    ```C#
+    ```csharp
     /// RequestCompleted Event handler 
     /// If it's not pointing at the secondary location, let it go through. It either was successful 
     ///   or it failed with a nonretryable event (which we hope is temporary).
@@ -266,7 +266,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
 1. Search for the **OnBeforeResponse** function. Add the following code to this function, after the existing statements in this function. Replace *\<storage account name\>* with the name of the storage account that you created in the previous exercise:
 
-    ```JavaScript
+    ```javascript
     if (oSession.hostname == "<storage account name>.blob.core.windows.net") {
         oSession.responseCode = 503;
     }

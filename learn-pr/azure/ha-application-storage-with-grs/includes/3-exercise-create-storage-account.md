@@ -31,7 +31,7 @@ In this step, you create a storage account. The storage account hosts the health
 
 1. Verify the replication status by running the following command:
 
-    ```bash
+    ```azurecli
         az storage account show \
             --name $STORAGEACCT \
             --query "[statusOfPrimary, statusOfSecondary]"
@@ -41,10 +41,9 @@ In this step, you create a storage account. The storage account hosts the health
 
 ## Retrieve the connection string for the storage account
 
-1. Switch to the Cloud Shell window in the browser.
 1. To obtain the connection string for the storage account that you created in the previous exercise, run the following command:
 
-    ```bash
+    ```azurecli
         az storage account show-connection-string \
             --name $STORAGEACCT \
             --resource-group <rgn>[Sandbox resource group]</rgn>
@@ -56,7 +55,7 @@ In this step, you create a storage account. The storage account hosts the health
 
 In this step, you use Cloud Shell to view the replication status of your storage account. To view the status of the primary and secondary locations, run the following command:
 
-```bash
+```azurecli
     az storage account show \
         --name $STORAGEACCT \
         --expand geoReplicationStats \
