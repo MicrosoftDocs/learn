@@ -26,16 +26,6 @@ The following steps associate the free Azure subscription created for you with V
 
 ![Add tenant ID to Visual Studio Code Azure extension configuration](../media/serverless-app-vs-code-tenant.png)
 
-### Enable Azure Functions advanced creation
-
-1. On Windows or Linux, select **File > Preferences > Settings**. On macOS, select **Code > Preferences > Settings**.
-
-1. Navigate through **User Settings > Extensions > Azure Functions**
-
-1. Check the checkbox for **Azure Function: Advanced Creation**
-
-    ![Enable advanced Functions creation](../media/serverless-app-extension-adv-creation.png)
-
 ### Sign out and back in
 
 Now that you've made these changes, you need to sign out and back into the Azure extension.
