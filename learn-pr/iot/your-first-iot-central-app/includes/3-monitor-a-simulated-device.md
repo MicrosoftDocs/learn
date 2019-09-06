@@ -37,7 +37,7 @@ Complete validation of the device template will not be possible until you have s
 
 ## Create an elementary dashboard
 
-In this final exercise for this module, we create a simple dashboard. We are not going to reuse this dashboard later on in this series of modules, as we are going to create a more specific dashboard, for all devices, in the third of the three modules. However, some experience of dashboards would be good!
+In this final exercise for this unit, we create a dashboard to monitor a single device. Later on in this series of units, we are going to create a more specific dashboard for all devices. The two processes are quite similar, so the experience you gain here will be useful in creating any IoT dashboard.
 
 1. Click on **Dashboard** in the left-hand menu, then select **New** top-right of the screen.
 
@@ -49,4 +49,4 @@ In this final exercise for this module, we create a simple dashboard. We are not
 
 4. Add any other elements to the dashboard that pique your interest. The dashboard is an alternative method of viewing device data in IoT Central, to the device views described above.
 
-When you feel you have gained some insights into the workings of a dashboard, let's wrap up this first module.
+When you feel you have gained some insights into the workings of a dashboard, let's take a break and test your knowledge so far with a quiz!

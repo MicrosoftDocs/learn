@@ -19,11 +19,11 @@ In this unit we will create a device template for a refrigerated truck. When we 
 5. Click on the template name when it is created, and note that a template consists of **Measurements**, **Settings**, **Properties**, **Commands**, **Rules**, and a **Dashboard**. Our refrigerated truck will need entries in most of these.
 
   > [!NOTE]
-  > We are creating this template with all we need for the modules that follow this one, so the purpose of these entries might not be immediately obvious, but all should become clear as you work through this set of modules. It is possible to complete a template, then come back to it and add more entries, but this can involve managing multiple _versions_ of a template, which we will avoid in this first set of Learn modules.
+  > We are creating this template with all we need for the units that follow this one. If the purpose of these entries is not immediately obvious, it should become clear as you work through this set of units. It is possible to complete a template, then come back to it and add more entries later, but this can involve managing multiple _versions_ of a template, which is a complexity we will avoid in this first Learn module.
 
 ## Measurements
 
-_Measurements_ are data transmitted by the device, and covers four types of values: Telemetry, State, Event, and Location. Our scenario requires at least one of each of these for the refrigerated truck. We need to go through the measurements carefully, and enter all the required data. The most important entry is the **Field Name**. Make sure to enter this accurately, as this is the name that will be used when devices communicate values to the IoT Central app. When we come to write code in the next module, the reference in the code and the **Field Name** must be an exact match.
+_Measurements_ are data transmitted by the device, and covers four types of values: Telemetry, State, Event, and Location. Our scenario requires at least one of each of these for the refrigerated truck. We need to go through the measurements carefully, and enter all the required data. The most important entry is the **Field Name**. Make sure to enter this accurately, as this is the name that will be used when devices communicate values to the IoT Central app. When we come to write code in some of the following units, the reference in the code and the **Field Name** _must_ be an exact match.
 
 ### Telemetry
 
@@ -41,11 +41,11 @@ Notice that a minimum and maximum value are specified for a telemetry value, the
 
 States are important, they let the operator know what is going on. A state in IoT Central is a name associated with any number of values. In addition, you get to choose a color to associate with each value, which can make identifying what is going on (in particular, changes in state), much easier to identify in a visual display. It is easy to see why color is important, for example a "go" state might be a green color, a "failed" state a red or darker color, and so on.
 
-1. Use the **Measurements** options to add a state for the truck's refrigerated contents: one of empty, full, and melting.
+1. Use the **Measurements** options to add a state for the truck's refrigerated contents: one of _empty_, _full_, and _melting_.
 
 ![Create contents state for the simulated device](../media/refrigerated-trucks-contents.png)
 
-2. To add some uncertainty to our simulation, let's add a failure state for the cooling system, in addition to whether the system is on or off. If the cooling system fails, as you will see in the next module, the chances of the contents melting increase considerably! Add on, off and failed entries for a cooling system.
+2. To add some uncertainty to our simulation, let's add a failure state for the cooling system, in addition to whether the system is on or off. If the cooling system fails, as you will see in the following units, the chances of the contents melting increase considerably! Add _on_, _off_ and _failed_ entries for a cooling system.
 
 ![Create cooling system state for the simulated device](../media/refrigerated-trucks-cooling.png)
 
@@ -68,7 +68,7 @@ One possible event a device might trigger is a conflicting command. An example m
 ![Create customer event for the simulated device](../media/refrigerated-trucks-customer.png)
 
   > [!NOTE]
-  > One reason we add this event is to keep track of which truck is going to which customer. In a later module we implement multiple trucks and a single dashboard to monitor them, and having this event helps provide a record of what is going on.
+  > One reason we add this event is to keep track of which truck is going to which customer. In a later unit we implement multiple trucks and a single dashboard to monitor them, and having this event helps provide a record of what is going on.
 
 ### Location
 

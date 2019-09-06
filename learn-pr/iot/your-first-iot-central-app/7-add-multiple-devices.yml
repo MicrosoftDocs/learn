@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.add-a-real-device-to-iot-central.7-add-multiple-devices
+metadata:
+  title: Add multiple devices
+  description: Create connection strings, and add code to your Node.JS app, to support a fleet of refrigerated trucks.
+  ms.date: 09/01/2019
+  author: PeterTurcan
+  ms.author: v-pettur
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Add multiple devices
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-add-multiple-devices.md)]
