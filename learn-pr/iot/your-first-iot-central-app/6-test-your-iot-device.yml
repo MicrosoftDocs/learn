@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.add-a-real-device-to-iot-central.4-test-your-iot-device
+uid: learn.add-a-real-device-to-iot-central.6-test-your-iot-device
 metadata:
   title: Test your IoT Central device
-  description: Create a Node.JS app simulating a real refrigerated truck, and communicating with Azure Maps and Azure IoT Central.
+  description: Test a device by giving it commands and monitoring the results on the dashboard.
   ms.date: 09/01/2019
   author: PeterTurcan
   ms.author: v-pettur
@@ -12,4 +12,4 @@ metadata:
 title: Test your IoT Central device
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-test-your-iot-device.md)]
+  [!include[](includes/6-test-your-iot-device.md)]

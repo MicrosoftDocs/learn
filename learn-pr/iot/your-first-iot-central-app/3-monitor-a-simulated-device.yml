@@ -2,7 +2,7 @@
 uid: learn.your-first-iot-central-app.3-monitor-a-simulated-device
 metadata:
   title: Monitor a simulated device
-  description: Monitor the automatically created simulated device in the Azure IoT Central web portal.
+  description: Monitor the automatically created simulated device in the Azure IoT Central web portal. Then test your knowledge so far.
   ms.date: 09/01/2019
   author: PeterTurcan
   ms.author: v-pettur
@@ -13,3 +13,60 @@ title: Monitor a simulated device
 durationInMinutes: 10
 content: |
   [!include[](includes/3-monitor-a-simulated-device.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'What are all the types of Measurements in a Device Template?'
+    choices: 
+    - content: 'Telemetry, State, Settings, Properties'
+      isCorrect: false
+      explanation: Settings and Properties are not Measurements.
+    - content: 'Telemetry, State, Event, Location'
+      isCorrect: true
+      explanation: Correct.
+    - content: 'Telemetry, State, Event'
+      isCorrect: false
+      explanation: These are Measurements, but not all of them.
+
+  - content: 'What is the purpose of the Field Name attribute that appears in all device template elements?'
+    choices: 
+    - content: 'To appear in the IoT Central portal UI, naming the element being displayed.'
+      isCorrect: false
+      explanation: This is the purpose of the Display Name.
+    - content: 'To act as a description of the element.'
+      isCorrect: false
+      explanation: Sometimes a description field is available, but Field Name is not the name this field.
+    - content: 'To match the entries in the code running on the IoT device, to enable communications.'
+      isCorrect: true
+      explanation: Correct, Field Names need to be referenced in the code running on the device.
+    - content: 'To appear in tooltip type text boxes when the operator clicks on an element in the app UI.'
+      isCorrect: false
+      explanation: Incorrect.
+
+  - content: 'What is the difference in concept between a device template Setting and a device template Property?'
+    choices: 
+    - content: 'Properties and Settings can be used interchangeably.'
+      isCorrect: false
+      explanation: Incorrect, Settings and Commands have some similarities, Properties are not sent by the cloud.
+    - content: 'Properties are communicated from the cloud to the device, Settings are communicated from the device to the cloud.'
+      isCorrect: false
+      explanation: Incorrect, properties are communicated from the device to the cloud, and Settings from the cloud to the device.
+    - content: 'A property is typically communicated once from the device to the cloud, and Settings are typically communicated from the cloud to the device when changes are needed.'
+      isCorrect: true
+      explanation: Correct, and a Setting must have a corresponding value.
+
+  - content: 'What are represented by diamond shaped icons in the chart view for a device?'
+    choices: 
+    - content: 'Events'
+      isCorrect: true
+      explanation: Correct, and clicking on the icons will reveal more details of the event.
+    - content: 'States'
+      isCorrect: false
+      explanation: State is shown in the bar graphs.
+    - content: 'Telemetry'
+      isCorrect: false
+      explanation: Telemetry is shown in the line chart.
+    - content: 'Locations'
+      isCorrect: false
+      explanation: Location is shown on the map view.

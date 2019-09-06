@@ -2,7 +2,7 @@
 uid: learn.your-first-iot-central-app.2-create-a-device-template
 metadata:
   title: Create a device template
-  description: Create an Azure IoT Central device template
+  description: Create an Azure IoT Central device template. In this scenario, for a refrigerated truck.
   ms.date: 09/01/2019
   author: PeterTurcan
   ms.author: v-pettur
