@@ -2,9 +2,19 @@ Nice work! With your first website under your belt, you now have a sense of how 
 
 Azure provides services that can help transform the way your organization delivers new features to your users in ways you simply can't do without the power of the cloud.
 
-![A graduation cap representing the successful start of your learning journey](../media/7-heading.png)
+## Clean up resources
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
+
+1. In Azure, select **Resource groups** on the left.
+
+1. Find the **learn-wordpress-blog-rg** resource group, or whatever resource group name you used,  and select it.
+
+1. In the **Overview** tab of the resource group, select **Delete resource group**.
+
+1. This opens a new dialog box. Type the name of the resource group again, and then select **Delete**. This will delete all of the resources we created in this module.
+
+![A graduation cap representing the successful start of your learning journey](../media/7-heading.png)
 
 ## Continue your Azure journey
 
