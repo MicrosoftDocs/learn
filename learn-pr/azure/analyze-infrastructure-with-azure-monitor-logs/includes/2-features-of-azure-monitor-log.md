@@ -6,7 +6,7 @@ Azure Monitor collects two fundamental types of data: logs and metrics. Logs con
 
 The following diagram gives a high-level view of Azure Monitor. On the left are the sources of monitoring data, which include Azure, operating systems, and custom sources. At the center of the diagram, are the data stores for metrics and logs. Metrics and logs are the two fundamental types of data used by Azure Monitor. On the right, are the different functions that Azure Monitor performs with this collected data such as analysis, alerting, and streaming to external systems.
 
-![Azure Monitor architecture.](../media/2-azure-monitor.png)
+![Azure Monitor architecture.](../media/2-azure-monitor.svg)
 
 Azure Monitor collects data automatically from a range of components. For example:
 
