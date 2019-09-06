@@ -26,7 +26,7 @@ products:
 - azure
 units:
 - learn.analyze-infrastructure-with-azure-monitor-logs.1-introduction
-- learn.analyze-infrastructure-with-azure-monitor-logs.2-features-of-azure-monitor-log
+- learn.analyze-infrastructure-with-azure-monitor-logs.2-features-azure-monitor-log
 - learn.analyze-infrastructure-with-azure-monitor-logs.3-create-log-queries
 - learn.analyze-infrastructure-with-azure-monitor-logs.4-exercise-create-log-queries
 - learn.analyze-infrastructure-with-azure-monitor-logs.5-summary

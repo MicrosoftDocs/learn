@@ -14,7 +14,7 @@ You can find the Log Analytics tool in the Azure portal and use it to run sample
 
     Here you can type your query and see the output.
 
-    ![Screenshot of the Azure Monitor in the portal.](../media/2-azure-monitor-portal-query-pane.png)
+    ![Screenshot of the Azure Monitor in the portal.](../media/3-azure-monitor-portal-query-pane.png)
 
 ## How to write queries with the Kusto language
 

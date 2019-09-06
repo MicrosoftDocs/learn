@@ -3,7 +3,7 @@ In this module, you learned how to use Azure Monitor. You looked at Azure Monito
 You saw how to:
 
 - Explore the types of data collected by Azure Monitor.
-- Create Azure Monitor log queries to extract information from the log dat
+- Create Azure Monitor log queries to extract information from the log data.
 
 You can now use Azure Monitor in your environment to analyze your environment and troubleshoot issues.
 

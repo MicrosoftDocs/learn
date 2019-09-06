@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.analyze-infrastructure-with-azure-monitor-logs.2-features-of-azure-monitor-log
+uid: learn.analyze-infrastructure-with-azure-monitor-logs.2-features-azure-monitor-log
 metadata:
   title: Features of Azure Monitor logs
   description: Features of Azure Monitor logs
@@ -12,7 +12,7 @@ metadata:
 title: Features of Azure Monitor logs
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-features-of-azure-monitor-log.md)]
+  [!include[](includes/2-features-azure-monitor-log.md)]
 quiz:
   title: Check your knowledge
   questions:
