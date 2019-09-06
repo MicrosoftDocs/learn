@@ -1,6 +1,6 @@
 The Azure portal offers a convenient user interface to search, install, and access the various Azure offerings available. You'll find, however, some of these tasks are repetitive and are candidates for automation using a command-line enabled interface.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 ## What is Azure Cloud Shell?
 
@@ -15,7 +15,9 @@ Suppose you have several websites deployed and want to stop or start each of the
 > [!IMPORTANT]
 > This exercise uses the WordPress website you created in the  **Exercise - Create a Website** unit. Please make sure you've completed that exercise before continuing.
 
-Accessing the Cloud Shell from within the Azure portal is done using the Cloud Shell icon. Click this icon to launch the interactive Cloud and when prompted, choose the Bash command-line experience. For this exercise, we'll use the Cloud Shell experience as part of our sandbox implementation.
+Accessing the Cloud Shell from within the Azure portal is done using the Cloud Shell icon. Click this icon to launch the interactive Cloud and when prompted, choose the Bash command-line experience.
+
+![Screenshot showing icon to access cloud shell](../media/6-access-cloud-shell.png)
 
 [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
@@ -28,30 +30,30 @@ Accessing the Cloud Shell from within the Azure portal is done using the Cloud S
     az account list --output table
     ```
 
-    Copy the `SubscriptionId` that matches the sandbox subscription we're using for MS Learn.
+    Copy the `SubscriptionId` that matches the Azure subscription you're using to run the exercises.
 
 1. Run the `az account set --subscription xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx` to set the subscription context.
 
-1. Recall that we used a pre-created resource group called **<rgn>[Resource Group Name]</rgn>** when we created our website. However, if you ever need to list all the resource groups in a subscription, then you'll run the `az list groups` command.
+1. Recall that we used a resource group called **learn-wordpress-blog-rg** when we created our website. However, if you ever need to list all the resource groups in a subscription, then you'll run the `az list groups` command.
 
     ```bash
     az group list --output table
     ```
 
-    Copy the resource group you want to inspect, in our case **<rgn>[Resource Group Name]</rgn>**.
+    Copy the resource group you want to inspect, in our case **learn-wordpress-blog-rg**.
 
-1. Next, we'll list all the resources in the **<rgn>[Resource Group Name]</rgn>**. Run the following command.
+1. Next, we'll list all the resources in the **learn-wordpress-blog-rg**. Run the following command.
 
 
     ```bash
-    az resource list --resource-group <rgn>[Resource Group Name]</rgn> --resource-type Microsoft.Web/sites
+    az resource list --resource-group learn-wordpress-blog-rg --resource-type Microsoft.Web/sites
     ```
 
     The command will return a list of resources. By specifying, --resource-type` we can filter the result to include only the resource information related to websites.
 
     ```bash
     {
-    "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/resourceGroups/Learn-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/providers/Microsoft.Web/sites/BlogFor",
+    "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/resourceGroups/learn-wordpress-blog-rg/providers/Microsoft.Web/sites/BlogFor",
     "identity": null,
     "kind": "app",
     "location": "centralus",
@@ -59,7 +61,7 @@ Accessing the Cloud Shell from within the Azure portal is done using the Cloud S
     "name": "BlogFor",
     "plan": null,
     "properties": null,
-    "resourceGroup": "<rgn>[Resource Group Name]</rgn>",
+    "resourceGroup": "learn-wordpress-blog-rg",
     "sku": null,
     "tags": null,
     "type": "Microsoft.Web/sites"
@@ -71,7 +73,7 @@ Accessing the Cloud Shell from within the Azure portal is done using the Cloud S
 1. We'll use the `az webapp stop --id ` to stop the web application running in our App Service. Run the following command to stop the web app. Make sure to replace the example ID value with the value you copied earlier. In our example to command would look like the following snippet:
 
     ```bash
-    az webapp stop --id "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/resourceGroups/Learn-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/providers/Microsoft.Web/sites/BlogFor"
+    az webapp stop --id "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/resourceGroups/learn-wordpress-blog-rg/providers/Microsoft.Web/sites/BlogFor"
     ```
 
 1. Open the website in a new browser tab. You'll find the URL to the site in the overview of the App service in the portal. You'll see a message in your browser that reads:
@@ -81,7 +83,7 @@ Accessing the Cloud Shell from within the Azure portal is done using the Cloud S
 1. Finally, let's restart the web app by running the `az webapp stop --id ` command. Run the following command to start the web app. Make sure to replace the example ID value with the value you copied earlier. In our example to command would look like the following snippet:
 
     ```bash
-    az webapp start --id "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/resourceGroups/Learn-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/providers/Microsoft.Web/sites/BlogFor"
+    az webapp start --id "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/resourceGroups/learn-wordpress-blog-rg/providers/Microsoft.Web/sites/BlogFor"
     ```
 
 1. Switch back to the tab for your website and refresh the page. Your website will be available after a couple of seconds.

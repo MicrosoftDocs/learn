@@ -5,10 +5,9 @@ Let's have a look at some of this information.
 > [!IMPORTANT]
 > This exercise uses the WordPress website you created in the  **Exercise - Create a Website** unit. Please make sure you've completed that exercise before continuing.
 
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
-1. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with your Azure subscription.
 
 1. Click on the **Dashboard** link on the left sidebar to access a list of all resources in your subscription.
 
