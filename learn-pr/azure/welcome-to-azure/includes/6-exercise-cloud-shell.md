@@ -32,7 +32,11 @@ Accessing the Cloud Shell from within the Azure portal is done using the Cloud S
 
     Copy the `SubscriptionId` that matches the Azure subscription you're using to run the exercises.
 
-1. Run the `az account set --subscription xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx` to set the subscription context.
+1. Run the `az account set --subscription` to set the subscription context.
+
+    ```bash
+    az account set --subscription xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx
+    ```
 
 1. Recall that we used a resource group called **learn-wordpress-blog-rg** when we created our website. However, if you ever need to list all the resource groups in a subscription, then you'll run the `az list groups` command.
 
@@ -42,14 +46,16 @@ Accessing the Cloud Shell from within the Azure portal is done using the Cloud S
 
     Copy the resource group you want to inspect, in our case **learn-wordpress-blog-rg**.
 
-1. Next, we'll list all the resources in the **learn-wordpress-blog-rg**. Run the following command.
+1. Next, we'll list all the resources in the **learn-wordpress-blog-rg** using the `az resource list` command. The command will return a list of resources. By specifying, `--resource-type` we can filter the result to include only the resource information related to websites.
+
+    Run the following command.
 
 
     ```bash
     az resource list --resource-group learn-wordpress-blog-rg --resource-type Microsoft.Web/sites
     ```
 
-    The command will return a list of resources. By specifying, --resource-type` we can filter the result to include only the resource information related to websites.
+    Here an example of the command's output::
 
     ```bash
     {
