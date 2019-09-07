@@ -26,16 +26,6 @@ The following steps associate the free Azure subscription created for you with V
 
 ![Add tenant ID to Visual Studio Code Azure extension configuration](../media/serverless-app-vs-code-tenant.png)
 
-### Enable Azure Functions advanced creation
-
-1. On Windows or Linux, select **File > Preferences > Settings**. On macOS, select **Code > Preferences > Settings**.
-
-1. Navigate through **User Settings > Extensions > Azure Functions**
-
-1. Check the checkbox for **Azure Function: Advanced Creation**
-
-    ![Enable advanced Functions creation](../media/serverless-app-extension-adv-creation.png)
-
 ### Sign out and back in
 
 Now that you've made these changes, you need to sign out and back into the Azure extension.
@@ -159,7 +149,7 @@ Now you can make change to the application's data and observe how to the data is
 1. In Visual Studio integrated terminal, enter the following command and watch as the UI is automatically updated.
 
     ```bash
-    npm run update
+    npm run update-data
     ```
 
     ![End state of serverless web app](../media/serverless-app-deployed.png)

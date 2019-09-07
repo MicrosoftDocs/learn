@@ -1,3 +1,5 @@
+[!include[](../../../includes/azure-sandbox-activate.md)]
+
 Before you begin, make sure you have the following software installed on your machine:
 
 - [Node.js](https://nodejs.org/download/)
@@ -5,9 +7,6 @@ Before you begin, make sure you have the following software installed on your ma
 - [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) (min. version 2.6.666)
 - [Azure Functions extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
 - [Azure Storage extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestorage)
-
-
-[!include[](../../../includes/azure-sandbox-activate.md)]
 
 ## Download sample app code
 
@@ -134,7 +133,7 @@ For the app to run, you need to add the connection settings for your cloud servi
 1. Return to Visual Studio Code, open a third terminal instance, and enter the following command to update the stock prices. Immediately return to the browser and observe that the values for stock ABC change within a few seconds.
 
     ```bash
-    npm run update
+    npm run update-data
     ```
 
 When you're done, stop the running processes.
