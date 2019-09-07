@@ -19,8 +19,8 @@ However, microservices architectures can also present challenges, such as:
 
 By adding multiple APIs, functions, and other services to API Management, you can assemble those components into an integrated product that presents a single entry point to client applications. Composing an API using API Management has advantages that include:
 
-- Client apps are coupled to the API Management product, not the individual microservices. You can change the location and definition of the services without necessarily reconfiguring or updating the client apps.
-- Client apps always connect to the domain name or IP address of the API Management product. API Management acts as an intermediary. It forwards requests to the right microservice, wherever it is located, and returns responses to users. Users never see the different URIs where microservices are hosted.
+- Client apps are coupled to the API expressing business logic, not the underlying technical implementation with individual microservices. You can change the location and definition of the services without necessarily reconfiguring or updating the client apps.
+- API Management acts as an intermediary. It forwards requests to the right microservice, wherever it is located, and returns responses to users. Users never see the different URIs where microservices are hosted.
 - You can use API Management policies to enforce consistent rules on all microservices in the product. For example, you can transform all XML responses into JSON, if that is your preferred format.
 - Policies also enable you to enforce consistent security requirements.
 
