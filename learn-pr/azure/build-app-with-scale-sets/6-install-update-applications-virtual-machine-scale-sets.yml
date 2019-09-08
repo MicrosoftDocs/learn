@@ -3,8 +3,8 @@ uid: learn.build-app-with-scale-sets.install-update-applications-virtual-machine
 title: Install and update applications in virtual machine scale sets
 
 metadata:
-  title: Installing and updating applications in virtual machine scale sets
-  description: Installing and updating applications in virtual machine scale sets
+  title: Install and update applications in virtual machine scale sets
+  description: Install and update applications in virtual machine scale sets
   ms.date: 09/02/2019
   author: jboeshart
   ms.author: jaboes
