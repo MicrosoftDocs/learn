@@ -14,7 +14,7 @@ Introduction to Docker containers
 
 ## Product(s)
 
-- dotnet-core
+- azure
 
 ## Prerequisites
 
@@ -22,11 +22,11 @@ Introduction to Docker containers
 
 ## Summary
 
-Modern organizations must be able to release apps quickly to attract and retain business. This requirement forces software development and support teams to always looking at solutions that save time and reduces costs. An ideal solution has to reduce the time spent on the creation and configuration of deployment environments and the simplification of the software deployment process.
+Modern organizations must release apps quickly to attract and keep business. This requirement forces software development and support teams to always looking at solutions that save time and reduces costs. An ideal solution has to reduce the time spent on the creation and configuration of deployment environments and the simplification of the software deployment process.
 
 The idea of using containerization technology as a time-saving and cost reduction solution is popular. One of the primary propositions of containerization is that you don't have to configure hardware and spend time installing operating systems and software to host a deployment. Also, multiple apps can run in their isolated containers on the same device.
 
-Here, you'll see how the Docker is used to create containers and learn slightly how the Docker infrastructure work behind the scenes. The goal is to help you decide if Docker containers are the right choice for your business.
+Here, you'll see how the Docker is used to create containers. You'll also learn a bit how the Docker infrastructure work behind the scenes. The goal is to help you decide if Docker containers are the right choice for your business.
 
 ## Learning objectives
 
@@ -147,7 +147,7 @@ Identify the subtasks of *Introduction to Docker containers*
     - Consistent delivery
     - More workloads same hardware
 
-    We saw that when we use Docker containers, we have to think about the container's runtime infrastructure. We discussed both storage and network configuration. These two aspects are changing in nature due to the portability of containers. As a result, both impact the software running in a container.
+    We saw that when we use Docker containers, we have to think about the container's runtime infrastructure. We discussed both storage and network configuration. These two aspects are changing in nature because of the portability of containers. As a result, both impact the software running in a container.
 
     You were looking for a containerization solution that provides maximum compatibility in each environment with little or no configuration changes. We found that Docker is a good solution that enables us to create a snapshot of our application and all its dependencies.  We then deploy this same snapshot in development, testing, and production.
 
