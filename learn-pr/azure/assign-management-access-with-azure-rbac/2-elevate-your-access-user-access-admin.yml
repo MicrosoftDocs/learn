@@ -18,7 +18,7 @@ quiz:
   questions:
   - content: A user who had owner access to a subscription has left your company. How can their access be revoked and reassigned to another employee?
     choices:
-    - content: Using the relevant Portal, PowerShell or REST API commands.
+    - content: Using the relevant portal, PowerShell or REST API commands.
       isCorrect: true
       explanation: This is the correct workflow.
     - content: Ask the former employee for their password.
@@ -32,7 +32,7 @@ quiz:
     - content: The global AD administrator should grant themselves the RBAC User Access Administrator role, and then give owner access to the MSDN subscription to the manager. 
       isCorrect: true
       explanation: This is the correct workflow.
-    - content: The manager should select the MSDN subscription from the dropdown in the Azure Portal.
+    - content: The manager should select the MSDN subscription from the dropdown in the Azure portal.
       isCorrect: false
       explanation: They need a user access administrator to grant them this role.
     - content: The manager should select and assign the MSDN subscription to themselves in PowerShell.
