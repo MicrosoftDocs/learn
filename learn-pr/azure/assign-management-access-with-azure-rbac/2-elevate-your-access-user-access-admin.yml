@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.assign-management-access-with-azure-rbac.elevate-your-access-to-user-access-admin
+uid: learn.azure.assign-management-access-with-azure-rbac.elevate-your-access-user-access-admin
 title: Elevate your access to User Access Administrator
 metadata:
   title: Elevate your access to User Access Administrator
@@ -16,28 +16,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: Which of the following is not a valid blob storage access tiers?
+  - content: A user who had owner access to a subscription has left your company. How can their access be revoked and reassigned to another employee?
     choices:
-    - content: Archive
-      isCorrect: false
-      explanation: Archive is a valid blob storage access tier.
-    - content: Hot
-      isCorrect: false
-      explanation: Hot is a valid blob storage access tier.
-    - content: Standard
+    - content: Using the relevant portal, PowerShell or REST API commands.
       isCorrect: true
-      explanation: Standard is a storage performance tier, but not an access tier.
-    - content: Cool
+      explanation: This is the correct workflow.
+    - content: Ask the former employee for their password.
       isCorrect: false
-      explanation: Cool is a valid blob storage access tier.
-  - content: Which of these changes between access tiers will happen immediately?
+      explanation: A robust security system for your organization cannot depend on the good will of former employees.
+    - content: Ask the former employee to log in and select a different employee to grant their privileges to.
+      isCorrect: false
+      explanation: A robust security system for your organization cannot depend on the good will of former employees.
+  - content: A manager currently has access to the main Pay-As-You-Go subscription for your company. However, they also need owner access to an MSDN subscription for dev/test purposes. How can this be assigned?
     choices:
-    - content: Hot to Cool
+    - content: The global AD administrator should grant themselves the RBAC User Access Administrator role, and then give owner access to the MSDN subscription to the manager. 
       isCorrect: true
-      explanation: Changes between Hot and Cool, and to Archive, happen immediately.
-    - content: Archive to Cool
+      explanation: This is the correct workflow.
+    - content: The manager should select the MSDN subscription from the dropdown in the Azure portal.
       isCorrect: false
-      explanation: Any change from Archive involves rehydration, which may take several hours to complete.
-    - content: Archive to Hot
+      explanation: They need a user access administrator to grant them this role.
+    - content: The manager should select and assign the MSDN subscription to themselves in PowerShell.
       isCorrect: false
-      explanation: Any change from Archive involves rehydration, which may take several hours to complete.
+      explanation: They need a user access administrator to grant them this role.

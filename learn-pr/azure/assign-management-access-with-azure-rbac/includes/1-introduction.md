@@ -10,4 +10,4 @@ In this module, you will:
 
 ## Prerequisites
 
-Basic understanding of how RBAC works in Azure
+Understanding of how role-based access control works in Azure
