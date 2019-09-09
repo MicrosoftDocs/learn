@@ -259,7 +259,7 @@ function GetRoute(newState) {
 function CmdGoToCustomer(request, response) {
 
     // Pick up variables from the request payload, with the field name specified in IoT Central.
-    var num = request.payload.customerN;
+    var num = request.payload.customerId;
 
     if (num >= 0 && num < customer.length) {
 
@@ -510,7 +510,7 @@ function sendTruckTelemetry() {
             // Field name from IoT Central app ":" variable name from NodeJS app.
             temperature: temp,
             stateTruck: state,
-            stateFan: fan,
+            stateCoolingSystem: fan,
             stateContents: contents,
             location: {
                 // Names must be lon, lat.

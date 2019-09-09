@@ -16,9 +16,10 @@ The essential component for communication between a device and IoT Central is a 
 
 When the device is created, you will notice the phrase "Missing Data" where the telemetry would normally be. Not until the device starts transmitting data will this phrase change.
 
-4. Click on the **Connect** button for the device. Copy the **Scope ID**, **Device ID**, and **Primary Key**, to a text tool, such as Notepad.
+4. Click on the **Connect** button for the device, top right of your screen. Take your time and copy the **Scope ID**, **Device ID**, and **Primary Key**, to a text tool, such as Notepad, and save the file. You will be using these values after installing and running a few utilities to generate connection strings.
 
-You will be using these values after installing and running a few utilities to generate connection strings.
+5. Click **Close**.
+
 
 ## Generate a connection string
 
@@ -54,7 +55,7 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
    chmod +x dps_cstr
 ```
 
-6. Remember that in the previous section we stored a **Scope ID**, **Device ID**, and **Primary Key**, for our device. It is a good idea to keep a text tool such as Notepad open, and create in it the following string, replacing scope-id, device-id, and primary-key with the true values. Using the text tool enables you to create and validate the string before committing to running it.
+6. Remember that in the previous section we stored a **Scope ID**, **Device ID**, and **Primary Key**, for our device. It is a good idea to keep a text tool such as Notepad open, and create in it the following string, replacing **scope-id**, **device-id**, and **primary-key** with the true values. Using the text tool enables you to create and validate the string before committing to running it.
 
 ```
     ./dps_cstr scope_id device_id primary_key > connection1.txt
@@ -62,16 +63,22 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
 
 7. Now copy this command from your text tool into the refrigerated-truck folder of Azure Cloud Shell, and run it. If successful, the tool will generate a connection string and write it out to the connection1.txt file.
 
-8. Use the **{ }** icon in Azure Cloud Shell to navigate to the connection1.txt file. You will probably have to expand the **refrigerated-truck** node to locate it. Double-click on connection1.txt to open the file. Copy all the contents to your text tool.
+8. Use the **{ }** icon in Azure Cloud Shell to navigate to the connection1.txt file. You will probably have to expand the **refrigerated-truck** node to locate it. Double-click on connection1.txt to open the file. Carefully copy all the contents to your text tool.
+
+![Locating the connection1.txt file](../media/refrigerated-trucks-connection1.png)
 
 > [!IMPORTANT]
 > The last element of the connection string is the Primary Key. During testing, sometimes a minor corruption occurred at the end of the string. Verify that the connection string in connection1.txt ends with an exact copy of the Primary Key, and if not, correct the copy you have made of the correction string in your text tool.
 
-9. The connection string you will use in the Node.JS app that follows starts with **HostName=**, so separate off this part of the string in your text tool, so you have one line containing a string that looks similar to the following (though the xxxx parts will be much longer):
+9. The connection string you will use in the Node.JS app (that follows in the next unit) starts with **HostName=**, so separate off this part of the string in your text tool, so you have one line containing a string that looks similar to the following (though the xxxx parts will be much longer):
 
 ```
-    HostName=iotc-xxxx.azure-devices.net;DeviceId=xxxx;SharedAccessKey=xxxx
+HostName=iotc-xxxx.azure-devices.net;DeviceId=xxxx;SharedAccessKey=xxxx
 ```
+
+10. Save off your text file.
+
+You now have the all important connection string. The scope Id identifies the app, the device Id the real device, and the primary key gives you permission for the connection.
 
 ## Create a free Azure Maps account
 
