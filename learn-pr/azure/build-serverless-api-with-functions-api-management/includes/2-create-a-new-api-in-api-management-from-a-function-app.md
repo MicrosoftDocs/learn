@@ -14,11 +14,11 @@ Another complimentary trend in distributed software development is serverless ar
 
 ## Azure Functions
 
-Azure Functions is a service that enables serverless architectures in Azure. You can write functions, without worrying about the supporting infrastructure, in many different languages, including C#, F#, Node.js, Java, and PHP. You can also use libraries from NuGet and the Node Package Manager (NPM) and authenticate users with the OAuth standard from providers such as Active Directory, Facebook, Google, and Microsoft Account.
+Azure Functions is a service that enables serverless architectures in Azure. You can write functions, without worrying about the supporting infrastructure, in many different languages, including C#, Java, JavaScript, PowerShell, and Python. You can also use libraries from NuGet and the Node Package Manager (NPM) and authenticate users with the OAuth standard from providers such as Active Directory, Facebook, Google, and Microsoft Account.
 
-When you write a function, you choose a template to use, depending on how you want to trigger your code. For example, if you want to execute the function in response to an HTTP request, use the **HTTPTrigger** template. You can use other templates to execute when there are new messages in a queue, new Binary Large Objects (Blobs) in an Azure Storage account, or on a predefined schedule.
+When you write a function, you choose a template to use, depending on how you want to trigger your code. For example, if you want to execute the function in response to an HTTP request, use the **HTTPTrigger** template. You can use other templates to execute when there are new messages in a queue, a Blob storage container, or on a predefined schedule.
 
-When you use Azure Functions, you are charged only for the time that your code runs. 
+When you use Azure Functions in a Consumption Plan, you are charged only for the time that your code runs. 
 
 ## Azure API Management
 
