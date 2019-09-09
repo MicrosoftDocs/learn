@@ -43,6 +43,6 @@ In this module you will:
 
 5. Click **Create**, and wait a few seconds whilst the app resource is built.
 
-6. In you home page, a large icon for your  **Refrigerated Trucks** app should now appear.
+6. You should now see a **Dashboard** with a few default links. The next time you visit your home page, a large icon for your  **Refrigerated Trucks** app should appear.
 
-That is all that is needed to create the app. The next step is to specify a device template.
+That is all that is needed to create the app. The next step is to specify a _device template_.

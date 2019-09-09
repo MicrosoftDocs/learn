@@ -5,15 +5,15 @@ Even before a device template is complete, the automatically-created simulated d
 
 Complete validation of the device template will not be possible until you have some real devices. However, the simulated device allows us both to check the completeness of what we have done so far, and to provide a helpful UI to learn the ropes managing devices through IoT Central.
 
-1. Select the **Devices** entry in the left-hand menu, then select the one device we have so far. In the range of **Views**, if it is not already selected, click the _chart_ entry (the left-most of the three view options, highlighted below).
+1. Select the **Devices** entry in the left-hand menu, then click the one device we have so far (**RefrigeratedTruck-1**). In the range of **Views**, if it is not already selected, click the _chart_ entry (the left-most of the three view options, highlighted below).
 
 ![View the line charts for the simulated device](../media/refrigerated-trucks-simview1.png)
 
-2. This view shows the line chart of the telemetry, and bar charts for states and events. Note the column of eye icons, determining whether the field is visible or not. Some of these may be light-gray (not visible) so click the eye icons to turn the fields visible.
+2. This view shows the line chart of the telemetry, and bar charts for states and events. Note the column of eye icons, determining whether the field is visible or not. Some of these may be light-gray (not visible), and if so, click the eye icons to turn the fields visible.
 
-3. Notice that the temperature telemetry falls within the minimum (-20 degC), and the maximum (20 degC), we set when defining this field. Click on any telemetry, or any state in the bar charts, for a little more information.
+3. Notice that the temperature telemetry falls within the minimum (-20 degC), and the maximum (20 degC), we set when defining this field. Hover over any telemetry, or any state in the bar charts, for a little more information.
 
-4. The event chart is a bit less obvious than the telemetry and states, but notice the diamond icons (highlighted near the bottom edge of the image above) that represent an event that has been triggered. Clicking on any of these icons will give you more detail about the event. With the simulated device, this cannot be much more than that the event "occurred". With real devices, we can learn more about the event.
+4. The event chart is a bit less obvious than the telemetry and states, but notice the diamond icons (highlighted near the bottom edge of the image above) that represent an event that has been triggered. Clicking on any of these icons will give you more detail about the event. With the simulated device, this cannot be much more than that the event "occurred". With real devices, we can learn more about a real event.
 
 5. Now, click on the _table_ view (the second of the three views).
 
@@ -41,12 +41,22 @@ In this final exercise for this unit, we create a dashboard to monitor a single 
 
 1. Click on **Dashboard** in the left-hand menu, then select **New** top-right of the screen.
 
-2. Select the **Map** from the range of **Library** options. You will need to provide a device template name, then a device name, to indicate what is to be shown on the map.
+2. Select the **Map** from the range of **Library** options. You will need to provide a device template name, then a device name, to indicate what is to be shown on the map. 
 
-3. Select **KPI** from the **Library**, and set this to the temperature telemetry from the simulated truck. This will add a tile to your dashboard, which can obviously be set to a much smaller size than the map.
+3. Then enter a title, "Map" works. Select **Location** as the only option for Location. For **State Measurement** select any one of the three truck states to be shown on the map. Turn on **Show location history**.
+ 
+4. Click **Save**, to complete the map entry on the dashboard. Perhaps expand the map on the dashboard using the lower-right corner icon.
 
-![Validate the two commands for the simulated device](../media/refrigerated-trucks-simdashboard.png)
+5. Select **KPI** from the **Library**, and set this to the temperature telemetry from the simulated truck, after selecting the other fields and giving this dashboard entry a title, perhaps "Temp (degC)".
 
-4. Add any other elements to the dashboard that pique your interest. The dashboard is an alternative method of viewing device data in IoT Central, to the device views described above.
+6. Click the eye icon in the **Measures** box to make the value visible. Then you will be able to click **Save**. This will add a tile to your dashboard, which will be set to a much smaller size than the map.
 
-When you feel you have gained some insights into the workings of a dashboard, let's take a break and test your knowledge so far with a quiz!
+7. Add any other elements to the dashboard that pique your interest. The dashboard is an alternative method of viewing device data in IoT Central, to the device views described above.
+
+8. Click **Done**.
+
+![Show the dashboard](../media/refrigerated-trucks-simdashboard.png)
+
+9. Verify that your simulated truck is moving around on the dashboard map, albeit with superpowers. Verify too that the temperature of the contents is changing.
+
+When you feel you have gained some insights into the workings of a dashboard, let's take a break and test your knowledge so far with a short quiz!
