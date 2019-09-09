@@ -48,7 +48,7 @@ For example, a payload might look like this:
 
 ```
 
-This information ia passed as the body of an HTTP POST request. We'll need to update our function logic to be able to parse and process this information correctly.
+This information is passed as the body of an HTTP POST request. We'll need to update our function logic to be able to parse and process this information correctly.
 
 ## Parsing information from the Gollum event
 

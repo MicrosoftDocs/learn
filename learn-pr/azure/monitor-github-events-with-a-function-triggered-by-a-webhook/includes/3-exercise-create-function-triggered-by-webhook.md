@@ -17,12 +17,12 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
     |---|---|
     | Name | *\<your-functionapp-name\>* |
     | Subscription | Concierge Subscription  |
-    | Resource Group | Select **Use existing** and choose the sandbox resource group, _<rgn>[sandbox resource group name]</rgn>_ |
+    | Resource Group | Select **Use existing** and choose the sandbox resource group, _<rgn>[sandbox resource group name]</rgn>_. |
     | OS | Windows |
     | Hosting Plan | Consumption plan |
     | Location | Choose the nearest location to you that is also one of the allowed *Sandbox regions* listed below. |
     | Runtime Stack | **Node.js** |
-    | Storage | Create new, and accept the default name |
+    | Storage | Create new, and accept the default name. |
 
     ### Sandbox regions
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
