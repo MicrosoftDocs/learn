@@ -86,7 +86,7 @@ Accessing the Cloud Shell from within the Azure portal is done using the Cloud S
 
     ![Screenshot showing pre-configured WordPress website](../media/6-stopped-site.png)
 
-1. Finally, let's restart the web app by running the `az webapp stop --id ` command. Run the following command to start the web app. Make sure to replace the example ID value with the value you copied earlier. In our example to command would look like the following snippet:
+1. Finally, let's start the web app by running the `az webapp start --id ` command. Run the following command to start the web app. Make sure to replace the example ID value with the value you copied earlier. In our example to command would look like the following snippet:
 
     ```bash
     az webapp start --id "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/resourceGroups/learn-wordpress-blog-rg/providers/Microsoft.Web/sites/BlogFor"
