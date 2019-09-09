@@ -4,7 +4,7 @@ In this exercise, you'll set up a webhook for a GitHub repository. You'll learn 
 
 1. Using your web browser, sign in to your [GitHub account](https://www.github.com).
 
-1. Create a new repository by clicking the **New** button and give it a meaningful name such as **LearnWebhookTest**.
+1. Create a new **public** repository by clicking the **New** button and give it a meaningful name such as **LearnWebhookTest**.
 
 1. Select the **Wiki** tab.
 
@@ -14,7 +14,7 @@ In this exercise, you'll set up a webhook for a GitHub repository. You'll learn 
 
 ## Add a webhook for the Gollum Event
 
-The **Gollum** event is the name of the event in GitHub that is fired whenever a page in the repo's wiki us created or updated. 
+The **Gollum** event is the name of the event in GitHub that is fired whenever a page in the repo's wiki is created or updated. 
 
 1. Go back to main page for your repository.
 

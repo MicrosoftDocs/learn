@@ -24,7 +24,7 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 1. Back in the body of your function, after the `context.log` statement, add the following code. Replace *\<default key\> with the default key that you copied to the clipboard earlier:
 
     ```JavaScript
-    var hmac = Crypto.createHmac("sha1", "ciCDNcluUthgW5DwCxVx8/FTR6QBSL2/K6svSDYkgvZcng/qbdp/5A==");
+    var hmac = Crypto.createHmac("sha1", "<default key>");
     var signature = hmac.update(JSON.stringify(req.body)).digest('hex');
     ```
 
