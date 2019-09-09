@@ -149,7 +149,7 @@ Now you can make change to the application's data and observe how to the data is
 1. In Visual Studio integrated terminal, enter the following command and watch as the UI is automatically updated.
 
     ```bash
-    npm run update
+    npm run update-data
     ```
 
     ![End state of serverless web app](../media/serverless-app-deployed.png)
