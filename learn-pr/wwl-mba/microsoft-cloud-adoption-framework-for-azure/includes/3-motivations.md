@@ -1,11 +1,11 @@
-﻿Organizations are adopting the cloud as a key enabler to drive business transformation, motivated by things such as processes and product improvement, market growth, and increased profitability. Let’s look at the most common motivation triggers for cloud adoption.
+﻿Organizations adopt the cloud to help drive business transformation, such as processes and product improvement, market growth, and increased profitability. Let’s look at the most common motivation triggers for cloud adoption.
 
-Across organizations of all types, sizes, and industries, the decision to invest in cloud technologies is often tightly connected to some critical business events, as the cloud may enable the appropriate solution for the event. Moreover, proper cloud technology implementation may turn a reactive response into an innovation opportunity to drive growth for the organization.
+Across organizations of all types, sizes, and industries, the decision to invest in cloud technologies is often tightly connected to a critical business event. The reason for this connection is because the cloud might enable the appropriate solution for the event. Proper cloud technology implementation might turn a reactive response into an innovation opportunity to drive growth for the organization.
 
 :::row:::
 :::column:::
 
-**Critical Business Events**
+**Critical business events**
 
 :::column-end:::
 :::row-end:::
@@ -23,14 +23,17 @@ Across organizations of all types, sizes, and industries, the decision to invest
 :::column-end:::
 :::row-end:::
 
-When addressing these business events, the expected business outcomes will determine the organization's cloud journey, which essentially can be one of two ways: migrate or innovate. The **migrate** journey is focused, largely, on completing a migration of existing on-premises applications to the cloud. And the **innovation** journey is frequently linked to migration since it is common for those migrated applications to undergo modernization efforts that drive business and product innovation.
+When organizations address these business events, the expected business outcomes will determine the organization's cloud journey. The journey involves migration or innovation: 
 
-Organizations will find different triggers to adopt new technologies like Azure. Some will drive the organization to migrate current applications, while others will require creation of new capabilities, products, and experiences.
+- The migration journey is largely focused on completing a migration of existing on-premises applications to the cloud. 
+- The innovation journey is frequently linked to migration because it's common for the migrated applications to undergo modernization efforts that drive business and product innovation.
+
+Organizations find different triggers to adopt new technologies like Azure. Some triggers drive the organization to migrate current applications. Other triggers require creation of new capabilities, products, and experiences.
 
 Some common migration and innovation triggers include:
 
 - Preparation for new technical capabilities
-- Adjust scale to meet market or geographic demands
+- Gaining scale to meet market or geographic demands
 - Cost savings
 - Reduction in vendor or technical complexity
 - Optimization of internal operations
@@ -55,15 +58,11 @@ Here are the key points from this unit:
 :::column-end:::
 :::row-end:::
 
-- The Microsoft Cloud Adoption Framework for Azure enables an actionable cloud journey that rapidly delivers on the desired business outcomes.
-
+- The Cloud Adoption Framework for Azure enables an actionable cloud journey that rapidly delivers on the desired business outcomes.
 - There are three main stages of the Cloud Adoption Framework: Plan, Ready, and Adopt.
-
 - Motivations for cloud adoption include:
+  - Critical business events, such as end of support for mission-critical technologies.
+  - Migration triggers, such as cost saving and operations optimization.
+  - Innovation triggers, such as scaling to meet market or geographical demands.
 
-  - Critical business events (such as end of support for mission-critical technologies)
-  - Migration triggers (such as cost saving and operations optimization)
-  - Innovation triggers (such as scaling to meet market or geographical demands)
-
-
-You’ve just learned about the motivation triggers that begin a cloud adoption journey for organizations. Next, let’s talk about defining the strategy for your cloud adoption journey.
+You've learned about the motivation triggers that begin a cloud adoption journey for organizations. Next, let’s talk about how to define the strategy for your cloud adoption journey.
