@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-docker-containers.3-how-docker-images-work
+title: How Docker images work
+
+metadata:
+  title: How Docker images work
+  description: How Docker images work
+  ms.date: 09/09/2019
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-how-docker-images-work.md)]
