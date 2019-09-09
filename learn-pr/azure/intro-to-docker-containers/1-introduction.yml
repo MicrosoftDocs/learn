@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-docker-containers.introduction
+uid: learn.intro-to-docker-containers.1-introduction
 title: Introduction
 
 metadata:
@@ -12,6 +12,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 
-durationInMinutes: 3
+durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
