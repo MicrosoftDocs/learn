@@ -12,7 +12,7 @@ A virtual hard disk is conceptually similar to a physical hard disk. You can use
 
 A virtual machine can contain multiple VHDs. Typically, a virtual machine has an *operating system VHD* on which the operating system is installed. It also has one or more *data VHDs* that contain the applications and other user-specific data used by the virtual machine.
 
-The difference between a VHD and a physical hard disk is that a VHD is stored as a virtual file in Azure, rather than a piece of physical hardware.
+The difference between a VHD and a physical hard disk is that a VHD is stored as a virtual file in Azure. It isn't a piece of physical hardware.
 
 Compared to physical disks, VHDs have several advantages, including:
 
@@ -28,8 +28,8 @@ If you consider a VHD to be similar to a physical disk, a virtual machine image 
 
 Azure Marketplace supplies many virtual machine images that you can use as a starting point for your own systems. Examples include:
 
-- Various versions of Windows Server, optionally with SQL Server installed
-- Linux variants with software such as MySQL, MongoDB, Cassandra, or other databases already configured
+- Various versions of Windows Server, optionally with SQL Server installed.
+- Linux variants with software such as MySQL, MongoDB, Cassandra, or other databases already configured.
 
 For a complete list, visit the [Azure Marketplace virtual machine images page](https://azuremarketplace.microsoft.com/marketplace/apps?filters=virtual-machine-images).
 
@@ -44,7 +44,7 @@ You can create your own custom virtual machine image in one of two ways:
 - If you're building an image from scratch by using Hyper-V, you first create a blank virtual disk, and then create a virtual machine with this disk. When you start the virtual machine, you install the operating system and any other additional software from source disks (typically DVDs) and other packages.
 - If you're customizing an image from Azure Marketplace, you build a virtual machine by using an existing image. The image provides the operating system and base functionality. You add your own software, operating system updates, and other packages as required. Unit 3 describes this process in more detail.
 
-After you build and customize a virtual machine, you can save the new image as a set of VHDs. However, you must perform some cleaning up first. This is because as you create a virtual machine, the operating system data is updated with several items, including:
+After you build and customize a virtual machine, you can save the new image as a set of VHDs. However, you must do some cleaning up first. This is because as you create a virtual machine, the operating system data is updated with several items, including:
 
 - The host name of your virtual machine.
 - The username and credentials that you provided when you installed the operating system on the virtual machine.

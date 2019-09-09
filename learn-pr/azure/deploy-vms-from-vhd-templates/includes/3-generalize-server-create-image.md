@@ -21,9 +21,9 @@ To generalize a Windows VM, follow these steps:
 
     | Property  | Value  |
     |---|---|
-    | System Cleanup Action | Enter System Out-of-Box Experience (OOBE) |
-    | Generalize | Check  |
-    | Shutdown Options | Shutdown |
+    | **System Cleanup Action** | **Enter System Out-of-Box Experience (OOBE)** |
+    | **Generalize** | Select  |
+    | **Shutdown Options** | **Shutdown** |
 
     ![Image of the Sysprep dialog box](../media/3-sysprep.png)
 

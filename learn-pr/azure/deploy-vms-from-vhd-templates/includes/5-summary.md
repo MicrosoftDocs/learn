@@ -11,7 +11,7 @@ You can use this knowledge to build a customized virtual machine image that's co
 
 ## Learn more
 
-For more information on disk imaging on Azure, see the following articles:
+For more information about disk imaging in Azure, see the following articles:
 
 - [Create a managed image of a generalized VM in Azure](https://docs.microsoft.com/azure/virtual-machines/windows/capture-image-resource)
 - [How to create an image of a virtual machine or VHD](https://docs.microsoft.com/azure/virtual-machines/linux/capture-image)

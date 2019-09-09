@@ -146,9 +146,9 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
     | Property  | Value  |
     |---|---|
-    | System Cleanup Action | Enter System Out-of-Box Experience (OOBE) |
-    | Generalize | Check  |
-    | Shutdown Options | Shutdown |
+    | **System Cleanup Action** | **Enter System Out-of-Box Experience (OOBE)** |
+    | **Generalize** | Select  |
+    | **Shutdown Options** | **Shutdown** |
 
     ![Screenshot of the Sysprep dialog box](../media/4-sysprep.png)
 
@@ -218,14 +218,14 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone pivot="windows-cloud"
 
-1. Run the following command to create a virtual machine image named *MyVMImage* from the generalized virtual machine.
+Run the following command to create a virtual machine image named *MyVMImage* from the generalized virtual machine.
 
-    ```azurecli
-    az image create \
-        --name MyVMIMage \
-        --resource-group <rgn>[Sandbox resource group name]</rgn> \
-        --source MyWindowsVM
-    ```
+```azurecli
+az image create \
+    --name MyVMIMage \
+    --resource-group <rgn>[Sandbox resource group name]</rgn> \
+    --source MyWindowsVM
+```
 
 ::: zone-end
 
