@@ -33,7 +33,7 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 1. Add `sha1=` to the start of the key, so that it matches the format of `x-xub-signature` in the request header. Add the following code to your function.
 
     ```JavaScript
-    var signature =  `sha1=${signature}`;
+    var shaSignature =  `sha1=${signature}`;
     ```
 
 1. Add the following code to retrieve the GitHub signature from the request header: 
@@ -45,7 +45,7 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 1. Compare the two strings. If they match, process the request, as follows:
 
     ```JavaScript
-    if (!signature.localeCompare(gitHubSignature)) {
+    if (!shaSignature.localeCompare(gitHubSignature)) {
         // Existing code
         if (req.body.pages[0].title) {
             ...
@@ -59,7 +59,7 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 1. If the strings don't match, return an HTTP 401 (Unauthorized) response, with a message telling the sender that the signatures don't match.
 
     ```JavaScript
-    if (!signature.localeCompare(gitHubSignature))
+    if (!shaSignature.localeCompare(gitHubSignature))
     {
         ...
     }
@@ -84,10 +84,10 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 
         var hmac = Crypto.createHmac("sha1", "<default key>");
         var signature = hmac.update(JSON.stringify(req.body)).digest('hex');
-        var signature =  `sha1=${signature}`;
+        var shaSignature =  `sha1=${signature}`;
         var gitHubSignature = req.headers['x-hub-signature'];
 
-        if (!signature.localeCompare(gitHubSignature)) {
+        if (!shaSignature.localeCompare(gitHubSignature)) {
             if (req.body.pages[0].title) {
                 context.res = {
                     body: "Page is " + req.body.pages[0].title + ", Action is " + req.body.pages[0].action + ", Event Type is " + req.headers['x-github-event']
