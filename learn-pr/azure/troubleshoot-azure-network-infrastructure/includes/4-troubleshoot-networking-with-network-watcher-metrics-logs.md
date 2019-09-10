@@ -138,7 +138,7 @@ To remediate high disk utilization and latency issues:
 
 #### Virtual machine firewall rules that block traffic
 
-To troubleshoot an NSG flow issue, use the Network Watcher IP flow verify tool and NSG flow logging to determine whether an NSG or UDR is interfering with traffic flow.
+To troubleshoot an NSG flow issue, use the Network Watcher IP flow verify tool and NSG flow logging to determine whether an NSG or User Defined Routing (UDR) is interfering with traffic flow.
 
 Run IP flow verify, and specify the local VM and the remote VM. After you select **Check**, Azure runs a logical test on rules in place. If the result is that access is allowed, use NSG flow logs.
 

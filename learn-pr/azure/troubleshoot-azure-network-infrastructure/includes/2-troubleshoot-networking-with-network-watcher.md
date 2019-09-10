@@ -106,9 +106,11 @@ You can also use the tool to spot vulnerabilities for your VM caused by unnecess
 
 You use the packet capture tool to record all of the packets sent to and from a VM. You'll then review the captured to gather statistics about network traffic or diagnose anomalies, such as unexpected network traffic on a private virtual network.
 
-To use this tool, the VM that you select must have the packet capture VM extension installed and running. This step happens automatically when you start a packet capture session.
+The packet capture tool is a virtual machine extension that is remotely started through Network Watcher and happens automatically when you start a packet capture session.
 
-The default usage limit is 100 packet capture sessions per region, and the overall limit is 10,000. These limits are for the number of sessions only, not saved captures. You can save packets captured in Azure Storage or locally on your computer.
+Keep in mind that there is a limit to the amount of packet capture sessions allowed per region. The default usage limit is 100 packet capture sessions per region, and the overall limit is 10,000. These limits are for the number of sessions only, not saved captures. You can save packets captured in Azure Storage or locally on your computer.
+
+Packet capture has a dependency on the *Network Watcher Agent VM Extension* installed on the VM. The learn more section of this module includes links to instructions that detail the installation of the extension on both Windows and Linux VMs.
 
 ### What is the connection troubleshoot tool?
 
