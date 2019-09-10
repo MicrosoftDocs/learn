@@ -53,4 +53,4 @@ Let's use the **Azure Log Analytics** website to practice writing queries agains
         | summarize dcount(Computer) by endofweek(TimeGenerated) | render barchart kind=default
     ```
 
-You can see from the Kusto queries you used here that it's easy to target a query to a specific time window, event level, or event log type. The security team can easily examine heartbeats to identify when servers are unavailable, which might indicate a denial-of-service attack. If the team spots the time when a server was unavailable, it can query for events in the security log around that time to diagnose whether the interruption was caused by an attack.
+You can see from the Kusto queries you used here that it's easy to target a query to a specific time window, event level, or event log type. The security team can easily examine heartbeats to identify when servers are unavailable, which might indicate a denial-of-service attack. If the team spots the time when a server was unavailable, it can query for events in the security log around that time to diagnose whether an attack caused the interruption.
