@@ -41,7 +41,7 @@ Metrics are stored in a time-series database. This data store is most effective 
 
 ![An example chart in Azure Metrics](../media/2-azure-monitor-metrics.png)
 
-## Analyzing logs with Kusto
+## Analyzing logs by using Kusto
 
 To retrieve, consolidate, and analyze data, you specify a query to run in Azure Monitor logs. You write a log query with the Kusto query language, which is also used by Azure Data Explorer. 
 
