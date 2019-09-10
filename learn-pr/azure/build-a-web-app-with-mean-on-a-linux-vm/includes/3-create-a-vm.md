@@ -75,7 +75,7 @@ az group create \
 
     When prompted, answer "yes" to save the VM's identity locally so future connections are trusted.
 
-    Keep your SSH connection open. You'll use it to configure software in the next parts.
+    You'll use the SSH connection to configure software on the virtual machine in the next parts.
 
 ## Summary
 
