@@ -4,7 +4,7 @@ Now that you've created the network virtual appliance (NVA) and virtual machines
 
 ## Create public and private virtual machines
 
-The next step is to deploy a VM into the public and private subnets.
+The next steps deploy a VM into the public and private subnets.
 
 1. Open the Visual Studio Code editor and create a file named cloud-init.txt.
 
@@ -91,7 +91,7 @@ The next step is to deploy a VM into the public and private subnets.
 
 ## Test traffic routing through the network virtual appliance
 
-The final step is to use the Linux `traceroute` utility to show how traffic is being routed. You'll use the `ssh` command to run `traceroute` on each VM. The first test will show the route taken by ICMP packets sent from the **public** VM to the **private** VM. The second test will show the route taken by ICMP packets sent from the **private** VM to the **public** VM.
+The final steps use the Linux `traceroute` utility to show how traffic is routed. You'll use the `ssh` command to run `traceroute` on each VM. The first test will show the route taken by ICMP packets sent from the **public** VM to the **private** VM. The second test will show the route taken by ICMP packets sent from the **private** VM to the **public** VM.
 
 1. Run the following command to trace the route from **public** to **private**. When prompted, enter the password for the **azureuser** account that you specified earlier.
 
@@ -108,7 +108,7 @@ The final step is to use the Linux `traceroute` utility to show how traffic is b
     Connection to 52.165.151.216 closed.
     ```
 
-    Notice that the first hop is to 10.0.2.4. This address is the private IP address of **nva**. The second hop is to 10.0.1.4, the address of **private**. In the first exercise, you added this route to the route table and linked the table to the **publicsubnet** subnet. So all traffic from **public** to **private** is being routed through the network virtual appliance.
+    Notice that the first hop is to 10.0.2.4. This address is the private IP address of **nva**. The second hop is to 10.0.1.4, the address of **private**. In the first exercise, you added this route to the route table and linked the table to the **publicsubnet** subnet. So now all traffic from **public** to **private** is routed through the network virtual appliance.
 
    ![Route from public to private](../media/6-public-private-route.svg)
 
@@ -126,7 +126,7 @@ The final step is to use the Linux `traceroute` utility to show how traffic is b
     Connection to 52.173.21.188 closed.
     ```
 
-    The **private** VM is using default routes, and traffic is being routed directly between the subnets.
+    The **private** VM is using default routes, and traffic is routed directly between the subnets.
 
    ![Route from private to public](../media/6-private-public-route.svg)
 

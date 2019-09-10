@@ -1,18 +1,16 @@
 A network virtual appliance (NVA) is a virtual appliance that consists of various layers like:
 
-- firewall
-- WAN optimizer
+- a firewall
+- a WAN optimizer
 - application-delivery controllers
 - routers
 - load balancers
 - IDS/IPS
 - proxies
 
-From the Azure Marketplace, you can choose for deployment NVAs from providers like Check Point, Barracuda, Sophos, WatchGuard, and SonicWall. You can use an NVA to filter inbound traffic to a virtual network, to block malicious requests, and to block requests made from unexpected resources.
+You can deploy NVAs chosen from providers in Azure Marketplace. Such providers include Check Point, Barracuda, Sophos, WatchGuard, and SonicWall. You can use an NVA to filter traffic inbound to a virtual network, to block malicious requests, and to block requests made from unexpected resources.
 
-In the retail-organization example scenario, you must work with the security and network teams. You want to implement a secure environment where all incoming traffic is scrutinized and where unauthorized traffic is blocked from passing on to the internal network.
-
-You also want to secure both virtual-machine networking and Azure-services networking as part of your company's network-security strategy. Your goal is to prevent unwanted or unsecured network traffic from reaching key systems.
+In the retail-organization example scenario, you must work with the security and network teams. You want to implement a secure environment where all incoming traffic is scrutinized and where unauthorized traffic is blocked from passing on to the internal network. You also want to secure both virtual-machine networking and Azure-services networking as part of your company's network-security strategy. Your goal is to prevent unwanted or unsecured network traffic from reaching key systems.
 
 As part of the network-security strategy, you must control the flow of traffic within your virtual network. You also must understand the role of an NVA and the benefit of using an NVA to control traffic flow through an Azure network.
 

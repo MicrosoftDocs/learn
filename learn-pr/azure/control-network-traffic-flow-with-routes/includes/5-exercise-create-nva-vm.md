@@ -1,4 +1,4 @@
-In the next stage of your security implementation, you'll deploy a network virtual appliance to secure and monitor traffic between your front-end public servers and internal private servers. 
+In the next stage of your security implementation, you'll deploy a network virtual appliance (NVA) to secure and monitor traffic between your front-end public servers and internal private servers. 
 
 You'll configure the appliance to forward IP traffic. If IP forwarding isn't enabled, traffic that is routed through your appliance will never be received by its intended destination servers.
 
@@ -6,13 +6,13 @@ In this exercise, you'll deploy the **nva** network appliance to the **dmzsubnet
 
 ![Network virtual appliance with IP forwarding enabled](../media/5-nva-ip-forwarding.svg)
 
-In this exercise, you'll deploy a network virtual appliance. You'll then update the Azure virtual NIC and the network settings within the appliance to enable IP forwarding.
+In the following steps, you'll deploy an NVA. You'll then update the Azure virtual NIC and the network settings within the appliance to enable IP forwarding.
 
 ## Deploy the network virtual appliance
 
-To build the network virtual appliance, you'll deploy an Ubuntu LTS instance.
+To build the NVA, you'll deploy an Ubuntu LTS instance.
 
-1. In Cloud Shell, run the following command to deploy the appliance. Replace `<password>` with a suitable password of your choice for the **azureuser** admin account.
+1. In Cloud Shell, run the following command to deploy the appliance. Replace `<password>` with a suitable password of your choice for the **azureuser** admin account:
 
     ```azurecli
     az vm create \
@@ -25,7 +25,7 @@ To build the network virtual appliance, you'll deploy an Ubuntu LTS instance.
         --admin-password <password>
     ```
 
-1. Run the following commands to retrieve the public IP address of the appliance virtual machine. Save the address to the variable named `NVAIP`.
+1. Run the following commands to retrieve the public IP address of the appliance virtual machine. Save the address to the variable named `NVAIP`:
 
     ```azurecli
     NVAIP="$(az vm list-ip-addresses \
@@ -39,9 +39,9 @@ To build the network virtual appliance, you'll deploy an Ubuntu LTS instance.
 
 ## Enable IP forwarding for the Azure network interface
 
-The next step is to enable IP forwarding for the **nva** network appliance. When traffic flows to the NVA but is meant for another target, the NVA will route that traffic to its correct destination.
+In the next steps, IP forwarding for the **nva** network appliance is enabled. When traffic flows to the NVA but is meant for another target, the NVA will route that traffic to its correct destination.
 
-1. Run the following command to get the ID of the NVA network interface.
+1. Run the following command to get the ID of the NVA network interface:
 
     ```azurecli
     NICID=$(az vm nic list \
@@ -52,7 +52,7 @@ The next step is to enable IP forwarding for the **nva** network appliance. When
     echo $NICID
     ```
 
-1. Run the following command to get the name of the NVA network interface.
+1. Run the following command to get the name of the NVA network interface:
 
     ```azurecli
     NICNAME=$(az vm nic show \
@@ -64,7 +64,7 @@ The next step is to enable IP forwarding for the **nva** network appliance. When
     echo $NICNAME
     ```
 
-1. Run the following command to enable IP forwarding for the network interface.
+1. Run the following command to enable IP forwarding for the network interface:
 
     ```azurecli
     az network nic update --name $NICNAME \
@@ -86,10 +86,10 @@ The next step is to enable IP forwarding for the **nva** network appliance. When
     echo $NVAIP
     ```
 
-1. Run the following command to enable IP forwarding within the NVA.
+1. Run the following command to enable IP forwarding within the NVA:
 
     ```bash
     ssh -t -o StrictHostKeyChecking=no azureuser@$NVAIP 'sudo sysctl -w net.ipv4.ip_forward=1; exit;'
     ```
 
-    When prompted, enter the password you used when you created the virtual machine.
+    When prompted, enter the password you used when you created the VM.
