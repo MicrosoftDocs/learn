@@ -8,7 +8,9 @@ We can create Linux VMs with the Azure portal, the Azure CLI, or Azure PowerShel
 
 1. Click **Create a resource** in the upper-left corner of the Azure portal.
 
-1. In the search box, enter  **Ubuntu Server** to see the different versions available. Select **Ubuntu Server 18.04 LTS** from the presented list.
+1. In the search box, enter  **Ubuntu Server**. 
+1. Under the **Marketplace** result, select the **All results** link on the top right-hand side to see the different versions available. 
+1. Select **Ubuntu Server 18.04 LTS Canonical** from the presented list.
 
 1. Click the **Create** button to start configuring the VM.
 
