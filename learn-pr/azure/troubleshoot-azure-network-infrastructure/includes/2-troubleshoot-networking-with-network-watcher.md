@@ -110,7 +110,7 @@ The packet capture tool is a virtual machine extension that is remotely started 
 
 Keep in mind that there is a limit to the amount of packet capture sessions allowed per region. The default usage limit is 100 packet capture sessions per region, and the overall limit is 10,000. These limits are for the number of sessions only, not saved captures. You can save packets captured in Azure Storage or locally on your computer.
 
-Packet capture has a dependency on the *Network Watcher Agent VM Extension* installed on the VM. The learn more section of this module includes links to instructions that detail the installation of the extension on both Windows and Linux VMs.
+Packet capture has a dependency on the *Network Watcher Agent VM Extension* installed on the VM. The "Learn more" section at the end of this module includes links to instructions that detail the installation of the extension on both Windows and Linux VMs.
 
 ### What is the connection troubleshoot tool?
 
