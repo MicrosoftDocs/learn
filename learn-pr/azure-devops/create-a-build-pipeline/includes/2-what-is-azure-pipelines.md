@@ -36,6 +36,12 @@ Mara moves to the whiteboard and draws the pipeline.
 
 This is my continuous integration (CI) pipeline. *CI* is the process of automating the build and testing of code every time a team member commits changes to version control. I know we don't do automated testing yet, but give it time.
 
+In this short video, Abel Wang, Cloud Advocate at Microsoft, explains the concept of continuous integration.
+
+**Ask Abel**
+
+> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Continuous-Integration--One-Dev-Question/player?format=ny]
+
 A *pipeline* defines the continuous integration process for the app. It's made up of steps called *tasks* ![Callout 1](../../shared/media/callout-01.png). It can be thought of as a script that defines how your build, test, and deployment steps are run. I'm going to try to map our scripts to tasks.
 
 The pipeline runs when you submit code changes ![Callout 2](../../shared/media/callout-02.png). You can configure the pipeline to run automatically, or you can run it manually. You connect your pipeline to a source repository like GitHub, Bitbucket, or Subversion. We'll use GitHub. One of our tasks for this sprint is to start using GitHub.
