@@ -13,58 +13,56 @@ The Azure Activity Log provides insight into subscription-level events that have
 There is a single Activity Log for each Azure subscription. It provides data about the operations on a resource from the outside. Diagnostic Logs are emitted by a resource and provide information about the operation of that resource. You must enable diagnostic settings for each resource.
 
 1. Sign in to the Azure portal.
-1. Go to **Activity log**.
+1. Go to **Monitor**, then select **Activity log**.
 1. Ensure that a **Log Profile** is set.
-1. If not, Click on **Export**.
+1. If not, Click on **Export** to Event Hub.
 1. Configure the setting.
 1. Select **Save**.
+
+![Screenshot the activity log profile setting blade](../media/6-export-log.png)
 
 ### Ensure that activity log retention is set to 365 days or more - Level 1
 
 Setting the Retention (days) to 0 retains the data forever.
 
-1. Sign in to the Azure portal.
-1. Go to **Activity log**.
-1. Click on **Export**.
-1. Ensure **Retention (days)** is set to **365 or greater**.
-1. Select **Save**.
+1. Follow the steps listed above. Adjust the **Retention days** slider bar.
 
 ### Create an activity log alert for "Creating a policy assignment" - Level 1
 
  Monitoring when a policy is created illustrates who has that privilege. This may help detect a breach or misconfiguration.
 
 1. Sign in to the Azure portal.
-1. Go to **Alerts**.
-1. Select **Add activity log alerts**.
-1. Check for Activity Log Alert for Operation name **Create Policy Assignment**.
+1. Go to **Monitor**, then select **Alerts**.
+1. Select **+ New alert rule**.
+1. Click on **Resource**.
+1. Select **Policy** from the **Filter by resource type** pull down.
+1. Click **Done**.
+
+![Screenshot the activity log profile setting blade](../media/6-resource.png)
 
 ### Create an activity log alert for "Creating, updating, or deleting a Network Security Group" - Level 1
 
 By default, no monitoring alerts are created when NSGs are created/updated/deleted. Changing or deleting a security group can allow internal resources to be accessed from improper sources, or for unexpected outbound network traffic.
 
 1. Sign in to the Azure portal.
-1. Go to **Alerts**.
-1. Select **Add activity log alerts**.
-1. Check for Activity Log Alert for Operation name **Create or update Network Security Group**
-1. Check for Activity Log Alert for Operation name **Delete Network Security Group**
+1. Go to **Monitor**, then select **Alerts**.
+1. Select **+New alert rule**.
+1. Click on **Resource type**.
+1. Select **Network security group** from the **Filter by resource type** pull down.
+1. Click **Done**
 
 ### Create an activity log alerts for "Creating or updating an SQL Server firewall rule" - Level 1
 
 Monitoring for **Create or update SQL Server Firewall Rule** events gives insight into network access changes and may reduce the time it takes to detect suspicious activity.
 
 1. Sign in to the Azure portal.
-1. Go to **Alerts**.
-1. Select **Add activity log alerts**.
-1. Check for Activity Log Alert for Operation name **Create/Update server firewall rule**
+1. Go to **Monitor**, then select **Alerts**.
+1. Select **+New alert rule**.
+1. Click on **Resource type**.
+1. Select **SQL servers** from the **Filter by resource type** pull down.
+1. Click **Done**
 
-### Creating an activity log alert for deleting an SQL Server firewall rule - Level 1
-
-Monitoring for **Delete SQL Server Firewall Rule** events gives insight into network access changes and may reduce the time it takes to detect suspicious activity.
-
-1. Sign in to the Azure portal.
-1. Go to **Alerts**.
-1. Select **Add activity log alerts**.
-1. Check for Activity Log Alert for Operation name **Delete server firewall rule**
+![Screenshot the activity log profile setting blade](../media/6-sql-server.png)
 
 > [!TIP]
 > Remember to select **Save** if you make changes to any of the settings.

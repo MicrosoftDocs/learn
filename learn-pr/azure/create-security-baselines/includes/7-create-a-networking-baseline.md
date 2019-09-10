@@ -22,6 +22,8 @@ It's recommended that you disable direct RDP and SSH access to your Azure VMs fr
 1. Verify that the **Inbound Port Rules** does not have a rule for RDP. For example: `port=3389, protocol = TCP, Source = Any or Internet`
 1. Verify that the **Inbound Port Rules** does not have a rule for SSH. For example: `port=22, protocol = TCP, Source = Any or Internet`
 
+![Screenshot the VM networking blade](../media/7-rdp.png)
+
 ### Restrict SQL Server access from the Internet - Level 1
 
 Firewall systems help prevent unauthorized access to computer resources. If a firewall is turned on but not correctly configured, attempts to connect to SQL Server might be blocked.
@@ -29,23 +31,29 @@ Firewall systems help prevent unauthorized access to computer resources. If a fi
 To access an instance of the SQL Server through a firewall, you must configure the firewall on the computer that is running SQL Server. Allowing ingress for the IP range `0.0.0.0/0` (Start IP of `0.0.0.0` and End IP of `0.0.0.0`) allows open access to any/all traffic potentially making the SQL Database vulnerable to attacks. Ensure that no SQL Databases allow ingress from the Internet.
 
 1. Sign in to the Azure portal.
-1. Go to SQL servers.
+1. Go to SQL databases.
 1. For each SQL server:
-1. Click on **Firewall / Virtual Networks**.
-1. Ensure that the firewall rules exist, and no rule has a Start IP of `0.0.0.0` and ENd IP of `0.0.0.0` or other combinations which allows access to wider public IP ranges.
+1. Click on **Set server Firewall**.
+1. Ensure that the firewall rules exist, and no rule has a Start IP of `0.0.0.0` and End IP of `0.0.0.0` or other combinations which allows access to wider public IP ranges.
 1. Select **Save**.
 
+![Screenshot the VM networking blade](../media/7-firewall.png)
+
 ### Configure the NSG flow log retention period for more than 90 days - Level 2
+
+When you create or update a virtual network in your subscription, Network Watcher will be enabled automatically in your Virtual Network's region. There is no impact to your resources or associated charge for automatically enabling Network Watcher.
 
 Network security group (NSG) flow logs are a feature of Network Watcher that allows you to view information about ingress and egress IP traffic through an NSG. Flow logs are written in JSON format, and show outbound and inbound flows on a per rule basis, the network interface (NIC) the flow applies to, 5-tuple information about the flow (Source/destination IP, source/destination port, and protocol), if the traffic was allowed or denied, and in Version 2, throughput information (Bytes and Packets). Logs can be used to check for anomalies and give insight into suspected breaches.
 
 1. Sign in to the Azure portal.
 1. Select **All services**.
-1. When **Network Watcher** appears in the results, select it.
-1. Select Network Security Group from the list.
-1. Ensure status is set to **On**.
+1. Select **Networking**.
+1. Select **Network Watcher**.
+1. Select **NSG flow logs** under **Logs**.
 1. Ensure **Retention (days)** setting is greater than 90 days.
 1. Select **Save**.
+
+![Screenshot the nsg flow blade](../media/7-nsg-flow.png)
 
 ### Enable Network Watcher - Level 1
 
@@ -55,6 +63,8 @@ Network security group (NSG) flow logs are a feature of Network Watcher that all
 1. In the portal, select **All services**. In the **Filter box**, enter **Network Watcher**. When Network Watcher appears in the results, select it.
 1. Select **Regions**, to expand it, and then select your region.
 1. Select **Enable Network Watcher**.
+
+![Screenshot the nsg flow blade](../media/7-network-watcher.png)
 
 > [!TIP]
 > Remember to select **Save** if you make changes to any of the settings.
