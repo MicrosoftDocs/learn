@@ -26,7 +26,19 @@ And Azure Pipelines works with many different languages and application types. I
 
 **Mara**: Right! Of course, I've got bigger plans. I know you're all going to love this first step, so I want to build on it to give us true continuous integration.
 
-**Amita**: Give me the 5-minute rundown on continuous integration (CI).
+## What is continuous integration?
+
+Continuous integration (CI) is the process of automating the build and testing of code every time a team member commits changes to version control.
+
+CI encourages developers to share their code and unit tests by merging their changes into a shared version control repository after every small task completion. Committing code triggers an automated build system to grab the latest code from the shared repository and to build, test, and validate the full master branch (also known as the trunk or main).
+
+In this short video, Abel Wang, Cloud Advocate at Microsoft, explains the concept of continuous integration.
+
+**Ask Abel**
+
+> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Continuous-Integration--One-Dev-Question/player?format=ny]
+
+**Amita**: Give me the 5-minute rundown on continuous integration.
 
 **Mara**: Let me draw you a picture.
 
@@ -35,12 +47,6 @@ Mara moves to the whiteboard and draws the pipeline.
 ![A hand-drawn illustration of a CI pipeline](../media/2-whiteboard-pipeline-with-callouts.png)
 
 This is my continuous integration (CI) pipeline. *CI* is the process of automating the build and testing of code every time a team member commits changes to version control. I know we don't do automated testing yet, but give it time.
-
-In this short video, Abel Wang, Cloud Advocate at Microsoft, explains the concept of continuous integration.
-
-**Ask Abel**
-
-> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Continuous-Integration--One-Dev-Question/player?format=ny]
 
 A *pipeline* defines the continuous integration process for the app. It's made up of steps called *tasks* ![Callout 1](../../shared/media/callout-01.png). It can be thought of as a script that defines how your build, test, and deployment steps are run. I'm going to try to map our scripts to tasks.
 
