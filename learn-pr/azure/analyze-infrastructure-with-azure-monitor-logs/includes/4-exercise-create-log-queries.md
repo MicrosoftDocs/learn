@@ -1,4 +1,4 @@
-The operations team doesn't currently have enough information about the behavior of their systems to diagnose and resolve problems effectively. To address this issue, the team has configured an Azure Monitor workspace with their Azure services. They'll run Kusto queries to interrogate the status of the system, and attempt to identify the causes of any problems that might occur.
+The operations team doesn't currently have enough information about the behavior of its systems to diagnose and resolve problems effectively. To address this issue, the team has configured an Azure Monitor workspace with their Azure services. They'll run Kusto queries to interrogate the status of the system, and attempt to identify the causes of any problems that might occur.
 
 In particular, the team is interested in monitoring security events to check for possible attempts to break into the system. An attacker could attempt to manipulate the applications running on the system, so the team also want to gather application data for further analysis. The team also suspect that an attacker might want to halt the computers that comprise the system, so the team also want to examine how and when machines are stopped and restarted.
 
@@ -20,7 +20,7 @@ Let's use the **Azure Log Analytics** web site to practice writing queries again
         | take 10
     ```
 
-1. Click **Run** to execute the query and see the results. You can drill into each row in the results to obtain further information.
+1. Select **Run** to execute the query and see the results. You can drill into each row in the results to obtain further information.
 
 1. Sort the data by time, by running the following query.
 
@@ -29,7 +29,7 @@ Let's use the **Azure Log Analytics** web site to practice writing queries again
         | top 10 by TimeGenerated
     ```
 
-1. Enter a query using a filter clause and a time. This query fetches records that are more than 30 minutes old and that have a Level of 10 or more.
+1. Enter a query by using a filter clause and a time. This query fetches records that are more than 30 minutes old and that have a level of 10 or more.
 
     ```kusto
         SecurityEvent
