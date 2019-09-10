@@ -19,8 +19,22 @@
 
 10. In order to make commanding the trucks easier, we should add links to the Commands page for each truck. Navigate through the **Devices** menu to the **Commands** for **RefrigeratedTruck - 1**. Copy the URL, which will be something like **https://refrigerated-trucks.azureiotcentral.com/details/device/1obmjuo/commands**. Now navigate back to the device set dashboard (the one named "All refrigerated trucks"), click **Edit**, and add a **Link** from the library. Call the link something like "Truck 1 commands", and paste in the URL.
 
-If you are up for it, repeat the process for trucks 2 through 5. Though this is not strictly necessary as you now understand the process. By building up the device set dashboard in this way, we can make controlling multiple devices a matter of a few clicks. You could add links to other device pages, device charts or tables for example.
+11. Click **Done**, and test out your link, and order the truck to a customer.
 
-Rather than have link text, if you enter the library **Image** option, you can attach a link to an image on the dashboard.
+## Optional extensions
 
-You have completed this unit, but feel free to order trucks to different customer numbers (valid range is 0 through 9), and get a feel for IoT Central control of remote devices.
+You have almost completed this module, great job. This section provides a few optional ideas to develop your app further.
+
+1. Order trucks to different customer numbers (valid range is 0 through 9), and get a feel for IoT Central control of remote devices.
+
+2. Rather than have link text, if you enter the library **Image** option, you can attach a link to an image on the dashboard. Consider adding five images to your dashboard, each linking to the Commands page for one of the five trucks. In the following image, Truck number 4 has just been directed to a customer:
+
+![Device set with five images for commands](../media/refrigerated-trucks-deviceset-images.png)
+
+By building up the device set dashboard in this way, we can make controlling multiple devices a matter of a few clicks. You could add links, or images with links, to other device pages, device charts or tables for example.
+
+3. Consider creating a _Job_, a command that applies to all devices (or, all devices with exceptions). Such a job could change the optimal temperature for all trucks, or perhaps recall all trucks.
+
+## Next steps
+
+To finish the module, pass the following knowledge check!

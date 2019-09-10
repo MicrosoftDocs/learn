@@ -18,7 +18,6 @@ abstract: |
   - Add elements including telemetry, location, commands to the device template
   - Navigate the IoT Central app
 prerequisites:
-  - Azure account
   - An introductory knowledge of the purpose of Azure IoT
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: false
@@ -37,7 +36,6 @@ units:
 - learn.your-first-iot-central-app,test-your-iot-device
 - learn.your-first-iot-central-app,add-multiple-devices
 - learn.your-first-iot-central-app,create-a-device-set-dashboard
-- learn.your-first-iot-central-app,create-a-job
 - learn.your-first-iot-central-app,summary
 badge:
   uid: learn.iot.iot-test.badge

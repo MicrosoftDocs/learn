@@ -563,7 +563,7 @@ function sendDeviceProperties(deviceTwin) {
     {
         // Format is:
         // <Property field name in Azure IoT Central> ":" <value in NodeJS app>
-        truckIdent: truckIdentification,
+        truckId: truckIdentification,
     };
 
     console.log(' * Property - truckId: ' + truckIdentification);

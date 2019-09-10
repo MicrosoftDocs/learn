@@ -72,7 +72,7 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
 
 9. The connection string you will use in the Node.JS app (that follows in the next unit) starts with **HostName=**, so separate off this part of the string in your text tool, so you have one line containing a string that looks similar to the following (though the xxxx parts will be much longer):
 
-```
+```js
 HostName=iotc-xxxx.azure-devices.net;DeviceId=xxxx;SharedAccessKey=xxxx
 ```
 

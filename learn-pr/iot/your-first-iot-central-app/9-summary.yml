@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.your-first-iot-central-app.9-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 09/01/2019
+  author: PeterTurcan
+  ms.author: v-pettur
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Summary
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'What Id is identical for all devices connected to one IoT Central app?'
+    choices: 
+    - content: 'Scope Id'
+      isCorrect: true
+      explanation: Correct, the Scope Id identifies the IoT Central app.
+    - content: 'Device Id'
+      isCorrect: false
+      explanation: Nope, the Device Id is unique to each device.
+    - content: 'Primary Key'
+      isCorrect: false
+      explanation: Nope, the Primary Key is unique to each device.
+
+  - content: 'What statement most accurately describes a Device set?'
+    choices: 
+    - content: 'All devices of a device template, no exceptions.'
+      isCorrect: false
+      explanation: There can be exceptions.
+    - content: 'All devices of a device template, with exceptions based on device properties.'
+      isCorrect: true
+      explanation: Correct, any number of exceptions can be created, based on device properties.
+    - content: 'All devices of a device template, with exceptions based on device settings, properties, or measurements.'
+      isCorrect: false
+      explanation: Settings and measurements cannot be used to define device sets.
+    - content: 'All devices that have a setting that the device belongs to a device set.'
+      isCorrect: false
+      explanation: There is no such setting.
+
+  - content: 'What is the process of authenticating devices to IoT Central know as?'
+    choices: 
+    - content: 'Authenticating'
+      isCorrect: false
+      explanation: Good try, but no.
+    - content: 'Servicing'
+      isCorrect: false
+      explanation: Incorrect
+    - content: 'Provisioning'
+      isCorrect: true
+      explanation: Correct
+
+  - content: 'If you add a map to a dashboard, device locations are added by default, what additional information can be added for each device?'
+    choices: 
+    - content: 'One state measurement'
+      isCorrect: true
+      explanation: Correct, in our scenario Contents state, Cooling system state, or Truck state, could be added to the map, in the form of a color code.
+    - content: 'One telemetry measurement'
+      isCorrect: false
+      explanation: Incorrect
+    - content: 'One event measurement'
+      isCorrect: false
+      explanation: Incorrect
+    - content: 'Nothing'
+      isCorrect: false
+      explanation: Incorrect, one additional piece of information can be added.

@@ -13,3 +13,32 @@ title: Test your IoT Central device
 durationInMinutes: 10
 content: |
   [!include[](includes/6-test-your-iot-device.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'A connection string is an encoded version of what?'
+    choices: 
+    - content: 'Device Id and Primary Key'
+      isCorrect: false
+      explanation: More information is needed.
+    - content: 'Scope Id, Device Id, and Primary Key'
+      isCorrect: true
+      explanation: Correct.
+    - content:  'Scope Id, Device Id, Primary Key, and Secondary Key'
+      isCorrect: false
+      explanation: Secondary Key is not needed.
+
+  - content: 'What does the following Node.JS statement do:  setInterval(sendTruckTelemetry, 5000);?'
+    choices: 
+    - content: 'Specifies that the sendTruckTelemetry function should be called every 5 seconds.'
+      isCorrect: true
+      explanation: Correct.
+    - content: 'Specifies that the sendTruckTelemetry function should be called every 0.5 seconds.'
+      isCorrect: false
+      explanation: Not the correct interval.
+    - content: 'Specifies that sendTruckTelemetry is a data structure, that should be communicated at the specified interval.'
+      isCorrect: false
+      explanation: sendTruckTelemetry is not a data structure.
+
+  
