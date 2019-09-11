@@ -108,7 +108,7 @@ The final step is to use the Linux `traceroute` utility to show how traffic is b
     Connection to 52.165.151.216 closed.
     ```
 
-    Notice that the first hop is to 10.0.2.4. This address is the private IP address for *nva*. The second hop is to the address of *private* (10.0.1.4). Remember that in the first exercise, you added this route to the route table and linked the table to the *publicsubnet*  subnet. So all traffic from *public* to *private* is being routed through network virtual appliance.
+    Notice that the first hop is to 10.0.2.4. This address is the private IP address for *nva*. The second hop is to the address of *private* (10.0.1.4). Remember that in the first exercise, you added this route to the route table and linked the table to the *publicsubnet*  subnet. So all traffic from *public* to *private* is being routed through network virtual appliance.
 
    ![Route from public to private](../media/6-public-private-route.svg)
 
