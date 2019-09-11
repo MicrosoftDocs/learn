@@ -12,9 +12,9 @@ The pool resource requirements are set based on the overall needs of the group. 
 
 ## When to use an elastic pool?
 
-SQL elastic pools are ideal when you have several SQL databases that have a low average utilization but have infrequent but high utilization spikes. In this scenario, you can allocate enough capacity in the pool to manage the spikes for the group but the total resources can be less than the sum of all of the peak demand of all of the databases. Since the spikes are infrequent, a spike from one database will be unlikely to impact the capacity of the other databases in the pool.
+SQL elastic pools are ideal when you have several SQL databases that have a low average utilization, but have infrequent, high utilization spikes. In this scenario, you can allocate enough capacity in the pool to manage the spikes for the group, but the total resources can be less than the sum of all of the peak demand of all of the databases. Since the spikes are infrequent, a spike from one database will be unlikely to impact the capacity of the other databases in the pool.
 
-In the case of our fitness company, the individual locations may run promotions at different times of year or see spikes in demand during regional holidays.
+In our fitness company scenario, the individual locations may run promotions at different times of year or see spikes in demand during regional holidays.
 
 ### How many databases to add to a pool?
 
@@ -30,7 +30,7 @@ SQL elastic pools must be hosted in a SQL server. You'll specify an existing ser
 
 Like many Azure resources, elastic pools can be created from the Azure portal, or the Azure CLI using the `az sql elastic-pools create` command, or via PowerShell using the `New-AzSqlElasticPool` command.
 
-In the next unit we'll use the portal to create a SQL elastic pool. 
+In the next unit, we'll use the portal to create a SQL elastic pool. 
 
 ## Add databases to an elastic pool
 
