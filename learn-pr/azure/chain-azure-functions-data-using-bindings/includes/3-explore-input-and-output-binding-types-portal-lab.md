@@ -23,12 +23,10 @@ Let's create a function app that we'll use throughout this entire module. A func
     | **Resource Group**|  Select **Use existing** and choose _<rgn>[sandbox resource group name]</rgn>_ | Name of the resource group in which to create your function app. |
     | **OS** | Windows | The operating system that hosts the function app.  |
     | **Hosting Plan** |   Consumption plan | Hosting plan that defines how resources are allocated to your function app. In the default **Consumption Plan**, resources are added dynamically as required by your functions. In this serverless hosting model, you only pay for the time your functions run.   |
-    | **Location** | Select from the list | Choose the nearest one to you that is also one of the allowed *Sandbox regions* listed below. |
+    | **Location** | Select from the list | Choose the region nearest you. |
     | **Runtime Stack** | Node.js | The sample code in this module is written in JavaScript.  |
     | **Storage** |  Globally unique name |  Name of the new storage account used by your function app. Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog populates the field with a unique name that is derived from the name you gave the app. However, feel free to use a different name or even an existing account. |
-
-    ### Sandbox regions
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+    | **Application Insights** |  Leave default |  Options for collecting monitoring data with Application Insights. |
 
 1. Select **Create** to provision and deploy the function app.
 
@@ -57,7 +55,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. In the list of all templates available to this function app, select **HTTP Trigger** .
 
-1. On the **New Function** screen, change the name if you want, leave the **Authorization level** as _Function_, and click **Create**.
+1. On the **New Function** screen, change the name if you want, leave the **Authorization level** as _Function_, and click **Create**. The Authorization level option determines what kind of key is used to securely access your function. Choosing _Function_ requires callers of your function to provide a function-specific key with their requests.
 
 1. In your new function, click the **</> Get function URL** link at the top right, select **default (Function key)**, and then select **Copy**.
 

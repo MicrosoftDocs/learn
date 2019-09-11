@@ -11,7 +11,6 @@ metadata:
   ROBOTS: NOINDEX
 title: Exercise - Create an Azure function triggered by a webhook
 durationInMinutes: 6
-interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/3-exercise-create-function-triggered-by-webhook.md)]

@@ -153,7 +153,7 @@ Our function is expecting an array of temperature readings. The following JSON s
 
 Next, we'll replace the default code in our function with the following code that implements our business logic.
 
-1. Open the **index.js** file and replace it with the following code.
+1. Open the **index.js** file and replace it with the following code. Make sure to save the file after updating it.
 
 ```javascript
 module.exports = function (context, req) {
