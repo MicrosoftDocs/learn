@@ -63,7 +63,7 @@ Here's the handout that Mara prepared. The information is based on DevOps resear
 
 DevOps helps companies experiment with ways to increase customer adoption and satisfaction. It can lead to better organizational performance, and often to higher profitability and market share.
 
-It uses metrics to create four categories by which to compare _elite performers_ with low performers. 
+It uses metrics to create four categories by which to compare _elite performers_ with low performers.
 
 Elite performers:
 
@@ -88,6 +88,14 @@ Elite performers:
 How you implement cloud infrastructure also matters. The cloud improves software delivery performance, and teams that adopt essential cloud characteristics are more likely to become elite performers.
 
 Outsourcing can save money and provide a flexible labor pool, but it must be used in the correct areas. Low-performing teams are more likely to outsource whole functions (like testing and operations) than their high-performing counterparts.
+
+### The bottom line
+
+DevOps is a key reason many elite performers are able to deliver value to customers, in the form of new features and improvements, more quickly than their competitors. In this short video, Abel explains why you should learn more about DevOps.
+
+**Ask Abel**
+
+> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/Why-should-I-care-about-DevOps--One-Dev-Question/player?format=ny]
 
 ## What DevOps is not
 

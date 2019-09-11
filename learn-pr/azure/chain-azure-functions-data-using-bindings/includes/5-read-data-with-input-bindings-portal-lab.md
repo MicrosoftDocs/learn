@@ -1,6 +1,6 @@
 Imagine that you want to create a simple bookmark lookup service. Your service is read-only initially. If users want to find an entry, they send a request with the ID of the entry and you return the URL. The following flowchart explains the flow:
 
-![Flow diagram showing the process of finding a bookmark in our Azure Cosmos DB back-end. When the Azure function receives a request with the bookmark id, it first checks whether the request is valid, if not an error response is generated. For valid requests, the function checks if the bookmark id is present in the Azure Cosmos DB database, if not present an error response is generated. If the bookmark id is found, a success response is generated.](../media/5-find-bookmark-flow-small.png)
+![Flow diagram showing the process of finding a bookmark in our Azure Cosmos DB back-end. When the Azure function receives a request with the bookmark ID, it first checks whether the request is valid, if not an error response is generated. For valid requests, the function checks if the bookmark ID is present in the Azure Cosmos DB database, if not present an error response is generated. If the bookmark ID is found, a success response is generated.](../media/5-find-bookmark-flow-small.png)
 
 When users send you a request with some text, you try to find an entry in your back-end database that contains this text as a key or ID. You return a result that indicates whether you found the entry.
 
@@ -27,13 +27,9 @@ A database account is a container for managing one or more databases. Before we 
     |Resource Group     |   <rgn>[sandbox resource group name]</rgn>      |  This field is pre-populated with the resource group from your sandbox.       |
     |Account Name     | *Enter a unique name*        |  Enter a unique name to identify this Azure Cosmos DB account. Because `documents.azure.com` is appended to the name that you provide to create your URI, use a unique but identifiable name.<br><br>The account name can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 50 characters.       |
     |API     | Core (SQL)        |  The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (document database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently require a separate account. <br><br>Select **Core (SQL)**. At this time, the Azure Cosmos DB trigger, input bindings, and output bindings only work with SQL API and Graph API accounts.        |
-    |Location     | Select from the list        | Choose the nearest one to you that is also one of the allowed *Sandbox regions* listed below.        |
+    |Location     | Select from the list        | Choose the region nearest to you.        |
 
      Leave all other fields in the **New account** blade at their default values.
-
-    ### Sandbox regions
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
-
 
 1. Select **Review + create** to review and validate the configuration. 
 
