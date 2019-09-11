@@ -5,6 +5,15 @@ Azure IoT Central encompasses a range of underlying technologies that work great
 
 One of the purposes of this module is to help you decide if there is enough features in IoT Central to support the scenarios you are likely to need, or whether going deeper into the underlying component technologies will be necessary. IoT Central is by far the easier option, so let's investigate what it is capable of with a fun and involved scenario.
 
+## Learning objectives
+
+In this module you will:
+
+- Create an Azure IoT Central custom app, using the IoT Central portal
+- Create a device template for a custom device, using the IoT Central portal
+- Add Node.JS code to support simulated devices, with routes selected by Azure Maps
+- Monitor and command the simulated devices, from an IoT Central dashboard
+
 ## The scenario
 
 Suppose your run a company that operates a fleet of refrigerated trucks.
@@ -16,14 +25,6 @@ Suppose your run a company that operates a fleet of refrigerated trucks.
  You have a number of customers within a city, and a base that you operate from. You must command each truck to take its contents and deliver it to any one customer. However, the cooling system may fail on any one of your trucks, and if the contents does start to melt, you will need the option of instructing the truck to return to base and dump the contents. Alternatively, of course, you can deliver the contents to another customer who might be nearer to the truck when you become aware the contents are melting. In order to make these decisions, you will need an up-to-date picture of all that is going on with your trucks, certainly including their location on a map, the state of the cooling system, the state of the contents, and the ability to redirect or recall the trucks quickly.
 
 IoT Central provides all you need to handle this scenario.
-
-In this module you will:
-
-- Create an Azure IoT Central custom app
-- Create a device template for a refrigerated truck
-- Perform initial tests of the device template using a default simulated device
-- Add code to support simulated refrigerated trucks with routes selected by Azure Maps
-- Track all of the trucks on an IoT Central dashboard
 
 ![Trucks on routes visualized in IoT Central app](../media/refrigerated-trucks-intro-map.png)
 

@@ -28,7 +28,6 @@ quiz:
     - content: 'Primary Key'
       isCorrect: false
       explanation: Nope, the Primary Key is unique to each device.
-
   - content: 'What statement most accurately describes a Device set?'
     choices: 
     - content: 'All devices of a device template, no exceptions.'
@@ -43,7 +42,6 @@ quiz:
     - content: 'All devices that have a setting that the device belongs to a device set.'
       isCorrect: false
       explanation: There is no such setting.
-
   - content: 'What is the process of authenticating devices to IoT Central know as?'
     choices: 
     - content: 'Authenticating'
@@ -51,11 +49,10 @@ quiz:
       explanation: Good try, but no.
     - content: 'Servicing'
       isCorrect: false
-      explanation: Incorrect
+      explanation: Incorrect.
     - content: 'Provisioning'
       isCorrect: true
-      explanation: Correct
-
+      explanation: Correct.
   - content: 'If you add a map to a dashboard, device locations are added by default, what additional information can be added for each device?'
     choices: 
     - content: 'One state measurement'
@@ -63,10 +60,10 @@ quiz:
       explanation: Correct, in our scenario Contents state, Cooling system state, or Truck state, could be added to the map, in the form of a color code.
     - content: 'One telemetry measurement'
       isCorrect: false
-      explanation: Incorrect
+      explanation: Incorrect, telemetry measurements could be a bit complicated to show with just a color.
     - content: 'One event measurement'
       isCorrect: false
-      explanation: Incorrect
+      explanation: Incorrect, events are shown elsewhere.
     - content: 'Nothing'
       isCorrect: false
       explanation: Incorrect, one additional piece of information can be added.

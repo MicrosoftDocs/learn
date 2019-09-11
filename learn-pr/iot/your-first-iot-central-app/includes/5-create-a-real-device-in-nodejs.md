@@ -1,28 +1,24 @@
 
 ## Create the Node.JS app
 
-Using Visual Studio Code.
+### With Visual Studio Code
 
-TBD
+1. Create an empty folder where you develop your code, called, for example "Refrigerated Trucks".
 
-Using Visual Studio
+2. Open Visual Studio Code (VS Code), and create a new file. Name the new file "app.js", and save it to the "Refrigerated Trucks" folder. By using the .js file extension, VS Code interprets this file as JavaScript and evaluates the contents with the JavaScript language service.
+
+3. After you have entered the code below into the app.js file, you can run it from a terminal (including the terminal within VS Code) by entering ```node app.js```.
+
+
+### With Visual Studio
+
+1. Create a new blank Node.JS project.
 
 ![Create a new blank Node.JS project](../media/refrigerated-trucks-vs-project.png)
 
+2. Install azure-iot-device and azure-maps-rest npm packages. Right-click on the **npm** entry in Solution Explorer, and select **Install New npm Packages...**. 
 
-### Install Azure IoT and Azure Maps npm packages
-
-Install azure-iot-device and azure-maps-rest npm packages.
-
-Using Visual Studio Code.
-
-TBD
-
-Using Visual Studio.
-
-1. Right-click on the **npm** entry in Solution Explorer, and select **Install New npm Packages...**.
-
-2. In the dialog that follows, search for and install **azure-iot-device**, then **azure-maps-rest**.
+3. In the dialog that follows, search for and install **azure-iot-device**, then **azure-maps-rest**.
 
 ## Write the Node.JS app
 
@@ -79,10 +75,10 @@ const dumpingTime = 400;            // Time to dump melted contents.
 const tooWarmThreshold = 2;         // Degrees C that is too warm for contents.
 const tooWarmtooLong = 60;          // Time in seconds for contents to start melting if temps are above threshold.
 
-var timeOnCurrentTask = 0;          // Time on current task in seconds.
-var interval = 60;                  // Time interval in seconds.
-var tooWarmPeriod = 0;              // Time that contents are too warm in seconds.
-var temp = -2;                      // Current temp of contents in degrees C.
+var timeOnCurrentTask = 0;          // Time on current task, in seconds.
+var interval = 60;                  // Simulated time interval, in seconds.
+var tooWarmPeriod = 0;              // Time that contents are too warm, in seconds.
+var temp = -2;                      // Current temp of contents, in degrees C.
 var baseLat = 47.644702;            // Base position latitude.
 var baseLon = -122.130137;          // Base position longitude.
 var currentLat = baseLat;           // Current position latitude.

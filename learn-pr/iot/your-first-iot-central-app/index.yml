@@ -13,12 +13,16 @@ summary: >
   This module builds an IoT Central app to monitor and command a fleet of refrigerated trucks. This first units create the app, and define a device template for a refrigerated truck. After this, Node.JS code is added for a single truck, and after this is tested, code is added for multiple trucks.
 abstract: | 
   In this module, you will:
-  - Create an IoT Central application
-  - Create a device template
-  - Add elements including telemetry, location, commands to the device template
-  - Navigate the IoT Central app
-prerequisites:
+  - Create an Azure IoT Central custom app, using the IoT Central portal
+  - Create a device template for a custom device, using the IoT Central portal
+  - Add Node.JS code to support simulated devices, with routes selected by Azure Maps
+  - Monitor and command the simulated devices, from an IoT Central dashboard
+prerequisites: | 
   - An introductory knowledge of the purpose of Azure IoT
+  -	Ability to navigate Azure IoT portal 
+  -	Ability to use NodeJS at the beginner level 
+  -	Experience using Visual Studio, or Visual Studio Code, at the beginner level 
+  - Must have, or be able to open, an Azure Maps account 
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: false
 levels:
