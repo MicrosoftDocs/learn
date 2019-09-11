@@ -26,7 +26,7 @@ quiz:
         explanation: "This answer is incorrect. A network virtual appliance doesn't load balance traffic across VMs for DR purposes. Such load balancing is the role of Azure Application Gateway and Azure Traffic Manager."
       - content: "To control incoming traffic from the perimeter network and allow only traffic that meets security requirements to pass through."
         isCorrect: true
-        explanation: "This is the correct answer. A network virtual appliance acts like a firewall. It checks all inbound and outbound traffic, and it secures your environment by selectively allowing or denying the traffic."
+        explanation: "This is the correct answer. A network virtual appliance acts like a firewall. It checks all inbound and outbound traffic, and it secures your environment by allowing or denying the traffic."
       - content: "To control who can access Azure resources from the perimeter network."
         isCorrect: false
         explanation: "This answer is incorrect. To control inbound access to Azure, you would use authentication and authorization policies. Network virtual appliances aren't used to authenticate users."
@@ -38,9 +38,9 @@ quiz:
       - content: "Using Azure CLI, deploy a Linux VM in Azure, connect this VM to your production virtual network, and assign a public IP address."
         isCorrect: false
         explanation: "This answer is incorrect. Simply deploying a VM won't let it function as a network virtual appliance."
-      - content: "Using the Azure portal, deploy a Windows 2016 Server instance. Next, create an Azure Application Gateway and add the Windows 2016 Server instance as a target endpoint."
+      - content: "Using the Azure portal, deploy a Windows 2016 Server instance. Next, using Azure Application Gateway, add the Windows 2016 Server instance as a target endpoint."
         isCorrect: false
         explanation: "This answer is incorrect. This solution only deploys a server that sits behind a load balancer. This server deployment has no effect on deploying a network virtual appliance."
       - content: "Download a virtual appliance from Azure Marketplace and configure the appliance to connect to the production and perimeter networks."
         isCorrect: false
-        explanation: "This answer is incorrect. Installing a virtual appliance and connecting it to your networks forms half of the solution. On its own, that partial solution won't control the flow of traffic."             
+        explanation: "This answer is incorrect. Simply installing a virtual appliance and connecting it to your networks forms only half of the solution and won't control the flow of traffic."             

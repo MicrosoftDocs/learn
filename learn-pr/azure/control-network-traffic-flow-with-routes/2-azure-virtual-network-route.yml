@@ -34,13 +34,13 @@ quiz:
       choices:
       - content: "To connect virtual networks together in the same region."
         isCorrect: true
-        explanation: "This is the correct answer. Virtual network peering is used to connect two or more virtual networks together. Once peered, the networks become one network, and resources across virtual networks can communicate with one another."
+        explanation: "This is the correct answer. Virtual network peering is used to connect multiple virtual networks together. Once peered, the networks become one network, and resources across virtual networks can communicate with one another."
       - content: "To assign public IP addresses to all of your resources across multiple virtual networks."
         isCorrect: false
         explanation: "This answer is incorrect. Virtual network peering has no link for assigning public IPs to your resources. Virtual network peering is used for connecting networks and has no effect on public IP address assignment."
       - content: "So that load balancers can control traffic flow across your virtual networks."
         isCorrect: false
-        explanation: "This answer is incorrect. Load balancers aren't required for controlling communication between virtual networks. Load balancers control traffic between two or more endpoints. Virtual network peering is used to connect virtual networks together."
+        explanation: "This answer is incorrect. Load balancers aren't required for controlling communication between virtual networks. Load balancers control traffic among multiple endpoints. Virtual network peering is used to connect virtual networks together."
       - content: "To run custom reports that scan and identify what resources are running across all of your virtual networks, as opposed to running reports on each virtual network."
         isCorrect: false
         explanation: "This answer is incorrect. You can run reports at the subscription level to identify what resources are running. Virtual network peering has no effect on these reports."

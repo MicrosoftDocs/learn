@@ -10,7 +10,7 @@ In the following steps, you'll deploy an NVA. You'll then update the Azure virtu
 
 ## Deploy the network virtual appliance
 
-To build the NVA, you'll deploy an Ubuntu LTS instance.
+To build the NVA, deploy an Ubuntu LTS instance.
 
 1. In Cloud Shell, run the following command to deploy the appliance. Replace `<password>` with a suitable password of your choice for the **azureuser** admin account:
 
@@ -70,7 +70,7 @@ In the next steps, IP forwarding for the **nva** network appliance is enabled. W
     az network nic update --name $NICNAME \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --ip-forwarding true
-   ```
+    ```
 
 ## Enable IP forwarding in the appliance
 

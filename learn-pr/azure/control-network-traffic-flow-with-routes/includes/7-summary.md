@@ -1,4 +1,4 @@
-In this module, you learned how to customize routes in an Azure virtual network and how to redirect the traffic flow through a network virtual appliance. You also learned that you can create your own custom network virtual appliance by deploying an Azure virtual machine.
+In this module, you learned how to customize routes in an Azure virtual network and how to redirect the traffic flow through a network virtual appliance. You also learned how to create your own custom network virtual appliance by deploying an Azure virtual machine.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
