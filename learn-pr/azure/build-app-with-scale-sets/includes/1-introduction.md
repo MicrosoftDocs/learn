@@ -16,6 +16,6 @@ In this module, you'll:
 
 ## Prerequisites
 
-- Basic knowledge of Azure Virtual Machines
+- Basic knowledge of Azure virtual machines
 - Basic knowledge of load-balancing concepts
   
