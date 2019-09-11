@@ -63,7 +63,7 @@ The duration's aggregation calculation can differ from the time grain's aggregat
 
 When a scale rule detects that a metric has crossed a threshold, it can do a scale action. A scale action can be a *scale-out* or a *scale-in*. A scale-out action increases the number of instances. A scale-in action reduces the instance count. 
 
-A scale action uses an operator such as *less than*, *greater than*, or *equal to* to determine how to react to the threshold. Scale-out actions typically use the *greater than* operator to compare the metric value to the threshold. Scale-in actions tend to compare the metric value to the threshold by using the *less than* operator. A scale action also sets the instance count to a specific level rather than incrementing or decrementing the number available.
+A scale action uses an operator such as *less than*, *greater than*, or *equal to* to determine how to react to the threshold. Scale-out actions typically use the *greater than* operator to compare the metric value to the threshold. Scale-in actions tend to compare the metric value to the threshold by using the *less than* operator. A scale action also sets the instance count to a specific level rather than increasing or decreasing the number available.
 
 A scale action has a *cool down* period, specified in minutes. During this period, the scale rule isn't triggered again. The cool-down allows the system to stabilize between scale events. Starting or shutting down instances takes time, so any metrics gathered might not show significant changes for several minutes. The minimum cool-down period is five minutes.
 

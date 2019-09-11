@@ -46,6 +46,6 @@ In this exercise, you'll use a custom script extension to roll out a new version
             --query ipAddress
     ```
 
-1. In your web browser, go to the public address of the scale set load balancer. Verify that you see the message **This is the updated app installed on the Virtual Machine Scale Set**.
+1. In your web browser, go to the public address of the scale set load balancer. Verify that you see the message **This is the updated app installed on the Virtual Machine Scale Set !**.
 
     ![Screenshot of the updated web app](../media/7-web-app.png)
