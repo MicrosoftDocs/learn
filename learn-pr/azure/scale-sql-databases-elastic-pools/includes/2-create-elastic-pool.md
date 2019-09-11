@@ -18,7 +18,7 @@ In the case of our fitness company, the individual locations may run promotions 
 
 ### How many databases to add to a pool?
 
-The general guidance is, if the combined resources you would need for individual databases to meet capacity spikes is more than 1.5 times the capacity required for the elastic pool, than the pool will be cost effective.
+The general guidance is, if the combined resources you would need for individual databases to meet capacity spikes is more than 1.5 times the capacity required for the elastic pool, then the pool will be cost effective.
 
 At a minimum, it is recommended to add at least two S3 databases or fifteen S0 databases to a single pool for it to have potential cost savings.
 
