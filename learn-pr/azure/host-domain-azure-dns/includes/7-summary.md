@@ -1,16 +1,10 @@
-In this module, you learned about the Azure DNS service, what it offers and how you can use it.
+Your company wanted to manage all their infrastructure and related domain name information in one place.
 
-You explored setting up and configuring a DNS zone, and now understand how to change the NS records at the domain registrar to use the DNS zone.
+You've seen how easy it was to manage DNS information by using an Azure DNS zone. The first step is changing the NS records at your domain registrar to point to it. You also learned how you could use Azure aliases to override the static A/AAAA/CNAME record to provide a dynamic reference to your resources.
 
-You learned what domain apex records are and how to create DNS zone records.
-
-Finally, you learned how you can use Azure alerts to override the static A/AAAA/CNAME record to provide a dynamic reference to other resources.
+Using a DNS Zone has improved your companies administration of resources, with your staff only needing one place to manage DNS-related tasks. Compared to managing the information between two or more different companies.
 
 ## Clean up
 
-If you haven't already done so, take a few moments to clean up your Azure platform. 
-
 <!-- Cleanup sandbox -->
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
-
-If you are using your own personal Azure portal, be sure to delete the resource groups associated with this module. Which will remove any resources associated and avoid any unnecessary charges.

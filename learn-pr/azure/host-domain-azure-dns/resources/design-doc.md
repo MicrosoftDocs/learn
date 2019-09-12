@@ -125,6 +125,19 @@ git clone https://github.com/GeekEffect/load-balancer-setup.git
 cd load-balancer-setup
 bash setup.sh
 
+## Sanbox requirements
+
+Microsoft.Compute/availabilitySets
+Microsoft.Compute/disks
+Microsoft.Compute/virtualMachines
+Microsoft.Network/dnszones
+Microsoft.Network/loadBalancers
+Microsoft.Network/networkInterfaces
+Microsoft.Network/networkSecurityGroups
+Microsoft.Network/publicIPAddresses
+Microsoft.Network/virtualNetworks
+
+
 ## Resources
 
 - [What is Azure DNS?](https://docs.microsoft.com/azure/dns/dns-overview)
@@ -134,3 +147,4 @@ bash setup.sh
 - [Tutorial: Create DNS records in a custom domain for a web app](https://docs.microsoft.com/en-us/azure/dns/dns-web-sites-custom-domain)
 - [Tutorial: Create an Azure DNS private zone using the Azure portal](https://docs.microsoft.com/azure/dns/private-dns-portal)
 - [Overview of DNS zones and records](https://docs.microsoft.com/azure/dns/dns-zones-records)
+
