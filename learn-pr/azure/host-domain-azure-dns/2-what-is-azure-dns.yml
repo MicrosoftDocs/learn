@@ -26,16 +26,16 @@ quiz:
       explanation: Azure DNS does not allow domain registration. It primarily allows you to host your domain, and manage DNS zone records.
     - content: Manage and host your registered domain and associated records
       isCorrect: true
-      explanation: Azure DNS allows you to host your registered domains, control and configure the domain records, like A, CNAME, MX and setup alias records.
+      explanation: Azure DNS allows you to host your registered domains, control and configure the domain records, like A, CNAME, MX, and setup alias records.
   - content: What security features does Azure DNS provide?
     choices:
-    - content: Role based access control (RBAC), Activity Logs and Resource Locking
+    - content: Role-based access control (RBAC), Activity Logs, and Resource Locking
       isCorrect: true
-      explanation: Azure DNS is built on Resource Manager which provides security across all resources in Azure DNS.
-    - content: Role based access control (RBAC), Activity Logs and Azure threat detection.
+      explanation: Azure DNS is built on Resource Manager that provides security across all resources in Azure DNS.
+    - content: Role-based access control (RBAC), Activity Logs, and Azure threat detection.
       isCorrect: false
       explanation: Azure DNS does provide RBAC, and Activity logs, but threat detection is handled by Azure Security Manager.
-    - content: Role based access control (RBAC), Activity Logs and Azure infrastructure security.
+    - content: Role-based access control (RBAC), Activity Logs, and Azure infrastructure security.
       isCorrect: false
       explanation: Azure DNS does provide RBAC, and Activity logs, but infrastructure security is handled by Azure Security Manager.
   - content: What kind of DNS record would you need to create to map one or more IP addresses against a single domain?
