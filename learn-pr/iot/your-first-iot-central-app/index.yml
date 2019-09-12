@@ -33,14 +33,14 @@ products:
 - azure-iot-central
 - azure-maps
 units:
-- learn.your-first-iot-central-app,1-introduction
-- learn.your-first-iot-central-app,2-create-a-device-template
-- learn.your-first-iot-central-app,3-monitor-a-simulated-device
-- learn.your-first-iot-central-app,4-setup-your-development-environment
-- learn.your-first-iot-central-app,5-create-a-real-device-in-nodejs
-- learn.your-first-iot-central-app,6-test-your-iot-device
-- learn.your-first-iot-central-app,7-add-multiple-devices
-- learn.your-first-iot-central-app,8-create-a-device-set-dashboard
-- learn.your-first-iot-central-app,9-summary
+- learn.your-first-iot-central-app.1-introduction
+- learn.your-first-iot-central-app.2-create-a-device-template
+- learn.your-first-iot-central-app.3-monitor-a-simulated-device
+- learn.your-first-iot-central-app.4-setup-your-development-environment
+- learn.your-first-iot-central-app.5-create-a-real-device-in-nodejs
+- learn.your-first-iot-central-app.6-test-your-iot-device
+- learn.your-first-iot-central-app.7-add-multiple-devices
+- learn.your-first-iot-central-app.8-create-a-device-set-dashboard
+- learn.your-first-iot-central-app.9-summary
 badge:
   uid: learn.iot.iot-test.badge
