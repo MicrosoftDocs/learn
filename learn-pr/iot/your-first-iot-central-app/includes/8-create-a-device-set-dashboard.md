@@ -11,7 +11,7 @@
 4. Click **Save**.
 5. Click  **Dashboard** on the bar, click **Edit**, then **Map** in the library of options. Give the map a title, such as "Delivery Map", the **Location** entry should just have the one option (**Location**), and select one of the three states to be displayed, say **Truck state**.
 6. Click **Save**.
-7. Click **Grid** in the library options, name it something like "Trucks", and add **Truck Id** and **Optimal temperature** to the columns to be displayed. And again, click **Save**.
+7. Click **Grid** in the library options, name it something like "Trucks", and add **Truck ID** and **Optimal temperature** to the columns to be displayed. And again, click **Save**.
 8. Click **Done** to save your device set dashboard.
 9. You may need to zoom out a bit on your Delivery Map, but you should get a map with five trucks at base.
 
@@ -27,11 +27,11 @@ You have almost completed this module, great job. This section provides a few op
 
 1. Order trucks to different customer numbers (valid range is 0 through 9), and get a feel for IoT Central control of remote devices.
 
-2. Rather than have link text, if you enter the library **Image** option, you can attach a link to an image on the dashboard. Consider adding five images to your dashboard, each linking to the Commands page for one of the five trucks. In the following image, Truck number 4 has just been directed to a customer:
+2. Rather than have link text, if you enter the library **Image** option, you can attach a link to an image on the dashboard. Consider adding five images to your dashboard, each linking to the Commands page for one of the five trucks. In the following image, Truck number 4 has been directed to a customer, the others remain at base:
 
 ![Device set with five images for commands](../media/refrigerated-trucks-deviceset-images.png)
 
-By building up the device set dashboard in this way, we can make controlling multiple devices a matter of a few clicks. You could add links, or images with links, to other device pages, device charts or tables for example.
+By building up the device set dashboard in this way, we can make controlling multiple devices a matter of a few clicks. You could add links, or images with links, to other device pages (the chart view, or table view, for example).
 
 3. Consider creating a _Job_, a command that applies to all devices (or, all devices with exceptions). Such a job could change the optimal temperature for all trucks, or perhaps recall all trucks.
 

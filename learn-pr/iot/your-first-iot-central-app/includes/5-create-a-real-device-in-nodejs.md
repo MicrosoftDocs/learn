@@ -9,7 +9,7 @@ Using your preferred development environment, build a Node.JS app. Node.JS is a 
  
 2. In the opened terminal, create an empty folder where you will develop your code, called "RefrigeratedTrucks", by entering ```mkdir RefrigeratedTrucks```. Then, navigate to that folder with ```cd RefrigeratedTrucks```.
 
-3. From the **File** menu, create a new file. Insert a single line as a comment, such as ```// Refrigerated Truck app```. Save the file to the "RefrigeratedTrucks" folder (this might involve a bit of navigation), with the name "app.js". By using the .js file extension, VS Code interprets this file as JavaScript and evaluates the contents with the JavaScript language service.
+3. From the **File** menu, create a new file. Insert a single line as a comment, such as ```// Refrigerated Truck app```. Save the file to the "RefrigeratedTrucks" folder (locating this folder might involve a bit of navigation), with the name "app.js". By using the .js file extension, VS Code interprets this file as JavaScript and evaluates the contents with the JavaScript language service.
  
 ![Saving the JavaScript file in VS Code](../media/refrigerated-trucks-vscode.png)
 
@@ -508,7 +508,7 @@ function UpdateTruck() {
 ```
 
 > [!NOTE]
-> This function is called every time interval. The actual time interval is set later on (at 5 seconds), though the "simulated time" (the number of seconds we specify that has passed each time this function is called) is set by the global ```var interval = 60```, which means the simulation runs at 60/5 equals 12 times real-time. To lower the simulated time, reduce the ```var interval``` to, say, 30 (for a simulation that runs at 6 times real-time). Setting ```var interval = 5``` would run the simulation in real-time (which would be a bit slow, given the driving times to the customer destinations).
+> This function is called every time interval. The actual time interval is set later on (at 5 seconds), though the "simulated time" (the number of seconds we specify that has passed each time this function is called) is set by the global ```var interval = 60```, which means the simulation runs at 60/5 equals 12 times real-time. To lower the simulated time, reduce the ```var interval``` to, say, 30 (for a simulation that runs at six times real-time). Setting ```var interval = 5``` would run the simulation in real-time (which would be a bit slow, given the driving times to the customer destinations).
 
 7. Add the function to send truck telemetry, and any events if any have occurred.
 
@@ -642,7 +642,7 @@ function handleSettings(deviceTwin) {
 > [!NOTE]
 > This section of code is generic to most Node.JS apps. To change, or add additional, settings or properties, add name pairs to the variables ```var settings``` and ```var properties``` respectively. No other code changes are usually needed.
 
-9. Add the connection callback function. This is largely a generic function for all Node.JS/IoT Central apps, though we do have to set up the individual command callbacks:
+9. Add the connection callback function. This function is called when the Node.JS app first attempts to contact IoT Central.
 
 ``` js
 // Handle device connection to Azure IoT Central.

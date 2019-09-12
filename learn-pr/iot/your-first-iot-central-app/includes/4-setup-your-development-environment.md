@@ -1,6 +1,6 @@
-In this unit, we will setup the process to connect a real device to IoT Central. By "real" IoT Central understands that there is a remote app running - the app can be in a real device, taking input from real sensors, or running a simulation. Both options are treated as a connection to a real device.
+In this unit, we will set up the process to connect a real device to IoT Central. By "real" IoT Central understands that there is a remote app running - the app can be in a real device, taking input from real sensors, or running a simulation. Both options are treated as a connection to a real device.
 
-The essential component for communication between a device and IoT Central is a _connection string_. There are some tools that make generating these strings easy. In this unit we will access these tools in such as way that we can reuse them later on. To start with, we need some information on our real device.
+The essential component for communication between a device and IoT Central is a _connection string_. There are some tools that make generating these strings easy. In this unit, we will access these tools in such as way that we can reuse them later on. To start with, we need some information on our real device.
 
 ## Add a real device
 
@@ -20,12 +20,11 @@ When the device is created, you will notice the phrase "Missing Data" where the 
 
 5. Click **Close**.
 
-
 ## Generate a connection string
 
 All of the work to generate connection strings is handled through Azure Cloud Shell.
 
-1. Navigate to ```https://shell.azure.com/```. Perhaps save this Url off as a favorite bookmark.
+1. Navigate to ```https://shell.azure.com/```. Perhaps save this Url as a favorite bookmark.
 
 2. In the Azure Cloud Shell, create a refrigerated-truck folder, and navigate to it:
 
@@ -78,13 +77,15 @@ HostName=iotc-xxxx.azure-devices.net;DeviceId=xxxx;SharedAccessKey=xxxx
 
 10. Save off your text file.
 
-You now have the all important connection string. The scope Id identifies the app, the device Id the real device, and the primary key gives you permission for the connection.
+You now have the all important connection string. The scope ID identifies the app, the device ID the real device, and the primary key gives you permission for the connection.
 
 ## Create a free Azure Maps account
 
 If you do not already have an Azure Maps account, you will need to create one.
 
 1. Navigate to ```https://azure.microsoft.com/services/azure-maps/```.
-2. Follow the prompts to create a free account. When this is completed, you will need the **Primary Key** for the account. Copy and paste this key into your text tool, with a note that it applies to Azure Maps.
+2. Follow the prompts to create a free account. When your account is set up, you will need the **Primary Key** for the account. Copy and paste this key into your text tool, with a note that it applies to Azure Maps.
 
-You have now completed the fiddly part of building your first IoT Central app. The next step is to use the connection string in a Node.JS app.
+## Next steps
+
+You have now completed the preparatory steps of building your first IoT Central app. The next step is to use the connection string in a Node.JS app.

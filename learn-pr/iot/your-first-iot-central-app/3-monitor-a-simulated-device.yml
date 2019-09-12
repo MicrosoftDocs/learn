@@ -27,12 +27,12 @@ quiz:
       explanation: Correct.
     - content: 'Telemetry, State, Event'
       isCorrect: false
-      explanation: These are Measurements, but not all of them.
+      explanation: These entries are Measurements, but are not all of them.
   - content: 'What is the purpose of the Field Name attribute that appears in all device template elements?'
     choices: 
     - content: 'To appear in the IoT Central portal UI, naming the element being displayed.'
       isCorrect: false
-      explanation: This is the purpose of the Display Name.
+      explanation: This purpose applies to the Display Name.
     - content: 'To act as a description of the element.'
       isCorrect: false
       explanation: Sometimes a description field is available, but Field Name is not the name this field.
@@ -46,7 +46,7 @@ quiz:
     choices: 
     - content: 'Properties and Settings can be used interchangeably.'
       isCorrect: false
-      explanation: Incorrect, Settings and Commands have some similarities, Properties are not sent by the cloud.
+      explanation: Incorrect. Settings, and Commands, have some similarities. Properties are not sent by the cloud.
     - content: 'Properties are communicated from the cloud to the device, Settings are communicated from the device to the cloud.'
       isCorrect: false
       explanation: Incorrect, properties are communicated from the device to the cloud, and Settings from the cloud to the device.

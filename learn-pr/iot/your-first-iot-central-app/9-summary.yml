@@ -17,14 +17,14 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'What Id is identical for all devices connected to one IoT Central app?'
+  - content: 'What ID is identical for all devices connected to one IoT Central app?'
     choices: 
-    - content: 'Scope Id'
+    - content: 'Scope ID'
       isCorrect: true
-      explanation: Correct, the Scope Id identifies the IoT Central app.
-    - content: 'Device Id'
+      explanation: Correct, the Scope ID identifies the IoT Central app.
+    - content: 'Device ID'
       isCorrect: false
-      explanation: Nope, the Device Id is unique to each device.
+      explanation: Nope, the Device ID is unique to each device.
     - content: 'Primary Key'
       isCorrect: false
       explanation: Nope, the Primary Key is unique to each device.

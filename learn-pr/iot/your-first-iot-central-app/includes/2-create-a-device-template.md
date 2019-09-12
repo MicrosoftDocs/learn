@@ -1,7 +1,7 @@
 
 The data communicated between a remote device, and IoT Central, is specified in a _device template_. The device template specifies all the required details about the data, so that both the device and IoT Central have all they need to make sense of the communication.
 
-In this unit we will create a device template for a refrigerated truck. When we do this, a simulated refrigerated truck device is created for us by default. This simulated device allows us to do some testing of the template before committing to real devices. In the following unit we will examine this first level of testing.
+In this unit, we will create a device template for a refrigerated truck. The IoT Central portal creates a simulated refrigerated truck device for us by default. This simulated device allows us to do some testing of the template before committing to real devices. In the following unit, we will examine this first level of testing.
 
 ## Create a device template
 
@@ -18,28 +18,28 @@ In this unit we will create a device template for a refrigerated truck. When we 
 
 ![Create a new device template](../media/refrigerated-trucks-new-template.png)
 
-5. You should now see a template **RefrigeratedTruck (1.0.0)**, and see that a template can consist of **Measurements**, **Settings**, **Properties**, **Commands**, **Rules**, and a **Dashboard**. Our refrigerated truck will need entries in most of these.
+5. You should now see a template **RefrigeratedTruck (1.0.0)**, and see that a template can consist of **Measurements**, **Settings**, **Properties**, **Commands**, **Rules**, and a **Dashboard**. Our refrigerated truck will need entries under most of these headings.
 
   > [!NOTE]
   > We are creating this template with all we need for the units that follow this one. If the purpose of these entries is not immediately obvious, it should become clear as you work through this set of units. It is possible to complete a template, then come back to it and add more entries later, but this can involve managing multiple _versions_ of a template, which is a small complexity, but one will avoid in this Learn module.
 
 ## Measurements
 
-_Measurements_ are data transmitted by the device, and covers four types of values: Telemetry, State, Event, and Location. Our scenario requires at least one of each of these for the refrigerated truck. We need to go through the measurements carefully, and enter all the required data. The most important entry is the **Field Name**. Make sure to enter this accurately, as this is the name that will be used when devices communicate values to the IoT Central app. When we come to write code in some of the following units, the reference in the code and the **Field Name** _must_ be an exact match.
+_Measurements_ are data transmitted by the device, and cover four types of values: Telemetry, State, Event, and Location. Our scenario requires at least one of each of these types for the refrigerated truck. We need to go through the measurements carefully, and enter all the required data. The most important entry is the **Field Name**. Make sure to enter this text accurately, as it is used when devices communicate values to the IoT Central app. When we come to write code in some of the following units, the reference in the code and the **Field Name** _must_ be an exact match.
 
 ### Telemetry
 
 Telemetry is the values transmitted by sensors. We only implement one sensor in our scenario, the temperature of a truck's contents. The frequency with which this information is transmitted is determined by the device. In order for an operator to respond to an abnormal situation, the frequency of the transmission will need to be set appropriately.
 
-Notice that a minimum and maximum value are specified for a telemetry value, these values are only used by a simulated device to mimic the values from a real device. A real device can transmit any value. The units of the telemetry is a text value to show on charts and tables, IoT Central does not have any inherent understanding of degrees Celsius, or any other possible physical unit.
+Notice that minimum and maximum values are specified for a telemetry entry, these values are _only_ used by a simulated device to mimic the values from a real device. A real device can transmit any value. The units of the telemetry are a text value to show on charts and tables, IoT Central does not have any inherent understanding of degrees Celsius, or any other possible physical unit.
 
 1. With the **Measurements** option underlined in blue, add the telemetry values from the image that follows. Click **+ New** and select **Telemetry** from the drop-down list.
 
 ![Create temperature telemetry for the simulated device](../media/refrigerated-trucks-temperature.png)
 
-2. Remember to click the **Save** icon after entering the data, and to do this after all the fields are entered. If you are warned you are leaving a page with unsaved changes, it often means you have neglected to click the **Save** icon.
+2. Remember to click the **Save** icon after entering the data. If you are warned you are leaving a page with unsaved changes, it often means you have neglected to click the **Save** icon.
 
-3. You should now see a **Missing Data** screen. This is as it should be for a minute or so, but after a while you will start to see simulated values.
+3. You should now see a **Missing Data** screen. This message is as it should be for a minute or so, but after a while you will start to see simulated values generated by the IoT Central portal.
 
 Let's add the rest of the template.
 
@@ -51,19 +51,19 @@ States are important, they let the operator know what is going on. A state in Io
 
 ![Create contents state for the simulated device](../media/refrigerated-trucks-contents.png)
 
-2. To add some uncertainty to our simulation, let's add a failure state for the cooling system, in addition to whether the system is on or off. If the cooling system fails, as you will see in the following units, the chances of the contents melting increase considerably! Add _on_, _off_ and _failed_ entries for a cooling system. Start by clicking **+ New**, and add another state.
+2. To add some uncertainty to our simulation, let's add a failure state for the cooling system. If the cooling system fails, as you will see in the following units, the chances of the contents melting increase considerably! Add _on_, _off_ and _failed_ entries for a cooling system. Start by clicking **+ New**, and add another state.
 
 ![Create cooling system state for the simulated device](../media/refrigerated-trucks-cooling.png)
 
-3. A more complex state is the state of the truck itself. If all goes well a truck's normal routing might be: _ready_, _enroute_, _delivering_, _returning_, _loading_, and back to _ready_ again.  However, we should add the _dumping_ state to cater for when melted contents need to be disposed of! Using the same process as for the last two steps, create this new state.
+3. A more complex state is the state of the truck itself. If all goes well, a truck's normal routing might be: _ready_, _enroute_, _delivering_, _returning_, _loading_, and back to _ready_ again.  However, we should add the _dumping_ state to cater for when melted contents need to be disposed of! Using the same process as for the last two steps, create this new state.
 
 ![Create truck state for the simulated device](../media/refrigerated-trucks-state.png)
 
 ### Event
 
-Events are issues triggered by the device, and communicated to the IoT Central app. Events can be one of three types: error, warning, or informational. 
+Events are issues triggered by the device, and communicated to the IoT Central app. Events can be one of three types: _Error_, _Warning_, or _Informational_. 
 
-One possible event a device might trigger is a conflicting command. An example might be a truck is returning empty from a customer, but receives a command to deliver its contents to another customer. The conflict is caused by the device (the truck) being unable to act on the command. If this occurs, it is a good idea for the device to trigger an event to warn the operator of the IoT Central app, with a "warning" class of event.
+One possible event a device might trigger is a conflicting command. An example might be a truck is returning empty from a customer, but receives a command to deliver its contents to another customer. The conflict is caused by the device (the truck) being unable to act on the command. If a conflict occurs, it is a good idea for the device to trigger an event to warn the operator of the IoT Central app, with a _Warning_ class of event.
 
 1. Use **+ New**, then click **Event**, to create an event to cover a conflicting command as follows.
 
@@ -71,7 +71,7 @@ One possible event a device might trigger is a conflicting command. An example m
 
 2. Remember to click **Save** when you have entered the fields.
 
-3. A second event that we will add is simply informational. When a truck receives a command to deliver to a customer, and the truck is able to perform the task, the truck triggers a change-of-customer-id event. Add this event now.
+3. A second event that we will add is informational. When a truck receives a command to deliver to a customer, and the truck is able to perform the task, the truck triggers a change-of-customer-ID event. Add this event now.
 
 ![Create customer event for the simulated device](../media/refrigerated-trucks-customer.png)
 
@@ -86,7 +86,7 @@ A location is probably the most important, and yet one of the easiest measuremen
 
 ![Create a truck location for the simulated device](../media/refrigerated-trucks-location.png)
 
-2. You should have now completed adding all the measurements we need. Validate the measurements you have created against the following screen (though the colors may differ from those in the image):
+2. You should have now completed adding all the measurements we need. Validate the measurements you have created against the following screen (though your colors may differ from the colors in the image):
 
 ![Validate all the measurements for the simulated device](../media/refrigerated-trucks-measurements.png)
 
@@ -104,11 +104,11 @@ A setting is a single value. If more complex sets of data need to be transmitted
 
 ## Properties
 
-_Properties_ of a device are typically constant values, that are communicated to the IoT Central app once when communication is first initiated. In our refrigerated truck scenario, a good example of a property would be the license plate of the truck, or some similar unique truck Id.
+_Properties_ of a device are typically constant values, that are communicated to the IoT Central app once when communication is first initiated. In our refrigerated truck scenario, a good example of a property would be the license plate of the truck, or some similar unique truck ID.
 
-1. Click on the **Properties** title under the device template name, and add a single **Text** property to contain a truck Id.
+1. Click on the **Properties** title under the device template name, and add a single **Text** property to contain a truck ID.
 
-![Create a truck Id property for the simulated device](../media/refrigerated-trucks-id.png)
+![Create a truck ID property for the simulated device](../media/refrigerated-trucks-id.png)
 
 2. Click **Save**.
 
@@ -116,7 +116,7 @@ _Properties_ of a device are typically constant values, that are communicated to
 
 _Commands_ are sent by the operator of the IoT Central app to the remote devices. Commands are similar to settings, but a command can contain no, or multiple, input fields if necessary, whereas a setting is limited to a single value.
 
-For refrigerated trucks, there are two commands we should add: a command to deliver the contents to a customer (identified by a customer Id), and a command to recall the truck to base.
+For refrigerated trucks, there are two commands we should add: a command to deliver the contents to a customer (identified by a customer ID), and a command to recall the truck to base.
 
 1. Click the **Commands** title under the device template name, then click **New Command**.
 2. For the first command, to send the truck to a customer, enter the following display and field names, and click **+** beside the **Input Fields** title to enter a text field.

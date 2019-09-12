@@ -7,7 +7,7 @@ In this module, you learned how to:
 - Add Node.JS code to support a simulated device - a refrigerated truck, with routes selected by Azure Maps
 - Monitor and command the simulated device, from the IoT Central Device portal
 - Add Node.JS code to support multiple simulated devices - a fleet of refrigerated trucks - by running multiple Node.JS apps
-- Monitor and command the fleet of simulated trucks, from a Device set dashboard, that you custom built using the IoT Central portal
+- Monitor and command the fleet of simulated trucks, from a Device set dashboard, that you built using the IoT Central portal
 
 ## Clean up
 

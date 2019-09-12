@@ -1,16 +1,16 @@
 The heavy-lifting of this module has been completed, the process of extending our process to multiple trucks is relatively easy.
 
-## Add mutliple devices to the IoT Central app
+## Add multiple devices to the IoT Central app
 1. To add multiple devices, start in the IoT Central app, clicking **Devices** in the left-hand menu.
-2. Click the **+** then **Real** to add a second truck, change the **Device Name** to "RefrigeratedTruck - 2". This will take you to the **Device** page, so go back to the **Devices** page.
-3. Repeat the process so that you have five trucks. Note that there is a limit in the Trial plan to the number of devices you can create. Feel free to delete the **(Simulated)** device if you run into this limit.
+2. Click the **+** then **Real** to add a second truck, change the **Device Name** to "RefrigeratedTruck - 2". Clicking **Create** will take you to the **Device** page, which we do not need just yet, so go back to the **Devices** page.
+3. Repeat the process so that you have five trucks. There is a limit in the Trial plan to the number of devices you can create. Feel free to delete the **(Simulated)** device if you run into this limit.
 
 > [!NOTE]
 > To delete any device, click the check box next to it, then select the garbage can icon top right. You will be prompted to confirm you want to delete the device.
 
-4. Verify you now have five devices, all created with the same template, but with only the first with **Provisioned** status, the additions are just **Registered**.
+4. Verify you now have five devices, all created with the same template. Only the first has **Provisioned** status, the additions are **Registered**.
 
-![Just cresated all five devices](../media/refrigerated-trucks-five.png)
+![Created all five devices](../media/refrigerated-trucks-five.png)
 
 ## Provision the new devices
 
@@ -22,7 +22,7 @@ The heavy-lifting of this module has been completed, the process of extending ou
 
 ## Create connection strings for the new devices
 
-1. In your text file, create four strings that match the following outline, replacing **scope_id** with the same value as that for the first truck, but with the unique **Device ID** and **Primary Key** for each individual device. Note too, that the name of the output text file is changed to match the truck number (this is to avoid mistakes).
+1. In your text file, create four strings that match the following outline, replacing **scope_id** with the actual value for the first truck, and with the unique **Device ID** and **Primary Key** for each individual device. To make things clear, the name of the output text file is changed to match the truck number.
 
 ```
     ./dps_cstr scope_id device_id2 primary_key2 > connection2.txt
@@ -78,9 +78,9 @@ switch (truckNum) {
 
 Each truck is simulated by one running copy of the Node.JS app. So, we need five versions of this app running simultaneously.
 
-1. With the line  ```const truckNum = 1``` run the app, but _not_ in debugging mode (Debugging mode might not work with five versions running together). Does the app start, connect, and start sending telemetry? If so, good, go on to the next step. If not, go back and check you have altered the code correctly.
+1. With the line  ```const truckNum = 1```, run the app, but _not_ in debugging mode (Debugging mode might not work with five versions running together). Does the app start, connect, and start sending telemetry? If so, good, go on to the next step. If not, go back and check you have altered the code correctly.
 2. Change the line to ```const truckNum = 2;```, and run the app again. You should get a second console window, and the correct startup sequence should appear.
-3. Repeat this process for trucks 3 through 5, changing the ```const truckNum``` and running the app.
+3. Repeat this process for trucks 3 through 5, changing the ```const truckNum``` line, and running the app again.
 4. Exciting isn't it. You now have five console windows open, with five simulated refrigerated trucks waiting for their commands!
 
 ## Monitor and command the trucks from IoT Central
@@ -93,6 +93,6 @@ Each truck is simulated by one running copy of the Node.JS app. So, we need five
 
 4. There is in fact now so much going on it is tough to keep track of it. For each truck open up one of the other views, and check the states and events. Did any of the cooling systems fail? Did any of the contents melt?
 
-Clearly the map view is one of the most useful, at least in terms of giving the operator some confidence that they can see the big picture. It is tough to have this confidence when each truck is shown on a different map. In the next unit, we will look about resolving this by creating a device set, which enables all device locations to appear on a single map.
+Clearly the map view is one of the most useful, at least in terms of giving the operator some confidence that they can see the larger picture. It is tough to have this confidence when each truck is shown on a different map. In the next unit, we will look about resolving this complexity by creating a _Device set_, which enables all device locations to appear on a single map.
 
 You can leave all five Node.JS apps running, the trucks will have returned to their base and will be ready for the next unit when needed!
