@@ -60,7 +60,7 @@ We look at indexing in units 6 and 7.
 1. Run the following command to store the access key in an environment variable.
 
     ```bash
-    export KEY=$(az cosmosdb keys list --resource-group <rgn>Sandbox Resource Group</rgn>  \
+    export KEY=$(az cosmosdb list-keys --resource-group <rgn>Sandbox Resource Group</rgn>  \
             --name $COSMOS_NAME --output tsv --query primaryMasterKey)
     ```
 
@@ -135,7 +135,7 @@ We'll use an open-source C# console application to populate your collections. Th
     ```
 
     ```bash
-    export KEY=$(az cosmosdb keys list --resource-group <rgn>Sandbox Resource Group</rgn>  \
+    export KEY=$(az cosmosdb list-keys --resource-group <rgn>Sandbox Resource Group</rgn>  \
             --name $COSMOS_NAME --output tsv --query primaryMasterKey)
     ```
 
