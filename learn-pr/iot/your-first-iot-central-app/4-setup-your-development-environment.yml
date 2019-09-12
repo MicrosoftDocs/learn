@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title:  Set up your development environment
-durationInMinutes: 10
+durationInMinutes: 15
 content: |
   [!include[](includes/4-setup-your-development-environment.md)]
