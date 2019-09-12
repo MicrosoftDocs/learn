@@ -19,21 +19,21 @@ quiz:
 
   - content: 'A connection string is an encoded version of what?'
     choices: 
-    - content: 'Device Id and Primary Key'
+    - content: 'Device ID and Primary Key'
       isCorrect: false
       explanation: More information is needed.
-    - content: 'Scope Id, Device Id, and Primary Key'
+    - content: 'Scope ID, Device ID, and Primary Key'
       isCorrect: true
       explanation: Correct.
-    - content:  'Scope Id, Device Id, Primary Key, and Secondary Key'
+    - content:  'Scope ID, Device ID, Primary Key, and Secondary Key'
       isCorrect: false
       explanation: Secondary Key is not needed.
-  - content: 'In our scenario, what does the following Node.JS statement do:  setInterval(sendTruckTelemetry, 5000);?'
+  - content: 'In our scenario, what does the following Node.JS statement do:  setInterval(sendTruckTelemetry, 5000)?'
     choices: 
     - content: 'Specifies that the sendTruckTelemetry function should be called every 5 seconds.'
       isCorrect: true
       explanation: Correct.
-    - content: 'Specifies that the sendTruckTelemetry function should be called every 0.5 seconds.'
+    - content: 'Specifies that the sendTruckTelemetry function should be called every 0.5 of a second.'
       isCorrect: false
       explanation: Not the correct interval.
     - content: 'Specifies that sendTruckTelemetry is a data structure, that should be communicated at the specified interval.'
@@ -50,7 +50,7 @@ quiz:
     - content: 'The simulation runs at 60 times real time, with the telemetry reported every 5 seconds.'
       isCorrect: false
       explanation: One call, every 5 seconds, to the UpdateTruck function advances the simulation by 60 seconds (var interval = 60;).
-  - content: "In our scenario, interpret the following line of code:  client.onDeviceMethod('cmdGoTo', CmdGoToCustomer); ?"
+  - content: "In our scenario, interpret the following line of code:  client.onDeviceMethod('cmdGoTo', CmdGoToCustomer)?"
     choices:
     - content: 'The IoT Central app has a command with Field Name "cmdGoTo", and the NodeJS app has a function "CmdGoToCustomer" to be called with the operator invokes cmdGoTo.'
       isCorrect: true
