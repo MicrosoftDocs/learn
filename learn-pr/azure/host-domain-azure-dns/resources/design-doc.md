@@ -22,7 +22,7 @@ Basic knowledge of networking concepts like name resolution and IP addresses
 
 ## Summary
 
-Create a DNS zone for your domain name. Create DNS records to map the URL to an IP address. Test that the domain name resolves to your web server.  
+Create a DNS zone for your domain name. Create DNS records to map the URL to an IP address. Test that the domain name resolves to your web server. 
 
 ## Learning objectives
 
@@ -43,7 +43,7 @@ Identify the subtasks of *Manage DNS records with Azure DNS*
 
 1. **Introduction**
 
-    You recently bought the custom domain name wideworldimporters.com from a domain name registrar. The domain name is for a new website your organization plans to launch. You need a hosting service for DNS domains. This hosting service would resolve the wideworldimporters.com domain to the IP address of your web server. You're already using Azure to build your website. To manage your domain, you decide to use Azure DNS. With Azure DNS, you can keep things simple and use the same credentials, APIs, tools, and billing as your other Azure services.  
+    You recently bought the custom domain name wideworldimporters.com from a domain name registrar. The domain name is for a new website your organization plans to launch. You need a hosting service for DNS domains. This hosting service would resolve the wideworldimporters.com domain to the IP address of your web server. You're already using Azure to build your website. To manage your domain, you decide to use Azure DNS. With Azure DNS, you can keep things simple and use the same credentials, APIs, tools, and billing as your other Azure services. 
 
 1. **What is Azure DNS?**
     - What does Azure DNS do?
@@ -88,7 +88,7 @@ Identify the subtasks of *Manage DNS records with Azure DNS*
 
 1. **Dynamically resolve resource name by using alias record**
 
-  
+
       - Alias Records
         - What problems do they solve, IP changes, load balanced environment
         - How are they created, through the public IP, through the zone
@@ -99,8 +99,8 @@ Identify the subtasks of *Manage DNS records with Azure DNS*
     1. Run a shell script to setup the environment of a load balancer with two VMs and a public IP (See Notes for script info)
     1. Add an alias record to the public IP by creating a DNS zone 
     1. Verify name resolves.
-    1. Change public IP.
-    1. Verify name still resolves.
+    1. Change the public IP address
+    1. Verify name resolves.
 
     See: [Announcing Alias records for Azure DNS](https://azure.microsoft.com/blog/announcing-alias-records-for-azure-dns/)
 
