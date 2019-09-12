@@ -135,7 +135,7 @@ We'll use an open-source C# console application to populate your collections. Th
     ```
 
     ```bash
-    export KEY=$(az cosmosdb keys list --resource-group <rgn>Sandbox Resource Group</rgn>  \
+    export KEY=$(az cosmosdb list-keys --resource-group <rgn>Sandbox Resource Group</rgn>  \
             --name $COSMOS_NAME --output tsv --query primaryMasterKey)
     ```
 
