@@ -6,10 +6,9 @@ To fully test our one refrigerated truck device, it helps to break down the test
 1. The command to recall the truck works as expected.
 1. Check customer and conflict events are transmitted correctly.
 
-
 In addition to this list, there are edge-cases we could also investigate, such as what happens when the truck's contents start to melt. However, as we have left this up to chance in our simulation (note the use of random numbers in our code in the previous unit) we can perhaps leave this out of our first round of testing.
 
-To begin the testing, make sure the IoT Central app is up and running, and run the Node.JS app (**Start without Debugging** from Visual Studio, or xxxx from Visual Studio Code). This will open a console screen, that should now say **Starting Truck number 1**.
+To begin the testing, make sure the IoT Central app is up and running, and run the Node.JS app (**Debug/Start without Debugging** from Visual Studio, or enter ```node app.js``` into a terminal in Visual Studio Code). This will open a console screen, that should now say **Starting Truck number 1**.
 
 ### 1. The Node.JS app connects to Azure IoT Central
 

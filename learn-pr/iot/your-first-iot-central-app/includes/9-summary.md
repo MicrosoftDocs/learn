@@ -23,15 +23,5 @@ Take your interest further with:
 
 And look out for and complete additional Learn modules in this learning path.
 
-To finish this module, complete a final knowledge check.
+To finish this module and earn your rewards, complete a final knowledge check.
 
-
-# MISSING PIECES
-
-1. KNOWLEDGE CHECK ON 6 - done
-1. KNOWLEDGE CHECK AT END - done
-1. VS CODE USE
-1. INTRO STUFF - done?
-1. SUMMARY STUFF - done?
-1. INTRO TO EACH UNIT NEEDED/SUMMARY OF EACH UNIT NEEDED? - nope - done
-1. CLEAN UP - done
