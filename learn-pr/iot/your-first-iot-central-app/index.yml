@@ -42,4 +42,4 @@ units:
 - learn.your-first-iot-central-app,create-a-device-set-dashboard
 - learn.your-first-iot-central-app,summary
 badge:
-  uid: learn.iot.iot-central.badge
+  uid: learn.iot.iot-test.badge
