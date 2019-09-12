@@ -125,7 +125,7 @@ If Azure Cloud Shell times out, you need to reset the `ENDPOINT`, `KEY`, and  `C
     ```
 
     ```bash
-    export KEY=$(az cosmosdb keys list --resource-group <rgn>Sandbox Resource Group</rgn>  \
+    export KEY=$(az cosmosdb list-keys --resource-group <rgn>Sandbox Resource Group</rgn>  \
             --name $COSMOS_NAME --output tsv --query primaryMasterKey)
     ```
 
