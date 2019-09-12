@@ -63,7 +63,7 @@ Next, you create two virtual machines called **AppServer** and **DataServer**. Y
         --subnet Applications \
         --nsg ERP-SERVERS-NSG \
         --image UbuntuLTS \
-        --size Standard_A1_v2
+        --size Standard_B1ls
         --admin-username azureuser \
         --custom-data cloud-init.yml \
         --no-wait \
@@ -79,7 +79,7 @@ Next, you create two virtual machines called **AppServer** and **DataServer**. Y
         --vnet-name ERP-servers \
         --subnet Databases \
         --nsg ERP-SERVERS-NSG \
-        --size Standard_A1_v2
+        --size Standard_B1ls
         --image UbuntuLTS \
         --admin-username azureuser \
         --custom-data cloud-init.yml \
