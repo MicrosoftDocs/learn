@@ -10,11 +10,11 @@ In this module, we’ll describe the Azure technologies that are available to yo
 
 ## Learning objectives
 
-In this module, you will:
+Upon completion of this module, you'll be able to:
 
-- Compare Azure services for integration and process automation scenarios
-- Identify which Azure service is best for different process integration and automation needs
+- Evaluate Azure services for integration and process automation scenarios
 
 ## Prerequisites
 
-- None
+- Familiarity with Azure
+- Basic knowledge of REST and APIs
