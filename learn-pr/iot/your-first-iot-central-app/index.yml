@@ -28,9 +28,9 @@ ratingEnabled: false
 levels:
 - beginner
 roles:
-- Developer
+- developer
 products:
-- Azure IoT Central
+- azure-iot-central
 units:
 - learn.your-first-iot-central-app,introduction
 - learn.your-first-iot-central-app,create-a-device-template
