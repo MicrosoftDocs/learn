@@ -17,9 +17,10 @@ In this module you will:
 ## The scenario
 
 Suppose your run a company that operates a fleet of refrigerated trucks.
+
 |  |  |  |  |  |
 | ---- | ---- | ---- | ---- | ---- |
-| ![Blue truck](../media/bluetruck.svg) |  ![Green truck](../media/greentruck.svg) | ![Grey truck](../media/greytruck.svg) |  ![Orange truck](../media/orangetruck.svg) |  ![Purple truck](../media/purpletruck.svg) |
+| ![Blue truck](../media/bluetruck.png) |  ![Green truck](../media/greentruck.png) | ![Grey truck](../media/greytruck.png) |  ![Orange truck](../media/orangetruck.png) |  ![Purple truck](../media/purpletruck.png) |
 |  |  |  |  |  |
 
  You have a number of customers within a city, and a base that you operate from. You command each truck to take its contents and deliver it to any one customer. However, the cooling system may fail on any one of your trucks, and if the contents does start to melt, you will need the option of instructing the truck to return to base and dump the contents. Alternatively, you can deliver the contents to another customer who might be nearer to the truck when you become aware the contents are melting. In order to make these decisions, you will need an up-to-date picture of all that is going on with your trucks, certainly including their location on a map, the state of the cooling system, the state of the contents, and the ability to redirect or recall the trucks quickly.
