@@ -12,4 +12,6 @@ In this module, you will:
   - Connect to Jupyter notebooks through Docker on the DSVM
   - Run your first deep learning experiment with Jupyter Notebooks
   
-[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
+## Prerequisites
+
+[!include[](../../../includes/azure-subscription-prerequisite.md)]
