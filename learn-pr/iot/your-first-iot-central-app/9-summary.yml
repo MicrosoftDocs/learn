@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Summary
-durationInMinutes: 4
+durationInMinutes: 8
 content: |
   [!include[](includes/9-summary.md)]
 quiz:
@@ -32,16 +32,16 @@ quiz:
     choices: 
     - content: 'All devices of a device template, no exceptions.'
       isCorrect: false
-      explanation: There can be exceptions.
+      explanation: Incorrect. There can be exceptions.
     - content: 'All devices of a device template, with exceptions based on device properties.'
       isCorrect: true
       explanation: Correct, any number of exceptions can be created, based on device properties.
     - content: 'All devices of a device template, with exceptions based on device settings, properties, or measurements.'
       isCorrect: false
-      explanation: Settings and measurements cannot be used to define device sets.
+      explanation: Incorrect. Settings and measurements cannot be used to define device sets.
     - content: 'All devices that have a setting that the device belongs to a device set.'
       isCorrect: false
-      explanation: There is no such setting.
+      explanation: Incorrect. There is no such setting.
   - content: 'What is the process of authenticating devices to IoT Central know as?'
     choices: 
     - content: 'Authenticating'

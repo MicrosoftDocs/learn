@@ -1,11 +1,11 @@
 
 ## Create the Node.JS app
 
-Using your preferred development environment, build a Node.JS app. Node.JS is a platform for building server apps, based on JavaScript. All the JavaScript code you will need is provided below, so you do not need to be a JavaScript developer to get this app up and running.
+Using your preferred development environment (Visual Studio Code, and Visual Studio, examples are given below), build a Node.JS app. Node.JS is a platform for building server apps, based on JavaScript. All the JavaScript code you will need is provided below, so you do not need to be a JavaScript developer to get this app up and running.
 
 ### With Visual Studio Code
 
-1. Open Visual Studio Code. From the **Terminal** menu in VS Code, open a **New Terminal**.
+1. Open Visual Studio Code (VS Code). From the **Terminal** menu, open a **New Terminal**.
  
 2. In the opened terminal, create an empty folder where you will develop your code, called "RefrigeratedTrucks", by entering ```mkdir RefrigeratedTrucks```. Then, navigate to that folder with ```cd RefrigeratedTrucks```.
 
@@ -13,9 +13,9 @@ Using your preferred development environment, build a Node.JS app. Node.JS is a 
  
 ![Saving the JavaScript file in VS Code](../media/refrigerated-trucks-vscode.png)
 
-1. Back in the terminal, enter **npm install azure-iot-device**. When this package has installed, enter **npm install azure-maps-rest**.
+4. Back in the terminal, enter **npm install azure-iot-device**. When this package has installed, enter **npm install azure-maps-rest**.
 
-5. After you have entered the code below into the app.js file, you can run it from the terminal by entering ```node app.js```. Ensure that the terminal is in the RefrigeratedTrucks folder, when you run the app.
+5. After you have entered the code below into the app.js file, you can run it from the terminal by entering ```node app.js```. Ensure that the RefrigeratedTrucks folder is the current folder of the terminal, when you run the app.
 
 
 ### With Visual Studio
@@ -28,7 +28,7 @@ Using your preferred development environment, build a Node.JS app. Node.JS is a 
 
 3. In the dialog that follows, search for and install **azure-iot-device**, then **azure-maps-rest**.
 
-4. When you have entered the code below, you will be able to run the app with the **Start Without Debugging**, or **Start Debugging** options. In the latter case you can set breakpoints, examine data, and perform other debugging tasks.
+4. When you have entered the code below, you will be able to run the app with the **Start Without Debugging**, or **Start Debugging**, options. In the latter case you can set breakpoints, examine data, and perform other debugging tasks.
 
 ## Write the Node.JS app
 
@@ -508,9 +508,9 @@ function UpdateTruck() {
 ```
 
 > [!NOTE]
-> This function is called every time interval. The actual time interval is set later on (at 5 seconds), though the "simulated time" (the number of seconds we specify that has passed each time this function is called) is set by the global ```var interval = 60```, which means the simulation runs at 60/5 equals 12 times real-time. To lower the simulated time, reduce the ```var interval``` to, say, 30 (for a simulation that runs at six times real-time). Setting ```var interval = 5``` would run the simulation in real-time (which would be a bit slow, given the driving times to the customer destinations).
+> This function is called every time interval. The actual time interval is set later on (at 5 seconds), though the "simulated time" (the number of seconds we specify that has passed each time this function is called) is set by the global ```var interval = 60```, which means the simulation runs at 60/5 equals 12 times real-time. To lower the simulated time, reduce the ```var interval``` to, say, 30 (for a simulation that runs at six times real-time). Setting ```var interval = 5``` would run the simulation in real-time (which would be a bit slow, given the real driving times to the customer destinations).
 
-7. Add the function to send truck telemetry, and any events if any have occurred.
+7. Add the function to send truck telemetry, and events if any have occurred.
 
 ``` js
 // Send device simulated telemetry measurements.
@@ -640,7 +640,7 @@ function handleSettings(deviceTwin) {
 ```
 
 > [!NOTE]
-> This section of code is generic to most Node.JS apps. To change, or add additional, settings or properties, add name pairs to the variables ```var settings``` and ```var properties``` respectively. No other code changes are usually needed.
+> This section of code is generic to most Node.JS apps that communicate with IoT Central. To add additional settings or properties, add name pairs to the variables ```var settings``` and ```var properties``` respectively. No other code changes are usually needed.
 
 9. Add the connection callback function. This function is called when the Node.JS app first attempts to contact IoT Central.
 
@@ -686,7 +686,7 @@ var connectCallback = (errorMessage) => {
 ```
 
 > [!NOTE]
-> Most of the ```connectCallback``` function is generic, and can be used for most Node.JS apps. Specific to this app are the two ```client.onDeviceMethod``` calls, that link JavaScript functions in this app to the commands in the IoT Central app, and the ```setInterval(sendTruckTelemetry, 5000);``` call, which specifies the ```sendTruckTelemetry``` function should be called every five seconds (5000 milliseconds).
+> Most of the ```connectCallback``` function is generic, and can be used for most Node.JS apps that communicate with IoT Central. Specific to this app are the two ```client.onDeviceMethod``` calls, that link JavaScript functions in this app to the commands in the IoT Central app, and the ```setInterval(sendTruckTelemetry, 5000);``` call, which specifies the ```sendTruckTelemetry``` function should be called every five seconds (5000 milliseconds).
 
 10. Complete the app with the single line to start the device, specifying the connection callback.
 

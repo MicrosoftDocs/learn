@@ -35,7 +35,7 @@ quiz:
       explanation: This purpose applies to the Display Name.
     - content: 'To act as a description of the element.'
       isCorrect: false
-      explanation: Sometimes a description field is available, but Field Name is not the name this field.
+      explanation: Sometimes a description field is available, but Field Name is not the name of this field.
     - content: 'To match the entries in the code running on the IoT device, to enable communications.'
       isCorrect: true
       explanation: Correct, Field Names need to be referenced in the code running on the device.
@@ -49,7 +49,7 @@ quiz:
       explanation: Incorrect. Settings, and Commands, have some similarities. Properties are not sent by the cloud.
     - content: 'Properties are communicated from the cloud to the device, Settings are communicated from the device to the cloud.'
       isCorrect: false
-      explanation: Incorrect, properties are communicated from the device to the cloud, and Settings from the cloud to the device.
+      explanation: Incorrect, Properties are communicated from the device to the cloud, and Settings from the cloud to the device.
     - content: 'A property is typically communicated once from the device to the cloud, and Settings are typically communicated from the cloud to the device when changes are needed.'
       isCorrect: true
       explanation: Correct, and a Setting must have a corresponding value.
@@ -60,10 +60,10 @@ quiz:
       explanation: Correct, and clicking on the icons will reveal more details of the event.
     - content: 'States'
       isCorrect: false
-      explanation: State is shown in the bar graphs.
+      explanation: Incorrect. State is shown in the bar graphs.
     - content: 'Telemetry'
       isCorrect: false
-      explanation: Telemetry is shown in the line chart.
+      explanation: Incorrect. Telemetry is shown in the line chart.
     - content: 'Locations'
       isCorrect: false
-      explanation: Location is shown on the map view.
+      explanation: Incorrect. Location is shown on the map view.

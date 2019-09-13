@@ -11,7 +11,7 @@ In this module you will:
 
 - Create an Azure IoT Central custom app, using the IoT Central portal
 - Create a device template for a custom device, using the IoT Central portal
-- Add Node.JS code to support simulated devices, with routes selected by Azure Maps
+- Add Node.JS code to support simulated devices, with routes selected by Azure Maps, using Visual Studio Code, or Visual Studio
 - Monitor and command the simulated devices, from an IoT Central dashboard
 
 ## The scenario

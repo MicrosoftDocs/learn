@@ -21,13 +21,13 @@ quiz:
     choices: 
     - content: 'Device ID and Primary Key'
       isCorrect: false
-      explanation: More information is needed.
+      explanation: Incorrect. More information is needed.
     - content: 'Scope ID, Device ID, and Primary Key'
       isCorrect: true
       explanation: Correct.
     - content:  'Scope ID, Device ID, Primary Key, and Secondary Key'
       isCorrect: false
-      explanation: Secondary Key is not needed.
+      explanation: Incorrect. Secondary Key is not needed.
   - content: 'In our scenario, what does the following Node.JS statement do:  setInterval(sendTruckTelemetry, 5000)?'
     choices: 
     - content: 'Specifies that the sendTruckTelemetry function should be called every 5 seconds.'
@@ -35,26 +35,26 @@ quiz:
       explanation: Correct.
     - content: 'Specifies that the sendTruckTelemetry function should be called every 0.5 of a second.'
       isCorrect: false
-      explanation: Not the correct interval.
+      explanation: Incorrect. Not the correct interval.
     - content: 'Specifies that sendTruckTelemetry is a data structure, that should be communicated at the specified interval.'
       isCorrect: false
-      explanation: sendTruckTelemetry is not a data structure.
+      explanation: Incorrect, sendTruckTelemetry is not a data structure.
   - content: 'In our scenario, the simulated time interval is 60 seconds, the actual time interval is 5 seconds. What does this mean?'
     choices: 
     - content: 'The simulation is run at 60/5 = 12 times real time.'
       isCorrect: true
       explanation: Correct.
-    - content: 'The simulation runs in real time, with 12 sets of telemetry data communicated to IoT Central.'
+    - content: 'The simulation runs in real-time, with 12 sets of telemetry data communicated to IoT Central every minute.'
       isCorrect: false
-      explanation: In a real-time simulation, it would take hours for a truck to reach its destination.
+      explanation: Incorrect, though data is sent 12 times per minute.
     - content: 'The simulation runs at 60 times real time, with the telemetry reported every 5 seconds.'
       isCorrect: false
-      explanation: One call, every 5 seconds, to the UpdateTruck function advances the simulation by 60 seconds (var interval = 60;).
+      explanation: Incorrect, the simulation does not run at 60 times real-time.
   - content: "In our scenario, interpret the following line of code:  client.onDeviceMethod('cmdGoTo', CmdGoToCustomer)?"
     choices:
-    - content: 'The IoT Central app has a command with Field Name "cmdGoTo", and the NodeJS app has a function "CmdGoToCustomer" to be called with the operator invokes cmdGoTo.'
+    - content: 'The IoT Central app has a command with Field Name "cmdGoTo", and the NodeJS app has a function "CmdGoToCustomer" to be called when the operator invokes cmdGoTo.'
       isCorrect: true
       explanation: Correct.
-    - content: 'The IoT Central app has a command with Field Name "CmdGoToCustomer", and the NodeJS app has a function "cmdGoTo" to be called with the operator invokes CmdGoToCustomer.'
+    - content: 'The IoT Central app has a command with Field Name "CmdGoToCustomer", and the NodeJS app has a function "cmdGoTo" to be called when the operator invokes CmdGoToCustomer.'
       isCorrect: false
-      explanation: Got the names the wrong way round.
+      explanation: Incorrect. Got the names the wrong way round.

@@ -32,18 +32,18 @@ The heavy-lifting of this module has been completed, the process of extending ou
 ```
 
  > [!NOTE]
- > Preparing strings manually this way does require patience and time. This would be onerous if there was a large number of devices. Automated device provisioning, using Azure DPS, is a subject you can investigate further, if needed for the scenarios you might be addressing in future.
+ > Preparing strings manually this way does require patience and time. This would be onerous if there was a large number of devices. Automated device provisioning, using Azure DPS, is a subject you can investigate further, if needed, for the scenarios you might be addressing in future.
 
 2. Open up Azure Cloud Shell, and navigate to the right folder by entering ```cd refrigerated-truck```.
 3. Copy across one at a time, from your text file, each of the four strings (starting with **./dps_cstr...**) and press Enter after each is pasted into Azure Cloud Shell. Each will take a few seconds to run.
 4. Select the **{ }** icon to open up the file structure, open the **refrigerated-truck** folder, and verify you have files named connection2.txt through to connection5.txt.
 5. Open up each one of these files in turn, and copy across the connection string (from "HostName=" to the end of the file) to your text file.
 6. Close Azure Cloud Shell.
-7. Remember to verify that each connection string ends with an exact copy of the **Primary Key**. There can be spurious text at the end of the connection.txt file.
+7. Remember to verify that each connection string ends with an exact copy of the **Primary Key**. Just in case there is spurious text at the end of the connection.txt file.
 
 ## Update the Node.JS app to handle multiple devices
 
-1. Open up your Node.JS app in the development environment you are using (Visual Studio Code, Visual Studio).
+1. Open up your Node.JS app in the development environment you are using.
 
 2. Locate the switch statement at the top of the file, and add four entries:
 
