@@ -1,7 +1,5 @@
 Next, let's use the Azure CLI to create a resource group, and then to deploy a web app into this resource group.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ### Using a resource group
 
 When you're working with your own machine and Azure subscription, you'll need to first sign in to Azure using the `az login` command. However, signing in is unnecessary when you are using the browser-based Cloud Shell environment.

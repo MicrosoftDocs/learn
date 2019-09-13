@@ -4,8 +4,6 @@ Suppose you have decided to migrate the data for your app that manages camera le
 
 Here, you will create and populate a table with data in a storage table. You will see the app working in that context and then move it onto Azure Cosmos DB, with no changes to the code.
 
-[!INCLUDE[](../../../includes/azure-sandbox-activate.md)]
-
 [!INCLUDE[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 ## Create a Storage account

@@ -1,5 +1,3 @@
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 You'll now add code to detect transient errors in your team's chat app. You can choose to change the C#, Java, or Node.js app. To get started, let's set up the chat app.
 
 ## Set up the database

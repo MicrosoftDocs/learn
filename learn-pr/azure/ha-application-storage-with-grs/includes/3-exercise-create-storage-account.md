@@ -10,8 +10,6 @@ As the first step, you create an Azure storage account for storing the applicati
 
 In this step, you create a storage account. The storage account hosts the healthcare application.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 1. In Cloud Shell, run the following commands:
 
     ```bash

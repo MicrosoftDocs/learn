@@ -1,7 +1,5 @@
 In this unit, you will use the Azure portal to create a web app.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create a web app
 
 Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.

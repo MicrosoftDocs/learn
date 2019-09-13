@@ -1,7 +1,5 @@
 To see the Text Analytics API in action, let's make some calls using the built-in API testing console tool located in the online reference documentation. Before we do that, we'll need an access key to make those calls.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create an access key
 
 Every call to Text Analytics API requires a subscription key. Often called an access key, it is used to validate that you have access to make the call. We'll use the Azure portal to grab a key.

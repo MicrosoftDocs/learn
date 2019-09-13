@@ -1,7 +1,5 @@
 In this unit, you'll create an Azure Cosmos DB account and use a console application to populate the database.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create your database account
 
 A database account is a container for multiple Azure Cosmos DB databases.

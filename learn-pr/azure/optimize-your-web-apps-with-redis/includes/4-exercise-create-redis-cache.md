@@ -1,8 +1,5 @@
 Let's create an Azure Cache for Redis instance to store and return commonly used values.
 
-<!-- Activate the sandbox -->
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create a Redis cache in Azure
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
