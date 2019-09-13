@@ -1,6 +1,6 @@
 You can configure Azure Load Balancer by using the Azure portal, PowerShell, or the Azure CLI.
 
-In your healthcare organization, you want to load balance client traffic to provide a consistent response based on the health of the patient portal web servers. You have two virtual machines in an availability set to act as your healthcare portal web application.
+In your healthcare organization, you want to load-balance client traffic to provide a consistent response based on the health of the patient portal web servers. You have two virtual machines in an availability set to act as your healthcare portal web application.
 
 Here, you will create a load balancer resource and use it to distribute a load across the virtual machines.
 
@@ -12,6 +12,8 @@ First, deploy your patient portal application across two virtual machines in a s
 
 - Create a virtual network and network infrastructure for the virtual machines.
 - Create two virtual machines in this virtual network.
+
+To deploy the patient portal web application:
 
 1. Run the following `git clone` command in Azure Cloud Shell. The command clones the repo that contains the source for the app and runs the setup script from GitHub.
 
@@ -331,7 +333,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
 
 Let's test the load balancer setup to show how it can handle availability and health issues dynamically.
 
-1. In a new tab, browse to the public IP address that you noted. You'll see that the response is returned from one of the virtual machines.
+1. In a new browser tab, go to the public IP address that you noted. You'll see that the response is returned from one of the virtual machines.
 
 1. Try a "force refresh" by pressing Ctrl+F5 a few times to see that the response is returned randomly from both virtual machines.
 

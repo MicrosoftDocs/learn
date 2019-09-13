@@ -11,7 +11,7 @@ Azure Load Balancer is a service you can use to distribute traffic across multip
 - **Source IP**: The IP address of the requesting client.
 - **Source port**: The port of the requesting client.
 - **Destination IP**: The destination IP of the request.
-- **Destination port**": The destination port of the request.
+- **Destination port**: The destination port of the request.
 - **Protocol type**: The specified protocol type. For example, HTTP, HTTPS, HTTP/2.
 
 ![A diagram that shows an overview of Azure Load Balancer](../media/2-load-balancer-distribution.svg)
@@ -69,4 +69,4 @@ Standard load balancers support all of the basic features. They also allow:
 
 An external load balancer operates by distributing client traffic across multiple virtual machines. An external load balancer permits traffic from the internet. The traffic might come from browsers, module apps, or other sources. In a healthcare organization, the balancer distributes the load of all the browsers that run the client healthcare application.
 
-An internal load balancer distributes a load from internal Azure resources to other Azure resources. For example, if you have front-end web servers that need to call business logic that's hosted on multiple middle-tier servers, you can distribute that load evenly by using an internal load balancer. No traffic is allowed from internet sources. In a healthcare organization, the balancer distributes a load across the internal application tier.
+An internal load balancer distributes a load from internal Azure resources to other Azure resources. For example, if you have front-end web servers that need to call business logic that's hosted on multiple middle-tier servers, you can distribute that load evenly by using an internal load balancer. No traffic is allowed from internet sources. In a healthcare organization, the load balancer distributes a load across the internal application tier.

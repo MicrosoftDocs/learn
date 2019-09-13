@@ -10,7 +10,7 @@ By default, Azure Load Balancer distributes network traffic equally among virtua
   
     ![A diagram that shows how hash-based distribution works](../media/3-load-balancer-distribution.svg)
 
-- **Source IP affinity**. This distribution mode is also known as session affinity or client IP affinity. To map traffic to the available servers, the mode uses a two-tuple hash (from the source IP address and destination IP address) or three-tuple hash (from the source IP address, destination IP address, and protocol type). The hash ensures that requests from a specific client are always sent to the same virtual machine behind the load balancer.
+- **Source IP affinity**. This distribution mode is also known as *session affinity* or *client IP affinity*. To map traffic to the available servers, the mode uses a two-tuple hash (from the source IP address and destination IP address) or three-tuple hash (from the source IP address, destination IP address, and protocol type). The hash ensures that requests from a specific client are always sent to the same virtual machine behind the load balancer.
 
     ![A diagram that shows how session affinity works](../media/3-load-balancer-session-affinity.svg)
 
@@ -42,4 +42,4 @@ Remote Desktop Gateway is a Windows service that you can use to enable clients o
 
 Another use case for source IP affinity is media upload. In many implementations, a client initiates a session through a TCP protocol and connects to a destination IP address. This connection remains open throughout the upload to monitor progress, but the file is uploaded through a separate UDP protocol.
 
-With the five-tuple hash, the load balancer likely will send the TCP and UDP connections to different destination IP addresses and the upload doesn't finish successfully. Use source IP affinity to fix this issue.
+With the five-tuple hash, the load balancer likely will send the TCP and UDP connections to different destination IP addresses and the upload won't finish successfully. Use source IP affinity to resolve this issue.

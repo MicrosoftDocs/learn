@@ -14,10 +14,10 @@ You can configure an internal load balancer in almost the same way as an externa
 - Assign a private IP address instead of a public IP address for the front end of the load balancer.
 - Place the load balancer in the protected virtual network that contains the virtual machines you want to handle the requests.
 
-The internal load balancer should be visible only to the web tier. All the virtual machines that host the databases are in one subnet. An internal load balancer can be used to distribute traffic to those virtual machines.
+The internal load balancer should be visible only to the web tier. All the virtual machines that host the databases are in one subnet. You can use an internal load balancer to distribute traffic to those virtual machines.
 
 ![Diagram of internal load balancer](../media/5-internal-load-balancer.svg)
 
 ## Choose the distribution mode
 
-In the healthcare portal, the application tier is stateless, so you don't need to use source IP affinity. You can use the default distribution mode of a five-tuple hash. This mode offers the greatest scalability and resilience. Te load balancer routes traffic to any healthy server.
+In the healthcare portal, the application tier is stateless, so you don't need to use source IP affinity. You can use the default distribution mode of a five-tuple hash. This mode offers the greatest scalability and resilience. The load balancer routes traffic to any healthy server.
