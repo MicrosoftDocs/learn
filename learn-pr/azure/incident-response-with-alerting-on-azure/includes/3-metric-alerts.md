@@ -1,6 +1,6 @@
 A powerful feature of Azure Monitor is its ability to use thresholds to monitor specific resources. In an organization, it's far more useful to be notified when the free disk space on a server is less than 5%, instead of being alerted every time a file is saved.
 
-As a solution architect, you want to implement regular threshold monitoring for a number of your target resources and instances – this monitoring will help to head off potential issues before they can impact your customers.
+As a solution architect, you want to implement regular threshold monitoring for a number of your target resources and instances. Monitoring will help to head off potential issues before they can impact your customers.
 
 In this unit, you'll investigate the different kinds of metric alerts supported by Azure Monitor.
 
@@ -8,18 +8,17 @@ In this unit, you'll investigate the different kinds of metric alerts supported 
 
 In Azure Monitor, you can use metric alerts to achieve regular threshold monitoring of Azure resources. Metric alert trigger conditions are run at regular intervals. When the evaluation is true, a notification is sent. Metric alerts are stateful, and will only send a notification when the prerequisite conditions are met.
 
-Metric alerts can be useful if, for instance, you need to know when your server CPU use is reaching a critical threshold – say greater than 90% – or when your database storage is getting too low, or network latency is about to reach unacceptable levels.
+Metric alerts can be useful if, for instance, you need to know when your server CPU use is reaching a critical threshold, say greater than 90%. You could be alerted when your database storage is getting too low, or network latency is about to reach unacceptable levels.
 
 ## Composition of a metric alert
-As you learned in the previous unit, all alerts are governed by their rules. For metric alerts, there's one additional factor to define – the condition type, which can be static or dynamic.
+As you learned in the previous unit, all alerts are governed by their rules. For metric alerts, there's an additional factor to define. The condition type, which can be static or dynamic.
 
-### Example scenario
-With both static and dynamic metric alerts, you must define the type of statistical analysis to be used – for example, min, max, average, or total. In the example here, you will define the period of data to be assessed – such as the last 10 minutes. Finally, you will set the frequency by which the alert conditions are checked – for instance, every two minutes. 
+You must define the type of statistical analysis to be used with either static and dynamic metric alerts. For example, min, max, average, or total. In the example here, you will define the period of data to be assessed like the last 10 minutes. Finally, you will set the frequency by which the alert conditions are checked for instance, every two minutes.
 
 ### Using static threshold metric alerts
 Static metric alerts are based on simple static conditions and thresholds that you define. With static metrics, you specify the threshold that will be used to trigger the alert or notification.
 
-In the previously defined scenario, a static alert with a threshold of 85% – using CPU utilization as the metric – would check the rule every two minutes. It would evaluate the last 10 minutes of CPU utilization data to assess if it was above the 85% threshold.  If the evaluation is true, the actions associated with the action group would trigger.
+In the previously defined scenario, a static alert with a threshold of 85% CPU utilization checks the rule every two minutes. It evaluates the last 10 minutes of CPU utilization data to assess if it raises above the 85% threshold.  If the evaluation is true, it triggers the actions associated with the action group.
 
 ### Using dynamic threshold metric alerts
 Dynamic metric alerts use machine learning tools that Azure provides to automatically improve the accuracy of the thresholds defined by the initial rule.
@@ -43,6 +42,3 @@ Much like dimensions, Azure Monitor also supports the creation of metric alerts 
 The creation of scaling metric alert rules to monitor multiple resources is no different from creating any other metric alert rule. You just select all the resource you want to monitor.
 
 Like dimensions, a scaling metric alert is individual to the resource that triggered it.
-
-## Configure and set up metric alerts
-You've been introduced to metric-based alerts – now it's time to face a practical hands-on exercise where you'll create your own.

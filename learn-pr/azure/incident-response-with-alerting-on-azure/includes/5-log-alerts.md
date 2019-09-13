@@ -6,7 +6,7 @@ In this unit, you want to understand how log data can be used to improve resilie
 
 ## When to use log alerts
 
-Log alerts, as the name suggests, use log data to assess the rule logic and, if necessary, trigger an alert. The source of this data can come from any Azure resource – server logs, application server logs, or application logs. 
+Log alerts, as the name suggests, use log data to assess the rule logic and, if necessary, trigger an alert. The source of this data can come from any Azure resource from server logs, application server logs, or application logs. 
 
 By its nature, log data is historical so usage is focused more on analytics and trends. 
 
@@ -30,7 +30,7 @@ Log search results are one of two types, number of records or metric measurement
 
 ## Number of records type
 
-You would consider using this type of log search when working with an event or event-driven data – for example, Syslog or WebApp responses. This type of log search returns a single alert when the number of records in a search result reaches or exceeds the number of records (threshold) value. For example, when the threshold for the search rule is greater or equal to five, the query results would have to return five or more rows of data before the alert will trigger.
+You would consider using this type of log search when working with an event or event-driven data. For example, Syslog or WebApp responses. This type of log search returns a single alert when the number of records in a search result reaches or exceeds the number of records (threshold) value. For example, when the threshold for the search rule is greater or equal to five, the query results would have to return five or more rows of data before the alert will trigger.
 
 ## Metric measurement type
 
@@ -38,7 +38,7 @@ Metric measurement logs offer the same basic functionality as metric alert logs.
 
 Unlike a number of records search logs, metric measurement logs require additional criteria to be set, as follows:
 
-- **Aggregate function**: defines the calculation that will be made against the result data – for example, count or average. The result of the function is called AggregatedValue.
+- **Aggregate function**: defines the calculation that will be made against the result data. For example, count or average. The result of the function is called AggregatedValue.
 - **Group field**: used in conjunction with the aggregated value and specifies a field by which the result will be grouped. For example, you could specify that you want the average [grouped] by computer.
 - **Interval**: the time interval by which data is aggregated. For example, if you specify 10 minutes, an alert record is created for each aggregated block of 10 minutes.
 - **Threshold**: defined by an aggregated value and the total number of breaches.

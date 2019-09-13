@@ -16,4 +16,4 @@ In this module, you will:
 
 ## Prerequisites
 
-- Basic knowledge of Azure Monitor.
+- Knowledge of Azure Monitor.
