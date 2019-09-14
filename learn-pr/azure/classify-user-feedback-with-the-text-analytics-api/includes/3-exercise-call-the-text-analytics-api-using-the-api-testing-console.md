@@ -18,14 +18,11 @@ Every call to Text Analytics API requires a subscription key. Often called an ac
 
     |Property  | Value  | Description  |
     |---------|---------|---------|
-    |Name     |    MyTextAnalyticsAPIAccount     |  The name of the Cognitive Services account. We recommend using a descriptive name. Valid characters are `a-z`, `0-9`, and `-`.    |
+    |Name     |    *Choose a unique name*     |  The name of the Cognitive Services account. We recommend using a descriptive name. Valid characters are `a-z`, `0-9`, and `-`.    |
     |Subscription     |  Concierge Subscription    |   The subscription under which this new Cognitive Services API account with **Text Analytics API** is created.      |
-    |Location     |  *choose a region from the dropdown*       |  Since you're using the free sandbox, select a location from the dropdown that is **also** on the sandbox region list shown below.  |
+    |Location     |  *Choose a region from the dropdown*       |  Select a location from the dropdown.  |
     |Pricing tier     | **F0 Free**     |   The cost of your Cognitive Services account depends on the actual usage and the options you choose. We recommend selecting the free tier for our purposes here.      |
     |Resource group     |  Select **Use existing** and choose <rgn>[sandbox resource group name]</rgn>       |  Name for the new resource group in which to create your Cognitive Services Text Analytics API account.       |
-
-    ### Sandbox region list
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
     > [!TIP]
     > Remember the location you selected when creating the Text Analytics cognitive services account. You'll use it to make API calls shortly. 
@@ -96,7 +93,7 @@ We'll pass in our subscription key, or access key, in the **ocp-Apim-Subscriptio
     ![Screenshot of section number four showing the request URL.](../media/4-marker.PNG)
     ![Screenshot of the section number five showing detailed HTTP request.](../media/5-marker.PNG)
 
-    Then we have information about the response. In the example, we see that the request was a success and code `200` was returned. We can also see that the round trip took 38 ms.
+    Then we have information about the response. In the example, we see that the request was a success and code `200` was returned.
 
     ![Screenshot of section number five showing the response status](../media/6-marker.PNG)
 

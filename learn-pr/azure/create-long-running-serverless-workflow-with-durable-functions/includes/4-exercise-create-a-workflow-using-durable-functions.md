@@ -56,7 +56,7 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
     npm install durable-functions
     ```
 
-    This command installs the durable-functions package (and any required supporting packages). 
+    This command installs the durable-functions package (and any required supporting packages). This may take a few minutes to complete and will display some warnings, which can be ignored.
 
 1. Installing the durable-functions package and its dependencies takes a couple of minutes. Wait until all packages have finished installing. You can ignore any warnings that appear from the node package manager.
 
