@@ -11,21 +11,24 @@ Here you'll set up a web app and add a new deployment slot to it for staging. Yo
 Start by creating a new web app resource in the Azure portal:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
+
 1. Select **Create a resource**.
+
 1. Select **Web** > **Web App**.
+
 1. Fill out the wizard like this:
 
- | Field | Value |
- |---|---|
- | **Subscription** | Select the subscription you'd like to use to complete the exercise |
- | **Resource Group** | Create a new resource group named **mslearn-slots** |
- | **Name** | *Enter a unique name* |
- | **Publish** | Code |
- | **Runtime stack** | ASP.NET V4.7 |
- | **Operating System** | Windows |
- | **Region** | *Select a region near you* |
- | **Windows Plan** | *Leave default* |
- | **Sku and size** | *Leave default* |
+    | Field | Value |
+    |---|---|
+    | **Subscription** | Select the subscription you'd like to use to complete the exercise |
+    | **Resource Group** | Create a new resource group named **mslearn-slots** |
+    | **Name** | *Enter a unique name* |
+    | **Publish** | Code |
+    | **Runtime stack** | ASP.NET V4.7 |
+    | **Operating System** | Windows |
+    | **Region** | *Select a region near you* |
+    | **Windows Plan** | *Leave default* |
+    | **Sku and size** | *Leave default* |
 
 1. Navigate to the **Monitoring** tab at the top of the page and toggle **Enable Application Insights** to **No**.
 
@@ -36,10 +39,15 @@ Start by creating a new web app resource in the Azure portal:
 Use any of the usual deployment tools for your web app and its deployment slots. In this exercise, you'll use a local git repository for deployment. Set up the web app to use git by following these steps:
 
 1. In the Azure portal, on the left, select **All resources** and then select the web app you created.
+
 1. On the **Overview** page, under **Deployment**, select **Deployment Center**.
+
 1. Select **Local Git** > **Continue**.
+
 1. Select **App Service build service** > **Continue** > **Finish**.
+
 1. On the resulting **Deployment Center** page, select **FTP/Credentials** at the top, and then select the **User Credentials** tab.
+
 1. Enter a new username and password of your choice and select **Save Credentials**. Make a note of the username and password for later.
 
 ## Configure the git client and clone the web app source code
@@ -103,12 +111,15 @@ For the new the web app, you created only one slot: the production slot. You dep
 Next you'll create a deployment slot where you can stage new versions of the web app:
 
 1. In the Azure portal, select **All resources** and then select the web app.
+
 1. Under **Deployment**, select **Deployment slots**.
 
     ![Access deployment slots](../media/3-access-deployment-slots.png)
 
 1. On the **Deployment slots** page, select **Add slot**.
+
 1. In the **Name** box, enter **Staging** and then select **Add**.
+
 1. After the deployment slot is added, select **Close**.
 
 ## Set up git deployment for the staging slot
@@ -116,8 +127,11 @@ Next you'll create a deployment slot where you can stage new versions of the web
 Set up the new slot to use git deployment, just like you did for the production slot. Follow these steps:
 
 1. In the Azure portal, on the left, select **All resources**. In the list of all resources, you'll now see two web app entries: deployment slots are represented as separate apps in the portal. Select the entry representing the staging slot to go to its **Overview** page.
+
 1. Under **Deployment**, select **Deployment Center**.
+
 1. Select **Local Git** > **Continue**.
+
 1. Select **App Service build service** > **Continue** > **Finish**.
 
 ## Set up git to deploy the app to the staging slot
@@ -146,7 +160,9 @@ Next, make a small change to the web app and then use git to deploy the new vers
     ```
 
 1. In the list of **Files**, expand **aspnet-get-started** > **Views** > **Home**.
+
 1. Select **Index.cshtml**.
+
 1. Locate the following code:
 
     ```html
@@ -160,6 +176,7 @@ Next, make a small change to the web app and then use git to deploy the new vers
     ```
 
 1. To save your changes, press CTRL+S.
+
 1. In the Cloud Shell, enter the following commands to commit the new version of the app to git and deploy it to the staging slot. Enter your deployment password when you're prompted.
 
     ```bash
