@@ -16,7 +16,7 @@ Start by creating a new web app resource in the Azure portal:
 
 1. Select **Web** > **Web App**.
 
-1. Fill out the wizard like this:
+1. Fill out the wizard using information like the following examples:
 
     | Field | Value |
     |---|---|
