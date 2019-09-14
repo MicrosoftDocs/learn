@@ -15,17 +15,17 @@ Start by creating a new web app resource in the Azure portal:
 1. Select **Web** > **Web App**.
 1. Fill out the wizard like this:
 
-    | Field                | Value                                                    |
-    |----------------------|----------------------------------------------------------|
-    | **Subscription**     | Select the subscription you'd like to use to complete the exercise                                |
-    | **Resource Group**   | Create a new resource group named **mslearn-slots** |
-    | **Name**             | *Enter a unique name*                                    |
-    | **Publish**          | Code                                                     |
-    | **Runtime stack**    | ASP.NET V4.7                                             |
-    | **Operating System** | Windows                                                    |
-    | **Region**           | *Select a region near you*                   |
-    | **Windows Plan**     | *Leave default*                                          |
-    | **Sku and size**     | *Leave default*                                          |
+ | Field | Value |
+ |---|---|
+ | **Subscription** | Select the subscription you'd like to use to complete the exercise |
+ | **Resource Group** | Create a new resource group named **mslearn-slots** |
+ | **Name** | *Enter a unique name* |
+ | **Publish** | Code |
+ | **Runtime stack** | ASP.NET V4.7 |
+ | **Operating System** | Windows |
+ | **Region** | *Select a region near you* |
+ | **Windows Plan** | *Leave default* |
+ | **Sku and size** | *Leave default* |
 
 1. Navigate to the **Monitoring** tab at the top of the page and toggle **Enable Application Insights** to **No**.
 
