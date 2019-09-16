@@ -2,8 +2,6 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
 
 ## Create a Function App
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your MS Learn account.
 
 1. Select the **+ Create a resource** button found on the upper left-hand corner of the Azure portal, then select **Compute** > **Function App**.

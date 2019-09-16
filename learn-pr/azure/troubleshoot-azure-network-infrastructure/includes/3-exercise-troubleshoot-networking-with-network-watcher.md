@@ -4,8 +4,6 @@ Suppose you have two VMs that can't communicate. You want to diagnose the proble
 
 Here, you'll troubleshoot connectivity between two VMs in different subnets.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
 ## Configure a virtual network and VMs

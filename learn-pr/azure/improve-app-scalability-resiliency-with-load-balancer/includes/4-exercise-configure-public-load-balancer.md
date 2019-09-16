@@ -4,8 +4,6 @@ In your healthcare organization, you want to load balance the client traffic, to
 
 Here, you will create a load balancer resource and use it to distributed load across the virtual machines.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Deploy the patient portal web application
 
 First, deploy your patient portal application across two virtual machines within a single availability set. To save time, let's start by running a script to create this application. The script will:

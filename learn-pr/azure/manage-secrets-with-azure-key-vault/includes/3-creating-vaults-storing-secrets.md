@@ -15,8 +15,6 @@ To start, you'll create a vault and store one secret in it.
 
 ### Create the vault
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 **Key Vault names must be globally unique, so you'll need to pick a unique name**. Vault names must be 3-24 characters long and contain only alphanumeric characters and dashes. Make a note of the vault name you choose, as you'll need it throughout this exercise.
 
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]

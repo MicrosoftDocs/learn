@@ -14,8 +14,6 @@ When creating an account, choose an ID that is meaningful to you; it is how you 
 
 You can optionally set up virtual networks and geo-redundancy during account creation, but this can also be done later. In this module we will not enable those settings.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Creating an Azure Cosmos DB account in the portal
 
 1. Sign into the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
