@@ -4,9 +4,6 @@ Your organization has a website where exercise videos are published. Your organi
 
 In the unit, you'll create the Azure Search service.
 
-<!-- Activate the sandbox -->
-[!INCLUDE [azure-sandbox-activate](../../../includes/azure-sandbox-activate.md)]
-
 ## Create an Azure Search service in the Azure portal
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.

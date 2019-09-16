@@ -2,8 +2,6 @@ In this unit, using the example from the previous unit, you'll learn how to crea
 
 ## Create a Function App
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account with which you activated the sandbox.
 
 1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal.
@@ -56,7 +54,7 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
     npm install durable-functions
     ```
 
-    This command installs the durable-functions package (and any required supporting packages). 
+    This command installs the durable-functions package (and any required supporting packages). This may take a few minutes to complete and will display some warnings, which can be ignored.
 
 1. Installing the durable-functions package and its dependencies takes a couple of minutes. Wait until all packages have finished installing. You can ignore any warnings that appear from the node package manager.
 
