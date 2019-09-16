@@ -1,7 +1,5 @@
 In this exercise, we'll create two Azure SQL databases to represent two fitness locations, and then create a SQL elastic pool to manage two databases.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create SQL servers
 
 We'll start by creating a SQL server for our fitness databases and we'll add databases for two locations. The steps use Vancouver and Paris but feel free to use other location names. 

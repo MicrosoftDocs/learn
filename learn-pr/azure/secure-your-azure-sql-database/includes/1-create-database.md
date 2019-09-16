@@ -6,9 +6,6 @@ Here you'll set up the resources you'll need for use throughout this module. Let
 
 Let's get things set up!
 
-<!-- Activate the sandbox -->
-[!INCLUDE [azure-sandbox-activate](../../../includes/azure-sandbox-activate.md)]
-
 ## Create an Azure SQL Database
 
 1. First, let's set up some variables. Replace values below that are shown in `<>` with values of your choice. Note that the `<password>` must have at least eight characters and contain characters from at least three of these categories: uppercase characters, lowercase characters, numbers, and non-alphanumeric characters. Save the login for use later.
