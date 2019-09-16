@@ -8,8 +8,6 @@ The following image highlights the elements you'll configure in this exercise. Y
 
 ## Deploy a virtual machine and an application gateway
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 1. In Azure Cloud Shell, run the following command to download the source code for the shipping portal.
 
     ```bash

@@ -20,8 +20,6 @@ Our app works like a shared folder that accepts file uploads and makes them avai
 
 The code we'll start with compiles and runs, but the parts responsible for storing and loading data are empty. After we complete the code, we'll deploy the app to Azure App Service and test it.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 Let's set up the storage infrastructure for our app.
 
 ### Storage account

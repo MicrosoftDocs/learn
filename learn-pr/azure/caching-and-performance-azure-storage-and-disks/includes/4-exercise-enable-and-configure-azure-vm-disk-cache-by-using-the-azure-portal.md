@@ -8,8 +8,6 @@ You've decided to make these changes through the Azure portal.
 
 In this exercise, we'll walk through making the changes to a VM that we described above. First, let's sign in to the portal and create a VM.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create a virtual machine
 
 In this step, we're going to create a VM with the following properties:

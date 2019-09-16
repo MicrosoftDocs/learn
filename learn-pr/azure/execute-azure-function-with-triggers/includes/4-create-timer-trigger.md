@@ -1,7 +1,5 @@
 In this unit, we create an Azure function app that's invoked every 20 seconds using a timer trigger.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create an Azure function app
 
 Let’s start by creating an Azure Function app in the portal.

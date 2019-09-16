@@ -1,7 +1,5 @@
 Your transportation company wants to set themselves apart from other companies but without breaking the bank. You must have a good handle on how to set up the database to provide the best service while controlling costs.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 Here, you'll learn:
 
 - What considerations you need to make when creating an Azure SQL database, including:

@@ -14,8 +14,6 @@ You'll create the following resources:
 | MarketingVNet | North Europe | 10.2.0.0/16 | Apps | 10.2.1.0/24 |
 | ResearchVNet | West Europe | 10.3.0.0/16 | Data | 10.3.1.0/24 |
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create the virtual networks
 
 1. In Cloud Shell, run the following command to create the virtual network and subnet for the **Sales** systems.

@@ -8,8 +8,6 @@ The surf report site lets users upload photos and videos of local beach conditio
 
 To fulfill these requirements, you decide to buffer uploaded content in an Azure Queue for processing and then transfer it to an Azure Blob for persistent storage. You need a storage account that can hold both queues and blobs while delivering low-latency access to your content.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Use the Azure portal to create a storage account
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
