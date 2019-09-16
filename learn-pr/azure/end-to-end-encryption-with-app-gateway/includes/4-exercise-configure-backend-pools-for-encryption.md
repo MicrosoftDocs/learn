@@ -16,6 +16,7 @@ The following image highlights the elements you'll configure in this exercise. Y
     export rgName=<resource group name>
 
     az group create --name $rgName --location <location>
+    ```
 
 1. In Azure Cloud Shell, run the following command to download the source code for the shipping portal.
 
