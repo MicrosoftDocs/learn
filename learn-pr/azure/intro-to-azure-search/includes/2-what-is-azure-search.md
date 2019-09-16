@@ -23,7 +23,6 @@ Azure Search comes with the following features:
 - **Multi-lingual**: Azure Search offers linguistic analysis for 56 languages to intelligently handle phonetic matching or language-specific linguistics. Natural language processors available to you in Azure Search are the same as those used by Bing and Office.
 - **Geo-enabled**: Azure Search supports geo-search filtering based on proximity to a physical location.
 - **Configurable user experience**: Azure Search has several features to improve the user experience including autocomplete, autosuggest, pagination, and hit highlighting.
-- **Traffic analytics**: Azure Search collects search analytics to help unlock insights from user search activity.
 
 ### What is cognitive search?
 
@@ -98,8 +97,8 @@ Storage considerations are always important, and in Azure Search it's no differe
 
 A good practice for index design is to use an iterative workflow. Combine tools to complete the index design as quickly as possible:
 
-1. Use the Import Data wizard to prototype and load data to an index if your data is stored in one of the supported data sources.
-1. If your data source is not supported by the Import Data wizard, create an index manually in the portal. The portal has an interface to add fields, data types and assign behaviors.
+1. Use the Import data wizard to prototype and load data to an index if your data is stored in one of the supported data sources.
+1. If your data source is not supported by the Import data wizard, create an index manually in the portal. The portal has an interface to add fields, data types and assign behaviors.
 1. The index schema can now be downloaded in JSON format. If you need to iterate on the index, you must now do that with a code-based approach.
 1. The next step is to load data into the index, remember Azure Search only supports JSON documents.
 1. Finally you can query the index, analyze the results, and if necessary iterate on the index schema until it's correct.
@@ -122,7 +121,7 @@ Azure Search indexes can be created in the Azure portal using the index designer
 - Add an index through the designer, giving it a name
 - Add fields to the index, specifying the key field and field attributes
 
-The Import Data wizard can be used in the portal to create indexes if you're using a data source that's supported.
+The Import data wizard can be used in the portal to create indexes if you're using a data source that's supported.
 
 #### Using C#
 
@@ -138,7 +137,7 @@ Creating an index in Azure Search using C# requires you to obtain the URL endpoi
 
 You can use any programming language, including interpreted languages like Python or PowerShell, to call the Azure Search Service REST API to create objects and manage your search service. The index definition and searchable content are provided in the request body as well-formed JSON content.
 
-To use the Azure CLI, you'll first need to have created the Search service. In the portal, make a note of the Search service endpoint URL and the primary admin key.
+To use the Azure CLI, you'll first need to have created the search service. In the portal, make a note of the search service endpoint URL and the primary admin key.
 
 The steps are then:
 

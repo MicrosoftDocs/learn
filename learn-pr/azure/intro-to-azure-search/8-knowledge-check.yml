@@ -20,11 +20,11 @@ quiz:
     - content: All query composition is based on the full Lucene syntax 
       isCorrect: false
       explanation: Azure Search provides a simple syntax as the default. The optional full Lucene syntax is used for more advanced queries such as fuzzy search, proximity search, and regular expressions.
-    - content: Query requests can include terms and phrases, operators, filters, and instructions for shaping search results
-      isCorrect: true
-      explanation:  A query request is a comprehensive instruction to the search engine. A single call can combine a search expression, a $filter expression, pagination, which fields to search, and which fields to return.
-    - content: Search explorer returns results in JSON, XML, or HTML
+    - content: Query requests include search criteria, but nothing for shaping search results
       isCorrect: false
+      explanation:  A query request is a comprehensive instruction to the search engine. A single call can combine a search expression, a $filter expression, pagination, which fields to search, and which fields to return.
+    - content: Search explorer returns results in JSON only
+      isCorrect: true
       explanation: Search explorer returns results in JSON only. 
     - content: searchMode must be set to ON in order for queries to work
       isCorrect: false

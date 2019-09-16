@@ -1,6 +1,6 @@
 Importing data into an Azure Search index is the first step to enabling your company to use search. With data loaded into an index, the next step is learning how to query it.
 
-In this unit, you'll see how to write simple search queries in the Azure Search Explorer, then append extra parameters to manipulate those results.
+In this unit, you'll see how to write simple search queries in the Search explorer, then append extra parameters to manipulate those results.
 
 ## Searching content using Azure Search
 
@@ -8,7 +8,7 @@ Index and query design are closely linked. A crucial component to understand is 
 
 Azure Search queries can be submitted as an HTTP or REST API request, with the response coming back as JSON. Queries can specify what fields are searched and returned, how search results are shaped, and how the results should be filtered or sorted. A query that doesn't specify the field to search will execute against all the searchable fields within the index.
 
-All of the methods of searching are made possible by the Azure Search REST API. You can choose to programmatically make GET requests to the API, in Powershell by running `Invoke-RestMethod`, or with tools like PostMan. In the portal, you can use the built-in Search Explorer, enabling you to easily execute searches and view the JSON results. Or there's a rich SDK available for .NET programming languages, with which you can use the `SearchIndexClient` object to submit searches.
+All of the methods of searching are made possible by the Azure Search REST API. You can choose to programmatically make GET requests to the API, in Powershell by running `Invoke-RestMethod`, or with tools like PostMan. In the portal, you can use the built-in Search explorer, enabling you to easily execute searches and view the JSON results. Or there's a rich SDK available for .NET programming languages, with which you can use the `SearchIndexClient` object to submit searches.
 
 Azure Search supports two types of syntax: simple and full Lucene. Simple syntax covers all of the common query scenarios, including geo-search. Full Lucene is useful for advanced scenarios such as wildcard and fuzzy search, or term boosting.
 
@@ -24,7 +24,7 @@ A query request is a list or words (search terms) and query operators (simple or
 - **A query type:** - One of two choices either simple or full, simple syntax is the default option.
 - **The query:** - Will contain search terms and then a combination of sorting statements or filtering statements.
 
-Search Explorer uses the REST API. When using Search Explorer, you can select the index and API version you want to use (service endpoint and API key are implicit). In the query you provide, you are only concerned with the last two items. Let's look what components make up a search query. Consider this search:
+Search explorer uses the REST API. When using Search explorer, you can select the index and API version you want to use (service endpoint and API key are implicit). In the query you provide, you are only concerned with the last two items. Let's look what components make up a search query. Consider this search:
 
 ```
 calm easy meditation (-"iyengar yoga" + -"hot pilates)"
@@ -121,7 +121,7 @@ A useful feature to your customers is the ability to order the results on the le
 &$orderby=Length asc
 ```
 
-Your marketing team have asked to add more descriptive text for each video. They'd like to have a description field that is searchable. When the search results are returned, the matching terms need to be highlighted in the results. The Search service offers this functionality by appending this parameter to queries `highlight=fieldname`. This returns a `search.highlights` array with HTML for each document that highlights where the term was found.
+Your marketing team have asked to add more descriptive text for each video. They'd like to have a description field that is searchable. When the search results are returned, the matching terms need to be highlighted in the results. The search service offers this functionality by appending this parameter to queries `highlight=fieldname`. This returns a `search.highlights` array with HTML for each document that highlights where the term was found.
 
 ```json
 "@search.highlights": {

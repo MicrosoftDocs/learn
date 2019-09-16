@@ -1,8 +1,8 @@
-Search explorer in the Azure portal is an easy way to validate the quality of your search index. Now you have loaded your organizations video catalog data into the index, you need to validate the quality of the index.
+Search explorer is a tool built into the Azure portal that gives you an easy way to validate the quality of your search index.
 
-Your web team has asked you to provide some example queries that the new Search service can answer. You'll use the Search explorer to write and test queries.
+Your web team has asked you to provide some example queries that the new search service can answer. You'll use the Search explorer to write and test queries.
 
-In this unit, you'll use Azure Search explorer and some simple syntax to search for terms, return top results, filter queries and validate the search results.
+In this unit, you'll use Search explorer to write queries, review top results, and apply filters.
 
 ## Query your data using the Search explorer in the Azure portal
 
@@ -10,9 +10,9 @@ In this unit, you'll use Azure Search explorer and some simple syntax to search 
 
 1. In the **All Resources** view of the portal, select the Azure Search resource you created to navigate to its overview page.
 
-    ![Screenshot of the Azure portal, showing the Search service overview page](../media/5-exercise-screenshot-7.png)
+    ![Screenshot of the Azure portal, showing the search service overview page](../media/5-exercise-screenshot-7.png)
 
-1. On the Search service overview page, select **Search Explorer**.
+1. On the search service overview page, select **Search explorer**.
 
     ![Screenshot of the Azure portal, showing the Search explorer](../media/7-exercise-screenshot-1.png)
 

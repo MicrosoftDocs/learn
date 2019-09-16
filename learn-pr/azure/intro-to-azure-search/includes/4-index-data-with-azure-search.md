@@ -16,7 +16,7 @@ Azure Search lets you create empty indexes. In order for indexes to be queried, 
 
 **Azure portal**
 
-Contained within the Azure Search Service dashboard in the Azure portal is the Import Data wizard. The wizard imports data into the index by connecting to an external data source in your Azure subscription. The wizard crawls the data source for content, and converts it into JSON documents to be imported into the index.
+Contained within the Azure Search Service dashboard in the Azure portal is the Import data wizard. The wizard imports data into the index by connecting to an external data source in your Azure subscription. The wizard crawls the data source for content, and converts it into JSON documents to be imported into the index.
 
 The supported data sources are:
 
@@ -61,7 +61,7 @@ To push documents into the index in C#, after importing the `Microsoft.Azure.Sea
 
 If you are programmatically generating your search documents, the data sources are only limited to your ability to generate JSON documents.
 
-If you want to use the Import Data wizard in the Azure portal, you are restricted to the list of supported sources above. There are some caveats for each data source:
+If you want to use the Import data wizard in the Azure portal, you are restricted to the list of supported sources above. There are some caveats for each data source:
 
 - For the Azure SQL databases and SQL Server databases in a VM, only a flattened dataset is allowed, so create a table, or view, for use by the wizard.
 - For a Cosmos DB you need to specify the collection to be imported, and all the documents in that collection will be included.
@@ -80,17 +80,17 @@ An index can also offer additional features, like suggesters, or allow cross-sit
 
 ### Data import monitoring and verification
 
-The Search services overview page has a dashboard that lets you quickly see the health of the Search service. On the dashboard you can see how many documents are in the Search service, how may indexes have been used, and how much storage is in use.
+The search services overview page has a dashboard that lets you quickly see the health of the search service. On the dashboard you can see how many documents are in the search service, how may indexes have been used, and how much storage is in use.
 
 ![text](../media/search-dashboard.png)
 
-When loading new documents into an index, the progress can be monitored by clicking on the indexes associated indexer. The document count will grow as documents are loaded into the index. In some instances, the portal page can take a few minutes to display up-to-date document counts. Once the index is ready for querying, you can then use Search Explorer to verify the results. An index is ready when the first document is successfully loaded.
+When loading new documents into an index, the progress can be monitored by clicking on the indexes associated indexer. The document count will grow as documents are loaded into the index. In some instances, the portal page can take a few minutes to display up-to-date document counts. Once the index is ready for querying, you can then use Search explorer to verify the results. An index is ready when the first document is successfully loaded.
 
 ![Screenshot of the portal, showing the indexer status](../media/indexer-status.png)
 
 Indexers only import new or updated documents, so it is normal to see zero documents indexed.
 
-The Search Explorer can be used to perform quick searches to check the contents of an index, and that you are getting expected search results. Having this tool available in the portal allows you to easily check the index by reviewing the results that are returned as JSON documents.
+The Search explorer can be used to perform quick searches to check the contents of an index, and that you are getting expected search results. Having this tool available in the portal allows you to easily check the index by reviewing the results that are returned as JSON documents.
 
 ### Rebuilding indexes
 
@@ -104,7 +104,7 @@ An approach to updating an index without effecting your end users is to create a
 
 ### Handling large data volumes
 
-When you create a Search service on a billable pricing tier, by default you start with a single replica (used for data ingestion and queries) and partition (used for data storage). There are quota limits on the size of storage, number of indexes and indexers, and data sources that vary by tier.
+When you create a search service on a billable pricing tier, by default you start with a single replica (used for data ingestion and queries) and partition (used for data storage). There are quota limits on the size of storage, number of indexes and indexers, and data sources that vary by tier.
 
 If you start to hit the quota limits, or require better guarantees on availability, the portal, and REST API allow you to scale up the number of replicas and partitions. Azure will start to guarantee a 99.9% uptime after you've increased the replicas to at least 3.
 
