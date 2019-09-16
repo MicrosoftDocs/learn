@@ -41,7 +41,7 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
     az vm create \
       --resource-group $rg \
       --name webServer1 \
-      --image Canonical:UbuntuServer:16.04.0-LTS:16.04.201610200 \
+      --image UbuntuLTS \
       --admin-username azureuser \
       --generate-ssh-keys \
       --vnet-name vehicleAppVnet \
@@ -54,7 +54,7 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
     az vm create \
       --resource-group $rg \
       --name webServer2 \
-      --image Canonical:UbuntuServer:16.04.0-LTS:16.04.201610200 \
+      --image UbuntuLTS \
       --admin-username azureuser \
       --generate-ssh-keys \
       --vnet-name vehicleAppVnet \
