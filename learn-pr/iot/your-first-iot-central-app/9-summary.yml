@@ -42,7 +42,7 @@ quiz:
     - content: 'All devices that have a setting that the device belongs to a device set.'
       isCorrect: false
       explanation: Incorrect. There is no such setting.
-  - content: 'What is the process of authenticating devices to IoT Central know as?'
+  - content: 'What is the process of authenticating devices to IoT Central known as?'
     choices: 
     - content: 'Authenticating'
       isCorrect: false
@@ -57,7 +57,7 @@ quiz:
     choices: 
     - content: 'One state measurement'
       isCorrect: true
-      explanation: Correct, in our scenario Contents state, Cooling system state, or Truck state, could be added to the map, in the form of a color code.
+      explanation: Correct, in our scenario contents state, cooling system state, or truck state, could be added to the map, in the form of a color code.
     - content: 'One telemetry measurement'
       isCorrect: false
       explanation: Incorrect, telemetry measurements could be a bit complicated to show with just a color.

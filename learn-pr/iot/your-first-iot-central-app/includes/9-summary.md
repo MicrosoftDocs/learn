@@ -24,4 +24,3 @@ Take your interest further with:
 And look out for and complete additional Learn modules in this learning path.
 
 To finish this module and earn your rewards, complete a final knowledge check.
-

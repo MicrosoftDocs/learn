@@ -44,12 +44,12 @@ quiz:
     - content: 'The simulation is run at 60/5 = 12 times real time.'
       isCorrect: true
       explanation: Correct.
-    - content: 'The simulation runs in real-time, with 12 sets of telemetry data communicated to IoT Central every minute.'
+    - content: 'The simulation runs in real time, with 12 sets of telemetry data communicated to IoT Central every minute.'
       isCorrect: false
       explanation: Incorrect, though data is sent 12 times per minute.
     - content: 'The simulation runs at 60 times real time, with the telemetry reported every 5 seconds.'
       isCorrect: false
-      explanation: Incorrect, the simulation does not run at 60 times real-time.
+      explanation: Incorrect, the simulation does not run at 60 times real time.
   - content: "In our scenario, interpret the following line of code:  client.onDeviceMethod('cmdGoTo', CmdGoToCustomer)?"
     choices:
     - content: 'The IoT Central app has a command with Field Name "cmdGoTo", and the NodeJS app has a function "CmdGoToCustomer" to be called when the operator invokes cmdGoTo.'
@@ -58,3 +58,6 @@ quiz:
     - content: 'The IoT Central app has a command with Field Name "CmdGoToCustomer", and the NodeJS app has a function "cmdGoTo" to be called when the operator invokes CmdGoToCustomer.'
       isCorrect: false
       explanation: Incorrect. Got the names the wrong way round.
+   - content: 'Two commands, with functions named "CmdGoToCustomer" and "cmdGoTo", are defined in the Node.JS app.'
+      isCorrect: false
+      explanation: Incorrect. These two names refer to one command.
