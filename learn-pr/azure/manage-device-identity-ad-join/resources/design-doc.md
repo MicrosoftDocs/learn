@@ -39,9 +39,9 @@ Identify the subtasks of *Manage device identity using AD join*
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| Understand device identity | Manage user identity | Knowledge Check | Describe options to manage device identities | Yes |
-| What is Azure AD Join | Restrict access to organizational resources | Exercise | Configure Azure AD join to manage device identities | Yes |
-| Using Enterprise State Roaming | Restrict Access to your organizations resources | Knowledge Check | Configure enterprise state roaming | Yes |
+| Understand device identity | Manage user identity | Knowledge Check | 1 | Yes |
+| What is Azure AD Join | Restrict access to organizational resources | Exercise | 2 | Yes |
+| Using Enterprise State Roaming | Restrict Access to your organizations resources | Knowledge Check | 3 | Yes |
 
 ## Outline the units
 
