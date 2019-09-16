@@ -1,17 +1,21 @@
 In this part, you follow the Tailspin web team as they define their release management workflow for the _Space Game_ web site.
 
-*Release cadence* defines how often you deploy new features. You might start by deploying multiple changes to internal environments, such as dev, test, and staging before deploying to a production environment that's available to your users. As your process matures, you can deploy changes to production more frequently.
+**NOTE--release cadence seems to be used in the same sense as release management workflow so please note that I reverted to the latter in most cases**
 
-When defining your release cadence, you usually begin by identifying the stages, or major divisions of the pipeline, that you need. A deployment stage typically maps to the environment that the artifact is deployed to. For example, a _Test_ stage might deploy the build artifact to a testing environment where you perform additional testing on your running application or service.
+A part of the release management workflow is the *Release cadence*, which defines how often you deploy new features. You might start by deploying multiple changes to internal stages, such as dev, test, and staging before deploying to a production stage that's available to your users. As your process matures, you can deploy changes to production more frequently.
 
-After you define which stages you need, you need to consider how changes move from one stage to the next. Each stage can define its own success criteria that promotes the build to the next stage. Azure Pipelines provides several ways to help you control how changes move through the pipeline.
+**NOTE--difference between a stage and an environment is really murky and you can't deploy to an abstraction--**
+
+When defining your release management workflow, you usually begin by identifying the stages, or major divisions of the pipeline, that you need. A deployment stage typically maps to an environment, which is an abstraction, or description, of the runtime environment you deploy to. For example, you might deploy a build aritifact to a _Test_ stage. That test stage is defined by an environment that describes the tasks and resources that are used in the _Test_ stage.
+
+After you define which stages you need, you need to consider how changes move from one stage to the next. Each stage can define its own success criteria that must be met before the build moves to the next stage. Azure Pipelines provides several ways to help you control how changes move through the pipeline.
 
 In this section, you'll:
 
 > [!div class="checklist"]
-> * Learn the differences between common pipeline stages, including _Build_, _Dev_, _Test_, and _Staging_.
+> * Learn the differences between common pipeline stages, such as _Build_, _Dev_, _Test_, and _Staging_.
 > * Understand how manual, scheduled, and continuous deployment triggers enable you to control when each stage runs.
-> * See how a release approval pauses the pipeline until an approver accepts or rejects the release.
+> * See how a *release approval* pauses the pipeline until an approver accepts or rejects the release.
 
 ## The meeting
 
@@ -39,23 +43,25 @@ When defining a release management process, it's important to first identify whi
 
 **Tim:** Plus we need a place where we can show new features to management. I can't send anything to production without their approval.
 
-**Andy:** Absolutely. Now that we're all up to speed on what a CD pipeline does, what do we need to do to make this a pipeline that suits our needs?
+**Andy:** Absolutely. Now that we're up to speed on what a release pipeline does, what do we need to do to make this a pipeline that suits our needs?
 
-**Mara:** Let's sketch out our requirements on the whiteboard. That might help us plan out next steps. Let's start with what we have.
+**Mara:** Let's sketch out our requirements on the whiteboard. That might help us plan our next steps. Let's start with what we have.
 
-Mara moves to the whiteboard and sketches their existing pipeline.
+Mara moves to the whiteboard and sketches the existing pipeline.
 
 ![A whiteboard showing the Build and Deploy stages](../media/2-build-deploy.png)
 
-**Mara:** The _Build_ stage builds the source code and produces a package: a _.zip_ file in our case. The _Deploy_ stage deploys that _.zip_ file, the _Space Game_ website, to App Service. What comes next?
+**Mara:** The _Build_ stage builds the source code and produces a package: a _.zip_ file in our case. The _Deploy_ stage deploys that _.zip_ file, the _Space Game_ website, to App Service. What's missing from our release pipeline?
 
 ## Add the Dev stage
 
-**Andy:** We need a _Dev_ stage, which will be the first stop for the artifact after it's built. Developers can't always run the entire service from their local development environment. For example, an e-commerce system might include the website, the products database, a payment system, and so on.
+**Andy:** First, let's make clear that a *release* is a package that holds a versioned set of artifacts created by a release pipeline. A release includes all the information you need to carry out the tasks and actions in the release pipeline, such as what to do for each stage. Releases are *deployed* to stages.
 
-**Andy:** Although the _Space Game_ website isn't as complex as an e-commerce site, the leaderboard feature reads high scores from an external source. Right now, it reads fictitious scores from a file. Setting up a _Dev_ stage would give us an environment where we can integrate the web app with a real database. That database might still hold fictitious scores, but it brings us one step closer to our final app.
+**NOTE--I'm not sure that "what to do for each stage" (above) is correct. Isn't what you do part of the environment? The release includes what you need to do it.**
 
-**Andy:** Also, let's make clear that a *release* is a package that holds a versioned set of artifacts created by a release pipeline. A release includes all the information you need to carry out the tasks and actions in the release pipeline, such as what to do for each stage. Releases are *deployed* to stages.
+To get back to your question, Mara, we need a _Dev_ stage. That will be the first stop for the artifact after it's built. Developers can't always run the entire service from their local development environment. For example, an e-commerce system might require the website, the products database, a payment system, and so on. We need a stage that includes everything the app needs.
+
+Although the _Space Game_ website isn't as complex as an e-commerce site, the leaderboard feature reads high scores from an external source. Right now, it reads fictitious scores from a file. Setting up a _Dev_ stage would give us an environment where we can integrate the web app with a real database. That database might still hold fictitious scores, but it brings us one step closer to our final app.
 
 **Mara:** I like it. We won't integrate with a real database quite yet, but a _Dev_ stage enables us to deploy to an environment where we can add one.
 
@@ -69,7 +75,7 @@ Mara updates her drawing on the whiteboard. She replaces "Deploy" with "Dev" to 
 
 ![A whiteboard showing the Build and Dev stages](../media/2-add-dev-stage-trigger.png)
 
-**Mara:** I think this will be relatively easy to accomplish. We need to define a *condition* that deploys to the _Dev_ stage only when changes happen on a release branch.
+I think this will be easy to accomplish. We need to define a *condition* that deploys to the _Dev_ stage only when changes happen on a release branch.
 
 ## What are conditions?
 
@@ -133,7 +139,7 @@ In YAML, you use the `|` syntax to define a string that spans multiple lines. Yo
 
 You'll work with a more complete example shortly when you set up the _Dev_ stage.
 
-**Mara:** Conditions enable us to control which changes make it to which stages. We can produce a build artifact for any change to validate that our builds are healthy. When we're ready, we can merge changes into a release branch and promote the build to the _Dev_ stage.
+**Mara:** Conditions let us to control which changes are promoted to which stages. We can produce a build artifact for any change to validate that our builds are healthy. When we're ready, we can merge changes into a release branch and promote the build to the _Dev_ stage.
 
 ## Add the Test stage
 
@@ -155,20 +161,18 @@ Mara updates her drawing to show that the build moves from the _Dev_ stage to th
 
 ![A whiteboard showing the Build, Dev, and Test stages](../media/2-add-test-stage-schedule.png)
 
-**Amita:** I'm feeling better. However, what do we use to control when each stage runs?
-
 ### What are triggers?
 
-A *trigger* defines when a stage runs. Azure Pipelines provides a few different types of triggers to help you control when each stage runs.
+**Amita:** I'm feeling better. However, what do we use to control when each stage runs?
 
-**Mara:** In Azure Pipelines, we can use triggers to control our release cadence. Here are our choices:
+**Mara:** In Azure Pipelines, we can use triggers to control our release cadence. A *trigger* defines when a stage runs. Azure Pipelines provides a few different types of triggers to control when each stage runs. Here are our choices:
 
 * A continuous integration (CI) trigger
 * A pull request (PR) trigger
 * A scheduled trigger
 * A build completion trigger
 
-**Mara:** CI and PR triggers enable you to control which branches participate in the overall build process. We want to build the project when a change is made on any branch. A scheduled trigger starts a deployment at a specific time. A build completion trigger runs a build when another build, such as one for a dependent component, completes successfully. It seems like we want a scheduled trigger.
+CI and PR triggers let us control which branches participate in the overall build process. We want to build the project when a change is made on any branch. A scheduled trigger starts a deployment at a specific time. A build completion trigger runs a build when another build, such as one for a dependent component, completes successfully. It seems like we want a scheduled trigger.
 
 ### What are scheduled triggers?
 
@@ -243,15 +247,13 @@ This stage, `Test`, runs only when the previous stage succeeds and the built-in 
 
 You'll see a more complete example later in this module.
 
-**Mara:** Triggers enable us to control which changes make it to which stages. We can produce a build artifact for any change to validate our builds are healthy. When we're ready, we can merge changes into a release branch and promote the build to the _Dev_ stage.
-
 **Amita:** I like this. I don't even have to pick up the release by hand anymore and install it. It'll be all ready for me.
 
-**Andy:** And remember, if we want to make things more automated later on, we can always do it. Nothing's written in stone. The pipeline evolves as we improve and learn more.
+**Andy:** And remember, if we want to make things more automated later on, we can. Nothing's written in stone. The pipeline evolves as we improve and learn more.
 
 ### Add the Staging stage
 
-**Tim:** That leaves me. I need an environment to run additional stress testing. We also need an environment that we can demo to management to get their approval. Let's call that _Staging_.
+**Tim:** That leaves me. I need an environment to run additional stress tests. We also need an environment that we can demo to management to get their approval. Let's call that _Staging_.
 
 **Andy:** Well said, Tim. Having a staging, or pre-production, environment is an important piece here. It's often the last stop before a feature or bug fix makes it to our users.
 
@@ -269,7 +271,9 @@ Mara updates her drawing to show that the build moves from _Test_ to _Staging_ o
 
 ![A whiteboard showing the Build, Dev, Test, and Staging stages](../media/2-add-staging-stage-approval.png)
 
-**Tim:** I could also see us using release approvals to promote from _Staging_ to _Production_, after managements signs off. We could even provide management with direct access to the approval button. That would give management clear sign-off steps, and could save us from having extra meetings. But how do release approvals work?
+**NOTE--I changed what's below because I don't believe any IT guy would ever give management the power to promote to production**
+
+**Tim:** I could also see us using release approvals to promote from _Staging_ to _Production_, after managements signs off. I need to wait until management signs off on the changes and I can never predict how long that takes. Once they sign off I can approve the release and promote it to production. But how do release approvals work?
 
 #### What are release approvals?
 
@@ -278,6 +282,8 @@ A *release approval* is a way to pause the pipeline until an approver accepts or
 Recall that in [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you defined an _environment_ in your pipeline configuration to represent your deployment environment. Here's an example from your existing pipeline:
 
 [!code-yml[](code/2-azure-pipelines.yml?highlight=8)]
+
+**NOTE--below are we using "environment" correctly?**
 
 In this example, Azure Pipelines creates the **dev** environment for you if it doesn't exist. You can also define an environment through Azure Pipelines that includes specific criteria for your release. This criteria can include which pipelines are authorized to deploy to that environment and what human approvals are needed to promote the release from one stage to the next.
 
@@ -291,11 +297,11 @@ Azure Pipelines gives you the flexibility to automate what you're able to, while
 
 **Mara:** You raise a good point. DevOps is really about automating repetitive and error-prone tasks. There are times when human intervention is still necessary, for example, when gaining approval from management before we release new features.
 
-**Mara:** As we gain experience with our automated deployments, we can automate more of our manual steps to speed up the process. For example, perhaps we can automate additional quality checks in the _Test_ stage so Amita doesn't have to approve each build.
+As we get more experience with our automated deployments, we can automate more of our manual steps to speed up the process. For example, perhaps we can automate additional quality checks in the _Test_ stage so Amita doesn't have to approve each build.
 
 **Tim:** Sounds great. Let's go with this plan for now and see how we can speed things up later.
 
-**Amita:** Speaking of our plan, can we summarize what next steps we'll take?
+**Amita:** Speaking of our plan, can we summarize what steps we'll take next ?
 
 ## The plan
 
@@ -318,8 +324,10 @@ Later, we can deploy the build artifact to a production environment after manage
 
 **Amita:** Is this going to be hard to do? It seems like a lot of work.
 
-**Mara:** I don't think it will be too bad. Every stage is separate from every other stage. Stages are discrete environments where we deploy the app. Each stage has its own set of tasks. What happens in the _Test_ stage, for example, stays in the _Test_ stage.
+**Mara:** I don't think it will be too bad. Every stage is separate from every other stage. Stages are discrete. Each stage has its own set of tasks. What happens in the _Test_ stage, for example, stays in the _Test_ stage.
 
-**Mara:** Every stage also has its own environment. For example, in our pipeline, during the _Build_ stage, the environment is the build agent. When we deploy the app to a different stage, such as _Dev_ or _Test_, the environment can be something else. It could be a VM, a container, or a managed service like App Service, which is what we're using.
+Every stage also has its own environment. For example, in our pipeline, during the _Build_ stage, the environment is the build agent. When we deploy the app to a different stage, such as _Dev_ or _Test_, the environment can be something else. It could be a VM, a container, or a managed service like App Service, which is what we're using.
 
-**Mara:** Finally, we only ever test one release at a time. We never change releases in the middle of the pipeline. We use the same release in the _Dev_ stage as in the _Production_ stage and every release has its own version number. If the release breaks in one of the stages, we fix it and build it again with a new version number. That new release then goes through the pipeline from the very beginning.
+Finally, we only ever test one release at a time. We never change releases in the middle of the pipeline. We use the same release in the _Dev_ stage as in the _Production_ stage and every release has its own version number. If the release breaks in one of the stages, we fix it and build it again with a new version number. That new release then goes through the pipeline from the very beginning.
+
+**NOTE-check use of environment in all of the above**

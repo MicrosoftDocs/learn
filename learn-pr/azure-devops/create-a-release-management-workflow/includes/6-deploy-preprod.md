@@ -8,7 +8,7 @@ In this part, you'll:
 
 ## Create the Staging environment
 
-Here, you create an environment in Azure Pipelines for the _Staging_ Stage. For learning purposes, you assign yourself as the approver. In practice, you would assign the users who are required to sign off on changes before those changes move to the next stage. For the Tailspin team, Amita approves changes as they move from _Test_ to _Staging_.
+Here, you create an environment in Azure Pipelines for _Staging_. For learning purposes, you assign yourself as the approver. In practice, you would assign the users who are required to sign off on changes before those changes move to the next stage. For the Tailspin team, Amita approves changes as they move from _Test_ to _Staging_.
 
 Recall that, earlier in this module, you specified `environment` settings for both the _Dev_ and _Test_ stages. Here's an example for the _Dev_ stage.
 
