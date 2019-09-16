@@ -2,8 +2,6 @@ In this unit, using the example from the previous unit, you'll learn how to crea
 
 ## Create a Function App
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account with which you activated the sandbox.
 
 1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal.

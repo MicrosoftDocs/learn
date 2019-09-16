@@ -4,8 +4,6 @@ The final step is to test the application gateway and verify that it implements 
 
 ## Test load balancing for the vehicle registration web app
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 1. In the Cloud Shell, run the following command to generate the root URL your Application Gateway.
 
     ```azurecli

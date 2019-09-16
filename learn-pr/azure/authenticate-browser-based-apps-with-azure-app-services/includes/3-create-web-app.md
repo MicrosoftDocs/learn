@@ -2,8 +2,6 @@ Suppose you are developing a photo sharing web app. You need your users to sign 
 
 In this unit, you will lay the groundwork for this solution, by creating a basic Node.js web app, and deploying this app using the Azure App Service.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ### Create an App Service Plan
 
 Start by creating an App Service Plan, ready for your web apps.

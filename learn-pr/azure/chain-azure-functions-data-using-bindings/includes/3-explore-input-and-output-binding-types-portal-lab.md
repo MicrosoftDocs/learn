@@ -4,8 +4,6 @@ The following is a high-level illustration of what we're going to build in this 
 
 We'll create a function that will start when it receives an HTTP request and will respond to each request by sending back a message. The parameters `req` and `res` are the trigger binding and output binding, respectively.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create a function app
 
 Let's create a function app that we'll use throughout this entire module. A function app lets you group functions as a logical unit for easier management, deployment, and sharing of resources.
