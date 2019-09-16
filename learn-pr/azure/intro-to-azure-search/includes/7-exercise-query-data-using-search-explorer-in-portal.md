@@ -1,8 +1,8 @@
-Azure Search explorer is an easy way to validate the quality of your search index. Now you have loaded your organizations video catalog data into the index, you need to validate the quality of the index.
+Search explorer in the Azure portal is an easy way to validate the quality of your search index. Now you have loaded your organizations video catalog data into the index, you need to validate the quality of the index.
 
 Your web team has asked you to provide some example queries that the new Search service can answer. You'll use the Search explorer to write and test queries.
 
-In the unit, you'll use Azure Search explorer and some simple syntax to search for terms, return top results, filter queries and validate the search results.
+In this unit, you'll use Azure Search explorer and some simple syntax to search for terms, return top results, filter queries and validate the search results.
 
 ## Query your data using the Search explorer in the Azure portal
 
@@ -16,7 +16,7 @@ In the unit, you'll use Azure Search explorer and some simple syntax to search f
 
     ![Screenshot of the Azure portal, showing the Search explorer](../media/7-exercise-screenshot-1.png)
 
-Using the Search explorer you'll build up complex search queries that you can pass to your web team.
+Using the Search explorer, you'll build up complex search queries that you can pass to your web team.
 
 ## Simple search
 
@@ -25,7 +25,7 @@ Using the Search explorer you'll build up complex search queries that you can pa
 1. The search index should return a JSON document containing your search results. The matching documents are contained in the `value` array. Each item in the array is the data related to the video in the catalog.
 
     > [!NOTE]
-    > See how the results are sorted by `@search.score`. This is the score given by the Search service to how closely the results match the given query. `Yoga Begginners` is a better match because it begins with the search term.
+    > See how the results are sorted by `@search.score`. This is the score assigned by the search engine  to show how closely the results match the given query. `Yoga Beginners` is a better match because it begins with the search term.
 
     ```json
     {
@@ -34,7 +34,7 @@ Using the Search explorer you'll build up complex search queries that you can pa
             {
                 "@search.score": 1.058217,
                 "id": "OTQ1ZC1mOTQwODlkZS1kOWYyLTQyZDYtMjc2YWU5Mjg1NjRk0",
-                "Title": "Yoga Begginners",
+                "Title": "Yoga Beginners",
                 "Difficulty": 9,
                 "Length": "2019-04-30T00:15:30Z",
                 "Publication": "2019-04-24T11:14:06Z",
@@ -65,7 +65,7 @@ Using the Search explorer you'll build up complex search queries that you can pa
 1. Try to change the query to exclude results for Hatha Yoga. Enter `yoga -hatha`, and then select **Search**.
 
     > [!IMPORTANT]
-    > Note that all the exercise classes are returned. That is because by default the search is for any of the terms, in the above query all of the documents without hatha (the `-hatha` term) will be matched. Search terms are matched as **OR** by default, to ensure all the terms in the query are matched, i.e. **AND**, you can switch the search mode of the index to use all the terms instead of any of them.
+    > Note that all the exercise classes are returned. This is because the default behavior for query expressions is to search on *any* of the terms. For the above query, all titles that do not include hatha (the `-hatha` term) are considered a match. You can switch the `searchMode` on the query to use all the terms instead of any of them (`searchMode=all`).
 
 1. Change the query to `yoga -hatha&searchMode=all`, then select **Search**. This will ensure that both yoga and **NOT** hatha are in the title of the videos, returning:
 
@@ -76,7 +76,7 @@ Using the Search explorer you'll build up complex search queries that you can pa
             {
                 "@search.score": 1.4197062,
                 "id": "OTQ1ZC1mOTQwODlkZS1kOWYyLTQyZDYtMjc2YWU5Mjg1NjRk0",
-                "Title": "Yoga Begginners",
+                "Title": "Yoga Beginners",
                 "Difficulty": 9,
                 "Length": "2019-04-30T00:15:30Z",
                 "Publication": "2019-04-24T11:14:06Z",

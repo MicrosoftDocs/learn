@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Test your knowledge by answering questions about skills you learned in this module.
-  ms.date: 06/13/2019
+  ms.date: 09/16/2019
   author: andrewjbyrne
   ms.author: anbyrne
   ms.topic: interactive-tutorial
@@ -15,20 +15,20 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'What is a suggester in Azure Search?'
+  - content: 'Which one of the following statements about query requests is true?'
     choices:
-    - content: An element within a field for assigning attributes 
+    - content: All query composition is based on the full Lucene syntax 
       isCorrect: false
-      explanation: A suggester is not an element for assigning attributes, this is not the correct terminology. Suggesters are used on individual fields but do not assign attributes.
-    - content: A construct supporting "search-as-you-type"
+      explanation: Azure Search provides a simple syntax as the default. The optional full Lucene syntax is used for more advanced queries such as fuzzy search, proximity search, and regular expressions.
+    - content: Query requests can include terms and phrases, operators, filters, and instructions for shaping search results
       isCorrect: true
-      explanation: A suggester is a construct in an Azure Search index that supports a search-as-you-type or autocomplete experience. It contains a list of fields for which you want to enable for typeahead query inputs.
-    - content: An AI feature providing suggestions to improve the index
+      explanation:  A query request is a comprehensive instruction to the search engine. A single call can combine a search expression, a $filter expression, pagination, which fields to search, and which fields to return.
+    - content: Search explorer returns results in JSON, XML, or HTML
       isCorrect: false
-      explanation: Suggesters do not for providing suggestions to improve the quality of the index.
-    - content: A type of index attribute to filter data
+      explanation: Search explorer returns results in JSON only. 
+    - content: searchMode must be set to ON in order for queries to work
       isCorrect: false
-      explanation: Suggesters are an attribute of an index in Azure Search but are not used to filter data.
+      explanation: Valid values are "any" or "all". The searchMode specifies whether a positive match can be made using any of the criteria, or whether all of the criteria must be satisfied.
 
   - content: 'Which of the following data sources can be used as an input data source?'
     choices:
@@ -45,7 +45,7 @@ quiz:
       isCorrect: false
       explanation: Azure Queue Storage is not supported. Only Blob and Table Storage are supported external sources within Azure Storage.
 
-  - content: 'Which data structure is supported by Azure Search?'
+  - content: 'Which data format is accepted by Azure Search when you are pushing data to the service?'
     choices:
     - content: CSV
       isCorrect: false
@@ -58,4 +58,4 @@ quiz:
       explanation: XML isn't supported.
     - content: JSON
       isCorrect: true
-      explanation: Documents are stored in the search index as JSON documents. JSON is also used to define index schemas.
+      explanation: Documents are stored in the search index as JSON documents. JSON is also used to define index schemas, indexers, and data source objects.
