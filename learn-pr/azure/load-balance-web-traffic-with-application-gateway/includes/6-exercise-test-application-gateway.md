@@ -8,7 +8,7 @@ The final step is to test the application gateway and verify that it implements 
 
     ```azurecli
     echo http://$(az network public-ip show \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group $rg \
       --name appGatewayPublicIp \
       --query dnsSettings.fqdn \
       --output tsv)
@@ -30,7 +30,7 @@ The final step is to test the application gateway and verify that it implements 
 
     ```azurecli
     az vm deallocate \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group $rg \
       --name webServer1
     ```
 
@@ -40,7 +40,7 @@ The final step is to test the application gateway and verify that it implements 
 
     ```azurecli
     az vm start \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group $rg \
       --name webServer1
     ```
 
