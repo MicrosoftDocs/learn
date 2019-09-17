@@ -61,7 +61,7 @@ If you run the app on your own machine, you'd be able to direct a browser to 'ht
 
 * Run the following command in the command shell:
 
-    ```bash
+    ```azurecli
     az webapp up
     ```
 

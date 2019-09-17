@@ -24,7 +24,7 @@ Now that you have added a *:::no-loc text="Create":::* Razor Page form and its *
 
 Run the following command in the command shell:
 
-```bash
+```azurecli
 az webapp up
 ```
 
