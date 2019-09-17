@@ -15,7 +15,7 @@ In this unit, you'll configure a database connection to an existing, empty *Cont
 
 1. Run the following command to store the Azure SQL database credentials using Secret Manager:
 
-    ```bash
+    ```dotnetcli
     dotnet user-secrets set "ContosoPetsCredentials:UserId" $sqlUsername && \
         dotnet user-secrets set "ContosoPetsCredentials:Password" $sqlPassword
     ```

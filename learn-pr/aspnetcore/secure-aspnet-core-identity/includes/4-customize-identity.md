@@ -8,7 +8,7 @@ UI changes are also required to collect the additional user profile information.
 
 1. Add the user registration files to be modified to the project:
 
-    ```bash
+    ```dotnetcli
     dotnet aspnet-codegenerator identity \
         --dbContext ContosoPetsAuth \
         --files "Account.Manage.EnableAuthenticator;Account.Manage.Index;Account.Register" \
@@ -26,7 +26,7 @@ UI changes are also required to collect the additional user profile information.
     > [!TIP]
     > Run the following command from the project root to view valid values for the `--files` option:
     >
-    > ```bash
+    > ```dotnetcli
     > dotnet aspnet-codegenerator identity --listFiles --force
     > ```
 
@@ -91,7 +91,7 @@ UI changes are also required to collect the additional user profile information.
 
 1. Create and apply an EF Core migration to update the underlying data store:
 
-    ```bash
+    ```dotnetcli
     dotnet ef migrations add UpdateUser && \
         dotnet ef database update
     ```
