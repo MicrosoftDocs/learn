@@ -75,7 +75,7 @@ During the design process, keep in mind the data your users will be searching, a
 
 - **Scoring profiles**: lets you customize results to have certain documents return higher in the query results
 
-- **Cross-Origin Resource Sharing**: browsers prevent cross-origin requests for security reasons. Enable this option if you need your index to be queried via JavaScrip from different urls. You can choose to lock down access to the index using a white list of origins, or allow all origins access.
+- **Cross-Origin Resource Sharing**: browsers prevent cross-origin requests for security reasons. Enable this option if you need your index to be queried via JavaScrip from different urls. You can choose to lock down access to the index using a whitelist of origins, or allow all origins access.
 
 #### Field Behaviors
 
