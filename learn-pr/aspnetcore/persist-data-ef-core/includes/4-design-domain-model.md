@@ -194,7 +194,7 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
 
 1. Run the following command to generate a migration for creating the database tables:
 
-    ```bash
+    ```dotnetcli
     dotnet ef migrations add InitialCreate \
         --project ../ContosoPets.DataAccess/ContosoPets.DataAccess.csproj \
         --context ContosoPetsContext
@@ -212,7 +212,7 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
 
 1. Run the following command to apply the *:::no-loc text="InitialCreate":::* migration:
 
-    ```bash
+    ```dotnetcli
     dotnet ef database update \
         --project ../ContosoPets.DataAccess/ContosoPets.DataAccess.csproj \
         --context ContosoPetsContext

@@ -10,8 +10,6 @@ In the diagram, notice that the local network gateway names in each location ref
 
 In this unit, you'll configure the virtual networks with a subnet, add a gateway subnet, and then create the local network gateway by using the Azure CLI.
 
-[!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
-
 ## Create the Azure-side resources
 
 1. Run this command in Azure Cloud Shell to create the **Azure-VNet-1** virtual network and the **Services** subnet.

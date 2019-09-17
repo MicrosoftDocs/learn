@@ -8,7 +8,7 @@ In this unit, you'll use the .NET Core CLI to create a web API within the Cloud 
 
 1. Run the following .NET Core CLI command in the command shell:
 
-    ```bash
+    ```dotnetcli
     dotnet new webapi -o contoso-pets/src/ContosoPets.Api
     ```
 
@@ -45,7 +45,7 @@ In this unit, you'll use the .NET Core CLI to create a web API within the Cloud 
 
 1. Run the following .NET Core CLI command in the command shell:
 
-    ```bash
+    ```dotnetcli
     dotnet run > ContosoPets.Api.log &
     ```
 
