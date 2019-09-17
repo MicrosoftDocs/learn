@@ -11,6 +11,7 @@ In software development, data is essentially a value that is stored in the compu
 For example, in a binary numeral system, you can represent the number `195` as `110000011`.  The following table will help you visualize how this works.  The first row has 8 columns that correspond to a position in a byte.  Each position represents a different numeric value.  The second row can store the value of an individual bit, either `0` ot `1`.
 
 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+|-----|-----|-----|-----|-----|-----|-----|-----|
 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 1 |
 
 If you add up the number from each column in the first row that corresponds to a `1` in the second row, you'll get the decimal equivalent to the binary numeral system representation.  In this case, it would be `128 + 64 + 2 + 1 = 195`.
@@ -26,6 +27,7 @@ For example, if I wanted to store a capitalized letter `A` as a value in my appl
 In this case, the capitalized letter `A` is equivalent to the decimal value `97`.  Then, I would use the same binary numeral system in reverse to find how an ASCII letter `A` is stored by the computer.
 
 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+|-----|-----|-----|-----|-----|-----|-----|-----|
 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 1 |
 
 Or, rather, `64 + 32 + 1 = 97`.
