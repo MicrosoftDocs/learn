@@ -21,7 +21,7 @@ To deploy the patient portal web application:
     git clone https://github.com/MicrosoftDocs/mslearn-improve-app-scalability-resiliency-with-load-balancer.git
     ```
 
-1. Go to the repo folder locally:
+1. Go to the repo folder locally.
 
     ```bash
     cd mslearn-improve-app-scalability-resiliency-with-load-balancer
@@ -150,13 +150,13 @@ Finally, let's create a rule for the load balancer:
 
 First, we need a public IP address for the load balancer.
 
-1. In Cloud Shell, start PowerShell by running this command:
+1. In Cloud Shell, start PowerShell by running this command.
 
     ```bash
     pwsh
     ```
 
-1. In PowerShell, create a new public IP address:
+1. In PowerShell, create a new public IP address.
 
     ```powershell
     $Location = $(Get-AzureRmResourceGroup -ResourceGroupName <rgn>[sandbox resource group name]</rgn>).Location
@@ -168,7 +168,7 @@ First, we need a public IP address for the load balancer.
       -Name "myPublicIP"
     ```
 
-1. Create a front-end IP by using the **New-AzLoadBalancerFrontendIpConfig** cmdlet. The following example creates a front-end IP configuration named **myFrontEnd** and attaches the **myPublicIP** address:
+1. Create a front-end IP by using the **New-AzLoadBalancerFrontendIpConfig** cmdlet. The following example creates a front-end IP configuration named **myFrontEnd** and attaches the **myPublicIP** address.
 
     ```powershell
     $frontendIP = New-AzLoadBalancerFrontendIpConfig `
@@ -211,7 +211,7 @@ When you use PowerShell to configure a load balancer, you must create the back-e
       -Probe $probe
     ```
 
-1. Now you can create the basic load balancer by using the **New-AzLoadBalancer** cmdlet:
+1. Now you can create the basic load balancer by using the **New-AzLoadBalancer** cmdlet.
 
     ```powershell
     $lb = New-AzLoadBalancer `
@@ -224,7 +224,7 @@ When you use PowerShell to configure a load balancer, you must create the back-e
       -LoadBalancingRule $lbrule
     ```
 
-1. Connect the virtual machines to the back-end pool by updating the network interfaces that the script created to use the back-end pool information:
+1. Connect the virtual machines to the back-end pool by updating the network interfaces that the script created to use the back-end pool information.
 
     ```powershell
     $nic1 = Get-AzureRmNetworkInterface -ResourceGroupName <rgn>[sandbox resource group name]</rgn> -Name "webNic1"
@@ -237,7 +237,7 @@ When you use PowerShell to configure a load balancer, you must create the back-e
     Set-AzureRmNetworkInterface -NetworkInterface $nic2 -AsJob
     ```
 
-1. Run the following command to get the public IP address of the load balancer and the URL for your website:
+1. Run the following command to get the public IP address of the load balancer and the URL for your website.
 
     ```powershell
     Write-Host http://$($(Get-AzPublicIPAddress `
@@ -253,7 +253,7 @@ When you use PowerShell to configure a load balancer, you must create the back-e
 
 Let's use the Azure CLI to create the load balancer and its associated resources.
 
-1. Create a new public IP address:
+1. Create a new public IP address.
 
     ```Azure CLI
     az network public-ip create \
@@ -262,7 +262,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
       --name myPublicIP
     ```
 
-1. Create the load balancer:
+1. Create the load balancer.
 
     ```azurecli
     az network lb create \
@@ -299,7 +299,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
       --probe-name myHealthProbe
     ```
 
-1. Connect the virtual machines to the back-end pool by updating the network interfaces you created in the script to use the back-end pool information:
+1. Connect the virtual machines to the back-end pool by updating the network interfaces you created in the script to use the back-end pool information.
 
     ```azurecli
     az network nic ip-config update \
@@ -317,7 +317,7 @@ Let's use the Azure CLI to create the load balancer and its associated resources
       --lb-address-pools myBackEndPool
     ```
 
-1. Run the following command to get the public IP address of the load balancer and the URL for your website:
+1. Run the following command to get the public IP address of the load balancer and the URL for your website.
 
     ```azurecli
     echo http://$(az network public-ip show \
