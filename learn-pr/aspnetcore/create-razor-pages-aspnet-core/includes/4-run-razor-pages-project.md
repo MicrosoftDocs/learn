@@ -25,7 +25,7 @@ The .NET Core CLI is the simplest way to create, build, and run an ASP.NET Core 
 
 1. Run the following .NET Core CLI command in the command shell:
 
-    ```bash
+    ```dotnetcli
     dotnet run
     ```
 
