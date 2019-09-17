@@ -18,7 +18,7 @@ As part of the network-security strategy, you must control the flow of traffic w
 
 ## Network virtual appliance
 
-Network virtual appliances or NVAs are virtual machines that normally run Linux and that control the flow of network traffic by controlling routing. You typically use them to manage traffic flowing from a perimeter-network environment to other networks or subnets.
+Network virtual appliances or NVAs are virtual machines that control the flow of network traffic by controlling routing. You typically use them to manage traffic flowing from a perimeter-network environment to other networks or subnets.
 
 An NVA often includes various protection layers like:
 
