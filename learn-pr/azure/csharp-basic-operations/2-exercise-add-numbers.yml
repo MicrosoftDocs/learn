@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-basic-operations.exercise-add-numbers
-title: Exercise - Add Numbers
+title: Exercise - Simple Addition and Implicit Data Conversion
 metadata:
-  title: Exercise - Add Numbers
-  description: Use the overloaded + symbol to perform addition. 
+  title: Exercise - Simple Addition and Implicit Data Conversion
+  description: Use the overloaded + symbol to perform both addition and string concatenation.
   ms.date: 09/03/2019
   author: bobtabor-msft
   ms.author: rtabor

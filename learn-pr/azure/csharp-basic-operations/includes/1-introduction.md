@@ -1,5 +1,7 @@
-The applications you'll build in C# will require that you operate on literal and variable data.  Examples might include:
-- Performing mathematical operations on numeric values
+The applications you'll build in C# will require that you operate on literal and variable numeric data.  Examples might include:
+- Performing simple mathematical operations including addition, subtraction, multiplication, and division
+- Performing multi-step operations that must be completed in a certain order
+- Determining the remainder after performing division
 - Incrementing or decrementing a value
 - and so on
 
