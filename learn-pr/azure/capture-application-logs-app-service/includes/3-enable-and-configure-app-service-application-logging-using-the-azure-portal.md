@@ -10,8 +10,6 @@ You're going to deploy a sample ASP.NET Core Web app from GitHub; this app inclu
 
 In this step, you're going to use Azure CLI commands to create an ASP.NET Web app using code from a GitHub repository. You will also create a new storage account, in the same region as the Web app, for log storage.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 1. Run the following commands in the Cloud Shell to set some variables, replacing  _\<your-local-Azure-region\>_, with the closest region to you from the following list.
    [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
@@ -76,8 +74,6 @@ You're going to deploy a sample Node.js app from GitHub; this app includes code 
 
 In this step, you're going to use Azure CLI commands to create a Node.js Web app using code from a GitHub repository. 
 <!-- TODO App code is currently in a personal repo, so needs to be moved to a Learn repo. -->
-
-[!include[](../../../includes/azure-sandbox-activate.md)]
 
 1. Run the following commands in the Cloud Shell to set some variables, replacing  _\<your-local-Azure-region\>_, with the closest region to you from the following list.
    [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]

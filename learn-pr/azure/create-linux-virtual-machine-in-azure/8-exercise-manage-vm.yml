@@ -12,5 +12,6 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 # interactive: azure-portal
+azureSandbox: true
 content: |
   [!include[](includes/8-exercise-manage-vm.md)]

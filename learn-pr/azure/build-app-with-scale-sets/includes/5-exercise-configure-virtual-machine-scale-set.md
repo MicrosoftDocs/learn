@@ -1,18 +1,17 @@
-Recall from earlier that your customers use one of the company's websites to manage and check the status of their shipments. This website is deployed to virtual machines and hosted on-premises. You notice that users' accessing the company's website, experience significant delays in response times when the overall CPU utilization of the virtual machines exceeds 75 percent. You need to arrange the virtual machine scale set hosting your web application to scale horizontally when the system hits this threshold.
+Recall from the example scenario that your customers use one of the company's websites to manage and check the status of their shipments. This website is deployed to VMs and hosted on-premises. 
 
-Additionally, to save costs, you also want to get the scale set to scale back in when demand drops and the overall CPU utilization across the scale set drops below 50 percent.
+You notice that users of the website have significant delays in response times when the overall CPU usage of the VMs exceeds 75 percent. You need the virtual machine scale set that hosts your web application to scale horizontally when the system hits this threshold. To save costs, you also want to scale back in when demand falls and the overall CPU usage across the scale set drops below 50 percent.
 
-In this exercise, you'll configure autoscaling, and define scale rules that scale out and back again, according to the CPU utilization of the system.
+In this exercise, you'll configure autoscaling. You'll define scale rules that scale out and in again, according to the system's CPU usage.
 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, you can read through the instructions to understand how to use the REST API to retrieve metrics.
-> If you want to complete this exercise, but you don't have an Azure subscription or prefer not to use your account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+>
+> If you want to complete this exercise but you don't have an Azure subscription or prefer not to use your account, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
-## Create a scale-out scale rule
+## Create a scale-out rule
 
-1. Return to the [Azure portal](https://portal.azure.com).
-
-1. Go to the page for the virtual machine scale set.
+1. In the [Azure portal](https://portal.azure.com), go to the page for the virtual machine scale set.
 
 1. On the virtual machine scale set page, under **Settings**, select **Scaling**.
 
@@ -20,7 +19,7 @@ In this exercise, you'll configure autoscaling, and define scale rules that scal
 
     ![Screenshot of the virtual machine scale set page](../media/5-enable-autoscale.png)
 
-1. In the **Default** scale rule, check that the **Scale mode** is set to **Scale based on a metric**, and then select **+ Add a rule**.
+1. In the **Default** scale rule, ensure that the **Scale mode** is set to **Scale based on a metric**. Then select **+ Add a rule**.
 
    ![Screenshot of the virtual machine scale set page](../media/5-add-rule.png)
 
@@ -39,9 +38,9 @@ In this exercise, you'll configure autoscaling, and define scale rules that scal
     | Instance count | 1 |
     | Cool down (minutes) | 5 |
 
-## Create a scale-in scale rule
+## Create a scale-in rule
 
-1. In the **Default** scale rule, select **+ Add a rule** again.
+1. In the **Default** scale rule, select **+ Add a rule**.
 
 1. On the **Scale rule** page, specify the following settings, and then select **Add**:
 
@@ -60,6 +59,6 @@ In this exercise, you'll configure autoscaling, and define scale rules that scal
 
 1. Select **Save**.
 
-    The **Default** scale condition now contains two scale rules. One rule scales the number of instances out, and another rule scales the number of instances back in again.
+    The **Default** scale condition now contains two scale rules. One rule scales the number of instances out. Another rule scales the number of instances back in.
 
     ![Screenshot of the virtual machine scale set page](../media/5-scale-rules.png)

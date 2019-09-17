@@ -1,7 +1,5 @@
 Recall that our company processes video content on Windows VMs. A new city has contracted us to process their traffic cameras, but it's a model we've not worked with before. We need to create a new Windows VM and install some proprietary codecs so we can begin processing and analyzing their images.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create a new Windows virtual machine
 
 We can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell. The easiest approach is the portal because it walks you through the required information and provides hints and helpful messages during the creation of the VM.
@@ -10,7 +8,13 @@ We can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell.
 
 1. Click **Create a resource** in the upper left corner of the Azure portal.
 
-1. In the search box, enter  **Windows Server 2016 Datacenter**  and then click on the link with the same title in the presented list.
+1. In the search box, enter  **Windows Server**  and then click on the link with the same title in the presented list.
+
+    ![Screenshot showing the virtual machine image search result.](../media/3-azure-portal-search-image.png)
+
+1. There are several Windows Server versions we can select from to create our VM. In the *Windows Server* image overview panel, click on the **Select a software plan** dropdown list and find the **[smalldisk] Windows Server 2016 Datacenter** option.
+
+    [![](../media/3-select-windows-server.png "A screenshot that shows which software plan to select.")](../media/3-select-windows-server-expanded.png#lightbox)
 
 1. Click the **Create** button to start configuring the VM.
 

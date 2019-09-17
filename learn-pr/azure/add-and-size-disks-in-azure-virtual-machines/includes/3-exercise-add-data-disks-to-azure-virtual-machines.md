@@ -5,8 +5,6 @@ Your law firm is expanding its case load and you have been tasked with creating 
 
 Your goal here is to create a Linux VM and attach a new virtual hard disk (VHD) named **uploadDataDisk1** to store the `/uploads` directory.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Set Azure CLI default values
 
 The Azure CLI enables you to set default values so you don't have to repeat them each time you run a command.

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.analyze-infrastructure-with-azure-monitor-logs.4-exercise-create-log-queries
+metadata:
+  title: Exercise - Create basic Azure Monitor log queries to extract information from log data
+  description: Exercise - Create basic Azure Monitor log queries to extract information from log data
+  ms.date: 09/06/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Exercise - Create basic Azure Monitor log queries to extract information from log data
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-create-log-queries.md)]

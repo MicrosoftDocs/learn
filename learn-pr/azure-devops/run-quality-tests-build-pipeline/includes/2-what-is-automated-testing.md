@@ -4,7 +4,7 @@ Let's begin by checking in with the Tailspin Toys web team.
 
 ## The need for automated testing
 
-Mara, the newest member of the team, is slowly introducing her teammates to DevOps and Azure DevOps services. In particular, she's using Azure Boards and Azure Pipelines to get everyone started.
+Mara, the newest member of the team, is slowly introducing her teammates to DevOps and Azure DevOps Services. In particular, she's using Azure Boards and Azure Pipelines to get everyone started.
 
 To begin the project, the team has identified three key needs to address:
 
@@ -61,6 +61,12 @@ When you relate testing to continuous integration and continuous delivery pipeli
 Continuous testing means tests are run early in the development process and as every change moves through the pipeline. Shifting left means considering software quality and testing earlier in the development process.
 
 As an example, developers often add test cases as they develop their feature and run the entire suite of tests before they submit the change to the pipeline. This approach helps ensure both that the feature they're building behaves as expected and that it doesn't break existing features.
+
+Here's a short video where Abel Wang, Cloud Advocate at Microsoft, explains how to ensure you maintain quality in your DevOps plan.
+
+**Ask Abel**
+
+> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/How-do-you-ensure-quality-in-a-DevOps-world--One-Dev-Question/player?format=ny]
 
 Shifting left often requires testers to get involved in the design process, even before any code for the feature is written. Compare this to the "handoff" model, where the test team is presented with new features to test only after the software is designed and written. A bug discovered late in the process can affect the team's delivery schedule. And bugs might be discovered weeks or even months after the developer originally built the feature.
 

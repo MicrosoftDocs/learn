@@ -15,13 +15,13 @@ In this exercise, you'll configure an application to authenticate users against 
 1. Move to the `mslearn-secure-app-with-oidc-and-azure-ad/app` folder.
 
     ```bash
-    cd ~/mslearn-secure-app-with-oidc-and-azure-ad
+    cd ~/mslearn-secure-app-with-oidc-and-azure-ad/app
     ```
 
 1. Update the `appsettings.json` file to specify the configuration details to enable the application to communicate with Azure AD. Open this file in the code editor.
 
     ```bash
-    code ./app/appsettings.json
+    code appsettings.json
     ```
 
 1. Update the following fields as follows:
