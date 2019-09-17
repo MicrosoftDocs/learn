@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-basic-formatting.summary
-title: Introduction
+title: Summary
 metadata:
-  title: Introduction
-  description: Begin your software development journey by learning one of the most popular programming languages.
+  title: Summary
+  description: A quick review of what we learned in this module.
   ms.date: 09/17/2019
   author: bobtabor-msft
   ms.author: rtabor
