@@ -14,20 +14,6 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Use the following symbol to concatenate two strings in C#."
-    choices:
-    - content: "`++`"
-      isCorrect: false
-      explanation: "`++` is incorrect."
-    - content: "`&`"
-      isCorrect: false
-      explanation: "`&` is incorrect."
-    - content: "`.`"
-      isCorrect: false
-      explanation: "`.` is incorrect."
-    - content: "`+`"
-      isCorrect: true
-      explanation: "Correct!"
   - content: "What will be the result of the following line of code?  `Console.WriteLine(5 / 10);`"
     choices:
     - content: "0.5"

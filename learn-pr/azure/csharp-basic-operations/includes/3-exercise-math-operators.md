@@ -1,4 +1,4 @@
-Now that we understand string concatenation and addition, let's look at several other common mathematical operations on numeric data.
+Now that we understand the basics of addition and more importantly, implicit type conversion between numeric and string data types, let's look at several other common mathematical operations on numeric data.
 
 ## Perform Basic Math Operations
 

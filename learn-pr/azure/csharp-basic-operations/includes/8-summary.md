@@ -2,4 +2,4 @@ Our goal was to perform basic operations on string and numeric data.  As a codin
 
 We used various operators to perform basic string and mathematical operations.  We learned how some symbols are reused (overloaded) as different operators, depending on the context.  We learned how the data types of the operands influence the meaning of the operators.  Finally, we learned how to change the data type of a value using the cast operator.
 
-Congratulations on taking another step towards to building more sophisticated applications.  If you're following the learning path, continue on to the next module: "Choose the correct data type in your C# code".
+Congratulations on taking another step towards to building more sophisticated applications.

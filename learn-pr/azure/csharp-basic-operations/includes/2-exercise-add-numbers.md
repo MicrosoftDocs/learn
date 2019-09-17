@@ -1,10 +1,8 @@
-Now that we know how to concatenate strings, let's perform some basic operations on numbers.  We'll even combine numbers and strings together.
+Often we'll want to perform mathematical operations on numeric data.  We'll start with addition in this unit and expand to other operations in the next unit because there's an important lesson to learn about how the C# compiler parses and interprets your code.
 
 ## Step 1: Add two numeric values.
 
-Often we'll want to perform mathematical operations on numeric data.  We'll start with addition in this unit and expand to other operations in the next unit because there's an important lesson to learn about how the C# compiler parses and interprets your code.
-
-To add two numbers together, we'll use the *addition operator*, which is the plus symbol `+`.  Yes, the same plus symbol `+` can be used for both purposes.  The reuse of one symbol for multiple purposes is sometimes called "overloading the operator" and happens frequently in C#.
+To add two numbers together, we'll use the *addition operator*, which is the plus symbol `+`.  Yes, the same plus symbol `+` that you use for string concatenation is also used for addition.  The reuse of one symbol for multiple purposes is sometimes called "overloading the operator" and happens frequently in C#.
 
 In this instance, the C# compiler understands what you're attempting to do.  The compiler parses your code and sees that the `+` symbol is surrounded by two operands that are both numeric values.  It deduces that you intended to add those two values.
 

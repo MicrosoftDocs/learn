@@ -9,7 +9,7 @@ There are several techniques to perform an increment and decrement.  The followi
 > [!NOTE]
 > Operators like `+=`, `-=`, `*=`, `++`, and `--` are known as *compound assignment* operators because they compound some operation in addition to assigning the result to the variable.  The `+=` operator is specifically termed the *addition assignment* operator.
 
-### Step 5 - Write code to 
+### Step 1 - Write code to incremenet and decrement a value.
 
 ```csharp-interactive
 int value = 1;
@@ -51,7 +51,7 @@ Third decrement: 1
 
 Both the increment and decrement operators have an interesting quality -- depending on their position, they perform their operation before or after they retrieve their value.  In other words, if you use the operator before the value as in `++value`, then the increment will happen *before* the value is retrieved.  Likewise, `value++` will increment the value after the value has been retrieved.
 
-### Step 6 - Using the increment operator before and after the value
+### Step 2 - Use the increment operator before and after the value.
 
 Delete or comment out the code in the previous example.  Below it, add the following lines of code.
 

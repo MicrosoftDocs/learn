@@ -14,4 +14,4 @@ durationInMinutes: 5
 azureSandbox: false
 interactive: csharp
 content: |
-  [!include[](includes/6-challenge.md)]
+  [!include[](includes/5-challenge.md)]

@@ -1,5 +1,4 @@
 The applications you'll build in C# will require that you operate on literal and variable data.  Examples might include:
-- Combining two string values into a single string value
 - Performing mathematical operations on numeric values
 - Incrementing or decrementing a value
 - and so on
@@ -14,13 +13,13 @@ By the end of this module, you will be able to write code that performs basic op
 
 In this module, you will:
 
-- Concatenate string values
 - Perform mathematical operations on numeric values
 - Observe implicit type conversion between strings and numeric values
 - Temporarily convert one data type into another
 
 ## Prerequisites
 
-- Must understand basic C# syntax rules
-- Must understand how to use Console.WriteLine()
-- Must understand how to create literal values and declare variables of basic data types like `string`, `int`, and `decimal`
+- Beginner level experience with basic C# syntax rules
+- Beginner level experience with displaying a message to a console using the Console.WriteLine() and Console.Write() methods
+- Beginner level experience with creating literal values and declare variables of basic data types like `string`, `int`, and `decimal`
+- Beginner level experience with string concatenation and string interpolation
