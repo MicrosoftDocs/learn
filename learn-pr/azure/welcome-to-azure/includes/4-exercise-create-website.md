@@ -16,13 +16,13 @@ The Microsoft Azure Marketplace is an online store that hosts applications that
 
 We're going to use one of the WordPress application options from the Azure Marketplace for our website.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 ## Creating resources in Azure
 
 Typically, the first thing we'd do is to create a *resource group* to hold all the things that we need to create. The *resource group* allows us to administer all the services, disks, network interfaces, and other elements that potentially make up our solution as a unit. We can use the Azure portal to create and manage our solution's resource groups. However, keep in mind that you can also manage resources via a command line using the Azure CLI. The Azure CLI is a useful option should you need to automate the process in the future.
 
-In the free Azure sandbox environment you'll use the pre-created resource group **<rgn>[Resource Group Name]</rgn>**, and you don't need to do this step.
+You can use the following resource group **learn-wordpress-blog-rg** name in the exercises. You want to clean up the resources in this resource group at the end of this module so that you will not continue to be charged for them.
 
 ## Choosing a location
 
@@ -30,7 +30,7 @@ In the free Azure sandbox environment you'll use the pre-created resource group 
 
 ## Create a WordPress website
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with your Azure subscription.
 
 1. In the top left of the Azure portal, select **Create a resource**.
 
@@ -45,7 +45,7 @@ In the free Azure sandbox environment you'll use the pre-created resource group 
     ![Screenshot showing search results for the term WordPress](../media/4-search-select-wordpress.png)
 
     > [!NOTE]
-    > There are several selections available relating WordPress that you would have noticed in this step. Each of these items provides you with different options regarding the operating system and the amount of configuration to customize the application. Be aware that not all of these options are enabled in the sandbox. You'll have to try the different options in your personal Azure subscription where additional costs will apply.
+    > There are several selections available relating to WordPress that you would have noticed in this step. Each of these items provides you with different options regarding the operating system and the amount of configuration to customize the application. Be aware that not all of these options are enabled in the sandbox. You'll have to try the different options in your personal Azure subscription where additional costs will apply.
 
 1. In the newly presented blade, you'll typically find additional information about the item you're about to install. Make sure to review this information. Click the **Create** button when ready.
 
@@ -57,7 +57,7 @@ In the free Azure sandbox environment you'll use the pre-created resource group 
     |--- | --- |
     | **App Name** | Choose a unique for the App name. It will form part of a Fully Qualified Domain Name (FQDN).|
     | **Subscription** | Select the appropriate subscription. |
-    | **Resource Group** | Select the existing Resource Group "**<rgn>[sandbox resource group name]</rgn>**" from the drop-down list. |
+    | **Resource Group** | Create a new Resource Group **learn-wordpress-blog-rg**. We'll reuse this resource group in later exercises. |
     | **Database Provider** | You'll notice that you have two provider options. The default provider is an **Azure database for MySQL**. The second option is the **MySQL in App** provider that allows us to run a local MySQL database instance with our app. We're going to use the **MySQL in App** provider for our website to simplify our deployment. Pay attention to the call out though, MySQL in App provider isn't intended for production environments.|
     | **App Service plan/location** | The App Service plan/location allows you to select the capabilities and limits available to your application. Keep in mind that different locations sometimes also have different resources available. Leave this value set at the current default. We'll explore App Service plans further in our next exercise. |
     | **Application Insights** | Application Insights allows you to monitor the performance of your application using powerful analytics tools. Leave the value as set by the default configuration. |

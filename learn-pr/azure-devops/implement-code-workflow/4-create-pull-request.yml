@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 9
 content: |
-  [!include[](includes/4-create-pull-request.md)
+  [!include[](includes/4-create-pull-request.md)]

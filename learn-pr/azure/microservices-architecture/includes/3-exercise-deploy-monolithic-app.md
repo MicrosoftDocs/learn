@@ -1,16 +1,16 @@
-Now that we've talked a bit about monolithic and microservices architectures, let's deploy a monolithic application and dive further into how we can evolve it to a microservices architecture.
+We've talked a bit about monolithic and microservices architectures. Now let's deploy a monolithic application and dive further into how we can evolve it into a microservices architecture.
 
 Fabrikam has currently added the drone service into their existing application.
 
-In this exercise, we'll deploy a monolithic application on Azure App Service and enable Application Insights to get visibility into telemetry and application performance.
+In this exercise, we'll deploy a monolithic application on Azure App Service and enable Azure Monitor to get visibility into telemetry and application performance.
 
 ![Visualization of the resources for the drone delivery application](../media/3-drone-delivery-monolithic.svg)
 
 ## Deploy a monolithic application on Azure App Service
 
-Let's start by deploying the application. First, we'll need to great the Azure resources to host the application.
+Let's start by deploying the application. First, we need to create the Azure resources to host the application.
 
-1. Run this command to deploy the resources needed for this application. This deployment will take a few minutes.
+1. Run this command to deploy the resources that are needed for this application. This deployment takes a few minutes.
 
     ```azurecli
     az group deployment create \
@@ -25,13 +25,13 @@ Let's start by deploying the application. First, we'll need to great the Azure r
     cd ~/mslearn-microservices-architecture/src/before
     ```
 
-1. Run this command to zip up the application code, which we'll use to deploy to the App Service.
+1. Run this command to zip up the application code, which we use to deploy to the app service.
 
     ```bash
     zip -r DroneDelivery-before.zip .
     ```
 
-1. Run this command to set a variable with the name of your App Service.
+1. Run this command to set a variable with the name of your app service.
 
     ```bash
     APPSERVICENAME="$(az webapp list \
@@ -40,7 +40,7 @@ Let's start by deploying the application. First, we'll need to great the Azure r
                         --output tsv)"
     ```
 
-1. Run this command to configure the App Service to run a build as part of the deployment.
+1. Run this command to configure the app service to run a build as part of the deployment.
 
     ```azurecli
     az webapp config appsettings set \
@@ -49,7 +49,7 @@ Let's start by deploying the application. First, we'll need to great the Azure r
         --settings SCM_DO_BUILD_DURING_DEPLOYMENT=true
     ```
 
-1. And now, run the following command to deploy the application to App Service. This will take a few minutes to complete.
+1. And now, run the following command to deploy the application to App Service. This deployment takes a few minutes to finish.
 
     ```azurecli
     az webapp deployment source config-zip \
@@ -58,7 +58,7 @@ Let's start by deploying the application. First, we'll need to great the Azure r
         --src DroneDelivery-before.zip
     ```
 
-1. Once complete, you can confirm the deployment was successful by visiting the web site of your App Service. Run this command to get the URL, and click on it to open the page.
+1. After the deployment finishes, confirm that the deployment was successful by visiting the website of your app service. Run this command to get the URL, and select it to open the page.
 
     ```bash
     echo https://$(az webapp config hostname list \
@@ -68,16 +68,16 @@ Let's start by deploying the application. First, we'll need to great the Azure r
                     --output tsv)
     ```
 
-    ![Screenshot of the Drone Delivery web site](../media/3-web-site-before.png)
+    ![Screenshot of the Drone Delivery website](../media/3-web-site-before.png)
 
-## Perform load test against application
+## Perform a load test against the application
 
 Now let's test out the performance of the application in its monolithic architecture.
 
-1. On the home page for your deployed application, click the **Send Requests** button. This simulates the submission of 100 requests through the application.
+1. On the home page for your deployed application, select **Send Requests**. This action simulates the submission of 100 requests through the application.
 
-1. For the first request, you'll see a result of around 8-12 seconds to process 100 messages. If you refresh the page and resubmit if prompted, this may drop by about half, but will still take around five seconds per request.
+1. For the first request, you see a result of around 8 to 12 seconds to process 100 messages. If you refresh the page and resubmit if prompted, this number might drop by about half. It still takes around five seconds per request.
 
-    ![Screenshot of the Drone Delivery web site after running the performance test](../media/3-performance-test.png)
+    ![Screenshot of the Drone Delivery website after running the performance test](../media/3-performance-test.png)
 
-Fabrikam suspects that the monolithic architecture is preventing heavily utilized services from scaling, leading to the poor performance seen here.
+Fabrikam suspects that the monolithic architecture is preventing heavily used services from scaling, which leads to the poor performance seen here.

@@ -19,6 +19,12 @@ Those are the three I was thinking about using right now. There are two other se
 |![Azure Repos](../media/azure-repos.png)|[Azure Repos](https://azure.microsoft.com/services/devops/repos?azure-portal=true). These provide unlimited, cloud-hosted private, and public Git repos.|
 |![Azure Artifacts](../media/azure-artifacts.png)|[Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts?azure-portal=true). These let us create, host, and share packages.|
 
+Here's a short video where Abel explains the five parts of Azure DevOps.
+
+**Ask Abel**
+
+> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Azure-DevOps--One-Dev-Question/player?format=ny]
+
 **Amita**: This sounds like a lot. Where do we start?
 
 **Mara**: Let's just try to do some planning by using Azure Boards. We'll see how that goes. You don't have to use every service Azure DevOps offers. You just use what you need.

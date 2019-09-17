@@ -2,7 +2,7 @@ To control traffic flow within your virtual network, you must learn the purpose 
 
 ## Azure routing
 
-Network traffic in Azure is automatically routed across Azure subnets, virtual networks, and on-premises networks. This routing is controlled by system routes, which are assigned by default to each subnet in a virtual network. With these system routes, any Azure virtual machine that is deployed to a virtual network can communicate with all other Azure VMs in subnets in that network. These VMs are also potentially accessible from on-premises through a hybrid network or the internet.
+Network traffic in Azure is automatically routed across Azure subnets, virtual networks, and on-premises networks. This routing is controlled by system routes, which are assigned by default to each subnet in a virtual network. With these system routes, any Azure virtual machine that is deployed to a virtual network can communicate with all other Azure virtual machines in subnets in that network. These virtual machines are also potentially accessible from on-premises through a hybrid network or the internet.
 
 You can't create or delete system routes. But you can override the system routes by adding custom routes to control traffic flow to the next hop.
 
@@ -36,7 +36,7 @@ Within Azure, there are additional system routes. Azure will create these routes
 
 ### Virtual network peering and service chaining
 
-Virtual network peering and service chaining let virtual networks within Azure be connected to one another. With this connection, VMs can communicate with each other within the same region or across regions. This communication in turn creates additional routes within the default route table. Service chaining lets you override these routes by creating user-defined routes between peered networks.
+Virtual network peering and service chaining let virtual networks within Azure be connected to one another. With this connection, virtual machines can communicate with each other within the same region or across regions. This communication in turn creates additional routes within the default route table. Service chaining lets you override these routes by creating user-defined routes between peered networks.
 
 The following diagram shows two virtual networks with peering configured. The user-defined routes are configured to route traffic through an NVA or an Azure VPN gateway.
 
@@ -50,7 +50,7 @@ Use a virtual network gateway to send encrypted traffic between Azure and on-pre
 
 ### Virtual network service endpoint
 
-Virtual network endpoints extend your private address space in Azure by providing a direct connection to your Azure resources. This connection restricts the flow of traffic: your Azure VMs can access your storage account directly from the private address space and deny access from a public VM. As you enable service endpoints, Azure creates routes in the route table to direct this traffic.
+Virtual network endpoints extend your private address space in Azure by providing a direct connection to your Azure resources. This connection restricts the flow of traffic: your Azure virtual machines can access your storage account directly from the private address space and deny access from a public virtual machine. As you enable service endpoints, Azure creates routes in the route table to direct this traffic.
 
 ## Custom routes
 
@@ -62,11 +62,11 @@ You have two options for implementing custom routes: create a user-defined route
 
 You use a user-defined route to override the default system routes so that traffic can be routed through firewalls or NVAs.
 
-For example, you might have a network with two subnets and want to add a VM in the perimeter network to be used as a firewall. You create a user-defined route so that traffic passes through the firewall and doesn't go directly between the subnets.
+For example, you might have a network with two subnets and want to add a virtual machine in the perimeter network to be used as a firewall. You create a user-defined route so that traffic passes through the firewall and doesn't go directly between the subnets.
 
 When creating user-defined routes, you can specify these next hop types:
 
-- **Virtual appliance** - A virtual appliance is typically a firewall device used to analyze or filter traffic that is entering or leaving your network. You can specify the private IP address of a NIC attached to a VM so that IP forwarding can be enabled. Or you can provide the private IP address of an internal load balancer.
+- **Virtual appliance** - A virtual appliance is typically a firewall device used to analyze or filter traffic that is entering or leaving your network. You can specify the private IP address of a NIC attached to a virtual machine so that IP forwarding can be enabled. Or you can provide the private IP address of an internal load balancer.
 - **Virtual network gateway** - Use to indicate when you want routes for a specific address to be routed to a virtual network gateway. The virtual network gateway is specified as a VPN for the next hop type.
 - **Virtual network** - Use to override the default system route within a virtual network.
 - **Internet** - Use to route traffic to a specified address prefix that is routed to the internet.

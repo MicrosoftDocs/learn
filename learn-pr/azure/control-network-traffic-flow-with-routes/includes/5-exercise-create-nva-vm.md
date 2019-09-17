@@ -92,4 +92,4 @@ In the next steps, IP forwarding for the **nva** network appliance is enabled. W
     ssh -t -o StrictHostKeyChecking=no azureuser@$NVAIP 'sudo sysctl -w net.ipv4.ip_forward=1; exit;'
     ```
 
-    When prompted, enter the password you used when you created the VM.
+    When prompted, enter the password you used when you created the virtual machine.

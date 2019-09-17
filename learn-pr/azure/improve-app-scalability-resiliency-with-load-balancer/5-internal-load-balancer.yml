@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-app-scalability-resiliency-with-load-balancer.5-internal-load-balancer
+metadata:
+  title: Internal load balancers
+  description: Internal load balancers
+  ms.date: 08/31/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Internal load balancer
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-internal-load-balancer.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which configuration is required to configure an internal load balancer?"
+    choices:
+    - content: "Virtual machines should be in the same virtual network."
+      isCorrect: true
+      explanation: "The virtual machines that you distribute load to with a load balancer must be in the same virtual network."
+    - content: "Virtual machines must be publicly accessible."
+      isCorrect: false
+      explanation: "Virtual machines behind an internal load balancer should not be accessed publicly. The load balancer provides the access point."
+    - content: "Virtual machines must be within an availability set"
+      isCorrect: false
+      explanation: "Although this configuration is an option, it is not a requirement."
+  - content: "Which of the following statement about external load balancers is correct?"
+    choices:
+    - content: "They have a private front facing IP address."
+      isCorrect: false
+      explanation: "External load balancers have public IP addresses"
+    - content: "They don't have a listener IP address"
+      isCorrect: false
+      explanation: "External load balancers have public IP addresses"
+    - content: "They have a public IP address"
+      isCorrect: true
+      explanation: "External load balancers have public IP addresses"

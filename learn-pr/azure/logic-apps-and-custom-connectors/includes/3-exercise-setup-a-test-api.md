@@ -4,8 +4,6 @@ Your company wants to build a workflow using Logic Apps that accesses the compan
 
 In this unit, we'll deploy our test API to the Azure sandbox activated for this module.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Host a test API in the Azure sandbox
 
 To save time, let's start by running a script to host our test API in Azure. The script performs the following steps:

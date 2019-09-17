@@ -10,7 +10,7 @@ In this unit, you'll set up the listener with port 443 and with the SSL certific
 
     ```azurecli
     az network application-gateway frontend-port create \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group $rgName \
       --gateway-name gw-shipping \
       --name https-port \
       --port 443
@@ -22,7 +22,7 @@ In this unit, you'll set up the listener with port 443 and with the SSL certific
 
     ```azurecli
     az network application-gateway ssl-cert create \
-       --resource-group <rgn>[Sandbox resource group]</rgn> \
+       --resource-group $rgName \
        --gateway-name gw-shipping \
        --name appgateway-cert \
        --cert-file server-config/appgateway.pfx \
@@ -33,7 +33,7 @@ In this unit, you'll set up the listener with port 443 and with the SSL certific
 
     ```azurecli
     az network application-gateway http-listener create \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group $rgName \
       --gateway-name gw-shipping \
       --name https-listener \
       --frontend-port https-port \
@@ -44,7 +44,7 @@ In this unit, you'll set up the listener with port 443 and with the SSL certific
 
     ```azurecli
     az network application-gateway rule create \
-        --resource-group <rgn>[Sandbox resource group]</rgn> \
+        --resource-group $rgName \
         --gateway-name gw-shipping \
         --name https-rule \
         --address-pool ap-backend \
@@ -59,7 +59,7 @@ In this unit, you'll set up the listener with port 443 and with the SSL certific
 
     ```bash
     echo https://$(az network public-ip show \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group $rgName \
       --name appgwipaddr \
       --query ipAddress \
       --output tsv)

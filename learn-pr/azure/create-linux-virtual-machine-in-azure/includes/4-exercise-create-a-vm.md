@@ -1,16 +1,16 @@
-[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
-
 Recall that our goal is to move an existing Linux server running Apache to Azure. We'll start by creating an Ubuntu Linux server.
 
 ## Create a new Linux virtual machine
 
 We can create Linux VMs with the Azure portal, the Azure CLI, or Azure PowerShell. The easiest approach when you are starting with Azure is to use the portal because it walks you through the required information and provides hints and helpful messages during the creation:
 
-1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure subscription.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Click **Create a resource** in the upper-left corner of the Azure portal.
 
-1. In the search box, enter  **Ubuntu Server** to see the different versions available. Select **Ubuntu Server 18.04 LTS** from the presented list.
+1. In the search box, enter  **Ubuntu Server**. 
+1. Under the **Marketplace** result, select the **All results** link on the top right-hand side to see the different versions available. 
+1. Select **Ubuntu Server 18.04 LTS Canonical** from the presented list.
 
 1. Click the **Create** button to start configuring the VM.
 
@@ -22,13 +22,13 @@ The VM creation experience in the portal is presented in a wizard format to walk
 
 Once you fill in all the required options (identified with red asterisks), you can skip the remainder of the wizard experience and start creating the VM through the **Review + Create** button at the bottom.
 
-We'll start with the **Basics** section. 
+We'll start with the **Basics** section. These instructions are for the Sandbox portal. If you are using another Azure portal account, you may need to adapt some details accordingly.
 
 ### Configure basic VM settings
 
-1. For **Subscription**, verify that your subscription is selected.
+1. For **Subscription**, the sandbox subscription should be selected for you by default.
 
-1. For **Resource group**, create a new resource group with the name **learn-create-linux-vm-rg** so that it will be easier to clean up these resources when you are finished with the module. If you choose a different resource group name, remember it for the rest of the exercises in this module. 
+1. For **Resource group**, the resource group with the name **<rgn>[sandbox resource group name]</rgn>** should be selected for you by default. 
 
 1. In the **Instance details** section, enter a name for your web server VM, such as **test-web-eus-vm1**. This indicates the environment (**test**), the role (**web**), location (**East US**), service (**vm**), and instance number (**1**).
     - It's considered best practice to standardize your resource names, so you can quickly identify their purpose. Linux VM names must be between 1 and 64 characters and be comprised of numbers, letters, and dashes.
@@ -36,7 +36,10 @@ We'll start with the **Basics** section.
     > [!NOTE]
     > As you change settings and tab out of each free-text field, Azure will validate each value automatically and place a green check mark next to it when it's good. You can hover your mouse pointer over error indicators to get more information on issues it discovers.
 
-1. Select a location that is close to you.
+1. Select a location.
+
+    <!-- Resource selection -->  
+    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 1. Set **Availability options** to **No infrastructure redundancy required**. This option can be used to ensure the VM is highly available by grouping multiple VMs together as a set to deal with planned or unplanned maintenance events or outages. For this exercise we will not need this service.
 

@@ -125,9 +125,7 @@ You're now back at your Cloud Shell session.
     > [!IMPORTANT]
     > Whenever you paste or change code into a file in the editor, make sure to save afterwards using the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Command+S</kbd> on macOS).
 
-    This code uses Mongoose to simplify the process of transferring data in and out of MongoDB. Mongoose is a schema-based system for modeling data.
-
-    This code connects to a database named "Books" on the local MongoDB server. It then defines a database document called "Book" with the provided schema. The schema defines four fields that describe a single book:
+    This code uses Mongoose to simplify the process of transferring data in and out of MongoDB. Mongoose is a schema-based system for modeling data. The code defines a database document called "Book" with the provided schema. The schema defines four fields that describe a single book:
 
     * The book's name, or title
     * Its International Standard Book Number, or ISBN, which uniquely identifies the book

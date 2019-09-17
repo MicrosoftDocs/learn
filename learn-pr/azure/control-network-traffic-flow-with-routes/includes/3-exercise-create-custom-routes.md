@@ -8,8 +8,6 @@ You'll configure the network so that all traffic flowing from a public subnet to
 
 In this exercise, you'll create the route table, custom route, and subnets. You'll then associate the route table with a subnet.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create a route table and custom route
 
 The first task is to create a new routing table and then add a custom route for all traffic intended for the private subnet.

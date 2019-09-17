@@ -34,7 +34,7 @@ In this unit, the Azure SQL database's tables will be populated with data. You'l
 
 1. Run the following .NET Core CLI command to run the app in development mode:
 
-    ```bash
+    ```dotnetcli
     dotnet run --environment Development > $srcWorkingDirectory/ContosoPets.Api.log &
     ```
 

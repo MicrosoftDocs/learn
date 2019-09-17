@@ -33,7 +33,7 @@ When using the provided Mobile Apps SDK in your client app to access your cloud 
 
 ### Authentication and authorization
 
-Mobile Apps includes support for several identify providers. You can use Azure Active Directory or common client providers including Facebook, Google, Twitter and Microsoft. Mobile Apps provides OAuth 2.0 authentication for each.
+Mobile Apps includes support for several identity providers. You can use Azure Active Directory or common client providers including Facebook, Google, Twitter and Microsoft. Mobile Apps provides OAuth 2.0 authentication for each.
 
 ### Push notifications
 
