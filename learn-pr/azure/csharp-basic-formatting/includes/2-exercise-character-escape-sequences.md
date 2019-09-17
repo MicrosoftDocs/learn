@@ -36,7 +36,7 @@ The .NET Editor will put a red squiggly line under `World`.  But if you attempt 
 ```
 To handle that situation, use the `\"` escape sequence.
 
-```
+```csharp-interactive
 Console.WriteLine("Hello \"World\"!");
 ```
 If you run the code above, you would see the following output.

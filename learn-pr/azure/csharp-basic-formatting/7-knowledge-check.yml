@@ -16,16 +16,16 @@ quiz:
   questions:
   - content: "Which of the following escape sequences would you use to add double-quotes to your literal string?"
     choices:
-    - content: "`&#92;q`"
+    - content: "&#92;q"
       isCorrect: false
-      explanation: "`&#92;q` isn't a valid escape sequence."
+      explanation: "&#92;q isn't a valid escape sequence."
     - content: "&#92;d"
       isCorrect: false
-      explanation: "`&#92;d` isn't a valid escape sequence."
+      explanation: "&#92;d isn't a valid escape sequence."
     - content: "`&#92;'`"
       isCorrect: false
-      explanation: "`&#92;'` is the escape sequence for a single quote, not a double-quote."
-    - content: '`&#92;"`'
+      explanation: "&#92;' is the escape sequence for a single quote, not a double-quote."
+    - content: '&#92;"'
       isCorrect: true
       explanation: "Correct!"
   - content: "Which of the following lines of code correctly uses string interpolation assuming that the variable `value` is a string?"
@@ -44,12 +44,12 @@ quiz:
       explanation: "This line is missing the `$` symbol prefix for string interpolation."
   - content: "You embedded Unicode characters in your strings to present a special message in Thai, however the message is only displayed as question mark characters.  What happened?"
     choices:
-    - content: "You're missing the ``&#92;u` escape sequence for Unicode characters."
+    - content: "You're missing the &#92;u escape sequence for Unicode characters."
       isCorrect: false
-      explanation: "If you don't use the ``&#92;u` escape sequence for Unicode characters, you won't see question marks.  You'll see the numbers."
+      explanation: "If you don't use the &#92;u escape sequence for Unicode characters, you won't see question marks.  You'll see the numbers."
     - content: "You used the wrong Unicode characters."
       isCorrect: false
-      explanation: "This is unlikely.  It would only be true if all the Unicode characters were the same value representing a quotation mark. ``&#92;u003F`."
+      explanation: "This is unlikely.  It would only be true if all the Unicode characters were the same value representing a quotation mark. &#92;u003F."
     - content: "The user's console doesn't support Unicode characters."
       isCorrect: true
       explanation: "Correct!"
