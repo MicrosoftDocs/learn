@@ -159,7 +159,7 @@ You'll now complete the configuration by creating the connections from each VPN 
         --local-gateway2 LNG-Azure-VNet-1
     ```
 
-You've now finished the configuration of the site-to-site connection. The tunnels should automatically connect and become active.
+You've now finished the configuration of the site-to-site connection. This may take a few minutes, but the tunnels should automatically connect and become active.
 
 ## Verification steps
 
@@ -175,7 +175,7 @@ Let's confirm that the VPN tunnels are connected.
         --query '{Name:name,ConnectionStatus:connectionStatus}'
     ```
 
-    You should see output like below indicating the connection is successful.
+    You should see output like below indicating the connection is successful. If the `ConnectionStatus` shows as `Connecting`, wait a minute or two and rerun the command. The connections can take a few minutes to fully connect.
 
     ```output
     Name                        ConnectionStatus
