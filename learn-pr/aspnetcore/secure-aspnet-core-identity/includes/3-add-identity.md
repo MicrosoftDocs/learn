@@ -29,7 +29,7 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
 
 1. Add the following NuGet package to the project:
 
-    ```bash
+    ```dotnetcli
     dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
     ```
 
