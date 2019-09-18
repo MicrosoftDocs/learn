@@ -1,7 +1,5 @@
 The Azure portal offers a convenient user interface to search, install, and access the various Azure offerings available. You'll find, however, some of these tasks are repetitive and are candidates for automation using a command-line enabled interface.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## What is Azure Cloud Shell?
 
 Azure Cloud Shell is a browser-based command-line experience for managing and developing Azure resources. Think of Cloud Shell as an interactive console that you run in the cloud.

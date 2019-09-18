@@ -16,8 +16,6 @@ The Microsoft Azure Marketplace is an online store that hosts applications that
 
 We're going to use one of the WordPress application options from the Azure Marketplace for our website.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Creating resources in Azure
 
 Typically, the first thing we'd do is to create a *resource group* to hold all the things that we need to create. The *resource group* allows us to administer all the services, disks, network interfaces, and other elements that potentially make up our solution as a unit. We can use the Azure portal to create and manage our solution's resource groups. However, keep in mind that you can also manage resources via a command line using the Azure CLI. The Azure CLI is a useful option should you need to automate the process in the future.
