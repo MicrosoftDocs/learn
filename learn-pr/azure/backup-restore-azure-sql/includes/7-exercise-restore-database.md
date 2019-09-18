@@ -77,4 +77,6 @@ The restored database should contain the **Person** table. You can check that in
     ORDER BY schema_name, table_name;
     ```
 
-1. Examine the results. The **Person** table should not be present. 
+1. Examine the results. The **Person** table should not be present.
+
+You've now seen how you can restore a database in the event that something unintended happens to the data.
