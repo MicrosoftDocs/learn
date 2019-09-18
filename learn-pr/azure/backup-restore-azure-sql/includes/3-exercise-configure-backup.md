@@ -4,8 +4,6 @@ Now that you have planned a comprehensive backup strategy for Azure SQL Database
 
 Here, you will create a database in Azure and then configure backups. You will also add some content to the database.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create a server and database
 
 Let's use the Azure CLI to create an Azure SQL Server and database instance in that resource group:
