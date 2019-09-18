@@ -81,12 +81,12 @@ The next task is to create the **vnet** virtual network and the three subnets th
 
 The final task in this exercise is to associate the route table with the **publicsubnet** subnet.
 
-1. Run the following command to associate the route table with the public subnet.
+Run the following command to associate the route table with the public subnet.
 
-    ```azurecli
-    az network vnet subnet update \
-        --name publicsubnet \
-        --vnet-name vnet \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --route-table publictable
-    ```
+ ```azurecli
+ az network vnet subnet update \
+     --name publicsubnet \
+     --vnet-name vnet \
+     --resource-group <rgn>[sandbox resource group name]</rgn> \
+     --route-table publictable
+ ```
