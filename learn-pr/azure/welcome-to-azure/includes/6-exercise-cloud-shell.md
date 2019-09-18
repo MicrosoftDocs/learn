@@ -75,7 +75,7 @@ Accessing the Cloud Shell from within the Azure portal is done using the Cloud S
 1. We'll use the `az webapp stop --id ` to stop the web application running in our App Service. Run the following command to stop the web app. Make sure to replace the example ID value with the value you copied earlier. In our example to command would look like the following snippet:
 
     ```bash
-    az webapp stop --id "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/resourceGroups/learn-wordpress-blog-rg/providers/Microsoft.Web/sites/BlogFor"
+    az webapp stop --id "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/resourceGroups/<rgn>[Resource Group Name]</rgn>/providers/Microsoft.Web/sites/BlogFor"
     ```
 
 1. Open the website in a new browser tab. You'll find the URL to the site in the overview of the App service in the portal. You'll see a message in your browser that reads:
@@ -85,7 +85,7 @@ Accessing the Cloud Shell from within the Azure portal is done using the Cloud S
 1. Finally, let's start the web app by running the `az webapp start --id ` command. Run the following command to start the web app. Make sure to replace the example ID value with the value you copied earlier. In our example to command would look like the following snippet:
 
     ```bash
-    az webapp start --id "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/resourceGroups/learn-wordpress-blog-rg/providers/Microsoft.Web/sites/BlogFor"
+    az webapp start --id "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx/resourceGroups/<rgn>[Resource Group Name]</rgn>/providers/Microsoft.Web/sites/BlogFor"
     ```
 
 1. Switch back to the tab for your website and refresh the page. Your website will be available after a couple of seconds.

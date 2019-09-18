@@ -64,25 +64,25 @@ In the free Azure sandbox environment you'll use the pre-created resource group 
 
     [![](../media/4-config-info-create.png "Screenshot showing app service configuration information")](../media/4-config-info-create-expanded.png#lightbox)
 
- 1. We're going to modify our **App service plan** to allow us to scale our website in our next exercise. Click on the **App Service plan/location** link.
+ 1. We're going to modify our *App service plan* to allow us to scale our website in our next exercise. Click on the **App Service plan/location** link.
 
     !["Screenshot showing App Service plan link"](../media/4-config-app-service-plan.png)
 
-1. In the **App Service plan** panel, click on the **Create new** button.
+1. In the *App Service plan* panel, click on the **Create new** button.
 
     !["Screenshot showing the Create new App Service plan button"](../media/4-new-app-service-plan.png)
 
-1. In the **New App Service plan** panel, enter a **name** for the new service plan and then click on **Pricing tier**.
+1. In the *New App Service plan* panel, enter a **name** for the new service plan and then click on **Pricing tier**.
 
     !["Screenshot showing the New App Service Plan configuration"](../media/4-new-service-plan-config.png)
 
-1. The **Spec Picker** allows us to select a new pricing tier for our application. This screen opens to the **Production** tab, with the S1 pricing tier selected. We'll select a new pricing tier from the **Dev / Test** tab for our website.
+1. The *Spec Picker* allows us to select a new pricing tier for our application. This screen opens to the *Production* tab, with the S1 pricing tier selected. We'll select a new pricing tier from the *Dev / Test* tab for our website.
 
-    Click on the **Dev / Test** tab as  from this tab and select the **F1** pricing tier and then click **Apply**.
+    Click on the **Dev / Test** tab and select the **F1** pricing tier. Then click on **Apply**.
 
     [![](../media/4-select-pricing-tier.png "Screenshot showing the notification information")](../media/4-select-pricing-tier-expanded.png#lightbox)
 
-1. In the **New App Service plan** panel, click **OK** to create the new App Service plan and close the panel.
+1. In the *New App Service plan* panel, click **OK** to create the new plan and close the panel.
 
 1. Finally, click on the **Create** button to start the deployment of your new site.
 
