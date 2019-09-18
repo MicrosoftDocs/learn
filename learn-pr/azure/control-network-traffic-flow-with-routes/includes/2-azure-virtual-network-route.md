@@ -19,9 +19,9 @@ Every subnet has the following default system routes:
 
 The **Next hop type** column shows the network path taken by traffic sent to each address prefix. The path can be one of the following hop types:
 
-- **Virtual network** - A route is created in the address prefix. The prefix represents each address range created at the virtual-network level. If multiple address ranges are specified, multiple routes are created for each address range.
-- **Internet** - The default system route 0.0.0.0/0 routes any address range to the internet, unless you override Azure's default route with a custom route.
-- **None** - Any traffic routed to this hop type is dropped and doesn't get routed outside the subnet. By default, the following IPv4 private-address prefixes are created: 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16. The prefix 100.64.0.0/10 for a shared address space is also added. None of these address ranges are globally routable.
+- **Virtual network**: A route is created in the address prefix. The prefix represents each address range created at the virtual-network level. If multiple address ranges are specified, multiple routes are created for each address range.
+- **Internet**: The default system route 0.0.0.0/0 routes any address range to the internet, unless you override Azure's default route with a custom route.
+- **None**: Any traffic routed to this hop type is dropped and doesn't get routed outside the subnet. By default, the following IPv4 private-address prefixes are created: 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16. The prefix 100.64.0.0/10 for a shared address space is also added. None of these address ranges are globally routable.
 
 The following diagram shows an overview of system routes and shows how traffic flows among subnets and the internet by default. You can see from the diagram that traffic flows freely among the two subnets and the internet.
 
@@ -66,11 +66,11 @@ For example, you might have a network with two subnets and want to add a virtual
 
 When creating user-defined routes, you can specify these next hop types:
 
-- **Virtual appliance** - A virtual appliance is typically a firewall device used to analyze or filter traffic that is entering or leaving your network. You can specify the private IP address of a NIC attached to a virtual machine so that IP forwarding can be enabled. Or you can provide the private IP address of an internal load balancer.
-- **Virtual network gateway** - Use to indicate when you want routes for a specific address to be routed to a virtual network gateway. The virtual network gateway is specified as a VPN for the next hop type.
-- **Virtual network** - Use to override the default system route within a virtual network.
-- **Internet** - Use to route traffic to a specified address prefix that is routed to the internet.
-- **None** - Use to drop traffic sent to a specified address prefix.
+- **Virtual appliance**: A virtual appliance is typically a firewall device used to analyze or filter traffic that is entering or leaving your network. You can specify the private IP address of a NIC attached to a virtual machine so that IP forwarding can be enabled. Or you can provide the private IP address of an internal load balancer.
+- **Virtual network gateway**: Use to indicate when you want routes for a specific address to be routed to a virtual network gateway. The virtual network gateway is specified as a VPN for the next hop type.
+- **Virtual network**: Use to override the default system route within a virtual network.
+- **Internet**: Use to route traffic to a specified address prefix that is routed to the internet.
+- **None**: Use to drop traffic sent to a specified address prefix.
 
 With user-defined routes, you can't specify the next hop type **VirtualNetworkServiceEndpoint**, which indicates virtual network peering.
 
