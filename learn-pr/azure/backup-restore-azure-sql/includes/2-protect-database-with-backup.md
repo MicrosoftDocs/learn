@@ -1,6 +1,6 @@
 If the data that you keep in Azure SQL Database is critical, you must think carefully about how to back it up to ensure that you can restore it reliably and quickly if a problem arises.
 
-The retail organization that you work for uses Azure SQL Database to underpin its Enterprise Resource Planning (ERP) system. The company uses this system for all its accounting, customer relationship management, sales management, and corporate governance procedures. Therefore the ERP data is business critical and, if it were to be lost, the business would suffer huge losses and might even have to cease trading. The board has given you responsibility for the protection of this data. You want to be sure that, if a disaster took place, you could restore all the data up to the failure within three hours.
+The retail organization that you work for uses Azure SQL Database to underpin its enterprise resource planning (ERP) system. The company uses this system for all its accounting, customer relationship management, sales management, and corporate governance procedures. If this data were to be lost, the business would suffer huge losses and might even have to cease operations. The board has given you responsibility for the protection of this data. You want to be sure that if a disaster happened, you could restore all the data up to the failure within three hours.
 
 Here, you will learn about Azure SQL Database backups and how to use them effectively.
 
@@ -10,9 +10,9 @@ SQL Database automatically creates database backups. The backups are kept for be
 
 Azure SQL Database uses SQL Server technology to make these types of backups:
 
-- **Full backups.** In a full backup, everything in the database and the transaction logs is backed up. SQL Database makes a full backup once a week.
-- **Differential backups.** In a differential backup, everything that changed since the last full backup is backed up. SQL Database makes a differential backup every 12 hours.
-- **Transactional backups.** In a transactional backup, the contents of the transaction logs are backed up. SQL Database makes a transaction log backup every five to 10 minutes. Transactional backups enable administrators to restore up to a specific point in time, which includes the moment before data was mistakenly deleted.
+- **Full backups**. In a full backup, everything in the database and the transaction logs is backed up. SQL Database makes a full backup once a week.
+- **Differential backups**. In a differential backup, everything that changed since the last full backup is backed up. SQL Database makes a differential backup every 12 hours.
+- **Transactional backups**. In a transactional backup, the contents of the transaction logs are backed up. SQL Database makes a transaction log backup every five to 10 minutes. Transactional backups enable administrators to restore up to a specific point in time, which includes the moment before data was mistakenly deleted.
 
 These backups can be used to restore an existing database, restore a deleted database up to the point in time when it was deleted, restore the database to an alternative location or region, and to restore a database from a long-term backup using Long Term Retention (LTR). When a failure occurs, you may lose changes from up to five minutes ago, if the live transaction logs are lost. If the transaction logs are intact, you can restore up to the moment that the failure occurred. 
 
