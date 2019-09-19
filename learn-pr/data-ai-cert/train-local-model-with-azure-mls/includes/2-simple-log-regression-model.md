@@ -40,7 +40,7 @@ You will see output similar to this: `('./data/test-labels.gz', <http.client.HTT
 
 ## Split out the datasets
 
-The next step is to split the data into training and test sets. We'll need a function to load the compressed file and return numpy arrays we can process. Save the following code off to a file named **utils.py**.
+The next step is to split the data into training and test sets. We'll need a function to load the compressed file and return numpy arrays we can process.
 
 ```python
 import gzip
