@@ -53,7 +53,7 @@ Identify the subtasks of *Enable secure external collaboration for your applicat
    Explain the purpose of Azure AD B2B, and how it works at the conceptual level (implementation details are described in the next unit).
 
     **Knowledge check**
-    - Your organization has a few managers who must be in charge of deciding which specific guest users are allowed to access the application. How can these managers invite guest users?
+    - How are guest users different from regular member users?
     - How can you protect the application to ensure that it can only be accessed based on certain criteria having been met?
 
 3. **Collaborate with external users through Azure AD B2B**
@@ -80,7 +80,11 @@ Identify the subtasks of *Enable secure external collaboration for your applicat
     Call out the following points:
 
     - At what levels can MFA be enforced?
-    - How are guest accounts different from regular user accounts?
+    - How are guest accounts different from regular user accounts? (moved this to unit 2)
+
+        **Knowledge check**
+        - At what levels can multi-factor authentication be enforced?
+        - Which of the following are valid categories for multi-factor authentication?
 
 6. **Summary**
 
