@@ -8,7 +8,7 @@ Other methods are designed to return a value upon completion, typically the resu
 
 A method can be designed to return any data type, even another class.  In this case, the `Random.Next()` method returns an `int` value that is the randomly generated number.  We save the return value into a variable for use later in our code.  We could have ignored the return value like so:
 
-```csharp-interactive
+```csharp
 dice.Next(1, 7);
 ```
 However, this would be pointless.  The reason we're calling this method is so that we can retrieve the next random value from the Random object.
@@ -45,7 +45,7 @@ An **overloaded method** is defined with multiple method signatures.  Overloaded
 
 In some cases, overloaded versions of a given method allow you to send values of different data types into the method.  For example, the `Console.WriteLine()` method has 19 different overloaded versions.  Most of those overloads allow you to send different types of data you want printed to the console.  Consider the following code:
 
-```csharp
+```csharp-interactive
 int number = 7;
 string text = "seven";
 

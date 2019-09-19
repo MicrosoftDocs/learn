@@ -11,7 +11,5 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 3
-azureSandbox: false
-interactive: csharp
 content: |
   [!include[](includes/2-dotnet-class-library.md)]

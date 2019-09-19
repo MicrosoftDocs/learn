@@ -19,10 +19,10 @@ quiz:
     - content: "A memory address."
       isCorrect: false
       explanation: "An object's memory address (location) is saved in a variable, but it isn't the same as a memory address."
-    - content: "a static method"
+    - content: "A static method"
       isCorrect: false
       explanation: "An object isn't a static method, nor does it support static methods."
-    - content: "a stateless class"
+    - content: "A stateless class"
       isCorrect: false
       explanation: "An object usually isn't stateless, nor is it a class."
     - content: "An instance of a class"
