@@ -8,15 +8,15 @@ Let's start by providing some default values for the Azure CLI in the Cloud Shel
 
 Type the following command into the Azure CLI, make sure to replace the location with one close to you.
 
-    ```azurecli
-    az group create --name <rgn>[sandbox Resource Group]</rgn> --location westus2
-    ```
+```azurecli
+az group create --name <rgn>[sandbox Resource Group]</rgn> --location westus2
+```
 
 Next, set default values for the Azure CLI in the Cloud Shell. This will keep you from having to type these in every time. In particular, let's set the _resource group_ and _location_. Type the following command into the Azure CLI, make sure to replace the location with one close to you.
 
-    ```azurecli
-    az configure --defaults group=<rgn>[sandbox Resource Group]</rgn> location=westus2
-    ```
+```azurecli
+az configure --defaults group=<rgn>[sandbox Resource Group]</rgn> location=westus2
+```
 
 ## Create an Event Hubs namespace
 
