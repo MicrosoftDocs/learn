@@ -36,7 +36,7 @@ Scaling out, on the other hand, is the ability to increase the number of machine
 
 ## Creating a web app
 
-When you're ready to run a web app on Azure, you visit the Azure portal and create a **Web App** resource. Creating a web app allocates a set of hosting resources in App Service, which you can use to host any web-based application that is supported by Azure, whether it be ASP.NET Core, Node.js, PHP, etc.
+When you're ready to run a web app on Azure, you visit the Azure portal and create a **Web App** resource. Creating a web app allocates a set of hosting resources in App Service, which you can use to host any web-based application that is supported by Azure, whether it be ASP.NET Core, Node.js, Java, Python, etc.
 
 The Azure portal provides a wizard to create a web app. This wizard requires the following fields:
 
@@ -44,7 +44,7 @@ The Azure portal provides a wizard to create a web app. This wizard requires the
 - **Resource group**: A valid resource group.
 - **App name**: The name of the web app. This name becomes part of the app's URL, so it must be unique among all Azure App Service web apps.
 - **Publish**: You can deploy your application to App Service as **code** or as a ready-to-run **Docker image**. Selecting **Docker image** will activate the Docker tab of the wizard, where you provide information about the Docker registry from which App Service will retrieve your image.
-- **Runtime stack**: If you choose to deploy your application as code, App Service needs to know what runtime your application uses (examples include Node.js, PHP, Java and .NET). If you deploy your application as a Docker image, you will not need to choose a runtime stack, since your image will include it.
+- **Runtime stack**: If you choose to deploy your application as code, App Service needs to know what runtime your application uses (examples include Node.js, Python, Java and .NET). If you deploy your application as a Docker image, you will not need to choose a runtime stack, since your image will include it.
 - **Operating system**: App Service can host applications on **Windows** or **Linux** servers.
   - If you are deploying your app as code, many of the available runtime stacks are limited to one operating system or the other. After choosing a runtime stack, the toggle will indicate whether or not you have a choice of operating system. If your target runtime stack is available on both operating systems, select the one that you use to develop and test your application.
   - If your application is packaged as a Docker image, choose the operating system on which your image is designed to run.

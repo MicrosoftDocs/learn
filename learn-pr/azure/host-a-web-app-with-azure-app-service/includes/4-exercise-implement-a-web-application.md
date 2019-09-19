@@ -43,7 +43,7 @@ To create a starter Node.js web application, we'll use Node Package Manager (`np
 
 Run these commands in the Cloud Shell now to create a new `package.json` which will describe our Node.js application.
 
-```console
+```bash
 cd ~
 mkdir helloworld
 cd helloworld
@@ -58,7 +58,7 @@ touch index.js
 
 Now we have to make a few edits to both of our files. Type the following command into the terminal to open an interactive editor.
 
-```console
+```bash
 code .
 ```
 
@@ -108,18 +108,91 @@ To create a starter web application, we'll use Maven, a commonly-used project ma
 
 Run these commands in the Cloud Shell now to create a new web app:
 
-```console
+```bash
 cd ~
 mvn archetype:generate -DgroupId=example.demo -DartifactId=helloworld -DinteractiveMode=false -DarchetypeArtifactId=maven-archetype-webapp
 ```
 
 Now, run these commands to change to the new "helloworld" application directory and package the application for deployment:
 
-```console
+```bash
 cd helloworld
 mvn package
 ```
 
 When the command finishes running, if you change to the `target` directory and run `ls`, you'll see a file listed called `helloworld.war`. This is the web application package that we will deploy to App Service.
+
+::: zone-end
+
+::: zone pivot="python"
+
+To create a starter web application, we'll use Flask, which is a commonly-used web application framework.
+
+Run these commands in the Cloud Shell to create the directory for your new web app:
+
+```bash
+mkdir ~/BestBikeApp
+cd ~/BestBikeApp
+touch application.py
+touch requirements.txt
+```
+
+Open the web-based Visual Studio Code editor to edit the *application.py* for your web app:
+
+```bash
+code application.py
+```
+
+Enter the following Python code:
+
+```python
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+    return "Hello World!\n"
+```
+
+Save the file and exit the editor. You can save the file and exit the editor through the "..." menu on the top right, or press <kbd>Ctrl+S</kbd> and <kbd>Ctrl+Q</kbd>.
+
+Now, open the web-based Visual Studio Code editor to edit the *requirements.txt* for your web app:
+
+```bash
+code requirements.txt
+```
+
+Enter the following text:
+
+```text
+Flask==1.0.2
+```
+
+Save the file and exit the editor. You can save the file and exit the editor through the "..." menu on the top right, or press <kbd>Ctrl+S</kbd> and <kbd>Ctrl+Q</kbd>.
+
+OPTIONAL: If you open a second command shell session, for example by browsing to <https://shell.azure.com/>, you can test your application locally on Azure. To do so, use the following steps:
+
+1. From your primary command shell session, run the following commands to start your web application:
+
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+    FLASK_APP=application.py flask run
+    ```
+
+1. From your second command shell session, run the following command to browse to your web application:
+
+    ```bash
+    curl http://127.0.0.1:5000/
+    ```
+
+    You should see the following displayed:
+
+    ```console
+    Hello World!
+    ```
+
+1. From your primary command shell session, press <kbd>Ctrl+C</kbd> to quit your web app.
 
 ::: zone-end
