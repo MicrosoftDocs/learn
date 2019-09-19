@@ -82,7 +82,7 @@ This will return a list of all the possible size configurations available in the
 > [!NOTE]
 > The Microsoft Learn sandbox is limited to a few VM sizes.
 
-To resize a VM, we use the `vm resize` command. For example, perhaps we find our VM is underpowered for the task we want it to perform. We could bump it up a few levels to a D2s_v3 tier where it has 2 vCores and 8 GB of memory. Type this command in Cloud Shell:
+To resize a VM, we use the `vm resize` command. For example, perhaps we find our VM is underpowered for the task we want it to perform. We could bump it up to a D2s_v3 where it has 2 vCores and 8 GB of memory. Type this command in Cloud Shell:
 
 ```azurecli
 az vm resize \
