@@ -48,11 +48,11 @@ az vm create \
 
 ## Azure Cloud Shell
 
-[Azure Cloud Shell](https://shell.azure.com/) is a browser-based scripting environment for command-line administration of Azure resources. It provides support for two shell environments. Linux users can opt for a Bash experience, while Windows users can use PowerShell.
+[Azure Cloud Shell](https://shell.azure.com/) is an interactive, authenticated, browser-accessible shell for managing Azure resources. It provides the flexibility of choosing the shell experience that best suits the way you work, either Bash or PowerShell.
 
 ![Screenshot of Azure Cloud Shell](../media/2-cloud-shell.png)
 
-Both environments support the Azure CLI and Azure PowerShell CLIs. Linux defaults to the Azure CLI (with the `az` command pre-installed), but you can switch to PowerShell for Linux by typing `pwsh`. The Windows-based environment has both CLI tools pre-installed. In addition to these administrative tools, the Cloud Shell has a suite of developer tools, text editors, and other tools available including:
+You can switch between the two shells, and both support the Azure CLI and Azure PowerShell CLIs. Bash defaults to the Azure CLI (with the `az` command pre-installed), but you can switch to PowerShell for Linux by typing `pwsh`. The PowerShell environment has both CLI tools pre-installed. In addition to these administrative tools, the Cloud Shell has a suite of developer tools, text editors, and other tools available including:
 
 :::row:::
   :::column:::
