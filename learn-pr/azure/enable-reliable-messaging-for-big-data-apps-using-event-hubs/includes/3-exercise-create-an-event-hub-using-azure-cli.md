@@ -1,25 +1,21 @@
 You're now ready to create a new Event Hub. After creating the Event Hub, you'll use the Azure portal to view your new hub.
 
-[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
-
 ## Set some defaults in the Azure CLI
 
-1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure subscription.
+Let's start by providing some default values for the Azure CLI in the Cloud Shell. This will keep you from having to type these in every time. In particular, let's set the _resource group_ and _location_. Select a location from the following list.
 
-1. Click on the Cloud Shell button to open it. When prompted, choose the Bash command-line option.
+[!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
-    ![Screenshot showing Cloud Shell access button](../media/3-portal-cloudshell-access.png)
-
-1. Create a new resource group with the name **learn-big-data-messaging-rg** so that it will be easier to clean up these resources when you are finished with the module. If you choose a different resource group name, remember it for the rest of the exercises in this module.
+1. Type the following command into the Azure CLI, make sure to replace the location with one close to you.
 
     ```azurecli
-    az group create --name learn-big-data-messaging-rg --location westus2
+    az group create --name <rgn>[sandbox Resource Group]</rgn> --location westus2
     ```
 
-1. You can also set default values for the Azure CLI in the Cloud Shell. This will keep you from having to type these in every time. In particular, let's set the _resource group_ and _location_. Type the following command into the Azure CLI, make sure to replace the location with one close to you.
+1. Next, set default values for the Azure CLI in the Cloud Shell. This will keep you from having to type these in every time. In particular, let's set the _resource group_ and _location_. Type the following command into the Azure CLI, make sure to replace the location with one close to you.
 
     ```azurecli
-    az configure --defaults group=learn-big-data-messaging-rg location=westus2
+    az configure --defaults group=<rgn>[sandbox Resource Group]</rgn> location=westus2
     ```
 
 ## Create an Event Hubs namespace
@@ -32,7 +28,7 @@ Use the following steps to create an Event Hubs namespace using bash shell suppo
     > |Parameter      |Description|
     > |---------------|-----------|
     > |--name (required)      |Enter a 6-50 characters-long unique name for your Event Hubs namespace. The name should contain only letters, numbers, and hyphens. It should start with a letter and end with a letter or number.|
-    > |--resource-group (required) | This will be the **learn-big-data-messaging-rg** resource group supplied from the defaults. |
+    > |--resource-group (required) | This will be the pre-created Azure sandbox resource group supplied from the defaults. |
     > |--l (optional)     |Enter the location of your nearest Azure datacenter, this will use your default.|
     > |--sku (optional) | The pricing tier for the namespace [Basic | Standard], defaults to _Standard_. This determines the connections and consumer thresholds. |
 
@@ -51,7 +47,6 @@ Use the following steps to create an Event Hubs namespace using bash shell suppo
     > [!NOTE]
     > Azure is very picky about the name and the CLI returns **Bad Request** if the name exists or is invalid. Try a different name by changing your environment variable and reissuing the command.
 
-
 1. Fetch the connection string for your Event Hubs namespace using the following command. You'll need this to configure applications to send and receive messages using your Event Hub.
 
     ```azurecli
@@ -61,7 +56,7 @@ Use the following steps to create an Event Hubs namespace using bash shell suppo
     > [!div class="mx-tableFixed"]
     > |Parameter      |Description|
     > |---------------|-----------|
-    > |--resource-group (required)  | This will be the **learn-big-data-messaging-rg** resource group configured from the defaults. |
+    > |--resource-group (required)  | This will be the pre-created Azure sandbox resource group supplied from the defaults. |
     > |--namespace-name (required)  | Enter the name of the namespace you created. |
 
     This command returns a JSON block with the connection string for your Event Hubs namespace that you'll use later to configure your publisher and consumer applications. Save the value of the following keys for later use.
@@ -72,6 +67,8 @@ Use the following steps to create an Event Hubs namespace using bash shell suppo
 ## Create an Event Hub
 
 Use the following steps to create your new Event Hub:
+
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Create a new Event Hub using the `eventhub create` command. It needs the following parameters:
 
