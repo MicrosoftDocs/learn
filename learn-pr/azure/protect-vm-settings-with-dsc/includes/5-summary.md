@@ -1,10 +1,10 @@
-You've learned about the capabilities of PowerShell Desired State Configuration. You've deployed a desired state to a server so that the Windows ISS feature is consistently deployed across a set of nodes.
+You've learned about the capabilities of Azure Automation State Configuration. You've deployed a desired state to a server so that the Windows IIS feature is consistently deployed across a set of nodes.
 
 In particular, you've seen how to:
 
-- Identify the capabilities of Azure Automation State Configuration.
-- Enable and register virtual machines for management by Azure Automation.
-- Automatically update Virtual Machines to maintain a desired state configuration.
+- Identify the capabilities of Azure Automation State Configuration
+- Enable and register virtual machines for management by Azure Automation
+- Automatically update Virtual Machines to maintain a desired state configuration
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
