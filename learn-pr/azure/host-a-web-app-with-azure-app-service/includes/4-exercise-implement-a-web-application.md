@@ -170,7 +170,9 @@ Flask==1.0.2
 
 Save the file and exit the editor. You can save the file and exit the editor through the "..." menu on the top right, or press <kbd>Ctrl+S</kbd> and <kbd>Ctrl+Q</kbd>.
 
-OPTIONAL: If you open a second command shell session, for example by browsing to <https://shell.azure.com/>, you can test your application locally on Azure. To do so, use the following steps:
+### OPTIONAL: Test your web app
+
+If you open a second command shell session, for example by browsing to <https://shell.azure.com/>, you can test your application locally on Azure. To do so, use the following steps:
 
 1. From your primary command shell session, run the following commands to start your web application:
 
