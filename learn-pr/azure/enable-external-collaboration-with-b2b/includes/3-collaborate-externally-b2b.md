@@ -17,7 +17,7 @@ Your collaborating partners don't have to deal with new identities that they nee
 
 Azure AD B2B simplifies the invitation and redemption workflow.
 
-First you'll need to check your external collaboration settings are enabled in Azure. The "manage external collaboration settings" pane in the Azure portal helps you check your settings. The pane also makes it possible to turn off invitations, and select which users are allowed to invite guest users.
+First you'll need to check your external collaboration settings are enabled in Azure. The **Manage external collaboration settings** pane in the Azure portal helps you check your settings. The pane also makes it possible to turn off invitations, and select which users are allowed to invite guest users.
 
 You then proceed to add guest users. You'll use a new guest user form, which lets you input the guest user's email address along with any customized message you want to include in the body of the invitation. After you send the invitation, the user is listed in your directory as a guest type user. The user will receive an invitation in their email like the one below.
 

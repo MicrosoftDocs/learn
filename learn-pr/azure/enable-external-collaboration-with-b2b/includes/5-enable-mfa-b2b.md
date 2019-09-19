@@ -1,7 +1,7 @@
 
-It's important for organizations to secure their applications and resources as much as possible. You'll add an additional layer of security with Azure AD B2B, when you enable multi-factor authentication for guest B2B users.
+It's important for your organization to secure the application as much as possible. You'll add an additional layer of security with Azure AD B2B, when you enable multi-factor authentication for guest B2B users.
 
-Your organization wants to collaborate in a secure way. You can enforce multi-factor authentication at the application level to ensure that everyone who uses the application must pass an additional authentication challenge before they can access the application.
+The clinicians need to be able to collaborate in a secure way. You can enforce multi-factor authentication at the application level to ensure that everyone who uses the application must pass an additional authentication challenge before they can access the application.
 
 Here, you'll learn about multi-factor authentication. And you'll learn how Conditional Access policies can be used to enforce multi-factor authentication for Azure AD B2B guest users.
 
@@ -27,8 +27,8 @@ You can use Conditional Access policies in Azure AD B2B to require users that ar
 
 Conditional Access policies have two key parts:
 
-- conditions – specified criteria that need to be met.
-- actions – steps to take once the conditions have been met.
+- Conditions – specified criteria that need to be met.
+- Actions – steps to take once the conditions have been met.
 
 You can configure enforcement of multi-factor authentication by creating a Conditional Access policy in the Azure portal. But you must be either a Conditional Access administrator, or a security administrator.
 
@@ -44,7 +44,7 @@ When you create your Conditional Access policy, you'll have to specify which use
 
 ![Configuring a Conditional Access policy](../media/5-conditional-access.png)
 
-Once your policy is configured and enabled, you test it. You first test the policy by using the What If tool in the Azure portal.
+Once your policy is configured and enabled, you test it. You first test the policy by using the **What If** tool in the Azure portal.
 
 ![What if test](../media/5-whatif.png)This tool will help you simulate a user signing in and show you which policies would be applied based on your test simulation. If successful, you'll see your policy in the list of policies that will apply based on your simulation.
 
