@@ -1,7 +1,5 @@
 In this exercise, you'll create an Azure Automation account, and upload a PowerShell Desired State Configuration (DSC). You'll also onboard an existing virtual machine into Azure Automation. Then, if it's missing, you'll run code to install and configure IIS on the virtual machine.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create a virtual machine
 
 Start by deploying a new virtual machine from a Windows 2016 Server image.
