@@ -43,7 +43,7 @@ Identify the subtasks of *module title*
 
 ### 1. Introduction
 
-You're an administrator for a retail company that uses Azure virtual machines to host the company's website. Your organization recently had an issue with a virtual machine being redeployed without the Windows IIS feature installed. To reduce the time you spend troubleshooting and maintaining configuration consistency across these virtual machines, you decide to set up Azure Automation State Configuration.
+You're an administrator for a retail company that uses Azure virtual machines to host the company's website. Your organization recently had an issue with a virtual machine being redeployed without the Windows IIS feature installed. To reduce the time you spend troubleshooting and maintaining configuration consistency across these virtual machines, you decide to setup Azure Automation State Configuration.
 
 ### 2. What is Azure Automation State Configuration?
 
@@ -55,20 +55,20 @@ Cover the following points:
 
 - What is Azure Automation State Configuration
   - Democratized highly available engine built on PowerShell Workflow for consistently achieving the desired state.
-  - Allows you to write, manage and compile PowerShell DSC configurations,  import DSC resources and assign configurations to target nodes.  
+  - Allows you to write, manage, and compile PowerShell DSC configurations,  import DSC resources and assign configurations to target nodes.  
 - What is PowerShell DSC
   - Explain declarative nature vs. PowerShell
   - Explain idempotency
   - Push and pull methodologies
-  - Available resources for reuse, e.g. [Windows IIS Server Configuration on GitHub](https://github.com/Microsoft/WindowsIISServerConfig)
+  - Available resources for reuse, for example [Windows IIS Server Configuration on GitHub](https://github.com/Microsoft/WindowsIISServerConfig)
 - What challenges does it address
   - Keeping the 1000's of servers running your services configured correctly is increasingly complicated and prone to error
-  - Many servers and roles (e.g. WebServer) which require consistent deployments with reusable code
+  - Many servers and roles (like WebServer) which require consistent deployments with reusable code
   - Requirement to be able to scale with agility whilst matching it's brothers and sisters
   - Management of the desired state becomes challenging when independent tools or teams can drift the configuration away from the desired state.
   - Achieving a state of continual compliance for security & regulatory obligation
 - Supported platforms & Operating Systems
-  - Azure Cloud, on Prem, AWS or a Hybrid of all.
+  - Azure Cloud, on-premises, AWS or a Hybrid of all.
   - Operating Systems
     - Windows
       - Server 2019
@@ -109,7 +109,7 @@ Cover the following points:
   - Import PowerShell module that sets up the resource.
   - Note: The resource must already be part of the VM, possibly as part of a VM image.
 - Configuration for each host to ensure each time it is deployed it is in the same consistent way for the entire lifecycle of the machine
-- Sample code snippet walkthru highlighting WindowsFeature sections and declarative nature 
+- Sample code snippet walk thru highlighting WindowsFeature sections and declarative nature 
 
 ``` PowerShell
 Configuration MyDscConfiguration {
@@ -134,8 +134,8 @@ MyDscConfiguration
   Node $ComputerName
   ```
 
-  - Discuss Node Block.  These define the nodes (computers or VMs) that you are configuring. In the above configuration, there is one Node block that targets a computer named "TEST-PC1". It can also accept a comma-seperated list of computers in an array-notation ```Node @('localhost', 'Server01')```
-  - Discuss Credential/Secure Assets in Azure for accessing credentials, certificates and encrypted variables. Secure Assets are stored in Azure Automation and are encrypted with a unique key that is generated for each automation account.  Discuss that credential assets can be referenced using Get-AutomationPSCredential or passed in via parameters at compilation
+  - Discuss Node Block.  These define the nodes (computers or VMs) that you are configuring. In the above configuration, there is one Node block that targets a computer named "TEST-PC1". It can also accept a comma-separated list of computers in an array-notation ```Node @('localhost', 'Server01')```
+  - Discuss Credential/Secure Assets in Azure for accessing credentials, certificates, and encrypted variables. Secure Assets are stored in Azure Automation and are encrypted with a unique key that is generated for each automation account.  Discuss that credential assets can be referenced using Get-AutomationPSCredential or passed in via parameters at compilation
 - Optional - compare to how it would look in standard PowerShell to highlight simplicity
 - Deploying with configuration files, ensuring an identical deployment is maintained each time.
 - What is Compilation
@@ -169,7 +169,7 @@ Before the exercise starts, run a setup script that creates the VM but without I
 Create an Azure Automation account
 
 1. Log into the Azure portal
-2. Create an Azure Automation account, entering the name, subscription, resource group, location and default option for 'Create Azure Run as Account'
+2. Create an Azure Automation account, entering the name, subscription, resource group, location, and default option for 'Create Azure Run as Account'
 
 Upload DSC script to the account
 
