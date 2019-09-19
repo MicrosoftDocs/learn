@@ -16,16 +16,16 @@ quiz:
   questions:
   - content: "Given that `int x = 5;` Which of the following boolean expressions is valid and evaluates to **true**?"
     choices:
-    - content: "x < 5"
+    - content: "`x < 5`"
       isCorrect: false
       explanation: "`x` is not less than 5.  It is equal to 5."
-    - content: "x > 5"
+    - content: "`x > 5`"
       isCorrect: false
       explanation: "`x` is not greater than 5.  It is equal to 5."
-    - content: "x = 5"
+    - content: "`x = 5`"
       isCorrect: false
       explanation: "`x = 5` isn't a valid boolean expression because it uses the assignment operator, not the equality operator."
-    - content: "x == 5"
+    - content: "`x == 5`"
       isCorrect: true
       explanation: "Correct!"
   - content: "Which of the choices below is **NOT** a valid operator?"
