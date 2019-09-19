@@ -47,7 +47,7 @@ In the Azure pricing calculator, on the **Products** tab, add the following serv
 
 We can configure the details of each, on the **Estimates** tab, to get a solid estimate of our costs. Use the **West US** region for all resources.
 
-* **Virtual Machines.** This is an ASP.NET application, so we'll need to use a **Windows OS** VM. This application doesn't require a massive amount of computing power, so select the **D2 v3** instance size. We'll need two virtual machines, and they will run all the time (730 hours/month). We're going to use standard SSD storage for these VMs and will require just one disk per VM of size **E10**, for a total of two disks.
+* **Virtual Machines.** This project is an ASP.NET application, so we'll need to use a **Windows OS** VM. This application doesn't require a massive amount of computing power, so select the **D2 v3** instance size. We'll need two virtual machines, and they will run all the time (730 hours/month). We're going to use standard SSD storage for these VMs and will require just one disk per VM of size **E10**, for a total of two disks.
 
 * **SQL Database.** For the database, we're going to provision a **single database type** using the **vCore model**. We want a General Purpose, Gen 5 database with 8 vCores. We'll need 32 GB of storage.
 
@@ -62,9 +62,9 @@ Looking through your estimate, you should see a summary cost for each service yo
 
 We now have an estimate for our solution. We can save this estimate, so we can come back to it later and adjust it if necessary. We can also export it to Excel for further analysis or share the estimate via a URL.
 
-To export the estimate, click `Export` at the bottom of the estimate. This will download your estimate in Excel (**.xlsx**) format and will include all the services you added to your estimate.
+To export the estimate, click `Export` at the bottom of the estimate. Exporting will download your estimate in Excel (**.xlsx**) format and will include all the services you added to your estimate.
 
-We can either share the Excel spreadsheet, or we can click on the `Share` button in the calculator. This gives you a URL that you can use to share this estimate. Anyone with this link will be able to access it, making it easy to share with your team.
+We can either share the Excel spreadsheet, or we can click on the `Share` button in the calculator. Sharing will give you a URL that you can use to share this estimate. Anyone with this link will be able to access it, making it easy to share with your team.
 
 If you are logged in with your Azure account, you can save the estimate, so you can come back to it later. Go ahead and click the **Save** button. If you are signed in, you should see a notification that your estimate was saved. If you aren't signed in, you'll see a message to sign in to save your estimate. After you've saved the estimate, scroll back up to the top of the page and select the **Estimates** tab. You will see your estimate there. You can then select it to pull it back up or delete it if you no longer need it.
 
