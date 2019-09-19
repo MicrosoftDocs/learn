@@ -79,7 +79,7 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
 
 ## Test the app
 
-1. Let's take a look at what DNS shows for the web apps and for our Traffic Manager profile. The following command displays the IP addresses for each of the resources we've created.
+1. Let's take a look at what DNS shows for the web apps and for our Traffic Manager profile. The following commands display the IP addresses for each of the resources we've created.
 
     ```bash
     # Retrieve the address for the West US 2 web app
