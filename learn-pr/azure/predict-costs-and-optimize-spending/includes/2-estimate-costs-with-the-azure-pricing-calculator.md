@@ -17,11 +17,12 @@ The options that you can configure in the pricing calculator vary between produc
 
 ### Try out the Azure pricing calculator
 
-In another browser window or tab, open the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/). On the pricing calculator page, you'll see three tabs:
+In another browser window or tab, open the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/). On the pricing calculator page, you'll see several tabs:
 
 1. **Products.** This tab is where you'll do most of your activity. This tab has all the Azure services listed and is where you'll add or remove services to put together your estimate.
-2. **Estimates.** This tab has all of your previously saved estimates. We'll go through this process in a moment.
-3. **FAQ.** Just as it says, this tab has answers to some frequently asked questions.
+1. **Example Scenarios** This tab has several examples of infrastructure involved in common cloud-based solutions. You can add all the components of the entire scenario to estimate the cost.
+1. **Estimates.** This tab has all of your previously saved estimates. We'll go through this process in a moment.
+1. **FAQ.** Just as it says, this tab has answers to some frequently asked questions.
 
 Let's start with the **Products** tab. You'll see the full listing of service categories down the left-hand side. Clicking on any of the categories will display the services in that category. There's also a search box where you can search through all services for the service you're looking for. Clicking on the service will add that service to your estimate. You can add just one service, or you can add as many as you need, including multiples of the same service (for example, multiple virtual machines).
 
@@ -33,7 +34,7 @@ From our original scenario, let's imagine that this system will run on two Azure
 
 ![An illustration of a sample architecture that will be used as an example to demonstrate estimating costs.](../media/2-estimate-costs-architecture.png)
 
-We can use the Azure pricing calculator to figure out what the solution will cost and export our estimate to share with the team.
+We can use the Azure pricing calculator to figure out what the solution will cost and export our estimate to share with the team. From the **Example Scenarios** tab, you can add all the resources involved with a common solution to the problem you are trying to solve to estimate all the potential costs. You can also add individual products from the **Products** tab to create an estimate for your custom solution.
 
 > [!TIP]
 > Make sure you have a clean calculator with nothing listed in the estimate. If you have anything present in your estimate, click the trash can icon on each item to reset the estimate.
@@ -52,11 +53,10 @@ We can configure the details of each, on the **Estimates** tab, to get a solid e
 
 * **Application Gateway.** For Application Gateway, we're going to use the Web Application Firewall tier, so we have some protection for our environment. And we're going to go with just two instances and medium size, as our load isn't going to be high. We expect to process 1 TB of data per month. We don't expect to process any data in Europe (Zone 1).
 
-Looking through your estimate, you should see a summary cost for each service you've added and a full total for the entire estimate. You can try playing with some of the options - particularly the _location_ you place these resources in - to see the estimate go up and down. 
+Looking through your estimate, you should see a summary cost for each service you've added and a full total for the entire estimate. You can try playing with some of the options - particularly the _location_ you place these resources in - to see the estimate go up and down.
 
 > [!TIP]
 > If you have resources that are not location-sensitive, you can save a lot of money by locating them in less expensive regions. Checking the pricing calculator can help you determine the most cost-effective place to put these services.
-
 
 ## Share and save your estimate
 
