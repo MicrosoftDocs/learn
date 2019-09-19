@@ -39,13 +39,13 @@ Here you create a Linux VM to host your web server.
     az vm create \
       --name support-web-vm01 \
       --image UbuntuLTS \
-      --size Standard_DS2_v2 \
+      --size Standard_DS1_v2 \
       --admin-username azureuser \
       --generate-ssh-keys
     ```
 
     * The VM's name is **support-web-vm01**.
-    * Its size is **Standard_DS2_v2**.
+    * Its size is **Standard_DS1_v2**.
     * The admin username is **azureuser**. In practice, this name can be whatever you like.
     * The `--generate-ssh-keys` argument generates an SSH keypair for you, enabling you to connect to your VM over SSH.
 

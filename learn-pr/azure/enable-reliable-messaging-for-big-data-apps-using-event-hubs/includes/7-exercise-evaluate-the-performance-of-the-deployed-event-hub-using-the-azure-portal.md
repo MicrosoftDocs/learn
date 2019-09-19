@@ -2,7 +2,7 @@ In this unit, you'll use the Azure portal to verify your Event Hub is working an
 
 ## View Event Hub activity
 
-1. Switch back to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Find your Event Hub using the Search bar, and open it as we did in the previous exercise.
 

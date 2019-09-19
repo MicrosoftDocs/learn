@@ -1,5 +1,3 @@
-You might notice that, depending on your local machine capacity, it takes a long time to fit models with parameters of different values or to find a value of `k` that returns the best results. In this case, you should try running the model on a remote cluster.
-
 ## Run and experiment overview
 
 Before you begin, it's imperative to familiarize yourself with two concepts: run and experiment.
