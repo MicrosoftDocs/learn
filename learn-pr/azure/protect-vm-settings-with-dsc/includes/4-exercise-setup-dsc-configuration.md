@@ -60,7 +60,7 @@ Start by deploying a new virtual machine from a Windows 2016 Server image.
 
 1. On the **Automation** page, select **Create**
 
-1. On the **Add Automation Account** page, enter the following property values. The automation account must have a unique name. We suggest using something like **\[*your name or initials*\]account**. Use this name wherever you see *\[your-automation-account-name\]* in this exercise.
+1. On the **Add Automation Account** page, enter the following property values. The automation account must have a unique name. We suggest using something like **\[*your name or initials*\]-automation-account**. Use this name wherever you see *\[your-automation-account-name\]* in this exercise.
 
     | Property  | Value  |
     |---|---|
@@ -68,7 +68,6 @@ Start by deploying a new virtual machine from a Windows 2016 Server image.
     | Subscription | Concierge Subscription  |
     | Resource Group | Use the existing resource group |
     | Location | Use the default location |
-    | Create Azure Run As account | No |
 
 1. Select **Create**. Wait until the automation account has been created before continuing.
 

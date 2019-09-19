@@ -2,9 +2,9 @@ You use PowerShell DSC to specify the desired state for a virtual machine (VM). 
 
 By the end of this unit, you'll:
 
-- Understand node and configuration blocks.
-- Understand credential assets.
-- Write PowerShell DSC code to install Microsoft IIS idempotently.
+- Understand node and configuration blocks
+- Understand credential assets
+- Write PowerShell DSC code to install Microsoft IIS idempotently
 
 ## DSC resources
 
@@ -15,6 +15,8 @@ Windows Server has a set of built-in PowerShell DSC resources. You can see these
 ```powershell
 Get-DscResource | select Name,Module,Properties
 ```
+
+The following table lists some of the built-in PowerShell DSC resources.
 
 | Resource               | Description                                        |
 |------------------------|----------------------------------------------------|
@@ -31,7 +33,7 @@ Get-DscResource | select Name,Module,Properties
 | WindowsOptionalFeature | Adds or removes an optional role/feature on a node |
 | WindowsProcess         | Manages a windows process                          |
 
-For more complex resources, such as Active Directory integration, the DSC Resource Kit is updated monthly. You'll find the link to this resource at the end of the module.
+For more complex resources, like Active Directory integration, the DSC Resource Kit is updated monthly. You'll find the link to this resource at the end of the module.
 
 The resource to be configured must already be part of the VM or part of the VM image. Otherwise, the job will fail to compile and run.
 
@@ -130,7 +132,7 @@ If you have hundreds of VMs on Azure, then using *pull mode* is more appropriate
 
 You can configure an Azure Automation Account to act as a pull service. Upload the configuration to the Automation Account, then register your VMs with this account. 
 
-Import any PowerShell modules the DSC process needs into your automation account. These modules define how to complete the task to achieve the desired state. For example, a DSC script in the the previous unit used the xSmbShare PowerShell module to tell DSC *how* to check the state for a file share. DSC automatically pulls modules from the automation account to the node.
+Before you compile your configuration, import any PowerShell modules the DSC process needs into your automation account. These modules define how to complete the task to achieve the desired state. For example, a DSC script in the the previous unit used the xSmbShare PowerShell module to tell DSC *how* to check the state for a file share. DSC automatically pulls modules from the automation account to the node.
 
 The following diagram shows how you set up Azure Automation State Configuration. We'll go through these steps in the next unit.
 
