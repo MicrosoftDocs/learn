@@ -60,7 +60,7 @@ Let's create an Event Hubs namespace using Bash shell supported by Azure Cloud s
 
 Now lets create your new Event Hub.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Create a new Event Hub using the `eventhub create` command. It needs the following parameters:
 
@@ -108,7 +108,7 @@ Next, let's see what this looks like in the Azure portal.
 
     Your Event Hub displays with a status of **Active**, and default values for **Message Retention** (*7*) and **Partition Count** of (*4*).
 
-    ![Event Hub displayed in the Azure Portal](../media/3-event-hub.png)
+    ![Event Hub displayed in the Azure portal](../media/3-event-hub.png)
 
 ## Summary
 
