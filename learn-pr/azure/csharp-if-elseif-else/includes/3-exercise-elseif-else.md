@@ -1,6 +1,6 @@
 Previously, we used multiple if statements to implement the rules of our game.  However, when we left off in the previous unit, there was opportunity for improvement -- improvement to the expressiveness of the code, and improvement to fix a subtle bug in our code.  We'll use variants of the if statement to improve our code.
 
-## Step 1 - Use the if-else statement instead of two separate if statements
+### Step 1 - Use the if-else statement instead of two separate if statements
 
 Instead of performing two checks to display the "You win!" or "Sorry, you lose" message, we'll use the `else` keyword.  Modify your code to match the following code listing:
 
@@ -39,7 +39,7 @@ else
 
 Here, if `total >= 15` is false, then the code block below the `else` keyword will execute.  Since these two options are related opposites, this is a perfect scenario for the `else` keyword.
 
-## Step 2 - Modify the code to remove the stacking bonus for doubles and triples using nesting.
+### Step 2 - Modify the code to remove the stacking bonus for doubles and triples using nesting.
 
 In the previous unit, we saw how we introduced a subtle logic bug into our application.  Let's fix that using nesting.  
 
@@ -112,7 +112,7 @@ You rolled triples!  +6 bonus to total!
 You win!
 ```
 
-# Step 3 - Use the if-elseif-else statement to give a prize instead of a win-lose message.
+### Step 3 - Use the if-elseif-else statement to give a prize instead of a win-lose message.
 
 To make the game more fun, let's change the game from win-or-lose to award fictitious prizes for each score.  We'll offer four prizes.  The player should only win one prize.
 
