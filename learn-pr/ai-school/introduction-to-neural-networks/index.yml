@@ -32,7 +32,6 @@ units:
 - learn-wwl.neural-networks.layers-edges-and-weights
 - learn-wwl.neural-networks.programming-exercise-introduction-to-neural-networks
 - learn-wwl.neural-networks.activation-functions
-- learn-wwl.neural-networks.types-of-gradient-descent
 - learn-wwl.neural-networks.programming-exercise-advanced-neural-networks
 - learn-wwl.neural-networks.summary
 badge: 

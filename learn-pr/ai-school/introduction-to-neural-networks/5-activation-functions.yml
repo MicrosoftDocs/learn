@@ -30,3 +30,31 @@ quiz:
     - content: "Sigmoid is always the first activation function you should try."
       isCorrect: false
       explanation: "Incorrect. There is no rule that you have to try a specific activation function first."
+    - content: "Back Propagation:"
+    choices:
+    - content: "Helps to undo design errors when setting up a neural network."
+      isCorrect: false
+      explanation: "Incorrect. Back propagation helps neural networks optimize their predictions, but don't undo design errors."
+    - content: "Is a method by which neural networks learn."
+      isCorrect: true
+      explanation: "Correct. Back propagation helps neural networks optimize their weights effectively, increasing accuracy."
+    - content: "Is used to determine how accurate a neural network is."
+      isCorrect: false
+      explanation: "Incorrect. Back propagation helps improve accuracy for the neural network, but it does not determine how accurate the neural network is."
+    - content: "is negative error."
+      isCorrect: false
+      explanation: "Incorrect. Back propagation helps decrease the error, but it's not negative error itself."
+  - content: "Stochastic gradient descent (SGD) is a:"
+    choices:
+    - content: "Variation of gradient descent particularly suited for training large neural networks."
+      isCorrect: true
+      explanation: "Correct. SGD uses a single example per iteration, which helps train large neural networks efficiently."
+    - content: "Type of node."
+      isCorrect: false
+      explanation: "Incorrect. SGD is a method we use for neural networks, not a structural part of the neural network itself."
+    - content: "Variation of labels for neural networks"
+      isCorrect: false
+      explanation: "Incorrect. We use the same labels for neural networks as we do other machine learning algorithms."
+    - content: "An activation function."
+      isCorrect: false
+      explanation: "Incorrect. SGD is a method we use to optimize machine learning models."
