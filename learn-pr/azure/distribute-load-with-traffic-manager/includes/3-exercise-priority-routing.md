@@ -23,7 +23,7 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
 
 ## Deploy the web applications
 
-1. Run this command to deploy a resource manager template. The template creates two servers, one in the East Asia region, and one in the West US 2 region.
+1. Run this command to deploy a Resource Manager template. The template creates two servers, one in the East Asia region, and one in the West US 2 region.
 
     ```azurecli
     az group deployment create \
