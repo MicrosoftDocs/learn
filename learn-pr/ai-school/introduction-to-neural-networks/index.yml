@@ -29,7 +29,6 @@ products:
 - azure
 units: 
 - learn-wwl.neural-networks.introduction
-- learn-wwl.neural-networks.introduction-to-neural-networks
 - learn-wwl.neural-networks.layers-edges-and-weights
 - learn-wwl.neural-networks.programming-exercise-introduction-to-neural-networks
 - learn-wwl.neural-networks.activation-functions
