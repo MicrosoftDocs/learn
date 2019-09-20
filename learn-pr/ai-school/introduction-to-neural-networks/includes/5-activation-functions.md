@@ -27,3 +27,15 @@ If a neural network model is taking a long time to train, you can try SGD instea
 Forward propagation and backpropagation are how neural networks optimize their weights and produce accurate output. Don't worry about the details - here’s a nice diagram showing how they work!
 
 That's it! Next up we'll do a programming exercise in Azure notebooks - advanced neural networks (don't worry, we'll easily walk you through it).
+
+### Learning rate
+
+Using calculus, gradient descent repeatedly changes the variables models use to decrease the error rate. How much the variables change each time is called the __learning rate__.  
+
+Learning rates are particularly important in complex models - if a learning rate is too small, the training will take a long time. If it is too large, it is not likely to ever train to be accurate.
+
+![TBC if we keep in optional content](../media/2.3_LearningRate-02.png) 
+
+In practice it’s a good idea to find an adequate learning rate, rather than spending time trying to find an optimal one. An adequate learning rate is large enough that your model is trained efficiently, but not so small that you cannot find a minima. It is perfectly acceptable to find an appropriate learning rate through trial and error.
+
+![TBC if we keep in optional content](../media/2.3_LearningRate-01.png)
