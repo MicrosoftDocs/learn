@@ -24,4 +24,4 @@ The connections between nodes from one layer to the next are called edges. Edges
 
 When data travels through the edges, it is multiplied by a value that we call a weight. Each edge has a different weight that starts off as a random value. The value of weights can be positive or negative. Weights are then optimized by gradient descent to give accurate outcomes.
 
-Up next we've got an introduction to coding neural networks.
+Up next we've got an exercise where you will code a simple neural network.
