@@ -1,6 +1,6 @@
 Your network architect would like to ensure customers have the best performance. By using the performance routing method in Traffic Manager, you can ensure that users access the location closest to them. Let's configure an instance of Traffic Manager to use performance routing.
 
-## Deploy additional instances and configure Traffic Manager
+## Create a Traffic Manager profile using performance routing
 
 1. Create a new Traffic Manager profile that is set up with performance routing.
 
@@ -13,7 +13,7 @@ Your network architect would like to ensure customers have the best performance.
         --output table
     ```
 
-1. Create four new endpoints that can use the deployed four web apps.
+1. Create two new endpoints that that point to the public IP addresses of the virutal machines.
 
     ```azurecli
     WestId=$(az network public-ip show \
