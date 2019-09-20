@@ -23,7 +23,7 @@ Before we add the Orders function app to the API, let's test the function it hos
 
 ## Add another function app to our existing API
 
-Now, add the Order function to the API Management resource that you created in the preceding exercise.
+In this step, we'll add the Order function to the API Management resource that we created in the preceding exercise. In that exercise, we used the API Management interface from within the function app UI. Here, we'll navigate to our API Management instance through the portal main navigation pane, just to demonstrate that both approaches are available. 
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select your **Azure API Management** service instance.
 1. Under **API Management**, select **APIs** and then under **Add a new API**, select **Function App**.
@@ -54,7 +54,7 @@ Now that we've added OrderDetails to our API let's test it, by using the API Man
 
 1. In the **HTTP response**, notice that the details of an order have been returned in JSON format. Also notice the **HTTP request** was sent to a destination within the **azure-api.net** domain. This location is different to the **azurewebsites.net** domain where the original function app is hosted.
 
-## Test our unified API
+## Test our combined API
 
 We can use the `curl` command-line tool to submit requests to our API. It's ideal because we can use it to include the correct subscription key with our requests. To submit requests, we also need the location of the API, which is hosted in Azure API Management and consists of the Products and Orders functions.
 
