@@ -25,6 +25,8 @@ roles:
 - administrator
 products:
 - azure
+- azure-virtual-machines
+- azure-backup
 units:
 - learn.protect-virtual-machines-with-azure-backup.1-introduction
 - learn.protect-virtual-machines-with-azure-backup.2-azure-backup-features-scenarios
