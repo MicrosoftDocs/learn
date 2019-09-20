@@ -15,11 +15,11 @@ Before allowing access, multi-factor authentication asks the user to successfull
 - Something the user possesses.
 - Something the user is.
 
-![MFA challenges](../media/5-mfa.png)
+    ![MFA challenges](../media/5-mfa.png)
 
 <!--- Original image: https://docs.microsoft.com/en-us/azure/active-directory/authentication/media/concept-mfa-howitworks/methods.png --->
 
-A secret password or a secrete answer to a security question should be something that only the user knows. Users also possess devices, and these devices can be classified as something the user possesses. For example, a user would have a mobile phone and would be able to receive a text message with a secret one-time-use code. You could also make successful authentication contingent on the user themselves, through biometrics collected from the user. This biometric information is classified as "something the user is". For example, you would be able to make authentication rely on the user's fingerprints or voice as an additional step.
+A secret password or a secrete answer to a security question should be something that only the user knows. Users also possess devices, and these devices can be classified as something the user possesses. For example, a user would have a mobile phone and would be able to receive a text message with a secret one-time-use code. You could also make successful authentication contingent on the user themselves, through biometrics collected from the user. This biometric information is classified as something the user is. For example, you would be able to make authentication rely on the user's fingerprints or voice as an additional step.
 
 ## Conditional Access policies
 
@@ -46,7 +46,9 @@ When you create your Conditional Access policy, you'll have to specify which use
 
 Once your policy is configured and enabled, you test it. You first test the policy by using the **What If** tool in the Azure portal.
 
-![What if test](../media/5-whatif.png)This tool will help you simulate a user signing in and show you which policies would be applied based on your test simulation. If successful, you'll see your policy in the list of policies that will apply based on your simulation.
+![What if test](../media/5-whatif.png)
+
+This tool will help you simulate a user signing in and show you which policies would be applied based on your test simulation. If successful, you'll see your policy in the list of policies that will apply based on your simulation.
 
 ![What if result](../media/5-whatif-result.png)
 

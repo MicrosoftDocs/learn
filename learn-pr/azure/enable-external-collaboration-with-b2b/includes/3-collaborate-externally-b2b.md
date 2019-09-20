@@ -15,8 +15,6 @@ Your collaborating partners don't have to deal with new identities that they nee
 
 ## Invitation and redemption workflow
 
-Azure AD B2B simplifies the invitation and redemption workflow.
-
 First you'll need to check your external collaboration settings are enabled in Azure. The **Manage external collaboration settings** pane in the Azure portal helps you check your settings. The pane also makes it possible to turn off invitations, and select which users are allowed to invite guest users.
 
 You then proceed to add guest users. You'll use a new guest user form, which lets you input the guest user's email address along with any customized message you want to include in the body of the invitation. After you send the invitation, the user is listed in your directory as a guest type user. The user will receive an invitation in their email like the one below.
@@ -41,4 +39,4 @@ Azure AD B2B allows you to delegate guest user access to these application owner
 
 Conditional Access policies are a way for you to be able to intelligently grant or deny access based on factors that are not credential-based. Conditional Access policies can add additional layers of security to your applications and resources by enforcing conditions. A user who has otherwise verified credentials can have their access denied if they do not meet conditions. These conditions can be device-based, where you can make it mandatory for users to be on specific device platforms such as Android or Windows before they can be granted access to resources. Conditions can also be location-based, where you block users if they do not meet the required location criteria when they attempt to access your applications.
 
-You enforce policies by going to your application in your Azure Active Directory settings in the Azure portal, and use the Conditional Access policies form to create a new policy. You then select which users should be affected by the policy. And can then decide which conditions you want to put place, such as only allowing users to sign in from an approved location. You can enforce policies at an application level, tenant level, or user level.
+You enforce policies by going to your application in your Azure Active Directory settings in the Azure portal, and use the Conditional Access policies form to create a new policy. You select which users should be affected by the policy. And can decide which conditions you want to put place, such as only allowing users to sign in from an approved location. You can enforce policies at an application level, tenant level, or user level.

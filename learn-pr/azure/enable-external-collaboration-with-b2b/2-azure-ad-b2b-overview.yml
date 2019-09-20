@@ -27,7 +27,7 @@ quiz:
     - content: Guest users and regular member users have the same level of permissions.
       isCorrect: false
       explanation: Guest users have more restrictions than regular member users.
-  - content: How can you protect the application to ensure that it can only be accessed based on certain criteria having been met?
+  - content: How can you add an additional layer of protection to the application?
     choices:
     - content: Use Unconditional Access policies in Azure AD B2B.
       isCorrect: false

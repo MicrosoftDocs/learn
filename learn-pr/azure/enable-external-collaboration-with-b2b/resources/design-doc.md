@@ -54,7 +54,7 @@ Identify the subtasks of *Enable secure external collaboration for your applicat
 
     **Knowledge check**
     - How are guest users different from regular member users?
-    - How can you protect the application to ensure that it can only be accessed based on certain criteria having been met?
+    - How can you add an additional layer of protection to the application?
 
 3. **Collaborate with external users through Azure AD B2B**
 
