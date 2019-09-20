@@ -14,7 +14,8 @@ Here, you'll create a tenant. You'll configure appropriate external collaboratio
 1. After your directory has been created, select your username at the top right of the Azure portal, then select **Switch directory**.
 1. You'll see a list of directories. Select the tenant you've created to switch in to it.
 
-> [!NOTE] You might need to close the Azure portal and open it again to view the newly created tenant.
+> [!NOTE] 
+> You might need to close the Azure portal and open it again to view the newly created tenant.
 
 ## Configure external collaboration settings
 
