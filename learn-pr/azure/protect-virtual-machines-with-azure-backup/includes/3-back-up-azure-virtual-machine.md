@@ -101,4 +101,4 @@ Here are more details about the encryption types:
 - Azure Disk Encryption encrypts your operating system and data disks. It works with BitLocker encryption keys (BEKs), which are safeguarded in a key vault as secrets. It also works with Azure Key Vault encryption keys (KEKs).
   
   During the backup procedure, both BEKs and KEKs are backed up and encrypted. Users who have appropriate permissions can then restore the keys and secrets if needed, and also recover an encrypted virtual machine.
-- Storage Service Encryption encrypts your backups when at rest after it has been copied to the vault. When a restore operation is called for the backed-up data, it's automatically decrypted and ready for use.
+- Storage Service Encryption encrypts your backups when it's at rest after it has been copied to the vault. When a restore operation is called for the backed-up data, it's automatically decrypted and ready for use.
