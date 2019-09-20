@@ -26,7 +26,7 @@ quiz:
       explanation: "Azure Monitor does not collect information related to billing. You can use Azure Cost Management to track this information."
     - content: "Backups of database transaction logs"
       isCorrect: false
-      explanation: "Azure Monitor does perform backups of database transaction logs. You can use Azure Backup for backups of your systems."
+      explanation: "Azure Monitor does not perform backups of database transaction logs. You can use Azure Backup for backups of your systems."
   - content: "What two fundamental types of data does Azure Monitor collect?"
     choices:
     - content: "Metrics and logs"
