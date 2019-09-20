@@ -102,7 +102,7 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
                 --out tsv)
     ```
 
-    The address for the Traffic Manager profile should match the West US 2 virtual machine.
+    The address for the Traffic Manager profile should match the IP address for the **westus2-vm-nic-pip** public IP assigned to the **westus2-vm** virtual machine.
 
 1. Go to the Traffic Manager profile's fully qualified domain name (FQDN). Your request is routed to the endpoint that responds with the highest priority.
 
