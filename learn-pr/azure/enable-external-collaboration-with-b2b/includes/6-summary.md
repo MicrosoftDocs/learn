@@ -9,13 +9,13 @@ With the help of Azure AD B2B, we rapidly created a collaborative environment wi
 
 ## Clean up resources
 
-You should remove the resources you have created in this module.
+Remove the resources you have created in this module:
 
 ### Delete your user
 
 1. [Sign in](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to the Azure portal as a user administrator or global administrator. If you're the person who signed up for an Azure subscription, you're automatically the global administrator.
 1. Select **Azure Active Directory > Users**, select your user, then select **Delete user**.
-1. The deleted user will be in the **Deleted users** section for 30 days. You should delete it further. Select **Deleted users**, select your user, then select  **Delete permanently**.
+1. The deleted user will be in the **Deleted users** section for 30 days. Delete it further. Select **Deleted users**, select your user, then select  **Delete permanently**.
 
     ![Delete user permanently](../media/6-delete-user.png)
 

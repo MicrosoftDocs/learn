@@ -1,4 +1,4 @@
-You need to make it possible for the clinicians to access the application. This will enable them to access health records for patients at your facilities in a secure way. You'll need to invite them as guest users.
+You need to make it possible for the clinicians to access the application so that they can access health records for patients at your facilities in a secure way. You'll need to invite them as guest users.
 
 Here, you'll create a tenant. You'll configure appropriate external collaboration settings for Azure AD B2B. You'll invite guest users, add them to a user group, and give them access to an application.
 
