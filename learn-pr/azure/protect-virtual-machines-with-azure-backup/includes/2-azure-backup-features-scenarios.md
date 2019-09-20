@@ -29,7 +29,7 @@ Traditional backup solutions, such as disk and tape, don't offer the highest lev
 
 - **Data security**: The service uses AES 256-bit encryption for on-premises virtual machines and Storage Service Encryption for Azure virtual machines. Data is secured at rest on the Azure platform, and then decrypted when an authorized person or service accesses it.
 
-- **No-limit retention times**: Long and short-term options are available to keep your data, depending on your data retention policy.
+- **No-limit retention times**: Long-term and short-term options are available to keep your data, depending on your data retention policy.
 
 - **Highly available storage**: Two types of storage help ensure that data is always available:
   - Locally redundant storage (LRS): Replicates data three times within the same region.
