@@ -1,20 +1,20 @@
-Your company is running a combination of Windows and Linux workloads, and you've been asked to prove Azure Backup is a good fit for both kinds of virtual machines. Using a combination of Azure CLI and the Azure portal, you're going protect both kinds of virtual machines with Azure Backup.
+Your company is running a combination of Windows and Linux workloads. You've been asked to prove that Azure Backup is a good fit for both kinds of virtual machines. By using a combination of the Azure CLI and the Azure portal, you'll help protect both kinds of virtual machines with Azure Backup.
 
-Azure Backup can be quickly enabled for virtual machines in Azure. You can enable Azure Backup from the portal, the Azure CLI, or with PowerShell commands.
+Azure Backup can be quickly enabled for virtual machines in Azure. You can enable Azure Backup from the portal, from the Azure CLI, or by using PowerShell commands.
 
-In this exercise, you'll create a virtual machine, setup a backup, and start a backup.
+In this exercise, you'll create a virtual machine, set up a backup, and start a backup.
 
 > [!NOTE]
-> This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to back up virtual machines with Azure Backup.
-> If you want to complete this exercise, but you don't have an Azure subscription, or prefer not to use your own account, you'll need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+> This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to back up virtual machines by using Azure Backup.
+> If you want to complete this exercise, but you don't have an Azure subscription or you prefer not to use your own account, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 ## Create a backup for Azure virtual machines
 
 ### Set up the environment
 
-1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true), and select the Cloud Shell.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true), and open Azure Cloud Shell.
 
-    ![Start the Cloud Shell](../media/4-azure-portal-cloudshell.png)
+    ![Open Cloud Shell](../media/4-azure-portal-cloudshell.png)
 
 1. Create a resource group to contain all the resources for this exercise.
 
@@ -22,7 +22,7 @@ In this exercise, you'll create a virtual machine, setup a backup, and start a b
     RGROUP=$(az group create --name vmbackups --location westus2 --output tsv --query name)
     ```
 
-1. Use the Cloud Shell to create the **NorthwindLive** VNet and **NorthwindInternal1** subnet.
+1. Use Cloud Shell to create the **NorthwindLive** virtual network and the **NorthwindInternal1** subnet.
 
     ```azurecli
     az network vnet create \
@@ -33,7 +33,7 @@ In this exercise, you'll create a virtual machine, setup a backup, and start a b
         --subnet-prefix 10.0.0.0/24
     ```
 
-### Create a Windows Virtual Machine using Azure CLI
+### Create a Windows virtual machine by using the Azure CLI
 
 Create the **NW-APP01** virtual machine by using the following command. Replace `<password>` with a password of your choice.
 
@@ -50,7 +50,7 @@ az vm create \
     --admin-password <password>
 ```
 
-### Create a Linux virtual machine using Azure CLI
+### Create a Linux virtual machine by using the Azure CLI
 
 Create the **NW-RHEL01** virtual machine by using the following command.
 
@@ -66,43 +66,43 @@ az vm create \
     --subnet NorthwindInternal1
 ```
 
-The above can take a few minutes to complete, wait for this command to finish before moving on to the next step.
+The command can take a few minutes to finish. Wait for it to finish before you move on to the next step.
 
-### Enable backup for a virtual machine using the Azure portal
+### Enable backup for a virtual machine by using the Azure portal
 
-1. Select **All Services** and then search for **Virtual Machines**. From the list, select **Virtual Machines**.
+1. Select **All Services**, and then search for and select **Virtual Machines**.
 
-    ![Screenshot showing searching for virtual machines](../media/4-portal-vms.png)
+    ![Screenshot that shows searching for virtual machines](../media/4-portal-vms.png)
 
-1. From the list, select the **NW-RHEL01** virtual machine you created.
+1. From the list, select the **NW-RHEL01** virtual machine that you created.
 
-    ![Screenshot showing selecting a virtual machine](../media/4-portal-select-linux-vm.png)
+    ![Screenshot that shows selecting a virtual machine](../media/4-portal-select-linux-vm.png)
 
 1. In the sidebar, scroll down to **Operations**, select **Backup**, and then use the following information to create a backup:
 
     | | |
     |-|-|
-    | **Recovery Services vault** | Select **Create new**, and type **azure-backup** for the name. |
+    | **Recovery Services vault** | Select **Create new**, and enter **azure-backup** for the name. |
     | **Resource group** | Select the **vmbackups** resource group that you created earlier. |
     | **Choose a backup policy** | Select **(new) DailyPolicy**, which is a daily backup at 12:00 PM UTC, and a retention range of 180 days. |
 
-    ![Screenshot showing the backup options](../media/4-portal-azure-backup.png)
+    ![Screenshot that shows the backup options](../media/4-portal-azure-backup.png)
 
 1. Select **Enable Backup**.
 
-1. After the deployments completes, select **NW-RHEL01** from the list of virtual machines.
+1. After the deployment finishes, select **NW-RHEL01** from the list of virtual machines.
 
-1. The backup settings for the virtual machine can be accessed from the virtual machine menu by scrolling down to **Operations** and selecting **Backup**.
+1. You can access backup settings from the virtual machine menu by scrolling down to **Operations** and selecting **Backup**.
 
 1. To perform the first backup for this server, select **Backup now**.
 
-    ![Screenshot showing backup now](../media/4-portal-backup-now.png)
+    ![Screenshot that shows "Backup now"](../media/4-portal-backup-now.png)
 
 1. On the **Backup Now** page, select **OK**.
 
-### Enable a backup with Azure CLI
+### Enable a backup by using the Azure CLI
 
-1. Using the Cloud Shell, enable a backup for **NW-APP01** virtual machine.
+1. By using Cloud Shell, enable a backup for the **NW-APP01** virtual machine.
 
     ```azurecli
     az backup protection enable-for-vm \
@@ -112,7 +112,7 @@ The above can take a few minutes to complete, wait for this command to finish be
         --policy-name DefaultPolicy
     ```
 
-1. Monitor the progress of the setup using Azure CLI.
+1. Monitor the progress of the setup by using the Azure CLI.
 
     ```azurecli
     az backup job list \
@@ -121,7 +121,7 @@ The above can take a few minutes to complete, wait for this command to finish be
         --output table
     ```
 
-    Keep running the above command until you see that `ConfigureBackup` has completed:
+    Keep running the preceding command until you see that `ConfigureBackup` has finished:
 
     ```output
     Name                                  Operation        Status      Item Name    Start Time UTC                    Duration
@@ -142,13 +142,13 @@ The above can take a few minutes to complete, wait for this command to finish be
         --retain-until 18-10-2030
     ```
 
-    There's no need to wait for the backup to complete as you'll be seeing how to monitor the progress on the portal next.
+    There's no need to wait for the backup to finish, because you'll see how to monitor the progress in the portal next.
 
-## Monitoring backups in the portal
+## Monitor backups in the portal
 
 ### View the status of a backup for a single virtual machine
 
-1. Sign into the [Azure portal](https://portal.azure.com/), and select **All resources** on the left of the portal.
+1. Sign in to the [Azure portal](https://portal.azure.com/), and select **All resources** on the left of the portal.
 
 1. Select the **NW-APP01** virtual machine.
 
@@ -156,15 +156,15 @@ The above can take a few minutes to complete, wait for this command to finish be
 
     ![Screenshot of the Backup page after it has been set up](../media/4-portal-backup-setup.png)
 
-    The **Last backup status** will display the current status of the backup.
+    **Last backup status** displays the current status of the backup.
 
-### View the status of backups in the Recovery Service vault
+### View the status of backups in the Recovery Services vault
 
-1. Sign into the [Azure portal](https://portal.azure.com/), and select **All resources** on the left of the portal.
+1. Sign in to the [Azure portal](https://portal.azure.com/), and select **All resources** on the left of the portal.
 
 1. Select the **azure-backup** Recovery Services vault.
 
-1. Select the **Backup** tab on the **Overview** page to see a summary of all the backup items, storage being used, and the current status of any backup jobs.
+1. Select the **Backup** tab on the **Overview** page to see a summary of all the backup items, the storage being used, and the current status of any backup jobs.
 
     ![Screenshot of the Backup dashboard](../media/4-recovery-services-vault.png)
 
