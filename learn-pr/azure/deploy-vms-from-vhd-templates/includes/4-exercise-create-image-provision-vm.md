@@ -1,6 +1,6 @@
 In the sample scenario, your organization is rolling out a new environment in Azure that uses virtual machines. You've already constructed a virtual machine that contains the software and tools required to support the organization's functions. You need to use this virtual machine to generate a custom image that you can then use to create new virtual machine instances.
 
-In this exercise, you'll start with an existing virtual machine and generalize it. You'll create an image from the generalized virtual machine, and then use this image to create another virtual machine.
+In this exercise, you'll create a virtual machine and generalize it. You'll then create an image from the generalized virtual machine, and then use this image to create another virtual machine.
 
 ## Create a virtual machine
 
