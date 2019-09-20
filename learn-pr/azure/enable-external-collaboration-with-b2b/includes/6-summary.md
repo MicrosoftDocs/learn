@@ -34,7 +34,7 @@ You should remove the resources you have created in this module.
 
     ![Delete application](../media/6-delete-app.png)
 
-## Delete the directory
+### Delete the directory
 
 1. [Sign in](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to the Azure portal as a global administrator.
 1. Select **Azure Active Directory > Delete directory**.
