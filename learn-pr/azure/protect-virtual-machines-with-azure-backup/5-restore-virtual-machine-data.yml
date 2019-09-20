@@ -23,7 +23,7 @@ quiz:
       explanation: Selecting this option doesn't allow the disk of an existing VM to be replaced.
     - content: Restore disk
       isCorrect: false
-      explanation: Selecting this option doesn't allow a disk on an existing VM to be replaced. But it does allow a disk to be restored and then be used to create a new VM.
+      explanation: Selecting this option doesn't allow a disk on an existing VM to be replaced. But it does allow a disk to be restored and then used to create a new VM.
     - content: Replace existing
       isCorrect: true
       explanation: Selecting this option allows for a disk to be restored and then used to replace a disk on an existing VM.
