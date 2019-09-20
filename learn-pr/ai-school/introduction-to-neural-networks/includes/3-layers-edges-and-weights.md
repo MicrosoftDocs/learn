@@ -1,27 +1,31 @@
-Layers, edges, and weights are the structural components of neural networks.
-
-## Layers
-
-![Diagram representing the network description. There are three layers of circles (nodes) - a left-hand layer with three nodes labeled 'input layer', a center layer with four nodes each labeled 'hidden layer' and an output layer with three nodes labeled 'output layer'. There are lines linking each node with each node on the adjacent layers, and these are labeled 'edge'.](../media/5.2_NetworkDescription.png)
-
-Layers are the key component of neural networks. We choose how many nodes each layer contains and how many layers there are in order to maximize the accuracy of our output.
-
-We can have large layers
-
-![Diagram representing large layers. There are three layers of circles (nodes). There is a left-hand layer with six nodes labeled 'input layer', with a red line between the bottom two nodes to indicate there could be more nodes there. There is also a center layer with five nodes each labeled 'hidden layer', with a similar red line to indicate there could be more nodes. There is finally an output layer with three nodes labeled 'output layer', again with a red line. There are lines linking each node with each node on the adjacent layers.](../media/5.2_Large_Layers.png)
-
-and lots of layers
-
-![Diagram representing lots of layers. There are many layers of circles (nodes). There is a left-hand layer with 12 nodes indicating the input layer, with a 12 other layers of white nodes, with arrows in between several layers to indicate more layers could reside there. There are lines linking each node with each node on the adjacent layers.](../media/5.2_Many_Layers__1_.png)
-
-With each layer, the neural network transforms the data we input.
-
-### Edges
-
-The connections between nodes from one layer to the next are called edges. Edges transform the data when it travels through them by simple multiplication.
-
 ### Weights
 
 When data travels through the edges, it is multiplied by a value that we call a weight. Each edge has a different weight that starts off as a random value. The value of weights can be positive or negative. Weights are then optimized by gradient descent to give accurate outcomes.
+
+### Cost function refresher
+
+* __Cost__ is our error metric, which we want to get as low as possible.
+* We determine our cost with the __cost function__.
+* Different AI models have different cost functions.
+
+### Gradient descent
+
+Gradient descent optimizes the AI models to minimize their cost. It is the most widely used optimization algorithm in AI and is used in some form in almost all model training set-ups. There are several variations for different applications, but they all use the same core concepts. 
+
+Gradient descent alters model predictions to decrease the error by using calculus, but you don’t have to dive into the mathematics to do AI.
+
+![3-dimensional plot showing gradient descent. The Y-axis represents Cost, the X-axis represents Variable 1, and the Z-axis represents variable 2. There are two peaks for cost at different sides of the graph, which decrease variably into two minima. One minimum is labeled as a local minimum, and the other is labeled as the minimum. As the decrease in Cost is variable, there is no way to get from the local minimum to the actual minimum without increasing cost. On one of the peaks, there is a starting point shown in white, with small linear jumps represented by a black line, as the variables 1 and 2 change, showing the decrease in cost at different values. However, the starting points of the variables dictate if the gradient descent will reach the local minimum (and thus not the minimum possible cost), or the actual minimum. This is why gradient descent runs multiple times and starts with random values to find the actual minimum.](../media/Artboard_1.png)
+
+### Learning rate
+
+Using calculus, gradient descent repeatedly changes the variables models use to decrease the error rate. How much the variables change each time is called the __learning rate__.  
+
+Learning rates are particularly important in complex models - if a learning rate is too small, the training will take a long time. If it is too large, it is not likely to ever train to be accurate.
+
+![TBC if we keep in optional content](../media/2.3_LearningRate-02.png) 
+
+In practice it’s a good idea to find an adequate learning rate, rather than spending time trying to find an optimal one. An adequate learning rate is large enough that your model is trained efficiently, but not so small that you cannot find a minima. It is perfectly acceptable to find an appropriate learning rate through trial and error.
+
+![TBC if we keep in optional content](../media/2.3_LearningRate-01.png)
 
 Up next we've got an exercise where you will code a simple neural network.
