@@ -21,7 +21,7 @@ Before we add the Orders function app to the API, let's test the function it hos
 
 1. At the top of the page, select **</> Get function URL**. Notice that the URL is the name of the function within the **azurewebsites.net** domain. Make a note of this URL for later comparison.
 
-## Append a Function App to an existing API
+## Add another function app to our existing API
 
 Now, add the Order function to the API Management resource that you created in the preceding exercise.
 

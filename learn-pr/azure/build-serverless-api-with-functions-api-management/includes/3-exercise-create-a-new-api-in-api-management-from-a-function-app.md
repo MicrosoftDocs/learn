@@ -37,6 +37,7 @@ Now, let's test the ProductDetails function, to see how it behaves before we add
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account with which you activated the sandbox.
 1. Select **All Resources**.
+1. From the list of resources, select the App Service with the name beginning with **ProductFunction**. This action loads the Function Apps UI for this app. 
 1. Under **Functions**, select **ProductDetails**, and then select **Test**, as highlighted in the following screenshot: 
 
     ![Test the ProductDetails function](../media/3-test-product-details-function.png)
@@ -53,46 +54,31 @@ Now, let's test the ProductDetails function, to see how it behaves before we add
 > [!NOTE]
 > You can use this URL to test the function in your browser. Append the query string `&id=1` to request a product.
 
-## Create a new API Management instance
+## Create an OpenAPI definition for the function app using Azure API Management
 
-Now that we have a working function. To expose it as an API, we'll create an API Management instance:
+REST APIs are often described using an OpenAPI definition. This definition contains information about what operations are available in an API and how the request and response data for the API should be structured.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **Create a resource > Integration > API management**, and then select **Create**.
-1. In the API Management service window, enter these settings and then select **Create**:
+Here, we'll create an OpenAPI definition for our function app using Azure API Management so that the function can be called from other apps and services.
+
+1. Select the function app, then in **Platform features**, choose **API Management** and select **Create new** under **API Management**.
+1. Use the API Management settings as specified in the following table.
 
     | Setting | Value |
     | --- | --- |
     | Name | Use a unique name within the **azure-api.net** domain |
     | Subscription | Concierge |
     | Resource group | <rgn>[sandbox resource group name]</rgn> |
-    | Location | Choose either the **West Europe** or **Southeast Asia** region. **NOTE:** These locations are the only two that are supported by both the sandbox and the consumption tier | 
+    | Location | Choose one of the following locations that supports the Consumption Plan: **West US**, **North Central US**, **West Europe**, **North Europe**, **Southeast Asia**, **Australia East**  | 
     | Organization name | OnlineStore |
     | Administrator email | Use the default value |
     | Pricing tier | Consumption |
     | | | 
 
-    ![Screenshot of the Azure portal showing the Create a new API management instance.](../media/3-create-api-mgmt-instance.png)
+1. Choose **Create** to create the API Management instance, which may take several minutes. 
+1. Select **Link API**. The **Import Azure Functions** opens with the **ProductDetails** function highlighted. Choose **Select** to continue. 
+1. In the **Create from Function App** page, change **API URL suffix** to **products** and select **Create**. The API is now created for the **ProductDetails** function. 
 
-1. Wait for the deployment to complete. It may take several minutes.
-
-## Import an Azure Function App as a new API 
-
-Now,we can add the **ProductDetails** function to the API Management instance:
-
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select your **Azure API Management** service instance.
-1. Under **API Management**, select **APIs** and then, under **Add a new API**, select **Function App**.
-
-    ![Adding an Azure Function App](../media/3-import-azure-function-app.png)
-
-1. To select your function, select **Browse** and then select the **Function App** section.
-
-    ![Selecting an existing Function App](../media/3-import-azure-function-app-03.png)
-
-1. In the list of Function Apps, select the **ProductFunction** and then choose **Select**.
-1. Ensure that **ProductDetails** is checked, and then choose **Select**.
-1. In the **API URL suffix** textbox, type **products**, and then select **Create**. 
-
-    ![Completing the import of a Function App](../media/3-complete-import-of-function.png)
+Note that we were able to define our API all from within the function app portal experience. 
 
 ## Test the OnlineStore products endpoint
 
