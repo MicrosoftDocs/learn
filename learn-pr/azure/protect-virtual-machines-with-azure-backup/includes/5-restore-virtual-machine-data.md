@@ -39,7 +39,7 @@ Azure Backup supports the backup and restore of machines encrypted through Azure
 
 Certain limitations apply when you restore encrypted virtual machines:
 
-- Virtual machines can only be backed up and restored to the same subscription and region that they're a member of. The subscription and region have to be the same as the Recovery Services vault that you use.
+- Virtual machines can be backed up and restored only to the same subscription and region that they're a member of. The subscription and region have to be the same as the Recovery Services vault that you use.
 - Azure Backup supports only standalone key encryption. Any key that's part of a certificate isn't supported currently.
 - File-level or folder-level restores are not supported with encrypted virtual machines. To restore to that level of granularity, the whole virtual machine has to be restored. You can then manually copy the file or folders.
 - The **Replace existing VM** option isn't available for encrypted virtual machines.
