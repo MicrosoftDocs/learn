@@ -73,10 +73,10 @@ Over time if you realize you need additional compute power to keep up with deman
 
     | Setting      | Value |
     | ------------ | ----- |
-    | **Subscription** | **Concierge Subscription** |
-    | **Resource group** | **<rgn>[sandbox resource group name]</rgn>** |
-    | **Database name** | **Logistics** |
-    | **Want to use SQL elastic pool?** | **No** |
+    | **Subscription** | *Concierge Subscription* |
+    | **Resource group** | *<rgn>[sandbox resource group name]</rgn>* |
+    | **Database name** | *Logistics* |
+    | **Want to use SQL elastic pool?** | *No* |
 
 1. Under **Server**, click **Create new**, fill out the form, then click **OK**. Here's more information on how to fill out the form:
 
@@ -94,9 +94,9 @@ Over time if you realize you need additional compute power to keep up with deman
 
     | Setting      | Value |
     | ------------ | ----- |
-    | **Data source** | **None** |
-    | **Database Collation** | **SQL_Latin1_General_CP1_CI_AS** |
-    | **Advanced Data Security** | **Not now** |
+    | **Data source** | *None* |
+    | **Database Collation** | *SQL_Latin1_General_CP1_CI_AS* |
+    | **Advanced Data Security** | *Not now* |
 
 1. Click **Review + Create** to create your Azure SQL database.
 
