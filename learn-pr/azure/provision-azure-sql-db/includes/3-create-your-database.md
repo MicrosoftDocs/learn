@@ -90,6 +90,14 @@ Over time if you realize you need additional compute power to keep up with deman
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
+1. Under **Compute + storage**, click **configure database**, then use the following steps:
+
+    1. To configure your database to use DTUs, click **Looking for basic, standard, premium?**
+    
+    1. Depending on your application needs, choose **Basic**, **Standard**, or **Premium**.
+    
+    1. Click **Apply**.
+
 1. Click **Next : Additional settings**, then use these values to fill out the form.
 
     | Setting      | Value |
