@@ -130,17 +130,25 @@ The portal will display the deployment page, where you can view the status of yo
 1. To preview your new web app's default content, select its **URL** at the top right. The placeholder page that loads indicates that your web app is up and running and ready to receive deployment of your app's code.
 
 ::: zone pivot="csharp"
+
     ![Screenshot showing the newly created App Service in a browser.](../media/3-web-app-online-generic.png)
+
 ::: zone-end
 
 ::: zone pivot="java"
+
     ![Screenshot showing the newly created App Service in a browser.](../media/3-web-app-online-java.png)
+
 ::: zone-end
 
 ::: zone pivot="node"
+
     ![Screenshot showing the newly created App Service in a browser.](../media/3-web-app-online-node.png)
+
 ::: zone-end
 
 ::: zone pivot="python"
+
     ![Screenshot showing the newly created App Service in a browser.](../media/3-web-app-online-python.png)
+
 ::: zone-end

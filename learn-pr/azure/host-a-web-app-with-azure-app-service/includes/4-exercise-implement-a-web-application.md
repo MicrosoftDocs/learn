@@ -128,7 +128,7 @@ When the command finishes running, if you change to the `target` directory and r
 
 To create a starter web application, we'll use Flask, which is a commonly-used web application framework.
 
-Run these commands in the Cloud Shell to create the directory for your new web app:
+Run these commands in the Cloud Shell to create the directory and files for your new web app:
 
 ```bash
 mkdir ~/BestBikeApp
@@ -162,7 +162,7 @@ Now, open the web-based Visual Studio Code editor to edit the *requirements.txt*
 code requirements.txt
 ```
 
-Enter the following text to define the list of requirements for your web app:
+Enter the following text to define the list of requirements for your web app; this entry will install Flask and all of its dependencies:
 
 ```text
 Flask==1.0.2
