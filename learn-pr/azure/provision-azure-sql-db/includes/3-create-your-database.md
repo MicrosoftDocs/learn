@@ -74,7 +74,7 @@ Over time if you realize you need additional compute power to keep up with deman
     | Setting      | Value |
     | ------------ | ----- |
     | **Database name** | **Logistics** |
-    | **Subscription** | Your subscription |
+    | **Subscription** | Concierege Subscription |
     | **Resource group** |  Use the existing group <rgn>[sandbox resource group name]</rgn> |
     | **Want to use SQL elastic pool?** | **No** |
     | **data source** | **None** |
