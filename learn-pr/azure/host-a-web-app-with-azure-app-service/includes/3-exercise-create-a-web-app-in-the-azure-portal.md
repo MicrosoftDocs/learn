@@ -131,24 +131,24 @@ The portal will display the deployment page, where you can view the status of yo
 
 ::: zone pivot="csharp"
 
-    ![Screenshot showing the newly created App Service in a browser.](../media/3-web-app-online-generic.png)
+![Screenshot showing the newly created App Service in a browser.](../media/3-web-app-online-generic.png)
 
 ::: zone-end
 
 ::: zone pivot="java"
 
-    ![Screenshot showing the newly created App Service in a browser.](../media/3-web-app-online-java.png)
+![Screenshot showing the newly created App Service in a browser.](../media/3-web-app-online-java.png)
 
 ::: zone-end
 
 ::: zone pivot="node"
 
-    ![Screenshot showing the newly created App Service in a browser.](../media/3-web-app-online-node.png)
+![Screenshot showing the newly created App Service in a browser.](../media/3-web-app-online-node.png)
 
 ::: zone-end
 
 ::: zone pivot="python"
 
-    ![Screenshot showing the newly created App Service in a browser.](../media/3-web-app-online-python.png)
+![Screenshot showing the newly created App Service in a browser.](../media/3-web-app-online-python.png)
 
 ::: zone-end

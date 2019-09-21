@@ -180,7 +180,8 @@ If you open a second command shell session, for example by browsing to <https://
     python3 -m venv venv
     source venv/bin/activate
     pip install -r requirements.txt
-    FLASK_APP=application.py flask run
+    export FLASK_APP=application.py
+    flask run
     ```
 
 1. From your second command shell session, run the following command to browse to your web application:
