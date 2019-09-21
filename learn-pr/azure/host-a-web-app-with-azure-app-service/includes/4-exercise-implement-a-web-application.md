@@ -143,7 +143,7 @@ Open the web-based Visual Studio Code editor to edit the *application.py* for yo
 code application.py
 ```
 
-Enter the following Python code:
+Enter the following Python code to create the main web app functionality:
 
 ```python
 from flask import Flask
@@ -162,7 +162,7 @@ Now, open the web-based Visual Studio Code editor to edit the *requirements.txt*
 code requirements.txt
 ```
 
-Enter the following text:
+Enter the following text to define the list of requirements for your web app:
 
 ```text
 Flask==1.0.2
