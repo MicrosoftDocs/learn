@@ -1,8 +1,8 @@
 In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you built a basic release pipeline. That pipeline has a _Build_ stage that builds the artifact and a _Deploy_ stage that installs the web app on Azure App Service. Mara and Andy built this pipeline as a proof of concept that they showed to the rest of the team.
 
-Of course, an actual release pipeline has more stages, each with its own set of tasks, that take an artifact all the way to production.
+Of course, an actual release pipeline has more stages, each with its own set of tasks, that can, potentially, take an artifact all the way to production.
 
-In this module, you'll join the Tailspin web team as they design a release management workflow, which lays out the stages for a release pipeline. _Release management_ is the process of moving a build artifact through various pipeline stages, such as _Test_ and _Staging_, all the way out to a production environment that's available to your users.Next you'll implement that workflow by creating an actual release pipeline. 
+In this module, you'll join the Tailspin web team as they design a realistic release pipeline that contains multiple stages. You'll also learn different ways to control how an artifact gets promoted from one stage to another. 
 
 A good release management workflow enables you to release more frequently and more consistently. In practice, you'll want to define a process that maps to your team's needs. Here, you'll create a basic workflow. That means first designing the environments, which define the runtimes of each stage in the pipeline.  You'll then deploy the _Space Game_ web application to these stages: _Dev_, _Test_ and _Staging_. Each stage runs on App Service.
 
@@ -12,7 +12,7 @@ In this module, you will:
 
 - Identify the stages, or major divisions of the pipeline, that you need.
 - Understand when to use conditions, triggers, and approvals to promote changes from one stage to the next.
-- Promote a build through _Dev_, _Test_, and _Staging_.
+- Promote a build through these stages: _Build_ _Dev_, _Test_, and _Staging_.
 
 ## Prerequisites
 

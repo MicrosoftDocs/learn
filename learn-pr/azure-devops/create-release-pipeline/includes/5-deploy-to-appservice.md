@@ -5,7 +5,7 @@ Andy and Mara have taken on the job of creating the pipeline. Let's follow them 
 > [!IMPORTANT]
 > Remember that you need your own Azure subscription to complete the exercises in this module.
 
-Here, you create a multi-stage pipeline that includes a build stage and a deployment stage. To do this, you:
+Here, you create a multi-stage pipeline that includes a stage named _Build_ and a stage named _Deploy_. To do this, you:
 
 > [!div class="checklist"]
 > * Create an App Service instance to host the website.
@@ -95,7 +95,7 @@ Here, you create a service connection that enables Azure Pipelines to access you
 
     Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps is unable to connect, you'll have the chance to sign in a second time.
 
-## Add the build stage to the pipeline
+## Add the _Build_ stage to the pipeline
 
 Here you convert your existing build pipeline to use the multi-stage feature of Azure Pipelines. You update your build configuration to define one stage that performs the build and then you watch the pipeline run.
 
@@ -121,11 +121,13 @@ steps:
 ...
 ```
 
-A _multi-stage pipeline_ enables you to define distinct deployment phases that your change passes through as it makes its way down the pipeline. Each stage defines the agent, variable, and steps required to carry out that phase of the deployment. In this module, you define one stage to perform the build and a second stage to deploy the web application to App Service.
+A _multi-stage pipeline_ enables you to define distinct phases that your change passes through as it's promoted through the pipeline. Each stage defines the resource, variable, and steps required to carry out that phase of the pipeline. In this module, you define one stage to perform the build and a second stage to deploy the web application to App Service.
 
-To convert your existing build configuration to a multi-stage pipeline, you add a `stages` section to your configuration. You then add one or more `stage` sections to define each phase of your deployment. Stages break down into jobs, which are a series of steps that run sequentially as a unit.
+**NOTE--I changed "agent" to "resource"**
 
-Before we add the deployment stage to the pipeline, let's first convert the existing build configuration to a multi-stage pipeline.
+To convert your existing build configuration to a multi-stage pipeline, you add a `stages` section to your configuration. You then add one or more `stage` sections to define each phase of your pipeline. Stages break down into jobs, which are a series of steps that run sequentially as a unit.
+
+Before we add the _Deploy_ stage to the pipeline, let's first convert the existing build configuration to a multi-stage pipeline.
 
 1. From your project in Visual Studio Code, open *azure-pipelines.yml* file and replace its contents with this.
 
@@ -156,7 +158,7 @@ Here you add a variable to your pipeline that stores the name of your web app in
 
 When you set up App Service earlier, you assigned it a name, such as **tailspin-space-game-web-1234**.
 
-The deployment stage you'll define shortly uses this name to identify which App Service instance to deploy to.
+The _Deploy_ stage you'll define shortly uses this name to identify which App Service instance to deploy to.
 
 Although you could hard code this name in your pipeline configuration, defining it as a variable makes your configuration more reusable.
 
@@ -175,7 +177,7 @@ To add the variable:
 
 ## Add the deployment stage to the pipeline
 
-Here, you extend your pipeline by adding a deployment stage that deploys the _Space Game_ web application to App Service.
+Here, you extend your pipeline by adding a deployment stage that uses App Service to deploy the _Space Game_ web application.
 
 To accomplish this, you define a second stage and use the `download` and `AzureWebApp@1` tasks to download the build artifact from the pipeline and perform the deployment.
 
