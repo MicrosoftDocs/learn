@@ -12,11 +12,8 @@ In this exercise, you will add an Azure Functions app to Azure API Management. L
 
 1. To clone the functions project, in the Cloud Shell on the right, execute this command:
 
-    <!-- TODO: the URL in this git clone command must be updated when the correct location is known -->
-    <!-- TODO: For testing purposes, I expose the code in a repo on my account. We need to update when the real repo is available -->
-
     ```bash
-    git clone https://github.com/AndrewJByrne/bbab38fa-6d69-461a-99be-1b60d8d4b676.git OnlineStoreFuncs
+    git clone https://github.com/MicrosoftDocs/mslearn-apim-and-functions.git OnlineStoreFuncs
     ```
 
 1. Run the following commands in the Cloud Shell to set up the necessary Azure resources we need for this exercise. 
