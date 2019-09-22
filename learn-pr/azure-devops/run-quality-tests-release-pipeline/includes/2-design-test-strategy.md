@@ -1,3 +1,5 @@
+Talk about how at this point you have the shape of the pipeline (screenshot?), but more can be filled in.
+
 TODO: This is a paste from the previous module. Refactor it to talk about release gates only.
 
 ### What are release approvals and release gates?

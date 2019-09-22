@@ -1,56 +1,92 @@
-Amita is waiting for Andy to show up. He's going to help her write a UI test that will go into the pipeline. She scribbles in her notebook, crosses something out, mutters, and then starts tearing out the page. Andy walks in. "Hi," he says. "You don't look happy."
+In this section, you follow along with Amita and Andy as they talk about how to incorporate Selenium UI tests intp their build and release pipeline. They begin by walking through the tests that Amita normally performs manually. Then they map Amita's manual steps to automated test cases.
 
-"I'm not. I'm worried. I'm trying to figure out how to write an automated test but I don't know where to start. I don't code. I feel like I'm obsolete."
+## Run UI tests manually
 
-"Wow," Andy says. "I really don't think it's that bad. For one thing, we'll always need someone who can keep the user's perspective in mind. There's no way to automate that. For another, no one starts out knowing how to do this. We were all beginners. Hopefully, I can make the learning process a bit easier.
+Amita is waiting for Andy to show up. Andy is going to help Amita write a UI test that will go into the pipeline. Amita scribbles in her notebook, crosses something out, mutters, and then starts tearing out the page. Andy walks in. "Hi," he says. "You don't look happy."
 
-"I thought the best way to start was to automate something you already do all the time. Pick a UI test you understand, let's walk through it and write down the steps, and then we'll figure out how to automate. Where do you want to start?"
+**Amita:** I'm not happy. I'm trying to figure out how to write an automated test but I don't know where to start. I don't code. I feel like I'm obsolete.
 
-Amita takes a deep breath. "Let's automate the modal test. When I click on certain things, like the **Download game** button for example, the main window should be disabled but visible. The modal window should be in front of it. Users have to interact with the modal window before they can return to the main window. 
+**Andy:** Wow, I really don't think it's that bad. For one thing, we'll always need someone who can keep the user's perspective in mind. There's no way to automate that. For another, no one starts out knowing how to do this. We were all beginners. Hopefully, I can make the learning process a bit easier.
 
-"You're the boss," Andy says. You run the test and I'll write down the procedure.
+I think the best way to start is to automate something you already do all the time. Pick a UI test you understand. Then let's walk through it and write down the steps. Then we'll figure out how to automate those steps. Where do you want to start?
 
-"Until we had the pipeline," Amita says, I used to download the build and install it on my server but now I can use the CD pipeline test environment." 
+Amita takes a deep breath.
 
-From a Windows machine, Mara brings up the Chrome browser. She goes to the web app and verifies that the home page comes up. "OK," Andy says. What do you check next?"
+**Amita:** Let's automate the modal window tests. When I click on certain things, like the **Download game** button, for example, I want to verify that the correct modal window appears. Then, when I click away from the modal window, I want to verify that the modal window disappears and that the main window is again active.
 
-"I check that when I click the **Download game** button, a modal window appears with a link to the game."
+**Andy:** That sounds like a great place to start. You run the test and I'll write down the procedure.
 
-"OK, before you do that, and before you click on anything like a button or modal window, there's something I want you to do, which is to copy down the XPath path. XPath is a query language that lets us retrieve information about the HTML element. The procedure is simple.
+Mara opens her Windows laptop and launches Google Chrome. She goes to the web app and verifies that the home page comes up.
 
--**NOTE-I guess some procedure (not mine, which is probably wrong) on how to do this should go somewhere?/**
+> [!TIP]
+> For reference, Microsoft hosts a version of the [Space Game](http://tailspin-spacegame-web.azurewebsites.net?azure-portal=true) website. Go there if you want to follow along with Amita's manual tests.
 
-1. Right click on the element, in this case the **Download game** button.
-1. Select **Inspect** from the menu that appears.
-1. In the text window, that opens up, you'll see some text that's highlighted.
-1. Right click in that text.
-1. In the menu, point to **Copy** and then select **Copy XPath**.
-1. Paste the text into a doc somewhere. We'll use it later.
+**Andy:** OK. What do you check next?
 
- ******************************************************************************
+**Amita:** I check that when I click the **Download game** button, the correct modal window appears.
 
-"Got it," Mara says. 
+Amita clicks the **Download game** button and sees the modal window appear.
 
-Here are the steps that comprise her modal test.
+![](../media/4-website-download-game-modal.png)
 
-1. From a Windows machine, she brings up Chrome.
-1. She goes to the web app and verifies that the home page comes up.
-1. She verifies that the **Download game** button brings up the modal window containing the link to the game.
-1. She verifies that clicking each of the four screenshot thumbnails brings up a full version of the screenshot in a modal window.
-1. She verifies that clicking top player on the leaderboard brings up a modal window showing that player's profile.
-1. She repeats the process on the Windows machine using Firefox and IE web browsers.
+**Andy:** Great. What modal windows do you check next?
 
-"Okay," Andy says. "I can see why this test takes so long and can be so frustrating. You're going to love automating it, I promise. Here's what we'll do."
+**Amita:** Next, I check the game screens. There are four of them. After that, I click the top player on the leaderboard and verify that the player's profile is shown.
 
-1. Create an NUnit project that includes Selenium, along with the app sources. 
-1. Add code that creates a web browser for Chrome, Firefox and IE.
+Amita clicks on each of the four thumbnail images to show the example game screens.
+
+![](../media/4-website-game-screens.png)
+
+Next, Amita clicks on the top player on the leaderboard and sees the player's profile.
+
+![](../media/4-website-leaderboard.png)
+
+**Amita:** That covers the modal window tests. I run these tests on Windows because that's how most players visit our site. I run the tests on Chrome, and when I have time I run them again on Firefox and Edge.
+
+If I had the time, I would run everything again on macOS and Linux, just to ensure we're compatible with any operating system our users visit the site from. But there are many other tests that I need to run.
+
+## Get the XPath expressions for the HTML elements
+
+Here, you follow along with Amita and Andy as they collect the XPath expressions for the buttons that Amita clicks and the resulting modal windows. XPath is a query language that lets you retrieve information about an XML element, and also works with HTML.
+
+**Andy:** OK. I think this is enough to get started with. Having just a few tests running in the pipeline will give you a place to add more. I can see why these tests take so long and can be so frustrating. You're going to love automating it, I promise. Here's what we'll do.
+
+We'll get the XPath expression for each button you click as well as the modal window that appears. The automated tests that we write can use these expressions to know which buttons to click and which modal windows to expect.
+
+Let's start by getting the XPath expression for the **Download game** button.
+
+1. In Google Chrome, go to the _Space Game_ home page.
+1. Right click the **Download game** button, then select **Inspect**.
+
+    You see the developer tools window open. The HTML code for the **Download game** button is highlighted.
+
+    ![](../media/4-website-inspect-button.png)
+
+1. Right click on the highlighted text, point to **Copy** and then select **Copy XPath**.
+1. Paste the text into a document somewhere. We'll use it later.
+
+    The XPath expression for the **Download game** button is `/html/body/div/div/section[2]/div[2]/a`.
+
+1. Click the **Download game** button, then repeat steps 2-4 to get the XPath expression for the modal window that appears.
+1. Repeat the process for the four game screens and the top player on the leaderboard.
+
+    > [!NOTE]
+    > You don't need to actually repeat the process. We'll provide all of the XPath expressions you need in the next section, when you run the automated tests.
+
+## Plan the automated tests
+
+**Amita:** OK. We have the XPath expression for each button I click and the resulting modal window. What's next?
+
+**Andy:** I think we're ready to write our tests. Here's what we'll do:
+
+1. Create an NUnit project that includes Selenium. The project will exist along with the source code for the app.
 1. Write a test case that uses automation to click the specified link and that verifies that the expected modal window appears.
 1. Use the XPath data we saved to specify the parameters to the test case method. This creates a series of tests.
-1. Configure the tests to run on Chrome, Firefox and IE.
+1. Configure the tests to run on Chrome, Firefox and Edge. This creates a matrix of tests.
 1. Run the tests and watch each web browser come up automatically.
 1. Watch as Selenium automatically runs through the series of tests for each browser.
 1. See in the console window that all the tests pass.
-1. Be excited at how quickly the tests ran.
 
-****************NOTE--move to next page?*******************************
-Amita is impressed and feels a bit excited about writing code to control her web browser. Perhaps Mara shows her some resources (tutorials, reference documentation) so Amita can continue writing tests. Amita can then write and verify additional tests and submit them to GitHub and have them run through the pipeline just like the developers.
+**Amita:** I'll be excited to see how quickly the tests run. Can we try this now?
+
+**Andy:** Absolutely. Let's move over to my laptop where I have the app code ready.

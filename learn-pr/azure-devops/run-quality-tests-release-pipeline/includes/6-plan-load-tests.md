@@ -1,3 +1,4 @@
+(Talk about how while Andy and Amita are working, Mara drops in to see Tim. They plan out load tests.)
 
 The load tests will use Apache JMeter to access the web application from many simulated users at the same time. Again, the tests will fetch the web content from the app running on App Service, in the test environment.
 

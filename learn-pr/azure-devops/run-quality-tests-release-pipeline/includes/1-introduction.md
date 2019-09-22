@@ -12,19 +12,37 @@ In this module, you'll work with Amita and Tim as they learn how to add function
 
 In this module, you will:
 
-- Learn what functional and non-functional tests are
-- Add a functional UI test to the pipeline's test environment
-- Add a non-functional load test to the pipeline's staging environment
+- Describe the role of functional and non-functional tests in a release pipeline.
+- Run functional UI tests in your pipeline's _Test_ stage.
+- Run non-functional load tests during _Staging_.
 
 ## Prerequisites
 
-TODO: Update
+The modules in this learning path form a progression.
 
-TODO: Also talk about how you need your own Azure sub and how to set one up :/
+To follow the progression from the beginning, be sure to first complete these learning paths:
 
-The prerequisites are the same as the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true) module.
+* [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true)
+* [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true)
 
-Make sure you have the _Space Game_ project loaded in Visual Studio Code and your _Space Game_ project on GitHub handy.
+We also recommend you start at the beginning of this learning path, [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops?azure-portal=true).
+
+To take just this module, go through these modules first to get set up with Azure DevOps and set up your development environment.
+
+* [Get started with Azure DevOps](/learn/modules/get-started-with-devops?azure-portal=true)
+* [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true)
+* [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true)
+
+When you're ready, make sure you have:
+
+* Your _Space Game_ project loaded in Visual Studio Code.
+* A browser window pointing to your fork of the _Space Game_ web site project on GitHub.
+* A browser window pointing to your Azure DevOps organization.
+
+> [!IMPORTANT]
+> You also need your own Azure subscription to complete the exercises in this module. You can [get started for free](https://azure.microsoft.com?azure-portal=true) if you don't have an Azure subscription.
+
+[!include[](../../shared/includes/project-details-note.md)]
 
 ## Meet the team
 
@@ -42,4 +60,4 @@ You met the _Space Game_ web team at Tailspin Toys in previous modules. As a ref
 
 :::row-end:::
 
-Mara has prior experience with DevOps and is helping the team adopt a more automated process using Azure DevOps.
+Mara has prior experience with DevOps and is helping the team adopt a more automated process that uses Azure DevOps.

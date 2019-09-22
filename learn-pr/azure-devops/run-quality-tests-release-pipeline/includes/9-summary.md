@@ -9,3 +9,15 @@ Mara answers, "A quality gate is a good way to check the quality of a release. I
 "I'd like to add a release gate that makes sure there aren't any open bugs. Could we do that?"
 
 "That's a great idea! We can certainly do it," Mara says. We can use a work item query to check to see if there are open bugs. If there aren't, we can deploy to pre-production."
+
+## Learn more
+
+Somewhere, talk about how you can run UI tests in parallel, on multipel build agents (for example, Windows, macOS, Linux).
+
+Also, headless mode.
+
+* Selenium
+  * https://www.seleniumhq.org/selenium-ide/
+* Docs pages on Selenium
+* XPath
+* https://nunit.org
