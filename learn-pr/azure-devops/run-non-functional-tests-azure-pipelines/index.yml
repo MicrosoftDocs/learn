@@ -24,16 +24,15 @@ prerequisites: |
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/run-quality-tests-in-your-release-pipleline.svg
 levels:
-- beginner
+- intermediate
 roles:
-#TODO: Are there specific roles we should be targetting?
+- devops-engineer
 - administrator
 - developer
 - solution-architect
 products:
-#TODO: Create appropriate product labels
 - azure
-#- azure-devops
+- azure-devops
 units:
 - learn.azdo.run-non-functional-tests-azure-pipelines.1-introduction
 - learn.azdo.run-non-functional-tests-azure-pipelines.2-design-test-strategy
