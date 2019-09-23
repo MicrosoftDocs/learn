@@ -30,31 +30,31 @@ quiz:
     - content: A point-to-site network
       isCorrect: false
       explanation: A point-to-site network is a connectivity model for a VPN Gateway.
-  - content: 'What is the lowest available bandwidth for Azure ExpressRoute?'
+  - content: 'What is the highest available bandwidth for an ExpressRoute circuit?'
     choices:
-    - content: 1 Gbps
+    - content: 500 Gbps
       isCorrect: false
-      explanation: A 1-Gbps bandwidth connection is available with ExpressRoute but is not the lowest.
-    - content: 100 Mbps
+      explanation: The 500 Gbps bandwidth circuit is not yet available with ExpressRoute.
+    - content: 300 Gbps
       isCorrect: false
-      explanation: A 100-Mbps bandwidth connection is available with ExpressRoute but is not the lowest.
-    - content: 50 Mbps
+      explanation: The 300 Gbps bandwidth circuit is not yet available with ExpressRoute.
+    - content: 200 Gbps
       isCorrect: true
-      explanation: A 50-Mbps bandwidth connection is the lowest available with Azure ExpressRoute SKUs.
-    - content: 25 Mbps
+      explanation: A 200 Gbps bandwidth circuit is not yet available with ExpressRoute.
+    - content: 100 Gbps
       isCorrect: false
-      explanation: A 25-Mbps bandwidth connection is not available with ExpressRoute.
-  - content: 'How can a VPN Gateway be used with Azure ExpressRoute?'
+      explanation: A 100 Gbps bandwidth circuit is presently the highest available with ExpressRoute.
+  - content: 'What would you use a VPN Gateway for?'
     choices:
-    - content: VPN Gateway is used to connect to a CloudExchange provider
+    - content: to connect to a CloudExchange provider
       isCorrect: false
       explanation: CloudExchange providers are used in a colocated ExpressRoute model, a VPN Gateway is not used.
-    - content: VPN Gateway is used for ExpressRoute to connect to on-premises networks
+    - content: for ExpressRoute to connect to on-premises networks
       isCorrect: false
       explanation: A VPN Gateway is a separate resource to Azure ExpressRoute.
-    - content: VPN Gateway can't be combined with ExpressRoute
+    - content: as the cloud connector for the ExpressRoute circuit
       isCorrect: false
-      explanation: A VPN Gateway combined with ExpressRoute is a supported architecture.
-    - content: As a coexisting connection for failover
+      explanation: The ExpressRoute circuit connects to the cloud through an ExpressRoute Gateway. 
+    - content: as a coexisting connection for failover
       isCorrect: true
-      explanation: A VPN Gateway can be configured for a failover route if there's a loss of connectivity to an Azure ExpressRoute circuit.
+      explanation: A VPN Gateway can be configured as a failover route if there's a loss of connectivity to an ExpressRoute circuit.

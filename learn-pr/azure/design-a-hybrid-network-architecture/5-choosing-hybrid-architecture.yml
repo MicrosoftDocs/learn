@@ -35,7 +35,7 @@ quiz:
     - content: Bandwidth limitations 
       isCorrect: false
       explanation: ExpressRoute has a wide selection of available bandwidths.
-    - content: Cost and Traffic Volume
+    - content: Cost and traffic volume
       isCorrect: true
       explanation: VPN Gateway is cheaper than ExpressRoute and is more suited for smaller traffic volumes.
     - content: Redundancy support
@@ -44,17 +44,17 @@ quiz:
     - content: Lack of ExpressRoute partners
       isCorrect: false
       explanation: There is a rich ecosystem of system integrators and partners for ExpressRoute.
-  - content: 'What is the preferred connectivity method for Remote Desktop Connections (RDC)?'
+  - content: 'What is the preferred connection resiliency for ExpressRoute?'
     choices:
-    - content: Site-to-Site VPN
+    - content: passive-passive
       isCorrect: false
-      explanation: Site-to-site VPN connections are to connect on-premises datacenters with Azure.
-    - content: Azure ExpressRoute
+      explanation: ExpressRoute works in an active-active state.
+    - content: passive-active
       isCorrect: false
-      explanation: Azure ExpressRoute is for high volume mission-critical workloads.
-    - content: Point-to-site VPN
+      explanation: ExpressRoute works in an active-active state.
+    - content: active-passive
+      isCorrect: false
+      explanation: ExpressRoute works in an active-active state.
+    - content: active-active
       isCorrect: true
-      explanation: A point-to-site VPN connection should be used for RDC scenarios from a local client machine to Azure.
-    - content: Direct connection to Azure VM
-      isCorrect: false
-      explanation: It's possible to directly connect to an Azure VM, but it's not the recommended method.
+      explanation: Express route uses an active-active connection resiliency.

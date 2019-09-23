@@ -44,7 +44,7 @@ quiz:
     - content: Using an ASCII string secret
       isCorrect: true
       explanation: An ASCII string secret is used to authenticate between the vpn device and the vpn gateway.
-  - content: 'Which of the following do VPN connections on Azure always require?'
+  - content: 'When connecting to Azure using a VPN, which connection method would you use?'
     choices:
     - content: A VPN Gateway
       isCorrect: true

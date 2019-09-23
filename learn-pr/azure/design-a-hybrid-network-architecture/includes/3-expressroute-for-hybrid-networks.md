@@ -2,13 +2,13 @@ Your company is migrating some on-premises resources to Azure, as part of this m
 
 Your work so far has identified a need for a resilient high-bandwidth connection from the on-premises network to Azure. As part of your initial investigations, you found ExpressRoute could suit your organizations hybrid network needs.
 
-In this unit, you'll explore on-premises hybrid connectivity using Azure ExpressRoute, an overview of the components available in ExpressRoute, and walkthrough of a reference architecture supporting this topology.
+In this unit, you'll explore on-premises hybrid connectivity using ExpressRoute, an overview of the components available in ExpressRoute, and walkthrough of a reference architecture supporting this topology.
 
-## What is Azure ExpressRoute
+## What is ExpressRoute
 
-Azure ExpressRoute is a service in Azure that allows you to extend your on-premises networks over a private connection. This connection is facilitated by a connectivity provider. ExpressRoute extends beyond Azure, and allows you to establish connections to other Microsoft cloud services like Office 365.
+ExpressRoute is a service in Azure that allows you to extend your on-premises networks over a private connection. This connection is facilitated by a connectivity provider. ExpressRoute extends beyond Azure, and allows you to establish connections to other Microsoft cloud services like Office 365.
 
- ![Image showing an ExpressRoute connection](../media/2-ExpressRoute-connection.png)
+ ![Image showing an ExpressRoute connection](../media/3-ExpressRoute.png)
 
 ExpressRoute connections do not go over the public internet thus giving greater resilience, faster speeds, higher security, and lower latency. The connections can be from:
 
@@ -18,7 +18,7 @@ ExpressRoute connections do not go over the public internet thus giving greater 
 - **point-to-point ethernet network** - This method connects on-premises datacenters and offices to Azure through a point-to-point ethernet link.
 - **virtual cross-connection via a co-located facility (CloudExchange)** - This method allows you to cross-connect to Azure using the Ethernet exchange provided at your co-location.
 
-## Azure ExpressRoute circuits
+## ExpressRoute circuits
 
 Traffic management and routing in ExpressRoute is configured using circuits. ExpressRoute circuits are the logical connection between on-premises infrastructure and Azure. You can have multiple circuits, which can exist across multiple regions. ExpressRoute circuits also support connections through multiple connectivity providers.
 
@@ -38,29 +38,17 @@ The bandwidth available to each circuit is fixed to:
 - 100 Mbps,
 - 200 Mbps,
 - 500 Mbps,
-- 1 Gbps, or
-- 10 Gbps.
+- 1 Gbps,
+- 10 Gbps, or
+- 100 Gps.
 
 This bandwidth gets shared across any peering in the circuit, and is mapped to the connectivity provider and peering location.
 
-## Coexisting connections and Azure ExpressRoute
+## Coexisting connections and ExpressRoute
 
-Using ExpressRoute, you can connect your WAN to Azure using a private connection.  This connection can exist in conjunction with any of your existing Site-to-Sites, Point-to-=Site or VPN-to-VPN connections.
+To use ExpressRoute you must use a private connection, provided by a connectivity partner. However, ExpressRoute can exist alongside any of your existing site-to-site, point-to-site, or VPN-to-VPN connections.
 
-You can use the existing connection, say a Site-to-Site VPN, as a failover should there be an issue.  Or you can use the existing connection to provide access to off-site connections.
-
-## Azure ExpressRoute and virtual networks
-
-ExpressRoute can be linked into a virtual network in Azure, each VNet allows up to four ExpressRoute circuits. The circuits connected to the VNet can be in different regions or subscriptions. Up to 10 VNets can be associated to an ExpressRoute circuit.
-
-Each VNet should:
-
-- have an associated VPN gateway.
-- enable private peering for the ExpressRoute circuit.
-
-This method is typically used to connect multiple subscriptions, for example, prod, dev, and test, into the on-premises network.
-
-## Azure ExpressRoute reference architecture
+## ExpressRoute reference architecture
 
 ![Image showing ExpressRoute reference architecture](../media/3-express-route-architecture.png)
 
@@ -68,25 +56,39 @@ The above image shows a reference architecture for connecting your on-premises n
 
 The architecture model includes of several components:
 
-- The on-premises network,
-- local-edge routers,
-- an ExpressRoute Circuit,
-- Microsoft-edge routers, and
-- an ExpressRoute Gateway.
+- **The on-premises network**, your on-premises network.
+- **Local-edge routers**, connects your on-premises network to the connectivity providers circuit.
+- **An ExpressRoute Circuit**, a layer 2 or 3 circuit provided by the connectivity provider.  It provides the link between the Azure edge routers and your on-premises edge router.
+- **Microsoft-edge routers**, are the the cloud-side connection between your on-premises network and the cloud. There are always two edge-routers in a highly available active-active connection.
+- **An ExpressRoute Gateway.
 
-The network architecture shown here has been split across four areas: a web tier, a business tier, a data tier, and a management subnet.
+### Considerations
 
-## Gateway and vNET configurations
+When evaluating the suitability of ExpressRoute you should take in to consideration the following:
+
+- It doesn't support the hot standby routing protocol (HSRP).  You will need to enable a BGP configuration.
+- ExpressRoute operates on layer 3 and will need a network security appliance to manage threats.
+- Monitoring the connectivity between you on-premises network and Azure must use the Azure Connectivity Toolkit.
+- Network security appliances need to be added between the providers edge routers and your on-premises network.  This will improve your network security.
+- ExpressRoute has some default or maximum limits. Check the MS webset site for Azure subscription service limits for the most up to date values as these change as Azure is improved.
+
+## Gateway and virtual network configurations
 
 In a scenario where a VPN Gateway is to be configured for failover the following are important considerations:
 
-- The ExpressRoute and VPN gateway resources must be in the same VNet.
+- The ExpressRoute and VPN gateway resources must be in the same virtual network.
 - The same pre-requisites apply to this scenario as they do to ExpressRoute and VPN Gateways.
 
-## Reference architecture for Azure ExpressRoute with VPN failover
+## Reference architecture for ExpressRoute with VPN failover
+
+ExpressRoute comes with a high level of availability, with dual ExpressRoute gateways.  However, even with this level of resiliency built into the Azure side of the network connectivity can still be interrupted.  One of the ways to remedy this is to provide a VPN failover service.  
+
+Using the above reference architecture, you can see how to implement a VPN failover between your on-premises gateway and the Azure virtual network gateway.
 
 ![Image showing ExpressRoute reference architecture](../media/3-expressroute-vpn-failover-architecture.png)
 
 The above image shows a reference architecture for connecting your on-premises network to Azure using ExpressRoute with a VPN failover. The chosen topology in this solution is a Site-to-Site connection with high traffic flow.
 
-In this model, traffic will use the ExpressRoute private connection.  If there is a loss of connectivity through the ExpressRoute circuit; the gateway subnet will fail over to the Site-to-Site VPN gateway circuit.
+In this model, traffic will use the ExpressRoute private connection. If there is a loss of connectivity through the ExpressRoute circuit; the gateway subnet will fail over to the Site-to-Site VPN gateway circuit (as indicated by the dotted line from the Gateway to the VPN Gateway in the Azure virtual network).
+
+Once the connection via the ExpressRoute circuit is restored, traffic will automatically switch over.
