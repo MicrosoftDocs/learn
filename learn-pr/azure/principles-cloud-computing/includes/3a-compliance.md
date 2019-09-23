@@ -5,9 +5,6 @@ When selecting a cloud provider to host your solutions, you should understand ho
 - How can I deploy my own cloud-based solutions to scenarios that have accreditation or compliance requirements?
 - What terms are part of the privacy statement for the provider?
 
-> [!TIP]
-> Microsoft provides the most comprehensive set of compliance offerings (including certifications and attestations) of any cloud service provider.
-
 ### Compliance Offerings
 
 The following list provides details about _some_ of the compliance offerings available.
