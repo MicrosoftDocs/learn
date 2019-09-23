@@ -97,31 +97,12 @@ Congratulations! You have created an Azure Notebook!  You can skip to the topic 
 ## Setting up a local Jupyter Notebook environment to use Azure Machine Learning service
 
 > [!IMPORTANT]
-These instructions are only required if you must run the code samples in your local Jupyter Notebook environment and you are an experienced Python user.  It is strongly recommended that you use Azure Notebooks as described previously when learning Azure Machine Learning service because everything is preconfigured and you get the latest version of Python. 
+It is strongly recommended that you use Azure Notebooks as described previously when learning Azure Machine Learning service because everything is preconfigured and you get the latest version of Python. However, if you want to run the code samples in your local Jupyter Notebook environment and you are an experienced Python user, be sure to install Python 3.7 or later, and Anaconda which automatically includes Jupyter Notebook.  Then install the Azure Machine Learning service SDK as follows.
 
-
-1. Install a Python environment like Anaconda, Miniconda, or Python virtual environment.
-
-1. Create an isolated Python environment.
-
-1. In a command-line or terminal window, create a new Conda environment named **amlsenv** with Python 3.6:
+1. In a command-line or terminal window, install the core components of the Machine Learning SDK:
 
     ```bash
-    # Create
-    conda create -n amlsenv -y Python=3.6
-    # Activate
-    conda activate amlsenv
-    ```
-    
-1. Install the SDK.
-
-1. Install the core components of the Machine Learning SDK and Jupyter Notebook server with the following code:
-
-    ```bash
-    # Install Jupyter
-    conda install nb_conda
-    
-    # Install the base SDK and Jupyter Notebook
+    # Install the base SDK
     pip install azureml-sdk[notebooks]
     ```
     
