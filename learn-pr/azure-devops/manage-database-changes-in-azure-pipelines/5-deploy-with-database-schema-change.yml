@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.create-a-release-management-workflow.5-deploy-with-database-schema-change
+uid: learn.azdo.manage-database-changes-in-azure-pipelines.5-deploy-with-database-schema-change
 title: Exercise - Re-deploy the application with a database schema change
 metadata:
   title: Exercise - Re-deploy the application with a database schema change

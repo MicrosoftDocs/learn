@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.create-a-release-management-workflow.4-deploy-with-database
+uid: learn.azdo.manage-database-changes-in-azure-pipelines.4-deploy-with-database
 title: Exercise - Deploy the application that accesses a remote database
 metadata:
   title: Exercise - Deploy the application that accesses a remote database
