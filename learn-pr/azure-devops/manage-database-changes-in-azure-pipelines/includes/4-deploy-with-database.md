@@ -328,7 +328,7 @@ Here, you create a service connection that enables Azure Pipelines to access you
 
     | Field               | Value                                        |
     |---------------------|----------------------------------------------|
-    | **Connection name** | **Resource Manager - Tailspin - Space Game** |
+    | **Connection name** | **Resource Manager - Tailspin - SpaceGame** |
     | **Scope level**     | **Subscription**                             |
     | **Subscription**    | Your Azure subscription                      |
     | **Resource Group**  | **tailspin-space-game-rg**                   |
@@ -365,7 +365,7 @@ To add the variable:
     | **WebAppNameStaging** | **tailspin-space-game-web-staging-NNN** |
     | **adminlogin**        | **azuresql** |
     | **adminPassword**     | The password you assigned when you created the database |
-    | **subscription**      | **Resource Manager - Tailspin - Space Game**  |
+    | **subscription**      | **Resource Manager - Tailspin - SpaceGame**  |
     | **servername**        | **tailspinserverNNN**  |
     | **databasename**      | **tailspindatabaseNNN**  |
 
@@ -469,9 +469,11 @@ Here you add the pipeline stage that will check for database schema changes so t
     ```
 
 1. Watch the pipeline and wait for the manual approval of the database schema. When the pipeline stops for approval, click on the `DBAVerificationScript` stage and look at the change script that was created. The script should not have any changes since we didn't change anything in the database yet.
-1. Go ahead and approve the stage.
-1. Check at least one of the web addresses to see that the application has been deployed and is working with the database.
+1. Go ahead and approve the stage. Click **Review** and then **Approve**.
+1. Wait for the pipeline to finish deployments.
 
-**remember to change yml to the right server name and database name -  create variables for these!!!**
+    ![Azure Pipelines showing the pipeline stages](../media/4-pipeline-run.png)
+
+1. Check at least one of the web addresses to see that the application has been deployed and is working with the database.
 
 **Tim:** Great! I feel good about going to the DBA with this so far. Let's try it with the schema change we have been working on.
