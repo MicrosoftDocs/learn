@@ -29,7 +29,6 @@ products:
 - azure
 units: 
 - learn-wwl.deep-learning.introduction
-- learn-wwl.deep-learning.introduction-to-deep-learning
 - learn-wwl.deep-learning.deep-learning-applications
 - learn-wwl.deep-learning.introduction-to-cnns
 - learn-wwl.deep-learning.exercise-cnns

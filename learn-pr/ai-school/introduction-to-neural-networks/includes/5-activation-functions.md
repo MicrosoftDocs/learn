@@ -36,6 +36,6 @@ Learning rates are particularly important in complex models - if a learning rate
 
 ![TBC if we keep in optional content](../media/2.3_LearningRate-02.png) 
 
-In practice it’s a good idea to find an adequate learning rate, rather than spending time trying to find an optimal one. An adequate learning rate is large enough that your model is trained efficiently, but not so small that you cannot find a minima. It is perfectly acceptable to find an appropriate learning rate through trial and error.
+In practice it’s a good idea to find an adequate learning rate, rather than spending time trying to find an optimal one. An adequate learning rate is large enough that your model is trained efficiently, but not so small that you cannot find a minima. It is perfectly acceptable to find an appropriate learning rate, or any other hyperparameter, through trial and error.
 
 ![TBC if we keep in optional content](../media/2.3_LearningRate-01.png)
