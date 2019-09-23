@@ -33,6 +33,5 @@ units:
 - learn-wwl.unsupervised-learning.k-means-clustering
 - learn-wwl.unsupervised-learning.exercise-k-means
 - learn-wwl.unsupervised-learning.summary
-- learn-wwl.unsupervised-learning.well-done
 badge: 
   uid: learn-wwl.unsupervised-learning.badge #add the uid for your achievement badge.
