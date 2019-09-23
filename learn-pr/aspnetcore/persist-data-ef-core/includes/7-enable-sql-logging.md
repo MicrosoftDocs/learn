@@ -61,11 +61,14 @@ To ease production troubleshooting, the Operations Manager wants SQL queries to 
 
     -- GetById
     ```
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
 
 1. Run the following .NET Core CLI command to start the app:
 
     ```dotnetcli
-    dotnet run --environment Development > $srcWorkingDirectory/ContosoPets.Api.log &
+    dotnet ./bin/Debug/netcoreapp3.0/ContosoPets.Api.dll \
+        --environment Development \
+        > $srcWorkingDirectory/ContosoPets.Api.log &
     ```
 
 1. Run the following command to test the `GetById` method of the `OrderService` class:

@@ -206,6 +206,9 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
     * The `--project` option provides the location of the project to be used for creating the migration.
     * The `--context` option specifies the name of the class in the *:::no-loc text="ContosoPets.DataAccess":::* project, which derives from `DbContext`.
 
+    > [!NOTE]
+    > The `dotnet ef` tool is supported on all platforms. When using Visual Studio on Windows, it is preferable to use the integrated `Add-Migration` and `Update-Database` cmdlets in the Package Manager Console.
+
 1. Refresh file explorer.
 
     A new *:::no-loc text="Migrations":::* directory appears in the *:::no-loc text="ContosoPets.DataAccess":::* project root. The directory contains a *:::no-loc text="&lt;timestamp&gt;_InitialCreate.cs":::* file describing database changes to be translated to a Data Definition Language (DDL) change script.

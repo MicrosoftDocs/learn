@@ -32,21 +32,23 @@ In this unit, the Azure SQL database's tables will be populated with data. You'l
 
     Inclusion of the preceding namespace resolves the reference to `OrderService` in the previous step.
 
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
+
 1. Run the following .NET Core CLI command to run the app in development mode:
 
     ```dotnetcli
-    dotnet run --environment Development > $srcWorkingDirectory/ContosoPets.Api.log &
+    dotnet ./bin/Debug/netcoreapp3.0/ContosoPets.Api.dll \
+        --environment Development \
+        > $srcWorkingDirectory/ContosoPets.Api.log &
     ```
 
     The preceding command:
 
-    * Restores the project's NuGet packages.
-    * Builds the project code.
     * Sets the hosting environment to *:::no-loc text="Development":::*.
-    * Hosts the web API with ASP.NET Core's Kestrel web server.
+    * Hosts the compiled web API DLL with ASP.NET Core's Kestrel web server.
     * Displays the background task's process ID.
 
-    .NET Core emits logging information and blocks command shell input. The command shell needs to be usable to test the running app. Therefore, the `dotnet run` output is redirected to a *:::no-loc text="ContosoPets.Api.log":::* text file. Additionally, the `&` runs the app as a background task to unblock command shell input.
+    .NET Core emits logging information and blocks command shell input. The command shell needs to be usable to test the running app. Therefore, the console output is redirected to a *:::no-loc text="ContosoPets.Api.log":::* text file. Additionally, the `&` runs the app as a background task to unblock command shell input.
 
     The web API is hosted at both `http://localhost:5000` and `https://localhost:5001`. This module uses the secure URL beginning with `https`.
 
