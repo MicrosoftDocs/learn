@@ -1,0 +1,4 @@
+- Make a schema change to a table and the app
+    - Run pipeline to see the approval from the DBA
+    - 
+    - The team has a plan and is ready to begin implementing their release management workflow. You have an Azure DevOps project set up and Azure App Service instances that are ready to receive build artifacts.
