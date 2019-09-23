@@ -29,7 +29,8 @@ For more, you can explore education case studies, blogs, and books:
 
 ## References
 
-1. [Microsoft, “UNSW transforms campus experience, boosts efficiency with cloud and CRM solutions.” 1 March 2019.](https://customers.microsoft.com/story/unsw-education-d365-for-finance-and-operations-customer-service-australia)  
-2. [Microsoft, “UNSW’s Teams project brings Artificial Intelligence to student engagement.” Ray Fleming, 18 July 2019.](https://educationblog.microsoft.com/2019/07/unsws-teams-project-brings-artificial-intelligence-to-student-engagement/)
-3. [Antares Solutions, “Antares and Microsoft join forces to develop a chatbot with a difference at UNSW.” Aaron Cunnington.](https://antares.solutions/antares-microsoft-join-forces-develop-chatbot-difference-unsw/)
-4. [itnews, “UNSW adds Question bot to online classroom for engineering students.” Ry Crozier, 7 June 2019.](https://www.itnews.com.au/news/unsw-adds-question-bot-to-online-classroom-for-engineering-students-525188)
+[(1) Microsoft, “UNSW transforms campus experience, boosts efficiency with cloud and CRM solutions.” 1 March 2019.](https://customers.microsoft.com/story/unsw-education-d365-for-finance-and-operations-customer-service-australia)  
+[(2) Microsoft, “UNSW’s Teams project brings Artificial Intelligence to student engagement.” Ray Fleming, 18 July 2019.](https://educationblog.microsoft.com/2019/07/unsws-teams-project-brings-artificial-intelligence-to-student-engagement/)  
+[(3) Antares Solutions, “Antares and Microsoft join forces to develop a chatbot with a difference at UNSW.” Aaron Cunnington.](https://antares.solutions/antares-microsoft-join-forces-develop-chatbot-difference-unsw/)  
+[(4) itnews, “UNSW adds Question bot to online classroom for engineering students.” Ry Crozier, 7 June 2019.](https://www.itnews.com.au/news/unsw-adds-question-bot-to-online-classroom-for-engineering-students-525188)  
+[(5) Microsoft, “Demo: Teams in the Classroom at Microsoft Inspire 2019.” David Kellerman, July 2019.](https://www.youtube.com/watch?v=NcbQ2UK69Tc)  
