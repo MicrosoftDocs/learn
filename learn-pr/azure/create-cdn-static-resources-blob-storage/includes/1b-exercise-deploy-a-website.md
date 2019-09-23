@@ -1,5 +1,3 @@
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 Before we explore Content Delivery Networks, let's deploy a static website in Azure Storage that we'll use throughout the module.
 
 ### Create a Storage Account in Azure Cloud Shell

@@ -64,7 +64,7 @@ To ease production troubleshooting, the Operations Manager wants SQL queries to 
 
 1. Run the following .NET Core CLI command to start the app:
 
-    ```bash
+    ```dotnetcli
     dotnet run --environment Development > $srcWorkingDirectory/ContosoPets.Api.log &
     ```
 
