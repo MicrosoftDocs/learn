@@ -24,21 +24,6 @@ Follow these steps to create a workspace in the Azure portal.
     ![The screenshot depicts the required information for creating a Machine Learning service workspace, which includes boxes for Workspace name, Subscription, Resource group, and Location.](../media/6-create-ml-service-workspace.png)
     
 
-1. In the newly created workspace, select **Open Azure Notebooks** to create the first experiment.
-
-1. Sign in with the same Microsoft account you used to create the workspace in the Azure portal.
-
-1. After you sign in, a new tab opens and a "Clone Library" prompt appears. Select **Clone**, and then run the notebook.
-
-1. Along with two notebooks, you will see a **Config.json** file. This configuration file contains information about the workspace that you created.
-
-1. Select **01.run-experiment.ipynb** to open the notebook.
-
-1. Run the cells one at a time (<kbd>Shift</kbd>+<kbd>Enter</kbd>) or select **Cells** > **Run All** to run the entire notebook. When you see an asterisk (*) next to a cell, it's running. After the code for that cell finishes, a number appears.
-
-1. After running all the cells in the notebook, you can view the logged values in your workspace.
-
-1. Browse back to the portal page, select **View Experiments**, and then select **my-first-experiment** to see the model run report.
 
 ## Create a workspace by using Python in an Azure Notebook
 
@@ -48,7 +33,6 @@ If you choose not to use Azure Notebooks, there are instructions later in the un
 
 Once you have your Azure Notebook subscription, log into the service.
 
-### Create a project to store your notebooks
 
 ### Create a Notebook
 
@@ -97,31 +81,12 @@ Congratulations! You have created an Azure Notebook!  You can skip to the topic 
 ## Setting up a local Jupyter Notebook environment to use Azure Machine Learning service
 
 > [!IMPORTANT]
-These instructions are only required if you must run the code samples in your local Jupyter Notebook environment and you are an experienced Python user.  It is strongly recommended that you use Azure Notebooks as described previously when learning Azure Machine Learning service because everything is preconfigured and you get the latest version of Python. 
+It is strongly recommended that you use Azure Notebooks as described previously when learning Azure Machine Learning service because everything is preconfigured and you get the latest version of Python. However, if you want to run the code samples in your local Jupyter Notebook environment and you are an experienced Python user, be sure to install Python 3.7 or later, and Anaconda which automatically includes Jupyter Notebook.  Then install the Azure Machine Learning service SDK as follows.
 
-
-1. Install a Python environment like Anaconda, Miniconda, or Python virtual environment.
-
-1. Create an isolated Python environment.
-
-1. In a command-line or terminal window, create a new Conda environment named **amlsenv** with Python 3.6:
+1. In a command-line or terminal window, install the core components of the Machine Learning SDK:
 
     ```bash
-    # Create
-    conda create -n amlsenv -y Python=3.6
-    # Activate
-    conda activate amlsenv
-    ```
-    
-1. Install the SDK.
-
-1. Install the core components of the Machine Learning SDK and Jupyter Notebook server with the following code:
-
-    ```bash
-    # Install Jupyter
-    conda install nb_conda
-    
-    # Install the base SDK and Jupyter Notebook
+    # Install the base SDK
     pip install azureml-sdk[notebooks]
     ```
     
