@@ -1,0 +1,33 @@
+### YamlMime:Module
+uid: learn.iot.manage-iot-central-apps-with-rest-api
+metadata:
+  title: Manage IoT Central applications with the REST API
+  description: TBD
+  ms.date: 11/05/2019
+  author: markjulmar
+  ms.author: dobett
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage IoT Central applications with the REST API
+summary: TBD
+abstract:  | 
+  In this module, you will:
+  - Authorize a REST API call to connect to your IoT Central application 
+  - Use the REST API to view templates and devices in your application
+  - Use the REST API to add real and simulated devices to your application
+  - Use the REST API to control devices connected to your application 
+  - Use the REST API to query device telemetry 
+  - Use the REST API to configure data export from your application
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+# - azure-iot-central
+units:
+- learn.iot.manage-iot-central-apps-with-rest-api.introduction
+badge:
+  uid: learn.iot.manage-iot-central-apps-with-rest-api.badge
