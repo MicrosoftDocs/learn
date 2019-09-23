@@ -60,22 +60,23 @@ Here you use [Azure portal](https://portal.azure.com?azure-portal=true) to creat
 
 1. Once the server, database and storage has been created, select **Go to resource**.
 
-1. On the **tailspoindatabaseNNN** page, select **Connection strings**. Copy this connection string. You will need it to connect your App Service to the Azure SQL database.
+1. On the **tailspindatabaseNNN** page, select **Connection strings**. Copy this connection string. You will need it to connect your App Service to the Azure SQL database.
 
    ![Azure portal selecting connection strings page](../media/4-get-connection-string.png)
 
-    Notice that the connection string does not show your username and password. You will need to fill those in when we are ready to use this string.
+    Notice that the connection string does not show your username and password. You will need to fill those in when you are ready to use this string.
 
 1. In order to access the database you just created, you will need to set a firewall rule to allow your IP address.
     1. Select **SQL databases** on the far left side menu.
     1. Select **tailspindatabaseMNNN** where NNN is your random number.
     1. At the top, select **Set server firewall**.
     1. Your current IP address is printed next to **Client IP address**. Enter the following rule:
-        | Property  | Value  |
-        |---|---|
-        | Rule name| LocalIP |
-        | Start IP | Enter your IP address |
-        | End IP | Enter your IP address. |
+    | Property  | Value  |
+    |---|---|
+    | Rule name| LocalIP |
+    | Start IP | Enter your IP address |
+    | End IP | Enter your IP address. |
+
     1. Select **Save** at the top and the **OK**.
 
 ## Create the tables
@@ -356,15 +357,17 @@ To add the variable:
 1. Under **Properties**, enter **Release Pipeline** for the variable group name.
 1. Under **Variables**, select **+ Add**.
 1. Enter **WebAppNameDev** as the name of your variable. Enter the name of the App Service instance that corresponds do your _Dev_ environment, such as **tailspin-space-game-web-dev-1234**, as its value.
-1. Repeat steps 5 and 6 two more times to create variables for your _Test_ and _Staging_ environments, as shown in this table:
+1. Repeat steps 5 and 6 to create variables for your _Test_ and _Staging_ environments as well as the pipeline access to Azure SQL, as shown in this table:
 
     | Variable name         | Example value                            |
     |-----------------------|------------------------------------------|
-    | **WebAppNameTest**    | **tailspin-space-game-web-test-1234**    |
-    | **WebAppNameStaging** | **tailspin-space-game-web-staging-1234** |
+    | **WebAppNameTest**    | **tailspin-space-game-web-test-NNN**    |
+    | **WebAppNameStaging** | **tailspin-space-game-web-staging-NNN** |
     | **adminlogin**        | **azuresql** |
     | **adminPassword**     | The password you assigned when you created the database |
-    | **subscription**     | **Resource Manager - Tailspin - Space Game**  |
+    | **subscription**      | **Resource Manager - Tailspin - Space Game**  |
+    | **servername**        | **tailspinserverNNN**  |
+    | **databasename**      | **tailspindatabaseNNN**  |
 
     Be sure to replace each example value with the App Service instance that corresponds to your environment.
 
@@ -441,10 +444,7 @@ Here you add the pipeline stage that will check for database schema changes so t
 
 ### Create an environment for manual approval
 
-1. From Azure Pipelines, select **Environments**.
-
-    ![Azure Pipelines showing the Environments menu option](../media/7-pipelines-environments.png)
-
+1. From Azure Pipelines, select **Environments**
 1. Select **New environment**.
 1. Under **Name**, enter **dbavarification**.
 1. Leave the remaining fields at their default values.

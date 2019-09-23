@@ -1,15 +1,6 @@
 variables:
   buildConfiguration: 'Release'
-#  releaseBranchName: 'release-workflow'
-
-# schedules:
-# - cron: '*/5 * * * *'
-#   displayName: Deploy every 5 minutes
-#   branches:
-#     include:
-#     - release-workflow
-#   always: 'false'
-
+ 
 stages:
 - stage: 'Build'
   displayName: 'Build Stage'
@@ -28,35 +19,35 @@ stages:
       displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
       inputs:
         version: '$(dotnetSdkVersion)'
-
+ 
     - task: Npm@1
       displayName: 'Run npm install'
       inputs:
         verbose: false
-
+ 
     - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
       displayName: 'Compile Sass assets'
-
+ 
     - task: gulp@1
       displayName: 'Run gulp tasks'
-
+ 
     - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
       displayName: 'Write build info'
       workingDirectory: $(wwwrootDir)
-
+ 
     - task: DotNetCoreCLI@2
       displayName: 'Restore project dependencies'
       inputs:
         command: 'restore'
         projects: '**/*.csproj'
-
+ 
     - task: DotNetCoreCLI@2
       displayName: 'Build the project - $(buildConfiguration)'
       inputs:
         command: 'build'
         arguments: '--no-restore --configuration $(buildConfiguration)'
         projects: '**/*.csproj'
-
+ 
     - task: DotNetCoreCLI@2
       displayName: 'Publish the project - $(buildConfiguration)'
       inputs:
@@ -78,7 +69,7 @@ stages:
       displayName: Restore
       inputs:
         command: restore
-        projects: '**/*.csproj'  
+        projects: '**/*.csproj' 
     - task: DotNetCoreCLI@2
       displayName: Build
       inputs:
@@ -93,78 +84,20 @@ stages:
       inputs:
         Contents: |
           Tailspin.SpaceGame.Database/bin/**/*.dacpac
-        TargetFolder: '$(Build.StagingDirectory)'  
-    # - task: CopyFiles@2
-    #   displayName: 'Copy dacpac, IaC, and data Files to Staging'
-    #   inputs:
-    #     Contents: |
-    #      Database/bin/**/*.dacpac
-    #      IaC/**
-    #      data/**
-    #     TargetFolder: '$(Build.StagingDirectory)'
-
+        TargetFolder: '$(Build.StagingDirectory)' 
+ 
     - task: PublishBuildArtifacts@1
       displayName: 'Publish Artifact'
       inputs:
         PathtoPublish: '$(build.artifactstagingdirectory)'
         artifactName: dropDacpac
       condition: succeededOrFailed()
-
+ 
 - stage: DBAVerificationScript
+  dependsOn: Build
   jobs:
   - deployment: DBAVerificationScript
     displayName: DBA Verify DB Deployment Script
-    pool:
-      name: Hosted Windows 2019 with VS2019
-    variables:
-    - group: 'Release Pipeline'
-    strategy:
-      runOnce:
-        deploy:
-          steps:
-          - download: current
-            artifact: dropDacpac
-            patterns: '**/*'
-          
-          # - task: SqlAzureDacpacDeployment@1
-          #   displayName: Run Update DB Script from DBA
-          #   inputs:
-          #     azureSubscription: 'ca-abewan-demo-test (e97f6c4e-c830-479b-81ad-1aff1dd07470)'
-          #     AuthenticationType: 'server'
-          #     ServerName: '$(servername).database.windows.net'
-          #     DatabaseName: '$(dbName)'
-          #     SqlUsername: '$(adminlogin)'
-          #     SqlPassword: '$(adminPasswordDev)'
-          #     deployType: 'SqlTask'
-          #     SqlFile: '$(Pipeline.Workspace)/drop/data/UpdateDB.sql'
-          #     IpDetectionMethod: 'AutoDetect'
-
-          - task: SqlAzureDacpacDeployment@1
-            displayName: Generate Auto Gen DB Update Script
-            inputs:
-              azureSubscription: 'Resource Manager - Tailspin - Space Game'
-              AuthenticationType: 'server'
-              ServerName: 'tailspinsvr.database.windows.net'
-              DatabaseName: 'Tailspin'
-              SqlUsername: '$(adminlogin)'
-              SqlPassword: '$(adminPassword)'
-              deployType: 'DacpacTask'
-              DeploymentAction: 'Script'
-              DacpacFile: '$(Pipeline.Workspace)/dropDacpac/Tailspin.SpaceGame.Database/bin/Debug/Database.dacpac'
-              IpDetectionMethod: 'AutoDetect'
-          
-          - task: PowerShell@2
-            displayName: Show Auto Generated SQL Script
-            inputs:
-              targetType: 'inline'
-              script: |
-                Write-Host "Auto Generated SQL Update Script:"
-                Get-Content d:\a\1\s\GeneratedOutputFiles\Tailspin_Script.sql | foreach {Write-Output $_}
-
-- stage: DBAVerificationApply
-  jobs:
-  - deployment: DBAVerificationApply
-    displayName: DBA Verify DB Deployment Apply
     pool:
       name: Hosted Windows 2019 with VS2019
     variables:
@@ -176,30 +109,63 @@ stages:
           steps:
           - download: current
             artifact: dropDacpac
-            patterns: '**/*'              
+            patterns: '**/*'
+ 
+          - task: SqlAzureDacpacDeployment@1
+            displayName: Generate Auto Gen DB Update Script
+            inputs:
+              azureSubscription: 'Resource Manager - Tailspin - Space Game'
+              AuthenticationType: 'server'
+              ServerName: '$(servername).database.windows.net'
+              DatabaseName: '$(databasename)'
+              SqlUsername: '$(adminlogin)'
+              SqlPassword: '$(adminPassword)'
+              deployType: 'DacpacTask'
+              DeploymentAction: 'Script'
+              DacpacFile: '$(Pipeline.Workspace)/dropDacpac/Tailspin.SpaceGame.Database/bin/Debug/Database.dacpac'
+              IpDetectionMethod: 'AutoDetect'
+         
+          - task: PowerShell@2
+            displayName: Show Auto Generated SQL Script
+            inputs:
+              targetType: 'inline'
+              script: |
+                Write-Host "Auto Generated SQL Update Script:"
+                Get-Content d:\a\1\s\GeneratedOutputFiles\$(databasename)_Script.sql | foreach {Write-Output $_}
+ 
+- stage: DBAVerificationApply
+  jobs:
+  - deployment: DBAVerificationApply
+    displayName: DBA Verify DB Deployment Apply
+    pool:
+      name: Hosted Windows 2019 with VS2019
+    variables:
+    - group: 'Release Pipeline'
+    environment: 'dbaverification'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - download: current
+            artifact: dropDacpac
+            patterns: '**/*'             
           - task: SqlAzureDacpacDeployment@1
             displayName: 'Deploy SQL Schema'
             inputs:
               azureSubscription: 'Resource Manager - Tailspin - Space Game'
               AuthenticationType: 'server'
-              ServerName: 'tailspinsvr.database.windows.net'
-              DatabaseName: 'Tailspin'
+              ServerName: '$(servername).database.windows.net'
+              DatabaseName: '$(databasename)'
               SqlUsername: '$(adminlogin)'
               SqlPassword: '$(adminPassword)'
               deployType: 'DacpacTask'
               DeploymentAction: 'Publish'
               DacpacFile: '$(Pipeline.Workspace)/dropDacpac/Tailspin.SpaceGame.Database/bin/Debug/Database.dacpac'
               IpDetectionMethod: 'AutoDetect'
-
+ 
 - stage: 'DeployDev'
   displayName: 'Deploy to dev environment'
-  dependsOn: Build
-  # condition: |
-  #   and
-  #   (
-  #     succeeded(),
-  #     eq(variables['Build.SourceBranchName'], variables['releaseBranchName'])
-  #   )
+  dependsOn: DBAVerificationApply
   jobs:
   - deployment: Deploy
     pool:
@@ -219,7 +185,7 @@ stages:
               azureSubscription: 'Resource Manager - Tailspin - Space Game'
               appName: '$(WebAppNameDev)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
-
+ 
 - stage: 'DeployTest'
   displayName: 'Deploy to test environment'
   dependsOn: DeployDev
@@ -243,7 +209,7 @@ stages:
               azureSubscription: 'Resource Manager - Tailspin - Space Game'
               appName: '$(WebAppNameTest)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
-
+ 
 - stage: 'DeployStaging'
   displayName: 'Deploy to staging environment'
   dependsOn: DeployTest
