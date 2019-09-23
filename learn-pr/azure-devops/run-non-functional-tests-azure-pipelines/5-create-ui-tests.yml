@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.run-functional-tests-azure-pipelines.5-create-ui-tests
+uid: learn.azdo.run-non-functional-tests-azure-pipelines.5-create-ui-tests
 title: Exercise - Run UI tests using Selenium in your pipeline
 metadata:
   title: Exercise - Run UI tests using Selenium in your pipeline

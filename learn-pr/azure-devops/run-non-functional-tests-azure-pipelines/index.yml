@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azdo.run-functional-tests-azure-pipelines
+uid: learn.azdo.run-non-functional-tests-azure-pipelines
 metadata:
   title: Run functional tests in Azure Pipelines - Learn
   description: Run functional tests in Azure Pipelines
@@ -35,14 +35,14 @@ products:
 - azure
 #- azure-devops
 units:
-- learn.azdo.run-functional-tests-azure-pipelines.1-introduction
-- learn.azdo.run-functional-tests-azure-pipelines.2-design-test-strategy
-- learn.azdo.run-functional-tests-azure-pipelines.3-set-up-environment
-- learn.azdo.run-functional-tests-azure-pipelines.4-plan-ui-tests
-- learn.azdo.run-functional-tests-azure-pipelines.5-create-ui-tests
-- learn.azdo.run-functional-tests-azure-pipelines.6-plan-load-tests
-- learn.azdo.run-functional-tests-azure-pipelines.7-create-load-tests
-- learn.azdo.run-functional-tests-azure-pipelines.8-clean-up-environment
-- learn.azdo.run-functional-tests-azure-pipelines.9-summary
+- learn.azdo.run-non-functional-tests-azure-pipelines.1-introduction
+- learn.azdo.run-non-functional-tests-azure-pipelines.2-design-test-strategy
+- learn.azdo.run-non-functional-tests-azure-pipelines.3-set-up-environment
+- learn.azdo.run-non-functional-tests-azure-pipelines.4-plan-ui-tests
+- learn.azdo.run-non-functional-tests-azure-pipelines.5-create-ui-tests
+- learn.azdo.run-non-functional-tests-azure-pipelines.6-plan-load-tests
+- learn.azdo.run-non-functional-tests-azure-pipelines.7-create-load-tests
+- learn.azdo.run-non-functional-tests-azure-pipelines.8-clean-up-environment
+- learn.azdo.run-non-functional-tests-azure-pipelines.9-summary
 badge:
-  uid: learn.azdo.run-functional-tests-azure-pipelines.badge
+  uid: learn.azdo.run-non-functional-tests-azure-pipelines.badge
