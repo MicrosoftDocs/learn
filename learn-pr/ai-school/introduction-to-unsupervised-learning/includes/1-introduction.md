@@ -1,6 +1,6 @@
-Now you’ve had an overview of supervised learning, we’ll cover the fundamentals of unsupervised learning, as well as introducing some new unsupervised learning models.
+Now you’ve had an overview of supervised learning, 
 
-So far we have covered supervised learning algorithms - where we have labels for our examples. When a dataset doesn’t have labels, we can use unsupervised learning to find some kind of structure in the data - discovering patterns or groupings.
+You may have previously used supervised learning algorithms - where we have labels for our examples. When a dataset doesn’t have labels, we can use unsupervised learning to find some kind of structure in the data - discovering patterns or groupings.
 
 Supervised learning is much more common than unsupervised learning, but unsupervised learning can help us quickly get some analysis on a dataset with little effort.
 
@@ -21,6 +21,8 @@ In practice clustering tends to be used for social network analysis, computer cl
 ![Image with the title 'cluster network', with many circles all joined to circles close to them with black lines. The circles are in four colors - yellow, red, green and blue, with a different color in each corner. Each circle has a different name on it.](../media/7.1_ClusterNetwork.png)
 
 There many types of cluster analysis, but AI practitioners tend to use k-means clustering for quick analysis. For in-depth unsupervised learning, there are many tools - you can use support vector machines (support vector clustering), neural networks, and so on. Next we’ll look at k-means clustering.
+
+We’ll cover the fundamentals of unsupervised learning, as well as introducing some new unsupervised learning models.
 
 **In this module, you will learn to:**
 
