@@ -51,4 +51,4 @@ In the Azure portal, you can create custom dashboards, which are targeted displa
 
 In the example scenario, the operations team can consolidate its data by visualizing monitoring data such as charts and tables. These tools are effective for summarizing data and presenting it to different audiences. 
 
-The use of Azure dashboards enables you to combine different kinds of data, including both logs and metrics, into a single pane in the Azure portal. For example, you might want to create a dashboard that combines tiles that show a graph of metrics, a table of activity logs, charts from Azure Monitor, and the output of a log query.
+By using Azure dashboards, you can combine various kinds of data, including both logs and metrics, into a single pane in the Azure portal. For example, you might want to create a dashboard that combines tiles that show a graph of metrics, a table of activity logs, charts from Azure Monitor, and the output of a log query.
