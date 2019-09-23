@@ -2,7 +2,7 @@ In [Create a release management workflow with Azure Pipelines](/learn/modules/cr
 
 However, the web site is still using the test data files from within the application.
 
-In this module, you'll join the Tailspin web team as they design and build a pipeline that manages the database as well as build and deploy the application that uses that database.
+In this module, you'll join the Tailspin web team as they move to using a database for the web site data. They will design and build a pipeline that manages the database as well as build and deploy the application that uses that database.
 
 Frequently, when an application uses a database, the database administrator and the developers of the application must work together to design and maintain the schema of that database. DevOps helps with the collaboration between the developers and operations, in this case the database administrator.
 

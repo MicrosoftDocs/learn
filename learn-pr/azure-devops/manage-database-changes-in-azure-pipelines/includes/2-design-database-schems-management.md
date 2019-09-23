@@ -8,8 +8,12 @@ In this section, you'll:
 
 > [!div class="checklist"]
 > * Choose a database technology
-> * Learn how to configure the App Service to use the database and hide the connection string
+> * Learn how to configure the App Service to use the database connection string
 > * Understand a database project's role in Azure Pipelines
 > * Learn how database schema changes trigger a pipeline stage
 
 ## The meeting
+
+
+## The plan
+

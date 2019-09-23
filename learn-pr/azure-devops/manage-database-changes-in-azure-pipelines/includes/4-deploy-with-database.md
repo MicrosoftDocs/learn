@@ -27,7 +27,7 @@ This branch serves as your _release_ branch. It contains the _Space Game_ projec
 
 Here you use [Azure portal](https://portal.azure.com?azure-portal=true) to create the database. In later learning paths you will create your infrastructure using the pipeline.
 
-1. Navigate to your [Azure portal](https://portal.azure.com?azure-portal=true) and create a new Azure SQL database, database server and resource group for the resources you will create in this and the next exercise.
+1. Navigate to your [Azure portal](https://portal.azure.com?azure-portal=true) and create a new Azure SQL database, database server and resource group for the resources you will need in this and the next exercise.
  1. In the left pane, select **+ Create a resource**, **Databases**, and then **SQL Database**.
 
     ![The "New" page in the Azure portal showing the databases options that are available in the Azure Marketplace](../media/3-new-database-annotated.png)
@@ -58,21 +58,33 @@ Here you use [Azure portal](https://portal.azure.com?azure-portal=true) to creat
 
 1. Select **Create**, and wait for the server and database to be created before you continue.
 
-1. In pane on the left side of the Azure portal, select **SQL databases**.
-
-1. On the **SQL databases** page, select **tailspindatabaseNNN**.
+1. Once the server, database and storage has been created, select **Go to resource**.
 
 1. On the **tailspoindatabaseNNN** page, select **Connection strings**. Copy this connection string. You will need it to connect your App Service to the Azure SQL database.
 
-**(Screenshot of connection string)**
+   ![Azure portal selecting connection strings page](../media/4-get-connection-string.png)
+
+    Notice that the connection string does not show your username and password. You will need to fill those in when we are ready to use this string.
+
+1. In order to access the database you just created, you will need to set a firewall rule to allow your IP address.
+    1. Select **SQL databases** on the far left side menu.
+    1. Select **tailspindatabaseMNNN** where NNN is your random number.
+    1. At the top, select **Set server firewall**.
+    1. Your current IP address is printed next to **Client IP address**. Enter the following rule:
+        | Property  | Value  |
+        |---|---|
+        | Rule name| LocalIP |
+        | Start IP | Enter your IP address |
+        | End IP | Enter your IP address. |
+    1. Select **Save** at the top and the **OK**.
 
 ## Create the tables
 
 You can now create the tables to store the data.
 
+1. Select **SQL databases** on the far left side menu.
+1. Select **tailspindatabaseMNNN** where NNN is your random number.
 1. On the **tailspoindatabaseNNN** page, select **Query editor**.
-
-    ![The database page in the Azure portal with the query editor option highlighted](../media/3-query-editor-annotated.png)
 
 1. On the **tailspindatabaseNNN - Query editor** page, enter the following details, and then select **OK** to connect to the database service.
 
@@ -84,16 +96,12 @@ You can now create the tables to store the data.
 
 1. In your local **database** branch, find the file **CreateTables** and copy the entire contents to the clipboard. In the **Query 1** pane, paste the SQL statements you copied, and then select **Run**. This statement creates the new tables to hold the profile and score data for the SpaceGame web site. Verify that the statement runs without any errors.
 
-    ![The Query editor window in the Azure portal. The user has entered a statement to create the Courses table](../media/3-create-table-courses-annotated.png)
-
 1. In the database window, select the **Refresh** button on the toolbar. Expand **Tables**, and then expand each table in turn. You should see the four tables (**dbo.Profile**, **dbo.Scores**, **dbo.Achievements**, and **dbo.ProfileAchievements**), together with the columns and keys for each table.
 
     > [!NOTE]
     > *dbo* stands for *database owner*. It's the default schema in the database. All four tables were created in this schema.
 
-    ![The database window in the Azure portal, showing the tables and columns](../media/3-tables-and-columns-annotated.png)
-
-1. **Set the firewall rule - ???**
+    ![The Query editor window in the Azure portal. The user has entered a statement to create the Courses table](../media/4-create-tables.png)
 
 ## Import the data
 
@@ -126,7 +134,7 @@ You can now create the tables to store the data.
     bcp Scores in scores.csv -S "$DATABASE_SERVER.database.windows.net" -d DATABASE_NAME -U $AZURE_USER -P $AZURE_PASSWORD -q -c -t ,
     ```
 
-    Verify that this command imports 16 rows.
+    Verify that this command imports 24 rows.
 
 1. Run the following command to import the data in the **achievements.csv** file to the dbo.Achievements table.
 
@@ -134,7 +142,7 @@ You can now create the tables to store the data.
     bcp Achievements in achievements.csv -S "$DATABASE_SERVER.database.windows.net" -d DATABASE_NAME -U $AZURE_USER -P $AZURE_PASSWORD -q -c -t ,
     ```
 
-    Verify that this command imports 16 rows.
+    Verify that this command imports 10 rows.
 
 1. Run the following command to import the data in the **profileAchievements.csv** file to the dbo.ProfileAchievements table.
 
@@ -142,7 +150,7 @@ You can now create the tables to store the data.
     bcp ProfileAchievements in profileAchievements.csv -S "$DATABASE_SERVER.database.windows.net" -d DATABASE_NAME -U $AZURE_USER -P $AZURE_PASSWORD -q -c -t ,
     ```
 
-    Verify that this command imports 16 rows.
+    Verify that this command imports 121 rows.
 
 ### Query the data in the database
 
@@ -156,9 +164,9 @@ You can now create the tables to store the data.
     SELECT * FROM dbo.Profiles
     ```
 
-    This statement retrieves the data from the **Profiles** table. The results window should display twenty rows.
+    This statement retrieves the data from the **Profiles** table. The results window should display 20 rows.
 
-    ![Screenshot of the query editor in the Azure portal, showing the data retrieved from the Courses table](../media/3-query-results-annotated.png)
+    ![Screenshot of the query editor in the Azure portal, showing the data retrieved from the Profiles table](../media/4-select-all-profiles.png)
 
 1. Change the query as follows, and then select **Run**.
 
@@ -166,13 +174,11 @@ You can now create the tables to store the data.
     SELECT * FROM dbo.Scores
     ```
 
-    This time you should see the scores in the **Results** window. There are 16 rows.
+    This time you should see the scores in the **Results** window. There are 24 rows.
 
 ## Create the Azure App Service environments
 
 In [Create a release management workflow with Azure Pipelines](/learn/modules/create-a-release-management-workflow?azure-portal=true), you created one App Service instance that corresponds to each of the _Dev_, _Test_, and _Staging_ environments. There you worked through it step by step. Here we will create them all quickly using the command-line interface (CLI) through Azure Cloud Shell.
-
-
 
 ### Bring up Cloud Shell through the Azure portal
 
@@ -299,42 +305,10 @@ To do so, you:
         --connection-string-type SQLAzure
     ```
 
+    This will create an application setting called **DefaultConnection** that the application can use to connect to the database. This allows us to use the connection string without having to set it in the appSettings.json file and have it in plain text in source control.
+
 > [!IMPORTANT]
 > Remember, the [Clean up your Azure DevOps environment](/learn/modules/create-a-release-management-workflow/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
-
-## Create pipeline variables in Azure Pipelines
-
-In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you added a variable to your pipeline that stores the name of your web app in App Service. Here, you do the same. However, this time, you add one variable for each of the App Service instances that corresponds to the _Dev_, _Test_, and _Staging_ stages in your pipeline.
-
-You will also need to create variables for the username and password for your Azure SQL instance. The pipeline will need this to make schema changes on your behalf.
-
-To add the variable:
-
-1. In Azure DevOps, go to your **Space Game - web - Database** projecet.
-1. Under **Pipelines**, select **Library**.
-
-    ![Azure Pipelines showing the Library menu option](../../create-release-pipeline/media/5-pipelines-library.png)
-1. Select **+ Variable group**.
-1. Under **Properties**, enter **Release Pipeline** for the variable group name.
-1. Under **Variables**, select **+ Add**.
-1. Enter **WebAppNameDev** as the name of your variable. Enter the name of the App Service instance that corresponds do your _Dev_ environment, such as **tailspin-space-game-web-dev-1234**, as its value.
-1. Repeat steps 5 and 6 two more times to create variables for your _Test_ and _Staging_ environments, as shown in this table:
-
-    | Variable name         | Example value                            |
-    |-----------------------|------------------------------------------|
-    | **WebAppNameTest**    | **tailspin-space-game-web-test-1234**    |
-    | **WebAppNameStaging** | **tailspin-space-game-web-staging-1234** |
-    | **adminlogin**        | **azuresql** |
-    | **adminPassword**     | The password you assigned when you created the database |
-
-    Be sure to replace each example value with the App Service instance that corresponds to your environment.
-
-1. Select **Save** near the top of the page to save your variable to the pipeline.
-
-    Your variable group resembles this one:
-
-    > [!div class="mx-imgBorder"]
-    > ![Azure Pipeline showing the variable group](../media/3-library-variable-group.png)
 
 ## Create a service connection
 
@@ -363,6 +337,42 @@ Here, you create a service connection that enables Azure Pipelines to access you
 1. Select **OK**.
 
     Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps is unable to connect, you'll have the chance to sign in a second time.
+
+
+
+## Create pipeline variables in Azure Pipelines
+
+In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you added a variable to your pipeline that stores the name of your web app in App Service. Here, you do the same. However, this time, you add one variable for each of the App Service instances that corresponds to the _Dev_, _Test_, and _Staging_ stages in your pipeline.
+
+You will also need to create variables for the username and password for your Azure SQL instance. The pipeline will need this to make schema changes on your behalf.
+
+To add the variable:
+
+1. In Azure DevOps, go to your **Space Game - web - Database** projecet.
+1. Under **Pipelines**, select **Library**.
+
+    ![Azure Pipelines showing the Library menu option](../../create-release-pipeline/media/5-pipelines-library.png)
+1. Select **+ Variable group**.
+1. Under **Properties**, enter **Release Pipeline** for the variable group name.
+1. Under **Variables**, select **+ Add**.
+1. Enter **WebAppNameDev** as the name of your variable. Enter the name of the App Service instance that corresponds do your _Dev_ environment, such as **tailspin-space-game-web-dev-1234**, as its value.
+1. Repeat steps 5 and 6 two more times to create variables for your _Test_ and _Staging_ environments, as shown in this table:
+
+    | Variable name         | Example value                            |
+    |-----------------------|------------------------------------------|
+    | **WebAppNameTest**    | **tailspin-space-game-web-test-1234**    |
+    | **WebAppNameStaging** | **tailspin-space-game-web-staging-1234** |
+    | **adminlogin**        | **azuresql** |
+    | **adminPassword**     | The password you assigned when you created the database |
+    | **subscription**     | **Resource Manager - Tailspin - Space Game**  |
+
+    Be sure to replace each example value with the App Service instance that corresponds to your environment.
+
+1. Select **Save** near the top of the page to save your variable to the pipeline.
+
+    Your variable group resembles this one:
+
+    > ![Azure Pipeline showing the variable group](../media/4-variables-library.png)
 
 ## Add the database stage to the pipeline
 
@@ -429,19 +439,19 @@ Here you add the pipeline stage that will check for database schema changes so t
     git commit -m "add database schema checks to the pipeline"
     ```
 
-### Create an environment for manual approval.
+### Create an environment for manual approval
 
 1. From Azure Pipelines, select **Environments**.
 
     ![Azure Pipelines showing the Environments menu option](../media/7-pipelines-environments.png)
 
 1. Select **New environment**.
-1. Under **Name**, enter **sdev-dbvarification**.
+1. Under **Name**, enter **dbavarification**.
 1. Leave the remaining fields at their default values.
 1. Select **Create**.
-1. On the **staging** environment page, select the drop down menu, then select **Checks**.
+1. On the **dbaverification** environment page, select the drop down menu, then select **Checks**.
 
-    ![Azure Pipelines showing the Checks menu option](../media/7-environments-staging-checks.png)
+    ![Azure Pipelines showing the Checks menu option](../media/4-add-check-to-environment.png)
 
 1. On the **Use manual approvals** page, select **Create**.
 1. Under **Approvers**, select **Add users and groups** and then select your account.
@@ -460,6 +470,8 @@ Here you add the pipeline stage that will check for database schema changes so t
 
 1. Watch the pipeline and wait for the manual approval of the database schema. When the pipeline stops for approval, click on the `DBAVerificationScript` stage and look at the change script that was created. The script should not have any changes since we didn't change anything in the database yet.
 1. Go ahead and approve the stage.
+1. Check at least one of the web addresses to see that the application has been deployed and is working with the database.
 
-**remember to change yml to the right server name and database name**
+**remember to change yml to the right server name and database name -  create variables for these!!!**
 
+**Tim:** Great! I feel good about going to the DBA with this so far. Let's try it with the schema change we have been working on.
