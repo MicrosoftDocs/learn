@@ -169,11 +169,11 @@ else
 > [!Note]
 > Use the technique of temporarily hard coding the roll variables to test each message.
 
-The `if-elseif-else` statement allows you to create multiple exclusive conditions as boolean expressions.  In other words, when you only want one outcome to happen, but you have several possible conditions and results, then use as many `else if` statements as you want.  If none of the `if` and `else if` statements apply, then the final `else` code block will be executed.  The `else` is optional, but must come last. 
+The `if-elseif-else` statement allows you to create multiple exclusive conditions as Boolean expressions.  In other words, when you only want one outcome to happen, but you have several possible conditions and results, then use as many `else if` statements as you want.  If none of the `if` and `else if` statements apply, then the final `else` code block will be executed.  The `else` is optional, but must come last. 
 
 ## Recap
 
-- The `if-else` allows you to test for a condition and perform code when a boolean expression is true, and different code with the boolean expression is false.
+- The `if-else` allows you to test for a condition and perform code when a Boolean expression is true, and different code with the boolean expression is false.
 - You can nest if statements to narrow down a possible condition.  However, you should consider using the `if-elseif-else` statement instead.
 - Use `elseif` to create multiple exclusive conditions.
 - An `else` is optional, but it must always come last.

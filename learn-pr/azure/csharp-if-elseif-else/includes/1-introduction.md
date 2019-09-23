@@ -10,10 +10,10 @@ This is one of the most exciting modules because it opens a new world of branchi
 
 In this module, you will:
 
-- write code that evaluates conditions using the `if-elseif-else` statements
-- build boolean expressions to evaluate a condition
-- combine boolean expressions using logical operators
-- nest code blocks within other code blocks
+- Write code that evaluates conditions using the `if-elseif-else` statements.
+- Build Boolean expressions to evaluate a condition.
+- Combine Boolean expressions using logical operators.
+- Nest code blocks within other code blocks.
 
 ## Prerequisites
 
@@ -21,7 +21,3 @@ In this module, you will:
 - Experience printing messages to output using `Console.WriteLine()`
 - Experience with string interpolation to combine variables into literal strings
 - Experience working with the `System.Random` class to generate random numbers
-
-
-
-

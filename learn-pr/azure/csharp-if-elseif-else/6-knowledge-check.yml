@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 3
 quiz:
-  title: Check your knowledge
+  title: Check your knowledge.
   questions:
   - content: "Given that `int x = 5;` Which of the following boolean expressions is valid and evaluates to **true**?"
     choices:
