@@ -1,6 +1,6 @@
-The team has a plan and is ready to begin implementing their release management workflow. You have an Azure DevOps project set up and Azure App Service instances that are ready to receive build artifacts.
+The team has a plan and is ready to begin implementing their release pipeline. You have an Azure DevOps project set up and Azure App Service instances that are ready to receive build artifacts.
 
-At this point, the team's pipeline has two stages. The first stage produces the build artifact and the second stage deploys the _Space Game_ web application to App Service. Here, you follow along with Andy and Mara as they modify the pipeline to deploy to the App Service environment that corresponds to the _Dev_ stage.
+At this point, remember that the team's pipeline only has two stages. The first stage produces the build artifact and the second stage deploys the _Space Game_ web application to App Service. Here, you follow along with Andy and Mara as they modify the pipeline to deploy to the App Service environment that corresponds to the _Dev_ stage.
 
 ## Fetch the branch from GitHub
 
@@ -22,9 +22,9 @@ This branch serves as your _release_ branch. It contains the _Space Game_ projec
 
     The configuration resembles the basic one you created in the [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true) module. It builds only the application's Release configuration. For learning purposes, this configuration does not run the quality or security checks that you set up in previous modules.
 
-## Promote changes to the Dev stage
+## Promote changes to the _Dev_ stage
 
-Here you modify your pipeline configuration to deploy the build to the _Dev_ stage.
+Here you modify your pipeline configuration to promote the build to the _Dev_ stage.
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* like this.
 

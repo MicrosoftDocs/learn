@@ -1,6 +1,6 @@
-Your release pipeline has two stages: _Build_ and _Dev_. Every change you push to GitHub triggers the _Build_ stage to run. The _Dev_ stage runs only when the change is in the _release_ branch. Here, you add the _Test_ stage to the pipeline.
+Your release pipeline still has two stages but they're different than before. The stages are: _Build_ and _Dev_. Every change you push to GitHub triggers the _Build_ stage to run. The _Dev_ stage runs only when the change is in the _release_ branch. Here, you add the _Test_ stage to the pipeline.
 
-Recall that the team decided to use a scheduled trigger to promote the build from the _Dev_ stage to the _Test_ stage at 3 A.M. each morning. To do so, you:
+Recall that the team decided to use a scheduled trigger to promote the build from the _Dev_ stage to the _Test_ stage at 3 A.M. each morning. To do this, you:
 
 > [!div class="checklist"]
 > * Define the schedule in your build configuration.
@@ -8,7 +8,7 @@ Recall that the team decided to use a scheduled trigger to promote the build fro
 
 For learning purposes, here you define the schedule but allow the build to proceed directly from _Dev_ to _Test_ so that you don't have to wait for the schedule to trigger. After you complete this module, you can experiment with different cron expressions so that the _Test_ stage runs only at the scheduled time.
 
-## Promote changes to the Test stage
+## Promote changes to the _Test_ stage
 
 Here you modify your pipeline configuration to deploy the build to the _Test_ stage.
 
@@ -58,6 +58,7 @@ Here you modify your pipeline configuration to deploy the build to the _Test_ st
 
 Andy and Mara add the _Test_ stage to the pipeline and then show the results to Amita.
 
-**Amita:** I like the fact that any changes you make are built and deployed for me to test each morning. But what I like most about this is the fact that I still have control over when changes make it to the next stage.
+**Amita:** I like the fact that any changes you make are built and deployed for me to test each morning. But I don't see how I have control over when changes make it to _Staging_.
 
-**Mara:** Indeed, deploying through automation is a huge time saver. But remember that this change to the pipeline configuration only includes the scheduled trigger. We'll add a release approval for you when we set up the _Staging_ environment for Tim. That way, changes move to the staging environment only when you're ready.
+**Mara:** Indeed, deploying through automation is a huge time saver. Remember that, so far, we've only included the scheduled trigger. We'll add a release approval for you when we set up the _Staging_ environment for Tim. That way, changes move to _Staging_ only when you're ready.
+

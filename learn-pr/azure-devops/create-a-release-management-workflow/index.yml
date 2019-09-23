@@ -13,9 +13,9 @@ title: Create a release management workflow with Azure Pipelines
 summary: Create a release management workflow with Azure Pipelines
 abstract: |
   In this module, you will:
-  - Identify the stages, or major divisions of the pipeline, that you need.
+  - Identify the stages, or major divisions of the pipeline, that you need to implement a release management workflow.
   - Understand when to use conditions, triggers, and approvals to promote changes from one stage to the next.
-  - Promote a build through the _Dev_, _Test_, and _Staging_ stages.
+  - Promote a build through these stages: _Dev_, _Test_, and _Staging_.
 prerequisites: |
   - An Azure subscription
   - An Azure DevOps account

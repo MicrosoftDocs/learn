@@ -6,9 +6,9 @@ In this part, you'll:
 > * Create the **staging** environment in Azure Pipelines and assign yourself as an approver.
 > * Define the _Staging_ stage, which runs only after an approver verifies the results of the _Test_ stage.
 
-## Create the Staging environment
+## Create the staging environment
 
-Here, you create an environment in Azure Pipelines for the _Staging_ Stage. For learning purposes, you assign yourself as the approver. In practice, you would assign the users who are required to sign off on changes before those changes move to the next stage. For the Tailspin team, Amita approves changes as they move from _Test_ to _Staging_.
+Here, you create an environment in Azure Pipelines for _Staging_. For learning purposes, you assign yourself as the approver. In practice, you would assign the users who are required to sign off on changes before those changes move to the next stage. For the Tailspin team, Amita approves changes so they can be promoted from _Test_ to _Staging_.
 
 Recall that, earlier in this module, you specified `environment` settings for both the _Dev_ and _Test_ stages. Here's an example for the _Dev_ stage.
 
@@ -58,15 +58,15 @@ Here, you modify your pipeline configuration to deploy the build to the _Staging
     git push origin release
     ```
 
-1. In Azure Pipelines, go to the build and trace the build as it runs.
+1. In Azure Pipelines, go to the build and trace it as it runs.
 
-    When the build reaches the _Staging_ stage, you see that the pipeline waits for all checks to pass. In this case there is one check: the manual release approval.
+    When the build reaches _Staging_, you see that the pipeline waits for all checks to pass. In this case there is one check: the manual release approval.
 
     ![Azure Pipelines showing the Staging stage, which requires manual approval](../media/7-pipeline-review.png)
 
 1. Select **Review**, then select **Approve**.
 
-    In practice, you would inspect the changes to verify they meet your requirements.
+    In practice, you would inspect the changes to verify that they meet your requirements.
 
 1. After the build completes, open a web browser and navigate to the URL that's associated with the App Service instance for your _Staging_ environment.
 

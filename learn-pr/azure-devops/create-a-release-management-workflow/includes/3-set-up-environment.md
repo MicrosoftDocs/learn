@@ -82,7 +82,9 @@ At the end of this module, you move the card to the **Done** column after you've
 
 ## Create the Azure App Service environments
 
-Here, you create the environments that receive the build artifact as the change moves through the pipeline. You create one App Service instance that corresponds to each of the _Dev_, _Test_, and _Staging_ environments.
+Here, you create the environments that define the pipeline stages. You create one App Service instance that corresponds to each of the environments for _Dev_, _Test_, and _Staging_.
+
+**NOTE--Do they need to create one for _Build_ because below it says four**
 
 In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you brought up App Service through the Azure portal. Although the portal is a great way to explore what's available on Azure or to perform basic tasks, bringing up components such as App Service can become tedious and repetitive.
 
@@ -228,6 +230,8 @@ To do so, you:
 ## Create pipeline variables in Azure Pipelines
 
 In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you added a variable to your pipeline that stores the name of your web app in App Service. Here, you do the same. However, this time, you add one variable for each of the App Service instances that corresponds to the _Dev_, _Test_, and _Staging_ stages in your pipeline.
+
+**NOTE--what about _Build_**
 
 Remember that, although you could hard code these names in your pipeline configuration, defining them as variables makes your configuration more reusable. Plus, if the name of your App Service instances change, you can update the variables and trigger your pipeline without modifying your configuration.
 

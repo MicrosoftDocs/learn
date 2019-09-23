@@ -42,11 +42,19 @@ Mara updates the diagram on the whiteboard.
 
 The question is, where should we deploy the artifact?
 
-## Where can I host my deployments?
+## What is an environment?
 
-Azure Pipelines enables you to deploy to almost any kind of environment, whether it's on premises or in the cloud. Let's listen in and see what Andy and Mara decide.
+An artifact is deployed to an environment. Azure Pipelines makes it easy to deploy to almost any kind of environment, whether it's on premises or in the cloud. Every environment defines a resource. Some examples of on-line resources are Kubernetes, Azure App Service, and a Microsoft-hosted build agent.
 
-**Andy:** At a really high level, do we want to deploy on premises or to the cloud?
+**NOTE--is the statement about the agent correct?**
+
+Environments often define other things, such as security checks and ways to control how an artifact is promoted from one stage of a pipeline to another. What an environment includes depends, of course, on what you want to do with the artifact. An environment where you want to test the artifact will probably have a very different definition than one where you want to build the artifact.
+
+One way to define an Azure Pipelines environment is with a YAML file. Your YAML file includes an <b>environment</b> section, which specifies the Azure Pipelines environment where you'll deploy your artifact.
+
+Let's listen in and see what Andy and Mara decide.
+
+**Andy:** At a really high level, what type of environment do we want? Do we want to deploy on premises or to the cloud?
 
 **Mara:** We could ask Tim to create a VM for us in the lab, but he's always running out of hardware. It'll be super fast and easy to set up a POC ourselves if we use the cloud.
 
@@ -78,7 +86,7 @@ Andy lists these options on the whiteboard:
 
 For Azure Pipelines to deploy your software, it first needs to authenticate with the target environment. Azure Pipelines provides different authentication mechanisms, and the one you use depends on the target environment you're deploying to. You'll find more information on these mechanisms at the end of this module.
 
-**Andy:** We have our build artifact, and we know we'll do the build and deployment in stages. We've also defined the target environment for our deployment. My question now is, how does Azure Pipelines authenticate with App Service? I know this will be one of Tim's concerns. We need to ensure the process is secure.
+**Andy:** We have our build artifact, and we know we'll do the build and deployment in stages of the pipeline. We've also defined the target environment for our deployment. That's App Service. My question now is, how does Azure Pipelines authenticate with App Service? I know this will be one of Tim's concerns. We need to ensure the process is secure.
 
 After a bit of research, Andy and Mara come up with the general steps that allow Azure Pipelines to deploy to App Service.
 
