@@ -41,8 +41,7 @@ units:
 - learn.azdo.run-functional-tests-azure-pipelines.4-plan-ui-tests
 - learn.azdo.run-functional-tests-azure-pipelines.5-create-ui-tests
 - learn.azdo.run-functional-tests-azure-pipelines.6-plan-load-tests
-- learn.azdo.run-functional-tests-azure-pipelines.7-create-load-tests
-- learn.azdo.run-functional-tests-azure-pipelines.8-clean-up-environment
-- learn.azdo.run-functional-tests-azure-pipelines.9-summary
+- learn.azdo.run-functional-tests-azure-pipelines.7-clean-up-environment
+- learn.azdo.run-functional-tests-azure-pipelines.8-summary
 badge:
   uid: learn.azdo.run-functional-tests-azure-pipelines.badge
