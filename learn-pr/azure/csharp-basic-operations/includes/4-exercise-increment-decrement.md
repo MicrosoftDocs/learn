@@ -9,7 +9,7 @@ There are several techniques to perform an increment and decrement.  The followi
 > [!NOTE]
 > Operators like `+=`, `-=`, `*=`, `++`, and `--` are known as *compound assignment* operators because they compound some operation in addition to assigning the result to the variable.  The `+=` operator is specifically termed the *addition assignment* operator.
 
-### Step 1 - Write code to incremenet and decrement a value.
+### Step 1 - Write code to increment and decrement a value.
 
 ```csharp-interactive
 int value = 1;
