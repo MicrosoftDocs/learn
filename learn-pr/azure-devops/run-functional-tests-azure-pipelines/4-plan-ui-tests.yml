@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.run-quality-tests-release-pipeline.1-introduction
-title: Introduction
+uid: learn.azdo.run-functional-tests-azure-pipelines.4-plan-ui-tests
+title: Plan your UI tests
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Plan your UI tests
+  description: Plan your UI tests.
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/4-plan-ui-tests.md)]

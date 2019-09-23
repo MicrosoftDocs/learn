@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.run-quality-tests-release-pipeline.7-create-load-tests
+uid: learn.azdo.run-functional-tests-azure-pipelines.7-create-load-tests
 title: Exercise - Run load tests using Apache JMeter in your pipeline
 metadata:
   title: Exercise - Run load tests using Apache JMeter in your pipeline

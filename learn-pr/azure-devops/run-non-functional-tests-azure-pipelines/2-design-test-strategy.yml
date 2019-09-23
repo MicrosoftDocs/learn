@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.run-functional-tests-azure-pipelines.2-design-test-strategy
+title: Design a test strategy
+metadata:
+  title: Design a test strategy
+  description: Design a test strategy
+  ms.date: 09/01/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-design-test-strategy.md)]
