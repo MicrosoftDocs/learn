@@ -2,7 +2,7 @@ There are three different cloud deployment models. A cloud deployment model defi
 
 ## Explore the three deployment methods of cloud computing
 
-#### Public versus Private versus Hybrid
+### Public versus Private versus Hybrid
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yEv7]
 
@@ -57,7 +57,6 @@ This approach has several advantages:
 - You can ensure the configuration can support any scenario or legacy application
 - You have control (and responsibility) over security
 - Private clouds can meet strict security, compliance, or legal requirements
-- Economies at scale and integration with Azure Security Center
 
 #### Disadvantages
 
