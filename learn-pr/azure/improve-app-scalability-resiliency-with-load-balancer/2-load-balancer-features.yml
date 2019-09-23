@@ -29,12 +29,12 @@ quiz:
       explanation: "Five-tuple hash is the default."
   - content: "What is the main advantage of an availability set?"
     choices:
-    - content: "It allows virtual machines to be available across data center failures."
+    - content: "It allows virtual machines to be available across datacenter failures."
       isCorrect: false
-      explanation: "Availability zones, not sets, provide availability across data center failures."
+      explanation: "Availability zones, not availability sets, provide availability across datacenter failures."
     - content: "It allows virtual machines to be available across physical server failures."
       isCorrect: true
       explanation: "Availabilty sets allow virtual machines to remain available when a physical server fails."
     - content: "It allows virtual machines to be grouped into logical categories."
       isCorrect: false
-      explanation: "While this capability is a benefit, it is not the main reason for availability sets."
+      explanation: "Although this capability is a benefit, it's not the main reason for using an availability set."

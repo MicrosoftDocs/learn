@@ -6,8 +6,6 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
 ## Create an Azure Functions App using the Azure portal
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Click **Create a resource**, click **Compute**, and then click **Function App**.

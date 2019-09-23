@@ -9,8 +9,6 @@ In this unit, you will:
 - Expose the Weather API through the gateway endpoint
 - Restrict access based on a subscription key
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Deploy the Weather Web API
 
 You have developed a .NET Core app that returns weather information. The app includes Swashbuckle to generate OpenAPI documentation.

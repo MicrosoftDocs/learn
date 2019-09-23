@@ -14,7 +14,7 @@ The *:::no-loc text="ContosoPets.UI":::* project directory should be currently o
 
 1. Run the following .NET Core CLI command in the command shell at the current directory.
 
-	```bash
+	```dotnetcli
 	dotnet new page --name Create --namespace ContosoPets.Ui.Pages.Products 
 	```
 

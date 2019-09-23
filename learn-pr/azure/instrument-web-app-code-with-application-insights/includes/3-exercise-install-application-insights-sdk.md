@@ -2,8 +2,6 @@ Business stakeholders have given you permission to add the SDK to your video sha
 
 In this unit, we'll create a web app and add the Application Insights SDK to it. We'll also create an App Service instance for deploying our web app, and configure it to use Application Insights.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create the web app source code
 
 To create a web app, we'll use a quickstart template that's included with the ASP.NET Core command-line tools.

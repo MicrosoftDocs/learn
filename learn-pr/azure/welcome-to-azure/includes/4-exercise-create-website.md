@@ -6,7 +6,7 @@ Let's review some basic terms and get your first website up and running.
 
 ## What is an App Service?
 
-Azure App Service is an HTTP-based service that enables you to build and host many types of web-based solutions without managing infrastructure. For example, you can host web apps, mobile back ends, and RESTful APIs in several supported programming languages. Applications develop in .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python can run in and scale with ease on both Windows and Linux-based environments.
+Azure App Service is an HTTP-based service that enables you to build and host many types of web-based solutions without managing infrastructure. For example, you can host web apps, mobile back ends, and RESTful APIs in several supported programming languages. Applications developed in .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python can run in and scale with ease on both Windows and Linux-based environments.
 
 We aim to create a website in less than the time it takes to eat lunch. Therefore, we're not going to write any code and will instead deploy a predefined application from the Microsoft Azure Marketplace.
 
@@ -16,13 +16,11 @@ The Microsoft Azure Marketplace is an online store that hosts applications that
 
 We're going to use one of the WordPress application options from the Azure Marketplace for our website.
 
-[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
-
 ## Creating resources in Azure
 
 Typically, the first thing we'd do is to create a *resource group* to hold all the things that we need to create. The *resource group* allows us to administer all the services, disks, network interfaces, and other elements that potentially make up our solution as a unit. We can use the Azure portal to create and manage our solution's resource groups. However, keep in mind that you can also manage resources via a command line using the Azure CLI. The Azure CLI is a useful option should you need to automate the process in the future.
 
-You can use the following resource group **learn-wordpress-blog-rg** name in the exercises. You want to clean up the resources in this resource group at the end of this module so that you will not continue to be charged for them.
+In the free Azure sandbox environment you'll use the pre-created resource group **<rgn>[Resource Group Name]</rgn>**, and you don't need to do this step.
 
 ## Choosing a location
 
@@ -30,7 +28,7 @@ You can use the following resource group **learn-wordpress-blog-rg** name in the
 
 ## Create a WordPress website
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with your Azure subscription.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. In the top left of the Azure portal, select **Create a resource**.
 
@@ -45,26 +43,48 @@ You can use the following resource group **learn-wordpress-blog-rg** name in the
     ![Screenshot showing search results for the term WordPress](../media/4-search-select-wordpress.png)
 
     > [!NOTE]
-    > There are several selections available relating WordPress that you would have noticed in this step. Each of these items provides you with different options regarding the operating system and the amount of configuration to customize the application. Be aware that not all of these options are enabled in the sandbox. You'll have to try the different options in your personal Azure subscription where additional costs will apply.
+    > There are several selections available relating to WordPress that you would have noticed in this step. Each of these items provides you with different options regarding the operating system and the amount of configuration to customize the application. Be aware that not all of these options are enabled in the sandbox. You'll have to try the different options in your personal Azure subscription where additional costs will apply.
 
-1. In the newly presented blade, you'll typically find additional information about the item you're about to install. Make sure to review this information. Click the **Create** button when ready.
+1. In the newly presented panel, you'll typically find additional information about the item you're about to install. Make sure to review this information. Click the **Create** button when ready.
 
     [![](../media/4-create-site.png "Screenshot showing WordPress image information")](../media/4-create-site-expanded.png#lightbox)
 
-1. Recall from earlier, that we'll use a wizard type interface to create our website. The newly presented blade is our first step in this process. Here, we have to set some values for the required options.
+1. Recall from earlier, that we'll use a wizard type interface to create our website. The newly presented panel is our first step in this process. Here, we have to set some values for the required options.
 
     | Option | Value |
     |--- | --- |
     | **App Name** | Choose a unique for the App name. It will form part of a Fully Qualified Domain Name (FQDN).|
-    | **Subscription** | Select the appropriate subscription. |
-    | **Resource Group** | Create a new Resource Group **learn-wordpress-blog-rg**. We'll reuse this resource group in later exercises. |
+    | **Subscription** | Make sure the *Concierge Subscription* is selected. |
+    | **Resource Group** | Select the existing Resource Group "**<rgn>[sandbox resource group name]</rgn>**" from the drop-down list. |
     | **Database Provider** | You'll notice that you have two provider options. The default provider is an **Azure database for MySQL**. The second option is the **MySQL in App** provider that allows us to run a local MySQL database instance with our app. We're going to use the **MySQL in App** provider for our website to simplify our deployment. Pay attention to the call out though, MySQL in App provider isn't intended for production environments.|
-    | **App Service plan/location** | The App Service plan/location allows you to select the capabilities and limits available to your application. Keep in mind that different locations sometimes also have different resources available. Leave this value set at the current default. We'll explore App Service plans further in our next exercise. |
+    | **App Service plan/location** | The App Service plan/location allows you to select the capabilities and limits available to your application. Keep in mind that different locations sometimes also have different resources available. We'll change our App Service plan in the next step. |
     | **Application Insights** | Application Insights allows you to monitor the performance of your application using powerful analytics tools. Leave the value as set by the default configuration. |
 
-    Here is a screenshot to give you an idea of the configuration values. Finally, click on the **Create** button to start the deployment of your new site.
+    Here is a screenshot to give you an idea of the configuration values. 
 
     [![](../media/4-config-info-create.png "Screenshot showing app service configuration information")](../media/4-config-info-create-expanded.png#lightbox)
+
+ 1. We're going to modify our *App service plan* to allow us to scale our website in our next exercise. Click on the **App Service plan/location** link.
+
+    !["Screenshot showing App Service plan link"](../media/4-config-app-service-plan.png)
+
+1. In the *App Service plan* panel, click on the **Create new** button.
+
+    !["Screenshot showing the Create new App Service plan button"](../media/4-new-app-service-plan.png)
+
+1. In the *New App Service plan* panel, enter a **name** for the new service plan and then click on **Pricing tier**.
+
+    !["Screenshot showing the New App Service Plan configuration"](../media/4-new-service-plan-config.png)
+
+1. The *Spec Picker* allows us to select a new pricing tier for our application. This screen opens to the *Production* tab, with the S1 pricing tier selected. We'll select a new pricing tier from the *Dev / Test* tab for our website.
+
+    Click on the **Dev / Test** tab and select the **F1** pricing tier. Then click on **Apply**.
+
+    [![](../media/4-select-pricing-tier.png "Screenshot showing the notification information")](../media/4-select-pricing-tier-expanded.png#lightbox)
+
+1. In the *New App Service plan* panel, click **OK** to create the new plan and close the panel.
+
+1. Finally, click on the **Create** button to start the deployment of your new site.
 
 ## Verify your website is running
 

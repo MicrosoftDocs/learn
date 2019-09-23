@@ -1,19 +1,19 @@
 ### YamlMime:Module
 uid: learn.improve-app-scalability-resiliency-with-load-balancer
 metadata:
-  title: Improve application scalability and resiliency with Azure Load Balancer
+  title: Improve application scalability and resiliency by using Azure Load Balancer
   description: In this module, you will learn how to use Azure Load Balancer to distribute traffic between multiple virtual servers or services.
   ms.date: 08/31/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Improve application scalability and resiliency with Azure Load Balancer
-summary: Discuss the different Load Balancers in Azure and how to choose the right Azure Load Balancer solution to meet your requirements.
+title: Improve application scalability and resiliency by using Azure Load Balancer
+summary: Discuss the different load balancers in Azure and how to choose the right Azure load balancer solution to meet your requirements.
 abstract: | 
   In this module, you will:
   - Identify the features and capabilities of Azure Load Balancer
-  - Deploy and configure an Azure Load Balancer
+  - Deploy and configure an Azure load balancer
 prerequisites: | 
   - Basic knowledge of networking concepts
   - Basic knowledge of Azure virtual machines
@@ -25,6 +25,8 @@ roles:
 - administrator
 products:
 - azure
+- azure-load-balancer
+- azure-virtual-network
 units:
 - learn.improve-app-scalability-resiliency-with-load-balancer.1-introduction
 - learn.improve-app-scalability-resiliency-with-load-balancer.2-load-balancer-features
