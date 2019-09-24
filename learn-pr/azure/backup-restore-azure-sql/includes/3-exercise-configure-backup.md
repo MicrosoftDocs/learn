@@ -14,7 +14,7 @@ Let's use the Azure CLI to create an Azure SQL Server and database instance.
     SERVER_NAME=ERPServer-$RANDOM
     ```
 
-1. Run the `az sql server create` command to create an Azure SQL server to store the database. Replace `<password>` with a password of your choice.
+1. Run the `az sql server create` command to create an Azure SQL server to store the database. Replace `<password>` with a complex password of your choice.
 
     ```azurecli
     az sql server create \
