@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.csharp-arrays.solution
+uid: learn.languages.csharp-basic-formatting.solution
 title: Solution
 metadata:
   title: Solution
-  description: Solution to the coding challenge in this module.
-  ms.date: 09/19/2019
+  description: View one possible solution to the challenge of in this module.
+  ms.date: 09/17/2019
   author: bobtabor-msft
   ms.author: rtabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 2
+durationInMinutes: 3
 azureSandbox: false
 interactive: csharp
 content: |
-  [!include[](includes/5-solution.md)]
+  [!include[](includes/6-solution.md)]

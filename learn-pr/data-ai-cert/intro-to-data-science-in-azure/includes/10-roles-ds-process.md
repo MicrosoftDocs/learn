@@ -38,5 +38,5 @@ Common tools the data scientist will use include but are not limited to:
 
 - Python and related packages
 - R and related packages
-- Apache Spark Databricks
-- Microsoft Azure Databricks
+- Apache Spark
+- Azure Databricks
