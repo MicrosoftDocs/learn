@@ -2,27 +2,26 @@ Although the default Azure SQL Database configuration includes automated backups
 
 Now that you have planned a comprehensive backup strategy for Azure SQL Database and your company's ERP system, it's time to implement it.
 
-Here, you will create a database in Azure and then configure backups. You will also add some content to the database.
+Here, you will create a database in Azure and then configure backups. You'll set the retention to 28 days, to ensure you have 4 weeks of backups retained, per your policy. You will also add some content to the database.
 
 ## Create a server and database
 
-Let's use the Azure CLI to create an Azure SQL Server and database instance in that resource group:
+Let's use the Azure CLI to create an Azure SQL Server and database instance.
 
-1. Run these commands in the Cloud Shell to set up some variables for the SQL Server creation. Replace `<password>` with a password of your choice.
+1. Run this command in the Azure Cloud Shell to set up some variables for the SQL Server creation.
 
     ```bash
     SERVER_NAME=ERPServer-$RANDOM
-    ADMIN_PASSWORD=<password>
     ```
 
-1. Run the `az sql server create` command to create an Azure SQL server to store the database.
+1. Run the `az sql server create` command to create an Azure SQL server to store the database. Replace `<password>` with a password of your choice.
 
     ```azurecli
     az sql server create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name $SERVER_NAME \
         --admin-user dbadmin \
-        --admin-password $ADMIN_PASSWORD
+        --admin-password <password>
     ```
 
 1. Run the `az sql db create` command to create a database.
@@ -37,7 +36,7 @@ Let's use the Azure CLI to create an Azure SQL Server and database instance in t
 
 ## Configure the database retention policy
 
-In the portal, you can examine the default retention policy and adapt it to your needs:
+In the portal, you can examine the default retention policy and adapt it to your needs.
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select the **ERPServer-NNNN** database server that you created.
 
@@ -55,7 +54,7 @@ In the portal, you can examine the default retention policy and adapt it to your
 
 By default, Azure SQL Database blocks network access to the server. Let's enable both your IP address and Azure services to access the server so that we can run queries from Cloud Shell and the Azure portal. By adding your IP address, you could also connect directly from your local device.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select the **ERPServer** database server.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select the **ERPServer-NNNN** database server.
 
 1. Under **Security**, select **Firewalls and virtual networks**.
 
@@ -107,3 +106,5 @@ Now let's add a table and a sample record to the database. It is helpful to have
     The **Results** window displays the record for Lucas Ball.
 
     ![Query the person table in the sql-erp-db database](../media/3-query-person-table.png)
+
+You now have an Azure SQL Database that is populated with data, and you've set up retention policy to ensure you have four weeks of backups.
