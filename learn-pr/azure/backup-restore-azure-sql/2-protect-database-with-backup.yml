@@ -29,7 +29,7 @@ quiz:
       explanation: "Azure schedules a full backup to run as soon as the database is created."
   - content: "Where are Azure SQL Server backups stored, by default?"
     choices:
-    - content: "In the on-premise location that you specify"
+    - content: "In the on-premises location that you specify"
       isCorrect: false
       explanation: "The default location for backups is a read-access geo-redundant storage account that is replicated to a paired data center."
     - content: "In a locally redundant storage account"
