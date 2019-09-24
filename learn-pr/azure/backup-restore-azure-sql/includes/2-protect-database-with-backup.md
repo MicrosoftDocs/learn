@@ -14,7 +14,7 @@ Azure SQL Database uses SQL Server technology to make these types of backups:
 - **Differential backups**: In a differential backup, everything that changed since the last full backup is backed up. SQL Database makes a differential backup every 12 hours.
 - **Transactional backups**: In a transactional backup, the contents of the transaction logs are backed up. SQL Database makes a transaction log backup every five to 10 minutes. Transactional backups enable administrators to restore up to a specific point in time, which includes the moment before data was mistakenly deleted.
 
-These backups can be used to restore an existing database, restore a deleted database up to the point in time when it was deleted, restore the database to an alternative location or region, and to restore a database from a long-term backup using Long Term Retention (LTR). When a failure occurs, you may lose changes from up to five minutes ago, if the live transaction logs are lost. If the transaction logs are intact, you can restore up to the moment that the failure occurred. 
+These backups can be used to restore an existing database, restore a deleted database up to the point in time when it was deleted, restore the database to an alternative location or region, and to restore a database from a long-term backup using long term retention (LTR). When a failure occurs, you may lose changes from up to five minutes ago, if the live transaction logs are lost. If the transaction logs are intact, you can restore up to the moment that the failure occurred.
 
 ## Backups and service tiers
 
@@ -28,7 +28,7 @@ The default backup retention period is set to seven days when you create a data
 
 ## How often do backups happen?
 
-There are backups for point-in-time restore and there are backups for Long Term Retention (LTR).
+There are backups for point-in-time restore and there are backups for long term retention.
 
 Point-in-time restore is fully supported by SQL databases. They automatically create full backups, differential backups, and transaction log backups. The first full backup is scheduled as soon as the database is created. It usually completes within 30 minutes but may take longer if the database is of significant size. Following the first full backup, all further backups are scheduled automatically and managed silently in the background. The exact timing of all database backups is determined by the SQL Database service as it balances the overall system workload. You cannot change or disable the backup jobs.
 
