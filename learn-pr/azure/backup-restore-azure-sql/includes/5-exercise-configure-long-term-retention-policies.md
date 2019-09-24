@@ -64,7 +64,7 @@ You can also configure long-term retention policies by using PowerShell. Let's c
         -ServerName $sqlserver.ServerName `
         -DatabaseName sql-erp-db `
         -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
-        -WeeklyRetention P8W
+        -WeeklyRetention P8W `
         -MonthlyRetention P12M `
         -YearlyRetention P5Y `
         -WeekOfYear 1
