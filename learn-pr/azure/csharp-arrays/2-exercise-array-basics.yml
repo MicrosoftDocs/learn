@@ -11,5 +11,7 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 12
+azureSandbox: false
+interactive: csharp
 content: |
   [!include[](includes/2-exercise-array-basics.md)]
