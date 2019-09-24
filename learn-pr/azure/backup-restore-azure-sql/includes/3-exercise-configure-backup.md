@@ -60,7 +60,7 @@ By default, Azure SQL Database blocks network access to the server. Let's enable
 
 1. At the top of the page, select **Add client IP**.
 
-1. Under **Allow access to Azure services**, select **ON**:
+1. Under **Allow access to Azure services**, select **ON**.
 
     ![Add a client IP address rule](../media/3-add-client-ip.png)
 
@@ -74,7 +74,7 @@ Now let's add a table and a sample record to the database. It is helpful to have
 
 1. Select **Query editor**, and then sign in with the credentials **dbadmin** and the password you created previously.
 
-1. To create a table, in the **Query 1** window, type this SQL command, and then select **Run**:
+1. To create a table, in the **Query 1** window, type this SQL command, and then select **Run**.
 
     ```sql
     CREATE TABLE Person
@@ -88,7 +88,7 @@ Now let's add a table and a sample record to the database. It is helpful to have
 
     ![Create a new table in the sql-erp-db database](../media/3-create-table.png)
 
-1. To add a record, select **+ New Query** and then, in the **Query 2** window, type this SQL command, and then select **Run**:
+1. To add a record, select **+ New Query** and then, in the **Query 2** window, type this SQL command, and then select **Run**.
 
     ```sql
     INSERT INTO PERSON (FirstName, LastName, DateOfBirth)
@@ -97,7 +97,7 @@ Now let's add a table and a sample record to the database. It is helpful to have
 
     ![Insert a record into the sql-erp-db database](../media/3-insert-record.png)
 
-1. To query the database, select **+ New Query** and then, in the **Query 3** window, type this SQL command, and then select **Run**:
+1. To query the database, select **+ New Query** and then, in the **Query 3** window, type this SQL command, and then select **Run**.
 
     ```sql
     SELECT * FROM dbo.Person
