@@ -40,7 +40,7 @@ In the portal, you can examine the default retention policy and adapt it to your
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select the **ERPServer-NNNN** database server that you created.
 
-1. Under **Settings**, select **Manage Backups**.
+1. On the left in the **Settings** section, select **Manage Backups**.
 
 1. On the **Configure policies** tab, select the **sql-erp-db** database, and then select **Configure retention**.
 
@@ -54,9 +54,7 @@ In the portal, you can examine the default retention policy and adapt it to your
 
 By default, Azure SQL Database blocks network access to the server. Let's enable both your IP address and Azure services to access the server so that we can run queries from Cloud Shell and the Azure portal. By adding your IP address, you could also connect directly from your local device.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select the **ERPServer-NNNN** database server.
-
-1. Under **Security**, select **Firewalls and virtual networks**.
+1. On the left in the **Security** section, select **Firewalls and virtual networks**.
 
 1. At the top of the page, select **Add client IP**.
 
@@ -64,13 +62,13 @@ By default, Azure SQL Database blocks network access to the server. Let's enable
 
     ![Add a client IP address rule](../media/3-add-client-ip.png)
 
-1. Select **Save**, and then when the rule has been saved, select **OK**.
+1. Select **Save**. When the rule has been saved, select **OK**.
 
 ## Add data to the database
 
 Now let's add a table and a sample record to the database. It is helpful to have some data in the database to to validate that our backups and restores work later in the module.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select the **sql-erp-db** database.
+1. In the **Settings** section, select **SQL databases**, then select the **sql-erp-database**.
 
 1. Select **Query editor**, and then sign in with the credentials **dbadmin** and the password you created previously.
 

@@ -1,10 +1,17 @@
 Your retail organization must comply with data protection regulations in your jurisdiction. You need to keep all data for two years and you want to keep one backup each month for six months. You have been asked to configure a long-term retention policy in Azure SQL Database to meet these requirements.
 
-Here, you will use the Azure portal to set up a policy and then check it in PowerShell.
+Here, you will use the Azure portal to set up a policy and then check it in PowerShell. You need to set up the following retention policy to meet your regulatory requirements:
+
+|  |  |
+|---------|---------|
+| Weekly     | 8 weeks   |
+| Monthly     |  12 months       |
+| Yearly     |  5 years       |
+
 
 ## Use the Azure portal to configure long-term retention
 
-Let's start by configuring the two year retention by using the portal.
+Let's start by configuring the five year retention by using the portal.
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select **ERPServer-NNNN**.
 
@@ -22,15 +29,9 @@ Let's start by configuring the two year retention by using the portal.
 
 ## Use PowerShell to configure long-term retention
 
-You can also create long-term retention policies by using PowerShell.
+You can also configure long-term retention policies by using PowerShell. Let's configure the remainder of the policy this way.
 
-1. Run this command to start PowerShell in the Cloud Shell.
-
-    ```bash
-    pwsh
-    ```
-
-1. In the Cloud Shell, to determine the name of your database server, run this command, and then make a note of the server name.
+1. In the Cloud Shell, run this command to set a variable to the value of your SQL server.
 
     ```powershell
     $sqlserver=Get-AzSqlServer
@@ -41,28 +42,31 @@ You can also create long-term retention policies by using PowerShell.
     ``` powershell
     Get-AzSqlDatabase `
         -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
-        -ServerName $sqlserver `
+        -ServerName $sqlserver.ServerName `
         | Get-AzSqlDatabaseLongTermRetentionPolicy
     ```
+
+    This will output the retention polices for all databases on the server. In this case you should see one policy for the **master** database, and one policy for the **sql-erp-db** database.
 
 1. Run this command to view the long-term retention policies for the **sql-erp-db** database.
 
     ``` powershell
     Get-AzSqlDatabaseBackupLongTermRetentionPolicy `
-        -ServerName $sqlserver `
+        -ServerName $sqlserver.ServerName `
         -DatabaseName sql-erp-db `
         -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
     ```
 
-1. To create a long-term retention policy via PowerShell, run this command.
+1. Now lets configure the remainder of our policy to meet the requirements specified earlier. To configure a long-term retention policy via PowerShell, run this command.
 
     ``` powershell
     Set-AzSqlDatabaseBackupLongTermRetentionPolicy `
-        -ServerName $sqlserver `
+        -ServerName $sqlserver.ServerName `
         -DatabaseName sql-erp-db `
         -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
-        -MonthlyRetention P6M `
-        -YearlyRetention P2Y `
+        -WeeklyRetention P8W
+        -MonthlyRetention P12M `
+        -YearlyRetention P5Y `
         -WeekOfYear 1
     ```
 
@@ -70,13 +74,15 @@ You can also create long-term retention policies by using PowerShell.
 
     ```powerShell
     Get-AzSqlDatabaseBackupLongTermRetentionPolicy `
-        -ServerName $sqlserver `
+        -ServerName $sqlserver.ServerName `
         -DatabaseName sql-erp-db `
         -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
     ```
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select **ERPServer**
+1. You can also confirm this in the portal. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select **ERPServer**
 
 1. Under **Settings**, select **Manage Backups**, and then the list of databases, check the **sql-erp-db** long-term retention properties.
 
     ![Completed long-term retention settings](../media/5-completed-ltr-settings.png)
+
+You've now configured a retention policy and validated that your retention policy meets your organizational and regulatory requirements.
