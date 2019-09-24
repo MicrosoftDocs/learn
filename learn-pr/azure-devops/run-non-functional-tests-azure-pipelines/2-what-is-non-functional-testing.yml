@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.run-non-functional-tests-azure-pipelines.2-what-is-non-functional-testing
+title: What is non-functional testing?
+metadata:
+  title: What is non-functional testing?
+  description: What is non-functional testing?
+  ms.date: 09/01/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-what-is-non-functional-testing.md)]
