@@ -107,4 +107,4 @@ Now let's add a table and a sample record to the database. It is helpful to have
 
     ![Query the person table in the sql-erp-db database](../media/3-query-person-table.png)
 
-You now have an Azure SQL Database that is populated with data, and you've set up retention policy to ensure you have four weeks of backups.
+You now have an Azure SQL Database that is populated with data, and you've set up retention policy to ensure you have four weeks of backups immediately available for restore.
