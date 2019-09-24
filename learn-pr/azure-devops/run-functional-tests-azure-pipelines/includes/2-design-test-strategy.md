@@ -36,7 +36,7 @@ _Non-functional tests_ check characteristics like performance and reliability. A
 
 There are many kinds of functional tests. Each kind varies by the functionality you need to test for and the time (or effort) that's typically required to run it.
 
-Here are seven kinds functional tests software teams commonly run.
+Here are some of the more popular kinds of functional tests software teams commonly run.
 
 ### Smoke testing
 

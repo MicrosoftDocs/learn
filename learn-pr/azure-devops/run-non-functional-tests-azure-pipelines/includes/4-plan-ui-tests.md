@@ -1,92 +1,185 @@
-In this section, you follow along with Amita and Andy as they talk about how to incorporate Selenium UI tests intp their build and release pipeline. They begin by walking through the tests that Amita normally performs manually. Then they map Amita's manual steps to automated test cases.
+TODO: Make Results.xml Report.xml, or JMeter.xml?
 
-## Run UI tests manually
+---
 
-Amita is waiting for Andy to show up. Andy is going to help Amita write a UI test that will go into the pipeline. Amita scribbles in her notebook, crosses something out, mutters, and then starts tearing out the page. Andy walks in. "Hi," he says. "You don't look happy."
+In this section, you follow along with Tim and Mara as they explore load testing and add load tests to the pipeline. The load tests will use Apache JMeter to access the web application from many simulated users at the same time. The tests will fetch the web content from the app running on Azure App Service, in the _Staging_ environment.
 
-**Amita:** I'm not happy. I'm trying to figure out how to write an automated test but I don't know where to start. I don't code. I feel like I'm obsolete.
+Tim starts by bringing up the Apache JMeter user interface on his laptop and running a basic test plan. Then, they export the test plan to a file that can be run from the command line. Finally, Mara and Tim add tasks to Azure Pipelines that run the load tests during _Staging_.
 
-**Andy:** Wow, I really don't think it's that bad. For one thing, we'll always need someone who can keep the user's perspective in mind. There's no way to automate that. For another, no one starts out knowing how to do this. We were all beginners. Hopefully, I can make the learning process a bit easier.
+> [!NOTE]
+> For brevity, you don't need to install Apache JMeter on your local computer. For this part, just read along.
 
-I think the best way to start is to automate something you already do all the time. Pick a UI test you understand. Then let's walk through it and write down the steps. Then we'll figure out how to automate those steps. Where do you want to start?
+## Run load tests from Apache JMeter
 
-Amita takes a deep breath.
+Mara drops in to see Tim.
 
-**Amita:** Let's automate the modal window tests. When I click on certain things, like the **Download game** button, for example, I want to verify that the correct modal window appears. Then, when I click away from the modal window, I want to verify that the modal window disappears and that the main window is again active.
+**Mara:** Hi there, are you ready to look at those load tests?
 
-**Andy:** That sounds like a great place to start. You run the test and I'll write down the procedure.
+**Tim:** I sure am.
 
-Mara opens her Windows laptop and launches Google Chrome. She goes to the web app and verifies that the home page comes up.
+**Mara:** I've never written a load test. Remind me, what tool do you use to run them?
+
+**Tim:** I use Apache JMeter. It's an open-source load testing tool for analyzing and measuring performance. The report it generates is an XML file. I normally use its graphical user interface, but I'm hoping we can integrate it into the pipeline.
+
+**Mara:** I think we can. If the report is in a format that Azure Pipelines understands, it'll show you a graph. I don't think we need any special hardware to run the tests, so we'll use a Microsoft-hosted agent to run the tests. _Staging_ sounds like the right place to run the tests because that's the stage that most resembles production.
+
+I think it's a great idea to start with tools and tests you're familiar with. Do you have any kind of script that you normally use for load testing? Perhaps we could convert it to an automated test.
+
+**Tim:** Let me walk you through my process.
+
+### Create the test plan
+
+Tim brings up Apache JMeter on his Linux computer. Here's what it looks like.
+
+![](../media/apache-jmeter-new.png)
+
+Tim then creates a new test plan file, named *LoadTest.jmx*. To it, he adds a **Thread Group**. Each simulated user runs on its own thread; a thread group controls the number of users and the number of request each user makes.
+
+This example shows 10 simulated users (threads); each user makes 10 requests. This forms a total of 100 requests.
+
+![](../media/apache-jmeter-thread-group.png)
+
+A _sampler_ is a single request made by JMeter. JMeter can query servers over HTTP, FTP, TCP, and several other protocols. Samplers generate the results that are added to the report.
+
+Next, Tim adds **Http Request Defaults** and an **Http Request** sampler to the thread group. He provides the hostname of the _Space Game_ website that's running in their _Staging_ environment on Azure App Service.
+
+![](../media/apache-jmeter-http-request.png)
 
 > [!TIP]
-> For reference, Microsoft hosts a version of the [Space Game](http://tailspin-spacegame-web.azurewebsites.net?azure-portal=true) website. Go there if you want to follow along with Amita's manual tests.
+> For reference, Microsoft hosts a version of the [Space Game](http://tailspin-spacegame-web.azurewebsites.net?azure-portal=true) website. Go there if you want to follow along with Tim's load tests.
 
-**Andy:** OK. What do you check next?
+**Tim:** This is a pretty basic test plan. There are many other options we can configure later. And 100 requests is a good place to start getting meaningful results.
 
-**Amita:** I check that when I click the **Download game** button, the correct modal window appears.
+### Run the test plan
 
-Amita clicks the **Download game** button and sees the modal window appear.
+**Tim:** You can run your test plan from the JMeter graphical user interface. But for load tests, JMeter recommends that you run the test plan from the command line.
 
-![](../media/4-website-download-game-modal.png)
+Tim opens up a terminal window and runs this test plan, like this:
 
-**Andy:** Great. What modal windows do you check next?
+```bash
+apache-jmeter-5.1.1/bin/./jmeter -n -t LoadTest.jmx -o Results.xml
+```
 
-**Amita:** Next, I check the game screens. There are four of them. After that, I click the top player on the leaderboard and verify that the player's profile is shown.
+The `-n` argument specifies to run JMeter in non-GUI mode. The `-t` argument specifies the test plan file, *LoadTest.jmx*. The `-o` argument specifies the report file, *Results.xml*.
 
-Amita clicks on each of the four thumbnail images to show the example game screens.
+JMeter runs and produces the report file, *Results.xml*. Here's an example of this file that shows the first few results:
 
-![](../media/4-website-game-screens.png)
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="180" it="0" lt="95" ct="35" ts="1569306009772" s="true" lb="HTTP Request" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="40871" sby="144" ng="1" na="1">
+  <java.net.URL>http://tailspin-spacegame-web.azurewebsites.net/</java.net.URL>
+</httpSample>
+<httpSample t="174" it="0" lt="96" ct="38" ts="1569306009955" s="true" lb="HTTP Request" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="40869" sby="144" ng="1" na="1">
+  <java.net.URL>http://tailspin-spacegame-web.azurewebsites.net/</java.net.URL>
+</httpSample>
+<httpSample t="160" it="0" lt="121" ct="35" ts="1569306010131" s="true" lb="HTTP Request" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="40879" sby="144" ng="2" na="2">
+  <java.net.URL>http://tailspin-spacegame-web.azurewebsites.net/</java.net.URL>
+</httpSample>
+```
 
-Next, Amita clicks on the top player on the leaderboard and sees the player's profile.
+**Tim:** Each sample produces a node in the report. The `t` attribute specifies the response time in milliseconds. That's what I'm interested in. Here you see three requests that took 180ms, 174ms, and 160ms.
 
-![](../media/4-website-leaderboard.png)
+**Mara:** Earlier, you mentioned ideal request times. What were they?
 
-**Amita:** That covers the modal window tests. I run these tests on Windows because that's how most players visit our site. I run the tests on Chrome, and when I have time I run them again on Firefox and Edge.
+**Tim:** Under typical load, I like to see average request times of less than one second. No more than 10% of requests should take more than one second. You can configure JMeter to report statistics such as the minimum, maximum, and average response times or the standard deviation. I run a tool that I wrote to answer these questions.
 
-If I had the time, I would run everything again on macOS and Linux, just to ensure we're compatible with any operating system our users visit the site from. But there are many other tests that I need to run.
+**Mara:** This is very interesting! And the way you run this will fit perfectly into our pipeline. You created the test plan through the JMeter GUI, but you ran the test plan from the command line. We just need to add your test plan to our Git repository and run JMeter in non-GUI mode from the command line.
 
-## Get the XPath expressions for the HTML elements
+Before we do that, one part remains. We can visualize the results if we provide the them in a format Azure Pipelines understands. Azure Pipelines can parse an XML file that contains test results, but it needs to match a certain format. Supported formats include CTest, JUnit (including PHPUnit), NUnit 2, NUnit 3, Visual Studio Test (TRX), and xUnit 2. I bet we can write an XSLT that converts the JMeter results to JUnit.
 
-Here, you follow along with Amita and Andy as they collect the XPath expressions for the buttons that Amita clicks and the resulting modal windows. XPath is a query language that lets you retrieve information about an XML element, and also works with HTML.
+**Tim:** Let's give it a try.
 
-**Andy:** OK. I think this is enough to get started with. Having just a few tests running in the pipeline will give you a place to add more. I can see why these tests take so long and can be so frustrating. You're going to love automating it, I promise. Here's what we'll do.
+## Transform the report to JUnit
 
-We'll get the XPath expression for each button you click as well as the modal window that appears. The automated tests that we write can use these expressions to know which buttons to click and which modal windows to expect.
+XSLT stands for XSL Transformations, or eXtensible Stylesheet Language Transformations. An XSLT file resembles a XML file, but enables you to transform an XML document to another XML format. Here, Mara and Tim write an XSLT that converts JMeter output to JUnit.
 
-Let's start by getting the XPath expression for the **Download game** button.
+Recall that Tim has these requirements for his load tests:
 
-1. In Google Chrome, go to the _Space Game_ home page.
-1. Right click the **Download game** button, then select **Inspect**.
+* The average request time should be less than one second.
+* No more than 10% of requests should take more than one second.
 
-    You see the developer tools window open. The HTML code for the **Download game** button is highlighted.
+The XSLT that Mara and Tim create checks these requirements.
 
-    ![](../media/4-website-inspect-button.png)
+After refilling their coffee mugs, Mara and Tim write their XSLT. Here's what it looks like:
 
-1. Right click on the highlighted text, point to **Copy** and then select **Copy XPath**.
-1. Paste the text into a document somewhere. We'll use it later.
+```xml
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:math="http://exslt.org/math">
+  <xsl:output method="xml" indent="yes" encoding="UTF-8"/>
+  <xsl:template match="/testResults">
+    <xsl:variable name="times" select="./httpSample/@t" />
+    <xsl:variable name="failures" select="./httpSample/assertionResult/failureMessage" />
+    <xsl:variable name="threshold" select="1000" />
+    <testsuite>
+      <xsl:attribute name="tests"><xsl:value-of select="count($times)" /></xsl:attribute>
+      <xsl:attribute name="failures"><xsl:value-of select="count($failures)" /></xsl:attribute> 
+      <testcase>
+          <xsl:variable name="avg-time" select="sum($times) div count($times)" />
+          <xsl:attribute name="name">Average Response Time</xsl:attribute>
+          <xsl:attribute name="time"><xsl:value-of select="format-number($avg-time div 1000,'#.##')"/></xsl:attribute>
+          <xsl:if test="$avg-time > $threshold">
+            <failure>Average response time of <xsl:value-of select="format-number($avg-time,'#.##')"/> exceeds <xsl:value-of select="$threshold"/> ms threshold.</failure>
+          </xsl:if> 
+      </testcase>
+      <testcase>
+          <xsl:variable name="exceeds-threshold" select="count($times[. > $threshold])" />
+          <xsl:attribute name="name">Max Response Time</xsl:attribute>
+          <xsl:attribute name="time"><xsl:value-of select="math:max($times) div 1000"/></xsl:attribute>
+          <xsl:if test="$exceeds-threshold > count($times) * 0.1">
+            <failure><xsl:value-of select="format-number($exceeds-threshold div count($times) * 100,'#.##')"/>% of requests exceed <xsl:value-of select="$threshold"/> ms threshold.</failure>
+          </xsl:if>
+      </testcase>
+    </testsuite>
+  </xsl:template>
+</xsl:stylesheet>
+```
 
-    The XPath expression for the **Download game** button is `/html/body/div/div/section[2]/div[2]/a`.
+We won't cover how XSL works in depth here, but to summarize, this file first collects the following data from the JMeter output:
 
-1. Click the **Download game** button, then repeat steps 2-4 to get the XPath expression for the modal window that appears.
-1. Repeat the process for the four game screens and the top player on the leaderboard.
+* Each HTTP request time. It does so by selecting the `t` attribute from each `httpSample` element.
 
-    > [!NOTE]
-    > You don't need to actually repeat the process. We'll provide all of the XPath expressions you need in the next section, when you run the automated tests.
+    (`./httpSample/@t`)
+* Each failure message.
 
-## Plan the automated tests
+    (`./httpSample/assertionResult/failureMessage`)
 
-**Amita:** OK. We have the XPath expression for each button I click and the resulting modal window. What's next?
+THe XML also sets a threshold value to 1,000 ms. This is the maximum response time that Tim defined earlier.
 
-**Andy:** I think we're ready to write our tests. Here's what we'll do:
+Given these variables, the XSL outputs the total number of tests and the total number of failures. It then outputs these two test cases.
 
-1. Create an NUnit project that includes Selenium. The project will exist along with the source code for the app.
-1. Write a test case that uses automation to click the specified link and that verifies that the expected modal window appears.
-1. Use the XPath data we saved to specify the parameters to the test case method. This creates a series of tests.
-1. Configure the tests to run on Chrome, Firefox and Edge. This creates a matrix of tests.
-1. Run the tests and watch each web browser come up automatically.
-1. Watch as Selenium automatically runs through the series of tests for each browser.
-1. See in the console window that all the tests pass.
+1. The average response time, and a failure if the average exceeds the threshold of 1,000 ms.
+1. The maximum response time, and a failure if the more than 10% of requests exceed the threshold of 1,000 ms.
 
-**Amita:** I'll be excited to see how quickly the tests run. Can we try this now?
+The results of the XSLT match JUnit format, which Azure Pipelines understands. Mara and Tim name their XSLT file *JMeter2JUnit.xsl*.
 
-**Andy:** Absolutely. Let's move over to my laptop where I have the app code ready.
+**Mara:** Next, we need an XSLT processor. Let's use **xsltproc**.
+
+Tim installs **xsltproc** like this:
+
+```bash
+sudo apt-get install xsltproc
+```
+
+**Mara:** Now, we need to transform the JMeter report to JUnit. Tim runs **xsltproc** like this:
+
+```bash
+xsltproc JMeter2JUnit.xsl Results.xml > JUnit.xml
+```
+
+Here's the resulting JUnit file, *JUnit.xml*:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:math="http://exslt.org/math" tests="100" failures="0">
+  <testcase name="Average Response Time" time="0.17"/>
+  <testcase name="Max Response Time" time="0.373"/>
+</testsuite>
+```
+
+In this example, the average response time is 170 ms. The maximum response time is 373 ms. Neither test case generates a failure because both times fall below the threshold of 1,000 ms.
+
+**Mara:** The tests succeeded! The test results stay in the pipeline; they do not go in source control. But your test plan does go in source control. And because it's an plain text file and not a binary file, we can examine the Git history to track how the test plan changes over time.
+
+**Tim:** These results look promising. I think we're ready to try this in the pipeline. Can we do that now?
+
+**Mara:** Absolutely. We can do this from your computer since you have code for the _Space Game_ website ready.
