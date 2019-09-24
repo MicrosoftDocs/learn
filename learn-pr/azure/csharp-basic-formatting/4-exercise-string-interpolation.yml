@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-basic-formatting.exercise-string-interpolation
+title: Exercise - String Interpolation
+metadata:
+  title: Exercise - String Interpolation
+  description: Combine string templates with variable data into new strings.
+  ms.date: 09/17/2019
+  author: bobtabor-msft
+  ms.author: rtabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 4
+azureSandbox: false
+interactive: csharp
+content: |
+  [!include[](includes/4-exercise-string-interpolation.md)]
