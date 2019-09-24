@@ -12,5 +12,6 @@ metadata:
 title: Exercise - Recover data by restoring an Azure SQL Database
 durationInMinutes: 7
 azureSandbox: true
+interactive: powershell
 content: |
   [!include[](includes/7-exercise-restore-database.md)]
