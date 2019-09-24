@@ -32,7 +32,7 @@ In this unit, the Azure SQL database's tables will be populated with data. You'l
 
     Inclusion of the preceding namespace resolves the reference to `OrderService` in the previous step.
 
-1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
 
 1. Run the following .NET Core CLI command to run the app in development mode:
 
@@ -58,7 +58,7 @@ In this unit, the Azure SQL database's tables will be populated with data. You'l
 1. Run the following command to test retrieval of a distinct order:
 
     ```bash
-    curl -k -s https://localhost:5001/api/Orders/2 | jq
+    curl -k -s https://localhost:5001/Orders/2 | jq
     ```
 
     The preceding command sends an HTTP GET request to the `GetById` action of `OrdersController` in *:::no-loc text="ContosoPets.Api":::*. The order corresponding to ID 2 is displayed in JSON format.
@@ -68,7 +68,7 @@ In this unit, the Azure SQL database's tables will be populated with data. You'l
     ```bash
     curl -k -i -X PUT \
         -H "Content-Length: 0" \
-        https://localhost:5001/api/Orders/2
+        https://localhost:5001/Orders/2
     ```
 
     The order from the previous step has shipped to the customer. The preceding code sends an HTTP PUT request to the `SetFulfilled` action of `OrdersController`. The `SetFulfilled` action calls `OrderService.SetFulfilled` in *:::no-loc text="ContosoPets.DataAccess":::*. An HTTP status code of 204 indicates success:
@@ -90,13 +90,13 @@ In this unit, the Azure SQL database's tables will be populated with data. You'l
     * Retrieve and display all orders:
 
         ```bash
-        curl -k -s https://localhost:5001/api/Orders | jq
+        curl -k -s https://localhost:5001/Orders | jq
         ```
 
     * Retrieve and display the specified order:
 
         ```bash
-        curl -k -s https://localhost:5001/api/Orders/1 | jq
+        curl -k -s https://localhost:5001/Orders/1 | jq
         ```
 
     * Set the fulfillment date on the specified order:
@@ -104,7 +104,7 @@ In this unit, the Azure SQL database's tables will be populated with data. You'l
         ```bash
         curl -k -i -X PUT \
             -H "Content-Length: 0" \
-            https://localhost:5001/api/Orders/1
+            https://localhost:5001/Orders/1
         ```
 
     * Create a new order:
@@ -112,7 +112,7 @@ In this unit, the Azure SQL database's tables will be populated with data. You'l
         ```bash
         curl -k -i -X POST \
             -H "Content-Type: application/json" \
-            https://localhost:5001/api/Orders \
+            https://localhost:5001/Orders \
             -d '{"CustomerId":2,"ProductOrder":[{"ProductId":1,"Quantity":3},{"ProductId":2,"Quantity":1}]}'
         ```
 
@@ -121,7 +121,7 @@ In this unit, the Azure SQL database's tables will be populated with data. You'l
     * Delete the specified order:
 
         ```bash
-        curl -k -i -X DELETE https://localhost:5001/api/Orders/1
+        curl -k -i -X DELETE https://localhost:5001/Orders/1
         ```
 
     * Observe changes in the database:

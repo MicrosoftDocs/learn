@@ -190,7 +190,7 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
 
     Inclusion of the preceding namespace resolves the `DbSet<T>` references in the previous step.
 
-1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
 
 1. Run the following command to generate a migration for creating the database tables:
 
@@ -207,7 +207,7 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
     * The `--context` option specifies the name of the class in the *:::no-loc text="ContosoPets.DataAccess":::* project, which derives from `DbContext`.
 
     > [!TIP]
-    > The `dotnet ef` tool is supported on all platforms. When using Visual Studio on Windows, it is preferable to use the integrated `Add-Migration` and `Update-Database` cmdlets in the Package Manager Console.
+    > The `dotnet ef` tool is supported on all platforms. In Visual Studio on Windows, it's preferable to use the `Add-Migration` and `Update-Database` PowerShell cmdlets in the **Package Manager Console** window.
 
 1. Refresh file explorer.
 

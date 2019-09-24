@@ -61,7 +61,8 @@ To ease production troubleshooting, the Operations Manager wants SQL queries to 
 
     -- GetById
     ```
-1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
+
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
 
 1. Run the following .NET Core CLI command to start the app:
 
@@ -74,7 +75,7 @@ To ease production troubleshooting, the Operations Manager wants SQL queries to 
 1. Run the following command to test the `GetById` method of the `OrderService` class:
 
     ```bash
-    curl -k -s https://localhost:5001/api/Orders/2 | jq
+    curl -k -s https://localhost:5001/Orders/2 | jq
     ```
 
     JSON representing an order is displayed. The output you see may differ.
