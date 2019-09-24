@@ -38,7 +38,7 @@ int widgetsPurchased = 7;
 // Testing a change to the message.
 // int widgetsSold = 7;
 // Console.WriteLine($"{firstName} sold {widgetsSold} widgets.");
-Console.WriteLine($"{firstName} purchased {widgetsSold} widgets.");
+Console.WriteLine($"{firstName} purchased {widgetsPurchased} widgets.");
 ```
 
 Now, run the application.  You'll see the following result in the output console:
@@ -56,7 +56,7 @@ Remove every line of code from the previous step that starts with the code comme
 ```csharp-interactive
 string firstName = "Bob";
 int widgetsPurchased = 7;
-Console.WriteLine($"{firstName} purchased {widgetsSold} widgets.");
+Console.WriteLine($"{firstName} purchased {widgetsPurchased} widgets.");
 ```
 
 The output should be unchanged.
@@ -80,7 +80,7 @@ Modify the code you wrote in Step 3 to the following code listing:
 /*
 string firstName = "Bob";
 int widgetsPurchased = 7;
-Console.WriteLine($"{firstName} purchased {widgetsSold} widgets.");
+Console.WriteLine($"{firstName} purchased {widgetsPurchased} widgets.");
 */
 ```
 

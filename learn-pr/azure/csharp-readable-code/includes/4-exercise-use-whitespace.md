@@ -17,7 +17,7 @@ WriteLine
 ;
 
 // Example 2:
-string firstWord="Hello";string lastName="World";Console.WriteLine(firstName+" "+lastName+"!");
+string firstWord="Hello";string lastWord="World";Console.WriteLine(firstWord+" "+lastWord+"!");
 ```
 
 ## Step 2 - Run the code to view the output.
