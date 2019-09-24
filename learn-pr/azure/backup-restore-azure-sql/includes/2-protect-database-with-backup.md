@@ -1,12 +1,10 @@
-If the data that you keep in Azure SQL Database is critical, you must think carefully about how to back it up to ensure that you can restore it reliably and quickly if a problem arises.
-
-The retail organization that you work for uses Azure SQL Database to underpin its enterprise resource planning (ERP) system. The company uses this system for all its accounting, customer relationship management, sales management, and corporate governance procedures. If this data were to be lost, the business would suffer huge losses and might even have to cease operations. The board has given you responsibility for the protection of this data. You want to be sure that if a disaster happened, you could restore all the data up to the failure within three hours.
+The retail organization that you work for uses Azure SQL Database to store the relational data for its enterprise resource planning (ERP) system. The company uses this system for all its accounting, customer relationship management, sales management, and corporate governance procedures. If this data were to be lost, the business would suffer huge losses and might even have to cease operations. The board has given you responsibility for the protection of this data. You want to be sure that if a disaster happened, you could restore all the data up to the failure within three hours.
 
 Here, you will learn about Azure SQL Database backups and how to use them effectively.
 
 ## Azure SQL Database backups storage
 
-SQL Database automatically creates database backups. The backups are kept for between 7 and 35 days. The retention time depends on the purchasing model and the service tier you chose when you created your database. When the backups are complete, they are stored as blobs in a Read-Access Geo Redundant Storage (RA-GRS) account in your Azure subscription. To ensure protection against a data center outage, they are replicated to a paired data center.
+SQL Database automatically creates database backups. The backups are kept for between 7 and 35 days. The retention time depends on the purchasing model and the service tier you chose when you created your database. When the backups are complete, they are stored as blobs in a read-access geo redundant storage (RA-GRS) account in your Azure subscription. To ensure protection against a data center outage, they are replicated to a paired data center.
 
 Azure SQL Database uses SQL Server technology to make these types of backups:
 
