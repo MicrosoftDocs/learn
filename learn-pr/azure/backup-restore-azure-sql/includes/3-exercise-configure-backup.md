@@ -8,7 +8,7 @@ Here, you will create a database in Azure and then configure backups. You'll set
 
 Let's use the Azure CLI to create an Azure SQL Server and database instance.
 
-1. Run this command in the Azure Cloud Shell to set up some variables for the SQL Server creation.
+1. Run this command in the Azure Cloud Shell to set up some variables for the SQL Server creation. This will create a server name with a random number at the end to ensure it's globally unique. We'll refer to the server name as `ERPServer-NNNN` through the exercises, but replace this with the name of your server that is generated here.
 
     ```bash
     SERVER_NAME=ERPServer-$RANDOM
