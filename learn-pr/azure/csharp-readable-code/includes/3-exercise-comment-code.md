@@ -17,7 +17,7 @@ This may not seem useful at first, however it's useful in three situations:
 > [!NOTE]
 > Code comments cannot be trusted.  Often, developers update their code but forget to update the code comments.  It's best to use comments for higher-level ideas and not to add comments about how an individual line of code works.
 
-### Step 1 - Make sure you have code from the previous exercise in the code window.
+### Step 1 - Make sure you have code from the previous exercise in the code window
 
 You should be able to see code that was typed in at the end of the previous exercise.  For reference, this is the last code example that you ran:
 
@@ -28,7 +28,7 @@ Console.WriteLine($"{firstName} sold {widgetsSold} widgets.");
 ```
 If you don't see that code in the code window, click the Run button above the previous lines of code.  This will insert that code into the code window.
 
-### Step 2 - Comment out lines of code from the previous exercise.
+### Step 2 - Comment out lines of code from the previous exercise
 
 Next, modify that code example as follows:
 
@@ -49,7 +49,7 @@ Bob purchased 7 widgets.
 
 Notice that the code comments were used to document the potential change being made, and to temporarily disable the old message as we test the new message.  If we're satisfied with the new code, we can safely delete the old code that was commented out.  This is a safer, more methodical approach to modifying working code until we're convinced we're ready to permanently remove it.
 
-### Step 3 - Delete the commented code.
+### Step 3 - Delete the commented code
 
 Remove every line of code from the previous step that starts with the code comment operator `//`.  Modify your code so it matches the following listing:
 
@@ -61,7 +61,7 @@ Console.WriteLine($"{firstName} purchased {widgetsPurchased} widgets.");
 
 The output should be unchanged.
 
-### Step 4 - Use multi-line comments.
+### Step 4 - Use multi-line comments
 
 If you need to write a long comment or remove many lines of code, you can comment multiple lines by adding a `/*` at the beginning of the code and a `*/` at the end.
 
@@ -88,11 +88,11 @@ If you run the code, you'll see nothing in the output console.  The C# compiler 
 
 Using a multi-line comment is the quickest and easiest way to disable three or more lines of code.
 
-### Step 5 - Delete all of the code in the .NET Editor.
+### Step 5 - Delete all of the code in the .NET Editor
 
 Delete all of the code from the previous exercises and steps.  The .NET Editor should be blank.
 
-### Step 6 - Add poorly commented code to the .NET Editor.
+### Step 6 - Add poorly commented code to the .NET Editor
 
 Use the Run button, type or copy the following code into the .NET Editor:
 
@@ -130,7 +130,7 @@ There are two problems with this code:
 - The code comments unnecessarily explain the obvious functionality of individual lines of code.  These are considered low-quality comments because they merely explain how C# or methods of the .NET Class Library work.  If the reader is unfamiliar with these ideas, they can look them up using docs.microsoft.com or Intellisense.
 - The code comments don't provide any context to the problem being solved by the code. These are considered low-quality comments because the reader doesn't gain any insight into the purpose of this code, especially as it relates to the larger system.
 
-### Step 7 - Remove the low-level descriptive comments.
+### Step 7 - Remove the low-level descriptive comments
 
 To improve this code, first let's remove the existing comments.
 
@@ -155,7 +155,7 @@ foreach (var orderID in orderIDs)
 }
 ```
 
-### Step 8 - Add code comments to explain the higher-level purpose of your code.
+### Step 8 - Add code comments to explain the higher-level purpose of your code
 
 To further improve this code, add a comment that explains the higher-level purpose of the code.  Your code should match the following code listing:
 

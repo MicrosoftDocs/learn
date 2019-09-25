@@ -1,8 +1,14 @@
-The C# compiler ignores white space.  The term "white space" refers to individual spaces produced by the `space bar`, tabs produced by the `tab` key, and new lines produced by the `enter` key.
+Print and web designers understand that putting too much information in a small space will overwhelm the viewer.  So, they strategically use whitespace, or negative space, to break up information to maximize the viewer's ability to consume the primary message of their work.
 
-To understand how white space is ignored, let's work through the following exercise.
+Developers can use a similar strategy when writing code in an editor.  By using white space to convey meaning, developers can increase the clarity of their code's intent.
 
-## Step 1 - Add code to illustrate how white space is ignored by the C# compiler
+## What is whitespace?
+
+The term "whitespace" refers to individual spaces produced by the `space bar`, tabs produced by the `tab` key, and new lines produced by the `enter` key.
+
+The C# compiler ignores whitespace.  To understand how whitespace is ignored, and how to maximize clarity using white space, let's work through the following exercise.
+
+### Step 1 - Add code to illustrate how whitespace is ignored by the C# compiler
 
 Add the following code in the .NET Editor:
 
@@ -20,7 +26,7 @@ WriteLine
 string firstWord="Hello";string lastWord="World";Console.WriteLine(firstWord+" "+lastWord+"!");
 ```
 
-## Step 2 - Run the code to view the output.
+### Step 2 - Run the code to view the output
 
 Run the code.  You should see the following output:
 
@@ -33,7 +39,7 @@ These two code examples illustrate two vital ideas:
 - Whitespace doesn't matter to the compiler.  However ...
 - Whitespace, when used properly, can increase your ability to read and comprehend the code.
 
-You'll likely write code once, but need to read the code multiple times.  Therefore, you should focus on readability of the code you write.  Over time, you'll get a feel for when using white space like the space character, tabs, and new lines.
+You'll likely write code once, but need to read the code multiple times.  Therefore, you should focus on readability of the code you write.  Over time, you'll get a feel for when using whitespace like the space character, tabs, and new lines.
 
 Early guidance:
 
@@ -41,16 +47,16 @@ Early guidance:
 - If a single line of code becomes long, you can break it up.  However, you should avoid arbitrarily splitting up a single statement to multiple lines until you have a good reason to do so.
 - Use a space to the left and right of the assignment operator.
 
-## Step 3 - Delete all of the code in the .NET Editor.
+### Step 3 - Delete all of the code in the .NET Editor
 
 Delete all of the code from the previous exercises and steps.  The .NET Editor should be blank.
 
-## Step 4: Add 
+### Step 4: Add code as a starting point for the next part of the exercise
 
-Let's illustrate how to add white space to create visual phrasing to help you comprehend what a passage of code is doing.  We'll start by adding code without any white space.
+Let's illustrate how to add whitespace to create visual phrasing to help you comprehend what a passage of code is doing.  We'll start by adding code without any whitespace.
 
 > [!NOTE]
-> The code in this step is from the module "Add decision logic to your code using the if-elseif-else statement in C#".  It is heavily modified here to make a point about how to increase the readability of your code.  If you do not understand what this is code is doing, don't worry.  It will be covered in other modules.  For now, focus on how we've removed the white space and that makes it difficult to read the code.
+> The code in this step is from the module "Add decision logic to your code using the if-elseif-else statement in C#".  It is heavily modified here to make a point about how to increase the readability of your code.  If you do not understand what this is code is doing, don't worry.  It will be covered in other modules.  For now, focus on how we've removed the whitespace and that makes it difficult to read the code.
 
 Use the Run button or type the following code into the .NET Editor.
 
@@ -76,14 +82,14 @@ The output of this code isn't important.  We want to focus on the readability of
 
 There are two features of this code to take note of:
 
-- There's no vertical white space in this code example.  In other words, there's no empty lines separating the lines of code.  It all runs together into one dense code listing.
+- There's no vertical whitespace in this code example.  In other words, there's no empty lines separating the lines of code.  It all runs together into one dense code listing.
 - The code blocks as defined by the opening and closing curly brace symbols `{ }` are compressed together, making their boundaries difficult to visually discern.
 
-## Step 5 - Add white space to create phrasing and improve readability.
+### Step 5 - Add whitespace to create phrasing and improve readability
 
 Generally speaking, to improve readability, you introduce a blank line using the `enter` key on the keyboard between two, three, or four lines of code that do similar or related things.
 
-Phrasing your code using vertical whitespace is subjective.  It's possible two developers will not agree on what is readable, or when to add white space.  Use your best judgment.
+Phrasing your code using vertical whitespace is subjective.  It's possible two developers will not agree on what is readable, or when to add whitespace.  Use your best judgment.
 
 Add three linefeeds into the code in the previous step as follows:
 
@@ -119,7 +125,7 @@ Some might argue that you should add an empty line in between the previous two l
 
 This leaves the `if` statement.  Let's tackle that in the next step.
 
-## Step 6 - Move opening and closing curly braces to their own line to improve spacing.
+### Step 6 - Move opening and closing curly braces to their own line to improve spacing
 
 Focusing on the lines of code below the keyword `if`, modify the code from the previous step as follows:
 
@@ -162,7 +168,7 @@ Not everyone agrees with this style.  But, as a starting point, use this guidanc
 
 The main takeaways from this exercise:
 
-- Use white space judiciously to improve the readability of your code.
+- Use whitespace judiciously to improve the readability of your code.
 - Use line feeds to create empty lines to separate phrases of code.  A phrase is comprised of lines of code that are similar, or work together.
 - Use line feeds to separate code block symbols so that they are on their own line of code.
 - Use the `tab` key to line up a code block with the keyword they're associated with.

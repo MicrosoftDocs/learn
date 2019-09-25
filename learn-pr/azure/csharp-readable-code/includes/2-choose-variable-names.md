@@ -1,6 +1,6 @@
 A software developer once famously said "The hardest part of software development is naming things."  Not only does the name of a variable have to follow certain syntax rules, it should also be used to make the code more human-readable and understandable.  That's a lot to ask of one line of code!
 
-### Variable name rules
+## Variable name rules
 
 There are some variable naming rules that are enforced by the C# compiler.  
 
@@ -8,10 +8,10 @@ There are some variable naming rules that are enforced by the C# compiler.
 
 - Variable names can contain alphanumeric characters and the understore character.  Special characters like the pound `#`, the dash `-`, and the dollar sign `$` are not allowed.
 - Variable names must begin with an alphabetical letter or an underscore, not a number.  Developers use the underscore for a special purpose, so try to not use that for now.
-- Variable names must NOT be a C# keyword.  For example, these variable name declaraions won't be allowed: `float float;` or `string string;`.
+- Variable names must NOT be a C# keyword.  For example, these variable name declarations won't be allowed: `float float;` or `string string;`.
 - Variable names are case-sensitive, meaning that `string Value;` and `string value;` are two different variables.
 
-### Variable name conventions
+## Variable name conventions
 
 Conventions are suggestions that are agreed upon by the software development community.  While you're free to decide not to follow these conventions, they're so popular that it might make it difficult for other developers to understand your code.  You should practice adopting these conventions and make them part of your own repertoire.
 
@@ -24,7 +24,7 @@ Conventions are suggestions that are agreed upon by the software development com
 
 The example `string firstName;` follows all of these rules and conventions, assuming I want to use this variable to store data that represents someone's first name.
 
-### Variable name examples
+## Variable name examples
 
 Here's a few examples of variable declarations using the data types we learned about previously.
 
