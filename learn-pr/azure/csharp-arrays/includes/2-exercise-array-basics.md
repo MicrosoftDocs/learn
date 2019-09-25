@@ -53,7 +53,7 @@ Let's intentionally break our application by attempting to access a fourth eleme
 
 ```csharp
 fraudulentOrderIDs[3] = "D000";
-``
+```
 
 The entire code example should now match what you see below.
 
