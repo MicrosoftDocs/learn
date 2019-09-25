@@ -5,7 +5,7 @@ metadata:
   description: Monitor the automatically created simulated device in the Azure IoT Central web portal. Then test your knowledge so far.
   ms.date: 09/01/2019
   author: PeterTurcan
-  ms.author: v-pettur
+  ms.author: philmea
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -17,18 +17,18 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'What are all the types of Measurements in a Device Template?'
+  - content: 'Which of the following lists all of the types of Measurements in a Device Template?'
     choices: 
-    - content: 'Telemetry, State, Settings, Properties'
+    - content: 'Telemetry, State, Event, Properties'
       isCorrect: false
-      explanation: Settings and Properties are not Measurements.
+      explanation: Properties are not Measurements.
     - content: 'Telemetry, State, Event, Location'
       isCorrect: true
-      explanation: Correct.
-    - content: 'Telemetry, State, Event'
+      explanation: These are the four types of Measurements.
+    - content: 'Telemetry, State, Event, Settings'
       isCorrect: false
-      explanation: These entries are Measurements, but are not all of them.
-  - content: 'What is the purpose of the Field Name attribute that appears in all device template elements?'
+      explanation: Settings are not Measurements.
+  - content: 'What is the purpose of the Field Name attribute that appears in all Device Template elements?'
     choices: 
     - content: 'To appear in the IoT Central portal UI, naming the element being displayed.'
       isCorrect: false
@@ -38,32 +38,32 @@ quiz:
       explanation: Sometimes a description field is available, but Field Name is not the name of this field.
     - content: 'To match the entries in the code running on the IoT device, to enable communications.'
       isCorrect: true
-      explanation: Correct, Field Names need to be referenced in the code running on the device.
+      explanation: Field Names need to be referenced exactly in the code running on the device.
     - content: 'To appear in tooltip type text boxes when the operator clicks on an element in the app UI.'
       isCorrect: false
-      explanation: Incorrect.
-  - content: 'What is the difference in concept between a device template Setting and a device template Property?'
+      explanation: Field Names are not descriptive text.
+  - content: 'What is the difference in concept between a Device Template Setting and a Device Template Property?'
     choices: 
     - content: 'Properties and Settings can be used interchangeably.'
       isCorrect: false
-      explanation: Incorrect. Settings, and Commands, have some similarities. Properties are not sent by the cloud.
-    - content: 'Properties are communicated from the cloud to the device, Settings are communicated from the device to the cloud.'
+      explanation: Settings and Commands have some similarities. Properties are not sent by the cloud.
+    - content: 'Properties are communicated from the cloud to the device. Settings are communicated from the device to the cloud.'
       isCorrect: false
-      explanation: Incorrect, Properties are communicated from the device to the cloud, and Settings from the cloud to the device.
-    - content: 'A property is typically communicated once from the device to the cloud, and Settings are typically communicated from the cloud to the device when changes are needed.'
+      explanation: Properties are communicated from the device to the cloud, and Settings from the cloud to the device.
+    - content: 'A Property is typically communicated once from the device to the cloud, a Settings is typically communicated from the cloud to the device, when changes are needed.'
       isCorrect: true
-      explanation: Correct, and a Setting must have a corresponding value.
+      explanation: A Property might be something like a unique ID (a truck license plate, for example). A Setting must have a corresponding value, such as an optimal temperature for the truck contents.
   - content: 'What are represented by diamond shaped icons in the chart view for a device?'
     choices: 
     - content: 'Events'
       isCorrect: true
-      explanation: Correct, and clicking on the icons will reveal more details of the event.
+      explanation: Clicking on the diamond icons will reveal more details of the event.
     - content: 'States'
       isCorrect: false
-      explanation: Incorrect. State is shown in the bar graphs.
+      explanation: State is shown in the bar graphs.
     - content: 'Telemetry'
       isCorrect: false
-      explanation: Incorrect. Telemetry is shown in the line chart.
+      explanation: Telemetry is shown in the line chart.
     - content: 'Locations'
       isCorrect: false
-      explanation: Incorrect. Location is shown on the map view.
+      explanation: Location is shown on the map view.

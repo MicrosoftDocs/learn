@@ -4,14 +4,14 @@ In this module, you learned how to:
 
 - Create an Azure IoT Central custom app, using the IoT Central portal
 - Create a device template for a custom device, using the IoT Central portal
-- Add Node.JS code to support a simulated device - a refrigerated truck, with routes selected by Azure Maps
+- Add Node.js code to support a simulated device - a refrigerated truck, with routes selected by Azure Maps
 - Monitor and command the simulated device, from the IoT Central Device portal
-- Add Node.JS code to support multiple simulated devices - a fleet of refrigerated trucks - by running multiple Node.JS apps
+- Add Node.js code to support multiple simulated devices - a fleet of refrigerated trucks - by running multiple Node.js apps
 - Monitor and command the fleet of simulated trucks, from a Device set dashboard, that you built using the IoT Central portal
 
 ## Clean up
 
-The IoT Central app, with a Trial subscription, will be deleted automatically when the trial comes to an end. 
+The IoT Central app, with a Trial subscription, will be deleted automatically when the trial comes to an end.
 
 ## Next steps
 

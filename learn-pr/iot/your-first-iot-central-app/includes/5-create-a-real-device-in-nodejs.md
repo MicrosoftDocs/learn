@@ -1,42 +1,39 @@
 
-## Create the Node.JS app
+## Create the Node.js app
 
-Using your preferred development environment (Visual Studio Code, and Visual Studio, examples are given below), build a Node.JS app. Node.JS is a platform for building server apps, based on JavaScript. All the JavaScript code you will need is provided below, so you do not need to be a JavaScript developer to get this app up and running.
+Using your preferred development environment (Visual Studio Code, and Visual Studio, examples are given below), build a Node.js app. Node.js is a platform for building server apps, based on JavaScript. All the JavaScript code you will need is provided below, so you do not need to be a JavaScript developer to get this app up and running.
 
 ### With Visual Studio Code
 
-1. Open Visual Studio Code (VS Code). From the **Terminal** menu, open a **New Terminal**.
- 
-2. In the opened terminal, create an empty folder where you will develop your code, called "RefrigeratedTrucks", by entering ```mkdir RefrigeratedTrucks```. Then, navigate to that folder with ```cd RefrigeratedTrucks```.
+1. Open Visual Studio Code. From the **Terminal** menu, open a **New Terminal**.
 
-3. From the **File** menu, create a new file. Insert a single line as a comment, such as ```// Refrigerated Truck app```. Save the file to the "RefrigeratedTrucks" folder (locating this folder might involve a bit of navigation), with the name "app.js". By using the .js file extension, VS Code interprets this file as JavaScript and evaluates the contents with the JavaScript language service.
- 
-![Saving the JavaScript file in VS Code](../media/refrigerated-trucks-vscode.png)
+1. In the opened terminal, create an empty folder where you will develop your code, called "RefrigeratedTrucks", by entering `mkdir RefrigeratedTrucks`. Then, navigate to that folder with `cd RefrigeratedTrucks`.
 
-4. Back in the terminal, enter **npm install azure-iot-device**. When this package has installed, enter **npm install azure-maps-rest**.
+1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Refrigerated Truck app`. Save the file to the "RefrigeratedTrucks" folder (locating this folder might involve a bit of navigation), with the name "app.js". By using the .js file extension, Visual Studio Code interprets this file as JavaScript and evaluates the contents with the JavaScript language service.
+  ![Screenshot showing how to save the JavaScript file, in Visual Studio Code](../media/refrigerated-trucks-vscode.png)
 
-5. After you have entered the code below into the app.js file, you can run it from the terminal by entering ```node app.js```. Ensure that the RefrigeratedTrucks folder is the current folder of the terminal, when you run the app.
+1. Back in the terminal, enter **npm install azure-iot-device**. When this package has installed, enter **npm install azure-maps-rest**.
 
+1. After you have entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the RefrigeratedTrucks folder is the current folder of the terminal, when you run the app.
 
 ### With Visual Studio
 
-1. Create a new blank Node.JS project.
+1. Create a new blank Node.js project.
+  ![Screenshot showing how to create a new blank Node.js project, in Visual Studio](../media/refrigerated-trucks-vs-project.png)
 
-![Create a new blank Node.JS project](../media/refrigerated-trucks-vs-project.png)
+1. Install azure-iot-device and azure-maps-rest npm packages by right-clicking on the **npm** entry in Solution Explorer, and select **Install New npm Packages...**.
 
-2. Install azure-iot-device and azure-maps-rest npm packages by right-clicking on the **npm** entry in Solution Explorer, and select **Install New npm Packages...**.
+1. In the dialog that follows, search for and install **azure-iot-device**, then **azure-maps-rest**.
 
-3. In the dialog that follows, search for and install **azure-iot-device**, then **azure-maps-rest**.
+1. When you have entered the code below, you will be able to run the app with the **Start Without Debugging**, or **Start Debugging**, options. In the latter case you can set breakpoints, examine data, and perform other debugging tasks.
 
-4. When you have entered the code below, you will be able to run the app with the **Start Without Debugging**, or **Start Debugging**, options. In the latter case you can set breakpoints, examine data, and perform other debugging tasks.
-
-## Write the Node.JS app
+## Write the Node.js app
 
 In the blank app.js file, add the following code in the order that it is presented here. 
 
 1. Add code to connect to Azure IoT Central, and Azure Maps, replacing the &lt;your...&gt; strings for both technologies with your own strings. Do not change any other lines of code.
 
-``` js
+ ``` js
 "use strict";
 
 const truckNum = 1;
@@ -69,8 +66,8 @@ var routeURL = new rest.RouteURL(pipeline);
 var client = clientFromConnectionString(connectionString);
 ```
 
-> [!NOTE]
-> An Azure Maps ```Pipeline``` class contains the HTTP request policies. We are using the default policies in this app, so provide only our key as a parameter. A ```RouteURL``` class represents a URL to the Azure Maps route operations, which takes our pipeline as a parameter.
+  > [!NOTE]
+  > An Azure Maps `Pipeline` class contains the HTTP request policies. We are using the default policies in this app, so provide only our key as a parameter. A `RouteURL` class represents a URL to the Azure Maps route operations, which takes our pipeline as a parameter.
 
 2. Add global variables.
 
@@ -262,7 +259,7 @@ function GetRoute(newState) {
 ```
 
 > [!NOTE]
-> It is important to grasp the asynchronous nature of calls to Azure Maps, the call to this function will end before the ``` results.then(...)``` section of the code is run, as this section is waiting for the results from Azure Maps.
+> It is important to grasp the asynchronous nature of calls to Azure Maps, the call to this function will end before the `results.then(...)` section of the code is run, as this section is waiting for the results from Azure Maps.
 
 4. Add the command to deliver to a customer.
 
@@ -318,7 +315,7 @@ function CmdGoToCustomer(request, response) {
 ```
 
 > [!NOTE]
-> The statement ```var num = request.payload.customerId;``` shows how data (text, numbers, toggles, dates) are passed from the IoT Central app, in a command. Note too that the device responds with a conflict if it is not in the correct state, and that the command itself is acknowledged at the end of the function. The recall command, that follows in the next step, handles things very similarly.
+> The statement `var num = request.payload.customerId;` shows how data (text, numbers, toggles, dates) are passed from the IoT Central app, in a command. Note too that the device responds with a conflict if it is not in the correct state, and that the command itself is acknowledged at the end of the function. The recall command, that follows in the next step, handles things very similarly.
 
 5.  Add the recall command.
 
@@ -508,7 +505,7 @@ function UpdateTruck() {
 ```
 
 > [!NOTE]
-> This function is called every time interval. The actual time interval is set later on (at 5 seconds), though the "simulated time" (the number of seconds we specify that has passed each time this function is called) is set by the global ```var interval = 60```, which means the simulation runs at 60/5 equals 12 times real-time. To lower the simulated time, reduce the ```var interval``` to, say, 30 (for a simulation that runs at six times real-time). Setting ```var interval = 5``` would run the simulation in real-time (which would be a bit slow, given the real driving times to the customer destinations).
+> This function is called every time interval. The actual time interval is set later on (at 5 seconds), though the "simulated time" (the number of seconds we specify that has passed each time this function is called) is set by the global `var interval = 60`, which means the simulation runs at 60/5 equals 12 times real-time. To lower the simulated time, reduce the `var interval` to, say, 30 (for a simulation that runs at six times real-time). Setting `var interval = 5` would run the simulation in real-time (which would be a bit slow, given the real driving times to the customer destinations).
 
 7. Add the function to send truck telemetry, and events if any have occurred.
 
@@ -523,7 +520,7 @@ function sendTruckTelemetry() {
     var data = JSON.stringify(
         {
             // Format is:  
-            // Field name from IoT Central app ":" variable name from NodeJS app.
+            // Field name from IoT Central app ":" variable name from Node.js app.
             temperature: temp,
             stateTruck: state,
             stateCoolingSystem: fan,
@@ -571,7 +568,7 @@ function sendTruckTelemetry() {
 ```
 
 > [!NOTE]
-> The ```sendTruckTelemetry``` is an important function, handling the sending of telemetry, states, and events, to IoT Central. Note the use of JSON strings to send the data, and that an acknowledgement message is sent at the end of the function.
+> The `sendTruckTelemetry` is an important function, handling the sending of telemetry, states, and events, to IoT Central. Note the use of JSON strings to send the data, and that an acknowledgement message is sent at the end of the function.
 
 8. Add the code to handle settings and properties. We only have one setting and one property in our app, though if there are more they are easily added.
 
@@ -581,7 +578,7 @@ function sendDeviceProperties(deviceTwin) {
     var properties =
     {
         // Format is:
-        // <Property field name in Azure IoT Central> ":" <value in NodeJS app>
+        // <Property field name in Azure IoT Central> ":" <value in Node.js app>
         truckId: truckIdentification,
     };
 
@@ -596,8 +593,8 @@ var settings =
 {
     // Format is:
     // '<field name from Azure IoT Central>' ":" (newvalue, callback) ....
-    //  <variable name in NodeJS app> = newValue;
-    //  callback(<variable name in NodeJS app>,'completed');
+    //  <variable name in Node.js app> = newValue;
+    //  callback(<variable name in Node.js app>,'completed');
     'optimalTemperature': (newValue, callback) => {
         setTimeout(() => {
             optimalTemperature = newValue;
@@ -640,9 +637,9 @@ function handleSettings(deviceTwin) {
 ```
 
 > [!NOTE]
-> This section of code is generic to most Node.JS apps that communicate with IoT Central. To add additional settings or properties, add name pairs to the variables ```var settings``` and ```var properties``` respectively. No other code changes are usually needed.
+> This section of code is generic to most Node.js apps that communicate with IoT Central. To add additional settings or properties, add name pairs to the variables `var settings` and `var properties` respectively. No other code changes are usually needed.
 
-9. Add the connection callback function. This function is called when the Node.JS app first attempts to contact IoT Central.
+9. Add the connection callback function. This function is called when the Node.js app first attempts to contact IoT Central.
 
 ``` js
 // Handle device connection to Azure IoT Central.
@@ -686,7 +683,7 @@ var connectCallback = (errorMessage) => {
 ```
 
 > [!NOTE]
-> Most of the ```connectCallback``` function is generic, and can be used for most Node.JS apps that communicate with IoT Central. Specific to this app are the two ```client.onDeviceMethod``` calls, that link JavaScript functions in this app to the commands in the IoT Central app, and the ```setInterval(sendTruckTelemetry, 5000);``` call, which specifies the ```sendTruckTelemetry``` function should be called every five seconds (5000 milliseconds).
+> Most of the `connectCallback` function is generic, and can be used for most Node.js apps that communicate with IoT Central. Specific to this app are the two `client.onDeviceMethod` calls, that link JavaScript functions in this app to the commands in the IoT Central app, and the `setInterval(sendTruckTelemetry, 5000);` call, which specifies the `sendTruckTelemetry` function should be called every five seconds (5000 milliseconds).
 
 10. Complete the app with the single line to start the device, specifying the connection callback.
 
