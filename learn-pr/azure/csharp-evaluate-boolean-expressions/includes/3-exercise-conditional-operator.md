@@ -8,15 +8,15 @@ The *conditional operator* `?:`, commonly known as the ternary conditional opera
 
 Here's the basic form:
 
-```
-<evaluate this condition> ? <if condition is true, return this value> : <if condition is false, return this value>
-```
+`<evaluate this condition> ? <if condition is true, return this value> : <if condition is false, return this value>`
 
 Let's use the conditional operator to address the scenario in this unit.  We'll display a message to the customer with their promotional discount based on whether they've spent more than $1000 on their purchase.
 
-### Step 1
+### Step 1 - Delete or comment out the code you added into the code window in previous exercises.  
 
-Delete or comment out the code you added into the code window in previous exercises.  Now, add the following code.
+Use the techniques you've learned to clear out the .NET Editor.
+
+### Step 2 - Add code that uses a conditional operator
 
 ```csharp-interactive
 int saleAmount = 1001;
@@ -31,13 +31,13 @@ When you run the code, you should see the following output.
 Discount: 100
 ```
 
-### Step 2
+### Step 3 - Use the conditional operator inline
 
 We can compact this code even more by eliminating the temporary variable `discount`.
 
 Modify the code from step 1 to match the following.
 
-```
+```csharp-interactive
 int saleAmount = 1001;
 // int discount = saleAmount > 1000 ? 100 : 50;
 

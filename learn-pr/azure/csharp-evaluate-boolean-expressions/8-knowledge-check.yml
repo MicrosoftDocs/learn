@@ -16,16 +16,16 @@ quiz:
   questions:
   - content: "You want to compare two strings ignoring their case.  Which string helper method do you use?"
     choices:
-    - content: "Compare()"
+    - content: "`Compare()`"
       isCorrect: false
-      explanation: "The Compare() method won't ignore case."
-    - content: "Lower()"
+      explanation: "The `Compare()` method won't ignore case."
+    - content: "`Lower()`"
       isCorrect: false
-      explanation: "Lower() isn't a method of the string class."
-    - content: "IgnoreCase()"
+      explanation: "`Lower()` isn't a method of the string class."
+    - content: "`IgnoreCase()`"
       isCorrect: false
-      explanation: "IgnoreCase() isn't a method of the string class."
-    - content: "ToLower()"
+      explanation: "`IgnoreCase()` isn't a method of the string class."
+    - content: "`ToLower()`"
       isCorrect: true
       explanation: "Correct!"
   - content: "Which line of code uses logical negation?"
