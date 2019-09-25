@@ -2,15 +2,15 @@ You use PowerShell DSC to specify the desired state for a virtual machine (VM). 
 
 By the end of this unit, you'll:
 
-- Understand node and configuration blocks
-- Understand credential assets
-- Write PowerShell DSC code to install Microsoft IIS idempotently
+- Understand node and configuration blocks.
+- Understand credential assets.
+- Write PowerShell DSC code to install Microsoft IIS idempotently.
 
 ## DSC resources
 
-You've seen how PowerShell DSC is a declarative task-oriented scripting language. When you need to configure and deploy an Azure resource in a consistent way across a set of virtual machines, PowerShell DSC can help. You use PowerShell DSC even when you're not familiar with the technical steps involved to install and configure the  software and services.  
+You've seen that PowerShell DSC is a declarative task-oriented scripting language. When you need to configure and deploy an Azure resource in a consistent way across a set of VMs, PowerShell DSC can help. You use PowerShell DSC even when you're not familiar with the technical steps involved to install and configure the software and services.  
 
-Windows Server has a set of built-in PowerShell DSC resources. You can see these resources by running the **Get-DSCResource** PowerShell cmdlet.
+Windows Server has a set of built-in PowerShell DSC resources. You can see these resources by running the `Get-DSCResource` PowerShell cmdlet.
 
 ```powershell
 Get-DscResource | select Name,Module,Properties
@@ -25,21 +25,21 @@ The following table lists some of the built-in PowerShell DSC resources.
 | Environment            | Manages system environment variables              |
 | Log                    | Writes a message in the DSC event log              |
 | Package                | Installs or removes a package                     |
-| Registry               | Manages registry key of a node (except HKEY Users) |
+| Registry               | Manages a node's registry key (except HKEY Users) |
 | Script                 | Executes PowerShell commands on a node             |
-| Service                | Manages Windows Services                           |
+| Service                | Manages Windows services                           |
 | User                   | Manages local users on a node                      |
-| WindowsFeature         | Adds or removes a role/feature on a node           |
-| WindowsOptionalFeature | Adds or removes an optional role/feature on a node |
-| WindowsProcess         | Manages a windows process                          |
+| WindowsFeature         | Adds or removes a role or feature on a node           |
+| WindowsOptionalFeature | Adds or removes an optional role or feature on a node |
+| WindowsProcess         | Manages a Windows process                          |
 
-For more complex resources, like Active Directory integration, the DSC Resource Kit is updated monthly. You'll find the link to this resource at the end of the module.
+For more complex resources, like Active Directory integration, see the DSC Resource Kit, which is updated monthly. You'll find the link to this resource at the end of the module.
 
-The resource to be configured must already be part of the VM or part of the VM image. Otherwise, the job will fail to compile and run.
+The resource you want to configure must already be part of the VM or part of the VM image. Otherwise, the job will fail to compile and run.
 
 ## Anatomy of a DSC code block
 
-There are four sections of a DSC code block. Use the following example to take a closer look. The numbers refer to sections in the following discussion, and aren't part of the syntax:
+A DSC code block contains four sections. Use the following example to take a closer look. In the example, the numbers refer to sections in the following discussion. They aren't part of the syntax.
 
 ```powershell
 Configuration MyDscConfiguration {              ##1
@@ -53,9 +53,13 @@ Configuration MyDscConfiguration {              ##1
 MyDscConfiguration -OutputPath C:\temp\                             ##4
 ```
 
-### Configuration syntax
+The configuration syntax includes these sections:
 
-1. *Configuration* - The configuration block is the outermost script block. It starts with the `Configuration` keyword, and you provide a name. Here, the name of the configuration is *MyDscConfiguration*. The configuration block describes the desired configuration. Think of a configuration block like a function, except that it describes the resources to be installed rather than containing the code to install them. Like a PowerShell function, a configuration block can take parameters. For example, you could parameterize the node name.
+1. **Configuration**: The configuration block is the outermost script block. It starts with the `Configuration` keyword, and you provide a name. Here, the name of the configuration is `MyDscConfiguration`. 
+ 
+    The configuration block describes the desired configuration. Think of a configuration block like a function, except that it contains a description of the resources to install rather than the code to install them.
+
+    Like a PowerShell function, a configuration block can take parameters. For example, you could parameterize the node name.
 
     ```powershell
     Configuration MyDscConfiguration {
@@ -69,21 +73,27 @@ MyDscConfiguration -OutputPath C:\temp\                             ##4
     }
     ```
   
-2. *Node* - You can have one or more node blocks. The node block determines the names of .mof files that are generated when you compile the configuration. For example, the node name *localhost*, generates only one localhost.mof file. But you can send that .mof file to any server. You generate multiple .mof files when you use multiple node names.
+2. **Node**: You can have one or more node blocks. The node block determines the names of .mof files that are generated when you compile the configuration. For example, the node name `localhost`, generates only one *localhost.mof* file. But you can send that .mof file to any server. You generate multiple .mof files when you use multiple node names.
 
-    Use the array-notation in the node block to target multiple hosts. For example:
+    Use the array notation in the node block to target multiple hosts. For example:
 
     ```powershell
     Node @('WEBSERVER1', 'WEBSERVER2', 'WEBSERVER3')
     ```
 
-3. *Resource* - You can have one or more Resource blocks that specify the resources to be configured. In this case, there's one resource block, referencing the `WindowsFeature` resource. In this example, the `WindowsFeature` resource is used to ensure the Windows feature `Web-Server` is installed.
+3. **Resource**: One or more resource blocks can specify the resources to configure. In this case, there's one resource block, referencing the `WindowsFeature` resource. In this example, the `WindowsFeature` resource ensures that the Windows feature `Web-Server` is installed.
 
-4. *MyDscConfiguration* - This call invokes the **MyDscConfiguration** block, much like running a function. When you run a configuration block, it's compiled into a Managed Object Format (MOF) document. MOF is a compiled language created by Desktop Management Task Force, based on Interface Definition Language. A .mof file is created for every node listed in the DSC script. The .mof file is created in the folder you specify with the `-OutputPath` parameter.
+4. **MyDscConfiguration**: This call invokes the `MyDscConfiguration` block. It's like running a function. When you run a configuration block, it's compiled into a Managed Object Format (MOF) document. MOF is a compiled language created by Desktop Management Task Force, and it's based on interface definition language. 
 
-## Configuration data in the DSC script
+     For every node listed in the DSC script, a .mof file is created in the folder you specified with the `-OutputPath` parameter.
 
-You can provide data that might be required by the configuration process in a configuration data block. You apply this data to named nodes, or globally across all nodes. A configuration data block is a named block that contains an array of nodes. The array must be named **AllNodes**. Inside the **AllNodes** array, you specify the data for a node using the **NodeName** variable. For example, if you want to set the `SiteName` property of the webserver installed on each node in the previous example to different values, you could define a configuration data block like the one shown below:
+## Configuration data in a DSC script
+
+In a configuration data block, you can provide data that might be required by the configuration process. You apply this data to named nodes, or you apply it globally across all nodes. 
+
+A configuration data block is a named block that contains an array of nodes. The array must be named `AllNodes`. Inside the `AllNodes` array, you specify the data for a node by using the `NodeName` variable. 
+
+Using the previous scenario, let's say that on the web server that's installed on each node, you want to set the `SiteName` property to different values. You could define a configuration data block like this:
 
 ```powershell
 $datablock =
@@ -106,25 +116,25 @@ $datablock =
 }
 ```
 
-If you want to set a property to the same value in each node, specify `NodeName = "*"` in the `AllNodes` array.
+If you want to set a property to the same value in each node, in the `AllNodes` array, specify `NodeName = "*"`.
 
 ## Secure credentials in a DSC script
 
-A DSC script might need you to provide credential information to the configuration process. To avoid putting a credential in plaintext in your source code management tool, DSC configurations in Azure Automation can reference credentials stored in a `PSCredential` object. You define a parameter for the DSC script with the `PSCredential` type. Before running the script, obtain the credentials for the user, create a new `PSCredential` object with these credentials, and pass this object in as a parameter to the script.
+A DSC script might require credential information for the configuration process. You need to avoid putting a credential in plaintext in your source code management tool. Instead, DSC configurations in Azure Automation can reference credentials stored in a `PSCredential` object. You define a parameter for the DSC script by using the `PSCredential` type. Before running the script, get the credentials for the user, use the credentials to create a new `PSCredential` object, and pass this object into the script as a parameter.
 
-Credentials aren't encrypted in .mof files by default, they are exposed as plain text. To encrypt credentials, you need to use a certificate in your Configuration data. The private key of the certificate needs to be present on the node on which you intend to apply the configuration. Certificates are configured through the node's Local Configuration Manager (LCM). Starting in PowerShell 5.1 .mof files on the node are encrypted at rest.
+Credentials aren't encrypted in .mof files by default. They are exposed as plaintext. To encrypt credentials, use a certificate in your configuration data. The certificate's private key needs to be on the node on which you want to apply the configuration. Certificates are configured through the node's local configuration manager (LCM). 
 
-All credentials are encrypted in transit through WinRM.
+Starting in PowerShell 5.1, .mof files on the node are encrypted at rest. All credentials are encrypted in transit through Windows Remote Management (WinRM).
 
-## Push the configuration to node
+## Push the configuration to a node
 
-When you've created a compiled .mof file for a configuration, you can push it to a node by running the  `Start-DscConfiguration` cmdlet. If you add the path to the directory, it applies any .mof file it finds in that directory to the node:
+After you create a compiled .mof file for a configuration, you can push it to a node by running the  `Start-DscConfiguration` cmdlet. If you add the path to the directory, it applies any .mof file it finds in that directory to the node:
 
 ``` powershell
 Start-DscConfiguration -path D:\
 ```
 
-This step corresponds to *push mode*  that's described in the previous unit.
+This step corresponds to *push mode*, which you learned about in the previous unit.
 
 ## Pull the configuration for nodes
 
