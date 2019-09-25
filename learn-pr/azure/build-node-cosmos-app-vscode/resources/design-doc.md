@@ -1,4 +1,4 @@
-## Title
+# Title
 
 Build a Node.js app for Azure Cosmos DB in Visual Studio Code
 
