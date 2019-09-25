@@ -72,7 +72,7 @@ Now let's add a table and a sample record to the database. It is helpful to have
 
 1. In the **Settings** section, select **SQL databases**, then select the **sql-erp-database**.
 
-1. Select **Query editor**, and then sign in with the credentials **dbadmin** and the password you created previously.
+1. Select **Query editor**, and then sign in with the credentials **dbadmin** and the password you specified for this account.
 
 1. To create a table, in the **Query 1** window, type this SQL command, and then select **Run**.
 
