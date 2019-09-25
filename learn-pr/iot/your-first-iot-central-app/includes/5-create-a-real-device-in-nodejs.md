@@ -11,7 +11,8 @@ Using your preferred development environment (Visual Studio Code, and Visual Stu
 1. In the opened terminal, create an empty folder where you will develop your code, called "RefrigeratedTrucks", by entering `mkdir RefrigeratedTrucks`. Then, navigate to that folder with `cd RefrigeratedTrucks`.
 
 1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Refrigerated Truck app`. Save the file to the "RefrigeratedTrucks" folder (locating this folder might involve a bit of navigation), with the name "app.js". By using the .js file extension, Visual Studio Code interprets this file as JavaScript and evaluates the contents with the JavaScript language service.
-  ![Screenshot showing how to save the JavaScript file, in Visual Studio Code](../media/refrigerated-trucks-vscode.png)
+
+    ![Screenshot showing how to save the JavaScript file, in Visual Studio Code](../media/refrigerated-trucks-vscode.png)
 
 1. Back in the terminal, enter **npm install azure-iot-device**. When this package has installed, enter **npm install azure-maps-rest**.
 
@@ -20,7 +21,8 @@ Using your preferred development environment (Visual Studio Code, and Visual Stu
 ### With Visual Studio
 
 1. Create a new blank Node.js project.
-  ![Screenshot showing how to create a new blank Node.js project, in Visual Studio](../media/refrigerated-trucks-vs-project.png)
+
+    ![Screenshot showing how to create a new blank Node.js project, in Visual Studio](../media/refrigerated-trucks-vs-project.png)
 
 1. Install azure-iot-device and azure-maps-rest npm packages by right-clicking on the **npm** entry in Solution Explorer, and select **Install New npm Packages...**.
 

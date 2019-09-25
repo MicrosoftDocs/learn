@@ -7,7 +7,8 @@ A Device Set in IoT Central is a group of devices that match one Device Template
 1. On the far right of your screen, click **+ New**.
 
 1. Enter a device set name, and select the right template:
-  ![Screenshot showing how to create a new Device Set, called "All refrigerated trucks"](../media/refrigerated-trucks-deviceset.png)
+
+    ![Screenshot showing how to create a new Device Set, called "All refrigerated trucks"](../media/refrigerated-trucks-deviceset.png)
 
 1. Click **Save**.
 
@@ -20,7 +21,8 @@ A Device Set in IoT Central is a group of devices that match one Device Template
 1. Click **Done** to save your device set dashboard.
 
 1. You may need to zoom out a bit on your Delivery Map, you should get a map with five trucks at base.
-  ![Screenshot showing the Device Set dashboard, with a map showing the initial location of the five trucks at the base, and a table of the truck IDs and optimal temperatures](../media/refrigerated-trucks-deviceset-base.png)
+
+    ![Screenshot showing the Device Set dashboard, with a map showing the initial location of the five trucks at the base, and a table of the truck IDs and optimal temperatures](../media/refrigerated-trucks-deviceset-base.png)
 
 1. In order to make commanding the trucks easier, we should add links to the Commands page for each truck. Navigate through the **Devices** menu to the **Commands** for **RefrigeratedTruck - 1**. Copy the URL, which will be something like `https://refrigerated-trucks.azureiotcentral.com/details/device/<your device>/commands`. Now navigate back to the device set dashboard (the one named "All refrigerated trucks"), click **Edit**, and add a **Link** from the library. Call the link something like "Truck 1 commands", and paste in the URL.
 
@@ -31,7 +33,8 @@ A Device Set in IoT Central is a group of devices that match one Device Template
 You have almost completed this module, great job. This section provides a few optional ideas to develop your dashboard further.
 
 1. Rather than have link text, if you enter the library **Image** option, you can attach a link to an image on the dashboard. Consider adding five images to your dashboard, each linking to the Commands page for one of the five trucks. In the following image, Truck number 4 has been directed to a customer, the others remain at base:
-  ![Screenshot showing the complete Device Set dashboard, now with five truck icons that can be clicked to jump to the command screen for each truck](../media/refrigerated-trucks-deviceset-images.png)
+
+    ![Screenshot showing the complete Device Set dashboard, now with five truck icons that can be clicked to jump to the command screen for each truck](../media/refrigerated-trucks-deviceset-images.png)
 
 1. Consider creating a _Job_, a command that applies to all devices (or, all devices with exceptions). Such a job could change the optimal temperature for all trucks, or perhaps recall all trucks. Consider adding a link to the job from the dashboard.
 

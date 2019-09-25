@@ -36,7 +36,8 @@ To begin the testing, make sure the IoT Central app is up and running, and run t
 1. In the console for the Node.js app, you should see **Number of points=**, followed by a list of lat/lon coordinates. If you see a message including the text "Access denied due to invalid subscription key", then check your subscription key to Azure Maps.
 
 1. Go back to the **Measurements** view in IoT Central. Hover over the Truck state bar chart, does it say "enroute"? Now, select the map view. Is your truck on its way?
-  ![Screenshot showing the map view of our first truck delivery route](../media/refrigerated-trucks-first-delivery.png)
+
+    ![Screenshot showing the map view of our first truck delivery route](../media/refrigerated-trucks-first-delivery.png)
 
 1. Great progress! Take a moment to just watch the map update, and your truck deliver its contents.
 

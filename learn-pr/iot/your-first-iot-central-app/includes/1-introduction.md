@@ -33,10 +33,12 @@ In this module, we build the app displayed in the above image.
 1. Navigate to  `https://apps.azureiotcentral.com/`. It is a good idea to bookmark this URL, as it is the home for all your IoT Central apps.
 
 1. Click on **New Application**. Select the free **Trial** payment plan, the seven days that the trial gives you will be plenty of time to complete, and evaluate, the scenario.
-  ![Screenshot showing how to create a new IoT Central app, using the IoT Central portal](../media/refrigerated-trucks-my-apps.png)
+
+    ![Screenshot showing how to create a new IoT Central app, using the IoT Central portal](../media/refrigerated-trucks-my-apps.png)
 
 1. Select **Custom application**, and configure the app as shown in the following image:
-  ![Screenshot showing how to configure the new IoT Central app](../media/refrigerated-trucks-new-app.png)
+
+    ![Screenshot showing how to configure the new IoT Central app](../media/refrigerated-trucks-new-app.png)
     > [!IMPORTANT]
     > Your **Application Name** can be any friendly name. However, the **URL** _must_ be unique, which is why we suggest adding some unique ID to the end of the URL for the app.
 1. Enter the rest of the required fields appropriately.

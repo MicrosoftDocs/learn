@@ -10,7 +10,8 @@ The heavy-lifting of this module has been completed, the process of extending ou
     > To delete any device, click the check box next to it, then select the garbage can icon top right. You will be prompted to confirm you want to delete the device.
 
 1. Verify you now have five devices, all created with the same template. Only the first has **Provisioned** status, the additions are **Registered**.
-  ![Screenshot showing the provisioning status of all five devices](../media/refrigerated-trucks-five.png)
+
+    ![Screenshot showing the provisioning status of all five devices](../media/refrigerated-trucks-five.png)
 
 ## Provision the new devices
 
@@ -101,7 +102,8 @@ Each truck is simulated by one running copy of the Node.js app. So, we need five
 1. Double-click on each device in turn, then select **Commands**. In the **Go to customer** command, send Truck 1 to customer 1, Truck 2 to customer 2, and so on (to Truck 5 to customer 5).
 
 1. There is now a lot going on! Select each device in turn on the **Devices** page, and in the **Measurements** section, open up the map view. Make sure the eye icon of the **Location** is turned on. Each truck should now be on its way to a unique customer.
-  ![Screenshot showing the map view of the first delivery route for truck three](../media/refrigerated-trucks-three-enroute.png)
+
+    ![Screenshot showing the map view of the first delivery route for truck three](../media/refrigerated-trucks-three-enroute.png)
 
 1. There is in fact now so much going on it is tough to keep track of it. For each truck open up one of the other views, and check the states and events. Did any of the cooling systems fail? Did any of the contents melt?
 

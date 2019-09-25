@@ -7,11 +7,14 @@ The essential component for communication between a device and IoT Central is a 
 1. With your Refrigerated Truck app open in the IoT Central portal, select **Devices** from the left-hand menu.
 
 1. Open the **+** dropdown menu, and select **Real**.
-  ![Screenshot showing how to create a real device, usint the IoT Central portal](../media/refrigerated-trucks-new-real.png)
+
+    ![Screenshot showing how to create a real device, usint the IoT Central portal](../media/refrigerated-trucks-new-real.png)
 
 1. Change the default **Device Name** to something readable, leaving the **Device ID** as is, and then select **Create**.
-  ![Screenshot showing how to rename the real device to a friendly name](../media/refrigerated-trucks-new-real-create.png)
-  When the device is created, you will notice the phrase "Missing Data" where the telemetry would normally be. Not until the device starts transmitting data will this phrase change.
+
+    ![Screenshot showing how to rename the real device to a friendly name](../media/refrigerated-trucks-new-real-create.png)
+
+    When the device is created, you will notice the phrase "Missing Data" where the telemetry would normally be. Not until the device starts transmitting data will this phrase change.
 
 1. Click on the **Connect** button for the device, top right of your screen. Take your time and copy the **Scope ID**, **Device ID**, and **Primary Key**, to a text tool, such as Notepad, and save the file. You will be using these values after installing and running a few utilities to generate connection strings.
 

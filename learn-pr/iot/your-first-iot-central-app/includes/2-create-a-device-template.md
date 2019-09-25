@@ -14,7 +14,8 @@ In this unit, we will create a device template for a refrigerated truck. The IoT
    > Take note of the other options, **MXChip**, **Raspberry Pi**, and so on, just in case you need them in a future project!
 
 1. Enter the name for your template: "RefrigeratedTruck", then click **Create**.
-![Screenshot showing how to name, and then create, a new device template](../media/refrigerated-trucks-new-template.png)
+
+    ![Screenshot showing how to name, and then create, a new device template](../media/refrigerated-trucks-new-template.png)
 
 1. You should now see a template **RefrigeratedTruck (1.0.0)**, and see that a template can consist of **Measurements**, **Settings**, **Properties**, **Commands**, **Rules**, and a **Dashboard**. Our refrigerated truck will need entries under most of these headings.
 
@@ -32,7 +33,8 @@ Telemetry is the values transmitted by sensors. We only implement one sensor in 
 Notice that minimum and maximum values are specified for a telemetry entry, these values are _only_ used by a simulated device to mimic the values from a real device. A real device can transmit any value. The units of the telemetry are a text value to show on charts and tables, IoT Central does not have any inherent understanding of degrees Celsius, or any other possible physical unit.
 
 1. With the **Measurements** option underlined in blue, add the telemetry values from the image that follows. Click **+ New** and select **Telemetry** from the drop-down list.
-  ![Screenshot showing how to create temperature telemetry for the simulated device](../media/refrigerated-trucks-temperature.png)
+
+    ![Screenshot showing how to create temperature telemetry for the simulated device](../media/refrigerated-trucks-temperature.png)
 
 1. Remember to click the **Save** icon after entering the data. If you are warned you are leaving a page with unsaved changes, it often means you have neglected to click the **Save** icon.
 
@@ -45,13 +47,16 @@ Let's add the rest of the template.
 States are important, they let the operator know what is going on. A state in IoT Central is a name associated with any number of values. In addition, you get to choose a color to associate with each value, which can make identifying what is going on (in particular, changes in state), much easier to identify in a visual display. It is easy to see why color is important, for example a "go" state might be a green color, a "failed" state a red or darker color, and so on.
 
 1. Use the **+ New** option to add a state for the truck's refrigerated contents. First enter the **Display Name** and **Field Name**, then click the **+** to the right of **Values** three times, each time entering one of the three values: _empty_, _full_, and _melting_. No need to enter text for the display name of a value. Leave the default color as is, or choose a specific color if you are up for it! Finally, click **Save**.
-  ![Screenshot showing how to create contents state for the simulated device](../media/refrigerated-trucks-contents.png)
+
+    ![Screenshot showing how to create contents state for the simulated device](../media/refrigerated-trucks-contents.png)
 
 1. To add some uncertainty to our simulation, let's add a failure state for the cooling system. If the cooling system fails, as you will see in the following units, the chances of the contents melting increase considerably! Add _on_, _off_ and _failed_ entries for a cooling system. Start by clicking **+ New**, and add another state.
-  ![Screenshot showing how to create cooling system state for the simulated device](../media/refrigerated-trucks-cooling.png)
+
+    ![Screenshot showing how to create cooling system state for the simulated device](../media/refrigerated-trucks-cooling.png)
 
 1. A more complex state is the state of the truck itself. If all goes well, a truck's normal routing might be: _ready_, _enroute_, _delivering_, _returning_, _loading_, and back to _ready_ again.  However, we should add the _dumping_ state to cater for when melted contents need to be disposed of! Using the same process as for the last two steps, create this new state.
-  ![Screenshot showing how to create truck state for the simulated device](../media/refrigerated-trucks-state.png)
+
+    ![Screenshot showing how to create truck state for the simulated device](../media/refrigerated-trucks-state.png)
 
 ### Event
 
@@ -60,25 +65,29 @@ Events are issues triggered by the device, and communicated to the IoT Central a
 One possible event a device might trigger is a conflicting command. An example might be a truck is returning empty from a customer, but receives a command to deliver its contents to another customer. The conflict is caused by the device (the truck) being unable to act on the command. If a conflict occurs, it is a good idea for the device to trigger an event to warn the operator of the IoT Central app, with a _Warning_ class of event.
 
 1. Use **+ New**, then click **Event**, to create an event to cover a conflicting command as follows.
-  ![Screenshot showing how to create a conflict event for the simulated device](../media/refrigerated-trucks-conflict.png)
+
+    ![Screenshot showing how to create a conflict event for the simulated device](../media/refrigerated-trucks-conflict.png)
 
 1. Remember to click **Save** when you have entered the fields.
 
 1. A second event that we will add is informational. When a truck receives a command to deliver to a customer, and the truck is able to perform the task, the truck triggers a change-of-customer-ID event. Add this event now.
-  ![Screenshot showing how to create a customer changed event for the simulated device](../media/refrigerated-trucks-customer.png)
 
-  > [!NOTE]
-  > One reason we add this event is to keep track of which truck is going to which customer. In a later unit we implement multiple trucks and a single dashboard to monitor them, and having this event helps provide a record of what is going on.
+    ![Screenshot showing how to create a customer changed event for the simulated device](../media/refrigerated-trucks-customer.png)
+
+    > [!NOTE]
+    > One reason we add this event is to keep track of which truck is going to which customer. In a later unit we implement multiple trucks and a single dashboard to monitor them, and having this event helps provide a record of what is going on.
 
 ### Location
 
 A location is probably the most important, and yet one of the easiest measurements to add to a device template. Under the hood, it consists of a latitude, longitude, and an optional altitude, for the device.
 
 1. Add a location for our trucks as follows.
-  ![Screenshot showing how to create a truck location for the simulated device](../media/refrigerated-trucks-location.png)
+
+    ![Screenshot showing how to create a truck location for the simulated device](../media/refrigerated-trucks-location.png)
 
 1. You should now have completed adding all the measurements we need. Validate the measurements you have created against the following screen (though your colors may differ from the colors in the image):
-  ![Screenshot to help validate you have entered all the measurements for the simulated device correctly](../media/refrigerated-trucks-measurements.png)
+
+    ![Screenshot to help validate you have entered all the measurements for the simulated device correctly](../media/refrigerated-trucks-measurements.png)
 
 ## Settings
 
@@ -87,7 +96,8 @@ A Setting contains device configuration data. In our refrigerated truck example,
 A setting is a single value. If more complex sets of data need to be transmitted to a device, a Command (see below) might be the more appropriate way of handling it.
 
 1. Click on the **Settings** title (just to the right of **Measurements**) under the device template name. Add a single setting to set an optimal contents temperature, by clicking on **Number**, then entering the following fields:
-  ![Screenshot showing how to create an optimal temperature setting for the simulated device](../media/refrigerated-trucks-optimal.png)
+
+    ![Screenshot showing how to create an optimal temperature setting for the simulated device](../media/refrigerated-trucks-optimal.png)
 
 1. Click **Save**.
 
@@ -96,7 +106,8 @@ A setting is a single value. If more complex sets of data need to be transmitted
 Properties of a device are typically constant values, that are communicated to the IoT Central app once when communication is first initiated. In our refrigerated truck scenario, a good example of a property would be the license plate of the truck, or some similar unique truck ID.
 
 1. Click on the **Properties** title under the device template name, and add a single **Text** property to contain a truck ID.
-  ![Screenshot showing how to create a truck ID property for the simulated device](../media/refrigerated-trucks-id.png)
+
+    ![Screenshot showing how to create a truck ID property for the simulated device](../media/refrigerated-trucks-id.png)
 
 1. Click **Save**.
 
@@ -109,7 +120,8 @@ For refrigerated trucks, there are two commands we should add: a command to deli
 1. Click the **Commands** title under the device template name, then click **New Command**.
 
 1. For the first command, to send the truck to a customer, enter the following display and field names, and click **+** beside the **Input Fields** title to enter a text field.
-  ![Screenshot showing how to create a go to customer command for the simulated device](../media/refrigerated-trucks-goto.png)
+
+    ![Screenshot showing how to create a go to customer command for the simulated device](../media/refrigerated-trucks-goto.png)
     > [!TIP]
     > You can use the corner icon in the lower-right corner of the box displaying the command, to stretch the bounding rectangle so that all elements of the command are displayed fully.
 
@@ -117,8 +129,9 @@ For refrigerated trucks, there are two commands we should add: a command to deli
 
 1. Click **Save**.
 
-1. Validate that your two commands match the image below.  
-  ![Screenshot to help validate the two commands for the simulated device have been entered correctly](../media/refrigerated-trucks-cmds.png)
+1. Validate that your two commands match the image below.
+
+    ![Screenshot to help validate the two commands for the simulated device have been entered correctly](../media/refrigerated-trucks-cmds.png)
 
 Preparing a device template does take some care and some time.
 
