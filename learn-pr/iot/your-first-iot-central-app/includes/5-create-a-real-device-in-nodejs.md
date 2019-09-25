@@ -1,3 +1,4 @@
+In this unit, we are going to add Node.js code for a simulated refrigerated truck, which enables us to test the code long before requiring a real truck. IoT Central treats this simulation as "real" because the communication code between the Node.js app and the IoT Central app would be the same for a real truck. In other words, in a real situation (where you run a refrigerated truck company), you would start with simulated code similar to that in this unit, and, after it worked to your satisfaction, the simulation specific code would be replaced with real code. And the communication code would remain the same. This latter fact makes writing the following code a valuable experience.
 
 ## Create the Node.js app
 
@@ -29,7 +30,7 @@ Using your preferred development environment (Visual Studio Code, and Visual Stu
 
 ## Write the Node.js app
 
-In the blank app.js file, add the following code in the order that it is presented here. 
+In the blank app.js file, insert the following code. Each additional section of code should be appended to the end of the file, in the order listed here.
 
 1. Add code to connect to Azure IoT Central, and Azure Maps, replacing the &lt;your...&gt; strings for both technologies with your own strings. Do not change any other lines of code.
 

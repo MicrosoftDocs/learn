@@ -28,6 +28,7 @@ quiz:
     - content: 'Primary Key'
       isCorrect: false
       explanation: The Primary Key is unique to each device.
+
   - content: 'Which statement most accurately describes a Device Set?'
     choices: 
     - content: 'All devices of a Device Template, no exceptions.'
@@ -42,6 +43,7 @@ quiz:
     - content: 'All devices that have a setting that the device belongs to a Device Set.'
       isCorrect: false
       explanation: There is no such setting.
+
   - content: 'What is the process of authenticating devices to IoT Central known as?'
     choices: 
     - content: 'Authenticating'
@@ -49,10 +51,11 @@ quiz:
       explanation: Good try, but no, there is a specific name for authenticating devices.
     - content: 'Servicing'
       isCorrect: false
-      explanation: Servicing is a broader term than just authenticating devices.
+      explanation: Servicing is a broader term than authenticating devices.
     - content: 'Provisioning'
       isCorrect: true
-      explanation: This is the term you will see in the IoT Central portal.
+      explanation: This term is what you will see in the IoT Central portal.
+      
   - content: 'If you add a map to a dashboard, device locations are added by default, what additional information can be added for each device?'
     choices: 
     - content: 'One state measurement'
