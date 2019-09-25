@@ -2,10 +2,7 @@ Trial restores are a key component of any disaster recovery strategy.
 
 You want to familiarize yourself with the steps to restore a backed-up database to a specific point-in-time should it become necessary. You also want to investigate how long a restore operation will take so you can plan for this in your guidance for your organization.
 
-Here, you will perform trial restores from automated Azure SQL Database backups.
-
-> [!IMPORTANT]
-> The first automatic backup operation must be complete before your can restore a database. Don't start this exercise until 15 minutes or so after you completed the exercise in unit 3.
+Here, you will perform a restore of from automated Azure SQL Database backups.
 
 ## Confirm existence of backup
 
@@ -23,7 +20,7 @@ It can take up to 15 minutes for the first successful backup to complete. We nee
     You should see output similar to below if your backups are running. If the command returns no value, a backup hasn't kicked off quite yet. Rerun 
 
     ```output
-    ResourceGroupName        : Learn-ad055e8f-5334-4d86-8f85-68fc996d19d9
+    ResourceGroupName        : <rgn>[sandbox resource group name]</rgn>
     ServerName               : ERPServer-53903
     DatabaseName             : sql-erp-db
     Location                 : East US
