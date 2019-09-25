@@ -36,7 +36,7 @@ You can combine weekly, monthly, and yearly retention values to create a flexibl
 
 - `W=0, M=10, Y=0`
 
-    This policy retains the first full backup of each month for ten months.
+    This policy retains the first full backup of each month for 10 months.
 
 - `W=12, M=0, Y=0`
 

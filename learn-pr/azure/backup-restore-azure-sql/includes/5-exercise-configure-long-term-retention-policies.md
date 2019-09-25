@@ -79,7 +79,7 @@ You can also configure long-term retention policies by using PowerShell. Let's c
         -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
     ```
 
-    You should see the following policy configured. This enables a weekly retention of eight weeks, a monthly retention of 12 months, and a yearly retention of 5 years of the first backup of the year.
+    You should see the following policy configured. This enables a weekly retention of eight weeks, a monthly retention of 12 months, and a yearly retention of five years of the first backup of the year.
 
     ```output
     ResourceGroupName : <rgn>[sandbox resource group name]</rgn>

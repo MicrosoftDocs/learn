@@ -2,7 +2,7 @@ Although the default Azure SQL Database configuration includes automated backups
 
 Now that you have planned a comprehensive backup strategy for Azure SQL Database and your company's ERP system, it's time to implement it.
 
-Here, you will create a database in Azure and then configure backups. You'll set the retention to 28 days, to ensure you have 4 weeks of backups retained, per your policy. You will also add some content to the database.
+Here, you will create a database in Azure and then configure backups. You'll set the retention to 28 days, to ensure you have four weeks of backups retained, per your policy. You will also add some content to the database.
 
 ## Create a server and database
 
@@ -68,7 +68,7 @@ By default, Azure SQL Database blocks network access to the server. Let's enable
 
 ## Add data to the database
 
-Now let's add a table and a sample record to the database. It is helpful to have some data in the database to to validate that our backups and restores work later in the module.
+Now let's add a table and a sample record to the database. It is helpful to have some data in the database to validate that our backups and restores work later in the module.
 
 1. In the **Settings** section, select **SQL databases**, then select the **sql-erp-database**.
 

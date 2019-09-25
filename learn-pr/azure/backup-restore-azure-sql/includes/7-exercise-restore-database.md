@@ -17,7 +17,7 @@ It can take up to 15 minutes for the first successful backup to complete. We nee
         -ServerName $sqlserver.ServerName
     ```
 
-    You should see output similar to below if your backups are running. If the command returns no value, a backup hasn't kicked off quite yet. Rerun this command in a couple minutes.
+    You should see output similar to below if your backups are running. If the command returns no value, a backup hasn't kicked off yet. Rerun this command in a couple minutes.
 
     ```output
     ResourceGroupName        : <rgn>[sandbox resource group name]</rgn>
@@ -30,7 +30,7 @@ It can take up to 15 minutes for the first successful backup to complete. We nee
     RestorePointLabel        :
     ```
 
-    Note that the `RestorePointType` is `CONTINUOUS`, indicating that backups are automatically happening. The `EarliestRestoreDate` indicates the timestamp of the first backup. With backups in place, let's continue with the exercise.
+    The `RestorePointType` is `CONTINUOUS`, indicating that backups are automatically happening. The `EarliestRestoreDate` indicates the timestamp of the first backup. With backups in place, let's continue with the exercise.
 
 ## Drop a table from the database
 
