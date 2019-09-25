@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-readable-code.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
-  title: Check your knowledge
-  description: Review what you've learned
+  title: Knowledge check
+  description: Review what you've learned by answering questions about the module.
   ms.date: 09/23/2019
   author: bobtabor-msft
   ms.author: rtabor
@@ -42,17 +42,17 @@ quiz:
     - content: "Adding a TODO to your code so that you can look into a possible issue later."
       isCorrect: false
       explanation: "Adding a TODO is a good reason to add a code comment."
-  - content: "Which of the following is true about white space."
+  - content: "Which of the following is true about whitespace."
     choices:
-    - content: "You should reduce the amount of white space in your code to improve your code's speed."
+    - content: "You should reduce the amount of whitespace in your code to improve your code's speed."
       isCorrect: false
-      explanation: "This is not true.  Used judiciously, white space can improve the readability of your code.  It doesn't impact performance."
-    - content: "You should add a line of white space every two or three lines."
+      explanation: "This is not true.  Used judiciously, whitespace can improve the readability of your code.  It doesn't impact performance."
+    - content: "You should add a line of whitespace every two or three lines."
       isCorrect: false
-      explanation: "Arbitrarily adding white space every two or three lines won't necessarily improve the readability of your code."
+      explanation: "Arbitrarily adding whitespace every two or three lines won't necessarily improve the readability of your code."
     - content: "You should add tabs to make important lines of code stand out."
       isCorrect: false
       explanation: "Adding tabs arbitrarily isn't the right way to improve the readability of your code."
-    - content: "You should add white space judiciously to improve the readability of your code."
+    - content: "You should add whitespace judiciously to improve the readability of your code."
       isCorrect: true
       explanation: "Correct!"
