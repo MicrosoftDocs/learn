@@ -21,7 +21,7 @@ Let's start by configuring the five year retention by using the portal.
 
 1. Select **Yearly LTR Backups**.
 
-1. In the **How long would you like this annual backup to be kept?** controls, select **2 Year(s)**.
+1. In the **How long would you like this annual backup to be kept?** controls, enter the value **5** and select **Year(s)**.
 
     ![Configure a yearly retention policy](../media/5-configure-ltr-policy.png)
 
@@ -48,7 +48,7 @@ You can also configure long-term retention policies by using PowerShell. Let's c
 
     This will output the retention polices for all databases on the server. In this case you should see one policy for the **master** database, and one policy for the **sql-erp-db** database.
 
-1. Run this command to view the long-term retention policies for the **sql-erp-db** database.
+1. Run this command to view the long-term retention policy for the **sql-erp-db** database.
 
     ``` powershell
     Get-AzSqlDatabaseBackupLongTermRetentionPolicy `
