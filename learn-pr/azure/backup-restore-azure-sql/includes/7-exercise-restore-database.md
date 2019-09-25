@@ -4,7 +4,7 @@ You want to familiarize yourself with the steps to restore a backed-up database 
 
 Here, you will perform a restore of from automated Azure SQL Database backups.
 
-## Confirm existence of backup
+## Confirm backups are active
 
 It can take up to 15 minutes for the first successful backup to complete. We need to make sure that we have a backup before we continue with the exercise.
 
@@ -17,7 +17,7 @@ It can take up to 15 minutes for the first successful backup to complete. We nee
         -ServerName $sqlserver.ServerName
     ```
 
-    You should see output similar to below if your backups are running. If the command returns no value, a backup hasn't kicked off quite yet. Rerun 
+    You should see output similar to below if your backups are running. If the command returns no value, a backup hasn't kicked off quite yet. Rerun this command in a couple minutes.
 
     ```output
     ResourceGroupName        : <rgn>[sandbox resource group name]</rgn>
