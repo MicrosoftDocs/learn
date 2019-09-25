@@ -64,14 +64,17 @@ Identify the subtasks of *module title*
 
 3. **Exercise - Create a Cosmos DB instance using Visual Studio Code**
 
-    List the steps which apply the learning content from previous unit:
+    List the steps that apply the learning content from previous unit:
 
     1. Install the Azure Cosmos DB extension for Visual Studio Code.
     2. Create a Cosmos DB account (SQL API).
     3. Create a database in the account, for holding students' grade information.
-    4. Create the `StudentCourseGrades` collection. This collection will hold `Course` and `Student` documents. Course grades will be held as an array of sub-documents with each student. The data will be partitioned partitioned by academic year.
+    4. Create the `StudentCourseGrades` collection. This collection will hold `Course` and `Student` documents. Course grades will be held as an array of subdocuments with each student. The data will be partitioned by academic year.
+
+    <!-- NOTE TO REVIEWER AND AUTHOR. Academic year might not be the best partition key for a real world example as it could lead to hot partitions, but I have used it in this module to keep the scenario simple, and reduces complexity in the stored procedure unit later in this module. We should probably add a note to this effect when the module is written -->
+
     5. Insert a `Course` document.
-    6. Insert two `Student` documents, each with a `Grade` sub-document that references a `Course` document.
+    6. Insert two `Student` documents, each with a `Grade` subdocument that references a `Course` document.
     7. View the documents in Visual Studio Code.
     8. Update the course grade for a student and save the change.
 
@@ -80,13 +83,13 @@ Identify the subtasks of *module title*
     Cover the following points:
 
    - Describe how to create a new folder and JavaScript file using Explorer in Visual Studio Code.
-   - Explain how to use JavaScript IntelliSense from Visual Studio Code.
+   - Explain how to use JavaScript IntelliSense from Visual Studio Code. Include the use of `//@ts-check` to provide advanced type checking and error reporting when editing code.
    - Describe how to use the integrated terminal in Visual Studio Code to run a Node app.
    - Summarize how to use the Debugger in Visual Studio Code to set breakpoints, step through code, and view variables.
 
 5. **Exercise - Create a Node.js app in Visual Studio Code**
 
-    List the steps which apply the learning content from previous unit:
+    List the steps that apply the learning content from previous unit:
 
     1. Using Explorer in Visual Studio Code, create a new folder named `grades`.
     2. Create a new JavaScript code file named `studentgrades.js`.
@@ -97,7 +100,7 @@ Identify the subtasks of *module title*
     4. Run the app and test it.
     5. Use the debugger to single step through the application and observe the objects that get created.
 
-    **Note:** This exercise does not store any data in Cosmos DB; this aspect is covered in the next unit and exercise.
+    **Note:** This exercise does not store any data in Cosmos DB; this aspect is covered in the following units and exercises.
 
 6. **Add JavaScript code to work with Cosmos DB**
 
@@ -115,7 +118,7 @@ Identify the subtasks of *module title*
 
 7. **Exercise - Add JavaScript code to work with Cosmos DB**
 
-    List the steps which apply the learning content from previous unit:
+    List the steps that apply the learning content from previous unit:
 
     1. Install the `@azure/cosmos` module.
     2. Create a separate JavaScript code file (`config.js`) that encapsulates the configuration information for connecting to Cosmos DB as an object.
@@ -133,15 +136,33 @@ Identify the subtasks of *module title*
     Cover the following points:
 
     - Explain the purpose of stored procedures in Cosmos DB
-    - CONTINUE WITH THIS
+    - Describe the considerations for implementing a stored procedure:
+            - You write the code for a stored procedure using JavaScript.
+            - All operations in a stored procedure are synchronous.
+            - A stored procedure operates within the context of a single partition in a collection; it cannot access data in other partitions.
+            - A stored procedure is transactional; if an operation in a stored procedure fails (or the stored procedure times out), all the work performed by the stored procedure is undone.
+            - A stored procedure can throw an exception back to the caller if it detects an error condition. This will also cause the transaction to be undone.
+            - A stored procedure runs in an environment that restricts the amount of time and resources available (a *bounded execution* environment), to prevent a rogue stored procedure from adversely affected other users.
+    - Briefly summarize the JavaScript integrated query API for Cosmos DB, used from within stored procedures (https://docs.microsoft.com/azure/cosmos-db/javascript-query-api)
+    - Describe how to return data as a response message from a stored procedure.
+    - Explain how to handle bounded execution by structuring a stored procedure to support *resume* functionality; the stored procedure runs until it is complete or runs out of time. If the stored procedure exceeds the time available, it returns state information in the form of a *continuation* token to the caller. The caller invokes the stored procedure again with the data in the continuation token, and the stored procedure continues processing from where it left off.
+    - Describe how to create a stored procedure from the Azure portal.
+    - Describe how to test a stored procedure using the Azure portal.
+    - Describe how to run a stored procedure from a Node application (see https://docs.microsoft.com/javascript/api/@azure/cosmos/storedprocedure?view=azure-node-latest#execute-any--any----requestoptions-).
 
 9. **Exercise - Create and run Cosmos DB stored procedures**
 
-    Scenario: Rather than delete a student object, the app should create an `archive` object containing a summary of the course grades for the student.
+    Scenario: As part of a cleanup process, you want to provide functionality that can remove all student and course documents for a specified academic year from the database. Cosmos DB does not provide an API that removes multiple documents, so you decide to write a stored procedure to perform this task instead.
 
-    List the steps which apply the learning content from previous unit:
+    List the steps that apply the learning content from previous unit:
 
-    1. ADD SOME DETAILS.
+    1. Using the Azure portal, create a new stored procedure named `deleteRecords` for the collection. The stored procedure should run in the partition containing the data for the academic year for which records should be removed. In the stored procedure, perform the following tasks:
+             1. Run a query that finds all documents in the partition.
+             2. Iterate through the documents returned by the query and delete each one. As each document is deleted, check whether the permitted execution time has been exhausted. If so, return the value `false` (to indicate that deletion is not yet finished), and the number of records deleted so far, in the response message.
+             3. If the permitted execution time has not been exhausted when all records have been deleted, return `true`, together with the number of documents deleted, in the response message.
+    2. Test the stored procedure using the Azure portal. This will require uploading some sample data first (*module author to generate this data*).
+    3. In the Node app, add an async function that calls the `deleteRecords` stored procedure over a specified partition. The code should check the response. If the response contains the `false` indication, save the number of records deleted so far, and call the stored procedure again over the same partition. Add the number of records in the response to the number previously stored to calculate the total number of records deleted. Repeat these steps until the stored procedure returns `true`.
+    4. Update the test harness from the previous exercise to test the function that calls the stored procedure.
 
 10. **Summary**
 
@@ -149,8 +170,8 @@ Identify the subtasks of *module title*
 
 ## Notes
 
-- This is effectively a port of https://docs.microsoft.com/en-us/learn/modules/build-cosmos-db-app-with-vscode/, for which we are not adding a pivot for a few reasons. The content of this module should not be lifted straight from the other module, but I don't expect them to be substantially different, except around the differing concerns between Node and .NET.
+- This is effectively a port of https://docs.microsoft.com/learn/modules/build-cosmos-db-app-with-vscode/, for which we are not adding a pivot for a few reasons. The content of this module should not be lifted straight from the other module, but I don't expect them to be substantially different, except around the differing concerns between Node and .NET.
   - Note that the other module was created prior to our "conceptual unit/exercise unit" structure, which should be followed for this new module.
 - This module is for rank beginners. No real Node expertise is expected of the audience, but you don't need to explain what Node is - the assumption is that they've learned enough to want to create a Node app that uses real cloud infrastructure.
 - Similar to the other module, create a console app that can be run in the cloud shell.
-- Additional information is available at https://code.visualstudio.com/docs/nodejs/nodejs-tutorial and https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-nodejs-get-started
+- Additional information is available at https://code.visualstudio.com/docs/nodejs/nodejs-tutorial and https://docs.microsoft.com/azure/cosmos-db/sql-api-nodejs-get-started
