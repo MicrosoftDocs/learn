@@ -12,7 +12,7 @@ One of UNSW’s most exciting AI programs is led by Dr. David Kellermann, senior
 
 ## Challenge
 
-Kellermann has classes of over 600 students, including remote students who watch his lectures online. He started using the collaboration platform Teams to better reach and connect in-class and remote students, but this created a new challenge. Students began using the chat function to ask the teaching staff questions, and their engagement on the platform increased 900% over the course of the term.
+Kellermann has classes of over 600 students, including remote students who watch his lectures online. He started using the collaboration platform Teams to better reach and connect in-class and remote students, but this created a new challenge. Students began using the chat function to ask the teaching staff questions, and their engagement on the platform increased 900% over the course of the term.<sup>2</sup>
 
 How could the teaching staff respond to so many questions from hundreds of students without overlooking any inquiries? To find solutions, they turned to the wealth of data within Teams, which collected and stored data from chat and discussion forums, video lecture recordings and transcripts, live-synchronized lecture notes, study guides, assignments, and more.
 
