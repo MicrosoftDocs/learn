@@ -28,33 +28,33 @@ You may need to use additional data to sufficiently test all of the scenarios de
 
 1. If the user is an Admin with a level greater than 55, output the message:
 
-```output
-Welcome, Super Admin user.
-```
+   ```output
+   Welcome, Super Admin user.
+   ```
 
 2. If the user is an Admin with a level less than or equal to 55, output the message:
-
-```output
-Welcome, Admin user.
-```
+ 
+   ```output
+   Welcome, Admin user.
+   ```
 
 3. If the user is a Manager with a level 20 or greater, output the message:
 
-```output
-Contact an Admin for access.
-```
+   ```output
+   Contact an Admin for access.
+   ```
 
 4. If the user is a Manager with a level less than 20, output the message:
 
-```output
-You do not have sufficient privileges.
-```
+   ```output
+   You do not have sufficient privileges.
+   ```
 
 5. If the user is not an Admin or a Manager, output the message:
 
-```output
-You do not have sufficient privileges.
-```
+   ```output
+   You do not have sufficient privileges.
+   ```
 
 ### Step 4 - Make sure you get the output given the sample data
 
