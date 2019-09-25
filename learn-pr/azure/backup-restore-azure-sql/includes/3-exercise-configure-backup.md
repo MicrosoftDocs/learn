@@ -27,7 +27,7 @@ Let's use the Azure CLI to create an Azure SQL Server and database instance.
         -SqlAdministratorCredentials $sqlAdmin
     ```
 
-1. Run the `az sql db create` command to create a database.
+1. Run the `New-AzSqlDatabase` command to create a database.
 
     ```powershell
     New-AzSqlDatabase `
