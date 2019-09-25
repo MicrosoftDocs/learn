@@ -1,4 +1,4 @@
-Suppose you need to quickly determine if a customer's purchase is eligible for a promotional discount.  If the amount of the sale is greater than $1000, then discount the purchase by $100.  If the amount is $1000 or less, only discount the sale by $50.
+Suppose you need to quickly determine if a customer's purchase is eligible for a promotional discount.  If the amount of the sale is greater than 1000, then discount the purchase by 100 dollars.  If the amount is 1000 or less, only discount the sale by 50 dollars.
 
 While we could certainly use the `if ... elseif ... else` branching construct to express this business rule, we may choose the *conditional operator* to perform the promotional discount.  The conditional operator uses a compact format that saves a few lines of code and possibly makes the intent of the code clearer.
 
