@@ -11,7 +11,7 @@ metadata:
   ROBOTS: NOINDEX
 title: Exercise - Configure backup for Azure SQL Database
 durationInMinutes: 7
-interactive: bash
+interactive: powershell
 azureSandbox: true
 content: |
   [!include[](includes/3-exercise-configure-backup.md)]

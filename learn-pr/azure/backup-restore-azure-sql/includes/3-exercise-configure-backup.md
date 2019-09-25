@@ -8,30 +8,32 @@ Here, you will create a database in Azure and then configure backups. You'll set
 
 Let's use the Azure CLI to create an Azure SQL Server and database instance.
 
-1. Run this command in the Azure Cloud Shell to set up some variables for the SQL Server creation. This will create a server name with a random number at the end to ensure it's globally unique. We'll refer to the server name as `ERPServer-NNNN` through the exercises, but replace this with the name of your server that is generated here.
+1. Run these commands in the Azure Cloud Shell to set up some variables for the SQL Server creation. This will create a server name with a random number at the end to ensure it's globally unique. We'll refer to the server name as `ERPServer-NNNN` through the exercises, but replace this with the name of your server that is generated here. This also sets the location for your server to the location of the resource group. Finally, it sets the credentials you will use to access the database server. When prompted, enter a complex password of your choice. 
 
-    ```bash
-    SERVER_NAME=ERPServer-$RANDOM
+    ```powershell
+    $serverName = "ERPServer-$(Get-Random)"
+    $location = $(Get-AzResourceGroup -ResourceGroupName <rgn>[sandbox resource group name]</rgn>).location
+    $sqlAdmin = Get-Credential -credential dbadmin
+
     ```
 
-1. Run the `az sql server create` command to create an Azure SQL server to store the database. Replace `<password>` with a complex password of your choice.
+1. Run the `New-AzSqlServer` command to create an Azure SQL server to store the database.
 
-    ```azurecli
-    az sql server create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name $SERVER_NAME \
-        --admin-user dbadmin \
-        --admin-password <password>
+    ```powershell
+    New-AzSqlServer `
+        -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
+        -Location $location `
+        -ServerName $serverName `
+        -SqlAdministratorCredentials $sqlAdmin
     ```
 
 1. Run the `az sql db create` command to create a database.
 
-    ```azurecli
-    az sql db create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --name sql-erp-db \
-        --server $SERVER_NAME \
-        --edition Standard
+    ```powershell
+    New-AzSqlDatabase `
+        -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
+        -ServerName $serverName `
+        -DatabaseName sql-erp-db
     ```
 
 ## Configure the database retention policy
