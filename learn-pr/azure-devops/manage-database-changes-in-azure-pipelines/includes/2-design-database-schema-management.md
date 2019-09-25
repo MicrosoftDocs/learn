@@ -14,16 +14,17 @@ In this section, you'll:
 
 ## The meeting
 
-**Andy:** Good morning team. With our Azure DevOps pipeline bringing our development and operations together in a more efficient way, we can now stop using the sample data files and add a development database to our _dev_, _test_, and _staging_ App Services. This will allow us to better code with the production web site in mind.
+**Andy:** Good morning team. With our Azure DevOps pipeline bringing our development and operations together in a more efficient way, we are ready to stop using the sample data files and add a development database to our _dev_, _test_, and _staging_ App Services. This will allow us to better code with the production web site in mind.
 
-Let's start with choosing a database technology.
+This is a big milestone and we have a lot to talk about. Let's start with choosing a database technology.
 
 ...
+
 
 - What database technology are we going to use?
 - On-prem or in the cloud?
 - How do we make sure we don't add the sensitive connection string data to source control?
-- How can we keep the database administrator happy if we need to change the database schema during development?
+- How can we keep the database administrator happy if we need to change the database schema during development? - what tasks will we need?
 
 ## The plan
 

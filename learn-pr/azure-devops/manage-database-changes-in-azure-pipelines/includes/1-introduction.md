@@ -12,7 +12,7 @@ In this module, you:
 
 - Access an Azure SQL database from your App Service.
 - Add database schema changes to Azure pipeline approvals.
-- TBD
+- Make sure approval is needed only where there are actual schema changes
 
 ## Prerequisites
 

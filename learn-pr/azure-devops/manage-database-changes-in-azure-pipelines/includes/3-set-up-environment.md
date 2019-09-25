@@ -1,5 +1,3 @@
-Copied from workflow module
-
 In this section, you make sure that your Azure DevOps organization is set up to complete the rest of this module.
 
 To do this, you:
@@ -8,8 +6,6 @@ To do this, you:
 > * Add a user to ensure Azure DevOps can connect to your Azure subscription.
 > * Set up an Azure DevOps project for this module.
 > * Move the work item for this module on Azure Boards to the **Doing** column.
-> * Create the Azure App Service environments.
-> * Create pipeline variables that define the names of your App Service environments.
 
 ## Add a user to Azure DevOps
 
@@ -37,7 +33,7 @@ The modules in this learning path form a progression, where you follow the Tails
 From the Azure DevOps Demo Generator site, perform these steps to run the template.
 
 1. Select **Sign In** and accept the usage terms.
-1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - Release workflow**. Then select **Create Project**.
+1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - database**. Then select **Create Project**.
 
     <!-- ![Creating a project through the Azure DevOps Demo Generator](../media/4-create-new-project.png) -->
 
@@ -55,13 +51,13 @@ In this part, you assign a work item to yourself that relates to this module on 
 
 Assigning work in this way gives you a checklist to work from. It gives others on your team visibility into what you're working on and how much work is left. It also helps the team enforce Work in Progress (WIP) limits so that the team doesn't take on too much work at one time.
 
-Recall that the team settled on these three top issues for the current sprint.
+Recall that the team settled on these top issues for the current sprint.
 
 ![Backlog of tasks](../../shared/media/deploy-all-tasks.png)
 
-Here you move the first item, **Define a release management workflow** to the **Doing** column and assign yourself to the work item.
+Here you move the item, **Manage database schema changes** to the **Doing** column and assign yourself to the work item.
 
-Recall that **Define a release management workflow** relates to defining a release management workflow for the _Space Game_ web site.
+Recall that **Danage database schema changes* relates to managing database schema changes for the _Space Game_ web site.
 
 <!-- ![Work item details](../media/3-work-item-details.png) -->
 
@@ -71,7 +67,7 @@ To set up the work item:
 
     ![Azure DevOps showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
 
-1. From the **Define a release management workflow** work item, click the down arrow at the bottom of the card. Then assign the work item to yourself.
+1. From the **Manage database schema changes** work item, click the down arrow at the bottom of the card. Then assign the work item to yourself.
 
     ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
 1. Move the work item from the **To Do** to the **Doing** column.

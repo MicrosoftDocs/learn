@@ -18,7 +18,7 @@ This branch serves as your _release_ branch. It contains the _Space Game_ projec
 
 1. As an optional step, open *azure-pipelines.yml* from Visual Studio Code and familiarize yourself with the initial configuration.
 
-    The configuration resembles the basic one you created in the [Create a release management workflow with Azure Pipelines](/learn/modules/create-a-release-management-workflow?azure-portal=true) module. It builds only the application's Release configuration and deploys the build to _dev_, _test_, and _staging_ environments. For learning purposes, this configuration does not run the quality or security checks that you set up in previous modules.
+    The configuration resembles the basic one you created in the [Create a release management workflow with Azure Pipelines](/learn/modules/create-a-release-management-workflow?azure-portal=true) module. It builds only the application's Release configuration and deploys the build to _dev_, _test_, and _staging_ environments. For learning purposes, this configuration does not run the quality or security checks nor does it contain the schedules and triggers that you set up in previous modules.
 
 ## Create the database
 
@@ -468,8 +468,8 @@ Here you add the pipeline stage that will check for database schema changes so t
     git push origin database
     ```
 
-1. Watch the pipeline and wait for the manual approval of the database schema. When the pipeline stops for approval, click on the `DBAVerificationScript` stage and look at the change script that was created. The script should not have any changes since we didn't change anything in the database yet.
-1. Go ahead and approve the stage. Click **Review** and then **Approve**.
+1. Select the pipeline and wait for the manual approval of the database schema. When the pipeline stops for approval, click on the `DBAVerificationScript` stage and look at the change script that was created. It will be in the **Show automated SQL Script** section. The script should not have any changes since we didn't change anything in the database yet. You will know there are no changes if you do not see **CREATE**, **ALTER**, or **DROP** statements in the script.
+1. Go back to the pipeline and select the **waiting** button on the `DBAVerificationApply`. Select **Review** and then **Approve**.
 1. Wait for the pipeline to finish deployments.
 
     ![Azure Pipelines showing the pipeline stages](../media/4-pipeline-run.png)
