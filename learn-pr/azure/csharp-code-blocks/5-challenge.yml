@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-code-blocks.challenge
-title: Introduction
+title: Challenge
 metadata:
-  title: Introduction
-  description: Begin your software development journey by learning one of the most popular programming languages.
+  title: Challenge
+  description: Use the concepts you just learned about to solve a real world challenge in code.
   ms.date: 09/26/2019
   author: bobtabor-msft
   ms.author: rtabor
