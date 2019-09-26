@@ -58,4 +58,4 @@ Organizations should also consider establishing a dedicated internal review body
 
 We recognize that every individual, company, and region will have their own beliefs and standards that should be reflected in their AI journey. We share our perspective with you as you consider developing your own guiding principles.
 
-Next, let’s hear from Matt Fowler, VP at TD Bank Group, as he describes how his business is approaching responsible AI.
+Next, let’s hear from Matt Fowler, VP and Head of Machine Learning, Enterprise Data and Analytics at TD Bank Group, as he describes how his business is approaching responsible AI.
