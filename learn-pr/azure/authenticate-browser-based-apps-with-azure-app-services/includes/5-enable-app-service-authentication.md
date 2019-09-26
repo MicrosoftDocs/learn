@@ -20,7 +20,7 @@ Start by checking the configuration settings that are required when you are usin
 
 1. In the **Authentication Providers** list, click **Microsoft**.
 
-1. The Azure Portal will prompt you for a **Client ID** and a **Client Secret**; you will return to this prompt after you have completed the steps in the next section.
+1. The Azure portal will prompt you for a **Client ID** and a **Client Secret**; you will return to this prompt after you have completed the steps in the next section.
 
 ### Create authentication endpoints
 
