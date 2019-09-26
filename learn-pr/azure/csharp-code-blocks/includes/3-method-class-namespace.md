@@ -33,7 +33,7 @@ As you build real applications, you'll write *methods*, and organize them into *
 
 A **method** is a code block that is a unit of execution.  In other words, once the method is called by its name, the entire method will execute until:
 - the runtime encounters the `return` keyword, or
-- the runtime encounters an exception an can't continue, or
+- the runtime encounters an exception and can't continue, or
 - the runtime successfully executes each line of code in the method
 
 In the browser-based .NET editor, all the code you write is executed inside of a hidden `Main()` method, which hopefully has reduced a lot of complexity as you're getting started.
