@@ -28,16 +28,17 @@ Here you modify your pipeline configuration to promote the build to the _Dev_ st
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* like this.
 
-    [!code-yml[](code/4-azure-pipelines.yml?highlight=3,69-74,92)]
+    [!code-yml[](code/4-azure-pipelines.yml?highlight=3,66.69-74,92)]
 
     This configuration resembles the one you built in the previous module, where you and the team built a proof of concept around continuous deployment. However, note these differences, which are highlighted in the code example:
 
     * This configuration defines variables at the top of the file that are used throughout the pipeline. These variables define which configuration to build (**Release**) and the name of your release branch (**release**).
+    * The **Deploy** stage from the POC is now named **Dev**.
     * The **Dev** stage uses a condition that specifies to run the stage only when the previous stage succeeds and the current branch is **release**. This ensures that release features only are deployed to the _Dev_ environment.
     * The deployment step uses the variable that's named **WebAppNameDev** to deploy to the App Service instance that's associated with the _Dev_ environment.
 
     > [!NOTE]
-    > Remember, in practice, you might deploy from some other branch, such as `master`. You can include additional logic that allows changes to promote to the _Dev_ stage from both the release branch and the master branch.
+    > Remember, in practice, you might deploy from some other branch, such as `master`. You can include additional logic that allows changes to promote to the _Dev_ stage from multiple branches, such as `release` and `master`.
 
 1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub.
 
@@ -58,9 +59,7 @@ Here you modify your pipeline configuration to promote the build to the _Dev_ st
     You see that the deployment completed successfully.
 1. From a web browser, navigate to the URL that's associated with the App Service instance for your _Dev_ environment.
 
-    If you still have the browser tab open, simply refresh the page.
-
-    If you need a refresher, you can find the URL from the App Service details page in the Azure portal.
+    If you still have the browser tab open, simply refresh the page. If you need a refresher, you can find the URL from the App Service details page in the Azure portal.
 
     You see that the _Space Game_ website has been successfully deployed to App Service and is running.
 

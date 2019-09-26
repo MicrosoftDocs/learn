@@ -206,9 +206,7 @@ When you created your App Service instance, you saw the default website that's c
 
 1. From a web browser, navigate to the URL that's associated with your App Service instance.
 
-    If you still have the browser tab open, simply refresh the page.
-
-    If you need a refresher, you can find the URL from the App Service details page in the Azure portal.
+    If you still have the browser tab open, simply refresh the page. If you need a refresher, you can find the URL from the App Service details page in the Azure portal.
 
     ![](../media/5-app-service-details.png)
 

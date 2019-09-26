@@ -42,9 +42,7 @@ Here you modify your pipeline configuration to deploy the build to the _Test_ st
     You see that the deployment completed successfully.
 1. From a web browser, navigate to the URL that's associated with the App Service instance for your _Test_ environment.
 
-    If you still have the browser tab open, simply refresh the page.
-
-    If you need a refresher, you can find the URL from the App Service details page in the Azure portal.
+    If you still have the browser tab open, simply refresh the page. If you need a refresher, you can find the URL from the App Service details page in the Azure portal.
 
     You see that the _Space Game_ website has been successfully deployed to App Service and is running.
 
