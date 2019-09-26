@@ -13,8 +13,8 @@ Finally, you explored how to use smart groups to reduce notification and alert n
 
 ## Learn more
 Further information on Azure Monitor, each of the alerting types, and smart groups can be found here:
-- [Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-overview)
-- [Metric alerts](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-metric-overview)
-- [Log alerts](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-unified-log)
-- [Activity log alerts](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/activity-log-alerts)
-- [Smart groups](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/alerts-smartgroups-overview)
+- [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-overview)
+- [Metric alerts](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric-overview)
+- [Log alerts](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-unified-log)
+- [Activity log alerts](https://docs.microsoft.com/azure/azure-monitor/platform/activity-log-alerts)
+- [Smart groups](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-smartgroups-overview)

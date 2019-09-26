@@ -5,7 +5,7 @@ Following the downtime faced by your customers, you'd like to set up monitoring 
 In this unit, you'll see how Azure Monitor receives resource data, what makes up an alert, and how and when to use one. Finally, you'll learn how to create and manage your own alerts.
 
 ## Data types in Azure Monitor
-![An image representing the target resources feeding into Azure Monitor and the two principle signal types: metrics and logs](../media/01-AzureResourceAndSignalTypes.png)
+![An image representing the target resources feeding into Azure Monitor and the two principle signal types: metrics and logs](../media/01-azure-resource-and-signal-types.png)
 
 Azure Monitor receives data from multiple target resources such as applications, operating systems, Azure resources, Azure subscriptions, or Azure tenants. The nature of the resource defines which data types are available. A data type will be one of metric, log, or metric and log.
 
