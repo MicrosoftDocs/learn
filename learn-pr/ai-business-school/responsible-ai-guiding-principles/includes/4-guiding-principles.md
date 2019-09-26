@@ -7,7 +7,7 @@ In the last unit, we discussed the societal implications of AI and the responsib
 At Microsoft, we’ve recognized six principles that we believe should guide AI development and use: fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability. For us, these principles are the cornerstone of a responsible and trustworthy approach to AI, especially as intelligent technology becomes more prevalent in the products and services we use every day.
 :::column-end:::
 :::column span="2":::
-![Six Principles Guiding Microsoft Responsible AI Development and Use - Fairness, Reliability and safety, privacy and security, inclusiveness, transparency, accountability](../media/3.2.1a.jpg)
+![Six Principles Guiding Microsoft Responsible AI Development and Use - Fairness, Reliability and safety, privacy and security, inclusiveness, transparency, accountability](../media/3-2-1a.jpg)
 :::column-end:::
 :::row-end:::
 
@@ -40,7 +40,7 @@ At Microsoft, we firmly believe everyone should benefit from intelligent technol
 Inclusive design practices can help system developers understand and address potential barriers in a product environment that could unintentionally exclude people. By addressing these barriers, we create opportunities to innovate and design better experiences that benefit everyone.
 :::column-end:::
 :::column span="2":::
-![Microsoft Inclusive Design Principles: recognize exclusion, solve for one, extend to many, learn from diversity](../media/3.2.1b.jpg)
+![Microsoft Inclusive Design Principles: recognize exclusion, solve for one, extend to many, learn from diversity](../media/3-2-1b.jpg)
 :::column-end:::
 :::row-end:::
 
