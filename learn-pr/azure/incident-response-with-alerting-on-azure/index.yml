@@ -15,8 +15,8 @@ abstract: |
   - Configure alerts on events in your Azure resources based on metrics, log events, and Activity log events
   - Learn how to use smart groups to identify and group related alerts to reduce alert noise
 prerequisites: | 
-  - TODO
-iconUrl: /learn/achievements/incident-response-with-alerting-on-azure.svg
+  - Basic knowledge of Azure Monitor
+iconUrl: http://via.placeholder.com/120x120
 levels:
 - beginner
 roles:
