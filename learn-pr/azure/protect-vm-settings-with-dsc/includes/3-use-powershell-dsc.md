@@ -1,4 +1,4 @@
-You use PowerShell DSC to specify the desired state for a virtual machine (VM). In this unit, you'll learn more about PowerShell DSC and how to use it to control the state of your VMs. In the example scenario, you use PowerShell DSC to make sure that IIS for Windows Server is installed and configured consistently across all of your web servers.
+You use PowerShell DSC to specify the desired state for a VM. In this unit, you'll learn more about PowerShell DSC and how to use it to control the state of your VMs. In the example scenario, you use PowerShell DSC to make sure that IIS for Windows Server is installed and configured consistently across all of your web servers.
 
 By the end of this unit, you'll:
 
@@ -8,7 +8,7 @@ By the end of this unit, you'll:
 
 ## DSC resources
 
-You've seen that PowerShell DSC is a declarative task-oriented scripting language. When you need to configure and deploy an Azure resource in a consistent way across a set of VMs, PowerShell DSC can help. You use PowerShell DSC even when you're not familiar with the technical steps involved to install and configure the software and services.  
+You've seen that PowerShell DSC is a declarative task-oriented scripting language. When you need to configure and deploy an Azure resource in a consistent way across a set of VMs, PowerShell DSC can help. You can use PowerShell DSC even when you're not familiar with the technical steps to install and configure the software and services.  
 
 Windows Server has a set of built-in PowerShell DSC resources. You can see these resources by running the `Get-DSCResource` PowerShell cmdlet.
 
@@ -33,13 +33,13 @@ The following table lists some of the built-in PowerShell DSC resources.
 | WindowsOptionalFeature | Adds or removes an optional role or feature on a node |
 | WindowsProcess         | Manages a Windows process                          |
 
-For more complex resources, like Active Directory integration, see the DSC Resource Kit, which is updated monthly. You'll find the link to this resource at the end of the module.
+For more complex resources, like Active Directory integration, use the DSC Resource Kit, which is updated monthly. You'll find the link to this resource at the end of the module.
 
 The resource you want to configure must already be part of the VM or part of the VM image. Otherwise, the job will fail to compile and run.
 
 ## Anatomy of a DSC code block
 
-A DSC code block contains four sections. Use the following example to take a closer look. In the example, the numbers refer to sections in the following discussion. They aren't part of the syntax.
+A DSC code block contains four sections. Use the following example to take a closer look. In the example, the numbers aren't part of the syntax. They refer to sections in the discussion that follows. 
 
 ```powershell
 Configuration MyDscConfiguration {              ##1
@@ -73,7 +73,7 @@ The configuration syntax includes these sections:
     }
     ```
   
-2. **Node**: You can have one or more node blocks. The node block determines the names of .mof files that are generated when you compile the configuration. For example, the node name `localhost`, generates only one *localhost.mof* file. But you can send that .mof file to any server. You generate multiple .mof files when you use multiple node names.
+2. **Node**: You can have one or more node blocks. The node block determines the names of .mof files that are generated when you compile the configuration. For example, the node name `localhost` generates only one *localhost.mof* file. But you can send that .mof file to any server. You generate multiple .mof files when you use multiple node names.
 
     Use the array notation in the node block to target multiple hosts. For example:
 
@@ -81,15 +81,15 @@ The configuration syntax includes these sections:
     Node @('WEBSERVER1', 'WEBSERVER2', 'WEBSERVER3')
     ```
 
-3. **Resource**: One or more resource blocks can specify the resources to configure. In this case, there's one resource block, referencing the `WindowsFeature` resource. In this example, the `WindowsFeature` resource ensures that the Windows feature `Web-Server` is installed.
+3. **Resource**: One or more resource blocks can specify the resources to configure. In this case, a single resource block references the `WindowsFeature` resource. The `WindowsFeature` resource here ensures that the Windows feature `Web-Server` is installed.
 
 4. **MyDscConfiguration**: This call invokes the `MyDscConfiguration` block. It's like running a function. When you run a configuration block, it's compiled into a Managed Object Format (MOF) document. MOF is a compiled language created by Desktop Management Task Force, and it's based on interface definition language. 
 
-     For every node listed in the DSC script, a .mof file is created in the folder you specified with the `-OutputPath` parameter.
+    For every node listed in the DSC script, a .mof file is created in the folder you specified with the `-OutputPath` parameter.
 
 ## Configuration data in a DSC script
 
-In a configuration data block, you can provide data that might be required by the configuration process. You apply this data to named nodes, or you apply it globally across all nodes. 
+In a configuration data block, you can provide data that the configuration process might need. You apply this data to named nodes, or you apply it globally across all nodes. 
 
 A configuration data block is a named block that contains an array of nodes. The array must be named `AllNodes`. Inside the `AllNodes` array, you specify the data for a node by using the `NodeName` variable. 
 
@@ -120,11 +120,11 @@ If you want to set a property to the same value in each node, in the `AllNodes` 
 
 ## Secure credentials in a DSC script
 
-A DSC script might require credential information for the configuration process. You need to avoid putting a credential in plaintext in your source code management tool. Instead, DSC configurations in Azure Automation can reference credentials stored in a `PSCredential` object. You define a parameter for the DSC script by using the `PSCredential` type. Before running the script, get the credentials for the user, use the credentials to create a new `PSCredential` object, and pass this object into the script as a parameter.
+A DSC script might require credential information for the configuration process. Avoid putting a credential in plaintext in your source code management tool. Instead, DSC configurations in Azure Automation can reference credentials stored in a `PSCredential` object. You define a parameter for the DSC script by using the `PSCredential` type. Before running the script, get the credentials for the user, use the credentials to create a new `PSCredential` object, and pass this object into the script as a parameter.
 
-Credentials aren't encrypted in .mof files by default. They are exposed as plaintext. To encrypt credentials, use a certificate in your configuration data. The certificate's private key needs to be on the node on which you want to apply the configuration. Certificates are configured through the node's local configuration manager (LCM). 
+Credentials aren't encrypted in .mof files by default. They're exposed as plaintext. To encrypt credentials, use a certificate in your configuration data. The certificate's private key needs to be on the node on which you want to apply the configuration. Certificates are configured through the node's LCM. 
 
-Starting in PowerShell 5.1, .mof files on the node are encrypted at rest. All credentials are encrypted in transit through Windows Remote Management (WinRM).
+Starting in PowerShell 5.1, .mof files on the node are encrypted at rest. In transit, all credentials are encrypted through WinRM.
 
 ## Push the configuration to a node
 
@@ -138,22 +138,24 @@ This step corresponds to *push mode*, which you learned about in the previous un
 
 ## Pull the configuration for nodes
 
-If you have hundreds of VMs on Azure, then using *pull mode* is more appropriate than the *push mode*. 
+If you have hundreds of VMs on Azure, pull mode is more appropriate than push mode. 
 
-You can configure an Azure Automation Account to act as a pull service. Upload the configuration to the Automation Account, then register your VMs with this account. 
+You can configure an Azure Automation account to act as a pull service. Just upload the configuration to the Automation account. Then register your VMs with this account. 
 
-Before you compile your configuration, import any PowerShell modules the DSC process needs into your automation account. These modules define how to complete the task to achieve the desired state. For example, a DSC script in the the previous unit used the xSmbShare PowerShell module to tell DSC *how* to check the state for a file share. DSC automatically pulls modules from the automation account to the node.
+Before you compile your configuration, import into your automation account any PowerShell modules the DSC process needs. These modules define how to complete the task to achieve the desired state. 
 
-The following diagram shows how you set up Azure Automation State Configuration. We'll go through these steps in the next unit.
+For example, a DSC script in the previous unit used the `xSmbShare` PowerShell module to tell DSC *how* to check the state for a file share. DSC automatically pulls modules from the automation account to the node.
 
-   ![Diagram that shows the steps to set up DSC](../media/3-user-sets-up-dsc.png)
+The following diagram shows how to set up Azure Automation State Configuration. We'll explore these steps more in the next unit.
 
-By default, after 15 minutes, the LCM on the VM polls Azure Automation for any changes to the DSC configuration file. Any changes made to the VMs are recorded in the desired state configuration. If you modify a configuration, you can upload it to the Automation Account, and the VMs are reconfigured automatically. 
+![Diagram that shows the steps to set up DSC](../media/3-user-sets-up-dsc.png)
 
-The following diagram shows the steps LCM takes to manage the desired state on the VM.
+By default, after 15 minutes, the LCM on the VM polls Azure Automation for any changes to the DSC configuration file. Any changes in the VMs are recorded in the desired state configuration. If you change a configuration, you can upload it to the Automation account to automatically reconfigure the VMs. 
 
-   ![Diagram that shows the steps when the VM polls Azure Automation](../media/3-vm-pulls-dsc.png)
+The following diagram shows the LCM's process to manage the desired state on the VM.
 
-Credentials are handled natively by your Automation account. This feature reduces the complexity of securing and working with credentials.
+![Diagram that shows how the VM polls Azure Automation](../media/3-vm-pulls-dsc.png)
+
+Credentials are handled natively by your Automation account. This management reduces the complexity of securing and working with credentials.
 
 
