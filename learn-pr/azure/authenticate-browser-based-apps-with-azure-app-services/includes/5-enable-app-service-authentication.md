@@ -8,7 +8,7 @@ Start by checking the configuration settings that are required when you are usin
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. In the Azure portal, in the left menu, click **Resource groups**, choose <rgn>[sandbox resource group name]</rgn>, and then click your web app.
+1. In the Azure portal, in the left menu, click **Resource groups**, then click the available resource group, and then click your web app.
 
 1. On the **my-webapp-\<_your_string_\>** pane, under **Settings**, click **Authentication / Authorization**.
 
