@@ -46,7 +46,10 @@ Recall that the team settled on these seven top issues.
 
 ![Backlog of tasks](../../shared/media/build-all-tasks.png)
 
-Here you'll move the third item, **Create unit tests** to the **Doing** column and assign yourself to the work item.
+> [!NOTE]
+> Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
+
+Here you move the third item, **Create unit tests** to the **Doing** column and assign yourself to the work item.
 
 Recall that **Create unit tests** relates to running unit tests during the build so that fewer regression bugs so that Amita doesn't have to deal with so many regression bugs when she tests out new builds.
 

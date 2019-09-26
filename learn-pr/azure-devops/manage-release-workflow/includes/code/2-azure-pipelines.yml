@@ -1,5 +1,5 @@
-- stage: 'Dev'
-  displayName: 'Deploy to the Dev environment'
+- stage: 'Deploy'
+  displayName: 'Deploy the web application'
   dependsOn: Build
   jobs:
   - deployment: Deploy
@@ -7,4 +7,4 @@
       vmImage: 'Ubuntu-16.04'
     environment: dev
     variables:
-    - group: 'Release Pipeline'
+    - group: Release

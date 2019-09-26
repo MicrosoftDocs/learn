@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.manage-release-workflow.6-deploy-staging
+title: Exercise - Deploy to Staging
+metadata:
+  title: Exercise - Deploy to Staging
+  description: Deploy to Staging
+  ms.date: 09/01/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-deploy-staging.md)]

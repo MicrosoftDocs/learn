@@ -1,10 +1,10 @@
 In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you built a basic release pipeline. That pipeline has a _Build_ stage that builds the artifact and a _Deploy_ stage that installs the web app on Azure App Service. Mara and Andy built this pipeline as a proof of concept that they showed to the rest of the team.
 
-Of course, an actual release pipeline has more stages, each with its own set of tasks, that can, potentially, take an artifact all the way to production.
+Of course, an actual release pipeline has more stages, each with its own set of tasks, that can potentially take an artifact all the way to production.
 
-In this module, you'll join the Tailspin web team as they design a realistic release pipeline that contains multiple stages. You'll also learn different ways to control how an artifact gets promoted from one stage to another. 
+In this module, you'll join the Tailspin web team as they design a realistic release pipeline that contains multiple stages. You'll also learn different ways to control how an artifact gets promoted from one stage to the next.
 
-A good release management workflow enables you to release more frequently and more consistently. In practice, you'll want to define a process that maps to your team's needs. Here, you'll create a basic workflow. That means first designing the environments, which define the runtimes of each stage in the pipeline.  You'll then deploy the _Space Game_ web application to these stages: _Dev_, _Test_ and _Staging_. Each stage runs on App Service.
+A good release management workflow enables you to release more frequently and more consistently. In practice, you'll want to define a process that maps to your team's needs. Here, you'll create a basic workflow. That means first designing the environments, which define the runtimes of each stage in the pipeline.  You'll then deploy the _Space Game_ web application to these stages: _Dev_, _Test_ and _Staging_. Each stage deploys the application to its own App Service instance.
 
 ## Learning objectives
 

@@ -14,7 +14,7 @@ Here you modify your pipeline configuration to deploy the build to the _Test_ st
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* like this.
 
-    [!code-yml[](code/6-azure-pipelines.yml?highlight=5-11,104)]
+    [!code-yml[](code/6-azure-pipelines.yml?highlight=5-11,103-125)]
 
     The `schedules` section defines one cron expression. You can define more than one expression in your configuration. The expression triggers the pipeline to run against the release branch at 3 A.M. each day. The `always` flag is set to `false` so that the pipeline runs only when the _release_ branch contains changes from the prior run.
 
@@ -37,9 +37,9 @@ Here you modify your pipeline configuration to deploy the build to the _Test_ st
 1. In Azure Pipelines, go to the build and trace the build as it runs.
 1. After the build completes, press the back button to return to the summary page.
 
-    <!-- TODO: ADD SCREEN CAP ![](../media/6-pipeline-build-stage-summary.png) -->
+    ![](../media/5-pipeline-test-stage-summary.png)
 
-    You see that the build completed successfully.
+    You see that the deployment completed successfully.
 1. From a web browser, navigate to the URL that's associated with the App Service instance for your _Test_ environment.
 
     If you still have the browser tab open, simply refresh the page.
@@ -48,17 +48,16 @@ Here you modify your pipeline configuration to deploy the build to the _Test_ st
 
     You see that the _Space Game_ website has been successfully deployed to App Service and is running.
 
-    <!-- TODO: ADD SCREEN CAP ![](../media/5-deployed-website.png) -->
+    ![](../media/5-app-service-test.png)
 
 1. As an optional step, in Azure Pipelines, select **Environments**. Then select the **test** environment.
 
     Azure Pipelines records your deployment history, which enables you to trace changes in the environment back to code commits and work items.
 
-    <!-- TODO: ADD SCREEN CAP -->
+    ![](../media/5-environment-test.png)
 
 Andy and Mara add the _Test_ stage to the pipeline and then show the results to Amita.
 
 **Amita:** I like the fact that any changes you make are built and deployed for me to test each morning. But I don't see how I have control over when changes make it to _Staging_.
 
 **Mara:** Indeed, deploying through automation is a huge time saver. Remember that, so far, we've only included the scheduled trigger. We'll add a release approval for you when we set up the _Staging_ environment for Tim. That way, changes move to _Staging_ only when you're ready.
-

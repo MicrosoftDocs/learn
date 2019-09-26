@@ -15,7 +15,7 @@ abstract: |
   In this module, you will:
   - Identify the stages, or major divisions of the pipeline, that you need to implement a release management workflow.
   - Understand when to use conditions, triggers, and approvals to promote changes from one stage to the next.
-  - Promote a build through these stages: _Dev_, _Test_, and _Staging_.
+  - "Promote a build through these stages: _Dev_, _Test_, and _Staging_."
 prerequisites: |
   - An Azure subscription
   - An Azure DevOps account
@@ -40,7 +40,7 @@ units:
 - learn.azdo.manage-release-workflow.3-set-up-environment
 - learn.azdo.manage-release-workflow.4-deploy-dev
 - learn.azdo.manage-release-workflow.5-deploy-test
-- learn.azdo.manage-release-workflow.6-deploy-preprod
+- learn.azdo.manage-release-workflow.6-deploy-staging
 - learn.azdo.manage-release-workflow.7-clean-up-environment
 - learn.azdo.manage-release-workflow.8-summary
 badge:

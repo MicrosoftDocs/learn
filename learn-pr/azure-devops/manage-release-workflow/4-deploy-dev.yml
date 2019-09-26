@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.manage-release-workflow.4-deploy-dev
-title: Exercise - Deploy to the Dev environment
+title: Exercise - Deploy to the Dev stage
 metadata:
-  title: Exercise - Deploy to the Dev environment
-  description: Deploy to the Dev environment
+  title: Exercise - Deploy to the Dev stage
+  description: Deploy to the Dev stage
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche

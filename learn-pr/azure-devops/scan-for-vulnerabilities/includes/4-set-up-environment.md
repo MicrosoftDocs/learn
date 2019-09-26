@@ -44,6 +44,9 @@ Recall that the team settled on these seven top issues.
 
 ![Backlog of tasks](../../shared/media/build-all-tasks.png)
 
+> [!NOTE]
+> Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
+
 Here you move the fourth item, **Check code for vulnerabilities** to the **Doing** column and assign yourself to the work item.
 
 Recall that **Check code for vulnerabilities** relates to examining the codebase to find vulnerabilities and maintainability issues that will likely add time to the maintenance of your code.

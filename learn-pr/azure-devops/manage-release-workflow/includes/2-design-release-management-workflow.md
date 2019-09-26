@@ -1,10 +1,8 @@
 In this part, you follow the Tailspin web team as they define their release pipeline for the _Space Game_ web site.
 
-When you plan a release pipeline, you usually begin by identifying the stages, or major divisions of that pipeline. Each stage typically maps to an environment. For example, in the previous module, Andy and Maura's simple pipeline had a _Build_ stage, which mapped to a build agent and a _Deploy_ stage which mapped to an Azure App Service instance. The environment for each stage describes the tasks and resources that the stage needs.
+When you plan a release pipeline, you usually begin by identifying the stages, or major divisions of that pipeline. Each stage typically maps to an environment. For example, in the previous module, Andy and Mara's basic pipeline had a _Deploy_ stage which mapped to an Azure App Service instance.
 
-**NOTE-check that the statement about the build agent is correct**
-
-After you define which stages you need, you need to consider how changes are promoted from one stage to the next. Each stage can define its own success criteria that must be met before the build can move to the next stage. Azure Pipelines provides several ways to help you control how and when changes move through the pipeline. As a whole, these different approaches are used for _release_ _management_. 
+After you define which stages you need, you need to consider how changes are promoted from one stage to the next. Each stage can define its own success criteria that must be met before the build can move to the next stage. Azure Pipelines provides several ways to help you control how and when changes move through the pipeline. As a whole, these different approaches are used for _release_ _management_.
 
 In this section, you'll:
 
@@ -19,15 +17,15 @@ The entire Tailspin web team is gathered together. In [Create a release pipeline
 
 Recall that the team decided on these three tasks:
 
-* **Create a release pipeline**
-* **Automate quality tests**
-* **Improve release cadence**
+- **Define a release workflow**
+- **Connect the web app to a database**
+- **Automate quality tests**
+- **Automate performance tests**
+- **Improve release cadence**
 
-**NOTE-change the board to relect new titles**
+The team meets to talk about the first task, **Define a release workflow**. Defining the pipeline first will help the team to move from their basic proof of concept to a more complete release pipeline that includes additional stages, quality checks and approvals.
 
-The team meets to talk about the first task, **Create a release pipeline**. Defining the pipeline first will help the team to move from their basic proof of concept to a more complete release pipeline that includes additional stages, quality checks and approvals.
-
-Amita and Tim are watching Andy and Mara demo the release pipeline a second time. They see that the artifact gets built and installed on an instance of App Service.
+Amita and Tim are watching Andy and Mara demo the release pipeline a second time. They see that the artifact gets built and installed on App Service.
 
 ## What pipeline stages do you need?
 
@@ -49,11 +47,11 @@ Mara moves to the whiteboard and sketches the existing pipeline.
 
 **Mara:** The _Build_ stage builds the source code and produces a package: a _.zip_ file in our case. The _Deploy_ stage installs that _.zip_ file, the _Space Game_ website, on an App Service instance. What's missing from our release pipeline?
 
-## Add a dev stage
+## Add the _Dev_ stage
 
 **Andy:** I may be biased but I think we need a _Dev_ stage. That should be the first stop for the artifact after it's built. For one thing, developers can't always run the entire service from their local development environment. For example, an e-commerce system might require the website, the products database, a payment system, and so on. We need a stage that includes everything the app needs.
 
-In our case, the _Space Game_ website the leaderboard feature reads high scores from an external source. Right now, it reads fictitious scores from a file. Setting up a _Dev_ stage would give us an environment where we can integrate the web app with a real database. That database might still hold fictitious scores, but it brings us one step closer to our final app.
+In our case, the _Space Game_ website's leaderboard feature reads high scores from an external source. Right now, it reads fictitious scores from a file. Setting up a _Dev_ stage would give us an environment where we can integrate the web app with a real database. That database might still hold fictitious scores, but it brings us one step closer to our final app.
 
 **Mara:** I like it. We won't integrate with a real database quite yet, but a _Dev_ stage enables us to deploy to an environment where we can add one.
 
@@ -133,7 +131,7 @@ You'll work with a more complete example shortly when you set up the _Dev_ stage
 
 **Mara:** Conditions let us to control which changes are promoted to which stages. We can produce a build artifact for any change to validate that our build is healthy. When we're ready, we can merge those changes into a release branch and promote that build to the _Dev_ stage.
 
-## Add a test stage
+## Add the _Test_ stage
 
 **Mara:** So far, we have the _Build_ and _Dev_ stages. What comes next?
 
@@ -164,7 +162,7 @@ Mara updates her drawing to show that the build moves from the _Dev_ stage to th
 * A scheduled trigger
 * A build completion trigger
 
-CI and PR triggers let us control which branches participate in the overall build process. For example, we want to build the project when a change is made on any branch. A scheduled trigger starts a deployment at a specific time. A build completion trigger runs a build when another build, such as one for a dependent component, completes successfully. It seems like we want a scheduled trigger.
+CI and PR triggers let us control which branches participate in the overall process. For example, we want to build the project when a change is made on any branch. A scheduled trigger starts a deployment at a specific time. A build completion trigger runs a build when another build, such as one for a dependent component, completes successfully. It seems like we want a scheduled trigger.
 
 ### What are scheduled triggers?
 
@@ -203,7 +201,7 @@ To specify 3 A.M. only on days Monday through Friday, you would use:
 > **0 3 \* \* 1-5**
 
 > [!NOTE]
-> The time zone for cron schedules is Coordinated Universal Time (UTC), so in this example, 3 A.M. refers to 3 A.M. in UTC.
+> The time zone for cron schedules is Coordinated Universal Time (UTC), so in this example, 3 A.M. refers to 3 A.M. in UTC. In practice, you might adjust the time in your cron schedule relative to UTC so that the pipeline runs at the expected time for you and your team.
 
 To set up a scheduled trigger in Azure Pipelines, you need a `schedules` section in your YAML file. Here's an example:
 
@@ -221,7 +219,7 @@ Here:
 
 * `cron` specifies the cron expression.
 * `branches` specifies to deploy only from the `release` branch.
-* `always` specifies whether to run the deployment unconditionally, or only when the `release` branch has changed since the last run.
+* `always` specifies whether to run the deployment unconditionally (`true`), or only when the `release` branch has changed since the last run (`false`).
 
     Here, we specify `false` because we need to deploy only when the `release` branch has changed since the last run.
 
@@ -243,9 +241,9 @@ You'll see a more complete example later in this module.
 
 **Andy:** And remember, if we want to make things more automated later on, we can. Nothing's written in stone. The pipeline evolves as we improve and learn more.
 
-### Add a staging stage
+## Add the _Staging_ stage
 
-**Tim:** It's my turn. I need a stage where I can run additional stress tests. We also need a stage that we can demo to management to get their approval. For now, we can combine those two functions into a stage that we can call, wait for it, _Staging_.
+**Tim:** It's my turn. I need a stage where I can run additional stress tests. We also need a stage that we can demo to management to get their approval. For now, we can combine those two functions into a stage that we can call _Staging_.
 
 **Andy:** Well said, Tim. Having a staging, or pre-production, environment is an important piece here. It's often the last stop before a feature or bug fix makes it to our users.
 
@@ -253,7 +251,7 @@ Mara adds the _Staging_ stage to her drawing on the whiteboard.
 
 ![A whiteboard showing the Build, Dev, Test, and Staging stages](../media/2-add-staging-stage.png)
 
-**Amita:** I know that we use a scheduled trigger to promote changes from the _Dev_ stage to the _Test_ stage. But how will we promote changes from _Test_ to _Staging_? Does that also have3 to happen on a schedule?
+**Amita:** I know that we use a scheduled trigger to promote changes from the _Dev_ stage to the _Test_ stage. But how will we promote changes from _Test_ to _Staging_? Does that also have to happen on a schedule?
 
 **Mara:** I think the best way to handle that would be to use a _release approval_. A release approval lets you manually promote a change from one stage to the next.
 
@@ -265,9 +263,9 @@ Mara updates her drawing to show that the build moves from _Test_ to _Staging_ o
 
 **Tim:** I could also see us using release approvals to promote from _Staging_ to _Production_, after management signs off. I can never predict how long that takes. Once they sign off I can approve the release and promote it to production manually. But how do release approvals work?
 
-#### What are release approvals?
+### What are release approvals?
 
-A *release approval* is a way to pause the pipeline until an approver accepts or rejects the release. You can combine approvals, conditions, and triggers to define your release cadence.
+A *release approval* is a way to pause the pipeline until an approver accepts or rejects the release. You can combine approvals, conditions, and triggers to define your release workflow.
 
 Recall that in [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you defined an _environment_ in your pipeline configuration to represent your deployment environment. Here's an example from your existing pipeline:
 
@@ -314,9 +312,6 @@ Later, we can deploy the build artifact to a production environment after manage
 
 **Mara:** I don't think it will be too bad. Every stage is separate from every other stage. Stages are discrete. Each stage has its own set of tasks. What happens in the _Test_ stage, for example, stays in the _Test_ stage.
 
-Every stage in our pipeline, also has its own environment. For example, during the _Build_ stage, the environment is the build agent. When we deploy the app to a different stage, such as _Dev_ or _Test_, the environment is an App Service instance.
-
-**NOTE--check that statement about build agent being the environment is OK**
+Every deployment stage in our pipeline also has its own environment. For example, when we deploy the app to _Dev_ or _Test_, the environment is an App Service instance.
 
 Finally, we only ever test one release at a time. We never change releases in the middle of the pipeline. We use the same release in the _Dev_ stage as in the _Staging_ stage and every release has its own version number. If the release breaks in one of the stages, we fix it and build it again with a new version number. That new release then goes through the pipeline from the very beginning.
-

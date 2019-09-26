@@ -44,6 +44,9 @@ Recall that the team settled on these seven top issues:
 
 ![Backlog of tasks](../../shared/media/build-all-tasks.png)
 
+> [!NOTE]
+> Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
+
 Here you move the seventh item, **Investigate hosted vs private build servers**, to the **Doing** column and assign yourself to the work item.
 
 Recall that **Investigate hosted vs private build servers** relates to setting up a private build agent to see whether it brings the team any benefits beyond using the Microsoft-hosted agents.

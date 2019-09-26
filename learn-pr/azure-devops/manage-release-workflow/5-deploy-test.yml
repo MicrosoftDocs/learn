@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.manage-release-workflow.5-deploy-test
-title: Exercise - Deploy to the Test environment
+title: Exercise - Deploy to the Test stage
 metadata:
-  title: Exercise - Deploy to the Test environment
-  description: Deploy to the Test environment
+  title: Exercise - Deploy to the Test stage
+  description: Deploy to the Test stage
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche

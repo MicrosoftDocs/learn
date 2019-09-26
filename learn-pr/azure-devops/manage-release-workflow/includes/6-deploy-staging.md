@@ -34,7 +34,7 @@ To create the **staging** environment:
 1. Under **Approvers**, select **Add users and groups** and then select your account.
 1. Under **Instructions to approvers**, enter:
 
-    > Approve this change when it's ready for staging.
+    > **Approve this change when it's ready for staging.**
 1. Select **Create**.
 
 ## Promote changes to Staging
@@ -43,7 +43,7 @@ Here, you modify your pipeline configuration to deploy the build to the _Staging
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* like this.
 
-    [!code-yml[](code/7-azure-pipelines.yml?highlight=125-146)]
+    [!code-yml[](code/7-azure-pipelines.yml?highlight=127-148)]
 
     This code adds the _Staging_ stage. This stage deploys to the **staging** environment, which includes a release approval.
 
@@ -76,13 +76,13 @@ Here, you modify your pipeline configuration to deploy the build to the _Staging
 
     You see that the _Space Game_ website has been successfully deployed to App Service and is running.
 
-    <!-- TODO: ADD SCREEN CAP ![](../media/5-deployed-website.png) -->
+    ![](../media/6-app-service-staging.png)
 
-1. As an optional step, in Azure Pipelines, select **Environments**. Then select the **test** environment.
+1. As an optional step, in Azure Pipelines, select **Environments**. Then select the **staging** environment.
 
     Azure Pipelines records your deployment history, which enables you to trace changes in the environment back to code commits and work items.
 
-    <!-- TODO: ADD SCREEN CAP -->
+    ![](../media/6-environment-staging.png)
 
 The Tailspin team gathers to discuss their progress. Amita approves changes in the _Test_ stage while the others watch.
 

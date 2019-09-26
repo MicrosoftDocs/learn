@@ -21,7 +21,7 @@ There are several ways to bring up App Service. Here you use the Azure portal be
 We won't go into many of the details about how App Service works or the configuration options you can select. There's more information about App Service at the end of this module.
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/learn/modules/create-release-pipeline/8-clean-up-environment?azure-portal=true) page in this module explains how to tear down your App Service instance after you're done with it. Cleaning up when you're done ensures you don't build up additional costs.
+> The [Clean up your Azure DevOps environment](/learn/modules/create-release-pipeline/8-clean-up-environment?azure-portal=true) page in this module explains how to tear down your App Service instance after you're done with it. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. On the left side, select **App Services**.
