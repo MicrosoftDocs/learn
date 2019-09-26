@@ -86,7 +86,7 @@ If you do not already have an Azure Maps account, you will need to create one.
 
 1. If you want to verify your Azure Maps subscription key will work correctly, enter it in the following code. Save the code as a .html file, then run the code in a browser. Do you see a map of the world?
 
-``` js
+``` html
 <!DOCTYPE html>
 <html>
 
