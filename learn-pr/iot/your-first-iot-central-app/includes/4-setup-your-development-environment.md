@@ -66,7 +66,7 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
     > [!IMPORTANT]
     > The last element of the connection string is the Primary Key. During testing, sometimes a minor corruption occurred at the end of the string. Verify that the connection string in connection1.txt ends with an exact copy of the Primary Key, and if not, correct the copy you have made of the correction string in your text tool.
 
-1. The connection string you will use in the Node..js app (that follows in the next unit) starts with **HostName=**, so separate off this part of the string in your text tool, so you have one line containing a string that looks similar to the following:
+1. The connection string you will use in the Node.js app (that follows in the next unit) starts with **HostName=**, so separate off this part of the string in your text tool, so you have one line containing a string that looks similar to the following:
 
     ``` js
     HostName=iotc-<your Scope ID>.azure-devices.net;DeviceId=<your Device ID>;SharedAccessKey=<your Primary Key>
@@ -84,6 +84,60 @@ If you do not already have an Azure Maps account, you will need to create one.
 
 1. Follow the prompts to create a free account. When your account is set up, you will need the **Subscription Key** for the account. Copy and paste this key into your text tool, with a note that it applies to Azure Maps.
 
+1. If you want to verify your Azure Maps subscription key will work correctly, enter it in the following code. Save the code as a .html file, then run the code in a browser. Do you see a map of the world?
+
+``` js
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Map</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Add references to the Azure Maps Map control JavaScript and CSS files. -->
+    <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css" type="text/css">
+    <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.js"></script>
+
+    <!-- Add a reference to the Azure Maps Services Module JavaScript file. -->
+    <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas-service.min.js"></script>
+
+    <script>
+        function GetMap() {
+            //Instantiate a map object
+            var map = new atlas.Map("myMap", {
+                //Add your Azure Maps subscription key to the map SDK. Get an Azure Maps key at https://azure.com/maps
+                authOptions: {
+                    authType: 'subscriptionKey',
+                    subscriptionKey: '<your Azure Maps subscription key>'
+                }
+            });
+        }
+    </script>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        #myMap {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body onload="GetMap()">
+    <div id="myMap"></div>
+</body>
+
+</html>
+
+```
+
 ## Next steps
 
-You have now completed the preparatory steps of connecting your first IoT Central app to real devices. The next step is to use the connection string in a Node..js app.
+You have now completed the preparatory steps of connecting your first IoT Central app to real devices. The next step is to use the connection string in a Node.js app.
