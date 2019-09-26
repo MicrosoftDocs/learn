@@ -1,11 +1,6 @@
 The shipping company that you work for is keen to avoid any future issues with updates to its applications on the Azure platform. To improve the alerting capabilities within Azure, you've chosen to use Azure metric alerting. 
 
-> [!NOTE]
-> This example uses Azure Monitor through the portal. To generate monitoring data, you will set up a Linux VM running at 100% CPU utilization.
-
 Your goal is to create the Linux VM, set it to 100% CPU utilization, then sign in to the Azure portal sandbox and create a metric monitoring rule.
-
-[!include[](../../../includes/azure-sandbox-activate.md)]
 
 You'll use the Azure Cloud Shell to execute commands quickly in Azure without needing the Azure portal. In this exercise, you'll use Cloud Shell to prepare the environment before using the Azure portal to set up the monitoring.
 
@@ -18,13 +13,13 @@ This VM will run a specific configuration that stresses the CPU and generates th
     Before you create the VM, you need to set up the configuration script. Use the Cloud Shell to run the following command:
 
     ```azurecli
-    { 
-	echo '#cloud-config'
-	echo 'package_upgrade: true' 
-	echo 'packages:' 
-	echo '- stress'
-	echo 'runcmd:' 
-	echo '- sudo stress --cpu 1' 
+    {
+    echo '#cloud-config'
+    echo 'package_upgrade: true' 
+    echo 'packages:' 
+    echo '- stress'
+    echo 'runcmd:' 
+    echo '- sudo stress --cpu 1' 
     } > cloud-init.txt
     ```
 
@@ -103,6 +98,7 @@ You use either the Azure portal or the CLI to create a metric monitor. For compl
     You have successfully created a metric alert rule that will trigger an alert when the CPU percentage on the  virtual machine exceeds 90%. The rule will check every minute and review one minute of data. It can take up to 10 minutes for a metric alert rule to become active.
 
 ## Create the Azure Metric Monitor through the CLI
+
 You can set up metric alerts using the CLI. This process can be quicker compared to using the portal, especially if you are planning to set up a number of alerts.
 
 You'll create a new metric alert similar to the one you set up in the Azure portal.
