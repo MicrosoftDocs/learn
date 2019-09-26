@@ -45,7 +45,7 @@ To learn more about our perspective on responsible AI as well as the impact of A
 * [Download PDF](https://aka.ms/AA62hpi) of Responsible AI in Government – Policy considerations to share with others.
 * Understand your organization’s AI Maturity by taking Microsoft’s [AI Ready Assessment](https://info.microsoft.com/ww-landing-ai-maturity-model-website.html).
 * Check out reports, podcasts, and training resources in the [AI in Government content hub](https://info.microsoft.com/ww-landing-AI-in-Government-Playlist.html) to learn more about how governments can leverage AI to lower costs while providing higher quality services to citizens.
-* [To see how enterprises and other organizations are governing their use of responsible AI, review this module: Identify governing practices for responsible AI](https://review.docs.microsoft.com/learn/modules/responsible-ai-governing-practices-government/index?branch=pr-en-us-5765).
+* [To see how enterprises and other organizations are governing their use of responsible AI, review this module: Identify governing practices for responsible AI](https://docs.microsoft.com/learn/modules/responsible-ai-governing-practices/index).
 
 ## References
 
