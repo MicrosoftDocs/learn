@@ -16,18 +16,24 @@ To begin the testing, make sure the IoT Central app is up and running, and run t
 
 ### 2. The telemetry functions send data on the specified interval, and that data is picked up correctly by IoT Central
 
-1. A console message should appear every 5 seconds, with the contents temperature.
+1. A console message should appear every five seconds, with the contents temperature.
 
-2. To verify the data is being received at IoT Central, make sure your app is open, and select the **Devices** entry in the left-hand menu. Double-click the real device (**RefrigeratedTruck - 1**), not the simulated device, in the list of devices.
+1. To verify the data is being received at IoT Central, make sure your app is open, and select the **Devices** entry in the left-hand menu. Double-click the real device (**RefrigeratedTruck - 1**), not the simulated device, in the list of devices.
 
->[!TIP]
-> These steps are an exciting time in IoT Central development! It can be helpful to have multiple monitors available for all the screens that are active.
+    >[!TIP]
+    > These steps are an exciting time in IoT Central development! It can be helpful to have multiple monitors available for all the screens that are active.
 
-3. Verify approximately that the temperatures being sent by the Node.js app match the data being shown in the telemetry view of the IoT Central app.
+1. Verify approximately that the temperatures being sent by the Node.js app, in the console window, match the data being shown in the telemetry view of the IoT Central app.
 
-4. Hover the mouse over the states in the IoT Central app, in the charts view, just to verify the truck and its contents are in the expected state.
+    | Node.js        | IoT Central           |
+    | ------------- |:-------------:|
+    | ![Screenshot showing the console output from the Node.js app, showing the truck contents temperatures](../media/refrigerated-trucks-console.png)      | ![Screenshot showing the chart view in IoT Central, receiving the truck temperatures](../media/refrigerated-trucks-central.png) |
 
-5. Check the map view for the device. A blue circle near Seattle, USA shows our truck ready to go. You may have to zoom in a bit.
+1. Hover the mouse over the states in the IoT Central app, in the charts view, just to verify the truck and its contents are in the expected state.
+
+1. Check the map view for the device. A blue circle near Seattle, USA shows our truck ready to go. You may have to zoom in a bit. Remember too, to make sure the visibility icon for **Location** is enabled.
+
+    ![Screenshot showing the map view of our first truck at its base in Seattle](../media/refrigerated-trucks-seattle.png)
 
 ### 3. The command to send the truck to a specified customer works as expected
 

@@ -81,7 +81,8 @@ You now have the all important connection string. The Scope ID identifies the ap
 If you do not already have an Azure Maps account, you will need to create one.
 
 1. Navigate to `https://azure.microsoft.com/services/azure-maps/`.
-1. Follow the prompts to create a free account. When your account is set up, you will need the **Primary Key** for the account. Copy and paste this key into your text tool, with a note that it applies to Azure Maps.
+
+1. Follow the prompts to create a free account. When your account is set up, you will need the **Subscription Key** for the account. Copy and paste this key into your text tool, with a note that it applies to Azure Maps.
 
 ## Next steps
 

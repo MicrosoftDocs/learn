@@ -28,6 +28,10 @@ Using your preferred development environment (Visual Studio Code, and Visual Stu
 
 1. In the dialog that follows, search for and install **azure-iot-device**, then **azure-maps-rest**.
 
+    ![Screenshot showing how to add an npm package, in Visual Studio](../media/refrigerated-trucks-vs-npm.png)
+
+1. Delete the default contents of the app.js file.
+
 1. When you have entered the code below, you will be able to run the app with the **Start Without Debugging**, or **Start Debugging**, options. In the latter case you can set breakpoints, examine data, and perform other debugging tasks.
 
 ## Write the Node.js app
@@ -60,13 +64,14 @@ var clientFromConnectionString = require('azure-iot-device-mqtt').clientFromConn
 var Message = require('azure-iot-device').Message;
 var rest = require("azure-maps-rest")
 
-var subscriptionKeyCredential = new rest.SubscriptionKeyCredential("<your Azure Maps Account Primary Key>");
+var subscriptionKeyCredential = new rest.SubscriptionKeyCredential("<your Azure Maps Account Subscription Key>");
 
 var pipeline = rest.MapsURL.newPipeline(subscriptionKeyCredential);
 
 var routeURL = new rest.RouteURL(pipeline);
 
 var client = clientFromConnectionString(connectionString);
+
 ```
 
   > [!NOTE]
@@ -144,9 +149,10 @@ var path = [];                      // Lat/lon steps for the route.
 var timeOnPath = [];                // Time in seconds for each section of the route.
 var truckOnSection;                 // The current path section the truck is on.
 var truckSectionsCompletedTime;     // The time the truck has spent on previous completed sections.
+
 ```
 
-3. Add the functions to get a route via Azure Maps. 
+3. Add the functions to get a route via Azure Maps.
 
 ``` js
 function Degrees2Radians(deg) {
@@ -259,6 +265,7 @@ function GetRoute(newState) {
         conflict = "Failed to find map route";
     });
 }
+
 ```
 
 > [!NOTE]
@@ -315,6 +322,7 @@ function CmdGoToCustomer(request, response) {
         }
     });
 }
+
 ```
 
 > [!NOTE]
@@ -361,6 +369,7 @@ function CmdRecall(request, response) {
         }
     });
 }
+
 ```
 
 6. Add the function that updates the truck simulation at each time interval.
@@ -505,6 +514,7 @@ function UpdateTruck() {
             break;
     }
 }
+
 ```
 
 > [!NOTE]
@@ -568,6 +578,7 @@ function sendTruckTelemetry() {
         }
     });
 }
+
 ```
 
 > [!NOTE]
@@ -637,6 +648,7 @@ function handleSettings(deviceTwin) {
         }
     });
 }
+
 ```
 
 > [!NOTE]
@@ -683,6 +695,7 @@ var connectCallback = (errorMessage) => {
         });
     }
 };
+
 ```
 
 > [!NOTE]
@@ -693,6 +706,7 @@ var connectCallback = (errorMessage) => {
 ``` js
 // Start the device,and connect it to Azure IoT Central.
 client.open(connectCallback);
+
 ```
 
 Fantastic! You are now ready to test your code.
