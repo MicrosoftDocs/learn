@@ -40,8 +40,8 @@ In this module, we build the app displayed in the above image.
 
     ![Screenshot showing how to configure the new IoT Central app](../media/refrigerated-trucks-new-app.png)
     > [!IMPORTANT]
-    > Your **Application Name** can be any friendly name. However, the **URL** _must_ be unique, which is why we suggest adding some unique ID to the end of the URL for the app.
-1. Enter the rest of the required fields appropriately.
+    > Your **Application Name** can be any friendly name, such as "Refrigerated Trucks". However, the **URL** _must_ be unique, which is why we suggest adding some unique ID to the end of the URL for the app. For example, "refrigerated-trucks-&lt;your id&gt;".
+1. Enter the rest of the required fields (your contact information) appropriately.
 
 1. Click **Create**, and wait a few seconds whilst the app resource is built.
 

@@ -10,7 +10,7 @@ The essential component for communication between a device and IoT Central is a 
 
     ![Screenshot showing how to create a real device, usint the IoT Central portal](../media/refrigerated-trucks-new-real.png)
 
-1. Change the default **Device Name** to something readable, leaving the **Device ID** as is, and then select **Create**.
+1. Change the default **Device Name** to something readable ("Refrigerated Truck - 1"), leaving the **Device ID** as is, and then select **Create**.
 
     ![Screenshot showing how to rename the real device to a friendly name](../media/refrigerated-trucks-new-real-create.png)
 

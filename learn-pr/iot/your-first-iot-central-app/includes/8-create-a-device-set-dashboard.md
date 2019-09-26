@@ -6,7 +6,7 @@ A Device Set in IoT Central is a group of devices that match one Device Template
 
 1. On the far right of your screen, click **+ New**.
 
-1. Enter a device set name, and select the right template:
+1. Enter a device set name ("All refrigerated trucks", for example), and select the right template (**RefrigeratedTruck 1.0.0**):
 
     ![Screenshot showing how to create a new Device Set, called "All refrigerated trucks"](../media/refrigerated-trucks-deviceset.png)
 

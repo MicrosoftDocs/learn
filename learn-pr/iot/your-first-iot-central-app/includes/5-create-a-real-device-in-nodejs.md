@@ -20,7 +20,7 @@ Using your preferred development environment (Visual Studio Code, and Visual Stu
 
 ### With Visual Studio
 
-1. Create a new blank Node.js project.
+1. Navigate to the **JavaScript** project types, and create a new **Blank Node.js Console Application** project, called "RefrigeratedTruck".
 
     ![Screenshot showing how to create a new blank Node.js project, in Visual Studio](../media/refrigerated-trucks-vs-project.png)
 
