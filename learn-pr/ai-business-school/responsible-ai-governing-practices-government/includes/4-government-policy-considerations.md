@@ -8,7 +8,7 @@ Beyond its potential benefits, AI has also raised concerns about economic disrup
 
 For AI to realize its full potential, its development needs to be shaped to foster trust and broad adoption on a global scale. This can be realized only if relevant stakeholders from business, government, civil society, and the research community can work together on shared values and principles to provide the foundation for a responsible AI policy framework.
 
-## An Industry View on Responsible AI
+## An industry view on responsible AI
 
 Microsoft shared our view of responsible AI in [The Future Computed: Artificial Intelligence and Its Role in Society](https://blogs.microsoft.com/blog/2018/01/17/future-computed-artificial-intelligence-role-society/), identifying six principles to guide the cross-disciplinary development and use of AI technologies: fairness, reliability and safety, privacy and security, inclusivity, transparency, and accountability.
 
@@ -18,7 +18,7 @@ In September 2016, Microsoft cofounded the Partnership on AI (PAI) “to study a
 
 To encourage development of AI solutions to address global challenges, the Microsoft [AI for Good](https://www.microsoft.com/ai/ai-for-good) initiative is a $125 million, five-year commitment to encourage and support development of innovative AI solutions by organizations around the world. These organizations are working to address global challenges in accessibility, sustainability for the earth, humanitarian action, and the preservation of cultural heritage.
 
-## Fostering Trustworthy AI
+## Fostering trustworthy AI
 
 Recognizing the economic transformation potential of AI, many governments have announced their national AI strategies. Global implementation of responsible AI received a boost in May 2019, when 36 OECD member countries, along with Argentina, Brazil, Colombia, Peru, and Romania, approved the [Recommendations of the OECD Council on Artificial Intelligence](https://www.oecd.org/going-digital/ai/principles/). These recommendations contained the principles for responsible stewardship of trustworthy AI. These principles were also adopted by the G20 countries, including the EU, in June 2019.
 
@@ -30,7 +30,7 @@ The EU High Level Expert Group on AI also published its Ethics Guidelines on Art
 
 Both the OECD and EU are encouraging implementations of their proposed principles as the next step, with the goal of sharing best practices and comments based on those implementations.
 
-## Considerations for a Responsible AI Policy Framework
+## Considerations for a responsible AI policy framework
 
 As AI is still at a nascent stage of development, an open dialogue among government, business, civil society, and academic researchers is essential to shaping the continued development of the technology and realizing its potential benefits. Working together, governments can: identify and prioritize issues of societal importance as AI evolves; enable sharing of best practices; motivate further research and development of solutions as new issues emerge; and facilitate a regulatory environment that fosters AI innovation.
 
@@ -49,7 +49,7 @@ Policy discussions should aim to promote broad development and use of AI systems
 
 Human-centered AI can help create a better world, and it is important to continue working together to actively realize this future. An inclusive approach that values multi-disciplinary and multi-stakeholder contributions and actions can motivate an open and collaborative model for policy development that can more readily adapt to rapidly evolving technologies. It also facilitates development of more principle- and evidence-based policy frameworks, where desirable outcomes that are aligned with the vision of human-centered AI are encouraged.
 
-## An Integrated and Holistic Responsible AI Policy Framework
+## An integrated and holistic responsible AI policy framework
 
 Any AI strategy would need to be an integral part of holistic national agenda for digital transformation. For example, the OECD Going Digital project is a multidisciplinary and cross-cutting project that aims to:
 
