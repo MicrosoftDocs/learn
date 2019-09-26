@@ -181,7 +181,7 @@ To accomplish this, you define a second stage and use the `download` and `AzureW
 
 1. From Visual Studio Code, replace the contents of *azure-pipelines.yml* with this.
 
-    [!code-yml[](code/5-azure-pipelines-2.yml?highlight=63-84)]
+    [!code-yml[](code/5-azure-pipelines-2.yml?highlight=65-86)]
 
     Notice the use of the `download` and `AzureWebApp@1` tasks. `$(WebAppName)` reads the web app name from your pipeline variable.
 
