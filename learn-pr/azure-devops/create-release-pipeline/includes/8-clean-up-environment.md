@@ -1,7 +1,7 @@
 You're all done with the tasks for this module. Here, you tear down the Azure resources you created for this module and also clean up your Azure DevOps environment.
 
 > [!IMPORTANT]
-> This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps if you ran the template earlier in this module.
+> This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. It also ensures that you don't pay for Azure resources you no longer need.
 
 ## Clean up Azure resources
 

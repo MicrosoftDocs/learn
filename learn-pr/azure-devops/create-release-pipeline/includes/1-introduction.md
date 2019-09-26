@@ -4,22 +4,17 @@ The Tailspin team's big release is approaching. The team can use Azure DevOps to
 
 In this module, you'll continue your journey with the Tailspin team as they set up a continuous delivery (CD) pipeline for the _Space Game_ website.
 
-<!-- TODOs:
-1. Create the repo on GitHub (and reference it in setup)
-1. Use the publish and download tasks
--->
-
 ## Learning objectives
 
 In this module, you'll:
 
-- Learn what CD is, why it's important, and what tools you can use.
+- Learn what continuous delivery is, why it's important, and what tools you can use.
 - Create a basic release pipeline that deploys a web application to Azure App Service.
 - Examine pipeline analytics to understand the health and history of your releases.
 
 ## Prerequisites
 
-The modules in this learning path form a progression.
+The modules in this learning path and previous learning paths form a progression.
 
 To follow the progression from the beginning, be sure to first complete these learning paths:
 
@@ -31,11 +26,7 @@ If you want to start with this learning path, first go through these two modules
 * [Get started with Azure DevOps](/learn/modules/get-started-with-devops?azure-portal=true)
 * [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true)
 
-When you're ready, make sure you have:
-
-* Your _Space Game_ project loaded in Visual Studio Code.
-* A browser window pointing to your fork of the _Space Game_ web site project on GitHub.
-* A browser window pointing to your Azure DevOps organization.
+When you're ready, make sure you have a browser window pointing to your Azure DevOps organization. You'll get set up with the starter code for this module shortly.
 
 > [!IMPORTANT]
 > You also need your own Azure subscription to complete the exercises in this module. Don't have an Azure subscription? [Create a free account](https://azure.microsoft.com/free/?azure-portal=true).

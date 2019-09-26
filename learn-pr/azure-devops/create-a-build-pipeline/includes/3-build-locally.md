@@ -138,6 +138,9 @@ In Visual Studio Code, your terminal window points to the root directory of the 
 
 You see the directory and file tree in the file explorer.
 
+> [!NOTE]
+> You might need to open the integrated terminal a second time after you open the folder.
+
 ## Build and run the web application
 
 Now that you have the web application, you can build and run it locally.

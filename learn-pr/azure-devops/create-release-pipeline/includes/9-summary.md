@@ -1,6 +1,6 @@
 Great work. You've successfully deployed the _Space Game_ website to Azure App Service using Azure Pipelines. If you've gone through the [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true) learning path, then you know this is a big step. You now have a live environment! Take advantage of it and run additional tests or make it available to your users.
 
-CD helps you deliver reliable software updates to your customers as rapidly as the business demands. Your customers can have the latest features and fixes as soon as you're ready to release them. With the analytics provided by Azure Pipelines, your team can pinpoint hot spots and areas for improvement.
+Continuous delivery helps you deliver reliable software updates to your customers as rapidly as the business demands. Your customers can have the latest features and fixes as soon as you're ready to release them. With the analytics provided by Azure Pipelines, your team can pinpoint hot spots and areas for improvement.
 
 Setting up Azure Pipelines to publish the _Space Game_ website to App Service is a great first step for the team. But this is just the beginning. In the modules that follow, you help the team expand their release pipeline to include additional stages and tests. Each improvement to the pipeline will give the team more confidence in the quality of their releases.
 

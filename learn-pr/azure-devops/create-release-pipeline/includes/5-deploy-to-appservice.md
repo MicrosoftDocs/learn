@@ -1,4 +1,4 @@
-The Tailspin team has been using a build pipeline to automate their build processes. They've decided they're ready to implement a simple CD pipeline as a POC. They'll extend the build pipeline to include a deployment stage that deploys to Azure App Service.
+The Tailspin team has been using a build pipeline to automate their build processes. They've decided they're ready to implement a simple CI/CD pipeline as a POC. They'll extend the build pipeline to include a deployment stage that deploys to Azure App Service.
 
 Andy and Mara have taken on the job of creating the pipeline. Let's follow them  and see how they achieve their first automated deployment.
 
@@ -121,9 +121,7 @@ steps:
 ...
 ```
 
-A _multi-stage pipeline_ enables you to define distinct phases that your change passes through as it's promoted through the pipeline. Each stage defines the resource, variable, and steps required to carry out that phase of the pipeline. In this module, you define one stage to perform the build and a second stage to deploy the web application to App Service.
-
-**NOTE--I changed "agent" to "resource"**
+A _multi-stage pipeline_ enables you to define distinct phases that your change passes through as it's promoted through the pipeline. Each stage defines the agent, variable, and steps required to carry out that phase of the pipeline. In this module, you define one stage to perform the build and a second stage to deploy the web application to App Service.
 
 To convert your existing build configuration to a multi-stage pipeline, you add a `stages` section to your configuration. You then add one or more `stage` sections to define each phase of your pipeline. Stages break down into jobs, which are a series of steps that run sequentially as a unit.
 
@@ -131,7 +129,7 @@ Before we add the _Deploy_ stage to the pipeline, let's first convert the existi
 
 1. From your project in Visual Studio Code, open *azure-pipelines.yml* file and replace its contents with this.
 
-    [!code-yml[](code/5-azure-pipelines-1.yml?highlight=1-6)]
+    [!code-yml[](code/5-azure-pipelines-1.yml?highlight=4-8)]
 
     > [!IMPORTANT]
     > In YAML, whitespace is important. This change affects all of the whitespace in your file, so we recommend that you replace the entire file with what you see here. The highlighted sections illustrate the use of stages and jobs.
@@ -170,7 +168,7 @@ To add the variable:
 
     ![](../media/5-pipelines-library.png)
 1. Select **+ Variable group**.
-1. Under **Properties**, enter **Release Pipeline** for the variable group name.
+1. Under **Properties**, enter **Release** for the variable group name.
 1. Under **Variables**, select **+ Add**.
 1. Enter **WebAppName** as the name of your variable. Enter your App Service instance's name, such as **tailspin-space-game-web-1234**, as its value.
 1. Select **Save** near the top of the page to save your variable to the pipeline.
@@ -183,7 +181,7 @@ To accomplish this, you define a second stage and use the `download` and `AzureW
 
 1. From Visual Studio Code, replace the contents of *azure-pipelines.yml* with this.
 
-    [!code-yml[](code/5-azure-pipelines-2.yml?highlight=64-)]
+    [!code-yml[](code/5-azure-pipelines-2.yml?highlight=63-84)]
 
     Notice the use of the `download` and `AzureWebApp@1` tasks. `$(WebAppName)` reads the web app name from your pipeline variable.
 

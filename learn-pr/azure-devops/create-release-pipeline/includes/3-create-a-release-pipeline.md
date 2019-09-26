@@ -14,7 +14,7 @@ Andy and Mara are sitting in a conference room, ready to get started.
 
 ## What makes up a basic CD pipeline?
 
-A basic CD pipeline contains a _trigger_ to get the process going and at least one stage, or deployment phase. A stage is made up of tasks.
+A basic CD pipeline contains a _trigger_ to get the process going and at least one _stage_, or deployment phase. A stage is made up of tasks.
 
 Let's follow along with Andy and Mara as they plan their POC.
 
@@ -44,15 +44,24 @@ The question is, where should we deploy the artifact?
 
 ## What is an environment?
 
-An artifact is deployed to an environment. Azure Pipelines makes it easy to deploy to almost any kind of environment, whether it's on premises or in the cloud. Every environment defines a resource. Some examples of on-line resources are Kubernetes, Azure App Service, and a Microsoft-hosted build agent.
+You've likely used the term _environment_ to refer to where your application or service is running. For example, your _production environment_ might be where your application is accessible to your end users.
 
-**NOTE--is the statement about the agent correct?**
+Following this example, your production environment might be:
 
-Environments often define other things, such as security checks and ways to control how an artifact is promoted from one stage of a pipeline to another. What an environment includes depends, of course, on what you want to do with the artifact. An environment where you want to test the artifact will probably have a very different definition than one where you want to build the artifact.
+* A physical or virtual machine.
+* A containerized environment, such as Kubernetes.
+* A managed service, such as Azure App Service.
+* A serverless environment, such as Azure Functions.
 
-One way to define an Azure Pipelines environment is with a YAML file. Your YAML file includes an <b>environment</b> section, which specifies the Azure Pipelines environment where you'll deploy your artifact.
+An artifact is deployed to an environment. Azure Pipelines makes it easy to deploy to almost any kind of environment, whether it's on premises or in the cloud.
 
-Let's listen in and see what Andy and Mara decide.
+In Azure Pipelines, the term _environment_ has a second meaning. Here, an _environment_ is an abstract representation of your deployment environment, such as a Kubernetes cluster, an App Service instance, or a virtual machine.
+
+An Azure Pipelines environment records the deployment history to help you identify the source of changes. Pipeline environments also enable you define security checks and ways to control how an artifact is promoted from one stage of a pipeline to another. What an environment includes depends, of course, on what you want to do with the artifact. An environment where you want to test the artifact will probably have a very different definition than one where you want to deploy the artifact for your end users.
+
+One way to define an Azure Pipelines environment is with a YAML file. Your YAML file includes an `environment` section, which specifies the Azure Pipelines environment where you'll deploy your artifact.
+
+As you plan your release pipeline, you'll need to decide where your application or service will run. Let's listen in and see what Andy and Mara decide.
 
 **Andy:** At a really high level, what type of environment do we want? Do we want to deploy on premises or to the cloud?
 
@@ -71,10 +80,10 @@ Andy lists these options on the whiteboard:
 * Azure App Service
 * Serverless computing
 
-> [!Note]
-> More information on each of these options can be found in the summary at the end of this module.
+> [!NOTE]
+> You'll find more information on each of these options at the end of this module.
 
-**Mara:** I know containers and serverless computing are really popular right now. Compared to VMs, they're both lightweight in terms of resources. I also know that they're easy to replace and scale up. They're both interesting but I'm nervous learning about two new technologies at the same time. I'd rather concentrate just on building the pipeline.
+**Mara:** I know containers and serverless computing are really popular right now. Compared to VMs, they're both lightweight in terms of resources. I also know that they're easy to replace and scale out. They're both interesting but I'm nervous learning about two new technologies at the same time. I'd rather concentrate just on building the pipeline.
 
 **Andy:** I'm with you. That leaves VMs or App Service. I think VMs would be a better choice if we were moving a line-of-business app, one that requires full access to some particular environment, to the cloud. We're not doing anything that big.
 
@@ -96,38 +105,38 @@ After a bit of research, Andy and Mara come up with the general steps that allow
 
 **Mara:** According to our research, we need to create what's called a _service connection_ to specify the target environment and authenticate access to it. Once we define the service connection, it will be available for all of our tasks to use.
 
-Then we need to use the built-in tasks [DownloadBuildArtifacts@0](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/download-build-artifacts?azure-portal=true) and [AzureWebApp@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-rm-web-app?view=azure-devops?azure-portal=true).
+Then we need to use the built-in tasks [DownloadPipelineArtifact@2](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/utility/download-pipeline-artifact?view=azure-devops&azure-portal=true) and [AzureWebApp@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-rm-web-app?view=azure-devops?azure-portal=true).
 
 **Andy:** I have the tasks here. Let's see what they do for us.
 
-### DownloadBuildArtifacts@0
+### Download pipeline artifacts
 
-You use the `DownloadBuildArtifacts@0` task to download artifacts. We need this task to download the artifact so we can deploy it from the pipeline.
+In the previous learning path, you published build artifacts to the pipeline. These artifacts were *.zip* files that contained the _Space Game_ website as a build package. Amita manually downloaded this package and installed it in her test environment.
 
-This task requires a few inputs. They are:
+To deploy a build artifact from the pipeline, you need a way to download it from the pipeline to the agent. You use the `DownloadPipelineArtifact@2` task to download artifacts.
+
+This task requires a few inputs. The ones we need here are:
 
 * `buildType`: This specifies whether we want the artifacts from the current build or a specific build. For now, we want to deploy the current build.
-* `artifactName`: This specifies the name of the artifact to download. We need this to specify the name of the _zip_ file.
-* `downloadPath`: This specifies where to find the artifact on the build agent.
+* `artifact`: This specifies the name of the artifact to download. We need this to specify the name of the _zip_ file.
 
-Here's an example that downloads the latest package from the pipeline to the build agent:
+Here's an example that downloads the latest package named "drop" from the pipeline to the build agent:
 
 ```yml
-- task: DownloadBuildArtifacts@0
+- task: DownloadPipelineArtifact@2
   inputs:
-    buildType: 'current'
-    artifactName: 'drop'
-    downloadPath: '$(Build.ArtifactStagingDirectory)'
+    buildType: current
+    artifact: 'drop'
 ```
 
-The `download` task is a shortcut for the `DownloadBuildArtifacts@0` task. Here's an example that uses the `download` task to download the same artifact from the pipeline:
+The `download` task is a shortcut for the `DownloadPipelineArtifact@2` task. Here's an example that uses the `download` task to download the same artifact from the pipeline:
 
 ```yml
 - download: current
   artifact: drop
 ```
 
-### AzureWebApp@1
+### Deploy a web application to App Service
 
 You use the `AzureWebApp@1` task to deploy a web application to App Service. This task works with a number of programming languages and frameworks, including ASP.NET, ASP.NET Core, PHP, Java, Python, Go, and Node.js. We use this task to perform the deployment. To use it, though, we have to have App Service running on our Azure subscription.
 
@@ -141,7 +150,6 @@ Here's an example that uses `AzureWebApp@1` to deploy the contents of _MyPackage
 
 ```yml
 - task: AzureWebApp@1
-  displayName: 'Deploy to Azure App Service'
   inputs:
     azureSubscription: 'MyServiceConnection'
     appName: 'MyWebApp'
@@ -150,11 +158,11 @@ Here's an example that uses `AzureWebApp@1` to deploy the contents of _MyPackage
 
 The `azureSubscription` part specifies the service connection that's named "MyServiceConnection". You'll work with service connections shortly.
 
-### What are jobs, environments, and strategies?
+### What are jobs and strategies?
 
 Your existing build pipeline defines a build agent, pipeline variables, and the tasks needed to build your software.
 
-The deployment part of your pipeline contains these same elements. In addition, your deployment configuration typically also defines one or more jobs, environments, and strategies.
+The deployment part of your pipeline contains these same elements. In addition, your deployment configuration typically also defines one or more jobs, a pipeline environment, and strategies. You learned about pipeline environments earlier.
 
 Here's an example configuration that you'll run later in this module. This configuration deploys the _Space Game_ website to App Service.
 
@@ -164,23 +172,13 @@ Here's an example configuration that you'll run later in this module. This confi
 
 A _job_ is a series of steps that run sequentially as a unit. Every pipeline stage has one job by default even when that stage does not use the `job` keyword.
 
-A job can run in an agent pool, on a container, or directly on the Azure DevOps server. The example job shown here runs on an Ubuntu build agent.
+A job can run in an agent pool, on a container, or directly on the Azure DevOps server. The example job shown here runs on a Microsoft-hosted Ubuntu agent.
 
 You can specify the conditions under which each job runs. The example job shown here does not define any conditions. By default, a job runs if it does not depend on any other job, or if all of the jobs that it does depend on have completed and succeeded.
 
-You can also run jobs in parallel or sequentially. Using your existing build pipeline as an example, you can use parallel jobs to build your software on Windows, Linux and macOS build agents simultaneously.
+You can also run jobs in parallel or sequentially. Using your existing build pipeline as an example, you can use parallel jobs to build your software on Windows, Linux and macOS agents simultaneously.
 
-A _deployment job_ is a special type of job that plays an important role in your deployment stages. Deployment jobs record the status of your deployments in Azure Pipelines, providing you with an audit trail. Deployment jobs also help you define your deployment strategy, which we will do shortly.
-
-#### Environments
-
-In Azure Pipelines, an _environment_ is an abstract representation of your deployment environment, such as a Kubernetes cluster, an App Service instance, or a virtual machine.
-
-In this module, you have one environment: the App Service instance the team is using for their POC. In future modules, you'll work with other environments, including _Dev_, _Test_, _Staging_, and _Production_.
-
-An environment records the deployment history for an environment to help you identify the source of changes. Pipeline environments also enable you to specify which pipelines are authorized to deploy to a specific target environment.
-
-In the next module, you'll use environments to define a release approval, or a way to pause the pipeline until an approver accepts or rejects the release.
+A _deployment job_ is a special type of job that plays an important role in your deployment stages. Deployment jobs record the status of your deployments in Azure Pipelines, providing you with an audit trail. Deployment jobs also help you define your deployment strategy, which we'll do shortly.
 
 #### Strategies
 
@@ -188,15 +186,6 @@ A _strategy_ defines how your application is rolled out. You'll learn more about
 
 ### How does Azure Pipelines connect to Azure?
 
-***NOTE--We've already said this so can we cut it***
-You can use Azure Pipelines to deploy to just about any type of environment. That environment can run in the cloud or in your datacenter. Your environment can be:
-
-* A virtual machine.
-* A containerized environment, such as Kubernetes.
-* A managed service, such as App Service.
-* A serverless environment, such as Azure Functions.
-
-***NOTE--we could start here***
 To deploy your app to an Azure resource, such as a virtual machine or App Service, you need what's called a _service connection_.
 
 A service connection provides secure access to your Azure subscription by using one of two methods:

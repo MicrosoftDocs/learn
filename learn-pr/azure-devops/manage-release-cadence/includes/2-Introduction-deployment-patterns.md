@@ -21,7 +21,7 @@ Here are the possibilities that Azure DevOps gives us:
 
 A blue-green deployment reduces risk and downtime by running two identical environments. These environments are called blue and green. At any time, only one of the environments is live. Let's say blue is live. As we prepare a new release, we would do our final tests in the green environment. Once the software is working in the green environment, we would just switch the router so that all incoming requests go to the green environment. Blue-green deployment also gives us a fast way to do a rollback. If anything goes wrong we simply switch the router back to the blue environment.
 
-![Diagram of applications swapping IP addresses](../media/2-blue-green-deployment.png)
+![](../media/2-blue-green-deployment-2.png)
 
 ## Canary releases
 
@@ -43,7 +43,7 @@ A dark launch is similar to a canary release or switching a feature toggle. Rath
 
 ## A/B testing
 
-A/B testing compares two versions of a webpage or app against each other to determine which one performs better. A/B testing is like an experiment we would run. We would show two or more variations of a page to users at random,and then use statistical analysis to decide which variation performs better for our goals.
+A/B testing compares two versions of a webpage or app against each other to determine which one performs better. A/B testing is like an experiment we would run. We would show two or more variations of a page to users at random, and then use statistical analysis to decide which variation performs better for our goals.
 
 ![Diagram of two apps and the analytics](../media/2-a-b-testing.png)
 
@@ -52,6 +52,11 @@ A/B testing compares two versions of a webpage or app against each other to dete
 Progressive exposure deployment is sometimes called ring-based deployment. It's another way of limiting the impact changes have on users while making sure those changes are valid in a production environment. Rings are basically an extension of the canary stage. The canary release releases to a stage to measure impact. Adding another ring is essentially the same thing. With a ring-based deployment, we would deploy changes to risk-tolerant customers first, and then progressively roll out to a larger set of customers.
 
 ![Diagram of a progression of larger groups](../media/2-progressive-exposure-deployment.png)
+
+## Zero-downtime deployment
+
+![Diagram of applications swapping IP addresses](../media/2-blue-green-deployment.png)
+
 
 ## Implementing the Blue-Green deployment
 

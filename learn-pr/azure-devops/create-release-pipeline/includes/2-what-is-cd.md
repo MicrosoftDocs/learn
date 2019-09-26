@@ -1,4 +1,4 @@
-In this part, you follow the Tailspin team as they discuss how a CD pipeline can help them with their upcoming release.
+In this part, you follow the Tailspin team as they discuss how a continuous delivery (CD) pipeline can help them with their upcoming release.
 
 The Tailspin team is starting to feel better about their build process. They've got an automated process running on Azure Pipelines, which means the build environment is stable. Amita knows immediately when there's an artifact for her to test. She's finding fewer bugs because Andy and Mara have started to add unit tests and code quality tests. Life is looking good. Let's check in with the team.
 
