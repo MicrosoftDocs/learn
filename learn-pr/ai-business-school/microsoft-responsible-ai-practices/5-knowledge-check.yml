@@ -44,7 +44,7 @@ quiz:
     - content: "Organizations should not articulate how their AI systems reach conclusions because it exposes them to legal risk and possible IP theft."
       isCorrect: false
       explanation: "Incorrect. It is important for organizations to be able to articulate how their AI systems reach conclusions to identify the sources of biases or exclusionary practices, safety and privacy concerns, or accuracy and reliability issues."
-  - content: "How can AI be used to address global climate issues in the agricultural industry"
+  - content: "How can AI be used to address global climate issues in the agricultural industry?"
     choices:
     - content: "AI can be applied to data captured by drones and sensors to deliver actionable insight to farmers, increasing yield and reducing cost and environmental impact."
       isCorrect: true
