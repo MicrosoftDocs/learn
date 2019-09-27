@@ -23,7 +23,7 @@ In this exercise, you will add an Azure Functions app to Azure API Management. L
     bash setup.sh
     ```
 
-    The `setup.sh` script creates the two function apps in the sandbox resource group that we've activated for this module. As the following graphic illustrates, each app hosts a single function - `OrderDetails` and `ProductDetails` respectively. the script also sets up a storage account that the functions need. The functions both have URLs in the **azurewebsites.net** domain. The function names include random numbers for uniqueness. The script takes a few minutes to complete.
+    The `setup.sh` script creates the two function apps in the sandbox resource group that we've activated for this module. As the following graphic illustrates, each app hosts a single function - `OrderDetails` and `ProductDetails`. the script also sets up a storage account for  the functions. The functions both have URLs in the **azurewebsites.net** domain. The function names include random numbers for uniqueness. The script takes a few minutes to complete.
 
     ![Results of the setup.sh script](../media/3-script-results.png)
 
@@ -33,7 +33,7 @@ In this exercise, you will add an Azure Functions app to Azure API Management. L
 Now, let's test the ProductDetails function, to see how it behaves before we add it to API Management:
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account with which you activated the sandbox.
-1. Select **All Resources**.
+1. Select **All resources**.
 1. Choose the App Service whose name begins with **ProductFunction**. The Function Apps UI for this app opens in the portal.
 1. Under **Functions**, select **ProductDetails**, and then select **Test**, as highlighted in the following screenshot: 
 

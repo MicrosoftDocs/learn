@@ -1,5 +1,5 @@
 
-The Azure API Management service enables you to construct an API from a set of disparate microservices.
+The Azure API Management (APIM) service enables you to construct an API from a set of disparate microservices.
 
 In your online store, you have implemented each part of the application as a microservice - one for the product details, one for order details, and so on. A separate team manages each microservice and each team uses continuous development and delivery to update and deploy their code on a regular basis. You want to find a way to assemble these microservices into a single product and then manage that product centrally.
 

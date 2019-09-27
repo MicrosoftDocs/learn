@@ -1,4 +1,4 @@
-Microservices architectures can be difficult to manage. For example, you rely on each team implementing cross-cutting requirements, such as security, in a consistent way.
+Microservices architectures can be difficult to manage. For example, you might rely on seperate teams implementing cross-cutting requirements, such as security, in a consistent way.
 
 In the online store, your developer teams have built the product details and order details microservices at different host URLs. Also the order details service responds by using XML. You want to ensure that all responses are in JSON format to make things easier for the client app developers.
 

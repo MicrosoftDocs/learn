@@ -4,14 +4,14 @@ title: Exercise - Create a new API in API Management from a Function App
 metadata:
   title: Exercise - Create a new API in API Management from a Function App
   description: In this unit, you will create a new instance of API Management and use it to host an Azure Function App.
-  ms.date: 05/29/2019
-  author: AndrewJByrne
-  ms.author: anbyrne
+  ms.date: 09/26/2019
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 azureSandbox: true
 interactive: bash
-durationInMinutes: 12
+durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-create-a-new-api-in-api-management-from-a-function-app.md)]
