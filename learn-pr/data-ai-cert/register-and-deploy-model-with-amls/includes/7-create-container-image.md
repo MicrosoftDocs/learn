@@ -1,4 +1,4 @@
-You need to register the trained model which the code below will do.
+You registered the model already if you did the prior unit 'Register an Azure ML model with Python'. But just so you have the model object variable handy, register it again with the code below.  
 
 ```python
 # register model
@@ -8,7 +8,7 @@ model = run.register_model(model_name='sklearn_mnist_model.pkl',
 print(model.name, model.id, model.version, sep='\t')
 ```
 
-The third step is preparing the container image. The following Python code uses the Azure ML SDK to create the image.
+Now you will prepare the container image. The following Python code uses the Azure ML SDK to create the image.
 
 ```python
 from azureml.core.image import Image, ContainerImage

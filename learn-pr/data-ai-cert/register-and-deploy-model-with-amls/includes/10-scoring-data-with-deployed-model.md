@@ -23,6 +23,7 @@ def load_data(filename, label=False):
     return res
 
 data_folder = os.path.join(os.getcwd(), 'data')
+
 # note we also shrink the intensity values (X) from 0-255 to 0-1. This helps the neural network converge faster
 X_test = load_data(os.path.join(data_folder, 'test-images.gz'), False) / 255.0
 y_test = load_data(os.path.join(
