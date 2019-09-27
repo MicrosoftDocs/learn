@@ -234,6 +234,61 @@
       "source_path": "learn-pr/paths/modern-data-warehouse/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/data-engineering-with-databricks/",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/2-set-up-visual-studio-code.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/prepare-your-dev-environment-for-azure-development/2-set-up-dev-environment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/3-exercise-set-up-visual-studio-code.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/prepare-your-dev-environment-for-azure-development/3-exercise-set-up-dev-environment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/4-set-up-visual-studio.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/prepare-your-dev-environment-for-azure-development/2-set-up-dev-environment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/5-exercise-set-up-visual-studio.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/prepare-your-dev-environment-for-azure-development/3-exercise-set-up-dev-environment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/6-set-up-eclipse-ide-for-java-developers.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/prepare-your-dev-environment-for-azure-development/2-set-up-dev-environment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/7-exercise-set-up-eclipse.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/prepare-your-dev-environment-for-azure-development/3-exercise-set-up-dev-environment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/prepare-your-dev-environment-for-azure-development/4-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/create-windows-virtual-machine-in-azure/7-exercise-manage-vm.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/welcome-to-azure/4-create-a-vm.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/welcome-to-azure/4-exercise-create-website",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/welcome-to-azure/5-add-web-server.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/welcome-to-azure/5-exercise-configure-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/welcome-to-azure/6-scale-up.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/welcome-to-azure/6-exercise-cloud-shell",
+      "redirect_document_id": false
     }
   ]
 }

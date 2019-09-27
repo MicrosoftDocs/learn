@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-app-with-oidc-and-azure-ad.6-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 07/17/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Summary
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-summary.md)]

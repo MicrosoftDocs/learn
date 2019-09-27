@@ -1,16 +1,24 @@
-You want to implement end-to-end encryption for the shipping portal application. Encryption will ensure that all data transmitted between your users and your server is encrypted, and that no unauthorized user can intercept and read the data.
+You want to implement end-to-end encryption for the shipping portal application. Encrypting all data between users and servers will help ensure that no unauthorized user can intercept and read the data.
 
-In this unit, you'll set up the web application and Application Gateway. Next you'll create some self-signed SSL certificates and enable encryption in your backend pool to secure the traffic from the Application Gateway to your servers.
+In this unit, you'll set up the web application and the application gateway. Next, you'll create some self-signed SSL certificates and enable encryption in your backend pool to help secure the traffic from the application gateway to your servers.
 
-The following image highlights the elements you'll configure in this exercise. You'll be setting up an Application Gateway v2.
+The following image highlights the elements you'll configure in this exercise. You'll be setting up an application gateway by using Azure Application Gateway v2.
 
-![Image highlighting the elements (backend pool, SSL certificate, and HTTP settings) created in this exercise](../media/4-exercise-elements.svg)
+![Diagram that highlights the elements (backend pool, SSL certificate, and HTTP settings) created in this exercise](../media/4-exercise-elements.svg)
 
-## Deploy virtual machine and Application Gateway
+## Deploy a virtual machine and an application gateway
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
+1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and log in to the directory with access to the subscription you want to create resources in.
 
-1. In Cloud Shell, run the following command to download the source code for the shipping portal.
+1. Run the following command in the Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
+
+    ```azurecli
+    export rgName=<resource group name>
+
+    az group create --name $rgName --location <location>
+    ```
+
+1. In Azure Cloud Shell, run the following command to download the source code for the shipping portal.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-end-to-end-encryption-with-app-gateway shippingportal
@@ -22,56 +30,55 @@ The following image highlights the elements you'll configure in this exercise. Y
     cd shippingportal
     ```
 
-1. Run the following commands to create a variable named `rgName` that references the sandbox resource group, and execute the setup script to create the virtual machine, certificates, and Application Gateway.
+1. Run the following setup script to create the virtual machine, certificates, and application gateway.
 
     ```bash
-    export rgName=<rgn>[Sandbox resource group]</rgn>
     bash setup-infra.sh
     ```
 
     > [!NOTE]
-    > This script will take several minutes to complete.
+    > This script will take several minutes to finish.
 
 ## Verify that the web server is configured correctly
 
-1. Run the following command to display the URL of the web server created by the setup script.
+1. Run the following command to display the URL of the web server that the setup script created.
 
     ```bash
     echo https://"$(az vm show \
       --name webservervm1 \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group $rgName \
       --show-details \
       --query [publicIps] \
       --output tsv)"
     ```
 
-1. In your web browser, navigate to this URL.
+1. In your web browser, go to the URL.
   
-   You will likely receive a warning message from your browser similar to that shown in the following image. This warning occurs because the web server is configured using a self-signed certificate that can't be authenticated.
+   You'll likely receive a warning message from your browser, similar to the example in the following image. This warning occurs because the web server is configured through a self-signed certificate that can't be authenticated.
 
-   ![Image showing the warning about an unauthenticated server in Microsoft Edge](../media/4-warning.png)
+   ![Warning about an unauthenticated server in Microsoft Edge](../media/4-warning.png)
 
-  The actual warning message may vary, depending on your browser. The image above shows Microsoft Edge. Proceed to the web site by clicking **Go on to the webpage** or the equivalent. You should see the home page for the shipping portal. This is a sample app to test that the server is configured correctly.
+  The warning message can vary, depending on your browser. The example image shows Microsoft Edge. Proceed to the website by selecting **Go on to the webpage** or the equivalent. You should see the home page for the shipping portal. This is a sample app to test that the server is configured correctly.
 
-   ![Image showing the home page for the Shipping Portal in Microsoft Edge](../media/4-shippingportal.png)
+   ![Home page for the shipping portal in Microsoft Edge](../media/4-shippingportal.png)
 
-## Configure backend pool for encryption
+## Configure the backend pool for encryption
 
-1. Run the following command to get the private IP address of the virtual machine acting as the web server.
+1. Run the following command to get the private IP address of the virtual machine that's acting as the web server.
 
     ```bash
     privateip="$(az vm list-ip-addresses \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group $rgName \
       --name webservervm1 \
       --query "[0].virtualMachine.network.privateIpAddresses[0]" \
       --output tsv)"
     ```
 
-1. Next, set up the backend pool for Application Gateway using the private IP address of the virtual machine.
+1. Set up the backend pool for Application Gateway by using the private IP address of the virtual machine.
 
     ```azurecli
     az network application-gateway address-pool create \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group $rgName \
       --gateway-name gw-shipping \
       --name ap-backend \
       --servers $privateip
@@ -81,7 +88,7 @@ The following image highlights the elements you'll configure in this exercise. Y
 
     ```azurecli
     az network application-gateway root-cert create \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group $rgName \
       --gateway-name gw-shipping \
       --name shipping-root-cert \
       --cert-file server-config/shipping-ssl.crt
@@ -91,7 +98,7 @@ The following image highlights the elements you'll configure in this exercise. Y
 
     ```azurecli
     az network application-gateway http-settings create \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group $rgName \
       --gateway-name gw-shipping \
       --name https-settings \
       --port 443 \
@@ -102,13 +109,13 @@ The following image highlights the elements you'll configure in this exercise. Y
 1. Run the following commands to set the trusted certificate for the backend pool to the certificate installed on the backend VM.
 
     ```azurecli
-    export rgID="$(az group show --name <rgn>[Sandbox resource group]</rgn> --query id --output tsv)"
+    export rgID="$(az group show --name $rgName --query id --output tsv)"
 
     az network application-gateway http-settings update \
-        --resource-group <rgn>[Sandbox resource group]</rgn> \
+        --resource-group $rgName \
         --gateway-name gw-shipping \
         --name https-settings \
         --set trustedRootCertificates='[{"id": "'$rgID'/providers/Microsoft.Network/applicationGateways/gw-shipping/trustedRootCertificates/shipping-root-cert"}]'
     ```
 
-You now have a virtual machine running the shipping portal site, an Application Gateway, and have configured SSL encryption between Application Gateway and your application server.
+You now have a virtual machine running the shipping portal site, and an application gateway. You've configured SSL encryption between Application Gateway and your application server.

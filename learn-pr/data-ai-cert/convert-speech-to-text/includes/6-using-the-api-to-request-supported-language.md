@@ -9,8 +9,9 @@ Speech-translation services are designed to target specific language-translation
 To request a list of supported speech languages, you use the Speech Translation API `Languages` method. To use this method, make a standard (and authorized) HTTP GET request to the Speech Translation API endpoint and specify the `Languages` method with a comma-delimited list of requested language scopes:
 
 ```text
-https://dev.microsofttranslator.com/languages?scope=speech,text,tts
+https://dev.microsofttranslator.com/languages?scope=speech,text,tts&api-version=3.0
 ```
+**Note** The version number at the end of this GET request can and will change.  You may need to research the current version and update accordingly.
 
 ## Return values
 

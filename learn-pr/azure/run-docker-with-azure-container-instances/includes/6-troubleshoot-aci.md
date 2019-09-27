@@ -10,7 +10,7 @@ Run the following `az container create` command to create a basic container.
 
 ```azurecli
 az container create \
-  --resource-group <rgn>[sandbox resource group name]</rgn> \
+  --resource-group learn-deploy-aci-rg \
   --name mycontainer \
   --image microsoft/sample-aks-helloworld \
   --ports 80 \
@@ -26,7 +26,7 @@ Run the following `az container logs` command to see the output from the contain
 
 ```azurecli
 az container logs \
-  --resource-group <rgn>[sandbox resource group name]</rgn> \
+  --resource-group learn-deploy-aci-rg \
   --name mycontainer
 ```
 
@@ -53,7 +53,7 @@ Run `az container attach` to attach to your container.
 
 ```azurecli
 az container attach \
-  --resource-group <rgn>[sandbox resource group name]</rgn> \
+  --resource-group learn-deploy-aci-rg \
   --name mycontainer
 ```
 
@@ -82,7 +82,7 @@ As you diagnose and troubleshoot issues, you may need to run commands directly o
 
     ```azurecli
     az container exec \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name mycontainer \
       --exec-command /bin/sh
     ```
@@ -106,7 +106,7 @@ Here you'll see how to monitor CPU and memory usage on your container.
 
     ```azurecli
     CONTAINER_ID=$(az container show \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name mycontainer \
       --query id \
       --output tsv)
@@ -176,8 +176,16 @@ Here you'll see how to monitor CPU and memory usage on your container.
     2018-08-20 21:55:00  Memory Usage  19181568.0
     ```
 
-CPU and memory information is also available through the Azure portal. To see a visual representation of CPU and memory usage information, navigate to the Azure portal overview page for your container instance.
-
 ![Azure portal view of Azure Container Instances CPU and memory usage information](../media/6-cpu-memory.png)
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+## Clean up resources
+
+In this module you created resources using your Azure subscription. You want to clean up these resources so that you will not continue to be charged for them.
+
+1. In Azure, select **Resource groups** on the left.
+
+1. Find the **learn-deploy-aci-rg** resource group, or whatever resource group name you used,  and select it.
+
+1. In the **Overview** tab of the resource group, select **Delete resource group**.
+
+1. This opens a new dialog box. Type the name of the resource group  again and select **Delete**. This will delete all of the resources we created in this module.

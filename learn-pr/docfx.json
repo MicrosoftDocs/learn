@@ -9,7 +9,8 @@
             {
                 "src": "advocates",
                 "files": [
-                    "**/*.yml"
+                    "**/*.yml",
+                    "**/*.md"
                 ],
                 "exclude": [
                     "**/includes/**"
@@ -19,7 +20,8 @@
             {
                 "src": "aspnetcore",
                 "files": [
-                    "**/*.yml"
+                    "**/*.yml",
+                    "**/*.md"
                 ],
                 "exclude": [
                     "**/includes/**"
@@ -29,7 +31,8 @@
             {
                 "src": "ai-business-school",
                 "files": [
-                    "**/*.yml"
+                    "**/*.yml",
+                    "**/*.md"
                 ],
                 "exclude": [
                     "**/includes/**"
@@ -39,7 +42,8 @@
             {
                 "src": "azure",
                 "files": [
-                    "**/*.yml"
+                    "**/*.yml",
+                    "**/*.md"
                 ],
                 "exclude": [
                     "**/includes/**"
@@ -49,7 +53,8 @@
             {
                 "src": "azure-devops",
                 "files": [
-                    "**/*.yml"
+                    "**/*.yml",
+                    "**/*.md"
                 ],
                 "exclude": [
                     "**/includes/**"
@@ -59,7 +64,8 @@
             {
                 "src": "data-ai-cert",
                 "files": [
-                    "**/*.yml"
+                    "**/*.yml",
+                    "**/*.md"
                 ],
                 "exclude": [
                     "**/includes/**"
@@ -69,7 +75,8 @@
             {
                 "src": "databricks",
                 "files": [
-                    "**/*.yml"
+                    "**/*.yml",
+                    "**/*.md"
                 ],
                 "exclude": [
                     "**/includes/**"
@@ -79,7 +86,8 @@
             {
                 "src": "ai-business",
                 "files": [
-                    "**/*.yml"
+                    "**/*.yml",
+                    "**/*.md"
                 ],
                 "exclude": [
                     "**/includes/**"
@@ -89,7 +97,19 @@
             {
                 "src": "student-evangelism",
                 "files": [
-                    "**/*.yml"
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "sqlserver",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
                 ],
                 "exclude": [
                     "**/includes/**"
@@ -99,7 +119,8 @@
             {
                 "src": "wwl-mba",
                 "files": [
-                    "**/*.yml"
+                    "**/*.yml",
+                    "**/*.md"
                 ],
                 "exclude": [
                     "**/includes/**"

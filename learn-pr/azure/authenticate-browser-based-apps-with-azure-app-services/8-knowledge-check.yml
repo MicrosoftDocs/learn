@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 03/27/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: nickwalkmsft
+  ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -14,7 +14,6 @@ durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
-
   - content: "Identify the resource in Azure App Service that helps verify the resources a user can access during their session."
     choices:
     - content: "Authentication endpoints"
@@ -26,19 +25,6 @@ quiz:
     - content: "Authentication provider"
       isCorrect: false
       explanation: "Authentication provider manages the authentication of a user against a set of stored credentials."
-
-  - content: "How do you enable access to multiple authentication providers like google or facebook, in your web app?"
-    choices:
-    - content: "App Service Authentication (OFF) and sign in with provider"
-      isCorrect: false
-      explanation: "This will allow all client requests without any authentication."
-    - content: "App Service Authentication (ON) and sign in with provider"
-      isCorrect: true
-      explanation: "This will enable authentication and redirect all requests to the provider selected."
-    - content: "App Service Authentication (ON) and Allow Anonymous requests"
-      isCorrect: false
-      explanation: "This will allow all requests and will not redirect requests to the desired provider."
-  
   - content: "If you have a browser-based app, which setting lets you check for a successful authentication?"
     choices:
     - content: "IP Address"
@@ -50,4 +36,3 @@ quiz:
     - content: "Username and password"
       isCorrect: false
       explanation: "AppServiceAuthSession cookie is set for a successful authentication."
-    

@@ -24,29 +24,24 @@ Once you are logged into the Azure portal, we can start exploring things. In the
 
 1. Under Azure Marketplace, click **Compute** to show more compute options on the right side of the blade, such as Red Hat Enterprise, Reserved VM Instances, Web app for Containers, and so on.
 
-1. To the right of **Featured**, click **See all**. The full list of available VM services now appears.
+1. To the right of **Featured**, click **See More**. The full list of available VM services now appears.
 
-1. Under **Recommended**, click **Windows Server**. A new **Windows Server** blade appears to the right.
+1. Click **Windows Server**.
 
-1. To the right of the **Pin blade to dashboard** icon in the blade's title bar, click the **Maximize** icon (it looks like a simple empty square or box). The Windows Server blade now fills the screen, except for the left-hand pane. Scroll down the list to see all of the Windows Server images available.
+1. Select the drop down list to see all of the Windows Server images available.
 
-1. Optionally, you can click the **Restore** icon (similar to the Maximize icon, a simple empty square or box with another one on top) to return to the previous blade view.
-
-1. Click the **X** at the top right-hand corner to close the **Windows Server** blade. You should now see the **New** blade again.
+1. Click the **X** at the top right-hand corner to close the **Windows Server** window. You should now see the **New** blade again.
 
 ## Filtering results
 
 1. Another way to locate services is to refine the list with filters and search terms. On the **New** blade, you may have noticed the search box at the top. This is the quickest way to filter what services you see, but this search checks every Azure service to get its results. If you'd like to learn how to filter after selecting a category, continue to the next steps.
 
-1. On the **Compute** blade, you can see these various options at the top, a search box and some labeled dropdown boxes.
+1. Type `virtual machine images` into the search box and press <kbd>Enter</kbd>. 
+1. Select **Compute**. You see a filtered list of Compute services related to virtual machine images.
 
-1. Type `virtual machine images` into the search box and press ENTER. You should now see a filtered list of Compute services related to virtual machine images.
+1. Select any of the results that interest you to learn more about that service, including how to get started. Click the **X** in the corner to explore a different service. When you're done, move to the next step.
 
-1. Explore the available dropdown filter boxes by clicking on the down arrow (it looks a bit like a chevron) and try some of them out. When you are satisfied, move on to the next step.
-
-1. Click the **X** in the right-hand end of the search box. This will erase your search term but does not reset any of the drop-down filters you've set. You can either reset those manually, or simply close the **Compute** blade with the X icon in the upper right corner and re-open it. When you are finished trying out the search and filtering options, move on to the next step.
-
-1. Click the **X** at the top right-hand corner to close the **Compute** blade.
+1. Click the **X** in the right-hand end of the search box. This will erase your search term but does not reset any of the drop-down filters you've set. You can either reset those manually, or simply close the **Compute** blade with the **X** icon in the upper right corner and re-open it. When you are finished trying out the search and filtering options, move on to the next step.
 
 1. Click the **X** at the top right-hand corner to close the **Marketplace** blade. Now you will see the **New** blade once again.
 

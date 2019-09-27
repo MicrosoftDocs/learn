@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-choose-a-code-flow-strategy.md)
+  [!include[](includes/2-choose-a-code-flow-strategy.md)]
 quiz:
   title: Check your knowledge
   questions:

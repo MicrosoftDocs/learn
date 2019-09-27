@@ -5,8 +5,6 @@ Suppose you have an application for the sales team in your global company. Each 
 
 You have decided to implement a Service Bus queue for the first use case and the Service Bus topic for the second use case.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 In this exercise, you will create a Service Bus namespace, which will contain both a queue and a topic with subscriptions.
 
 ## Create a Service Bus namespace

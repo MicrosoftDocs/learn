@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.cosmos-db-app-with-vscode.4-crud-operations
 metadata:
-  title: Create, read, update, and delete NoSQL data programmatically
-  description: Create, read, update, and delete documents programmatically
+  title: Exercise - Create, read, update, and delete NoSQL data programmatically
+  description: Exercise - Create, read, update, and delete documents programmatically
   ms.date: 09/24/2018
-  author: mimig1
-  ms.author: mimig
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Create, read, update, and delete NoSQL data programmatically
+title: Exercise - Create, read, update, and delete NoSQL data programmatically
 durationInMinutes: 10
 content: |
   [!include[](includes/4-crud-operations.md)]

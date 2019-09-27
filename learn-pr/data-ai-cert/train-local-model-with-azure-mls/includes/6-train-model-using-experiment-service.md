@@ -181,13 +181,12 @@ script_params = {
     '--regularization': 0.5
 }
 
-est = SKLearn(source_directory=folder_training_script,
-              script_params=script_params,
-              compute_target=compute_target,
-              conda_packages=['scikit-learn'], 
-              entry_script='train.py')
-
-print('Done')
+#import the Scikit-learn package 
+est = Estimator(source_directory=folder_training_script,
+                script_params=script_params,
+                compute_target=compute_target,
+                entry_script='train.py',
+                conda_packages=['scikit-learn'])
 ```
 
 ## Submit the model, monitor the run, and retrieve the results

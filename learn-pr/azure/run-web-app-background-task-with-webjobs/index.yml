@@ -25,6 +25,9 @@ roles:
 - developer
 products:
 - azure
+- dotnet
+- aspnet-core
+- dotnet-core
 units:
 - learn.run-web-app-background-task-with-webjobs.1-introduction
 - learn.run-web-app-background-task-with-webjobs.2-what-are-webjobs

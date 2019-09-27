@@ -4,8 +4,6 @@ In the example scenario, you want to move blobs that contain the details for pro
 
 In this exercise, you'll use the Azure CLI to migrate blobs that haven't changed in the last six months to a separate storage account.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create and add data to hot storage
 
   [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
