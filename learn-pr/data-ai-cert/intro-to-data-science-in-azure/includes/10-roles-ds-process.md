@@ -28,7 +28,7 @@ Common tools the developer will use include but are not limited to:
 - CSS
 - Python
 - C#, Java, or JavaScript
-- Source code control (Git, Svn)
+- Source code control (Git, SVN)
 
 ## Data scientist
 
