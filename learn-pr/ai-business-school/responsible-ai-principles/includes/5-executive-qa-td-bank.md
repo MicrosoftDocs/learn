@@ -1,4 +1,4 @@
-Watch this video from Matt Fowler, VP and Head of Machine Learning, Enterprise Data and Analytics at TD Bank Group (TD), as he shares how TD Bank is approaching responsible AI. Matt Fowler also provides some key findings from their customer survey and what they mean for the financial services industry at large.
+TD Bank Group's (TD) Matt Fowler, VP and Head of Machine Learning, Enterprise Data and Analytics, shares in this video how TD is approaching responsible AI. Matt Fowler also provides some key findings from their customer survey and what they mean for the financial services industry at large.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3QxqG]
 
