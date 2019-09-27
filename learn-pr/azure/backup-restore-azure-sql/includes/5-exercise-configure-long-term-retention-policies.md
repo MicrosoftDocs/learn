@@ -46,7 +46,7 @@ You can also configure long-term retention policies by using PowerShell. Let's c
         | Get-AzSqlDatabaseLongTermRetentionPolicy
     ```
 
-    This step will output the retention polices for all databases on the server. In this case, you should see one policy for the **master** database, and one policy for the **sql-erp-db** database.
+    This step will output the retention policies for all databases on the server. In this case, you should see one policy for the **master** database, and one policy for the **sql-erp-db** database.
 
 1. Run this command to view the long-term retention policy for the **sql-erp-db** database.
 
@@ -57,7 +57,7 @@ You can also configure long-term retention policies by using PowerShell. Let's c
         -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
     ```
 
-1. Now let's configure the remainder of the policy to meet the requirements specified earlier. To configure a long-term retention policy via PowerShell, run this command.
+1. Now let's configure the rest of the policy to meet the requirements specified earlier. To configure a long-term retention policy via PowerShell, run this command.
 
     ``` powershell
     Set-AzSqlDatabaseBackupLongTermRetentionPolicy `

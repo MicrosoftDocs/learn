@@ -1,6 +1,6 @@
-The retail organization that you work for uses Azure SQL Database to store the relational data for its enterprise resource planning (ERP) system. The company uses this system for all its accounting, customer relationship management, sales management, and corporate governance procedures. If this data were lost, the business would suffer huge losses and might even have to cease operations. 
+The retail organization that you work for uses Azure SQL Database to store the relational data for its enterprise resource planning (ERP) system. The company uses this system for all its accounting, customer relationship management, sales management, and corporate governance procedures. If this data is lost, the business will suffer huge losses and might even have to cease operations. 
 
-The board has given you responsibility for the protection of this data. You want to be sure that if a disaster happens, you can restore all the data up to the failure within three hours.
+The board has given you responsibility for the protection of this data. You want to be sure that if a disaster happens, you can restore all the data up to the failure within 3 hours.
 
 Here, you'll learn about Azure SQL Database backups and how to use them effectively.
 
@@ -45,9 +45,9 @@ Full backups for LTR are kept up to 10 years in Azure Blob storage accounts. You
 
 ## Storage costs
 
-Microsoft provides Azure Backup services to create all-encompassing backups with a predictable pricing system that lets you easily keep track of any Azure data backup costs. Pricing for Azure Backup for SQL Server is based on paying for both instance costs (the data getting protected) and storage costs each month.
+Microsoft provides Azure backup services to create all-encompassing backups with a predictable pricing system that lets you easily keep track of any Azure data backup costs. Pricing for backing up SQL Server is based on paying for both instance costs (the data getting protected) and storage costs each month.
 
-Seven days of automated backups of your databases are copied to RA-GRS standard blob storage by default. The storage is used by weekly full backups, daily differential backups, and transaction log backups copied every 5 minutes. The size of the transaction log depends on the rate of change of the database. 
+By default, 7 days of automated backups of your databases are copied to RA-GRS standard blob storage. The storage is used by weekly full backups, daily differential backups, and transaction log backups copied every 5 minutes. The size of the transaction log depends on the rate of change of the database. 
 
 A minimum storage amount equal to 100 percent of database size is provided at no extra charge. Additional consumption of backup storage is charged in gigabytes per month.
 

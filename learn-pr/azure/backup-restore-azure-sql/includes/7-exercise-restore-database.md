@@ -1,12 +1,12 @@
 Trial restores are a key component of any disaster recovery strategy.
 
-You want to familiarize yourself with the steps to restore a backed-up database to a specific point in time in case it becomes necessary. You also want to investigate how long a restore operation will take so you can plan for this in your guidance for your organization.
+You want to familiarize yourself with the steps to restore a backed-up database to a specific point in time, in case it becomes necessary. You also want to investigate how long a restore operation will take so you can plan for this in your guidance for your organization.
 
 Here, you'll perform a restore of from automated Azure SQL Database backups.
 
 ## Confirm that backups are active
 
-It can take up to 15 minutes for the first successful backup to finish. We need to make sure that backups are running before we continue with the exercise.
+It can take up to 15 minutes for the first successful backup to finish. We need to make sure that backups are running before we continue the exercise.
 
 1. Run the following PowerShell command in Azure Cloud Shell to validate that continuous backups are running.
 
@@ -30,7 +30,7 @@ It can take up to 15 minutes for the first successful backup to finish. We need 
     RestorePointLabel        :
     ```
 
-    `RestorePointType` is `CONTINUOUS`, indicating that backups are automatically happening. `EarliestRestoreDate` indicates the timestamp of the first backup. With backups in place, let's continue with the exercise.
+    `RestorePointType` is `CONTINUOUS`, indicating that backups are automatically happening. `EarliestRestoreDate` indicates the timestamp of the first backup. With backups in place, let's continue the exercise.
 
 ## Drop a table from the database
 
