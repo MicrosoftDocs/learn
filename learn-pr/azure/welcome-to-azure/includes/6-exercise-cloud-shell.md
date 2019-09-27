@@ -34,7 +34,7 @@ Accessing the Cloud Shell from within the Azure portal is done using the Cloud S
     az account set --subscription xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx
     ```
 
-1. Recall that we used a pre-created resource group called **<rgn>[Resource Group Name]</rgn>** when we created our website. However, if you ever need to list all the resource groups in a subscription, then you'll run the `az list groups` command.
+1. Recall that we used a pre-created resource group called **<rgn>[Resource Group Name]</rgn>** when we created our website. However, if you ever need to list all the resource groups in a subscription, then you'll run the `az group list` command.
 
     ```bash
     az group list --output table
