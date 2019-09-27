@@ -19,7 +19,7 @@ Amita takes a deep breath.
 Mara opens her Windows laptop and launches Google Chrome. She goes to the web app and verifies that the home page comes up.
 
 > [!TIP]
-> For reference, Microsoft hosts a version of the [Space Game](http://tailspin-spacegame-web.azurewebsites.net?azure-portal=true) website. Go there if you want to follow along with Amita's manual tests.
+> For reference, Microsoft hosts a version of the [Space Game](http://tailspin-spacegame-web.azurewebsites.net?azure-portal=true) website. Go there if you want to follow along with Amita's manual tests. Otherwise, you can just read along.
 
 **Andy:** OK. What do you check next?
 

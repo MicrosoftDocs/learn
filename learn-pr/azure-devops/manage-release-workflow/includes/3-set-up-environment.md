@@ -47,7 +47,7 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 
 ## Move the work item to Doing
 
-In this part, you assign a work item to yourself that relates to this module on Azure Boards. You also move the work item to the **Doing** state. In practice, you and your team would assign work items at the start of each sprint, or work iteration.
+In this part, you assign a work item to yourself on Azure Boards that relates to this module. You also move the work item to the **Doing** state. In practice, you and your team would assign work items at the start of each sprint, or work iteration.
 
 Assigning work in this way gives you a checklist to work from. It gives others on your team visibility into what you're working on and how much work is left. It also helps the team enforce Work in Progress (WIP) limits so that the team doesn't take on too much work at one time.
 
@@ -58,9 +58,7 @@ Recall that the team settled on these three top issues for the current sprint.
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
 
-Here you move the first item, **Define a release workflow** to the **Doing** column and assign yourself to the work item.
-
-Recall that **Define a release workflow** relates to defining a release management workflow for the _Space Game_ web site.
+Here you move the first item, **Define a release workflow** to the **Doing** column and assign yourself to the work item. **Define a release workflow** relates to defining a release management workflow for the _Space Game_ web site.
 
 To set up the work item:
 
@@ -224,8 +222,7 @@ To do so, you:
 
     You see this:
 
-    > [!div class="mx-imgBorder"]
-    > ![The default home page on Azure App Service](../media/3-app-service-default.png)
+    ![The default home page on Azure App Service](../../shared/media/app-service-default.png)
 
 > [!IMPORTANT]
 > Remember, the [Clean up your Azure DevOps environment](/learn/modules/manage-release-workflow/7-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
@@ -236,9 +233,9 @@ In [Create a release pipeline with Azure Pipelines](/learn/modules/create-releas
 
 Remember that, although you could hard code these names in your pipeline configuration, defining them as variables makes your configuration more reusable. Plus, if the name of your App Service instances change, you can update the variables and trigger your pipeline without modifying your configuration.
 
-To add the variable:
+To add the variables:
 
-1. In Azure DevOps, go to your **Space Game - web - Release workflow** projecet.
+1. In Azure DevOps, go to your **Space Game - web - Release workflow** project.
 1. Under **Pipelines**, select **Library**.
 
     ![Azure Pipelines showing the Library menu option](../../create-release-pipeline/media/5-pipelines-library.png)
@@ -262,8 +259,7 @@ To add the variable:
 
     Your variable group resembles this one:
 
-    > [!div class="mx-imgBorder"]
-    > ![Azure Pipeline showing the variable group](../media/3-library-variable-group.png)
+    ![Azure Pipeline showing the variable group](../media/3-library-variable-group.png)
 
 ## Create a service connection
 

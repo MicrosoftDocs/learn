@@ -1,4 +1,6 @@
-In this section, you TODO.
+In this section, you join the Tailspin team as they define functional tests for their pipeline. _Functional tests_ verify that each function of the software does what it should.
+
+The team defines what a functional test covers, some of the kinds of functional tests that you can run, and then decide on one to add to their pipeline.
 
 ## Weekly meeting
 
@@ -26,7 +28,7 @@ But I'm worried that all the testing I do is still manual. It's slow and we can'
 
 **Mara:** _Functional tests_ verify that each function of the software does what it should. How the software implements each function isn't important, only that the software does the right thing. You provide an input and check that the output is what you expect. That's how Amita tests the UI. For example, if she selects the top player on the leaderboard, she expects to see that player's profile.
 
-_Non-functional tests_ check characteristics like performance and reliability. An example of a non-functional test is checking to see how many people can simultaneously log in to the app at the same time. Load testing would be another example. Those are things you care about, Tim.
+_Non-functional tests_ check characteristics like performance and reliability. An example of a non-functional test is checking to see how many people can simultaneously sign in to the app at the same time. Load testing would be another example. Those are things you care about, Tim.
 
 **Tim:** They are, indeed. I need to think about this for a bit. I might want to add some automation to the pipeline myself but I'm not sure yet what I want to do. What kinds of automated tests can I run?
 
@@ -36,13 +38,13 @@ _Non-functional tests_ check characteristics like performance and reliability. A
 
 There are many kinds of functional tests. Each kind varies by the functionality you need to test for and the time (or effort) that's typically required to run it.
 
-Here are some of the more popular kinds of functional tests software teams commonly run.
+Here are some of the more popular kinds of functional tests software teams run.
 
 ### Smoke testing
 
 _Smoke testing_ verifies the most basic functionality of your application or service. Smoke tests are often run before running more complete and exhaustive tests. Smoke tests are intended to run quickly.
 
-For example, say you're developing a website. Your smoke test might use `curl` to verify that the site is reachable and that fetching the home page produces a 200 (OK) HTTP status. If fetching the home page produces another status code, such as 404 (Not Found) or 500 (Internal Server Error), then you know that the website is fundamentally not working and no further testing is required. From there, you would diagnose the error and restart your tests once the error is fixed.
+For example, say you're developing a website. Your smoke test might use `curl` to verify that the site is reachable and that fetching the home page produces a 200 (OK) HTTP status. If fetching the home page produces another status code, such as 404 (Not Found) or 500 (Internal Server Error), then you know that the website is fundamentally not working and no further testing is required. From there, you would diagnose the error and restart your tests when the error is fixed.
 
 ### Unit testing
 
@@ -56,21 +58,21 @@ The UI tests you'll run later in this module are a form of unit tests.
 
 ### Integration testing
 
-_Integration testing_ verifies that multiple software components work together. For example, an e-commerce system might include the website, the products database, a payment system, and so on. You might write an integration test that adds items to the shopping cart verifies that the payment system fulfills the order. Such as test might use fictitious data to ensure that the test can be run repeatedly without making a real transaction.
+_Integration testing_ verifies that multiple software components work together to form a complete system. For example, an e-commerce system might include a website, a products database, a payment system, and so on. You might write an integration test that adds items to the shopping cart and then checks out the order. Such a test would verify that the web application can connect to the products database and then successfully fulfill the order.
 
-Combining unit and integration tests enables you to create a layered approach to your testing strategy. For example, you might run unit tests on each of your components before running the integration tests. If all unit tests pass, you can move on to the integration test phase with greater confidence.
+Combining unit and integration tests helps you create a layered approach to your testing strategy. For example, you might run unit tests on each of your components before running the integration tests. If all unit tests pass, you can move on to the integration test phase with greater confidence.
 
 ### Regression testing
 
 A _regression_ occurs when existing behavior changes or breaks when a feature is either added or changed. _Regression testing_ helps determine whether code, configuration, or other changes affect the software's overall behavior.
 
-Regression testing is important because a change in one component can change the behavior of another. For example, say you tune a database to increase write performance. Read performance of that database from another component might drop in ways you did not expect.
+Regression testing is important because a change in one component can change the behavior of another. For example, say you optimize a database for write performance. Read performance of that database from another component might drop in ways you did not expect. The regression is the database's drop in read performance.
 
 There are various types of regression testing strategies. These strategies typically vary by the number of tests that are run to verify that a new feature or bug fix doesn't break existing functionality. However, when tests are automated, regression testing might simply involve running all unit and integration tests each time the software undergoes a change.
 
 ### Sanity testing
 
-_Sanity testing_ involves testing each major component of a piece of software to verify whether that software appears to be working and can undergo more thorough testing. You can think of sanity tests as being less thorough than regression or unit tests, but more thorough than smoke tests.
+_Sanity testing_ involves testing each major component of a piece of software to verify whether that software appears to be working and can undergo more thorough testing. You can think of sanity tests as being less thorough than regression or unit tests, but broader than smoke tests.
 
 Although sanity testing can be automated, it's often done manually in response to a feature change or a bug fix. For example, when validating a bug fix, a software tester might also verify that other features are working by entering values that a user might enter. If the software appears to be working as expected, it can then go through a more thorough test pass.
 
@@ -82,7 +84,7 @@ Although a unit or integration test might verify that the UI _receives_ data cor
 
 For example, a UI test might verify that the correct animation appears in response to a button click. A second test might verify that the same animation appears correctly when the window is resized.
 
-In this module, you work with UI tests that are coded by hand. But you can also use use a capture and replay system to automatically build your UI tests.
+In this module, you work with UI tests that are coded by hand. But you can also use a capture and replay system to automatically build your UI tests.
 
 ### Usability testing
 
@@ -96,11 +98,11 @@ For example, say you have a website that includes a link to the user's profile. 
 
 _User acceptance testing_, like usability testing, focuses on an application's behavior from the user's perspective. However, unlike acceptance testing, user acceptance testing is typically performed with real end users.
 
-Depending on the software, end users might be asked to complete specific tasks or they might be allowed to explore the software without any specific guidelines. For custom software, UAT typically happens directly with the client. For more general-purpose software, teams might run "beta" tests where select users from different geographic regions are given early access to the software.
+Depending on the software, end users might be asked to complete specific tasks or they might be allowed to explore the software without any specific guidelines. For custom software, UAT typically happens directly with the client. For more general-purpose software, teams might run "beta" tests where select users from different geographic regions or users with certain interests are given early access to the software.
 
-Feedback from testers can be direct or indirect. Direct feedback might come in the form of verbatim comments. Indirect feedback can come in the form of measuring testers' body language, eye movements, or the time it takes to complete certain tasks.
+Feedback from testers can be direct or indirect. Direct feedback might come in the form of verbatim comments. Indirect feedback can come in the form of measuring testers' body language, eye movements, or the time it takes them to complete certain tasks.
 
-**Mara:** I know we covered this already, but just to emphasize the importance of writing tests, here's a short video where Abel Wang, Cloud Advocate at Microsoft. Abel explains how to ensure you maintain quality in your DevOps plan.
+**Mara:** I know we covered this already, but just to emphasize the importance of writing tests, here's a short video where Abel Wang, Cloud Advocate at Microsoft, explains how to ensure you maintain quality in your DevOps plan.
 
 **Ask Abel**
 
@@ -108,7 +110,7 @@ Feedback from testers can be direct or indirect. Direct feedback might come in t
 
 ## What does the team choose?
 
-**Tim:** Now I appreciate all the work Amita does for us, especially when she performs usability testing to bring in the user's perspective. Which of these should we tackle first?
+**Tim:** I appreciate all the work Amita does for us, especially when she performs usability testing to bring in the user's perspective. Which of these should we tackle first?
 
 **Andy:** We already have working unit tests, and we're not yet ready to perform user acceptance testing. Based on what I hear, I think we should focus on UI testing. Right now, it's the slowest part of our process. Amita, do you agree?
 
@@ -126,7 +128,7 @@ Feedback from testers can be direct or indirect. Direct feedback might come in t
 
 WinAppDriver helps you automate UI tests on Windows apps, such as those written with Universal Windows Platform (UWP) or Windows Forms (WinForms). We need a solution that works in the browser.
 
-Selenium is a portable open source software-testing framework for web applications. It runs on most operating systems and it supports all modern browsers. It also supports several programming languages, including C#. In fact, there are NuGet packages that make it easy to run Selenium as NUnit tests. We already use NUnit for our unit tests.
+Selenium is a portable open source software-testing framework for web applications. It runs on most operating systems and it supports all modern browsers. It also supports several programming languages for writing tests, including C#. In fact, there are NuGet packages that make it easy to run Selenium as NUnit tests. We already use NUnit for our unit tests.
 
 SpecFlow is for .NET projects, and is inspired by another tool called Cucumber. Both SpecFlow and Cucumber support what's called behavior-driven development (BDD). BDD uses a natural language parser called Gherkin to help both technical and non-technical team members define business rules and requirements. You can combine either SpecFlow and Cucumber with Selenium to build UI tests.
 
@@ -138,12 +140,12 @@ Andy looks at Amita.
 
 ## How do I run functional test in the pipeline?
 
-In Azure Pipelines, you run functional tests just like you run any other process or test. Some decisions you'll need to make are:
+In Azure Pipelines, you run functional tests just like you run any other process or test. When planning your tests, you might ask:
 
-* In which stage to run your tests.
-* On what systems to run your tests.
+* In which stage will the tests run?
+* On what system will the tests run &mdash; the agent, or on the infrastructure that hosts the application?
 
-Let's join the team as they discuss these points.
+Let's join the team as they answer these questions.
 
 **Mara:** One thing I'm excited about is that now we can test in a production-like environment, where the app is actually running. Functional tests like UI tests make a lot of sense in that context. We can run them in the _Test_ stage of our pipeline.
 
@@ -153,18 +155,18 @@ Let's join the team as they discuss these points.
 
 **Mara:** Great question. We also have a choice about where we run the tests. We can run them:
 
-* On a build agent: either one of Microsoft's or one we host.
+* On the agent: either one of Microsoft's or one that we host.
 * On test infrastructure: either on-premises or in the cloud.
 
-Our existing _Test_ stage includes one job. That job deploys the website to App Service from a Linux build agent. But we can add a second job that runs the UI tests from a Windows build agent. The Windows build agent that's hosted by Microsoft is already set up to run Selenium tests.
+Our existing _Test_ stage includes one job. That job deploys the website to App Service from a Linux agent. We can add a second job that runs the UI tests from a Windows agent. The Windows agent that's hosted by Microsoft is already set up to run Selenium tests.
 
-**Andy:** Again, let's stick with what we know. Let's use a Microsoft-hosted Windows build agent. Later, we can run the same tests from build agents running macOS and Linux if we need additional test coverage.
+**Andy:** Again, let's stick with what we know. Let's use a Microsoft-hosted Windows agent. Later, we can run the same tests from agents running macOS and Linux if we need additional test coverage.
 
 ## The plan
 
 **Mara:** OK. So here's what we're going to do:
 
-* Run Selenium UI tests from a Microsoft-hosted Windows build agent.
+* Run Selenium UI tests from a Microsoft-hosted Windows agent.
 * Have the tests fetch the web content from the app that's running on App Service, in the _Test_ stage.
 * Run the tests on all the browsers we support.
 
