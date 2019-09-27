@@ -24,7 +24,7 @@ Below are some additional resources your organization can leverage when developi
 * Developer-focused [AI School](https://aischool.microsoft.com), which provides online videos and other assets that help build professional AI skills.
 * The [Skillful Initiative](https://www.markle.org/rework-america/skillful), a partnership with the Markle Foundation in the US, helps match people with employers and fill high-demand jobs.
 
-### Microsoft Programs
+### Microsoft programs
 
 AI for Good includes three programs: [AI for Accessibility](https://www.microsoft.com/ai-for-accessibility), [AI for Earth](https://www.microsoft.com/ai-for-earth/), and [AI for Humanitarian Action](https://www.microsoft.com/ai/ai-for-humanitarian-action), which are already supporting nearly 250 projects across the globe. Learn more about how to protect against new AI-specific security threats by reading our paper, [Securing the Future of Artificial Intelligence and Machine Learning at Microsoft](https://www.microsoft.com/download/details.aspx?id=57597) and follow along with the news. For example, last year we publicly [called for regulation](https://blogs.microsoft.com/on-the-issues/2018/07/13/facial-recognition-technology-the-need-for-public-regulation-and-corporate-responsibility/) of facial recognition technology and outlined our recommendations for the public and private sector alike.
 
