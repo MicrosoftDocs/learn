@@ -94,7 +94,7 @@ AI for Good includes three programs: [AI for Accessibility](https://www.microsof
 [(14) Microsoft, “A Reductions Approach to Fair Classification.” Association for Computing Machinery, March 2018.](https://www.microsoft.com/research/publication/a-reductions-approach-to-fair-classification/)  
 [(15) SSRN, “Fairness and Abstraction in Sociotechnical Systems.” Andrew Selbst, Danah Boyd, Sorelle Friedler, Suresh Venkatasubramanian, Janet Vertesi, 23 August 2018.](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3265913)
 [(16) Cornell University, “Counterfactual Fairness.” Matt J. Kusner, Joshua R. Loftus, Chris Russell, Ricardo Silva, 8 March 2018.](https://arxiv.org/abs/1703.06856)  
-[(17) Microsoft, “Reductions for Fair Machine Learning.”](https://github.com/Microsoft/fairlearn)
+[(17) Microsoft, “Reductions for Fair Machine Learning.”](https://github.com/Microsoft/fairlearn)  
 [(18) NIPS, “The Trouble with Bias – NIPS 2017 Keynote.” Kate Crawford, 5 December 2017.](https://www.youtube.com/watch?v=fMym_BKWQzk)  
 [(19) Microsoft Research Webinar Series, “Machine Learning and Fairness.” Jenn Wortman Vaughan, Hanna Wallach. 2018.](https://note.microsoft.com/MSR-Webinar-Machine-Learning-and-Fairness-Registration-LIVE/)  
 [(20) Microsoft, “Inclusive Design.”](https://www.microsoft.com/design/inclusive/)  
