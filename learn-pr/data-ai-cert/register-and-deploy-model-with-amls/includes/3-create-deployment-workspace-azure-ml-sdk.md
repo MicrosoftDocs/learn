@@ -69,12 +69,15 @@ Locate the subscription you want to use and replace the `{azure-subscription-id}
 
 ```python
 from azureml.core import Workspace
+
 ws = Workspace.create(
             name='learn-workspace-py',
             subscription_id='{azure-subscription-id}', 
             resource_group='mslearn-amls',
             create_resource_group=False,
             location='eastus2'
+
+print('Done')
 )
 ```
 
