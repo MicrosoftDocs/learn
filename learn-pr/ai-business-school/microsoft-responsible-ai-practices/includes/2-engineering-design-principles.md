@@ -1,6 +1,6 @@
 If you’re developing, implementing, or managing AI internally, you may want to consider how to honor your organization’s guiding principles at every step of the AI lifecycle. To empower technical employees to do so, we have found that it helps to translate your principles into actionable guidance.
 
-Microsoft is on this journey as well, and we would like to share our perspective and experiences. For years, we have been working with other companies and institutions to help developers everywhere build and deploy AI responsibly. We also leverage open source tools and look to leading organizations like Partnership on AI (PAI) for best practices, industry standards, and guidelines. By leveraging practical guidance, hopefully you and your team don’t have to develop your approach from scratch.
+Microsoft is on this journey as well, and we would like to share our perspective and experiences. For years, we have been working with other companies and institutions to help developers everywhere build and deploy AI responsibly. We also leverage open-source tools and look to leading organizations like Partnership on AI (PAI) for best practices, industry standards, and guidelines. By leveraging practical guidance, hopefully you and your team don’t have to develop your approach from scratch.
 
 ## Principles and guidelines
 
