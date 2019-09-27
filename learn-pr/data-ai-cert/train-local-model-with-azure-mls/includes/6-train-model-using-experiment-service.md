@@ -82,9 +82,7 @@ print('Done')
 Finally, let's prepare our model training script (note that in this script, you are defining three parameters):
 
 - The first parameter is for finding the data in the cloud or for the path.
-- The other two parameters define the **k** parameter in the **kNN** algorithm.
-- `kmax` limits the maximum value of **k**.
-- `kinterval` decides the interval between each **k**.
+- The other parameter **regularization** parameter in the algorithm.
 
 ```python
 %%writefile $folder_training_script/train.py
