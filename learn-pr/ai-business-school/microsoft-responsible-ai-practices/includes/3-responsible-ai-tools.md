@@ -4,7 +4,7 @@ Watch this video from Dr. Sarah Bird, Principal Program Manager for Azure Machin
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3NW80]
 
-In this video, you heard Dr. Sarah Bird explain some of the tools that help combat new AI-specific security and privacy threats and those that help test and monitor for reliability. She says that it’s important to make sure AI works well for everyone using guidelines, assessment tools, mitigation techniques, and continuous monitoring. Finally, tools for transparency and accountability help ensure that AI models are adhering to other ethical principles.
+In this video, you heard Dr. Sarah Bird explain some of the tools that help combat new AI-specific security and privacy threats and those that help test and monitor for reliability. Dr. Bird says that it’s important to make sure AI works well for everyone using guidelines, assessment tools, mitigation techniques, and continuous monitoring. Finally, tools for transparency and accountability help ensure that AI models are adhering to other ethical principles.
 
 Here are some tools that we have found helpful in implementing our foundational principles and guidelines:
 
@@ -20,7 +20,8 @@ Implementing security and privacy in your organization:
 |---|---|
 |Guidance|Consider using guidelines like Microsoft’s Securing the Future of Artificial Intelligence and Machine Learning to formulate your own policies.<sup>8</sup>|
 |Open source code|Research Microsoft SEAL—a set of libraries powered by homomorphic encryption that allow computations to be performed directly on encrypted data.<sup>9</sup>|
-|Technologies|Take advantage of third-party tools like the Private Data Sharing Interface (PSI), which allows researchers to explore private datasets securely using differential privacy.<sup>10</sup>|
+|Technologies|Look into technologies like MPC, differential privacy, and secure execution environments to see if they are right for your use case|
+|Tools|Take advantage of third-party tools like the Private Data Sharing Interface (PSI), which allows researchers to explore private datasets securely using differential privacy.<sup>10</sup>|
 :::column-end:::
 :::column:::
 > [!TIP]
@@ -40,8 +41,8 @@ Implementing fairness in your organization:
 
 |Resource type|Details|
 |---|---|
-|Guidance|There are some great papers that can help you in this journey: learn how to avoid five key “traps” of fair-ML work in a paper from the ACM Conference entitled Fairness and Abstraction in Sociotechnical Systems<sup>14</sup>; or read the Counterfactual Fairness paper from Cornell University.<sup>15</sup>|
-|Open source code|Check out the Aequitas open source toolkit, and look for a Python package for the FairLearn approach on GitHub.<sup>16</sup>|
+|Guidance|There are some great papers that can help you in this journey: learn how to avoid five key “traps” of fair-ML work in a paper from the ACM Conference entitled Fairness and Abstraction in Sociotechnical Systems;<sup>14</sup> or read the Counterfactual Fairness paper from Cornell University.<sup>15</sup>|
+|Open source code|Check out the Aequitas open source toolkit and look for a Python package for the FairLearn approach on GitHub.<sup>16</sup>|
 |Tools|Leverage the methodology for reducing bias in word embedding.|
 |Further training|For more information on how to assess the fairness of AI models, watch the NIPS keynote address from Kate Crawford, Principle Researcher at Microsoft and Co-founder of the AI Now Institute at NYU.<sup>17</sup> To understand the unique challenges regarding fairness in ML, watch a free Microsoft webinar on Machine Learning and Fairness.<sup>18</sup>|
 
@@ -55,7 +56,7 @@ Implementing inclusiveness in your organization:
 
 |Resource type|Details|
 |---|---|
-|Guidance|Reference Microsoft’s inclusive design practices, inclusive design toolkit, and Algorithmic Greenlining paper.|
+|Guidance|Reference Microsoft’s inclusive design practices,<sup>19</sup> inclusive design toolkit,<sup>20</sup> and Algorithmic Greenlining paper.<sup>21</sup>|
 
 ## Reliability and safety
 
@@ -70,7 +71,7 @@ Implementing reliability and safety in your organization:
 
 ## Transparency
 
-The black-box nature of AI can be problematic and potentially harmful. Transparency is key to supporting the other five principles. Microsoft Research has created open-source package called InterpretML for training interpretable models and explaining black box systems.<sup>24</sup> InterpretML implements a number of intelligible models including Explainable Boosting Machine (EBM), an improvement over generalized additive models that has both high accuracy and intelligibility.<sup>25</sup> It also supports several methods for generating explanations of black box model behavior or predictions including ‘SHapley Additive exPlanations’ (SHAP) and ‘Local Interpretable Model-agnostics Explanations’ (LIME).<sup>24</sup>
+The black-box nature of AI can be problematic and potentially harmful. Transparency is key to supporting the other five principles. Microsoft Research has created an open-source package called InterpretML for training interpretable models and explaining black box systems.<sup>24</sup> InterpretML implements a number of intelligible models including Explainable Boosting Machine (EBM), an improvement over generalized additive models that has both high accuracy and intelligibility.<sup>25</sup> It also supports several methods for generating explanations of black box model behavior or predictions including ‘SHapley Additive exPlanations’ (SHAP) and ‘Local Interpretable Model-agnostics Explanations’ (LIME).<sup>24</sup>
 
 Azure Machine Learning also has a variety of tools that support model transparency. The Model Interpretability feature helps model designers and evaluators explain why a model makes certain predictions, which can be used to debug the model, validate that its behavior matches objectives, or check for bias.
 
