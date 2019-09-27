@@ -19,7 +19,7 @@ In this module, you will:
 - Use the `switch-case` construct to match a variable or expression against several possible outcomes.
 - Convert code that uses an `if-elseif-else` construct into a `switch-case` construct.
 
-# Prerequisites:
+## Prerequisites:
 
 - Experience using the `if-elseif-else` construct for adding branching logic
 - Experience working with variables, string interpolation, and printing output
