@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-code-blocks.method-class-namespace
+title: Code blocks define methods, classes, and namespaces
+metadata:
+  title: Code blocks define methods, classes, and namespaces
+  description: Learn how code blocks affect visibility and accessibility for higher-level structures in code.
+  ms.date: 09/26/2019
+  author: bobtabor-msft
+  ms.author: rtabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-method-class-namespace.md)]
