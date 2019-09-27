@@ -8,11 +8,14 @@ To try the code below, you need to train model and save it to a pickle file as e
 
 ```python
 from azureml.core.model import Model
+
 model = Model.register(model_path = "sklearn_regression_model.pkl",
                        model_name = "sklearn_regression_model.pkl",
                        tags = {'area': "diabetes", 'type': "regression"},
                        description = "Ridge regression model to predict diabetes",
                        workspace = ws)
+
+print('Done')
 ```
 
 In the above code, we have added `tags` and `description` to the model, to make it easily searchable. Using `tags`, you can track useful information such as the purpose for the model, the name, and version of the machine learning library used to train the model, etc. Note that tags must be alphanumeric.

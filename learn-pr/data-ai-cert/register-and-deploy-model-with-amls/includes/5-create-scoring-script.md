@@ -19,7 +19,7 @@ import json
 
 def init():
     global model
-    model_path = Model.get_model_path('sklearn_regression_model.pkl')
+    model_path = Model.get_model_path('sklearn_mnist_model.pkl')
     # deserialize the model file back into a sklearn model
     model = joblib.load(model_path)
 

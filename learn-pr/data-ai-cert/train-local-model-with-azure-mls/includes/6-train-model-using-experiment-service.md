@@ -40,6 +40,8 @@ urllib.request.urlretrieve('http://yann.lecun.com/exdb/mnist/train-images-idx3-u
 urllib.request.urlretrieve('http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz', filename='./data/train-labels.gz')
 urllib.request.urlretrieve('http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz', filename='./data/test-images.gz')
 urllib.request.urlretrieve('http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz', filename='./data/test-labels.gz')
+
+print('Done')
 ```
 
 ## Load data and create a modeling script
@@ -50,6 +52,8 @@ Depending on the location and format of the data source, there are various ways 
 #upload data by using get_default_datastore()
 ds = ws.get_default_datastore()
 ds.upload(src_dir='./data', target_path='mnist', overwrite=True, show_progress=True)
+
+print('Done')
 ```
 
 > [!IMPORTANT]
@@ -71,6 +75,8 @@ import os
 # create the folder
 folder_training_script = './trial_model_mnist'
 os.makedirs(folder_training_script, exist_ok=True)
+
+print('Done')
 ```
 
 Finally, let's prepare our model training script (note that in this script, you are defining three parameters):
@@ -86,11 +92,13 @@ Finally, let's prepare our model training script (note that in this script, you 
 import argparse
 import os
 import numpy as np
+import glob
 
-from sklearn.neighbors import KNeighborsClassifier
+from sklearn.linear_model import LogisticRegression
 from sklearn.externals import joblib
 
 from azureml.core import Run
+# from utils import load_data
 
 import gzip
 import struct
@@ -110,13 +118,14 @@ def load_data(filename, label=False):
             res = res.reshape(n_items[0], 1)
     return res
 
-# create three parameters, the location of the data files, and the maximun value of k and the interval
+
+# let user feed in 2 parameters, the dataset to mount or download, and the regularization rate of the logistic regression model
 parser = argparse.ArgumentParser()
 parser.add_argument('--data-folder', type=str, dest='data_folder', help='data folder mounting point')
-parser.add_argument('--kmax', type=int, dest='kmax', default=15, help='max k value')
-parser.add_argument('--kinterval', type=int, dest='kinterval', default=2, help='k interval')
+parser.add_argument('--regularization', type=float, dest='reg', default=0.01, help='regularization rate')
 args = parser.parse_args()
 
+###
 data_folder = os.path.join(args.data_folder, 'mnist')
 print('Data folder:', data_folder)
 
@@ -136,38 +145,23 @@ print( y_train.shape, y_test.shape, sep = '\n')
 # get hold of the current run
 run = Run.get_context()
 
-print('Train kNN models with k equals to', range(1,args.kmax,args.kinterval))
+print('Train a logistic regression model with regularization rate of', args.reg)
+clf = LogisticRegression(C=1.0/args.reg, solver="liblinear", multi_class="auto", random_state=42)
+clf.fit(X_train, y_train)
 
-# generate a wide range of k and find the best models
-# also create a list to store the evaluation result for each value of k
-kVals = range(1,args.kmax,args.kinterval)
-evaluation = []
+print('Predict the test set')
+y_hat = clf.predict(X_test)
 
-# loop over the models with different parameters to find the one with the lowest error rate
-for k in kVals:
-    model = KNeighborsClassifier(n_neighbors=k)
-    model.fit(X_train, y_train)
+# calculate accuracy on the prediction
+acc = np.average(y_hat == y_test)
+print('Accuracy is', acc)
 
-    # use the test dataset for evaluation and append the result to the evaluation list
-    score = model.score(X_test, y_test)
-    print("k=%d, accuracy=%.2f%%" % (k, score * 100))
-    evaluation.append(score)
-
-# find the value of k with the best performance
-i = int(np.argmax(evaluation))
-print("k=%d with best performance with %.2f%% accuracy given current testset" % (kVals[i], evaluation[i] * 100))
-
-model = KNeighborsClassifier(n_neighbors=kVals[i])
-
-run.log('Best_k', kVals[i])
-run.log('accuracy', evaluation[i])
+run.log('regularization rate', np.float(args.reg))
+run.log('accuracy', np.float(acc))
 
 os.makedirs('outputs', exist_ok=True)
-
-# note that the file saved in the outputs folder automatically uploads into the experiment record
-joblib.dump(value=model, filename='outputs/knn_mnist_model.pkl')
-
-print('Training script saved')
+# note file saved in the outputs folder is automatically uploaded into experiment record
+joblib.dump(value=clf, filename='outputs/sklearn_mnist_model.pkl')
 ```
 
 Notice that the last line of the training script saves the model as a pickle file in the outputs folder of the experiment workspace.  You use this pickle file later to deploy the model.
@@ -182,21 +176,20 @@ Notice that the last line of the training script saves the model as a pickle fil
 - Python packages that are necessary for training.
 
 ```python
-from azureml.train.estimator import Estimator
+from azureml.train.sklearn import SKLearn
 
 script_params = {
     '--data-folder': ds.as_mount(),
-    '--kmax': 5,
-    '--kinterval': 2
+    '--regularization': 0.5
 }
 
-#import the Scikit-learn package 
-est = Estimator(source_directory=folder_training_script,
-                script_params=script_params,
-                compute_target=compute_target,
-                entry_script='train.py',
-                conda_packages=['scikit-learn'])
+est = SKLearn(source_directory=folder_training_script,
+              script_params=script_params,
+              compute_target=compute_target,
+              conda_packages=['scikit-learn'], 
+              entry_script='train.py')
 
+print('Done')
 ```
 
 ## Submit the model, monitor the run, and retrieve the results
@@ -207,7 +200,8 @@ We need to create an Experiment to run the model training in.
 from azureml.core import Experiment
 
 #Create an experiment
-exp = Experiment(workspace = ws, name = "amls-learn-experiment")
+experiment = Experiment(workspace = ws, name = "amls-learn-experimentnew5")
+
 print('Experiment created')
 ```
 

@@ -1,18 +1,33 @@
+You need to register the trained model which the code below will do.
+
+```python
+# register model
+model = run.register_model(model_name='sklearn_mnist_model.pkl',
+                           model_path='outputs/sklearn_mnist_model.pkl')
+
+print(model.name, model.id, model.version, sep='\t')
+```
+
 The third step is preparing the container image. The following Python code uses the Azure ML SDK to create the image.
 
 ```python
 from azureml.core.image import Image, ContainerImage
+
 image_config = ContainerImage.image_configuration(runtime= "python",
                                  execution_script="score.py",
                                  conda_file="myenv.yml",
-                                 tags = {'area': "diabetes", 'type': "regression"},
-                                 description = "Image with ridge regression model")
+                                 tags = {'data': "MNIST", 'type': "sklearn"},
+                                 description = "Image for sklearn model")
+
 image = Image.create(name = "myimage1",
                      # this is the model object 
                      models = [model],
                      image_config = image_config, 
                      workspace = ws)
+
 image.wait_for_creation(show_output = True)
+
+print('Done')
 ```
 
 After the code is executed, you can view the images in the Azure Machine Learning service portal:

@@ -4,22 +4,30 @@ Now that we have an image that contains our trained model, we can use Azure Cont
 
 ```python
 from azureml.core.webservice import AciWebservice
+
 aciconfig = AciWebservice.deploy_configuration(cpu_cores = 1, 
                                           memory_gb = 1, 
-                                          tags = {"data": "mnist", "type": "classification"}, 
+                                          tags = {"data": "mnist", "type": "sklearn"}, 
                                           description = 'Handwriting recognition')
+
+print('Done')
 ```
 
 2. In a prior unit, you created an image and stored it in an object named image.  To deploy the image, you can use code similar to the code below:
 
 ```python
-from azureml.core.webservice import Webservice
-service_name = 'aci-mnist-13'
+rom azureml.core.webservice import Webservice
+
+service_name = 'aci-mnist-1'
+
 service = Webservice.deploy_from_image(deployment_config = aciconfig,
                                             image = image,
                                             name = service_name,
                                             workspace = ws)
+
 service.wait_for_deployment(show_output = True)
+
+print('Done')
 ```
 
 It takes around 3-4 minutes for the web service to deploy. Once it's deployed, we can call it from a client application.
