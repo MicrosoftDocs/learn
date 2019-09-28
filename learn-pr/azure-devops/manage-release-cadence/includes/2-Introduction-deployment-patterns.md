@@ -21,7 +21,7 @@ Here are the possibilities that Azure DevOps gives us:
 
 A blue-green deployment reduces risk and downtime by running two identical environments. These environments are called blue and green. At any time, only one of the environments is live. Let's say blue is live. As we prepare a new release, we would do our final tests in the green environment. Once the software is working in the green environment, we would just switch the router so that all incoming requests go to the green environment. Blue-green deployment also gives us a fast way to do a rollback. If anything goes wrong we simply switch the router back to the blue environment.
 
-![](../media/2-blue-green-deployment-2.png)
+![](../media/2-blue-green-deployment.png)
 
 ## Canary releases
 
@@ -55,8 +55,7 @@ Progressive exposure deployment is sometimes called ring-based deployment. It's 
 
 ## Zero-downtime deployment
 
-![Diagram of applications swapping IP addresses](../media/2-blue-green-deployment.png)
-
+![Diagram of applications swapping IP addresses](../media/2-zero-downtime-deployment.png)
 
 ## Implementing the Blue-Green deployment
 
