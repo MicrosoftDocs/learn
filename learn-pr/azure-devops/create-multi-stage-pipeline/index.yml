@@ -36,7 +36,7 @@ products:
 - azure-devops
 units:
 - learn.azdo.create-multi-stage-pipeline.1-introduction
-- learn.azdo.create-multi-stage-pipeline.2-design-release-management-workflow
+- learn.azdo.create-multi-stage-pipeline.2-design-the-pipeline
 - learn.azdo.create-multi-stage-pipeline.3-set-up-environment
 - learn.azdo.create-multi-stage-pipeline.4-promote-dev
 - learn.azdo.create-multi-stage-pipeline.5-promote-test
