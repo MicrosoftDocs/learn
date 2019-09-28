@@ -81,7 +81,7 @@ This option deletes your Azure DevOps project, including what's on Azure Boards 
 
 To delete the project:
 
-1. From Azure DevOps, navigate to your project. Earlier, we recommended that you name this project **Space Game - web - Release workflow**.
+1. From Azure DevOps, navigate to your project. Earlier, we recommended that you name this project **Space Game - web - Multi-stage**.
 1. Click the gear icon next to the project name.
 
     The icon might not appear until you move your mouse over that area.
