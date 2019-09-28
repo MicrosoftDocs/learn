@@ -1,8 +1,10 @@
-In this part, you follow the Tailspin web team as they define their release pipeline for the _Space Game_ web site.
+In this part, you follow the Tailspin web team as they define their release pipeline for the _Space Game_ website.
 
 When you plan a release pipeline, you usually begin by identifying the stages, or major divisions of that pipeline. Each stage typically maps to an environment. For example, in the previous module, Andy and Mara's basic pipeline had a _Deploy_ stage which mapped to an Azure App Service instance.
 
-After you define which stages you need, you need to consider how changes are promoted from one stage to the next. Each stage can define its own success criteria that must be met before the build can move to the next stage. Azure Pipelines provides several ways to help you control how and when changes move through the pipeline. As a whole, these different approaches are used for _release_ _management_.
+In this module, you _promote_ changes from one stage to the next. Within each stage, you _deploy_ the _Space Game_ website to the environment that's associated with that stage.
+
+After you define which stages you need, you need to consider how changes are promoted from one stage to the next. Each stage can define its own success criteria that must be met before the build can move to the next stage. Azure Pipelines provides several ways to help you control how and when changes move through the pipeline. As a whole, these different approaches are used for _release management_.
 
 In this section, you'll:
 
@@ -15,15 +17,15 @@ In this section, you'll:
 
 The entire Tailspin web team is gathered together. In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), the team planned their tasks for the current sprint. Each task relates to building their release pipeline for the _Space Game_ web site.
 
-Recall that the team decided on these three tasks:
+Recall that the team decided on these five tasks for their sprint:
 
-- **Define a release workflow**
+- **Create a multi-stage pipeline**
 - **Connect the web app to a database**
 - **Automate quality tests**
 - **Automate performance tests**
 - **Improve release cadence**
 
-The team meets to talk about the first task, **Define a release workflow**. Defining the pipeline first will help the team to move from their basic proof of concept to a more complete release pipeline that includes additional stages, quality checks and approvals.
+The team meets to talk about the first task, **Create a multi-stage pipeline**. Defining the pipeline first will help the team to move from their basic proof of concept to a more complete release pipeline that includes additional stages, quality checks, and approvals.
 
 Amita and Tim are watching Andy and Mara demo the release pipeline a second time. They see that the artifact gets built and installed on App Service.
 

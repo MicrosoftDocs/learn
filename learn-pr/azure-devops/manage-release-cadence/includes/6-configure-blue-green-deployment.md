@@ -1,4 +1,4 @@
-In [Manage your release workflow with Azure Pipelines](/learn/modules/manage-release-workflow?azure-portal=true), you built a traditional deployment pipeline that deploys a web application to Azure App Service on a development environment, a test environment, and a pre-production staging environment. Here we will build on that workflow to add the *Blue Green* deployment pattern.
+In [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true), you built a traditional deployment pipeline that deploys a web application to Azure App Service on a development environment, a test environment, and a pre-production staging environment. Here we will build on that workflow to add the *Blue Green* deployment pattern.
 
 In this exercise you:
 

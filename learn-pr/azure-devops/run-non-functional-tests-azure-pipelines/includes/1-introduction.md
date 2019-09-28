@@ -1,4 +1,4 @@
-In [Manage your release workflow with Azure Pipelines](/learn/modules/manage-release-workflow?azure-portal=true), you helped the Tailspin web team design and build a release management workflow. This workflow enables the team to move changes through a series of stages, such as the dev stage and the test stage, all the way out to a production environment that's available to your users.
+In [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true), you helped the Tailspin web team design and build a release management workflow. This workflow enables the team to move changes through a series of stages, such as the dev stage and the test stage, all the way out to a production environment that's available to your users.
 
 **NOTE--I thought it was just through Staging (pre-production) because they can't move to production without management sayso**
 

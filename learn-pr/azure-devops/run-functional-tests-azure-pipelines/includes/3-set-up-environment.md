@@ -79,7 +79,7 @@ At the end of this module, you move the card to the **Done** column after you've
 
 Here, you create the environments that define the pipeline stages. You create one App Service instance that corresponds to each stage: _Dev_, _Test_, and _Staging_.
 
-In [Manage your release workflow with Azure Pipelines](/learn/modules/manage-release-workflow?azure-portal=true), you used the Azure command-line interface (CLI) to create your App Service instances. Here, you'll do the same.
+In [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true), you used the Azure command-line interface (CLI) to create your App Service instances. Here, you'll do the same.
 
 > [!IMPORTANT]
 > Remember that you need your own Azure subscription to complete the exercises in this module.
@@ -199,7 +199,7 @@ Here, you create the App Service instances for the three stages you'll deploy to
 
 ## Create pipeline variables in Azure Pipelines
 
-In [Manage your release workflow with Azure Pipelines](/learn/modules/manage-release-workflow?azure-portal=true), you added one variable for each of the App Service instances that corresponds to the _Dev_, _Test_, and _Staging_ stages in your pipeline. Here, you do the same.
+In [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true), you added one variable for each of the App Service instances that corresponds to the _Dev_, _Test_, and _Staging_ stages in your pipeline. Here, you do the same.
 
 Each stage in your pipeline configuration uses these variables to identify which App Service instance to deploy to.
 

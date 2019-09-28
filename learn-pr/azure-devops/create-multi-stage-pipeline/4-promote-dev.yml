@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.create-multi-stage-pipeline.4-promote-dev
+title: Exercise - Promote to the Dev stage
+metadata:
+  title: Exercise - Promote to the Dev stage
+  description: Promote to the Dev stage
+  ms.date: 09/01/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-promote-dev.md)]

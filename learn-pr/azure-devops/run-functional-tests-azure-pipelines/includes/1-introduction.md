@@ -1,6 +1,6 @@
 In this module, you'll add functional tests &mdash; tests that verify an application's behavior &mdash; to the pipeline.
 
-In [Manage your release workflow with Azure Pipelines](/learn/modules/manage-release-workflow?azure-portal=true), you helped the Tailspin web team design and build a release management workflow. This workflow enables the team to move changes through a series of stages, such as the _Dev_ stage and the _Test_ stage, all the way out to a _Staging_ environment that resembles production.
+In [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true), you helped the Tailspin web team design and build a release management workflow. This workflow enables the team to move changes through a series of stages, such as the _Dev_ stage and the _Test_ stage, all the way out to a _Staging_ environment that resembles production.
 
 The stages that you and the team defined provide the overall shape of your pipeline, but there's more that you can add to each stage. For example, in the _Test_ stage, Amita still tests the web application manually as she always has. When she's satisfied, she manually promotes the application to _Staging_, where management can review the new features and decide if they want to make the release publicly available.
 

@@ -34,16 +34,16 @@ To clean up your resource group:
 
 ## Move the work item to Done
 
-Here, you'll move the work item you assigned to yourself earlier in this module, **Define a release workflow**, to the **Done** column.
+Here, you'll move the work item you assigned to yourself earlier in this module, **Create a multi-stage pipeline**, to the **Done** column.
 
-In practice, the definition of "Done" often means working software in the hands of your users. For learning purposes, here you'll mark this work as complete because the goal for the Tailspin team is to define a release workflow they can use to deliver new features.
+In practice, the definition of "Done" often means working software in the hands of your users. For learning purposes, here you'll mark this work as complete because the goal for the Tailspin team is to define a complete multi-stage pipeline that they can use to deliver new features.
 
 At the end of each sprint, or work iteration, you and your team might hold a retrospective meeting, where you share the work you completed, what went well in the sprint, and what could be improved.
 
 To complete the work item:
 
 1. From Azure DevOps, navigate to **Boards** and then select **Boards** from the menu.
-1. Move the **Define a release workflow** work item from the **Doing** to the **Done** column.
+1. Move the **Create a multi-stage pipeline** work item from the **Doing** to the **Done** column.
 
     ![Azure Boards showing the card in the Done column](../media/6-azure-boards-wi1-done.png)
 

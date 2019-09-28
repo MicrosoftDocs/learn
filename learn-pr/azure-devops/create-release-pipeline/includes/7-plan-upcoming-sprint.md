@@ -18,7 +18,7 @@ Amita points to the value stream map, which you originally saw in the [Assess yo
 
 The team does some brainstorming. They come up with these tasks:
 
-- **Define a release workflow**
+- **Create a multi-stage pipeline**
 - **Connect the web app to a database**
 - **Automate quality tests**
 - **Automate performance tests**

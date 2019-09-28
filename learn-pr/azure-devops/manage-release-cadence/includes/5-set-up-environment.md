@@ -1,4 +1,4 @@
-Here you make sure you are up to date with where the team left off before you add Blue Green deployment to the pipeline. This unit will get you to the place you left off in the [Manage your release workflow with Azure Pipelines](/learn/modules/manage-release-workflow?azure-portal=true) module.
+Here you make sure you are up to date with where the team left off before you add Blue Green deployment to the pipeline. This unit will get you to the place you left off in the [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true) module.
 
 The steps are:
 
@@ -129,7 +129,7 @@ At the end of this module, you'll move the card to the **Done** column after you
 
 ## Create the initial build pipeline
 
-Here we will make sure that we have the same pipeline we left off with in the [Manage your release workflow with Azure Pipelines](/learn/modules/manage-release-workflow?azure-portal=true) module. In that module, we set up our pipeline to build, then deploy to the *Dev* environment, then to *Test*, and finally to *Staging*. Deploying to Staging from Test was done manually. For brevity here, we will automate the Staging deployment task.
+Here we will make sure that we have the same pipeline we left off with in the [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true) module. In that module, we set up our pipeline to build, then deploy to the *Dev* environment, then to *Test*, and finally to *Staging*. Deploying to Staging from Test was done manually. For brevity here, we will automate the Staging deployment task.
 
 ### Turn on multistage pipelines in Azure DevOps
 

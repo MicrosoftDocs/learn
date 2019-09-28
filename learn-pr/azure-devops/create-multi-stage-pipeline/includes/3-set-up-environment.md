@@ -43,7 +43,7 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 1. Select **Navigate to project** to go to your project in Azure DevOps.
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/learn/modules/manage-release-workflow/7-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
+> The [Clean up your Azure DevOps environment](/learn/modules/create-multi-stage-pipeline/7-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
 
 ## Move the work item to Doing
 
@@ -58,7 +58,7 @@ Recall that the team settled on these three top issues for the current sprint.
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
 
-Here you move the first item, **Define a release workflow** to the **Doing** column and assign yourself to the work item. **Define a release workflow** relates to defining a release management workflow for the _Space Game_ web site.
+Here you move the first item, **Create a multi-stage pipeline** to the **Doing** column and assign yourself to the work item. **Create a multi-stage pipeline** relates to defining each of the stages that are needed to deploy the _Space Game_ web site.
 
 To set up the work item:
 
@@ -66,7 +66,7 @@ To set up the work item:
 
     ![Azure DevOps showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
 
-1. From the **Define a release workflow** work item, click the down arrow at the bottom of the card. Then assign the work item to yourself.
+1. From the **Create a multi-stage pipeline** work item, click the down arrow at the bottom of the card. Then assign the work item to yourself.
 
     ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
 1. Move the work item from the **To Do** to the **Doing** column.
@@ -225,7 +225,7 @@ To do so, you:
     ![The default home page on Azure App Service](../../shared/media/app-service-default.png)
 
 > [!IMPORTANT]
-> Remember, the [Clean up your Azure DevOps environment](/learn/modules/manage-release-workflow/7-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
+> Remember, the [Clean up your Azure DevOps environment](/learn/modules/create-multi-stage-pipeline/7-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
 
 ## Create pipeline variables in Azure Pipelines
 

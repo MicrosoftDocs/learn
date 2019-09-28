@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.create-multi-stage-pipeline.6-promote-staging
+title: Exercise - Promote to Staging
+metadata:
+  title: Exercise - Promote to Staging
+  description: Promote to Staging
+  ms.date: 09/01/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-promote-staging.md)]

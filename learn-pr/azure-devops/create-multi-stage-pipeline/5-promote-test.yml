@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.create-multi-stage-pipeline.5-promote-test
+title: Exercise - Promote to the Test stage
+metadata:
+  title: Exercise - Promote to the Test stage
+  description: Promote to the Test stage
+  ms.date: 09/01/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-promote-test.md)]
