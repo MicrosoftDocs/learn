@@ -43,7 +43,7 @@ When querying the columns, database administrators will still see the original v
 
 Let's take a look at how this would work in our _marketplaceDb_ database.
 
-1. While still in the portal on the _marketplaceDb_ database panel, in the **Security** section in the left menu select **Dyanmic Data Masking**.
+1. While still in the portal on the _marketplaceDb_ database panel, in the **Security** section in the left menu select **Dynamic Data Masking**.
 
     The Masking rules screen shows a list of existing dynamic data masks, and recommendations for columns that should potentially have a dynamic data mask applied.
 
