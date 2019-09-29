@@ -38,7 +38,7 @@ _Non-functional tests_ check characteristics like performance and reliability. A
 
 There are many kinds of functional tests. Each kind varies by the functionality you need to test for and the time (or effort) that's typically required to run it.
 
-Here are some of the more popular kinds of functional tests software teams run.
+Here are some of the more popular kinds of functional tests you can run.
 
 ### Smoke testing
 
@@ -66,7 +66,7 @@ Combining unit and integration tests helps you create a layered approach to your
 
 A _regression_ occurs when existing behavior changes or breaks when a feature is either added or changed. _Regression testing_ helps determine whether code, configuration, or other changes affect the software's overall behavior.
 
-Regression testing is important because a change in one component can change the behavior of another. For example, say you optimize a database for write performance. Read performance of that database from another component might drop in ways you did not expect. The regression is the database's drop in read performance.
+Regression testing is important because a change in one component can affect the behavior of another. For example, say you optimize a database for write performance. Read performance of that database from another component might drop in ways you did not expect. The regression is the database's drop in read performance.
 
 There are various types of regression testing strategies. These strategies typically vary by the number of tests that are run to verify that a new feature or bug fix doesn't break existing functionality. However, when tests are automated, regression testing might simply involve running all unit and integration tests each time the software undergoes a change.
 
@@ -100,7 +100,7 @@ _User acceptance testing_, like usability testing, focuses on an application's b
 
 Depending on the software, end users might be asked to complete specific tasks or they might be allowed to explore the software without any specific guidelines. For custom software, UAT typically happens directly with the client. For more general-purpose software, teams might run "beta" tests where select users from different geographic regions or users with certain interests are given early access to the software.
 
-Feedback from testers can be direct or indirect. Direct feedback might come in the form of verbatim comments. Indirect feedback can come in the form of measuring testers' body language, eye movements, or the time it takes them to complete certain tasks.
+Feedback from testers can be direct or indirect. Direct feedback might come in the form of verbatim comments. Indirect feedback can come in the form of measuring testers' body language or eye movements, or the time it takes them to complete certain tasks.
 
 **Mara:** I know we covered this already, but just to emphasize the importance of writing tests, here's a short video where Abel Wang, Cloud Advocate at Microsoft, explains how to ensure you maintain quality in your DevOps plan.
 
@@ -114,7 +114,7 @@ Feedback from testers can be direct or indirect. Direct feedback might come in t
 
 **Andy:** We already have working unit tests, and we're not yet ready to perform user acceptance testing. Based on what I hear, I think we should focus on UI testing. Right now, it's the slowest part of our process. Amita, do you agree?
 
-**Amita:** Yes, I do agree. We still have some time left. Andy or Mara, do either of you want to help me plan an automated UI test?
+**Amita:** Yes, I do agree. We still have some time left in this meeting. Andy or Mara, do either of you want to help me plan an automated UI test?
 
 **Mara:** Absolutely. But let's get a few preliminaries out of the way. I'd like to discuss what tool should we use and how we'll run the tests.
 
@@ -128,7 +128,7 @@ Feedback from testers can be direct or indirect. Direct feedback might come in t
 
 WinAppDriver helps you automate UI tests on Windows apps, such as those written with Universal Windows Platform (UWP) or Windows Forms (WinForms). We need a solution that works in the browser.
 
-Selenium is a portable open source software-testing framework for web applications. It runs on most operating systems and it supports all modern browsers. It also supports several programming languages for writing tests, including C#. In fact, there are NuGet packages that make it easy to run Selenium as NUnit tests. We already use NUnit for our unit tests.
+Selenium is a portable open source software-testing framework for web applications. It runs on most operating systems and it supports all modern browsers. You can write Selenium tests in a number of programming languages, including C#. In fact, there are NuGet packages that make it easy to run Selenium as NUnit tests. We already use NUnit for our unit tests.
 
 SpecFlow is for .NET projects, and is inspired by another tool called Cucumber. Both SpecFlow and Cucumber support what's called behavior-driven development (BDD). BDD uses a natural language parser called Gherkin to help both technical and non-technical team members define business rules and requirements. You can combine either SpecFlow and Cucumber with Selenium to build UI tests.
 

@@ -2,9 +2,9 @@ Great work! In this module, we defined a _functional test_ as a test that verifi
 
 The Tailspin team chose one kind of functional tests to automate first: UI tests. They chose UI tests that Amita needed to run manually, which were tedious and time-consuming. By automating these tests, Amita can now focus more on usability testing, which is usually best performed by humans.
 
-When incorporating functional tests in your pipeline, focus on the kinds of tests that matter most. For example, if your application distributes work among other components, such as you'll find in a typical multi-tier e-commerce system or a video stream service, you might write integration tests that verify that all components work together to form a complete system.
+When incorporating functional tests in your pipeline, focus on the kinds of tests that matter most. For example, if your application distributes work among other components, you might write integration tests that verify that all components work together to form a complete system.
 
-In the next module, you'll 
+In the next module, you'll switch to another kind of important testing: _non-functional testing_. There, the team defines non-functional testing and chooses one kind of performance test to focus on.
 
 ## Learn more
 
@@ -20,7 +20,7 @@ In this module, you worked with NUnit tests. If you're interested in unit testin
 
 ### Learn about parallel jobs
 
-You set up UI tests to run on Windows. But you can also run your tests on other platforms, such as macOS and Linux. To speed up the process, you can run these jobs in parallel. See [Jobs](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml&azure-portal=true) and [Parallel jobs
+You set up UI tests that run on Windows. But you can also run your tests on other platforms, such as macOS and Linux. To speed up the process, you can run all of these jobs in parallel. See [Jobs](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml&azure-portal=true) and [Parallel jobs
 ](https://docs.microsoft.com/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&azure-portal=true) to learn more.
 
 ### Learn more about Selenium tests

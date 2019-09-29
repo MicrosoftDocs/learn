@@ -253,7 +253,7 @@ To add the variables:
     Be sure to replace each example value with the App Service instance that corresponds to your environment.
 
     > [!IMPORTANT]
-    > Make sure you set the name of the App Service instance, and not its URL. In this example, you would enter **tailspin-space-game-web-dev-1234** and not **tailspin-space-game-web-dev-1234.azurewebsites.net**.
+    > Make sure you set the name of the App Service instance, and not its hostname. In this example, you would enter **tailspin-space-game-web-dev-1234** and not **tailspin-space-game-web-dev-1234.azurewebsites.net**.
 
 1. Select **Save** near the top of the page to save your variable to the pipeline.
 

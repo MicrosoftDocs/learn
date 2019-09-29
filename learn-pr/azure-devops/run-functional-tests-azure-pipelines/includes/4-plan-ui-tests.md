@@ -55,6 +55,9 @@ We'll get the XPath expression for each button you click as well as the modal wi
 
 Let's start by getting the XPath expression for the **Download game** button.
 
+> [!NOTE]
+> You can follow these steps if you'd like to, or just read along. We'll provide all of the XPath expressions you need in the next section, when you run the automated tests.
+
 1. In Google Chrome, go to the _Space Game_ home page.
 1. Right click the **Download game** button, then select **Inspect**.
 
@@ -69,9 +72,6 @@ Let's start by getting the XPath expression for the **Download game** button.
 
 1. Click the **Download game** button, then repeat steps 2-4 to get the XPath expression for the modal window that appears.
 1. Repeat the process for the four game screens and the top player on the leaderboard.
-
-    > [!NOTE]
-    > You don't need to actually repeat the process. We'll provide all of the XPath expressions you need in the next section, when you run the automated tests.
 
 Amita opens Microsoft Word and adds a table that contains the XPath expression for each link and the XPath expression for the corresponding modal window. To keep things basic, she records:
 

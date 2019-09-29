@@ -16,7 +16,7 @@ string url = Environment.GetEnvironmentVariable("SITE_URL");
 driver.Navigate().GoToUrl(url + "/");
 ```
 
-Because you haven't yet deployed the _Space Game_ website to your App Service environment, you can use the site that Microsoft hosts.
+Because you haven't yet deployed the _Space Game_ website to your App Service environment, you'll use the site that Microsoft hosts to run the tests locally.
 
 To run the tests locally:
 
@@ -82,7 +82,7 @@ In this section, you modify the pipeline configuration to run your Selenium UI t
 1. In Visual Studio Code, open the *azure-pipelines.yml* file. Then modify the file like this:
 
     > [!TIP]
-    > This file contains a few changes, so we recommend that replace the entire file with what you see here.
+    > This file contains a few changes, so we recommend that you replace the entire file with what you see here.
 
     [!code-yml[](code/6-azure-pipelines.yml?highlight=3,57,110-134)]
 
@@ -93,12 +93,12 @@ In this section, you modify the pipeline configuration to run your Selenium UI t
 
         [!code-yml[](code/6-azure-pipelines-publish.yml?highlight=5)]
 
-        Doing so would generate two build artifacts: the _Space Game_ website package and the compiled UI tests. We build the UI tests during the _Build_ stage to ensure they will compile during the _Test_ stage. But we don't need to publish the tests because we build them again during the _Test_ stage when they are run.
+        Doing so would generate two build artifacts: the _Space Game_ website package and the compiled UI tests. We build the UI tests during the _Build_ stage to ensure they will compile during the _Test_ stage. But we don't need to publish the compiled test code because we build it again during the _Test_ stage when the tests are run.
     * The _Test_ stage includes a second job that builds and runs the tests. This job resembles the one you used in the [Run quality tests in your build pipeline by using Azure Pipelines](https://docs.microsoft.com/learn/modules/run-quality-tests-build-pipeline/4-add-unit-tests?azure-portal=true) module, where you ran NUnit tests that verify the leaderboard's filtering functionality.
 
         Recall that a _deployment job_ is a special type of job that plays an important role in your deployment stages. The second job is a normal job that runs the Selenium tests on a Windows Server 2019 agent. Although we use a Linux agent to build the application, here we use a Windows agent to run the UI tests because Amita performs her manual tests on Windows, which is where the majority of site traffic comes from.
 
-        The `RunUITests` job depends on the `Deploy` job to ensure that the jobs are run in the correct order. You need to deploy the website to App Service before you can run the UI tests. If you don't specify this dependency, jobs within a stage can run in any order or in parallel.
+        The `RunUITests` job depends on the `Deploy` job to ensure that the jobs are run in the correct order. You need to deploy the website to App Service before you can run the UI tests. If you don't specify this dependency, jobs within a stage can run in any order or run in parallel.
 
 1. In the integrated terminal, add **azure-pipelines.yml** to the index, commit the changes, and push the branch up to GitHub.
 
@@ -110,22 +110,22 @@ In this section, you modify the pipeline configuration to run your Selenium UI t
 
 ## Watch Azure Pipelines run the tests
 
-Here you watch the pipeline run, including the Selenium UI tests during the _Test_ stage.
+Here you watch the pipeline run, including the Selenium UI tests, during the _Test_ stage.
 
 1. In Azure Pipelines, go to the build and trace the build as it runs.
 
-    During the run, you see the 
+    During the build, you see the automated tests run after the website is deployed.
 
     ![](../media/6-stages-test-running.png)
 
-1. After the build completes, press the back button to return to the summary page.
+1. After the build completes, go to the summary page.
 
     ![](../media/6-stages-complete.png)
 
     You see that the deployment and the UI tests completed successfully.
 1. Near the top of the page, note the summary.
 
-    You see that the build artifact for the _Space Game_ website is published just like always. Also note **Tests** section, which shows that the Selenium tests have passed.
+    You see that the build artifact for the _Space Game_ website is published just like always. Also note the **Tests** section, which shows that the Selenium tests have passed.
 
     ![](../media/6-build-summary-tests.png)
 
@@ -135,8 +135,8 @@ Here you watch the pipeline run, including the Selenium UI tests during the _Tes
 
     ![](../media/6-test-summary.png)
 
-    If any test were to fail, you would see detailed results of the failure. From there, you can investigate the source of the failure, fix it locally, and then push up the necessary changes to make them pass in the pipeline.
+    If any test were to fail, you would see detailed results of the failure. From there, you can investigate the source of the failure, fix it locally, and then push up the necessary changes to make the tests pass in the pipeline.
 
 **Amita:** This is exciting! I now have UI tests that I can expand on and run in the pipeline. This will really save us time in the long run. Best of all, this gives us added confidence in our code quality.
 
-**Andy:** I'm glad. Tests you find yourself running repeatedly are good candidates for automation. Good luck adding more. If you get stuck or need a code reviewer, you know where to find me.
+**Andy:** I'm glad. Tests that you find yourself running repeatedly are good candidates for automation. Good luck adding more. If you get stuck or need a code reviewer, you know where to find me.
