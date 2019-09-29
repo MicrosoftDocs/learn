@@ -108,6 +108,7 @@ stages:
               appName: '$(WebAppNameTest)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
   - job: RunUITests
+    dependsOn: Deploy
     displayName: 'Run UI tests'
     pool:
       vmImage: 'windows-2019'
