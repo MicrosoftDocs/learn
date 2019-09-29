@@ -133,7 +133,7 @@ stages:
         Package: $(System.ArtifactsDirectory)/**/*.zip
 
 - stage: 'DeployStaging'
-  displayName: 'Deploy to staging environment'
+  displayName: 'Deploy to the staging environment'
   dependsOn: 'DeployDev'
   condition: and(succeeded(), eq(variables['Build.Reason'], 'Schedule'))
   jobs:

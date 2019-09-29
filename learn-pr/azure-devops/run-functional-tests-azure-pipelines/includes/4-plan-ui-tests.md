@@ -12,7 +12,7 @@ I think the best way to start is to automate something you already do all the ti
 
 Amita takes a deep breath.
 
-**Amita:** Let's automate the modal window tests. When I click on certain things, like the **Download game** button, for example, I want to verify that the correct modal window appears. Then, when I click away from the modal window, I want to verify that the modal window disappears and that the main window is again active.
+**Amita:** Let's automate the modal window tests. When I click on certain things, like the **Download game** button for example, I want to verify that the correct modal window appears. Then, when I click away from the modal window, I want to verify that the modal window disappears and that the main window is again active.
 
 **Andy:** That sounds like a great place to start. You run the test and I'll write down the procedure.
 
@@ -47,7 +47,7 @@ If I had the time, I would run everything again on macOS and Linux, just to ensu
 
 ## Get the XPath expressions for the HTML elements
 
-Here, you follow along with Amita and Andy as they collect the XPath expressions for the buttons that Amita clicks and the resulting modal windows. XPath is a query language that lets you retrieve information about an XML element, and also works with HTML.
+Here, you follow along with Amita and Andy as they collect the XPath expressions for the buttons that Amita clicks and the resulting modal windows. XPath is a query language that lets you locate an XML element and retrieve information about it. XPath also works with HTML.
 
 **Andy:** OK. I think this is enough to get started with. Having just a few tests running in the pipeline will give you a place to add more. I can see why these tests take so long and can be so frustrating. You're going to love automating it, I promise. Here's what we'll do.
 
@@ -73,6 +73,20 @@ Let's start by getting the XPath expression for the **Download game** button.
     > [!NOTE]
     > You don't need to actually repeat the process. We'll provide all of the XPath expressions you need in the next section, when you run the automated tests.
 
+Amita opens Microsoft Word and adds a table that contains the XPath expression for each link and the XPath expression for the corresponding modal window. To keep things basic, she records:
+
+* The **Download game** button.
+* Just one of the game screens.
+* The top player on the leaderboard.
+
+Here's what her table looks like:
+
+| Feature                  | Link XPath                                                             | Modal XPath                            |
+|--------------------------|------------------------------------------------------------------------|----------------------------------------|
+| **Download game** button | `/html/body/div/div/section[2]/div[2]/a`                               | `//*[@id=\"pretend-modal\"]/div/div`   |
+| First game screen        | `/html/body/div/div/section[3]/div/ul/li[1]/a`                         | `/html/body/div[1]/div/div[2]`         |
+| Top leaderboard player   | `/html/body/div/div/section[4]/div/div/div[1]/div[2]/div[2]/div/a/div` | `//*[@id=\"profile-modal-1\"]/div/div` |
+
 ## Plan the automated tests
 
 **Amita:** OK. We have the XPath expression for each button I click and the resulting modal window. What's next?
@@ -81,7 +95,7 @@ Let's start by getting the XPath expression for the **Download game** button.
 
 1. Create an NUnit project that includes Selenium. The project will exist along with the source code for the app.
 1. Write a test case that uses automation to click the specified link and that verifies that the expected modal window appears.
-1. Use the XPath data we saved to specify the parameters to the test case method. This creates a series of tests.
+1. Use the XPath data we saved to specify the parameters to the test case method. This creates a sequence, or series, of tests.
 1. Configure the tests to run on Chrome, Firefox and Edge. This creates a matrix of tests.
 1. Run the tests and watch each web browser come up automatically.
 1. Watch as Selenium automatically runs through the series of tests for each browser.

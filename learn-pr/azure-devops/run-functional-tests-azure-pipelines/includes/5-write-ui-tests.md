@@ -1,54 +1,8 @@
-SCRAPS
-
-Take a moment to familiarize yourself with its contents. If you've written NUnit tests or have gone through the [Run quality tests in your build pipeline using Azure Pipelines](/learn/modules/run-quality-tests-build-pipeline?azure-portal=true) module, the format of this test code will look familiar to you.
-
-NOTE: We run IE because support for it is already built-in 
-Point to doc with all the browsers?
-
-Define NUnit (knowledge unit?)
-
-CALL OUT WHAT DRIVERS ARE ON THE BUILD AGENT
-
-CALL OUT IE INSTEAD OF EDGE
-
-Verify CSS class - show screenshot?
-
-SHOW XPATH FORMAT like https://www.guru99.com/xpath-selenium.html
-
-**Amita:** Until we had the pipeline, I used to download the build and install it on my server but now I can use the CD pipeline test environment.
-
-TODO: Does Andy say they'll help maintain the tests, for when they change the UI?
-
-TODO: Also, talk about how we'll skip the process of creating the Nunit tests. In practice, you would choose a UI testing framework that fits with the type of app you're building and the language you use to build it.
-"Remember, the focus is how to run UI tests in the pipeline, not how to use any specific framework or language". Therefore, for learning purposes, we'll skip. ..."
-
-TODO: Change XPath modal window to CSS class name!
-
----
-
----
-
-Roberta: I did all the prep work, I just need to come back and set the procedures. I'll follow along with the narrative from the previous module.
-
-* Pull down branch
-* Run Selenium tests locally (head vs headless)
-* Modify pipeline to run tests on Windows agent
-* Push and run through pipeline
-* See results
-
-* Fetch branch with starter build config
-  * This branch will include an additional .csproj that contains Selenium tests
-  * [Reference](https://docs.microsoft.com/azure/devops/pipelines/test/continuous-test-selenium?view=azure-devops)
-* Change (or add) deployment stage to **Hosted VS2017**.
-* `git commit && git push` - watch it build, deploy, & **run tests** in the pipeline.
-* Verify the results in the pipeline.
-* Manually promote the build to Preprod.
-
-Amita is impressed and feels a bit excited about writing code to control her web browser. Perhaps Mara shows her some resources (tutorials, reference documentation) so Amita can continue writing tests. Amita can then write and verify additional tests and submit them to GitHub and have them run through the pipeline just like the developers.
-
----
-
 In this section, you run Selenium tests that verify the UI behaviors that Amita described.
+
+Although Amita normally runs her tests on Chrome, Firefox, and Edge, you'll set up tests that run on Chrome, Firefox, and Internet Explorer. For learning purposes, we choose these browsers because the Microsoft-hosted agent you'll use comes preconfigured to work with them. It does not yet provide support for Edge.
+
+You can checkout [Use a Microsoft-hosted agent](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops&azure-portal=true#use-a-microsoft-hosted-agent) to see what kinds of agents Microsoft hosts and their capabilities. In practice, you can install additional software on your agent or provide your own agent that has the software you need preinstalled.
 
 Here's how you'll run the tests:
 
@@ -60,19 +14,18 @@ Here's how you'll run the tests:
 > [!NOTE]
 > For this part, you don't need to have Chrome, Firefox, and Internet Explorer installed locally. The tests will run only on the browsers you have installed. In practice, you can install the web browsers you want to test on to help ensure that the tests you write will succeed in the pipeline.
 
-
 ## Fetch the branch from GitHub
 
-In this section, you fetch the `selenium-tests` branch from GitHub and check out, or switch to, that branch.
+In this section, you fetch the `selenium` branch from GitHub and check out, or switch to, that branch.
 
 This branch contains the _Space Game_ project that you worked with in previous modules and an Azure Pipelines configuration to start with.
 
 1. In Visual Studio Code, open the integrated terminal.
-1. To download a branch named `selenium-tests` from the Microsoft repository and switch to that branch, run the following `git fetch` and `git checkout` commands:
+1. To download a branch named `selenium` from the Microsoft repository and switch to that branch, run the following `git fetch` and `git checkout` commands:
 
     ```bash
-    git fetch upstream selenium-tests
-    git checkout selenium-tests
+    git fetch upstream selenium
+    git checkout selenium
     ```
 
     Recall that *upstream* refers to the Microsoft GitHub repository. Your project's Git configuration understands the upstream remote, because you set up that relationship when you forked the project from the Microsoft repository and cloned it locally.
@@ -81,7 +34,7 @@ This branch contains the _Space Game_ project that you worked with in previous m
 
 1. Optionally, in Visual Studio Code, open the *azure-pipelines.yml* file, and familiarize yourself with the initial configuration.
 
-    The configuration resembles the basic one that you created in the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true) module. It builds only the application's **Release** configuration.
+    The configuration resembles the ones that you created in the previous modules in this learning path. It builds only the application's **Release** configuration. For brevity, it also omits the triggers and manual approvals you set up in previous modules.
 
 ## Write the unit test code
 
@@ -113,9 +66,9 @@ public class HomePageTest
 
 **Andy:** Think of an interface as a specification or blueprint for how a component should behave. An interface provides the methods, or behaviors, of that component, but does not provide any of the underlying details. You or someone else would then create one or more _concrete classes_ that implement that interface. Selenium provides the concrete classes that we need.
 
-Here's a diagram that shows the `IWebDriver` interface:
+Here's a diagram that shows the `IWebDriver` interface and a few of the classes that implement this interface:
 
-![](../media/5-webdriver-interface.png)
+![](../media/5-selenium-webdriver.png)
 
 This diagram shows three of the methods `IWebDriver` provides: `Navigate`, `FindElement`, and `Close`.
 
@@ -170,7 +123,7 @@ public class HomePageTest
 
 **Andy:** Next, we need to assign our `IWebDriver` member variable to a class instance that implements this interface for the current browser we're testing on. The `ChromeDriver`, `FirefoxDriver`, and `InternetExplorerDriver` classes implement this interface for Chrome, Firefox, and Internet Explorer, respectively.
 
-Let's create a method, named `Setup`, which sets this variable. We use the `OneTimeSetUp` attribute to tell NUnit to run this method one time per test fixture.
+Let's create a method, named `Setup`, which sets the `driver` variable. We use the `OneTimeSetUp` attribute to tell NUnit to run this method one time per test fixture.
 
 ```cs
 [OneTimeSetUp]
@@ -179,6 +132,7 @@ public void Setup()
 }
 ```
 
+In the `Setup` method, we can use a `switch` statement to assign the `driver` member variable to the appropriate concrete implementation, based on the browser name. Let's add that code now.
 
 ```cs
 // The NuGet package for each browser installs driver software
@@ -190,27 +144,29 @@ var cwd = Environment.CurrentDirectory;
 switch(browser)
 {
     case "Chrome":
-    driver = new ChromeDriver(cwd);
-    break;
+        driver = new ChromeDriver(cwd);
+        break;
     case "Firefox":
-    driver = new FirefoxDriver(cwd);
-    break;
+        driver = new FirefoxDriver(cwd);
+        break;
     case "IE":
-    driver = new InternetExplorerDriver(cwd);
-    break;
+        driver = new InternetExplorerDriver(cwd);
+        break;
     default:
-    throw new ArgumentException($"'{browser}': Unknown browser");
+        throw new ArgumentException($"'{browser}': Unknown browser");
 }
 ```
 
 ### Define the helper methods
 
-**Andy:** There are two actions that I know we'll need to repeat through the tests. They are:
+**Andy:** There are two actions that I know we'll need to repeat throughout the tests. They are:
 
 1. Finding elements on the page, such as the links we click and the modal windows we expect to appear.
 1. Clicking elements on the page, such as the links that reveal the modal windows and the button that closes each modal.
 
 Let's write two helper methods, one that accomplishes each of these. Let's start with the method that finds an element on the page.
+
+#### Write the FindElement helper method
 
 When you locate an element on the page, it's typically in response to some other event, such as the page loading or the user entering information. Selenium provides the `WebDriverWait` class, which enables you to wait for a condition to be true. If the condition is not true within the given time period, `WebDriverWait` throws an exception, or error. We can use the `WebDriverWait` class to wait for a given element to be displayed and ready to receive user input.
 
@@ -242,9 +198,11 @@ private IWebElement FindElement(By locator, IWebElement parent = null, int timeo
 }
 ```
 
-**Andy:** Next, let's write a helper method that clicks links. Selenium provides a few ways to do that. From my research, we can use the `IJavaScriptExecutor` interface to click links by using JavaScript. This technique works well across web browsers because it can click links without the need to first the link into view.
+#### Write the ClickElement helper method
 
-`ChromeDriver`, `FirefoxDriver`, and `InternetExplorerDriver` each implement `IJavaScriptExecutor`. We need to cast the driver to this interface and then call `ExecuteScript` to run the `click()` method on the underlying HTML object.
+**Andy:** Next, let's write a helper method that clicks links. Selenium provides a few ways to do that. From my research, we can use the `IJavaScriptExecutor` interface to click links by using JavaScript. This technique works well across web browsers because it can click links without the need to first scroll the link into view.
+
+`ChromeDriver`, `FirefoxDriver`, and `InternetExplorerDriver` each implement `IJavaScriptExecutor`. We need to cast the driver to this interface and then call `ExecuteScript` to run the JavaScript `click()` method on the underlying HTML object.
 
 Andy and Amita code up the `ClickElement` helper method. It looks like this:
 
@@ -323,15 +281,15 @@ public void ClickLinkByXPath_ShouldDisplayModalByXPath(string linkXPath, string 
 }
 ```
 
-**Amita:** This looks great so far. But how do we connect this test with the XPath expressions we collected earlier?
+**Amita:** This looks great so far. But how do we connect this test to the XPath expressions we collected earlier?
 
 **Andy:** Great question. We'll handle that next.
 
 ### Define test case data
 
-**Andy:** In NUnit, there are a few ways to provide data to your tests. Here, we can use the `TestCase` attribute. This attribute takes arguments that it later passes back to the test method when it runs. We can have multiple `TestCase` attributes that each test a different feature of our app. Each `TestCase` attribute adds a unique test that's included in the report.
+**Andy:** In NUnit, there are a few ways to provide data to your tests. Here, we can use the `TestCase` attribute. This attribute takes arguments that it later passes back to the test method when it runs. We can have multiple `TestCase` attributes that each test a different feature of our app. Each `TestCase` attribute produces a test case that's included in the report.
 
-Andy adds these `TestCase` attributes to the test method:
+Andy adds these `TestCase` attributes to the test method. These attributes describe the **Download game** button, one of the game screens, and the top player on the leaderboard. Each attribute specifies two XPath expressions: one for the link to click and one for the corresponding modal window.
 
 ```cs
 // Download game
@@ -348,6 +306,8 @@ Andy adds these `TestCase` attributes to the test method:
     "//*[@id=\"profile-modal-1\"]/div/div")]
 public void ClickLinkByXPath_ShouldDisplayModalByXPath(string linkXPath, string modalXPath)
 {
+
+...
 ```
 
 **Andy:** For each `TestCase` attribute, the first parameter is the XPath to the link to click on. The second parameter is the XPath to the modal window that we expect to appear. See how these parameters correspond to the two string arguments in our test method.

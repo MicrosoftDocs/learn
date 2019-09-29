@@ -1,25 +1,33 @@
-This is a scrap from another module that we should include in this module (add 2 units):
+Great work! In this module, we defined a _functional test_ as a test that verifies that a given function of the software does what it should. We also defined some of the more popular kinds of functional tests, including smoke tests, unit tests, and UI tests.
 
-Mara and Amita are talking in the break room. Amita says, "I really like the way the pipeline is shaping up and I feel a lot more comfortable with automation. I can see how it speeds up the release process but also makes it easier to have repeatable results. I also like having tests in the pipeline. 
+The Tailspin team chose one kind of functional tests to automate first: UI tests. They chose UI tests that Amita needed to run manually, which were tedious and time-consuming. By automating these tests, Amita can now focus more on usability testing, which is usually best performed by humans.
 
-"I remember that Andy mentioned quality gates and I thought they sounded interesting. Do you know much about them?"
+When incorporating functional tests in your pipeline, focus on the kinds of tests that matter most. For example, if your application distributes work among other components, such as you'll find in a typical multi-tier e-commerce system or a video stream service, you might write integration tests that verify that all components work together to form a complete system.
 
-Mara answers, "A quality gate is a good way to check the quality of a release. It's like having an automatic approval instead of a manual one. There are a lot of possibilities for quality gates. You could add a gate that checks to see if everything is healthy on the deployment targets. There could be security or compliance checks. You would locate the gate before the stage that depends on the outcome of the previous stage. We could put a quality gate between the test stage and the pre-production stage if you want. They're not hard to add to the pipeline. What were you thinking about?"
-
-"I'd like to add a release gate that makes sure there aren't any open bugs. Could we do that?"
-
-"That's a great idea! We can certainly do it," Mara says. We can use a work item query to check to see if there are open bugs. If there aren't, we can deploy to pre-production."
+In the next module, you'll 
 
 ## Learn more
 
-Somewhere, talk about how you can run UI tests in parallel, on multipel build agents (for example, Windows, macOS, Linux).
+Here are some additional resources you can use to learn more.
 
-Also, headless mode.
+### Learn more about NUnit
 
-* Selenium
-  * https://www.seleniumhq.org/selenium-ide/
-* Docs pages on Selenium
-* XPath
-* https://nunit.org
+In this module, you worked with NUnit tests. If you're interested in unit testing .NET applications, here are some additional resources:
 
-[Windows Application Driver](https://github.com/Microsoft/WinAppDriver?azure-portal=true)
+* [nunit.org](https://nunit.org?azure-portal=true)
+* [Unit test your code](https://docs.microsoft.com/visualstudio/test/unit-test-your-code?view=vs-2019&azure-portal=true)
+* [Unit testing C# with NUnit and .NET Core](https://docs.microsoft.com//dotnet/core/testing/unit-testing-with-nunit?azure-portal=true)
+
+### Learn about parallel jobs
+
+You set up UI tests to run on Windows. But you can also run your tests on other platforms, such as macOS and Linux. To speed up the process, you can run these jobs in parallel. See [Jobs](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml&azure-portal=true) and [Parallel jobs
+](https://docs.microsoft.com/azure/devops/pipelines/licensing/concurrent-jobs?view=azure-devops&azure-portal=true) to learn more.
+
+### Learn more about Selenium tests
+
+If you're interested in UI testing with Selenium, here are some resources to help you go further:
+
+* [seleniumhq.org](https://www.seleniumhq.org?azure-portal=true)
+* [Selenium IDE](https://www.seleniumhq.org/selenium-ide?azure-portal=true)
+* [UI test with Selenium](https://docs.microsoft.com/azure/devops/pipelines/test/continuous-test-selenium?view=azure-devops&azure-portal=true)
+* [UI testing considerations](https://docs.microsoft.com/azure/devops/pipelines/test/ui-testing-considerations?view=azure-devops&tabs=mstest&azure-portal=true)

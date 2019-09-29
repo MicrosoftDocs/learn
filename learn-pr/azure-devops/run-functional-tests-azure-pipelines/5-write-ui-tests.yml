@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.run-functional-tests-azure-pipelines.4-plan-ui-tests
-title: Plan the UI tests
+uid: learn.azdo.run-functional-tests-azure-pipelines.5-write-ui-tests
+title: Write the UI tests
 metadata:
-  title: Plan the UI tests
-  description: Plan the UI tests.
+  title: Write the UI tests
+  description: Write the UI tests.
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-plan-ui-tests.md)]
+  [!include[](includes/5-write-ui-tests.md)]
