@@ -42,10 +42,6 @@ Based on the technology used, you’ll need technical expertise and workforce to
 
 With cloud computing, many of the costs associated with an on-premises datacenter are shifted to the service provider. Instead of thinking about physical hardware and datacenter costs, cloud computing has a different set of costs. For accounting purposes, all these costs are operational expenses:
 
-### Leasing a cloud-based server
-
-If you lease a server or use a cloud-based server, the cost is typically based on the pay-per-use model. 
-
 ### Leasing software and customized features
 
 Using a pay-per-use model requires actively managing your subscriptions to ensure users do not misuse the services, and that provisioned accounts are being utilized and not wasted. As soon as the provider provisions resources, billing starts. It is your responsibility to de-provision the resources when they aren't in use so that you can minimize costs.

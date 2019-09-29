@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn-sqlserver.run-sql-server-2017-linux-containers.6-exercise-create-custom-docker-image
+title: Exercise - Create a custom Docker image
+metadata:
+  title: Exercise - Create a custom Docker image
+  description: In this unit, you will write a custom Dockerfile that deploys a SQL Server image with a backed-up database.
+  ms.date: 06/11/2019
+  author: alistairmatthews
+  ms.author: v-alism
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+## TODO: Insert the correct Lab ID here when we have it.
+labId: 51799
+content: |
+  [!include[](includes/6-exercise-create-custom-docker-image.md)]

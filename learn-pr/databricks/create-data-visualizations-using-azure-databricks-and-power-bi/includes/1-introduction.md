@@ -4,6 +4,8 @@ So how do you do that? What are the options for presenting your advanced and com
 
 In this module, we'll look at several options for presenting your analytical data in an easy to understand visual format.
 
+[!INCLUDE [azure-databricks-free-trial-note](../../../includes/azure-databricks-free-trial-note.md)]
+
 ## Learning objectives
 
 In this module, you'll:

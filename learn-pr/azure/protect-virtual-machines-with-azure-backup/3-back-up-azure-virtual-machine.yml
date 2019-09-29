@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.protect-virtual-machines-with-azure-backup.3-back-up-azure-virtual-machine
+metadata:
+  title: Back up an Azure virtual machine with Azure Backup
+  description: Explore all the methods of backing up machines provided by Azure Backup, and make a decision on which method to implement for your company.
+  ms.date: 08/27/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Back up an Azure virtual machine with Azure Backup
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-back-up-azure-virtual-machine.md)]

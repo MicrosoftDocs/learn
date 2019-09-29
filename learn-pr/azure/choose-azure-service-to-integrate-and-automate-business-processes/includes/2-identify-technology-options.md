@@ -97,7 +97,7 @@ The WebJobs SDK only supports C# and the NuGet package manager.
 
 ![Azure Functions](../media/2-azure-functions-logo.png)
 
-An Azure Function is a simple way for you to run small pieces of code in the cloud, without having to worry about the infrastructure required to host that code. You can write the Function in C#, F# Node.js, Java, or PHP and you only pay for the time when the code runs. Azure automatically scales your function in response to the demand from users.
+An Azure Function is a simple way for you to run small pieces of code in the cloud, without having to worry about the infrastructure required to host that code. You can write the Function in C#, F# Node.js, Java, Python, or PHP and you only pay for the time when the code runs. Azure automatically scales your function in response to the demand from users.
 
 When you create an Azure Function, you can start by writing the code for it in the portal. Alternatively, if you need source code management, you can use GitHub or Azure DevOps Services.
 
@@ -128,5 +128,4 @@ Package managers | NuGet if you are using the WebJobs SDK | Nuget and NPM |
 Can be part of an App Service application | Yes | No |
 Provides close control of `JobHost` | Yes | No |
 
-
-Now you know what design-first and code-first technologies are available to you, how do you narrow you choice down for a given scenario? We'll look at this question in the next unit. 
+Now you know what design-first and code-first technologies are available to you, how do you narrow you choice down for a given scenario? We'll look at this question in the next unit.

@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.assess-your-development-process.4-assess-process-efficiency
+title: Assess process efficiency with value stream maps
+metadata:
+  title: Assess process efficiency with value stream maps
+  description: See how the team performs against a value-stream-mapping exercise.
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-assess-process-efficiency.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What's the purpose of the value stream map?"
+    choices:
+    - content: "It helps you think about your existing processes and where you fit in the DevOps maturity model."
+      isCorrect: true
+      explanation: "Before you can improve, you must understand where you are today."
+    - content: "It helps you gain official DevOps accreditation."
+      isCorrect: false
+      explanation: "Consider your team and your processes: where do you fit in the DevOps maturity model?"
+    - content: "It's just extra paperwork."
+      isCorrect: false
+      explanation: "It may surprise you where you have waste. For example, you may be communicating manually through spreadsheets when an automated process is available."
+  - content: "What do we mean by waste?"
+    choices:
+    - content: "Waste is time between tasks."
+      isCorrect: false
+      explanation: "Waste is time spent on tasks that don't have direct customer value. For example, setting up source control. It's an important task, but it doesn't have direct customer value."
+    - content: "Waste means we are having to rewrite code and throw away the old code."
+      isCorrect: false
+      explanation: "Waste is time spent on tasks that don't have direct customer value. For example, setting up source control. It's an important task, but it doesn't have direct customer value."
+    - content: "Waste is time spent on tasks that don't have direct customer value."
+      isCorrect: true
+      explanation: "Waste is time spent on tasks that don't have direct customer value. For example, setting up source control. It's an important task, but it doesn't have direct customer value."

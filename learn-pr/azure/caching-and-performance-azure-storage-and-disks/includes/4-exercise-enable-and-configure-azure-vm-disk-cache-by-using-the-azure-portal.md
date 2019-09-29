@@ -81,7 +81,7 @@ Let's move on to data disk cache configuration. To configure a disk, we'll need 
 
 1. Click in the **Name** list, and then click **Create disk**.
 
-1. In the **Create managed disk** pane, in the **Name** box, type **fotosharesVM-data**.
+1. In the **Create managed disk** pane, in the **Name** box, type **fotoshareVM-data**.
 
 1. Under **Resource Group**, select **Use existing**, and select _<rgn>[sandbox resource group name]</rgn>_.
 

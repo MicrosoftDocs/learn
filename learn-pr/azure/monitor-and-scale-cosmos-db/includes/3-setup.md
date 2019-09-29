@@ -1,6 +1,5 @@
 In this unit, you'll create an Azure Cosmos DB account and use a console application to populate the database.
 
-<!-- Activate the sandbox -->
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
 ## Create your database account
@@ -61,7 +60,7 @@ We look at indexing in units 6 and 7.
 1. Run the following command to store the access key in an environment variable.
 
     ```bash
-    export KEY=$(az cosmosdb list-keys --resource-group <rgn>Sandbox Resource Group</rgn>  \
+    export KEY=$(az cosmosdb keys list --resource-group <rgn>Sandbox Resource Group</rgn>  \
             --name $COSMOS_NAME --output tsv --query primaryMasterKey)
     ```
 
@@ -136,7 +135,7 @@ We'll use an open-source C# console application to populate your collections. Th
     ```
 
     ```bash
-    export KEY=$(az cosmosdb list-keys --resource-group <rgn>Sandbox Resource Group</rgn>  \
+    export KEY=$(az cosmosdb keys list --resource-group <rgn>Sandbox Resource Group</rgn>  \
             --name $COSMOS_NAME --output tsv --query primaryMasterKey)
     ```
 
@@ -152,7 +151,7 @@ We'll use an open-source C# console application to populate your collections. Th
     ------|-----|-----------
     -c|Small|The name of the collection to use.
     -o|InsertDocument|The name of the task to run.
-    -n|2000|The number of times to run.
+    -n|4000|The number of times to run.
     -p|10|The degree of parallelism to use. That's the number of threads used for the experiment. The higher this number, the greater the demand on the collection.
 
     The first time you run the application, it shows a welcome message.

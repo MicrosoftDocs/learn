@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.welcome-to-azure.4-exercise-create-website
+title: Exercise - Create a website hosted in Azure
+metadata:
+  title: Exercise - Create a website hosted in Azure
+  description: No matter your area of interest, get started with the cloud by creating your first Azure hosted website.
+  ms.date: 09/06/2019
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-exercise-create-website.md)]

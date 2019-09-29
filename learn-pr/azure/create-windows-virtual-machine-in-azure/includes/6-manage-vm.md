@@ -49,4 +49,4 @@ Since we didn't create a security group for this VM, let's do that and apply it.
 
 ## Creating Network Security Groups
 
-Security groups are managed resources like most everything in Azure, you can create them in the Azure portal or through command-line scripting tools. The challenge is in defining the rules. Let's look at defining a new rule to allow FTP access.
+Security groups are managed resources like most everything in Azure, you can create them in the Azure portal or through command-line scripting tools. The challenge is in defining the rules.

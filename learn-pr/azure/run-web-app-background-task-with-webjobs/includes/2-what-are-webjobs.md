@@ -32,7 +32,7 @@ Web Jobs written as part of a Visual Studio project can be deployed:
 There are two types of WebJobs, which execute at different times:
 
 - **Continuous.** A continuous WebJob starts when you deploy it and will continue to run in an endless loop. If you want to use a continuous WebJob, you must write your code to implement this loop. You could use this kind of WebJob, for example, to poll a message queue for new items and process their contents. Because the WebJob is continuous, your process can start quickly after the message appears.
-- **Triggered.** A triggered WebJob only starts when scheduled or manually triggered. You could use this king of WebJob, for example, to create daily summaries of messages in a queue.
+- **Triggered.** A triggered WebJob only starts when scheduled or manually triggered. You could use this kind of WebJob, for example, to create daily summaries of messages in a queue.
 
 ## WebJobs versus Azure Functions
 

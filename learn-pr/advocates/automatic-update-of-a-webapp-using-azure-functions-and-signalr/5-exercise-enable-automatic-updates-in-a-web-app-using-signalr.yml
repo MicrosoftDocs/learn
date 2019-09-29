@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.azure-functions-and-signalr.5-exercise-enable-automatic-updates-in-a-web-app-using-signalr
 metadata:
-  title: Exercise – Enable automatic updates in a web application using SignalR
-  description: Implement integration with Azure Functions and SignalR for fast and targeted automatic updates.
+  title: Exercise – Enable automatic updates in a web application using SignalR Service
+  description: Implement integration with Azure Functions and SignalR Service for fast and targeted automatic updates.
   ms.date: 05/31/19
   author: craigshoemaker
   ms.author: cshoe
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Exercise – Enable automatic updates in a web application using SignalR
+title: Exercise – Enable automatic updates in a web application using SignalR Service
 interactive: bash
 azureSandbox: true
 durationInMinutes: 12

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.host-build-agent.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: In this module, you learn how to set up a build agent that runs on an Azure virtual machine.
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
+
+

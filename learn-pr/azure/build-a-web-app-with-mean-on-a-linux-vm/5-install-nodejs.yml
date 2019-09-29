@@ -1,13 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm.5-install-nodejs
-title: Install Node.js
+title: Exercise - Install Node.js
 metadata:
-  title: Install Node.js
-  description: Install Node.js
+  title: Exercise - Install Node.js
+  description: Exercise - Install Node.js
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: nickwalkmsft
+  ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

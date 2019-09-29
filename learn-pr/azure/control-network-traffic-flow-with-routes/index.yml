@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.control-network-traffic-flow-with-routes
+metadata:
+  title: Manage and control traffic flow in your Azure deployment with routes
+  description: Learn how to control Azure virtual network traffic by implementing custom routes.
+  ms.date: 08/28/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage and control traffic flow in your Azure deployment with routes
+summary: Learn how to control Azure virtual network traffic by implementing custom routes.
+abstract: | 
+  In this module, you will:
+  - Identify the routing capabilities of an Azure virtual network
+  - Configure routing within a virtual network
+  - Deploy a basic network virtual appliance
+  - Configure routing to send traffic through a network virtual appliance
+prerequisites: | 
+  - Knowledge of basic networking concepts
+  - Familiarity with Azure virtual networking
+iconUrl: /learn/achievements/control-network-traffic-flow-with-routes.svg
+levels:
+- beginner
+roles:
+- solution-architect
+- administrator
+products:
+- azure
+- azure-virtual-machines
+units:
+- learn.control-network-traffic-flow-with-routes.1-introduction
+- learn.control-network-traffic-flow-with-routes.2-azure-virtual-network-route
+- learn.control-network-traffic-flow-with-routes.3-exercise-create-custom-routes
+- learn.control-network-traffic-flow-with-routes.4-network-virtual-appliances
+- learn.control-network-traffic-flow-with-routes.5-exercise-create-nva-vm
+- learn.control-network-traffic-flow-with-routes.6-exercise-route-traffic-through-nva
+- learn.control-network-traffic-flow-with-routes.7-summary
+badge:
+  uid: learn.control-network-traffic-flow-with-routes.badge

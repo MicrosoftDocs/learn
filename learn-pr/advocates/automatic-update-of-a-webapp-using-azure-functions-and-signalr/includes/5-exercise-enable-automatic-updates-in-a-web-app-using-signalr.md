@@ -2,29 +2,34 @@ To support the new functionality, you need to create a few new functions and upd
 
 ## Create a SignalR account
 
-You'll need to add a SignalR account to your sandbox subscription. The first step is to add the SignalR extension to the Azure Command Line Interface (CLI).
+You'll need to add a SignalR account to your sandbox subscription. 
 
-1. To allow access to SignalR, add the extension by running the following command in  the Cloud Shell.
-
-    ```bash
-    az extension add -n signalr
-    ```
-
-1. Run the following command in the Cloud Shell to create a new SignalR account in the sandbox resource group. This command can take a couple of minutes to complete, so please wait for it to finish before proceeding to the next step. 
+1. The first step is to run the following command in the Cloud Shell to create a new SignalR account in the sandbox resource group. This command can take a couple of minutes to complete, so please wait for it to finish before proceeding to the next step. 
 
     ```bash
+    SIGNALR_SERVICE_NAME=msl-sigr-signalr$(openssl rand -hex 5)
     az signalr create \
-      --name msl-sigr-signalr$(openssl rand -hex 5) \
+      --name $SIGNALR_SERVICE_NAME \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --sku Free_DS2 \
       --unit-count 1
+    ```
+
+1. For SignalR Service to work properly with Azure Functions, you need to set its service mode to *Serverless*. Configure the service mode using the following command.
+
+    ```bash
+    az resource update \
+      --resource-type Microsoft.SignalRService/SignalR \
+      --name $SIGNALR_SERVICE_NAME \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --set properties.features[flag=ServiceMode].value=Serverless
     ```
 
 ## Update local settings
 
 For the app to run, you need to add the SignalR connection string saved to your local settings.
 
-1. Run the following commands in the Cloud Shell  to get the connection strings for the resources we created in this exercise.
+1. Run the following commands in the Cloud Shell to get the connection strings for the resources we created in this exercise.
 
     ```bash
     SIGNALR_CONNECTION_STRING=$(az signalr key list \
@@ -125,7 +130,7 @@ First, you need to create a new function that listens for changes in the databas
     }
     ```
 
-1. Next, append the following SignalR output binding definition to the `bindings` collection.
+1. Next, append the following SignalR output binding definition to the `bindings` array.
 
     ```json
     {
@@ -365,7 +370,7 @@ Now you can change the application's data and observe how to the UI automaticall
 1. Return to Visual Studio Code and enter the following command in a new integrated terminal. Again, watch as the application automatically updates the stock ABC.
 
     ```bash
-    npm run update
+    npm run update-data
     ```
 
 After the database is updated, the UI looks something like the following screenshot:

@@ -17,9 +17,8 @@ abstract:  |
   - Use Pandas to clean and prepare data
   - Use Scikit-learn to build a machine-learning model
   - Use Matplotlib to visualize the output
-prerequisites: None
-# TODO: create icon
-iconUrl: /learn/achievements/generic-badge.svg
+prerequisites: Basic Python knowledge
+iconUrl: /learn/achievements/student-evangelism/predict-flight-delays-with-python-badge.svg
 levels:
 - beginner
 roles:

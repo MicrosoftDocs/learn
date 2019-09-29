@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.manage-build-dependencies.2-plan-build-dependencies-for-your-pipeline
+title: Plan build dependencies for your pipeline
+metadata:
+  title: Plan build dependencies for your pipeline
+  description: Share code by using packages and consume the packages in your pipeline
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-plan-build-dependencies-for-your-pipeline.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is a package?"
+    choices:
+    - content: "Reusable code that other developers can use in their own projects."
+      isCorrect: true
+      explanation: "You can host packages on a network share or use a web service. Authenticated users can download your package and use it in their own applications."
+    - content: "A Git construct for moving a repository."
+      isCorrect: false
+      explanation: "A package is not something specific to Git."
+    - content: "A preview version of your library."
+      isCorrect: false
+      explanation: "Packages relate to both pre-release and stable versions of your library."
+  - content: "Say you've built a package that you want to share publicly. What's the easiest way to do that?"
+    choices:
+    - content: "A public hosting service, such as NuGet."
+      isCorrect: true
+      explanation: "Hosting services such as NuGet make it easy for you to upload packages, as well as for others to discover and use them."
+    - content: "On a public network file share."
+      isCorrect: false
+      explanation: "Although this is possible, others might not be able to discover your package. It also adds responsibility on your part to ensure the network share is secure."
+    - content: "Behind your firewall."
+      isCorrect: false
+      explanation: "Others won't be able to access packages behind your firewall."
+  - content: "What is Azure Artifacts?"
+    choices:
+    - content: "A place to upload your applications."
+      isCorrect: false
+      explanation: "Azure Artifacts enables you to create and share packages, not complete applications."
+    - content: "A place to share package feeds for Maven, npm, NuGet, and Python libraries."
+      isCorrect: true
+      explanation: "You can configure your feeds to allow public access or access only from select users."
+    - content: "A place to archive old code that is no longer in use."
+      isCorrect: false
+      explanation: "While you could maintain old versions of your package on Azure Artifacts, Azure Artifacts is not an archive system."

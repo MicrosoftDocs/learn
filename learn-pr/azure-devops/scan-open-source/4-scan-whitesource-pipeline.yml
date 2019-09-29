@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.scan-open-source.4-scan-whitesource-pipeline
+title: Exercise - Scan open-source components using WhiteSource Bolt
+metadata:
+  title: Exercise - Scan open-source components using WhiteSource Bolt
+  description: Add a task to your build pipeline that scans your dependencies for vulnerabilities and license ratings.
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-scan-whitesource-pipeline.md)]

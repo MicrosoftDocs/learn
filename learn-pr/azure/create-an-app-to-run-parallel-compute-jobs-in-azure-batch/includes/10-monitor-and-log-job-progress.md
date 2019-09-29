@@ -46,7 +46,7 @@ The app will check for an existing pool, and create one if it doesn't exist. The
 
         // Obtain the collection of tasks currently managed by the job. 
         // Use a detail level to specify that only the "id" property of each task should be populated. 
-        // See https://docs.microsoft.com/en-us/azure/batch/batch-efficient-list-queries
+        // See https://docs.microsoft.com/azure/batch/batch-efficient-list-queries
         ODATADetailLevel detail = new ODATADetailLevel(selectClause: "executionInfo");
 
         // Filter for tasks with 'Failure' result.
@@ -89,7 +89,7 @@ The app will check for an existing pool, and create one if it doesn't exist. The
 
         // Monitor task success or failure, specifying a maximum amount of time to wait for
         // the tasks to complete.
-        await MonitorTasksAsync(batchClient, JobId, TimeSpan.FromMinutes(30), runningTasks);
+        await MonitorTasksAsync(batchClient, JobId, TimeSpan.FromMinutes(30));
     }
     ```
 

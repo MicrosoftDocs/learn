@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 01/1/2019
-  author: markjulmar
-  ms.author: smmark
+  author: patridge
+  ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -16,28 +16,34 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "True or False. You can select the specific datacenter you want to deploy your app into."
-    choices: 
-    - content: 'True'
-      isCorrect: false
-      explanation: "Azure organizes infrastructure around _regions_ which include multiple datacenters."
-    - content: 'False'
-      isCorrect: true
-      explanation: "Correct. Azure organizes infrastructure around _regions_ which include multiple datacenters. You can't select a specific datacenter, but you can pick the region you want resources deployed into."
-  - content: "True or False. Every region has an availability zone."
+  - content: "Deploying an app can be done directly to what level of physical granularity?"
     choices:
-    - content: 'True'
-      isCorrect: false
-      explanation: "Regions that support Availability Zones include *Central US*, *North Europe*, and *SouthEast Asia*."
-    - content: 'False'
+    - content: 'Region'
       isCorrect: true
-      explanation: "Correct. Regions that support Availability Zones include *Central US*, *North Europe*, and *SouthEast Asia*."
+      explanation: "Correct. Azure organizes infrastructure around _regions_, which include multiple datacenters. You can pick the region you want resources deployed into. You can't select a specific datacenter or location within a datacenter."
+    - content: 'Datacenter'
+      isCorrect: false
+      explanation: "Azure organizes infrastructure around _regions_, which include multiple datacenters."
+    - content: 'Server rack'
+      isCorrect: false
+      explanation: "Azure organizes infrastructure around _regions_, which include multiple datacenters. You can't select a specific datacenter or location within a datacenter."
+  - content: "To use Azure datacenters that are made available with power, cooling, and networking capabilities independent from other datacenters in a region, choose a region that supports _________?"
+    choices:
+    - content: 'Geography distribution'
+      isCorrect: false
+      explanation: "Distributing your resources geographically can improve latency for globally distributed users, but regions are generally specific to a geographic area. Availability Zones are a collection of independently equipped data centers."
+    - content: 'Service-Level Agreements (SLAs)'
+      isCorrect: false
+      explanation: "Service-Level Agreements are specific to Azure products and services, not to regions. Availability Zones are a collection of independently equipped data centers."
+    - content: 'Availability Zones'
+      isCorrect: true
+      explanation: "Availability Zones are datacenters set up to be an isolation boundary from others in the region, with their own power, cooling, and networking. If one zone in a region goes down, other Availability Zones in the region continue to work."
   - content: "Application availability refers to what?"
-    choices: 
+    choices:
       - content: "The service level agreement of the associated resource."
         isCorrect: false
         explanation: "The service level agreement gives you a guarantee of the availability of the resource, not of the application itself."
-      - content: "Whether the application supports an availability zone."
+      - content: "Application support for an availability zone."
         isCorrect: false
         explanation: "Only the underlying resources used in the application support availability zones."
       - content: "The overall time that a system is functional and working."

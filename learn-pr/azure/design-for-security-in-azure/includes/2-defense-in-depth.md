@@ -62,13 +62,13 @@ At this layer, the focus is on limiting the network connectivity across all your
 
 At the network perimeter, it's about protecting from network-based attacks against your resources. Identifying these attacks, eliminating their impact, and alerting on them is important to keep your network secure.
 
-### Policies & access
+### Identity & access
 
 - Control access to infrastructure, change control
 - Use single sign-on and multi-factor authentication
 - Audit events and changes
 
-The policy & access layer is all about ensuring identities are secure, and that access granted is only what is needed, and changes are logged.
+The identity & access layer is all about ensuring identities are secure, and that access granted is only what is needed, and changes are logged.
 
 ### Physical security
 
@@ -85,7 +85,7 @@ Each layer can implement one or more of the CIA concerns.
 |3|Compute|Regularly apply OS and layered software patches|Availability|
 |4|Network|Network security rules|Confidentiality|
 |5|Perimeter|DDoS protection|Availability|
-|6|Policies & Access|Azure Active Directory user authentication|Integrity|
+|6|Identity & Access|Azure Active Directory user authentication|Integrity|
 |7|Physical Security|Azure data center biometric access controls|Confidentiality|
 
 ## Shared responsibilities

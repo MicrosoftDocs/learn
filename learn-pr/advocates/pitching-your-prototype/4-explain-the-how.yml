@@ -1,0 +1,27 @@
+### YamlMime:ModuleUnit
+uid: learn.pitch-your-product-prototype.4-explain-the-how
+title: Explain how your business will work
+metadata:
+  title: Explain how your business will work
+  description: This unit teaches you how to share your business model.
+  author: jamtur01
+  ms.date: 04/25/2019
+  ms.author: jaturnbu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-startups
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-explain-the-how.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What are the most crucial things to mention when you explain how to acquire customers?"
+    choices:
+    - content: "Market size, marketing channels and techniques."
+      isCorrect: true
+      explanation: "When you explain how to acquire customers you should mention market size, marketing channels and techniques."
+    - content: "Market size, corporate identity, and industry analysis."
+      isCorrect: false
+    - content: "Marketing channels, business models, and techniques."
+      isCorrect: false

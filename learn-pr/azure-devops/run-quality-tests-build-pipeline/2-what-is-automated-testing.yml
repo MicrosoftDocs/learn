@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.run-quality-tests-build-pipeline.2-what-is-automated-testing
+title: What is automated testing?
+metadata:
+  title: What is automated testing?
+  description: Learn about the benefits of automated testing, the kinds of testing you can use, and the kinds of testing tools that are available to you.
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-what-is-automated-testing.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "According to the _test pyramid_, where should you spend the majority of your time running tests?"
+    choices:
+    - content: "Running unit tests on your classes and methods."
+      isCorrect: true
+      explanation: "When you verify that each lower-level component works as expected in isolation, you can spend less time at the higher levels."
+    - content: "Running integration tests between your web server and your database."
+      isCorrect: false
+      explanation: "Typically, you'll spend the majority of your time testing lower-level components, such as functions, classes, and methods."
+    - content: "Running manual tests on your user interface."
+      isCorrect: false
+      explanation: "The test pyramid suggests that most of your time should be spent testing lower-level components, such as functions, classes, and methods. Manual testing might come last, after the components are known to function correctly together."
+  - content: "_Shifting left_ refers to:"
+    choices:
+    - content: "Fixing all known bugs before adding new features."
+      isCorrect: false
+      explanation: "Shifting left refers to _when_ testing occurs rather than _what kind_ of work is done."
+    - content: "Considering software quality and testing earlier in the development process."
+      isCorrect: true
+      explanation: "By shifting left, you can discover and fix issues before those issues reach anyone else."
+    - content: "Testing for undiscovered bugs in a test or pre-production environment."
+      isCorrect: false
+      explanation: "Although this might be a good practice to follow, shifting left relates to running tests early in the development process."
+  - content: "Which of the following demonstrates the best testing practices?"
+    choices:
+    - content: "Tests run quickly and focus on the most-used code paths."
+      isCorrect: true
+      explanation: "Tests should complete quickly. Focusing on hottest code paths helps ensure that your tests cover what's important."
+    - content: "A comprehensive suite of unit and integration tests is run during each stage of the build process."
+      isCorrect: false
+      explanation: "Tests should complete as quickly as possible, especially those that happen during the development and build phases."
+    - content: "Tests cover both the team's application code and all open-source libraries the application uses."
+      isCorrect: false
+      explanation: "Typically, your tests should cover only your code."

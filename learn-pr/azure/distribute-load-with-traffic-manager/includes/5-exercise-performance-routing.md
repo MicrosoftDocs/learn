@@ -12,13 +12,13 @@ Now, you'll deploy the application to two more regions. Then, you'll create a ne
     CENTRALAPP="MusicStore-CentralUS-$RANDOM"
 
     az appservice plan create \
-        --resource-group <rgn>[sandbox resource group name]</rgn>  \
+        --resource-group mslearn-trafficmanager  \
         --name MusicStore-CentralUS-Plan \
         --location centralus \
         --sku S1
 
     az webapp create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group mslearn-trafficmanager \
         --name $CENTRALAPP \
         --plan MusicStore-CentralUS-Plan \
         --runtime "node|10.6" \
@@ -27,13 +27,13 @@ Now, you'll deploy the application to two more regions. Then, you'll create a ne
     EUROPEAPP="MusicStore-Europe-$RANDOM"
 
     az appservice plan create \
-        --resource-group <rgn>[sandbox resource group name]</rgn>  \
+        --resource-group mslearn-trafficmanager  \
         --name MusicStore-Europe-Plan \
         --location northeurope \
         --sku S1
 
     az webapp create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group mslearn-trafficmanager \
         --name $EUROPEAPP \
         --plan MusicStore-Europe-Plan \
         --runtime "node|10.6" \
@@ -44,7 +44,7 @@ Now, you'll deploy the application to two more regions. Then, you'll create a ne
 
     ```azurecli
         az network traffic-manager profile create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group mslearn-trafficmanager \
         --name TM-MusicStream-Performance \
         --routing-method Performance \
         --unique-dns-name TM-MusicStream-Performance-$RANDOM \
@@ -55,40 +55,40 @@ Now, you'll deploy the application to two more regions. Then, you'll create a ne
 
     ```azurecli
     CentralId=$(az webapp show \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group mslearn-trafficmanager \
         --name $CENTRALAPP \
         --query id \
         --out tsv)
 
     az network traffic-manager endpoint create \
-        --resource-group <rgn>[sandbox resource group name]</rgn>  \
+        --resource-group mslearn-trafficmanager  \
         --profile-name TM-MusicStream-Performance \
         --name "Central-US" \
         --type azureEndpoints \
         --target-resource-id $CentralId
 
     EuropeId=$(az webapp show \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group mslearn-trafficmanager \
         --name $EUROPEAPP \
         --query id \
         --out tsv)
 
     az network traffic-manager endpoint create \
-        --resource-group <rgn>[sandbox resource group name]</rgn>  \
+        --resource-group mslearn-trafficmanager  \
         --profile-name TM-MusicStream-Performance \
         --name "Europe" \
         --type azureEndpoints \
         --target-resource-id $EuropeId
 
     az network traffic-manager endpoint create \
-        --resource-group <rgn>[sandbox resource group name]</rgn>  \
+        --resource-group mslearn-trafficmanager  \
         --profile-name TM-MusicStream-Performance \
         --name "West-US" \
         --type azureEndpoints \
         --target-resource-id $WestId
 
     az network traffic-manager endpoint create \
-        --resource-group <rgn>[sandbox resource group name]</rgn>  \
+        --resource-group mslearn-trafficmanager  \
         --profile-name TM-MusicStream-Performance \
         --name "East-Asia" \
         --type azureEndpoints \
@@ -101,7 +101,7 @@ Now, you'll deploy the application to two more regions. Then, you'll create a ne
 
     ```bash
     echo http://$(az network traffic-manager profile show \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group mslearn-trafficmanager> \
         --name TM-MusicStream-Performance \
         --query dnsConfig.fqdn \
         --output tsv)
@@ -115,7 +115,7 @@ Now, you'll deploy the application to two more regions. Then, you'll create a ne
 
     ```bash
     nslookup $(az network traffic-manager profile show \
-            --resource-group <rgn>[sandbox resource group name]</rgn> \
+            --resource-group mslearn-trafficmanager \
             --name TM-MusicStream-Performance \
             --query dnsConfig.fqdn \
             --output tsv)

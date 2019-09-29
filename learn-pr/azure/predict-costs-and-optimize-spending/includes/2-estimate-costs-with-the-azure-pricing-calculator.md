@@ -29,7 +29,7 @@ After you've added the services, you'll want to price them. Scrolling down on th
 
 ## Estimate a solution
 
-From our original scenario, let's imagine that this system will run on two Azure VMs and will connect to an Azure SQL Database instance. We also want to have a layer 7 firewall in place to ensure we have enhanced load-balancing capabilities. The following illustration shows an application gateway connected to two virtual machines that are connected to a single Azure SQL Database instance.
+From our original scenario, let's imagine that this system will run on two Azure VMs and will connect to an Azure SQL Database instance. We also want to have a layer 7 load balancer in place to ensure we have enhanced load-balancing capabilities. The following illustration shows an application gateway connected to two virtual machines that are connected to a single Azure SQL Database instance.
 
 ![An illustration of a sample architecture that will be used as an example to demonstrate estimating costs.](../media/2-estimate-costs-architecture.png)
 
@@ -52,7 +52,7 @@ We can configure the details of each, on the **Estimates** tab, to get a solid e
 
 * **Application Gateway.** For Application Gateway, we're going to use the Web Application Firewall tier, so we have some protection for our environment. And we're going to go with just two instances and medium size, as our load isn't going to be high. We expect to process 1 TB of data per month. We don't expect to process any data in Europe (Zone 1).
 
-Looking through your estimate, you should see a summary cost for each service you've added and a full total for the entire estimate. In this case, your estimate should be around **$2,100.00 per month**. You can try playing with some of the options - particularly the _location_ you place these resources in to see the estimate go up and down. 
+Looking through your estimate, you should see a summary cost for each service you've added and a full total for the entire estimate. You can try playing with some of the options - particularly the _location_ you place these resources in - to see the estimate go up and down. 
 
 > [!TIP]
 > If you have resources that are not location-sensitive, you can save a lot of money by locating them in less expensive regions. Checking the pricing calculator can help you determine the most cost-effective place to put these services.

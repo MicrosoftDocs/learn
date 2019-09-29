@@ -5,8 +5,8 @@ metadata:
   title: Learn how the rate of data processing is measured in Azure Cosmos DB
   description: Learn what a Request Unit is and how it affects the performance and cost of Azure Cosmos DB
   ms.date: 02/25/2019
-  author: natke
-  ms.author: nakersha
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

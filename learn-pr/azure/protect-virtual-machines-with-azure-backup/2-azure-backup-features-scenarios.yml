@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.protect-virtual-machines-with-azure-backup.2-azure-backup-features-scenarios
+metadata:
+  title: Azure Backup features and scenarios
+  description: See how Azure Backup works, and some of the supported use cases for Azure Backup.
+  ms.date: 08/27/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Azure Backup features and scenarios
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-azure-backup-features-scenarios.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which is the best way to back up an entire Azure virtual machine running Linux?"
+    choices:
+    - content: Use the Azure Backup extension
+      isCorrect: true
+      explanation: Azure Backup works on Azure virtual machines without the need to install an agent. It meets the goal of a disk level backup.
+    - content: Use the MABS or DPM agent
+      isCorrect: false
+      explanation: The MABS or DPM agents could be used in this scenario, but the agents would need be installed and configured, which would require more effort to achieve the same goal as the Azure Backup agent. 
+    - content: Use the MARS agent
+      isCorrect: false
+      explanation: The MARS agent doesn't support Linux. 
+  - content: "Why would you use MABS or DPM instead of the MARS agent to do backups?"
+    choices:
+    - content: File and folder level backups are required.
+      isCorrect: false
+      explanation: All agents support file and folder level backups.
+    - content: Physical Windows and Linux backups are required.
+      isCorrect: false
+      explanation: It's true that MABS or DPM agents support Windows and Linux **VM** backups. However, there are no options to support physical Linux backups at the moment. 
+    - content: Backing up of running apps are required.
+      isCorrect: true
+      explanation: Only MABS and DPM support app-aware backups.
