@@ -17,7 +17,7 @@ Image classification analyzes a supplied image and returns a list of labels (tag
 Object detection is similar to image classification, but it also returns the coordinates (the bounding box) where the tag was located within the image. As with classification, two commonly used endpoints are available:
 
 - **DetectImage** accepts a binary payload (`"application/octet-stream"`) as a byte array that contains the image data.
-- **DetectImageUrl** accepts a JSON payload (`"application/ejson"`) that specifies a publicly available image URL.
+- **DetectImageUrl** accepts a JSON payload (`"application/json"`) that specifies a publicly available image URL.
 
 These API endpoints both use the same structure to form the URL:
 

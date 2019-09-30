@@ -1,8 +1,5 @@
 Let's start with the most obvious task: creating an Azure Virtual Machine.
 
-<!-- Activate the sandbox -->
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Logins, subscriptions, and resource groups
 
 You'll be working in the Azure Cloud Shell on the right. Once you activate the sandbox, you'll be logged into Azure with a free subscription managed by Microsoft Learn. You don't have to log into Azure on your own, or select a subscription - this will be done for you. In addition, normally you would create a _resource group_ to hold new resources. In this module, the Azure sandbox will create a resource group for you which will be used to execute all the commands.
@@ -27,7 +24,7 @@ The Azure CLI includes the `vm` command to work with virtual machines in Azure. 
 > [!NOTE]
 > For a complete list of commands, you can check the [Azure CLI reference documentation](https://docs.microsoft.com/cli/azure/reference-index?view=azure-cli-latest).
 
-Let's start with the first one: `az vm create`. This command is used to create a virtual machine in a resource group. There are several parameters you can pass to configure all the aspects of the new VM. The three parameters that must be supplied are:
+Let's start with the first one: `az vm create`. This command is used to create a virtual machine in a resource group. There are several parameters you can pass to configure all the aspects of the new VM. The four parameters that must be supplied are:
 
 > [!div class="mx-tableFixed"]
 > | Parameter | Description |

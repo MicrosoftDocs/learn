@@ -12,8 +12,6 @@ In this unit, you will:
 
 There are many ways to create a virtual machine on Azure. In this unit, you create an Ubuntu virtual machine by using an interactive terminal called Cloud Shell.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 To configure your VM, you have several choices:
 * For a Linux VM, you can connect directly over SSH and interactively configure your system. 
 * You can automate the deployment by using an Azure Resource Manager template. 

@@ -2,15 +2,25 @@ The .NET Core CLI is the simplest way to create an ASP.NET Core web API. The CLI
 
 In this unit, you'll use the .NET Core CLI to create a web API within the Cloud Shell command shell to the right. You'll also gain an understanding of the resulting project.
 
-## Create a web API project
+## Set up development environment
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
+Run the following command in the command shell:
+
+```bash
+. <(wget -q -O - https://aka.ms/build-web-api-net-core-setup)
+```
+
+[!INCLUDE[OS-specific keyboard shortcuts](../../../includes/azure-cloudshell-copy-paste-tip.md)]
+
+The preceding command installs a specific version of the .NET Core SDK in the Azure Cloud Shell environment.
+
+## Create a web API project
 
 ### Scaffold and explore a web API project
 
 1. Run the following .NET Core CLI command in the command shell:
 
-    ```bash
+    ```dotnetcli
     dotnet new webapi -o contoso-pets/src/ContosoPets.Api
     ```
 
@@ -47,7 +57,7 @@ In this unit, you'll use the .NET Core CLI to create a web API within the Cloud 
 
 1. Run the following .NET Core CLI command in the command shell:
 
-    ```bash
+    ```dotnetcli
     dotnet run > ContosoPets.Api.log &
     ```
 

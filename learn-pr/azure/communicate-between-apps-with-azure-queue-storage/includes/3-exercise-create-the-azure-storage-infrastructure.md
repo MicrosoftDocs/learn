@@ -2,9 +2,6 @@ You've discovered that spikes in traffic can overwhelm our middle-tier. To deal 
 
 The first step in creating a queue is to create the Azure Storage Account that will store our data.
 
-<!-- Activate the sandbox -->
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create a Storage Account with the Azure CLI
 
 > [!TIP] 

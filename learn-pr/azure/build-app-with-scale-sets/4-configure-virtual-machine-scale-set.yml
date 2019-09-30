@@ -3,8 +3,8 @@ uid: learn.build-app-with-scale-sets.configure-virtual-machine-scale-set
 title: Configure a virtual machine scale set
 
 metadata:
-  title: Configuring a virtual machine scale set
-  description: Configuring a virtual machine scale set
+  title: Configure a virtual machine scale set
+  description: Configure a virtual machine scale set
   ms.date: 09/02/2019
   author: jboeshart
   ms.author: jaboes

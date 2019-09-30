@@ -1,4 +1,4 @@
-To make share an API, you import the API into API Management, and then make it available by publishing it.
+To share an API, you import the API into API Management, and then make it available by publishing it.
 
 In the shoe company example, you're now ready to import and publish an API so that partners can access inventory and product information. 
 

@@ -5,9 +5,6 @@ Let's have a look at some of this information.
 > [!IMPORTANT]
 > This exercise uses the WordPress website you created in the  **Exercise - Create a Website** unit. Please make sure you've completed that exercise before continuing.
 
-
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 1. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
 1. Click on the **Dashboard** link on the left sidebar to access a list of all resources in your subscription.
@@ -74,11 +71,17 @@ For example, the **Settings** section gives you access to configure various aspe
 
     Within each category, there are recommended pricing tiers that will allow us to scale the resources available to our App service. These pricing tiers give us access to the additional features mentioned above.
 
-    [ ![](../media/5-scale.png "Screenshot showing App Service graphs")](../media/5-scale-expanded.png#lightbox)
-
-1. Click the **Apply** button to activate the new price tier.
-
     > [!NOTE]
     > Some pricing tiers do not allow for direct migration without redeploying your site. For example, in the production tab, you'll notice that all but the S1 pricing tier is supported for our current scale unit. If we decided that we'd like to move to P1V2, then we'll need to redeploy our application.
 
-    [ ![](../media/5-scale-support.png "Screenshot showing App Service graphs")](../media/5-scale-support-expanded.png#lightbox)
+1. Select the **D1** pricing tier.
+
+    [ ![](../media/5-scale.png "Screenshot showing available App Service plans")](../media/5-scale-expanded.png#lightbox)
+
+1. Click the **Apply** button to activate the new price tier.
+
+1. The scaling process stops the website while the process runs. You can monitor the scale process's progress using the notification bell as we did earlier.
+
+    ![Screenshot showing scale process progress](../media/5-scale-progess.png)
+
+    Your website is automatically started once the scaling process complete.

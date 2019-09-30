@@ -11,7 +11,5 @@ metadata:
   ROBOTS: NOINDEX
 title: Exercise - Create web sites
 durationInMinutes: 10
-interactive: bash
-azureSandbox: true
 content: |
   [!include[](includes/3-exercise-create-web-sites.md)]

@@ -5,7 +5,7 @@
   :::column span="3":::
 *Economies of scale* is the ability to do things more efficiently or at a lower-cost per unit when operating at a larger scale. This cost advantage is an important benefit in cloud computing.
 
-Cloud providers such as Microsoft, Google, and Amazon are large businesses leveraging the benefits of economies of scale, and then pass the savings onto their customers.
+Cloud providers such as Microsoft, Google, and Amazon are large businesses leveraging the benefits of economies of scale. These providers can then pass the savings on to their customers.
   :::column-end:::
   :::column:::
 :::row-end:::

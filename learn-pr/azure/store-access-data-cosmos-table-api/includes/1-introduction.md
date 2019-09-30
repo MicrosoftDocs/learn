@@ -17,4 +17,3 @@ At the end of this module, you will be able to:
 
 - Ability to create and develop NoSQL databases
 - Ability to create and develop Azure Cosmos DB databases
-- Ability to parse JSON data by using C#

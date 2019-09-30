@@ -38,7 +38,7 @@ You've decided to build the web and application tiers for your logistics app on 
 
     Azure SQL Database comes with a firewall that's automatically configured to restrict connections from the Internet.
 
-    You can "whitelist" IP addresses you trust. Whitelisting lets you use Visual Studio, SQL Server Management Studio, or other tools to manage your Azure SQL database.
+    You can allow access to specific IP addresses that you trust. Doing so allows you to use Visual Studio, SQL Server Management Studio, or other tools to manage your Azure SQL database.
 
 With Azure SQL Database, we manage the hardware, software updates, and OS patches for you. We provide buying options to help you get the performance you need at a predictable cost. Azure SQL Database also comes with a firewall so that you can control access to your data.
 

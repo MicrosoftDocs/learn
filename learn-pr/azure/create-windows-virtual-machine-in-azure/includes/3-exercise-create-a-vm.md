@@ -1,7 +1,5 @@
 Recall that our company processes video content on Windows VMs. A new city has contracted us to process their traffic cameras, but it's a model we've not worked with before. We need to create a new Windows VM and install some proprietary codecs so we can begin processing and analyzing their images.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create a new Windows virtual machine
 
 We can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell. The easiest approach is the portal because it walks you through the required information and provides hints and helpful messages during the creation of the VM.

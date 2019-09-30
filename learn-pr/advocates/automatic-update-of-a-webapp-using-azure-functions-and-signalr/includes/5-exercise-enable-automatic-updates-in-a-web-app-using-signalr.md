@@ -370,7 +370,7 @@ Now you can change the application's data and observe how to the UI automaticall
 1. Return to Visual Studio Code and enter the following command in a new integrated terminal. Again, watch as the application automatically updates the stock ABC.
 
     ```bash
-    npm run update
+    npm run update-data
     ```
 
 After the database is updated, the UI looks something like the following screenshot:

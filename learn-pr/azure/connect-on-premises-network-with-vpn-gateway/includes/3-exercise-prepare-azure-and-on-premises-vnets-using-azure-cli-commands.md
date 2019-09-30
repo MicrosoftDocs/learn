@@ -8,11 +8,7 @@ In this exercise, you'll simulate an on-premises datacenter (HQ-Network) by usin
 
 In the diagram, notice that the local network gateway names in each location reflect the *target* networks rather than the *source* network. This is a good practice. It clarifies that the local network gateway refers to the *other* network that you're connecting to.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 In this unit, you'll configure the virtual networks with a subnet, add a gateway subnet, and then create the local network gateway by using the Azure CLI.
-
-[!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
 ## Create the Azure-side resources
 

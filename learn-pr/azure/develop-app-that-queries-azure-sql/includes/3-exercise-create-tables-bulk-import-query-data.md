@@ -2,8 +2,6 @@ The university currently stores their data in a series of comma-delimited files.
 
 In this exercise, you'll create a database server and a single database by using the SQL Database service. Next, you'll create tables and import data into the database. Finally, you'll use the query editor and the `sqlcmd` utility to query the data.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Examine the existing comma-delimited data
 
 1. In the Azure Cloud Shell window on the right side of your screen, run the following command to download the data files and application code for the university system.
@@ -149,7 +147,7 @@ You can now create the tables to store the data from the .csv files.
 
     ![The database page in the Azure portal with the query editor option highlighted](../media/3-query-editor-annotated.png)
 
-1. On the **coursedatabase*NNN* - Query editor** page, enter the following details, and then select **OK** to connect to the database service.
+1. On the **coursedatabase<em>NNN</em> - Query editor** page, enter the following details, and then select **OK** to connect to the database service.
 
     | Property  | Value  |
     |---|---|
@@ -288,7 +286,7 @@ You can now create the tables to store the data from the .csv files.
 
 1. On the **coursedatabase<em>NNN</em>** page, under **Overview**, select **Query editor**.
 
-1. On the **coursedatabase*NNN* - Query editor** page, enter the following details, and then select **OK** to connect to the database service.
+1. On the **coursedatabase<em>NNN</em> - Query editor** page, enter the following details, and then select **OK** to connect to the database service.
 
     | Property  | Value  |
     |---|---|

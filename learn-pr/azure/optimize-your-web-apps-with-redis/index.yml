@@ -19,7 +19,6 @@ abstract:  |
 prerequisites: |
   - Experience with app development
   - Experience using data in apps
-  - Basic .NET knowledge
 iconUrl: /learn/achievements/optimize-web-apps-with-redis.svg
 levels:
 - beginner

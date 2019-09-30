@@ -19,7 +19,7 @@ To avoid any unexpected costs in your Azure account, delete the **mslearn-factbo
 There is more that you can do to leverage the power of the Azure Bot Service.
 
 - Incorporating [Dialogs](http://aihelpwebsite.com/Blog/EntryId/9/Introduction-To-Using-Dialogs-With-The-Microsoft-Bot-Framework)
-- Add support for[FormFlow](https://blogs.msdn.microsoft.com/uk_faculty_connection/2016/07/14/building-a-microsoft-bot-using-microsoft-bot-framework-using-formflow/)
+- Add support for [FormFlow](https://blogs.msdn.microsoft.com/uk_faculty_connection/2016/07/14/building-a-microsoft-bot-using-microsoft-bot-framework-using-formflow/)
 - Support natural language with [Microsoft Language Understanding and Intelligence Services (LUIS)](https://docs.botframework.com/node/builder/guides/understanding-natural-language/).
 
 By using these features in conjunction with others, you can build sophisticated bots that respond to users' queries and commands and interact in a fluid, conversational, and non-linear manner.

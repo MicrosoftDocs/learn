@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.analyze-infrastructure-with-azure-monitor-logs.5-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 09/06/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-summary.md)]

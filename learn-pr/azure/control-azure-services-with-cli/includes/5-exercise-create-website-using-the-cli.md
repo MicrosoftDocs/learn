@@ -1,7 +1,5 @@
 Next, let's use the Azure CLI to create a resource group, and then to deploy a web app into this resource group.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ### Using a resource group
 
 When you're working with your own machine and Azure subscription, you'll need to first sign in to Azure using the `az login` command. However, signing in is unnecessary when you are using the browser-based Cloud Shell environment.
@@ -44,7 +42,9 @@ When you run Web Apps using the Azure App Service, you pay for the Azure compute
 1. Create an App Service plan to run your app. The following command specifies the free pricing tier, but you can run `az appservice plan create --help` to see the other pricing tiers.
 
    > [!NOTE]
-   > The name of the app and plan must be _unique_ in all of Azure. The variables that you created earlier will assign random values as suffixes to make sure they're unique. However, if you receive an error when you are creating any resources, you should run the commands listed earlier to reset all of the variables with new random values.
+   > The name of the app and plan must be _unique_ in all of Azure. The variables that you created earlier will assign random values as suffixes to make sure they're unique. However, if you receive an error when you are creating any resources, you should run the commands listed earlier to reset all of the variables with new random values. 
+   >
+   > If you receive an error about the resource group, run the commands listed earlier with a different resource group value.
 
    ```azurecli
    az appservice plan create --name $AZURE_APP_PLAN --resource-group $RESOURCE_GROUP --location $AZURE_REGION --sku FREE

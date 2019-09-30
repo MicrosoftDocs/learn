@@ -1,5 +1,5 @@
 Deploy the app to Azure App Service by running the following command:
 
-```bash
+```azurecli
 az webapp up
 ```

@@ -29,6 +29,9 @@ products:
 - azure-site-recovery
 - azure-traffic-manager
 - azure-app-service
+- azure-load-balancer
+- azure-backup
+- azure-application-gateway
 units:
 - learn.design-for-availability-and-recoverability.1-introduction
 - learn.design-for-availability-and-recoverability.2-high-availability

@@ -2,8 +2,6 @@ To use Azure Active Directory (Azure AD) as an authentication provider for your 
 
 Here, you'll create and configure an application registration.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create an Azure AD tenant
 
 To start, you'll use the Azure portal to create a new Azure AD tenant.

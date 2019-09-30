@@ -1,5 +1,3 @@
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 In this unit, we'll deploy a Logic Apps workflow using an Azure Resource Manager (ARM) template. 
 
 ### Creating resources in Azure

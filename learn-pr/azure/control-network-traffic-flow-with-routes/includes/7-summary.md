@@ -1,10 +1,10 @@
-In this module, you've learned about customizing routes in an Azure virtual network and how you can redirect the flow of traffic through a network virtual appliance. You also learned you can create your own custom network virtual appliance by deploying an Azure VM.
+In this module, you learned how to customize routes in an Azure virtual network and how to redirect the traffic flow through a network virtual appliance. You also learned how to create your own custom network virtual appliance by deploying an Azure virtual machine.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
 ## Learn more
 
-For more information on using routes in your network infrastructure, visit the following articles.
+For more information on using routes in your network infrastructure, see the following articles:
 
 - [Virtual network traffic routing](https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview)
 - [Tutorial: Route network traffic with a route table using the Azure portal](https://docs.microsoft.com/azure/virtual-network/tutorial-create-route-table-portal)

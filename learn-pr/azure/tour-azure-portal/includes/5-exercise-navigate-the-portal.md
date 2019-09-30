@@ -61,15 +61,13 @@ Finally, there are a variety of management and programming tools included in the
 
 1. Under **High contrast theme**, try the three different options.
 
-1. Disable Toast notifications. This means notifications will not appear as pop-up "toast"-style notifications, but will still show up in the Notifications (bell) icon as always.
+1. Click **Enable pop-up notifications**. This means notifications will not appear as pop-up "toast"-style notifications, but will still show up in the Notifications (bell) icon as always.
 
-1. Note the **Allow double-click on dashboard to change theme** setting, enabled by default. When enabled, you can use the mouse to cycle through the various color themes without opening this Settings menu by double-clicking the left mouse button in the Dashboard view's background area. Disable this option to avoid accidentally changing your color theme.
+1. Note the **Change the theme by double-clicking the dashboard** setting, enabled by default. When enabled, you can use the mouse to cycle through the various color themes without opening this Settings menu by double-clicking the left mouse button in the Dashboard view's background area. Disable this option to avoid accidentally changing your color theme.
 
-1. Click **Apply** to accept your changes.
+1. Click the **Settings** (cog) icon in the top menu bar and, under **Language**, select **Español**, and then click the **Apply** button. If a **Translate this page** dialog box appears, close the box. Note that the whole portal is now in Spanish.
 
-1. Click the **Settings** (cog) icon in the top menu bar and, under **Language**, select **Español**, and then click the **Refresh** button. If a **Translate this page** dialog box appears, close the box. Note that the whole portal is now in Spanish.
-
-1. Click the **Settings** (cog) icon in the top menu bar and, under **Idioma**, select **English**. Click the **Actualizar** button. The portal returns to English.
+1. Click the **Settings** (cog) icon in the top menu bar and, under **Idioma**, select **English**. Click the **Aplicar** button. The portal returns to English.
 
 ## Feedback blade
 
