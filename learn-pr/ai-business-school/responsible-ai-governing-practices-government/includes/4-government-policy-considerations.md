@@ -10,7 +10,7 @@ For AI to realize its full potential, its development needs to be shaped to fost
 
 ## An industry view on responsible AI
 
-Microsoft shared our view of responsible AI in [The Future Computed: Artificial Intelligence and Its Role in Society](https://blogs.microsoft.com/blog/2018/01/17/future-computed-artificial-intelligence-role-society/), identifying six principles to guide the cross-disciplinary development and use of AI technologies: fairness, reliability and safety, privacy and security, inclusivity, transparency, and accountability.
+Microsoft shared our view of responsible AI in [The Future Computed: Artificial Intelligence and Its Role in Society](https://blogs.microsoft.com/blog/2018/01/17/future-computed-artificial-intelligence-role-society/), identifying six principles to guide the cross-disciplinary development and use of AI technologies: fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability.
 
 Internally, Microsoft has created the AI and Ethics in Engineering & Research (Aether) Committee. This committee is a cross-company group that advises our Senior Leadership Team on rising questions, challenges, and opportunities with the development and fielding of AI and related technologies.
 
