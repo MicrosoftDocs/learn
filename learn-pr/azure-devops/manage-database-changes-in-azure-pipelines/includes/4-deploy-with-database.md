@@ -150,7 +150,7 @@ You can now create the tables to store the data.
 1. Run the following command to import the data in the **profileAchievements.csv** file to the dbo.ProfileAchievements table.
 
     ```bash
-    bcp ProfileAchievements in profileAchievements.csv -S "$DATABASE_SERVER.database.windows.net" -d DATABASE_NAME -U $AZURE_USER -P $AZURE_PASSWORD -q -c -t ,
+    bcp ProfileAchievements in profileAchievements.csv -S "$DATABASE_SERVER.database.windows.net" -d $DATABASE_NAME -U $AZURE_USER -P $AZURE_PASSWORD -q -c -t ,
     ```
 
     Verify that this command imports 121 rows.
@@ -197,15 +197,7 @@ In [Create a release management workflow with Azure Pipelines](/learn/modules/cr
 
 To make the commands easier to run, start by selecting a default region. After you specify the default region, later commands use that region unless you specify a different region.
 
-1. From Cloud Shell, run the following `az account list-locations` command to list the regions that are available from your Azure subscription.
-
-    ```azurecli
-    az account list-locations --query "[].{Name: name, DisplayName: displayName}" --output table
-    ```
-
-1. From the **Name** column in the output, choose a region that's close to you, for example, **eastasia** or **westus2**.
-
-1. Run `az configure` to set your default region. Replace **\<REGION>** with the name of the region you chose.
+1. Run `az configure` to set your default region. Replace **\<REGION>** with the name of the region you chose for your database.
 
     ```bash
     az configure --defaults location=<REGION>
@@ -237,7 +229,7 @@ To do so, you:
     webappsuffix=$RANDOM
     ```
 
-1. Run the following `az appservice plan create` command to create a resource group that's named **tailspin-space-game-asp**.
+1. Run the following `az appservice plan create` command to create an app service plan that's named **tailspin-space-game-asp**.
 
     ```bash
     az appservice plan create \
@@ -384,7 +376,7 @@ Here you add the pipeline stage that will check for database schema changes so t
 1. Open the **azure-pipelines.yml** file you got when you switched to the **database** branch.
 1. Copy the new pipeline below and replace the code that is already in the **azure-pipelines.yml** file.
 
-    [!code-yml[](code/azure-pipelines1.yml)]
+    [!code-yml[](code/azure-pipelines1.yml?highlight=78-94,96-130,132-160)]
 
     This pipeline adds a new build job for the Tailspin.SpaceGame.Database project. This will result in a `.dacpac` file being created that contains information about the database schema. That `.dacpac` file will be copied and saved off as an artifact called **dropDacpac**.
 
@@ -435,7 +427,29 @@ Here you add the pipeline stage that will check for database schema changes so t
             Get-Content d:\a\1\s\GeneratedOutputFiles\Tailspin_Script.sql | foreach {Write-Output $_}
     ```
 
-1. Save the file and commit it, but do not push it to origin yet. you still have some setup to do in Azure DevOps.
+The `DBAVerificationApply` stage will read the auto generated file and apply the change script to the database.
+
+   ```yml
+        steps:
+        - download: current
+        artifact: dropDacpac
+        patterns: '**/*'
+        - task: SqlAzureDacpacDeployment@1
+        displayName: 'Deploy SQL Schema'
+        inputs:
+            azureSubscription: 'Resource Manager - Tailspin - SpaceGame'
+            AuthenticationType: 'server'
+            ServerName: '$(servername).database.windows.net'
+            DatabaseName: '$(databasename)'
+            SqlUsername: '$(adminlogin)'
+            SqlPassword: '$(adminPassword)'
+            deployType: 'DacpacTask'
+            DeploymentAction: 'Publish'
+            DacpacFile: '$(Pipeline.Workspace)/dropDacpac/Tailspin.SpaceGame.Database/bin/Debug/tailspin.SpaceGame.Database.dacpac'
+            IpDetectionMethod: 'AutoDetect'
+   ```
+
+1. Save the file and commit it, but do not push it to origin yet. You still have some setup to do in Azure DevOps.
 
     ```bash
     git add azure-pipelines.yml
@@ -443,6 +457,8 @@ Here you add the pipeline stage that will check for database schema changes so t
     ```
 
 ### Create an environment for manual approval
+
+Here you create the manual approval for the `DBAVerificationApply` stage. You learned about manual approvals in the last module. Recall that you need to set up an environment and add an approver.
 
 1. From Azure Pipelines, select **Environments**
 1. Select **New environment**.
@@ -468,7 +484,7 @@ Here you add the pipeline stage that will check for database schema changes so t
     git push origin database
     ```
 
-1. Select the pipeline and wait for the manual approval of the database schema. When the pipeline stops for approval, click on the `DBAVerificationScript` stage and look at the change script that was created. It will be in the **Show automated SQL Script** section. The script should not have any changes since we didn't change anything in the database yet. You will know there are no changes if you do not see **CREATE**, **ALTER**, or **DROP** statements in the script.
+1. Select the pipeline and wait for the manual approval of the database schema. When the pipeline stops for approval, click on the `DBAVerificationScript` stage and look at the change script that was created. It will be in the **Show automated SQL Script** section. The script should not have any changes since we didn't change anything in the database yet. You will know there are no changes because you do not see **CREATE**, **ALTER**, or **DROP** statements in the script.
 1. Go back to the pipeline and select the **waiting** button on the `DBAVerificationApply`. Select **Review** and then **Approve**.
 1. Wait for the pipeline to finish deployments.
 

@@ -2,15 +2,15 @@
 uid: learn.azdo.manage-database-changes-in-azure-pipelines.
 metadata:
   title: Manage database changes in Azure Pipelines - Learn
-  description: CManage database changes in Azure Pipelines
-  ms.date: 09/01/2019
+  description: Connect your webapp to an Azure SQL Database and manage database schema changes by using a release approval.
+  ms.date: 09/30/2019
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
 title: Manage database changes in Azure Pipelines
-summary: Manage database changes in Azure Pipelines
+summary: Connect your webapp to an Azure SQL Database and manage database schema changes by using a release approval.
 abstract: |
   In this module, you will:
   - Securely access an Azure SQL database from your App Service.

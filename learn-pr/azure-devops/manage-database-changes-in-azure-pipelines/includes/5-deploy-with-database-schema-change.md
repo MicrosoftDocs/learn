@@ -1,4 +1,4 @@
-Tim and Andy are happy with the pipeline and the manual approval of schema changes but they still need to try it with the actual changes that they are working on. Tim has gone to get the database administrator to show them the process and get the actual approval they need.
+Tim and Andy are happy with the pipeline and the manual approval of schema changes but they still need to try it with the actual changes that they are working on. Tim has gone to get the database administrator to show them the process and get the approval they need.
 
 ## Fetch the branch from GitHub
 
@@ -71,8 +71,8 @@ If the keyword search returns a match, create a variable in the pipeline variabl
     Install-Module VSTeam -Scope CurrentUser -Force
     Set-VSTeamAccount –Account $(Acct) -PersonalAccessToken $(PAT)
     $methodParameters = @{
-    ProjectName = "$(System.TeamProject)"
-    Name = "Release Pipeline"}
+      ProjectName = "$(System.TeamProject)"
+      Name = "Release Pipeline"}
     $vg = Get-VSTeamVariableGroup  @methodParameters 
     $vars = @{}
     $vg.value.variables | Get-Member -MemberType *Property | %{$vars.($_.Name) = $vg.value.variables.($_.Name)}
@@ -81,12 +81,12 @@ If the keyword search returns a match, create a variable in the pipeline variabl
     $vars.$varName.value = "True"
     $vars.$varName.isSecret = $false
     $methodParameters = @{
-    id = $vg.value.id
-    ProjectName = "$(System.TeamProject)"
-    Name = "Release Pipeline"
-    Description = "Variables for Tailspin Pipeline"
-    Type = "Vsts"
-    Variables = $vars}
+      id = $vg.value.id
+      ProjectName = "$(System.TeamProject)"
+      Name = "Release Pipeline"
+      Description = "Variables for Tailspin Pipeline"
+      Type = "Vsts"
+      Variables = $vars}
     Update-VSTeamVariableGroup @methodParameters}
    ```
 
@@ -94,7 +94,7 @@ In the `DBAVerificationApply` stage, you do the same thing, however instead of c
 
 ### Edit the pipeline to use a condition
 
-You will add a condition to the `DBAVerificationApply` stage to check that the new variable is set to true. The variable will not exist if there are no changes to the database schema and this stage will be skipped. Again, do not copy this yet. Soon you will replace the entire **azure-pipelines.yml** file contents as you did in the previous exercise.
+Here you add a condition to the `DBAVerificationApply` stage to check that the new variable is set to true. The variable will not exist if there are no changes to the database schema and this stage will be skipped. Again, do not copy this yet. Soon you will replace the entire **azure-pipelines.yml** file contents as you did in the previous exercise.
 
    ```yml
    - stage: DBAVerificationApply
@@ -106,31 +106,32 @@ You will add a condition to the `DBAVerificationApply` stage to check that the n
 
 ## Make the changes to the pipeline
 
-1. The VSTeam library needs to access your Azure DevOps organization, so it will need permission. Here you create a **Personal Access Token**.
-    1. Navigate to your Azure DevOps organization and select your picture in the upper right corner.
-    1. Select **Azure DevOps Profile**
-    1. In the **User Settings** pane on the left, under **Security**, select **Personal access tokens**.
+The VSTeam library needs to access your Azure DevOps organization, so it will need permission. Here you create a **Personal Access Token** for the VSTeam calls in the powershell script.
 
-         ![Profile page select personal access token](../media/5-select-personal-access-token.png)
+1. Navigate to your Azure DevOps organization and select your picture in the upper right corner.
+1. Select **Azure DevOps Profile**
+1. In the **User Settings** pane on the left, under **Security**, select **Personal access tokens**.
 
-    1. Select **+ New Token**
-    1. Enter **Database Changes** as the name and select **Full access**.
-    1. Select **Create**.
-    1. Be sure to copy that token as it will never be shown in plain text again.
+       ![Profile page select personal access token](../media/5-select-personal-access-token.png)
+
+1. Select **+ New Token**
+1. Enter **Database Changes** as the name and select **Full access**.
+1. Select **Create**.
+1. Be sure to copy that token as it will never be shown in plain text again.
 1. You need to add two variables to the **Release Pipeline** variable group.
-    1. Navigate to your **Space Game - web - database** project and select **Pipelines**.
-    1. Under **Pipelines**, select **Library**.
-    1. Select **Release Pipeline** and add the following variables:
+1. Navigate to your **Space Game - web - database** project and select **Pipelines**.
+1. Under **Pipelines**, select **Library**.
+1. Select **Release Pipeline** and add the following variables:
 
-    | Variable name         | Example value                            |
-    |-----------------------|------------------------------------------|
-    | **Acct**    | The name of your organization in Azure DevOps    |
-    | **PAT** | Paste your Personal Access Token - be sure to select the lock icon to encrypt this value. |
+| Variable name         | Example value                            |
+|-----------------------|------------------------------------------|
+| **Acct**    | The name of your organization in Azure DevOps    |
+| **PAT** | Paste your Personal Access Token - be sure to select the lock icon to encrypt this value. |
 
 1. Open the **azure-pipelines.yml** file you got when you switched to the **database-change** branch.
 1. Copy the new pipeline below and replace the code that is already in the **azure-pipelines.yml** file.
 
-    [!code-yml[](code/azure-pipelines2.yml)]
+    [!code-yml[](code/azure-pipelines2.yml?highlight=131-153,158,1193-219)]
 
     This pipeline adds to the PowerShell script to check the generated SQL script for the keywords **CREATE**, **ALTER**, or **DROP** and creates a `schemaChanged` variable and updates the pipeline variable group. Then a condition is added to the `DBAVerificationApply` stage to check for this variable. If this variable is `True`, there is a change that needs approval, if it is not there, then there are no changes in the script and this stage is skipped because the condition fails.
 
