@@ -11,7 +11,7 @@ Start by deploying a new VM from a Windows Server 2016 image.
     PASSWORD=$(openssl rand -base64 32)
     ```
 
-1. Run the following command in the Cloud Shell to create a VM.
+1. Run the following command in Cloud Shell to create a VM.
 
     ```azurecli
     az vm create \
@@ -52,7 +52,7 @@ Start by deploying a new VM from a Windows Server 2016 image.
 
 ## Create an Azure Automation account
 
-1. Use your MSLearn account to sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Use your Microsoft Learn account to sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
 1. In the left pane, select **Create a resource**.
 
@@ -193,7 +193,7 @@ If you needed to add modules, in your automation account you would go to **Share
 
 ## Verify that IIS is installed on the VM
 
-In your web browser, go to `http://[public-ip]` where `[public-ip]` is the public IP address of your VM. You recorded this address when you first created the VM.
+In your web browser, go to `http://[public-ip]`. Here, `[public-ip]` is the public IP address of your VM. You recorded this address when you first created the VM.
 
 You should see the default IIS webpage. IIS has been deployed. Azure Automation used the PowerShell DSC script you uploaded to your Azure Automation account.
 
