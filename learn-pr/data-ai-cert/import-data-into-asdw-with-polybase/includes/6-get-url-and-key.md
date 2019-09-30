@@ -23,6 +23,8 @@ Use the Azure portal to get both of these values.
 
     ![Copying the URL](../media/6-copy-url.png)
 
+> [!NOTE]  You will be manipukating the URL using the location **demodwstorage.blob.core.windows.net** and the container **data-files**. They become important when you import data from blob storage to Azure SQL Data Warehouse by using PolyBase in the next unit
+
 1. Save the URL into the same text file.
 
 > [!IMPORTANT]
