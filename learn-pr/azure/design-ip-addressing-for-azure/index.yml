@@ -26,6 +26,8 @@ roles:
 - solution-architect
 products:
 - azure
+- azure-virtual-network
+- azure-vpn-gateway
 units:
 - learn.design-ip-addressing-for-azure.1-introduction
 - learn.design-ip-addressing-for-azure.2-network-ip-addressing-and-integration
