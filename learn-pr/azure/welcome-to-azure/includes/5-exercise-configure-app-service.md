@@ -66,14 +66,6 @@ For example, the **Settings** section gives you access to configure various aspe
 
     Within each category, there are pricing tiers that will allow us to scale the resources available to our App service. These pricing tiers give us access to the additional features mentioned above.
 
-1. Select the **D1** pricing tier.
+    We'll leave the configuration on the **F1** tier, but know that this is where you can go to make scaling adjustments in your app service if you have changes in load for your application.
 
-    [ ![](../media/5-scale.png "Screenshot showing available App Service plans")](../media/5-scale-expanded.png#lightbox)
-
-1. Click the **Apply** button to activate the new price tier.
-
-1. The scaling process stops the website while the process runs. You can monitor the scaling progress using the notification bell as we did earlier.
-
-    ![Screenshot showing scale process progress](../media/5-scale-progess.png)
-
-    Your website is automatically started once the scaling process complete.
+    Let's now take a look at how to use the Cloud Shell to configure Azure resources, such as App Service.
