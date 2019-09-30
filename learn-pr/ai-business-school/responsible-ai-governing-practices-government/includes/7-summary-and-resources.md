@@ -12,7 +12,7 @@ To help you consider how to leverage governance and external engagements in your
 
 ### Establishing an AI governance system
 
-1. **Choose a governance structure** that best fits your organization’s AI maturity, unique characteristics, culture, and business objectives
+1. **Choose a governance structure** that best fits your organization’s AI maturity, unique characteristics, culture, and business objectives.
 1. **Outline the specific role of your governance system** within your organization. Responsibilities could include developing and enforcing policies, providing advice, and mitigating risks associated with AI systems.
 1. **Allocate sufficient budget and resources** to give your governance system the power to enforce responsible AI policies.
 1. **Adapt your governance system(s)** over time as your objectives and capabilities change.
