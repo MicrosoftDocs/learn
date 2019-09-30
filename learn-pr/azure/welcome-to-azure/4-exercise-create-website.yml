@@ -15,7 +15,6 @@ durationInMinutes: 7
 content: |
   [!include[](includes/4-exercise-create-website.md)]
 tasks:
-tasks:
 - action: exists
   environment: azure
   azure:
