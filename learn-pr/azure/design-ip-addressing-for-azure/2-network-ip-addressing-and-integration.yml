@@ -2,8 +2,8 @@
 uid: learn.design-ip-addressing-for-azure.2-network-ip-addressing-and-integration
 metadata:
   title: Network IP addressing and integration
-  description: In this unit, you will learn about Azure virtual networks and how to connect them to on-premises networks.
-  ms.date: 07/15/2019
+  description: Network IP addressing and integration
+  ms.date: 10/02/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial

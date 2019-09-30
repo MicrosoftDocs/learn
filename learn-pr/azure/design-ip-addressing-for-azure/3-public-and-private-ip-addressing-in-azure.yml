@@ -2,8 +2,8 @@
 uid: learn.design-ip-addressing-for-azure.3-public-and-private-ip-addressing-in-azure
 metadata:
   title: Public and private IP addressing in Azure
-  description: In this unit, you'll learn about public and private IP addresses in Azure and how to assign them to resources, such as virtual machines.
-  ms.date: 04/30/2019
+  description: Public and private IP addressing in Azure
+  ms.date: 10/02/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial

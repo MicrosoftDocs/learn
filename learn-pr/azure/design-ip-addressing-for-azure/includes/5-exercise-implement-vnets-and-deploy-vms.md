@@ -19,15 +19,11 @@ You will create the following resources:
 | RDVNet | West India | 10.40.40.0/28 | RD | 10.40.40.0/28 |
 | | | | | |
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create the virtual networks
-
-<!-- ToDO: add blurb -->
 
 1. In Cloud Shell, run the following command to create the virtual network and subnet for the **Finance** branch:
 
-    ```bash
+    ```azurecli
     az network vnet create --resource-group <rgn>[sandbox resource group name]</rgn> \
       --name FinanceVNet \
       --address-prefix 10.20.0.0/16 \
@@ -36,10 +32,9 @@ You will create the following resources:
       --location WestUS
     ```
 
-
 1. Run this command to create the virtual network and subnet for the **Sales** branch:
 
-    ```bash
+    ```azurecli
     az network vnet create --resource-group <rgn>[sandbox resource group name]</rgn> \
       --name SalesVNet \
       --address-prefix 10.30.30.0/24 \
@@ -50,7 +45,7 @@ You will create the following resources:
 
 1. Run this command to create the virtual network and subnet for the **Research and Development** branch:
 
-    ```bash
+    ```azurecli
     az network vnet create --resource-group <rgn>[sandbox resource group name]</rgn> \
       --name RDVNet \
       --address-prefix 10.40.40.0/28 \
@@ -59,20 +54,19 @@ You will create the following resources:
       --location WestIndia
     ```
 
-
 ## Verify the virtual network configuration
 
 Let's take a quick look at what you created.
 
 1. In Cloud Shell, run this command to view the virtual networks:
 
-    ```bash
+    ```azurecli
     az network vnet list --output table
     ```
 
     You should see an output like this:
 
-    ```bash
+    ```output
     Name ResourceGroup Location NumSubnets Prefixes DnsServers DDOSProtection VMProtection
     -------------- ------------------------------------ ----------- ------------ ----------- ------------ ---------------- --------------
     FinanceVNet <rgn>[sandbox resource group name]</rgn> WestUS 1 10.20.0.0/16 False False

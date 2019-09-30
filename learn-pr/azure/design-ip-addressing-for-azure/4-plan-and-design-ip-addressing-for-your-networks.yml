@@ -2,8 +2,8 @@
 uid: learn.design-ip-addressing-for-azure.4-plan-and-design-ip-addressing-for-your-networks
 metadata:
   title: Planning the IP addressing for your networks
-  description: In this unit, you'll plan, on paper, the IP addressing scheme from three virtual networks that you want to create in Azure.
-  ms.date: 07/15/2019
+  description: Planning the IP addressing for your networks
+  ms.date: 10/02/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
