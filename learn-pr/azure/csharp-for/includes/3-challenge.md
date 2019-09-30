@@ -12,7 +12,7 @@ Select all of the code in the .NET Editor then select the `del` or backspace key
 
 **FizzBuzz rules:**
 
-- Print values from 1 to 100.
+- Output values from 1 to 100, one number per line.
 - When the current value is divisible by 3, print the term `Fizz` next to the number.
 - When the current value is divisible by 5, print the term `Buzz` next to the number.
 - When the current value is divisible by **both** 3 and 5, print the term `FizzBuzz` next to the number.

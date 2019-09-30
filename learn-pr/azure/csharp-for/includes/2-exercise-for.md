@@ -185,6 +185,7 @@ However, you can accomplish the same functionality using the `for` statement.
 Update the code in the .NET Editor to match the following code listing.
 
 ```csharp-interactive
+string[] names = { "Alex", "Eddie", "David", "Michael" };
 for (int i = 0; i < names.Length; i++)
     if (names[i] == "David") names[i] = "Sammy";
 
