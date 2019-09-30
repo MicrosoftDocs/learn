@@ -10,23 +10,23 @@ For AI to realize its full potential, its development needs to be shaped to fost
 
 ## An industry view on responsible AI
 
-Microsoft shared our view of responsible AI in [The Future Computed: Artificial Intelligence and Its Role in Society](https://blogs.microsoft.com/blog/2018/01/17/future-computed-artificial-intelligence-role-society/), identifying six principles to guide the cross-disciplinary development and use of AI technologies: fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability.
+Microsoft shared our view of responsible AI in The Future Computed: Artificial Intelligence and Its Role in Society, identifying six principles to guide the cross-disciplinary development and use of AI technologies: fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability.<sup>5</sup>
 
 Internally, Microsoft has created the AI and Ethics in Engineering & Research (Aether) Committee. This committee is a cross-company group that advises our Senior Leadership Team on rising questions, challenges, and opportunities with the development and fielding of AI and related technologies.
 
-In September 2016, Microsoft cofounded the Partnership on AI (PAI) “to study and formulate best practices on AI technologies, to advance the public’s understanding of AI, and to serve as an open platform for discussion and engagement about AI and its influences on people and society.”<sup>5</sup> PAI now has more than 100 organizations (>50% are non-profits) from 13 countries and 4 continents.
+In September 2016, Microsoft cofounded the Partnership on AI (PAI) “to study and formulate best practices on AI technologies, to advance the public’s understanding of AI, and to serve as an open platform for discussion and engagement about AI and its influences on people and society.”<sup>6</sup> PAI now has more than 100 organizations (>50% are non-profits) from 13 countries and 4 continents.
 
 To encourage development of AI solutions to address global challenges, the Microsoft [AI for Good](https://www.microsoft.com/ai/ai-for-good) initiative is a $125 million, five-year commitment to encourage and support development of innovative AI solutions by organizations around the world. These organizations are working to address global challenges in accessibility, sustainability for the earth, humanitarian action, and the preservation of cultural heritage.
 
 ## Fostering trustworthy AI
 
-Recognizing the economic transformation potential of AI, many governments have announced their national AI strategies. Global implementation of responsible AI received a boost in May 2019, when 36 OECD member countries, along with Argentina, Brazil, Colombia, Peru, and Romania, approved the [Recommendations of the OECD Council on Artificial Intelligence](https://www.oecd.org/going-digital/ai/principles/). These recommendations contained the principles for responsible stewardship of trustworthy AI. These principles were also adopted by the G20 countries, including the EU, in June 2019.
+Recognizing the economic transformation potential of AI, many governments have announced their national AI strategies. Global implementation of responsible AI received a boost in May 2019, when 36 OECD member countries, along with Argentina, Brazil, Colombia, Peru, and Romania, approved the Recommendations of the OECD Council on Artificial Intelligence. These recommendations contained the principles for responsible stewardship of trustworthy AI. These principles were also adopted by the G20 countries, including the EU, in June 2019.<sup>7</sup>
 
 The recommendations, developed by an AI expert group that included representatives from academia, civil society, trade unions, business, and governments from around the world, clearly demonstrated the value of multistakeholder consultation in policy development. They are high-level principles, intended to foster trust and shape the continuing development of AI to be more trustworthy. They aren't prescriptive in ways that can restrict innovation.
 
 As more countries adopt the principles, it is hoped they will lead to development of AI systems that warrant the trust of individuals and society, which will enable broader adoption and realization of the transformative potential of AI. The OECD also included five recommendations to governments on national policies and international cooperation for trustworthy AI.
 
-The EU High Level Expert Group on AI also published its Ethics Guidelines on Artificial Intelligence in June 2019, and recommendations to help the Commission and Member States to update their joint coordinated plan on AI at the end of 2019.<sup>6</sup>
+The EU High Level Expert Group on AI also published its Ethics Guidelines on Artificial Intelligence in June 2019, and recommendations to help the Commission and Member States to update their joint coordinated plan on AI at the end of 2019.<sup>8</sup>
 
 Both the OECD and EU are encouraging implementations of their proposed principles as the next step, with the goal of sharing best practices and comments based on those implementations.
 
