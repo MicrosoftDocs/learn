@@ -84,8 +84,11 @@ print('Data loaded')
 To verify we've loaded the data, let's display one of the sample images + labels using matplotlib.  This may take a minute or two to run.
 
 ```python
+%matplotlib inline 
+
 import matplotlib.pyplot as plt
 import numpy as np
+
 
 count = 0
 sample_size = 30

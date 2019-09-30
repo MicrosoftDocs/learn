@@ -182,7 +182,7 @@ script_params = {
 }
 
 #import the Scikit-learn package 
-est = Estimator(source_directory=folder_training_script,
+est = SKLearn(source_directory=folder_training_script,
                 script_params=script_params,
                 compute_target=compute_target,
                 entry_script='train.py',

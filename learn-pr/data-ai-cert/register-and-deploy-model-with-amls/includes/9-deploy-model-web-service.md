@@ -16,7 +16,7 @@ print('Done')
 2. In a prior unit, you created an image and stored it in an object named image.  To deploy the image, you can use code similar to the code below:
 
 ```python
-rom azureml.core.webservice import Webservice
+from azureml.core.webservice import Webservice
 
 service_name = 'aci-mnist-1'
 
