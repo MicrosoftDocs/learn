@@ -1,0 +1,291 @@
+variables:
+  buildConfiguration: 'Release'
+
+stages:
+- stage: 'Build'
+  displayName: 'Build Stage'
+  jobs:
+  - job: Build
+    displayName: 'Build job'
+    pool:
+      vmImage: 'Ubuntu-16.04'
+      demands:
+        - npm
+    variables:
+      wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
+      dotnetSdkVersion: '2.1.505'
+    steps:
+    - task: DotNetCoreInstaller@0
+      displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
+      inputs:
+        version: '$(dotnetSdkVersion)'
+
+    - task: Npm@1
+      displayName: 'Run npm install'
+      inputs:
+        verbose: false
+
+    - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
+      displayName: 'Compile Sass assets'
+
+    - task: gulp@1
+      displayName: 'Run gulp tasks'
+
+    - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
+      displayName: 'Write build info'
+      workingDirectory: $(wwwrootDir)
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Restore project dependencies'
+      inputs:
+        command: 'restore'
+        projects: '**/*.csproj'
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Build the project - $(buildConfiguration)'
+      inputs:
+        command: 'build'
+        arguments: '--no-restore --configuration $(buildConfiguration)'
+        projects: '**/*.csproj'
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Publish the project - $(buildConfiguration)'
+      inputs:
+        command: 'publish'
+        projects: '**/*.csproj'
+        publishWebProjects: false
+        arguments: '--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)'
+        zipAfterPublish: true
+    - publish: '$(Build.ArtifactStagingDirectory)'
+      artifact: drop
+  - job: BuildDacpac
+    pool:
+      name: Hosted Windows 2019 with VS2019
+    variables:
+      BuildConfiguration: Debug
+      BuildPlatform: any cpu
+    steps:
+    - task: DotNetCoreCLI@2
+      displayName: Restore
+      inputs:
+        command: restore
+        projects: '**/*.csproj'  
+    - task: DotNetCoreCLI@2
+      displayName: Build
+      inputs:
+        projects: '**/*.csproj'
+        arguments: '--configuration $(BuildConfiguration)'
+    - task: VSBuild@1
+      displayName: 'Build project Tailspin.SpaceGame.Database/Tailspin.SpaceGame.Database.sqlproj'
+      inputs:
+        project: Tailspin.SpaceGame.Database/Tailspin.SpaceGame.Database.sqlproj
+    - task: CopyFiles@2
+      displayName: 'Copy dacpac file to Staging'
+      inputs:
+        Contents: |
+          Tailspin.SpaceGame.Database/bin/**/*.dacpac
+        TargetFolder: '$(Build.StagingDirectory)'  
+
+    - task: PublishBuildArtifacts@1
+      displayName: 'Publish Artifact'
+      inputs:
+        PathtoPublish: '$(build.artifactstagingdirectory)'
+        artifactName: dropDacpac
+      condition: succeededOrFailed()
+
+- stage: DBAVerificationScript
+  dependsOn: Build
+  jobs:
+  - deployment: DBAVerificationScript
+    displayName: DBA Verify DB Deployment Script
+    pool:
+      name: Hosted Windows 2019 with VS2019
+    variables:
+    - group: 'Release Pipeline'
+    environment: 'dev-dbaverification'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - download: current
+            artifact: dropDacpac
+            patterns: '**/*'
+
+          - task: SqlAzureDacpacDeployment@1
+            displayName: Generate Auto Gen DB Update Script
+            inputs:
+              azureSubscription: 'Resource Manager - Tailspin - SpaceGame'
+              AuthenticationType: 'server'
+              ServerName: '$(servername).database.windows.net'
+              DatabaseName: '$(databasename)'
+              SqlUsername: '$(adminlogin)'
+              SqlPassword: '$(adminPassword)'
+              deployType: 'DacpacTask'
+              DeploymentAction: 'Script'
+              DacpacFile: '$(Pipeline.Workspace)/dropDacpac/Tailspin.SpaceGame.Database/bin/Debug/Tailspin.SpaceGame.Database.dacpac'
+              IpDetectionMethod: 'AutoDetect'
+          
+          - task: PowerShell@2
+            displayName: Show Auto Generated SQL Script - check for schema changes
+            inputs:
+              targetType: 'inline'
+              script: | 
+                Write-Host "Auto Generated SQL Update Script:"
+                Get-Content d:\a\1\s\GeneratedOutputFiles\$(databasename)_Script.sql | foreach {Write-Output $_}
+                $file = Get-Content "d:\a\1\s\GeneratedOutputFiles\$(databasename)_Script.sql"
+                $containsWord = $file | %{$_ -match "CREATE" -or $_ -match "ALTER" -or $_ -match "DROP"}
+                if ($containsWord -contains $true) {
+                  Install-Module VSTeam -Scope CurrentUser -Force
+                  Set-VSTeamAccount –Account $(Acct) -PersonalAccessToken $(PAT)
+                  $methodParameters = @{
+                    ProjectName = "$(System.TeamProject)"
+                    Name = "Release Pipeline"}
+                  $vg = Get-VSTeamVariableGroup  @methodParameters 
+                  $vars = @{}
+                  $vg.value.variables | Get-Member -MemberType *Property | %{$vars.($_.Name) = $vg.value.variables.($_.Name)}
+                  $varName = "schemaChanged"
+                  $vars.$varName= @{}
+                  $vars.$varName.value = "True"
+                  $vars.$varName.isSecret = $false
+                  $methodParameters = @{
+                    id = $vg.value.id
+                    ProjectName = "$(System.TeamProject)"
+                    Name = "Release Pipeline"
+                    Description = "Variables for Tailspin Pipeline"
+                    Type = "Vsts"
+                    Variables = $vars}
+                  Update-VSTeamVariableGroup @methodParameters}
+
+- stage: DBAVerificationApply
+  variables:
+  - group: 'Release Pipeline'
+  condition: and(succeeded(), eq(variables['schemaChanged'], 'True'))
+  dependsOn: DBAVerificationScript
+  jobs:
+  - deployment: DBAVerificationApply
+    displayName: DBA Verify DB Deployment Apply
+    pool:
+      name: Hosted Windows 2019 with VS2019
+    variables:
+    - group: 'Release Pipeline'
+    environment: 'dbaverification'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - download: current
+            artifact: dropDacpac
+            patterns: '**/*'              
+          - task: SqlAzureDacpacDeployment@1
+            displayName: 'Deploy SQL Schema'
+            inputs:
+              azureSubscription: 'Resource Manager - Tailspin - SpaceGame'
+              AuthenticationType: 'server'
+              ServerName: '$(servername).database.windows.net'
+              DatabaseName: '$(databasename)'
+              SqlUsername: '$(adminlogin)'
+              SqlPassword: '$(adminPassword)'
+              deployType: 'DacpacTask'
+              DeploymentAction: 'Publish'
+              DacpacFile: '$(Pipeline.Workspace)/dropDacpac/Tailspin.SpaceGame.Database/bin/Debug/tailspin.SpaceGame.Database.dacpac'
+              IpDetectionMethod: 'AutoDetect'
+          - task: PowerShell@2
+            displayName: Update pipeline variable
+            inputs:
+              targetType: 'inline'
+              script: | 
+                Write-Host "remove pipeline variable"
+                Install-Module VSTeam -Scope CurrentUser -Force
+                Set-VSTeamAccount –Account $(Acct) -PersonalAccessToken $(PAT)
+                $methodParameters = @{
+                  ProjectName = "$(System.TeamProject)"
+                  Name = "Release Pipeline"}
+                $vg = Get-VSTeamVariableGroup  @methodParameters 
+                $vars = @{}
+                $vg.value.variables | Get-Member -MemberType *Property | %{$vars.($_.Name) = $vg.value.variables.($_.Name)}
+                $vars.Remove("schemaChanged")
+                $methodParameters = @{
+                  id = $vg.value.id
+                  ProjectName = "$(System.TeamProject)"
+                  Name = "Release Pipeline"
+                  Description = "Variables for Tailspin Pipeline"
+                  Type = "Vsts"
+                  Variables = $vars}
+                Update-VSTeamVariableGroup @methodParameters
+
+- stage: 'DeployDev'
+  displayName: 'Deploy to dev environment'
+  dependsOn: 
+  - DBAVerificationScript
+  - DBAVerificationApply
+  condition: |
+    and
+    (
+      succeeded('DBAVerificationScript'),
+      in(dependencies.DBAVerificationApply.result, 'Succeeded', 'Skipped')
+    )
+  jobs:
+  - deployment: Deploy
+    pool:
+      vmImage: 'Ubuntu-16.04'
+    environment: dev
+    variables:
+    - group: 'Release Pipeline'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - download: current
+            artifact: drop
+          - task: AzureWebApp@1
+            displayName: 'Azure App Service Deploy: website'
+            inputs:
+              azureSubscription: 'Resource Manager - Tailspin - SpaceGame'
+              appName: '$(WebAppNameDev)'
+              package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
+
+- stage: 'DeployTest'
+  displayName: 'Deploy to test environment'
+  dependsOn: DeployDev
+  jobs:
+  - deployment: Deploy
+    pool:
+      vmImage: 'Ubuntu-16.04'
+    environment: test
+    variables:
+    - group: 'Release Pipeline'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - download: current
+            artifact: drop
+          - task: AzureWebApp@1
+            displayName: 'Azure App Service Deploy: website'
+            inputs:
+              azureSubscription: 'Resource Manager - Tailspin - SpaceGame'
+              appName: '$(WebAppNameTest)'
+              package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
+
+- stage: 'DeployStaging'
+  displayName: 'Deploy to staging environment'
+  dependsOn: DeployTest
+  jobs:
+  - deployment: Deploy
+    pool:
+      vmImage: 'Ubuntu-16.04'
+    environment: staging
+    variables:
+    - group: 'Release Pipeline'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - download: current
+            artifact: drop
+          - task: AzureWebApp@1
+            displayName: 'Azure App Service Deploy: website'
+            inputs:
+              azureSubscription: 'Resource Manager - Tailspin - SpaceGame'
+              appName: '$(WebAppNameStaging)'
+              package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'

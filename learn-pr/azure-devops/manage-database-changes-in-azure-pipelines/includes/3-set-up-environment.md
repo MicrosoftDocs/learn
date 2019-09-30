@@ -28,12 +28,12 @@ The modules in this learning path form a progression, where you follow the Tails
 1. Run a template that sets up everything for you in your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=create-build-pipeline&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=manage-database-changes&azure-portal=true)
 
 From the Azure DevOps Demo Generator site, perform these steps to run the template.
 
 1. Select **Sign In** and accept the usage terms.
-1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - database**. Then select **Create Project**.
+1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - Deploy database**. Then select **Create Project**.
 
     <!-- ![Creating a project through the Azure DevOps Demo Generator](../media/4-create-new-project.png) -->
 
@@ -55,11 +55,7 @@ Recall that the team settled on these top issues for the current sprint.
 
 ![Backlog of tasks](../../shared/media/deploy-all-tasks.png)
 
-Here you move the item, **Manage database schema changes** to the **Doing** column and assign yourself to the work item.
-
-Recall that **Danage database schema changes* relates to managing database schema changes for the _Space Game_ web site.
-
-<!-- ![Work item details](../media/3-work-item-details.png) -->
+Here you move the item, **Connect the web app to a database** to the **Doing** column and assign yourself to the work item.
 
 To set up the work item:
 
@@ -67,11 +63,11 @@ To set up the work item:
 
     ![Azure DevOps showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
 
-1. From the **Manage database schema changes** work item, click the down arrow at the bottom of the card. Then assign the work item to yourself.
+1. From the **Connect the web app to a database** work item, click the down arrow at the bottom of the card. Then assign the work item to yourself.
 
     ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
 1. Move the work item from the **To Do** to the **Doing** column.
 
-    <!-- ![Azure Boards showing the card in the Doing column](../media/3-azure-boards-wi7-doing.png) -->
+ ![Work item details](../media/3-azure-boards-wi2-doing.png)
 
 At the end of this module, you move the card to the **Done** column after you've completed the task.

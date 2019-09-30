@@ -5,7 +5,7 @@ You're all done with the tasks for this module. Here, you'll move the work item 
 
 ## Clean up Azure resources
 
-Here, you delete your Azure App Service instances. The easiest way to do that is to delete their parent resource group. Deleting a resource group deletes all resources in that group.
+Here, you delete your Azure App Service instances and the database server and database. The easiest way to do that is to delete their parent resource group. Deleting a resource group deletes all resources in that group.
 
 In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you managed Azure resources through the Azure portal. Here, you tear down your deployment by using the Azure CLI through Azure Cloud Shell, similar to how you created these resources earlier in this module.
 
@@ -36,16 +36,16 @@ To clean up your resource group:
 
 Here, you'll move the work item you assigned to yourself earlier in this module, **Manage database schema changes**, to the **Done** column.
 
-In practice, the definition of "Done" often means working software in the hands of your users. For learning purposes, here you'll mark this work as complete because the goal for the Tailspin team is to anage database schema changes for the web site.
+In practice, the definition of "Done" often means working software in the hands of your users. For learning purposes, here you'll mark this work as complete because the goal for the Tailspin team is to connect the web app to a database.
 
 At the end of each sprint, or work iteration, you and your team might hold a retrospective meeting, where you share the work you completed, what went well in the sprint, and what could be improved.
 
 To complete the work item:
 
 1. From Azure DevOps, navigate to **Boards** and then select **Boards** from the menu.
-1. Move the **Manage database schema changes** work item from the **Doing** to the **Done** column.
+1. Move the **Connect the app to a database** work item from the **Doing** to the **Done** column.
 
-    <!-- ![Azure Boards showing the card in the Done column](../media/6-azure-boards-wi7-done.png) -->
+    ![Azure Boards showing the card in the Done column](../media/6-azure-boards-wi2-done.png)
 
 ## Disable the pipeline or delete your project
 
@@ -81,7 +81,7 @@ This option deletes your Azure DevOps project, including what's on Azure Boards 
 
 To delete the project:
 
-1. From Azure DevOps, navigate to your project. Earlier, we recommended that you name this project **Space Game - web - Release workflow**.
+1. From Azure DevOps, navigate to your project. Earlier, we recommended that you name this project **Space Game - web - Deploy database**.
 1. Click the gear icon next to the project name.
 
     The icon might not appear until you move your mouse over that area.

@@ -10,9 +10,9 @@ Frequently, when an application uses a database, the database administrator and 
 
 In this module, you:
 
-- Access an Azure SQL database from your App Service.
+- Securely access an Azure SQL database from your App Service.
 - Add database schema changes to Azure pipeline approvals.
-- Make sure approval is needed only where there are actual schema changes
+- Make sure approval is needed only where there are actual schema changes.
 
 ## Prerequisites
 
@@ -20,21 +20,21 @@ The modules in this learning path form a progression.
 
 To follow the progression from the beginning, be sure to first complete these learning paths:
 
-* [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true)
-* [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true)
+- [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true)
+- [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true)
 
 We also recommend you start at the beginning of this learning path, [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops?azure-portal=true).
 
 To take just this module, go through these modules first to get set up with Azure DevOps and set up your development environment.
 
-* [Get started with Azure DevOps](/learn/modules/get-started-with-devops?azure-portal=true)
-* [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true)
+- [Get started with Azure DevOps](/learn/modules/get-started-with-devops?azure-portal=true)
+- [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true)
 
 When you're ready, make sure you have:
 
-* Your _Space Game_ project loaded in Visual Studio Code.
-* A browser window pointing to your fork of the _Space Game_ web site project on GitHub.
-* A browser window pointing to your Azure DevOps organization.
+- Your _Space Game_ project loaded in Visual Studio Code.
+- A browser window pointing to your fork of the _Space Game_ web site project on GitHub.
+- A browser window pointing to your Azure DevOps organization.
 
 > [!IMPORTANT]
 > You also need your own Azure subscription to complete the exercises in this module. You can [get started for free](https://azure.microsoft.com?azure-portal=true) if you don't have an Azure subscription.

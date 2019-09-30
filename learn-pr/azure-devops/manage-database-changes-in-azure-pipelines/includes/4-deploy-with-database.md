@@ -339,8 +339,6 @@ Here, you create a service connection that enables Azure Pipelines to access you
 
     Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps is unable to connect, you'll have the chance to sign in a second time.
 
-
-
 ## Create pipeline variables in Azure Pipelines
 
 In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you added a variable to your pipeline that stores the name of your web app in App Service. Here, you do the same. However, this time, you add one variable for each of the App Service instances that corresponds to the _Dev_, _Test_, and _Staging_ stages in your pipeline.
@@ -349,7 +347,7 @@ You will also need to create variables for the username and password for your Az
 
 To add the variable:
 
-1. In Azure DevOps, go to your **Space Game - web - Database** projecet.
+1. In Azure DevOps, go to your **Space Game - web - Database** project.
 1. Under **Pipelines**, select **Library**.
 
     ![Azure Pipelines showing the Library menu option](../../create-release-pipeline/media/5-pipelines-library.png)
