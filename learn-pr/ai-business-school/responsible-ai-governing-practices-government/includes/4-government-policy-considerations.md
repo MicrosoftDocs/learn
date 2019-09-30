@@ -38,12 +38,12 @@ Policy discussions should aim to promote broad development and use of AI systems
 
 ### Considerations
 
-* Continue to convene broad dialogues among government, business, researchers, civil society, and other interested stakeholders on how AI can be shaped to maximize its potential and mitigate its risks;
-* Adopt practical guiding principles to increase awareness of and encourage development of trustworthy AI;
-* Encourage sharing and promulgating of best practices in development and deployment of these technologies, especially at the sector level, leveraging industry-led organizations;
-* Stimulate the development and deployment of AI across all sectors and business of all sizes, including application of AI to address public and societal challenges, such as empowering underserved communities and those people with disabilities, and adoption of AI in the public sector;
+* Continue to convene broad dialogues among government, business, researchers, civil society, and other interested stakeholders on how AI can be shaped to maximize its potential and mitigate its risks.
+* Adopt practical guiding principles to increase awareness of and encourage development of trustworthy AI.
+* Encourage sharing and promulgating of best practices in development and deployment of these technologies, especially at the sector level, leveraging industry-led organizations.
+* Stimulate the development and deployment of AI across all sectors and business of all sizes, including application of AI to address public and societal challenges, such as empowering underserved communities and those people with disabilities, and adoption of AI in the public sector.
 * Enable responsible data sharing and collaboration with an appropriate regulatory framework that enables innovation but also preserves privacy, protects trade secrets, and encourages investment and market competition.
-* Invest in skills development training initiatives for people at all stages of the job continuum, and provide appropriate social protection for workers in the new economy;
+* Invest in skills development training initiatives for people at all stages of the job continuum, and provide appropriate social protection for workers in the new economy.
 * Fund short- and long-term multi-disciplinary research and development of responsible AI technologies and consider how AI can be used to provide insights into its potential socio-economic impact.  
 * Develop shared public data sets and environments for AI training and testing, to enable broader experimentation with AI and comparisons of alternative solutions to address ethical concerns.
 
