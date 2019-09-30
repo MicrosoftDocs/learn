@@ -82,11 +82,11 @@ By changing the three parts of the `for` statement, we change its behavior.
 
 - We initialize the iteration variable to 10.
 - We change the completion condition to exit the `for` statement when `i` is greater than or equal to `0`.
-- We change the pattern of the iteration to subtract `1` from `i` each time we complete an iteration.
+- We change the pattern of the iterator to subtract `1` from `i` each time we complete an iteration.
 
-### Step 3 - Experimenting with the iteration pattern
+### Step 3 - Experiment with the iterator's pattern
 
-What if we wanted to skip past certain values in the iteration variable?
+What if we wanted to skip past certain values in the iterator variable?
 
 Update the code in the .NET Editor to match the following code listing.
 
@@ -105,7 +105,7 @@ When you run the code, you'll see the following output.
 9
 ```
 
-Instead of incrementing or decrementing the value of the iteration variable by `1`, we use `i += 3` to skip two values after each iteration.
+Instead of incrementing or decrementing the value of the iterator variable by `1`, we use `i += 3` to skip two values after each iteration.
 
 Admittedly, you won't do this sort of thing often, but hopefully you can appreciate that you have a fine grained level of control should you ever need it.
 
@@ -208,6 +208,6 @@ Also, in this code example, you may notice we removed the curly braces since the
 Here are a few of the takeaways from this unit:
 
 - The `for` iteration statement allows you to iterate through a block of code a specific number of times.
-- The `for` iteration statement allows you to control every aspect of the iteration's mechanics by altering the three conditions inside the parenthesis.
+- The `for` iteration statement allows you to control every aspect of the iteration's mechanics by altering the three conditions inside the parenthesis: the initializer, condition, and iterator.
 - It's common to use the `for` statement when you need to control how you want to iterate through each item in an array.
 - If your code block has only one line of code, you can eliminate the opening and closing curly braces and white space if you wish.

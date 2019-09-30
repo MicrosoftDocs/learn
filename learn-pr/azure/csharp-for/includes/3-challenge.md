@@ -4,11 +4,13 @@ Code challenges throughout these modules will reinforce what you've learned and 
 
 FizzBuzz is a popular coding challenge and interview question.  It exercises your understanding of the `for`, the `if`, the `%` remainder operator, and your command of basic logic.
 
-### Step 1: Delete all of the code in the .NET Editor from the earlier exercise
+### Step 1 - Delete all of the code in the .NET Editor from the earlier exercise
 
 Select all of the code in the .NET Editor then select the `del` or backspace key to delete it.
 
-### Step 2: 
+### Step 2 - Implement the FizzBuzz challenge rules.
+
+Using the .NET Editor, implement each rule.
 
 **FizzBuzz rules:**
 
