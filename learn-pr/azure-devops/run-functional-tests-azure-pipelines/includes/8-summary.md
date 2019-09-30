@@ -1,6 +1,6 @@
 Great work! In this module, we defined a _functional test_ as a test that verifies that a given function of the software does what it should. We also defined some of the more popular kinds of functional tests, including smoke tests, unit tests, and UI tests.
 
-The Tailspin team chose one kind of functional tests to automate first: UI tests. They chose UI tests that Amita needed to run manually, which were tedious and time-consuming. By automating these tests, Amita can now focus more on usability testing, which is usually best performed by humans.
+The Tailspin team chose one kind of functional test to automate first: UI tests. They chose UI tests that Amita needed to run manually, which were tedious and time-consuming. By automating these tests, Amita can now focus more on usability testing, which is usually best performed by humans.
 
 When incorporating functional tests in your pipeline, focus on the kinds of tests that matter most. For example, if your application distributes work among other components, you might write integration tests that verify that all components work together to form a complete system.
 

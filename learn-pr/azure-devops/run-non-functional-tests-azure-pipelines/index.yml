@@ -1,28 +1,29 @@
 ### YamlMime:Module
 uid: learn.azdo.run-non-functional-tests-azure-pipelines
 metadata:
-  title: Run functional tests in Azure Pipelines - Learn
-  description: Run functional tests in Azure Pipelines
+  title: Run non-functional tests in Azure Pipelines - Learn
+  description: Run non-functional tests in Azure Pipelines
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
-title: Run functional tests in Azure Pipelines
-summary: Run functional tests in Azure Pipelines
+title: Run non-functional tests in Azure Pipelines
+summary: Run non-functional tests in Azure Pipelines
 abstract: |
   In this module, you will:
   - A
   - B
   - C
 prerequisites: |
+  - An Azure subscription
   - An Azure DevOps account
   - Visual Studio Code
   - .NET Core 2.1
   - Git
   - A GitHub account
-iconUrl: /learn/achievements/azure-devops/run-quality-tests-in-your-release-pipleline.svg
+iconUrl: /learn/achievements/azure-devops/run-non-functional-tests-azure-pipelines.svg
 levels:
 - intermediate
 roles:

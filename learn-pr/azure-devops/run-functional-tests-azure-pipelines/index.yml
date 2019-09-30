@@ -17,6 +17,7 @@ abstract: |
   - B
   - C
 prerequisites: |
+  - An Azure subscription
   - An Azure DevOps account
   - Visual Studio Code
   - .NET Core 2.1

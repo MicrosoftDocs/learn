@@ -51,7 +51,7 @@ In this part, you assign a work item to yourself on Azure Boards that relates to
 
 Assigning work in this way gives you a checklist to work from. It gives others on your team visibility into what you're working on and how much work is left. It also helps the team enforce Work in Progress (WIP) limits so that the team doesn't take on too much work at one time.
 
-Recall that the team settled on these three top issues for the current sprint.
+Recall that the team settled on these top issues for the current sprint.
 
 ![Azure Boards showing the tasks for this sprint](../../shared/media/deploy-all-tasks.png)
 

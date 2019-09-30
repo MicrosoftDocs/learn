@@ -1,10 +1,10 @@
-In this section, you TODO.
-
 In [Run functional tests in Azure Pipelines](/learn/modules/run-functional-tests-azure-pipelines?azure-portal=true), you and the Tailspin team added Selenium UI tests to the pipeline. UI tests are a form of *functional testing*. In this part, you explore the kinds of *non-functional* tests you can run in the pipeline.
+
+The team defines what a non-functional test covers, some of the kinds of non-functional tests that you can run, and then decide on one to add to their pipeline.
 
 ## Daily standup meeting
 
-The team is having their daily standup meeting and Mara and Amita are demoing the changes they made to the CI/CD pipeline. Amita shows the UI tests running on her laptop. The team watches how quickly each browser comes up and runs through tests Amita would normally perform manually.
+The team is having their daily standup meeting and Mara and Amita are demoing the changes they made to the CI/CD pipeline. Amita shows the UI tests running on her laptop. The team watches how quickly each web browser comes up and runs through tests Amita would normally perform manually.
 
 **Amita:** I love this. But I must admit, I initially resisted this form of automation. But now I see how it gives me the freedom to do so much more. I'm already beginning to write my own UI tests. And I still have plenty of time to perform usability testing to verify that our websites are intuitive and meets the user's needs.
 
@@ -24,65 +24,53 @@ In [Run functional tests in Azure Pipelines](/learn/modules/run-functional-tests
 
 In short, _functional tests_ verify that each function of the software does what it should. In other words, functional tests verify an application's functionality.
 
-_Non-functional tests_ check characteristics like performance and reliability. In other words, non-functional tests verify how the application performs under real-world conditions.
+_Non-functional tests_ check non-functional aspects of an application, such as performance and reliability. (Of course, you can also perform non-functional tests on other systems besides apps, such as infrastructure components.) One example of a non-functional test is to determine how many people can simultaneously log into an application before there is a problem, such as slower response times.
 
-TODO: State more comparisons 
+Taking the _Space Game_ website as an example, a functional test might verify that the leaderboard displays correctly and that it shows the correct records when when the user selects a filter. A non-functional test might verify that leaderboard filtering completes in less than one second when many users are connected to the website at the same time.
 
-Make a concrete example (e.g. Login page shows text fields vs takes 5 seconds to load)
+Non-functional testing always tests something that is measurable. The goal is to improve the product, such as by improving how efficiently the application uses resources or by improving response times when many customers use it simultaneously. Some of the questions non-functional tests can answer include:
+
+* How does the application perform under normal circumstances?
+* How does the application perform when many users log on concurrently?
+* How secure is the application?
 
 ## What kinds of non-functional tests can I run?
 
-Like functional tests, there are many kinds of non-functional tests you can run. Similarly, each kind varies by the functionality you need to test for and the time (or effort) that's typically required to run it.
+There are a variety of non-functional tests, but many of them fit under the broad categories of performance testing and security testing.
 
-Here are some of the more popular kinds of non-functional tests software teams commonly run.
+### Performance testing 
 
-### Performance testing
+The goal of _performance testing_ is to improve the speed, scalability, and stability of an application. Testing for speed determines how quickly an application responds. Testing for scalability determines the maximum user load an application can handle. Testing for stability determines if the application remains stable under different loads. Two common types of performance tests are load tests and stress tests.
 
-_Performance testing_ verifies the most basic functionality of your application or service. Smoke tests are often run before running more complete and exhaustive tests. Smoke tests are intended to run quickly.
+#### Load testing
 
-For example, say you're developing a website. Your smoke test might use `curl` to verify that the site is reachable and that fetching the home page produces a 200 (OK) HTTP status. If fetching the home page produces another status code, such as 404 (Not Found) or 500 (Internal Server Error), then you know that the website is fundamentally not working and no further testing is required. From there, you would diagnose the error and restart your tests once the error is fixed.
+_Load tests_ determine the performance of an application under realistic loads. For example, load tests can determine how well an application performs at the upper limit of its Service Level Agreement (SLA). Basically, load testing determines the behavior of the application when multiple users use it at the same time. Users aren't necessarily people. A load test for printer software might send it large amounts of data. On the other hand, a load test for a mail server might simulate thousands of concurrent users.
 
-### Load testing
+Load testing is also a good way to uncover problems that only exist when the application is operating at its limits. That's when issues such as buffer overflows and memory leaks can surface.
 
-You worked with unit tests in the [Run quality tests in your build pipeline using Azure Pipelines](/learn/modules/run-quality-tests-build-pipeline?azure-portal=true) module.
+In this module, you use Apache JMeter to perform load tests using a set of simulated users that access the website simultaneously.
 
-In short, _load testing_ verifies the most fundamental components of your program or library, such as an individual function or method. You specify one or more inputs along with the expected results. The test runner performs each test and checks to see whether the actual and expected results match.
+#### Stress testing
 
-As an example, let's say you have a function that performs an arithmetic operation that includes division. You might specify a few values that you expect your users to enter along with edge-case values such as 0 and -1. If a certain input produces an error or exception, you can verify that the function produces the same error.
+_Stress tests_ determine the stability and robustness of an application under extremely heavy loads that go beyond what's specified for the application. They make sure that the application doesn't crash and, if it fails, it fails gracefully, such as by issuing an appropriate, informative error message.  
 
-The UI tests you'll run later in this module are a form of unit tests.
-
-### Stress testing
-
-_Integration testing_ verifies that multiple software components work together. For example, an e-commerce system might include the website, the products database, a payment system, and so on. You might write an integration test that adds items to the shopping cart verifies that the payment system fulfills the order. Such as test might use fictitious data to ensure that the test can be run repeatedly without making a real transaction.
-
-Combining unit and integration tests enables you to create a layered approach to your testing strategy. For example, you might run unit tests on each of your components before running the integration tests. If all unit tests pass, you can move on to the integration test phase with greater confidence.
+Examples of times when applications must operate under abnormally heavy loads are quite common. For example, if a video goes viral, then you'll want to know how well the servers can handle the extra load. Another typical example is the traffic on shopping web sites during holiday seasons.
 
 ### Security testing
 
-A _regression_ occurs when existing behavior changes or breaks when a feature is either added or changed. _Regression testing_ helps determine whether code, configuration, or other changes affect the software's overall behavior.
+_Security testing_ ensures that applications are free from any vulnerabilities, threats, and risks. Thorough security testing finds all the possible loopholes and weaknesses of the system which might cause an information breach or a loss of revenue.
 
-Regression testing is important because a change in one component can change the behavior of another. For example, say you tune a database to increase write performance. Read performance of that database from another component might drop in ways you did not expect.
+There are many types of security testing. Two of them are penetration testing and compliance testing.
 
-There are various types of regression testing strategies. These strategies typically vary by the number of tests that are run to verify that a new feature or bug fix doesn't break existing functionality. However, when tests are automated, regression testing might simply involve running all unit and integration tests each time the software undergoes a change.
+#### Penetration testing
 
-### Penetration testing
+_Penetration testing_, or _pen testing_, is a type of security testing that tests the insecure areas of the application, and, in particular, tests to see if there are vulnerabilities that an attacker could exploit. An authorized, simulated cyber attack is usually a part of penetration testing.
 
-(OWASP ZAP)
+#### Compliance testing
 
-_Sanity testing_ involves testing each major component of a piece of software to verify whether that software appears to be working and can undergo more thorough testing. You can think of sanity tests as being less thorough than regression or unit tests, but more thorough than smoke tests.
+_Compliance testing_ determines if an application is compliant with some set of requirements, whether external to the company or internal to it. For example, healthcare organizations usually need to comply with HIPAA (Health Insurance Portability and Accountability Act of 1996), which provides data privacy and security provisions for safeguarding medical information.
 
-Although sanity testing can be automated, it's often done manually in response to a feature change or a bug fix. For example, when validating a bug fix, a software tester might also verify that other features are working by entering values that a user might enter. If the software appears to be working as expected, it can then go through a more thorough test pass.
-
-### Compliance testing
-
-_UI testing_ verifies the behavior of an application's user interface. UI tests help verify that the sequence, or order, of user interactions leads to the expected result. They also help verify that interaction methods, such as with the keyboard or mouse, affect the user interface properly. You can run UI tests to verify the behavior of a native Windows, macOS, or Linux application, or to verify that the UI behaves as expected across web browsers.
-
-Although a unit or integration test might verify that the UI _receives_ data correctly, UI testing helps verify that the user interface _appears_ correctly and that the result functions as expected for the user.
-
-For example, a UI test might verify that the correct animation appears in response to a button click. A second test might verify that the same animation appears correctly when the window is resized.
-
-In this module, you work with UI tests that are coded by hand. But you can also use use a capture and replay system to automatically build your UI tests.
+In addition, an organization can also have its own security requirements and software must be tested to make sure it complies with them. For example, on Linux systems, there might be a requirement that the default user mask is *027* or more restrictive. A security test needs to exist to prove that this is true.
 
 ## What does the team choose?
 
@@ -92,13 +80,13 @@ In this module, you work with UI tests that are coded by hand. But you can also 
 
 **Mara:** What tool do you use for load testing, and what do your load tests measure?
 
-**Tim:** I use Apache JMeter. I mainly look at response time, or the time between the web browser's request to our servers and receiving data back. Under typical load, I like to see average request times of less than one second. No more than 10% of requests should take more than one second.
+**Tim:** I use Apache JMeter. I mainly look at response time, or the time between the web browser's request to our servers and when it receives data back. Under typical load, I like to see average request times of less than one second. No more than 10% of requests should take more than one second.
 
 **Mara:** I'm interested in learning more. Can we pair up sometime and we can try to add load testing to the pipeline?
 
 **Tim:** Absolutely. Perhaps I can walk you through my process and then we can map that to tasks in Azure Pipelines.
 
-**Mara:** That sounds great! Just as with our functional tests, we can decide exactly where this fits in the pipeline &mdash; whether we run the tests on a Microsoft-hosted build agent, a build agent we provide, or some other kind of test infrastructure.
+**Mara:** That sounds great! Just as with our functional tests, we can decide exactly where this fits in the pipeline &mdash; whether we run the tests on a Microsoft-hosted agent, an agent we provide, or some other kind of test infrastructure.
 
 ## The plan
 

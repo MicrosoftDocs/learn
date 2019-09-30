@@ -1,20 +1,18 @@
-In [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true), you helped the Tailspin web team design and build a release management workflow. This workflow enables the team to move changes through a series of stages, such as the dev stage and the test stage, all the way out to a production environment that's available to your users.
+In this module, you'll add non-functional tests &mdash; thats that check characteristics like performance and reliability &mdash; to the pipeline.
 
-**NOTE--I thought it was just through Staging (pre-production) because they can't move to production without management sayso**
+In [Run functional tests in Azure Pipelines](/learn/modules/run-functional-tests-azure-pipelines?azure-portal=true), you and the Tailspin web team added UI tests, a form of functional testing, to the pipeline. Functional tests verify the functionality, or behavior, of software. In other words, functional tests verify that each function of the software does what it should.
 
-Right now, in the test stage, Amita still tests the web application manually as she always has. When she's satisfied, she manually promotes the application to staging, where management reviews the new features and decides if they want to make the release publicly available.  
+But what about the non-functional aspects of an application, such as performance and reliability? Once your service is operational and deployed to an environment, how can you determine the performance of your application under realistic and heavy loads? Does your application expose any possible loopholes or weaknesses which might cause an information breach?
 
-In [Run quality tests in your build pipeline using Azure Pipelines](/learn/modules/run-quality-tests-build-pipeline?azure-portal=true), you incorporated unit and code coverage tests into the build process. These help ensure that there are no regression bugs and that the code meets a company's standards for quality and style. But what kinds of tests do you run once a service is operational and actually deployed to an environment?
-
-In this module, you'll work with Amita and Tim as they learn how to add functional and non-functional tests to the pipeline. 
+In this module, you'll explore the types of non-functional tests you can run and run load tests in your pipeline with Apache JMeter.
 
 ## Learning objectives
 
 In this module, you will:
 
-- Describe the role of functional and non-functional tests in a release pipeline.
-- Run functional UI tests in your pipeline's _Test_ stage.
-- Run non-functional load tests during _Staging_.
+- TODO Describe the role of functional and non-functional tests in a release pipeline.
+- TODO Run functional UI tests in your pipeline's _Test_ stage.
+- TODO Run non-functional load tests during _Staging_.
 
 ## Prerequisites
 

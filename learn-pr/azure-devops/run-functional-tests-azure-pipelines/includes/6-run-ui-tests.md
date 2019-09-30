@@ -98,7 +98,7 @@ In this section, you modify the pipeline configuration to run your Selenium UI t
 
         Recall that a _deployment job_ is a special type of job that plays an important role in your deployment stages. The second job is a normal job that runs the Selenium tests on a Windows Server 2019 agent. Although we use a Linux agent to build the application, here we use a Windows agent to run the UI tests because Amita performs her manual tests on Windows, which is where the majority of site traffic comes from.
 
-        The `RunUITests` job depends on the `Deploy` job to ensure that the jobs are run in the correct order. You need to deploy the website to App Service before you can run the UI tests. If you don't specify this dependency, jobs within a stage can run in any order or run in parallel.
+        The `RunUITests` job depends on the `Deploy` job to ensure that the jobs are run in the correct order. You need to deploy the website to App Service before you can run the UI tests. If you don't specify this dependency, jobs within the stage can run in any order or run in parallel.
 
 1. In the integrated terminal, add **azure-pipelines.yml** to the index, commit the changes, and push the branch up to GitHub.
 

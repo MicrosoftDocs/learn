@@ -34,7 +34,7 @@ This branch contains the _Space Game_ project that you worked with in previous m
 
 1. Optionally, in Visual Studio Code, open the *azure-pipelines.yml* file, and familiarize yourself with the initial configuration.
 
-    The configuration resembles the ones that you created in the previous modules in this learning path. It builds only the application's **Release** configuration. For brevity, it also omits the triggers and manual approvals you set up in previous modules.
+    The configuration resembles the ones that you created in the previous modules in this learning path. It builds only the application's **Release** configuration. For brevity, it also omits the triggers, manual approvals, and tests you set up in previous modules.
 
 ## Write the unit test code
 
