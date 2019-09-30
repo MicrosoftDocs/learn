@@ -20,7 +20,7 @@ Implementing security and privacy in your organization:
 |---|---|
 |Guidance|Consider using guidelines like Microsoft’s Securing the Future of Artificial Intelligence and Machine Learning to formulate your own policies.<sup>8</sup>|
 |Open source code|Research Microsoft SEAL—a set of libraries powered by homomorphic encryption that allow computations to be performed directly on encrypted data.<sup>9</sup>|
-|Technologies|Look into technologies like MPC, differential privacy, and secure execution environments to see if they are right for your use case|
+|Technologies|Look into technologies like MPC, differential privacy, and secure execution environments to see if they are right for your use case.|
 |Tools|Take advantage of third-party tools like the Private Data Sharing Interface (PSI), which allows researchers to explore private datasets securely using differential privacy.<sup>10</sup>|
 :::column-end:::
 :::column:::
