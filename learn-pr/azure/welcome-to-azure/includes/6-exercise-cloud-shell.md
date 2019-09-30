@@ -26,8 +26,6 @@ Accessing the Cloud Shell from within the Azure portal is done using the Cloud S
     az group list --output table
     ```
 
-    Copy the resource group you want to inspect, in our case **<rgn>[sandbox resource group name]</rgn>**.
-
 1. Next, we'll list all the resources in the **<rgn>[sandbox resource group name]</rgn>** using the `az resource list` command. The command will return a list of resources. By specifying, `--resource-type` we can filter the result to include only the resource information related to websites.
 
     Run the following command.
@@ -47,7 +45,7 @@ Accessing the Cloud Shell from within the Azure portal is done using the Cloud S
     "kind": "app",
     "location": "centralus",
     "managedBy": null,
-    "name": "BlogFor",
+    "name": "MyWebApp",
     "plan": null,
     "properties": null,
     "resourceGroup": "<rgn>[sandbox resource group name]</rgn>",
