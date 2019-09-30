@@ -22,7 +22,7 @@ To encourage development of AI solutions to address global challenges, the Micro
 
 Recognizing the economic transformation potential of AI, many governments have announced their national AI strategies. Global implementation of responsible AI received a boost in May 2019, when 36 OECD member countries, along with Argentina, Brazil, Colombia, Peru, and Romania, approved the [Recommendations of the OECD Council on Artificial Intelligence](https://www.oecd.org/going-digital/ai/principles/). These recommendations contained the principles for responsible stewardship of trustworthy AI. These principles were also adopted by the G20 countries, including the EU, in June 2019.
 
-The recommendations, developed by an AI expert group that included representatives from academia, civil society, trade unions, business, and governments from around the world, clearly demonstrated the value of multistakeholder consultation in policy development. They are high level principles, intended to foster trust and shape the continuing development of AI to be more trustworthy. They aren't prescriptive in ways that can restrict innovation.
+The recommendations, developed by an AI expert group that included representatives from academia, civil society, trade unions, business, and governments from around the world, clearly demonstrated the value of multi-stakeholder consultation in policy development. They are high level principles, intended to foster trust and shape the continuing development of AI to be more trustworthy. They aren't prescriptive in ways that can restrict innovation.
 
 As more countries adopt the principles, it is hoped they will lead to development of AI systems that warrant the trust of individuals and society, which will enable broader adoption and realization of the transformative potential of AI. The OECD also included five recommendations to governments on national policies and international cooperation for trustworthy AI.
 
@@ -51,12 +51,12 @@ Human-centered AI can help create a better world, and it is important to continu
 
 ## An integrated and holistic responsible AI policy framework
 
-Any AI strategy would need to be an integral part of holistic national agenda for digital transformation. For example, the OECD Going Digital project is a multidisciplinary and cross-cutting project that aims to:
+Any AI strategy would need to be an integral part of a holistic national agenda for digital transformation. For example, the OECD Going Digital project is a multi-disciplinary and cross-cutting project that aims to:
 
 * Understand the digital transformation and its impacts on economy and society.
 * Provide policymakers with the tools needed to develop a pro-active whole-of-government policy response to help their economies prosper in an increasingly digital and data-driven world while advancing a culture of trust.
 * Help overcome the often large gap between technology adoption and policy development.
 
-The project spans multiple policy silos (for example, competition, consumer protection, education, employment, trade, etc.) and recommends an integrated policy framework that consists of seven dimensions including access, use, innovation, jobs, society, trust, and market openness. Some elements that should be considered in such a framework that are essential to enabling AI include cloud deployment; cross border data access and flow; interoperable, open, and globally accessible internet; privacy; security; open government data; complemented with multistakeholder consultation and public-private partnerships.
+The project spans multiple policy silos (for example, competition, consumer protection, education, employment, trade, etc.) and recommends an integrated policy framework that consists of seven dimensions including access, use, innovation, jobs, society, trust, and market openness. Some elements that should be considered in such a framework that are essential to enabling AI include cloud deployment; cross border data access and flow; interoperable, open, and globally accessible internet; privacy; security; open government data; complemented with multi-stakeholder consultation and public-private partnerships.
 
 Next, let’s hear from Susan Etlinger again on choosing an organizational model.
