@@ -4,8 +4,6 @@ In your online store company, your developers have created multiple Azure Functi
 
 Here, you will create a new API Management instance and then add a Product Details function to it.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create functions
 
 In this exercise, you will add an Azure Functions app to Azure API Management. Later you will add a second function app to the same API Management instance in order to create a single serverless API from multiple functions. Let's start by using a script to create the functions:
