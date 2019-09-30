@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.design-ip-addressing-for-azure.4-plan-and-design-ip-addressing-for-your-networks
+metadata:
+  title: Planning the IP addressing for your networks
+  description: In this unit, you'll plan, on paper, the IP addressing scheme from three virtual networks that you want to create in Azure.
+  ms.date: 07/15/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Planning the IP addressing for your networks
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-plan-and-design-ip-addressing-for-your-networks.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Your current virtual network uses the 10.10.0.0/16 CIDR. You need 10 subnets, and you want to reserve six subnets for future expansion. You need 27 hosts in each subnet. Which of the following subnet CIDRs helps you achieve the required numbers of subnets and hosts?"
+    choices:
+    - content: "10.0.0.0/8"
+      isCorrect: false
+      explanation: "The CIDR you use for subnets must have a smaller address space that the CIDR for the VNet. 10.0.0.0/8 is a larger address space."
+    - content: "10.10.0.0/17"
+      isCorrect: false
+      explanation: "This CIDR gives only eight possible subnets within the VNet. You need at least 16 subnets."
+    - content: "10.10.10.0/24"
+      isCorrect: true
+      explanation: "This CIDR gives 256 subnets within the VNet and 251 possible IP addresses within each subnet."
+  - content: "When you've determined the number of hosts available for the subnets in Azure, how many addresses should you subtract for the Azure services?" 
+    choices:
+    - content: "1"
+      isCorrect: false
+      explanation: "Subtract five addresses from the total possible IP addresses in each subnet for Azure services." 
+    - content: "2"
+      isCorrect: false
+      explanation: "Subtract five addresses from the total possible IP addresses in each subnet for Azure services." 
+    - content: "5"
+      isCorrect: true
+      explanation: "Subtract five addresses from the total possible IP addresses in each subnet for Azure services."

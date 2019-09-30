@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.design-ip-addressing-for-azure
+metadata:
+  title: Design an IP addressing scheme for your Azure infrastructure
+  description: In this module, you will learn how to plan and implement a IP addressing scheme for virtual networks and virtual machines in Azure.
+  ms.date: 07/15/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design an IP addressing scheme for your Azure infrastructure
+summary: |
+  A good Azure IP addressing scheme provides flexibility, room for growth, and integration with on-premises networks. 
+  The scheme ensures communication works for deployed resources, minimizes public exposure of systems, and allows the 
+  company to have flexibility in their network. If not properly designed, systems may not be able to communicate, and 
+  additional work will be required to remediate.
+abstract: | 
+  In this module, you will:
+  - Identify the private IP addressing capabilities of Azure virtual networks
+  - Identify the public IP addressing capabilities of Azure
+  - Identify the requirements for IP addressing when integrating with on-premises networks
+prerequisites: | 
+  - Knowledge of basic networking concepts (subnets, IP addressing, etc.)
+  - Familiarity with Azure virtual networking
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.design-ip-addressing-for-azure.1-introduction
+- learn.design-ip-addressing-for-azure.2-network-ip-addressing-and-integration
+- learn.design-ip-addressing-for-azure.3-public-and-private-ip-addressing-in-azure
+- learn.design-ip-addressing-for-azure.4-plan-and-design-ip-addressing-for-your-networks
+- learn.design-ip-addressing-for-azure.5-exercise-implement-vnets-and-deploy-vms
+- learn.design-ip-addressing-for-azure.6-summary
+badge:
+  uid: learn.design-ip-addressing-for-azure.badge

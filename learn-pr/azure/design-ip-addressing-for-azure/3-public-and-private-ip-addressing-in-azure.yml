@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.design-ip-addressing-for-azure.3-public-and-private-ip-addressing-in-azure
+metadata:
+  title: Public and private IP addressing in Azure
+  description: In this unit, you'll learn about public and private IP addresses in Azure and how to assign them to resources, such as virtual machines.
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Public and private IP addressing in Azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-public-and-private-ip-addressing-in-azure.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following resources can you assign a public IP address to?"
+    choices:
+    - content: "A front-end virtual machine"
+      isCorrect: true
+      explanation: "Front-end virtual machines can be accessed from the internet, so assign a public IP address to them."
+    - content: "Azure Data Lake"
+      isCorrect: false
+      explanation: "Front-end virtual machines can be accessed from the internet, so assign a public IP address to them."
+    - content: "Azure Key Vault"
+      isCorrect: false
+      explanation: "Front-end virtual machines can be accessed from the internet, so assign a public IP address to them."
+  - content: "What must a virtual machine have to communicate with the other resources in the same resource group?"
+    choices:
+    - content: "Azure Load Balancer"
+      isCorrect: false
+      explanation: "Load balancer is to balance the incoming traffic between VMs."
+    - content: "Network Security Group"
+      isCorrect: false
+      explanation: "An NSG is to filter incoming and outgoing traffic."
+    - content: "Network Interface Card"
+      isCorrect: true 
+      explanation: "All devices need an IP address to communicate with other devices. An IP address is assigned to a network interface card."
+
+
