@@ -62,7 +62,7 @@ quiz:
     choices:
     - content: "AI policies need to be flexible in order to keep up with the rapidly evolving technology."
       isCorrect: true
-      explanation: "Correct. An inclusive approach that values multi-disciplinary and multi-stakeholder contributions and actions can motivate an open and collaborative model to policy development."
+      explanation: "Correct. An inclusive approach that values  multidisciplinary and  multistakeholder contributions and actions can motivate an open and collaborative model to policy development."
     - content: "AI policies need to be flexible in order to meet enterprise needs."
       isCorrect: false
       explanation: "Incorrect. Requests from enterprises should not dictate AI policy."

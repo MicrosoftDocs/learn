@@ -5,6 +5,7 @@ import os
 
 import gzip
 import struct
+import numpy as np
 
 
 # load compressed MNIST gz files and return numpy arrays
@@ -32,7 +33,7 @@ y_test = load_data(os.path.join(
 print('Done')
 ```
 
-Now score some data/
+Now score some data with the code below.
 
 ```python
 import json

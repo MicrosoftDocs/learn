@@ -12,7 +12,7 @@ To help you consider how to leverage governance and external engagements in your
 
 ### Establishing an AI governance system
 
-1. **Choose a governance structure** that best fits your organization’s AI maturity, unique characteristics, culture, and business objectives
+1. **Choose a governance structure** that best fits your organization’s AI maturity, unique characteristics, culture, and business objectives.
 1. **Outline the specific role of your governance system** within your organization. Responsibilities could include developing and enforcing policies, providing advice, and mitigating risks associated with AI systems.
 1. **Allocate sufficient budget and resources** to give your governance system the power to enforce responsible AI policies.
 1. **Adapt your governance system(s)** over time as your objectives and capabilities change.
@@ -49,4 +49,10 @@ To learn more about our perspective on responsible AI as well as the impact of A
 
 ## References
 
-[(1) Financial Times, “How governments are beginning to regulate AI.” Madhumita Murgia and Siddarth Shrikanth, 29 May 2019.](https://www.ft.com/content/025315e8-7e4d-11e9-81d2-f785092ab560)
+[(1) Autonomy through cyberjustice technologies, “Canada Treasury Board’s Directive on Automated Decision-Making.” Jie Zhu, 25 November 2018.](https://www.ajcact.org/en/2018/11/25/canada-treasury-boards-directive-on-automated-decision-making/)  
+[(2) The White House, “Executive Order on Maintaining American Leadership in Artificial Intelligence.” 11 February 2019.](https://www.whitehouse.gov/presidential-actions/executive-order-maintaining-american-leadership-artificial-intelligence/)  
+[(3) Financial Times, “How governments are beginning to regulate AI.” Madhumita Murgia and Siddarth Shrikanth, 29 May 2019.](https://www.ft.com/content/025315e8-7e4d-11e9-81d2-f785092ab560)  
+[(4) McKinsey Global Institute, “Notes from the AI Frontier: Modeling the Impact of AI on the World Economy.” September 2018.](https://www.mckinsey.com/~/media/McKinsey/Featured%20Insights/Artificial%20Intelligence/Notes%20from%20the%20frontier%20Modeling%20the%20impact%20of%20AI%20on%20the%20world%20economy/MGI-Notes-from-the-AI-frontier-Modeling-the-impact-of-AI-on-the-world-economy-September-2018.ashx)  
+[(5) Microsoft, “The Future Computed: Artificial Intelligence and its role in society.” Brad Smith and Harry Shum, 17 Jan 2018.](https://blogs.microsoft.com/blog/2018/01/17/future-computed-artificial-intelligence-role-society/)  
+[(6) OECD, “OECD Principles on AI.” May 2019.](https://www.oecd.org/going-digital/ai/principles/)  
+[(7) European Commission, “Ethics Guidelines for Trustworthy Artificial Intelligence.” AI High Level Expert Group, 2019 June.](https://ec.europa.eu/futurium/ai-alliance-consultation/guidelines#Top)  

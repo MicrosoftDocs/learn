@@ -20,7 +20,7 @@ Implementing security and privacy in your organization:
 |---|---|
 |Guidance|Consider using guidelines like Microsoft’s Securing the Future of Artificial Intelligence and Machine Learning to formulate your own policies.<sup>8</sup>|
 |Open source code|Research Microsoft SEAL—a set of libraries powered by homomorphic encryption that allow computations to be performed directly on encrypted data.<sup>9</sup>|
-|Technologies|Look into technologies like MPC, differential privacy, and secure execution environments to see if they are right for your use case|
+|Technologies|Look into technologies like MPC, differential privacy, and secure execution environments to see if they are right for your use case.|
 |Tools|Take advantage of third-party tools like the Private Data Sharing Interface (PSI), which allows researchers to explore private datasets securely using differential privacy.<sup>10</sup>|
 :::column-end:::
 :::column:::
@@ -84,7 +84,7 @@ Implementing transparency in your organization:
 
 ## Accountability
 
-The people who design and deploy AI systems must be accountable for how their systems operate. A useful first step for developing accountability and transparency in your organization is to create thorough documentation processes for AI systems. One such approach is called “datasheets for datasets,” in which people assembling training datasets generate a datasheet with key information such as the motivation, composition, collection process, and recommended uses.<sup>26</sup> In Azure Machine Learning, the DevOps feature (called MLOps) makes it easier to track, reproduce, and share models and their version histories. The Partnership on AI (PAI) is also leading a multi-stakeholder initiative called ABOUT ML to develop, test, and promulgate best practices for machine learning documentation. These best practices may include documenting how AI systems were designed and for what purposes, where their data came from and why that data was chosen, how they were trained, tested, and corrected, and what purposes they’re not suitable for.<sup>27</sup>
+The people who design and deploy AI systems must be accountable for how their systems operate. A useful first step for developing accountability and transparency in your organization is to create thorough documentation processes for AI systems. One such approach is called “datasheets for datasets,” in which people assembling training datasets generate a datasheet with key information such as the motivation, composition, collection process, and recommended uses.<sup>26</sup> In Azure Machine Learning, the DevOps feature (called MLOps) makes it easier to track, reproduce, and share models and their version histories. The Partnership on AI (PAI) is also leading a  multistakeholder initiative called ABOUT ML to develop, test, and promulgate best practices for machine learning documentation. These best practices may include documenting how AI systems were designed and for what purposes, where their data came from and why that data was chosen, how they were trained, tested, and corrected, and what purposes they’re not suitable for.<sup>27</sup>
 
 Implementing accountability in your organization:
 
