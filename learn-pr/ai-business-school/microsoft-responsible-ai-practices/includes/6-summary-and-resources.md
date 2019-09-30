@@ -1,4 +1,4 @@
-As AI becomes more prevalent, it’s imperative that organizations have processes in place to ensure that it’s used responsibly. At Microsoft, we’ve been working on AI for over a decade, and while that we recognize that we don’t have all of the answers, we hope that our experience and perspective will prove valuable to others as they embark on their own AI journey.
+As AI becomes more prevalent, it’s imperative that organizations have processes in place to ensure that it’s used responsibly. At Microsoft, we’ve been working on AI for over a decade, and while we recognize that we don’t have all of the answers, we hope that our experience and perspective will prove valuable to others as they embark on their own AI journey.
 
 Now that you have reviewed this module, you should be able to:
 
