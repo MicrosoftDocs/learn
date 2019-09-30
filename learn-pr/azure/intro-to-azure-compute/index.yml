@@ -22,7 +22,7 @@ roles:
 - developer
 - solution-architect
 - administrator
-#- security-engineer
+- security-engineer
 products:
 - azure
 - azure-virtual-machines

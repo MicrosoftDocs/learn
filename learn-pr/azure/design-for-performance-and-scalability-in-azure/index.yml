@@ -21,7 +21,7 @@ levels:
 - intermediate
 roles:
 - solution-architect
-#- security-engineer
+- security-engineer
 products:
 - azure
 - azure-cdn

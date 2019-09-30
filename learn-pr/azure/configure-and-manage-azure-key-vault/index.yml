@@ -21,7 +21,8 @@ iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
-- developer
+- administrator
+- security-engineer
 products:
 - azure
 units:

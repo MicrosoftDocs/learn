@@ -23,7 +23,7 @@ levels:
 roles:
 - solution-architect
 - developer
-#- security-engineer
+- security-engineer
 products:
 - azure
 - azure-api-management

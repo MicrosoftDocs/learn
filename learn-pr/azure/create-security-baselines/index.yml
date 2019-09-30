@@ -15,13 +15,13 @@ abstract: |
     - Learn Azure platform security baselines and how they were created
     - Create and validate a security baseline for the most commonly used Azure services
 prerequisites: None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/create-security-baselines.svg
 levels:
 - beginner
 roles:
 - developer
 - solution-architect
-#- security-engineer
+- security-engineer
 products:
 - azure
 units:

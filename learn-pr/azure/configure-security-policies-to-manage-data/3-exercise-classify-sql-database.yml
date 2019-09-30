@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-security.configure-security-policies-to-manage-data.exercise-classify-sql-database
+title: Exercise - Classify an Azure SQL Database
+metadata:
+  title: Exercise - Classify an Azure SQL Database
+  description: Exercise - Classify an Azure SQL Database
+  ms.date: 09/30/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+azureSandbox: true
+content: |
+  [!include[](includes/3-exercise-classify-sql-database.md)]
