@@ -1,3 +1,0 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m04_resource_virtualization_memory\x-oli-workbook_page\_u03_m04_1_intro.xml -->
-
-The next resource we will examine, with respect to virtualization, is memory. Memory virtualization should ring a bell; specifically, it is very closely related to the operating systems concept of virtual memory! As such, we will begin our discussion by recalling virtual memory concepts and then discuss memory virtualization as an extension of these techniques. VMWare has pioneered some interesting and clever techniques in the realm of memory reclamation from Guest OSes, which will also be covered in this module. 

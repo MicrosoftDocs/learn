@@ -1,5 +1,0 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u04_cloud_storage\_u04_m04_cloud_object_storage_case_studies\x-oli-workbook_page\_u04_m04_0_module_intro.xml -->
-
-Now that we have covered specific file systems and database implementations, we turn our focus to object storage. Object storage is an important facet in cloud storage, and is one of the earliest public cloud computing services to emerge (case in point: Amazon S3). 
-
-Object storage is particularly important in web services. where static web content (images, videos and other files) can be stored in a place that is easily accessible to web clients. This allows the management and complexity of scaling, redundancy and accessibility of such storage systems to be abstracted away from a web application developer, choosing instead to work with a simple API to store and access such data. Another example of applications that benefit from object storage services are websites which feature a lot of user-generated content (such as social networks). 
