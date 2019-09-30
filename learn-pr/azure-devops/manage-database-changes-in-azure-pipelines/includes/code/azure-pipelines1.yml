@@ -102,36 +102,32 @@ stages:
       name: Hosted Windows 2019 with VS2019
     variables:
     - group: 'Release Pipeline'
-    environment: 'dev-dbaverification'
-    strategy:
-      runOnce:
-        deploy:
-          steps:
-          - download: current
-            artifact: dropDacpac
-            patterns: '**/*'
+      steps:
+      - download: current
+        artifact: dropDacpac
+        patterns: '**/*'
 
-          - task: SqlAzureDacpacDeployment@1
-            displayName: Generate Auto Gen DB Update Script
-            inputs:
-              azureSubscription: 'Resource Manager - Tailspin - SpaceGame'
-              AuthenticationType: 'server'
-              ServerName: '$(servername).database.windows.net'
-              DatabaseName: '$(databasename)'
-              SqlUsername: '$(adminlogin)'
-              SqlPassword: '$(adminPassword)'
-              deployType: 'DacpacTask'
-              DeploymentAction: 'Script'
-              DacpacFile: '$(Pipeline.Workspace)/dropDacpac/Tailspin.SpaceGame.Database/bin/Debug/Tailspin.SpaceGame.Database.dacpac'
-              IpDetectionMethod: 'AutoDetect'
-          
-          - task: PowerShell@2
-            displayName: Show Auto Generated SQL Script
-            inputs:
-              targetType: 'inline'
-              script: | 
-                Write-Host "Auto Generated SQL Update Script:"
-                Get-Content d:\a\1\s\GeneratedOutputFiles\$(databasename)_Script.sql | foreach {Write-Output $_}
+      - task: SqlAzureDacpacDeployment@1
+        displayName: Generate Auto Gen DB Update Script
+        inputs:
+          azureSubscription: 'Resource Manager - Tailspin - SpaceGame'
+          AuthenticationType: 'server'
+          ServerName: '$(servername).database.windows.net'
+          DatabaseName: '$(databasename)'
+          SqlUsername: '$(adminlogin)'
+          SqlPassword: '$(adminPassword)'
+          deployType: 'DacpacTask'
+          DeploymentAction: 'Script'
+          DacpacFile: '$(Pipeline.Workspace)/dropDacpac/Tailspin.SpaceGame.Database/bin/Debug/Tailspin.SpaceGame.Database.dacpac'
+          IpDetectionMethod: 'AutoDetect'
+      
+      - task: PowerShell@2
+        displayName: Show Auto Generated SQL Script
+        inputs:
+          targetType: 'inline'
+          script: | 
+            Write-Host "Auto Generated SQL Update Script:"
+            Get-Content d:\a\1\s\GeneratedOutputFiles\$(databasename)_Script.sql | foreach {Write-Output $_}
 
 - stage: DBAVerificationApply
   jobs:
@@ -189,7 +185,6 @@ stages:
 - stage: 'DeployTest'
   displayName: 'Deploy to test environment'
   dependsOn: DeployDev
-  #condition: eq(variables['Build.Reason'], 'Schedule')
   jobs:
   - deployment: Deploy
     pool:
