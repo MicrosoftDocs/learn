@@ -9,12 +9,12 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Expose multiple function apps as a consistent API by using Azure API Management
-summary: Expose multiple function apps as a consistent API by using Azure API Management
+summary: Combine multiple Azure Functions apps into a unified interface by importing them into a single Azure API Management instance.
 abstract: | 
   In this module, you will:
   - Identify the value of Azure API Management in a serverless application
-  - Import an Azure Function App as an API in Azure API Management
-  - Import multiple Azure Function apps as a single API in Azure API Management
+  - Import an Azure Functions app as an API in Azure API Management
+  - Import multiple Azure Functions apps as a single API in Azure API Management
 prerequisites: |
   - Basic knowledge of Azure API Management and Azure Functions
 iconUrl: /learn/achievements/generic-badge.svg
@@ -28,10 +28,10 @@ products:
 - azure-functions
 units:
 - learn.build-serverless-api-with-functions-api-management.1-introduction
-- learn.build-serverless-api-with-functions-api-management.2-create-a-new-api-in-api-management-from-a-function-app
-- learn.build-serverless-api-with-functions-api-management.3-exercise-create-a-new-api-in-api-management-from-a-function-app
-- learn.build-serverless-api-with-functions-api-management.4-import-additional-functions-to-an-existing-api
-- learn.build-serverless-api-with-functions-api-management.5-exercise-import-additional-functions-to-an-existing-api
+- learn.build-serverless-api-with-functions-api-management.2-import-function-app-api-management
+- learn.build-serverless-api-with-functions-api-management.3-exercise-import-function-app-api-management
+- learn.build-serverless-api-with-functions-api-management.4-import-additional-functions-existing-api-gateway
+- learn.build-serverless-api-with-functions-api-management.5-exercise-import-additional-functions-existing-api-gateway
 - learn.build-serverless-api-with-functions-api-management.6-summary
 badge:
   uid: learn.build-serverless-api-with-functions-api-management.badge

@@ -7,4 +7,3 @@ In this module, you published a serverless API with two Azure Functions apps in 
 - [An introduction to Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview)
 - [API Management documentation](https://docs.microsoft.com/azure/api-management/)
 - [Import an Azure Function App as an API in Azure API Management](https://docs.microsoft.com/azure/api-management/import-function-app-as-api)
-- [Serverless computing](https://docs.microsoft.com/azure/api-management/import-function-app-as-api)

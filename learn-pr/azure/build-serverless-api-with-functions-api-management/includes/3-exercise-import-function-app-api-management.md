@@ -25,7 +25,6 @@ In this exercise, you will add an Azure Functions app to Azure API Management. L
 
     ![Results of the setup.sh script](../media/3-script-results.png)
 
-
 ## Test the product details function
 
 Now, let's test the ProductDetails function, to see how it behaves before we add it to API Management:
@@ -83,6 +82,6 @@ You now have a functional product details API in the API Management instance tha
 1. In the **name** textbox, enter *id*.
 1. In the **value** textbox, enter *1*, and then select **Send**.
 
-    ![Testing the Product Details API](../media/3-complete-the-product-details-test.png)
+    ![Testing the Product Details API](../media/3-complete-product-details-test.png)
 
 1. In the **HTTP response**, notice that the details of a product have been returned in JSON format. Also notice the **HTTP request** was sent to a destination within the **azure-api.net** domain. This location is different to the **azurewebsites.net** domain where the original function app is hosted.
