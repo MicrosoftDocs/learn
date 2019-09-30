@@ -1,4 +1,6 @@
-At this point, the team's pipeline has four stages. The first stage produces the build artifact and the second stage deploys the _Space Game_ web application to App Service in the _dev_ environment, ..... Here, you follow along with Andy and Tim as they modify the pipeline to ....
+At this point, the team's pipeline has four stages. The first stage produces the build artifact and the second stage deploys the _Space Game_ web application to App Service in the _dev_ environment. The third and fourth stages deploy the _Space Game_ to the _test_ and _staging_ environments. We have taken out the triggers and approvals from the previous module to concentrate on just this section of the pipeline.
+
+Here, you follow along with Andy, Mara, and Tim as they modify the pipeline to add their stages to script the database changes for the DBA and to apply those changes after approval.
 
 ## Fetch the branch from GitHub
 
@@ -48,7 +50,7 @@ Here you use [Azure portal](https://portal.azure.com?azure-portal=true) to creat
     | Property  | Value  |
     |---|---|
     | Server name | **tailspinserver<em>NNN</em>**, where *NNN* is the same number that you selected for the database |
-    | Server admin login | azuresql |
+    | Server admin login | **azuresql** |
     | Password | Enter a password that meets the requirements. |
     | Confirm password | Confirm your password. |
     | Location | Enter a location near you. |
@@ -67,7 +69,7 @@ Here you use [Azure portal](https://portal.azure.com?azure-portal=true) to creat
     Notice that the connection string does not show your username and password. You will need to fill those in when you are ready to use this string.
 
 1. In order to access the database you just created, you will need to set a firewall rule to allow your IP address.
-    1. Select **SQL databases** on the far left side menu.
+    1. Select **SQL databases** on the far left side menu in your Azure portal.
     1. Select **tailspindatabaseMNNN** where NNN is your random number.
     1. At the top, select **Set server firewall**.
     1. Your current IP address is printed next to **Client IP address**. Enter the following rule:
@@ -77,7 +79,7 @@ Here you use [Azure portal](https://portal.azure.com?azure-portal=true) to creat
     | Start IP | Enter your IP address |
     | End IP | Enter your IP address. |
 
-    1. Select **Save** at the top and the **OK**.
+    1. Select **Save** at the top and then **OK**.
 
 ## Create the tables
 
@@ -95,7 +97,7 @@ You can now create the tables to store the data.
     | Login | azuresql |
     | Password | Specify the password that you used when you created this user. |
 
-1. In your local **database** branch, find the file **CreateTables** and copy the entire contents to the clipboard. In the **Query 1** pane, paste the SQL statements you copied, and then select **Run**. This statement creates the new tables to hold the profile and score data for the SpaceGame web site. Verify that the statement runs without any errors.
+1. In your local **database** branch, find the file **CreateTables** and copy the entire contents to the clipboard. In the **Query 1** pane in the Query Editor, paste the SQL statements you copied, and then select **Run**. This statement creates the new tables to hold the profile and score data for the SpaceGame web site. Verify that the statement runs without any errors.
 
 1. In the database window, select the **Refresh** button on the toolbar. Expand **Tables**, and then expand each table in turn. You should see the four tables (**dbo.Profile**, **dbo.Scores**, **dbo.Achievements**, and **dbo.ProfileAchievements**), together with the columns and keys for each table.
 
@@ -106,13 +108,13 @@ You can now create the tables to store the data.
 
 ## Import the data
 
-1. Back in Visual Studio Code, open the **Data** folder and notice four **.csv** files. Each .csv file there holds the test data the web site will need and corresponds to a table you just created. Open a terminal and make sure the sure that you're in the **Data** folder.
+1. Back in Visual Studio Code, open the **Data** folder and notice four **.csv** files. Each .csv file there holds the test data the web site will need and corresponds to a table you just created. Open a terminal and make sure that you're in the **Data** folder.
 
     ```bash
     cd Data
     ```
 
-1. Create the variables that you will use in the later steps. Replace `NNN` with the number that you used for your database and server.
+1. Create the variables that you will use in the later steps. Replace `NNN` with the number that you used for your database and server and use the password you created.
 
     ```bash
     export DATABASE_NAME=tailspindatabaseNNN
@@ -124,7 +126,7 @@ You can now create the tables to store the data.
 1. Run the following command to import the data in the **profiles.csv** file to the dbo.Profiles table.
 
     ```bash
-    bcp Profiles in profiles.csv -S "$DATABASE_SERVER.database.windows.net" -d DATABASE_NAME -U $AZURE_USER -P $AZURE_PASSWORD -q -c -t ,
+    bcp Profiles in profiles.csv -S "$DATABASE_SERVER.database.windows.net" -d $DATABASE_NAME -U $AZURE_USER -P $AZURE_PASSWORD -q -c -t ,
     ```
 
     Verify that `bcp` utility imports 20 rows and doesn't report any errors.
@@ -132,7 +134,7 @@ You can now create the tables to store the data.
 1. Run the following command to import the data in the **scores.csv** file to the dbo.Scores table.
 
     ```bash
-    bcp Scores in scores.csv -S "$DATABASE_SERVER.database.windows.net" -d DATABASE_NAME -U $AZURE_USER -P $AZURE_PASSWORD -q -c -t ,
+    bcp Scores in scores.csv -S "$DATABASE_SERVER.database.windows.net" -d $DATABASE_NAME -U $AZURE_USER -P $AZURE_PASSWORD -q -c -t ,
     ```
 
     Verify that this command imports 24 rows.
@@ -140,7 +142,7 @@ You can now create the tables to store the data.
 1. Run the following command to import the data in the **achievements.csv** file to the dbo.Achievements table.
 
     ```bash
-    bcp Achievements in achievements.csv -S "$DATABASE_SERVER.database.windows.net" -d DATABASE_NAME -U $AZURE_USER -P $AZURE_PASSWORD -q -c -t ,
+    bcp Achievements in achievements.csv -S "$DATABASE_SERVER.database.windows.net" -d $DATABASE_NAME -U $AZURE_USER -P $AZURE_PASSWORD -q -c -t ,
     ```
 
     Verify that this command imports 10 rows.
@@ -184,7 +186,7 @@ In [Create a release management workflow with Azure Pipelines](/learn/modules/cr
 ### Bring up Cloud Shell through the Azure portal
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
-1. From the menu bar, select Cloud Shell. When prompted, select the **Bash** experience.
+1. From the menu bar, select Cloud Shell. Make sure to select **Bash** from the drop-down menu at the upper left of the cloud shell.
 
     ![Selecting Cloud Shell from the menu bar](../../shared/media/azure-portal-menu-cloud-shell.png)
 
@@ -287,7 +289,7 @@ To do so, you:
     tailspin-space-game-web-staging-21017.azurewebsites.net  Running
     ```
 
-1. Configure the connection string to the database in each  App Service. Use the names of the app services you discovered above. Be sure to replace the **NNN** with your random number. Replace \<paste your connection string here\> with your connection string. Make sure you have replaced the `{your_username}` and `{your_password}` with the username and password you set up when you created the database.
+1. Configure the connection string to the database in each App Service. Use the names of the app services you discovered above. Be sure to replace the **NNN** with your random number. Replace \<paste your connection string here\> with your connection string. Make sure you have replaced the `{your_username}` and `{your_password}` with the username and password you set up when you created the database.
 
     ``` bash
     az webapp config connection-string set \
