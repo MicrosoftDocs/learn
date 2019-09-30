@@ -20,7 +20,7 @@ Below are some additional resources your organization can leverage when developi
 ### Skill up resources
 
 * [2018 WEF Future of Jobs Report](http://www3.weforum.org/docs/WEF_Future_of_Jobs_2018.pdf) states many companies have been focusing their upskilling and retraining efforts on those people who already have higher skills and value to the company.
-* The [Microsoft Professional Program](https://academy.microsoft.com/professional-program/tracks/artificial-intelligence/) now has an AI track bringing together expert instructors, provide hands-on labs, offer AI-specific online courses and instructional videos.
+* The [Microsoft Professional Program](https://academy.microsoft.com/professional-program/tracks/artificial-intelligence/) now has an AI track bringing together expert instructors, provide hands-on labs, offer AI-specific online courses, and instructional videos.
 * Developer-focused [AI School](https://aischool.microsoft.com), which provides online videos and other assets that help build professional AI skills.
 * The [Skillful Initiative](https://www.markle.org/rework-america/skillful), a partnership with the Markle Foundation in the US, helps match people with employers and fill high-demand jobs.
 
