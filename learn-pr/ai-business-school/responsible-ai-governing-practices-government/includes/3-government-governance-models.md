@@ -14,7 +14,7 @@ Managing internal AI solutions is especially important for government agencies. 
 
 The oversight, or “governance,” of AI might include developing and enforcing policies for testing, documenting, and managing AI systems, or training requirements for the employees who design or use AI systems. For governments, one of the most interesting questions is about where the authority to develop and enforce these policies should be placed:
 
-* What kind of structure should the governance system have (e.g., executive body, committee, appointed or elected members, etc.)
+* What kind of structure should the governance system have? (e.g., executive body, committee, appointed or elected members, etc.)
   * Should a centralized body set responsible AI policies for all agencies, or should individual agencies have some autonomy to develop their own standards?
 * How should AI projects be funded?
 * How should the governance system apply to solutions that are purchased from third-party AI vendors?
