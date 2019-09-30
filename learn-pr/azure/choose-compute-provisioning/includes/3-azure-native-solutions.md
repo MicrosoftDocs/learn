@@ -1,4 +1,4 @@
-Your organization has several requirements for moving its applications to Azure virtual machines. You must choose the appropriate tool based on your organization's needs.
+Your organization has several requirements for moving its applications to Azure virtual machines. You'll select the appropriate tool based on your organization's needs.
 
 The right provisioning tools depend on your problem, the size of your infrastructure and the outcome you want to achieve. As these criteria would vary from network to network, here are a few fundamental metrics that we can use to determine which tool is more suitable for provisioning compute.
 
@@ -16,11 +16,11 @@ Let's consider each of the following tools' advantages or disadvantages using ea
 - **Ease of management** - Management of custom scripts can get tricky as your infrastructure grows and you accumulate different customer scripts for different resources.
 - **Interoperability** - The custom script extension can be added into an Azure Resource Manager template. You can also deploy it through Azure PowerShell or Azure CLI.
 - **Configuration language** – Many types of commands including PowerShell and Bash.
-- **Limitations and Drawbacks** - Custom script is not suitable for anything that requires more than one and a half hours to configure. Avoid using custom scripts for any configuration that requires reboots.
+- **Limitations and Drawbacks** - Custom script isn't suitable for anything that requires more than one and a half hours to configure. Avoid using custom scripts for any configuration that needs reboots.
 
 ### Scenario
 
-The organization you work for has been given a new contract to work for a new client. They have a handful of virtual machines running on Azure. The development team decides they need to install a small application they have written to help increase their team's productivity to make sure they can meet new deadlines. This application does not require a restart.
+The organization you work for has been given a new contract to work for a new client. They have a handful of virtual machines running on Azure. The development team decides they need to install a small application they have written to help increase their team's productivity to make sure they can meet new deadlines. This application doesn't require a restart.
 
 The team asks you to implement a solution to ensure these virtual machines all have the application installed properly, and in the fastest and least complex manner possible.  
 
@@ -77,8 +77,8 @@ The Azure Automation State Configuration service is good for automating your DSC
 
 Each developer should be able to automatically provision an entire group of virtual machines, identical to what everyone else in the team is creating. The developers want to be sure they are all working in the same environment. The developers are familiar with JSON, but not necessarily administering infrastructure. They need to be able to provision all of the resources they need to run these virtual machines in an easy and rapid manner.
 
-You decide to introduce Azure Resource Manager templates to the developers. This way, you can collaborate with the developers to decide which resources they will need on Azure, and agree on a template that will satisfy their requirements. Since the template is JSON-based and easily deployable, the developers will be able to rapidly learn how Azure resources are provisioned, and deploy it themselves when the time comes.
+You decide to introduce Azure Resource Manager templates to the developers. This way, you can collaborate with the developers to decide which resources they will need on Azure, and agree on a template that will satisfy their requirements. Since the template is JSON-based and easily deployable, the developers will be able to rapidly learn how to provision Azure resources, and deploy it themselves when the time comes.
 
 ### Summary
 
-Resource Manager templates can be used for small ad-hoc infrastructures. They are also ideal for deploying larger infrastructures with multiple services along with their dependencies. Resource templates can fit well into developers' workflows. You use the same template to repeatedly deploy your application during every stage of the application lifecycle.
+Resource Manager templates can be used for small ad-hoc infrastructures. They're also ideal for deploying larger infrastructures with multiple services along with their dependencies. Resource templates can fit well into developers' workflows. You use the same template to repeatedly deploy your application during every stage of the application lifecycle.
