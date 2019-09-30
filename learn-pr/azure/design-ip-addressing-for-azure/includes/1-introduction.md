@@ -6,11 +6,11 @@ In this module, you'll learn about the public and private IP addressing capabili
 
 In this module, you will:
 
-- Identify the public and private IP addressing capabilities of Azure virtual networks.
+- Identify the private IP addressing capabilities of Azure virtual networks.
+- Identify the public IP addressing capabilities of Azure.
 - Identify the requirements for IP addressing when integrating with on-premises networks.
-
 
 ## Prerequisites
 
- - Knowledge of basic networking concepts – subnets, IP addressing, and so on.
- - Familiarity with Azure virtual networking.
+- Knowledge of basic networking concepts, network subnets, and IP addressing.
+- Familiarity with Azure virtual networking.
