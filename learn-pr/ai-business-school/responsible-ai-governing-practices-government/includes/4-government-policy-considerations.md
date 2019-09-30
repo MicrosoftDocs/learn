@@ -1,6 +1,6 @@
 ## Introduction
 
-The promise of AI is that the knowledge gained from applying analytics and machine learning to the wealth of data that is available today will enhance any decision-making process with additional intelligence, leading to better outcomes and transforming lives. Recent research from McKinsey estimates that AI can boost global GDP by $13 trillion by 2030, which is about 16% cumulative growth or 1.2% additional GDP growth per year.<sup>1</sup> United Nations agencies have embraced AI as an accelerator for realizing the 2030 Sustainable Development Goals.
+The promise of AI is that the knowledge gained from applying analytics and machine learning to the wealth of data that is available today will enhance any decision-making process with additional intelligence, leading to better outcomes and transforming lives. Recent research from McKinsey estimates that AI can boost global GDP by $13 trillion by 2030, which is about 16% cumulative growth or 1.2% additional GDP growth per year.<sup>4</sup> United Nations agencies have embraced AI as an accelerator for realizing the 2030 Sustainable Development Goals.
 
 As AI plays an increasing role in mediating people’s lives online and offline, appropriate design, deployment, economic, and social choices are essential to ensuring that AI systems deserve the trust of individuals and society at large. The starting point for creating trust in AI is to take a human-centered approach, with system choices that are grounded in universal, timeless values – that are also shared by relevant stakeholders from industry, government, civil society, and the research community.
 
@@ -14,7 +14,7 @@ Microsoft shared our view of responsible AI in [The Future Computed: Artificial 
 
 Internally, Microsoft has created the AI and Ethics in Engineering & Research (Aether) Committee. This committee is a cross-company group that advises our Senior Leadership Team on rising questions, challenges, and opportunities with the development and fielding of AI and related technologies.
 
-In September 2016, Microsoft cofounded the Partnership on AI (PAI) “to study and formulate best practices on AI technologies, to advance the public’s understanding of AI, and to serve as an open platform for discussion and engagement about AI and its influences on people and society.”<sup>2</sup> PAI now has more than 90 organizations (>50% are non-profits) from 13 countries and 4 continents.
+In September 2016, Microsoft cofounded the Partnership on AI (PAI) “to study and formulate best practices on AI technologies, to advance the public’s understanding of AI, and to serve as an open platform for discussion and engagement about AI and its influences on people and society.”<sup>5</sup> PAI now has more than 100 organizations (>50% are non-profits) from 13 countries and 4 continents.
 
 To encourage development of AI solutions to address global challenges, the Microsoft [AI for Good](https://www.microsoft.com/ai/ai-for-good) initiative is a $125 million, five-year commitment to encourage and support development of innovative AI solutions by organizations around the world. These organizations are working to address global challenges in accessibility, sustainability for the earth, humanitarian action, and the preservation of cultural heritage.
 
@@ -26,7 +26,7 @@ The recommendations, developed by an AI expert group that included representativ
 
 As more countries adopt the principles, it is hoped they will lead to development of AI systems that warrant the trust of individuals and society, which will enable broader adoption and realization of the transformative potential of AI. The OECD also included five recommendations to governments on national policies and international cooperation for trustworthy AI.
 
-The EU High Level Expert Group on AI also published its Ethics Guidelines on Artificial Intelligence in June 2019, and recommendations to help the Commission and Member States to update their joint coordinated plan on AI at the end of 2019.<sup>3</sup>
+The EU High Level Expert Group on AI also published its Ethics Guidelines on Artificial Intelligence in June 2019, and recommendations to help the Commission and Member States to update their joint coordinated plan on AI at the end of 2019.<sup>6</sup>
 
 Both the OECD and EU are encouraging implementations of their proposed principles as the next step, with the goal of sharing best practices and comments based on those implementations.
 
