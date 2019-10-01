@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-azureSandbox: true
+azureSandbox: false
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-see-trends.md)]
