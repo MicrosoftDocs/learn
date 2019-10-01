@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 24
 content: |
-  [!include[](includes/lp01-m00-04-service-models.md)]
+  [!include[](includes/04-building-blocks.md)]
 quiz:
   title: Check your knowledge
   questions:

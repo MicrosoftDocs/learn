@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
-  [!include[](includes/lp01-m00-01-cloud-computing.md)]
+  [!include[](includes/01-define-cloud-computing.md)]
 quiz:
   title: Check your knowledge
   questions:

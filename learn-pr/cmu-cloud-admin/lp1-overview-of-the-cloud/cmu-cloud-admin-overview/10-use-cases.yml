@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 12
 content: |
-  [!include[](includes/lp01-m00-10-use-cases.md)]
+  [!include[](includes/10-use-cases.md)]
 quiz:
   title: Check your knowledge
   questions:

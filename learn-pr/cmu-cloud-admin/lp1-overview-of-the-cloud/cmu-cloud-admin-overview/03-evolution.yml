@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 12
 content: |
-  [!include[](includes/lp01-m00-03-evolution.md)]
+  [!include[](includes/03-evolution.md)]
 quiz:
   title: Check your knowledge
   questions:

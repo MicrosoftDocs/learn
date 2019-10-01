@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 17
 content: |
-  [!include[](includes/lp01-m00-02-before-the-cloud.md)]
+  [!include[](includes/02-before-the-cloud.md)]
 quiz:
   title: Check your knowledge
   questions:

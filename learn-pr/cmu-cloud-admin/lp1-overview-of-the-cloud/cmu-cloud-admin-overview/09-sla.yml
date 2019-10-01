@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 8
 content: |
-  [!include[](includes/lp01-m00-09-sla.md)]
+  [!include[](includes/09-sla.md)]
 quiz:
   title: Check your knowledge
   questions:

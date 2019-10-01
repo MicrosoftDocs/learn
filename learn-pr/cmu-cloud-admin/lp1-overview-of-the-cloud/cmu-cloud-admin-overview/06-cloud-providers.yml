@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 12
 content: |
-  [!include[](includes/lp01-m00-06-cloud-stacks.md)]
+  [!include[](includes/06-cloud-providers.md)]
 quiz:
   title: Check your knowledge
   questions:

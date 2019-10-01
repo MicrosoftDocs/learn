@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/lp01-m00-07-economics.md)]
+  [!include[](includes/07-economics.md)]
 quiz:
   title: Check your knowledge
   questions:

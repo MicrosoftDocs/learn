@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 11
 content: |
-  [!include[](includes/lp01-m00-08-benefits-risks-challenges.md)]
+  [!include[](includes/08-pros-cons.md)]
 quiz:
   title: Check your knowledge
   questions:

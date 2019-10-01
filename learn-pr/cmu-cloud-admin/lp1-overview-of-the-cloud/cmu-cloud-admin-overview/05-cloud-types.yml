@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 8
 content: |
-  [!include[](includes/lp01-m00-05-types.md)]
+  [!include[](includes/05-cloud-types.md)]
 quiz:
   title: Check your knowledge
   questions:

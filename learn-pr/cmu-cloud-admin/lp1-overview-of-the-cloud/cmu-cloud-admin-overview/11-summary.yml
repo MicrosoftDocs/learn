@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
-  [!include[](includes/lp01-m00-11-summary.md)]
+  [!include[](includes/11-summary.md)]
