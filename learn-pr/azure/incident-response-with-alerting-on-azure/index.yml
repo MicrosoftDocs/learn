@@ -16,7 +16,7 @@ abstract: |
   - Learn how to use smart groups to identify and group related alerts to reduce alert noise
 prerequisites: | 
   - Basic knowledge of Azure Monitor
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/incident-response-with-alerting-on-azure.svg
 levels:
 - beginner
 roles:
