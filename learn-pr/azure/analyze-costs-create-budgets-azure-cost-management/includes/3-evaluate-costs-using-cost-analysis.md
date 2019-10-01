@@ -118,12 +118,11 @@ The filter bar shows:
 
 Let's start by creating a daily export of your cost and usage data.
 
-Navigate to  **Subscriptions, select a subscription from the list, and then select  **Cost analysis**  in the menu. At the top of the Cost analysis page, click  **Export**  and then choose an export option. For example, click  **Schedule export**.
-
+Navigate to **Subscriptions**, select a subscription from the list, and then select **Cost analysis** in the menu. At the top of the Cost analysis page, click **Export** and then choose an export option. For example, click  **Schedule export**.
 
 Besides subscriptions, you can create exports on resource groups, accounts, departments, and enrollments.
 
-Click  **Add, type a name for the export, and then select the  **Daily export of month-to-date costs** option. Click  **Next**.
+Click  **Add**, type a name for the export, and then select the  **Daily export of month-to-date costs** option. Click  **Next**.
 
 ![New export example showing export type](../media/3-basics_exports.png)
 
@@ -151,7 +150,7 @@ There are three types of export options:
 
 **Custom**  – Allows you to schedule weekly and monthly exports with week-to-date and month-to-date options. _The initial export will run immediately._
 
-If you have a Pay-As-You-Go, MSDN, or Visual Studio subscription, your invoice billing period might not align to the calendar month. For those types of subscriptions and resource groups, you can create an export that's aligned to your invoice period or to calendar months. To create an export aligned to your invoice month, navigate to  **Custom, then select  **Billing-period-to-date**. To create an export aligned to the calendar month, select  **Month-to-date**.
+If you have a Pay-As-You-Go, MSDN, or Visual Studio subscription, your invoice billing period might not align to the calendar month. For those types of subscriptions and resource groups, you can create an export that's aligned to your invoice period or to calendar months. To create an export aligned to your invoice month, navigate to  **Custom**, then select  **Billing-period-to-date**. To create an export aligned to the calendar month, select  **Month-to-date**.
 
 ![New export - Basics tab showing a custom weekly week-to-date selection](../media/3-tutorial-export-schedule-weekly-week-to-date.png)
 
