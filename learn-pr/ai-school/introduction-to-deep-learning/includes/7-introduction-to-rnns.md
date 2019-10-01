@@ -14,7 +14,7 @@ Standard RNNs struggle when there is a large gap between previous data that is r
 
 ### LSTM
 
-LSTMs are a special type of RNN which dramatically improves the model’s ability to connect previous data to current data where there is a long gap. For example, a standard RNN may struggle to accurately predict the sentence “My favorite artist is Mozart” because there may be a large gap between information about the context of the word artist - the context may have previously been about a painter.
+LSTMs are a special type of RNN which dramatically improves the model’s ability to connect previous data to current data where there is a long gap. For example, a standard RNN may struggle to accurately predict the sentence “For musical composition and just overall good style, my favorite artist would have to be Mozart” because there may be a large gap between information about the context of the word artist - the context may have previously been about a painter.
 
 LSTMs are quite complex behind the scenes so we won’t worry about the in-depth details for now. Where a normal RNN contains a single layer per cell, LSTMs contain four interacting layers.
 
