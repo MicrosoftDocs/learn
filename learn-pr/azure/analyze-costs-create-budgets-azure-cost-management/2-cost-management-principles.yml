@@ -50,5 +50,5 @@ quiz:
       isCorrect: false
       explanation: Azure Advisor provides insights and suggestions about how you might reduce costs. However, it does not keep teams accountable for their spending.
     - content: Budgets
-      isCorrect: trure
+      isCorrect: true
       explanation: Budgets combined with Alerts allow teams to stay on top of their spending. Budgets can be used to enforce spending limits in your organization.
