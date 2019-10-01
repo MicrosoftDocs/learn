@@ -129,12 +129,12 @@ By now the alert should be active and generating alerts.
 
 1. On the left, select **Monitor**, then select **Alerts** in the left panel.
 
-    ![Image showing the alert summary page](../media/4-alert-summary-page.png)
-
 1. This will present the alert summary page. Here's an example of the summary page after it has been running the alert for an hour or more.
+
+    ![Image showing the alert summary page](../media/4-alert-summary-page.png)
 
 1. You configured your metric alerts with a severity of Sev4. You now select the severity level sev4 to show all the alerts for that level.
 
     ![Image showing the alert summary page](../media/4-all-alerts-sev4.png)
 
-1. Selecting one of the alerts will display an Alert Details Panel. From this panel, you'll see specific details on the alert. After the issue is resolved, you can also change the alert state.
+1. Selecting one of the alerts will display the details on the alert. After the issue is resolved, you can also change the alert state.
