@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-security.secure-resources-with-azure-security-center.configure-a-playbook
-title: Configure a Playbook for a security event
+title: Exercise - configure a Playbook for a security event
 metadata:
-  title: Configure a Playbook for a security event
-  description: Configure a Playbook for a security event
+  title: Exercise - configure a Playbook for a security event
+  description: Exercise - configure a Playbook for a security event
   ms.date: 09/30/2019
   author: markjulmar
   ms.author: smmark
