@@ -104,7 +104,7 @@ A clone, just a like a fork, is a copy of a repository. When you clone a reposit
 
 To clone the *Space Game* web project to your computer:
 
-1. Go to your fork of the *Space Game* web project (**mslearn-tailspin-spacegame-web-deploy**) on GitHub.
+1. Go to your fork of the *Space Game* web project (**mslearn-tailspin-spacegame-web-deploy**) on [GitHub](https://github.com?azure-portal=true).
 1. Select **Clone or download**. Then select the button next to the URL that's shown to copy the URL to your clipboard:
 
     ![The Clone or download button on GitHub](../media/4-github-clone-button.png)

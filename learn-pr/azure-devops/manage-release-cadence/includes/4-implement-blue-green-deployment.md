@@ -10,9 +10,13 @@ To do so, you:
 
 ## Add a deployment slot
 
+Here, you add a deployment slot to the App Service instance that corresponds to _Staging_.
+
 By default, every App Service instance provides a default slot, named *production*. You deployed to the *production* slot when you set up the pipeline in the previous section.
 
 An App Service instance can have multiple slots. Here, you add second deployment slot to the App Service instance that corresponds to _Staging_. The deployment slot is named *swap*.
+
+To add the slot:
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu bar, select Cloud Shell. When prompted, select the **Bash** experience.
@@ -50,7 +54,7 @@ An App Service instance can have multiple slots. Here, you add second deployment
 
 1. Run the following command to list your deployment slot's hostname.
 
-    ```bash
+    ```azurecli
     az webapp deployment slot list \
         --name $staging \
         --resource-group tailspin-space-game-rg \
@@ -90,10 +94,12 @@ You can also use this task to start, stop, or delete a slot, as well as install 
     * The `AzureWebApp@1` task now specifies these values:
         * `deployToSlotOrASE`, when set to `true`, deploys to an existing deployment slot.
         * `resourceGroupName` specifies the name of the resource group, and is required when `deployToSlotOrASE` is `true`.
-        * `slotName` specifies the name of the deployment slot.
+        * `slotName` specifies the name of the deployment slot. Here, you deploy to the slot that's named *swap*.
     * The new task, `AzureAppServiceManage@0`, swaps the deployment slots.
         * `sourceSlot` and `targetSlot` specify the slots to swap.
         * `action` specifies the action to take. Recall that you can use this task to start, stop, or delete a slot. Here, "Swap Slots" specifies to swap the source and target slots.
+
+    This configuration always deploys to the *swap* slot, and then swaps the *production* and *swap* slots. The swap process ensures that *production* points to the more recent deployment.
 
 1. In the integrated terminal, add *azure-pipelines.yml* to the index, commit the changes, and push the branch up to GitHub.
 

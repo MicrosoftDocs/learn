@@ -155,9 +155,9 @@ Here, you create the App Service instances for the three stages you'll deploy to
 
     Recall that an App Service plan defines the CPU, memory, and storage resources that are provided for your web app to run. 
 
-    The first command specifies the **B1** plan, which runs on the **Basic** tier, which is used by the App Service environments for the _Dev_ and _Test_ stages. The **B1 Basic** plan is intended for apps that have lower traffic requirements, such as a development or test environment.
+    The first command specifies the **B1** plan, which runs on the **Basic** tier, and is used by the App Service environments for the _Dev_ and _Test_ stages. The **B1 Basic** plan is intended for apps that have lower traffic requirements, such as a development or test environment.
 
-    The second command specifies the **P1V2** plan, which runs on the **Premium** tier. The **Premium P1V2** plan is for production workloads and runs on dedicated virtual machine instances.
+    The second command specifies the **P1V2** plan, which runs on the **Premium** tier. This plan is used for _Staging_. The **Premium P1V2** plan is for production workloads and runs on dedicated virtual machine instances.
 
     The **Basic** plan tier does not offer additional deployment slots. However, the **Premium** plan does. That's why you need it for your _Staging_ environment.
 
