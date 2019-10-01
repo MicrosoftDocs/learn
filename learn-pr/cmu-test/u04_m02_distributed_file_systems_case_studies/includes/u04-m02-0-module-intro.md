@@ -1,4 +1,0 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u04_cloud_storage\_u04_m02_distributed_file_systems_case_studies\x-oli-workbook_page\_u04_m02_0_module_intro.xml -->
-
-
-In this module, we discuss two distributed file systems: the Hadoop Distributed File System (HDFS) and Ceph FS. Both HDFS and Ceph FS are designed to be big-data file systems, but have subtle differences. HDFS is designed for large files with write-once, read-many semantics. Ceph FS, on the other hand is geared towards being a general-purpose distributed file system that can be used for a variety of applications deployed on a virtualized cluster. Ceph FS is a file system layered on top of a distributed object store. This module elaborates on some of the design choices made by the developers of these file systems for their target applications.

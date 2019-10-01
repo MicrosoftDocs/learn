@@ -1,9 +1,0 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u04_cloud_storage\_u04_m01_cloud_storage\x-oli-workbook_page\_u04_m01_0_module_intro.xml -->
-
-We now move on to the next part of the course, namely Cloud Storage. Storage is an important aspect of cloud computing and has seen a lot of innovation in the last decade or so. In fact, Amazon’s first public cloud service was the Simple Storage Service (S3). 
-
-We will begin with a description of the types of and characteristics of data. We will then move to typical applications and thier requirements on storage systems. 
-
-We will then explore storage devices and recap the various types of devices that are currently used in storage systems. Next, we visit the various abstractions that are used to organize data - either as blocks on disk, files within a file system or as objects in a database. We will then explore each of those abstractions in detail. 
-
-The first abstraction we will dive into is file systems. We will discuss the different types of file systems as well as their design considerations. We will then explore databases, consider the various design choices made when creating database systems and discuss the three main types of databases that are popular today: Relational, NoSQL and NewSQL databases. We will finally end this unit with a discussion on a class of cloud specific storage systems, namely object storage as a cloud service.

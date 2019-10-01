@@ -1,5 +1,0 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m02_virtualization\x-oli-workbook_page\_u03_m02_0_module_intro.xml -->
-
-Now that we have covered the motivation and benefits of virtualization, in this module, we will cover the formal definition of virtualization. 
-
-You may have also noticed that there are different types of virtual machines. For example, Java programs run inside a sandbox environment known as a Java Virtual Machine (JVM). You may also have seen or used virtualization software on your desktop or laptop, such as VirtualBox or Parallels, which allow you to run multiple Operating systems on your computer simultaneously. Also, you should have provisioned and used virtualized instances on a cloud provider in the programming projects for this course. Each of these virtualization systems are different; you will learn about the various virtualization types in detail in this module. 

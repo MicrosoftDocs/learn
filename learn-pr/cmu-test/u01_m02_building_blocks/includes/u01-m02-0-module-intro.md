@@ -1,9 +1,0 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u01_intro\_u01_m02_building_blocks\x-oli-workbook_page\_u01_m02_0_module_intro.xml -->
-
-Now that we have covered the fundamental ideas behind cloud computing, it is important to explore some of the benefits, risks and ongoing challenges facing cloud computing. Since one of the main drivers of cloud adoption is reducing upfront costs and leveraging the economies of scale, we will then look at the economics behind the cloud from two perspectives- that of cloud users and service providers.
-
-Since computing has migrated from a product to a service, there should be methods to define relationships between the users and service providers. The cloud has adopted traditional contractual guarantees like Service Level Agreements (SLAs) that meet a cloud user's Service Level Objectives (SLOs). We will see how Cloud Service Providers define SLAs and SLOs to ensure a level of service to their clients. We will also briefly introduce the concept of cloud service auditing to verify conformity with SLAs.
-
-Apart from contractual concerns, security and privacy are the biggest challenges that are preventing sensitive applications from moving to the cloud. We will explore some of the unique security challenges raised by the cloud and the controls required to resolve them. 
-
-Although the cloud has benefited from rapid adoption, there is no one-size-fits-all solution that encompasses all IT requirements. Keep in mind that the cloud is an emerging and fast-evolving paradigm with many active research areas exploring its future.

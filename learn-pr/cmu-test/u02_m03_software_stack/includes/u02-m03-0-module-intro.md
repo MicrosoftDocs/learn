@@ -1,9 +1,0 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u02_data_centers\_u02_m03_software_stack\x-oli-workbook_page\_u02_m03_0_module_intro.xml -->
-
-You have learned the origins of a data center, from its roots in mainframe computers to the newest trends, and about what goes inside a data center (cooling, power, servers, network, and more), as well as some of the design criteria for various components that data center. 
-
-When designing large data centers, it is not possible to follow the same practices as that of a small data center. To truly leverage the economies of scale, it is important that the data center have a software layer that allows resources to be governed and managed easily. The cloud software stack is a platform to run a cloud given a pool of physical resources. Since most Cloud Service Providers (CSPs) are extremely wary of revealing their techniques (since it is their Intellectual Property) we have to rely on reverse engineering, rumors and the contribution of open-source cloud software stacks like OpenStack to understand the components involved. 
-
-In this module, we will start by learning about how a software middleware layer enables all the benefits of the cloud. We will look at the simplest use case, that of resource provisioning, and understand that a long series of steps are involved in handling a simple resource request. Of course, cloud providers charge for every quantifiable resource that a user utilizes. We must understand the details of the billing and monitoring systems that enables CSPs to profit from their data center. Automation and orchestration are some important techniques that we will look at the enable the low staff-to-resource ratio at CSPs, and drive down their effective costs.
-
-Finally, we will look at OpenStack, an increasingly popular software platform that allows anyone with physical resources to create a cloud environment.

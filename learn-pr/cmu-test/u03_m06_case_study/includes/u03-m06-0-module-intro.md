@@ -1,3 +1,0 @@
-<!-- Original file: C:\Users\Mark\Desktop\CMU-source\v_5_3\content\_u03_virtualizing_resources_for_cloud\_u03_m06_case_study\x-oli-workbook_page\_u03_m06_0_module_intro.xml -->
-
-Now that we have covered some of the theory behind virtualization, we can look at a few case studies. Specifically, we start out with an overview of current virtualization suites in the market, which includes a feature-wise comparison of VMWare, XenServer, HyperV and RHEV. Next, we will take a closer look at Amazon EC2 as a public IaaS provider and some of the design decisions made with respect to providing a general, broad-based public IaaS cloud service. 
