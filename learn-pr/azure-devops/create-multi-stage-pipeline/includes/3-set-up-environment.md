@@ -28,16 +28,17 @@ The modules in this learning path form a progression, where you follow the Tails
 1. Run a template that sets up everything for you in your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=create-build-pipeline&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=create-multi-stage-pipeline&azure-portal=true)
 
 From the Azure DevOps Demo Generator site, perform these steps to run the template.
 
 1. Select **Sign In** and accept the usage terms.
-1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - Multi-stage**. Then select **Create Project**.
+1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - Multi-stage**.
 
     ![Creating a project through the Azure DevOps Demo Generator](../media/4-create-new-project.png)
 
-    <!-- TODO: Generate the template, update link & screenshot -->
+1. Select **Yes, I want to fork this repository** and then select **Authorize**.
+1. Select **Create Project**.
 
     It takes a few moments for the template to run.
 1. Select **Navigate to project** to go to your project in Azure DevOps.
