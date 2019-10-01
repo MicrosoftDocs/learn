@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure-security.secure-resources-with-azure-security-center
+metadata:
+  title: Protect your resources with Azure Security Center
+  description: Master securing your Azure workloads with Azure Security Center. In this module, you’ll discover how to detect and respond to threats with Azure Security Center.
+  ms.date: 09/30/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Protect your resources with Azure Security Center
+summary: In this module, you’ll discover how to detect and respond to threats with Azure Security Center.
+abstract: | 
+  In this module, you will:
+  - Use the Azure Security Center dashboard to identify potential security issues.
+  - Learn how to protect VM-based resources and networks.
+  - Configure security policies to monitor created resources in Azure.
+  - Create and customize security alerts.
+prerequisites: |
+  - Basic familiarity with Azure services.
+  - Familiarity with Azure virtual machines and virtual networking.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+products:
+- azure
+units:
+- learn.azure-security.secure-resources-with-azure-security-center.introduction
+- learn.azure-security.secure-resources-with-azure-security-center.security-center-tiers
+- learn.azure-security.secure-resources-with-azure-security-center.policy-management
+- learn.azure-security.secure-resources-with-azure-security-center.analyze-recommendations
+- learn.azure-security.secure-resources-with-azure-security-center.jit-vm-access
+- learn.azure-security.secure-resources-with-azure-security-center.manage-security-alerts
+- learn.azure-security.secure-resources-with-azure-security-center.configure-a-playbook
+- learn.azure-security.secure-resources-with-azure-security-center.summary
+badge:
+  uid: learn.azure-security.configure-security-policies-using-azure-security-center.badge

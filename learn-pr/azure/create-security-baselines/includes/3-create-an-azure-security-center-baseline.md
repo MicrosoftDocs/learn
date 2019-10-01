@@ -1,4 +1,5 @@
 Azure Security Center (ASC) provides unified security management and advanced threat protection for workloads running in Azure, on-premises, and in other clouds. The following are Security Center recommendations that, if followed, will set various security policies on an Azure subscription.
+
 These policies define the set of controls that are recommended for your resources with an Azure subscription.
 
 ## Azure Security Center recommendations
