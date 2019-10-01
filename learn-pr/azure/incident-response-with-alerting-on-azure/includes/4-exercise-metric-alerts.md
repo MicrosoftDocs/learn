@@ -8,35 +8,33 @@ You'll use the Azure Cloud Shell to execute commands quickly in Azure without ne
 
 This VM will run a specific configuration that stresses the CPU and generates the metric monitoring data needed to trigger an alert.
 
-1. Let's start by creatingBefore you create the VM, you need to set up the configuration script. Use the Cloud Shell to run the following command:
+1. Let's start by creating the configuration script. Run this command in the Cloud Shell to create the `cloud-init.txt` file with the configuration for the virtual machine.
 
     ```bash
-    {
-    echo '#cloud-config'
-    echo 'package_upgrade: true'
-    echo 'packages:'
-    echo '- stress'
-    echo 'runcmd:'
-    echo '- sudo stress --cpu 1'
-    } > cloud-init.txt
+    cat <<EOF > cloud-init.txt 
+    #cloud-config
+    package_upgrade: true
+    packages:
+    - stress
+    runcmd:
+    - sudo stress --cpu 1
+    EOF
     ```
 
 1. Run the `az vm create` command to set up an Ubuntu Linux VM. This command will use the `cloud-init.txt` file you created in the previous step to configure the VM after it's created.
 
     ```azurecli
-    export SUBS=$(az vm create \
-                    --resource-group <rgn>[sandbox resource group name]</rgn> \
-                    --name vm1 \
-                    --image UbuntuLTS \
-                    --custom-data cloud-init.txt \
-                    --generate-ssh-keys \
-                    --output tsv \
-                    --query id)
+    az vm create \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --name vm1 \
+        --image UbuntuLTS \
+        --custom-data cloud-init.txt \
+        --generate-ssh-keys
     ```
 
 ## Create the Azure Metric Monitor through the Azure portal
 
-You use either the Azure portal or the CLI to create a metric monitor. For completeness, we will cover both.
+You use either the Azure portal or the CLI to create a metric monitor. In this exercise we will cover both, starting with the Azure portal.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
@@ -46,13 +44,13 @@ You use either the Azure portal or the CLI to create a metric monitor. For compl
 
     ![Image showing the create rule page](../media/4-create-monitor-rule.png)
 
-1. In the **Resource** section, press **Select**.
+1. In the **RESOURCE** section, press **Select**.
 
 1. Find your Azure sandbox subscription, and then filter by **virtual machines**. The virtual machine will be visible under the **<rgn>[sandbox resource group name]</rgn>** resource group. Select the virtual machine and then select **Done** at the bottom of the page.
 
     ![Image showing the create rule page](../media/4-select-resource.png)
 
-1. Configure the conditional logic for this resource. Select **Add** in the **CONDITION** section.
+1. Next you will configure the conditional logic for this resource. In the **CONDITION** section, select **Add**.
 
 1. For **Signal Type** select **Metrics** and for **Monitor Service** select **All**.
 
