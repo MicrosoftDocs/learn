@@ -37,17 +37,17 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.lp01-m00-00-intro
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.lp01-m00-01-cloud-computing
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.lp01-m00-02-before-the-cloud
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.lp01-m00-03-evolution
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.lp01-m00-04-service-models
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.lp01-m00-05-types
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.lp01-m00-06-cloud-stacks
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.lp01-m00-07-economics
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.lp01-m00-08-benefits-risks-challenges
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.lp01-m00-09-sla
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.lp01-m00-10-use-cases
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.lp01-m00-11-summary
+- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.00-intro
+- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.01-define-cloud-computing
+- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.02-before-the-cloud
+- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.03-evolution
+- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.04-building-blocks
+- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.05-cloud-types
+- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.06-cloud-providers
+- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.07-economics
+- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.08-pros-cons
+- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.09-sla
+- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.10-use-cases
+- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.11-summary
 badge:
   uid: learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.badge
