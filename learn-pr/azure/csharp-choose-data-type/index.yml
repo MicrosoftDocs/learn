@@ -12,11 +12,11 @@ title: Choose the correct data type in your C# code
 summary: Learn the difference between many data types, how they work, what they do, and how to choose one over another.
 abstract: |
   In this module, you will:
-  - Learn the fundamental differences between *value types* and *reference types*
-  - Describe the properties of many new numeric data types, including new *integral types* and *floating point types*
-  - Write code that returns the maximum and minimum values that numeric data types can store
-  - Use the `new` keyword to create new instances of a reference type
-  - Determine which data type you should choose for a given application
+  - Learn the fundamental differences between *value types* and *reference types*.
+  - Describe the properties of many new numeric data types, including new *integral types* and *floating point types*.
+  - Write code that returns the maximum and minimum values that numeric data types can store.
+  - Use the `new` keyword to create new instances of a reference type.
+  - Determine which data type you should choose for a given application.
 prerequisites: |
   - Experience using basic data types like `string`, `char`, `bool`, `int`, and `decimal`
   - Experience using string interpolation to combine variables in string templates
