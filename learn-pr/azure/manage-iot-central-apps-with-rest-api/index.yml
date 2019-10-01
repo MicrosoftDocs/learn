@@ -21,13 +21,23 @@ abstract:  |
 prerequisites: None
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
-- beginner
+- intermediate
 roles:
 - developer
+- solution-architect
 products:
 - azure
-# - azure-iot-central
+- azure-iot-central
 units:
-- learn.iot.manage-iot-central-apps-with-rest-api.introduction
+- learn.iot.manage-iot-central-apps-with-rest-api.1-introduction
+- learn.iot.manage-iot-central-apps-with-rest-api.2-authorize-api
+- learn.iot.manage-iot-central-apps-with-rest-api.3-exercise-authorize-api
+- learn.iot.manage-iot-central-apps-with-rest-api.4-manage-devices
+- learn.iot.manage-iot-central-apps-with-rest-api.5-exercise-manage-devices
+- learn.iot.manage-iot-central-apps-with-rest-api.6-control-devices
+- learn.iot.manage-iot-central-apps-with-rest-api.7-exercise-control-devices
+- learn.iot.manage-iot-central-apps-with-rest-api.8-export-data
+- learn.iot.manage-iot-central-apps-with-rest-api.9-exercise-export-data
+- learn.iot.manage-iot-central-apps-with-rest-api.10-summary
 badge:
   uid: learn.iot.manage-iot-central-apps-with-rest-api.badge

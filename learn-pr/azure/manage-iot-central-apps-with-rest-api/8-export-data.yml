@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.manage-iot-central-apps-with-rest-api.8-export-data
+title: Export telemetry data from your application
+metadata:
+  title: Export telemetry data from your application
+  description: Export telemetry data from your application
+  ms.date: 11/5/2019
+  author: dominicbetts
+  ms.author: dobetts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-export-data.md)]

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.manage-iot-central-apps-with-rest-api.1-introduction
-title: Introduction
+uid: learn.iot.manage-iot-central-apps-with-rest-api.10-summary
+title: Summary
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Summary
+  description: Summary
   ms.date: 11/5/2019
   author: dominicbetts
   ms.author: dobetts
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/10-summary.md)]
