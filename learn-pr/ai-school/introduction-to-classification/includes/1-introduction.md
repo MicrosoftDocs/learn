@@ -2,6 +2,8 @@ Classification can be thought of as sorting examples into categories. The graph 
 
 ![Scatter plot showing a logistic regression classification. The Y-axis represents independent variable 2, and the X-axis represents independent variable 1. The plot is roughly divided in two diagonally, with blue data points on one side, and green data points on the other side. There is a black line of best fit, splitting the two categories diagonally.](../media/3.1_LogisticRegression-01.png)
 
+Unlike with regression, the line isn't the prediction. Instead the line divides data points to  predict categories. For example, a data point left of the line would be predicted as the blue, dissatisfied customer category. To the right of the line would be the green, satisfied customer category.
+
 If you have done some data science before you might be used to seeing logistic regression with only one feature, with the label on the y axis.
 
 ![Scatter plot showing a logistic regression with only one feature. The Y-axis represents satisfaction likelihood and the X-axis represent coca percent. The blue data points on the bottom of the Y-axis, with low levels of cocoa percent. The green data points are at the top of the Y-axis with high levels of cocoa percent. There is a non-linear black line that divides the two categories.](../media/3.1_LogisticRegression-02.png)
