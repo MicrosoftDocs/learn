@@ -24,7 +24,7 @@ So to predict that what’s in this red square is part of an elephant’s ear, t
 
 Layers are the key component of neural networks. We choose how many nodes each layer contains and how many layers there are in order to maximize the accuracy of our output.
 
-We can have large layers
+We can have large layers, which have many nodes
 
 ![Diagram representing large layers. There are three layers of circles (nodes). There is a left-hand layer with six nodes labeled 'input layer', with a red line between the bottom two nodes to indicate there could be more nodes there. There is also a center layer with five nodes each labeled 'hidden layer', with a similar red line to indicate there could be more nodes. There is finally an output layer with three nodes labeled 'output layer', again with a red line. There are lines linking each node with each node on the adjacent layers.](../media/5.2_Large_Layers.png)
 
