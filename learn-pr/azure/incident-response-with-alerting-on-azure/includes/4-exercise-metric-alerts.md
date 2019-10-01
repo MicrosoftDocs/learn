@@ -1,4 +1,4 @@
-The shipping company that you work for is keen to avoid any future issues with updates to its applications on the Azure platform. To improve the alerting capabilities within Azure, you've chosen to use Azure metric alerting. 
+The shipping company that you work for is keen to avoid any future issues with updates to its applications on the Azure platform. To improve the alerting capabilities within Azure, you've chosen to use Azure metric alerting.
 
 Your goal is to create the Linux VM, set it to 100% CPU utilization, then sign in to the Azure portal sandbox and create a metric monitoring rule.
 
@@ -12,7 +12,7 @@ This VM will run a specific configuration that stresses the CPU and generates th
 
     Before you create the VM, you need to set up the configuration script. Use the Cloud Shell to run the following command:
 
-    ```azurecli
+    ```bash
     {
     echo '#cloud-config'
     echo 'package_upgrade: true' 
@@ -33,20 +33,22 @@ This VM will run a specific configuration that stresses the CPU and generates th
 
     ```azurecli
     export SUBS=$(az vm create \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --name stressedCPU$RANDOM \
-    --image UbuntuLTS \
-    --custom-data cloud-init.txt \
-    --generate-ssh-keys \
-    --output tsv --query id)
-    ```
+                    --resource-group <rgn>[sandbox resource group name]</rgn> \
+                    --name stressedCPU$RANDOM \
+                    --image UbuntuLTS \
+                    --custom-data cloud-init.txt \
+                    --generate-ssh-keys \
+                    --output tsv --query id)
+        ```
 
 ## Create the Azure Metric Monitor through the Azure portal
 
 You use either the Azure portal or the CLI to create a metric monitor. For completeness, we will cover both.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+
 1. On the left, select **Monitor**, then select **Alerts** in the left panel.
+
 1. Select the **+ New alert rule**. The **Create rule** page will be displayed.
 
     ![Image showing the create rule page](../media/ex1-create-monitor-rule.png)
@@ -63,14 +65,13 @@ You use either the Azure portal or the CLI to create a metric monitor. For compl
 
     - Signal Type: **Metrics**
     - Monitor Service: **All**
-    
+
     The list of available signals will change depending on the signal type selected. From the list of available signal types, find and select:
 
     - **Percentage CPU**
 
     ![Image showing the create rule page](../media/ex1-conf-signal-logic.png)
 
-    
 1. Define the logic test that will be applied to the metric monitoring data. In the condition section, select **Add**. This will display the Alert logic panel.
 
     ![Image showing the metric condition logics settings](../media/ex1-metric-alert-logic.png)
@@ -84,17 +85,17 @@ You use either the Azure portal or the CLI to create a metric monitor. For compl
 
     Use the details above to complete the panel.
 
- 1. Give the alert a name and a description. In the Alert Details section, provide the following information:
+1. Give the alert a name and a description. In the Alert Details section, provide the following information:
 
     ![Image showing a completed alert details section](../media/ex1-metric-alert-details.png)
-    
+
     - Alert rule name: **CPUAlert**
     - Description: **VM Server running hot**
     - Severity: **Sev 4**
     - Enabled rule upon creation: **Yes**
 
-1. Now that you have defined the rule, you select 'Create alert rule'.
-    
+1. Now that you have defined the rule, you select **Create alert rule**.
+
     You have successfully created a metric alert rule that will trigger an alert when the CPU percentage on the  virtual machine exceeds 90%. The rule will check every minute and review one minute of data. It can take up to 10 minutes for a metric alert rule to become active.
 
 ## Create the Azure Metric Monitor through the CLI
@@ -106,12 +107,15 @@ You'll create a new metric alert similar to the one you set up in the Azure port
 1. Using the Cloud Shell create a new metric alert, that will be triggered when the VM CPU is greater than 80%.
 
     ```azurecli
-    az monitor metrics alert create -n "CPUWarmingUp" \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --scopes $SUBS \
-    --condition "max Percentage CPU > 80" \
-    --description "VM Server warming up" \
-    --evaluation-frequency 1m --window-size 1m --severity 3
+    az monitor metrics alert create \
+        -n "CPU80PercentAlert" \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --scopes $SUBS \
+        --condition "max percentage CPU > 80" \
+        --description "Virtual machine is running at or greater than 80% CPU utilization" \
+        --evaluation-frequency 1m \
+        --window-size 1m \
+        --severity 3
     ```
 
 ## View your metric alerts in Azure Monitor
@@ -121,6 +125,7 @@ In the example, you set up an Ubuntu VM and configured it to stress test the CPU
 By now the alert should be active and generating alerts.
 
 1. Return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+
 1. On the left, select **Monitor**, then select **Alerts** in the left panel.
 
     ![Image showing the alert summary page](../media/ex1-alert-summary-page.png)

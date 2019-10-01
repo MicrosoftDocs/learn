@@ -5,20 +5,24 @@ As an Azure solution architect, you want to explore the capability to monitor se
 In this unit, you'll explore the two different kinds of active log alerts. Now that you've seen all the different kinds of alerts you can use in Azure Monitor, you'll see how you can trigger actions for your alerts, like sending an email or creating an ITSM support ticket.
 
 ## When to use activity log alerts
+
 So far, you've seen two different types of alerting supported in Azure Monitor. Metric alerts are ideally suited to monitoring for threshold breaches or spotting trends, while log alerts allow for greater analytical monitoring of historical data.
 
 Activity log alerts are designed to work with Azure Resources. Typically, you create this type of log to receive notifications when specific changes occur on a resource within your Azure subscription.
 
-There are two distinct flavors of activity log alerts, and they are created different: 
+There are two distinct flavors of activity log alerts, and they are created different:
+
 - **Specific operations**: apply to resources within your Azure subscription and often have a scope with specific resources or a resource group. You use this type when you need to receive an alert that reports a change to an aspect of your subscription. For example, if a virtual machine is deleted or new roles are assigned to a user.
 - **Service health events**: include notice of incidents and maintenance of target resources.
 
 ## Composition of an activity log alert
+
 It's important to note that activity log alerts will only monitor events in the subscription where the log alert was created.
 
 Because activity log alerts are based on events, the best approach for defining them is to use Azure Monitor to filter all the events in your subscription - until you find the one that you want. You then select **Add activity log alert** to begin the creation process.
 
 Like the previous alerts, activity log alerts have their own attributes:
+
 - **Category**: you select from Administrative, service health, autoscale, policy, or recommendation
 - **Scope**: Resource level, Resource Group level, or Subscription level
 - **Resource group**: where the alert rule is saved

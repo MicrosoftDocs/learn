@@ -12,7 +12,9 @@ Finally, you explored how to use smart groups to reduce notification and alert n
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
 ## Learn more
+
 Further information on Azure Monitor, each of the alerting types, and smart groups can be found here:
+
 - [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-overview)
 - [Metric alerts](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric-overview)
 - [Log alerts](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-unified-log)

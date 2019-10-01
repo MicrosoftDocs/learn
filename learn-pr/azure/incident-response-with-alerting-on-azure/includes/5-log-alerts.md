@@ -1,4 +1,4 @@
-Azure Monitor can be used to capture important information from log files. These log files can be created by applications, operating systems, other hardware, or Azure services. 
+Azure Monitor can be used to capture important information from log files. These log files can be created by applications, operating systems, other hardware, or Azure services.
 
 As a solution architect, you want to explore the ways monitoring log data can detect issues before they become problems for your customers. You know Azure Monitor supports the use of log data.
 
@@ -21,6 +21,7 @@ When a log search evaluates as positive, an alert record is created and any asso
 ## Composition of Log Search Rules
 
 Every log alert has an associated search rule. The composition of these rules is:
+
 - **Log query**: the query that runs every time the alert rule fires.
 - **Time period**: specifies the time range for the query.
 - **Frequency**: specifies how often the query should be run.
@@ -39,7 +40,7 @@ Metric measurement logs offer the same basic functionality as metric alert logs.
 Unlike a number of records search logs, metric measurement logs require additional criteria to be set, as follows:
 
 - **Aggregate function**: defines the calculation that will be made against the result data. For example, count or average. The result of the function is called AggregatedValue.
-- **Group field**: used in conjunction with the aggregated value and specifies a field by which the result will be grouped. For example, you could specify that you want the average [grouped] by computer.
+- **Group field**: used in conjunction with the aggregated value and specifies a field by which the result will be grouped. For example, you could specify that you want the average grouped by computer.
 - **Interval**: the time interval by which data is aggregated. For example, if you specify 10 minutes, an alert record is created for each aggregated block of 10 minutes.
 - **Threshold**: defined by an aggregated value and the total number of breaches.
 
@@ -48,4 +49,5 @@ You would consider using this type of alert when you need to add a level of tole
 As you can see, metric measurements greatly reduce the volume of alerts being produced. However, careful consideration needs to be given when setting the threshold parameters, to avoid missing critical alerts.
 
 ## Stateless nature of log alerts
+
 One of the primary considerations when evaluating the use of log alerts is that they are stateless. This means that a log alert will generate new alerts every time the rule criteria is triggered, regardless of whether the alert was previously recorded.
