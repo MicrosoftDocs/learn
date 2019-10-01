@@ -46,7 +46,9 @@ You use either the Azure portal or the CLI to create a metric monitor. In this e
 
 1. In the **RESOURCE** section, press **Select**.
 
-1. Find your Azure sandbox subscription, and then filter by **virtual machines**. The virtual machine will be visible under the **<rgn>[sandbox resource group name]</rgn>** resource group. Select the virtual machine and then select **Done** at the bottom of the page.
+1. The **Filter by subscription** drop-down should already be populated with the **Concierge Subscription**. In the **Filter by resource type** drop-down select **Virtual machines**.
+
+    Select the `vm1` virtual machine under the **<rgn>[sandbox resource group name]</rgn>** resource group, then select **Done** at the bottom of the page.
 
     ![Image showing the create rule page](../media/4-select-resource.png)
 
@@ -73,7 +75,7 @@ You use either the Azure portal or the CLI to create a metric monitor. In this e
 
     ![Image showing the metric condition logics settings](../media/4-metric-alert-logic.png)
 
-1. Give the alert a name and a description. In the **Alert Details** section, provide the following information:
+1. In the **ALERT DETAILS** section, provide the following information:
 
     | Setting | Value |
     |---------|---------|
@@ -85,7 +87,7 @@ You use either the Azure portal or the CLI to create a metric monitor. In this e
 
     ![Image showing a completed alert details section](../media/4-metric-alert-details.png)
 
-1. Now that you have defined the rule, select **Create alert rule**.
+1. Select **Create alert rule** to create the alert rule.
 
 You have successfully created a metric alert rule that will trigger an alert when the CPU percentage on the  virtual machine exceeds 90%. The rule will check every minute and review one minute of data. It can take up to 10 minutes for a metric alert rule to become active.
 
@@ -100,8 +102,8 @@ Let's create a new metric alert similar to the one you set up in the Azure porta
     ```bash
     VMID=$(az vm show \
             --resource-group <rgn>[sandbox resource group name]</rgn> \
-            --name vm1
-            --query id
+            --name vm1 \
+            --query id \
             --output tsv)
     ```
 
@@ -133,7 +135,7 @@ By now the alert should be active and generating alerts.
 
     ![Image showing the alert summary page](../media/4-alert-summary-page.png)
 
-1. You configured your metric alerts with a severity of Sev4. You now select the severity level sev4 to show all the alerts for that level.
+1. You configured your metric alerts with a severity of Sev3 and Sev4. You now select the severity level Sev4 to show all the alerts for that level.
 
     ![Image showing the alert summary page](../media/4-all-alerts-sev4.png)
 
