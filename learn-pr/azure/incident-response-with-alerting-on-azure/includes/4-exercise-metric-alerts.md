@@ -135,8 +135,10 @@ By now the alert should be active and generating alerts.
 
     ![Image showing the alert summary page](../media/4-alert-summary-page.png)
 
-1. You configured your metric alerts with a severity of Sev3 and Sev4. You now select the severity level Sev4 to show all the alerts for that level.
+1. You configured your metric alerts with a severity of Sev2 and Sev3. Select one of the severity levels to show all the alerts for that level.
 
     ![Image showing the alert summary page](../media/4-all-alerts-sev4.png)
 
 1. Selecting one of the alerts will display the details on the alert. After the issue is resolved, you can also change the alert state.
+
+    ![Image showing the alert details page](../media/4-alert-details.png)
