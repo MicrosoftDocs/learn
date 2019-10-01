@@ -1,9 +1,7 @@
-In this module, you explored the possibilities for extending and integrating your on-premises networks to Azure. You covered using VPN Gateway and Azure ExpressRoute for on-premises connections, the use cases for each and a high-level overview of a supported architectural pattern.
+You work for a global enterprise, planning a migration to Azure. The migration needs to integrate resources in Azure with your on-premises networks.  Additionally, your company has a central datacenter that requires connectivity to Azure, along with several remote offices.
 
-You've learned how to:
+In this module, you examined some of the nascent technologies available for connecting your on-premises network with the Azure Cloud. You now understand how an Azure Virtual Network operates. The benefits of an Azure VPN Gateway and the associated topologies like Site-to-Site, Point-to-Site. Additionally, you know the benefits and features of several hybrid network architectures, including ExpressRoute, VPN, ExpressRoute with VPN and the Hub-spoke topology.
 
-- Identify the methods to integrate on-premises networks with Azure
-- Identify the features and limitations of each method of network integration
-- Select the appropriate hybrid network solution for given use cases
+You can apply this knowledge to the migration. By using a Microsoft connectivity provider to provision an ExpressRoute connection between your on-premises network and the Azure Cloud.  Which will provide a fast and secure connection to the cloud. Ideal for your cloud users to access on-premises resources seamlessly. For additional resilience, the ExpressRoute circuit can incorporate a VPN failover link. So should the ExpressRoute circuit become temporarily unavailable, the VPN link will continue the connection.
 
-ExpressRoute offers a feature rich, cost effective and private networking connection that enables connections from your on-premises network into the entire Microsoft Cloud Platform.
+By using a hybrid network architecture like ExpressRoute, you enable your users a single-sign-on user experience, while providing a feature-rich, cost-effective, and private networking connection that allows connections to from your on-premises network into the entire Microsoft Cloud Platform.

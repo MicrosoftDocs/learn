@@ -39,7 +39,7 @@ Here are some of the benefits of using a VPN connection:
 
 ### Considerations
 
-The following should be considered when evaluating the use of this hybrid architecture.
+The following items should be considered when evaluating the use of this hybrid architecture.
 
 - A VPN connection uses the internet.
 - Potential latency issues depending on bandwidth size and usage.
@@ -67,7 +67,7 @@ The following benefits can be had by implementing this hybrid architecture.
 
 ### Considerations
 
-The following should be considered when evaluating the use of this hybrid architecture.
+The following items should be considered when evaluating the use of this hybrid architecture.
 
 - Setup and configuration are more complex and will require collaboration with the connectivity provider.
 - Installation of high-bandwidth routers needed on-premises.
@@ -75,7 +75,7 @@ The following should be considered when evaluating the use of this hybrid archit
 
 ## ExpressRoute with VPN failover
 
-This is a mashup of the VPN connection and ExpressRoute that improves the resiliency of your network connection. When operating under normal conditions, it behaves exactly like a regular ExpressRoute architecture, with the VPN connection remaining dormant. If the ExpressRoute circuit fails or goes offline, the VPN connection takes over. This ensures the availability of the network under all circumstances. Once the ExpressRoute circuit has been restored, all traffic will revert to using the ExpressRoute connection.
+The merging of the VPN connection and ExpressRoute improves the resiliency of your network connection. When operating under normal conditions, it behaves exactly like a regular ExpressRoute architecture, with the VPN connection remaining dormant. If the ExpressRoute circuit fails or goes offline, the VPN connection takes over. Which ensures the availability of the network under all circumstances. Once the ExpressRoute circuit has been restored, all traffic will revert to using the ExpressRoute connection.
 
 ![Image showing ExpressRoute reference architecture](../media/3-expressroute-vpn-failover-architecture.png)
 
@@ -114,6 +114,6 @@ The following benefits can be had by implementing this hybrid architecture.
 
 ### Considerations
 
-The following should be considered when evaluating the use of this hybrid architecture.
+The following items should be considered when evaluating the use of this hybrid architecture.
 
 - Consider what services are shared on the hub and what remains on with the spokes.
