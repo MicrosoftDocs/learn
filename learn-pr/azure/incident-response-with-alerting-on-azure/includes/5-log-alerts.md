@@ -14,7 +14,7 @@ You use these types of logs to assess if any of your servers have exceeded their
 
 ## How log alerts work
 
-Log alerts behave in a slightly different way to other alert mechanisms. The first part of a Log alert is used to define the log search rule. The rule defines how often it should run, the time period under evaluation, and the query to be executed.
+Log alerts behave in a slightly different way to other alert mechanisms. The first part of a log alert is used to define the log search rule. The rule defines how often it should run, the time period under evaluation, and the query to be executed.
 
 When a log search evaluates as positive, an alert record is created and any associated actions triggered.
 
@@ -31,7 +31,7 @@ Log search results are one of two types, number of records or metric measurement
 
 ## Number of records type
 
-You would consider using this type of log search when working with an event or event-driven data. For example, Syslog or WebApp responses. This type of log search returns a single alert when the number of records in a search result reaches or exceeds the number of records (threshold) value. For example, when the threshold for the search rule is greater or equal to five, the query results would have to return five or more rows of data before the alert will trigger.
+You would consider using this type of log search when working with an event or event-driven data. For example, syslog or web app responses. This type of log search returns a single alert when the number of records in a search result reaches or exceeds the number of records (threshold) value. For example, when the threshold for the search rule is greater or equal to five, the query results would have to return five or more rows of data before the alert will trigger.
 
 ## Metric measurement type
 
@@ -45,7 +45,7 @@ Unlike a number of records search logs, metric measurement logs require addition
 - **Threshold**: defined by an aggregated value and the total number of breaches.
 
 You would consider using this type of alert when you need to add a level of tolerance to the results found. One use for this type of alert is to respond if a particular trend or pattern is found. For example, if the number of breaches is five, and any server in your group exceeds 85% CPU utilization more than five times within the given time period, an alert would be fired.
- 
+
 As you can see, metric measurements greatly reduce the volume of alerts being produced. However, careful consideration needs to be given when setting the threshold parameters, to avoid missing critical alerts.
 
 ## Stateless nature of log alerts
