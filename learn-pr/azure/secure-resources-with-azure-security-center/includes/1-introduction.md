@@ -6,6 +6,9 @@ Security Center provides an easy-to-read dashboard which shows compliance, secur
 
 ![Screenshot showing the Azure Security Center view in the Azure portal](../media/1-security-center.png)
 
+> [!TIP]
+> Azure Security Center pulls data from all your created resources. The level of detail presented will vary based on the running workloads in your subscription(s). This is particularly true in the Azure Sandbox which doesn't have any data.
+
 ## Learning objectives
 
 In this module, you will:
