@@ -17,11 +17,11 @@ A device template specifies the capabilities of a device you want to connect to 
 - Properties, such as target temperature, that IoT Central expects to be able to set on your device.
 - Commands, such as reboot, that IoT Central expects to be able to send to your device.
 
-TODO: screenshot
+![Device template](../media/4-device-template.png)
 
 The capabilities in a device template are grouped into interfaces. Interfaces enable groups of related capabilities to be shared across templates. For example, the common *Device Information* interface defines device properties such as the manufacturer, model, and software version.
 
-TODO: Screenshot
+![Device information](../media/4-device-information.png)
 
 You create and manage device templates using the IoT Central web UI. You can either build a device template from scratch, or you can import a JSON file that contains a device capability model and interface definitions.
 

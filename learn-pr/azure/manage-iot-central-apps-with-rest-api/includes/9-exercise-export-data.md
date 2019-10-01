@@ -14,34 +14,49 @@ TODO: verify SKU to use, resource group and whether account name must be unique
 TODO: capture connection-string in a variable to use in the next step
 
 ```azurecli
-STORAGE_ACCOUNT=storemanagement
-az storage account create --name $STORAGE_ACCOUNT --resource-group test-central-api-learn --location centralus --sku Standard_LRS
+STORAGE_ACCOUNT="storemanagement${SUFFIX}"
+az storage account create --name $STORAGE_ACCOUNT --resource-group $RG \
+--location centralus --sku Standard_LRS
 az storage container create --name dataexport --account-name $STORAGE_ACCOUNT
-az storage account show-connection-string --name $STORAGE_ACCOUNT -o table
+STORAGE_CONNECTION_STRING=`az storage account show-connection-string --name $STORAGE_ACCOUNT --query "connectionString" -o tsv`
+echo $STORAGE_CONNECTION_STRING
+
 ```
 
 ## Create a data export definition
 
-Run the following command to create a data export for telemetry, devices, and device templates to the blob container:
+Run the following command to create a data export for telemetry to the blob container. Use the **sources** array to specify the types of data to export. Add at least one of **telemetry**, **devices**, and **deviceTemplates**:
 
 ```azurecli
-az rest -m post -u https://$APP_SUBDOMAIN.azureiotcentral.com/api/preview/continuousDataExports \
+az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/continuousDataExports \
 --headers Authorization="$API_TOKEN" --body \
-\"{ \
-    \"@type\": \"ContinuousDataExport\", \
-    \"displayName\": \"Export telemetry\", \
-    \"endpoint\": { \
-        \"@type\": \"StorageEndpoint\", \
-        \"connectionString\": \"$STORAGE_CONNECTION_STRING\", \
-        \"name\": \"dataexport\" \
-    }, \
-    \"enabled\": true \
-}"
+'{
+    "@type": "ContinuousDataExport",
+    "displayName": "Export telemetry",
+    "endpoint": {
+        "@type": "StorageEndpoint",
+        "connectionString": "'$STORAGE_CONNECTION_STRING'",
+        "name": "dataexport"
+    },
+    "enabled": true,
+    "sources": [
+        "telemetry"
+    ]
+}'
+
 ```
 
 ## View the data
 
 You may need to wait a few minutes for the data export to get started in your IoT Central application before you can see any data.
+
+You can use the following REST API call to check the status of the data exports defined in your application:
+
+```azurecli
+az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/continuousDataExports \
+--headers Authorization="$API_TOKEN" \
+--query 'value[].{Name:displayName, Status:status}' -o table
+```
 
 Run the following commands to list the blobs in the container:
 
@@ -53,9 +68,13 @@ az storage blob list --container-name=dataexport \
 
 You see a blob that contains the device template definitions in the application and a sequence of blobs that contain telemetry. If you re-run the previous command, you see the number of telemetry blobs has increased.
 
-Run the following commands to download a telemetry blob and view its contents:
+Run the following commands to download the first telemetry blob and view its contents:
 
 ```azurecli
-az storage blob download --container-name telemetryexport --connection-string "$STORAGE_CONNECTION_STRING" --name 1987a4ee-150b-4b45-86ba-fb1e345cf023/telemetry/2019/09/30/14/20/00.json --file telemetry.json
-cat telemetry.json
+FIRST_BLOB=`az storage blob list --container-name=dataexport --connection-string "$STORAGE_CONNECTION_STRING" --query '[0].{BlobName:name}' -o tsv`
+az storage blob download --container-name dataexport \
+--connection-string "$STORAGE_CONNECTION_STRING" \
+--name $FIRST_BLOB \
+--file telemetry.json
+cat telemetry.json | json_pp
 ```

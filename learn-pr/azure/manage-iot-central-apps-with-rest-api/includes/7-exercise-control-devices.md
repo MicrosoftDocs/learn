@@ -22,22 +22,17 @@ The store monitoring device template specified a **brightness** property in the 
 Run the following command in the Cloud Shell to set the **brightness** to **3** on the **sensor** interface on one of the simulated devices in the application:
 
 ```azurecli
-az rest -m put -u https://$APP_SUBDOMAIN.azureiotcentral.com/api/preview/devices/storemon-sim-001/components/sensor/properties \
+az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/storemon-sim-001/components/sensor/properties \
 --headers Authorization="$API_TOKEN" --body \
-"{ \
-    \"brightness\": { \
-        \"requested\": { \
-            \"value\": 3 \
-        } \
-    } \
-}"
+'{
+  "brightness": 3
+}'
+
 ```
 
 The response to this request echos the requested value for the the property to confirm the device received it.
 
 ## Send a command
-
-TODO: Maybe update this include a parameter?
 
 The store monitoring device template specified a **reboot** command in the **sensor** interface:
 
@@ -50,18 +45,11 @@ The store monitoring device template specified a **reboot** command in the **sen
 }
 ```
 
-Run the following command in the Cloud Shell to send  the **brightness** to **3** on the **sensor** interface on one of the simulated devices in the application:
+Run the following command in the Cloud Shell to send a reboot command to one of the simulated devices in the application. The reboot command is defined on the **sensor** interface:
 
 ```azurecli
-az rest -m put -u https://$APP_SUBDOMAIN.azureiotcentral.com/api/preview/devices/storemon-sim-001/components/sensor/properties \
+az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/storemon-sim-001/components/sensor/commands/reboot \
 --headers Authorization="$API_TOKEN" --body \
-"{ \
-    \"brightness\": { \
-        \"requested\": { \
-            \"value\": 3 \
-        } \
-    } \
-}"
-```
+'{}'
 
-The response to this request echos the requested value for the the property to confirm the device received it.
+```

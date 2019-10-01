@@ -10,40 +10,72 @@ The **azure-cli-iot-ext** CLI extension provides commands to manage IoT resource
 
 ```azurecli
 az extension add --name azure-cli-iot-ext
+
 ```
 
 ## Create and configure the IoT Central application
 
 The following steps create an IoT Central application and import a device template to use later in this module. In this module you use the **MxChip IoT DevKit** as your test device.
 
-TODO: check on default resource group, add notes about using a unique subdomain, maybe add it to the shell environment to use later?
+1. Run the following commands in the Cloud Shell to generate a unique name for your IoT Central application and save it in an environment variable to use later:
+
+    ```azurecli
+    SUFFIX=`date | md5sum | head -c5`
+    APP_NAME="store-manager-${SUFFIX}"
+    echo "Your application name is: $APP_NAME"
+
+    ```
+
+    Make a note of the application name just in case the shell times out and loses the environment variable.
+
+1. Run the following commands in the Cloud Shell to save the name of your resource group in an environment variable to use later:
+
+    ```azurecli
+    RG=`az group list --query "[?starts_with(name, 'Learn')].name | [0]" -o tsv`
+    echo "Your resource group name is: $RG"
+
+    ```
+
+    Make a note of the resource group name just in case the shell times out and loses the environment variable.
 
 1. Run the following command in the Cloud Shell to create an IoT Central application in the sandbox:
 
-    TODO: Be smarter about saving variables - append to .bashrc? :)
-
     ```azurecli
-    APP_SUBDOMAIN=
-    az iotcentral app create --resource-group test-central-api-learn --name store-manager --sku S1 --location centralus --subdomain $APP_SUBDOMAIN --template iotc-pnp-preview@1.0.0 --display-name 'Store Management'
+    az iotcentral app create --resource-group $RG \
+    --name $APP_NAME --sku S1 --location centralus \
+    --subdomain $APP_NAME --template iotc-pnp-preview@1.0.0 \
+    --display-name 'Store Management'
+    echo "You can now navigate to: https://$APP_NAME.azureiotcentral.com/admin/tokens"
+
     ```
 
-1. In another browser tab or window, navigate to https://YOUR_APP_SUBDOMAIN.azureiotcentral.com/admin/tokens. This is the page in the web UI where you generate API tokens:
+    Expect this command to take a minute or two to run.
 
-    TODO: Add screenshot here.
+1. In another browser tab or window, navigate to URL shown in the output of the last command. This is the page in the web UI where you generate API tokens:
 
-1. Select **+ Generate Token**. Add **admin** as the **Token name** and select **Application Administrator** as the **Role**:
+    ![API Tokens](../media/3-tokens.png)
 
-    TODO: add a screenshot here
+1. Select **+ Generate Token**. Add **admin** as the **Token name** and select **Application Administrator** as the **Role**. Then select **Generate**:
 
-1. Select **Generate**. Copy the generated token and save it locally in a text file. If you lose the token, you'll have to regenerate it.
+    ![Generate API token](../media/3-generate-token.png)
 
-1. Run the following commands in the Cloud Shell to list the IoT Central applications you have access to. The command adds an **Authorization** header with your API token to the **GET** request:
+1. Copy the generated API token and save it locally in a text file. If you lose the token, you'll have to regenerate it:
 
-    TODO: Be smarter about saving variables - append to .bashrc? :)
+    ![Copy API token](../media/3-copy-token.png)
+
+1. Replace the `ADD YOUR TOKEN HERE` in the following command and run it the Cloud Shell. This command saves the API token in an environment variable to use later in the module. Be sure to enclose the token in double quotation marks, `"..."`:
 
     ```azurecli
-    API_TOKEN=
-    az rest -m get -u https://$APP_SUBDOMAIN.azureiotcentral.com/api/preview/applications --headers Authorization="$API_TOKEN"
+    API_TOKEN="ADD YOUR TOKEN HERE"
+
+    ```
+
+1. Run the following command in the Cloud Shell to list the IoT Central applications you have access to. The command adds an **Authorization** header with your API token to the **GET** request:
+
+    ```azurecli
+    az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/applications \
+    --headers Authorization="$API_TOKEN"
+
     ```
 
     The output from the previous command shows the IoT Central applications you have access to in the sandbox environment. In the sandbox environment, you only have access to the IoT Central application you just created.
