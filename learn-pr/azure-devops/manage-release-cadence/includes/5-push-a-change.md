@@ -33,11 +33,11 @@ Here, you change the background color of the hero banner from gray to green. Thi
 
 1. Locate this code near the top of the file.
 
-    [!code-yml[](code/5-site-1.scss?range=1-8&highlight=3)]
+    [!code-css[](code/5-site-1.scss?range=1-8&highlight=3)]
 
 1. Replace the highlighted text in the previous step with the following, and then save the file:
 
-    [!code-yml[](code/5-site-2.scss?range=1-8&highlight=3)]
+    [!code-css[](code/5-site-2.scss?range=1-8&highlight=3)]
 
 ## Push the change through the pipeline
 
@@ -70,9 +70,9 @@ For brevity, here you commit the changes to your branch, push your branch to Git
 
 ## Revert the change
 
-Let's say that you deployed a change that you want to revert. At this point, you could roll back the change by swapping with staging again, or you could roll forward by pushing another change through the pipeline.
+Let's say that you deployed a change that you want to revert. At this point, you could roll back the change by swapping the *production* and *swap* slots again (for example, you can swap slots manually through the Azure portal), or you could roll forward by pushing another change through the pipeline.
 
-Here, you revert your latest code changes. To do so, you use the `git revert` command. With Git, you seldom remove commits from a file's history. Unlike the "undo" operation in a text editor, `git revert` creates a new commit that's essentially the opposite of the specified set of commits. To see this, you also run the `git log` command to trace your commit history during the revert process.
+Here, you revert your latest code changes and push another change through the pipeline. To do so, you use the `git revert` command. With Git, you seldom remove commits from a file's history. Unlike the "undo" operation in a text editor, `git revert` creates a new commit that's essentially the opposite of the specified set of commits. To see this, you also run the `git log` command to trace your commit history during the revert process.
 
 1. In your terminal, run the following `git log` command to view your commit history.
 
