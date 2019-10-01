@@ -125,13 +125,13 @@ Let's create a new metric alert similar to the one you set up in the Azure porta
 
 In the example, you set up an Ubuntu VM and configured it to stress test the CPU. You also created a metric rule to detect when the maximum CPU percentage exceeds 80% and 90%.
 
-By now the alert should be active and generating alerts.
+It may take 10 minutes before you see the alerts show up in your portal.
 
 1. Return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
 1. On the left, select **Monitor**, then select **Alerts** in the left panel.
 
-1. This will present the alert summary page. Here's an example of the summary page after it has been running the alert for an hour or more.
+1. This will present the alert summary page where you can see the count of the number of alerts at each severity.
 
     ![Image showing the alert summary page](../media/4-alert-summary-page.png)
 
