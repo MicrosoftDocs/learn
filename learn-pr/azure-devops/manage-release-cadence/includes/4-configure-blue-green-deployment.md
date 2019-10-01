@@ -85,6 +85,16 @@ You can also use this task to start, stop, or delete a slot, as well as install 
 
     [!code-yml[](code/4-azure-pipelines.yml?highlight=111-144)]
 
+    Note these changes:
+
+    * The `AzureWebApp@1` task now specifies these values:
+        * `deployToSlotOrASE`, when set to `true`, deploys to an existing deployment slot.
+        * `resourceGroupName` specifies the name of the resource group, and is required when `deployToSlotOrASE` is `true`.
+        * `slotName` specifies the name of the deployment slot.
+    * The new task, `AzureAppServiceManage@0`, swaps the deployment slots.
+        * `sourceSlot` and `targetSlot` specify the slots to swap.
+        * `action` specifies the action to take. Recall that you can use this task to start, stop, or delete a slot. Here, "Swap Slots" specifies to swap the source and target slots.
+
 1. In the integrated terminal, add *azure-pipelines.yml* to the index, commit the changes, and push the branch up to GitHub.
 
     > [!TIP]
@@ -95,16 +105,6 @@ You can also use this task to start, stop, or delete a slot, as well as install 
     git commit -m "Swap deployment slots"
     git push origin blue-green
     ```
-
-    Note these changes:
-
-    * The `AzureWebApp@1` task now specifies these values:
-        * `deployToSlotOrASE`, when set to `true`, deploys to an existing deployment slot.
-        * `resourceGroupName` specifies the name of the resource group, and is required when `deployToSlotOrASE` is `true`.
-        * `slotName` specifies the name of the deployment slot.
-    * The new task, `AzureAppServiceManage@0`, swaps the deployment slots.
-        * `sourceSlot` and `targetSlot` specify the slots to swap.
-        * `action` specifies the action to take. Recall that you can use this task to start, stop, or delete a slot. Here, "Swap Slots" specifies to swap the source and target slots.
 
 1. From Azure Pipelines, trace the build through each of the steps.
 1. As an optional step, go to the URL that corresponds to each stage in a browser.
