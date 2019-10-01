@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.manage-release-cadence.2-what-are-deployment-patterns
+title: What are deployment patterns?
+metadata:
+  title:  What are deployment patterns?
+  description:  What are deployment patterns?
+  ms.date: 09/01/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-what-are-deployment-patterns.md)]

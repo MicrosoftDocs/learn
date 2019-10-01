@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.manage-release-cadence.5-set-up-environment
+uid: learn.azdo.manage-release-cadence.3-set-up-environment
 title: Exercise - Set up your environment
 metadata:
   title: Exercise - Set up your environment
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-set-up-environment.md)]
+  [!include[](includes/3-set-up-environment.md)]

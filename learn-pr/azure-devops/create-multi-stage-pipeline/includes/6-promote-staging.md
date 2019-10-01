@@ -48,7 +48,7 @@ Here, you modify your pipeline configuration to deploy the build to the _Staging
     This code adds the _Staging_ stage. This stage deploys to the **staging** environment, which includes a release approval.
 
     > [!TIP]
-    > You've probably noticed that all three of your deployment stages follow similar steps. You can use _templates_ to define common build tasks one time and reuse those tasks multiple times, just as you did in the [Create a build pipeline with Azure Pipelines](https://docs.microsoft.com/en-us/learn/modules/create-a-build-pipeline/8-build-multiple-configurations?azure-portal=true) module. For learning purposes, we repeat these steps in each stage.
+    > You've probably noticed that all three of your deployment stages follow similar steps. You can use _templates_ to define common build tasks one time and reuse those tasks multiple times, just as you did in the [Create a build pipeline with Azure Pipelines](https://docs.microsoft.com/learn/modules/create-a-build-pipeline/8-build-multiple-configurations?azure-portal=true) module. For learning purposes, we repeat these steps in each stage.
 
 1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub.
 

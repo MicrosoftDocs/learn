@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.azdo.manage-release-cadence
 metadata:
-  title: Manage release cadence using deployment patterns - Learn
-  description: Manage release cadence using deployment patterns
+  title: Manage release cadence in Azure Pipelines with deployment patterns - Learn
+  description: Manage release cadence in Azure Pipelines with deployment patterns
   ms.date: 09/01/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
-title: Manage release cadence using deployment patterns
-summary: Manage release cadence using deployment patterns
+title: Manage release cadence in Azure Pipelines with deployment patterns
+summary: Manage release cadence in Azure Pipelines with deployment patterns
 abstract: |
   In this module, you will:
-  - A
-  - B
-  - C
+  - Learn why deployment patterns matter.
+  - Compare different deployment patterns so you can choose the one that best suits your needs.
+  - Apply the blue-green deployment pattern in your pipeline.
 prerequisites: |
   - An Azure subscription
   - An Azure DevOps account
@@ -27,23 +27,20 @@ iconUrl: /learn/achievements/azure-devops/manage-release-cadence-using-deploymen
 levels:
 - intermediate
 roles:
-#TODO: Are there specific roles we should be targeting?
 - devops-engineer
 - administrator
 - developer
 - solution-architect
 products:
-#TODO: Create appropriate product labels
 - azure
 - azure-devops
 units:
 - learn.azdo.manage-release-cadence.1-introduction
-- learn.azdo.manage-release-cadence.2-introduction-deployment-patterns
-- learn.azdo.manage-release-cadence.3-use-feature-flags
-- learn.azdo.manage-release-cadence.4-choose-deployment-pattern
-- learn.azdo.manage-release-cadence.5-set-up-environment
-- learn.azdo.manage-release-cadence.6-configure-blue-green-deployment
-- learn.azdo.manage-release-cadence.7-clean-up-environment
-- learn.azdo.manage-release-cadence.9-summary
+- learn.azdo.manage-release-cadence.2-what-are-deployment-patterns
+- learn.azdo.manage-release-cadence.3-set-up-environment
+- learn.azdo.manage-release-cadence.4-configure-blue-green-deployment
+- learn.azdo.manage-release-cadence.5-push-a-change
+- learn.azdo.manage-release-cadence.6-clean-up-environment
+- learn.azdo.manage-release-cadence.7-summary
 badge:
   uid: learn.azdo.manage-release-cadence.badge

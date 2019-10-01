@@ -1,4 +1,4 @@
-In this section, you make sure that your Azure DevOps organization is set up to complete the rest of this module.
+In this section, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You also create the Azure App Service environments that you will deploy to.
 
 To do this, you:
 

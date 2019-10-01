@@ -8,6 +8,7 @@ To do this, you:
 > * Move the work item for this module on Azure Boards to the **Doing** column.
 > * Create the Azure App Service environments.
 > * Create pipeline variables that define the names of your App Service environments.
+> * Perform an initial deployment.
 
 ## Add a user to Azure DevOps
 
@@ -33,7 +34,7 @@ The modules in this learning path form a progression, where you follow the Tails
 From the Azure DevOps Demo Generator site, perform these steps to run the template.
 
 1. Select **Sign In** and accept the usage terms.
-1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - Non-functional tests**. Then select **Create Project**.
+1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - Deployment patterns**. Then select **Create Project**.
 
     ![Creating a project through the Azure DevOps Demo Generator](../media/3-create-new-project.png)
 
@@ -43,7 +44,7 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 1. Select **Navigate to project** to go to your project in Azure DevOps.
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/learn/modules/run-non-functional-tests-azure-pipelines/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
+> The [Clean up your Azure DevOps environment](/learn/modules/manage-release-cadence/5-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
 
 ## Move the work item to Doing
 
@@ -58,7 +59,7 @@ Recall that the team settled on these top issues for the current sprint.
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
 
-Here you move the fourth item, **Automate performance tests** to the **Doing** column and assign yourself to the work item. **Automate performance tests** relates to automating load testing, a form of performance testing, for the _Space Game_ web site.
+Here you move the fifth item, **Improve release cadence** to the **Doing** column and assign yourself to the work item. **Improve release cadence** relates to choosing an deployment pattern that enables you to release changes more quickly to your users.
 
 To set up the work item:
 
@@ -66,12 +67,12 @@ To set up the work item:
 
     ![Azure DevOps showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
 
-1. From the **Automate performance tests** work item, click the down arrow at the bottom of the card. Then assign the work item to yourself.
+1. From the **Improve release cadence** work item, click the down arrow at the bottom of the card. Then assign the work item to yourself.
 
     ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
 1. Move the work item from the **To Do** to the **Doing** column.
 
-    ![Azure Boards showing the card in the Doing column](../media/3-azure-boards-wi4-doing.png)
+    ![Azure Boards showing the card in the Doing column](../media/3-azure-boards-wi5-doing.png)
 
 At the end of this module, you move the card to the **Done** column after you've completed the task.
 
@@ -117,7 +118,7 @@ Here you specify the default _region_, or geographic location, where your Azure 
 
 ### Create the App Service instances
 
-Here, you create the App Service instances for the three stages you'll deploy to: _Dev_, _Test_, and _Staging_.
+Here, you create the App Service instances for the three stages you'll deploy to: _Dev_, _Test_, and _Staging_. You'll add a deployment slot to _Staging_ later in this module.
 
 > [!NOTE]
 > For learning purposes, here you use the default network settings, which makes your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a non-internet routable network that's accessible only to you and your team. Later, when you're ready, you could reconfigure your network to make the website available to your users.
@@ -138,9 +139,14 @@ Here, you create the App Service instances for the three stages you'll deploy to
 
     ```azurecli
     az appservice plan create \
-      --name tailspin-space-game-asp \
+      --name tailspin-space-game-test-asp \
       --resource-group tailspin-space-game-rg \
       --sku B1
+
+    az appservice plan create \
+      --name tailspin-space-game-prod-asp \
+      --resource-group tailspin-space-game-rg \
+      --sku P1V2
     ```
 
     The `--sku` argument specifies the **B1** plan, which runs on the **Basic** tier.
@@ -154,17 +160,17 @@ Here, you create the App Service instances for the three stages you'll deploy to
     az webapp create \
       --name tailspin-space-game-web-dev-$webappsuffix \
       --resource-group tailspin-space-game-rg \
-      --plan tailspin-space-game-asp
+      --plan tailspin-space-game-test-asp
 
     az webapp create \
       --name tailspin-space-game-web-test-$webappsuffix \
       --resource-group tailspin-space-game-rg \
-      --plan tailspin-space-game-asp
+      --plan tailspin-space-game-test-asp
 
     az webapp create \
       --name tailspin-space-game-web-staging-$webappsuffix \
       --resource-group tailspin-space-game-rg \
-      --plan tailspin-space-game-asp
+      --plan tailspin-space-game-prod-asp
     ```
 
     For learning purposes, here you apply the same App Service plan, **B1 Basic**, to each App Service instance. In practice, you would assign a plan that matches your expected workload.
@@ -195,7 +201,7 @@ Here, you create the App Service instances for the three stages you'll deploy to
     ![The default home page on Azure App Service](../../shared/media/app-service-default.png)
 
 > [!IMPORTANT]
-> Remember, the [Clean up your Azure DevOps environment](/learn/modules/run-functional-tests-azure-pipelines/7-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
+> Remember, the [Clean up your Azure DevOps environment](/learn/modules/manage-release-cadence/5-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
 
 ## Create pipeline variables in Azure Pipelines
 
@@ -205,7 +211,7 @@ Each stage in your pipeline configuration uses these variables to identify which
 
 To add the variables:
 
-1. In Azure DevOps, go to your **Space Game - web - Non-functional tests** project.
+1. In Azure DevOps, go to your **Space Game - web - Deployment patterns** project.
 1. Under **Pipelines**, select **Library**.
 
     ![Azure Pipelines showing the Library menu option](../../create-release-pipeline/media/5-pipelines-library.png)
@@ -238,7 +244,7 @@ Here, you create a service connection that enables Azure Pipelines to access you
 > [!IMPORTANT]
 > Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
 
-1. In Azure DevOps, go to your **Space Game - web - Non-functional tests** project.
+1. In Azure DevOps, go to your **Space Game - web - Deployment patterns** project.
 1. Select **Project settings** from the bottom corner of the page.
 1. Under **Pipelines**, select **Service connections**.
 1. Select **+ New service connection** and then choose **Azure Resource Manager**.
@@ -258,3 +264,56 @@ Here, you create a service connection that enables Azure Pipelines to access you
 1. Select **OK**.
 
     Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps is unable to connect, you'll have the chance to sign in a second time.
+
+## Fetch the branch from GitHub
+
+Here, you fetch the `blue-green` branch from GitHub and checkout, or switch to, that branch.
+
+This branch contains the _Space Game_ project you worked with in the previous modules and an Azure Pipelines configuration to start with.
+
+1. In Visual Studio Code, open the integrated terminal.
+1. Run the following `git` commands to fetch a branch named `blue-green` from Microsoft's repository and switch to that branch.
+
+    ```bash
+    git fetch upstream blue-green
+    git checkout blue-green
+    ```
+
+    The format of this command enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
+
+1. As an optional step, open *azure-pipelines.yml* from Visual Studio Code and familiarize yourself with the initial configuration.
+
+    The configuration resembles the ones that you created in the previous modules in this learning path. It builds only the application's **Release** configuration. For brevity, it also omits the triggers, manual approvals, and tests you set up in previous modules.
+
+## Run the pipeline and see the deployed website
+
+Here, you push the initial configuration to GitHub so that you're up to date with the team. Later, you'll add a slot to the _Staging_ environment so that you can implement a blue-green deployment.
+
+1. In Visual Studio Code, open the integrated terminal.
+1. Run the following `git commit` command to add an empty entry to your commit history.
+
+    ```bash
+    git commit --allow-empty -m "Trigger the pipeline"
+    ```
+
+    This step is for learning purposes and is not typical. We provide starter code that you don't need to modify now. The `--allow-empty` flag ensures that the next step successfully pushes the branch to GitHub and triggers Azure Pipelines to run.
+
+    If you omitted this step, the `git push` command you run in the next step wouldn't take any action, and therefore wouldn't trigger Azure Pipelines to run.
+
+1. Run the following `git push` command to upload the branch to your GitHub repository.
+
+    ```bash
+    git push origin blue-green
+    ```
+
+1. In Azure Pipelines, go to the build and trace the build as it runs.
+1. After the build completes, go to the summary page.
+
+    ![](../media/3-stages-complete.png)
+
+    You see that each stage of the pipeline succeeded.
+1. Navigate to the URL that corresponds to each stage.
+
+    You see that the _Space Game_ website successfully deployed to each App Service environment.
+
+    ![](../media/3-app-service-dev.png)
