@@ -4,7 +4,7 @@ metadata:
   title: Manage IoT Central applications with the REST API
   description: TBD
   ms.date: 11/05/2019
-  author: markjulmar
+  author: dominicbetts
   ms.author: dobett
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

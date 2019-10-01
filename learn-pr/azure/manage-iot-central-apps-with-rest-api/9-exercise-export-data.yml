@@ -11,5 +11,7 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 2
+azureSandbox: true
+interactive: bash
 content: |
   [!include[](includes/9-exercise-export-data.md)]
