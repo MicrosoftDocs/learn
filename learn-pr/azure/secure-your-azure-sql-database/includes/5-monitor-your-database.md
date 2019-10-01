@@ -12,7 +12,7 @@ Let's look at the steps you take to set up auditing on your system.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. In the search bar at the top of the portal, search for **serverNNNN**, then select the server in the portal.
+1. In the search bar at the top of the portal, search for **serverNNNN** (replacing `NNNN` with the number from your server name), then select the server in the portal.
 
 1. In the left menu, in the **Security** section, select the **Auditing** option.
 
@@ -20,7 +20,7 @@ Let's look at the steps you take to set up auditing on your system.
 
 1. Once the ON button is selected, select the **Storage** checkbox, then click **Storage details** to define the storage account.
 
-1. In the **Storage settings** dialog, you can select an existing storage account or create a new storage account to store your audits. The storage account must be configured to use the same region as your server. In this case, we'll define a new storage account. Click **Storage account**, which will then open up the **Create storage account** dialog. Name the storage account `serverNNNNauditing` replacing the `NNNN` with the number from your logical server name. Leave the rest of the options at their defaults and select **OK**. Back in the **Storage settings** dialog, leave the defaults and click **OK**.
+1. In the **Storage settings** dialog, you can select an existing storage account or create a new storage account to store your audits. The storage account must be configured to use the same region as your server. In this case, we'll define a new storage account. Click **Storage account**, which will then open up the **Create storage account** dialog. Name the storage account `serverNNNNauditing`, replacing the `NNNN` with the number from your logical server name. Leave the rest of the options at their defaults and select **OK**. Back in the **Storage settings** dialog, leave the defaults and click **OK**.
 
 1. Click the **Save** button in the toolbar to save your changes and enable auditing on your database server.
 
