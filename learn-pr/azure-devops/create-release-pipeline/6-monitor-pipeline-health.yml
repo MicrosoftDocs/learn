@@ -3,7 +3,7 @@ uid: learn.azdo.create-release-pipeline.6-monitor-pipeline-health
 title: Exercise - Monitor the health of your pipeline
 metadata:
   title: Exercise - Monitor the health of your pipeline
-  description: Exercise - Monitor the health of your pipeline
+  description: Examine a few of the analytics features that Azure Pipelines provides.
   ms.date: 09/30/2019
   author: tpetchel
   ms.author: thpetche

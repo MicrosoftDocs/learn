@@ -10,9 +10,10 @@ In this module, you'll explore the types of non-functional tests you can run and
 
 In this module, you will:
 
-- Describe the role of functional and non-functional tests in a release pipeline.
-- Run functional UI tests in your pipeline's _Test_ stage.
-- Run non-functional load tests during _Staging_.
+- Define what non-functional tests are and how they compare to functional tests.
+- Identify some of the more popular kinds of non-functional tests you can run.
+- Run automated load tests in the pipeline with Apache JMeter.
+- Convert test results to a format that Azure Pipelines can visualize for you.
 
 ## Prerequisites
 

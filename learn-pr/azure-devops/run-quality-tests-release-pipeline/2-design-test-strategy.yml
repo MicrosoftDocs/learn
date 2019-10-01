@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.run-quality-tests-release-pipeline.2-what-is-functional-testing
+title: Design a test strategy
+metadata:
+  title: Design a test strategy
+  description: Design a test strategy
+  ms.date: 09/30/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-what-is-functional-testing.md)]

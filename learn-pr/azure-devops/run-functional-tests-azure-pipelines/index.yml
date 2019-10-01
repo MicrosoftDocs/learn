@@ -13,9 +13,9 @@ title: Run functional tests in Azure Pipelines
 summary: Run functional tests in Azure Pipelines
 abstract: |
   In this module, you will:
-  - A
-  - B
-  - C
+  - Define what functional tests are and identify some of the more popular kinds of tests you can run.
+  - Map manual testing steps to automated test cases.
+  - Run automated UI tests locally and in the pipeline with Selenium.
 prerequisites: |
   - An Azure subscription
   - An Azure DevOps account
@@ -36,7 +36,7 @@ products:
 - azure-devops
 units:
 - learn.azdo.run-functional-tests-azure-pipelines.1-introduction
-- learn.azdo.run-functional-tests-azure-pipelines.2-design-test-strategy
+- learn.azdo.run-functional-tests-azure-pipelines.2-what-is-functional-testing
 - learn.azdo.run-functional-tests-azure-pipelines.3-set-up-environment
 - learn.azdo.run-functional-tests-azure-pipelines.4-plan-ui-tests
 - learn.azdo.run-functional-tests-azure-pipelines.5-write-ui-tests

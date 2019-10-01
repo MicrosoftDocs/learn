@@ -37,7 +37,7 @@ products:
 units:
 - learn.azdo.create-release-pipeline.1-introduction
 - learn.azdo.create-release-pipeline.2-what-is-cd
-- learn.azdo.create-release-pipeline.3-create-a-release-pipeline
+- learn.azdo.create-release-pipeline.3-plan-release-pipeline
 - learn.azdo.create-release-pipeline.4-set-up-environment
 - learn.azdo.create-release-pipeline.5-deploy-to-appservice
 - learn.azdo.create-release-pipeline.6-monitor-pipeline-health

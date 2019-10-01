@@ -10,9 +10,9 @@ In [Run quality tests in your build pipeline using Azure Pipelines](/learn/modul
 
 In this module, you will:
 
-- Describe the role of functional and non-functional tests in a release pipeline.
-- Run functional UI tests in your pipeline's _Test_ stage.
-- Run non-functional load tests during _Staging_.
+- Define what functional tests are and identify some of the more popular kinds of tests you can run.
+- Map manual testing steps to automated test cases.
+- Run automated UI tests locally and in the pipeline with Selenium.
 
 ## Prerequisites
 

@@ -3,7 +3,7 @@ uid: learn.azdo.run-non-functional-tests-azure-pipelines.2-what-is-non-functiona
 title: What is non-functional testing?
 metadata:
   title: What is non-functional testing?
-  description: What is non-functional testing?
+  description: Define what non-functional tests are and identify some of the more popular kinds of tests you can run.
   ms.date: 09/30/2019
   author: tpetchel
   ms.author: thpetche

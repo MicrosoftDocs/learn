@@ -3,7 +3,7 @@ uid: learn.azdo.manage-release-cadence.6-clean-up-environment
 title: Exercise - Clean up your environment
 metadata:
   title: Exercise - Clean up your environment
-  description: Exercise - Clean up your environment
+  description: Clean up your Azure DevOps project and your Azure resources.
   ms.date: 09/30/2019
   author: tpetchel
   ms.author: thpetche

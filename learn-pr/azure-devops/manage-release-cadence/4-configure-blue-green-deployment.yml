@@ -3,7 +3,7 @@ uid: learn.azdo.manage-release-cadence.4-configure-blue-green-deployment
 title: Exercise - Implement the blue-green deployment pattern
 metadata:
   title: Exercise - Implement the blue-green deployment pattern
-  description: Exercise - Implement the blue-green deployment pattern
+  description: Implement the blue-green deployment pattern in your pipeline by using deployment slots.
   ms.date: 09/30/2019
   author: tpetchel
   ms.author: thpetche

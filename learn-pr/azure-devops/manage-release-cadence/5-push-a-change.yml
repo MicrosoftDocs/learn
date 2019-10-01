@@ -3,7 +3,7 @@ uid: learn.azdo.manage-release-cadence.5-push-a-change
 title: Exercise - Push a change through the pipeline
 metadata:
   title: Exercise - Push a change through the pipeline
-  description: Exercise - Push a change through the pipeline
+  description: Add a few visual changes to your application to see deployment slots in action.
   ms.date: 09/30/2019
   author: tpetchel
   ms.author: thpetche

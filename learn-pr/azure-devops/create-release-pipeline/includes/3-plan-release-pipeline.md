@@ -1,6 +1,6 @@
 In this section, you follow along with Andy and Mara as they plan a basic CD pipeline that runs on Azure Pipelines.
 
-Once it's done, they'll demo it to the rest of the team. The pipeline will serve as a POC that they'll improve on and expand as they learn more and get feedback from Tim and Amita. 
+Once it's done, they'll demo it to the rest of the team. The pipeline will serve as a POC that they'll improve on and expand as they learn more and get feedback from Tim and Amita.
 
 Andy and Mara are sitting in a conference room, ready to get started.
 

@@ -13,9 +13,10 @@ title: Run non-functional tests in Azure Pipelines
 summary: Run non-functional tests in Azure Pipelines
 abstract: |
   In this module, you will:
-  - A
-  - B
-  - C
+  - Define what non-functional tests are and how they compare to functional tests.
+  - Identify some of the more popular kinds of non-functional tests you can run.
+  - Run automated load tests in the pipeline with Apache JMeter.
+  - Convert test results to a format that Azure Pipelines can visualize for you.
 prerequisites: |
   - An Azure subscription
   - An Azure DevOps account

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.create-release-pipeline.3-create-a-release-pipeline
+uid: learn.azdo.create-release-pipeline.3-plan-release-pipeline
 title: Plan a release pipeline using Azure Pipelines
 metadata:
   title: Plan a release pipeline using Azure Pipelines
-  description: Plan a release pipeline using Azure Pipelines
+  description: Plan a basic CD pipeline that runs on Azure Pipelines.
   ms.date: 09/30/2019
   author: tpetchel
   ms.author: thpetche
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-create-a-release-pipeline.md)]
+  [!include[](includes/3-plan-release-pipeline.md)]

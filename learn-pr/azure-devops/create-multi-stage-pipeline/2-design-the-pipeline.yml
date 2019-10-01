@@ -3,7 +3,7 @@ uid: learn.azdo.create-multi-stage-pipeline.2-design-the-pipeline
 title: Design the pipeline
 metadata:
   title: Design the pipeline
-  description: Design the pipeline
+  description: Define the stages you need in your release pipeline and how to promote changes from one stage to the next.
   ms.date: 09/30/2019
   author: tpetchel
   ms.author: thpetche

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.run-functional-tests-azure-pipelines.2-design-test-strategy
+uid: learn.azdo.run-functional-tests-azure-pipelines.2-what-is-functional-testing
 title: Design a test strategy
 metadata:
   title: Design a test strategy
-  description: Design a test strategy
+  description: Define what functional tests are and identify some of the more popular kinds of tests you can run.
   ms.date: 09/30/2019
   author: tpetchel
   ms.author: thpetche
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-design-test-strategy.md)]
+  [!include[](includes/2-what-is-functional-testing.md)]

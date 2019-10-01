@@ -3,7 +3,7 @@ uid: learn.azdo.run-functional-tests-azure-pipelines.5-write-ui-tests
 title: Write the UI tests
 metadata:
   title: Write the UI tests
-  description: Write the UI tests.
+  description: Map manual testing steps to automated test cases by using Selenium.
   ms.date: 09/30/2019
   author: tpetchel
   ms.author: thpetche
