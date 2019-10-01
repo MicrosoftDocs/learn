@@ -42,7 +42,7 @@ Azure Monitor provides a single management point for infrastructure-level logs a
 
 The following diagram depicts a high-level view of Azure Monitor. At the center of the diagram are the data stores for metrics and logs, which are the two fundamental types of data that Azure Monitor uses. On the left side are the sources of monitoring data that populate these data stores. On the right side are the different functions that Azure Monitor performs with this collected data such as analysis, alerting, and streaming to external systems.
 
-![Diagram that depicts a high-level view of Azure Monitor.](../media/2-azure-monitor.png)
+![Diagram that depicts a high-level view of Azure Monitor.](../media/5-azure-monitor.png)
 
 Azure Monitor can collect data from a variety of sources. You can think of monitoring data for your applications as occurring in tiers that range from your application to any OS and the services it relies on to the platform itself. Azure Monitor collects data from each of the following tiers:
 
