@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.run-functional-tests-azure-pipelines.2-what-is-functional-testing
-title: Design a test strategy
+title: What is functional testing?
 metadata:
-  title: Design a test strategy
+  title: What is functional testing?
   description: Define what functional tests are and identify some of the more popular kinds of tests you can run.
   ms.date: 09/30/2019
   author: tpetchel
