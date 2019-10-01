@@ -10,11 +10,11 @@ A reference type variable will store its values in a separate memory region call
 
 Let's write some code that illustrates these ideas more clearly.
 
-### Step 1: Delete or comment out code from previous exercises.
+### Step 1 - Delete or comment out code from previous exercises
 
 Select the code from the previous exercise and select the backspace or `del` key.  Optionally, comment out the previous code in the .NET Editor.
 
-### Step 2: Define a reference type variable.
+### Step 2 - Define a reference type variable
 
 The following code defines a variable that can hold a value of type `int` array.
 
@@ -23,7 +23,7 @@ int[] data;
 ```
 At this point, `data` is merely a variable that could hold a reference, or rather, a memory address of a value in the heap.  Since it is not pointing to a memory address, it is called a *null reference*.
 
-### Step 3: Create an instance of `int` array using the `new` keyword.
+### Step 3 - Create an instance of `int` array using the `new` keyword
 
 Modify the code from step 3 to create and assign a new instance of `int` array using the following code.
 
@@ -33,7 +33,7 @@ data = new int[3];
 ```
 The `new` keyword tells the .NET Runtime to create an instance of `int` array then coordinate with the operating system to store it in memory.  The .NET Runtime complies and returns a memory address of the new `int` array.  Finally, the memory address is stored in the variable data.  The `int` array's elements default to the value `0` since that is the default value of an `int`.
 
-### Step 4: Modify the code example to perform both operations in a single line of code.
+### Step 4 - Modify the code example to perform both operations in a single line of code
 
 The two lines of code in Step 3 are typically shortened to a single line of code to both declare the variable and create a new instance of the `int` array.  Modify the code from Step 3 to the following.
 
@@ -42,7 +42,7 @@ int[] data = new int[3];
 ```
 While there is no output to observe, hopefully this exercise added clarity to how the C# syntax relates to the steps of the process of working with reference types.
 
-### Working with the reference type string
+### Why is the C# string data type different?
 
 The `string` data type is also a reference type.  You might be wondering why we do not use the `new` operator when declaring a string.  This is purely a convenience afforded by the designers of C#.  Since the `string` data type is used so frequently, we can use this format:
 

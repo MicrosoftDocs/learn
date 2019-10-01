@@ -2,7 +2,7 @@ In this exercise, you'll work with floating point data to learn about the nuance
 
 A floating point is a simple value type that represents fractional numbers.  Unlike integral numbers, there are other considerations beyond the maximum and minimum values you can store in a given floating-point type.  
 
-## Evaluating Floating-point types
+## Evaluate floating-point types
 
 First, you must also consider the digits of precision each allow.  Precision is the number of values that can be stored after the decimal point.
 
@@ -12,11 +12,11 @@ Performing math on binary floating-point values can produce results that may sur
 
 When you need more a more precise answer, you should use `decimal`.  Each value of type `decimal` has a relatively large memory footprint, however performing math operations gives you a more precise result.  So, you should use `decimal` when working with financial data or any scenario where you need an accurate result from a calculation.
 
-### Step 1 - Delete or comment out any code from the previous exercises in the .NET Editor.
+### Step 1 - Delete or comment out any code from the previous exercises in the .NET Editor
 
 Select the code from the previous exercise and select the backspace or `del` key.  Optionally, comment out the previous code in the .NET Editor.
 
-### Step 2 - Use the MinValue and MaxValue properties for each signed integral type.
+### Step 2 - Use the MinValue and MaxValue properties for each signed integral type
 
 To see the value ranges for the various data types, type the following code into the .NET Editor.
 
@@ -28,7 +28,7 @@ Console.WriteLine($"double : {double.MinValue} to {double.MaxValue} (with ~15-17
 Console.WriteLine($"decimal: {decimal.MinValue} to {decimal.MaxValue} (with 28-29 digits of precision)");
 ```
 
-### Step 3 - Run the code to inspect each data type's range of values.
+### Step 3 - Run the code to inspect each data type's range of values
 
 If you run the code, you'll see the following output.
 

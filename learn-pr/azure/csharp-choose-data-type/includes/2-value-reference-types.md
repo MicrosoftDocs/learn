@@ -40,13 +40,13 @@ A data type is a programming language construct that defines how much memory to 
 
 Given the type of applications you'll build in your career, you'll come to realize you settle on a small subset of all the available data types.  However, it's still vital to know others exist and why.
 
-## Value vs. Reference Types
+## Value vs. reference types
 
 There are two basic categories of data types: *value types* and *reference types*.  The fundamental difference between value and reference types concerns where those values are temporarily stored in memory as your application executes.  Where the value is stored affects how the .NET runtime manages the life of the value including its declaration (birth), assignment and retrieval (life), and finalization (death).  This, in turn, impacts the syntax you use when working with either a value type or a reference type.
 
 This module will focus on simple value and reference types.  As you learn more about C#, new details will emerge related to the fundamental difference between value and reference types.
 
-### Simple Value Types
+### Simple value types
 
 Simple value types are a set of predefined types provided by C# as keywords.  These keywords are merely aliases for predefined  types defined in the .NET Class Library. For example, the C# keyword `int` is an alias of a value type defined in the .NET Class Library as `System.Int32`.
 

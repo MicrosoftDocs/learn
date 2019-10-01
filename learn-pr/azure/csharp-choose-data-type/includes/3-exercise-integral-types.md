@@ -6,7 +6,7 @@ There are two subcategories of integral types: **signed** and **unsigned** integ
 
 A *signed type* uses its bytes to represent an equal number of positive and negative numbers.  The following exercise will give you exposure to the signed integral types in C#.
 
-### Step 1 - Use the MinValue and MaxValue properties for each signed integral type.
+### Step 1 - Use the MinValue and MaxValue properties for each signed integral type
 
 To see the value ranges for the various data types, type the following code into the .NET Editor.
 
@@ -19,7 +19,7 @@ Console.WriteLine($"int    : {int.MinValue} to {int.MaxValue}");
 Console.WriteLine($"long   : {long.MinValue} to {long.MaxValue}");
 ```
 
-### Step 2 - Run the code to inspect each data type's range of values.
+### Step 2 - Run the code to inspect each data type's range of values
 
 You should see the following output.
 
@@ -37,7 +37,7 @@ For most non-scientific applications, you will likely only need to work with `in
 
 An *unsigned type* uses its bytes to represent only positive numbers.  The remainder of the exercise introduces the unsigned integral types in C#.
 
-### Step 3 - Use the MinValue and MaxValue properties for each unsigned integral type.
+### Step 3 - Use the MinValue and MaxValue properties for each unsigned integral type
 
 Below the previous code passage, add the following code.
 
@@ -51,7 +51,7 @@ Console.WriteLine($"uint   : {uint.MinValue} to {uint.MaxValue}");
 Console.WriteLine($"ulong  : {ulong.MinValue} to {ulong.MaxValue}");
 ```
 
-### Step 4 - Run the code to inspect each data type's range of values.
+### Step 4 - Run the code to inspect each data type's range of values
 
 If you run the code, you'll see the following output.
 

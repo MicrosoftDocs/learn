@@ -6,15 +6,15 @@ In this module, you'll learn how data is stored and processed by the computer.  
 
 By the end of this module, you'll be confident when working with different data types in C# and will be able to choose the right data type for your particular application.
 
-## Learning Objectives
+## Learning objectives
 
 In this module, you will:
 
-- Learn the fundamental differences between *value types* and *reference types*
-- Describe the properties of many new numeric data types, including new *integral types* and *floating point types*
-- Write code that returns the maximum and minimum values that numeric data types can store
-- Use the `new` keyword to create new instances of a reference type
-- Determine which data type you should choose for a given application
+- Learn the fundamental differences between *value types* and *reference types*.
+- Describe the properties of many new numeric data types, including new *integral types* and *floating point types*.
+- Write code that returns the maximum and minimum values that numeric data types can store.
+- Use the `new` keyword to create new instances of a reference type.
+- Determine which data type you should choose for a given application.
 
 ## Prerequisites:
 
