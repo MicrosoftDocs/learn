@@ -27,7 +27,7 @@ Mara opens her Windows laptop and launches Google Chrome. She goes to the web ap
 
 Amita clicks the **Download game** button and sees the modal window appear.
 
-![](../media/4-website-download-game-modal.png)
+![A browser showing the Download game modal window on the Space Game website](../media/4-website-download-game-modal.png)
 
 **Andy:** Great. What modal windows do you check next?
 
@@ -35,11 +35,11 @@ Amita clicks the **Download game** button and sees the modal window appear.
 
 Amita clicks on each of the four thumbnail images to show the example game screens.
 
-![](../media/4-website-game-screens.png)
+![A browser showing the game screen modal window on the Space Game website](../media/4-website-game-screens.png)
 
 Next, Amita clicks on the top player on the leaderboard and sees the player's profile.
 
-![](../media/4-website-leaderboard.png)
+![A browser showing the leaderboard modal window on the Space Game website](../media/4-website-leaderboard.png)
 
 **Amita:** That covers the modal window tests. I run these tests on Windows because that's how most players visit our site. I run the tests on Chrome, and when I have time I run them again on Firefox and Edge.
 
@@ -63,7 +63,7 @@ Let's start by getting the XPath expression for the **Download game** button.
 
     You see the developer tools window open. The HTML code for the **Download game** button is highlighted.
 
-    ![](../media/4-website-inspect-button.png)
+    ![A browser showing the developer tools window and a selected HTML element](../media/4-website-inspect-button.png)
 
 1. Right click on the highlighted text, point to **Copy** and then select **Copy XPath**.
 1. Paste the text into a document somewhere. We'll use it later.

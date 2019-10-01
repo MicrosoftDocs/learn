@@ -39,11 +39,11 @@ To make the test plan more flexible, your version uses a JMeter property. Think 
 
 Here's how the `hostname` variable is defined in JMeter:
 
-![](../media/5-jmeter-hostname-variable.png)
+![Setting the hostname variable in Apache JMeter](../media/5-jmeter-hostname-variable.png)
 
 Here's how the `hostname` variable uses the [__P](http://jmeter.apache.org/usermanual/functions.html#__P?azure-portal=true) function to read the `hostname` variable.
 
-![](../media/5-jmeter-httprequest-server-name.png)
+![Reading the hostname variable in Apache JMeter](../media/5-jmeter-httprequest-server-name.png)
 
 The corresponding test plan file, *LoadTest.jmx* specifies and uses this variable to set the hostname.
 
@@ -115,20 +115,20 @@ Here you watch the pipeline run, including the load tests, during _Staging_.
     During _Staging_, you see the load tests run after the website is deployed.
 1. After the build completes, go to the summary page.
 
-    ![](../media/5-stages-complete.png)
+    ![Azure Pipelines showing the completed stages](../media/5-stages-complete.png)
 
     You see that the deployment and the load tests completed successfully.
 1. Near the top of the page, note the summary.
 
     You see that the build artifact for the _Space Game_ website is published just like always. Also note the **Tests** section, which shows that the load tests have passed.
 
-    ![](../media/5-build-summary-tests.png)
+    ![Azure Pipelines showing the test summary](../media/5-build-summary-tests.png)
 
 1. Select the test summary to see the full report.
 
     The report shows that both tests have passed.
 
-    ![](../media/5-test-summary.png)
+    ![Azure Pipelines showing the full test report](../media/5-test-summary.png)
 
     If any test were to fail, you would see detailed results of the failure. From there, you can investigate the source of the failure.
 
@@ -139,11 +139,11 @@ Here you watch the pipeline run, including the load tests, during _Staging_.
 
     The report proves that these requirements are met. To see this in greater detail, select the **Outcome** drop-down in the report. Then make sure that only **Passed** is selected.
 
-    ![](../media/5-tests-outcome-filter.png)
+    ![Filtering passed tests in the test report](../media/5-tests-outcome-filter.png)
 
     You see that the **Average Response Time** and **Max Response Time** test cases both succeeded.
 
-    ![](../media/5-tests-junit-details.png)
+    ![The test report showing two successful test cases](../media/5-tests-junit-details.png)
 
 > [!NOTE]
 > Just remember that you're using the **B1** App Service plan, which runs on the **Basic** tier. This plan is intended for apps that have lower traffic requirements, such as a test environment. Therefore, the performance of your website may be less than you'd expect. In practice, you would choose a plan for the _Staging_ environment that more closely matches your production environment. For example, the **Standard** and **Premium** plans are for production workloads and run on dedicated virtual machine instances.

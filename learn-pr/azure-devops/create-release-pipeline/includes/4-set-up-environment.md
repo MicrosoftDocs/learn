@@ -238,21 +238,21 @@ Here, you create an initial pipeline configuration that builds the web applicati
 
 1. In Azure Pipelines, go to the build and trace the build as it runs.
 
-    ![](../../shared/media/pipeline-trace-build.png)
+    ![Azure Pipelines showing a running job](../../shared/media/pipeline-trace-build.png)
 
 1. After the build completes, select the back button to return to the summary page.
 
-    ![](../../shared/media/pipeline-navigate-pipeline-summary.png)
+    ![Navigating back to the summary page in Azure Pipelines](../../shared/media/pipeline-navigate-pipeline-summary.png)
 
 1. On the summary page, select your published artifact.
 
-    ![](../../shared/media/pipeline-navigate-published-artifact.png)
+    ![Selecting the artifact in Azure Pipelines](../../shared/media/pipeline-navigate-published-artifact.png)
 
 1. From the **Published artifacts** page, expand the **drop** folder.
 
     You see a _zip_ file that contains your built application and its dependencies. This is your build artifact.
 
-    ![](../../shared/media/pipeline-view-published-artifact.png)
+    ![Azure Pipelines showing the published artifact](../../shared/media/pipeline-view-published-artifact.png)
 
     You can manually download and install the build artifact in your own environment, just as Amita did in the previous learning path. In this module, you add a deployment stage that automatically deploys the build artifact to Azure App Service.
 

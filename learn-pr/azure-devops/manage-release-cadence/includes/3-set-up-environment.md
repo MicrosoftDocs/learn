@@ -318,11 +318,11 @@ Here, you push the initial configuration to GitHub so that you're up to date wit
 1. In Azure Pipelines, go to the build and trace the build as it runs.
 1. After the build completes, go to the summary page.
 
-    ![](../media/3-stages-complete.png)
+    ![Azure Pipelines showing the completed stages](../media/3-stages-complete.png)
 
     You see that each stage of the pipeline succeeded.
 1. Navigate to the URL that corresponds to each stage.
 
     You see that the _Space Game_ website successfully deployed to each App Service environment.
 
-    ![](../media/3-app-service-dev.png)
+    ![A browser showing the Space Game website in the Dev environment](../media/3-app-service-dev.png)

@@ -111,4 +111,4 @@ You can also use this task to start, stop, or delete a slot, as well as install 
 
     Although you haven't yet made changes to the website, you see that the _Space Game_ website successfully deployed to each App Service environment.
 
-    ![](../media/3-app-service-dev.png)
+    ![A browser showing the Space Game website in the Dev environment](../media/3-app-service-dev.png)

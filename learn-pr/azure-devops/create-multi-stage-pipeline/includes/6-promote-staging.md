@@ -77,13 +77,13 @@ Here, you modify your pipeline configuration to deploy the build to the _Staging
 
     You see that the _Space Game_ website has been successfully deployed to App Service and is running.
 
-    ![](../media/6-app-service-staging.png)
+    ![A browser showing the Space Game website in the Staging environment](../media/6-app-service-staging.png)
 
 1. As an optional step, in Azure Pipelines, select **Environments**. Then select the **staging** environment.
 
     Azure Pipelines records your deployment history, which enables you to trace changes in the environment back to code commits and work items.
 
-    ![](../media/6-environment-staging.png)
+    ![Azure Pipelines showing the deployment history](../media/6-environment-staging.png)
 
 The Tailspin team gathers to discuss their progress. Amita approves changes in the _Test_ stage while the others watch.
 

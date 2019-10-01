@@ -54,7 +54,7 @@ Here you modify your pipeline configuration to promote the build to the _Dev_ st
 1. In Azure Pipelines, go to the build and trace the build as it runs.
 1. After the build completes, press the back button to return to the summary page.
 
-    ![](../media/4-pipeline-dev-stage-summary.png)
+    ![Azure Pipelines showing the completed stages](../media/4-pipeline-dev-stage-summary.png)
 
     You see that the deployment completed successfully.
 1. From a web browser, navigate to the URL that's associated with the App Service instance for your _Dev_ environment.
@@ -63,10 +63,10 @@ Here you modify your pipeline configuration to promote the build to the _Dev_ st
 
     You see that the _Space Game_ website has been successfully deployed to App Service and is running.
 
-    ![](../media/4-app-service-dev.png)
+    ![A browser showing the Space Game website in the Dev environment](../media/4-app-service-dev.png)
 
 1. As an optional step, in Azure Pipelines, select **Environments**. Then select the **dev** environment.
 
     Azure Pipelines records your deployment history, which enables you to trace changes in the environment back to code commits and work items.
 
-    ![](../media/4-environment-dev.png)
+    ![Azure Pipelines showing the deployment history](../media/4-environment-dev.png)

@@ -29,7 +29,7 @@ Let's briefly discuss each one.
 
 A _blue-green deployment_ reduces risk and downtime by running two identical environments. These environments are called blue and green. At any time, only one of the environments is live. A blue-green deployment typically involves a router or load balancer that helps us control the flow of traffic.
 
-![](../media/2-blue-green-deployment.png)
+![Diagram of a load balancer distributing traffic in a blue-green deployment](../media/2-blue-green-deployment.png)
 
 Let's say blue is live. As we prepare a new release, we would do our final tests in the green environment. Once the software is working in the green environment, we would just switch the router so that all incoming requests go to the green environment. Blue-green deployment also gives us a fast way to do a rollback. If anything goes wrong in the green environment, we simply switch the router back to the blue environment.
 

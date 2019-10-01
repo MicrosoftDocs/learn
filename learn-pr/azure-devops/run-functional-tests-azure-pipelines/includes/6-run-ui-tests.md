@@ -116,24 +116,24 @@ Here you watch the pipeline run, including the Selenium UI tests, during the _Te
 
     During the build, you see the automated tests run after the website is deployed.
 
-    ![](../media/6-stages-test-running.png)
+    ![Azure Pipelines showing the running stages](../media/6-stages-test-running.png)
 
 1. After the build completes, go to the summary page.
 
-    ![](../media/6-stages-complete.png)
+    ![Azure Pipelines showing the completed stages](../media/6-stages-complete.png)
 
     You see that the deployment and the UI tests completed successfully.
 1. Near the top of the page, note the summary.
 
     You see that the build artifact for the _Space Game_ website is published just like always. Also note the **Tests** section, which shows that the Selenium tests have passed.
 
-    ![](../media/6-build-summary-tests.png)
+    ![Azure Pipelines showing the test summary](../media/6-build-summary-tests.png)
 
 1. Select the test summary to see the full report.
 
     The report shows that all nine tests have passed (three tests across three browsers.)
 
-    ![](../media/6-test-summary.png)
+    ![Azure Pipelines showing the full test report](../media/6-test-summary.png)
 
     If any test were to fail, you would see detailed results of the failure. From there, you can investigate the source of the failure, fix it locally, and then push up the necessary changes to make the tests pass in the pipeline.
 

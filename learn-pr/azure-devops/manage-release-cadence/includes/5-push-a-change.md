@@ -58,13 +58,13 @@ For brevity, here you commit the changes to your branch, push your branch to Git
 
     You see the website deployed with the color and text changes.
 
-    ![](../media/5-app-service-staging.png)
+    ![A browser showing the Space Game website with color and text changes](../media/5-app-service-staging.png)
 
 1. Navigate to the URL that corresponds to the *swap* slot for your _Staging_ environment. The URL includes "-swap.azurewebsites.net" in its name.
 
     You see the previous version of the website, without the color and text changes.
 
-    ![](../media/5-app-service-staging-swap.png)
+    ![A browser showing the normal Space Game website](../media/5-app-service-staging-swap.png)
 
     That's because you swapped the *production* and *swap* slots. In other words, here you always deploy to the *swap* slot, and then swap the *production* and *swap* slots. The swap process ensures that *production* points to the more recent deployment.
 
@@ -129,11 +129,11 @@ Here, you push your reverted change through the pipeline and see the results.
 
     The *production* slot now points to your reverted change, which is the original website.
 
-    ![](../media/5-app-service-staging-swap.png)
+    ![A browser showing the normal Space Game website](../media/5-app-service-staging-swap.png)
 
     The *swap* slot now points to the previous change.
 
-    ![](../media/5-app-service-staging.png)
+    ![A browser showing the Space Game website with color and text changes](../media/5-app-service-staging.png)
 
 Great work! The team now has a way to automate the releases and they can get new features to their users without incurring downtime.
 

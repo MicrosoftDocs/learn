@@ -37,7 +37,7 @@ Here you modify your pipeline configuration to deploy the build to the _Test_ st
 1. In Azure Pipelines, go to the build and trace the build as it runs.
 1. After the build completes, press the back button to return to the summary page.
 
-    ![](../media/5-pipeline-test-stage-summary.png)
+    ![Azure Pipelines showing the completed stages](../media/5-pipeline-test-stage-summary.png)
 
     You see that the deployment completed successfully.
 1. From a web browser, navigate to the URL that's associated with the App Service instance for your _Test_ environment.
@@ -46,13 +46,13 @@ Here you modify your pipeline configuration to deploy the build to the _Test_ st
 
     You see that the _Space Game_ website has been successfully deployed to App Service and is running.
 
-    ![](../media/5-app-service-test.png)
+    ![A browser showing the Space Game website in the Test environment](../media/5-app-service-test.png)
 
 1. As an optional step, in Azure Pipelines, select **Environments**. Then select the **test** environment.
 
     Azure Pipelines records your deployment history, which enables you to trace changes in the environment back to code commits and work items.
 
-    ![](../media/5-environment-test.png)
+    ![Azure Pipelines showing the deployment history](../media/5-environment-test.png)
 
 Andy and Mara add the _Test_ stage to the pipeline and then show the results to Amita.
 
