@@ -10,9 +10,9 @@ In [Run quality tests in your build pipeline using Azure Pipelines](/learn/modul
 
 In this module, you will:
 
-- TODO Describe the role of functional and non-functional tests in a release pipeline.
-- TODO Run functional UI tests in your pipeline's _Test_ stage.
-- TODO Run non-functional load tests during _Staging_.
+- Describe the role of functional and non-functional tests in a release pipeline.
+- Run functional UI tests in your pipeline's _Test_ stage.
+- Run non-functional load tests during _Staging_.
 
 ## Prerequisites
 

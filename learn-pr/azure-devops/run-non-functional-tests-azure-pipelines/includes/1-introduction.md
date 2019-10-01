@@ -10,9 +10,9 @@ In this module, you'll explore the types of non-functional tests you can run and
 
 In this module, you will:
 
-- TODO Describe the role of functional and non-functional tests in a release pipeline.
-- TODO Run functional UI tests in your pipeline's _Test_ stage.
-- TODO Run non-functional load tests during _Staging_.
+- Describe the role of functional and non-functional tests in a release pipeline.
+- Run functional UI tests in your pipeline's _Test_ stage.
+- Run non-functional load tests during _Staging_.
 
 ## Prerequisites
 
