@@ -8,11 +8,6 @@ Let’s recap on what we’ve learned in this module.
 * __Recurrent neural networks__ are often used for data in a sequence, such as music, text, and time series data.
   * RNNs have a special kind of memory for data points seen recently.
   * There are different variants of RNNs, each with different advantages.
-
-Those of us who read the optional information will have learned that:
-
-* there are a wide variety of ways to organize a neural network
-  * Which you choose depends on what you want to achieve and some degree of experimentation.
 * To build a deep network one needs to pick tools to do so. There are many tools available, including TensorFlow and Keras.
 
 Now that you have reviewed this module, you should be able to:
