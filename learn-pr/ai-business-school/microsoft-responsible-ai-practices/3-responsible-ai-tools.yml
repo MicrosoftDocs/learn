@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 7
+durationInMinutes: 16
 content: |
   [!include[](includes/3-responsible-ai-tools.md)] 
