@@ -12,6 +12,8 @@ Nodes are contained in __layers__. Like other AI models we have used in this cou
 
 These layers are considered ‘hidden’ because they are not seen in the training set. Like our previous examples in this course, training sets for neural networks only contain our input (features) and output (labels).
 
+Notice all the interconnecting lines - each node passes its output to the nodes on the next layer. All this data combination is what allows neural networks to interpret very complex data.
+
 Deep learning and other variations of neural networks are very similar. The difference is in how the nodes are arranged and which nodes are connected to other nodes. For example, computer vision looks at the pixels close to a data point.
 
 ![Photo of an elephant with a red square in the middle of the photo, on the elephants ear.](../media/5.1_ElephantEar.jpg)

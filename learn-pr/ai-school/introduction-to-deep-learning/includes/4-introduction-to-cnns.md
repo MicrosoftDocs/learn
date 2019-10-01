@@ -28,12 +28,12 @@ As you can see above, Softmax outputs multiple probabilities adding up to 1. The
 
 ### Validation sets - DL
 
-It can be time consuming and computationally expensive to use a large training dataset only to find out at the end of training that overfitting has occurred and you have low accuracy on your test set. Using a validation set alongside your training set gives an unbiased result for your model to use to detect overfitting as it is occurring.
+It can be time consuming and computationally expensive to use a large training dataset only to find out at the end of training that overfitting has occurred and you have low accuracy on your test set. Validation sets are used alongside your training set during training.
+
+The validation set gives an unbiased result for your model to use to detect overfitting as it is occurring. If the validation sets error begins to increase by a certain amount, overfitting may be occurring, and training can be stopped. This process is called early stopping.
 
 ![TBC if we keep in optional content](../media/2.8_Training_Validation_TestSets-02.png)
 
 The size of your validation set varies depending upon your application. A good starting point is to allocate 60% of your data to a training set, 20% to a validation set, and 20% to a test set.
-
-If the validation sets error begins to increase by a certain amount, overfitting may be occurring, and training can be stopped. This process is called early stopping.
 
 Next up we'll build your first CNN in Azure Notebooks, using softmax and validation sets.
