@@ -136,7 +136,7 @@ Here, you create the App Service instances for the three stages you'll deploy to
     az group create --name tailspin-space-game-rg
     ```
 
-1. Run the following `az appservice plan create` command to create an App Service plan that's named **tailspin-space-game-asp**.
+1. Run the following commands to create two App Service plans.
 
     ```azurecli
     az appservice plan create \
@@ -150,10 +150,16 @@ Here, you create the App Service instances for the three stages you'll deploy to
       --sku P1V2
     ```
 
-    The `--sku` argument specifies the **B1** plan, which runs on the **Basic** tier.
-
     > [!IMPORTANT]
     > If the **B1** SKU is not available as part of your Azure subscription, [choose a different plan](https://azure.microsoft.com/pricing/details/app-service/linux/?azure-portal=true), such as **S1** (**Standard**).
+
+    Recall that an App Service plan defines the CPU, memory, and storage resources that are provided for your web app to run. 
+
+    The first command specifies the **B1** plan, which runs on the **Basic** tier, which is used by the App Service environments for the _Dev_ and _Test_ stages. The **B1 Basic** plan is intended for apps that have lower traffic requirements, such as a development or test environment.
+
+    The second command specifies the **P1V2** plan, which runs on the **Premium** tier. The **Premium P1V2** plan is for production workloads and runs on dedicated virtual machine instances.
+
+    The **Basic** plan tier does not offer additional deployment slots. However, the **Premium** plan does. That's why you need it for your _Staging_ environment.
 
 1. Run the following `az webapp create` commands to create the three App Service instances, one for each of the  _Dev_, _Test_, and _Staging_ environments.
 
@@ -174,7 +180,7 @@ Here, you create the App Service instances for the three stages you'll deploy to
       --plan tailspin-space-game-prod-asp
     ```
 
-    For learning purposes, here you apply the same App Service plan, **B1 Basic**, to each App Service instance. In practice, you would assign a plan that matches your expected workload.
+    Notice that here you apply the same App Service plan, **B1 Basic**, to the App Service instances for _Dev_ and _Test_. You apply the App Service plan **Premium P1V2** to the App Service instance for _Staging_.
 
 1. Run the following `az webapp list` command to list the hostname and state of each App Service instance.
 
@@ -197,7 +203,7 @@ Here, you create the App Service instances for the three stages you'll deploy to
 
 1. As an optional step, go to one or more of the names listed to verify they are running and that the default home page appears.
 
-    You see this:
+    You see this in each environment:
 
     ![The default home page on Azure App Service](../../shared/media/app-service-default.png)
 
@@ -285,6 +291,8 @@ This branch contains the _Space Game_ project you worked with in the previous mo
 1. As an optional step, open *azure-pipelines.yml* from Visual Studio Code and familiarize yourself with the initial configuration.
 
     The configuration resembles the ones that you created in the previous modules in this learning path. It builds only the application's **Release** configuration. For brevity, it also omits the triggers, manual approvals, and tests you set up in previous modules.
+
+    For learning purposes, this configuration promotes changes from any branch to _Dev_, _Test_, and _Staging_. A more robust approach might promote only changes from a release branch or `master`, like you set up in the [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true) module.
 
 ## Run the pipeline and see the deployed website
 
