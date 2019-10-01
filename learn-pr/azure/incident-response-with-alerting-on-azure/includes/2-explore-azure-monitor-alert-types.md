@@ -6,7 +6,7 @@ In this unit, you'll see how Azure Monitor receives resource data, what makes up
 
 ## Data types in Azure Monitor
 
-![An image representing the target resources feeding into Azure Monitor and the two principle signal types: metrics and logs](../media/01-azure-resource-signal-types.png)
+![An image representing the target resources feeding into Azure Monitor and the two principle signal types: metrics and logs](../media/2-azure-resource-signal-types.png)
 
 Azure Monitor receives data from multiple target resources such as applications, operating systems, Azure resources, Azure subscriptions, or Azure tenants. The nature of the resource defines which data types are available. A data type will be one of metric, log, or metric and log.
 
@@ -21,7 +21,7 @@ You'll learn about the three different signal types that you can use to monitor 
 
 ## Composition of an alert rule
 
-![text](../media/creating-an-alert.png)
+![text](../media/2-creating-an-alert.png)
 
 Every alert or notification available in Azure Monitor is the product of a rule. Some of these rules are built into the Azure platform. You use alert rules to create custom alerts and notifications. No matter which target resource or data source you use, the composition of an alert rule remains the same.
 
@@ -44,13 +44,11 @@ Every alert or notification available in Azure Monitor is the product of a rule.
 
 ## Scope of alert rules
 
-You can get monitoring data from across most of the Azure services, and report on it using the Azure Monitor pipeline. But the scope, and reach is limited or not supported in some areas. 
-
-In the Azure Monitor pipeline, you can create alert rules for, but are not limited to: metric values, log search queries, activity log events, the health of the underlying Azure platform, and tests for website availability. 
+You can get monitoring data from across most of the Azure services, and report on it using the Azure Monitor pipeline. In the Azure Monitor pipeline, you can create alert rules for, but are not limited to: metric values, log search queries, activity log events, the health of the underlying Azure platform, and tests for website availability.
 
 The following alerting capabilities aren't yet available for the generation of monitoring data:
 
-- Activity log-based service health alerts. 
+- Activity log-based service health alerts.
 - Web availability tests using Application Insights.
 
 ## Managing alert rules

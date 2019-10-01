@@ -21,11 +21,11 @@ The power of smart groups is that they show you all related alerts, giving impro
 
 There are two ways to get to your smart groups, either through the **Alert Summary Page**
 
-![Screenshot highlighting how to access smart groups through the alert summary page](../media/sg-alerts-summary.jpg)
+![Screenshot highlighting how to access smart groups through the alert summary page](../media/8-smart-group-alerts-summary.jpg)
 
 or from the **All Alerts** page, then select **Alerts by Smart Group**. 
 
-![Screenshot highlighting how to access smart groups through the all alerts page](../media/sg-all-alerts.jpg)
+![Screenshot highlighting how to access smart groups through the all alerts page](../media/8-smart-group-all-alerts.jpg)
 
 Either method results in a new page that displays all the smart groups. You can now resolve a smart group.
 
@@ -34,7 +34,7 @@ Selecting a smart group opens the details page, which splits into two sections:
 - **Alerts**: lists all the alerts included in the smart group.
 - **History**: provides a history of all the changes made to the smart group.
 
-![Screenshot showing a Smart Group details page](../media/smart-group-detail.png)
+![Screenshot showing a Smart Group details page](../media/8-smart-group-detail.png)
 
 ## Smart group states
 
@@ -48,6 +48,6 @@ The states are:
 - **Acknowledged**: when an administrator starts the resolution process, they should change the state to acknowledged.
 - **Close**: when the source of the alert is fixed, the administrator changes the state to closed.
 
-![Screenshot showing smart groups can have different states to the individual alerts](../media/smart-group-different-states.png)
+![Screenshot showing smart groups can have different states to the individual alerts](../media/8-smart-group-different-states.png)
 
 Changing the state of the smart group doesn't affect the underlying alert. Each alert member shown in the smart group can have different states.

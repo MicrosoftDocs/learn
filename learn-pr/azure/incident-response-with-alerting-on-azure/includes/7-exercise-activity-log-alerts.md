@@ -9,13 +9,13 @@ Your goal is to set up the Linux VM and create an activity log monitoring rule t
 1. Select the **+ New alert rule**.
 1. From the **Resource** section, choose **Select**.
 
-    ![Image showing the create rule page](../media/ex2-select-all-vms.png)
+    ![Image showing the create rule page](../media/7-select-all-vms.png)
 
     You can either select a specific virtual machine to monitor or select the resource group, which will monitor all virtual machines.  In this exercise, you'll select the latter.  When selecting a resource group, all the virtual machines in the group are also selected.
 
 1. You'll need to configure the signal logic for this alert.  The signal type varies, depending on the type of resource selected.
 
-    ![Image showing the create rule page](../media/ex2-conf-signal-logic.png)
+    ![Image showing the create rule page](../media/7-conf-signal-logic.png)
 
     - Signal Type: **Activity Log**
     - Monitor Service: **All**
@@ -25,7 +25,7 @@ Your goal is to set up the Linux VM and create an activity log monitoring rule t
 
 1. Define the logic test that will be applied to the metric monitoring data.  In the **Condition** section, select **Add**.
 
-    ![Image showing the metric condition logics settings](../media/ex2-activity-log-logic.png)
+    ![Image showing the metric condition logics settings](../media/7-activity-log-logic.png)
 
     - Event Level: **All**
     - Status: **All**
@@ -38,7 +38,7 @@ For the previous Azure Monitor alert you didn't add any actions. You just view t
 
 1. Under **ACTIONS** select **Create action group**.
 
-    ![Screenshot showing adding an action group and an email alert](../media/email-setup.png)
+    ![Screenshot showing adding an action group and an email alert](../media/7-email-setup.png)
 
     Enter the following details:
 
@@ -56,7 +56,7 @@ For the previous Azure Monitor alert you didn't add any actions. You just view t
 
 1. Finally, you'll need to give the alert a name and a description.  In the **ALERT DETAILS** section, provide the following information:
 
-    ![Screenshot showing a completed alert details section](../media/ex2-all-vm-alert-details.png)
+    ![Screenshot showing a completed alert details section](../media/7-all-vm-alert-details.png)
 
     - Alert rule name: **VM was deleted**
     - Description: **a VM in your resource group was deleted**
@@ -76,7 +76,7 @@ To trigger the alert, you need to delete the virtual machine you created earlier
 
 1. A side panel will be displayed, prompting you to enter **yes** to confirm the deletion.
 
-   ![Screenshot showing a completed alert details section](../media/ex2-delete-vm-confirm.png)
+   ![Screenshot showing a completed alert details section](../media/7-delete-vm-confirm.png)
 
 1. Select **done** at the bottom of the page.  You've now deleted a virtual machine.  
 
@@ -89,7 +89,7 @@ In the example, you set up an Ubuntu VM, and created an activity log rule to det
 
 1. Open your email program, you should have received an email from azure-noreply@microsoft.com.
 
-    ![Screenshot of alert email](../media/ex2-alert-email.png)
+    ![Screenshot of alert email](../media/7-alert-email.png)
 
 1. On the Azure portal, select **Monitor** and then **Alerts**.
 
@@ -99,6 +99,6 @@ In the example, you set up an Ubuntu VM, and created an activity log rule to det
 
 1. The summary page will now display your results.
 
-    ![Screenshot showing a completed alert details section](../media/ex2-vm-rg-deleted-alert.png)
+    ![Screenshot showing a completed alert details section](../media/7-vm-rg-deleted-alert.png)
 
 The alert list now shows an alert for the virtual machine you deleted. The affected resource column tells you which virtual machine was removed. If you delete the last remaining virtual machine from the resource group, a second set of alerts will appear.

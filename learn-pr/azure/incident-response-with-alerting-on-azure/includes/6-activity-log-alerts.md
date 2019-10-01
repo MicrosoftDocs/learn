@@ -34,7 +34,7 @@ Like the previous alerts, activity log alerts have their own attributes:
 
 ### Creating a resource-specific log alert
 
-![Screenshot of the signal logic for activity log alerts related to VMs](../media/example-activity-log-alert.png)
+![Screenshot of the signal logic for activity log alerts related to VMs](../media/6-example-activity-log-alert.png)
 
 When you create your activity log alert, you choose **Activity Log** for the signal type. Then you'll see all the available alerts for the resource you choose. The above screenshot shows all the administrative alerts for Azure VMs. For example, trigger an alert when a VM is powered off.
 
@@ -42,17 +42,17 @@ Changing the monitor service will enable you to reduce the list of options, so c
 
 ### Creating a service health alert
 
-![Screenshot showing to create a new service health alert](../media/service-health-alerts.png)
+![Screenshot showing to create a new service health alert](../media/6-service-health-alerts.png)
 
 Service health alerts are not like all the other alert types you've seen so far in this module. To create a new alert, you need to navigate to the **Service Health** section on the Azure portal, then select **Health alerts**. Once there, and after selecting **+ Create service health alert**, the steps to actually create the alert are similar to the steps you've seen to create other alerts.
 
-![Screenshot showing the create screen for a service health alert](../media/creating-service-health-alerts.png) 
+![Screenshot showing the create screen for a service health alert](../media/6-creating-service-health-alerts.png) 
 
 The only difference is that you no longer need to select a resource, as the alert is for a whole region in Azure. What you can select is the kind of health event you want to be alerted on. It's possible to select service issues, planned maintenance, health advisories, or choose all of the events. The remaining steps of performing actions and naming the alerts are the same.
 
 ## Performing actions when an alert happens
 
-![Screenshot of the robot icon used to represent actions when creating an alert](../media/actions.png)
+![Screenshot of the robot icon used to represent actions when creating an alert](../media/6-actions.png)
 
 When any event is triggered, you can create an associated action in, what Azure calls, an action group. Action groups allow you to define actions that will be executed. You can run one ore more actions for each triggered alert.
 

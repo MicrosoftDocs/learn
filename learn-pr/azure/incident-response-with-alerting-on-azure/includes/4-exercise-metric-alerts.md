@@ -44,13 +44,13 @@ You use either the Azure portal or the CLI to create a metric monitor. For compl
 
 1. Select **+ New alert rule**. The **Create rule** page will be displayed.
 
-    ![Image showing the create rule page](../media/ex1-create-monitor-rule.png)
+    ![Image showing the create rule page](../media/4-create-monitor-rule.png)
 
 1. In the **Resource** section, press **Select**.
 
 1. Find your Azure sandbox subscription, and then filter by **virtual machines**. The virtual machine will be visible under the **<rgn>[sandbox resource group name]</rgn>** resource group. Select the virtual machine and then select **Done** at the bottom of the page.
 
-    ![Image showing the create rule page](../media/ex1-select-resource.png)
+    ![Image showing the create rule page](../media/4-select-resource.png)
 
 1. Configure the conditional logic for this resource. Select **Add** in the **CONDITION** section.
 
@@ -58,7 +58,7 @@ You use either the Azure portal or the CLI to create a metric monitor. For compl
 
     The list of available signals will change depending on the signal type selected. From the list of available signal types, select **Percentage CPU**.
 
-    ![Image showing the create rule page](../media/ex1-conf-signal-logic.png)
+    ![Image showing the create rule page](../media/4-configure-signal-logic.png)
 
 1. In the **Configure signal logic** panel, configure the following settings:
 
@@ -73,7 +73,7 @@ You use either the Azure portal or the CLI to create a metric monitor. For compl
 
     Select **Done**.
 
-    ![Image showing the metric condition logics settings](../media/ex1-metric-alert-logic.png)
+    ![Image showing the metric condition logics settings](../media/4-metric-alert-logic.png)
 
 1. Give the alert a name and a description. In the **Alert Details** section, provide the following information:
 
@@ -85,7 +85,7 @@ You use either the Azure portal or the CLI to create a metric monitor. For compl
     | Enabled rule upon creation | Yes |
     | | |
 
-    ![Image showing a completed alert details section](../media/ex1-metric-alert-details.png)
+    ![Image showing a completed alert details section](../media/4-metric-alert-details.png)
 
 1. Now that you have defined the rule, select **Create alert rule**.
 
@@ -113,7 +113,7 @@ Let's create a new metric alert similar to the one you set up in the Azure porta
     az monitor metrics alert create \
         -n "Cpu80PercentAlert" \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --scopes $SUBS \
+        --scopes $VMID \
         --condition "max percentage CPU > 80" \
         --description "Virtual machine is running at or greater than 80% CPU utilization" \
         --evaluation-frequency 1m \
@@ -131,12 +131,12 @@ By now the alert should be active and generating alerts.
 
 1. On the left, select **Monitor**, then select **Alerts** in the left panel.
 
-    ![Image showing the alert summary page](../media/ex1-alert-summary-page.png)
+    ![Image showing the alert summary page](../media/4-alert-summary-page.png)
 
 1. This will present the alert summary page. Here's an example of the summary page after it has been running the alert for an hour or more.
 
 1. You configured your metric alerts with a severity of Sev4. You now select the severity level sev4 to show all the alerts for that level.
 
-    ![Image showing the alert summary page](../media/ex1-all-alerts-sev4.png)
+    ![Image showing the alert summary page](../media/4-all-alerts-sev4.png)
 
 1. Selecting one of the alerts will display an Alert Details Panel. From this panel, you'll see specific details on the alert. After the issue is resolved, you can also change the alert state.
