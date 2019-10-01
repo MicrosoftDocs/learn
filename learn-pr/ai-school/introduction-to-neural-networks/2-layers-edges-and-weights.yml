@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 15
 content: |
-  [!include[](includes/3-layers-edges-and-weights.md)]
+  [!include[](includes/2-layers-edges-and-weights.md)]
 quiz:
   title: Check your knowledge
   questions:

@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-activation-functions.md)]
+  [!include[](includes/4-activation-functions.md)]
 quiz:
   title: Check your knowledge
   questions:
