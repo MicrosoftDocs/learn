@@ -38,7 +38,7 @@ units:
 - learn.azdo.manage-release-cadence.1-introduction
 - learn.azdo.manage-release-cadence.2-what-are-deployment-patterns
 - learn.azdo.manage-release-cadence.3-set-up-environment
-- learn.azdo.manage-release-cadence.4-configure-blue-green-deployment
+- learn.azdo.manage-release-cadence.4-implement-blue-green-deployment
 - learn.azdo.manage-release-cadence.5-push-a-change
 - learn.azdo.manage-release-cadence.6-clean-up-environment
 - learn.azdo.manage-release-cadence.7-summary
