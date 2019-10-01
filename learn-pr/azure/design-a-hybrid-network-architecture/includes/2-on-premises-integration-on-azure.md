@@ -94,17 +94,17 @@ When creating a gateway, there are several topologies available, known as the ga
 
 - **Site-to-Site** connections are used for cross-premises and hybrid network configurations. This connection topology requires an on-premises VPN device to have a publicly accessible IP address, and it must not be located behind a NAT. The connection uses a secret, an ASCII string up to 128 characters, to authenticate between the gateway and the vpn device.
 
-- **Multi-Site** connections are similar to site-to-site but have a slight variation. Multi-site supports more than one vpn connection to on-premises vpn devices.  It's designed for multiple on-premises sites instead of having numerous gateways. This connection topology requires a RouteBased VPN known as the dynamic gateway. It's important to note that all connections route through and share all the available bandwidth.
+
+- **Multi-Site** connections are similar to site-to-site but have a slight variation. Multi-site supports more than one vpn connection to on-premises vpn devices. It's designed for multiple on-premises sites instead of having numerous gateways. This connection topology requires a RouteBased VPN known as the dynamic gateway. It's important to note that all connections route through and share all the available bandwidth.
 
 - **Point-to-Site** connections are used for connecting from an individual client machine. This connection topology, once provisioned, gets established by a client computer starting the connection and is designed to connect remote locations. The client computer must be authenticated either through Azure AD or by using Azure Certificate Authentication. This model is typically used from home working or in the instance that only a few clients need to connect to the virtual network in Azure.
 
 - **VNet-to-VNet** connections are used to connect between Azure virtual networks. This connection topology, unlike the others, doesn't require a public IP or VPN device. It can also be used in a multi-site configuration to establish combined cross-premises connections with inter-virtual network connectivity.
 
 - **ExpressRoute** creates a direct connection between your on-premises network and the Azure virtual network that does not use the internet. You can use it to seamlessly extend your local network across to the Azure virtual network space. The ExpressRoute service is offered by many third-party connectivity providers, and there are three different ExpressRoute connection types:
-
-  - CloudExchange Colocation,
-  - Point-to-point Ethernet Connection, and
-  - Any-to-Any (IPVPN) Connection.
+  - CloudExchange Colocation
+  - Point-to-point Ethernet Connection
+  - Any-to-Any (IPVPN) Connection
 
    ![Image showing an ExpressRoute connection](../media/2-ExpressRoute-connection.png)
 
@@ -114,10 +114,10 @@ Setting up a VPN gateway requires the specific configuration and setup of multip
 
 Resource Manager simplifies the setup and configuration of a VPN gateway and has the following features:
 
-  - Grouping of resources,
-  - Improved management of all resources for your solution,
-  - Repeatability of your solution when redeploying,
-  - Managing resource dependency.
+  - Grouping of resources
+  - Improved management of all resources for your solution
+  - Repeatability of your solution when redeploying
+  - Managing resource dependency
 
 Finally, the configuration will vary depending on the connectivity option that best suits your solution and should be considered against these factors:
 
@@ -135,7 +135,7 @@ You'll learn more about VPN gateway configuration and scenarios later in this mo
 
 The above image shows a reference architecture for connecting your on-premises network to Azure using a VPN Gateway. The chosen topology in this solution is a Site-to-Site connection, so traffic flows through an IPsec VPN tunnel.
 
-This is a well established reference architecture, understood by most system administrators.  It is built on a well-defined model, which is easy to configure and maintain. All data and traffic is encrypted between the on-premises gateway and the Azure gateway.  Although it is better suited to lighter traffic loads.  Typically this architecture uses an existing internet connection as the link between the two gateway points. This can cause problems of latency due to bandwidth constraints.
+This is a well established reference architecture, understood by most system administrators. It is built on a well-defined model, which is easy to configure and maintain. All data and traffic is encrypted between the on-premises gateway and the Azure gateway. Although it is better suited to lighter traffic loads. Typically this architecture uses an existing internet connection as the link between the two gateway points. Which can cause problems of latency due to bandwidth constraints.
 
 This architecture can be scaled and extended to meet your organizations networking needs.
 
@@ -144,7 +144,7 @@ The architecture is composed of several components:
 - **The on-premises network**, representing your on-premises network.
 - **Azure Stack**, responsible for sending encrypted traffic to a virtual IP address when using a public connection.
 - **A Virtual Network**, which holds any cloud applications, and any Azure VPN gateway components.
-- **An Azure VPN gateway**, provides the link between the virtual network and the on-premises network.  It is composed of these elements:
+- **An Azure VPN gateway**, provides the link between the virtual network and the on-premises network. It is composed of these elements:
 
   - Virtual network gateway
   - Local network gateway

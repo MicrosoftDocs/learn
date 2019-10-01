@@ -34,13 +34,13 @@ Each circuit is assigned a unique GUID called a service key. This key is the onl
 
 The bandwidth available to each circuit is fixed to:
 
-- 50 Mbps,
-- 100 Mbps,
-- 200 Mbps,
-- 500 Mbps,
-- 1 Gbps,
-- 10 Gbps, or
-- 100 Gbps.
+- 50 Mbps
+- 100 Mbps
+- 200 Mbps
+- 500 Mbps
+- 1 Gbps
+- 10 Gbps
+- 100 Gbps
 
 This bandwidth gets shared across any peering in the circuit, and is mapped to the connectivity provider and peering location.
 
@@ -58,7 +58,7 @@ The architecture model includes several components:
 
 - **The on-premises network**, your on-premises network.
 - **Local-edge routers**, connects your on-premises network to the connectivity providers circuit.
-- **An ExpressRoute Circuit**, a layer 2 or 3 circuit provided by the connectivity provider.  It provides the link between the Azure edge routers and your on-premises edge router.
+- **An ExpressRoute Circuit**, a layer 2 or 3 circuit provided by the connectivity provider. It provides the link between the Azure edge routers and your on-premises edge router.
 - **Microsoft-edge routers**, are the cloud-side connection between your on-premises network and the cloud. There are always two edge-routers in a highly available active-active connection.
 - **An ExpressRoute Gateway.
 
@@ -66,10 +66,10 @@ The architecture model includes several components:
 
 When evaluating the suitability of ExpressRoute, you should take into consideration:
 
-- It doesn't support the hot standby routing protocol (HSRP).  You will need to enable a BGP configuration.
+- It doesn't support the hot standby routing protocol (HSRP). You will need to enable a BGP configuration.
 - ExpressRoute operates on layer 3 and will require a network security appliance to manage threats.
 - Monitoring the connectivity between your on-premises network and Azure must use the Azure Connectivity Toolkit.
-- Network security appliances are needed between the provider's edge routers and your on-premises network.  This will improve your network security.
+- Network security appliances are needed between the provider's edge routers and your on-premises network. This will improve your network security.
 - ExpressRoute has some default or maximum limits. Check the MS web set site for Azure subscription service limits for the most up-to-date values as these change as Azure is improved.
 
 ## Gateway and virtual network configurations
@@ -81,7 +81,7 @@ In a scenario where a VPN Gateway is to be configured for failover, the followin
 
 ## Reference architecture for ExpressRoute with VPN failover
 
-ExpressRoute comes with a high level of availability, with dual ExpressRoute gateways.  However, even with this level of resiliency built into the Azure side of the network, connectivity can still be interrupted.  One of the ways to remedy this is to provide a VPN failover service.  
+ExpressRoute comes with a high level of availability, with dual ExpressRoute gateways. However, even with this level of resiliency built into the Azure side of the network, connectivity can still be interrupted. One of the ways to remedy this is to provide a VPN failover service. 
 
 Using the above reference architecture, you can see how to implement a VPN failover between your on-premises gateway and the Azure virtual network gateway.
 

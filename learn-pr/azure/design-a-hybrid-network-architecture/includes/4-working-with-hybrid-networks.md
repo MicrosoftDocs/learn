@@ -4,9 +4,9 @@ Due diligence requires you to explore the other hybrid architecture options that
 
 In this unit, you'll:
 
-- Gain an understanding of VPN connections
-- Touch on ExpressRoute benefits and considerations
-- Look at a resiliency option for ExpressRoute
+- Gain an understanding of VPN connections.
+- Touch on ExpressRoute benefits and considerations.
+- Look at a resiliency option for ExpressRoute.
 - Consider the merits of hub-spoke network topology.
 
 ## What is a hybrid network architecture
@@ -15,9 +15,9 @@ A hybrid architecture allows organizations to benefit from using both cloud and 
 
 There are several architectures to consider.  We covered ExpressRoute in the previous unit. The others you will find are:
 
-- VPN Connections
-- ExpressRoute with VPN failover
-- Hub-spoke network topology
+- VPN Connections.
+- ExpressRoute with VPN failover.
+- Hub-spoke network topology.
 
 ## VPN Connections
 
@@ -77,7 +77,7 @@ The following items should be considered when evaluating the use of this hybrid 
 
 The merging of the VPN connection and ExpressRoute improves the resiliency of your network connection. When operating under normal conditions, it behaves exactly like a regular ExpressRoute architecture, with the VPN connection remaining dormant. If the ExpressRoute circuit fails or goes offline, the VPN connection takes over. Which ensures the availability of the network under all circumstances. Once the ExpressRoute circuit has been restored, all traffic will revert to using the ExpressRoute connection.
 
-![Image showing ExpressRoute reference architecture](../media/3-expressroute-vpn-failover-architecture.png)
+![Image showing ExpressRoute with VPN failover](../media/3-expressroute-vpn-failover-architecture.png)
 
 ### Benefits
 
