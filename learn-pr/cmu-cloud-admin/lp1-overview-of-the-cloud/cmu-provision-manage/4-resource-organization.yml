@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 9
 content: |
-  [!include[](includes/lp01-m01-04-resource-organization.md)]
+  [!include[](includes/4-resource-organization.md)]
 quiz:
   title: Check your knowledge
   questions: 
