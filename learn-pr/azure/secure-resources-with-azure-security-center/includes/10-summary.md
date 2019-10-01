@@ -20,7 +20,9 @@ Security Center is available to every Azure subscription through a free, basic t
 
 To learn more about the topics in this module, check out the following links:
 
+- [Microsoft Security Intelligence](https://www.microsoft.com/wdsi)
 - [Azure Security Center overview](https://azure.microsoft.com/services/security-center/)
 - [Azure Security Center documentation](https://docs.microsoft.com/azure/security-center/)
+- [Microsoft Antimalware](https://docs.microsoft.com/azure/security/fundamentals/antimalware)
 - [Azure Security blog](https://azure.microsoft.com/blog/topics/security/)
 - [Build automated workflows to integrate data and apps with Azure Logic Apps](https://docs.microsoft.com/learn/paths/build-workflows-with-logic-apps/)

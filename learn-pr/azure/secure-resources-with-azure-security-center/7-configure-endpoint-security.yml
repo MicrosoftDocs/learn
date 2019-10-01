@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-security.secure-resources-with-azure-security-center.configure-endpoint-security
+title: Configure malware detection
+metadata:
+  title: Configure malware detection
+  description: Configure malware detection
+  ms.date: 09/30/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-configure-endpoint-security.md)]

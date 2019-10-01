@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-manage-security-alerts.md)]
+  [!include[](includes/8-manage-security-alerts.md)]

@@ -29,9 +29,11 @@ products:
 units:
 - learn.azure-security.secure-resources-with-azure-security-center.introduction
 - learn.azure-security.secure-resources-with-azure-security-center.security-center-tiers
+- learn.azure-security.secure-resources-with-azure-security-center.customize-collection-options
 - learn.azure-security.secure-resources-with-azure-security-center.policy-management
 - learn.azure-security.secure-resources-with-azure-security-center.analyze-recommendations
 - learn.azure-security.secure-resources-with-azure-security-center.jit-vm-access
+- learn.azure-security.secure-resources-with-azure-security-center.configure-endpoint-security
 - learn.azure-security.secure-resources-with-azure-security-center.manage-security-alerts
 - learn.azure-security.secure-resources-with-azure-security-center.configure-a-playbook
 - learn.azure-security.secure-resources-with-azure-security-center.summary

@@ -13,4 +13,4 @@ metadata:
 durationInMinutes: 10
 azureSandbox: true
 content: |
-  [!include[](includes/7-configure-a-playbook.md)]
+  [!include[](includes/9-configure-a-playbook.md)]

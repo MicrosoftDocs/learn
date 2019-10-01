@@ -38,16 +38,3 @@ You can enable Security Center on a per-subscription basis. Each subscription ca
 Selecting a subscription allows you to control what areas you want Security Center to monitor as shown in the following screenshot.
 
 ![Screenshot showing the areas Security Center can cover](../media/2-pricing.png)
-
-## Customizing other global options
-
-You can customize the same settings using the **Pricing & settings** option on the Security Center menu. This also allows you to configure other settings on a per-subscription basis.
-
-![Screenshot showing the threat detection option](../media/3-threat-detection.png)
-
-- **Pricing tier**. Information about the available pricing tiers. This is the same information found on the **Coverage** page.
-- **Threat detection**. This lets you control how Security Center integrates with other Microsoft security services such as Windows Defender.
-- **Data Collection**. You can enable _auto-provisioning_ to install a monitoring agent on all VMs in your subscription so Security Center can collect security information from Windows and Linux VMs.
-- **Email notifications**. Security contact details and email notifications for high security alerts.
-
-Let's examine some of these free and standard tier features in more detail.
