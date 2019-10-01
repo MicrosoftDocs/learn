@@ -3,7 +3,7 @@ uid: learn.incident-response-with-alerting-on-azure.6-activity-log-alerts
 metadata:
   title: Use activity log alerts to alert on events within your Azure infrastructure
   description: Explore the two different kinds of active log alerts and see how you can trigger actions for your alerts, like sending an emails.
-  ms.date: 04/30/2019
+  ms.date: 10/03/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial

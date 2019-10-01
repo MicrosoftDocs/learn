@@ -3,7 +3,7 @@ uid: learn.incident-response-with-alerting-on-azure.7-exercise-activity-log-aler
 metadata:
   title: Exercise - Use activity log alerts to alert on events within your Azure infrastructure
   description: In the exercise you'll create an activity log alert, and set up an action group that will send you an email.
-  ms.date: 04/30/2019
+  ms.date: 10/03/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
