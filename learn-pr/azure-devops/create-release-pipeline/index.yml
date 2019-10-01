@@ -3,7 +3,7 @@ uid: learn.azdo.create-release-pipeline
 metadata:
   title: Create a release pipeline with Azure Pipelines - Learn
   description: Set up a continuous delivery (CD) pipeline that automates the process of deploying your application.
-  ms.date: 09/01/2019
+  ms.date: 09/30/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial

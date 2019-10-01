@@ -3,7 +3,7 @@ uid: learn.azdo.create-multi-stage-pipeline
 metadata:
   title: Create a multi-stage pipeline with Azure Pipelines - Learn
   description: Create a multi-stage pipeline with Azure Pipelines
-  ms.date: 09/01/2019
+  ms.date: 09/30/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
