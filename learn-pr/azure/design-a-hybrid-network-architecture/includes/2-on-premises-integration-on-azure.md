@@ -16,8 +16,6 @@ The Azure virtual network (VNet) is a service with a specific set of tools and r
 
 All Azure resources within a virtual network, by default, have outbound connectivity to the internet. External inbound communication is supplied via a public-facing endpoint, and a private endpoint is used for internal resources.
 
-The Azure virtual network gives you the ability to configure each virtual network into a highly sophisticated architecture.
-
 While a virtual network is composed of many elements, including virtual machines, nics, load balancers, and public IP addresses. There are two features of any virtual network that should be mentioned. **virtual network Subnets (subnets)** and **Network Security Groups (NSGs)**.
 
   ![Image showing Azure virtual network component architecture](../media/2-azure-vnet-vm-arch.png)
@@ -94,7 +92,6 @@ When creating a gateway, there are several topologies available, known as the ga
 
 - **Site-to-Site** connections are used for cross-premises and hybrid network configurations. This connection topology requires an on-premises VPN device to have a publicly accessible IP address, and it must not be located behind a NAT. The connection uses a secret, an ASCII string up to 128 characters, to authenticate between the gateway and the vpn device.
 
-
 - **Multi-Site** connections are similar to site-to-site but have a slight variation. Multi-site supports more than one vpn connection to on-premises vpn devices. It's designed for multiple on-premises sites instead of having numerous gateways. This connection topology requires a RouteBased VPN known as the dynamic gateway. It's important to note that all connections route through and share all the available bandwidth.
 
 - **Point-to-Site** connections are used for connecting from an individual client machine. This connection topology, once provisioned, gets established by a client computer starting the connection and is designed to connect remote locations. The client computer must be authenticated either through Azure AD or by using Azure Certificate Authentication. This model is typically used from home working or in the instance that only a few clients need to connect to the virtual network in Azure.
@@ -135,10 +132,6 @@ You'll learn more about VPN gateway configuration and scenarios later in this mo
 
 The above image shows a reference architecture for connecting your on-premises network to Azure using a VPN Gateway. The chosen topology in this solution is a Site-to-Site connection, so traffic flows through an IPsec VPN tunnel.
 
-This is a well established reference architecture, understood by most system administrators. It is built on a well-defined model, which is easy to configure and maintain. All data and traffic is encrypted between the on-premises gateway and the Azure gateway. Although it is better suited to lighter traffic loads. Typically this architecture uses an existing internet connection as the link between the two gateway points. Which can cause problems of latency due to bandwidth constraints.
-
-This architecture can be scaled and extended to meet your organizations networking needs.
-
 The architecture is composed of several components:
 
 - **The on-premises network**, representing your on-premises network.
@@ -152,3 +145,7 @@ The architecture is composed of several components:
   - Gateway subnet
 - **Cloud application**, this is the Azure-hosted application.
 - **Internal load balancer** - situated in the front end, it routes cloud traffic through the app.
+
+The benefits of using this architecture are that it is easy to configure and maintain. All data and traffic is encrypted between the on-premises gateway and the Azure gateway. This architecture can be scaled and extended to meet your organizations networking needs.
+
+The approach isn't applicable in all situations because it uses an existing internet connection as the link between the two gateway points. Bandwidth constraints can cause latency due to reusing the existing infrastructure.

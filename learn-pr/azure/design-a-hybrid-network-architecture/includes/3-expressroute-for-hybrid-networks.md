@@ -60,7 +60,7 @@ The architecture model includes several components:
 - **Local-edge routers**, connects your on-premises network to the connectivity providers circuit.
 - **An ExpressRoute Circuit**, a layer 2 or 3 circuit provided by the connectivity provider. It provides the link between the Azure edge routers and your on-premises edge router.
 - **Microsoft-edge routers**, are the cloud-side connection between your on-premises network and the cloud. There are always two edge-routers in a highly available active-active connection.
-- **An ExpressRoute Gateway.
+- **An ExpressRoute Gateway**.
 
 ### Considerations
 
