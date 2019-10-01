@@ -1,14 +1,16 @@
 We need training data to train a model. Once trained, we need to check how well our model will work with other similar datasets. To test a model for this, we need separate *test data*.
 
+We can evaluate the predictions of trained models using test data. As we have real labels for the test data, we can compare the label a model predicts to the real label. This gives us the accuracy of the model on data it hasn't trained on, telling us if our model is as good on new data as it was on the training data.
+
 The larger our training set is, the more accurate our model can be overall. The larger our test set is, the more confident we can be in the model’s accuracy with new data. So, the more data the better.
 
 ![Diagram representing the 80% to 20% data split of training set and test set. In the middle of the diagram, there is a blue circle, which represents the machine learning model. The model is joined to the training set, which is labeled with 80%, by a line labeled with 'training'. The model is also joined to the test set, which is labeled with 20%, by a line labeled with 'evaluation'.](../media/2.8_Training_Validation_TestSets-01.png)
 
-Normally, we start with a large dataset and split it into training data and test data. How much data goes to testing and training is different for each application, but it’s normal to start out by assigning about 80% of your data to training, and 20% to testing.  
-  
+Normally, we start with a large dataset and split it into training data and test data. How much data goes to testing and training is different for each application, but it’s normal to start out by assigning about 80% of your data to training, and 20% to testing.
+
 ## Overfitting
 
-Most datasets have noise - irregular fluctuations that we are not interested in and can obscure what we are trying to measure or visualize. If we collect two datasets of the same thing (for example, leaf size versus trunk girth), these datasets should have approximately the same relationship between variables, but different noise. *Overfitting* occurs when a model is trained so intensely on training data that it not only learns the pattern we are interested in, but it also learns the noise of that particular dataset. Because noise is completely different between datasets, this means that model will not work well on other datasets. In practice this is shown by a model having high accuracy on a training set, but low accuracy on the test set.
+Most datasets have noise - irregular fluctuations that we are not interested in and can obscure what we are trying to measure or visualize. If we collect two datasets of the same thing (for example, leaf size versus trunk girth), these datasets should have approximately the same relationship between variables, but different noise. *Overfitting* occurs when a model is trained so intensely on training data that it not only learns the pattern we are interested in, but it also learns the noise of that particular dataset. Because noise is completely different between datasets, this means that model will not work well on other datasets. **In practice, overfitting is shown by a model having high accuracy on a training set, but low accuracy on the test set**.
 
 The black line in the graph below is an example of overfitting. The *__red__* line is more generalized. Although the red line may be less accurate than the green line on the *training* set, on the test set and future datasets it will give a much better result.  
   
