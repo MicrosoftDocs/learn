@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.your-first-iot-central-app.9-summary
+uid: learn.iot.your-first-iot-central-app.9-summary
 metadata:
   title: Summary
   description: Summary
   ms.date: 09/01/2019
-  author: PeterTurcan
+  author: philmea
   ms.author: philmea
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

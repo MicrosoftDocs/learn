@@ -1,5 +1,3 @@
-## Summary
-
 In this module, you learned how to:
 
 - Create an Azure IoT Central custom app, using the IoT Central portal

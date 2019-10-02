@@ -4,11 +4,11 @@ The essential component for communication between a device and IoT Central is a 
 
 ## Add a real device
 
-1. With your Refrigerated Truck app open in the IoT Central portal, select **Devices** from the left-hand menu.
+1. With your Refrigerated Truck app open in the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) portal, select **Devices** from the left-hand menu.
 
 1. Open the **+** dropdown menu, and select **Real**.
 
-    ![Screenshot showing how to create a real device, usint the IoT Central portal](../media/refrigerated-trucks-new-real.png)
+    ![Screenshot showing how to create a real device, using the IoT Central portal](../media/refrigerated-trucks-new-real.png)
 
 1. Change the default **Device Name** to something readable ("Refrigerated Truck - 1"), leaving the **Device ID** as is, and then select **Create**.
 
@@ -27,33 +27,36 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
 1. Navigate to `https://shell.azure.com/`. Perhaps save this URL as a favorite bookmark.
 
 1. In the Azure Cloud Shell, create a refrigerated-truck folder, and navigate to it:
-    ``` Azure Cloud Shell
+
+    ```bash
     mkdir ~/refrigerated-truck
     cd ~/refrigerated-truck
     ```
+
 1. Install the Device Provisioning System (DPS) key generator (_dps-keygen_), in the refrigerated-truck folder:
 
-    ``` Azure Cloud Shell
+    ```bash
     npm install dps-keygen
     ```
 
 1. Download and install a DPS connection string utility (_dps-cstr_) from GitHub:
 
-    ``` Azure Cloud Shell
+    ```bash
     wget https://github.com/Azure/dps-keygen/blob/ota/bin/linux/dps_cstr?raw=true -O dps_cstr
     ```
+
     > [!NOTE]
     > You may have noticed in the above URL that we are downloading the Linux version of dps-cstr. This is needed to run in Azure Cloud Shell.
 
 1. To give dps-cstr the correct permissions, run the following command:
 
-    ``` Azure Cloud Shell
+    ```bash
     chmod +x dps_cstr
     ```
 
 1. Remember that in the previous section we stored a **Scope ID**, **Device ID**, and **Primary Key**, for our device. It is a good idea to keep a text tool such as Notepad open, and create in it the following string, replacing **scope-id**, **device-id**, and **primary-key** with the true values. Using the text tool enables you to create and validate the string before committing to running it.
 
-    ``` Azure Cloud Shell
+    ```bash
     ./dps_cstr scope_id device_id primary_key > connection1.txt
     ```
 
@@ -68,7 +71,7 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
 
 1. The connection string you will use in the Node.js app (that follows in the next unit) starts with **HostName=**, so separate off this part of the string in your text tool, so you have one line containing a string that looks similar to the following:
 
-    ``` js
+    ```js
     HostName=iotc-<your Scope ID>.azure-devices.net;DeviceId=<your Device ID>;SharedAccessKey=<your Primary Key>
     ```
 
@@ -86,7 +89,7 @@ If you do not already have an Azure Maps account, you will need to create one.
 
 1. If you want to verify your Azure Maps subscription key will work correctly, enter it in the following code. Save the code as a .html file, then run the code in a browser. Do you see a map of the world?
 
-``` html
+```html
 <!DOCTYPE html>
 <html>
 
@@ -135,7 +138,6 @@ If you do not already have an Azure Maps account, you will need to create one.
 </body>
 
 </html>
-
 ```
 
 ## Next steps

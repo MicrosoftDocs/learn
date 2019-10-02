@@ -5,7 +5,7 @@ Even before a device template is complete, the automatically created simulated d
 
 Complete validation of the device template will not be possible until you have some real devices. However, the simulated device allows us both to check the completeness of what we have done so far, and to provide a helpful UI to learn the basics of managing devices through IoT Central.
 
-1. Select the **Devices** entry in the left-hand menu, then click the one device we have so far (**RefrigeratedTruck-1**). In the range of **Views**, if it is not already selected, click the _chart_ entry (the left-most of the three view options, highlighted below).
+1. Inside the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) portal, select the **Devices** entry in the left-hand menu, then click the one device we have so far (**RefrigeratedTruck-1**). In the range of **Views**, if it is not already selected, click the _chart_ entry (the left-most of the three view options, highlighted below).
 
     ![Screenshot showing the telemetry line chart, and the state bar charts, for the simulated device](../media/refrigerated-trucks-simview1.png)
 
