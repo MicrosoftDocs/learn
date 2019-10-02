@@ -61,7 +61,7 @@ For the previous Azure Monitor alert you didn't add any actions. You just viewed
 
 It can take up to five minutes for an activity log alert rule to become active.  In this exercise, if you delete the virtual machine before this time, the alert rule may not trigger.
 
-Recipients added to the action group will receive a notification that they have been added. 
+Recipients added to the action group will receive a notification that they have been added to the action group, when the alert is activated, and when the alert is triggered.
 
 ## Delete your virtual machine
 
@@ -90,12 +90,8 @@ In the example, you set up an Ubuntu VM, and created an activity log rule to det
 
 1. On the Azure portal, select **Monitor** and then **Alerts**.
 
-1. In the grey filter bar, change the resource group to **<rgn>[sandbox resource group name]</rgn>**.
-
-1. Select the **Total alerts**.
-
-1. The summary page will now display your results.
+1. You should see the Sev4 alerts generated from the deletion of the VM.
 
     ![Screenshot showing a completed alert details section](../media/7-vm-rg-deleted-alert.png)
 
-The alert list now shows an alert for the virtual machine you deleted. The affected resource column tells you which virtual machine was removed. If you delete the last remaining virtual machine from the resource group, a second set of alerts will appear.
+The alert list now shows an alert for the virtual machine you deleted. The affected resource column tells you which virtual machine was removed.
