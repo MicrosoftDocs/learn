@@ -9,14 +9,12 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
   [!include[](includes/01-define-cloud-computing.md)]
 quiz:
   title: Check your knowledge
   questions:
-
   - content: "You are making a pitch to management to move your company's IT resources to the cloud. Which of the following arguments is NOT one that you would use to make your case?"
     choices:
     - content: "We incur no up-front costs for deploying resources to the cloud, and we pay only for the resources that we use."
