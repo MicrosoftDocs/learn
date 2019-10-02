@@ -9,14 +9,12 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 17
 content: |
   [!include[](includes/02-before-the-cloud.md)]
 quiz:
   title: Check your knowledge
   questions:
-
   - content: "Your customer base is growing, and the servers that host your Web site are struggling to handle the load. Which of the following solutions might you use to scale the system?"
     choices:
     - content: "Increase the number of servers to handle increased traffic"
