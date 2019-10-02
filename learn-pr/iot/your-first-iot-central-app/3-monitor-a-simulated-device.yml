@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.your-first-iot-central-app.3-monitor-a-simulated-device
+uid: learn.iot.your-first-iot-central-app.3-monitor-a-simulated-device
 metadata:
   title: Monitor a simulated device
   description: Monitor the automatically created simulated device in the Azure IoT Central web portal. Then test your knowledge so far.
   ms.date: 09/01/2019
-  author: PeterTurcan
+  author: philmea
   ms.author: philmea
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

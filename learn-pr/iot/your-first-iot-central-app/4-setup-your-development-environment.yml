@@ -4,7 +4,7 @@ metadata:
   title: Set up your development environment
   description: Download and install the tools needed for IoT Central code development.
   ms.date: 09/01/2019
-  author: PeterTurcan
+  author: philmea
   ms.author: philmea
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
