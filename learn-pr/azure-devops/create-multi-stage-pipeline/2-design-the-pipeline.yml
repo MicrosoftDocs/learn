@@ -38,7 +38,7 @@ quiz:
     - content: "Ask your approver to look at the change and then manually trigger the pipeline to run."
       isCorrect: false
       explanation: "Is there a more automated way that would allow the approver to see working software, and then promote the process to the next stage?"
-  - content: "You want to build and deploy your webapp to the _Test_ environment each time another build completes. What's the easiest way to set that up?"
+  - content: "You want to deploy your webapp to the _Test_ environment each time another build completes. What's the easiest way to set that up?"
     choices:
     - content: "Use a scheduled trigger."
       isCorrect: false

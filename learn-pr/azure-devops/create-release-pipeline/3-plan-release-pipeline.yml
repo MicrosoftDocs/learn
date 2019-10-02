@@ -37,7 +37,7 @@ quiz:
       explanation: "Although you might use an SSH key to deploy to a virtual machine in your datacenter, Azure App Service doesn't require one."
     - content: "A hostname and the encrypted username and password."
       isCorrect: false
-      explanation: "Although you might use usernames and passwords to connect to a Azure services or virtual machines, Azure App Service doesn't require them."
+      explanation: "Although you might use usernames and passwords to connect to Azure services or virtual machines, Azure App Service doesn't require them."
   - content: "Which of the following describes the relationship among _tasks_, _stages_, and _jobs_?"
     choices:
     - content: "A task is another name for a job; a stage can contain either tasks or jobs."

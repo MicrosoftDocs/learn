@@ -45,7 +45,7 @@ quiz:
       explanation: "Unit tests are best expressed through code. Tests that are expressed through code are better candidates for automation than manual processes."
     - content: "Usability testing."
       isCorrect: true
-      explanation: "Usability testing is typically performed by humans to validate that the software is intuitive and and meets the user's needs."
+      explanation: "Usability testing is typically performed by humans to validate that the software is intuitive and meets the user's needs."
     - content: "Smoke testing."
       isCorrect: false
       explanation: "Although you might occasionally smoke test changes manually before you deploy, smoke tests are usually run as an automated process. If your smoke tests fail, then you know that no further testing is required."

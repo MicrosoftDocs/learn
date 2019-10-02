@@ -95,11 +95,11 @@ The team leaves Andy and Mara to work out the details.
 
 ## How does continuous delivery compare to "right-click publishing"?
 
-Many development tools provide ways to publish your application directly to some target environment, such as IIS or Azure App Service. For example, you can [Publish an ASP.NET Core app to Azure with Visual Studio](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?azure-portal=true). This process of sometimes called "right-click publishing".
+Many development tools provide ways to publish your application directly to some target environment, such as IIS or Azure. For example, you can [Publish an ASP.NET Core app to Azure with Visual Studio](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?azure-portal=true). This process is sometimes called "right-click publishing".
 
 Right-click publishing is a great way to quickly build a prototype. For example, you might right-click publish your application to Azure so that you can share a new idea with your team. However, right-click publishing has its limits.
 
-Continuous delivery provides a consistent way for you and your team to continuously test, deploy, and monitor your application each time you check in your code. When you right-click publish your application, there's no guarantee whether the code has undergone the proper testing or will perform as expected against real-world usage.
+Continuous delivery provides a consistent way for you and your team to continuously test, deploy, and monitor your application each time you check in your code. When you right-click publish your application, there's no guarantee whether the code has undergone the proper testing or will perform as expected under real-world usage.
 
 In this short video, Abel Wang, Cloud Advocate at Microsoft, explains more.
 
