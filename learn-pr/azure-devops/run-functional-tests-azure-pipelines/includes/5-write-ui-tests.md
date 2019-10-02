@@ -26,6 +26,8 @@ This branch contains the _Space Game_ project that you worked with in previous m
 
     The configuration resembles the ones that you created in the previous modules in this learning path. It builds only the application's **Release** configuration. For brevity, it also omits the triggers, manual approvals, and tests you set up in previous modules.
 
+    [!include[](../../shared/includes/pipeline-branches-note.md)]
+
 ## Write the unit test code
 
 Amita is impressed and feels a bit excited about writing code to control her web browser. Andy does some research on Selenium ahead of meeting with Amita to write their tests.

@@ -220,6 +220,8 @@ Here, you create an initial pipeline configuration that builds the web applicati
 
     The configuration resembles the basic one you created in the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline/6-create-the-pipeline?azure-portal=true) module. It builds only the application's Release configuration. For learning purposes, this configuration does not run the quality or security checks that you set up in previous modules.
 
+    [!include[](../../shared/includes/pipeline-branches-note.md)]
+
 1. Run the following `git commit` command to add an empty entry to your commit history.
 
     ```bash

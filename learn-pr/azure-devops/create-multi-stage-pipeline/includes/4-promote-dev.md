@@ -22,6 +22,8 @@ This branch serves as your _release_ branch. It contains the _Space Game_ projec
 
     The configuration resembles the basic one you created in the [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true) module. It builds only the application's Release configuration. For learning purposes, this configuration does not run the quality or security checks that you set up in previous modules.
 
+    [!include[](../../shared/includes/pipeline-branches-note.md)]
+
 ## Promote changes to the _Dev_ stage
 
 Here you modify your pipeline configuration to promote the build to the _Dev_ stage.

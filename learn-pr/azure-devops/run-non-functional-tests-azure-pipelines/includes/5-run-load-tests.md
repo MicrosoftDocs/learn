@@ -29,6 +29,8 @@ This branch contains the _Space Game_ project that you worked with in previous m
 
     The configuration resembles the ones that you created in the previous modules in this learning path. It builds only the application's **Release** configuration. For brevity, it also omits the triggers, manual approvals, and tests you set up in previous modules.
 
+    [!include[](../../shared/includes/pipeline-branches-note.md)]
+
 1. Optionally, in Visual Studio Code, you can also check out the JMeter test plan file, *LoadTest.jmx* and the XLST transform, *JMeter2JUnit.xsl*, which transforms JMeter output to JUnit so that Azure Pipelines can visualize the results.
 
 ## Add the STAGING_URL variable to Azure Pipelines
