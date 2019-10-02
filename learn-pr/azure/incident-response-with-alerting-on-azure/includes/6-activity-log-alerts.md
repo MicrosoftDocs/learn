@@ -10,7 +10,7 @@ So far, you've seen two different types of alerting supported in Azure Monitor. 
 
 Activity log alerts are designed to work with Azure Resources. Typically, you create this type of log to receive notifications when specific changes occur on a resource within your Azure subscription.
 
-There are two distinct flavors of activity log alerts, and they are created different:
+There are two distinct flavors of activity log alerts:
 
 - **Specific operations**: apply to resources within your Azure subscription and often have a scope with specific resources or a resource group. You use this type when you need to receive an alert that reports a change to an aspect of your subscription. For example, if a virtual machine is deleted or new roles are assigned to a user.
 - **Service health events**: include notice of incidents and maintenance of target resources.
