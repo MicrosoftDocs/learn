@@ -1,11 +1,13 @@
 The heavy-lifting of this module has been completed, the process of extending our process to multiple trucks is relatively easy.
 
 ## Add multiple devices to the IoT Central app
-1. To add multiple devices, start in the IoT Central app, clicking **Devices** in the left-hand menu.
+
+1. To add multiple devices, start in the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) app, clicking **Devices** in the left-hand menu.
 
 1. Click the **+** then **Real** to add a second truck, change the **Device Name** to "RefrigeratedTruck - 2". Clicking **Create** will take you to the **Device** page, which we do not need just yet, so go back to the **Devices** page.
 
 1. Repeat the process so that you have five trucks. There is a limit in the Trial plan to the number of devices you can create. Feel free to delete the **(Simulated)** device if you run into this limit.
+
     > [!NOTE]
     > To delete any device, click the check box next to it, then select the garbage can icon top right. You will be prompted to confirm you want to delete the device.
 
@@ -28,12 +30,14 @@ The heavy-lifting of this module has been completed, the process of extending ou
 ## Create connection strings for the new devices
 
 1. In your text file, create four strings that match the following outline, replacing **scope_id** with the actual value for the first truck, and with the unique **Device ID** and **Primary Key** for each individual device. To make things clear, the name of the output text file is changed to match the truck number.
-    ``` Azure Cloud Shell
+
+    ```bash
     ./dps_cstr scope_id device_id2 primary_key2 > connection2.txt
     ./dps_cstr scope_id device_id3 primary_key3 > connection3.txt
     ./dps_cstr scope_id device_id4 primary_key4 > connection4.txt
     ./dps_cstr scope_id device_id5 primary_key5 > connection5.txt
     ```
+
      > [!NOTE]
      > Preparing strings manually this way does require patience and time. This would be onerous if there was a large number of devices. Automated device provisioning, using Azure DPS, is a subject you can investigate further, if needed, for the scenarios you might be addressing in future.
 
@@ -55,7 +59,7 @@ The heavy-lifting of this module has been completed, the process of extending ou
 
 1. Locate the switch statement at the top of the file, and add four entries:
 
-    ``` js
+    ```js
     switch (truckNum) {
         case 1:
             // Leave this entry as is.
