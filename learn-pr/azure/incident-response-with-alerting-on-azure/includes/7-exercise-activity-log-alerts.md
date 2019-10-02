@@ -1,50 +1,46 @@
 The shipping company that you work for would like to avoid any future issues with updates to its applications on the Azure platform. To improve the alerting capabilities within Azure, you'll use activity log alerting.
 
-Your goal is to set up the Linux VM and create an activity log monitoring rule to detect when a virtual machine is deleted – then delete the VM.
+Your goal is to set up the Linux VM and create an activity log monitoring rule to detect when a virtual machine is deleted. You'll then delete the VM to trigger this alert.
 
 ## Create the Azure Activity Log Monitor
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+
 1. On the left, select **Monitor**, then select **Alerts** in the left panel.
-1. Select the **+ New alert rule**.
-1. From the **Resource** section, choose **Select**.
 
-    You can either select a specific virtual machine to monitor or select the resource group, which will monitor all virtual machines.  In this exercise, you'll select the latter.  When selecting a resource group, all the virtual machines in the group are also selected.
+1. Select **+ New alert rule**.
 
-    ![Image showing the create rule page](../media/7-select-all-vms.png)
+1. In the **RESOURCE** section, choose **Select**.
 
-1. You'll need to configure the signal logic for this alert.  The signal type varies, depending on the type of resource selected.
+1. The **Filter by subscription** drop-down should already be populated with the **Concierge Subscription**. In the **Filter by resource type** drop-down select **Virtual machines**.
 
-    - Signal Type: **Activity Log**
-    - Monitor Service: **All**
-    - In the search panel, type **delete**.
+1. We want alerts when any virtual machin in our resource group is deleted. Select the **<rgn>[sandbox resource group name]</rgn>** resource group, then select **Done** at the bottom of the page.
 
-    Select **Delete Virtual Machine (virtualMachines)** that has the **MONITOR SERVICE** value of **Administrative**.
+    ![Image showing the select a resource page](../media/7-alert-select-resource.png)
+
+1. In the **CONDITION** section, select **Add**.
+
+1. On the **Configure signal logic** panel, type **Delete** in the **Search by signal name** box. Select **Delete Virtual Machine (Microsoft.Compute/virtualMachines)**.
 
     ![Image showing the create rule page](../media/7-conf-signal-logic.png)
 
-1. Define the logic test that will be applied to the metric monitoring data.  In the **Condition** section, select **Add**.
-
-    - Event Level: **All**
-    - Status: **All**
-
-    Fill in the details.  When you're done, they should look like this:
+1. We want to receive alerts of all types, leave **Alert logic** settings at their default of **All**, then select **Done**.
 
     ![Image showing the metric condition logics settings](../media/7-activity-log-logic.png)
 
 ## Add an email alert action
 
-For the previous Azure Monitor alert you didn't add any actions. You just view triggered alerts on the Azure portal. Actions allow you to send emails for notifications, trigger an Azure Function, or call a webhook. You'll now add an email alert when VMs are deleted.
+For the previous Azure Monitor alert you didn't add any actions. You just viewed triggered alerts in the Azure portal. Actions allow you to send emails for notifications, trigger an Azure Function, or call a webhook. You'll now add an email alert when VMs are deleted.
 
 1. Under **ACTIONS** select **Create action group**. Enter the following details, then select **OK**.
 
     | Setting | Value |
     |---------|---------|
-    | Action group name | **Ops Manager** |
-    | Short name | **Ops emails** |
+    | Action group name | **Alert the operations team** |
+    | Short name | **AlertOpsTeam** |
     | Subscription | **Concierge Subscription** |
     | Resource group | **<rgn>[sandbox resource group name]</rgn>** |
-    | ACTION NAME | **ops-email** |
+    | ACTION NAME | **Email the operations team** |
     | ACTION TYPE | Email/SMS/Push/Voice |
     | Email | **Your email address** |
     | | |
@@ -56,35 +52,37 @@ For the previous Azure Monitor alert you didn't add any actions. You just view t
 1. Finally, you'll need to give the alert a name and a description.  In the **ALERT DETAILS** section, provide the following information:
 
     - Alert rule name: **VM was deleted**
-    - Description: **a VM in your resource group was deleted**
+    - Description: **A VM in your resource group was deleted**
     - Enabled rule upon creation: **Yes**
 
     ![Screenshot showing a completed alert details section](../media/7-all-vm-alert-details.png)
 
-1. Now that you've defined the rule, select **Create alert rule**. It can take up to five minutes for an activity log alert rule to become active.  In this exercise, if you delete the virtual machine before this time, the alert rule will not trigger.
+1. Now that you've defined the rule, select **Create alert rule**.
+
+It can take up to five minutes for an activity log alert rule to become active.  In this exercise, if you delete the virtual machine before this time, the alert rule may not trigger.
+
+Recipients added to the action group will receive a notification that they have been added. 
 
 ## Delete your virtual machine
 
-To trigger the alert, you need to delete the virtual machine you created earlier.  
+To trigger the alert, you need to delete the virtual machine you created earlier.
 
-1. From the Azure portal, select **Virtual machines**.  This action will display a list of the virtual machines.
+1. From the Azure portal, select **Virtual machines**. This action will display a list of the virtual machines.
 
-1. Select your virtual machine.
+1. Select the `vm1` virtual machine.
 
 1. From the menu bar, select **Delete**.
 
-1. A side panel will be displayed, prompting you to enter **yes** to confirm the deletion.
+1. Enter **yes** to confirm the deletion.
 
-   ![Screenshot showing a completed alert details section](../media/7-delete-vm-confirm.png)
-
-1. Select **done** at the bottom of the page.  You've now deleted a virtual machine.  
+1. Select **Done** at the bottom of the page. You've now deleted a virtual machine.  
 
 > [!NOTE]
 > It can take a few minutes for the virtual machine to be deleted.
 
 ## View your activity log alerts in Azure Monitor
 
-In the example, you set up an Ubuntu VM, and created an activity log rule to detect when the VM was deleted.  You've deleted a virtual machine from your resource group. You now need to check if an alert was triggered. 
+In the example, you set up an Ubuntu VM, and created an activity log rule to detect when the VM was deleted.  You've deleted a virtual machine from your resource group. You now need to check if an alert was triggered.
 
 1. Open your email program, you should have received an email from azure-noreply@microsoft.com.
 
