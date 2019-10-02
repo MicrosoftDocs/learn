@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.07-economics
+uid: learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.07-economics
 title: Cloud use cases
 metadata:
   title: Economics of the cloud
@@ -9,7 +9,6 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/07-economics.md)]

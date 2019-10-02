@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.lp01-m01-provision-manage.1-cloud-services
+uid: learn.cmu-cloud-admin.provision-manage.1-cloud-services
 title: Cloud Services
 metadata:
   title: Cloud Services
@@ -9,7 +9,6 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 13
 content: |
   [!include[](includes/1-cloud-services.md)]

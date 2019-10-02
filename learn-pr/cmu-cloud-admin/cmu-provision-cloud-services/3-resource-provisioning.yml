@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.lp01-m01-provision-manage.3-resource-provisioning
+uid: learn.cmu-cloud-admin.provision-manage.3-resource-provisioning
 title: Resource Provisioning
 metadata:
   title: Resource Provisioning
@@ -9,7 +9,6 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
   [!include[](includes/3-resource-provisioning.md)]

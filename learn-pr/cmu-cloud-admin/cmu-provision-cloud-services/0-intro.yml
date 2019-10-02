@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.00-intro
+uid: learn.cmu-cloud-admin.provision-manage.0-intro
 title: Introduction
 metadata:
   title: Introduction
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/00-intro.md)]
+  [!include[](includes/0-intro.md)]

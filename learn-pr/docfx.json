@@ -37,12 +37,15 @@
                 "dest": "modules"
             },
             {
-                "src": "cmu-test",
+                "src": "cmu-cloud-admin",
                 "files": [
-                    "**/*.yml"
+                    "**/*.yml",
+                    "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },

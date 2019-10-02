@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.lp01-m01-provision-manage.4-resource-organization
+uid: learn.cmu-cloud-admin.provision-manage.4-resource-organization
 title: Resource Organization
 metadata:
   title: Resource Organization
@@ -9,7 +9,6 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 9
 content: |
   [!include[](includes/4-resource-organization.md)]

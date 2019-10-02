@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.lp01-m01-provision-manage.2-cloud-middleware
+uid: learn.cmu-cloud-admin.provision-manage.2-cloud-middleware
 title: Cloud Middleware
 metadata:
   title: Cloud Middleware
@@ -9,7 +9,6 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
   [!include[](includes/2-cloud-middleware.md)]

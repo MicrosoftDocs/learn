@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.06-cloud-providers
+uid: learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.06-cloud-providers
 title: Major cloud providers
 metadata:
   title: Major cloud providers
@@ -9,7 +9,6 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 12
 content: |
   [!include[](includes/06-cloud-providers.md)]
