@@ -8,7 +8,7 @@ To fully test our one refrigerated truck device, it helps to break down the test
 
 In addition to this list, there are edge-cases we could also investigate, such as what happens when the truck's contents start to melt. However, as we have left this state up to chance in our simulation (note the use of random numbers in our code in the previous unit) we can perhaps leave this check out of our first round of testing.
 
-To begin the testing, make sure the IoT Central app is up and running, and run the Node.js app (**Debug/Start without Debugging** from Visual Studio, or enter `node app.js` into a terminal in Visual Studio Code). A console screen should open, with the text: **Starting Truck number 1**.
+To begin the testing, make sure the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) app is up and running, and run the Node.js app (**Debug/Start without Debugging** from Visual Studio, or enter `node app.js` into a terminal in Visual Studio Code). A console screen should open, with the text: **Starting Truck number 1**.
 
 ### 1. The Node.js app connects to Azure IoT Central
 
@@ -25,9 +25,9 @@ To begin the testing, make sure the IoT Central app is up and running, and run t
 
 1. Verify approximately that the temperatures being sent by the Node.js app, in the console window, match the data being shown in the telemetry view of the IoT Central app.
 
-    | Node.js        | IoT Central           |
-    | ------------- |:-------------:|
-    | ![Screenshot showing the console output from the Node.js app, showing the truck contents temperatures](../media/refrigerated-trucks-console.png)      | ![Screenshot showing the chart view in IoT Central, receiving the truck temperatures](../media/refrigerated-trucks-central.png) |
+    | Node.js | IoT Central |
+    | --- | --- |
+    | ![Screenshot showing the console output from the Node.js app, showing the truck contents temperatures](../media/refrigerated-trucks-console.png) | ![Screenshot showing the chart view in IoT Central, receiving the truck temperatures](../media/refrigerated-trucks-central.png) |
 
 1. Hover the mouse over the states in the IoT Central app, in the charts view, just to verify the truck and its contents are in the expected state.
 
@@ -56,6 +56,7 @@ To begin the testing, make sure the IoT Central app is up and running, and run t
 1. Go to the table view for the device. Change the time range to the past hour. Click on **Show details** for any event that appears. There should be informational events showing the change of customer ID.
 
 1. To test a conflict event, send a returning truck a command to deliver to another customer, or any other command that you know doesn't make sense.
+
   > [!TIP]
   > To better see where a truck is at any one moment, change the **Location** settings to show **Latest**. For the full route, choose **History**.
   >

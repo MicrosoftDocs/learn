@@ -5,13 +5,14 @@ In this unit, we will create a device template for a refrigerated truck. The IoT
 
 ## Create a device template
 
-1. Select **Device Templates** from the menu on the left-hand side.
+1. Within the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) portal, select **Device Templates** from the menu on the left-hand side.
 
 1. On the right-hand side of the screen, click **+ New** to create a new template.
 
 1. You will next see a range  of **New Template** options, select **Custom**.
-   > [!TIP]
-   > Take note of the other options, **MXChip**, **Raspberry Pi**, and so on, just in case you need them in a future project!
+
+    > [!TIP]
+    > Take note of the other options, **MXChip**, **Raspberry Pi**, and so on, just in case you need them in a future project!
 
 1. Enter the name for your template: "RefrigeratedTruck", then click **Create**.
 
@@ -19,9 +20,9 @@ In this unit, we will create a device template for a refrigerated truck. The IoT
 
 1. You should now see a template **RefrigeratedTruck (1.0.0)**, and see that a template can consist of **Measurements**, **Settings**, **Properties**, **Commands**, **Rules**, and a **Dashboard**. Our refrigerated truck will need entries under most of these headings.
 
-  > [!NOTE]
-  > We are creating this template with all we need for the units that follow this one. If the purpose of these entries is not immediately obvious, it should become clear as you work through this set of units. It is possible to complete a template, then come back to it and add more entries later, but this can involve managing multiple _versions_ of a template, which is a small complexity, but one we will avoid in this Learn module.
-  > In the sections that follow, if an entry in the IoT Central portal is not mentioned in the text, it is safe to leave it at its default setting.
+    > [!NOTE]
+    > We are creating this template with all we need for the units that follow this one. If the purpose of these entries is not immediately obvious, it should become clear as you work through this set of units. It is possible to complete a template, then come back to it and add more entries later, but this can involve managing multiple _versions_ of a template, which is a small complexity, but one we will avoid in this Learn module.
+    > In the sections that follow, if an entry in the IoT Central portal is not mentioned in the text, it is safe to leave it at its default setting.
 
 ## Measurements
 
@@ -37,8 +38,8 @@ Notice that minimum and maximum values are specified for a telemetry entry, thes
 
     ![Screenshot showing how to create temperature telemetry for the simulated device](../media/refrigerated-trucks-temperature.png)
 
-    | Entry summary        | Value          |
-    | ------------ |-------------|
+    | Entry summary | Value |
+    | --- | --- |
     | Display Name | Contents temperature |
     | Field Name | temperature |
     | Units | degC |
@@ -60,8 +61,8 @@ States are important, they let the operator know what is going on. A state in Io
 
     ![Screenshot showing how to create contents state for the simulated device](../media/refrigerated-trucks-contents.png)
 
-    | Entry summary        | Value          |
-    | ------------ |-------------|
+    | Entry summary | Value |
+    | --- | --- |
     | Display Name | Contents state |
     | Field Name | stateContents |
     | Values | empty, full, melting |
@@ -70,8 +71,8 @@ States are important, they let the operator know what is going on. A state in Io
 
     ![Screenshot showing how to create cooling system state for the simulated device](../media/refrigerated-trucks-cooling.png)
 
-    | Entry summary        | Value          |
-    | ------------ |-------------|
+    | Entry summary | Value |
+    | --- | --- |
     | Display Name | Cooling system |
     | Field Name | stateCoolingSystem |
     | Values | failed, on, off |
@@ -80,8 +81,8 @@ States are important, they let the operator know what is going on. A state in Io
 
     ![Screenshot showing how to create truck state for the simulated device](../media/refrigerated-trucks-state.png)
 
-    | Entry summary        | Value          |
-    | ------------ |-------------|
+    | Entry summary | Value |
+    | --- | --- |
     | Display Name | Truck state |
     | Field Name | stateTruck |
     | Values | ready, enroute, delivering, returning, loading, dumping |
@@ -96,8 +97,8 @@ One possible event a device might trigger is a conflicting command. An example m
 
     ![Screenshot showing how to create a conflict event for the simulated device](../media/refrigerated-trucks-conflict.png)
 
-    | Entry summary        | Value          |
-    | ------------ |-------------|
+    | Entry summary | Value |
+    | --- | --- |
     | Display Name | Command conflict |
     | Field Name | eventConflict |
     | Default Severity | Warning |
@@ -108,8 +109,8 @@ One possible event a device might trigger is a conflicting command. An example m
 
     ![Screenshot showing how to create a customer changed event for the simulated device](../media/refrigerated-trucks-customer.png)
 
-    | Entry summary        | Value          |
-    | ------------ |-------------|
+    | Entry summary | Value |
+    | --- | --- |
     | Display Name | Customer change |
     | Field Name | eventCustomer|
     | Default Severity | Information |
@@ -125,8 +126,8 @@ A location is probably the most important, and yet one of the easiest measuremen
 
     ![Screenshot showing how to create a truck location for the simulated device](../media/refrigerated-trucks-location.png)
 
-    | Entry summary        | Value          |
-    | ------------ |-------------|
+    | Entry summary | Value |
+    | --- | --- |
     | Display Name | Location |
     | Field Name | location |
 
@@ -144,8 +145,8 @@ A setting is a single value. If more complex sets of data need to be transmitted
 
     ![Screenshot showing how to create an optimal temperature setting for the simulated device](../media/refrigerated-trucks-optimal.png)
 
-    | Entry summary        | Value          |
-    | ------------ |-------------|
+    | Entry summary | Value |
+    | --- | --- |
     | Display Name | Optimal temperature |
     | Field Name | optimalTemperature |
     | Unit of Measure | degC |
@@ -164,8 +165,8 @@ Properties of a device are typically constant values, that are communicated to t
 
     ![Screenshot showing how to create a truck ID property for the simulated device](../media/refrigerated-trucks-id.png)
 
-    | Entry summary        | Value          |
-    | ------------ |-------------|
+    | Entry summary | Value |
+    | --- | --- |
     | Display Name | Truck ID |
     | Field Name | truckId |
 
@@ -183,8 +184,8 @@ For refrigerated trucks, there are two commands we should add: a command to deli
 
     ![Screenshot showing how to create a go to customer command for the simulated device](../media/refrigerated-trucks-goto.png)
 
-    | Entry summary        | Value          |
-    | ------------ |-------------|
+    | Entry summary | Value |
+    | --- | --- |
     | Display Name | Go to customer |
     | Field Name | cmdGoTo |
     | Input Fields Display Name | Customer ID |
