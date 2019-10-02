@@ -1,16 +1,16 @@
 ### YamlMime:Module
 #LP name: Introduction to the Cloud with Carnegie Mellon
-uid: learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview
+uid: learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview
 metadata:
-  title: Foundations of Cloud Computing for Administrators 
-  description: Foundations of Cloud Computing for Administrators
+  title: Foundations of cloud computing for administrators
+  description: Discover the cloud, how it works, and why it matters to you, with Carnegie Mellon's online Cloud Administration course content.
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   showCreativeCommonsFooter: true
-title: Foundations of Cloud Computing for Administrators
+title: Foundations of cloud computing for administrators
 summary: Discover the cloud, how it works, and why it matters to you, with Carnegie Mellon's online Cloud Administration course content.
 abstract: | 
   In this module you will:
@@ -36,17 +36,17 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.00-intro
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.01-define-cloud-computing
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.02-before-the-cloud
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.03-evolution
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.04-building-blocks
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.05-cloud-types
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.06-cloud-providers
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.07-economics
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.08-pros-cons
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.09-sla
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.10-use-cases
-- learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.11-summary
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.00-intro
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.01-define-cloud-computing
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.02-before-the-cloud
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.03-evolution
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.04-building-blocks
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.05-cloud-types
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.06-cloud-providers
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.07-economics
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.08-pros-cons
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.09-sla
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.10-use-cases
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.11-summary
 badge:
-  uid: learn.cmu-cloud-admin.lp1-overview-of-the-cloud.cmu-cloud-admin-overview.badge
+  uid: learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.badge
