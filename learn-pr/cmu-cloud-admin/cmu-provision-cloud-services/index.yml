@@ -1,16 +1,16 @@
 ### YamlMime:Module
 #LP name: Introduction to the Cloud with Carnegie Mellon
-uid: learn.cmu-cloud-admin.lp01-m01-provision-manage
+uid: learn.cmu-cloud-admin.cloud-admin-provision-manage
 metadata:
-  title: Provision and Manage Cloud Services
-  description: Provisioning and Managing Cloud Services
+  title: Provision and manage cloud services
+  description: Discover the cloud, how it works, and why it matters to you, with Carnegie Mellon's online Cloud Administration course content. 
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   showCreativeCommonsFooter: true
-title: Provision and Manage Cloud Services
+title: Provision and manage cloud services
 summary: Discover the cloud, how it works, and why it matters to you, with Carnegie Mellon's online Cloud Administration course content. 
 abstract: | 
   In this module you will:
@@ -27,7 +27,7 @@ prerequisites: |
   - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
   - Understand the economic benefits of the cloud for cloud users and cloud service providers
   - Know the terms SLA and SLO 
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/cloud-admin-provision-manage.svg
 levels:
 - beginner
 roles:
@@ -35,13 +35,13 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-cloud-admin.lp01-m01-provision-manage.0-intro
-- learn.cmu-cloud-admin.lp01-m01-provision-manage.1-cloud-services
-- learn.cmu-cloud-admin.lp01-m01-provision-manage.2-cloud-middleware
-- learn.cmu-cloud-admin.lp01-m01-provision-manage.3-resource-provisioning
-- learn.cmu-cloud-admin.lp01-m01-provision-manage.4-resource-organization
-- learn.cmu-cloud-admin.lp01-m01-provision-manage.5-metering-monitoring
-- learn.cmu-cloud-admin.lp01-m01-provision-manage.6-summary
+- learn.cmu-cloud-admin.provision-manage.0-intro
+- learn.cmu-cloud-admin.provision-manage.1-cloud-services
+- learn.cmu-cloud-admin.provision-manage.2-cloud-middleware
+- learn.cmu-cloud-admin.provision-manage.3-resource-provisioning
+- learn.cmu-cloud-admin.provision-manage.4-resource-organization
+- learn.cmu-cloud-admin.provision-manage.5-metering-monitoring
+- learn.cmu-cloud-admin.provision-manage.6-summary
 
 badge:
-  uid: learn.cmu-cloud-admin.lp01-m01-provision-manage.badge
+  uid: learn.cmu-cloud-admin.cloud-admin-provision-manage.badge
