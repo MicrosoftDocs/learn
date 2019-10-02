@@ -1,4 +1,4 @@
-As an Azure solution architect, you realize that, by using metric, log, and activity log alerts, Azure Monitor will generate a large number of alerts. It can be hard to see the difference between your critical and nonessential issues. You want to explore the options available in Azure Monitor. Is there a mechanism that might reduce the alert noise and make the task of managing alerts easier?
+In a large environment, Azure Monitor can generate a large number of alerts. It can be hard to see the difference between your critical and nonessential issues. You want to explore the options available in Azure Monitor. Is there a mechanism that might reduce the alert noise and make the task of managing alerts easier?
 
 In this unit, you'll investigate how to use smart groups, and see how they can help you manage alerts in Azure Monitor.
 
@@ -10,26 +10,19 @@ The name of the smart group, its taxonomy, is assigned automatically and is the 
 
 ## When to use smart groups
 
-Think of smart groups as a dynamic filter applied to all the alerts in Azure Monitor. Azure Monitor's machine learning algorithm groups together alerts based on information such as historical patterns, similar properties, or structure. 
-
-Using smart groups can reduce alert noise by more than 90%.
-Presently, smart groups only apply to alerts from the same monitoring service within a subscription. 
+Think of smart groups as a dynamic filter applied to all the alerts in Azure Monitor. Azure Monitor's machine learning algorithm groups together alerts based on information such as historical patterns, similar properties, or structure. Using smart groups can reduce alert noise by more than 90%.
 
 The power of smart groups is that they show you all related alerts, giving improved analytics, and can often identify a previously unseen root cause.
 
 ## Managing smart groups
 
-There are two ways to get to your smart groups, either through the **Alert Summary Page**
+There are two ways to get to your smart groups, either through the **Alert Summary Page** or from the **All Alerts** page, then select **Alerts by Smart Group**.
 
 ![Screenshot highlighting how to access smart groups through the alert summary page](../media/8-smart-group-alerts-summary.jpg)
 
-or from the **All Alerts** page, then select **Alerts by Smart Group**. 
-
 ![Screenshot highlighting how to access smart groups through the all alerts page](../media/8-smart-group-all-alerts.jpg)
 
-Either method results in a new page that displays all the smart groups. You can now resolve a smart group.
-
-Selecting a smart group opens the details page, which splits into two sections:
+Either method results in a new page that displays all the smart groups. Selecting a smart group opens the details page, which splits into two sections:
 
 - **Alerts**: lists all the alerts included in the smart group.
 - **History**: provides a history of all the changes made to the smart group.

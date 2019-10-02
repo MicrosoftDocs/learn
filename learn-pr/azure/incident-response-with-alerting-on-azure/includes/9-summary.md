@@ -1,4 +1,4 @@
-In this module, you learned how Azure Monitor alerts and notifications help you manage your systems and environment. You explored three different types of alerting: metric, log, and activity log. 
+In this module, you learned how Azure Monitor alerts and notifications help you manage your systems and environment. You explored three different types of alerting: metric, log, and activity log.
 
 You learned how metric alerting enables time-series evaluations, which trigger an action group when the alert is fired.
 
