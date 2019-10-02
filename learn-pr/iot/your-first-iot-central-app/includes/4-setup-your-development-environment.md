@@ -27,10 +27,12 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
 1. Navigate to `https://shell.azure.com/`. Perhaps save this URL as a favorite bookmark.
 
 1. In the Azure Cloud Shell, create a refrigerated-truck folder, and navigate to it:
+
     ``` Azure Cloud Shell
     mkdir ~/refrigerated-truck
     cd ~/refrigerated-truck
     ```
+
 1. Install the Device Provisioning System (DPS) key generator (_dps-keygen_), in the refrigerated-truck folder:
 
     ``` Azure Cloud Shell
@@ -42,6 +44,7 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
     ``` Azure Cloud Shell
     wget https://github.com/Azure/dps-keygen/blob/ota/bin/linux/dps_cstr?raw=true -O dps_cstr
     ```
+
     > [!NOTE]
     > You may have noticed in the above URL that we are downloading the Linux version of dps-cstr. This is needed to run in Azure Cloud Shell.
 
