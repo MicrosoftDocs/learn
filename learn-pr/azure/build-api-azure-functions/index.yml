@@ -1,0 +1,29 @@
+### YamlMime:Module
+uid: learn.azure.build-api-azure-functions
+metadata:
+  title: TODO Build APIs with Azure Functions
+  description: TODO Build APIs with Azure Functions
+  ms.date: 10/02/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: TODO Build APIs with Azure Functions
+summary: TODO Build APIs with Azure Functions
+abstract: TODO Build APIs with Azure Functions
+prerequisites: TODO
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-functions
+units:
+- learn.azure.build-api-azure-functions.1-introduction
+- learn.azure.build-api-azure-functions.2-content
+- learn.azure.build-api-azure-functions.3-exercise
+- learn.azure.build-api-azure-functions.4-summary
+badge:
+  uid: learn.azure.build-api-azure-functions.badge
