@@ -72,6 +72,19 @@
                 "dest": "modules"
             },
             {
+                "src": "cmu-cloud-admin",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "data-ai-cert",
                 "files": [
                     "**/*.yml",
