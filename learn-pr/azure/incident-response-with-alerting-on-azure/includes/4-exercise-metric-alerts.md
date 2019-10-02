@@ -1,8 +1,6 @@
 The shipping company that you work for would like to avoid any future issues with updates to its applications on the Azure platform. To improve the alerting capabilities within Azure, you've chosen to use Azure metric alerting.
 
-Your goal is to create the Linux VM, set it to 100% CPU utilization, then sign in to the Azure portal sandbox and create a metric monitoring rule.
-
-You'll use the Azure Cloud Shell to execute commands quickly in Azure without needing the Azure portal. In this exercise, you'll use Cloud Shell to prepare the environment before using the Azure portal to set up the monitoring.
+In this exercise you will create a Linux VM. This VM will run an application that will run the CPU at 100% utilization. You'll create monitoring rules in the Azure portal and the Azure CLI to alert you on high CPU usage.
 
 ## Create the VM
 
