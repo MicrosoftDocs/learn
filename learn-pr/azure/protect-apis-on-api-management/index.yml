@@ -23,7 +23,6 @@ levels:
 - beginner
 roles:
 - developer
-- security-engineer
 products:
 - azure
 - azure-api-management
