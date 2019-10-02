@@ -107,7 +107,7 @@ Identify the subtasks of *module title*
     Cover the following points:
 
     - Summarize the purpose of the `@azure/cosmos` module.
-    - Explain how to install the module using npm; `npm install @azure/cosmos --save`
+    - Explain how to install the module using npm; `npm init -y; npm install @azure/cosmos`
     - Explain how to connect to a Cosmos DB account from JavaScript. (`CosmosClient` with the endpoint and primary key)
     - Describe how to create a document and add it to a collection (`await client.database(databaseId).container(containerId).items.upsert(itemBody);`)
     - Describe how to fetch a single document from a collection by using the document ID.
