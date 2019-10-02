@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-node-cosmos-app-vscode.3-exercise
+title: Exercise
+metadata:
+  title: Exercise
+  description: Exercise
+  ms.date: 10/02/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/3-exercise.md)]

@@ -1,0 +1,28 @@
+### YamlMime:Module
+uid: learn.azure.build-node-cosmos-app-vscode
+metadata:
+  title: TODO - Learn
+  description: TODO
+  ms.date: 10/02/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: TODO
+summary: TODO
+abstract: TODO
+prerequisites: TODO
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.azure.build-node-cosmos-app-vscode.1-introduction
+- learn.azure.build-node-cosmos-app-vscode.2-content
+- learn.azure.build-node-cosmos-app-vscode.3-exercise
+- learn.azure.build-node-cosmos-app-vscode.4-summary
+badge:
+  uid: learn.azure.build-node-cosmos-app-vscode.badge
