@@ -1,6 +1,6 @@
 In the previous unit, we discussed how you might go about setting up and configuring the widewworldimports.com domain to point to your Azure hosting on Azure DNS.
 
-In this unit, you will:
+In this unit, you'll:
 
 - Set up an Azure DNS and create a public DNS zone
 - Create an A Record

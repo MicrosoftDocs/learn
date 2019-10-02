@@ -3,9 +3,10 @@ The deployment of your new website has been a huge success. Usage volumes are mu
 You now know you can use an Azure alias record to provide a dynamic, auto refreshing, link between the zone apex and the load balancer.
 
 In this unit, you'll:
-- set up a VNET with two VMs and a load balancer.
-- learn how to configure an Azure alias at the zone apex to direct to the load balancer.
-- verify the domain name resolves to one or either of the VMs on your VNET
+
+- Set up a VNET with two VMs and a load balancer.
+- Learn how to configure an Azure alias at the zone apex to direct to the load balancer.
+- Verify the domain name resolves to one or either of the VMs on your VNET
 
 ## Set up a VNET, Load balancer, and VMs in Azure
 
@@ -39,24 +40,28 @@ Manually creating a VNET, load balancer, and two VMs will take some time. To imp
 
 ## Create an alias record in your zone apex
 
-Now that you have created a suitable test environment, you are ready to set up the Azure alias record in your zone apex.
+Now that you've created a suitable test environment, you're ready to set up the Azure alias record in your zone apex.
 
-1. On the Azure portal, navigate the <rgn>[Sandbox resource group]</rgn> resource group.
+1. On the Azure portal, navigate the <rgn>[Sandbox resource group.
 1. From the list of resources available in this resource group, select **myPublicIP**.
 1. Find and make a note of the IP address.
    ![Image showing where the public IP address is in the myPublicIP resource](../media/6-publicIpaddress.png)
 1. Return to the resource groups list and select **myResourceGroup**.
 1. Select the **wideworldimports.com** DNS zone.
 1. Select **+ Record set**.
-1. Use the following settings to create an alias record:
+1. Use the following settings to create an alias record.
 
-    ![Image showing the DNS zone with an alias record created](../media/6-aliasrecord03.png)
+    | Field | Setting |
+    | ---- | ---- |
+    | Name | Leave the name blank. By leaving it blank, it indicates the DNS zone for wideworldimports.com |
+    | Type | **A**. Even though we're creating an alias, the base record type still needs to either: A, AAAA or CNAME |
+    | Alias record set | **Yes** |
+    | Alias type | You can select either Azure resource or Zone record set. In this case, select the **Azure resource** |
+    | Azure Resource | From the drop-down list of resource, select the **myPublicIP** resource |
 
-    - **Name** - Leave the name blank. By leaving it blank, this represents the DNS zone for wideworldimports.com.
-    - **Type** - Select **A**. Even though we are creating an alias, the base record type still needs to either: A, AAAA or CNAME.
-    - **Alias record set** - Select **Yes**.
-    - **Alias type** - You can select either Azure resource or Zone record set. In this case, select the **Azure resource**.
-    - **Azure Resource** - From the drop-down list of resource, select the **myPublicIP** resource.
+    When you're done, it should look like this.
+
+    ![Image showing the DNS zone with an alias record created](../media/6-aliasrecord-azurelb.png)
 
 1. Select **OK** to add the record to your zone.
 
@@ -66,10 +71,10 @@ When the new alias record is created, it should look something like this:
 
 ## Verify alias is resolving to the load balancer
 
-Now you need to verify the alias record has been correctly set up.  In a real world scenario, you will have an actual domain and you would have completed the domain delegation to the Azure DNS.  In that instance, you would use the registered domain name.  Since this unit assumes there is no registered domain, you will use the public IP address:
+Now you need to verify the alias record has been correctly set up.  In a real world scenario, you'll have an actual domain and you would have completed the domain delegation to the Azure DNS.  In that instance, you would use the registered domain name.  Since this unit assumes there's no registered domain, you'll use the public IP address:
 
 1. In a web browser, open a new page.
 1. In the URL address line, type in the public IP address you copied above.
-1. You will now see a basic web page, showing the name of the first VM the load balancer sends the request to.
+1. You'll now see a basic web page, showing the name of the first VM the load balancer sends the request to.
 
 The aim of this test is to check that the alias record is correctly pointing to the load balancer.
