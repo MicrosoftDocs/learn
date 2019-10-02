@@ -38,6 +38,7 @@ Azure DevOps enables you to build upon your investment with other CI/CD tools. L
 
 These resources provide more information on some of the topics that are covered in this module.
 
+* [When should you right click publish](https://devblogs.microsoft.com/aspnet/when-should-you-right-click-publish?azure-portal=true)
 * [Jobs](https://docs.microsoft.com/azure/devops/pipelines/process/phases?view=azure-devops&tabs=yaml&azure-portal=true)
 * [Deployment jobs](https://docs.microsoft.com/azure/devops/pipelines/process/deployment-jobs?view=azure-devops&azure-portal=true)
 * [Environments](https://docs.microsoft.com/azure/devops/pipelines/process/environments?view=azure-devops&azure-portal=true)

@@ -12,7 +12,7 @@ The Tailspin team is feeling good. Their pipeline has really sped up their proce
 
 A deployment pattern is an automated way to do the cut-over, where we move the software from the final testing stage to live production. Picking the right pattern definitely addresses your problems, like minimizing down time. Another advantage is that a deployment pattern would give us a chance to run tests that should really happen in production.
 
-Here are the possibilities that Azure DevOps gives us:
+Here are the possibilities for us to consider:
 
 *Andy starts writing on the white board.*
 
@@ -27,7 +27,7 @@ Let's briefly discuss each one.
 
 ## Blue-green deployments
 
-A _blue-green deployment_ reduces risk and downtime by running two identical environments. These environments are called blue and green. At any time, only one of the environments is live. A blue-green deployment typically involves a router or load balancer that helps us control the flow of traffic.
+A _blue-green deployment_ reduces risk and downtime by running two identical environments. These environments are called *blue* and *green*. At any time, only one of the environments is live. A blue-green deployment typically involves a router or load balancer that helps us control the flow of traffic.
 
 ![Diagram of a load balancer distributing traffic in a blue-green deployment](../media/2-blue-green-deployment.png)
 

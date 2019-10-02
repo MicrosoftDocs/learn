@@ -14,7 +14,7 @@ Andy and Mara are sitting in a conference room, ready to get started.
 
 ## What makes up a basic CD pipeline?
 
-A basic CD pipeline contains a _trigger_ to get the process going and at least one _stage_, or deployment phase. A stage is made up of tasks.
+A basic CD pipeline contains a _trigger_ to get the process going and at least one _stage_, or deployment phase. A stage is made up of jobs. A job is a series of steps that defines how to build, test, or deploy your software.
 
 Let's follow along with Andy and Mara as they plan their POC.
 
@@ -26,7 +26,7 @@ Andy draws a diagram on the whiteboard.
 
 **Andy:** We already have the ![Callout 1](../../shared/media/callout-01.png) build artifact: the _zip_ file that's produced by our existing build pipeline. But how do we deploy it to some ![Callout 2](../../shared/media/callout-02.png) live environment?
 
-**Mara:** In the CD pipelines I've worked with, we used stages to define each phase of the deployment process, such as building the artifact, and deploying the artifact to the various testing and production environments. Each stage breaks down into tasks, just like the ones we use in our existing build pipeline.
+**Mara:** In the CD pipelines I've worked with, we used stages to define each phase of the deployment process, such as building the artifact, and deploying the artifact to the various testing and production environments. Each stage breaks down into one or more jobs; each job breaks down into tasks, just like the ones we use in our existing build pipeline.
 
 ## What is a pipeline stage?
 
@@ -170,7 +170,7 @@ Here's an example configuration that you'll run later in this module. This confi
 
 #### Jobs
 
-A _job_ is a series of steps that run sequentially as a unit. Every pipeline stage has one job by default even when that stage does not use the `job` keyword.
+A _job_ is a series of steps, of tasks, that run sequentially as a unit. Every pipeline stage has one job by default even when that stage does not use the `job` keyword.
 
 A job can run in an agent pool, on a container, or directly on the Azure DevOps server. The example job shown here runs on a Microsoft-hosted Ubuntu agent.
 
