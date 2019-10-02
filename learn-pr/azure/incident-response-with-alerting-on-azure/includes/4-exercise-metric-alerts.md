@@ -9,7 +9,7 @@ This VM will run a specific configuration that stresses the CPU and generates th
 1. Let's start by creating the configuration script. Run this command in the Cloud Shell to create the `cloud-init.txt` file with the configuration for the virtual machine.
 
     ```bash
-    cat <<EOF > cloud-init.txt 
+    cat <<EOF > cloud-init.txt
     #cloud-config
     package_upgrade: true
     packages:
