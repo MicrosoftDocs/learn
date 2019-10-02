@@ -3,7 +3,7 @@ uid: learn.azure-security.configure-and-manage-azure-key-vault
 metadata:
   title: Configure and manage secrets in Azure Key Vault
   description: Configure and manage secrets in Azure Key Vault
-  ms.date: 09/1/2019
+  ms.date: 09/30/2019
   author: markjulmar
   ms.author: smmark
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Explore certificate management with Azure Key Vault
   - Configure a Hardware Security Module Key-generation solution
 prerequisites: None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/configure-and-manage-azure-key-vault.svg
 levels:
 - beginner
 roles:

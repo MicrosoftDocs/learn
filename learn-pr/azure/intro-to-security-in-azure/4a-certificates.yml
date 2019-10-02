@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-to-security.certificates
-title: Overview of Azure Certificates
+title: Overview of Azure certificates
 metadata:
-  title: Overview of Azure Certificates
+  title: Overview of Azure certificates
   description: In this unit, we'll discuss how Azure uses digital certificates for authentication and data protection.
   ms.date: 09/1/2019
   author: markjulmar

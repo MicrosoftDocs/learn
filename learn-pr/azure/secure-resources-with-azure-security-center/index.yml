@@ -38,4 +38,4 @@ units:
 - learn.azure-security.secure-resources-with-azure-security-center.configure-a-playbook
 - learn.azure-security.secure-resources-with-azure-security-center.summary
 badge:
-  uid: learn.azure-security.configure-security-policies-using-azure-security-center.badge
+  uid: learn.azure-security.secure-resources-with-azure-security-center.badge
