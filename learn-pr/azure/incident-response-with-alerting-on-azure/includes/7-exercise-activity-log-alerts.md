@@ -9,13 +9,11 @@ Your goal is to set up the Linux VM and create an activity log monitoring rule t
 1. Select the **+ New alert rule**.
 1. From the **Resource** section, choose **Select**.
 
-    ![Image showing the create rule page](../media/7-select-all-vms.png)
-
     You can either select a specific virtual machine to monitor or select the resource group, which will monitor all virtual machines.  In this exercise, you'll select the latter.  When selecting a resource group, all the virtual machines in the group are also selected.
 
-1. You'll need to configure the signal logic for this alert.  The signal type varies, depending on the type of resource selected.
+    ![Image showing the create rule page](../media/7-select-all-vms.png)
 
-    ![Image showing the create rule page](../media/7-conf-signal-logic.png)
+1. You'll need to configure the signal logic for this alert.  The signal type varies, depending on the type of resource selected.
 
     - Signal Type: **Activity Log**
     - Monitor Service: **All**
@@ -23,22 +21,22 @@ Your goal is to set up the Linux VM and create an activity log monitoring rule t
 
     Select **Delete Virtual Machine (virtualMachines)** that is the **Administrative** service.
 
-1. Define the logic test that will be applied to the metric monitoring data.  In the **Condition** section, select **Add**.
+    ![Image showing the create rule page](../media/7-conf-signal-logic.png)
 
-    ![Image showing the metric condition logics settings](../media/7-activity-log-logic.png)
+1. Define the logic test that will be applied to the metric monitoring data.  In the **Condition** section, select **Add**.
 
     - Event Level: **All**
     - Status: **All**
 
     Fill in the details.  When you're done, they should look like this:
 
+    ![Image showing the metric condition logics settings](../media/7-activity-log-logic.png)
+
 ## Add an email alert action
 
 For the previous Azure Monitor alert you didn't add any actions. You just view triggered alerts on the Azure portal. Actions allow you to send emails for notifications, trigger an Azure Function, or call a webhook. You'll now add an email alert when VMs are deleted.
 
 1. Under **ACTIONS** select **Create action group**.
-
-    ![Screenshot showing adding an action group and an email alert](../media/7-email-setup.png)
 
     Enter the following details:
 
@@ -52,15 +50,17 @@ For the previous Azure Monitor alert you didn't add any actions. You just view t
 
     Then select **OK** on the panel.
 
+    ![Screenshot showing adding an action group and an email alert](../media/7-email-setup.png)
+
 1. At the bottom of the **Add action group** pane, select **OK**.
 
 1. Finally, you'll need to give the alert a name and a description.  In the **ALERT DETAILS** section, provide the following information:
 
-    ![Screenshot showing a completed alert details section](../media/7-all-vm-alert-details.png)
-
     - Alert rule name: **VM was deleted**
     - Description: **a VM in your resource group was deleted**
     - Enabled rule upon creation: **Yes**
+
+    ![Screenshot showing a completed alert details section](../media/7-all-vm-alert-details.png)
 
 1. Now that you've defined the rule, select **Create alert rule**. It can take up to five minutes for an activity log alert rule to become active.  In this exercise, if you delete the virtual machine before this time, the alert rule will not trigger.
 
