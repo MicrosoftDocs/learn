@@ -1,4 +1,4 @@
-The shipping company that you work for is keen to avoid any future issues with updates to its applications on the Azure platform. To improve the alerting capabilities within Azure, you'll use activity log alerting. 
+The shipping company that you work for would like to avoid any future issues with updates to its applications on the Azure platform. To improve the alerting capabilities within Azure, you'll use activity log alerting.
 
 Your goal is to set up the Linux VM and create an activity log monitoring rule to detect when a virtual machine is deleted – then delete the VM.
 
@@ -19,7 +19,7 @@ Your goal is to set up the Linux VM and create an activity log monitoring rule t
     - Monitor Service: **All**
     - In the search panel, type **delete**.
 
-    Select **Delete Virtual Machine (virtualMachines)** that is the **Administrative** service.
+    Select **Delete Virtual Machine (virtualMachines)** that has the **MONITOR SERVICE** value of **Administrative**.
 
     ![Image showing the create rule page](../media/7-conf-signal-logic.png)
 
@@ -36,19 +36,18 @@ Your goal is to set up the Linux VM and create an activity log monitoring rule t
 
 For the previous Azure Monitor alert you didn't add any actions. You just view triggered alerts on the Azure portal. Actions allow you to send emails for notifications, trigger an Azure Function, or call a webhook. You'll now add an email alert when VMs are deleted.
 
-1. Under **ACTIONS** select **Create action group**.
+1. Under **ACTIONS** select **Create action group**. Enter the following details, then select **OK**.
 
-    Enter the following details:
-
-    - Action group name: **Ops Manager**
-    - Short name: **Ops emails**
-    - Subscription: **Concierge Subscription**
-    - Resource group: **<rgn>[sandbox resource group name]</rgn>**
-    - ACTION NAME: **ops-email**
-    - ACTION TYPE: Email/SMS/Push/Voice
-    - Email: **Your email address**
-
-    Then select **OK** on the panel.
+    | Setting | Value |
+    |---------|---------|
+    | Action group name | **Ops Manager** |
+    | Short name | **Ops emails** |
+    | Subscription | **Concierge Subscription** |
+    | Resource group | **<rgn>[sandbox resource group name]</rgn>** |
+    | ACTION NAME | **ops-email** |
+    | ACTION TYPE | Email/SMS/Push/Voice |
+    | Email | **Your email address** |
+    | | |
 
     ![Screenshot showing adding an action group and an email alert](../media/7-email-setup.png)
 
