@@ -2,8 +2,6 @@ In the Customer Portal scenario, you've decided that you need more detailed info
 
 ## Enable Storage Analytics logging
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 1. In the Azure portal, navigate to the storage account that you created in the previous exercise.
 
 2. In the menu pane, under **Monitoring (classic)**, click **Diagnostic settings (classic)**.
