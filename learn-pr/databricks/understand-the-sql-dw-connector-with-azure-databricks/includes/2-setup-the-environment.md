@@ -10,7 +10,7 @@ Let's start by setting up the environment. Setup includes provisioning a sample 
 
 1. On the **Create SQL Data Warehouse** blade, enter this information in the **Basics** tab:
 
-   - _Subscription_: Select the subscription you're using for this module.
+   - _Subscription_: Select the subscription you're using for this module.  ***The subscription you use will incur charges, this is not a free exercise. Pricing is shown on New Server blade.***
    - _Resource group_: Select the resource group you're using for this module.
    - _Database name_: Enter a unique name. (Make sure you see a green check mark.)
 
@@ -29,9 +29,11 @@ Let's start by setting up the environment. Setup includes provisioning a sample 
        > [!Note]
        > Remember the user name and password for SQL Server. You'll need them.
 
-1. Click **Select Performance level** to open the Configure performance blade and select **Gen2 DW500c**.
+1. Click **Select Performance level** to open the Configure performance blade and select **Gen2 DW100c**.
 1. In the **Additional settings** tab, select **None** under data source.
 1. Select **Review +Create**.
+
+![Select database performance level](../media/select-data-warehouse-server-size.png)
 
 ## Add your client IP address
 

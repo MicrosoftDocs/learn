@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.provision-manage.4-resource-organization
+title: Resource Organization
+metadata:
+  title: Resource Organization
+  description: Resource Organization
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-resource-organization.md)]
+quiz:
+  title: Check your knowledge
+  questions: 
+
+  - content: "Which of the following tasks can't be accomplished by organizing resources into resource groups?"
+    choices:
+    - content: "Aggregate billing information for all the resources"
+      isCorrect: false
+      explanation: "Incorrect. It is common to group resources in order to consolidate charges."
+    - content: "Reduce latency for all of the resources"
+      isCorrect: true
+      explanation: "Correct! Grouping resources does nothing to reduce latency. That's done in other ways, such as provisioning resources in a data center that is geographically close to your customers."
+    - content: "Use permissions to control access to the resources as a group"
+      isCorrect: false
+      explanation: "Incorrect. Most CSPs provide ways to organize resources for the purpose of access control."
+    - content: "Manage the lifetime of the resources as a group"
+      isCorrect: false
+      explanation: "Incorrect. Resources that share similar lifetimes can be grouped together so they can be deleted as a group."
+  
+  - content: "Consider the end-to-end solution diagrammed in Figure 2.1. In that solution, wildlife photos snapped by motion-activated cameras are stored in Azure Blob Storage. Suppose you want to retain those photos even if the solution itself is deleted. Would it make more sense to make the storage resource that holds the photos part of the same resource group as the other resources in the solution, or to make it part of a different resource group?"
+    choices:
+    - content: "Different resource group"
+      isCorrect: true
+      explanation: "Correct! If the storage resource is in a different resource group than the other resources that make up the solution, then you can safely delete the resource group containing the solution. The storage resource won't be deleted."
+    - content: "Same resource group"
+      isCorrect: false
+      explanation: "Incorrect. If the storage resource is in the same resource group as the other resources that make up the solution and the resource group is deleted, the storage resource (and all the photos stored there) will be deleted, too."

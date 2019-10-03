@@ -51,6 +51,14 @@ The following screenshot shows the completed settings for the **Basics** tab. No
 
 ![Screenshot of a Create a storage account pane with the **Basics** tab selected.](../media/5-create-storage-account-basics.png)
 
+### Configure the networking options
+
+1. Click the **Next: Networking >** button to move to the **Networking** tab, or select the **Networking** tab at the top of the screen.
+
+1. Set the **Connectivity method** option to _Public endpoint (all networks)_. This option allows you to isolate the storage account on an Azure virtual network. We want to use public Internet access. Our content is public facing and you need to allow access from public clients.
+
+![Screenshot of a Create a storage account pane with the **Basics** tab selected.](../media/5-create-storage-account-network.png)
+
 ### Configure the advanced options
 
 1. Click the **Next: Advanced >** button to move to the **Advanced** tab, or select the **Advanced** tab at the top of the screen.
@@ -59,8 +67,6 @@ The following screenshot shows the completed settings for the **Basics** tab. No
 
     > [!WARNING]
     > If this option is enabled, it will enforce some additional restrictions. Azure files service connections without encryption will fail, including scenarios using SMB 2.1 or 3.0 on Linux. Because Azure storage doesn’t support SSL for custom domain names, this option cannot be used with a custom domain name.
-
-1. Set the **Virtual networks** option to _All networks_. This option allows you to isolate the storage account on an Azure virtual network. We want to use public Internet access. Our content is public facing and you need to allow access from public clients.
 
 1. Leave the **Blob Soft delete** option set to _Disabled_. Soft delete lets you recover your blob data in many cases where blobs or blob snapshots are deleted accidentally or overwritten.
 

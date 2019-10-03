@@ -13,7 +13,9 @@
                     "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -24,7 +26,9 @@
                     "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -35,7 +39,9 @@
                     "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -46,7 +52,9 @@
                     "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -57,7 +65,22 @@
                     "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "cmu-cloud-admin",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -68,7 +91,9 @@
                     "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -79,7 +104,9 @@
                     "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -90,7 +117,9 @@
                     "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -101,7 +130,9 @@
                     "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -112,7 +143,9 @@
                     "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -123,7 +156,9 @@
                     "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -169,9 +204,7 @@
                     "**/obj/**",
                     "**/includes/**",
                     "_themes/**",
-                    "_themes.pdf/**",
-                    "**/design/**",
-                    "**/resources/**"
+                    "_themes.pdf/**"
                 ]
             }
         ],
@@ -192,16 +225,16 @@
             "sandbox-disabled": {},
             "localization_scopes": {
                 "azure/**/*.yml": [
-                    "de-de", 
-                    "es-es", 
-                    "fr-fr", 
-                    "it-it", 
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
                     "ru-ru",
                     "pt-br",
-                    "ja-jp", 
-                    "ko-kr", 
-                    "zh-cn", 
-                    "zh-tw", 
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
                     "cs-cz",
                     "hu-hu",
                     "nl-nl",
@@ -211,16 +244,16 @@
                     "sv-se"
                 ],
                 "advocates/**/*.yml": [
-                    "de-de", 
-                    "es-es", 
-                    "fr-fr", 
-                    "it-it", 
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
                     "ru-ru",
                     "pt-br",
-                    "ja-jp", 
-                    "ko-kr", 
-                    "zh-cn", 
-                    "zh-tw", 
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
                     "cs-cz",
                     "hu-hu",
                     "nl-nl",
@@ -230,37 +263,37 @@
                     "sv-se"
                 ],
                 "ai-business-school/**/*.yml": [
-                    "de-de", 
-                    "es-es", 
-                    "fr-fr", 
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
                     "pt-br",
-                    "ja-jp",                    
-                    "zh-cn", 
+                    "ja-jp",
+                    "zh-cn",
                     "zh-tw"
                 ],
                 "aspnetcore/**/*.yml": [
-                    "de-de", 
-                    "es-es", 
-                    "fr-fr", 
-                    "it-it", 
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
                     "ru-ru",
                     "pt-br",
-                    "ja-jp", 
-                    "ko-kr", 
-                    "zh-cn", 
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
                     "zh-tw"
                 ],
                 "data-ai-cert/**/*.yml": [
-                    "de-de", 
-                    "es-es", 
-                    "fr-fr", 
-                    "it-it", 
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
                     "ru-ru",
                     "pt-br",
-                    "ja-jp", 
-                    "ko-kr", 
-                    "zh-cn", 
-                    "zh-tw", 
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
                     "cs-cz",
                     "hu-hu",
                     "nl-nl",
@@ -270,16 +303,16 @@
                     "sv-se"
                 ],
                 "databricks/**/*.yml": [
-                    "de-de", 
-                    "es-es", 
-                    "fr-fr", 
-                    "it-it", 
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
                     "ru-ru",
                     "pt-br",
-                    "ja-jp", 
-                    "ko-kr", 
-                    "zh-cn", 
-                    "zh-tw", 
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
                     "cs-cz",
                     "hu-hu",
                     "nl-nl",
@@ -289,16 +322,16 @@
                     "sv-se"
                 ],
                 "student-evangelism/**/*.yml": [
-                    "de-de", 
-                    "es-es", 
-                    "fr-fr", 
-                    "it-it", 
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
                     "ru-ru",
                     "pt-br",
-                    "ja-jp", 
-                    "ko-kr", 
-                    "zh-cn", 
-                    "zh-tw", 
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
                     "cs-cz",
                     "hu-hu",
                     "nl-nl",
@@ -310,7 +343,7 @@
                 "wwl-mba/**/*.yml": [
                     "ja-jp",
                     "ko-kr",
-                    "zh-cn", 
+                    "zh-cn",
                     "zh-tw"
                 ]
             }
