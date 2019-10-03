@@ -6,7 +6,7 @@ In this unit, you'll explore the hub and spoke architecture, the topology, the c
 
 ## Hub and spoke architecture foundations
 
-![A diagram of a hub and spoke with Azure in the center. Representing central resources like AD, surrounded by several VNets in a circle](../media/hub-and-spoke.png)
+![A diagram of a hub and spoke with Azure in the center. Representing central resources like AD, surrounded by several VNets in a circle](../media/2-hub-and-spoke.png)
 
 A hub and spoke consists of a centralized architecture (a hub) connecting to multiple points (spokes). When drawn, it looks similar to a wheel, with a hub at the center and spokes connected to it. This model in Azure organizes your network infrastructure into multiple connected virtual networks (VNets). This architecture provides an efficient way to manage common communication, security requirements, and potential subscription limitations.
 
