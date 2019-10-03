@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.authenticate-browser-based-apps-with-azure-app-services.1-introduction
+uid: learn.languages.csharp-do-while.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction
-  ms.date: 03/27/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  description: An overview of the goals of this module.
+  ms.date: 10/03/2019
+  author: bobtabor-msft
+  ms.author: rtabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 5
+durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

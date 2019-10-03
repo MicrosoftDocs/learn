@@ -289,6 +289,56 @@
       "source_path": "learn-pr/azure/welcome-to-azure/6-scale-up.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/welcome-to-azure/6-exercise-cloud-shell",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-browser-based-apps-with-azure-app-services/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-browser-based-apps-with-azure-app-services/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-browser-based-apps-with-azure-app-services/2-apps-and-authentication.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-browser-based-apps-with-azure-app-services/3-create-web-app.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-browser-based-apps-with-azure-app-services/4-authentication-providers-and-endpoints.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-browser-based-apps-with-azure-app-services/5-enable-app-service-authentication.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-browser-based-apps-with-azure-app-services/6-authentication-tokens.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-browser-based-apps-with-azure-app-services/7-view-authentication-tokens-and-session-cookies.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-browser-based-apps-with-azure-app-services/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-browser-based-apps-with-azure-app-services/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
     }
   ]
 }
