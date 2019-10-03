@@ -27,7 +27,7 @@ quiz:
     - content: You want to be able to cross-query over data collected from multiple sources spanning on-premises and in the cloud.
       isCorrect: false
       explanation: You use Azure Monitor Log Analytics to cross-resource query over data from multiple sources. Use Azure Sentinel to monitor and respond to security threats across your entire enterprise.
-  - content: What do you need to do to complete the creation of an Azure Sentinel resource?
+  - content: How do you set up Azure Sentinel on Azure?
     choices: 
     - content: Create Azure Sentinel, then add Azure Sentinel to a workspace.
       isCorrect: false

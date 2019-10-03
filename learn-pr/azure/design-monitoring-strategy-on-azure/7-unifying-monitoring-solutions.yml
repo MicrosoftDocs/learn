@@ -27,7 +27,7 @@ quiz:
     - content: Use a workspace to write your queries.
       isCorrect: false
       explanation: Workspaces are where your data is stored. Use Log Analytics to write your queries.
-  - content: You need to automatically collect security-related data from all newly created virtual machines. How would you do this?
+  - content: How can you automatically collect security-related data from all newly created virtual machines into one central location?
     choices:
     - content: Use the Log Analytics agent.
       isCorrect: true
@@ -38,14 +38,14 @@ quiz:
     - content: Use a cross-resource-query.
       isCorrect: false
       explanation: Use the Log Analytics agent. You use cross-resource querying to analyze the log data collected from separate workspaces. 
-  - content: You want to analyze both security-related data and application performance data together. How would you do this?
+  - content: How can you analyze both security-related data, and application performance data, together?
     choices:
-    - content: Use Log Analytics agent to query their workspaces together.
+    - content: Use Log Analytics agent to query Azure Security Center and Application Insights workspaces together.
       isCorrect: false
       explanation: Use a cross-resource-query. The agent gathers security-related information from resources into a workspace.
-    - content: Use a cross-query to query their workspaces together.
+    - content: Use a cross-query to query Azure Security Center and Application Insights workspaces together.
       isCorrect: true
       explanation: You use cross-resource querying to analyze the log data collected from separate workspaces. 
-    - content: Use automatic provisioning to query their workspaces together.
+    - content: Use automatic provisioning to query Azure Security Center and Application Insights workspaces together.
       isCorrect: false
       explanation: Automatic provisioning will install the Log Analytics agent on virtual machines. Use cross-resource querying to analyze the log data collected from separate workspaces. 
