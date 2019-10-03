@@ -40,7 +40,7 @@ You create a virtual network with the Azure portal, Azure CLI, Azure PowerShell 
 
 1. Select **Create** to start configuring the Virtual Network.
 
-## Configure the Virtual Network settings
+## Configure the virtual network settings
 
 The resource creation experience on the portal is a wizard that walks you through the initial configuration for the Virtual Network.
 
@@ -59,10 +59,10 @@ The resource creation experience on the portal is a wizard that walks you throug
     |DDoS Protection        | **Basic**        |
     |Service Endpoints      | **Disabled**     |
     |Firewall               | **Disabled**     |
-    
+
 1. Select **Create** to start provisioning the Virtual Network.
 
-## Configure the hub Virtual Network peering
+## Configure the hub virtual network peering
 
 Now you've created the third spoke, you need to configure the Virtual Network peering between the hub and spokes.
 
@@ -109,7 +109,7 @@ You'll create a network security group to configure traffic flow.
 
 You've created an NSG that can be assigned to each of the Virtual Networks – though they aren't associated.
 
-## Associate the NSG to the new HR Virtual Network
+## Associate the NSG to the new HR virtual network
 
 Now you associate the NSG to the Virtual Network.
 
