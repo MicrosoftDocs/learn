@@ -6,7 +6,7 @@ The Tailspin team is starting to feel better about their build process. They've 
 
 Everyone on the team is in the meeting room waiting for Irwin, the product manager, who says he wants to talk to them. They're looking forward to telling him about the progress they've made. But when Irwin walks in, he doesn't look happy. He starts talking right away.
 
-**Irwin:** I had a meeting this morning with the management team. They want to know why we're taking so long to release our games and websites. Our closest competitors get new features and new games out there much faster than we do. We need to speed things up. I'm not just saying this to you. I'm saying it to all the teams. What can we do to help your team deploy faster?
+**Irwin:** I had a meeting this morning with the management team. They want to know why we're taking so long to release our games and websites. Our closest competitors get new features and new games out there much faster than we do. We need to speed things up. I'm not just saying this to you; I'm saying it to all the teams. What can we do to help your team deploy faster?
 
 Irwin looks around. Andy clears his throat.
 
@@ -20,7 +20,7 @@ Irwin looks around. Andy clears his throat.
 
 Mara beings to explain things, but is interrupted when Irwin's cell phone beeps. Irwin reads a text message and mutters under his breath.
 
-**Irwin:** I'm really sorry but this is urgent. I have to go. Why don't you all figure out this CD business and get back to me, soon?
+**Irwin:** I'm sorry but this is urgent. I have to go. Why don't you all figure out this CD business and get back to me, soon?
 
 Andy looks around at his team.
 
@@ -30,7 +30,7 @@ Andy and the rest of the team head to the coffee shop to create a plan.
 
 ## How will the team deploy faster?
 
-The team is having a meeting over coffee. Irwin, the product manager, has told them they need to start releasing new versions of the web site faster and he's left it up to them to figure out how to do it.
+The team is having a meeting over coffee. Irwin, the product manager, has told them that they need to start releasing new versions of the web site faster and he's left it up to them to figure out how to do it.
 
 **Andy:** So, as I told Irwin just before he ran off, I think it's time to build a CD pipeline. Automation is the only way to release faster.
 
@@ -50,7 +50,7 @@ Amita starts crumbling her scone into little pieces.
 
 **Mara:** To me, CD and DevOps are inseparable. Remember that we defined DevOps as the union of people, process, and products to enable continuous delivery of value to our end users.
 
-CD by itself is a set of processes, tools and techniques that makes rapid, reliable and continuous delivery of software possible. So CD isn't only about setting up a pipeline, although that part is important. CD is about setting up a working environment, where:
+CD by itself is a set of processes, tools, and techniques that make rapid, reliable, and continuous delivery of software possible. So CD isn't only about setting up a pipeline, although that part is important. CD is about setting up a working environment, where:
 
 * We have a reliable and repeatable process for releasing and deploying software.
 * We automate as much as possible.
@@ -77,7 +77,7 @@ We need to work together if we're going to succeed. All of us have seen how auto
 
 Amita, I think your life has gotten better since we added tests to the build pipeline. You aren't getting regression bugs. You're also getting automatic updates that tell you when builds are ready.
 
-Tim, I'm going to ask you to be patient. I know you haven't seen a lot of benefit yet, but I promise you, you will. When you're home on the weekends instead of here because we keep crashing your production environment, you'll be happier. Can I ask you both to give CD a chance?
+Tim, I'm going to ask you to be patient. I know you haven't seen much benefit yet, but I promise you, you will. When you're home on the weekends instead of here because we keep crashing your production environment, you'll be happier. Can I ask you both to give CD a chance?
 
 Amita and Tim look at each other and nod.
 
@@ -97,7 +97,7 @@ The team leaves Andy and Mara to work out the details.
 
 Many development tools provide ways to publish your application directly to some target environment, such as IIS or Azure. For example, you can [Publish an ASP.NET Core app to Azure with Visual Studio](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?azure-portal=true). This process is sometimes called "right-click publishing".
 
-Right-click publishing is a great way to quickly build a prototype. For example, you might right-click publish your application to Azure so that you can share a new idea with your team. However, right-click publishing has its limits.
+Right-click publishing is a great way to quickly build a prototype. For example, you might right-click publish your application to Azure so that you can share a new idea with your team. However, this technique has its limits.
 
 Continuous delivery provides a consistent way for you and your team to continuously test, deploy, and monitor your application each time you check in your code. When you right-click publish your application, there's no guarantee whether the code has undergone the proper testing or will perform as expected under real-world usage.
 
@@ -128,11 +128,11 @@ After the meeting ends, Andy and Mara plan next steps. They use Azure Pipelines 
 * Makes it easy to define the deployment tasks we need to perform.
 * Is easy to extend.
 
-**Mara:** Azure DevOps integrates with several other CI/CD solutions. There are a lot of options out there and we don't already have an investment in any of them. If we did, it would make sense to simply use that one. Popular CI/CD systems include Jenkins, Circle CI, GitLab, Travis CI, and Azure Pipelines.
+**Mara:** Azure DevOps integrates with several other CI/CD solutions. There are many options out there and we don't already have an investment in any of them. If we did, it would make sense to simply use that one. Popular CI/CD systems include Jenkins, Circle CI, GitLab, Travis CI, and Azure Pipelines.
 
 These tools have their similarities but each also has its particular strengths. Some of these tools are open source, some are free, and some you have to pay for. They each also provide built-in integrations with other software tools.
 
-For example, Jenkins is open source. It has a lot of plug-ins and many companies use it. You can run Circle CI in the cloud or on premises. I think we would need to customize it. GitLab is a single application for the entire software development lifecycle. It might be bigger than we want right now. Of course, we can keep using Azure Pipelines.
+For example, Jenkins is open source. It has numerous plug-ins and many companies use it. You can run Circle CI in the cloud or on premises. I think we would need to customize it. GitLab is a single application for the entire software development lifecycle. It might be bigger than we want right now. We can keep using Azure Pipelines.
 
 My point is there are many possibilities. Here's a short video where Abel talks about using DevOps best practices to deploy code to Azure.
 
