@@ -33,7 +33,7 @@ For scenarios where you need full container orchestration, including service dis
 
 1. You provide a DNS name to expose your container to the Internet. Your DNS name must be unique. For learning purposes, run this command from Cloud Shell to create a Bash variable that holds a unique name.
 
-    ```bash
+    ```azurecli
     DNS_NAME_LABEL=aci-demo-$RANDOM
     ```
 
