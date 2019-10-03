@@ -1,6 +1,6 @@
 The REST API lets you programmatically manage data export definitions in your IoT Central application.
 
-To simplify the job of a store manager, you've been asked to integrate IoT Central data export definition management capabilities into the existing store management application. Store managers should be able to use the existing store management application to manage data export definitions.
+To simplify the job of a store manager, you've been asked to integrate IoT Central data export definition management capabilities into the existing store management application. Store managers want to use the existing store management application to manage data export definitions.
 
 Here, you'll learn how to use the REST API to create and delete data export definitions.
 

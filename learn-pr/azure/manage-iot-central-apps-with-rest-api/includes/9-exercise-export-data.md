@@ -2,16 +2,13 @@ To manage data export definitions, you use the IoT Central REST API.
 
 You want to enable your existing store management application to manage data export definitions in your IoT Central application programmatically.
 
-In this unit, you create an Azure Storage blob container to use as an export destination. Then you use the IoT Central REST API to set a create a data export definition that sends device telemetry to the blob container for later analysis. Telemetry from the devices you set up previously is sent to the blob container. You view the telemetry data by downloading and viewing the blob container contents.
+In this unit, you create an Azure Storage blob container to use as an export destination. Then you use the IoT Central REST API to create a data export definition that sends device telemetry to the blob container for later analysis. Telemetry from the devices you set up previously is sent to the blob container. You view the telemetry data by downloading and viewing the blob container contents.
 
 ## Prepare the storage container
 
-Before you can configure the data export from IoT Central, you must set up the Azure Storage account and blob container that'll store the exported telemetry. You need a connection string and container name when you set up the data export in IoT Central.
+Before you can configure the data export from IoT Central, you need to set up the Azure Storage account and blob container to store the exported telemetry. You need a connection string and container name when you set up the data export in IoT Central.
 
 Run the following commands to create storage account and container, and retrieve the connection string:
-
-TODO: verify SKU to use, resource group and whether account name must be unique
-TODO: capture connection-string in a variable to use in the next step
 
 ```azurecli
 STORAGE_ACCOUNT="storemanagement${SUFFIX}"
@@ -50,7 +47,7 @@ az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/continuousD
 
 You may need to wait a few minutes for the data export to get started in your IoT Central application before you can see any data.
 
-You can use the following REST API call to check the status of the data exports defined in your application:
+You can use the following REST API call to check the status of the data exports defined in your application. When the status is **running**, the data export is sending telemetry to your blob container:
 
 ```azurecli
 az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/continuousDataExports \
@@ -66,7 +63,7 @@ az storage blob list --container-name=dataexport \
 --query '[].{BlobName:name}' -o table
 ```
 
-You see a blob that contains the device template definitions in the application and a sequence of blobs that contain telemetry. If you re-run the previous command, you see the number of telemetry blobs has increased.
+You see a blob that contains the device template definitions in the application and a sequence of blobs that contain telemetry. If you rerun the previous command, you see the number of telemetry blobs has increased.
 
 Run the following commands to download the first telemetry blob and view its contents:
 

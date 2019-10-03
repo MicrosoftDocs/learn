@@ -30,7 +30,7 @@ az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/stor
 
 ```
 
-The response to this request echos the requested value for the the property to confirm the device received it.
+The response to this request echoes the requested value for the property to confirm the device received it.
 
 ## Send a command
 

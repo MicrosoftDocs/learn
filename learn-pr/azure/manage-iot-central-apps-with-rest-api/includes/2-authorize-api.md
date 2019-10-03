@@ -26,11 +26,11 @@ All three options require you to provide information such as the country or regi
 
 ## What is an application template?
 
-You use an application template to pre-populate your application with dashboards and device templates. In this module you use the **Preview Application** template. This application template enables support for the IoT Central REST API.
+You use an application template to pre-populate your application with dashboards and device templates. In this module, you use the **Preview Application** template. This application template enables support for the IoT Central REST API.
 
 ## How IoT Central authorizes REST API calls
 
-Every REST API call that's made against an IoT Central application must include an **Authorization** header. The **Authorization** header contains an API token, issued by IoT Central, that determines the level of access to be granted to the caller in the application. The access levels map to the standard roles in an IoT Central application:
+Every REST API call that's made against an IoT Central application must include an **Authorization** header. The **Authorization** header must contain an API token that your IoT Central application issued. The API token determines the level of access to be granted to the caller. The access levels map to the standard roles in an IoT Central application:
 
 - **Application administrator** grants access to all API calls
 - **Application builder** grants access to API calls that create, edit, and delete device templates and devices.
@@ -43,7 +43,7 @@ You can generate an IoT Central API token in two ways:
 - In the **Administration** section in your application's web UI.
 - Using the REST API.
 
-In the second case, you must already have an **Application administrator** API token to authorize the call. In other words, you must sign in to IoT Central web UI to get the first **Application administrator** API token, you can then generate additional tokens using the REST API.
+To generate an API token using the REST API, you must already have an **Application administrator** API token to authorize the call. In other words, you must sign in to IoT Central web UI to get the first **Application administrator** API token, you can then generate additional tokens using the REST API.
 
 The IoT Central REST API lets you:
 

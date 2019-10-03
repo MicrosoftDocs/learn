@@ -1,25 +1,25 @@
 The REST API enables you to manage the devices in your IoT Central application programmatically.
 
-To simplify the job of a store manager, you've been asked to integrate IoT Central device management capabilities into the existing store management application. Store managers should be able to manage devices connected your IoT Central application.
+To simplify the job of a store manager, you've been asked to integrate IoT Central device management capabilities into the existing store management application. Store managers want to use the existing store management application to manage devices connected your IoT Central application.
 
 Here, you'll review the types of device and device authentication in an IoT Central application. Then you'll learn how to use the REST API to manage the devices.
 
 ## Devices and device templates
 
-Any device that's connected to and managed by an IoT Central application is associated with a device template in the application. The device template acts as a contract between the IoT Central application and the devices connected to it. The device template also includes information about how IoT Central should display information about the device in the web UI. For example, a device template can include definitions of dashboards to show device telemetry or to  send commands to a device.
+Any device that's connected to and managed by an IoT Central application is associated with a device template in the application. The device template acts as a contract between the IoT Central application and the devices connected to it. The device template also includes information about how IoT Central display's information about the device in the web UI. For example, a device template can include definitions of dashboards to show device telemetry or to send commands to a device.
 
 ## What is a device template?
 
 A device template specifies the capabilities of a device you want to connect to your application. For example, a device template can specify:
 
-- The types of telemetry, such as temperature, that IoT Central expects your device to send.
-- Properties, such as firmware version, that IoT Central expects your device to report.
-- Properties, such as target temperature, that IoT Central expects to be able to set on your device.
-- Commands, such as reboot, that IoT Central expects to be able to send to your device.
+- The types of telemetry, such as temperature, that your device will send to IoT Central.
+- Properties, such as firmware version, that your device will report to IoT Central.
+- Properties, such as target temperature, that IoT Central will set on your device.
+- Commands, such as reboot, that IoT Central will send to your device.
 
 ![Device template](../media/4-device-template.png)
 
-The capabilities in a device template are grouped into interfaces. Interfaces enable groups of related capabilities to be shared across templates. For example, the common *Device Information* interface defines device properties such as the manufacturer, model, and software version.
+The capabilities in a device template are grouped into interfaces. Interfaces enable you to share groups of related capabilities across templates. For example, the common *Device Information* interface defines device properties such as the manufacturer, model, and software version.
 
 ![Device information](../media/4-device-information.png)
 
@@ -27,9 +27,9 @@ You create and manage device templates using the IoT Central web UI. You can eit
 
 ## Publish a device template
 
-Before a real device can connect to your IoT Central application, you must publish the device template within the the IoT Central application. After you publish a device template, you can also create simulated devices from the template.
+Before a real device can connect to your IoT Central application, you must publish the device template within the IoT Central application. After you publish a device template, you can also create simulated devices from the template.
 
-After a device template is published, any significant changes to the device capability model or interface definitions require you to create and publish a new version of the device template.
+After you publish a device template, any significant changes to the device capability model or interface definitions require you to create and publish a new version of the device template.
 
 ## Manage device templates using the REST API
 
@@ -48,7 +48,7 @@ Before you connect a device in the real world to an IoT Central application, you
 - A unique ID within the application
 - A friendly name
 
-Each real device also has it's own security credentials that the device uses to authenticate with the IoT Central application.
+Each real device also has its own security credentials that the device uses to authenticate with the IoT Central application.
 
 IoT Central also has options to bulk add devices or allow devices to self-register with the application. However, a discussion of these options is out of scope for this module.
 

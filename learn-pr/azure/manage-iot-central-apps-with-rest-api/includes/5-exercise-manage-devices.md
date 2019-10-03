@@ -8,7 +8,7 @@ In this unit, you use the IoT Central REST API to add a device template to the a
 
 Typically, the device developer provides you with the device capability model and interface definitions for the device you're using. You can import the definitions manually in the web UI or use the REST API to add the programmatically.
 
-Run the following command in the Cloud Shell to add a store monitor device template in your IoT Central application. The template defines a device that sends temperature and humidity telemetry, has brightness property, and responds to a reboot command:
+Run the following command in the Cloud Shell to add a device template in your IoT Central application. The template defines a store monitoring device that sends temperature and humidity telemetry, has brightness property, and responds to a reboot command:
 
 ```azurecli
 az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/models \

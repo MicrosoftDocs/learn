@@ -1,8 +1,8 @@
-You must create an IoT Central application for your devices to connect to and be managed from.
+Create an IoT Central application for your devices to connect to and be managed from.
 
 You want to create an IoT Central application to test integration with your store management application.
 
-In this unit, you use the Azure CLI to create an IoT Central application from the **Preview application** template. This application template enables the the preview REST API. You run the CLI commands in the Azure sandbox activated for this module and then navigate to the application's web UI to complete the setup by adding a device template.
+In this unit, you use the Azure CLI to create an IoT Central application from the **Preview application** template. This application template enables the preview REST API. You run the CLI commands in the Azure sandbox activated for this module and then navigate to the application's web UI. In the web UI, you complete the setup by generating an API token to use to authorize REST API calls.
 
 ## Install the Azure IoT CLI extension
 
@@ -15,7 +15,7 @@ az extension add --name azure-cli-iot-ext
 
 ## Create and configure the IoT Central application
 
-The following steps create an IoT Central application and import a device template to use later in this module. In this module you use the **MxChip IoT DevKit** as your test device.
+The following steps create an IoT Central application and generate an API token to use later in this module.
 
 1. Run the following commands in the Cloud Shell to generate a unique name for your IoT Central application and save it in an environment variable to use later:
 
@@ -51,7 +51,7 @@ The following steps create an IoT Central application and import a device templa
 
     Expect this command to take a minute or two to run.
 
-1. In another browser tab or window, navigate to URL shown in the output of the last command. This is the page in the web UI where you generate API tokens:
+1. In another browser tab or window, navigate to URL shown in the output of the last command. This page in the web UI is where you generate API tokens:
 
     ![API Tokens](../media/3-tokens.png)
 
@@ -78,4 +78,4 @@ The following steps create an IoT Central application and import a device templa
 
     ```
 
-    The output from the previous command shows the IoT Central applications you have access to in the sandbox environment. In the sandbox environment, you only have access to the IoT Central application you just created.
+    The output from the previous command shows the IoT Central applications you have access to in the sandbox environment. In the sandbox environment, you only have access to the IoT Central application you created. If the previous commands returns an error, check that you've correctly set the **API_TOKEN** environment variable.
