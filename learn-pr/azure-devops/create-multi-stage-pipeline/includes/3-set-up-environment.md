@@ -28,7 +28,7 @@ The modules in this learning path form a progression, where you follow the Tails
 1. Run a template that sets up everything for you in your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator-mslearn.azurewebsites.net/?name=create-multi-stage-pipeline&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=create-multi-stage-pipeline&azure-portal=true)
 
 From the Azure DevOps Demo Generator site, perform these steps to run the template.
 
