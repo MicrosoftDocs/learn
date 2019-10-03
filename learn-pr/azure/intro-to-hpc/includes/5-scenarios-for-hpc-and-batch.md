@@ -40,6 +40,6 @@ This diagram shows a possible architecture that you could use to publish a CAD S
 
 ![Architecture for SaaS CAD](../media/5-architecture-hpc-saas.png)
 
-### Computational fuild dynamics
+### Computational fluid dynamics
 
 Computational fluid dynamics (CFD) use mathematics to model fluid flows, both free-flowing and in interaction with solid surfaces. These simulations are taxing from a compute point of view and provide a good use case for some of the more intricate aspects of the H-Series VMs you saw earlier – such as Infiniband networking capabilities and an ability to interact via MPI.
