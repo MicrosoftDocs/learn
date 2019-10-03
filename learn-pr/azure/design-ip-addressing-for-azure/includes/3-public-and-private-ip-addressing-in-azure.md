@@ -32,15 +32,13 @@ To ensure a static range of public IP addresses, you can create a public IP addr
 
 ## Private IP addresses
 
-Private IP addresses are used for communication within a virtual network. Private IP addresses are used within Azure Virtual Networks (virtual networks) and your on-premises networks. They can be set to dynamic (DHCP lease) or static (DHCP reservation). 
+Private IP addresses are used for communication within a virtual network. Private IP addresses are used within Azure Virtual Networks (virtual networks) and your on-premises networks. They can be set to dynamic (DHCP lease) or static (DHCP reservation).
 
 **Dynamic private IP addresses** are assigned through a DHCP lease and can change over the lifespan of the Azure resource.
 
 **Static public IP addresses** are assigned through a DHCP reservation, and do not change through the lifespan of the Azure resource. They will persist if a resource is stopped or deallocated.
 
 ## IP addressing for Azure virtual networks
-
-
 
 A virtual network is a fundamental component that acts as an organization's network in Azure, where the administrator can have full control over the IP address assignment, security settings, and security rules. When you create a virtual network, you define a scope of IP address. Private IP addressing in Azure works the same way as it does on the on-premises network. You choose the private IP addresses reserved by Internet Assigned Numbers Authority (IANA) based on your network requirements:
 
@@ -51,8 +49,6 @@ A virtual network is a fundamental component that acts as an organization's netw
 A subnet is a range of IP address within the virtual network. You can divide the virtual network into multiple subnets. Each subnet must have a unique address range, specified in CIDR format. CIDR is a way to represent a network IP block. An IPv4 CIDR, specified as part of the IP address, shows the length of the network prefix.
 
 Consider, for example, the CIDR 192.168.10.0/24. "192.168.10.0" is the network address. The "24" indicates that the first 24 bits are part of the network address, leaving the last 8 bits for specific host addresses. The address range cannot overlap with other subnets in the virtual network or with the on-premises network.
-
-
 
 The first three IP addresses are reserved for all subnets by default in Azure. For protocol conformance, first and last IP addresses of all subnets are also reserved. Internal DHCP service within Azure assigns and maintains the lease of IP addresses. The .1, .2, .3, and last IP address are not visible or configurable by the Azure customer. These addresses are reserved and used by internal Azure services. 
 
