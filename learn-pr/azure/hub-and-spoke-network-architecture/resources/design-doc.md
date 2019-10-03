@@ -36,7 +36,6 @@ Design a network architecture in Azure that allows for growth & flexibility, sec
 - Identify the components and limitations for connectivity to on-premises networks
 - Identify methods to secure connectivity in a hub and spoke network
 
-
 ## Chunk your content into subtasks
 
 Identify the subtasks of *Centralize your core services using hub and spoke Azure VNet architecture*
@@ -47,7 +46,6 @@ Identify the subtasks of *Centralize your core services using hub and spoke Azur
 | Planning Virtual Networks on Azure | Identify the components and limitations for connectivity to on-premises networks | Knowledge Check | 2 | Yes |
 | Security by design with Azure | Identify methods to secure connectivity in a hub and spoke network | Knowledge Check | 3 | Yes |
 ||||||
-
 
 ## Outline the units
 
@@ -61,21 +59,11 @@ Identify the subtasks of *Centralize your core services using hub and spoke Azur
 
     - Hub and Spoke Architecture Foundations
         - Introduction to the Hub-Spoke topology
-        - Walkthrough of architectural components
+        - Walk through of architectural components
         - Considerations for identity and access management
         - Peering and traffic management for hub-spoke on Azure
 
-3. **Exercise - Implementing a hub-spoke network topology on Azure**
-
-    List the steps that apply the learning content from previous unit (separate out each language):
-
-        1. Run a script in the Cloud Shell to create foundational hub/spoke components.
-        2. Complete the steps to enable virtual networking configuration.
-        3. Run through virtual networking peering in the portal
-        4. Configure NVA routing to allow for spoke to spoke connectivity
-        5. Access control with Azure AD
-
-4. **Planning virtual networks on Azure**
+3. **Planning virtual networks on Azure**
 
     List the content that will enable the learner to *Identify the components and limitations for connectivity to on-premises networks*:
 
@@ -89,13 +77,21 @@ Identify the subtasks of *Centralize your core services using hub and spoke Azur
         - Summary of Azure ExpressRoute
         - Using Azure ExpressRoute in a hub-spoke topology
 
+4. **Exercise - Implementing a hub-spoke network topology on Azure**
+
+    List the steps that apply the learning content from previous unit (separate out each language):
+
+        1. Run a script in the Cloud Shell to create foundational hub/spoke components.
+        2. Complete the steps to enable virtual networking configuration.
+        3. Run through virtual networking peering in the portal
+        4. Configure NSG for each vnet
+
 5. **Knowledge check**
 
     What types of questions will test *Planning Virtual Networks on Azure*?
 
     - What are Azure Virtual Networks used for?
     - What do you need to configure for direct connections between Azure resources?
-    - Which method is used to invoke keys from Azure Key Vault?
     - Which of the following is a requirement for Azure ExpressRoute?
 
 6. **Secure your hub and spoke network**
@@ -114,19 +110,18 @@ Identify the subtasks of *Centralize your core services using hub and spoke Azur
     - Network security with Azure Network Security Groups
         - Overview of Azure Network Security Groups
         - Defining security rules
-        - Traffic Flow with NSGs
+        - Traffic Flow with Network Security Groups
         - Additional security considerations
 
-7. **Knowledge check**
+    **Knowledge check**
 
     What types of questions will test *Secure your hub and spoke network*?
 
     - What is Azure Network Access control?
     - Which of the following is not supported when using Azure Firewall?
-    - What is the name of the Microsoft created labels that represent a group of IP addresses?
     - Which Azure service would you use to filter network traffic?
 
-8. **Summary**
+7. **Summary**
 
    *{How did you solve the problem in the initial scenario with the knowledge learned in the module?}*
 
@@ -146,8 +141,20 @@ Network security groups – Used to restrict access to the services in each VNet
 
 Resources:
 
-Reference architecture: https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/shared-services
-https://techcommunity.microsoft.com/t5/Azure/Microsoft-Azure-Hub-Spoke-model-by-Enterprise-Design-1-of-4/td-p/277896
-http://francescomolfese.it/en/2018/08/azure-networking-introduzione-al-modello-hub-spoke/
-https://azure.microsoft.com/mediahandler/files/resourcefiles/6ce2454f-eead-4b86-9a45-7434f890fea8/Mesh_and_Hub-Spoke_Networking_on_Azure.pdf
-http://www.deployazure.com/network/virtual-network/azure-vnet-peering-gateway-transit-hub-and-spoke/
+Reference architecture: <https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/shared-services>
+<https://techcommunity.microsoft.com/t5/Azure/Microsoft-Azure-Hub-Spoke-model-by-Enterprise-Design-1-of-4/td-p/277896>
+<http://francescomolfese.it/en/2018/08/azure-networking-introduzione-al-modello-hub-spoke/>
+<https://azure.microsoft.com/mediahandler/files/resourcefiles/6ce2454f-eead-4b86-9a45-7434f890fea8/Mesh_and_Hub-Spoke_Networking_on_Azure.pdf>
+<http://www.deployazure.com/network/virtual-network/azure-vnet-peering-gateway-transit-hub-and-spoke/>
+
+Comments:
+
+Phillip Stollery (Content Master Ltd) I've moved the design doc to GitHub for you. Overall, you're approved to move forward with content creation. A couple items of feedback:
+
+I've made some minor changes to verbiage and a unit title.
+
+- We may want to consider swapping unit 3 and 4. It has an overview of virtual networks in Azure, but that's after we create the vnets, this might make more sense before the actual exercise. Done
+- Consider doing the exercise even later, and using Azure Firewall instead of the NVA
+- NVA's are tricky, and can take time, they also are typically marketplace purchases, which are not available in sandbox. Consider just making that topical to keep the exercise do-able, or do Azure Firewall instead.
+- Don't use the "security by design" term. We do want to cover security, but that's not a term I've seen used with Azure virtual networking.
+- Make sure to weave the scenario through the content. How does the organization apply these services and capabilities to their architecture?
