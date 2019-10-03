@@ -1,6 +1,6 @@
 In the previous unit, you set up a hub and spoke virtual data center in Azure for your company. Those commands created a hub and spoke network topology, and connected the components. 
 
-Your internal HR department wants to host a new internal HR system that shouldn't be accessable from the internet. The system should be accessible to everyone in the company, whether they work at headquarters or in a satellite office.
+Your internal HR department wants to host a new internal HR system that shouldn't be accessible from the internet. The system should be accessible to everyone in the company, whether they work at headquarters or in a satellite office.
 
 In this exercise, you'll create a new virtual network to host the servers for your company's new HR system.
 
@@ -74,19 +74,19 @@ Now you've created the third spoke, you need to configure the Virtual Network pe
 
 1. On the Peerings blade, select **Add**, and fill in the fields using the following properties:
 
-|Property Name | Field Property  |
-|---------|---------|
-|Name of the peering from hubVnet to HRappVnet     | **gwPeering_hubVNet_HRappVnet**      |
-|Peer Details     | **Resource Manager**        |
-|Subscription     | **Concierge Subscription (default)**        |
-|Virtual Network     |  **HRappVnet**       |
-|Name of the peering from HRappVnet to hubVnet     | **gwPeering_HRappVnet_hubVNet**      |
-|Allow virtual network access from hubVnet to HRappVnet  |   **Enabled**  |
-|Allow virtual network access from HRappVnet to hubVnet  |   **Enabled**  |
-|Allow forwarded traffic from HRappVnet to hubVnet  |   **Disabled**     |
-|Allow forwarded traffic from hubVnet to HRappVnet  |   **Disabled**     |
-|Configure gateways transit settings         |   **False**    |
-
+    |Property Name | Field Property  |
+    |---------|---------|
+    |Name of the peering from hubVnet to HRappVnet     | **gwPeering_hubVNet_HRappVnet**      |
+    |Peer Details     | **Resource Manager**        |
+    |Subscription     | **Concierge Subscription (default)**        |
+    |Virtual Network     |  **HRappVnet**       |
+    |Name of the peering from HRappVnet to hubVnet     | **gwPeering_HRappVnet_hubVNet**      |
+    |Allow virtual network access from hubVnet to HRappVnet  |   **Enabled**  |
+    |Allow virtual network access from HRappVnet to hubVnet  |   **Enabled**  |
+    |Allow forwarded traffic from HRappVnet to hubVnet  |   **Disabled**     |
+    |Allow forwarded traffic from hubVnet to HRappVnet  |   **Disabled**     |
+    |Configure gateways transit settings         |   **False**    |
+    
 1. Select **OK** to create the peering.
 
 1. Close the hubVirtual Network blade.
@@ -143,17 +143,17 @@ You have a security requirement to meet for HR application to be hosted on the *
 
 1. In the **Inbound security rules** blade, select **Add**.
 
-|Property Name | Field Property  |
-|---------|---------|
-|Source             | Any  |
-|Source port ranges | 80,443   |
-|Destination        | VirtualNetwork     |
-|Destination port ranges |  *  |
-|Protocol  | Any      |
-|Action    | Deny     |
-|Priority  | 100      |
-|Name      | Block_Inbound_80 |
-
+    |Property Name | Field Property  |
+    |---------|---------|
+    |Source             | Any  |
+    |Source port ranges | 80,443   |
+    |Destination        | VirtualNetwork     |
+    |Destination port ranges |  *  |
+    |Protocol  | Any      |
+    |Action    | Deny     |
+    |Priority  | 100      |
+    |Name      | Block_Inbound_80 |
+    
 1. Select **Add** to add the rule.
 
 You have now blocked outbound internet access from the spoke on port 80.
