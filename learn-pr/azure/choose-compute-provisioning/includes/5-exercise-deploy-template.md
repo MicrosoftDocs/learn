@@ -298,11 +298,8 @@ In the following exercise, you'll use an Azure Resource Manager template to prov
 1. Validate and test your deployment before you attempt a real deployment. Run the below command to test whether your deployment would be successful.
 
     ```bash
-    az group deployment validate  --resource-group <your-resource-group>  --template-file template.json
+    az group deployment validate  --resource-group <rgn>[sandbox resource group name]</rgn>  --template-file template.json
     ```
-
-    > [!NOTE]
-    >  The resource group for your sandbox is <rgn>[sandbox resource group name]</rgn>
 
 1. Follow the prompts. Use a strong username and password combination when you are asked for **adminUsername** and **adminPassword**.
 
@@ -329,7 +326,7 @@ In the following exercise, you'll use an Azure Resource Manager template to prov
 1. If there are no errors, your template has been validated and can be deployed. Run the below command to deploy the template.
 
     ```bash
-    az group deployment create --resource-group <your-resource-group> --template-file template.json
+    az group deployment create --resource-group <rgn>[sandbox resource group name]</rgn> --template-file template.json
     ```
 
 1. Follow the prompts to complete your deployment. It may take a few minutes for deployment to finish.
@@ -337,7 +334,7 @@ In the following exercise, you'll use an Azure Resource Manager template to prov
 1. Once everything has been set up, your virtual machine will be created and configured as an IIS webserver. List all of the resources in the resource group to confirm everything has been set up. Run the below command.
 
     ```bash
-    az resource list --resource-group <your-resource-group>
+    az resource list --resource-group <rgn>[sandbox resource group name]</rgn>
     ```
 
 1. You'll see all of your resources listed. This means deployment was successful.
@@ -345,7 +342,7 @@ In the following exercise, you'll use an Azure Resource Manager template to prov
 1. Test if your IIS server is running. Run the following command in the shell.
 
     ```bash
-    az vm show -d -g <your-resource-group> -n <your-vm-name> --query publicIps -o tsv
+    az vm show -d -g <rgn>[sandbox resource group name]</rgn> -n <your-vm-name> --query publicIps -o tsv
     ```
 
 1. Copy the IP address that is returned, and paste it into a new tab or window. You should see your IIS server running.
