@@ -1,4 +1,4 @@
-Your organization wants you to provision compute on Azure and put in place automated scaling for your compute resources. 
+Your company is a clothing manufacturer, so it needs applications and databases to handle its products. As a result, the company is also going to need compute resources to run its workloads. Your company wants you to provision compute on Azure and put in place automated scaling for your compute resources.
 
 Creating and managing compute resources manually would require much administration time, and become a repetitive task. When administrators have to do the same task regularly, mistakes can happen. You want to identify a way to automate the provisioning and management of compute resources. You'll research some of the tools that you can use to provision compute on Azure.
 
@@ -15,16 +15,16 @@ You need some way to automate the deployment of virtual machines, to deal with t
 - Install software. For example, you might need to install a web server or a database server.
 - Apply updates. For example, you might need to apply service packs or hotfixes to the operating system and the installed software.
 
-To reduce the complexity of configuring a deployment, you can create a complete architecture in the form of a script or a configuration file, and then deploy it in a single operation. This way, you can automate your configuration to reduce mistakes, and accelerate deployment. You'll help your organization become more productive and cost-effective.
+To reduce the complexity of deployment configuration, you can create a complete architecture in the form of a script or a configuration file, and then deploy it in a single operation. This way, you can automate your configuration to reduce mistakes, and accelerate deployment. You'll help your organization become more productive and cost-effective.
 
 ## Custom scripts
 
-The Custom Script Extension downloads and runs scripts on Azure virtual machines. This tool is useful for post deployment configuration, software installation, or any other configuration or management task.
+The Custom Script Extension downloads and runs scripts on Azure virtual machines. This tool is useful for post-deployment configuration, software installation, or any other configuration or management task.
 
-You can have a PowerShell script that is on your local file server, GitHub, Azure Storage, and other locations that are accessible to your virtual machine. The extension looks for the script that should be run on the virtual machine. The script is downloaded and then executed on the target virtual machine to apply the changes introduced by the script. You add a Custom Script Extension to a virtual machine through Azure Resource Manager Templates, PowerShell, or Azure CLI.
+You can have a PowerShell script that is on your local file server, GitHub, Azure Storage, or other locations that are accessible to your virtual machine. The extension looks for the script that should be run on the virtual machine. The script is downloaded and then executed on the target virtual machine to apply the changes introduced by the script. You add a Custom Script Extension to a virtual machine through Azure Resource Manager Templates, PowerShell, or Azure CLI.
 
 > [!NOTE]
-> If your configuration or management task requires a restart, a Custom Script Extension will not continue after a restart.
+> Take care if your configuration or management task requires a restart. A Custom Script Extension will not continue after a restart.
 
 Below is a Custom Script Extension configuration, which can be added to an Azure Resource Manager Template for a virtual machine. You use the *fileUris* property to point to your script file.
 
@@ -249,7 +249,7 @@ Azure Automation State Configuration is the service you would use to make sure y
 
 <!-- Original image: https://docs.microsoft.com/en-us/azure/automation/media/automation-dsc-getting-started/nodestab.png -->
 
-Azure Automation State Configuration makes it possible for you to ensure that all target machines are assigned the correct configurations automatically, and also ensures that each machine reports back on what its current state is and shows whether it has achieved the desired state.  You can send this information for reporting and for further decision making. You can interact with Azure Automation State Configuration through the Azure portal or through Azure PowerShell.
+Azure Automation State Configuration makes it possible for you to ensure that all target machines are assigned the correct configurations automatically, and also ensures that each machine reports back on what its current state is and shows whether it has achieved the desired state. You can send this information for reporting and for further decision making. You can interact with Azure Automation State Configuration through the Azure portal or through Azure PowerShell.
 
 ## Azure Resource Manager templates
 
@@ -257,7 +257,7 @@ Azure Resource Manager templates are JSON files that allow you to define the Azu
 
 Azure Resource Manager templates allow you to make sure your deployments are consistent. You can ensure, for example, that all virtual machines you create have the same properties. And embed extensions into virtual machines in a template to make sure they're configured exactly the same. You deploy any Azure Resource Manager template through Azure PowerShell, Azure CLI, or the Azure portal. Azure Resource Manager templates should be tested before they're deployed. Test your deployment. You'll ensure your template is something Azure can deploy before attempting a real deployment.
 
-Below is an example of how a virtual machine would be defined in an Azure Resource Manager template.  You can see the type of the virtual machine, the operating system, and its storage details among other things.
+Below is an example of how a virtual machine would be defined in an Azure Resource Manager template. You can see the type of the virtual machine, the operating system, and its storage details among other things.
 
 ```json
 {

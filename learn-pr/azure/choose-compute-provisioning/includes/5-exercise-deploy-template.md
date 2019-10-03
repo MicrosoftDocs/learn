@@ -334,7 +334,7 @@ In the following exercise, you'll use an Azure Resource Manager template to prov
 
 1. Follow the prompts to complete your deployment. It may take a few minutes for deployment to finish.
 
-1. Once everything has been set up, your virtual machine will be created and configured  as an IIS webserver. List all of the resources in the resource group to confirm everything has been set up. Run the below command.
+1. Once everything has been set up, your virtual machine will be created and configured as an IIS webserver. List all of the resources in the resource group to confirm everything has been set up. Run the below command.
 
     ```bash
     az resource list --resource-group <your-resource-group>
