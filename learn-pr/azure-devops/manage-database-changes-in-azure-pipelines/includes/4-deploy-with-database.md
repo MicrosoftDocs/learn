@@ -1,4 +1,4 @@
-At this point, the team's pipeline has four stages. The first stage produces the build artifact and the second stage deploys the _Space Game_ web application to App Service in the _dev_ environment. The third and fourth stages deploy the _Space Game_ to the _test_ and _staging_ environments. We have taken out the triggers and approvals from the previous module to concentrate on just this section of the pipeline.
+At this point, the team's pipeline has four stages. The first stage produces the build artifact and the second stage deploys the _Space Game_ web application to App Service in the _dev_ environment. The third and fourth stages deploy the _Space Game_ web application to the _test_ and _staging_ environments. We have taken out the triggers and approvals from the previous module to concentrate on just this section of the pipeline.
 
 Here, you follow along with Andy, Mara, and Tim as they modify the pipeline to add their stages to script the database changes for the DBA and to apply those changes after approval.
 
@@ -66,13 +66,14 @@ Here you use [Azure portal](https://portal.azure.com?azure-portal=true) to creat
 
    ![Azure portal selecting connection strings page](../media/4-get-connection-string.png)
 
-    Notice that the connection string does not show your username and password. You will need to fill those in when you are ready to use this string.
+    Notice that the connection string doesn't show your username and password. You'll need to fill those in when you're ready to use this string.
 
-1. In order to access the database you just created, you will need to set a firewall rule to allow your IP address.
+1. In order to access the database you just created, you need to set a firewall rule to allow your IP address.
     1. Select **SQL databases** on the far left side menu in your Azure portal.
     1. Select **tailspindatabaseMNNN** where NNN is your random number.
     1. At the top, select **Set server firewall**.
     1. Your current IP address is printed next to **Client IP address**. Enter the following rule:
+
     | Property  | Value  |
     |---|---|
     | Rule name| LocalIP |
@@ -97,7 +98,7 @@ You can now create the tables to store the data.
     | Login | azuresql |
     | Password | Specify the password that you used when you created this user. |
 
-1. In your local **database** branch, find the file **CreateTables** and copy the entire contents to the clipboard. In the **Query 1** pane in the Query Editor, paste the SQL statements you copied, and then select **Run**. This statement creates the new tables to hold the profile and score data for the SpaceGame web site. Verify that the statement runs without any errors.
+1. In your local **database** branch, find the **CreateTables** file and copy the entire contents to the clipboard. In the **Query 1** pane in the Query Editor, paste the SQL statements you copied, and then select **Run**. This statement creates the new tables to hold the profile and score data for the SpaceGame web site. Verify that the statement runs without any errors.
 
 1. In the database window, select the **Refresh** button on the toolbar. Expand **Tables**, and then expand each table in turn. You should see the four tables (**dbo.Profile**, **dbo.Scores**, **dbo.Achievements**, and **dbo.ProfileAchievements**), together with the columns and keys for each table.
 
@@ -363,7 +364,7 @@ To add the variable:
 
     Be sure to replace each example value with the App Service instance that corresponds to your environment.
 
-1. Select **Save** near the top of the page to save your variable to the pipeline.
+1. Select **Save** near the top of the page to save your variables to the pipeline.
 
     Your variable group resembles this one:
 

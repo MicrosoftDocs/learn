@@ -18,6 +18,8 @@ In this section, you'll:
 
 This is a big milestone and we have a lot to talk about. Let's start with choosing a database technology.
 
+### Choose a database technology
+
 **Tim:** It has been nice setting up infrastructure for your web site in the cloud, and it has proven to be cost effective. I would like to continue this experiment and set up the database server in the cloud as well.
 
 **Andy:** Good thinking Tim. I already went through the Microsoft Learn Module [Choose a data storage approach in Azure](https://docs.microsoft.com/learn/modules/choose-storage-approach-in-azure/?azure-portal=True) with that in mind. It seems we should either use CosmosDB or AzureSQL.
@@ -28,15 +30,21 @@ This is a big milestone and we have a lot to talk about. Let's start with choosi
 
 **Andy:** So if we create the database and connect to it from our App Services, how do we keep the database connection string secure? I don't want to publish it in our appSettings.json because that will become part of our GitHub repo.
 
+### Learn how to configure the App Service to use the database connection string
+
 **Mara:** I was looking at that in Microsoft Learn - [Develop and configure an ASP.NET application that queries an Azure SQL database](https://docs.microsoft.com/en-us/learn/modules/develop-app-that-queries-azure-sql/?azure-portal=true). Locally, we can use a secrets.json file that doesn't get pushed to GitHub. Visual Studio can set that up for us. But when the actual web site needs it, it can be added as a setting right in the Azure App Service and we won't need to add it to our appSettings.json file. Another advantage to using App Service.
 
 **Andy:** Now we are getting somewhere.
 
 **Tim:** Don't start celebrating yet. We need to make sure we have a plan for when the database schema changes. Mara mentioned that might happen. How do we make sure the database administrator is happy with the changes and that they get applied in a timely way?
 
+### Understand a SQL Server Data Tools database project's role in Azure Pipelines
+
 **Mara:** That SQL Server Data Tools project that I mentioned can help. It creates a file called a _.dacpac_ that will have the current schema as defined by the project. This is the file used to deploy the schema. Let's see if we can find a way for the pipeline to make a file that shows the differences between what the database schema is now and what the _.dacpac_ is proposing. Then the database administrator can look at that file and approve it. We just got pipeline approvals working. I think we can take advantage of that here and automate as much as possible.
 
 **Andy:** I found an Azure Pipelines task we can use. The [SqlAzureDacpacDeployment@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/sql-azure-dacpac-deployment?view=azure-devops&azyre-portal=true) task auto generates a file with the schema differences between the current database schema and the _.dacpac_. We would just set the `DeploymentAction:` parameter to `Script`.
+
+### Learn how database schema changes can be approved using Azure Pipelines
 
 **Tim:** I can make a PowerShell script that reads that file and outputs it for approval for the database administrator.
 
