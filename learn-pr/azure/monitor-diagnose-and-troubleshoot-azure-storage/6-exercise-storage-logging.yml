@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.module-uid.6-exercise-storage-logging
+uid: learn.monitor-diagnose-and-troubleshoot-azure-storage.6-exercise-storage-logging
 metadata:
   title: Exercise - Enable storage logging and view log data
-  description: TODO
+  description: Enable storage logging and view log data
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes

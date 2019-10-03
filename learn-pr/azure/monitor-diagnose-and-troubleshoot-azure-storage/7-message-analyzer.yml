@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.module-uid.7-message-analyzer
+uid: learn.monitor-diagnose-and-troubleshoot-azure-storage.7-message-analyzer
 metadata:
   title: Diagnose issues with Message Analyzer
-  description: TODO
+  description: Diagnose issues with Message Analyzer
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
