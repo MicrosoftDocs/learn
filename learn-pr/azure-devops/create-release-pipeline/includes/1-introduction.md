@@ -21,15 +21,18 @@ To follow the progression from the beginning, be sure to first complete these le
 * [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true)
 * [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true)
 
-If you want to start with this learning path, first go through these two modules to set up Azure DevOps and your development environment.
+If you want to start with this learning path, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
 
-* [Get started with Azure DevOps](/learn/modules/get-started-with-devops?azure-portal=true)
-* [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true)
+* An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
+* An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
+* A [GitHub](https://github.com/join?azure-portal=true) account
+* [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+* [.NET Core 2.1](https://www.microsoft.com/net/download?azure-portal=true)
+* [Git](https://git-scm.com/downloads?azure-portal=true)
 
-When you're ready, make sure you have a browser window pointing to your Azure DevOps organization. You'll get set up with the starter code for this module shortly.
+You can get started with Azure and Azure DevOps for free.
 
-> [!IMPORTANT]
-> You also need your own Azure subscription to complete the exercises in this module. Don't have an Azure subscription? [Create a free account](https://azure.microsoft.com/free/?azure-portal=true).
+This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
 
 [!include[](../../shared/includes/project-details-note.md)]
 
