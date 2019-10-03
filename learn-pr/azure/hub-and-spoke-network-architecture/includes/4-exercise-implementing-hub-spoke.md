@@ -48,18 +48,18 @@ The resource creation experience on the portal is a wizard that walks you throug
 
 1. Use the values below to create the virtual network:
 
-|Property Name | Field Property  |
-|---------|---------|
-|Name                   | **HRappVnet**     |
-|Address Space          | **10.10.0.0/16**  |
-|Subscription           | **Concierge Subscription (default)**         |
-|Resource Group         | **<rgn>[sandbox resource group name]</rgn>** |
-|Subnet – Name          | **HRworkload**   |
-|Subnet – Address Range | **10.10.0.0/16** |
-|DDoS Protection        | **Basic**        |
-|Service Endpoints      | **Disabled**     |
-|Firewall               | **Disabled**     |
-
+    |Property Name | Field Property  |
+    |---------|---------|
+    |Name                   | **HRappVnet**     |
+    |Address Space          | **10.10.0.0/16**  |
+    |Subscription           | **Concierge Subscription (default)**         |
+    |Resource Group         | **<rgn>[sandbox resource group name]</rgn>** |
+    |Subnet – Name          | **HRworkload**   |
+    |Subnet – Address Range | **10.10.0.0/16** |
+    |DDoS Protection        | **Basic**        |
+    |Service Endpoints      | **Disabled**     |
+    |Firewall               | **Disabled**     |
+    
 1. Select **Create** to start provisioning the Virtual Network.
 
 ## Configure the hub Virtual Network peering
