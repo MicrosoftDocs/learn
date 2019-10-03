@@ -24,7 +24,7 @@ quiz:
     - content: "The $logs container is not visible using Azure Storage Explorer. You must use a tool such as AzCopy to download the data from this container."
       isCorrect: true
       explanation: "This answer is correct."
-    - content: "You have to create a special storage account, also named $logs, to store diagnostic logs. The $logs container will be created in this special account."
+    - content: "You have to create a special storage account named $logs to store diagnostic logs. The $logs container will be created in this special account."
       isCorrect: false
       explanation: "No. The $logs container is not visible using Azure Storage Explorer. You must use a tool such as AzCopy to download the data from this container."
     - content: "You must be an administrator for the Azure subscription holding the storage account. If you can't see the $logs container, you are probably connected to Azure using a non-administrative account."
