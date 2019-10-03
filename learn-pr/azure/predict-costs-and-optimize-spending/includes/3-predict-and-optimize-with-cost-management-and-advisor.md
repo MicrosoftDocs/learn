@@ -46,10 +46,4 @@ Azure Cost Management is another free, built-in Azure tool that can be used to g
 
 ![Screenshot of the Azure portal showing the Cost analysis section of the Cost Management + Billing blade.](../media/3-cost-management.png)
 
-## Cloudyn
-
-Cloudyn, a Microsoft subsidiary, allows you to track cloud usage and expenditures for your Azure resources and other cloud providers including Amazon Web Services and Google. Easy-to-understand dashboard reports help with cost allocation and chargebacks. Cost Management helps optimize your cloud spending by identifying underutilized resources that you can then manage and adjust. Usage for Azure is free, and there are paid options for premium support and to view data from other clouds.
-
-![Screenshot of the Azure portal showing the Cloudyn management dashboard.](../media/3-cloudyn-mgt-dash.png)
-
-As you can see, there are several tools available for no cost on Azure that you can use to track and predict your cloud spend and identify where your environment may be inefficient from a cost perspective. You'll want to make sure you make it a regular practice to review the reports and recommendations that these tools make available, so you can unlock savings across your cloud footprint.
+As you can see, Azure offers tools at no additional cost that you can use to track and predict your cloud spend and identify where your environment may be inefficient from a cost perspective. You'll want to make sure you make it a regular practice to review the reports and recommendations that these tools make available, so you can unlock savings across your cloud footprint.

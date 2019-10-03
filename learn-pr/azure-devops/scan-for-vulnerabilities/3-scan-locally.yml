@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.scan-for-vulnerabilities.3-scan-locally
+title: Exercise - Scan the project locally by using SonarCloud
+metadata:
+  title: Exercise - Scan the project locally by using SonarCloud
+  description: Scan a sample project for potential vulnerabilities by using SonarCloud and examine the results.
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-scan-locally.md)]

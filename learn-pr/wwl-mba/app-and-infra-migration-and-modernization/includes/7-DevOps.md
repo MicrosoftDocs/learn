@@ -2,7 +2,7 @@ Cloud adoptions and DevOps go hand-in-hand. **DevOps** is the union of people, p
 
 A converged DevOps cycle provides the ability to execute on ideas quickly and iterate on feedback rapidly,  while at the same time maintaining the highest levels of quality.  Adopting the cloud enables organizations to bring development and operations together with key DevOps features built directly into Azure, development tools, management tools, and even Outlook.  And with the Microsoft acquisition of GitHub, these capabilities go even further.
 
-![Continuous development with DevOps.](../media/devoPs.png)
+![Continuous development with DevOps.](../media/devops.png)
 
 ## Azure DevOps
 

@@ -19,18 +19,30 @@ Retail banking respondents are even more likely than their FSI counterparts to b
 But this dual focus on online services and improving customer experience creates new risks.
 
 ## Challenge
-
+:::row:::
+:::column span="2":::
 As businesses and customers rapidly digitize, cybercrime is becoming more and more of a threat. Estimates of the scale of the issue vary, but all experts agree on one thing: that it’s big (the annual cost of cybercrime was estimated at $400 billion USD in 2014)<sup>2</sup> and that it’s getting bigger. One survey found that 10 percent of people over the age of 16 had been the victims of identity theft, with 85 percent experiencing fraudulent account use, and about 12 percent suffering personal monetary loss.<sup>3</sup>
 
 As the scale and cost of cybercrimes have increased, so have the efforts of businesses to protect their customers. User authentication methods such as two-factor authentication are common and offer increased security.
 
 But there’s a problem with many authentication methods: at best, users find them a nuisance or a chore. At worst, they’re infuriating to the point where a customer will stop using a product. The temptation for users to resort to more convenient but more insecure personal security—such as using the same password for many different sites—is constant.
-
+:::column-end:::
+:::column span="2":::
+![Increase of cybercrime in FSI: 10% of people aged 16 or older had been victims of identity theft in 2016. 7% of identity-theft victims reported the crime to the police. 7.5% of credit card holders had experienced misuse of a credit card in the previous 12 months. 10% of people had been victims in 2016, up from 7% in 2014. 5.4% of bank account holders had experienced misuse of an account in the previous 12 months.](../media/1.3.2.A.BioCatch-case-study-introduction.jpg)
+:::column-end:::
+:::row-end:::
+:::row:::
+:::column span="2":::
 When it comes to cybersecurity, financial institutions have been slow to embrace the way users actually behave. Rather, they usually encourage users into more-secure behaviors that they’re often not comfortable with, or don’t understand. What’s needed is a paradigm shift in how businesses approach cybersecurity.
 
 “The term ‘identity theft’ is suggestive in the sense that it blames the victims of not guarding their identifying information,” say Markus Riek and Rainer Böhme, co-authors of a study into the costs of consumer-facing cybercrime. “A technically more precise description for this kind of incident is ‘authentication failure.’”
 
 It was this unique combination of challenges that led to BioCatch’s creation of an authentication and fraud detection method that uses AI to work invisibly, without creating hassle for customers.
+:::column-end:::
+:::column span="2":::
+!["The term 'identity theft' is suggestive in the sense that it blames the victims of not guarding their identifying information" - Markus Riek and Rainer Böhme, Journal of Cybersecurity, Volume 4, Issue 1, 2018](../media/1-3-2-B-BioCatch-case-study-introduction.jpg)
+:::column-end:::
+:::row-end:::
 
 ## Strategy questions
 

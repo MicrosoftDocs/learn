@@ -1,10 +1,15 @@
 ## Context
 
+:::row:::
+:::column span="2":::
 Sales organizations have more tools and customer information at their fingertips than ever, but they struggle to make this data accessible and turn it into actionable insights. The challenge is to use this data to understand customer behavior so that each seller can deliver the right message to the right customer at the right time—at scale.
 
-![People involved in decisions](../media/2-4-1-a-sales-case-study-intro.jpg)
-
-In addition, sales organizations are struggling to adapt to the changing sales journey. For instance, there are now more decision-makers and influencers involved in a typical sale. CEB has found that there are now an average of 6.8 people involved in each B2B purchase decision up from 5.2 in its previous research.<sup>1</sup> Moreover, decision-makers and influencers are more informed and prefer to do their own research before they engage with a sales representative. With so many stakeholders in play, each more informed than ever before, it’s essential that sellers identify the most engaged contacts and key influencers on an account and know exactly what matters to them.
+In addition, sales organizations are struggling to adapt to the changing sales journey. For instance, there are now more decision-makers and influencers involved in a typical sale. CEB has found that there are now an average of 6.8 people involved in each B2B purchase decision up in 2017 from 5.4 in 2015.<sup>1</sup> Moreover, decision-makers and influencers are more informed and prefer to do their own research before they engage with a sales representative. With so many stakeholders in play, each more informed than ever before, it’s essential that sellers identify the most engaged contacts and key influencers on an account and know exactly what matters to them.
+:::column-end:::
+:::column span="2":::
+![On average there is an increment of 1.4 people involved in each B2B purchase decision from 2015 to 2017, up to 6.8 from 5.4](../media/2.4.1.A.Sales-case-study-intro1.jpg)
+:::column-end:::
+:::row-end:::
 
 ## Microsoft context: Sales enablement
 

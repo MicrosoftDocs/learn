@@ -33,6 +33,9 @@ roles:
 - developer
 products:
 - azure
+- dotnet
+- aspnet-core
+- dotnet-core
 units:
 - learn.capture-page-load-times-application-insights.1-introduction
 - learn.capture-page-load-times-application-insights.2-enable-application-insights

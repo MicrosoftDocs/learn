@@ -5,14 +5,11 @@ metadata:
   title: Exercise - Use a Resource Manager template to decrypt the VM
   description: Exercise - Use a Resource Manager template to decrypt the VM
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-# TODO: Consider Azure Portal Interactivity
-# interactive: azure-portal
 azureSandbox: true
 durationInMinutes: 10
 content: |

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.manage-build-dependencies.6-consume-package
+title: Exercise - Reference the package from the application
+metadata:
+  title: Exercise - Reference the package from the application
+  description: Modify the application to use your package from Azure Artifacts.
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-consume-package.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.create-a-build-pipeline.8-build-multiple-configurations
+title: Exercise - Build multiple configurations by using templates
+metadata:
+  title: Exercise - Build multiple configurations by using templates
+  description: Use a template to define build tasks that can build any configuration defined in the project file.
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 6
+content: |
+  [!include[](includes/8-build-multiple-configurations.md)]

@@ -16,7 +16,7 @@
     | **OS** | Windows | The operating system that hosts the function app.  |
     | **Hosting Plan** |   Consumption plan | Hosting plan that defines how resources are allocated to your function app. In the default **Consumption Plan**, resources are added dynamically as required by your functions. In this [serverless](https://azure.microsoft.com/overview/serverless-computing/) hosting, you only pay for the time your functions run.   |
     | **Location** | Select the same location you used earlier. | Choose a region near you or near other services your functions access.<br/><br/>Select the same region that you used when creating the Text Analytics API account in the last exercise. |
-    | **Runtime Stack** | JavaScript | The sample code in this module is written in JavaScript.  |
+    | **Runtime Stack** | Node.js | The sample code in this module is written in JavaScript.  |
     | **Storage** |  Globally unique name |  Name of the new storage account used by your function app. Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog populates the field with a unique name that is derived from the name you gave the app. However, feel free to use a different name or even an existing account. |
 
 1. Select **Create** to provision and deploy the function app.

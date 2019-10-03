@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deep learning with Azure Databricks
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/2-deep-learning-azure-databricks.md)]

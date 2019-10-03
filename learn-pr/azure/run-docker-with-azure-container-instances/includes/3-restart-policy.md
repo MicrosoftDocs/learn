@@ -20,7 +20,7 @@ To see the restart policy in action, create a container instance from the **micr
 
     ```azurecli
     az container create \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name mycontainer-restart-demo \
       --image microsoft/aci-wordcount:latest \
       --restart-policy OnFailure \
@@ -33,7 +33,7 @@ To see the restart policy in action, create a container instance from the **micr
 
     ```azurecli
     az container show \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name mycontainer-restart-demo \
       --query containers[0].instanceView.currentState.state
     ```
@@ -44,7 +44,7 @@ To see the restart policy in action, create a container instance from the **micr
 
     ```azurecli
     az container logs \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name mycontainer-restart-demo
     ```
 
