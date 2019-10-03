@@ -6,8 +6,10 @@ To do this, you:
 > * Add a user to ensure Azure DevOps can connect to your Azure subscription.
 > * Set up an Azure DevOps project for this module.
 > * Move the work item for this module on Azure Boards to the **Doing** column.
+> * Make sure your project is set up locally so that you can push changes to the pipeline.
 > * Create the Azure App Service environments.
 > * Create pipeline variables that define the names of your App Service environments.
+> * Create a service connection that enables Azure Pipelines to securely access your Azure subscription.
 > * Perform an initial deployment.
 
 ## Add a user to Azure DevOps
@@ -76,6 +78,10 @@ To set up the work item:
     ![Azure Boards showing the card in the Doing column](../media/3-azure-boards-wi5-doing.png)
 
 At the end of this module, you move the card to the **Done** column after you've completed the task.
+
+[!include[](../../shared/includes/enable-multi-stage-pipelines.md)]
+
+[!include[](../../shared/includes/deploy-local-setup.md)]
 
 ## Create the Azure App Service environments
 

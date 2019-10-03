@@ -12,7 +12,7 @@ Visual Studio Code comes with an integrated terminal, so you can edit files and 
 1. On the **View** menu, select **Terminal** or **Integrated Terminal**. (The option you see depends on your operating system.)
 1. In the drop-down list, select **bash**:
 
-    ![Select the Bash shell in Visual Studio Code](../media/3-vscode-bash.png)
+    ![Selecting the Bash shell in Visual Studio Code](../../shared/media/vscode-terminal-bash.png)
 
     The terminal window lets you choose any shell that's installed on your system, like Bash, Zsh, and PowerShell.
 
@@ -73,7 +73,7 @@ To clone the *Space Game* web project to your computer:
 1. Go to your fork of the *Space Game* web project on GitHub.
 1. Select **Clone or download**. Then select the button next to the URL that's shown to copy the URL to your clipboard:
 
-    ![The Clone or download button on GitHub](../media/3-github-clone-button.png)
+    ![The Clone or download button on GitHub](../../shared/media/github-clone-button.png)
 1. In Visual Studio Code, go to the terminal window and run the `git clone` command. Replace the URL that's shown here with the contents of your clipboard:
 
     ```bash

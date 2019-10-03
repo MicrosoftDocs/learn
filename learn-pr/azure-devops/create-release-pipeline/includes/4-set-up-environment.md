@@ -59,7 +59,7 @@ Visual Studio Code comes with an integrated terminal, so you can edit files and 
 1. On the **View** menu, select **Terminal** or **Integrated Terminal**. (The option you see depends on your operating system.)
 1. In the drop-down list, select **bash**:
 
-    ![Select the Bash shell in Visual Studio Code](../media/4-vscode-bash.png)
+    ![Selecting the Bash shell in Visual Studio Code](../../shared/media/vscode-terminal-bash.png)
 
     The terminal window lets you choose any shell that's installed on your system, like Bash, Zsh, and PowerShell.
 
@@ -107,7 +107,7 @@ To clone the *Space Game* web project to your computer:
 1. Go to your fork of the *Space Game* web project (**mslearn-tailspin-spacegame-web-deploy**) on [GitHub](https://github.com?azure-portal=true).
 1. Select **Clone or download**. Then select the button next to the URL that's shown to copy the URL to your clipboard:
 
-    ![The Clone or download button on GitHub](../media/4-github-clone-button.png)
+    ![The Clone or download button on GitHub](../../shared/media/github-clone-button.png)
 1. In Visual Studio Code, go to the terminal window.
 1. In the terminal, move to the directory you want to work from, like your home directory (`~`). You can choose a different directory if you want.
 
@@ -196,7 +196,7 @@ From Azure DevOps:
 1. Select the ellipsis (...) button, then select **Preview features**.
 1. Turn on **Multi-stage Pipelines**.
 
-    ![Enabling multi-stage pipelines from Azure DevOps](../media/4-enable-preview-features.png)
+    ![Enabling multi-stage pipelines from Azure DevOps](../../shared/media/enable-preview-features.png)
 
 1. Notice that separate **Pipelines** menu entries for **Release** and **Build** are now gone. This is because you will now perform both build and release tasks from the same pipeline.
 
