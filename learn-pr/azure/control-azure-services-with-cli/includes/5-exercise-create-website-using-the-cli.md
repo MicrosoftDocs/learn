@@ -10,14 +10,10 @@ Next, you would normally create a resource group for all your related Azure reso
 
    ```bash
    export RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
-   export AZURE_REGION=[region]
+   export AZURE_REGION=centralus
    export AZURE_APP_PLAN=popupappplan-$RANDOM
    export AZURE_WEB_APP=popupwebapp-$RANDOM
    ```
-
-   For the `[region]` parameter, use one of the regions from the following list.
-
-   [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
 1. You can ask the Azure CLI to list all your resource groups in a table. There should just be one while you are in the free Azure sandbox.
 
