@@ -10,7 +10,12 @@ metadata:
   ms.prod: learning-azure
 title: Build a Node.js app for Azure Cosmos DB in Visual Studio Code
 summary: Build a database app to store and query data in Azure Cosmos DB by using Visual Studio Code and Node.js.
-abstract: Use Node.js in Visual Studio Code to create a Cosmos DB database, query, insert, update, and delete data, and run stored procedures.
+abstract: | 
+  In this module, you will:
+  - Create a Cosmos DB instance for a Node.js app
+  - Set up a new Node.js app in VS Code
+  - Add JavaScript code to work with Cosmos DB
+  - Create and run Cosmos DB stored procedures from your app
 prerequisites: |
   - VS Code with Azure extensions installed
   - Node.js installed
