@@ -9,7 +9,6 @@ metadata:
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 13
 content: |
   [!include[](includes/5-deploy-to-appservice.md)]
