@@ -44,9 +44,9 @@ Private IP addresses are used for communication within a virtual network. Privat
 
 A virtual network is a fundamental component that acts as an organization's network in Azure, where the administrator can have full control over the IP address assignment, security settings, and security rules. When you create a virtual network, you define a scope of IP address. Private IP addressing in Azure works the same way as it does on the on-premises network. You choose the private IP addresses reserved by Internet Assigned Numbers Authority (IANA) based on your network requirements:
 
-- 10.0.0.0 /8
-- 172.16.0.0 /12  
-- 192.168.0.0 /16
+- 10.0.0.0/8
+- 172.16.0.0/12  
+- 192.168.0.0/16
 
 A subnet is a range of IP address within the virtual network. You can divide the virtual network into multiple subnets. Each subnet must have a unique address range, specified in CIDR format. CIDR is a way to represent a network IP block. An IPv4 CIDR, specified as part of the IP address, shows the length of the network prefix.
 
