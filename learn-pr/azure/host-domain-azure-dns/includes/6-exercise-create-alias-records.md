@@ -15,13 +15,13 @@ Manually creating a VNET, load balancer, and two VMs will take some time. To imp
 
     <!-- Replace with new repo - script.sh and cloud-init.txt in resources folder -->
     ```bash
-    git clone https://github.com/GeekEffect/load-balancer-setup.git
+    git clone https://github.com/MicrosoftDocs/mslearn-host-domain-azure-dns.git
     ```
 
 1. To run the set-up script, type these two commands:
 
     ```bash
-    cd load-balance-setup
+    cd mslearn-host-domain-azure-dns
     chmod +x setup.sh
     ./setup.sh
     ```
