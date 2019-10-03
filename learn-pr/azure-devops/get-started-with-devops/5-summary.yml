@@ -1,0 +1,9 @@
+### YamlMime:ModuleUnit
+uid: learn.get-started-with-devops.5-summary
+metadata:
+  title: Summary
+  description: Summarize what you've learned, and discover resources to learn more.
+title: Summary
+durationInMinutes: 2
+content: |
+ [!include[](includes/5-summary.md)]

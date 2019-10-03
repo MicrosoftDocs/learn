@@ -17,7 +17,6 @@ abstract: |
   - Understand event processing.
   - Learn about processing events with Azure Stream Analytics.
 prerequisites: None
-ratingEnabled: true
 iconUrl: /learn/achievements/data-ai/introduction-to-data-streaming-badge.svg
 levels:
 - beginner

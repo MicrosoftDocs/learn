@@ -4,7 +4,7 @@ Cloud computing resources are delivered using three different service models.
 - **Platform as a service (PaaS)** provides ready-made development and deployment environments that you can use to deliver your own cloud services.
 - **Software as a service (SaaS)** delivers applications over the Internet as a web-based service.
 
-#### IaaS versus Sass versus PaaS
+#### IaaS versus SaaS versus PaaS
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yEbs]
 

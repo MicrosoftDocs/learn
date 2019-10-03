@@ -1,13 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.manage-vms-with-azure-cli-data.2-create-a-vm
-title: Create a virtual machine
+title: Exercise - Create a virtual machine
 metadata:
-  title: Create a virtual machine
+  title: Exercise - Create a virtual machine
   description: Use the Azure CLI to create a new VM
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

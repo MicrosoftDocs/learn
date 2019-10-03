@@ -4,51 +4,64 @@ You decide to create an Azure Database for PostgreSQL server to store routes cap
 
 Keep in mind you want to set your server storage size at 20 GB, compute Gen 5 support with 1 vCore and a retention period of 15 days for data backups.
 
-1. Use the `az postgres server create` method to create a new database. There are several parameters that you'll specify:
-    - `--resource-group <resource_group_name>`
-    - `--name <new_server_name>`
-    - `--location <location>`
-    - `--admin-user <admin_user_name>`
-    - `--admin-password <server_admin_password>`
-    - `--sku-name <sku>`
-    - `--storage-size <size>`
-    - `--backup-retention <days>`
-    - `--version <version_number>`
+1. Use the `az postgres server create` method to create a new database using the following syntax.
 
-2. See if you can build the command and complete the parameters without looking at the solution below. Here are some tips.
-    - Replace the `<values>` with your own values. 
-    - Remember that the server name must be  made up of lowercase letters 'a'-'z', the numbers 0-9 and the hyphen.
-    - Use <rgn>[sandbox resource group name]</rgn> as the resource group.
-    - Use a location from the following list:  
-        [!include[](../../../includes/azure-sandbox-regions-note.md)]
+   ```azurecli
+   az postgres server create \
+      --name [unique_server_name] \
+      --resource-group [resource_group_name] \
+      --location [your_region] \
+      --sku-name [sku_name] \
+      --storage-size [size_in_mb] \
+      --backup-retention [number_days] \
+      --version [server_version] \
+      --admin-user [admin_user_name] \
+      --admin-password [server_admin_password]
+   ```
+   
+   Where:
+   
+   | Parameter | Description |
+   |---|---|
+   | `--name` | Specify a unique server name using lowercase letters 'a'-'z', the numbers 0-9, and the hyphen. |
+   | `--resource-group` | Specify your resource group; use <rgn>[sandbox resource group name]</rgn> for this exercise. |
+   | `--location` | Specify a location from the following list: [!include[](../../../includes/azure-sandbox-regions-note.md)] |
+   | `--admin-user` | Specify the admin username for your server. |
+   | `--admin-password` | Specify the admin password for your server. |
+   | `--sku-name` | For this exercise, specify `B_Gen5_1` for pricing tier B, generation 5 hardware, and 1 vCore. |
+   | `--storage-size` | Specify the storage capacity of the server in megabytes. |
+   | `--backup-retention` | Specify the number of days a backup is retained. |
+   | `--version` | Specify the major version of the server. |
 
-    ```azurecli
-    az postgres server create \
-        --name <unique_server_name> \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --location eastus \
-        --sku-name B_Gen5_1 \
-        --storage-size 20480 \
-        --backup-retention 15 \
-        --version 10 \
-        --admin-user <admin_user_name> \
-        --admin-password <server_admin_password>
-    ```
+   For example:
+   
+   ```azurecli
+   az postgres server create \
+      --name wingtiptoys \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --location centralus \
+      --sku-name B_Gen5_1 \
+      --storage-size 20480 \
+      --backup-retention 15 \
+      --version 10 \
+      --admin-user "azureuser" \
+      --admin-password "P@ssw0rd"
+   ```
 
-    The system will take a few minutes to process the information when executed. Go ahead and wait for the command to complete.
+2. The system will take a few minutes to process the information when executed. Go ahead and wait for the command to complete.
 
-    Once it's done, a JavaScript Object Notation (JSON) string that describes the server is returned. If there was a failure, an error message is displayed. You can use this error information to review and fix your command parameters and try again.
+3. Once the command has completed, a JavaScript Object Notation (JSON) string that describes the server is returned. If there was a failure, an error message is displayed. You can use this error information to review and fix your command parameters and try again.
 
-    The JSON object will look something like:
+   The JSON object will look something like:
 
-    ```json
-    {
+   ```json
+   {
       "administratorLogin": "azureuser",
       "earliestRestoreDate": "2018-09-17T00:35:50.170000+00:00",
-      "fullyQualifiedDomainName": "secondserver8.postgres.database.azure.com",
-      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/<rgn>[sandbox Resource Group]</rgn>/providers/Microsoft.DBforPostgreSQL/servers/secondserver8",
-      "location": "eastus",
-      "name": "secondserver8",
+      "fullyQualifiedDomainName": "wingtiptoys.postgres.database.azure.com",
+      "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/<rgn>[sandbox Resource Group]</rgn>/providers/Microsoft.DBforPostgreSQL/servers/wingtiptoys",
+      "location": "centralus",
+      "name": "wingtiptoys",
       "resourceGroup": "<rgn>[sandbox Resource Group]</rgn>",
       "sku": {
         "capacity": 1,
@@ -67,7 +80,7 @@ Keep in mind you want to set your server storage size at 20 GB, compute Gen 5 su
       "type": "Microsoft.DBforPostgreSQL/servers",
       "userVisibleState": "Ready",
       "version": "10"
-    }
-    ```
+   }
+   ```
 
 You've successfully created a PostgreSQL server using the Azure CLI. In the next unit, you'll see how to configure your server's security settings.

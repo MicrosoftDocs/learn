@@ -20,7 +20,6 @@ abstract: |
   - Write a transformation query.
   - Start a Stream Analytics job.
 prerequisites: An Azure account or active trial
-ratingEnabled: true
 iconUrl: /learn/achievements/data-ai/transform-data-with-azure-stream-analytics-badge.svg
 levels:
 - beginner

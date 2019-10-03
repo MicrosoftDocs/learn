@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.manage-build-dependencies.4-create-feed
+title: Exercise - Create a package feed in Azure Artifacts
+metadata:
+  title: Exercise - Create a package feed in Azure Artifacts
+  description: Set up Azure Artifacts and create a new feed that hosts your package.
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-create-feed.md)]

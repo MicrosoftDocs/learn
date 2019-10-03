@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.control-authentication-with-apim
+metadata:
+  title: Control authentication for your APIs with Azure API Management
+  description: Discover how to protect your APIs from unauthorized use with API keys and client certificate authentication.
+  ms.date: 07/08/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Control authentication for your APIs with Azure API Management
+summary: Discover how to protect your APIs from unauthorized use with API keys and client certificate authentication.
+abstract: | 
+  In this module, you will:
+  - Use API keys to secure your APIs
+  - Use client certificate authentication to secure your APIs
+prerequisites: | 
+  - Basic understanding of certificates
+  - Basic understanding of API Management
+iconUrl: /learn/achievements/control-authentication-with-apim.svg
+levels:
+- intermediate
+roles:
+- solution-architect
+- developer
+products:
+- azure
+- azure-api-management
+units:
+- learn.control-authentication-with-apim.1-introduction
+- learn.control-authentication-with-apim.2-create-subscriptions-in-apim
+- learn.control-authentication-with-apim.3-exercise-create-subscriptions-in-apim
+- learn.control-authentication-with-apim.4-secure-access-client-certs
+- learn.control-authentication-with-apim.5-exercise-secure-access-client-certs
+- learn.control-authentication-with-apim.6-summary
+badge:
+  uid: learn.control-authentication-with-apim.badge

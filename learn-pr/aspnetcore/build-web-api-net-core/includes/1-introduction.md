@@ -15,5 +15,5 @@ In this module, you will:
 
 ## Prerequisites
 
-* A basic understanding of C#
-* Knowledge of RESTful services and HTTP action verbs
+* Experience writing C# at the beginner level
+* Familiarity with RESTful service concepts and HTTP action verbs, such as GET, POST, PUT, and DELETE

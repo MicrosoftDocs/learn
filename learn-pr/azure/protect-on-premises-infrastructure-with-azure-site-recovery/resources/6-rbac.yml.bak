@@ -1,0 +1,43 @@
+### YamlMime:ModuleUnit
+uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.6-rbac
+metadata:
+  title: Role-based access control in Azure Site Recovery
+  description: TODO
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Role-based access control in Azure Site Recovery
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-rbac.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of these roles is not a built-in role within Azure?"
+    choices:
+    - content: Owner
+      isCorrect: false
+      explanation: Owner is a built-in role within Azure.
+    - content: Contributor
+      isCorrect: false
+      explanation: Contributor is a built-in role within Azure.
+    - content: Full Access Administrator
+      isCorrect: true
+      explanation: Full Access Administrator is not a built-in role within Azure
+    - content: User Access Administrator
+      isCorrect: false
+      explanation: User Access Administrator is a built-in role within Azure.
+  - content: "You wish to assign a user the right to monitor Azure recovery operations, which of the below roles would grant this permission by assigning the least amount of access to the user?"
+    choices:
+    - content: Site Recovery Reader
+      isCorrect: true
+      explanation: This role should be assigned to fulfill the given requirement. It grants the user the ability to monitor Site Recovery operations without granting permissions to anything extra. 
+    - content: Site Recovery Operator
+      isCorrect: false
+      explanation: This role would not provide the access needed in this situation.
+    - content: Site Recovery Contributor    
+      isCorrect: false
+      explanation: This role would grant the permission to monitor Site Recovery operations, however, it would also grant more permission than needed to the user to do their job, therefore it is incorrect.

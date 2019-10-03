@@ -11,4 +11,4 @@ In this module, you will:
 - Create an Azure Cosmos DB account
 - Set the initial throughput volume for your database using request units
 - Choose a partition key
-- Create a database and collection for NoSQL data in Azure Cosmos DB
+- Create a database and container for NoSQL data in Azure Cosmos DB
