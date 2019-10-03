@@ -30,4 +30,5 @@ To learn more about some of the topics discussed in this module, refer to the fo
 - [Building zero-trust networks with Microsoft 365](https://www.microsoft.com/security/blog/2018/06/14/building-zero-trust-networks-with-microsoft-365/)
 - [Using customer-managed keys in Azure Key Vault with Storage Service Encryption](https://docs.microsoft.com/azure/storage/common/storage-service-encryption-customer-managed-keys)
 - [Start using Azure Active Directory Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started)
-- [Best practices for monitoring cloud applications](https://docs.microsoft.com/en-us/azure/architecture/best-practices/monitoring)
+- [Best practices for monitoring cloud applications](https://docs.microsoft.com/azure/architecture/best-practices/monitoring)
+- [Implement Security Validations for Application Development](https://docs.microsoft.com/azure/devops/migrate/security-validation-cicd-pipeline?view=azure-devops)
