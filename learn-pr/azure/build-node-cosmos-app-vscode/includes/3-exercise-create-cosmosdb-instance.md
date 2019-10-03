@@ -2,7 +2,7 @@ The Azure Cosmos DB extension enables you to create and manage Cosmos DB databas
 
 In the sample scenario, you want to be able to work within Visual Studio Code, both as a development environment for building applications, and also as a tool for managing your Cosmos DB databases.
 
-In this exercise, you'll install the Cosmos DB extension for Visual Studio Code. Then, you'll use the extension to connect to your Azure account and create a Cosmos DB account. You'll add a database and collection for holding student's course grade information to the Cosmos DB account. Finally, you'll create some test documents in the collection, view them, and update them.
+In this exercise, you'll install the Cosmos DB extension for Visual Studio Code. Then, you'll use the extension to connect to your Azure account and create a Cosmos DB account. You'll add a database and collection for holding students' course grade information to the Cosmos DB account. Finally, you'll create some test documents in the collection, view them, and update them.
 
 This exercises runs on your desktop computer.
 
@@ -36,7 +36,7 @@ This exercises runs on your desktop computer.
 
     A web browser window will open. Follow the instructions and sign in to your Azure account. When you've signed in, close the browser window and return to Visual Studio Code.
 
-4. In the Cosmos DB pane, in Visual Studio Code, in the toolbar, click **Create Account** (the **+** sign)
+4. In the Cosmos DB pane, in the toolbar, click **Create Account** (the **+** sign)
 
     ![Screenshot of the Cosmos DB pane in Visual Studio Code. The user has selected the **Create Account** command](../media/3-add-comsosdb-account.png)
 
@@ -76,7 +76,7 @@ This exercises runs on your desktop computer.
     This collection will hold `Course` and `Student` documents. Course grades will be held as an array of subdocuments with each student. The data will be partitioned by academic year.
 
     > [!NOTE]
-    > Academic year might not seem to be the best partition key for a real world example as it could lead to hot partitions when inserting and modifying data. Information for the current year is likely to attract the most traffic. It is used in this module to keep the example code simple. In a production system, you might partition the data by some other key that distributes inserts across multiple partitions. Student ID might appear to be a good example of such a key initially. However, you also have to consider other factors, especially if you are running queries that fetch data by academic year, or are using stored procedures as described later in this unit. If you want to query course grades by academic year, the fastest way is to perform single partition queries. Similarly, if you want to process course grade documents for a single year as an atomic unit using a stored procedure, the documents must all reside in the same partition. You must be prepared to consider the balance between different workloads and their frequency when determining the most optimal partition key.
+    > Academic year might not seem to be the best partition key as it could lead to hot partitions when inserting and modifying data. Information for the current year is likely to attract the most traffic. It is used in this module to keep the example code simple. In a production system, you might partition the data by some other key that distributes inserts across multiple partitions. Student ID might appear to be a good example of such a key initially. However, you also have to consider other factors, especially if you are running queries that fetch data by academic year, or are using stored procedures as described later in this unit. If you want to query course grades by academic year, the fastest way is to perform single partition queries. Similarly, if you want to process course grade documents for a single year as an atomic unit using a stored procedure, the documents must all reside in the same partition. You must be prepared to consider the balance between different workloads and their frequency when determining the most optimal partition key.
 
 5. In the **Initial throughput capacity** box, accept the default value of **1000**, and then press Enter.
 
@@ -150,8 +150,8 @@ This exercises runs on your desktop computer.
 
     ```text
     "Name": {
-            "Forename" : "Aaaa",
-            "Lastname" : "Bbbb"
+        "Forename" : "Aaaa",
+        "Lastname" : "Bbbb"
     },
     ```
 
@@ -161,14 +161,14 @@ This exercises runs on your desktop computer.
 
     ```text
     "CourseGrades": [
-            {
-                    "Course": "C101",
-                    "Grade": "A"
-            },
-            {
-                    "Course": "C102",
-                    "Grade": "B"
-            }
+        {
+            "Course": "C101",
+            "Grade": "A"
+        },
+        {
+            "Course": "C102",
+            "Grade": "B"
+        }
     ],
     ```
 
@@ -180,14 +180,14 @@ This exercises runs on your desktop computer.
 
     ```text
     "Name": {
-            "Forename" : "Cccc",
-            "Lastname" : "Dddd"
+        "Forename" : "Cccc",
+        "Lastname" : "Dddd"
     },
     "CourseGrades": [
-            {
-                    "Course": "C101",
-                    "Grade": "C"
-            }
+        {
+            "Course": "C101",
+            "Grade": "C"
+        }
     ],
     ```
 
