@@ -63,7 +63,7 @@ do
 while (current >= 3)
 {
     Console.WriteLine(current);
-    current = random.Next(11);
+    current = random.Next(1, 11);
 }
 Console.WriteLine($"Last number: {current}");
 ```
@@ -102,7 +102,7 @@ do
 while (current >= 3)
 {
     Console.WriteLine(current);
-    current = random.Next(11);
+    current = random.Next(1, 11);
 }
 Console.WriteLine($"Last number: {current}");
 */
