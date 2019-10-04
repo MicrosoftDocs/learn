@@ -20,6 +20,7 @@ In this module, you worked with ASP.net Core, SQL Server Data Tools, Azure SQL, 
 - [Azure SQL Database Deployment task](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/sql-azure-dacpac-deployment?view=azure-devops&azure-portal=true)
 - [Configure an App Service app in the Azure portal](https://docs.microsoft.com/azure/app-service/configure-common?azure-portal=true)
 - [Passing a variable from stage to stage in Azure DevOps](http://donovanbrown.com/post/Passing-variables-from-stage-to-stage-in-Azure-DevOps-release?azure-portal=true)
+- [Azure DevOps Services REST API](https://docs.microsoft.com/rest/api/azure/devops/search/?view=azure-devops-rest-5.1&azure-pipelines=true)
 
 Here are the Microsoft Learn modules mention in this module:
 

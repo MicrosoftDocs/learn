@@ -30,7 +30,7 @@ This branch serves as your _release_ branch. It contains the _Space Game_ projec
 Here you use [Azure portal](https://portal.azure.com?azure-portal=true) to create the database. In later learning paths you will create your infrastructure using the pipeline.
 
 1. Navigate to your [Azure portal](https://portal.azure.com?azure-portal=true) and create a new Azure SQL database, database server and resource group for the resources you will need in this and the next exercise.
- 1. In the left pane, select **+ Create a resource**, **Databases**, and then **SQL Database**.
+1. In the left pane, select **+ Create a resource**, **Databases**, and then **SQL Database**.
 
     ![The "New" page in the Azure portal showing the databases options that are available in the Azure Marketplace](../media/3-new-database-annotated.png)
 
@@ -282,6 +282,8 @@ To do so, you:
     tailspin-space-game-web-staging-21017.azurewebsites.net  Running
     ```
 
+### Configure the App Service to use the connection string
+
 1. Configure the connection string to the database in each App Service. Use the names of the app services you discovered above. Be sure to replace the **NNN** with your random number. Replace \<paste your connection string here\> with your connection string. Make sure you have replaced the `{your_username}` and `{your_password}` with the username and password you set up when you created the database.
 
     ``` bash
@@ -301,7 +303,7 @@ To do so, you:
         --connection-string-type SQLAzure
     ```
 
-    This will create an application setting called **DefaultConnection** that the application can use to connect to the database. This allows us to use the connection string without having to set it in the appSettings.json file and have it in plain text in source control.
+    This will create an application setting called **DefaultConnection** that the application can use to connect to the database. This allows us to use the connection string without having to set it in the appSettings.json file and have it in plain text in source control. Anyone with read access to the App Service can read this configuration file. You will normally set permissions on the App Service to restrict who has read access. You can use an Azure key vault to store the string as well. More information on that is provided in the links in the summary of this module.
 
 > [!IMPORTANT]
 > Remember, the [Clean up your Azure DevOps environment](/learn/modules/create-a-release-management-workflow/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
@@ -372,14 +374,14 @@ To add the variable:
 
 ## Add the database stage to the pipeline
 
-Here you add the pipeline stage that will check for database schema changes so the database administrator can approve or edit the proposed changes. In this exercise, there will not be any schema changes. You do that in the next exercise.
+Here you add the pipeline stage that will check for database schema changes so the database administrator can approve or edit the proposed changes. In this exercise, there won't be any schema changes. You do that in the next exercise.
 
-1. Open the **azure-pipelines.yml** file you got when you switched to the **database** branch.
+1. Open the **azure-pipelines.yml** file from the **database** branch.
 1. Copy the new pipeline below and replace the code that is already in the **azure-pipelines.yml** file.
 
     [!code-yml[](code/azure-pipelines1.yml?highlight=78-94,96-130,132-160)]
 
-    This pipeline adds a new build job for the Tailspin.SpaceGame.Database project. This will result in a `.dacpac` file being created that contains information about the database schema. That `.dacpac` file will be copied and saved off as an artifact called **dropDacpac**.
+    This pipeline adds a new build job for the Tailspin.SpaceGame.Database project. This will result in a `.dacpac` file being created that contains information about the database schema. That `.dacpac` file will be copied to a staging directory in the pipeline and then published as an artifact called **dropDacpac**.
 
     ```yml
     - task: VSBuild@1
@@ -402,7 +404,7 @@ Here you add the pipeline stage that will check for database schema changes so t
 
     The new stages are `DBAVerificationScript` and `DBAVerificationApply`.
 
-    The `DBAVerificationScript` stage will read the `.dacpac` file and create a change script for the database. We then write out that change script so the database administrator can approve the changes before the changes are applied to the database.
+    The `DBAVerificationScript` stage will read the `.dacpac` file and create a change script for the database. Then you use a powershell script to write out that change script so the database administrator can approve the changes before the changes are applied to the database.
 
     ```yml
     - task: SqlAzureDacpacDeployment@1
@@ -472,9 +474,7 @@ Here you create the manual approval for the `DBAVerificationApply` stage. You le
 
 1. On the **Use manual approvals** page, select **Create**.
 1. Under **Approvers**, select **Add users and groups** and then select your account.
-1. Under **Instructions to approvers**, enter:
-
-    > Approve this change to the database schema.
+1. Under **Instructions to approvers**, enter **Approve this change to the database schema**.
 1. Select **Create**.
 
 ## Run the pipeline

@@ -6,7 +6,7 @@ Here, you fetch the `database-changes` branch from GitHub and checkout, or switc
 
 This branch contains the _Space Game_ project with the changes to the web site code that expects the Profile table to have a `favoriteMap` column. This new column's data will be displayed on the Profile page as **Favorite Galaxy:**. It also has the Azure Pipelines configuration you created in the last unit.
 
-In the Tailspin.SpaceGame.Database project, a change has been made to the Profile table. The `favoriteMap` column has been added. Optionally, if you are on a Windows machine with SQL Server Data Tools installed and open the solution in Visual Studio, you will see a `dbo` folder. This will have the scripts for each of the tables. Open the **Profiles.sql** and see that the new column is there.
+In the Tailspin.SpaceGame.Database project, a change has been made to the Profile table. The `favoriteMap` column has been added. 
 
 1. In Visual Studio Code, open the integrated terminal.
 1. Run the following `git` commands to fetch a branch named `database-changes` from Microsoft's repository and switch to that branch.
@@ -15,6 +15,8 @@ In the Tailspin.SpaceGame.Database project, a change has been made to the Profil
     git fetch upstream database-change
     git checkout database-change
     ```
+
+1. Open the `dbo` folder in the database project. This will have the scripts for each of the tables. Open the **Profiles.sql** and see that the new column is there.
 
 1. Use an empty commit to run the pipeline.
 
@@ -64,7 +66,7 @@ In this section you add to the PowerShell script that created the change file an
 
 ### Passing a pipeline variable change between stages
 
-If the keyword search returns a match, create a variable in the pipeline variable group and set its value to true. If the variable is in the pipeline variable group, it can be seen by all stages. Setting a new variable in a stage is only scoped to that stage. Here you use a PowerShell library created by Donovan Brown, [VSTeam](https://www.powershellgallery.com/packages/VSTeam/6.3.5?azure-portal=true), that uses the Azure Pipelines REST API to access Azure Pipelines. Again, do not copy this yet. Soon you will replace the entire **azure-pipelines.yml** file contents as you did in the previous exercise.
+If the keyword search returns a match, create a variable in the pipeline variable group and set its value to true. If the variable is in the pipeline variable group, it can be seen by all stages. Setting a new variable in a stage is only scoped to that stage. Here you use a PowerShell library created by Donovan Brown, [VSTeam](https://www.powershellgallery.com/packages/VSTeam/6.3.5?azure-portal=true), that uses the [Azure DevOps Services REST API](https://docs.microsoft.com/rest/api/azure/devops/search/?view=azure-devops-rest-5.1&azure-pipelines=true) to access Azure DevOps Services. Again, do not copy this yet. Soon you will replace the entire **azure-pipelines.yml** file contents as you did in the previous exercise.
 
   ```powershell
    if ($containsWord -contains $true) {
@@ -92,6 +94,27 @@ If the keyword search returns a match, create a variable in the pipeline variabl
 
 In the `DBAVerificationApply` stage, you do the same thing, however instead of creating a variable, you remove it.
 
+  ```powershell
+    Write-Host "remove pipeline variable"
+    Install-Module VSTeam -Scope CurrentUser -Force
+    Set-VSTeamAccount –Account $(Acct) -PersonalAccessToken $(PAT)
+    $methodParameters = @{
+      ProjectName = "$(System.TeamProject)"
+      Name = "Release Pipeline"}
+    $vg = Get-VSTeamVariableGroup  @methodParameters 
+    $vars = @{}
+    $vg.value.variables | Get-Member -MemberType *Property | %{$vars.($_.Name) = $vg.value.variables.($_.Name)}
+    $vars.Remove("schemaChanged")
+    $methodParameters = @{
+      id = $vg.value.id
+      ProjectName = "$(System.TeamProject)"
+      Name = "Release Pipeline"
+      Description = "Variables for Tailspin Pipeline"
+      Type = "Vsts"
+      Variables = $vars}
+    Update-VSTeamVariableGroup @methodParameters
+   ```
+
 ### Edit the pipeline to use a condition
 
 Here you add a condition to the `DBAVerificationApply` stage to check that the new variable is set to true. The variable will not exist if there are no changes to the database schema and this stage will be skipped. Again, do not copy this yet. Soon you will replace the entire **azure-pipelines.yml** file contents as you did in the previous exercise.
@@ -112,7 +135,7 @@ The VSTeam library needs to access your Azure DevOps organization, so it will ne
 1. Select **Azure DevOps Profile**
 1. In the **User Settings** pane on the left, under **Security**, select **Personal access tokens**.
 
-       ![Profile page select personal access token](../media/5-select-personal-access-token.png)
+  ![Profile page select personal access token](../media/5-select-personal-access-token.png)
 
 1. Select **+ New Token**
 1. Enter **Database Changes** as the name and select **Full access**.
@@ -131,7 +154,7 @@ The VSTeam library needs to access your Azure DevOps organization, so it will ne
 1. Open the **azure-pipelines.yml** file you got when you switched to the **database-change** branch.
 1. Copy the new pipeline below and replace the code that is already in the **azure-pipelines.yml** file.
 
-    [!code-yml[](code/azure-pipelines2.yml?highlight=131-153,158,1193-219)]
+    [!code-yml[](code/azure-pipelines2.yml?highlight=131-153,158,193-219)]
 
     This pipeline adds to the PowerShell script to check the generated SQL script for the keywords **CREATE**, **ALTER**, or **DROP** and creates a `schemaChanged` variable and updates the pipeline variable group. Then a condition is added to the `DBAVerificationApply` stage to check for this variable. If this variable is `True`, there is a change that needs approval, if it is not there, then there are no changes in the script and this stage is skipped because the condition fails.
 

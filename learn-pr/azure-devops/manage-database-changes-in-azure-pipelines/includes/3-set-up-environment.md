@@ -1,3 +1,5 @@
+TODO: Change this to match the other modules.
+
 In this section, you make sure that your Azure DevOps organization is set up to complete the rest of this module.
 
 To do this, you:
