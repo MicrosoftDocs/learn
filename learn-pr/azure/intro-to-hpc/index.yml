@@ -23,6 +23,8 @@ roles:
 - solution-architect
 products:
 - azure
+- azure-batch
+- azure-virtual-machines
 units:
 - learn.intro-to-hpc.1-introduction
 - learn.intro-to-hpc.2-azure-batch
