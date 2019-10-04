@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-ip-addressing-for-azure.5-exercise-implement-vnets-and-deploy-vms
+uid: learn.design-ip-addressing-for-azure.5-exercise-implement-vnets
 metadata:
   title: Exercise - Design and implement IP addressing for Azure virtual networks
   description: Exercise - Design and implement IP addressing for Azure virtual networks
@@ -14,4 +14,4 @@ durationInMinutes: 10
 interactive: bash
 azureSandbox: true
 content: |
-  [!include[](includes/5-exercise-implement-vnets-and-deploy-vms.md)]
+  [!include[](includes/5-exercise-implement-vnets.md)]

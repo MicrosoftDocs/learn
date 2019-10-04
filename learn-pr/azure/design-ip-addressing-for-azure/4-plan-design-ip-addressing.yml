@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-ip-addressing-for-azure.4-plan-and-design-ip-addressing-for-your-networks
+uid: learn.design-ip-addressing-for-azure.4-plan-design-ip-addressing
 metadata:
   title: Planning the IP addressing for your networks
   description: Planning the IP addressing for your networks
@@ -12,7 +12,7 @@ metadata:
 title: Planning the IP addressing for your networks
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-plan-and-design-ip-addressing-for-your-networks.md)]
+  [!include[](includes/4-plan-design-ip-addressing.md)]
 quiz:
   title: "Check your knowledge"
   questions:

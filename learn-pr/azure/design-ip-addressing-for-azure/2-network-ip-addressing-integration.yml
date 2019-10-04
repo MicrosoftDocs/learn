@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-ip-addressing-for-azure.2-network-ip-addressing-and-integration
+uid: learn.design-ip-addressing-for-azure.2-network-ip-addressing-integration
 metadata:
   title: Network IP addressing and integration
   description: Network IP addressing and integration
@@ -12,7 +12,7 @@ metadata:
 title: Network IP addressing and integration
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-network-ip-addressing-and-integration.md)]
+  [!include[](includes/2-network-ip-addressing-integration.md)]
 quiz:
   title: "Check your knowledge"
   questions:

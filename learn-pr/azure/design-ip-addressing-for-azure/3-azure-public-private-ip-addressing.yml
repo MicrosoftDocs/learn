@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-ip-addressing-for-azure.3-public-and-private-ip-addressing-in-azure
+uid: learn.design-ip-addressing-for-azure.3-azure-public-private-ip-addressing
 metadata:
   title: Public and private IP addressing in Azure
   description: Public and private IP addressing in Azure
@@ -12,7 +12,7 @@ metadata:
 title: Public and private IP addressing in Azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-public-and-private-ip-addressing-in-azure.md)]
+  [!include[](includes/3-azure-public-private-ip-addressing.md)]
 quiz:
   title: "Check your knowledge"
   questions:

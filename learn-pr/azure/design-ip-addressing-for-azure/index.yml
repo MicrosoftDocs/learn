@@ -30,10 +30,10 @@ products:
 - azure-vpn-gateway
 units:
 - learn.design-ip-addressing-for-azure.1-introduction
-- learn.design-ip-addressing-for-azure.2-network-ip-addressing-and-integration
-- learn.design-ip-addressing-for-azure.3-public-and-private-ip-addressing-in-azure
-- learn.design-ip-addressing-for-azure.4-plan-and-design-ip-addressing-for-your-networks
-- learn.design-ip-addressing-for-azure.5-exercise-implement-vnets-and-deploy-vms
+- learn.design-ip-addressing-for-azure.2-network-ip-addressing-integration
+- learn.design-ip-addressing-for-azure.3-azure-public-private-ip-addressing
+- learn.design-ip-addressing-for-azure.4-plan-design-ip-addressing
+- learn.design-ip-addressing-for-azure.5-exercise-implement-vnets
 - learn.design-ip-addressing-for-azure.6-summary
 badge:
   uid: learn.design-ip-addressing-for-azure.badge
