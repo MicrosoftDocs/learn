@@ -6,7 +6,7 @@ Now that the CRUD actions have been added to the web API, it's time to test them
     curl -i -k \
         -H "Content-Type: application/json" \
         -d "{\"name\":\"Plush Squirrel\",\"price\":0.00}" \
-        https://localhost:5001/api/Products
+        https://localhost:5001/products
     ```
 
     In the preceding command:
@@ -42,7 +42,7 @@ Now that the CRUD actions have been added to the web API, it's time to test them
     curl -i -k \
         -H "Content-Type: application/json" \
         -d "{\"name\":\"Plush Squirrel\",\"price\":12.99}" \
-        https://localhost:5001/api/Products
+        https://localhost:5001/products
     ```
 
     The following text represents the response:
@@ -53,7 +53,7 @@ Now that the CRUD actions have been added to the web API, it's time to test them
     Content-Type: application/json; charset=utf-8
     Server: Kestrel
     Transfer-Encoding: chunked
-    Location: https://localhost:5001/api/Products/4
+    Location: https://localhost:5001/products/4
 
     {"id":4,"name":"Plush Squirrel","price":12.99}
     ```
@@ -67,7 +67,7 @@ Now that the CRUD actions have been added to the web API, it's time to test them
 1. Send an HTTP GET request to the web API:
 
     ```bash
-    curl -k -s https://localhost:5001/api/Products/3 | jq
+    curl -k -s https://localhost:5001/products/3 | jq
     ```
 
     The following output is displayed, proving that the new product was persisted to the in-memory database:
@@ -87,7 +87,7 @@ Now that the CRUD actions have been added to the web API, it's time to test them
         -X PUT \
         -H "Content-Type: application/json" \
         -d "{\"id\":2,\"name\":\"Knotted Rope\",\"price\":14.99}" \
-        https://localhost:5001/api/Products/2
+        https://localhost:5001/products/2
     ```
 
     The preceding command changes the price from 12.99 to 14.99. The retailer has decided to increase the price of the Knotted Rope product.
@@ -103,7 +103,7 @@ Now that the CRUD actions have been added to the web API, it's time to test them
 1. Send an HTTP DELETE request to the web API:
 
     ```bash
-    curl -i -k -X DELETE https://localhost:5001/api/Products/1
+    curl -i -k -X DELETE https://localhost:5001/products/1
     ```
 
     The preceding command deletes the product from the in-memory database. The supplier for the Squeaky Bone product has filed for bankruptcy. The product can no longer be ordered and the retailer has no inventory remaining.
@@ -119,7 +119,7 @@ Now that the CRUD actions have been added to the web API, it's time to test them
 1. Send an HTTP GET request to the web API:
 
     ```bash
-    curl -k -s https://localhost:5001/api/Products | jq
+    curl -k -s https://localhost:5001/products | jq
     ```
 
     The updated inventory is displayed:
