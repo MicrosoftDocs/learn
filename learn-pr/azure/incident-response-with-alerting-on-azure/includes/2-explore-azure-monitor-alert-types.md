@@ -6,12 +6,12 @@ In this unit, you'll see how Azure Monitor receives resource data, what makes up
 
 ## Data types in Azure Monitor
 
-![An image representing the target resources feeding into Azure Monitor and the two principle signal types: metrics and logs](../media/2-azure-resource-signal-types.png)
-
 Azure Monitor receives data from multiple target resources such as applications, operating systems, Azure resources, Azure subscriptions, or Azure tenants. The nature of the resource defines which data types are available. A data type will be one of metric, log, or metric and log.
 
 - The focus for **metric** based data types is the numerical time-sensitive values that represent some aspect of the target resource.
 - The focus for **log** based data types is the querying of content data held in structured, record-based, log files that are relevant to the target resource.
+
+![An image representing the target resources feeding into Azure Monitor and the two principle signal types: metrics and logs](../media/2-azure-resource-signal-types.svg)
 
 You'll learn about the three different signal types that you can use to monitor your environment:
 
@@ -21,7 +21,7 @@ You'll learn about the three different signal types that you can use to monitor 
 
 ## Composition of an alert rule
 
-![text](../media/2-creating-an-alert.png)
+![Image of the create rule page for Azure Monitor in the portal](../media/2-creating-an-alert.png)
 
 Every alert or notification available in Azure Monitor is the product of a rule. Some of these rules are built into the Azure platform. You use alert rules to create custom alerts and notifications. No matter which target resource or data source you use, the composition of an alert rule remains the same.
 
