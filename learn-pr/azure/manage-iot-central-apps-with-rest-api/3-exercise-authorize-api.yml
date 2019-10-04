@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 2
+durationInMinutes: 5
 azureSandbox: true
 interactive: bash
 content: |
