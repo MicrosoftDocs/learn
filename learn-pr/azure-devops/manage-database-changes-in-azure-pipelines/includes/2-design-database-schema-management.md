@@ -63,7 +63,7 @@ TODO: (screenshot)
 
 The connection string uses _SQL Authentication_ which has a username and password entry. Storing this information in plain text in the appSettings.json file would mean that the username and password would be readable by anyone that has access to the file. Instead, Mara has used the _Secret Manager_ tool in Visual Studio to store this string in a file that will not be uploaded to GitHub. Let's listen in as she explains this to the team.
 
-**Mara:** Locally, we can use a secrets.json file that doesn't get pushed to GitHub. Visual Studio can set that up for us using the _Secret Manager_ tool. But when the actual web site needs it, it can be added as a setting right in the Azure App Service and we won't need to add it to our appSettings.json file. Another advantage to using App Service. Since we are using Azure DevOps, we'll create an encrypted pipeline variable and use that to set the App Service setting.
+**Mara:** Locally, we can use a secrets.json file that doesn't get pushed to GitHub. Visual Studio can set that up for us using the _Secret Manager_ tool. But when the actual web site needs it, it can be added as a setting right in the Azure App Service and we won't need to add it to our appSettings.json file. Another advantage to using App Service.
 
 **Andy:** Good idea Mara. Now we are getting somewhere.
 
