@@ -81,11 +81,12 @@ Amita opens Microsoft Word and adds a table that contains the XPath expression f
 
 Here's what her table looks like:
 
-| Feature                  | Link XPath                                                             | Modal XPath                            |
-|--------------------------|------------------------------------------------------------------------|----------------------------------------|
-| **Download game** button | `/html/body/div/div/section[2]/div[2]/a`                               | `//*[@id=\"pretend-modal\"]/div/div`   |
-| First game screen        | `/html/body/div/div/section[3]/div/ul/li[1]/a`                         | `/html/body/div[1]/div/div[2]`         |
-| Top leaderboard player   | `/html/body/div/div/section[4]/div/div/div[1]/div[2]/div[2]/div/a/div` | `//*[@id=\"profile-modal-1\"]/div/div` |
+> [!div class="mx-tableFixed"]
+> | Feature                  | Link XPath                                                             | Modal XPath                            |
+> |--------------------------|------------------------------------------------------------------------|----------------------------------------|
+> | **Download game** button | `/html/body/div/div/section[2]/div[2]/a`                               | `//*[@id=\"pretend-modal\"]/div/div`   |
+> | First game screen        | `/html/body/div/div/section[3]/div/ul/li[1]/a`                         | `/html/body/div[1]/div/div[2]`         |
+> | Top leaderboard player   | `/html/body/div/div/section[4]/div/div/div[1]/div[2]/div[2]/div/a/div` | `//*[@id=\"profile-modal-1\"]/div/div` |
 
 ## Plan the automated tests
 
