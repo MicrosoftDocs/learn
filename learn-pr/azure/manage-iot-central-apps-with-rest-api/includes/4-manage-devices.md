@@ -23,7 +23,7 @@ The capabilities in a device template are grouped into interfaces. Interfaces en
 
 ![Device information](../media/4-device-information.png)
 
-You create and manage device templates using the IoT Central web UI. You can either build a device template from scratch, or you can import a JSON file that contains a device capability model and interface definitions.
+You create and manage device templates using the IoT Central web UI. You can either build a device template from scratch, or you can import a JSON file that contains a device capability model and interface definitions. To author a JSON device capability model file, use the [Azure IoT Tools for VS Code extension pack](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools).
 
 ## Publish a device template
 
