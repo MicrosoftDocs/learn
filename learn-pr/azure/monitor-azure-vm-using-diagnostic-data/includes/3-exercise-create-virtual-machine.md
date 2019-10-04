@@ -9,9 +9,6 @@ In this exercise, you'll deploy a Linux virtual machine and enable boot diagnost
 1. Use the Cloud Shell on the right, create a virtual network for your VM.
 
     ```azurecli
-    USERNAME=learn-admin
-    PASSWORD=$(openssl rand -base64 32)
-    echo $PASSWORD > password-vault
 
     az network vnet create  \
     --name band-vnet \
@@ -43,9 +40,8 @@ In this exercise, you'll deploy a Linux virtual machine and enable boot diagnost
         --size Standard_B1s \
         --location eastus2 \
         --vnet-name band-vnet \
-        --authentication-type password \
-        --admin-password $PASSWORD \
-        --admin-username $USERNAME \
+        --admin-username azureuser
+        --generate-ssh-keys \
         --boot-diagnostics-storage $STORAGE \
         --resource-group <rgn>[sandbox resource group name]</rgn>
     ```

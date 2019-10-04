@@ -60,18 +60,12 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 1. Scroll to the top and select the **Overview** pane.
 1. Select **Connect**.
 1. Copy the **Login using VM local account** field.
-1. Use the following command in the Cloud Shell to get the VM password.
-
-    ```bash
-    cat password-vault
-    ```
 1. Connect to the VM by running the command you copied in the previous step. The n values are replaced by the IP address of your VM.
 
     ```bash
-    ssh learn-admin@nnn.nnn.nnn.nnn
+    ssh azureuser@nnn.nnn.nnn.nnn
     ```
 1. When prompted type **yes**.
-1. Paste your copied password.
 1. On your VM, install the stress utility app.
 
     ```bash
@@ -83,7 +77,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
     sudo stress --cpu 16 -v
     ```
 1. Return to the portal and at the top, select **Dashboard**, then select the **KPI Dashboard**.
-1. On the **Max CPU percentage guest OS for monitored-linux-vm** graph, select the ellipses **...** at the top right and  **Refresh**.
+1. On the **Max CPU percentage guest OS for monitored-linux-vm** graph, select the ellipses (**...**) at the top right and  **Refresh**.
 1. After a few minutes, the CPU should approach 100% and you'll receive an alert email.
 
     ![Screenshot of the alert email](../media/8-alert-email.png)

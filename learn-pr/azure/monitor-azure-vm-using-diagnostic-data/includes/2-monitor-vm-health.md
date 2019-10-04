@@ -40,4 +40,4 @@ To give you a full set of metrics, you'll need to install two utilities directly
 - Automate OS updates
 - Track VM configuration changes over time
 
-You can install these extensions by using the Azure portal or Azure CLI.
+You can install these extensions programmatically, or by using the Azure portal, Azure CLI, or PowerShell.

@@ -1,8 +1,8 @@
 If you need to capture more detailed performance metrics, or have access to them in near real time, install at least the Azure Diagnostic extension. After it's installed, you can configured it to capture what you need.
 
-Your band is on tour next month, and you have identified specific metrics you want to use to monitor the health of your virtual machine. The metrics that you want to monitor go beyond the host-level metrics available directly in the Azure portal. You've decided to enable guest diagnostics to provide further insights.
+Your band is on tour next month, and you have identified specific metrics you want to use to monitor the health of your virtual machine. The metrics that you want to monitor go beyond the host-level metrics available directly in the Azure portal. You've decided to enable guest diagnostics to get more data.
 
-In this unit, you'll look at installing the Azure diagnostics extension to monitor the health of a virtual machine. You'll learn how to enable guest diagnostics at virtual machine creation time and for an already created virtual machine.
+In this unit, you'll see how to install the Azure diagnostics extension to monitor the health of a virtual machine. You'll learn how to enable guest diagnostics at virtual machine creation time and for an already created virtual machine.
 
 ## Installing the Azure diagnostics extension
 
@@ -16,7 +16,7 @@ If you've already created the VM, the easiest way to add the extension is by goi
 
 ![Screenshot of the diagnostic settings page, showing the enable page](../media/5-enable-diagnostics-portal.png)
 
-You can also add the extension by using Azure CLI or PowerShell.
+You can also add the extension by using Azure CLI or PowerShell. In Azure CLI, you'd use the command `az vm boot-diagnostics enable`. In PowerShell, you'd use the `Set-AzVMBootDiagnostic` command.
 
 The extension allows you to collect data about the CPU, disk, and memory values of the virtual machine.
 
@@ -33,7 +33,7 @@ You have different configuration options depending on the OS installed on the VM
 
 However you can choose to collect custom metrics like percentage of free disk space on Windows, or the amount of swap available on Linux.
 
-The best place to configure the extension is on the portal. The configuration is changed in the same place for both operation systems, on the **Diagnostic settings** page.
+You can configure the extension is on the portal. The configuration is changed in the same place for both operation systems, on the **Diagnostic settings** page.
 
 ![Screenshot of the diagnostics settings page](../media/5-diagnostics-settings-on.png)
 

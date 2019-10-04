@@ -48,8 +48,19 @@ You'll use the portal to enable guest-level metric monitoring of the VM. When yo
 1. Select the **Finish editing** check mark.
 1. At the top of the chart, select **Pin to dashboard** > **Select another dashboard**.
 1. In the **Pin to another dashboard** pane, select **Create new**.
-1. Enter **KPI Dashboard** for the **Dashboard name**, then select **Apply**.
-    ![Screenshot of the Pin to another dashboard popout](../media/6-create-a-dashboard.png)
+1. Use the following values:
+
+   |Field  |Value  |
+   |---------|---------|
+   |Dashboard name     |KPI Dashboard         |
+   |Subscription   |   Concierge Subscription    |
+   |Publish to the dashboard resource group   |    Deselect the check box     |
+   |Resource group     |  <rgn>[sandbox resource group name]</rgn>       |
+
+    
+    ![Screenshot that shows the Pin to another dashboard pane filled out](../media/6-create-a-dashboard.png)
+
+1. Select **Apply**.
 1. Close the pane.
 
 ### Add a free memory percentage graph
