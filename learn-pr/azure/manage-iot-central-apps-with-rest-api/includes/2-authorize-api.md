@@ -30,7 +30,7 @@ You use an application template to pre-populate your application with dashboards
 
 ## How IoT Central authorizes REST API calls
 
-Every REST API call that's made against an IoT Central application must include an **Authorization** header. The **Authorization** header must contain either an API token that your IoT Central application issued, or a bearer token that you generate using `az account get-access-token`. This module uses an API token from IoT Central. The API token determines the level of access to be granted to the caller. The access levels map to the standard roles in an IoT Central application:
+Every REST API call that's made against an IoT Central application must include an **Authorization** header. The **Authorization** header must contain either an API token that your IoT Central application issued, or a bearer token that you generate using the `az account get-access-token` CLI command. This module uses an API token from IoT Central. The API token determines the level of access to be granted to the caller. The access levels map to the standard roles in an IoT Central application:
 
 - **Application administrator** grants access to all API calls
 - **Application builder** grants access to API calls that create, edit, and delete device templates and devices.
@@ -43,7 +43,7 @@ You can generate an IoT Central API token in two ways:
 - In the **Administration** section in your application's web UI.
 - Using the REST API.
 
-To generate an API token using the REST API, you must already have an **Application administrator** API token to authorize the call. In other words, you must sign in to IoT Central web UI to get the first **Application administrator** API token, you can then generate additional tokens using the REST API.
+To generate an API token using the REST API, you must already have an **Application administrator** API token or a bearer token to authorize the call.
 
 The IoT Central REST API lets you:
 

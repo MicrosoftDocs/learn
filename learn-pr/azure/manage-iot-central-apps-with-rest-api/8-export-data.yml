@@ -27,7 +27,7 @@ quiz:
     - content: "Audit logs"
       isCorrect: false
       explanation: "No. You can't export audit logs from an IoT Central application."
-  - content: "What are valid destinations to export telemetry values to?"
+  - content: "Which is a valid destination for telemetry data export?"
     choices:
     - content: "Azure IoT Hub"
       isCorrect: false
