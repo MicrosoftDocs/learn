@@ -24,6 +24,24 @@ Use a public IP address for public-facing services. A public address can be eith
 
 **Static public IP addresses** are assigned addresses that will not change over the lifespan of the Azure resource. To ensure the IP address for the resource remains the same, you can set the allocation method explicitly to static. In this case, an IP address is assigned immediately. It is released only when you delete the resource or change the IP allocation method to dynamic.
 
+### Basic and Standard SKU
+
+For public IP addresses, there are two types of SKUs to choose from: **Basic** and **Standard**. All public IP addresses created before the introduction of SKUs are Basic SKU public IP addresses. With the introduction of SKUs, you have the option to specify which SKU you would like the public IP address to be.
+
+#### Basic
+
+Basic public IPs can be assigned with the static or dynamic allocation method. They have an adjustable inbound originated flow idle timeout of 4-30 minutes, with a default of 4 minutes, and fixed outbound originated flow idle timeout of 4 minutes. Basic IPs are open by default. It's recommended to use network security groups to restrict inbound or outbound traffic. Network security groups are recommended but optional for restricting inbound or outbound traffic.
+
+Basic public IPs can be assigned to any Azure resource that can be assigned a public IP address, such as network interfaces, VPN Gateways, Application Gateways, and Internet-facing load balancers. The do not support availability zone scenarios. You need to use Standard SKU public IP for availability zone scenarios.
+
+#### Standard
+
+Standard SKU public IP addresses always use static allocation method. They have an adjustable inbound originated flow idle timeout of 4-30 minutes, with a default of 4 minutes, and fixed outbound originated flow idle timeout of 4 minutes.
+
+Standard IPs are secure by default and closed to inbound traffic. You must explicitly whitelist allowed inbound traffic with a network security group.
+
+They can be assigned to network interfaces, Standard public Load Balancers, Application Gateways, or VPN Gateways. For more information about Standard Load Balancer, see Azure Standard Load Balancer. Standard IPs are zone redundant by default and optionally zonal (can be created zonal and guaranteed in a specific availability zone).
+
 ### Public IP address prefix
 
 You cannot bring your own public IP addresses from on-premises networks into Azure. Based on the location of the resource, the IP address is assigned from a pool of available addresses. Public IP addresses are allocated from a range unique to each region in each Azure cloud. Public IP addresses cannot be moved between regions, all addresses are region-specific. If your business needs to have data centers in different regions, you would have a different public IP address range for each region. You can use technology such as Azure traffic manager to balance between the region-specific instances.

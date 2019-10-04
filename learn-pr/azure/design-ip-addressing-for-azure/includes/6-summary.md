@@ -2,7 +2,7 @@ In this module, you have:
 
 - Identified the private & public IP addressing capabilities of Azure virtual networks.
 - Identified how to integrate on-premises networks with Azure.
-- Planned an IP address scheme for your Azure infrastructure.
+- Planned an IP address scheme for your Azure infrastructure and created virtual networks.
 
 Now that you understand how to plan IP addressing for Azure networks, you understand the private & public IP addressing capabilities of Azure virtual networks. You can now use this information to plan out the IP addressing for your own Azure infrastructure.
 
