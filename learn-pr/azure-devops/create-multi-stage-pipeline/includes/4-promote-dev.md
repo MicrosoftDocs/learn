@@ -30,7 +30,7 @@ Here you modify your pipeline configuration to promote the build to the _Dev_ st
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* like this.
 
-    [!code-yml[](code/4-azure-pipelines.yml?highlight=3,66.69-74,92)]
+    [!code-yml[](code/4-azure-pipelines.yml?highlight=3,66,69-74,92)]
 
     This configuration resembles the one you built in the previous module, where you and the team built a proof of concept around continuous deployment. However, note these differences, which are highlighted in the code example:
 
