@@ -46,6 +46,7 @@ A *Controller* is a public class with one or more public methods known as *actio
             // PUT action
 
             // DELETE action
+        }
     }
     ```
 
