@@ -13,3 +13,28 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/2-authorize-api.md)]
+quiz:
+  title: "Authorize with IoT Central"
+  questions:
+  - content: "Which of the following can you use to authorize an IoT Central REST API call?"
+    choices:
+    - content: "An API token in the Authorization header"
+      isCorrect: true
+      explanation: "Yes. It can be either an API token or bearer token."
+    - content: "Digest authentication"
+      isCorrect: false
+      explanation: "This isn't a supported option."
+    - content: "OAuth 2.0"
+      isCorrect: false
+      explanation: "This isn't a supported option."
+  - content: "How do you generate the first API token?"
+    choices:
+    - content: "In the Azure portal"
+      isCorrect: false
+      explanation: "You can't generate IoT Central API tokens in the Azure portal."
+    - content: "In the IoT Central application"
+      isCorrect: true
+      explanation: "Correct. You can generate a token in the Administration section of the web UI."
+    - content: "Using the REST API"
+      isCorrect: false
+      explanation: "No. You need an API token to use the REST API, so you must generate the first token in the web UI, or use a bearer token."
