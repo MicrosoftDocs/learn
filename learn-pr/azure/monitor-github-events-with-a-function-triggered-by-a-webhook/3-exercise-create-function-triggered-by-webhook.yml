@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.exercise-create-function-triggered-by-webhook
+metadata:
+  title: Exercise - Create an Azure function triggered by a webhook
+  description: Exercise - Create an Azure function triggered by a webhook
+  ms.date: 04/30/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Exercise - Create an Azure function triggered by a webhook
+durationInMinutes: 6
+azureSandbox: true
+content: |
+  [!include[](includes/3-exercise-create-function-triggered-by-webhook.md)]

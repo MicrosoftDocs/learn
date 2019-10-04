@@ -1,230 +1,133 @@
-In this unit, let's use an example to see how to use AutoML to get a recommended model for a certain problem.
+Let's use an example to illustrate how to use AutoML to generate a model recommendation for a certain problem. Here, we'll walk through some Python code to show how to execute an AutoML task and retrieve results.
 
-![Screenshot of AutoML Example](../media/4-automl-example.png)
+![The diagram depicts an example of how AutoML generates a high-quality model.](../media/4-automl-example.png)
 
-As the diagram shows, AutoML automates the model selection and hyperparameter tuning process. To use it, you need to:
+As the diagram illustrates, AutoML automates the processes for model selection and hyperparameter tuning. To use it, you must:
 
-- Define the source and format of the model training data
-- Configure the compute target to run the experiment
-- Define the machine learning objective and constraints
-- Launch the AutoML process, which allows Azure Machine Learning Service to automatically select the right algorithm and tune hyper parameters. In the process, AutoML iterates over different combinations of algorithms and hyper parameters until it finds the best model based on the objective
-- Retrieve and test the best model
-
-Although you can use any Python IDE to use the Azure Machine Learning service, you're going to use Azure Notebooks because it has the required Python modules pre-installed. If you have note already set up your Azure Notebook service to run the code examples in, the instructions below will explain how to do this. 
-
-What are Azure Notebooks?
-
-Azure Notebooks is a free hosted service to develop and run Jupyter notebooks in the cloud with no installation. Jupyter (formerly IPython) is an open source project that lets you easily combine markdown text, executable code (Python, R, and F#), persistent data, graphics, and visualizations onto a single, sharable canvas called a notebook.
-
-To get started with Azure Notebooks, use this link:
-
-https://docs.microsoft.com/azure/notebooks/quickstart-sign-in-azure-notebooks
-
-Follow the directions on the web page to get yourself set up and started with Azure Notebooks.
-
-There's lot of documentation at that link to help you learn how to use all the features of Azure Notebooks.
-
-Once you have your Azure Notebook environment set up and you are logged in, follow the instructions below to use Azure Machine Learning service with Python.
-
-In Azure Notebook, create a new notebook, choose the `Python 3.6` kernel. Sign in Azure portal if necessary.
-
+- Define the source and format of the model-training data.
+- Configure the compute target to run the experiment.
+- Define the machine learning objective and constraints.
+- Start the AutoML process.  This  allows the Azure Machine Learning service to select the right algorithm and tune the hyperparameters automatically. In the process, AutoML iterates over different combinations of algorithms and hyperparameters until it finds the best model based on the objective.
+- Retrieve and test the best model.
 
 ## Connect to your workspace
 
-To start off, you need to get the images to use in your experiment.  You can do this with the code below.
+You created a workspace earlier in, **Introduction to the Azure Machine Learning service**.  If that workspace is not available, you can create a new one to run the following code in. You will need to sign in with your Azure account and replace the *name*, *subscription_id*, and *resource_group* parameters with ones from your workspace:
 
 ```python
-import os
-import urllib.request
+from azureml.core import Workspace, Experiment, Run
 
-os.makedirs('./data', exist_ok = True)
+ws = Workspace.get(name='{name}',
+                   subscription_id='{azure-subscription-id}',
+                   resource_group='{resource-group-name}'
+                  )
 
-urllib.request.urlretrieve('http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz', filename='./data/train-images.gz')
-urllib.request.urlretrieve('http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz', filename='./data/train-labels.gz')
-urllib.request.urlretrieve('http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz', filename='./data/test-images.gz')
-urllib.request.urlretrieve('http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz', filename='./data/test-labels.gz')
-
-print('Execution Complete')
+print('Done')
 ```
 
-The data load code uses the helper functions below so run that code to define them.
+For input data, you will use a dataset built into Python's sklearn.datasets module that contains some sample diabetes data. The columns include age, sex, body mass index, average blood pressure, and six blood serum measurements on 442 diabetes patients, as well a quantitative measure of disease progression.  We want to build a model that can predict the disease progression after one year based given the same input variables.  
 
 ```python
-# function needed by downstream code...
+# Load the diabetes dataset, a well-known built-in small dataset that comes with scikit-learn.
+from sklearn.datasets import load_diabetes
+from sklearn.model_selection import train_test_split
 
-# Copyright (c) Microsoft Corporation. All rights reserved.
-# Licensed under the MIT License.
+X, y = load_diabetes(return_X_y = True)
 
-import gzip
-import numpy as np
-import struct
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 
-
-# load compressed MNIST gz files and return numpy arrays
-def load_data(filename, label=False):
-    with gzip.open(filename) as gz:
-        struct.unpack('I', gz.read(4))
-        n_items = struct.unpack('>I', gz.read(4))
-        if not label:
-            n_rows = struct.unpack('>I', gz.read(4))[0]
-            n_cols = struct.unpack('>I', gz.read(4))[0]
-            res = np.frombuffer(gz.read(n_items[0] * n_rows * n_cols), dtype=np.uint8)
-            res = res.reshape(n_items[0], n_rows * n_cols)
-        else:
-            res = np.frombuffer(gz.read(n_items[0]), dtype=np.uint8)
-            res = res.reshape(n_items[0], 1)
-    return res
-
-
-# one-hot encode a 1-D array
-def one_hot_encode(array, num_of_classes):
-    return np.eye(num_of_classes)[array.reshape(-1)]
+print('Done')
 ```
 
-Now you will load the images to local storage.  Some images are displayed to confirm the code ran correctly.  This may take a couple of minutes to run.
+Now, you'll create an experiment in this workspace by using the following code:
 
 ```python
-# To help the model to converge faster , you shrink the intensity values (X) from 0-255 to 0-1
-X_train = load_data('./data/train-images.gz', False) / 255.0
-y_train = load_data('./data/train-labels.gz', True).reshape(-1)
+from azureml.core.experiment import Experiment
 
-X_test = load_data('./data/test-images.gz', False) / 255.0
-y_test = load_data('./data/test-labels.gz', True).reshape(-1)
-
-# Display some images...
-%matplotlib inline
-import numpy as np
-import matplotlib
-import matplotlib.pyplot as plt
-
-# now let's show some randomly chosen images from the traininng set.
-count = 0
-sample_size = 30
-plt.figure(figsize = (16, 6))
-for i in np.random.permutation(X_train.shape[0])[:sample_size]:
-    count = count + 1
-    plt.subplot(1, sample_size, count)
-    plt.axhline('')
-    plt.axvline('')
-    plt.text(x=10, y=-10, s=y_train[i], fontsize=18)
-    plt.imshow(X_train[i].reshape(28, 28), cmap=plt.cm.Greys)
-plt.show()
-```
-
-If you have created an Azure Machine Learning service Workspace previously, run the code below to get a reference to it.  Replace the values in between the < and > with the appropriate value. You can get the values from the Overview screen of the Azure Machine Learning service Workspace in the Azure portal.
-
-```python
-# import package and use get function to access Workspace
-# Be sure to replace the subscription id with your subscription id
-
-from azureml.core import Workspace,Experiment ,Run
-
-ws = Workspace.get(name='myworkspace',
-                      subscription_id='<azure-subscription-id>', 
-                      resource_group='myresourcegroup' 
-                     )
-```
-
-If you do not have an Azure Machine Learning service Workspace already, you can create one with the code below. The value you need is the subscription ID. You can find it in the [subscriptions list in the Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade). Find the subscription ID that you want to use and replace the `<azure-subscription-id>` below with the subscription ID value. The SDK will ask you to sign into your Azure account if you are not already signed in.  The location should be set to the closest Azure region for your area. 
-
-```python
-# Be sure to replace the subscription id with your subscription id
-
-from azureml.core import Workspace
-ws = Workspace.create(name='myworkspace',
-                 subscription_id='<azure-subscription-id>', 
-                 resource_group='myresourcegroup',
-                 create_resource_group=True,
-                 location='eastus2' 
-                 )
-```
-
-It takes a few minutes to set up the workspace. After the workspace is set up, you can view the workspace details, such as the associated BLOB storage account, docker container registry account, and key vault, by entering the following code:
-
-```python
-ws.get_details()
-```
-
-Now, you create an experiment within this workspace using the following code:
-
-```python
-from azureml.core import Workspace,Experiment ,Run
-
-#Create an experiment
 experiment = Experiment(workspace = ws, name = "my-third-experiment")
+
+print('Done')
 ```
 
 ## Define the machine learning objective and constraints
 
-The first step is to define the machine learning objective, using AutoMLConfig, as shown below.
+The first step is to define the machine learning objective by using AutoMLConfig, as illustrated in the following code:
 
 ```python
+from azureml.core.experiment import Experiment
+from azureml.core.workspace import Workspace
 from azureml.train.automl import AutoMLConfig
 import logging
 
 automl_config = AutoMLConfig(task = 'regression',
-                             iteration_timeout_minutes = 6,
-                             iterations = 3,
-                             primary_metric = 'spearman_correlation',
-                             n_cross_validations = 5,
-                             debug_log = 'automl.log',
-                             verbosity = logging.INFO,
-                             X = X_train, 
-                             y = y_train)
+                  iteration_timeout_minutes = 10,
+                  iterations = 3,
+                  primary_metric = 'spearman_correlation',
+                  n_cross_validations = 5,
+                  debug_log = 'automl.log',
+                  verbosity = logging.INFO,
+                  X = X_train, 
+                  y = y_train)
 
-print('Execution Complete')
+print('Done')
 ```
 
-In the example, we are setting the properties below:
+In this example, the following properties are set:
 
-- task:  This is the type of model required such as classification, regression, or a forecasting. Once you specify the type AutoML will automatically pick the best algorithm of that type for you. The picture below shows a complete list of the algorithms that AutoML will pick. In this example, we chose to use a regression task.
+- **task**: This is the type of model that is required, such as classification, regression, or forecasting. After you specify the type, AutoML will automatically pick the best algorithm of that type for you. The following screenshot contains a complete list of the algorithms that AutoML will pick. In this example, a regression task was used.
 
-![Screenshot of AutoML Property Selection](../media/4-automl-property.png)
+    ![The screenshot depicts various algorithms listed under the classification, regression, and forecasting models.](../media/4-automl-property.png)
 
-- primary_metric: This is the metric that you want AutoML to optimize. In the regression example, there are several metrics: *normalized_root_mean_squared_error*, *r2_score*, *normalized_mean_absolute_error*, and *spearman_correlation*. In this example, we use spearman correlation as the primary metric, which basically measures the similarity of two datasets. For more information on how those metrics work, see the documentation [here](https://docs.microsoft.com/azure/machine-learning/service/how-to-configure-auto-train#explore-model-metrics).
-- iterations_time_out_minutes: Iterations is how many model pipeline executions you want to use and the time limit for each iteration.
-- n_cross_validation_splits: This is the number of cross validation splits.
+- **primary_metric**: This is the metric that you want AutoML to optimize. In the regression example are several metrics: *normalized_root_mean_squared_error*, *r2_score*, *normalized_mean_absolute_error*, and *spearman_correlation*. In this example, the Spearman correlation was the primary metric, which basically measures the similarity of two datasets. For more information about how these metrics work, refer to the [documentation](https://docs.microsoft.com/azure/machine-learning/service/how-to-configure-auto-train#explore-model-metrics).
 
-It's that simple! You just need to specify other information such as the input data path, the input features and output value, and AutoML will pick the best algorithm and hyper parameters for you during the run. 
+- **iterations_time_out_minutes**: Iterations is how many model pipeline executions you want to use and the time limit for each iteration.
 
-Depending on what you want to do there may be other AutoML properties you need to set but this example provides the basic idea.
+- **n_cross_validations**: This is the number of cross-validation splits.
 
-## Launch the AutoML Process
+Depending on what you want to do, you might need to set other properties.  AutoML will run multiple experiments in parallel and select the best algorithm and hyperparameters for you during the run.
 
-After the objective and the constraints are defined, you can launch the AutoML job as shown below.  This can take several minutes to execute so please be patient.
+## Start the AutoML process
+
+After the objective and the constraints are defined, you can start the AutoML job as illustrated in the following code:
 
 ```python
 local_run = experiment.submit(automl_config, show_output = True)
-
-print('Execution Complete')
 ```
 
-And you will get the following output indicating the models used, the running time for each iteration, the current metrics, and the best metrics.
+You will receive the following output, indicating the models used, the running time for each iteration, the current metrics, and the best metrics.
 
-![Screenshot of AutoML Report](../media/4-automl-report.png)
+![The screenshot depicts an AutoML report.](../media/4-automl-report.png)
 
-## Retrieve the Best Model
+## Retrieve the best model
 
-Azure Machine Learning has a widget to show the information on each run. Using the code below, you can compare the best model across different iterations:
+Azure Machine Learning has a widget to display the information for each run. By using the code below, you can compare the best model across different iterations:
 
 ```python
 from azureml.widgets import RunDetails
 RunDetails(local_run).show()
 ```
 
-![Screenshot of Retrieving the Best Model](../media/4-automl-retrieve-model.png)
+Here's an example of an AutoML run that shows the iterations explored and the scores.
 
-Below you can see a visualization on the primary metric (in this case, spearman correlation) for each iteration, also included in the widget. The orange line below represents the best result for different iterations.
+![The screenshot depicts the retrieval of the best model.](../media/4-automl-retrieve-model.png)
 
-![Screenshot of Visualization of the Best Result for Different Iterations](../media/4-visualize-best-result.png)
+In the visualization below, you can see the primary metric (in this case, the Spearman correlation) for each iteration. The orange line represents the best result for different iterations.
 
-It's obvious that the ninth run (the ensemble) has the best result. The best model can also be retrieved by running the following code:
+![The screenshot depicts the best result for different iterations of the Spearman correlation.](../media/4-visualize-best-result.png)
+
+Looking at the data, it's clear that the 9th run (the ensemble) has the best result. The best model can also be retrieved by running the following code:
 
 ```python
 best_run, fitted_model = local_run.get_output()
-
-print(best_run)
-print(fitted_model)
 ```
 
-After you get the best model, you can run the best model on the test dataset.
+## Test the best model
+
+After confirming the best model, you can run it on the test dataset. The best model is used in the following code and visualization for the training set and the test set:
+
+```python
+y_pred_train = fitted_model.predict(X_train)
+y_residual_train = y_train - y_pred_train
+y_pred_test = fitted_model.predict(X_test)
+y_residual_test = y_test - y_pred_test
+```

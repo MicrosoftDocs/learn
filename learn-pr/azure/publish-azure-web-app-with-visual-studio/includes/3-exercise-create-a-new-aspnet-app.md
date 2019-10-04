@@ -1,4 +1,4 @@
-In this unit, you will create, build, and run a new ASP.NET web application on your local machine.
+In this unit, you will create, build, and run a new ASP.NET Core web application on your local machine.
 
 ## Create a project
 
@@ -36,7 +36,7 @@ Now, let's build and test your application on your local machine before deployin
     Press <kbd>F5</kbd> to build the project and run in debug mode.
 
     Press <kbd>Ctrl+F5</kbd> to build the project and run without attaching the debugger.
-    
+
     > [!TIP]
     > Launching the app in non-debug mode allows you to make code changes, save the file, refresh the browser, and see the code changes. Many developers prefer to use non-debug mode to quickly launch the app and view changes.
 
@@ -46,9 +46,7 @@ Now, let's build and test your application on your local machine before deployin
 
     When Visual Studio creates a web project, a random port is used for the web server. In the preceding image, the port number is 44381. When you run the app, you'll likely see a different port number.
 
-
     > [!IMPORTANT]
     > You might notice the section at the top of the web page that provides a place for your privacy and cookie use policy. Select **Accept** to consent to tracking. This app doesn't track personal information. The template-generated code includes assets to help meet General Data Protection Regulation (GDPR).
 
 You've now created a web application from the sample template and it is running locally. The next step is to deploy it to Azure.
-

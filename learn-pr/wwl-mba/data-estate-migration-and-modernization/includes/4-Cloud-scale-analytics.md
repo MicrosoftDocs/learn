@@ -8,7 +8,7 @@ With Azure, businesses can drive insights at cloud scale, with a comprehensive s
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to learn more about cloud scale analytics.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn more about cloud scale analytics.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqU1A]
 
@@ -24,7 +24,7 @@ A modern data warehouse lets you gather data and insights at scale through analy
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to understand the process by which common types of data are transformed into insights.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to understand the process by which common types of data are transformed into insights.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqWCz]
 
@@ -42,7 +42,7 @@ Anheuser-Busch InBev (AB InBev) isn’t just a beverage company. They’re a tec
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to see how Azure’s cloud scale analytics has helped in AB InBev’s business transformation.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to see how Azure’s cloud scale analytics has helped in AB InBev’s business transformation.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2NPWx]
 

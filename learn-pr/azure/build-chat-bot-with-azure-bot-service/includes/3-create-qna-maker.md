@@ -1,4 +1,4 @@
-[QnA Maker](https://www.qnamaker.ai/) is part of [Azure Cognitive Services](https://www.microsoft.com/cognitive-services/), which is a suite of services and APIs for building intelligent apps backed by artificial intelligence (AI) and machine learning. Rather than code a bot to anticipate every question a user might ask and provide a response, you can connect it to a knowledge base of questions and answers created with QnA Maker. A common usage scenario is to create a knowledge base from the URL of a FAQ page so the bot can answer domain-specific questions such as "How do I find my Windows product key" or "Where can I download Visual Studio Code?"
+*QnA Maker* is part of Azure Cognitive Services, a suite of services and APIs for building intelligent apps backed by artificial intelligence (AI) and machine learning. Rather than code a bot to anticipate every question a user might ask and provide a response, you can connect it to a knowledge base of questions and answers created with QnA Maker. A common usage scenario is to create a knowledge base from the URL of a FAQ web page so the bot can answer domain-specific questions such as "How do I find my Windows product key" or "Where can I download Visual Studio Code?"
 
 In this unit, you will use QnA Maker to create a knowledge base containing questions such as "What NFL teams have won the most Super Bowls" and "What is the largest city in the world?" Then, you will deploy the knowledge base in an Azure web app so that it can be accessed via an HTTPS endpoint.
 
@@ -28,12 +28,10 @@ In this unit, you will use QnA Maker to create a knowledge base containing quest
     Pricing tier|F0|A basic free tier.
     Location|*Select the region closest to you from the drop-down*|Select the location where the service should be located.
     Resource Group|*Select the resource group you created in the previous unit*|Select your existing resource group (**mslearn-factbot**) to hold the resources for this exercise.
-    Search pricing tier|F|Select pricing tier for serach service.
+    Search pricing tier|B|Select pricing tier for search service.
     Search location|*Select the region closest to you from the drop-down*|Select the location where the search service should be located.
     App name|*Leave default*|The default value is populated based on your QnA Maer name. You can change this if you'd like a different name for the web app, or leave the default value.
     Website location|*Select the region closest to you from the drop-down*|Select the location where the website should be located.
-
-1. Verify the **Name** and  **App name** are unique to Azure.
 
 1. Select the **Create** button at the bottom of the blade.
 
@@ -46,6 +44,8 @@ In this unit, you will use QnA Maker to create a knowledge base containing quest
 ## Create, Populate, and Train Your QnA Maker Knowledge Base
 
 1. Return to **Create a knowledge base** by switching back to the open tab, or by navigating to <https://www.qnamaker.ai/Create> in the browser and scroll to **Step 2** to connect to our QnA service.
+
+1. in **Step 2** select **Refresh** to make sure the new QnA service you just deployed is available to this screen. 
 
 1. Under **Microsoft Azure Directory ID**, choose your directory that the subscription you used is owned by (there is likely only one).
 
@@ -64,6 +64,8 @@ The next step is to populate your knowledge base with questions and answers. You
     This file contains 20 questions and answers in tab-delimited format.
 
     ![Screenshot of the QnA Maker portal showing the Populate your KB section with the Factbot.tsv file uploaded.](../media/3-populate-your-kb.png)
+
+1. There are a number of personalities available for QnA maker, which can be selected under **Chit-chat**. Since we are providing the knowledge base starting point in **Factbot.tsv** we are providing the baseline personality, so you can leave this as default.
 
 1. Select **Create your KB** at the bottom of the page, and wait for the knowledge base to be created. It should take less than a minute.
 

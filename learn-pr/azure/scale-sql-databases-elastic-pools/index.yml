@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure-scale-azure-sql-dbs-elastic-pools
+metadata:
+  title: "Scale multiple Azure SQL Databases with SQL elastic pools"
+  description: "Scale multiple Azure SQL Databases with SQL elastic pools"
+  ms.date: 5/03/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Scale multiple Azure SQL Databases with SQL elastic pools"
+summary: "SQL elastic pools allow you to manage performance and cost for a collection of SQL databases."
+abstract: |
+  In this module, you will:
+  - Create an elastic pool
+  - Add databases to an elastic pool
+  - Configure database performance in an elastic pool
+prerequisites: |
+  - Basic knowledge of the Azure Portal
+  - Basic knowledge of Azure SQL Server
+iconUrl: /learn/achievements/azure-scale-azure-sql-databases-elastic-pools.svg
+badge:
+  uid: learn.azure-scale-azure-sql-dbs-elastic-pools.badge
+levels: 
+- beginner
+roles: 
+- developer
+- solution-architect
+products:
+- azure
+- azure-portal
+- azure-sql-database
+units:
+- learn.azure-scale-azure-sql-databases-elastic-pools.introduction
+- learn.azure-scale-azure-sql-databases-elastic-pools.create-elastic-pool
+- learn.azure-scale-azure-sql-databases-elastic-pools.exercise-create-elastic-pool
+- learn.azure-scale-azure-sql-databases-elastic-pools.manage-elastic-pools
+- learn.azure-scale-azure-sql-databases-elastic-pools.exercise-manage-elastic-pool
+- learn.azure-scale-azure-sql-databases-elastic-pools.knowledge-check
+- learn.azure-scale-azure-sql-databases-elastic-pools.summary

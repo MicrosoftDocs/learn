@@ -26,14 +26,14 @@ As we discussed in the preceding unit, Azure provides templates that help you ge
 
 1. In the **Create a function** step, select **More templates...** and then select **Finish and view templates**.
 
-1. In the list of all templates available to this function app, select **Http trigger** .
+1. In the list of all templates available to this function app, select **HTTP trigger** .
 
 1. Enter **DriveGearTemperatureService** in the name field of the **New Function** dialog that appears. Leave the Authorization level as "Function" and press the **Create** button to create the function.
 
 1. When your function creation completes, the code editor opens with the contents of the *index.js* code file. The default code that the template generated for us is listed in the following snippet.
 
     ```javascript
-    module.exports = function (context, req) {
+    module.exports = async function (context, req) {
         context.log('JavaScript HTTP trigger function processed a request.');
     
         if (req.query.name || (req.body && req.body.name)) {
@@ -48,7 +48,6 @@ As we discussed in the preceding unit, Azure provides templates that help you ge
                 body: "Please pass a name on the query string or in the request body"
             };
         }
-        context.done();
     };
     ```
 
@@ -58,20 +57,24 @@ As we discussed in the preceding unit, Azure provides templates that help you ge
 
     ```javascript
     {
-        "disabled": false,
-        "bindings": [
+      "bindings": [
         {
-            "authLevel": "function",
-            "type": "httpTrigger",
-            "direction": "in",
-            "name": "req"
+          "authLevel": "function",
+          "type": "httpTrigger",
+          "direction": "in",
+          "name": "req",
+          "methods": [
+            "get",
+            "post"
+          ]
         },
         {
-            "type": "http",
-            "direction": "out",
-            "name": "res"
+          "type": "http",
+          "direction": "out",
+          "name": "res"
         }
-        ]
+      ],
+      "disabled": false
     }
     ```
 
@@ -150,7 +153,7 @@ Our function is expecting an array of temperature readings. The following JSON s
 
 Next, we'll replace the default code in our function with the following code that implements our business logic.
 
-1. Open the **index.js** file and replace it with the following code.
+1. Open the **index.js** file and replace it with the following code. Make sure to save the file after updating it.
 
 ```javascript
 module.exports = function (context, req) {

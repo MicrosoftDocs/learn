@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics
+metadata:
+  title: Analyze images in real-time with machine learning, Azure IoT Hub and Azure Stream Analytics
+  description: Analyze streaming data with a machine learning model and visualize the output. 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.date: 5/1/2019
+  author: ShanaMatthews
+  ms.author: shanama
+title: Analyze images in real-time with machine learning, Azure IoT Hub and Azure Stream Analytics
+summary: Analyze streaming data with a machine learning model and visualize the output.
+abstract:  | 
+  In this module, you will:
+  - Create an Azure Storage account and an IoT hub and use a Node.js app to connect them to a simulated camera
+  - Use Azure Stream Analytics to run queries on live streams to analyze input and an Azure Function to return output
+  - Use Microsoft Cognitive Services to train an image classification model and call the model from an app or service
+  - Connect Power BI to an Azure SQL database and visualize data from the database
+prerequisites: |
+  - An Azure subscription
+  - Basic knowledge of Azure services, the Azure portal, and the Azure CLI tools
+  - Familiarity with Node.js
+  - Power BI Desktop
+iconUrl: /learn/achievements/student-evangelism/build-ml-model-with-azure-stream-analytics-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- data-scientist
+products:
+- azure
+- power-bi
+- azure-iot-hub
+- azure-functions
+- azure-sql-database
+- azure-stream-analytics
+- azure-cognitive-services
+units:
+- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.introduction
+- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.design-a-solution
+- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.create-azure-resources
+- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.create-iot-hub
+- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.upload-sample-photo
+- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.analyze-streaming-data
+- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.add-azure-function
+- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.generate-events
+- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.train-and-test-image-classifier
+- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.create-sql-db
+- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.connect-db-and-function
+- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.visualize-output-with-powerbi
+- learn.student-evangelism.build-ml-model-with-azure-stream-analytics.summary
+badge:
+  uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.badge 

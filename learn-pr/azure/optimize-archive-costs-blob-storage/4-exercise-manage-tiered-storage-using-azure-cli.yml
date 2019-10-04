@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.optimize-blob-storage-costs.4-exercise-manage-tiered-storage-using-azure-cli
+title: Exercise - Manage tiered storage using Azure CLI
+metadata:
+  title: Exercise - Manage tiered storage using Azure CLI
+  description: Exercise - Manage tiered storage using Azure CLI
+  ms.date: 04/10/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/4-exercise-manage-tiered-storage-using-azure-cli.md)]

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.access-blob-storage-metrics-from-code.5-exercise-access-azure-storage-metrics
+title: Optional Exercise - Access Azure Storage Metrics in Code
+metadata:
+  title: Optional Exercise - Access Azure Storage Metrics in Code
+  description: In this unit, you will write code that retrieves the value of a metric from Azure Monitor.
+  ms.date: 04/12/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+azureSandbox: false
+content: |
+  [!include[](includes/5-exercise-access-azure-storage-metrics.md)]

@@ -3,10 +3,9 @@ uid: learn.secure-access-azure-ad-multi-factor-authentication.6-summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  ms.date: 04/15/2019
+  author: MicrosoftGuyJFlo
+  ms.author: joflore
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

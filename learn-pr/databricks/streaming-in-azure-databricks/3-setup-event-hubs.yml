@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.streaming-in-azure-databricks.3-setup-event-hubs
-title: ETL overview
+title: Set up Event hubs
 metadata:
-  title: ETL overview
-  description: Overview of the ETL process.
+  title: Set up Event Hubs
+  description: Set up Azure Event Hubs.
   ms.date: 02/20/2019
-  author: barlanmsft
+  author: barlan
   ms.author: barlan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

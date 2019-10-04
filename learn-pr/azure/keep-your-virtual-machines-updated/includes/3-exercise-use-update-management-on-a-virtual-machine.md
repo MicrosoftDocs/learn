@@ -1,26 +1,31 @@
  Your PIO wants to set up a virtual machine to serve as a web resource for local media outlets. It is imperative that this virtual machine is as protected as it can be to prevent unauthorized access. As part of your security profile, you want to implement Update Management on this VM so that you can ensure that it is always up-to-date with the latest security patches. 
 
-<!-- Activate the sandbox -->
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create a virtual machine
 
 Here you will create a new virtual machine to serve as a web server for the local media.
 
-1. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 2. In the left navigation pane, click **Create a resource**.
 3. In the **New** pane, click **Windows Server 2016 Datacenter**.
-4. In the Basics pane, enter data as shown below. You can choose your own Username and Password. Use the **Concierge Subscription** value. Select **East US** for location. 
-5. Use the existing sandbox resource group, <rgn>[Sandbox resource group]</rgn>.
+4. Enter the following values in the **Create a virtual machine** window:
 
-![Create VM Basics](../media/3-create-mediawebserver-basics-edited.png "Create VM Basics")
+    | Field                | Value                                                    |
+    |----------------------|----------------------------------------------------------|
+    | Subscription         | *Select your Azure subscription*                         |
+    | Resource group       | Create a new resource group named "mslearn-vmupdate"     |
+    | Virtual machine name | MediaWebServer                                           |
+    | Region               | *Select the region nearest you*                          |
+    | Availability options | No infrastructure redundancy required                    |
+    | Image                | Windows Server 2016 Datacenter                           |
+    | Size                 | Select **Change size** and select **B2s** from the list  |
+    | Username             | *Create a username of your choice and note it for later* |
+    | Password             | *Create a password of your choice and note it for later* |
 
-6. Click **Change size** in the size field and choose **B2s**, and then click **Select**.
-7. In the **INBOUND PORT ROLES** section, the only change you need to make is, choose **Allow selected ports** in the **Public inbound ports** field. Select HTTP, HTTPS, and RDP as shown below.
+5. In the **INBOUND PORT ROLES** section, choose **Allow selected ports** in the **Public inbound ports** field. Select HTTP, HTTPS, and RDP as shown below.
 
 ![Select Public Inbound Ports](../media/3-public-inbound-ports-edited.png "Select Public Inbound Ports")
 
-8. Click **Review + create** and then click **Create**. Wait for the VM to be created. You can click the Bell icon in the upper right corner of the portal to monitor the progress.
+6. Click **Review + create** and then click **Create**. Wait for the VM to be created. You can click the Bell icon in the upper right corner of the portal to monitor the progress.
 
 ## Onboard Update Manager to the VM
 

@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.provision-and-use-azure-dsvm.use-jupyter-notebooks
-title: Use Jupyter Notebooks
+title: Exercise - Use Jupyter Notebooks
 metadata:
-  title: Use Jupyter Notebooks - Learn
-  description: Use Jupyter Notebooks - Learn
+  title: Exercise - Use Jupyter Notebooks
+  description: Exercise - Use Jupyter Notebooks
   ms.date: 01/31/2019
   author: bcafferky
   ms.author: brcaffer
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/4-use-jupyter-notebooks.md)]

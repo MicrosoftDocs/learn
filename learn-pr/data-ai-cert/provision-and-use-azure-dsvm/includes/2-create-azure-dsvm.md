@@ -1,34 +1,51 @@
-To create an Azure DSVM, you need an Azure subscription. You can create an Azure free account that includes $200 credit to spend for the first 30 days, free access to Azure's most popular products for 12 months and access to more than 25 products that are always free. (See [Get Azure free trial](https://azure.microsoft.com/free/)).
+Creating an Azure Data Science VM for Linux or Windows is exactly like creating any other type of VM - we're just using a specific image. Let's create a Windows-based DSVM through the Azure portal.
 
-After signing into your account, go to [the DSVM product page](https://azure.microsoft.com/services/virtual-machines/data-science-virtual-machines/). Scroll down until you see the DSVM editions as shown below.
-![Screenshot of DSVM Editions Panel](../media/2-DSVM-editions.png)
+You can start right in the Azure portal and use the **+ Create New Resource** support, or use the DSVM product pages. Let's use the latter for this exercise.
 
-Click on the Data Science Virtual Machine – Windows 2016 link. You should then see the screen below.
+1. Make sure to activate the Azure Sandbox.
 
-![Screenshot of DSVM Windows 2016](../media/2-DSVM-windows2016.png)
+1. Navigate to [the Microsoft Azure Data Science Virtual Machines product page](https://azure.microsoft.com/services/virtual-machines/data-science-virtual-machines/?azure-portal=true) in a new browser window or tab.
 
-When you see the screen below, click on the Continue button.
+1. Scroll down until you see the DSVM editions as shown in the following image.
 
-![Screenshot of DSVM Creation App](../media/2-DSVM-creation.png)
+    ![Screenshot of three DSVM edition options.](../media/2-DSVM-editions.png)
 
-You will be logged into the Azure portal and shown the screen to provision a Data Science Virtual Machine – Windows 2016 as shown below. If you are prompted for your credentials, just enter then and continue.
+1. Select the **Data Science Virtual Machine – Windows 2016** link.
 
-![Screenshot of Create DSVM Azure Portal](../media/2-create-DSVM-azure-portal.png)
+1. On the description screen, select the **Get it now** button.
 
-Click the blue button labeled "Create" to start to configure a VM. You need to fill out the following fields:
+    ![Screenshot of the Data Science Virtual Machine - Windows 2016 offering in Azure Marketplace.](../media/2-DSVM-windows2016.png)
 
-- **Subscription**. If you have more than one subscription, select the one on which the machine is to be created and billed.
-- **Resource group**. A resource group is a container that holds related resources for an Azure solution. You can create a new one or use an existing group.
-- **Virtual Machine name**. The name of the Data Science server you are creating. Win2016 will be used in the example.
-- **Region**. Select the data center that's most appropriate. Far fastest network access, it's the data center that has most of your data or is closest to your physical locations.
-- **Image**:  Do not change this. It should say "Data Science Virtual Machine – Windows 2016".
-- **Size**. Select one of the server types that meets your functional requirements and cost constraints.
-- **VM Disk Type**. Choose SSD (Solid-State Drive) or HDD (Hard Disk Drive).
-- **User Name**. The administration account Id to access the VM. You will need this later to access the VM.
-- **Password**. The administration account password. You will need this later to access the VM.
-- **Already have a Windows license?**  Leave this as the default which is No.
-- **Use Managed Disks**. Choose **Managed** if you want Azure to manage the disks for the VM. If not, you need to specify a new or existing storage account.
+1. When you see the **Create this app in Azure** dialog, select **Continue**.
 
-After filling out the fields, click the Disks button. Select the type of disks you want and click on the "Review and Create" button. Don't worry about the section stating **Subscription credits apply**. You will **not** be charged. You may have to wait a few seconds before Review and Create screen appears. Click on the "Create" button and the data science virtual machine will start being provisioned.
+    ![Screenshot of the Create this app in Azure dialog.](../media/2-DSVM-creation.png)
 
-The VM provisioning takes a few minutes. You should see a blue line under the bell, ![Screenshot of Bell Icon](../media/2-bell-icon.png), icon which indicates that Azure is busy building the VM. When the VM is done being created, the VM main properties screen will appear.
+1. The browser window will take you to the Azure portal. If you are prompted for your credentials, make sure to use the same ones you used to activate the Sandbox.
+
+1. Verify that you are using the correct Azure directory - **MICROSOFT LEARN SANDBOX**. You should see the directory under your email address in the top right of the portal window (by your profile picture). If you are _not_ in the Sandbox, you will need to change your directory with the following steps:
+    1. Click the **Directory+Subscription** icon in the toolbar across the top of the portal.
+        ![Screenshot showing the Directory + Subscription icon](../media/2-change-directory.png)
+    1. Select **All Directories** and make sure **Microsoft Learn Sandbox** is the selected choice.
+    1. Verify the directory is changed under your profile picture.
+
+1. The portal should be on the **Data Science Virtual Machine – Windows 2016** screen.
+
+    ![Screenshot of the Azure portal, Data Science Virtual Machine – Windows 2016.](../media/2-create-DSVM-azure-portal.png)
+
+1. Select **Create** to begin configuring a virtual machine (VM). Set the appropriate values into each of the fields using the following suggestions.
+    - **Subscription**. Verify that _Concierge Subscription_ is selected. If it's not present in the list, make sure you activated the Sandbox and are logged in with the same credentials.
+    - **Resource group**. A *resource group* is a container that holds related resources for an Azure solution. Make sure the pre-created Sandbox resource group <rgn>[Sandbox Resource Group Name]</rgn> is selected.
+    - **Virtual Machine name**. Enter a name for the data science server you are creating. For this example, we'll use **Win2016**.
+    - **Region**.
+        [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+    - **Image**: Do not change this setting, but verify that it says **Data Science Virtual Machine – Windows 2016**.
+    - **Size**. Normally you would leave this setting alone - you want a lot of CPUs and memory to perform data science tasks. However, for this exercise, change the size to be **DS2_v2 (Standard)**.
+    - **User Name**. Enter an administration account ID. You will need this later to access the VM.
+    - **Password**. Enter the administration account password. You will need this later as well to access the VM.
+    - **Already have a Windows license?** Leave this as the default, which is set to **No**.
+
+1. Select **Review and Create**, it should validate and show you all the details about what is going to be provisioning. Don't worry about the section stating **Subscription credits apply**, you won't be charged.
+
+1. Select the **Create** button to provision the DSVM.
+
+VM provisioning takes a few minutes. You should see an icon of a blue line under a bell ![Screenshot of the bell icon.](../media/2-bell-icon.png), which indicates that Azure is busy building the VM. After this process completes, the VM main properties window will appear.

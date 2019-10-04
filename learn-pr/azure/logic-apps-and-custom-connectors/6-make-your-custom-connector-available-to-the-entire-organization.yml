@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.logic-apps-and-custom-connectors.6-make-your-custom-connector-available-to-the-entire-organization
+title: Share a custom connector
+metadata:
+  title: Share a custom connector
+  description: In this unit, you will learn how to publish your custom connector, both inside your organization and to the wider community.
+  ms.date: 04/11/2019
+  author: andrewjbyrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-make-your-custom-connector-available-to-the-entire-organization.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Your company has a connector that uses an API key for authentication and provides access to a REST API run by the government. Is your connector eligible for certification?"
+    choices:
+    - content: "Yes, you can apply for certification immediately."
+      isCorrect: false
+      explanation: "This connector is not eligible for certification because you do not own the underlying service."
+    - content: "Yes, you can apply for certification after a single modification."
+      isCorrect: false
+      explanation: "This connector is not eligible for certification because you do not own the underlying service."
+    - content: "No, you cannot apply for certification."
+      isCorrect: true
+      explanation: "This connector is not eligible for certification because you do not own the underlying service."
+  - content: "Your company has a connector that uses client certificates for authentication and provides access to your own REST API, which has typical availability of 95%. Is your connector eligible for certification?"
+    choices:
+    - content: "Yes, you can apply for certification immediately."
+      isCorrect: false
+      explanation: "Modify the API to use OAuth2, an API key, or basic authentication. Client certificate authentication is not supported."
+    - content: "Yes, you can apply for certification after a single modification."
+      isCorrect: true
+      explanation: "Modify the API to use OAuth2, an API key, or basic authentication. Client certificate authentication is not supported."
+    - content: "No, you cannot apply for certification."
+      isCorrect: false
+      explanation: "Modify the API to use OAuth2, an API key, or basic authentication. Client certificate authentication is not supported."

@@ -1,4 +1,6 @@
-The Azure Bot Service, combined with Microsoft QnA Maker, provides the tools developers need to build and publish intelligent bots that interact naturally with users using a range of services. In this module, you will create a bot using the Azure Bot Service and connect it to a knowledge base built with QnA Maker. Then, you will interact with the bot using the Microsoft QnA Maker and Microsoft Bot Framework Emulator.
+The Azure Bot Service, combined with Microsoft QnA Maker, provides the tools developers need to build and publish intelligent bots that interact naturally with users through a range of services. 
+
+In this module, you will create a bot using the Azure Bot Service and connect it to a knowledge base built with QnA Maker. Then, you will interact with the bot using the Microsoft QnA Maker and Microsoft Bot Framework Emulator.
 
 > [!NOTE]
 > This module requires an Azure subscription. The services you create and use are free, but you'll need an active subscription or trial to complete the exercises. If you don't have an Azure subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.

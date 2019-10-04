@@ -20,8 +20,6 @@ Our app works like a shared folder that accepts file uploads and makes them avai
 
 The code we'll start with compiles and runs, but the parts responsible for storing and loading data are empty. After we complete the code, we'll deploy the app to Azure App Service and test it.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 Let's set up the storage infrastructure for our app.
 
 ### Storage account
@@ -41,7 +39,7 @@ az storage account create \
 ```
 
 > [!NOTE]
-> Why `--kind StorageV2`? There are a few different kinds of storage accounts. For most scenarios, you should use general-purpose v2 accounts. The only reason you need to explicitly specify `--kind StorageV2` is that general-purpose v2 accounts are still fairly new and have not yet been made the default in the Azure Portal or the Azure CLI.
+> Why `--kind StorageV2`? There are a few different kinds of storage accounts. For most scenarios, you should use general-purpose v2 accounts. The only reason you need to explicitly specify `--kind StorageV2` is that general-purpose v2 accounts have not yet been made the default kind in the Azure CLI.
 
 ### Container
 

@@ -5,7 +5,7 @@ metadata:
   title: Knowledge check
   description: Test your knowledge by answering questions about skills you learned from the lab.
   ms.date: 02/20/2019
-  author: barlanmsft
+  author: barlan
   ms.author: barlan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -14,37 +14,37 @@ content: |
   [!include[](includes/4-knowledge-check.md)]
 quiz:
   questions:
-    - content: 'How do you specify parameters when reading data?'
+    - content: "How do you specify parameters when you're reading data?"
       choices:
-        - content: Using .option() during your read allows you to pass key/value pairs specifying aspects of your read
-          explanation: Using .option() during your read allows you to pass key/value pairs specifying aspects of your read. For instance, options for reading CSV data include header, delimiter, and inferSchema.
-          isCorrect: true
-        - content: Using .parameter() during your read allows you to pass key/value pairs specifying aspects of your read
+        - content: Using .parameter() during your read allows you to pass key/value pairs that specify aspects of your read.
           isCorrect: false
-          explanation: Incorrect method name
-        - content: Using .keys() during your read allows you to pass key/value pairs specifying aspects of your read
+          explanation: .parameter() isn't the correct method name.
+        - content: Using .option() during your read allows you to pass key/value pairs that specify aspects of your read.
+          explanation: Using .option() during your read allows you to pass key/value pairs that specify aspects of your read. For instance, options for reading CSV data include header, delimiter, and inferSchema.
+          isCorrect: true   
+        - content: Using .keys() during your read allows you to pass key/value pairs that specify aspects of your read.
           isCorrect: false
-          explanation: Incorrect method name
-    - content: 'How do you connect your Spark cluster to the Azure Blob?'
+          explanation: .keys() isn't the correct method name.
+    - content: "How do you connect your Spark cluster to Azure Blob storage?"
       choices:
-        - content: By mounting it
-          explanation: Mounts require Azure credentials such as SAS keys and give access to a virtually infinite store for your data
+        - content: By calling the .connect() function on the Spark cluster.
+          isCorrect: false
+          explanation: Incorrect. There's no such method.
+        - content: By mounting it.
+          explanation: Correct. Mounts require Azure credentials, such as shared access signature (SAS) keys.
           isCorrect: true
-        - content: By calling the .connect() function on the Spark Cluster.
+        - content: By calling the .connect() function on the Azure Blob storage account.
           isCorrect: false
-          explanation: Incorrect, no such method
-        - content: By calling the .connect() function on the Azure Blob
-          isCorrect: false
-          explanation: Incorrect, no such method
-    - content: 'By default, how are corrupt records dealt with using spark.read.json()?'
+          explanation: Incorrect. There's no such method.
+    - content: "By default, how are corrupt records dealt with when you're using spark.read.json()?"
       choices:
-        - content: They appear in a column called "_corrupt_record"
-          explanation: These are the records that Spark can't read (e.g. when characters are missing from a JSON string)
+        - content: They appear in a column called \"_corrupt_record\".
+          explanation: Correct. Corrupt records are the ones that Spark can't read (for example, when characters are missing from a JSON string).
           isCorrect: true
-        - content: They get deleted automatically
+        - content: They get deleted automatically.
           isCorrect: false
-          explanation: Incorrect, they don't get deleted.
-        - content: They throw an exception and exit the read operation
+          explanation: Incorrect. Corrupt records don't get deleted.
+        - content: They throw an exception and exit the read operation.
           isCorrect: false
-          explanation: Incorrect, no exception is thrown.
+          explanation: Incorrect. No exception is thrown.
     

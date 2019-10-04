@@ -1,34 +1,34 @@
-Now that we've covered a lot of the design principles, let's see how easy it is to create a data warehouse in Azure. We'll use some sample data for exploration, but you can start building your own data warehouses using the same principles shown in this exercise.
+Now that we've covered the major design principles, let's see how easy it is to create a data warehouse in Azure. We'll use some sample data for exploration, but you can start building your own data warehouse by using the principles that are shown in this exercise.
 
 > [!NOTE]
-> This exercise is optional. If you don't have an Azure account, or prefer not to do the exercise in your account, you can read through the instructions to understand the steps involved in creating an Azure SQL Data Warehouse.
+> This exercise is optional. If you don't have an Azure account or if you prefer not to do the exercise in your account, you can read through the instructions to understand the steps that are involved in creating a data warehouse in Azure SQL Data Warehouse.
 
-Follow these steps to create a SQL data warehouse that contains the *AdventureWorksDW* sample data.
+Complete these steps to create a SQL data warehouse that contains the *AdventureWorksDW* sample data:
 
-1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true).
-1. Select **Create a resource** in the upper left-hand corner of the Azure portal.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. In the upper-left corner, select **Create a resource**.
 1. Select **Databases** > **SQL Data Warehouse**.
 
-    ![Screenshots of Creating Azure Data Warehouse](../media/6-create-azure-data-warehouse.png)
+    ![Screenshots of creating an Azure data warehouse](../media/6-create-azure-data-warehouse.png)
 
-1. On the new SQL Data Warehouse page, use the following values for the fields.
-    - Set the _Database name_ to "sampleDataWH"
-    - Select the _Subscription_ you want to use
-    - Create a new _Resource group_ named **mslearn-demodw**
+1. On the new SQL data warehouse page, set the following values:
+    - For **Database name**, enter **sampleDataWH**.
+    - Select the **Subscription** you want to use.
+    - Create a new **Resource group** named **mslearn-demodw**.
 
-1. Select **Sample** from the _Select source_ dropdown list.
+1. In the **Select source** list, select **Sample**.
 
-1. Select **AdventureWorksDW** from the _Select sample_ dropdown list
+1. In the **Select sample** list, select **AdventureWorksDW**.
 
-1. Click **Server** to create and configure a new server for your new database. Fill out the **New server form** with the following information:
-    - Use a unique name for the DB name, here we're using **sampledatawh** but you will need to select a globally unique name.
-    - Fill in the admin credentials, we're using **dwdbadmin** for the admin name.
-    - Select a _Location_ to physically host the server. Typically this would be a location close to the data consumer.
+1. Select **Server** to create and configure a new server for your new database. Fill in the **New server form** with the following information:
+    - Use a unique name for the database name. We use **sampledatawh**. You must select a globally unique name.
+    - Enter the admin credentials. We use **dwdbadmin** for the admin name.
+    - Select a **Location** to physically host the server. Typically, this is a location that's close to the data consumer.
 
-1. Click **Select** to set the server information and go back to the create blade.
+1. Select **Select** to set the server information and return to the Create blade.
 
-    ![Screenshot of the New DB server blade](../media/6-create-sql-db.png)
+    ![Screenshot of the new database server blade](../media/6-create-sql-db.png)
 
-1. Click **Create** to provision the database. Provisioning takes a few minutes.
+1. Select **Create** to provision the database. Provisioning takes a few minutes.
 
-You can monitor the deployment process through the notifications icon. Once it's deployed you will have successfully created an Azure SQL Data Warehouse!
+You can monitor the deployment process through the notification ("bell") icon in the top bar - it will animate while the deployment is occuring. When the data warehouse is deployed, you have successfully created a data warehouse in Azure SQL Data Warehouse!

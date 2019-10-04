@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-and-isolate-with-nsg-and-service-endpoints.4-vnet-service-endpoints
+metadata:
+  title: Secure network access to PaaS services with virtual network service endpoints
+  description: Secure network access to PaaS services with virtual network service endpoints
+  ms.date: 04/25/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Secure network access to PaaS services with virtual network service endpoints
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-vnet-service-endpoints.md)]

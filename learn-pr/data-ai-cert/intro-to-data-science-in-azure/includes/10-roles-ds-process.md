@@ -1,48 +1,42 @@
-The data science process is often completed by a team of people with different roles. These roles are defined below.
+The data science process is often completed by a team of people with different roles as described below.
 
-## Business Analyst/Domain Expert
+## Business analyst or domain expert
 
-The Business Analyst or Domain Expert provides the deep business understanding to accurately guide the project. They understand the functional area and data.
+The business analyst or domain expert provides the business understanding to  guide the project. They understand the functional area and data. Some of the tools they use include Microsoft Excel, and query tools such as SQL.
 
-Common tools they use include:
+## Data engineer
 
-- Microsoft Excel
-- Query Tools like SQL
-- …and other data querying tools
+The data engineer prepares the data for use by the data scientist in model training. This step, known as *data wrangling*, cleans and transforms the data.
 
-## Data Engineer
-
-The Data Engineer prepares the data for use by the data scientist in model training. This step known as data wrangling, cleans and transforms the data.
-
-Common tools include:
+Common tools the data engineer uses include but are not limited to:
 
 - SQL
-- Extract/Transform/Load (ETL) Tools
-- Hadoop
+- Extraction, transformation, and loading (ETL) tools
+- Apache Hadoop
 - MongoDB
 - Apache Spark
-- Python/R
+- Python
+- R
 
 ## Developer
 
-The Developer is responsible for model deployment and possibly development of the application that will use the model to score new data. This means they are to build out the platform and/or the method for the model consumption and integration into the business.
+The developer is responsible for model deployment.  He or she may also develop the application that will use the model to score new data. This means they build out the platform or the method for model consumption and integration into the business, and possibly both.
 
-Common tools include:
+Common tools the developer will use include but are not limited to:
 
 - HTML
 - CSS
 - Python
-- C#/Java/JavaScript
-- Source Code Control (Git, Svn)
-- …and other development tools
+- C#, Java, or JavaScript
+- Source code control (Git, SVN)
 
-## Data Scientist
+## Data scientist
 
-The Data Scientist is responsible for understanding the data and training and testing the model. They will likely be involved with the other roles since they are at the heart of the process.
+The data scientist must understand the data to train and test the model. They will likely be involved with the other roles as well.
 
-Common tools include:
+Common tools the data scientist will use include:
 
 - Python and related packages
 - R and related packages
-- Spark/Azure Databricks
-- …and many others
+- Apache Spark
+- Azure Databricks

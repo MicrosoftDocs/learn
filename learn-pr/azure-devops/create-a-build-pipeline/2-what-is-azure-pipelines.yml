@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.create-a-build-pipeline.2-what-is-azure-pipelines
+title: What is Azure Pipelines?
+metadata:
+  title: What is Azure Pipelines?
+  description: See how Azure Pipelines automatically builds and tests your code projects and makes them available to others.
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-what-is-azure-pipelines.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of these is an example of a *build artifact*?"
+    choices:
+    - content: "The code compiler used to build the application."
+      isCorrect: false
+      explanation: "Compilers and other build tools are part of the build process, but they typically aren't included in the final product of the pipeline."
+    - content: "A Windows Installer (.msi) file that contains a C++ desktop application."
+      isCorrect: true
+      explanation: "A build artifact is the smallest compiled unit that you need to deploy your app. An .msi file is one example."
+    - content: "An email that summarizes the build run."
+      isCorrect: false
+      explanation: "Although most pipeline systems provide build notifications, an email isn't the final product of the pipeline."

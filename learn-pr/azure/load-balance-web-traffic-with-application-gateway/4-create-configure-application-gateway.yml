@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.load-balance-web-traffic-with-application-gateway.4-create-configure-application-gateway
+metadata:
+  title: Application Gateway creation and configuration
+  description: Describe how to create and configure Application Gateway
+  ms.date: 05/02/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Application Gateway creation and configuration
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-create-configure-application-gateway.md)]

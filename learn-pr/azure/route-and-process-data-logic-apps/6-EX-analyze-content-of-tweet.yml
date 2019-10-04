@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.route-and-process-data-logic-apps.analyze-content-of-tweet
+title: Exercise - Analyze the content of a tweet
+
+metadata:
+  title: Exercise - Analyze the content of a tweet
+  description: Exercise - Analyze the content of a tweet
+  ms.date: 5/10/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+interactive: bash
+azureSandbox: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-EX-analyze-content-of-tweet.md)]

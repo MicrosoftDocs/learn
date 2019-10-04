@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.develop-test-deploy-azure-functions-with-visual-studio.6-unit-test-azure-functions
+title: Exercise - Unit test an Azure Function
+metadata:
+  title: Exercise - Unit test an Azure Function
+  description: Exercise - Unit test an Azure Function
+  ms.date: 04/18/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-unit-test-azure-functions.md)]

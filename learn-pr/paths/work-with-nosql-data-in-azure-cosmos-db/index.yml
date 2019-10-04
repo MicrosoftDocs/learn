@@ -28,9 +28,12 @@ products:
 - azure-clis
 modules:
 - learn.create-cosmos-db-for-scale
+- learn.azure.choose-the-appropriate-api-for-cosmos-db-storage
 - learn.access-data-with-cosmos-db-and-sql-api
+- learn.azure.store-access-data-cosmos-graph-api
+- learn.azure.store-access-data-cosmos-table-api
 - learn.cosmos-db-app-with-vscode
-#TODO: Add - learn.monitor-azure-cosmos-db (POST-IGNITE)
+- learn.monitor-azure-cosmos-db
 - learn.distribute-data-globally-with-cosmos-db
 trophy:
   uid: learn.work-with-nosql-data-in-azure-cosmos-db.trophy

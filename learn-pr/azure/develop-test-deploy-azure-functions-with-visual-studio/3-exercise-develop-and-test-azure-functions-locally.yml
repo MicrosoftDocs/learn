@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.develop-test-deploy-azure-functions-with-visual-studio.3-exercise-develop-and-test-azure-functions-locally
+title: Exercise - Create and test a simple Azure Function locally with Visual Studio
+metadata:
+  title: Exercise - Create and test a simple Azure Function locally with Visual Studio
+  description: Exercise - Create and test a simple Azure Function locally with Visual Studio
+  ms.date: 04/18/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-exercise-develop-and-test-azure-functions-locally.md)]

@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.store-access-data-cosmos-graph-api.exercise-query-graph-data-from-an-application-using-gremlin-api
+title: Exercise - Query graph data from an application using Gremlin API
+metadata:
+  title: Exercise - Query graph data from an application using Gremlin API
+  description: Query graph data from an application using Gremlin API
+  ms.date: 05/03/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-csharp-javascript
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+azureSandbox: true
+interactive: bash
+content: |
+  [!include[](includes/6-exercise-query-graph-data-from-an-application-using-gremlin-api.md)]

@@ -1,31 +1,33 @@
 ### YamlMime:Module
 uid: learn.integrate-vnets-with-vnet-peering
 metadata:
-  title: Distribute your services across Azure virtual networks and integrate using VNet peering
-  description: Use Vnet peering to enable communications across virtual networks in a secure manner with minimal complexity.
+  title: Distribute your services across Azure virtual networks and integrate them by using virtual network peering
+  description: Use virtual network peering to enable communication across virtual networks in a way that's secure and minimally complex.
   ms.date: 03/31/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Distribute your services across Azure virtual networks and integrate using VNet peering
-summary: Use Vnet peering to enable communications across virtual networks in a secure manner with minimal complexity.
+title: Distribute your services across Azure virtual networks and integrate them by using virtual network peering
+summary: Use virtual network peering to enable communication across virtual networks in a way that's secure and minimally complex.
 abstract: | 
   In this module, you will:
-  - Identify the different use cases for VNet peering
-  - Identify the features and limitations of VNet peering
-  - Configure VNet peering connections between virtual networks
+  - Identify use cases for virtual network peering.
+  - Identify the features and limitations of virtual network peering.
+  - Configure peering connections between virtual networks.
 prerequisites: | 
-  - Knowledge of basic networking concepts, including subnets,and IP addressing
+  - Knowledge of basic networking concepts, including subnets and IP addressing
   - Familiarity with Azure virtual machines
   - Familiarity with Azure virtual networking
-iconUrl: /learn/achievements/intro-to-azure-networking.svg
+iconUrl: /learn/achievements/integrate-vnets-with-vnet-peering.svg
 levels:
 - beginner
 roles:
 - solution-architect
+- administrator
 products:
 - azure
+- azure-virtual-network
 units:
 - learn.integrate-vnets-with-vnet-peering.1-introduction
 - learn.integrate-vnets-with-vnet-peering.2-connect-services-using-vnet-peering

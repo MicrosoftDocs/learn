@@ -1,53 +1,61 @@
-VNet peering lets you directly connect Azure virtual networks. By connecting VNets with peering, virtual machines in peered virtual networks can communicate with each other as if they are in the same network. Traffic between virtual machines (VMs) in peered virtual networks is routed through the Azure network, using only private IP addresses, and doesn't rely on Internet connectivity, gateways, or encrypted connections. The traffic is always private and takes advantage of the high-bandwidth and low latency offered by the Azure backbone network.
+You can use virtual network peering to directly connect Azure virtual networks. When you use peering to connect virtual networks, virtual machines (VMs) in these networks can communicate with each other as if they were in the same network. 
 
-![Basic diagram of two VNets connected with VNet peering](../media/2-vnet-peering.svg)
+In peered virtual networks, traffic between virtual machines is routed through the Azure network. The traffic uses only private IP addresses. It doesn't rely on internet connectivity, gateways, or encrypted connections. The traffic is always private, and it takes advantage of the high bandwidth and low latency of the Azure backbone network.
 
-There are two types of peering connections but both are created in the same way:
+![A basic diagram of two virtual networks that are connected by virtual network peering](../media/2-vnet-peering.svg)
 
-- **VNet peering** is a connection between virtual networks in the same Azure region, such as two virtual networks in North Europe.
-- **Global VNet peering** is a connection between virtual networks that are in different Azure regions, such as a virtual network in North Europe that's peered with a virtual network in West Europe.
+The two types of peering connections are created in the same way:
 
-Configuring VNet peering doesn't affect or disrupt any resources that you've already deployed to the VNets. There are some key features to consider when using VNet peering to connect virtual networks.
+- **Virtual network peering** connects virtual networks in the same Azure region, such as two virtual networks in North Europe.
+- **Global virtual network peering** connects virtual networks that are in different Azure regions, such as a virtual network in North Europe and a virtual network in West Europe.
+
+Virtual network peering doesn't affect or disrupt any resources that you've already deployed to the virtual networks. But when you use virtual network peering, consider the key features that the following sections define.
 
 ## Reciprocal connections
 
-Creating a VNet peering connection in only one virtual network to a peer does not connect the networks together. To connect virtual networks using VNet peering, you create connections in each virtual network. Think of how you would connect two network switches together. You'd connect a cable to each switch and maybe do some configuration, enabling them to communicate between each other. For VNet peering to work, you need similar connections in each VNet, with reciprocal connections providing this functionality.
+When you create a virtual network peering connection in only one virtual network to connect to a peer in another network, you're not connecting the networks together. To connect the networks by using virtual network peering, you have to create connections in each virtual network. 
 
-## Cross-subscription VNet peering
+Think of how you connect two network switches together. You connect a cable to each switch and maybe configure some settings so that the switches can communicate. Virtual network peering requires similar connections in each virtual network. Reciprocal connections provide this functionality.
 
-You can connect virtual networks using VNet peering even when both virtual networks are in different subscriptions. This might be required for mergers and acquisitions or to connect virtual networks in subscriptions managed by other departments in the same company. Virtual networks can be in different subscriptions using the same or different Azure AD tenants. For cross-subscription VNet peering, an administrator of one subscription may not be an administrator in the peer network's subscription, and might not be able to configure both ends of a connection. To create the VNet peering when both subscriptions are in different Azure AD tenants, the administrators of each subscription must grant the peer subscription's administrator the `Network Contributor` role on their virtual network.
+## Cross-subscription virtual network peering
+
+You can use virtual network peering even when both virtual networks are in different subscriptions. This might be necessary for mergers and acquisitions or to connect virtual networks in subscriptions that different departments manage. Virtual networks can be in different subscriptions, and the subscriptions can use the same or different Azure Active Directory tenants. 
+
+When you use virtual network peering across subscriptions, you might find that an administrator of one subscription doesn't administer the peer network's subscription. The administrator might not be able to configure both ends of the connection. To peer the virtual networks when both subscriptions are in different Azure Active Directory tenants, the administrators of each subscription must grant the peer subscription's administrator the `Network Contributor` role on their virtual network.
 
 ## Transitivity
 
-VNet peering is non-transitive. Communication is only permitted to VNets that are directly peered, you cannot communicate to VNets that are peers of a peered VNet. For example, if you have three virtual networks (A, B, C) that are peered A <-> B <-> C, resources in A cannot communicate to resources in C; the traffic is not allowed to transit through VNet B. If you need communication from virtual network A to virtual network C, you must create an explicit VNet peering between these VNets.
+Virtual network peering is nontransitive. Only virtual networks that are directly peered can communicate with each other. The virtual networks can't communicate with the peers of their peers. 
+
+Suppose, for example, that your three virtual networks (A, B, C) are peered like this: A <-> B <-> C. Resources in A can't communicate with resources in C because that traffic can't transit through virtual network B. If you need communication between virtual network A and virtual network C, you must explicitly peer these two virtual networks.
 
 ## Gateway transit
 
-You can configure transitive connections for on-premises connectivity if you're using virtual network gateways as transit points. Using gateway transit enables on-premises connectivity without having to deploy virtual network gateways to all your virtual networks. This can reduce cost and complexity. With gateway peering, you can configure a single virtual network as a hub network. You can connect this hub network to your on-premises datacenter and share its virtual network gateway with peers. 
+You can configure transitive connections on-premises if you use virtual network gateways as transit points. Using gateway transit, you can enable on-premises connectivity without deploying virtual network gateways to all your virtual networks. This method might reduce cost and complexity. By using gateway peering, you can configure a single virtual network as a hub network. Connect this hub network to your on-premises datacenter and share its virtual network gateway with peers. 
 
-To enable gateway transit, you configure the **Allow gateway transit** option in the hub virtual network where you've deployed the gateway connection to your on-premises network. You must also configure the **Use remote gateways** option in any spoke virtual network(s).
+To enable gateway transit, configure the **Allow gateway transit** option in the hub virtual network where you deployed the gateway connection to your on-premises network. Also configure the **Use remote gateways** option in any spoke virtual networks.
 
 > [!NOTE]
-> If you want to enable the **Use remote gateways** option in a spoke network peering, you cannot deploy a virtual network gateway in the spoke virtual network. Additionally, gateway transit is currently not supported with Global VNet peering.
+> If you want to enable the **Use remote gateways** option in a spoke network peering, you can't deploy a virtual network gateway in the spoke virtual network. Additionally, gateway transit currently isn't supported with global virtual network peering.
 
 ## Overlapping address spaces
 
-In Azure, IP address spaces of connected networks within Azure and between Azure and on-premises cannot overlap, and this is true for peered VNets. This is an important consideration when planning your network design. Ensure that any networks you are connecting using VNet peering, VPN, or ExpressRoute, are assigned different, non-overlapping address spaces.
+IP address spaces of connected networks within Azure and between Azure and your on-premises system can't overlap. This is also true for peered virtual networks. Keep this rule in mind when you're planning your network design. In any networks you connect through virtual network peering, VPN, or ExpressRoute, assign different address spaces that don't overlap.
 
-![Comparison of overlapping and non-overlapping network addressing](../media/2-non-overlapping-networks.svg)
+![A comparison of overlapping and nonoverlapping network addressing](../media/2-non-overlapping-networks.svg)
 
 ## Alternative connectivity methods
 
-VNet peering is one way to connect VNets together and is the least complex option. There are alternatives to VNet peering, but these focus primarily on connectivity between on-premises and Azure networks rather than VNet-to-VNet connections.
+Virtual network peering is the least complex way to connect virtual networks. Other methods focus primarily on connectivity between on-premises and Azure networks rather than connections between virtual networks.
 
-It is possible to connect virtual networks with ExpressRoute by connecting each virtual network to the ExpressRoute circuit. ExpressRoute is a dedicated, private connection between an on-premises datacenter and the Azure backbone network. Virtual networks connected to the same ExpressRoute circuit are part of the same routing domain and can communicate between each other. ExpressRoute connections do not go over the public Internet, ensuring your communications with Azure services is as secure as possible.
+You can also connect virtual networks together through the ExpressRoute circuit. ExpressRoute is a dedicated, private connection between an on-premises datacenter and the Azure backbone network. The virtual networks that connect to an ExpressRoute circuit are part of the same routing domain and can communicate with each other. ExpressRoute connections don't go over the public internet, so your communications with Azure services are as secure as possible.
 
-VPNs use the Internet to connect your on-premises datacenter to the Azure backbone over an encrypted tunnel. You can use VPN gateways to connect virtual networks together using a site-to-site configuration. VPN gateways have higher latency than VNet peering, are more complex to manage, and in some scenarios can have a higher cost.
+VPNs use the internet to connect your on-premises datacenter to the Azure backbone through an encrypted tunnel. You can use a site-to-site configuration to connect virtual networks together through VPN gateways. VPN gateways have higher latency than virtual network peering setups. They're more complex to manage, and they can cost more. 
 
-In either case, when VNets are connected both through a gateway and VNet peering, traffic will flow through the peering configuration.
+When virtual networks are connected through both a gateway and virtual network peering, traffic flows through the peering configuration.
 
-## Choosing VNet peering
+## When to choose virtual network peering
 
-VNet peering is a great choice in many scenarios for enabling network connectivity between services in different virtual networks. With it's ease of implementation, ease of deployment, and cross-region and cross-subscription capabilities, it should be your first choice to integrate Azure virtual networks.
+Virtual network peering can be a great way to enable network connectivity between services that are in different virtual networks. Because it's easy to implement and deploy, and it works well across regions and subscriptions, virtual network peering should be your first choice when you need to integrate Azure virtual networks.
 
-In cases where you have existing VPN or ExpressRoute connections or services behind Azure Basic Load Balancers that would be accessed from a peered VNet, peering may not be the best option, and you should further research the best choice for your scenario.
+Peering might not be your best option if you have existing VPN or ExpressRoute connections or services behind Azure Basic Load Balancers that would be accessed from a peered virtual network. In these cases, you should research alternatives.

@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.predict-flight-delays-with-python
 metadata:
-  title: Predict flight delays by creating a machine learning model in Python - Learn
+  title: Predict flight delays by creating a machine learning model in Python
   description: Import airline arrival data into a Jupyter notebook and use Pandas to clean it. Then, build a machine learning model with Scikit-Learn and use Matplotlib to visualize output
   ms.date: 02/24/2019
   author: JeffProsise
@@ -17,13 +17,13 @@ abstract:  |
   - Use Pandas to clean and prepare data
   - Use Scikit-learn to build a machine-learning model
   - Use Matplotlib to visualize the output
-prerequisites: None
-# TODO: create icon
-iconUrl: /learn/achievements/generic-badge.svg
+prerequisites: Basic Python knowledge
+iconUrl: /learn/achievements/student-evangelism/predict-flight-delays-with-python-badge.svg
 levels:
 - beginner
 roles:
 - developer
+- data-scientist
 products:
 - azure
 units:

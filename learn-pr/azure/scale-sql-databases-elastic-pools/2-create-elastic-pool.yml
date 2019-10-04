@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-scale-azure-sql-databases-elastic-pools.create-elastic-pool
+metadata:
+  title: Create a SQL elastic pool
+  description: Create a SQL elastic pool
+  ms.date: 5/03/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Create a SQL elastic pool
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-create-elastic-pool.md)]

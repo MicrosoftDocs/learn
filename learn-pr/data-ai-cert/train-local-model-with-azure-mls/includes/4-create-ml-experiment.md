@@ -1,80 +1,65 @@
-You may notice that, depending on your local machine capacity, it takes a long time to fit models with parameters of different values, or to find k that returns best results. In this case, you should try to run the model on a remote cluster.
+## Run and experiment overview
 
-## Run and Experiment Overview
+Before you begin, it's imperative to familiarize yourself with two concepts: run and experiment.
 
-Before you begin, it is imperative to familiarize ourselves with two concepts: run and experiment.
+*Run*, within the context of the Azure Machine Learning service, refers to Python code for a specific task; for example, training a model or tuning _hyperparameters_. A run logs metrics and uploads the result to the Azure platform, and it's a more natural way to track jobs in a workspace.
 
-**Run**, within the context of the Azure Machine Learning service, refers to Python code for a specific task, for example, training a model or tuning hyperparameters (we'll define this in a moment). Run does the job of logging metrics and upload result to Azure platform, it's a more natural way to keep track of jobs in your Workspace.
+*Experiment* is a term that refers to a composition of a series of runs. In the example, you have one run for the logistic regression model and another for the kNN model, and together they make up an experiment for you to compare results.
 
-**Experiment** is a term referring to a composition of a series of runs. In the example, you have one run for the logistic regression model and another for the KNN model, and together they make up an experiment for you to compare results.
+## Create an experiment
 
-## Create an Experiment
+The first step in creating an experiment is to create a Machine Learning service workspace. We can do this in the Azure portal, or in Python using the Azure ML SDK. To use Python, we will need to supply an Azure _subscription id_. You can find your subscriptions in the Azure portal through the **Subscriptions** item in the left sidebar, or by typing "Subscriptions" into the global search box.
 
-Let's run the code below to get the module's loaded.
+![Screenshot showing search bar in Azure portal searching for "subscriptions"](../media/3-subscriptions.png)
+
+Locate the subscription you want to use and replace the `{azure-subscription-id}` value below with the subscription id value. The SDK will ask you to sign into your Azure account if you are not already signed in.
 
 ```python
-# Add this to top of code...
-%matplotlib inline
-import numpy as np
-import matplotlib
-import matplotlib.pyplot as plt
+from azureml.core import Workspace,Experiment,Run
 
-import azureml
-from azureml.core import Workspace, Run
-
-# check core SDK version number
-print("Azure ML SDK Version: ", azureml.core.VERSION)
+ws = Workspace.create(
+            name='AMLSWorkspace',
+            subscription_id='{azure-subscription-id}', 
+            resource_group='rgAMLSLearnworkspace',
+            create_resource_group=True,
+            location='eastus2'
+)
 ```
 
-If you have created an Azure Machine Learning service Workspace previously, run the code below to get a reference to it.  Replace the `<azure-subscription-id>` with the id from the Overview screen of the Azure Machine Learning service Workspace in the Azure portal.
+> [!IMPORTANT]
+> The `Workspace.create` function returns the created `Workspace` object which we will use as we go along. We are storing it here in the variable `ws`.
 
-You may be prompted in the notebook output to log into Azure with a provided link.  The login code will be provided in the output as well.  Follow the link and enter the code to login. 
-
-```python
-ws = Workspace.get(name='myworkspace',
-                      subscription_id='<azure-subscription-id>', 
-                      resource_group='myresourcegroup' 
-                     )
-```
-
-If you do not have an Azure Machine Learning service Workspace already, you can create one with the code below. The value you need is the subscription ID. You can find it in the [subscriptions list in the Azure portal](https://ms.portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade). Find the subscription ID that you want to use and replace the `<azure-subscription-id>` below with the subscription ID value. The SDK will ask you to sign into your Azure account if you are not already signed in.
+With a `Workspace` object, you can create an `Experiment` and a `run` with the Azure ML SDK:
 
 ```python
-from azureml.core import Workspace
-ws = Workspace.create(name='myworkspace',
-                 subscription_id='<azure-subscription-id>', 
-                 resource_group='myresourcegroup',
-                 create_resource_group=True,
-                 location='eastus2' 
-                 )
-```
-
-It takes a few minutes to set up the workspace. After the workspace is set up, you can view the workspace details, such as the associated BLOB storage account, docker container registry account, and key vault, by entering the following code:
-
-```python
-ws.get_details()
-```
-
-Now, you create an experiment and a run within this workspace using the following code:
-
-```python
+from azureml.core import Experiment
 #Create an experiment
 experiment = Experiment(workspace = ws, name = "my-first-experiment")
+
 #Create a run
 run = experiment.start_logging()
 run.log("trial",1)
 run.complete()
-print('Code executed')
 ```
 
-View logged results
 
-When the run finishes, you can view the experiment run in the Azure portal. To print a URL that navigates to the results for the last run, use the following code:
+
+## View the logged results
+
+Once the job has finished, the code below will display some details about the job you just ran. 
+
+```python
+from azureml.widgets import RunDetails
+
+RunDetails(run).show()
+```
+
+You can view the experiment run in the Azure portal. To print a URL that links to the results for the last run, use the following code:
 
 ```python
 print(run.get_portal_url())
 ```
 
-Use the link to view the logged values in the Azure portal in your browser.
+Navigate to the presented URL in a browser window to see the results of the experiment. It should open the Azure portal and display something like the below screenshot.
 
-![Screenshot of Experiment Result](../media/5-experiment-result.png)
+![A screenshot showing the my-first-experiment results in a browser window.](../media/5-experiment-result.png)

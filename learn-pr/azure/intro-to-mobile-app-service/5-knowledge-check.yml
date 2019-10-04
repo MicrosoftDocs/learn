@@ -1,0 +1,55 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-intro-mobile-app-service.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 4/26/2019
+  
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 6
+quiz:
+    title: Knowledge check
+    questions:
+    - content: "Suppose you work for a company that builds a mobile chat application. Users can create profiles, add friends, and send messages to contacts. Which features of Mobile Apps for Azure App Service might you use to build this product? (choose the best answer)"
+      choices:
+      - content: "Push notifications"
+        isCorrect: false
+        explanation: "Push notifications could be used to notify users of important events or new messages. This is true but isn't the only feature you might use."
+      - content: "Offline sync"
+        isCorrect: false
+        explanation: "If a mobile device loses connectivity during a conversation, you could provide a good user experience by caching outgoing messages and sending them when the device is back online. This true but it'sn the only feature you might use."
+      - content: "Authentication"
+        isCorrect: false
+        explanation: "Chat conversations are likely considered to be sensitive information to most users. Verifying the user's identity before granting access to the app is a good idea. This is true but isn't the only feature you might use."
+      - content: "All of the above"
+        isCorrect: true 
+        explanation: "This is a good example of an application that can leverage most if not all of the features provided by Mobile Apps in Azure App Service. Offline sync, authentication and push notifications can all help to provide a great user experience."
+
+    - content: "You have a published mobile application that stores user preferences locally. You want to update the application to store user preferences in the cloud so settings are shared across multiple devices. What is the best approach to add cloud data storage to your mobile client app?"
+      choices: 
+      - content: "Create a new Azure Mobile App and integrate using the provided client SDK."
+        isCorrect: true
+        explanation: "Correct, using the provided client SDK allows you to add backend services to an existing mobile client code base."
+      - content: "Create a storage service in Azure and expose a REST API to store and retrieve data."
+        isCorrect: false
+        explanation: "This is a reasonable approach, however, creating supporting services for mobile client apps generally is more work than using Mobile Apps in Azure App Service."  
+      - content: "Create a new Azure Mobile App and rebuild your client mobile app using one of the provided QuickStart mobile client projects"
+        isCorrect: false
+        explanation: "This is a great option if you're building a new mobile client app. For existing applications, best practice is to integrate the provided SDK into your existing application."
+
+    - content: "To integrate push notifications with a mobile application using Mobile Apps in Azure, you would:"
+      choices:
+      - content: "Create an instance of Azure Notification Hubs and connect it to your Mobile Apps service."
+        isCorrect: true
+        explanation: "True - Mobile Apps in Azure App Service can integrate with Notification Hubs to send push notifications."
+      - content: "Enable and send push notifications using the provided SDK."
+        isCorrect: false
+        explanation: "False - Push notifications are managed from the Mobile App service not on the client mobile app."
+      - content: "Push notifications are integrated out-of-the-box, no further configuration is required."
+        isCorrect: false
+        explanation: "False - Mobile Apps in Azure App Service can integrate with Notification Hubs to send push notifications."

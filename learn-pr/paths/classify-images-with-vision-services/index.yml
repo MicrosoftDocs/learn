@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.data-ai.classify-images-with-vision-services
 metadata:
-  title: Process and classify images with the Azure Cognitive Vision Services - Learn
-  description: Microsoft Cognitive Services offers pre-built functionality to enable computer vision functionality in your applications.  Learn how to use the Cognitive Vision Services to detect faces, tag and classify images, and identify objects - Learn
+  title: Process and classify images with the Azure Cognitive Vision Services
+  description: Microsoft Cognitive Services offers pre-built functionality to enable computer vision functionality in your applications.  Learn how to use the Cognitive Vision Services to detect faces, tag and classify images, and identify objects
   brand: azure
   ms.date: 02/25/2019
   author: gerryaobrien
@@ -26,5 +26,6 @@ modules:
 - learn.data-ai.identify-faces-with-computer-vision
 - learn.create-computer-vision-service
 - learn.classify-images-with-custom-vision-services
+- learn.wwl.evaluate-requirements-for-custom-computer-vision-api
 trophy:
   uid: learn.data-ai.classify-images-with-vision-services.trophy

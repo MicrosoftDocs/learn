@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azure-intro-to-logic-apps
+metadata:
+  title: "Introduction to Azure Logic Apps"
+  description: "Introduction Azure to Logic Apps"
+  ms.date: 4/25/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Introduction to Azure Logic Apps"
+summary: "Characterize the types of business processes that Logic Apps can automate. Describe the function of connectors, triggers, and actions and show how you combine them to create an app."
+abstract: |
+  In this module, you will:
+  - Evaluate whether Logic Apps is appropriate to automate your business processes
+  - Describe how the components of a Logic App work together to automate a business process
+prerequisites: |
+  - Basic knowledge of programming concepts such as conditional logic and loops
+  - Basic knowledge of REST services and APIs
+iconUrl: /learn/achievements/intro-to-logic-apps.svg
+badge:
+  uid: learn.azure-intro-to-logic-apps.badge
+levels:
+- beginner
+roles:
+- developer
+- administrator
+- business-analyst
+products:
+- azure
+- azure-logic-apps
+units:
+- learn.azure-intro-to-logic-apps.introduction
+- learn.azure-intro-to-logic-apps.what-is-logic-apps
+- learn.azure-intro-to-logic-apps.how-logic-apps-works
+- learn.azure-intro-to-logic-apps.when-to-use-logic-apps
+- learn.azure-intro-to-logic-apps.knowledge-check
+- learn.azure-intro-to-logic-apps.summary

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.connect-db-and-function
+title: Write results to the Azure SQL DB with the Azure Function
+metadata:
+  title: Write results to the Azure SQL DB with the Azure Function
+  description: Write results to the Azure SQL DB with the Azure Function
+  ms.date: 5/1/2019
+  author: ShanaMatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+azureSandbox: true
+interactive: bash
+content: |
+  [!include[](includes/11-connect-db-and-function.md)]

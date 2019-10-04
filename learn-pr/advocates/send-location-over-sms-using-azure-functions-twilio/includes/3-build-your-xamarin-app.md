@@ -122,6 +122,7 @@ The `MainPage` will have a text-entry control for phone numbers and a label to d
     {
         SendLocationCommand = new Command(async () => await SendLocation());
     }
+    ```
 
 1. Create a `async` method called `SendLocation` and pass a lambda function that `await`s call to the constructor. The body of this method will be updated later in this module.
 
@@ -196,7 +197,7 @@ Xamarin.Forms UIs can be built using XAML.
     </StackLayout>
     ```
     - The `Editor` control will be used to add phone numbers, and the `Label` above describes the purpose of this field to the user.
-    - `StackLayout`'s stack child controls either horizontally or vertically in the order in which the controls are added, so adding the `Label` first will put it above the `Editor`.
+    - The `StackLayout` child controls stack either horizontally or vertically in the order in which the controls are added, so adding the `Label` first will put it above the `Editor`.
     - `Editor` controls are multi-line entry controls, allowing the user to enter multiple phone numbers, one per line.
 
     The `Text` property on the `Editor` is bound to the `PhoneNumbers` property on the `MainViewModel`. The syntax for binding is to set the property value to `"{Binding <property name>}"`. The curly braces will tell the XAML compiler that this value is special and should be treated differently from a simple `string`.

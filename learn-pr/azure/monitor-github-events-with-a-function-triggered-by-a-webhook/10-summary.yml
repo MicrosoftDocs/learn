@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 04/30/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Summary
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-summary.md)]

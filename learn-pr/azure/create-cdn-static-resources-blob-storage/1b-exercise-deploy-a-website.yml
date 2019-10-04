@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-content-delivery-network-azure-cdn-blob-services.1b-exercise-deploy-a-website
+title: Exercise - Deploy a static website to blob storage
+metadata:
+  title: Exercise - Deploy a static website to blob storage
+  description: Deploy a static website to blob storage
+  ms.date: 4/30/2019
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+azureSandbox: true
+interactive: bash
+durationInMinutes: 8
+content: |
+  [!include[](includes/1b-exercise-deploy-a-website.md)]

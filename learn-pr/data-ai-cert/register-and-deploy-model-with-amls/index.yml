@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.data-ai.register-and-deploy-model-with-amls
 metadata:
-  title: Register and deploy ML models with Azure Machine Learning service - Learn
-  description: Register and deploy ML models with Azure Machine Learning service - Learn
+  title: Register and deploy ML models with Azure Machine Learning service
+  description: Register and deploy ML models with Azure Machine Learning service
   ms.date: 03/18/2019
   author: bcafferky
   ms.author: brcaffer
@@ -30,15 +30,16 @@ roles:
 - data-scientist
 products:
 - azure
+- azure-machine-learning-service
 units:
 - learn.data-ai.register-and-deploy-model-with-amls.introduction
-- learn.data-ai.register-and-deploy-model-with-amls.where-to-deploy-model
 - learn.data-ai.register-and-deploy-model-with-amls.create-deployment-workspace-auzre-portal
 - learn.data-ai.register-and-deploy-model-with-amls.create-deployment-workspace-auzre-ml-sdk
 - learn.data-ai.register-and-deploy-model-with-amls.register-model
 - learn.data-ai.register-and-deploy-model-with-amls.create-scoring-script
 - learn.data-ai.register-and-deploy-model-with-amls.create-environment-yaml
 - learn.data-ai.register-and-deploy-model-with-amls.create-container-image
+- learn.data-ai.register-and-deploy-model-with-amls.where-to-deploy-model
 - learn.data-ai.register-and-deploy-model-with-amls.deploy-model-web-service
 - learn.data-ai.register-and-deploy-model-with-amls.scoring-data-with-deployed-model
 - learn.data-ai.register-and-deploy-model-with-amls.manage-and-monitor-models

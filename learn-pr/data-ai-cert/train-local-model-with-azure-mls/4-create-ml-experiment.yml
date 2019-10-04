@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.train-local-model-with-azure-mls.create-ml-experiment
-title: Create a machine learning experiment
+title: Exercise - Create a machine learning experiment
 metadata:
-  title: Create a achine learning experiment - Learn
-  description: Create a achine learning experiment - Learn
+  title: Exercise - Create a machine learning experiment
+  description: Exercise - Create a machine learning experiment
   ms.date: 01/31/2019
   author: bcafferky
   ms.author: brcaffer

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.access-blob-storage-metrics-from-code.3-exercise-connect-to-storage-metrics
+title: Optional Exercise - Connect to Azure Storage metrics in Azure Monitor
+metadata:
+  title: Optional Exercise - Connect to Azure Storage metrics in Azure Monitor
+  description: In this unit, you will run queries against the Azure Monitor REST API to examine storage metrics.
+  ms.date: 04/12/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-connect-to-storage-metrics.md)]

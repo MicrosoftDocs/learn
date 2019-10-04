@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.handle-transient-errors-in-your-app.7-exercise-write-a-retry-policy
+title: Exercise - Implement a retry policy in your app
+metadata:
+  title: Exercise - Implement a retry policy in your app
+  description: In this hands-on lab, you'll use a retry policy to help the chat app recover from transient errors.
+  ms.date: 04/10/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+  zone_pivot_groups: dev-lang-csharp-java-node
+interactive: bash
+azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-exercise-write-a-retry-policy.md)]

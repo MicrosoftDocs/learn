@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-and-isolate-with-nsg-and-service-endpoints.3-exercise-network-security-groups
+metadata:
+  title: Exercise - Create and manage network security groups
+  description: Exercise - Create and manage network security groups
+  ms.date: 04/25/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Exercise - Create and manage network security groups
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-exercise-network-security-groups.md)]

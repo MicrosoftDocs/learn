@@ -4,13 +4,13 @@ In this unit, you'll use an Azure Resource Manager template to decrypt our Windo
 
 We're going to use a template Microsoft has published on GitHub that is specifically designed to decrypt a running Windows VM.
 
-1. Sign into the [Azure Portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you activated the sandbox with.
 
 1. Click **Create a Resource** in the left sidebar.
 
 1. Type **Template** in the search box.
 
-1. Select **Template Deployment** from the resulting list and click **Create**.
+1. Select **Template deployment (deploy using custom templates)** from the resulting list and click **Create**.
 
     ![Screenshot showing the Template Deployment item selected with the Create button highlighted](../media/6-create-template.png)
 

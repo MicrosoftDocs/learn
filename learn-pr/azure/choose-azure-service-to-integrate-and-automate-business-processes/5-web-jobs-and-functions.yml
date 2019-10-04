@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-azure-service-to-integrate-and-automate-business-processes.5-web-jobs-and-functions
+title: When to choose Azure Functions to run your business logic 
+metadata:
+  title: When to choose Azure Functions to run your business logic
+  description: Use Azure Functions to run your business logic 
+  ms.date: 04/10/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-web-jobs-and-functions.md)]

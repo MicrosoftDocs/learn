@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.access-blob-storage-metrics-from-code.4-access-azure-storage-metrics
+title: Access Azure Storage Metrics in Code
+metadata:
+  title: Access Azure Storage Metrics in Code
+  description: In this unit, you will learn how to write code that uses the Azure Monitor .NET API to access Storage metrics.
+  ms.date: 04/12/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-access-azure-storage-metrics.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "You have created a service principal in Azure Active Directory, and you have successfully authenticated the service principal using the LoginSilentAsync method. When you call MetricDefinitions.ListAsync, you receive an access denied message. How should you resolve this problem?"
+    choices:
+    - content: "Call the Metrics.ListAsync method instead of the MetricDefinitions.ListAsync method."
+      isCorrect: false
+      explanation: "If you have been denied access to metric definitions, you will also be denied access to metric values. Instead, you must assign the service principal to a role in Azure with permissions to access Azure Monitor."
+    - content: "Assign the service principal to an appropriate role in Azure."
+      isCorrect: true
+      explanation: "Even though you have created the service principal correctly, and you can authenticate without errors, you cannot access resources because you have not assigned the service principal to a role in Azure with permissions to access Azure Monitor."
+    - content: "Create an access key for the service principal in Azure."
+      isCorrect: false
+      explanation: "Even though you have created the service principal correctly including the access key, and you can authenticate without errors, you cannot access resources because you have not assigned the service principal to a role in Azure with permissions to access Azure Monitor."
+  - content: "You have written code that successfully retrieves metric definitions for an Azure Storage account from Azure Monitor. Now you want to retrieve values of the UsedCapacity metric. Which method should you call?"
+    choices:
+    - content: "MetricDefinitions.ListAsync"
+      isCorrect: false
+      explanation: "This method gets a list of definitions. To get a list of values for a metric, call Metrics.ListAsync."
+    - content: "Metrics.ListAsync"
+      isCorrect: true
+      explanation: "Once you have retrieved a list of the definitions that are available by using MetricDefinitions.ListAsync, you can call Metrics.ListAsync to retrieve the values of a specific metric."
+    - content: "The monitor client constructor"
+      isCorrect: false
+      explanation: "You call the monitor client constructor to authenticate with Azure. To find the values of a specfic metric, use Metrics.ListAsync."

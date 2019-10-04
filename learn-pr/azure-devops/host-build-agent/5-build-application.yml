@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.host-build-agent.5-build-application
+title: Exercise - Build the application using your agent
+metadata:
+  title: Exercise - Build the application by using your agent
+  description: Configure the pipeline to use your build agent, and watch the build in action.
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-build-application.md)]

@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.run-web-app-background-task-with-webjobs
+metadata:
+  title: Run a background task in an App Service Web App with WebJobs
+  description: In this module, you will use a WebJob to automate a background task in an Azure Web App.
+  ms.date: 2/28/2019
+  author: alistairmatthews
+  ms.author: v-alism
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Run a background task in an App Service Web App with WebJobs
+summary: Automate a task for a Web App that should run in the background without affecting the performance of the Web App.
+abstract:  |
+  In this module, you will:
+  - Identify what a WebJob is and when to use one instead of an Azure Function
+  - Use Visual Studio to Create an App Service background task with a WebJob linked to a web project
+  - Package a WebJob for deployment
+  - Configure the WebJob operating model by using the WebJobs SDK
+prerequisites: |
+    - A basic familiarity with the creation, configuration, and deployment of App Service Web Apps with Visual Studio
+iconUrl: /learn/achievements/run-web-app-background-task-with-webjobs.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- dotnet
+- aspnet-core
+- dotnet-core
+units:
+- learn.run-web-app-background-task-with-webjobs.1-introduction
+- learn.run-web-app-background-task-with-webjobs.2-what-are-webjobs
+- learn.run-web-app-background-task-with-webjobs.3-create-a-webjobs-project-using-visual-studio
+- learn.run-web-app-background-task-with-webjobs.4-exercise-create-a-webjob-using-visual-studio
+- learn.run-web-app-background-task-with-webjobs.5-improve-development-efficiency-with-the-webjobs-sdk
+- learn.run-web-app-background-task-with-webjobs.6-exercise-using-the-webjobs-sdk
+- learn.run-web-app-background-task-with-webjobs.7-summary
+badge:
+  uid: learn.run-web-app-background-task-with-webjobs.badge

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.4-use-the-core-sql-api-to-store-a-product-catalog
+title: Use Core (SQL) to store a product catalog
+metadata:
+  title: Use Core (SQL) to store a product catalog
+  description: Describe a scenario where Core (SQL) is the right choice for Azure Cosmos DB.
+  ms.date: 04/24/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-use-the-core-sql-api-to-store-a-product-catalog.md)]

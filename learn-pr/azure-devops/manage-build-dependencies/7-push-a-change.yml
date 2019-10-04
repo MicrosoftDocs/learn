@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.manage-build-dependencies.7-push-a-change
+title: Exercise - Push a change to your package
+metadata:
+  title: Exercise - Push a change to your package
+  description: Practice the entire process by pushing a change to the package, and then updating the application to use the new package.
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-push-a-change.md)]

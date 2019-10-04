@@ -1,31 +1,31 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-databricks
 metadata:
-  title: Intro to Azure Databricks - Learn
-  description: Learn the basic fundamentals of Azure Databricks and Apache Spark notebooks.
+  title: Intro to Azure Databricks
+  description: Learn the fundamentals of Azure Databricks and Apache Spark notebooks.
   ms.date: 02/20/2019
-  author: barlanmsft
-  ms.author: barlan
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: barlan
 title: Introduction to Azure Databricks
-summary: Learn the basic fundamentals of Azure Databricks and Apache Spark notebooks.
+summary: Learn the fundamentals of Azure Databricks and Apache Spark notebooks.
 abstract:  | 
   In this module, you will:
   - Create your own Azure Databricks workspace
   - Create a notebook inside your home folder in Databricks
   - Understand the fundamentals of Apache Spark notebook
   - Create, or attach to, a Spark cluster
-  - Identify the types of tasks well suited to Apache Spark’s Unified Analytics Engine.
+  - Identify the types of tasks that are well suited to the unified analytics engine Apache Spark.
 prerequisites:  | 
-  [!include[](../../includes/azure-subscription-prerequisite.md)]
+  [!include[](../../includes/azure-databricks-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/intro-to-azure-databricks.svg
 levels:
 - intermediate
 roles:
 - developer
-- solution-architect
+- data-scientist
+- data-engineer
 products:
 - azure
 - azure-databricks

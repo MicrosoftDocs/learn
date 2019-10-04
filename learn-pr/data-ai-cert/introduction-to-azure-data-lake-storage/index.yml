@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.data-ai.introduction-to-azure-data-lake-storage
 metadata:
-  title: Introduction to Azure Data Lake storage - Learn
-  description: Learn how Azure Data Lake Storage provides a cloud storage service that is highly available, secure, durable, scalable, and redundant, and brings new efficiencies to processing big data analytics workloads - Learn
+  title: Introduction to Azure Data Lake storage
+  description: Learn how Azure Data Lake Storage provides a cloud storage service that is highly available, secure, durable, scalable, and redundant, and brings new efficiencies to processing big data analytics workloads
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill
@@ -19,7 +19,6 @@ abstract: |
   - Explore the stages for processing big data by using Azure Data Lake Store
   - List the supported open-source platforms
 prerequisites: None
-ratingEnabled: true
 iconUrl: /learn/achievements/data-ai/introduction-to-azure-data-lake-storage-badge.svg
 levels:
 - beginner

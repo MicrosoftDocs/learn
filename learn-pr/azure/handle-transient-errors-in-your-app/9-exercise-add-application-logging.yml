@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.handle-transient-errors-in-your-app.9-exercise-add-application-logging
+title: Exercise - Monitor transient errors in your app using logging
+metadata:
+  title: Exercise - Monitor transient errors in your app using logging
+  description: In this hands-on lab, without using any external libraries, add additional logging to the chat app.
+  ms.date: 04/10/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+  zone_pivot_groups: dev-lang-csharp-java-node
+interactive: bash
+azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/9-exercise-add-application-logging.md)]

@@ -1,51 +1,52 @@
-Use the Windows-based Data Science Virtual Machine to jump-start your data science project. A number of programming languages are pre-installed including R, Python, SQL, and C#. Visual Studio provides an easy-to-use integrated development environment (IDE) to develop and test your code. The Azure SDK is included in the VM so you can build your applications using various services on Microsoft's cloud platform.
+The tools installed on the Windows-based DSVM include the most popular data science software, frameworks, and tools to support integration of Azure services. You can use the Windows-based DSVM to jump-start your data science projects. 
 
-There are no software charges for this data science VM image. You pay only the Azure usage fees and those depend on the size of the virtual machine you provision.
+There are no software charges for the DSVM image. You pay only the Azure usage fees, and those depend on the size of the virtual machine you provision.
 
-## Windows Features Not Available in Linux Server
+## Features of the Windows Data Science Virtual Machine
 
-The Windows-based DSVM has some features, listed below, not available on the Linux-based DSVM.
+The Windows-based DSVM includes some features that are not available on the Linux-based DSVM.
 
-- Windows DSVM has tutorials available for training purposes. 
-- Supports Microsoft Office. 
-- Windows DSVM allows for scalability with SQL Server integrated with Machine Learning Server.
-- Visual Studio 2017
+- Tutorials available for training purposes.
+- Support for Microsoft Office.
+- SQL Server integrated with Machine Learning Services to support Python/R execution with SQL Server.
+
+In addition, the Windows-based DSVM includes several preinstalled programming languages, including R, Python, SQL, and C#. You can develop, test, and run your code with Microsoft Visual Studio, or Visual Studio Code. The DSVM also comes with several other development and data access tools:
+
+- Azure SDK to integrate Microsoft Azure cloud services into your apps
 - Power BI Desktop
 - Azure PowerShell
-- Azcopy
+- AzCopy
 - Azure Data Lake Storage
-- DocDB Data Migration Tool
-- Microsoft Data Management Gateway
+- Migration tools for various databases (DocumentDB, Azure Cosmos DB, etc.)
+- Data Management Gateway
 
-## Tools
+## Data science tools
 
-The Windows DSVM has many pre-configured data science tools for data visualization, model training, deployment, and more. Some of these are listed below.
+The Windows DSVM has many preconfigured data science tools for data visualization, model training, deployment, and more. Some of these tools are:
 
-- Azure Machine Learning Service Python SDK
+- Azure Machine Learning SDK for Python
 - Anaconda Python distribution
-- Jupyter Notebook with R, Python, and PySpark kernels
+- Jupyter Notebook with R, Python, and Apache Spark Python (PySpark) kernels
 - Microsoft Visual Studio Community
-- Microsoft Power BI desktop
-- Microsoft SQL Server / Machine Learning Server 2017 Developer edition
+- Microsoft Power BI Desktop
+- Microsoft SQL Server + Microsoft Machine Learning Services
 - Apache Spark instance for local development and testing
-- Julia Pro
-- Python/R 
+- Julia Pro by Julia Computing
+- Python/R
 - Git
 
-## Machine Learning and Deep Learning Tools
+## Machine Learning tools
+
+Available Machine Learning and Deep learning tools include:
 
 - Azure Cognitive Services support
-- Toolkit
-- TensorFlow
-- Chainer
-- mxNet
-- Keras
-- Vowpal Wabbit
-- XGBoost
-- Rattle
-- Weka
-- Apache Drill
-
-## Summary
-
-The tools installed on the Windows-based DSVM include those most popular data science software and frameworks and tools to support integration of Azure services. The Windows-based DSVM has some features not available on the Linux based DSVM.
+- H2O - Open-source AI platform that supports in-memory, distributed, fast, and scalable ML.
+- TensorFlow - Python based deep learning framework.
+- Chainer - Python based deep learning framework.
+- Apache MXNet - Deep learning framework with support for multiple languages including C++, Python, R, and Perl.
+- Keras - High-level neural networks API, written in Python.
+- Vowpal Wabbit ("VW") - open-source, fast, out-of-core learning system library.
+- XGBoost - distributed gradient boosting (GBDT, GBRT, or GBM) library for Python, R, Java, Scala.
+- Rattle - graphical user interface for data mining by using R.
+- Weka - a collection of Java-based ML algorithms for data mining tasks.
+- Apache Drill - an open source SQL query engine for big data; allows data exploration without export.

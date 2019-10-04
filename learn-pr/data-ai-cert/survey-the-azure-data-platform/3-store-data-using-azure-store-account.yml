@@ -2,8 +2,8 @@
 uid: learn.data-ai.survey-the-azure-data-platform.store-data-using-azure-store-account
 title: Understand data storage in Azure Storage
 metadata:
-  title: Understand data storage in Azure Storage - Learn
-  description: Understand data storage in Azure Storage - Learn
+  title: Understand data storage in Azure Storage
+  description: Understand data storage in Azure Storage
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill

@@ -11,8 +11,8 @@ Beginner data scientists tend to use simple methods of tracking and managing the
 In this unit, you learn how to use the Azure Machine Learning Service to solve this problem. It helps you manage models and continuously improve them. Using this service involves the following steps.
 
 1. **Register the model** in a Machine Learning Model Registry hosted in Azure Machine Learning Service workspace
-2. **Register an image** that pairs a model with an inference script and dependencies required to create a docker container providing the compute environment to run the pipeline. 
-3. **Monitor and collect data** about model training, performance, and deployments.
+1. **Register an image** that pairs a model with an inference script and dependencies required to create a docker container providing the compute environment to run the pipeline. 
+1. **Monitor and collect data** about model training, performance, and deployments.
 
 The model registry is a single place to keep track of all the models in your Azure Machine Learning Service workspace. This ensures the models are stored in a structured format that can be queried. Registering a model can be done in a single line of code:
 
@@ -27,11 +27,4 @@ In the Azure Machine Learning service, you can track experiments and monitor met
 - how to add logs into your scripts so Azure Machine Learning can track the key metrics
 - how to submit the experiments with model monitoring enabled
 - how to monitor the progress of running jobs
-- how to view the model's results 
-
-To explore the Azure Machine Learning service further with in-depth code samples, follow the link: https://github.com/Azure/MachineLearningNotebooks
-
-For full details and documentation follow the link:
-https://docs.microsoft.com/azure/machine-learning/service/how-to-enable-data-collection
-
-
+- how to view the model's results

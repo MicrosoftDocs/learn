@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-scale-azure-sql-databases-elastic-pools.exercise-manage-elastic-pool
+metadata:
+  title: Exercise - Manage SQL elastic pools
+  description: Exercise - Manage SQL elastic pools
+  ms.date: 5/03/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Exercise - Manage SQL elastic pools
+azureSandbox: true
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-exercise-manage-elastic-pools.md)]

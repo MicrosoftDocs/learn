@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.register-and-deploy-model-with-amls.create-container-image
+title: Exercise - Create a container image for a trained model
+metadata:
+  title: Exercise - Create a container image for a trained model
+  description: Exercise - Create a container image for a trained model
+  ms.date: 01/31/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-create-container-image.md)]

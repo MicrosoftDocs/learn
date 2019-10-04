@@ -1,39 +1,35 @@
-To understand Azure Machine learning service, let's consider how it fits into the data science process shown below.
+To understand the Azure Machine Learning service, let's consider how it fits into the machine learning development process illustrated below.
 
-![Screenshot of Azure Machine Learning Service](../media/3-ml-service-framework.png)
+![The illustration depicts the machine learning process that is explained in this unit.](../media/3-ml-service-framework.png)
 
-## Environment Setup
+## Environment setup
 
-You start by creating a workspace, a place for your machine learning work to be stored in Azure. The workspace can be created in the Azure portal or from within Python code. An experiment object is created within the workspace to store information about runs for the models you train and test. You can have multiple experiment objects in a workspace.
+You start by creating a *workspace*, which is a place in Azure for you to store machine learning work. You can create a workspace in the Azure portal or from within Python code. An experiment object is created within the workspace to store information about runs for the models that you train and test. You can have multiple experiment objects in a workspace.
 
-Azure Machine Learning Service allows you to interact with the workspace using your preferred IDE such as a local Jupyter Notebook, PyCharm, or an Azure Notebook (a cloud version of Jupyter Notebook). It's easy to configure the environment as you will see later in this module.
+The Azure Machine Learning service allows you to interact with a workspace by using your preferred integrated development environment (IDE), such as a local Jupyter notebook, PyCharm, or a notebook in Azure Notebooks (a cloud version of Jupyter Notebook). As you will see later in this module, it's easy to configure the environment.
 
-## Data Preparation
+## Data preparation
 
-Before you can train a model, you need to explore and analyze the source data to determine its quality and select data for model features. Typically, this involves statistical analysis and use of visualizations. Then, in the data wrangling step, you clean up the data and apply transformations to prepare it for use in model training.
+Before you can train a model, you must explore and analyze the source data to determine its quality and to select data for model features. Typically, this involves statistical analysis and the use of visualizations. Then, in the data wrangling step, you clean up the data and apply transformations to prepare it for use in model training.
 
-You can use whatever Python modules you like for data preparation including pandas or the Azure Machine Learning Data Preparation SDK called azureml.dataprep.
+You can use whatever Python modules you like for data preparation, including Pandas or the Azure Machine Learning Data Preparation SDK called **Azureml.dataprep**.
 
 ## Experimentation
 
-Experimentation is the iterative process of model training and testing. Open-source packages like Scikit-learn, Tensorflow, and others are all supported.
+*Experimentation* is the iterative process of model training and testing. Open-source packages like Scikit-learn, TensorFlow, and others are supported.
 
-After building the model, you can train it locally or on a remote machine.
+After building a model, you can train it locally or on a remote computer.
 
-A key feature of the Azure Machine Learning service is the ability to run model training and evaluation in Azure containers. It's easy to monitor the remote model execution and retrieve output using the azureml package. You also need to create and configure a compute target object used to provision computing resource.
+A key feature of the Azure Machine Learning service is the ability to run model training and evaluation in Azure containers. It's simple to monitor remote model execution and retrieve output by using the Azureml package. You also must create and configure a compute target object, which is used to provision computing resource.
 
-Once you have the model you want to use in production, you register the model to the model registry in the workspace.
-
-Step Review: Build Model -> Train and Test Model (Locally or Remotely) -> Configure Compute target -> Register Model.
+After you have the model you want to use in production, you register the model in the workspace.
 
 ## Deployment
 
-Once you make sure the model runs correctly in the local environment and is performing at the accuracy level you want, you can deploy the model.
+After ensuring that the model runs correctly in the local environment and is performing at the accuracy level that you want, you can deploy the model.
 
-You will create a docker image and then deploy it to Azure Container Instances (ACI). Note: Other target environments available are Azure Kubernetes Service (AKS), Azure IoT Edge, and a field-programmable gate array. For the deployment, you need the following files.
+You will create a Docker image and then deploy it to Azure Container Instances. Note: Other target environments are available, including Azure Kubernetes Service (AKS), Azure IoT Edge, and a field programmable gate array (FPGA). For the deployment, you need the following files:
 
-1. Score scripts file to decide how to run the model;
-2. Environment file to specify package dependencies, which are important when using open-source packages;
-3. Configuration file to request appropriate amount of resource for the container
-
-Steps Review: Review Model -> Build an Image -> Deploy to Web Service.
+- The score scripts file is needed to decide how to run the model.
+- The environment file is needed to specify package dependencies, which are important when using open-source packages.
+- The configuration file is needed to request an appropriate amount of resources for the container.

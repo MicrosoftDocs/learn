@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.register-and-deploy-model-with-amls.summary
-title: Summary
+title: Summary and cleanup
 metadata:
-  title: Summary - Learn
-  description: Summary - Learn
+  title: Summary and cleanup
+  description: Summary and cleanup
   ms.date: 01/31/2019
   author: bcafferky
   ms.author: brcaffer
@@ -33,7 +33,7 @@ quiz:
     choices: 
     - content: "main() and score()"
       isCorrect: false
-      explanation: "That is correct.  main() and score() are not required."
+      explanation: "That is not correct.  main() and score() are not required."
     - content: "base() and train()"
       isCorrect: false
       explanation: "That is not correct.  base() and train() are not required."

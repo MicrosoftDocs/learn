@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn-wwl.build-an-ai-ready-culture
+metadata:
+  title: Understand the importance of building an AI-ready culture
+  description: A successful AI strategy must consider cultural issues as well as business issues. Becoming an AI-ready organization requires a fundamental transformation in how you do things, how employees relate to each other, what skills they have, and what processes and principles guide your behaviors.
+  ms.date: 04/26/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: barlan
+title: Understand the importance of building an AI-ready culture
+summary: A successful AI strategy must consider cultural issues as well as business issues. Becoming an AI-ready organization requires a fundamental transformation in how you do things, how employees relate to each other, what skills they have, and what processes and principles guide your behaviors. This unit is designed to help you understand which are the key elements that make a culture AI-ready and proposes a framework to drive that change in your organization.
+abstract: | 
+  In this module, you will:
+  - Describe the key elements of an AI-ready organizational culture.
+  - Identify opportunities for change to achieve an AI-ready culture. 
+  - Apply the AI Maturity Model Assessment to your business.
+prerequisites: None
+iconUrl: /learn/achievements/build-an-ai-ready-culture.svg
+levels: 
+- intermediate
+roles: 
+- functional-consultant
+- business-user
+products: 
+- azure
+- dynamics
+- m365
+units: 
+- learn-wwl.build-an-ai-ready-culture.introduction
+- learn-wwl.build-an-ai-ready-culture.importance-of-ai-ready-culture
+- learn-wwl.build-an-ai-ready-culture.characteristics-that-foster-ai-ready-culture
+- learn-wwl.build-an-ai-ready-culture.how-adkar-framework-helps-change
+- learn-wwl.build-an-ai-ready-culture.apply-ai-maturity-model-assessment
+- learn-wwl.build-an-ai-ready-culture.knowledge-check
+- learn-wwl.build-an-ai-ready-culture.summary-and-resources
+badge: 
+  uid: learn-wwl.build-an-ai-ready-culture.badge #add the uid for your achievement badge.

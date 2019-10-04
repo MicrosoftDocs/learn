@@ -1,0 +1,15 @@
+﻿### YamlMime:ModuleUnit
+uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure.10-summary-and-resources
+title: Summary and resources
+metadata:
+  title: Summary and resources
+  description: Unit description
+  ms.date: 6/11/2019
+  author: dragosapostu
+  ms.author: a-drapos
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS:   NOINDEX 
+durationInMinutes: 4
+content: |
+  [!include[](includes/10-summary-and-resources.md)] 

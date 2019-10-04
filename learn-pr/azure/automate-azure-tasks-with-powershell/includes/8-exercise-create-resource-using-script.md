@@ -23,6 +23,7 @@ Follow these steps in the Cloud Shell on the right to write the script:
     ```powershell
     code "./ConferenceDailyReset.ps1"
     ```
+
     > [!TIP]
     > The integrated Cloud Shell also supports vim, nano, and emacs if you'd prefer to use one of those editors.
 
@@ -89,7 +90,7 @@ Close the editor through the "..." context menu.
     ```powershell
     .\ConferenceDailyReset.ps1 <rgn>[sandbox resource group name]</rgn>
     ```
-    
+
 The script will take several minutes to complete. When it is finished, verify that it ran successfully by looking at the resources you now have in your resource group:
 
 ```powershell

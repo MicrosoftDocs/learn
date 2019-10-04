@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.store-access-data-cosmos-graph-api.build-application-that-stores-graph-data-using-gremlin-api
+title: Build an application that stores graph data using the Gremlin API
+metadata:
+  title: Build an application that stores graph data using the Gremlin API
+  description: Build an application that stores graph data using the Gremlin API
+  ms.date: 05/03/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-build-application-that-stores-graph-data-using-gremlin-api.md)]

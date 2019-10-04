@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.azure-intro-mobile-app-service
+metadata:
+  title: "Introduction to Mobile Apps in Azure App Service"
+  description: "Introduction to Mobile Apps in Azure App Service"
+  ms.date: 4/26/2019
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Introduction to Mobile Apps in Azure App Service"
+summary: "Understand how Azure Mobile Apps can provide data, identity and notifications for client mobile apps."
+abstract: |
+  In this module, you will:
+  - Understand when to use Mobile Apps in Azure App Service based on the needs of your mobile client apps
+  - Describe how the components of Mobile Apps in Azure App Service work to support mobile client apps
+prerequisites: |
+  - Basic knowledge of Azure App Service
+  - Basic knowledge of REST services and APIs
+iconUrl: /learn/achievements/azure-intro-mobile-app-service.svg
+badge:
+  uid: learn.azure-intro-mobile-app-service.badge
+levels: 
+- beginner
+roles: 
+- developer
+products:
+- azure
+- azure-portal
+units:
+- learn.azure-intro-mobile-app-service.introduction
+- learn.azure-intro-mobile-app-service.what-are-mobile-apps
+- learn.azure-intro-mobile-app-service.how-mobile-apps-works
+- learn.azure-intro-mobile-app-service.when-to-use-mobile-apps
+- learn.azure-intro-mobile-app-service.knowledge-check
+- learn.azure-intro-mobile-app-service.summary

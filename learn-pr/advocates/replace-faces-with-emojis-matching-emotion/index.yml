@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.the-mojifier
 metadata:
-  title: The Mojifier - Create a Slack bot that replaces people's faces with emojis matching their emotion - Learn
+  title: The Mojifier - Create a Slack bot that replaces people's faces with emojis matching their emotion
   description: Learn how to get images, calculate emotion, match emotions to emojis, and replace faces with emoji.
   #TODO: Update with real author's name.
   author: lnyswonger

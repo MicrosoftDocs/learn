@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-scale-azure-sql-databases-elastic-pools.knowledge-check
+metadata:
+  title: Knowledge Check
+  description: Knowledge Check
+  ms.date: 5/03/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Knowledge Check
+durationInMinutes: 3
+quiz:
+
+  questions:
+
+  - content: "Which of the following scenarios would likely benefit from a SQL elastic pool."
+    choices:
+    - content: "You're hosting several SQL servers to track election data for a regional election."
+      isCorrect: false
+      explanation: "This scenario may not benefit from elastic pools as the demand on the servers is likely to increase uniformly at the servers would likely spike at similar times."
+    - content: "You're running a popular gaming website with customer data stored in an Azure SQL server."
+      isCorrect: false
+      explanation: "Adding a single database to an elastic pool will not provide any cost or performance benefits."
+    - content: "You manage a cloud platform that tracks inventory for car dealerships."
+      isCorrect: true
+      explanation: "It's likely each dealership's data would be stored in a seperate database. This scenario would likely benefit from elastic pools."
+  
+  - content: "True or False, you can add multiple SQL elastic pools to a single Azure SQL server."
+    choices:
+    - content: "True"
+      isCorrect: true
+      explanation: "Correct, you can use multiple elastic pools with a single server."
+    - content: "False"
+      isCorrect: false
+      explanation: "Incorrect, you can use multiple elastic pools with a single server."

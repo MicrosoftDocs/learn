@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-evaluate-boolean-expressions.exercise-conditional-operator
+title: Exercise - conditional operator
+metadata:
+  title: Exercise - conditional operator
+  description: Use the conditional operator to succinctly add branching logic.
+  ms.date: 09/24/2019
+  author: bobtabor-msft
+  ms.author: rtabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 6
+azureSandbox: false
+interactive: csharp
+content: |
+  [!include[](includes/3-exercise-conditional-operator.md)]

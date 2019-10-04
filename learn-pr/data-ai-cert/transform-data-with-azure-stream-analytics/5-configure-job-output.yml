@@ -2,8 +2,8 @@
 uid: learn.data-ai.transform-data-with-azure-stream-analytics.configure-job-output
 title: Exercise - Configure the Azure Stream Analytics job output
 metadata:
-  title: Exercise - Configure the Azure Stream Analytics job output - Learn
-  description: Exercise - Configure the Azure Stream Analytics job output - Learn
+  title: Exercise - Configure the Azure Stream Analytics job output
+  description: Exercise - Configure the Azure Stream Analytics job output
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill

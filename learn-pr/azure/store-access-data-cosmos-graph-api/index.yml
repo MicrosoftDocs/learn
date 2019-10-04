@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azure.store-access-data-cosmos-graph-api
+metadata:
+  title: Store and access graph data in Azure Cosmos DB with the Graph API
+  description: We'll create an application that that uses an Azure Cosmos DB as a graph database. We'll store, retrieve and manipulate graph data and visualize it using Data Explorer.
+  ms.date: 05/03/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Store and access graph data in Azure Cosmos DB with the Graph API
+summary: Create an application that that uses an Azure Cosmos DB as a graph database. Store, retrieve and manipulate graph data and visualize it using Data Explorer.
+abstract: | 
+  In this module, you will:
+  - Determine if a graph database fits the data needs of your application
+  - Store data in a graph database from an application using the Gremlin API
+  - Query data in a graph database from an application using the Gremlin API
+prerequisites: |
+  - Beginner-level knowledge of creating and using an Azure Cosmos DB
+iconUrl: /learn/achievements/store-and-access-data-with-cosmos-db-and-the-graph-api-social.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-cosmos-db
+units:
+- learn.azure.store-access-data-cosmos-graph-api.introduction
+- learn.azure.store-access-data-cosmos-graph-api.determine-graph-database-fits-data-needs-of-your-application
+- learn.azure.store-access-data-cosmos-graph-api.build-application-that-stores-graph-data-using-gremlin-api
+- learn.azure.store-access-data-cosmos-graph-api.exercise-build-application-that-stores-graph-data-using-gremlin-api
+- learn.azure.store-access-data-cosmos-graph-api.query-graph-data-from-an-application-using-gremlin-api
+- learn.azure.store-access-data-cosmos-graph-api.exercise-query-graph-data-from-an-application-using-gremlin-api
+- learn.azure.store-access-data-cosmos-graph-api.knowledge-check
+- learn.azure.store-access-data-cosmos-graph-api.summary
+badge:
+  uid: learn.azure.store-access-data-cosmos-graph-api.badge

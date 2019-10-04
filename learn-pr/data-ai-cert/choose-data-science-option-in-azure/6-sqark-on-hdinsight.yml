@@ -2,8 +2,8 @@
 uid: learn.data-ai.choose-azure-data-science-option.sqark-on-hdinsight
 title: Spark on HDInsight
 metadata:
-  title: Spark on HDInsight - Learn
-  description: Spark on HDInsight - Learn
+  title: Spark on HDInsight
+  description: Spark on HDInsight
   ms.date: 01/31/2019
   author: bcafferky
   ms.author: brcaffer

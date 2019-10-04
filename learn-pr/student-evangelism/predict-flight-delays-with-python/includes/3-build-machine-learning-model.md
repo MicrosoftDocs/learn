@@ -9,7 +9,7 @@ To create a machine learning model, you need two datasets: one for training and 
     train_x, test_x, train_y, test_y = train_test_split(df.drop('ARR_DEL15', axis=1), df['ARR_DEL15'], test_size=0.2, random_state=42)
     ```
 
-    The first statement imports Sckit-Learn's [train_test_split](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html) helper function. The second line uses the function to split the DataFrame into a training set containing 80% of the original data, and a test set containing the remaining 20%. The `random_state` parameter seeds the random-number generator used to do the splitting, while the first and second parameters are DataFrames containing the feature columns and the label column.
+    The first statement imports scikit-learn's [train_test_split](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html) helper function. The second line uses the function to split the DataFrame into a training set containing 80% of the original data, and a test set containing the remaining 20%. The `random_state` parameter seeds the random-number generator used to do the splitting, while the first and second parameters are DataFrames containing the feature columns and the label column.
 
 1. `train_test_split` returns four DataFrames. Use the following command to display the number of rows and columns in the DataFrame containing the feature columns used for training:
 
@@ -29,7 +29,7 @@ Can you predict what you would see if you called `shape` on the other two DataFr
 
 There are many types of machine learning models. One of the most common is the regression model, which uses one of a number of regression algorithms to produce a numeric value — for example, a person's age or the probability that a credit-card transaction is fraudulent. You'll train a classification model, which seeks to resolve a set of inputs into one of a set of known outputs. A classic example of a classification model is one that examines e-mails and classifies them as "spam" or "not spam." Your model will be a binary classification model that predicts whether a flight will arrive on-time or late ("binary" because there are only two possible outputs).
 
-One of the benefits of using Sckit-learn is that you don't have to build these models — or implement the algorithms that they use — by hand. Sckit-learn includes a variety of classes for implementing common machine learning models. One of them is [RandomForestClassifier](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html), which fits multiple decision trees to the data and uses averaging to boost the overall accuracy and limit [overfitting](https://en.wikipedia.org/wiki/Overfitting).
+One of the benefits of using scikit-learn is that you don't have to build these models — or implement the algorithms that they use — by hand. Scikit-learn includes a variety of classes for implementing common machine learning models. One of them is [RandomForestClassifier](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html), which fits multiple decision trees to the data and uses averaging to boost the overall accuracy and limit [overfitting](https://en.wikipedia.org/wiki/Overfitting).
 
 1. Execute the following code in a new cell to create a `RandomForestClassifier` object and train it by calling the [fit](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html#sklearn.ensemble.RandomForestClassifier.fit) method.
 
@@ -72,7 +72,7 @@ There are several ways to measure the accuracy of a classification model. One of
     probabilities = model.predict_proba(test_x)
     ```
 
-1. Now use the following statement to generate an ROC AUC score from the probabilities using Sckit-Learn's [roc_auc_score](http://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html) method:
+1. Now use the following statement to generate an ROC AUC score from the probabilities using scikit-learn's [roc_auc_score](http://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html) method:
 
     ```python
     roc_auc_score(test_y, probabilities[:, 1])
@@ -109,7 +109,7 @@ There are several ways to measure the accuracy of a classification model. One of
 
 1. Other measures of accuracy for a classification model include *precision* and *recall*. Suppose the model was presented with three on-time arrivals and three delayed arrivals, and that it correctly predicted two of the on-time arrivals, but incorrectly predicted that two of the delayed arrivals would be on time. In this case, the precision would be 50% (two of the four flights it classified as being on time actually were on time), while its recall would be 67% (it correctly identified two of the three on-time arrivals). You can learn more about precision and recall from <https://en.wikipedia.org/wiki/Precision_and_recall>
 
-    Sckit-learn contains a handy method named [precision_score](http://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html) for computing precision. To quantify the precision of your model, execute the following statements:
+    Scikit-learn contains a handy method named [precision_score](http://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html) for computing precision. To quantify the precision of your model, execute the following statements:
 
     ```python
     from sklearn.metrics import precision_score
@@ -124,7 +124,7 @@ There are several ways to measure the accuracy of a classification model. One of
 
     _Measuring precision_
 
-1. Sckit-Learn also contains a method named [recall_score](http://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall_score.html) for computing recall. To measure you model's recall, execute the following statements:
+1. Scikit-learn also contains a method named [recall_score](http://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall_score.html) for computing recall. To measure you model's recall, execute the following statements:
 
     ```python
     from sklearn.metrics import recall_score

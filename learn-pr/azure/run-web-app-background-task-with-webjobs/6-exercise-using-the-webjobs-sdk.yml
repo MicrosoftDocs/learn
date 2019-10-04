@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.run-web-app-background-task-with-webjobs.6-exercise-using-the-webjobs-sdk
+title: Exercise - Using the WebJobs SDK
+metadata:
+  title: Exercise - Using the WebJobs SDK
+  description: In this exercise, you will use the SDK to add a trigger to your WebJob.
+  ms.date: 4/17/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-exercise-using-the-webjobs-sdk.md)]

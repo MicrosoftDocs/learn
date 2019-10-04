@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.create-a-build-pipeline.4-plan-build-tasks
+title: Plan your build tasks
+metadata:
+  title: Plan your build tasks
+  description: See how the team maps scripted build steps to Azure Pipelines tasks.
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-plan-build-tasks.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "A *build task*:"
+    choices:
+    - content: "Defines how a test, build, or deployment step is run."
+      isCorrect: true
+      explanation: "A build task can compile source code, run unit tests, deploy an application to a staging environment, and more."
+    - content: "Is the same as the **make** utility."
+      isCorrect: false
+      explanation: "Although you can run **make** from a build task, a build task can perform almost any kind of build step."
+    - content: "Is run on the build agent when the build completes to clean up the system."
+      isCorrect: false
+      explanation: "Build tasks are steps that you define to build or deploy your software."

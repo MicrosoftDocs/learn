@@ -29,7 +29,7 @@ quiz:
       isCorrect: true
       explanation: "'read_csv is a convenient way to read CSV files in pandas. For other file types, you can use 'read_table'"
 
-  - content: "What is the purpose of splitting data before trainig a machine learning model?"
+  - content: "What is the purpose of splitting data before training a machine learning model?"
     choices:
     - content: "To not give the model too much data."
       isCorrect: false
