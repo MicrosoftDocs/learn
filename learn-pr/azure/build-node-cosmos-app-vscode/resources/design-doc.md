@@ -94,8 +94,8 @@ Identify the subtasks of *module title*
     1. Using Explorer in Visual Studio Code, create a new folder named `grades`.
     2. Create a new JavaScript code file named `studentgrades.js`.
     3. In the `studentgrades.js` code file, add code to perform the following tasks:
-              1. Prompt the user for the details of a course, and use this information to create a new `course` JavaScript object, with properties `coursecode`, `coursename`, `duration`, `startdate`, and `enddate`.
-              2. Prompt the user for the details of two students and create a pair of `student` JavaScript objects, with properties `studentid`, `forename`, and `lastname`.
+              1. Prompt the user for the details of a course, and use this information to create a new `course` JavaScript object, with properties `coursecode`, `coursename`, and `academicyear`.
+              2. Prompt the user for the details of two students and create a pair of `student` JavaScript objects, with properties `studentid`, `academicyear`, `forename`, and `lastname`.
               3. For each student, prompt the user for a course grade, and add the grade details as a composite property of the `student` object.
     4. Run the app and test it.
     5. Use the debugger to single step through the application and observe the objects that get created.

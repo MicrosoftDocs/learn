@@ -21,3 +21,9 @@
 -->
 
 <!-- Keep bulleted/numbered lists to seven items max. Break them up into groups with headers if necessary -->
+
+sudo apt install node
+sudo apt install npm
+npm init -y
+npm install inquirer
+npm install readline-sync
