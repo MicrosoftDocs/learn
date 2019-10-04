@@ -112,6 +112,7 @@ Here, you revert your latest code changes and push another change through the pi
     06a26bd Change text and colors on the home page
     e5e8fe5 Swap deployment slots
     664d946 Trigger the pipeline
+    be86917 (upstream/blue-green) Initial
     ```
 
 ## Push the reverted change through the pipeline
