@@ -7,7 +7,7 @@ To do this, you:
 > * Set up an Azure DevOps project for this module.
 > * Move the work item for this module on Azure Boards to the **Doing** column.
 > * Make sure your project is set up locally so that you can push changes to the pipeline.
-> * Create the Azure App Service environments.
+> * Create the Azure App Service environments by using the Azure CLI in Azure Cloud Shell.
 > * Create pipeline variables that define the names of your App Service environments.
 > * Create a service connection that enables Azure Pipelines to securely access your Azure subscription.
 > * Perform an initial deployment.

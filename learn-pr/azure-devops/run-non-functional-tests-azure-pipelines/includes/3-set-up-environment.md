@@ -6,7 +6,7 @@ To do this, you:
 > * Add a user to ensure Azure DevOps can connect to your Azure subscription.
 > * Set up an Azure DevOps project for this module.
 > * Move the work item for this module on Azure Boards to the **Doing** column.
-> * Create the Azure App Service environments.
+> * Create the Azure App Service environments by using the Azure CLI in Azure Cloud Shell.
 > * Create pipeline variables that define the names of your App Service environments.
 > * Create a service connection that enables Azure Pipelines to securely access your Azure subscription.
 
