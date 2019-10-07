@@ -1,4 +1,4 @@
-There are various services on Azure that enable you to continuously monitor your applications and infrastructure.
+Azure has a rich set of tools that you can use to continuously monitor your applications and infrastructure.
 
 A financial organization is moving its systems to Azure, with a mixture of IaaS and PaaS services. In their previous environment, the company had several instances where systems failed, or issues arose. There was an extended delay to engage resources and resolve the issues. This situation affected customers' ability to access their accounts, and influenced satisfaction. The organization wants to design a monitoring strategy that encompasses all the solutions they use. There should also be insights and alerting into the log data accumulated. The company wants to quickly identify and minimize impact if systems fail in future.
 

@@ -1,6 +1,6 @@
-The last time issues arose on your organization's application, customers couldn't access their accounts. Also, the issues with the application weren't resolved on time so customer satisfaction was affected. Your organization wants to avoid a repeat of these issues when they move to Azure.
+The last time issues arose on your financial organization's application, customers couldn't access their accounts. Also, the issues with the application weren't resolved on time so customer satisfaction was affected. Your organization wants to avoid a repeat of these issues when they move to Azure.
 
-You'll detail how to integrate Azure Application Insights with your applications. You'll explore how to use it to continuously check the health of applications, and resolve issues faster. And you'll cover how to continuously monitor release pipelines to improve the development lifecycle of your applications.
+You'll detail how to integrate Azure Application Insights with your applications. You'll explore how to use it to check the health of applications continuously, and resolve issues faster. And you'll cover how to monitor release pipelines continuously to improve the development lifecycle of your applications.
 
 ## Criteria for assessing Application Insights
 
@@ -48,9 +48,9 @@ The SDK will also analyze your application for a typology. You'll see this typol
 
 <!-- Original image: https://docs.microsoft.com/en-us/azure/azure-monitor/app/media/nodejs/application-map-002.png -->
 
-## How to continuously monitor your applications
+## How to monitor your applications continuously
 
-Application Insights can send alerts for various issues, such as failures, or your application becoming unavailable. You can create availability tests to continuously monitor the health of your applications. Availability tests allow you to check the health of your application from different geographic locations around the world.
+Application Insights can send alerts for issues, such as failures, or your application becoming unavailable. You can create availability tests to monitor the health of your applications continuously. Availability tests allow you to check the health of your application from different geographic locations around the world.
 
 ![Availability test results](../media/5-availability-results.png)
 
@@ -60,15 +60,17 @@ You can create an availability test in the Azure portal. Among other things, you
 
 ![Create availability test](../media/5-create-availability-test.png)
 
-<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/azure-monitor/learn/media/tutorial-alert/create-test-001.png -->
+<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/azure-monitor/app/media/monitor-web-app-availability/availability-create-test-001.png -->
 
-In the above example, you see a test being configured that will send a request to an application every five minutes. The test is done from five geographic locations. If you enable **Near-realtime** for the alert type, you're telling Application Insights to send alerts in near-realtime. When you enable this alert type, you'll need to configure an alert rule for it.
+In the above example, you see a test being configured that will send a request to an application every five minutes. The test is done from five geographic locations.  
+
+You'll also need to configure an alert rule for your availability test. Use alert rules to dictate how alerts should be handled for your tests.
 
 ![Configuring an alert rule](../media/5-alert-rule.png)
 
 <!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/azure-monitor/learn/media/tutorial-alert/save-alert-001.png -->
 
-You specify under which conditions this alert should be triggered, for example, if a certain number of locations are unavailable. And you specify who should be notified. Send notifications through email or text message, or use runbooks, and webhooks to respond to alerts in an automated fashion.
+You specify under which conditions an alert should be triggered, for example, if a certain number of locations are unavailable. And you specify who should be notified. Send notifications through email or text message, or use runbooks, and webhooks to respond to alerts in an automated fashion.
 
 ![Locations](../media/5-availability-in-locations.png)
 

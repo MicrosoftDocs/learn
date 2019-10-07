@@ -4,9 +4,9 @@ You'll detail why your organization should use a continuous monitoring strategy.
 
 ## Why use continuous monitoring?
 
-Your applications and the infrastructure could face various issues. You might have to deal with issues such as security risks, changes in fluctuating usage rates, or errors and exceptions.
+Your applications and the infrastructure could face different kinds of potentially damaging issues. You might have to deal with issues such as security risks, fluctuating usage rates, or errors and exceptions.
 
-Depending on the kind of issue, you'll need to respond appropriately. You may respond with security patches or adding new features. You might also respond with changes in the configuration and code of your application or infrastructure. As a result, you'll need to monitor continuously these issues.
+Your response must be appropriate to the kind of issue. You may respond with security patches or by adding new features. You might also respond with changes in the configuration and code of your application or infrastructure. You'll need to monitor continuously for these issues.
 
 ![Monitor continuously](../media/2-monitor-continuously.png)
 
@@ -26,7 +26,7 @@ By monitoring your application for issues as it's being developed, you prevent e
 
 <!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/azure-monitor/app/media/overview-dashboard/overview.png -->
 
-You also monitor your application when it's live and in use. Your application could face several issues as it goes live. As you can see above, you might be faced with failing requests, or issues that cause an application to be unavailable altogether. By monitoring for live issues, you'll identify these types of problems and risks promptly, and respond effectively to keep your application healthy.
+You also monitor your application when it's live and in use. As you can see above, you might be faced with failing requests, or issues that cause an application to be unavailable altogether. By monitoring for live issues, you'll identify these types of problems and risks promptly, and respond effectively to keep your application healthy.
 
 ## Why monitor your infrastructure?
 

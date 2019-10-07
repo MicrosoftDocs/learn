@@ -1,4 +1,4 @@
-Your organization is ready to start the migration to Azure. The project manager wants you to extend your earlier investigation, to focus on enterprise-wide security and monitoring.
+Your financial organization deals with customers and partners on a constant basis. Your company is also active across different regions in the world. Many transactions are undertaken across the enterprise on a daily basis. Each transaction, must be monitored and protected regardless of the type of transaction, and the device or users involved. You have been asked to extend your earlier investigation, to focus on enterprise-wide security and monitoring.
 
 You'll detail how Azure Sentinel will help monitor and respond to security threats across your entire enterprise.
 
@@ -12,7 +12,7 @@ You use Azure Sentinel if:
 
 ## Connect your data sources
 
-You create an Azure Sentinel resource in the Azure portal. The process for creating this resource involves creating a workspace, then adding it to Sentinel.
+You create an Azure Sentinel resource in the Azure portal. The process for creating this resource involves creating a Log Analytics workspace, then adding it to Sentinel.
 
 ![Create a workspace](../media/6-create-workspace.png)
 

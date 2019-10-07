@@ -1,4 +1,4 @@
-Your organization will use a mixture of IaaS and PaaS services in Azure, it wants to understand how continuous monitoring can be implemented in Azure.
+As a financial organization, your company's reputation depends on the reliability and security of its systems. It's critical to monitor your systems closely to ensure that any problems or attacks are identified before they can affect users. For example, if a malicious user attacks your payment system, you need to know quickly to neutralize the threat, or your customers' personal data may be at risk.
 
 You'll explain the solutions in Azure that will enable you to continuously monitor your organization's services.
 
@@ -62,7 +62,7 @@ Through Azure Monitor's Log Analytics, you analyze data by querying log data fro
 
 ## What is Azure Sentinel?
 
-You use Azure Sentinel to collect data on the devices, the users, the infrastructure, and the applications across your enterprise. Use its built-in threat intelligence for detection and investigation to reduce false positives across your enterprise. Also, use Sentinel to proactively hunt for threats and anomalies, and respond using orchestration and automation.
+You use Azure Sentinel to collect data on the devices, the users, the infrastructure, and the applications across your enterprise. Use its built-in threat intelligence for detection and investigation to reduce false positives. Also, use Sentinel to proactively hunt for threats and anomalies, and respond using orchestration and automation.
 
 You connect your data sources to Sentinel. These sources include Microsoft services such as Office 365, and Azure Advanced Threat Protection. These sources can also include external solutions, such as AWS CloudTrail or on-premises sources. The dashboard will show detailed information collected from your sources.
 

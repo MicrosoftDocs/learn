@@ -1,4 +1,4 @@
-Your organization is in the financial industry, so security is of the highest priority. The company wants to improve and maintain the security of its systems.
+Because your company is a financial organization, it will need to meet the highest standards for security. Each transaction initiated by a customer or partner must be entirely protected from threats. Your company must also respond effectively to each potential threat. For example, if a virtual machine is compromised, you must be able to act rapidly and address the issue.
 
 You'll provide information on how to protect resources, and respond to threats using Azure Security Center.
 
