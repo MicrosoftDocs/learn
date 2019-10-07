@@ -115,7 +115,7 @@ Remember that CRUD stands for **create**, **read**, **update**, and **delete**. 
     > [!TIP]
     > Place your password in quotes so that "&" and other special characters aren't interpreted as processing instructions.
 
-1. From your `sqlcmd` session, create a table named `Drivers`.
+1. From your `sqlcmd` session, run the following T-SQL statements to create a table named `Drivers`.
 
     ```sql
     CREATE TABLE Drivers (DriverID int, LastName varchar(255), FirstName varchar(255), OriginCity varchar(255));
@@ -127,7 +127,7 @@ Remember that CRUD stands for **create**, **read**, **update**, and **delete**. 
     > [!NOTE]
     > The language you see here is Transact-SQL, or T-SQL.
 
-1. Verify that the `Drivers` table exists.
+1. Run the following T-SQL statements to verify that the `Drivers` table exists.
 
     ```sql
     SELECT name FROM sys.tables;
@@ -144,7 +144,7 @@ Remember that CRUD stands for **create**, **read**, **update**, and **delete**. 
     (1 rows affected)
     ```
 
-1. Run this `INSERT` T-SQL statement to add a sample row to the table. This is the **create** operation.
+1. Run the following T-SQL statements to add a sample row to the table. This is the **create** operation.
 
     ```sql
     INSERT INTO Drivers (DriverID, LastName, FirstName, OriginCity) VALUES (123, 'Zirne', 'Laura', 'Springfield');
@@ -157,7 +157,7 @@ Remember that CRUD stands for **create**, **read**, **update**, and **delete**. 
     (1 rows affected)
     ```
 
-1. Run this `SELECT` T-SQL statement to list the `DriverID` and `OriginCity` columns from all rows in the table. This is the **read** operation.
+1. Run the following T-SQL statements to list the `DriverID` and `OriginCity` columns from all rows in the table. This is the **read** operation.
 
     ```sql
     SELECT DriverID, OriginCity FROM Drivers;
@@ -174,7 +174,7 @@ Remember that CRUD stands for **create**, **read**, **update**, and **delete**. 
     (1 rows affected)
     ```
 
-1. Run this `UPDATE` T-SQL statement to change the city of origin from "Springfield" to "Boston" for the driver with a `DriverID` of 123. This is the **update** operation.
+1. Run the following T-SQL statements to change the city of origin from "Springfield" to "Boston" for the driver with a `DriverID` of 123. This is the **update** operation.
 
     ```sql
     UPDATE Drivers SET OriginCity='Boston' WHERE DriverID=123;
@@ -193,7 +193,7 @@ Remember that CRUD stands for **create**, **read**, **update**, and **delete**. 
     (1 rows affected)
     ```
 
-1. Run this `DELETE` T-SQL statement to delete the record. This is the **delete** operation.
+1. Run the following T-SQL statements to delete the record. This is the **delete** operation.
 
     ```sql
     DELETE FROM Drivers WHERE DriverID=123;
@@ -204,7 +204,7 @@ Remember that CRUD stands for **create**, **read**, **update**, and **delete**. 
     (1 rows affected)
     ```
 
-1. Run this `SELECT` T-SQL statement to verify the `Drivers` table is empty.
+1. Run the following T-SQL statements to verify the `Drivers` table is empty.
 
     ```sql
     SELECT COUNT(*) FROM Drivers;

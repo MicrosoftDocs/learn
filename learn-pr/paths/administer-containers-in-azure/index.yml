@@ -23,10 +23,11 @@ products:
 - azure-container-instances
 - azure-container-registry
 modules:
-#- learn.intro-to-containers
+- learn.intro-to-containers
 - learn.azure-container-registry
 - learn.run-docker-containers-aci
 - learn.azure.deploy-run-container-app-service
+- learn.intro-to-azure-kubernetes-service
 #TODO: Add - Orchestrate containerized application (POST-IGNITE)
 trophy:
   uid: learn.administer-containers-in-azure.trophy

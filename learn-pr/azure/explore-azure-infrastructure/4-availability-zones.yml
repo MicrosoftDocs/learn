@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.explore-azure-infrastructure.4-availability-zones
-title: Availability Zones
+title: Understand Availability Zones in Azure
 metadata:
-  title: Availability Zones
-  description: Availability Zones
+  title: Understand Availability Zones in Azure
+  description: Understand Availability Zones in Azure
   ms.date: 01/1/2019
-  author: markjulmar
-  ms.author: smmark
+  author: patridge
+  ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

@@ -1,30 +1,31 @@
-<!-- Application Gateway directs traffic to pools of web servers. Each server in a pool should provide a platform with the same capabilities, and run the same web app. The servers should also be configured identically. You can implement the web server using any appropriate technology such as Windows Server and IIS, or Linux and Apache. This approach helps to preserve any existing investment made for an existing web app you might be moving to Application Gateway. -->
-
 In the motor vehicle department system, you decide to run the web app on two servers. You'll implement each server using a virtual machine.
 
 In this exercise, you'll create a pair of virtual machines and install the vehicle registration web app. You'll also configure a virtual network that Application Gateway can use to connect to the virtual machines. Finally, you'll deploy the license renewal web site to an instance of Azure App Service.
 
-<!-- > [!NOTE]
-> You could also use virtual machine scale sets for hosting the pool of web server virtual machines. You can add or remove servers simply by scaling out and back in again. For simplicity, and to enable you to focus on Application Gateway, this lab creates two identical virtual machines manually. -->
-
 ![Diagram showing the resources that will be deployed](../media/3-resources.svg)
 
-## Create a virtual network
+## Create virtual machines and deploy the vehicle registration site
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
+1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and log in to the directory with access to the subscription you want to create resources in.
 
-- In the Cloud Shell window on the right, run the following command. This command uses the Azure command-line interface to create a virtual network named `vehicleappvnet`. It's a private network that provides addresses in the range 10.0.0.0 to 10.0.255.255. The command also creates a subnet called `webServerSubnet`, with the address range 10.0.1.0 to 10.0.1.255. This subnet will contain the virtual machines.
+1. Run the following command in the Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
+
+    ```azurecli
+    rg=<resource group name>
+
+    az group create --name $rg --location <location>
+    ```
+
+1. In the Cloud Shell window on the right, run the following command. This command uses the Azure command-line interface to create a virtual network named `vehicleappvnet`. It's a private network that provides addresses in the range 10.0.0.0 to 10.0.255.255. The command also creates a subnet called `webServerSubnet`, with the address range 10.0.1.0 to 10.0.1.255. This subnet will contain the virtual machines.
 
     ```azurecli
     az network vnet create \
-      --resource-group <rgn>[sandbox resource group]</rgn> \
+      --resource-group $rg \
       --name vehicleAppVnet \
       --address-prefix 10.0.0.0/16 \
       --subnet-name webServerSubnet \
       --subnet-prefix 10.0.1.0/24
     ```
-
-## Create virtual machines and deploy the vehicle registration site
 
 1. Download the script that creates the virtual machines with the following command:
 
@@ -38,9 +39,9 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
 
     ```azurecli
     az vm create \
-      --resource-group <rgn>[sandbox resource group]</rgn> \
+      --resource-group $rg \
       --name webServer1 \
-      --image Canonical:UbuntuServer:16.04.0-LTS:16.04.201610200 \
+      --image UbuntuLTS \
       --admin-username azureuser \
       --generate-ssh-keys \
       --vnet-name vehicleAppVnet \
@@ -51,9 +52,9 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
       --no-wait
 
     az vm create \
-      --resource-group <rgn>[sandbox resource group]</rgn> \
+      --resource-group $rg \
       --name webServer2 \
-      --image Canonical:UbuntuServer:16.04.0-LTS:16.04.201610200 \
+      --image UbuntuLTS \
       --admin-username azureuser \
       --generate-ssh-keys \
       --vnet-name vehicleAppVnet \
@@ -67,7 +68,7 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
 
     ```azurecli
     az vm list \
-      --resource-group <rgn>[sandbox resource group]</rgn> \
+      --resource-group $rg \
       --show-details \
       --output table
     ```
@@ -75,10 +76,10 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
     You should see output similar to the following. Ensure the **PowerState** is **VM running** for both virtual machines before continuing.
 
     ```output
-    Name          ResourceGroup                         PowerState    PublicIps    Fqdns    Location        Zones
-    ------------  ------------------------------------  ------------  -----------  -------  --------------  -------
-    webServer1    <rgn>[sandbox resource group]</rgn>  VM running                          southcentralus
-    webServer2    <rgn>[sandbox resource group]</rgn>  VM running                          southcentralus
+    Name          ResourceGroup      PowerState    PublicIps    Fqdns    Location        Zones
+    ------------  -----------------  ------------  -----------  -------  --------------  -------
+    webServer1    MyResourceGroup    VM running                          southcentralus
+    webServer2    MyResourceGroup    VM running                          southcentralus
     ```
 
 You've now created the virtual machines running the vehicle registration web app. Both virtual machines are identical, and are part of the same virtual network.
@@ -95,7 +96,7 @@ You've now created the virtual machines running the vehicle registration web app
 
     ```azurecli
     az appservice plan create \
-        --resource-group <rgn>[sandbox resource group]</rgn> \
+        --resource-group $rg \
         --name vehicleAppServicePlan \
         --sku S1
     ```
@@ -104,7 +105,7 @@ You've now created the virtual machines running the vehicle registration web app
 
     ```azurecli
     az webapp create \
-        --resource-group <rgn>[sandbox resource group]</rgn> \
+        --resource-group $rg \
         --name $APPSERVICE \
         --plan vehicleAppServicePlan \
         --runtime "aspnet|v4.7" \

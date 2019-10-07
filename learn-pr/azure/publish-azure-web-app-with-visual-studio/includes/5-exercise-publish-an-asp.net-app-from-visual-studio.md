@@ -24,7 +24,7 @@ You now have an ASP.NET Core web application running locally. In this part, you'
 
     - **Hosting Plan:** The hosting plan specifies the location, size, and features of the web server farm that hosts your app.  For this exercise, create a new hosting plan.
 
-        Click the **New...** button next to the hosting plan.
+        Click the **New...** button next to the hosting plan. In the Configure Hosting Plan window that appears, change the **Size** to **Free** and click OK.
 
     - **Application Insights:** Specifies if you want to use Application Insights for your application. For this exercise, we recommend that you choose **None.**
 

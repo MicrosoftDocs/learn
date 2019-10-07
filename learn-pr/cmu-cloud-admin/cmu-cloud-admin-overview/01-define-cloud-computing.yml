@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.01-define-cloud-computing
+title: Define cloud computing
+metadata:
+  title: Define cloud computing
+  description: Definition of cloud computing
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/01-define-cloud-computing.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "You are making a pitch to management to move your company's IT resources to the cloud. Which of the following arguments is NOT one that you would use to make your case?"
+    choices:
+    - content: "We incur no up-front costs for deploying resources to the cloud, and we pay only for the resources that we use."
+      isCorrect: false
+      explanation: "Incorrect. You pay for cloud resources using a pay-as-you-go model, and you only pay for the resources that you use."
+    - content: "Moving to the cloud will make it easier for us to scale our Web site as our customer base grows."
+      isCorrect: false
+      explanation: "Incorrect. One of the benefits of cloud computing is rapid scalability."
+    - content: "If we choose one vendor's cloud platform and later change our mind, it is easy to move virtual machines and other resources from one cloud platform to another."
+      isCorrect: true
+      explanation: "Correct! Vendor lock-in is one of the risks you incur with cloud computing. While there are ways to mitigate the risks, moving resources from one cloud to another is typically labor-intensive."
+    - content: "Cloud computing makes us more agile. We can deploy virtual machines in minutes, whereas procuring a physical server and installing it on-premises can take weeks or months."
+      isCorrect: false
+      explanation: "Incorrect. One of the benefits of cloud computing is fast resource-provisioning times."

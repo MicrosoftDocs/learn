@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-azure-account.3-multiple-subscriptions
-title: Using multiple Azure subscriptions
+title: When to use multiple Azure subscriptions in your account
 metadata:
-  title: Using multiple Azure subscriptions; billing and access management
-  description: Using multiple Azure subscriptions; billing and access management
+  title: When to use multiple Azure subscriptions; billing and access management
+  description: When to use multiple Azure subscriptions; billing and access management
   ms.date: 01/1/2019
-  author: markjulmar
-  ms.author: smmark
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

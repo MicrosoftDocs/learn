@@ -63,13 +63,13 @@ The database we created currently does not allow access from any connections. Th
 1. In the cloud shell, SSH into your Linux VM if you aren't already connected.
 
     ```bash
-    ssh <X.X.X.X>
+    ssh [X.X.X.X]
     ```
 
-1. Recall the `sqlcmd` command we retrieved earlier. Go ahead and run it to attempt to connect to the database. Make sure you replace `<username>` and `<password>` with the `ADMINUSER` credentials you specified in the previous unit. Make sure to keep the single quotes around the username and password so that any special characters aren't misinterpreted by the shell.
+1. Recall the `sqlcmd` command we retrieved earlier. Go ahead and run it to attempt to connect to the database. Make sure you replace `[username]` and `[password]` with the `ADMINUSER` credentials you specified in the previous unit. Make sure to keep the single quotes around the username and password so that any special characters aren't misinterpreted by the shell.
 
     ```bash
-    sqlcmd -S tcp:server<12345>.database.windows.net,1433 -d marketplaceDb -U '<username>' -P '<password>' -N -l 30
+    sqlcmd -S tcp:serverNNNN.database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
     ```
 
     You should receive an error when trying to connect. This is expected since we've not allowed any access to the database.
@@ -86,7 +86,7 @@ Since our VM has outbound internet access, we can use the **Allow access to Azur
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. In the **Search resources, services, and docs** box at the top, search for your database server name, `server<12345>`. Select the SQL server.
+1. In the **Search resources, services, and docs** box at the top, search for your database server name, `serverNNNN`. Select the SQL server.
 
 1. In the SQL server panel, in the **Security** section in the left menu, select **Firewalls and virtual networks**.
 
@@ -95,7 +95,7 @@ Since our VM has outbound internet access, we can use the **Allow access to Azur
 1. Back in your SSH session, let's try to connect to your database again.
 
     ```bash
-    sqlcmd -S tcp:server<12345>.database.windows.net,1433 -d marketplaceDb -U '<username>' -P '<password>' -N -l 30
+    sqlcmd -S tcp:serverNNNN.database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
     ```
 
     At this point, you should be able to connect. If it's successful, you should see a sqlcmd prompt.
@@ -122,7 +122,7 @@ EXECUTE sp_set_database_firewall_rule N'My Firewall Rule', '40.112.128.214', '40
     > When running T-SQL commands such as the following, the `GO` on the second line may not copy through to the `sqlcmd` prompt, so you will likely need to type this out. The T-SQL command won't execute without it, so make sure to run the `GO` command.
 
     ```sql
-    EXECUTE sp_set_database_firewall_rule N'Allow appServer database level rule', '<From IP Address>', '<To IP Address>';
+    EXECUTE sp_set_database_firewall_rule N'Allow appServer database level rule', '[From IP Address]', '[To IP Address]';
     GO
     ```
 
@@ -133,7 +133,7 @@ EXECUTE sp_set_database_firewall_rule N'My Firewall Rule', '40.112.128.214', '40
 1. Back in cloud shell, in the VM you are connected via SSH to, try connecting to your database again.
 
     ```bash
-    sqlcmd -S tcp:server<12345>.database.windows.net,1433 -d marketplaceDb -U '<username>' -P '<password>' -N -l 30
+    sqlcmd -S tcp:serverNNNN.database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
     ```
 
     At this point, you should be able to connect. If it's successful, you should see a sqlcmd prompt.
@@ -168,7 +168,7 @@ Let's now use a server-level IP rule to restrict the systems that can connect.
 1. Back in cloud shell, on your _appServer_ VM, try connecting to your database again.
 
     ```bash
-    sqlcmd -S tcp:server<12345>.database.windows.net,1433 -d marketplaceDb -U '<username>' -P '<password>' -N -l 30
+    sqlcmd -S tcp:serverNNNN.database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
     ```
 
     At this point you should be able to connect, since the server-level rule is allowing access based on the public IP address of the _appServer_ VM. If it's successful, you should see a sqlcmd prompt.
@@ -203,7 +203,7 @@ In this case, since our VM is running in Azure, we can use a server-level virtua
 1. Back in cloud shell, on your _appServer_ VM, try connecting to your database again.
 
     ```bash
-    sqlcmd -S tcp:server<12345>.database.windows.net,1433 -d marketplaceDb -U '<username>' -P '<password>' -N -l 30
+    sqlcmd -S tcp:serverNNNN.database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
     ```
 
     At this point, you should be able to connect. If it's successful, you should see a sqlcmd prompt.
