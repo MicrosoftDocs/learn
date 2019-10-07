@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.choose-the-right-disk-storage-for-vm-workload.2-managed-unmanaged-and-local-disk-storage
+uid: learn.choose-the-right-disk-storage-for-vm-workload.2-managed-unmanaged-local-disk-storage
 title: Managed, unmanaged, and local disk storage
 
 metadata:
@@ -14,7 +14,7 @@ metadata:
 
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-managed-unmanaged-and-local-disk-storage.md)]
+  [!include[](includes/2-managed-unmanaged-local-disk-storage.md)]
 quiz:
   title: "Check your knowledge"
   questions:

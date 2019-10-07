@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.choose-the-right-disk-storage-for-vm-workload.4-select-a-disk-type-for-your-workload
+uid: learn.choose-the-right-disk-storage-for-vm-workload.4-select-disk-type-for-your-workload
 title: Select a disk type for your workload
 
 metadata:
@@ -14,7 +14,7 @@ metadata:
 
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-select-a-disk-type-for-your-workload.md)]
+  [!include[](includes/4-select-disk-type-for-your-workload.md)]
 quiz:
   title: "Check your knowledge"
   questions:
