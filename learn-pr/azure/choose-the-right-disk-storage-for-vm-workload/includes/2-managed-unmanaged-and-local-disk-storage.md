@@ -49,7 +49,7 @@ Each disk can take one of three roles in a virtual machine:
 
 You can administer OS disks and data disks in the **Disks** page of the virtual machine in the Azure portal:
 
-![Editing disks in the Azure portal](../media/2-edit-disks-in-portal.png)
+![Editing disks in the Azure portal](../media/2-edit-disks-portal.png)
 
 ## Ephemeral OS disks
 

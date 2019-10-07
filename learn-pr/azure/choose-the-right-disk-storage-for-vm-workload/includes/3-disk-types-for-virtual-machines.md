@@ -74,7 +74,7 @@ If you need higher performance than standard disks provide, or if you can't sust
 
 In the scenario above, premium SSDs are the best disks to use for the sales database in Brazil. This system is business-critical and IO intensive but you cannot use ultra disks in South American datacenters. Premium disks provide the maximum performance in this region.
 
-![Creating a premium SSD](../media/3-create-a-premium-ssd.png)
+![Creating a premium SSD](../media/3-create-premium-ssd.png)
 
 ## Standard SSD
 
@@ -96,7 +96,7 @@ Choose to use standard SSDs when you have budgetary constraints and a workload t
 
 In the scenario above, standard SSDs are the best disks to use for the web servers. This system is business-critical and requires good performance but it is not IO intensive. 
 
-![Selecting a size for a standard SSD](../media/3-select-a-standard-ssd-size.png)
+![Selecting a size for a standard SSD](../media/3-select-standard-ssd-size.png)
 
 ## Standard HDD
 

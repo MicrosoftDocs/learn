@@ -30,8 +30,8 @@ products:
 - azure
 - azure-virtual-machines
 units:
-- learn.choose-the-right-disk-storage-for-vm-workload.introduction
-- learn.choose-the-right-disk-storage-for-vm-workload.managed-unmanaged-and-local-disk-storage
-- learn.choose-the-right-disk-storage-for-vm-workload.disk-types-for-virtual-machines
-- learn.choose-the-right-disk-storage-for-vm-workload.select-a-disk-type-for-your-workload
-- learn.choose-the-right-disk-storage-for-vm-workload.summary
+- learn.choose-the-right-disk-storage-for-vm-workload.1-introduction
+- learn.choose-the-right-disk-storage-for-vm-workload.2-managed-unmanaged-and-local-disk-storage
+- learn.choose-the-right-disk-storage-for-vm-workload.3-disk-types-for-virtual-machines
+- learn.choose-the-right-disk-storage-for-vm-workload.4-select-a-disk-type-for-your-workload
+- learn.choose-the-right-disk-storage-for-vm-workload.5-summary
