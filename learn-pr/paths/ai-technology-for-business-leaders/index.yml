@@ -14,12 +14,14 @@ summary: In this learning path, you will be provided with a high-level overview 
 prerequisites: None
 iconUrl: /learn/achievements/ai-technology-for-business-leaders.svg
 levels:
-- intermediate
+- beginner
 roles:
 - functional-consultant
 - business-user
 products:
 - azure
+- dynamics
+- m365
 modules:
 - learn-wwl.intro-to-ai-technology
 - learn-wwl.microsoft-approach-to-ai

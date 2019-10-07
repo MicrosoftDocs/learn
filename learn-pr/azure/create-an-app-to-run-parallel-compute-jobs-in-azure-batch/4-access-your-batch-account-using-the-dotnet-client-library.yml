@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.access-your-batch-account-using-the-dotnet-client-library
+title: Access your Batch account using the .NET client library
+metadata:
+  title: Access your Batch account using the .NET client library
+  description: Understand how the three Azure Batch related libraries are used in your app, Microsoft.Azure.Batch, Microsoft.Azure.Storage.Blob, and Microsoft.Azure.Management.Batch.
+  ms.date: 06/01/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-access-your-batch-account-using-the-dotnet-client-library.md)]

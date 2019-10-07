@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn-sqlserver.introduction-upgrading-sql-server.8-knowledge-check
+title: Knowledge check - upgrade SQL Server tools
+metadata:
+  title: Knowledge check - upgrade SQL Server tools
+  description: Knowledge check - upgrade SQL Server tools
+  ms.date: 01/31/2019
+  author: geoffallix
+  ms.author: v-gea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+  ROBOTS: NOINDEX
+durationInMinutes: 6
+quiz:
+  title: Check your knowledge
+  questions:
+  
+  - content: "Which of the following tools enables you to automate the process of testing the workload of your current database on a target server? Select the correct answer."
+    choices:
+    - content: "Database Evaluation Application"
+      isCorrect: false
+      explanation: "Database Experimentation Assistant enables you to automate the process of testing the workload of your current database on a target server."
+    - content: "Database Environment Analyzer"
+      isCorrect: false
+      explanation: "Database Experimentation Assistant enables you to automate the process of testing the workload of your current database on a target server."
+    - content: "Database Engine Attendant"
+      isCorrect: false
+      explanation: "Database Experimentation Assistant enables you to automate the process of testing the workload of your current database on a target server."
+    - content: "Database Export Agent"
+      isCorrect: false
+      explanation: "Database Experimentation Assistant enables you to automate the process of testing the workload of your current database on a target server."
+    - content: "Database Experimentation Assistant"
+      isCorrect: true
+      explanation: "Database Experimentation Assistant enables you to automate the process of testing the workload of your current database on a target server."
+
+  - content: "Which of the following is a valid setting for Query Store in SQL Server 2017?"
+    choices:
+    - content: "Off"
+      isCorrect: true
+      explanation: "Off, Read only, and Read write are valid settings for Query Store in SQL Server 2017"
+    - content: "Passive"
+      isCorrect: false
+      explanation: "Off, Read only, and Read write are valid settings for Query Store in SQL Server 2017"
+    - content: "Active"
+      isCorrect: false
+      explanation: "Off, Read only, and Read write are valid settings for Query Store in SQL Server 2017"
+    - content: "Read only"
+      isCorrect: false
+      explanation: "Off, Read only, and Read write are valid settings for Query Store in SQL Server 2017"
+    - content: "Read write"
+      isCorrect: false
+      explanation: "Off, Read only, and Read write are valid settings for Query Store in SQL Server 2017"
+
+  - content: "On which version of SQL Server was Query Tuning Assistant first implemented? Select the correct answer."
+    choices:
+    - content: "SQL Server 2008 R2"
+      isCorrect: false
+      explanation: "Query tuning Assistant was first implemented on SQL Server 2017"
+    - content: "SQL Server 2012"
+      isCorrect: false
+      explanation: "Query tuning Assistant was first implemented on SQL Server 2017"
+    - content: "SQL Server 2014"
+      isCorrect: false
+      explanation: "Query tuning Assistant was first implemented on SQL Server 2017"
+    - content: "SQL Server 2016"
+      isCorrect: false
+      explanation: "Query tuning Assistant was first implemented on SQL Server 2017"
+    - content: "SQL Server 2017"
+      isCorrect: true
+      explanation: "Query tuning Assistant was first implemented on SQL Server 2017"

@@ -4,7 +4,7 @@ Suppose your team has decided to build a graph database in your e-commerce compa
 
 ## Build an application that stores graph data using the Gremlin API
 
-To build a graph database, we use a similar methodology to relational databases: we create a database and then run queries against it. For this application, there are no libraries or concepts that are specific to Cosmos DB. The graph API presented by Cosmos DB is entirely standards-based. 
+To build a graph database, we use a similar methodology to relational databases: we create a database and then run queries against it. For this application, there are no libraries or concepts that are specific to Azure Cosmos DB. The graph API presented by Azure Cosmos DB is entirely standards-based. 
 
 Azure Cosmos DB is the globally distributed, multi-model database service from Microsoft for mission-critical applications. It is a multi-model database that supports document, key-value, graph, and columnar data models. The Azure Cosmos DB Gremlin API is used to store and operate on graph data. Gremlin API supports modeling graph data and provides APIs to traverse through the graph data.
 
@@ -13,9 +13,3 @@ Azure Cosmos DB is a fully managed graph database that offers global distributio
 ### What is the Gremlin Graph Traversal Language?
 
 The Gremlin Graph Traversal Language, or *Gremlin* is a high-performance language used to traverse and query data from graph databases. It's described as a functional, data-flow language that enables users to express complex traversals for their application's property graph.
-
-### What is Gremlin.NET?
-
-Gremlin.Net is an open-source API that implements Gremlin for C# .NET applications; it currently targets .NET Standard allowing it to be added to .NET Framework, .NET Core or .NET Standard compatible libraries and applications.
-
-In the following exercise, we'll use the Gremlin.Net in an ASP.NET Core application. 

@@ -1,0 +1,43 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.export-data-with-azure-import-export.how-azure-import-export-works
+title: How Azure Import/Export works
+
+metadata:
+  title: How Azure Import/Export works
+  description: How Azure Import/Export works
+  ms.date: 7/26/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-how-azure-import-export-works.md)]
+
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: Azure Import/Export allows you to export data from ______________.
+    choices:
+    - content: Azure Storage
+      isCorrect: false
+      explanation: You can't export data held in Azure Storage.
+    - content:  Azure Blob storage
+      isCorrect: true
+      explanation: You can only export blob data with the Azure Import/Export service.
+    - content:  Azure Blob and Azure Storage
+      isCorrect: false
+      explanation: You can only export blob data with the Azure Import/Export service.
+  - content: You receive disk drives with your exported data from Microsoft. You try to copy the data from the disks back to on-premises storage, but you can't access the data. Why might this be the case?
+    choices:
+    - content: You don't have permissions to view the data. Ask the Azure tenant administrator to give you access to the storage account from which the data was exported.
+      isCorrect: false
+      explanation: Access to data on the disks is unrelated to the permissions you have on the Azure storage account.
+    - content: You didn't specify the correct BitLocker encryption key when you tried to access the data. 
+      isCorrect: true
+      explanation: Find the encryption keys in the details for the export job in the Azure portal.
+    - content: You haven't provided the correct password for your Azure account.
+      isCorrect: false
+      explanation: You don't use your Azure account password to access the data on the disks. 

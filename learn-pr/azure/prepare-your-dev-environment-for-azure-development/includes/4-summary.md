@@ -1,0 +1,1 @@
+In this module, you prepared your development environment for creating apps in Azure. You installed the appropriate IDE for your operating system and development requirements, and you added Azure integration to streamline the publishing of content directly to Azure services.

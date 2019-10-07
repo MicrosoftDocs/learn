@@ -2,8 +2,6 @@ Here you'll deploy the Quickstart template you explored in the previous part. Th
 
 Before you do that, let's briefly review the deployment process.
 
-[!include[](../../../../includes/azure-sandbox-activate.md)]
-
 ## How do I deploy a Resource Manager template?
 
 You can use automation scripting tools such as the Azure CLI, Azure PowerShell, or even the Azure REST APIs with your favorite programming language to deploy resources from templates. You can also deploy your templates through Visual Studio, Visual Studio Code, and the Azure portal. Shortly, you'll deploy a Resource Manager template using the Azure CLI from Cloud Shell.

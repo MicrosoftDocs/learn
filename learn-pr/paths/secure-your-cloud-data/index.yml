@@ -31,7 +31,7 @@ modules:
 - learn.azure.secure-azure-storage-account
 - learn.manage-secrets-with-azure-key-vault
 #TODO: Add - secure/protect resources with azure security center (POST-IGNITE)
-- learn.authenticate-browser-based-apps-with-azure-app-services
+#- learn.authenticate-browser-based-apps-with-azure-app-services
 - learn.secure-access-azure-ad-multi-factor-authentication
 - learn.secure-azure-resources-with-rbac
 - learn.secure-your-azure-sql-database

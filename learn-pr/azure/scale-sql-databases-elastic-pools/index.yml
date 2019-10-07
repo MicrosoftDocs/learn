@@ -4,8 +4,8 @@ metadata:
   title: "Scale multiple Azure SQL Databases with SQL elastic pools"
   description: "Scale multiple Azure SQL Databases with SQL elastic pools"
   ms.date: 5/03/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Scale multiple Azure SQL Databases with SQL elastic pools"

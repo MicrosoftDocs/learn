@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.azure.route-and-process-data-logic-apps
+metadata:
+  title: "Route and process data automatically using Logic Apps"
+  description: "Define a workflow using built-in triggers, actions, and conditional operators. Your workflow will run automatically when data is available, process the data in the cloud, record results in a database, and send email notifications."
+  ms.date: 5/10/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Route and process data automatically using Logic Apps"
+summary: "Define a workflow using built-in triggers, actions, and conditional operators. Your workflow will run automatically when data is available, process the data in the cloud, record results in a database, and send email notifications."
+abstract: |
+  In this module, you will:
+  - Construct a workflow model that will solve your business problem
+  - Launch your Logic App in response to an external event
+  - Apply conditional logic to filter data and select a processing path
+  - Integrate Azure services into your workflow
+prerequisites: |
+  - Basic knowledge of the Azure Logic Apps concepts of connector, trigger, and action
+  - Experience creating and managing resources using the Azure portal at the beginner level
+  - Familiarity with programming concepts like conditional statements and loops
+iconUrl: /learn/achievements/route-and-process-data-logic-apps.svg
+badge:
+  uid: learn.azure.route-and-process-data-logic-apps.badge
+levels: 
+- beginner
+roles: 
+- developer
+products:
+- azure
+- azure-portal
+- azure-logic-apps
+units:
+- learn.azure.route-and-process-data-logic-apps.introduction
+- learn.azure.route-and-process-data-logic-apps.design-logic-apps-for-your-workflows
+- learn.azure.route-and-process-data-logic-apps.detect-external-event-using-trigger
+- learn.azure.route-and-process-data-logic-apps.create-social-media-tracker
+- learn.azure.route-and-process-data-logic-apps.execute-an-action
+- learn.azure.route-and-process-data-logic-apps.analyze-content-of-tweet
+- learn.azure.route-and-process-data-logic-apps.alter-control-flow-using-control-action
+- learn.azure.route-and-process-data-logic-apps.branch-based-on-tweet-sentiment
+- learn.azure.route-and-process-data-logic-apps.summary
