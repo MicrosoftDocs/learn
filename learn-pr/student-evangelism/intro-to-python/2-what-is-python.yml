@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.intro-to-python.what-is-python
+title: What is Python?
+metadata:
+  title: What is Python?
+  description: Learn the history of Python, implementations available, and common uses
+  ms.date: 04/30/2019
+  author: ShanaMatthews
+  ms.author: ShanaMatthews
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-what-is-python.md)]

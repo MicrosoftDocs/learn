@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-sqlserver.assess-convert-sql-server-databases-using-dma.2-decide-dma-right-your-task
+title: Decide if the Data Migration Assistant (DMA) is right for your task
+metadata:
+  title: Decide if the Data Migration Assistant (DMA) is right for your task
+  description: Decide if the Data Migration Assistant (DMA) is right for your task
+  ms.date: 01/31/2019
+  author: geoffallix
+  ms.author: v-gea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-decide-dma-right-your-task.md)]

@@ -4,7 +4,7 @@
 
 Here you will create a new virtual machine to serve as a web server for the local media.
 
-1. Log in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 2. In the left navigation pane, click **Create a resource**.
 3. In the **New** pane, click **Windows Server 2016 Datacenter**.
 4. Enter the following values in the **Create a virtual machine** window:

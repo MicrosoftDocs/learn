@@ -1,7 +1,5 @@
 In the last exercise, we tested our trained model using the **Quick Test** feature of the Custom Vision Service portal. This is a great way to quickly check the accuracy of the model with some test images. Let's go a little further and make calls to the prediction endpoint of our model over HTTP.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 1. Returning to your **Artworks**\* project in the Custom Vision Service portal, select the  **Performance** tab.
 
     ![Screenshot of the top bar of the Artworks project with the Performance tab highlighted](../media/5-performance-tab.png)

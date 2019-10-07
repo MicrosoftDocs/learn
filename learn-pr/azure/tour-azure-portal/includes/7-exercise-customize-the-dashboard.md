@@ -35,7 +35,6 @@ Dashboards are a flexible tool for managing different aspects of Azure services 
     - Help + Support
     - Quick Tasks
     - Marketplace
-    - What's New
 
 1. When you have added these tiles, click **Done customizing**. The **Customer Dashboard** dashboard should appear.
 
@@ -54,7 +53,6 @@ You now want to create a very similar dashboard for some other customers.
     - Organization Identity
     - Users and Groups
     - User Activity Summary
-    - Welcome to the Azure AD Admin Center
 
 1. Reposition the tiles as necessary, and then click **Done customizing**.
 

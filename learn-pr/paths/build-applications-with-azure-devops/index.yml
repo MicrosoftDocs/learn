@@ -1,0 +1,46 @@
+### YamlMime:LearningPath
+uid: learn.azdo.build-applications-with-azure-devops
+metadata:
+  title: Build applications with Azure DevOps learning path
+  description: Learn how configure build pipelines that continuously build, test, and verify your applications.
+  brand: azure
+  ms.date: 9/1/2019
+  author: tpetchel
+  ms.author: thpetche
+  #ms.learn-contact: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build applications with Azure DevOps
+summary: |
+  Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how configure build pipelines that continuously build, test, and verify your applications.
+
+  In this learning path, you will:
+  - Collaborate with others to build your applications using Azure Pipelines and GitHub
+  - Run automated tests in your pipeline to validate code quality
+  - Scan your source code and third-party components for potential vulnerabilities
+  - Define multiple pipelines that work together to build your application
+  - Build applications using both Microsoft-hosted agents and your own build agents
+
+cardDescription: Learn how configure build pipelines that continuously build, test, and verify your applications.
+prerequisites: None
+iconUrl: /learn/achievements/azure-devops/build-applications-with-azure-devops.svg
+levels:
+- intermediate
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure
+- azure-devops
+modules:
+- learn.azdo.create-a-build-pipeline
+- learn.azdo.implement-code-workflow
+- learn.azdo.run-quality-tests-build-pipeline
+- learn.azdo.scan-for-vulnerabilities
+- learn.azdo.scan-open-source
+- learn.azdo.manage-build-dependencies
+- learn.azdo.host-build-agent
+trophy:
+  uid: learn.azdo.build-applications-with-azure-devops.trophy

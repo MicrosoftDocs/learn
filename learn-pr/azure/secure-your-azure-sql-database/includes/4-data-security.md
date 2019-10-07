@@ -1,4 +1,4 @@
-The _marketplaceDb_ database stores information that is sensitive, such as physical addresses, email addresses, and phone numbers. If exposed, this could be used by malicious attackers to harm our business or our customers. Let's look at how we can use encryption and data masking to enhance the security of our database.
+The _marketplaceDb_ database stores information that is sensitive, such as physical addresses, email addresses, and phone numbers. If exposed, this information could be used by malicious attackers to harm our business or our customers. Let's look at how we can use encryption and data masking to enhance the security of our database.
 
 ## TLS network encryption
 
@@ -37,13 +37,13 @@ Data masking rules consist of the column to apply the mask to, and how the data 
 - Credit card value, which only shows the last four digits of the number, converting all other numbers to lower case x’s.
 - Email, which hides the domain name and all but the first character of the email account name.
 - Number, which specifies a random number between a range of values. For example, on the credit card expiry month and year, you could select random months from 1 to 12 and set the year range from 2018 to 3000.
-- Custom string. This allows you to set the number of characters exposed from the start of the data, the number of characters exposed from the end of the data, and the characters to repeat for the remainder of the data.
+- Custom string, which allows you to set the number of characters exposed from the start of the data, the number of characters exposed from the end of the data, and the characters to repeat for the remainder of the data.
 
 When querying the columns, database administrators will still see the original values, but non-administrators will see the masked values. You can allow other users to see the non-masked versions by adding them to the SQL users excluded from masking list.
 
-Let's take a look at how this would work in our _marketplaceDb_ database.
+Let's take a look at how data masking would work in our _marketplaceDb_ database.
 
-1. While still in the portal on the _marketplaceDb_ database panel, in the **Security** section in the left menu select **Dyanmic Data Masking**.
+1. While still in the portal on the _marketplaceDb_ database panel, in the **Security** section in the left menu select **Dynamic Data Masking**.
 
     The Masking rules screen shows a list of existing dynamic data masks, and recommendations for columns that should potentially have a dynamic data mask applied.
 
@@ -80,12 +80,12 @@ Let's take a look at how this would work in our _marketplaceDb_ database.
 
 1. Each new mask will be added to the masking rules list. Click the **Save** button to apply the masks.
 
-Let's take a look at how this changes our query.
+Let's take a look at how data masking changes our query.
 
 1. Now let's log back in to the database, but as the _ApplicationUser_ user.
 
     ```bash
-    sqlcmd -S tcp:server<12345>.database.windows.net,1433 -d marketplaceDb -U 'ApplicationUser' -P '<password>' -N -l 30
+    sqlcmd -S tcp:serverNNNN.database.windows.net,1433 -d marketplaceDb -U 'ApplicationUser' -P '[password]' -N -l 30
     ```
 
 1. Run the following query.
@@ -107,4 +107,4 @@ Let's take a look at how this changes our query.
     ...
     ```
 
-With the masking rules we created, our data is masked with format that we've specified. This allows our customer service reps to verify a customer with the last four digits of their phone number, but hides the full number and the customer's email address from reps view.
+With the masking rules we created, our data is masked with format that we've specified. These rules allow our customer service reps to verify a customer with the last four digits of their phone number, but hides the full number and the customer's email address from reps view.

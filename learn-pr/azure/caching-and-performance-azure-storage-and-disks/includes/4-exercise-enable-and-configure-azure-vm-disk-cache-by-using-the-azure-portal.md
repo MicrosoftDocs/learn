@@ -8,8 +8,6 @@ You've decided to make these changes through the Azure portal.
 
 In this exercise, we'll walk through making the changes to a VM that we described above. First, let's sign in to the portal and create a VM.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create a virtual machine
 
 In this step, we're going to create a VM with the following properties:
@@ -81,7 +79,7 @@ Let's move on to data disk cache configuration. To configure a disk, we'll need 
 
 1. Click in the **Name** list, and then click **Create disk**.
 
-1. In the **Create managed disk** pane, in the **Name** box, type **fotosharesVM-data**.
+1. In the **Create managed disk** pane, in the **Name** box, type **fotoshareVM-data**.
 
 1. Under **Resource Group**, select **Use existing**, and select _<rgn>[sandbox resource group name]</rgn>_.
 

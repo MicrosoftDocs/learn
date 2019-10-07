@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.access-data-with-cosmos-db-and-sql-api.stored-procs-and-udfs
+metadata:
+  title: Define stored procedures and user-defined functions
+  description: Learn how to Define stored procedures and user-defined functions for Azure Cosmos DB.
+  ms.date: 05/15/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Define stored procedures and user-defined functions
+durationInMinutes: 8
+content: |
+  [!include[](includes/5.1-stored-procs-and-udfs.md)]

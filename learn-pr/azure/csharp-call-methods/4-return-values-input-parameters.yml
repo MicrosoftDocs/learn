@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-call-methods.return-values-input-parameters
+title: Working with Return Values and Input Parameters
+metadata:
+  title: Working with Return Values and Input Parameters
+  description: Learn how methods are designed to return values, accept multiple input parameters, and offer different versions with different signatures.
+  ms.date: 09/17/2019
+  author: bobtabor-msft
+  ms.author: rtabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+azureSandbox: false
+interactive: csharp
+content: |
+  [!include[](includes/4-return-values-input-parameters.md)]

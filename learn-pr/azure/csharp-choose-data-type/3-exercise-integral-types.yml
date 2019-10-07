@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-choose-data-type.exercise-integral-types
+title: Exercise - integral types
+metadata:
+  title: Exercise - integral types
+  description: Work with different integral types to learn the nuanced differences between each data type.
+  ms.date: 09/05/2019
+  author: bobtabor-msft
+  ms.author: rtabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+azureSandbox: false
+interactive: csharp
+content: |
+  [!include[](includes/3-exercise-integral-types.md)]

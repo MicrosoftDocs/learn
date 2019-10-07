@@ -21,8 +21,7 @@ prerequisites: |
   - Basic knowledge of Azure services, the Azure portal, and the Azure CLI tools
   - Familiarity with Node.js
   - Power BI Desktop
-# TODO: create icon
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/student-evangelism/build-ml-model-with-azure-stream-analytics-badge.svg
 levels:
 - beginner
 roles:
@@ -35,6 +34,7 @@ products:
 - azure-functions
 - azure-sql-database
 - azure-stream-analytics
+- azure-cognitive-services
 units:
 - learn.student-evangelism.build-ml-model-with-azure-stream-analytics.introduction
 - learn.student-evangelism.build-ml-model-with-azure-stream-analytics.design-a-solution

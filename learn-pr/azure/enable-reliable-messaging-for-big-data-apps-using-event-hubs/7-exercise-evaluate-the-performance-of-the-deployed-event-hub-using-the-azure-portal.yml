@@ -4,14 +4,13 @@ title: Exercise - Evaluate the performance of the deployed Event Hub using the A
 metadata:
   title: Exercise - Evaluate the performance of the deployed Event Hub using the Azure portal
   description: Evaluate the performance of the deployed Event Hub using the Azure portal
-  ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  ms.date: 08/26/2019
+  author: cryophobia
+  ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-interactive: bash
+interactive: bash		
 azureSandbox: true
 durationInMinutes: 10
 content: |

@@ -1,0 +1,15 @@
+﻿### YamlMime:ModuleUnit
+uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Unit description
+  ms.date: 6/11/2019
+  author: dragosapostu
+  ms.author: a-drapos
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS:   NOINDEX 
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)] 
