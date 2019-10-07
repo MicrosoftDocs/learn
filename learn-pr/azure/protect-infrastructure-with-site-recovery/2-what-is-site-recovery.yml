@@ -2,7 +2,7 @@
 uid: learn.protect-infrastructure-with-azure-site-recovery.2-what-is-site-recovery
 metadata:
   title: What is Azure Site Recovery
-  description: Learn about the Site Recovery features that will help to prevent future outages
+  description: What is Azure Site Recovery
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes

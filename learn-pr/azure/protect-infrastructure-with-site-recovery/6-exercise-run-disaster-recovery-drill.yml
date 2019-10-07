@@ -2,7 +2,7 @@
 uid: learn.protect-infrastructure-with-azure-site-recovery.6-exercise-run-disaster-recovery-drill
 metadata:
   title: Exercise - Run a disaster recovery drill
-  description: Complete the steps needed to run a disaster recovery drill using a recovery plan on the portal.
+  description: Exercise - Run a disaster recovery drill
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
@@ -10,6 +10,7 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Exercise - Run a disaster recovery drill
-durationInMinutes: 8
+durationInMinutes: 10
+interactive: bash
 content: |
   [!include[](includes/6-exercise-run-disaster-recovery-drill.md)]

@@ -2,7 +2,7 @@
 uid: learn.protect-infrastructure-with-azure-site-recovery.7-failover-and-failback
 metadata:
   title: Failover and failback using Azure Site Recovery
-  description: Explore failover and failback, how to reprotect a failed over VM, and monitor the status of the reprotection.
+  description: Failover and failback using Azure Site Recovery
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Failover and failback using Azure Site Recovery
-durationInMinutes: 4
+durationInMinutes: 10
 content: |
   [!include[](includes/7-failover-and-failback.md)]
