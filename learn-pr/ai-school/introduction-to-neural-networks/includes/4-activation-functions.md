@@ -36,8 +36,8 @@ Using calculus, gradient descent repeatedly changes the variables models use to 
 
 Learning rates are particularly important in complex models - if a learning rate is too small, the training will take a long time. If it is too large, it is not likely to ever train to be accurate.
 
-![TBC if we keep in optional content](../media/2.3_LearningRate-02.png) 
+![TBC if we keep in optional content](../media/23-lr-02.png)
 
 In practice it’s a good idea to find an adequate learning rate, rather than spending time trying to find an optimal one. An adequate learning rate is large enough that your model is trained efficiently, but not so small that you cannot find a minima. It is perfectly acceptable to find an appropriate learning rate, or any other hyperparameter, through trial and error.
 
-![TBC if we keep in optional content](../media/2.3_LearningRate-01.png)
+![TBC if we keep in optional content](../media/23-lr-01.png)

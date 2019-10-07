@@ -14,11 +14,11 @@ Recurrent neural networks (RNNs) and deep neural networks make up the majority o
 
 RNNs are a class of neural network, otherwise known as sequence models. They are good for analyzing and predicting data that is in a sequence, such as text or music. Advances in applying RNNs have successfully extended their use to complex video games, such as DotA 2.
 
-![Image showing text that has been analyzed for key words, reading "Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. it is a gas giant with an average radius about nine times that of Earth." Where Saturn, Sun, Solar System, Jupiter, gas giant, average radius, times, and Earth are all highlighted as key words. Underneath there is text that reads "The sentiment is neutral - 50%"](../media/6.1_TextExample.png)
+![Image showing text that has been analyzed for key words, reading "Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. it is a gas giant with an average radius about nine times that of Earth." Where Saturn, Sun, Solar System, Jupiter, gas giant, average radius, times, and Earth are all highlighted as key words. Underneath there is text that reads "The sentiment is neutral - 50%"](../media/61-te.png)
 
 Deep neural networks are neural networks with multiple hidden layers - RNNs can sometimes be considered a deep neural network. Convolutional neural networks (CNNs) are the other main variation of deep neural networks used today, which are primarily used for computer vision applications, but also speech recognition.
 
-![Image showing a video of a man on stage giving a speech - with a caption of "Sam George, Partner Director Program Management, Microsoft". Underneath the video there is a box that reading "Select a person to see where they appear in the video", with two images of people. One is labeled as "Sam George, appears 7 times, in a total of 14.10% of the video". There is also a button that reads "Jump to the next instance".](../media/6.1_VideoExample.png)
+![Image showing a video of a man on stage giving a speech - with a caption of "Sam George, Partner Director Program Management, Microsoft". Underneath the video there is a box that reading "Select a person to see where they appear in the video", with two images of people. One is labeled as "Sam George, appears 7 times, in a total of 14.10% of the video". There is also a button that reads "Jump to the next instance".](../media/61-ve.png)
 
 Deep neural networks are particularly prone to overfitting and long training times. Because of this, it is best to spend a good proportion of your time preparing your data - so you do not train a model for two days only to realize your dataset needs more work.
 
