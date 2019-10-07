@@ -11,8 +11,6 @@ You want to migrate each of these systems onto Azure virtual machines and you wa
 
 Here, you'll learn about the performance and behavior of each disk type so that you can make these choices well.
 
-<!-- Optional image](./media/optional-image.png)-->
-
 ## Disk performance measures
 
 To choose the right disk type, it's critical to understand its performance. Performance is expressed in two key measures:

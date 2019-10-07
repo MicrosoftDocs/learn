@@ -6,8 +6,6 @@ In this unit, you'll examine the requirements for each virtual server in the pro
  
 ![On-premises servers for the prescription drugs stocks database](../media/4-on-premises-servers.png)
 
-<!-- TODO: Design team should create a MS Learn-style version of this diagram -->
-
 ## Production database server
 
 First, you want to architect the virtual machine that will host the production database for your prescription drug stocks system. This system is business-critical and used by the majority of your employees, all around the world, to do their jobs. The database server in the on-premises system is heavily utilized and the physical disks run close to their capacity in terms of IOPS and throughput. The database also contains highly sensitive patient data, so you want to ensure that it is encrypted on the disk.
