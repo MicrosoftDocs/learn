@@ -28,7 +28,7 @@ quiz:
   - content: "You need to change a `float` into an `int`.  How would you describe this action?"
     choices:
     - content: "This is a narrowing conversion."
-      isCorrect: false
+      isCorrect: true
       explanation: "Correct!"
     - content: "This is a widening conversion."
       isCorrect: false
