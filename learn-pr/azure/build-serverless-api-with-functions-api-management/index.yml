@@ -17,7 +17,7 @@ abstract: |
   - Import multiple Azure Functions apps as a single API in Azure API Management
 prerequisites: |
   - Basic knowledge of Azure API Management and Azure Functions
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/build-serverless-api-with-functions-api-management.svg
 levels: 
 - beginner
 roles: 
