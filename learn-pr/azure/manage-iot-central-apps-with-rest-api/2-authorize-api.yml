@@ -16,17 +16,17 @@ content: |
 quiz:
   title: "Authorize with IoT Central"
   questions:
-  - content: "Which of the following can you use to authorize an IoT Central REST API call?"
+  - content: "Which of the following authorization methods can you use with an IoT Central REST API call?"
     choices:
     - content: "An API token in the Authorization header"
       isCorrect: true
       explanation: "Yes. It can be either an API token or bearer token."
     - content: "Digest authentication"
       isCorrect: false
-      explanation: "This isn't a supported option."
+      explanation: "This option isn't supported."
     - content: "OAuth 2.0"
       isCorrect: false
-      explanation: "This isn't a supported option."
+      explanation: "This option isn't supported."
   - content: "How do you generate the first API token?"
     choices:
     - content: "In the Azure portal"

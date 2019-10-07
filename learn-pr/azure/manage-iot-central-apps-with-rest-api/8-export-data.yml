@@ -31,10 +31,10 @@ quiz:
     choices:
     - content: "Azure IoT Hub"
       isCorrect: false
-      explanation: "No. This isn't a valid destination."
+      explanation: "No. This destination isn't valid."
     - content: "Azure Event Hubs"
       isCorrect: true
       explanation: "Correct. You can export data to Azure Event Hubs, Azure Service Bus, and Azure Storage."
     - content: "Azure EventGrid"
       isCorrect: false
-      explanation: "No. This isn't a valid destination."
+      explanation: "No. This destination isn't valid."

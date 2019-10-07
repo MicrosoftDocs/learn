@@ -78,4 +78,4 @@ The following steps create an IoT Central application and generate an API token 
 
     ```
 
-    The output from the previous command shows the IoT Central applications you have access to in the sandbox environment. In the sandbox environment, you only have access to the IoT Central application you created. If the previous commands returns an error, check that you've correctly set the **API_TOKEN** environment variable.
+    The output from the previous command shows the IoT Central applications you have access to in the sandbox environment. In the sandbox environment, you only have access to the IoT Central application you created. If the previous command returns an error, check that you've correctly set the **API_TOKEN** environment variable.

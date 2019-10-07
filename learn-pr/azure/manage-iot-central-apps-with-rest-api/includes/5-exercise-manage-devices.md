@@ -176,7 +176,7 @@ az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/devices \
 
 ## Connect a real device
 
-To connect a real device to your IoT Central application you need the real device's credentials. You can use the REST API to retrieve the SAS key for a device from IoT Central as follows:
+To connect a real device to your IoT Central application, you need the real device's credentials. You can use the REST API to retrieve the SAS key for a device from IoT Central as follows:
 
 ```azurecli
 az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/storemon-real-003/credentials \
