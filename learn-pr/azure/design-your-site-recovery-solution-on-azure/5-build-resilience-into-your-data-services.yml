@@ -28,13 +28,13 @@ quiz:
       explanation: You would not be able to read from the replica that is created because it won't exist until a failover happens.
     - content: Use SQL Server virtual machines and use Azure Backup to back data up to another region.
       isCorrect: false
-      explanation: Your data would not be accessible for reads, and wouldn't have any secondary databases until you restored them using the backed up data.
+      explanation: Your data would not be accessible for reads, and wouldn't have any secondary databases until you restored them using the backed-up data.
   - content: What are benefits of moving your data workloads to Cosmos DB now that your online store is moving to multiple regions?
     choices:
     - content: You will be able to perform row-level security, with low latency on your data in another region.
       isCorrect: false
       explanation: Cosmos DB does not support row-level security.
-    - content: You will be able to have up to 500 databases, with low latency access in each another region.
+    - content: You will be able to have up to 500 databases, with low latency access in another region.
       isCorrect: false
       explanation: Cosmos DB gives you unlimited databases.
     - content: You will be able to have read access to your data, with low latency in another region.
