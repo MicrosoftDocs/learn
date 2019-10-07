@@ -11,7 +11,5 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 7
-azureSandbox: true
-interactive: bash
 content: |
   [!include[](includes/4-exercise-create-a-webjob-using-visual-studio.md)]

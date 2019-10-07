@@ -8,7 +8,9 @@ In this module, you learned how to use Traffic Manager as a DNS load balancer to
 
 You can now use Traffic manager to improve your availability and global distribution of your application, which improves customer experience.
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+## Clean up
+
+Use the Azure portal to delete the **mslearn-trafficmanager** resource group from your subscription.
 
 ## Learn more
 

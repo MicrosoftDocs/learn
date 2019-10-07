@@ -157,7 +157,7 @@ In this exercise, we introduced more flexibility to our template with parameters
 
 You can download the parameters and template files from GitHub with the following `curl` commands in the Cloud Shell. 
 
-    ```azurecli
+  ```azurecli
     curl https://github.com/MicrosoftDocs/mslearn-logic-apps-and-arm-templates/blob/master/calculate-area/params.json > params-final.json
     curl https://github.com/MicrosoftDocs/mslearn-logic-apps-and-arm-templates/blob/master/calculate-area/template.json > template-with-params-final.json
-    ```
+  ```

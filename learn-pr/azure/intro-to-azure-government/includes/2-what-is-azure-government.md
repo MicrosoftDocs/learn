@@ -10,14 +10,6 @@ Azure Government is designed for highly sensitive data, enabling government cust
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2FIcr]
 
-<!-- What is Azure Government video from YouTube >
-> [!VIDEO https://www.youtube.com/embed/_WcyWeARD2Y]
--->
-
-<!-- Azure Friday video
-> [!VIDEO https://www.youtube.com/embed/xHnTWkKo9tc]
--->
-
 Before we go further, let's highlight the key benefits of using Azure Government.
 
 :::row:::

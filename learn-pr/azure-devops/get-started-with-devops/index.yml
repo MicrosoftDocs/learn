@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.get-started-with-devops
+metadata:
+  title: Get started with Azure DevOps - Learn
+  description: Explore what DevOps is (and isn’t) and learn how to get started with Azure DevOps.
+  ms.date: 11/16/2018
+  author: AnthonyBorton
+  ms.author: anborton
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: marksm
+abstract: | 
+  In this module, you will:
+  - Learn what DevOps is and identify what separates elite performers from low performers
+  - Identify what services Azure DevOps provides
+  - Set up an Azure DevOps organization
+title: Get started with Azure DevOps
+summary: Explore what DevOps is (and isn’t) and learn how to get started with Azure DevOps.
+iconUrl: /learn/achievements/azure-devops/get-started-with-devops.svg
+ratingEnabled: true
+prerequisites: None
+levels: 
+- intermediate
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure-devops
+units:
+- learn.get-started-with-devops.1-introduction
+- learn.get-started-with-devops.2-what-is-devops
+- learn.get-started-with-devops.3-what-is-azure-devops
+- learn.get-started-with-devops.4-create-an-azure-devops-account
+- learn.get-started-with-devops.5-summary
+badge:
+  uid: learn.get-started-with-devops.badge

@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.route-and-process-data-logic-apps.design-logic-apps-for-your-workflows
+title: Design Logic Apps for your workflows
+
+metadata:
+  title: Design Logic Apps for your workflows
+  description: Design Logic Apps for your workflows
+  ms.date: 5/10/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-design-logic-apps-for-your-workflows.md)]
+
+quiz:
+
+  questions:
+  
+  - content: "Examine the illustration of the social-media workflow to answer this question. What would be the outcome of the workflow if a tweet was rated with a sentiment score of exactly 0.7?"
+    choices:
+    - content: "Send email"
+      isCorrect: true
+      explanation: "The workflow sends an email anytime the sentiment is less-than-or-equal-to 0.7."
+    - content: "Insert row"
+      isCorrect: false
+      explanation: "The workflow inserts a row only when the sentiment score is greater than 0.7."
+    - content: "Both send email and insert row"
+      isCorrect: false
+      explanation: "The conditional *if action* runs a different branch based on whether the condition is true or false; it does not run both branches."
+
+  - content: "Examine the illustration of the email-attachment processing workflow to answer this question. How many blobs would be created from an email with six attachments?"
+    choices:
+    - content: "6"
+      isCorrect: false
+      explanation: "Six blobs are created for the six attachments. One blob is created for the email itself."
+    - content: "7"
+      isCorrect: true 
+      explanation: "One blob is created for the body of the email and one for each attachment."
+    - content: "8"
+      isCorrect: false
+      explanation: "Six blobs are created for the six attachments. One blob is created for the email itself."

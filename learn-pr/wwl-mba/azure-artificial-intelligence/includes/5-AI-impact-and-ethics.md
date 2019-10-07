@@ -50,7 +50,7 @@ Seeing AI is a Microsoft research project that combines the power of the cloud a
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to see the application in action.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to see the application in action.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWptJr]
 

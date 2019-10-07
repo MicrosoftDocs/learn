@@ -9,13 +9,18 @@ For a company of Microsoft’s size, it has historically taken a team of one tho
 To help address these issues, our finance organization started using Azure Machine Learning to analyze vast quantities of data and produce a highly accurate forecast. The output was put into CommercialPredict, a Power BI–based tool that synthesizes historical data from our ERP and pipeline data from Dynamics 365 with predictions from Azure Machine Learning to create an unbiased source of truth for the entire organization.
 
 In CommercialPredict, users can get results on demand through a centralized dashboard tailored to their role. They can also create custom views of the data to examine the details of predictions and slice across market segments, sub-segments, pricing levels, and strategic products. This functionality ultimately reduced requests for information and closed knowledge and communication gaps in the organization. For instance, sellers can see how they’re performing by area in particular SKUs and even gain insights on closing the variance between actuals and forecast. Centralizing data and providing these standard views exposes the power of machine learning algorithms to a broad audience.
-
+:::row:::
+:::column span="2":::
 The results of this initiative have been dramatic. After implementing machine learning, the variance between our overall revenue forecast and actuals reduced from 3% to 1.5% and variance reduced even further in run-rate businesses where we have a greater volume of data, such as our small and medium business space. Tearing down silos provided a new level of transparency that benefits our culture.
 
 Because our goal has been to augment traditional forecasts, not replace them, our finance team has continued to use traditional forecasting tools in parallel with machine learning. One result is that our traditional manual forecasts have improved too. Because our analysts use the machine learning forecast as an input, the variance between the traditional forecast and actuals has dropped to 2%.
 
 The decrease in variance has improved our decision-making, and we see our forecasting as more objective and consistent. A predictive analytics model is dispassionate, so it sidesteps some of the subjective factors of manual forecasting. Working from a centralized pool of data using agreed-upon analytical methods reduces disagreement and democratizes access to accurate forecast data.
-
+:::column-end:::
+:::column span="2":::
+![Variation after implementing machine learning - variance between our overall revenue forecast and actuals reduced from 3% to 1.5%](../media/2.2.3.B.Finance-case-study-resolution1.jpg)
+:::column-end:::
+:::row-end:::
 After many quarters of running machine learning in parallel with traditional forecasting tools, we now rely almost exclusively on machine learning to lock the high-level revenue forecast, so that our analysts can focus on processes that rely on human intelligence, such as partnering with sales teams to find new revenue opportunities.
 
 ## Intelligent chatbots

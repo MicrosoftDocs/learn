@@ -15,7 +15,7 @@ Because Mobile Apps is part of Azure App Service, you get all of the hosting ben
 - continuous deployments
 - virtual networks
 
-See the other modules in MS Learn on Azure App Service for more information about hosting and publishing.
+See the other modules in Microsoft Learn on Azure App Service for more information about hosting and publishing.
 
 ## Azure Mobile Apps SDKs
 
@@ -38,7 +38,7 @@ Azure App Service provides authentication and authorization services that are al
 - use an SDK provided by the identity provider
 - use the Mobile Apps client SDK
 
-SDKs published by providers such as Facebook, Google or Microsoft will often come with an authentication experience that more tightly integrates with the operating system on the client device. For example, on iOS devices, users can sign in to Facebook on the device, and the OS will assist with authentication when requested by an iOS app. This will require you to install the provider's SDK and follow their documentation for authentication.
+SDKs published by providers such as Facebook, Google or Microsoft will often come with an authentication experience that more tightly integrates with the operating system on the client device. For example, on iOS devices, users can sign in to Facebook on the device, and the OS will assist with authentication from the native application when requested by an iOS app. For example, for Facebook, authentication would be done through the Facebook app instead of browser based authentication. This will require you to install the provider's SDK and follow their documentation for authentication.
 
 When using the Mobile Apps SDK, your users will use a webview on the client device to perform authentication. Implementing authentication is greatly simplified when using the Mobile Apps SDK; typically authentication can be accomplished with a single line of code. The SDK will manage the OAuth flow including retrieving and storing authorization tokens.
 
@@ -62,7 +62,7 @@ The best approach will depend on your app's needs, but the SDK and APIs will giv
 
 ### Broadcast push notifications
 
-Azure Notification Hubs is a highly scalable mobile-push notification service that can be used to send millions of push notifications to iOS, Android, Windows, or Nokia X devices. Notifications Hubs can be connected to any Azure App Service backend including Mobile Apps, which allows you to send push notifications to users of your mobile client app.
+Azure Notification Hubs is a highly scalable mobile-push notification service that can be used to send millions of push notifications to iOS, Android, or Windows devices. Notifications Hubs can be connected to any Azure App Service backend including Mobile Apps, which allows you to send push notifications to users of your mobile client app.
 
 To receive push notifications, the mobile client app will need to include the Mobile Apps client SDK.
 

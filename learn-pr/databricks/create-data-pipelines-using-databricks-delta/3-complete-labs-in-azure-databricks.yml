@@ -9,6 +9,6 @@ metadata:
   ms.author: barlan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 45
+durationInMinutes: 30
 content: |
   [!include[](includes/3-complete-labs-in-azure-databricks.md)]
