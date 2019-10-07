@@ -2,7 +2,7 @@
 uid: learn.design-monitoring-strategy-on-azure.7-unifying-monitoring-solutions
 metadata:
   title: Unifying monitoring solutions in Azure
-  description: TODO
+  description: In this unit, you'll explore how to unify your monitoring solutions in Azure with Azure Monitor.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes

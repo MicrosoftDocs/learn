@@ -2,7 +2,7 @@
 uid: learn.design-monitoring-strategy-on-azure.6-sentinel
 metadata:
   title: Analyze enterprise security using Azure Sentinel
-  description: TODO
+  description: In this unit, you'll explore how to analyze your enterprise security using Azure Sentinel.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
