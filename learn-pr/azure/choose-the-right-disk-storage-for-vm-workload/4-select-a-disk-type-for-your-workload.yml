@@ -4,7 +4,7 @@ title: Select a disk type for your workload
 
 metadata:
   title: Select a disk type for your workload
-  description: In this unit, you will examine the requirements for an on-premises multi-server system that you propose to move into Azure, and see what disk types architects choose for each virtual machine.
+  description: Select a disk type for your workload
   ms.date: 6/25/2019
   author: jboeshart
   ms.author: jaboes
