@@ -6,6 +6,9 @@ In this exercise, you'll install the Cosmos DB extension for Visual Studio Code.
 
 This exercises runs on your desktop computer.
 
+> [!NOTE]
+> This exercise assumes that you've already installed **Visual Studio Code** on your desktop computer.
+
 ## Install the Cosmos DB extension for Visual Studio Code
 
 1. Start Visual Studio Code.
