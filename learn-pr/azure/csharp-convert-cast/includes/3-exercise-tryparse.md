@@ -118,7 +118,7 @@ if (result > 0)
 The entire code example should match the following code passage.
 
 ```csharp-interactive
-string value = "102";
+string value = "bad";
 int result = 0;
 if (int.TryParse(value, out result))
 {

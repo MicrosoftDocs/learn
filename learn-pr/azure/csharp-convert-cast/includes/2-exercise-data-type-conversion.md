@@ -9,7 +9,7 @@ In this exercise, we'll work our way through these questions, the implications o
 
 The C# compiler will try to accommodate your code, but will always avoid an operation that could result in an exception.  When you understand the C# compiler's primary concern, understanding why if functions a certain way will be easier.
 
-### Step 1 - Write code that attempts to add an int and a string
+### Step 1 - Write code that attempts to add an int and a string and save the result in an int
 
 Add the following code to the .NET Editor:
 
@@ -20,15 +20,30 @@ int result = first + second;
 Console.WriteLine(result);
 ```
 
+Here, we're attempting to add the values `2` and `4`.  The value `4` is of type `string`.  Will this work?
+
 Run the code and you should see the following output.
+
+```output
+(3,14): error CS0029: Cannot implicitly convert type 'string' to 'int'
+```
+The error message tells us the problem is with our use of the `string` data type.  But why can't the C# Compiler just handle this?  After all, we can do the *opposite* to concatenate a number to a `string` and save it in a string variable.  Here', we'll merely change the data type of the `result` variable from `int` to `string`.
+
+```csharp-interactive
+int first = 2;
+string second = "4";
+string result = first + second;
+Console.WriteLine(result);
+```
+And this will produce the following output:
 
 ```output
 24
 ```
 
-Perhaps our intent was to add the values `2` and `4` using addition.  Why did it perform a string concatenation between the values instead?  
+Back to our first code example where the `result` variable is of type `int`; why can't the C# compiler figure out that we want to treat the variable `second` containing `4` as a number, not a `string`?
 
-The C# compiler sees that the variable `second` is of type `string`, which might be set to a different value like `"hello"`.  If it attempted to convert `"hello"` to a number that would cause an exception at runtime.  To avoid this possibility, the C# compiler will not implicitly perform the conversion from `string` to `int` for you.
+The C# compiler sees a potential problem in the making.  The variable `second` is of type `string`, so it's possible it might be set to a different value like `"hello"`.  If the C# compiler attempted to convert `"hello"` to a number that would cause an exception at runtime.  To avoid this possibility, the C# compiler will not implicitly perform the conversion from `string` to `int` for you.
 
 From the C# compiler's perspective, the safer operation would be to convert `int` into a `string` and perform concatenation instead.
 
