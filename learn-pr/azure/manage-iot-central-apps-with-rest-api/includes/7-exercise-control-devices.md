@@ -45,11 +45,13 @@ The store monitoring device template specified a **reboot** command in the **sen
 }
 ```
 
-Run the following command in the Cloud Shell to send a reboot command to one of the simulated devices in the application. The reboot command is defined on the **sensor** interface:
+Run the following command in the Cloud Shell to send a reboot command to one of the simulated devices in the application. The reboot command takes a parameter that specifies the number of seconds to wait before rebooting:
 
 ```azurecli
 az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/storemon-sim-001/components/sensor/commands/reboot \
 --headers Authorization="$API_TOKEN" --body \
-'{}'
+'{
+    "delay": 10
+}'
 
 ```

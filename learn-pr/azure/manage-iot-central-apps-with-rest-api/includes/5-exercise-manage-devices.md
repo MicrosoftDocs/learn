@@ -49,7 +49,7 @@ az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/models \
                       },
                       {
                           "@type": "Property",
-                          "description": "The brightness level for the light on thdevice. Can be specified as 1 (high), 2 (medium), 3 (low)",
+                          "description": "The brightness level for the light on the device. Can be specified as 1 (high), 2 (medium), 3 (low)",
                           "displayName": "Brightness Level",
                           "name": "brightness",
                           "writable": true,
@@ -58,8 +58,13 @@ az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/models \
                       {
                           "@type": "Command",
                           "commandType": "synchronous",
-                          "comment": "This command reboots the device.",
-                          "name": "reboot"
+                          "comment": "This command reboots the device after delay seconds.",
+                          "name": "reboot",
+                          "request": {
+                            "@type": "SchemaField",
+                            "name": "delay",
+                            "schema": "long"
+                          }
                       }
                   ]
               }
