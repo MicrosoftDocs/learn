@@ -1,6 +1,6 @@
 Your organization is moving all its systems from an on-premises location to Azure. In the previous environment, there were several times when systems failed, or issues arose, and this caused extended delays to resolve problems as they occurred. With the migration to Azure, your organization wants to avoid similar issues. You've been asked to implement a monitoring strategy. 
 
-You'll detail why your organization should use a continuous monitoring strategy.
+In this unit, you'll learn why a continuous monitoring strategy can save time and money for your company.
 
 ## Why use continuous monitoring?
 
