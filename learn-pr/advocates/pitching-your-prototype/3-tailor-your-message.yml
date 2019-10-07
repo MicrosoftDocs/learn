@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.pitch-your-product-prototype.3-tailor-your-message
+title: Tailor the message for your audience
+metadata:
+  title: Tailor the message for your audience
+  description: This unit teaches you how to tailor the message for your audience.
+  author: jamtur01
+  ms.date: 04/25/2019
+  ms.author: jaturnbu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-startups
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-tailor-the-message.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What should you know about an investor you're pitching to?"
+    choices:
+    - content: "What company they come from."
+      isCorrect: false
+      explanation: "Provides limited useful information about their interests."
+    - content: "Their background, job history, their previous investment history, and their investment thesis."
+      isCorrect: true
+      explanation: "Clear and useful information about the investor that will allow you to shape your pitch to their interests."
+    - content: "How they take their coffee."
+      isCorrect: false
+      explanation: "Not useful."
+  - content: "What should you know about a customer you are pitching to?"
+    choices:
+    - content: "Where their stores are located."
+      isCorrect: false
+      explanation: "This information is of limited use."
+    - content: "What products they sell."
+      isCorrect: false
+      explanation: "Provides limited useful information about the company."
+    - content: "Their products, markets, current competitors, and their business model."
+      isCorrect: true
+      explanation: "Clear and useful information about the customer that will allow you to shape your pitch to their needs."

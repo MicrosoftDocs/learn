@@ -34,9 +34,9 @@ quiz:
     - content: "Structured data"
       isCorrect: false
       explanation: "The schema of structured data is typically defined at the time of creation."
-    - content: "Cosmos DB"
+    - content: "Azure Cosmos DB"
       isCorrect: false
-      explanation: "Cosmos DB is a data platform technology in Azure."
+      explanation: "Azure Cosmos DB is a data platform technology in Azure."
     - content: "Unstructured data"
       isCorrect: true
       explanation: "Correct. The schema of unstructured data is typically defined at query time. This means that data can be loaded onto a data platform in its native format."

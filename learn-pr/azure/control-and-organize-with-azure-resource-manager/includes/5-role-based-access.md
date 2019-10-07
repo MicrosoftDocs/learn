@@ -3,6 +3,7 @@ Implementing Azure Policy ensured that all our employees with Azure access are f
 RBAC provides fine-grained access management for Azure resources, enabling you to grant users the specific rights they need to perform their jobs. RBAC is considered a core service and is included with all subscription levels at no cost.
 
 Using RBAC, you can:
+
 - Allow one user to manage VMs in a subscription, and another user to manage virtual networks.
 - Allow a database administrator (DBA) group to manage SQL databases in a subscription.
 - Allow a user to manage all resources in a resource group, such as VMs, websites, and virtual subnets.

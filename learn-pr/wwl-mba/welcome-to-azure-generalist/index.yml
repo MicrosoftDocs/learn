@@ -14,10 +14,9 @@ summary: The cloud is transforming the way that organizations large and small co
 abstract: |
   In this module, you will:
   - Learn the importance of Azure.
-  - Identify the key topics outlined in the “Learn the business value of Microsoft Azure” learning path. 
+  - Identify the key topics outlined in the "Learn the business value of Microsoft Azure" learning path. 
 prerequisites: None
 iconUrl: /learn/achievements/welcome-azure-generalist.svg
-ratingEnabled: true
 levels:
 - beginner
 roles:

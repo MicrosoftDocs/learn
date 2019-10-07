@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>NA/decompose-a-monolithic-application-into-a-microservices-architecture</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-13.8%" y="-13.3%" width="127.6%" height="126.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-30.8%" y="-33.3%" width="161.5%" height="166.7%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-30.8%" y="-33.3%" width="161.5%" height="166.7%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-30.8%" y="-33.3%" width="161.5%" height="166.7%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-30.8%" y="-33.3%" width="161.5%" height="166.7%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-30.8%" y="-33.3%" width="161.5%" height="166.7%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-30.8%" y="-33.3%" width="161.5%" height="166.7%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-30.8%" y="-33.3%" width="161.5%" height="166.7%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-30.8%" y="-33.3%" width="161.5%" height="166.7%" filterUnits="objectBoundingBox" id="filter-11">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-30.8%" y="-33.3%" width="161.5%" height="166.7%" filterUnits="objectBoundingBox" id="filter-12">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-13" points="46.515144 41 46.515144 45.3171505 44.1111111 45.3171505 48.1163389 50 52.1111111 45.3171505 49.5636858 45.3171505 49.5636858 41"></polygon>
+        <filter x="-12.5%" y="-11.1%" width="125.0%" height="144.4%" filterUnits="objectBoundingBox" id="filter-14">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="N/A-24" transform="translate(-50.000000, -260.000000)">
+            <g id="NA/decompose-a-monolithic-application-into-a-microservices-architecture" transform="translate(50.000000, 260.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Group" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(33.579503, 7.254396)">
+                            <polygon id="Path-2" fill="#FFFFFF" points="0.354166667 7.10397636 14.596404 15 28.3541667 7.10397636 14.3541667 0"></polygon>
+                            <polygon id="Path-208" fill="#DEDEDE" points="0.354166667 7 0.354166667 21.9765353 14.3541667 30 14.3541667 14.5507031"></polygon>
+                            <polygon id="Path-208" fill="#F6F6F6" transform="translate(21.354167, 18.500000) scale(1, -1) translate(-21.354167, -18.500000) " points="14.3541667 7 14.3541667 22.3168471 28.3541667 30 28.3541667 14.912292"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group" filter="url(#filter-4)" mask="url(#mask-2)">
+                        <g transform="translate(35.000000, 52.000000)">
+                            <polygon id="Path-2" fill="#FFFFFF" points="0.373595781 3.02933791 6.20385672 5.94378698 12.0247727 2.99779878 6 0"></polygon>
+                            <polygon id="Path-208" fill="#EAEAEA" points="0.333333333 3 0.333333333 8.8603834 6.33333333 12 6.33333333 5.95462296"></polygon>
+                            <polygon id="Path-208" fill="#F6F6F6" transform="translate(9.122176, 7.490383) scale(1, -1) translate(-9.122176, -7.490383) " points="6.2950533 3 6.24435141 9.08150863 12 11.9807661 12 6.0768804"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group" filter="url(#filter-5)" mask="url(#mask-2)">
+                        <g transform="translate(22.000000, 52.000000)">
+                            <polygon id="Path-2" fill="#FFFFFF" points="0.373595781 3.02933791 6.20385672 5.94378698 12.0247727 2.99779878 6 0"></polygon>
+                            <polygon id="Path-208" fill="#EAEAEA" points="0.333333333 3 0.333333333 8.8603834 6.33333333 12 6.33333333 5.95462296"></polygon>
+                            <polygon id="Path-208" fill="#F6F6F6" transform="translate(9.122176, 7.490383) scale(1, -1) translate(-9.122176, -7.490383) " points="6.2950533 3 6.24435141 9.08150863 12 11.9807661 12 6.0768804"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group" filter="url(#filter-6)" mask="url(#mask-2)">
+                        <g transform="translate(48.000000, 52.000000)">
+                            <polygon id="Path-2" fill="#FFFFFF" points="0.373595781 3.02933791 6.20385672 5.94378698 12.0247727 2.99779878 6 0"></polygon>
+                            <polygon id="Path-208" fill="#EAEAEA" points="0.333333333 3 0.333333333 8.8603834 6.33333333 12 6.33333333 5.95462296"></polygon>
+                            <polygon id="Path-208" fill="#F6F6F6" transform="translate(9.122176, 7.490383) scale(1, -1) translate(-9.122176, -7.490383) " points="6.2950533 3 6.24435141 9.08150863 12 11.9807661 12 6.0768804"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group" filter="url(#filter-7)" mask="url(#mask-2)">
+                        <g transform="translate(61.000000, 52.000000)">
+                            <polygon id="Path-2" fill="#FFFFFF" points="0.373595781 3.02933791 6.20385672 5.94378698 12.0247727 2.99779878 6 0"></polygon>
+                            <polygon id="Path-208" fill="#EAEAEA" points="0.333333333 3 0.333333333 8.8603834 6.33333333 12 6.33333333 5.95462296"></polygon>
+                            <polygon id="Path-208" fill="#F6F6F6" transform="translate(9.122176, 7.490383) scale(1, -1) translate(-9.122176, -7.490383) " points="6.2950533 3 6.24435141 9.08150863 12 11.9807661 12 6.0768804"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group" filter="url(#filter-8)" mask="url(#mask-2)">
+                        <g transform="translate(28.345741, 63.024651)">
+                            <polygon id="Path-2" fill="#FFFFFF" points="0.373595781 3.02933791 6.20385672 5.94378698 12.0247727 2.99779878 6 0"></polygon>
+                            <polygon id="Path-208" fill="#EAEAEA" points="0.333333333 3 0.333333333 8.8603834 6.33333333 12 6.33333333 5.95462296"></polygon>
+                            <polygon id="Path-208" fill="#F6F6F6" transform="translate(9.122176, 7.490383) scale(1, -1) translate(-9.122176, -7.490383) " points="6.2950533 3 6.24435141 9.08150863 12 11.9807661 12 6.0768804"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group" filter="url(#filter-9)" mask="url(#mask-2)">
+                        <g transform="translate(41.345741, 63.024651)">
+                            <polygon id="Path-2" fill="#FFFFFF" points="0.373595781 3.02933791 6.20385672 5.94378698 12.0247727 2.99779878 6 0"></polygon>
+                            <polygon id="Path-208" fill="#EAEAEA" points="0.333333333 3 0.333333333 8.8603834 6.33333333 12 6.33333333 5.95462296"></polygon>
+                            <polygon id="Path-208" fill="#F6F6F6" transform="translate(9.122176, 7.490383) scale(1, -1) translate(-9.122176, -7.490383) " points="6.2950533 3 6.24435141 9.08150863 12 11.9807661 12 6.0768804"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group" filter="url(#filter-10)" mask="url(#mask-2)">
+                        <g transform="translate(54.345741, 63.024651)">
+                            <polygon id="Path-2" fill="#FFFFFF" points="0.373595781 3.02933791 6.20385672 5.94378698 12.0247727 2.99779878 6 0"></polygon>
+                            <polygon id="Path-208" fill="#EAEAEA" points="0.333333333 3 0.333333333 8.8603834 6.33333333 12 6.33333333 5.95462296"></polygon>
+                            <polygon id="Path-208" fill="#F6F6F6" transform="translate(9.122176, 7.490383) scale(1, -1) translate(-9.122176, -7.490383) " points="6.2950533 3 6.24435141 9.08150863 12 11.9807661 12 6.0768804"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group" filter="url(#filter-11)" mask="url(#mask-2)">
+                        <g transform="translate(34.878587, 74.002021)">
+                            <polygon id="Path-2" fill="#FFFFFF" points="0.373595781 3.02933791 6.20385672 5.94378698 12.0247727 2.99779878 6 0"></polygon>
+                            <polygon id="Path-208" fill="#EAEAEA" points="0.333333333 3 0.333333333 8.8603834 6.33333333 12 6.33333333 5.95462296"></polygon>
+                            <polygon id="Path-208" fill="#F6F6F6" transform="translate(9.122176, 7.490383) scale(1, -1) translate(-9.122176, -7.490383) " points="6.2950533 3 6.24435141 9.08150863 12 11.9807661 12 6.0768804"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group" filter="url(#filter-12)" mask="url(#mask-2)">
+                        <g transform="translate(47.878587, 74.002021)">
+                            <polygon id="Path-2" fill="#FFFFFF" points="0.373595781 3.02933791 6.20385672 5.94378698 12.0247727 2.99779878 6 0"></polygon>
+                            <polygon id="Path-208" fill="#EAEAEA" points="0.333333333 3 0.333333333 8.8603834 6.33333333 12 6.33333333 5.95462296"></polygon>
+                            <polygon id="Path-208" fill="#F6F6F6" transform="translate(9.122176, 7.490383) scale(1, -1) translate(-9.122176, -7.490383) " points="6.2950533 3 6.24435141 9.08150863 12 11.9807661 12 6.0768804"></polygon>
+                        </g>
+                    </g>
+                    <g id="Path-209" mask="url(#mask-2)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-13"></use>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

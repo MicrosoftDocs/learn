@@ -27,6 +27,8 @@ roles:
 - administrator
 products:
 - azure
+- azure-virtual-network
+- azure-application-gateway
 units:
 - learn.load-balance-web-traffic-with-application-gateway.1-introduction
 - learn.load-balance-web-traffic-with-application-gateway.2-routing-traffic-with-application-gateway
