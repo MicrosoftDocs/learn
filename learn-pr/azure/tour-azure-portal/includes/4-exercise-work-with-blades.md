@@ -24,7 +24,7 @@ Once you are logged into the Azure portal, we can start exploring things. In the
 
 1. Under Azure Marketplace, click **Compute** to show more compute options on the right side of the blade, such as Red Hat Enterprise, Reserved VM Instances, Web app for Containers, and so on.
 
-1. To the right of **Featured**, click **See More**. The full list of available VM services now appears.
+1. To the right of **Featured**, click **See all**. The full list of available VM services now appears.
 
 1. Click **Windows Server**.
 
