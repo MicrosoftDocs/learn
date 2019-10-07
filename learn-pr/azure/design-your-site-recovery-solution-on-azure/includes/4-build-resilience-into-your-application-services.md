@@ -24,8 +24,6 @@ An active-active architecture lets you distribute and load balance demand betwee
 
 Shown above is a high-level example of an active-active cluster in action.
 
-<!---Feel free to format this diagram according to your own standards-->
-
 In contrast, with an active-passive cluster type architecture, you can run Azure virtual machines where one node is active and in use – and the other node is passive and not in use. You use the passive node only when the active node has a failure.
 
 Because each of your nodes is running in an active-active scenario simultaneously, you are going to be facing more running costs on a day-to-day basis in an active-active scenario, if the machines have the same specifications as machines in an active/passive cluster. An active-passive cluster could comparatively help you lower daily running costs because the active node wouldn't be running continuously. However, because you'll only be running the active node in an active-passive cluster, you won't be as flexible to meet fluctuating demand as you would with an active-active cluster.
@@ -60,8 +58,4 @@ You use Azure Monitor as a single solution to collect, analyze and take action, 
 
 Use these Azure tools together to address monitoring and notifications for your applications. You'll make smarter applications, keep them secure, and rapidly respond to demand when needed.
 
-<!--- Below is a diagram showing a scenario to be used with the knowledge check that follows.-->
-
 ![Hybrid network](../media/4-hybrid-network.png)
-
-<!---Feel free to format this diagram according to your own standards-->
