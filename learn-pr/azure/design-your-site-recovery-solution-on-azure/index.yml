@@ -25,6 +25,8 @@ roles:
 - solution-architect
 products:
 - azure
+- azure-backup
+- azure-site-recovery
 units:
 - learn.design-your-site-recovery-solution-on-azure.introduction
 - learn.design-your-site-recovery-solution-on-azure.develop-a-business-continuity-and-disaster-recovery-plan
