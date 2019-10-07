@@ -16,7 +16,7 @@ abstract: |
   - Select the proper solutions to provide site recovery for your applications
 prerequisites: |
   - Basic knowledge of business continuity and disaster recovery practices
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/design-your-site-recovery-solution-on-azure.svg
 badge:
   uid: learn.design-your-site-recovery-solution-on-azure.badge
 levels: 
@@ -25,6 +25,8 @@ roles:
 - solution-architect
 products:
 - azure
+- azure-backup
+- azure-site-recovery
 units:
 - learn.design-your-site-recovery-solution-on-azure.introduction
 - learn.design-your-site-recovery-solution-on-azure.develop-a-business-continuity-and-disaster-recovery-plan
