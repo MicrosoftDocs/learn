@@ -454,7 +454,7 @@ There's no inbuilt logging library provided as Node.js is built on the JavaScrip
 
 ### Test the new logging
 
-1. If the firewall is still switched on for the Cosmos DB, the chat app can't connect to the database. Otherwise, if the chat app is still working then follow these steps to switch on the firewall.
+1. If the firewall is still switched on for the Azure Cosmos DB, the chat app can't connect to the database. Otherwise, if the chat app is still working then follow these steps to switch on the firewall.
 
 1. Sign into the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
@@ -462,7 +462,7 @@ There's no inbuilt logging library provided as Node.js is built on the JavaScrip
 
 1. You should see a database account with a name beginning with **learn-cosmos-db-**. Select that database account.
 
-1. In the Cosmos DB panel, select **Firewall and virtual networks**.
+1. In the Azure Cosmos DB panel, select **Firewall and virtual networks**.
 
 1. Select **Selected networks**.
 

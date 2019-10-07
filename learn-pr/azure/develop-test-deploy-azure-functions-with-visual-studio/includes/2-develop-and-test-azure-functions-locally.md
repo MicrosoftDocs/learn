@@ -24,7 +24,7 @@ An Azure Function is triggered by an event rather than being called directly fro
 
 - **Blob trigger**. This type of function runs when a file is uploaded or modified in Azure Blob storage.
 - **Event Hub Trigger**. An Event Hubs trigger runs the function when an Event Hub receives a message.
-- **Cosmos DB Trigger**. This trigger runs when a document is added to, or modified in, a Cosmos DB database. You can use this trigger to integrate Cosmos DB with other services. For example, if a document representing a customer's order is added to a database, you could use a trigger to send a copy of the order to a queue for processing.
+- **Azure Cosmos DB Trigger**. This trigger runs when a document is added to, or modified in, an Azure Cosmos DB database. You can use this trigger to integrate Azure Cosmos DB with other services. For example, if a document representing a customer's order is added to a database, you could use a trigger to send a copy of the order to a queue for processing.
 - **Http Trigger**. An HTTP trigger runs the function when an HTTP request occurs in a web app. You can also use this trigger to respond to webhooks. A webhook is a callback that occurs when an item hosted by a website is modified. For example, you can create an Azure Function that is fired by a webhook from a GitHub repository when an item in the repository changes.
 - **Queue Trigger**. This trigger fires the function when a new item is added to an Azure Storage Queue.
 - **Service Bus Queue Trigger**. Use this trigger to run the function when a new item is added to an Azure Service Bus Queue.
@@ -76,7 +76,7 @@ public static class Function1
 }
 ```
 
-The function returns a value containing any output data and results, wrapped in an *IAsynResult* object. The value is returned in the body of the HTTP response for the request.
+The function returns a value containing any output data and results, wrapped in an *IActionResult* object. The value is returned in the body of the HTTP response for the request.
 
 Different types of trigger receive different input parameters and return types. The next example shows the code generated for a Blob trigger. In this example, the contents of the blob is made accessible through a *Stream* object, and the name of the blob is also provided. No data is returned by the trigger; its purpose is to read and process the data in the named blob:
 

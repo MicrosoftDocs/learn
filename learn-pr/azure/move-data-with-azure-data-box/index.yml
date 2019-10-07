@@ -1,0 +1,33 @@
+### YamlMime:Module
+uid: learn.azure.move-data-with-azure-data-box
+metadata:
+  title: Move large amounts of data to the cloud by using Azure Data Box family
+  description: Learn how to move large amounts of data to the cloud by using Azure Data Box devices.
+  ms.date: 07/26/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Move large amounts of data to the cloud by using Azure Data Box family
+summary: Evaluate Azure Data Box family to import terabytes (TBs) of data from a local computer to Azure Blob storage. Order disks. Copy data to disks and return them. Verify that the data is uploaded to Azure.
+abstract: | 
+  In this module, you will:
+  - Decide which Azure Data Box device to use
+  - Learn the steps to import data by using Azure Data Box Disk
+prerequisites: | 
+  - Familiarity with Azure Storage and Azure Blob storage
+iconUrl: /learn/achievements/move-data-with-azure-data-box.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure-storage
+units:
+- learn.azure.move-data-with-azure-data-box.introduction
+- learn.azure.move-data-with-azure-data-box.what-is-azure-data-box-family
+- learn.azure.move-data-with-azure-data-box.how-azure-data-box-family-works
+- learn.azure.move-data-with-azure-data-box.when-to-use-azure-data-box-family
+- learn.azure.move-data-with-azure-data-box.summary
+badge:
+  uid: learn.azure.move-data-with-azure-data-box.badge

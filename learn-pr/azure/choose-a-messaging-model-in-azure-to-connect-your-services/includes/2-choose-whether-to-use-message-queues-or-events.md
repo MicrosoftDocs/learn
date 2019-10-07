@@ -1,8 +1,8 @@
 Suppose you are planning the architecture of a distributed music-sharing application. You want to ensure that the application is as reliable and scalable as possible, and you intend to use Azure technologies to build a robust communication infrastructure.
 
-Before you can choose the right Azure technology, you must understand each individual communication that the components of the application exchange. For each communication you can choose a different Azure technology.
+Before you can choose the right Azure technology, you must understand each individual communication that the components of the application exchange. For each communication, you can choose a different Azure technology.
 
-The first thing to understand about a communication is whether it sends **messages** or **events**. This is a fundamental choice that will help you choose the appropriate Azure service to use.
+The first thing to understand about a communication is whether it sends **messages** or **events**. This knowledge will help you choose the appropriate Azure service to use.
 
 #### Communication strategies in Azure (APIs)
 
@@ -21,7 +21,7 @@ For example, suppose a user uploads a new song by using the mobile music-sharing
 
 **Events** are lighter weight than messages, and are most often used for broadcast communications. The components sending the event are known as **publishers**, and receivers are known as **subscribers**.
 
-With events, receiving components will generally decide in which communications they are interested, and will "subscribe" to those. The subscription is usually managed by an intermediary, like Azure Event Grid or Azure Event Hubs. When publishers send an event, the intermediary will route that event to interested subscribers. This is known as a "publish-subscribe architecture." It's not the only way to deal with events, but it is the most common.
+With events, receiving components will generally decide in which communications they are interested, and will "subscribe" to those events. The subscription is managed by an intermediary, like Azure Event Grid or Azure Event Hubs. When publishers send an event, the intermediary will route that event to interested subscribers. This pattern is known as a "publish-subscribe architecture." It's not the only way to deal with events, but it is the most common.
 
 Events have the following characteristics:
 
@@ -34,13 +34,13 @@ Events have the following characteristics:
 
 For example, suppose the music file upload has been completed, and the new song has been added to the database. In order to inform users of the new file, the web API must inform the web front end and mobile app users of the new file. The users can choose whether to listen to the new song, so the initial notification does not include the music file but only notifies users that the song exists. The sender does not have a specific expectation that the event receivers will do anything particular in responsiveness of receiving this event.
 
-This is an example of a discrete event.
+This scenario is an example of a discrete event.
 
 ## How to choose messages or events
 
 A single application is likely to use events for some purposes and messages for others. Before you choose, you must analyze your application's architecture and all its use cases, to identify all the different purposes where its components have to communicate with each other.
 
-Events are more likely to be used for broadcasts and are often ephemeral, meaning a communication might not be handled by any receiver if none are currently subscribing. Messages are more likely to be used where the distributed application requires a guarantee that the communication will be processed.
+Events are more likely to be used for broadcasts and are often ephemeral, meaning a communication might not be handled by any receiver if none is currently subscribing. Messages are more likely to be used where the distributed application requires a guarantee that the communication will be processed.
 
 For each communication, consider the following question: **Does the sending component expect the communication to be processed in a particular way by the destination component?**
 

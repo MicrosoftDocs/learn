@@ -30,6 +30,9 @@ roles:
 - developer
 products:
 - azure
+- dotnet
+- aspnet-core
+- dotnet-core
 units:
 - learn.load-test-web-app-azure-devops.1-introduction
 - learn.load-test-web-app-azure-devops.2-test-the-performance-of-a-web-app-using-the-azure-portal

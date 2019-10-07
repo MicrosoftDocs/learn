@@ -18,4 +18,4 @@ You work for a company that makes digital cameras. The company has recently acqu
 - **Lens quality control.** The company you acquired has a good reputation for lens reliability because of its quality control procedure. You want to implement this procedure across the merged company and integrate it with your parts ordering system, which includes a REST API.
 - **Ordering and dispatch.** The company you acquired had no formal order and dispatch procedure, so you want to ensure its employees use your original business procedure. The ordering system has a user interface that is built as an Azure App service web app but you want to manage the order and dispatch workflow as a separate project.
 
-You have hired a small team of developers to the work and you prefer a design-first approach.
+You have hired a small team of developers to do the work and you prefer a design-first approach.

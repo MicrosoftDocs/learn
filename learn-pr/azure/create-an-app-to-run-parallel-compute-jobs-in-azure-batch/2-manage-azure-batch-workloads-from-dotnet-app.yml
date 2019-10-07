@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.manage-azure-batch-workloads-from-dotnet-app
+title: Manage Azure Batch workloads from a .NET app
+metadata:
+  title: Manage Azure Batch workloads from a .NET app
+  description: Learn about the components of an Azure Batch workload, from pools, nodes, jobs and tasks. 
+  ms.date: 06/01/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-manage-azure-batch-workloads-from-dotnet-app.md)]
