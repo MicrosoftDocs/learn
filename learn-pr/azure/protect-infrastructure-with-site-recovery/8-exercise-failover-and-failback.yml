@@ -13,4 +13,4 @@ title: Exercise - Failover and failback using Azure Site Recovery
 durationInMinutes: 10
 azureSandbox: true
 content: |
-  [!include[](includes/3-exercise-unit.md)]
+  [!include[](includes/8-exercise-failover-and-failback.md)]
