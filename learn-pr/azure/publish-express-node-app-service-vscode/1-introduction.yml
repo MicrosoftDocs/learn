@@ -3,7 +3,7 @@ uid: learn.azure.publish-express-node-app-service-vscode.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction
+  description: In this unit, you'll learn about a business problem that you can address by building an Express.js website and hosting it in Azure.
   ms.date: 09/16/2019
   author: nickwalkmsft
   ms.author: nickwalk
