@@ -24,6 +24,8 @@ If a neural network model is taking a long time to train, you can try SGD instea
 
 ### Forward propagation and backpropagation
 
+![TBC if we keep in optional content](../media/nn-fp-bp)
+
 Forward propagation and backpropagation are how neural networks optimize their weights and produce accurate output. Don't worry about the details - here’s a nice diagram showing how they work!
 
 That's it! Next up we'll do a programming exercise in Azure notebooks - advanced neural networks (don't worry, we'll easily walk you through it).
