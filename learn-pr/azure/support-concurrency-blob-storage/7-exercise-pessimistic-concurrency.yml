@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.support-concurrency-blob-storage.7-exercise-pessimistic-concurrency
-title: Exercise - Implementing pessimistic concurrency
+title: Exercise - Implement pessimistic concurrency
 metadata:
-  title: Exercise – Implementing pessimistic concurrency
-  description: Exercise – Implementing pessimistic concurrency
+  title: Exercise - Implement pessimistic concurrency
+  description: Exercise - Implement pessimistic concurrency
   ms.date: 04/06/2019
   author: nickwalkmsft
   ms.author: nickwalk

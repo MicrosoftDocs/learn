@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.develop-app-that-queries-azure-sql
+metadata:
+  title: Develop and configure an ASP.NET application that queries an Azure SQL database
+  description: Create an Azure SQL database to store data for an application, and create an ASP.NET application to query data from the database.
+  ms.date: 06/28/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Develop and configure an ASP.NET application that queries an Azure SQL database
+summary: Create a database on Azure SQL Database to store data for an application, and create an ASP.NET application to query data from the database.
+abstract: | 
+  In this module, you will:
+  - Create, configure, and populate a single database in SQL Database
+  - Configure an ASP.NET application to query the database
+prerequisites: | 
+  - Basic familiarity with relational databases
+  - Basic knowledge of C#
+iconUrl: /learn/achievements/develop-app-that-queries-azure-sql.svg
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+- azure-sql-database
+units:
+- learn.develop-app-that-queries-azure-sql.1-introduction
+- learn.develop-app-that-queries-azure-sql.2-create-tables-bulk-import-query-data
+- learn.develop-app-that-queries-azure-sql.3-exercise-create-tables-bulk-import-query-data
+- learn.develop-app-that-queries-azure-sql.4-connect-aspnet-to-azure-sql
+- learn.develop-app-that-queries-azure-sql.5-exercise-connect-aspnet-to-azure-sql
+- learn.develop-app-that-queries-azure-sql.6-summary
+badge:
+  uid: learn.develop-app-that-queries-azure-sql.badge

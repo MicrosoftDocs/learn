@@ -98,7 +98,7 @@ You're a software developer in a non-profit whose mission is to give every human
 - We're trying  to teach the concept of Azure Batch, so a simple pool with two or three compute nodes will suffice. Demonstrating that three tasks that take 20 seconds to complete, complete in a total of 20 seconds and not 60 seconds would show parallelism. 
 - A stretch goal is to introduce the Batch Explorer to the learner, so they know that there is a tool available to visualize Batch jobs. 
 - This is NOT a Batch Explorer module, do don't try to do too much with it. 
-- [https://docs.microsoft.com/en-gb/azure/batch/batch-technical-overview](https://docs.microsoft.com/en-gb/azure/batch/batch-technical-overview)
-- [https://azure.microsoft.com/en-us/services/batch/](https://azure.microsoft.com/en-us/services/batch/)
+- [https://docs.microsoft.com/azure/batch/batch-technical-overview](https://docs.microsoft.com/azure/batch/batch-technical-overview)
+- [https://azure.microsoft.com/services/batch/](https://azure.microsoft.com/services/batch/)
 
 - [https://azure.github.io/BatchExplorer/]( https://azure.github.io/BatchExplorer/)

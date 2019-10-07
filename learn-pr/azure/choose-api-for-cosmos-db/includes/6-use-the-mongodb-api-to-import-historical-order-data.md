@@ -6,7 +6,7 @@ The operations team has semi-structured data that needs the flexibility to store
 
 ## Recommended API: MongoDB
 
-To allow the operations team to continue to use their existing app that uses MongoDB queries, your best option is to use the MongoDB API. Choosing this API means that MongoDB tools like `mongodump` and `mongorestore` are available to natively move the data into Cosmos DB.
+To allow the operations team to continue to use their existing app that uses MongoDB queries, your best option is to use the MongoDB API. Choosing this API means that MongoDB tools like `mongodump` and `mongorestore` are available to natively move the data into Azure Cosmos DB.
 
 ## Why not any of the other APIs?
 
@@ -14,7 +14,7 @@ Using the decision matrix from earlier in this learning module, you can see why 
 
 | API | Description |
 |---|---|
-| **Azure Table** | This API isn't a good choice for this scenario, and should only be used to allow existing apps that are based on the Table API access to Cosmos DB. |
+| **Azure Table** | This API isn't a good choice for this scenario, and should only be used to allow existing apps that are based on the Table API access to Azure Cosmos DB. |
 | **Cassandra** | This API isn't a good choice due to the existing MongoDB database, and the requirement to import and reuse application code. |
 | **Core (SQL)** | This API would be a good choice if there wasn't a requirement to reuse existing code and import an existing MongoDB database. |
 | **Gremlin** | This API isn't a good choice because the data isn't graph based. |

@@ -26,7 +26,7 @@ As we discussed in the preceding unit, Azure provides templates that help you ge
 
 1. In the **Create a function** step, select **More templates...** and then select **Finish and view templates**.
 
-1. In the list of all templates available to this function app, select **Http trigger** .
+1. In the list of all templates available to this function app, select **HTTP trigger** .
 
 1. Enter **DriveGearTemperatureService** in the name field of the **New Function** dialog that appears. Leave the Authorization level as "Function" and press the **Create** button to create the function.
 
@@ -153,7 +153,7 @@ Our function is expecting an array of temperature readings. The following JSON s
 
 Next, we'll replace the default code in our function with the following code that implements our business logic.
 
-1. Open the **index.js** file and replace it with the following code.
+1. Open the **index.js** file and replace it with the following code. Make sure to save the file after updating it.
 
 ```javascript
 module.exports = function (context, req) {

@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Model-training techniques
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/2-model-training-techniques.md)]

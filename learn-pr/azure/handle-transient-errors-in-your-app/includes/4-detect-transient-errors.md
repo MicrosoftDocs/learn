@@ -5,22 +5,22 @@ Representational State Transfer (REST), is an approach for writing client and se
 - **404**: URI unavailable, the server can't find the requested resource on the server
 - **408**: Request timeout, client hasn't sent a request in time for the server
 - **449**: Microsoft-specific return code, that gives the client information that can be used to retry the operation
-- **503**: The service is temporarily unable to handle the request received, it could be possible future request mighty work
+- **503**: The service is temporarily unable to handle the request received
 - **504**: Gateway timeout, upstream services have been unable to respond quick enough
 
 For your companies apps that make use of REST services, these transient errors need to be handled. Your company has made the decision to use Azure, and depending on the features being used, Azure has some well-defined errors that need to be handled.
 
-Azure connections in APS.NET can receive WebExceptionStatus.ConnectionClosed, WebExceptionStatus.Timeout, or WebExceptionStatus.RequestCanceled responses.
+Azure connections in ASP.NET can receive WebExceptionStatus.ConnectionClosed, WebExceptionStatus.Timeout, or WebExceptionStatus.RequestCanceled responses.
 
 Azure Cosmos DB databases are RESTful services, so can return all the above plus a specific **429** error code that notifies the client that the request rate is too high. This error can be returned when the throughput is too low, or the number and size of requests are too high.
 
 Azure SQL Database also has well-defined error codes, for example, **40501**: The service is currently busy. Retry the request after **X** seconds.
 
-Your team's chat app implements a virtual white board. People can leave messages for the whole team to read. It uses a Cosmos DB database as the message store, created with the MongoDB API. The team could quickly create clients for the chat app in .NET Core using C#, Java, and Node using their previous MongoDB knowledge.
+Your team's chat app implements a virtual white board. People can leave messages for the whole team to read. It uses an Azure Cosmos DB database as the message store, created with the MongoDB API. The team could quickly create clients for the chat app in .NET Core using C#, Java, and Node using their previous MongoDB knowledge.
 
 The chat app should detect the following types of errors:
 
-- Lost connections to Cosmos DB
+- Lost connections to Azure Cosmos DB
 - Any service unavailability
 - Handle exceptions raised by other parts of the app
 

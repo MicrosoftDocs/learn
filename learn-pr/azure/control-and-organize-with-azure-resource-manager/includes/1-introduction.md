@@ -14,4 +14,4 @@ In this module, you will:
 - Use resource locks to protect critical Azure resources from accidental deletion
 
 > [!NOTE]
-> For this module, you will need use your own subscription to follow along. We'll be working with resources that will have no cost associated with them, so a trial subscription or a subscription you already have access to will work to follow along with these exercises.
+> For this module, you will need to use your own subscription to follow along. We'll be working with resources that will have no cost associated with them, so a trial subscription or a subscription you already have access to will work to follow along with these exercises.

@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.intro-to-azure-kubernetes-service
+metadata:
+  title: Introduction to Azure Kubernetes Service
+  description: Introduction Azure to Kubernetes Service
+  ms.date: 6/25/2019
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure Kubernetes Service
+summary: Determine the types of business problems that can be solved using Azure Kubernetes Service. Describe the benefits of container orchestration with features like deployment management, automatic updates, and self-healing.
+abstract: |
+  In this module, you will:
+  - Evaluate whether Azure Kubernetes Service is an appropriate Kubernetes orchestration platform for you
+  - Describe how the components of Azure Kubernetes Service work to support compute container orchestration
+prerequisites: |
+  - Basic understanding of microservices
+iconUrl: /learn/achievements/intro-to-azure-kubernetes-service.svg
+badge:
+  uid: learn.intro-to-azure-kubernetes-service.badge
+levels: 
+- beginner
+roles: 
+- developer
+- administrator
+- solution-architect
+products:
+- azure
+- azure-kubernetes-service
+units:
+- learn.intro-to-azure-kubernetes-service.introduction
+- learn.intro-to-azure-kubernetes-service.what-is-azure-kubernetes-service
+- learn.intro-to-azure-kubernetes-service.how-azure-kubernetes-service-works
+- learn.intro-to-azure-kubernetes-service.when-to-use-azure-kubernetes-service
+- learn.intro-to-azure-kubernetes-service.knowledge-check
+- learn.intro-to-azure-kubernetes-service.summary
