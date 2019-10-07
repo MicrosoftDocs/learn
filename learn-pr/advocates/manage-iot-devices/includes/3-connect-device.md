@@ -3,8 +3,6 @@ from traffic patterns to how heating, ventilation, and air conditioning (HVAC) s
 exercise, you will be interacting with the online Raspberry Pi simulator you learned about in the previous unit to capture
 simulated weather data and via the Azure IoT Hub.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 While this exercise is being conducted in a simulated environment, the application running on the simulated device can be transferred to a real device in the future.
 
 ## Create an IoT hub

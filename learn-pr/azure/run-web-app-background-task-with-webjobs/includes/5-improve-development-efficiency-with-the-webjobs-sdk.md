@@ -65,7 +65,7 @@ In a WebJob, a function is a procedure that executes in response to a trigger ev
 
 - A new Blob appears in a storage account.
 - A new item appears in a storage account queue.
-- An entity is added to a Cosmos DB database.
+- An entity is added to an Azure Cosmos DB database.
 - An event occurs in a WebHook.
 - The schedule in the **settings.json** file triggers the WebJob.
 
@@ -92,7 +92,7 @@ public static void Run([BlobTrigger("watchescontainer/{name}")] Stream watchInst
 
 In this code, the `{name}` token creates a binding expression. You'll learn about bindings later in this unit.
 
-Here's another, more complicated function, that triggers when data is added to a Cosmos DB database:
+Here's another, more complicated function, that triggers when data is added to an Azure Cosmos DB database:
 
 ```c#
 [FunctionName("CosmosTrigger")]
@@ -116,7 +116,7 @@ In this example, the `CosmosDBTrigger` attribute is used to set a connection str
 
 ## Bindings
 
-Use bindings to avoid hard-coding input and output details in your functions. For example, if the name of your Cosmos DB database might change, use a binding to set that detail declaratively. A binding to a source of data is an *input* binding. A binding for sending data is an *output* binding.
+Use bindings to avoid hard-coding input and output details in your functions. For example, if the name of your Azure Cosmos DB database might change, use a binding to set that detail declaratively. A binding to a source of data is an *input* binding. A binding for sending data is an *output* binding.
 
 To use bindings, create a new file named **functions.json** in the WebJob project. Here's an example that uses queue for input and a storage table for output:
 

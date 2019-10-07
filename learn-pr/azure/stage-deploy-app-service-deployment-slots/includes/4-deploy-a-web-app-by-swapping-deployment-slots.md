@@ -12,19 +12,23 @@ Suppose, for example, you have two databases. You use one for production and the
 
 ### Configure slot settings
 
-To configure settings for the swap, go to the web app resource and follow these steps: 
+To view and configure settings for the swap, go to the web app resource and follow these steps:
 
-1. On the **Deployment Slots** page, select the deployment slot you want to configure. 
-1. Select the **Application Settings** page for the deployment slot. 
-1. Scroll down to **Application settings** and **Connection strings**. To make one of these a slot setting, select the check box under **Slot Setting**:
+1. In the **All resources** view of the Azure portal, select the deployment slot you want to configure.
+1. Navigate to the **Configuration** page.
+1. On the **Application settings** tab, observe whether or not the settings you're interested in have a checkmark in the **deployment slot setting** field. To set or unset the checkmark on a given setting, select the setting's pencil button to edit it, then toggle the **deployment slot setting** checkbox to the desired value and select **OK**.
 
     ![Configure slot settings](../media/4-configure-slot-settings.png)
 
+    ![Toggle deployment slot setting](../media/4-deployment-slot-setting.png)
+
+1. Select **Save** on the Configuration page when you are finished to save your settings.
+
 ### Swap slots in the Azure portal
 
-To swap two slots in the Azure portal: 
+To swap two slots in the Azure portal:
 
-1. Open the resource page for the web app and select the **Deployment Slots** page.
+1. From the **All resources** view in the Azure portal, navigate to any of the deployment slots for the web app and select the **Deployment Slots** page.
 1. Select **Swap**. 
 1. In the **Swap** dialog box, you can select the source and target slots and see a summary of the settings that will be applied to the swapped slots:
 
@@ -50,11 +54,11 @@ To use the swap-with-preview feature, select **Perform swap with preview**, revi
 
 Follow the link to preview the new version of the site. In the preview, the slot settings from the destination slot are applied. If you want to continue, select **Complete Swap**.
 
-## Swap automatically
+## Auto swap
 
 Auto swap brings the zero-downtime and easy rollback benefits of swap-based deployment to automated deployment pipelines. When you configure a slot for auto swap, Azure automatically swaps it whenever you push code or content into that slot.
 
-When you use auto swap, you can't test the new app version in the staging slot before the swap. Auto swap mainly benefits users who want zero-downtime deployments and simple automated deployment pipelines. 
+When you use auto swap, you can't test the new app version in the staging slot before the swap. Auto swap mainly benefits users who want zero-downtime deployments and simple automated deployment pipelines.
 
 If you want to be able to test before you swap, you'll need a more complex deployment pipeline that requests the slot swap itself. Alternatively, you can deploy to a separate slot that's dedicated for testing.
 
@@ -63,6 +67,8 @@ If you want to be able to test before you swap, you'll need a more complex deplo
 
 ### Configure auto swap
 
-You can configure auto swap on the slot's **Application settings** page. Under **General settings**, turn on auto swap and configure where to swap to when new code is pushed:
+To configure auto swap for a slot, navigate to the **Configuration > General settings** page for the slot in the Azure portal. Under **Deployment Slot**, set **Auto swap enabled** to **On**, select the target slot from the dropdown menu, then select **Save** at the top.
 
 ![Configure auto swap](../media/4-configure-auto-swap.png)
+
+This option is only available on slots other than the production slot.

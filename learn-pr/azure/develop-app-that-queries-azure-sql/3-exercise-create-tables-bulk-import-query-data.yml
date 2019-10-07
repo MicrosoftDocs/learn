@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.develop-app-that-queries-azure-sql.3-exercise-create-tables-bulk-import-query-data
+metadata:
+  title: Exercise - Create tables, bulk import, and query data
+  description: Create tables, bulk import, and query data
+  ms.date: 06/28/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Exercise - Create tables, bulk import, and query data
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/3-exercise-create-tables-bulk-import-query-data.md)]

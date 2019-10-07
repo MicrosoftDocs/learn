@@ -5,9 +5,8 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: cryophobia
+  ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -35,22 +34,22 @@ quiz:
     choices:
     - content: "Cost"
       isCorrect: false
-      explanation: "Code that uses the client library is generally much shorter and simpler than code that uses the REST API. The client library handles assembling requests and parsing responses for you."
+      explanation: "Code that uses the client library is much shorter and simpler than code that uses the REST API. The client library handles assembling requests and parsing responses for you."
     - content: "Availability"
       isCorrect: false
-      explanation: "Code that uses the client library is generally much shorter and simpler than code that uses the REST API. The client library handles assembling requests and parsing responses for you."
+      explanation: "Code that uses the client library is much shorter and simpler than code that uses the REST API. The client library handles assembling requests and parsing responses for you."
     - content: "Localization"
       isCorrect: false
-      explanation: "Code that uses the client library is generally much shorter and simpler than code that uses the REST API. The client library handles assembling requests and parsing responses for you."
+      explanation: "Code that uses the client library is much shorter and simpler than code that uses the REST API. The client library handles assembling requests and parsing responses for you."
     - content: "Convenience"
       isCorrect: true
-      explanation: "Code that uses the client library is generally much shorter and simpler than code that uses the REST API. The client library handles assembling requests and parsing responses for you."
+      explanation: "Code that uses the client library is much shorter and simpler than code that uses the REST API. The client library handles assembling requests and parsing responses for you."
 
   - content: "Which of the following is a good analogy for the access keys of a storage account?"
     choices:
     - content: "IP Address"
       isCorrect: false
-      explanation: "Possession of an access key identifies the account and grants you access. This is very similar to login credentials like a username and password."
+      explanation: "Possession of an access key identifies the account and grants you access. This is similar to login credentials like a username and password."
     - content: "REST Endpoint"
       isCorrect: false
       explanation: "Possession of an access key identifies the account and grants you access. This is very similar to login credentials like a username and password."
