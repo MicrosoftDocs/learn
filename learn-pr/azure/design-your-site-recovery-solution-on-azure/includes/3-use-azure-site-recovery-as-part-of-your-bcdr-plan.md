@@ -23,8 +23,6 @@ If you're using other BCDR technologies, you may be able to integrate them too. 
 
 ![Azure Site Recovery and Azure Backup](../media/3-asr-backup-diagram.png)
 
-<!---Feel free to format this diagram according to your own standards-->
-
 The example solution shown above incorporates Azure Backup and Azure Site Recovery.
 
 There's an on-premises environment that has a Hyper-V host server for hosting virtual machines. You want to back up all the files and folders in this virtual machine to Azure. You also want to protect any workloads running on the virtual machine, and keep running them even if the virtual machine fails. Azure Backup and Azure Site Recovery can be used together as part of a single solution.
@@ -44,9 +42,10 @@ To set up Azure Site Recovery, you install an Azure Site Recovery Services agent
 Azure Site Recovery allows replication of different types of machines in different scenarios.
 
 You can protect Azure virtual machines and replicate them from a source region to an entirely different target region. You can replicate:
- - on-premises virtual machines to Azure, whether they're Hyper-V or VMware based.
- - physical servers – both can be Linux and Windows based.
- - machines hosted on other cloud providers such as Amazon Web Services.
+
+- On-premises virtual machines to Azure, whether they're Hyper-V or VMware based.
+- Physical servers – both can be Linux and Windows based.
+- Machines hosted on other cloud providers such as Amazon Web Services.
 
 You can also replicate both Hyper-V and VMware-based machines (managed by System Center), and your physical servers to your own secondary site. Azure Site Recovery replicates any of your workloads that are running on the machines that are supported.
 
