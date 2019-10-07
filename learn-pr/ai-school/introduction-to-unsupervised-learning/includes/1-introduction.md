@@ -1,5 +1,3 @@
-Now you’ve had an overview of supervised learning, 
-
 You may have previously used supervised learning algorithms - where we have labels for our examples. When a dataset doesn’t have labels, we can use unsupervised learning to find some kind of structure in the data - discovering patterns or groupings.
 
 Supervised learning is much more common than unsupervised learning, but unsupervised learning can help us quickly get some analysis on a dataset with little effort.
