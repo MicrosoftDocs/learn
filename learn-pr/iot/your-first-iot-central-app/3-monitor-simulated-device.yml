@@ -13,7 +13,7 @@ title: Monitor a simulated device
 azureSandbox: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-monitor-a-simulated-device.md)]
+  [!include[](includes/3-monitor-simulated-device.md)]
 quiz:
   title: Check your knowledge
   questions:

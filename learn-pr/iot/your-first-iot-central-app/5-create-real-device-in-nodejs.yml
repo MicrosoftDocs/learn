@@ -13,4 +13,4 @@ title: Create a real device in Node.js
 azureSandbox: true
 durationInMinutes: 20
 content: |
-  [!include[](includes/5-create-a-real-device-in-nodejs.md)]
+  [!include[](includes/5-create-real-device-in-nodejs.md)]
