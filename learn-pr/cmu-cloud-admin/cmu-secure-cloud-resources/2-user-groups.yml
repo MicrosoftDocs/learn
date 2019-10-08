@@ -13,3 +13,21 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/2-user-groups.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+    - content: "Which one of the following is NOT an entity that is typically supported by an identity system?"
+      choices:
+      - content: "Groups"
+        isCorrect: false
+        explanation: "Incorrect. Groups are used in online identity-management systems to help manage groups of users, applications, or other entity types."
+      - content: "Users"
+        isCorrect: false
+        explanation: "Incorrect. Users are the abstractions over individual people in an organization."
+      - content: "Applications"
+        isCorrect: false
+        explanation: "Incorrect. Applications that are hosted in the cloud can be given identities in order to allow them to securely connect to other services that require authentication."
+      - content: "Departments"
+        isCorrect: true
+        explanation: "Correct! Although departments can be represented by concepts like groups, departments and other organizational entities are not usually treated as first-class objects in an online identity-management system."
