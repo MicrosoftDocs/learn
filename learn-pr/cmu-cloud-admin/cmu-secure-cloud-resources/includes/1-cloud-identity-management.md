@@ -36,7 +36,7 @@ A simplified representation of the interaction between a user and a web site tha
 
 ![Figure 3.1: Authenticating users of a web site.](../media/fig3-1.png)
 
-Figure 3.1: Authenticating users of a web site.
+_Figure 3.1: Authenticating users of a web site._
 
 Typically, once the web site has confirmed the validity of the token, it issues an encrypted HTTP cookie with information about the user's identity so the user can return to the page for some period of time without having to log in again. The cookie effectively authenticates the user in subsequent requests as the ID token did following the initial request.
 

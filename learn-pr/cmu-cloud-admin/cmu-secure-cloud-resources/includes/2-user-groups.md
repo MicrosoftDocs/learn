@@ -14,7 +14,7 @@ Users are abstractions over individual persons within an organization. As such, 
 
 ![Figure 3.2: Example of the attributes describing a user](../media/fig3-2.png)
 
-Figure 3.2: Example of the attributes describing a user.
+_Figure 3.2: Example of the attributes describing a user._
 
 ## Groups
 
@@ -22,7 +22,7 @@ Because an identity system must scale to handle large numbers of users, it is us
 
 ![Figure 3.3: Users organized into departmental groups](../media/fig3-3.png)
 
-Figure 3.3: Users organized into departmental groups.
+_Figure 3.3: Users organized into departmental groups._
 
 Groups support applying management settings in bulk, which can simplify onboarding and managing users in an organization. As users join an organization, administrators don't have to individually assign specific permissions to new users -- instead, they add users to existing groups and focus on managing group permissions. Assigning permissions at the group level reduces chances for error and makes it easier for administrators to quickly determine what permissions a user has simply by examining the user's group memberships.
 
