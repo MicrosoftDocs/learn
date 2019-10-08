@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.your-first-iot-central-app.6-test-your-iot-device
+uid: learn.iot.your-first-iot-central-app.test-your-iot-device
 metadata:
   title: Test your IoT Central device
   description: Test a device by giving it commands and monitoring the results on the dashboard.

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.your-first-iot-central-app.8-create-a-device-set-dashboard
+uid: learn.iot.your-first-iot-central-app.create-a-device-set-dashboard
 metadata:
   title: Create a Device Set dashboard
   description: Create a single dashboard to monitor multiple devices.
