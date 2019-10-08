@@ -37,11 +37,6 @@ Most of the operations are intuitive, but there are two cases worth mentioning:
 * String comparisons are all case sensitive.
 * JSON comparisons use what's called *deep* equals. This comparison means the equality operators will compare the entire objects, including any descendant tokens inside complex objects.
 
-<!-- TODO in process of verifying with product team whether this is true or a bug
-> [!IMPORTANT]
-> Boolean comparison is case sensitive. For example, if the incoming data uses an uppercase first letter like "True" for a Boolean value, you have to use that same string in your comparison. Please examine the format used by your incoming data to decide what to use in your comparison.
--->
-
 ### Combine expressions using **AND** and **OR**
 
 Logic Apps lets you create complex expressions by combining conditions using **AND** or **OR**. Suppose you wanted to identify tweets that were neutral in their sentiment (recall that a score close to 0.5 is neutral). You could write an expression similar to the following pseudo-code:

@@ -12,7 +12,7 @@ Let's look at the steps you take to set up auditing on your system.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. In the search bar at the top of the portal, search for **server<12345>**, then select the server in the portal.
+1. In the search bar at the top of the portal, search for **serverNNNN** (replacing `NNNN` with the number from your server name), then select the server in the portal.
 
 1. In the left menu, in the **Security** section, select the **Auditing** option.
 
@@ -20,7 +20,7 @@ Let's look at the steps you take to set up auditing on your system.
 
 1. Once the ON button is selected, select the **Storage** checkbox, then click **Storage details** to define the storage account.
 
-1. In the **Storage settings** dialog, you can select an existing storage account or create a new storage account to store your audits. The storage account must be configured to use the same region as your server. In this case, we'll define a new storage account. Click **Storage account**, which will then open up the **Create storage account** dialog. Name the storage account `server<12345>auditing` replacing the `<12345>` with the number from your logical server name. Leave the rest of the options at their defaults and select **OK**. Back in the **Storage settings** dialog, leave the defaults and click **OK**.
+1. In the **Storage settings** dialog, you can select an existing storage account or create a new storage account to store your audits. The storage account must be configured to use the same region as your server. In this case, we'll define a new storage account. Click **Storage account**, which will then open up the **Create storage account** dialog. Name the storage account `serverNNNNauditing`, replacing the `NNNN` with the number from your logical server name. Leave the rest of the options at their defaults and select **OK**. Back in the **Storage settings** dialog, leave the defaults and click **OK**.
 
 1. Click the **Save** button in the toolbar to save your changes and enable auditing on your database server.
 
@@ -29,7 +29,7 @@ Now let's generate some audit records and take a look at what you can expect.
 1. Let's log back in to the database as the _ApplicationUser_ user.
 
     ```bash
-    sqlcmd -S tcp:server<12345>.database.windows.net,1433 -d marketplaceDb -U 'ApplicationUser' -P '<password>' -N -l 30
+    sqlcmd -S tcp:serverNNNN.database.windows.net,1433 -d marketplaceDb -U 'ApplicationUser' -P '[password]' -N -l 30
     ```
 
 1. Run the following query.
@@ -65,7 +65,7 @@ Advanced Data Security (ADS) provides a set of advanced SQL security capabilitie
 
 Let's enable Advanced Data Security on our database. Advanced Data Security is a server-level setting, so we'll start there.
 
-1. Back in the portal, navigate to your SQL server. In the search bar at the top of the portal, search for **server<12345>**, then select the server.
+1. Back in the portal, navigate to your SQL server. In the search bar at the top of the portal, search for **serverNNNN**, then select the server.
 
 1. In the left menu, in the **Security** section, select the **Advanced Data Security** option.
 

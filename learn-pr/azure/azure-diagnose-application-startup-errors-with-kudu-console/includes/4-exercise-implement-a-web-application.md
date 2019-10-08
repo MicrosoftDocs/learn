@@ -2,8 +2,6 @@
 
 To diagnose application startup errors, you need to deploy code to your web app in Azure App Service. For this module, you'll create and deploy an ASP.NET Core web app.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create a new web project
 
 Use the `dotnet` command line tool to create a new ASP.NET Core web project.
@@ -64,7 +62,7 @@ public class Program
 3. Deploy the project to a new web app. The web app name must be unique in Azure App Service, so add your name in front of `HotelApp` when you specify a name for the new web app `[<yourname>HotelApp]`:
 
 ```bash
-az webapp up --name [<yourname>HotelApp] --resource-group <rgn>[Sandbox resource group]</rgn> --sku S1
+az webapp up --name [<yourname>HotelApp] --resource-group <rgn>[Sandbox resource group]</rgn> --sku F1
 ```
 
 You will need to wait till the web app creation process is complete before clicking on the **Check your work** button.

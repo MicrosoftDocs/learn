@@ -60,7 +60,7 @@ A *Controller* is a public class with one or more public methods known as *actio
     * An HTTP GET action named `GetAll` is created for retrieving all products.
 1. Start the web API by running the following command:
 
-    ```bash
+    ```dotnetcli
     dotnet run > ContosoPets.Api.log &
     ```
 1. Run the following command:

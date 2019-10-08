@@ -5,8 +5,8 @@ metadata:
   title: Secure resources with role-based access control
   description: Provide fine-grained access control with RBAC
   ms.date: 12/27/2018
-  author: markjulmar
-  ms.author: smmark
+  author: jboeshart
+  ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

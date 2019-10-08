@@ -26,7 +26,7 @@ Visual Studio Code supports Windows, Linux, and macOS. To install Visual Studio 
 
 ::: zone pivot="vstudio"
 
-Visual Studio is a full featured integrated development environment (IDE) for a wide range of programming application types and languages. Visual Studio has a full set of tools and features that are specifically targetted at developing applications with Microsoft Azure. These features provide support for Azure development, debugging, and deployment tools that are tightly integrated with the IDE.
+Visual Studio is a full featured integrated development environment (IDE) for a wide range of programming application types and languages. Visual Studio has a full set of tools and features that are specifically targeted at developing applications with Microsoft Azure. These features provide support for Azure development, debugging, and deployment tools that are tightly integrated with the IDE.
 
 ## Visual Studio
 
@@ -59,7 +59,7 @@ The Eclipse integrated development environment is a popular tool for Java develo
 
 ## Eclipse
 
-Eclipse is one of the most widely used Java IDEs. It is also a versatile development environment, featuring an extensible plugin architecture that can be used to support languages other than Java. While most Eclipse users are Java developers, Eclipse can also be used to build applications with C++, Python, C, and Ruby. 
+Eclipse is one of the most widely used Java IDEs. It is also a versatile development environment, featuring an extensible plugin architecture that can be used to support languages other than Java. While most Eclipse users are Java developers, Eclipse can also be used to build applications with C++, Python, C, and Ruby.
 
 Eclipse is supported on Windows, macOS, and Linux. The installation process uses the Eclipse installer on all platforms, with few differences in installation procedures between the platforms.
 
@@ -67,7 +67,7 @@ Installing Eclipse for Java or Java EE on any platform is straightforward. The i
 
 ## Azure Toolkit for Eclipse
 
-The Azure Toolkit for Eclipse provides templates and functionality that you can use to easily create, develop, test, and deploy cloud applications to Azure from Eclipse. The Azure Toolkit is open source, actively developed, and hosted in GitHub. 
+The Azure Toolkit for Eclipse provides templates and functionality that you can use to easily create, develop, test, and deploy cloud applications to Azure from Eclipse. The Azure Toolkit is open source, actively developed, and hosted in GitHub.
 
 The toolkit includes integration templates for Docker containers, HDInsights, Azure documentation, Azure Cache for Redis, storage account operations, and virtual machine management.
 
@@ -89,7 +89,7 @@ Installing IntelliJ IDEA for Java or Java EE on any platform is straightforward.
 
 ## Azure Toolkit for IntelliJ
 
-The Azure Toolkit for IntelliJ provides templates and functionality that you can use to easily create, develop, test, and deploy cloud applications to Azure from IntelliJ IDEA. The Azure Toolkit is open source, actively developed, and hosted in GitHub. 
+The Azure Toolkit for IntelliJ provides templates and functionality that you can use to easily create, develop, test, and deploy cloud applications to Azure from IntelliJ IDEA. The Azure Toolkit is open source, actively developed, and hosted in GitHub.
 
 The toolkit includes integration templates for Docker containers, HDInsights, Azure documentation, Azure Cache for Redis, storage account operations, and virtual machine management.
 

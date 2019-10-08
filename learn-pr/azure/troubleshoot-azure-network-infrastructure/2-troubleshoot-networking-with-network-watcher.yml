@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.troubleshoot-azure-network-infrastructure.2-troubleshoot-networking-with-network-watcher
+metadata:
+  title: Troubleshoot a network by using Network Watcher monitoring and diagnostic tools
+  description: In this unit, you'll learn about the features of Azure Network Watcher that you can use to diagnose problems in an Azure virtual network.
+  ms.date: 09/03/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Troubleshoot a network by using Network Watcher monitoring and diagnostic tools
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-troubleshoot-networking-with-network-watcher.md)]
+quiz:
+  questions:
+  - content: "To capture traffic on a VM, Azure Network Watcher requires:"
+    choices:
+    - content: "Network Watcher Agent VM Extension"
+      isCorrect: true
+      explanation: "The Network Watcher Agent VM Extension is required when you capture traffic on a VM. It's automatically installed when you start a packet capture session in the Azure portal."
+    - content: "Azure Traffic Manager"
+      isCorrect: false
+      explanation: "The Network Watcher Agent VM Extension is required when you capture traffic on a VM. It's automatically installed when you start a packet capture session in the Azure portal."
+    - content: "An Azure storage account"
+      isCorrect: false
+      explanation: "The Network Watcher Agent VM Extension is required when you capture traffic on a VM. It's automatically installed when you start a packet capture session in the Azure portal."
+  - content: "To resolve latency issues on the network, which Azure Network Watcher features can you use?"
+    choices:
+    - content: "IP flow verify"
+      isCorrect: false
+      explanation: "IP flow verify checks if packets are allowed or denied to or from a virtual machine, but it doesn't show latencies. Use the connection troubleshoot tool to diagnose latencies."
+    - content: "Next hop"
+      isCorrect: false
+      explanation: "Next hop shows the type and IP address of the next hop in a network route, but it doesn't show latencies. Use the connection troubleshoot tool to diagnose latencies."
+    - content: "Connection troubleshoot"
+      isCorrect: true
+      explanation: "Connection troubleshoot displays the latency associated with each hop in a route."

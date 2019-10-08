@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.manage-release-cadence.4-implement-blue-green-deployment
+title: Exercise - Implement the blue-green deployment pattern
+metadata:
+  title: Exercise - Implement the blue-green deployment pattern
+  description: Implement the blue-green deployment pattern in your pipeline by using deployment slots.
+  ms.date: 09/30/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-implement-blue-green-deployment.md)]

@@ -5,10 +5,11 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 12/21/2018
-  author: adrianstevens
-  ms.author: adsteven
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)]

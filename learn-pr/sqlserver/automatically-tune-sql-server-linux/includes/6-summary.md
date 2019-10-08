@@ -6,5 +6,5 @@ You also used this technique to observe how a query plan regression problem nega
 
 - [SQL Server on Linux](https://docs.microsoft.com/sql/linux/sql-server-linux-overview?view=sql-server-2017)
 - [Monitoring performance by using the Query Store](https://docs.microsoft.com/sql/relational-databases/performance/monitoring-performance-by-using-the-query-store?view=sql-server-2017)
-- [Automatic tuning](https://docs.microsoft.com/en-us/sql/relational-databases/automatic-tuning/automatic-tuning?view=sql-server-2017)
+- [Automatic tuning](https://docs.microsoft.com/sql/relational-databases/automatic-tuning/automatic-tuning?view=sql-server-2017)
 - [Download and install Azure Data Studio](https://docs.microsoft.com/sql/azure-data-studio/download?view=sql-server-2017)

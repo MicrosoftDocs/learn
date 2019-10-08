@@ -5,9 +5,8 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -30,7 +29,7 @@ quiz:
       isCorrect: true
       explanation: "You only need to install the Azure CLI. You will use a shell to issue the CLI commands, but every platform has at least one built-in shell."
 
-  - content: "The Azure CLI can be installed on Linux, macOS, and Windows. True or false: the CLI commands you use are the same in all platforms."
+  - content: "True or false: The Azure CLI can be installed on Linux, macOS, and Windows, and the CLI commands you use are the same in all platforms."
     choices:
     - content: "True"
       isCorrect: true
