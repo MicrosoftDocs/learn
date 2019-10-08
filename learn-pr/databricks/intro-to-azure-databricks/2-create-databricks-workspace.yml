@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-databricks.2-create-databricks-workspace
-title: Creating Databricks workspace
+title: Creating a Databricks workspace
 metadata:
-  title: Creating Databricks workspace
-  description: TBD
+  title: Creating a Databricks workspace
+  description: Learn how to create and deploy a Databricks workspace using Azure portal.
   ms.date: 02/20/2019
-  author: barlanmsft
+  author: barlan
   ms.author: barlan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.recognize-voices-with-speaker-recognition.exercise-create-a-speaker-recognition-api-subscription
-title: Exercise - Create a Speaker Recognition API Subscription
+title: Exercise - Create a Speaker Recognition API subscription
 metadata:
-  title: Exercise - Create a Speaker Recognition API Subscription
-  description: Create a subscription to the speaker recognition API
+  title: Exercise - Create a Speaker Recognition API subscription
+  description: Create a subscription to the Speaker Recognition API and get the values for the endpoint and subscription keys. 
   ms.date: 01/11/2019
   author: gerryaobrien
   ms.author: gerryo

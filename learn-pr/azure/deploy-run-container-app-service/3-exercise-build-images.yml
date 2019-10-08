@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-run-container-app-service.3-exercise-build-images
+title: Exercise - Build and store an image by using Azure Container Registry  
+metadata:
+  title: Exercise - Build and store an image by using Azure Container Registry  
+  description: Create a container registry, and then build and deploy a Docker image to Azure Container Registry.
+  ms.date: 03/28/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/3-exercise-build-images.md)]

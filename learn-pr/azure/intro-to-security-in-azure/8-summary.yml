@@ -35,7 +35,7 @@ quiz:
       - content: "Monitor sign-on attempts"
         isCorrect: false
         explanation: "While monitoring can help you discover when someone attempts unauthorized access to one of your services, monitoring alone won't help you disable inactive accounts."
-      - content: "Enable single sign-on (SSO)"
+      - content: "Use single sign-on (SSO)"
         isCorrect: true
         explanation: "SSO centralizes user identity, so you can disable an inactive account in a single step."
     - content: "Which of these is the _strongest_ way to protect sensitive customer data?"

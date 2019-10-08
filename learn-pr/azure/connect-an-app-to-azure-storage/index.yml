@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.connect-app-to-azure-storage
 metadata:
-  title: Connect an app to Azure Storage - Learn
+  title: Connect an app to Azure Storage
   description: Create a simple application and add configuration, client library references, and code to connect it to Azure Storage.
   ms.date: 09/24/2018
   author: JesseDietrichson

@@ -33,7 +33,7 @@ As we discussed in the preceding unit, Azure provides templates that help you ge
 1. When your function creation completes, the code editor opens with the contents of the *index.js* code file. The default code that the template generated for us is listed in the following snippet.
 
     ```javascript
-    module.exports = function (context, req) {
+    module.exports = async function (context, req) {
         context.log('JavaScript HTTP trigger function processed a request.');
     
         if (req.query.name || (req.body && req.body.name)) {
@@ -48,7 +48,6 @@ As we discussed in the preceding unit, Azure provides templates that help you ge
                 body: "Please pass a name on the query string or in the request body"
             };
         }
-        context.done();
     };
     ```
 
@@ -58,20 +57,24 @@ As we discussed in the preceding unit, Azure provides templates that help you ge
 
     ```javascript
     {
-        "disabled": false,
-        "bindings": [
+      "bindings": [
         {
-            "authLevel": "function",
-            "type": "httpTrigger",
-            "direction": "in",
-            "name": "req"
+          "authLevel": "function",
+          "type": "httpTrigger",
+          "direction": "in",
+          "name": "req",
+          "methods": [
+            "get",
+            "post"
+          ]
         },
         {
-            "type": "http",
-            "direction": "out",
-            "name": "res"
+          "type": "http",
+          "direction": "out",
+          "name": "res"
         }
-        ]
+      ],
+      "disabled": false
     }
     ```
 

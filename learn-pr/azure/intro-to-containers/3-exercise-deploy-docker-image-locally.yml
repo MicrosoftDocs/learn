@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-containers.3-exercise-deploy-docker-image-locally
+title: Exercise - Retrieve an existing Docker image and deploy it locally
+metadata:
+  title: Exercise - Retrieve an existing Docker image and deploy it locally
+  description: Pull an image from Docker Hub and load it into a local registry. Deploy and run the application from the registry. Examine and manage the registry.
+  ms.date: 04/05/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-exercise-deploy-docker-image-locally.md)]

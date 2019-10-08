@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.exercise-monitor-and-visualize-batch-job-in-batch-explorer
+metadata:
+  title: Exercise - Monitor and visualize your batch job in Batch Explorer
+  description: Exercise - Monitor and visualize your batch job in Batch Explorer
+  ms.date: 05/06/2019
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Exercise - Monitor and visualize your batch job in Batch Explorer
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-exercise-monitor-and-visualize-batch-job-in-batch-explorer.md)]

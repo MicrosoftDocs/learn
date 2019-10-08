@@ -1,8 +1,8 @@
 Visual Studio is a full featured integrated development environment (IDE) for a wide range of programming application types and languages. Visual Studio has a full set of tools and features specifically aimed at developing applications with Microsoft Azure. This means that Azure development, debugging, and deployment tools are tightly integrated with the IDE.
 
-## Visual Studio 2017
+## Visual Studio
 
-Visual Studio 2017 is a fully featured IDE used to develop applications for a wide range of application types in including Windows, Android, iOS, web, and Azure.
+Visual Studio is a fully featured IDE used to develop applications for a wide range of application types in including Windows, Android, iOS, web, and Azure.
 
 When installing Visual Studio, you'll see that several *workloads* are available. Workloads are collections of libraries and components that define an area of functionality that can be installed. Instead of installing an individual component where you must know and remember the dependencies between each, you can use workloads to do "themed" installations. This ensures that all necessary components are included.
 

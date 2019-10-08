@@ -21,7 +21,7 @@ The first step is to create a new file named `Dockerfile`. You can use any text 
     code
     ```
 
-1. Copy the following contents editor.
+1. Copy the following contents into the editor.
 
     ```bash
     FROM    node:9-alpine

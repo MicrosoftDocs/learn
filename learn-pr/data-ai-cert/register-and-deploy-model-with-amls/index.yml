@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.data-ai.register-and-deploy-model-with-amls
+metadata:
+  title: Register and deploy ML models with Azure Machine Learning service
+  description: Register and deploy ML models with Azure Machine Learning service
+  ms.date: 03/18/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: smmark
+title: Register and deploy ML models with Azure Machine Learning service
+summary: Register and deploy ML models with Azure Machine Learning service
+abstract: | 
+  In this module, you will:
+  - Create a deployment workspace using the Azure portal
+  - Create a deployment workspace using Python and the Azure ML SDK
+  - Register a model to the container registry in the workspace
+  - Create a model scoring script
+  - Create a YAML file configuring Python module dependencies
+  - Create a container image
+  - Deploy a model as a web service
+  - Score new data with the deployed model
+  - Manage and monitor models
+prerequisites: None
+iconUrl: /learn/achievements/data-ai/register-and-deploy-model-with-amls-badge.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure
+- azure-machine-learning-service
+units:
+- learn.data-ai.register-and-deploy-model-with-amls.introduction
+- learn.data-ai.register-and-deploy-model-with-amls.create-deployment-workspace-auzre-portal
+- learn.data-ai.register-and-deploy-model-with-amls.create-deployment-workspace-auzre-ml-sdk
+- learn.data-ai.register-and-deploy-model-with-amls.register-model
+- learn.data-ai.register-and-deploy-model-with-amls.create-scoring-script
+- learn.data-ai.register-and-deploy-model-with-amls.create-environment-yaml
+- learn.data-ai.register-and-deploy-model-with-amls.create-container-image
+- learn.data-ai.register-and-deploy-model-with-amls.where-to-deploy-model
+- learn.data-ai.register-and-deploy-model-with-amls.deploy-model-web-service
+- learn.data-ai.register-and-deploy-model-with-amls.scoring-data-with-deployed-model
+- learn.data-ai.register-and-deploy-model-with-amls.manage-and-monitor-models
+- learn.data-ai.register-and-deploy-model-with-amls.summary
+badge:
+  uid: learn.data-ai.register-and-deploy-model-with-amls.badge

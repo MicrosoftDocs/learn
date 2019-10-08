@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.register-and-deploy-model-with-amls.create-scoring-script
+title: Exercise - Create a scoring script
+metadata:
+  title: Exercise - Create a scoring script
+  description: Exercise - Create a scoring script
+  ms.date: 01/31/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-create-scoring-script.md)]

@@ -1,13 +1,15 @@
-As you've seen in this module, it's quite easy to add filters into your apps and services with Microsoft Azure Content Moderator. You can analyze your text and image input to look for unwanted content, classify the data, and get insights into the data being shared so you know how to protect it.
+As you've seen in this module, it's easy to add text filters to your apps and services with Microsoft Azure Content Moderator. With the Text Moderation API, you can:
+
+- Analyze text to look for unwanted content.
+- Classify the potentially offensive content.
+- Get insights into the potential PII that's being shared so that you can protect it.
 
 ## Cleanup
 
-To avoid any unexpected costs in your Azure account, delete the **LearnRG** resource group. This will remove all of the resources we created in this module. Here's the steps you need to do.
+To avoid any unexpected costs in your Azure account, delete the **LearnRG** resource group. Deleting this group will remove all the resources we created in this module. Here are the steps you need to take:
 
-1. Find the **LearnRG** resource group. Select **Resource groups** in the Azure sidebar to quickly locate it.
-
-1. Select the resource group and either right-click on the row, or use the "..." button on the far-right side of the row to open the context menu.
-
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. In the left pane, select **Resource groups**, and find the **LearnRG** resource group.
+1. Select the resource group, and either right-click the row or use the **ellipsis** (...) button to open the context menu.
 1. Select **Delete resource group**.
-
-1. Type the name of the resource group and click **Delete**. Azure will de-provision all of the resources for you.
+1. Enter the name of the **LearnRG** resource group, and then select **Delete**. Azure will remove all the resources for you.

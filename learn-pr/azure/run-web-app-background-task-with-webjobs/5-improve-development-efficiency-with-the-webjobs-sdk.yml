@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.run-web-app-background-task-with-webjobs.5-improve-development-efficiency-with-the-webjobs-sdk
+title: Improve development efficiency with the WebJobs SDK
+metadata:
+  title:  Improve development efficiency with the WebJobs SDK
+  description: In this unit, you will learn how to code a WebJob that uses the WebJobs SDK.
+  ms.date: 4/17/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-improve-development-efficiency-with-the-webjobs-sdk.md)]

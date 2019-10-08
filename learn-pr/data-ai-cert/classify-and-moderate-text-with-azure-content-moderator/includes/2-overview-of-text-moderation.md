@@ -1,10 +1,22 @@
-You either block, approve or review the content based on your policies and thresholds. Use it to augment human moderation of environments where partners, employees, and consumers generate text content. These include chat rooms, discussion boards, chatbots, e-commerce catalogs, and documents. 
+When you're using machine-assisted content moderation, you either block, approve, or review the content based on your policies and thresholds. You can use machine assistance to augment human moderation of environments where partners, employees, and consumers generate text content. These places include:
 
-The service response includes the following information:
+- Chat rooms
+- Discussion boards
+- Chatbots
+- E-commerce catalogs
+- Documents
+
+The response from the Text Moderation API includes the following information:
+
+- A list of potentially unwanted words found in the text.
+- What type of potentially unwanted words were found.
+- Possible personally identifiable information (PII) found in the text.
 
 ## Profanity
 
-When you pass text to this API, any profane terms in the text are identified and returned in a JSON response.  The profane item is returned as a "Term" in the JSON response along with an index value of where the term is located in the supplied text.  You can also use custom term lists with this API as well and if a profane term is identified in the text, the ListId is also returned, showing where in your custom list the item is. An example of a JSON response is shown here:
+When you pass text to the API, any potentially profane terms in the text are identified and returned in a JSON response. The profane item is returned as a `Term` in the JSON response, along with an index value showing where the term is in the supplied text.
+
+You can also use custom term lists with this API. In that case, if a profane term is identified in the text, a `ListId` is also returned to identify the specific custom word that was identified. A sample JSON response is shown here:
 
 ```json
 "Terms": [
@@ -20,11 +32,13 @@ When you pass text to this API, any profane terms in the text are identified and
 
 This feature of the API can place text into specific categories based on the following specifications:
 
-- Category 1 - potential presence of language that may be considered sexually explicit or adult in certain situations
-- Category 2 - potential presence of language that may be considered sexually suggestive or mature in certain situations
-- Category 3 - potential presence of language that may be considered offensive in certain situations
+- **Category 1:** Potential presence of language that might be considered sexually explicit or adult in certain situations.
+- **Category 2:** Potential presence of language that might be considered sexually suggestive or mature in certain situations.
+- **Category 3:** Potential presence of language that might be considered offensive in certain situations.
 
-When the JSON response is returned, it will provide a Boolean value for a recommended review of the text.  If True, the suggestion is to review the content manually to determine the potential for any issues.  Each category will also be returned with a score between 0 and 1 to indicated the prediction of which category is most appropriate for the evaluated text.  An example of a JSON response:
+When the JSON response is returned, it provides a Boolean value for a recommended review of the text. If `true`, you should review the content manually to determine the potential for any issues.
+
+Each category is also returned with a score between 0 and 1 to indicate the predicted category for the evaluated text. The higher the score, the more likely it is that the category might apply. Here's a sample JSON response:
 
 ```json
 "Classification": {
@@ -41,18 +55,18 @@ When the JSON response is returned, it will provide a Boolean value for a recomm
 }
 ```
 
-## Personally Identifiable Information
+## Personally identifiable information
 
-Personally Identifiable Information (PII) is of critical importance in many applications. This feature of the API can help you detect if any values in the text are considered PII before you release it publicly.  Key aspects that are detected include:
+Personally identifiable information (PII) is of critical importance in many applications. This feature of the API can help you detect if any values in the text might be considered PII before you release it publicly. Key aspects that are detected include:
 
 - Email addresses
-- U.S. mail addresses
+- US mailing addresses
 - IP addresses
-- U.S. phone numbers
+- US phone numbers
 - UK phone numbers
 - Social Security numbers
 
-If values are found, the JSON response will include relevant information on the text and include the index location within the text.  An example response is shown here:
+If possible PII values are found, the JSON response includes relevant information about the text and the index location within the text. A sample JSON response is shown here:
 
 ```json
 "PII": {
@@ -69,11 +83,11 @@ If values are found, the JSON response will include relevant information on the 
         }],
     "Phone": [{
         "CountryCode": "US",
-        "Text": "6657789887",
+        "Text": "5557789887",
         "Index": 56
         }, {
         "CountryCode": "UK",
-        "Text": "+44 870 608 4000",
+        "Text": "+44 123 456 7890",
         "Index": 208
         }],
     "Address": [{

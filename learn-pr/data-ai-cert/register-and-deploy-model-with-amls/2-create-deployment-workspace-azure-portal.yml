@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.register-and-deploy-model-with-amls.create-deployment-workspace-auzre-portal
+title: Exercise - Create a deployment workspace in the Azure portal
+metadata:
+  title: Exercise - Create a deployment workspace in the Azure portal
+  description: Exercise - Create a deployment workspace in the Azure portal
+  ms.date: 01/31/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-create-deployment-workspace-azure-portal.md)]

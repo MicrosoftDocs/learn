@@ -30,7 +30,7 @@ modules:
 - learn.create-cosmos-db-for-scale
 - learn.access-data-with-cosmos-db-and-sql-api
 - learn.cosmos-db-app-with-vscode
-#TODO: Add - learn.monitor-azure-cosmos-db (POST-IGNITE)
+- learn.monitor-azure-cosmos-db
 - learn.distribute-data-globally-with-cosmos-db
 trophy:
   uid: learn.work-with-nosql-data-in-azure-cosmos-db.trophy

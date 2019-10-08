@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.intro-to-ai-technology.introduction-to-ai-technology
+title: Introduction to AI technology
+metadata:
+  title: Introduction to AI technology
+  description: This unit provides a high level overview of the state-of-the-art AI, the fundamental concepts that make it real today, and the technologies behind it from an agnostic point of view.
+  ms.date: 04/26/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-introduction-to-ai-technology.md)] 

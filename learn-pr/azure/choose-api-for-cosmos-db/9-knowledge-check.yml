@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.9-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 04/15/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 4
+quiz:
+  title: Check your knowledge. For all of the scenarios listed below, choose the API that best supports the requirements.
+  questions:
+
+  - content: "The e-commerce application has a requirement to support a shopping basket. Customers can add and remove products, and any discounts (like buy one get one free) need to be kept in the basket. The sales team wants the flexibility to offer different kinds of discounts, and to add or remove different product categories."
+    choices:
+    - content: "Core (SQL)"
+      isCorrect: true
+      explanation: "This type of data is modeled best by documents. Core (SQL) is the best choice for a new system."
+    - content: "MongoDB"
+      isCorrect: false
+      explanation: "MongoDB might be a good second choice due to the document nature, but Core (SQL) is the best choice as there is no need to support existing MongoDB data or an existing application."
+    - content: "Cassandra"
+      isCorrect: false
+      explanation: "There isn't a fixed schema, and this isn't a good fit as flexibility is needed."
+    - content: "Azure Table Storage"
+      isCorrect: false
+      explanation: "This isn't a simple key-value pair."
+    - content: "Gremlin (graph)"
+      isCorrect: false
+      explanation: "There is no requirement to store relationships or metadata on those links between items."
+    
+
+  - content: "The risk department has asked if the new project could implement some form of fraud detection and prevention. The guidance is that the fraud system would need to be able to track the relationship between customers, payment types, billing and delivery addresses, IP address, geolocation, and past purchase history. Anything that doesn't fit into normal behavior should be flagged."
+    choices:
+    - content: "Core (SQL)"
+      isCorrect: false
+      explanation: "Complex relationships, and needed to store metadata against them is best supported by a graph mode of data."
+    - content: "MongoDB"
+      isCorrect: false
+      explanation: "Complex relationships, and needed to store metadata against them is best supported by a graph mode of data."
+    - content: "Cassandra"
+      isCorrect: false
+      explanation: "Complex relationships, and needed to store metadata against them is best supported by a graph mode of data."
+    - content: "Azure Table Storage"
+      isCorrect: false
+      explanation: "Complex relationships, and needed to store metadata against them is best supported by a graph mode of data."
+    - content: "Gremlin (graph)"
+      isCorrect: true
+      explanation: "Complex relationships, and needed to store metadata against them is best supported by a graph mode of data."
+      
+  - content: "The sales team would like to offer a chat feature for customers. Messages will have a fixed number of characters and be simple. The schema is fixed, and the sales team has an existing chat app for which they have built up many CQL statements for creating reports. They would like to reuse them if possible."
+    choices:
+    - content: "Core (SQL)"
+      isCorrect: false
+      explanation: "The need to reuse existing CQL queries means that Cassandra is the best choice for in this scenario. Core (SQL) would be a good second choice for this scenario."
+    - content: "MongoDB"
+      isCorrect: false
+      explanation: "The need to reuse existing CQL queries means that Cassandra is the best choice for in this scenario."
+    - content: "Cassandra"
+      isCorrect: true
+      explanation: "The need to reuse existing CQL queries means that Cassandra is the best choice for in this scenario."
+    - content: "Azure Table Storage"
+      isCorrect: false
+      explanation: "The need to reuse existing CQL queries means that Cassandra is the best choice for in this scenario."
+    - content: "Gremlin (graph)"
+      isCorrect: false
+      explanation: "The need to reuse existing CQL queries means that Cassandra is the best choice for in this scenario."

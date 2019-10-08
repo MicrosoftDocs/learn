@@ -2,8 +2,8 @@
 uid: learn.explore-azure-infrastructure.7-composite-sla
 title: Composing SLAs across services
 metadata:
-  title: Composing SLAs across services - Learn
-  description: Composing SLAs across services - Learn
+  title: Composing SLAs across services
+  description: Composing SLAs across services
   ms.date: 01/1/2019
   author: markjulmar
   ms.author: smmark

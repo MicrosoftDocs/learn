@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.store-access-data-cosmos-graph-api.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: Knowledge Check
+  ms.date: 05/03/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+quiz:
+  title: Knowledge Check
+  questions:
+  - content: "In which of the following scenarios would a graph database, as opposed to another database model, be the best fit?"
+    choices:
+    - content: "Where data is disconnected and relationships do not matter"
+      isCorrect: false
+      explanation: "A graph database is built and optimized for traversing relationships from a particular starting point, it is not optimized for searching for data across the entire graph"
+    - content: "A data model where the ability to expand the model to add new data or data relationships"
+      isCorrect: true
+      explanation: "Perfect for graph databases, with a graph data model, changes to the data model can be made with little or no impact to the application"
+    - content: "If your queries are doing table scans to find a match or searching for data"
+      isCorrect: false
+      explanation: "A graph database is built and optimized for traversing relationships from a particular starting point, it is not optimized for searching for data across the entire graph"
+  - content: "Which of these answers is a primary strength of graph databases, as compared to other database models?"
+    choices:
+    - content: "Performance"
+      isCorrect: true
+      explanation: "A graph database has superior performance for querying related data. Graph databases are designed to traverse stored data quickly and retrieve results in milliseconds"
+    - content: "Storage"
+      isCorrect: false
+      explanation: "A graph database is not ideally suited to store numerous properties on a single node or large values in those properties"
+    - content: "Where data models stay consistent and the structure is fixed and tabular"
+      isCorrect: false
+      explanation: "Quite the opposite, graph databases are well-suited to storing any elements and flexible to easily adapt to changing requirements"
+  - content: "How would you model this module's scenario in a graph database?"
+    choices:
+    - content: "As a connected graph of nodes and relationships with properties and labels"
+      isCorrect: true
+      explanation: "A graph data model is designed to answer questions in the form of queries and solve business and technical problems by organizing a data structure for the graph database"
+    - content: "Modify the data model to fit a normalized table structure"
+      isCorrect: false
+      explanation: "For a graph database, we can be flexible and explore our options when it comes to modeling data and not have to data fit anything"
+    - content: "We can't build a model into a graph database as we don't have enough information"
+      isCorrect: false
+      explanation: "We are able to easily use the information in the scenario to build a graph database as we have nodes identified and information related to them"

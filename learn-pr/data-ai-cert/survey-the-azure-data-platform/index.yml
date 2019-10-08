@@ -1,21 +1,22 @@
 ### YamlMime:Module
 uid: learn.data-ai.survey-the-azure-data-platform
 metadata:
-  title: Survey the services in the Azure Data Platform - Learn
-  description: Learn how the Microsoft Azure platform provides a rich set of technologies to analyze text, images, relational, non-relational, or streaming data. See how Data Engineers can choose the technologies that are most appropriate to meet their business requirements and scale those solutions to meet demand securely - Learn
+  title: Survey the services on the Azure Data platform
+  description: Learn about Azure technologies that analyze text and images and relational, nonrelational, or streaming data. See how data engineers can choose the technologies that meet their business needs and scale to meet demand securely
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Survey the services in the Azure Data Platform
-summary: Learn how the Microsoft Azure platform provides a rich set of technologies to analyze text, images, relational, non-relational, or streaming data. See how Data Engineers can choose the technologies that are most appropriate to meet their business requirements and scale those solutions to meet demand securely.
+title: Survey the services on the Azure Data platform
+summary: Learn about Azure technologies that analyze text and images and relational, nonrelational, or streaming data. See how data engineers can choose the technologies that meet their business needs and scale to meet demand securely.
 abstract: | 
   In this module you will:
-  - Contrast the differences between structured and non-structured data
-  - Explore the common Azure data platform technologies and when to use them
-  - List additional technologies that support the common data platform technologies
+  - Contrast structured data with nonstructured data.
+  - Explore common Azure data platform technologies and learn when to use them.
+  - Understand technologies that support the common Azure data platform technologies.
 prerequisites: None
+ratingEnabled: true
 iconUrl: /learn/achievements/data-ai/survey-the-azure-data-platform-badge.svg
 levels:
 - beginner

@@ -25,7 +25,7 @@ The Azure portal provides a template to create a web app. This template requires
 - **App name**: The name of the web app.
 - **Subscription**: A valid and active subscription.
 - **Resource group**: A valid resource group. The sections below explain in detail what a resource group is.
-- **OS**: The operating system. The options are: Windows, Linux, and Docker containers. On Windows, you can host any type of application from a variety of technologies. The same applies to Linux hosting, though on Linux, any ASP.NET apps must be ASP.Net Core on the .NET Core framework. The final option is Docker containers, where you can deploy your containers directly over containers hosted and maintained by Azure. 
+- **OS**: The operating system. The options are: Windows, Linux, and Docker containers. On Windows, you can host any type of application from a variety of technologies. The same applies to Linux hosting, though on Linux, any ASP.NET apps must be ASP.NET Core. The final option is Docker containers, where you can deploy your containers directly over containers hosted and maintained by Azure.
 - **App Service plan/location**: A valid Azure App Service plan. The sections below explain in detail what an App Service plan is.
 - **Applications Insights**: You can turn on the Azure Application Insights option and benefit from the monitoring and metric tools that the Azure portal offers to help you keep an eye on the performance of your apps.
 

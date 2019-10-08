@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 05/1/2019
+  author: ShanaMatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 3
+content: |
+  [!include[](includes/13-summary.md)]

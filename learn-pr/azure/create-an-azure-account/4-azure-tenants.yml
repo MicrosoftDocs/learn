@@ -2,8 +2,8 @@
 uid: learn.create-azure-account.4-azure-tenants
 title: Authenticate access with Azure Active Directory
 metadata:
-  title: Authenticate access with Azure Active Directory - Learn
-  description: Authenticate access with Azure Active Directory - Learn
+  title: Authenticate access with Azure Active Directory
+  description: Authenticate access with Azure Active Directory
   ms.date: 01/1/2019
   author: markjulmar
   ms.author: smmark

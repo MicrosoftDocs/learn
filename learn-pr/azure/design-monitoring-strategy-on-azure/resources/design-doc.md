@@ -86,8 +86,8 @@ Identify the subtasks of *Design a holistic monitoring strategy on Azure*
     What types of questions will test *the understanding of security center as a monitoring solution*?
 
     - Why would you use security center to monitor your infrastructure?
-    - How can you block persistent access to your virtual machines using Azure Security Center?
-    - Which tool allows you to automate your responses to alerts?
+    - How would you use security center to protect your infrastructure?
+    - What is the key tool for providing continuous monitoring?
 
 1. **Analyze web applications using Azure Application Insights**
 
@@ -132,7 +132,6 @@ Identify the subtasks of *Design a holistic monitoring strategy on Azure*
     - The benefits of Azure Monitor
     - Integration with Azure Security Center
     - Integration with Application Insights
-
     **Knowledge check**
 
     What types of questions will test *the understanding of Azure Monitor as a unifying monitoring solution?*:

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-create-long-running-serverless-workflow-with-durable-functions.6-exercise-add-a-durable-timer-to-manage-a-long-running-task
+title: Exercise - Add a durable timer to manage a long-running task
+metadata:
+  title: Exercise - Add a durable timer to manage a long-running task
+  description: Exercise - Add a durable timer to manage a long-running task
+  ms.date: 04/24/2019
+  author: andrewjbyrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-exercise-add-a-durable-timer-to-manage-a-long-running-task.md)]

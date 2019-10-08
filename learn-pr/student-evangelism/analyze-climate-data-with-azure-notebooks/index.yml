@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.student-evangelism.analyze-climate-data-with-azure-notebooks
+metadata:
+  title: Analyze climate data with Azure Notebooks
+  description: Create an Azure Notebook and use three popular Python libraries to analyze climate data collected by NASA, then share it.
+  ms.date: 02/25/2018
+  author: JeffProsise
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Analyze climate data with Azure Notebooks
+summary: Create an Azure Notebook and use three popular Python libraries to analyze climate data collected by NASA, then share it.
+abstract: |
+  In this module, you will:
+  - Create a notebook in Azure Notebooks
+  - Upload, manipulate, and visualize data in a notebook
+  - Share notebooks online
+prerequisites: None
+iconUrl: /learn/achievements/student-evangelism/analyze-climate-data-with-azure-notebooks-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- data-scientist
+products:
+- azure
+units:
+- learn.student-evangelism.analyze-climate-data-with-azure-notebooks.introduction
+- learn.student-evangelism.analyze-climate-data-with-azure-notebooks.create-an-azure-notebook
+- learn.student-evangelism.analyze-climate-data-with-azure-notebooks.upload-data-and-create-scatterplot
+- learn.student-evangelism.analyze-climate-data-with-azure-notebooks.perform-linear-regression-with-numpy
+- learn.student-evangelism.analyze-climate-data-with-azure-notebooks.perform-linear-regression-with-scikit-learn
+- learn.student-evangelism.analyze-climate-data-with-azure-notebooks.analyze-data-with-seaborn
+#- learn.student-evangelism.analyze-climate-data-with-azure-notebooks.create-a-slideshow
+# Creating slideshows in Azure Notebooks is currently broken. See https://github.com/Microsoft/AzureNotebooks/issues/445
+- learn.student-evangelism.analyze-climate-data-with-azure-notebooks.share-a-notebook
+- learn.student-evangelism.analyze-climate-data-with-azure-notebooks.summary
+badge:
+  uid: learn.student-evangelism.analyze-climate-data-with-azure-notebooks.badge

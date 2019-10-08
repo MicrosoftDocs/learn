@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>NA/call-an-api-from-a-logic-apps-workflow-using-a-custom-connector</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-6.2%" y="-10.0%" width="114.1%" height="122.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0964956975 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M55.362563,60.8974609 C42.06062,60.8974609 32.4029818,60.8974609 26.3896484,60.8974609 C17.3696484,60.8974609 10,56.3984375 10,47.6533203 C10,38.9082031 16.5585938,32.9124609 24.299,32.9124609 C24.299,32.9124609 26.0803906,28.1075004 29.9667969,24.7114258 C32.6820938,22.3387065 35.2846107,20.902832 39,20.902832 C48.0332284,20.902832 52.2412109,29.1104637 52.2412109,34.012" id="path-4"></path>
+        <filter x="-6.6%" y="-7.5%" width="113.2%" height="120.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="2" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="N/A-13" transform="translate(-50.000000, -660.000000)">
+            <g id="NA/call-an-api-from-a-logic-apps-workflow-using-a-custom-connector" transform="translate(50.000000, 660.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="One-Cloud" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(23.000000, 31.000000)">
+                            <path d="M14,12 C14.101,12 14.199,12.013 14.299,12.015 C15.683,5.161 21.738,0 29,0 C35.492,0 41.004,4.131 43.092,9.902 C44.276,9.33 45.598,9 47,9 C51.971,9 56,13.029 56,18 C56,18.142 55.985,18.279 55.979,18.419 C60.605,19.72 64,23.959 64,29 C64,35.075 59.075,40 53,40 L14,40 C6.268,40 0,33.732 0,26 C0,18.268 6.268,12 14,12" id="Fill-11" fill="#FFFFFF"></path>
+                            <path d="M53.759,18.038 C54.524,18.091 55.265,18.219 55.979,18.419 C55.985,18.279 56,18.142 56,18 C56,15.004 54.53,12.357 52.279,10.721 C53.357,12.205 54,14.025 54,16 C54,16.702 53.911,17.382 53.759,18.038" id="Fill-12" fill="#C4CBCD"></path>
+                            <path d="M52.652,40 C59.4017095,40 63.781,35.376 63.993,29.4 C64.134,25.432 62.171,21.912 59.132,19.868 C60.645,22.116 61.35,24.951 60.83,27.961 C60.103,32.168 56.875,35.628 52.732,36.66 C50.417,37.237 48.201,37.048 46.238,36.332 C47.341,34.839 48,32.999 48,31 C48,28.004 46.53,25.357 44.279,23.721 C45.636,25.589 46.304,27.99 45.867,30.56 C45.239,34.258 42.26,37.238 38.563,37.867 C37.795,37.997 37.042,38.029 36.314,37.974 C33.461,37.756 31.108,35.661 30.314,32.912 C30.128,32.266 30,31.604 30,31 C30,30.637 30.026,30.281 30.07,29.93 C30.246,28.444 30.781,27.069 31.591,25.896 C30.441,26.358 29.226,26.692 27.957,26.858 C27.974,26.573 28,26.29 28,26 C28,21.368 25.741,17.274 22.275,14.725 C24.372,17.579 25.433,21.242 24.834,25.174 C23.927,31.13 19.13,35.927 13.174,36.834 C9.242,37.433 5.579,36.372 2.725,34.275 C5.274,37.741 9.368,40 14,40 L39,40 L52.652,40 Z" id="Fill-13" fill="#E6E6E6"></path>
+                            <path d="M39,22 C40.042,22 41.039,22.186 41.97,22.512 C43.253,20.301 44,17.74 44,15 C44,10.092 41.632,5.748 37.988,3.012 C39.871,5.518 41,8.624 41,12 C41,15.972 39.445,19.571 36.923,22.25 C37.591,22.092 38.284,22 39,22" id="Fill-14" fill="#E6E6E6"></path>
+                        </g>
+                    </g>
+                    <rect id="Rectangle" fill="#55A2FF" mask="url(#mask-2)" x="21" y="56.5" width="34" height="9"></rect>
+                    <circle id="Oval" fill="#55A2FF" mask="url(#mask-2)" cx="61" cy="61" r="10"></circle>
+                    <g id="Path-135" mask="url(#mask-2)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                        <use stroke="#E6E6E6" stroke-width="4" xlink:href="#path-4"></use>
+                    </g>
+                    <circle id="Oval" fill="#E6E6E6" mask="url(#mask-2)" cx="61" cy="61" r="7"></circle>
+                    <path d="M39.1969275,89.2071624 C39.1969275,83.483078 34.584711,78.8708615 28.8606265,78.8708615 C34.584711,78.8708615 39.1969275,74.258645 39.1969275,68.5345605 C39.1969275,74.258645 43.809144,78.8708615 49.5332284,78.8708615 C43.809144,78.8708615 39.1969275,83.483078 39.1969275,89.2071624 Z M33.1969275,26.0984637 C27.050769,26.0984637 22.0984637,21.1461585 22.0984637,15 C22.0984637,21.1461585 17.1461585,26.0984637 11,26.0984637 C17.1461585,26.0984637 22.0984637,31.050769 22.0984637,37.1969275 C22.0984637,31.050769 27.050769,26.0984637 33.1969275,26.0984637 Z M89.29699,40.648495 C84.5075865,40.648495 80.648495,36.7894035 80.648495,32 C80.648495,36.7894035 76.7894035,40.648495 72,40.648495 C76.7894035,40.648495 80.648495,44.5075865 80.648495,49.29699 C80.7160597,44.5075865 84.5751113,40.648495 89.29699,40.648495 Z" id="Sparkle" fill="#FFFFFF" opacity="0.949999988" mask="url(#mask-2)"></path>
+                    <path d="M51.5,44 C55.0898509,44 59.1625977,41.0898509 59.1625977,37.5 C59.1625977,34.9811554 57.0878698,32.4153932 54.6513672,31.3363037 C53.6153725,30.8774776 52.5710063,31 51.5,31 C50.5503597,31 48.9774061,31.1852626 48.1641846,31.5512695 C45.9032483,32.56885 45,34.8597894 45,37.5 C45,41.0898509 47.9101491,44 51.5,44 Z" id="Oval" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

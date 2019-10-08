@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.create-machine-learning-studio-account.create-ML-studio-workspace-using-existing-azure-account
-title: Create a Machine Learning Studio Workspace with an Existing Microsoft Azure Account
+title: Using an Azure account to create a Machine Learning Studio Workspace
 metadata:
-  title: Create a Machine Learning Studio Workspace with an Existing Microsoft Azure Account
-  description: Create a Machine Learning Studio Workspace with an Existing Microsoft Azure Account
+  title: Using an Azure account to create a Machine Learning Studio Workspace
+  description: Create a Machine Learning Studio Workspace by using an Azure account
   ms.date: 12/12/2018
   author: gerryaobrien
   ms.author: gerryo

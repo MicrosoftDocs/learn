@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.cloud-operating-model.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to the Cloud Operating Model
+  ms.date: 01/31/2019
+  author: alinamacelaru
+  ms.author: a-almace
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

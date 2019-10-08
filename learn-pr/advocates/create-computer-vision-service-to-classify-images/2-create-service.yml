@@ -23,5 +23,4 @@ tasks:
     resource:
       type: "Microsoft.CognitiveServices/accounts"
       kind: ComputerVision
-      name: ComputerVisionService
   hint: "Use the command above to create a ComputerVision Cognitive Services account named 'ComputerVisionService'."

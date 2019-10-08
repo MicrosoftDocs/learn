@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.overview-of-text-moderation
-title: Overview of Text Moderation
+title: Overview of text moderation
 metadata:
-  title: Overview of Text Moderation
-  description: Gain and understanding of the key concepts around text moderation with Azure Content Moderator
+  title: Overview of text moderation
+  description: Learn about the key concepts involved in text moderation with Azure Content Moderator.
   ms.date: 1/28/2019
   author: gerryaobrien
   ms.author: gerryo

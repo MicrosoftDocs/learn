@@ -76,17 +76,20 @@ Now that we have assigned the policy to our resource group, any attempts to crea
 
 1. Click **+ Create a resource** in the top left of the portal.
 
-1. Search for **Storage Account** and select **Storage account - blob, file, table, queue** in the results. Click **Create**.
+2. Search for **Storage Account** and select **Storage account** in the results. Click **Create**.
 
-1. Select your subscription, and the **msftlearn-core-infrastructure-rg** resource group.
+3. Select your subscription, and the **msftlearn-core-infrastructure-rg** resource group.
 
-1. For **Storage account name**, give it any name of your choice, but note that it does have to be a globally unique name.
+4. For **Storage account name**, give it any name of your choice, but note that it does have to be a globally unique name.
 
-1. Leave the rest of the options at their default, click **Review + create**.
+5. Leave the rest of the options at their default, click **Review + create**.
 
     Validation of your resource creation will fail because we don't have a **Department** tag applied to the resource.
 
-	![Image of the portal showing a violation of policy](../media/4-policy-violation.PNG)
+    > [!IMPORTANT]
+    > Please note that the assignment may take up to 30 minutes to take effect. Because of this delay, you may see it pass the validation, but fail the deployment. If this happens, allow for additional time and retry your deployment.
+
+    ![Image of the portal showing a violation of policy](../media/4-policy-violation.PNG)
 
     Let's fix the violation so we can successfully deploy the storage account.
 

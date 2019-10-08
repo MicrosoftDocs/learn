@@ -1,22 +1,23 @@
 ### YamlMime:Module
 uid: learn.data-ai.recognize-voices-with-speaker-recognition
 metadata:
-  title: Recognize specific voices with the Speaker Recognition API in Azure Cognitive Services - Learn
-  description: Learn how to use the Speaker Recognition API to identify specific people through their voice - Learn
+  title: Recognize specific voices with the Speaker Recognition APIs in Azure Cognitive Services
+  description: Learn how to use the Speaker Recognition APIs to identify specific people through their voices
   ms.date: 1/11/2019
   author: gerryaobrien
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: smmark
-title: Recognize specific voices with the Speaker Recognition API in Azure Cognitive Services
-summary: Learn how to use the Speaker Recognition API to identify specific people through their voice.
+title: Recognize specific voices with the Speaker Recognition APIs in Azure Cognitive Services
+summary: Learn how to use the Speaker Recognition APIs to identify specific people through their voices.
 abstract: |
-  In this module you will:
-  - Learn what speaker recognition is all about
-  - Gain an understanding of concepts related to speaker recognition
-  - Explore the Speaker Recognition API
+  In this module, you'll:
+  - Learn what speaker recognition is all about.
+  - Learn about the concepts related to speaker recognition.
+  - Explore the Speaker Recognition APIs.
 prerequisites: None
+ratingEnabled: true
 iconUrl: /learn/achievements/data-ai/recognize-voices-with-speaker-recognition.svg
 levels:
 - intermediate

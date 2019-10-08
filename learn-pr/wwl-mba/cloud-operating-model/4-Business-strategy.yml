@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.cloud-operating-model.4-business-strategy
+title: Business strategy
+metadata:
+  title: Business strategy
+  description: Learn how to translate modernization triggers into a business strategy for cloud adoption
+  ms.date: 1/31/2018
+  author: alinamacelaru
+  ms.author: a-almace
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-business-strategy.md)]

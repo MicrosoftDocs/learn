@@ -156,3 +156,11 @@ groups:
       title: Rearchitect
     - id: rebuild
       title: Rebuild
+- id: ef-core-data-access-syntax
+  title: Data-Access-Syntax
+  prompt: Choose the data access syntax
+  pivots:
+    - id: linq
+      title: LINQ
+    - id: fluent
+      title: Fluent

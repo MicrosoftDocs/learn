@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.intro-to-governance
 metadata:
-  title: Apply and monitor infrastructure standards with Azure Policy - Learn
+  title: Apply and monitor infrastructure standards with Azure Policy
   description: Learn about governance and management in Azure services.
   ms.date: 12/27/2018
   author: markjulmar
@@ -18,6 +18,7 @@ abstract: |
   - Understand Microsoft's policies and privacy guarantees
   - Learn how to monitor your resources
 prerequisites: None
+ratingEnabled: true
 iconUrl: /learn/achievements/intro-to-governance.svg
 levels:
 - beginner

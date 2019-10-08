@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.create-cosmos-db-for-scale
 metadata:
-  title: Create an Azure Cosmos DB database built to scale - Learn
+  title: Create an Azure Cosmos DB database built to scale
   description: Learn how to create an Azure Cosmos DB account, database, and collection built to scale as your application grows.
   ms.date: 09/24/2018
   author: mimig1

@@ -11,7 +11,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-#labId: 46464
 durationInMinutes: 3
 content: |
   [!include[](includes/4-detect-the-users-location.md)]

@@ -1,49 +1,47 @@
-In this unit, you load data from Azure Blob Storage into SQL Data Warehouse using PolyBase.
+PolyBase is a technology that accesses data outside of a database via the T-SQL language. In Azure SQL Data Warehouse, you can import and export data to and from Azure Blob storage and Azure Data Lake Store.
 
-PolyBase is a technology that accesses data outside of the database via the **t-sql** language. In Azure SQL Data Warehouse, you can import/export data from Azure Blob Storage and Azure Data Lake Store.
-
-Follow the steps in this unit to learn how to load data from Azure Blob Storage into SQL Data Warehouse using PolyBase.
+In this unit, you'll learn how to load data from Azure Blob storage into SQL Data Warehouse by using PolyBase.
 
 ## Make a connection to SQL Data Warehouse
 
 1. Open Azure Data Studio.
 
-1. Navigate to the Servers list on the left-hand menu in Azure Data Studio. Right-click on the SQL Data Warehouse connection you made to the SQL Data Warehouse database, then select **New Query** from the context menu.
+1. Go to the **Servers** list in the menu on the left side of Azure Data Studio. Right-click the connection that you made to the SQL Data Warehouse database and select **New Query**.
 
-    ![Right-click on the SQL Data Warehouse connection then click New Query.](../media/azure-data-studio-new-query-dw.png)
+    ![Right-click the SQL Data Warehouse connection and select New Query](../media/azure-data-studio-new-query-dw.png)
 
-## Create external data source
+## Create an external data source
 
-Execute following statements in the query window to create an external data source, which defines connection details to the **labdata** container of the Azure Storage account provisioned in your resource group.
+Run the following statements in the query window to create an external data source. The statements define connection details to the labdata container of the Azure storage account that you set up in your resource group.
 
-Replace token **<Name_Of_Storage_Account>** with name of Azure Storage account provisioned in your resource group in the final step of the Setup the Environment unit.
+Replace the token `<Name_Of_Storage_Account>` with the name of the Azure storage account that you set up in your resource group in the final section of the "Set up the environment" unit.
 
-    ```sql
+   ```sql
     CREATE EXTERNAL DATA SOURCE LabAzureStorage
     WITH
     (
       TYPE = Hadoop,
       LOCATION = 'wasbs://labdata@<Name_Of_Storage_Account>.blob.core.windows.net/'
     );
-    ```
+   ```
 
 ![External data source query](../media/sql-dw-external-datasource.png)
 
 - TYPE = `[ HADOOP | SHARD_MAP_MANAGER | RDBMS | BLOB_STORAGE ]`
 
-  Specifies the data source type. Use HADOOP when the external data source is Hadoop or Azure Storage blob for Hadoop.
+  Specifies the data source type. Use `HADOOP` when the external data source is Hadoop or Azure Blob storage  for Hadoop.
 
 - LOCATION = `<location_path>`
 
-  For Azure blob storage with Hadoop, specifies the URI for connecting to Azure blob storage.
+  For Azure Blob storage with Hadoop, specifies the URI for connecting to Azure Blob storage.
 
 - LOCATION = `wasb[s]://container@account_name.blob.core.windows.net`
 
-## Define external file format
+## Define the external file format
 
-A definition of the external file format helps Data Warehouse understand the format of the external file to be loaded. It defines the field terminator, string delimiter, and date field format. These properties assist in capturing the fields inside a file.
+A definition of the external file format helps SQL Data Warehouse parse the format of the external file to be loaded. It defines the field terminator, string delimiter, and date field format. These properties help with capturing the fields in a file.
 
-1. Clear the query window and execute following statements within to define the external file format:
+- Clear the query window and execute these statements to define the external file format:
 
     ```sql
     CREATE EXTERNAL FILE FORMAT TextFileFormat
@@ -59,26 +57,26 @@ A definition of the external file format helps Data Warehouse understand the for
     );
     ```
 
-- _FIELD_TERMINATOR_ = `field_terminator`. Applies only to delimited text files. This specifies one or more characters that mark the end of each field (column) in the
-  text-delimited file. The external file used for this exercise has comma (,) as text delimiter.
+   - FIELD_TERMINATOR = `field_terminator`. Applies only to delimited text files. This property specifies one or more characters that mark the end of each field (column) in the
+  text-delimited file. The external file used for this exercise uses the comma (,) as the text delimiter.
 
-- _STRING_DELIMITER_ = `string_delimiter`. Specifies the field terminator for data of type string in the text-delimited file.
+   - STRING_DELIMITER = `string_delimiter`. Specifies the field terminator for data of type string in the text-delimited file.
 
-- _DATE_FORMAT_ = `datetime_format`. Specifies a custom format for all date and time data that might appear in a delimited text file. The TransactionDate field holds date values (for example "2017-01-24 00:00:00.000")
+   - DATE_FORMAT = `datetime_format`. Specifies a custom format for all date and time data that appears in a delimited text file. The TransactionDate field holds date values (for example, "2017-01-24 00:00:00.000").
 
-## Create schema for external table
+## Create a schema for the external table
 
-1. Clear the query window and execute the following statements to create a new schema for the external table:
+- Clear the query window and run this statement to create a schema for the external table:
 
     ```sql
     CREATE SCHEMA [asb];
     ```
 
-## Create external table
+## Create the external table
 
-External tables refer to data from an external data source. Data isn't stored within SQL Data Warehouse.
+External tables refer to data from an external data source. Data isn't stored in SQL Data Warehouse.
 
-1. Clear the query window and execute following statements to define an external table:
+1. Clear the query window and run these statements to define an external table:
 
     ```sql
     CREATE EXTERNAL TABLE [asb].[Transaction]
@@ -112,43 +110,43 @@ External tables refer to data from an external data source. Data isn't stored wi
     );
     ```
 
-- `CREATE EXTERNAL TABLE` allows one or more column definitions. The column definitions, including the data types and number of columns, must match the data in the external files. If there's a mismatch, the file rows will be rejected when querying the actual data.
+- `CREATE EXTERNAL TABLE` allows one or more column definitions. The column definitions, including the data types and number of columns, need to match the data in the external files. If there's a mismatch, the file rows will be rejected when the data is queried.
 
-- _LOCATION_ = `folder_or_filepath`. Specifies the folder or the file path and file name for the actual data in Hadoop or Azure blob storage. The location starts from the root folder; the root folder is the data location specified in the external data source. In the above statement, the `Transaction.txt` file contains the data, and this file is present in the container specified inside the external data source.
+- LOCATION = `folder_or_filepath`. Specifies the folder or the file path and file name for the data in Hadoop or Azure Blob storage. The location starts at the *root folder*. The root folder is the data location specified in the external data source. In the previous statement, the `Transaction.txt` file contains the data. This file is in the container specified in the external data source.
 
-- _DATA_SOURCE_ = `external_data_source_name`. Specifies the name of the external data source that contains the location of the external data. This location is either Hadoop or Azure blob storage. Here we're referring to the **LabAzureStorage** external data store defined in earlier steps. This external data store points to the container inside the Azure Blob Storage account.
+- DATA_SOURCE = `external_data_source_name`. Specifies the name of the external data source that contains the location of the external data. This location is either Hadoop or Azure Blob storage. Here we're referring to the `LabAzureStorage` external data store that you defined earlier. This external data store points to the container in the Azure Blob storage account.
 
-- _FILE_FORMAT_ = `external_file_format_name`. Specifies the name of the external file format object that stores the file type and compression method for the external data. In the above statement, the `FILE_FORMAT` is set to the **TextFileFormat** object created in earlier steps.
+- FILE_FORMAT = `external_file_format_name`. Specifies the name of the external file format object that stores the file type and compression method for the external data. In the previous statement, `FILE_FORMAT` is set to the `TextFileFormat` object that you created earlier.
 
-- _Reject Options_. You can specify reject parameters that determine how PolyBase will handle dirty records it retrieves from the external data source. A data record is considered 'dirty' if its actual data types or the number of columns do not match the column definitions of the external table.
+- _Reject options_. You can specify reject parameters that determine how PolyBase will handle dirty records it retrieves from the external data source. A data record is considered *dirty* if its data types or the number of columns don't match the column definitions of the external table.
 
-- _REJECT_TYPE_ = `value | percentage`. Clarifies whether the `REJECT_VALUE` option is specified as a literal value or a percentage.
+  - REJECT_TYPE = `value | percentage`. Specifies whether the `REJECT_VALUE` option is specified as a literal value or a percentage.
 
-- _REJECT_VALUE_. If `REJECT_TYPE` is `value`, the PolyBase query will fail when the number of rejected rows exceeds `reject_value`. If `REJECT_TYPE` is `percentage`, the PolyBase query will fail when the percentage of failed rows exceeds `reject_value`. The percentage of failed rows is calculated at intervals.
+  - REJECT_VALUE. If `REJECT_TYPE` is `value`, the PolyBase query will fail when the number of rejected rows exceeds `REJECT_VALUE`. If `REJECT_TYPE` is `percentage`, the PolyBase query will fail when the percentage of failed rows exceeds `REJECT_VALUE`. The percentage of failed rows is calculated at intervals.
 
-  In the above statement, `REJECT_VALUE` is set to 1 to avoid headers in the external text file.
+    In the above statement, `REJECT_VALUE` is set to `1` to avoid headers in the external text file.
 
-1. Clear the query window and execute the following statement to get data from the external table.
+2. Clear the query window and run this statement to get data from the external table:
 
     ```sql
     SELECT * FROM [asb].[Transaction]
     ```
 
-## Create schema for table
+## Create a schema for the table
 
-1. Clear the query window and execute following statement to create a new schema for tables:
+- Clear the query window and run this statement to create a schema for tables:
 
     ```sql
     CREATE SCHEMA [cso];
     ```
 
-## Create SQL Data Warehouse table and load data
+## Create a SQL Data Warehouse table and load data
 
-Create a table in SQL Data Warehouse using the `CREATE TABLE AS SELECT` (CTAS) feature. It's a fully parallelized operation that creates a new table based on the output of a SELECT statement.
+Create a table in SQL Data Warehouse by using the CREATE TABLE AS SELECT (CTAS) statement. It's a fully parallelized operation that creates a new table based on the output of a SELECT statement.
 
-In this exercise, the CTAS feature is used to create a table in SQL Data Warehouse based on the external table defined in an earlier step. It not only creates tables but also loads data in the table obtained in the select statement.
+In this exercise, the CTAS statement is used to create a table in SQL Data Warehouse that's based on the external table that you defined earlier. CTAS doesn't just create tables. It also loads data obtained via the SELECT statement.
 
-1. Clear the query window and execute the following statement to create a table in SQL Data Warehouse:
+- Clear the query window and run this statement to create a table in SQL Data Warehouse:
 
     ```sql
     CREATE TABLE [cso].[Transaction]
@@ -161,6 +159,6 @@ In this exercise, the CTAS feature is used to create a table in SQL Data Warehou
     OPTION (LABEL = 'CTAS : Load [cso].[Transaction]');
     ```
 
-- _DISTRIBUTION_ `HASH ( distribution_column_name ) | ROUND_ROBIN | REPLICATE`. The CTAS statement requires a distribution option and doesn't have default values. The above table is created using the `HASH` distribution method on the `TransactionId` column.
+   - DISTRIBUTION = `[ HASH ( distribution_column_name ) | ROUND_ROBIN | REPLICATE ]`. The CTAS statement requires a distribution option. This option doesn't have a default value. The table in this example is created by using the `HASH` distribution method on the `TransactionId` column.
 
-- _LABEL_. This option labels the query, which helps to easily identify the query.
+   - LABEL. This option labels the query, which makes it easy to identify.

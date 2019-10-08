@@ -1,0 +1,1 @@
+In this module, you learned about the machine learning pipeline and how the Azure Machine Learning service's AutoML can automate some of the time-consuming parts. You used Python code that calls the AutoML service to find the best model for your experiment. Then you tested the model by using Python code.

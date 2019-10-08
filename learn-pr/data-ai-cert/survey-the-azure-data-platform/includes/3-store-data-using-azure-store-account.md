@@ -1,28 +1,34 @@
-Azure storage accounts are the base storage type used within Microsoft Azure.  Azure Storage offers a massively scalable object store for data objects and file system services for the cloud. It can also provide a messaging store for reliable messaging, or act as a NoSQL store. The four configuration options available include:
+Azure Storage accounts are the base storage type within Azure. Azure Storage offers a very scalable object store for data objects and file system services in the cloud. It can also provide a messaging store for reliable messaging, or it can act as a NoSQL store. 
 
-- **Azure Blobs**: A massively scalable object store for text and binary data.
-- **Azure Files**: Managed file shares for cloud or on-premises deployments.
-- **Azure Queues**: A messaging store for reliable messaging between application components.
-- **Azure Tables**: A NoSQL store for schema-less storage of structured data.
+Azure Storage offers four configuration options:
 
-Azure storage can be the basis for storage when provisioning a data platform technology such as Azure Data Lake Storage and HDInsight. However, it can also be provisioned for standalone use such as an Azure BLOB Store that is either provisioned as standard storage in the form of magnetic disk storage, or premium storage in the form of solid-state drives (SSD). Azure BLOB store is what we will focus on in our definitions that follow.
+- **Azure Blob**: A scalable object store for text and binary data
+- **Azure Files**: Managed file shares for cloud or on-premises deployments
+- **Azure Queue**: A messaging store for reliable messaging between application components
+- **Azure Table**: A NoSQL store for no-schema storage of structured data
 
-## When to Use It
+You can use Azure Storage as the storage basis when you're provisioning a data platform technology such as Azure Data Lake Storage and HDInsight. But you can also provision Azure Storage for standalone use. For example, you provision an Azure Blob store either as standard storage in the form of magnetic disk storage or as premium storage in the form of solid-state drives (SSDs). 
 
-If your business scenario is to provision a data store that will store data, but not query it, then creating a storage account configured as a BLOB store is the cheapest option for storing data and work very well with images and unstructured data. In short, if you want to store data in Azure in the cheapest way. Azure BLOB store is the cheapest way to achieve this.
+The following definitions focus on Azure Blob storage.
 
-## Key Features
+## When to use Blob storage
 
-Azure storage accounts are scalable and secure, durable and highly available. Microsoft Azure handles hardware maintenance, updates, and critical issues for you and provides SDKs for Azure Storage in a variety of languages -- .NET, Java, Node.js, Python, PHP, Ruby, Go, and others -- as well as a mature REST API. Azure Storage supports scripting in Azure PowerShell or Azure CLI.
+If you need to provision a data store that will store but not query data, your cheapest option is to set up a storage account as a Blob store. Blob storage works well with images and unstructured data, and it's the cheapest way to store data in Azure.
 
-## Ingesting Data
+## Key features 
 
-To ingest data, a Data Engineer can use either the Azure Data Factory, Azure Storage Explorer or the AzCopy Tool, PowerShell, or Visual Studio.  To import file sizes above 2Gb using the File Upload feature, Data Engineers must use PowerShell or Visual Studio.  The AzCopy Tool supports a maximum file size of 1Tb and will automatically split into multiple files if the data file exceeds 200Gb.
+Azure Storage accounts are scalable and secure, durable, and highly available. Azure handles your hardware maintenance, updates, and critical issues. It also provides REST APIs and SDKs for Azure Storage in various languages. Supported languages include .NET, Java, Node.js, Python, PHP, Ruby, and Go. Azure Storage also supports scripting in Azure PowerShell and the Azure CLI.
 
-## Querying Data
+## Data ingestion
 
-Creating a storage account as a Blob means that you cannot query the data directly.  If you need to query it, then you either need to move the data to a store that can support querying or configure the Azure Storage Account for data lake storage account.
+To ingest data into your system, use Azure Data Factory, Storage Explorer, the AzCopy tool, PowerShell, or Visual Studio. If you use the File Upload feature to import file sizes above 2 GB, use PowerShell or Visual Studio. AzCopy supports a maximum file size of 1 TB and automatically splits data files that exceed 200 GB.
 
-## Securing Data
+## Queries
 
-All data written to Azure Storage is encrypted by the service. Azure Storage also provides you with fine-grained control over who has access to your data using keys or Shared Access Signatures. There is also a permissions model using Resource Manager Role-Based Access Control (RBAC), where you can assign roles to users, groups, or applications and set permissions.
+If you create a storage account as a Blob store, you can't query the data directly. To query it, either move the data to a store that supports queries or set up the Azure Storage account for a data lake storage account.
+
+## Data security
+
+Azure Storage encrypts all data that's written to it. Azure Storage also provides you with fine-grained control over who has access to your data. You'll secure the data by using keys or shared access signatures. 
+
+Azure Resource Manager provides a permissions model that uses role-based access control (RBAC). Use this functionality to set permissions and assign roles to users, groups, or applications.

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.choose-azure-data-science-option.dsvm
+title: Data Science Virtual Machine
+metadata:
+  title: Data Science Virtual Machine
+  description: Data Science Virtual Machine
+  ms.date: 01/31/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-dsvm.md)]

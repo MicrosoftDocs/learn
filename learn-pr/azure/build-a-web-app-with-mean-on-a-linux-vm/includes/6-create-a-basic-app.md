@@ -183,12 +183,12 @@ You're now back at your Cloud Shell session.
 
     This code creates four routes for the application. Here's a brief overview of each.
 
-    | HTTP verb | Endpoint      | Description                                                                                                           |
-    |-----------|---------------|-----------------------------------------------------------------------------------------------------------------------|
-    | GET       | `/book`       | Retrieves all books from the database.                                                                                |
-    | POST      | `/book`       | Creates a `Book` object based on the fields the user provided on the web form and writes that object to the database. |
-    | DELETE    | `/book/:isbn` | Deletes the book as identified by its ISBN from the database.                                                         |
-    | GET       | `*`           | Returns the index page when no other route is matched.                                                                |
+    | HTTP verb | Endpoint | Description |
+    |---|---|---|
+    | GET | `/book` | Retrieves all books from the database. |
+    | POST | `/book` | Creates a `Book` object based on the fields the user provided on the web form and writes that object to the database. |
+    | DELETE | `/book/:isbn` | Deletes the book as identified by its ISBN from the database. |
+    | GET | `*` | Returns the index page when no other route is matched. |
 
     Express can serve up HTTP responses directly in the route handling code or it can serve up static content from files. This code shows both. The first three routes return JSON data for book API requests. The fourth route (the default case) returns the contents of the index file, `index.html`.
 

@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.azure.optimize-blob-storage-costs
+metadata:
+  title: Optimize storage performance and costs using Azure Blob storage tiers
+  description: Learn what the different storage tiers are for blob storage and how they can improve performance and reduce costs.
+  ms.date: 04/10/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Optimize storage performance and costs using Blob storage tiers
+summary: Compare storage tiers and assign appropriate levels for data types.  Use Azure tools and code to retrieve and set storage tier for accounts and blobs.
+abstract: | 
+  In this module, you will:
+  - Describe the key features of each Azure Blob Storage tier
+  - Determine appropriate use cases for each storage tier
+  - Use tools and code to configure the storage tier for resources in Azure Storage
+prerequisites: | 
+  - Basic familiarity with Azure storage and Blob objects
+  - Experience in basic Azure web app development and deployment
+iconUrl: /learn/achievements/optimize-blob-storage-costs.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.azure.optimize-blob-storage-costs.1-introduction
+- learn.azure.optimize-blob-storage-costs.2-design-a-strategy-for-using-tiered-storage
+- learn.azure.optimize-blob-storage-costs.3-manage-tiered-storage-using-azure-tools
+- learn.azure.optimize-blob-storage-costs.4-exercise-manage-tiered-storage-using-azure-cli
+- learn.azure.optimize-blob-storage-costs.5-manage-tiered-storage-in-app-code
+- learn.azure.optimize-blob-storage-costs.6-exercise-manage-tiered-storage-using-asp.net-core-apps
+- learn.azure.optimize-blob-storage-costs.7-summary
+badge:
+  uid: learn.azure.optimize-blob-storage-costs.badge

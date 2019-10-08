@@ -28,7 +28,7 @@ Once you are logged into the Azure portal, we can start exploring things. In the
 
 1. Under **Recommended**, click **Windows Server**. A new **Windows Server** blade appears to the right.
 
-1. To the right of the **Pin** icon in the blade's title bar, click the **Maximize** icon (it looks like a simple empty square or box). The Windows Server blade now fills the screen, except for the left-hand pane. Scroll down the list to see all of the Windows Server images available.
+1. To the right of the **Pin blade to dashboard** icon in the blade's title bar, click the **Maximize** icon (it looks like a simple empty square or box). The Windows Server blade now fills the screen, except for the left-hand pane. Scroll down the list to see all of the Windows Server images available.
 
 1. Optionally, you can click the **Restore** icon (similar to the Maximize icon, a simple empty square or box with another one on top) to return to the previous blade view.
 

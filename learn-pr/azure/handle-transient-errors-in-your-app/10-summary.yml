@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.handle-transient-errors-in-your-app.10-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 04/10/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/10-summary.md)]

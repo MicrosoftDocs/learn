@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.responsible-ai-guiding-principles.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: A knowledge check for the identify guiding principles for responsible AI in your business module.
+  ms.date: 04/26/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-knowledge-check.md)] 
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "An expert suggests using a pool of training data that has been gathered from observations of human workers performing tasks and making decisions. What is an unintended consequence that must be anticipated?"
+    choices:
+    - content: "AI will replicate human biases and prejudices that result in the unfair treatment of people of a particular race or gender."
+      isCorrect: true
+      explanation: "Correct. This is a definite concern as this problem has already been encountered with AI simply replicating the biases exemplified by the human workers it was modeled to learn from."
+    - content: "AI cannot learn the subtleties of human opinion; therefore, AI will make decisions purely based on data criteria."
+      isCorrect: false
+      explanation: "Incorrect. While the intended goal of AI is to make data driven decisions, it has been proven that AI can replicate human traits such as favoritism."
+    - content: "The transparent nature of AI will result in decreased intelligibility concerning performance-based decision making."
+      isCorrect: false
+      explanation: "Incorrect. One of the established guiding principles for AI is a commitment to transparency, which increases the intelligibility for stakeholders."
+    - content: "AI has no level of accountability; thus, poor qualitative decisions can occur without any sense of recourse."
+      isCorrect: false
+      explanation: "Incorrect. Accountability is one of the six guiding principles set forth by Microsoft to guide AI deployment and use."
+  - content: "Which one of the Microsoft guiding principles for AI can be addressed by multi-party computation (MPC)?"
+    choices:
+    - content: "Fairness"
+      isCorrect: false
+      explanation: "Incorrect. Fairness involves the elimination of biasness or favoritism."
+    - content: "Privacy and Security"
+      isCorrect: true
+      explanation: "Correct. MPC allows a set of parties to share encrypted data and algorithms with one another while preserving input privacy at all times."
+    - content: "Inclusiveness"
+      isCorrect: false
+      explanation: "Incorrect. While MPC does involve the sharing of data between multiple parties, its real intention is to enforce privacy of data."
+    - content: "Accountability"
+      isCorrect: false
+      explanation: "Incorrect. Accountability concerns the establishment of industry standards, best practices, and review boards."
+  - content: "A company uses a decentralized organizational model when it comes to AI implementation. What might be a disadvantage of their decentralized model when compared to a centralized model?"
+    choices:
+    - content: "Their ability to rapidly innovate is extremely inhibited."
+      isCorrect: false
+      explanation: "Incorrect. Decentralized models are often nimble and enable rapid innovation."
+    - content: "They can’t utilize the cross sharing of knowledge."
+      isCorrect: true
+      explanation: "Correct. The siloed nature of a decentralized model limits the sharing of knowledge throughout the organization."
+    - content: "They lack the ability to create standards at the grassroots level."
+      isCorrect: false
+      explanation: "Incorrect. Creating standards at the grassroots level is in fact a strength of the decentralized model."
+    - content: "The nature of decentralization can constrain innovation."
+      isCorrect: false
+      explanation: "Incorrect. It is the centralized model that can constrain innovation due to a top-down approach."
+  - content: "You want to implement a governance approach to AI within your organization that will incorporate a diverse array of outside experts and senior leaders from within the company. What will be part of your governance approach?"
+    choices:
+    - content: "Ethics committee"
+      isCorrect: true
+      explanation: "Correct. An ethics committee is made up of people within and outside of the organization."
+    - content: "Ethics office"
+      isCorrect: false
+      explanation: "Incorrect. An ethics office only consists of members within the organization."
+    - content: "First-party AI system"
+      isCorrect: false
+      explanation: "Incorrect. A first-party AI systems is not a governance approach."
+    - content: "Third-party AI system"
+      isCorrect: false
+      explanation: "Incorrect. A third-party AI system is not a governance approach."

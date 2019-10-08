@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.support-concurrency-blob-storage
+metadata:
+  title: Support concurrency in Blob storage apps with ETags and blob leases
+  description: In this module you will learn how to implement application code to manage concurrency in blob storage. 
+  ms.date: 04/06/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.learn-contact: nickwalk
+title: Support concurrency in Blob storage apps with ETags and blob leases
+summary: Develop apps that properly support concurrency against data in Azure Blob storage
+abstract: |
+  In this module, you will:
+  - Identify issues associated with concurrency in multi-user applications
+  - Identify the three concurrency strategies used for data in Blob storage, along with their tradeoffs
+  - Implement optimistic concurrency with blobs using ETags
+  - Implement pessimistic concurrency with blobs using blob leases
+prerequisites: |
+  - Experience editing C# .NET code at a beginner level
+iconUrl: /learn/achievements/support-concurrency-blob-storage.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-storage
+units:
+- learn.support-concurrency-blob-storage.1-introduction
+- learn.support-concurrency-blob-storage.2-last-writer-wins
+- learn.support-concurrency-blob-storage.3-exercise-observe-data-loss
+- learn.support-concurrency-blob-storage.4-implementing-optimistic-concurrency
+- learn.support-concurrency-blob-storage.5-exercise-optimistic-concurrency
+- learn.support-concurrency-blob-storage.6-implementing-pessimistic-concurrency
+- learn.support-concurrency-blob-storage.7-exercise-pessimistic-concurrency
+- learn.support-concurrency-blob-storage.8-summary
+badge:
+  uid: learn.support-concurrency-blob-storage.badge

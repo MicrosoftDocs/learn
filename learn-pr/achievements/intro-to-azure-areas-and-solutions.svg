@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Azure SFA Generalist/introduction-to-azure</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-6.7%" y="-8.5%" width="113.3%" height="117.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.100769928 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Azure-SFA-Generalist-1" transform="translate(-50.000000, -660.000000)">
+            <g id="Azure-SFA-Generalist/introduction-to-azure" transform="translate(50.000000, 660.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Group-2" mask="url(#mask-2)" fill="#FFFFFF">
+                        <g transform="translate(10.000000, 24.000000)" id="Path">
+                            <path d="M49.9027949,58.2041235 C49.9027949,52.480039 45.2905784,47.8678225 39.566494,47.8678225 C45.2905784,47.8678225 49.9027949,43.255606 49.9027949,37.5315216 C49.9027949,43.255606 54.5150114,47.8678225 60.2390959,47.8678225 C54.5150114,47.8678225 49.9027949,52.480039 49.9027949,58.2041235 Z" opacity="0.5"></path>
+                            <path d="M22.2418567,12.0663365 C16.0956983,12.0663365 11.143393,7.11403124 11.143393,0.967872767 C11.143393,7.11403124 6.19108773,12.0663365 0.0449292629,12.0663365 C6.19108773,12.0663365 11.143393,17.0186418 11.143393,23.1648002 C11.143393,17.0186418 16.0956983,12.0663365 22.2418567,12.0663365 Z" opacity="0.800000012"></path>
+                            <path d="M71.3131573,11.1338211 C66.5237538,11.1338211 62.6646623,7.27472959 62.6646623,2.48532612 C62.6646623,7.27472959 58.8055708,11.1338211 54.0161673,11.1338211 C58.8055708,11.1338211 62.6646623,14.9929126 62.6646623,19.7823161 C62.732227,14.9929126 66.5912786,11.1338211 71.3131573,11.1338211 Z"></path>
+                        </g>
+                    </g>
+                    <path d="M50.5653836,0.0668117466 C22.8917962,-1.37321138 0,20.6522852 0,48.0012959 C0,48.7738798 0.0800012849,49.5236061 0.116573301,50.2870469 C1.13373249,28.7461295 16.3134049,10.9012715 36.572016,5.94347756 C42.3755377,4.52402619 48.000771,8.83723833 48.000771,14.8121914 L48.000771,96.0020669 C75.3749249,96.0020669 97.3981358,73.0759844 95.9306836,45.3909683 C94.6483773,21.1642935 74.7920584,1.3285463 50.5653836,0.0668117466" id="Fill-8" fill="#000000" opacity="0.102748326" mask="url(#mask-2)"></path>
+                    <g id="Azure-black" filter="url(#filter-3)" mask="url(#mask-2)" fill="#FFC262">
+                        <g transform="translate(19.000000, 20.562500)" id="Path">
+                            <polygon points="13.70625 46.6828125 60 46.6875 35.0671875 3.4734375 27.4734375 24.3375 42.05625 41.6859375"></polygon>
+                            <polygon points="33.0796875 0.1875 15.2578125 15.140625 0 41.56875 13.7625 41.56875 13.7625 41.6109375"></polygon>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

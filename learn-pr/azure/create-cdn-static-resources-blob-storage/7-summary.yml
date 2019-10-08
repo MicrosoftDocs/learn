@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-content-delivery-network-azure-cdn-blob-services.7-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 4/30/2019
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Which of the following is NOT a valid Azure CDN type?"
+    choices:
+    - content: "Standard Microsoft"
+      isCorrect: false
+      explanation: "Standard Microsoft is a valid Azure CDN type."
+    - content: "Standard Akamai"
+      isCorrect: false
+      explanation: "Standard Akamai is a valid Azure CDN type."
+    - content: "Premium Akamai"
+      isCorrect: true
+      explanation: "Premium Akamai is not a valid Azure CDN type. Valid types are Standard Microsoft, Standard Akamai, Standard Verizon, and Premium Verizon"
+    
+  - content: "If a CDN does not have a copy of a user-requested file in an edge server at a Point of Presence (POP), what happens next?"
+    choices:
+    - content: "The edge server checks with other edge servers at the same POP. If the file is still not present, it then requests the file from the origin server, returns the file to the user and caches the file."
+      isCorrect: true
+      explanation: "Correct. The edge server checks with other edge servers at the same POP. If the file is still not present, it then requests the file from the origin server, returns the file to the user and caches the file."
+    - content: "The POP passes the request to the next closest POP."
+      isCorrect: false
+      explanation: "If the file is not on any The POP requests the file directly from the origin server. It does not check with the next nearest POP."
+    - content: "The POP replies with a File not Found message."
+      isCorrect: false
+      explanation: "The edge server checks with other edge servers at the same POP. If the file is still not present, it then requests the file from the origin server, returns the file to the user and caches the file."
+   
+  - content: "Which caching setting results in inefficient caching behavour with queries that use unique query strings?"
+    choices:
+    - content: "Ignore query strings"
+      isCorrect: false
+      explanation: "Incorrect. Cache every unique URL is inefficient for caching queries that use unique query strings."
+    - content: "Bypass caching for query strings"
+      isCorrect: false
+      explanation: "Incorrect. Cache every unique URL is inefficient for caching queries that use unique query strings."
+    - content: "Cache every unique URL"
+      isCorrect: true
+      explanation: "Correct. Cache every unique URL is inefficient for caching queries that use unique query strings."

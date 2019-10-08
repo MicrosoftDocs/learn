@@ -11,5 +11,3 @@ In this module, you will:
 - Verify access to resources for yourself and others
 - Grant access to resources
 - View activity logs of RBAC changes
-
-[!include[](../../../includes/azure-lab-environment-not-available.md)]

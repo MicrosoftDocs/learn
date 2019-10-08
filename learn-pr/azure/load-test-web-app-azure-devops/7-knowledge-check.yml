@@ -15,39 +15,39 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "What is a key performance test feature in Azure DevOps:"
+  - content: "Which of the following is a key performance test feature in Azure DevOps?"
     choices:
-    - content: "Azure DevOps performance test can test policies for all your Azure services."
+    - content: "Azure DevOps performance tests can test policies for all your Azure services."
       isCorrect: false
-      explanation: "Azure DevOps performance test cannot test policies for all your Azure services."
-    - content: "Azure DevOps performance test can be configured to simulate a specific mix of user browser types."
+      explanation: "Azure DevOps performance tests can't test policies for Azure services."
+    - content: "Azure DevOps performance tests can be configured to simulate a specific mix of user browser types."
       isCorrect: true
-      explanation: "Azure DevOps performance test can be configured to simulate a specific mix of user browser types."
-    - content: "Azure DevOps performance test can be configured across multiple platforms."
+      explanation: "Correct. Azure DevOps performance tests can be configured to simulate a specific mix of user browser types."
+    - content: "Azure DevOps performance tests can be configured across multiple platforms."
       isCorrect: false
-      explanation: "Azure DevOps performance test cannot be configured across multiple platforms."
+      explanation: "Azure DevOps performance tests can't be configured across multiple platforms."
     
   - content: "What metrics are captured after a performance test is successfully completed?"
     choices:
-    - content: "Duration, success rate, availability"
+    - content: "Duration, success rate, and availability."
       isCorrect: false
-      explanation: "Duration, success rate, and availability are not captured as a part of the successful performance test."
-    - content: "Average response time, requests per second, and user load"
+      explanation: "Duration, success rate, and availability aren't captured during performance tests."
+    - content: "Average response time, requests per second, and user load."
       isCorrect: true
-      explanation: "After a successful test run, the details chart will include the average response time, requests per second, and user load."
-    - content: "Runtime, throughput, and number of requests"
+      explanation: "Correct. After a successful test run, the details chart will include the average response time, requests per second, and user load."
+    - content: "Runtime, throughput, and number of requests."
       isCorrect: false
-      explanation: "Runtime, Throughput, and Number of requests are not captured as a part of the successful performance test."
+      explanation: "Runtime, throughput, and number of requests aren't captured during performance tests."
     
-  - content: "You have increased the allowed number of users accessing your web app at the same time from 10 users to 20 users. How do you verify if this change this has impacted performance?"
+  - content: "You've increased the number of users allowed to access your web app at the same time from 10 users to 20 users. How do you test if this change has affected performance?"
     choices:
-    - content: "Run individual tests and manually compare results"
+    - content: "Run individual tests and manually compare the results."
       isCorrect: false
-      explanation: "Azure DevOps lets you compare results from multiple test runs and highlights how the average response time changed between the two test runs."
-    - content: "Export test results to Application Insights to compare results"
+      explanation: "Azure DevOps lets you compare the results from multiple test runs and highlights how the average response time changed between the test runs."
+    - content: "Export test results to Application Insights to compare the results."
       isCorrect: false
-      explanation: "Azure DevOps lets you compare results from multiple test runs and highlights how the average response time changed between the two test runs."
-    - content: "Compare two runs using Azure DevOps"
+      explanation: "Azure DevOps lets you compare the results from multiple test runs and highlights how the average response time changed between the test runs."
+    - content: "Compare two test runs by using Azure DevOps."
       isCorrect: true
-      explanation: "Azure DevOps lets you compare results from multiple test runs and highlights how the average response time changed between the two test runs."
+      explanation: "Correct. Azure DevOps lets you compare the results from multiple test runs and highlights how the average response time changed between the test runs."
     

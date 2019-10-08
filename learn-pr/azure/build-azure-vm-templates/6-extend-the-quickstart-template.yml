@@ -25,5 +25,4 @@ tasks:
   azure:
     resource:
       type: "Microsoft.Network/virtualNetworks"
-      name: MyVNET
   hint: "Run the `az group deployment create` command as shown to create your VM deployment."

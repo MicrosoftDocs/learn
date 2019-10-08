@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.introduction-to-azure-areas-and-solutions.3-the-unique-value-of-azure
+title: The unique value of Azure
+metadata:
+  title: The unique value of Azure
+  description: .
+  ms.date: 01/31/2019
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-the-unique-value-of-azure.md)]

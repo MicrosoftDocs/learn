@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-intro-mobile-app-service.how-mobile-apps-works
+title: How Mobile App Service Works
+
+metadata:
+  title: How Mobile App Service Works
+  description: How Mobile App Service Works
+  ms.date: 4/26/2019
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-how-mobile-apps-work.md)]

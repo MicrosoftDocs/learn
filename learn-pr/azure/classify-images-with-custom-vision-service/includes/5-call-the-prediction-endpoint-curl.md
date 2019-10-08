@@ -6,7 +6,7 @@ In the last exercise, we tested our trained model using the **Quick Test** featu
 
     ![Screenshot of the top bar of the Artworks project with the Performance tab highlighted](../media/5-performance-tab.png)
 
-1. Select **Make default** to make sure the latest iteration of the model is the default iteration.
+1. Select **Publish** to publish the latest iteration.
 
 1. Select **Prediction URL**. This displays a dialog of the information we need to make our calls. 
 

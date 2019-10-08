@@ -5,25 +5,29 @@ Every SQL query consists of a SELECT clause and optional FROM and WHERE clauses.
 
 A SQL query has the following format:
 
-    SELECT <select_list>
-    [FROM <optional_from_specification>]
-    [WHERE <optional_filter_condition>]
-    [ORDER BY <optional_sort_specification>]
-    [JOIN <optional_join_specification>]
+```sql
+SELECT <select_list>
+[FROM <optional_from_specification>]
+[WHERE <optional_filter_condition>]
+[ORDER BY <optional_sort_specification>]
+[JOIN <optional_join_specification>]
+```
 
 ## SELECT clause
 
 The SELECT clause determines the type of values that will be produced when the query is executed. A value of `SELECT *` indicates that the entire JSON document is returned.
 
 **Query**
-```
+
+```sql
 SELECT *
 FROM Products p
 WHERE p.id ="1"
 ```
 
 **Returns**
-```
+
+```json
 [
     {
         "id": "1",
@@ -52,17 +56,19 @@ WHERE p.id ="1"
 Or, you can limit the output to include only certain properties by including a list of properties in the SELECT clause. In the following query, only the ID, manufacturer, and product description are returned.
 
 **Query**
-```
-SELECT 
-    p.id, 
-    p.manufacturer, 
+
+```sql
+SELECT
+    p.id,
+    p.manufacturer,
     p.description
 FROM Products p
 WHERE p.id ="1"
 ```
 
 **Returns**
-```
+
+```json
 [
     {
         "id": "1",
@@ -88,14 +94,15 @@ All properties that need to be referenced must be fully qualified. In the absenc
 The source can also be reduced to a smaller subset. For instance, to enumerate only a subtree in each document, the subroot could then become the source, as shown in the following example:
 
 **Query**
-```
-SELECT * 
+
+```sql
+SELECT *
 FROM Products.shipping
 ```
 
-**Results**  
+**Results**
 
-```
+```json
 [
     {
         "weight": 1,
@@ -120,15 +127,19 @@ Although the above example used an array as the source, an object could also be 
 
 **Query**
 
-    SELECT * 
-    FROM Products.shipping.weight
+```sql
+SELECT *
+FROM Products.shipping.weight
+```
 
 **Results**
 
-    [
-        1,
-        2
-    ]
+```json
+[
+    1,
+    2
+]
+```
 
 ## WHERE clause
 The WHERE clause specifies the conditions that the JSON documents provided by the source must satisfy in order to be included as part of the result. Any JSON document must evaluate the specified conditions to **true** to be considered for the result. The WHERE clause is optional.
@@ -137,17 +148,21 @@ The following query requests documents that contain an ID whose value is 1:
 
 **Query**
 
-    SELECT p.description
-    FROM Products p 
-    WHERE p.id = "1"
+```sql
+SELECT p.description
+FROM Products p
+WHERE p.id = "1"
+```
 
 **Results**
 
-    [
-        {
-            "description": "Quick dry crew neck t-shirt"
-        }
-    ]
+```json
+[
+    {
+        "description": "Quick dry crew neck t-shirt"
+    }
+]
+```
 
 ## ORDER BY clause
 
@@ -157,13 +172,15 @@ The following ORDER BY query returns the price, description, and product ID for 
 
 **Query**
 
-    SELECT p.price, p.description, p.productId
-    FROM Products p
-    ORDER BY p.price ASC
+```sql
+SELECT p.price, p.description, p.productId
+FROM Products p
+ORDER BY p.price ASC
+```
 
 **Results**
 
-```
+```json
 [
     {
         "price": "14.99",
@@ -180,32 +197,36 @@ The following ORDER BY query returns the price, description, and product ID for 
 
 ## JOIN clause
 
-The JOIN clause enables you to perform inner joins with the document and the document subroots. So in the product database, for example, you can join the documents with the shipping data.  
+The JOIN clause enables you to perform inner joins with the document and the document subroots. So in the product database, for example, you can join the documents with the shipping data.
 
 In the following query, the product IDs are returned for each product that has a shipping method. If you added a third product that didn't have a shipping property, the result would be the same because the third item would be excluded for not having a shipping property.
 
 **Query**
 
-    SELECT p.productId
-    FROM Products p
-    JOIN p.shipping
+```sql
+SELECT p.productId
+FROM Products p
+JOIN p.shipping
+```
 
 **Results**
 
-    [
-        {
-            "productId": "33218896"
-        },
-        {
-            "productId": "33218897"
-        }
-    ]
+```json
+[
+    {
+        "productId": "33218896"
+    },
+    {
+        "productId": "33218897"
+    }
+]
+```
 
 ## Geospatial queries
 
 Geospatial queries enable you to perform spatial queries using GeoJSON Points. Using the coordinates in the database, you can calculate the distance between two points and determine whether a Point, Polygon, or LineString is within another Point, Polygon, or LineString.
 
-For product catalog data, this would enable your users to enter their location information and determine whether there were any stores within a 50-mile radius that have the item they're looking for. 
+For product catalog data, this would enable your users to enter their location information and determine whether there were any stores within a 50-mile radius that have the item they're looking for.
 
 ## Summary
 

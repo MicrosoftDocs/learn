@@ -2,63 +2,62 @@
 uid: learn.performing-exploratory-data-analysis-with-azure-databricks.4-knowledge-check
 metadata:
   title: Knowledge check
-  description: Test your knowledge by answering questions about skills you learned from the lab
+  description: Test your knowledge by answering questions about skills you learned from the lab.
   ms.date: 02/20/2019
-  author: barlanmsft
+  author: barlan
   ms.author: barlan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Knowledge Check
+title: Knowledge check
 durationInMinutes: 5
 content: |
   [!include[](includes/4-knowledge-check.md)]
 quiz:
   questions:
-    - content: 'What file types can be used to create a table using the Workspace UI?'
+    - content: "What file types can be used to create a table by using the workspace UI?"
       choices:
         - content: CSV
           explanation: Multiple file types are supported, not just CSV. 
           isCorrect: false
         - content: JSON
           isCorrect: false
-          explanation:  Multiple file types are supported, not just JSON. 
+          explanation: Multiple file types are supported, not just JSON. 
         - content: Avro
           isCorrect: false
-          explanation:  Multiple file types are supported, not just Avro.
+          explanation: Multiple file types are supported, not just Avro.
         - content: All of the above.
           isCorrect: true
-          explanation:  CSV, JSON and Avro file types are supported.   
-    - content: 'Which Python statement will yield a Spark dataframe from the query?'
+          explanation: Correct. The CSV, JSON, and Avro file types are supported.   
+    - content: "Which Python statement will yield a Spark DataFrame from the query?"
       choices:
         - content: df = spark.sql("SELECT * FROM usedcars")
-          explanation: After executing this line, the variable df will refer to a Spark dataframe. 
+          explanation: Correct. After this line is executed, the variable df will refer to a Spark DataFrame. 
           isCorrect: true
         - content: df = "SELECT * FROM usedcars".todf()
           isCorrect: false
-          explanation: This is not valid syntax.
+          explanation: This syntax isn't valid.
         - content: df = spark.sql("SELECT * FROM usedcars").toPandas()
           isCorrect: false
-          explanation: This will produce a Pandas dataframe, not a Spark dataframe.
-    - content: 'What method is used to calculate the correlation on all features in a Pandas dataframe?'
+          explanation: This syntax will produce a Pandas DataFrame, not a Spark DataFrame.
+    - content: "Which method is used to calculate the correlation on all features in a Pandas DataFrame?"
       choices:
         - content: correlation(df)
           explanation: This syntax is invalid.
           isCorrect: false
         - content: df.correlation()
           isCorrect: false
-          explanation: This is not the correct method name.
+          explanation: This method isn't the correct one for calculating the correlation on all features in a Pandas DataFrame.
         - content: df.corr()
           isCorrect: true
-          explanation: The corr() method is invoked on a Pandas dataframe is used to calculate the correlation on all features in a Pandas dataframe.
-    - content: 'What method is used in Python cells to display the results as a formatted table or chart visualization?'
+          explanation: Correct. The corr() method is invoked on a Pandas DataFrame to calculate the correlation on all features in the DataFrame.
+    - content: "Which method is used in Python cells to display the results as a formatted table or chart visualization?"
       choices:
         - content: display(df)
-          explanation: This is the correct syntax for rendering the output of the cell as a formatted table or chart.
+          explanation: Correct. This syntax renders the output of the cell as a formatted table or chart.
           isCorrect: true
         - content: df.display()
           isCorrect: false
           explanation: This syntax is invalid.
         - content: print(df)
           isCorrect: false
-          explanation: The print method will display the dataframe as a text only table, but not a formatted table.
-# Even though there is only one markdown (MD) file and this is a text-only unit, keep the Markdown separate in the includes folder so that viewing the source content is a consistent experience.
+          explanation: The print() method displays the DataFrame as a text-only table, not a formatted table.

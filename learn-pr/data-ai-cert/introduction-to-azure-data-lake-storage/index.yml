@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.data-ai.introduction-to-azure-data-lake-storage
 metadata:
-  title: Introduction to Azure Data Lake storage - Learn
-  description: Learn how Azure Data Lake Storage provides a cloud storage service that is highly available, secure, durable, scalable, redundant and brings new efficiencies to processing big data analytics workloads - Learn
+  title: Introduction to Azure Data Lake storage
+  description: Learn how Azure Data Lake Storage provides a cloud storage service that is highly available, secure, durable, scalable, and redundant, and brings new efficiencies to processing big data analytics workloads
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill
@@ -10,15 +10,16 @@ metadata:
   ms.prod: learning-azure
   #ms.learn-contact: smmark
 title: Introduction to Azure Data Lake storage
-summary: Learn how Azure Data Lake Storage provides a cloud storage service that is highly available, secure, durable, scalable, redundant and brings new efficiencies to processing big data analytics workloads.
+summary: Learn how Azure Data Lake Storage provides a cloud storage service that is highly available, secure, durable, scalable, and redundant and brings new efficiencies to processing big data analytics workloads.
 abstract: | 
   In this module you will:
-  - Decide when you should use Azure Data Lake Storage
-  - Create an Azure Storage Account using the portal
-  - Compare Azure Data Lake Store Gen 2 and Azure Blob Storage
-  - Explore the stages for processing Big Data Using Azure Data Lake Store
-  - List the supported open source platforms
+  - Decide when you should use Azure Data Lake Storage Gen2
+  - Create an Azure storage account by using the Azure portal
+  - Compare Azure Data Lake Storage Gen2 and Azure Blob storage
+  - Explore the stages for processing big data by using Azure Data Lake Store
+  - List the supported open-source platforms
 prerequisites: None
+ratingEnabled: true
 iconUrl: /learn/achievements/data-ai/introduction-to-azure-data-lake-storage-badge.svg
 levels:
 - beginner

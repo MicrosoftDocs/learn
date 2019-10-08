@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-content-delivery-network-azure-cdn-blob-services.2-create-a-cdn
+title: Create an Azure CDN
+metadata:
+  title: Create an Azure CDN
+  description: Use an Azure Content Delivery Network to Optimize Website Performance
+  ms.date: 4/30/2019
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-create-a-cdn.md)]

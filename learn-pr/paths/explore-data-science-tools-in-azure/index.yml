@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.data-ai.explore-data-science-tools-in-azure
+metadata:
+  title: Explore AI solution development with data science services in Azure
+  description: Learn the tools available in Azure for data scientists to explore, analyze and process data with machine learning
+  brand: azure
+  ms.date: 03/15/2019
+  author: bcafferky
+  ms.author: brcaffer
+  #ms.learn-contact: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore AI solution development with data science services in Azure
+summary: Learn the tools available in Azure for data scientists to explore, analyze and process data with machine learning.
+prerequisites: None
+iconUrl: /learn/achievements/data-ai/explore-data-science-tools-in-azure-trophy.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure
+- azure-portal
+- azure-machine-learning-service
+- azure-machine-learning-studio
+- azure-data-science-vm
+modules:
+- learn.data-ai.intro-to-data-science-in-azure
+- learn.data-ai.choose-azure-data-science-option
+trophy:
+  uid: learn.data-ai.explore-data-science-tools-in-azure.trophy

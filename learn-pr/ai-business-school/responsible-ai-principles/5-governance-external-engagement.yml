@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.responsible-ai-guiding-principles.governance-external-engagement
+title: Responsible AI - Governance and external engagement 
+metadata:
+  title: Responsible AI - Governance and external engagement 
+  description: Learn how your company can foster responsible and trustworthy AI, both internally and with other organizations. Each company will have their own guiding principles, but ultimately these principles need to be part of a larger responsible AI approach to be effective. To provide oversight and guidance within your organization, we recommend establishing a governance system that is tailored to your organization’s unique characteristics, culture, ethical principles, and level of engagement with AI. Beyond internal governance, we believe you should consider how to foster responsible and trustworthy AI in your industry and throughout society. We all must work together to maximize AI’s potential for positive change.
+  ms.date: 04/26/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-governance-external-engagement.md)] 

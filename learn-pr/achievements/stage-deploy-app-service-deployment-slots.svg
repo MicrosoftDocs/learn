@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Deploy a website to Azure with Managed Hosting/stage-a-website-app-deployment-for-testing-and-rollback-with-app-service-deployment-slots</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-10.3%" y="-12.5%" width="120.5%" height="125.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0982223732 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-10.3%" y="-12.5%" width="120.5%" height="125.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0982223732 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Deploy-a-Website-using-Azure-with-Managed-Hosting" transform="translate(-50.000000, -860.000000)">
+            <g id="Deploy-a-website-to-Azure-with-Managed-Hosting/stage-a-website-app-deployment-for-testing-and-rollback-with-app-service-deployment-slots" transform="translate(50.000000, 860.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Group-2" mask="url(#mask-2)">
+                        <g transform="translate(48.981620, 36.664083) rotate(135.000000) translate(-48.981620, -36.664083) translate(21.981620, 17.164083)">
+                            <path d="M53.2250805,30.0184795 C46.62178,36.62178 39.6533028,37.7195491 35.0519258,38.1217458 C20.8617782,39.3622376 8.35284382,28.8642868 7.11235202,14.6741393 C6.7664012,10.7130409 6.25447829,7.89796964 7.56277337,4.40764177" id="Stroke-4" stroke="#EDF4FB" stroke-width="4" fill="none"></path>
+                            <polygon id="Rectangle" stroke="none" fill="#EDF4FB" fill-rule="nonzero" transform="translate(7.298049, 7.909878) rotate(-21.000000) translate(-7.298049, -7.909878) " points="1.89726185 4.28078228 12.6988355 2.5541161 10.8871479 13.265639"></polygon>
+                        </g>
+                    </g>
+                    <g id="Group-62" mask="url(#mask-2)">
+                        <g transform="translate(6.000000, 40.000000)">
+                            <g id="Browser" filter="url(#filter-3)" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <path d="M2.42471551,31.8658831 C1.09112198,31.8658831 0,30.803687 0,29.5054474 L0,2.36043579 C0,1.0621961 1.09112198,0 2.42471551,0 L36.3707327,0 C37.7043262,0 38.7954482,1.0621961 38.7954482,2.36043579 L38.7954482,29.5054474 C38.7954482,30.803687 37.7043262,31.8658831 36.3707327,31.8658831 L2.42471551,31.8658831" id="Fill-1485" fill="#30404D"></path>
+                                <path d="M3.03089439,30.0955563 C2.36409762,30.0955563 1.81853663,29.5644582 1.81853663,28.9153384 L1.81853663,6.49119842 C1.81853663,5.84207858 2.36409762,5.31098052 3.03089439,5.31098052 L35.7645538,5.31098052 C36.4313506,5.31098052 36.9769116,5.84207858 36.9769116,6.49119842 L36.9769116,28.9153384 C36.9769116,29.5644582 36.4313506,30.0955563 35.7645538,30.0955563 L3.03089439,30.0955563" id="Fill-1486" fill="#30404D"></path>
+                                <path d="M2.42471551,2.65549026 C2.42471551,2.16628994 2.83206772,1.77032684 3.33398383,1.77032684 C3.83650612,1.77032684 4.24325215,2.16628994 4.24325215,2.65549026 C4.24325215,3.14410047 3.83650612,3.54065368 3.33398383,3.54065368 C2.83206772,3.54065368 2.42471551,3.14410047 2.42471551,2.65549026" id="Fill-1487" fill="#DF5142"></path>
+                                <path d="M6.06178878,2.65549026 C6.06178878,2.16628994 6.46914099,1.77032684 6.9710571,1.77032684 C7.47357939,1.77032684 7.88032542,2.16628994 7.88032542,2.65549026 C7.88032542,3.14410047 7.47357939,3.54065368 6.9710571,3.54065368 C6.46914099,3.54065368 6.06178878,3.14410047 6.06178878,2.65549026" id="Fill-1488" fill="#EFB252"></path>
+                                <path d="M9.69886205,2.65549026 C9.69886205,2.16628994 10.1062143,1.77032684 10.6081304,1.77032684 C11.1106527,1.77032684 11.5173987,2.16628994 11.5173987,2.65549026 C11.5173987,3.14410047 11.1106527,3.54065368 10.6081304,3.54065368 C10.1062143,3.54065368 9.69886205,3.14410047 9.69886205,2.65549026" id="Fill-1489" fill="#7CB65A"></path>
+                                <path d="M36.0676433,3.54065368 L15.4575614,3.54065368 C14.9556453,3.54065368 14.5482931,3.14410047 14.5482931,2.65549026 C14.5482931,2.16688005 14.9556453,1.77032684 15.4575614,1.77032684 L36.0676433,1.77032684 C36.5695594,1.77032684 36.9769116,2.16688005 36.9769116,2.65549026 C36.9769116,3.14410047 36.5695594,3.54065368 36.0676433,3.54065368" id="Fill-1490" fill="#697D85"></path>
+                            </g>
+                            <path d="M6,10 L12,10 L12,12 L6,12 C5.44771525,12 5,11.5522847 5,11 L5,11 C5,10.4477153 5.44771525,10 6,10 Z" id="Rectangle" fill="#EFB252" fill-rule="nonzero" opacity="0.800000012"></path>
+                            <rect id="Rectangle" fill="#7CB65A" fill-rule="nonzero" opacity="0.800000012" x="12" y="10" width="5" height="2"></rect>
+                            <path d="M17,10 L32,10 C32.5522847,10 33,10.4477153 33,11 L33,11 C33,11.5522847 32.5522847,12 32,12 L17,12 L17,10 Z" id="Rectangle" fill="#0082BA" fill-rule="nonzero" opacity="0.800000012"></path>
+                            <path d="M6,22 L12,22 L12,24 L6,24 C5.44771525,24 5,23.5522847 5,23 L5,23 C5,22.4477153 5.44771525,22 6,22 Z" id="Rectangle" fill="#DF5142" fill-rule="nonzero" opacity="0.800000012"></path>
+                            <rect id="Rectangle" fill="#7CB65A" fill-rule="nonzero" opacity="0.800000012" x="12" y="22" width="5" height="2"></rect>
+                            <path d="M17,22 L29,22 C29.5522847,22 30,22.4477153 30,23 L30,23 C30,23.5522847 29.5522847,24 29,24 L17,24 L17,22 Z" id="Rectangle" fill="#0082BA" fill-rule="nonzero" opacity="0.800000012"></path>
+                            <path d="M13,14 L17,14 L17,16 L13,16 C12.4477153,16 12,15.5522847 12,15 L12,15 C12,14.4477153 12.4477153,14 13,14 Z" id="Rectangle" fill="#7CB65A" fill-rule="nonzero" opacity="0.800000012"></path>
+                            <path d="M17,14 L29,14 C29.5522847,14 30,14.4477153 30,15 L30,15 C30,15.5522847 29.5522847,16 29,16 L17,16 L17,14 Z" id="Rectangle" fill="#EFB252" fill-rule="nonzero" opacity="0.800000012"></path>
+                            <rect id="Rectangle" fill="#0082BA" fill-rule="nonzero" opacity="0.800000012" x="9" y="18" width="25" height="2"></rect>
+                        </g>
+                    </g>
+                    <g id="Group-62" mask="url(#mask-2)">
+                        <g transform="translate(54.000000, 40.000000)">
+                            <g id="Browser" filter="url(#filter-4)" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <path d="M2.42471551,31.8658831 C1.09112198,31.8658831 0,30.803687 0,29.5054474 L0,2.36043579 C0,1.0621961 1.09112198,0 2.42471551,0 L36.3707327,0 C37.7043262,0 38.7954482,1.0621961 38.7954482,2.36043579 L38.7954482,29.5054474 C38.7954482,30.803687 37.7043262,31.8658831 36.3707327,31.8658831 L2.42471551,31.8658831" id="Fill-1485" fill="#30404D"></path>
+                                <path d="M3.03089439,30.0955563 C2.36409762,30.0955563 1.81853663,29.5644582 1.81853663,28.9153384 L1.81853663,6.49119842 C1.81853663,5.84207858 2.36409762,5.31098052 3.03089439,5.31098052 L35.7645538,5.31098052 C36.4313506,5.31098052 36.9769116,5.84207858 36.9769116,6.49119842 L36.9769116,28.9153384 C36.9769116,29.5644582 36.4313506,30.0955563 35.7645538,30.0955563 L3.03089439,30.0955563" id="Fill-1486" fill="#E1E4E1"></path>
+                                <path d="M2.42471551,2.65549026 C2.42471551,2.16628994 2.83206772,1.77032684 3.33398383,1.77032684 C3.83650612,1.77032684 4.24325215,2.16628994 4.24325215,2.65549026 C4.24325215,3.14410047 3.83650612,3.54065368 3.33398383,3.54065368 C2.83206772,3.54065368 2.42471551,3.14410047 2.42471551,2.65549026" id="Fill-1487" fill="#DF5142"></path>
+                                <path d="M6.06178878,2.65549026 C6.06178878,2.16628994 6.46914099,1.77032684 6.9710571,1.77032684 C7.47357939,1.77032684 7.88032542,2.16628994 7.88032542,2.65549026 C7.88032542,3.14410047 7.47357939,3.54065368 6.9710571,3.54065368 C6.46914099,3.54065368 6.06178878,3.14410047 6.06178878,2.65549026" id="Fill-1488" fill="#EFB252"></path>
+                                <path d="M9.69886205,2.65549026 C9.69886205,2.16628994 10.1062143,1.77032684 10.6081304,1.77032684 C11.1106527,1.77032684 11.5173987,2.16628994 11.5173987,2.65549026 C11.5173987,3.14410047 11.1106527,3.54065368 10.6081304,3.54065368 C10.1062143,3.54065368 9.69886205,3.14410047 9.69886205,2.65549026" id="Fill-1489" fill="#7CB65A"></path>
+                                <path d="M36.0676433,3.54065368 L15.4575614,3.54065368 C14.9556453,3.54065368 14.5482931,3.14410047 14.5482931,2.65549026 C14.5482931,2.16688005 14.9556453,1.77032684 15.4575614,1.77032684 L36.0676433,1.77032684 C36.5695594,1.77032684 36.9769116,2.16688005 36.9769116,2.65549026 C36.9769116,3.14410047 36.5695594,3.54065368 36.0676433,3.54065368" id="Fill-1490" fill="#697D85"></path>
+                            </g>
+                            <path d="M6,10 L12,10 L12,12 L6,12 C5.44771525,12 5,11.5522847 5,11 L5,11 C5,10.4477153 5.44771525,10 6,10 Z" id="Rectangle" fill="#EFB252" fill-rule="nonzero" opacity="0.800000012"></path>
+                            <rect id="Rectangle" fill="#7CB65A" fill-rule="nonzero" opacity="0.800000012" x="12" y="10" width="5" height="2"></rect>
+                            <path d="M17,10 L32,10 C32.5522847,10 33,10.4477153 33,11 L33,11 C33,11.5522847 32.5522847,12 32,12 L17,12 L17,10 Z" id="Rectangle" fill="#0082BA" fill-rule="nonzero" opacity="0.800000012"></path>
+                            <path d="M6,22 L12,22 L12,24 L6,24 C5.44771525,24 5,23.5522847 5,23 L5,23 C5,22.4477153 5.44771525,22 6,22 Z" id="Rectangle" fill="#DF5142" fill-rule="nonzero" opacity="0.800000012"></path>
+                            <rect id="Rectangle" fill="#7CB65A" fill-rule="nonzero" opacity="0.800000012" x="12" y="22" width="5" height="2"></rect>
+                            <path d="M17,22 L29,22 C29.5522847,22 30,22.4477153 30,23 L30,23 C30,23.5522847 29.5522847,24 29,24 L17,24 L17,22 Z" id="Rectangle" fill="#0082BA" fill-rule="nonzero" opacity="0.800000012"></path>
+                            <path d="M13,14 L17,14 L17,16 L13,16 C12.4477153,16 12,15.5522847 12,15 L12,15 C12,14.4477153 12.4477153,14 13,14 Z" id="Rectangle" fill="#7CB65A" fill-rule="nonzero" opacity="0.800000012"></path>
+                            <path d="M17,14 L29,14 C29.5522847,14 30,14.4477153 30,15 L30,15 C30,15.5522847 29.5522847,16 29,16 L17,16 L17,14 Z" id="Rectangle" fill="#EFB252" fill-rule="nonzero" opacity="0.800000012"></path>
+                            <rect id="Rectangle" fill="#0082BA" fill-rule="nonzero" opacity="0.800000012" x="9" y="18" width="25" height="2"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

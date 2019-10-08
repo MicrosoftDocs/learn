@@ -1,40 +1,42 @@
-The following example can help demonstrate how to perform holistic data engineering using the source, ingest, prepare, analyze, and consume approach.
+Here's an example of how to holistically design a data engineering project by following the five phases: source, ingest, prepare, analyze, and consume.
 
-Contoso Health Network recently deployed IoT devices into its Intensive Care Unit (ICU) to be able to capture patient biometric monitoring data in real time.  The hospital intends on processing the streaming data from the IoT devices to help the physicians treat these patients.  Contoso's research center would like to store the biometric data for further analysis in the future.  Their researchers would like to understand further what treatment methods have been used to improve the quality of care and to reduce the likelihood of the patient being readmitted to the hospital through Azure Machine Learning. Contoso's Chief Medical Officer would like a historical view of this data that is visualized.
+Contoso Health Network recently deployed IoT devices to its intensive care unit (ICU). Here are the goals of the project:
+* Capture data on patient biometric monitoring in real time to help physicians treat their patients.  
+* Store the biometric data so that Contoso's research center can further analyze it in the future. 
+* Use Azure Machine Learning to understand which treatments improve the quality of care and reduce the likelihood that a patient will be readmitted to the hospital. 
+* Create a visualization of the data's history for Contoso's chief medical officer.
 
-Contoso's technical architect reviewed the business case and proposed the following technologies:
+After reviewing the business case, Contoso's technical architect proposes the following technologies:
 
-- **Azure IoT Hub**.  To capture real-time data from the ICU's IoT devices.
-- **Azure Streaming Analytics**.  To stream the IoT data, create windows, aggregations, integrate Azure Machine Learning, and to further enrich data.
-- **Azure Data Lake Gen2**.  To store the biometric data at speed.
-- **Azure Data Factory**.  To perform the extract, load, transform, and load operations from the data lake store into SQL DW.
-- **Azure SQL DW**.  To provide data warehousing services to support the Chief Medical Officer's needs.
-- **Power BI**.  To create the patient dashboard.  Part of the dashboard will host real-time telemetry regarding the patient's condition while the other visual will display the patient's recent history.  
-- **Azure Machine Learning Services** – used to process both the raw and aggregated data to perform patient readmittance predictive analytics.
+- **Azure IoT Hub** to capture real-time data from the ICU's IoT devices.
+- **Azure Stream Analytics** to stream and enrich the IoT data, to create windows and aggregations, and to integrate Azure Machine Learning.
+- **Azure Data Lake Storage Gen2** to store the biometric data at high speed.
+- **Azure Data Factory** to perform the extract, load, transform, and load (ELTL) process to move the data from the data lake store to Azure SQL Data Warehouse.
+- **Azure SQL Data Warehouse** to provide data warehousing services to support the chief medical officer's needs.
+- **Power BI** to create the patient dashboard. Part of the dashboard will show real-time telemetry about the patient's condition. The other part will show the patient's recent history.  
+- **Azure Machine Learning** to process both raw and aggregated data. Researchers will use this to perform predictive analytics on patient readmittance.
 
-Contoso's Data Engineer creates a work plan to implement the Extract, Load, Transform, and Load operations.
+Contoso's data engineer creates a work plan to implement the ELTL operations. The plan includes a provisioning workflow and a holistic workflow.
 
-## Provisioning workflow
+The provisioning workflow:
 
-1. Provision Azure Data Lake Gen2
-2. Provision Azure SQL Data Warehouse
-3. Provision Azure IoT Hub
-4. Provision Azure Streaming Analytics
-5. Provision Azure Machine Learning
-6. Provision Azure Data Factory
-7. Provision Power BI
+1. Provision Azure Data Lake Storage Gen2.
+2. Provision Azure SQL Data Warehouse.
+3. Provision Azure IoT Hub.
+4. Provision Azure Stream Analytics.
+5. Provision Azure Machine Learning.
+6. Provision Azure Data Factory.
+7. Provision Power BI.
 
-## Holistic Workflow
+The holistic workflow:
 
-1. Configure Azure IoT Hub to capture data from the ICU IoT devices.
-2. Connect Azure IoT Hub to Azure Streaming Analytics.  Configure the windowing functions for the ICU data that will aggregate the data for each window. At the same time, configure the IoT hub to dump the streaming data to the Azure Data Lake using Azure Functions.
-3. Configure Azure functions to store the Azure Streaming Analytics aggregates to Azure Data Lake Gen2.
-4. Use Azure Data Factory to load data from the Data Lake into Azure SQL Data Warehouse to support the Chief Medical Officer's requirements. Transformations can occur within Azure SQL Data Warehouse once loaded.
-5. In parallel, connect Azure Machine Learning Service to the Azure Data Lake Store to perform the Predictive Analytics.
-6. Connect Power BI to Streaming Analytics to pull the real-time aggregates for the Patient data and SQL Data Warehouse to pull the historical data to create a combined dashboard.
+1. Set up Azure IoT Hub to capture data from the ICU IoT devices.
+2. Connect Azure IoT Hub to Azure Stream Analytics.  Set up window-creation functions for the ICU data. The functions will aggregate the data for each window. At the same time, set up the IoT Hub to move the streaming data to Azure Data Lake Storage by using Azure Functions.
+3. Set up Azure Functions to store the Azure Stream Analytics aggregates in Azure Data Lake Storage Gen2.
+4. Use Azure Data Factory to load data from the data lake into Azure SQL Data Warehouse to support the chief medical officer's needs. After the data is loaded, transformations can occur within Azure SQL Data Warehouse.
+5. In parallel, connect the Azure Machine Learning service to Azure Data Lake Storage to perform predictive analytics.
+6. Connect Power BI to Stream Analytics to pull the real-time aggregates for the patient data. Connect SQL Data Warehouse to pull the historical data to create a combined dashboard.
 
-## Related high-level architecture diagram
+The following diagram provides a high-level visualization of the solution:
 
-The following high-level architecture diagram provides a visualization of the solution.
-
-![High-Level Architecture Diagram](../media/4-high-level-architecture.png)
+![Diagram of the solution's high-level architecture](../media/4-high-level-architecture.png)

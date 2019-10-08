@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.cloud-operating-model.7-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: .
+  ms.date: 01/31/2019
+  author: alinamacelaru
+  ms.author: a-almace
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-Knowledge-check.md)]
+quiz:
+  questions:
+  - content: "The components of the Cloud Operating Model are:"
+    choices:
+    - content: "Business strategy, people strategy, and technology strategy"
+      isCorrect: true
+      explanation: "Correct. Business strategy, people strategy, and technology strategy are the three components of the Microsoft Cloud Operating Model that enable a consolidated approach for onboarding customers to the cloud."
+    - content: "Engage customers, transform products, optimize operations, and empower employees"
+      isCorrect: false
+      explanation: "Incorrect. Engage customers, transform products, optimize operations, and empower employees are elements of digital transformation but not components of the Cloud Operating Model."
+    - content: "Cost management, cloud security, and data governance"
+      isCorrect: false
+      explanation: "Incorrect. Cost management, cloud security, and data governance are contained under a single step of the Cloud Operating Model."
+    - content: "On-premises, hybrid cloud, and public cloud"
+      isCorrect: false
+      explanation: "Incorrect. On-premises, hybrid cloud, and public cloud are phases in the cloud adoption journey, not components of the Cloud Operating Model."
+  - content: "What are some common value drivers that business decision makers can use to justify moving their business to the cloud?"
+    choices:
+    - content: "Cost, speed, control, productivity, access, and reliability"
+      isCorrect: false
+      explanation: "Incorrect. Control and access are not value drivers that justify moving to the cloud."
+    - content: "Speed, global scale, performance, engagement, reliability, and strategy"
+      isCorrect: false
+      explanation: "Incorrect. Engagement and strategy are not value drivers that justify moving to the cloud."
+    - content: "Performance, reliability, management, control, speed, and cost"
+      isCorrect: false
+      explanation: "Incorrect. Management and control are not value drivers that justify moving to the cloud."
+    - content: "Cost, speed, global scale, productivity, performance, and reliability"
+      isCorrect: true
+      explanation: "Correct. Cost, speed, global scale, productivity, performance, and reliability are all value drivers that justify moving to the cloud."
+  - content: "Financial planning for cloud adoption requires organizations to decide whether to expand on-premises capabilities or move certain workloads and functions off-premises to cloud-delivered services. Microsoft has tools that can help. What Microsoft tool is available for a CFO who's trying to estimate the expected monthly bill and track actual account usage?"
+    choices:
+    - content: "The pricing calculator"
+      isCorrect: true
+      explanation: "Correct. Organizations can estimate their expected monthly bills by using the pricing calculator to track their actual account usage and bills at any time on the billing portal."
+    - content: "The Total Cost of Ownership (TCO) Calculator"
+      isCorrect: false
+      explanation: "Incorrect. Organizations can use the Azure TCO Calculator to estimate the cost savings they can realize by migrating their application workloads to Azure."
+    - content: "Azure Cost Management"
+      isCorrect: false
+      explanation: "Incorrect. Azure Cost Management (licensed by Microsoft subsidiary Cloudyn) is a multiple-cloud cost management solution that helps organizations use and manage Azure and other cloud resources."
+    - content: "The Azure Capacity Calculator"
+      isCorrect: false
+      explanation: "Incorrect. There is no such tool."
+  - content: "Which of the following strategies is also known as lift and shift?"
+    choices:
+    - content: "The rebuild strategy"
+      isCorrect: false
+      explanation: "Incorrect. A rebuild strategy involves rebuilding an application from scratch by using cloud-native technologies. This strategy isn't known as lift and shift."
+    - content: "The rehost strategy"
+      isCorrect: true
+      explanation: "Correct. Lift and shift refers to rehosting existing applications in the cloud without changing code."
+    - content: "The refactor strategy"
+      isCorrect: false
+      explanation: "Incorrect. Refactoring requires changes to apps. This strategy isn't known as lift and shift."
+    - content: "The rearchitect strategy"
+      isCorrect: false
+      explanation: "Incorrect. The rearchitect strategy involves modifying or extending an application's code base to scale and optimize it for the cloud. This strategy isn't known as lift and shift."
+

@@ -1,16 +1,19 @@
-In this unit, we learned how to create an Azure Stream Analytics job, configure an input, write a transformation query, and configure output. We used Azure Storage as our source and destination and created a transformation query to produce some basic results. In addition, we learned how to start a Stream Analytics job and view the job results.
+In this module, you learned how to create an Azure Stream Analytics job, set up an input, write a transformation query, and set up an output. You used Azure Storage as your source and destination, and you created a transformation query to produce some basic results. You also learned how to start a Stream Analytics job and view the job results.
 
-## Cleanup
+## Clean up
 
-To avoid incurring unnecessary charges, once you are done, you will want to delete all the resources we created including the two storage accounts and the Azure Stream Analytics job. You can do this individually, but an easier approach is to delete the resource group **mslearn-streamanalytics**. Locate the resource group through the search field, select it, and use the **Delete resource group** button. 
+To avoid unnecessary charges, you'll want to delete all the resources you created for this module. That includes the two storage accounts and the Stream Analytics job. You can delete these accounts individually, but it's easier to delete the resource group **mslearn-streamanalytics**: 
 
-![Screenshot showing how to delete the resource group in the Azure portal](../media/10-cleanup.png)
+1. Use the search field to find the resource group. 
+1. Select the group, and then select **Delete resource group**. 
 
-Since this deletes a whole set of resources together, Azure will prompt you to be sure you really want to do this.
+    ![Screenshot showing how to delete the resource group in the Azure portal](../media/10-cleanup.png)
+
+Because you're deleting a whole set of resources together, Azure prompts you to confirm that you want to do this.
 
 ## Learn more
 
-Here are some resources where you can learn more about creating Stream Analytics jobs and queries.
+To learn more about creating Stream Analytics jobs and queries, use these resources:
 
-[Supported Output Sinks for Azure Streaming Analytics](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-define-outputs)
-[Stream Analytics Query Language Reference](https://docs.microsoft.com/stream-analytics-query/stream-analytics-query-language-reference)
+* [Supported output sinks for Stream Analytics](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-define-outputs)
+* [Stream Analytics query language](https://docs.microsoft.com/stream-analytics-query/stream-analytics-query-language-reference)

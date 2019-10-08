@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Introduction to continuous monitoring in Azure
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/2-continuous-monitoring.md)]

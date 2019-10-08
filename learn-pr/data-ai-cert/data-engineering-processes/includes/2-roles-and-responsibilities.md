@@ -1,33 +1,49 @@
-Large data projects can be complex, often with hundreds of decisions that need to be made and executed. Multiple people will typically be involved, each playing a specific role to take the project from design to production. Some of these roles, such as business stakeholders, business analysts, and business intelligence developers are well-known and still valuable. However as data processing techniques have changed with technology improvements, new roles are starting to appear that provide specialized skills to help streamline the data engineering process. 
+Large data projects can be complex. The projects often involve hundreds of decisions. Multiple people are typically involved, and each person helps take the project from design to production. 
 
-In particular, three roles are starting to become prevalent in modern data projects.
+Roles such as business stakeholders, business analysts, and business intelligence developers are well known and still valuable. As data processing techniques change with technology, new roles are starting to appear. These roles provide specialized skills to help streamline the data engineering process. 
 
-1. Data Engineer
-1. Data Scientist
-1. Artificial Intelligence Engineer
+In particular, three roles are starting to become common in modern data projects:
 
-## The Data Engineer
+* Data engineer
+* Data scientist
+* Artificial intelligence (AI) engineer
 
-Data Engineers are responsible for the provisioning and configuration of both on-premises and cloud data platform technologies. They manage and secure the flow of structured and unstructured data from multiple of sources. The data platforms they manage can include relational databases, non-relational databases, data streams, and file stores. If that wasn't enough, they also must ensure that the data services integrate seamlessly with other data platform technologies or application services such as Cognitive Services, Azure Search, or even Bots, in a secure way.
+## Data engineer
 
-The Azure Data Engineer focuses on data-related tasks in Azure. Primary responsibilities include ingesting, egressing, and transforming data from multiple sources using various services and tools. The Azure Data Engineer collaborates with business stakeholders to identify and meet data requirements while designing and implementing solutions. They also manage, monitor, and ensure the security and privacy of data to satisfy business needs.
+Data engineers provision and set up data platform technologies that are on-premises and in the cloud. They manage and secure the flow of structured and unstructured data from multiple sources. The data platforms they use can include relational databases, nonrelational databases, data streams, and file stores. Data engineers also ensure that data services securely and seamlessly integrate with other data platform technologies or application services such as Azure Cognitive Services, Azure Search, or even bots.
 
-This role is different from a Database Administrator in that their scope of work goes well beyond just looking after a database and the server it's hosted on. Data Engineers must also be able to acquire, ingest, transform, validate, and cleanup data based upon business requirements in a process referred to as _data wrangling_.
+The Azure data engineer focuses on data-related tasks in Azure. Primary responsibilities include using services and tools to ingest, egress, and transform data from multiple sources. Azure data engineers collaborate with business stakeholders to identify and meet data requirements. They design and implement solutions. They also manage, monitor, and ensure the security and privacy of data to satisfy business needs.
 
-Their role can add tremendous value to both business intelligence and data science projects. It is widely regarded that data wrangling can consume a substantial amount of time on such projects. Having the Data Engineer perform these tasks can accelerate the development of these projects and enable Data Scientists to focus on other areas of their work.
+The role of data engineer is different from the role of a database administrator. A data engineer's scope of work goes well beyond looking after a database and the server where it's hosted. Data engineers must also get, ingest, transform, validate, and clean up data to meet business requirements. This process is called _data wrangling_.
 
-Both Database Administrators and Business Intelligence professionals can easily transition to a data engineer role by learning the new tools and technology used to process these large amounts of data effectively.
+A data engineer adds tremendous value to both business intelligence and data science projects. Data wrangling can consume a lot of time. When the data engineer wrangles data, projects move more quickly because data scientists can focus on their own areas of work.
 
-## The Data Scientist
+Both database administrators and business intelligence professionals can easily transition to a data engineer role. They just need to learn the tools and technology that are used to process large amounts of data.
 
-Data Scientists perform advanced analytics work to help drive value from data for a business. The type of work can vary from descriptive analytics; which is an analysis of the data through a process known as Exploratory Data Analysis (EDA) through to performing predictive analytics. Predictive analytics enables a data scientist to perform modeling techniques using machine learning to create anomaly/pattern detection solutions through to predictive forecasting models. This represents one aspect of their work, and some may even go into the realms of deep learning, iteratively performing experiments to solve a complex data problem through the use of complex customized algorithms.
+## Data scientist
 
-Anecdotal evidence supports the notion that most of the work that is spent on a Data Science project is data wrangling and features engineering. Data scientists appreciate the support they can receive from Data Engineers in this area to accelerate the experimentation process, as they recognize that Data Engineers possess the skill required to perform data wrangling successfully.
+Data scientists perform advanced analytics to extract value from data. Their work can vary from descriptive analytics to predictive analytics. Descriptive analytics evaluate data through a process known as exploratory data analysis (EDA). Predictive analytics are used in machine learning to apply modeling techniques that can detect anomalies or patterns. These are an important part of forecast models. 
 
-## The Artificial Intelligence (AI) Engineer
+Descriptive and predictive analytics are just one aspect of data scientists' work. Some data scientists might even work in the realms of deep learning, iteratively experimenting to solve a complex data problem by using customized algorithms.
 
-Artificial Intelligence (AI) Engineers work with AI services such as Cognitive Services, Cognitive Search, and the Bot Framework. Cognitive Services includes a wide set of services including Computer Vision, Text Analytics, Bing Search, and Language Understanding (LUIS) among others.  Rather than creating models, AI Engineers implement the prebuilt capabilities of Cognitive Service APIs and embed this intelligence within a new or existing application or more recently Bots. AI Engineers will rely on the expertise of Data Engineers to help them store information that is generated from AI. For example, an AI engineer may want a Data Engineer to provision a Cosmos DB instance to store metadata and tags generated by Computer Vision application that processes images.
+Anecdotal evidence suggests that most of the work in a data science project is spent on data wrangling and feature engineering. Data scientists can speed up the experimentation process when data engineers use their skills to successfully wrangle data.
 
-## Understand the role differences
+## AI engineer
 
-The role of the Data Engineer, AI Engineer, and Data Scientist are different, each solving a different problem. Data Engineers focus primarily on provisioning data stores. Extracting, loading, and transforming massive amounts of data, while ensuring that this is done securely and cost-effectively. AI Engineers add intelligent capabilities of vision, voice, language, and knowledge to applications using the prebuilt Cognitive Services that are available out of the box. And when the maximum capability of a Cognitive Service is reached, they can then call on a Data Scientists to work on developing the machine learning model and add the custom component to their applications using custom AI models. While each of the roles are different, they each contribute an important part to digital transformation projects.
+AI engineers work with AI services such as Cognitive Services, Cognitive Search, and Bot Framework. Cognitive Services includes Computer Vision, Text Analytics, Bing Search, and Language Understanding (LUIS). 
+
+Rather than creating models, AI engineers apply the prebuilt capabilities of Cognitive Services APIs. AI engineers embed these capabilities within a new or existing application or bot. AI engineers rely on the expertise of data engineers to store information that's generated from AI.  
+
+For example, an AI engineer might be working on a Computer Vision application that processes images. This AI engineer would ask a data engineer to provision an Azure Cosmos DB instance to store the metadata and tags that the Computer Vision application generates. 
+
+## Role differences
+
+The roles of the data engineer, AI engineer, and data scientist differ. Each role solves a different problem. 
+
+Data engineers primarily provision data stores. They make sure that massive amounts of data are securely and cost-effectively extracted, loaded, and transformed. 
+
+AI engineers add the intelligent capabilities of vision, voice, language, and knowledge to applications. To do this, they use the Cognitive Services offerings that are available out of the box. 
+
+When a Cognitive Services application reaches its capacity, AI engineers call on data scientists. Data scientists develop machine learning models and customize components for an AI engineer's application. 
+
+Each data-technology role is distinct, and each contributes an important part to digital transformation projects.

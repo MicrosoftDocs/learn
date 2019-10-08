@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.prepare-azure-dev-environment
 metadata:
-  title: Prepare your development environment for Azure development - Learn
+  title: Prepare your development environment for Azure development
   description: Set up your local development environment with several popular IDEs.
   ms.date: 09/24/2018
   author: adrianstevens

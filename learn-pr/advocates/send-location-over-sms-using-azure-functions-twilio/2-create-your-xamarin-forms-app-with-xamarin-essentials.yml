@@ -11,7 +11,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-#labId: 46464
 durationInMinutes: 5
 content: |
   [!include[](includes/2-create-your-xamarin-forms-app-with-xamarin-essentials.md)]

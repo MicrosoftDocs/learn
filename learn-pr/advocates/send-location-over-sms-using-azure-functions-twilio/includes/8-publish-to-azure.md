@@ -1,12 +1,10 @@
-The app and Azure Function are now complete and running locally. In this unit, you publish the function to Azure to run in the cloud.
+The app and Azure Functions are now complete and running locally. In this unit, you'll publish the function to Azure to run in the cloud.
 
-You will publish your function from Visual Studio. This is a great way to get started for proof-of-concepts, prototypes, and learning, but for a production-quality app you should **not** use this method. You should use some form of CI-based deployment. You can read more about doing this in the [Azure Functions Deployment docs](https://docs.microsoft.com/azure/azure-functions/functions-continuous-deployment?azure-portal=true).
-
-[!include[](../../../includes/azure-lab-environment-not-available.md)]
+You'll publish your function from Visual Studio. This is a great way to get started for proof-of-concepts, prototypes, and learning, but for a production-quality app you should **not** use this method. You should use some form of CI-based deployment. You can read more about doing this in the [Azure Functions Deployment docs](https://docs.microsoft.com/azure/azure-functions/functions-continuous-deployment?azure-portal=true).
 
 ## Publishing your app to Azure
 
-Azure functions can be published to Azure from inside Visual Studio.
+Azure Functions can be published to Azure from inside Visual Studio.
 
 1. Stop the local Azure Functions runtime if it's still running from the previous unit.
 
@@ -18,9 +16,11 @@ Azure functions can be published to Azure from inside Visual Studio.
 
     ![Creating a new Azure App Service to publish to](../media/8-pick-publish-target.png)
 
-1. Sign in to Azure using the username and password in the **Resources** tab of these instructions. If you are building this app locally instead of using the VM, log in with your Azure account, creating a new one if necessary using the links on the dialog.
+1. Sign in to your Azure account.
 
-1. Leave all the values as the defaults, as this will create all the necessary infrastructure to run your Functions app.
+1. Enter a name for you app.
+
+1. Select your _Subscription_, _Resource Group_, _Hosting Plan_, and _Storage Account_.
 
 1. Click **Create** to provision all the resources on Azure and publish your Azure Functions app.
 
@@ -33,13 +33,13 @@ Provisioning will take a couple of minutes to complete. The following resources 
 
 - A storage account to store the files needed for the Azure Functions app
 - An App Service plan to manage the compute resources needed by the Azure Functions app
-- The App Service that runs the Azure function
+- The App Service that runs the Azure Functions
 
 The function will now be published and available to call at **https://\<your-app-name\>.azurewebsites.net/api/SendLocation**.
 
 ## Configuring your app
 
-When the Azure function was running locally, it was using Twilio credentials that were stored in a `local.settings.json` file. As the name suggests, this file is for local settings, not Azure settings. Before the Azure function can be called inside Azure, the `TwilioAccountSid` and `TwilioAuthToken` settings need to be configured.
+When the Azure Functions was running locally, it was using Twilio credentials that were stored in a `local.settings.json` file. As the name suggests, this file is for local settings, not Azure settings. Before the Azure Functions can be called inside Azure, the `TwilioAccountSid` and `TwilioAuthToken` settings need to be configured.
 
 1. From the Publish tab, click the **Manage Application Settings** option.
 
@@ -49,7 +49,7 @@ When the Azure function was running locally, it was using Twilio credentials tha
 
     ![Setting the Twilio credentials in the application settings](../media/8-set-creds-in-app-settings.png)
 
-1. Click **OK**. This will publish the values to the Azure functions app.
+1. Click **OK**. This will publish the values to the Azure Functions app.
 
 ## Pointing the mobile app to Azure
 

@@ -1,15 +1,17 @@
-Microsoft Azure can work for a range of industries including:
+Azure can work for a range of industries, including the web, healthcare, and Internet of Things (IoT). Let's explore how Azure can make a difference in these industries.
 
 ## Web
 
-Using Azure Cosmos DB's multi-master replication model along with Microsoft's performance commitments, Data Engineers can implement a data architecture to support web and mobile applications that achieve less than a 10-ms response time anywhere in the world.  This can increase customer satisfaction by reducing the process time of web site for global organizations.
+As a data engineer, use the Azure Cosmos DB multimaster replication model to create a data architecture that supports web and mobile applications. Thanks to Microsoft performance commitments, these applications can achieve a response time of less than 10 ms anywhere in the world. By reducing the processing time of their websites, global organizations can increase customer satisfaction.
 
 ## Healthcare
 
-Azure Databricks can be used to accelerate big data analytics and artificial intelligence (AI) solutions. Within the healthcare industry, it can be used to perform genome studies or pharmacy sales forecasting at petabyte scale, while using the inherent features of Azure Databricks to set up your Spark environment in minutes and auto scale quickly and easily.
+In the healthcare industry, use Azure Databricks to accelerate big-data analytics and AI solutions. Apply these technologies to genome studies or pharmacy sales forecasting at a petabyte scale. Using Databricks features, you can set up your Spark environment in minutes and autoscale quickly and easily.
 
-Data Engineers can collaborate with Data Scientist through shared projects and workspaces in a wide range of languages including SQL, R, Scala, and Python. Native integration with Azure Active Directory (Azure AD) and other Azure services enables you to build your modern data warehouse and machine learning and real-time analytics solutions.
+Using Azure, you can collaborate with data scientists on shared projects and workspaces in a wide range of languages, including SQL, R, Scala, and Python. Because of native integration with Azure Active Directory and other Azure services, you can build diverse solution types. For example, build a modern data warehouse or machine learning and real-time analytics solutions.
 
-## IoT scenarios
+## IoT solutions
 
-Over the last couple of years, hundreds of thousands of devices have been designed to broadcast data and can be described as Internet of Things (IoT) devices used as sensors. Using technologies like Azure IoT Hub, Data Engineers can easily design a data solution architecture to capture information from IoT devices to be analyzed further.
+Over the last couple of years, hundreds of thousands of devices have been produced to generate sensor data. These are known as IoT devices. 
+
+Using technologies like Azure IoT Hub, you can design a data solution architecture that captures information from IoT devices so that the information can be analyzed.

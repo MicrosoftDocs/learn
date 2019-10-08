@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.chain-azure-functions-data-using-input-output-bindings
 metadata:
-  title: Chain Azure functions together by using input and output bindings - Learn
+  title: Chain Azure functions together by using input and output bindings
   description: In this module, we'll learn how to integrate your Azure function with various data sources by using bindings. 
   ms.date: 09/24/2018
   author: AndrewJByrne

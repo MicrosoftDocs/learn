@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.introduction-to-azure-areas-and-solutions.2-enabling-digital-transformation-with-azure
+title: Enable digital transformation with Azure
+metadata:
+  title: Enable digital transformation with Azure
+  description: In virtually every industry, new digitally born companies threaten to take over traditional industry giants. If you don't adapt to stay competitive, your competitors will. But the digital transformation revolution isn't the end of traditional enterprise business; it's an opportunity.
+  ms.date: 01/31/2019
+  author: Randall-Knapp
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-enabling-digital-transformation-with-azure.md)]
