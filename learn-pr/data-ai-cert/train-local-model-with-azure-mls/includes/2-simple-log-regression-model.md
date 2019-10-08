@@ -1,7 +1,7 @@
 Let's start by getting the sample data we'll use to train our ML models. We'll use Python to retrieve the data.
 
-> [!IMPORTANT]
-It is strongly recommended that you use [Azure Notebooks](https://notebooks.azure.com/) as described previously to run the code examples because everything is preconfigured and you get the latest version of Python. 
+>[!IMPORTANT]
+>It is strongly recommended that you use [Azure Notebooks](https://notebooks.azure.com/) as described previously to run the code examples because everything is preconfigured and you get the latest version of Python. 
 
 
 ## Using a local development install
@@ -84,8 +84,11 @@ print('Data loaded')
 To verify we've loaded the data, let's display one of the sample images + labels using matplotlib.  This may take a minute or two to run.
 
 ```python
+%matplotlib inline 
+
 import matplotlib.pyplot as plt
 import numpy as np
+
 
 count = 0
 sample_size = 30

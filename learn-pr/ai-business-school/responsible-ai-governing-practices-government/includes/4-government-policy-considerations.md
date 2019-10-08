@@ -1,6 +1,6 @@
 ## Introduction
 
-The promise of AI is that the knowledge gained from applying analytics and machine learning to the wealth of data that is available today will enhance any decision-making process with additional intelligence, leading to better outcomes and transforming lives. Recent research from McKinsey estimates that AI can boost global GDP by $13 trillion by 2030, which is about 16% cumulative growth or 1.2% additional GDP growth per year.<sup>1</sup> United Nations agencies have embraced AI as an accelerator for realizing the 2030 Sustainable Development Goals.
+The promise of AI is that the knowledge gained from applying analytics and machine learning to the wealth of data that is available today will enhance any decision-making process with additional intelligence, leading to better outcomes and transforming lives. Recent research from McKinsey estimates that AI can boost global GDP by $13 trillion by 2030, which is about 16% cumulative growth or 1.2% additional GDP growth per year.<sup>4</sup> United Nations agencies have embraced AI as an accelerator for realizing the 2030 Sustainable Development Goals.
 
 As AI plays an increasing role in mediating people’s lives online and offline, appropriate design, deployment, economic, and social choices are essential to ensuring that AI systems deserve the trust of individuals and society at large. The starting point for creating trust in AI is to take a human-centered approach, with system choices that are grounded in universal, timeless values – that are also shared by relevant stakeholders from industry, government, civil society, and the research community.
 
@@ -10,23 +10,23 @@ For AI to realize its full potential, its development needs to be shaped to fost
 
 ## An industry view on responsible AI
 
-Microsoft shared our view of responsible AI in [The Future Computed: Artificial Intelligence and Its Role in Society](https://blogs.microsoft.com/blog/2018/01/17/future-computed-artificial-intelligence-role-society/), identifying six principles to guide the cross-disciplinary development and use of AI technologies: fairness, reliability and safety, privacy and security, inclusivity, transparency, and accountability.
+Microsoft shared our view of responsible AI in The Future Computed: Artificial Intelligence and Its Role in Society, identifying six principles to guide the cross-disciplinary development and use of AI technologies: fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability.<sup>5</sup>
 
 Internally, Microsoft has created the AI and Ethics in Engineering & Research (Aether) Committee. This committee is a cross-company group that advises our Senior Leadership Team on rising questions, challenges, and opportunities with the development and fielding of AI and related technologies.
 
-In September 2016, Microsoft cofounded the Partnership on AI (PAI) “to study and formulate best practices on AI technologies, to advance the public’s understanding of AI, and to serve as an open platform for discussion and engagement about AI and its influences on people and society.”<sup>2</sup> PAI now has more than 90 organizations (>50% are non-profits) from 13 countries and 4 continents.
+In September 2016, Microsoft cofounded the Partnership on AI (PAI) “to study and formulate best practices on AI technologies, to advance the public’s understanding of AI, and to serve as an open platform for discussion and engagement about AI and its influences on people and society.”<sup>6</sup> PAI now has more than 100 organizations (>50% are non-profits) from 13 countries and 4 continents.
 
 To encourage development of AI solutions to address global challenges, the Microsoft [AI for Good](https://www.microsoft.com/ai/ai-for-good) initiative is a $125 million, five-year commitment to encourage and support development of innovative AI solutions by organizations around the world. These organizations are working to address global challenges in accessibility, sustainability for the earth, humanitarian action, and the preservation of cultural heritage.
 
 ## Fostering trustworthy AI
 
-Recognizing the economic transformation potential of AI, many governments have announced their national AI strategies. Global implementation of responsible AI received a boost in May 2019, when 36 OECD member countries, along with Argentina, Brazil, Colombia, Peru, and Romania, approved the [Recommendations of the OECD Council on Artificial Intelligence](https://www.oecd.org/going-digital/ai/principles/). These recommendations contained the principles for responsible stewardship of trustworthy AI. These principles were also adopted by the G20 countries, including the EU, in June 2019.
+Recognizing the economic transformation potential of AI, many governments have announced their national AI strategies. Global implementation of responsible AI received a boost in May 2019, when 36 OECD member countries, along with Argentina, Brazil, Colombia, Peru, and Romania, approved the Recommendations of the OECD Council on Artificial Intelligence. These recommendations contained the principles for responsible stewardship of trustworthy AI. These principles were also adopted by the G20 countries, including the EU, in June 2019.<sup>7</sup>
 
-The recommendations, developed by an AI expert group that included representatives from academia, civil society, trade unions, business, and governments from around the world, clearly demonstrated the value of multistakeholder consultation in policy development. They are high level principles, intended to foster trust and shape the continuing development of AI to be more trustworthy. They aren't prescriptive in ways that can restrict innovation.
+The recommendations, developed by an AI expert group that included representatives from academia, civil society, trade unions, business, and governments from around the world, clearly demonstrated the value of multistakeholder consultation in policy development. They are high-level principles, intended to foster trust and shape the continuing development of AI to be more trustworthy. They aren't prescriptive in ways that can restrict innovation.
 
 As more countries adopt the principles, it is hoped they will lead to development of AI systems that warrant the trust of individuals and society, which will enable broader adoption and realization of the transformative potential of AI. The OECD also included five recommendations to governments on national policies and international cooperation for trustworthy AI.
 
-The EU High Level Expert Group on AI also published its Ethics Guidelines on Artificial Intelligence in June 2019, and recommendations to help the Commission and Member States to update their joint coordinated plan on AI at the end of 2019.<sup>3</sup>
+The EU High Level Expert Group on AI also published its Ethics Guidelines on Artificial Intelligence in June 2019, and recommendations to help the Commission and Member States to update their joint coordinated plan on AI at the end of 2019.<sup>8</sup>
 
 Both the OECD and EU are encouraging implementations of their proposed principles as the next step, with the goal of sharing best practices and comments based on those implementations.
 
@@ -38,20 +38,20 @@ Policy discussions should aim to promote broad development and use of AI systems
 
 ### Considerations
 
-* Continue to convene broad dialogues among government, business, researchers, civil society, and other interested stakeholders on how AI can be shaped to maximize its potential and mitigate its risks;
-* Adopt practical guiding principles to increase awareness of and encourage development of trustworthy AI;
-* Encourage sharing and promulgating of best practices in development and deployment of these technologies, especially at the sector level, leveraging industry-led organizations;
-* Stimulate the development and deployment of AI across all sectors and business of all sizes, including application of AI to address public and societal challenges, such as empowering underserved communities and those people with disabilities, and adoption of AI in the public sector;
+* Continue to convene broad dialogues among government, business, researchers, civil society, and other interested stakeholders on how AI can be shaped to maximize its potential and mitigate its risks.
+* Adopt practical guiding principles to increase awareness of and encourage development of trustworthy AI.
+* Encourage sharing and promulgating of best practices in development and deployment of these technologies, especially at the sector level, leveraging industry-led organizations.
+* Stimulate the development and deployment of AI across all sectors and business of all sizes, including application of AI to address public and societal challenges, such as empowering underserved communities and those people with disabilities, and adoption of AI in the public sector.
 * Enable responsible data sharing and collaboration with an appropriate regulatory framework that enables innovation but also preserves privacy, protects trade secrets, and encourages investment and market competition.
-* Invest in skills development training initiatives for people at all stages of the job continuum, and provide appropriate social protection for workers in the new economy;
-* Fund short- and long-term multi-disciplinary research and development of responsible AI technologies and consider how AI can be used to provide insights into its potential socio-economic impact.  
+* Invest in skills development training initiatives for people at all stages of the job continuum, and provide appropriate social protection for workers in the new economy.
+* Fund short- and long-term multidisciplinary research and development of responsible AI technologies and consider how AI can be used to provide insights into its potential socio-economic impact.  
 * Develop shared public data sets and environments for AI training and testing, to enable broader experimentation with AI and comparisons of alternative solutions to address ethical concerns.
 
-Human-centered AI can help create a better world, and it is important to continue working together to actively realize this future. An inclusive approach that values multi-disciplinary and multi-stakeholder contributions and actions can motivate an open and collaborative model for policy development that can more readily adapt to rapidly evolving technologies. It also facilitates development of more principle- and evidence-based policy frameworks, where desirable outcomes that are aligned with the vision of human-centered AI are encouraged.
+Human-centered AI can help create a better world, and it is important to continue working together to actively realize this future. An inclusive approach that values multidisciplinary and multistakeholder contributions and actions can motivate an open and collaborative model for policy development that can more readily adapt to rapidly evolving technologies. It also facilitates development of more principle- and evidence-based policy frameworks, where desirable outcomes that are aligned with the vision of human-centered AI are encouraged.
 
 ## An integrated and holistic responsible AI policy framework
 
-Any AI strategy would need to be an integral part of holistic national agenda for digital transformation. For example, the OECD Going Digital project is a multidisciplinary and cross-cutting project that aims to:
+Any AI strategy would need to be an integral part of a holistic national agenda for digital transformation. For example, the OECD Going Digital project is a multidisciplinary and cross-cutting project that aims to:
 
 * Understand the digital transformation and its impacts on economy and society.
 * Provide policymakers with the tools needed to develop a pro-active whole-of-government policy response to help their economies prosper in an increasingly digital and data-driven world while advancing a culture of trust.

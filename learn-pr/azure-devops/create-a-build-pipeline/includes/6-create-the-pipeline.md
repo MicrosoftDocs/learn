@@ -67,7 +67,7 @@ If you return to your repo on GitHub and refresh the page, you'll see that **azu
 1. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve and install**.
 1. On the **Review** tab, note the initial build configuration.
 
-    ![](../media/6-initial-pipeline-yml.png)
+    ![Azure Pipelines showing the initial build configuration](../media/6-initial-pipeline-yml.png)
 
     This is the configuration you pushed to GitHub earlier.
 
