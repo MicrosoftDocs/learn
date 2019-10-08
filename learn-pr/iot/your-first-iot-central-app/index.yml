@@ -36,7 +36,7 @@ units:
 - learn.iot.your-first-iot-central-app.1-introduction
 - learn.iot.your-first-iot-central-app.2-create-a-device-template
 - learn.iot.your-first-iot-central-app.3-monitor-a-simulated-device
-- learn.iot.your-first-iot-central-app.4-setup-your-development-environment
+- learn.iot.your-first-iot-central-app.4-set-up-your-development-environment
 - learn.iot.your-first-iot-central-app.5-create-a-real-device-in-nodejs
 - learn.iot.your-first-iot-central-app.6-test-your-iot-device
 - learn.iot.your-first-iot-central-app.7-add-multiple-devices

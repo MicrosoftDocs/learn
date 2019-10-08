@@ -14,4 +14,4 @@ azureSandbox: true
 interactive: bash
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-setup-your-development-environment.md)]
+  [!include[](includes/4-set-up-your-development-environment.md)]
