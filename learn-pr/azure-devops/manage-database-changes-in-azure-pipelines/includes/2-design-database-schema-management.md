@@ -1,111 +1,150 @@
-In this part, you follow the Tailspin web team as they define their next steps for the _Space Game_ web site.
+In this part, you follow the Tailspin web team as they define their next steps for the _Space Game_ website.
 
-The team is ready to create a database for the web site but they will need to work with the database administrator to get it coordinated. The database administrator is responsible for maintaining the integrity of the database and will need to work with the team to understand their database needs. Any changes to tables or other database schema will need to be approved by the database administrator.
+The team is ready to create a database for the website but they need to work with the DBA to coordinate the work. The DBA is responsible for maintaining the integrity of the database and needs to work with the team to understand their database needs. The DBA needs to approve any changes the developers make to the database schema or its tables.
 
-The team wants to find an automated process that meets the needs of the application developers as well as the database administrator.
+The team wants to find an automated process that meets the needs of the application developers as well as the needs of the DBA.
 
-In this section, you'll:
+In this section, you:
 
 > [!div class="checklist"]
-> * Choose a database technology
-> * Learn how to configure the App Service to use the database connection string
-> * Understand a SQL Server Data Tools database project's role in Azure Pipelines
-> * Learn how database schema changes can be approved using Azure Pipelines
+> * Choose a database technology for your application.
+> * Learn how to configure App Service to use a database connection string.
+> * Understand the role of a SQL Server Data Tools project in Azure Pipelines.
+> * Learn how to approve database schema changes in Azure Pipelines.
 
 ## The meeting
 
-**Andy:** Good morning team. With our Azure DevOps pipeline bringing our development and operations together in a more efficient way, we are ready to stop using the sample data files and add a development database to our _dev_, _test_, and _staging_ App Services. This will allow us to better code with the production web site in mind.
+**Andy:** Good morning. Azure Pipelines brings together our development and operations processes more efficiently. We are ready to connect the website to a real database. I think this integration can happen as early as the _Dev_ stage. By connecting the website to the database early in the pipeline, we can track changes and measure performance as changes move through the pipeline.
 
-This is a big milestone and we have a lot to talk about. Let's start with choosing a database technology.
+Our focus here is on the leaderboard. Here's what the leaderboard looks like right now.
 
-### Choose a database technology
+_Andy shows the_ Space Game _site running on Azure App Service_.
 
-You have several choices when considering data storage solutions. The guiding factors to help you determine which choice to make are:
+![The Space Game leaderboard](../../assess-your-development-process/media/2-space-game-leaderboard.png)
 
-* The type of data you are storing
-  * Structured data - relational data that fits into tables with columns and rows
-  * Semi-structured data - non-relational data that fits into hierarchies using tags
-  * Unstructured data - files, photos, and videos
-* Your operational needs
-  * Will you be doing simple lookups or do you need to query one or more fields?
-  * Do you expect to change the data often?
-  * Do you need to run complex analytical queries?
-  * How quickly do these operations need to complete?
-* Whether or not you will need to use transactions
-  * OLAP - Online Transaction Processing
-  * OLTP - Online Analytical Processing
+After the database is in place, we can modify the website to read from it instead of from local files that contain test data.
 
-The _SpaceGame_ web site data is relational. Profiles, scores and achievements all relate to one another. The web site will need to query this data for different fields often, and the data will be changing as players play the game. This data is for a customer-facing web site, so quick retrieval of data is important.
+This is a big milestone and we have a few topics to discuss. Let's start by choosing a database technology.
 
-A link to more information on data storage choices and how to make the right choice is provided in the summary of this module. 
+## Choose a database technology
 
-Let's listen in on how the _SpaceGame_ web team decides what data storage to use.
+When considering a data storage solution, you have several options to choose from. Here are some of the guiding factors that can help you choose:
 
-**Tim:** It has been nice setting up infrastructure for your web site in the cloud, and it has proven to be cost effective. I would like to continue this experiment and set up the database server in the cloud as well.
+**The type of data you're storing**
 
-**Andy:** Good thinking Tim. I already went through the Microsoft Learn Module [Choose a data storage approach in Azure](https://docs.microsoft.com/learn/modules/choose-storage-approach-in-azure/?azure-portal=True) with that in mind. It seems we should either use CosmosDB or Azure SQL.
+Most data sets fit in one of three categories: _structured_, _semi-structured_, and _unstructured_.
 
-**Tim:** I have had a few conversations about CosmosDB with our database administrator. They are wanting a chance to try it out, but I don't think we have the time to spend ramping up on this project. They have a new project coming up next month that will be a good candidate for CosmosDB. This project is using relational data and the overall shape of the data shouldn't change much. It would be easier to set up as an Azure SQL database.
+**TODO**: Consider saying a bit more about each, for instance, connect each to real-world example.
 
-**Mara:** That sounds good. I have used [SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/sql-server-data-tools?view=sql-server-2017&azure-portal=true) in the past to make a database project. I will add that to our solution. It will have the SQL scripts to create the tables and we can use it to make sure changes to the database schema are being tracked.
+**TODO**: Define NoSQL?
+
+* _Structured data_ is relational data that fits into tables with columns and rows.
+* _Semi-structured data_ is non-relational data that fits into hierarchies using tags.
+* _Unstructured data_ includes documents such as text files, photos, and videos.
+
+**Your operational needs**
+
+When planning your operational needs, you might ask yourself these questions:
+
+* Will I be doing basic lookups or do I need to join queries from multiple data sets?
+* How often will the data change?
+* Do I always need the latest data?
+* Do I need to run complex analytical queries?
+* How quickly do these operations need to complete?
+
+**TODO**: Can we say more here?
+
+**Whether or not you need transactions**
+
+**TODO**: I think we need to frame this a bit more fully. Say there are two common types, define each, and then perhaps compare them a bit.
+
+* Online Transaction Processing (OLAP)
+* Online Analytical Processing (OLTP)
+
+> [!NOTE]
+> You'll find resources to help you make the right data storage choices at the end of this module.
+
+## What does the team choose?
+
+Let's listen in on how the _Space Game_ web team decides which data storage option to use.
+
+**Tim:** When choosing a database, geo-replication and backups are also important to me. We had a good experience deploying the web application to Azure App Service. What options do we have for running a database on Azure?
+
+**Andy:** I know that Azure SQL Database is a popular way to work with structured data. Azure Cosmos DB works with both unstructured and semi-structured data. We could also use Azure Blob Storage to manage unstructured data, like images.
+
+**Mara:** The _Space Game_ leaderboard data is relational. Profiles, scores, and achievements all relate to one another. The web application queries this data each time a user loads the home page, so quick retrieval of data is important.
+
+**Amita:** The data will change constantly as people play the game. Players want to see their positions on the leaderboard as quickly as possible, before they get outranked by others. We also talked about adding a feature that polls the leaderboard for updates in real time.
+
+**Tim:** I have had a few conversations about Cosmos DB with our DBA. They want to try it out, but I don't think we have the time to spend ramping up for this project. They have a new project coming up next month that will be a good candidate for Cosmos DB. This project is using relational data and the overall shape of the data shouldn't change much. It would be easier to set up as an Azure SQL database.
+
+**Mara:** That sounds good. I've used SQL Server Data Tools in the past to create a database project. I will add that to our solution. It will have the SQL scripts to create the tables and we can use it to make sure changes to the database schema are tracked.
 
 **Andy:** Great. That will be your action item.
 
-This brings up another question. If we create the database and connect to it from our web site code, how do we keep the database connection string secure? I don't want to publish it in our appSettings.json because that will become part of our GitHub repo.
+This brings up another question. If we create the database and connect to it from our website code, how do we keep the database connection string secure? I don't want to publish it through our *appsettings.json* file because that file will become part of our GitHub repository.
 
-### Configure the App Service to use the database connection string
+## Configure the webapp to use a database connection string
 
 TODO: (How much of this do I show?)
 
-To change the web site code over to using the database, Mara has created another implementation of the data access interface that will connect to and get the data from the Azure SQL database. This code gets the connection string from the web site configuration.
+The _Space Game_ web application currently reads leaderboard data from JSON files. The team plans to convert the application to read leaderboard data from a database.
+
+Recall that the _Space Game_ web application uses ASP.NET Core and is written in C#. The source code defines the `IDocumentDBRepository` interface to fetch leaderboard data. The `LocalDocumentDBRepository` class implements `IDocumentDBRepository` to read from local files.
+
+To update the code to read from a database, instead of from files, Mara creates another that connects to Azure SQL Database. This code gets the connection string from the website configuration.
 
 TODO: (screenshot)
 
-The connection string uses _SQL Authentication_ which has a username and password entry. Storing this information in plain text in the appSettings.json file would mean that the username and password would be readable by anyone that has access to the file. Instead, Mara has used the _Secret Manager_ tool in Visual Studio to store this string in a file that will not be uploaded to GitHub. Let's listen in as she explains this to the team.
+The connection string uses _SQL Authentication_, which includes the username and password. Storing this information in plain text in the *appsettings.json* would mean that the username and password would be readable by anyone who can access this file. Instead, Mara uses the _Secret Manager_ tool in Visual Studio to store this string in a file that will is not maintained in source control. Let's listen in as she explains this to the team.
 
-**Mara:** Locally, we can use a secrets.json file that doesn't get pushed to GitHub. Visual Studio can set that up for us using the _Secret Manager_ tool. But when the actual web site needs it, it can be added as a setting right in the Azure App Service and we won't need to add it to our appSettings.json file. Another advantage to using App Service.
+**Mara:** When developing the app locally, we can use a file that's named *secrets.json*, which doesn't get pushed to GitHub. Visual Studio can set that up for us using the _Secret Manager_ tool. But when the website on Azure App Service needs this file, we can provide this file through Azure Pipelines. Therefore, we won't need to add it to our *appsettings.json*.
 
-**Andy:** Good idea Mara. Now we are getting somewhere.
+**Andy:** Good idea, Mara. Now we are getting somewhere.
 
-**Tim:** Don't start celebrating yet. We need to make sure we have a plan for when the database schema changes. Mara mentioned that might happen. How do we make sure the database administrator is happy with the changes and that they get applied in a timely way?
+**Tim:** Don't start celebrating yet. We need to make sure we have a plan for when the database schema changes. Mara mentioned that might happen. How do we make sure that the database administrator is happy with the changes and that the changes are applied at the right time?
 
-### SQL Server Data Tools database project's role in Azure Pipelines
+## SQL Server Data Tools database project's role in Azure Pipelines
 
 TODO: (Again, how much do I show)
 
-_SQL Server Data Tools_ provides a project type that developers can use to define the database schema from within Visual Studio on Windows. The output from building this type of project is a file with the _.dacpac_ extension called a dacpac file. If you unpacked this file you would see the SQL scripts for creating the database schema, for example, a CREATE TABLE script for each table defined in the database project. Azure SQL can unpack that file and apply the schema changes.
+_SQL Server Data Tools_, which runs on Windows, provides a project type that you can use to define the database schema from Visual Studio. This kind of project produces what's called a _dacpac_ file. When you unpack this file, you see the SQL scripts for creating the database schema. For example, you might see a `CREATE TABLE` script for each table that's defined in the database project. Azure SQL Database can unpack that file and apply the schema changes.
 
 TODO: (Screenshots of database project and the .dacpac file)
 
 Let's go back to the team discussion and see how they handle the changes to their database schema.
 
-**Mara:** That SQL Server Data Tools project that I mentioned can help. It creates a file called a _dacpac_ that will have the current schema as defined by the project. This is the file used to deploy the schema. Let's see if we can find a way for the pipeline to make a file that shows the differences between what the database schema is now and what the _dacpac_ is proposing. Then the database administrator can look at that file and approve it. We just got pipeline approvals working. I think we can take advantage of that here and automate as much as possible.
+**Mara:** The SQL Server Data Tools project that I mentioned can help. It creates a file, called a _dacpac_, that contains the current schema. This is the file that we use to deploy the schema. Let's see if we can find a way for Azure Pipelines to create a file that shows the differences between what the database schema is now and what changes the _dacpac_ is proposing. Then, the DBA can look at the changes and approve them. We just got pipeline approvals working. I think we can take advantage of that here so that we can automate as much as possible.
 
-**Andy:** I found an Azure Pipelines task we can use. The [SqlAzureDacpacDeployment@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/sql-azure-dacpac-deployment?view=azure-devops&azyre-portal=true) task auto generates a file with the schema differences between the current database schema and the _dacpac_. We would just set the `DeploymentAction:` parameter to `Script`.
+*Andy types on his laptop.*
 
-### Approve database schema changes using Azure Pipelines
+**Andy:** I found an Azure Pipelines task that we can use. The [SqlAzureDacpacDeployment@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/sql-azure-dacpac-deployment?view=azure-devops&azyre-portal=true) task generates a file with the schema differences between the current database schema and the _dacpac_.
 
-Once database change file is generated, a powershell script can write it to the pipeline output where is can be checked by the database administrator.
+## Approve database schema changes in Azure Pipelines
+
+After you create the database change file, you can use PowerShell to write its contents to the pipeline so that the DBA can see the changes. Here's an example:
+
 TODO: (Do we send an email or something?)
 
-    ```yml
-      - task: PowerShell@2
-        displayName: Show Auto Generated SQL Script - check for schema changes
-        inputs:
-          targetType: 'inline'
-          script: | 
-            Write-Host "Auto Generated SQL Update Script:"
-            Get-Content d:\a\1\s\GeneratedOutputFiles\$(databasename)_Script.sql | foreach {Write-Output $_}
-    ```
-You can pause the pipeline at the stage where the changes would be applied using the technique you used in the last module. You create an Azure Pipelines environment that specifies the database administrator as the person that can approve running that stage. Then if the DBA approves the changes, the pipeline continues and the changes get applied to the database.
+```yml
+- task: PowerShell@2
+  displayName: Show auto-generated SQL Script - check for schema changes
+  inputs:
+    targetType: 'inline'
+    script: | 
+      Write-Host "Auto Generated SQL Update Script:"
+      Get-Content d:\a\1\s\GeneratedOutputFiles\$(databasename)_Script.sql | foreach {Write-Output $_}
+```
+
+You can pause the pipeline at the stage where the changes would be applied by using a manual approval, just as you did in the previous module. You create an Azure Pipelines environment that specifies the DBA as the approver. If the DBA approves the changes, the pipeline continues and the changes are applied to the database. If the DBA rejects the changes, the pipeline is halted. From there, you can discuss the proposed change with the DBA and plan some other approach.
 
 (Screenshot of approval?)
 
-Let's listen in to the team.
+Let's listen in on the team's discussion.
 
-**Tim:** I can make a PowerShell script that reads that file and outputs it for approval for the database administrator.
+**Tim:** I can create a PowerShell script that reads that file and outputs its contents so that the DBA can review and approve the changes.
 
-**Andy:** Then after it is approved, we use [SqlAzureDacpacDeployment@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/sql-azure-dacpac-deployment?view=azure-devops&azure-portal=true) again to apply the changes. We just set the `DeploymentAction:` parameter to `Publish` this time.
+**Andy:** After the change is approved, we use [SqlAzureDacpacDeployment@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/sql-azure-dacpac-deployment?view=azure-devops&azure-portal=true) again to apply the changes.
 
 **Mara:** I think we have a good place to start.
 
@@ -113,18 +152,18 @@ Let's listen in to the team.
 
 **Andy:** So if we are all in agreement, here is the plan moving forward.
 
-_Andy moves to the whiteboard to draw the plan_
+_Andy moves to the whiteboard and sketches out the plan._
 
 ![Whiteboard image of the pipeline with the two database stages added](../media/2-whiteboard-pipeline.png)
 
-**Andy:** So here is what we need to build. First, we add another job to the _Build_ stage that builds the new database project. ![Callout 1](../../shared/media/callout-01.png) This will produce another artifact that is the _.dacpac_ file.
+**Andy:** So here is what we need to build. First, we add a job to the _Build_ stage that builds the database project. ![Callout 1](../../shared/media/callout-01.png) This produces a _.dacpac_ file that we treat as a build artifact.
 
-We add a stage that ![Callout 2](../../shared/media/callout-02.png) scripts the database changes so that the ![Callout 3](../../shared/media/callout-03.png) DBA can check the changes before they get applied.
+We then add a stage that ![Callout 2](../../shared/media/callout-02.png) scripts the database changes so that the ![Callout 3](../../shared/media/callout-03.png) DBA can verify the changes before the changes are applied.
 
-We add an ![Callout 4](../../shared/media/callout-04.png) approval to another stage that ![Callout 5](../../shared/media/callout-05.png) applies the database changes. And then we ![Callout 6](../../shared/media/callout-06.png) deploy to _dev_, _test_, and _production_ just like we did before.
+We add an ![Callout 4](../../shared/media/callout-04.png) approval to another stage that ![Callout 5](../../shared/media/callout-05.png) applies the database changes. And then we ![Callout 6](../../shared/media/callout-06.png) deploy to _Dev_, _Test_, and _Staging_ just like we did before.
 
 **Tim:** I'll get started on the PowerShell script.
 
-**Mara:** I'll make the database project and update the web site to use the database.
+**Mara:** I'll make the database project and update the website to use the database.
 
-**Andy:** I'll get with our database administrator to get the database set up. But first, more coffee.
+**Andy:** I'll get with our DBA to get the database set up. But first, more coffee.

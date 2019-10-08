@@ -4,7 +4,7 @@ Tim and Andy are happy with the pipeline and the manual approval of schema chang
 
 Here, you fetch the `database-changes` branch from GitHub and checkout, or switch to, that branch.
 
-This branch contains the _Space Game_ project with the changes to the web site code that expects the Profile table to have a `favoriteMap` column. This new column's data will be displayed on the Profile page as **Favorite Galaxy:**. It also has the Azure Pipelines configuration you created in the last unit.
+This branch contains the _Space Game_ project with the changes to the website code that expects the Profile table to have a `favoriteMap` column. This new column's data will be displayed on the Profile page as **Favorite Galaxy:**. It also has the Azure Pipelines configuration you created in the last unit.
 
 In the Tailspin.SpaceGame.Database project, a change has been made to the Profile table. The `favoriteMap` column has been added. 
 
@@ -27,7 +27,7 @@ In the Tailspin.SpaceGame.Database project, a change has been made to the Profil
 1. Watch the pipeline and wait for the manual approval of the database schema. When the pipeline stops for approval, click on the `DBAVerificationScript` stage and look at the change script that was created. This time there will be an `ALTER TABLE` sql statement for adding the new column to the Profiles table.
 1. Go back to the pipeline and select the **waiting** button on the `DBAVerificationApply` stage. Select **Review** and then **Approve**.
 1. Allow the pipeline to finish deploying the App Services.
-1. You still need to add data to the new column before you can try the new web site.
+1. You still need to add data to the new column before you can try the new website.
     1. Navigate back to your [Azure portal](https://portal.azure.com?azure-portal=true) and select **SQL Databases**.
     1. Select your database **tailspindatabaseNNN** where NNN is your numbers.
     1. Select **Query editor** and sign in.
@@ -44,7 +44,7 @@ In the Tailspin.SpaceGame.Database project, a change has been made to the Profil
         Verify that the `favoriteMap` column is populated with data.
 1. Navigate to the one of your host names, for example **tailspin-space-game-wen-dev-NNN**, and select a player to see the new data on the profile.
 
- ![The web site with a profile showing the player's favorite galaxy](../media/5-profile-with-favorite-galaxy.png)
+ ![The website with a profile showing the player's favorite galaxy](../media/5-profile-with-favorite-galaxy.png)
 
 **Tim:** I think that went well. We managed to get the DBA involved and they are one tough customer. Score one for DevOps. But I can see a problem here. This pipeline is triggered with every change made to the application. We won't have schema changes every time, but the pipeline will stop and wait for approval even if the change file has no changes. How can we fix that?
 

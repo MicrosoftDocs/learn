@@ -98,7 +98,7 @@ You can now create the tables to store the data.
     | Login | azuresql |
     | Password | Specify the password that you used when you created this user. |
 
-1. In your local **database** branch, find the **CreateTables** file and copy the entire contents to the clipboard. In the **Query 1** pane in the Query Editor, paste the SQL statements you copied, and then select **Run**. This statement creates the new tables to hold the profile and score data for the SpaceGame web site. Verify that the statement runs without any errors.
+1. In your local **database** branch, find the **CreateTables** file and copy the entire contents to the clipboard. In the **Query 1** pane in the Query Editor, paste the SQL statements you copied, and then select **Run**. This statement creates the new tables to hold the profile and score data for the SpaceGame website. Verify that the statement runs without any errors.
 
 1. In the database window, select the **Refresh** button on the toolbar. Expand **Tables**, and then expand each table in turn. You should see the four tables (**dbo.Profile**, **dbo.Scores**, **dbo.Achievements**, and **dbo.ProfileAchievements**), together with the columns and keys for each table.
 
@@ -109,7 +109,7 @@ You can now create the tables to store the data.
 
 ## Import the data
 
-1. Back in Visual Studio Code, open the **Data** folder and notice four **.csv** files. Each .csv file there holds the test data the web site will need and corresponds to a table you just created. Open a terminal and make sure that you're in the **Data** folder.
+1. Back in Visual Studio Code, open the **Data** folder and notice four **.csv** files. Each .csv file there holds the test data the website will need and corresponds to a table you just created. Open a terminal and make sure that you're in the **Data** folder.
 
     ```bash
     cd Data

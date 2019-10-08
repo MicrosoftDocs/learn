@@ -1,10 +1,12 @@
-In [Create a release management workflow with Azure Pipelines](/learn/modules/create-a-release-management-workflow?azure-portal=true), you created a comprehensive Azure pipeline that deployed an application to separate App Services for each environment, _dev_, _test_, _staging_, and _production_. Each stage of the pipeline had a trigger or approval before the next stage could run. 
+In this module, you connect a web application to a database and manage changes to the database schema in Azure Pipelines.
 
-However, the web site is still using the test data files from within the application.
+In [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true), you helped the Tailspin web team design and build a release management workflow. This workflow enables the team to move changes through a series of stages, such as the _Dev_ stage and the _Test_ stage, all the way out to a _Staging_ environment that resembles production.
 
-In this module, you'll join the Tailspin _SpaceGame_ web team as they move to using a database for the web site data. They will design and build a pipeline that manages the database schema, as well as build and deploy the application that uses that database.
+The stages that you and the team defined provide the overall shape of your pipeline, but there's more that you can add to each stage. For example, the _Dev_ stage provides the opportunity to verify that multiple components, such as the web application and the database, work together in a real, working environment.
 
-Frequently, when an application uses a database, the database administrator and the developers of the application must work together to design and maintain the schema of that database. DevOps helps with the collaboration between the developers and operations, in this case the database administrator.
+However, the website still reads test data from local files, and is not yet connected to a database. In this module, you connect the website to Azure SQL Database and load your database with sample data.
+
+When an application uses a database, the database administrator (DBA) and the app developers must work together to design and maintain the database schema. Azure DevOps can help developers DBAs coordinate their plans and deploy database schema changes more quickly and with greater safety.
 
 ## Learning objectives
 
@@ -14,19 +16,32 @@ In this module, you:
 - Add database schema changes to Azure pipeline approvals.
 - Make sure approval is needed only where there are actual schema changes.
 
+- Connect your website to a relational database.
+- 
+
 ## Prerequisites
 
 The modules in this learning path form a progression.
 
 To follow the progression from the beginning, be sure to first complete these learning paths:
 
-- [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true)
-- [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true)
+* [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true)
+* [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true)
 
 We also recommend you start at the beginning of this learning path, [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops?azure-portal=true).
 
-> [!IMPORTANT]
-> You also need your own Azure subscription to complete the exercises in this module. You can [get started for free](https://azure.microsoft.com?azure-portal=true) if you don't have an Azure subscription.
+If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
+
+* An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
+* An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
+* A [GitHub](https://github.com/join?azure-portal=true) account
+* [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+* [.NET Core 2.1](https://www.microsoft.com/net/download?azure-portal=true)
+* [Git](https://git-scm.com/downloads?azure-portal=true)
+
+You can get started with Azure and Azure DevOps for free.
+
+This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
 
 [!include[](../../shared/includes/project-details-note.md)]
 

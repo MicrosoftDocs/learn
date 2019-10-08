@@ -14,6 +14,11 @@ Although the team is making steps towards improving their release cadence, there
 
 ## Learn more
 
+TODO: paragraph w/ links to help you decide which DB tech to use.
+[Choose a data storage approach in Azure](https://docs.microsoft.com/learn/modules/choose-storage-approach-in-azure/?azure-portal=True)
+
+[SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/sql-server-data-tools?view=sql-server-2017&azure-portal=true)
+
 In this module, you worked with ASP.net Core, SQL Server Data Tools, Azure SQL, Pipeline variables across stages, and configuring the App Service. Here are some additional resources you can use to learn more:
 
 - [Safe storage of app secrets in development in ASP.NET Core](https://docs.microsoft.com/aspnet/core/security/app-secrets?view=aspnetcore-3.0&tabs=windows&azure-portal=true)
