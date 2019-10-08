@@ -20,7 +20,7 @@ Manage device identity with Azure AD join and enterprise state roaming
 
 ## Prerequisites
 
-- Familiarity with Azure Active Directory features Like Azure AD Connect, Azure Active Directory Seamless Single Sign-On, and Multi-Factor Authentication
+- Basic knowledge of Azure Active Directory features such as Azure AD Connect, Azure Active Directory Seamless Single Sign-On, and Multi-Factor Authentication
 - Basic understanding of mobile device management software like Microsoft Intune  
 
 ## Summary
@@ -47,9 +47,9 @@ Identify the subtasks of *Manage device identity using AD join*
 
 1. **Introduction**
 
-   You work for a large book publisher that's deploying Windows 10 to employees' laptops. Your organization uses Azure Active Directory with Azure Multi-Factor Authentication enabled. You use these services to manage user identities and help protect the organization's resources. You want to add another layer of security for devices. Specifically, you want to restrict access to the organization's resources to only devices that are managed by your organization and are deemed compliant by your mobile device management (MDM) system. In addition, you want to minimize the disruption and improve your user's experience and continuity when switching between devices through the use of Enterprise State Roaming.
+   You work for a large book publisher that's deploying Windows 10 to employees' laptops. Your organization uses Azure Active Directory with Azure Multi-Factor Authentication enabled. You use these services to manage user identities and help protect the organization's resources. You want to add another layer of security for devices. Specifically, you want to restrict access to the organization's resources to only devices that are managed by your organization and are deemed compliant by your mobile device management (MDM) system. You also want to improve your organization's experience when switching between devices.
 
-1. **Understand device identity**
+1. **What is device identity in Azure**
 
     List the content that will enable the learner to *understand device identities*:
 
@@ -109,18 +109,16 @@ Identify the subtasks of *Manage device identity using AD join*
 		- Through the Azure portal you will be able to control if their data can sync between devices, and in line with the scenario, use RBAC to control which data and resources the device is able to see.
 		- You can also revoke a windows device, preventing it from gaining access.  This is different from revoking a user account.
 
-    What types of questions will test your *understanding Azure AD Join*?
+    What types of questions will test your *understanding Azure AD join*?
 
-    - What provisioning options are available through Azure AD Join?
+    - What provisioning options are available through Azure AD join?
         - Self-service in OOBE, Windows Autopilot, or bulk enrollment.
-    - What is the expected outcome if a user is not in the MDM scope?
+    - What happens when a user is not in the MDM scope?
         - The Azure AD Join completes without the MDM enrollment, however this will result in an unmanaged device.
-    - What devices are supported by Azure Intune
-    	- PC running Windows 10, Android 4.0 or later, Apple iOS 9.0 or better.
 
-1. **What is Enterprise State Roaming in Azure**
+1. **What is enterprise state roaming in Azure**
 
-    List the content that will enable the learner to *understand Enterprise State Roaming*:
+    List the content that will enable the learner to *understand enterprise state roaming*:
 
     - What is enterprise state roaming
         - Why use enterprise state roaming
@@ -147,7 +145,7 @@ Identify the subtasks of *Manage device identity using AD join*
             - Not possible from the cloud.
             - Can be restored from the device when it next connects to the cloud. 
 
-    What types of questions will test *understanding of Enterprise State Roaming*?
+    What types of questions will test *understanding of enterprise state roaming*?
 
     - What is classified as stale data?
         - Any data that has not been accessed for one year or more.
@@ -158,7 +156,7 @@ Identify the subtasks of *Manage device identity using AD join*
 
     How did you solve the problem in the initial scenario with the knowledge learned in the module?
 
-    In this module you have been introduced to device identities, and how they can be used to bring better access control to your organizations resources. You have explored using the cloud-first, mobile-first Azure AD option and how it can support self-service and BOYD. You have also explored how to use enterprise state roaming to allow for separation of corporate date from consumer data and how it can allow for settings to move with the user when they switch devices without having to go through a lengthy set-up process. You have seen how conditional access you can control when and how a user will access your corporate resources.
+    In this module you have been introduced to device identities, and how they can be used to bring better access control to your organizations resources. You have explored using the cloud-first, mobile-first Azure AD option and how it can support self-service and BOYD. You have also explored how to use enterprise state roaming to allow for separation of corporate data from consumer data and how it can allow for settings to move with the user when they switch devices without having to go through a lengthy set-up process. You have seen how conditional access you can control when and how a user will access your corporate resources.
 
 ## Notes
 
