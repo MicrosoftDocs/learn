@@ -55,7 +55,7 @@ The preceding command installs a specific version of the .NET Core SDK in the Az
 
 ## Build and test
 
-1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
 
 1. Run the following .NET Core CLI command in the command shell:
 
