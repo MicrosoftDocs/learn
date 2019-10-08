@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub.5-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 10/01/2019
+  author: philmea
+  ms.author: philmea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Summary
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Which of these entries for a new IoT Hub is publicly discoverable?'
+    choices:  
+    - content: 'Subscription'
+      isCorrect: false
+      explanation: You might have a few subscriptions available to you, but none are exposed publicly.
+    - content: 'Resource Group'
+      isCorrect: false
+      explanation: A Resource Group is like a folder containing your resources, and is not exposed publicly.  
+    - content: 'Region'
+      isCorrect: false
+      explanation: The region is the nearest Azure region to your location, and is not exposed publicly.
+    - content: 'IoT Hub Name'
+      isCorrect: true
+      explanation: The IoT Hub Name forms part of the URL for your IoT Hub, so is exposed publicly. Take care what names you use!
+    
+  - content: 'What does the following line of code require that you have done: var DeviceClient = require('azure-iot-device').Client ?'
+    choices:  
+    - content: 'Requires that you have created an IoT Hub, using the Azure IoT portal.'
+      isCorrect: false
+      explanation: You need to create an IoT Hub, but that is not required by the line of code shown above.
+    - content: 'Requires that you have assigned an ID to an IoT Hub device.'
+      isCorrect: false
+      explanation: You need to create an IoT Hub device, but that is not required by the line of code shown above.
+    - content: 'Requires that you have installed the npm package "azure-iot-device".'
+      isCorrect: true
+      explanation: This line of code creates an object based on the Client instance, defined in the npm package "azure-iot-device".
+
+  - content: "What is the role of the string SetTelemetryInterval in the following line of code (running on an IoT Hub device): client.onDeviceMethod('SetTelemetryInterval', onSetTelemetryInterval);?""
+    choices:  
+    - content: 'It is a descriptive name to appear in system metrics.'
+      isCorrect: false
+      explanation: The onDeviceMethod does not require any descriptive names.
+    - content: 'It is the name of the method running in the device Node.js app.'
+      isCorrect: false
+      explanation: The name of the method running in the device app is the second parameter: onSetTelemetryInterval.  
+    - content: 'Is is the methodName parameter that will be sent from IoT Hub, when the onSetTelemetryInterval method is to be run.'
+      isCorrect: true
+      explanation: The 'SetTelemetryInterval' parameter is important, as it must exactly match the method parameters specified in the backend app.
+    - content: 'It is a built in method when coding Node.js console apps.'
+      isCorrect: false
+      explanation: Node.js does not have a concept of telemetry.
+
+  - content: 'What is the role of an IoT Hub device twin?'
+    choices:  
+    - content: 'A device twin is a copy of the device state information, held on the device itself.'
+      isCorrect: false
+      explanation: Device twins are stored in the cloud.
+    - content: 'Device twins are duplicate hardware devices, in case one device malfunctions.'
+      isCorrect: false
+      explanation: Duplicating devices may be a sensible approach, but they are not called IoT Hub device twins.
+    - content: 'Device twins are JSON documents that store, in the cloud, device state information.'
+      isCorrect: true
+      explanation: Azure IoT Hub, by default, maintains a device twin for each device that you connect to IoT Hub. State information includes metadata, configuration settings, and conditions.'

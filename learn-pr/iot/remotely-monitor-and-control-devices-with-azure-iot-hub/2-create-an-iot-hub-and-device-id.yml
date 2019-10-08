@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub.2-create-an-iot-hub-and-device-id
+metadata:
+  title: Create an Azure IoT Hub, and a device ID
+  description: Create an Azure IoT Hub app, and a device ID.
+  ms.date: 10/01/2019
+  author: philmea
+  ms.author: philmea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Create an Azure IoT Hub, and a device ID
+azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-create-an-iot-hub-and-device-id.md)]
