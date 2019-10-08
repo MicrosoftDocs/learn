@@ -20,7 +20,7 @@ Get-Help Get-ChildItem -detailed
 
 ## What is a PowerShell module?
 
-Cmdlets are shipped in _modules_. A PowerShell Module is a DLL that includes the code to proces each available cmdlet. You load cmdlets into PowerShell by loading the module they are contained in. You can get a list of loaded modules using the `Get-Module` command:
+Cmdlets are shipped in _modules_. A PowerShell Module is a DLL that includes the code to process each available cmdlet. You load cmdlets into PowerShell by loading the module they are contained in. You can get a list of loaded modules using the `Get-Module` command:
 
 ```powershell
 Get-Module
