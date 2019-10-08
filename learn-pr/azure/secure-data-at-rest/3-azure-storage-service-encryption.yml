@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-data-at-rest.3-secure-data-at-rest-with-azure-storage-service-encryption
+uid: learn.secure-data-at-rest.3-azure-storage-service-encryption
 title: Secure data at rest with Azure Storage Service Encryption
 metadata:
   title: Secure data at rest with Azure Storage Service Encryption
@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-secure-data-azure-storage-service-encryption.md)]
+  [!include[](includes/3-azure-storage-service-encryption.md)]
 quiz:
   title: Check your knowledge
   questions:

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-data-at-rest.5-keep-your-keys-and-secrets-safe-using-azure-key-vault
+uid: learn.secure-data-at-rest.5-azure-key-vault
 title: Keep your keys and secrets safe using Azure Key Vault
 metadata:
   title: Keep your keys and secrets safe using Azure Key Vault
@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-use-azure-key-vault-keep-keys-secrets-safe.md)]
+  [!include[](includes/5-azure-key-vault.md)]
 quiz:
   title: Check your knowledge
   questions:
