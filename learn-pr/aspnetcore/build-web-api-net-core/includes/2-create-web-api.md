@@ -91,12 +91,23 @@ The preceding command installs a specific version of the .NET Core SDK in the Az
     * The `-k` option to indicate that `curl` should allow insecure server connections when using HTTPS. The .NET Core SDK includes an HTTPS development certificate for testing. By default, `curl` rejects secure connections using this certificate.
     * The `-s` option to suppress all output except the JSON payload. The JSON is sent to the *:::no-loc text="jq":::* command-line JSON processor for improved display.
 
-    The following JSON is returned:
+    The following represents an excerpt of the JSON that is returned:
 
     ```json
     [
-      "value1",
-      "value2"
+        {
+            "date": "2019-10-09T21:27:41.3813473+00:00",
+            "temperatureC": 24,
+            "temperatureF": 75,
+            "summary": "Bracing"
+        },
+        {
+            "date": "2019-10-10T21:27:41.3816138+00:00",
+            "temperatureC": 14,
+            "temperatureF": 57,
+            "summary": "Sweltering"
+        },
+        // ...
     ]
     ```
 
