@@ -1,12 +1,7 @@
 The data that your organization is moving to Azure includes customer details and financial information. This is data that must be kept as secure as possible, remain accessible for day-to-day use with systems and applications, and meet regulatory requirements. You need to understand how Azure SQL Database and Azure Cosmos DB can help you achieve this.
 
-- By the end of this unit, you'll:
+Here, you'll learn about the encryption features in Azure SQL Database and Cosmos DB.
 
-  - Understand why you should enable encryption at rest on a database in Azure.
-  - Understand how encryption at rest works in the background on a database in Azure.
-  - Understand what's happening in the background for encryption in Azure databases.
-  - Understand how to enable encryption at rest on a database in Azure.
-  
 ## Secure your SQL database with transparent data encryption (TDE)
 
 SQL databases store your data in a structured format – in data files. These files can be encrypted so that, if either the hard drives that store the data are compromised, or the data files are stolen, the data will be secure. For Azure SQL Database, you can achieve this encryption at rest through transparent data encryption (TDE). Transparent data encryption in Azure SQL Database encrypts not only the data files, but also the transaction log files, and any backups for your databases. This process of encryption is entirely transparent to the applications using the databases. For older SQL Databases, transparent data encryption isn't enabled by default. However, newly provisioned SQL Databases have transparent data encryption enabled by default.
@@ -22,8 +17,6 @@ Below is an example showing how you can enable TDE in the portal:
 ## Secure your Cosmos DB with automatic encryption at rest
 
 Cosmos DB databases allow your data to be stored in an unstructured format. Databases for Cosmos DB are physically stored in hard drives – solid state for Cosmos DB. Cosmos DB components, like backups, are stored in HDDs. Your media attachments, the actual databases, or back-ups can all be protected at rest. At the same time, none of this encryption affects the latency and throughput SLAs that Cosmos DB sets out to meet. Your data is automatically encrypted at rest, but is not automatically encrypted when it is generated, and when it is in use.
-
-<!--  Link to original image: https://docs.microsoft.com/en-us/azure/cosmos-db/media/database-encryption-at-rest/design-diagram.png -->
 
 ![Cosmos DB Encryption behind the scenes](../media/4-cosmos-db-encryption.png)
 

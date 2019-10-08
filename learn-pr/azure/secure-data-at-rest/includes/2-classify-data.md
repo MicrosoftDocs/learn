@@ -1,10 +1,6 @@
 Your organization has several different systems, with data such as customer details, financial information and more. In order to be in a position to protect the data, you need to understand the data better by classifying the different types of data you are dealing with, understanding the different states data can be in, and the different ways in which data can be structured.
 
- By the end of this unit, you'll:
-
-- understand the different states of data.
-- understand the classifications of confidential, internal, or public.
-- understand structured vs unstructured data.
+ Here, you'll learn the different states of data, learn about the classifications of confidential, internal, or public data, and differentiate structured vs unstructured data.
 
 ## Data states
 

@@ -1,13 +1,6 @@
 Your organization has data spread across various systems. These systems can be physical,or  can be virtual and still rely on physical infrastructure somewhere. Your organization's data should be protected at different levels. You can encrypt disks to encrypt the data physically. If you are dealing with virtual machines, you can also encrypt the data on the VHDs. You can also use client-side encryption and encrypt data inside of the files that store the data.
 
- By the end of this unit, you'll:
-
-- Understand encryption at rest.
-- Understand why you would use encryption at rest.
-- Understand SSE.
-- Understand ADE.
-- Understand how you would use Azure Storage Service Encryption.
-- Understand how and why you would use client-side encryption.
+Here, you'll learn about encryption at rest, and the various tools and services avialble to you to ensure your data is encrypted.
 
 ## Secure storage accounts with SSE
 

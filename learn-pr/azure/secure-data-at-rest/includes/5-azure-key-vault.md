@@ -1,8 +1,6 @@
-The credentials for the systems that your organization is moving to Azure need to be secured. You need to understand how Azure can help you protect these credentials. By the end of this unit, you'll:
+The credentials for the systems that your organization is moving to Azure need to be secured. You need to understand how Azure can help you protect these credentials.
 
-- Understand what Azure Key Vault is.
-- Understand why you would use Azure Key Vault.
-- Understand how you would use Azure Key Vault.
+Here, you'll learn about Azure Key Vault, and how you can use it to secure information such as credentials and secrets.
 
 ## Separate your code and credentials with Azure Key Vault
 
