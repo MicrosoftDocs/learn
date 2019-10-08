@@ -23,6 +23,9 @@ Cloud Shell includes popular tools and text editors. Here's a brief look at `az`
 - `jq` is a command-line JSON parser. You'll pipe output from `az` commands to this tool to extract important fields from JSON output.
 - `sqlcmd` enables you to execute statements on SQL Server. You'll use `sqlcmd` to create an interactive session with your Azure SQL database.
 
+> [!TIP]
+> When running the T-SQL commands in this module using `sqlcmd`, the `GO` on the second line may not copy through to the `sqlcmd` prompt, so you will likely need to type this out. The T-SQL command won't execute without it, so make sure to run the `GO` command.
+
 ## Get information about your Azure SQL database
 
 Before you connect to your database, it's a good idea to verify it exists and is online.
