@@ -14,7 +14,7 @@ Federation isn't limited to connecting different organizations' on-premises netw
 
 ![Figure 3.4: Federated identity flow](../media/fig3-4.png)
 
-Figure 3.4: Federated identity flow.
+_Figure 3.4: Federated identity flow._
 
 Federation is widely used by organizations to secure access to cloud resources using the same identity information that secures access to on-premises resources. But it is not perfect. It requires a reliable connection between the on-premises directory service and the cloud so the on-premises directory can be consulted each time a user accesses a cloud resource that requires authentication. One solution to that -- another means for sharing credentials between on-premises directories and the cloud -- is synchronization.
 
@@ -26,7 +26,7 @@ Synchronization is implemented by installing a synchronization service within th
 
 ![Figure 3.5: Synchronized identity flow](../media/fig3-5.png)
 
-Figure 3.5: Synchronized identity flow.
+_Figure 3.5: Synchronized identity flow._
 
 A key operational difference between federation and synchronization is that the latter is more resilient to disruptions in connectivity. Synchronization doesn't require access to the on-premises directory every time a user accesses a cloud resource; it only requires access when synchronization occurs. The primary downside to synchronization is that changes made to the on-premises directory take time to propagate to the cloud. If an administrator adds Alice to the on-premises directory but synchronization occurs just once an hour, Alice won't be able to access secured cloud resources for up to one hour after the change is made.
 
