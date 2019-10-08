@@ -27,18 +27,18 @@ quiz:
     - content: "A service that manages the state configuration on each destination, or node."
       isCorrect: false
       explanation: "The local configuration manager (LCM) is responsible for updating the configuration to match the desired state on a node."
-  - content: "A DSC PowerShell script ______________."
+  - content: "A PowerShell DSC script ______________."
     choices:
     - content: "Contains the steps required to configure a virtual machine to get it into a specified state."
       isCorrect: false
-      explanation: "A DSC PowerShell script is declarative. It describes the desired state but doesn't list the steps necessary to achieve that state."
+      explanation: "A PowerShell DSC script is declarative. It describes the desired state but doesn't list the steps necessary to achieve that state."
     - content: "Is idempotent."
       isCorrect: false
-      explanation: "A DSC PowerShell script is declarative. It describes the desired state but doesn't list the steps necessary to achieve that state."
+      explanation: "A PowerShell DSC script is declarative. It describes the desired state but doesn't list the steps necessary to achieve that state."
     - content: "Describes the desired state."
       isCorrect: true
-      explanation: "A DSC PowerShell script is declarative. It describes the desired state but doesn't include the steps necessary to achieve that state."
-  - content: "Why is pull mode preferred over push mode for DSC?"
+      explanation: "A PowerShell DSC script is declarative. It describes the desired state but doesn't include the steps necessary to achieve that state."
+  - content: "Why should you use pull mode instead of push mode for DSC?"
     choices:
     - content: "Pull mode is best for complex environments that need redundancy and scale."
       isCorrect: true

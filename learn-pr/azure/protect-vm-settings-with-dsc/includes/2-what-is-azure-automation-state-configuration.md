@@ -93,7 +93,7 @@ You'll learn more about the structure of the PowerShell DSC code in the next uni
 The local configuration manager (LCM) is a component of the Windows Management Framework (WMF) that's on a Windows operating system. The LCM is responsible for updating the state of a node, like a VM, to match the desired state. Every time the LCM runs, it completes the following steps:
 
 1. **Get**: Get the current state of the node.
-1. **Test**: Compare the current state of a node against the desired state by using a complied DSC script (.mof file).
+1. **Test**: Compare the current state of a node against the desired state by using a compiled DSC script (.mof file).
 1. **Set**: Update the node to match the desired state described in the .mof file.
 
 You configure the LCM when you register a VM with Azure Automation.
