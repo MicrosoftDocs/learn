@@ -24,7 +24,7 @@ The essential component for communication between a device and IoT Central is a 
 
 All of the work to generate connection strings is handled through Azure Cloud Shell.
 
-1. Navigate to `https://shell.azure.com/`. Perhaps save this URL as a favorite bookmark.
+1. Make sure you have activated the sandbox at the top of this unit. It will give you access to a free Azure Cloud Shell to run the following commands without altering your own system or any personal or work-related Azure resource.
 
 1. In the Azure Cloud Shell, create a refrigerated-truck folder, and navigate to it:
 
@@ -54,10 +54,10 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
     chmod +x dps_cstr
     ```
 
-1. Remember that in the previous section we stored a **Scope ID**, **Device ID**, and **Primary Key**, for our device. It is a good idea to keep a text tool such as Notepad open, and create in it the following string, replacing **scope-id**, **device-id**, and **primary-key** with the true values. Using the text tool enables you to create and validate the string before committing to running it.
+1. Remember that in the previous section we stored a **Scope ID**, **Device ID**, and **Primary Key**, for our device. It is a good idea to keep a text tool such as Notepad open, and create in it the following string, replacing **{scope-id}**, **{device-id}**, and **{primary-key}** with the true values. Using the text tool enables you to create and validate the string before committing to running it.
 
     ```bash
-    ./dps_cstr scope_id device_id primary_key > connection1.txt
+    ./dps_cstr {scope_id} {device_id} {primary_key} > connection1.txt
     ```
 
 1. Now copy this command from your text tool into the refrigerated-truck folder of Azure Cloud Shell, and run it. If successful, the tool will generate a connection string and write it out to the connection1.txt file.
