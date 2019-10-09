@@ -35,15 +35,16 @@ Let's start by creating the problematic infrastructure, which includes a configu
 1. Run this command to deploy a VM in **FrontendSubnet**. Replace `<password>` with a complex password of your choice.
 
     ```azurecli
-        az vm create --resource-group $rg \
-          --no-wait \
-          --name FrontendVM \
-          --location EastUS \
-          --vnet-name MyVNet1 \
-          --subnet FrontendSubnet \
-          --image Win2012R2Datacenter \
-          --admin-username azureuser \
-          --admin-password <password>
+    az vm create \
+        --resource-group $rg \
+        --no-wait \
+        --name FrontendVM \
+        --location EastUS \
+        --vnet-name MyVNet1 \
+        --subnet FrontendSubnet \
+        --image Win2012R2Datacenter \
+        --admin-username azureuser \
+        --admin-password <password>
     ```
 
 1. Run this command to create the subnet called **BackendSubnet**.
@@ -59,15 +60,16 @@ Let's start by creating the problematic infrastructure, which includes a configu
 1. Run this command to deploy a virtual machine in **BackendSubnet**. Replace `<password>` with a complex password of your choice.
 
     ```azurecli
-        az vm create --resource-group $rg \
-          --no-wait \
-          --name BackendVM \
-          --location EastUS \
-          --vnet-name MyVNet1 \
-          --subnet BackendSubnet \
-          --image Win2012R2Datacenter \
-          --admin-username azureuser \
-          --admin-password <password>
+    az vm create \
+        --resource-group $rg \
+        --no-wait \
+        --name BackendVM \
+        --location EastUS \
+        --vnet-name MyVNet1 \
+        --subnet BackendSubnet \
+        --image Win2012R2Datacenter \
+        --admin-username azureuser \
+        --admin-password <password>
     ```
 
 1. Run this command to create a network security group (NSG).
