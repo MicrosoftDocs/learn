@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.iot.route-device-messages-in-iot-hub-to-analyze-device-streams-in-the-cloud
+uid: learn.iot.route-device-messages-in-iot-hub
 metadata:
   title: Route device messages in IoT Hub to analyze device streams in the cloud
   description: Create an app to monitor TBD
@@ -31,4 +31,4 @@ units:
 - learn.iot.route-device-messages-in-iot-hub.1-introduction
 
 badge:
-  uid: learn.{module-uid}.badge
+  uid: learn.iot.route-device-messages-in-iot-hub.badge

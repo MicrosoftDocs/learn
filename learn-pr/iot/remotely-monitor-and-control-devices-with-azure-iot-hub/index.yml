@@ -36,4 +36,4 @@ units:
 - learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub.4-write-code-for-a-direct-method
 - learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub.5-summary
 badge:
-  uid: learn.{module-uid}.badge
+  uid: learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub.badge
