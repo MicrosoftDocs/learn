@@ -1,6 +1,6 @@
 PowerShell lets you write commands and execute them immediately. This is known as **interactive mode**.
 
-Recall that the overall goal in the Customer Relationship Management (CRM) example is to create three test environments containing VMs. You will use resource groups to ensure the VMs are organized into separate environments: one for unit testing, one for integration testing, and one for acceptance testing. You only need to create the resource groups once, which means using the interactive mode of PowerShell is a good choice.
+Recall that the overall goal in the Customer Relationship Management (CRM) example is to create three test environments containing Virtual Machines. You will use resource groups to ensure the VMs are organized into separate environments: one for unit testing, one for integration testing, and one for acceptance testing. You only need to create the resource groups once, which means using the interactive mode of PowerShell is a good choice.
 
 When you type a command into PowerShell, it matches it to a _cmdlet_ which then performs the requested action. We're going to look at some of the common commands you can use, and then look at installing the Azure support for PowerShell.
 
