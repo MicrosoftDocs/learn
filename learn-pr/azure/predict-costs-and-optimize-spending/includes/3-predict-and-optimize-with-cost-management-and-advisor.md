@@ -21,7 +21,7 @@ Let's take a look at where you can find Azure Advisor in the portal.
 
 1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using your Microsoft account. 
 
-1. Click on **All Services**, and in the **Management Tools** category, you will see **Advisor**. You can also type `Advisor` in the filter box to filter on just that service.
+1. Click on **All Services**, and in the **Management + governance** category, you will see **Advisor**. You can also type `Advisor` in the filter box to filter on just that service.
 
 1. Click on Advisor, and you'll be taken to the Advisor recommendations dashboard where you can see all the recommendations for your subscription. You'll see a box for each category of recommendations.
 
