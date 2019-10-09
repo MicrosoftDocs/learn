@@ -8,7 +8,7 @@ In this unit, you'll troubleshoot by using Network Watcher metrics and logs. You
 
 NSG flow logging requires the *Microsoft.Insights* provider. Complete the following steps to register for that provider.
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) by using the account that you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) and log in to the directory with access to the subscription you created resources in.
 
 1. In the upper-left corner of the portal, select **All services**. In the **Filter** box, enter **Subscriptions**. When **Subscriptions** appears in the search results, select it.
 
