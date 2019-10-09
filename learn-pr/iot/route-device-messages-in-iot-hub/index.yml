@@ -28,7 +28,7 @@ roles:
 products:
 - azure-iot-hub
 units:
-- learn.iot.route-device-messages-in-iot-hub-to-analyze-device-streams-in-the-cloud.1-introduction
+- learn.iot.route-device-messages-in-iot-hub.1-introduction
 
 badge:
-  uid: learn.iot.iot-test.badge
+  uid: learn.{module-uid}.badge

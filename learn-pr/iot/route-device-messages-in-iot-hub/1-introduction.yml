@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.route-device-messages-in-iot-hub.1-introduction
+metadata:
+  title: Introduction
+  description: Describes the scenario of monitoring vibrations in a conveyor belt, using IoT Hub.
+  ms.date: 10/01/2019
+  author: philmea
+  ms.author: philmea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Introduction
+azureSandbox: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]

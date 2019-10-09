@@ -1,5 +1,5 @@
 
-Azure IoT Hub...
+Azure IoT Hub does stuff
 
 ## Learning objectives
 

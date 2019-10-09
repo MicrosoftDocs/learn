@@ -3,9 +3,9 @@ In this module, you learned how to:
 - Create an Azure IoT Hub custom app, using the Azure portal
 - Create a Device ID for a custom device, using the Azure portal
 - Create a Node.js app to support a simulated device monitoring a wine cellar
-- Create a Node.js app to provide a backend service to listen for the telemetry sent by the device
+- Create a Node.js app to provide a back-end service to listen for the telemetry sent by the device
 - Add Node.js code to the device app to provide a _direct method_
-- Add Node.js code to the backend service to sent commands to enact direct methods
+- Add Node.js code to the back-end service to sent commands to enact direct methods
 
 ## Clean up
 
