@@ -45,7 +45,7 @@ quiz:
       choices:
       - content: "Pay in advance"
         isCorrect: true
-        explanation: "Azure Reservations offer discounted prices on certain Azure products and resources. To get a discount, you reserve products and resources by paying in advance. You can prepay for one or three year's use of certain Azure resources."
+        explanation: "Azure Reservations offer discounted prices on certain Azure products and resources. To get a discount, you reserve products and resources by paying in advance. You can prepay for one or three year's of usage of certain Azure resources."
       - content: "Provision many resources"
         isCorrect: false
         explanation: "There is no requirement to provision many resources to use Azure Reservations."
