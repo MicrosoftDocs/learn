@@ -19,7 +19,7 @@ abstract:  |
   - Use the REST API to query device telemetry 
   - Use the REST API to configure data export from your application
 prerequisites: Ability to create an IoT Central application using the web UI. Ability to use Azure CLI at the beginner level. Ability to use Azure blob storage at the beginner level. Experience using REST APIs at the beginner level. Experience administering an IoT Central application using the web UI at the intermediate level. Experience managing device templates and devices in an IoT central application using the web UI at the intermediate level.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/manage-iot-central-apps-with-rest-api.svg
 levels:
 - intermediate
 roles:
