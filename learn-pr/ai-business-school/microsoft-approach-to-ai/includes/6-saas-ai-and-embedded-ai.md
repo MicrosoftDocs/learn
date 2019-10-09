@@ -1,4 +1,4 @@
-Watch this video from Steve Guggenheimer, Corporate Vice President of AI & ISV Engagement, as he shares a high-level overview of how Microsoft is developing new AI services and embedding AI into existing products - as well as an explanation of how these technologies can benefit your business.
+Watch this video from Steve Guggenheimer, Corporate Vice President of AI & ISV Engagement, as he shares a high-level overview of how Microsoft is developing new AI services and embedding AI into existing products, as well as an explanation of how these technologies can benefit your business.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Y20y]
 
