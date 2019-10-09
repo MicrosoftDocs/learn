@@ -146,4 +146,4 @@ These commands disable encryption for volumes of type all for the specified virt
 > [!WARNING]
 > Disabling data disk encryption on Windows VM when both OS and data disks have been encrypted doesn't work as expected. You must disable encryption on all disks instead.
 
-Let's try some of these commands out on a new VM.
+In the next exercise, you'll try some of these commands out on a new VM.
