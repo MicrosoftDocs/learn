@@ -51,7 +51,7 @@ quiz:
       explanation: The onDeviceMethod does not require any descriptive names.
     - content: 'It is the name of the method running in the device Node.js app.'
       isCorrect: false
-      explanation: The name of the method running in the device app is the second parameter: onSetTelemetryInterval.  
+      explanation: The name of the method running in the device app is the second parameter (onSetTelemetryInterval).  
     - content: 'Is is the methodName parameter that will be sent from IoT Hub, when the onSetTelemetryInterval method is to be run.'
       isCorrect: true
       explanation: The 'SetTelemetryInterval' parameter is important, as it must exactly match the method parameters specified in the backend app.
