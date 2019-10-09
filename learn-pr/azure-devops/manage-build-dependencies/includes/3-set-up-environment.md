@@ -44,7 +44,10 @@ Recall that the team settled on these seven top issues:
 
 ![Backlog of tasks](../../shared/media/build-all-tasks.png)
 
-Here you'll move the sixth item, **Move model data to its own package** to the **Doing** column, and assign yourself to the work item.
+> [!NOTE]
+> Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
+
+Here you move the sixth item, **Move model data to its own package** to the **Doing** column, and assign yourself to the work item.
 
 Recall that **Move model data to its own package** relates to moving reusable code to its own NuGet package, so that package can be shared among multiple applications.
 

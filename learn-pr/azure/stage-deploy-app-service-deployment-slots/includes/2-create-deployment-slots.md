@@ -24,14 +24,14 @@ When you use more than one deployment slot for a web app, those slots are treate
 
 Deployment slots are available only when your web app uses an App Service plan in the Standard, Premium, or Isolated tier. The following table shows the maximum number of slots you can create:
 
-|     Tier | Maximum staging slots |
-|---------:|:---------------------:|
-|     Free |           0           |
-|   Shared |           0           |
-|    Basic |           0           |
-| Standard |           5           |
-|  Premium |           20          |
-| Isolated |           20          |
+| Tier | Maximum staging slots |
+|---:|:---:|
+| Free | 0 |
+| Shared | 0 |
+| Basic | 0 |
+| Standard | 5 |
+| Premium | 20 |
+| Isolated | 20 |
 
 ## Avoid a cold start during swaps
 
@@ -44,9 +44,13 @@ The initial delay is called a *cold start*. You can avoid a cold start by using 
 Before you create a slot, make sure your web app is running in the Standard, Premium, or Isolated tier:
 
 1. Open your web app in the Azure portal.
+
 1. Select the **Deployment Slots** page. 
+
 1. Select **Add Slot**.
+
 1. Name the slot.
+
 1. Choose whether to clone settings from another slot. If you choose to clone, settings are copied to your new slot from the slot you specify.
 
     ![Name a new deployment slot and choose whether to clone settings](../media/2-add-a-slot.png)

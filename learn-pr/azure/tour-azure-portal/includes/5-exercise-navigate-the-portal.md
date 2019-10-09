@@ -36,7 +36,10 @@ The Azure portal has several features and services available; let's look at some
 
 ![Icon representing the Azure Cloud Shell](../media/5-cloud-shell-icon.png)
 
-The Azure Cloud Shell allows you to use a command-line interface (CLI) to execute commands in your Azure subscription. You can access it by clicking the (`>_`) icon in the toolbar. However, it isn't available in the Sandbox environment - so you will only be able to do this in your own active subscriptions. You can also navigate to <https://shell.azure.com> to launch a Cloud Shell in the browser independent of the portal.
+The Azure Cloud Shell allows you to use a command-line interface (CLI) to execute commands in your Azure subscription. You can access it by clicking the (`>_`) icon in the toolbar. You can also navigate to <https://shell.azure.com> to launch a Cloud Shell in the browser independent of the portal.
+
+> [!NOTE]
+> The Azure Cloud Shell is available in the Sandbox environment, but the Sandbox version of the shell has reduced functionality. To use all of the Azure Cloud Shell features, you will need to use your own Azure subscription.
 
 When you launch the shell, you will see a Welcome window. You can choose either a **Bash** or **PowerShell** environment, depending on your personal preferences. You can also change the shell at any time through the language drop-down on the left side of the shell.
 

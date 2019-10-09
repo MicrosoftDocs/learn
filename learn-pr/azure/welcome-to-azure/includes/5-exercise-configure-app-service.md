@@ -2,24 +2,21 @@ Recall from earlier, that we're using an App Service to run our WordPress applic
 
 Let's have a look at some of this information.
 
-> [!IMPORTANT]
-> This exercise uses the WordPress website you created in the  **Exercise - Create a Website** unit. Please make sure you've completed that exercise before continuing.
-
 1. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. Click on the **Dashboard** link on the left sidebar to access a list of all resources in your subscription.
+1. Select **Dashboard** on the left sidebar to access a list of all resources in your subscription.
 
     [ ![Screenshot showing the MS Learn sandbox subscription with new resources](../media/5-dashboard-resources.png)](../media/5-dashboard-resources-expanded.png#lightbox)
 
-1. Click on the **App Service** with the name you chose it in the previous exercise.
+1. Select the **App Service** with the name you chose it in the previous exercise.
 
     [ ![Screenshot showing the App Service](../media/5-select-app-service.png)](../media/5-select-app-service-expanded.png#lightbox)
 
-1. By default, the *App Service*'s overview is displayed, if not click **Overview**.
+1. By default, the app service's overview is displayed, if not select **Overview**.
 
     [ ![Screenshot showing the App Service overview information](../media/5-overview.png)](../media/5-overview-expanded.png#lightbox)
 
-1. Scroll down in the overview view to where you can see the graphs for your newly created website. These graphs provide statistics about the number of requests received by our website, the amount of data in / data out and the number of errors encountered on the site.
+1. Scroll down in the overview view to where you can see the graphs for your newly created website. These graphs provide statistics about the number of requests received by our website, the amount of data in, data out, and the number of errors encountered on the site.
 
     [ ![Screenshot showing App Service graphs](../media/5-graphs.png)](../media/5-graphs-expanded.png#lightbox)
 
@@ -29,16 +26,17 @@ Let's have a look at some of this information.
 
 Suppose you deployed your website and it becomes popular. By looking at the graphs in the overview, you realize that your site can't effectively manage all the requests it's receiving. To solve the problem, you'll need to increase the server's hardware capacity.
 
-_Scale_ refers to adding network bandwidth, memory, storage, or compute power to achieve better performance.  
+*Scale* refers to adding network bandwidth, memory, storage, or compute power to achieve better performance.  
 
-You may have heard the terms _scaling up_ and _scaling out_.
+You may have heard the terms *scaling up* and *scaling out*.
 
 Scaling up, or vertical scaling means to increase the memory, storage, or compute power on an existing virtual machine. For example, you can add additional memory to a web or database server to make it run faster.
 
 Scaling out, or horizontal scaling means to add extra virtual machines to power your application. For example, you might create many virtual machines configured in exactly the same way and use a load balancer to distribute work across them.
 
 > [!TIP]
-> The cloud is elastic. You could _scale down_ or _scale in_ your deployment if you needed to scale up or scale out only temporarily. Scaling down or scaling in can help you save money.<br><br>**Azure Advisor** and **Azure Cost Management** are two services that help you optimize cloud spend. You can use these services to identify where you're using more than you need, and then scale back to the capacity you're actually using.
+> The cloud is elastic. You could *scale down* or *scale in* your deployment if you needed to scale up or scale out only temporarily. Scaling down or scaling in can help you save money.
+> **Azure Advisor** and **Azure Cost Management** are two services that help you optimize cloud spend. You can use these services to identify where you're using more than you need, and then scale back to the capacity you're actually using.
 
 When you have more time, feel free to go through each section and explore the various options available.
 
@@ -54,10 +52,7 @@ For example, the **Settings** section gives you access to configure various aspe
 
 ## Scale up your App Service
 
-> [!NOTE]
-> The sandbox has limits in so far as allowing us to change any of our current scaling options. However, you'll still be able to follow along in the portal to see the options available. You're welcome to test these options in your personal Azure subscription. However, keep in mind that additional costs will apply.
-
-1. Find the *Settings* configuration section for your App Service. Click on **Scale up (App service plan)**.
+1. In the **Settings** configuration section for your app service, select **Scale up (App service plan)**.
 
     ![Screenshot showing Scale up selection](../media/5-settings-scale.png)
 
@@ -69,19 +64,8 @@ For example, the **Settings** section gives you access to configure various aspe
     | **Production** | This category is ideal for less demanding workloads. In this category, you'll also notice added features such as staging slots, daily backups, and a traffic manager. |
     | **Isolated** | This category is ideal for workloads that require advanced networking and fine-grained scaling. |
 
-    Within each category, there are recommended pricing tiers that will allow us to scale the resources available to our App service. These pricing tiers give us access to the additional features mentioned above.
+    Within each category, there are pricing tiers that will allow us to scale the resources available to our App service. These pricing tiers give us access to the additional features mentioned above.
 
-    > [!NOTE]
-    > Some pricing tiers do not allow for direct migration without redeploying your site. For example, in the production tab, you'll notice that all but the S1 pricing tier is supported for our current scale unit. If we decided that we'd like to move to P1V2, then we'll need to redeploy our application.
+    We'll leave the configuration on the **F1** tier, but know that this is where you can go to make scaling adjustments in your app service if you have changes in load for your application.
 
-1. Select the **D1** pricing tier.
-
-    [ ![](../media/5-scale.png "Screenshot showing available App Service plans")](../media/5-scale-expanded.png#lightbox)
-
-1. Click the **Apply** button to activate the new price tier.
-
-1. The scaling process stops the website while the process runs. You can monitor the scale process's progress using the notification bell as we did earlier.
-
-    ![Screenshot showing scale process progress](../media/5-scale-progess.png)
-
-    Your website is automatically started once the scaling process complete.
+    Let's now take a look at how to use the Cloud Shell to configure Azure resources, such as App Service.
