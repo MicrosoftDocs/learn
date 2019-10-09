@@ -104,13 +104,13 @@ Now you're ready to generate some network traffic between VMs to catch in the fl
 1. Open a command prompt, and then run this command:
 
     ```cmd
-        telnet 10.10.2.4 80
+    telnet 10.10.2.4 80
     ```
 
 1. Run this command:
 
     ```cmd
-        telnet 10.10.2.4 443
+    telnet 10.10.2.4 443
     ```
 
 Both connections fail after a few seconds.
@@ -144,13 +144,13 @@ Connections on ports 80 and 443 should now work without problems.
 1. In the RDP client, connect to **FrontendVM**. At the command prompt, run this command:
 
     ```cmd
-        telnet 10.10.2.4 80
+    telnet 10.10.2.4 80
     ```
 
 1. Run this command:
 
     ```cmd
-        telnet 10.10.2.4 443
+    telnet 10.10.2.4 443
     ```
 
 *Both* connections should now work.

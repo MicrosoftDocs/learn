@@ -100,7 +100,7 @@ Let's start by creating the problematic infrastructure, which includes a configu
 
 1. Run this command to associate a network security group with a subnet.
 
-    ```bash
+    ```azurecli
     az network vnet subnet update \
         --resource-group $rg \
         --name BackendSubnet \
@@ -114,7 +114,7 @@ Now let's use the Azure CLI to set up Network Watcher in the same region as the 
 
 To enable Network Watcher, run this command:
 
-```bash
+```azurecli
 az network watcher configure \
     --resource-group $rg \
     --locations EastUS \
