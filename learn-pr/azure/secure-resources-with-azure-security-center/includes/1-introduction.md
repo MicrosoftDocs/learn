@@ -15,9 +15,8 @@ In this module, you will:
 
 - Configure Azure Security Center to monitor your Azure resources
 - Use the Azure Security Center dashboard to identify potential security issues
-- Analyze the reccommendations made by Security Center 
+- Analyze the recommendations made by Security Center
 
 ## Prerequisites
 
-- Basic familiarity with Azure services.
-- Familiarity with Azure virtual machines and virtual networking.
+- Basic familiarity with Azure services
