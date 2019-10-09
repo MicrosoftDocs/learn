@@ -1,77 +1,81 @@
-
 //@ts-check
 import { question } from 'readline-sync';
 
 class Course {
     constructor(coursecode, coursename, academicyear) {
-        this.coursecode = coursecode;
-        this.coursename = coursename;
-        this.academicyear = academicyear;
+        this.id = coursecode;
+        this.CourseName = coursename;
+        this.AcademicYear = academicyear;
         this.toString = function () {
-            return `${this.coursecode}: ${this.coursename}, ${this.academicyear}\n`;
+            return `${this.id}: ${this.CourseName}, ${this.AcademicYear}\n`;
         };
     }
 }
 
 class Student {
     constructor(studentid, forename, lastname, academicyear) {
-        this.studentid = studentid;
-        this.academicyear = academicyear;
-        this.name = new function Name() {
-            this.forename = forename;
-            this.lastname = lastname;
+        this.id = studentid;
+        this.AcademicYear = academicyear;
+        this.Name = new function Name() {
+            this.Forename = forename;
+            this.Lastname = lastname;
         };
-        this.coursegrades = {};
-        this.addGrade = function (course, grade) {
-            this.coursegrades[course.coursecode] = grade;
+        this.CourseGrades = [];
+        this.addGrade = function (coursename, grade) {
+            this.CourseGrades.push({Course: coursename, Grade: grade});
         };
         this.toString = function () {
-            return `${this.studentid}: ${this.name.forename}, ${this.name.lastname}, ${this.academicyear}\n`;
+            return `${this.id}: ${this.Name.Forename}, ${this.Name.Lastname}, ${this.AcademicYear}\n`;
         };
         this.getGrades = function () {
-            var grades = "";
-            for (var coursecode in this.coursegrades) {
-                grades = `${grades}${coursecode}: ${this.coursegrades[coursecode]}\n`;
-            }
+            let grades = "";
+            this.CourseGrades.forEach (function(coursegrade) {
+                grades = `${grades}${coursegrade.Course}:${coursegrade.Grade}\n`;
+            });
             return grades;
         };
     }
 }
 
 function getCourseData () {
-    var coursecode = question("Course code: ");
-    var coursename = question("Course name: ");
-    var academicyear = question("Academic year: ");
-    var course = new Course(coursecode, coursename, academicyear);
+    let coursecode = question("Course code: ");
+    let coursename = question("Course name: ");
+    let academicyear = question("Academic year: ");
+    let course = new Course(coursecode, coursename, academicyear);
     return course;
 };
 
 function getStudentData () {
-    var studentid = question("Student id: ");
-    var forename = question("Forename: ");
-    var lastname = question("Lastname: ");
-    var academicyear = question("Academic year: ");
-    var student = new Student(studentid, forename, lastname, academicyear);
+    let studentid = question("Student id: ");
+    let forename = question("Forename: ");
+    let lastname = question("Lastname: ");
+    let academicyear = question("Academic year: ");
+    let student = new Student(studentid, forename, lastname, academicyear);
     return student;
 };
 
+function test() {
+    let course1 = getCourseData();
+    process.stdout.write(course1.toString());
 
-var course1 = getCourseData();
-process.stdout.write(course1.toString());
-
-var course2 = getCourseData();
-process.stdout.write(course2.toString());
+    let course2 = getCourseData();
+    process.stdout.write(course2.toString());
     
-var student1 = getStudentData();
+    let student1 = getStudentData();
 
-var student2 = getStudentData();
+    let student2 = getStudentData();
 
-student1.addGrade(course1, "A");
-student1.addGrade(course2, "C");
-student2.addGrade(course2, "A");
+    student1.addGrade(course1.CourseName, "A");
+    student1.addGrade(course2.CourseName, "C");
+    student2.addGrade(course2.CourseName, "A");
 
-process.stdout.write(student1.toString());
-process.stdout.write(student1.getGrades());
+    process.stdout.write(student1.toString());
+    process.stdout.write(student1.getGrades());
 
-process.stdout.write(student2.toString());
-process.stdout.write(student2.getGrades());
+    process.stdout.write(student2.toString());
+    process.stdout.write(student2.getGrades());
+}
+
+//test();
+
+export {Course, Student, getCourseData, getStudentData};

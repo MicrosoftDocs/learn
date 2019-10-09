@@ -9,3 +9,13 @@
 <!-- Don't include a summary section in individual units -->
 
 <!-- Don't include a sentence or section to transition to the next unit. The platform will insert the name of the next unit above the navigation button at the bottom -->
+
+WRAPPER AROUND THE REST API
+HTTP STATUS CODES
+
+EXPLAIN THE IDIOM:
+
+```javascript
+const { item, statusCode } = await containerdata.create(student);
+isOK(statusCode) && process.stdout.write(`Added student with id: ${item.id}\n`);
+```

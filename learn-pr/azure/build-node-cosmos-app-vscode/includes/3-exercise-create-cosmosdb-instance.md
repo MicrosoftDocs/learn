@@ -4,7 +4,7 @@ In the sample scenario, you want to be able to work within Visual Studio Code, b
 
 In this exercise, you'll install the Cosmos DB extension for Visual Studio Code. Then, you'll use the extension to connect to your Azure account and create a Cosmos DB account. You'll add a database and collection for holding students' course grade information to the Cosmos DB account. Finally, you'll create some test documents in the collection, view them, and update them.
 
-This exercises runs on your desktop computer.
+This exercise runs on your desktop computer.
 
 > [!NOTE]
 > This exercise assumes that you've already installed **Visual Studio Code** on your desktop computer.

@@ -2,20 +2,20 @@ Visual Studio Code provides a customizable IDE that enables you to build, test, 
 
 In the sample scenario, you want to use Visual Studio Code as the development environment for creating and testing your Node.js applications.
 
-In this exercise, you'll install node packages that enable you to configure Node.js for use in Visual Studio Code. You'll use this environment to write an application that prompts the user for details of courses, students, and grades, and creates JavaScript objects that capture this information (in the next exercise, you'll see how to save these objects to a collection in Cosmos DB). You'll learn how to use the debugger provided with Visual Studio Code to step through the code and verify that it is working correctly.
+In this exercise, you'll install node packages that enable you to configure Node.js for use in Visual Studio Code. You'll use this environment to write an application that prompts the user for details of courses, students, and grades, and then creates JavaScript objects that capture this information. In the next exercise, you'll see how to save these objects to a collection in Cosmos DB. You'll learn how to use the Visual Studio Code debugger to step through the code and verify it's working correctly.
 
-This exercises runs on your desktop computer.
+This exercise runs on your desktop computer.
 
 > [!NOTE]
 > This exercise assumes that you've already installed **Node.js** and **npm** on your desktop computer.
 
 ## Configure Node.js
 
-1. Start Start Visual Studio Code if it isn't already running.
+1. Start Visual Studio Code if it isn't already running.
 
 2. On the **Terminal** menu, click **New Terminal**.
 
-3. In the **Terminal** window, run the following command to create a new folder named **greds** for the Node application.
+3. In the **Terminal** window, run the following command to create a new folder named **grades** for the Node application.
   
     ```bash
     mkdir grades
@@ -88,57 +88,57 @@ This exercises runs on your desktop computer.
     ```javascript
     class Course {
         constructor(coursecode, coursename, academicyear) {
-            this.coursecode = coursecode;
-            this.coursename = coursename;
-            this.academicyear = academicyear;
+            this.id = coursecode;
+            this.CourseName = coursename;
+            this.AcademicYear = academicyear;
             this.toString = function () {
-                return `${this.coursecode}: ${this.coursename}, ${this.academicyear}\n`;
+                return `${this.id}: ${this.CourseName}, ${this.AcademicYear}\n`;
             };
         }
     }
     ```
 
-    The **Course** class contains the details of a course. A **Course** object has three properties; **coursecode**, **coursename**, and **academicyear**. These properties correspond to the fields in a **Course** document in Cosmos DB. The class also contains a function named **toString** that you can use to convert the contents of a Course object into a formatted string, suitable for display.
+    The **Course** class contains the details of a course. A **Course** object has three properties; **id** (the course code), **CourseName**, and **AcademicYear**. These properties correspond to the fields in a **Course** document in Cosmos DB. The class also contains a function named **toString** you can use to convert the contents of a Course object into a formatted string, suitable for display.
 
 5. Add the following **Student** class to the file, after the **Course** class:
   
     ```javascript
     class Student {
         constructor(studentid, forename, lastname, academicyear) {
-            this.studentid = studentid;
-            this.academicyear = academicyear;
-            this.name = new function Name() {
-                this.forename = forename;
-                this.lastname = lastname;
+            this.id = studentid;
+            this.AcademicYear = academicyear;
+            this.Name = new function Name() {
+                this.Forename = forename;
+                this.Lastname = lastname;
             };
-            this.coursegrades = {};
-            this.addGrade = function (course, grade) {
-                this.coursegrades[course.coursecode] = grade;
+            this.CourseGrades = [];
+            this.addGrade = function (coursename, grade) {
+                this.CourseGrades.push({Course: coursename, Grade: grade});
             };
             this.toString = function () {
-                return `${this.studentid}: ${this.name.forename}, ${this.name.lastname}, ${this.academicyear}\n`;
+                return `${this.id}: ${this.Name.Forename}, ${this.Name.Lastname}, ${this.AcademicYear}\n`;
             };
             this.getGrades = function () {
-                var grades = "";
-                for (var coursecode in this.coursegrades) {
-                    grades = `${grades}${coursecode}: ${this.coursegrades[coursecode]}\n`;
-                }
+                let grades = "";
+                this.CourseGrades.forEach (function(coursegrade) {
+                    grades = `${grades}${coursegrade.Course}:${coursegrade.Grade}\n`;
+                });
                 return grades;
             };
         }
     }
     ```
 
-    The **Student** class represents a student. It has the properties **studentid**, **academicyear**, **name**, and **coursegrades**. The **name** property is a composite type containing the **forename** and **lastname** properties. The **coursegrades** property is an object. This object will contain course code/course grade key/value pairs for the student. The **addGrade** method enables a user to add a course code/course grade pair to this property, and the **getGrades** function returns a formmatted string listing the course codes and grades for the student. The **toString** function returns a string containing the other details of the student.
+    The **Student** class represents a student. It has the properties **id** (the student id), **AcademicYear**, **Name**, and **CourseGrades**. The **Name** property is a composite type containing the **Forename** and **Lastname** properties. The **CourseGrades** property is an object. This object will contain course code/course grade key/value pairs for the student. The **addGrade** method enables a user to add a course code/course grade pair to this property, and the **getGrades** function returns a formatted string listing the course codes and grades for the student. The **toString** function returns a string containing the other details of the student.
 
 6. Add the **getCourseData** function shown below to the **studentgrades.js** file.
 
     ```javascript
     function getCourseData () {
-        var coursecode = question("Course code: ");
-        var coursename = question("Course name: ");
-        var academicyear = question("Academic year: ");
-        var course = new Course(coursecode, coursename, academicyear);
+        let coursecode = question("Course code: ");
+        let coursename = question("Course name: ");
+        let academicyear = question("Academic year: ");
+        let course = new Course(coursecode, coursename, academicyear);
         return course;
     };
     ```
@@ -149,11 +149,11 @@ This exercises runs on your desktop computer.
 
     ```javascript
     function getStudentData () {
-        var studentid = question("Student id: ");
-        var forename = question("Forename: ");
-        var lastname = question("Lastname: ");
-        var academicyear = question("Academic year: ");
-        var student = new Student(studentid, forename, lastname, academicyear);
+        let studentid = question("Student id: ");
+        let forename = question("Forename: ");
+        let lastname = question("Lastname: ");
+        let academicyear = question("Academic year: ");
+        let student = new Student(studentid, forename, lastname, academicyear);
         return student;
     };
     ```
@@ -164,15 +164,15 @@ This exercises runs on your desktop computer.
 
     ```javascript
     function test () {
-        var course1 = getCourseData();
+        let course1 = getCourseData();
         process.stdout.write(course1.toString());
 
-        var course2 = getCourseData();
+        let course2 = getCourseData();
         process.stdout.write(course2.toString());
 
-        var student1 = getStudentData();
+        let student1 = getStudentData();
 
-        var student2 = getStudentData();
+        let student2 = getStudentData();
 
         student1.addGrade(course1, "A");
         student1.addGrade(course2, "C");
@@ -215,7 +215,7 @@ This exercises runs on your desktop computer.
     | Course name: | Computer Science |
     | Academic year: | 2019 |
 
-    The message **C101: Computer Science, 2019** should appear after you have entered the academic year. This is the output from the statement `process.stdout.write(course1.toString());` in the `test` function.
+    The message **C101: Computer Science, 2019** should appear after you've entered the academic year. This is the output from the statement `process.stdout.write(course1.toString());` in the `test` function.
 
 3. At the next set of prompts, enter the following values:
 
@@ -302,7 +302,7 @@ This exercises runs on your desktop computer.
     }
     ```
 
-    The **console** property specifies how the debugger displays and handles console input and output. The **Debug Console** built into Visual Studio Code is intended for output only, and can't read keyboard input (if you try and run the app using the **Debug Console**, the calls to the **question** function will throw an error). Using the **externalTerminal** option causes the debugger to create a separate, fully functional terminal window, that can handle input and output.
+    The **console** property specifies how the debugger displays and handles console input and output. The **Debug Console** built into Visual Studio Code is intended for output only, and can't read keyboard input (if you try to run the app using the **Debug Console**, the calls to the **question** function will throw an error). Using the **externalTerminal** option causes the debugger to create a separate, fully functional terminal window, that can handle input and output.
 
     The **runtimeArgs** property supplies the listed parameters as arguments to the runtime (the **node** app, in this case). The **-r esm** flag was described in the previous task.
 
@@ -320,11 +320,11 @@ This exercises runs on your desktop computer.
 
     ![Screenshot showing **Debug** toolbar in Visual Studio Code. The **Step Into** button is highlighted](../media/5-debug-step-into.png)
 
-    The cursor jumps to the first statement in the **test** function: `var course1 = getCourseData();`
+    The cursor jumps to the first statement in the **test** function: `let course1 = getCourseData();`
 
 6. Click **Step Into** again.
 
-    The cursor moves to the first statement in the **getCourseData** function: `var coursecode = question("Course code: ");`. This is the statement that prompts the user for the code of a new course.
+    The cursor moves to the first statement in the **getCourseData** function: `let coursecode = question("Course code: ");`. This is the statement that prompts the user for the code of a new course.
 
 7. In the **Debug** toolbar, click **Step Over**
 
@@ -342,7 +342,7 @@ This exercises runs on your desktop computer.
 
     The focus returns to Visual Studio Code. The function **getCourseData** has finished, and the cursor is now on the next line in the **test** function: `process.stdout.write(course1.toString());`.
 
-11. In the **Variables** window, examine the **Local** variables. The **course1** variable now has a value. Expand this variable to see the properties it contains. You should see the values that you have just entered assigned to each property:
+11. In the **Variables** window, examine the **Local** variables. The **course1** variable now has a value. Expand this variable to see the properties it contains. You should see the values you've entered assigned to each property:
 
     ![Screenshot showing **Variables** window in Visual Studio Code. The **course1** object is being displayed](../media/5-course1-variable.png)
 
@@ -353,9 +353,9 @@ This exercises runs on your desktop computer.
 
     The `process.stdout.write(course1.toString());` statement runs, and the formatted contents of the **course1** variable appear in the debug terminal window.
 
-13. Click **Step Over** again to run the statement `var course2 = getCourseData();`. Enter a course code, name, and academic year of your choice when prompted in the debug terminal window.
+13. Click **Step Over** again to run the statement `let course2 = getCourseData();`. Enter a course code, name, and academic year of your choice when prompted in the debug terminal window.
 
-14. In the **Variables** window, note that the **course2** variable is now populated.
+14. In the **Variables** window, the **course2** variable is now populated.
 
 15. In the **Debug Console** window, below the editor in Visual Studio Code, at the **>** prompt, type the expression **course2**, and then press Enter.
 
@@ -372,7 +372,7 @@ This exercises runs on your desktop computer.
 
     The application will continue running the **test** function until it completes. You'll be prompted for the details of two students. Enter details of your choice.
 
-17. When the **test** function completes, you'll be returned to the debugger. Note that the **course1**, and **course2** variables no longer appear in the **Variables** window, because they are out of scope when the **test** function ends.
+17. When the **test** function completes, you'll be returned to the debugger. The **course1**, and **course2** variables no longer appear in the **Variables** window, because they're out of scope when the **test** function ends.
 
 18. In the **Debug** toolbar, click **Continue** to allow the application to terminate neatly.
 
@@ -381,4 +381,4 @@ This exercises runs on your desktop computer.
     > [!NOTE]
     > If you need to abort the application before it finishes while in the debugger, click the **Stop** button (with the red square icon) in the **Debug** toolbar. You can restart the application from the beginning using the **Restart** button (with the circular green arrow icon).
 
-You have now seen how to use Visual Studio Code to create, edit, run, and debug a Node.js application.
+You've now seen how to use Visual Studio Code to create, edit, run, and debug a Node.js application.
