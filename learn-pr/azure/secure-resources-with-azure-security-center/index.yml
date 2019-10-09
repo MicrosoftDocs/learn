@@ -12,16 +12,15 @@ title: Protect your resources with Azure Security Center
 summary: In this module, you’ll discover how to detect and respond to threats with Azure Security Center.
 abstract: | 
   In this module, you will:
-  - Use the Azure Security Center dashboard to identify potential security issues.
-  - Learn how to protect VM-based resources and networks.
-  - Configure security policies to monitor created resources in Azure.
-  - Create and customize security alerts.
+  - Configure Azure Security Center to monitor your Azure resources
+  - Use the Azure Security Center dashboard to identify potential security issues
+  - Analyze the reccommendations made by Security Center 
 prerequisites: |
   - Basic familiarity with Azure services.
   - Familiarity with Azure virtual machines and virtual networking.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
-- intermediate
+- beginner
 roles:
 - security-engineer
 products:
@@ -32,10 +31,6 @@ units:
 - learn.azure-security.secure-resources-with-azure-security-center.customize-collection-options
 - learn.azure-security.secure-resources-with-azure-security-center.policy-management
 - learn.azure-security.secure-resources-with-azure-security-center.analyze-recommendations
-- learn.azure-security.secure-resources-with-azure-security-center.jit-vm-access
-- learn.azure-security.secure-resources-with-azure-security-center.configure-endpoint-security
-- learn.azure-security.secure-resources-with-azure-security-center.manage-security-alerts
-- learn.azure-security.secure-resources-with-azure-security-center.configure-a-playbook
 - learn.azure-security.secure-resources-with-azure-security-center.summary
 badge:
   uid: learn.azure-security.secure-resources-with-azure-security-center.badge

@@ -30,14 +30,14 @@ Once an application has been deployed, it's essential to continually evaluate it
 
 Security vulnerability scanning software services are available to help automate this process and assess security concerns on a regular cadence, without burdening teams with costly manual processes, such as penetration testing.
 
-Azure Security Center is a free service, now enabled by default for all Azure subscriptions, that is tightly integrated with other Azure application level services, such as Azure Application Gateway and Azure Web Application Firewall. By analyzing logs from these services, ASC can report on known vulnerabilities in real time, recommend responses to mitigate them, and even be configured to automatically execute playbooks in response to attacks.
-
+**Azure Security Center** is a free service, now enabled by default for all Azure subscriptions, that is tightly integrated with other Azure application level services, such as Azure Application Gateway and Azure Web Application Firewall. By analyzing logs from these services, ASC can report on known vulnerabilities in real time, recommend responses to mitigate them, and even be configured to automatically execute playbooks in response to attacks.
+<!--
 ## Configure Synthetic Security Transactions
 
 Distributed applications and services running in the cloud are by their nature complex pieces of software that comprise many moving parts. In a production environment, it's important to be able to track the way in which users utilize your system, trace resource utilization, and monitor the health and performance of your system. You can use this information as a diagnostic aid to detect and correct issues, and to help spot potential problems and prevent them from occurring.
 
 **Synthetic transactions are the capability to check the availability of an application across a network**. These transactions are automated, self-contained, simulated user transactions. When run, they do not cause regression. There's a link in the summary of this module to learn more about this topic.
-
+-->
 <!-- SDL culture
 Key Vault / MSI
 CSE = App  -> DB & App Storage

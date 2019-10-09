@@ -13,10 +13,9 @@ Security Center provides an easy-to-read dashboard which shows compliance, secur
 
 In this module, you will:
 
-- Use the Azure Security Center dashboard to identify potential security issues.
-- Learn how to protect VM-based resources and networks.
-- Configure security policies to monitor created resources in Azure.
-- Create and customize security alerts.
+- Configure Azure Security Center to monitor your Azure resources
+- Use the Azure Security Center dashboard to identify potential security issues
+- Analyze the reccommendations made by Security Center 
 
 ## Prerequisites
 
