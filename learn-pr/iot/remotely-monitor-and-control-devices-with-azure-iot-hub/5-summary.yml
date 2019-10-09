@@ -44,7 +44,7 @@ quiz:
       isCorrect: true
       explanation: This line of code creates an object based on the Client instance, defined in the npm package "azure-iot-device".
 
-  - content: "What is the role of the string 'SetTelemetryInterval' in the following line of code (running on an IoT Hub device): client.onDeviceMethod('SetTelemetryInterval', onSetTelemetryInterval);?""
+  - content: "What is the role of the string 'SetTelemetryInterval' in the following line of code (running on an IoT Hub device): client.onDeviceMethod('SetTelemetryInterval', onSetTelemetryInterval);?"
     choices:  
     - content: 'It is a descriptive name to appear in system metrics.'
       isCorrect: false
