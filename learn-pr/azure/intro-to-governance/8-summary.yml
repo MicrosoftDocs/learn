@@ -50,7 +50,7 @@ quiz:
         explanation: "Azure Blueprints enables cloud architects to define a repeatable set of Azure resources that implement and adhere to an organization's standards, patterns, and requirements."
       - content: "Azure Security Center"
         isCorrect: false
-        explanation: "Security Center provides analysis and details concerning security related issues."
+        explanation: "Security Center provides analysis and details concerning security-related issues."
       - content: "Role-based Access Control"
         isCorrect: false
         explanation: "Role-based access control (RBAC) provides fine-grained access management for Azure resources, enabling you to grant users only the rights they need to perform their jobs."
