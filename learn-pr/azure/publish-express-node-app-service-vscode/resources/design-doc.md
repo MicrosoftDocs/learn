@@ -62,7 +62,7 @@ Create a JavaScript web application with Express.js and VS Code and publish it t
     - Scaffold an Express.js application
     - Set up a template engine for Express.js
     - Use a route with a template to render a countdown
-    - Deploy your application
+    - Test your application
 
 4. **Publish your application to Azure App Service with Visual Studio Code**
     - What is Azure App Service?
@@ -86,6 +86,7 @@ Create a JavaScript web application with Express.js and VS Code and publish it t
         - Swap and rollback deployment slots
         - Auto swap for continuous development
     - Push updates with Visual Studio Code
+
 7. **Exercise - Update the app in Visual Studio Code and publish the updates**
     - Make changes to your web app using Visual Studio Code
     - Push your changes to the Azure App Service
