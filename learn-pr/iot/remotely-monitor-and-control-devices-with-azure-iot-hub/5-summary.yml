@@ -32,7 +32,7 @@ quiz:
       isCorrect: true
       explanation: The IoT Hub Name forms part of the URL for your IoT Hub, so is exposed publicly. Take care what names you use!
     
-  - content: 'What does the following line of code require that you have done: var DeviceClient = require('azure-iot-device').Client ?'
+  - content: "What does the following line of code require that you have done: var DeviceClient = require('azure-iot-device').Client ?"
     choices:  
     - content: 'Requires that you have created an IoT Hub, using the Azure IoT portal.'
       isCorrect: false
@@ -44,7 +44,7 @@ quiz:
       isCorrect: true
       explanation: This line of code creates an object based on the Client instance, defined in the npm package "azure-iot-device".
 
-  - content: "What is the role of the string SetTelemetryInterval in the following line of code (running on an IoT Hub device): client.onDeviceMethod('SetTelemetryInterval', onSetTelemetryInterval);?""
+  - content: "What is the role of the string 'SetTelemetryInterval' in the following line of code (running on an IoT Hub device): client.onDeviceMethod('SetTelemetryInterval', onSetTelemetryInterval);?""
     choices:  
     - content: 'It is a descriptive name to appear in system metrics.'
       isCorrect: false
