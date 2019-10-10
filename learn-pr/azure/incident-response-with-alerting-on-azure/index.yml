@@ -21,6 +21,7 @@ levels:
 - beginner
 roles:
 - solution-architect
+- security-engineer
 products:
 - azure
 - azure-monitor
