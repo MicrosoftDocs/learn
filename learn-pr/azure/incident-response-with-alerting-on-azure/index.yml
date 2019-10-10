@@ -23,6 +23,7 @@ roles:
 - solution-architect
 products:
 - azure
+- azure-monitor
 units:
 - learn.incident-response-with-alerting-on-azure.1-introduction
 - learn.incident-response-with-alerting-on-azure.2-explore-azure-monitor-alert-types
