@@ -1,11 +1,11 @@
-Once you have a set of alerts you can select a security alert to learn more about the events that triggered it and what steps, if any, you need to take to remediate an attack. Security alerts are grouped by type and date. Selecting a security alert opens a view containing a list of the grouped alerts, as the following figure depicts.
+Once you have a set of alerts, you can select a security alert to learn more about the events that triggered it and what steps, if any, you need to take to remediate an attack. Security alerts are grouped by type and date. Selecting a security alert opens a view containing a list of the grouped alerts, as the following figure depicts.
 
 ![Screenshot that depicts a blade containing a list of grouped security alerts.](../media/M3-ASC-Alerts3.png)
 
-In this case, the alerts that were triggered refer to suspicious malware activity. The first column lists which resources were attacked, the second displays how many times the resource was attacked, the third displays the time of the attack, the fourth displays the state of the alert, and the fifth displays the severity of the attack. After reviewing this information, select a resource that was attacked to get specific information about:
+In this case, the alerts that were triggered refer to suspicious malware activity. The first column lists the attacked resources; the second displays how many times attack was detected. The third column indicates the time of the attack, the fourth displays the state of the alert, and the fifth displays the severity of the attack. After reviewing this information, select a resource that was attacked to get specific information about:
 
 1. **What happened?** (_Possible compromised machine detected_)
-1. **When did it happen?** (_Sunday , August 11 2019 3:01:00 AM_)
+1. **When did it happen?** (_Sunday, August 11 2019 3:01:00 AM_)
 1. **What resource was attacked?** (_vm4_)
 1. **Where is the resource located?** (_Azure_)
 1. **What should you do about it?** (Remediation steps)
@@ -22,7 +22,7 @@ From this page, you can also start an investigation to better understand the tim
 
 ## Relating security alerts together
 
-Attacks against cloud-based resources often generate large amounts of data and picking through all the individual alerts can be a cumbersome process to identify the root cause. As seen above, Security Center tracks individual security alerts, but it also uses big data and machine learning technologies to combine individual alerts into _incidents_.
+Attacks against cloud-based resources often generate large amounts of data, and picking through all the individual alerts can be a cumbersome process to identify the root cause. As seen above, Security Center tracks individual security alerts, but it also uses big data and machine learning technologies to combine different alerts into _incidents_.
 
 An incident is a collection of related individual alerts. Note that this combining of related alerts into incidents is an advanced capability of Security Center and requires at least the Standard tier for Azure Security Center.
 

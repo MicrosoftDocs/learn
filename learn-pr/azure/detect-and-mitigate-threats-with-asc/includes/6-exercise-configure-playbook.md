@@ -1,4 +1,7 @@
-Security playbooks are created directly in the Security Center portal. You will need an Office 365 email account to use this specific set of instructions - if you don't have one, try changing the instructions below to use a different template, or create a Blank Logic App.
+Security playbooks are created directly in the Security Center portal.
+
+> [!IMPORTANT]
+> You will need an Office 365 email account to use this specific set of instructions - if you don't have one, try changing the instructions below to use a different template, or create a Blank Logic App.
 
 1. Under **Automation & Orchestration** in the Azure Security Center left panel, select **Playbooks (Preview).**
 
@@ -31,7 +34,7 @@ Security playbooks are created directly in the Security Center portal. You will 
 
 1. Specify a target email address to send the notification to.
 
-1. You can use the **+ Next step** to create additional logic steps in the flow. In this case, we don't need any more so select **Save** from the menu at the top.
+1. You can use the **+ Next step** to create additional logic steps in the flow. In this case, we don't need anymore so select **Save** from the menu at the top.
 
 ## Run a security playbook
 
@@ -41,9 +44,9 @@ You can run playbooks from the Security Center dashboard.
 
 1. Under **Threat Detection**, select **Security incidents & alerts**.
 
-1. Select an alert and at the top of the alert's page, select the **Run playbooks** button.
+1. Select an alert, and at the top of the alert's page, select the **Run playbooks** button.
 
     ![Screenshot showing the Run playbooks option](../media/7-security-center-playbooks.png)
 
-1. In the Playbooks page, select the playbook that you want to run, and select the **Run** button. If you want to see the playbook before triggering, you can select it, and the designer will open.
+1. In the Playbooks page, select the playbook that you want to run, and select the **Run** button. If you want to see the playbook before triggering, you can choose it, and the designer view will open.
 

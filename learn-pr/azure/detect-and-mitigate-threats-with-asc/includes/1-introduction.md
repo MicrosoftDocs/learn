@@ -2,7 +2,7 @@ Azure Security Center provides a centralized monitoring dashboard for all your o
 
 ![Image background showing threats to our infrastructure](../media/1-intro-logo.png)
 
-**Security Center** is a primary tool in that response plan and learning how to use all it's features can help you quickly identify real threats from false positives. Security Center helps you find & fix vulnerabilities, aids in blocking malicious access and alerts you when your resources are under attack.
+**Security Center** is a primary tool in that response plan, and learning how to use all its features can help you quickly identify real threats from false positives. Security Center enables you to find & fix vulnerabilities, aids in blocking malicious access, and alerts you when your resources are under attack.
 
 ## Learning objectives
 
