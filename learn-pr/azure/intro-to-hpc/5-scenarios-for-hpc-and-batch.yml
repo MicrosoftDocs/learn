@@ -3,7 +3,7 @@ uid: learn.intro-to-hpc.5-scenarios-for-hpc-and-batch
 metadata:
   title: Scenarios for HPC and Batch technologies
   description: In this unit, you'll learn about some uses that HPC resources are often put to and how the technologies you've learned about can address these scenarios.
-  ms.date: 04/30/2019
+  ms.date: 10/10/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -23,9 +23,9 @@ quiz:
     - content: "You want to be able to burst from on-premises into the cloud as needed."
       isCorrect: false
       explanation: "Only HPC Pack enables you to burst from on-premises to cloud VMs. Azure Batch provides a fully managed service for your HPC tasks."
-    - content: "You need the most powerful VMs available on Azure and the Infiniband networking they offer."
+    - content: "You need the most powerful VMs available on Azure and the InfiniBand networking they offer."
       isCorrect: false
-      explanation: "The most powerful H-Series VMs and Infiniband networking can be used without Azure Batch. Azure Batch provides a fully managed service for your HPC tasks."
+      explanation: "The most powerful H-Series VMs and InfiniBand networking can be used without Azure Batch. Azure Batch provides a fully managed service for your HPC tasks."
   - content: "You've a problem that requires you to use 3D Studio Max. You want the flexibility to pay the licensing fees on demand. What's the best Azure solution for this task?"
     choices:
     - content: "Azure Batch"

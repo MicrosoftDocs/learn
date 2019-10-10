@@ -3,7 +3,7 @@ uid: learn.intro-to-hpc.4-microsoft-hpc-pack
 metadata:
   title: Microsoft HPC Pack
   description: In this unit, you'll learn about the Microsoft HPC Pack and how you can use it to manage high-performance resources.
-  ms.date: 04/30/2019
+  ms.date: 10/10/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
