@@ -2,8 +2,10 @@ As companies acquire larger volumes of data and more sophisticated methods to ma
 
 ## Learn More
 
+For more information on solutions in Azure for HPC workloads, visit the following articles:
+
 - [High-performance computing](https://azure.microsoft.com/solutions/high-performance-computing/)
 - [High Performance Computing (HPC) on Azure](https://docs.microsoft.com/azure/architecture/topics/high-performance-computing/)
 - [High performance compute VM sizes](https://docs.microsoft.com/azure/virtual-machines/windows/sizes-hpc)
-- [Azure VM Pricing Detail page](https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/#h-series)
-- [HPC Pack 2016](https://www.microsoft.com/download/details.aspx?id=54507)
+- [Azure VM Pricing Detail page](https://azure.microsoft.com/pricing/details/virtual-machines/windows/#h-series)
+- [HPC Pack 2016 Download](https://www.microsoft.com/download/details.aspx?id=54507)
