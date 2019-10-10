@@ -46,5 +46,5 @@ quiz:
         explanation: "Correct."
       - content: The Secure Score is a count of recommendations made against your monitored resources.
         isCorrect: false
-      - content: The Secure Score is a machine-learning based prediction of how likely your resources are to be infultrated by a hacker. 
+      - content: The Secure Score is a machine-learning based prediction of how likely your resources are to be infiltrated by a hacker. 
         isCorrect: false
