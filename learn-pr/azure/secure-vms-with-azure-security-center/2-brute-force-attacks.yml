@@ -11,6 +11,5 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 6
-interactive: bash
 content: |
   [!include[](includes/2-brute-force-attacks.md)]

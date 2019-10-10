@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.azure-security.detect-and-mitigate-threats-with-asc
+metadata:
+  title: Resolve security threats with Azure Security Center
+  description: In this module, you’ll use the alert capabilities of Azure Security Center to watch for and respond to threats.
+  ms.date: 09/30/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Resolve security threats with Azure Security Center
+summary: In this module, you’ll use the alert capabilities of Azure Security Center to watch for and respond to threats.
+abstract: | 
+  In this module, you will:
+  - View security alerts in Azure Security Center
+  - Define an incident response plan
+  - Use a Security playbook to automate a security response
+prerequisites: |
+  - Basic familiarity with Azure Security Center
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+products:
+- azure
+units:
+- learn.azure-security.detect-and-mitigate-threats-with-asc.introduction
+- learn.azure-security.detect-and-mitigate-threats-with-asc.view-security-alerts
+- learn.azure-security.detect-and-mitigate-threats-with-asc.respond-to-alerts
+- learn.azure-security.detect-and-mitigate-threats-with-asc.define-irp
+- learn.azure-security.detect-and-mitigate-threats-with-asc.use-a-playbook
+- learn.azure-security.detect-and-mitigate-threats-with-asc.exercise-configure-playbook
+- learn.azure-security.detect-and-mitigate-threats-with-asc.summary
+badge:
+  uid: learn.azure-security.detect-and-mitigate-threats-with-asc.badge

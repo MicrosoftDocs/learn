@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-security.detect-and-mitigate-threats-with-asc.respond-to-alerts
+title: Respond to alerts
+metadata:
+  title: Respond to alerts
+  description: Respond to alerts
+  ms.date: 09/30/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-respond-to-alerts.md)]
