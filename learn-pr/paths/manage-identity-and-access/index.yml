@@ -1,16 +1,16 @@
 ### YamlMime:LearningPath
 uid: learn.security.manage-identity-and-access
 metadata:
-  title: Manage identity and access
-  description: Learn how to work with the Azure command line and web portal to create, manage, and control cloud based resources.
+  title: Manage identity and access in Azure
+  description: Learn how to work with subscriptions, users, and groups by configuring Microsoft Azure Active Directory for workloads.
   brand: azure
   ms.date: 10/1/2019
   author: markjulmar
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Manage identity and access
-summary: Learn how to work with the Azure command line and web portal to create, manage, and control cloud based resources.
+title: Manage identity and access in Azure
+summary: Learn how to work with subscriptions, users, and groups by configuring Microsoft Azure Active Directory for workloads.
 prerequisites: None
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
