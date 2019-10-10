@@ -1,23 +1,23 @@
-Azure Monitor is a powerful reporting and analytics tool. Use it for insights into the behavior and running of your environment and applications. You're then able to respond proactively to faults in your system.
+Azure Monitor is a powerful reporting and analytics tool. Use it for insights into the behavior and running of your environment and applications. You can then respond proactively to faults in your system.
 
-Following the downtime faced by your customers, you'd like to set up monitoring on your key resources in Azure. With the monitoring in place, you'd like to make sure the write people are being alerted, at the right level.
+After the downtime that your customers faced, you want to set up monitoring on your key resources in Azure. With the monitoring in place, you want to make sure the right people are being alerted, at the right level.
 
 In this unit, you'll see how Azure Monitor receives resource data, what makes up an alert, and how and when to use one. Finally, you'll learn how to create and manage your own alerts.
 
 ## Data types in Azure Monitor
 
-Azure Monitor receives data from multiple target resources such as applications, operating systems, Azure resources, Azure subscriptions, or Azure tenants. The nature of the resource defines which data types are available. A data type will be one of metric, log, or metric and log.
+Azure Monitor receives data from multiple target resources, such as applications, operating systems, Azure resources, Azure subscriptions, and Azure tenants. The nature of the resource defines which data types are available. A data type will be one of metric, log, or metric and log.
 
-- The focus for **metric** based data types is the numerical time-sensitive values that represent some aspect of the target resource.
-- The focus for **log** based data types is the querying of content data held in structured, record-based, log files that are relevant to the target resource.
+- The focus for *metric*-based data types is the numerical time-sensitive values that represent some aspect of the target resource.
+- The focus for *log*-based data types is the querying of content data held in structured, record-based log files that are relevant to the target resource.
 
-![An image representing the target resources feeding into Azure Monitor and the two principle signal types: metrics and logs](../media/2-azure-resource-signal-types.svg)
+![An image that represents the target resources feeding into Azure Monitor and the two principle signal types: metrics and logs](../media/2-azure-resource-signal-types.svg)
 
 You'll learn about the three different signal types that you can use to monitor your environment:
 
-- **Metric** alerts allow you to have an alert trigger when a specified threshold is exceeded. For example, when CPU usage is greater than 95%.
-- **Activity log** alerts allow you to have an alert when Azure resources change state. For example, when a resource is deleted.
-- **Log** alerts allow you to have alerts based on things written to log files. For example, when a webserver has returned a number of 404 or 500 responses.
+- **Metric** alerts provide an alert trigger when a specified threshold is exceeded. For example, a metric alert can notify you when CPU usage is greater than 95 percent.
+- **Activity log** alerts notify you when Azure resources change state. For example, an activity log alert can notify you when a resource is deleted.
+- **Log** alerts are based on things written to log files. For example, a log alert can notify you when a web server has returned a number of 404 or 500 responses.
 
 ## Composition of an alert rule
 
@@ -26,16 +26,16 @@ You'll learn about the three different signal types that you can use to monitor 
 Every alert or notification available in Azure Monitor is the product of a rule. Some of these rules are built into the Azure platform. You use alert rules to create custom alerts and notifications. No matter which target resource or data source you use, the composition of an alert rule remains the same.
 
 - **RESOURCE**
-  - The **target resource** to be used for the alert rule. It's possible to assign multiple target resources to a single alert rule. The type of resource will define the available signal types.
+  - The *target resource* to be used for the alert rule. It's possible to assign multiple target resources to a single alert rule. The type of resource will define the available signal types.
 - **CONDITION**
-  - The **signal type** to be used to assess the rule. The signal type can be: metric, activity log, or logs. There are others but they're not covered in this module.
-    - The **alert logic** applied to the data that's supplied via the signal type. The structure of the alert logic will change depending on the signal type.
+  - The *signal type* to be used to assess the rule. The signal type can be a metric, an activity log, or logs. There are others, but this module doesn't cover them.
+  - The *alert logic* applied to the data that's supplied via the signal type. The structure of the alert logic will change depending on the signal type.
 - **ACTIONS**
-  - The **action**, for instance sending an email, SMS or using a webhook, and/or 
-  - An **action group**, which typically contains a unique set of recipients for the action.
+  - The *action*, like sending an email, sending an SMS message, or using a webhook 
+  - An *action group*, which typically contains a unique set of recipients for the action.
 - **ALERT DETAILS**
-  - An **alert name** and an **alert description** that should specify its purpose.
-  - The **severity** of the alert if the criteria or logic test evaluates 'true'. Severity is defined by five levels. The severity levels are:
+  - An *alert name* and an *alert description* that should specify its purpose.
+  - The *severity* of the alert if the criteria or logic test evaluates `true`. The five severity levels are:
     - **0**: Critical
     - **1**: Error
     - **2**: Warning
