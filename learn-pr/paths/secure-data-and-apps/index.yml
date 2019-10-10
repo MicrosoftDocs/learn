@@ -1,0 +1,44 @@
+### YamlMime:LearningPath
+uid: learn.security.secure-data-and-apps
+metadata:
+  title: Secure data and applications in Azure
+  description: Learn how to secure your Azure apps and data with encryption, certificates, and policy.
+  brand: azure
+  ms.date: 10/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Secure data and applications in Azure
+summary: Learn how to secure your Azure apps and data with encryption, certificates, and policy.
+prerequisites: None
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+- intermediate
+- advanced
+roles:
+- solution-architect
+- administrator
+- security-engineer
+products:
+- azure
+- azure-policy
+- azure-storage
+- azure-cosmos-db
+- azure-sql-data-warehouse
+- azure-sql-database
+- azure-key-vault
+- azure-api-management
+modules:
+- learn.introduction-to-security
+- learn.top-5-security-items-to-consider
+- learn.azure-security.create-security-baselines
+- learn.azure-security.configure-security-policies-to-manage-data
+- learn.azure.secure-azure-storage-account
+- learn.secure-your-azure-sql-database
+- learn.data-ai.data-warehouse-security
+- learn.azure-security.configure-and-manage-azure-key-vault
+- learn.control-authentication-with-apim
+trophy:
+  uid: learn.security.secure-data-and-apps.trophy
