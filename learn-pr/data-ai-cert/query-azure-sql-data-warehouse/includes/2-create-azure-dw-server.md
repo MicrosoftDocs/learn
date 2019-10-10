@@ -16,9 +16,9 @@ Let's create a sample data warehouse in Azure with sample data. You need an Azur
 
 1. Give the database a name, such as **demodw**.
 
-1. Under the **Server** text box, click **Create new** to open the **New server** blade if it's not visible already.
+1. Under the **Server** text box, click **Create new** to open the **New server** panel if it's not visible already.
     
-1. Provide a valid **Server name**. Use **demo-dw-server**, which makes the full name of the server `demo-dw-server.database.windows.net`.
+1. Use **demo-dw-server** for the **Server name**. The full name of the server should be `demo-dw-server.database.windows.net`.
 
 1. Enter a valid username and password in **Server admin login**.
 
@@ -28,9 +28,9 @@ Let's create a sample data warehouse in Azure with sample data. You need an Azur
 
     ![Choosing the SQL Data Warehouse server](../media/2-select-asdw-server.png)
 
-1. Click **OK** to continue.
+1. Select **OK** to continue.
 
-1. Click the **Select Performance level** hyperlink to open the **Configure performance** blade. The default performance level is **DW1000c**, under **Gen 2**. Move the slider to the left end. The performance level of the server is downgraded to **DW100c**. This level reduces the cost per hour. Click **Apply**.
+1. Select the **Select Performance level** hyperlink to open the **Configure performance** view. The default performance level is **DW1000c**, under **Gen 2**. Move the slider to the left end. The performance level of the server is downgraded to **DW100c**. This level reduces the cost per hour. Click **Apply**.
 
     ![Selecting performance level](../media/2-select-performance-level.png)
 
