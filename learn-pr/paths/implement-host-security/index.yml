@@ -26,9 +26,8 @@ products:
 - azure-portal
 - azure-virtual-machines
 modules:
-- learn.introduction-to-security
-- learn.azure-security.create-security-baselines
 - learn.design-for-security
+- learn.azure-security.create-security-baselines
 - learn.create-linux-vm-in-azure
 - learn.create-a-windows-vm-in-azure
 - learn.secure-your-azure-virtual-machine-disks
