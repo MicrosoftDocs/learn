@@ -32,6 +32,7 @@ modules:
 - learn.azure-security.detect-and-mitigate-threats-with-asc
 - learn.azure-security.secure-vms-with-security-center
 - learn.analyze-infrastructure-with-azure-monitor-logs
+#- learn.incident-response-with-alerting-on-azure
 - learn.azure.capture-application-logs-app-service
 trophy:
   uid: learn.security.manage-security-operations.trophy

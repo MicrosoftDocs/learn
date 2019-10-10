@@ -1,8 +1,10 @@
-Once you have a set of alerts, you can select a security alert to learn more about the events that triggered it and what steps, if any, you need to take to remediate an attack. Security alerts are grouped by type and date. Selecting a security alert opens a view containing a list of the grouped alerts, as the following figure depicts.
+Once you have a set of alerts, you can select a security alert to learn more about the events that triggered it and what steps, if any, you need to take to repel an attack. Security alerts are grouped by type and date. Selecting a security alert opens a view containing a list of the grouped alerts, as the following figure depicts.
 
 ![Screenshot that depicts a blade containing a list of grouped security alerts.](../media/M3-ASC-Alerts3.png)
 
-In this case, the alerts that were triggered refer to suspicious malware activity. The first column lists the attacked resources; the second displays how many times attack was detected. The third column indicates the time of the attack, the fourth displays the state of the alert, and the fifth displays the severity of the attack. After reviewing this information, select a resource that was attacked to get specific information about:
+In this case, the alerts that were triggered refer to suspicious malware activity. The first column lists the attacked resources; the second displays how many times attack was detected. The third column indicates the time of the attack, the fourth displays the state of the alert, and the fifth displays the severity of the attack.
+
+After reviewing this information, a security engineer can select an attacked resource to get specific information about:
 
 1. **What happened?** (_Possible compromised machine detected_)
 1. **When did it happen?** (_Sunday, August 11 2019 3:01:00 AM_)
@@ -26,4 +28,4 @@ Attacks against cloud-based resources often generate large amounts of data, and 
 
 An incident is a collection of related individual alerts. Note that this combining of related alerts into incidents is an advanced capability of Security Center and requires at least the Standard tier for Azure Security Center.
 
-By presenting related alerts together, a security engineer can quickly see the "big picture" of what's happening and start the process of blocking or remediating the attack.
+By presenting related alerts together, a security engineer can quickly see the "big picture" of what's happening and start the process of blocking the attack.
