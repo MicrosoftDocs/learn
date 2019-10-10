@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-security.detect-and-mitigate-threats-with-asc.exercise-configure-playbook
+uid: learn.azure-security.resolve-threats-with-azure-security-center.exercise-configure-playbook
 title: Exercise - configure a Playbook for a security event
 metadata:
   title: Exercise - configure a Playbook for a security event
