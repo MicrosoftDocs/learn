@@ -1,6 +1,6 @@
-Digital information is always subject to the laws of the country or region where it's stored. This concept is known as _data sovereignty_. Many of the concerns that surround data sovereignty relate to enforcing privacy regulations and preventing data that is stored in a foreign country from being subpoenaed by the host country or region's government.
+Digital information is always subject to the laws of the country or region where it's stored. This concept is known as _data sovereignty_. Many of the concerns that surround data sovereignty relate to enforcing privacy regulations and preventing data that are stored in a foreign country from being subpoenaed by the host country or region's government.
 
-In Azure, customer data can be replicated within a geographic area for enhanced data durability in case of a significant data center disaster.
+In Azure, customer data can be replicated within a geographic area for enhanced data durability if there's a significant data center disaster.
 
 > [!IMPORTANT]
 > No matter where customer data is stored, Microsoft does not control or limit the locations from which customers or their end users might access their data.
@@ -9,7 +9,7 @@ In Azure, customer data can be replicated within a geographic area for enhanced 
 
 Azure operates in multiple geographies around the world. Azure geography is a defined area of the world that contains at least one **Azure Region**. An Azure region is an area containing one or more data centers.
 
-Each Azure region is paired with another region within the same geography, forming a _region pair_. The exception is Brazil South, which is paired with a region outside its geography. Across the region pairs Azure serializes platform updates (or planned maintenance) so that only one region is updated at a time. In the event of an outage affecting multiple regions, one region in each pair will be prioritized for recovery.
+Each Azure region is paired with another region within the same geography, forming a _region pair_. The exception is Brazil South, which is paired with a region outside its geography. Across the region pairs Azure serializes platform updates (or planned maintenance) so that only one region is updated at a time. If an outage affecting multiple regions occurs, one region in each pair will be prioritized for recovery.
 
 ![A Geography box contains a regional pair box, which in turn contains two region boxes, each with a box in it labeled datacenter. ](../media/M4_01_04_01.png)
 
