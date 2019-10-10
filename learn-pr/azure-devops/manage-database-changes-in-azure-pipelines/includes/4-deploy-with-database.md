@@ -1,6 +1,6 @@
-At this point, the team's pipeline has four stages. The first stage produces the build artifact and the second stage deploys the _Space Game_ web application to App Service in the _dev_ environment. The third and fourth stages deploy the _Space Game_ web application to the _test_ and _staging_ environments. We have taken out the triggers and approvals from the previous module to concentrate on just this section of the pipeline.
+The team needs to create the Azure SQL Database off of Mara's prototype. She has given them a *bacpac* file so that they can create the database with data in it. After that, they want to test the changes to the application locally using the Azure SQL Database they created. 
 
-Here, you follow along with Andy, Mara, and Tim as they modify the pipeline to add their stages to script the database changes for the DBA and to apply those changes after approval.
+Here, you follow along with Andy, Mara, and Tim as they create the database and run the application locally.
 
 ## Fetch the branch from GitHub
 
@@ -181,19 +181,23 @@ Here you set up your environment to run the web site locally using the Azure SQL
         1. right directory cd
         1. mkdir ~/.microsoft
         1. right directory cd
-        1. dotnet user-secrets set DefaultConnection "Your connection string" Make sure you have replaced the `{your_username}` and `{your_password}` with the username and password you set up when you created the database
+        1. dotnet user-secrets set "ConnectionStrings:DefaultConnection" "Your connection string" Make sure you have replaced the `{your_username}` and `{your_password}` with the username and password you set up when you created the server.
         1. dotnet user-secrets list
     1. If you are on Windows, the location for the file is
-        1. ...
-    1. Build the application
-    1. Run the application
+        1. %APPDATA%\Microsoft\UserSecrets\(GUID)\secrets.json
+        1. dotnet user-secrets set "ConnectionStrings:DefaultConnection" "Your     connection string" Make sure you have replaced the `{your_username}`     and `{your_password}` with the username and password you set up when     you created the server.
+        1. dotnet user-secrets list
+1. Build the application
+1. Run the application
+
+**Mara:** Great! We have it running locally. Let's put it on the pipeline.
 
 --------------------------------
+**New Unit**
 
+At this point, the team's pipeline has four stages. The first stage produces the build artifact and the second stage deploys the _Space Game_ web application to App Service in the _dev_ environment. The third and fourth stages deploy the _Space Game_ web application to the _test_ and _staging_ environments. We have taken out the triggers and approvals from the previous module to concentrate on just this section of the pipeline.
 
-
-
-
+Here, you follow along with Andy, Mara, and Tim as they modify the pipeline to add their stages to script the database changes for the DBA and to apply those changes after approval.
 
 ## Create the Azure App Service environments
 
@@ -374,10 +378,10 @@ To add the variable:
     | **WebAppNameTest**    | **tailspin-space-game-web-test-NNN**    |
     | **WebAppNameStaging** | **tailspin-space-game-web-staging-NNN** |
     | **adminlogin**        | **azuresql** |
-    | **adminPassword**     | The password you assigned when you created the database |
+    | **adminPassword**     | The password you assigned when you created the SQL server instance|
     | **subscription**      | **Resource Manager - Tailspin - SpaceGame**  |
     | **servername**        | **tailspinserverNNN**  |
-    | **databasename**      | **tailspindatabaseNNN**  |
+    | **databasename**      | **tailspindatabase**  |
 
     Be sure to replace each example value with the App Service instance that corresponds to your environment.
 
