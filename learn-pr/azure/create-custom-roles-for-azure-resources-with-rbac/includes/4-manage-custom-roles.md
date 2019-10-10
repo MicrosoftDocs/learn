@@ -1,31 +1,31 @@
-## Manage custom roles
+Azure makes it easy for you to find out who can do what actions in your subscription.
 
-In order for companies to manage custom roles within their organization, they need the facility to view custom roles and assignments, so they can keep on top of all the permissions within the company.
+Suppose your company wants to manage their own custom roles. They need to view custom roles and assignments to keep on top of all the permissions within the company.
 
-In the scenario, you are the owner of the subscription, you will learn how to list the custom roles and view assignments from those roles.
+In this unit, you'll learn how to list the custom roles and view assignments from those roles.
 
-### Listing custom roles
+## Listing custom roles
 
-It is a common scenario for a subscription owner to want see all the current custom roles within their organization. This will allow them to fully understand the current role structure and permissions of their organization
+A subscription owner often wants to see all the current custom roles within an organization. This facility allows them to fully understand the current role structure and permissions.
 
-To list all the current roles, you can use the following Azure CLI command
+To list all the current roles, you use the following Azure CLI command:
 
 ```Azure CLI
 az role definition list --custom-role-only true --output json | jq '.[] | {"roleName":.roleName, "roleType":.roleType}'
 ```
 
 > [!TIP]
-> Notice how the command only asks for rolename and role type, this makes it easier to view lots of roles rather than each having a verbose entry
+> Notice how the command only asks for role name and role type. This makes it easier to view lots of roles rather than each having a verbose entry.
 
-### Viewing a specified role
+## Viewing a specified role
 
-If you wish to see the full verbose entry for a specific role, the following Azure CLI command can be used
+If you wish to see the full verbose entry for a specific role, you use the following Azure CLI command:
 
 ```Azure CLI
-    az role definition list --name "Virtual Machine Manager"
+az role definition list --name "Virtual Machine Manager"
 ```
 
-This gives an output similar to:
+This command gives an output similar to:
 
 ```JSON
 [
@@ -63,11 +63,11 @@ This gives an output similar to:
 ]
 ```
 
-### Role assignments
+## Role assignments
 
-Being able to easily view whom is assigned to roles within your organization is essential in understanding the governance of your organization in Azure.
+To understand the governance of your organization in Azure, it's essential to be able to see who is assigned the roles.
 
-The following, allows you to view every role assignment within your organization
+The following allows you to view every role assignment within your organization:
 
 ```Azure CLI
 az role assignment list [--all]
@@ -81,17 +81,14 @@ az role assignment list [--all]
                         [--subscription]
 ```
 
-### Who can edit roles
+## Who can edit roles?
 
-The **AssignableScopes** property is used to determine whom can create, delete, update or view a custom role
+The **AssignableScopes** property is used to determine who can create, delete, update, or view a custom role.
 
-The following table lists the type of task along with its operation permission in Azure
+The following table lists the type of task, along with its operation permission in Azure:
 
 Task | Operation | Description
 --- | --- | ---
-**Create/Delete** | `Microsoft.Authorization/roleDefinitions/write` | Users that are granted this operation on all the AssignableScopes of the custom role can create (or delete) custom roles for use in those scopes. For example, Owners and User Access Administrators of subscriptions, resource groups, and resources.
-**Update** | `Microsoft.Authorization/roleDefinitions/write` | Users that are granted this operation on all the AssignableScopes of the custom role can update custom roles in those scopes. For example, Owners and User Access Administrators of subscriptions, resource groups, and resources.
-**View** | `Microsoft.Authorization/roleDefinitions/read` | Users that are granted this operation at a scope can view the custom roles that are available for assignment at that scope. All built-in roles allow custom roles to be available for assignment
-
-
-
+**Create/Delete** | `Microsoft.Authorization/roleDefinitions/write` | Users can create or delete custom roles for use in scopes. For example, Owners and User Access Administrators of subscriptions, resource groups, and resources.
+**Update** | `Microsoft.Authorization/roleDefinitions/write` | Users can update custom roles in scopes. For example, Owners and User Access Administrators of subscriptions, resource groups, and resources.
+**View** | `Microsoft.Authorization/roleDefinitions/read` | Users can view the custom roles available for assignment at a scope. All built-in roles allow custom roles to be available for assignment.
