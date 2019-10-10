@@ -1,6 +1,6 @@
 Cosmos DB provides a highly scalable document store suitable for holding a wide range of document types. The SQL API enables you to write applications that can easily query and maintain documents. 
 
-In the sample scenario, you have decided to use Cosmos DB to store the details of courses, students who have taken those courses, and the grades these students achieved. You have previously written and tested code to create course and student objects in memory, and you now need to add functionality to save these documents to Cosmos DB, and to query documents held in Cosmos DB.
+In the sample scenario, you've decided to use Cosmos DB to store the details of courses, students who have taken those courses, and the grades these students achieved. You have previously written and tested code to create course and student objects in memory, and you now need to add functionality to save these documents to Cosmos DB, and to query documents held in Cosmos DB.
 
 In this exercise, you'll extend the JavaScript app that you wrote previously. You'll add code that saves students and course documents to the Cosmos DB collection that you created in the first exercise in this module. You'll also add a query capability that enables users to find the course grades achieved by a specified student in a given academic year, and the grades received by all students that took a particular course.
 
@@ -22,7 +22,7 @@ This exercise runs on your desktop computer.
     export {Course, Student, getCourseData, getStudentData};
     ```
 
-    You will use the exported types and functions in later tasks in this exercise.
+    You'll use the exported types and functions in later tasks in this exercise.
 
 5. Save the file.
 
@@ -30,7 +30,7 @@ This exercise runs on your desktop computer.
 
 1. In the toolbar on the left-hand side of Visual Studio Code, select the **Azure** icon.
 
-2. In the **Cosmos DB** pane, click **Sign in to Azure** and sign in, if you are not already connected.
+2. In the **Cosmos DB** pane, click **Sign in to Azure** and sign in, if you aren't already connected.
 
     ![Screenshot of Cosmos DB pane Visual Studio Code. The user is about to sign in to Azure](../media/7-azure-sign-in.png)
 
@@ -80,9 +80,9 @@ This exercise runs on your desktop computer.
     const containerdata = containerref.items;
     ```
 
-    The `import` statements enable you to use the exported objects, types and functions in the **config.js** and **studentgrades.js** scripts, as well as the **cosmos** package.
+    The `import` statements enable you to use the exported objects, types, and functions in the **config.js** and **studentgrades.js** scripts, as well as the **cosmos** package.
 
-    YOU use the **CosmosClient** object to connect to your Cosmos DB account, using the connection string that you specified in the **config.js** script. The **containerref** object is a reference to the **StudentGrades** collection in the **SchoolDB** database in your Cosmos DB account. You will use the **containerdata** object to access the documents in this collection.
+    You use the **CosmosClient** object to connect to your Cosmos DB account, using the connection string that you specified in the **config.js** script. The **containerref** object is a reference to the **StudentGrades** collection in the **SchoolDB** database in your Cosmos DB account. You'll use the **containerdata** object to access the documents in this collection.
 
 11. Save the file as **cosmosgrades.js**
 
@@ -163,7 +163,7 @@ This exercise runs on your desktop computer.
     }
     ```
 
-    This function takes a course id and academnic year (the partition key), and uses this information to retrieve the corresponding course document from the Cosmos DB collection.
+    This function takes a course id and academic year (the partition key), and uses this information to retrieve the corresponding course document from the Cosmos DB collection.
 
 2. Add the following function to the script:
 
@@ -278,7 +278,7 @@ This exercise runs on your desktop computer.
     }
     ```
 
-    This function tests each of the functions you have created. It performs the following tasks:
+    This code tests each of the functions you've created. It does the following tasks:
 
     1. It creates two courses using values specified by the user with the **getCourseData** function you created in the previous exercises. The code adds both courses to the collection in Cosmos DB using the **addCourse** function, and verifies that the courses were added successfully by querying the with the **getCourse** function.
 
@@ -288,9 +288,9 @@ This exercise runs on your desktop computer.
 
     4. It runs the **queryStudents** function to display the grades for all students that have taken each course.
 
-    5. It removes the student documents from the collection in Cosmos DB with the **deleteStudent** function. The **getStudent** function is used to try and retrieve the student data afterwards. In both cases, the documents should no longer be present, and nothing will be displayed.
+    5. It removes the student documents from the collection in Cosmos DB with the **deleteStudent** function. The **getStudent** function is used to retrieve the student data afterwards. In both cases, the documents should no longer be present, and nothing will be displayed.
 
-    6. It deletes the course documents using the **deleteCourse** function, and calls the **getCourse** function to check that they have been removed.
+    6. It deletes the course documents using the **deleteCourse** function, and calls the **getCourse** function to check that they've been removed.
 
 2. Save the **cosmosgrades.js** file.
 
