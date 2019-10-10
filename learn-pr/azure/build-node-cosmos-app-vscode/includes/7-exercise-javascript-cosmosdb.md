@@ -143,6 +143,15 @@ This exercise runs on your desktop computer.
 
     This function follows the same pattern as the previous functions. It takes a **Course** object as the argument and uses it to create a document for the course in the database.
 
+6. Create the following function that deletes a course from the Cosmos DB collection:
+
+    ```javascript
+    async function deleteCourse(course) {
+        const { item, statusCode } = await containerref.item(course.id, course.AcademicYear).delete();
+        isOK(statusCode) && process.stdout.write(`Deleted course: ${item.id}\n`);
+    }
+    ```
+
 ## Query and retrieve student and course documents from a collection
 
 1. Add the function shown below to the **cosmosgrades.js** script:
@@ -256,6 +265,15 @@ This exercise runs on your desktop computer.
             () => getStudent(student2.id, student2.AcademicYear)
         );
 
+
+        process.stdout.write("\n\nTesting deleteCourse\n\n");
+        await deleteCourse(course1).then(
+            () => getStudent(course1.id, course1.AcademicYear)
+        );
+        await deleteCourse(course2).then(
+            () => getCourse(course2.id, course2.AcademicYear)
+        );
+
         process.stdout.write("\n\nDone\n");
     }
     ```
@@ -271,6 +289,8 @@ This exercise runs on your desktop computer.
     4. It runs the **queryStudents** function to display the grades for all students that have taken each course.
 
     5. It removes the student documents from the collection in Cosmos DB with the **deleteStudent** function. The **getStudent** function is used to try and retrieve the student data afterwards. In both cases, the documents should no longer be present, and nothing will be displayed.
+
+    6. It deletes the course documents using the **deleteCourse** function, and calls the **getCourse** function to check that they have been removed.
 
 2. Save the **cosmosgrades.js** file.
 
@@ -307,23 +327,169 @@ This exercise runs on your desktop computer.
 
     | Prompt  | Value  |
     |---|---|
-    | Course code: | C201 |
+    | Course code: | CS201 |
     | Course name: | Computer Science |
     | Academic year: | 2019 |
 
-    The message **Course data: C201: Computer Science: 2019** should appear after you've entered the academic year. This is the data displayed by the **getCourse** function, after the course has been added to the Cosmos DB collection.
+    The message **Added course with id: CS201** should appear after you've entered the academic year. This is followed by the message **Course data: C201: Computer Science: 2019**.  This is the data displayed by the **getCourse** function, after the course has been added to the Cosmos DB collection.
 
 8. At the next set of prompts, enter the following values:
 
     | Prompt  | Value  |
     |---|---|
-    | Course code: | C202 |
+    | Course code: | CS202 |
     | Course name: | Statistics |
     | Academic year: | 2019 |
 
-    The message **Course data: C202: Statistics: 2019** should appear, indicating that the document for this course has also been added to the Cosmos DB collection.
+    The messages **Added course with id: CS202** and **Course data: C202: Statistics: 2019** should appear, indicating that the document for this course has also been added to the Cosmos DB collection.
 
-9. At the next set of prompts, enter the following values:
+9. When prompted for the details of the first student, enter the following values:
 
     | Prompt  | Value  |
     |---|---|
+    | Student id | SU998 |
+    | Forename | Eeeeee |
+    | Lastname | Ffffff |
+    | Academic year: | 2019 |
+
+    The messages **Added student with id: SU998** should appear, followed by **Student data: SU998: Eeeeee, Ffffff: 2019** displayed by the **getStudent** function.
+
+10. When prompted for the details of the second student, enter the following values:
+
+    | Prompt  | Value  |
+    |---|---|
+    | Student id | SU999 |
+    | Forename | Gggggg |
+    | Lastname | Hhhhhh |
+    | Academic year: | 2019 |
+
+    The messages **Added student with id: SU999** and **Student data: SU999: Gggggg, Hhhhhh: 2019** should be displayed.
+
+11. You should then see the following sequence of messages as the remaining functionality is tested:
+
+    ```text
+    Testing updateStudent
+
+    Updated student with id: SU998
+    Student data: SU998: Eeeeee, Ffffff: 2019
+    Computer Science:A
+    Statistics:C
+    Updated student with id: SU999
+    Student data: SU999: Gggggg, Hhhhhh: 2019
+    Computer Science:B
+    Statistics:D
+
+
+    Testing queryStudents
+
+
+    Query returned {"id":"SU998","Forename":"Eeeeee","Lastname":"Ffffff","Course":"Computer Science","Grade":"A"}
+
+    Query returned {"id":"SU999","Forename":"Gggggg","Lastname":"Hhhhhh","Course":"Computer Science","Grade":"B"}
+
+    Query returned {"id":"SU998","Forename":"Eeeeee","Lastname":"Ffffff","Course":"Statistics","Grade":"C"}
+
+    Query returned {"id":"SU999","Forename":"Gggggg","Lastname":"Hhhhhh","Course":"Statistics","Grade":"D"}
+
+
+    Testing deleteStudent
+
+    Deleted student with id: SU998
+    Deleted student with id: SU999
+
+
+    Testing deleteCourse
+
+    Deleted course: CS201
+    Deleted course: CS202
+
+
+    Done
+    ```
+
+12. Close the debug terminal window.
+
+## Verify the documents in the Cosmos DB database
+
+1. Return to the **cosmosgrades.js** script.
+
+2. In the **test** function, comment out the statements that test the **deleteStudent** and **deleteCourse** functions:
+
+    ```javascript
+    /*
+    process.stdout.write("\n\nTesting deleteStudent\n\n");
+    await deleteStudent(student1).then(
+        () => getStudent(student1.id, student1.AcademicYear)
+    );
+    await deleteStudent(student2).then(
+        () => getStudent(student2.id, student2.AcademicYear)
+    );
+
+    process.stdout.write("\n\nTesting deleteCourse\n\n");
+    await deleteCourse(course1).then(
+        () => getStudent(course1.id, course1.AcademicYear)
+    );
+    await deleteCourse(course2).then(
+        () => getCourse(course2.id, course2.AcademicYear)
+    );
+    */
+    ```
+
+3. Run the application again, and enter the same data as before.
+
+4. When the app has finished, in Visual Studio Code, in the left-hand toolbar, click the **Azure** icon.
+
+5. In the **Cosmos DB** pane, expand your Azure account, expand the **\<your name or initials\>school** Cosmos DB account, expand the **SchoolDB** database, expand the **StudentCourseGrades** collection, right-click **Documents**, and then click **Refresh**.
+
+    ![Screenshot of Cosmos DB pane Visual Studio Code. The user has selected the **Refresh** command](../media/7-cosmosdb-refresh.png)
+
+6. Expand the **Documents** folder. You should see the four documents that you created in the first exercise (**C101**, **C102**, **SU001**, and **SU002**), together with the four documents created by the cosmosgrades.js app:
+
+    ![Screenshot of Cosmos DB pane Visual Studio Code showing the documents in the **StudentCourseGrades** collection](../media/7-cosmosdb-documents.png)
+
+7. Click the **CS201** document. It should look similar to this:
+
+    ```json
+    {
+        "id": "CS201",
+        "CourseName": "Computer Science",
+        "AcademicYear": "2019",
+        "_rid": "VHU7AIjfokgLAAAAAAAAAA==",
+        "_self": "dbs/VHU7AA==/colls/VHU7AIjfokg=/docs/VHU7AIjfokgLAAAAAAAAAA==/",
+        "_etag": "\"9f004e6d-0000-1000-0000-5d9f15620000\"",
+        "_attachments": "attachments/",
+        "_ts": 1570706786
+    }
+    ```
+
+    The contents of the **id**, **CourseName**, and **AcademicYear** fields should match the input you provided for course **CS201** when you ran the app.
+
+    If time allows, also examine the **CS202** document.
+
+8. Click the **SU998** student document. You should see the details of the student, including the grades for each course in the **CourseGrades** array:
+
+    ```json
+    {
+        "id": "SU998",
+        "AcademicYear": "2019",
+        "Name": {
+            "Forename": "Eeeeee",
+            "Lastname": "Ffffff"
+        },
+        "CourseGrades": [
+            {
+                "Course": "Computer Science",
+                "Grade": "A"
+            },
+            {
+                "Course": "Statistics",
+                "Grade": "C"
+            }
+        ],
+        "_rid": "VHU7AIjfokgNAAAAAAAAAA==",
+        "_self": "dbs/VHU7AA==/colls/VHU7AIjfokg=/docs/VHU7AIjfokgNAAAAAAAAAA==/",
+        "_etag": "\"9f000e78-0000-1000-0000-5d9f158a0000\"",
+        "_attachments": "attachments/",
+        "_ts": 1570706826
+    }
+    ```
