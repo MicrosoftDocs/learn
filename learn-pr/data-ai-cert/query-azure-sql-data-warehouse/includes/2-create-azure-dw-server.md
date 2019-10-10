@@ -10,7 +10,7 @@ Let's create a sample data warehouse in Azure with sample data. You need an Azur
 
     ![Creating a SQL data warehouse](../media/2-create-sql-dw.png)
 
-1. In the **Basics** page, Select a subscription for the database. Ideally, select one with available Azure credit to avoid any cost to your account.
+1. On the **Basics** page, select a subscription for the database. Ideally, select one with available Azure credit to avoid any cost to your account.
 
 1. Create a new resource group named **mslearn-demodw**. Use this name so that you can clean up everything at the end of this module.
 
