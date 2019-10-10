@@ -10,11 +10,11 @@ In researching options for the engineering organization, you've looked at Azure 
 
 ![HPC Pack Hybrid](../media/4-hpc-pack-hybrid.svg)
 
-From the knowledge you've acquired in this module, try thinking about Microsoft HPC Pack as a version of the Azure Batch management and scheduling control layer over which you have full control, and for which you have responsibility. Deployment of HPC Pack isn't a trivial affair – it requires Windows Server 2012 or later.
+Think of Microsoft HPC Pack as a version of the Azure Batch management and scheduling control layer over which you have full control, and for which you have responsibility. Deployment of HPC Pack requires Windows Server 2012 or later, and takes careful consideration to implement.
 
 ## Planning for HPC Pack
 
-Typically, you should prepare for the installation of HPC Pack with a full review of requirements. You need a SQL Server and an Active Directory (AD) controller. You must also plan a topology – that is, how many head or control nodes there should be, and how many worker nodes? Do you need to burst up to Azure? If so, you would pre-provision Azure nodes as part of the cluster. The size of the main machines that make up the control plane – head and control nodes, SQL Server, and AD Controller – will depend on the projected cluster size.
+Typically, you should prepare for the installation of HPC Pack with a full review of requirements. You need a SQL Server and an Active Directory (AD) controller. You must also plan a topology. How many head or control nodes there should be, and how many worker nodes? Do you need to burst up to Azure? If so, you would pre-provision Azure nodes as part of the cluster. The size of the main machines that make up the control plane (head and control nodes, SQL Server, and AD domain controller) will depend on the projected cluster size.
 
 When you install HPC Pack, it shows a job scheduler with support for both HPC and parallel jobs. The scheduler is displayed in the Microsoft Message Passing Interface or MS-MPI. HPC Pack is highly integrated with Windows so you can use Visual Studio for parallel debugging. You'll see all the application, networking, and operating system events from the compute nodes in the cluster in a single, debugger view.
 

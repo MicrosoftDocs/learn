@@ -1,12 +1,12 @@
-Each High-Performance Computing (HPC) challenge has its own requirements and often requires a unique solution.
+Each high-performance computing (HPC) challenge has its own requirements and often requires a unique solution.
 
-As the solution architect for the engineering organization, you need to use HPC solutions on Azure to solve the complex tasks that the organization faces. These tasks include rendering 3D models of the facilities the company designs and storing large amounts of statistical data. The essence of HPC is to use many computers or computers that have highly specified CPU, GPU, and memory configurations to deal with complex, time consuming tasks. 
+As the solution architect for the engineering organization, you need to use HPC solutions on Azure to solve the complex tasks that the organization faces. These tasks include rendering 3D models of the facilities the company designs and storing large amounts of statistical data. The essence of HPC is to use many computers or computers that have highly specified CPU, GPU, and memory configurations to deal with complex, time consuming tasks.
 
 Here, you'll learn about some more typical HPC use cases. This knowledge should help you to identify future problems that might be addressed using HPC solutions.
 
 ## Common HPC use cases
 
-Organizations use HPC to solve varied business problems. Your requirements may be unique but often, a use case falls into one or more of the following scenarios:
+Organizations use HPC to solve varied business problems. Your requirements may be unique but often, a use case falls into one of several common scenarios.
 
 ### Finite element analysis
 

@@ -1,6 +1,6 @@
-For high-intensity tasks with specialized requirements, you may need to use specialized Virtual Machines (VMs).
-
 The 3D models used in your engineering organization require many calculations to render and use memory resources intensively. You find that standard VMs render these models relatively slowly. These delays affect the productivity of your engineers and you'd like to avoid them.
+
+For high-intensity tasks with specialized requirements, you may need to use specialized virtual machines (VMs).
 
 Here, you'll learn about VM tiers in Azure that support specialized high-performance tasks.
 
@@ -8,7 +8,7 @@ Here, you'll learn about VM tiers in Azure that support specialized high-perform
 
 As the solution architect for the engineering organization, you've already seen how Azure Batch orchestrates hundreds and thousands of nodes working together in parallel. The emphasis is on the sheer number of VMs that can be orchestrated in parallel. This process means that work is achieved in a fraction of the time. However, some use cases also call for especially powerful VMs with exceptional CPU, memory, and networking capabilities. In these cases, use Azure VM HPC instances. HPC Instances are a series of Azure VMs expressly designed to cater for some of the harder aspects of HPC scenarios.
 
-Azure *H-series* VMs are a family of the most powerful and fastest CPU-based VMs on Azure. These VMs are optimized for applications that require high CPU frequencies or large amounts of memory per core requirements. The basic H-series is well suited to use cases like genomic research, seismic and reservoir simulation, financial risk modeling, and molecular modeling. 
+Azure *H-series* VMs are a family of the most powerful and fastest CPU-based VMs on Azure. These VMs are optimized for applications that require high CPU frequencies or large amounts of memory per core requirements. The basic H-series is well suited to use cases like genomic research, seismic and reservoir simulation, financial risk modeling, and molecular modeling.
 
 The VMs feature the Intel Xeon E5-2667 v3 Haswell 3.2 GHz CPU with DDR4 memory. Configurations range from 8 cores and 56 GB at the lower end – the H8 SKU – to 16 cores and 224 GB at the higher end – the H16m SKU.
 
@@ -24,13 +24,13 @@ The *HC-series* of VMs are optimized for applications driven by dense computatio
 
 ## Remote Direct Memory Access
 
-A subset of the H-series – the H16r and H16mr SKUs – and both the HB and HC-series VMs also use a second low-latency, high-throughput network interface called Remote Direct Memory Access (RDMA). The RDMA can give a significant boost to the performance of Message Passing Interface (MPI) applications.
+A subset of the H-series – the H16r and H16mr SKUs – and both the HB and HC-series VMs also use a second low-latency, high-throughput network interface called Remote Direct Memory Access (RDMA). RDMA enables direct memory access between systems without involvement of the operating system. On Azure, network connections over an InfiniBand network enable this high-speed access.
 
-MPI is a protocol for communication between computers as they run complex HPC tasks in parallel. To use it, your developers must use an implementation of the protocol, which is usually a library of routines in a .dll. 
+MPI is a protocol for communication between computers as they run complex HPC tasks in parallel. To use it, your developers must use an implementation of the protocol, which is usually a library of routines in a .dll. RDMA can give a significant boost to the performance of Message Passing Interface (MPI) applications.
 
 Ask your developers if they are using MPI. If the answer is yes, you should ensure that the VM tier and size you select supports the protocol. Otherwise, your nodes will not communicate at the highest possible speed.
 
-## Infiniband interconnects
+## InfiniBand interconnects
 
 Infiniband is a data interconnect hardware standard for HPC that is often used to accelerate communications between components both within a single server and between servers. It has been designed to support the highest speeds and the lowest latency for messages between CPUs and between processors and storage components.
 
