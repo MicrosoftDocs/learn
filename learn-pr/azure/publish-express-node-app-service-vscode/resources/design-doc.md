@@ -72,7 +72,7 @@ Create a JavaScript web application with Express.js and VS Code and publish it t
     - Describe the deployment process through Visual Studio Code
     - Describe the debugging process through Visual Studio Code
 
-5. **Exercise -  Publish your application to Azure App Service with Visual Studio Code**
+5. **Exercise - Publish your application to Azure App Service with Visual Studio Code**
     - Install the Azure App Service extension
     - Sign in to your Azure account through the Azure App Service explorer
     - Deploy a new Azure App Service Web App using the Azure App Service extension

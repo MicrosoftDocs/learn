@@ -27,8 +27,10 @@ products:
 - azure
 units:
 - learn.azure.publish-express-node-app-service-vscode.1-introduction
-- learn.azure.publish-express-node-app-service-vscode.2-content
-- learn.azure.publish-express-node-app-service-vscode.3-exercise
+- learn.azure.publish-express-node-app-service-vscode.2-create-express-web-application-vs-code
+- learn.azure.publish-express-node-app-service-vscode.3-exercise-create-express-web-application-vs-code
+- learn.azure.publish-express-node-app-service-vscode.4-publish-app-azure-app-service-vs-code
+- learn.azure.publish-express-node-app-service-vscode.5-exercise-publish-app-azure-app-service-vs-code
 - learn.azure.publish-express-node-app-service-vscode.4-summary
 badge:
   uid: learn.azure.publish-express-node-app-service-vscode.badge
