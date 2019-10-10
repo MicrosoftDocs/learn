@@ -16,10 +16,10 @@ The IoT Central app, with a Trial subscription, will be deleted automatically wh
 
 Take your interest further with:
 
-- [Build workflows with the IoT Central connector in Microsoft Flow](https://docs.microsoft.com/en-us/azure/iot-central/howto-add-microsoft-flow)
-- [Azure IoT Central Documentation](https://docs.microsoft.com/en-us/azure/iot-central/)
+- [Build workflows with the IoT Central connector in Microsoft Flow](https://docs.microsoft.com/azure/iot-central/howto-add-microsoft-flow)
+- [Azure IoT Central Documentation](https://docs.microsoft.com/azure/iot-central/)
 - [Azure Certified for IoT device catalog](https://catalog.azureiotsolutions.com/)
 
-And look out for and complete additional Learn modules in this learning path.
+And look out for additional Learn modules in this learning path.
 
-To finish this module and earn your rewards, complete a final knowledge check.
+To finish this module, and earn your rewards, complete a final knowledge check.
