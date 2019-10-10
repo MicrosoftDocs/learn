@@ -4,10 +4,9 @@ metadata:
   title: Secure your cloud data in Azure learning path
   description: Azure was designed for security and compliance. Learn how to leverage the built-in services to store your app data securely to ensure that only authorized services and clients have access to it.
   brand: azure
-  ms.date: 09/24/2018
+  ms.date: 10/1/2019
   author: markjulmar
   ms.author: smmark
-  #ms.learn-contact: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Secure your cloud data
