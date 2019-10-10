@@ -42,12 +42,12 @@ For the previous Azure Monitor alert you didn't add any actions. You just viewed
     | Resource group | **<rgn>[sandbox resource group name]</rgn>** |
     | ACTION NAME | **Email the operations team** |
     | ACTION TYPE | Email/SMS/Push/Voice |
-    | Email | **Your email address** |
+    | Email | Checked and enter **Your email address** |
     | | |
 
     ![Screenshot showing adding an action group and an email alert](../media/7-email-setup.png)
 
-1. At the bottom of the **Add action group** pane, select **OK**.
+1. Select **OK** on the **Email/SMS/Push/Voice** configuration. At the bottom of the **Add action group** pane, select **OK**.
 
 1. Finally, you'll need to give the alert a name and a description.  In the **ALERT DETAILS** section, provide the following information:
 
