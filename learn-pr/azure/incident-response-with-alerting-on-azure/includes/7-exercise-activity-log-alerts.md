@@ -14,7 +14,7 @@ Your goal is to set up the Linux VM and create an activity log monitoring rule t
 
 1. The **Filter by subscription** drop-down should already be populated with the **Concierge Subscription**. In the **Filter by resource type** drop-down select **Virtual machines**.
 
-1. We want alerts when any virtual machin in our resource group is deleted. Select the **<rgn>[sandbox resource group name]</rgn>** resource group, then select **Done** at the bottom of the page.
+1. We want alerts when any virtual machine in our resource group is deleted. Select the **<rgn>[sandbox resource group name]</rgn>** resource group, then select **Done** at the bottom of the page.
 
     ![Image showing the select a resource page](../media/7-alert-select-resource.png)
 
