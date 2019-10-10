@@ -29,140 +29,89 @@ This branch serves as your _release_ branch. It contains the _Space Game_ projec
 
 Here you use [Azure portal](https://portal.azure.com?azure-portal=true) to create the database. In later learning paths you will create your infrastructure using the pipeline.
 
-1. Navigate to your [Azure portal](https://portal.azure.com?azure-portal=true) and create a new Azure SQL database, database server and resource group for the resources you will need in this and the next exercise.
-1. In the left pane, select **+ Create a resource**, **Databases**, and then **SQL Database**.
+### Get the bacpac file and upload it to Azure storage
 
-    ![The "New" page in the Azure portal showing the databases options that are available in the Azure Marketplace](../media/3-new-database-annotated.png)
+Mara has created the development database with test data in it. She exported this database for you to use. The export is in a file format called *.bacpac*. This format has the database schema and the data. You need to get this file and put it in blob storage on Azure so your SQL Server logical instance can create a database from it.
 
-1. On the **Create SQL Database** page, specify the values in the following table for the database properties.
+1. Download the [bacpac file](https://learnmodulestorage.blob.core.windows.net/moduleblobs/tailspindatabase-2019-10-8-9-23.bacpac?azure-portal=true). You will need to upload this to your storage account later.
+1. Navigate to your [Azure portal](https://portal.azure.com?azure-portal=true) and select **+ Create a Resource**.
+1. In the search, type **Storage account**.
+1. On the *Storage account* page select **Create**
+1. Fill in the *Create storage account* page as follows:
+
+    | Property  | Value  |
+    |---|---|
+    | Subscription | < your subscription > |
+    | Resource Group | **tailspin-space-game-rg** |
+    | Storage account name | This must have a unique name across Azure. We suggest using something like **tailspinstorageNNN**, where *NNN* is a random number. |
+    | Location | Choose a location near you that supports this kind of resource. |
+
+   You can leave the rest as the default values.
+
+1. Select **Review and create**. Then select **Create**.
+1. Wait for the storage account to be created and select **Go to resource**.
+1. Under **Services** select **containers**.
+1. In the Containers page, select **+ Container**.
+1. In the Name field type **tailspinbacpac** and select **OK**.
+1. Select the **tailspinbacpac** container.
+1. On the *tailspinbacpac* page, select **Upload**.
+1. Upload the *tailspindatabase.bacpac* file that you downloaded earlier.
+
+### Create the SQL Server logical instance and the database
+
+Here you create the SQL Server that will hold your new database.
+
+1. Navigate to your [Azure portal](https://portal.azure.com?azure-portal=true) and select **+ Create a Resource**.
+1. In the search, type **SQL server (logical server)**.
+1. On the *SQL server (logical server)* page select **Create**.
+1. Fill in the *Create SQL database server* page as follows:
 
     | Property  | Value  |
     |---|---|
     | Subscription | < your subscription > |
     | Resource Group | Create a new resource group and call it **tailspin-space-game-rg** |
-    | Database name | The database must have a unique name. We suggest using something like **tailspindatabaseNNN**, where *NNN* is a random number. |
-    | Server | Select **Create new**, and enter the details that are in the following table. |
-    | Want to use SQL elastic pool? | No |
-    | Compute + storage | General purpose |
-
-    For the server, specify the following details in the **New server** pane, and then click **Select**.
-
-    | Property  | Value  |
-    |---|---|
-    | Server name | **tailspinserver<em>NNN</em>**, where *NNN* is the same number that you selected for the database |
+    | Server name | The server must have a unique name. We suggest using something like **tailspindserverNNN**, where *NNN* is a random number. |
     | Server admin login | **azuresql** |
     | Password | Enter a password that meets the requirements. |
     | Confirm password | Confirm your password. |
-    | Location | Enter a location near you. |
-    | Allow Azure services to access server | Checked |
 
 1. Select **Review + create**.
+1. Select **Create**, and wait for the server to be created before you continue.
+1. Once the server has been created, select **Go to resource**.
+1. Select **Import database**.
+**TODO screenshot**
+1. On the *Import database* page select your subscription and then select **Storage - Configure required settings**.
+**TODO screenshot**
+1. On your *Storage accounts* page select **tailspinstorageNNN**, where *NNN* is your number.
+1. On the *Containers* page, select **tailspinbacpac**.
+1. Highlight the **tailspindatabase.bacpac** file and select **Select**.
+1. Back on the *Import database* page, enter **azuresql** for the admin username and the password you used to set up the SQL Server instance.
+1. Select **OK** and wait for the database to be created.
+1. Select **Go to resource**
 
-1. Select **Create**, and wait for the server and database to be created before you continue.
+### Explore the database
 
-1. Once the server, database and storage has been created, select **Go to resource**.
+Here you explore the database you just imported. To access the database from your local machine you need to set a firewall rule.
 
-1. On the **tailspindatabaseNNN** page, select **Connection strings**. Copy this connection string. You will need it to connect your App Service to the Azure SQL database.
+1. At the top of the *tailspindatabase* page, select **Set server firewall**.
+1. Your current IP address is printed next to **Client IP address**. Enter the following rule:
 
-   ![Azure portal selecting connection strings page](../media/4-get-connection-string.png)
+  | Property  | Value  |
+  |---|---|
+  | Rule name| LocalIP |
+  | Start IP | Enter your IP address |
+  | End IP | Enter your IP address. |
 
-    Notice that the connection string doesn't show your username and password. You'll need to fill those in when you're ready to use this string.
+1. Select **Save** at the top and then **OK**.
+1. Navigate back to the *tailspindatabase* page and select select **Query editor**.
+1. Enter **azuresql** for the admin username and your password for the password. If you get an error that has an IP address, go back and put that IP address in the LocalIP firewall rule you created.
+1. Expand **Tables**, and then expand each table in turn. You should see four tables **dbo.Profile**, **dbo.Scores**, **dbo.Achievements**, and **dbo.ProfileAchievements**, together with the columns and keys for each table.
 
-1. In order to access the database you just created, you need to set a firewall rule to allow your IP address.
-    1. Select **SQL databases** on the far left side menu in your Azure portal.
-    1. Select **tailspindatabaseMNNN** where NNN is your random number.
-    1. At the top, select **Set server firewall**.
-    1. Your current IP address is printed next to **Client IP address**. Enter the following rule:
-
-    | Property  | Value  |
-    |---|---|
-    | Rule name| LocalIP |
-    | Start IP | Enter your IP address |
-    | End IP | Enter your IP address. |
-
-    1. Select **Save** at the top and then **OK**.
-
-## Create the tables
-
-You can now create the tables to store the data.
-
-1. Select **SQL databases** on the far left side menu.
-1. Select **tailspindatabaseMNNN** where NNN is your random number.
-1. On the **tailspoindatabaseNNN** page, select **Query editor**.
-
-1. On the **tailspindatabaseNNN - Query editor** page, enter the following details, and then select **OK** to connect to the database service.
-
-    | Property  | Value  |
-    |---|---|
-    | Authorization type | SQL server authentication |
-    | Login | azuresql |
-    | Password | Specify the password that you used when you created this user. |
-
-1. In your local **database** branch, find the **CreateTables** file and copy the entire contents to the clipboard. In the **Query 1** pane in the Query Editor, paste the SQL statements you copied, and then select **Run**. This statement creates the new tables to hold the profile and score data for the SpaceGame website. Verify that the statement runs without any errors.
-
-1. In the database window, select the **Refresh** button on the toolbar. Expand **Tables**, and then expand each table in turn. You should see the four tables (**dbo.Profile**, **dbo.Scores**, **dbo.Achievements**, and **dbo.ProfileAchievements**), together with the columns and keys for each table.
-
-    > [!NOTE]
-    > *dbo* stands for *database owner*. It's the default schema in the database. All four tables were created in this schema.
-
-    ![The Query editor window in the Azure portal. The user has entered a statement to create the Courses table](../media/4-create-tables.png)
-
-## Import the data
-
-1. Back in Visual Studio Code, open the **Data** folder and notice four **.csv** files. Each .csv file there holds the test data the website will need and corresponds to a table you just created. Open a terminal and make sure that you're in the **Data** folder.
-
-    ```bash
-    cd Data
-    ```
-
-1. Create the variables that you will use in the later steps. Replace `NNN` with the number that you used for your database and server and use the password you created.
-
-    ```bash
-    export DATABASE_NAME=tailspindatabaseNNN
-    export DATABASE_SERVER=tailspinserverNNN
-    export AZURE_USER=azuresql
-    export AZURE_PASSWORD=[enter your password]
-    ```
-
-1. Run the following command to import the data in the **profiles.csv** file to the dbo.Profiles table.
-
-    ```bash
-    bcp Profiles in profiles.csv -S "$DATABASE_SERVER.database.windows.net" -d $DATABASE_NAME -U $AZURE_USER -P $AZURE_PASSWORD -q -c -t ,
-    ```
-
-    Verify that `bcp` utility imports 20 rows and doesn't report any errors.
-
-1. Run the following command to import the data in the **scores.csv** file to the dbo.Scores table.
-
-    ```bash
-    bcp Scores in scores.csv -S "$DATABASE_SERVER.database.windows.net" -d $DATABASE_NAME -U $AZURE_USER -P $AZURE_PASSWORD -q -c -t ,
-    ```
-
-    Verify that this command imports 24 rows.
-
-1. Run the following command to import the data in the **achievements.csv** file to the dbo.Achievements table.
-
-    ```bash
-    bcp Achievements in achievements.csv -S "$DATABASE_SERVER.database.windows.net" -d $DATABASE_NAME -U $AZURE_USER -P $AZURE_PASSWORD -q -c -t ,
-    ```
-
-    Verify that this command imports 10 rows.
-
-1. Run the following command to import the data in the **profileAchievements.csv** file to the dbo.ProfileAchievements table.
-
-    ```bash
-    bcp ProfileAchievements in profileAchievements.csv -S "$DATABASE_SERVER.database.windows.net" -d $DATABASE_NAME -U $AZURE_USER -P $AZURE_PASSWORD -q -c -t ,
-    ```
-
-    Verify that this command imports 121 rows.
-
-### Query the data in the database
-
-1. Return to the Azure portal and the query editor.
+**TODO screenshot**
 
 1. At the top, select **New Query**.
 
-1. In the **Query 2** pane, enter the following SQL statement, and then select **Run**.
+1. In the **Query 1** pane, enter the following SQL statement, and then select **Run**.
 
     ```SQL
     SELECT * FROM dbo.Profiles
@@ -178,7 +127,73 @@ You can now create the tables to store the data.
     SELECT * FROM dbo.Scores
     ```
 
-    This time you should see the scores in the **Results** window. There are 24 rows.
+    This time you should see the scores in the **Results** window. There are 24 rows. Notice that the Score entry is related to the Profile by the ProfileID. The is the ID from the Profile table.
+1. Change the query as follows, and then select **Run**.
+
+    ```SQL
+    SELECT * FROM dbo.Achievements
+    ```
+
+    This time you should see the list of possible Achievements in the **Results** window. There are 10 rows. Notice that they are not related to any profile. This is because profiles and achievements are a many-to-many relationship. This means a profile can have many achievements, and an achievement and show up on many profiles. To get the right achievements with the right profiles a ProfileAchievements table relates them.
+1. Change the query as follows, and then select **Run**.
+
+    ```SQL
+    SELECT * FROM dbo.ProfileAchievements
+    ```
+
+    Each row is a correlation of the Profile Id and the Achievement Id.
+
+### See the queries in the code
+
+1. In the Tailspin-SpaceGame-Web project and open the **RemoteDBRepository.cs** file.
+1. Notice the methods use SQL commands to get the data from the database. For example:
+
+    ```C#
+    sql = string.Format("Select a.description from dbo.Achievements a JOIN dbo.ProfileAchievements pa on a.id = pa.achievementid Where pa.profileid = {0}", profileId);
+    command = new SqlCommand(sql, conn);
+    using (SqlDataReader reader = command.ExecuteReader())
+    ```
+
+  This query gets the achievements for a specific profile. This is used to populate the achievements section of the player profile popup on the web site.
+
+  Explore some of the other queries in the code file.
+
+  Notice the `conn` variable. This is the connection to the database. We get this using a connection string. Next, you set up the connection to the database in your local environment so you can test the web site locally.
+
+## Set up your local environment
+
+Here you set up your environment to run the web site locally using the Azure SQL Database you created. The web site project is already set up to use the *secrets.json* file mentioned in the last unit. You need to put your connection string into a *secrets.json* file so that the project can find it.
+
+1. Navigate to the **tailspindatabase** page in the Azure portal, select **Connection strings**, and copy this connection string.
+
+   ![Azure portal selecting connection strings page](../media/4-get-connection-string.png)
+
+    Notice that the connection string doesn't show your username and password. You'll need to fill those in when you're ready to use this string.
+1. Open your local **Tailspin.SpaceGame.Web.csproj** file. Notice the entry for `UserSecretsId`. This is how the web project will find your *secrets.json* file. You will use the GUID here to create the file in a directory with that GUID in the name.
+
+    ```xml
+    <UserSecretsId>d7faad9d-d27a-4122-89ff-b9376c13b153</UserSecretsId>
+    ~~~
+
+1. Create the *secrets.json* file. Here is where we differ on whether you are on a Windows machine or a Mac.
+    1. If you are on a Mac, the location for the file is ~/.microsoft/usersecrets/(GUID)/secrets.json
+        1. The `.microsoft` folder may be hidden. To see hidden folders on MacOS open Finder and select `Cmd + Shif + dot`.
+        1. right directory cd
+        1. mkdir ~/.microsoft
+        1. right directory cd
+        1. dotnet user-secrets set DefaultConnection "Your connection string" Make sure you have replaced the `{your_username}` and `{your_password}` with the username and password you set up when you created the database
+        1. dotnet user-secrets list
+    1. If you are on Windows, the location for the file is
+        1. ...
+    1. Build the application
+    1. Run the application
+
+--------------------------------
+
+
+
+
+
 
 ## Create the Azure App Service environments
 

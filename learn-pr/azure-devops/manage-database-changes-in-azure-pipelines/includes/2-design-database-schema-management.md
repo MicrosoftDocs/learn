@@ -86,19 +86,28 @@ This brings up another question. If we create the database and connect to it fro
 
 ## Configure the webapp to use a database connection string
 
-TODO: (How much of this do I show?)
-
 The _Space Game_ web application currently reads leaderboard data from JSON files. The team plans to convert the application to read leaderboard data from a database.
 
 Recall that the _Space Game_ web application uses ASP.NET Core and is written in C#. The source code defines the `IDocumentDBRepository` interface to fetch leaderboard data. The `LocalDocumentDBRepository` class implements `IDocumentDBRepository` to read from local files.
 
-To update the code to read from a database, instead of from files, Mara creates another that connects to Azure SQL Database. This code gets the connection string from the website configuration.
+To update the code to read from a database, instead of from files, Mara creates another implementation of `IDocumentDBRepository` that connects to Azure SQL Database. This code gets the connection string from the website configuration.
 
-TODO: (screenshot)
+  ```C#
+    public class RemoteDBRepository : IDocumentDBRepository
+    {
+        private readonly IConfiguration configuration;
+        private readonly string connectionString;
 
-The connection string uses _SQL Authentication_, which includes the username and password. Storing this information in plain text in the *appsettings.json* would mean that the username and password would be readable by anyone who can access this file. Instead, Mara uses the _Secret Manager_ tool in Visual Studio to store this string in a file that will is not maintained in source control. Let's listen in as she explains this to the team.
+        public RemoteDBRepository(IConfiguration config)
+        {
+            configuration = config;
+            connectionString = configuration.GetConnectionString("DefaultConnection");
+        }
+  ```
 
-**Mara:** When developing the app locally, we can use a file that's named *secrets.json*, which doesn't get pushed to GitHub. Visual Studio can set that up for us using the _Secret Manager_ tool. But when the website on Azure App Service needs this file, we can provide this file through Azure Pipelines. Therefore, we won't need to add it to our *appsettings.json*.
+The connection string uses _SQL Authentication_, which includes the username and password. Storing this information in plain text in the *appsettings.json* would mean that the username and password would be readable by anyone who can access this file. Instead, Mara uses the _Secret Manager_ tool in Visual Studio to store this string in a file that is not maintained in source control. Let's listen in as she explains this to the team.
+
+**Mara:** When developing the app locally, we can use a file that's named *secrets.json*, which doesn't get pushed to GitHub. Visual Studio can set that up for us using the _Secret Manager_ tool. But when the website on Azure App Service needs this information, it will be in the *appsettings.json* file in the Azure App Service. The Azure App Service will have strict limited permissions as to who can see the files there. We can provide this information to our Azure App Service instance through Azure Pipelines. Therefore, we won't need to add it to our local *appsettings.json*.
 
 **Andy:** Good idea, Mara. Now we are getting somewhere.
 
@@ -106,11 +115,9 @@ The connection string uses _SQL Authentication_, which includes the username and
 
 ## SQL Server Data Tools database project's role in Azure Pipelines
 
-TODO: (Again, how much do I show)
-
 _SQL Server Data Tools_, which runs on Windows, provides a project type that you can use to define the database schema from Visual Studio. This kind of project produces what's called a _dacpac_ file. When you unpack this file, you see the SQL scripts for creating the database schema. For example, you might see a `CREATE TABLE` script for each table that's defined in the database project. Azure SQL Database can unpack that file and apply the schema changes.
 
-TODO: (Screenshots of database project and the .dacpac file)
+**TODO: (Screenshots of database project and the .dacpac file)**
 
 Let's go back to the team discussion and see how they handle the changes to their database schema.
 
@@ -131,14 +138,14 @@ TODO: (Do we send an email or something?)
   displayName: Show auto-generated SQL Script - check for schema changes
   inputs:
     targetType: 'inline'
-    script: | 
+    script: |
       Write-Host "Auto Generated SQL Update Script:"
       Get-Content d:\a\1\s\GeneratedOutputFiles\$(databasename)_Script.sql | foreach {Write-Output $_}
 ```
 
 You can pause the pipeline at the stage where the changes would be applied by using a manual approval, just as you did in the previous module. You create an Azure Pipelines environment that specifies the DBA as the approver. If the DBA approves the changes, the pipeline continues and the changes are applied to the database. If the DBA rejects the changes, the pipeline is halted. From there, you can discuss the proposed change with the DBA and plan some other approach.
 
-(Screenshot of approval?)
+**TODO(Screenshot of approval?)**
 
 Let's listen in on the team's discussion.
 
