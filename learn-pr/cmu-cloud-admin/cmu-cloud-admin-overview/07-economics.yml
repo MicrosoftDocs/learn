@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-    - content: "A business with 200 employees wants to replace its legacy  mail system with a new solution. Using an in-house solution, they will need to purchase two servers (for failover redundancy) at \$5,000 each, a storage array at \$20,000, and one-time software purchase fees totaling about \$2,000. In addition, they have to account for yearly costs of power and real estate (\$5,000), software support subscriptions (\$1,000), and IT personnel costs (\$10,000). What is the total capital expenditure (CapEx)?"
+    - content: "A business with 200 employees wants to replace its legacy  mail system with a new solution. Using an in-house solution, they will need to purchase two servers (for failover redundancy) at '$5,000' each, a storage array at '$20,000', and one-time software purchase fees totaling about '$2,000'. In addition, they have to account for yearly costs of power and real estate ('$5,000'), software support subscriptions ('$1,000'), and IT personnel costs ('$10,000'). What is the total capital expenditure (CapEx)?"
       choices:
       - content: "$0"
         isCorrect: false
