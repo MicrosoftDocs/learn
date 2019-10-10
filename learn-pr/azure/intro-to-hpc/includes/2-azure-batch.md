@@ -1,8 +1,8 @@
-As the solution architect for the engineering organization, you need to understand the options available for batch processing and High-Performance Computing (HPC) on Azure. This knowledge will help to determine how you can efficiently render the 3D models of the facilities which the company designs – and how you store all of the related statistical data that's produced.
+As the solution architect for the engineering organization, you need to understand the options available for batch processing and high-performance computing (HPC) on Azure. This knowledge will help to determine how you can efficiently render the 3D models of the facilities which the company designs – and how you store all of the related statistical data that's produced.
 
-Because of the sheer array of HPC and batch processing choices available on Azure, you talk with an Azure expert who advises you to focus on three options: Azure Batch, Azure VM HPC Instances, and Microsoft HPC Pack. You'll look at each in the following units. It's important to note that these choices aren't classically exclusive. They build upon one other and can be thought of as different tools in a toolbox.
+There are several HPC and batch processing choices available on Azure. You talk with an Azure expert who advises you to focus on three options: Azure Batch, Azure VM HPC Instances, and Microsoft HPC Pack. You'll look at each in the following units. It's important to note that these choices aren't mutually exclusive. They build upon one other and can be thought of as different tools in a toolbox.
 
-Here, you'll learn about Azure Batch.
+Here, you'll learn about high-performance computing in general, and learn about Azure Batch.
 
 ## What is HPC?
 
@@ -16,13 +16,13 @@ There are many different industries that require very powerful computing resourc
 
 These tasks require processors that can carry out instructions extremely fast. It's also helpful to run many processors in parallel to obtain answers within a practical time duration. On-premises HPC systems are built with many powerful CPUs and, for graphics-intensive tasks, GPUs. They also require fast disks and high-speed memory.
 
-Azure enables you to perform HPC tasks in the cloud, without building your own expensive HPC hardware. An Azure HPC system also has the advantage that you can dynamically add resources as they are needed, and remove them when demand falls. Azure makes it easy to coordinate an HPC task across many virtual machines (VMs) and supports powerful VM sizes.
+Azure enables you to perform HPC tasks in the cloud, without building your own expensive HPC hardware. An Azure HPC system also has the advantage that you can dynamically add resources as they are needed, and remove them when demand falls. Azure makes it easy to coordinate an HPC task across many virtual machines and supports powerful VM sizes.
 
 ## Azure Batch
 
-Azure Batch is a key option for working with large-scale parallel and computationally intensive tasks on Azure. Unlike the other options you'll see in this module, Azure Batch is a managed service. You provide data, applications, and specifications – such as whether to run on Windows or Linux, how many machines to use, and what rules apply to autoscaling. Azure Batch handles provisioning of the compute capacity and optimizes the way the work is done in parallel. You only pay for the underlying compute, networking, and storage you use – the Batch scheduling and management service is free of charge.
+Azure Batch is a service for working with large-scale parallel and computationally intensive tasks on Azure. Unlike the other options you'll see in this module, Azure Batch is a managed service. You provide data, applications, and specifications such as whether to run on Windows or Linux, how many machines to use, and what rules apply to autoscaling. Azure Batch handles provisioning of the compute capacity and optimizes the way the work is done in parallel. You only pay for the underlying compute, networking, and storage you use. The Batch scheduling and management service is free of charge.
 
-Azure Batch is ideally suited to heavy workloads such as financial risk modeling, 3D rendering, media transcoding, and genetic sequence analysis. Think of Batch as a flexible management and scheduling service layer on top of the huge scale of Azure. For example, you could spin up 100 or 1000 Virtual Machines (VMs) to support heavy workloads without the aid of Batch. However, you'd then be responsible for all the scheduling of the VMs and distributing the work according to available capacity.
+Azure Batch is ideally suited to heavy workloads such as financial risk modeling, 3D rendering, media transcoding, and genetic sequence analysis. Think of Batch as a flexible management and scheduling service layer on top of the huge scale of Azure. For example, you could spin up 100 or 1000 virtual machines to support heavy workloads without the aid of Batch. However, you'd then be responsible for all the scheduling of the VMs and distributing the work according to available capacity.
 
 ## Components of Azure Batch
 
