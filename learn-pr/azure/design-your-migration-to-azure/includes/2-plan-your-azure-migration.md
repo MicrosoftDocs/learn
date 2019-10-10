@@ -112,6 +112,6 @@ You can set up alerts based on a range of data sources, such as:
 - Health metrics.
 - An Autoscale metric.
 
-It's also important to have event logging and visibility into security events across your enterprise. Azure Sentinel provides security information and event-management (SIEM) capabilities, along with artificial intelligence to help you protect against, detect, and respond to security events.
+It's also important to have event logging and visibility into security events across your enterprise. Azure Sentinel provides security information and event-management (SIEM) capabilities, along with artificial intelligence to help you protect against, detect, and respond to security events. This information helps security operations (SecOps) teams triage critical alerts and prioritize work effectively.
 
 The remainder of this module will focus on the Assess and Migrate stages. You'll find additional resources to help you with the Optimize and Monitor stages in the **Learn more** section at the end of this module.

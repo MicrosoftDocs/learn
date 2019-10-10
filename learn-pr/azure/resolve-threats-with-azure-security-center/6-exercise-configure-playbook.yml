@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-security.resolve-threats-with-azure-security-center.exercise-configure-playbook
+title: Exercise - configure a Playbook for a security event
+metadata:
+  title: Exercise - configure a Playbook for a security event
+  description: Exercise - configure a Playbook for a security event
+  ms.date: 09/30/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+azureSandbox: true
+content: |
+  [!include[](includes/6-exercise-configure-playbook.md)]
