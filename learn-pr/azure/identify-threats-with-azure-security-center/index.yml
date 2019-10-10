@@ -29,6 +29,7 @@ units:
 - learn.azure-security.identify-threats-with-azure-security-center.customize-collection-options
 - learn.azure-security.identify-threats-with-azure-security-center.policy-management
 - learn.azure-security.identify-threats-with-azure-security-center.analyze-recommendations
+- learn.azure-security.identify-threats-with-azure-security-center.knowledge-check
 - learn.azure-security.identify-threats-with-azure-security-center.summary
 badge:
   uid: learn.azure-security.identify-threats-with-azure-security-center.badge
