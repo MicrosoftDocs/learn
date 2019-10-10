@@ -30,7 +30,7 @@ modules:
 - learn.azure-security.create-security-baselines
 - learn.azure-security.identify-threats-with-azure-security-center 
 - learn.azure-security.detect-and-mitigate-threats-with-asc
-- learn.azure-security.secure-vms-with-azure-security-center
+- learn.azure-security.secure-vms-with-security-center
 - learn.analyze-infrastructure-with-azure-monitor-logs
 - learn.azure.capture-application-logs-app-service
 trophy:
