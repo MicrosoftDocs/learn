@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use activity log alerts to alert on events within your Azure infrastructure
-durationInMinutes: 8
+durationInMinutes: 10
 content: |
   [!include[](includes/6-activity-log-alerts.md)]

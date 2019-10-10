@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Use metric alerts to alert on performance issues in your Azure environment
-durationInMinutes: 8
+durationInMinutes: 10
 interactive: bash
 azureSandbox: true
 content: |
