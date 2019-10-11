@@ -4,12 +4,11 @@ title: Exercise - Configure File Sync tools on Windows Server
 metadata:
   title: Exercise - Configure File Sync tools on Windows Server
   description: In this exercise, you'll change the security setting to allow you to download the Azure File Sync Agent. You'll then install and run the agent to register the server with the Azure sync group.
-  ms.date: 09/20/2019
+  ms.date: 10/11/2019
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 10
 azureSandbox: true
 content: |

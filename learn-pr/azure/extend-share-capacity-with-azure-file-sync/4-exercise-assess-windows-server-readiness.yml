@@ -4,14 +4,13 @@ title: Exercise - Assess Windows Server readiness
 metadata:
   title: Exercise - Assess Windows Server readiness
   description: In this exercise you'll run the evaluation cmdlets to check the compatibility of your companies file server.
-  ms.date: 09/20/2019
+  ms.date: 10/11/2019
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 15
-interactive: bash
+interactive: powershell
 azureSandbox: true
 content: |
   [!include[](includes/4-exercise-assess-windows-server-readiness.md)]

@@ -1,27 +1,27 @@
 You can run the Azure File Sync evaluation powershell cmdlets on any Windows Server that you'd like to use file sync on. The cmdlets check the OS, filesystem, file name, and folder name compatibility for you.
 
-Before you install and set up Azure File Sync on your companies CAD file server, you're going to assess the server to ensure it's compatible. To do this, you'll run the evaluation cmdlets to produce a report.
+Before you install and set up Azure File Sync on your company's CAD file server, you're going to assess the server to ensure it's compatible. To do this, you'll run the evaluation cmdlets to produce a report.
 
 ## Create a Windows file server
 
-You'd normally install Azure File Sync on your on-premises servers. For this exercise, you'll create an Azure Virtual Machine to act as your Windows file server.
+You'd normally install Azure File Sync on your on-premises server. For this exercise, you'll create an Azure Virtual Machine (VM) to act as your Windows file server.
 
-1. In PowerShell, create a subnet and virtual network.
+1. In PowerShell, run the following command to create a subnet and virtual network in the same location as the resource group.
 
     ```powershell
-    # Create subnet
     $subnetConfig = New-AzVirtualNetworkSubnetConfig `
     -Name Syncpublicnet `
     -AddressPrefix 10.0.0.0/24
 
-    # Create virtual network
+    $location = (Get-AzResourceGroup -Name <rgn>[sandbox resource group name]</rgn>7).Location
+
     $virtualNetwork = New-AzVirtualNetwork `
     -Name Syncvnet `
     -AddressPrefix 10.0.0.0/16 `
-    -Location EastUS `
+    -Location $location `
     -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
     -Subnet $subnetConfig
-    
+
     ```
 
 1.  Run the following command to set the username and password for the administrator account on the VM. Enter the username `learnadmin` and a password that's at least 8 characters long that uses a digit, and upper, lower, and special characters. Write down the password as you'll need it later.
@@ -35,13 +35,14 @@ You'd normally install Azure File Sync on your on-premises servers. For this exe
 
    ```powershell
     New-Azvm `
-    -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
     -Name WindowsFileSvr `
+    -Credential $cred
+    -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
     -Size Standard_DS1_v2 `
     -VirtualNetworkName Syncvnet `
     -SubnetName Syncpublicnet
-    -ImageName "MicrosoftWindowsServer:WindowsServer:2019-Datacenter-with-Containers:latest" `
-    -Credential $cred
+    -Image "MicrosoftWindowsServer:WindowsServer:2019-Datacenter-with-Containers:latest" `
+
 
     ```
 
