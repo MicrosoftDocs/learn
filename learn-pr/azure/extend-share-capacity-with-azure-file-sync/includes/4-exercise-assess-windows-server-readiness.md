@@ -6,27 +6,29 @@ Before you install and set up Azure File Sync on your companies CAD file server,
 
 You'd normally install Azure File Sync on your on-premises servers. For this exercise, you'll create an Azure Virtual Machine to act as your Windows file server.
 
-1. In PowerShell, create a virtual network.
+1. In PowerShell, create a subnet and virtual network.
 
-        ```powershell
-         # Create subnet
-         $subnetConfig = New-AzVirtualNetworkSubnetConfig `
-         -Name Syncpublicnet `
-        -AddressPrefix 10.0.0.0/24
+    ```powershell
+    # Create subnet
+    $subnetConfig = New-AzVirtualNetworkSubnetConfig `
+    -Name Syncpublicnet `
+    -AddressPrefix 10.0.0.0/24
 
-        # Create virtual network
-        $virtualNetwork = New-AzVirtualNetwork `
-        -Name Syncvnet `
-        -AddressPrefix 10.0.0.0/16 `
-        -Location EastUS `
-        -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
-        -Subnet $subnetConfig
+    # Create virtual network
+    $virtualNetwork = New-AzVirtualNetwork `
+    -Name Syncvnet `
+    -AddressPrefix 10.0.0.0/16 `
+    -Location EastUS `
+    -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
+    -Subnet $subnetConfig
+    
     ```
 
 1.  Run the following command to set the username and password for the administrator account on the VM. Enter the username `learnadmin` and a password that's at least 8 characters long that uses a digit, and upper, lower, and special characters. Write down the password as you'll need it later.
 
-         ```powershell
-         $cred = Get-Credential
+    ```powershell
+    $cred = Get-Credential
+
     ```
 
 1. Create the Windows Server.
