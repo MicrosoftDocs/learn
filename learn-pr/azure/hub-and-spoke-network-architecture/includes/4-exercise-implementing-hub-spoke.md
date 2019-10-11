@@ -10,7 +10,7 @@ In this exercise, you'll create a new virtual network to host the servers for yo
 
 This deployment will create the Azure network resources matching the above diagram, ready for you to add the new HR virtual network.
 
-1. Deploy the template.
+1. Run this command to deploy the template and create the resources.
 
     ```azurecli
     az group deployment create \
