@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which if the following is a reason to use an Azure Data Science Virtual Machine?"
+  - content: "Which of the following is a reason to use an Azure Data Science Virtual Machine?"
     choices: 
     - content: "You want to create an Azure Databricks workspace."
       isCorrect: false
