@@ -33,16 +33,15 @@ Here you use [Azure portal](https://portal.azure.com?azure-portal=true) to creat
 
 Mara has created the development database with test data in it. She exported this database for you to use. The export is in a file format called *.bacpac*. This format has the database schema and the data. You need to get this file and put it in blob storage on Azure so your SQL Server logical instance can create a database from it.
 
-1. Download the [bacpac file](https://learnmodulestorage.blob.core.windows.net/moduleblobs/tailspindatabase-2019-10-8-9-23.bacpac?azure-portal=true). You will need to upload this to your storage account later.
-1. Navigate to your [Azure portal](https://portal.azure.com?azure-portal=true) and select **+ Create a Resource**.
-1. In the search, type **Storage account**.
-1. On the *Storage account* page select **Create**
+1. Download the [bacpac file](https://learnmodulestorage.blob.core.windows.net/moduleblobs/tailspindatabase.bacpac?azure-portal=true). You will need to upload this to your storage account later.
+1. Navigate to your [Azure portal](https://portal.azure.com?azure-portal=true) and select **Storage accounts** on the left.
+1. On the *Storage account* page select **+ Add**
 1. Fill in the *Create storage account* page as follows:
 
     | Property  | Value  |
     |---|---|
     | Subscription | < your subscription > |
-    | Resource Group | **tailspin-space-game-rg** |
+    | Resource Group | Select **Create new** and call it **tailspin-space-game-rg** |
     | Storage account name | This must have a unique name across Azure. We suggest using something like **tailspinstorageNNN**, where *NNN* is a random number. |
     | Location | Choose a location near you that supports this kind of resource. |
 
@@ -51,6 +50,7 @@ Mara has created the development database with test data in it. She exported thi
 1. Select **Review and create**. Then select **Create**.
 1. Wait for the storage account to be created and select **Go to resource**.
 1. Under **Services** select **containers**.
+![Screenshot of the services section of the containers page](../media/4-select-containers.png)
 1. In the Containers page, select **+ Container**.
 1. In the Name field type **tailspinbacpac** and select **OK**.
 1. Select the **tailspinbacpac** container.
@@ -69,7 +69,7 @@ Here you create the SQL Server that will hold your new database.
     | Property  | Value  |
     |---|---|
     | Subscription | < your subscription > |
-    | Resource Group | Create a new resource group and call it **tailspin-space-game-rg** |
+    | Resource Group | **tailspin-space-game-rg** |
     | Server name | The server must have a unique name. We suggest using something like **tailspindserverNNN**, where *NNN* is a random number. |
     | Server admin login | **azuresql** |
     | Password | Enter a password that meets the requirements. |
@@ -79,9 +79,9 @@ Here you create the SQL Server that will hold your new database.
 1. Select **Create**, and wait for the server to be created before you continue.
 1. Once the server has been created, select **Go to resource**.
 1. Select **Import database**.
-**TODO screenshot**
+![Screenshot of the import database menu selection](../media/4-import-database-menu.png)
 1. On the *Import database* page select your subscription and then select **Storage - Configure required settings**.
-**TODO screenshot**
+![Screenshot of the import database page highlighting configure storage settings](../media/4-configure-storage-settings.png)
 1. On your *Storage accounts* page select **tailspinstorageNNN**, where *NNN* is your number.
 1. On the *Containers* page, select **tailspinbacpac**.
 1. Highlight the **tailspindatabase.bacpac** file and select **Select**.
@@ -93,6 +93,8 @@ Here you create the SQL Server that will hold your new database.
 
 Here you explore the database you just imported. To access the database from your local machine you need to set a firewall rule.
 
+1. Navigate back to the Azure portal home page and select **SQL databases** on the left.
+1. Choose the **tailspindatabase**.
 1. At the top of the *tailspindatabase* page, select **Set server firewall**.
 1. Your current IP address is printed next to **Client IP address**. Enter the following rule:
 
@@ -107,9 +109,7 @@ Here you explore the database you just imported. To access the database from you
 1. Enter **azuresql** for the admin username and your password for the password. If you get an error that has an IP address, go back and put that IP address in the LocalIP firewall rule you created.
 1. Expand **Tables**, and then expand each table in turn. You should see four tables **dbo.Profile**, **dbo.Scores**, **dbo.Achievements**, and **dbo.ProfileAchievements**, together with the columns and keys for each table.
 
-**TODO screenshot**
-
-1. At the top, select **New Query**.
+![Screenshot of the tables in the tailspin database](../media/4-database-tables.png)
 
 1. In the **Query 1** pane, enter the following SQL statement, and then select **Run**.
 
@@ -127,7 +127,7 @@ Here you explore the database you just imported. To access the database from you
     SELECT * FROM dbo.Scores
     ```
 
-    This time you should see the scores in the **Results** window. There are 24 rows. Notice that the Score entry is related to the Profile by the ProfileID. The is the ID from the Profile table.
+    This time you should see the scores in the **Results** window. There are 25 rows. Notice that the Score entry is related to the Profile by the ProfileID. The is the ID from the Profile table.
 1. Change the query as follows, and then select **Run**.
 
     ```SQL
@@ -169,26 +169,47 @@ Here you set up your environment to run the web site locally using the Azure SQL
    ![Azure portal selecting connection strings page](../media/4-get-connection-string.png)
 
     Notice that the connection string doesn't show your username and password. You'll need to fill those in when you're ready to use this string.
-1. Open your local **Tailspin.SpaceGame.Web.csproj** file. Notice the entry for `UserSecretsId`. This is how the web project will find your *secrets.json* file. You will use the GUID here to create the file in a directory with that GUID in the name.
+1. Open your local **Tailspin.SpaceGame.Web.csproj** file. Notice the entry for `UserSecretsId`. This is how the web project will find your *secrets.json* file. You will create a *secrets.json* file in a directory with that GUID in the name.
 
     ```xml
     <UserSecretsId>d7faad9d-d27a-4122-89ff-b9376c13b153</UserSecretsId>
-    ~~~
+    ```
 
-1. Create the *secrets.json* file. Here is where we differ on whether you are on a Windows machine or a Mac.
-    1. If you are on a Mac, the location for the file is ~/.microsoft/usersecrets/(GUID)/secrets.json
-        1. The `.microsoft` folder may be hidden. To see hidden folders on MacOS open Finder and select `Cmd + Shif + dot`.
-        1. right directory cd
-        1. mkdir ~/.microsoft
-        1. right directory cd
-        1. dotnet user-secrets set "ConnectionStrings:DefaultConnection" "Your connection string" Make sure you have replaced the `{your_username}` and `{your_password}` with the username and password you set up when you created the server.
-        1. dotnet user-secrets list
-    1. If you are on Windows, the location for the file is
-        1. %APPDATA%\Microsoft\UserSecrets\(GUID)\secrets.json
-        1. dotnet user-secrets set "ConnectionStrings:DefaultConnection" "Your     connection string" Make sure you have replaced the `{your_username}`     and `{your_password}` with the username and password you set up when     you created the server.
-        1. dotnet user-secrets list
-1. Build the application
-1. Run the application
+1. Create the *secrets.json* file.
+    1. Make sure you are in the directory containing the *Tailspin.SpaceGame.Web.csproj* file. In a terminal window in Visual Studio Code run this command.
+
+          ```bash
+          cd Tailspin.SpaceGame.Web
+          ```
+
+    1. The `dotnet` command from the .NET Core SDK has a `user-secrets` parameter that will create the directory structure and the file you need using the GUID it finds in your project. If you are on a Mac, the location for the file is `~/.microsoft/usersecrets/(GUID)/secrets.json`. If you are on Windows, the location for the file is `%APPDATA%\Microsoft\UserSecrets\(GUID)\secrets.json`. Run this command to create and populate the *secrets.json* file.
+
+         ```bash
+            dotnet user-secrets set "ConnectionStrings:DefaultConnection" "Your connection string"
+         ```
+
+        Make sure you have replaced the `{your_username}` and `{your_password}` with the username and password you set up when you created the server.
+    1. Run the following command to read the secrets.json file and see that your connection string is there.
+
+        ```bash
+           dotnet user-secrets list
+        ```
+
+1. Build the application using the following `dotnet` command.
+
+    ```bash
+     dotnet build
+     ```
+
+1. Run the application using the following `dotnet` command.
+
+    ```bash
+     dotnet run
+     ```
+
+  Watch the output for "Now listening on (your local link)." For example, `Now listening on: http://localhost:64164`.
+1. Hold the `control` key and click the link. This will open a browser at the locally hosted SpaceGame web page. Verify the web site is running locally.
+1. In the bash terminal type `control-c` to shut down the application.
 
 **Mara:** Great! We have it running locally. Let's put it on the pipeline.
 
@@ -197,7 +218,7 @@ Here you set up your environment to run the web site locally using the Azure SQL
 
 At this point, the team's pipeline has four stages. The first stage produces the build artifact and the second stage deploys the _Space Game_ web application to App Service in the _dev_ environment. The third and fourth stages deploy the _Space Game_ web application to the _test_ and _staging_ environments. We have taken out the triggers and approvals from the previous module to concentrate on just this section of the pipeline.
 
-Here, you follow along with Andy, Mara, and Tim as they modify the pipeline to add their stages to script the database changes for the DBA and to apply those changes after approval.
+Here, you follow along with Andy, Mara, and Tim as they modify the pipeline to add stages that will script the database changes for the DBA, and apply those changes after approval.
 
 ## Create the Azure App Service environments
 

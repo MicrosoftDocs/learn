@@ -29,7 +29,7 @@ In the Tailspin.SpaceGame.Database project, a change has been made to the Profil
 1. Allow the pipeline to finish deploying the App Services.
 1. You still need to add data to the new column before you can try the new website.
     1. Navigate back to your [Azure portal](https://portal.azure.com?azure-portal=true) and select **SQL Databases**.
-    1. Select your database **tailspindatabaseNNN** where NNN is your numbers.
+    1. Select your database **tailspindatabase**.
     1. Select **Query editor** and sign in.
     1. In your local _database-change_ branch you see **FavoriteMapData.sql**. This sql script adds a favorite galaxy string to each profile by filling in the `favoriteMap` column. Copy the contents of this file.
     1. Paste the file contents into **Query 1** and select **Run** to populate the new table.
@@ -42,7 +42,7 @@ In the Tailspin.SpaceGame.Database project, a change has been made to the Profil
         ```
 
         Verify that the `favoriteMap` column is populated with data.
-1. Navigate to the one of your host names, for example **tailspin-space-game-wen-dev-NNN**, and select a player to see the new data on the profile.
+1. Navigate to the one of your host names, for example **tailspin-space-game-web-dev-NNN**, and select a player to see the new data on the profile.
 
  ![The website with a profile showing the player's favorite galaxy](../media/5-profile-with-favorite-galaxy.png)
 
