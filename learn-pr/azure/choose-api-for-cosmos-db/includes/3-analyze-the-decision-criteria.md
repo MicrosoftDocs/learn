@@ -11,7 +11,7 @@ The above matrix tries to encapsulate the criteria that you can use to help choo
 
 Are there existing databases or applications that use any of the supported APIs?
 
-   - If there is, then you might want to consider using the current API with Cosmos DB, as that choice will reduce your migration tasks, and make the best use of previous experience in your team.
+   - If there is, then you might want to consider using the current API with Azure Cosmos DB, as that choice will reduce your migration tasks, and make the best use of previous experience in your team.
 
    - If there isn't, then there are a few questions that you can ask in order to help you define the scenario where the database is going to be used:
 
@@ -25,4 +25,4 @@ Are there existing databases or applications that use any of the supported APIs?
 
       1. Does the data consist of simple key-value pairs?
 
-         - Before Cosmos DB existed, Redis or the Table API might have been a good fit for this kind of data; however, Core (SQL) API is now the better choice, as it offers a richer query experience, with improved indexing over the Table API.
+         - Before Azure Cosmos DB existed, Redis or the Table API might have been a good fit for this kind of data; however, Core (SQL) API is now the better choice, as it offers a richer query experience, with improved indexing over the Table API.

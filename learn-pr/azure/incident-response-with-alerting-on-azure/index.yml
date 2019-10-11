@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.incident-response-with-alerting-on-azure
+metadata:
+  title: Improve incident response with alerting on Azure
+  description: Respond to incidents and activities in your infrastructure through alerting capabilities in Azure Monitor.
+  ms.date: 10/10/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Improve incident response with alerting on Azure
+summary: Respond to incidents and activities in your infrastructure through alerting capabilities in Azure Monitor.
+abstract: | 
+  In this module, you will:
+  - Configure alerts on events in your Azure resources based on metrics, log events, and Activity log events
+  - Learn how to use smart groups to identify and group related alerts to reduce alert noise
+prerequisites: | 
+  - Basic knowledge of Azure Monitor
+iconUrl: /learn/achievements/incident-response-with-alerting-on-azure.svg
+levels:
+- beginner
+roles:
+- solution-architect
+- security-engineer
+products:
+- azure
+- azure-monitor
+units:
+- learn.incident-response-with-alerting-on-azure.1-introduction
+- learn.incident-response-with-alerting-on-azure.2-explore-azure-monitor-alert-types
+- learn.incident-response-with-alerting-on-azure.3-metric-alerts
+- learn.incident-response-with-alerting-on-azure.4-exercise-metric-alerts
+- learn.incident-response-with-alerting-on-azure.5-log-alerts
+- learn.incident-response-with-alerting-on-azure.6-activity-log-alerts
+- learn.incident-response-with-alerting-on-azure.7-exercise-activity-log-alerts
+- learn.incident-response-with-alerting-on-azure.8-smart-groups
+- learn.incident-response-with-alerting-on-azure.9-summary
+badge:
+  uid: learn.incident-response-with-alerting-on-azure.badge

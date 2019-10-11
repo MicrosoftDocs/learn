@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.student-evangelism.intro-to-python
+metadata:
+  title: Introduction to Python
+  description: Learn how to write basic Python code, declare variables, and work with console input and output
+  ms.date: 04/30/2019
+  author: ShanaMatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+title: Introduction to Python
+summary: Learn how to write basic Python code, declare variables, and work with console input and output
+abstract: |
+  In this module, you will:
+  - Explore the choices available to run Python apps
+  - Use the Python interpreter to execute statements and scripts
+  - Learn how to declare variables
+  - Build a simple Python app that takes input and produces output
+prerequisites: None
+iconUrl: /learn/achievements/intro-to-python.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+#- azure-notebook  # TODO: add to taxonomy
+units:
+- learn.student-evangelism.intro-to-python.introduction
+- learn.student-evangelism.intro-to-python.what-is-python
+- learn.student-evangelism.intro-to-python.exercise-create-your-first-app
+- learn.student-evangelism.intro-to-python.variables-and-data-types
+- learn.student-evangelism.intro-to-python.comments
+- learn.student-evangelism.intro-to-python.reading-input
+- learn.student-evangelism.intro-to-python.exercise-reading-input
+- learn.student-evangelism.intro-to-python.exercise-build-a-calculator
+- learn.student-evangelism.intro-to-python.solution-build-a-calculator
+- learn.student-evangelism.intro-to-python.summary
+badge:
+  uid: learn.student-evangelism.intro-to-python.badge

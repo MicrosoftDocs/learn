@@ -31,3 +31,5 @@ In addition, here are some places to go to learn more about what we've covered t
 - [Cloud Computing Terms](https://azure.microsoft.com/overview/cloud-computing-dictionary/)
 - [What is Azure?](https://azure.microsoft.com/overview/)
 - [Azure compliance offerings](https://www.microsoft.com/trustcenter/compliance/complianceofferings)
+- [Azure Architecture Center](https://docs.microsoft.com/azure/architecture/guide/)
+- [Overview of Azure compute options](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview)

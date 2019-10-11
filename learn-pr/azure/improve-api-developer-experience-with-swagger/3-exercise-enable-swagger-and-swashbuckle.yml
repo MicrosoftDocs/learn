@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.improve-developer-experience-of-an-api-with-swagger-documentation.exercise-enable-swagger-and-swashbuckle
-title:  Exercise - Enable Swagger documentation in an ASP.NET Core Web API app
+title: Exercise - Enable Swagger documentation in an ASP.NET Core Web API app
 metadata:
   title: Exercise - Enable Swagger documentation in an ASP.NET Core Web API app
   description: Practice enabling Swagger and Swashbuckle in an ASP.NET Core Web API app

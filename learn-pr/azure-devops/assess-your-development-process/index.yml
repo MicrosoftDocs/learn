@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azdo.assess-your-development-process
+metadata:
+  title: Assess your existing software development process - Learn
+  description: Use a value stream map to help you examine your existing processes and technologies.
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  #ms.learn-contact: thpetche
+  ms.prod: learning-azure
+title: Assess your existing software development process
+summary: Use a value stream map to help you examine your existing processes and technologies.
+abstract: |
+  In this module, you will:
+  - Learn about value stream maps (VSMs)
+  - Use a VSM to get a sense of where the release process needs improvement
+  - Understand how the VSM gives you a good starting point to discuss your current DevOps practices
+prerequisites: None
+iconUrl: /learn/achievements/azure-devops/assess-your-software-development-process.svg
+ratingEnabled: true
+levels:
+- intermediate
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure-devops
+units:
+- learn.azdo.assess-your-development-process.1-introduction
+- learn.azdo.assess-your-development-process.2-meet-the-team
+- learn.azdo.assess-your-development-process.3-release-process
+- learn.azdo.assess-your-development-process.4-assess-process-efficiency
+- learn.azdo.assess-your-development-process.5-summary
+badge:
+  uid: learn.azdo.assess-your-development-process.badge

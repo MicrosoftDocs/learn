@@ -1,0 +1,101 @@
+﻿### YamlMime:ModuleUnit
+uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure.9-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Unit description
+  ms.date: 6/11/2019
+  author: dragosapostu
+  ms.author: a-drapos
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS:   NOINDEX 
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-knowledge-check.md)] 
+quiz:
+  questions:
+  - content: "The Cloud Adoption Framework for Azure helps customers make their journey to the cloud. What are the three main stages of the framework?"
+    choices:
+    - content: "Plan, Business Justification, and Implementation."
+      isCorrect: false
+      explanation: "That's incorrect. Business Justification and Implementation are not stages of the Cloud Adoption Framework."
+    - content: "Secure Funding, Project Selection, and Adoption."
+      isCorrect: false
+      explanation: "That's incorrect. Securing funding and selecting projects are not main stages of the Cloud Adoption Framework."
+    - content: "Migrate, Test, and Optimize."
+      isCorrect: false
+      explanation: "That's incorrect. Migrate, Test, and Optimize are not main stages of the Cloud Adoption Framework."
+    - content: "Plan, Ready, and Adopt."
+      isCorrect: true
+      explanation: "That's correct. The Cloud Adoption Framework describes how the organization must prepare its people with technical readiness, adjust business processes to drive business and technology changes, and enable business outcomes through implementation of the defined technology plan."
+  - content: "Motivations for cloud adoption include critical business events and other migration or innovation triggers. Which of the following is an example of a critical business event that drives cloud adoption?"
+    choices:
+    - content: "Reduction in IT staff for on-premises hardware."
+      isCorrect: false
+      explanation: "That's incorrect. Reduction in IT staff is not a critical business event, but optimization of internal operations can be a migration trigger."
+    - content: "Improve customer experience and engagement."
+      isCorrect: false
+      explanation: "That's incorrect. Improving customer experience and engagement is not a critical business event but can be an innovation trigger."
+    - content: "End of support for mission-critical technology."
+      isCorrect: true
+      explanation: "That's correct. End of support for mission-critical technology might be the appropriate cloud solution enabler for such an event."
+    - content: "Cloud is the future of technology."
+      isCorrect: false
+      explanation: "That's incorrect. Adopting the cloud simply because it's a future-facing technology is not a valid business reason for cloud adoption."
+  - content: "Landing zones describe an environment that has been provisioned and prepared to host workloads in a cloud environment. What are the major considerations when you implement a landing zone?"
+    choices:
+    - content: "Hosting and governance."
+      isCorrect: true
+      explanation: "That's correct. There are major considerations when you implement any landing zone. These considerations, also commonly referred to as Azure foundations, can be broken into further categories of types of hosting and governance."
+    - content: "Management groups, subscriptions, resource groups, and resources."
+      isCorrect: false
+      explanation: "That's incorrect. These items are part of the broader solution for organizing your resources across the cloud, and they are not the only major consideration for implementing a landing zone."
+    - content: "Preconfigured compute, networking, storage, and database for developers."
+      isCorrect: false
+      explanation: "That's incorrect. Items like compute, networking, and storage are components of your hosting decisions for your landing zone."
+    - content: "Azure Policy, Azure Security Center, and privacy rules."
+      isCorrect: false
+      explanation: "That's incorrect. These are key considerations for the governance strategy in your landing zone, but not the only consideration."
+  - content: "What are the five disciplines of cloud governance?"
+    choices:
+    - content: "Business risk, process, cost management, resource consistency, and deployment acceleration."
+      isCorrect: false
+      explanation: "That's incorrect. Business risk and process are required for governance, but they are not one of the five disciplines."
+    - content: "Cost management, policy and compliance, process, security baseline, and resource consistency."
+      isCorrect: false
+      explanation: "That's incorrect. Policy and compliance, process, and security baseline should be a part of your governance but are not one of the five disciplines."
+    - content: "Business risk, policy and compliance, security baseline, process, and operations."
+      isCorrect: false
+      explanation: "That's incorrect. These are important tasks in any cloud adoption but are not part of the five disciplines of cloud governance."
+    - content: "Cost management, security baseline, resource consistency, identity baseline, and deployment acceleration."
+      isCorrect: true
+      explanation: "That's correct. When you build your cloud governance strategy, you need to think about cost management, setting a security baseline, working toward resource consistency through best practices, establishing the identity and access strategy, and accelerating deployment with consistent templates."
+  - content: "What are some common value drivers that business decision makers can use to justify moving their business to the cloud?"
+    choices:
+    - content: "Cost, speed, control, productivity, access, and reliability."
+      isCorrect: false
+      explanation: "That's incorrect. Control and access are not value drivers that justify moving to the cloud."
+    - content: "Speed, scale, engagement, reliability, and strategy."
+      isCorrect: false
+      explanation: "That's incorrect. Engagement and strategy are not value drivers that justify moving to the cloud."
+    - content: "Cost, scale, productivity, and reliability."
+      isCorrect: true
+      explanation: "That's correct. Cost, scale, productivity, and reliability are all value drivers that justify moving to the cloud."
+    - content: "Reliability, management, control, scale, and cost."
+      isCorrect: false
+      explanation: "That's incorrect. Management and control are not value drivers that justify moving to the cloud."
+  - content: "Financial planning for cloud adoption requires organizations to decide whether to expand on-premises capabilities or move certain workloads and functions off-premises to cloud-delivered services. Microsoft has tools that can help. What Microsoft tool is available for a CFO who's trying to estimate the expected monthly bill and track actual account usage?"
+    choices:
+    - content: "The Total Cost of Ownership (TCO) Calculator."
+      isCorrect: false
+      explanation: "That's incorrect. Organizations can use the Azure TCO Calculator to estimate the cost savings they can realize by migrating their application workloads to Azure."
+    - content: "Azure Cost Management."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Cost Management (licensed by Microsoft subsidiary Cloudyn) is a multiple-cloud cost management solution that helps organizations use and manage Azure and other cloud resources."
+    - content: "The pricing calculator."
+      isCorrect: true
+      explanation: "That's correct. Organizations can estimate their expected monthly bills by using the pricing calculator to track their actual account usage and bills at any time on the billing portal."
+    - content: "The Azure Capacity Calculator."
+      isCorrect: false
+      explanation: "That's incorrect. There is no such tool."

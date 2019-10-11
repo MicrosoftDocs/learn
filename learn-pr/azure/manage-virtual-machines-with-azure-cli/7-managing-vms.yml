@@ -1,13 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.manage-vms-with-azure-cli-data.7-managing-vms
-title: Start and stop your VM with the Azure CLI
+title: Exercise - Start and stop your VM with the Azure CLI
 metadata:
-  title: Start and stop your VM with the Azure CLI
+  title: Exercise - Start and stop your VM with the Azure CLI
   description: Learn how to use the Azure CLI to start and stop a virtual machine
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

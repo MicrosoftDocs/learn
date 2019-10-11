@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.azdo.implement-code-workflow
+metadata:
+  title: Implement a code workflow in your build pipeline by using Git and GitHub - Learn
+  description: Collaborate with others and merge only the highest quality code.
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  #ms.learn-contact: thpetche
+  ms.prod: learning-azure
+title: Implement a code workflow in your build pipeline by using Git and GitHub
+summary: Collaborate with others and merge only the highest quality code.
+abstract: |
+  In this module, you will:
+  - Collaborate with others by choosing an appropriate branching and merging strategy.
+  - Add a badge to your GitHub repository to show the status of the latest build.
+  - Add a dashboard widget to help visualize your build history.
+  - Set up a rule on your GitHub repository to require a review.
+prerequisites: |
+  - An Azure DevOps organization
+  - Visual Studio Code
+  - .NET Core 2.1
+  - Git
+  - A GitHub account
+iconUrl: /learn/achievements/azure-devops/implement-a-code-workflow-in-your-build-pipeline.svg
+ratingEnabled: true
+levels:
+- intermediate
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure-devops
+units:
+- learn.azdo.implement-code-workflow.1-introduction
+- learn.azdo.implement-code-workflow.2-choose-a-code-flow-strategy
+- learn.azdo.implement-code-workflow.3-set-up-environment
+- learn.azdo.implement-code-workflow.4-create-pull-request
+- learn.azdo.implement-code-workflow.5-push-a-change
+- learn.azdo.implement-code-workflow.6-add-build-badge
+- learn.azdo.implement-code-workflow.7-track-build-history
+- learn.azdo.implement-code-workflow.8-require-reviewer
+- learn.azdo.implement-code-workflow.9-clean-up-environment
+- learn.azdo.implement-code-workflow.10-summary
+badge:
+  uid: learn.azdo.implement-code-workflow.badge

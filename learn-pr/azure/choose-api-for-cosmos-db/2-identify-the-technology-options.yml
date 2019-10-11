@@ -3,7 +3,7 @@ uid: learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.2-identify-the
 title: Identify the technology options
 metadata:
   title: Identify the technology options
-  description: Explain what each of the Cosmos DB APIs are, how they are used, and the generic properties that apply across all APIs.
+  description: Explain what each of the Azure Cosmos DB APIs are, how they are used, and the generic properties that apply across all APIs.
   ms.date: 04/24/2019
   author: rmcmurray
   ms.author: robmcm

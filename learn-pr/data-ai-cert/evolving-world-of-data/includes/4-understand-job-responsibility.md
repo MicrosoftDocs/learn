@@ -2,7 +2,7 @@ Your skills need to evolve from managing on-premises database server systems, su
 
 SQL Server professionals generally work only with relational database systems. Data engineers also work with unstructured data and a wide variety of new data types, such as streaming data.
 
-To master data engineering, you'll need to learn a new set of tools, architectures, and platforms. As a SQL Server professional, your primary data manipulation tool might be T-SQL. As a data engineer you might use additional technologies like Azure HDInsight and Cosmos DB. To manipulate the data in big-data systems, you might use languages such as Hive or Python.  
+To master data engineering, you'll need to learn a new set of tools, architectures, and platforms. As a SQL Server professional, your primary data manipulation tool might be T-SQL. As a data engineer you might use additional technologies like Azure HDInsight and Azure Cosmos DB. To manipulate the data in big-data systems, you might use languages such as HiveQL or Python.  
 
 ## Change data processes
 

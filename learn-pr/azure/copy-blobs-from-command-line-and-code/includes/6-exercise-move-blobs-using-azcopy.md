@@ -2,8 +2,6 @@ You've decided to evaluate the AzCopy command as an alternative to using the CLI
 
 In this exercise, you'll investigate how to use the AzCopy to migrate blobs that haven't changed in the last six months to a separate storage account.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Setup
 
 We'll start by downloading the latest version of AzCopy; currently version 10. The Azure CLI does include AzCopy but it may be an older version. We'll also generate SAS tokens for our storage accounts.
