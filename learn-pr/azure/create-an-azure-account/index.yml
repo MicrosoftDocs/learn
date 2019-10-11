@@ -26,15 +26,17 @@ roles:
 - administrator
 - solution-architect
 - developer
+- security-engineer
 products:
 - azure
 - azure-portal
 units:
 - learn.create-azure-account.1-introduction
 - learn.create-azure-account.2-azure-accounts-and-subscriptions
-- learn.create-azure-account.3-multiple-subscriptions
-- learn.create-azure-account.4-azure-tenants
 - learn.create-azure-account.5-exercise-create-an-azure-account
+- learn.create-azure-account.3-multiple-subscriptions
+- learn.create-azure-account.transfer-account
+- learn.create-azure-account.4-azure-tenants
 - learn.create-azure-account.6-support-options
 - learn.create-azure-account.7-summary
 badge:

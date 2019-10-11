@@ -21,7 +21,7 @@ Let's take a look at where you can find Azure Advisor in the portal.
 
 1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) using your Microsoft account. 
 
-1. Click on **All Services**, and in the **Management Tools** category, you will see **Advisor**. You can also type `Advisor` in the filter box to filter on just that service.
+1. Click on **All Services**, and in the **Management + governance** category, you will see **Advisor**. You can also type `Advisor` in the filter box to filter on just that service.
 
 1. Click on Advisor, and you'll be taken to the Advisor recommendations dashboard where you can see all the recommendations for your subscription. You'll see a box for each category of recommendations.
 
@@ -36,7 +36,7 @@ Clicking on the **Cost** box will take you to detailed recommendations where you
 
 Clicking on any recommendation will take you to the details for that specific recommendation. Then you'll be able to take a specific action, such as resizing virtual machines to reduce spending.
 
-![Screenshot of the Azure portal showing recommendation details on the Shut down or resize your virtual machine recommendation.](../media/3-advisor-resize-vm.png)
+![Screenshot of the Azure portal showing recommendation details on shutting down or resizing virtual machines.](../media/3-advisor-resize-vm.png)
 
 These recommendations are all places where you might be inefficiently spending money. They're a great place to start and continue to revisit when looking for places to reduce costs. In our example, there's an opportunity for us to save around $700 per month if we take these recommendations. This savings adds up, so be sure to review this periodically for recommendations across all four areas.
 
