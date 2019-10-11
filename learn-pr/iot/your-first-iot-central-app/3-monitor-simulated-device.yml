@@ -10,7 +10,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Monitor a simulated device
-azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/3-monitor-simulated-device.md)]
