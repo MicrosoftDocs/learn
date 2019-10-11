@@ -13,7 +13,7 @@ You'd normally install Azure File Sync on your on-premises server. For this exer
     -Name Syncpublicnet `
     -AddressPrefix 10.0.0.0/24
 
-    $location = (Get-AzResourceGroup -Name <rgn>[sandbox resource group name]</rgn>7).Location
+    $location = (Get-AzResourceGroup -Name <rgn>[sandbox resource group name]</rgn>).Location
 
     $virtualNetwork = New-AzVirtualNetwork `
     -Name Syncvnet `
@@ -35,13 +35,13 @@ You'd normally install Azure File Sync on your on-premises server. For this exer
 
    ```powershell
     New-Azvm `
-    -Name WindowsFileSvr `
-    -Credential $cred
+    -Name FileServerWindows `
+    -Credential $cred `
     -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
     -Size Standard_DS1_v2 `
     -VirtualNetworkName Syncvnet `
-    -SubnetName Syncpublicnet
-    -Image "MicrosoftWindowsServer:WindowsServer:2019-Datacenter-with-Containers:latest" `
+    -SubnetName Syncpublicnet `
+    -Image "MicrosoftWindowsServer:WindowsServer:2019-Datacenter-with-Containers:latest" 
 
 
     ```
@@ -54,7 +54,7 @@ Connect to the new server by using Remote Desktop Client. You'll download a samp
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 1. On the portal, in the left menu, select **Virtual machines**.
-1. Select the **WindowsFileSvr** VM.
+1. Select the **FileServerLocal** VM.
 1. In the top menu, select **Connect**.
 1. Select **Download RDP File**.
 1. Open the RDP file from your browser and select **Connect**.
