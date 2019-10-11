@@ -3,6 +3,10 @@ Security playbooks are created directly in the Security Center portal.
 > [!IMPORTANT]
 > You will need an Office 365 email account to use this specific set of instructions - if you don't have one, try changing the instructions below to use a different template, or create a Blank Logic App.
 
+1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with the same account you used to activate the Azure Sandbox.
+
+1. Navigate to **Security Center** using the search box, or through the tile on the main dashboard.
+
 1. Under **Automation & Orchestration** in the Azure Security Center left panel, select **Playbooks (Preview).**
 
     ![Screenshot showing the playbook creation screen](../media/7-playbooks.png)
