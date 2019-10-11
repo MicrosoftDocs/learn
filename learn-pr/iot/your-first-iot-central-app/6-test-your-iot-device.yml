@@ -10,7 +10,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Test your IoT Central device
-azureSandbox: true
 durationInMinutes: 15
 content: |
   [!include[](includes/6-test-your-iot-device.md)]
