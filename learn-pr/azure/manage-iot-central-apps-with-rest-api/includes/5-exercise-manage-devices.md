@@ -92,6 +92,10 @@ az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/models \
 }'
 ```
 
+If you navigate to your application in your browser, you can see the device template has been added to the application:
+
+![New device template](../media/5-device-template.png)
+
 ## Add simulated devices
 
 Now that you've added a device template that specifies the capabilities of the store monitoring device you're using, you can start adding devices to your application.
@@ -173,6 +177,10 @@ az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/devices \
 --headers Authorization="$API_TOKEN" \
 --query 'value[].{ID:deviceId, Type:instanceOf, Simulated:simulated}' -o table
 ```
+
+If you navigate to your application in your browser, you can see the devices have been added to the application:
+
+![New devices](../media/5-devices.png)
 
 ## Connect a real device
 
