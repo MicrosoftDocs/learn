@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.route-and-process-data-logic-apps.introduction
+title: Introduction
+
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 5/10/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-security.secure-aad-users-with-mfa.summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 10/02/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Summary
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-summary.md)]

@@ -1,10 +1,17 @@
 ## Approach
 
+:::row:::
+:::column span="2":::
 To create their AI strategy, Ochsner had to consider a number of factors in the complicated healthcare landscape and produce scalable applications that, crucially, medical staff would both appreciate and use. They had to implement solutions that targeted specific, solvable problems, and that effectively leveraged patient data without compromising on ethics and privacy.
 
 Ochsner chose to implement AI in a way that addressed the issue of inefficient patient monitoring. Oschner’s strategy was to come up with a system that would enable doctors to spend more focused time with patients whose historical data indicated a higher chance of their condition deteriorating.
 
 Ochsner presented the problem of patient monitoring to their innovation accelerator, innovationOchsner (iO). They developed a system that could continually monitor a patient’s vital signs to identify subtle changes in their condition. The high volume of complex data was then analyzed by an AI-powered predictive modeling tool running on Microsoft Azure.
+:::column-end:::
+:::column span="2":::
+![Ochsner AI Strategy: A. Production of scalable applications, B. Targeted solutions to specific problems, C. Effectively leveraged patient data, D. Addressed the issue of inefficient patient monitoring, E. Focus on patients with deteriorating conditions, F. Data analyzed by an AI-Powered predictive model tool, G. Results from AI model alerts clinicians, H. Potential interventions](../media/1.6.4.B.Ochsner-Health-System-case-study-resolution1.jpg)
+:::column-end:::
+:::row-end:::
 
 “We have monitors that are taking vitals every minute,” says Jonathan Wilt, CTO of iO. “There are hundreds of constantly changing data points that humans could not possibly digest in real time. And we have new artificial intelligence that can take these data streams and process them and make predictions.”
 
@@ -14,6 +21,8 @@ By consulting with their clinical staff, Ochsner optimized the timing and freque
 
 ## Results
 
+:::row:::
+:::column span="2":::
 In 2018, Ochsner reported that a 90-day pilot with the system reduced cardiac arrests and other adverse events outside the ICU by 44 percent. Although the technical details of the pilot have not yet been formally released for peer review, it is a promising start to a new system designed to save both lives and healthcare costs. Ochsner also expects to improve patient outcomes through:
 
 1. Fewer patient transfers to the ICU
@@ -21,6 +30,11 @@ In 2018, Ochsner reported that a 90-day pilot with the system reduced cardiac ar
 3. Fewer complications and lower costs as a result of fewer patients experiencing cardiac or respiratory arrest “A lot of what medicine in general has done has been retroactive studies and trying to understand what happened with the patient after the fact—well, imagine the whole game is shifting,” says Mike Hulefeld, COO of Ochsner Health System. “We’re going to know before it happens. That’s a total game changer.”
 
 Ochsner is continuing to optimize the system and learn from its insights to identify other hospitalization health events with AI applications, and develop more preventive measures and proactive treatment plans.
+:::column-end:::
+:::column span="2":::
+![In a 90-day pilot, Ochsner's system reduced non-ICU cardiac arrests and adverse events by 44%](../media/1.6.4.A.Ochsner-Health-System-case-study-resolution.jpg)
+:::column-end:::
+:::row-end:::
 
 In the future, Ochsner plans to implement the new system in all of its owned facilities, with potential to scale to managed and affiliated partners.
 

@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-security.manage-users-and-groups-in-aad.manage-aad-roles
+title: Use roles to control resource access
+metadata:
+  title: Use roles to control resource access
+  description: Use roles to control resource access
+  ms.date: 09/30/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-manage-aad-roles.md)]
+quiz:
+   title: Check your knowledge
+   questions:
+   - content: "What information does an `Action` provide in a role definition?"
+     choices:
+     - content: An `Action` provides the allowed _management_ capabilities for the role.
+       isCorrect: true
+       explanation: "Correct. The `Action` defines what the role can do."
+     - content: An `Action` determines what data the role can manipulate.
+       isCorrect: false
+     - content: An `Action` decides what resource the role is applied to.
+       isCorrect: false
+   - content: "Which of the following sets the _scope_ of a role to be the resource group `myResourceGroup`?"
+     choices:
+     - content: "`/subscriptions/de324015-0284-4582-9d9c-6f1e52a30471`"
+       isCorrect: false
+     - content: "`/subscriptions/{ef67bd4f-d0f2-4845-b6dd-6cba225b4f10}/resourceGroups/myResourceGroup/backupvm1`"
+       isCorrect: false
+     - content: "`/subscriptions/{ef67bd4f-d0f2-4845-b6dd-6cba225b4f10}/resourceGroups/myResourceGroup`"
+       isCorrect: true
+       explanation: "Correct!"
+   - content: "How are `NotActions` used in a role definition?"
+     choices:
+     - content: "`NotActions` are subtracted from the `Actions` to define the list of permissible operations."
+       isCorrect: true
+       explanation: "Correct!"
+     - content: "`NotActions` are consulted after `Actions` to deny access to a specific operation."
+       isCorrect: false
+     - content: "`NotActions` allow you to specify a single operation that is not allowed."
+       isCorrect: false

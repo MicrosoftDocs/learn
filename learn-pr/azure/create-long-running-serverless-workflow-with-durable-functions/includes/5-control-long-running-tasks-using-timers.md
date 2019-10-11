@@ -1,4 +1,4 @@
-When working with a long-running workflow, we need to consider some scenarios. For example, what should happen if a task isn't completed within an acceptable period of time? How can you check the status of a task. You can address these concerns with timeouts and escalation paths?
+When working with a long-running workflow, we need to consider some scenarios. For example, what should happen if a task isn't completed within an acceptable period of time? How can you check the status of a task? You can address these concerns with timeouts and escalation paths.
 
 In the example scenario, you've been asked to amend your new workflow to incorporate an escalation step to take action if a project design proposal isn't approved in a timely fashion.
 
@@ -9,9 +9,6 @@ In this unit you'll learn how to control long running tasks using durable timers
 Durable Functions provides timers for use in the orchestrator functions. They can implement delays or set up timeouts for asynchronous actions. Use durable timers in orchestrator functions instead of the **setTimeout()** and **setInterval()** functions.
 
 You create a durable timer by calling the **createTimer** method of the  **DurableOrchestrationContext**. This method returns a task that resumes on a specified date and time.
-
-> [!NOTE]
-> Durable timers cannot currently last longer than 7 days due to limitations in Azure storage.
 
 ## Using timers for delay
 

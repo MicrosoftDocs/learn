@@ -3,7 +3,7 @@ uid: learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.8-use-the-azur
 title: Use the Azure Table API to store IoT data
 metadata:
   title: Use the Azure Table API to store IoT data
-  description: Describe a scenario where the Azure Table API might be a good choice for Cosmos DB.
+  description: Describe a scenario where the Azure Table API might be a good choice for Azure Cosmos DB.
   ms.date: 04/24/2019
   author: rmcmurray
   ms.author: robmcm

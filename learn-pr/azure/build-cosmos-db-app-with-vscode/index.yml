@@ -4,11 +4,10 @@ metadata:
   title: Build a .NET Core app for Azure Cosmos DB in Visual Studio Code
   description: Learn how to create a .NET Core application to store and query data in Azure Cosmos DB by using Visual Studio Code.
   ms.date: 09/24/2018
-  author: mimig1
-  ms.author: mimig
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Build a .NET Core app for Azure Cosmos DB in Visual Studio Code
 summary: Learn how to build a database app to store and query data in Azure Cosmos DB by using Visual Studio Code.
 abstract: |
@@ -30,8 +29,10 @@ products:
 - azure-cosmos-db
 - vs
 - vs-code
+- dotnet
+- aspnet-core
+- dotnet-core
 units:
-#TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
 - learn.cosmos-db-app-with-vscode.1-introduction
 - learn.cosmos-db-app-with-vscode.2-setup-cosmosdb
 - learn.cosmos-db-app-with-vscode.3-setup

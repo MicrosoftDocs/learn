@@ -2,19 +2,23 @@ Planning out a consistent cloud infrastructure starts with setting up policy. Yo
 
 :::row:::
   :::column:::
-    ![Icon representing Azure Blueprint](../media/2-azurepolicy.png)
+    ![Icon representing Azure policy](../media/2-azurepolicy.png)
   :::column-end:::
     :::column span="3":::
-**Azure Policy** is a service in Azure that you use to define, assign, and, manage standards for resources in your environment. It can prevent the creation of disallowed resources, ensure new resources have specific settings applied, and run evaluations of your existing resources to scan for non-compliance. 
-
-Azure Policy comes with many built-in policy and initiative definitions that you can use, under categories such as Storage, Networking, Compute, Security Center, and Monitoring.
+**Azure Policy** is an Azure service you use to create, assign and, manage policies. These policies enforce different rules and effects over your
+resources so that those resources stay compliant with your corporate standards and service level agreements. Azure Policy meets this
+need by evaluating your resources for noncompliance with assigned policies. For example, you might have a policy that allows virtual
+machines of only a certain size in your environment. After this policy is implemented, new and existing resources are evaluated for
+compliance. With the right type of policy, existing resources can be brought into compliance.
   :::column-end:::
 :::row-end:::
 
-Imagine we allow anyone in our organization to create virtual machines (VMs). We want to control costs, so the administrator of our Azure tenant defines a policy that prohibits the creation of any VM with more than 4 CPUs. Once the policy is implemented, Azure Policy will stop anyone from creating a new VM outside the list of allowed SKUs. Also, if you try to _update_ an existing VM, it will be checked against policy. Finally, Azure Policy will audit all the existing VMs in our organization to ensure our policy is enforced. It can audit non-compliant resources, alter the resource properties, or stop the resource from being created.
+Imagine we allow anyone in our organization to create virtual machines (VMs). We want to control costs, so the administrator of our Azure tenant defines a policy that prohibits the creation of any VM with more than 4 CPUs. Once the policy is implemented, Azure Policy will stop anyone from creating a new VM outside the list of allowed stock keeping units (SKUs). Also, if you try to _update_ an existing VM, it will be checked against policy. Finally, Azure Policy will audit all the existing VMs in our organization to ensure our policy is enforced. It can audit non-compliant resources, alter the resource properties, or stop the resource from being created. You can even integrate Azure Policy with Azure DevOps, by applying any continuous integration and delivery pipeline policies that affect the pre-deployment and post-deployment of your applications.
 
-> [!TIP]
-> Azure Policy can integrate with Azure DevOps, by applying any continuous integration and delivery pipeline policies that affect the pre-deployment and post-deployment of your applications.
+> [!div class="alert is-info"]
+> **How are Azure Policy and RBAC different?**
+>
+> At first glance, it might seem like Azure Policy is a way to restrict access to specific resource types similar to role-based access control (RBAC). However, they solve different problems. RBAC focuses on _user actions at different scopes_. You might be added to the contributor role for a resource group, allowing you to make changes to anything in that resource group. Azure Policy focuses on _resource properties during deployment_ and for already-existing resources. Azure Policy controls properties such as the types or locations of resources. Unlike RBAC, **Azure Policy is a default-allow-and-explicit-deny system**.
 
 ## Creating a policy
 
@@ -65,11 +69,76 @@ Here is an example of a Compute policy that only allows specific virtual machine
 }
 ```
 
-Notice the `[parameters('listofAllowedSKUs')]` value; this is a replacement token that will be filled in when the policy definition is applied to a scope. When a parameter is defined, it's given a name and optionally given a value. 
+Notice the `[parameters('listofAllowedSKUs')]` value; this is a _replacement token_ that will be filled in when the policy definition is applied to a scope. When a parameter is defined, it's given a name and optionally given a value.
+
+### Applying Azure policy
+
+To apply a policy, we can use the Azure portal, or one of the command-line tools such as Azure PowerShell by adding the `Microsoft.PolicyInsights` extension.
+
+```powershell
+# Register the resource provider if it's not already registered
+Register-AzResourceProvider -ProviderNamespace 'Microsoft.PolicyInsights'
+```
+
+Once we have registered the provider, we can create a policy assignment. For example, here's a policy definition that identifies virtual machines not using managed disks.
+
+```powershell
+# Get a reference to the resource group that will be the scope of the assignment
+$rg = Get-AzResourceGroup -Name '<resourceGroupName>'
+
+# Get a reference to the built-in policy definition that will be assigned
+$definition = Get-AzPolicyDefinition | Where-Object { $_.Properties.DisplayName -eq 'Audit VMs that do not use managed disks' }
+
+# Create the policy assignment with the built-in definition against your resource group
+New-AzPolicyAssignment -Name 'audit-vm-manageddisks' -DisplayName 'Audit VMs without managed disks Assignment' -Scope $rg.ResourceId -PolicyDefinition $definition
+```
+
+The preceding commands use the following information:
+
+| Parameter | Description |
+|-----------|-------------|
+| **Name**  | The actual name of the assignment. For this example, `audit-vm-manageddisks` was used. |
+| **DisplayName** | Display name for the policy assignment. In this case, you're using Audit VMs without managed disks Assignment. |
+| **Definition** | The policy definition, based on which you're using to create the assignment. In this case, it's the ID of policy definition Audit VMs that do not use managed disks. |
+| **Scope** | A scope determines what resources or grouping of resources the policy assignment gets enforced on. It could range from a subscription to resource groups. Be sure to replace `<scope>` with the name of your resource group. |
+
+### Identifying non-compliant resources
+
+We can use the applied policy definition to identify resources that aren't compliant with the policy assignment through the Azure portal
+
+The results match what you see in the Resource compliance tab of a policy assignment in the Azure portal:
+
+![Screenshot of the policy compliance tab in the Azure portal](../media/2-policy-compliance.png)
+
+Or we can again use the command-line tools to identify the resources in your resource group that are non-compliant to the policy assignment
+
+```powershell
+Get-AzPolicyState -ResourceGroupName $rg.ResourceGroupName -PolicyAssignmentName 'audit-vm-manageddisks' -Filter 'IsCompliant eq false'
+```
+
+Here's an example of the output we might get:
+
+```output
+Timestamp                   : 3/9/19 9:21:29 PM
+ResourceId                  : /subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachines/{vmId}
+PolicyAssignmentId          : /subscriptions/{subscriptionId}/providers/microsoft.authorization/policyassignments/audit-vm-manageddisks
+PolicyDefinitionId          : /providers/Microsoft.Authorization/policyDefinitions/06a78e20-9358-41c9-923c-fb736d382a4d
+IsCompliant                 : False
+SubscriptionId              : {subscriptionId}
+ResourceType                : /Microsoft.Compute/virtualMachines
+ResourceTags                : tbd
+PolicyAssignmentName        : audit-vm-manageddisks
+PolicyAssignmentOwner       : tbd
+PolicyAssignmentScope       : /subscriptions/{subscriptionId}
+PolicyDefinitionName        : 06a78e20-9358-41c9-923c-fb736d382a4d
+PolicyDefinitionAction      : audit
+PolicyDefinitionCategory    : Compute
+ManagementGroupIds          : {managementGroupId}
+```
 
 ### Assign a definition to a scope of resources
 
-Once you've defined one or more policy definitions, you'll need to assign them. A _policy assignment_ is a policy definition that has been assigned to take place within a specific scope. 
+Once you've defined one or more policy definitions, you'll need to assign them. A _policy assignment_ is a policy definition that has been assigned to take place within a specific scope.
 
 This scope could range from a full subscription down to a resource group. Policy assignments are inherited by all child resources. This means that if a policy is applied to a resource group, it is applied to all the resources within that resource group. However, you can exclude a subscope from the policy assignment. For example, we could enforce a policy for an entire subscription and then exclude a few select resource groups.
 
@@ -97,7 +166,12 @@ Azure Policy can allow a resource to be created even if it doesn't pass validati
 
 ![Azure portal showing the Azure Portal Overview screen](../media/2-policy-portal.png)
 
-From this screen, you can spot resources which are not compliant and take action to correct them. 
+From this screen, you can spot resources which are not compliant and take action to correct them.
 
-> [!TIP]
-> If you continue in the Azure Fundamentals learning path, you'll see Azure Policy in more detail in the [Control and organize Azure resources with Azure Resource Manager](https://docs.microsoft.com/learn/modules/control-and-organize-with-azure-resource-manager/) module.
+### Removing a policy definition
+
+Finally, you can delete policy requirements through the portal, or through the PowerShell command `Remove-AzPolicyAssignment` as shown below.
+
+```powershell
+Remove-AzPolicyAssignment -Name 'audit-vm-manageddisks' -Scope '/subscriptions/<subscriptionID>/resourceGroups/<resourceGroupName>'
+```

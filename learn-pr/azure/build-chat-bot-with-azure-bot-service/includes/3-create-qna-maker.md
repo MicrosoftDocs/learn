@@ -65,6 +65,8 @@ The next step is to populate your knowledge base with questions and answers. You
 
     ![Screenshot of the QnA Maker portal showing the Populate your KB section with the Factbot.tsv file uploaded.](../media/3-populate-your-kb.png)
 
+1. There are a number of personalities available for QnA maker, which can be selected under **Chit-chat**. Since we are providing the knowledge base starting point in **Factbot.tsv** we are providing the baseline personality, so you can leave this as default.
+
 1. Select **Create your KB** at the bottom of the page, and wait for the knowledge base to be created. It should take less than a minute.
 
 1. Confirm that the questions and answers imported from **Factbot.tsv** appear in the knowledge base. Then, select **Save and train** and wait for training to complete.

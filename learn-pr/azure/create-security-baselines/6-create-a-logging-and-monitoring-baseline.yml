@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-security.create-security-baselines.create-a-logging-and-monitoring-baseline
+title: Create a logging and monitoring baseline
+metadata:
+  title: Create a logging and monitoring baseline
+  description: Create a logging and monitoring baseline
+  ms.date: 09/9/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-create-a-logging-and-monitoring-baseline.md)]

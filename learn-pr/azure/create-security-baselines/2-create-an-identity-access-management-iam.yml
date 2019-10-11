@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-security.create-security-baselines.create-an-identity-access-management-iam
+title: Create an Identity & Access Management (IAM) baseline
+metadata:
+  title: Create an Identity & Access Management (IAM) baseline
+  description: Create an Identity & Access Management (IAM) baseline
+  ms.date: 09/9/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-create-an-identity-access-management-iam.md)]
