@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.azure.extend-share-capacity-with-azure-file-sync
+metadata:
+  title: Extend your on-premises file share capacity by using Azure File Sync
+  description: Evaluate and deploy Azure File Sync to extend the capacity of your on-premises file share.
+  ms.date: 09/20/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Extend your on-premises file share capacity by using Azure File Sync
+summary: Evaluate requirements for Azure File Sync. Deploy the Storage Sync Service to replicate files from your Windows Server to the Azure file share. Test and troubleshoot file sync between the file shares.
+abstract:  | 
+  In this module, you will:
+  - Evaluate your servers compatibility with Azure File Sync
+  - Deploy Azure File Sync
+  - Test and troubleshoot file sync
+prerequisites: |
+  - Familiarity with Azure Files
+  - Basic knowledge of Windows Server file shares
+iconUrl: /learn/achievements/extend-share-capacity-with-azure-file-sync.svg
+ratingEnabled: false
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+- azure-storage
+units:
+- learn.azure.extend-share-capacity-with-azure-file-sync.introduction
+- learn.azure.extend-share-capacity-with-azure-file-sync.what-is-azure-file-sync
+- learn.azure.extend-share-capacity-with-azure-file-sync.check-windows-server-readiness
+- learn.azure.extend-share-capacity-with-azure-file-sync.exercise-assess-windows-server-readiness
+- learn.azure.extend-share-capacity-with-azure-file-sync.set-up-azure-file-sync
+- learn.azure.extend-share-capacity-with-azure-file-sync.exercise-create-file-sync-resources
+- learn.azure.extend-share-capacity-with-azure-file-sync.set-up-azure-file-sync-on-windows-server
+- learn.azure.extend-share-capacity-with-azure-file-sync.exercise-configure-file-sync-tools-on-windows-server
+- learn.azure.extend-share-capacity-with-azure-file-sync.test-troubleshoot-azure-file-sync
+- learn.azure.extend-share-capacity-with-azure-file-sync.exercise-troubleshoot-azure-file-sync
+- learn.azure.extend-share-capacity-with-azure-file-sync.summary
+badge:
+  uid: learn.azure.extend-share-capacity-with-azure-file-sync.badge

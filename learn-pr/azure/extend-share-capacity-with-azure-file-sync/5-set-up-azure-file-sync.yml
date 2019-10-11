@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.extend-share-capacity-with-azure-file-sync.set-up-azure-file-sync
+title: Set up Azure File Sync in the Azure portal
+metadata:
+  title: Set up Azure File Sync in the Azure portal
+  description: See the components and services that Azure File Sync relies on.
+  ms.date: 09/20/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-set-up-azure-file-sync.md)]
