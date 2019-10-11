@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.hub-and-spoke-network-architecture.6-secure-hub-spoke
+uid: learn.hub-and-spoke-network-architecture.5-secure-hub-spoke
 metadata:
   title: Secure your hub and spoke network
   description: Secure your hub and spoke network
@@ -11,21 +11,21 @@ metadata:
 title: Secure your hub and spoke network
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-secure-hub-spoke.md)]
+  [!include[](includes/5-secure-hub-spoke.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "How do Network Security Groups help you control the flow of traffic in your virtual networks?"
+  - content: "How do network security groups help you control the flow of traffic in your virtual networks?"
     choices:
     - content: "They have strict rules defined to block inbound traffic from the internet, that can't be modified."
       isCorrect: false
       explanation: "There are default rules, and one does restrict access to inbound traffic from the internet. However it can be overridden."
     - content: "They act like a stateful firewall, monitoring network traffic and enforcing policies you define."  
       isCorrect: false
-      explanation: "This is how the Azure Firewall works, not Network Security Groups."
+      explanation: "This is how the Azure Firewall works, not network security sroups."
     - content: "They allow you to create traffic rules, which can allow or deny traffic over specified ports and protocols. "
       isCorrect: true
-      explanation: "This is the correct definition of a Network Security Group."     
+      explanation: "This is the correct definition of a network security group."     
   - content: "How does using an Azure ExpressRoute help improve your security?"
     choices:
     - content: "It provides a dedicated private connection between your on-premises resources and Azure. Extra security is possible by adding network security appliances between edge routers."

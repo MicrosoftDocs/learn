@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.hub-and-spoke-network-architecture.7-summary
+uid: learn.hub-and-spoke-network-architecture.6-summary
 metadata:
   title: Summary
   description: Summary
@@ -11,4 +11,4 @@ metadata:
 title: Summary
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/6-summary.md)]
