@@ -28,7 +28,7 @@ products:
 units:
 - learn.design-monitoring-strategy-on-azure.1-introduction
 - learn.design-monitoring-strategy-on-azure.2-continuous-monitoring
-- learn.design-monitoring-strategy-on-azure.3-monitoring-options-on-azure
+- learn.design-monitoring-strategy-on-azure.3-azure-monitoring-options
 - learn.design-monitoring-strategy-on-azure.4-security-center
 - learn.design-monitoring-strategy-on-azure.5-application-insights
 - learn.design-monitoring-strategy-on-azure.6-sentinel
