@@ -2,7 +2,7 @@
 uid: learn.design-monitoring-strategy-on-azure.5-application-insights
 metadata:
   title: Analyze web applications using Azure Application Insights
-  description: In this unit, you'll explore how to analyze web applications using Azure Application Insights.
+  description: Analyze web applications using Azure Application Insights
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes

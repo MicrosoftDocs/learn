@@ -43,6 +43,7 @@ Identify the subtasks of *Design a holistic monitoring strategy on Azure*
 | Assess application insights for monitoring your applications | Provide monitoring, insights, and alerts  | Knowledge Check | 1 | Yes |
 | Use Azure Monitor to provide a unified monitoring strategy | Design of a monitoring strategy that encompasses all solutions | Knowledge Check & Exercise | 2 | Yes |
 
+
 ## Outline the units
 
 *Add more units as needed for your content*
