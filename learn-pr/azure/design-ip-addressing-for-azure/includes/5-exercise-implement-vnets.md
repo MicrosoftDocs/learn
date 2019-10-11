@@ -8,7 +8,7 @@ The **ManufacturingVnet** virtual network is deployed in the **North Europe** re
 
 The **ResearchVnet** virtual network is deployed in the **West India** region, near the location of the research and development team. The research and development team uses this virtual network. This team has a small, stable set of resources that is not expected to grow. They need a small number of IP addresses for a few virtual machines for their work.
 
-![A diagram of virtual networks you need to create](../media/5-design-implement-vnet-peering.png)
+![A diagram of virtual networks you need to create](../media/5-design-implement-vnet-peering.svg)
 
 You will create the following resources:
 
