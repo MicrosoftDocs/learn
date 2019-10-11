@@ -4,7 +4,7 @@ metadata:
   title: Introduction
   description: Create an Azure IoT Central app.
   ms.date: 09/01/2019
-  author: philmea
+  author: PeterTurcan
   ms.author: philmea
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
