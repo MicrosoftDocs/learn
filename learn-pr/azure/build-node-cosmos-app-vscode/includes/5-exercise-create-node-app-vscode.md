@@ -63,7 +63,7 @@ This exercise runs on your desktop computer.
     npm install @types/node
     ```
 
-    The **esm** package provides support for ECMAScript 6 and later. The **readline-sync** package contains functions that enable you to gather user input from the command line. The **@types/node** package provides support for type checking and error reporting in the IDE.
+    The **esm** package provides support for ECMAScript 6 and later. The **readline-sync** package contains functions that enable you to gather user input from the command line. The **@types/node** package contains additional type definitions for Node.js.
 
     > [!NOTE]
     > You can ignore the **No repository field** warning, and the **extraneous** messages that appear.

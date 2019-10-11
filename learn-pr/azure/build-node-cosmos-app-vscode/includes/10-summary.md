@@ -11,5 +11,7 @@ You can now use Node.js to build applications that can create, query, and mainta
 
 ## Learn more
 
+- [JavaScript in Visual Studio Code](https://code.visualstudio.com/docs/languages/javascript)
+- [Working with JavaScript](https://code.visualstudio.com/docs/nodejs/working-with-javascript)
 - [Node.js tutorial in Visual Studio Code](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial)
 - [Tutorial: Build a Node.js console app with the JavaScript SDK to manage Azure Cosmos DB SQL API data](https://docs.microsoft.com/azure/cosmos-db/sql-api-nodejs-get-started)

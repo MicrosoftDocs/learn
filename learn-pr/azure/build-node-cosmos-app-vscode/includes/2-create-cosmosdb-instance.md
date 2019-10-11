@@ -52,7 +52,7 @@ A request unit can be thought of as a normalized value based on the amount of co
 
 You can change the RU/s for a collection at any time, either up or down. This means that during periods of low activity you can reduce costs, but then increase the RU/s at peak times to maintain performance.
 
-## Using Visual Studio Code to manage Cosmos DB
+## Use Visual Studio Code to manage Cosmos DB
 
 If you're using Visual Studio Code as your development environment for building Cosmos DB databases and applications, you can install the Azure Cosmos DB extension.
 
