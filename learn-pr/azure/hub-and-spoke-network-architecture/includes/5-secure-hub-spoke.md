@@ -6,7 +6,7 @@ In this unit, you'll explore secure networking in the Azure platform, see an ove
 
 ## Secure network design on Azure
 
-![Image showing Azure network infrastructure](../media/6-secure-network.png)
+![Image showing Azure network infrastructure](../media/5-secure-network.png)
 
 The image above shows the Azure network infrastructure, and the methods that enable you to connect securely between on-premises, Azure hosted resources, and the public internet.
 
@@ -61,11 +61,11 @@ Azure Firewall is a network security service managed by Microsoft. It protects A
 
 Azure Firewall is a fully stateful network firewall that tracks the operating state, and characteristics of network connections traversing it. Azure Firewall enables central control of all network communications through policy enforcement. These policies can be enforced across virtual networks, regions, and Azure subscriptions. In a hub and spoke topology, the Azure Firewall is typically provisioned in the hub for complete control of traffic through the network.
 
-![Image showing Azure firewall features](../media/6-azure-firewall.png)
+![Image showing Azure firewall features](../media/5-azure-firewall.png)
 
 The monitoring of Azure Firewall consists of reviewing the firewall and activity logs. Because Azure Firewall is integrated with Azure Monitor Logs, you can view the full logs there. Some logs are also available to view in the Azure portal.
 
-![Image showing Azure Monitor Logs](../media/6-firewall-monitor.png)
+![Image showing Azure Monitor Logs](../media/5-firewall-monitor.png)
 
 The logs can be stored in an Azure Storage Account, streamed to an Azure Event Hub, or sent to Azure Monitor Logs.
 
