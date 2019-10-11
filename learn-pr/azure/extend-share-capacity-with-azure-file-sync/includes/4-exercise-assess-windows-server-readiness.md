@@ -35,7 +35,7 @@ You'd normally install Azure File Sync on your on-premises server. For this exer
 
    ```powershell
     New-Azvm `
-    -Name FileServerWindows `
+    -Name FileServerLocal `
     -Credential $cred `
     -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
     -Size Standard_DS1_v2 `
