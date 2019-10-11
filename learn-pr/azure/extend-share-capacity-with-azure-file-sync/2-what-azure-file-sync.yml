@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.extend-share-capacity-with-azure-file-sync.what-is-azure-file-sync
+title: What is Azure File Sync
+metadata:
+  title: What is Azure File Sync
+  description: Explore what Azure File Sync is, how it works, and what you need to do to support it.
+  ms.date: 09/20/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-azure-file-sync.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How often is the cloud endpoint change detection job run?"
+    choices:
+    - content: Every 12 hours.
+      isCorrect: false
+      explanation: The detection job runs every 24 hours.
+    - content: Every 8 hours.
+      isCorrect: false
+      explanation: The detection job runs every 24 hours. 
+    - content: Every 24 hours.
+      isCorrect: true
+      explanation: The detection job runs every 24 hours. 
+  - content: "What is the Azure File Sync Agent?"
+    choices:
+    - content: It is installed on a server to register itself to take part in Azure File Sync replication to an Azure File share.
+      isCorrect: true
+      explanation: This is the functions of the Azure File Sync agent.
+    - content: It is installed on a server to set NTFS permissions on files and folders.
+      isCorrect: false
+      explanation: This is not the function of the Azure File Sync agent.
+    - content: It is installed on a server to control on-premises file and folder replication traffic.
+      isCorrect: false
+      explanation: This is not the function of the Azure File sync agent.

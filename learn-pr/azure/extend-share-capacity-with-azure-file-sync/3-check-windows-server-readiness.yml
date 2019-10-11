@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.extend-share-capacity-with-azure-file-sync.check-windows-server-readiness
+title: Check Windows Server readiness
+metadata:
+  title: Check Windows Server readiness
+  description: See what the system requirements are for servers that you wish to install Azure File Sync on. You'll see how to run system checks using powershell.
+  ms.date: 09/20/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-check-windows-server-readiness.md)]

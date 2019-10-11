@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.extend-share-capacity-with-azure-file-sync.test-troubleshoot-azure-file-sync
+title: Test and Troubleshoot Azure File Sync
+metadata:
+  title: Test and Troubleshoot Azure File Sync
+  description: See how to test Azure File Sync by connecting to the file share you created in Azure – copy files to and from the share. Check the server endpoints to ensure the file is being replicated correctly.
+  ms.date: 09/20/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/9-test-troubleshoot-azure-file-sync.md)]
