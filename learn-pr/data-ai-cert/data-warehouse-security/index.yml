@@ -24,6 +24,7 @@ levels:
 - beginner
 roles:
 - data-engineer
+- security-engineer
 products:
 - azure
 - azure-sql-data-warehouse

@@ -22,6 +22,7 @@ levels:
 roles:
 - solution-architect
 - administrator
+- security-engineer
 products:
 - azure
 units:

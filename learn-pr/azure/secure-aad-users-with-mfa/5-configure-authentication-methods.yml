@@ -1,0 +1,43 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-security.secure-aad-users-with-mfa.configure-authentication-methods
+metadata:
+  title: Configure multi-factor authentication methods
+  description: Configure multi-factor authentication methods
+  ms.date: 10/02/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Configure multi-factor authentication methods
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-configure-authentication-methods.md)]
+quiz:
+   title: Check your knowledge
+   questions:
+   - content: Which of the following authentication methods is _not_ available for MFA?
+     choices:
+     - content: Text message
+       isCorrect: false
+     - content: Microsoft Authenticator app
+       isCorrect: false
+     - content: Security questions
+       isCorrect: true
+       explanation: "Correct. Security questions can only be used with Self-Service Password Reset."
+   - content: Which of the following authentication methods _cannot_ be disabled?
+     choices:
+     - content: Text message
+       isCorrect: false
+     - content: Password
+       isCorrect: true
+       explanation: "Correct. Passwords are always usable as an authentication method and cannot be disabled."
+     - content: Microsoft Authenticator app
+       isCorrect: false
+   - content: True or False. You must activate multi-factor authentication for all users in the directory you enable it in.
+     choices:
+     - content: "True"
+       isCorrect: false
+     - content: "False"
+       isCorrect: true
+       explanation: "Correct. MFA can be enabled for a subset of your users; this is actually a recommendation - start small to ensure you don't lock someone out of your systems."
