@@ -11,6 +11,5 @@ metadata:
   ROBOTS: NOINDEX
 title: Exercise - Run a disaster recovery drill
 durationInMinutes: 10
-interactive: bash
 content: |
   [!include[](includes/6-exercise-run-disaster-recovery-drill.md)]

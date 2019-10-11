@@ -11,6 +11,5 @@ metadata:
   ROBOTS: NOINDEX
 title: Exercise - Set up disaster recovery with Azure Site Recovery
 durationInMinutes: 10
-azureSandbox: true
 content: |
   [!include[](includes/4-exercise-site-recovery-setup.md)]
