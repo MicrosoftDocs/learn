@@ -1,4 +1,4 @@
-## Title
+# Title
 
 Design a holistic monitoring strategy on Azure
 
@@ -41,7 +41,7 @@ Identify the subtasks of *Design a holistic monitoring strategy on Azure*
 | The technology options available | A monitoring strategy that encompasses all solutions | N/A| 1 | Yes |
 | Assess security center for monitoring your infrastructure | Provide monitoring, insights, and alerts | Knowledge Check| 1 | Yes |
 | Assess application insights for monitoring your applications | Provide monitoring, insights, and alerts  | Knowledge Check | 1 | Yes |
-| Use Azure Monitor to provide a unified monitoring strategy | Design of a monitoring strategy that encompasses all solutions | Knowledge Check & Exercise | 2 | Yes | 
+| Use Azure Monitor to provide a unified monitoring strategy | Design of a monitoring strategy that encompasses all solutions | Knowledge Check & Exercise | 2 | Yes |
 
 ## Outline the units
 
@@ -49,7 +49,7 @@ Identify the subtasks of *Design a holistic monitoring strategy on Azure*
 
 1. **Introduction**
 
-    A financial organization is moving its systems to Azure, a mixture of IaaS and PaaS services. They have had several instances in their previous environment where systems failed, or issues arose, and extended delay to engage resources and resolve the issue occurred. This impacted customers ability to access their accounts, and has hurt customer satisfaction. They want to design a monitoring strategy that encompasses all solutions they use, provides insights and alerting into the log data they accumulate, and ensures they can quickly identify and minimize impact if and when systems fail in the future.
+    A financial organization is moving its systems to Azure, a mixture of IaaS and PaaS services. They have had several instances in their previous environment where systems failed, or issues arose, and extended delay to engage resources and resolve the issue as it occurred. This impacted customers ability to access their accounts, and has hurt customer satisfaction. They want to design a monitoring strategy that encompasses all solutions they use, provides insights and alerting into the log data they accumulate, and ensures they can quickly identify and minimize impact if and when systems fail in the future.
 
 1. **Introduction to continuous monitoring in Azure**
 
@@ -103,26 +103,26 @@ Identify the subtasks of *Design a holistic monitoring strategy on Azure*
     What types of questions will test *the understanding of application insights as a monitoring solution*?
 
     - Why would you use application insight?
-    - How would you check your web application performance?
-    - What alerts can you draw upon to detect application failure and resolution?
-    - What would you use to monitor responsiveness and performance of your dependencies?
-
+    - How can you continuously monitor your applications from different geographic locations?
+    - How would you continuously monitor your release pipelines?
+   
 1. **Analyze enterprise security using Azure Sentinel**
 
-    List the content that will enable the learner to *access the viability of Azure Sentinel as a monitoring solution*:
+   List the content that will enable the learner to *access the viability of Azure Sentinel as a monitoring solution*:
 
-    - Criteria for assessing Azure Sentinel
-    - Enterprise level monitoring
-    - Accessing multiple data sources
-    - Using cases to reduce incident noise
+   - Criteria for assessing Azure Sentinel
+   - Connect data sources
+   - Use alerts to monitor your enterprise
+   - Investigate incidents
+   - How to respond to threats with Azure Sentinel
 
    **Knowledge check**
 
     What types of questions will test *how Azure Sentinel can improve enterprise security monitoring*?
 
     - Why would you use Azure Sentinel?
-    - How does Azure Sentinel monitor your enterprise?
-    - What are the Strengths of user analytics?
+    - How do you set up Azure Sentinel on Azure?
+    - Sentinel has raised an incident. How can you investigate which users have been affected?
 
 1. **Unifying monitoring solutions in Azure**
 
@@ -132,6 +132,13 @@ Identify the subtasks of *Design a holistic monitoring strategy on Azure*
     - The benefits of Azure Monitor
     - Integration with Azure Security Center
     - Integration with Application Insights
+    **Knowledge check**
+
+    What types of questions will test *the understanding of Azure Monitor as a unifying monitoring solution?*:
+
+    - You need to write queries to analyze your log data. How would you do this?
+    - How can you automatically collect security-related data from all newly created virtual machines into one central location?
+    - How can you analyze both security-related data, and application performance data, together?
 
 1. **Summary**
 
@@ -147,14 +154,14 @@ Identify the subtasks of *Design a holistic monitoring strategy on Azure*
 
 This one may not have a ton of interactivity, but should be focused on selecting the right services, how each plays into an overall monitoring strategy, and integrating them together to create a solid monitoring strategy.
 
-https://docs.microsoft.com/en-us/azure/azure-monitor/continuous-monitoring
+https://docs.microsoft.com/azure/azure-monitor/continuous-monitoring
 
 During design investigation, the following URLs were considered.
 
-- Azure Application Insights: https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview
-- Azure Sentinel: https://docs.microsoft.com/en-us/azure/sentinel/overview
-- Azure Security Center: https://docs.microsoft.com/en-us/azure/security-center/security-center-intro
-- Permission in Azure Security Center: https://docs.microsoft.com/en-us/azure/security-center/security-center-permissions
+- Azure Application Insights: https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview
+- Azure Sentinel: https://docs.microsoft.com/azure/sentinel/overview
+- Azure Security Center: https://docs.microsoft.com/azure/security-center/security-center-intro
+- Permission in Azure Security Center: https://docs.microsoft.com/azure/security-center/security-center-permissions
 
 During the design, the following considerations were made
 

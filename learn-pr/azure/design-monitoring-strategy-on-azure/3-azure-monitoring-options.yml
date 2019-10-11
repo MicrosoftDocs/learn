@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-monitoring-strategy-on-azure.3-monitoring-options-on-azure
+uid: learn.design-monitoring-strategy-on-azure.3-azure-monitoring-options
 metadata:
   title: Monitoring options available in Azure
-  description: TODO
+  description: In this unit you'll explore the monitoring options available in Azure.
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Monitoring options available in Azure
-durationInMinutes: 10
+durationInMinutes: 5
 content: |
-  [!include[](includes/3-monitoring-options-on-azure.md)]
+  [!include[](includes/3-azure-monitoring-options.md)]
