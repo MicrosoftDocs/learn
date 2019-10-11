@@ -1,8 +1,8 @@
 The Geo AI DSVM is a version of the Windows DSVM specially configured to support geospatial artificial intelligence and is offered through the collaboration between Esri and Microsoft. *Geospatial artificial intelligence* (Geo AI) refers to the incorporation of machine learning in mapping, map interpretation, or any machine learning with geographical content. You can find this VM image in the marketplace named 'Geo AI Data Science VM with ArcGIS'.
 
-ArcGIS Pro is Esri's next-generation 64-bit desktop geographic information system (GIS). , ArcGIS Pro is technologically ahead of everything else on the market, and provides professional 2D and 3D mapping in an intuitive user interface. ArcGIS Pro is a big step forward in advancing visualization, analytics, image processing, data management, and integration.
+ArcGIS Pro is Esri's next-generation 64-bit desktop geographic information system (GIS). ArcGIS Pro is technologically ahead of everything else on the market, and provides professional 2D and 3D mapping in an intuitive user interface. ArcGIS Pro is a significant step forward in advancing visualization, analytics, image processing, data management, and integration.
 
-The Geo AI DSVM augments the Windows DSVM with the rich geospatial capabilities of ArcGIS Pro. Both Python and R work with ArcGIS Pro, and are preconfigured on the Geo AI Data Science VM. This enable programmatic access to geospatial analytics within your AI applications. Sample Jupyter Notebooks are provided to help you start building AI applications infused with geospatial intelligence.
+The Geo AI DSVM augments the Windows DSVM with the rich geospatial capabilities of ArcGIS Pro. Both Python and R work with ArcGIS Pro, and are preconfigured on the Geo AI Data Science VM. This enables programmatic access to geospatial analytics within your AI applications. Sample Jupyter Notebooks are provided to help you start building AI applications infused with geospatial intelligence.
 
 ## Tools included
 
