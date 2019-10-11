@@ -6,26 +6,16 @@ In this exercise, you'll create a new virtual network to host the servers for yo
 
 ![Diagram showing adding a new HR spoke to the network](../media/4-adding-spoke.png)
 
-<!-- Activate the sandbox -->
-[!INCLUDE [azure-sandbox-activate](../../../includes/azure-sandbox-activate.md)]
-
 ## Environment setup for the next exercise
 
 This deployment will create the Azure network resources matching the above diagram, ready for you to add the new HR virtual network.
-
-1. Download the Resource Manager template and parameter json files that create your chosen hub and spoke resources.
-
-    ```bash
-    curl https://raw.githubusercontent.com/... > deploy.json
-    ```
-    <!-- Replace with public GitHub repo -->
 
 1. Deploy the template.
 
     ```azurecli
     az group deployment create \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --template-file deploy.json
+      --template-url https://raw.githubusercontent.com/MicrosoftDocs/mslearn-hub-and-spoke-network-architecture/master/azuredeploy.json
     ```
 
 ## Create a new spoke in your virtual network
