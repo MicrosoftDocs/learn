@@ -10,8 +10,8 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Add multiple devices
-# azureSandbox: true
-# interactive: bash
+### azureSandbox: true
+### interactive: bash
 durationInMinutes: 10
 content: |
   [!include[](includes/7-add-multiple-devices.md)]

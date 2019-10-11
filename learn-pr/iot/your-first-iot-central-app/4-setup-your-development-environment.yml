@@ -10,8 +10,8 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title:  Set up your development environment
-# azureSandbox: true
-# interactive: bash
+### azureSandbox: true
+### interactive: bash
 durationInMinutes: 15
 content: |
   [!include[](includes/4-setup-your-development-environment.md)]
