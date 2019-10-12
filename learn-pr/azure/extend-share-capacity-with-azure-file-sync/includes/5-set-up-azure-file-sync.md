@@ -2,7 +2,7 @@ You've successfully evaluated the target server and found it suitable. Now you'l
 
 In this unit, you'll see the components and services that Azure File Sync relies on.
 
-To support Azure File Sync, there are a number of resources that you need to create in your **Azure** subscription. Create these resources in the following order:
+To support Azure File Sync, there are a number of resources that you need to create in your Azure subscription. Create these resources in the following order:
 
 ## 1. Storage account
 

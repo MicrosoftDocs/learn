@@ -3,7 +3,7 @@ You've completed this unit, deployed Azure File Sync, and created trust relation
 Those actions have extended your on-premises file server storage capacity to include large CAD files.
     
 - You learned what Azure File Sync is and how to use it.
-- You learned how to assess if your server is ready and compatible to be synchronized with Azure.
+- You learned how to assess if your server is ready and compatible to sync with Azure.
 - You gained experience in configuring Azure to support Windows Servers using Azure File Sync.
 - You set up and configured Azure File Sync on a Windows Server.
 - You found out how to troubleshoot Azure File Sync issues.

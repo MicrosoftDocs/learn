@@ -1,4 +1,4 @@
-Azure File Sync provides multiple ways to monitor and diagnose sync issues. Tools are provided in the sync group, are installed on the Windows Server, and you can set up alerts in Azure Monitor. 
+Azure File Sync provides multiple ways to monitor and diagnose sync issues. Tools are provided in the sync group, and are on the Windows Server. You can also set up alerts in Azure Monitor. 
 
 You've deployed Azure File Sync and configured both the Azure and on-premises environments. Now, you need to troubleshoot a rogue file that's not syncing. You'll use the tools provided by Microsoft.
 
