@@ -4,6 +4,8 @@ In this unit, we are going to add Node.js code for a simulated refrigerated truc
 
 Using your preferred development environment, build a Node.js app. Visual Studio Code and Visual Studio examples are given below. Node.js is a platform for building server apps, based on JavaScript. All the JavaScript code you will need is provided below, so you do not need to be a JavaScript developer to get this app up and running.
 
+::: zone pivot="vscode"
+
 ### With Visual Studio Code
 
 1. Open Visual Studio Code. From the **Terminal** menu, open a **New Terminal**.
@@ -17,6 +19,9 @@ Using your preferred development environment, build a Node.js app. Visual Studio
 1. Back in the terminal, enter **npm install azure-iot-device**. When this package has installed, enter **npm install azure-maps-rest**.
 
 1. After you have entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the RefrigeratedTrucks folder is the current folder of the terminal, when you run the app.
+
+::: zone-end
+::: zone pivot="vstudio"
 
 ### With Visual Studio
 
@@ -33,6 +38,8 @@ Using your preferred development environment, build a Node.js app. Visual Studio
 1. Delete the default contents of the app.js file.
 
 1. When you have entered the code below, you will be able to run the app with the **Start Without Debugging**, or **Start Debugging**, options. In the latter case you can set breakpoints, examine data, and perform other debugging tasks.
+
+::: zone-end
 
 ## Write the Node.js app
 

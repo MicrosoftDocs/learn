@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
+  zone_pivot_groups: ide
 title: Create a real device in Node.js
 # azureSandbox: true
 durationInMinutes: 20
