@@ -18,7 +18,7 @@ The power of smart groups is that they show you all related alerts and give impr
 
 ## Managing smart groups
 
-There are two ways to get to your smart groups: either through the **Alert Summary** page or from the **All Alerts** page. Then select **Alerts by Smart Group**.
+There are two ways to get to your smart groups: from the **Alert Summary** page or from the **All Alerts** page. Then select **Alerts by Smart Group**.
 
 ![Screenshot that highlights how to access smart groups through the Alert Summary page](../media/8-smart-group-alerts-summary.jpg)
 
@@ -26,7 +26,7 @@ There are two ways to get to your smart groups: either through the **Alert Summa
 
 Either method results in a new page that displays all the smart groups. Selecting a smart group opens the details page, which splits into two sections:
 
-- **Alerts**: Lists all the alerts included in the smart group.
+- **Summary**: Lists all the alerts included in the smart group.
 - **History**: Provides a history of all the changes made to the smart group.
 
 ![Screenshot that shows the details page for a smart group](../media/8-smart-group-detail.png)

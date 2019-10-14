@@ -39,7 +39,7 @@ For the previous Azure Monitor alert, you didn't add any actions. You just viewe
     | Action group name | **Alert the operations team** |
     | Short name | **AlertOpsTeam** |
     | Subscription | **Concierge Subscription** |
-    | Resource group | Your sandbox resource group name |
+    | Resource group | Name of your sandbox resource group |
     | ACTION NAME | **Email the operations team** |
     | ACTION TYPE | **Email/SMS/Push/Voice** |
     | Email | Your email address |

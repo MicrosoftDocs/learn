@@ -10,7 +10,7 @@ In this module, you will:
 
 - Explore alerts by using Azure Monitor.
 - Understand when to use metric, log, and activity log events.
-- Create and use metric, log, and activity logs.
+- Create and use metric, log, and activity log alerts.
 - Learn the benefits of using smart groups.
 
 ## Prerequisites

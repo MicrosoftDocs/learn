@@ -1,6 +1,6 @@
 You can use Azure Monitor to capture important information from log files. These log files can be created by applications, operating systems, other hardware, or Azure services.
 
-As a solution architect, you want to explore ways that monitoring log data can detect issues before they become problems for your customers. You know Azure Monitor supports the use of log data.
+As a solution architect, you want to explore ways that monitoring log data can detect issues before they become problems for your customers. You know that Azure Monitor supports the use of log data.
 
 In this unit, you want to understand how the use of log data can improve resilience in your system.
 
@@ -27,13 +27,13 @@ Every log alert has an associated search rule. The composition of these rules is
 - **Frequency**: How often the query should run.
 - **Threshold**: The trigger point for an alert to be created.
 
-Log search results are one of two types, number of records or metric measurements.
+Log search results are one of two types, number of records or metric measurement.
 
 ### Number of records
 
 Consider using the number-of-records type of log search when you're working with an event or event-driven data. Examples are syslog and web app responses. 
 
-This type of log search returns a single alert when the number of records in a search result reaches or exceeds the number of records (threshold) value. For example, when the threshold for the search rule is greater or equal to five, the query results have to return five or more rows of data before the alert is triggered.
+This type of log search returns a single alert when the number of records in a search result reaches or exceeds the value for the number of records (threshold). For example, when the threshold for the search rule is greater or equal to five, the query results have to return five or more rows of data before the alert is triggered.
 
 ### Metric measurement
 

@@ -1,6 +1,6 @@
 The shipping company that you work for wants to avoid any future issues with updates to its applications on the Azure platform. To improve the alert capabilities in Azure, you've chosen to use Azure metric alerts.
 
-In this exercise, you'll create a Linux virtual machine (VM). This VM will run an application that will run the CPU at 100 percent utilization. You'll create monitoring rules in the Azure portal and the Azure CLI to alert you on high CPU usage.
+In this exercise, you'll create a Linux virtual machine (VM). This VM will run an application that will run the CPU at 100 percent utilization. You'll create monitoring rules in the Azure portal and in the Azure CLI to alert you on high CPU usage.
 
 ## Create the VM
 
@@ -30,9 +30,9 @@ This VM will run a specific configuration that stresses the CPU and generates th
         --generate-ssh-keys
     ```
 
-## Create the metric monitor through the Azure portal
+## Create the metric alert through the Azure portal
 
-You use either the Azure portal or the CLI to create a metric monitor. In this exercise we'll cover both, starting with the Azure portal.
+You use either the Azure portal or the CLI to create a metric alert. In this exercise we'll cover both, starting with the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you used to activate the sandbox.
 
@@ -85,11 +85,11 @@ You use either the Azure portal or the CLI to create a metric monitor. In this e
 
     ![Image that shows a completed section for alert details](../media/4-metric-alert-details.png)
 
-1. Select **Create alert rule** to create the alert rule.
+1. Select **Create alert rule**.
 
 You have successfully created a metric alert rule that will trigger an alert when the CPU percentage on the virtual machine exceeds 90 percent. The rule will check every minute and review 1 minute of data. It can take up to 10 minutes for a metric alert rule to become active.
 
-## Create the metric monitor through the CLI
+## Create the metric alert through the CLI
 
 You can set up metric alerts by using the CLI. This process can be quicker compared to using the portal, especially if you're planning to set up more than one alert.
 
