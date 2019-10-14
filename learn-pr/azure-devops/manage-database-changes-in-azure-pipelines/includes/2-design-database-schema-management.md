@@ -1,3 +1,5 @@
+**TODO**: Can the lead-in here be more specific to what you'll learn? As it is, it lacks in information.
+
 In this part, you follow the Tailspin web team as they define their next steps for the _Space Game_ website.
 
 The team is ready to create a database for the website but they need to work with the DBA to coordinate the work. The DBA is responsible for maintaining the integrity of the database and needs to work with the team to understand their database needs. The DBA needs to approve any changes the developers make to the database schema or its tables.
@@ -13,6 +15,8 @@ In this section, you:
 > * Learn how to approve database schema changes in Azure Pipelines.
 
 ## The meeting
+
+**TODO**: I don't think it's obviously apparent to the learner at this point that the _Dev_ stage is where the database might come together with the webapp. Perhaps state that in a sentence or two here, before the team discussion.
 
 **Andy:** Good morning. Azure Pipelines brings together our development and operations processes more efficiently. We are ready to connect the website to a real database. I think this integration can happen as early as the _Dev_ stage. By connecting the website to the database early in the pipeline, we can track changes and measure performance as changes move through the pipeline.
 
@@ -52,7 +56,7 @@ When planning your operational needs, you might ask yourself these questions:
 * Do I need to run complex analytical queries?
 * How quickly do these operations need to complete?
 
-**TODO**: Can we say more here?
+**TODO**: Can we say more here? For example, given any one of these questions, what decision will I make based on the answer? I'm guessing we need to say the answer isn't always so easy, so perhaps we promise links to more in the summary?
 
 **Whether or not you need transactions**
 
@@ -76,9 +80,13 @@ Let's listen in on how the _Space Game_ web team decides which data storage opti
 
 **Amita:** The data will change constantly as people play the game. Players want to see their positions on the leaderboard as quickly as possible, before they get outranked by others. We also talked about adding a feature that polls the leaderboard for updates in real time.
 
-**Tim:** I have had a few conversations about Cosmos DB with our DBA. They want to try it out, but I don't think we have the time to spend ramping up for this project. They have a new project coming up next month that will be a good candidate for Cosmos DB. This project is using relational data and the overall shape of the data shouldn't change much. It would be easier to set up as an Azure SQL database.
+**Tim:** I've had a few conversations about Cosmos DB with our DBA. They want to try it out, but I don't think we have the time to spend ramping up for this project. They have a new project coming up next month that will be a good candidate for Cosmos DB. This project is using relational data and the overall shape of the data shouldn't change much. It would be easier to set up as an Azure SQL database.
+
+**TODO**: This is an example of where we need to be cautious about product names. The product is "Azure SQL Database" (on first use; "SQL Database" thereafter). So we typically shouldn't say "an Azure SQL database" (lowercase 'd'). Rather, we might say "It would be easier to set up Azure SQL Database to ..." Please scrub all occurrences.
 
 **Mara:** That sounds good. I've used SQL Server Data Tools in the past to create a database project. I will add that to our solution. It will have the SQL scripts to create the tables and we can use it to make sure changes to the database schema are tracked.
+
+**TODO**: I wasn't sure here - tracked by whom?
 
 **Andy:** Great. That will be your action item.
 
@@ -88,7 +96,7 @@ This brings up another question. If we create the database and connect to it fro
 
 The _Space Game_ web application currently reads leaderboard data from JSON files. The team plans to convert the application to read leaderboard data from a database.
 
-Recall that the _Space Game_ web application uses ASP.NET Core and is written in C#. The source code defines the `IDocumentDBRepository` interface to fetch leaderboard data. The `LocalDocumentDBRepository` class implements `IDocumentDBRepository` to read from local files.
+Recall that the _Space Game_ web application uses ASP.NET Core and is written in C#. The source code defines the `IDocumentDBRepository` interface to fetch leaderboard data. The `LocalDocumentDBRepository` class implements `IDocumentDBRepository` to read from local JSON files.
 
 To update the code to read from a database, instead of from files, Mara creates another implementation of `IDocumentDBRepository` that connects to Azure SQL Database. This code gets the connection string from the website configuration.
 
@@ -107,13 +115,15 @@ To update the code to read from a database, instead of from files, Mara creates 
 
 The connection string uses _SQL Authentication_, which includes the username and password. Storing this information in plain text in the *appsettings.json* would mean that the username and password would be readable by anyone who can access this file. Instead, Mara uses the _Secret Manager_ tool in Visual Studio to store this string in a file that is not maintained in source control. Let's listen in as she explains this to the team.
 
-**Mara:** When developing the app locally, we can use a file that's named *secrets.json*, which doesn't get pushed to GitHub. Visual Studio can set that up for us using the _Secret Manager_ tool. But when the website on Azure App Service needs this information, it will be in the *appsettings.json* file in the Azure App Service. The Azure App Service will have strict limited permissions as to who can see the files there. We can provide this information to our Azure App Service instance through Azure Pipelines. Therefore, we won't need to add it to our local *appsettings.json*.
+**Mara:** When developing the app locally, we can use a file that's named *secrets.json*, which doesn't get pushed to GitHub. Visual Studio can set that up for us using the _Secret Manager_ tool. But when the website on Azure App Service needs this information, it will be in the *appsettings.json* file on Azure App Service. App Service will have strict limited permissions as to who can see the files there. We can provide this information to our App Service instance through Azure Pipelines. Therefore, we won't need to add it to our local *appsettings.json*.
 
 **Andy:** Good idea, Mara. Now we are getting somewhere.
 
 **Tim:** Don't start celebrating yet. We need to make sure we have a plan for when the database schema changes. Mara mentioned that might happen. How do we make sure that the database administrator is happy with the changes and that the changes are applied at the right time?
 
-## SQL Server Data Tools database project's role in Azure Pipelines
+## The role of the SQL Server Data Tools database project in Azure Pipelines
+
+**TODO**: It's likely on  your list, but just calling out we need to move from _dacpac_ to _bacpac_ in this unit. Also verify KC questions are still accurate.
 
 _SQL Server Data Tools_, which runs on Windows, provides a project type that you can use to define the database schema from Visual Studio. This kind of project produces what's called a _dacpac_ file. When you unpack this file, you see the SQL scripts for creating the database schema. For example, you might see a `CREATE TABLE` script for each table that's defined in the database project. Azure SQL Database can unpack that file and apply the schema changes.
 
@@ -143,7 +153,7 @@ TODO: (Do we send an email or something?)
       Get-Content d:\a\1\s\GeneratedOutputFiles\$(databasename)_Script.sql | foreach {Write-Output $_}
 ```
 
-You can pause the pipeline at the stage where the changes would be applied by using a manual approval, just as you did in the previous module. You create an Azure Pipelines environment that specifies the DBA as the approver. If the DBA approves the changes, the pipeline continues and the changes are applied to the database. If the DBA rejects the changes, the pipeline is halted. From there, you can discuss the proposed change with the DBA and plan some other approach.
+You can use a manual approval to pause the pipeline at the stage where the changes would be applied, just as you did in the [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true) module. You create an Azure Pipelines environment that specifies the DBA as the approver. If the DBA approves the changes, the pipeline continues and the changes are applied to the database. If the DBA rejects the changes, the pipeline is halted. From there, you can discuss the proposed change with the DBA and plan some other approach.
 
 **TODO(Screenshot of approval?)**
 
@@ -174,3 +184,8 @@ We add an ![Callout 4](../../shared/media/callout-04.png) approval to another st
 **Mara:** I'll make the database project and update the website to use the database.
 
 **Andy:** I'll get with our DBA to get the database set up. But first, more coffee.
+
+**TODO**: Calling out a few knowledge check issues for you to address.
+
+* In the first one, the file is *appsettings.json*, not appSettings.json. Also, it's ASP.NET, not ASP.net.
+* In the third, there's no such as as "an Azure Pipeline". It's "in Azure Pipelines". The first alternative choice needs a period. The third alternative is complete.

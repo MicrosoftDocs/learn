@@ -6,7 +6,7 @@ The stages that you and the team defined provide the overall shape of your pipel
 
 However, the website still reads test data from local files, and is not yet connected to a database. In this module, you connect the website to Azure SQL Database and load your database with sample data.
 
-When an application uses a database, the database administrator (DBA) and the app developers must work together to design and maintain the database schema. Azure DevOps can help developers DBAs coordinate their plans and deploy database schema changes more quickly and with greater safety.
+When an application uses a database, the database administrator (DBA) and the app developers must work together to design and maintain the database schema. Azure DevOps can help developers and DBAs coordinate their plans and deploy database schema changes more quickly and with greater safety.
 
 ## Learning objectives
 

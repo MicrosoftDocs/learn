@@ -2,6 +2,9 @@ The team needs to create the Azure SQL Database off of Mara's prototype. She has
 
 Here, you follow along with Andy, Mara, and Tim as they create the database and run the application locally.
 
+> [!NOTE]
+> Can use any kind of database or Fx in AzP. Here we use Uses DDFSDF Tools to manage SQL Server. Blah blah blah so you can run from macOS or Linux.
+
 ## Fetch the branch from GitHub
 
 Here, you fetch the `database` branch from GitHub and checkout, or switch to, that branch.
