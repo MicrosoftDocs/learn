@@ -1,10 +1,10 @@
-Your internal HR department wants to host a new internal HR system that shouldn't be accessible from the internet. The system should be accessible to everyone in the company, whether they work at headquarters or in a satellite office.
+You need to deploy your network infrastructure in a hub and spoke configuration for your resources. Additionally, your internal HR department wants to host a new internal HR system that shouldn't be accessible from the internet. The system should be accessible to everyone in the company, whether they work at headquarters or in a satellite office.
 
-In this exercise, you'll create a new virtual network to host the servers for your company's new HR system.
+In this exercise, you'll deploy your network infrastructure, then create a new virtual network to host the servers for your company's new HR system.
 
 ![Diagram showing adding a new HR spoke to the network](../media/4-adding-spoke.png)
 
-## Environment setup for the next exercise
+## Environment setup
 
 This deployment will create the Azure network resources matching the above diagram, ready for you to add the new HR virtual network.
 
