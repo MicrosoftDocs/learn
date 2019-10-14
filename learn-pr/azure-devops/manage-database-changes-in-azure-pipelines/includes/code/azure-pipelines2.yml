@@ -3,17 +3,19 @@ variables:
 
 stages:
 - stage: 'Build'
-  displayName: 'Build Stage'
+  displayName: 'Build the web application'
   jobs:
-  - job: Build
+  - job: 'Build'
     displayName: 'Build job'
     pool:
       vmImage: 'Ubuntu-16.04'
       demands:
         - npm
+
     variables:
       wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
       dotnetSdkVersion: '2.1.505'
+
     steps:
     - task: DotNetCoreInstaller@0
       displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
@@ -56,40 +58,42 @@ stages:
         publishWebProjects: false
         arguments: '--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)'
         zipAfterPublish: true
+
     - publish: '$(Build.ArtifactStagingDirectory)'
       artifact: drop
+
   - job: BuildDacpac
     pool:
       name: Hosted Windows 2019 with VS2019
-    variables:
-      BuildConfiguration: Debug
-      BuildPlatform: any cpu
     steps:
     - task: DotNetCoreCLI@2
       displayName: Restore
       inputs:
         command: restore
-        projects: '**/*.csproj'  
+        projects: '**/*.csproj'
+
     - task: DotNetCoreCLI@2
       displayName: Build
       inputs:
         projects: '**/*.csproj'
         arguments: '--configuration $(BuildConfiguration)'
+
     - task: VSBuild@1
-      displayName: 'Build project Tailspin.SpaceGame.Database/Tailspin.SpaceGame.Database.sqlproj'
+      displayName: 'Build the database project'
       inputs:
         project: Tailspin.SpaceGame.Database/Tailspin.SpaceGame.Database.sqlproj
+
     - task: CopyFiles@2
-      displayName: 'Copy dacpac file to Staging'
+      displayName: 'Copy dacpac file to staging directory'
       inputs:
-        Contents: |
+        contents: |
           Tailspin.SpaceGame.Database/bin/**/*.dacpac
-        TargetFolder: '$(Build.StagingDirectory)'  
+        targetFolder: '$(Build.StagingDirectory)'
 
     - task: PublishBuildArtifacts@1
       displayName: 'Publish Artifact'
       inputs:
-        PathtoPublish: '$(build.artifactstagingdirectory)'
+        pathToPublish: '$(Build.ArtifactStagingDirectory)'
         artifactName: dropDacpac
       condition: succeededOrFailed()
 
@@ -97,37 +101,40 @@ stages:
   dependsOn: Build
   jobs:
   - deployment: DBAVerificationScript
-    displayName: DBA Verify DB Deployment Script
+    displayName: 'Script database schema changes'
     pool:
       name: Hosted Windows 2019 with VS2019
     variables:
-    - group: 'Release Pipeline'
+    - group: 'Release'
       steps:
       - download: current
         artifact: dropDacpac
         patterns: '**/*'
 
       - task: SqlAzureDacpacDeployment@1
-        displayName: Generate Auto Gen DB Update Script
+        displayName: Generate schema change script
         inputs:
           azureSubscription: 'Resource Manager - Tailspin - SpaceGame'
-          AuthenticationType: 'server'
-          ServerName: '$(servername).database.windows.net'
-          DatabaseName: '$(databasename)'
-          SqlUsername: '$(adminlogin)'
-          SqlPassword: '$(adminPassword)'
+          authenticationType: 'server'
+          serverName: '$(servername).database.windows.net'
+          databaseName: '$(databasename)'
+          sqlUsername: '$(adminlogin)'
+          sqlPassword: '$(adminPassword)'
           deployType: 'DacpacTask'
-          DeploymentAction: 'Script'
-          DacpacFile: '$(Pipeline.Workspace)/dropDacpac/Tailspin.SpaceGame.Database/bin/Debug/Tailspin.SpaceGame.Database.dacpac'
-          IpDetectionMethod: 'AutoDetect'
+          deploymentAction: 'Script'
+          dacpacFile: '$(Pipeline.Workspace)/dropDacpac/Tailspin.SpaceGame.Database/bin/$(buildConfiguration)/Tailspin.SpaceGame.Database.dacpac'
+          ipDetectionMethod: 'AutoDetect'
       
       - task: PowerShell@2
-        displayName: Show Auto Generated SQL Script - check for schema changes
+        displayName: Show change script and check for schema changes
         inputs:
           targetType: 'inline'
           script: | 
+            # Print the schema change script
             Write-Host "Auto Generated SQL Update Script:"
             Get-Content d:\a\1\s\GeneratedOutputFiles\$(databasename)_Script.sql | foreach {Write-Output $_}
+
+            # Check for schema changes
             $file = Get-Content "d:\a\1\s\GeneratedOutputFiles\$(databasename)_Script.sql"
             $containsWord = $file | %{$_ -match "CREATE" -or $_ -match "ALTER" -or $_ -match "DROP"}
             if ($containsWord -contains $true) {
@@ -136,7 +143,7 @@ stages:
               $methodParameters = @{
                 ProjectName = "$(System.TeamProject)"
                 Name = "Release Pipeline"}
-              $vg = Get-VSTeamVariableGroup  @methodParameters 
+              $vg = Get-VSTeamVariableGroup @methodParameters
               $vars = @{}
               $vg.value.variables | Get-Member -MemberType *Property | %{$vars.($_.Name) = $vg.value.variables.($_.Name)}
               $varName = "schemaChanged"
@@ -146,24 +153,24 @@ stages:
               $methodParameters = @{
                 id = $vg.value.id
                 ProjectName = "$(System.TeamProject)"
-                Name = "Release Pipeline"
-                Description = "Variables for Tailspin Pipeline"
+                Name = "Release"
+                Description = ""
                 Type = "Vsts"
                 Variables = $vars}
               Update-VSTeamVariableGroup @methodParameters}
 
 - stage: DBAVerificationApply
   variables:
-  - group: 'Release Pipeline'
+  - group: 'Release'
   condition: and(succeeded(), eq(variables['schemaChanged'], 'True'))
   dependsOn: DBAVerificationScript
   jobs:
   - deployment: DBAVerificationApply
-    displayName: DBA Verify DB Deployment Apply
+    displayName: 'Apply database schema changes'
     pool:
       name: Hosted Windows 2019 with VS2019
     variables:
-    - group: 'Release Pipeline'
+    - group: 'Release'
     environment: 'dbaverification'
     strategy:
       runOnce:
@@ -171,26 +178,25 @@ stages:
           steps:
           - download: current
             artifact: dropDacpac
-            patterns: '**/*'              
+            patterns: '**/*'
           - task: SqlAzureDacpacDeployment@1
-            displayName: 'Deploy SQL Schema'
+            displayName: 'Deploy SQL schema'
             inputs:
               azureSubscription: 'Resource Manager - Tailspin - SpaceGame'
-              AuthenticationType: 'server'
-              ServerName: '$(servername).database.windows.net'
-              DatabaseName: '$(databasename)'
-              SqlUsername: '$(adminlogin)'
-              SqlPassword: '$(adminPassword)'
+              authenticationType: 'server'
+              serverName: '$(servername).database.windows.net'
+              databaseName: '$(databasename)'
+              sqlUsername: '$(adminlogin)'
+              sqlPassword: '$(adminPassword)'
               deployType: 'DacpacTask'
-              DeploymentAction: 'Publish'
-              DacpacFile: '$(Pipeline.Workspace)/dropDacpac/Tailspin.SpaceGame.Database/bin/Debug/tailspin.SpaceGame.Database.dacpac'
-              IpDetectionMethod: 'AutoDetect'
+              deploymentAction: 'Publish'
+              dacpacFile: '$(Pipeline.Workspace)/dropDacpac/Tailspin.SpaceGame.Database/bin/$(buildConfiguration)/Tailspin.SpaceGame.Database.dacpac'
+              ipDetectionMethod: 'AutoDetect'
           - task: PowerShell@2
-            displayName: Update pipeline variable
+            displayName: 'Remove "schemaChanged" pipeline variable'
             inputs:
               targetType: 'inline'
               script: | 
-                Write-Host "remove pipeline variable"
                 Install-Module VSTeam -Scope CurrentUser -Force
                 Set-VSTeamAccount –Account $(Acct) -PersonalAccessToken $(PAT)
                 $methodParameters = @{
@@ -203,14 +209,14 @@ stages:
                 $methodParameters = @{
                   id = $vg.value.id
                   ProjectName = "$(System.TeamProject)"
-                  Name = "Release Pipeline"
-                  Description = "Variables for Tailspin Pipeline"
+                  Name = "Release"
+                  Description = ""
                   Type = "Vsts"
                   Variables = $vars}
                 Update-VSTeamVariableGroup @methodParameters
 
-- stage: 'DeployDev'
-  displayName: 'Deploy to dev environment'
+- stage: 'Dev'
+  displayName: 'Deploy to the dev environment'
   dependsOn: 
   - DBAVerificationScript
   - DBAVerificationApply
@@ -226,7 +232,7 @@ stages:
       vmImage: 'Ubuntu-16.04'
     environment: dev
     variables:
-    - group: 'Release Pipeline'
+    - group: Release
     strategy:
       runOnce:
         deploy:
@@ -236,20 +242,20 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: website'
             inputs:
-              azureSubscription: 'Resource Manager - Tailspin - SpaceGame'
+              azureSubscription: 'Resource Manager - Tailspin - Space Game'
               appName: '$(WebAppNameDev)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
 
-- stage: 'DeployTest'
-  displayName: 'Deploy to test environment'
-  dependsOn: DeployDev
+- stage: 'Test'
+  displayName: 'Deploy to the test environment'
+  dependsOn: Dev
   jobs:
   - deployment: Deploy
     pool:
       vmImage: 'Ubuntu-16.04'
     environment: test
     variables:
-    - group: 'Release Pipeline'
+    - group: 'Release'
     strategy:
       runOnce:
         deploy:
@@ -259,20 +265,20 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: website'
             inputs:
-              azureSubscription: 'Resource Manager - Tailspin - SpaceGame'
+              azureSubscription: 'Resource Manager - Tailspin - Space Game'
               appName: '$(WebAppNameTest)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
 
-- stage: 'DeployStaging'
-  displayName: 'Deploy to staging environment'
-  dependsOn: DeployTest
+- stage: 'Staging'
+  displayName: 'Deploy to the staging environment'
+  dependsOn: Test
   jobs:
   - deployment: Deploy
     pool:
       vmImage: 'Ubuntu-16.04'
     environment: staging
     variables:
-    - group: 'Release Pipeline'
+    - group: 'Release'
     strategy:
       runOnce:
         deploy:
@@ -282,6 +288,6 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: website'
             inputs:
-              azureSubscription: 'Resource Manager - Tailspin - SpaceGame'
+              azureSubscription: 'Resource Manager - Tailspin - Space Game'
               appName: '$(WebAppNameStaging)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
