@@ -125,7 +125,7 @@ The connection string uses _SQL Authentication_, which includes the username and
 
 _SQL Server Data Tools_, which runs on Windows, provides a project type that you can use to define the database schema from Visual Studio. This kind of project produces what's called a _dacpac_ file. When you unpack this file, you see the SQL scripts for creating the database schema. For example, you might see a `CREATE TABLE` script for each table that's defined in the database project. Azure SQL Database can unpack that file and apply the schema changes.
 
-**TODO: (Screenshots of database project and the .dacpac file)**
+**TODO:  (Screenshots of database project and the .dacpac file)**
 
 Let's go back to the team discussion and see how they handle the changes to their database schema.
 
