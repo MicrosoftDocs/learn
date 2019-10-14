@@ -4,7 +4,7 @@ An activity log can also include Azure service health alerts. A company can be n
 
 As an Azure solution architect, you want to explore the capability to monitor selected Azure resources within your subscription. You'll understand how the resources can be used to improve your team's responsiveness and the stability of your systems.
 
-In this unit, you'll explore the two different kinds of active log alerts. Now that you've seen all the different kinds of alerts you can use in Azure Monitor, you'll see how you can trigger actions for your alerts, like sending an email or creating an IT service management (ITSM) support ticket.
+In this unit, you'll explore the two different kinds of active log alerts. Now that you've seen all the different kinds of alerts you can use in Azure Monitor, you'll see how you can trigger actions for your alerts, like sending an email or creating an IT Service Management (ITSM) support ticket.
 
 ## When to use activity log alerts
 
@@ -54,7 +54,7 @@ The only difference is that you no longer need to select a resource, because the
 
 ![Screenshot of the robot icon used to represent actions when you're creating an alert](../media/6-actions.png)
 
-When any event is triggered, you can create an associated action in an action group. Action groups allow you to define actions that will be executed. You can run one ore more actions for each triggered alert.
+When any event is triggered, you can create an associated action in an action group. Action groups allow you to define actions that will be executed. You can run one or more actions for each triggered alert.
 
 The available actions are:
 

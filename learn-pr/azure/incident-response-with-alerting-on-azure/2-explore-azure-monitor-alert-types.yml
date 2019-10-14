@@ -2,7 +2,7 @@
 uid: learn.incident-response-with-alerting-on-azure.2-explore-azure-monitor-alert-types
 metadata:
   title: Explore the different alert types that Azure Monitor supports
-  description: Explore how Azure Monitor receives resource data, what makes up an alert, and how and when to use a alert. Then learn how to create and manage your own alerts.
+  description: Explore how Azure Monitor receives resource data, what makes up an alert, and how and when to use an alert. Then learn how to create and manage your own alerts.
   ms.date: 10/10/2019
   author: jboeshart
   ms.author: jaboes

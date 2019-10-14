@@ -6,7 +6,7 @@ In this unit, you'll see how Azure Monitor receives resource data, what makes up
 
 ## Data types in Azure Monitor
 
-Azure Monitor receives data from target resources like applications, operating systems, Azure resources, Azure subscriptions, and Azure tenants. The nature of the resource defines which data types are available. A data type will a metric, a log, or both a metric and a log.
+Azure Monitor receives data from target resources like applications, operating systems, Azure resources, Azure subscriptions, and Azure tenants. The nature of the resource defines which data types are available. A data type will be a metric, a log, or both a metric and a log.
 
 - The focus for *metric*-based data types is the numerical time-sensitive values that represent some aspect of the target resource.
 - The focus for *log*-based data types is the querying of content data held in structured, record-based log files that are relevant to the target resource.
