@@ -1,7 +1,7 @@
 
 The data communicated between a remote device, and IoT Central, is specified in a _device template_. The device template specifies all the required details about the data, so that both the device and IoT Central have all they need to make sense of the communication.
 
-In this unit, we will create a device template for a refrigerated truck. The IoT Central portal creates a simulated refrigerated truck device for us by default. This simulated device allows us to do some testing of the template before committing to real devices. In the unit that follows this one, we will examine this first level of testing.
+In this unit, you will create a device template for a refrigerated truck. The IoT Central portal creates a simulated refrigerated truck device for you by default. This simulated device allows you to do some testing of the template before committing to real devices. In the unit that follows this one, you will examine this first level of testing.
 
 ## Create a device template
 
@@ -12,7 +12,7 @@ In this unit, we will create a device template for a refrigerated truck. The IoT
 1. You will next see a range  of **New Template** options, select **Custom**.
 
     > [!TIP]
-    > Take note of the other options, **MXChip**, **Raspberry Pi**, and so on, just in case you need them in a future project!
+    > Take note of the other options: **MXChip**, **Raspberry Pi**, and other hardware solutions. You may want to use those template options in a future project!
 
 1. Enter the name for your template: "RefrigeratedTruck", then click **Create**.
 
@@ -21,16 +21,16 @@ In this unit, we will create a device template for a refrigerated truck. The IoT
 1. You should now see a template **RefrigeratedTruck (1.0.0)**, and see that a template can consist of **Measurements**, **Settings**, **Properties**, **Commands**, **Rules**, and a **Dashboard**. Our refrigerated truck will need entries under most of these headings.
 
     > [!NOTE]
-    > We are creating this template with all we need for the units that follow this one. If the purpose of these entries is not immediately obvious, it should become clear as you work through this set of units. It is possible to complete a template, then come back to it and add more entries later, but this can involve managing multiple _versions_ of a template, which is a small complexity, but one we will avoid in this Learn module.
+    > You are creating this template with all you need for the units that follow this one. If the purpose of these entries is not immediately obvious, it should become clear as you work through this set of units. It is possible to complete a template, then come back to it and add more entries later, but this can involve managing multiple _versions_ of a template, which is a small complexity, but one avoided in this Learn module.
     > In the sections that follow, if an entry in the IoT Central portal is not mentioned in the text, it is safe to leave it at its default setting.
 
 ## Measurements
 
-_Measurements_ are data transmitted by the device, and cover four types of values: _Telemetry_, _State_, _Event_, and _Location_. Our scenario requires at least one of each of these types for the refrigerated truck. We need to go through the measurements carefully, and enter all the required data. The most important entry is the **Field Name**. Make sure to enter this text accurately, as it is used when devices communicate values to the IoT Central app. When we come to write code in some of the following units, the reference in the code and the **Field Name** _must_ be an exact match.
+_Measurements_ are data transmitted by the device, and cover four types of values: _Telemetry_, _State_, _Event_, and _Location_. Our scenario requires at least one of each of these types for the refrigerated truck. You need to go through the measurements carefully and enter all the required data. The most important entry is the **Field Name**. Make sure to enter this text accurately, as it is used when devices communicate values to the IoT Central app. When you write code in some of the following units, the reference in the code and the **Field Name** _must_ be an exact match.
 
 ### Telemetry
 
-Telemetry is the values transmitted by sensors. We only implement one sensor in our scenario, the temperature of a truck's contents. The frequency with which this information is transmitted is determined by the device. In order for an operator to respond to an abnormal situation, the frequency of the transmission will need to be set appropriately.
+Telemetry is the values transmitted by sensors. You only implemented one sensor in this scenario, the temperature of a truck's contents. The frequency with which this information is transmitted is determined by the device. In order for an operator to respond to an abnormal situation, the frequency of the transmission will need to be set appropriately.
 
 Notice that minimum and maximum values are specified for a telemetry entry, these values are _only_ used by a simulated device to mimic the values from a real device. A real device can transmit any value. The units of the telemetry are a text value to show on charts and tables, IoT Central does not have any inherent understanding of degrees Celsius, or any other possible physical unit.
 
@@ -77,7 +77,7 @@ States are important, they let the operator know what is going on. A state in Io
     | Field Name | stateCoolingSystem |
     | Values | failed, on, off |
 
-1. A more complex state is the state of the truck itself. If all goes well, a truck's normal routing might be: _ready_, _enroute_, _delivering_, _returning_, _loading_, and back to _ready_ again.  However, we should add the _dumping_ state to cater for when melted contents need to be disposed of! Using the same process as for the last two steps, create this new state.
+1. A more complex state is the state of the truck itself. If all goes well, a truck's normal routing might be: _ready_, _enroute_, _delivering_, _returning_, _loading_, and back to _ready_ again.  However, you should add the _dumping_ state to cater for when melted contents need to be disposed of! Using the same process as for the last two steps, create this new state.
 
     ![Screenshot showing how to create truck state for the simulated device](../media/refrigerated-trucks-state.png)
 
@@ -89,7 +89,7 @@ States are important, they let the operator know what is going on. A state in Io
 
 ### Event
 
-Events are issues triggered by the device, and communicated to the IoT Central app. Events can be one of three types: _Error_, _Warning_, or _Informational_. 
+Events are issues triggered by the device, and communicated to the IoT Central app. Events can be one of three types: _Error_, _Warning_, or _Informational_.
 
 One possible event a device might trigger is a conflicting command. An example might be a truck is returning empty from a customer, but receives a command to deliver its contents to another customer. The conflict is caused by the device (the truck) being unable to act on the command. If a conflict occurs, it is a good idea for the device to trigger an event to warn the operator of the IoT Central app, with a _Warning_ class of event.
 
@@ -105,7 +105,7 @@ One possible event a device might trigger is a conflicting command. An example m
 
 1. Remember to click **Save** when you have entered the fields.
 
-1. A second event that we will add is informational. When a truck receives a command to deliver to a customer, and the truck is able to perform the task, the truck triggers a change-of-customer-ID event. Add this event now.
+1. A second event that you will add is informational. When a truck receives a command to deliver to a customer, and the truck is able to perform the task, the truck triggers a change-of-customer-ID event. Add this event now.
 
     ![Screenshot showing how to create a customer changed event for the simulated device](../media/refrigerated-trucks-customer.png)
 
@@ -116,7 +116,7 @@ One possible event a device might trigger is a conflicting command. An example m
     | Default Severity | Information |
 
     > [!NOTE]
-    > One reason we add this event is to keep track of which truck is going to which customer. In a later unit we implement multiple trucks and a single dashboard to monitor them, and having this event helps provide a record of what is going on.
+    > One reason you add this event is to keep track of which truck is going to which customer. In a later unit, you implement multiple trucks and a single dashboard to monitor them, and having this event helps provide a record of what is going on.
 
 ### Location
 
@@ -131,13 +131,13 @@ A location is probably the most important, and yet one of the easiest measuremen
     | Display Name | Location |
     | Field Name | location |
 
-1. You should now have completed adding all the measurements we need. Validate the measurements you have created against the following screen (though your colors may differ from the colors in the image):
+1. You should now have completed adding all the measurements you need. Validate the measurements you have created against the following screen (though your colors may differ from the colors in the image):
 
     ![Screenshot to help validate you have entered all the measurements for the simulated device correctly](../media/refrigerated-trucks-measurements.png)
 
 ## Settings
 
-A Setting contains device configuration data. In our refrigerated truck example, we are going to define an optimal temperature for the contents as a setting. This optimal temperature might conceivably change with different types of content, different weather conditions, or whatever might be appropriate. A setting has an initial default value, which may not need to be changed, but the ability to change it easily and quickly is there, if needed.
+A Setting contains device configuration data. In our refrigerated truck example, you are going to define an optimal temperature for the contents as a setting. This optimal temperature might conceivably change with different types of content, different weather conditions, or whatever might be appropriate. A setting has an initial default value, which may not need to be changed, but the ability to change it easily and quickly is there, if needed.
 
 A setting is a single value. If more complex sets of data need to be transmitted to a device, a Command (see below) might be the more appropriate way of handling it.
 
@@ -176,7 +176,7 @@ Properties of a device are typically constant values, that are communicated to t
 
 Commands are sent by the operator of the IoT Central app to the remote devices. Commands are similar to settings, but a command can contain no, or multiple, input fields if necessary, whereas a setting is limited to a single value.
 
-For refrigerated trucks, there are two commands we should add: a command to deliver the contents to a customer (identified by a customer ID), and a command to recall the truck to base.
+For refrigerated trucks, there are two commands you should add: a command to deliver the contents to a customer (identified by a customer ID), and a command to recall the truck to base.
 
 1. Click the **Commands** title under the device template name, then click **New Command**.
 
@@ -204,4 +204,4 @@ For refrigerated trucks, there are two commands we should add: a command to deli
 
 Preparing a device template does take some care and some time.
 
-Now, in the next unit, we can do some validation of our device template.
+In the next unit, you can do some validation of our device template.

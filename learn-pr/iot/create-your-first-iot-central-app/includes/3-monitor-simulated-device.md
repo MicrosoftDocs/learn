@@ -3,17 +3,17 @@ Even before a device template is complete, the automatically created simulated d
 
 ## Validate the device template
 
-Complete validation of the device template will not be possible until you have some real devices. However, the simulated device allows us both to check the completeness of what we have done so far, and to provide a helpful UI to learn the basics of managing devices through IoT Central.
+Complete validation of the device template will not be possible until you have some real devices. However, the simulated device allows you both to check the completeness of what you have done so far, and to provide a helpful UI to learn the basics of managing devices through IoT Central.
 
-1. Inside the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) portal, select the **Devices** entry in the left-hand menu, then click the one device we have so far (**RefrigeratedTruck-1**). In the range of **Views**, if it is not already selected, click the _chart_ entry (the left-most of the three view options, highlighted below).
+1. Inside the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) portal, select the **Devices** entry in the left-hand menu, then click the one device you have so far (**RefrigeratedTruck-1**). In the range of **Views**, if it is not already selected, click the _chart_ entry (the left-most of the three view options, highlighted below).
 
     ![Screenshot showing the telemetry line chart, and the state bar charts, for the simulated device](../media/refrigerated-trucks-simview1.png)
 
 1. This view shows the line chart of the telemetry, and bar charts for states and events. Note the column of eye icons, determining whether the field is visible or not. Some of these icons may be light-gray (indicating the field is not visible), and if so, click the eye icons to turn the fields visible.
 
-1. Notice that the temperature telemetry falls within the minimum (-20 degC), and the maximum (20 degC), we set when defining this field. Hover over any telemetry, or any state in the bar charts, for a little more information.
+1. Notice that the temperature telemetry falls within the minimum (-20 degC), and the maximum (20 degC), you set when defining this field. Hover over any telemetry, or any state in the bar charts, for a little more information.
 
-1. The event chart is a bit less obvious than the telemetry and states, but notice the diamond icons (highlighted near the bottom edge of the image above) that represent an event that has been triggered. Clicking on any of these icons will give you more detail about the event. With the simulated device, this detail cannot be much more than that the event "occurred". With real devices, we can learn more about a real event.
+1. The event chart is a bit less obvious than the telemetry and states, but notice the diamond icons (highlighted near the bottom edge of the image above) that represent an event that has been triggered. Clicking on any of these icons will give you more detail about the event. With the simulated device, this detail cannot be much more than that the event "occurred". With real devices, you can learn more about a real event.
 
 1. Now, click on the _table_ view (the second of the three views).
 
@@ -25,7 +25,7 @@ Complete validation of the device template will not be possible until you have s
 
     ![Screenshot showing the location map for the simulated device](../media/refrigerated-trucks-simview3.png)
 
-1. The map view is certainly a fun one, and you will probably be a bit surprised to see our "truck" has superpowers and ended up in the ocean after traveling directly to various random locations on land! The simulated device has no concept of anything other than a random location, but at least we have verified that location data is being transmitted, so has been set up correctly.
+1. The map view is certainly a fun one, and you will probably be a bit surprised to see our "truck" has superpowers and ended up in the ocean after traveling directly to various random locations on land! The simulated device has no concept of anything other than a random location, but at least you have verified that location data is being transmitted, so has been set up correctly.
 
 1. Clicking on any of the blue circles provides more location information.
 
@@ -33,11 +33,11 @@ Complete validation of the device template will not be possible until you have s
 
     ![Screenshot showing the night-time map for the simulated device](../media/refrigerated-trucks-night.png)
 
-1. We are interested in the night view, or the dark gray-scale view, as there is greater contrast with the device icons (the circles). These dark views can be helpful when the map view shows state information for each device, which will be shown as different colored circles.
+1. You are interested in the night view, or the dark gray-scale view, as there is greater contrast with the device icons (the circles). These dark views can be helpful when the map view shows state information for each device, which will be shown as different colored circles.
 
 ## Create an elementary dashboard
 
-In this final exercise for this unit, we create a dashboard to monitor a single device. Later on in this series of units, we are going to create a more specific dashboard for all devices. The two processes are similar, so the experience you gain here will be useful in creating any IoT dashboard.
+In this final exercise for this unit, you create a dashboard to monitor a single device. Later on in this series of units, you are going to create a more specific dashboard for all devices. The two processes are similar, so the experience you gain here will be useful in creating any IoT dashboard.
 
 1. Click on **Dashboard** in the left-hand menu, then select **New** top-right of the screen.
 

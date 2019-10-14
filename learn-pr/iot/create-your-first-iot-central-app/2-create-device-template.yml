@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.your-first-iot-central-app.2-create-a-device-template
+uid: learn.iot.create-your-first-iot-central-app.create-a-device-template
 metadata:
   title: Create a device template
   description: Create an Azure IoT Central device template. In this scenario, for a refrigerated truck.
@@ -13,4 +13,4 @@ title: Create a device template
 # azureSandbox: true
 durationInMinutes: 15
 content: |
-  [!include[](includes/2-create-a-device-template.md)]
+  [!include[](includes/2-create-device-template.md)]
