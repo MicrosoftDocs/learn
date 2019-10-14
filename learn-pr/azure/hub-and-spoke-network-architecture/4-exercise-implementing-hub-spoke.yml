@@ -10,7 +10,5 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Implementing a hub-spoke network topology on Azure
 durationInMinutes: 10
-interactive: bash
-azureSandbox: true
 content: |
   [!include[](includes/4-exercise-implementing-hub-spoke.md)]
