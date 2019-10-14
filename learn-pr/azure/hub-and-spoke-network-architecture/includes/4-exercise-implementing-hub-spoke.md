@@ -6,6 +6,8 @@ In this exercise, you'll deploy your network infrastructure, then create a new v
 
 ## Environment setup
 
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
+
 This deployment will create the Azure network resources matching the above diagram, ready for you to add the new HR virtual network.
 
 First, you'll create a resource group, the virtual network, and subnets for your server resources.
@@ -25,12 +27,12 @@ First, you'll create a resource group, the virtual network, and subnets for your
     ```azurecli
     az group deployment create \
       --resource-group $rg \
-      --template-url https://raw.githubusercontent.com/MicrosoftDocs/mslearn-hub-and-spoke-network-architecture/master/azuredeploy.json
+      --template-uri https://raw.githubusercontent.com/MicrosoftDocs/mslearn-hub-and-spoke-network-architecture/master/azuredeploy.json
     ```
 
 ## Create a new spoke in your virtual network
 
-You create a virtual network with the Azure portal, Azure CLI, Azure PowerShell – in your code or alongside creating other resources, such as a VM. Let's do this exercise through the Azure portal.
+You create a virtual network with the Azure portal, Azure CLI, Azure PowerShell. Let's do the rest of this exercise through the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
