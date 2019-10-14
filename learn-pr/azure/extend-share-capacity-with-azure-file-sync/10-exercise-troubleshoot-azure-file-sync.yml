@@ -4,12 +4,11 @@ title: Exercise - Troubleshoot Azure File Sync
 metadata:
   title: Exercise - Troubleshoot Azure File Sync
   description: In this exercise, you'll first check that file sync is correctly working. Then you'll generate a file with invalid characters and see how to diagnose sync issues, and then resolve them.
-  ms.date: 09/20/2019
+  ms.date: 10/11/2019
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 12
 azureSandbox: true
 content: |

@@ -6,7 +6,7 @@ In this exercise, you'll change the security setting to allow you to download th
 
 1. If you closed your Remote Desktop Connection, use the following steps to connect to the virtual machine (VM).
     1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
-    1. Go to **Virtual machines** > **WindowsFileSvr**.
+    1. Go to **Virtual machines** > **FileServerLocal**.
     1. Select **Connect** > **Download RDP File** > open the RDP file.
     1. In the **Windows Security** window, select **More choices** > **Use a different account**.
     1. Enter the username **learnadmin** and the password you used when you created the VM.
@@ -49,11 +49,11 @@ In this exercise, you'll change the security setting to allow you to download th
 1. Select **Add server endpoint**.
 1. Use the following values:
 
-    ![Screenshot of the add server endpoint pane, showing the Registered Server as WindowsFileSvr, and Path set to C:\CADFolder](../media/8-add-server-endpoint.png)
+    ![Screenshot of the add server endpoint pane, showing the Registered Server as FileServerLocal, and Path set to C:\CADFolder](../media/8-add-server-endpoint.png)
 
    |Field |value  |
    |---------|---------|
-   |Registered Server    | WindowsFileSvr        |
+   |Registered Server    | FileServerLocal        |
    |Path    |    D:\CADFolder     |
 
 1. For **Cloud Tiering**, select **Enabled**.

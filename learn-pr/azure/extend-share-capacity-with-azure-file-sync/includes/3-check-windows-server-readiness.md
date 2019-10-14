@@ -1,4 +1,4 @@
-As part of Azure File Sync, Microsoft provides a set of evaluation powershell cmdlets. Running the scripts will show you if the server has any incompatibilities with Azure File Sync.
+As part of Azure File Sync, Microsoft provides a set of evaluation powershell cmdlets. The cmdlets will show you if the server has any incompatibilities with Azure File Sync.
 
 After learning about Azure File Sync, you're going to assess servers to check they can take part in the sync process. You'll investigate the tools offered by Microsoft to help you do this task.
 
@@ -14,16 +14,16 @@ Before considering using Azure File Sync with you on-premises machines, you need
 
 ## Evaluate OS and files for compatibility
 
-Use the Azure File Sync evaluation tool to evaluate the systems OS and files to ensure compatibility with the service. This tool is an Azure PowerShell cmdlet that checks for potential issues with the file system and data sets, like supported characters and the OS version.
+Use the Azure File Sync evaluation tool to evaluate the systems OS and files to ensure compatibility with the service. This tool is an Azure PowerShell cmdlet that checks for potential issues with the file system and data sets, like unsupported characters or OS version.
 
 ## System requirements
 
 Azure File Sync has these system requirements for your local file server:
 
-- *Operating System*: Windows Server 2012 R2, Windows Server 2016, or Windows Server 2019, in either Datacenter or Standard editions in full or core deployments.
-- *Memory*: 2 GiB RAM or more.
-- *Patches*: Latest Windows patches applied.
-- *Storage*: Locally attached volume formatted in the NTFS file format. It can't be remote storage connected via USB.
+- *Operating System*: Windows Server 2012 R2, Windows Server 2016, or Windows Server 2019, in either Datacenter or Standard editions in full or core deployments
+- *Memory*: 2 GiB RAM or more
+- *Patches*: Latest Windows patches applied
+- *Storage*: Locally attached volume formatted in the NTFS file format. It can't be remote storage connected by USB
 
 **Supported file system features**
 
@@ -31,11 +31,11 @@ The NTFS file system supports many features, and Azure File Sync supports a subs
 
 The supported features are:
 
-- *Access Control Lists (ACLs)*: ACLs are preserved and enforced on Windows server endpoints.
+- *Access Control Lists (ACLs)*: ACLs are preserved and enforced on Windows Server endpoints.
 - *NTFS Compression*: Compressing files to save space is fully supported.
 - *Sparse files*: Sparse files are stored in a more efficient way than normal files. Sparse files are supported but, during the sync to the cloud, they're stored as a normal full file.
 
-There are many different file types on a Windows server. Some files are important to the OS but have no place in a sync operation. If they were synced, these files would take up unnecessary space. So the following files are ignored:
+There are many different file types on a Windows Server. Some files are important to the OS but have no place in a sync operation. If they were synced, these files would take up unnecessary space. So the following files are ignored:
 
 - *Desktop.ini*:  OS specific
 - *ethumbs.db$*:  temporary file for thumbnails
@@ -63,4 +63,4 @@ Once installed, running `Invoke-AzStorageSyncCompatibilityCheck` with the correc
 
   `Invoke-AzStorageSyncCompatibilityCheck -ComputerName <name of computer to check> -SkipNamespaceChecks`
 
-The results tell you if the OS, filesystem, file names, and folder names have compatibility issues.
+The results tell you if the OS, filesystem, file names, or folder names have compatibility issues.

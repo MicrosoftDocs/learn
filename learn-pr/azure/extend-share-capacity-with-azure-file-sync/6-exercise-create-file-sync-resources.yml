@@ -4,12 +4,11 @@ title: Exercise - Create File Sync resources in Azure
 metadata:
   title: Exercise - Create File Sync resources in Azure
   description: In this exercise, you'll create the resources your company needs to support Azure File Sync.
-  ms.date: 09/20/2019
+  ms.date: 10/11/2019
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 6
 azureSandbox: true
 content: |

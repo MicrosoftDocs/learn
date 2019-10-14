@@ -1,4 +1,4 @@
-Azure File Sync allows you to extend your on-premises file shares into Azure. It works with your existing on-premises file shares to expand your storage capacity and provide redundancy in the cloud. It requires Windows Server 2012 R2 or later versions, including both the full server and core deployment options. You can access your on-premises file share with any supported file sharing protocol that Windows Server supports like SMB, NFS, or FTPS.
+Azure File Sync allows you to extend your on-premises file shares into Azure. It works with your existing on-premises file shares to expand your storage capacity and provide redundancy in the cloud. It requires Windows Server 2012 R2 or later versions. You can access your on-premises file share with any supported file sharing protocol that Windows Server supports like SMB, NFS, or FTPS.
 
 You're researching the tools available to extend your on-premises file share capacity into Azure. You wish to understand Azure File Sync, how it works, and how it can help increase your file share capacity.
 
@@ -22,13 +22,17 @@ There are some terms you need to understand to use Azure File Sync.
 
 - *Storage Sync Service* is the high-level Azure resource for Azure File Sync. The service is a peer of the storage account, and can also be deployed to Azure resource groups.
 
-- *Sync group* outlines the replication topology for a set of files or folders. All endpoints located in the same sync group are kept in sync with each other. Different sets of files that must be in sync and managed with Azure File Sync would each need the creation of two sync groups and different endpoints.
+- *Sync group* outlines the replication topology for a set of files or folders. All endpoints located in the same sync group are kept in sync with each other. If you have different sets of files that must be in sync and managed with Azure File Sync, you would create two sync groups and different endpoints.
 
-- *Registered server* represents the trust relationship between the on-premises server and the Storage Sync Service. Multiple servers can be registered to the Storage Sync Service as required. However, a server can only be registered with one Storage Sync Service at a time.
+- *Registered server* represents the trust relationship between the on-premises server and the Storage Sync Service. You can register multiple servers to the Storage Sync Service. However, a server can only be registered with one Storage Sync Service at a time.
 
-- *Azure File Sync agent* is a downloadable package that enables Windows Server to be synced with an Azure file share. The agent has three components: *FileSyncSvc.exe* is the service that monitors changes on endpoints; *StorageSync.sys* is the Azure File system filter driver; and *PowerShell management cmdlets*.
+- *Azure File Sync agent* is a downloadable package that enables Windows Server to be synced with an Azure file share. The agent has three components: 
 
-- *Server endpoint* represents a specific location on a registered server, such as a folder on a local disk. Multiple server endpoints can exist on the same volume if their paths don't overlap.
+   - *FileSyncSvc.exe*: Service that monitors changes on endpoints
+   - *StorageSync.sys*: Azure File system filter driver
+   - PowerShell management cmdlets
+
+- *Server endpoint* represents a specific location on a registered server, like a folder on a local disk. Multiple server endpoints can exist on the same volume if their paths don't overlap.
 
 - *Cloud endpoint* is the Azure file share that's part of a sync group. The whole file share syncs and can be a member of only one cloud endpoint. An Azure file share can only be a member of one sync group at a time.
 
@@ -36,7 +40,7 @@ There are some terms you need to understand to use Azure File Sync.
 
 ## How does it work?
 
-Azure File Sync uses a software-based agent that's installed on the on-premises servers that you want to replicate. This agent communicate with the Storage Sync Service.
+Azure File Sync uses a software-based agent that's installed on the on-premises server that you want to replicate. This agent communicate with the Storage Sync Service.
 
 Azure File Sync uses Windows USN journaling on the Windows Server to automatically initiate a sync session when files change on the server endpoint. So changes made to the on-premises file share are immediately detected and replicated to the Azure file share.
 
@@ -44,12 +48,12 @@ Azure Files doesn't yet have change notification or journaling. So Azure File Sy
 
 ## Deployment process
 
-The following steps describe the high level process you use to set up Azure File Sync. 
+The following steps describe the high level process you use to set up Azure File Sync.
 
-1. *Evaluate your on-premises system* - Run the evaluation cmdlet on your on-premises server to check that your OS and file system are supported.
-1. *Create Azure resources* - You need a storage account to contain the file share, a file share, a storage sync service, and a sync group. Create the resources in that order.
-1. *Install the Azure File Sync agent* - Install the agent on each file server that's taking part in replication to the Storage Sync Service.
-1. *Register the Windows Server with the Storage Sync Service* - After you install the sync agent, you're automatically prompted to register the server with the Storage Sync Service.
-1. *Create the server endpoint* - After the server is registered, you add it as an endpoint in the sync group.
+1. *Evaluate your on-premises system*:  Run the evaluation cmdlet on your on-premises server to check that your OS and file system are supported.
+1. *Create Azure resources*: You need a storage account to contain the file share, a file share, a Storage Sync Service, and a sync group. Create the resources in that order.
+1. *Install the Azure File Sync agent*: Install the agent on each file server that's taking part in replication to the Storage Sync Service.
+1. *Register the Windows Server with the Storage Sync Service*: After you install the sync agent, you're automatically prompted to register the server with the Storage Sync Service.
+1. *Create the server endpoint*: After the server is registered, you add it as an endpoint in the sync group.
 
 We'll cover these steps in the following units.

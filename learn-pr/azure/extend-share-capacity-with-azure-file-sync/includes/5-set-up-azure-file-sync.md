@@ -1,10 +1,8 @@
-There are additional steps you need to do before you can complete the setup of Azure File Sync and extend your on-premises file shares in Azure. Azure File Sync depends on using a storage account to store the file share. After that's created, you need to create the Storage Sync Service. Finally, you add a sync group to the service to point to your new file share.
-
 You've successfully evaluated the target server and found it suitable. Now you'll prepare your Azure environment to deploy Azure File Sync and investigate what steps are required.
 
 In this unit, you'll see the components and services that Azure File Sync relies on.
 
-To support Azure File Sync, there are a number of resources that you need to create in your **Azure** subscription. Create these resources in the following order:
+To support Azure File Sync, there are a number of resources that you need to create in your Azure subscription. Create these resources in the following order:
 
 ## 1. Storage account
 
@@ -16,7 +14,7 @@ The file share is the cloud version of a normal on-premises file share and will 
 
 ## 3. Storage Sync Service
 
-The Sync Service is responsible for establishing trust between your companies server and Azure. The service is where you connect together the file share in Azure and your file directory on your server.
+The Storage Sync Service is responsible for establishing trust between your companies server and Azure. The service is where you connect together the file share in Azure and your file directory on your server.
 
 ## 4. Sync group
 

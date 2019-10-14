@@ -1,4 +1,4 @@
-Azure File Sync provides multiple ways to monitor and diagnose sync issues. Tools are provided in the sync group, are installed on the Windows Server, and you can set up alerts in Azure Monitor. 
+Azure File Sync provides multiple ways to monitor and diagnose sync issues. Tools are provided in the sync group, and are on the Windows Server. You can also set up alerts in Azure Monitor. 
 
 You've deployed Azure File Sync and configured both the Azure and on-premises environments. Now, you need to troubleshoot a rogue file that's not syncing. You'll use the tools provided by Microsoft.
 
@@ -18,7 +18,7 @@ In this exercise, you'll first check that file sync is working correctly. Then g
 
 1. If you closed your Remote Desktop Connection, use the following steps to connect to the virtual machine (VM).
     1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
-    1. Go to **Virtual machines** > **WindowsFileSvr**.
+    1. Go to **Virtual machines** > **FileServerLocal**.
     1. Select **Connect** > **Download RDP File** > open the RDP file.
     1. In the **Windows Security** window, select **More choices** > **Use a different account**.
     1. Enter the username **learnadmin** and the password you used when you created the VM.
@@ -77,7 +77,7 @@ You can troubleshoot on your on-premises server or on the Azure portal. Syncing 
 
 1. On your local machine, return to the Azure portal.
 1. Go to the sync group. Select **All resources** > **CADSyncService** > **CADFiles**.
-1. Under server endpoints, select **WindowsFileSvr**.
+1. Under server endpoints, select **FileServerLocal**.
 1. Next to **Transient**, select **1 files**. It may take a few minutes for the file to show up.
 
     ![Screenshot of the Server Endpoint Properties shows a transient error.](../media/10-transient-error.png)
