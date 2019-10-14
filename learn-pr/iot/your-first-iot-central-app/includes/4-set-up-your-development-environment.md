@@ -16,15 +16,19 @@ The essential component for communication between a device and IoT Central is a 
 
     When the device is created, you will notice the phrase "Missing Data" where the telemetry would normally be. Not until the device starts transmitting data will this phrase change.
 
-1. Click on the **Connect** button for the device, top right of your screen. Take your time and copy the **Scope ID**, **Device ID**, and **Primary Key**, to a text tool, such as Notepad, and save the file. You will be using these values after installing and running a few utilities to generate connection strings.
+1. Click on the **Connect** button for the device, top right of your screen. Take your time and copy the **Scope ID**, **Device ID**, and **Primary Key**, to a text document, such as Notepad or TextEdit.
 
-1. Click **Close**.
+1. Save the text file. You will be using these values after installing and running a few utilities to generate connection strings.
+
+1. In the IoT Central portal, click the **Close** button.
 
 ## Generate a connection string
 
 All of the work to generate connection strings is handled through Azure Cloud Shell.
 
 1. Make sure you have activated the sandbox at the top of this unit. It will give you access to a free Azure Cloud Shell to run the following commands without altering your own system or any personal or work-related Azure resource.
+
+1. Navigate to the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
 
 1. In the Azure Cloud Shell, create a refrigerated-truck folder, and navigate to it:
 
@@ -54,22 +58,22 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
     chmod +x dps_cstr
     ```
 
-1. Remember that in the previous section we stored a **Scope ID**, **Device ID**, and **Primary Key**, for our device. It is a good idea to keep a text tool such as Notepad open, and create in it the following string, replacing **{scope-id}**, **{device-id}**, and **{primary-key}** with the true values. Using the text tool enables you to create and validate the string before committing to running it.
+1. Remember that in the previous section we stored a **Scope ID**, **Device ID**, and **Primary Key**, for our device. It is a good idea to keep a text document such as Notepad open, and create in it the following string, replacing **{scope-id}**, **{device-id}**, and **{primary-key}** with the true values. Using the text document enables you to create and validate the string before committing to running it.
 
     ```bash
     ./dps_cstr {scope_id} {device_id} {primary_key} > connection1.txt
     ```
 
-1. Now copy this command from your text tool into the refrigerated-truck folder of Azure Cloud Shell, and run it. If successful, the tool will generate a connection string and write it out to the connection1.txt file.
+1. Now copy this command from your text document into the refrigerated-truck folder of Azure Cloud Shell, and run it.
 
 1. Use the **{ }** icon in Azure Cloud Shell to navigate to the connection1.txt file. You will probably have to expand the **refrigerated-truck** node to locate it. Double-click on connection1.txt to open the file. Carefully copy all the contents to your text tool.
 
     ![Screenshot showing how to locate the connection1.txt file in the Azure Cloud Shell](../media/refrigerated-trucks-connection1.png)
 
     > [!IMPORTANT]
-    > The last element of the connection string is the Primary Key. During testing, sometimes a minor corruption occurred at the end of the string. Verify that the connection string in connection1.txt ends with an exact copy of the Primary Key, and if not, correct the copy you have made of the correction string in your text tool.
+    > The last element of the connection string is the Primary Key. Verify that the connection string in connection1.txt ends with an exact copy of the Primary Key, and if not, correct the copy you have made of the correction string in your text document.
 
-1. The connection string you will use in the Node.js app (that follows in the next unit) starts with **HostName=**, so separate off this part of the string in your text tool, so you have one line containing a string that looks similar to the following:
+1. The connection string you will use in the Node.js app (that follows in the next unit) starts with **HostName=**, so separate off this part of the string in your text document, so you have one line containing a string that looks similar to the following:
 
     ```js
     HostName=iotc-<your Scope ID>.azure-devices.net;DeviceId=<your Device ID>;SharedAccessKey=<your Primary Key>
@@ -83,11 +87,11 @@ You now have the all important connection string. The Scope ID identifies the ap
 
 If you do not already have an Azure Maps account, you will need to create one.
 
-1. Navigate to `https://azure.microsoft.com/services/azure-maps/`.
+1. Navigate to [Azure Maps](https://azure.microsoft.com/services/azure-maps/?azure-portal=true).
 
-1. Follow the prompts to create a free account. When your account is set up, you will need the **Subscription Key** for the account. Copy and paste this key into your text tool, with a note that it applies to Azure Maps.
+1. Follow the prompts to create a free account. When your account is set up, you will need the **Subscription Key** for the account. Copy and paste this key into your text document, with a note that it applies to Azure Maps.
 
-1. If you want to verify your Azure Maps subscription key will work correctly, enter it in the following code. Save the code as a .html file, then run the code in a browser. Do you see a map of the world?
+1. You can verify your Azure Maps subscription key will work. Save the following HTML to an .html file with any filename. Then, load the file in a web browser. Do you see a map of the world?
 
 ```html
 <!DOCTYPE html>

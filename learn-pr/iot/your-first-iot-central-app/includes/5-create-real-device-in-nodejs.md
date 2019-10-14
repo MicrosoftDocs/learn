@@ -324,7 +324,7 @@ In the blank app.js file, insert the following code. Each additional section of 
     > [!NOTE]
     > The statement `var num = request.payload.customerId;` shows how data (text, numbers, toggles, dates) are passed from the IoT Central app, in a command. Note too that the device responds with a conflict if it is not in the correct state, and that the command itself is acknowledged at the end of the function. The recall command, that follows in the next step, handles things very similarly.
 
-1.  Add the recall command.
+1. Add the recall command.
 
     ```js
     function ReturnToBase() {

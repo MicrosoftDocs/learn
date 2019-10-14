@@ -12,7 +12,7 @@ In this unit, we will create a device template for a refrigerated truck. The IoT
 1. You will next see a range  of **New Template** options, select **Custom**.
 
     > [!TIP]
-    > Take note of the other options, **MXChip**, **Raspberry Pi**, and so on, just in case you need them in a future project!
+    > Take note of the other options: **MXChip**, **Raspberry Pi**, and other hardware solutions. You may want to use those template options in a future project!
 
 1. Enter the name for your template: "RefrigeratedTruck", then click **Create**.
 
