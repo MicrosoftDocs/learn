@@ -6,27 +6,15 @@ In this exercise, you'll deploy your network infrastructure, then create a new v
 
 ## Environment setup
 
-[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
-
 This deployment will create the Azure network resources matching the above diagram, ready for you to add the new HR virtual network.
 
-First, you'll create a resource group, the virtual network, and subnets for your server resources.
-
-1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and log in to the directory with access to the subscription you want to create resources in.
-
-1. Run the following command in the Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
-
-    ```azurecli
-    rg=<resource group name>
-
-    az group create --name $rg --location <location>
-    ```
+First, you'll create the virtual networks, and subnets for your server resources.
 
 1. Run this command to deploy the template and create the resources.
 
     ```azurecli
     az group deployment create \
-      --resource-group $rg \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
       --template-uri https://raw.githubusercontent.com/MicrosoftDocs/mslearn-hub-and-spoke-network-architecture/master/azuredeploy.json
     ```
 
@@ -54,8 +42,8 @@ The resource creation experience on the portal is a wizard that walks you throug
     |---------|---------|
     |Name                   | **HRappVnet**     |
     |Address Space          | **10.10.0.0/16**  |
-    |Subscription           | **Select your subscription**         |
-    |Resource Group         | **Select the resource group you created** |
+    |Subscription           | **Concierge subscription**         |
+    |Resource Group         | **<rgn>[sandbox resource group name]</rgn>** |
     |Subnet – Name          | **HRworkload**   |
     |Subnet – Address Range | **10.10.0.0/16** |
     |DDoS Protection        | **Basic**        |
@@ -80,7 +68,7 @@ Now you've created the third spoke, you need to configure the virtual network pe
     |---------|---------|
     |Name of the peering from hubVnet to HRappVnet     | **gwPeering_hubVNet_HRappVnet**      |
     |Peer Details     | **Resource Manager**        |
-    |Subscription     | **Select your subscription**        |
+    |Subscription     | **Concierge subscription**        |
     |Virtual Network     |  **HRappVnet**       |
     |Name of the peering from HRappVnet to hubVnet     | **gwPeering_HRappVnet_hubVNet**      |
     |Allow virtual network access from hubVnet to HRappVnet  |   **Enabled**  |
