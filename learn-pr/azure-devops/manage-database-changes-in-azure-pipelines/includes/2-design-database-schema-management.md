@@ -123,8 +123,6 @@ The connection string uses _SQL Authentication_, which includes the username and
 
 ## The role of the SQL Server Data Tools database project in Azure Pipelines
 
-**TODO**: It's likely on  your list, but just calling out we need to move from _dacpac_ to _bacpac_ in this unit. Also verify KC questions are still accurate.
-
 _SQL Server Data Tools_, which runs on Windows, provides a project type that you can use to define the database schema from Visual Studio. This kind of project produces what's called a _dacpac_ file. When you unpack this file, you see the SQL scripts for creating the database schema. For example, you might see a `CREATE TABLE` script for each table that's defined in the database project. Azure SQL Database can unpack that file and apply the schema changes.
 
 **TODO: (Screenshots of database project and the .dacpac file)**

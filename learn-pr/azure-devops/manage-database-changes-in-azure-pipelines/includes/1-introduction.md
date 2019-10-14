@@ -12,12 +12,9 @@ When an application uses a database, the database administrator (DBA) and the ap
 
 In this module, you:
 
-- Securely access an Azure SQL database from your App Service.
-- Add database schema changes to Azure pipeline approvals.
-- Make sure approval is needed only where there are actual schema changes.
-
-- Connect your website to a relational database.
-- 
+- Connect a relational database to your website by using Azure SQL Database and App Service as an example.
+- Coordinate changes to the database schema by using a release approval.
+- Use PowerShell to share pipeline variables among pipeline stages.
 
 ## Prerequisites
 

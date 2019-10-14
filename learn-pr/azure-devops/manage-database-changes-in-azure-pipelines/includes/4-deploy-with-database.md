@@ -1,9 +1,8 @@
-The team needs to create the Azure SQL Database off of Mara's prototype. She has given them a *bacpac* file so that they can create the database with data in it. After that, they want to test the changes to the application locally using the Azure SQL Database they created. 
+The team needs to create the Azure SQL Database off of Mara's prototype. She has given them a *bacpac* file so that they can create the database with data in it. After that, they want to test the changes to the application locally using the Azure SQL Database they created.
+
+**TODO**: This is the first time we're referening "bacpac". We migh tneed to introduce it to avoid confusion with "dacpac".
 
 Here, you follow along with Andy, Mara, and Tim as they create the database and run the application locally.
-
-> [!NOTE]
-> Can use any kind of database or Fx in AzP. Here we use Uses DDFSDF Tools to manage SQL Server. Blah blah blah so you can run from macOS or Linux.
 
 ## Fetch the branch from GitHub
 
@@ -187,15 +186,15 @@ Here you set up your environment to run the web site locally using the Azure SQL
 
     1. The `dotnet` command from the .NET Core SDK has a `user-secrets` parameter that will create the directory structure and the file you need using the GUID it finds in your project. If you are on a Mac, the location for the file is `~/.microsoft/usersecrets/(GUID)/secrets.json`. If you are on Windows, the location for the file is `%APPDATA%\Microsoft\UserSecrets\(GUID)\secrets.json`. Run this command to create and populate the *secrets.json* file.
 
-         ```bash
-            dotnet user-secrets set "ConnectionStrings:DefaultConnection" "Your connection string"
-         ```
+        ```bash
+        dotnet user-secrets set "ConnectionStrings:DefaultConnection" "Your connection string"
+        ```
 
         Make sure you have replaced the `{your_username}` and `{your_password}` with the username and password you set up when you created the server.
     1. Run the following command to read the secrets.json file and see that your connection string is there.
 
         ```bash
-           dotnet user-secrets list
+        dotnet user-secrets list
         ```
 
 1. Build the application using the following `dotnet` command.
@@ -243,13 +242,13 @@ To make the commands easier to run, start by selecting a default region. After y
 
 1. Run `az configure` to set your default region. Replace **\<REGION>** with the name of the region you chose for your database.
 
-    ```bash
+    ```azurecli
     az configure --defaults location=<REGION>
     ```
 
     Here's an example that sets **westus2** as the default region.
 
-    ```bash
+    ```azurecli
     az configure --defaults location=westus2
     ```
 
@@ -275,7 +274,7 @@ To do so, you:
 
 1. Run the following `az appservice plan create` command to create an app service plan that's named **tailspin-space-game-asp**.
 
-    ```bash
+    ```azurecli
     az appservice plan create \
       --name tailspin-space-game-asp \
       --resource-group tailspin-space-game-rg \
@@ -289,7 +288,7 @@ To do so, you:
 
 1. Run the following `az webapp create` commands to create the three App Service instances, one for each of the  _Dev_, _Test_, and _Staging_ environments.
 
-    ```bash
+    ```azurecli
     az webapp create \
       --name tailspin-space-game-web-dev-$webappsuffix \
       --resource-group tailspin-space-game-rg \
@@ -308,7 +307,7 @@ To do so, you:
 
 1. Run the following `az webapp list` command to list the hostname and state of each App Service instance.
 
-    ```blah
+    ```azurecli
     az webapp list \
       --resource-group tailspin-space-game-rg \
       --query "[].{hostName: defaultHostName, state: state}" \
@@ -329,7 +328,7 @@ To do so, you:
 
 1. Configure the connection string to the database in each App Service. Use the names of the app services you discovered above. Be sure to replace the **NNN** with your random number. Replace \<paste your connection string here\> with your connection string. Make sure you have replaced the `{your_username}` and `{your_password}` with the username and password you set up when you created the database.
 
-    ``` bash
+    ```azurecli
     az webapp config connection-string set \
         -n tailspin-space-game-web-dev-NNN -g tailspin-space-game-rg \
         --settings "DefaultConnection=<paste your connection string here>" \
