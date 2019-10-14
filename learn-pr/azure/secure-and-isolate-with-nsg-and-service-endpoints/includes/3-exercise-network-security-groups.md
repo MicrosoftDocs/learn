@@ -18,6 +18,7 @@ First, you'll create a resource group, the virtual network, and subnets for your
     rg=<resource group name>
 
     az group create --name $rg --location <location>
+    ```
 
 1. Run the following command in Azure Cloud Shell to create the **ERP-servers** virtual network and the **Applications** subnet.
 
