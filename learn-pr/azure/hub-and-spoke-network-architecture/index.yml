@@ -17,7 +17,7 @@ abstract: |
   - Identify methods to secure connectivity in a hub and spoke network
 prerequisites: | 
   - Basic understanding of networking concepts in traditional and cloud networks
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/hub-and-spoke-network-architecture.svg
 levels:
 - intermediate
 roles:
