@@ -26,8 +26,6 @@ The essential component for communication between a device and IoT Central is a 
 
 All of the work to generate connection strings is handled through Azure Cloud Shell.
 
-1. Make sure you have activated the sandbox at the top of this unit. It will give you access to a free Azure Cloud Shell to run the following commands without altering your own system or any personal or work-related Azure resource.
-
 1. Navigate to the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
 
 1. In the Azure Cloud Shell, create a refrigerated-truck folder, and navigate to it:
