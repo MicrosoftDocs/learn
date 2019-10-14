@@ -10,12 +10,12 @@ In this unit, you'll explore virtual networking in the Azure platform, the desig
 
 Virtual networks provide networking services in Azure and enable you to extend your existing on-premises infrastructure. An Azure virtual network can represent your private IT infrastructure within the cloud, logically isolating dedicated resources in your subscriptions. Virtual networks enable external connections to the internet, communication between different internal Azure resources, isolation of those resources, connections to on-premises computers, and network traffic management.
 
-Azure Virtual Networks are component-based – two components you'll need to use are **Azure Subnets (subnets)** and **Network Security Groups (NSGs)**:
+Two important elements of virtual networks are **subnets** and **network security groups**.
 
 ![Image showing Azure Virtual Network component architecture](../media/3-azure-VNet-arch.png)
 
-- **Azure subnet**: Each virtual network can include a number of subnets. Each subnet is given its own unique properties.
-- **Network security groups**: Network security groups allow you to filter the inbound and outbound traffic through your virtual network or subnet. You can also use NSGs to filter traffic by source and destination IP address, port, or protocol.
+- **Subnet**: Each virtual network can include a number of subnets. Each subnet is given its own unique properties.
+- **Network security groups**: Network security groups allow you to filter the inbound and outbound traffic through your virtual network or subnet. You can also use network security groups to filter traffic by source and destination IP address, port, or protocol.
 
 ## Planning and design considerations for virtual networks
 
