@@ -91,8 +91,7 @@ This exercise runs on your desktop computer.
 1. In the **cosmosgrades.js** script, add the following function:
 
     ```javascript
-    function isOK(statusCode)
-    {
+    function isOK(statusCode) {
         return statusCode >= 200 && statusCode <= 299;
     }
     ```
