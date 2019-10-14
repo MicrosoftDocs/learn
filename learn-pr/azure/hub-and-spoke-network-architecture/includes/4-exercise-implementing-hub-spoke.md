@@ -8,11 +8,23 @@ In this exercise, you'll create a new virtual network to host the servers for yo
 
 This deployment will create the Azure network resources matching the above diagram, ready for you to add the new HR virtual network.
 
+First, you'll create a resource group, the virtual network, and subnets for your server resources.
+
+1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and log in to the directory with access to the subscription you want to create resources in.
+
+1. Run the following command in the Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
+
+    ```azurecli
+    rg=<resource group name>
+
+    az group create --name $rg --location <location>
+    ```
+
 1. Run this command to deploy the template and create the resources.
 
     ```azurecli
     az group deployment create \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group $rg \
       --template-url https://raw.githubusercontent.com/MicrosoftDocs/mslearn-hub-and-spoke-network-architecture/master/azuredeploy.json
     ```
 
@@ -40,8 +52,8 @@ The resource creation experience on the portal is a wizard that walks you throug
     |---------|---------|
     |Name                   | **HRappVnet**     |
     |Address Space          | **10.10.0.0/16**  |
-    |Subscription           | **Concierge Subscription (default)**         |
-    |Resource Group         | **<rgn>[sandbox resource group name]</rgn>** |
+    |Subscription           | **Select your subscription**         |
+    |Resource Group         | **Select the resource group you created** |
     |Subnet – Name          | **HRworkload**   |
     |Subnet – Address Range | **10.10.0.0/16** |
     |DDoS Protection        | **Basic**        |
@@ -66,7 +78,7 @@ Now you've created the third spoke, you need to configure the virtual network pe
     |---------|---------|
     |Name of the peering from hubVnet to HRappVnet     | **gwPeering_hubVNet_HRappVnet**      |
     |Peer Details     | **Resource Manager**        |
-    |Subscription     | **Concierge Subscription (default)**        |
+    |Subscription     | **Select your subscription**        |
     |Virtual Network     |  **HRappVnet**       |
     |Name of the peering from HRappVnet to hubVnet     | **gwPeering_HRappVnet_hubVNet**      |
     |Allow virtual network access from hubVnet to HRappVnet  |   **Enabled**  |
@@ -87,7 +99,7 @@ You'll create a network security group to configure traffic flow.
 
 1. Select **Create a Resource** in the upper left corner of the Azure portal.
 
-1. In the search box, enter **Network security group**, and then select the link with the same title in the list.
+1. In the search box, enter **network security group**, and then select the link with the same title in the list.
 
 1. Select **Create** to start configuring the virtual network.
 
