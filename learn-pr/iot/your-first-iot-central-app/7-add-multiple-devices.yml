@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.your-first-iot-central-app.add-multiple-devices
+uid: learn.iot.create-your-first-iot-central-app.add-multiple-devices
 metadata:
   title: Add multiple devices
   description: Create connection strings, and add code to your Node.js app, to support a fleet of refrigerated trucks.
