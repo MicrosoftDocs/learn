@@ -5,7 +5,7 @@ metadata:
   description: Create an app to monitor and command multiple remote devices. Use the IoT Central portal to create the IoT Central app, then use Node. code for each simulated device. The scenario is you control a fleet of refrigerated trucks.
   ms.date: 09/01/2019
   author: PeterTurcan
-  ms.author: philmea
+  ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create your first Azure IoT Central app
@@ -24,7 +24,8 @@ prerequisites: |
   -	Experience using Visual Studio, or Visual Studio Code, at the beginner level 
   - Must have, or be able to open, an Azure Maps account 
 ### iconUrl: /learn/achievements/generic-badge.svg
-iconUrl: /learn/achievements/iot/iot-hub-conveyor-belt-vibration-detection.svg
+### iconUrl: /learn/achievements/iot/iot-hub-conveyor-belt-vibration-detection.svg
+iconUrl: /learn/achievements/iot/iot-central-refrigerated-truck-module.svg
 ratingEnabled: false
 levels:
 - beginner
@@ -45,4 +46,4 @@ units:
 - learn.iot.your-first-iot-central-app.9-summary
 badge:
 ###  uid: learn.iot.iot-test.badge
-  uid: learn.iot.iot-hub-conveyor-belt-vibration-detection.badge
+  uid: learn.iot.iot-central-refrigerated-truck-module.badge

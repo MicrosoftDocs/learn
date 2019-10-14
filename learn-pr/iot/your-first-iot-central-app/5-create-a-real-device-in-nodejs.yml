@@ -5,7 +5,7 @@ metadata:
   description: Create a Node.js app simulating a real refrigerated truck, communicating with both Azure Maps and Azure IoT Central.
   ms.date: 09/01/2019
   author: PeterTurcan
-  ms.author: philmea
+  ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
