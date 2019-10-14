@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.your-first-iot-central-app.4-setup-your-development-environment
+uid: learn.iot.create-your-first-iot-central-app.setup-your-development-environment
 metadata:
   title: Set up your development environment
   description: Download and install the tools needed for IoT Central code development.
@@ -14,4 +14,4 @@ title:  Set up your development environment
 ### interactive: bash
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-setup-your-development-environment.md)]
+  [!include[](includes/4-set-up-your-development-environment.md)]

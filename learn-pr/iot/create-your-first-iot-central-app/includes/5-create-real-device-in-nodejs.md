@@ -1,8 +1,10 @@
-In this unit, we are going to add Node.js code for a simulated refrigerated truck, which enables us to test the code long before requiring a real truck. IoT Central treats this simulation as "real" because the communication code between the Node.js app and the IoT Central app would be the same for a real truck. In other words, in a real situation (where you run a refrigerated truck company), you would start with simulated code similar to that in this unit, and, after it worked to your satisfaction, the simulation specific code would be replaced with real code. And the communication code would remain the same. This latter fact makes writing the following code a valuable experience.
+In this unit, you are going to add Node.js code for a simulated refrigerated truck, which enables you to test the code long before requiring a real truck. IoT Central treats this simulation as "real" because the communication code between the Node.js app and the IoT Central app would be the same for a real truck. In other words, in a real situation (where you run a refrigerated truck company), you would start with simulated code similar to that in this unit, and, after it worked to your satisfaction, the simulation specific code would be replaced with real code. And the communication code would remain the same. This latter fact makes writing the following code a valuable experience.
 
 ## Create the Node.js app
 
-Using your preferred development environment (Visual Studio Code, and Visual Studio, examples are given below), build a Node.js app. Node.js is a platform for building server apps, based on JavaScript. All the JavaScript code you will need is provided below, so you do not need to be a JavaScript developer to get this app up and running.
+Using your preferred development environment, build a Node.js app. Visual Studio Code and Visual Studio examples are given below. Node.js is a platform for building server apps, based on JavaScript. All the JavaScript code you will need is provided below, so you do not need to be a JavaScript developer to get this app up and running.
+
+::: zone pivot="vscode"
 
 ### With Visual Studio Code
 
@@ -17,6 +19,9 @@ Using your preferred development environment (Visual Studio Code, and Visual Stu
 1. Back in the terminal, enter **npm install azure-iot-device**. When this package has installed, enter **npm install azure-maps-rest**.
 
 1. After you have entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the RefrigeratedTrucks folder is the current folder of the terminal, when you run the app.
+
+::: zone-end
+::: zone pivot="vstudio"
 
 ### With Visual Studio
 
@@ -34,6 +39,8 @@ Using your preferred development environment (Visual Studio Code, and Visual Stu
 
 1. When you have entered the code below, you will be able to run the app with the **Start Without Debugging**, or **Start Debugging**, options. In the latter case you can set breakpoints, examine data, and perform other debugging tasks.
 
+::: zone-end
+
 ## Write the Node.js app
 
 In the blank app.js file, insert the following code. Each additional section of code should be appended to the end of the file, in the order listed here.
@@ -41,7 +48,7 @@ In the blank app.js file, insert the following code. Each additional section of 
    > [!NOTE]
    > If you would like to skip this unit, and load all of the code into your app, then download and copy all of the contents of app.js from [MicrosoftDocs/mslearn-your-first-iot-central-app](https://github.com/MicrosoftDocs/mslearn-your-first-iot-central-app) into the app.js file of your project. If you copy this code, then go straight to the next unit, and start testing!
 
-1. Add code to connect to Azure IoT Central, and Azure Maps, replacing the `<your...>` strings for both technologies with your own strings. Do not change any other lines of code.
+1. Add code to connect to Azure IoT Central and Azure Maps, replacing the `<your...>` strings for both technologies with your own strings. Do not change any other lines of code.
 
     ```js
     "use strict";
@@ -57,7 +64,7 @@ In the blank app.js file, insert the following code. Each additional section of 
             connectionString = "<your IoT Central connection string for truck 1>";
             break;
 
-        // We will be adding more trucks in a later unit....
+        // You will be adding more trucks in a later unit....
     }
 
     console.log("Starting " + truckIdentification);
@@ -77,7 +84,7 @@ In the blank app.js file, insert the following code. Each additional section of 
     ```
 
     > [!NOTE]
-    > An Azure Maps `Pipeline` class contains the HTTP request policies. We are using the default policies in this app, so provide only our key as a parameter. A `RouteURL` class represents a URL to the Azure Maps route operations, which takes our pipeline as a parameter.
+    > An Azure Maps `Pipeline` class contains the HTTP request policies. You are using the default policies in this app, so provide only our key as a parameter. A `RouteURL` class represents a URL to the Azure Maps route operations, which takes our pipeline as a parameter.
 
 1. Add global variables.
 
@@ -171,7 +178,6 @@ In the blank app.js file, insert the following code. Each additional section of 
     }
 
     function Arrived() {
-
         // If the truck is within 10 meters of the destination, call it good.
         if (DistanceInMeters(currentLat, currentLon, destinationLat, destinationLon) < 10)
             return true;
@@ -179,7 +185,6 @@ In the blank app.js file, insert the following code. Each additional section of 
     }
 
     function UpdatePosition() {
-
         while ((truckSectionsCompletedTime + timeOnPath[truckOnSection] < timeOnCurrentTask) && (truckOnSection < timeOnPath.length - 1)) {
 
             // Truck has moved onto the next section.
@@ -197,7 +202,6 @@ In the blank app.js file, insert the following code. Each additional section of 
     }
 
     function GetRoute(newState) {
-
         // Set the state to ready, until the new route arrives.
         state = stateEnum.ready;
 
@@ -210,7 +214,6 @@ In the blank app.js file, insert the following code. Each additional section of 
         var results = routeURL.calculateRouteDirections(rest.Aborter.timeout(10000), coordinates);
 
         results.then(data => {
-
             console.log("Number of points = " + JSON.stringify(data.routes[0].legs[0].points.length, null, 4));
 
             // Clear the path.
@@ -245,7 +248,6 @@ In the blank app.js file, insert the following code. Each additional section of 
 
             // Calculate how much time is required for each section of the path.
             for (var t = 0; t < path.length - 1; t++) {
-
                 // Calculate distance between the two path points, in meters.
                 distanceApartInMeters = DistanceInMeters(path[t][0], path[t][1], path[t + 1][0], path[t + 1][1]);
 
@@ -260,7 +262,6 @@ In the blank app.js file, insert the following code. Each additional section of 
             // Update the state now the route has arrived. One of: enroute or returning.
             state = newState;
         }, reason => {
-
             // Error: The request was aborted.
             console.log(reason);
             conflict = "Failed to find map route";
@@ -269,18 +270,16 @@ In the blank app.js file, insert the following code. Each additional section of 
     ```
 
     > [!NOTE]
-    > It is important to grasp the asynchronous nature of calls to Azure Maps, the call to this function will end before the `results.then(...)` section of the code is run, as this section is waiting for the results from Azure Maps.
+    > It is important to grasp the asynchronous nature of calls to Azure Maps, the call to the `calculateRouteDirections` function will end immediately after it is called while your app is waiting for the results from Azure Maps. When the results are returned from Azure Maps, the method passed in to `results.then(...)` will be called with the resulting route.
 
 1. Add the command to deliver to a customer.
 
     ```js
     function CmdGoToCustomer(request, response) {
-
         // Pick up variables from the request payload, with the field name specified in IoT Central.
         var num = request.payload.customerId;
 
         if (num >= 0 && num < customer.length) {
-
             // What to do depends on the state of the truck.
             switch (state) {
                 case stateEnum.dumping:
@@ -288,7 +287,6 @@ In the blank app.js file, insert the following code. Each additional section of 
                 case stateEnum.delivering:
                     conflict = "Unable to act - " + state;
                     break;
-
                 case stateEnum.ready:
                 case stateEnum.enroute:
                 case stateEnum.returning:
@@ -313,7 +311,6 @@ In the blank app.js file, insert the following code. Each additional section of 
             conflict = "Invalid customer: " + num;
         }
 
-
         // Acknowledge the command.
         response.send(200, 'Success', function (errorMessage) {
             // Failure
@@ -325,9 +322,9 @@ In the blank app.js file, insert the following code. Each additional section of 
     ```
 
     > [!NOTE]
-    > The statement `var num = request.payload.customerId;` shows how data (text, numbers, toggles, dates) are passed from the IoT Central app, in a command. Note too that the device responds with a conflict if it is not in the correct state, and that the command itself is acknowledged at the end of the function. The recall command, that follows in the next step, handles things very similarly.
+    > The statement `var num = request.payload.customerId;` shows how data (text, numbers, toggles, dates) are passed from the IoT Central app in a command. Note, too, that the device responds with a conflict if it is not in the correct state, and that the command itself is acknowledged at the end of the function. The recall command that follows in the next step handles things very similarly.
 
-1.  Add the recall command.
+1. Add the recall command.
 
     ```js
     function ReturnToBase() {
@@ -339,7 +336,6 @@ In the blank app.js file, insert the following code. Each additional section of 
     }
 
     function CmdRecall(request, response) {
-
         switch (state) {
             case stateEnum.ready:
             case stateEnum.loading:
@@ -378,9 +374,7 @@ In the blank app.js file, insert the following code. Each additional section of 
     }
 
     function UpdateTruck() {
-
         if (contents == contentsEnum.empty) {
-
             // Turn the cooling system off, if possible, when the contents are empty.
             if (fan == fanEnum.on) {
                 fan = fanEnum.off;
@@ -418,7 +412,6 @@ In the blank app.js file, insert the following code. Each additional section of 
 
             // If the temperature is above a threshold, count the seconds this is occurring, and melt the contents if it goes on too long.
             if (temp >= tooWarmThreshold) {
-
                 // Contents are warming.
                 tooWarmPeriod += interval;
 
@@ -465,7 +458,6 @@ In the blank app.js file, insert the following code. Each additional section of 
                 break;
 
             case stateEnum.returning:
-
                 // Update the truck position.
                 UpdatePosition();
 
@@ -490,7 +482,6 @@ In the blank app.js file, insert the following code. Each additional section of 
                 break;
 
             case stateEnum.enroute:
-
                 // Update truck position.
                 UpdatePosition();
 
@@ -515,14 +506,13 @@ In the blank app.js file, insert the following code. Each additional section of 
     ```
 
     > [!NOTE]
-    > This function is called every time interval. The actual time interval is set later on (at 5 seconds), though the "simulated time" (the number of seconds we specify that has passed each time this function is called) is set by the global `var interval = 60`, which means the simulation runs at 60/5 equals 12 times real-time. To lower the simulated time, reduce the `var interval` to, say, 30 (for a simulation that runs at six times real-time). Setting `var interval = 5` would run the simulation in real-time (which would be a bit slow, given the real driving times to the customer destinations).
+    > This function is called every time interval. The actual time interval is set later on (at 5 seconds), though the "simulated time" (the number of seconds you specify that has passed each time this function is called) is set by the global `var interval = 60`, which means the simulation runs at a rate of 60 divided by 5, or 12 times the speed of real time. To lower the simulated time, reduce the `var interval` to, say, 30 (for a simulation that runs at six times real-time). Setting `var interval = 5` would run the simulation in real-time (which would be a bit slow, given the real driving times to the customer destinations).
 
-1. Add the function to send truck telemetry, and events if any have occurred.
+1. Add the function to send truck telemetry and events, if any have occurred.
 
     ```js
     // Send device simulated telemetry measurements.
     function sendTruckTelemetry() {
-
         // Simulate the truck.
         UpdateTruck();
 
@@ -578,9 +568,9 @@ In the blank app.js file, insert the following code. Each additional section of 
     ```
 
     > [!NOTE]
-    > The `sendTruckTelemetry` is an important function, handling the sending of telemetry, states, and events, to IoT Central. Note the use of JSON strings to send the data, and that an acknowledgement message is sent at the end of the function.
+    > The `sendTruckTelemetry` is an important function, handling the sending of telemetry, states, and events to IoT Central. Note the use of JSON strings to send the data, and that an acknowledgement message is sent at the end of the function.
 
-1. Add the code to handle settings and properties. We only have one setting and one property in our app, though if there are more they are easily added.
+1. Add the code to handle settings and properties. You only have one setting and one property in our app, though if there are more, they are easily added.
 
     ```js
     // Send device properties once to the IoT Central app.
@@ -599,8 +589,7 @@ In the blank app.js file, insert the following code. Each additional section of 
     }
 
     // Object containing all the device settings.
-    var settings =
-    {
+    var settings = {
         // Format is:
         // '<field name from Azure IoT Central>' ":" (newvalue, callback) ....
         //  <variable name in Node.js app> = newValue;
@@ -616,13 +605,10 @@ In the blank app.js file, insert the following code. Each additional section of 
     // Handle settings changes that come from Azure IoT Central via the device twin.
     function handleSettings(deviceTwin) {
         deviceTwin.on('properties.desired', function (desiredChange) {
-
             // Iterate all settings looking for the defined one.
             for (let setting in desiredChange) {
-
                 // Found the specified setting.
                 if (settings[setting]) {
-
                     console.log(` * Received setting: ${setting}: ${desiredChange[setting].value}`);
 
                     // Update the setting.
@@ -672,7 +658,6 @@ In the blank app.js file, insert the following code. Each additional section of 
 
             // Get device twin from Azure IoT Central
             client.getTwin((errorMessage, deviceTwin) => {
-
                 // Failed to retrieve device twin.
                 if (errorMessage) {
                     console.log(`Error getting device twin: ${errorMessage.toString()}`);
@@ -693,7 +678,7 @@ In the blank app.js file, insert the following code. Each additional section of 
     ```
 
     > [!NOTE]
-    > Most of the `connectCallback` function is generic, and can be used for most Node.js apps that communicate with IoT Central. Specific to this app are the two `client.onDeviceMethod` calls, that link JavaScript functions in this app to the commands in the IoT Central app, and the `setInterval(sendTruckTelemetry, 5000);` call, which specifies the `sendTruckTelemetry` function should be called every five seconds (5000 milliseconds).
+    > Most of the `connectCallback` function is generic, and can be used for most Node.js apps that communicate with IoT Central. Specific to this app are the two `client.onDeviceMethod` calls that link JavaScript functions in this app to the commands in the IoT Central app, and the `setInterval(sendTruckTelemetry, 5000);` call, which specifies the `sendTruckTelemetry` function should be called every five seconds (5,000 milliseconds).
 
 1. Complete the app with the single line to start the device, specifying the connection callback.
 

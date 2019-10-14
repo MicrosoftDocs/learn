@@ -6,15 +6,15 @@ To fully test our one refrigerated truck device, it helps to break down the test
 1. The command to recall the truck works as expected.
 1. Check customer and conflict events are transmitted correctly.
 
-In addition to this list, there are edge-cases we could also investigate, such as what happens when the truck's contents start to melt. However, as we have left this state up to chance in our simulation (note the use of random numbers in our code in the previous unit) we can perhaps leave this check out of our first round of testing.
+In addition to this list, there are edge-cases you could also investigate, such as what happens when the truck's contents start to melt. However, as you have left this state up to chance in our simulation (note the use of random numbers in our code in the previous unit), you can perhaps leave this check out of our first round of testing.
 
 To begin the testing, make sure the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) app is up and running, and run the Node.js app (**Debug/Start without Debugging** from Visual Studio, or enter `node app.js` into a terminal in Visual Studio Code). A console screen should open, with the text: **Starting Truck number 1**.
 
-### 1. The Node.js app connects to Azure IoT Central
+## Confirm the Node.js app connects to Azure IoT Central
 
-1. If the next line on the console is **Device successfully connected to Azure IoT Central** you have made the connection. This line should be followed by some text verifying the settings and properties were sent successfully. If you do not get this message, it usually means either the IoT Central app is not running, or the connection string is not correct.
+* If the next line on the console is **Device successfully connected to Azure IoT Central** you have made the connection. This line should be followed by some text verifying the settings and properties were sent successfully. If you do not get this message, it usually means either the IoT Central app is not running, or the connection string is not correct.
 
-### 2. The telemetry functions send data on the specified interval, and that data is picked up correctly by IoT Central
+## Confirm the telemetry functions send data on the specified interval, and that data is picked up correctly by IoT Central
 
 1. A console message should appear every five seconds, with the contents temperature.
 
@@ -35,7 +35,7 @@ To begin the testing, make sure the [Azure IoT Central](https://apps.azureiotcen
 
     ![Screenshot showing the map view of our first truck at its base in Seattle](../media/refrigerated-trucks-seattle.png)
 
-### 3. The command to send the truck to a specified customer works as expected
+## Confirm the command to send the truck to a specified customer works as expected
 
 1. Now for the best fun of all. Click the **Commands** title for the device. Enter a customer ID, say "6" ("0" through "9" are valid customer IDs), and click **Run**.
 
@@ -47,11 +47,11 @@ To begin the testing, make sure the [Azure IoT Central](https://apps.azureiotcen
 
 1. Great progress! Take a moment to just watch the map update, and your truck deliver its contents.
 
-### 4. The command to recall the truck works as expected
+## Confirm the command to recall the truck works as expected
 
-1. When the truck returns to base, try issuing another delivery command, then a recall command to check the truck returns.
+* When the truck returns to base, try issuing another delivery command, then a recall command to check the truck returns.
 
-### 5. Check customer and conflict events are transmitted correctly
+## Check customer and conflict events are transmitted correctly
 
 1. Go to the table view for the device. Change the time range to the past hour. Click on **Show details** for any event that appears. There should be informational events showing the change of customer ID.
 
@@ -70,4 +70,4 @@ To begin the testing, make sure the [Azure IoT Central](https://apps.azureiotcen
 
 ## Next steps
 
-Before we move on to adding multiple devices, a short quiz to help establish what you have learned in the past few units.
+Before you move on to adding multiple devices, there is a short quiz to help establish what you have learned in the past few units.

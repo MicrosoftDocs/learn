@@ -26,7 +26,7 @@ IoT Central provides all you need to handle this scenario. In the following imag
 
 ![Image of the finished app, showing Trucks on routes in an IoT Central dashboard](../media/refrigerated-trucks-intro-map.png)
 
-In this module, we build the app displayed in the above image.
+In this module, you will build the app displayed in the above image.
 
 ## Create a custom IoT Central app
 
@@ -41,7 +41,7 @@ In this module, we build the app displayed in the above image.
     ![Screenshot showing how to configure the new IoT Central app](../media/refrigerated-trucks-new-app.png)
 
     > [!IMPORTANT]
-    > Your **Application Name** can be any friendly name, such as "Refrigerated Trucks". However, the **URL** _must_ be unique, which is why we suggest adding some unique ID to the end of the URL for the app. For example, `refrigerated-trucks-<your id>`, replacing `<your id>` with some unique ID.
+    > Your **Application Name** can be any friendly name, such as "Refrigerated Trucks". However, the **URL** _must_ be unique, which is why you will add a unique ID to the end of the URL for the app. For example, `refrigerated-trucks-<your id>`, replacing `<your id>` with some unique ID.
 
 1. Enter the rest of the required fields (your contact information) appropriately.
 

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.your-first-iot-central-app.5-create-a-real-device-in-nodejs
+uid: learn.iot.create-your-first-iot-central-app.create-a-real-device-in-nodejs
 metadata:
   title: Create a real device in Node.js
   description: Create a Node.js app simulating a real refrigerated truck, communicating with both Azure Maps and Azure IoT Central.
@@ -9,8 +9,9 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
+  zone_pivot_groups: ide
 title: Create a real device in Node.js
 # azureSandbox: true
 durationInMinutes: 20
 content: |
-  [!include[](includes/5-create-a-real-device-in-nodejs.md)]
+  [!include[](includes/5-create-real-device-in-nodejs.md)]

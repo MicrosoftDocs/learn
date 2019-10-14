@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.iot.your-first-iot-central-app
+uid: learn.iot.create-your-first-iot-central-app
 metadata:
   title: Create your first Azure IoT Central app
   description: Create an app to monitor and command multiple remote devices. Use the IoT Central portal to create the IoT Central app, then use Node. code for each simulated device. The scenario is you control a fleet of refrigerated trucks.
@@ -35,15 +35,15 @@ products:
 - azure-iot-central
 - azure-maps
 units:
-- learn.iot.your-first-iot-central-app.1-introduction
-- learn.iot.your-first-iot-central-app.2-create-a-device-template
-- learn.iot.your-first-iot-central-app.3-monitor-a-simulated-device
-- learn.iot.your-first-iot-central-app.4-setup-your-development-environment
-- learn.iot.your-first-iot-central-app.5-create-a-real-device-in-nodejs
-- learn.iot.your-first-iot-central-app.6-test-your-iot-device
-- learn.iot.your-first-iot-central-app.7-add-multiple-devices
-- learn.iot.your-first-iot-central-app.8-create-a-device-set-dashboard
-- learn.iot.your-first-iot-central-app.9-summary
+- learn.iot.create-your-first-iot-central-app.introduction
+- learn.iot.create-your-first-iot-central-app.create-a-device-template
+- learn.iot.create-your-first-iot-central-app.monitor-a-simulated-device
+- learn.iot.create-your-first-iot-central-app.set-up-your-development-environment
+- learn.iot.create-your-first-iot-central-app.create-a-real-device-in-nodejs
+- learn.iot.create-your-first-iot-central-app.test-your-iot-device
+- learn.iot.create-your-first-iot-central-app.add-multiple-devices
+- learn.iot.create-your-first-iot-central-app.create-a-device-set-dashboard
+- learn.iot.create-your-first-iot-central-app.summary
 badge:
 ###  uid: learn.iot.iot-test.badge
   uid: learn.iot.iot-central-refrigerated-truck-module.badge
