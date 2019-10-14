@@ -4,7 +4,7 @@ IoT Hub is a managed service, hosted in the cloud, that acts as a central messag
 
 Suppose you're an application developer working for your local city. Your city currently has sensors and cameras deployed throughout it. To manage these devices, you need a central messaging hub for bi-directional communication in the cloud. You'll need to authenticate, manage, and provision millions of devices reliably and securely. Additionally, you'll need to monitor the health of these devices over time to ensure constant uptime.  You can use Azure IoT Hub-based solution to deploy, manage, and scale these devices in the cloud to effectively address the given problem scenario.
 
-![An illustration showing the flow for IoT devices connecting to IoT Hub, and managing and controlling by IoT Hub.] (../media/IoTHub.png)
+![An illustration showing the flow for IoT devices connecting to IoT Hub, and managing and controlling by IoT Hub.](../student-evangelism/introduction-to-iot-hub/media/IotHub.png)
 
 ## Learning objectives
 
