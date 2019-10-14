@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>iot-central-refrigerated-truck-module</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-5.8%" y="-9.3%" width="111.6%" height="118.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-4" points="66.6879163 15.0813774 65.3775665 15.0813774 65.7280516 24.0223707 68.1119001 24.0223707"></polygon>
+        <filter x="-73.1%" y="-22.4%" width="246.3%" height="144.7%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="-4" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <polygon id="path-6" points="64.3103498 15.0813774 58 15.0813774 58.350485 23.0223707 64.7343335 24.0223707"></polygon>
+        <filter x="-29.7%" y="-22.4%" width="159.4%" height="144.7%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="-4" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="N/A-57" transform="translate(-50.000000, -460.000000)">
+            <g id="iot-central-refrigerated-truck-module" transform="translate(50.000000, 460.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Truck" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(14.000000, 27.000000)">
+                            <rect id="Rectangle" fill="#30404D" fill-rule="evenodd" x="49" y="10" width="4" height="22"></rect>
+                            <path d="M23,0 L23,2 L50,2 L50,30 L0,30 L0,2 L6,2 L6,0 L23,0 Z" id="Combined-Shape" fill="#7CB65A" fill-rule="evenodd"></path>
+                            <rect id="Rectangle" fill="#69994E" fill-rule="evenodd" x="5" y="6" width="2" height="20"></rect>
+                            <rect id="Rectangle" fill="#69994E" fill-rule="evenodd" x="11" y="6" width="2" height="20"></rect>
+                            <rect id="Rectangle" fill="#69994E" fill-rule="evenodd" x="17" y="6" width="2" height="20"></rect>
+                            <rect id="Rectangle" fill="#69994E" fill-rule="evenodd" x="23" y="6" width="2" height="20"></rect>
+                            <rect id="Rectangle" fill="#69994E" fill-rule="evenodd" x="29" y="6" width="2" height="20"></rect>
+                            <rect id="Rectangle" fill="#69994E" fill-rule="evenodd" x="35" y="6" width="2" height="20"></rect>
+                            <rect id="Rectangle" fill="#69994E" fill-rule="evenodd" x="41" y="6" width="2" height="20"></rect>
+                            <path d="M50,2 L55,2 C55.5522847,2 56,2.44771525 56,3 L56,10 C56,10.5522847 55.5522847,11 55,11 L50,11 L50,11 L50,2 Z" id="Rectangle" fill="#69994E" fill-rule="evenodd"></path>
+                            <rect id="Rectangle" fill="#30404D" fill-rule="evenodd" x="0" y="30" width="67" height="6"></rect>
+                            <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 30.000000)">
+                                <path d="M67,0 L67,6 L61.9170737,6.00019152 C61.9716124,6.32533963 62,6.65935467 62,7 C62,10.3137085 59.3137085,13 56,13 C52.6862915,13 50,10.3137085 50,7 C50,6.65935467 50.0283876,6.32533963 50.0829263,6.00019152 L46,6 L46,10 L34,10 L34,6 L31,6 L31,8 L19.4169061,8.00080686 C18.9404956,10.8381232 16.4727145,13 13.5,13 C10.1862915,13 7.5,10.3137085 7.5,7 C7.5,6.65935467 7.52838765,6.32533963 7.58292631,6.00019152 L5,6 L5,9 L0,9 L0,0 L67,0 Z" id="Combined-Shape" fill="#30404D"></path>
+                                <circle id="Oval" fill="#7CB65A" cx="13.5" cy="7" r="3"></circle>
+                                <circle id="Oval-Copy" fill="#7CB65A" cx="56" cy="7.5" r="3.5"></circle>
+                            </g>
+                            <polygon id="Rectangle" fill="#7CB65A" fill-rule="evenodd" points="52 12 66 12 68.1119001 24.1671498 68.0097025 30 52 30"></polygon>
+                            <rect id="Rectangle" fill="#7CB65A" fill-rule="evenodd" x="39" y="36" width="4" height="4"></rect>
+                            <polygon id="Rectangle-Copy" fill="#7CB65A" fill-rule="evenodd" points="63 36 67 36 67 40 63 41"></polygon>
+                            <g id="Path-268" fill="none">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                            </g>
+                            <g id="Path-268-Copy" fill="none">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                            </g>
+                            <rect id="Rectangle" fill="#69994E" fill-rule="evenodd" x="52" y="22" width="3" height="8"></rect>
+                            <rect id="Rectangle" fill="#7CB65A" fill-rule="evenodd" x="51" y="4" width="4" height="1"></rect>
+                            <rect id="Rectangle-Copy-2" fill="#7CB65A" fill-rule="evenodd" x="51" y="6" width="4" height="1"></rect>
+                            <rect id="Rectangle-Copy-2" fill="#7CB65A" fill-rule="evenodd" x="51" y="8" width="4" height="1"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -5,7 +5,7 @@ metadata:
   description: Test a device by giving it commands and monitoring the results on the dashboard.
   ms.date: 09/01/2019
   author: PeterTurcan
-  ms.author: philmea
+  ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

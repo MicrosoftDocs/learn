@@ -5,7 +5,7 @@ metadata:
   description: Create connection strings, and add code to your Node.js app, to support a fleet of refrigerated trucks.
   ms.date: 09/01/2019
   author: PeterTurcan
-  ms.author: philmea
+  ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
