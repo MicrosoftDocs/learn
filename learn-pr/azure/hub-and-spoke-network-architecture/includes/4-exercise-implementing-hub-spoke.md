@@ -146,6 +146,6 @@ You have a security requirement to meet for HR application to be hosted on the *
 
 1. Select **Add** to add the rule.
 
-You have now blocked outbound internet access from the spoke on port 80.
+You have now blocked inbound internet access from the spoke on port 80.
 
 In this scenario, you created a spoke Azure virtual network, and then peered it with an existing hub virtual network. You then secured the traffic from this spoke by blocking inbound internet access on port 80 while ensuring it can connect via the hub.
