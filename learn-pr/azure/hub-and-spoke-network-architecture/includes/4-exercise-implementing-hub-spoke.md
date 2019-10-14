@@ -34,7 +34,7 @@ You create a virtual network with the Azure portal, Azure CLI, Azure PowerShell.
 
 The resource creation experience on the portal is a wizard that walks you through the initial configuration for the virtual network.
 
-![Image showing Virtual Network creation blade](../media/4-create-VNet.png)
+![Image showing Virtual Network creation blade](../media/4-create-vnet.png)
 
 1. Use the values below to create the virtual network:
 
@@ -44,8 +44,8 @@ The resource creation experience on the portal is a wizard that walks you throug
     |Address Space          | **10.10.0.0/16**  |
     |Subscription           | **Concierge subscription**         |
     |Resource Group         | **<rgn>[sandbox resource group name]</rgn>** |
-    |Subnet – Name          | **HRworkload**   |
-    |Subnet – Address Range | **10.10.0.0/16** |
+    |Subnet – Name          | **HRsystems**   |
+    |Subnet – Address Range | **10.10.1.0/24** |
     |DDoS Protection        | **Basic**        |
     |Service Endpoints      | **Disabled**     |
     |Firewall               | **Disabled**     |
