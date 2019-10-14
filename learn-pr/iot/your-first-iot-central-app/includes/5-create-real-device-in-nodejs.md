@@ -38,6 +38,9 @@ Using your preferred development environment (Visual Studio Code, and Visual Stu
 
 In the blank app.js file, insert the following code. Each additional section of code should be appended to the end of the file, in the order listed here.
 
+   > [!NOTE]
+   > If you would like to skip this unit, and load all of the code into your app, then download and copy all of the contents of app.js from [MicrosoftDocs/mslearn-your-first-iot-central-app](https://github.com/MicrosoftDocs/mslearn-your-first-iot-central-app) into the app.js file of your project. If you copy this code, then go straight to the next unit, and start testing!
+
 1. Add code to connect to Azure IoT Central, and Azure Maps, replacing the `<your...>` strings for both technologies with your own strings. Do not change any other lines of code.
 
     ```js

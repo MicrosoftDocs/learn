@@ -4,12 +4,13 @@ metadata:
   title: Monitor a simulated device
   description: Monitor the automatically created simulated device in the Azure IoT Central web portal. Then test your knowledge so far.
   ms.date: 09/01/2019
-  author: philmea
+  author: PeterTurcan
   ms.author: philmea
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Monitor a simulated device
+# azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/3-monitor-simulated-device.md)]

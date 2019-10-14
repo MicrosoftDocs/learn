@@ -4,12 +4,13 @@ metadata:
   title: Test your IoT Central device
   description: Test a device by giving it commands and monitoring the results on the dashboard.
   ms.date: 09/01/2019
-  author: philmea
+  author: PeterTurcan
   ms.author: philmea
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Test your IoT Central device
+# azureSandbox: true
 durationInMinutes: 15
 content: |
   [!include[](includes/6-test-your-iot-device.md)]

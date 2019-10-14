@@ -4,12 +4,13 @@ metadata:
   title: Create a device template
   description: Create an Azure IoT Central device template. In this scenario, for a refrigerated truck.
   ms.date: 09/01/2019
-  author: philmea
+  author: PeterTurcan
   ms.author: philmea
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Create a device template
+# azureSandbox: true
 durationInMinutes: 15
 content: |
   [!include[](includes/2-create-device-template.md)]
