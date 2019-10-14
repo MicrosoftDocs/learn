@@ -2,7 +2,7 @@ In this unit, we are going to add Node.js code for a simulated refrigerated truc
 
 ## Create the Node.js app
 
-Using your preferred development environment (Visual Studio Code, and Visual Studio, examples are given below), build a Node.js app. Node.js is a platform for building server apps, based on JavaScript. All the JavaScript code you will need is provided below, so you do not need to be a JavaScript developer to get this app up and running.
+Using your preferred development environment, build a Node.js app. Visual Studio Code and Visual Studio examples are given below. Node.js is a platform for building server apps, based on JavaScript. All the JavaScript code you will need is provided below, so you do not need to be a JavaScript developer to get this app up and running.
 
 ### With Visual Studio Code
 
