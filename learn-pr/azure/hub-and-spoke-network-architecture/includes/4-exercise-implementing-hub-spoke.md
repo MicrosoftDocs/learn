@@ -56,9 +56,9 @@ The resource creation experience on the portal is a wizard that walks you throug
 
 Now you've created the third spoke, you need to configure the virtual network peering between the hub and spokes.
 
-1. In the resources menu on the left, select **Virtual Networks**. You should see the **hubVNet**, **webVNet**, **quoteVNet**, and **HRappVnet** virtual networks.
+1. In the resources menu on the left, select **Virtual Networks**. You should see the **HubVNet**, **WebVNet**, **QuoteVNet**, and **HRappVnet** virtual networks.
 
-1. Select **hubVNet**.
+1. Select **HubVNet**.
 
 1. Select the **Peerings** blade in the left settings menu.
 
@@ -93,7 +93,7 @@ You'll create a network security group to configure traffic flow.
 
 1. Select **Create** to start configuring the virtual network.
 
-1. Enter **hr-nsg** for the name, then select the existing resource group and location.
+1. Enter **HRNsg** for the name, then select the existing resource group and location.
 
 1. Select **Create** to provision the network security group.
 
@@ -117,7 +117,7 @@ Now you associate the network security group to the virtual network.
 
 1. Select the **HRappVnet** virtual network.
 
-1. Select the **HRworkload** subnet.
+1. Select the **HRsystems** subnet.
 
 1. Select **OK** to associate the network security group.
 
@@ -127,7 +127,7 @@ You have a security requirement to meet for HR application to be hosted on the *
 
 1. In the left resources menu, select **Network security groups**.
 
-1. Select the **hr-nsg**.
+1. Select the **HRNsg**.
 
 1. Select the **Inbound security rules** side menu.
 
