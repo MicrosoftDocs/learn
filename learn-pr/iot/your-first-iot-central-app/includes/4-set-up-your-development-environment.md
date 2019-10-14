@@ -1,6 +1,6 @@
-In this unit, we will prepare the process to connect a real device to IoT Central. By "real" IoT Central understands that there is a remote app running - the app can be in a real device, taking input from real sensors, or running a simulation. Both options are treated as a connection to a real device.
+In this unit, you will prepare the process to connect a real device to IoT Central. By "real" IoT Central understands that there is a remote app running - the app can be in a real device, taking input from real sensors, or running a simulation. Both options are treated as a connection to a real device.
 
-The essential component for communication between a device and IoT Central is a _connection string_. There are some tools that make generating these strings easy. In this unit, we will access these tools in such as way that we can reuse them later on. To start with, we need some information on our real device.
+The essential component for communication between a device and IoT Central is a _connection string_. There are some tools that make generating these strings easy. In this unit, you will access these tools in such as way that you can reuse them later on. To start with, you need some information on our real device.
 
 ## Add a real device
 
@@ -50,7 +50,7 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
     ```
 
     > [!NOTE]
-    > You may have noticed in the above URL that we are downloading the Linux version of dps-cstr. This is needed to run in Azure Cloud Shell.
+    > You may have noticed in the above URL that you are downloading the Linux version of dps-cstr. This is needed to run in Azure Cloud Shell.
 
 1. To give dps-cstr the correct permissions, run the following command:
 
@@ -58,7 +58,7 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
     chmod +x dps_cstr
     ```
 
-1. Remember that in the previous section we stored a **Scope ID**, **Device ID**, and **Primary Key**, for our device. It is a good idea to keep a text document such as Notepad open, and create in it the following string, replacing **{scope-id}**, **{device-id}**, and **{primary-key}** with the true values. Using the text document enables you to create and validate the string before committing to running it.
+1. Remember that in the previous section you stored a **Scope ID**, **Device ID**, and **Primary Key**, for our device. It is a good idea to keep a text document such as Notepad open, and create in it the following string, replacing **{scope-id}**, **{device-id}**, and **{primary-key}** with your own values. Using the text document enables you to create and validate the string before committing to running it.
 
     ```bash
     ./dps_cstr {scope_id} {device_id} {primary_key} > connection1.txt

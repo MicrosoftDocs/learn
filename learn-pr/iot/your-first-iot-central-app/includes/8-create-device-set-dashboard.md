@@ -12,7 +12,7 @@ A Device Set in IoT Central is a group of devices that match one Device Template
 
 1. Click **Save**.
 
-1. Click  **Dashboard** on the bar, click **Edit**, then click **Map** in the library of options. Give the map a title, such as "Delivery Map", the **Location** entry should just have the one option (**Location**), and select one of the three states to be displayed, say **Truck state**.
+1. Click  **Dashboard** on the bar, click **Edit**, then click **Map** in the library of options. Give the map a title, such as "Delivery Map". The **Location** entry should just have the one option (**Location**). And select one of the three states to be displayed, say **Truck state**.
 
 1. Click **Save**.
 
@@ -20,13 +20,15 @@ A Device Set in IoT Central is a group of devices that match one Device Template
 
 1. Click **Done** to save your device set dashboard.
 
-1. You may need to zoom out a bit on your Delivery Map, you should get a map with five trucks at base.
+1. You may need to zoom out a bit on your Delivery Map; you should get a map with five trucks at base.
 
     ![Screenshot showing the Device Set dashboard, with a map showing the initial location of the five trucks at the base, and a table of the truck IDs and optimal temperatures](../media/refrigerated-trucks-deviceset-base.png)
 
-1. In order to make commanding the trucks easier, we should add links to the Commands page for each truck. Navigate through the **Devices** menu to the **Commands** for **RefrigeratedTruck - 1**. Copy the URL, which will be something like `https://refrigerated-trucks.azureiotcentral.com/details/device/<your device>/commands`. Now navigate back to the device set dashboard (the one named "All refrigerated trucks"), click **Edit**, and add a **Link** from the library. Call the link something like "Truck 1 commands", and paste in the URL.
+1. In order to make commanding the trucks easier, you should add links to the commands page for each truck. Navigate through the **Devices** menu to the **Commands** for **RefrigeratedTruck - 1**. Copy the URL, which will be something like `https://refrigerated-trucks.azureiotcentral.com/details/device/<your device>/commands`. Now, navigate back to the device set dashboard (the one named "All refrigerated trucks"), click **Edit**, and add a **Link** from the library. Call the link something like "Truck 1 commands", and paste in the URL.
 
-1. Click **Done**, and test out your link, and order the truck to a customer.
+1. Click **Done**.
+
+1. Test out your link by ordering the truck to a customer.
 
 ## Completing the dashboard
 
@@ -38,7 +40,7 @@ You have almost completed this module, great job. This section provides a few op
 
 1. Consider creating a _Job_, a command that applies to all devices (or, all devices with exceptions). Such a job could change the optimal temperature for all trucks, or perhaps recall all trucks. Consider adding a link to the job from the dashboard.
 
-By building up the device set dashboard in this way, we can make controlling multiple devices a matter of a few clicks. You could add links, or images with links, to other device pages (the chart view, or table view, for example).
+By building up the device set dashboard in this way, you can make controlling multiple devices a matter of a few clicks. You could add links, or images with links, to other device pages (the chart view, or table view, for example).
 
 When you have completed your dashboard, order trucks to different customer IDs (valid range is "0" through "9"), and give any other commands or jobs you have created, and get a feel for IoT Central control of remote devices.
 
