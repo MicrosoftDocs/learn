@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism-intro-to-azure-iot-edge.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 9/22/2019
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+  ROBOTS: NOINDEX
+durationInMinutes: 2 # dummy number at present
+content: |
+  [!include[](includes/1-introduction.md)]
