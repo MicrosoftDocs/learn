@@ -19,7 +19,7 @@ quiz:
     - content: "`myArray[3]`"
       isCorrect: false
       explanation: "Remember - indexes are zero-based."
-    - content: "`myArray[4]`"
+    - content: "`myArray[2]`"
       isCorrect: true
       explanation: "Correct!"
     - content: "`myArray{3}`"

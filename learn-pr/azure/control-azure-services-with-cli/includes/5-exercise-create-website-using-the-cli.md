@@ -10,14 +10,10 @@ Next, you would normally create a resource group for all your related Azure reso
 
    ```bash
    export RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
-   export AZURE_REGION=[region]
+   export AZURE_REGION=centralus
    export AZURE_APP_PLAN=popupappplan-$RANDOM
    export AZURE_WEB_APP=popupwebapp-$RANDOM
    ```
-
-   For the `[region]` parameter, use one of the regions from the following list.
-
-   [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
 1. You can ask the Azure CLI to list all your resource groups in a table. There should just be one while you are in the free Azure sandbox.
 
@@ -42,7 +38,9 @@ When you run Web Apps using the Azure App Service, you pay for the Azure compute
 1. Create an App Service plan to run your app. The following command specifies the free pricing tier, but you can run `az appservice plan create --help` to see the other pricing tiers.
 
    > [!NOTE]
-   > The name of the app and plan must be _unique_ in all of Azure. The variables that you created earlier will assign random values as suffixes to make sure they're unique. However, if you receive an error when you are creating any resources, you should run the commands listed earlier to reset all of the variables with new random values.
+   > The name of the app and plan must be _unique_ in all of Azure. The variables that you created earlier will assign random values as suffixes to make sure they're unique. However, if you receive an error when you are creating any resources, you should run the commands listed earlier to reset all of the variables with new random values. 
+   >
+   > If you receive an error about the resource group, run the commands listed earlier with a different resource group value.
 
    ```azurecli
    az appservice plan create --name $AZURE_APP_PLAN --resource-group $RESOURCE_GROUP --location $AZURE_REGION --sku FREE

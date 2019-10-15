@@ -20,7 +20,7 @@ We're going to use one of the WordPress application options from the Azure Marke
 
 Typically, the first thing we'd do is to create a *resource group* to hold all the things that we need to create. The *resource group* allows us to administer all the services, disks, network interfaces, and other elements that potentially make up our solution as a unit. We can use the Azure portal to create and manage our solution's resource groups. However, keep in mind that you can also manage resources via a command line using the Azure CLI. The Azure CLI is a useful option should you need to automate the process in the future.
 
-In the free Azure sandbox environment you'll use the pre-created resource group **<rgn>[Resource Group Name]</rgn>**, and you don't need to do this step.
+In the free Azure sandbox environment you'll use the pre-created resource group **<rgn>[sandbox resource group name]</rgn>**, and you don't need to do this step.
 
 ## Choosing a location
 
@@ -34,57 +34,54 @@ In the free Azure sandbox environment you'll use the pre-created resource group 
 
     ![Screenshot showing the Create a resource option](../media/4-create-resource.png)
 
-    You'll notice how the portal updates it's itself and present additional UI that either provides you with options to refine selection or update configuration variables. We call these panels *blades*.
+    This takes you to the **Azure Marketplace**.
 
     [![](../media/4-azure-marketplace.png "Screenshot showing Azure marketplace")](../media/4-azure-marketplace-expanded.png#lightbox)
 
-1. We have several application types to choose from, and unfortunately, we'll not discuss each in detail. You're however welcome to go through the list and explore each item at a later stage. Since we know that we want to install WordPress, we can do a quick search for it. In the *search box* above the listed application options, type in **WordPress**. Select the default *WordPress* option from the list of options available.
+1. The Azure Marketplace has many services, solutions, and resources available for you to use. Since we know that we want to install WordPress, we can do a quick search for it. In the **Search the Marketplace** box above the listed application options, type in **WordPress**. Select the default *WordPress* option from the list of options available.
 
     ![Screenshot showing search results for the term WordPress](../media/4-search-select-wordpress.png)
 
-    > [!NOTE]
-    > There are several selections available relating to WordPress that you would have noticed in this step. Each of these items provides you with different options regarding the operating system and the amount of configuration to customize the application. Be aware that not all of these options are enabled in the sandbox. You'll have to try the different options in your personal Azure subscription where additional costs will apply.
-
-1. In the newly presented panel, you'll typically find additional information about the item you're about to install. Make sure to review this information. Click the **Create** button when ready.
+1. In the newly presented panel, you'll typically find additional information about the item you're about to install, including the publisher, a brief description of the resource, and links to more information. Make sure to review this information. Select **Create** to begin the process to create a WordPress app.
 
     [![](../media/4-create-site.png "Screenshot showing WordPress image information")](../media/4-create-site-expanded.png#lightbox)
 
-1. Recall from earlier, that we'll use a wizard type interface to create our website. The newly presented panel is our first step in this process. Here, we have to set some values for the required options.
+1. Next, you're presented several options to configure your deployment. Enter the following information:
 
     | Option | Value |
     |--- | --- |
     | **App Name** | Choose a unique for the App name. It will form part of a Fully Qualified Domain Name (FQDN).|
     | **Subscription** | Make sure the *Concierge Subscription* is selected. |
-    | **Resource Group** | Select the existing Resource Group "**<rgn>[sandbox resource group name]</rgn>**" from the drop-down list. |
-    | **Database Provider** | You'll notice that you have two provider options. The default provider is an **Azure database for MySQL**. The second option is the **MySQL in App** provider that allows us to run a local MySQL database instance with our app. We're going to use the **MySQL in App** provider for our website to simplify our deployment. Pay attention to the call out though, MySQL in App provider isn't intended for production environments.|
-    | **App Service plan/location** | The App Service plan/location allows you to select the capabilities and limits available to your application. Keep in mind that different locations sometimes also have different resources available. We'll change our App Service plan in the next step. |
-    | **Application Insights** | Application Insights allows you to monitor the performance of your application using powerful analytics tools. Leave the value as set by the default configuration. |
+    | **Resource Group** | Select the **Use existing** radio button, then select the **<rgn>[sandbox resource group name]</rgn>** resource group from the drop-down list. |
+    | **Database Provider** | Select **MySQL in App**. |
+    | **App Service plan/location** | Leave at the default configuration for the moment, you'll change the App Service plan in the next step. |
+    | **Application Insights** | Leave at the default configuration. |
 
-    Here is a screenshot to give you an idea of the configuration values. 
+    Your configuration should look like this:
 
     [![](../media/4-config-info-create.png "Screenshot showing app service configuration information")](../media/4-config-info-create-expanded.png#lightbox)
 
- 1. We're going to modify our *App service plan* to allow us to scale our website in our next exercise. Click on the **App Service plan/location** link.
+1. Now let's configure the App Service plan. This specifies the compute resources and location for the web app. Select **App Service plan/location**.
 
     !["Screenshot showing App Service plan link"](../media/4-config-app-service-plan.png)
 
-1. In the *App Service plan* panel, click on the **Create new** button.
+1. In the **App Service plan** panel, select **Create new**.
 
     !["Screenshot showing the Create new App Service plan button"](../media/4-new-app-service-plan.png)
 
-1. In the *New App Service plan* panel, enter a **name** for the new service plan and then click on **Pricing tier**.
+1. In the **New App Service plan** panel, enter a **name** for the new service plan and then select **Pricing tier**.
 
     !["Screenshot showing the New App Service Plan configuration"](../media/4-new-service-plan-config.png)
 
-1. The *Spec Picker* allows us to select a new pricing tier for our application. This screen opens to the *Production* tab, with the S1 pricing tier selected. We'll select a new pricing tier from the *Dev / Test* tab for our website.
+1. The **Spec Picker** allows us to select a new pricing tier for our application. This screen opens to the *Production* tab, with the S1 pricing tier selected. We'll select a new pricing tier from the *Dev / Test* tab for our website.
 
-    Click on the **Dev / Test** tab and select the **F1** pricing tier. Then click on **Apply**.
+    Select the **Dev / Test** tab and select the **F1** pricing tier. Then select **Apply**.
 
     [![](../media/4-select-pricing-tier.png "Screenshot showing the notification information")](../media/4-select-pricing-tier-expanded.png#lightbox)
 
-1. In the *New App Service plan* panel, click **OK** to create the new plan and close the panel.
+1. Back on the **New App Service plan** panel, select **OK** to create the new plan and close the panel.
 
-1. Finally, click on the **Create** button to start the deployment of your new site.
+1. Finally, select the **Create** button to start the deployment of your new site.
 
 ## Verify your website is running
 
@@ -92,19 +89,19 @@ The deployment of the new website can take a few minutes to complete, and you're
 
 We can track the progress of the deployment at any time.
 
-1. Click on the **notification** bell.
+1. Select the **notification bell** icon at the top of the portal.
 
     ![Screenshot showing the notification bell button](../media/4-notification-bell.png)
 
-1. Click on the **Deployment in progress** link in the dialogue to see the detail information about all the resources that are created.
+1. Select **Deployment in progress...** to see the details about all the resources that are created.
 
     ![Screenshot showing the notification information](../media/4-notification-bell-info.png)
 
-    Notice how resources are listed as they're created and the status changes to green checkmarks as each component in the deployment completes.
+    Notice how resources are listed as they're created and the status changes to a green check as each component in the deployment completes.
 
     [![](../media/4-deployment-progress.png "Screenshot showing the notification information")](../media/4-deployment-progress-expanded.png#lightbox)
 
-1. Once the deployment status message change to **Your deployment is complete**, you'll notice the status in the notification dialogue changes to *Deployment succeeded*. Click on the **Go to Resource** button to navigate to the App Service overview.
+1. Once the deployment status message change to **Your deployment is complete**, you'll notice the status in the notification dialogue changes to **Deployment succeeded**. Select **Go to Resource** to navigate to the App Service overview.
 
     ![Screenshot showing deployment status in the notification dialogue](../media/4-deployment-complete.png)
 

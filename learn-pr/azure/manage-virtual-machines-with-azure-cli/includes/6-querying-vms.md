@@ -112,7 +112,7 @@ JMESQuery has several other interesting query features. When you have time, chec
 
 ## Filtering our Azure CLI queries
 
-With a basic understanding of JMES queries, we can add filers to the data being returned by queries like the `vm show` command. For example, we can retrieve the admin user name:
+With a basic understanding of JMES queries, we can add filters to the data being returned by queries like the `vm show` command. For example, we can retrieve the admin user name:
 
 ```azurecli
 az vm show \

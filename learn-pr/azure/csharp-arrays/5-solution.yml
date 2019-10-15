@@ -11,5 +11,7 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 2
+azureSandbox: false
+interactive: csharp
 content: |
   [!include[](includes/5-solution.md)]
