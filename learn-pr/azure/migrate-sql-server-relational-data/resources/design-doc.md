@@ -24,15 +24,16 @@ Migrate your relational data to Azure SQL Database
 
 ## Summary
 
-*Add the summary [(Guidance)](id-guidance-introductory-summaries.md)*
+Plan and implement the migration of relational data from SQL Server to Azure SQL Database. Select the appropriate migration strategy for your database, and use Azure tools to asses and migrate your data.
 
 ## Learning objectives
 
-1. *Add numbered Learning Objectives [(Guidance)](id-guidance-learning-objectives.md)*
+1. Select the proper migration strategy for your relational data stored in SQL Server.
+1. Perform a migration from SQL Server to a single Azure SQL Database.
 
 ## Chunk your content into subtasks
 
-Identify the subtasks of *module title*
+Identify the subtasks of *Migrate your relational data to Azure SQL Database*
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
