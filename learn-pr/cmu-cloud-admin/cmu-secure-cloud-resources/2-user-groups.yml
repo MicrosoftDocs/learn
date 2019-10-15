@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.cmu-cloud-admin.secure-cloud-resources.2-user-groups
-title: Cloud Users and Groups
+title: Cloud users and groups
 metadata:
-  title: Cloud Users and Groups
-  description: Cloud Users and Groups
+  title: Cloud users and groups
+  description: Users and User Groups
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
