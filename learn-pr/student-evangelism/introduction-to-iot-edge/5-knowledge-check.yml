@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "IoT Edge can run modules locally on IoT Edge devices"
       isCorrect: true
-      explanation: "The ability to run modules on edge devices ensures a rapid response time by avoiding a round-trip to the cloud"
+      explanation: "The ability to run modules on edge devices ensures a rapid response time by avoiding a round trip to the cloud"
     - content: "IoT Edge is secure and can use device security features"
       isCorrect: false
       explanation: "Secure devices do not have a direct bearing on the response time of an application"
@@ -32,7 +32,7 @@ quiz:
       explanation: "The module runs on an individual device. It does not have visibility of all devices"
     - content: "IoT Edge runtime"
       isCorrect: false
-      explanation: "The runtime runs on an individual device It does not have visibility of all devices"
+      explanation: "The runtime runs on an individual device. It does not have visibility of all devices"
     - content: "IoT Edge cloud interface"
       isCorrect: true
       explanation: "The cloud interface enables you to remotely monitor and manage IoT Edge devices"
