@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.manage-iot-central-apps-with-rest-api.3-exercise-authorize-api
+uid: learn.iot.manage-iot-central-apps-with-rest-api.exercise-authorize-api
 title: Exercise - Create an IoT Central application and generate an API token
 metadata:
   title: Exercise - Create an IoT Central application and generate an API token
@@ -9,7 +9,6 @@ metadata:
   ms.author: dobetts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 azureSandbox: true
 interactive: bash

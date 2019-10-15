@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.manage-iot-central-apps-with-rest-api.9-exercise-export-data
+uid: learn.iot.manage-iot-central-apps-with-rest-api.exercise-export-data
 title: Exercise - Export telemetry data from your application
 metadata:
   title: Exercise - Export telemetry data from your application
@@ -9,7 +9,6 @@ metadata:
   ms.author: dobetts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 7
 azureSandbox: true
 interactive: bash

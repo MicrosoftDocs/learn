@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.manage-iot-central-apps-with-rest-api.1-introduction
+uid: learn.iot.manage-iot-central-apps-with-rest-api.introduction
 title: Introduction
 metadata:
   title: Introduction
@@ -9,7 +9,6 @@ metadata:
   ms.author: dobetts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
