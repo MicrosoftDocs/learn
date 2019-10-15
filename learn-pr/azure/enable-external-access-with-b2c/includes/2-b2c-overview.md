@@ -28,9 +28,9 @@ You have to fill in a form. Because your healthcare application is a web app, yo
 
 A user journey is the path you want a user to take on your application to achieve their goal. For example, a user might want to make a new account, or update their profile. You use policies in Azure AD B2C to configure user journeys. Policies help you detail things like profile creation, sign-in, or account editing for users. You can create your own custom policies. Azure AD B2C also comes with preconfigured policies called user flows. Use user flows to configure things like:
 
-- Which account types are used on your healthcare application. For example, social accounts like twitter, or local accounts managed by you.
-- What data to collect from users, like location, age, or weight.
-- Whether you want to enable multi-factor authentication.
+- which account types are used on your healthcare application, such as social accounts like twitter, or local accounts managed by you
+- what data to collect from users, like location, age, or weight
+- whether you want to enable multi-factor authentication
 
 You can reuse the same user flows across different applications. Reuse your user flows so you'll have consistent user journeys across your applications. Here's an example of what a user flow configuration might look like:
 
@@ -54,8 +54,8 @@ To configure a social IDP, you'll specify a client ID and a client secret. You g
 
 Azure AD B2C supports industry standard OAuth 2.0 and OpenID Connect authentication protocols. You register your applications to your B2C tenant before they can use Azure AD B2C. Your registered application will have specific values assigned to it, including the following values:
 
-- Your application's unique **Application ID**.
-- A **Package identifier** or **Redirect URI** used to send responses back to your application.
+- your application's unique **Application ID**
+- a **Package identifier** or **Redirect URI** used to send responses back to your application
 
 Your application then needs to send requests to an endpoint to communicate with Azure AD. For example, an endpoint could look like this:
 
@@ -69,10 +69,13 @@ Your typical exchange in both OAuth and OpenID will have the following entities:
 ![Secure protocol flow](../media/2-secure-protocol-flow.png)
 <!-- TODO: please feel free to format according to learn standards. This diagram only needs to show the entities. Also remove "Oauth" in the "Oauth client(native or web app)" box. Original image: https://docs.microsoft.com/en-us/azure/active-directory-b2c/media/active-directory-b2c-reference-protocols/protocols_roles.png -->
 
-- An **Authorization Server**, which is your Azure AD endpoint like the one above. Your endpoint is responsible for managing user access and user details. The endpoint is also in charge of user identity verification and handing out tokens. It also manages the trust between all the other entities.
-- The **client**, which is your application. Your application requests tokens from the authorization server. The authorization server uses your application's unique Application ID to identify it.
-- A **resource owner**, which is usually the user. The resource owner is responsible for denying, or allowing, access to data and resources.
-- A **resource server**. A resource server is where the data or resources are kept. For example, a user's order history is kept in a secure server. The resource server relies on the authorization server to authorize a client. The resource server will only grant access if a valid bearer token has been presented to it. A bearer token is a security token used by the "bearer" (the authorized client) to access resources and data on a resource server. Send your bearer token through a secure channel like transport layer security (HTTPS).
+An **Authorization Server** is your Azure AD endpoint like the one above. Your endpoint is responsible for managing user access and user details. The endpoint is also in charge of user identity verification and handing out tokens. It also manages the trust between all the other entities.
+
+The exchange also includes a **client**, which is your application. Your application requests tokens from the authorization server. The authorization server uses your application's unique Application ID to identify it.
+
+There is also a **resource owner**, which is usually the user. The resource owner is responsible for denying, or allowing, access to data and resources.
+
+The **resource server** is where the data or resources are kept. For example, a user's order history is kept in a secure server. The resource server relies on the authorization server to authorize a client. The resource server will only grant access if a valid bearer token has been presented to it. A bearer token is a security token used by the "bearer" (the authorized client) to access resources and data on a resource server. Send your bearer token through a secure channel like transport layer security (HTTPS).
 
 To use authentication protocols and tokens as part of the user journey for your web application, you'll need to use the `/authorize` endpoint like this: `https://{tenant}.b2clogin.com/{tenant}.onmicrosoft.com/{policy}/oauth2/v2.0/authorize`. The `{policy}` is the user flow that you created.
 
@@ -87,13 +90,13 @@ client_id=your_application_id
 &nonce=12345
 ```
 
-- `client_d` is your unique registered Application ID.
-- `redirect_uri` is a url you use to send responses back to your application.
-- `response_mode` is the method used when the resulting token is sent back to the application.
-- `response_type` is how you specify the type of token you want to receive.
-- `scope` is used to specify the permissions that the application needs from the user.
-- `nonce` is a value generated by your application. The value is used to identify a request's origin.
-- `state` is a random value you send that's returned to you in the response. Your application verifies that both `state` values are the same.
+- `client_d` is your unique registered Application ID
+- `redirect_uri` is a url you use to send responses back to your application
+- `response_mode` is the method used when the resulting token is sent back to the application
+- `response_type` is how you specify the type of token you want to receive
+- `scope` is used to specify the permissions that the application needs from the user
+- `nonce` is a value generated by your application. The value is used to identify a request's origin
+- `state` is a random value you send that's returned to you in the response. Your application verifies that both `state` values are the same
 
 When you send the request, your user is asked to go through the user flow specified in the request. For example, if it's a sign-in user flow, the user is prompted to enter their credentials. When the user completes the user flow steps, a response is returned to the `redirect_uri`. The response might look like this:
 

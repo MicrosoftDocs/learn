@@ -8,11 +8,11 @@ You can add an additional authentication layer to secure your data and applicati
 
 Before you allow access to the application, use multi-factor authentication to ensure the user completes additional challenges. Multi-factor authentication challenges can be put into three general categories:
 
-- Something the user knows.
+- something the user knows
 
-- Something the user owns.
+- something the user owns
 
-- Something the user is.
+- something the user is
 
   ![MFA challenges](../media/3-mfa-challenges.png)
 
@@ -22,9 +22,9 @@ A secret password or a secret answer to a security question should be something 
 
 Different forms of second factor methods are supported in Azure. These methods include:
 
-- A mobile application, such as Microsoft Authenticator where users receive a uniquely generated one-time code on the phone app.
-- A phone call, where the user receives a one-time code.
-- A text message, where the user receives a one-time code.
+- a mobile application, such as Microsoft Authenticator where users receive a uniquely generated one-time code on the phone app
+- a phone call, where the user receives a one-time code
+- a text message, where the user receives a one-time code
 
 Use these different methods to cater to your users' needs. For example, for accessibility reasons, some users might prefer to receive a phone call rather than a text message.
 
