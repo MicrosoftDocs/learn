@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 12
 content: |
-  [!include[](includes/8-exercise-rnns.md)]
+  [!include[](includes/7-exercise-rnns.md)]

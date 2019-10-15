@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-deep-learning-applications.md)]
+  [!include[](includes/2-deep-learning-applications.md)]
 quiz:
   title: Check your knowledge
   questions:
