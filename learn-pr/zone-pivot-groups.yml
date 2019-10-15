@@ -186,3 +186,11 @@ groups:
       title: Visual Studio 2017
     - id: vs2019
       title: Visual Studio 2019
+- id: vsandcode
+  title: IDE
+  prompt: Choose your app Integrated Development Environment (IDE)
+  pivots:
+    - id: vscode
+      title: Visual Studio Code
+    - id: vstudio
+      title: Visual Studio
