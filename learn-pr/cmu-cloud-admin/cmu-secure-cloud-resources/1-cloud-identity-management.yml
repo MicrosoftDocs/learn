@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.cmu-cloud-admin.secure-cloud-resources.1-cloud-identity-management
-title: Cloud Identity Management
+title: Cloud identity management
 metadata:
-  title: Cloud Identity Management
+  title: Cloud identity management
   description: Cloud Identity Management
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 13
 content: |
   [!include[](includes/1-cloud-identity-management.md)]

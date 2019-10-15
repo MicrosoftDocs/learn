@@ -6,7 +6,7 @@ In the online world, identity is typically determined by challenging a user to p
 
 Examples of how online identity is determined are both varied and numerous. They are also highly scenario-dependent. Let us consider two common examples of how authentication is used to establish a user's identity. The first involves a public web site that requires a user to log in before accessing some or all of the web site's resources. The second involves authenticating users who access file shares, network devices, and other internal resources. In both cases, determining the user's identity before granting them access is paramount to implementing a secure and robust system.
 
-## Authenticating External Web-Site Users
+## Authenticating external website users
 
 One common use of digital identity is to sign into a web page that is only available to authenticated users -- for example, users who have purchased subscriptions to the online edition of a newspaper. The first decision that the developers of the web site have to make is whether they will write the logic that permits users to register (create accounts) and log in themselves, or use a third-party identity provider. An *identity provider* is a service that authenticates users using standard protocols such as OAuth 2.0, OpenID Connect, and SAML 2.0, each of which implements mechanisms for ensuring the authenticity of the exchanged information. For example, they use digital signatures to ensure that identity information isn't altered as it travels over the Internet.
 
@@ -42,7 +42,7 @@ Typically, once the web site has confirmed the validity of the token, it issues 
 
 An important feature of this flow is that the site never sees the user's credentials. In fact, it is not aware of how the user was authenticated. Consequently, responsibility falls to the identity provider to store the user's credentials and do so in a secure manner. Moreover, the web-site owner can change the physical mechanism used to authenticate users -- for example, switch from user names and passwords to fingerprints -- by making a configuration change to the identity provider rather than rewriting a lot of code.
 
-## Authenticating Users Internal to the Organization
+## Authenticating users internal to the organization
 
 The discussion in the previous section is relevant to a software-development team building a web site that supports authenticated users outside the organization. But suppose you're an IT administrator and the goal is to authenticate users *within* the organization in order to secure access to file shares and other on-premises resources. This requires a different approach to identity.
 

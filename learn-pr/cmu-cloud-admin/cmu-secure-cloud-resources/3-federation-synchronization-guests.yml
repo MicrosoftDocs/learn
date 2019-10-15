@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.cmu-cloud-admin.secure-cloud-resources.3-federation-synchronization-guests
-title: Federation, Synchronization, and Guest Accounts
+title: Federation, synchronization, and guest accounts
 metadata:
   title: Federation, Synchronization, and Guest Accounts
   description: Federation, Synchronization, and Guest Accounts
@@ -9,7 +9,6 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
   [!include[](includes/3-federation-synchronization-guests.md)]

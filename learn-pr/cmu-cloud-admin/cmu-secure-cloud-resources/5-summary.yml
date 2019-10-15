@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.cmu-cloud-admin.secure-cloud-resources.5-summary
-title: Metering and Monitoring
+title: Summary
 metadata:
-  title: Metering and Monitoring
-  description: Metering and Monitoring
+  title: Summary
+  description: Summary
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 6
 content: |
   [!include[](includes/5-summary.md)]

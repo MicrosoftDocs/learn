@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.cmu-cloud-admin.secure-cloud-resources.4-rbac
-title: Role-based Access Control
+title: Role-based access control
 metadata:
-  title: Role-based Access Control
+  title: Role-based access control
   description: Role-based Access Control
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 9
 content: |
   [!include[](includes/4-rbac.md)]
