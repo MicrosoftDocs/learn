@@ -4,7 +4,6 @@ The .NET Core CLI is the simplest way to create, build, and run an ASP.NET Core 
 
 ## Run the Razor Pages project and explore its UI
 
-
 ### Build and run the *:::no-loc text="ContosoPets.UI":::* project
 
 1. Run the following command in the command shell to verify you are still at the *:::no-loc text="ContosoPets.UI":::* directory:
