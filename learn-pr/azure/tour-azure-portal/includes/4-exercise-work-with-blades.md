@@ -36,7 +36,7 @@ Once you are logged into the Azure portal, we can start exploring things. In the
 
 1. Another way to locate services is to refine the list with filters and search terms. On the **New** blade, you may have noticed the search box at the top. This is the quickest way to filter what services you see, but this search checks every Azure service to get its results. If you'd like to learn how to filter after selecting a category, continue to the next steps.
 
-1. Type `virtual machine images` into the search box and press <kbd>Enter</kbd>. 
+1. Type `virtual machine` into the search box and press <kbd>Enter</kbd>. 
 1. Select **Compute**. You see a filtered list of Compute services related to virtual machine images.
 
 1. Select any of the results that interest you to learn more about that service, including how to get started. Click the **X** in the corner to explore a different service. When you're done, move to the next step.
