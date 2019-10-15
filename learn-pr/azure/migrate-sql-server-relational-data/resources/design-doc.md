@@ -50,7 +50,7 @@ Identify the subtasks of *Migrate your relational data to Azure SQL Database*
 
 1. **Exercise - Environment setup**
 
-    Exercise unit to kick off the setup of the systems needed for the exercise. This should be a single command to deploy a template for a SQL Server on a Windows VM, with a sample database configured.
+    Exercise unit to kick off the setup of the systems needed for the exercise. This should be a single command to deploy a template for a SQL Server on a Windows VM, with a sample database configured. This should also deploy an instance of Azure SQL Database.
 
 1. **Migration process overview**
 
@@ -96,14 +96,16 @@ Identify the subtasks of *Migrate your relational data to Azure SQL Database*
     List the content that will enable the learner to *Choose when to use migration with downtime*:
 
     - Overview of the migration process
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+        - Assess your on-premises database by using the Data Migration Assistant.
+        - Migrate the sample schema by using the Data Migration Assistant.
+        - Create an instance of the Azure Database Migration Service.
+        - Create a migration project by using the Azure Database Migration Service.
+        - Run the migration.
+        - Monitor the migration.
+        - Download a migration report.
     - Selecting downtime tolerance
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+        - Migrate offline
+        - Migrate online
 
     **Knowledge check**
 
@@ -116,15 +118,10 @@ Identify the subtasks of *Migrate your relational data to Azure SQL Database*
 
     List the content that will enable the learner to *Choose when to use transactional replication*:
 
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+    - Overview of the migration process
+        - Set up distribution
+        - Create publication
+        - Create subscription
 
     **Knowledge check**
 
