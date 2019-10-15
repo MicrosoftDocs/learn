@@ -1,6 +1,6 @@
-The team needs to create the Azure SQL Database off of Mara's prototype. She has given them a *bacpac* file so that they can create the database with data in it. After that, they want to test the changes to the application locally using the Azure SQL Database they created.
+Azure SQL Database can create a SQL Database including data using a file called _bacpac_. This file has information on the database schema as well as the test data. That differs from the _dacpac_ file mentioned earlier. The _dacpac_ file is schema only. 
 
-**TODO**: This is the first time we're referencing the term "bacpac". We might need to introduce it here to avoid confusion with "dacpac".
+Mara has given the team a *bacpac* file so that they can create the database with data in it. After that, they want to test the changes to the application locally using the SQL Database they created.
 
 Here, you follow along with Andy, Mara, and Tim as they create the database and run the application locally.
 
@@ -35,12 +35,12 @@ Here, you set up Azure SQL Database and verify that it contains sample data. You
 
 ### Get the bacpac file and upload it to Azure storage
 
-Mara has created the development database with test data in it. She exported this database for you to use. The export is in a file format called *.bacpac*. This format has the database schema and the data. You need to get this file and put it in blob storage on Azure so your SQL Server logical instance can create a database from it.
+Mara has created the development database with test data in it. She exported this database for you to use. The export is in a file format called *.bacpac*. This format has the database schema and the data. You need to get this file and put it in blob storage on Azure so SQL Server can create a database from it.
 
 > [!NOTE]
 > If you haven't worked with blob storage on Azure, just follow along. We'll point you to more resources at the end of this module.
 
-1. Download the [bacpac file](https://learnmodulestorage.blob.core.windows.net/moduleblobs/tailspindatabase.bacpac?azure-portal=true).
+1. Download the [bacpac file](https://sqldbtutorial.blob.core.windows.net/bacpacs/tailspindatabase.bacpac?azure-portal=true).
 
     You'll need to upload this file to your storage account later.
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true). Then select **Storage accounts** on the left.
@@ -89,7 +89,7 @@ Here you create the SQL Server that holds your new database.
 
 ### Populate your database
 
-Here, you import the *bacpac* file that you uploaded to blob storage to your SQL Server database. You fetch the *bacpac* file from the blob storage you set up earlier.
+Here, you import the *bacpac* file that you uploaded to blob storage to SQL Server. You fetch the *bacpac* file from the blob storage you set up earlier.
 
 1. Select **Import database**.
 ![Screenshot of the import database menu selection](../media/4-import-database-menu.png)
@@ -123,8 +123,8 @@ Here you explore the database you just imported. You need to set a firewall rule
 
     > [!NOTE]
     > If you get an error message that contains an IP address, copy that IP address to your clipboard. Then click the link in the error message to return to the firewall rules. Update the IP addresses in the **LocalIP** firewall rule with the contents of the clipboard.
-    > 
-    > Then click **Save** and then **OK**. Then repeat this step.
+    >Then click **Save** and then **OK**. 
+    >Then repeat this step.
 1. Expand **Tables**, and then expand each table in turn. You should see four tables **dbo.Profile**, **dbo.Scores**, **dbo.Achievements**, and **dbo.ProfileAchievements**, together with the columns and keys for each table.
 
 ![Screenshot of the tables in the tailspin database](../media/4-database-tables.png)
@@ -132,7 +132,7 @@ Here you explore the database you just imported. You need to set a firewall rule
 1. In the **Query 1** pane, enter the following SQL statement, and then select **Run**.
 
     ```SQL
-    SELECT * FROM dbo.Profiles
+    SELECT * FROM [dbo].[Profiles]
     ```
 
     This statement retrieves the data from the **Profiles** table. The results window should display 20 rows.
@@ -142,21 +142,21 @@ Here you explore the database you just imported. You need to set a firewall rule
 1. Change the query as follows, and then select **Run**.
 
     ```SQL
-    SELECT * FROM dbo.Scores
+    SELECT * FROM [dbo].[Scores]
     ```
 
     This time you should see the scores in the **Results** window. There are 25 rows. Notice that the Score entry is related to the Profile by the ProfileID. The is the ID from the Profile table.
 1. Change the query as follows, and then select **Run**.
 
     ```SQL
-    SELECT * FROM dbo.Achievements
+    SELECT * FROM [dbo].[Achievements]
     ```
 
     This time you should see the list of possible Achievements in the **Results** window. There are 10 rows. Notice that they are not related to any profile. This is because profiles and achievements are a many-to-many relationship. This means a profile can have many achievements, and an achievement and show up on many profiles. To get the right achievements with the right profiles a ProfileAchievements table relates them.
 1. Change the query as follows, and then select **Run**.
 
     ```SQL
-    SELECT * FROM dbo.ProfileAchievements
+    SELECT * FROM [dbo].[ProfileAchievements]
     ```
 
     Each row is a correlation of the Profile Id and the Achievement Id.
@@ -167,7 +167,7 @@ Here you explore the database you just imported. You need to set a firewall rule
 1. Notice the methods use SQL commands to get the data from the database. For example:
 
     ```C#
-    sql = string.Format("Select a.description from dbo.Achievements a JOIN dbo.ProfileAchievements pa on a.id = pa.achievementid Where pa.profileid = {0}", profileId);
+    sql = string.Format("SELECT a.description from dbo.Achievements a JOIN dbo.ProfileAchievements pa on a.id = pa.achievementid WHERE pa.profileid = {0}", profileId);
     command = new SqlCommand(sql, conn);
     using (SqlDataReader reader = command.ExecuteReader())
     ```
@@ -180,7 +180,7 @@ Here you explore the database you just imported. You need to set a firewall rule
 
 ## Set up your local environment
 
-Here you set up your environment to run the web site locally using the Azure SQL Database you created. The web site project is already set up to use the *secrets.json* file mentioned in the last unit. You need to put your connection string into a *secrets.json* file so that the project can find it.
+Here you set up your environment to run the web site locally and connect to Azure SQL Database. The web site project is already set up to use the *secrets.json* file mentioned in the last unit. You need to put your connection string into a *secrets.json* file so that the project can find it.
 
 1. Navigate to the **tailspindatabase** page in the Azure portal, select **Connection strings**, and copy this connection string.
 
@@ -206,8 +206,8 @@ Here you set up your environment to run the web site locally using the Azure SQL
         dotnet user-secrets set "ConnectionStrings:DefaultConnection" "Your connection string"
         ```
 
-        Make sure you have replaced the `{your_username}` and `{your_password}` with the username and password you set up when you created the server.
-    1. Run the following command to read the secrets.json file and see that your connection string is there.
+        Make sure you use the connection string you copied and have replaced the `{your_username}` and `{your_password}` with the username and password you set up when you created the server.
+    1. Run the following command to read the *secrets.json* file and see that your connection string is there.
 
         ```bash
         dotnet user-secrets list
@@ -225,7 +225,7 @@ Here you set up your environment to run the web site locally using the Azure SQL
      dotnet run
      ```
 
-  Watch the output for "Now listening on (your local link)." For example, `Now listening on: http://localhost:64164`.
+    Watch the output for "Now listening on (your local link)." For example, `Now listening on: http://localhost:64164`.
 1. Hold the `control` key and click the link. This will open a browser at the locally hosted SpaceGame web page. Verify the web site is running locally.
 1. In the bash terminal type `control-c` to shut down the application.
 
@@ -361,7 +361,7 @@ To do so, you:
         --connection-string-type SQLAzure
     ```
 
-    This will create an application setting called **DefaultConnection** that the application can use to connect to the database. This allows us to use the connection string without having to set it in the appSettings.json file and have it in plain text in source control. Anyone with read access to the App Service can read this configuration file. You will normally set permissions on the App Service to restrict who has read access. You can use an Azure key vault to store the string as well. More information on that is provided in the links in the summary of this module.
+    This will create an application setting called **DefaultConnection** that the application can use to connect to the database. This allows us to use the connection string without having to set it in the appSettings.json file and have it in plain text in source control. Anyone with read access to App Service can read this configuration file. You will normally set permissions on App Service to restrict who has read access.
 
 > [!IMPORTANT]
 > Remember, the [Clean up your Azure DevOps environment](/learn/modules/create-a-release-management-workflow/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
@@ -432,30 +432,32 @@ To add the variable:
 
 ## Add the database stage to the pipeline
 
-Here you add the pipeline stage that will check for database schema changes so the database administrator can approve or edit the proposed changes. In this exercise, there won't be any schema changes. You do that in the next exercise.
+Here you add the Azure Pipelines stage that will check for SQL Database schema changes so the DBA can approve or edit the proposed changes. In this exercise, there won't be any schema changes. You do that in the next exercise.
 
 1. Open the **azure-pipelines.yml** file from the **database** branch.
 1. Copy the new pipeline below and replace the code that is already in the **azure-pipelines.yml** file.
 
-    [!code-yml[](code/azure-pipelines1.yml?highlight=78-94,96-130,132-160)]
+    [!code-yml[](code/azure-pipelines1.yml?highlight=65-98,100-134,136-164)]
 
     This pipeline adds a new build job for the Tailspin.SpaceGame.Database project. This will result in a `.dacpac` file being created that contains information about the database schema. That `.dacpac` file will be copied to a staging directory in the pipeline and then published as an artifact called **dropDacpac**.
 
     ```yml
     - task: VSBuild@1
-      displayName: 'Build project Tailspin.SpaceGame.Database/Tailspin.SpaceGame.Database.sqlproj'
+      displayName: 'Build the database project'
       inputs:
         project: Tailspin.SpaceGame.Database/Tailspin.SpaceGame.Database.sqlproj
+
     - task: CopyFiles@2
-      displayName: 'Copy dacpac file to Staging'
+      displayName: 'Copy dacpac file to staging directory'
       inputs:
-        Contents: |
+        contents: |
           Tailspin.SpaceGame.Database/bin/**/*.dacpac
-        TargetFolder: '$(Build.StagingDirectory)'  
+        targetFolder: '$(Build.StagingDirectory)'
+
     - task: PublishBuildArtifacts@1
       displayName: 'Publish Artifact'
       inputs:
-        PathtoPublish: '$(build.artifactstagingdirectory)'
+        pathToPublish: '$(Build.ArtifactStagingDirectory)'
         artifactName: dropDacpac
       condition: succeededOrFailed()
     ```
@@ -466,51 +468,51 @@ Here you add the pipeline stage that will check for database schema changes so t
 
     ```yml
     - task: SqlAzureDacpacDeployment@1
-        displayName: Generate Auto Gen DB Update Script
-        inputs:
-            azureSubscription: 'Resource Manager - Tailspin - Space Game'
-            AuthenticationType: 'server'
-            ServerName: 'tailspinsvr.database.windows.net'
-            DatabaseName: 'Tailspin'
-            SqlUsername: '$(adminlogin)'
-            SqlPassword: '$(adminPassword)'
-            deployType: 'DacpacTask'
-            DeploymentAction: 'Script'
-            DacpacFile: '$(Pipeline.Workspace)/dropDacpac/Tailspin.SpaceGame.Database/bin/Debug/Database.dacpac'
-            IpDetectionMethod: 'AutoDetect'
+      displayName: Generate schema change script
+      inputs:
+        azureSubscription: 'Resource Manager - Tailspin - SpaceGame'
+        authenticationType: 'server'
+        serverName: '$(servername).database.windows.net'
+        databaseName: '$(databasename)'
+        sqlUsername: '$(adminlogin)'
+        sqlPassword: '$(adminPassword)'
+        deployType: 'DacpacTask'
+        deploymentAction: 'Script'
+        dacpacFile: '$(Pipeline.Workspace)/dropDacpac/Tailspin.SpaceGame.Database/bin/$(buildConfiguration)/Tailspin.SpaceGame.Database.dacpac'
+        ipDetectionMethod: 'AutoDetect'
 
     - task: PowerShell@2
-        displayName: Show Auto Generated SQL Script
-        inputs:
-            targetType: 'inline'
-            script: |
-            Write-Host "Auto Generated SQL Update Script:"
-            Get-Content d:\a\1\s\GeneratedOutputFiles\Tailspin_Script.sql | foreach {Write-Output $_}
+      displayName: Show Auto Generated SQL Script
+      inputs:
+        targetType: 'inline'
+        script: | 
+        Write-Host "Auto Generated SQL Update Script:"
+        Get-Content d:\a\1\s\GeneratedOutputFiles\$(databasename)_Script.sql | foreach {Write-Output $_}
     ```
 
 The `DBAVerificationApply` stage will read the auto generated file and apply the change script to the database.
 
    ```yml
-        steps:
-        - download: current
-        artifact: dropDacpac
-        patterns: '**/*'
-        - task: SqlAzureDacpacDeployment@1
-        displayName: 'Deploy SQL Schema'
-        inputs:
-            azureSubscription: 'Resource Manager - Tailspin - SpaceGame'
-            AuthenticationType: 'server'
-            ServerName: '$(servername).database.windows.net'
-            DatabaseName: '$(databasename)'
-            SqlUsername: '$(adminlogin)'
-            SqlPassword: '$(adminPassword)'
-            deployType: 'DacpacTask'
-            DeploymentAction: 'Publish'
-            DacpacFile: '$(Pipeline.Workspace)/dropDacpac/Tailspin.SpaceGame.Database/bin/Debug/tailspin.SpaceGame.Database.dacpac'
-            IpDetectionMethod: 'AutoDetect'
+    steps:
+    - download: current
+      artifact: dropDacpac
+      patterns: '**/*'
+    - task: SqlAzureDacpacDeployment@1
+      displayName: 'Deploy SQL schema'
+      inputs:
+        azureSubscription: 'Resource Manager - Tailspin - SpaceGame'
+        authenticationType: 'server'
+        serverName: '$(servername).database.windows.net'
+        databaseName: '$(databasename)'
+        sqlUsername: '$(adminlogin)'
+        sqlPassword: '$(adminPassword)'
+        deployType: 'DacpacTask'
+        deploymentAction: 'Publish'
+        dacpacFile: '$(Pipeline.Workspace)/dropDacpac/Tailspin.SpaceGame.Database/bin/$(buildConfiguration)/Tailspin.SpaceGame.Database.dacpac'
+        ipDetectionMethod: 'AutoDetect'
    ```
 
-1. Save the file and commit it, but do not push it to origin yet. You still have some setup to do in Azure DevOps.
+1. Save the file and commit it, but do not push it to origin yet. You still have some Azure DevOps setup to do.
 
     ```bash
     git add azure-pipelines.yml

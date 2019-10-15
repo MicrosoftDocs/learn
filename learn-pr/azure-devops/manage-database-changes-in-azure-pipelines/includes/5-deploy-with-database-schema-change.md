@@ -6,7 +6,7 @@ Here, you fetch the `database-changes` branch from GitHub and checkout, or switc
 
 This branch contains the _Space Game_ project with the changes to the website code that expects the Profile table to have a `favoriteMap` column. This new column's data will be displayed on the Profile page as **Favorite Galaxy:**. It also has the Azure Pipelines configuration you created in the last unit.
 
-In the Tailspin.SpaceGame.Database project, a change has been made to the Profile table. The `favoriteMap` column has been added. 
+In the Tailspin.SpaceGame.Database project, a change has been made to the Profile table. The `favoriteMap` column has been added.
 
 1. In Visual Studio Code, open the integrated terminal.
 1. Run the following `git` commands to fetch a branch named `database-changes` from Microsoft's repository and switch to that branch.
@@ -16,7 +16,7 @@ In the Tailspin.SpaceGame.Database project, a change has been made to the Profil
     git checkout database-change
     ```
 
-1. Open the `dbo` folder in the database project. This will have the scripts for each of the tables. Open the **Profiles.sql** and see that the new column is there.
+1. Open the `dbo` folder in the database project. This will have the scripts for each of the tables. Open the **Profiles.sql** and see that the new column `favoriteMap` is there.
 
 1. Use an empty commit to run the pipeline.
 
@@ -66,7 +66,11 @@ In this section you add to the PowerShell script that created the change file an
 
 ### Passing a pipeline variable change between stages
 
-If the keyword search returns a match, create a variable in the pipeline variable group and set its value to true. If the variable is in the pipeline variable group, it can be seen by all stages. Setting a new variable in a stage is only scoped to that stage. Here you use a PowerShell library created by Donovan Brown, [VSTeam](https://www.powershellgallery.com/packages/VSTeam/6.3.5?azure-portal=true), that uses the [Azure DevOps Services REST API](https://docs.microsoft.com/rest/api/azure/devops/search/?view=azure-devops-rest-5.1&azure-pipelines=true) to access Azure DevOps Services. Again, do not copy this yet. Soon you will replace the entire **azure-pipelines.yml** file contents as you did in the previous exercise.
+If the keyword search returns a match, create a variable in the pipeline variable group and set its value to true. If the variable is in the pipeline variable group, it can be seen by all stages. Currently, setting a new variable in a stage is only scoped to that stage. Here you use a PowerShell library created by Donovan Brown, [VSTeam](https://www.powershellgallery.com/packages/VSTeam/6.3.5?azure-portal=true), that uses the [Azure DevOps Services REST API](https://docs.microsoft.com/rest/api/azure/devops/search/?view=azure-devops-rest-5.1&azure-pipelines=true) to access Azure DevOps Services.
+
+This script will copy all of the current variables out of the variable group, add the new variable `schemaChanged` and update the variable group with all of the variables.
+
+Again, do not copy this yet. Soon you will replace the entire **azure-pipelines.yml** file contents as you did in the previous exercise.
 
   ```powershell
    if ($containsWord -contains $true) {
@@ -154,7 +158,7 @@ The VSTeam library needs to access your Azure DevOps organization, so it will ne
 1. Open the **azure-pipelines.yml** file you got when you switched to the **database-change** branch.
 1. Copy the new pipeline below and replace the code that is already in the **azure-pipelines.yml** file.
 
-    [!code-yml[](code/azure-pipelines2.yml?highlight=131-153,158,193-219)]
+    [!code-yml[](code/azure-pipelines2.yml?highlight=138-160,165,200-215,220-228)]
 
     This pipeline adds to the PowerShell script to check the generated SQL script for the keywords **CREATE**, **ALTER**, or **DROP** and creates a `schemaChanged` variable and updates the pipeline variable group. Then a condition is added to the `DBAVerificationApply` stage to check for this variable. If this variable is `True`, there is a change that needs approval, if it is not there, then there are no changes in the script and this stage is skipped because the condition fails.
 
@@ -170,4 +174,4 @@ The VSTeam library needs to access your Azure DevOps organization, so it will ne
 
 ## Best Practice
 
-In this exercise, you created a variable to use as a condition for a stage. In reality, the variable must be unique per pipeline run since you may be running this pipeline in parallel. If you are using the **Release Pipeline** editor for your project, you can use the [suggested PowerShell from Donovan Brown](http://donovanbrown.com/post/Passing-variables-from-stage-to-stage-in-Azure-DevOps-release?azure-portal=true) to create a variable that is unique to that specific release. However, since you used the preview multi-stage YAML pipeline in this exercise, it is not possible yet to create this scenario. This is a feature that is promised in the future. It will be added to this exercise when the feature releases.
+In this exercise, you created a variable to use as a condition for a stage. In reality, the variable must be unique per pipeline run since you may be running this pipeline in parallel. If you are using the **Release Pipeline** editor for your project, you can use the [suggested PowerShell from Donovan Brown](http://donovanbrown.com/post/Passing-variables-from-stage-to-stage-in-Azure-DevOps-release?azure-portal=true) to create a variable that is unique to that specific release. However, since you used the preview multi-stage YAML pipeline in this exercise, it is not possible yet to create this scenario. This is a feature that is planned in the future. It will be added to this exercise when the feature releases.

@@ -1,6 +1,4 @@
-**TODO**: Can the lead-in here be more specific to what you'll learn? As it is, it lacks in information.
-
-In this part, you follow the Tailspin web team as they define their next steps for the _Space Game_ website.
+In this unit, you learn about some of the factors to consider when choosing a database technology for your data storage as well as what you will need for App Service to connect to the database. Once that is successful, you learn how to make sure that database schema changes are recognized during Azure Pipelines deployments. Then you use Azure Pipelines to provide a way for the DBA to approve the schema changes before they ar applied to the database.
 
 The team is ready to create a database for the website but they need to work with the DBA to coordinate the work. The DBA is responsible for maintaining the integrity of the database and needs to work with the team to understand their database needs. The DBA needs to approve any changes the developers make to the database schema or its tables.
 
@@ -16,9 +14,9 @@ In this section, you:
 
 ## The meeting
 
-**TODO**: I don't think it's obviously apparent to the learner at this point that the _Dev_ stage is where the database might come together with the webapp. Perhaps state that in a sentence or two here, before the team discussion.
+The team his currently deploying the webapp to a _dev_ stage where all of the development pieces come together, a _test_ stage where testing is done on the webapp, and a _staging_ stage where the webapp is available for management to approve before it moves to production. Here the team will discuss adding a database as the data storage solution for the webapp and bringing it all together in the _dev_ stage.
 
-**Andy:** Good morning. Azure Pipelines brings together our development and operations processes more efficiently. We are ready to connect the website to a real database. I think this integration can happen as early as the _Dev_ stage. By connecting the website to the database early in the pipeline, we can track changes and measure performance as changes move through the pipeline.
+**Andy:** Good morning. We have all seen how Azure Pipelines brings together our development and operations processes more efficiently. Because of this, we have been able to move forward in our development and we are ready to connect the website to a real database. I think this integration can happen as early as the _Dev_ stage. By connecting the website to the database early in the pipeline, we can track changes and measure performance as changes move through the pipeline.
 
 Our focus here is on the leaderboard. Here's what the leaderboard looks like right now.
 
@@ -36,34 +34,27 @@ When considering a data storage solution, you have several options to choose fro
 
 **The type of data you're storing**
 
-Most data sets fit in one of three categories: _structured_, _semi-structured_, and _unstructured_.
+_Structured data_ is relational data that fits into tables with columns and rows. For example, point of sale systems. You might have a table for product data with columns that define what you want to use to describe your products. For example, Product Name, SKU Number, Color and so on.
 
-**TODO**: Consider saying a bit more about each, for instance, connect each to real-world example.
+_Semi-structured data_ is non-relational data that fits into hierarchies using tags. This is a good fit for data that may change in its description. In other words, you products can't all be described using the same columns as we did with structured data. Usually this data is stored in JSON or XML.
 
-**TODO**: Define NoSQL?
-
-* _Structured data_ is relational data that fits into tables with columns and rows.
-* _Semi-structured data_ is non-relational data that fits into hierarchies using tags.
-* _Unstructured data_ includes documents such as text files, photos, and videos.
+ _Unstructured data_ includes documents such as text files, photos, and videos.
 
 **Your operational needs**
 
 When planning your operational needs, you might ask yourself these questions:
 
-* Will I be doing basic lookups or do I need to join queries from multiple data sets?
-* How often will the data change?
-* Do I always need the latest data?
-* Do I need to run complex analytical queries?
-* How quickly do these operations need to complete?
-
-**TODO**: Can we say more here? For example, given any one of these questions, what decision will I make based on the answer? I'm guessing we need to say the answer isn't always so easy, so perhaps we promise links to more in the summary?
+* Will I be doing basic lookups or do I need to join queries from multiple data sets? WIth basic lookups you might consider non-relational data solutions whereas join queries will need relational data solutions.
+* How often will the data change? Reporting data may only change at month-end or quarterly. This could be a candidate for a data warehouse. If the data changes throughout the day, then you need something that can handle fast transactional throughput.
+* Do I always need the latest data? This goes back to how often the data changes. Maybe it changes often but you only need the month end results. Or it could be that you are stock trading and you need up-to-the-minute results.
+* Do I need to run complex analytical queries? Complex analytical queries are queries that can be done on several dimensions and would be a good candidate for a data warehouse.
+* How quickly do these operations need to complete? Is the consumer of this data customer-facing? If so, the operations on the data need to be fast. Perhaps the data is used to run nightly reports. Can this be a bit slower?
 
 **Whether or not you need transactions**
 
-**TODO**: I think we need to frame this a bit more fully. Say there are two common types, define each, and then perhaps compare them a bit.
+Transaction are needed when your data has relationships and those relationships keep the data from getting out of sync or help you to query the data. For example, say your gym membership was upgraded to give you more privileges at the gym. If the accounting data has the upgrade in order to change you more per month, but the membership data was not changed, you cannot access the privileges you are paying for. A transaction would insure that both pieces of data are updated at the same time.
 
-* Online Transaction Processing (OLAP)
-* Online Analytical Processing (OLTP)
+There are two types of transactions that your data might need. *Online Transaction Processing (OLTP)* is used for relational data. That is similar to the example above. *Online Analytical Processing (OLAP)* is used for more complex queries when your data is in a data structure called a *cube* or *data warehouse*. This is for data analysis systems that query on many dimensions of data. For example, you want to know how any blue widgets were sold in January last year in the northeast region as compared to green widgets sold in May through June of this year in the southwest, and who were the top sales people for widgets in that region.
 
 > [!NOTE]
 > You'll find resources to help you make the right data storage choices at the end of this module.
@@ -80,13 +71,9 @@ Let's listen in on how the _Space Game_ web team decides which data storage opti
 
 **Amita:** The data will change constantly as people play the game. Players want to see their positions on the leaderboard as quickly as possible, before they get outranked by others. We also talked about adding a feature that polls the leaderboard for updates in real time.
 
-**Tim:** I've had a few conversations about Cosmos DB with our DBA. They want to try it out, but I don't think we have the time to spend ramping up for this project. They have a new project coming up next month that will be a good candidate for Cosmos DB. This project is using relational data and the overall shape of the data shouldn't change much. It would be easier to set up as an Azure SQL database.
+**Tim:** I've had a few conversations about Cosmos DB with our DBA. They want to try it out, but I don't think we have the time to spend ramping up for this project. They have a new project coming up next month that will be a good candidate for Cosmos DB. This project is using relational data and the overall shape of the data shouldn't change much. It also needs to be fast. It would be better to set up Azure SQL Database for our data needs.
 
-**TODO**: This is an example of where we need to be cautious about product names. The product is "Azure SQL Database" (on first use; "SQL Database" thereafter). So we typically shouldn't say "an Azure SQL database" (lowercase 'd'). Rather, we might say "It would be easier to set up Azure SQL Database to ..." Please scrub all occurrences.
-
-**Mara:** That sounds good. I've used SQL Server Data Tools in the past to create a database project. I will add that to our solution. It will have the SQL scripts to create the tables and we can use it to make sure changes to the database schema are tracked.
-
-**TODO**: I wasn't sure here - tracked by whom?
+**Mara:** That sounds good. I've used SQL Server Data Tools in the past to create a database project. I will add that to our solution. It will have the SQL scripts to create the tables and we can use it to make sure changes to the database schema in the project are checked against the current database schema.
 
 **Andy:** Great. That will be your action item.
 
@@ -115,7 +102,7 @@ To update the code to read from a database, instead of from files, Mara creates 
 
 The connection string uses _SQL Authentication_, which includes the username and password. Storing this information in plain text in the *appsettings.json* would mean that the username and password would be readable by anyone who can access this file. Instead, Mara uses the _Secret Manager_ tool in Visual Studio to store this string in a file that is not maintained in source control. Let's listen in as she explains this to the team.
 
-**Mara:** When developing the app locally, we can use a file that's named *secrets.json*, which doesn't get pushed to GitHub. Visual Studio can set that up for us using the _Secret Manager_ tool. But when the website on Azure App Service needs this information, it will be in the *appsettings.json* file on Azure App Service. App Service will have strict limited permissions as to who can see the files there. We can provide this information to our App Service instance through Azure Pipelines. Therefore, we won't need to add it to our local *appsettings.json*.
+**Mara:** When developing the app locally, we can use a file that's named *secrets.json*, which doesn't get pushed to GitHub. Visual Studio can set that up for us using the _Secret Manager_ tool. But when the deployed webapp needs this information, it will be in Azure App Service *appsettings.json* file. App Service will have strict limited permissions as to who can see the files there. We can provide this information to our App Service instance through Azure Pipelines. Therefore, we won't need to add it to our local *appsettings.json*.
 
 **Andy:** Good idea, Mara. Now we are getting somewhere.
 
@@ -123,9 +110,9 @@ The connection string uses _SQL Authentication_, which includes the username and
 
 ## The role of the SQL Server Data Tools database project in Azure Pipelines
 
-_SQL Server Data Tools_, which runs on Windows, provides a project type that you can use to define the database schema from Visual Studio. This kind of project produces what's called a _dacpac_ file. When you unpack this file, you see the SQL scripts for creating the database schema. For example, you might see a `CREATE TABLE` script for each table that's defined in the database project. Azure SQL Database can unpack that file and apply the schema changes.
+_SQL Server Data Tools_, which runs on Windows, provides a project type that you can use to define the database schema from Visual Studio. This kind of project produces what's called a _dacpac_ file. When you unpack this file, you see the SQL scripts for creating the database schema. For example, you might see a `CREATE TABLE` script for each table that's defined in the database project. SQL Database can unpack that file and apply the schema changes.
 
-**TODO:  (Screenshots of database project and the .dacpac file)**
+![The database project in Visual Studio on Windows](../media/2-database-project.png)
 
 Let's go back to the team discussion and see how they handle the changes to their database schema.
 
@@ -139,8 +126,6 @@ Let's go back to the team discussion and see how they handle the changes to thei
 
 After you create the database change file, you can use PowerShell to write its contents to the pipeline so that the DBA can see the changes. Here's an example:
 
-TODO: (Do we send an email or something?)
-
 ```yml
 - task: PowerShell@2
   displayName: Show auto-generated SQL Script - check for schema changes
@@ -152,8 +137,6 @@ TODO: (Do we send an email or something?)
 ```
 
 You can use a manual approval to pause the pipeline at the stage where the changes would be applied, just as you did in the [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true) module. You create an Azure Pipelines environment that specifies the DBA as the approver. If the DBA approves the changes, the pipeline continues and the changes are applied to the database. If the DBA rejects the changes, the pipeline is halted. From there, you can discuss the proposed change with the DBA and plan some other approach.
-
-**TODO(Screenshot of approval?)**
 
 Let's listen in on the team's discussion.
 
@@ -184,7 +167,3 @@ We add an ![Callout 4](../../shared/media/callout-04.png) approval to another st
 **Andy:** I'll get with our DBA to get the database set up. But first, more coffee.
 
 **TODO**: Calling out a few knowledge check issues for you to address.
-
-* In the first one, the file is *appsettings.json*, not appSettings.json. Also, it's ASP.NET, not ASP.net.
-* In the second one, each explanation is the same, and it's not a complete sentence. Is there a way we can rephrase each one to help _guide_ the learner towards the answer?
-* In the third, there's no such as as "an Azure Pipeline". It's "in Azure Pipelines". The first alternative choice needs a period. The third alternative is complete.
