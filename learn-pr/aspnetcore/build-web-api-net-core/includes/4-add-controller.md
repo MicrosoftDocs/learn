@@ -61,7 +61,7 @@ A *Controller* is a public class with one or more public methods known as *actio
     * An HTTP GET action named `GetAll` is created for retrieving all products.
 
     > [!NOTE]
-    > The route may contain static strings, as in `api/[controller]`. In that example, a request would need to be made to `https://localhost:5001/products` to be handled by this controller.
+    > The route may contain static strings, as in `api/[controller]`. In that example, a request to `https://localhost:5001/api/products` would be handled by this controller.
 
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
 
