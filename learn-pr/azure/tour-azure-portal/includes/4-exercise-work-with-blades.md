@@ -10,7 +10,7 @@ In this unit, you will learn how to work with blades in the Azure portal user in
 
 Once you are logged into the Azure portal, we can start exploring things. In these sections, you will get a tour of the "blades" user interface element (windows within the Azure portal window), but you will not actually create any Azure resources.
 
-1. Let's start by touring how to create a resource. In the left-hand portion of the portal click **Create a resource**.
+1. Let's start by touring how to create a resource. In the left-hand portion of the portal, click **Create a resource**.
 
 1. A blade labeled **New** appears and displays a list of categories on the left-hand side, labeled Azure Marketplace. This is somewhat like a "Popular Categories" menu, with some of the most common categories visible. If you'd like, you can expand this list to see everything in the **Marketplace** blade with the **See all** link next to the heading. If you do, you can get back to the New blade by clicking the X icon in the upper right of any blades you have opened.
 
@@ -28,7 +28,7 @@ Once you are logged into the Azure portal, we can start exploring things. In the
 
 1. Click **Windows Server**.
 
-1. Select the drop down list to see all of the Windows Server images available.
+1. Select the drop-down list to see all of the Windows Server images available.
 
 1. Click the **X** at the top right-hand corner to close the **Windows Server** window. You should now see the **New** blade again.
 
@@ -41,7 +41,7 @@ Once you are logged into the Azure portal, we can start exploring things. In the
 
 1. Select any of the results that interest you to learn more about that service, including how to get started. Click the **X** in the corner to explore a different service. When you're done, move to the next step.
 
-1. Click the **X** in the right-hand end of the search box. This will erase your search term but does not reset any of the drop-down filters you've set. You can either reset those manually, or simply close the **Compute** blade with the **X** icon in the upper right corner and re-open it. When you are finished trying out the search and filtering options, move on to the next step.
+1. Click the **X** in the right-hand end of the search box. This will erase your search term but does not reset any of the drop-down filters you've set. You can either reset those manually, or close the **Compute** blade with the **X** icon in the upper right corner and reopen it. When you are finished trying out the search and filtering options, move on to the next step.
 
 1. Click the **X** at the top right-hand corner to close the **Marketplace** blade. Now you will see the **New** blade once again.
 
