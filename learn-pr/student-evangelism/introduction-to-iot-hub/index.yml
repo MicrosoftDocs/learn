@@ -7,7 +7,7 @@ metadata:
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: azure-iot-hub
+  ms.prod: learning-azure-iot-hub
 title: "Introduction to Azure IoT Hub"
 summary: "Assess the characteristics of Azure IoT Hub and determine scenarios when to use IoT Hub.
 ***Contributed by University of Oxford [Artificial Intelligence:Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
