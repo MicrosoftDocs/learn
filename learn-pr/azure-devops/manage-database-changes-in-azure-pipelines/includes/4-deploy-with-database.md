@@ -1,6 +1,6 @@
 The team needs to create the Azure SQL Database off of Mara's prototype. She has given them a *bacpac* file so that they can create the database with data in it. After that, they want to test the changes to the application locally using the Azure SQL Database they created.
 
-**TODO**: This is the first time we're referening "bacpac". We migh tneed to introduce it to avoid confusion with "dacpac".
+**TODO**: This is the first time we're referencing the term "bacpac". We might need to introduce it here to avoid confusion with "dacpac".
 
 Here, you follow along with Andy, Mara, and Tim as they create the database and run the application locally.
 
@@ -20,95 +20,111 @@ This branch serves as your _release_ branch. It contains the _Space Game_ projec
 
     The format of this command enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
 
-1. As an optional step, open *azure-pipelines.yml* from Visual Studio Code and familiarize yourself with the initial configuration.
+1. Optionally, in Visual Studio Code, open the *azure-pipelines.yml* file, and familiarize yourself with the initial configuration.
 
-    The configuration resembles the basic one you created in the [Create a release management workflow with Azure Pipelines](/learn/modules/create-a-release-management-workflow?azure-portal=true) module. It builds only the application's Release configuration and deploys the build to _dev_, _test_, and _staging_ environments. For learning purposes, this configuration does not run the quality or security checks nor does it contain the schedules and triggers that you set up in previous modules.
+    The configuration resembles the ones that you created in the previous modules in this learning path. It builds only the application's **Release** configuration. For brevity, it also omits the triggers, manual approvals, and tests you set up in previous modules.
+
+    [!include[](../../shared/includes/pipeline-branches-note.md)]
 
 ## Create the database
 
+Here, you set up Azure SQL Database and verify that it contains sample data. You do so through the Azure portal because it's a great way to explore Azure services. In a future learning path, you'll learn how to automate the process.
+
 > [!IMPORTANT]
 > Remember that you need your own Azure subscription to complete the exercises in this module.
-
-Here you use [Azure portal](https://portal.azure.com?azure-portal=true) to create the database. In later learning paths you will create your infrastructure using the pipeline.
 
 ### Get the bacpac file and upload it to Azure storage
 
 Mara has created the development database with test data in it. She exported this database for you to use. The export is in a file format called *.bacpac*. This format has the database schema and the data. You need to get this file and put it in blob storage on Azure so your SQL Server logical instance can create a database from it.
 
-1. Download the [bacpac file](https://learnmodulestorage.blob.core.windows.net/moduleblobs/tailspindatabase.bacpac?azure-portal=true). You will need to upload this to your storage account later.
-1. Navigate to your [Azure portal](https://portal.azure.com?azure-portal=true) and select **Storage accounts** on the left.
-1. On the *Storage account* page select **+ Add**
-1. Fill in the *Create storage account* page as follows:
+> [!NOTE]
+> If you haven't worked with blob storage on Azure, just follow along. We'll point you to more resources at the end of this module.
+
+1. Download the [bacpac file](https://learnmodulestorage.blob.core.windows.net/moduleblobs/tailspindatabase.bacpac?azure-portal=true).
+
+    You'll need to upload this file to your storage account later.
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true). Then select **Storage accounts** on the left.
+1. On the **Storage account** page select **+ Add**
+1. Fill in the **Create storage account*    * page as follows:
 
     | Property  | Value  |
     |---|---|
     | Subscription | < your subscription > |
-    | Resource Group | Select **Create new** and call it **tailspin-space-game-rg** |
-    | Storage account name | This must have a unique name across Azure. We suggest using something like **tailspinstorageNNN**, where *NNN* is a random number. |
+    | Resource Group | Select **Create new** and name it **tailspin-space-game-rg**. |
+    | Storage account name | This must have a unique name across Azure. We suggest using something like **spacegamedbstorageNNN**, where *NNN* is a random number. |
     | Location | Choose a location near you that supports this kind of resource. |
 
    You can leave the rest as the default values.
 
 1. Select **Review and create**. Then select **Create**.
 1. Wait for the storage account to be created and select **Go to resource**.
-1. Under **Services** select **containers**.
+1. Under **Services**, select **containers**.
 ![Screenshot of the services section of the containers page](../media/4-select-containers.png)
-1. In the Containers page, select **+ Container**.
-1. In the Name field type **tailspinbacpac** and select **OK**.
-1. Select the **tailspinbacpac** container.
-1. On the *tailspinbacpac* page, select **Upload**.
+1. On the **Containers** page, select **+ Container**.
+1. In the **Name** field, enter **bacpac** and select **OK**.
+1. Select the **bacpac** container.
+1. On the **bacpac** page, select **Upload**.
 1. Upload the *tailspindatabase.bacpac* file that you downloaded earlier.
 
 ### Create the SQL Server logical instance and the database
 
-Here you create the SQL Server that will hold your new database.
+Here you create the SQL Server that holds your new database.
 
-1. Navigate to your [Azure portal](https://portal.azure.com?azure-portal=true) and select **+ Create a Resource**.
-1. In the search, type **SQL server (logical server)**.
-1. On the *SQL server (logical server)* page select **Create**.
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true). Then select **+ Create a Resource**.
+1. In the search bar, enter **SQL server (logical server)**.
+1. On the **SQL server (logical server)** page, select **Create**.
 1. Fill in the *Create SQL database server* page as follows:
 
     | Property  | Value  |
     |---|---|
     | Subscription | < your subscription > |
     | Resource Group | **tailspin-space-game-rg** |
-    | Server name | The server must have a unique name. We suggest using something like **tailspindserverNNN**, where *NNN* is a random number. |
+    | Server name | **tailspin-space-game-sql** |
     | Server admin login | **azuresql** |
     | Password | Enter a password that meets the requirements. |
     | Confirm password | Confirm your password. |
 
-1. Select **Review + create**.
-1. Select **Create**, and wait for the server to be created before you continue.
-1. Once the server has been created, select **Go to resource**.
+1. Select **Review + create**, then select **Create**.
+1. After the server is created, select **Go to resource**.
+
+### Populate your database
+
+Here, you import the *bacpac* file that you uploaded to blob storage to your SQL Server database. You fetch the *bacpac* file from the blob storage you set up earlier.
+
 1. Select **Import database**.
 ![Screenshot of the import database menu selection](../media/4-import-database-menu.png)
 1. On the *Import database* page select your subscription and then select **Storage - Configure required settings**.
 ![Screenshot of the import database page highlighting configure storage settings](../media/4-configure-storage-settings.png)
-1. On your *Storage accounts* page select **tailspinstorageNNN**, where *NNN* is your number.
-1. On the *Containers* page, select **tailspinbacpac**.
-1. Highlight the **tailspindatabase.bacpac** file and select **Select**.
-1. Back on the *Import database* page, enter **azuresql** for the admin username and the password you used to set up the SQL Server instance.
+1. On your **Storage accounts** page select **spacegamedbstorageNNN**, where **NNN** is your number.
+1. On the **Containers** page, select **bacpac**.
+1. Highlight the **tailspindatabase.bacpac** file and then choose **Select**.
+1. Back on the **Import database** page, enter **azuresql** for the admin username and the password you used to set up the SQL Server instance.
 1. Select **OK** and wait for the database to be created.
-1. Select **Go to resource**
+1. Select **Go to resource**.
 
 ### Explore the database
 
-Here you explore the database you just imported. To access the database from your local machine you need to set a firewall rule.
+Here you explore the database you just imported. You need to set a firewall rule to access the database from your local machine.
 
 1. Navigate back to the Azure portal home page and select **SQL databases** on the left.
 1. Choose the **tailspindatabase**.
-1. At the top of the *tailspindatabase* page, select **Set server firewall**.
+1. At the top of the **tailspindatabase** page, select **Set server firewall**.
 1. Your current IP address is printed next to **Client IP address**. Enter the following rule:
 
   | Property  | Value  |
   |---|---|
   | Rule name| LocalIP |
-  | Start IP | Enter your IP address |
-  | End IP | Enter your IP address. |
+  | Start IP | Your IP address |
+  | End IP | Your IP address |
 
 1. Select **Save** at the top and then **OK**.
-1. Navigate back to the *tailspindatabase* page and select select **Query editor**.
-1. Enter **azuresql** for the admin username and your password for the password. If you get an error that has an IP address, go back and put that IP address in the LocalIP firewall rule you created.
+1. Navigate back to the **tailspindatabase** page and select select **Query editor**.
+1. Enter **azuresql** for the admin username and your password for the password.
+
+    > [!NOTE]
+    > If you get an error message that contains an IP address, copy that IP address to your clipboard. Then click the link in the error message to return to the firewall rules. Update the IP addresses in the **LocalIP** firewall rule with the contents of the clipboard.
+    > 
+    > Then click **Save** and then **OK**. Then repeat this step.
 1. Expand **Tables**, and then expand each table in turn. You should see four tables **dbo.Profile**, **dbo.Scores**, **dbo.Achievements**, and **dbo.ProfileAchievements**, together with the columns and keys for each table.
 
 ![Screenshot of the tables in the tailspin database](../media/4-database-tables.png)

@@ -31,3 +31,11 @@ Here are the Microsoft Learn modules mention in this module:
 
 - [Develop and configure an ASP.NET application that queries an Azure SQL database](https://docs.microsoft.com/en-us/learn/modules/develop-app-that-queries-azure-sql/?azure-portal=true)
 - [Choose a data storage approach in Azure](https://docs.microsoft.com/learn/modules/choose-storage-approach-in-azure/?azure-portal=True)
+
+---
+
+TODO: Perhaps add some links (Learn modules?) around working with storage accounts and the kinds of storage you used in this module.
+
+Docs - dacpac
+
+Docs - pacpac

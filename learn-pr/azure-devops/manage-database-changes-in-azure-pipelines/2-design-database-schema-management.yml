@@ -37,9 +37,6 @@ quiz:
     - content: "A SQLDelta.sql file with the data to insert into the database for this project."
       isCorrect: false
       explanation: "A .dacpac file with a SQL Script of the database schema as is it defined in the database project."
-    - content: "A .dacpac file with a SQL Script that holds the database schema as it is defined in the actual database."
-      isCorrect: false
-      explanation: "A .dacpac file with a SQL Script of the database schema as is it defined in the database project."
 
   - content: "How is a SQL Server Data Tools database project build file useful in an Azure Pipeline?"
     choices:

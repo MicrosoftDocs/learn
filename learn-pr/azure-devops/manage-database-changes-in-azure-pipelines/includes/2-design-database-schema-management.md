@@ -186,4 +186,5 @@ We add an ![Callout 4](../../shared/media/callout-04.png) approval to another st
 **TODO**: Calling out a few knowledge check issues for you to address.
 
 * In the first one, the file is *appsettings.json*, not appSettings.json. Also, it's ASP.NET, not ASP.net.
+* In the second one, each explanation is the same, and it's not a complete sentence. Is there a way we can rephrase each one to help _guide_ the learner towards the answer?
 * In the third, there's no such as as "an Azure Pipeline". It's "in Azure Pipelines". The first alternative choice needs a period. The third alternative is complete.
