@@ -24,7 +24,7 @@ A balance has to be struck, however, because if a model becomes too simple, it w
 
 Models that are too simple or undertrained fail to find true relationships in our data. This is called *underfitting* and reflected by poor accuracy in both training and test data. Underfitting typically occurs when there is not enough training data, when useful features are not used, or when the type of model is not suitable for the data at hand. For example, the graph below shows underfitting occurring in a linear model that is trying to predict a non-linear problem. While the line does separate the red and blue dots somewhat, a non-linear line is likely to do a better job.
   
-![TBC if we keep in optional content](../media/2567-oru-03.png)
+![Scatter plot titled 'underfitting'. The Y-axis is labelled 'independent variable 2', and tye X-axis is labelled 'independent variable 1'. The plot has two classes of data points - green and blue data points. They are on opposite diagonal sides of the plot, with a trend line attempting to separate them which represents underfitting. The black line does not separate the two classes with a high accuracy - if it had a sharper gradient this would dramatically increase its accuracy.](../media/2567-oru-03.png)
 
 To address underfitting problems you may move onto a more complex algorithm (such as an SVM), get more training data, or add more features to your data set.
 
