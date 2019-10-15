@@ -38,7 +38,7 @@ To begin the testing, with your [Azure IoT Central](https://apps.azureiotcentral
 
 ## Confirm the command to send the truck to a specified customer works as expected
 
-1. Now for the best fun of all. Click the **Commands** title for the device. Enter a customer ID, say "1" ("0" through "9" are valid customer IDs), and click **Run**.
+1. Now for the best fun of all. Click the **Commands** title for the device. Enter a customer ID, say "6" ("0" through "9" are valid customer IDs), and click **Run**.
 
 1. In the console for the Node.js app, you should see **Number of points=**, followed by a list of lat/lon coordinates. If you see a message including the text "Access denied due to invalid subscription key", then check your subscription key to Azure Maps.
 
@@ -51,7 +51,7 @@ To begin the testing, with your [Azure IoT Central](https://apps.azureiotcentral
 ## Confirm the command to recall the truck works as expected
 
 1. When the truck returns to base, try issuing another delivery command. Choose another customer ID.
-1. Issue a recall command to check the truck returns.
+1. Issue a recall command before the truck reaches its customer, to check the truck responds to this command.
 
 ## Check customer and conflict events are transmitted correctly
 
