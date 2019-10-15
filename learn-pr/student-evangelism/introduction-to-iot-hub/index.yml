@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.student-evangelism-intro-to-azure-iot-hub
+metadata:
+  title: "Introduction to Azure IoT Hub"
+  description: "In this module, we'll introduce various features and capabilities of IoT Hub"
+  ms.date: 9/29/2019
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-hub
+title: "Introduction to Azure IoT Hub"
+summary: "Assess the characteristics of Azure IoT Hub and determine scenarios when to use IoT Hub.
+***Contributed by University of Oxford [Artificial Intelligence:Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+
+abstract: |
+    In this module, you will:  
+    - Evaluate whether IoT Hub can effectively address the problems associated with large scale IoT deployment
+    - Describe how the components of IoT hub work together to build IoT applications managed through the cloud
+ 
+prerequisites: |
+    - Basic programming knowledge of C, Python, Node.js
+    - Basic knowledge of running Azure command-Line interface
+    - Basic knowledge of IoT applications and deploying applications in the Cloud
+iconUrl: /http://via.placeholder.com/120x120.%7C  #Using Place holder as mentioned in learning Guide
+badge:
+  uid: learn.introduction-to-iot-hub.badge
+levels:
+- beginner
+roles:
+- ai-edge-engineer
+products:
+- azure-iot-hub
+units:
+- learn.student-evangelism-intro-to-azure-iot-hub.introduction
+- learn.student-evangelism-intro-to-azure-iot-hub.what-is-iot-hub
+- learn.student-evangelism-intro-to-azure-iot-hub.how-iot-hub-works
+- learn.student-evangelism-intro-to-azure-iot-hub.when-to-use-iot-hub
+- learn.student-evangelism-intro-to-azure-iot-hub.knowledge-check
+- learn.student-evangelism-intro-to-azure-iot-hub.summary
