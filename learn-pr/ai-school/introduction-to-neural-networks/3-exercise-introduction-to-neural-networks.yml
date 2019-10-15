@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 15
+durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-introduction-to-neural-networks.md)] 
