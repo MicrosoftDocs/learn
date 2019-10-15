@@ -6,8 +6,6 @@ Using your preferred development environment, build a Node.js app. Visual Studio
 
 ::: zone pivot="vscode"
 
-### With Visual Studio Code
-
 1. Open Visual Studio Code. From the **Terminal** menu, open a **New Terminal**.
 
 1. In the opened terminal, create an empty folder where you will develop your code, called "RefrigeratedTrucks", by entering `mkdir RefrigeratedTrucks`. Then, navigate to that folder with `cd RefrigeratedTrucks`.
@@ -22,8 +20,6 @@ Using your preferred development environment, build a Node.js app. Visual Studio
 
 ::: zone-end
 ::: zone pivot="vstudio"
-
-### With Visual Studio
 
 1. Navigate to the **JavaScript** project types, and create a new **Blank Node.js Console Application** project, called "RefrigeratedTruck".
 
