@@ -53,7 +53,7 @@ Identify the subtasks of *Enable secure external user access for your applicatio
 
     - What is a *user journey* in Azure B2C?
     - Using secure protocols and tokens for user journeys.
-    - How to register tenants with applications for users.
+    - How to register tenants with applications for users. 
     - How to configure user journeys through policies.
     - Allowing users to sign in with different identity providers.
     - Customizing the user journey through page customization.
