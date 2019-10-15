@@ -102,18 +102,21 @@ This exercise runs on your desktop computer.
 
     ```javascript
     async function addStudent(student) {
-        const { item, statusCode } = await containerdata.create(student);
+        const { item, statusCode } = await containerdata.create(student).catch();
         isOK(statusCode) && process.stdout.write(`Added student with id: ${item.id}\n`);
     }
     ```
 
     This function takes a **Student** object and adds it to the collection in the Cosmos DB database. If the insert was successful, the function displays a message indicating that the student document was added.
 
+    > [!NOTE]
+    > If the **create** method returns an HTTP status code outside of the 200-299 range, it throws an exception. The empty **catch** handler is intended to catch and discard this exception as it is handled by the **isOK** statement.
+
 3. Add the **updateStudent** function show below to the **cosmosdb.js** script:
 
     ```javascript
     async function updateStudent(student) {
-        const { item, statusCode } = await containerdata.upsert(student);
+        const { item, statusCode } = await containerdata.upsert(student).catch();;
         isOK(statusCode) && process.stdout.write(`Updated student with id: ${item.id}\n`);
     }
     ```
@@ -124,7 +127,7 @@ This exercise runs on your desktop computer.
 
     ```javascript
     async function deleteStudent(student) {
-        const { item, statusCode } = await containerref.item(student.id, student.AcademicYear).delete();
+        const { item, statusCode } = await containerref.item(student.id, student.AcademicYear).delete().catch();;
         isOK(statusCode) && process.stdout.write(`Deleted student with id: ${item.id}\n`);
     }
     ```
@@ -135,7 +138,7 @@ This exercise runs on your desktop computer.
 
     ```javascript
     async function addCourse(course) {
-        const { item, statusCode } = await containerdata.create(course);
+        const { item, statusCode } = await containerdata.create(course).catch();;
         isOK(statusCode) && process.stdout.write(`Added course with id: ${item.id}\n`);
     }
     ```
@@ -146,7 +149,7 @@ This exercise runs on your desktop computer.
 
     ```javascript
     async function deleteCourse(course) {
-        const { item, statusCode } = await containerref.item(course.id, course.AcademicYear).delete();
+        const { item, statusCode } = await containerref.item(course.id, course.AcademicYear).delete().catch();;
         isOK(statusCode) && process.stdout.write(`Deleted course: ${item.id}\n`);
     }
     ```
@@ -157,7 +160,7 @@ This exercise runs on your desktop computer.
 
     ```javascript
     async function getCourse(id, year) {
-        const { resource, statusCode } = await containerref.item(id, year).read();
+        const { resource, statusCode } = await containerref.item(id, year).read().catch();;
         isOK(statusCode) && process.stdout.write(`Course data: ${resource.id}: ${resource.CourseName}: ${resource.AcademicYear}\n`);
     }
     ```
@@ -168,7 +171,7 @@ This exercise runs on your desktop computer.
 
     ```javascript
     async function getStudent(id, year) {
-        const { resource, statusCode } = await containerref.item(id, year).read();
+        const { resource, statusCode } = await containerref.item(id, year).read().catch();;
         if (isOK(statusCode)) { 
             process.stdout.write(`Student data: ${resource.id}: ${resource.Name.Forename}, ${resource.Name.Lastname}: ${resource.AcademicYear}\n`);
             resource.CourseGrades.forEach (function(coursegrade) {
