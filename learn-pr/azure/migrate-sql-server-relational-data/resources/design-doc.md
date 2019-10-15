@@ -69,29 +69,36 @@ Identify the subtasks of *Migrate your relational data to Azure SQL Database*
         - Perform Tests: Iteratively run functional and performance tests.
         - Optimize: Based on the tests you performed, address any performance issues, and then retest to confirm the performance improvements.
 
+    Migration details
+
+    - What is included and what is not included in the migration process
+    - Tools and services that are used
+        - Data Migration Assistant
+        - Azure Database Migration Service
+
     **Knowledge check**
 
     What types of questions will test *learning objective*?
 
-    - Question type
-    - Question type
+    - Why is the post-migration stage an important part of a successful migration plan?
 
 1. **Exercise - Assess database with the Data Migration Assistant**
 
-    List the steps which apply the learning content from previous unit:
+    Perform an assessment to ensure the source database is compatible with Azure SQL Database. Steps to follow should reference https://docs.microsoft.com/en-us/azure/dms/tutorial-sql-server-to-azure-sql#assess-your-on-premises-database.
 
-    1. Step
-    1. Step
-    1. Step
+    1. Download and install the [Data Migration Assistant](https://www.microsoft.com/download/details.aspx?id=53595)
+    1. Create an assessment
+    1. Review assessment results
+    1. Prepare any necessary fixes as TSQL scripts
 
 1. **Migration with downtime**
 
     List the content that will enable the learner to *Choose when to use migration with downtime*:
 
-    - Enabling objective
+    - Overview of the migration process
         - Information needed to accomplish the enabling objective
         - Information needed to accomplish the enabling objective
-    - Enabling objective
+    - Selecting downtime tolerance
         - Information needed to accomplish the enabling objective
         - Information needed to accomplish the enabling objective
     - Enabling objective
@@ -149,3 +156,9 @@ The following template has examples of setting up several of the resources neces
 https://github.com/Azure/azure-quickstart-templates/tree/master/101-azure-database-migration-service
 
 Content is based on the [SQL Server database migration to Azure SQL Database](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-migrate) article.
+
+Steps for creating a migration assessment can be found [here](https://docs.microsoft.com/en-us/sql/dma/dma-assesssqlonprem?view=sql-server-ver15).
+
+[Tutorial: Migrate SQL Server to a single database or pooled database in Azure SQL Database *offline* using DMS](https://docs.microsoft.com/en-us/azure/dms/tutorial-sql-server-to-azure-sql)
+
+[Tutorial: Migrate SQL Server to a single database or pooled database in Azure SQL Database *online* using DMS](https://docs.microsoft.com/en-us/azure/dms/tutorial-sql-server-azure-sql-online)
