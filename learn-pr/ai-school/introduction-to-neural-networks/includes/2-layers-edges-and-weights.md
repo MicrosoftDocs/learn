@@ -18,7 +18,7 @@ Gradient descent alters model predictions to decrease the error by using calculu
 
 Often you may have a category in your dataset you want to use as a feature – such as a products country of origin. To use a category as a feature you represent the category as a __one-hot vector__.
 
-![TBC if we keep in optional content](../media/32-ohv.png)
+![A table shows four different classes (cat, dog, bird, and rabbit) represented by four different vectors (lists). The first vector represents cats, and shows a '1' at the beginning of the list, followed by 3 '0's. The next vector, representing dogs, has a '1' in the second position of the list, with the other 3 positions filled with 0's. For birds, the '1' is in the 3rd position, with the rest of the positions are '0', and for rabbits the '1' is in the final position, with the rest of the positions as '0'.](../media/32-ohv.png)
 
 A one-hot vector is a vector (list) where each position in the list represents a different category. The vector is filled with 0’s and with one 1. In the example above we are representing 4 animals, where a 1 in the first position represents a cat, and a 1 in the fourth position represents a rabbit. Now your category is useable by a machine learning model.
 

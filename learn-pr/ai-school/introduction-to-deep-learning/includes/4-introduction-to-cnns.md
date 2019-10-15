@@ -26,13 +26,13 @@ Softmax is an activation function used in neural networks. CNNs commonly use sof
   
 As you can see above, Softmax outputs multiple probabilities adding up to 1. The probability that the data softmax has analyzed represents a lion is given as 0.98, whereas the next closest  is a wolf at 0.008 - we will predict the original image is a lion.  
 
-### Validation sets - DL
+### Validation sets
 
 It can be time consuming and computationally expensive to use a large training dataset only to find out at the end of training that overfitting has occurred and you have low accuracy on your test set. Validation sets are used alongside your training set *during training*, rather than test sets which are used after training.
 
 The validation set gives an unbiased result for your model to use to detect overfitting as it is occurring. If the validation sets error begins to increase by a certain amount, overfitting may be occurring, and training can be stopped. This process is called early stopping.
 
-![TBC if we keep in optional content](../media/28-ts-2.png)
+![Three rectangles are present, encompassing a whole dataset. The largest rectangle is labelled 'training set' and is joined to a smaller rectangle labelled 'validation set', separate from these two rectangles is the third rectangle labelled 'test set'.](../media/28-ts-2.png)
 
 The size of your validation set varies depending upon your application. A good starting point is to allocate 60% of your data to a training set, 20% to a validation set, and 20% to a test set.
 

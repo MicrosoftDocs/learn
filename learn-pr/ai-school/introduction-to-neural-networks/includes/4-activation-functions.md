@@ -24,20 +24,8 @@ If a neural network model is taking a long time to train, you can try SGD instea
 
 ### Forward propagation and backpropagation
 
-![TBC if we keep in optional content](../media/nn-fp-bp.gif)
+![Diagram of a neural network - showing three circles aligned vertically on the left-hand side of the image with the label "input layer" above them, four circles aligned vertically in the middle of the image, aligned vertically with the label "hidden layer" above them, and two circles on the right-hand side of the image aligned vertically with the label "output layer" above them. Lines then appear from left to right - linking the top circle of the input layer to the top circle of the hidden layer, then the top circle of the input layer to the second circle of the hidden layer, and so on, until all the circle in the input layer have a line connecting them to all circles in the middle, "hidden", layer. This then repeats for linking the "hidden" layer to the two circles on the "output" layer. So in the end all circles are connected to every circle to in the layers to the left and right of them. A title appears - 'Forward propagation', with red lines linking the top circle of the input layer to the top circle of the hidden layer, then the top circle of the input layer to the second circle of the hidden layer, and so on, until all the circle in the input layer have a line connecting them to all circles in the middle, "hidden", layer. This then repeats for linking the "hidden" layer to the two circles on the "output" layer. Then, the title changes to 'backwards propagation' and the red lines appearing again, but travelling backwards, from the output layer to the hidden layer, and then from the hidden layer to the input layer.](../media/nn-fp-bp.gif)
 
 Forward propagation and backpropagation are how neural networks optimize their weights and produce accurate output. Don't worry about the details - here’s a nice diagram showing how they work!
 
 That's it! Next up we'll do a programming exercise in Azure notebooks - advanced neural networks (don't worry, we'll easily walk you through it).
-
-### Learning rate
-
-Using calculus, gradient descent repeatedly changes the variables models use to decrease the error rate. How much the variables change each time is called the __learning rate__.  
-
-Learning rates are particularly important in complex models - if a learning rate is too small, the training will take a long time. If it is too large, it is not likely to ever train to be accurate.
-
-![TBC if we keep in optional content](../media/23-lr-02.png)
-
-In practice it’s a good idea to find an adequate learning rate, rather than spending time trying to find an optimal one. An adequate learning rate is large enough that your model is trained efficiently, but not so small that you cannot find a minima. It is perfectly acceptable to find an appropriate learning rate, or any other hyperparameter, through trial and error.
-
-![TBC if we keep in optional content](../media/23-lr-01.png)
