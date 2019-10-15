@@ -34,7 +34,7 @@ Tools such as Azure Active Directory Connect (AADC) are available for synchroniz
 
 Synchronization solutions are generally preferred to federation-based approaches. They typically incur less management overhead and do not require an always-available connection between directory services. This recommendation is echoed by the UK's National Cyber Security Centre<sup>[1][^1]</sup>.
 
-## Guest Accounts
+## Guest accounts
 
 Another challenge for IT is how to handle users who are external to the organization. These users often include contractors, consultants, and interns -- users who aren't a formal part of the organization but need access to internal resources as if they were.
 

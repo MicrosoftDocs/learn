@@ -4,19 +4,17 @@ With RBAC, users or groups of users are assigned one or more *roles*. Each role 
 
 A user's ability to access resources is controlled by:
 
-1. the roles assigned to them,
-1. the roles assigned to any groups the user belongs to, and
-1. the roles' resource scopes.
+- the roles assigned to them,
+- the roles assigned to any groups the user belongs to, and
+- the roles' resource scopes.
 
 A *resource scope* is a level in the cloud resource hierarchy. In Azure, for example, roles can apply to individual resources, resource groups, entire subscriptions (in which case the role's permissions apply to all resources created under a given subscription), or groups of subscriptions. By applying different roles to different scopes in the resource hierarchy, you get fine-grained control over who has permissions to do what within an organization.
 
 In the example in Figure 3.6, a set of resources is provisioned within a cloud subscription and organized into two resource groups. A user group named Engineering is assigned a role named "Reader" that permits group members to view all resources created under the subscription. At the same time, a user named Aurelia Dyer is assigned a "Contributor" role that permits her to modify any of the resources in resource group A, and an "Owner" role that lets her delete the Web App resource in the same resource group. Let's assume that Aurelia is a member of the Engineering group. These permissions mean she can:
 
-1. View all resources created under the subscription
-
-1. Modify the two resources in resource group A -- for example, change configuration settings in Web App 1 or alter the replication settings for Storage Account 1
-
-1. Delete the Web App 1 resource in resource group A
+- View all resources created under the subscription
+- Modify the two resources in resource group A -- for example, change configuration settings in Web App 1 or alter the replication settings for Storage Account 1
+- Delete the Web App 1 resource in resource group A
 
 While Aurelia can see the resources in resource group B, she can't modify or delete them.
 
