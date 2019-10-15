@@ -8,11 +8,12 @@ To fully test our one refrigerated truck device, it helps to break down the test
 
 In addition to this list, there are edge-cases you could also investigate, such as what happens when the truck's contents start to melt. However, as you have left this state up to chance in our simulation (note the use of random numbers in our code in the previous unit), you can perhaps leave this check out of our first round of testing.
 
-To begin the testing, make sure the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) app is up and running, and run the Node.js app (**Debug/Start without Debugging** from Visual Studio, or enter `node app.js` into a terminal in Visual Studio Code). A console screen should open, with the text: **Starting Truck number 1**.
+To begin the testing, with your [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) app open in a browser, run the Node.js app (**Debug/Start without Debugging** from Visual Studio, or enter `node app.js` into a terminal in Visual Studio Code). A console screen should open, with the text: **Starting Truck number 1**.
 
 ## Confirm the Node.js app connects to Azure IoT Central
 
-* If the next line on the console is **Device successfully connected to Azure IoT Central** you have made the connection. This line should be followed by some text verifying the settings and properties were sent successfully. If you do not get this message, it usually means either the IoT Central app is not running, or the connection string is not correct.
+1. If the second line on the console is **Device successfully connected to Azure IoT Central** you have made the connection.
+1. The "connected" line should be followed by some text verifying the settings and properties were sent successfully. If you do not get this message, it usually means either the IoT Central app is not running, or the connection string is not correct.
 
 ## Confirm the telemetry functions send data on the specified interval, and that data is picked up correctly by IoT Central
 
@@ -37,7 +38,7 @@ To begin the testing, make sure the [Azure IoT Central](https://apps.azureiotcen
 
 ## Confirm the command to send the truck to a specified customer works as expected
 
-1. Now for the best fun of all. Click the **Commands** title for the device. Enter a customer ID, say "6" ("0" through "9" are valid customer IDs), and click **Run**.
+1. Now for the best fun of all. Click the **Commands** title for the device. Enter a customer ID, say "1" ("0" through "9" are valid customer IDs), and click **Run**.
 
 1. In the console for the Node.js app, you should see **Number of points=**, followed by a list of lat/lon coordinates. If you see a message including the text "Access denied due to invalid subscription key", then check your subscription key to Azure Maps.
 
@@ -49,24 +50,24 @@ To begin the testing, make sure the [Azure IoT Central](https://apps.azureiotcen
 
 ## Confirm the command to recall the truck works as expected
 
-* When the truck returns to base, try issuing another delivery command, then a recall command to check the truck returns.
+1. When the truck returns to base, try issuing another delivery command. Choose another customer ID.
+1. Issue a recall command to check the truck returns.
 
 ## Check customer and conflict events are transmitted correctly
 
-1. Go to the table view for the device. Change the time range to the past hour. Click on **Show details** for any event that appears. There should be informational events showing the change of customer ID.
+1. Go to the table view for the device. Change the time range to the past hour. Click on **Show details** for any event that appears (you might have to scroll the table to the right). There should be informational events showing the change of customer ID.
 
 1. To test a conflict event, send a returning truck a command to deliver to another customer, or any other command that you know doesn't make sense.
 
   > [!TIP]
-  > To better see where a truck is at any one moment, change the **Location** settings to show **Latest**. For the full route, choose **History**.
+  > In the map view, to better see where a truck is at any one moment, change the **Location** settings to show **Latest**. For the full route, choose **History**.
   >
   > ![Screenshot showing how to change the map view mode to History or Latest](../media/refrigerated-trucks-history.png)
 
-## Update the dashboard
+## Check the dashboard
 
-1. Navigate to the dashboard you created a few units back (click **Dashboard** from the left-hand menu). Edit the dashboard so that it picks up the location, and KPI, from the real device, not the simulated device. Select the pencil icons to edit dashboard elements. Click **Done** when both elements are picking up real data.
-
-1. Give the dashboard a few seconds to sync up. Now, is it showing the values from the real device?
+1. Navigate to the dashboard you created a few units back (click **Dashboard**, to the right of **Rules**).
+1. Visually verify the map route, and contents temperature, are being updated.
 
 ## Next steps
 

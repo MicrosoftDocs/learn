@@ -2,7 +2,7 @@ In this unit, you are going to add Node.js code for a simulated refrigerated tru
 
 ## Create the Node.js app
 
-Using your preferred development environment, build a Node.js app. Visual Studio Code and Visual Studio examples are given below. Node.js is a platform for building server apps, based on JavaScript. All the JavaScript code you will need is provided below, so you do not need to be a JavaScript developer to get this app up and running.
+Using your preferred development environment, build a Node.js app. Visual Studio Code and Visual Studio examples are available in this unit. Node.js is a platform for building server apps, based on JavaScript. All the JavaScript code you will need is provided below, so you do not need to be a JavaScript developer to get this app up and running.
 
 ::: zone pivot="vscode"
 
@@ -46,7 +46,7 @@ Using your preferred development environment, build a Node.js app. Visual Studio
 In the blank app.js file, insert the following code. Each additional section of code should be appended to the end of the file, in the order listed here.
 
    > [!NOTE]
-   > If you would like to skip this unit, and load all of the code into your app, then download and copy all of the contents of app.js from [MicrosoftDocs/mslearn-your-first-iot-central-app](https://github.com/MicrosoftDocs/mslearn-your-first-iot-central-app) into the app.js file of your project. If you copy this code, then go straight to the next unit, and start testing!
+   > If you would like to skip this unit, and load all of the code into your app, then download and copy all of the contents of app.js from [MicrosoftDocs/mslearn-your-first-iot-central-app](https://github.com/MicrosoftDocs/mslearn-your-first-iot-central-app) into the app.js file of your project. If you copy this code (and replace the connection and subscription strings) then go straight to the next unit, and start testing!
 
 1. Add code to connect to Azure IoT Central and Azure Maps, replacing the `<your...>` strings for both technologies with your own strings. Do not change any other lines of code.
 

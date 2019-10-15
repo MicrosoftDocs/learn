@@ -5,7 +5,7 @@ In this unit, you will create a device template for a refrigerated truck. The Io
 
 ## Create a device template
 
-1. Within the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) portal, select **Device Templates** from the menu on the left-hand side.
+1. Within the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) portal (which you may still have open), select **Device Templates** from the menu on the left-hand side.
 
 1. On the right-hand side of the screen, click **+ New** to create a new template.
 
@@ -122,7 +122,7 @@ One possible event a device might trigger is a conflicting command. An example m
 
 A location is probably the most important, and yet one of the easiest measurements to add to a device template. Under the hood, it consists of a latitude, longitude, and an optional altitude, for the device.
 
-1. Add a location for our trucks as follows.
+1.  Use **+ New**, then click **Location**, and add a location for our trucks as follows.
 
     ![Screenshot showing how to create a truck location for the simulated device](../media/refrigerated-trucks-location.png)
 
@@ -190,6 +190,8 @@ For refrigerated trucks, there are two commands you should add: a command to del
     | Field Name | cmdGoTo |
     | Input Fields Display Name | Customer ID |
     | Input Fields Field Name | customerId |
+
+1. Click **Save**.
 
     > [!TIP]
     > You can use the corner icon in the lower-right corner of the box displaying the command, to stretch the bounding rectangle so that all elements of the command are displayed fully.

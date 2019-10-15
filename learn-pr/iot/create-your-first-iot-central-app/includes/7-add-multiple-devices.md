@@ -107,7 +107,7 @@ Exciting, isn't it? You now have five console windows open, with five simulated 
 
 1. In the **Devices** page of your IoT Central app, verify all devices are **Provisioned**.
 
-1. Double-click on each device in turn, then select **Commands**. In the **Go to customer** command, send Truck 1 to customer 1, Truck 2 to customer 2, and so on (to Truck 5 to customer 5).
+1. Double-click on each device in turn, then select **Commands**. In the **Go to customer** command, send Truck 1 to any customer, Truck 2 to a different customer, and so on to Truck 5.
 
 1. There is now a lot going on! Select each device in turn on the **Devices** page, and in the **Measurements** section, open up the map view. Make sure the eye icon of the **Location** is turned on. Each truck should now be on its way to a unique customer.
 

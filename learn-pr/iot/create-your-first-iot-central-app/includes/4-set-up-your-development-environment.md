@@ -10,13 +10,13 @@ The essential component for communication between a device and IoT Central is a 
 
     ![Screenshot showing how to create a real device, using the IoT Central portal](../media/refrigerated-trucks-new-real.png)
 
-1. Change the default **Device Name** to something readable ("Refrigerated Truck - 1"), leaving the **Device ID** as is, and then select **Create**.
+1. Leave the **Device ID** as is, and change the default **Device Name** to something readable ("Refrigerated Truck - 1"), and then select **Create**.
 
     ![Screenshot showing how to rename the real device to a friendly name](../media/refrigerated-trucks-new-real-create.png)
 
     When the device is created, you will notice the phrase "Missing Data" where the telemetry would normally be. Not until the device starts transmitting data will this phrase change.
 
-1. Click on the **Connect** button for the device, top right of your screen. Take your time and copy the **Scope ID**, **Device ID**, and **Primary Key**, to a text document, such as Notepad or TextEdit.
+1. Click on the **Connect** button for the device, top right of your screen. Take your time, and copy the **Scope ID**, **Device ID**, and **Primary Key**, to a text document, such as Notepad or TextEdit.
 
 1. Save the text file. You will be using these values after installing and running a few utilities to generate connection strings.
 
@@ -69,7 +69,7 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
     ![Screenshot showing how to locate the connection1.txt file in the Azure Cloud Shell](../media/refrigerated-trucks-connection1.png)
 
     > [!IMPORTANT]
-    > The last element of the connection string is the Primary Key. Verify that the connection string in connection1.txt ends with an exact copy of the Primary Key, and if not, correct the copy you have made of the correction string in your text document.
+    > The last element of the connection string is the Primary Key. Verify that the connection string in your text file ends with an exact copy of the Primary Key, and if not, correct the copy you have made of the correction string in your text document.
 
 1. The connection string you will use in the Node.js app (that follows in the next unit) starts with **HostName=**, so separate off this part of the string in your text document, so you have one line containing a string that looks similar to the following:
 
@@ -89,7 +89,7 @@ If you do not already have an Azure Maps account, you will need to create one.
 
 1. Follow the prompts to create a free account. When your account is set up, you will need the **Subscription Key** for the account. Copy and paste this key into your text document, with a note that it applies to Azure Maps.
 
-1. You can verify your Azure Maps subscription key will work. Save the following HTML to an .html file with any filename. Then, load the file in a web browser. Do you see a map of the world?
+1. You can (optionally) verify your Azure Maps subscription key works. Save the following HTML to an .html file (after replacing the **subscriptionKey** entry with your own key) with any filename. Then, load the file in a web browser. Do you see a map of the world?
 
 ```html
 <!DOCTYPE html>
