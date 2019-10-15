@@ -9,9 +9,7 @@ metadata:
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 azureSandbox: false
-
 durationInMinutes: 12
 content: |
   [!include[](includes/3-the-unique-value-of-azure.md)]
