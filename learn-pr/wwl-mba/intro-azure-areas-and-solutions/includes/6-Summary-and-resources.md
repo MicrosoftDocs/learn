@@ -1,24 +1,28 @@
-Azure enables digital transformation through flexible solutions that evolve along with your business. Whether you're designing for on-premises, cloud, or hybrid, Azure can help meet your digital transformation goals.
+Azure enables digital transformation through flexible solutions that evolve along with your business. Whether you're designing for on-premises, cloud, hybrid, 
+or Edge devices Azure can help meet your digital transformation goals.  Azure enables your to Invent with Purpose, and promises that you will enable you to be
+future ready, build on your terms, operate your hybrid environment seamlessly, and trust your cloud.
 
 Now that you have reviewed this module, you should be able to:
 
-- Explain why Azure.
-- Define the unique value that Azure provides.
-- Describe the Azure solutions.
+- Explore why Azure is a great platform for digital transformation.
+- Learn about the unique value that Azure provides.
+- Review the Azure solutions.
 
 ## Key takeaways
 
 Here are the two key takeaways from this module:
+
 :::row:::
-![Icon of key](../media/key-takeaway.png)
-  :::column span="1":::
-1. Wherever you are on your cloud adoption journey, Azure delivers unique value in four areas: productive, hybrid, intelligent, and trusted.
+![Icon of lightbulb](../media/Key-Takeaway.png)
+:::column:::
+1. Wherever you are on your cloud adoption journey, Azure delivers unique value in four areas: be future ready, build on your terms, operate hybrid seamlessly, and trust your cloud.
 1. Azure provides technologies and services across the following solution areas:
     - Apps and Infrastructure Migration and Modernization
     - Data Estate Migration and Modernization
     - Artificial intelligence (AI)
     - Internet of Things (IoT)
     - Modern business intelligence (BI)
+    - And many others
 :::column-end:::
 :::row-end:::
 
