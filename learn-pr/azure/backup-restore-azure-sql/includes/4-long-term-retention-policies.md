@@ -46,7 +46,7 @@ You can combine weekly, monthly, and yearly retention values to create a flexibl
 
 - `W=4, M=12, Y=10, WeekOfYear=1`
 
-This policy retains each weekly backup for 4 weeks. It also retains the first full backup of each month for 12 months. The first full backup taken in the first week of each year is retained for 10 years.
+    This policy retains each weekly backup for 4 weeks. It also retains the first full backup of each month for 12 months. The first full backup taken in the first week of each year is retained for 10 years.
 
 ## Setting retention policies in PowerShell
 
