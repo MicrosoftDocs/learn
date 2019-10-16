@@ -15,3 +15,11 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/5-exercise-implement-vnets.md)]
+tasks:
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.Network/virtualNetworks"
+      name: CoreServicesVnet
+  hint: "Make sure you have created all virtual networks in this exercise."
