@@ -3,7 +3,7 @@ uid: learn.design-ip-addressing-for-azure.3-azure-public-private-ip-addressing
 metadata:
   title: Public and private IP addressing in Azure
   description: Public and private IP addressing in Azure
-  ms.date: 10/16/2019
+  ms.date: 10/17/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial

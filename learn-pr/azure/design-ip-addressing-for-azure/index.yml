@@ -3,7 +3,7 @@ uid: learn.design-ip-addressing-for-azure
 metadata:
   title: Design an IP addressing schema for your Azure deployment
   description: In this module, you will learn how to plan and implement a IP addressing scheme for virtual networks and virtual machines in Azure.
-  ms.date: 10/16/2019
+  ms.date: 10/17/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
