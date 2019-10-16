@@ -15,5 +15,5 @@ In this module, you will:
 
 ## Prerequisites
 
-- Beginner-level experience with C#
+- Familiarity with REST and JSON
 - Familiarity with Azure Blob storage

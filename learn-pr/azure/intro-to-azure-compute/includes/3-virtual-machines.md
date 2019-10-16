@@ -9,10 +9,27 @@ Azure Virtual Machines (VMs) let you create and use virtual machines in the clou
 - The ability to run custom software, or
 - To use custom hosting configurations
 
+An Azure VM gives you the flexibility of virtualization without having to buy and maintain the physical hardware that runs the VM. However, you still need to maintain the VM—that is, configure, update, and maintain the software that runs on the VM.
+
   :::column-end:::
 :::row-end:::
 
 You can create and provision a VM in minutes when you select a pre-configured VM image. Selecting an image is one of the most important decisions you'll make when creating a VM. An image is a template used to create a VM. These templates already include an OS and often other software, like development tools or web hosting environments.
+
+### Examples of when to use virtual machines
+
+- During testing and development. VMs provide a quick and easy way to create different OS and application configurations. Test and development 
+  personnel can then easily delete the VMs when they no longer need them.
+- When running applications in the cloud. The ability to run certain applications in the public cloud as opposed to creating a traditional 
+  infrastructure to run them can provide substantial economic benefits. For example, if an application needs to handle fluctuations in demand, 
+  being able to shut down VMs when you don’t need them or quickly start them up to meet a suddenly increased demand means you pay only for the 
+  resources you use.
+- When extending your datacenter to the cloud. An organization can extend the capabilities of its own on-premises network by creating a virtual 
+  network in Azure and adding VMs to that virtual network. Applications like SharePoint can then run on an Azure VM instead of running locally, 
+  making it easier or less expensive to deploy than in an on-premises environment.
+- During disaster recovery. As with running certain types of applications in the cloud and extending an on-premises network to the cloud, you 
+  can get significant costs savings by using an IaaS-based approach to disaster recovery. If a primary datacenter fails, you can create VMs 
+  running on Azure to run your critical applications and then shut them down when the primary datacenter becomes operational again.
 
 ## Moving to the cloud with VMs
 
@@ -37,7 +54,7 @@ _Unplanned maintenance events_ involve a hardware failure in the data center, su
 With an availability set, you get:
 
 - Up to three fault domains that each have a server rack with dedicated power and network resources
-- Five logical update domains
+- Five logical update domains which then can be increased to a maximum of 20
 
 Your VMs are then sequentially placed across the fault and update domains. The following diagram shows an example where you have six VMs in an availability set distributed across the two fault domains and five update domains.
 

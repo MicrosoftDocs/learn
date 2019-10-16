@@ -23,6 +23,7 @@ levels:
 roles: 
 - administrator
 - solution-architect
+- security-engineer
 products: 
 - azure
 - azure-portal

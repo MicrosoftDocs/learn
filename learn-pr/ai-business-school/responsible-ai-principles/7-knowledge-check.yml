@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.responsible-ai-guiding-principles.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
-  title: Knowledge Check
+  title: Knowledge check
   description: A knowledge check for the identify guiding principles for responsible AI in your business module.
-  ms.date: 04/26/2019
+  ms.date: 10/01/2019
   author: RWortmanMorris
   ms.author: rawortma
   ms.topic: interactive-tutorial
@@ -30,45 +30,45 @@ quiz:
     - content: "AI has no level of accountability; thus, poor qualitative decisions can occur without any sense of recourse."
       isCorrect: false
       explanation: "Incorrect. Accountability is one of the six guiding principles set forth by Microsoft to guide AI deployment and use."
-  - content: "Which one of the Microsoft guiding principles for AI can be addressed by multi-party computation (MPC)?"
+  - content: "Why is explainability such an important aspect of responsible AI in the financial services industry?"
     choices:
-    - content: "Fairness"
+    - content: "Many customers are curious about the ways in which AI can enrich their lives."
       isCorrect: false
-      explanation: "Incorrect. Fairness involves the elimination of biasness or favoritism."
-    - content: "Privacy and Security"
+      explanation: "Incorrect. Explainability refers to customers understanding how AI operates, not necessarily the benefits it can unlock for them."
+    - content: "Many customers are concerned with the risks of AI or feel that it’s advancing too quickly, and they don’t understand the potential risks."
       isCorrect: true
-      explanation: "Correct. MPC allows a set of parties to share encrypted data and algorithms with one another while preserving input privacy at all times."
-    - content: "Inclusiveness"
+      explanation: "Correct. Being able to explain how AI systems function can mitigate customer uncertainty and build trust."
+    - content: "Customers will engage with AI-based services more regularly if they understand how those services operate."
       isCorrect: false
-      explanation: "Incorrect. While MPC does involve the sharing of data between multiple parties, its real intention is to enforce privacy of data."
-    - content: "Accountability"
+      explanation: "Incorrect. While this is true, the goal of explainable AI solutions is to mitigate customer uncertainty, not simply increase engagement with AI systems."
+    - content: "Financial service institutions are more likely to identify mistakes made by AI if they can articulate how it is operating."
       isCorrect: false
-      explanation: "Incorrect. Accountability concerns the establishment of industry standards, best practices, and review boards."
-  - content: "A company uses a decentralized organizational model when it comes to AI implementation. What might be a disadvantage of their decentralized model when compared to a centralized model?"
+      explanation: "Incorrect. While this is true, the goal of explainable AI solutions is to mitigate customer uncertainty, not simply identify mistakes."
+  - content: "Which two Microsoft guiding principles underpin the other four?"
     choices:
-    - content: "Their ability to rapidly innovate is extremely inhibited."
+    - content: "Privacy and security."
       isCorrect: false
-      explanation: "Incorrect. Decentralized models are often nimble and enable rapid innovation."
-    - content: "They can’t utilize the cross sharing of knowledge."
+      explanation: "Incorrect. While these guiding principles are very important, they are not essential for ensuring the effectiveness of the rest."
+    - content: "Reliability and safety"
+      isCorrect: false
+      explanation: "Incorrect. While these guiding principles are very important, they are not essential for ensuring the effectiveness of the rest."
+    - content: "Fairness and inclusivity."
+      isCorrect: false
+      explanation: "Incorrect. While these guiding principles are very important, they are not essential for ensuring the effectiveness of the rest."
+    - content: "Transparency and accountability."
       isCorrect: true
-      explanation: "Correct. The siloed nature of a decentralized model limits the sharing of knowledge throughout the organization."
-    - content: "They lack the ability to create standards at the grassroots level."
-      isCorrect: false
-      explanation: "Incorrect. Creating standards at the grassroots level is in fact a strength of the decentralized model."
-    - content: "The nature of decentralization can constrain innovation."
-      isCorrect: false
-      explanation: "Incorrect. It is the centralized model that can constrain innovation due to a top-down approach."
-  - content: "You want to implement a governance approach to AI within your organization that will incorporate a diverse array of outside experts and senior leaders from within the company. What will be part of your governance approach?"
+      explanation: "Correct. These guiding principles are foundational and are essential for ensuring the effectiveness of the rest."
+  - content: "An engineering team wants to develop a new tool that lets users convert their facial expressions into an animated creature. Before launching their tool, they plan on testing it extensively with users from around the world. Which guiding principle(s) is/are most relevant?"
     choices:
-    - content: "Ethics committee"
+    - content: "Fairness and inclusivity."
       isCorrect: true
-      explanation: "Correct. An ethics committee is made up of people within and outside of the organization."
-    - content: "Ethics office"
+      explanation: "Correct. The guiding principle of fairness dictates that AI systems behave the same way for everyone, and the guiding principle of inclusivity dictates that AI tools do not exclude people."
+    - content: "Reliability and safety."
       isCorrect: false
-      explanation: "Incorrect. An ethics office only consists of members within the organization."
-    - content: "First-party AI system"
+      explanation: "Incorrect. The guiding principles of reliability and safety are more relevant in scenarios where AI systems could cause harm."
+    - content: "Transparency."
       isCorrect: false
-      explanation: "Incorrect. A first-party AI systems is not a governance approach."
-    - content: "Third-party AI system"
+      explanation: "Incorrect. The guiding principle of transparency is essential, but not the most relevant here."
+    - content: "Privacy and security."
       isCorrect: false
-      explanation: "Incorrect. A third-party AI system is not a governance approach."
+      explanation: "Incorrect. The guiding principles of privacy and security should definitely be considerations in this scenario, but testing the tool on a diverse group of users does not address privacy and security concerns."

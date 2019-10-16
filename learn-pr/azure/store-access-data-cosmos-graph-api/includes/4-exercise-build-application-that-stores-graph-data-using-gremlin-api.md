@@ -1,7 +1,5 @@
 In this exercise, you'll create an Azure Cosmos DB Gremlin API account, database, and graph (container) using the Azure portal. You then build and run a console app using an open-source Gremlin driver.
 
-[!INCLUDE[](../../../includes/azure-sandbox-activate.md)]
-
 [!INCLUDE[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 ## Create an Azure Cosmos DB account
@@ -22,6 +20,7 @@ Start by creating the database in Azure, by adding an Azure Cosmos DB account th
    | Resource group | <rgn>[Sandbox resource group]</rgn> |
    | Account name | Use a globally unique value for your Azure Cosmos DB account. |
    | API | Gremlin (graph) |
+   | Apache Spark | None |
    | Location | Choose a region near you from the above list. |
    | Geo-Redundancy | Disable |
    | Multi-region Writes | Disable |

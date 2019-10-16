@@ -2,8 +2,6 @@ The university currently stores their data in a series of comma-delimited files.
 
 In this exercise, you'll create a database server and a single database by using the SQL Database service. Next, you'll create tables and import data into the database. Finally, you'll use the query editor and the `sqlcmd` utility to query the data.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Examine the existing comma-delimited data
 
 1. In the Azure Cloud Shell window on the right side of your screen, run the following command to download the data files and application code for the university system.

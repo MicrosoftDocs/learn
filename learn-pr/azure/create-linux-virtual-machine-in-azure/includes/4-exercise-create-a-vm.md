@@ -45,7 +45,7 @@ We'll start with the **Basics** section. These instructions are for the Sandbox 
 
 1. Ensure that the image is set to **Ubuntu Server 18.04 LTS**. You can open the drop-down list to see all the options available.
 
-1. Leave the **Size** field with the default of **DS2_v3** choice, which gives you two vCPUs with 8 GB of RAM.
+1. Leave the **Size** field with the default of **D2s v3** choice, which gives you two vCPUs with 8 GB of RAM.
 
 1. Moving on to the **Administrator account** section, for **Authentication type** select the **SSH public key** option.
 
