@@ -32,7 +32,7 @@ az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/continuousD
     "@type": "ContinuousDataExport",
     "displayName": "Export telemetry",
     "endpoint": {
-        "@type": "StorageEndpoint",
+        "type": "StorageEndpoint",
         "connectionString": "'$STORAGE_CONNECTION_STRING'",
         "name": "dataexport"
     },
@@ -68,7 +68,9 @@ az storage blob list --container-name=dataexport \
 --query '[].{BlobName:name}' -o table
 ```
 
-You see a blob that contains the device template definitions in the application and a sequence of blobs that contain telemetry. If you rerun the previous command, you see the number of telemetry blobs has increased.
+You may need to wait a few minutes before the first blob containing telemetry is available.
+
+You see a sequence of blobs that contain telemetry. If you rerun the previous command after a few minutes, you see the number of telemetry blobs has increased.
 
 Run the following commands to download the first telemetry blob and view its contents:
 

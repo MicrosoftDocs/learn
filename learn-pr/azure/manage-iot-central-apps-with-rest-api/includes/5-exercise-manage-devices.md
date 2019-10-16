@@ -14,81 +14,104 @@ Run the following command in the Cloud Shell to add a device template in your Io
 az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/models \
 --headers Authorization="$API_TOKEN" --body \
 '{
-  "@id": "urn:contoso:store_monitoring_device:1",
-  "@type": "DeviceModelDefinition",
+  "id": "urn:contoso:store_monitoring_device:1",
+  "types": [
+    "DeviceModel"
+  ],
   "displayName": "Store monitoring device",
   "capabilityModel": {
-      "@id": "urn:contoso:store_monitor_dcm:1",
-      "@type": "CapabilityModel",
-      "displayName": "Environment Sensor Capability Model",
-      "implements": [
-        {
-              "@id": "urn:contoso:store_monitor:sensor:1",
-              "@type": "InterfaceInstance",
-              "name": "sensor",
-              "schema": {
-                  "@id": "urn:contoso:EnvironmentalSensor_api:1",
-                  "@type": "Interface",
-                  "displayName": "Environmental Sensor",
-                  "contents": [
-                    {
-                          "@type": "Telemetry",
-                          "description": "Current temperature on the device",
-                          "displayName": "Temperature",
-                          "name": "temp",
-                          "schema": "double",
-                          "unit": "Units/Temperature/fahrenheit"
-                      },
-                      {
-                          "@type": "Telemetry",
-                          "description": "Current humidity on the device",
-                          "displayName": "Humidity",
-                          "name": "humid",
-                          "schema": "double",
-                          "unit": "Units/Humidity/percent"
-                      },
-                      {
-                          "@type": "Property",
-                          "description": "The brightness level for the light on the device. Can be specified as 1 (high), 2 (medium), 3 (low)",
-                          "displayName": "Brightness Level",
-                          "name": "brightness",
-                          "writable": true,
-                          "schema": "long"
-                      },
-                      {
-                          "@type": "Command",
-                          "commandType": "synchronous",
-                          "comment": "This command reboots the device after delay seconds.",
-                          "name": "reboot",
-                          "request": {
-                            "@type": "SchemaField",
-                            "name": "delay",
-                            "schema": "long"
-                          }
-                      }
-                  ]
-              }
-        }
+    "@id": "urn:contoso:store_monitor_dcm:1",
+    "@type": [
+      "CapabilityModel"
     ],
-      "contents": []
+    "displayName": "Environment Sensor Capability Model",
+    "contents": [],
+    "implements": [
+      {
+        "@id": "urn:contoso:store_monitor:sensor:1",
+        "@type": [
+          "InterfaceInstance"
+        ],
+        "displayName": "Environmental Sensor",
+        "name": "sensor",
+        "schema": {
+          "@id": "urn:contoso:EnvironmentalSensor_api:1",
+          "@type": [
+            "Interface"
+          ],
+          "contents": [
+            {
+              "@type": [
+                "Telemetry"
+              ],
+              "description": "Current temperature on the device",
+              "displayName": "Temperature",
+              "name": "temp",
+              "schema": "double",
+              "unit": "Units/Temperature/fahrenheit"
+            },
+            {
+              "@type": [
+                "Telemetry"
+              ],
+              "description": "Current humidity on the device",
+              "displayName": "Humidity",
+              "name": "humid",
+              "schema": "double",
+              "unit": "Units/Humidity/percent"
+            },
+            {
+              "@type": [
+                "Property"
+              ],
+              "description": "The brightness level for the light on the device. Can be specified as 1 (high), 2 (medium), 3 (low)",
+              "displayName": "Brightness Level",
+              "name": "brightness",
+              "writable": true,
+              "schema": "long"
+            },
+            {
+              "@type": [
+                "Command"
+              ],
+              "commandType": "synchronous",
+              "description": "This command reboots the device after delay seconds.",
+              "displayName": "Reboot device",
+              "name": "reboot",
+              "request": {
+                "@type": [
+                  "SchemaField"
+                ],
+                "displayName": "Seconds delay before reboot",
+                "name": "delay",
+                "schema": "long"
+              }
+            }
+          ]
+        }
+      }
+    ]
   },
   "solutionModel": {
-      "@type": "SolutionModel",
-      "cloudProperties": [
-        {
-              "@type": "CloudProperty",
-              "displayName": "Store Name",
-              "name": "StoreName",
-              "schema": "string",
-              "valueDetail": {
-                  "@type": "ValueDetail/StringValueDetail"
-              }
-          }
-      ],
-      "initialValues": [],
-      "overrides": []
-  },
-  "@context": "https://apps.azureiotcentral.com/api/preview/context/ModelDefinition.json"
+    "@type": [
+      "SolutionModel"
+    ],
+    "cloudProperties": [
+      {
+        "@type": [
+          "CloudProperty"
+        ],
+        "displayName": "Store Name",
+        "name": "storename",
+        "schema": "string",
+        "valueDetail": {
+          "@type": "ValueDetail/StringValueDetail"
+        }
+      }
+    ],
+    "initialValues": [],
+    "overrides": []
+  }
 }'
 ```
 
@@ -106,36 +129,36 @@ Run the following commands in the Cloud Shell to add three simulated devices usi
 az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/devices \
 --headers Authorization="$API_TOKEN" --body \
 '{
-  "@type": "Device",
   "instanceOf": "urn:contoso:store_monitoring_device:1",
   "simulated": true,
-  "deviceId": "storemon-sim-001",
-  "displayName": "Simulated store monitoring device - 001"
+  "id": "storemon-sim-001",
+  "displayName": "Simulated store monitoring device - 001",
+  "approved": true
 }'
 
 az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/devices \
 --headers Authorization="$API_TOKEN" --body \
 '{
-  "@type": "Device",
   "instanceOf": "urn:contoso:store_monitoring_device:1",
   "simulated": true,
-  "deviceId": "storemon-sim-002",
-  "displayName": "Simulated store monitoring device - 002"
+  "id": "storemon-sim-002",
+  "displayName": "Simulated store monitoring device - 002",
+  "approved": true
 }'
 
 az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/devices \
 --headers Authorization="$API_TOKEN" --body \
 '{
-  "@type": "Device",
   "instanceOf": "urn:contoso:store_monitoring_device:1",
   "simulated": true,
-  "deviceId": "storemon-sim-003",
-  "displayName": "Simulated store monitoring device - 003"
+  "id": "storemon-sim-003",
+  "displayName": "Simulated store monitoring device - 003",
+  "approved": true
 }'
 
 az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/devices \
 --headers Authorization="$API_TOKEN" \
---query 'value[].{ID:deviceId, Type:instanceOf, Simulated:simulated}' -o table
+--query 'value[].{ID:id, Type:instanceOf, Simulated:simulated}' -o table
 ```
 
 ## Add real devices
@@ -146,36 +169,36 @@ Run the following commands in the Cloud Shell to add three real devices using th
 az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/devices \
 --headers Authorization="$API_TOKEN" --body \
 '{
-  "@type": "Device",
   "instanceOf": "urn:contoso:store_monitoring_device:1",
   "simulated": false,
-  "deviceId": "storemon-real-001",
-  "displayName": "Real store monitoring device - 001"
+  "id": "storemon-real-001",
+  "displayName": "Real store monitoring device - 001",
+  "approved": true
 }'
 
 az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/devices \
 --headers Authorization="$API_TOKEN" --body \
 '{
-  "@type": "Device",
   "instanceOf": "urn:contoso:store_monitoring_device:1",
   "simulated": false,
-  "deviceId": "storemon-real-002",
-  "displayName": "Real store monitoring device - 002"
+  "id": "storemon-real-002",
+  "displayName": "Real store monitoring device - 002",
+  "approved": true
 }'
 
 az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/devices \
 --headers Authorization="$API_TOKEN" --body \
 '{
-  "@type": "Device",
   "instanceOf": "urn:contoso:store_monitoring_device:1",
   "simulated": false,
-  "deviceId": "storemon-real-003",
-  "displayName": "Real store monitoring device - 003"
+  "id": "storemon-real-003",
+  "displayName": "Real store monitoring device - 003",
+  "approved": true
 }'
 
 az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/devices \
 --headers Authorization="$API_TOKEN" \
---query 'value[].{ID:deviceId, Type:instanceOf, Simulated:simulated}' -o table
+--query 'value[].{ID:id, Type:instanceOf, Simulated:simulated}' -o table
 ```
 
 If you navigate to your application in your browser, you can see the devices have been added to the application:
