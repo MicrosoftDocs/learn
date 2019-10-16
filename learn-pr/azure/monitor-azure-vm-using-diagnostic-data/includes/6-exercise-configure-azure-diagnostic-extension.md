@@ -32,7 +32,7 @@ You'll use the portal to enable guest-level metric monitoring of the VM. When yo
 
     ![Screenshot showing changing the sample rate to 60 seconds](../media/6-change-sample-rate.png)
 
-1. The metrics now show as custom, with each metric set to sample every 60 seconds.
+   It may take a minute to save your update.
 
 ## Create a custom KPI dashboard
 
@@ -50,15 +50,14 @@ You'll use the portal to enable guest-level metric monitoring of the VM. When yo
 1. In the **Pin to another dashboard** pane, select **Create new**.
 1. Use the following values:
 
+    ![Screenshot that shows the Pin to another dashboard pane filled out](../media/6-create-a-dashboard.png)
+
    |Field  |Value  |
    |---------|---------|
    |Dashboard name     |KPI Dashboard         |
    |Subscription   |   Concierge Subscription    |
    |Publish to the dashboard resource group   |    Deselect the check box     |
    |Resource group     |  <rgn>[sandbox resource group name]</rgn>       |
-
-    
-    ![Screenshot that shows the Pin to another dashboard pane filled out](../media/6-create-a-dashboard.png)
 
 1. Select **Apply**.
 1. Close the pane.
@@ -76,8 +75,11 @@ You'll use the portal to enable guest-level metric monitoring of the VM. When yo
 
 1. Select the **Finish editing** check mark.
 1. At the top of the chart, select **Pin to dashboard** > **Select another dashboard**.
-1. In the Pin to another dashboard pane, expand **Browse dashboards**.
+1. Expand **Browse dashboards**.
 1. Under **Dashboard**, select the **KPI Dashboard**.
+
+    ![Screenshot that shows KPI Dashboard selected on Select existing tab](../media/6-select-existing-dashboard.png)
+
 1. Select **Apply** and close the pane.
 
 ### Add a CPU usage graph
@@ -103,6 +105,6 @@ You'll use the portal to enable guest-level metric monitoring of the VM. When yo
 
     ![Screenshot showing the dashboard selection dropdown](../media/6-view-dashboard.png)
 
-1. Explore the dashboard, changing the range of the graphs.
+1. Explore the dashboard. Try changing the **UTC Time** range to **Past 30 minutes**.
 
     ![Screenshot showing the new KPI dashboard with the three graphs created above](../media/6-explore-kpi-dashboard.png)

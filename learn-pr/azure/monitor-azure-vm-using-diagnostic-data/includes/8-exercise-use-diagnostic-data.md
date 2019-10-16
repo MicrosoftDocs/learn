@@ -14,34 +14,50 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 1. On the left, scroll down and select **Metrics**.
 1. At the top, select **New alert rule**.
 
+    ![Screenshot that shows new alert rule button on the metrics pane](../media/8-metrics-new-alert-rule-button.png)
+
 ### Select the resource
 
 1. Under **RESOURCE**, select the **Select** button.
 1. In the **Filter by resource type** field, select **Virtual machines**.
 1. In the **Resource** list below, select the **monitored-linux-vm** VM.
+
+    ![Screenshot that shows the VM selected on the Select a resource pane](../media/8-alert-select-a-resource-vm.png)
+
 1. Select **Done**.
 
 ### Create the condition
 
 1. Under **CONDITION**, select **Add**.
 1. Under **SIGNAL NAME**, select **Percentage CPU**.
+
+    ![Screenshot that shows Percentage CPU selected under the Signal name field](../media/8-configure-signal-logic-percentage-cpu.png)
+
 1. Under **Alert logic**, for **Operator** select **Greater than or equal to**.
 1. In the Threshold value field, enter **90**.
+
+    ![Screenshot that shows Alert logic section filled out](../media/8-alert-logic.png)
+
 1. Select **Done**.
 
 ### Add an action
 
 1. Under **ACTIONS**, select **Create action group**.
 
+    ![Screenshot that shows Create action group button highlighted](../media/8-create-action-group.png)
 
 1. Enter the following values:
 
+   ![Screenshot that shows Add action group pane filled out ](../media/8-add-action-group-pane.png)
+
     |Field  |Value  |
     |---|---|
-    |Action group name | **Email Alerts**          |
-    |Short name        | **Emails**                |
-    |ACTION NAME       | **High CPU Usage**        |
-    |ACTION TYPE       | **Email/SMS/Push/Voice**  |
+    |Action group name | Email alerts         |
+    |Short name        | Emails              |
+    |Subscription       | Concierge Subscription               |
+    |Resource group       | <rgn>[sandbox resource group name]</rgn>                |
+    |Action name     | High CPU usage       |
+    |Action type      | Email/SMS/Push/Voice |
 
 1. In the **Email/SMS/Push/Voice** pane, select **Email**, and in the field enter the email address to receive the notification.
   
@@ -50,7 +66,14 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 1. Select **OK**.
 1. On the **Add action group** pane, select **OK**.
 1. Under **ACTIONS**, select **Select action group**.
-1. Under **ACTION GROUP NAME**, select **Email Alerts**, then select the **Select** button.
+
+   ![Screenshot that shows Select action group button on the Create rule pane](../media/8-select-action-group-button.png)
+
+1. Under **Action group name**, select **Email alerts**.
+
+   ![Screenshot that shows the Email alert action group selected](../media/8-attach-action-group-to-rule.png)
+
+1. Click the **Select** button.
 1. Scroll down, and in the **Alert rule name**, enter **Web server CPU running hot**.
 1. In **Description**, enter **An email alert that will notify when the CPU is over 90%**.
 1. Select **Create alert rule**.

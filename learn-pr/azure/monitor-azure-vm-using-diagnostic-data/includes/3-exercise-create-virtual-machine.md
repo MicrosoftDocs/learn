@@ -40,22 +40,23 @@ In this exercise, you'll deploy a Linux virtual machine and enable boot diagnost
         --size Standard_B1s \
         --location eastus2 \
         --vnet-name band-vnet \
-        --admin-username azureuser
-        --generate-ssh-keys \
+        --admin-username azureuser \
         --boot-diagnostics-storage $STORAGE \
-        --resource-group <rgn>[sandbox resource group name]</rgn>
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --generate-ssh-keys
     ```
+
+   It may take a couple of minutes to create the VM.
 
 ## View host-level metrics
 
 1. Go to the [Azure portal](https://portal.azure.com/) and sign in with the account you used to enable the sandbox. 
 1. In the navigation on the left, select **All resources**.
 1. Select the **monitored-linux-vm** virtual machine you created.
-
-    ![Screenshot of the metrics page for a VM](../media/3-view-host-level-metrics.png)
-
 1. Scroll down, and under **Monitoring**, select **Metrics**.
 1. Select the following values:
+
+    ![Screenshot of the metrics page for a VM](../media/3-view-host-level-metrics.png)
 
    |Field     |Value |
    |---------|---------|
@@ -73,7 +74,7 @@ In this exercise, you'll deploy a Linux virtual machine and enable boot diagnost
    |AGGREGATION    |    Avg     |  
 
 1. Select the **Finish editing** check mark.
-1. You should now have the following graph.
+1. You should now have a graph that looks something like the following:
 
     ![Screenshot showing a graph of CPU usage and inbound traffic](../media/3-metric-graph.png)
 
