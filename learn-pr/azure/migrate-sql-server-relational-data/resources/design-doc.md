@@ -75,12 +75,15 @@ Identify the subtasks of *Migrate your relational data to Azure SQL Database*
     - Tools and services that are used
         - Data Migration Assistant
         - Azure Database Migration Service
+    - Migration with downtime details
+    - Migration with transactional replication details
 
     **Knowledge check**
 
     What types of questions will test *learning objective*?
 
     - Why is the post-migration stage an important part of a successful migration plan?
+    - Which migration strategy is the best choice for a given scenario?
 
 1. **Exercise - Assess database with the Data Migration Assistant**
 
@@ -106,22 +109,6 @@ Identify the subtasks of *Migrate your relational data to Azure SQL Database*
     - Selecting downtime tolerance
         - Migrate offline
         - Migrate online
-
-    **Knowledge check**
-
-    What types of questions will test *learning objective*?
-
-    - Question type
-    - Question type
-
-1. **Migration with transactional replication**
-
-    List the content that will enable the learner to *Choose when to use transactional replication*:
-
-    - Overview of the migration process
-        - Set up distribution
-        - Create publication
-        - Create subscription
 
     **Knowledge check**
 
