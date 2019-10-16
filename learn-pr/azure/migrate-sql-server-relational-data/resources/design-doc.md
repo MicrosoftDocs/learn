@@ -125,7 +125,7 @@ Identify the subtasks of *Migrate your relational data to Azure SQL Database*
 
     How did you solve the problem in the initial scenario with the knowledge learned in the module?
 
-    *Add your summary [(Guidance)](id-guidance-module-summary-unit.md)*
+    *Add your summary [(Guidance)](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit)*
 
 ## Notes
 
