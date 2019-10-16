@@ -80,7 +80,7 @@ Identify the subtasks of *Migrate your relational data to Azure SQL Database*
 
     **Knowledge check**
 
-    What types of questions will test *learning objective*?
+    What types of questions will test *Describe the elements of the migration process*?
 
     - Why is the post-migration stage an important part of a successful migration plan?
     - Which migration strategy is the best choice for a given scenario?
@@ -112,18 +112,14 @@ Identify the subtasks of *Migrate your relational data to Azure SQL Database*
 
     **Knowledge check**
 
-    What types of questions will test *learning objective*?
+    What types of questions will test *Choose when to use migration with downtime*?
 
-    - Question type
-    - Question type
+    - Which migration downtime option is the best choice for a given scenario?
+    - Which service is used to perform the data migration?
 
 1. **Exercise - Migrate a database with downtime**
 
-    List the steps which apply the learning content from previous unit:
-
-    1. Step
-    1. Step
-    1. Step
+    Source exercise steps from [Tutorial: Migrate SQL Server to a single database or pooled database in Azure SQL Database *offline* using DMS](https://docs.microsoft.com/en-us/azure/dms/tutorial-sql-server-to-azure-sql)
 
 1. **Summary**
 
@@ -135,14 +131,13 @@ Identify the subtasks of *Migrate your relational data to Azure SQL Database*
 
 Much of the detail in unit 3 is based on the graphic from https://datamigration.microsoft.com/, click on *Migration overview* at the top of the page.
 
-The following template has examples of setting up several of the resources necessary for this exercise, though shouldn't be used on as it's currently presented. We may need to use the SQL2014SP2/WS2012R2 marketplace image to ensure that the deployment happens in a timely manner. This took about 8 minutes in a trial run in my own subscription.
-
-https://github.com/Azure/azure-quickstart-templates/tree/master/101-azure-database-migration-service
+[This template](https://github.com/Azure/azure-quickstart-templates/tree/master/101-azure-database-migration-service) has examples of setting up several of the resources necessary for this exercise, though shouldn't be used on as it's currently presented. We may need to use the SQL2014SP2/WS2012R2 marketplace image to ensure that the deployment happens in a timely manner. This took about 8 minutes in a trial run in my own subscription.
 
 Content is based on the [SQL Server database migration to Azure SQL Database](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-single-database-migrate) article.
 
 Steps for creating a migration assessment can be found [here](https://docs.microsoft.com/en-us/sql/dma/dma-assesssqlonprem?view=sql-server-ver15).
 
-[Tutorial: Migrate SQL Server to a single database or pooled database in Azure SQL Database *offline* using DMS](https://docs.microsoft.com/en-us/azure/dms/tutorial-sql-server-to-azure-sql)
+Detailed tutorials to source the exercise steps from:
 
-[Tutorial: Migrate SQL Server to a single database or pooled database in Azure SQL Database *online* using DMS](https://docs.microsoft.com/en-us/azure/dms/tutorial-sql-server-azure-sql-online)
+- [Tutorial: Migrate SQL Server to a single database or pooled database in Azure SQL Database *offline* using DMS](https://docs.microsoft.com/en-us/azure/dms/tutorial-sql-server-to-azure-sql)
+- [Tutorial: Migrate SQL Server to a single database or pooled database in Azure SQL Database *online* using DMS](https://docs.microsoft.com/en-us/azure/dms/tutorial-sql-server-azure-sql-online)
