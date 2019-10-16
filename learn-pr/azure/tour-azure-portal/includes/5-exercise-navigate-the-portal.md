@@ -56,7 +56,7 @@ Finally, there are a variety of management and programming tools included in the
 
 ![Icon representing the settings panel](../media/5-settings-icon.png)
 
-1. Click the **Settings** (cog) icon to open the **Portal settings** pane.
+1. Click the **Settings** (cog) icon to open the **Portal settings** pane, showing the **General** settings by default.
 
 1. Drop down the **Log me out when inactive** setting, and select **After one hour**.
 
@@ -64,13 +64,11 @@ Finally, there are a variety of management and programming tools included in the
 
 1. Under **High contrast theme**, try the three different options.
 
-1. Click **Enable pop-up notifications**. This means notifications will not appear as pop-up "toast"-style notifications, but will still show up in the Notifications (bell) icon as always.
+1. Click **Enable pop-up notifications**. When this is checked, notifications will appear as pop-up "toast"-style notifications. They will still show up in the Notifications (bell) icon as well.
 
-1. Note the **Change the theme by double-clicking the dashboard** setting, enabled by default. When enabled, you can use the mouse to cycle through the various color themes without opening this Settings menu by double-clicking the left mouse button in the Dashboard view's background area. Disable this option to avoid accidentally changing your color theme.
+1. Click the **Settings** (cog) icon in the top menu bar and switch to the **Language & region** settings. Select **Language** and pick **Español**, and then click the **Apply** button. If a **Translate this page** dialog box appears, close the box. Note that the whole portal is now in Spanish.
 
-1. Click the **Settings** (cog) icon in the top menu bar and, under **Language**, select **Español**, and then click the **Apply** button. If a **Translate this page** dialog box appears, close the box. Note that the whole portal is now in Spanish.
-
-1. Click the **Settings** (cog) icon in the top menu bar and, under **Idioma**, select **English**. Click the **Aplicar** button. The portal returns to English.
+1. To revert back to English, click the **Settings** (cog) icon in the top menu bar and switch to the **Idioma y región** settings. Select **Idioma** and pick **English**. Click the **Aplicar** button. The portal returns to English.
 
 ## Feedback blade
 
@@ -88,9 +86,9 @@ Finally, there are a variety of management and programming tools included in the
 
 1. Click the **Help** (`?`) icon to show the **Help** blade.
 
-1. Click the **Help + Support** button.
+1. Click the **Help + support** button.
 
-1. In the **Help + Support** blade, under **Support**, click **New support request**. To create a new support request, you would fill in the information in each of the following sections, and then click **Create** to lodge the issue.
+1. In the **Help + support** blade, under **Support**, click **New support request**. To create a new support request, you would fill in the information in each of the following sections, and then click **Create** to lodge the issue.
 
     - **Basics:** the issue type
     - **Problem:** severity of the problem, a summary and description, and any additional information
@@ -123,7 +121,7 @@ Finally, there are a variety of management and programming tools included in the
 
 1. Click the **Directory + Subscription** (book and filter) icon to show the **Directory + subscription** blade.  
 
-    This is where you can switch between multiple subscriptions or directories. You should see the Concierge subscription here, and if you have an Azure account tied to the same email address, your own subscription.
+    This is where you can switch between multiple subscriptions or directories. You should see that you are in the Concierge Subscription of the Microsoft Learn Sandbox directory here. If you have other Azure directories tied to the same email address, those subscriptions will be available as well.
 
     There is also a link to learn more about directories and subscriptions.
 

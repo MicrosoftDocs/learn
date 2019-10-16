@@ -53,49 +53,49 @@ If you click **Download**, the current dashboard downloads the JSON code as a fi
 
 ## Edit a dashboard using the portal
 
-Although you can edit a dashboard by downloading the JSON file, changing values in the file, and uploading the file back to Azure, that approach isn't intuitive for designing a user interface. To use the GUI to configure your current dashboard you can enter edit mode in several ways:
+Although you can edit a dashboard by downloading the JSON file, changing values in the file, and uploading the file back to Azure, you may prefer a graphical approach to designing the user interface. To use the GUI to configure your current dashboard you can switch to editing mode in several ways:
 
-1. Click the **Edit** (pencil icon) button.
-1. Right-click on the dashboard background area and select **Edit**.
-1. Right-click on a tile and a menu will appear with edit options.
-1. Hover over a tile on the dashboard - a `...` menu will appear on the top/right corner with edit options.
+* Click the **Edit** (pencil icon) button.
+* Right-click on the dashboard background area and select **Edit**.
+* Right-click on a tile and a menu will appear with edit options.
+* Hover over a tile on the dashboard - a `...` menu will appear on the top/right corner with a **Customize** option.
 
-The dashboard switches to edit mode.
+The dashboard will switch to edit mode.
 
 ![Screenshot showing the dashboard in the Edit mode](../media/6-edit-dashboard.png)
 
-On the left-hand side appears the Tile Gallery, with several possible tiles. You can filter the Tile Gallery by category and resource type.
+On the left-hand side appears the **Tile Gallery**, with several possible tiles. You can filter the Tile Gallery by category and resource type.
 
 Adding tiles is as easy as selecting the tile from the list on the left and then dragging it to the work area. You can then move each tile about, resize it, or change the data that it displays.
 
 > [!TIP]
-> One cool feature a lot of people are unaware of is that you can take elements on child blades and put them on your dashboard. Just hover over the item and look for the `...` tile edit menu - this will have a "Pin to Dashboard" option which lets you quickly grab a tile from a service and put it onto the dashboard.
+> One cool feature is that you can take elements on child blades and put them on your dashboard. Just hover over the item and look for the `...` tile edit menu - this will have a "Pin to Dashboard" option which lets you quickly grab a tile from a service and put it onto the dashboard.
 
 The work area in edit mode is divided into squares. Each tile must occupy at least one square, and tiles will snap to the nearest largest set of tile dividers. Any overlapping tiles are moved out of the way. When you make a tile smaller, the surrounding tiles will move back up against it.
 
-#### Change tile sizes
+### Change tile sizes
 
 Some tiles have a set size, and you can edit their size only programmatically. However, you can edit tiles with a gray bottom right-hand corner by dragging the corner indicator.
 
 ![Screenshot of a tile with the corner indicator highlighted.](../media/6-resizable-tile.png)
 
-Alternatively, right-click the context menu and specify the size you want.
+Alternatively, right-click into the contextual menu and specify the size you want.
 
 ![Screenshot of the tile with the context menu displaying different sizing options.](../media/6-tile-size.png)
 
 To create your dashboard, pull tiles from the Tile Gallery onto the workspace and then rearrange them.
 
-#### Change tile settings
+### Change tile settings
 
 Some tiles have editable settings. For example, with the clock tile, when you drag it onto the workspace, it opens the **Edit clock** tile. You can then set the time zone, which it displays, and also set whether it displays in 12- or 24-hour format.
 
 ![Screenshot showing the Edit clock settings for the clock tile.](../media/6-edit-clock.png)
 
-For multi-national or transcontinental companies, you can add clocks, each in a different time zone.
+For multi-national or transcontinental companies, you can add several clocks, each in a different time zone.
 
-#### Accepting your edits
+### Accepting your edits
 
-When you have arranged the tiles as you want them, either click **Done customizing**, or right-click and then click **Done customizing**.
+When you have arranged the tiles as you want them, either click **Done customizing** or right-click and then click **Done customizing**.
 
 ## Edit a dashboard by changing the JSON file
 

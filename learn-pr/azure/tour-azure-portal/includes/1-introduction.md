@@ -3,7 +3,9 @@ Azure is a cloud platform that provides the compute, storage, and networking res
 Here you will learn how to sign in to the portal and navigate the portal interface. You will also learn how to customize the dashboard, so it is convenient to locate and monitor your most essential services.
 
 ## Learning objectives
+
 In this module, you will:
+
 - Learn about Azure management options
 - Navigate the Azure portal
 - Customize the dashboard
