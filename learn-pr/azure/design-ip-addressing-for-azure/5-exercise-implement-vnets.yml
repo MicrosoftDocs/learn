@@ -22,4 +22,18 @@ tasks:
     resource:
       type: "Microsoft.Network/virtualNetworks"
       name: CoreServicesVnet
-  hint: "Make sure you have created all virtual networks in this exercise."
+  hint: "Make sure you have created the CoreServicesVnet"
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.Network/virtualNetworks"
+      name: ManufacturingVnet
+  hint: "Make sure you have created the CoreServicesVnet"
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.Network/virtualNetworks"
+      name: ResearchVnet
+  hint: "Make sure you have created the CoreServicesVnet"
