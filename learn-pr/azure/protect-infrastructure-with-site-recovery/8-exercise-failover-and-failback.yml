@@ -8,7 +8,6 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - Failover and failback using Azure Site Recovery
 durationInMinutes: 10
 content: |

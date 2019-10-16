@@ -10,7 +10,7 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the por
 > This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to use backup virtual machines with Azure Backup.
 > If you want to complete this exercise, but you don't have an Azure subscription, or prefer not to use your own account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
-## Create a Recovery Services Vault
+## Create a recovery services vault
 
 1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with your own credentials.
 1. Select **+ Create a resource** option on the top-left hand side of the portal.

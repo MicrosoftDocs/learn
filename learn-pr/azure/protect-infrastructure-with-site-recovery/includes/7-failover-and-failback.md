@@ -4,7 +4,7 @@ You would now like to run through a full failover of a protected VM to a seconda
 
 In this unit, you'll explore failover and failback, how to reprotect a failed over VM, and monitor the status of the reprotection.
 
-## What is failover
+## What is failover?
 
 ![Diagram showing an unavailable source region, and a new target environment being failed over to](../media/2-failover.png)
 
@@ -16,7 +16,7 @@ There's another advantage to shutting down the source VMs. Using a shutdown VM r
 
 Once the machines have 
 
-## What is reprotection and why is it important
+## What is reprotection and why is it important?
 
 When a VM is failed over, the replication that was being performed by Azure Site Recovery is no longer happening. To start protecting the failed over VM, you have to re-enable the protection. As you already have the infrastructure, in a different region, you can start replication back to the source region. Reprotection enables Azure Site Recovery to start replicating your new target environment back to the source environment where it started.
 
@@ -28,7 +28,7 @@ Reprotecting takes anywhere between 45 minutes to 2 hours dependent on the size 
 
 The above image shows the status of the protected item, with the percentage synchronized highlighted.
 
-## What is failback
+## What is failback?
 
 Failback is the reverse of a failover. It's where a completed failover to a secondary region has been committed and is now the production environment. Reprotection has completed for the failed over environment, and later the source environment is now its replica. In a failback scenario, Azure Site Recovery will fail over back to the source VMs.
 

@@ -4,7 +4,7 @@ When you have finished setting up Azure Site Recovery, and your infrastructure i
 
 In this unit, you'll learn about Azure Site Recovery disaster drills. What you need to consider, and how to run a test to check the configuration is correct.
 
-## What is a disaster recovery drill
+## What is a disaster recovery drill?
 
 A DR drill is a way to check you've configured your solution properly. The drill should give you, and your company, confidence if a disaster hits. Typically your organization sets a recovery time objective (RTO) which is a how long it takes to recover infrastructure. Alongside the RTO, your company should define a recovery point objective (RPO). The RPO defines the amount of data loss that is acceptable as a function of time. So if your companies RPO is a day, you'll need to create at least a backup of all your data each day. It must also take less than a day to recover from this backup.
 
@@ -12,7 +12,7 @@ A DR drill is a way to check you've configured your solution properly. The drill
 
 Azure Site Recovery not only supports running a disaster recovery drill via automated test failovers. It actively prompts you to run them on the Site Recovery dashboard.
 
-## Why should you run a DR drill
+## Why should you run a DR drill?
 
 A DR drill is vital to ensure the solution implemented meets the BCDR requirements, and to check the replication works appropriately. This, combined with RTO and RPO, needs to be tested thoroughly to ensure replication, failover, and recovery happen in the required timeframe.
 

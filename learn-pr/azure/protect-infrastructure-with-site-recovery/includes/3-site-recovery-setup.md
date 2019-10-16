@@ -48,7 +48,7 @@ Azure Site Recovery will manage and orchestrate your DR process for Azure VMs or
 - Configure outbound network connectivity
 - Set up replication on existing VMs
 
-## Recovery Services Vault
+## Recovery services vault
 
 To enable Azure Site Recovery to complete disaster recovery replication, it requires a recovery services vault. These vaults use storage accounts to store data backups, VM configuration settings, and workloads. To meet Azure Site Recovery requirements, simply provision a recovery services vault using the portal or the Azure CLI.
 
