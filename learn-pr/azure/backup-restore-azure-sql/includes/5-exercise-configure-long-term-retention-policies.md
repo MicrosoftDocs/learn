@@ -92,11 +92,9 @@ You can also configure long-term retention policies by using PowerShell. Let's c
     Location          :
     ```
 
-1. You can also confirm this in the portal:
+1. You can also confirm this in the portal. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources**, and then select **ERPServer**.
 
-   1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources**, and then select **ERPServer**.
-
-   1. Under **Settings**, select **Manage Backups**. In the list of databases, check the **sql-erp-db** long-term retention properties.
+1. Under **Settings**, select **Manage Backups**. In the list of databases, check the **sql-erp-db** long-term retention properties.
 
    ![Completed long-term retention settings](../media/5-completed-ltr-settings.png)
 
