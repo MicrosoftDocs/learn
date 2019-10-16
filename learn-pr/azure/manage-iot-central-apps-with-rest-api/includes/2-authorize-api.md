@@ -1,6 +1,6 @@
 To protect your IoT Central application, all REST API calls must be authorized.
 
-The current store management solution for a retail company includes a store management application that includes dashboards for analyzing stock levels and transactions. You plan to add an IoT Central application to receive telemetry from environmental monitoring  devices in stores. The IoT Central application will also enable you to manage and control the devices remotely. The goal is to use the IoT Central REST API to integrate device management and data export functionality into your existing store management application. Your IoT Central application must verify that the store management application is authorized to make those REST API calls.
+The current store management solution for a retail company includes a store management application that includes dashboards for analyzing stock levels and transactions. You plan to add an IoT Central application to receive telemetry from environmental monitoring devices in stores. The IoT Central application will also enable you to manage and control the devices remotely. The goal is to use the IoT Central REST API to integrate device management and data export functionality into your existing store management application. Your IoT Central application must verify that the store management application is authorized to make those REST API calls.
 
 Here, you'll review some core IoT Central concepts, learn how IoT Central authorizes REST API calls, and how to generate and use an API token.
 
@@ -20,7 +20,7 @@ You have three options to create an IoT Central application:
 - Use the [Azure portal](https://portal.azure.com/).
 - Use Azure CLI.
 
-In this module, you use the Azure CLI to create your application.
+In this module, you'll use the Azure CLI to create your application.
 
 All three options require you to provide information such as the country or region for the deployment, an application name, a payment plan, and an application template.
 
@@ -36,8 +36,8 @@ An API token is issued by your IoT Central application and is not associated wit
 
 - **Application administrator** grants access to all API calls
 - **Application builder** grants access to API calls that create, edit, and delete device templates and devices.
-- **Application operator** grants access to API calls that create, edit, and delete  devices.
-- Administrators can create custom roles, that grant access to a selected set of features in the application.
+- **Application operator** grants access to API calls that create, edit, and delete devices.
+- Administrators can create custom roles that grant access to a selected set of features in the application.
 
 A bearer token is associated with an Azure Active Directory user account. You can generate a bearer token using the `az account get-access-token` CLI command. The caller is granted the same level of access that the Azure Active Directory user has in the IoT Central application.
 
@@ -45,8 +45,8 @@ A bearer token is associated with an Azure Active Directory user account. You ca
 
 You can generate an IoT Central API token in two ways:
 
-- In the **Administration** section in your application's web UI.
-- Using the REST API.
+- In the **Administration** section in your application's web UI on the IoT Central portal.
+- Using the IoT Central REST API.
 
 To generate an API token using the REST API, you must already have an **Application administrator** API token or a bearer token to authorize the call.
 

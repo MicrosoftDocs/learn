@@ -4,14 +4,14 @@ Suppose you work as an IoT solution developer for a retail company. The company 
 
 In this module, you'll generate an authorization token to enable access to the IoT Central application using a REST API. You'll then use the REST API to add and list devices in the application, set device properties and send commands to devices, query device telemetry, and configure continuous data export from the IoT Central application to a cloud-hosted endpoint for storage or processing. This module uses command-line tools to call the REST API and show the parameters and payloads you need to send.
 
-By the end of this module, you'll be able to use the REST API to manage and control devices connected to your IoT Central application. You'll also be able to use the REST API configure data export from your application.
+By the end of this module, you'll be able to use the REST API to manage and control devices connected to your IoT Central application. You'll also be able to use the REST API to configure data export from your application.
 
 ## Learning objectives
 
 In this module, you'll:
 
 - Create an IoT Central application and device templates
-- Generate an API token to use to authorize REST API calls
+- Generate an API token to authorize REST API calls
 - Manage devices using the REST API
 - Query device telemetry and control your devices using the REST API
 - Enable integration with other services by configuring data export from your application using the REST API
