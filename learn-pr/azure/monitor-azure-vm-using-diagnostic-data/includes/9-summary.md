@@ -1,4 +1,4 @@
-When you create and host your virtual machines on Azure, you're given host-level metrics without any additional software. You've seen the additional monitoring options available to you after installing the Azure diagnostic extension.
+When you create and host your virtual machines on Azure, you're given host-level metrics without having to install any additional software. You've seen the additional monitoring options available to you after you install the Azure diagnostic extension.
 
 You viewed the various metrics, built a dashboard, and created an alert to monitor performance. When the alert criteria was triggered, you got an email notification. You've seen how to use tools in Azure to get detailed information about a virtual machine's state.
 

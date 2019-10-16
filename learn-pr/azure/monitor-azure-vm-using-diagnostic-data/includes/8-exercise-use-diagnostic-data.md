@@ -12,15 +12,15 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 1. Select **Virtual machines**.
 1. Select the **monitored-linux-vm** virtual machine you created.
 1. On the left, scroll down and select **Metrics**.
-1. At the top, select **New alert rule**.
+1. Select **New alert rule**.
 
     ![Screenshot that shows new alert rule button on the metrics pane](../media/8-metrics-new-alert-rule-button.png)
 
 ### Select the resource
 
-1. Under **RESOURCE**, select the **Select** button.
+1. Under **RESOURCE**, click the **Select** button.
 1. In the **Filter by resource type** field, select **Virtual machines**.
-1. In the **Resource** list below, select the **monitored-linux-vm** VM.
+1. Under **Resource**, select **monitored-linux-vm**.
 
     ![Screenshot that shows the VM selected on the Select a resource pane](../media/8-alert-select-a-resource-vm.png)
 
@@ -29,7 +29,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 ### Create the condition
 
 1. Under **CONDITION**, select **Add**.
-1. Under **SIGNAL NAME**, select **Percentage CPU**.
+1. Under **Signal name**, select **Percentage CPU**.
 
     ![Screenshot that shows Percentage CPU selected under the Signal name field](../media/8-configure-signal-logic-percentage-cpu.png)
 
@@ -66,7 +66,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
     |Action name     | High CPU usage       |
     |Action type      | Email/SMS/Push/Voice |
 
-1. In the **Email/SMS/Push/Voice** pane, select **Email**, and in the field enter the email address to receive the notification.
+1. In the **Email/SMS/Push/Voice** pane, select **Email**, and enter your email address to receive the alert notification.
   
    ![Screenshot that shows Email/SMS/Push/Voice pane ](../media/8-create-an-action.png)
 
@@ -101,8 +101,8 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
 1. Copy the **Login using VM local account** field.
 1. In Cloud Shell to the right, right-click and paste the value you just copied. If Cloud Shell timed out, click **Reconnect**.
-1. When prompted type **yes** to connect to the VM.
-1. On your VM, install the stress utility app.
+1. When prompted, type **yes** to connect to the VM.
+1. Run the following command to install the stress utility app on the VM.
 
     ```bash
     sudo apt-get install stress
