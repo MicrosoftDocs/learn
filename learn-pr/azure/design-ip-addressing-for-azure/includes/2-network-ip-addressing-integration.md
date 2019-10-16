@@ -13,7 +13,7 @@ A typical on-premises network design includes these components:
 - Switches
 - Network segmentation
 
-![Typical on-premises network design](../media/2-on-premises-network.svg)
+![Typical on-premises network design](../media/2-on-premises-network.png)
 
 The diagram shows a simplified version of a typical on-premises network. On the routers facing the internet service provider (ISP), you have public IP addresses that are used by your outbound Internet traffic as their source. These are also the addresses used for inbound traffic across the Internet. The ISP may assign you a block of IP addresses to assign to your devices, or you may have your own block of public IP addresses that your organization owns and controls. These addresses can be assigned to systems that you would like to make accessible from the internet, such as web servers.
 
@@ -39,7 +39,7 @@ In a typical Azure network design, we usually have these components:
 - Firewall
 - Load balancer (internal/external)
 
-![Typical Azure network design](../media/2-azure-network.svg)
+![Typical Azure network design](../media/2-azure-network.png)
 
 In Azure, the network design has similar features and functions to an on-premises network, but the structure of the network is different. The Azure network does not follow the typical on-premises hierarchical network. The Azure network provides the ability to scale up and scale down infrastructure based on the demand. The provisioning in the Azure network happens in a matter of seconds. There are no hardware devices such as routers or switches. The entire infrastructure is virtual and you slice it into chunks that suit your requirements.
 
