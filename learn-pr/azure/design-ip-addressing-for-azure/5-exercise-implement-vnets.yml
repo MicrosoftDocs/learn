@@ -8,7 +8,6 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - Design and implement IP addressing for Azure virtual networks
 durationInMinutes: 10
 interactive: bash
