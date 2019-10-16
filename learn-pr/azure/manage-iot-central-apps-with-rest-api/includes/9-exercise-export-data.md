@@ -12,7 +12,8 @@ Run the following commands to create storage account and container, and retrieve
 
 ```azurecli
 STORAGE_ACCOUNT="storemanagement${SUFFIX}"
-az storage account create --name $STORAGE_ACCOUNT --resource-group $RG \
+az storage account create --name $STORAGE_ACCOUNT \
+--resource-group <rgn>[sandbox resource group name]</rgn> \
 --location centralus --sku Standard_LRS
 az storage container create --name dataexport --account-name $STORAGE_ACCOUNT
 STORAGE_CONNECTION_STRING=`az storage account show-connection-string --name $STORAGE_ACCOUNT --query "connectionString" -o tsv`
