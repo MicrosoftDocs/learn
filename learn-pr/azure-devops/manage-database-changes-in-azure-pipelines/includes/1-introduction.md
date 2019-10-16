@@ -12,9 +12,9 @@ When an application uses a database, the database administrator (DBA) and the ap
 
 In this module, you:
 
-- Connect a relational database to your website by using Azure SQL Database and App Service as an example.
+- Connect a relational database to your website, using Azure SQL Database and App Service as an example.
 - Coordinate changes to the database schema by using a release approval.
-- Use PowerShell to share pipeline variables among pipeline stages.
+- Use PowerShell to share variables among pipeline stages.
 
 ## Prerequisites
 

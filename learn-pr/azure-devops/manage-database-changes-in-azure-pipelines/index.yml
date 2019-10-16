@@ -2,7 +2,7 @@
 uid: learn.azdo.manage-database-changes-in-azure-pipelines.
 metadata:
   title: Manage database changes in Azure Pipelines - Learn
-  description: Connect your webapp to an Azure SQL Database and manage database schema changes by using a release approval.
+  description: Use a release approval in Azure Pipelines to help coordinate database schema changes between developers and database administrators.
   ms.date: 09/30/2019
   author: jamcneil
   ms.author: jumcn
@@ -10,12 +10,12 @@ metadata:
   #ms.learn-contact: thpetche
   ms.prod: learning-azure
 title: Manage database changes in Azure Pipelines
-summary: Connect your webapp to an Azure SQL Database and manage database schema changes by using a release approval.
+summary: Use a release approval in Azure Pipelines to help coordinate database schema changes between developers and database administrators.
 abstract: |
   In this module, you will:
-  - Connect a relational database to your website by using Azure SQL Database and App Service as an example.
+  - Connect a relational database to your website, using Azure SQL Database and App Service as an example.
   - Coordinate changes to the database schema by using a release approval.
-  - Use PowerShell to share pipeline variables among pipeline stages.
+  - Use PowerShell to share variables among pipeline stages.
 prerequisites: |
   - An Azure subscription
   - An Azure DevOps account

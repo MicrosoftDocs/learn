@@ -17,14 +17,14 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "True or false: The database connection string can be securely saved in the appsettings.json file of an ASP.NET Core web app?"
+  - content: "True or false: The database connection string can be securely saved in the *appsettings.json* file of an ASP.NET Core web app?"
     choices:
     - content: "True"
       isCorrect: false
-      explanation: "The appSettings.json file is saved as plain text. Anyone with access to the file would be able to get the database connection information."
+      explanation: "The *appsettings.json* file is saved as plain text. Anyone with access to the file would be able to get the database connection information."
     - content: "False"
       isCorrect: true
-      explanation: "The appSettings.json file is saved as plain text. Anyone with access to the file would be able to get the information."
+      explanation: "The *appsettings.json* file is saved as plain text. Anyone with access to the file would be able to get the information."
   
   - content: "What does a SQL Server Data Tools project build produce?"
     choices:

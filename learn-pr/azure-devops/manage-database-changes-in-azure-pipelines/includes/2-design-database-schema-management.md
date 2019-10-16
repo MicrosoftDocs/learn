@@ -1,5 +1,3 @@
-In this unit, you learn about some of the factors to consider when choosing a database technology for your data storage as well as what you will need for App Service to connect to the database. Once that is successful, you learn how to make sure that database schema changes are recognized during Azure Pipelines deployments. Then you use Azure Pipelines to provide a way for the DBA to approve the schema changes before they ar applied to the database.
-
 The team is ready to create a database for the website but they need to work with the DBA to coordinate the work. The DBA is responsible for maintaining the integrity of the database and needs to work with the team to understand their database needs. The DBA needs to approve any changes the developers make to the database schema or its tables.
 
 The team wants to find an automated process that meets the needs of the application developers as well as the needs of the DBA.
@@ -14,9 +12,9 @@ In this section, you:
 
 ## The meeting
 
-The team his currently deploying the webapp to a _dev_ stage where all of the development pieces come together, a _test_ stage where testing is done on the webapp, and a _staging_ stage where the webapp is available for management to approve before it moves to production. Here the team will discuss adding a database as the data storage solution for the webapp and bringing it all together in the _dev_ stage.
+The team is currently deploying their webapp through a series of stages. The a _Dev_ stage is where all of the development pieces come together. The _Test_ stage is where QA performs testing. _Staging_ is where the webapp is available for management to approve before it moves to production. Here the team discusses how to add a database as the data storage solution for the webapp. The database and the webapp are brought together in the _Dev_ stage.
 
-**Andy:** Good morning. We have all seen how Azure Pipelines brings together our development and operations processes more efficiently. Because of this, we have been able to move forward in our development and we are ready to connect the website to a real database. I think this integration can happen as early as the _Dev_ stage. By connecting the website to the database early in the pipeline, we can track changes and measure performance as changes move through the pipeline.
+**Andy:** Good morning. We have all seen how Azure Pipelines brings together our development and operations processes more efficiently. Because of this, we've been able to move forward in our development and we're ready to connect the website to a real database. I think this integration can happen as early as the _Dev_ stage. By connecting the website to the database early in the pipeline, we can track changes and measure performance as changes move through the pipeline.
 
 Our focus here is on the leaderboard. Here's what the leaderboard looks like right now.
 
@@ -34,9 +32,9 @@ When considering a data storage solution, you have several options to choose fro
 
 **The type of data you're storing**
 
-_Structured data_ is relational data that fits into tables with columns and rows. For example, point of sale systems. You might have a table for product data with columns that define what you want to use to describe your products. For example, Product Name, SKU Number, Color and so on.
+_Structured data_ is relational data that fits into tables with columns and rows. For example, consider a point of sale system. You might have a table for product data with columns that define what you want to use to describe your products, for example, Product Name, SKU Number, Color and so on.
 
-_Semi-structured data_ is non-relational data that fits into hierarchies using tags. This is a good fit for data that may change in its description. In other words, you products can't all be described using the same columns as we did with structured data. Usually this data is stored in JSON or XML.
+_Semi-structured data_ is non-relational data that fits into hierarchies using tags. This is a good fit for data that may change in its description. In other words, your products can't all be described by using the same columns as you can with structured data. Usually, this data is stored as JSON or XML.
 
  _Unstructured data_ includes documents such as text files, photos, and videos.
 
@@ -44,17 +42,27 @@ _Semi-structured data_ is non-relational data that fits into hierarchies using t
 
 When planning your operational needs, you might ask yourself these questions:
 
-* Will I be doing basic lookups or do I need to join queries from multiple data sets? WIth basic lookups you might consider non-relational data solutions whereas join queries will need relational data solutions.
-* How often will the data change? Reporting data may only change at month-end or quarterly. This could be a candidate for a data warehouse. If the data changes throughout the day, then you need something that can handle fast transactional throughput.
-* Do I always need the latest data? This goes back to how often the data changes. Maybe it changes often but you only need the month end results. Or it could be that you are stock trading and you need up-to-the-minute results.
-* Do I need to run complex analytical queries? Complex analytical queries are queries that can be done on several dimensions and would be a good candidate for a data warehouse.
-* How quickly do these operations need to complete? Is the consumer of this data customer-facing? If so, the operations on the data need to be fast. Perhaps the data is used to run nightly reports. Can this be a bit slower?
+* Will I be doing basic lookups or do I need to join queries from multiple data sets?
+
+    With basic lookups you might consider non-relational data solutions whereas join queries will require relational data.
+* How often will the data change?
+
+    Reporting data may only change at month-end or quarterly. This could be a candidate for a data warehouse. If the data changes throughout the day, then you need something that can handle fast transactional throughput.
+* Do I always need the latest data?
+
+    This relates to how often the data changes. Perhaps the data change often, but you only need the month-end results. Or it could be that you are stock trading and you need up-to-the-minute (or faster) results.
+* Do I need to run complex analytical queries?
+
+    Complex analytical queries are queries that can be done on several dimensions and would be a good candidate for a data warehouse.
+* How quickly do these operations need to complete?
+
+    Do customers consume the data directly? If so, the operations on the data need to be fast. Perhaps the data is used to run nightly reports. In this case, these operations can typically run slower.
 
 **Whether or not you need transactions**
 
-Transaction are needed when your data has relationships and those relationships keep the data from getting out of sync or help you to query the data. For example, say your gym membership was upgraded to give you more privileges at the gym. If the accounting data has the upgrade in order to change you more per month, but the membership data was not changed, you cannot access the privileges you are paying for. A transaction would insure that both pieces of data are updated at the same time.
+Transactions are needed when your data has relationships and those relationships keep the data from getting out of sync or help you to query the data. For example, let's say that you upgraded your gym membership to receive added privileges. Your account has been updated to change you more per month, but the corresponding update to your membership profile failed. This situation might cause you lose access to the privileges you are paying for. A transaction would ensure that both pieces of data are updated at the same time. If either part fails, the entire transaction is rolled back.
 
-There are two types of transactions that your data might need. *Online Transaction Processing (OLTP)* is used for relational data. That is similar to the example above. *Online Analytical Processing (OLAP)* is used for more complex queries when your data is in a data structure called a *cube* or *data warehouse*. This is for data analysis systems that query on many dimensions of data. For example, you want to know how any blue widgets were sold in January last year in the northeast region as compared to green widgets sold in May through June of this year in the southwest, and who were the top sales people for widgets in that region.
+There are two types of transactions that your data might need. *Online Transaction Processing (OLTP)* is used for relational data. That is similar to the example above. *Online Analytical Processing (OLAP)* is used for more complex queries when your data is in a data structure called a *cube* or *data warehouse*. This is for data analysis systems that query on many dimensions of data. For example, you want to know how any blue widgets were sold in January of last year in the northeast region as compared to green widgets sold in May through June of this year in the southwest, and who were the top sales people for widgets in that region.
 
 > [!NOTE]
 > You'll find resources to help you make the right data storage choices at the end of this module.
@@ -120,7 +128,7 @@ Let's go back to the team discussion and see how they handle the changes to thei
 
 *Andy types on his laptop.*
 
-**Andy:** I found an Azure Pipelines task that we can use. The [SqlAzureDacpacDeployment@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/sql-azure-dacpac-deployment?view=azure-devops&azyre-portal=true) task generates a file with the schema differences between the current database schema and the _dacpac_.
+**Andy:** I found an Azure Pipelines task that we can use. The [SqlAzureDacpacDeployment@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/sql-azure-dacpac-deployment?view=azure-devops&azure-portal=true) task generates a file with the schema differences between the current database schema and the _dacpac_.
 
 ## Approve database schema changes in Azure Pipelines
 
@@ -142,7 +150,7 @@ Let's listen in on the team's discussion.
 
 **Tim:** I can create a PowerShell script that reads that file and outputs its contents so that the DBA can review and approve the changes.
 
-**Andy:** After the change is approved, we use [SqlAzureDacpacDeployment@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/sql-azure-dacpac-deployment?view=azure-devops&azure-portal=true) again to apply the changes.
+**Andy:** After the change is approved, we use `SqlAzureDacpacDeployment@1` again to apply the changes.
 
 **Mara:** I think we have a good place to start.
 
@@ -165,5 +173,3 @@ We add an ![Callout 4](../../shared/media/callout-04.png) approval to another st
 **Mara:** I'll make the database project and update the website to use the database.
 
 **Andy:** I'll get with our DBA to get the database set up. But first, more coffee.
-
-**TODO**: Calling out a few knowledge check issues for you to address.
