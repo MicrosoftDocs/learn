@@ -32,11 +32,11 @@ This exercise runs on your desktop computer.
 
 2. In the **Cosmos DB** pane, click **Sign in to Azure** and sign in, if you aren't already connected.
 
-    ![Screenshot of Cosmos DB pane Visual Studio Code. The user is about to sign in to Azure](../media/7-azure-sign-in.png)
+    ![Screenshot of Cosmos DB pane in Visual Studio Code. The user is about to sign in to Azure](../media/7-azure-sign-in.png)
 
 3. Expand your Azure account, right-click the **\<*your name or initials*\>school** Cosmos DB account, and then click **Copy Connection String**.
 
-    ![Screenshot of Cosmos DB pane Visual Studio Code. The user is copying the connection string for the Cosmos DB account to the clipboard](../media/7-connection.png)
+    ![Screenshot of Cosmos DB pane in Visual Studio Code. The user is copying the connection string for the Cosmos DB account to the clipboard](../media/7-connection.png)
 
 4. On the **File** menu, click **New File**.
 
@@ -443,11 +443,11 @@ This exercise runs on your desktop computer.
 
 5. In the **Cosmos DB** pane, expand your Azure account, expand the **\<your name or initials\>school** Cosmos DB account, expand the **SchoolDB** database, expand the **StudentCourseGrades** collection, right-click **Documents**, and then click **Refresh**.
 
-    ![Screenshot of Cosmos DB pane Visual Studio Code. The user has selected the **Refresh** command](../media/7-cosmosdb-refresh.png)
+    ![Screenshot of Cosmos DB pane in Visual Studio Code. The user has selected the **Refresh** command](../media/7-cosmosdb-refresh.png)
 
 6. Expand the **Documents** folder. You should see the four documents that you created in the first exercise (**C101**, **C102**, **SU001**, and **SU002**), together with the four documents created by the cosmosgrades.js app:
 
-    ![Screenshot of Cosmos DB pane Visual Studio Code showing the documents in the **StudentCourseGrades** collection](../media/7-cosmosdb-documents.png)
+    ![Screenshot of Cosmos DB pane in Visual Studio Code showing the documents in the **StudentCourseGrades** collection](../media/7-cosmosdb-documents.png)
 
 7. Click the **CS201** document. It should look similar to this:
 
@@ -495,3 +495,5 @@ This exercise runs on your desktop computer.
         "_ts": 1570706826
     }
     ```
+
+You've now used Visual Studio Code to create a Node.js application that can query, insert, update, and delete data in a Cosmos DB database.

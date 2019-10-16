@@ -33,9 +33,9 @@ Stored procedures interact with the database through a well-defined object model
 - **createDocument**. This method takes a JSON object and adds it as a new document to the collection.
 - **replaceDocument**. Use this method to replace a document with a new one. Cosmos DB doesn't support field-by-field modifications of a document. Instead, you overwrite a document with a new one containing the updated values.
 - **deleteDocument**. This method takes a reference to a document in the collection and removes the document from the collection.
-- **queryDocuments**. Use this method to send a SQL request that retrieves matching documents from the collection.
+- **queryDocuments**. Use this method to send a SQL request that retrieves matching documents from the collection. Cosmos DB fetches data in *pages*. Each page contains up to 100 documents. Only the first page is retrieved initially. If there are more pages, the **queryDocuments**, Cosmos DB generates a continuation token. Your code can then call **queryDocuments** again with the same query, and pass the continuation token in as a parameter. The **queryDocuments** will then fetch the next page, and another continuation token if there is still further data. You continue calling **queryDocuments** and processing each page of documents until the continuation token indicates that you have retrieved all the available documents.
 
-These functions operate asynchronously. You provide a callback function that runs when the operation completes. The callback function receives three parameters: An object that contains the details of any error that occurred while performing the operation, a reference to the document that was affected by the operation, and an **options** object that contains additional information associated with the operation (this can be empty).
+These functions operate asynchronously. You provide a callback function that runs when the operation completes. The callback function receives three parameters: An object that contains the details of any error that occurred while performing the operation, a reference to the documents that were affected by the operation, and an **options** object that contains additional information associated with the operation (such as the continuation token for a query).
 
 You return a value from a stored procedure by setting the **response** object obtained from the context. The following example, based on the sample scenario, shows the code for a stored procedure that takes the ID of a student, and the academic year. The stored procedure removes the course grade information for that student. The response message from the stored procedure indicates how many student documents were modified (either 0 or 1):
 
@@ -127,11 +127,11 @@ To prevent server-side operations affecting performance, all requests to stored 
 
 To simplify working with the server-side timeout, all the functions relating to creating, reading, updating, and deleting documents supported by the **collection** object return a Boolean value that indicates whether the server-side timeout is about to expire. A return value of **False** indicates that the timeout has almost been reached. By testing the return value, server-side code can determine whether it can continue to run, or whether the operation must complete to avoid being aborted. In the example stored procedure shown earlier, this value was captured by the **isAccepted** variable, although the value was never used (to keep the example code straightforward).
 
-To enable operations that can't run in a single timeout period to complete, you can use a continuation model. In a continuation model:
+To enable operations that can't run in a single timeout period to complete, you can use a continuation model, using your own custom continuation token. This approach is similar to the mechanism used by the **queryDocuments** function described earlier. In a continuation model:
 
 1. The client calls a stored procedure.
 2. The stored procedure runs, checking the Boolean return value of each create, read, update, and delete function until the return value is **False**, or the stored procedure completes
-3. If the stored procedure hasn't finished, it returns a continuation indicator to the client. This might be a count of records processed so far, or some other value indicating that the stored procedure hasn't completed its work, but was about to run out of time.
+3. If the stored procedure hasn't finished, it returns a custom continuation token to the client. This token might contain a count of records processed so far, or some other value indicating that the stored procedure hasn't completed its work, but was about to run out of time.
 4. The client calls the stored procedure again, adjusting the parameter values (if necessary) to enable the stored procedure to continue where it left off. This cycle repeats until there are no more records to process.
 
 For example, if you've created a stored procedure to update a potentially large number of documents based on parameter values specified by the client, the stored procedure could implement the following logic:

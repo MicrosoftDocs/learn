@@ -16,7 +16,7 @@ The JavaScript API exposes a class named `CosmosClient` that acts as the access 
 
 You create a `CosmosClient` object using the constructor. The constructor takes a Cosmos DB connection string as its parameter. The connection string contains the address of your Cosmos DB account, and the security key needed to access the account. You can obtain the connection string for an account using the Cosmos DB pane in Visual Studio Code; right-click the account and select **Copy Connection String**.
 
-![Screenshot of Cosmos DB pane Visual Studio Code. The user is copying the connection string for the Cosmos DB account to the clipboard](../media/6-connection.png)
+![Screenshot of Cosmos DB pane in Visual Studio Code. The user is copying the connection string for the Cosmos DB account to the clipboard](../media/6-connection.png)
 
 In your JavaScript application, use the following code to connect to a Cosmos DB account using the connection string:
 
