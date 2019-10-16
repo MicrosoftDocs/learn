@@ -98,7 +98,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
     az network vnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name ManufacturingVnet \
-        --address-prefix 10.20.0.0/16 \
+        --address-prefix 10.30.0.0/16 \
         --location northeurope
     ```
 
