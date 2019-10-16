@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.backup-restore-azure-sql.7-exercise-restore-database
 metadata:
-  title: Exercise - Recover data by restoring an Azure SQL Database
+  title: Exercise - Recover data by restoring an Azure SQL database
   description: In this unit, you'll recover from a mistaken database modification by restoring a backup.
   ms.date: 09/25/2019
   author: jboeshart
@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Exercise - Recover data by restoring an Azure SQL Database
+title: Exercise - Recover data by restoring an Azure SQL database
 durationInMinutes: 7
 azureSandbox: true
 interactive: powershell
