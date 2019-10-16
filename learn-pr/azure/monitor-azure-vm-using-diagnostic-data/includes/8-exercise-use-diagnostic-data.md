@@ -9,7 +9,7 @@ In this unit, you'll add an alert for your VM. Then you'll cause the VM CPU usag
 If CPU usage goes above 90 percent for one minute, you'd like to get a notification. 
 
 1. Go to the [Azure portal](https://portal.azure.com/) and sign in with the account you used to enable the sandbox.
-1. Select **All resources**.
+1. Select **Virtual machines**.
 1. Select the **monitored-linux-vm** virtual machine you created.
 1. On the left, scroll down and select **Metrics**.
 1. At the top, select **New alert rule**.
@@ -33,10 +33,17 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
     ![Screenshot that shows Percentage CPU selected under the Signal name field](../media/8-configure-signal-logic-percentage-cpu.png)
 
-1. Under **Alert logic**, for **Operator** select **Greater than or equal to**.
-1. In the Threshold value field, enter **90**.
-
+1. Under **Alert logic**, use the following values:
+   
     ![Screenshot that shows Alert logic section filled out](../media/8-alert-logic.png)
+
+   |Field |value  |
+   |---------|---------|
+   |Operator |    Greater than or equal to     |
+   |Aggregation type   |  Average       |
+   |Threshold value   |    90     |
+
+
 
 1. Select **Done**.
 
@@ -46,7 +53,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
     ![Screenshot that shows Create action group button highlighted](../media/8-create-action-group.png)
 
-1. Enter the following values:
+1. Use the following values:
 
    ![Screenshot that shows Add action group pane filled out ](../media/8-add-action-group-pane.png)
 
@@ -73,22 +80,28 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
    ![Screenshot that shows the Email alert action group selected](../media/8-attach-action-group-to-rule.png)
 
-1. Click the **Select** button.
-1. Scroll down, and in the **Alert rule name**, enter **Web server CPU running hot**.
-1. In **Description**, enter **An email alert that will notify when the CPU is over 90%**.
+1. Click **Select**.
+1. For **Alert Details**, use the following values:
+
+   ![Screenshot that shows the alert details fields](../media/8-alert-details.png)
+
+    |Field  |Value  |
+    |---|---|
+    |Alert rule name | Web server CPU running hot    |
+    |Description     | Email alert notifies when the CPU is over 90%|
+
 1. Select **Create alert rule**.
 
 ## Activate the alert
 
-1. Scroll to the top and select the **Overview** pane.
+1. Go to the VM **Overview** pane.
 1. Select **Connect**.
-1. Copy the **Login using VM local account** field.
-1. Connect to the VM by running the command you copied in the previous step. The n values are replaced by the IP address of your VM.
 
-    ```bash
-    ssh azureuser@nnn.nnn.nnn.nnn
-    ```
-1. When prompted type **yes**.
+   ![Screenshot that shows the connect button on the VM overview pane](../media/8-vm-overview-connect-button.png)
+
+1. Copy the **Login using VM local account** field.
+1. In Cloud Shell to the right, right-click and paste the value you just copied. If Cloud Shell timed out, click **Reconnect**.
+1. When prompted type **yes** to connect to the VM.
 1. On your VM, install the stress utility app.
 
     ```bash
@@ -97,9 +110,10 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 1. Run the following command to stress the VM's CPU.
 
     ```bash
-    sudo stress --cpu 16 -v
+    sudo stress --cpu 16 -v -t 10m
     ```
-1. Return to the portal and at the top, select **Dashboard**, then select the **KPI Dashboard**.
+1. Return to the Azure portal.
+1. Go to **Dashboard** > **KPI Dashboard**.
 1. On the **Max CPU percentage guest OS for monitored-linux-vm** graph, select the ellipses (**...**) at the top right and  **Refresh**.
 1. After a few minutes, the CPU should approach 100% and you'll receive an alert email.
 
