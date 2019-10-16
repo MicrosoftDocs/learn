@@ -80,3 +80,4 @@ The IoT Central REST API lets you:
 - Create a device
 - Update a device
 - Delete a device
+- Get a device telemetry value

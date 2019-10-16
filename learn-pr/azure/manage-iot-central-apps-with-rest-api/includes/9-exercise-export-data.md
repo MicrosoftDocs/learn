@@ -12,7 +12,8 @@ Run the following commands to create storage account and container, and retrieve
 
 ```azurecli
 STORAGE_ACCOUNT="storemanagement${SUFFIX}"
-az storage account create --name $STORAGE_ACCOUNT --resource-group $RG \
+az storage account create --name $STORAGE_ACCOUNT \
+--resource-group <rgn>[sandbox resource group name]</rgn> \
 --location centralus --sku Standard_LRS
 az storage container create --name dataexport --account-name $STORAGE_ACCOUNT
 STORAGE_CONNECTION_STRING=`az storage account show-connection-string --name $STORAGE_ACCOUNT --query "connectionString" -o tsv`
@@ -31,7 +32,7 @@ az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/continuousD
     "@type": "ContinuousDataExport",
     "displayName": "Export telemetry",
     "endpoint": {
-        "@type": "StorageEndpoint",
+        "type": "StorageEndpoint",
         "connectionString": "'$STORAGE_CONNECTION_STRING'",
         "name": "dataexport"
     },
@@ -67,7 +68,9 @@ az storage blob list --container-name=dataexport \
 --query '[].{BlobName:name}' -o table
 ```
 
-You see a blob that contains the device template definitions in the application and a sequence of blobs that contain telemetry. If you rerun the previous command, you see the number of telemetry blobs has increased.
+You may need to wait a few minutes before the first blob containing telemetry is available.
+
+You see a sequence of blobs that contain telemetry. If you rerun the previous command after a few minutes, you see the number of telemetry blobs has increased.
 
 Run the following commands to download the first telemetry blob and view its contents:
 

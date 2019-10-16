@@ -26,17 +26,11 @@ The following steps create an IoT Central application and generate an API token 
 
     Make a note of the application name just in case the shell times out and loses the environment variable.
 
-1. Run the following commands in the Cloud Shell to save the name of your resource group in an environment variable to use later:
-
-    ```azurecli
-    RG=<rgn>[sandbox resource group name]</rgn>
-    echo "Your resource group name is: $RG"
-    ```
-
 1. Run the following command in the Cloud Shell to create an IoT Central application in the sandbox:
 
     ```azurecli
-    az iotcentral app create --resource-group $RG \
+    az iotcentral app create \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
     --name $APP_NAME --sku S1 --location centralus \
     --subdomain $APP_NAME --template iotc-pnp-preview@1.0.0 \
     --display-name 'Store Management'
