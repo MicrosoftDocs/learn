@@ -64,7 +64,7 @@ Click the **gear** icon to change the Azure portal settings. These settings incl
 - Toast notifications (to a mobile device)
 - Language and regional format
 
-![Screenshot of the Portal settings blade](../media/3-settings-blade.png)
+![Screenshot of the Azure portal settings blade](../media/3-settings-blade.png)
 
 When you have changed settings, click **Apply** to accept your changes.
 
@@ -134,6 +134,6 @@ With Azure Advisor, you can:
 
 You can access Azure Advisor by selecting **Advisor** from the navigation menu, or search for it in the **All Services** menu.
 
-![Azure Advisor Dashboard displayed in the Azure Portal displaying recommendations for High Availability, Security, Performance, and Cost](../media/3-advisordashboard.png)
+![Azure Advisor Dashboard displayed in the Azure portal displaying recommendations for High Availability, Security, Performance, and Cost](../media/3-advisordashboard.png)
 
 Let's try some of these features out!
