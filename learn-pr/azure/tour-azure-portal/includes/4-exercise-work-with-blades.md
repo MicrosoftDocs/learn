@@ -12,7 +12,7 @@ Once you are logged into the Azure portal, we can start exploring things. In the
 
 1. Let's start by touring how to create a resource. In the left-hand portion of the portal, click **Create a resource** (or plus icon when collapsed).
 
-1. A blade labeled **New** appears and displays a list of categories on the left-hand side, labeled Azure Marketplace. This is somewhat like a "Popular Categories" menu, with some of the most common categories visible. If you'd like, you can expand this list to see everything in the **Marketplace** blade with the **See all** link next to the heading. If you do, you can get back to the New blade by clicking the X icon in the upper right of any blades you have opened.
+1. A blade labeled **New** appears and displays a list of categories on the left-hand side, labeled Azure Marketplace. This initial view is somewhat like a "Popular Categories" menu, with some of the most common categories visible. If you'd like, you can expand this list to see everything in the **Marketplace** blade with the **See all** link next to the heading. If you do, you can get back to the New blade by clicking the X icon in the upper right of any blades you have opened.
 
 1. Selecting any of items in the Azure Marketplace list will show popular services for that category on the right of the **New** blade. This list is a subset of the entire range of computing resources available for that category. As with the Azure Marketplace, you can click on the **See all** link for a more comprehensive list. We will talk more about this list in subsequent sections.
 
@@ -36,7 +36,7 @@ Once you are logged into the Azure portal, we can start exploring things. In the
 
 ## Filtering results
 
-Another way to locate services is to refine the list with filters and search terms. On the **New** blade, you may have noticed the search box at the top. This is the quickest way to filter what services you see.
+Another way to locate services is to refine the list with filters and search terms. On the **New** blade, you may have noticed the search box at the top. Searching is the quickest way to filter what services you see.
 
 This search defaults to checking every Azure service category to get its results. Next, you'll filter after selecting a category.
 
@@ -46,7 +46,7 @@ This search defaults to checking every Azure service category to get its results
 
 1. Select any of the results that interest you to learn more about that service, including how to get started. Click the **X** in the corner to explore a different service. When you're done, move to the next step.
 
-1. Click the **X** in the right-hand end of the search box. This will erase your search term but does not reset any of the drop-down filters you've set. You can either reset those manually, or close the **Compute** blade with the **X** icon in the upper right corner and reopen it. When you are finished trying out the search and filtering options, move on to the next step.
+1. Click the **X** in the right-hand end of the search box. The **X** button will erase your search term but does not reset any of the drop-down filters you've set. You can either reset those filters manually, or close the **Compute** blade with the **X** icon in the upper right corner and reopen it. When you are finished trying out the search and filtering options, move on to the next step.
 
 1. Click the **X** at the top right-hand corner to close the **Marketplace** blade. Now you will see the **New** blade once again.
 

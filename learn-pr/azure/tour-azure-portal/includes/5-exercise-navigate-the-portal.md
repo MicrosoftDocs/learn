@@ -1,4 +1,4 @@
-The Azure portal has several features and services available; let's look at some of the more common areas you'll tend to use. First, take a moment to hover your mouse pointer over each of the icons in the top menu bar for a few seconds each. You should see a tooltip label pop-up for each one. This is the name of the menu item. You will use these icons later.
+The Azure portal has several features and services available; let's look at some of the more common areas you'll tend to use. First, take a moment to hover your mouse pointer over each of the icons in the top menu bar for a few seconds each. You should see a tooltip label pop-up for each one. This label is the name of the menu item. You will use these icons later.
 
 ![Screenshot of the Azure portal icon bar](../media/5-portal-icon-bar.png)
 
@@ -22,7 +22,7 @@ The Azure portal has several features and services available; let's look at some
 
 ## Notifications blade
 
-1. On the icon bar menu bar, click the **Notifications** (bell) icon. This will list any pending notifications.
+1. On the icon bar menu bar, click the **Notifications** (bell) icon. This window will list any pending notifications.
 
     ![Screenshot of notifications window](../media/5-notifications-blade.png)
 
@@ -64,9 +64,9 @@ Finally, there are a variety of management and programming tools included in the
 
 1. Under **High contrast theme**, try the three different options.
 
-1. Click **Enable pop-up notifications**. When this is checked, notifications will appear as pop-up "toast"-style notifications. They will still show up in the Notifications (bell) icon as well.
+1. Click **Enable pop-up notifications**. When this option is checked, notifications will appear as pop-up "toast"-style notifications. They will still show up in the Notifications (bell) icon as well.
 
-1. Click the **Settings** (cog) icon in the top menu bar and switch to the **Language & region** settings. Select **Language** and pick **Español**, and then click the **Apply** button. If a **Translate this page** dialog box appears, close the box. Note that the whole portal is now in Spanish.
+1. Click the **Settings** (cog) icon in the top menu bar and switch to the **Language & region** settings. Select **Language** and pick **Español**, and then click the **Apply** button. If a **Translate this page** dialog box appears, close the box. The whole portal is now in Spanish.
 
 1. To revert back to English, click the **Settings** (cog) icon in the top menu bar and switch to the **Idioma y región** settings. Select **Idioma** and pick **English**. Click the **Aplicar** button. The portal returns to English.
 
@@ -138,7 +138,7 @@ Finally, there are a variety of management and programming tools included in the
     - View your bill
     - Update your contact information
 
-    Note that some items do not appear unless you click the "..." icon.
+    Some of these items do not appear unless you click the "..." icon.
 
 1. Click "..." then **View my bill** to navigate to the **Cost Management + Billing - Invoices** page, which helps you analyze where Azure is generating costs.
 

@@ -86,7 +86,7 @@ Click the **question mark** icon to show the **Help** blade. Here you choose fro
 
 #### Help and support options
 
-This opens the main help and support area for the Azure portal and includes documentation options for a variety of common questions. One of the hidden areas here is the **New support request** link which is on this page. This is how you can open a support ticket with the Azure team.
+This button opens the main help and support area for the Azure portal and includes documentation options for a variety of common questions. One of the hidden areas here is the **New support request** link, which is on this page. This link is how you can open a support ticket with the Azure team.
 
 > [!NOTE]
 > All Azure customers can access billing, quota, and subscription-management support. *The availability of support for other issues depends on the support plan you have*.
@@ -120,7 +120,7 @@ If you click on your name in the top right-hand corner, a menu opens with a few 
 
 If you click "..." and then **View my bill**, Azure takes you to the **Cost Management + Billing - Invoices** page, which helps you analyze where Azure is generating costs.
 
-Azure is a large product, and the Azure portal user interface (UI) reflects this. The sliding blade approach allows you to navigate back and forth through the various administrative tasks with ease. Let's experiment a bit with this UI so you get some practice.
+Azure is a large product, and the Azure portal user interface (UI) reflects this scope. The sliding blade approach allows you to navigate back and forth through the various administrative tasks with ease. Let's experiment a bit with this UI so you get some practice.
 
 ### Azure Advisor
 

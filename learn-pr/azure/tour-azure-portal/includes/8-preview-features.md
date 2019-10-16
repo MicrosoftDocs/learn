@@ -16,8 +16,8 @@ Once a feature has been evaluated and tested successfully, it might be released 
 
 There are two types of previews available:
 
-- **Private Preview**. This means that an Azure feature is available to *specific* Azure customers for evaluation purposes. This is typically by invite only and issued directly by the product team responsible for the feature or service.
-- **Public Preview**. This means that an Azure feature is available to *all* Azure customers for evaluation purposes. These previews can be turned on through the preview features page as detailed below.
+- **Private Preview**. An Azure feature marked "private preview" is available to *specific* Azure customers for evaluation purposes. This is typically by invite only and issued directly by the product team responsible for the feature or service.
+- **Public Preview**. An Azure feature marked "public preview" is available to *all* Azure customers for evaluation purposes. These previews can be turned on through the preview features page as detailed below.
 
 ### Finding preview features
 
@@ -42,7 +42,7 @@ If you utilize the preview portal or a preview feature, Microsoft wants to hear 
 
 ## Get notified about GA releases
 
-The Azure portal "What's New" link on the **?** help menu provides a list of recent updates you can periodically check to see what's changed in Azure.
+The Azure portal "What's New" link on the help menu (**?**) provides a list of recent updates you can periodically check to see what's changed in Azure.
 
 Alternatively, you can use the [Azure Updates](https://azure.microsoft.com/updates/) page. This page provides additional information and features including:
 

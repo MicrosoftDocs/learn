@@ -24,7 +24,7 @@ Dashboards are a flexible tool for managing different aspects of Azure services 
 
 1. Hover over the new **All resources** tile and click the ellipsis icon (**...**); then click the **6x6** size.
 
-1. Click the gray corner on the bottom right-hand side of the tile, and resize the tile to 3.5 squares vertically by six horizontally. Note that when you finish resizing, it adjusts to 4x6.
+1. Click the gray corner on the bottom right-hand side of the tile, and resize the tile to 3.5 squares vertically by six horizontally. When you finish resizing, the tile adjusts to 4x6.
 
 1. In the Tile Gallery, drag the **Resource Groups** tile onto the workspace. Place it underneath the **All resources** tile.
 
@@ -40,7 +40,7 @@ Dashboards are a flexible tool for managing different aspects of Azure services 
 
 ## Clone a dashboard
 
-You now want to create a very similar dashboard for some other customers.
+You now want to create a similar dashboard for some other customers.
 
 1. Click the **Clone** button.
 
@@ -58,7 +58,7 @@ You now want to create a very similar dashboard for some other customers.
 
 ## Share a dashboard
 
-You now want to make this dashboard available to other users. To do this, carry out the following steps:
+You now want to make this dashboard available to other users. To make this dashboard available, carry out the following steps:
 
 1. From the Azure AD Admin dashboard, click the **Share** button at the top.
 
@@ -68,7 +68,7 @@ You now want to make this dashboard available to other users. To do this, carry 
 
 1. Use the dropdown at the top to navigate to the **Customer Dashboard**.
 
-    Note that, after a short while, a _Shared dashboard_ will appear in the **All resources** tile on your dashboard.
+    After a short while, a _Shared dashboard_ will appear in the **All resources** tile on your dashboard.
 
 1. Repeat steps 1 to 3 to share the Customer Dashboard.
 
@@ -96,7 +96,7 @@ To show how you can download and edit a dashboard file, carry out the following 
 
 1. In the **Open** dialog box, browse to the Downloads folder, and double-click *Customer Dashboard.json*.
 
-    Note that the clocks have resized to one row high, and the bottom clock has moved up one row.
+    The clocks have resized to one row high, and the bottom clock has moved up one row.
 
 ## Select a shared dashboard
 
@@ -112,19 +112,17 @@ You've realized that you don't like the smaller clocks, and you want to return t
 
 1. Close the **All dashboards** blade.
 
-    Note that the clocks have returned to their original size.
+    The clocks have returned to their original size.
 
 ## Switch to full screen
 
 1. Click the down arrow next to **Customer Dashboard**.
 
-    Note that there is another Customer Dashboard, without the shared symbol next to it. Click that version of Customer Dashboard, and the clocks become small again.
+    There is now another Customer Dashboard, without the shared symbol next to it. Click that version of Customer Dashboard, and the clocks become small again.
 
 1. Switch back to the shared Customer Dashboard.
 
-1. Click the **Full Screen** button.
-
-    Note that the browser menus and bars have all disappeared.
+1. Click the **Full Screen** button. The browser menus and bars have all disappeared.
 
 1. Click the **Exit Full Screen** to return to the standard screen.
 
@@ -144,7 +142,7 @@ If you want to prevent a shared dashboard from being available for selection, yo
 
 1. On the **All dashboards** blade, under **TYPE**, select **Shared dashboards**.
 
-    Note that **Customer Dashboard** no longer appears in the list of available dashboards.
+    **Customer Dashboard** no longer appears in the list of available dashboards.
 
 1. Close the **All dashboards** blade.
 
@@ -166,7 +164,7 @@ If you want to prevent a shared dashboard from being available for selection, yo
 
 1. In the **Reset dashboard to default state** message box, click **Yes**.
 
-    Note that the Customer Dashboard has reset to its default tiles.
+    The Customer Dashboard has reset to its default tiles.
 
 1. Click **Done customizing**.
 

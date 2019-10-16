@@ -21,15 +21,15 @@ quiz:
     choices:
     - content: XML
       isCorrect: false
-      explanation: "Azure dashboards are stored as JSON files which allows them to be uploaded and downloaded to share with other members of the Azure directory."
+      explanation: "Azure dashboards are stored as JSON files, which allow them to be uploaded and downloaded to share with other members of the Azure directory."
     - content: JSON
       isCorrect: true
-      explanation: "Azure dashboards are stored as JSON files which allows them to be uploaded and downloaded to share with other members of the Azure directory."
+      explanation: "Azure dashboards are stored as JSON files, which allow them to be uploaded and downloaded to share with other members of the Azure directory."
     - content: PNG
       isCorrect: false
-      explanation: "Azure dashboards are stored as JSON files which allows them to be uploaded and downloaded to share with other members of the Azure directory."
+      explanation: "Azure dashboards are stored as JSON files, which allow them to be uploaded and downloaded to share with other members of the Azure directory."
 
-  - content: "Azure Advisor provides advice on which of these:"
+  - content: "Azure Advisor provides advice on which of these topics:"
     choices:
     - content: "Creating an Azure account"
       isCorrect: false

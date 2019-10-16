@@ -1,4 +1,4 @@
-Let's look at how to create and modify dashboards using the Azure Portal, and by editing the underlying JSON file directly. In this unit, you'll learn your way around, and in the next unit you will try out the things you've learned.
+Let's look at how to create and modify dashboards using the Azure portal, and by editing the underlying JSON file directly. In this unit, you'll learn to navigate around the portal. And in the next unit, you will try out the things you've learned.
 
 ## What is a dashboard?
 
@@ -6,7 +6,7 @@ A _dashboard_ is a customizable collection of UI tiles displayed in the Azure po
 
 Dashboards give you considerable flexibility regarding how you manage Azure. For example, you can create dashboards for specific roles within the organization, and then use role-based access control (RBAC) to control who can access that dashboard. Hence, your database administrator would have a dashboard that contains views of the SQL database service, whereas your Azure Active Directory administrator would have views of the users and groups within Azure AD. You can even customize the portal between your production and development environments within the portal - creating a specific dashboard for each environment you are managing.
 
-Dashboards are stored as JavaScript Object Notation (JSON) files. This means they can be uploaded and downloaded to other computers, or shared with members of the Azure directory. Azure stores dashboards within resource groups, just like virtual machines or storage accounts that you can manage within the portal.
+Dashboards are stored as JavaScript Object Notation (JSON) files. This format means they can be uploaded and downloaded to other computers, or shared with members of the Azure directory. Azure stores dashboards within resource groups, just like virtual machines or storage accounts that you can manage within the portal.
 
 > [!TIP]
 > Because dashboards are JSON files, you can also [customize them programmatically](https://docs.microsoft.com/azure/azure-portal/azure-portal-dashboards-create-programmatically), making them compelling administrative tools. Also, some tile types can be query-based, so they update automatically when the source data changes.
@@ -31,7 +31,7 @@ These default web parts are
 
 ## Creating and managing dashboards
 
-Along the top of the dashboard are the controls that enable you to create, upload, download, edit, and share a dashboard. You can also switch a dashboard to full screen, clone it, or delete it.
+At the top of the dashboard are the controls that enable you to create, upload, download, edit, and share a dashboard. You can also switch a dashboard to full screen, clone it, or delete it.
 
 ![Screenshot showing the Customize dashboard controls](../media/6-customise-dashboard-controls.png)
 
@@ -39,21 +39,21 @@ Along the top of the dashboard are the controls that enable you to create, uploa
 
 To the far left of the toolbar is the **Select Dashboard** drop-down control. Clicking this control enables you to select from dashboards that you have already defined for your account. This control makes it simple for you to define multiple dashboards for different purposes and then switch from one to another and back again, depending on what you are trying to do at the time.
 
-Note that any dashboards that you create will initially be private; that is, only you can see them. To make a dashboard available across your enterprise, you need to share it. We'll look at that option shortly.
+Dashboards that you create will initially be private; that is, only you can see them. To make a dashboard available across your enterprise, you need to share it. We'll look at that option shortly.
 
 ## Create a new dashboard
 
-To create a new dashboard, click **New dashboard**. The dashboard workspace appears, with no tiles present. You can then add, remove and adjust tiles however you like. When you are finished customizing the dashboard, click **Done customizing** to save and switch to that dashboard.
+To create a new dashboard, click **New dashboard**. The dashboard workspace appears, with no tiles present. You can then add, remove, and adjust tiles however you like. When you are finished customizing the dashboard, click **Done customizing** to save and switch to that dashboard.
 
 ## Upload and Download
 
 The **Upload** and **Download** buttons enable you to download your current dashboard as a JSON file, customize it, and then distribute it and upload it or have someone else upload that file back to the Azure portal, thereby replacing their current dashboard.
 
-If you click **Download**, the current dashboard downloads the JSON code as a file you can edit locally. You can then upload it back to Azure by clicking the **Upload** button. This is discussed further below.
+If you click **Download**, the current dashboard downloads the JSON code as a file you can edit locally. You can then upload it back to Azure by clicking the **Upload** button. Downloading and uploading dashboards is discussed further below.
 
 ## Edit a dashboard using the portal
 
-Although you can edit a dashboard by downloading the JSON file, changing values in the file, and uploading the file back to Azure, you may prefer a graphical approach to designing the user interface. To use the GUI to configure your current dashboard you can switch to editing mode in several ways:
+Although you can edit a dashboard by downloading the JSON file, changing values in the file, and uploading the file back to Azure, you may prefer a graphical approach to designing the user interface. To use the GUI to configure your current dashboard, you can switch to editing mode in several ways:
 
 * Click the **Edit** (pencil icon) button.
 * Right-click on the dashboard background area and select **Edit**.
@@ -128,7 +128,7 @@ You can then click **Manage users** to specify the users who have access to that
 
 To switch to a shared dashboard, you click on the list of dashboards, and then click **Browse all dashboards**.
 
-![Screenshot showing a list of shared dashobards with the Browse all dashboards link highlighted.](../media/6-browse-dashboards.png)
+![Screenshot showing a list of shared dashboards with the Browse all dashboards link highlighted.](../media/6-browse-dashboards.png)
 
 You will now see the **All dashboards** blade, with the names of any shared dashboards displayed. Just click on a dashboard to apply it to the Azure portal.
 
