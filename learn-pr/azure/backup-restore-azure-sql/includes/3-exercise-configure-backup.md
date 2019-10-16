@@ -4,11 +4,11 @@ Now that you have planned a comprehensive backup strategy for Azure SQL Database
 
 Here, you'll create a database in Azure and then configure backups. You'll set the retention to 28 days, to ensure that you have 4 weeks of backups retained in accordance with your policy. You'll also add some content to the database.
 
-## Create a server and database
+## Create a SQL Database server and database
 
-Let's use the Azure CLI to create a SQL Server instance and a database instance.
+Let's use the Azure CLI to create a SQL Database server and a database.
 
-1. Run the following commands in Azure Cloud Shell to set up some variables for creation of the SQL Server instance. 
+1. Run the following commands in Azure Cloud Shell to set up some variables for creation of the SQL Database server. 
 
     ```powershell
     $serverName = "ERPServer-$(Get-Random)"
@@ -21,7 +21,7 @@ Let's use the Azure CLI to create a SQL Server instance and a database instance.
    This step also sets the location for your server to the location of the resource group. Finally, it sets the credentials that you'll use to access the database server. When you're prompted, enter a complex password of your choice. 
 
 
-1. Run the `New-AzSqlServer` command to create a SQL Server instance to store the database.
+1. Run the `New-AzSqlServer` command to create a SQL Database server to store the database.
 
     ```powershell
     New-AzSqlServer `
