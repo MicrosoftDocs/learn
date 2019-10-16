@@ -14,3 +14,10 @@ durationInMinutes: 5
 azureSandbox: true
 content: |
   [!include[](includes/6-exercise-configure-azure-diagnostic-extension.md)]
+tasks:
+- action: exists
+  environment: azure
+  hint: "Install the Azure diagnostic extension."
+  azure:
+    resource:
+      type: "Microsoft.Compute/virtualMachines/extensions"
