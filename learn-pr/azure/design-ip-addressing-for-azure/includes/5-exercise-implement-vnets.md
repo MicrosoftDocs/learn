@@ -135,7 +135,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
     ```azurecli
     az network vnet subnet list \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --vnet-name CoreServicesVnet \
+        --vnet-name ManufacturingVnet \
         --output table
     ```
 
