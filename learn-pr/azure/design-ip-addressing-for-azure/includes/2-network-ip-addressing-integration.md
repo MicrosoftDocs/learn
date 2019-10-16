@@ -29,27 +29,25 @@ The administrator can add or remove on-premises subnets to accommodate network d
 
 Azure virtual networks use private IP addresses. The ranges of private IP addresses are the same as for on-premises IP addressing. As in on-premises networks, the administrator has full control over the IP address assignment, name resolution, security settings, and security rules. The administrator can add or remove subnets depending on the CIDR for the IP address block.
 
-
-
 In a typical Azure network design, we usually have these components:
 
-- Virtual network
-- Subnets (frontend/backend)
+- Virtual networks
+- Subnets
 - Network security groups
-- Firewall
-- Load balancer (internal/external)
+- Firewalls
+- Load balancers
 
 ![Typical Azure network design](../media/2-azure-network.png)
 
 In Azure, the network design has similar features and functions to an on-premises network, but the structure of the network is different. The Azure network does not follow the typical on-premises hierarchical network. The Azure network provides the ability to scale up and scale down infrastructure based on the demand. The provisioning in the Azure network happens in a matter of seconds. There are no hardware devices such as routers or switches. The entire infrastructure is virtual and you slice it into chunks that suit your requirements.
 
-In Azure, you would typically implement a network security group as well as a firewall. You use subnets to isolate frontend services, such as web servers and DNS, and backend services, such as databases and storage systems. Network security groups filter both internal and external traffic at the network layer. A firewall has more extensive network layer and application layer filtering capabilities. By deploying both Network Security groups and a firewall, you have improved isolation of resources for a secure network architecture.
+In Azure, you would typically implement a network security group as well as a firewall. You use subnets to isolate frontend services, such as web servers and DNS, and backend services, such as databases and storage systems. Network security groups filter both internal and external traffic at the network layer. A firewall has more extensive network layer and application layer filtering capabilities. By deploying both network security groups and a firewall, you have improved isolation of resources for a secure network architecture.
 
 ## Basic properties of Azure virtual networks
 
-A virtual network is your network in the cloud. You can divide your virtual network into multiple subnets. Each subnet has a portion of the IP address space assigned to your virtual network. You can add, remove, expand, or shrink a subnet if there are no VMs or services deployed within it. 
+A virtual network is your network in the cloud. You can divide your virtual network into multiple subnets. Each subnet has a portion of the IP address space assigned to your virtual network. You can add, remove, expand, or shrink a subnet if there are no VMs or services deployed within it.
 
-By default, all subnets within an Azure virtual network can communicate with each other, however, you can use a Network Security Group to deny communication between subnets. The smallest subnet that is supported uses a /29-bit subnet mask. The largest supported subnet uses an /8-bit subnet mask.
+By default, all subnets within an Azure virtual network can communicate with each other, however, you can use a network security group to deny communication between subnets. The smallest subnet that is supported uses a /29 subnet mask. The largest supported subnet uses a /8 subnet mask.
 
 ## Integrate Azure with on-premises networks
 
