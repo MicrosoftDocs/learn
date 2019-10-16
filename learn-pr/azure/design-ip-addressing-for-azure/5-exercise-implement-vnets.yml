@@ -29,11 +29,11 @@ tasks:
     resource:
       type: "Microsoft.Network/virtualNetworks"
       name: ManufacturingVnet
-  hint: "Make sure you have created the CoreServicesVnet"
+  hint: "Make sure you have created the ManufacturingVnet"
 - action: exists
   environment: azure
   azure:
     resource:
       type: "Microsoft.Network/virtualNetworks"
       name: ResearchVnet
-  hint: "Make sure you have created the CoreServicesVnet"
+  hint: "Make sure you have created the ResearchVnet"
