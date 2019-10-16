@@ -27,14 +27,17 @@ quiz:
     - content: "A dedicated network security group"
       isCorrect: false
       explanation: "A network security group is used to filter traffic. They are not required when you connect an on-premises network to a VNet."
-  - content: "How many types of VPN gateways are available Azure?"
+  - content: "Which of the following IP address ranges is routable over the internet?"
     choices:
-    - content: "1"
+    - content: "10.0.0.0 to 10.255.255.255"
       isCorrect: false
-      explanation: "In Azure there are two types of gateways: Static routing VPN gateways, which are policy-based, and dynamic routing VPN gateways, which are route-based."
-    - content: "2"
+      explanation: "This range is not routable over the internet."
+    - content: "215.11.0.0 to 215.11.255.255"
       isCorrect: true
-      explanation: "In Azure there are two types of gateways: Static routing VPN gateways, which are policy-based, and dynamic routing VPN gateways, which are route-based."
-    - content: "3"
+      explanation: "Correct, this is address range is routable over the internet."
+    - content: "172.16.0.0 to 172.31.255.255"
       isCorrect: false
-      explanation: "In Azure there are two types of gateways: Static routing VPN gateways, which are policy-based, and dynamic routing VPN gateways, which are route-based."
+      explanation: "This range is not routable over the internet."    
+    - content: "192.168.0.1 to 192.168.255.255"
+      isCorrect: false
+      explanation: "This range is not routable over the internet."
