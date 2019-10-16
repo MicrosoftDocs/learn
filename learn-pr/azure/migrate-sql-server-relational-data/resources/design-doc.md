@@ -37,10 +37,10 @@ Identify the subtasks of *Migrate your relational data to Azure SQL Database*
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| Describe the elements of the migration process. | ...plan a migration... | Knowledge check | Select the proper migration strategy for your relational data stored in SQL Server. | Yes |
-| Choose when to use migration with downtime. | ...select the proper migration strategy and tools... | Knowledge check | Select the proper migration strategy for your relational data stored in SQL Server. | Yes |
-| Choose when to use transactional replication. | ...select the proper migration strategy and tools... | Knowledge check | Select the proper migration strategy for your relational data stored in SQL Server. | Yes |
-| Migrate a database with downtime. | You will be migrating these databases to Azure SQL Database... | Exercise | Perform a migration from SQL Server to a single Azure SQL Database using the migration with downtime process. | Yes, possibly multiple |
+| 1. Describe the elements of the migration process. | ...plan a migration... | Knowledge check | Select the proper migration strategy for your relational data stored in SQL Server. | No, 2 & 3 |
+| 2. Choose when to use migration with downtime. | ...select the proper migration strategy and tools... | Knowledge check | Select the proper migration strategy for your relational data stored in SQL Server. | No, 1 & 3 |
+| 3. Choose when to use transactional replication. | ...select the proper migration strategy and tools... | Knowledge check | Select the proper migration strategy for your relational data stored in SQL Server. | No, 1 & 2 |
+| 4. Migrate a database with downtime. | You will be migrating these databases to Azure SQL Database... | Exercise | Perform a migration from SQL Server to a single Azure SQL Database using the migration with downtime process. | Yes |
 
 ## Outline the units
 
