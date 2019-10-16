@@ -3,7 +3,7 @@ uid: learn.iot.create-your-first-iot-central-app.create-a-device-set-dashboard
 metadata:
   title: Create a Device Set dashboard
   description: Create a single dashboard to monitor multiple devices.
-  ms.date: 09/01/2019
+  ms.date: 10/17/2019
   author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial

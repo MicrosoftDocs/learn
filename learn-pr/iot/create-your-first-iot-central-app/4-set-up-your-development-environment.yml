@@ -3,7 +3,7 @@ uid: learn.iot.create-your-first-iot-central-app.set-up-your-development-environ
 metadata:
   title: Set up your development environment
   description: Download and install the tools needed for IoT Central code development.
-  ms.date: 09/01/2019
+  ms.date: 10/17/2019
   author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
