@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.hub-and-spoke-network-architecture.3-planning-virtual-networks
+uid: learn.hub-and-spoke-network-architecture.3-plan-virtual-networks
 metadata:
-  title: Planning virtual networks on Azure
-  description: Explore virtual networking in the Azure platform, the design considerations needed and how to implement Azure ExpressRoute for connectivity to on-premises networks.
-  ms.date: 04/30/2019
+  title: Plan virtual networks on Azure
+  description: Plan virtual networks on Azure
+  ms.date: 10/21/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Planning virtual networks on Azure
-durationInMinutes: 10
+title: Plan virtual networks on Azure
+durationInMinutes: 8
 content: |
-  [!include[](includes/3-planning-virtual-networks.md)]
+  [!include[](includes/3-plan-virtual-networks.md)]
 quiz:
   title: Check your knowledge
   questions:

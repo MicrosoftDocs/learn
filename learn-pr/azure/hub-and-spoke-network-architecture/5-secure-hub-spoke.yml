@@ -3,13 +3,13 @@ uid: learn.hub-and-spoke-network-architecture.5-secure-hub-spoke
 metadata:
   title: Secure your hub and spoke network
   description: Secure your hub and spoke network
-  ms.date: 04/30/2019
+  ms.date: 10/21/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Secure your hub and spoke network
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/5-secure-hub-spoke.md)]
 quiz:
@@ -22,7 +22,7 @@ quiz:
       explanation: "There are default rules, and one does restrict access to inbound traffic from the internet. However it can be overridden."
     - content: "They act like a stateful firewall, monitoring network traffic and enforcing policies you define."  
       isCorrect: false
-      explanation: "This is how the Azure Firewall works, not network security sroups."
+      explanation: "This is how the Azure Firewall works, not network security groups."
     - content: "They allow you to create traffic rules, which can allow or deny traffic over specified ports and protocols. "
       isCorrect: true
       explanation: "This is the correct definition of a network security group."     
@@ -34,6 +34,6 @@ quiz:
     - content: "It provides a base layer of security by allowing you to segment and isolate your Azure resources."
       isCorrect: false
       explanation: "Segmenting of resources happens when you create virtual networks and have resources assigned to them."
-    - content: "It provides quick access to all the Azure backbone resources, allowing you to connect your resources directly without going outside the Azure network."
+    - content: "It routes traffic from your network to Azure over the internet."
       isCorrect: false
-      explanation: "Using an ExpressRoute isn't about speed, or Service Endpoints connections."
+      explanation: "Traffic over an ExpressRoute circuit is not routed over the internet, instead it traverses a private circuit."
