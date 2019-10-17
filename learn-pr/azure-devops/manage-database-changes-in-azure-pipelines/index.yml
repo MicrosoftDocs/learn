@@ -7,7 +7,6 @@ metadata:
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
-  #ms.learn-contact: thpetche
   ms.prod: learning-azure
 title: Manage database changes in Azure Pipelines
 summary: Use a release approval in Azure Pipelines to help coordinate database schema changes between developers and database administrators.
@@ -37,10 +36,12 @@ products:
 units:
 - learn.azdo.manage-database-changes-in-azure-pipelines.1-introduction
 - learn.azdo.manage-database-changes-in-azure-pipelines.2-design-database-schema-management
-- learn.azdo.manage-database-changes-in-azure-pipelines.3-set-up-environment
-- learn.azdo.manage-database-changes-in-azure-pipelines.4-deploy-with-database
-- learn.azdo.manage-database-changes-in-azure-pipelines.5-deploy-with-database-schema-change
+- learn.azdo.manage-database-changes-in-azure-pipelines.3-create-database
+- learn.azdo.manage-database-changes-in-azure-pipelines.4-run-locally
+- learn.azdo.manage-database-changes-in-azure-pipelines.5-set-up-environment
+- learn.azdo.manage-database-changes-in-azure-pipelines.6-deploy-pipeline
+- learn.azdo.manage-database-changes-in-azure-pipelines.7-deploy-schema-change
 - learn.azdo.manage-database-changes-in-azure-pipelines.8-clean-up-environment
-- learn.azdo.manage-database-changes-in-azure-pipelines.7-summary
+- learn.azdo.manage-database-changes-in-azure-pipelines.9-summary
 badge:
   uid: learn.azdo.manage-database-changes-in-azure-pipelines.badge

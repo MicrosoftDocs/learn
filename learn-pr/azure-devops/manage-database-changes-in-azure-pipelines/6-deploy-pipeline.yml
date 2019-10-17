@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.manage-database-changes-in-azure-pipelines.6-deploy-pipeline
+title: Exercise - Move database schema changes through Azure Pipelines
+metadata:
+  title: Exercise - Move database schema changes through Azure Pipelines
+  description: Run the web application locally to verify that it can connect to the database
+  ms.date: 09/30/2019
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 14
+content: |
+  [!include[](includes/6-deploy-pipeline.md)]

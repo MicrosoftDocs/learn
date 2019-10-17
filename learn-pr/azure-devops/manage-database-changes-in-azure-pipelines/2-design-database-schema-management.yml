@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.manage-database-changes-in-azure-pipelines.2-design-database-schema-management
-title: Design database schema management in Azure Pipelines
+title: Design a database schema change workflow in Azure Pipelines
 metadata:
-  title: Design database schema management in Azure Pipelines
-  description: Design database schema management in Azure Pipelines
+  title: Design a database schema change workflow in Azure Pipelines
+  description: Design a database schema change workflow in Azure Pipelines
   ms.date: 09/30/2019
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 1
+durationInMinutes: 8
 content: |
   [!include[](includes/2-design-database-schema-management.md)]
 quiz:
