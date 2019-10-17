@@ -1,4 +1,4 @@
-Throughout this learning path, you helped the Tailspin team set up an automated CI/CD pipeline, complete with multiple stages and both functional and non-functional tests. 
+In this learning path, you've been helping the Tailspin team set up an automated release pipeline, complete with multiple stages and both functional and non-functional tests. 
 
 In this module, you help the team solve another problem. How do they implement a deployment pattern that lets them release to production in a way that's best both for the company and for their users? You'll help them evaluate the different possibilities and then implement the one they decide on.
 
