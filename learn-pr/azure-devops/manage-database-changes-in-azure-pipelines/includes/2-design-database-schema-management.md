@@ -12,7 +12,7 @@ In this section, you:
 
 ## The meeting
 
-The team is currently deploying their webapp through a series of stages. The a _Dev_ stage is where all of the development pieces come together. The _Test_ stage is where QA performs testing. _Staging_ is where the webapp is available for management to approve before it moves to production. Here the team discusses how to add a database as the data storage solution for the webapp. The database and the webapp are brought together in the _Dev_ stage.
+The team is currently deploying their webapp through a series of stages. The _Dev_ stage is where all of the development pieces come together. The _Test_ stage is where QA performs testing. _Staging_ is where the webapp is available for management to approve before it moves to production. Here the team discusses how to add a database as the data storage solution for the webapp. The database and the webapp are brought together in the _Dev_ stage.
 
 **Andy:** Good morning. We have all seen how Azure Pipelines brings together our development and operations processes more efficiently. Because of this, we've been able to move forward in our development and we're ready to connect the website to a real database. I think this integration can happen as early as the _Dev_ stage. By connecting the website to the database early in the pipeline, we can track changes and measure performance as changes move through the pipeline.
 
@@ -50,7 +50,7 @@ When planning your operational needs, you might ask yourself these questions:
     Reporting data may only change at month-end or quarterly. This could be a candidate for a data warehouse. If the data changes throughout the day, then you need something that can handle fast transactional throughput.
 * Do I always need the latest data?
 
-    This relates to how often the data changes. Perhaps the data change often, but you only need the month-end results. Or it could be that you are stock trading and you need up-to-the-minute (or faster) results.
+    This relates to how often the data changes. Perhaps the data changes often, but you only need the data at the end of each month. Or it could be that you are stock trading and you need to fetch data as quickly as possible.
 * Do I need to run complex analytical queries?
 
     Complex analytical queries are queries that can be done on several dimensions and would be a good candidate for a data warehouse.
@@ -60,7 +60,7 @@ When planning your operational needs, you might ask yourself these questions:
 
 **Whether or not you need transactions**
 
-Transactions are needed when your data has relationships and those relationships keep the data from getting out of sync or help you to query the data. For example, let's say that you upgraded your gym membership to receive added privileges. Your account has been updated to change you more per month, but the corresponding update to your membership profile failed. This situation might cause you lose access to the privileges you are paying for. A transaction would ensure that both pieces of data are updated at the same time. If either part fails, the entire transaction is rolled back.
+Transactions are needed when your data has relationships and those relationships keep the data from getting out of sync or help you to query the data. For example, let's say that you upgraded your gym membership to receive added privileges. Your account has been updated to charge you more per month, but the corresponding update to your membership profile failed. This situation might cause you lose access to the privileges you are paying for. A transaction would ensure that both pieces of data are updated at the same time. If either part fails, the entire transaction is rolled back.
 
 There are two types of transactions that your data might need. *Online Transaction Processing (OLTP)* is used for relational data. That is similar to the example above. *Online Analytical Processing (OLAP)* is used for more complex queries when your data is in a data structure called a *cube* or *data warehouse*. This is for data analysis systems that query on many dimensions of data. For example, you want to know how any blue widgets were sold in January of last year in the northeast region as compared to green widgets sold in May through June of this year in the southwest, and who were the top sales people for widgets in that region.
 
@@ -108,9 +108,9 @@ To update the code to read from a database, instead of from files, Mara creates 
         }
   ```
 
-The connection string uses _SQL Authentication_, which includes the username and password. Storing this information in plain text in the *appsettings.json* would mean that the username and password would be readable by anyone who can access this file. Instead, Mara uses the _Secret Manager_ tool in Visual Studio to store this string in a file that is not maintained in source control. Let's listen in as she explains this to the team.
+The connection string uses SQL Authentication, which includes the username and password. Storing this information in plain text in *appsettings.json* would mean that the username and password would be readable by anyone who can access this file. Instead, Mara uses the Secret Manager tool in Visual Studio to store this string in a file that is not maintained in source control. Let's listen in as she explains this to the team.
 
-**Mara:** When developing the app locally, we can use a file that's named *secrets.json*, which doesn't get pushed to GitHub. Visual Studio can set that up for us using the _Secret Manager_ tool. But when the deployed webapp needs this information, it will be in Azure App Service *appsettings.json* file. App Service will have strict limited permissions as to who can see the files there. We can provide this information to our App Service instance through Azure Pipelines. Therefore, we won't need to add it to our local *appsettings.json*.
+**Mara:** When developing the app locally, we can use a file that's named *secrets.json*, which doesn't get pushed to GitHub. Visual Studio can set that up for us using the Secret Manager tool. But when the deployed webapp needs this information, it will be in Azure App Service *appsettings.json* file. App Service will have strict limited permissions as to who can see the files there. We can provide this information to App Service  through Azure Pipelines. Therefore, we won't need to add it to our local *appsettings.json*.
 
 **Andy:** Good idea, Mara. Now we are getting somewhere.
 
@@ -118,7 +118,7 @@ The connection string uses _SQL Authentication_, which includes the username and
 
 ## The role of the SQL Server Data Tools database project in Azure Pipelines
 
-_SQL Server Data Tools_, which runs on Windows, provides a project type that you can use to define the database schema from Visual Studio. This kind of project produces what's called a _dacpac_ file. When you unpack this file, you see the SQL scripts for creating the database schema. For example, you might see a `CREATE TABLE` script for each table that's defined in the database project. SQL Database can unpack that file and apply the schema changes.
+SQL Server Data Tools, which runs on Windows, provides a project type that you can use to define the database schema from Visual Studio. This kind of project produces what's called a _dacpac_ file. When you unpack this file, you see the SQL scripts for creating the database schema. For example, you might see a `CREATE TABLE` script for each table that's defined in the database project. SQL Database can unpack that file and apply the schema changes.
 
 ![The database project in Visual Studio on Windows](../media/2-database-project.png)
 

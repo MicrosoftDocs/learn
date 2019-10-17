@@ -21,7 +21,7 @@ Mara has created the development database with test data in it. She exported thi
 > [!NOTE]
 > If you haven't worked with blob storage on Azure, just follow along. We'll point you to more resources at the end of this module.
 
-1. Download the [bacpac file](https://sqldbtutorial.blob.core.windows.net/bacpacs/tailspindatabase.bacpac?azure-portal=true).
+1. Download the [bacpac file](https://sqldbtutorial.blob.core.windows.net/bacpacs/tailspindatabase.bacpac?azure-portal=true) to your computer.
 
     You'll need to upload this file to your storage account later.
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true). Then select **Storage accounts** on the left.
@@ -95,14 +95,14 @@ Before you can explore your database, you need to set a firewall rule that permi
     Your current IP address is printed next to **Client IP address**.
 1. Enter the following rule:
 
-  | Property  | Value  |
-  |---|---|
-  | Rule name| LocalIP |
-  | Start IP | Your IP address |
-  | End IP | Your IP address |
+    | Property  | Value  |
+    |---|---|
+    | Rule name| LocalIP |
+    | Start IP | Your IP address |
+    | End IP | Your IP address |
 
 1. Ensure that **Allow Azure services and resources to access this server** is set to **On**.
-1. Select **Save** at the top and then **OK**.
+1. Select **Save** at the top and then select **OK**.
 
 ## Explore the database
 
@@ -118,7 +118,7 @@ The database contains four tables: **dbo.Profile**, **dbo.Scores**, **dbo.Achiev
     > If you get an error message that contains an IP address, copy that IP address to your clipboard. Then click the link in the error message to return to the firewall rules. Update the IP addresses in the **LocalIP** firewall rule with the contents of the clipboard.
     > Then click **Save** and then **OK**.
     > Then repeat this step.
-1. Expand **Tables**, and then expand each table in turn. You should see four tables **dbo.Profile**, **dbo.Scores**, **dbo.Achievements**, and **dbo.ProfileAchievements**, together with the columns and keys for each table.
+1. Expand **Tables**, and then expand each table in turn. You see four tables, **dbo.Profile**, **dbo.Scores**, **dbo.Achievements**, and **dbo.ProfileAchievements**, together with the columns and keys for each table.
 
     ![Screenshot of the tables in the tailspin database](../media/3-database-tables.png)
 
@@ -128,7 +128,7 @@ The database contains four tables: **dbo.Profile**, **dbo.Scores**, **dbo.Achiev
     SELECT * FROM [dbo].[Profiles]
     ```
 
-    This statement retrieves the data from the **Profiles** table. The results window should display 20 rows.
+    This statement retrieves the data from the **Profiles** table. The results window displays the first 20 rows.
 
     ![Screenshot of the query editor in the Azure portal, showing the data retrieved from the Profiles table](../media/3-select-all-profiles.png)
 
@@ -138,14 +138,14 @@ The database contains four tables: **dbo.Profile**, **dbo.Scores**, **dbo.Achiev
     SELECT * FROM [dbo].[Scores]
     ```
 
-    This time you should see the scores in the **Results** window. There are 25 rows. Notice that the Score entry is related to the Profile by the ProfileID. The is the ID from the Profile table.
+    This time you see the scores in the **Results** window. There are 25 rows. Notice that the Score entry is related to the Profile by the ProfileID. The is the ID from the Profile table.
 1. Change the query as follows, and then select **Run**.
 
     ```SQL
     SELECT * FROM [dbo].[Achievements]
     ```
 
-    This time you should see the list of possible Achievements in the **Results** window. There are 10 rows. Notice that they are not related to any profile. This is because profiles and achievements are a many-to-many relationship. This means a profile can have many achievements, and an achievement and show up on many profiles. To get the right achievements with the right profiles a ProfileAchievements table relates them.
+    This time you see the list of possible Achievements in the **Results** window. There are 10 rows. Notice that they are not related to any profile. This is because profiles and achievements have a many-to-many relationship. This means a profile can have many achievements, and an achievement and show up on many profiles. To get the right achievements with the right profiles a ProfileAchievements table relates them.
 1. Change the query as follows, and then select **Run**.
 
     ```SQL

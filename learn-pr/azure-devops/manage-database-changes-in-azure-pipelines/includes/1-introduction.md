@@ -4,7 +4,7 @@ In [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-mu
 
 The stages that you and the team defined provide the overall shape of your pipeline, but there's more that you can add to each stage. For example, the _Dev_ stage provides the opportunity to verify that multiple components, such as the web application and the database, work together in a real, working environment.
 
-However, the website still reads test data from local files, and is not yet connected to a database. In this module, you connect the website to Azure SQL Database and load your database with sample data.
+However, the web application still reads test data from local files, and is not yet connected to a database. In this module, you connect the website to Azure SQL Database and load your database with sample data.
 
 When an application uses a database, the database administrator (DBA) and the app developers must work together to design and maintain the database schema. Azure DevOps can help developers and DBAs coordinate their plans and deploy database schema changes more quickly and with greater safety.
 

@@ -66,7 +66,7 @@ Here, you fetch the connection string to your database and store it in a file na
 
 ### Specify the connection string locally
 
-1. From Visual Studio Code, open **Tailspin.SpaceGame.Web.csproj** under the *Tailspin.SpaceGame.Web* directory. Notice the entry for `UserSecretsId`. This is how the web project find your *secrets.json* file. You create a *secrets.json* file in a directory with that GUID in the file's name.
+1. From Visual Studio Code, open **Tailspin.SpaceGame.Web.csproj** under the *Tailspin.SpaceGame.Web* directory. Notice the entry for `UserSecretsId`. This is how the web project locates your *secrets.json* file. You create a *secrets.json* file in a directory with that GUID in the file's name.
 
     ```xml
     <UserSecretsId>d7faad9d-d27a-4122-89ff-b9376c13b153</UserSecretsId>

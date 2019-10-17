@@ -1,10 +1,10 @@
 At this point, the team's pipeline has four stages. The first stage produces the build artifact and the second stage deploys the _Space Game_ web application to App Service in the _dev_ environment. The third and fourth stages deploy the _Space Game_ web application to the _test_ and _staging_ environments. We have taken out the triggers and approvals from the previous module to concentrate on just this section of the pipeline.
 
-Here, you follow along with Andy, Mara, and Tim as they modify the pipeline to add stages that will script the database changes for the DBA, and apply those changes after approval.
+Here, you follow along with Andy, Mara, and Tim as they modify the pipeline to add stages that will script the database changes for the DBA, and apply those changes after they are approved.
 
 ## Create the Azure App Service environments
 
-In [Create a release management workflow with Azure Pipelines](/learn/modules/create-a-release-management-workflow?azure-portal=true), you created one App Service instance that corresponds to each of the _dev_, _test_, and _staging_ environments. There you worked through it step by step. Here we will create them all quickly using the command-line interface (CLI) through Azure Cloud Shell.
+In [Create a release management workflow with Azure Pipelines](/learn/modules/create-a-release-management-workflow?azure-portal=true), you created one App Service instance that corresponds to each of the _dev_, _test_, and _staging_ environments. There you worked through it step by step. Here, you use the Azure command-line interface (CLI) through Azure Cloud Shell to create them all in one step.
 
 ### Bring up Cloud Shell through the Azure portal
 
@@ -145,7 +145,7 @@ To do so, you:
     This creates an application setting called **DefaultConnection** that the application uses to connect to the database. This enables you to use the connection string without having to set it in the *appsettings.json* file, which would reveal your credentials in plain text in source control. Anyone with read access to App Service can read this configuration file. You will normally set permissions on App Service to restrict who has read access.
 
 > [!IMPORTANT]
-> Remember, the [Clean up your Azure DevOps environment](/learn/modules/create-a-release-management-workflow/8-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
+> Remember, the [Clean up your Azure DevOps environment](/learn/modules/manage-database-changes-in-azure-pipelines/8-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
 
 ## Create a service connection
 
@@ -217,7 +217,7 @@ To add the variable:
 
 ## Add the database stage to the pipeline
 
-Here you add the Azure Pipelines stage that will check for SQL Database schema changes so the DBA can approve or edit the proposed changes. In this exercise, there won't be any schema changes. You do that in the next exercise.
+Here you add the Azure Pipelines stage that checks for SQL Database schema changes so the DBA can approve or edit the proposed changes. In this exercise, there won't be any schema changes. You do that in the next exercise.
 
 1. Open the *azure-pipelines.yml* file from the `database` branch.
 1. Copy the new pipeline below and replace the code that is already in the *azure-pipelines.yml* file.
@@ -275,16 +275,16 @@ Here you add the Azure Pipelines stage that will check for SQL Database schema c
         Get-Content d:\a\1\s\GeneratedOutputFiles\$(databasename)_Script.sql | foreach {Write-Output $_}
     ```
 
-The `DBAVerificationApply` stage reads the auto-generated file and applies the change script to the database.
+    The `DBAVerificationApply` stage reads the auto-generated file and applies the change script to the database.
 
-   ```yml
+    ```yml
     steps:
     - download: current
-      artifact: dropDacpac
-      patterns: '**/*'
+        artifact: dropDacpac
+        patterns: '**/*'
     - task: SqlAzureDacpacDeployment@1
-      displayName: 'Deploy SQL schema'
-      inputs:
+        displayName: 'Deploy SQL schema'
+        inputs:
         azureSubscription: 'Resource Manager - Tailspin - Space Game'
         authenticationType: 'server'
         serverName: '$(servername).database.windows.net'
@@ -295,7 +295,7 @@ The `DBAVerificationApply` stage reads the auto-generated file and applies the c
         deploymentAction: 'Publish'
         dacpacFile: '$(Pipeline.Workspace)/dropDacpac/Tailspin.SpaceGame.Database/bin/$(buildConfiguration)/Tailspin.SpaceGame.Database.dacpac'
         ipDetectionMethod: 'AutoDetect'
-   ```
+    ```
 
 1. Move to your project's root directory. Here's an example:
 
@@ -303,7 +303,7 @@ The `DBAVerificationApply` stage reads the auto-generated file and applies the c
     cd ~/mslearn-tailspin-spacegame-web-deploy
     ```
 
-1. Save the file and commit it, but do not push it to origin yet. You still have some Azure DevOps setup to do.
+1. Save the file and commit it, but do not push your branch to GitHub yet.
 
     ```bash
     git add azure-pipelines.yml

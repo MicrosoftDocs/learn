@@ -6,7 +6,7 @@ In this section, you modify the pipeline to halt only when there are changes to 
 
 Here, you fetch the `schema-changes` branch from GitHub and checkout, or switch to, that branch.
 
-This branch contains the _Space Game_ web project with the changes to the website code that expects the Profile table to have a `favoriteMap` column. This new column's data will be displayed on the Profile page as **Favorite Galaxy**. It also has the Azure Pipelines configuration you created in the last unit.
+This branch contains the _Space Game_ web project with the changes to the website code that expects the Profile table to have a `favoriteMap` column. This new column's data will be displayed on the Profile page as **Favorite Galaxy**. It also has the Azure Pipelines configuration you created earlier.
 
 In the *Tailspin.SpaceGame.Database* project, a change has been made to the Profile table. The `favoriteMap` column has been added.
 
@@ -36,11 +36,11 @@ In the *Tailspin.SpaceGame.Database* project, a change has been made to the Prof
     1. Navigate back to your [Azure portal](https://portal.azure.com?azure-portal=true) and select **SQL Databases**.
     1. Select your database, **tailspindatabase**.
     1. Select **Query editor** and sign in.
-    1. In your local _schema-changes_ branch you see *FavoriteMapData.sql*. This SQL script adds a favorite galaxy string to each profile by filling in the `favoriteMap` column. Copy the contents of this file.
+    1. In your local `schema-changes` branch, you see *FavoriteMapData.sql*. This SQL script adds a favorite galaxy string to each profile by filling in the `favoriteMap` column. Copy the contents of this file.
     1. Paste the file contents into **Query 1** and select **Run** to populate the new table.
     1. Verify that the queries ran successfully.
     1. Select **New Query**.
-    1. In **Query 2** add the following T-SQL code:
+    1. In **Query 2**, add the following T-SQL code:
 
         ```sql
         SELECT * FROM dbo.Profiles
@@ -49,7 +49,7 @@ In the *Tailspin.SpaceGame.Database* project, a change has been made to the Prof
         Verify that the `favoriteMap` column is populated with data.
 1. Navigate to the one of your host names, for example **tailspin-space-game-web-dev-1234.azurewebsites.net**, and select a player to see the new data on the profile.
 
- ![The website with a profile showing the player's favorite galaxy](../media/7-profile-with-favorite-galaxy.png)
+    ![The website with a profile showing the player's favorite galaxy](../media/7-profile-with-favorite-galaxy.png)
 
 **Tim:** I think that went well. We managed to get the DBA involved and they are one tough customer. Score one for DevOps. But I can see a problem here. This pipeline is triggered with every change made to the application. We won't have schema changes every time, but the pipeline will stop and wait for approval even if the change file has no changes. How can we fix that?
 
@@ -83,7 +83,7 @@ if ($containsWord -contains $true) {
   Set-VSTeamAccount –Account $(Acct) -PersonalAccessToken $(PAT)
   $methodParameters = @{
     ProjectName = "$(System.TeamProject)"
-    Name = "Release Pipeline"}
+    Name = "Release"}
   $vg = Get-VSTeamVariableGroup @methodParameters
   $vars = @{}
   $vg.value.variables | Get-Member -MemberType *Property | %{$vars.($_.Name) = $vg.value.variables.($_.Name)}
@@ -108,7 +108,7 @@ Install-Module VSTeam -Scope CurrentUser -Force
 Set-VSTeamAccount –Account $(Acct) -PersonalAccessToken $(PAT)
 $methodParameters = @{
   ProjectName = "$(System.TeamProject)"
-  Name = "Release Pipeline"}
+  Name = "Release"}
 $vg = Get-VSTeamVariableGroup  @methodParameters 
 $vars = @{}
 $vg.value.variables | Get-Member -MemberType *Property | %{$vars.($_.Name) = $vg.value.variables.($_.Name)}
@@ -161,7 +161,7 @@ The VSTeam library needs to access your Azure DevOps organization, so it require
         | **Acct**    | The name of your organization in Azure DevOps. |
         | **PAT** | Enter your personal access token. |
 
-        Select the lock icon next to this value to ensure this value is encrypted.
+        Select the lock icon next to the value for **PAT** to ensure this value is encrypted.
     1. Select **Save** near the top of the page to save your variables to the pipeline.
 
 1. Open the *azure-pipelines.yml* file you got when you switched to the `schema-changes` branch.
@@ -183,4 +183,4 @@ The VSTeam library needs to access your Azure DevOps organization, so it require
 
 ## Recommended practices
 
-In this exercise, you created a variable to use as a condition for a stage. In practice, the variable must be unique per pipeline run since you may be running this pipeline in parallel with other changes. If you are using the **Release Pipeline** editor for your project, you can use the [suggested PowerShell from Donovan Brown](http://donovanbrown.com/post/Passing-variables-from-stage-to-stage-in-Azure-DevOps-release?azure-portal=true) to create a variable that is unique to that specific release. However, since you used the preview multi-stage YAML pipeline in this exercise, it is not possible yet to create this scenario. This is a feature that is planned in the future. It will be added to this exercise when the feature releases.
+In this exercise, you created a variable to use as a condition for a stage. In practice, the variable must be unique per pipeline run since you may be running this pipeline in parallel with other changes. If you are using the **Release Pipeline (classic)** editor for your project, you can use the [suggested PowerShell from Donovan Brown](http://donovanbrown.com/post/Passing-variables-from-stage-to-stage-in-Azure-DevOps-release?azure-portal=true) to create a variable that is unique to that specific release. However, since you used the preview multi-stage YAML pipeline in this exercise, it is not possible yet to create this scenario. This is a feature that is planned in the future. It will be added to this exercise when the feature releases.

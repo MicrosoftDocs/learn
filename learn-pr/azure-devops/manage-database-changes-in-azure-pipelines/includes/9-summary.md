@@ -16,8 +16,7 @@ Although the team is making steps towards improving their release cadence, there
 
 The team decided to use Azure SQL Database as the data storage technology. The data storage technology you use depends on the type of data you are storing. Here are some resources to help you decide what data storage technology to use for your projects:
 
-- [Choose a data storage approach in Azure](https://docs.microsoft.com/learn/modules/choose-storage-approach-in-azure/?azure-portal=True)
-
+- [Choose a data storage approach in Azure](https://docs.microsoft.com/learn/modules/choose-storage-approach-in-azure/?azure-portal=true)
 - [SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/sql-server-data-tools?view=sql-server-2017&azure-portal=true)
 
 In this module, you worked with ASP.NET Core, SQL Server Data Tools, Azure SQL Database, Azure Pipelines variables across stages, and configuring App Service. Here are some additional resources you can use to learn more:
@@ -26,18 +25,18 @@ In this module, you worked with ASP.NET Core, SQL Server Data Tools, Azure SQL D
 - [Azure SQL Database Deployment task](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/sql-azure-dacpac-deployment?view=azure-devops&azure-portal=true)
 - [Configure an App Service app in the Azure portal](https://docs.microsoft.com/azure/app-service/configure-common?azure-portal=true)
 - [Passing a variable from stage to stage in Azure DevOps](http://donovanbrown.com/post/Passing-variables-from-stage-to-stage-in-Azure-DevOps-release?azure-portal=true)
-- [Azure DevOps Services REST API](https://docs.microsoft.com/rest/api/azure/devops/search/?view=azure-devops-rest-5.1&azure-pipelines=true)
+- [Azure DevOps Services REST API](https://docs.microsoft.com/rest/api/azure/devops/search/?view=azure-devops-rest-5.1&azure-portal=true)
 
 Here are the Microsoft Learn modules mentioned in this module:
 
 - [Develop and configure an ASP.NET application that queries an Azure SQL database](https://docs.microsoft.com/learn/modules/develop-app-that-queries-azure-sql/?azure-portal=true)
-- [Choose a data storage approach in Azure](https://docs.microsoft.com/learn/modules/choose-storage-approach-in-azure/?azure-portal=True)
+- [Choose a data storage approach in Azure](https://docs.microsoft.com/learn/modules/choose-storage-approach-in-azure/?azure-portal=true)
 
 You learned to use _.dacpac_ and _.bacpac_ files. Here is a link to more information on those files and Data-tier Applications:
 
-- [Data-tier Applications](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/data-tier-applications?view=sql-server-ver15&azure=portal=true)
+- [Data-tier Applications](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/data-tier-applications?view=sql-server-ver15&azure-portal=true)
 
 You needed a blob storage container to hold your _bacpac_ file. Here are Microsoft Learn modules where you can learn more about working with storage on Azure.
 
--[Create an Azure Storage account](/learn/modules/create-azure-storage-account/?azure-portal=true)
--[Secure your Azure Storage account](/learn/modules/secure-azure-storage-account/?azure-portal=true)
+- [Create an Azure Storage account](/learn/modules/create-azure-storage-account/?azure-portal=true)
+- [Secure your Azure Storage account](/learn/modules/secure-azure-storage-account/?azure-portal=true)
