@@ -55,7 +55,7 @@ You can get monitoring data from across most of the Azure services, and report o
 The following alert capabilities aren't yet available for the generation of monitoring data:
 
 - Service health alerts based on activity logs
-- Web availability tests through Application Insights.
+- Web availability tests through Application Insights
 
 ## Managing alert rules
 
