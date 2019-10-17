@@ -1,5 +1,7 @@
 In this part, you bring up Azure SQL Database and populate your database with sample data. To verify the setup, you then run a few queries against your database from the Azure portal.
 
+For learning purposes, here you bring up one instance of Azure SQL Database that is connected to the App Service environment for each of the _Dev_, _Test_, and _Staging_ stages. In practice, you might associate a separate database instance with each environment. As you move towards _Staging_, you might switch from working with a small set of fictitious data to working with a full copy of the real data you're running in production.
+
 > [!IMPORTANT]
 > Remember that you need your own Azure subscription to complete the exercises in this module.
 
@@ -9,7 +11,7 @@ Mara has given the team a *bacpac* file so that they can create the database wit
 
 Here, you follow along with Andy, Mara, and Tim as they create the database.
 
-> [!NOTE] 
+> [!NOTE]
 > In this section, you bring up Azure SQL Database and verify that it contains sample data through the Azure portal because it's a great way to explore Azure services. In a future learning path, you'll learn how to automate the process.
 
 ## Get the bacpac file and upload the file to Azure storage
