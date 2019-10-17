@@ -1,4 +1,4 @@
-With your virtual machine (VM) running on Azure, you can view host-level metrics without installing any additional software. You can quickly create a VM by using Azure CLI commands. If you create a storage account at the same time, you can connect boot diagnostics when you create the VM.
+When you run your virtual machine (VM) on Azure, you can view host-level metrics without installing any additional software. You can quickly create a VM by using the Azure portal, Azure CLI, or PowerShell. You can connect boot diagnostics when you create the VM.
 
 You'd like to move to a new version of Ubuntu so you deploy a new VM. You only need to monitor host-level metrics. So you're only going to create a VM and a storage account.
 

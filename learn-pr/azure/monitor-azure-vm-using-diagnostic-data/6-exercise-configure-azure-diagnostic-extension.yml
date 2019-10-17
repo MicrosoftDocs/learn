@@ -4,12 +4,11 @@ title: Exercise - Configure the Azure diagnostic extension
 metadata:
   title: Exercise - Configure the Azure diagnostic extension
   description: Install the Azure diagnostic extension on your new VM. With the extension installed, you'll change the sample rate to every minute. With the guest OS level metrics being captured, you'll create a KPI dashboard to view them.
-  ms.date: 10/04/2019
+  ms.date: 10/18/2019
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 azureSandbox: true
 content: |

@@ -1,6 +1,6 @@
 The last time your band went on tour your website went down while your fans were trying to buy tickets. You're not sure if the web server ran out of memory, or the VM wasn't the right size. For your new tour, you'd like a dashboard to keep track of the VM's traffic, memory, and CPU usage.
 
-In this exercise, you'll install the Azure diagnostic extension on your new VM to collect near real-time metrics for OS level metrics. With the extension installed, you'll change the sample rate to every minute. With the guest OS level metrics being captured, you'll create a KPI dashboard to view them.
+In this exercise, you'll install the Azure diagnostic extension on your new VM to collect near real-time metrics for OS level metrics. After you install the extension, you'll change the sample rate to every minute. Then, you'll create a KPI dashboard to view the new metrics being captured.
 
 ## Install Azure diagnostic extension
 

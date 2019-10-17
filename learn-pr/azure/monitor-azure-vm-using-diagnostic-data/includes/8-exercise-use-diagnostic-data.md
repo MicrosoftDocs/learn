@@ -1,6 +1,6 @@
 Azure allows you to take action on the metrics you're capturing. You can create alerts that email you, or start automations with runbooks. 
 
-Now you'll create an alert based on your web servers CPU usage. If the CPU usage goes above the set threshold of 90 percent for five minutes, you get an email.
+Now you'll create an alert based on your web server's CPU usage. If the CPU usage goes above the set threshold of 90 percent for five minutes, you get an email.
 
 In this unit, you'll add an alert for your VM. Then you'll cause the VM CPU usage to spike, and receive the alert email.
 
@@ -100,7 +100,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
    ![Screenshot that shows the connect button on the VM overview pane](../media/8-vm-overview-connect-button.png)
 
 1. Copy the **Login using VM local account** field.
-1. In Cloud Shell to the right, right-click and paste the value you just copied. If Cloud Shell timed out, click **Reconnect**.
+1. In Cloud Shell to the right, right-click and paste the value you copied. If Cloud Shell timed out, click **Reconnect**.
 1. When prompted, type **yes** to connect to the VM.
 1. Run the following command to install the stress utility app on the VM.
 
