@@ -30,7 +30,7 @@ We can have large layers, which have many nodes
 
 ![Diagram representing large layers. There are three layers of circles (nodes). There is a left-hand layer with six nodes labeled 'input layer', with a red line between the bottom two nodes to indicate there could be more nodes there. There is also a center layer with five nodes each labeled 'hidden layer', with a similar red line to indicate there could be more nodes. There is finally an output layer with three nodes labeled 'output layer', again with a red line. There are lines linking each node with each node on the adjacent layers.](../media/52-ll.png)
 
-and lots of layers
+and lots of layers, sometimes over 100
 
 ![Diagram representing lots of layers. There are many layers of circles (nodes). There is a left-hand layer with 12 nodes indicating the input layer, with a 12 other layers of white nodes, with arrows in between several layers to indicate more layers could reside there. There are lines linking each node with each node on the adjacent layers.](../media/52-ml-1.png)
 
