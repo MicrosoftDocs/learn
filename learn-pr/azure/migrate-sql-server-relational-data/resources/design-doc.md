@@ -10,7 +10,7 @@ Migrate your relational data to Azure SQL Database
 
 ## Level
 
-- Beginner
+- Intermediate
 
 ## Product(s)
 
