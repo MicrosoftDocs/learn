@@ -4,7 +4,7 @@ As a lead architect on the project, you're managing the production of a virtual 
 
 In this unit, you'll explore virtual networking in the Azure platform, the design considerations needed, and how to implement Azure ExpressRoute for connectivity to on-premises networks.
 
-![Architectural diagram showing hub and spokes connecting to the on-premises resources](../media/3-plannning-hub.png)
+![Architectural diagram showing hub and spokes connecting to the on-premises resources](../media/3-plannning-hub.svg)
 
 ## Introduction to Azure virtual networking
 

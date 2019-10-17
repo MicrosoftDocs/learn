@@ -31,7 +31,7 @@ Hub and spoke topologies offer several business benefits:
 
 Let's take a look at a reference architecture for a hub-spoke topology. The image below shows the proposed architecture of a pattern to extend your on-premises environment to Azure.
 
-![Image showing hub-spoke shared services architecture](../media/2-hub-shared-services.png)
+![Image showing hub-spoke shared services architecture](../media/2-hub-shared-services.svg)
 
 The hub is a virtual network in Azure that's the center point for your businesses' connectivity. Shared services are hosted in their own subnets for sharing with the spokes, and a DMZ subnet to act as a security appliance.
 
