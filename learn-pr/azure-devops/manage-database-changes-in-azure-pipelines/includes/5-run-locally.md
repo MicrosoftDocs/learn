@@ -60,7 +60,7 @@ Here, you fetch the connection string to your database and store it in a file na
 1. Choose the **tailspindatabase**.
 1. Under the **Settings** section, select **Connection strings**. Copy the connection string that appears on the **ADO.NET** tab.
 
-   ![Azure portal selecting connection strings page](../media/4-get-connection-string.png)
+   ![Azure portal selecting connection strings page](../media/5-get-connection-string.png)
 
     Notice that the connection string doesn't show your password. You'll specify your password shortly.
 
@@ -93,7 +93,7 @@ Here, you fetch the connection string to your database and store it in a file na
 1. Run the following `dotnet user-secrets set` command to write your connection string to *secrets.json*.
 
     ```bash
-    dotnet user-secrets set "ConnectionStrings:DefaultConnection" $DB_CONNECTION_STRING
+    dotnet user-secrets set "ConnectionStrings:DefaultConnection" "$DB_CONNECTION_STRING"
     ```
 
     On Windows, the file is written to *%APPDATA%\Microsoft\UserSecrets\d7faad9d-d27a-4122-89ff-b9376c13b153\secrets.json*.
@@ -118,18 +118,54 @@ Here, you fetch the connection string to your database and store it in a file na
 
 Here, you build and run the web application locally to verify that the application can successfully connect to the database.
 
+To make sure your application will use the local settings including the *secrets.json* configuration, the project will need a launchSettings.json file.
+
+1. Right-click the Profiles folder in the Tailspin.SpaceGame.Web project and add a file. Name the file **launchSettings.json**.
+1. Paste the following in this file and save the file.
+    ```json
+    {
+        "iisSettings": {
+        "windowsAuthentication": false,
+        "anonymousAuthentication": true,
+        "iisExpress": {
+        "applicationUrl": "http://localhost:60080/",
+        "sslPort": 0
+        }
+      },
+        "profiles": {
+        "IIS Express": {
+        "commandName": "IISExpress",
+        "launchBrowser": true,
+        "environmentVariables": {
+            "ASPNETCORE_ENVIRONMENT": "Development"
+        }
+      },
+        "Tailspin.SpaceGame.Web": {
+        "commandName": "Project",
+        "launchBrowser": true,
+        "applicationUrl": "http://localhost:5000/",
+        "environmentVariables": {
+            "ASPNETCORE_ENVIRONMENT": "Development"
+        }
+      }
+     }
+    }
+    ```
+
+    This file specifies settings for running the webapp. There is a profile for IIS Express, and a profile for running from the CLI. Notice that running from the CLI, `Tailspin.SpaceGame.Web` profile, will specify the development environment for running locally and the url will be `http://localhost:5000/`. This is how you will run the webapp shortly.
+
 1. In Visual Studio Code, navigate to the terminal window and run this `dotnet build` command to build the application:
 
     ```bash
     dotnet build --configuration Release
     ```
-1. Set the `ASPNETCORE_ENVIRONMENT` Bash variable to "Development" and export the variable.
+<!-- 1. Set the `ASPNETCORE_ENVIRONMENT` Bash variable to "Development" and export the variable.
 
     ```bash
     export ASPNETCORE_ENVIRONMENT=Development
     ```
 
-    This setting tells ASP.NET Core that you're in development mode, and not in production mode, so it's safe to read from the *secrets.json* file.
+    This setting tells ASP.NET Core that you're in development mode, and not in production mode, so it's safe to read from the *secrets.json* file. -->
 
 1. Run this `dotnet run` command to run the application:
 
@@ -141,7 +177,7 @@ Here, you build and run the web application locally to verify that the applicati
 
     You see this:
 
-    ![The Space Game web site](../media/4-space-game-top.png)
+    ![The Space Game web site](../media/5-space-game-top.png)
 
     > [!TIP]
     > If you see an error in your browser that's related to a certificate error, select Ctrl+C from your terminal to stop the running application.
@@ -151,6 +187,6 @@ Here, you build and run the web application locally to verify that the applicati
 
     You can interact with the page, including the leaderboard. When you select a player's name, you see details about that player.
 
-    ![The Space Game leaderboard](../media/4-space-game-leaderboard-profile.png)
+    ![The Space Game leaderboard](../media/5-space-game-leaderboard-profile.png)
 
     When you're finished, return to the terminal window and select Ctrl+C to stop the running application.

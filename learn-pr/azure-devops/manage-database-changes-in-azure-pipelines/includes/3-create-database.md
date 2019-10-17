@@ -67,6 +67,8 @@ Here you create the SQL Server that holds your new database.
 
 1. Select **Review + create**, then select **Create**.
 1. After the server is created, select **Go to resource**.
+1. On the right side of the overview page select **Show firewall settings**.
+1. On the firewall settings page make sure the switch to **Allow Azure services and resources to access this server** is **on** and select **Save**. This will allow Azure to create the tables and insert the data that you need.
 
 ## Populate your database
 
