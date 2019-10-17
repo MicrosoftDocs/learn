@@ -3,8 +3,8 @@ uid: learn.azdo.manage-database-changes-in-azure-pipelines.2-design-database-sch
 title: Design a database schema change workflow in Azure Pipelines
 metadata:
   title: Design a database schema change workflow in Azure Pipelines
-  description: Design a database schema change workflow in Azure Pipelines
-  ms.date: 09/30/2019
+  description:  Learn how to approve database schema changes in Azure Pipelines.
+  ms.date: 10/17/2019
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial

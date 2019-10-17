@@ -3,7 +3,7 @@ uid: learn.azdo.manage-database-changes-in-azure-pipelines
 metadata:
   title: Manage database changes in Azure Pipelines - Learn
   description: Use a release approval in Azure Pipelines to help coordinate database schema changes between developers and database administrators.
-  ms.date: 09/30/2019
+  ms.date: 10/17/2019
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
