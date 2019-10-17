@@ -49,7 +49,7 @@ In the *Tailspin.SpaceGame.Database* project, a change has been made to the Prof
         Verify that the `favoriteMap` column is populated with data.
 1. Navigate to the one of your host names, for example **tailspin-space-game-web-dev-1234.azurewebsites.net**, and select a player to see the new data on the profile.
 
- ![The website with a profile showing the player's favorite galaxy](../media/5-profile-with-favorite-galaxy.png)
+ ![The website with a profile showing the player's favorite galaxy](../media/7-profile-with-favorite-galaxy.png)
 
 **Tim:** I think that went well. We managed to get the DBA involved and they are one tough customer. Score one for DevOps. But I can see a problem here. This pipeline is triggered with every change made to the application. We won't have schema changes every time, but the pipeline will stop and wait for approval even if the change file has no changes. How can we fix that?
 
@@ -142,7 +142,7 @@ The VSTeam library needs to access your Azure DevOps organization, so it require
 1. Select **Azure DevOps Profile**.
 1. In the **User Settings** pane on the left, under **Security**, select **Personal access tokens**.
 
-  ![Profile page select personal access token](../media/5-select-personal-access-token.png)
+  ![Profile page select personal access token](../media/7-select-personal-access-token.png)
 
 1. Select **+ New Token**
 1. Enter **Database Changes** as the name and select **Full access**.

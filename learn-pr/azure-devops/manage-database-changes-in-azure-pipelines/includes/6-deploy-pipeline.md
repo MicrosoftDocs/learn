@@ -213,7 +213,7 @@ To add the variable:
 
     Your variable group resembles this one:
 
-    > ![Azure Pipeline showing the variable group](../media/4-variables-library.png)
+    > ![Azure Pipeline showing the variable group](../media/6-variables-library.png)
 
 ## Add the database stage to the pipeline
 
@@ -321,7 +321,7 @@ Here you create the manual approval for the `DBAVerificationApply` stage. You le
 1. Select **Create**.
 1. On the **dbaverificationapply** environment page, select the drop down menu, then select **Checks**.
 
-    ![Azure Pipelines showing the Checks menu option](../media/4-add-check-to-environment.png)
+    ![Azure Pipelines showing the Checks menu option](../media/6-add-check-to-environment.png)
 
 1. On the **Use manual approvals** page, select **Create**.
 1. Under **Approvers**, select **Add users and groups** and then select your account.
@@ -340,7 +340,7 @@ Here you create the manual approval for the `DBAVerificationApply` stage. You le
 1. Go back to the pipeline and select the **Waiting** button on the `DBAVerificationApply`. Select **Review** and then **Approve**.
 1. Wait for the pipeline to finish deployments.
 
-    ![Azure Pipelines showing the pipeline stages](../media/4-pipeline-run.png)
+    ![Azure Pipelines showing the pipeline stages](../media/6-pipeline-run.png)
 
 1. Check at least one of the web addresses to see that the application has been deployed and is working with the database.
 

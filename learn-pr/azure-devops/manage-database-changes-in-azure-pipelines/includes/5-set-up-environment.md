@@ -34,7 +34,7 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 1. Select **Sign In** and accept the usage terms.
 1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - Database**.
 
-    ![Creating a project through the Azure DevOps Demo Generator](../media/3-create-new-project.png)
+    ![Creating a project through the Azure DevOps Demo Generator](../media/5-create-new-project.png)
 
 1. Select **Yes, I want to fork this repository** and then select **Authorize**.
 1. Select **Create Project**.
@@ -71,7 +71,7 @@ To set up the work item:
     ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
 1. Move the work item from the **To Do** to the **Doing** column.
 
-    ![Azure Boards showing the card in the Doing column](../media/3-azure-boards-wi2-doing.png)
+    ![Azure Boards showing the card in the Doing column](../media/5-azure-boards-wi2-doing.png)
 
 At the end of this module, you move the card to the **Done** column after you've completed the task.
 

@@ -40,7 +40,7 @@ Mara has created the development database with test data in it. She exported thi
 1. Select **Review and create**. Then select **Create**.
 1. Wait for the storage account to be created and select **Go to resource**.
 1. Under **Services**, select **containers**.
-![Screenshot of the services section of the containers page](../media/4-select-containers.png)
+![Screenshot of the services section of the containers page](../media/3-select-containers.png)
 1. On the **Containers** page, select **+ Container**.
 1. In the **Name** field, enter **bacpac** and select **OK**.
 1. Select the **bacpac** container.
@@ -73,10 +73,10 @@ Here you create the SQL Server that holds your new database.
 Here, you import the *bacpac* file that you uploaded to blob storage to SQL Server.
 
 1. Select **Import database**.
-![Screenshot of the import database menu selection](../media/4-import-database-menu.png)
+![Screenshot of the import database menu selection](../media/3-import-database-menu.png)
 1. On the *Import database* page, select your subscription and then select **Storage - Configure required settings**.
 
-    ![Screenshot of the import database page highlighting configure storage settings](../media/4-configure-storage-settings.png)
+    ![Screenshot of the import database page highlighting configure storage settings](../media/3-configure-storage-settings.png)
 1. On your **Storage accounts** page select **spacegamedbstorageNNN**, where **NNN** is your number.
 1. On the **Containers** page, select **bacpac**.
 1. Highlight the **tailspindatabase.bacpac** file and then choose **Select**.
@@ -120,7 +120,7 @@ The database contains four tables: **dbo.Profile**, **dbo.Scores**, **dbo.Achiev
     > Then repeat this step.
 1. Expand **Tables**, and then expand each table in turn. You should see four tables **dbo.Profile**, **dbo.Scores**, **dbo.Achievements**, and **dbo.ProfileAchievements**, together with the columns and keys for each table.
 
-    ![Screenshot of the tables in the tailspin database](../media/4-database-tables.png)
+    ![Screenshot of the tables in the tailspin database](../media/3-database-tables.png)
 
 1. In the **Query 1** pane, enter the following SQL statement, and then select **Run**.
 
@@ -130,7 +130,7 @@ The database contains four tables: **dbo.Profile**, **dbo.Scores**, **dbo.Achiev
 
     This statement retrieves the data from the **Profiles** table. The results window should display 20 rows.
 
-    ![Screenshot of the query editor in the Azure portal, showing the data retrieved from the Profiles table](../media/4-select-all-profiles.png)
+    ![Screenshot of the query editor in the Azure portal, showing the data retrieved from the Profiles table](../media/3-select-all-profiles.png)
 
 1. Change the query as follows, and then select **Run**.
 
