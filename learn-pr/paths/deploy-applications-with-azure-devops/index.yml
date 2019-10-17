@@ -22,7 +22,10 @@ summary: |
 
   Take this learning path to help prepare for [Exam AZ-400: Microsoft Azure DevOps Solutions](https://www.microsoft.com/learning/exam-az-400.aspx).
 cardDescription: Learn how to configure release pipelines that continuously build, test, and deploy your applications.
-prerequisites: An [Azure subscription](https://azure.microsoft.com/free/)
+prerequisites: |
+  - [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices)
+  - [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops)
+  - An [Azure subscription](https://azure.microsoft.com/free/)
 iconUrl: /learn/achievements/azure-devops/deploy-applications-with-azure-devops.svg
 levels:
 - intermediate

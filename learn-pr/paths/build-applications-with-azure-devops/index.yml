@@ -23,7 +23,8 @@ summary: |
 
   Take this learning path to help prepare for [Exam AZ-400: Microsoft Azure DevOps Solutions](https://www.microsoft.com/learning/exam-az-400.aspx).
 cardDescription: Learn how configure build pipelines that continuously build, test, and verify your applications.
-prerequisites: None
+prerequisites: |
+  - [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices)
 iconUrl: /learn/achievements/azure-devops/build-applications-with-azure-devops.svg
 levels:
 - intermediate
