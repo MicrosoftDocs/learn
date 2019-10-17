@@ -22,7 +22,7 @@ Azure enables you to perform HPC tasks in the cloud, without building your own e
 
 Azure Batch is a service for working with large-scale parallel and computationally intensive tasks on Azure. Unlike the other options you'll see in this module, Batch is a managed service. You provide data and applications, and you specify whether to run on Windows or Linux, how many machines to use, and what rules apply to autoscaling. Batch handles provisioning of the compute capacity and optimizes the way the work is done in parallel. You only pay for the underlying compute, networking, and storage you use. The Batch scheduling and management service is free.
 
-Batch is ideally suited to heavy workloads, such as financial risk modeling, 3D rendering, media transcoding, and genetic sequence analysis. Think of Batch as a flexible management and scheduling service layer on top of the huge scale of Azure. For example, you could spin up 100 or 1000 virtual machines to support heavy workloads without the aid of Batch. However, you'd then be responsible for all the scheduling of the VMs, and for distributing the work according to available capacity.
+Batch is ideally suited to heavy workloads, such as financial risk modeling, 3D rendering, media transcoding, and genetic sequence analysis. Think of Batch as a flexible management and scheduling service layer on top of the huge scale of Azure. For example, you might spin up 100 or 1000 virtual machines to support heavy workloads without the aid of Batch. However, you'd then be responsible for all the scheduling of the VMs, and for distributing the work according to available capacity.
 
 ## Components of Azure Batch
 

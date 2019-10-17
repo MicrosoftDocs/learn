@@ -17,7 +17,7 @@ quiz:
   questions:
   - content: "You're trying to advise your organization on whether to choose Azure Batch or Microsoft HPC Pack. What might be a key factor in choosing HPC Pack?"
     choices:
-    - content: "There's a significant on-premises infrastructure that your organization doesn't wish to waste. It could be used for HPC problems."
+    - content: "There's a significant on-premises infrastructure that your organization doesn't want to waste. It can be used for HPC problems."
       isCorrect: true
       explanation: "HPC Pack enables you to manage both on-premises and cloud infrastructure."
     - content: "You don't want to be responsible for deciding how to optimize the way the HPC work gets allocated."

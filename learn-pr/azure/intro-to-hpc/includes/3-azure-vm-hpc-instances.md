@@ -30,9 +30,9 @@ Ask your developers if they're using MPI. If the answer is yes, you should ensur
 
 ## InfiniBand interconnects
 
-Infiniband is a data interconnect hardware standard for HPC. It's often used to accelerate communications between components, both within a single server and between servers. It has been designed to support the highest speeds and the lowest latency for messages between CPUs, and between processors and storage components.
+InfiniBand is a data interconnect hardware standard for HPC. It's often used to accelerate communications between components, both within a single server and between servers. It has been designed to support the highest speeds and the lowest latency for messages between CPUs, and between processors and storage components.
 
-Both HC- and HB-series VMs use a 100 GB/sec Mellanox EDR Infiniband interconnect in a non-blocking tree configuration to boost hardware performance.
+Both HC- and HB-series VMs use a 100 GB/sec Mellanox EDR InfiniBand interconnect in a non-blocking tree configuration to boost hardware performance.
 
 ## N-series VMs
 
