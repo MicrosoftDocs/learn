@@ -23,6 +23,7 @@ prerequisites: |
   - Git
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/manage-database-changes-in-azure-pipelines.svg
+ratingEnabled: true
 levels:
 - intermediate
 roles:
