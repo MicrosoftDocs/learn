@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Planning the IP addressing for your networks
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/4-plan-design-ip-addressing.md)]
