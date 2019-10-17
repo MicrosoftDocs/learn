@@ -21,7 +21,7 @@ quiz:
           explanation: Incorrect. Smart groups are not created through deployment of a template.
         - content: Through the Azure CLI.
           isCorrect: false
-          explanation: Incorrect. The Azure CLI cannot be used to create a smart group.
+          explanation: Incorrect. The Azure CLI can't be used to create a smart group.
         - content: Automatically, using machine learning algorithms.
           isCorrect: true
           explanation: Correct.

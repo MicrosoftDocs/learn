@@ -1,10 +1,10 @@
-In this module, you learned how Azure Monitor alerts and notifications help you manage your systems and environment. You explored three different types of alerting: metric, log, and activity log.
+In this module, you learned how Azure Monitor alerts and notifications help you manage your systems and environment. You explored three different types of alerts: metric, log, and activity log.
 
-You learned how metric alerting enables time-series evaluations, which trigger an action group when the alert is fired.
+You learned how metric alerts enable time-series evaluations, which trigger an action group when the alert is fired.
 
-You also learned how log alerting runs specify log queries at regular time intervals. The runs trigger an action group when a match is found.
+You also learned how log alert runs specify log queries at regular time intervals. The runs trigger an action group when a match is found.
 
-Then you learned how alert log alerting enables notifications when a named Azure resource meets the specified conditions.
+Then you learned how log alerts enable notifications when a named Azure resource meets the specified conditions.
 
 Finally, you explored how to use smart groups to reduce notification and alert noise, providing enhanced reporting and analytics.
 
@@ -13,7 +13,7 @@ Finally, you explored how to use smart groups to reduce notification and alert n
 
 ## Learn more
 
-Further information on Azure Monitor, each of the alerting types, and smart groups can be found here:
+For more information on Azure Monitor, each of the alert types, and smart groups, see:
 
 - [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-overview)
 - [Metric alerts](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-metric-overview)
