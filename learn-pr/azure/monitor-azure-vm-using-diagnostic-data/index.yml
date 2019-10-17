@@ -3,7 +3,7 @@ uid: learn.azure.monitor-azure-vm-using-diagnostic-data
 metadata:
   title: Monitor the health of your Azure Virtual Machine by collecting and analyzing diagnostic data
   description: Learn how to monitor the health of your Azure VMs by using diagnostic data. 
-  ms.date: 10/04/2019
+  ms.date: 10/18/2019
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial

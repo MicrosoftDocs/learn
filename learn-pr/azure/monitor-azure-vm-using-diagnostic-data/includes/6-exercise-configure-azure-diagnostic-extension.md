@@ -1,15 +1,13 @@
-Adding the Azure diagnostic extension to your VM enables you to collect near real-time metrics for OS level metrics. You can also change the sample rate for each metric from seconds to days.
-
 The last time your band went on tour your website went down while your fans were trying to buy tickets. You're not sure if the web server ran out of memory, or the VM wasn't the right size. For your new tour, you'd like a dashboard to keep track of the VM's traffic, memory, and CPU usage.
 
-In this exercise, you'll install the Azure diagnostic extension on your new VM. With the extension installed, you'll change the sample rate to every minute. With the guest OS level metrics being captured, you'll create a KPI dashboard to view them.
+In this exercise, you'll install the Azure diagnostic extension on your new VM to collect near real-time metrics for OS level metrics. After you install the extension, you'll change the sample rate to every minute. Then, you'll create a KPI dashboard to view the new metrics being captured.
 
 ## Install Azure diagnostic extension
 
-You'll use the portal to enable guest-level metric monitoring of the VM. When you enable this monitoring, Azure installs and configures the Azure diagnostic extension for you.
+Use the portal to enable guest-level metric monitoring of the VM. When you enable this monitoring, Azure installs and configures the Azure diagnostic extension for you.
 
 1. Go to the [Azure portal](https://portal.azure.com/) and sign in with the account you used to enable the sandbox.
-1. In the navigation on the left, select **All resources**.
+1. In the navigation on the left, select **Virtual machines**.
 1. Select the **monitored-linux-vm** virtual machine you created.
 1. On the left, scroll down until you see the **Monitoring** section, then select **Diagnostic settings**.
 
@@ -32,7 +30,7 @@ You'll use the portal to enable guest-level metric monitoring of the VM. When yo
 
     ![Screenshot showing changing the sample rate to 60 seconds](../media/6-change-sample-rate.png)
 
-1. The metrics now show as custom, with each metric set to sample every 60 seconds.
+   It may take a minute to save your update.
 
 ## Create a custom KPI dashboard
 
@@ -50,15 +48,14 @@ You'll use the portal to enable guest-level metric monitoring of the VM. When yo
 1. In the **Pin to another dashboard** pane, select **Create new**.
 1. Use the following values:
 
+    ![Screenshot that shows the Pin to another dashboard pane filled out](../media/6-create-a-dashboard.png)
+
    |Field  |Value  |
    |---------|---------|
    |Dashboard name     |KPI Dashboard         |
    |Subscription   |   Concierge Subscription    |
    |Publish to the dashboard resource group   |    Deselect the check box     |
    |Resource group     |  <rgn>[sandbox resource group name]</rgn>       |
-
-    
-    ![Screenshot that shows the Pin to another dashboard pane filled out](../media/6-create-a-dashboard.png)
 
 1. Select **Apply**.
 1. Close the pane.
@@ -76,8 +73,11 @@ You'll use the portal to enable guest-level metric monitoring of the VM. When yo
 
 1. Select the **Finish editing** check mark.
 1. At the top of the chart, select **Pin to dashboard** > **Select another dashboard**.
-1. In the Pin to another dashboard pane, expand **Browse dashboards**.
+1. Expand **Browse dashboards**.
 1. Under **Dashboard**, select the **KPI Dashboard**.
+
+    ![Screenshot that shows KPI Dashboard selected on Select existing tab](../media/6-select-existing-dashboard.png)
+
 1. Select **Apply** and close the pane.
 
 ### Add a CPU usage graph
@@ -103,6 +103,6 @@ You'll use the portal to enable guest-level metric monitoring of the VM. When yo
 
     ![Screenshot showing the dashboard selection dropdown](../media/6-view-dashboard.png)
 
-1. Explore the dashboard, changing the range of the graphs.
+1. Explore the dashboard. Try changing the **UTC Time** range to **Past 30 minutes**.
 
     ![Screenshot showing the new KPI dashboard with the three graphs created above](../media/6-explore-kpi-dashboard.png)
