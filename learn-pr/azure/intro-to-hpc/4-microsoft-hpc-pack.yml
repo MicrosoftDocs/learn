@@ -30,10 +30,10 @@ quiz:
     choices:
     - content: "Windows Server 2012 R2 or later."
       isCorrect: true
-      explanation: "You can use any version of Windows Server from 2012 onwards for the head node."
+      explanation: "You can use Windows Server 2012 or any later version for the head node."
     - content: "Windows Server 2016 or later."
       isCorrect: false
-      explanation: "You can use any version of Windows Server from 2012 onwards for the head node."
+      explanation: "You can use Windows Server 2012 or any later version for the head node."
     - content: "Windows Server 2019 or later."
       isCorrect: false
-      explanation: "You can use any version of Windows Server from 2012 onwards for the head node."
+      explanation: "You can use Windows Server 2012 or any later version for the head node."
