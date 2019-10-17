@@ -4,9 +4,9 @@ In this module, you learned about the considerations that are needed when you ad
 
 You learned:
 
-- How to access an Azure SQL Database from App Service
-- How to add database schema changes to Azure pipelines approvals
-- How to make sure an approval is needed only where there are actual schema changes
+- How to access an Azure SQL Database from Azure App Service.
+- How to add database schema changes to Azure pipelines approvals.
+- How to make sure an approval is needed only where there are actual schema changes.
 
 The team successfully designed and built a pipeline that manages the database changes as well as the application changes.
 
@@ -14,7 +14,8 @@ Although the team is making steps towards improving their release cadence, there
 
 ## Learn more
 
-The team decided to use Azure SQL Database as the data storage technology. The data storage technology you use will depend on the type of data you are storing. Hre are some links to help you decide what data storage technology to use for your projects:
+The team decided to use Azure SQL Database as the data storage technology. The data storage technology you use depends on the type of data you are storing. Here are some resources to help you decide what data storage technology to use for your projects:
+
 - [Choose a data storage approach in Azure](https://docs.microsoft.com/learn/modules/choose-storage-approach-in-azure/?azure-portal=True)
 
 - [SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/sql-server-data-tools?view=sql-server-2017&azure-portal=true)
@@ -27,16 +28,16 @@ In this module, you worked with ASP.NET Core, SQL Server Data Tools, Azure SQL D
 - [Passing a variable from stage to stage in Azure DevOps](http://donovanbrown.com/post/Passing-variables-from-stage-to-stage-in-Azure-DevOps-release?azure-portal=true)
 - [Azure DevOps Services REST API](https://docs.microsoft.com/rest/api/azure/devops/search/?view=azure-devops-rest-5.1&azure-pipelines=true)
 
-Here are the Microsoft Learn modules mention in this module:
+Here are the Microsoft Learn modules mentioned in this module:
 
-- [Develop and configure an ASP.NET application that queries an Azure SQL database](https://docs.microsoft.com/en-us/learn/modules/develop-app-that-queries-azure-sql/?azure-portal=true)
+- [Develop and configure an ASP.NET application that queries an Azure SQL database](https://docs.microsoft.com/learn/modules/develop-app-that-queries-azure-sql/?azure-portal=true)
 - [Choose a data storage approach in Azure](https://docs.microsoft.com/learn/modules/choose-storage-approach-in-azure/?azure-portal=True)
 
 You learned to use _.dacpac_ and _.bacpac_ files. Here is a link to more information on those files and Data-tier Applications:
 
-- [Data-tier Applications](https://docs.microsoft.com/en-us/sql/relational-databases/data-tier-applications/data-tier-applications?view=sql-server-ver15&azure=portal=true)
+- [Data-tier Applications](https://docs.microsoft.com/sql/relational-databases/data-tier-applications/data-tier-applications?view=sql-server-ver15&azure=portal=true)
 
-You needed a blob storage container to hold your _bacpac_ file. Here are Learn modules about Azure Storage account
+You needed a blob storage container to hold your _bacpac_ file. Here are Microsoft Learn modules where you can learn more about working with storage on Azure.
 
--[Create an Azure Storage account](https://docs.microsoft.com/en-us/learn/modules/create-azure-storage-account/?azure-portal=true)
--[Secure your Azure Storage account](https://docs.microsoft.com/en-us/learn/modules/secure-azure-storage-account/?azure-portal=true)
+-[Create an Azure Storage account](/learn/modules/create-azure-storage-account/?azure-portal=true)
+-[Secure your Azure Storage account](/learn/modules/secure-azure-storage-account/?azure-portal=true)

@@ -4,7 +4,7 @@ variables:
 stages:
 - stage: 'Build'
   displayName: 'Build the web application'
-  jobs:
+  jobs: 
   - job: 'Build'
     displayName: 'Build job'
     pool:
@@ -64,24 +64,18 @@ stages:
 
   - job: BuildDacpac
     pool:
-      name: Hosted Windows 2019 with VS2019
+      vmImage: 'windows-2019'
     steps:
     - task: DotNetCoreCLI@2
-      displayName: Restore
+      displayName: 'Restore project dependencies'
       inputs:
-        command: restore
+        command: 'restore'
         projects: '**/*.csproj'
-
-    - task: DotNetCoreCLI@2
-      displayName: Build
-      inputs:
-        projects: '**/*.csproj'
-        arguments: '--configuration $(BuildConfiguration)'
 
     - task: VSBuild@1
       displayName: 'Build the database project'
       inputs:
-        project: Tailspin.SpaceGame.Database/Tailspin.SpaceGame.Database.sqlproj
+        project: '**/*.sqlproj'
 
     - task: CopyFiles@2
       displayName: 'Copy dacpac file to staging directory'
@@ -98,80 +92,87 @@ stages:
       condition: succeededOrFailed()
 
 - stage: DBAVerificationScript
+  displayName: 'Script database schema changes'
   dependsOn: Build
   jobs:
   - deployment: DBAVerificationScript
-    displayName: 'Script database schema changes'
     pool:
-      name: Hosted Windows 2019 with VS2019
+      vmImage: 'windows-2019'
     variables:
     - group: 'Release'
-      steps:
-      - download: current
-        artifact: dropDacpac
-        patterns: '**/*'
+    environment: 'dbaverificationscript'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - download: current
+            artifact: dropDacpac
+            patterns: '**/*'
+          - task: SqlAzureDacpacDeployment@1
+            displayName: Generate schema change script
+            inputs:
+              azureSubscription: 'Resource Manager - Tailspin - Space Game'
+              authenticationType: 'server'
+              serverName: '$(servername).database.windows.net'
+              databaseName: '$(databasename)'
+              sqlUsername: '$(adminlogin)'
+              sqlPassword: '$(adminPassword)'
+              deployType: 'DacpacTask'
+              deploymentAction: 'Script'
+              dacpacFile: '$(Pipeline.Workspace)/dropDacpac/Tailspin.SpaceGame.Database/bin/Debug/Tailspin.SpaceGame.Database.dacpac'
+              ipDetectionMethod: 'AutoDetect'
+          - task: PowerShell@2
+            displayName: Show Auto Generated SQL Script
+            inputs:
+              targetType: 'inline'
+              script: | 
+                Write-Host "Auto Generated SQL Update Script:"
+                Get-Content d:\a\1\s\GeneratedOutputFiles\$(databasename)_Script.sql | foreach {Write-Output $_}
+          - task: PowerShell@2
+            displayName: Show change script and check for schema changes
+            inputs:
+              targetType: 'inline'
+              script: | 
+                # Print the schema change script
+                Write-Host "Auto Generated SQL Update Script:"
+                Get-Content d:\a\1\s\GeneratedOutputFiles\$(databasename)_Script.sql | foreach {Write-Output $_}
 
-      - task: SqlAzureDacpacDeployment@1
-        displayName: Generate schema change script
-        inputs:
-          azureSubscription: 'Resource Manager - Tailspin - SpaceGame'
-          authenticationType: 'server'
-          serverName: '$(servername).database.windows.net'
-          databaseName: '$(databasename)'
-          sqlUsername: '$(adminlogin)'
-          sqlPassword: '$(adminPassword)'
-          deployType: 'DacpacTask'
-          deploymentAction: 'Script'
-          dacpacFile: '$(Pipeline.Workspace)/dropDacpac/Tailspin.SpaceGame.Database/bin/$(buildConfiguration)/Tailspin.SpaceGame.Database.dacpac'
-          ipDetectionMethod: 'AutoDetect'
-      
-      - task: PowerShell@2
-        displayName: Show change script and check for schema changes
-        inputs:
-          targetType: 'inline'
-          script: | 
-            # Print the schema change script
-            Write-Host "Auto Generated SQL Update Script:"
-            Get-Content d:\a\1\s\GeneratedOutputFiles\$(databasename)_Script.sql | foreach {Write-Output $_}
-
-            # Check for schema changes
-            $file = Get-Content "d:\a\1\s\GeneratedOutputFiles\$(databasename)_Script.sql"
-            $containsWord = $file | %{$_ -match "CREATE" -or $_ -match "ALTER" -or $_ -match "DROP"}
-            if ($containsWord -contains $true) {
-              Install-Module VSTeam -Scope CurrentUser -Force
-              Set-VSTeamAccount –Account $(Acct) -PersonalAccessToken $(PAT)
-              $methodParameters = @{
-                ProjectName = "$(System.TeamProject)"
-                Name = "Release Pipeline"}
-              $vg = Get-VSTeamVariableGroup @methodParameters
-              $vars = @{}
-              $vg.value.variables | Get-Member -MemberType *Property | %{$vars.($_.Name) = $vg.value.variables.($_.Name)}
-              $varName = "schemaChanged"
-              $vars.$varName= @{}
-              $vars.$varName.value = "True"
-              $vars.$varName.isSecret = $false
-              $methodParameters = @{
-                id = $vg.value.id
-                ProjectName = "$(System.TeamProject)"
-                Name = "Release"
-                Description = ""
-                Type = "Vsts"
-                Variables = $vars}
-              Update-VSTeamVariableGroup @methodParameters}
+                # Check for schema changes
+                $file = Get-Content "d:\a\1\s\GeneratedOutputFiles\$(databasename)_Script.sql"
+                $containsWord = $file | %{$_ -match "CREATE" -or $_ -match "ALTER" -or $_ -match "DROP"}
+                if ($containsWord -contains $true) {
+                  Install-Module VSTeam -Scope CurrentUser -Force
+                  Set-VSTeamAccount –Account $(Acct) -PersonalAccessToken $(PAT)
+                  $methodParameters = @{
+                    ProjectName = "$(System.TeamProject)"
+                    Name = "Release Pipeline"}
+                  $vg = Get-VSTeamVariableGroup @methodParameters
+                  $vars = @{}
+                  $vg.value.variables | Get-Member -MemberType *Property | %{$vars.($_.Name) = $vg.value.variables.($_.Name)}
+                  $varName = "schemaChanged"
+                  $vars.$varName= @{}
+                  $vars.$varName.value = "True"
+                  $vars.$varName.isSecret = $false
+                  $methodParameters = @{
+                    id = $vg.value.id
+                    ProjectName = "$(System.TeamProject)"
+                    Name = "Release"
+                    Description = ""
+                    Type = "Vsts"
+                    Variables = $vars}
+                  Update-VSTeamVariableGroup @methodParameters}
 
 - stage: DBAVerificationApply
-  variables:
-  - group: 'Release'
-  condition: and(succeeded(), eq(variables['schemaChanged'], 'True'))
+  displayName: 'Apply database schema changes'
   dependsOn: DBAVerificationScript
+  condition: and(succeeded(), eq(variables['schemaChanged'], 'True'))
   jobs:
   - deployment: DBAVerificationApply
-    displayName: 'Apply database schema changes'
     pool:
-      name: Hosted Windows 2019 with VS2019
+      vmImage: 'windows-2019'
     variables:
     - group: 'Release'
-    environment: 'dbaverification'
+    environment: 'dbaverificationapply'
     strategy:
       runOnce:
         deploy:
@@ -182,7 +183,7 @@ stages:
           - task: SqlAzureDacpacDeployment@1
             displayName: 'Deploy SQL schema'
             inputs:
-              azureSubscription: 'Resource Manager - Tailspin - SpaceGame'
+              azureSubscription: 'Resource Manager - Tailspin - Space Game'
               authenticationType: 'server'
               serverName: '$(servername).database.windows.net'
               databaseName: '$(databasename)'
@@ -190,7 +191,7 @@ stages:
               sqlPassword: '$(adminPassword)'
               deployType: 'DacpacTask'
               deploymentAction: 'Publish'
-              dacpacFile: '$(Pipeline.Workspace)/dropDacpac/Tailspin.SpaceGame.Database/bin/$(buildConfiguration)/Tailspin.SpaceGame.Database.dacpac'
+              dacpacFile: '$(Pipeline.Workspace)/dropDacpac/Tailspin.SpaceGame.Database/bin/Debug/Tailspin.SpaceGame.Database.dacpac'
               ipDetectionMethod: 'AutoDetect'
           - task: PowerShell@2
             displayName: 'Remove "schemaChanged" pipeline variable'
@@ -217,7 +218,7 @@ stages:
 
 - stage: 'Dev'
   displayName: 'Deploy to the dev environment'
-  dependsOn: 
+  dependsOn:
   - DBAVerificationScript
   - DBAVerificationApply
   condition: |

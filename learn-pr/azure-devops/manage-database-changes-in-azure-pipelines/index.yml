@@ -40,7 +40,7 @@ units:
 - learn.azdo.manage-database-changes-in-azure-pipelines.3-set-up-environment
 - learn.azdo.manage-database-changes-in-azure-pipelines.4-deploy-with-database
 - learn.azdo.manage-database-changes-in-azure-pipelines.5-deploy-with-database-schema-change
-- learn.azdo.manage-database-changes-in-azure-pipelines.6-clean-up-environment
+- learn.azdo.manage-database-changes-in-azure-pipelines.8-clean-up-environment
 - learn.azdo.manage-database-changes-in-azure-pipelines.7-summary
 badge:
   uid: learn.azdo.manage-database-changes-in-azure-pipelines.badge
