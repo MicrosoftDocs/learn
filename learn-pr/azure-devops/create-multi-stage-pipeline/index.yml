@@ -25,7 +25,7 @@ prerequisites: |
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/create-multi-stage-pipeline.svg
 levels:
-- intermediate
+- beginner
 roles:
 - devops-engineer
 - administrator
