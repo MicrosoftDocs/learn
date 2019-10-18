@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.create-azure-account.transfer-account
+title: Transfer Azure subscriptions between accounts
+metadata:
+  title: Transfer Azure subscriptions between accounts
+  description: Learn how to transfer a subscription between accounts or AAD tenants
+  ms.date: 09/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/3b-transfer-account.md)]

@@ -2,8 +2,6 @@ To use Azure Active Directory (Azure AD) as an authentication provider for your 
 
 Here, you'll create and configure an application registration.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create an Azure AD tenant
 
 To start, you'll use the Azure portal to create a new Azure AD tenant.
@@ -34,13 +32,13 @@ Next, let's create a new registration in the Azure AD tenant for the web app. By
 
 1. In the **App registrations** pane, select **New registration**.
 
-1. Fill in the **Create** page with these values, and then select **Register**. The URL `https://localhost/signin-oidc` is a placeholder that you'll change after you've deployed your application.
+1. Fill in the **Create** page with these values, and then select **Register**. The URL `https://localhost:5000/signin-oidc` is a placeholder that you'll change after you've deployed your application.
 
     | Box | Value |
     | --- | --- |
     | Name | WebApp-OpenIDConnect-DotNet |
     | Supported account types | Accounts in this organizational directory only (Learn Module AAD Tenant) |
-    | Redirect URI | https://localhost/signin-oidc |
+    | Redirect URI | https://localhost:5000/signin-oidc |
 
     ![Registering an application](../media/4-register-application.png)
 

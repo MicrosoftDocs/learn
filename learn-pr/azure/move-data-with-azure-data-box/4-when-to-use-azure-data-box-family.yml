@@ -3,7 +3,7 @@ uid: learn.azure.move-data-with-azure-data-box.when-to-use-azure-data-box-family
 title: When to use Azure Data Box family
 metadata:
   title: When to use Azure Data Box family
-  description: In this unit, you will compare Azure Data Box products to other tools.
+  description: In this unit, you'll compare Azure Data Box products to other tools.
   ms.date: 07/26/2019
   author: cwatson-cat
   ms.author: cwatson
@@ -16,18 +16,18 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which data import method is best for importing daily traffic camera video data when you have moderate to high network bandwidth?"
+  - content: "Which data import method is best for importing daily traffic-camera video data when you have moderate to high network bandwidth?"
     choices:
     - content: "Data Box Gateway"
       isCorrect: true
       explanation: "Data Box Gateway is ideally suited to continuous ingestion scenarios."
     - content: "Data Box Edge"
       isCorrect: false
-      explanation: "Data Box Edge requires high dedicated bandwidth, and allows for preprocessing of data, which isn't needed in this case."
+      explanation: "Data Box Edge requires a dedicated high-bandwidth connection. It enables preprocessing of data, which isn't needed in this case."
     - content: "Data Box Disk"
       isCorrect: false
-      explanation: "Data Box Disk allows for regular imports, but not continuous ingestion."
-  - content: "What is the maximum amount of data that can be transferred to Azure in one operation through the Azure Data Box Disk?"
+      explanation: "Data Box Disk enables regular imports, but not continuous ingestion."
+  - content: "What's the maximum amount of data that can be transferred to Azure in one operation through the Azure Data Box Disk?"
     choices:
     - content: "35 TB"
       isCorrect: true

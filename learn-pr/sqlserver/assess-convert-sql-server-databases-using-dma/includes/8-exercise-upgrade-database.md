@@ -17,7 +17,7 @@ If you logged out of the VM, start by logging on and accessing the DMA:
 Next, use the DMA to migrate the database. Follow these steps:
 
 1. On the taskbar, click File Explorer.
-1. On the left, click **Local Disk (C:)**, then right click in the main pain and select **New**, then select **Folder**.
+1. On the left, click **Local Disk (C:)**, then right click in the main pane and select **New**, then select **Folder**.
 1. Rename the new folder, **temp**.
 1. On the taskbar, select **Data Migration Assistant**.
 1. On the left, click **+**.

@@ -14,7 +14,7 @@ The first step to using Azure Databricks is to create and deploy a Databricks wo
    - **Subscription**: Choose the Azure subscription in which to deploy the workspace.
    - **Resource Group**: Use **Create new** and provide a name for the new resource group.
    - **Location**: Select a location near you for deployment. For the list of regions that are supported by Azure Databricks, see [Azure services available by region](https://azure.microsoft.com/regions/services/).  
-   - **Pricing Tier**: **Trial (Premium - 14 days Free DBUs)**. If you've already used your trial benefit, that option will be unavailable. In that case you can select **Premium** but you will be charged for your usage.
+   - **Pricing Tier**: **Trial (Premium - 14 days Free DBUs)**. You must select this option when creating your workspace or you will be charged. The workspace will suspend automatically after 14 days. When the trial is over you can convert the workspace to **Premium** but then you will be charged for your usage.
 
 1. Accept the terms and conditions.
 1. Select **Create**.

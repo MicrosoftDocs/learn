@@ -3,6 +3,7 @@ Some applications place greater demands on data storage than others. Apps such a
 When creating your VMs or adding new disks, you have a few choices which will have a dramatic impact on disk performance, starting with the _type_ of storage you choose.
 
 ## Types of disks 
+
 Azure Disks are designed for 99.999% availability. 
 
 There are three performance tiers for storage that you can choose from when creating your disks -- Premium SSD Disks, Standard HDD storage, and Standard SSD. Depending on the VM size, you can mix and match these disk types.
@@ -39,6 +40,7 @@ Managed disks are the newer and **recommended disk storage model**. They elegant
 With all the additional benefits, including the guaranteed performance characteristics, you should always choose managed disks for new VMs.
 
 ### Disk comparison
+
 The following table provides a comparison of Standard HDD, Standard SSD, and Premium SSD to help you decide what to use.
 
 |    | Azure Premium Disk |Azure Standard SSD Disk          | Azure Standard HDD Disk 
@@ -54,7 +56,9 @@ There is more detail on disk performance below.
 
 ## Data replication
 
-The data in your Microsoft Azure storage account is always replicated to ensure durability and high availability. Azure Storage replication copies your data so that it's protected from planned and unplanned events like transient hardware failures, network or power outages, natural disasters, and so on. You can choose to replicate your data within the same data center, across zonal data centers within the same region, and even across regions. There are four types of replication:
+The data in your Microsoft Azure storage account is automatically replicated to ensure durability and high availability. Azure Storage replication copies your data so that it's protected from planned and unplanned events like transient hardware failures, network or power outages, natural disasters, and so on. You can choose to replicate your data within the same data center, across zonal data centers within the same region, and even across regions.
+
+There are four types of replication:
 
 - **Locally redundant storage (LRS)** - Azure replicates the data within the same Azure data center. The data remains available if a node fails. However, if an entire data center fails, data may be unavailable.
 - **Geo-redundant storage (GRS)** - Azure replicates your data to a second region that is hundreds of miles away from the primary region. If your storage account has GRS enabled, then your data is durable even if there's a complete regional outage or a disaster in which the primary region isn't recoverable.

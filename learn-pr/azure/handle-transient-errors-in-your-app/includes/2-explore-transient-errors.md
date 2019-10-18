@@ -25,18 +25,18 @@ The loss of network connectivity is the most obvious error an app connecting to 
 
 A web-based service can have an active connection, but be unable to respond to calls quickly. How long should your app wait? If you aren't getting a response from a service, should you make the request again? If everyone who is using the service repeatedly makes requests again and again, can the service ever respond? If you retry the operation, is your data going to be duplicated if both the requests are eventually processed?
 
-All apps need to decide when to give up on a request. An app should only retry a request if the operation is known to be idempotent. For example, if you have an operation that increases a value, instead of setting it, the value will be wrong if the operation repeats it multiple times.
+All apps need to decide when to give up on a request. An app should only retry a request if the operation is known to be idempotent. For example, if you have an operation that increments a value instead of setting it to a desired value, a caller that invokes it multiple times due to automated retries may create an undesirable result. Documentation for web service operations, library functions and other kinds of procedure calls should always be clear about whether or not a given procedure is idempotent.
 
 ### Throughput
 
 ![A speed gauge icon, showing the needle in red representing slow speed](../media/2-throughput.png)
 
-Successful cloud-based services need to have a policy of throttling requests when the service is struggling under load to respond in an appropriate time. By reducing the throughput the service gives to clients, it's able to remain online and useful, rather than crashing and becoming permanently unavailable. If a service notifies your app that it is being throttled, your app should back-off and make fewer requests.
+Successful cloud-based services need to have a policy of throttling requests when the service is struggling under load to respond in an appropriate time. By reducing the throughput the service gives to clients, it's able to remain online and useful, rather than crashing and becoming permanently unavailable. Additionally, services should clearly communicate to clients when requests are rejected due to throttling, and clients should be able to respond to those communications by adjusting the rate at which they make requests. This ability to create *backpressure* helps to ensure that all the components in a processing pipeline remain healthy.
 
 ### Service unavailability
 ![A cloud with a power button symbol icon, representing a cloud-based service being unavailable](../media/2-unavailable.png)
 
-Perhaps the service you use is currently unavailable. Some APIs may return a time when the app should retry the request. How will your app handle the missing functionality? Apps should be of use to an end user even if microservices, online storage, or hosted databases the app uses becomes unreachable. If the service is provided by a third party, you may not have visibility as to when it will become available again. One approach to handling a service outage is to store a cache of the data returned by services. Your app can then fall back to using the data stored in the cache, and refresh it when the service comes back online.
+Perhaps the service you use is currently unavailable. Some APIs may return a time when the app should retry the request. How will your app handle the missing functionality? Apps should *gracefully degrade* and strive to be of use to an end user even if microservices, online storage, or hosted databases the app uses become unreachable. If the service is provided by a third party, you may not have visibility as to when it will become available again. One approach to handling a service outage is to store a cache of the data returned by services. Your app can then fall back to using the data stored in the cache, and refresh it when the service comes back online.
 
 ## An approach to transient errors
 

@@ -26,8 +26,10 @@ levels:
 roles:
 - solution-architect
 - administrator
+- security-engineer
 products:
 - azure
+- azure-virtual-network
 units:
 - learn.secure-and-isolate-with-nsg-and-service-endpoints.1-introduction
 - learn.secure-and-isolate-with-nsg-and-service-endpoints.2-network-security-groups

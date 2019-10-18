@@ -1,0 +1,40 @@
+Azure API Management (APIM) helps organizations unlock the potential of their data and services by publishing APIs to external partners, and internal developers. Businesses are extending their operations as a digital platform by creating new channels, finding new customers, and driving deeper engagement with existing ones. APIM provides the core competencies to ensure a successful API program through developer engagement, business insights, analytics, security, and protection. You can use APIM to take any backend and launch a full-fledged API program based on it.
+
+To use APIM, administrators define _APIs_ in the portal. Each API consists of one or more operations, and can be added to one or more products. To use an API, developers subscribe to a product that contains that API, and then call the API's operation, subject to any usage policies that might be in effect. Common scenarios include:
+
+* Securing mobile infrastructure by gating access with API keys, preventing denial of service attacks (DoS) by using throttling, or using advanced security policies like JSON Web Token (JWT) validation.
+
+* Enabling independent software vendor (ISV) partner ecosystems by offering fast partner onboarding through the developer portal, and building an API facade to decouple from internal implementations that are not ready for partner consumption.
+
+* Running an internal API program by offering a centralized location for the organization to communicate on a secured channel between the API gateway and the backend about the availability and latest changes to APIs, and gating access based on organizational accounts.
+
+## Components of API Management
+
+APIM is made up of the following components:
+
+### API gateway
+
+The API gateway is the endpoint that:
+    - Accepts API calls and routes them to the backend.
+    - Verifies API keys, JWT tokens, certificates, and other credentials.
+    - Enforces usage quotas and rate limits.
+    - Transforms your API on the fly without code modifications.
+    - Caches backend responses where set up.
+    - Logs call metadata for analytics purposes.
+
+### Azure portal
+
+The Azure portal is the administrative interface where you set up your API program. You can also use it to:
+    - Define or import API schema.
+    - Package APIs into products.
+    - Set up policies such as quotas or transformations on the APIs.
+    - Get insights from analytics.
+    - Manage users.
+
+### Developer portal
+
+The Developer portal serves as the main web presence for developers. From here they can:
+    - Read API documentation.
+    - Try out an API via the interactive console.
+    - Create an account and subscribe to get API keys.
+    - Access analytics on their own usage.

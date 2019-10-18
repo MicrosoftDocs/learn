@@ -1,4 +1,4 @@
-When working with a long-running workflow, we need to consider some scenarios. For example, what should happen if a task isn't completed within an acceptable period of time? How can you check the status of a task. You can address these concerns with timeouts and escalation paths?
+When working with a long-running workflow, we need to consider some scenarios. For example, what should happen if a task isn't completed within an acceptable period of time? How can you check the status of a task? You can address these concerns with timeouts and escalation paths.
 
 In the example scenario, you've been asked to amend your new workflow to incorporate an escalation step to take action if a project design proposal isn't approved in a timely fashion.
 

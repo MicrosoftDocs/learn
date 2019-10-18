@@ -113,3 +113,13 @@ A vulnerability's CVSS score isn't the only factor to consider, but it can help 
 **Andy:** Yes, SonarCloud can help us maintain our technical debt. The demo I saw used it as part of Azure Pipelines so that scans are done on a regular basis. The presenter called that *shifting-left* because scans are done early in the development cycle. Let's go with this one and see what we find.
 
 **Tim:** If it helps us get the report we need, I'm all for it. I can see this being nearly impossible otherwise.
+
+## How do you handle security in a DevOps world?
+
+The Tailspin team has identified some of the tools and scoring systems they can use to identify potential vulnerabilities in their code.
+
+But how do these tools fit into a DevOps world? In this short video, Abel Wang, Cloud Advocate at Microsoft, explains how.
+
+**Ask Abel**
+
+> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/How-do-you-handle-security-in-a-DevOps-world--One-Dev-Question/player?format=ny]

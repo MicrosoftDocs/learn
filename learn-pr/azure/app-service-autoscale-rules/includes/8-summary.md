@@ -6,8 +6,9 @@ In this module, you learned how to:
 
 Using autoscaling with Azure App Service can help ensure your hosted web app can respond to fluctuations in demand helping to maintain a consistent high-quality level of service for your users.
 
-<!-- > Most modules should use the following include -->
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+## Clean up
+
+Use the Azure portal to delete the **mslearn-autoscale** resource group from your subscription.
 
 ## Learn more
 

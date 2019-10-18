@@ -1,13 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.add-and-size-disks-in-azure-virtual-machines.5-sizing-disks
-title: Resizing virtual machine disks
+title: Resize virtual machine disks
 metadata:
-  title: Resizing virtual machine disks
-  description: Resizing virtual machine disks
+  title: Resize virtual machine disks
+  description: Resize virtual machine disks
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
