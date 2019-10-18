@@ -29,7 +29,6 @@ roles:
 - devops-engineer
 - administrator
 - developer
-- solution-architect
 products:
 - azure-devops
 modules:
