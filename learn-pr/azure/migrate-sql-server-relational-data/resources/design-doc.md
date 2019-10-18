@@ -1,6 +1,6 @@
 # Title
 
-Migrate your relational data to Azure SQL Database
+Migrate your relational data stored in SQL Server to Azure SQL Database
 
 ## Role(s)
 
@@ -33,7 +33,7 @@ Plan and implement the migration of relational data from SQL Server to Azure SQL
 
 ## Chunk your content into subtasks
 
-Identify the subtasks of *Migrate your relational data to Azure SQL Database*
+Identify the subtasks of *Migrate your relational data stored in SQL Server to Azure SQL Database*
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
