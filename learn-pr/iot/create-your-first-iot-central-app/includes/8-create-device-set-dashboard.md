@@ -1,6 +1,6 @@
 A Device Set in IoT Central is a group of devices that match one Device Template (including, different versions of that template). The simplest Device Set would be all devices created using the template. However, there can be exceptions, based on device properties, to limit the Device Set to a concise subset of all the created devices.
 
-## Create a Device set
+## Create a device set
 
 1. In [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true), click the **Device sets** left-hand menu entry.
 

@@ -71,4 +71,4 @@ To begin the testing, with your [Azure IoT Central](https://apps.azureiotcentral
 
 ## Next steps
 
-Before you move on to adding multiple devices, there is a short quiz to help establish what you have learned in the past few units.
+Before you move on to adding multiple devices, there is a short knowledge check to help establish what you have learned in the past few units.

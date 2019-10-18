@@ -14,6 +14,14 @@ In this module you will:
 - Add Node.js code to support simulated devices, with routes selected by Azure Maps, using Visual Studio Code, or Visual Studio
 - Monitor and command the simulated devices, from an IoT Central dashboard
 
+## Prerequisites
+
+- An introductory knowledge of the purpose of Azure IoT
+- Ability to navigate Azure IoT portal
+- Ability to use Node.js, at the beginner level
+- Experience using Visual Studio, or Visual Studio Code, at the beginner level
+- Must have, or be able to open, an Azure Maps account
+
 ## The scenario
 
 Suppose you run a company that operates a fleet of refrigerated trucks.

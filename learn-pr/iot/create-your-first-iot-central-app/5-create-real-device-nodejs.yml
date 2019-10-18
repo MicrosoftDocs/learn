@@ -8,10 +8,9 @@ metadata:
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
   zone_pivot_groups: vsandcode
 title: Create a real device in Node.js
 # azureSandbox: true
 durationInMinutes: 20
 content: |
-  [!include[](includes/5-create-real-device-in-nodejs.md)]
+  [!include[](includes/5-create-real-device-nodejs.md)]

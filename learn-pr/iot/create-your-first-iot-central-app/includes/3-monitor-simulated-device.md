@@ -59,4 +59,4 @@ In this final exercise for this unit, you create a dashboard to monitor a single
 
 1. Verify (by watching the dashboard) that your simulated truck is moving around on the dashboard map, albeit with superpowers. Verify too that the temperature of the contents is changing.
 
-When you feel you have gained some insights into the workings of a dashboard, let's take a break and test your knowledge so far with a short quiz!
+When you feel you have gained some insights into the workings of a dashboard, let's take a break and test your knowledge so far.
