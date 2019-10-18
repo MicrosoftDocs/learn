@@ -1,6 +1,6 @@
 If you need to capture more detailed performance metrics, or need them in near real time, install the Azure Diagnostic extension. After it's installed, you can configure it to capture what you need.
 
-Your band is on tour next month, and you have identified specific metrics you want to use to monitor the health of your virtual machine (VM). The metrics that you want to monitor go beyond the host-level metrics available in the Azure portal. You've decided to enable guest diagnostics to get more data.
+Your band is on tour next month, and you have identified specific metrics you want to use to monitor the health of your virtual machine (VM). The metrics that you want to monitor go beyond the basic metrics available in the Azure portal. You've decided to enable guest diagnostics to get more data.
 
 In this unit, you'll see how to install the Azure diagnostics extension to monitor the health of a VM. You'll learn how to enable guest diagnostics when you create a VM and for an already created VM.
 

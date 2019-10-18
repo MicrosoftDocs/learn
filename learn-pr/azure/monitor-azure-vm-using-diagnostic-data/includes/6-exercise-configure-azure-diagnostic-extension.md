@@ -6,7 +6,7 @@ In this exercise, you'll install the Azure diagnostic extension on your new VM t
 
 Use the portal to enable guest-level metric monitoring of the VM. When you enable this monitoring, Azure installs and configures the Azure diagnostic extension for you.
 
-1. Go to the [Azure portal](https://portal.azure.com/) and sign in with the account you used to enable the sandbox.
+1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and sign in with the account you used to enable the sandbox.
 1. In the navigation on the left, select **Virtual machines**.
 1. Select the **monitored-linux-vm** virtual machine you created.
 1. On the left, scroll down until you see the **Monitoring** section, then select **Diagnostic settings**.

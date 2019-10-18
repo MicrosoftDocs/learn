@@ -3,7 +3,7 @@ uid: learn.azure.monitor-azure-vm-using-diagnostic-data.use-diagnostic-data
 title: Diagnostic data case studies
 metadata:
   title: Diagnostic data case studies
-  description: Look at some scenarios where you might use the data you're collecting from all the infrastructure to diagnose and rectify problems.
+  description: Review scenarios where you might use the data you're collecting from all the infrastructure to diagnose and fix problems.
   ms.date: 10/18/2019
   author: cwatson-cat
   ms.author: cwatson

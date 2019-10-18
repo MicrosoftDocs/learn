@@ -8,7 +8,7 @@ In this unit, you'll add an alert for your VM. Then you'll cause the VM CPU usag
 
 If CPU usage goes above 90 percent for one minute, you'd like to get a notification. 
 
-1. Go to the [Azure portal](https://portal.azure.com/) and sign in with the account you used to enable the sandbox.
+1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and sign in with the account you used to enable the sandbox.
 1. Select **Virtual machines**.
 1. Select the **monitored-linux-vm** virtual machine you created.
 1. On the left, scroll down and select **Metrics**.

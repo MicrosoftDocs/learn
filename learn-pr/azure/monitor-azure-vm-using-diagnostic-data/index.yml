@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Monitor the health of your Azure Virtual Machine by collecting and analyzing diagnostic data
-summary: Evaluate monitoring options for an Azure Virtual Machine (VM). Enable client diagnostics to get client data. View VM metrics and create an alert to monitor performance.
+summary: Evaluate monitoring options for an Azure Virtual Machine (VM). Enable diagnostics to get data about your VM. View VM metrics and create an alert to monitor performance.
 abstract: | 
   In this module, you will:
   - Identify metrics and diagnostic data that you can collect for virtual machines

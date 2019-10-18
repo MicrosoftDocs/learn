@@ -1,14 +1,14 @@
 Now that you've created a virtual machine (VM), you'd like to check its health quickly. You decide to save some metric charts to a new dashboard on the portal.
 
-In this unit, you'll see how to build rich charts using the host-level metrics, and then pin these charts to a new dashboard.
+In this unit, you'll see how to build rich charts using the basic VM metrics, and then pin these charts to a new dashboard.
 
 ## Metrics available
 
 Azure metrics are numerical values available from the Azure portal that help you understand the health, operation, and performance of your VMs. You can choose specific metrics and get a graph of that metric.
 
-The following table lists the host-level metrics that are available.
+The following table lists the VM metrics that are available.
 
-|Kind  | Host-level metric  | Description  |
+|Kind  |  metric  | Description  |
 |---------|---------|---------|
 | CPU     | CPU Credits Consumed [or Remaining]  | Number of credits consumed, or number of credits available to burst       |
 |      | Percentage CPU        | Percentage of allocated compute units that are currently in use        |
