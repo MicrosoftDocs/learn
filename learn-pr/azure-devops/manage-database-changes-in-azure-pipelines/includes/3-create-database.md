@@ -62,7 +62,7 @@ Here you create the SQL Server that holds your new database.
     | Resource Group | **tailspin-space-game-rg** |
     | Server name | **tailspin-space-game-sql-NNN**, where *NNN* is a random number. |
     | Server admin login | **azuresql** |
-    | Password | Enter a password that meets the requirements. |
+    | Password | Enter a password that meets the requirements. Do not use dollar signs in the password.|
     | Confirm password | Enter the same password. |
 
 1. Select **Review + create**, then select **Create**.
@@ -94,14 +94,14 @@ Before you can explore your database, you need to set a firewall rule that permi
 1. Choose the **tailspindatabase**.
 1. At the top of the **tailspindatabase** page, select **Set server firewall**.
 
-    Your current IP address is printed next to **Client IP address**.
+    Your current IP address is printed next to **Client IP address**. For example, **123.12.123.123**.
 1. Enter the following rule:
 
     | Property  | Value  |
     |---|---|
     | Rule name| LocalIP |
-    | Start IP | Your IP address |
-    | End IP | Your IP address |
+    | Start IP | Your IP address. Change the last octet to `0`. For example, 123.12.123.**0** |
+    | End IP | Your IP address. Change the last octet to `255`. For example 123.12.123.**255** |
 
 1. Ensure that **Allow Azure services and resources to access this server** is set to **On**.
 1. Select **Save** at the top and then select **OK**.

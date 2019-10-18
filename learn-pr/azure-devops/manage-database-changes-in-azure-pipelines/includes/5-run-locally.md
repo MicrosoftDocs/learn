@@ -118,54 +118,19 @@ Here, you fetch the connection string to your database and store it in a file na
 
 Here, you build and run the web application locally to verify that the application can successfully connect to the database.
 
-To make sure your application will use the local settings including the *secrets.json* configuration, the project will need a launchSettings.json file.
-
-1. Right-click the Profiles folder in the Tailspin.SpaceGame.Web project and add a file. Name the file **launchSettings.json**.
-1. Paste the following in this file and save the file.
-    ```json
-    {
-        "iisSettings": {
-        "windowsAuthentication": false,
-        "anonymousAuthentication": true,
-        "iisExpress": {
-        "applicationUrl": "http://localhost:60080/",
-        "sslPort": 0
-        }
-      },
-        "profiles": {
-        "IIS Express": {
-        "commandName": "IISExpress",
-        "launchBrowser": true,
-        "environmentVariables": {
-            "ASPNETCORE_ENVIRONMENT": "Development"
-        }
-      },
-        "Tailspin.SpaceGame.Web": {
-        "commandName": "Project",
-        "launchBrowser": true,
-        "applicationUrl": "http://localhost:5000/",
-        "environmentVariables": {
-            "ASPNETCORE_ENVIRONMENT": "Development"
-        }
-      }
-     }
-    }
-    ```
-
-    This file specifies settings for running the webapp. There is a profile for IIS Express, and a profile for running from the CLI. Notice that running from the CLI, `Tailspin.SpaceGame.Web` profile, will specify the development environment for running locally and the url will be `http://localhost:5000/`. This is how you will run the webapp shortly.
-
 1. In Visual Studio Code, navigate to the terminal window and run this `dotnet build` command to build the application:
 
     ```bash
     dotnet build --configuration Release
     ```
-<!-- 1. Set the `ASPNETCORE_ENVIRONMENT` Bash variable to "Development" and export the variable.
+
+1. Set the `ASPNETCORE_ENVIRONMENT` Bash variable to "Development" and export the variable.
 
     ```bash
     export ASPNETCORE_ENVIRONMENT=Development
     ```
 
-    This setting tells ASP.NET Core that you're in development mode, and not in production mode, so it's safe to read from the *secrets.json* file. -->
+    This setting tells ASP.NET Core that you're in development mode, and not in production mode, so it's safe to read from the *secrets.json* file.
 
 1. Run this `dotnet run` command to run the application:
 

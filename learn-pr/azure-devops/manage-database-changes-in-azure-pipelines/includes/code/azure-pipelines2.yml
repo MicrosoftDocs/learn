@@ -250,6 +250,7 @@ stages:
 - stage: 'Test'
   displayName: 'Deploy to the test environment'
   dependsOn: Dev
+  condition: succeeded('Dev')
   jobs:
   - deployment: Deploy
     pool:
@@ -273,6 +274,7 @@ stages:
 - stage: 'Staging'
   displayName: 'Deploy to the staging environment'
   dependsOn: Test
+  condition: succeeded('Test')
   jobs:
   - deployment: Deploy
     pool:
