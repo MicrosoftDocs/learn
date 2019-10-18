@@ -14,7 +14,12 @@ Of course, this module is introductory. Security is a deep and complex topic, so
 
 Here are some places to go to learn more about what we've covered today:
 
+- [Microsoft Learn: Design for Security](https://docs.microsoft.com/learn/modules/design-for-security-in-azure/)
 - [Azure Security (Trust Center)](https://www.microsoft.com/trustcenter/security/azure-security)
 - [Azure Security Center planning and operations guide](https://docs.microsoft.com/azure/security-center/security-center-planning-and-operations-guide)
 - [What is Microsoft Azure Information Protection?](https://docs.microsoft.com/azure/information-protection/what-is-information-protection/)
 - [Azure Advanced Threat Protection](https://azure.microsoft.com/features/azure-advanced-threat-protection/)
+- [Configuring SSL for an application in Azure](https://docs.microsoft.com/azure/cloud-services/cloud-services-configure-ssl-certificate-portal).
+- [What are service certificates?](https://docs.microsoft.com/azure/cloud-services/cloud-services-certs-create)
+- [What are management certificates?](https://docs.microsoft.com/azure/cloud-services/cloud-services-certs-create)
+- [Get started with Key Vault certificates](https://docs.microsoft.com/azure/key-vault/certificate-scenarios)

@@ -44,7 +44,10 @@ Recall that the team settled on these seven top issues.
 
 ![Backlog of tasks](../../shared/media/build-all-tasks.png)
 
-Here you'll move the fifth item, **Check open source code for vulnerabilities and licensing terms** to the **Doing** column and assign yourself to the work item.
+> [!NOTE]
+> Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
+
+Here you move the fifth item, **Check open source code for vulnerabilities and licensing terms** to the **Doing** column and assign yourself to the work item.
 
 Recall that **Check open source code for vulnerabilities and licensing terms** relates to scanning open-source components that are used in your application for known vulnerabilities and license ratings.
 

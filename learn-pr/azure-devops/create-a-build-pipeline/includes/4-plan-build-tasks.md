@@ -111,10 +111,16 @@ Mara can use one of two methods to configure her pipeline:
 
 Mara considers her options. She's used YAML previously to define similar build tasks and configurations. And she likes the idea of maintaining the build definition as code, just as she would any other part of her project.
 
-> [!NOTE]
-> The underlying process that Azure Pipelines uses is the same whether you use the visual designer or a YAML file. The difference is mainly in how you define your pipeline tasks.
+_Pipeline as code_ refers to the concept of expressing your build definitions as code. In this short video, Abel explains the concept of pipeline as code.
+
+**Ask Abel**
+
+> [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Pipeline-as-Code--One-Dev-Question/player?format=ny]
 
 To define her build, Mara chooses to use Visual Studio Code to create a YAML file. In it, she enters all the Azure Pipelines tasks that she'll use to replace the existing script commands.
+
+> [!NOTE]
+> The underlying process that Azure Pipelines uses is the same whether you use the visual designer or a YAML file. The difference is mainly in how you define your pipeline tasks.
 
 ## Map script commands to Azure Pipelines tasks
 

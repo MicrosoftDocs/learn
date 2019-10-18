@@ -8,8 +8,6 @@ Here, you will:
 - Expose the Census API through the gateway endpoint.
 - Remove headers from the response.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 ## Deploy the Census Web API

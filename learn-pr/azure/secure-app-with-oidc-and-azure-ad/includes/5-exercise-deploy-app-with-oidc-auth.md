@@ -15,13 +15,13 @@ In this exercise, you'll configure an application to authenticate users against 
 1. Move to the `mslearn-secure-app-with-oidc-and-azure-ad/app` folder.
 
     ```bash
-    cd ~/mslearn-secure-app-with-oidc-and-azure-ad
+    cd ~/mslearn-secure-app-with-oidc-and-azure-ad/app
     ```
 
 1. Update the `appsettings.json` file to specify the configuration details to enable the application to communicate with Azure AD. Open this file in the code editor.
 
     ```bash
-    code ./app/appsettings.json
+    code appsettings.json
     ```
 
 1. Update the following fields as follows:
@@ -50,6 +50,7 @@ In this exercise, you'll configure an application to authenticate users against 
       },
       "AllowedHosts": "*"
     }
+    ```
 
 1. Select **Ctrl+S** to save the file and **Ctrl+Q** to close the code editor.
 
@@ -72,13 +73,13 @@ Now let's configure the app registration to authorize the URL of the web service
 
 1. In the left pane, select **Azure Active Directory**.
 
-1. Under **Manage**, select **App Registrations**. Then select the **WebApp-OpenIDConnect-DotNet** registration that you created in the previous exercise.
+1. Under **Manage**, select **App registrations**. Then select the **WebApp-OpenIDConnect-DotNet** registration that you created in the previous exercise.
 
 1. Select **Authentication**.
 
 1. Paste the URL from the Cloud Shell output in the previous section into the **Redirect URIs** area, and append the suffix `/signin-oidc`. Ensure that the URL uses HTTPS.
 
-1. Delete the redirect URI `https://localhost:5000/signin-odic`.
+1. Delete the redirect URI `https://localhost:5000/signin-oidc`.
 
 1. Paste the same URL into the **Logout URL** field, and append the suffix `/signout-oidc`.
 

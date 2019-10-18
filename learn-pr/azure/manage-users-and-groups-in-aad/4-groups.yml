@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-security.manage-users-and-groups-in-aad.groups
+title: Create and manage groups
+metadata:
+  title: Create and manage groups
+  description: Create and manage groups
+  ms.date: 09/30/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-groups.md)]

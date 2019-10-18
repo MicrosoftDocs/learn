@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.protect-vm-settings-with-dsc.what-is-azure-automation-state-configuration
+title: What is Azure Automation State Configuration?
+metadata:
+  title: What is Azure Automation State Configuration?
+  description: What is Azure Automation State Configuration?
+  ms.date: 9/13/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-what-is-azure-automation-state-configuration.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What is Azure Automation State Configuration?
+    choices:
+    - content: "A declarative management platform to configure, deploy, and control systems."
+      isCorrect: false
+      explanation: "PowerShell DSC is a declarative management platform to configure, deploy, and control systems."
+    - content: "A service used to write, manage, and compile PowerShell Desired State Configuration (DSC) configurations, import DSC Resources, and assign configurations to target nodes."
+      isCorrect: true
+      explanation: "Azure Automation State Configuration enables you to ensure that all virtual machines in a collection are in the same, consistent state."
+    - content: "A service that manages the state configuration on each destination, or node."
+      isCorrect: false
+      explanation: "The Local Configuration Manager (LCM) is responsible for updating the configuration to match the desired state on a node."
+  - content: "A DSC PowerShell script ______________."
+    choices:
+    - content: "Contains the steps required to configure a virtual machine to get it into a specified state."
+      isCorrect: false
+      explanation: "A DSC PowerShell script is declarative. It describes the desired state, but doesn't list the steps necessary to achieve that state."
+    - content: "Is idempotent."
+      isCorrect: false
+      explanation: "A DSC PowerShell script is declarative. It describes the desired state, but doesn't list the steps necessary to achieve that state."
+    - content: "Describes the desired state."
+      isCorrect: true
+      explanation: "A DSC PowerShell script is declarative. It describes the desired state but doesn't include the steps necessary to achieve that state."
+  - content: "Why use the pull mode over push mode for DSC?"
+    choices:
+    - content: "The pull mode is best for complex environments that need redundancy and scale."
+      isCorrect: true
+      explanation: "LCM on each node automatically polls the pull server at regular intervals to get the latest configuration details. With the push mode, an administrator manually sends the configurations towards the nodes."
+    - content: "The pull mode is easy to set up and doesn't need its own dedicated infrastructure."
+      isCorrect: false
+      explanation: "The push mode is easy to set up and doesn't need its own dedicated infrastructure"
+    - content: "The pull mode uses LCM to make sure that the state on each node matches that specified by the configuration."
+      isCorrect: false
+      explanation: "Both the pull mode and push mode use LCM. The LCM is responsible for updating the configuration to match the desired state on a node."

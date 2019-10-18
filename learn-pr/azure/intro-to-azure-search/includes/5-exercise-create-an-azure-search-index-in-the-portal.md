@@ -1,8 +1,8 @@
-The Azure portal provides a Data Import wizard that allows you to automatically create an index, and indexer, for supported data sources.
+The Azure portal provides the Import data wizard that allows you to automatically create an index, and indexer, for supported data sources.
 
-Your organization has a large number of exercise videos publicly available through its website. Users are struggling to find relevant content or are undertaking exercises beyond their fitness level. The exercise videos need to be indexed using the following properties video title, exercise difficulty, video length, and publication date. It is hoped that these changes will improve user experience and result in fewer complaints about being unable to find relevant content.
+Your organization has a large number of exercise videos publicly available through its website. Users are struggling to find relevant content or are undertaking exercises beyond their fitness level. The exercise videos need to be indexed using the following properties: video title, exercise difficulty, video length, and publication date. It is hoped that these changes will improve user experience and result in fewer complaints about being unable to find relevant content.
 
-Your database team has exported your company's current video catalog into a JSON array, to allow you to upload the catalog into Azure blob storage so that is it accessible by a Search indexer. The data is in the following format:
+Your database team has exported your company's current video catalog into a JSON array, to allow you to upload the catalog into Azure Blob storage so that is it accessible by a search indexer. The data is in the following format:
 
 ```json
 [
@@ -37,7 +37,7 @@ Your database team has exported your company's current video catalog into a JSON
 
 A video has a title string, a difficulty rating integer, length in minutes, a publication date and time, and a file size in megabytes.
 
-In the unit, you'll use the Data Import wizard to create an index, and import your video catalog into the Azure Search service you created earlier.
+In the unit, you'll use the Import data wizard to create an index, and import your video catalog into the Azure Search service you created earlier.
 
 ## Load the video catalog into Azure blob storage
 
@@ -96,7 +96,7 @@ In the unit, you'll use the Data Import wizard to create an index, and import yo
 
     ![Screenshot of the Azure portal, showing the Customize target index page with the fields completed](../media/5-exercise-screenshot-6.png)
 
-1. The **Customize Target Index** page allows you to change the automatically generated index schema created by the Data Import wizard. The fields are populated by the wizard after reading the file in blob storage. Use the table below to complete the named fields:
+1. The **Customize Target Index** page allows you to change the automatically generated index schema created by the Import Data wizard. The fields are populated by the wizard after reading the file in blob storage. Use the table below to complete the named fields:
 
     | Field | Value |
     | --- | --- |
@@ -131,9 +131,9 @@ In the unit, you'll use the Data Import wizard to create an index, and import yo
 
 ## Test the index
 
-![Screenshot of the Azure portal, showing the Search service overview page](../media/5-exercise-screenshot-7.png)
+![Screenshot of the Azure portal, showing the search service overview page](../media/5-exercise-screenshot-7.png)
 
-1. On the Search service overview, select **Search explorer**.
+1. On the search service overview, select **Search explorer**.
 
     ![Screenshot of the Azure portal, showing the Search explorer](../media/5-exercise-screenshot-8.png)
 

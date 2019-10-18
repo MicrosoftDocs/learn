@@ -1,52 +1,52 @@
-The most common task an application or script will do with the Custom Vision Service is to request image predictions through the **Prediction API**. This process involves sending an authorized web request to the subscription endpoint and processing the information returned from the call.
+The most common task an application or script will do with the Custom Vision service is request image predictions through the Prediction API. This task involves sending an authorized web request to the subscription endpoint and processing the information returned from the call.
 
 > [!TIP]
-> For testing purposes, subscribers can practice using the Prediction API using the [Custom Vision Prediction API testing console](https://southcentralus.dev.cognitive.microsoft.com/docs/services/Custom_Vision_Prediction_3.0/operations/5c82db60bf6a2b11a8247c19 "Custom Vision Prediction API testing console"). Make sure to select the testing console associated with the region where the service is deployed.
+> For testing purposes, subscribers can practice using the Prediction API through the [Custom Vision Prediction API testing console](https://southcentralus.dev.cognitive.microsoft.com/docs/services/Custom_Vision_Prediction_3.0/operations/5c82db60bf6a2b11a8247c19 "Custom Vision Prediction API testing console"). Be sure to select the testing console that's associated with the region where the service is deployed.
 
 ### Calling the Prediction API
 
-The Prediction API is accessed through a public web endpoint that's specific to your registered Custom Vision Service. There are two APIs available depending on the project type: image classification or object detection.
+You access the Prediction API through a public web endpoint that's specific to your registered Custom Vision service. There are two APIs available, depending on the project type: image classification and object detection.
 
 #### Image classification
-Image classification analyzes a supplied image and returns a list of labels (tags) identified in the image. There are several endpoints supplied; the two most commonly used are:
+Image classification analyzes a supplied image and returns a list of labels (tags) identified in the image. Several endpoints are supplied. Here are the two most commonly used endpoints:
 
-- **ClassifyImage** accepts a binary payload (`"application/octet-stream"`) as a byte array which contains the image data.
-- **ClassifyImageUrl** accepts a **JSON** payload (`"application/json"`) specifying a publicly available image URL.
+- **ClassifyImage** accepts a binary payload (`"application/octet-stream"`) as a byte array that contains the image data.
+- **ClassifyImageUrl** accepts a JSON payload (`"application/json"`) that specifies a publicly available image URL.
 
 #### Object detection
-Object detection is similar but it also returns the coordinates (bounding box) where the tag was located within the image. As with classification, there are two commonly used endpoints available:
+Object detection is similar to image classification, but it also returns the coordinates (the bounding box) where the tag was located within the image. As with classification, two commonly used endpoints are available:
 
-- **DetectImage** accepts a binary payload (`"application/octet-stream"`) as a byte array which contains the image data.
-- **DetectImageUrl** accepts a **JSON** payload (`"application/ejson"`) specifying a publicly available image URL.
+- **DetectImage** accepts a binary payload (`"application/octet-stream"`) as a byte array that contains the image data.
+- **DetectImageUrl** accepts a JSON payload (`"application/json"`) that specifies a publicly available image URL.
 
-Both of these API endpoints use the same structure to form the URL.
+These API endpoints both use the same structure to form the URL:
 
 ```text
 https://{endpoint}/customvision/v3.0/Prediction/{projectId}/{projectType}/iterations/{iterationName}/{imageType}
 ```
 
-Where:
+In this URL:
 
-- `{endpoint}` is the location endpoint the service was created in, for example, **southcentralus.api.cognitive.microsoft.com**.
-- `{projectId}` is a unique project identifier that is used to specify the Custom Vision Service.
-- `{projectType}` is either **classify** for _image classification_ or **detect** for _object detection_.
-- `{iterationName}` is the name of the trained model iteration being used.
-- `{imageType}` is either **url** when the image is passed as a URL, or **image** when the image is passed as binary data in the body of the request.
+- `{endpoint}` is the location endpoint the service was created in, for example, `southcentralus.api.cognitive.microsoft.com`.
+- `{projectId}` is a unique project identifier that's used to specify the Custom Vision service.
+- `{projectType}` is either `classify` for image classification or `detect` for object detection.
+- `{iterationName}` is the name of the trained model iteration that's being used.
+- `{imageType}` is either `url`, when the image is passed as a URL, or `image`, when the image is passed as binary data in the body of the request.
 
 > [!IMPORTANT]
-> The API you call: **Detect** vs. **Classify** is based on the _type_ of project you create in the Custom Vision Service. If you don't call the proper API, the service will return `400 Bad Request - Invalid project type for operation.`.
+> The API you call, Detect versus Classify, is based on the *type* of project you create in the Custom Vision service. If you don't call the proper API, the service will return `400 Bad Request - Invalid project type for operation`.
 
 ### Locating the project URL
 
-The specific endpoint details are available in the Custom Vision Service portal. Selecting the **View Endpoint** button on the **Predictions** tab, or the **Prediction URL** option on the **Performance** tab will display a dialog similar to the following image.
+The specific endpoint details are available in the Custom Vision service portal. If you select the **View Endpoint** button on the **Predictions** tab or the **Prediction URL** option on the **Performance** tab, you'll see a dialog box similar to this one:
 
-![Screenshot showing the two defined prediction endpoints for a Custom Vision Service](../media/4-image-url.png)
+![Screenshot showing the two defined prediction endpoints for a Custom Vision service](../media/4-image-url.png)
 
 ### Constructing the HTTP request
 
-Once the proper URL is identified, you invoke it with an HTTP `PUT` request. Recall that you need to pass a **Prediction Key** with the request. This is provided as a request header with the name `Prediction-Key.`
+After you identify the proper URL, you invoke it by using an HTTP PUT request. Remember that you need to pass a prediction key with the request. This key is provided as a request header with the name `Prediction-Key`.
 
-As an example, the following C# code sends an image URL to the prediction API with the given endpoint and prediction key.
+For example, the following C# code sends an image URL to the Prediction API with the given endpoint and prediction key:
 
 ```csharp
 public async Task<string> MakePredictionRequestAsync(string url, string predictionKey, string imageUrl)
@@ -61,7 +61,7 @@ public async Task<string> MakePredictionRequestAsync(string url, string predicti
 }
 ```
 
-The same code in Python 3 might look something like:
+In Python 3, the same code might look something like this example:
 
 ```python
 import http.client, urllib.request, urllib.parse, urllib.error, base64
@@ -85,11 +85,11 @@ except Exception as e:
 ```
 
 > [!NOTE]
-> The Prediction API methods also accept an optional query string parameter named `application` to identify the app invoking the service. This value can be used to track the applications utilizing the Custom Vision Service.
+> The Prediction API methods also accept an optional query string parameter named `application` to identify the app that's invoking the service. This value can be used to track the applications that are using the Custom Vision service.
 
 ### Passing image files directly
 
-If the _binary file payload_ **ClassifyImage** or **DetectImage** is being used, the request body should contain the image data encoded into a byte array. Here's the same call using the **ClassifyImage** endpoint instead. In this case, the `Content-Type` header must be set to `"application/octet-stream."`
+If you're using the *binary file payload* **ClassifyImage** or **DetectImage**, the request body should contain the image data encoded into a byte array. Here's the same call using the **ClassifyImage** endpoint instead. In this case, the `Content-Type` header must be set to `"application/octet-stream"`.
 
 ```csharp
 public async Task<string> MakePredictionRequestAsync(string url, string predictionKey, string imageFile)
@@ -111,7 +111,7 @@ public async Task<string> MakePredictionRequestAsync(string url, string predicti
 
 ### Processing the response
 
-The Prediction API returns a JSON object that includes several pieces of information - the most important of which is an array of _predictions_ indicating the probability that the supplied image contained that trained element. For example, if the model were trained to recognize types of animals found in the Arctic Circle and we provided a picture of a Polar Bear, the **ClassifyImage** API might return something like:
+The Prediction API returns a JSON object that includes several bits of information. The most important information here is an array of *predictions* that indicates the probability that the supplied image contained that trained element. For example, if the model were trained to recognize types of animals found in the Arctic Circle and we provided a picture of a polar bear, **ClassifyImage** might return an object like this one:
 
 ```json
 {
@@ -139,4 +139,4 @@ The Prediction API returns a JSON object that includes several pieces of informa
 }
 ```
 
-Each prediction contains a `tagId` which identifies the matched tag, a `tag` which provides a friendly name for the tag, and a `probability` value from [0-1] which indicates how confident the service was in identifying the given tag in the image.
+Each prediction contains a `tagId` that identifies the matched tag, a `tag` that provides a friendly name for the tag, and a `probability` value from 0 through 1 that indicates how confident the service was in identifying the given tag in the image.
