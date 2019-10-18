@@ -1,4 +1,3 @@
-
 Azure IoT Central enables the easy monitoring and management of a fleet of remote devices.
 
 Azure IoT Central encompasses a range of underlying technologies that work great, but can be complicated to implement when numerous technologies are needed. These technologies include Azure IoT Hub, the Azure Device Provisioning System (DPS), Azure Maps, Azure Time Series Insights, Azure IoT Edge, and others. It is only necessary to use these technologies specifically, if more granularity is needed than available through IoT Central.
