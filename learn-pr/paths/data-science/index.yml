@@ -17,7 +17,6 @@ iconUrl: /learn/achievements/data-science.svg
 levels:
 - intermediate
 roles:
-- developer
 - data-scientist
 products:
 - azure
