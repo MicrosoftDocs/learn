@@ -6,7 +6,7 @@ The `Array` class contains methods that we can use to manipulate the content, ar
 
 ### Step 1 - Create an array of pallets, then sort them
 
-Delete or comment out all of the code from previous exercises.  Add the following code to the .NET Editor.
+Add the following code to the .NET Editor.
 
 ```csharp-interactive
 string[] pallets = { "B14", "A11", "B12", "A13" };
@@ -32,9 +32,18 @@ Sorted...
 
 ### Step 2 - Reverse the order of the pallets
 
-Next, add the following code below the code added in Step 1.
+Next, add code to reverse the order of the pallets by calling the `Array.Reverse()` method.  Update your code from step 1 to match the following code listing.
 
 ```csharp-interactive
+string[] pallets = { "B14", "A11", "B12", "A13" };
+
+Console.WriteLine("Sorted...");
+Array.Sort(pallets);
+foreach (var pallet in pallets)
+{
+    Console.WriteLine($"-- {pallet}");
+}
+
 Console.WriteLine("");
 Console.WriteLine("Reversed...");
 Array.Reverse(pallets);
