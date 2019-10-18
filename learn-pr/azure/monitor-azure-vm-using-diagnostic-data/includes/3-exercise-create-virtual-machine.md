@@ -1,29 +1,16 @@
-When you run your virtual machine (VM) on Azure, you can view host-level metrics without installing any additional software. You can quickly create a VM by using the Azure portal, Azure CLI, or PowerShell. You can connect boot diagnostics when you create the VM.
+When you run your virtual machine (VM) on Azure, you can view basic metrics without installing any additional software. You can quickly create a VM by using the Azure portal, Azure CLI, or PowerShell. You can connect boot diagnostics when you create the VM.
 
-You'd like to move to a new version of Ubuntu so you deploy a new VM. You only need to monitor host-level metrics. So you're only going to create a VM and a storage account.
+You'd like to move to a new version of Ubuntu so you deploy a new VM. You only need to monitor the basic metrics. So you're only going to create a VM and a storage account.
 
-In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After the VM is created, you'll quickly set up a graph to view the host CPU usages and inbound traffic. You'll also check that the boot diagnostics are working correctly.
+In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After the VM is created, you'll quickly set up a graph to view the CPU usages and inbound traffic. You'll also check that the boot diagnostics are working correctly.
 
 ## Create a storage account and VM
 
-1. Use the Cloud Shell on the right to create a virtual network for your VM.
-
-    ```azurecli
-
-    az network vnet create  \
-    --name band-vnet \
-    --address-prefix 10.10.0.0/16 \
-    --subnet-name frontend \
-    --subnet-prefix 10.10.1.0/24 \
-    --location eastus2 \
-    --resource-group <rgn>[sandbox resource group name]</rgn>
-    ```
-
-1. Create a storage account to store boot diagnostics.
+1. Use the Cloud Shell on the right to create a storage account to store boot diagnostics.
 
     ```azurecli
     STORAGE=metricsstorage$RANDOM
-    
+
     az storage account create \
         --name $STORAGE \
         --sku Standard_LRS \
@@ -39,7 +26,6 @@ In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After th
         --image UbuntuLTS \
         --size Standard_B1s \
         --location eastus2 \
-        --vnet-name band-vnet \
         --admin-username azureuser \
         --boot-diagnostics-storage $STORAGE \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
@@ -48,7 +34,7 @@ In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After th
 
    It may take a couple of minutes to create the VM.
 
-## View host-level metrics
+## View basic metrics for VM
 
 1. Go to the [Azure portal](https://portal.azure.com/) and sign in with the account you used to enable the sandbox. 
 1. In the navigation on the left, select **Virtual machines**.

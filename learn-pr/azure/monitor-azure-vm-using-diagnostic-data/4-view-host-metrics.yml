@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data.view-host-metrics
-title: View host metrics
+title: View VM metrics
 metadata:
-  title: View host metrics
-  description: See how to build rich charts using the host-level metrics, and then pin these charts to a new health dashboard.
+  title: View VM metrics
+  description: See how to build rich charts using the VM metrics, and then pin these charts to a new health dashboard.
   ms.date: 10/18/2019
   author: cwatson-cat
   ms.author: cwatson
@@ -33,7 +33,7 @@ quiz:
       explanation: An Azure diagnostic extension isn't required to store simple boot diagnostics.
     - content: You don't have to create anything additional to store diagnostic logs in Azure.
       isCorrect: false
-      explanation: You don't have to create anything additional to see host-level metrics. A storage account is needed for boot diagnostics though.
+      explanation: You don't have to create anything additional to see basic metrics for VMs. A storage account is needed for boot diagnostics though.
     - content: An Azure Storage account.
       isCorrect: true
       explanation: A storage account is needed to store boot diagnostics data, the boot screenshots, and logs.

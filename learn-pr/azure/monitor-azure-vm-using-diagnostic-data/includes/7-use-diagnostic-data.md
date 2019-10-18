@@ -10,7 +10,7 @@ To create a chart or alert for a DDoS attack, in the Azure portal, you'd go to *
 
 ## Increased CPU Load
 
-Monitor CPU activity, memory availability, and CPU activity to see if you need to scale up your web server. To monitor the CPU load, you can use the host-level metric **Percentage CPU**. If you want more granularity, use the guest-level **CPU percentage guest OS** metric.
+Monitor CPU activity, memory availability, and CPU activity to see if you need to scale up your web server. To monitor the CPU load, you can use the basic metric **Percentage CPU**. If you want more granularity, use the guest-level **CPU percentage guest OS** metric.
 
 To respond to a high load, you could create an alert rule for the virtual machine with a condition for the CPU metric. For example, you could monitor to see if the average value over any 15 minutes is higher than 85%.
 

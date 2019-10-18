@@ -4,18 +4,18 @@ Your band is on tour next month, so you need to identify which metrics you want 
 
 In this unit, you'll look at how to use Azure metrics to monitor the health of a VM. You'll explore the different metrics available in Azure.
 
-## Azure host-level metrics
+## Basic metrics for Azure VMs
 
 Metrics are numerical values that help you understand the health, operation, and performance of your VMs. You can choose a specific metric and see a graph of that metric in the Azure portal.
 
-You can get data such as:
+By default, you can get data like:
 
 - CPU usage
 - Network traffic
 - OS disk usage
 - Boot success
 
-Azure can collect these host-level metrics by default for hosted VMs without installing any additional software. To capture the boot diagnostics, you'll need to create, and associate a storage account. You associate the storage account at the time you create your VM, or, for an existing VM, associate one later.
+Azure can collect these metrics by default for hosted VMs without installing any additional software. To capture the boot diagnostics, you'll need to create, and associate a storage account. You associate the storage account at the time you create your VM, or, for an existing VM, associate one later.
 
 ## View metrics
 
