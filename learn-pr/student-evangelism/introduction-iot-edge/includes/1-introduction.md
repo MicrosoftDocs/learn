@@ -7,7 +7,7 @@ The ability to move computing workloads to edge devices provides other advantage
 
 Suppose the user of the system is a doctor who specializes in diabetic treatment. She wants to monitor the patient's blood glucose level and warn the patient when the glucose level changes are of concern to their health. In this case, the IoT Edge device monitors the glucose level of the patient and stores the data on the device itself. The device pushes summarized data from the edge to the cloud. Algorithms, which run on the device, help to monitor the changes in the level, which could cause concern. The doctor receives an alert from the algorithm running on the IoT Edge device. The alarm is generated rapidly in response to the changing glucose levels because the algorithm is running on the edge device. This notification enables the doctor to respond to the patient immediately. The device also caters for situations where connectivity is poor. The data is stored securely on the device.
 
-![](../media/IoTEdge.png)
+![](../media/iot-edge.png)
 
 
 ## Learning objectives
