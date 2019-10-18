@@ -6,9 +6,11 @@ Azure Cosmos DB is a globally distributed, multimodel database. You can deploy i
 - Gremlin API
 - Table API
 
-Because of the multimodel architecture of Azure Cosmos DB, you benefit from each model's inherent capabilities. For example, you can use MongoDB for semistructured data, Cassandra for wide columns, or Gremlin for graph databases. Using Gremlin, you could create graph entities and graph queries to traverse vertices and edges. This method can get you subsecond response times for complex scenarios like natural language processing (NLP) and social networking associations. 
+Because of the multimodel architecture of Azure Cosmos DB, you benefit from each model's inherent capabilities. For example, you can use MongoDB for semistructured data, Cassandra for wide columns, or Gremlin for graph databases. When you move your data from SQL, MongoDB, or Cassandra to Azure Cosmos DB, applications that are built using the SQL, MongoDB, or Cassandra APIs will continue to operate.
 
-When you move the database server from SQL, MongoDB, or Cassandra to Azure Cosmos DB, applications that are built on SQL, MongoDB, or Cassandra will continue to operate.
+> [!NOTE]
+>
+> For more information about the APIs that are available in Azure Cosmos DB, see [Choose the appropriate API for Azure Cosmos DB storage](https://docs.microsoft.com/learn/modules/choose-api-for-cosmos-db/).
 
 ## When to use Azure Cosmos DB
 

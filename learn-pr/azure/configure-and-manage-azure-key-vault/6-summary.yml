@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-security.configure-and-manage-azure-key-vault.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 09/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-summary.md)]

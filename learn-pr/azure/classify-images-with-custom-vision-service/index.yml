@@ -4,11 +4,10 @@ metadata:
   title: Classify images with the Microsoft Custom Vision Service
   description:  Create, train and test a custom image classification model using the Custom Vision Service to accurately identify paintings from famous artists.
   ms.date: 04/10/2019
-  author: shanamatthews
-  ms.author: shanama
+  author: AndrewJByrne
+  ms.author: anbyrne
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: luken
 title: Classify images with the Microsoft Custom Vision Service
 summary: Create, train and test a custom image classification model using the Custom Vision Service to accurately identify paintings from famous artists.
 abstract:  |

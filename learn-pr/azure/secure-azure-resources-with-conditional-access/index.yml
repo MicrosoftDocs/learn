@@ -15,7 +15,6 @@ abstract: |
   In this module, you will:
   - Create a test user and a user group
   - Enable a conditional access policy that requires Multi-Factor Authentication (MFA)
-
 prerequisites: |
   - Knowledge of basic Azure concepts, such as resource groups and subscriptions
 iconUrl: /learn/achievements/secure-azure-resources-with-conditional-access.svg
@@ -24,6 +23,7 @@ levels:
 roles: 
 - administrator
 - solution-architect
+- security-engineer
 products: 
 - azure
 - azure-active-directory

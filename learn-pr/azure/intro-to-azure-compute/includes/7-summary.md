@@ -4,4 +4,8 @@ Azure provides multiple services to perform cloud compute, but choosing the righ
 
 ## Learn more
 
-For more information on the compute services available on Azure, visit our [Overview of Azure compute options](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview) article on the Azure Architecture Center.
+For more information on the compute services available on Azure, visit some of the pages below.
+
+- [Overview of Azure compute options](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview)
+- [Typical scenarios for running Azure VMs](https://docs.microsoft.com/azure/virtual-machines/windows/overview?toc=%2Fazure%2Fvirtual-machines%2Fwindows%2Ftoc.json)
+

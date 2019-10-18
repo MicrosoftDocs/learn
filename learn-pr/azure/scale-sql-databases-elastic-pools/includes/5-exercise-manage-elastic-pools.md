@@ -1,7 +1,5 @@
 In this exercise, we'll manage the SQL elastic pool and add an additional databases to the pool for another location.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Adjust elastic pool settings
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.

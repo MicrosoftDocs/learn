@@ -15,3 +15,8 @@ achievements:
   title: Scale and size Virtual Machines in Azure
   summary: Scale and size Virtual Machines in Azure
   iconUrl: /learn/achievements/scale-and-size-virtual-machines.svg
+- uid: learn.authenticate-browser-based-apps-with-azure-app-services.badge
+  type: badge
+  title: Authenticate browser-based apps with Azure App Services
+  summary: Authenticate browser-based apps with Azure App Services
+  iconUrl: /learn/achievements/authenticate-browser-based-apps-with-azure-app-services.svg

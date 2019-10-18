@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>NA/store-and-retrieve-data-using-literal-and-variable-values-in-c#</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-8.0%" y="-9.6%" width="116.0%" height="120.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0970052083 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-4" x="10" y="7" width="26" height="11" rx="2"></rect>
+        <filter x="-1.9%" y="-4.5%" width="103.8%" height="109.1%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <filter x="-19.0%" y="-20.0%" width="142.9%" height="145.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.100232111 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="N/A-43" transform="translate(-50.000000, -260.000000)">
+            <g id="NA/store-and-retrieve-data-using-literal-and-variable-values-in-c#" transform="translate(50.000000, 260.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Box" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(24.000000, 54.000000)">
+                            <polygon id="Right-Edge" fill="#654A23" points="49.3661847 7.5605058 49.3661847 8.05287064 43.4392943 11.6233498 43.4392943 11.0913511"></polygon>
+                            <polygon id="Right-Flap" fill="#D9A65E" points="49.3661847 7.5605058 43.4392943 4.06497645 37.6040479 7.5605058 43.4392943 11.0913511"></polygon>
+                            <polygon id="Left-Edge" fill="#654A23" points="0.254736238 7.5605058 6.1816266 11.0913511 6.1816266 11.6233498 0.254736238 8.05287064"></polygon>
+                            <polygon id="Left-Flap" fill="#D9A65E" points="0.254736238 7.5605058 6.1816266 4.06497645 12.016873 7.5605058 6.1816266 11.0913511"></polygon>
+                            <polygon id="Inside-Box" fill="#CC9547" points="6.1358046 11.0913511 11.9722181 7.5605058 37.6498699 7.5605058 43.4851163 11.0913511"></polygon>
+                            <polygon id="Back-Box" fill="#9C7237" points="11.9722181 11.0913511 11.9722181 7.5605058 37.6498699 7.5605058 37.6498699 11.0913511"></polygon>
+                            <polygon id="Back-Flap" fill="#D9A65E" points="12.5558011 0.443624574 11.9722181 7.5605058 37.6498699 7.5605058 37.0662869 0.443624574"></polygon>
+                            <g id="Front-Box" stroke-width="1" fill="none" transform="translate(5.835830, 11.008529)">
+                                <path d="M37.6487028,28.3295844 C37.6487028,28.976906 37.1234781,29.5065328 36.4815368,29.5065328 L1.46655706,29.5065328 C0.824032179,29.5065328 0.299391066,28.976906 0.299391066,28.3295844 L0.299974649,0.0828222962 L37.6492864,0.0828222962 L37.6487028,28.3295844" id="Fill-681" fill="#F2BE53"></path>
+                                <path d="M36.4815368,29.5065328 C37.1234781,29.5065328 37.6487028,28.976906 37.6487028,28.3295844 L37.6492864,1.25977072 L20.7247959,1.25977072 C19.7577989,1.25977072 18.9740469,2.04832616 18.9740469,3.02519334 L18.9740469,26.5641617 C18.9740469,27.5410289 18.190295,28.3295844 17.2232979,28.3295844 L0.299391066,28.3295844 C0.299391066,28.976906 0.824032179,29.5065328 1.46655706,29.5065328 L36.4815368,29.5065328" id="Fill-683" fill="#EFB252"></path>
+                            </g>
+                            <g id="Front-Flap" stroke-width="1" fill="none" transform="translate(3.501498, 11.008529)">
+                                <polyline id="Front-Shadow" fill-opacity="0.0974298007" fill="#000000" points="39.9830348 14.1432447 2.63372305 14.1432447 2.63430663 0.0828222962 39.9836183 0.0828222962"></polyline>
+                                <polygon id="Fill-680-Copy-6" fill="#654A23" points="0.300558232 9.1060241 0.300558232 8.63701764 42.3185339 8.63701764 42.3185339 9.1060241"></polygon>
+                                <polygon id="Fill-680-Copy-3" fill="#D9A65E" points="2.63430663 0.0828222962 0.300558232 8.63701764 42.3185339 8.63701764 39.9836183 0.0828222962"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-2" mask="url(#mask-2)">
+                        <g transform="translate(26.000000, 74.000000)">
+                            <g id="Rectangle">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                            </g>
+                            <text id="x" font-family="SegoeUI-Semibold, Segoe UI" font-size="16" font-weight="500">
+                                <tspan x="18.9921875" y="17" fill="#0084DE">x</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <path d="M76.7226852,39.8883708 L63.3313809,39.8883708 C60.9580592,39.8883708 59.0270331,37.8695708 59.0270331,35.3883708 C59.0270331,33.4577058 60.2077396,31.7611758 61.9386326,31.1437408 C62.2998965,27.0473058 65.5790683,23.8883708 69.5487722,23.8883708 C73.4175965,23.8883708 76.6701435,26.9372008 77.1355583,30.9088808 C79.3159879,31.1268958 81.0270331,33.0526758 81.0270331,35.3883708 C81.0270331,37.8695708 79.096007,39.8883708 76.7226852,39.8883708 Z" id="Cloud" fill="#FFFFFF" fill-rule="nonzero" opacity="0.900000036" mask="url(#mask-2)"></path>
+                    <g id="Parachute" filter="url(#filter-6)" mask="url(#mask-2)">
+                        <g transform="translate(38.088608, 14.000000)">
+                            <g transform="translate(0.297986, 0.359389)">
+                                <path d="M19.5696203,9.23594937 C19.356962,9.05417722 19.0379747,9.07797468 18.8556962,9.29113924 L11.2501266,18.164557 L13.6516456,9.75898734 C13.7281013,9.49063291 13.5726582,9.21012658 13.3032911,9.13316456 C13.0374684,9.05974684 12.7544304,9.21164557 12.6774684,9.48151899 L10.1265823,18.4101266 L7.5756962,9.48151899 C7.49873418,9.21164557 7.21670886,9.06025316 6.94987342,9.13316456 C6.68050633,9.21012658 6.52506329,9.49063291 6.60151899,9.75898734 L9.00303797,18.164557 L1.39746835,9.29113924 C1.21417722,9.07797468 0.895189873,9.05316456 0.683544304,9.23594937 C0.470886076,9.41822785 0.446075949,9.73721519 0.627848101,9.94936709 L8.59189873,19.2405063 L11.6612658,19.2405063 L19.6253165,9.94936709 C19.8075949,9.73721519 19.7822785,9.41822785 19.5696203,9.23594937" id="Fill-1113" fill="#E1E4E1"></path>
+                                <path d="M0,10.1265823 C0,4.53367089 4.53367089,0 10.1265823,0 C15.721519,0 20.2531646,4.53367089 20.2531646,10.1265823 L0,10.1265823" id="Fill-1118" fill="#4D84CD"></path>
+                                <path d="M4.05063291,10.1265823 C4.05063291,4.53367089 6.77063291,0 10.1265823,0 C13.4825316,0 16.2025316,4.53367089 16.2025316,10.1265823 L4.05063291,10.1265823" id="Fill-1119" fill="#9EE5F9"></path>
+                                <path d="M8.10126582,10.1265823 C8.10126582,4.53367089 9.00810127,0 10.1265823,0 C11.2450633,0 12.1518987,4.53367089 12.1518987,10.1265823 L8.10126582,10.1265823" id="Fill-1120" fill="#4D84CD"></path>
+                                <path d="M10.1265823,0 C10.1179747,0 10.1088608,0 10.1002532,0 C9.44962025,0.00202531646 9.24,0.888607595 9.81417722,1.19443038 C13.0111392,2.89417722 15.1898734,6.2521519 15.1898734,10.1265823 L20.2531646,10.1265823 C20.2531646,4.53367089 15.721519,0 10.1265823,0" id="Fill-1122" fill="#3B68A3"></path>
+                                <path d="M10.1265823,0 C10.1098734,0 10.0936709,0.00405063291 10.076962,0.00405063291 C9.44658228,0.0288607595 9.24759494,0.892658228 9.81417722,1.19443038 C13.0111392,2.89417722 15.1898734,6.2521519 15.1898734,10.1265823 L16.2025316,10.1265823 C16.2025316,4.53367089 13.4825316,0 10.1265823,0" id="Fill-1123" fill="#7DB7C7"></path>
+                                <path d="M9.4956962,0.507848101 C9.4435443,0.761518987 9.53518987,1.04607595 9.81417722,1.19443038 C10.3751899,1.49265823 10.9032911,1.84506329 11.395443,2.23949367 C11.0481013,0.841012658 10.6070886,0 10.1265823,0 C9.90632911,0 9.69417722,0.181772152 9.4956962,0.507848101" id="Fill-1124" fill="#3B68A3"></path>
+                                <polyline id="Fill-1125" fill="#C5CCCD" points="6.99594937 11.1392405 8.04911392 11.1392405 7.76 10.1265823 6.70632911 10.1265823 6.99594937 11.1392405"></polyline>
+                                <polyline id="Fill-1126" fill="#C5CCCD" points="13.5468354 10.1265823 12.4931646 10.1265823 12.2040506 11.1392405 13.2572152 11.1392405 13.5468354 10.1265823"></polyline>
+                                <polyline id="Fill-1127" fill="#C5CCCD" points="1.64759494 11.1392405 2.98177215 11.1392405 2.11341772 10.1265823 0.779746835 10.1265823 1.64759494 11.1392405"></polyline>
+                                <polyline id="Fill-1128" fill="#C5CCCD" points="19.4734177 10.1265823 18.1417722 10.1265823 17.2708861 11.1392405 18.6025316 11.1392405 19.4734177 10.1265823"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="helloworld" mask="url(#mask-2)">
+                        <g transform="translate(47.044477, 53.957139) rotate(2.000000) translate(-47.044477, -53.957139) translate(23.544477, 29.957139)">
+                            <g id="Group" stroke-width="1" fill-rule="evenodd" transform="translate(6.992690, 2.581206)">
+                                <rect id="Rectangle" fill="#0078D4" x="0" y="0" width="32" height="16" rx="2"></rect>
+                                <rect id="Rectangle" fill="#6BABFF" x="1.66605749" y="1.2451005" width="28.666667" height="13.44" rx="2"></rect>
+                            </g>
+                            <text id="10" font-family="SegoeUI-Semibold, Segoe UI" font-size="14" font-weight="500">
+                                <tspan x="16.73696" y="15.044692" fill="#FFFFFF">10</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <path d="M16.6300891,54.2623683 L8.02139342,54.2623683 C5.12053559,54.2623683 2.76052385,51.9402177 2.76052385,49.0858977 C2.76052385,46.2315777 5.12053559,43.9094271 8.02139342,43.9094271 C8.28761255,43.9094271 8.55523298,43.933093 8.84247168,43.9829565 C9.85970863,40.5921 12.9978269,38.2623683 16.6300891,38.2623683 C21.113316,38.2623683 24.7605239,41.8510647 24.7605239,46.2623683 C24.7605239,50.6736718 21.113316,54.2623683 16.6300891,54.2623683 Z" id="Cloud" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

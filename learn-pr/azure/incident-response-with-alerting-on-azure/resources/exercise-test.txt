@@ -1,0 +1,29 @@
+export SUBS=$(az vm create \
+  --resource-group alerting \
+  --name CPUHog$RANDOM \
+  --image UbuntuLTS \
+  --custom-data cloud-init.txt \
+  --generate-ssh-keys \
+  --output tsv --query id)
+
+az monitor metrics alert create -n "CPU Alert" -g alerting --scopes $SUBS --condition "max Percentage CPU > 90" --description "Running hot" --evaluation-frequency 1m --window-size 1m --severity 4
+
+az monitor metrics alert list -g alerting
+
+Use portal to view Azure Monitor
+
+> [!CAUTION]
+> It can take up to 10 minutes for a metric alert rule to become active.
+
+az resource list --resource-group alerting --query [].type --output tsv | uniq
+
+Microsoft.Compute/disks
+Microsoft.Compute/virtualMachines
+Microsoft.Compute/virtualMachines/extensions
+microsoft.insights/activityLogAlerts
+Microsoft.Insights/metricalerts
+Microsoft.Network/networkInterfaces
+Microsoft.Network/networkSecurityGroups
+Microsoft.Network/publicIPAddresses
+Microsoft.Network/virtualNetworks
+Microsoft.Storage/storageAccounts

@@ -1,11 +1,11 @@
 EF Core integrates automatically with the logging mechanisms of ASP.NET Core. Since ASP.NET Core apps emit logs as console output by default, the text file *:::no-loc text="ContosoPets.Api.log":::* contains the EF Core log output. EF Core masks parameter values in the generated SQL appearing in the logs.
 
 ```console
-info: Microsoft.EntityFrameworkCore.Database.Command[20101]
-      Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
       SELECT TOP(1) [o].[Id], [o].[CustomerId], [o].[OrderFulfilled], [o].[OrderPlaced]
       FROM [Orders] AS [o]
-      WHERE [o].[Id] = @__id_0
+      WHERE ([o].[Id] = @__id_0) AND @__id_0 IS NOT NULL
 ```
 
 In the preceding output, note the `@__id_0` parameter in the query's `WHERE` clause. The `info` message in the output displays `?` as the parameter's value.
@@ -62,16 +62,20 @@ To ease production troubleshooting, the Operations Manager wants SQL queries to 
     -- GetById
     ```
 
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
+
 1. Run the following .NET Core CLI command to start the app:
 
-    ```bash
-    dotnet run --environment Development > $srcWorkingDirectory/ContosoPets.Api.log &
+    ```dotnetcli
+    dotnet ./bin/Debug/netcoreapp3.0/ContosoPets.Api.dll \
+        --environment Development \
+        > $srcWorkingDirectory/ContosoPets.Api.log &
     ```
 
 1. Run the following command to test the `GetById` method of the `OrderService` class:
 
     ```bash
-    curl -k -s https://localhost:5001/api/Orders/2 | jq
+    curl -k -s https://localhost:5001/Orders/2 | jq
     ```
 
     JSON representing an order is displayed. The output you see may differ.
@@ -97,33 +101,31 @@ To ease production troubleshooting, the Operations Manager wants SQL queries to 
     cat $srcWorkingDirectory/ContosoPets.Api.log
     ```
 
-    The following output is produced by the `GetById` method of the `OrderService` class. Notice the `@__id_0` and `@_outer_Id` parameters' values display as `2`. EF Core's parameter value masking has been suppressed.
+    The following output is produced by the `GetById` method of the `OrderService` class. Notice the `@__id_0` parameter's value displays as `2`. EF Core's parameter value masking has been suppressed.
 
     ```console
-    info: Microsoft.EntityFrameworkCore.Database.Command[20101]
-          Executed DbCommand (48ms) [Parameters=[@__id_0='2'], CommandType='Text', CommandTimeout='30']
-          -- GetOrderById
+    info: Microsoft.EntityFrameworkCore.Database.Command[20100]
+        Executing DbCommand [Parameters=[@__id_0='2'], CommandType='Text', CommandTimeout='30']
+        -- GetOrderById
 
-          -- GetById
+        -- GetById
 
-          SELECT TOP(1) [o].[Id] AS [OrderId], [o.Customer].[LastName], [o.Customer].[FirstName], CASE
-              WHEN [o].[OrderFulfilled] IS NOT NULL
-              THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
-          END, [o].[OrderFulfilled], [o].[OrderPlaced]
-          FROM [Orders] AS [o]
-          INNER JOIN [Customers] AS [o.Customer] ON [o].[CustomerId] = [o.Customer].[Id]
-          WHERE [o].[Id] = @__id_0
-
-    info: Microsoft.EntityFrameworkCore.Database.Command[20101]
-          Executed DbCommand (39ms) [Parameters=[@_outer_Id='2'], CommandType='Text', CommandTimeout='30']
-          -- GetOrderById
-
-          -- GetById
-
-          SELECT [po].[Quantity] AS [ProductQuantity], [po.Product].[Name] AS [ProductName]
-          FROM [ProductOrders] AS [po]
-          INNER JOIN [Products] AS [po.Product] ON [po].[ProductId] = [po.Product].[Id]
-          WHERE @_outer_Id = [po].[OrderId]
+        SELECT [t].[Id], [t].[LastName], [t].[FirstName], [t].[c], [t].[OrderFulfilled], [t].[OrderPlaced], [t].[Id0], [t0].[Quantity], [t0].[Name], [t0].[Id], [t0].[Id0]
+        FROM (
+            SELECT TOP(1) [o].[Id], [c].[LastName], [c].[FirstName], CASE
+                WHEN [o].[OrderFulfilled] IS NOT NULL THEN CAST(1 AS bit)
+                ELSE CAST(0 AS bit)
+            END AS [c], [o].[OrderFulfilled], [o].[OrderPlaced], [c].[Id] AS [Id0]
+            FROM [Orders] AS [o]
+            INNER JOIN [Customers] AS [c] ON [o].[CustomerId] = [c].[Id]
+            WHERE ([o].[Id] = @__id_0) AND @__id_0 IS NOT NULL
+        ) AS [t]
+        LEFT JOIN (
+            SELECT [p].[Quantity], [p0].[Name], [p].[Id], [p0].[Id] AS [Id0], [p].[OrderId]
+            FROM [ProductOrders] AS [p]
+            INNER JOIN [Products] AS [p0] ON [p].[ProductId] = [p0].[Id]
+        ) AS [t0] ON [t].[Id] = [t0].[OrderId]
+        ORDER BY [t].[Id], [t].[Id0], [t0].[Id], [t0].[Id0]
     ```
 
 1. Run the following command to query Application Insights telemetry:
@@ -154,21 +156,26 @@ To ease production troubleshooting, the Operations Manager wants SQL queries to 
 
     -- GetById
 
-    SELECT [po].[Quantity] AS [ProductQuantity], [po.Product].[Name] AS [ProductName]
-    FROM [ProductOrders] AS [po]
-    INNER JOIN [Products] AS [po.Product] ON [po].[ProductId] = [po.Product].[Id]
-    WHERE @_outer_Id = [po].[OrderId]
-    -- GetOrderById
-
-    -- GetById
-
-    SELECT TOP(1) [o].[Id] AS [OrderId], [o.Customer].[LastName], [o.Customer].[FirstName], CASE
-        WHEN [o].[OrderFulfilled] IS NOT NULL
-        THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
-    END, [o].[OrderFulfilled], [o].[OrderPlaced]
-    FROM [Orders] AS [o]
-    INNER JOIN [Customers] AS [o.Customer] ON [o].[CustomerId] = [o.Customer].[Id]
-    WHERE [o].[Id] = @__id_0
+    SELECT [t].[Id], [t].[LastName], [t].[FirstName], [t].[c], [t].[OrderFulfilled], [t].[OrderPlaced], [t].[Id0], [t0].[Quantity], [t0].[Name], [t0].[Id], [t0].[Id0]
+    FROM (
+        SELECT TOP(1) [o].[Id], [c].[LastName], [c].[FirstName], CASE
+            WHEN [o].[OrderFulfilled] IS NOT NULL THEN CAST(1 AS bit)
+            ELSE CAST(0 AS bit)
+        END AS [c], [o].[OrderFulfilled], [o].[OrderPlaced], [c].[Id] AS [Id0]
+        FROM [Orders] AS [o]
+        INNER JOIN [Customers] AS [c] ON [o].[CustomerId] = [c].[Id]
+        WHERE ([o].[Id] = @__id_0) AND @__id_0 IS NOT NULL
+    ) AS [t]
+    LEFT JOIN (
+        SELECT [p].[Quantity], [p0].[Name], [p].[Id], [p0].[Id] AS [Id0], [p].[OrderId]
+        FROM [ProductOrders] AS [p]
+        INNER JOIN [Products] AS [p0] ON [p].[ProductId] = [p0].[Id]
+    ) AS [t0] ON [t].[Id] = [t0].[OrderId]
+    ORDER BY [t].[Id], [t].[Id0], [t0].[Id], [t0].[Id0]
+    SET NOCOUNT ON;
+    UPDATE [Orders] SET [CustomerId] = @p0, [OrderFulfilled] = @p1, [OrderPlaced] = @p2
+    WHERE [Id] = @p3;
+    SELECT @@ROWCOUNT;
     ```
 
     The SQL query is tagged with `-- GetOrderById` and `-- GetById`. By design, Application Insights discards potentially sensitive data such as parameter values.

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.control-authentication-with-apim.understand-apim
+metadata:
+  title: What is API Management?
+  description: API Management helps businesses expose services and data through published APIs.
+  ms.date: 09/01/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Introduction
+durationInMinutes: 5
+content: |
+  [!include[](includes/1a-understand-apim.md)]

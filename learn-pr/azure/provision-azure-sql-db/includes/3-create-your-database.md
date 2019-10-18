@@ -1,7 +1,5 @@
 Your transportation company wants to set themselves apart from other companies but without breaking the bank. You must have a good handle on how to set up the database to provide the best service while controlling costs.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 Here, you'll learn:
 
 - What considerations you need to make when creating an Azure SQL database, including:
@@ -75,12 +73,10 @@ Over time if you realize you need additional compute power to keep up with deman
 
     | Setting      | Value |
     | ------------ | ----- |
-    | **Database name** | **Logistics** |
-    | **Subscription** | Your subscription |
-    | **Resource group** |  Use the existing group <rgn>[sandbox resource group name]</rgn> |
-    | **Want to use SQL elastic pool?** | **No** |
-    | **data source** | **None** |
-    | **Collation** | **SQL_Latin1_General_CP1_CI_AS** |
+    | **Subscription** | *Concierge Subscription* |
+    | **Resource group** | *<rgn>[sandbox resource group name]</rgn>* |
+    | **Database name** | *Logistics* |
+    | **Want to use SQL elastic pool?** | *No* |
 
 1. Under **Server**, click **Create new**, fill out the form, then click **OK**. Here's more information on how to fill out the form:
 
@@ -94,6 +90,21 @@ Over time if you realize you need additional compute power to keep up with deman
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
+1. Under **Compute + storage**, click **configure database**, then use the following steps:
+
+    1. To configure your database to use DTUs, click **Looking for basic, standard, premium?**
+    
+    1. Depending on your application needs, choose **Basic**, **Standard**, or **Premium**.
+    
+    1. Click **Apply**.
+
+1. Click **Next : Additional settings**, then use these values to fill out the form.
+
+    | Setting      | Value |
+    | ------------ | ----- |
+    | **Data source** | *None* |
+    | **Database Collation** | *SQL_Latin1_General_CP1_CI_AS* |
+    | **Advanced Data Security** | *Not now* |
 
 1. Click **Review + Create** to create your Azure SQL database.
 
