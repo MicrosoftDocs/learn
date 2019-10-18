@@ -25,9 +25,9 @@ quiz:
     - content: 'The Azure CLI'
       isCorrect: false
       explanation: 'With the Azure CLI you can create scripts to automate the deployment of infrastructure.'
-    - content: 'Resource Manager templates'
+    - content: 'Azure Resource Manager templates'
       isCorrect: false
-      explanation: 'With Resource manager templates you can fully automate the deployment of infrastructure.'
+      explanation: 'With Azure Resource Manager templates you can fully automate the deployment of infrastructure.'
     - content: 'Application Insights'
       isCorrect: true
       explanation: 'Application Insights helps you monitor and analyze your application, it does not offer automation.'

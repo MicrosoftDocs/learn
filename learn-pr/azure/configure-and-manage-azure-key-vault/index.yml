@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.azure-security.configure-and-manage-azure-key-vault
+metadata:
+  title: Configure and manage secrets in Azure Key Vault
+  description: Configure and manage secrets in Azure Key Vault
+  ms.date: 09/30/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure and manage secrets in Azure Key Vault
+summary: Storing and handling secrets, encryption keys, and certificates directly is risky, and every usage introduces the possibility of unintentional data exposure. Azure Key Vault provides a secure storage area for managing all your app secrets so you can properly encrypt your data in transit or while it's being stored.
+abstract: | 
+  In this module, you will:
+  - Explore proper usage of Azure Key Vault
+  - Manage access to an Azure Key Vault
+  - Explore certificate management with Azure Key Vault
+  - Configure a Hardware Security Module Key-generation solution
+prerequisites: None
+iconUrl: /learn/achievements/configure-and-manage-azure-key-vault.svg
+levels:
+- beginner
+roles:
+- administrator
+- security-engineer
+products:
+- azure
+units:
+- learn.azure-security.configure-and-manage-azure-key-vault.introduction
+- learn.azure-security.configure-and-manage-azure-key-vault.key-vault-usage
+- learn.azure-security.configure-and-manage-azure-key-vault.manage-access-and-permissions-to-secrets
+- learn.azure-security.configure-and-manage-azure-key-vault.store-secrets-in-akv
+- learn.azure-security.configure-and-manage-azure-key-vault.manage-certificates
+- learn.azure-security.configure-and-manage-azure-key-vault.summary
+badge:
+  uid: learn.azure-security.configure-and-manage-azure-key-vault.badge

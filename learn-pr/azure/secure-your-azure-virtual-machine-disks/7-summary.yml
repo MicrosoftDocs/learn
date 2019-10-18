@@ -5,9 +5,8 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -17,8 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
- 
-  - content: "True or false: If you enable Azure Disk Encryption (ADE) on a Windows VM it will use DM-Crypt to encrypt the data on your Virtual Hard Disks."
+  - content: "True or false: If you enable Azure Disk Encryption (ADE) on a Windows VM, it will use DM-Crypt to encrypt the data on your Virtual Hard Disks."
     choices:
     - content: "True"
       isCorrect: false
@@ -26,8 +24,7 @@ quiz:
     - content: "False"
       isCorrect: true
       explanation: "Windows VMs are encrypted using BitLocker. Linux VMs will use DM-Crypt."
-    
-  - content: "True or false: When using Azure Key Vault to secure keys used for Azure Disk Encryption (ADE) you must ensure the Azure Key Vault access policies are configured to permit at least one security principal."
+  - content: "True or false: When using Azure Key Vault to secure keys used for Azure Disk Encryption (ADE), you must ensure the Azure Key Vault access policies are configured to permit at least one security principal."
     choices:
     - content: "True"
       isCorrect: false
@@ -35,7 +32,6 @@ quiz:
     - content: "False"
       isCorrect: true
       explanation: "You do not need to configure a security principal for ADE, just enabling the key vault for disk encryption is enough."
-
   - content: "Suppose you create a new VM with a single OS disk and a single data disk. You use all the default options when creating the VM and you have no Azure Key Vault anywhere in your subscription. Which option most accurately describes the encryption state of those disks?"
     choices:
     - content: "Both disks are unencrypted."
@@ -47,4 +43,3 @@ quiz:
     - content: "Both disks are encrypted using Storage Service Encryption."
       isCorrect: true
       explanation: "All disks are encrypted using SSE by default. With SSE, Azure manages the keys and automatically decrypts data for any read operations without impact on performance."
-

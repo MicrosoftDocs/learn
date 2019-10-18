@@ -4,13 +4,13 @@ To start gathering information as soon as possible, the developers of the video-
 
 In this unit, we'll use the Azure portal to enable runtime instrumentation on a web app. We'll create the app without enabling Application Insights and view the limited performance that's collected by default. We'll then enable Application Insights and see the rich analysis that becomes available.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 ## Create an Azure web app
 
 We'll start by creating a web app to monitor. Follow these steps:
 
-1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 1. In the left pane, select **Create a resource**.
 1. In the **Search the Marketplace** box, enter **web app**, and then select Enter.
 1. In the list of results, select **Web App**.
@@ -20,8 +20,8 @@ We'll start by creating a web app to monitor. Follow these steps:
 
 You need to set up a name, a resource group, a location, and some other properties for your web app. Follow these steps:
 
-1. In the **Subscription** list, select **Concierge subscription**.
-1. Under **Resource Group**, select **Use existing** and then select the sandbox resource group, <rgn>[Sandbox resource group]</rgn>.
+1. In the **Subscription** list, select the Azure subscription you'd like to use for this exercise.
+1. Under **Resource Group**, select **Create new** and name the new resource group **mslearn-appinsights**.
 1. In the **App name** box, enter a unique name for your app. For example, you could use **\<yourname\>;svideoapp**. The name you choose must be unique within the .azurewebsites.net domain.
 1. Leave **Publish** at **Code**.
 1. Set the **Runtime stack** to **.NET Core 2.1**. This will move the **Operating System** to **Windows**. Leave it at Windows. Notice that when you did this selection, the **Monitoring** tab appeared. We will skip this tab for now.
@@ -49,7 +49,6 @@ To enable Application Insights on an app, follow these steps:
 1. On the **Application Insights** page, make sure **Enable** is selected.
 1. Under **Create a new resource**, in the **New resource name** box, enter **videoappinsights**.
 1. In the **Location** list, select a location, and then select **Apply**. If the **Apply monitoring settings** box appears, select **Yes**.
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 1. After the changes are applied, in the left pane, select **All resources** and then, in the list of resources, select **videoappinsights**.
 1. In the **Application Insights** blade, select **Application Dashboard**. Note the charts shown by default in the dashboard. If the charts don't appear within a few seconds, select F5 to refresh the page.
 

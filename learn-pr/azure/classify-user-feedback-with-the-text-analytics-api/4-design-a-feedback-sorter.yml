@@ -1,5 +1,4 @@
 ### YamlMime:ModuleUnit
-# Unit uids are manually created by the content author and should follow the format (repo).(module-short-name).(unit-short-name). Keep it easy on yourself and keep the unit-short-name the same as the unit YAML file name.
 uid: learn.classify-user-feedback-with-the-text-analytics-api.4-design-a-feedback-sorter
 metadata:
   title: Design a feedback sorter
@@ -11,7 +10,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Design a feedback sorter
-#interactive: azure-portal
 durationInMinutes: 6
 content: |
   [!include[](includes/4-design-a-feedback-sorter.md)]

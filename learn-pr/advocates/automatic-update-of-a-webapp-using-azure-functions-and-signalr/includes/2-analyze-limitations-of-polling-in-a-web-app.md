@@ -45,8 +45,8 @@ The first binding (`httpTrigger`) in the array defines how the function is trigg
 | ----------------------------------------------------------- | ------------------------ |
 | defines the function as an HTTP-triggered function          | `type`                   |
 | allows unauthenticated incoming requests                    | `authLevel`, `direction` |
-| accepts GET requests                                        | `methods`                |
 | exposes the request context through a parameter named `req` | `name`                   |
+| accepts GET requests                                        | `methods`                |
 
 The second binding (`http`) defines what is returned from the function.
 

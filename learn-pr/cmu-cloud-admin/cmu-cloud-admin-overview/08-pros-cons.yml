@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.08-pros-cons
+title: Pros and cons of cloud computing
+metadata:
+  title: Pros and cons of cloud computing
+  description: Benefits, Risks, and Challenges
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 11
+content: |
+  [!include[](includes/08-pros-cons.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+    - content: "Jack's total cost of ownership (TCO) for a single physical server is 5,000 dollars for 3 years. He is considering utilizing a server in the cloud instead. What is the ownership cost of the server per hour, rounded to the nearest cent?"
+      choices:
+      - content: "19 cents"
+        isCorrect: true
+        explanation: "Correct! The cost is 5000 / (3 × 365 × 24) = 19 cents per hour."
+      - content: "26 cents"
+        isCorrect: false
+        explanation: "Incorrect. The cost is 5000 / (3 × 365 × 24)."
+      - content: "28 cents"
+        isCorrect: false
+        explanation: "Incorrect. The cost is 5000 / (3 × 365 × 24)."
+      - content: "52 cents"
+        isCorrect: false
+        explanation: "Incorrect. The cost is 5000 / (3 × 365 × 24)."
+
+    - content: "Jack's total cost of ownership (TCO) for a single physical server is 5,000 dollars for 3 years. He is considering utilizing a server in the cloud instead. Assume that Jack's server utilization is around 10%. Over a span of 3 years, what is the effective number of hours that the server is used?"
+      choices:
+      - content: "2,200"
+        isCorrect: false
+        explanation: "Incorrect. The number of effective hours used is 3 × 365 × 24 × 0.10."
+      - content: "2,468"
+        isCorrect: false
+        explanation: "Incorrect. The number of effective hours used is 3 × 365 × 24 × 0.10."
+      - content: "2,492"
+        isCorrect: false
+        explanation: "Incorrect. The number of effective hours used is 3 × 365 × 24 × 0.10."
+      - content: "2,628"
+        isCorrect: true
+        explanation: "Correct! The number of effective hours used is 3 × 365 × 24 × 0.10 = 2,628 hours."
+
+    - content: "Jack's total cost of ownership (TCO) for a single compute server is 5,000 dollars for 3 years. He is considering utilizing a server in the cloud instead. A cloud service provider offer to rent Jack a virtualized server for 20 cents an hour. Jack needs to rent the server only for the number of hours calculated in the previous question. How much money (rounded to the nearest dollar) would Jack save if he rented his server?"
+      choices:
+      - content: "2,400 dollars"
+        isCorrect: false
+        explanation: "Incorrect. The savings is 5000 - (2628 × 0.20)."
+      - content: "4,474 dollars"
+        isCorrect: true
+        explanation: "Correct! The savings is 5000 - (2628 × 0.20) = 4,474 dollars."
+      - content: "6,820 dollars"
+        isCorrect: false
+        explanation: "Incorrect. The savings is 5000 - (2628 × 0.20)."
+      - content: "8,420 dollars"
+        isCorrect: false
+        explanation: "Incorrect. The savings is 5000 - (2628 × 0.20)."

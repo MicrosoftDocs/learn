@@ -1,34 +1,34 @@
-The Custom Vision Service web portal is an easy way to train a model by uploading tagged images. This approach is the most common way to train, test, and publish a model. However, sometimes a business need might require a model to be prepared (or re-trained) based on incoming data available to the applications using the service. In these cases, the app can leverage the **Training API** to add and tag new images and publish a new iteration of the Custom Vision Service.
+The Custom Vision service web portal is an easy way to train a model by uploading tagged images. This approach is the most common way to train, test, and publish a model. But sometimes a business need might require a model to be prepared (or retrained) based on incoming data available to the applications that are using the service. In these cases, the app can use the Training API to add and tag new images and publish a new iteration of the Custom Vision service.
 
-Similar to making predictions, the Training API provides HTTP methods for adding and tagging training images to a project. The process of calling and consuming the response is identical to the Prediction API - just using different endpoints.
+Like the Prediction API, the Training API provides HTTP methods for adding   training images to a project and tagging them. The process of calling and consuming the response is identical to the Prediction API process. It just uses different endpoints.
 
-The underlying method used to send tagged training images is the Custom Vision **CreateImages** method, and, just like the Prediction API, the Custom Vision Training API provides separate methods for uploading binary files versus supplying publicly available image URLs.
+The Custom Vision **CreateImages** method is the underlying method used to send tagged training images. Just like the Prediction API, the Custom Vision Training API provides separate methods for uploading binary files and for supplying publicly available image URLs:
 
-- **CreateImagesFromFiles** includes one or more encoded image files, and optional tags, to create images. There is a limit of 64 images and 20 tags.
-- **CreateImagesFromUrls**: specifies one or more URLs, and optional tags, to create images. There is a limit of 64 images and 20 tags.
+- **CreateImagesFromFiles** includes one or more encoded image files, and optional tags, to create images. There's a limit of 64 images and 20 tags.
+- **CreateImagesFromUrls** specifies one or more URLs, and optional tags, to create images. There's a limit of 64 images and 20 tags.
 
 > [!NOTE]
-> There are several additional methods available in the training API which allow you to create and find projects, create and delete tags, train projects, etc. Everything you can do in the portal, you can generally do with the REST API.
+> There are several additional methods available in the Training API that allow you to create and find projects, create and delete tags, train projects, and more. Everything you can do in the portal, you can generally do with the REST API.
 
-The endpoints all have the same basic format as the Prediction API:
+The endpoints all have the same basic format as endpoints in the Prediction API:
 
 ```text
 https://{endpoint}/customvision/v3.0/training/projects/{projectId}/images/{imageType}
 ```
 
-Where:
+In this URL:
 
-- `{endpoint}` is the location endpoint the service was created in, for example, **southcentralus.api.cognitive.microsoft.com**.
-- `{projectId}` is a unique project identifier that is used to specify the Custom Vision Service.
-- `{imageType}` is either **urls** when the images are passed as URLs, or **files** when the images are passed encoded data in the body of the request.
+- `{endpoint}` is the location endpoint the service was created in, for example, `southcentralus.api.cognitive.microsoft.com`.
+- `{projectId}` is a unique project identifier that's used to specify the Custom Vision service.
+- `{imageType}` is either `urls`, when the images are passed as URLs, or `files`, when the images are passed as encoded data in the body of the request.
 
 ### Building a request
 
-The Training API endpoint is available in the **Settings** pane of your Custom Vision Service project in the web portal. This page is also where you can find the _Training Key_, which is necessary to authorize calls to the Training API services. Once you have these two pieces of information, you are ready to use the **CreateImages** methods.
+The Training API endpoint is available in the **Settings** pane of your Custom Vision service project in the web portal. You can also find the *training key* on this page. You need the training key to authorize calls to the Training API services. After you have these two pieces of information, you're ready to use the **CreateImages** methods.
 
-Once the proper URL is identified, you invoke it with an HTTP `PUT` request passing the request in the body and the training key as a request header with the name `Training-Key.`
+After you identify the proper URL, you invoke it with an HTTP PUT request, passing the request in the body and the training key as a request header with the name `Training-Key`.
 
-The body of the request can be structured using most available media types - `"application/json"`, `"application/xml"`, `"text/xml"`, or `"application/x-www-form-urlencoded"`. You can select the easiest one to work within your language or framework. The `Content-Type` header value will determine the content payload type you supply.
+You can use most available media types to structure the body of the request: `"application/json"`, `"application/xml"`, `"text/xml"`, or `"application/x-www-form-urlencoded"`. You can choose the one that's easiest to work with in your language or framework. The `Content-Type` header value will determine the content payload type you supply.
 
 Each **CreateImages** request takes a list of images (or URLs) and an optional set of tags. Here's an example of a valid request body for **CreateImagesFromUrls** (in JSON):
 
@@ -46,7 +46,7 @@ Each **CreateImages** request takes a list of images (or URLs) and an optional s
 }
 ```
 
-The `tagIds` collections are optional and can be omitted if empty. You can supply tags either per-image (if they are different for each image), or for the entire collection of images through the second tag collection. You must provide the unique identifier for the tag - this can be retrieved from the web portal, or using HTTP `GET` to invoke the `{endpoint}/customvision/v3.0/training/projects/{projectId}/tags` method. Here's an example response:
+The `tagIds` collections are optional. You can omit them if you're not using them. You can supply tags either per-image (if they're different for each image) or for the entire collection of images through the second tag collection. You must provide the unique identifier for the tag. You can retrieve this identifier from the web portal or by using HTTP GET to invoke the `{endpoint}/customvision/v3.0/training/projects/{projectId}/tags` method. Here's an example response:
 
 ```json
 [
@@ -76,7 +76,7 @@ The `tagIds` collections are optional and can be omitted if empty. You can suppl
 
 ### Calling the service
 
-Once the request is built, an HTTP `PUT` method is used to invoke the API. Here's an example in C#:
+After you've built the request, you can use an HTTP PUT method to invoke the API. Here's an example in C#:
 
 ```csharp
 public async Task<string> AddTrainingImageAsync(string url, string trainingKey, string[] imageUrls, string[] tags)
@@ -93,7 +93,7 @@ public async Task<string> AddTrainingImageAsync(string url, string trainingKey, 
 }
 ```
 
-In Python, the code would look something like:
+In Python, the code would look something like this example:
 
 ```python
 import http.client, urllib.request, urllib.parse, urllib.error, base64
@@ -118,7 +118,7 @@ except Exception as e:
 
 ### Processing the result
 
-The response coming back from the service will be in the same format as the request (this can be influenced through the `Accepts` header value). The returned object will have an overall result (`isBatchSuccessful`) and an entry for each passed image to indicate whether it was processed or not. Here's an example result for the `CreateImagesFromUrls` method.
+The response coming back from the service will be in the same format as the request. (You can influence this behavior by using the `Accepts` header value.) The returned object will have an overall result (`isBatchSuccessful`) and an entry for each passed image to indicate whether it was processed. Here's an example result for the `CreateImagesFromUrls` method:
 
 ```json
 {
