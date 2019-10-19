@@ -24,7 +24,7 @@ The following table lists the VM metrics that are available.
 |      | Premium Data Disk Cache Read Hit [or Miss]      | How often is data read from cache versus the data disk        |
 | Network     | Inbound [or Outbound] Flows        | Number of current flows in the inbound [or outbound] direction        |
 |      | Network In [or Out] Billable        | Number of billable bytes received [or sent] on all network interfaces        |
-|      | Network In [or Our] Total        |  Number of bytes received [or sent] on all network interfaces       |
+|      | Network In [or Out] Total        |  Number of bytes received [or sent] on all network interfaces       |
 
 You can choose multiple metrics and plot them on the graph to get a better understanding of the traffic hitting your web server. Azure also offers flexible time ranges. You can choose  the last 30 minutes to the last 30 days, or specify a custom range with any start and end date. You can specify a granularity from one minute to one month. This data enables you to see trends or patterns.
 
