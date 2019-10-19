@@ -119,7 +119,7 @@ The portal will display the deployment page, where you can view the status of yo
 
 1. Select the **All resources** menu on the left side navigation.
 
-1. Select your Web App resource from the list. Make sure to select the web app, and not the App Service plan.
+1. Select the App Service for your web app from the list. Make sure to select the App Service, and not the App Service plan.
 
     ![Screenshot showing an example search result within the all resources page with a newly created App Service highlighted.](../media/3-web-app.png)
 

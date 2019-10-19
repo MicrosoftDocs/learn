@@ -126,10 +126,12 @@ When the command finishes running, if you change to the `target` directory and r
 
 ::: zone pivot="python"
 
-To create a starter web application, we'll use Flask, which is a commonly-used web application framework. Run the following command to install Flask in your profile:
+To create a starter web application, we'll use Flask, which is a commonly-used web application framework. Run the following commands to set up a virtual environment and install Flask in your profile:
 
 ```bash
-pip install flask --user
+python3 -m venv venv
+source venv/bin/activate
+pip install flask
 ```
 
 Run these commands in the Cloud Shell to create the directory for your new web app:
@@ -173,7 +175,7 @@ If you open a second command shell session, for example by browsing to <https://
     ```bash
     cd ~/BestBikeApp
     export FLASK_APP=application.py
-    ~/.local/bin/flask run
+    flask run
     ```
 
 1. From your second command shell session, run the following command to browse to your web application:
