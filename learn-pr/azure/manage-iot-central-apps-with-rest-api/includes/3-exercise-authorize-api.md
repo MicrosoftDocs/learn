@@ -22,6 +22,7 @@ The following steps create an IoT Central application and generate an API token 
     ```azurecli
     APP_NAME="store-manager-$RANDOM"
     echo "Your application name is: $APP_NAME"
+
     ```
 
     Make a note of the application name just in case the shell times out and loses the environment variable.
@@ -44,7 +45,7 @@ The following steps create an IoT Central application and generate an API token 
 
     ![API Tokens](../media/3-tokens.png)
 
-1. Select **+ Generate Token**. Add **admin** as the **Token name** and select **Application Administrator** as the **Role**. Then select **Generate**:
+1. Select **+ Generate Token**. Enter `admin` as the **Token name** and make sure **Application Administrator** is selected as the **Role**. Then select **Generate**:
 
     ![Generate API token](../media/3-generate-token.png)
 

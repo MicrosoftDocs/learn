@@ -35,7 +35,7 @@ To author a JSON device capability model file, use the [Azure IoT Tools for VS C
 
 Before a real device can connect to your IoT Central application, you must publish the device template within the IoT Central application. After you publish a device template, you can also create simulated devices from the template.
 
-After you publish a device template, any significant changes to the device capability model or interface definitions require you to create and publish a new version of the device template.
+Once a device template is published, significant changes to the device capability model or interface definitions require that you to create and publish a new version of the device template.
 
 ## Manage device templates using the REST API
 
@@ -56,14 +56,14 @@ Before you connect a device in the real world to an IoT Central application, you
 
 Each real device also has its own security credentials that the device uses to authenticate with the IoT Central application.
 
-IoT Central also has options to bulk add devices or allow devices to self-register with the application. However, a discussion of these options is out of scope for this module.
+IoT Central also has options to add devices in bulk or allow devices to self-register with the application. However, a discussion of these options and what they might mean for your applications is beyond the scope of this module.
 
 ## Real device credentials
 
 IoT Central supports two authentication types for real devices to connect:
 
-- *Shared access signatures (SAS)*. IoT Central automatically generates SAS keys for every real device. A device can use the SAS key to authenticate with your IoT Central application.
-- *X.509 certificates*. You can upload a root or intermediate certificate to an IoT Central application and use it to generate device certificates.
+- **Shared access signatures (SAS)**: IoT Central automatically generates SAS keys for every real device. A device can use the SAS key to authenticate with your IoT Central application.
+- **X.509 certificates**: You can upload a root or intermediate certificate to an IoT Central application and use it to generate device certificates.
 
 X.509 certificates are recommended in a production environment, but SAS keys are convenient to use in a test or proof-of-concept environment.
 
