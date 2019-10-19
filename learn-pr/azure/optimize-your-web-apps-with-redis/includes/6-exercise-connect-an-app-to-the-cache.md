@@ -568,7 +568,7 @@ We're ready to write code to interact with our Redis cache.
       console.log("Adding value to the cache");
       await client.setAsync("myKey", "myValue");
       console.log("Reading value back:");
-      console.log(wait client.getAsync("myKey"));
+      console.log(await client.getAsync("myKey"));
       console.log("Pinging the cache");
       console.log(await client.pingAsync());
       await client.flushdbAsync();
