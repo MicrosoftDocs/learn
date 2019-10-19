@@ -45,7 +45,7 @@ You can have greater control, with more options, by creating a custom key perfor
 - How hot is the VM or how much CPU is being used?
 - How busy is the VM or how much network traffic is the VM processing?
 
-![Screenshot of an example KPI dashboard, showing CPU max and Network total graphs](../media/4-KPI-dashboard.png)
+![Screenshot of an example KPI dashboard, showing CPU max and Network total graphs](../media/4-kpi-dashboard.png)
 
 You can reuse the prebuilt graph for network traffic. However, the average CPU usage isn't the most useful metric. The maximum CPU usage is a better metric to use.
 
