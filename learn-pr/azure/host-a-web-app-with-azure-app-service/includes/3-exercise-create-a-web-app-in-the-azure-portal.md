@@ -20,7 +20,7 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
     | **Resource Group** | Select <rgn>[Sandbox resource group]</rgn> from the menu | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
     | **Name** | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
     | **Publish** | Code | The method you will use to publish your application. When publishing your application as code, you also must configure **Runtime stack** to prepare your App Service resources to run your app. |
-    | **Runtime stack** | .NET Core 2.2 | The platform on which your application runs. Note that your choice here may affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
+    | **Runtime stack** | .NET Core 2.2 | The platform on which your application runs. Your choice may affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
     | **Operating System** | Windows | The operating system used on the virtual servers that run your app. |
     | **Region** | *Select a region from the note above* | The geographical region from which your app will be hosted. |
     | **Windows Service Plan** | *Leave default* | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
@@ -48,7 +48,7 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
     | **Resource Group** | Select <rgn>[Sandbox resource group]</rgn> from the menu | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
     | **Name** | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
     | **Publish** | Code | The method you will use to publish your application. When publishing your application as code, you also must configure **Runtime stack** to prepare your App Service resources to run your app. |
-    | **Runtime stack** | Tomcat 9.0 | The platform on which your application runs. Note that your choice here may affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
+    | **Runtime stack** | Tomcat 9.0 | The platform on which your application runs. Your choice may affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
     | **Operating System** | Linux | The operating system used on the virtual servers that run your app. |
     | **Region** | Select *West US* or *Central US* | The geographical region from which your app will be hosted. |
     | **Linux Plan** | *Leave default* | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
@@ -74,7 +74,7 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
     | **Resource Group** | Select <rgn>[Sandbox resource group]</rgn> from the menu | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
     | **Name** | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
     | **Publish** | Code | The method you will use to publish your application. When publishing your application as code, you also must configure **Runtime stack** to prepare your App Service resources to run your app. |
-    | **Runtime stack** | Node LTS | The platform on which your application runs. Note that your choice here may affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
+    | **Runtime stack** | Node LTS | The platform on which your application runs. Your choice may affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
     | **Operating System** | Linux | The operating system used on the virtual servers that run your app. |
     | **Region** | Select *West US* or *Central US* | The geographical region from which your app will be hosted. |
     | **Linux Plan** | *Leave default* | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
@@ -100,7 +100,7 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
     | **Resource Group** | Select <rgn>[Sandbox resource group]</rgn> from the menu | The resource group to which the web app will belong. All Azure resources must belong to a resource group. |
     | **Name** | *Enter a unique name* | The name of your web app. This name will be part of the app's URL: *appname*.azurewebsites.net.  The name you choose must be unique among all Azure web apps. |
     | **Publish** | Code | The method you will use to publish your application. When publishing your application as code, you also must configure **Runtime stack** to prepare your App Service resources to run your app. |
-    | **Runtime stack** | Python 3.7 | The platform on which your application runs. Note that your choice here may affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
+    | **Runtime stack** | Python 3.7 | The platform on which your application runs. Your choice may affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
     | **Operating System** | Linux | The operating system used on the virtual servers that run your app. |
     | **Region** | Select *West US* or *Central US* | The geographical region from which your app will be hosted. |
     | **Linux Plan** | *Leave default* | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |

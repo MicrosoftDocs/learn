@@ -20,9 +20,9 @@ Using the Azure portal, you can easily add **deployment slots** to an App Servic
 
 ### Continuous integration/deployment support
 
-The Azure portal provides out-of-the-box continuous integration and deployment with Azure DevOps, GitHub, Bitbucket, FTP, or a local Git repository on your development machine. Connect your web app with any of the above sources and App Service will do the rest for you by auto-syncing code and any future changes on the code into the web app. Furthermore, with Azure DevOps, you can define your own build and release process that compiles your source code, runs the tests, builds a release, and finally deploys the release into your web app every time you commit the code. All that happens implicitly without any need to intervene.
+The Azure portal provides out-of-the-box continuous integration and deployment with Azure DevOps, GitHub, Bitbucket, FTP, or a local Git repository on your development machine. Connect your web app with any of the above sources and App Service will do the rest for you by automatically syncing your code and any future changes on the code into the web app. Furthermore, with Azure DevOps, you can define your own build and release process that compiles your source code, runs the tests, builds a release, and finally deploys the release into your web app every time you commit the code. All that happens implicitly without any need to intervene.
 
-![Screenshot to setup deployment option and choose source for the deployment source code](../media/2-continuous-integration.png)
+![Screenshot to set up deployment option and choose source for the deployment source code](../media/2-continuous-integration.png)
 
 ### Integrated Visual Studio publishing and FTP publishing
 
@@ -44,7 +44,7 @@ The Azure portal provides a wizard to create a web app. This wizard requires the
 - **Resource group**: A valid resource group.
 - **App name**: The name of the web app. This name becomes part of the app's URL, so it must be unique among all Azure App Service web apps.
 - **Publish**: You can deploy your application to App Service as **code** or as a ready-to-run **Docker image**. Selecting **Docker image** will activate the Docker tab of the wizard, where you provide information about the Docker registry from which App Service will retrieve your image.
-- **Runtime stack**: If you choose to deploy your application as code, App Service needs to know what runtime your application uses (examples include Node.js, Python, Java and .NET). If you deploy your application as a Docker image, you will not need to choose a runtime stack, since your image will include it.
+- **Runtime stack**: If you choose to deploy your application as code, App Service needs to know what runtime your application uses (examples include Node.js, Python, Java, and .NET). If you deploy your application as a Docker image, you will not need to choose a runtime stack, since your image will include it.
 - **Operating system**: App Service can host applications on **Windows** or **Linux** servers.
   - If you are deploying your app as code, many of the available runtime stacks are limited to one operating system or the other. After choosing a runtime stack, the toggle will indicate whether or not you have a choice of operating system. If your target runtime stack is available on both operating systems, select the one that you use to develop and test your application.
   - If your application is packaged as a Docker image, choose the operating system on which your image is designed to run.

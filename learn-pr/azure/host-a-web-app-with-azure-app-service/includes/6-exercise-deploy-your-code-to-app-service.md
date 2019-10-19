@@ -38,7 +38,7 @@ You have successfully hosted your new ASP.NET Core application on App Service!
 
 Let's deploy our Node.js application with `az webapp up`. This command will package up our application and send it to our App Service instance, where it will be built and deployed.
 
-First, we need to gather some information about our web app resource. Run these commands to set shell variables that contain our app's name, resource group name, plan name and sku. These use different `az` commands to request the information from Azure; `az webapp up` needs these values to target our existing web app.
+First, we need to gather some information about our web app resource. Run these commands to set shell variables that contain our app's name, resource group name, plan name, and sku. These use different `az` commands to request the information from Azure; `az webapp up` needs these values to target our existing web app.
 
 ```bash
 APPNAME=$(az webapp list --query [0].name --output tsv)
@@ -80,7 +80,7 @@ az webapp deployment user set --user-name [username] --password [password]
 
 ## Deploy the application package with wardeploy
 
-**Wardeploy** is an App Service deployment mechanism specifically designed for deploying WAR web application package files to Java web apps. Wardeploy is part of the Kudu REST API: an administrative service interface, available on all App Service web apps, that can be accessed over HTTP. The simplest way to use wardeploy is with the `curl` HTTP utility from the command line.
+**Wardeploy** is an App Service deployment mechanism that is specifically designed for deploying WAR web application package files to Java web apps. Wardeploy is part of the Kudu REST API: an administrative service interface, available on all App Service web apps, that can be accessed over HTTP. The simplest way to use wardeploy is with the `curl` HTTP utility from the command line.
 
 Run the following commands to deploy your app with wardeploy. Replace `[username]` and `[password]` with the Deployment User username and password you created above, and replace `[web_app_name]` with the name of your web app.
 

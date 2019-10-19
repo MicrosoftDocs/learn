@@ -4,7 +4,7 @@
 
 ::: zone pivot="csharp"
 
-The heart of the .NET CLI tools is the `dotnet` command line tool. Using this command, you will create a new ASP.NET Core web project.
+The heart of the .NET CLI tools is the `dotnet` command-line tool. Using this command, you will create a new ASP.NET Core web project.
 
 In the Cloud Shell on the right, create a new ASP.NET Core MVC application. Name it "BestBikeApp".
 
@@ -41,7 +41,7 @@ Press <kbd>Ctrl+C</kbd> to shut down the running app.
 
 To create a starter Node.js web application, we'll use Node Package Manager (`npm`) along with some basic JavaScript code to run the actual web page processing.
 
-Run these commands in the Cloud Shell now to create a new `package.json` which will describe our Node.js application.
+Run these commands in the Cloud Shell now to create a new `package.json` that will describe our Node.js application.
 
 ```bash
 cd ~
@@ -104,7 +104,7 @@ Save the file and exit the editor. You can exit the editor through the "..." men
 
 ::: zone pivot="java"
 
-To create a starter web application, we'll use Maven, a commonly-used project management and build tool for Java apps. Maven includes a feature called *archetypes* that can quickly create starter code for different kinds of applications. We can use the `maven-archetype-webapp` template to generate the code for a simple web app that displays "Hello World!" on its homepage.
+To create a starter web application, we'll use Maven, a commonly used project management and build tool for Java apps. Maven includes a feature called *archetypes* that can quickly create starter code for different kinds of applications. We can use the `maven-archetype-webapp` template to generate the code for a simple web app that displays "Hello World!" on its homepage.
 
 Run these commands in the Cloud Shell now to create a new web app:
 
@@ -126,7 +126,7 @@ When the command finishes running, if you change to the `target` directory and r
 
 ::: zone pivot="python"
 
-To create a starter web application, we'll use Flask, which is a commonly-used web application framework. Run the following commands to set up a virtual environment and install Flask in your profile:
+To create a starter web application, we'll use Flask, which is a commonly used web application framework. Run the following commands to set up a virtual environment and install Flask in your profile:
 
 ```bash
 python3 -m venv venv
