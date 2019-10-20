@@ -24,7 +24,7 @@ The following table lists the VM metrics that are available.
 |      | Premium Data Disk Cache Read Hit [or Miss]      | How often is data read from cache versus the data disk        |
 | Network     | Inbound [or Outbound] Flows        | Number of current flows in the inbound [or outbound] direction        |
 |      | Network In [or Out] Billable        | Number of billable bytes received [or sent] on all network interfaces        |
-|      | Network In [or Our] Total        |  Number of bytes received [or sent] on all network interfaces       |
+|      | Network In [or Out] Total        |  Number of bytes received [or sent] on all network interfaces       |
 
 You can choose multiple metrics and plot them on the graph to get a better understanding of the traffic hitting your web server. Azure also offers flexible time ranges. You can choose  the last 30 minutes to the last 30 days, or specify a custom range with any start and end date. You can specify a granularity from one minute to one month. This data enables you to see trends or patterns.
 
@@ -45,7 +45,7 @@ You can have greater control, with more options, by creating a custom key perfor
 - How hot is the VM or how much CPU is being used?
 - How busy is the VM or how much network traffic is the VM processing?
 
-![Screenshot of an example KPI dashboard, showing CPU max and Network total graphs](../media/4-KPI-dashboard.png)
+![Screenshot of an example KPI dashboard, showing CPU max and Network total graphs](../media/4-kpi-dashboard.png)
 
 You can reuse the prebuilt graph for network traffic. However, the average CPU usage isn't the most useful metric. The maximum CPU usage is a better metric to use.
 

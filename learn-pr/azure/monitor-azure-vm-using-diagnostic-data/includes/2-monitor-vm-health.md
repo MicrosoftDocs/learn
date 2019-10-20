@@ -21,7 +21,7 @@ Azure can collect these metrics by default for hosted VMs without installing any
 
 You can choose multiple metrics and plot them on the graph to see how much traffic hits your web server, and how it performs. The Azure portal offers a flexible time range for graphs from the last 30 minutes, the last four hours, or going back for up to 30 days. Azure also lets you pin these graphs to your dashboard so you can quickly view server health.
 
-![CPU percentage usage and  inbound flow chart](../media/vm-metrics-screenshot.png)
+![CPU percentage usage and  inbound flow chart](../media/2-vm-metrics-screenshot.png)
 
 After you enable the metric, you can:
 
