@@ -67,13 +67,16 @@ Here you create the SQL Server that holds your new database.
 
 1. Select **Review + create**, then select **Create**.
 1. After the server is created, select **Go to resource**.
-1. On the right side of the overview page select **Show firewall settings**.
-1. On the firewall settings page make sure the switch to **Allow Azure services and resources to access this server** is **on** and select **Save**. This will allow Azure to create the tables and insert the data that you need.
+1. On the right side of the overview page, select **Show firewall settings**.
+1. On the firewall settings page, make sure the switch to **Allow Azure services and resources to access this server** is **on** and select **Save** and then select **OK**.
+
+    This enables Azure to create the tables and insert the data that you need.
 
 ## Populate your database
 
 Here, you import the *bacpac* file that you uploaded to blob storage to SQL Server.
 
+1. Select **Overview** from the menu on the left to go back to your **SQL server** overview page.
 1. Select **Import database**.
 ![Screenshot of the import database menu selection](../media/3-import-database-menu.png)
 1. On the *Import database* page, select your subscription and then select **Storage - Configure required settings**.
@@ -83,8 +86,7 @@ Here, you import the *bacpac* file that you uploaded to blob storage to SQL Serv
 1. On the **Containers** page, select **bacpac**.
 1. Highlight the **tailspindatabase.bacpac** file and then choose **Select**.
 1. Back on the **Import database** page, enter **azuresql** for the admin username and the password you used to set up the SQL Server instance.
-1. Select **OK** and wait for the database to be created.
-1. Select **Go to resource**.
+1. Select **OK** and wait for the operation to finish.
 
 ## Set a firewall rule
 

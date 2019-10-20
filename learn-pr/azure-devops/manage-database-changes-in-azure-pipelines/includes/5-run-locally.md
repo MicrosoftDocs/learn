@@ -26,6 +26,9 @@ This branch contains the _Space Game_ project you worked with in the previous mo
 
 If you're interested specifically in SQL Server, you can check out the database project, *Tailspin.SpaceGame.Database.sqlproj*, under the *Tailspin.SpaceGame.Database* directory. This is the SQL Server Data Tools project we discussed earlier. The *Tables* directory contains *.sql* files that define the four SQL tables you worked with in the previous section.
 
+> [NOTE]
+> Although you won't need to build the database project locally, keep in mind that this projects builds only under Windows.
+
 To see how the _Space Game_ webapp runs SQL queries against the database, open the *RemoteDBRepository.cs* file under the *Tailspin.SpaceGame.Web* directory.
 
 Here's an example that gets the achievements for a specific profile. These achievements appear when you select a player profile from the leaderboard.
@@ -78,7 +81,7 @@ Here, you fetch the connection string to your database and store it in a file na
     cd Tailspin.SpaceGame.Web
     ```
 1. From a temporary file, paste in your connection string. Then replace `{your_password}` with your SQL password. Then copy the entire connection string back to the clipboard.
-1. Create a Bash variable that specifies your connection string. Replace `{your_connection_string}` with your connection string.
+1. From the integrated terminal, create a Bash variable that specifies your connection string. Replace `{your_connection_string}` with your connection string.
 
     ```bash
     DB_CONNECTION_STRING="{your_connection_string}"
@@ -153,5 +156,7 @@ Here, you build and run the web application locally to verify that the applicati
     You can interact with the page, including the leaderboard. When you select a player's name, you see details about that player.
 
     ![The Space Game leaderboard](../media/5-space-game-leaderboard-profile.png)
+
+    Unlike in previous modules, the leaderboard data is read from your Azure SQL Database.
 
     When you're finished, return to the terminal window and select Ctrl+C to stop the running application.

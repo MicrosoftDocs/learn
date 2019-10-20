@@ -29,7 +29,9 @@ In the *Tailspin.SpaceGame.Database* project, a change has been made to the Prof
     git push origin schema-changes
     ```
 
-1. Watch the pipeline and wait for the manual approval of the database schema. When the pipeline stops for approval, click on the `DBAVerificationScript` stage and look at the change script that was created. This time there will be an `ALTER TABLE` SQL statement for adding the new column to the Profiles table.
+1. Watch the pipeline and wait for the manual approval of the database schema.
+
+    When the pipeline stops for approval, click on the `DBAVerificationScript` stage and look at the change script that was created. This time there will be an `ALTER TABLE` SQL statement for adding the new column to the Profiles table.
 1. Go back to the pipeline and select the **Waiting** button on the `DBAVerificationApply` stage. Select **Review** and then **Approve**.
 1. Wait for the pipeline to finish deploying to each App Service environment.
 1. You still need to add data to the new column before you can try the new website.

@@ -94,7 +94,7 @@ To do so, you:
       --output table
     ```
 
-    Note the hostname for each running service. You'll need these hostnames to set the connection string to the database and later when you verify your work. Here's an example:
+    Note the hostname for each running service. You'll need these hostnames to set the connection string to the database later when you verify your work. Here's an example:
 
     ```output
     HostName                                                 State
@@ -198,6 +198,9 @@ To add the variable:
     | **WebAppNameTest**    | **tailspin-space-game-web-test-1234**    |
     | **WebAppNameStaging** | **tailspin-space-game-web-staging-1234** |
 
+    > [!IMPORTANT]
+    > Make sure you set the name of the App Service instance, and not its hostname. In this example, you would enter **tailspin-space-game-web-dev-1234** and not **tailspin-space-game-web-dev-1234.azurewebsites.net**.
+
 1. Add these pipeline pipeline variables.
 
     | Variable name         | Example value                            |
@@ -224,7 +227,7 @@ Here you add the Azure Pipelines stage that checks for SQL Database schema chang
 
     [!code-yml[](code/azure-pipelines1.yml?highlight=65-161,165)]
 
-    This pipeline adds a new build job for the Tailspin.SpaceGame.Database project. This will result in a *.dacpac* file being created that contains information about the database schema. That *.dacpac* file will be copied to a staging directory in the pipeline and then published as an artifact called **dropDacpac**.
+    This pipeline adds a new build job for the *Tailspin.SpaceGame.Database* project. This will result in a *.dacpac* file being created that contains information about the database schema. That *.dacpac* file will be copied to a staging directory in the pipeline and then published as an artifact called **dropDacpac**.
 
     ```yml
     - task: VSBuild@1
@@ -315,7 +318,7 @@ Here you add the Azure Pipelines stage that checks for SQL Database schema chang
 Here you create the manual approval for the `DBAVerificationApply` stage. You learned about manual approvals in the previous module. Recall that you need to set up an environment and add an approver.
 
 1. From Azure Pipelines, select **Environments**
-1. Select **New environment**.
+1. Select **Create environment**.
 1. Under **Name**, enter **dbaverificationapply**.
 1. Leave the remaining fields at their default values.
 1. Select **Create**.
@@ -336,7 +339,9 @@ Here you create the manual approval for the `DBAVerificationApply` stage. You le
     git push origin database
     ```
 
-1. Select the pipeline and wait for the manual approval of the database schema. When the pipeline stops for approval, click on the `DBAVerificationScript` stage and look at the change script that was created. It will be in the **Show automated SQL Script** section. The script should not have any changes since we didn't change anything in the database yet. You will know there are no changes because you do not see **CREATE**, **ALTER**, or **DROP** statements in the script.
+1. Go to your pipeline and wait for the manual approval of the database schema.
+
+    When the pipeline stops for approval, click on the `DBAVerificationScript` stage and look at the change script that was created. It will be in the **Show automated SQL Script** section. The script won't have any changes since we didn't change anything in the database yet. You will know there are no changes because you do not see **CREATE**, **ALTER**, or **DROP** statements in the script.
 1. Go back to the pipeline and select the **Waiting** button on the `DBAVerificationApply`. Select **Review** and then **Approve**.
 1. Wait for the pipeline to finish deployments.
 

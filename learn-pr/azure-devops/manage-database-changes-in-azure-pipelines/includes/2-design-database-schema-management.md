@@ -47,7 +47,7 @@ When planning your operational needs, you might ask yourself these questions:
     With basic lookups you might consider non-relational data solutions whereas join queries will require relational data.
 * How often will the data change?
 
-    Reporting data may only change at month-end or quarterly. This could be a candidate for a data warehouse. If the data changes throughout the day, then you need something that can handle fast transactional throughput.
+    Reporting data may only change at end of the month or quarterly. This could be a candidate for a data warehouse. If the data changes throughout the day, then you need something that can handle fast transactional throughput.
 * Do I always need the latest data?
 
     This relates to how often the data changes. Perhaps the data changes often, but you only need the data at the end of each month. Or it could be that you are stock trading and you need to fetch data as quickly as possible.
