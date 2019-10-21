@@ -4,12 +4,11 @@ title: Summary
 metadata:
   title: Summary
   description: Summary for the 'Introduction to Azure compute' module.
-  ms.date: 09/24/2018
-  author: cryophobia
-  ms.author: chrvaw
+  ms.date: 10/21/2019
+  author: patridge
+  ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 3
 content: |
   [!include[](includes/7-summary.md)]
