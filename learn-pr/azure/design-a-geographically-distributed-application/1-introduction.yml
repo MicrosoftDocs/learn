@@ -3,7 +3,7 @@ uid: learn.design-a-geographically-distributed-application.1-introduction
 metadata:
   title: Introduction
   description: In this unit, you'll learn about a business scenario that requires a robust, geographically distributed application architecture.
-  ms.date: 06/30/2019
+  ms.date: 10/30/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
