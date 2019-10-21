@@ -20,3 +20,8 @@ achievements:
   title: Authenticate browser-based apps with Azure App Services
   summary: Authenticate browser-based apps with Azure App Services
   iconUrl: /learn/achievements/authenticate-browser-based-apps-with-azure-app-services.svg
+- uid: learn.azure-intro-mobile-app-service.badge
+  type: badge
+  title: "Introduction to Mobile Apps in Azure App Service"
+  summary: "Introduction to Mobile Apps in Azure App Service"
+  iconUrl: /learn/achievements/azure-intro-mobile-app-service.svg
