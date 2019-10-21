@@ -1,18 +1,18 @@
 In this module, you connect a web application to a database and manage changes to the database schema in Azure Pipelines.
 
-In [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true), you helped the Tailspin web team design and build a release management workflow. This workflow enables the team to move changes through a series of stages, such as the _Dev_ stage and the _Test_ stage, all the way out to a _Staging_ environment that resembles production.
+In [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true), you helped the Tailspin web team design and build a multi-stage release pipeline. This pipeline enables the team to move changes through a series of stages, such as the _Dev_ stage and the _Test_ stage, all the way out to _Staging_ stage that resembles production.
 
-The stages that you and the team defined provide the overall shape of your pipeline, but there's more that you can add to each stage. For example, the _Dev_ stage provides the opportunity to verify that multiple components, such as the web application and the database, work together in a real, working environment.
+The stages that you and the team defined provide the overall shape of the pipeline, but there's more that you can add to each stage. For example, in the _Dev_ stage you can verify that multiple components, such as the web application and a database, work together in a real, working environment.
 
-However, the web application still reads test data from local files, and is not yet connected to a database. In this module, you connect the website to Azure SQL Database and load your database with sample data.
+However, the web application still reads test data from local files. In this module, you connect the website to Azure SQL Database and load your database with sample data.
 
-When an application uses a database, the database administrator (DBA) and the app developers must work together to design and maintain the database schema. Azure DevOps can help developers and DBAs coordinate their plans and deploy database schema changes more quickly and with greater safety.
+When an application uses a database, the database administrator (DBA) and the app developers must work together to design and maintain the *database schema*. Think of the schema as a blueprint that dictates how the data will be organized. Azure DevOps can help developers and DBAs coordinate their plans and deploy database schema changes quickly and safely.
 
 ## Learning objectives
 
 In this module, you:
 
-- Connect a relational database to your website, using Azure SQL Database and App Service as an example.
+- Connect a relational database to your website, using Azure SQL Database and Azure App Service as an example.
 - Coordinate changes to the database schema by using a release approval.
 - Use PowerShell to share variables among pipeline stages.
 
