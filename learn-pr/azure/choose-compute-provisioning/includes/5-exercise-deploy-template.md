@@ -8,9 +8,9 @@ In this exercise, you'll provision a web server to meet the requirements.
 
 ### Provision a web server
 
-You'll use multiple tools together. Azure Resource Manager templates will enable you to create a template outlining the environment for your web server. Your Azure Resource Manager template can also help you define a state that you apply to your web server at the point of provisioning. You can apply your desired state by putting a DSC extension handler inside of your Azure Resource Manager template. The DSC handler helps you enforce a state that you define in a DSC configuration.
+You'll use a couple of tools together. Azure Resource Manager templates will enable you to create a template outlining the environment for your web server. Your Azure Resource Manager template can also help you define a state that you apply to your web server at the point of provisioning. You can apply your desired state by putting a DSC extension handler inside of your Azure Resource Manager template. The DSC handler helps you enforce a state that you define in a DSC configuration.
 
-In the following exercise, you'll use an Azure Resource Manager template to provision a virtual machine. The DSC extension handler that will be included in the template will enforce your state on the virtual machine.
+In the following exercise, you'll use an Azure Resource Manager template to provision a virtual machine. The DSC extension handler that will be included in the template will enforce your state on the virtual machine. You'll use an Azure storage account to host your DSC configuration file.
 
 ### Create your state configuration file
 
@@ -86,7 +86,7 @@ In the following exercise, you'll use an Azure Resource Manager template to prov
 
     ![Copy the URL](../media/5-copy-file-url.png)
 
-### Create resource template
+### Create a template
 
 1. Now you create an Azure Resource Manager template. Below is a skeleton template, which you can use as a baseline. Copy the code, and save it as *template.json*.
 
