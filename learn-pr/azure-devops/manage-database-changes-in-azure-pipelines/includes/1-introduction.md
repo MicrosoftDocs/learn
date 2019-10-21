@@ -1,18 +1,20 @@
-In this module, you'll add functional tests &mdash; tests that verify an application's behavior &mdash; to the pipeline.
+In this module, you connect a web application to a database and manage changes to the database schema in Azure Pipelines.
 
-In [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines?azure-portal=true), you helped the Tailspin web team connect their web application to Azure SQL Database. You also used a release approval to help coordinate changes to the database schema between the developers and the database administrator.
+In [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true), you helped the Tailspin web team design and build a multi-stage release pipeline. This pipeline enables the team to move changes through a series of stages, such as the _Dev_ stage and the _Test_ stage, all the way out to _Staging_ stage that resembles production.
 
-The stages that you and the team defined provide the overall shape of your pipeline, but there's more that you can add to each stage. For example, in the _Test_ stage, Amita still tests the web application manually as she always has. When she's satisfied, she manually promotes the application to _Staging_, where management can review the new features and decide if they want to make the release publicly available.
+The stages that you and the team defined provide the overall shape of the pipeline, but there's more that you can add to each stage. For example, in the _Dev_ stage you can verify that multiple components, such as the web application and a database, work together in a real, working environment.
 
-In [Run quality tests in your build pipeline using Azure Pipelines](/learn/modules/run-quality-tests-build-pipeline?azure-portal=true), you incorporated unit and code coverage tests into the build process. These help ensure that there are no regression bugs and that the code meets a company's standards for quality and style. But what kinds of tests can you run once a service is operational and actually deployed to an environment?
+However, the web application still reads test data from local files. In this module, you connect the website to Azure SQL Database and load your database with sample data.
+
+When an application uses a database, the database administrator (DBA) and the app developers must work together to design and maintain the *database schema*. Think of the schema as a blueprint that dictates how the data will be organized. Azure DevOps can help developers and DBAs coordinate their plans and deploy database schema changes quickly and safely.
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you:
 
-- Define what functional tests are and identify some of the more popular kinds of tests you can run.
-- Map manual testing steps to automated test cases.
-- Run automated UI tests locally and in the pipeline with Selenium.
+- Connect a relational database to your website, using Azure SQL Database and Azure App Service as an example.
+- Coordinate changes to the database schema by using a release approval.
+- Use PowerShell to share variables among pipeline stages.
 
 ## Prerequisites
 
