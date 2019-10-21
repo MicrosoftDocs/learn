@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.9-knowledge-check
+uid: learn-wwl.introduction-to-azure-solutions.6-summary-and-resources
 title: Summary and resources
 metadata:
   title: Summary and resources
   description: Summary and resources
   ms.date: 10/18/2019
   author: wwlpublish
-  ms.author: a-drapos
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 
-durationInMinutes: 4
+durationInMinutes: 1
 content: |
-  [!include[](includes/9-summary-and-resources.md)]
+  [!include[](includes/6-summary-and-resources.md)]
