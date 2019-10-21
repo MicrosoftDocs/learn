@@ -8,7 +8,7 @@ In this unit, you'll train the model using the images uploaded and tagged in the
 
     The results show two measures of a model's accuracy, **Precision** and **Recall**. Suppose the model was presented with three Picasso images and three from Van Gogh. Let's say it correctly identified two of the Picasso samples as "Picasso" images, but incorrectly identified two of the Van Gogh samples as Picasso. In this case, the **Precision** would be 50%, since it identified two out of four images correctly. The **Recall** score would be 67% since it correctly identified two of the three Picasso images correctly.
 
-    ![Screenshot showing he results of training the model. The results show overall 100 percent precision and 84.8 percent recall.](../media/2-portal-train-complete.png)
+    ![Screenshot showing the results of training the model. The results show overall 100 percent precision and 84.8 percent recall.](../media/2-portal-train-complete.png)
 
 In the next exercise, we'll test the model using the portal's Quick Test feature, which allows you to submit images to the model and see how it classifies them using the knowledge gained from the training images.
 

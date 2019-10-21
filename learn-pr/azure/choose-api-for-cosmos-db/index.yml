@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.azure.choose-the-appropriate-api-for-cosmos-db-storage
+metadata:
+  title: Choose the appropriate API for Azure Cosmos DB storage
+  description: Compare the different APIs that are available in Azure Cosmos DB, highlighting and contrasting the different scenarios that would make them a good choice for a company.
+  ms.date: 04/15/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Choose the appropriate API for Azure Cosmos DB storage
+summary: You will compare the different APIs available in Azure Cosmos DB, highlighting and contrasting the different scenarios that would make them a good choice for a company. 
+abstract: |
+  At the end of this module, you will be able to:
+  -	Explain the features of Core (SQL)
+  -	Explain the features of MongoDB
+  -	Explain the features of the Cassandra
+  -	Explain the features of the Azure Table 
+  -	Explain the features of the Gremlin (graph)
+  -	Choose the appropriate API for your Azure Cosmos DB account
+prerequisites: |
+  - Familiarity with database concepts
+iconUrl: /learn/achievements/choose-the-appropriate-api-for-cosmos-db-storage.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-cosmos-db
+units:
+- learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.1-introduction
+- learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.2-identify-the-technology-options
+- learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.3-analyze-the-decision-criteria
+- learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.4-use-the-core-sql-api-to-store-a-product-catalog
+- learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.5-use-the-gremlin-graph-api-as-a-recommendation-engine
+- learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.6-use-the-mongodb-api-to-import-historical-order-data
+- learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.7-use-the-cassandra-api-for-web-analytics
+- learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.8-use-the-azure-table-api-to-store-iot-data
+- learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.9-knowledge-check
+- learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.10-summary
+badge:
+  uid: learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.badge

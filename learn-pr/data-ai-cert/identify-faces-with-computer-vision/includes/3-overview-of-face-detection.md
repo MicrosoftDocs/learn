@@ -1,35 +1,28 @@
+The Face API provides methods to detect human faces in images and can return face locations, landmarks, and attributes:
 
-The Face API provides methods to detect human faces in images and can return specific face locations, landmarks, and attributes.
-
-- **Locations**: The top, left, height, and width of a region in the image displaying a face.
-- **Landmarks**: The position of common face elements, such as pupils, nose, and lips.
-- **Attributes**: Estimated attributes of a face, such as age, gender, hair color, smile, facial hair, glasses, and emotion.
+- **Locations**: In the image that includes a face, the Face API finds the top, left, width, and height coordinates of the face region.
+- **Landmarks**: The Face API finds the position of common face elements, such as pupils, nose, and lips.
+- **Attributes**: The Face API estimates face attributes such as age, gender, hair color, smile, facial hair, glasses, and emotion.
 
 ## Locations
 
-A **face location** is another term for a collection of _face coordinates_. The location identifies the rectangular pixel area in the image where a face was identified.
+A *face location* is another term for a collection of _face coordinates_. The location is a rectangular pixel area in the image where a face has been identified.
 
 ![A Face API face location rectangle](../media/3-face-recognition-rectangle.png)
 
 ## Landmarks
 
-**Face landmarks** are a collection of detailed points on a face. These points identify common facial elements such as a pupil, nose, or eyebrow in pixel coordinates.
+*Face landmarks* are a collection of detailed points on a face. These points identify common facial elements such as a pupil, nose, or eyebrow by using pixel coordinates. The Face API can return up to 27 landmarks for each identified face that you can use for analysis.
 
 ![A chart of Face API landmarks](../media/3-face-recognition-landmarks.png)
 
-> [!TIP]
-> Face landmarks are optional attributes that can be analyzed during face detection.
-
 ## Attributes
 
-**Face attributes** are pre-defined properties of a face or person represented by a face. The Face API identifies the following types of attributes.
+*Face attributes* are predefined properties of a face or a person represented by a face. The Face API can optionally identify and return the following types of attributes for a detected face:
 
-- age
-- gender
-- smile "intensity"
-- facial hair
-- head pose (3D)
-- emotion
-
-> [!IMPORTANT]
-> The Face API detection algorithms are designed to detect faces (and aspects of faces) in images, but aren't designed to do full **facial recognition**. Facial recognition is used to identify a _specific_ face, which this API is not designed to do by itself.
+- Age
+- Gender
+- Smile intensity
+- Facial hair
+- Head pose (3D)
+- Emotion

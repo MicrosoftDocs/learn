@@ -2,8 +2,8 @@
 uid: learn.data-ai.evolving-world-of-data.summary
 title: Summary
 metadata:
-  title: Summary - Learn
-  description: Summary - Learn
+  title: Summary 
+  description: Summary
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill
@@ -17,39 +17,39 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "Which data processing framework will be used by Data Engineers to ingest data into cloud data platforms on Azure?"
+  - content: "Which data processing framework will a data engineer use to ingest data onto cloud data platforms in Azure?"
     choices: 
-    - content: "Online Transactional Processing (OLTP)."
+    - content: "Online transaction processing (OLTP)"
       isCorrect: false
-      explanation: "Online Transactional Processing (OLTP) describes a database model for processing tranactional data"
-    - content: "Extract, Transform and Load (ETL)."
+      explanation: "OLTP describes a database model for processing transactional data."
+    - content: "Extract, transform, and load (ETL)"
       isCorrect: false
-      explanation: "Extract, Transform and Load (ETL) is a typical process for ingesting data from an on-premises database to an on-premises data warehouse."
-    - content: "Extract, Load and Transform (ELT)."
+      explanation: "ETL is a typical process for ingesting data from an on-premises database to an on-premises data warehouse."
+    - content: "Extract, load, and transform (ELT)"
       isCorrect: true
-      explanation: "Correct! Extract, Load and Transform (ELT) is a typical process for ingesting data from an on-premises database into the cloud"
+      explanation: "Correct. ELT is a typical process for ingesting data from an on-premises database into the cloud."
 
-  - content: "What type of data can have its own schema at defined at query time?"
+  - content: "The schema of what data type can be defined at query time?"
     choices: 
-    - content: "Structured data."
+    - content: "Structured data"
       isCorrect: false
-      explanation: "Structured data typical has its schema defined at creation time"
-    - content: "Cosmos DB."
+      explanation: "The schema of structured data is typically defined at the time of creation."
+    - content: "Azure Cosmos DB"
       isCorrect: false
-      explanation: "Cosmos DB is a data platform technology that exists in Microsoft Azure."
-    - content: "Un-structured data."
+      explanation: "Azure Cosmos DB is a data platform technology in Azure."
+    - content: "Unstructured data"
       isCorrect: true
-      explanation: "Correct! Un-structured data will typically have its schema defined at query time. This means that data can be loaded into a data platform in its native format."
+      explanation: "Correct. The schema of unstructured data is typically defined at query time. This means that data can be loaded onto a data platform in its native format."
 
   
-  - content: "Duplicating customers content for redundancy and meeting Service Level Agreements in Azure meets which cloud technical requirement?"
+  - content: "Duplicating customer content for redundancy and meeting service-level agreements (SLAs) in Azure meets which cloud technical requirement?"
     choices: 
-    - content: "Maintainability."
+    - content: "Maintainability"
       isCorrect: false
-      explanation: "Maintainability ensure that a data platform can be easily maintained."
-    - content: "High Availability."
+      explanation: "Maintainability means that a data platform can be easily maintained."
+    - content: "High availability"
       isCorrect: true
-      explanation: "Correct! High Availability duplicates customers content for redundancy and meeting Service Level Agreements in Azure."
-    - content: "Multi-lingual support."
+      explanation: "Correct. High availability duplicates customer content for redundancy and meets SLAs in Azure."
+    - content: "Multilingual support"
       isCorrect: false
-      explanation: "Multi-lingual support enables a data platform technology to support multiple languages."
+      explanation: "Multilingual support means that a data platform supports multiple languages."

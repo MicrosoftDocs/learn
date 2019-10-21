@@ -1,13 +1,15 @@
-Once a Stream Analytics job has completed, you can view the results right in the Azure portal. Within the Overview pane for the job, not only can you can get information about the status, but you can confirm the location and resource group in which the service is provisioned, as well as the subscription details. You can also confirm dates when the service was created and started.
+After a Stream Analytics job finishes, you can view the results in the Azure portal. On the job's **Overview** pane, you see the status information, the location and resource group where the service is provisioned, and the subscription details. Here you can also confirm when the service was created and started.
 
-1. In the Azure portal, navigate to your output Storage account (**streamsink**).
-1. Select Storage Explorer (preview).
-1. In the right pane, open your container (**learn-container**) under **BLOB CONTAINERS**.
-1. Navigate to **output** folder and download the blob to view the query output results.
+To see the job's results:
 
-    ![Screenshot of Showing Query Result](../media/8-query-result.png)
+1. In the Azure portal, go to your output storage account (**streamsink**).
+1. Select **Storage Explorer (preview)**.
+1. On the right, under **BLOB CONTAINERS**, open your container (**learn-container**).
+1. Go to the **output** folder and select **Download**.
 
-If you open the file, you should see something like the following:
+    ![Screenshot showing query output results](../media/8-query-result.png)
+
+When you open the file, you should see something like this:
 
 ```json
 {

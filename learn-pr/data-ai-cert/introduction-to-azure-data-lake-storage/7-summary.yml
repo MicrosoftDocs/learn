@@ -2,8 +2,8 @@
 uid: learn.data-ai-introduction-to-azure-data-lake-storage.summary
 title: Summary
 metadata:
-  title: Summary - Learn
-  description: Summary - Learn
+  title: Summary
+  description: Summary
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill
@@ -16,17 +16,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Mike is creating an Azure Data Lake Storage Gen 2 account. He must configure this account to be able to processes analytical data workloads for best performance. Which option should he configure when creating the storage account?"
+  - content: "Mike is creating an Azure Data Lake Storage Gen2 account. He must configure this account to be able to processes analytical data workloads for best performance. Which option should he configure when creating the storage account?"
     choices: 
-    - content: "On the Basic Tab, set the performance option to standard."
+    - content: "On the **Basic** tab, set the **Performance** option to **Standard**."
       isCorrect: false
-      explanation: "The Performance option determines the types of physical storage that the storage account will use."
-    - content: "On the Basic Tab, set the performance to ON."
+      explanation: "The **Performance** option determines the types of physical storage that the storage account will use."
+    - content: "On the **Basic** Tab, set the **Performance** option to **ON**."
       isCorrect: false
-      explanation: "The Performance option set to ON is not a valid configuration."
-    - content: "On the Advanced tab, set the Hierarchical Namespace to enabled."
+      explanation: "The **Performance** option set to **ON** is not a valid configuration."
+    - content: "On the **Advanced** tab, set the **Hierarchical Namespace** to **Enabled**."
       isCorrect: true
-      explanation: "Correct! If you want to enable the best performance for Analytical Workloads in Data Lake Storage Gen 2, then on the Advanced tab of the Storage Account creation set the Hierarchical Namespace to enabled."
+      explanation: "Correct! If you want to enable the best performance for analytical workloads in Data Lake Storage Gen2, then on the **Advanced** tab of the Storage Account creation set the **Hierarchical Namespace** to **Enabled**."
   - content: "In which phase of big data processing is Azure Data Lake Storage located?"
     choices: 
     - content: "Ingestion"
@@ -34,7 +34,7 @@ quiz:
       explanation: "Ingestion is the phase that typically includes technologies for ingesting data from a source such as Azure Data Factory."
     - content: "Store"
       isCorrect: true
-      explanation: "Correct! 'Store' is the phase in which Azure Data Lake Storage resides for processing big data solution."
+      explanation: "Correct! Store is the phase in which Azure Data Lake Storage resides for processing big data solution."
     - content: "Model & Serve"
       isCorrect: false
       explanation: "Model & Serve is the phase that includes technologies for presenting data for end users such as Power BI."

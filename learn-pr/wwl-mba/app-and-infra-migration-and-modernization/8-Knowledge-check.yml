@@ -29,11 +29,11 @@ quiz:
     - content: "The desire to empower employees, engage customers, optimize operations, and transform products"
       isCorrect: false
       explanation: "Incorrect. These pillars of digital transformation are not modernization triggers in and of themselves."
-  - content: "A financial services company is eager to tap into cloud capabilities but does not wish to change code or rewrite their application. Which modernization strategy is most suited to their needs?"
+  - content: "A financial services company decides to tap into cloud capabilities by moving their application into containers to avoid changing the underlying logic of their code. Which modernization strategy does this describe?"
     choices:
     - content: "Rearchitect"
       isCorrect: false
-      explanation: "Incorrect. Rearchitecting is a modernization strategy, but it requires changes to an application's code."
+      explanation: "Incorrect. Rearchitecting is a modernization strategy, but it requires changes to an application’s code."
     - content: "Rebuild"
       isCorrect: false
       explanation: "Incorrect. This is not a modernization strategy as it requires rebuilding the app from scratch."
@@ -42,15 +42,15 @@ quiz:
       explanation: "Incorrect. Rehosting is a migration strategy, not a modernization strategy."
     - content: "Refactor"
       isCorrect: true
-      explanation: "Correct. Refactoring involves moving an app to containers without changing it."
-  - content: "What are some of the challenges in today's business environment that are driving the need for application migration and modernization?"
+      explanation: "Correct. Refactoring involves moving an app to containers without changing the underlying logic of the code."
+  - content: "What are some of the challenges in today’s business environment that are driving the need for application migration and modernization?"
     choices:
     - content: "The need for a hybrid solution and the desire to future-proof LOB applications"
       isCorrect: false
       explanation: "Incorrect. These motivations might fit some organizations, but they are not characteristics of the overall business environment."
     - content: "The opportunity for market disruption and the need to maintain LOB applications on-premises"
       isCorrect: false
-      explanation: "Incorrect. These are not challenges in today's environment."
+      explanation: "Incorrect. These are not challenges in today’s environment."
     - content: "The speed of change and the need to maintain competitive advantage"
       isCorrect: true
       explanation: "Correct. In this digital era, keeping up with the speed of change in the business world is challenging as organizations push digital innovation beyond experimentation to drive competitive advantage."
@@ -61,13 +61,13 @@ quiz:
     choices:
     - content: "Rehost existing applications using IaaS"
       isCorrect: false
-      explanation: "Incorrect. While rehosting may be the best strategy for some applications, it may not be appropriate for all applications in an organization's portfolio."
+      explanation: "Incorrect. While rehosting may be the best strategy for some applications, it may not be appropriate for all applications in an organization’s portfolio."
     - content: "Move to a DevOps approach"
       isCorrect: false
       explanation: "Incorrect. To take full advantage of cloud benefits, a DevOps approach of continuous delivery is essential, but it is not the first step an organization should undertake."
     - content: "Convert existing applications to a SaaS (first- or third-party) solution"
       isCorrect: false
-      explanation: "Incorrect. Conversion to a SaaS solution may be the best strategy for some applications, it may not be appropriate for all applications in an organization's portfolio."
+      explanation: "Incorrect. Conversion to a SaaS solution may be the best strategy for some applications, it may not be appropriate for all applications in an organization’s portfolio."
     - content: "Application Portfolio Assessment"
       isCorrect: true
       explanation: "Correct. An Application Portfolio Assessment helps an organization better understand its existing application environment. The key focus of the assessment is an understanding of an application's business value and technical characteristics. These two dimensions will help define both the modernization technique to be used and the potential value to the business associated with the change."

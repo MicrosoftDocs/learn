@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook
+metadata:
+  title: Monitor GitHub events by using a webhook with Azure Functions
+  description: Monitor GitHub events by using a webhook with Azure Functions
+  ms.date: 04/30/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Monitor GitHub events by using a webhook with Azure Functions
+summary: Webhooks offer a lightweight mechanism for your app to be notified by another service when something of interest happens. In this module. you'll learn how to trigger an Azure function with a GitHub webhook and parse the payload for insights.
+abstract: | 
+  In this module, you will:
+  - Trigger your function with a webhook
+  - Analyze the message from the webhook
+  - Secure webhook payloads with a secret
+prerequisites: | 
+  - Beginner-level knowledge of Azure Functions
+  - A GitHub account
+iconUrl: /learn/achievements/monitor-github-events-with-a-function-triggered-by-a-webhook.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-functions
+units:
+- learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.introduction
+- learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.create-function-triggered-by-webhook
+- learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.exercise-create-function-triggered-by-webhook
+- learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.setup-webhook-for-github-repo
+- learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.exercise-setup-webhook-for-github-repo
+- learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.trigger-function-with-github-event
+- learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.exercise-trigger-function-with-github-event
+- learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.secure-webhook-payloads-with-secret
+- learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.exercise-secure-webhook-payloads-with-secret
+- learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.summary
+badge:
+  uid: learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.badge

@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure.gather-metrics-from-blob-storage
+metadata:
+  title: Gather metrics from your Azure Blob Storage containers
+  description: In this module, you'll gather information about the performance of your Azure Blob storage containers through Azure Storage Analytics (ASA). ASA enables you to trace requests, analyze usage trends, and diagnose issues with your storage account. You can then add these metrics to custom charts that you display in the Azure dashboard. 
+  ms.date: 03/26/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Gather metrics from your Azure Blob Storage containers
+summary: In this module, you'll learn how to use Azure Monitor to gather and view metrics for a blob storage account in Microsoft Azure. 
+abstract: | 
+  In this module, you will:
+  - View Blob metrics in the portal
+  - Add Azure Monitor metrics charts to a custom portal dashboard
+  - Use the portal to enable logging and download the logs
+prerequisites: |
+  - Knowledge of Azure portal
+  - Knowledge of Azure Blob Storage Containers
+iconUrl: /learn/achievements/gather-metrics-from-blob-storage.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.azure.gather-metrics-from-blob-storage.1-introduction
+- learn.azure.gather-metrics-from-blob-storage.2-viewing-blob-metrics-in-azure-portal
+- learn.azure.gather-metrics-from-blob-storage.3-exercise-specify-monitor-blob-metrics
+- learn.azure.gather-metrics-from-blob-storage.4-using-dashboards-in-the-azure-portal
+- learn.azure.gather-metrics-from-blob-storage.5-exercise-adding-azure-monitor-metrics-charts-to-a-custom-portal-dashboard
+- learn.azure.gather-metrics-from-blob-storage.6-using-storage-analytics-logging
+- learn.azure.gather-metrics-from-blob-storage.7-exercise-using-the-azure-portal-to-enable-logging-and-download-logs
+- learn.azure.gather-metrics-from-blob-storage.8-knowledge-check
+- learn.azure.gather-metrics-from-blob-storage.9-summary
+badge:
+  uid: learn.azure.gather-metrics-from-blob-storage.badge

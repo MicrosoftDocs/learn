@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.2-identify-the-technology-options
+title: Identify the technology options
+metadata:
+  title: Identify the technology options
+  description: Explain what each of the Azure Cosmos DB APIs are, how they are used, and the generic properties that apply across all APIs.
+  ms.date: 04/24/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-identify-the-technology-options.md)]

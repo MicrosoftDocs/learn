@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.analyze-review-sentiment-with-keras.create-an-azure-notebook
+title: Create an Azure Notebook
+metadata:
+  title: Create an Azure Notebook
+  description: Create an Azure Notebook
+  ms.date: 02/24/2019
+  author: JeffProsise
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/1-create-an-azure-notebook.md)]

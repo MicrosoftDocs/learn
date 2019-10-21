@@ -1,24 +1,23 @@
 ### YamlMime:Module
 uid: learn.data-ai.design-azure-sql-data-warehouse
 metadata:
-  title: Design a Data Warehouse with Azure SQL Data Warehouse - Learn
-  description: Learn how to create an Azure SQL Data Warehouse in minutes to leverage Massively Parallel Processing (MPP) to run complex queries at Petabyte Scale quickly - Learn
+  title: Design a data warehouse with Azure SQL Data Warehouse
+  description: Learn how to create a data warehouse in Azure SQL Data Warehouse in minutes to take advantage of massively parallel processing (MPP) and run complex queries at petabyte scale quickly
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: smmark
-title: Design a Data Warehouse with Azure SQL Data Warehouse
-summary: Learn how to create an Azure SQL Data Warehouse in minutes to leverage Massively Parallel Processing (MPP) to run complex queries at Petabyte Scale quickly.
+title: Design a data warehouse with Azure SQL Data Warehouse
+summary: Learn how to create a data warehouse in Azure SQL Data Warehouse in minutes to take advantage of massively parallel processing (MPP) and run complex queries at petabyte scale quickly.
 abstract: | 
-  In this module you will:
-  - List the types of data warehousing solutions
-  - Explain Azure SQL Data Warehouse
-  - Explain Massively Parallel Processing Concepts
-  - Compare Table Geometries
-  - Create an Azure SQL Data Warehouse
-ratingEnabled: true
+  In this module, you will:
+  - Learn about the types of data warehousing solutions
+  - Learn how Azure SQL Data Warehouse works
+  - Understand massively parallel processing (MPP) concepts
+  - Compare table geometries
+  - Create a data warehouse in Azure SQL Data Warehouse
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/design-azure-sql-data-warehouse-badge.svg
 levels:

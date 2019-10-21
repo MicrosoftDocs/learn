@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.predict-flight-delays-with-python.clean-and-prepare-data
+title: Clean and Prepare Data
+metadata:
+  title: Clean and Prepare Data
+  description: Clean and Prepare Data
+  ms.date: 02/25/2019
+  author: JeffProsise
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-clean-and-prepare-data.md)]

@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.azure.deploy-run-container-app-service
+metadata:
+  title: Deploy and run a containerized web app with Azure App Service
+  description: Create a Docker image and store it in a repository in Azure Container Registry. Use Azure App Service to deploy a web application based on the Docker image. Configure continuous deployment for the web app by using a webhook that monitors the Docker image for changes.
+  ms.date: 08/19/2019
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy and run a containerized web app with Azure App Service
+summary: > 
+  Create a Docker image and store it in a repository in Azure Container Registry. Use Azure App Service to deploy a web application based on the Docker image. Configure continuous deployment for the web app by using a webhook that monitors the Docker image for changes.
+abstract:  | 
+  In this module, you will:
+  - Create Docker images and store them in a repository in Azure Container Registry.
+  - Use Azure App Service to run web apps that are based on Docker images held in Container Registry.
+  - Use webhooks to configure continuous deployment of a web app that's based on a Docker image.
+prerequisites: |
+  - Basic experience with Docker, including the use of Docker commands to store and retrieve Docker images.
+  - Experience with creating web apps by using Azure App Service.
+iconUrl: /learn/achievements/deploy-run-container-app-service.svg
+levels:
+- beginner
+roles:
+- developer 
+- solution-architect 
+- administrator
+products:
+- azure
+- azure-app-service
+- azure-container-registry
+units:
+- learn.azure.deploy-run-container-app-service.1-introduction
+- learn.azure.deploy-run-container-app-service.2-build-store-images
+- learn.azure.deploy-run-container-app-service.3-exercise-build-images
+- learn.azure.deploy-run-container-app-service.4-deploy-web-app
+- learn.azure.deploy-run-container-app-service.5-exercise-deploy-web-app
+- learn.azure.deploy-run-container-app-service.6-update-web-app
+- learn.azure.deploy-run-container-app-service.7-exercise-update-web-app
+- learn.azure.deploy-run-container-app-service.8-summary
+badge:
+  uid: learn.azure.deploy-run-container-app-service.badge

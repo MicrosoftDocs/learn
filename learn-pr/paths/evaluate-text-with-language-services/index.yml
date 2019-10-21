@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.data-ai.evaluate-text-with-language-services
 metadata:
-  title: Evaluate text with Azure Cognitive Language Services - Learn
-  description: Learn how to use Cognitive Language Services to analyze text, determine intent, detect adult themes, and process natural language input - Learn
+  title: Evaluate text with Azure Cognitive Language Services
+  description: Learn how to use Cognitive Language Services to analyze text, determine intent, detect adult themes, and process natural language input
   brand: azure
   ms.date: 02/25/2019
   author: gerryaobrien

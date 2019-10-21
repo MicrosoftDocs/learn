@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.what-is-azure-batch
+metadata:
+  title: What is Azure Batch?
+  description: What is Azure Batch?
+  ms.date: 04/30/2019
+  author: nickwalkmsft
+  ms.author: nickwalker
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: What is Azure Batch?
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-what-is-azure-batch.md)]

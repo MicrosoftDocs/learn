@@ -3,7 +3,7 @@ uid: learn.instrument-web-app-code-with-application-insights.3-exercise-install-
 title: Exercise - Install the Application Insights SDK
 metadata:
   title: Exercise - Install the Application Insights SDK
-  description: In this unit, you will add the Application Insights SDK to a web app.
+  description: In this unit, you'll add the Application Insights SDK to a web app.
   ms.date: 02/27/2019
   author: nickwalkmsft
   ms.author: nickwalk

@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure.stage-deploy-app-service-deployment-slots
+metadata:
+  title: Stage a web app deployment for testing and rollback by using App Service deployment slots
+  description: Use deployment slots to streamline deployment and roll back a web app in Azure App Service.
+  ms.date: 03/27/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Stage a web app deployment for testing and rollback by using App Service deployment slots
+summary: Use deployment slots to streamline deployment and roll back a web app in Azure App Service.
+abstract: | 
+  In this module, you will:
+  - Create a deployment slot as a staging environment in App Service.
+  - Deploy a new version of a web app to a slot by using git.
+  - Configure which app settings are swapped and which aren't swapped when you deploy a slot.
+  - Swap slots to deploy a web app or roll back a deployment.
+prerequisites: |
+  - Basic experience deploying apps to App Service
+iconUrl: /learn/achievements/stage-deploy-app-service-deployment-slots.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- dotnet
+- aspnet-core
+- dotnet-core
+units:
+- learn.azure.stage-deploy-app-service-deployment-slots.1-introduction
+- learn.azure.stage-deploy-app-service-deployment-slots.2-create-deployment-slots
+- learn.azure.stage-deploy-app-service-deployment-slots.3-exercise-create-deployment-slots
+- learn.azure.stage-deploy-app-service-deployment-slots.4-deploy-a-web-app-by-swapping-deployment-slots
+- learn.azure.stage-deploy-app-service-deployment-slots.5-exercise-deploy-a-web-app-by-using-deployment-slots
+- learn.azure.stage-deploy-app-service-deployment-slots.6-summary
+badge:
+  uid: learn.stage-deploy-app-service-deployment-slots.badge

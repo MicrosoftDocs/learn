@@ -1,30 +1,29 @@
 ### YamlMime:Module
 uid: learn.deep-learning-in-azure-databricks
 metadata:
-  title: Deep learning in Azure Databricks - Learn
-  description: Investigate techniques for developing machine learning models based on neural nets.
+  title: Deep learning with Azure Databricks
+  description: Investigate techniques for developing machine-learning models based on neural networks.
   ms.date: 02/20/2019
-  author: barlanmsft
-  ms.author: barlan
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: barlan
-title: Deep learning in Azure Databricks
-summary: In this module, you will investigate techniques for developing machine learning models based on neural nets. The main purpose of this module is to build some intuition and understanding for what deep learning is all about.
-cardDescription: Investigate techniques for developing machine learning models based on neural nets.
+title: Deep learning with Azure Databricks
+summary: In this module, you'll investigate techniques for developing machine-learning models based on neural networks. The main purpose of this module is to build your understanding of deep learning.
+cardDescription: Investigate techniques for developing machine-learning models based on neural networks.
 abstract: | 
-  In this module, you will:
-  - Identify how neural networks work and use cases for deep learning algorithms.
-  - Train and evaluate a simple classifier built using Tensorflow. 
-  - Create an image classifier using deep learning. 
+  In this module, you'll:
+  - Identify how neural networks work and learn about use cases for deep-learning algorithms.
+  - Train and evaluate a classifier built with TensorFlow. 
+  - Create an image classifier by using deep learning. 
 prerequisites:  | 
-  [!include[](../../includes/azure-subscription-prerequisite.md)]
+  [!include[](../../includes/azure-databricks-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/deep-learning-in-azure-databricks.svg
 levels:
   - intermediate
 roles:
   - developer
-  - solution-architect
+  - data-scientist
 products:
 - azure
 - azure-databricks

@@ -1,12 +1,10 @@
-At this point, the app is working to get the user's location and is ready to be sent to an Azure function. In this unit, you build the Azure function.
-
-[!include[](../../../includes/azure-lab-environment-not-available.md)]
+At this point, the app is working to get the user's location and is ready to be sent to the Azure Functions. In this unit, you build your own Azure Functions.
 
 ## Create an Azure Functions project
 
-1. Add a new project to the `ImHere` solution by right-clicking on the solution and selecting *Add->New Project...*.
+1. Right-click on the `ImHere` solution and select *Add > New Project...*.
 
-1. From the tree on the left-hand side, select *Visual C#->Cloud*, and then select *Azure Functions* from the panel in the center.
+1. From the tree on the left-hand side, select *Visual C# > Cloud*, and then select *Azure Functions* from the panel in the center.
 
 1. Name the project "ImHere.Functions", and then click **OK**.
 
@@ -18,7 +16,7 @@ At this point, the app is working to get the user's location and is ready to be 
 
 1. In the **New Project** configuration dialog, ensure the Functions version is set to *Azure Functions v2 (.NET Standard)* (**NOT** _v1 (.NET Framework)_). Select *Http Trigger*, leave the storage account set to *Storage Emulator*, and set the access rights to *Anonymous*. Then click **OK**.
 
-    ![The Azure Function project configuration dialog](../media/5-configure-trigger.png)
+    ![The Azure Functions project configuration dialog](../media/5-configure-trigger.png)
 
     The new project will be created and have a default function called `Function1`.
 
@@ -51,11 +49,11 @@ The Azure Functions project is created with a single HTTP trigger function calle
 
 ## Create a class to share data between the mobile app and function
 
-When data is sent to the Azure function, it will be sent as JSON. The mobile app will serialize data into JSON and the function will deserialize from JSON. To keep this data consistent between the mobile app and the function, create a new project that contains a class to hold the location and phone number data. This project will then be referenced by the app and function.
+When data is sent to the Azure Functions, it will be sent as JSON. The mobile app will serialize data into JSON and the function will deserialize from JSON. To keep this data consistent between the mobile app and the function, create a new project that contains a class to hold the location and phone number data. This project will then be referenced by the app and function.
 
-1. Create a new project under the `ImHere` solution by right-clicking on the solution and selecting *Add->New Project...*.
+1. Create a new project under the `ImHere` solution by right-clicking on the solution and selecting *Add > New Project...*.
 
-1. From the tree on the left-hand side, select *Visual C#->.NET Standard*, and then select *Class Library (.NET Standard)* from the panel in the center.
+1. From the tree on the left-hand side, select *Visual C# > .NET Standard*, and then select *Class Library (.NET Standard)* from the panel in the center.
 
 1. Name the project "ImHere.Data", and then click **OK**.
 
@@ -63,7 +61,9 @@ When data is sent to the Azure function, it will be sent as JSON. The mobile app
 
 1. Delete the auto-generated "Class1.cs" file.
 
-1. Create a new class in the `ImHere.Data` project called `PostData` by right-clicking on the project and then selecting *Add->Class...*. Name the new class "PostData" and click **OK**. Mark this new class as `public`.
+1. Right-click on the `ImHere.Data` project and select *Add > Class...* to create a new class.
+
+1. Name the new class "PostData" and click **OK**. Mark this new class as `public`.
 
 1. Add `double` properties for the latitude and longitude, as well as a `string[]` property for the phone numbers to send to.
 
@@ -76,13 +76,13 @@ When data is sent to the Azure function, it will be sent as JSON. The mobile app
     }
     ```
 
-1. Add a reference to this project to both the `ImHere.Functions` and `ImHere` projects by right-clicking on the project and then selecting *Add->Reference...*. Select *Projects* from the tree on the left-hand side, and then check the box next to *ImHere.Data*.
+1. Add a reference to this project in both the `ImHere.Functions` and `ImHere` projects by right-clicking on the project and then selecting *Add->Reference...*. Select *Projects* from the tree on the left-hand side, and then check the box next to *ImHere.Data*.
 
     ![Configuring project references](../media/5-configure-project-references.png)
 
 ## Read the data sent to the function
 
-In the Azure function, the `req` parameter contains the HTTP request that was made and the data inside this request will be a JSON serialized `PostData` object.
+In the Azure Functions, the `req` parameter contains the HTTP request that was made and the data inside this request will be a JSON serialized `PostData` object.
 
 1. Open the `SendLocation` class in the `ImHere.Functions` project.
 
@@ -113,23 +113,39 @@ In the Azure function, the `req` parameter contains the HTTP request that was ma
 
 The complete function is shown below.
 
-```cs
-[FunctionName("SendLocation")]
-public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous,
-                                                                "get", "post",
-                                                         Route = null)]HttpRequest req,
-                                                    ILogger log)
-{
-    log.LogInformation("C# HTTP trigger function processed a request.");
-    string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
-    PostData data = JsonConvert.DeserializeObject<PostData>(requestBody);
-    string url = $"https://www.google.com/maps/search/?api=1&query={data.Latitude},{data.Longitude}";
-    log.LogInformation($"URL created - {url}");
-    return new OkResult();
-}
-```
+  ```cs 
 
-## Run the Azure function locally
+    using System.IO;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.Azure.WebJobs;
+    using Microsoft.Azure.WebJobs.Extensions.Http;
+    using Microsoft.AspNetCore.Http;
+    using ImHere.Data;
+    using System.Threading.Tasks;
+    using Microsoft.Extensions.Logging;
+    using Newtonsoft.Json;
+
+    namespace ImHere.Functions
+    {
+        public static class SendLocation
+        {
+            [FunctionName("SendLocation")]
+            public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post",
+                                                             Route = null)]HttpRequest req, ILogger log)
+            {
+                log.LogInformation("C# HTTP trigger function processed a request.");
+                string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+                PostData data = JsonConvert.DeserializeObject<PostData>(requestBody);
+                string url = $"https://www.google.com/maps/search/?api=1&query={data.Latitude},{data.Longitude}";
+                log.LogInformation($"URL created - {url}");
+                return new OkResult();
+            }
+        }
+    }
+
+ ```
+
+## Run the Azure Functions locally
 
 Functions can be run locally using a local storage account and local Azure Functions runtime. This local runtime allows you to test out your function before deploying it to Azure.
 
@@ -137,7 +153,7 @@ Functions can be run locally using a local storage account and local Azure Funct
 
 1. From the *Debug* menu, select *Start Without Debugging*. The local Azure Functions runtime will launch inside a console window and start your function, listening on an available port on `localhost`. If you see a dialog asking for firewall access, allow access to private networks (the default option).
 
-    ![The Azure function running locally](../media/5-function-running-locally.png)
+    ![The Azure Functions running locally](../media/5-function-running-locally.png)
 
 1. Take a note of the port that the function is listening on. You'll need this in the next unit to test out the mobile app. In the image above, the function is listening on port **7071**.
 
@@ -149,4 +165,4 @@ Functions can be run locally using a local storage account and local Azure Funct
 
 ## Summary
 
-In this unit, you learned how to create an Azure Functions project in Visual Studio, added a shared project with a data object to be shared between the mobile app and the function, and learned how to create a basic implementation of the function to deserialize the data passed in. You also learned how to run an Azure function locally. In the next unit, you'll call the Azure function from the mobile app.
+In this unit, you learned how to create an Azure Functions project in Visual Studio, added a shared project with a data object to be shared between the mobile app and the function, and learned how to create a basic implementation of the function to deserialize the data passed in. You also learned how to run the Azure Functions locally. In the next unit, you'll call the Azure Functions from the mobile app.

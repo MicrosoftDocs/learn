@@ -5,27 +5,11 @@ metadata:
   title: Choose a message-based delivery with queues
   description: Choose a message-based delivery with queues
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: andrewjbyrne
+  ms.author: anbyrne
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/3-choose-azure-storage-queues.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-
-  - content: "Suppose you are building an application to automate student record keeping functions at a university. One of the business rules you need to implement is the following: when a student completes a course, the grade must be added to their transcript, their financial aid eligibility must be reviewed, and the student must be notified. All three should happen immediately. Which Azure service would be a good choice to store the messages in this system?"
-    choices:
-    - content: "Azure Queue Storage"
-      isCorrect: false
-      explanation: "Azure Queue Storage does not support multiple subscribers."
-    - content: "Azure Service Bus Queues"
-      isCorrect: false
-      explanation: "Azure Service Bus Queues do not support multiple subscribers."
-    - content: "Azure Service Bus Topics"
-      isCorrect: true
-      explanation: "The requirement to support multiple subscribers makes Azure Service Bus Topics the best choice for this system."

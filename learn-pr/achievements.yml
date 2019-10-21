@@ -10,13 +10,13 @@ achievements:
   title: Make your virtual machines highly available
   summary: Make your virtual machines highly available
   iconUrl: /learn/achievements/make-your-virtual-machines-highly-available.svg
-- uid: learn.intro-to-containers.badge
-  type: badge
-  title: Introduction to Containers badge
-  summary: Badge for the 'Introduction to Containers' module.
-  iconUrl: /learn/achievements/intro-to-containers.svg
 - uid: learn.scale-and-size-virtual-machines.badge
   type: badge
   title: Scale and size Virtual Machines in Azure
   summary: Scale and size Virtual Machines in Azure
   iconUrl: /learn/achievements/scale-and-size-virtual-machines.svg
+- uid: learn.authenticate-browser-based-apps-with-azure-app-services.badge
+  type: badge
+  title: Authenticate browser-based apps with Azure App Services
+  summary: Authenticate browser-based apps with Azure App Services
+  iconUrl: /learn/achievements/authenticate-browser-based-apps-with-azure-app-services.svg

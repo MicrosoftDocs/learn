@@ -1,14 +1,13 @@
 ### YamlMime:Module
 uid: learn.provision-azure-sql-db
 metadata:
-  title: Provision an Azure SQL database to store application data - Learn
+  title: Provision an Azure SQL database to store application data
   description: Use the Azure Portal and Cloud Shell to provision, connect, and manage Azure SQL databases.
   ms.date: 09/24/2018
-  author: adrianstevens
-  ms.author: adsteven
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  #ms.learn-contact: adsteven
+  ms.prod: learning-azure  
 title: Provision an Azure SQL database to store application data
 summary: Use the Azure Portal and Cloud Shell to provision, connect, and manage Azure SQL databases.
 abstract: |
@@ -30,7 +29,6 @@ products:
 - azure-sql-database
 - azure-cloud-shell
 units:
-#TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
 - learn.provision-azure-sql-db.1-introduction
 - learn.provision-azure-sql-db.2-plan-your-database
 - learn.provision-azure-sql-db.3-create-your-database

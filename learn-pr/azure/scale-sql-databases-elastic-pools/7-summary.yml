@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-scale-azure-sql-databases-elastic-pools.summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 5/03/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Summary
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-summary.md)]

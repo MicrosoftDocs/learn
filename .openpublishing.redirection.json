@@ -1,235 +1,344 @@
 {
   "redirections": [
     {
-        "source_path": "learn-pr/paths/index.md",
-        "redirect_url": "/learn/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/paths/index.md",
+      "redirect_url": "/learn/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/modules/index.md",
-        "redirect_url": "/learn/browse/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/modules/index.md",
+      "redirect_url": "/learn/browse/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/intro-to-csharp/index.md",
-        "redirect_url": "https://docs.microsoft.com/dotnet/csharp/quick-starts/",
-        "redirect_document_id": true
+      "source_path": "learn-pr/intro-to-csharp/index.md",
+      "redirect_url": "https://docs.microsoft.com/dotnet/csharp/quick-starts/",
+      "redirect_document_id": true
     },
     {
-        "source_path": "learn-pr/azure-cli-2-0/index.md",
-        "redirect_url": "https://docs.microsoft.com/cli/azure/get-started-with-azure-cli",
-        "redirect_document_id": true
+      "source_path": "learn-pr/azure-cli-2-0/index.md",
+      "redirect_url": "https://docs.microsoft.com/cli/azure/get-started-with-azure-cli",
+      "redirect_document_id": true
     },
     {
-        "source_path": "learn-pr/build-serverless-app/index.md",
-        "redirect_url": "https://docs.microsoft.com/azure/functions/tutorial-static-website-serverless-api-with-database",
-        "redirect_document_id": true
+      "source_path": "learn-pr/build-serverless-app/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/functions/tutorial-static-website-serverless-api-with-database",
+      "redirect_document_id": true
     },
     {
-        "source_path": "learn-pr/deploy-apps-to-azure/index.md",
-        "redirect_url": "https://docs.microsoft.com/azure/app-service/",
-        "redirect_document_id": true
+      "source_path": "learn-pr/deploy-apps-to-azure/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/app-service/",
+      "redirect_document_id": true
     },
     {
-        "source_path": "learn-pr/deploy-custom-vmss-app/index.md",
-        "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-install-apps-cli",
-        "redirect_document_id": false
+      "source_path": "learn-pr/deploy-custom-vmss-app/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-install-apps-cli",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/scale-and-size-virtual-machines/index.md",
-        "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/scale-and-size-virtual-machines/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/scale-and-size-virtual-machines/2-size-and-resize-virtual-machines.md",
-        "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/scale-and-size-virtual-machines/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/scale-and-size-virtual-machines/3-exercise-resize-a-virtual-machine.md",
-        "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/scale-and-size-virtual-machines/2-size-and-resize-virtual-machines.md",
+      "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/scale-and-size-virtual-machines/4-horizontal-scaling-using-scale-sets.md",
-        "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/scale-and-size-virtual-machines/3-exercise-resize-a-virtual-machine.md",
+      "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/scale-and-size-virtual-machines/5-exercise-create-a-scale-set-and-configure-autoscaling.md",
-        "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/scale-and-size-virtual-machines/4-horizontal-scaling-using-scale-sets.md",
+      "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/scale-and-size-virtual-machines/6-knowledge-check.md",
-        "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/scale-and-size-virtual-machines/5-exercise-create-a-scale-set-and-configure-autoscaling.md",
+      "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/scale-and-size-virtual-machines/7-summary.md",
-        "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/scale-and-size-virtual-machines/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/index.md",
-        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/scale-and-size-virtual-machines/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/1-introduction.md",
-        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/2-assess-your-database.md",
-        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/3-exercise-assess-your-database.md",
-        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/2-assess-your-database.md",
+      "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/4-deploy-fixes-and-migrate-the-database.md",
-        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/3-exercise-assess-your-database.md",
+      "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/5-exercise-migrate-the-database.md",
-        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/4-deploy-fixes-and-migrate-the-database.md",
+      "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/6-knowledge-check-deploy-fixes-and-migrate-the-database.md",
-        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/5-exercise-migrate-the-database.md",
+      "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/7-summary.md",
-        "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
-        "redirect_document_id": false
-
+      "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/6-knowledge-check-deploy-fixes-and-migrate-the-database.md",
+      "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/intro-to-containers/index.md",
-        "redirect_url": "https://docs.microsoft.com/azure/containers/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/azure/sql-database/sql-database-cloud-migrate",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/intro-to-containers/1-introduction.md",
-        "redirect_url": "https://docs.microsoft.com/azure/containers/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/intro-to-containers/2-create-a-container.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-containers/2-deploy-docker-image-locally",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/intro-to-containers/2-create-a-container.md",
-        "redirect_url": "https://docs.microsoft.com/azure/containers/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/intro-to-containers/3-basic-operations.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-containers/3-exercise-deploy-docker-image-locally",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/intro-to-containers/3-basic-operations.md",
-        "redirect_url": "https://docs.microsoft.com/azure/containers/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/intro-to-containers/4-container-images.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-containers/4-create-custom-docker-image",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/intro-to-containers/4-container-images.md",
-        "redirect_url": "https://docs.microsoft.com/azure/containers/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/intro-to-containers/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-containers/5-exercise-create-custom-docker-image",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/intro-to-containers/5-knowledge-check.md",
-        "redirect_url": "https://docs.microsoft.com/azure/containers/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/intro-to-containers/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-to-containers/8-summary",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/intro-to-containers/6-summary.md",
-        "redirect_url": "https://docs.microsoft.com/azure/containers/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/index.md",
-        "redirect_url": "https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/1-introduction.md",
-        "redirect_url": "https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/2-preparing-to-use-the-azure-load-balancer.md",
+      "redirect_url": "https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/2-preparing-to-use-the-azure-load-balancer.md",
-        "redirect_url": "https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/3-exercise-create-a-load-balancer.md",
+      "redirect_url": "https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/3-exercise-create-a-load-balancer.md",
-        "redirect_url": "https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/4-exercise-create-vms.md",
+      "redirect_url": "   https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/4-exercise-create-vms.md",
-        "redirect_url": "   https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/5-configure-a-load-balancer-in-azure.md",
+      "redirect_url": "   https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/5-configure-a-load-balancer-in-azure.md",
-        "redirect_url": "   https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/6-exercise-configure-a-load-balancer-in-azure.md",
+      "redirect_url": "https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/6-exercise-configure-a-load-balancer-in-azure.md",
-        "redirect_url": "https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/make-your-virtual-machines-highly-available/7-summary.md",
-        "redirect_url": "https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/create-neural-network-with-dsvm/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/create-neural-network-with-dsvm/index.md",
-        "redirect_url": "https://docs.microsoft.com/azure/virtual-machines/windows/tutorial-availability-sets",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/create-neural-network-with-dsvm/0-overview.md",
+      "redirect_url": "https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/linux-dsvm-walkthrough",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/create-neural-network-with-dsvm/0-overview.md",
-        "redirect_url": "https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/linux-dsvm-walkthrough",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/create-neural-network-with-dsvm/1-create-dsvm.md",
+      "redirect_url": "https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/linux-dsvm-walkthrough",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/create-neural-network-with-dsvm/1-create-dsvm.md",
-        "redirect_url": "https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/linux-dsvm-walkthrough",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/create-neural-network-with-dsvm/2-connect-to-dsvm.md",
+      "redirect_url": "https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/linux-dsvm-walkthrough",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/create-neural-network-with-dsvm/2-connect-to-dsvm.md",
-        "redirect_url": "https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/linux-dsvm-walkthrough",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/create-neural-network-with-dsvm/3-train-tensorflow-model.md",
+      "redirect_url": "https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/linux-dsvm-walkthrough",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/create-neural-network-with-dsvm/3-train-tensorflow-model.md",
-        "redirect_url": "https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/linux-dsvm-walkthrough",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/create-neural-network-with-dsvm/4-create-client-app.md",
+      "redirect_url": "https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/linux-dsvm-walkthrough",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/create-neural-network-with-dsvm/4-create-client-app.md",
-        "redirect_url": "https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/linux-dsvm-walkthrough",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/create-neural-network-with-dsvm/5-delete-env-summary.md",
+      "redirect_url": "https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/linux-dsvm-walkthrough",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/create-neural-network-with-dsvm/5-delete-env-summary.md",
-        "redirect_url": "https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/linux-dsvm-walkthrough",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/create-neural-network-with-dsvm/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/linux-dsvm-walkthrough",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/create-neural-network-with-dsvm/6-knowledge-check.md",
-        "redirect_url": "https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/linux-dsvm-walkthrough",
-        "redirect_document_id": false
+      "source_path": "learn-pr/azure/tour-azure-services-and-features/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/tour-azure-portal/",
+      "redirect_document_id": false
     },
     {
-        "source_path": "learn-pr/azure/tour-azure-services-and-features/index.md",
-        "redirect_url": "https://docs.microsoft.com/learn/modules/tour-azure-portal/",
-        "redirect_document_id": false
+      "source_path": "learn-pr/databricks/understand-the-sql-dw-connector-with-azure-databricks/3-create-user-assing-user-class.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/understand-the-sql-dw-connector-with-azure-databricks/3-create-user-assign-resource-class",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/paths/modern-data-warehouse/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/data-engineering-with-databricks/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/2-set-up-visual-studio-code.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/prepare-your-dev-environment-for-azure-development/2-set-up-dev-environment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/3-exercise-set-up-visual-studio-code.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/prepare-your-dev-environment-for-azure-development/3-exercise-set-up-dev-environment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/4-set-up-visual-studio.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/prepare-your-dev-environment-for-azure-development/2-set-up-dev-environment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/5-exercise-set-up-visual-studio.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/prepare-your-dev-environment-for-azure-development/3-exercise-set-up-dev-environment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/6-set-up-eclipse-ide-for-java-developers.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/prepare-your-dev-environment-for-azure-development/2-set-up-dev-environment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/7-exercise-set-up-eclipse.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/prepare-your-dev-environment-for-azure-development/3-exercise-set-up-dev-environment",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/prepare-your-dev-environment-for-azure-development/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/prepare-your-dev-environment-for-azure-development/4-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/create-windows-virtual-machine-in-azure/7-exercise-manage-vm.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-windows-virtual-machine-in-azure/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/welcome-to-azure/4-create-a-vm.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/welcome-to-azure/4-exercise-create-website",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/welcome-to-azure/5-add-web-server.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/welcome-to-azure/5-exercise-configure-app-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/welcome-to-azure/6-scale-up.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/welcome-to-azure/6-exercise-cloud-shell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-browser-based-apps-with-azure-app-services/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-browser-based-apps-with-azure-app-services/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-browser-based-apps-with-azure-app-services/2-apps-and-authentication.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-browser-based-apps-with-azure-app-services/3-create-web-app.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-browser-based-apps-with-azure-app-services/4-authentication-providers-and-endpoints.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-browser-based-apps-with-azure-app-services/5-enable-app-service-authentication.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-browser-based-apps-with-azure-app-services/6-authentication-tokens.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-browser-based-apps-with-azure-app-services/7-view-authentication-tokens-and-session-cookies.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-browser-based-apps-with-azure-app-services/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/authenticate-browser-based-apps-with-azure-app-services/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn",
+      "redirect_document_id": false
     }
-    ]
+  ]
 }

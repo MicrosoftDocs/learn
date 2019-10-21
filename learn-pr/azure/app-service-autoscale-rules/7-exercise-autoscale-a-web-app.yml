@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.app-service-autoscale-rules.7-exercise-autoscale-a-web-app
+title: Exercise - Autoscale and monitor a web app
+metadata:
+  title: Exercise - Autoscale and monitor a web app
+  description: Configure autoscaling for a web app and monitor the results.
+  ms.date: 04/10/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 20
+content: |
+  [!include[](includes/7-exercise-autoscale-a-web-app.md)]

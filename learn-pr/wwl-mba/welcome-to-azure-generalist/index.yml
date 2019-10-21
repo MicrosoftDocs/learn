@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn-wwl.welcome-to-the-azure-generalist
 metadata:
-  title: Welcome to Microsoft Azure - Learn
+  title: Welcome to Microsoft Azure
   description: The cloud is transforming the way that organizations large and small consume technology and run their businesses. Today’s businesses work smarter by leveraging cloud-enabled technologies to collect and analyze data, using modern business intelligence to make better decisions, and more quickly meet their business objectives. Microsoft Azure can make the power of the cloud a reality for your organization, no matter where you are on your digital transformation journey.
   ms.date: 01/31/2019
   author: Randall-Knapp
@@ -14,10 +14,9 @@ summary: The cloud is transforming the way that organizations large and small co
 abstract: |
   In this module, you will:
   - Learn the importance of Azure.
-  - Identify the key topics outlined in the “Learn the business value of Microsoft Azure” learning path. 
+  - Identify the key topics outlined in the "Learn the business value of Microsoft Azure" learning path. 
 prerequisites: None
 iconUrl: /learn/achievements/welcome-azure-generalist.svg
-ratingEnabled: true
 levels:
 - beginner
 roles:

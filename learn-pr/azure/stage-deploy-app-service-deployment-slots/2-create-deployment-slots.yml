@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.stage-deploy-app-service-deployment-slots.2-create-deployment-slots
+title: Create deployment slots
+metadata:
+  title: Create deployment slots
+  description: Learn what deployment slots are and why they're helpful.
+  ms.date: 03/27/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-create-deployment-slots.md)]
+quiz:
+  title: Create deployment slots
+  questions:
+  - content: "How does Azure App Service ensure that production performance doesn't drop just after a swap?"
+    choices:
+    - content: "App Service warms up the app by sending a request to the root of the site."
+      isCorrect: true
+      explanation: "The warm-up request ensures that all compilation and caching tasks finish before the slots are swapped."
+    - content: "App Service uses the same virtual machines for all of the slots for a web app."
+      isCorrect: false
+      explanation: "All of the slots for a web app do share the same virtual machines. But that sharing doesn't stop a performance drop just after a swap."
+    - content: "App Service uses the same disk quota for all of the slots for a web app."
+      isCorrect: false
+      explanation: "All of the slots for a web app do share the same disk quota. But that sharing doesn't stop a performance drop just after a swap."
+  - content: "Which of the following are NOT shared between all of the deployment slots for a web app?"
+    choices:
+    - content: "Virtual machines"
+      isCorrect: false
+      explanation: "All of the slots for a web app share the same virtual machines. But they have different host names."
+    - content: "Host names"
+      isCorrect: true
+      explanation: "The slots for a web app have different host names. They share the same virtual machines and deployment plans."
+    - content: "Deployment plans"
+      isCorrect: false
+      explanation: "All of the slots for a web app share the same deployment plan. They have different host names."

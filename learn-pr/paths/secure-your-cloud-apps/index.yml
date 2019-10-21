@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.security.secure-your-cloud-apps
+metadata:
+  title: Secure your cloud applications in Azure
+  description: Learn how to secure your Azure apps and associated data with encryption, certificates, and policy.
+  brand: azure
+  ms.date: 10/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Secure your cloud applications in Azure
+summary: Learn how to secure your Azure apps and associated data with encryption, certificates, and policy.
+prerequisites: None
+iconUrl: /learn/achievements/secure-your-cloud-apps.svg
+levels:
+- beginner
+- intermediate
+- advanced
+roles:
+- solution-architect
+- developer
+- security-engineer
+products:
+- azure
+- azure-policy
+- azure-key-vault
+- azure-active-directory
+- azure-api-management
+modules:
+- learn.design-for-security
+- learn.top-5-security-items-to-consider
+- learn.azure-security.create-security-baselines
+- learn.manage-secrets-with-azure-key-vault
+- learn.secure-access-azure-ad-multi-factor-authentication
+- learn.secure-aspnet-core-identity
+- learn.control-authentication-with-apim
+trophy:
+  uid: learn.security.secure-your-cloud-apps.trophy

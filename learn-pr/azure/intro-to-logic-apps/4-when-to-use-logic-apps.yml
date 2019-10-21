@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-intro-to-logic-apps.when-to-use-logic-apps
+title: When to use Logic Apps
+metadata:
+  title: When to use Logic Apps
+  description: When to use Logic Apps
+  ms.date: 4/25/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-when-to-use-logic-apps.md)]

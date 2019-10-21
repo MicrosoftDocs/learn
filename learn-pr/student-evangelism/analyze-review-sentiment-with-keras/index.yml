@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.student-evangelism.analyze-review-sentiment-with-keras
+metadata:
+  title: Analyze the sentiment of reviews with Keras
+  description: Keras is a high-level neural networks API, written in Python, that runs on top of other deep learning tools like TensorFlow. This module uses Keras to build a neural network that scores text, such as user reviews, for sentiment.
+  ms.date: 02/24/2019
+  author: JeffProsise
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Analyze the sentiment of reviews with Keras
+summary: Keras is a high-level neural networks API, written in Python, that runs on top of other deep learning tools such as TensorFlow. This module uses Keras to build a neural network that scores text, such as user reviews for sentiment.
+abstract:  |
+  In this module, you will:
+  - Create a Jupyter notebook in Azure Notebooks
+  - Use Keras to build and train a neural network to perform sentiment analysis
+  - Use the neural network to analyze text for sentiment 
+prerequisites: None
+iconUrl: /learn/achievements/student-evangelism/analyze-review-sentiment-with-keras-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- data-scientist
+products:
+- azure
+units:
+- learn.student-evangelism.analyze-review-sentiment-with-keras.introduction
+- learn.student-evangelism.analyze-review-sentiment-with-keras.create-an-azure-notebook
+- learn.student-evangelism.analyze-review-sentiment-with-keras.build-and-train-a-neural-network
+- learn.student-evangelism.analyze-review-sentiment-with-keras.use-neural-network-to-analyze-text-for-sentiment
+- learn.student-evangelism.analyze-review-sentiment-with-keras.summary
+badge:
+  uid: learn.student-evangelism.analyze-review-sentiment-with-keras.badge

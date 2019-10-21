@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.visualize-output-with-powerbi
+title: Visualize the camera activity with Power BI
+metadata:
+  title: Visualize the camera activity with Power BI
+  description: Visualize the camera activity with Power BI
+  ms.date: 5/1/2019
+  author: ShanaMatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 20
+azureSandbox: true
+interactive: bash
+content: |
+  [!include[](includes/12-visualize-output-with-powerbi.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What does the Slicer control in Power BI do?"
+    choices:
+    - content: "Provides a way to delete data used within a Power BI report"
+      isCorrect: false
+      explanation: "The slicer doesn't destroy any of the data."
+    - content: "Provides a way to add data used within a Power BI report"
+      isCorrect: false
+      explanation: "The slicer doesn't add to any of the data."
+    - content: "Provides a way to filter data within a Power BI report"
+      isCorrect: true
+      explanation: "Correct. It filters out all of the other visualizations based off the input in the slicer."

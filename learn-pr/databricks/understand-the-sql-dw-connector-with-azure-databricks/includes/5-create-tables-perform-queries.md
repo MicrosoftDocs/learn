@@ -1,28 +1,28 @@
-In this unit, you'll learn how to create distributed tables in SQL Data Warehouse. After the tables are created, you'll perform several queries against them, using Azure Data Studio.
+In this unit, you'll learn how to create distributed tables in SQL Data Warehouse. After you create the tables, you'll use Azure Data Studio to run some queries against them.
 
-## Create Distributed tables
+## Create distributed tables
 
-SQL Data Warehouse divides your data into 60 databases. Each individual database is referred to as a **distribution**. When data is loaded into each table, SQL Data Warehouse has to know how to divide your data across these 60 distributions.
+SQL Data Warehouse divides your data into 60 databases. Each individual database is called a *distribution*. After you've loaded data into each table, SQL Data Warehouse has to know how to divide the data across these 60 distributions.
 
-The distribution method is defined at the table level and there are three choices:
+The distribution method is defined at the table level. There are three choices:
 
-- **Replicated** The replicated table is fully copied to a distribution database on each Compute node. Replicating a table removes the need to transfer data among Compute nodes before a join or aggregation. Replicated tables are only feasible with small tables because of the extra storage required to store the full table on each compute node.
+- **Replicated**. The replicated table is fully copied to a distribution database on each Compute node. Replicating a table removes the need to transfer data among Compute nodes before a join or aggregation. Replicated tables are feasible only with small tables because of the extra storage required to store the full table on each Compute node.
 
-- **Round robin**, which distributes data evenly but randomly.
+- **Round robin**. Data is distributed evenly but randomly.
 
-- **Hash Distributed**, which distributes data based on hashing values from a single column
+- **Hash distributed**. Data is distributed based on hashing values from a single column.
 
-By default, when you do not define a data distribution method, your table will be distributed using the round robin distribution method. However, as you become more sophisticated in your implementation, you'll want to consider using hash distributed tables to minimize data movement, which will in turn optimize query performance.
+By default, when you don't define a data distribution method, your table will use the round robin distribution method. As you become more sophisticated in your implementation, you'll want to consider using hash distributed tables to minimize data movement, which will in turn optimize query performance.
 
-### Create Distributed tables using the Hash Distribution method
+### Create distributed tables that use the hash distributed method
 
 1. Open Azure Data Studio.
 
-1. Navigate to the Servers list on the left-hand menu in Azure Data Studio. Right-click on the SQL Data Warehouse connection you made to the SQL Data Warehouse database, then select **New Query** from the context menu.
+1. Go to the **Servers** list in the menu on the left side of Azure Data Studio. Right-click the connection you made to the SQL Data Warehouse database and select **New Query**.
 
-    ![Right-click on the SQL Data Warehouse connection then click New Query.](../media/azure-data-studio-new-query-dw.png)
+    ![Right-click the SQL Data Warehouse connection and select New Query](../media/azure-data-studio-new-query-dw.png)
 
-1. Execute following statements in new query window to create **HASH** distributed table:
+1. Run these statements in the new query window to create a hash distributed table:
 
     ```sql
     CREATE TABLE [dbo].[EmployeeBasic]
@@ -40,20 +40,20 @@ By default, when you do not define a data distribution method, your table will b
     );
     ```
 
-    In the above CREATE TABLE statement
+    In this `CREATE TABLE` statement:
 
-    - `[dbo]` is the schema name
-    - `[EmployeeBasic]` is the table name
-    - `[EmployeeID], [EmployeeName],....,[BloodGroup]` are column definitions
-    - **WITH** clause defines one to many table options
-    - **CLUSTERED COLUMNSTORE INDEX** is a table structure option, stores the table as a clustered columnstore index in which all of the data is compressed and stored by column. The clustered columnstore index is the default for SQL Data Warehouse and applies to all of the table data.
-    - **DISTRIBUTION** = **HASH** ( `distribution_column_name` ) assigns each row to one distribution by hashing the value stored in distribution_column_name. The algorithm is deterministic, which means it always hashes the same value to the same distribution. The  distribution column should be defined as NOT NULL since all rows that have NULL will be assigned to the same distribution.
+    - `[dbo]` is the schema name.
+    - `[EmployeeBasic]` is the table name.
+    - `[EmployeeID], [EmployeeName] ... [BloodGroup]` are column definitions.
+    - The `WITH` clause defines one-to-many table options.
+    - `CLUSTERED COLUMNSTORE INDEX` is a table structure option. It stores the table as a clustered columnstore index in which all data is compressed and stored by column. Clustered columnstore index is the default structure for SQL Data Warehouse and applies to all table data.
+    - `DISTRIBUTION = HASH` ( *`distribution_column_name`* ) assigns each row to one distribution by hashing the value stored in `distribution_column_name`. The algorithm is deterministic, which means it always hashes the same value to the same distribution. The  distribution column should be defined as `NOT NULL` because all rows with `NULL` will be assigned to the same distribution.
 
-### Create Distributed tables using the Round Robin Distribution method
+### Create distributed tables that use the round robin method
 
-Execute the following statement in a new query window to create a **Round Robin** distributed table:
+Run this statement in a new query window to create a round robin distributed table:
 
-    ```sql
+   ```sql
     CREATE TABLE [dbo].[Sales]
     (
       [ProductKey] int NOT NULL,
@@ -70,17 +70,15 @@ Execute the following statement in a new query window to create a **Round Robin*
       CLUSTERED COLUMNSTORE INDEX,
       DISTRIBUTION = ROUND_ROBIN
     );
-    ```
+   ```
 
-    - **DISTRIBUTION = ROUND_ROBIN**
+`DISTRIBUTION = ROUND_ROBIN` distributes the rows evenly across all distributions in a round robin fashion. That is, there's no sorting done during the round robin process, which places your data. This is the default distribution for SQL Data Warehouse.
 
-  Distributes the rows evenly across all the distributions in a round-robin fashion. That is, there's no sorting done during the round robin process, which places your data. This is the default for SQL Data Warehouse.
+### Create a replicated table
 
-### Create Replicated Table
+Run this statement in a new query window to create a replicated table. Make sure SQL Data Warehouse is selected as target database in the query window.
 
-Execute the following statement in a new query window to create a **REPLICATE** table. Ensure SQL Data Warehouse is selected as target database in the query window:
-
-    ```sql
+  ```sql
     CREATE TABLE [dbo].[States]
     (
       [StateKey] int NOT NULL,
@@ -91,17 +89,17 @@ Execute the following statement in a new query window to create a **REPLICATE** 
       CLUSTERED COLUMNSTORE INDEX,
       DISTRIBUTION = REPLICATE
     );
-    ```
+  ```
 
 ## Query SQL Data Warehouse
 
-Continue using Azure Data Studio to perform the following queries against your data warehouse.
+Now we'll use Azure Data Studio to perform some queries against your data warehouse.
 
-### Create a Table using the Hash Distribution method
+### Create a table that uses the hash distribution method
 
-1. Create a table named **EmployeeBasic** using the **Hash Distribution** method, if it hasn't been created in the previous section.
+1. Create a table named **EmployeeBasic** that uses the hash distribution method, if you haven't created it in the previous section.
 
-1.  Create another table named **EmployeeRemuneration** using the **Hash Distribution** method:
+1.  Create another table named **EmployeeRemuneration** that uses the hash distribution method:
 
     ```sql
     CREATE TABLE [dbo].[EmployeeRemuneration]
@@ -118,11 +116,11 @@ Continue using Azure Data Studio to perform the following queries against your d
     );
     ```
 
-    ![Create EmployeeRemuneration table.](../media/azure-data-studio-create-table.png)
+    ![Create EmployeeRemuneration table](../media/azure-data-studio-create-table.png)
 
-### Insert rows in both of the tables
+### Insert rows in both tables
 
-1. Clear the query window and execute following `INSERT` statements to insert records in EmployeeBasic table:
+1. Clear the query window and run these INSERT statements to insert records in the **EmployeeBasic** table:
 
     ```sql
     INSERT INTO [dbo].[EmployeeBasic] VALUES
@@ -134,11 +132,11 @@ Continue using Azure Data Studio to perform the following queries against your d
     INSERT INTO [dbo].[EmployeeBasic] VALUES (6,'Ben','03-07-1998','840 S. Windfall Rd. Elmont, NY 11003','O+');
      ```
 
-You should see 6 messages stating `(1 row affected)`.
+   You should see six messages that state `(1 row affected)`.
 
-    ![Insert rows into the EmployeeBasic table.](../media/azure-data-studio-insert-rows.png)
+   ![Insert rows into the EmployeeBasic table](../media/azure-data-studio-insert-rows.png)
 
-1. Insert a few rows into the **EmployeeRemuneration** table. Execute the following `INSERT` statements:
+1. Insert a few rows into the EmployeeRemuneration table. Run these INSERT statements:
 
     ```sql
     INSERT INTO [dbo].[EmployeeRemuneration] VALUES (1,'Software Developer',4000,1);
@@ -149,29 +147,29 @@ You should see 6 messages stating `(1 row affected)`.
     INSERT INTO [dbo].[EmployeeRemuneration] VALUES (6,'Sr.Software Developer',6000,1);
     ```
 
-### Perform some basic queries
+### Run some basic queries
 
-1. Select all the rows with all details of the **EmployeeBasic** table.
+1. Select all the rows of the **EmployeeBasic** table with all details:
 
     ```sql
     SELECT * FROM [dbo].[EmployeeBasic];
     ```
 
-1. Select all the details of the employees who were born in the year 1996.
+1. Select all the details of employees who were born in the year 1996:
 
     ```sql
     SELECT * FROM [dbo].[EmployeeBasic]
     WHERE YEAR(dob) = 1996;
     ```
 
-1. Select all the rows with all details of **EmployeeRemuneration**
-    table.
+1. Select all the rows of the **EmployeeRemuneration**
+    table with all details:
 
     ```sql
     SELECT * FROM [dbo].[EmployeeRemuneration];
     ```
 
-1. Sort all the employees by their names.
+1. Sort all employees by name:
 
     ```sql
     SELECT EmployeeID, EmployeeName
@@ -179,8 +177,7 @@ You should see 6 messages stating `(1 row affected)`.
     ORDER BY (EmployeeName);
     ```
 
-1. Sort all the employees from [dbo].[EmployeeRemuneration] with
-    respect to their salary.
+1. Sort all employees in `[dbo].[EmployeeRemuneration]` by salary:
 
     ```sql
     SELECT EmployeeID, EmployeeDesignation, Salary, DepartmentID
@@ -188,47 +185,47 @@ You should see 6 messages stating `(1 row affected)`.
     ORDER BY (Salary) DESC;
     ```
 
-### Perform some queries using aggregation
+### Run some queries that use aggregation
 
-1. Select the sum of all the salaries in each department.
+1. Select the sum of all the salaries in each department:
 
     ```sql
     SELECT SUM(Salary) AS TOTALSUM, DepartmentID
     FROM [dbo].[EmployeeRemuneration] GROUP BY(DepartmentID);
     ```
 
-1. Select the average of all the salaries in each department.
+1. Select the average of all the salaries in each department:
 
     ```sql
     SELECT AVG(Salary) AS AverageSalary, DepartmentID
     FROM [dbo].[EmployeeRemuneration] GROUP BY(DepartmentID);
     ```
 
-1. Select the maximum of all the salaries in each department.
+1. Select the maximum of all the salaries in each department:
 
     ```sql
     SELECT MAX(Salary) AS MaximumSalary, DepartmentID
     FROM [dbo].[EmployeeRemuneration] GROUP BY(DepartmentID);
     ```
 
-1. Select the minimum of all the salaries in each department.
+1. Select the minimum of all the salaries in each department:
 
     ```sql
     SELECT MIN(Salary) AS MinimumSalary, DepartmentID
     FROM [dbo].[EmployeeRemuneration] GROUP BY(DepartmentID);
     ```
 
-1. Select the number of employees in each department.
+1. Select the number of employees in each department:
 
     ```sql
     SELECT COUNT(EmployeeID) AS NumberOfEmployees, DepartmentID
     FROM [dbo].[EmployeeRemuneration] GROUP BY(DepartmentID);
     ```
 
-### Perform Join queries
+### Run join queries
 
 1. Join the tables **EmployeeBasic** and **EmployeeRemuneration** using the key **EmployeeID**, and select **EmployeeID**,
-    **EmployeeName**, **EmployeeDesignation**, and **Salary.**
+    **EmployeeName**, **EmployeeDesignation**, and **Salary**.
 
     ```sql
     SELECT
@@ -240,9 +237,9 @@ You should see 6 messages stating `(1 row affected)`.
     JOIN [dbo].[EmployeeBasic] EB ON ER.EmployeeID = EB.EmployeeID;
     ```
 
-### Use of aggregations with Join operations
+### Use aggregations with join operations
 
-1. Find the details of all employees who receive the maximum salary in their department.
+1. Get details about all employees who receive the maximum salary in their department:
 
     ```sql
     SELECT
@@ -256,7 +253,7 @@ You should see 6 messages stating `(1 row affected)`.
         WHERE ER2.DepartmentID = ER1.DepartmentID );
     ```
 
-1. Select the second maximum salary from each department, if there's only one employee in any department then it will display their salary.
+1. Select the second highest salary in each department. If there's only one employee in any department, return that employee's salary.
 
     ```sql
     SELECT

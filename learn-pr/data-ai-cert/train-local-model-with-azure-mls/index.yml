@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.data-ai.train-local-model-with-azure-mls
+metadata:
+  title: Train a local ML model with Azure Machine Learning service
+  description: Train a local ML model with Azure Machine Learning service
+  ms.date: 03/18/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  #ms.learn-contact: smmark
+title: Train a local ML model with Azure Machine Learning service
+summary: Train a local ML model with Azure Machine Learning service
+abstract: | 
+  In this module, you will:
+  - Create a simple logistic model to recognize numbers contained in images from the MNIST dataset
+  - Create an Azure Machine Learning experiment
+  - Train a model using the Azure Machine Learning service
+  - Learn about hyperparameters and what they are used for
+  - Learn where you can get more resources on using HyperDrive
+  - Submit the model, monitor the run, and retrieve the results
+prerequisites: None
+iconUrl: /learn/achievements/data-ai/train-local-model-with-azure-mls-badge.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure
+- azure-machine-learning-service
+units:
+- learn.data-ai.train-local-model-with-azure-mls.introduction
+- learn.data-ai.train-local-model-with-azure-mls.simple-log-regression-model
+- learn.data-ai.train-local-model-with-azure-mls.run-log-reg-model-sklearn
+- learn.data-ai.train-local-model-with-azure-mls.create-ml-experiment
+- learn.data-ai.train-local-model-with-azure-mls.what-are-hyperparameters
+- learn.data-ai.train-local-model-with-azure-mls.train-model-using-experiment-service
+- learn.data-ai.train-local-model-with-azure-mls.summary
+badge:
+  uid: learn.data-ai.train-local-model-with-azure-mls.badge

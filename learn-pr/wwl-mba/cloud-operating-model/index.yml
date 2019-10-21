@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn-wwl.cloud-operating-model
 metadata:
-  title: Overview of the Microsoft Cloud Operating Model - Learn
+  title: Overview of the Microsoft Cloud Operating Model
   description: This module covers the basics of how to use the Cloud Operating Model, a tool that helps you recognize where your organization is in its cloud adoption journey and identify next steps. It also provides tools to support you in the adoption of cloud computing. We’ll describe how to identify opportunities and develop strategies based on real-world examples of cloud adoption. 
   ms.date: 1/31/2018
   author: alinamacelaru
@@ -18,7 +18,6 @@ abstract: |
   - Recognize the components needed to develop a digital transformation strategy around your business, people, and technology.  
 prerequisites: None
 iconUrl: /learn/achievements/cloud-operating-model.svg
-ratingEnabled: true
 levels:
 - beginner
 roles:

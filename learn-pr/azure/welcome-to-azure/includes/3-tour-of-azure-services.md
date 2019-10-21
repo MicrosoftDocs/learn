@@ -10,7 +10,7 @@ Let's take a quick tour of the high-level services Azure offers.
 
 Here's a big-picture view of the available services and features in Azure.
 
-[ ![Diagram showing the big picture view of Azure services](../media/3-azure-services.png) ](#lightbox)
+[ ![Diagram showing the big picture view of Azure services](../media/3-azure-services.png) ](../media/3-azure-services.png#lightbox)
 
 Let's take a closer look at the most commonly-used categories:
 
@@ -140,7 +140,7 @@ There are a number of services that can assist and drive end-to-end solutions fo
 > |--------------|-------------|
 > | IoT Central | Fully-managed global IoT software as a service (SaaS) solution that makes it easy to connect, monitor, and manage your IoT assets at scale |
 > | Azure IoT Hub | Messaging hub that provides secure communications and monitoring between millions of IoT devices |
-> | IoT Edge | Push your data analysis onto your IoT devices instead of in the cloud allowing them to react more quickly to state changes. 
+> | IoT Edge | Push your data analysis models directly onto your IoT devices, allowing them to react quickly to state changes without needing to consult cloud-based AI models.
 
 ### Big Data
 

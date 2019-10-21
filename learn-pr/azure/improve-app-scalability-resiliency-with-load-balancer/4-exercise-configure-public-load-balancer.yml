@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-app-scalability-resiliency-with-load-balancer.4-exercise-configure-public-load-balancer
+metadata:
+  title: Exercise - Configure a public load balancer
+  description: Exercise - Configure a public load balancer
+  ms.date: 08/31/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+  zone_pivot_groups: azure-interface
+title: Exercise - Configure a public load balancer
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/4-exercise-configure-public-load-balancer.md)]

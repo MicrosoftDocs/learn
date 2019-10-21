@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-run-container-app-service.5-exercise-deploy-web-app
+title: Exercise - Create and deploy a web app from a Docker image  
+metadata:
+  title: Exercise - Create and deploy a web app from a Docker image  
+  description: Use Azure App Service to host a web app, and then deploy the web app to Azure Container Registry by using the Docker image.
+  ms.date: 03/28/2019
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-csharp-javascript
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-deploy-web-app.md)]

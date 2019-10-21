@@ -1,5 +1,13 @@
 There's no "easy button" for security and no solution that solves all your problems from a security perspective. Let's imagine that Lamna Healthcare has neglected security in its environment. The company has realized it needs to put some major focus in this area. Lamna is not exactly sure where to start, or if it’s possible to just buy a solution to make the environment secure. The company knows it needs a holistic approach but is unsure what really fits into that. Here, we'll identify key concepts of defense in depth, identify key security technologies and approaches to support a defense in depth strategy, and discuss how to apply these concepts when architecting your own Azure services.
 
+## Zero Trust model
+
+The analyst firm Forrester Research introduced the **Zero Trust model**, which states that you should never assume trust but instead continually validate trust. When users, devices, and data all resided inside the organization's firewall, they were assumed to be trusted. This assumed trust allowed for easy lateral movement after a malicious hacker compromised an endpoint device.
+
+With most users now accessing applications and data from the Internet, and many companies now allowing users to "bring-your-own-devices" (BYOD), most of the components of the transactions — that is, the users, network, and devices — are no longer completely under organizational control. The Zero Trust model relies on verifiable user and device trust claims to grant access to organizational resources. No longer is trust assumed based on the location inside an organization's perimeter.
+
+This model has forced security researchers, engineers, and architects to re-think the approach applied to security where we use a layered strategy to protect our resources called _defense in depth_.
+
 #### Defense in depth
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWjTfZ]
@@ -62,13 +70,13 @@ At this layer, the focus is on limiting the network connectivity across all your
 
 At the network perimeter, it's about protecting from network-based attacks against your resources. Identifying these attacks, eliminating their impact, and alerting on them is important to keep your network secure.
 
-### Policies & access
+### Identity & access
 
 - Control access to infrastructure, change control
 - Use single sign-on and multi-factor authentication
 - Audit events and changes
 
-The policy & access layer is all about ensuring identities are secure, and that access granted is only what is needed, and changes are logged.
+The identity & access layer is all about ensuring identities are secure, and that access granted is only what is needed, and changes are logged.
 
 ### Physical security
 
@@ -85,7 +93,7 @@ Each layer can implement one or more of the CIA concerns.
 |3|Compute|Regularly apply OS and layered software patches|Availability|
 |4|Network|Network security rules|Confidentiality|
 |5|Perimeter|DDoS protection|Availability|
-|6|Policies & Access|Azure Active Directory user authentication|Integrity|
+|6|Identity & Access|Azure Active Directory user authentication|Integrity|
 |7|Physical Security|Azure data center biometric access controls|Confidentiality|
 
 ## Shared responsibilities

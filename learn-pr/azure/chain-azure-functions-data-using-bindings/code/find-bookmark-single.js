@@ -4,7 +4,7 @@ module.exports = function (context, req) {
     
     if(bookmark){
             context.res = {
-            body: { "URL": bookmark.URL },
+            body: { "url": bookmark.url },
             headers: {
             'Content-Type': 'application/json'
             }

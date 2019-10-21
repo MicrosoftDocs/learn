@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.develop-test-deploy-azure-functions-with-visual-studio.4-publish-azure-functions
+title: Publish a simple Azure Function
+metadata:
+  title: Publish a simple Azure Function
+  description: Publish a simple Azure Function
+  ms.date: 04/18/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-publish-azure-functions.md)]

@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.azure.improve-developer-experience-of-an-api-with-swagger-documentation
+metadata:
+  title: Improve the developer experience of an API with Swagger documentation
+  description: Learn how to document an existing API, written in C#/ASP.NET Core, using Swashbuckle, Swagger/OpenAPI, and Swagger UI.
+  ms.date: 05/06/2019
+  author: andrewjbyrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial  
+  ms.prod: learning-azure
+title: Improve the developer experience of an API with Swagger documentation
+summary: Learn how to document an existing API, written in C#/ASP.NET Core, using Swashbuckle, Swagger/OpenAPI, and Swagger UI.
+abstract: |
+  In this module, you will:  
+  - Learn about Swagger/Open API and Swashbuckle
+  - Enable Swagger for an C#/ASP.NET Core API
+  - Enable Swashbuckle for an C#/ASP.NET Core API
+  - Generate and view API documentation, with Swagger
+prerequisites: |
+  - Experience with REST API design and implementation
+  - Experience developing basic ASP.NET Core apps
+iconUrl: /learn/achievements/improve-developer-experience-of-an-api-with-swagger-documentation.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-clis
+- aspnet-core
+- dotnet
+- dotnet-core
+units:
+- learn.azure.improve-developer-experience-of-an-api-with-swagger-documentation.introduction
+- learn.azure.improve-developer-experience-of-an-api-with-swagger-documentation.publish-openapi-documentation
+- learn.azure.improve-developer-experience-of-an-api-with-swagger-documentation.exercise-enable-swagger-and-swashbuckle
+- learn.azure.improve-developer-experience-of-an-api-with-swagger-documentation.visualize-and-interact-with-api-resources
+- learn.azure.improve-developer-experience-of-an-api-with-swagger-documentation.exercise-use-swagger-ui
+- learn.azure.improve-developer-experience-of-an-api-with-swagger-documentation.summary
+badge:
+  uid: learn.azure.improve-developer-experience-of-an-api-with-swagger-documentation.badge

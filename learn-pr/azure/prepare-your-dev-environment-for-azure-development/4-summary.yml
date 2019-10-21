@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.prepare-azure-dev-environment.4-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 07/01/2019
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-summary.md)]

@@ -1,18 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-access-azure-ad-multi-factor-authentication.5-test-access
 metadata:
-  title: Test access to resources
+  title: Exercise - Test access to resources
   description: Test access to the Azure portal and MyApps portal to ensure multi-factor authentication is enforced when expected.
-  ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  ms.date: 04/15/2019
+  author: MicrosoftGuyJFlo
+  ms.author: joflore
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Test access to resources
-#labId: 46467
-#labModal: true
-durationInMinutes: 3
+title: Exercise - Test access to resources
+durationInMinutes: 5
 content: |
   [!include[](includes/5-test-access.md)]

@@ -125,9 +125,7 @@ You're now back at your Cloud Shell session.
     > [!IMPORTANT]
     > Whenever you paste or change code into a file in the editor, make sure to save afterwards using the "..." menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Command+S</kbd> on macOS).
 
-    This code uses Mongoose to simplify the process of transferring data in and out of MongoDB. Mongoose is a schema-based system for modeling data.
-
-    This code connects to a database named "Books" on the local MongoDB server. It then defines a database document called "Book" with the provided schema. The schema defines four fields that describe a single book:
+    This code uses Mongoose to simplify the process of transferring data in and out of MongoDB. Mongoose is a schema-based system for modeling data. The code defines a database document called "Book" with the provided schema. The schema defines four fields that describe a single book:
 
     * The book's name, or title
     * Its International Standard Book Number, or ISBN, which uniquely identifies the book
@@ -183,12 +181,12 @@ You're now back at your Cloud Shell session.
 
     This code creates four routes for the application. Here's a brief overview of each.
 
-    | HTTP verb | Endpoint      | Description                                                                                                           |
-    |-----------|---------------|-----------------------------------------------------------------------------------------------------------------------|
-    | GET       | `/book`       | Retrieves all books from the database.                                                                                |
-    | POST      | `/book`       | Creates a `Book` object based on the fields the user provided on the web form and writes that object to the database. |
-    | DELETE    | `/book/:isbn` | Deletes the book as identified by its ISBN from the database.                                                         |
-    | GET       | `*`           | Returns the index page when no other route is matched.                                                                |
+    | HTTP verb | Endpoint | Description |
+    |---|---|---|
+    | GET | `/book` | Retrieves all books from the database. |
+    | POST | `/book` | Creates a `Book` object based on the fields the user provided on the web form and writes that object to the database. |
+    | DELETE | `/book/:isbn` | Deletes the book as identified by its ISBN from the database. |
+    | GET | `*` | Returns the index page when no other route is matched. |
 
     Express can serve up HTTP responses directly in the route handling code or it can serve up static content from files. This code shows both. The first three routes return JSON data for book API requests. The fourth route (the default case) returns the contents of the index file, `index.html`.
 
@@ -440,10 +438,10 @@ You're now ready to test out your Node.js web application!
 
     You see the index page, which includes a web form.
 
-    ![A web page with a form and submission button.](../media/6-book-page.png)
+    ![A screenshot of the book web page with a form and submission button.](../media/6-book-page.png)
 
     Try adding a few books to the database. Each time you add a book, the page updates the complete list of books.
 
-    ![](../media/6-book-sample-entries.png)
+    ![A screenshot of the book web page with sample data populated](../media/6-book-sample-entries.png)
 
     You can also click the **Delete** button to delete a book from the database.

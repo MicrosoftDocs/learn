@@ -2,8 +2,8 @@
 uid: learn.data-ai.transform-data-with-azure-stream-analytics.monitor-and-troubleshoot
 title: Monitor and troubleshoot Azure Stream Analytics jobs
 metadata:
-  title: Monitor and troubleshoot Azure Stream Analytics jobs - Learn
-  description: Monitor and troubleshoot Azure Stream Analytics jobs - Learn
+  title: Monitor and troubleshoot Azure Stream Analytics jobs
+  description: Monitor and troubleshoot Azure Stream Analytics jobs
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill

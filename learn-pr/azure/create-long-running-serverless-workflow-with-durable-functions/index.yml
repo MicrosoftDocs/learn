@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.azure-create-long-running-serverless-workflow-with-durable-functions
+metadata:
+  title: Create a long-running serverless workflow with Durable Functions
+  description: Learn how to orchestrate a long-running workflow as a set of activities using Durable Functions. 
+  ms.date: 04/24/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create a long-running serverless workflow with Durable Functions
+summary: Learn how to orchestrate a long-running workflow as a set of activities using Durable Functions. 
+abstract: |
+  In this module, you will:
+  - Explore Durable Functions
+  - Design a long-running approval process workflow
+  - Implement a long-running approval process workflow using Durable Functions
+prerequisites: None
+cardDescription: Learn how to orchestrate a long-running workflow as a set of activities using Durable Functions.
+iconUrl: /learn/achievements/azure-create-long-running-serverless-workflow-with-durable-functions.svg
+levels: 
+- beginner
+roles: 
+- developer
+products: 
+- azure
+- azure-functions
+units:
+- learn.azure-create-long-running-serverless-workflow-with-durable-functions.1-introduction
+- learn.azure-create-long-running-serverless-workflow-with-durable-functions.2-what-is-durable-functions
+- learn.azure-create-long-running-serverless-workflow-with-durable-functions.3-design-a-workflow-based-on-durable-functions
+- learn.azure-create-long-running-serverless-workflow-with-durable-functions.4-exercise-create-a-workflow-using-durable-functions
+- learn.azure-create-long-running-serverless-workflow-with-durable-functions.5-control-long-running-tasks-using-timers
+- learn.azure-create-long-running-serverless-workflow-with-durable-functions.6-exercise-add-a-durable-timer-to-manage-a-long-running-task
+- learn.azure-create-long-running-serverless-workflow-with-durable-functions.7-summary
+badge:
+  uid: learn.azure-create-long-running-serverless-workflow-with-durable-functions.badge

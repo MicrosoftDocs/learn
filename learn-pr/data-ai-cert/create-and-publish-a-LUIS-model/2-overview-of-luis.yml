@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.create-and-publish-a-luis-model.overview-of-luis
-title: Overview of LUIS
+title: Overview of Language Understanding Intelligent Service (LUIS)
 metadata:
-  title: Overview of LUIS
-  description: Gain and understanding of the key concepts around language understanding (LUIS)
+  title: Overview of Language Understanding Intelligent Service (LUIS)
+  description: Learn about the key concepts involved in language understanding.
   ms.date: 1/24/2019
   author: gerryaobrien
   ms.author: gerryo

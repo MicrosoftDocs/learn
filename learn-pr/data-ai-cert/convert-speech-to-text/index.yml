@@ -1,23 +1,22 @@
 ### YamlMime:Module
 uid: learn.data-ai.convert-speech-to-text
 metadata:
-  title: Convert Speech to Text with Azure Cognitive Services - Learn
-  description: Learn how to convert spoken speech to text through real-time transcription with the Speech to Text API in Azure Cognitive Services - Learn
+  title: Translate speech in real time with Azure Cognitive Services
+  description: Learn how to translate speech and convert it to text through real-time transcription with the Speech Translation API in Azure Cognitive Services 
   ms.date: 1/9/2019
   author: gerryaobrien
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: smmark
-title: Convert Speech to Text with Azure Cognitive Services
-summary: Learn how to convert spoken speech to text through real-time transcription with the Speech to Text API in Azure Cognitive Services.
+title: Translate speech in real time with Azure Cognitive Services
+summary: Learn how to translate speech and convert it to text through real-time transcription with the Speech Translation API in Azure Cognitive Services.
 abstract: |
   In this module you will:
   - Learn what speech translation is all about
-  - Explore the Speech to Text API
+  - Explore the Speech Translation API
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/convert-speech-to-text.svg
-ratingEnabled: true
 levels:
 - intermediate
 roles:

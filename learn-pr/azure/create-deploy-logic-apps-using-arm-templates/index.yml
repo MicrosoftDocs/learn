@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azure.logic-apps-and-arm-templates
+metadata:
+  title: Create and deploy Logic Apps using Azure Resource Manager templates
+  description: Define a Logic Apps workflow declaratively as a Resource Manager template and deploy the app using the Azure Command Line Interface (CLI). 
+  ms.date: 05/03/2019
+  author: andrewjbyrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create and deploy Logic Apps using Azure Resource Manager templates
+summary: Define a Logic Apps workflow declaratively as a Resource Manager template and deploy the app using the Azure Command Line Interface (CLI). 
+abstract:  | 
+  In this module, you will:
+  - Define a Logic Apps workflow declaratively in Workflow Definition Language 
+  - Deploy a Logic App definition as a Resource Manager template using the Azure CLI
+  - Define a more configurable template using parameters
+prerequisites: |
+  - Familiarity with the basics of running and authoring Logic Apps
+iconUrl: /learn/achievements/logic-apps-and-arm-templates.svg
+levels:
+- beginner
+roles:
+- developer
+- solution-architect
+products:
+- azure
+- azure-logic-apps
+- azure-resource-manager
+units:
+- learn.azure.logic-apps-and-arm-templates.introduction
+- learn.azure.logic-apps-and-arm-templates.describe-a-logic-app-using-workflow-definition-language
+- learn.azure.logic-apps-and-arm-templates.deploy-logic-app-using-arm-template
+- learn.azure.logic-apps-and-arm-templates.exercise-deploy-logic-app-using-arm-template
+- learn.azure.logic-apps-and-arm-templates.exercise-deploy-a-logic-app-using-a-parameterized-arm-template
+- learn.azure.logic-apps-and-arm-templates.summary
+badge:
+  uid: learn.azure.logic-apps-and-arm-templates.badge

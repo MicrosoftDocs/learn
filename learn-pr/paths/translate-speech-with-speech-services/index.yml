@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.data-ai.translate-speech-with-speech-services
 metadata:
-  title: Process and translate speech with Azure Cognitive Speech Services - Learn
-  description: Microsoft Cognitive Services provides functionality to enable speech services in your applications. Learn how to convert speech to text and recognize specific speakers in your applications by integrating the Cognitive Speech Services - Learn
+  title: Process and translate speech with Azure Cognitive Speech Services
+  description: Microsoft Cognitive Services provides functionality to enable speech services in your applications. Learn how to convert speech to text and recognize specific speakers in your applications by integrating the Cognitive Speech Services
   brand: azure
   ms.date: 02/25/2019
   author: gerryaobrien

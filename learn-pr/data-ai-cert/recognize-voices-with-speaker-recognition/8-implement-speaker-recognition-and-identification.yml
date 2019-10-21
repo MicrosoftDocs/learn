@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.recognize-voices-with-speaker-recognition.implement-speaker-recognition-and-identification
-title: Implement Speaker Recognition
+title: Implement speaker recognition
 metadata:
-  title: Implement Speaker Recognition
-  description: Learn how to implement speaker recognition and identification
+  title: Implement speaker recognition
+  description: Learn how to implement speaker verification and identification.
   ms.date: 01/11/2019
   author: gerryaobrien
   ms.author: gerryo

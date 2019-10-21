@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.foster-ai-culture-sales.sales-executive-qa
+title: Discover how to foster an AI-ready culture in sales - Executive Q&A
+metadata:
+  title: Discover how to foster an AI-ready culture in sales - Executive Q&A
+  description: Jean-Phlippe Courtois reflects on how the Microsoft sales leadership team created an AI-Ready Culture.
+  ms.date: 04/26/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-sales-executive-qa.md)] 

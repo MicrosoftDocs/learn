@@ -3,6 +3,7 @@ Some applications place greater demands on data storage than others. Apps such a
 When creating your VMs or adding new disks, you have a few choices which will have a dramatic impact on disk performance, starting with the _type_ of storage you choose.
 
 ## Types of disks 
+
 Azure Disks are designed for 99.999% availability. 
 
 There are three performance tiers for storage that you can choose from when creating your disks -- Premium SSD Disks, Standard HDD storage, and Standard SSD. Depending on the VM size, you can mix and match these disk types.
@@ -39,9 +40,10 @@ Managed disks are the newer and **recommended disk storage model**. They elegant
 With all the additional benefits, including the guaranteed performance characteristics, you should always choose managed disks for new VMs.
 
 ### Disk comparison
+
 The following table provides a comparison of Standard HDD, Standard SSD, and Premium SSD to help you decide what to use.
 
-|    | Azure Premium Disk |Azure Standard SSD Disk (preview)| Azure Standard HDD Disk 
+|    | Azure Premium Disk |Azure Standard SSD Disk          | Azure Standard HDD Disk 
 |--- | ------------------ | ------------------------------- | ----------------------- 
 | **Disk Type** | Solid State Drives (SSD) | Solid State Drives (SSD) | Hard Disk Drives (HDD)  
 | **Overview**  | SSD-based high-performance, low-latency disk support for VMs running IO-intensive workloads or hosting mission-critical production environment |More consistent performance and reliability than HDD. Optimized for low-IOPS workloads| HDD-based cost-effective disk for infrequent access
@@ -54,7 +56,9 @@ There is more detail on disk performance below.
 
 ## Data replication
 
-The data in your Microsoft Azure storage account is always replicated to ensure durability and high availability. Azure Storage replication copies your data so that it's protected from planned and unplanned events like transient hardware failures, network or power outages, natural disasters, and so on. You can choose to replicate your data within the same data center, across zonal data centers within the same region, and even across regions. There are four types of replication:
+The data in your Microsoft Azure storage account is automatically replicated to ensure durability and high availability. Azure Storage replication copies your data so that it's protected from planned and unplanned events like transient hardware failures, network or power outages, natural disasters, and so on. You can choose to replicate your data within the same data center, across zonal data centers within the same region, and even across regions.
+
+There are four types of replication:
 
 - **Locally redundant storage (LRS)** - Azure replicates the data within the same Azure data center. The data remains available if a node fails. However, if an entire data center fails, data may be unavailable.
 - **Geo-redundant storage (GRS)** - Azure replicates your data to a second region that is hundreds of miles away from the primary region. If your storage account has GRS enabled, then your data is durable even if there's a complete regional outage or a disaster in which the primary region isn't recoverable.
@@ -69,10 +73,10 @@ The performance of your disks depends on the type of disk you chose. Each disk i
 
 With standard storage, you get a maximum of **500 IOPS and 60 MB/second** throughput per disk (even on SSDs). With premium storage, the IOPS depends on the premium disks you choose and the VM size.
 
-|  | P4 | P6 | P10 | P20 | P30 | P40 | P50 |
-|--|----|----|-----|-----|-----|-----|-----|
-| **Disk Size** | 32 GiB | 64 GiB | 128 GiB | 512 GiB | 1 TiB | 2 TiB | 4 TiB |
-| **Max IOPS per disk** | 120 | 240 | 500 | 2300 | 5000 | 7500 | 7500 |
-| **Max Throughput per disk** | 25 MB/sec | 50 MB/sec | 100 MB/sec | 200 MB/sec | 250 MB/sec | 250 MB/sec |
+|  | P4 | P6 | P10 | P15 | P20 | P30 | P40 | P50 | P60 | P70 | P80 |
+|--|----|----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+| **Disk Size** | 32 GiB | 64 GiB | 128 GiB | 256 Gib | 512 GiB | 1 TiB | 2 TiB | 4 TiB | 8 TiB | 16 TiB | 32 TiB |
+| **Max IOPS per disk** | 120 | 240 | 500 | 1,100 | 2300 | 5000 | 7500 | 7500 | 16,000 | 18,000 | 20,000 |
+| **Max Throughput per disk** | 25 MB/sec | 50 MB/sec | 100 MB/sec | 125 MB/sec | 150 MB/sec| 200 MB/sec | 250 MB/sec | 250 MB/sec | 500 MB/sec | 750 MB/sec | 900 MB/sec |
 
-As you can see, you can go from **25 MB/sec** and **120 IOPS** to **250 MB/sec** and **7500 IOPS**.
+As you can see, you can go from **25 MB/sec** and **120 IOPS** to **900 MB/sec** and **20,000 IOPS**.

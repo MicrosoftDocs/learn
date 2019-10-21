@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.5-use-the-gremlin-graph-api-as-a-recommendation-engine
+title: Use the Gremlin (graph) API as a recommendation engine
+metadata:
+  title: Use the Gremlin (graph) API as a recommendation engine
+  description: Describe a scenario where the Gremlin API might be a good choice for Azure Cosmos DB.
+  ms.date: 04/24/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-use-the-gremlin-graph-api-as-a-recommendation-engine.md)]

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.logic-apps-and-arm-templates.exercise-deploy-a-logic-app-using-a-parameterized-arm-template
+title: Exercise - Deploy and export a Logic Apps workflow using an ARM template
+metadata:
+  title: Exercise - Deploy and export a Logic Apps workflow using an ARM template
+  description: Exercise - Deploy and export a Logic Apps workflow using an ARM template
+  ms.date: 05/03/2019
+  author: andrewjbyrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 9
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/5-exercise-deploy-a-logic-app-using-a-parameterized-arm-template.md)]

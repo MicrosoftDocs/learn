@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.convert-speech-to-text.knowledge-check
-title: Knowledge check - Speech Translation
+title: Knowledge check
 metadata:
-  title: Knowledge check - Speech Translation
-  description: Knowledge check - Speech Translation
+  title: Knowledge check
+  description: Knowledge check for speech translation.
   ms.date: 01/09/2019
   author: gerryaobrien
   ms.author: gerryo
@@ -16,26 +16,26 @@ quiz:
   questions:
   - content: "Which of the following tasks would be a good fit for the Speech Translation API?"
     choices:
-    - content: Translating a document written in English, into German
+    - content: Translating a document written in English into German
       isCorrect: false
-      explanation: "The Speech Translation API is not designed to translate written content into other languages, or perform non-translated speech recognition or synthesis, as these features are part of the Bing Speech API."
-    - content:  Real-time voice chat translation between a German and French speaker
+      explanation: "The Speech Translation API isn't designed to translate written content into other languages or to do untranslated speech recognition or synthesis. These features are part of the Bing Speech API."
+    - content:  Real-time voice-chat translation between a German and a French speaker
       isCorrect: true
-      explanation: "The Speech Translation API is designed to perform real-time speech translation for scenarios such as in-person or remote translated communications, as well as media subtitling."
+      explanation: "The Speech Translation API is designed to do real-time speech translation for scenarios like in-person or remote translated communications and media subtitling."
     - content: Creating an audio file from a famous quote
       isCorrect: false
-      explanation: "The Speech Translation API is not designed to translate written content into other languages, or perform non-translated speech recognition or synthesis, as these features are part of the Bing Speech API."
-  - content: "Which of the following text-to-speech output formats are supported by the Translator Speech Translate method?"
+      explanation: "The Speech Translation API isn't designed to translate written content into other languages, or to do untranslated speech recognition or synthesis. These features are part of the Bing Speech API."
+  - content: "Which of the following text-to-speech output formats are supported by the Speech Translation API Translate method?"
     choices:
     - content: audio/wav
       isCorrect: true
-      explanation: "The Translator Speech Translate method supports 'audio/wav' and 'audio/mp3' as output formats via the format parameter."
+      explanation: "The Speech Translation API Translate method supports \"audio/wav\" and \"audio/mp3\" as output formats via the format parameter."
     - content: audio/midi
       isCorrect: false
-      explanation: "midi is not a supported output format."
+      explanation: "MIDI isn't a supported output format."
     - content: audio/m4a
       isCorrect: false
-      explanation: "m4a is not a supported output format"
+      explanation: "M4A (MPEG 4 Audio) isn't a supported output format."
     - content: audio/mov
       isCorrect: false
-      explanation: "mov is not a supported output format"
+      explanation: "MOV (QuickTime) isn't a supported output format."

@@ -5,9 +5,8 @@ metadata:
   title: Use monitoring and analytics to gain operational insights
   description: In this unit, we'll discuss how to use monitoring and analytics to gain operational insights
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: jboeshart
+  ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -31,7 +30,7 @@ quiz:
       explanation: 'Azure Activity Log will log events that have been performed on your resources on the Azure platform, but will not provide insight into your application.'
     - content: 'Application Insights'
       isCorrect: true
-      explanation: 'Application Insights will help you detect and diagnose issues and understand usage for your web apps and services, API calls in your application.'
+      explanation: 'Application Insights will help you detect and diagnose issues and understand usage for your web apps, services, and API calls in your application.'
 
   - content: 'Which of the following services would you use to identify who deleted a virtual machine?'
     choices:

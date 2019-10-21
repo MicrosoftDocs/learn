@@ -11,7 +11,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-#labId: 46464
 durationInMinutes: 7
 content: |
   [!include[](includes/6-call-the-mobile-backend.md)]

@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.intro-to-containers
+metadata:
+  title: Build a containerized web application with Docker
+  description: In this module, you'll learn how to use Docker to quickly deploy a web application. You'll download an existing Docker image from Docker Hub, and customize it to run your own application. You'll upload the image to an Azure Container Registry, and run the application in Azure from an Azure Container Instance. 
+  ms.date: 04/05/2019
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build a containerized web application with Docker
+summary: Package a web app so that it can be deployed as a Docker image and run from an Azure Container Instance.
+abstract: |
+  In this module, you will:
+  - Create a Dockerfile for a new container image based on a starter image from Docker Hub
+  - Add files to an image using Dockerfile commands
+  - Configure an image’s startup command with Dockerfile commands
+  - Build and run a web application packaged in a Docker image
+  - Deploy a Docker image using the Azure Container Instance service
+prerequisites: |
+  - Familiarity with basic web application development concepts
+  - A Docker subscription 
+  - Docker installed on your desktop computer
+iconUrl: /learn/achievements/intro-to-containers.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.intro-to-containers.1-introduction
+- learn.intro-to-containers.2-deploy-docker-image-locally
+- learn.intro-to-containers.3-exercise-deploy-docker-image-locally
+- learn.intro-to-containers.4-create-custom-docker-image
+- learn.intro-to-containers.5-exercise-create-custom-docker-image
+- learn.intro-to-containers.6-deploy-docker-image-to-container-instance
+- learn.intro-to-containers.7-exercise-deploy-docker-image-to-container-instance
+- learn.intro-to-containers.8-summary
+badge:
+  uid: learn.intro-to-containers.badge

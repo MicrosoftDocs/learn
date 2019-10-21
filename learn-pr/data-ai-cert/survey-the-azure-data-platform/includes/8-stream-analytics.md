@@ -1,37 +1,43 @@
-Applications, sensors, monitoring devices, and gateways broadcast continuous event data known as data streams.  Streaming data is high volume with a lighter payload than non-streaming systems.  Azure Stream Analytics allows Data Engineers to process streaming data and respond to data anomalies in real-time.  Business cases include Internet of Things (IoT) monitoring, web logs, remote patient monitoring, or Point of Sale (POS) systems.
+Applications, sensors, monitoring devices, and gateways broadcast continuous event data known as *data streams*. Streaming data is high volume and has a lighter payload than nonstreaming systems. 
 
-![Screen of Framework of Stream Analytics](../media/8-streaming-analytics-framework.png)
+Data engineers use Azure Stream Analytics to process streaming data and respond to data anomalies in real time. You can use Stream Analytics for Internet of Things (IoT) monitoring, web logs, remote patient monitoring, and point of sale (POS) systems.
 
-## When to use it
+![Diagram showing how to apply Stream Analytics in a system](../media/8-streaming-analytics-framework.png)
 
-If your organizations' challenge is to respond to data event in real-time or perform a post mortem of large batches of data in a continuous time bound stream, then Azure Stream Analytics is for your organization. The decision must be made whether your organization will be working with streaming data or batch data.
+## When to use Stream Analytics
 
-Azure Stream Analytics will ingest streaming data from applications or IoT devices and gateways into an event hub or an Internet of Things (IoT) hub in real-time. At which point the event or IoT hub will stream the data into Stream Analytics for real-time analysis.
+If your organization must respond to data events in real time or analyze large batches of data in a continuous time-bound stream, Stream Analytics is a good solution. Your organization must decide whether to work with streaming data or batch data.
 
-Batch systems process groups of data stored in an Azure Blob store in a single job that executes at a pre-defined interval.  Batch systems are not suitable for certain business intelligence systems where the pre-defined interval cannot be tolerated for performance reasons.  For example, an autonomous vehicle cannot wait for a batch system to adjust for driving.  Another example includes a fraud detection system that must prevent the financial transaction from being approved in real time.
+In real time, data is ingested from applications or IoT devices and gateways into an event hub or IoT hub. The event hub or IoT hub then streams the data into Stream Analytics for real-time analysis.
 
-## Ingesting Data
+Batch systems process groups of data that are stored in an Azure Blob store. They do this in a single job that runs at a predefined interval. Don't use batch systems for business intelligence systems that can't tolerate the predefined interval. For example, an autonomous vehicle can't wait for a batch system to adjust its driving. Similarly, a fraud-detection system must decline a questionable financial transaction in real time.
 
-Data Engineers configure ingestion components of Azure Stream Analytics by configuring data inputs from first-class integration sources including Azure Event Hubs, Azure IoT Hub, or Azure Blob storage.
+## Data ingestion
 
-IoT hubs are the cloud gateway that connects IoT devices to gather data to drive business insights and automation.  IoT Hub includes features that enrich the relationship between your devices and your back-end systems. Bi-directional communication capabilities mean that while you receive data from devices, you can also send commands and policies back to devices, for example, to update properties or invoke device management actions.   It can also authenticate access between the IoT device and the IoT hub.
+As a data engineer, set up data ingestion in Stream Analytics by configuring data inputs from first-class integration sources. These sources include Azure Event Hubs, Azure IoT Hub, and Azure Blob storage.
 
-Event hubs provide a big data streaming service of Azure. It is designed for high throughput data streaming scenarios where customers may send billions of requests per day. Event Hubs uses a partitioned consumer model to scale out your data stream and is integrated into the big data and analytics services of Azure including Databricks, Stream Analytics, ADLS, and HDInsight.  It provides authentication through a shared key.
+An IoT hub is the cloud gateway that connects IoT devices. IoT hubs gather data to drive business insights and automation. 
 
-Azure Storage can be used to stored data before being batched processed.
+Features in Azure IoT Hub enrich the relationship between your devices and your back-end systems. Bidirectional communication capabilities mean that while you receive data from devices, you can also send commands and policies back to devices. Take advantage of this ability, for example, to update properties or invoke device management actions. Azure IoT Hub can also authenticate access between the IoT device and the IoT hub.
 
-![Screenshot of Streaming IoT Capability Comparison](../media/8-streaming-comparison.png)
+Azure Event Hubs provides big-data streaming services. It's designed for high data throughput, allowing customers to send billions of requests per day. Event Hubs uses a partitioned consumer model to scale out your data stream. This service is integrated into the big-data and analytics services of Azure. These include Databricks, Stream Analytics, Azure Data Lake Storage, and HDInsight. Event Hubs provides authentication through a shared key.
 
-## Processing Data
+You can use Azure Storage to store data before you process it in batches.
 
-Data Engineers configure Azure Stream Analytics jobs with input and output pipelines to process streaming data. Inputs are provided by event hubs, IoT hubs or Azure storage. Stream Analytics can route job output to many storage systems such as Azure Blob, Azure SQL Database, Azure Data Lake Stores, or Azure Cosmos DB.
+![Table comparing streaming IoT capabilities](../media/8-streaming-comparison.png)
 
-After storing, you can run batch analytics with Azure HDInsight or send the output to another service such as event hubs for consumption or to Power BI for real-time visualization by using Power BI streaming API.
+## Data processing
 
-## Querying Data
+To process streaming data, set up Stream Analytics jobs with input and output pipelines. Inputs are provided by Event Hubs, IoT Hubs, or Azure Storage. Stream Analytics can route job output to many storage systems. These systems include Azure Blob, Azure SQL Database, Azure Data Lake Storage, and Azure Cosmos DB.
 
-To define job transformations, you use a simple, declarative Stream Analytics query language that lets you author complex temporal queries and analytics using simple SQL constructs. Stream Analytics query language is consistent with the SQL language, familiarity with SQL language is sufficient to get started with creating jobs.
+After storing the data, run batch analytics in Azure HDInsight. Or send the output to a service like Event Hubs for consumption. Or use the Power BI streaming API to send the output to Power BI for real-time visualization.
 
-## Securing Data
+## Queries
 
-Security for Azure Stream Analytics is handled at the transport layer between the device and the Azure IoT Hub.  Streaming data is generally discarded after the windowing operations are complete.  Event hubs secure transfer of data using a shared key. If the Data Engineer chooses to store the data, security will be provided by the storage device selected.
+To define job transformations, use a simple, declarative Stream Analytics query language. The language should let you use simple SQL constructs to write complex temporal queries and analytics.
+
+The Stream Analytics query language is consistent with the SQL language. If you're familiar with the SQL language, you can start creating jobs.
+
+## Data security
+
+Stream Analytics handles security at the transport layer between the device and Azure IoT Hub. Streaming data is generally discarded after the windowing operations finish. Event Hubs uses a shared key to secure the data transfer. If you want to store the data, your storage device will provide security.

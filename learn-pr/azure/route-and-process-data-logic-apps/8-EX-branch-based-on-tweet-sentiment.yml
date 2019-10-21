@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.route-and-process-data-logic-apps.branch-based-on-tweet-sentiment
+title: Exercise - Branch based on tweet sentiment
+
+metadata:
+  title: Exercise - Branch based on tweet sentiment
+  description: Exercise - Branch based on tweet sentiment
+  ms.date: 5/10/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+interactive: bash
+azureSandbox: true
+durationInMinutes: 12
+content: |
+  [!include[](includes/8-EX-branch-based-on-tweet-sentiment.md)]

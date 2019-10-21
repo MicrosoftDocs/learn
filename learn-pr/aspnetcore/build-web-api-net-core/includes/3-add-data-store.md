@@ -2,12 +2,25 @@ A type of class called a *Model* is needed to represent a dog toy in inventory. 
 
 An in-memory database is used in this unit for simplicity. Choose a different data store for production environments, such as SQL Server or Azure SQL Database.
 
-> [!TIP]
-> Select the **Reconnect** button if the Cloud Shell session times out. Run the following command to set the working directory to *RetailApi* and launch the editor:
+> [!IMPORTANT]
+> If the Cloud Shell session ever times out or disconnects, reconnect and run the following command after reconnecting to set the working directory to *:::no-loc text="~/contoso-pets/src/ContosoPets.Api":::* and launch the editor:
 >
 > ```bash
-> cd ./RetailApi && code .
+> cd ~/contoso-pets/src/ContosoPets.Api && code .
 > ```
+
+1. Run the following command:
+
+    ```dotnetcli
+    dotnet add package Microsoft.EntityFrameworkCore.InMemory
+    ```
+
+    The preceding command:
+
+    * Adds the specified NuGet package reference to the project.
+    * Downloads the specified NuGet package and its dependencies.
+
+    The `Microsoft.EntityFrameworkCore.InMemory` package is required to use EF Core in-memory databases.
 
 1. Run the following command:
 
@@ -18,18 +31,18 @@ An in-memory database is used in this unit for simplicity. Choose a different da
     > [!NOTE]
     > The `touch` command is specific to Linux, the Cloud Shell's underlying OS.
 
-    A *Models* directory is created in the project root with an empty *Product.cs* file. The directory name *Models* is a convention. The directory name comes from the **Model**-View-Controller architecture used by the web API.
-1. Update file explorer by clicking the editor's refresh icon.
+    A *:::no-loc text="Models":::* directory is created in the project root with an empty *:::no-loc text="Product.cs":::* file. The directory name *:::no-loc text="Models":::* is a convention. The directory name comes from the **Model**-View-Controller architecture used by the web API.
 
-    ![refresh file explorer](../media/3-add-data-store/cloud-shell-refresh-files.png)
+1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)]
 
-    The *Models* directory and its *Product.cs* file appear.
-1. Add the following code to *Models/Product.cs* to define a product. Save your changes.
+    The *:::no-loc text="Models":::* directory and its *:::no-loc text="Product.cs":::* file appear.
+
+1. Add the following code to *:::no-loc text="Models/Product.cs":::* to define a product. Save your changes.
 
     ```csharp
     using System.ComponentModel.DataAnnotations;
 
-    namespace RetailApi.Models
+    namespace ContosoPets.Api.Models
     {
         public class Product
         {
@@ -45,33 +58,29 @@ An in-memory database is used in this unit for simplicity. Choose a different da
     }
     ```
 
-    > [!TIP]
-    > The following keyboard shortcuts will be useful throughout this module.
-    >
-    > | Keyboard shortcut               | Command |
-    > |---------------------------------|---------|
-    > | `Ctrl+V`<br>`Command+V` (macOS) | Paste   |
-    > | `Ctrl+S`<br>`Command+S` (macOS) | Save    |
+    [!INCLUDE[OS-specific keyboard shortcuts](../../includes/keyboard-shortcuts-table.md)]
 
     The `Name` and `Price` properties are marked as required to ensure values are provided when creating a `Product` object. Additionally, the `Price` property enforces minimum and maximum values.
+
 1. Run the following command:
 
     ```bash
-    mkdir Data && touch $_/ProductsContext.cs $_/SeedData.cs
+    mkdir Data && touch $_/ContosoPetsContext.cs $_/SeedData.cs
     ```
 
-    A *Data* directory is created in the project root with empty *ProductsContext.cs* and *SeedData.cs* files.
-1. Refresh file explorer, and add the following code to *Data/ProductsContext.cs*. Save your changes.
+    A *:::no-loc text="Data":::* directory is created in the project root with empty *:::no-loc text="ContosoPetsContext.cs":::* and *:::no-loc text="SeedData.cs":::* files.
+
+1. Refresh file explorer, and add the following code to *:::no-loc text="Data/ContosoPetsContext.cs":::*. Save your changes.
 
     ```csharp
     using Microsoft.EntityFrameworkCore;
-    using RetailApi.Models;
+    using ContosoPets.Api.Models;
 
-    namespace RetailApi.Data
+    namespace ContosoPets.Api.Data
     {
-        public class ProductsContext : DbContext
+        public class ContosoPetsContext : DbContext
         {
-            public ProductsContext(DbContextOptions<ProductsContext> options)
+            public ContosoPetsContext(DbContextOptions<ContosoPetsContext> options)
                 : base(options)
             {
             }
@@ -81,53 +90,57 @@ An in-memory database is used in this unit for simplicity. Choose a different da
     }
     ```
 
-    The preceding code creates a product-specific implementation of an EF Core `DbContext` object. The `ProductContext` class provides access to an in-memory database, as configured in the next step.
-1. Add the following code as the first line in the *Startup.cs* file's `ConfigureServices` method. Save your changes.
+    The preceding code creates a Contoso Pets-specific implementation of an EF Core `DbContext` object. The `ContosoPetsContext` class provides access to an in-memory database, as configured in the next step.
 
-    ```csharp
-    services.AddDbContext<ProductsContext>(options =>
-        options.UseInMemoryDatabase("Products"));
-    ```
+1. Add the following highlighted code to the *:::no-loc text="Startup.cs":::* file's `ConfigureServices` method. Save your changes.
+
+    [!code-csharp[](../code/3-add-db-context.cs?highlight=3-4)]
 
     The preceding code:
 
-    * Registers the custom `DbContext` class, named `ProductsContext`, with ASP.NET Core's [dependency injection](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection) system.
-    * Defines an in-memory database named *Products*.
-1. Add the following code to the top of *Startup.cs*. Save your changes.
+    * Registers the custom `DbContext` class, named `ContosoPetsContext`, with ASP.NET Core's [dependency injection](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection) system.
+    * Defines an in-memory database named *:::no-loc text="ContosoPets":::*.
+
+1. Add the following code to the top of *:::no-loc text="Startup.cs":::*. Save your changes.
 
     ```csharp
     using Microsoft.EntityFrameworkCore;
-    using RetailApi.Data;
+    using ContosoPets.Api.Data;
     ```
 
-    The `Microsoft.EntityFrameworkCore` namespace resolves the `UseInMemoryDatabase` method call. The `RetailApi.Data` namespace resolves the `ProductsContext` reference.
-1. Add the following code to *Data/SeedData.cs*. Save your changes.
+    The `Microsoft.EntityFrameworkCore` namespace resolves the `UseInMemoryDatabase` method call. The `ContosoPets.Api.Data` namespace resolves the `ContosoPetsContext` reference.
+
+1. Add the following code to *:::no-loc text="Data/SeedData.cs":::*. Save your changes.
 
     ```csharp
     using System;
     using System.Linq;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.DependencyInjection;
-    using RetailApi.Models;
+    using ContosoPets.Api.Models;
 
-    namespace RetailApi.Data
+    namespace ContosoPets.Api.Data
     {
         public static class SeedData
         {
-            public static void Initialize(IServiceProvider serviceProvider)
+            public static void Initialize(ContosoPetsContext context)
             {
-                using (var context = new ProductsContext(serviceProvider
-                    .GetRequiredService<DbContextOptions<ProductsContext>>()))
+                if (!context.Products.Any())
                 {
-                    if (!context.Products.Any())
-                    {
-                        context.Products.AddRange(
-                            new Product { Name = "Squeaky Bone", Price = 20.99m },
-                            new Product { Name = "Knotted Rope", Price = 12.99m }
-                        );
+                    context.Products.AddRange(
+                        new Product
+                        {
+                            Name = "Squeaky Bone",
+                            Price = 20.99m
+                        },
+                        new Product
+                        {
+                            Name = "Knotted Rope",
+                            Price = 12.99m
+                        }
+                    );
 
-                        context.SaveChanges();
-                    }
+                    context.SaveChanges();
                 }
             }
         }
@@ -135,47 +148,54 @@ An in-memory database is used in this unit for simplicity. Choose a different da
     ```
 
     The preceding code defines a static `SeedData` class. The class's `Initialize` method seeds the in-memory database with two dog toys.
-1. Replace the code in *Program.cs* with the following code. Save your changes.
+
+1. Replace the code in *:::no-loc text="Program.cs":::* with the following code. Save your changes.
 
     ```csharp
     using System;
-    using Microsoft.AspNetCore;
     using Microsoft.AspNetCore.Hosting;
+    using Microsoft.Extensions.Hosting;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
-    using RetailApi.Data;
+    using ContosoPets.Api.Data;
 
-    namespace RetailApi
+    namespace ContosoPets.Api
     {
         public class Program
         {
             public static void Main(string[] args)
             {
-                var host = CreateWebHostBuilder(args).Build();
+                var host = CreateHostBuilder(args).Build();
                 SeedDatabase(host);
                 host.Run();
             }
 
-            public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-                WebHost.CreateDefaultBuilder(args)
-                    .UseStartup<Startup>();
+            public static IHostBuilder CreateHostBuilder(string[] args) =>
+                Host.CreateDefaultBuilder(args)
+                    .ConfigureWebHostDefaults(webBuilder =>
+                    {
+                        webBuilder.UseStartup<Startup>();
+                    });
 
-            private static void SeedDatabase(IWebHost host)
+            private static void SeedDatabase(IHost host)
             {
-                using (var scope = host.Services.CreateScope())
-                {
-                    var services = scope.ServiceProvider;
+                var scopeFactory = host.Services.GetRequiredService<IServiceScopeFactory>();
 
-                    try
+                using (var scope = scopeFactory.CreateScope())
+                {
+                    var context = scope.ServiceProvider.GetRequiredService<ContosoPetsContext>();
+
+                    if (context.Database.EnsureCreated())
                     {
-                        var context = services.GetRequiredService<ProductsContext>();
-                        context.Database.EnsureCreated();
-                        SeedData.Initialize(services);
-                    }
-                    catch (Exception ex)
-                    {
-                        var logger = services.GetRequiredService<ILogger<Program>>();
-                        logger.LogError(ex, "A database seeding error occurred.");
+                        try
+                        {
+                            SeedData.Initialize(context);
+                        }
+                        catch (Exception ex)
+                        {
+                            var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
+                            logger.LogError(ex, "A database seeding error occurred.");
+                        }
                     }
                 }
             }
@@ -187,12 +207,7 @@ An in-memory database is used in this unit for simplicity. Choose a different da
 
     > [!IMPORTANT]
     > This database seeding strategy isn't recommended in a production environment. Consider seeding during database deployment instead.
-1. Run the following command:
 
-    ```bash
-    dotnet build
-    ```
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
 
-    The preceding command builds the web API project. The build should succeed with no warnings.
-
-The `Product` Model and `ProductsContext` class will be referenced by the controller created in the next unit.
+The `Product` Model and `ContosoPetsContext` class will be used by the controller created in the next unit.

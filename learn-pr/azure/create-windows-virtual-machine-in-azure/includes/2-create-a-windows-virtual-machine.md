@@ -29,7 +29,7 @@ Like other Azure services, you'll need a **Resource Group** to contain the VM (a
 
 Selecting an image is one of the first and most important decisions you'll make when creating a VM. An image is a template that's used to create a VM. These templates include an OS and often other software, such as development tools or web hosting environments.
 
-Any application that can be supported by the computer can be included in the VM image. You can create a VM from an image that's pre-configured to exactly match your requirements, such as hosting an ASP.Net Core app.
+Any application that can be supported by the computer can be included in the VM image. You can create a VM from an image that's pre-configured to exactly match your requirements, such as hosting an ASP.NET Core app.
 
 > [!TIP]
 > You can also create and upload your own images, check the documentation for more information.

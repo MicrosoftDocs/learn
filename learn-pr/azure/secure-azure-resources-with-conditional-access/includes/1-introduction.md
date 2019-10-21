@@ -11,8 +11,9 @@ In this module, you will:
 - Create a test user and a user group
 - Enable a conditional access policy that requires Multi-Factor Authentication (MFA)
 
-[!include[](../../../includes/azure-lab-environment-not-available.md)]
-
 ## Prerequisites  
 
 - Knowledge of basic Azure concepts, such as resource groups and subscriptions
+
+> [!NOTE]
+> You will need your own Azure subscription to complete the exercises in this module.

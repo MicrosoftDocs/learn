@@ -3,10 +3,9 @@ uid: learn.secure-access-azure-ad-multi-factor-authentication.1-introduction
 metadata:
   title: Introduction
   description: Secure access to resources using Azure AD, conditional access, and Azure Multi-Factor Authentication
-  ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  ms.date: 04/15/2019
+  author: MicrosoftGuyJFlo
+  ms.author: joflore
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

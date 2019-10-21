@@ -1,35 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.capture-page-load-times-application-insights.3-exercise-enable-application-insights
-title: Exercise - Enable Application Insights on an Azure Web App
+title: Exercise - Enable Application Insights on an Azure web app
 metadata:
-  title: Exercise - Enable Application Insights on an Azure Web App
-  description: How to enable Application Insights for an existing Azure Web App
+  title: Exercise - Enable Application Insights on an Azure web app
+  description: How to enable Application Insights for an existing Azure web app.
   ms.date: 01/08/2019
   author: adrianstevens
   ms.author: adrianstevens
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: true
+  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-enable-application-insights.md)]
-tasks:
-# Verify the resource web app is created.
-- action: exists
-  environment: azure
-  azure:
-    resource:
-
-      type: "Microsoft.Web/sites"
-      
-  hint: "Review the Complete the web app creation section again."
-# Verify the application insight resource is created.
-- action: exists
-  environment: azure
-  azure:
-    resource:
-
-      type: "microsoft.insights/components"
-      name: "videoappinsights"
-      
-  hint: "Review the Enable Application Insights for the Web App section again."  

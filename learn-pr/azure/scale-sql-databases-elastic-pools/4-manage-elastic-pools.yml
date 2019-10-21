@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-scale-azure-sql-databases-elastic-pools.manage-elastic-pools
+metadata:
+  title: Manage SQL elastic pools performance and cost
+  description: Manage SQL elastic pools performance and cost
+  ms.date: 5/03/2019
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Manage SQL elastic pools performance and cost
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-manage-elastic-pools.md)]

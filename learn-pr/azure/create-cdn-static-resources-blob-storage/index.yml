@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.create-content-delivery-network-azure-cdn-blob-services
+metadata:
+  title: Create a Content Delivery Network for your Website with Azure CDN and Blob Services
+  description: This module looks at how to create and utilize a Content Delivery Network (CDN) within Azure to host commonly used assets, such as images in a website. The module covers Azure CDN rather than third-party integrations, and deals with using Blob Storage as an underlying storage model for stable or non-volatile data.
+  ms.date: 4/30/2019
+  author: adrianstevens
+  ms.author: adsteven
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create a Content Delivery Network for your Website with Azure CDN and Blob Services
+summary: You learned how to publish static web content using an Azure Content Delivery Network (CDN) and Azure Blob Services.
+abstract: |
+  In this module, you will:
+  - Configure a static website, hosted in Azure blob storage, to work with a CDN
+  -	Verify content publishing, and content updating, through the CDN
+  -	Identify the main configuration issues to consider when deploying a static site with CDN
+  -	Manage CDN cache to control content update delivery and query string handling
+prerequisites: |
+  - Experience with building and deploying static websites.
+  - Familiarity with how web content is requested and delivered on the internet, including basics of the Domain Name System (DNS)
+iconUrl: /learn/achievements/create-cdn-static-resources-blob-storage.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+products:
+- azure
+- azure-cdn
+units:
+- learn.azure.create-content-delivery-network-azure-cdn-blob-services.1-introduction
+- learn.azure.create-content-delivery-network-azure-cdn-blob-services.1b-exercise-deploy-a-website
+- learn.azure.create-content-delivery-network-azure-cdn-blob-services.2-create-a-cdn
+- learn.azure.create-content-delivery-network-azure-cdn-blob-services.3-exercise-use-cdn-serve-static-site
+- learn.azure.create-content-delivery-network-azure-cdn-blob-services.4-exercise-update-static-site-republish-cdn
+- learn.azure.create-content-delivery-network-azure-cdn-blob-services.5-customize-manage-cdn-behavior
+- learn.azure.create-content-delivery-network-azure-cdn-blob-services.6-exercise-customize-manage-cdn-behavior
+- learn.azure.create-content-delivery-network-azure-cdn-blob-services.7-summary
+badge:
+  uid: learn.azure.create-content-delivery-network-azure-cdn-blob-services.badge

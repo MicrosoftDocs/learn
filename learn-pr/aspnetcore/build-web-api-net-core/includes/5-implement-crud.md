@@ -2,7 +2,7 @@ When the retailer's storefront UI is built, it should display all products in in
 
 The following table depicts the relationship between HTTP action verbs, CRUD operations, and ASP.NET Core attributes. For example, an HTTP PUT action verb is most often used to support an update operation. Such an action is annotated with the `[HttpPut]` attribute.
 
-|HTTP Action Verb|CRUD Operation|ASP.NET Core Attribute|
+|HTTP action verb|CRUD operation|ASP.NET Core attribute|
 |----------------|--------------|----------------------|
 |POST            |Create        |`[HttpPost]`          |
 |GET             |Read          |`[HttpGet]`           |
@@ -15,7 +15,7 @@ The following sections demonstrate how to support each of these four actions in 
 
 ## Retrieve a product
 
-Replace the `// GET by ID action` comment in *Controllers/ProductsController.cs* with the following:
+Replace the `// GET by ID action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following:
 
 ```csharp
 [HttpGet("{id}")]
@@ -35,19 +35,19 @@ public async Task<ActionResult<Product>> GetById(long id)
 The preceding action:
 
 * Responds only to the HTTP GET verb, as denoted by the `[HttpGet]` attribute.
-* Requires that the `id` value is included in the URL segment after `api/products/`. Remember, the `/api/products` pattern was defined by the controller-level `[Route]` attribute.
+* Requires that the `id` value is included in the URL segment after `products/`. Remember, the `/products` pattern was defined by the controller-level `[Route]` attribute.
 * Queries the database for a product matching the provided `id` parameter.
 
 Each `ActionResult` used in the preceding action is mapped to the corresponding HTTP status code in the following table.
 
-|ASP.NET Core<br>Action Result|HTTP status code|Description|
+|ASP.NET Core<br>action result|HTTP status code|Description|
 |-----------------------------|----------------|-----------|
 |`Ok` is implied              |200             |A product matching the provided `id` parameter exists in the database.<br>The product is included in the response body in the media type as defined in the `Accept` HTTP request header (JSON by default).|
 |`NotFound`                   |404             |A product matching the provided `id` parameter doesn't exist in the database.|
 
 ## Add a product
 
-Replace the `// POST action` comment in *Controllers/ProductsController.cs* with the following:
+Replace the `// POST action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following:
 
 ```csharp
 [HttpPost]
@@ -72,14 +72,14 @@ The first parameter in the `CreatedAtAction` method call represents an action na
 
 Each `ActionResult` used in the preceding action is mapped to the corresponding HTTP status code in the following table.
 
-|ASP.NET Core<br>Action Result|HTTP status code|Description|
+|ASP.NET Core<br>action result|HTTP status code|Description|
 |-----------------------------|----------------|-----------|
 |`CreatedAtAction`            |201             |The product was added to the database.<br>The product is included in the response body in the media type as defined in the `Accept` HTTP request header (JSON by default).|
 |`BadRequest` is implied      |400             |The request body's `Product` object is invalid.|
 
 ## Modify a product
 
-Replace the `// PUT action` comment in *Controllers/ProductsController.cs* with the following:
+Replace the `// PUT action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following:
 
 ```csharp
 [HttpPut("{id}")]
@@ -100,7 +100,7 @@ public async Task<IActionResult> Update(long id, Product product)
 The preceding action:
 
 * Responds only to the HTTP PUT verb, as denoted by the `[HttpPut]` attribute.
-* Requires that the `id` value is included in the URL segment after `api/products/`.
+* Requires that the `id` value is included in the URL segment after `products/`.
 * Updates the `Name` and `Price` properties of the product.
 
 > [!NOTE]
@@ -108,7 +108,7 @@ The preceding action:
 
 Each `ActionResult` used in the preceding action is mapped to the corresponding HTTP status code in the following table.
 
-|ASP.NET Core<br>Action Result|HTTP status code|Description|
+|ASP.NET Core<br>action result|HTTP status code|Description|
 |-----------------------------|----------------|-----------|
 |`NoContent`                  |204             |The product was updated in the database.|
 |`BadRequest`                 |400             |The request body's `Id` value doesn't match the route's `id` value.|
@@ -116,7 +116,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 ## Remove a product
 
-Replace the `// DELETE action` comment in *Controllers/ProductsController.cs* with the following:
+Replace the `// DELETE action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following:
 
 ```csharp
 [HttpDelete("{id}")]
@@ -144,20 +144,23 @@ The preceding action:
 
 Each `ActionResult` used in the preceding action is mapped to the corresponding HTTP status code in the following table.
 
-|ASP.NET Core<br>Action Result|HTTP status code|Description|
+|ASP.NET Core<br>action result|HTTP status code|Description|
 |-----------------------------|----------------|-----------|
 |`NoContent`                  |204             |The product was deleted from the database.|
 |`NotFound`                   |404             |A product matching the provided `id` parameter doesn't exist in the database.|
 
 ## Build and run
 
-Run the following command:
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
 
-```bash
-dotnet run > RetailApi.log &
-```
+1. Start the web API by running the following command:
 
-The web API is running and is ready for testing via curl.
+    ```dotnetcli
+    dotnet ./bin/Debug/netcoreapp3.0/ContosoPets.Api.dll \
+        > ContosoPets.Api.log &
+    ```
 
-> [!IMPORTANT]
-> Don't forget to check *RetailApi.log* for troubleshooting information, if required.
+    The web API is running and is ready for testing via `curl`.
+
+    > [!IMPORTANT]
+    > Don't forget to check *:::no-loc text="ContosoPets.Api.log":::* for troubleshooting information, if required.

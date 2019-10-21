@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.data-ai.create-an-experiment-in-ml-studio
 metadata:
-  title: Create an Experiment in Azure Machine Learning Studio - Learn
-  description: Learn how to use Microsoft Azure Machine Learning Studio to create an experiment, test it, and then publish it as a web service - Learn
+  title: Create an Experiment in Azure Machine Learning Studio
+  description: Learn how to use Microsoft Azure Machine Learning Studio to create an experiment, test it, and then publish it as a web service
   ms.date: 12/12/2018
   author: gerryaobrien
   ms.author: gerryo
@@ -18,7 +18,6 @@ abstract: |
   - Test the web service
   - View the published web service headers and sample code
 prerequisites: None
-ratingEnabled: true
 iconUrl: /learn/achievements/data-ai/create-an-experiment-in-ml-studio.svg
 levels:
 - beginner
@@ -30,7 +29,6 @@ roles:
 products:
 - azure
 - azure-machine-learning-studio
-- azure-machine-learning-service
 units:
 - learn.data-ai.create-an-experiment-in-ml-studio.introduction
 - learn.data-ai.create-an-experiment-in-ml-studio.create-an-experiment-in-ML-studio

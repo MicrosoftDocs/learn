@@ -22,7 +22,7 @@ We'd like to ensure that all resources have the **Department** tag associated wi
 
 1. Back on the **New policy definition** dialog, for **Name** give your policy a name of **Enforce tag on resource**.
 
-1. For the **Description**, enter **This policy enforces the existence of a tag on a resource.**
+1. For the **Description**, enter `This policy enforces the existence of a tag on a resource.`
 
 1. For **Category** select **Use existing** and then select the **General** category.
 
@@ -30,7 +30,7 @@ We'd like to ensure that all resources have the **Department** tag associated wi
 
     ```json
     {
-      "mode": "indexed",
+      "mode": "Indexed",
       "policyRule": {
         "if": {
           "field": "[concat('tags[', parameters('tagName'), ']')]",
@@ -74,9 +74,12 @@ We've created the policy, but we haven't actually put it into effect yet. To ena
 
 Now that we have assigned the policy to our resource group, any attempts to create a resource without the **Department** tag should fail. Let's try this out.
 
+> [!IMPORTANT]
+> Please note that the policy assignment may take up to 30 minutes to take effect. Because of this delay, in the following steps the policy validation may succeed but the deployment will still fail. If this happens, allow for additional time and retry your deployment.
+
 1. Click **+ Create a resource** in the top left of the portal.
 
-1. Search for **Storage Account** and select **Storage account - blob, file, table, queue** in the results. Click **Create**.
+1. Search for **Storage Account** and select **Storage account** in the results. Click **Create**.
 
 1. Select your subscription, and the **msftlearn-core-infrastructure-rg** resource group.
 
@@ -86,7 +89,7 @@ Now that we have assigned the policy to our resource group, any attempts to crea
 
     Validation of your resource creation will fail because we don't have a **Department** tag applied to the resource.
 
-	![Image of the portal showing a violation of policy](../media/4-policy-violation.PNG)
+    ![Image of the portal showing a violation of policy](../media/4-policy-violation.PNG)
 
     Let's fix the violation so we can successfully deploy the storage account.
 
@@ -94,7 +97,7 @@ Now that we have assigned the policy to our resource group, any attempts to crea
 
 1. Add a **Department:Finance** tag to the list.
 
-	![Image of the portal showing a new Department tag](../media/4-add-department-tag.PNG)
+    ![Image of the portal showing a new Department tag](../media/4-add-department-tag.PNG)
 
 1. Now click **Review + create**. Validation should now pass, and if you click **Create** your storage account will be created.
 

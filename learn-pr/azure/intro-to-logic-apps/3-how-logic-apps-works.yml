@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-intro-to-logic-apps.how-logic-apps-works
+title: How Logic Apps works
+metadata:
+  title: How Logic Apps works
+  description: How Logic Apps works
+  ms.date: 4/25/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-how-logic-apps-works.md)]

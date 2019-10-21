@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-run-container-app-service.2-build-store-images
+title: Build and store images by using Azure Container Registry
+metadata:
+  title: Build and store images by using Azure Container Registry  
+  description: Summarize the advantages of storing a Docker image by using Azure Container Registry.
+  ms.date: 03/28/2019
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-build-store-images.md)]

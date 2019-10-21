@@ -1,8 +1,5 @@
 Suppose you are developing a financial management application for new business startups. You want to ensure that all your customers' data is secured, so you have decided to implement Azure Disk Encryption (ADE) across all OS and data disks on the servers that will host this application. As part of your compliance requirements, you also need to be responsible for your own encryption key management.
 
-<!-- Activate the sandbox -->
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 In this unit, you'll encrypt disks on an existing virtual machine, and manage the encryption keys using your own Azure Key Vault.
 
 ## Prepare the environment
@@ -13,16 +10,10 @@ We'll start by deploying a new Windows VM in an Azure Virtual Machine.
 
 Use the Azure PowerShell to create and deploy a new Windows virtual machine.
 
-1. Start by deciding where to place the new resources. Select a location near you from the following list.
-
-    <!-- Resource selection -->  
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
-    
-
-1. Define a PowerShell variable to hold the selected location. It's defined as "East US" here, change it to your preferred location.
+1. Define a PowerShell variable to hold the selected location. We'll use the same region as the resource group.
 
     ```powershell
-    $location = "eastus"
+    $location = (Get-AzResourceGroup -name <rgn>[sandbox Resource Group]</rgn>).location
     ```
     
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]

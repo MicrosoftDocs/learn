@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure.handle-transient-errors-in-your-app
+metadata:
+  title: Handle transient errors in your app
+  description: Detect, handle, and recover from errors when working with cloud-based services to make your apps more resilient and improve user experience. 
+  ms.date: 04/10/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Handle transient errors in your app
+summary: Use application logging and retry policies to handle transient errors to make your apps more resilient.
+abstract: | 
+  In this module, you will:
+  - Identify common strategies for handling transient errors
+  - Detect transient errors in code
+  - Implement a retry policy  in your app
+  - Monitor transient errors in your app using logging
+prerequisites: |
+  - Entry-level developer knowledge in either C#, Java, or Node.js
+iconUrl: /learn/achievements/handle-transient-errors-in-your-app.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.azure.handle-transient-errors-in-your-app.1-introduction
+- learn.azure.handle-transient-errors-in-your-app.2-explore-transient-errors
+- learn.azure.handle-transient-errors-in-your-app.3-knowledge-check
+- learn.azure.handle-transient-errors-in-your-app.4-detect-transient-errors
+- learn.azure.handle-transient-errors-in-your-app.5-exercise-detect-transient-errors
+- learn.azure.handle-transient-errors-in-your-app.6-define-appropriate-retry-policy
+- learn.azure.handle-transient-errors-in-your-app.7-exercise-write-a-retry-policy
+- learn.azure.handle-transient-errors-in-your-app.8-log-useful-information
+- learn.azure.handle-transient-errors-in-your-app.9-exercise-add-application-logging
+- learn.azure.handle-transient-errors-in-your-app.10-summary
+badge:
+  uid: learn.azure.handle-transient-errors-in-your-app.badge

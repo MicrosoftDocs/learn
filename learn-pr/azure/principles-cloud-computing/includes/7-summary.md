@@ -8,8 +8,6 @@ In this module, you've learned about cloud computing, what it is and what its ke
 
 ![A connected plug to represent electricity being delivered](../media/7-heading.png)
 
-At this point, you know what cloud computing is, however, we haven't talked about a specific cloud provider.
-
 ### Microsoft Azure
 
 Azure is Microsoft's cloud computing platform. Azure provides over 100 services that enable you to do everything from running your existing applications on virtual machines to exploring new software paradigms such as intelligent bots and mixed reality.
@@ -21,7 +19,7 @@ Here are just a few kinds of services you'll find on Azure:
 - **Identity** services that help you authenticate and protect your users
 - **Networking** services that connect your datacenter to the cloud, provide high availability or host your DNS domain
 - **Storage** solutions that can accommodate massive amounts of both structured and unstructured data
-- **AI and machine-learning** services that can naturally communicate with your users through vision, hearing, and speech
+- **AI and machine-learning** services can analyze data, text, images, comprehend speech, and make predictions using data — changing the world of agriculture, healthcare, and much more.
 - And many more!
 
 ## Learn more
@@ -33,3 +31,5 @@ In addition, here are some places to go to learn more about what we've covered t
 - [Cloud Computing Terms](https://azure.microsoft.com/overview/cloud-computing-dictionary/)
 - [What is Azure?](https://azure.microsoft.com/overview/)
 - [Azure compliance offerings](https://www.microsoft.com/trustcenter/compliance/complianceofferings)
+- [Azure Architecture Center](https://docs.microsoft.com/azure/architecture/guide/)
+- [Overview of Azure compute options](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview)

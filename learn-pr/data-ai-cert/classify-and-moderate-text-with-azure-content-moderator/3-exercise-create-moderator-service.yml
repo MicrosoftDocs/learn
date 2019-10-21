@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.exercise-create-moderator-service
-title: Create a Content Moderator Service
+title: Create and subscribe to a Content Moderator resource
 metadata:
-  title: Create a Content Moderator Service
-  description: Learn how to create a Content Moderator service in the Azure Portal
+  title: Create and subscribe to a Content Moderator resource
+  description: Learn how to create and subscribe to a Content Moderator resource in the Azure portal.
   ms.date: 1/28/2019
   author: gerryaobrien
   ms.author: gerryo

@@ -4,7 +4,7 @@ As with input bindings, there are multiple types of output bindings. However not
 
 - **Blob Storage** - You can use the blob output binding to write blobs.
 
-- **Cosmos DB** - The Azure Cosmos DB output binding lets you write a new document to an Azure Cosmos DB database using the SQL API.
+- **Azure Cosmos DB** - The Azure Cosmos DB output binding lets you write a new document to an Azure Cosmos DB database using the SQL API.
 
 - **Event Hubs** - Use the Event Hubs output binding to write events to an event stream. You must have send permission to an event hub to write events to it.
 

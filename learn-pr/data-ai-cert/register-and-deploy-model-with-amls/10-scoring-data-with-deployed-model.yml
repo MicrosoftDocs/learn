@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.register-and-deploy-model-with-amls.scoring-data-with-deployed-model
+title: Exercise - Score data with the deployed model
+metadata:
+  title: Exercise - Score data with the deployed model
+  description: Exercise - Score data with the deployed model
+  ms.date: 01/31/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/10-scoring-data-with-deployed-model.md)]

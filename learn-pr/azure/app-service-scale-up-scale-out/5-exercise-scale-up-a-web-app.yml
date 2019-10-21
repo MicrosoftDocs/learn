@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.app-service-scale-up-scale-out.5-exercise-scale-up-a-web-app
+title: Exercise - Scale up a web app
+metadata:
+  title: Exercise - Scale up a web app
+  description: Scale a web app up and down.
+  ms.date: 04/11/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise-scale-up-a-web-app.md)]

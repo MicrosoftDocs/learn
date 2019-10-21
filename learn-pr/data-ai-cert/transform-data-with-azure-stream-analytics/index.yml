@@ -1,26 +1,25 @@
 ### YamlMime:Module
 uid: learn.data-ai.transform-data-with-azure-stream-analytics
 metadata:
-  title: Transform data with Azure Stream Analytics - Learn
-  description: Learn how to create Azure Stream Analytics jobs to process input data, transform it with a query, and output the results - Learn
+  title: Transform data by using Azure Stream Analytics
+  description: Learn how to create Azure Stream Analytics jobs to process input data, transform it with a query, and return results
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: smmark
-title: Transform data with Azure Stream Analytics
-summary: Learn how to create Azure Stream Analytics jobs to process input data, transform it with a query, and output the results.
+title: Transform data by using Azure Stream Analytics
+summary: Learn how to create Azure Stream Analytics jobs to process input data, transform it with a query, and return results.
 abstract: | 
   In this module you will:
-  - Explore the Streaming Analytics workflow
-  - Create a Stream Analytics Job
-  - Configure a Stream Analytics job input
-  - Configure a Stream Analytics job output
-  - Write a transformation query
-  - Start a Stream Analytics job
-prerequisites: An Azure account or active trial.
-ratingEnabled: true
+  - Explore the Stream Analytics workflow.
+  - Create a Stream Analytics job.
+  - Set up a Stream Analytics job input.
+  - Set up a Stream Analytics job output.
+  - Write a transformation query.
+  - Start a Stream Analytics job.
+prerequisites: An Azure account or active trial
 iconUrl: /learn/achievements/data-ai/transform-data-with-azure-stream-analytics-badge.svg
 levels:
 - beginner

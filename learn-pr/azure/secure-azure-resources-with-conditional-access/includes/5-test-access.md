@@ -1,6 +1,7 @@
-In the previous exercises, we created a directory, created a user and group, and then created a conditional access rule that requires Azure Multi-Factor Authentication when accessing the Azure portal. Now, we'll test if we can access our resources.
+> [!NOTE]
+> This exercise is optional. You may complete the steps below in your own account. Charges may occur.
 
-[!include[](../../../includes/azure-lab-environment-not-available.md)]
+In the previous exercises, we created a directory, created a user and group, and then created a conditional access rule that requires Azure Multi-Factor Authentication when accessing the Azure portal. Now, we'll test if we can access our resources.
 
 ## Test access to resources
 

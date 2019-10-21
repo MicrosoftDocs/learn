@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.explore-azure-dsvm-types.windows-dsvms
+title: Windows-Based Data Science VMs
+metadata:
+  title: Windows-Based Data Science VMs
+  description: Windows-Based Data Science VMs
+  ms.date: 01/31/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-windows-dsvms.md)]

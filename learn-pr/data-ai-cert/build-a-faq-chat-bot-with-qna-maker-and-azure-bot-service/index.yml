@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.data-ai.build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service
 metadata:
-  title: Build an FAQ chatbot with QnA Maker and Azure Bot Service - Learn
-  description: In this module, you'll learn about QnA Maker and how to integrate it with a bot - Learn
+  title: Build an FAQ chatbot with QnA Maker and Azure Bot Service
+  description: In this module, you'll learn about QnA Maker and how to integrate it with a bot
   ms.date: 2/25/2019
   author: gerryaobrien
   ms.author: gerryo
@@ -17,7 +17,6 @@ abstract: |
   - Integrate a knowledge base with a bot.
 title: Build an FAQ chatbot with QnA Maker and Azure Bot Service
 summary: Learn about QnA Maker and how to integrate it with a bot
-ratingEnabled: true
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service.svg
 levels: 

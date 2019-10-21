@@ -1,7 +1,5 @@
 First Up Consultants reviews role-based access control (RBAC) changes quarterly for auditing and troubleshooting purposes. You know that changes get logged in [Azure Activity Log](/azure/monitoring-and-diagnostics/monitoring-overview-activity-logs). Your manager has asked if you can generate a report of the role assignment and custom role changes for the last month.
 
-[!include[](../../../includes/azure-lab-environment-not-available.md)]
-
 ## View activity logs
 
 The easiest way to get started is to view the activity logs with the Azure portal.

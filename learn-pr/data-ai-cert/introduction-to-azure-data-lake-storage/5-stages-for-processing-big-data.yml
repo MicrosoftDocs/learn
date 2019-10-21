@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai-introduction-to-azure-data-lake-storage.stages-for-processing-big-data
-title: Understand the stages for processing big data using Azure Data Lake Store
+title: Understand the stages for processing big data by using Azure Data Lake Store
 metadata:
-  title: Understand the stages for processing big data using Azure Data Lake Store - Learn
-  description: Understand the stages for processing big data using Azure Data Lake Store - Learn
+  title: Understand the stages for processing big data by using Azure Data Lake Store
+  description: Understand the stages for processing big data by using Azure Data Lake Store
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill

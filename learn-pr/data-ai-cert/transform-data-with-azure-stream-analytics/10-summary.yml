@@ -2,8 +2,8 @@
 uid: learn.data-ai.transform-data-with-azure-stream-analytics.summary
 title: Summary
 metadata:
-  title: Summary - Learn
-  description: Summary - Learn
+  title: Summary
+  description: Summary
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill
@@ -19,24 +19,24 @@ quiz:
 
   - content: "Which job input consumes data streams from applications at low latencies and high throughput?"
     choices: 
-    - content: "Azure Blob Storage"
+    - content: "Azure Blob storage"
       isCorrect: false
-      explanation: "That is not the correct answer. Azure Blob stores static data that can be rerun through a streaming job."
-    - content: "Event Hubs."
+      explanation: "Incorrect. Azure Blob stores static data that you can rerun through a streaming job."
+    - content: "Azure Event Hubs"
       isCorrect: true
-      explanation: "That is the correct answer. Event hubs consumes data streams from applications at low latencies and high throughput."
-    - content: "IoT Hubs."
+      explanation: "Correct. Event Hubs consumes data streams from applications at low latencies and high throughput."
+    - content: "Azure IoT Hub"
       isCorrect: false
-      explanation: "That is not the correct answer. Azure IoT Hub is a data stream ingestion service that consumes events from IoT devices and also provides bi-directional communication between Azure and IoT devices."
+      explanation: "Incorrect. IoT Hub is a data-stream ingestion service that consumes events from IoT devices. It provides bidirectional communication between Azure and IoT devices."
 
-  - content: "Streaming Analytics Query Language is a subset of which query language?"
+  - content: "The Stream Analytics query language is a subset of which query language?"
     choices: 
     - content: "T-SQL"
       isCorrect: true
-      explanation: "Correct. The query language you use is based heavily on T-SQL."
-    - content: "Logins provide access to the databases within a server and users provide access to the server."
+      explanation: "Correct. The query language you use in Stream Analytics is based heavily on T-SQL."
+    - content: "WQL"
       isCorrect: false
-      explanation: "That is not the correct answer. WQL is Windows Management Instrumentation query language."
+      explanation: "Incorrect. WQL is Windows Management Instrumentation query language."
     - content: "JSON"
       isCorrect: false
-      explanation: "That is not the correct answer. JSON is an open standard file format."
+      explanation: "Incorrect. JSON is an open standard file format."

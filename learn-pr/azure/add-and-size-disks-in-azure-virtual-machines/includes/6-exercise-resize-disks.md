@@ -10,7 +10,7 @@ To resize a disk, you need the ID or name of the disk. In this case, you already
 
     ```azurecli
     az disk list \
-      --query '[*].{Name:name,Gb:diskSizeGb,Tier:accountType}' \
+      --query '[*].{Name:name,Gb:diskSizeGb,Tier:sku.tier}' \
       --output table
     ```
 

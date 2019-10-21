@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.data-ai.automate-model-selection-with-azure-automl.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 01/31/2019
+  author: bcafferky
+  ms.author: brcaffer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which step below isn't part of using AutoML?"
+    choices: 
+    - content: "Configure the compute target to run the experiment."
+      isCorrect: false
+      explanation: "This is not correct. You must configure the compute target to use AutoML."
+    - content: "Select the experiment type."
+      isCorrect: false
+      explanation: "That's not correct. You need to tell AutoML the experiment type."
+    - content: "Deploy the model."
+      isCorrect: true
+      explanation: "This is correct.  Deploying the model is separate from using AutoML."
+  
+  - content: "Which service below is not included as part of AutoML?"
+    choices: 
+    - content: "Data preparation"
+      isCorrect: true
+      explanation: "That is correct.  Data preparation should be done prior to using AutoML."
+    - content: "Machine learning model recommendation"
+      isCorrect: false
+      explanation: "That's not correct.  AutoML supports automation evaluation of models and recommendation of the best one to use."
+    - content: "Hyperparameter tuning"
+      isCorrect: false
+      explanation: "That is correct.  AutoML supports automatics hyperparameter tuning which is covered in detail in another module."
+
+  - content: "One of the AutoMLConfig settings is primary_metric.  Which of the following values is not a valid value for this setting?"
+    choices: 
+    - content: "bayesian_correlation"
+      isCorrect: true
+      explanation: "That is correct.  bayesian_correlation isn't a valid value."
+    - content: "normalized_root_mean_squared_error"
+      isCorrect: false
+      explanation: "That's not correct.  normalized_root_mean_squared_error is a valid value."
+    - content: "spearman_correlation"
+      isCorrect: false 
+      explanation: "That's not correct.  spearman_correlation is a valid value."  
