@@ -4,7 +4,7 @@ With a free Azure account and subscription, you can build, test, and deploy ente
 
 ## What is an Azure account?
 
-An _Azure account_ is an identity in either Azure AD, or a directory that is trusted by Azure AD, such as a work or school organization. It holds information such as:
+An _Azure account_ is an identity in either Azure Active Directory (Azure AD), or a directory that is trusted by Azure AD, such as a work or school organization. It holds information such as:
 
 - Name, email, and contact preferences
 - Billing information such as a credit card
