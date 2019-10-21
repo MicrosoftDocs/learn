@@ -9,7 +9,6 @@ metadata:
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 14
 content: |
   [!include[](includes/6-deploy-pipeline.md)]

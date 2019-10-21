@@ -144,7 +144,7 @@ The VSTeam library needs to access your Azure DevOps organization, so it require
 1. Select **Azure DevOps Profile**.
 1. In the **User Settings** pane on the left, under **Security**, select **Personal access tokens**.
 
-  ![Profile page select personal access token](../media/7-select-personal-access-token.png)
+    ![Profile page select personal access token](../media/7-select-personal-access-token.png)
 
 1. Select **+ New Token**
 1. Enter **Database Changes** as the name and select **Full access**.
@@ -185,4 +185,4 @@ The VSTeam library needs to access your Azure DevOps organization, so it require
 
 ## Recommended practices
 
-In this exercise, you created a variable to use as a condition for a stage. In practice, the variable must be unique per pipeline run since you may be running this pipeline in parallel with other changes. If you are using the **Release Pipeline (classic)** editor for your project, you can use the [suggested PowerShell from Donovan Brown](http://donovanbrown.com/post/Passing-variables-from-stage-to-stage-in-Azure-DevOps-release?azure-portal=true) to create a variable that is unique to that specific release. However, since you used the preview multi-stage YAML pipeline in this exercise, it is not possible yet to create this scenario. This is a feature that is planned in the future. It will be added to this exercise when the feature releases.
+In this exercise, you created a variable to use as a condition for a stage. In practice, the variable must be unique per pipeline run since you may be running this pipeline in parallel with other changes. If you are using the **Release Pipeline (classic)** editor for your project, you can use the [suggested PowerShell from Donovan Brown](http://donovanbrown.com/post/Passing-variables-from-stage-to-stage-in-Azure-DevOps-release?azure-portal=true) to create a variable that is unique to that specific release.

@@ -5,7 +5,7 @@ In this module, you learned about the considerations that are needed when you ad
 You learned:
 
 - How to access an Azure SQL Database from Azure App Service.
-- How to add database schema changes to Azure pipelines approvals.
+- How to add database schema changes to Azure Pipelines approvals.
 - How to make sure an approval is needed only where there are actual schema changes.
 
 The team successfully designed and built a pipeline that manages the database changes as well as the application changes.
