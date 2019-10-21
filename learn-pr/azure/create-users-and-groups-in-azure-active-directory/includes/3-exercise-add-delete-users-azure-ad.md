@@ -2,8 +2,6 @@ You need to add member user accounts for the new developer team in your organiza
 
 In this exercise, you'll create a new Azure Active Directory (Azure AD) tenant to hold all of your user accounts. You'll also create a user account, delete a user account, and learn how to recover a deleted user account.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create an Azure AD tenant
 
 Create a new directory to hold all of the users you create in this exercise.
