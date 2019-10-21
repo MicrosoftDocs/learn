@@ -26,7 +26,7 @@ With Node.js and Express.js, you can create a webapp very quickly.
 
 Suppose you've been asked to start building the website to promote the new video game launch. You've decided to use Node.js to run server-side code and, to make the development as quick as possible, you're going to use the Express.js framework for webapps. You want to create a quick, proof-of-concept webapp that displays a countdown to the launch date.
 
-Here, you install the necessary software and then use Visual Studio Code to create and test a website.
+Here, you'll install the necessary software and then use Visual Studio Code to create and test a website.
 
 > [!NOTE]
 > You must have Visual Studio Code installed on your Windows computer before you begin this exercise.
@@ -103,7 +103,7 @@ Express in now installed, but you can use the Express Generator tool to create a
 
 ## Calculate the countdown
 
-You now have a functional webapp that Node.js can run. Let's modify its code to calculate the number of days to display:
+You now have a functional webapp that Node.js can run. Let's modify its code to calculate the amount of time to display:
 
 1. To edit the **index.js** file in Code, type the following commands:
 
@@ -117,7 +117,7 @@ You now have a functional webapp that Node.js can run. Let's modify its code to 
     ```JavaScript
     var launchTime = new Date("January, 1, 2020").getTime();
     var currentTime = new Date().getTime();
-    var numberOfDays = parseInt((launchTime - currentTime)/(24*3600*1000));
+    var numberOfMilliseconds = parseInt(launchTime - currentTime);
     ```
 
 1. Locate this line of code:
@@ -129,7 +129,7 @@ You now have a functional webapp that Node.js can run. Let's modify its code to 
 1. Replace that line with this line of code:
 
     ```JavaScript
-    res.render('index', { title: 'Countdown to Launch', countDown: numberOfDays });
+    res.render('index', { title: 'Countdown to Launch', countDown: numberOfMilliseconds });
     ```
 
 1. On the **File** menu, select **Save**, then close the **index.js** file.
@@ -160,7 +160,7 @@ Now, modify the default homepage for the webapp to display the countdown:
 1. Add this new line of code at the end of the file:
 
     ```jade
-    p Countdown: #{countDown} days
+    p Countdown: #{countDown} milliseconds
     ```
 
 1. On the **File** menu, select **Save** and then close the **index.jade** file.

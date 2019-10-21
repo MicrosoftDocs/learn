@@ -2,7 +2,7 @@ In Visual Studio Code, you can use the Azure App Service extension to create and
 
 Suppose you have started to create the new website that will promote the new video game launch. The new site has been written in JavaScript and uses Node.js and Express.js. You've decided that the completed website will be hosted in the Azure App Service. Now, you want to create that instance of the App Service and deploy the first version of the website to it.
 
-In this unit, you will use Visual Studio Code to deploy the Express.js site, which you created in the last exercise, to Azure.
+In this unit, you'll use Visual Studio Code to deploy the Express.js site, which you created in the last exercise, to Azure.
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 

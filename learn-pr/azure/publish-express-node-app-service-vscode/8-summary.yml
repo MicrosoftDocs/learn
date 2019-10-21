@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.publish-express-node-app-service-vscode.4-summary
+uid: learn.azure.publish-express-node-app-service-vscode.8-summary
 title: Summary
 metadata:
   title: Summary
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
-  [!include[](includes/4-summary.md)]
+  [!include[](includes/8-summary.md)]
