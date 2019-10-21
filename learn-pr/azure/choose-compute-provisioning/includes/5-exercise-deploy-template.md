@@ -74,11 +74,13 @@ In the following exercise, you'll use an Azure Resource Manager template to prov
 
 1. Navigate to your storage account.  Select **Resource groups**, select your resource group, then select your storage account.
 
-1. Select **Containers > Container**. Give your container a name and select **OK**.
+1. Select **Containers > Container**. Give your container a name, select **Container (anonymous read access for containers and blobs)** for **Public access level**.
+
+1. Select **OK**.
 
     ![Add a container](../media/5-create-container.png)
 
-1. Select **Upload**, browse for your *zip* file, then select **Upload**.
+1. Select **Upload**, browse for your *Webserver.zip* file, then select **Upload**.
 
     ![Upload the zip file](../media/5-upload-file-to-storage-account.png)
 
