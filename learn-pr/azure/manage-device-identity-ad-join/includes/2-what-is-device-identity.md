@@ -1,18 +1,18 @@
-Your organization wants to add another layer of device-level security. You want to understand what is meant by device identity. You also want to know how to build up details of any device added to your network.
-
 Azure's device identity is a mechanism that allows you to control what devices can be added to your organization's active directory, and what data, resources, and assets they can access.
 
-In this unit, you'll learn what is meant by device identity, what registration options are available, and how they apply to various devices. You'll see how you can apply condition access to bring about better access control with your devices. Finally, you'll look at the merits and considerations of using device identity in Azure.
+Your organization wants to add another layer of device-level security. You want to understand what is meant by device identity. You also want to know how to build up details of any device added to your network.
+
+In this unit, you'll learn about device identity, the registration options, and how they apply to various devices. You'll see how you can apply condition access to improve access control with your devices. Finally, you'll look at the benefits, and the considerations, of using device identity in Azure.
 
 ## What is device identity
 
-Today's work environment extends beyond the defined and controllable boundaries of your on-premises workspace. Today, your staff can expect to work in different locations, not only here but abroad. Your users have access to a broader range of technologies. Some are owned by your organization, others that aren't.
+Today's work environment extends beyond the controllable boundaries of your on-premises workspace. Today, your staff can work in different locations, not only here but abroad. Your users have access to a broader range of technologies. Some are owned by your organization, others aren't.
 
-The challenge faced by IT staff is a difficult one. You want to support your users, enabling them to be productive wherever they're working, and on whatever device they're using. But you still need to keep your organization's resources and assets safe.
+The challenge faced by IT staff is how can give your users flexibility, while protecting your company's data. You want to support your users, enabling them to be productive wherever they're working, 2on whatever device they're using. But you still need to keep your organization's resources and assets safe.
 
 Finding a balance between protecting assets and allowing users greater flexibility in the devices they use is at the heart of device identity. Every device you want to connect to your network must be known. Tools, such as Microsoft Intune, can enhance what is known about a device by ensuring compliance with organization requirements.
 
-Device identity management provides a framework for implementing device-based Conditional Access. Using a device-based conditional access policy, you can limit access to your organization's assets and resources to managed and known devices.
+Device identity management provides a framework for implementing device-based conditional access. Using a device-based conditional access policy, you can limit access to your organization's assets and resources to managed and known devices.
 
 When combined with Azure Active Directory, through single sign-on, your users can access their services and apps through any device. Which meets both your organization's need to protect its resources and assets and provides the users with the flexibility to work as they need.
 
@@ -20,9 +20,11 @@ When combined with Azure Active Directory, through single sign-on, your users ca
 
 There are three options for adding a device to your Azure Active Directory (AD). Azure registered, AD joined, and hybrid.
 
-- Azure AD registered devices fall into the Bring Your Own Device (BYOD) category. They're privately owned and use a personal or local Microsoft account. This method of device registration is the most promiscuous as it supports devices running Windows 10, iOS, iPadOS, Android, and MacOS. Device security is typically provided from password, PIN, pattern, or Windows Hello.
-- Azure AD joined devices are owned by your organization. They access your cloud-based Azure AD thought their work account. This option is only available to Windows 10 devices, typically laptops, tablets, etc. Security for this option uses either a password or Microsoft Hello.
-- Hybrid Azure AD joined, is similar to AD joined. The devices are owned by the organization, and access is through the same organizations Azure Active directory. The hybrid option is better suited to organizations that need on-premises access including the cloud. This option supports Windows 7, 8.1 and 10, and Windows Server 2008 or better.
+1. Azure AD registered devices fall into the Bring Your Own Device (BYOD) category. They're privately owned and use a personal or local Microsoft account. This method of device registration is the most promiscuous as it supports devices running Windows 10, iOS, iPadOS, Android, and MacOS. Device security is typically provided from password, PIN, pattern, or Windows Hello.
+
+1. Azure AD joined devices are owned by your organization. They access your cloud-based Azure AD thought their work account. This option is only available to Windows 10 devices, typically laptops, tablets, etc. Security for this option uses either a password or Microsoft Hello.
+
+1. Hybrid Azure AD joined, is similar to AD joined. The devices are owned by the organization, and access is through the same organizations Azure Active directory. The hybrid option is better suited to organizations that need on-premises access including the cloud. This option supports Windows 7, 8.1 and 10, and Windows Server 2008 or better.
 
 ## Conditional Access
 
@@ -50,7 +52,9 @@ There are many common signal types that Conditional Access uses to make a decisi
 Conditional Access evaluates the signals and will, at a granular level, provide a decision:
 
 - Block access, which is the most restrictive
-- Grant access, which is the least restrictive, but may require additional criteria before allowing access. These other criteria can be one or more of:
+- Grant access, which is the least restrictive, but may require additional criteria before allowing access.
+
+These other criteria can be one or more of:
 
   - Multi-factor authentication
   - The device marked as compliant

@@ -26,7 +26,7 @@ Follow these steps to enable enterprise state roaming.
 
 1. Sign in to the [**Azure AD admin center**](https://aad.portal.azure.com/)
 1. Select **Azure Active Directory** > **Devices** > **Enterprise State Roaming**
-1. Select **Users may sync settings and app data across devices. You can select All, Selected, or None. Selected will ask you to nominate the users or groups that will use enterprise state roaming.
+1. Select **Users may sync settings and app data across devices**. You can select All, Selected, or None. Selected will ask you to nominate the users or groups that will use enterprise state roaming.
 
 ## Data storage
 
@@ -46,8 +46,8 @@ Explicit data deletion is when an Azure Admin acts upon a user, a directory with
 
 ### Stale data deletion
 
-  Any enterprise state roaming data that hasn't been accessed during the past year is automatically trodden as stale data. Stale data is deleted from host cloud storage. The retention period of deleted data will be no less than 90 days.
+Any enterprise state roaming data that hasn't been accessed during the past year is automatically treated as stale data. Stale data is deleted from host cloud storage. The retention period of deleted data will be no less than 90 days.
 
 ### Deleted data recovery
 
-  The data retention periods aren't immutable. Once the allotted retention period has elapsed, the data is permanently deleted and can't be recovered. Which applies only to the settings held in the cloud and not to the device. So, if a device, whose settings were previously removed from the cloud were to sign in again, their settings would be synced to the cloud once more.
+The data retention periods can't be changed. Once the allotted retention period has elapsed, the data is permanently deleted and can't be recovered. This only applies to the settings held in the cloud not on the device. So, if a device, whose settings were previously removed from the cloud were to sign in again, their settings would be synced back to the cloud.

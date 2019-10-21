@@ -74,13 +74,13 @@ Your organization wants to provide a second layer of security when a new device 
 
 1. After powering up the device, you'll follow the prompts to set up your device, including customizing your region and selecting a language
 
-    ![Screenshot showing the region customization for Windows 10](../media/2-walk-setup-pc.png)
+    ![Screenshot showing the region customization for Windows 10](../media/3-walk-setup-pc.png)
 
 1. Accept the Microsoft Software Licensing Terms
 1. Select the network connection you'll be using to connect to the cloud.
 1. When asked, "who owns this PC?" you'll select the "This device belongs to my organization".
 
-    ![Screenshot showing the who owns this pc prompt](../media/2-walk-who-owns.png)
+    ![Screenshot showing the who owns this pc prompt](../media/3-walk-who-owns.png)
 1. Sign in with the credentials supplied by your organization.
 1. You'll be prompted with a multi-factor authentication challenge.
 1. The Azure AD will check the configuration settings to see if the device should be enrolled in MDM.
