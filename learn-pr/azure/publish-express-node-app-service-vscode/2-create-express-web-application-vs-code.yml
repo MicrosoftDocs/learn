@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
-  [!include[](includes/2-create-express-web-application-vs-code)]
+  [!include[](includes/2-create-express-web-application-vs-code.md)]
