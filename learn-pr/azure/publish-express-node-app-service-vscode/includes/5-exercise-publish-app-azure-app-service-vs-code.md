@@ -6,6 +6,8 @@ In this unit, you'll use Visual Studio Code to deploy the Express.js site, which
 
 [!include[](../../../includes/azure-sandbox-activate.md)]
 
+[!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+
 ## Install the Azure App Service extension in Visual Studio Code
 
 The **Azure App Service** extension is not installed by default in Visual Studio Code. Let's start by installing it:
@@ -33,14 +35,15 @@ To view and make changes in your Azure subscription, first authenticate yourself
 Now that the extension is installed, we can use it to create an instance of the App Service, as well as a resource group, and a service plan, in your subscription:
 
 1. In Visual Studio Code, in the **Azure** explorer, under **APP SERVICE**, select the **Concierge Subscription**.
-1. Right-click the **Concierge Subscription**, and then select **Create new web app**.
+1. Right-click the **Concierge Subscription**, and then select **Create new web app... (Advanced)**.
 1. In the first page of the **Create new web app** wizard, type a globally unique name for the app, such as **LaunchCountDown&lt;your initials&gt;**, and then press Enter.
 
     ![Create new web app](../media/5-create-new-web-app-1.png)
 
-1. In the second page of the wizard, select **Linux**, and then select **12 LTS**. Visual Studio Code creates a resource group, App Service plan, and webapp in your Azure subscription.
-
-<!-- TODO: In the sandbox, this caused an authorization error. The policy may need to be updated. -->
+1. Select the resource group <rgn>[sandbox resource group name]</rgn>, select **Linux**, and then select **Node 12 LTS**. 
+1. Select **Create new App Service plan** and name the new plan **LaunchCountDownPlan**.
+1. Select the **F1 free** tier and skip creating a new Application Insights resource.
+1. Select an Azure region near you from the list above. Visual Studio Code creates a resource group, App Service plan, and webapp in your Azure subscription.
 
 ## Deploy the Express.js webapp to the  Azure App Service
 
