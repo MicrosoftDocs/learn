@@ -2,12 +2,12 @@ Now we’re going to make a neural network using Keras. We’ll see if we can im
 
 The exercises for this module use Azure Notebooks. It is a free-to-use resource.
 
-If the links below don't work, you will need to set up your free Azure Notebooks account and clone the project for this module. See the [GitHub repository](https://github.com/MicrosoftDocs/mslearn-intro-to-ai-concepts) for instructions to get started.
+If the links below don't work, you will need to set up your free Azure Notebooks account and clone the project for this module. See the [Python GitHub repository](MicrosoftDocs/ms-learn-ml-crash-course-python) or the [R GitHub repository](MicrosoftDocs/ms-learn-ml-crash-course-R) for instructions to get started.
 
-**Python users** go to your __[library](https://notebooks.azure.com/home/libraries/Python)__.  
+**Python users** go to your __[library](https://notebooks.azure.com/home/libraries/ms-learn-ml-crash-course-pytho)__.  
 Select the exercise `09. Neural Networks Advanced - Python.ipynb`.  
 Then click then click __'Run on Free Compute'__.  
 
-**R users** go to your __[library](https://notebooks.azure.com/home/libraries/R-Exercises)__.  
+**R users** go to your __[library](https://notebooks.azure.com/home/libraries/ms-learn-ml-crash-course-R)__.  
 Select the exercise `09. Neural Networks Advanced - R.ipynb`.  
 Then click then click __'Run on Free Compute'__.  
