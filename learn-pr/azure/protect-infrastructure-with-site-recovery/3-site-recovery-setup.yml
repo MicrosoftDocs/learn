@@ -12,3 +12,18 @@ title: Prepare for disaster recovery with Azure Site Recovery
 durationInMinutes: 5
 content: |
   [!include[](includes/3-site-recovery-setup.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "How are storage accounts used by Site Recovery to store data backups?"
+    choices: 
+    - content: "Site Recovery creates recovery services vaults."
+      isCorrect: true
+      explanation: "Recovery services vaults are used to store backup data, VM configuration settings, and workloads."
+    - content: "Site Recovery creates docker containers using storage accounts."
+      isCorrect: false
+      explanation: "Docker containers aren't used, Site Recovery uses recovery services vaults to store backup data, VM configuration settings, and workloads."
+    - content: "Site Recovery creates and stores managed disks."
+      isCorrect: false
+      explanation: "Managed disks aren't used, Site Recovery uses recovery services vaults to store backup data, VM configuration settings, and workloads."

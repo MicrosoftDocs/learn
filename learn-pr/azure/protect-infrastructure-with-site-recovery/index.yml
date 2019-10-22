@@ -34,6 +34,7 @@ units:
 - learn.protect-infrastructure-with-azure-site-recovery.6-exercise-run-disaster-recovery-drill
 - learn.protect-infrastructure-with-azure-site-recovery.7-failover-and-failback
 - learn.protect-infrastructure-with-azure-site-recovery.8-exercise-failover-and-failback
+- learn.protect-infrastructure-with-azure-site-recovery.knowledge-check
 - learn.protect-infrastructure-with-azure-site-recovery.9-summary
 badge:
   uid: learn.protect-infrastructure-with-azure-site-recovery.badge
