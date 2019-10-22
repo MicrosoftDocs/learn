@@ -9,24 +9,7 @@ metadata:
   ms.author: adrianstevens
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: true
+  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-enable-application-insights.md)]
-tasks:
-# Verify the resource web app is created.
-- action: exists
-  environment: azure
-  azure:
-    resource:
-
-      type: "Microsoft.Web/sites"
-      
-  hint: "Review the Complete the web app creation section."
-# Verify the Application Insights resource is created.
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "microsoft.insights/components"      
-  hint: "Review the Enable Application Insights for the web app section."  

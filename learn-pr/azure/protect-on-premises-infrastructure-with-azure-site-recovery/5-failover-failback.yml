@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.5-failover-failback
+metadata:
+  title: Failover and failback
+  description: Explore the differences between failover and failback, and how you get a failback policy created automatically after you've set up a replication policy to Azure.
+  ms.date: 08/01/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Failover and failback
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-failover-failback.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is meant by the terms failover and failback in the context of disaster recovery?"
+    choices:
+    - content: Failover is the transfer of workload from the secondary site to a primary site during a test or disaster recovery scenario. Failback is when the workload gets transferred back to the secondary site.
+      isCorrect: false
+      explanation: These descriptions are incorrect because they're the wrong way around.
+    - content: Failover is the time taken between discovering there has been a disaster and invoking actual disaster recovery. Failback is the time taken between fixing the disaster and when the environment is running from the primary site again.
+      isCorrect: false
+      explanation: Neither of these definitions are correct because they mention time taken, which is incorrect.
+    - content: Failover is the transfer of workload to a secondary site during a test or disaster scenario. Failback is when the workload gets transferred back over to the primary site from the secondary site.
+      isCorrect: true
+      explanation: These descriptions are correct. A failover is when the primary site fails over to the secondary site, and a failback is the reverse of this.
+  - content: "What is the correct order for the four stages of failover and failback when you replicate your on-premises environment to Azure?"
+    choices:
+    - content: Reprotect Azure virtual machines by replicating back to on-premises. Fail over to the secondary site on Azure. Fail back to the primary on-premises site. Reprotect the on-premises virtual machines by replicating to Azure.
+      isCorrect: false
+      explanation: These stages are all correct, but they're in the wrong order. The order should be fail over to Azure, reprotect Azure, fail back to on-premises, and reprotect on-premises.
+    - content: Fail back to the primary on-premises site. Reprotect the on-premises virtual machines by replicating to Azure. Fail over to the secondary site on Azure. Reprotect the Azure virtual machines by replicating back to on-premises.
+      isCorrect: false
+      explanation: These stages are all correct, but they're in the wrong order. The order should be fail over to Azure, reprotect Azure, fail back to on-premises, and reprotect on-premises.
+    - content: Fail over to the secondary site on Azure. Reprotect the Azure virtual machines by replicating back to on-premises. Fail back to the primary on-premises site. Reprotect the on-premises virtual machines by replicating to Azure.
+      isCorrect: true
+      explanation: These are the correct steps in the correct order.

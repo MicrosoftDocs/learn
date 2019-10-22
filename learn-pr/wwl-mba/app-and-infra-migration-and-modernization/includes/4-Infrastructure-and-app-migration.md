@@ -14,7 +14,7 @@ Microsoft has designed the Azure IaaS solution to offer a large set of advantage
 
 |  |  |
 | ------------ | -------------|
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to get an end-to-end understanding of each of these benefits and how they enable digital transformation in your company.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to get an end-to-end understanding of each of these benefits and how they enable digital transformation in your company.|
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWroKA]
 
@@ -45,13 +45,13 @@ To succeed in today’s disruptive business environment, you can’t afford to w
 Let’s hear from some of our customers about this partnership.  
 
 ---------------
-*The strategic partnership announced between Microsoft and SAP is an extremely important development for the Coca-Cola System. The value of aligned engineering, sales, and delivery between these two strategic partners will allow our system to accelerate our digital agenda.*
+![image of quotes](../media/quote.png)*The strategic partnership announced between Microsoft and SAP is an extremely important development for the Coca-Cola System. The value of aligned engineering, sales, and delivery between these two strategic partners will allow our system to accelerate our digital agenda.*
 
 ⸺Barry Simpson, Senior Vice President and Chief Information Officer, The Coca-Cola Company
 
 ---------------
 
-*SAP and Microsoft are key partners with Costco, and this alliance will help drive our cloud strategy and digital business forward.*
+![image of quotes](../media/quote.png)*SAP and Microsoft are key partners with Costco, and this alliance will help drive our cloud strategy and digital business forward.*
 
 ⸺Jim Rutherford, Senior Vice President of Information Systems at Costco Wholesale.
 

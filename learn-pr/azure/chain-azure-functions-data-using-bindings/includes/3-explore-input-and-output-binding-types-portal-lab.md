@@ -4,8 +4,6 @@ The following is a high-level illustration of what we're going to build in this 
 
 We'll create a function that will start when it receives an HTTP request and will respond to each request by sending back a message. The parameters `req` and `res` are the trigger binding and output binding, respectively.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create a function app
 
 Let's create a function app that we'll use throughout this entire module. A function app lets you group functions as a logical unit for easier management, deployment, and sharing of resources.
@@ -23,12 +21,10 @@ Let's create a function app that we'll use throughout this entire module. A func
     | **Resource Group**|  Select **Use existing** and choose _<rgn>[sandbox resource group name]</rgn>_ | Name of the resource group in which to create your function app. |
     | **OS** | Windows | The operating system that hosts the function app.  |
     | **Hosting Plan** |   Consumption plan | Hosting plan that defines how resources are allocated to your function app. In the default **Consumption Plan**, resources are added dynamically as required by your functions. In this serverless hosting model, you only pay for the time your functions run.   |
-    | **Location** | Select from the list | Choose the nearest one to you that is also one of the allowed *Sandbox regions* listed below. |
-    | **Runtime Stack** | JavaScript | The sample code in this module is written in JavaScript.  |
+    | **Location** | Select from the list | Choose the region nearest you. |
+    | **Runtime Stack** | Node.js | The sample code in this module is written in JavaScript.  |
     | **Storage** |  Globally unique name |  Name of the new storage account used by your function app. Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog populates the field with a unique name that is derived from the name you gave the app. However, feel free to use a different name or even an existing account. |
-
-    ### Sandbox regions
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+    | **Application Insights** |  Leave default |  Options for collecting monitoring data with Application Insights. |
 
 1. Select **Create** to provision and deploy the function app.
 
@@ -57,7 +53,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. In the list of all templates available to this function app, select **HTTP Trigger** .
 
-1. On the **New Function** screen, change the name if you want, leave the **Authorization level** as _Function_, and click **Create**.
+1. On the **New Function** screen, change the name if you want, leave the **Authorization level** as _Function_, and click **Create**. The Authorization level option determines what kind of key is used to securely access your function. Choosing _Function_ requires callers of your function to provide a function-specific key with their requests.
 
 1. In your new function, click the **</> Get function URL** link at the top right, select **default (Function key)**, and then select **Copy**.
 
@@ -66,7 +62,7 @@ Now that we have a function app, it's time to create a function. A function is a
 1. Add the query string value `&name=Azure` to the end of this URL, and then press Enter on your keyboard to execute the request. You should see a response similar to the following response returned by the function displayed in your browser.
 
     ```output
-    <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">Hello Azure</string>
+    Hello Azure
     ```
 
 As you can see from this exercise so far, you have to select a trigger type when you create a function. Every function has one and only one trigger. In this example, we're using an HTTP trigger, which means that our function starts when it receives an HTTP request. The default implementation, shown in the following screenshot in JavaScript, responds with the value of the parameter *name* it received in the query string or body of the request. If no string was provided, the function responds with a message that asks whomever is calling to supply a name value.

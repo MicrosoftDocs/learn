@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.protect-apis-on-api-management.4-hide-url-transformation
+title: Mask URLs with a transformation policy
+metadata:
+  title: Mask URLs with a transformation policy
+  description: In this module, you will learn about transformation policies and how to use them to modify the content of an API response.
+  ms.date: 05/17/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-hide-url-transformation.md)]

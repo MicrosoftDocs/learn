@@ -17,7 +17,6 @@ abstract: |
 prerequisites: |
   - Ability to create and develop NoSQL databases
   - Ability to create and develop Azure Cosmos DB databases
-  - Ability to parse JSON data by using C#
 iconUrl: /learn/achievements/store-and-access-data-cosmos-db-table-api.svg
 levels:
 - beginner

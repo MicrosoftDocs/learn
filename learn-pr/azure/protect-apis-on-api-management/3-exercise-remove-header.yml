@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.protect-apis-on-api-management.3-exercise-remove-header
+title: Exercise - Remove header information
+metadata:
+  title: Exercise - Remove header information
+  description: In this exercise, you will add a web API to Azure API Management and then use a policy to control the HTTP headers that the API returns.
+  ms.date: 05/17/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/3-exercise-remove-header.md)]
+tasks:
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.Web/sites"
+  hint: "Follow the instructions above to create an API app and API Management resource."
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.ApiManagement/service"
+  hint: "Follow the instructions above to create an API app and API Management resource."
