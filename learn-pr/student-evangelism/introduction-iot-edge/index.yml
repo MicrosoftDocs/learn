@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.student-evangelism-intro-to-azure-iot-edge
+uid: learn.oxford.intro-to-iot-edge
 metadata:
   title: "Introduction to Azure IoT Edge"
   description: "Introduction to Azure IoT Edge"
@@ -30,9 +30,9 @@ roles:
 products:
 - azure-iot-edge
 units:
-- learn.student-evangelism-intro-to-azure-iot-edge.introduction
-- learn.student-evangelism-intro-to-azure-iot-edge.what-is-iot-edge
-- learn.student-evangelism-intro-to-azure-iot-edge.how-iot-edge-works
-- learn.student-evangelism-intro-to-azure-iot-edge.when-to-use-iot-edge
-- learn.student-evangelism-intro-to-azure-iot-edge.knowledge-check
-- learn.student-evangelism-intro-to-azure-iot-edge.summary
+- learn.oxford.intro-to-iot-edge.introduction
+- learn.oxford.intro-to-iot-edge.what-is-iot-edge
+- learn.oxford.intro-to-iot-edge.how-iot-edge-works
+- learn.oxford.intro-to-iot-edge.when-to-use-iot-edge
+- learn.oxford.intro-to-iot-edge.knowledge-check
+- learn.oxford.intro-to-iot-edge.summary
