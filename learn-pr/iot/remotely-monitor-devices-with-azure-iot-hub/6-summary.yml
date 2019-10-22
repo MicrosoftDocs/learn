@@ -53,4 +53,4 @@ quiz:
       explanation: Duplicating devices may be a sensible approach, but they are not called IoT Hub device twins.
     - content: 'Device twins are JSON documents that store, in the cloud, device information.'
       isCorrect: true
-      explanation: Azure IoT Hub, by default, maintains a device twin for each device that you connect to IoT Hub. State information includes metadata, configuration settings, and conditions.'
+      explanation: Azure IoT Hub, by default, maintains a device twin for each device that you connect to IoT Hub. State information includes metadata, configuration settings, and conditions.

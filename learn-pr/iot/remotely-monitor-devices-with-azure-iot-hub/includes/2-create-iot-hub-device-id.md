@@ -26,7 +26,7 @@ Now we need to create a single device, the sensor monitoring the cheese cave. If
 
     ![Screenshot showing the creation of an IoT Hub device identity](../media/cheesecave-device-create.png)
 
-1. You should now see your device in the list of devices for the IoT Hub. Click on the device name. Copy your **Device ID**, and the **Primary Connection String** to a text file (using Notepad, or similar text editor). 
+1. You should now see your device in the list of devices for the IoT Hub. Click on the device name. Copy your **Device ID**, and the **Primary Connection String** to a text file (using Notepad, or similar text editor).
 
     > [!IMPORTANT]
     > The connection string you have just copied is the _device_ connection string. There are many other connection strings , including the _service_ connection string, that we also will need. Add a note to your text file that this is the device connection string.

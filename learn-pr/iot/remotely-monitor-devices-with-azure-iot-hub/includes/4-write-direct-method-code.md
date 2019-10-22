@@ -27,13 +27,13 @@ function onSetFanState(request, response) {
     if (fanState == stateEnum.failed) {
         redMessage('Fan has failed and cannot have its state changed');
 
-        // Report failure back to your hub.
+        // Report fan failure back to your hub.
         response.send(400, 'Fan has failed and cannot be set to: ' + request.payload, directMethodResponse);
     } else {
         if (request.payload != "on" && request.payload != "off") {
             redMessage('Invalid state response received in payload');
 
-            // Report failure back to your hub.
+            // Report payload failure back to your hub.
             response.send(400, 'Invalid direct method parameter: ' + request.payload, directMethodResponse);
 
         } else {

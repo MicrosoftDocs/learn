@@ -86,7 +86,6 @@ function redMessage(text) {
 // Send telemetry messages to your hub.
 function sendMessage() {
 
-    // Simulate telemetry.
     let deltaTemperature = Math.sign(desiredTemperature - currentTemperature);
     let deltaHumidity = Math.sign(desiredHumidity - currentHumidity);
 
@@ -103,7 +102,7 @@ function sendMessage() {
         }
     }
     else {
-        // If the fan is off, or has failed, the temperature and humidity will creep up until they reaches ambient values, thereafter fluctuate randomly.
+        // If the fan is off, or has failed, the temperature and humidity will creep up until they reach ambient values, thereafter fluctuate randomly.
         if (currentTemperature < ambientTemperature - 1) {
             currentTemperature += Math.random() / 10;
         } else {
@@ -116,10 +115,10 @@ function sendMessage() {
         }
     }
 
-    // Check: humidity can never exceed 100%
+    // Check: humidity can never exceed 100%.
     currentHumidity = Math.min(100, currentHumidity);
 
-    // Prepare the telemtry message.
+    // Prepare the telemetry message.
     const message = new Message(JSON.stringify({
         temperature: currentTemperature.toFixed(2),
         humidity: currentHumidity.toFixed(2),

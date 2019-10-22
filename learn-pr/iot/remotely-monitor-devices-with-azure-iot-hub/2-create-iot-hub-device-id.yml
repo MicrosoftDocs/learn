@@ -16,20 +16,20 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of these entries for a new IoT Hub is publicly discoverable?'
+  - content: 'Which IoT Hub left-hand menu entry do you select to locate the service connection string?'
     choices:  
-    - content: 'Subscription'
+    - content: 'IoT devices'
       isCorrect: false
-      explanation: You might have a few subscriptions available to you, but none are exposed publicly.
-    - content: 'Resource Group'
+      explanation: This is where you look for the device connection string.
+    - content: 'Pricing and scale'
       isCorrect: false
-      explanation: A Resource Group is like a folder containing your resources, and is not exposed publicly.  
-    - content: 'Region'
+      explanation: This will tell you your Pricing and scale tier, and the current number of IoT Hub units.  
+    - content: 'Certificates' 
       isCorrect: false
-      explanation: The region is the nearest Azure region to your location, and is not exposed publicly.
-    - content: 'IoT Hub Name'
+      explanation: This is used to upload and manage certificates, not connection strings.
+    - content: 'Shared access policies'
       isCorrect: true
-      explanation: The IoT Hub Name forms part of the URL for your IoT Hub, so is exposed publicly. Take care what names you use!
+      explanation: Under the list of policies, select iothubowner to locate the primary key connection string.
 
   - content: 'All connection strings begin with what text?'
     choices:  
@@ -38,10 +38,10 @@ quiz:
       explanation: A primary key is part of a connection string, but these exact words do not appear.
     - content: 'SharedAccessKey'
       isCorrect: false
-      explanation: This term does appear in connection strings, but does not start the sting.  
+      explanation: This term does appear in connection strings, but does not start the string.  
     - content: 'HostName='
       isCorrect: true
-      explanation: In our scenario, the host name will reference your custom IoT Hub.
+      explanation: In our scenario, the host name will first reference your custom IoT Hub.
     - content: 'azure-iot'
       isCorrect: false
       explanation: There are some npm libraries we need that begin with azure-iot, but no connection strings.

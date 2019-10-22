@@ -20,10 +20,14 @@ registry.getTwin(deviceId, function (err, twin) {
         const desiredTemp = 50;
         const desiredHumidity = 85;
         const setDesiredValues = {
+
+            // Tags are not shared with the device, they are known only to IoT Hub.
             tags: {
                 customerID: 'Customer1',
                 cellar: 'Cellar1'
             },
+
+            // Properties are shared with the device.
             properties: {
                 desired: {
                     patchId: "Set values",
@@ -49,7 +53,7 @@ registry.getTwin(deviceId, function (err, twin) {
 
 function queryTwins() {
 
-    // Send a SQL query, to determine all the devices in Cellar1.
+    // Send a SQL query, to determine all the devices in "Cellar1".
     const query = registry.createQuery("SELECT * FROM devices WHERE tags.cellar = 'Cellar1'", 100);
     query.nextAsTwin(function (err, results) {
         if (err) {
