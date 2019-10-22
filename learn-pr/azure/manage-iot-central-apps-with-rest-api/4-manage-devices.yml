@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.manage-iot-central-apps-with-rest-api.4-manage-devices
+uid: learn.iot.manage-iot-central-apps-with-rest-api.manage-devices
 title: Add device templates and devices to your application programmatically
 metadata:
   title: Add device templates and devices to your application programmatically
@@ -9,7 +9,6 @@ metadata:
   ms.author: dobetts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 content: |
   [!include[](includes/4-manage-devices.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.manage-iot-central-apps-with-rest-api.7-exercise-control-devices
+uid: learn.iot.manage-iot-central-apps-with-rest-api.exercise-control-devices
 title: Exercise - Monitor and control your devices programmatically
 metadata:
   title: Exercise - Monitor and control your devices programmatically
@@ -9,7 +9,6 @@ metadata:
   ms.author: dobetts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 azureSandbox: true
 interactive: bash

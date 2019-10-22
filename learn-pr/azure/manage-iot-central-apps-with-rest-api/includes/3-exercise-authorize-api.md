@@ -2,7 +2,7 @@ Create an IoT Central application for your devices to connect to and be managed 
 
 You want to create an IoT Central application to test integration with your store management application.
 
-In this unit, you use the Azure CLI to create an IoT Central application from the **Preview application** template. This application template enables the preview REST API. You run the CLI commands in the Azure sandbox activated for this module and then navigate to the application's web UI. In the web UI, you complete the setup by generating an API token to use to authorize REST API calls.
+In this unit, you'll use the Azure CLI to create an IoT Central application from the **Preview application** template. This application template enables the preview REST API. You'll run the CLI commands in the Azure sandbox activated for this module and then navigate to the application's web UI. In the web UI, you complete the setup by generating an API token to authorize REST API calls.
 
 ## Install the Azure IoT CLI extension
 
@@ -20,8 +20,7 @@ The following steps create an IoT Central application and generate an API token 
 1. Run the following commands in the Cloud Shell to generate a unique name for your IoT Central application and save it in an environment variable to use later:
 
     ```azurecli
-    SUFFIX=`date | md5sum | head -c5`
-    APP_NAME="store-manager-${SUFFIX}"
+    APP_NAME="store-manager-$RANDOM"
     echo "Your application name is: $APP_NAME"
 
     ```
@@ -46,7 +45,7 @@ The following steps create an IoT Central application and generate an API token 
 
     ![API Tokens](../media/3-tokens.png)
 
-1. Select **+ Generate Token**. Add **admin** as the **Token name** and select **Application Administrator** as the **Role**. Then select **Generate**:
+1. Select **+ Generate Token**. Enter `admin` as the **Token name** and make sure **Application Administrator** is selected as the **Role**. Then select **Generate**:
 
     ![Generate API token](../media/3-generate-token.png)
 
