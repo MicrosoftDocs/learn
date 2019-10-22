@@ -2,7 +2,7 @@
 uid: learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub.write-telemetry-code
 metadata:
   title: Write code to send and receive telemetry
-  description: Write code, in Node.js, to transmit simulated wine cellar telemetry to an IoT Hub. Also, write a back-end app to confirm the telemetry has been received.
+  description: Write code, in Node.js, to transmit simulated cheese cave telemetry to an IoT Hub. Also, write a back-end app to confirm the telemetry has been received.
   ms.date: 10/01/2019
   author: PeterTurcan
   ms.author: Olivier.Bloch

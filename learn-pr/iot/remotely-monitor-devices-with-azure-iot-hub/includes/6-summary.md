@@ -11,7 +11,7 @@ In this module, you learned how to:
 
 ## Clean up
 
-When you are completely satisfied you do not need to return to the CheeseCaveHub, delete the device, then delete the hub. These options are available in your [Azure portal](https://ms.portal.azure.com/#home).
+When you are satisfied you do not need to return to the CheeseCaveHub, delete the device, then delete the hub. These options are available in your [Azure portal](https://ms.portal.azure.com/#home).
 
 An alternative to deleting individual resources, is to delete the **Resource group**, which will delete all child resources. Ensure first that it is not going to be needed again!
 

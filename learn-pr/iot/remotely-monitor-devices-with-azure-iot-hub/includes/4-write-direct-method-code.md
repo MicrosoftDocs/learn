@@ -6,7 +6,7 @@ In this unit, we will add code to the device app for the direct method, and then
 
 1. Open up the app.js file for the device app.
 
-1. Append the following code to the end of the file. This is the body of the direct method itself, and a single statement to record the direct method with the IoT Hub client.
+1. Append the following code to the end of the file. This code is the body of the direct method itself, and a single statement to record the direct method with the IoT Hub client.
 
 ``` javascript
 // Function to handle the SetFanState direct method call from IoT hub.
@@ -52,7 +52,7 @@ client.onDeviceMethod('SetFanState', onSetFanState);
 > [!NOTE]
 > The fan has three states: _on_, _off_, and _failed_. The method above sets the fan to either of the first two of these states. If the payload text does not match one of these two, or the fan is in a failed state, an error is returned.
 
-That is all that is needed at the device end of things. Next, we need to add code to the back-end service.
+You have completed what is needed at the device end of things. Next, we need to add code to the back-end service.
 
 ## Add code to call a direct method
 
@@ -108,8 +108,8 @@ function sendDirectMethod() {
 
 To test the method, start the apps in the correct order.
 
-1. Start the device app. This will open up a console window, and telemetry will appear.
-1. Start the back-end app. This immediately calls the direct method. Do you notice it is handled by the device app, with output similar to the following image?
+1. Start the device app. A console window will open up, and telemetry will appear.
+1. Start the back-end app. This app immediately calls the direct method. Do you notice it is handled by the device app, with output similar to the following image?
   
     ![Screenshot showing the output when the direct method is run by the back-end service app](../media/cheesecave-direct-method-sent.png)
 
@@ -117,4 +117,4 @@ To test the method, start the apps in the correct order.
 
     ![Screenshot showing the output when the direct method is run by the device app](../media/cheesecave-direct-method-received.png)
 
-Your are now successfully monitoring and controlling a remote device. However, although we have turned the fan on, which will slowly move the environment in the cave to our initial desired settings, we might like to be able to remotely specify those desired settings. We could do this with a direct method, or we could use another feature of IoT Hub called _device twins_. Let's look into the technology of IoT Hub device twins.
+You are now successfully monitoring and controlling a remote device. However, although we have turned on the fan, which will slowly move the environment in the cave to our initial desired settings, we might like to be able to remotely specify those desired settings. We could specify desired settings with a direct method (which is a completely valid approach), or we could use another feature of IoT Hub called _device twins_. Let's look into the technology of IoT Hub device twins.

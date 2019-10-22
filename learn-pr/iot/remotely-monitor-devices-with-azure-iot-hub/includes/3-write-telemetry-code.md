@@ -162,7 +162,7 @@ setInterval(sendMessage, intervalInMilliseconds);
 ### Test your code to send telemetry
 
 1. For Visual Studio, select **Debug/Start Without Debugging**. For Visual Studio Code, in a terminal, navigate to the "CheeseCave" folder, and type `node app.js`.
-1. You should quickly get a console screen, similar to the following image. Note the use of the chalk utility to set some text to green. If you do not get a screen similar to this, check your device connection string carefully.
+1. You should quickly get a console screen, similar to the following image. Note the use of the chalk utility to set some text to green. If you do not get a screen similar to this image, check your device connection string carefully.
 
     ![Screenshot showing the temperature and humidity telemetry being sent](../media/cheesecave-telemetry.png)
 
@@ -281,13 +281,13 @@ EventHubClient.createFromIotHubConnectionString(connectionString).then(function 
 
 ### Test your code to receive telemetry
 
-This is an important test in this module, testing whether your back-end app is picking up the telemetry being sent out by your simulated device. Remember that your device app is still running, and sending telemetry.
+This test is important, checking whether your back-end app is picking up the telemetry being sent out by your simulated device. Remember that your device app is still running, and sending telemetry.
 
 1. Using Visual Studio, select **Debug/Start Without Debugging**. In Visual Studio Code, enter `node app.js` from a terminal opened to the "CheeseCaveOperator" folder.
-1. A second console window should open up, and immediately respond if it successfully connects to IoT Hub. If not, carefully check your IoT Hub service connection string, noting that this should be the _service_ connection string, and not any other.
+1. A second console window should open up, and immediately respond if it successfully connects to IoT Hub. If not, carefully check your IoT Hub service connection string, noting that this string should be the _service_ connection string, and not any other.
 
     ![Screenshot showing the temperature and humidity telemetry being received](../media/cheesecave-telemetry-received.png)
 
 1. Visually compare the telemetry sent and received. Is there an exact match? Is there much of a delay?
 
-If everything is working so far, this is great progress. You have an app sending telemetry from a device, and a back-end app acknowledging  receipt of the data. This covers the _monitoring_ side of our scenario. The next step handles the _control_ side - what to do when there are issues with the data. Clearly, there are issues, we are getting temperature and humidity alerts.
+If everything is working so far, completing this unit is great progress. You have an app sending telemetry from a device, and a back-end app acknowledging receipt of the data. This unit covers the _monitoring_ side of our scenario. The next step handles the _control_ side - what to do when there are issues with the data. Clearly, there are issues, we are getting temperature and humidity alerts.

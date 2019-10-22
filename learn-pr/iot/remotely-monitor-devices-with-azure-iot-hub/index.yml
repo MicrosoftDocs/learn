@@ -2,7 +2,7 @@
 uid: learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub
 metadata:
   title: Remotely monitor and control devices with Azure IoT Hub
-  description: Create an IoT Hub app, to monitor and control a remote device. Develop code to monitor the temperature and humidity of a wine cellar, and to change a fan setting if necessary.
+  description: Create an IoT Hub app, to monitor, and control a remote device. Develop code to monitor the temperature and humidity of a cheese cave, and to change a fan setting if necessary.
   ms.date: 10/01/2019
   author: PeterTurcan
   ms.author: Olivier.Bloch
@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Remotely monitor and control devices with Azure IoT Hub
 summary: >
-  Create an IoT Hub app, to monitor and control a remote device. Develop code to monitor the temperature and humidity of a wine cellar, and to change a fan setting if necessary.
+  Create an IoT Hub app, to monitor, and control a remote device. Develop code to monitor the temperature and humidity of a cheese cave, and to change a fan setting if necessary.
 abstract: | 
   In this module, you will:
   - Create an Azure IoT Hub custom app, using the IoT Hub portal

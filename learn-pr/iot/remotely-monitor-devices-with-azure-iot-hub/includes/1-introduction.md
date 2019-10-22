@@ -21,15 +21,15 @@ In this module you will:
 
 ## The scenario
 
-Suppose you manage a gourmet cheese making company in a southern location. The company is very proud of its cheese, and is very careful to maintain the perfect temperature and humidity of a natural cave that is used to age the cheese. There are sensors in the cave that report on the temperature and humidity, and a remote operator can set a fan (for both heating and cooling, and humidifying/de-humidifying) to new settings if needed, to maintain the perfect environment for the aging cheese.
+Suppose you manage a gourmet cheese making company in a southern location. The company is proud of its cheese, and is careful to maintain the perfect temperature and humidity of a natural cave that is used to age the cheese. There are sensors in the cave that report on the temperature and humidity, and a remote operator can set a fan (for both heating and cooling, and humidifying/de-humidifying) to new settings if needed, to maintain the perfect environment for the aging cheese.
 
   ![Conceptual art showing cheese maturing in a cave](../media/cheesecave-art.png)
 
-Caves are used to mature cheese, their constant temperature, humidity, and air flow make them nearly ideal for the process. Not to mention the cachet of having your cheese products mature in a natural cave, instead of a man-made cellar. Something to put on your product labels!
+Caves are used to mature cheese, their constant temperature, humidity, and air flow make them nearly ideal for the process. Not to mention the cachet of having your cheese products mature in a natural cave, instead of a constructed cellar. Something to put on your product labels!
 
-The generally accepted ideal temperature for aging cheese is 50 degrees fahrenheit (10 degrees centigrade), with up to 5 degrees F (2.78 degrees C) either side of this being acceptable. Humidity is also important. Measured in percentage of maximum saturation, a humidity of between 75 and 95 percent is generally considered fine, so we will set 85 percent as the ideal, with a 10 percent variation as acceptable. These values apply to most cheeses. To achieve specific results, such as a certain condition of the rind, cheese makers will adjust these values for some of the time during aging.
+The accepted ideal temperature for aging cheese is 50 degrees fahrenheit (10 degrees centigrade), with up to 5 degrees F (2.78 degrees C) either side of this being acceptable. Humidity is also important. Measured in percentage of maximum saturation, a humidity of between 75 and 95 percent is considered fine, so we will set 85 percent as the ideal, with a 10 percent variation as acceptable. These values apply to most cheeses. To achieve specific results, such as a certain condition of the rind, cheese makers will adjust these values for some of the time during aging.
 
-In a southern location, a natural cave near the surface might have an ambient temperature of around 70 degrees fahrenheit, and a relative humidity of close to 100 percent (due to water seeping through the roof). These are slightly challenging conditions for aging cheese. At a more northerly location the ambient temperature of a natural cave might well be the ideal of 50 degrees. Because of our southern location, we need some Azure IoT intervention.
+In a southern location, a natural cave near the surface might have an ambient temperature of around 70 fahrenheit, and a relative humidity of close to 100 percent (due to water seeping through the roof). These high numbers are challenging conditions for aging cheese. At a more northerly location, the ambient temperature of a natural cave might well be the ideal of 50 degrees. Because of our southern location, we need some Azure IoT intervention.
 
 ## The first step
 
