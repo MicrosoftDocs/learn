@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub.create-iot-hub-device-id
+metadata:
+  title: Create an Azure IoT Hub, and a device ID
+  description: Describes the process of creating a new IoT Hub, a IoT Hub device identity, and obtaining the connection strings needed for the coding units.
+  ms.date: 10/01/2019
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create an Azure IoT Hub, and a device ID
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-create-iot-hub-device-id.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Which of these entries for a new IoT Hub is publicly discoverable?'
+    choices:  
+    - content: 'Subscription'
+      isCorrect: false
+      explanation: You might have a few subscriptions available to you, but none are exposed publicly.
+    - content: 'Resource Group'
+      isCorrect: false
+      explanation: A Resource Group is like a folder containing your resources, and is not exposed publicly.  
+    - content: 'Region'
+      isCorrect: false
+      explanation: The region is the nearest Azure region to your location, and is not exposed publicly.
+    - content: 'IoT Hub Name'
+      isCorrect: true
+      explanation: The IoT Hub Name forms part of the URL for your IoT Hub, so is exposed publicly. Take care what names you use!
+
+  - content: 'All connection strings begin with what text?'
+    choices:  
+    - content: 'Primary Key'
+      isCorrect: false
+      explanation: A primary key is part of a connection string, but these exact words do not appear.
+    - content: 'SharedAccessKey'
+      isCorrect: false
+      explanation: This term does appear in connection strings, but does not start the sting.  
+    - content: 'HostName='
+      isCorrect: true
+      explanation: In our scenario, the host name will reference your custom IoT Hub.
+    - content: 'azure-iot'
+      isCorrect: false
+      explanation: There are some npm libraries we need that begin with azure-iot, but no connection strings.
