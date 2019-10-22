@@ -1,6 +1,6 @@
 If you want to deploy your Express.js webapp to the Azure App Service, there is an Azure App Service extension for Visual Studio Code that makes your work easier.
 
-Suppose, you've completed your proof-of-concept webapp that provides a countdown to the new video game's launch date. Now, you want to show that it works in the Azure App Service, which you want to use as the final host. You want a quick way to deploy the app and you'd llike to be able to debug it in Azure as well.
+Suppose, you've completed your proof-of-concept webapp that provides a countdown to the new video game's launch date. Now, you want to show that it works in the Azure App Service, which you want to use as the final host. You want a quick way to deploy the app and you'd like to be able to debug it in Azure as well.
 
 In this unit, you'll learn about the Azure App Service and how to work with it by using Visual Studio Code. 
 
@@ -18,7 +18,7 @@ The Azure App Service supports a wide range of languages and frameworks, that in
 
 So developers can work with the Azure App Service, regardless of their preferred technologies.
 
-The App Service also integrates with many different code management and DevOps systems, including GitHub, Azure DevOps, BitBucket, and Docker Hub. So it's likely that you'll be able to continue using the same toolset when you migrate the the App Service.
+The App Service also integrates with many different code management and DevOps systems, including GitHub, Azure DevOps, BitBucket, and Docker Hub. So it's likely that you'll be able to continue using the same toolset when you migrate to the App Service.
 
 In this module, we're developing a Node.js webapp, which executes server-side JavaScript code. We've used the Express.js web application framework to make that task easier. Such a webapp is easy to publish to the Azure App Service.
 
@@ -35,7 +35,7 @@ Each App Service plan sets properties such as:
 
 Use pricing tiers to control costs and match the scalability of your app to the demand:
 
-- **Shared compute tiers.** Webapps in a shared compute App Service plan run on virtual machines that are shared with other Azure customers. When you run a webapp in the **Free** pricing tier, you incur no costs but cannot scale out your app. In the **Shared** pricing tier, you incur low costs and can scale a little more. Use this tiers only for development and testing.
+- **Shared compute tiers.** Webapps in a shared compute App Service plan run on virtual machines that are shared with other Azure customers. When you run a webapp in the **Free** pricing tier, you incur no costs but cannot scale out your app. In the **Shared** pricing tier, you incur low costs and can scale a little more. Use these tiers only for development and testing.
 - **Dedicated compute tiers.** Webapps in a dedicated compute App Service plan run on virtual machines that are dedicated to that plan and do not run apps for other customers. The **Basic**, **Standard**, **Premium**, and **PremiumV2** tiers are all dedicated. Each of these tiers includes more virtual machine instances for scaling out. 
 - **Isolated.** Webapps in the **Isolated** tier run on dedicated virtual machines in dedicated virtual networks. This tier provides network isolation and the maximum ability to scale out. Use this tier for the largest and most critical webapps. 
 
@@ -49,9 +49,9 @@ If you are working with the Azure App Service, you can consider installing the A
 
 ## Deploy a website to Azure
 
-You have many options when you want to deploy a website to the Azure App service. For example, you could use git to upload the source code to a GitHub repository, then use the Kudu deployment system to roll it out to the Azure App Service. Alternatively, you could implement a complete DevOps continous deployment pipeline, by using Azure DevOps.
+You have many options when you want to deploy a website to the Azure App service. For example, you could use git to upload the source code to a GitHub repository, then use the Kudu deployment system to roll it out to the Azure App Service. Alternatively, you could implement a complete DevOps continuous deployment pipeline, by using Azure DevOps.
 
-However, if you want to complete the deployment fast, entirely within Visual Studio Code, you can by using the Azure App Service extension:
+However, if you want to complete the deployment fast, entirely within Visual Studio Code, you can use the Azure App Service extension:
 
 1. In the Azure explorer, connect to your Azure subscription and sign in.
 1. Create a new app in the Azure App service, with a globally unique name.

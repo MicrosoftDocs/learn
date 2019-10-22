@@ -3,7 +3,7 @@ uid: learn.azure.publish-express-node-app-service-vscode.2-create-express-web-ap
 title: Create an Express.js web application with Visual Studio Code
 metadata:
   title: Create an Express.js web application with Visual Studio Code
-  description: In this unit, you'll how to build a webapp by using Node.js and Express.js in Visual Studio Code.
+  description: In this unit, you'll learn how to build a webapp by using Node.js and Express.js in Visual Studio Code.
   ms.date: 09/16/2019
   author: nickwalkmsft
   ms.author: nickwalk

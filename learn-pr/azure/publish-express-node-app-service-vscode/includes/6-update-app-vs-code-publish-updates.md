@@ -14,7 +14,7 @@ In the Azure explorer, you can also see a list of deployments for your webapp un
 
 ![View a deployment in Azure from Visual Studio Code](../media/6-vs-code-azure-deployments.png)
 
-If you right-click on any deployment in the list, you can choose **Redeploy**. This is a good way to roll back to a previous version of the code in case any error arises with a new version. However, it requires the old code to be re-uploaded so it can take time.
+If you right-click on any deployment in the list, you can choose **Redeploy**. This technique is a good way to roll back to a previous version of the code in case any error arises with a new version. However, it requires the old code to be reuploaded so it can take time.
 
 ## Use deployment slots in the Azure App Service
 
@@ -24,7 +24,7 @@ You can use deployment slots to mitigate these issues. A deployment slot is a se
 
 Suppose you have a production webapp that works well, but you have a new version ready to test, which implements a new feature. You can deploy this new version to a test slot, and run your suite of tests there. When you are ready to deploy, you can swap the code with the production slot, so that users see the new version and can use the new feature. Before the swap, Azure compiles and warms up the new version to ensure that there is no drop in performance. 
 
-Note that the original production webapp code is now swapped into the test slot. If a bug arises in the new version, it's easy to roll back to the previous webapp: you can swap the slots for a second time. Users can continue to use the old version without problems, albeit without the new feature. Unlike the **Redeploy** feature in Visual Studio Code, this swap doesn't involve re-uploading the code and it often completes more quickly. 
+Notice that the original production webapp code is now swapped into the test slot. If a bug arises in the new version, it's easy to roll back to the previous webapp: you can swap the slots for a second time. Users can continue to use the old version without problems, albeit without the new feature. Unlike the **Redeploy** feature in Visual Studio Code, this swap doesn't involve reuploading the code and it often completes more quickly. 
 
 > [!NOTE]
 > Deployment slots are not supported in the Free or Shared service plan tiers.
