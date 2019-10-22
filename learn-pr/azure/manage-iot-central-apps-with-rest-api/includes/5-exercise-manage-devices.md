@@ -11,10 +11,9 @@ Typically, the device developer provides you with the device capability model an
 Run the following command in the Cloud Shell to add a device template in your IoT Central application. The template defines a store monitoring device that sends temperature and humidity telemetry, has brightness property, and responds to a reboot command:
 
 ```azurecli
-az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/models \
+az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/preview/deviceTemplates/store_monitoring_device \
 --headers Authorization="$API_TOKEN" --body \
 '{
-  "id": "urn:contoso:store_monitoring_device:1",
   "types": [
     "DeviceModel"
   ],
@@ -126,32 +125,29 @@ Now that you've added a device template that specifies the capabilities of the s
 Run the following commands in the Cloud Shell to add three simulated devices using the device template you added. The final command lists the devices you added and uses a query to simplify the output:
 
 ```azurecli
-az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/devices \
+az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/storemon-sim-001 \
 --headers Authorization="$API_TOKEN" --body \
 '{
-  "instanceOf": "urn:contoso:store_monitoring_device:1",
+  "instanceOf": "store_monitoring_device",
   "simulated": true,
-  "id": "storemon-sim-001",
   "displayName": "Simulated store monitoring device - 001",
   "approved": true
 }'
 
-az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/devices \
+az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/storemon-sim-002 \
 --headers Authorization="$API_TOKEN" --body \
 '{
-  "instanceOf": "urn:contoso:store_monitoring_device:1",
+  "instanceOf": "store_monitoring_device",
   "simulated": true,
-  "id": "storemon-sim-002",
   "displayName": "Simulated store monitoring device - 002",
   "approved": true
 }'
 
-az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/devices \
+az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/storemon-sim-003 \
 --headers Authorization="$API_TOKEN" --body \
 '{
-  "instanceOf": "urn:contoso:store_monitoring_device:1",
+  "instanceOf": "store_monitoring_device",
   "simulated": true,
-  "id": "storemon-sim-003",
   "displayName": "Simulated store monitoring device - 003",
   "approved": true
 }'
@@ -166,32 +162,29 @@ az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/devices \
 Run the following commands in the Cloud Shell to add three real devices using the device template you added. The final command lists the devices you added and uses a query to simplify the output:
 
 ```azurecli
-az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/devices \
+az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/storemon-real-001 \
 --headers Authorization="$API_TOKEN" --body \
 '{
-  "instanceOf": "urn:contoso:store_monitoring_device:1",
+  "instanceOf": "store_monitoring_device",
   "simulated": false,
-  "id": "storemon-real-001",
   "displayName": "Real store monitoring device - 001",
   "approved": true
 }'
 
-az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/devices \
+az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/storemon-real-002 \
 --headers Authorization="$API_TOKEN" --body \
 '{
-  "instanceOf": "urn:contoso:store_monitoring_device:1",
+  "instanceOf": "store_monitoring_device",
   "simulated": false,
-  "id": "storemon-real-002",
   "displayName": "Real store monitoring device - 002",
   "approved": true
 }'
 
-az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/devices \
+az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/storemon-real-003 \
 --headers Authorization="$API_TOKEN" --body \
 '{
-  "instanceOf": "urn:contoso:store_monitoring_device:1",
+  "instanceOf": "store_monitoring_device",
   "simulated": false,
-  "id": "storemon-real-003",
   "displayName": "Real store monitoring device - 003",
   "approved": true
 }'
