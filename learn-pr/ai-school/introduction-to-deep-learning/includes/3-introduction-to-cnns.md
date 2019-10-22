@@ -32,7 +32,7 @@ It can be time consuming and computationally expensive to use a large training d
 
 The validation set gives an unbiased result for your model to use to detect overfitting as it is occurring. If the validation sets error begins to increase by a certain amount, overfitting may be occurring, and training can be stopped. This process is called early stopping.
 
-![Three rectangles are present, encompassing a whole dataset. The largest rectangle is labelled 'training set' and is joined to a smaller rectangle labelled 'validation set', separate from these two rectangles is the third rectangle labelled 'test set'.](../media/28-ts-2.png)
+![Three rectangles are present, encompassing a whole dataset. The largest rectangle is labeled 'training set' and is joined to a smaller rectangle labeled 'validation set', separate from these two rectangles is the third rectangle labeled 'test set'.](../media/28-ts-2.png)
 
 The size of your validation set varies depending upon your application. A good starting point is to allocate 60% of your data to a training set, 20% to a validation set, and 20% to a test set.
 
