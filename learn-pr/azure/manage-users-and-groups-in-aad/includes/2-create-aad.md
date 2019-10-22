@@ -13,7 +13,7 @@ Microsoft offers several cloud-based offerings today - all of which can use Azur
 
 - Microsoft Azure
 - Microsoft Office 365
-- Microsoft InTune
+- Microsoft Intune
 - Microsoft Dynamics 365
 
 When a company or organization signs up to use one of these offerings, they are assigned a default _directory_, which is an instance of Azure AD. This directory holds the users and groups that will have access to each of the services the company has signed up for. This default directory is sometimes referred to as a _tenant_. A tenant represents the organization and the default directory assigned to it.
@@ -37,13 +37,13 @@ An organization (tenant) always has one default Azure AD directory it's associat
 > [!IMPORTANT]
 > The steps to create a new directory are shown below, however unless you are an owner of your Azure account, this option won't be available to you. The Azure Sandbox doesn't allow you to create new Azure AD directories.
 
-1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true)
+1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true).
 
 1. Select **Create a resource** from the left sidebar, **Identity** from the Azure Marketplace, and then **Azure Active Directory** from the list.
 
 1. Choose a name for the directory that will help distinguish it from your other directories. If the directory you're creating is to be used in production, choose a name for the directory that your users will recognize as the name of your organization. You can change the name later if you want.
 
-1. Enter the domain name associated with it. The domain must not be known to Azure or you will get a validation error. The default domain name will always have the suffix `.onmicrosoft.com`. While this default domain cannot be changed, later you can add a custom domain owned by your organization so defined users can use a traditional company email such as `john@contosso.com`.
+1. Enter the domain name associated with it. The domain must not be known to Azure or you will get a validation error. The default domain name will always have the suffix `.onmicrosoft.com`. While this default domain cannot be changed, later you can add a custom domain owned by your organization so defined users can use a traditional company email such as `john@contoso.com`.
 
 1. Select the country the directory should reside in. This will identify the region and data center where the Azure AD instance will live and it cannot be changed later.
 
