@@ -10,9 +10,9 @@ You don't have to install the Azure Diagnostics extension to be alerted about DD
 
 ![Screenshot that shows the "Under DDoS attack" metric](../media/7-ddos.png)
 
-## Increased CPU Load
+## Increased CPU load
 
-Monitor CPU activity and memory availability to see if you need to scale up your web server. To monitor the CPU load, you can use the basic metric **Percentage CPU**. If you want more granularity, use the guest-level **CPU percentage guest OS** metric.
+Monitor CPU activity and memory availability to see if you need to scale up your web server. To monitor the CPU load, you can use the basic metric **Percentage CPU**. If you want more granularity, use the guest-level metric **CPU percentage guest OS**.
 
 To respond to a high load, you can create an alert rule for the virtual machine with a condition for the CPU metric. For example, you might monitor to see if the average value over any 15 minutes is higher than 85 percent.
 

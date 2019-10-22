@@ -36,7 +36,7 @@ You don't need to build metric graphs for your VM manually. The Azure portal cre
 
 ![Screenshot of the four graphs available from the Overview page](../media/4-default-graphs.png)
 
-On the **Overview**, you can also change the range of all the graphs.
+On the **Overview** page, you can also change the range of all the graphs.
 
 ## KPI dashboard
 
@@ -49,7 +49,9 @@ You can have greater control, with more options, by creating a custom key perfor
 
 You can reuse the prebuilt graph for network traffic. However, the average CPU usage isn't the most useful metric. The maximum CPU usage is a better metric to use.
 
-In the **Monitor** > **Metrics** section of the VM, you'll create a new maximum CPU graph and pin it to a new shared dashboard. Now that you have a KPI dashboard, you pin the network (total) graph to that dashboard. You can add more, but with these two graphs you have a quick way to view the performance of your VM. The dashboard also allows you to change the time range shown on both graphs at the same time and has many more options than what's on the **Overview** page.
+In the **Monitor** > **Metrics** section of the VM, you'll create a new maximum CPU graph and pin it to a new shared dashboard. Now that you have a KPI dashboard, you pin the network (total) graph to that dashboard. You can add more, but with these two graphs you have a quick way to view the performance of your VM. 
+
+The dashboard also allows you to change the time range shown on both graphs at the same time. It has many more options than what's on the **Overview** page.
 
 ![Screenshot that shows the dashboard range options](../media/4-dashboard-range-options.png)
 

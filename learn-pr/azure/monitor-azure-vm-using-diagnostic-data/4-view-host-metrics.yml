@@ -26,12 +26,12 @@ quiz:
     - content: View the metric in the Monitor section by creating a graph and set the range to the last seven days.
       isCorrect: false
       explanation: You don't need to create a graph for the average CPU. The Overview page shows this metric by default.
-  - content: What do you have to create to store simple boot diagnostics in Azure?
+  - content: What do you have to install or create to store simple boot diagnostics in Azure?
     choices:
     - content: Install the Azure Diagnostics extension.
       isCorrect: false
       explanation: An Azure Diagnostics extension isn't required to store simple boot diagnostics.
-    - content: You don't have to create anything additional to store diagnostic logs in Azure.
+    - content: You don't have to install or create anything additional to store diagnostic logs in Azure.
       isCorrect: false
       explanation: You don't have to create anything additional to see basic metrics for VMs. You need a storage account for boot diagnostics, though.
     - content: An Azure storage account.

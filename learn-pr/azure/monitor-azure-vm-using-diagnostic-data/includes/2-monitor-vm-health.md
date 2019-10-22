@@ -1,6 +1,6 @@
 You can use Azure Monitor to view metrics on all of your Azure resources. 
 
-Your band is on tour next month, so you need to identify which metrics you want to use to monitor the health of your virtual machines (VMs).
+Your band is going on tour next month, so you need to identify which metrics you want to use to monitor the health of your virtual machines (VMs).
 
 In this unit, you'll look at how to use Azure metrics to monitor the health of a VM. You'll explore the metrics available in Azure.
 
@@ -15,7 +15,7 @@ By default, you can get data like:
 - OS disk usage
 - Boot success
 
-Azure can collect these metrics by default for hosted VMs without requiring you to install more software. To capture the boot diagnostics, you'll need to create and associate a storage account. You associate the storage account at the time you create your VM. Or, for an existing VM, you associate one later.
+Azure can collect these metrics by default for hosted VMs without requiring you to install more software. To capture the boot diagnostics, you need to create and associate a storage account. You associate the storage account at the time you create your VM. Or, for an existing VM, you associate one later.
 
 ## View metrics
 
@@ -31,13 +31,13 @@ After you enable metrics, you can:
 
 ## Get more metrics
 
-To get a full set of metrics, you'll need to install two tools directly on the VM: the *Azure Diagnostics extension* and the *Log Analytics agent*. Both tools are available for Windows and Linux. 
+To get a full set of metrics, you need to install two tools directly on the VM: the *Azure Diagnostics extension* and the *Log Analytics agent*. Both tools are available for Windows and Linux. 
 
 The tools need a storage account to save the data that they collect. After you've installed the tools, you can access near real-time metric alerts. You can also:
 
 - Investigate boot issues with enhanced boot diagnostics.
 - Archive logs and metrics for future analysis.
-- Autoscale virtual machine scale sets depending on VM performance.
+- Autoscale virtual machine scale sets, depending on VM performance.
 - Get app-level metrics by using Application Insights.
 - Automate OS updates.
 - Track VM configuration changes over time.
