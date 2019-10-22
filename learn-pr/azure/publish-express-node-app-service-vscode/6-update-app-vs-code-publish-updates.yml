@@ -3,7 +3,7 @@ uid: learn.azure.publish-express-node-app-service-vscode.6-update-app-vs-code-pu
 title: Update the app in Visual Studio Code and publish the updates
 metadata:
   title: Update the app in Visual Studio Code and publish the updates
-  description: In this unit, you'll learn ...
+  description: In this unit, you'll learn how to publish and manage updates to Azure App Service webapps by using Visual Studio Code.
   ms.date: 09/16/2019
   author: nickwalkmsft
   ms.author: nickwalk
