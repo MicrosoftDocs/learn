@@ -17,7 +17,7 @@ abstract: |
   - Articulate practical applications of unsupervised learning.
   - Use k-means clustering to predict groupings in data.
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/introduction-to-unsupervised-learning.svg
 levels: 
 - beginner
 roles: 

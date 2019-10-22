@@ -17,7 +17,7 @@ abstract: |
   - Apply convolutional neural networks and recurrent neural networks.
   - Describe the functions of popular deep learning tools.
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/introduction-to-deep-learning.svg
 levels: 
 - beginner
 roles: 

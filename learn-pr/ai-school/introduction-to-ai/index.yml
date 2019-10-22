@@ -17,7 +17,7 @@ abstract: |
   - Learn how to use Python on Azure Notebooks.
   - Learn what models, error and cost are.
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/introduction-to-ai.svg
 levels: 
 - beginner
 roles: 

@@ -17,7 +17,7 @@ abstract: |
   - Make predictive models with polynomial regression.
   - Learn about non-linear data sets.
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/introduction-to-regression.svg
 levels: 
 - beginner
 roles: 

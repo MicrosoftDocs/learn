@@ -17,7 +17,7 @@ abstract: |
   - Build a logisitic regression model.
   - Describe what training, irreducible error, and Bayes error are.
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/introduction-to-classification.svg
 levels: 
 - beginner
 roles: 

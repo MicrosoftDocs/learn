@@ -17,7 +17,7 @@ abstract: |
   - Learn about different types of activation functions.
   - Learn about practical types of gradient descent.
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/introduction-to-neural-networks.svg
 levels: 
 - beginner
 roles: 
