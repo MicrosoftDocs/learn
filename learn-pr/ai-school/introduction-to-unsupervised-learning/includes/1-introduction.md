@@ -2,7 +2,7 @@ You may have previously used supervised learning algorithms - where we have labe
 
 Supervised learning is much more common than unsupervised learning, but unsupervised learning can help us quickly get some analysis on a dataset with little effort.
 
-![On a plot there are many unlabeled data points. Four circles are drawn over the data points, each circle labelling the data points a different colour.](../media/71-ca.gif)
+![On a plot there are many unlabeled data points. Four circles are drawn over the data points, each circle labeling the data points a different color.](../media/71-ca.gif)
 
 In the example above the model finds four groups in the unlabeled data - commonly referred to as clusters.
 
@@ -16,7 +16,7 @@ Cluster analysis is a method of finding groupings, known as clusters, in dataset
 
 In practice clustering tends to be used for social network analysis, computer clustering, scientific analysis in biology and astronomy, and customer analysis.
 
-![Image with the title 'cluster network', with many circles all joined to circles close to them with black lines. The circles are in four colors - yellow, red, green and blue, with a different color in each corner. Each circle has a different name on it.](../media/71-cn.png)
+![Image with the title 'cluster network', with many circles all joined to circles close to them with black lines. The circles are in four colors - yellow, red, green, and blue, with a different color in each corner. Each circle has a different name on it.](../media/71-cn.png)
 
 There many types of cluster analysis, but AI practitioners tend to use k-means clustering for quick analysis. For in-depth unsupervised learning, there are many tools - you can use support vector machines (support vector clustering), neural networks, and so on. Next we’ll look at k-means clustering.
 
