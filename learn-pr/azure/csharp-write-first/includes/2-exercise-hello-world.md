@@ -82,7 +82,7 @@ Common mistakes new programmers make:
 - Using lower-case letters instead of capitalizing `C` in `Console`, or the letters `W` or `L` in `WriteLine`
 - Using a comma instead of a period between `Console` and `WriteLine`
 - Forgetting double-quotation marks, or using single-quotation to surround the phrase `Hello World!`
-- Forgetting a semi-color at the end of the command
+- Forgetting a semi-colon at the end of the command
 
 Each of these mistakes prevents your code from compiling successfully.
 

@@ -206,3 +206,11 @@ groups:
       title: PostgreSQL
     - id: sql
       title: SQL Server
+- id: vsandcode
+  title: IDE
+  prompt: Choose your app Integrated Development Environment (IDE)
+  pivots:
+    - id: vscode
+      title: Visual Studio Code
+    - id: vstudio
+      title: Visual Studio
