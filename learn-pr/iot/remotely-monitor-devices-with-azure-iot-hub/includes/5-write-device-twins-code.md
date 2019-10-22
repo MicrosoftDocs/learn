@@ -11,15 +11,14 @@ We will start this time with the back-end service app.
 
 ``` javascript
 // Locate the device twin via the Registry, then update some tags and properties.
-const Registry = require('azure-iothub').Registry;
 const registry = Registry.fromConnectionString(connectionString);
 
 registry.getTwin(deviceId, function (err, twin) {
     if (err) {
         redMessage(err.constructor.name + ': ' + err.message);
     } else {
-        const desiredTemp = 12;
-        const desiredHumidity = 60;
+        const desiredTemp = 50;
+        const desiredHumidity = 85;
         const setDesiredValues = {
             tags: {
                 customerID: 'Customer1',
@@ -72,6 +71,8 @@ Now we need to add code to the device app.
 1. Add the following code to the end of the file.
 
 ``` javascript
+let deviceTwin;                                         // Global reference to device twin.
+
 // Create a patch to send to the hub.
 const reportedPropertiesPatch = {
     firmwareVersion: '1.2.3',
@@ -121,6 +122,7 @@ client.getTwin(function (err, twin) {
 3. Change the `onSetFanState` function, so the success section of the function reports the updated state of the fan.
 
 ``` javascript
+            } else {
             fanState = request.payload;
 
             // Report success back to your hub.
@@ -128,6 +130,7 @@ client.getTwin(function (err, twin) {
 
             // Confirm changes to reported properties.
             sendReportedProperties();
+        }
 ```
 
 ## Test the device twin
@@ -136,11 +139,14 @@ Now for our final test of this module.
 
 1. Start the telemetry running, by starting the device app.
 1. Start the back-end service app.
-1. Check the console window for both apps, confirming the device twin synchronized correctly.
+1. Check the console window for the device app, confirming the device twin synchronized correctly.
 
-    ![Screenshot showing the output when the device twins are synchronized on the device app](../media/cheesecave-device-twin-start.png)
     ![Screenshot showing the output when the device twins are synchronized on the device app](../media/cheesecave-device-twin-received.png)
-    ![Screenshot showing the output when the device twins are synchronized on the device app](../media/cheesecave-device-twin-success.png)
+
+1. If we let the fan do its work, we should eventually get rid of those red alerts!
+
+    ![Screenshot showing the output when the device twins are synchronized on the back-end service app](../media/cheesecave-device-twin-success.png)
+
 The code given in this module is not industrial quality. It shows how to use direct methods, and device twins, but only in the context of sample code that works when the apps are first run. Typically, a back-end service app would require a browser interface for an operator to send direct methods, or set device twin properties, when they are required.
 
 You have nearly completed this module. Just a summary and a knowledge check to go!

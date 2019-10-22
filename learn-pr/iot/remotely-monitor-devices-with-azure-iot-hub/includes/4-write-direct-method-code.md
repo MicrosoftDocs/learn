@@ -58,7 +58,7 @@ That is all that is needed at the device end of things. Next, we need to add cod
 
 When setting up a call to invoke a direct method, it is best to divide the code into three parts: the parameters, a function handling the call, and one or more calls to that function.
 
-1. Open up the back-end service app.js file and add the following code.
+1. Open up the back-end service app.js file and add the following code to the end of the file.
 
 ``` javascript
 const methodParams = {
@@ -110,9 +110,11 @@ To test the method, start the apps in the correct order.
 
 1. Start the device app. This will open up a console window, and telemetry will appear.
 1. Start the back-end app. This immediately calls the direct method. Do you notice it is handled by the device app, with output similar to the following image?
-
-  ![Screenshot showing the output when the direct method is run by the device app](../media/cheesecave-direct-method-received.png)
   
-  ![Screenshot showing the output when the direct method is run by the device app](../media/cheesecave-direct-method-sent.png)
+    ![Screenshot showing the output when the direct method is run by the back-end service app](../media/cheesecave-direct-method-sent.png)
 
-Your are now successfully monitoring and controlling a remote device. Before we wrap up this module though, let's look into the technology of IoT Hub device twins.
+1. Now check on the console output for the device app, you should see that the fan has been turned on.
+
+    ![Screenshot showing the output when the direct method is run by the device app](../media/cheesecave-direct-method-received.png)
+
+Your are now successfully monitoring and controlling a remote device. However, although we have turned the fan on, which will slowly move the environment in the cave to our initial desired settings, we might like to be able to remotely specify those desired settings. We could do this with a direct method, or we could use another feature of IoT Hub called _device twins_. Let's look into the technology of IoT Hub device twins.
