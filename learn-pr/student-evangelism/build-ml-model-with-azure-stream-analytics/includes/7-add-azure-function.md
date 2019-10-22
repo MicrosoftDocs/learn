@@ -8,6 +8,10 @@ The function, which is invoked each time Stream Analytics produces an output, ca
 
 1. Enter an app name that is unique to Azure. Place the Function App in the same resource group you created earlier.
 
+1. Ensure the **Resource Group** is set to the resource group we have used in previous units.
+
+1. Set **OS** to **Windows**
+
 1. Set the **Hosting Plan** to **App Service Plan**.
 
     > [!TIP]
@@ -15,7 +19,7 @@ The function, which is invoked each time Stream Analytics produces an output, ca
 
 1. Select the **App Service plan/Location** item and create a new App Service plan in the South Central US region.
 
-1. Select **JavaScript** as the **Runtime Stack**.
+1. Select **Node.js** as the **Runtime Stack**.
 
 1. Under **Storage**, select the storage account that you created earlier.
 
@@ -53,7 +57,7 @@ The function, which is invoked each time Stream Analytics produces an output, ca
 
     ![Saving and running the function](../media/7-save-and-run.png)
 
-1. Return to the Stream Analytics job in the portal and select **Outputs** in the menu on the left side.
+1. Return to the Stream Analytics job in the portal by returning to your resource group and select **Outputs** in the menu on the left side.
 1. Click **+ Add** and select **Azure function** to add an Azure Function as an output.
 
     ![Adding an output](../media/7-add-output-1.png)

@@ -8,7 +8,6 @@ metadata:
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: nickwalk
 title: Store application data with Azure Blob storage
 summary: Build an app that stores user files with Azure Blob storage.
 abstract: |

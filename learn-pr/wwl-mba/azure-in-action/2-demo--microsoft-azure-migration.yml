@@ -1,0 +1,15 @@
+﻿### YamlMime:ModuleUnit
+uid: learn-wwl.azure-in-action.2-demo--microsoft-azure-migration
+title: Demo - Microsoft Azure migration
+metadata:
+  title: Demo - Microsoft Azure migration
+  description: Recorded demo for Windows Server and SQL Server migration
+  ms.date: 6/21/2019
+  author: kimrit
+  ms.author: v-kimrit
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS:   NOINDEX 
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-demo--microsoft-azure-migration.md)] 

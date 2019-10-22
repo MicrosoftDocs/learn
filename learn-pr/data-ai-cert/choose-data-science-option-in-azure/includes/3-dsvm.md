@@ -24,7 +24,7 @@ There are a various types of DSVMs that are available for different machine lear
 
 ### Supported operating systems
 
-DSVM supports both Windows and Linux operating systems, with each offering various machine mearning tools. The key difference between the two servers is that Windows operating systems offer scalability with Machine Learning in SQL Server, and Linux does not.
+DSVM supports both Windows and Linux operating systems, with each offering various machine learning tools. The key difference between the two servers is that Windows operating systems offer scalability with Machine Learning in SQL Server, and Linux does not.
 
 ### Deep Learning Virtual Machine
 

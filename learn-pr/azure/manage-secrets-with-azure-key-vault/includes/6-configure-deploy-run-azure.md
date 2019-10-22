@@ -11,6 +11,7 @@ In Azure Cloud Shell, run the following to create an App Service plan:
 ```azurecli
 az appservice plan create \
     --name keyvault-exercise-plan \
+    --sku FREE \
     --resource-group <rgn>[sandbox resource group name]</rgn>
 ```
 

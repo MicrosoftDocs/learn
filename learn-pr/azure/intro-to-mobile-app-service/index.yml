@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of Azure App Service
   - Basic knowledge of REST services and APIs
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/azure-intro-mobile-app-service.svg
 badge:
   uid: learn.azure-intro-mobile-app-service.badge
 levels: 

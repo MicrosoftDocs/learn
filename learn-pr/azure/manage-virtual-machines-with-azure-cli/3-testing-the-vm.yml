@@ -1,13 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.manage-vms-with-azure-cli-data.3-testing-the-vm
-title: Test your new virtual machine
+title: Exercise - Test your new virtual machine
 metadata:
-  title: Test your new virtual machine
+  title: Exercise - Test your new virtual machine
   description: Use SSH to connect to the newly created Azure Virtual Machine
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

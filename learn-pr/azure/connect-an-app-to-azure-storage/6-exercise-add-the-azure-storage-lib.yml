@@ -2,11 +2,11 @@
 uid: learn.connect-app-to-azure-storage.6-exercise-add-the-azure-storage-lib
 title: Exercise - Add the storage client library to your app
 metadata:
-  title: Add the storage client library to your app
-  description: Add the storage client library to your app
+  title: Exercise - Add the storage client library to your app
+  description: Exercise - Add the storage client library to your app
   ms.date: 09/24/2018
-  author: markjulmar
-  ms.author: smmark
+  author: cryophobia
+  ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
