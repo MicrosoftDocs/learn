@@ -23,8 +23,9 @@ products:
 - azure-cost-management
 - azure-resource-manager
 modules:
-- learn.incident-response-with-alerting-on-azure
 - learn.control-and-organize-with-resource-manager
+- learn.intro-to-governance
+- learn.incident-response-with-alerting-on-azure
 - learn.analyze-infrastructure-with-azure-monitor-logs
 trophy:
   uid: learn.architect-infrastructure-operations.trophy
