@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.oxford.intro-to-iot-hub.
+uid: learn.oxford.intro-to-iot-hub
 metadata:
   title: "Introduction to Azure IoT Hub"
   description: "In this module, we'll introduce various features and capabilities of IoT Hub"
@@ -31,9 +31,9 @@ roles:
 products:
 - azure-iot-hub
 units:
-- learn.student-evangelism-intro-to-azure-iot-hub.introduction
-- learn.student-evangelism-intro-to-azure-iot-hub.what-is-iot-hub
-- learn.student-evangelism-intro-to-azure-iot-hub.how-iot-hub-works
-- learn.student-evangelism-intro-to-azure-iot-hub.when-to-use-iot-hub
-- learn.student-evangelism-intro-to-azure-iot-hub.knowledge-check
-- learn.student-evangelism-intro-to-azure-iot-hub.summary
+- learn.oxford.intro-to-iot-hub.introduction
+- learn.oxford.intro-to-iot-hub.what-is-iot-hub
+- learn.oxford.intro-to-iot-hub.how-iot-hub-works
+- learn.oxford.intro-to-iot-hub.when-to-use-iot-hub
+- learn.oxford.intro-to-iot-hub.knowledge-check
+- learn.oxford.intro-to-iot-hub.summary
