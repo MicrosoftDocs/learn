@@ -3,7 +3,7 @@ Let’s recap on what we’ve learned in this module.
 * __Deep learning__ simply means using neural networks with many layers
   * By having many layers, these networks have more room to learn abstract information, like what a nose or dog looks like.
   * Deep learning algorithms can have very long training times.
-  * There are different ways these can be organised.
+  * There are different ways these can be organized.
 * __Convolutional neural networks__ are often used for image processing.
 * __Recurrent neural networks__ are often used for data in a sequence, such as music, text, and time series data.
   * RNNs have a special kind of memory for data points seen recently.

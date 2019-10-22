@@ -18,7 +18,7 @@ RNNs are a class of neural network, otherwise known as sequence models. They are
 
 Deep neural networks are neural networks with multiple hidden layers - RNNs can sometimes be considered a deep neural network. Convolutional neural networks (CNNs) are the other main variation of deep neural networks used today, which are primarily used for computer vision applications, but also speech recognition.
 
-![Image showing a video of a man on stage giving a speech - with a caption of "Sam George, Partner Director Program Management, Microsoft". Underneath the video there is a box that reading "Select a person to see where they appear in the video", with two images of people. One is labeled as "Sam George, appears 7 times, in a total of 14.10% of the video". There is also a button that reads "Jump to the next instance".](../media/61-ve.png)
+![Image showing a video of a man on stage giving a speech - with a caption of "Sam George, Partner Director Program Management, Microsoft". Underneath the video, there is a box that reading "Select a person to see where they appear in the video", with two images of people. One is labeled as "Sam George, appears 7 times, in a total of 14.10% of the video". There is also a button that reads "Jump to the next instance".](../media/61-ve.png)
 
 Deep neural networks are particularly prone to overfitting and long training times. Because of this, it is best to spend a good proportion of your time preparing your data - so you do not train a model for two days only to realize your dataset needs more work.
 
