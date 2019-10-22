@@ -217,7 +217,7 @@ Let's look briefly at the function's other file, the **function.json** config fi
 }
 ```
 
-As you can see, this function has a trigger binding named **Request** of type `httpTrigger` and an output binding named **Response**  of type `HTTP`. In the preceding code for our function, we saw how we accessed the payload of the incoming HTTP request through our **Request** parameter. Similarly, we sent an HTTP response simply by setting our **Response** parameter. Bindings really do take care of some of the heavy lifting for us.
+As you can see, this function has a trigger binding named **Request** of type `httpTrigger` and an output binding named **Response**  of type `http`. In the preceding code for our function, we saw how we accessed the payload of the incoming HTTP request through our **Request** parameter. Similarly, we sent an HTTP response simply by setting our **Response** parameter. Bindings really do take care of some of the heavy lifting for us.
 
 ::: zone-end
 
