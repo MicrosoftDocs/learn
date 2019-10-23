@@ -20,13 +20,13 @@ quiz:
     choices:  
     - content: 'IoT devices'
       isCorrect: false
-      explanation: This is where you look for the device connection string.
+      explanation: This menu entry is where you look for the device connection string, not the service connection string.
     - content: 'Pricing and scale'
       isCorrect: false
-      explanation: This will tell you your Pricing and scale tier, and the current number of IoT Hub units.  
+      explanation: This menu entry will tell you your pricing and scale tier, and the current number of IoT Hub units.  
     - content: 'Certificates' 
       isCorrect: false
-      explanation: This is used to upload and manage certificates, not connection strings.
+      explanation: This menu entry is used to upload and manage certificates, not connection strings.
     - content: 'Shared access policies'
       isCorrect: true
       explanation: Under the list of policies, select iothubowner to locate the primary key connection string.

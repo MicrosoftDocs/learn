@@ -117,4 +117,4 @@ To test the method, start the apps in the correct order.
 
     ![Screenshot showing the output when the direct method is run by the device app](../media/cheesecave-direct-method-received.png)
 
-You are now successfully monitoring and controlling a remote device. However, although we have turned on the fan, which will slowly move the environment in the cave to our initial desired settings, we might like to be able to remotely specify those desired settings. We could specify desired settings with a direct method (which is a completely valid approach), or we could use another feature of IoT Hub called _device twins_. Let's look into the technology of IoT Hub device twins.
+You are now successfully monitoring and controlling a remote device. However, although we have turned on the fan, which will slowly move the environment in the cave to our initial desired settings, we might like to be able to remotely specify those desired settings. We could specify desired settings with a direct method (which is a valid approach), or we could use another feature of IoT Hub called _device twins_. Let's look into the technology of device twins.

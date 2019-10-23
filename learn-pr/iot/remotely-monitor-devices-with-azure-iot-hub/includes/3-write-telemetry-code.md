@@ -48,8 +48,7 @@ const chalk = require('chalk');
 console.log(chalk.yellow('Cheese cave device app'));
 
 // The device connection string to authenticate the device with your IoT hub.
-const connectionString = 'HostName=PetersIOTHub.azure-devices.net;DeviceId=CheeseCaveID;SharedAccessKey=4FLs8TsEPyW2aBggXKRlD5QPTea783IJdrrB9ZjMqxs=';
-// var connectionString = '<your device connection string>';
+const connectionString = '<your device connection string>';
 
 // The sample connects to a device-specific MQTT endpoint on your IoT Hub.
 const Mqtt = require('azure-iot-device-mqtt').Mqtt;
@@ -211,7 +210,9 @@ const chalk = require('chalk');
 console.log(chalk.yellow('Cheese Cave Operator: the back-end service app'));
 
 // The connection string for the IoT Hub service.
-const connectionString = 'HostName=PetersIOTHub.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=1fRjAms3Y/U4YUs2HvTLSUyeKxGd0hpSe1Cat8792UQ=';
+const connectionString = '<your service connection string>';
+
+// The device ID.
 const deviceId = 'CheeseCaveID';
 
 // The sample connects to service-side endpoint to call direct methods on devices.

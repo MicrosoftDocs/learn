@@ -18,7 +18,7 @@ abstract: |
   - Create a second Node.js app to handle the back-end service, and control the device through direct methods and device twins
 prerequisites: | 
   - An introductory knowledge of the purpose of Azure IoT
-  -	Ability to navigate Azure IoT portal 
+  -	Ability to navigate the Azure IoT portal 
   -	Ability to use Node.js, at the beginner level 
   -	Experience using Visual Studio, or Visual Studio Code, at the beginner level 
 iconUrl: /learn/achievements/generic-badge.svg

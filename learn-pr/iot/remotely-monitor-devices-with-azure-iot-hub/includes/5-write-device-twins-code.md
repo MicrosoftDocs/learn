@@ -151,6 +151,6 @@ Now for our final test of this module.
 
     ![Screenshot showing the output when the device twins are synchronized on the back-end service app](../media/cheesecave-device-twin-success.png)
 
-The code given in this module is not industrial quality. It shows how to use direct methods, and device twins, but only in the context of sample code that works when the apps are first run. Typically, a back-end service app would require a browser interface for an operator to send direct methods, or set device twin properties, when they are required.
+The code given in this module is not industrial quality. It does show how to use direct methods, and device twins. However, the messages are sent only when the back-end service app is first run. Typically, a back-end service app would require a browser interface for an operator to send direct methods, or set device twin properties, when they are required.
 
 You have nearly completed this module. Just a summary and a knowledge check to go!
