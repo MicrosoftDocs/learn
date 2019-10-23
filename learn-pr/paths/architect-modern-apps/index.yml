@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.architect-modern-apps
+metadata:
+  title: Architect modern applications in Azure learning path
+  description: Learn how to build modern applications on Azure using containers, Kubernetes, and PaaS services for applications and caching.
+  brand: azure
+  ms.date: 10/23/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Architect modern applications in Azure
+summary: Learn how to build modern applications on Azure using containers, Kubernetes, and PaaS services for applications and caching.
+prerequisites: |
+  - Familiarity with containers
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- solution-architect
+products:
+- azure
+- azure-kubernetes-service
+- azure-container-instances
+- azure-app-service
+- azure-redis-cache
+modules:
+- learn.intro-to-containers
+- learn.intro-to-azure-kubernetes-service
+- learn.run-docker-containers-aci
+- learn.azure-container-registry
+- learn.host-a-web-application-with-azure-web-apps
+- learn.azure.deploy-run-container-app-service
+- learn.work-with-mutable-and-partial-data-in-a-redis-cache
+trophy:
+  uid: learn.architect-modern-apps.trophy
