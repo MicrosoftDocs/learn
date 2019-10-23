@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.neural-networks.layers-edges-and-weights
-title: Layers, Edges and Weights
+title: Layers, Edges, and Weights
 metadata:
-  title: Layers, Edges and Weights
-  description: Here we cover what puts neural networks together - layers, edges and weights.
+  title: Layers, Edges, and Weights
+  description: Here we cover what puts neural networks together - layers, edges, and weights.
   ms.date: 06/30/2019
   author: markjulmar
   ms.author: rawortma
@@ -20,13 +20,13 @@ quiz:
     choices:
     - content: "All very high (positive) numbers"
       isCorrect: false
-      explanation: "Incorrect. If the weights are all very high the neural network is likely to have very poor performance."
+      explanation: "Incorrect. If the weights are all very high, the neural network is likely to have very poor performance."
     - content: "Random numbers."
       isCorrect: true
-      explanation: "Correct. We randomize the weights so the cost does not get stuck in a local minima."
+      explanation: "Correct. We randomize the weights so the cost doesn't get stuck in a local minima."
     - content: "All zeros."
       isCorrect: false
-      explanation: "Incorrect. If the weights are all zeros no data will flow through the neural network."
+      explanation: "Incorrect. If the weights are all zeros, no data will flow through the neural network."
     - content: "All very low (negative) numbers."
       isCorrect: false
-      explanation: "Incorrect. While weights can be negative, they do not all start out negative."
+      explanation: "Incorrect. While weights can be negative, they don't all start out negative."
