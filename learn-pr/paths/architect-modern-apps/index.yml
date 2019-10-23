@@ -11,8 +11,7 @@ metadata:
   ms.prod: learning-azure
 title: Architect modern applications in Azure
 summary: Learn how to build modern applications on Azure using containers, Kubernetes, and PaaS services for applications and caching.
-prerequisites: |
-  - Familiarity with containers
+prerequisites: None
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - intermediate
