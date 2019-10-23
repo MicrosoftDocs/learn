@@ -8,4 +8,4 @@ Now that you have reviewed this module, you should be able to:
 * Articulate practical applications of unsupervised learning.
 * Use k-means clustering to predict groupings in data.
 
-Well done! You’ve complete the module on unsupervised learning.
+Well done! You’ve completed the module on unsupervised learning.
