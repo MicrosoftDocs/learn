@@ -12,7 +12,7 @@ metadata:
 title: Architect migration, business continuity, and disaster recovery in Azure
 summary: Learn how to migrate resources to Azure, how to provide site recovery for your applications in Azure and on-premises, and how to your applications are available through service interruptions and changes in load.
 prerequisites: |
-  - Familiarity virtual machines
+  - Familiarity with virtual machines
   - Familiarity with backup and restore concepts
   - Familiarity with high availability and autoscaling concepts
 iconUrl: /learn/achievements/generic-trophy.svg
