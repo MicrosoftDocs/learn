@@ -38,7 +38,7 @@ Basic public IPs can be assigned to any Azure resource that can be assigned a pu
 
 Standard SKU public IP addresses always use static allocation method. They have an adjustable inbound originated flow idle timeout of 4-30 minutes, with a default of 4 minutes, and fixed outbound originated flow idle timeout of 4 minutes.
 
-Standard IPs are secure by default and closed to inbound traffic. You must explicitly whitelist allowed inbound traffic with a network security group.
+Standard IPs are secure by default and closed to inbound traffic. You must explicitly allow inbound traffic with a network security group.
 
 They can be assigned to network interfaces, Standard public Load Balancers, Application Gateways, or VPN Gateways. For more information about Standard Load Balancer, see Azure Standard Load Balancer. Standard IPs are zone redundant by default and optionally zonal (can be created zonal and guaranteed in a specific availability zone).
 
