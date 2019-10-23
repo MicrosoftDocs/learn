@@ -9,6 +9,6 @@ metadata:
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  durationInMinutes: 10
+durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-introduction-to-neural-networks.md)] 

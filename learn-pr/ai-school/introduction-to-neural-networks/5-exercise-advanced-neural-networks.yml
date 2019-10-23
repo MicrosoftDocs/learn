@@ -9,6 +9,6 @@ metadata:
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  durationInMinutes: 12
+durationInMinutes: 12
 content: |
   [!include[](includes/5-exercise-advanced-neural-networks.md)] 

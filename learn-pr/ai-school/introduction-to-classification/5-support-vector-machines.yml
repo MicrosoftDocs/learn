@@ -9,7 +9,7 @@ metadata:
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  durationInMinutes: 6
+durationInMinutes: 6
 content: |
   [!include[](includes/5-support-vector-machines.md)]
 quiz:

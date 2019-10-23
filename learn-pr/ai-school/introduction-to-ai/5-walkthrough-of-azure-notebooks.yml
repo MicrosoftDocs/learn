@@ -9,6 +9,6 @@ metadata:
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  durationInMinutes: 15
+durationInMinutes: 15
 content: |
   [!include[](includes/5-walkthrough-of-azure-notebooks.md)] 

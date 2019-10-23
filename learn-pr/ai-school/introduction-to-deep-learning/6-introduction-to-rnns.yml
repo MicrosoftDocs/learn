@@ -9,7 +9,7 @@ metadata:
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  durationInMinutes: 5
+durationInMinutes: 5
 content: |
   [!include[](includes/6-introduction-to-rnns.md)]
 quiz:
