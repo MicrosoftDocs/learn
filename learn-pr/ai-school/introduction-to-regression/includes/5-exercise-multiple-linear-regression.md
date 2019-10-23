@@ -1,4 +1,4 @@
-Multiple linear regression is commonly used in science, is quick to run and many modern tools can take care of the hard parts for you.
+Multiple linear regression is commonly used in science, is quick to run, and many modern tools can take care of the hard parts for you.
 
 The exercises for this module use Azure Notebooks. It is a free-to-use resource.
 
