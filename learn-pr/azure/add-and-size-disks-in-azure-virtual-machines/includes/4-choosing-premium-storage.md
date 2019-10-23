@@ -8,7 +8,7 @@ Azure Disks are designed for 99.999% availability.
 
 There are four performance tiers for storage that you can choose from when creating your disks -- Ultra disks, Premium SSD Disks, Standard SSD, and Standard HDD storage. Depending on the VM size, you can mix and match these disk types.
 
-## Ultra disks
+### Ultra disks
 
 Azure ultra disks deliver high throughput, high IOPS, and consistent low latency disk storage for Azure IaaS VMs. Ultra disks include the ability to dynamically change the performance of the disk without the need to restart your virtual machines (VM). Ultra disks are suited for data-intensive workloads such as SAP HANA, top tier databases, and transaction-heavy workloads. Ultra disks can only be used as data disks. We recommend using premium SSDs as OS disks.
 
