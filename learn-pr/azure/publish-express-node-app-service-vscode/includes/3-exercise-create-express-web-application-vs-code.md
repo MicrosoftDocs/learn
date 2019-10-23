@@ -130,7 +130,7 @@ Now, modify the default homepage for the webapp to display the countdown:
 1. Replace that line with this code:
   
     ```jade
-    p Only a fews days left until our new game launch!
+    p Only a few days left until our new game launch!
     ```
 
 1. Add this new line of code at the end of the file:
