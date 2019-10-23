@@ -32,7 +32,7 @@ You use an application template to pre-populate your application with dashboards
 
 Every REST API call that's made against an IoT Central application must include an **Authorization** header. The **Authorization** header must contain either an _API token_ or a _bearer token_.
 
-An API token is issued by your IoT Central application and is not associated with a user account. This module uses an API token from IoT Central. The API token determines the level of access to be granted to the caller. The access levels map to the built-in and custom roles in an IoT Central application:
+An API token is issued by your IoT Central application and isn't associated with a user account. This module uses an API token from IoT Central. The API token determines the level of access to be granted to the caller. The access levels map to the built-in and custom roles in an IoT Central application:
 
 - **Application administrator** grants access to all API calls
 - **Application builder** grants access to API calls that create, edit, and delete device templates and devices.

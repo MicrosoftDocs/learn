@@ -35,7 +35,7 @@ To author a JSON device capability model file, use the [Azure IoT Tools for VS C
 
 Before a real device can connect to your IoT Central application, you must publish the device template within the IoT Central application. After you publish a device template, you can also create simulated devices from the template.
 
-Once a device template is published, significant changes to the device capability model or interface definitions require that you to create and publish a new version of the device template.
+Once a device template is published, significant changes to the device capability model or interface definitions require that you create and publish a new version of the device template.
 
 ## Manage device templates using the REST API
 
