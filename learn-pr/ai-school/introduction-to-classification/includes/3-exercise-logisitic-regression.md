@@ -4,8 +4,8 @@ If the links below don't work, you will need to set up your free Azure Notebooks
 
 1. **Python users** go to your __[library](https://notebooks.azure.com/home/libraries/ms-learn-ml-crash-course-pytho)__.  
 1. Select the exercise `05. Logistic Regression - Python.ipynb`.  
-1. Then click __'Run on Free Compute'__.  
+1. Then select __'Run on Free Compute'__.  
 
 1. **R users** go to your __[library](https://notebooks.azure.com/home/libraries/ms-learn-ml-crash-course-R)__.  
 1. Select the exercise `05. Logistic Regression - R.ipynb`.  
-1. Then click __'Run on Free Compute'__.  
+1. Then select __'Run on Free Compute'__.  
