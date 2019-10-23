@@ -266,6 +266,7 @@ EventHubClient.createFromIotHubConnectionString(connectionString).then(function 
     eventHubClient = client;
 
     return eventHubClient.getPartitionIds();
+
 }).then(function (ids) {
     console.log("The partition ids are: ", ids);
     console.log('');
@@ -280,7 +281,7 @@ EventHubClient.createFromIotHubConnectionString(connectionString).then(function 
 
 1. Replace the &lt;your service connection string&gt; with the _service_ connection string you saved off in a text file, in the previous unit.
 
-1. Replace the &lt;your device ID&gt; with the device ID from your text file (you may have used the suggested "CheeseCaveID").
+1. Replace the `const deviceId` if you did not use the suggested "CheeseCaveID".
 
 ### Test your code to receive telemetry
 

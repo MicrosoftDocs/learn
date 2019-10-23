@@ -14,7 +14,7 @@ In this unit, we will create an IoT Hub, add a single device to that hub, and re
     > A single _partition_ has a maximum number of concurrent readers processing data. In our cheese cave scenario, we only have one reader (the back-end service app), so could get away with one partition. However, if high telemetry throughput is an issue, increasing the number of partitions, and number of concurrent connected readers, will aid in increasing efficiency.
 
 1. Now, select **Review + create**, this option gives you a chance to verify your choices before clicking **Create**, and building the hub. Building your hub can take a few minutes.
-1.  It is a good idea to bookmark the home page of your IoT Hub.
+1. It is a good idea to bookmark the home page of your IoT Hub.
 
 ## Create an IoT Hub device identity
 
