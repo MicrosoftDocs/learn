@@ -33,6 +33,9 @@ At the end of this unit, you will be sending and receiving telemetry.
 
 ::: zone-end
 
+> [!NOTE]
+> This module does not require you to download any code. However, all of the code is available from [GitHub/MicrosoftDocs/mslearn-remotely-monitor-and-control-devices-with-iot-hub](https://github.com/MicrosoftDocs/mslearn-remotely-monitor-and-control-devices-with-iot-hub), if needed.
+
 ### Add code to send telemetry
 
 This section adds code to send telemetry from a simulated device. The device sends temperature (in degrees centigrade) and humidity (in percentages) regardless of whether any back-end app is listening or not.
