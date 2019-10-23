@@ -12,7 +12,7 @@ At the end of this unit, you will be sending and receiving telemetry.
 
 1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Cheese Cave device app`. Save the file to the "CheeseCave" folder (locating this folder might involve a bit of navigation), with the name "app.js". By using the .js file extension, Visual Studio Code interprets this file as JavaScript and evaluates the contents with the JavaScript language service.
 
-1. Back in the terminal, enter **npm install azure-iot-device**. When this package has installed, enter **npm install azure-iot-digitaltwins-service**. Then enter **npm install chalk**.
+1. Back in the terminal, enter **npm install azure-iot-device**. When this package has installed, enter **npm install chalk**.
 
 1. After you have entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the CheeseCave folder is the current folder of the terminal, when you run the app.
 
@@ -23,7 +23,7 @@ At the end of this unit, you will be sending and receiving telemetry.
 
     ![Screenshot showing how to create the blank Node.js Visual Studio project](../media/cheesecave-vs-project.png)
 
-1. In the **Solution Explorer** tab, right click **npm**, and select **Install New npm Packages**. Install **azure-iot-device**, **azure-iot-digitaltwins-service**(??) , and **chalk**.
+1. In the **Solution Explorer** tab, right click **npm**, and select **Install New npm Packages**. Install **azure-iot-device**, and **chalk**.
 
     ![Screenshot showing how to install npm packages into your Visual Studio project](../media/cheesecave-vs-npm.png)
 
