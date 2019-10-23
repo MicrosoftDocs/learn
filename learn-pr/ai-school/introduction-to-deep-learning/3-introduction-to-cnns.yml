@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.deep-learning.introduction-to-cnns
+uid: learn.deep-learning.introduction-to-cnns
 title: Introduction to CNNs
 metadata:
   title: Introduction to CNNs
   description: Here we look at how CNNs work, what convolutional means, advantages of CNNs, and a popular implementation of real-time image analysis - YOLO.
   ms.date: 06/30/2019
-  author: markjulmar
-  ms.author: rawortma
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

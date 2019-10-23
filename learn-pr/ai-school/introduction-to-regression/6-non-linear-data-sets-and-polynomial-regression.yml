@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.introduction-to-regression.non-linear-data-sets-and-polynomial-regression
+uid: learn.introduction-to-regression.non-linear-data-sets-and-polynomial-regression
 title: Make predictions with non-linear data using polynomial regression
 metadata:
   title: Make predictions with non-linear data using polynomial regression
   description: Here we look at non-linear data sets and a model that can predict them accurately - polynomial regression.
   ms.date: 06/30/2019
-  author: markjulmar
-  ms.author: rawortma
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

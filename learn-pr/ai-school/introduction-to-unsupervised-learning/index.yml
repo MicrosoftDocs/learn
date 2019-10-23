@@ -1,11 +1,11 @@
 ### YamlMime:Module
-uid: learn-wwl.unsupervised-learning
+uid: learn.unsupervised-learning
 metadata:
   title: Unsupervised Learning
   description: Here we cover modelling data without labels - unsupervised learning.
   ms.date: 06/30/2019
-  author: markjulmar
-  ms.author: rawortma
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: markjulmar
@@ -28,9 +28,9 @@ roles:
 products: 
 - azure
 units: 
-- learn-wwl.unsupervised-learning.introduction
-- learn-wwl.unsupervised-learning.k-means-clustering
-- learn-wwl.unsupervised-learning.exercise-k-means
-- learn-wwl.unsupervised-learning.summary
+- learn.unsupervised-learning.introduction
+- learn.unsupervised-learning.k-means-clustering
+- learn.unsupervised-learning.exercise-k-means
+- learn.unsupervised-learning.summary
 badge: 
-  uid: learn-wwl.unsupervised-learning.badge #add the uid for your achievement badge.
+  uid: learn.unsupervised-learning.badge #add the uid for your achievement badge.

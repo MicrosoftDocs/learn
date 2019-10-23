@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.neural-networks.programming-exercise-advanced-neural-networks
+uid: learn.neural-networks.programming-exercise-advanced-neural-networks
 title: Exercise - Advanced Neural Networks
 metadata:
   title: Exercise - Advanced Neural Networks
   description: Here we'll play around a bit with neural networks - changing the activation functions of different layers to try and improve accuracy.
   ms.date: 06/30/2019
-  author: markjulmar
-  ms.author: rawortma
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

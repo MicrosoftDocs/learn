@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.unsupervised-learning.introduction
+uid: learn.unsupervised-learning.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: Introduction to the unsupervised learning module.
   ms.date: 06/30/2019
-  author: markjulmar
-  ms.author: rawortma
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

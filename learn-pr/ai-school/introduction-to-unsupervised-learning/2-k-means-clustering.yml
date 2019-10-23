@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.unsupervised-learning.k-means-clustering
+uid: learn.unsupervised-learning.k-means-clustering
 title: k-means clustering
 metadata:
   title: k-means clustering
   description: Here we cover the most popular type of unsupervised learning - k-means clustering.
   ms.date: 06/30/2019
-  author: markjulmar
-  ms.author: rawortma
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

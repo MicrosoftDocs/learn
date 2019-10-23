@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.neural-networks.programming-exercise-introduction-to-neural-networks
+uid: learn.neural-networks.programming-exercise-introduction-to-neural-networks
 title: Exercise - Introduction to Neural Networks
 metadata:
   title: Exercise - Introduction to Neural Networks
   description: Building your first neural network using TensorFlow and Keras.
   ms.date: 06/30/2019
-  author: markjulmar
-  ms.author: rawortma
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.unsupervised-learning.exercise-k-means
+uid: learn.unsupervised-learning.exercise-k-means
 title: Exercise - k-means clustering
 metadata:
   title: Exercise - k-means clustering
   description: Here we use k-means clustering in Azure Notebooks.
   ms.date: 06/30/2019
-  author: markjulmar
-  ms.author: rawortma
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

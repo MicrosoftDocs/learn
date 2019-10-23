@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.introduction-to-ai.introduction-to-azure-notebooks
+uid: learn.introduction-to-ai.introduction-to-azure-notebooks
 title: Introduction to Azure Notebooks
 metadata:
   title: Introduction to Azure Notebooks
   description: A quick walkthrough of how to set up your Azure Notebooks library.
   ms.date: 06/30/2019
-  author: markjulmar
-  ms.author: rawortma
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

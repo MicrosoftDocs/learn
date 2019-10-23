@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.neural-networks.layers-edges-and-weights
+uid: learn.neural-networks.layers-edges-and-weights
 title: Layers, Edges, and Weights
 metadata:
   title: Layers, Edges, and Weights
   description: Here we cover what puts neural networks together - layers, edges, and weights.
   ms.date: 06/30/2019
-  author: markjulmar
-  ms.author: rawortma
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

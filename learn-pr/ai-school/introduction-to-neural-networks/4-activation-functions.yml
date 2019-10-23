@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.neural-networks.activation-functions
+uid: learn.neural-networks.activation-functions
 title: Activation Functions
 metadata:
   title: Activation Functions
   description: Here we describe how nodes regulate their output, and can turn “on” and “off” - by using activation functions.
   ms.date: 06/30/2019
-  author: markjulmar
-  ms.author: rawortma
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

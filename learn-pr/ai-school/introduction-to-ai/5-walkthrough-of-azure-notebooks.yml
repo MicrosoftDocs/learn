@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.introduction-to-ai.walkthrough-of-azure-notebooks
+uid: learn.introduction-to-ai.walkthrough-of-azure-notebooks
 title: Walkthrough of Azure Notebooks
 metadata:
   title: Walkthrough of Azure Notebooks
   description: A walkthrough of how programming in Azure Notebooks works - we introduce features and labels, and do a short programming exercise.
   ms.date: 06/30/2019
-  author: markjulmar
-  ms.author: rawortma
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
