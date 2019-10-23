@@ -25,7 +25,7 @@ Role information accessible through Azure portal, Azure CLI, Azure PowerShell, A
 
 To add or remove custom roles, you must have role permissions such as:
 
-`Microsoft.Authorization/roleAssignments/write and Microsoft.Authorization/roleAssignments/delete`.
+`Microsoft.Authorization/roleAssignments/write` and `Microsoft.Authorization/roleAssignments/delete`.
 
 These role permissions are given to User access administrators and owners. Custom roles can be assigned to:
 
