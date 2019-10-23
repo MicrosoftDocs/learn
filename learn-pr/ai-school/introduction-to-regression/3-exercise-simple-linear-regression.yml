@@ -9,7 +9,6 @@ metadata:
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-durationInMinutes: 8
+  durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-simple-linear-regression.md)]

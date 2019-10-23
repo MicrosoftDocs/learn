@@ -9,8 +9,7 @@ metadata:
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-durationInMinutes: 20 
+  durationInMinutes: 20 
 content: |
   [!include[](includes/6-models-error-and-cost.md)] 
 quiz:
