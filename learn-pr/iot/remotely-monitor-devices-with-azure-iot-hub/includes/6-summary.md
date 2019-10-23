@@ -1,11 +1,12 @@
+
 In this module, you learned how to:
 
-- Create a custom Azure IoT Hub, using the Azure portal
-- Create a device ID for a custom device, using the Azure portal
-- Create a Node.js app to support a simulated device monitoring a cheese cave
-- Create a Node.js app to provide a back-end service to listen for the telemetry sent by the device
-- Add Node.js code to both apps to provide a _direct method_
-- Add Node.js code to both apps to show the role of _device twins_
+ - Create a custom Azure IoT Hub, using the Azure portal
+ - Create a device ID for a custom device, using the Azure portal
+ - Create a Node.js app to support a simulated device monitoring a cheese cave
+ - Create a Node.js app to provide a back-end service to listen for the telemetry sent by the device
+ - Add Node.js code to both apps to provide a _direct method_
+ - Add Node.js code to both apps to show the role of _device twins_
 
   ![Conceptual art showing cheese maturing in a cave](../media/cheesecave-art2.png)
 
