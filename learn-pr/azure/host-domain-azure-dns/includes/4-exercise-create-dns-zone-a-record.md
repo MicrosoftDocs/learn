@@ -6,7 +6,7 @@ In this unit, you'll:
 - Create an A Record
 - Verify the A record resolves to an IP address
 
-[!include[](../../../../includes/azure-sandbox-activate.md)]
+[!include[](~/includes/azure-sandbox-activate.md)]
 
 ## Create a DNS Zone in Azure DNS
 
