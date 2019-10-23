@@ -13,8 +13,8 @@ title: Introduction to Classification
 summary: Here we introduce you the other main type of AI model - classification models.
 abstract: | 
   In this module, you will:
-  - Define what classfication is.
-  - Build a logisitic regression model.
+  - Define what classification is.
+  - Build a logistic regression model.
   - Describe what training, irreducible error, and Bayes error are.
 prerequisites: None
 iconUrl: /learn/achievements/introduction-to-classification.svg
