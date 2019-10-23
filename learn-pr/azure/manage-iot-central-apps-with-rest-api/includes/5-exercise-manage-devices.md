@@ -206,3 +206,13 @@ To connect a real device to your IoT Central application, you need the real devi
 az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/storemon-real-003/credentials \
 --headers Authorization="$API_TOKEN"
 ```
+
+## View device telemetry
+
+You can use the REST API to view the last known value for a device's telemetry measurement. Run the following command to view the last known humidity value from the **storemon-sim-001** device:
+
+```azurecli
+az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/storemon-sim-001/components/sensor/telemetry/humid \
+--headers Authorization="$API_TOKEN"
+
+```
