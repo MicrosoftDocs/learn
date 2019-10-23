@@ -24,9 +24,9 @@ Based on the fields chosen in the budget so far, a graph is shown to help you se
 
 ## Email and alert configuration
 
-After you configure the budget amount, click **Next** to configure budget alerts. Budgets require at least one cost threshold (% of budget) and a corresponding email address. You can optionally include up to five thresholds and five email addresses in a single budget. When a budget threshold is met, email notifications are normally received in less than eight hours. In the example below, an email alert gets generated when 90% of the budget is reached.
+After you configure the budget amount, click **Next** to configure budget alerts. Budgets require at least one cost threshold (% of budget) and a corresponding email address. You can optionally include up to five thresholds and five email addresses in a single budget. When a budget threshold is met, email notifications are normally received in less than eight hours.
 
-![Example showing alert conditions](../media/5-monthly-budget-alert.png)
+Set an alert condition when 90% of the budget is reached.
 
 After you create a budget, it is shown in cost analysis. Viewing your budget in relation to your spending trend is one of the first steps when you start to analyze your costs and spending, as discussed in **Unit 4 – Evaluate your costs using Cost Analysis**.
 
@@ -36,25 +36,7 @@ In the preceding example, you created a budget for a subscription. However, you 
 
 ## Action groups for budgets
 
-When you create or edit a budget for a subscription or resource group scope, you can configure it to call an action group. The action group can perform a variety of different actions when your budget threshold is met.
-
-To create or update action groups, click **Manage action groups** while you're creating or editing a budget.
-
-![Example of creating a budget to show Manage action groups](../media/5-manage-action-groups01.png)
-
-Next, click **Add action group** and create the action group.
-
-![Image of the Add action group box](../media/5-manage-action-groups02.png)
-
-After the action group is created, close the box to return to your budget.
-
-Configure your budget to use your action group when an individual threshold is met. Up to five different thresholds are supported.
-
-![Example showing action group selection for an alert condition](../media/5-manage-action-groups03.png)
-
-The following example shows budget thresholds set to 50%, 75% and 100%. Each is configured to trigger the specified actions within the designated action group.
-
-![Example showing alert conditions configured with various action groups and type of actions](../media/5-manage-action-groups04.png)
+When you create or edit a budget for a subscription or resource group scope, you can configure it to call an action group. The action group can perform a variety of different actions when your budget threshold is met. In this module's summary, there's a link for more information about action groups for budgets.
 
 ## Cost alerts
 
@@ -96,10 +78,6 @@ All alerts show the alert type. A budget alert shows the reason why it was gener
 
 Possible status includes **active** and **dismissed**. Active status indicates that the alert is still relevant. Dismissed status indicates that someone has marked the alert to set it as no longer relevant.
 
-Select an alert from the list to view its details. Alert details show more information about the alert. Budget alerts include a link to the budget. If a recommendation is available for a budget alert, then a link to the recommendation is also shown. Budget, credit, and department spending quota alerts have a link to analyze in cost analysis where you can explore costs for the alert's scope. The following example shows spending for a department with alert details.
+Select an alert from the list to view its details. Alert details show more information about the alert. Budget alerts include a link to the budget. If a recommendation is available for a budget alert, then a link to the recommendation is also shown. Budget, credit, and department spending quota alerts have a link to analyze in cost analysis where you can explore costs for the alert's scope.
 
-![Example image showing spending for a department with alert details](../media/5-dept-spending-selected-with-credits.png)
-
-When you view the details of a dismissed alert, you can reactivate it if manual action is needed. The following image shows an example.
-
-![Example image showing dismiss and reactivate options](../media/5-dismiss-reactivate-options.png)
+When you view the details of a dismissed alert, you can **Reactivate** it if manual action is needed.

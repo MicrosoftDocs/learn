@@ -1,8 +1,7 @@
-- Unit 1, Introduction to Cost Management, set the stage for this lesson by summarizing the needs you have manage your Azure costs.
-- Unit 2, Cost Management principles, explained the basic concepts you should put into action to manage costs. It also showed how to find Cost Management in the Azure portal. And, you completed a knowledge check to test what you've learned about Cost Management.
-- Unit 3, Evaluate your costs using Cost Analysis, covered cost analysis in detail. It also explained how you can export cost and usage data.
-- Unit 4, Determine your most expensive resource and see trends, had you use what you learned about cost analysis to investigate expensive resources and look for trends on your own — in own Azure environment.
-- Unit 5, Build budgets and alerts, guided you to create budgets and budget alerts.
-- Unit 6, Create your first budget, had you create your first budget on your own — in your own Azure environment.
+In this module, you read about the example scenario and assumed the role of a manager in your organization. The scenario outlined the needs you have to manage your Azure costs. You learned about Cost Management principles and basic concepts you should put into action to manage costs. You evaluated costs using cost analysis looked at costs in detail. You exported cost and usage data so that you can use the data outside of Azure. You found your most expensive Azure resource and looked for cost trends. And, you created budgets and alerts to help keep costs under control.
 
-We hope that you've found these Azure Cost Management training modules useful. To conclude, take the knowledge that you've learned here and apply it practically in your organization to monitor and control your Azure costs and to optimize your resource use.
+We hope that you've found the Analyze costs and create budgets with Azure Cost Management module useful. To conclude, take the knowledge that you've learned here and apply it practically in your organization to monitor and control your Azure costs and to optimize your resource use.
+
+## Further reading
+- [Cost analysis group and filter options](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis#understanding-grouping-and-filtering-options)
+- [Trigger an action group with budgets](https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets#trigger-an-action-group)

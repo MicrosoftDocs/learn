@@ -1,3 +1,7 @@
-Now that you have learned how to create a budget, it is time to try creating your first one on your own. You should have determined your most expensive resource in a previous exercise. If this resource starts accruing more cost, you could see a significantly higher bill at the end of the month. Create a budget and scope it down to monitor only the costs that are accruing for the costly resource. When configuring the alerts, consider making multiple thresholds. And, make sure to have an email identified for a person who can act if needed. That person can investigate and reduce the costs of the resource if an alert is created.
+Now that you have learned how to create a budget, it is time to try creating your first one on your own. You should have determined your most expensive resource in a previous exercise. If this resource starts accruing more cost, you could see a significantly higher bill at the end of the month.
+
+- Create a budget and scope it down to monitor only the costs that are accruing for the costly resource.
+- When configuring the alerts, consider making multiple thresholds.
+- Make sure to have an email address identified for a person who can act if needed. That person can investigate and reduce the costs of the resource if an alert is created.
 
 _Hint_ – You need to use filtering to complete this exercise.

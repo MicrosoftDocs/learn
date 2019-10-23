@@ -20,8 +20,6 @@ Let's look at each cost view in more detail.
 
 **Accumulated costs** - Cost analysis shows data for the current month by default. Use the date selector to switch to common date ranges quickly. Examples include the last seven days, the last month, the current year, or a custom date range. Pay-as-you-go subscriptions also include date ranges based on your billing period, which isn't bound to the calendar month, like the current billing period or last invoice. Use the  **<PREVIOUS**  and  **NEXT>**  links at the top of the menu to jump to the previous or next period, respectively. For example,  **<PREVIOUS**  will switch from the  **Last 7 days**  to  **8-14 days ago**  or  **15-21 days ago**.
 
-![Date selector showing an example selection for this month](../media/3-date-selector.png)
-
 Cost analysis shows  **accumulated**  costs by default. Accumulated costs include all costs for each day plus the previous days, for a constantly growing view of your daily aggregate costs. This view is optimized to show how you're trending against a budget for the selected time range.
 
 **Cost by resource** – The cost by resource view shows a table of grouped resources sorted by highest cost.
@@ -42,32 +40,11 @@ This view answers the question: Have there been any increases in the costs per d
 
 **Cost by service** – By default, this view shows the last three months of spending on services shown in bar charts. Donut charts show spending for the same period by service name, resource location, and resource group name.
 
-![Example showing cost by service view](../media/3-cost-by-service.png)
-
 This view answers the question: How has my monthly usage varied over the past three invoices?
 
 ## Group by and filtering
 
-The following table lists some of the most common grouping and filtering options and when you should use them.
-
-| **Property** | **When to use** |
-| --- | --- |
-| **Billing period** | Break down costs by invoice month. This option is important for pay-as-you-go and development/test subscriptions, which aren't bound to calendar months. EA/MCA accounts can use calendar months in the date picker or monthly granularity to accomplish the same goal. |
-| **Charge type** | Break down usage, purchase, refund, and unused reservation costs. Reservation purchases and refunds are available only when using action costs and not when using amortized costs. Unused reservation costs are available only when looking at amortized costs. |
-| **Cloud** | Break down costs by AWS and Azure. AWS costs are available only from management groups, external billing accounts, and external subscriptions. |
-| **Department** /  **Invoice section** | Break down costs by EA department or MCA invoice section. This option is available only for EA/MCA billing accounts and MCA billing profiles. |
-| **Enrollment account** | Break down costs by EA account owner. This option is available only for EA billing accounts and departments. |
-| **Frequency** | Break down usage-based, one-time, and recurring costs. |
-| **Meter** | Break down costs by Azure usage meter. This option is available only for Azure usage. All purchases and Marketplace usage will show as  **Not specified**  or  **unassigned**. |
-| **Publisher type** | Break down AWS, Azure, and Marketplace costs. |
-| **Reservation** | Break down costs by reservation. Any usage that doesn't include a reservation will show as  **Not specified**. |
-| **Resource** | Break down costs by resource. All purchases will show as  **Not specified, because they're applied at an EA/PAYG billing account or MCA billing profile level. |
-| **Resource group** | Break down costs by resource group. This option is available only for non-classic usage. Classic resource usage will show as  **other, and purchases will show as  **Not specified**. |
-| **Resource type** | Break down costs by resource type. This option is available only for non-classic usage. Classic resource usage will show as  **other, and purchases will show as  **Not specified**. |
-| **Service name**  or  **Meter category** | Break down cost by Azure service. This option is available only for Azure usage. All purchases and Marketplace usage will show as  **Not specified**  or  **unassigned**. |
-| **Service tier** or  **Meter subcategory** | Break down cost by Azure usage meter subclassification. This option is available only for Azure usage. All purchases and Marketplace usage will show as  **Not specified**  or  **unassigned**. |
-| **Subscription** | Break down costs by subscription. All purchases show as  **Not specified**. |
-| **Tag** | Break down costs by tag values for a specific tag key. |
+Cost Management has man grouping and filtering options. In this module's summary, there's a link to view all available group and filter options.
 
 ## Actual versus amortized cost
 
@@ -85,17 +62,13 @@ Due to the change in how costs are represented, it's important to note that actu
 
 ## Saving and sharing views
 
-Customizing a view in cost analysis is easy. Just pick the date range you need, group the data to see a breakdown, and then choose the visualization that you want. Pin your view to a dashboard for one-click access, then share the dashboard with your team so everyone can track costs from a single place.
+Customizing a view in cost analysis is easy. Just pick the date range you need, group the data to see a breakdown, and then choose the visualization that you want. **Pin** your view to a dashboard for one-click access, then share the dashboard with your team so everyone can track costs from a single place.
 
 ![Example showing pinning a view to a dashboard](../media/3-save-share-view01.png)
 
-You can also share a direct link to your customized view so others can copy and personalize it for themselves:
+You can also share a direct link to your customized view so others can copy and personalize it for themselves. To share a link to a view, click **Share**.
 
-![Example showing Share link](../media/3-save-share-view02.png)
-
-Both sharing options offer flexibility, but you need something more convenient. You can save customized views and share them with others, directly from within cost analysis.
-
-![Example showing save view ](../media/3-save-share-view03.png)
+Both sharing options offer flexibility, but you need something more convenient. You can save customized views and share them with others, directly from within cost analysis. In the view, click **Save**.
 
 People with Cost Management Contributor (or greater) access can create shared views. You can create up to 50 shared views per scope.
 
@@ -105,9 +78,7 @@ All views are accessible from the view menu. You'll see your private views first
 
 ![Example showing view menu](../media/3-cost-analysis-views.png)
 
-Do you need to share your view outside of the portal? Download the charts as an image and copy it into an email or presentation, as an example, to share it with your team. There's a slightly redesigned Export menu that offers a PNG option when viewing charts. The table view can't be downloaded as an image.
-
-![Example showing Export view as an image](../media/3-export-view-as-image.png)
+Do you need to share your view outside of the portal? Download the charts as an image and copy it into an email or presentation, as an example, to share it with your team. There's a slightly redesigned **Export** menu that offers a **PNG** option when viewing charts. The table view can't be downloaded as an image.
 
 The filter bar shows:
 
@@ -122,17 +93,15 @@ Navigate to **Subscriptions**, select a subscription from the list, and then sel
 
 Besides subscriptions, you can create exports on resource groups, accounts, departments, and enrollments.
 
-Click  **Add**, type a name for the export, and then select the  **Daily export of month-to-date costs** option. Click  **Next**.
+Click  **Add**, type a name for the export, and then select the  **Daily export of month-to-date costs** option. Click **Next**.
 
 ![New export example showing export type](../media/3-basics_exports.png)
 
-Specify the subscription for your Azure storage account, then select your storage account. Specify the storage container and the directory path that you'd like the export file to go to. Click  **Next**.
+Specify the subscription for your Azure storage account, then select your storage account. Specify the storage container and the directory path that you'd like the export file to go to. Click **Next**.
 
-![New export example showing storage account details](../media/3-storage_exports.png)
+Review your export details and click **Create**.
 
-Review your export details and click  **Create**.
-
-Your new export appears in the list of exports. By default, new exports are enabled. If you want to disable or delete a scheduled export, click any item in the list and then click either  **Disable**  or  **Delete**.
+Your new export appears in the list of exports. By default, new exports are enabled. If you want to disable or delete a scheduled export, click any item in the list and then click either **Disable**  or **Delete**.
 
 Initially, it can take one to two hours before the export runs. However, it can take up to four hours before data is shown in exported files.
 
@@ -152,13 +121,11 @@ There are three types of export options:
 
 If you have a Pay-As-You-Go, MSDN, or Visual Studio subscription, your invoice billing period might not align to the calendar month. For those types of subscriptions and resource groups, you can create an export that's aligned to your invoice period or to calendar months. To create an export aligned to your invoice month, navigate to  **Custom**, then select  **Billing-period-to-date**. To create an export aligned to the calendar month, select  **Month-to-date**.
 
-![New export - Basics tab showing a custom weekly week-to-date selection](../media/3-tutorial-export-schedule-weekly-week-to-date.png)
-
 ### Verify that data is collected
 
 You can easily verify that your Cost Management data is being collected and view the exported CSV file using Azure Storage Explorer.
 
-In the export list, click the storage account name. On the storage account page, click Open in Explorer. If you see a confirmation box, click  **Yes**  to open the file in Azure Storage Explorer.
+In the export list, click the storage account name. On the storage account page, click **Open in Explorer**. If you see a confirmation box, click  **Yes**  to open the file in Azure Storage Explorer.
 
 ![Storage account page showing example information and link to Open in Explorer](../media/3-storage-account-page.png)
 
