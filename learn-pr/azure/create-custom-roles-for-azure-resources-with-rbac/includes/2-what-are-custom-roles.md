@@ -1,6 +1,6 @@
 Sometimes, the roles built into Azure don't grant the precise level of access you need.
 
-Suppose you want to assign permissions in Azure for your new employee, who's responsible for managing VMs within the subscription. You want to understand whether to use Azure Active Directory or Role-Based Access Control (RBAC) for these permissions.
+Suppose you want to assign permissions in Azure for your new employee, who's responsible for managing VMs within the subscription. You want to understand whether to use Azure Active Directory (Azure AD) roles or Role-Based Access Control (RBAC) for these permissions.
 
 In this unit, you learn about RBAC roles and how to create and assign them.
 
