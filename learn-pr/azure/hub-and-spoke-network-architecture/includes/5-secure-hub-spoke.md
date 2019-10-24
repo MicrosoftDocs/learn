@@ -1,6 +1,4 @@
-Azure provides a number of services to enable an organization to secure and protect its cloud infrastructure.
-
-The organization needs to understand how to secure its new network, and what other Azure services are available.
+Azure provides a number of services to enable an organization to secure and protect its cloud infrastructure. Your organization needs to understand how to secure its new network, and what other Azure services are available.
 
 In this unit, you'll explore secure networking in the Azure platform, see an overview of Azure Firewall, and how to secure virtual networks using network security groups.
 

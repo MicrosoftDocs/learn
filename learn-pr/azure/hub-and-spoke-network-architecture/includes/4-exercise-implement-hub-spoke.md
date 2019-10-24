@@ -34,8 +34,6 @@ You create a virtual network with the Azure portal, Azure CLI, Azure PowerShell.
 
 The resource creation experience on the portal is a wizard that walks you through the initial configuration for the virtual network.
 
-![Image showing Virtual Network creation blade](../media/4-create-vnet.png)
-
 1. Use the values below to create the virtual network:
 
     |Property Name | Field Property  |
@@ -49,6 +47,8 @@ The resource creation experience on the portal is a wizard that walks you throug
     |DDoS Protection        | **Basic**        |
     |Service Endpoints      | **Disabled**     |
     |Firewall               | **Disabled**     |
+
+    ![Image showing Virtual Network creation blade](../media/4-create-vnet.png)
 
 1. Select **Create** to start provisioning the Virtual Network.
 
@@ -75,7 +75,7 @@ Now you've created the third spoke, you need to configure the virtual network pe
     |Allow virtual network access from HRappVnet to hubVnet  |   **Enabled**  |
     |Allow forwarded traffic from HRappVnet to hubVnet  |   **Disabled**     |
     |Allow forwarded traffic from hubVnet to HRappVnet  |   **Disabled**     |
-    |Configure gateways transit settings         |   **False**    |
+    |Configure gateways transit settings         |   **Unchecked**    |
 
 1. Select **OK** to create the peering.
 
@@ -93,7 +93,7 @@ You'll create a network security group to configure traffic flow.
 
 1. Select **Create** to start configuring the virtual network.
 
-1. Enter **HRNsg** for the name, then select the existing resource group and location.
+1. Enter **HRNsg** for the name, then select the **<rgn>[sandbox resource group name]</rgn>** resource group and the same location as **HRappVnet**.
 
 1. Select **Create** to provision the network security group.
 
@@ -105,11 +105,11 @@ Now you associate the network security group to the virtual network.
 
 1. Select **All services** in the upper left corner of the Azure portal.
 
-1. In the search box, type **Network security group**, then select the **star** to the right of the service to add to the toolbar. Select **Network security groups**.
+1. In the search box, type **Network security group**, then select **Network security groups**.
 
 1. In the **Network security groups** blade, you should see the network security groups you created.
 
-1. Select the network security group you created for the spoke, **hr-nsg**.
+1. Select the network security group you created for the spoke, **HRNsg**.
 
 1. Select the **Subnets** side menu.
 
@@ -125,24 +125,20 @@ Now you associate the network security group to the virtual network.
 
 You have a security requirement to meet for HR application to be hosted on the **HRappVnet**. There shouldn't be any inbound internet traffic from the spoke because only internal employees need access. You'll now configure the network security group rule to meet this requirement.
 
-1. In the left resources menu, select **Network security groups**.
-
-1. Select the **HRNsg**.
-
-1. Select the **Inbound security rules** side menu.
+1. In the **HRNsg** blade, select **Inbound security rules** in the side menu.
 
 1. In the **Inbound security rules** blade, select **Add**.
 
     |Property Name | Field Property  |
     |---------|---------|
     |Source             | Any  |
-    |Source port ranges | 80,443   |
+    |Source port ranges | *   |
     |Destination        | VirtualNetwork     |
-    |Destination port ranges |  *  |
+    |Destination port ranges |  80,443  |
     |Protocol  | Any      |
     |Action    | Deny     |
     |Priority  | 100      |
-    |Name      | Block_Inbound_80 |
+    |Name      | Block-Inbound-HTTP-HTTPS |
 
 1. Select **Add** to add the rule.
 
