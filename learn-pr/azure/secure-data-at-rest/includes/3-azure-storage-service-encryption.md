@@ -4,9 +4,9 @@ Here, you'll learn about encryption at rest, and the various tools and services 
 
 ## Secure storage accounts with SSE
 
-Based on the type of classification, when your data is stored – and considered at rest – it will need continuous protection. You can use Azure Storage Service Encryption (SSE) to encrypt data stored at rest in your Azure storage accounts. Data in storage accounts is physically stored on hard drives. It's unlikely that a physical hard disk in an Azure data center would be stolen – a laptop is an easier target. However, it's important to have safeguards that meet your organization's regulatory obligations, and strategy for keeping data secure.
+Based on the type of classification, when your data is stored it will need continuous protection. You can use Azure Storage Service Encryption (SSE) to encrypt data stored at rest in your Azure storage accounts. Data in storage accounts is physically stored on hard drives. It's unlikely that a physical hard disk in an Azure data center would be stolen. Personal devices and laptops are easier targets. However, it's important to have safeguards that meet your organization's regulatory obligations, and strategy for keeping data secure.
 
-Azure Storage Service Encryption uses 256-bit AES encryption. When your data is in any tier of Azure storage account, it's encrypted by default. Azure makes it possible to keep storage in a redundant way by offering additional copies of your storage accounts. Each storage account is also automatically encrypted as it's created. In fact, you can't disable encryption for storage accounts even if you wanted to. For encryption to take place, there's nothing for you to do. The data is encrypted for you. You can, however, decide whether you want to use your own customer-managed keys (BYOK) or the default Microsoft-managed keys that are kept secure in Azure Key Vault.
+Azure Storage Service Encryption uses 256-bit AES encryption. When your data is in any tier of Azure storage account it's encrypted by default. Each storage account is automatically encrypted as it's created. In fact, you can't disable encryption for storage accounts even if you wanted to. You do have the option to choose whether you want to use your own customer-managed keys (BYOK) or the default Microsoft-managed keys that are kept secure in Azure Key Vault.
 
 Azure Storage Service supports encryption for the following types of storage:
 
@@ -16,7 +16,7 @@ Azure Storage Service supports encryption for the following types of storage:
 - Azure Queue Storage
 - Azure-Managed Disks
 
-## Secure disks with ADE
+## Secure disks with Azure 
 
 Just like Azure Storage Service Encryption, Azure Disk Encryption (ADE) helps to ensure your data is secured. This encryption keeps you compliant with your organization's strategy and regulatory legal obligations. Your virtual machines on Azure all have disks allocated to them. Azure Disk Encryption ensures that these disks are encrypted.
 
@@ -46,10 +46,14 @@ How do you ensure that the actual data resident in files is encrypted? You need 
 
 That's where client-side encryption comes in. Your application can encrypt all of the data before it lands in Azure. The data is then decrypted by the application when it fetches this data back. You can use .NET, Python, or Java Azure Storage Client libraries to encrypt the data. You use Azure Key Vault with all of these libraries to take care of your encryption keys.
 
-To encrypt the data, you would use the storage client library to first create a content encryption key (CEK). You then encrypt the data on your end, using this content encryption key. This key will then be encrypted using a key encryption key (KEK). A KEK can either be one you already have, or one that's stored in Azure Key Vault. Finally, the encrypted data can then be stored into Azure Storage. This is referred to as envelope encryption. Use the diagram below to help you visualize the process.
-
 ![Envelope encryption](../media/3-envelope-technique.png)
 
-To decrypt the data again, the key encryption key is needed. However, you don't need to know the actual key encryption key that was used to encrypt the content encryption key. You would typically use a key resolver, which goes through a group of keys and fetches the correct one.
+### Encryption
 
-Your storage client library can then fetch the data that was encrypted previously. To start decrypting the data, the content encryption key is decrypted using the key encryption key. The library calls the key provider – whether Azure Key Vault or your own – to decrypt the content encryption key with the appropriate key encryption key. The library has no access to this key. When the content encryption key is decrypted, the data is finally decrypted.
+To encrypt the data, you would use the storage client library to first create a content encryption key (CEK). You then encrypt the data on your end, using this content encryption key. This key will then be encrypted using a key encryption key (KEK). A KEK can either be one you already have, or one that's stored in Azure Key Vault. Finally, the encrypted data can then be stored into Azure Storage. This is referred to as envelope encryption.
+
+### Decryption
+
+To decrypt the data, the key encryption key is needed. However, you don't need to know the actual key encryption key that was used to encrypt the content encryption key. You would typically use a key resolver, which goes through a group of keys and fetches the correct one.
+
+Your storage client library can then fetch the data that was encrypted previously. To start decrypting the data, the content encryption key is decrypted using the key encryption key. The library calls the key provider, whether Azure Key Vault or your own, to decrypt the content encryption key with the appropriate key encryption key. The library has no access to this key. When the content encryption key is decrypted, the data is finally decrypted.
