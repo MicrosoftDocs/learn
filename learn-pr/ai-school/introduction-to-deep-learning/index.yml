@@ -1,11 +1,11 @@
 ### YamlMime:Module
-uid: learn-wwl.deep-learning
+uid: learn.deep-learning
 metadata:
   title: Deep Learning
   description: A high-level overview of deep learning and the types of solutions you can use.
   ms.date: 06/30/2019
-  author: markjulmar
-  ms.author: rawortma
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: markjulmar
@@ -17,7 +17,7 @@ abstract: |
   - Apply convolutional neural networks and recurrent neural networks.
   - Describe the functions of popular deep learning tools.
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/introduction-to-deep-learning.svg
 levels: 
 - beginner
 roles: 
@@ -28,13 +28,13 @@ roles:
 products: 
 - azure
 units: 
-- learn-wwl.deep-learning.introduction
-- learn-wwl.deep-learning.deep-learning-applications
-- learn-wwl.deep-learning.introduction-to-cnns
-- learn-wwl.deep-learning.exercise-cnns
-- learn-wwl.deep-learning.tools-for-deep-learning
-- learn-wwl.deep-learning.introduction-to-rnns
-- learn-wwl.deep-learning.exercise-rnns
-- learn-wwl.deep-learning.summary
+- learn.deep-learning.introduction
+- learn.deep-learning.deep-learning-applications
+- learn.deep-learning.introduction-to-cnns
+- learn.deep-learning.exercise-cnns
+- learn.deep-learning.tools-for-deep-learning
+- learn.deep-learning.introduction-to-rnns
+- learn.deep-learning.exercise-rnns
+- learn.deep-learning.summary
 badge: 
-  uid: learn-wwl.deep-learning.badge #add the uid for your achievement badge.
+  uid: learn.deep-learning.badge #add the uid for your achievement badge.

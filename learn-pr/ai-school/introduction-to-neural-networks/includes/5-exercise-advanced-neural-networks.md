@@ -1,11 +1,13 @@
 Now we’re going to make a neural network using Keras. We’ll see if we can improve our accuracy using different activation functions.
 
-If you haven’t set up your library and Azure Notebooks account the links above won't work. For instructions to get started click [__here__](https://aischool.microsoft.com/en-us/machine-learning/learning-paths/ml-crash-course/introduction-to-ai/introduction-to-azure-notebooks).
+The exercises for this module use Azure Notebooks. It is a free-to-use resource.
 
-**Python users** click __[here](https://notebooks.azure.com/home/libraries/Python "here")__ to go to your library.  
-Select the exercise `09. Neural Networks Advanced - Python.ipynb`.  
-Then click then click __'Run on Free Compute'__.  
+If the links below don't work, you will need to set up your free Azure Notebooks account and clone the project for this module. See the [Python GitHub repository](https://www.github.com/MicrosoftDocs/ms-learn-ml-crash-course-python) or the [R GitHub repository](https://www.github.com/MicrosoftDocs/ms-learn-ml-crash-course-R) for instructions to get started.
 
-**R users** click __[here](https://notebooks.azure.com/home/libraries/R-Exercises "here")__ to go to your library.  
-Select the exercise `09. Neural Networks Advanced - R.ipynb`.  
-Then click then click __'Run on Free Compute'__.  
+1. **Python users** go to your __[library](https://notebooks.azure.com/home/libraries/ms-learn-ml-crash-course-pytho)__.  
+1. Select the exercise `09. Neural Networks Advanced - Python.ipynb`.  
+1. Then select __'Run on Free Compute'__.  
+
+1. **R users** go to your __[library](https://notebooks.azure.com/home/libraries/ms-learn-ml-crash-course-R)__.  
+1. Select the exercise `09. Neural Networks Advanced - R.ipynb`.  
+1. Then select __'Run on Free Compute'__.  

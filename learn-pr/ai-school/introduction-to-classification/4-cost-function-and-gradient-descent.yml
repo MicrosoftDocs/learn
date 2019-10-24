@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.introduction-to-classification.cost-function-and-gradient-descent
+uid: learn.introduction-to-classification.cost-function-and-gradient-descent
 title: Cost Function and Gradient Descent
 metadata:
   title: Cost Function and Gradient Descent
   description: Here we look at the two main methods that improve our models behind the scenes - cost function and gradient descent.
   ms.date: 06/30/2019
-  author: markjulmar
-  ms.author: rawortma
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 3
 content: |
   [!include[](includes/4-cost-function-and-gradient-descent.md)]

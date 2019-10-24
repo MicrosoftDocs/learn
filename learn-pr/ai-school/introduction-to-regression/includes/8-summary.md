@@ -1,4 +1,4 @@
-In this module, you were introduced to regression and modelling datasets using regression models. You covered the fundamental concepts of regression, simple linear regression, multiple linear regression, and polynomial regression.
+In this module, you were introduced to regression and modeling datasets using regression models. You covered the fundamental concepts of regression, simple linear regression, multiple linear regression, and polynomial regression.
 
 Now that you have reviewed this module, you should be able to:
 

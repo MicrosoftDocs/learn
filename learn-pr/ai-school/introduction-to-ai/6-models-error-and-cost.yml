@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.introduction-to-ai.models-error-and-cost
+uid: learn.introduction-to-ai.models-error-and-cost
 title: Models, Error, and Cost
 metadata:
   title: Models, Error, and Cost
   description: Here we introduce some key AI concepts - models, error, and cost.
   ms.date: 06/30/2019
-  author: markjulmar
-  ms.author: rawortma
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 20 
 content: |
   [!include[](includes/6-models-error-and-cost.md)] 

@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.introduction-to-classification.logistic-regression
+uid: learn.introduction-to-classification.logistic-regression
 title: Perform binary classification with logistic regression 
 metadata:
   title: Perform binary classification with logistic regression
   description: Here we introduce a simple but powerful classification algorithm - logistic regression. 
   ms.date: 06/30/2019
-  author: markjulmar
-  ms.author: rawortma
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
   [!include[](includes/2-logistic-regression.md)]
@@ -18,7 +17,7 @@ quiz:
   questions:
   - content: "To train, supervised categorization algorithms need:"
     choices:
-    - content: "Examples of data that have labels, such a pictures of dogs with the type of dogs for each picture."
+    - content: "Examples of data that have labels, such pictures of dogs with the type of dogs for each picture."
       isCorrect: true
       explanation: "Correct. Supervised categorization algorithms need categorization labels for the data they are given."
     - content: "Human supervision to prevent the algorithms crashing or reporting errors."
@@ -54,7 +53,7 @@ quiz:
       explanation: "Incorrect. While certain parts of the line are curved, the curve does not produce a bell shaped line."
     - content: "S-Shaped."
       isCorrect: true
-      explanation: "Correct. The curve in the line is based on a s-shape"
+      explanation: "Correct. The curve in the line is based on an s-shape"
     - content: "Pointy."
       isCorrect: false
       explanation: "Incorrect. The line is not pointy."

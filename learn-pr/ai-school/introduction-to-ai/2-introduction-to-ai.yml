@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.introduction-to-ai.introduction-to-ai
+uid: learn.introduction-to-ai.introduction-to-ai
 title: Introduction to AI
 metadata:
   title: Introduction to AI
   description: Here we cover what AI is, and how it relates to machine learning. We also briefly describe neural networks and deep learning.
   ms.date: 06/30/2019
-  author: markjulmar
-  ms.author: rawortma
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/2-introduction-to-ai.md)]

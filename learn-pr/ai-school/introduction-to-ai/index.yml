@@ -1,11 +1,11 @@
 ### YamlMime:Module
-uid: learn-wwl.introduction-to-ai
+uid: learn.introduction-to-ai
 metadata:
   title: Introduction to AI
   description: A brief introduction to AI and some of the fundamental concepts.
   ms.date: 06/30/2019
-  author: markjulmar
-  ms.author: rawortma
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: markjulmar
@@ -17,7 +17,7 @@ abstract: |
   - Learn how to use Python on Azure Notebooks.
   - Learn what models, error and cost are.
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/introduction-to-ai.svg
 levels: 
 - beginner
 roles: 
@@ -28,12 +28,12 @@ roles:
 products: 
 - azure
 units: 
-- learn-wwl.introduction-to-ai.introduction
-- learn-wwl.introduction-to-ai.introduction-to-ai
-- learn-wwl.introduction-to-ai.data-for-ai
-- learn-wwl.introduction-to-ai.introduction-to-azure-notebooks
-- learn-wwl.introduction-to-ai.walkthrough-of-azure-notebooks
-- learn-wwl.introduction-to-ai.models-error-and-cost
-- learn-wwl.introduction-to-ai.summary
+- learn.introduction-to-ai.introduction
+- learn.introduction-to-ai.introduction-to-ai
+- learn.introduction-to-ai.data-for-ai
+- learn.introduction-to-ai.introduction-to-azure-notebooks
+- learn.introduction-to-ai.walkthrough-of-azure-notebooks
+- learn.introduction-to-ai.models-error-and-cost
+- learn.introduction-to-ai.summary
 badge: 
-  uid: learn-wwl.introduction-to-ai.badge #add the uid for your achievement badge.
+  uid: learn.introduction-to-ai.badge #add the uid for your achievement badge.

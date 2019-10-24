@@ -1,8 +1,8 @@
 ### YamlMime:Module
-uid: learn-wwl.introduction-to-regression
+uid: learn.introduction-to-regression
 metadata:
   title: Predict numeric values with regression
-  description: This is an introduction to regression – making predictions about the real world using machine learning regression algorithms. Here we will use variations of linear regression to predict numeric values.
+  description: This module is an introduction to regression – making predictions about the real world using machine learning regression algorithms. Here we will use variations of linear regression to predict numeric values.
   ms.date: 06/30/2019
   author: jasallen
   ms.author: jasdeb
@@ -10,14 +10,14 @@ metadata:
   ms.prod: learning-azure
   #ms.learn-contact: markjulmar
 title: Predict numeric values with regression
-summary: This is an introduction to regression – making predictions about the real world using machine learning regression algorithms. Here we will use variations of linear regression to predict numeric values.
+summary: This module is an introduction to regression – making predictions about the real world using machine learning regression algorithms. Here we will use variations of linear regression to predict numeric values.
 abstract: | 
   In this module, you will:
   - Make predictive models with simple linear regression and multiple linear regression.
   - Make predictive models with polynomial regression.
   - Learn about non-linear data sets.
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/introduction-to-regression.svg
 levels: 
 - beginner
 roles: 
@@ -28,14 +28,14 @@ roles:
 products: 
 - azure
 units: 
-- learn-wwl.introduction-to-regression.introduction
-- learn-wwl.introduction-to-regression.simple-linear-regression
-- learn-wwl.introduction-to-regression.exercise-simple-linear-regression
-- learn-wwl.introduction-to-regression.multiple-linear-regression
-- learn-wwl.introduction-to-regression.exercise-multiple-linear-regression
-- learn-wwl.introduction-to-regression.non-linear-data-sets-and-polynomial-regression
-- learn-wwl.introduction-to-regression.exercise-polynomial-regression
-- learn-wwl.introduction-to-regression.summary
+- learn.introduction-to-regression.introduction
+- learn.introduction-to-regression.simple-linear-regression
+- learn.introduction-to-regression.exercise-simple-linear-regression
+- learn.introduction-to-regression.multiple-linear-regression
+- learn.introduction-to-regression.exercise-multiple-linear-regression
+- learn.introduction-to-regression.non-linear-data-sets-and-polynomial-regression
+- learn.introduction-to-regression.exercise-polynomial-regression
+- learn.introduction-to-regression.summary
 
 badge: 
-  uid: learn-wwl.introduction-to-regression.badge #add the uid for your achievement badge.
+  uid: learn.introduction-to-regression.badge #add the uid for your achievement badge.

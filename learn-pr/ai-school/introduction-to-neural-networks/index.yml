@@ -1,11 +1,11 @@
 ### YamlMime:Module
-uid: learn-wwl.neural-networks
+uid: learn.neural-networks
 metadata:
   title: Neural Networks
   description: Here we cover one of the hottest topics in computer systems - neural networks. We’ll work through the core principles behind neural networks, and how to make them easily with TensorFlow and Keras.
   ms.date: 06/30/2019
-  author: markjulmar
-  ms.author: rawortma
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: markjulmar
@@ -17,7 +17,7 @@ abstract: |
   - Learn about different types of activation functions.
   - Learn about practical types of gradient descent.
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/introduction-to-neural-networks.svg
 levels: 
 - beginner
 roles: 
@@ -28,11 +28,11 @@ roles:
 products: 
 - azure
 units: 
-- learn-wwl.neural-networks.introduction
-- learn-wwl.neural-networks.layers-edges-and-weights
-- learn-wwl.neural-networks.programming-exercise-introduction-to-neural-networks
-- learn-wwl.neural-networks.activation-functions
-- learn-wwl.neural-networks.programming-exercise-advanced-neural-networks
-- learn-wwl.neural-networks.summary
+- learn.neural-networks.introduction
+- learn.neural-networks.layers-edges-and-weights
+- learn.neural-networks.programming-exercise-introduction-to-neural-networks
+- learn.neural-networks.activation-functions
+- learn.neural-networks.programming-exercise-advanced-neural-networks
+- learn.neural-networks.summary
 badge: 
-  uid: learn-wwl.neural-networks.badge #add the uid for your achievement badge.
+  uid: learn.neural-networks.badge #add the uid for your achievement badge.

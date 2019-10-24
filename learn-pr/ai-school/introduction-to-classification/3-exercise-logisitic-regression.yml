@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.introduction-to-classification.exercise-logistic-regression
+uid: learn.introduction-to-classification.exercise-logistic-regression
 title: Exercise - Logistic Regression 
 metadata:
   title: Exercise - Logistic Regression
   description: Here we use Azure Notebooks to build a logistic regression model. 
   ms.date: 06/30/2019
-  author: markjulmar
-  ms.author: rawortma
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-logisitic-regression.md)]

@@ -1,11 +1,11 @@
 ### YamlMime:Module
-uid: learn-wwl.introduction-to-classification
+uid: learn.introduction-to-classification
 metadata:
   title: Introduction to Classification
   description: Here we introduce you the other main type of AI model - classification models.
   ms.date: 06/30/2019
-  author: markjulmar
-  ms.author: rawortma
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: markjulmar
@@ -13,11 +13,11 @@ title: Introduction to Classification
 summary: Here we introduce you the other main type of AI model - classification models.
 abstract: | 
   In this module, you will:
-  - Define what classfication is.
-  - Build a logisitic regression model.
+  - Define what classification is.
+  - Build a logistic regression model.
   - Describe what training, irreducible error, and Bayes error are.
 prerequisites: None
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/introduction-to-classification.svg
 levels: 
 - beginner
 roles: 
@@ -28,15 +28,15 @@ roles:
 products: 
 - azure
 units: 
-- learn-wwl.introduction-to-classification.introduction
-- learn-wwl.introduction-to-classification.logistic-regression
-- learn-wwl.introduction-to-classification.exercise-logistic-regression
-- learn-wwl.introduction-to-classification.cost-function-and-gradient-descent
-- learn-wwl.introduction-to-classification.support-vector-machines
-- learn-wwl.introduction-to-classification.exercise-svms
-- learn-wwl.introduction-to-classification.testing-predictions
-- learn-wwl.introduction-to-classification.advanced-svms
-- learn-wwl.introduction-to-classification.exercise-advanced-svms
-- learn-wwl.introduction-to-classification.summary
+- learn.introduction-to-classification.introduction
+- learn.introduction-to-classification.logistic-regression
+- learn.introduction-to-classification.exercise-logistic-regression
+- learn.introduction-to-classification.cost-function-and-gradient-descent
+- learn.introduction-to-classification.support-vector-machines
+- learn.introduction-to-classification.exercise-svms
+- learn.introduction-to-classification.testing-predictions
+- learn.introduction-to-classification.advanced-svms
+- learn.introduction-to-classification.exercise-advanced-svms
+- learn.introduction-to-classification.summary
 badge: 
-  uid: learn-wwl.introduction-to-classification.badge #add the uid for your achievement badge.
+  uid: learn.introduction-to-classification.badge #add the uid for your achievement badge.

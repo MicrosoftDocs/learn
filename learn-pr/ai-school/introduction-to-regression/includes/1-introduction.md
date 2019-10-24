@@ -4,7 +4,7 @@ Regression can be thought of as looking for a trend line in our data. When used 
 * What's the expected temperature tomorrow
 * How many days until you need to replace your car battery
 
-For example, if we had a data set with just two features, year and temperature, we could plot those on a chart and create a trend line that would help us predict the temperature of future years.
+For example, if we had a data set with just two features, year and temperature, we could plot those features on a chart and create a trend line that would help us predict the temperature of future years.
 
 ![Line graph describing the annual temperature. The Y-axis represents temperature abnormality and the X-axis represents the year. The graph shows temperature variation over the years, starting at -0.2-celsius abnormality at 1880. The data points vary between 0 celsius and -0.4 celsius until 1940, but with trend upwards to 1 celsius from 1940 to 2020](../media/2-1-a.png)
 

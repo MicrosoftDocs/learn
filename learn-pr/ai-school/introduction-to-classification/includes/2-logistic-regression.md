@@ -10,7 +10,7 @@ So if we want to predict the breed of dogs, we could create a data set with the 
 
 In the exercises, the models we build ‘train’ themselves to improve their accuracy.
 
-![Scatter plot showing a logistic regression classification. The Y-axis represents independent variable 2, and the X-axis represents independent variable 1. The plot is roughly divided in two diagonally, with blue data points on one side, and green data points on the other side. There is a black line of best fit, which moves iteratively from the bottom of the X-axis to divide the data points diagonally.](../media/3.3_ClassificationTraining.gif)
+![Scatter plot showing a logistic regression classification. The Y-axis represents independent variable 2, and the X-axis represents independent variable 1. The plot is roughly divided in two diagonally, with blue data points on one side, and green data points on the other side. There is a black line of best fit, which moves iteratively from the bottom of the X-axis to divide the data points diagonally.](../media/33-ct.gif)
 
 The diagram above shows an algorithm trying to find the line that best separates the blue from the green dots. As you can see above, the algorithm changes its variables (the starting point and gradient of the line) until it finds the line that most accurately does so. This process of adjusting these variables is called __training__. Once the algorithm has completed training, and we can use it to predict new examples, it’s called a model.
 
@@ -22,7 +22,7 @@ Logistic regression is a binary classification model, meaning it predicts 2 cate
 
 In the plot below we compare customer satisfaction with different cocoa percentages using logistic regression.
 
-![Scatter plot showing a logistic regression with only one feature. The Y-axis represents satisfaction likelihood and the X-axis represent coca percent. The blue data points on the bottom of the Y-axis, with low levels of cocoa percent. The green data points are at the top of the Y-axis with high levels of cocoa percent. There is a non-linear black line that divides the two categories.](../media/3.1_LogisticRegression-02.png)
+![Scatter plot showing a logistic regression with only one feature. The Y-axis represents satisfaction likelihood and the X-axis represent coca percent. The blue data points on the bottom of the Y-axis, with low levels of cocoa percent. The green data points are at the top of the Y-axis with high levels of cocoa percent. There is a non-linear black line that divides the two categories.](../media/31-lr-02.png)
 
 Logistic regression can plot a curve that can help us predict the likelihood that a customer is satisfied based on the cocoa percentage of the chocolate bar. Behind the scenes, logistic regression uses a powerful equation which can plot complex curves to accurately separate examples into categories.
 
