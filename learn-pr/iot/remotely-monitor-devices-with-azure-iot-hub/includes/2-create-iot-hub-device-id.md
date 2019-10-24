@@ -2,7 +2,7 @@ In this unit, we will create an IoT Hub, add a single device to that hub, and re
 
 ## Create a custom IoT Hub
 
-1. Sign in to the [Azure portal](https://ms.portal.azure.com/#home).
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 1. Select **+ Create a resource**, from the top of the left-hand menu. In the **Search the Marketplace** search box, enter "IoT Hub".
 1. Select **IoT Hub** from the search results, and click **Create**.
 1. You will be required to enter a **Subscription** from the selection offered to you. Then enter a **Resource Group**. A resource group is similar to a folder, it is largely there to help you organize your resources. Select an existing resource group you have, or enter a new one. The **Region** should be the geographical region closest to you, and finally enter a friendly name (say "CheeseCaveHub-&lt;your ID&gt;") for **IoT Hub Name**.
