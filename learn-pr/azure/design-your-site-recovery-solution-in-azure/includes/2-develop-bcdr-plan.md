@@ -4,23 +4,27 @@ Your organization wants you to design a site recovery strategy for your applicat
 
 In this unit, you'll learn how to identify key infrastructures, recovery time objectives, and recovery point objectives. You'll learn what requirements might be relevant with any PaaS services you might be using. You'll also learn how to plan for backup and disaster recovery. You'll also discover some of the Azure features that will help you to build a site recovery solution.
 
-## Identify key stakeholders and infrastructures
+## Identify key stakeholders and infrastructure
 
 Identify everyone who has a stake in your applications remaining functional. These stakeholders can be external or internal users. Your support staff, and anyone required for manual input in the BCDR process, have a stake in your applications remaining functional. Other applications and services that rely on your applications being functional can also be stakeholders.
 
-Identify the key infrastructures that compose the environment for your applications. These infrastructures are typically the machines, and the components and networks of your machines – and any other services that run alongside them.
+Identify the infrastructure that composes the environment for your applications. This infrastructure is typically the virtual machines, network resources, storage resources, and any other services that run alongside them.
 
 ## Identify recovery time objectives and recovery point objectives
 
-Recovery time objective (RTO) is the amount of time beyond which it's unacceptable for an application to be unavailable after a failure. For example, you might find it unacceptable for your application to be down for longer than an hour – because of the potential loss to the business after this time. Critical applications will require a shorter RTO.
+Recovery point objective (RPO) refers to how much data loss is acceptable for your application in the event of a disaster. For example, if your application is down, you might find it's only acceptable for it to run on data that's less than half an hour old after recovery. Some applications can function with older data, but for others it's critical to always run on the freshest data possible. You calculate RTO and RPO based on your organization's understanding of the risk and the cost incurred through the loss of data and downtime.
 
-Recovery point objective (RPO) refers to how old your working data is allowed to be at the point of recovery. For example, if your application is down, you might find it's only acceptable for it to run on data that's less than half an hour old after recovery. Some applications can function with older data, but for others it's critical to always run on the freshest data possible. You calculate RTO and RPO based on your organization's understanding of the risk and the cost incurred through the loss of data and downtime.
+Recovery time objective (RTO) is the maximum duration of acceptable downtime for your application. For example, you might find it unacceptable for your application to be down for longer than four hours because of the potential loss to the business after this time. Critical applications will require a shorter RTO.
 
 ![Availability Set](../media/2-rto-rpo.png)
 
+The RTO and RPO for your application can be influenced by contractual or regulatory requirements. These may also vary per application. Less critical applications may have larger values for RPO/RTO, while more business critical applications may have a smaller tolerance for downtime and data loss.
+
 ## Identify any PaaS requirements
 
-Any PaaS services you might want to make part of your BCDR plan may have their own requirements. For example, SQL Database has the following considerations:
+While you may have control over downtime and recovery for applications you manage, this may not be the case for platform-as-a-service (PaaS) services. Any PaaS services you use may have their own availability guarantees and recovery plans that you need to consider in your BCDR plan.
+
+For example, SQL Database has the following considerations:
 
 - Turn on SQL Database Auditing. You can use auditing to monitor for suspicious activity or human error.
 - Create a readable secondary in a different region through Active Geo-Replication.
@@ -28,7 +32,7 @@ Any PaaS services you might want to make part of your BCDR plan may have their o
 - Perform a geo-restore so you can recover from outage and restore your database to another region.
 - Point-in-time restore will help you recover from human mistakes. Only Standard and Premium tier give you longer point-in-time restores of up to 35 days. Basic tier gives you only seven days.
 
-It's important to understand the relevant requirements, so you know how they affect the BCDR process.
+Identify and inventory the services you depend on, so you can incorporate their recovery capabilities into your BCDR plan. It's important to understand the relevant requirements, so you know how they affect the BCDR process.
 
 ## Plan disaster recovery and data backup
 
