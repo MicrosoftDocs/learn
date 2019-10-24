@@ -1,12 +1,12 @@
-Your organization has data spread across various systems. These systems can be physical,or  can be virtual and still rely on physical infrastructure somewhere. Your organization's data should be protected at different levels. You can encrypt disks to encrypt the data physically. If you are dealing with virtual machines, you can also encrypt the data on the VHDs. You can also use client-side encryption and encrypt data inside of the files that store the data.
+Your organization has data spread across various systems. These systems can be physical, or can be virtual and still rely on physical infrastructure somewhere. Your organization's data should be protected at different levels. You can encrypt disks to encrypt the data physically. If you are dealing with virtual machines, you can also encrypt the data on the VHDs. You can also use client-side encryption and encrypt data inside of the files that store the data.
 
-Here, you'll learn about encryption at rest, and the various tools and services avialble to you to ensure your data is encrypted.
+Here, you'll learn about encryption at rest, and the various tools and services available to you to ensure your data is encrypted.
 
 ## Secure storage accounts with SSE
 
 Based on the type of classification, when your data is stored – and considered at rest – it will need continuous protection. You can use Azure Storage Service Encryption (SSE) to encrypt data stored at rest in your Azure storage accounts. Data in storage accounts is physically stored on hard drives. It's unlikely that a physical hard disk in an Azure data center would be stolen – a laptop is an easier target. However, it's important to have safeguards that meet your organization's regulatory obligations, and strategy for keeping data secure.
 
-Azure Storage Service Encryption uses a type of encryption called 256-bit AES. When your data is in any tier of Azure storage account, it's encrypted by default. Azure makes it possible to keep storage in a redundant way by offering additional copies of your storage accounts. Each storage account is also automatically encrypted as it's created. In fact, you can't disable encryption for storage accounts even if you wanted to. For encryption to take place, there's nothing for you to do. The data is encrypted for you. You can, however, decide whether you want to use your own customer-managed keys (BYOK) or the default Microsoft-managed keys that are kept secure in Azure Key Vault.
+Azure Storage Service Encryption uses 256-bit AES encryption. When your data is in any tier of Azure storage account, it's encrypted by default. Azure makes it possible to keep storage in a redundant way by offering additional copies of your storage accounts. Each storage account is also automatically encrypted as it's created. In fact, you can't disable encryption for storage accounts even if you wanted to. For encryption to take place, there's nothing for you to do. The data is encrypted for you. You can, however, decide whether you want to use your own customer-managed keys (BYOK) or the default Microsoft-managed keys that are kept secure in Azure Key Vault.
 
 Azure Storage Service supports encryption for the following types of storage:
 
@@ -26,7 +26,7 @@ Always take a snapshot of the VM, or create a backup, before enabling disk encry
 
 When you've taken the appropriate precautions, you can enable disk encryption on a VM. You can also keep all of your disk encryption keys secure in Azure Key Vault. Below is an example in Azure CLI, encrypting a VM running on Azure:
 
-```Azure CLI
+```azurecli
 az vm encryption enable \
 --resource-group "YourVirtualMachineResourceGroup" \
 --name "YourSecureVM" \
@@ -36,7 +36,7 @@ az vm encryption enable \
 
 Finally, ensure that the disks have indeed been encrypted by verifying:
 
-```AzureCLI
+```azurecli
 az vm encryption show --name "YourSecureVM" --resource-group "YourVirtualMachineResourceGroup"
 ```
 
