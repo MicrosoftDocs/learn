@@ -15,7 +15,6 @@ abstract: |
   - Create a Cosmos DB instance for a Node.js app
   - Set up a new Node.js app in VS Code
   - Add JavaScript code to work with Cosmos DB
-  - Create and run Cosmos DB stored procedures from your app
 prerequisites: |
   - VS Code with Azure extensions installed
   - Node.js installed
@@ -34,8 +33,6 @@ units:
 - learn.azure.build-node-cosmos-app-vscode.5-exercise-create-node-app-vscode
 - learn.azure.build-node-cosmos-app-vscode.6-javascript-cosmosdb
 - learn.azure.build-node-cosmos-app-vscode.7-exercise-javascript-cosmosdb
-- learn.azure.build-node-cosmos-app-vscode.8-create-cosmosdb-procedures
-- learn.azure.build-node-cosmos-app-vscode.9-exercise-create-cosmosdb-procedures
-- learn.azure.build-node-cosmos-app-vscode.10-summary
+- learn.azure.build-node-cosmos-app-vscode.8-summary
 badge:
   uid: learn.azure.build-node-cosmos-app-vscode.badge

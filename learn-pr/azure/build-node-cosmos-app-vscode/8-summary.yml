@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-node-cosmos-app-vscode.10-summary
+uid: learn.azure.build-node-cosmos-app-vscode.8-summary
 title: Summary
 metadata:
   title: Summary
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
-  [!include[](includes/10-summary.md)]
+  [!include[](includes/8-summary.md)]

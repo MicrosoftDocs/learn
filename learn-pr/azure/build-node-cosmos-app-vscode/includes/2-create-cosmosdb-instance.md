@@ -68,8 +68,3 @@ The Cosmos DB extension provides a graphical user interface that is integrated w
 - View the documents in a collection.
 
 ![The Cosmos DB extension in Visual Studio Code](../media/2-cosmosdb-extension.png)
-
-> [!NOTE]
-> Cosmos DB also supports stored procedures. You can use them to perform bulk processing operations over documents in a single partition. They are run by the Cosmos DB service rather than on the client-side. You write stored procedures using JavaScript code. 
->
-> You will learn more about stored procedures later in this module.
