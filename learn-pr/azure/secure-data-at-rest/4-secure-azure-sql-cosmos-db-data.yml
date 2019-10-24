@@ -4,13 +4,12 @@ title: Secure data at rest in Azure SQL and Cosmos DB
 metadata:
   title: Secure data at rest in Azure SQL and Cosmos DB
   description: Secure data at rest in Azure SQL and Cosmos DB
-  ms.date: 6/25/2019
+  ms.date: 10/28/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/4-secure-azure-sql-cosmos-db-data.md)]
 quiz:
