@@ -9,9 +9,9 @@
 
 Serverless computing encompasses three ideas: the abstraction of servers, an event-driven scale, and micro-billing:
 
-1. **Abstraction of servers**: Serverless computing abstracts the servers you run on. You never explicitly reserve server instances; the platform manages that for you. Each function execution can run on a different compute instance, and this execution context is completely transparent to the code. With serverless architecture, you simply deploy your code, which then runs with high availability.
+1. **Abstraction of servers**: Serverless computing abstracts the servers you run on. You never explicitly reserve server instances; the platform manages that for you. Each function execution can run on a different compute instance, and this execution context is transparent to the code. With serverless architecture, you simply deploy your code, which then runs with high availability.
 
-1. **Event-driven scale**: Serverless computing is an excellent fit for workloads that respond to incoming events. Events include those triggered by timers (for example, if a function needs to run every day at 10:00 AM UTC), HTTP (API and webhook scenarios), queues (for example, with order processing), and much more. Instead of writing an entire application, the developer authors a function, which contains both code and metadata about its triggers and bindings. The platform automatically schedules the function to run and scales the number of compute instances based on the rate of incoming events. Triggers define how a function is invoked and bindings provide a declarative way to connect to services from within the code.
+1. **Event-driven scale**: Serverless computing is an excellent fit for workloads that respond to incoming events. Events include triggers by timers (for example, if a function needs to run every day at 10:00 AM UTC), HTTP (API and webhook scenarios), queues (for example, with order processing), and much more. Instead of writing an entire application, the developer authors a function, which contains both code and metadata about its triggers and bindings. The platform automatically schedules the function to run and scales the number of compute instances based on the rate of incoming events. Triggers define how a function is invoked and bindings provide a declarative way to connect to services from within the code.
 
 1. **Micro-billing**: Traditional computing has the notion of per-second billing, but often, that's not as useful as it seems. Even if a customer's website gets only one hit a day, they still pay for a full day's worth of availability. With serverless computing, they pay only for the time their code runs. If no active function executions occur, they're not charged. For example, if the code runs once a day for two minutes, they're charged for one execution and two minutes of computing time.
 
@@ -21,8 +21,8 @@ Serverless computing encompasses three ideas: the abstraction of servers, an eve
 
 Azure has two implementations of serverless compute:
 
-- **Azure Functions** which can execute code in almost any modern language.
-- **Azure Logic Apps** which are designed in a web-based designer and can execute logic triggered by Azure services without writing any code.
+- **Azure Functions**, which can execute code in almost any modern language.
+- **Azure Logic Apps**, which are designed in a web-based designer and can execute logic triggered by Azure services without writing any code.
 
 ## Azure Functions
 
@@ -40,7 +40,7 @@ Functions are a key component of serverless computing, but they're also a genera
 
 Azure Logic Apps are similar to Functions - both enable you to trigger logic based on an event. Where Functions execute code, Logic Apps execute _workflows_ designed to automate business scenarios and built from predefined logic blocks. Every logic app workflow starts with a trigger, which fires when a specific event happens or when newly available data meets specific criteria. Many triggers include basic scheduling capabilities, so developers can specify how regularly their workloads will run. Each time the trigger fires, the Logic Apps engine creates a logic app instance that runs the actions in the workflow. These actions can also include data conversions and flow controls, such as conditional statements, switch statements, loops, and branching.
 
-You create Logic App workflows using a visual designer on the Azure Portal or in Visual Studio. The workflows are persisted as a JSON file with a known workflow schema.
+You create Logic App workflows using a visual designer on the Azure portal or in Visual Studio. The workflows are persisted as a JSON file with a known workflow schema.
 
 Azure provides over 200 different connectors and processing blocks to interact with different services - including most popular enterprise apps. You can also build custom connectors and workflow steps if the service you need to interact with isn't covered. You then use the visual designer to link connectors and blocks together, passing data through the workflow to do custom processing - often all without writing any code.
 
@@ -51,7 +51,7 @@ As an example, let's say a ticket arrives in ZenDesk. You could:
 1. If the customer isn't in your database, add them to your Dynamics 365 CRM system
 1. Send a follow-up email to acknowledge their request
 
-All of that could be designed in a visual designer making it easy to see the logic flow which is ideal for a business analyst role.
+All of that could be designed in a visual designer making it easy to see the logic flow, which is ideal for a business analyst role.
 
 ## Functions vs. Logic Apps
 
