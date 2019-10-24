@@ -1,4 +1,4 @@
-Your organization has several different systems, with data such as customer details, financial information and more. In order to be in a position to protect the data, you need to understand the data better by classifying the different types of data you are dealing with, understanding the different states data can be in, and the different ways in which data can be structured.
+Your organization has several different systems, with data such as customer details, financial information, and more. In order to be in a position to protect the data, you need to understand the data better by classifying the different types of data you are dealing with, understanding the different states data can be in, and the different ways in which data can be structured.
 
  Here, you'll learn the different states of data, learn about the classifications of confidential, internal, or public data, and differentiate structured vs unstructured data.
 
@@ -6,13 +6,13 @@ Your organization has several different systems, with data such as customer deta
 
 All data can be in different states at different moments in time. At the most basic level, data can be in use, in transit, or at rest (settled and stored somewhere).
 
-- **At rest** data typically can include storage objects and files that are on physical media. The media can be optical disks or magnetic disks such as HDDs.
-- **Data in transit** is data being moved, whether over a network, or generally transferred between two locations or applications and programs.
-- **Data in use** is data that is presently being processed, updated, generated or accessed in some way.
+- **Data at rest** can include storage objects and files that are on physical media. The media can be optical disks or magnetic disks such as HDDs.
+- **Data in transit** is data being moved, whether over a network, or transferred between two locations or applications and programs.
+- **Data in use** is data that is presently being processed, updated, generated, or accessed in some way.
 
 A typical piece of data may go through all states throughout its lifecycle.
 
-Data states and classifications are linked. You will not be able to meet classification requirements for your data if you don't understand what its different states are, and plan accordingly. If you can understand the different states that your data is going to be in throughout its lifecycle, together with what its classification is throughout all of its different states, you can put together solutions tailored to better protect your data and meet regulatory and business requirements. You should consider encrypting your data regardless of its state, unless the data itself is classified as explicitly not to be encrypted.
+Data states and classifications are linked. You will not be able to meet classification requirements for your data if you don't understand what its different states are, and plan accordingly. If you can understand the different states that your data is going to be in throughout its lifecycle, together with what its classification is throughout all of its different states, you can put together solutions tailored to better protect your data and meet regulatory and business requirements. Consider encrypting your data regardless of its state, unless the data is classified as explicitly not to be encrypted.
 
 ## Data classification
 
@@ -27,7 +27,7 @@ The terms used can vary between organizations but they generally fall into the f
   - Personal data such as name and address.
   - Financial data such as account balances, deposits.
   - Code or intellectual property belonging to an organization.
-  - Passwords, user/application credentials, cryptographic keys,and certificates.
+  - Passwords, user/application credentials, cryptographic keys, and certificates.
   
 - **Internal use only (medium level)**: Information that should only be viewed internally, and must not be shared with anyone external to the organization. Some examples of the type of data that could be classified with this level are:
 
@@ -52,6 +52,6 @@ Generally, you can categorize data into either structured or unstructured. Struc
 | 67890       | Cashier  | $25,102 |
 | 10123       | Security | $25,301 |
 
-Unstructured data can be such things as images, videos and files such as word processor documents. This type of data is not captured in conventional predefined fixed fields. For example, in PDF application, the source data for a PDF document would be in an unstructured format. The application would present the data in a meaningful way. In another example, streaming video data of live streamers is unstructured in its raw form, but presented in a meaningful way for viewers.
+Unstructured data can be such things as images, videos, and files such as word processor documents. This type of data is not captured in conventional predefined fixed fields. For example, in PDF application, the source data for a PDF document would be in an unstructured format. The application would present the data in a meaningful way. In another example, streaming video data of live streamers is unstructured in its raw form, but presented in a meaningful way for viewers.
 
 All data must be managed and classified based on its impact on the organization and its stakeholders, regardless of whether it's in a structured or unstructured format.
