@@ -144,7 +144,7 @@ Microsoft.Network/virtualNetworks
 - [Tutorial: Configure an alias record to refer to an Azure public IP address](https://docs.microsoft.com/en-us/azure/dns/tutorial-alias-pip)
 - [Quickstart: Create an Azure DNS zone and record using the Azure portal](https://docs.microsoft.com/azure/dns/dns-getstarted-portal#test-the-name-resolution)
 - [Tutorial: Host your domain in Azure DNS](https://docs.microsoft.com/azure/dns/dns-delegate-domain-azure-dns)
-- [Tutorial: Create DNS records in a custom domain for a web app](https://docs.microsoft.com/en-us/azure/dns/dns-web-sites-custom-domain)
+- [Tutorial: Create DNS records in a custom domain for a web app](https://docs.microsoft.com/azure/dns/dns-web-sites-custom-domain)
 - [Tutorial: Create an Azure DNS private zone using the Azure portal](https://docs.microsoft.com/azure/dns/private-dns-portal)
 - [Overview of DNS zones and records](https://docs.microsoft.com/azure/dns/dns-zones-records)
 
