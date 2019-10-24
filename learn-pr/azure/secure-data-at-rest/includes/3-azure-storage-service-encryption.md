@@ -42,7 +42,7 @@ az vm encryption show --name "YourSecureVM" --resource-group "YourVirtualMachine
 
 ## Secure data with client-side encryption
 
-You need to ensure that the actual data resident in files is encrypted. You need to be able to encrypt this data yourself before it is moved and stored in Azure storage.
+How do you ensure that the actual data resident in files is encrypted? You need to be able to encrypt this data yourself before it is moved and stored in Azure storage.
 
 That's where client-side encryption comes in. Your application can encrypt all of the data before it lands in Azure. The data is then decrypted by the application when it fetches this data back. You can use .NET, Python, or Java Azure Storage Client libraries to encrypt the data. You use Azure Key Vault with all of these libraries to take care of your encryption keys.
 
