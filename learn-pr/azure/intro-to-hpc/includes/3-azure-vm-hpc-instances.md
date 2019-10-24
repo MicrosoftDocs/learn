@@ -1,6 +1,6 @@
-The 3D models used in your engineering organization require many calculations to render and use memory resources intensively. You find that standard VMs render these models relatively slowly. These delays affect the productivity of your engineers, and you'd like to avoid them.
+The 3D models used in your engineering organization require many calculations to render and use memory resources intensively. You find that standard virtual machines (VMs) render these models relatively slowly. These delays affect the productivity of your engineers, and you'd like to avoid them.
 
-For high-intensity tasks with specialized requirements, you might need to use specialized virtual machines (VMs). Here, you'll learn about VM tiers in Azure that support specialized, high-performance tasks.
+For high-intensity tasks with specialized requirements, you might need to use specialized VMs. Here, you'll learn about VM tiers in Azure that support specialized, high-performance tasks.
 
 ## H-series VMs
 
