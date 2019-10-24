@@ -35,6 +35,7 @@ modules:
 - learn.improve-app-scalability-resiliency-with-load-balancer
 - learn.load-balance-web-traffic-with-application-gateway
 - learn.control-network-traffic-flow-with-routes
+- learn.design-ip-addressing-for-azure
 - learn.troubleshoot-azure-network-infrastructure
 trophy:
   uid: learn.architect-network-infrastructure.trophy
