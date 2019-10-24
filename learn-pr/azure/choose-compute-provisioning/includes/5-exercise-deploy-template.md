@@ -72,7 +72,7 @@ In the following exercise, you'll use an Azure Resource Manager template to prov
 
 1. Navigate to your storage account.  Select **Resource groups**, select your resource group, then select your storage account.
 
-1. Select **Containers**, then select **+ Container**.
+1. Select **Containers** under **Blob service** on the left hand side, then select **+ Container**.
 
 1. Give your container a unique name.
 
@@ -82,7 +82,7 @@ In the following exercise, you'll use an Azure Resource Manager template to prov
 
     ![Add a container](../media/5-create-container.png)
 
-1. Select your container. Then you will be able to see the upload button. Select **Upload**, browse for your *Webserver.zip* file, then select **Upload** at the bottom of the form.
+1. Select your container, select **Upload**, browse for your *Webserver.zip* file, then select **Upload** at the bottom of the form.
 
     ![Upload the zip file](../media/5-upload-file-to-storage-account.png)
 
@@ -112,9 +112,9 @@ In the following exercise, you'll use an Azure Resource Manager template to prov
     }
     ```
 
-1. Now you'll need to flesh out the skeleton.  To start with you will need to update the parameters section. The parameters section defines which values should be provided every time your template is deployed. Replace the parameters section with the code below.  In this code fragment there are comments to help explain the purpose of some of the settings. You can use <kbd>Ctrl</kbd>+<kbd>F</kbd> to search for "/*" and remove any comments.
+1. Now you'll need to flesh out the skeleton.  To start, you will need to update the parameters section. The parameters section defines which values should be provided every time your template is deployed. Replace the parameters section with the code below.  In this code fragment there are comments to help explain the purpose of some of the settings. Use <kbd>Ctrl</kbd>+<kbd>F</kbd> to search for "/*" and remove any comments, otherwise the template is not valid.
 
-    When copying and pasting, be careful not to remove the comma (,) at the end of the line: "parameters": {  }**,** in your *template.json** skeleton.
+    When copying and pasting, be careful not to remove the comma (,) at the end of the line: "parameters": {  }**,** in your *template.json* skeleton.
 
     ```json
     "parameters": {  
@@ -212,7 +212,7 @@ In the following exercise, you'll use an Azure Resource Manager template to prov
 
 1. The resources section holds all of the resources you want to provision. Because you will be provisioning a virtual machine, you will have to include a virtual network, a public IP address, a network interface, along with the DSC extension handler for your desired state configuration. You use individual resources to add all of those components. Replace the resources section with the code below. 
 You can use <kbd>Ctrl</kbd>+<kbd>F</kbd> to search for "/*" and remove any comments.
-    
+   
     ```json
     "resources": [
         {   /* Your IP address resource*/
@@ -353,7 +353,7 @@ You can use <kbd>Ctrl</kbd>+<kbd>F</kbd> to search for "/*" and remove any comme
     az group deployment validate  --resource-group <rgn>[sandbox resource group name]</rgn>  --template-file template.json
     ```
 
-1. You'll be prompted to enter a vmName.  This is the name of the virtual machine you want to create.  Enter a memorable name here.
+1. You'll be prompted to enter a **vmName**.  This is the name of the virtual machine you want to create.  Enter a memorable name here.
 
 1. Use a strong username and password combination when you are asked for **adminUsername** and **adminPassword**. Use a username that has at least 1 uppercase letter, a symbol, and a number. Remember that the password you use must be between 8-123 characters long and must satisfy at least 3 of these password needs:
 
@@ -365,7 +365,7 @@ You can use <kbd>Ctrl</kbd>+<kbd>F</kbd> to search for "/*" and remove any comme
 
 1. When you're prompted for a **modulesUrl**, use the URL of your configuration *.zip* file you copied down earlier.
 
-1. When all the additional parameters are entered, Azure will try and validate your template.
+1. Press <kbd> ENTER</kbd>, Azure will try and validate your template.
 
 1. If your deployment is validated, you'll see information about your deployment. Pay special attention to the error property, which can be found by scrolling back through the output text. It should be null.
 
@@ -381,7 +381,7 @@ You can use <kbd>Ctrl</kbd>+<kbd>F</kbd> to search for "/*" and remove any comme
     az group deployment create --resource-group <rgn>[sandbox resource group name]</rgn> --template-file template.json
     ```
 
-1. Follow the prompts to complete your deployment. If you are running on a sandbox this will take around ten minutes.   As long as you see the response "Running" the deployment is still running.
+1. Follow the prompts to complete your deployment. If you are running on a sandbox this will take around ten minutes.  As long as you see the response "Running.." the deployment is still busy.
 
 1. Once everything has been set up, your virtual machine will be created and configured as an IIS webserver. List all of the resources in the resource group to confirm everything has been set up. Run the below command.
 
