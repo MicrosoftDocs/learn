@@ -13,7 +13,8 @@ summary: Create a DNS zone for your domain name. Create DNS records to map the U
 abstract: |
   In this module, you will:
   - Configure Azure DNS to host your domain
-prerequisites: None
+prerequisites: |
+  - Knowledge of networking concepts like name resolution and IP addresses
 iconUrl: /learn/achievements/host-domain-azure-dns.svg
 levels:
 - beginner
