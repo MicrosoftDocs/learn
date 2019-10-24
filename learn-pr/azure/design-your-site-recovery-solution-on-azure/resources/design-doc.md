@@ -1,4 +1,4 @@
-## Title
+# Title
 
 Design your site recovery solution on Azure
 
