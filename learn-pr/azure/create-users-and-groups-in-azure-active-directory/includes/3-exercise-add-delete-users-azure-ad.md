@@ -29,7 +29,11 @@ Create a new directory to hold all of the users you create in this exercise.
 
 1. First, let's make sure you're logged in as an administrator for the organization you created earlier.
 
-   In the Active AD tenant you created, under **Manage**, select **Roles and administrators**.  Your role should be set as Global Administrator. If it's not, on the top right of the Azure portal select your profile and **Switch directory**. Under **All directories**, select the directory you created. 
+   In the Active AD tenant you created, under **Manage**, select **Roles and administrators**.  Your role should be set as Global Administrator.
+
+      ![Screenshot that shows your role in Azure AD](../media/3-check-role.png)
+   
+   If it's not, on the top right of the Azure portal select your profile and **Switch directory**. Under **All directories**, select the directory you created. 
 
 1. Now let's create a new user.
 
