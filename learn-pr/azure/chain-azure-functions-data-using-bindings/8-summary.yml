@@ -52,15 +52,3 @@ quiz:
     - content: "Two"
       isCorrect: false
       explanation: "A function must have exactly one trigger."
-
-  - content: Which of the following lines of JavaScript writes "hello" to an Azure Queue Storage queue using a function parameter called **myQueueItem**?
-    choices:
-    - content: context.myQueueItem = "hello";
-      isCorrect: false
-      explanation: This is the correct parameter name, but it needs to be accessed through the context of the object.
-    - content: context.bindings.myQueueItem = "hello";
-      isCorrect: true
-      explanation: context.bindings returns a named object that contains all your input and output data.
-    - content: myQueueItem = "hello";
-      isCorrect: false
-      explanation: This is the correct parameter name, but it needs to be accessed through the context of the object.

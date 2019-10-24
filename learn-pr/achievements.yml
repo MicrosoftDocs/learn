@@ -25,3 +25,13 @@ achievements:
   title: "Introduction to Mobile Apps in Azure App Service"
   summary: "Introduction to Mobile Apps in Azure App Service"
   iconUrl: /learn/achievements/azure-intro-mobile-app-service.svg
+- uid: learn-wwl.learn-business-value-of-azure.trophy
+  type: trophy
+  title: Learn the business value of Microsoft Azure
+  summary: Learn the business value of Microsoft Azure
+  iconUrl: /learn/achievements/azure-sfa-generalist-path.svg
+- uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure.badge
+  type: badge
+  title: Microsoft Cloud Adoption Framework for Azure
+  summary: Microsoft Cloud Adoption Framework for Azure
+  iconUrl: /learn/achievements/microsoft-cloud-adoption-framework-for-azure.svg

@@ -3,7 +3,7 @@ uid: learn.azure.monitor-azure-vm-using-diagnostic-data.view-host-metrics
 title: View VM metrics
 metadata:
   title: View VM metrics
-  description: See how to build rich charts using the VM metrics, and then pin these charts to a new health dashboard.
+  description: See how to build rich charts by using the VM metrics, and then pin these charts to a new health dashboard.
   ms.date: 10/18/2019
   author: cwatson-cat
   ms.author: cwatson
@@ -15,25 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: You want to track the average CPU usage of your Azure Virtual Machine over the last seven days. What is the most straightforward way to do this?
+  - content: You want to track the average CPU usage of your Azure virtual machine over the last seven days. What is the most straightforward way to do this?
     choices:
     - content: View the metrics for the virtual machine on the Overview page and set the range to the last seven days.
       isCorrect: true
-      explanation: The Overview page displays this graph by default, and the range can be set to show a seven-day range.
+      explanation: The Overview page displays this graph by default. You can set the range to show a seven-day range.
     - content: View the metrics for the virtual machine each day and store the values for each of the last seven days in a spreadsheet.
       isCorrect: false
       explanation: You can track trends in virtual machine metrics on a single graph for up to seven days.
     - content: View the metric in the Monitor section by creating a graph and set the range to the last seven days.
       isCorrect: false
       explanation: You don't need to create a graph for the average CPU. The Overview page shows this metric by default.
-  - content: What do you have to create to store simple boot diagnostics in Azure?
+  - content: What do you have to install or create to store simple boot diagnostics in Azure?
     choices:
-    - content: Install the Azure diagnostic extension.
+    - content: Install the Azure Diagnostics extension.
       isCorrect: false
-      explanation: An Azure diagnostic extension isn't required to store simple boot diagnostics.
-    - content: You don't have to create anything additional to store diagnostic logs in Azure.
+      explanation: An Azure Diagnostics extension isn't required to store simple boot diagnostics.
+    - content: You don't have to install or create anything additional to store diagnostic logs in Azure.
       isCorrect: false
-      explanation: You don't have to create anything additional to see basic metrics for VMs. A storage account is needed for boot diagnostics though.
-    - content: An Azure Storage account.
+      explanation: You don't have to create anything additional to see basic metrics for VMs. You need a storage account for boot diagnostics, though.
+    - content: An Azure storage account.
       isCorrect: true
-      explanation: A storage account is needed to store boot diagnostics data, the boot screenshots, and logs.
+      explanation: You need a storage account to store boot diagnostics data, the boot screenshots, and logs.

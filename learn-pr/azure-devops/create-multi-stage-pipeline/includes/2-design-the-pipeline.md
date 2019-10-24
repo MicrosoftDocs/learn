@@ -39,7 +39,7 @@ When you want to implement a release pipeline, it's important to first identify 
 
 **Tim:** Plus, we need a stage where we can show new features to management. I can't send anything to production without their approval.
 
-**Andy:** Absolutely. Now that we're up to speed on what a release pipeline does, what do we need to do to make this a pipeline that really does what what we need?
+**Andy:** Absolutely. Now that we're up to speed on what a release pipeline does, what do we need to do to make this a pipeline that really does what we need?
 
 **Mara:** Let's sketch out our requirements on the whiteboard. That might help us plan our next steps. Let's start with what we have.
 

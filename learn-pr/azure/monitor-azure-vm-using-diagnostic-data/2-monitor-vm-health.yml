@@ -3,7 +3,7 @@ uid: learn.azure.monitor-azure-vm-using-diagnostic-data.monitor-vm-health
 title: Monitor the health of the virtual machine
 metadata:
   title: Monitor the health of the virtual machine
-  description: Look at how to use Azure metrics to monitor the health of a virtual machine. You'll explore the different metrics available in Azure, and learn how to plot multiple metrics on a graph to better understand the traffic hitting your web server.
+  description: Look at how to use Azure metrics to monitor the health of a virtual machine. You'll explore the different metrics available in Azure. You'll also learn how to plot multiple metrics on a graph to better understand the traffic that hits your web server.
   ms.date: 10/18/2019
   author: cwatson-cat
   ms.author: cwatson
