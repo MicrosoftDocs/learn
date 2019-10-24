@@ -65,7 +65,7 @@ The primary record to create is the A record. This record contains the pairing b
 > [!NOTE]
 > In a real-world scenario, you may well have more than one IP address set up for your webserver. In which cause you would add all the associated IP addresses as part of a recordset. Which can be done before or after you press the OK button to create the record.
 
-## Verify your public Azure DNS
+## Verify your global Azure DNS
 
 In a real-world scenario, once you have created the public DNS zone you will update the domain name registrar NS records with the Name Space settings from the Azure DNS zone. By delegating the domain to Azure, you are enabling public internet access to the domain.
 
