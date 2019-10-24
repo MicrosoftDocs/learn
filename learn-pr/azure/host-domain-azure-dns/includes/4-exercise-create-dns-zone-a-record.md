@@ -6,9 +6,6 @@ In this unit, you'll:
 - Create an A Record
 - Verify the A record resolves to an IP address
 
-> [!NOTE]
-> Make sure you activate the sandbox before you continue.
-
 ## Create a DNS Zone in Azure DNS
 
 Before you can host the wideworldimports.com domain on your servers, you need to create a DNS zone. The DNS zone holds all the configuration records associated with your domain.
