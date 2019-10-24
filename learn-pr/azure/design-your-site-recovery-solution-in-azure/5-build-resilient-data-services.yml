@@ -1,20 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-your-site-recovery-solution-on-azure.build-resilience-into-your-data-services
-title: Build resilience into your data services
-
+uid: learn.design-your-site-recovery-solution-in-azure.build-resilient-data-services
+title: Build resilient data services
 metadata:
-  title: Build resilience into your data services
-  description: Build resilience into your data services
+  title: Build resilient data services
+  description: Build resilient data services
   ms.date: 6/21/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-build-resilience-into-your-data-services.md)]
+  [!include[](includes/5-build-resilient-data-services.md)]
 quiz:
   title: Check your knowledge
   questions:

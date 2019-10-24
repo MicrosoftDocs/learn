@@ -1,7 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-your-site-recovery-solution-on-azure.develop-a-business-continuity-and-disaster-recovery-plan
+uid: learn.design-your-site-recovery-solution-in-azure.develop-bcdr-plan
 title: Develop a business continuity and disaster recovery plan
-
 metadata:
   title: Develop a business continuity and disaster recovery plan
   description: Develop a business continuity and disaster recovery plan
@@ -10,11 +9,9 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-develop-a-business-continuity-and-disaster-recovery-plan.md)]
+  [!include[](includes/2-develop-bcdr-plan.md)]
 quiz:
   title: Check your knowledge
   questions:
