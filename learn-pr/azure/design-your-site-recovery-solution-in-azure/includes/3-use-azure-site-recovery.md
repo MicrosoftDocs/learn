@@ -6,24 +6,26 @@ In this unit, you'll see how Azure Site Recovery simplifies your business contin
 
 ## Simplify your BCDR with Azure Site Recovery
 
-Azure Site Recovery helps you simplify your BCDR – you can configure and manage your replication, failovers, and failbacks, all through the Azure portal.
+Azure Site Recovery helps you simplify your BCDR. You can configure and manage your replication, failovers, and failbacks, all through the Azure portal.
 Use Azure Site Recovery to replicate different types of targets. For example, Azure Site Recovery can help you configure disaster recovery for Azure virtual machines. You can replicate Azure virtual machines from a primary to a secondary region. Your on-premises virtual machines can be replicated too, along with workloads.
 
 When you replicate over to Azure, the associated data goes into Azure storage and is kept resilient as a result. If a failover is triggered, Azure virtual machines are created for you, using this data that's replicated and stored in Azure storage.
-Azure Site Recovery helps you meet your recovery time objective because it can perform continuous replication for your virtual machines. Replication can occur as often as every 30 seconds for any Hyper-V virtual machine – this frequency means reduced recovery time objective. You can make recovery time objectives even shorter if you use Azure Traffic Manager with your Azure Site Recovery service.
+
+Azure Site Recovery helps you meet your recovery time objective because it can perform continuous replication for your virtual machines. Replication can occur as often as every 30 seconds for any Hyper-V virtual machine. This frequency means reduced recovery time objective. You can make recovery time objectives even shorter if you use Azure Traffic Manager with your Azure Site Recovery service.
+
 Site Recovery can recover to application-consistent snapshots. Site Recovery takes snapshots of all data that's in memory, all data on disk, and all transactions in process.
 
-Use Azure Site Recovery's recovery plans to group your virtual machines, add scripts, manual actions, and failover – and recover multi-tier applications that are spread across different virtual machines. You can set up Azure automation runbooks to work with your recovery plans.
+Use Azure Site Recovery's recovery plans to group your virtual machines, add scripts, manual actions, and failover, and recover multi-tier applications that are spread across different virtual machines. You can set up Azure automation runbooks to work with your recovery plans.
 
 Always test your disaster recovery plan. Azure Site Recovery lets you run disaster recovery tests with no disruption to your running replication.
 
-If you're using other BCDR technologies, you may be able to integrate them too. For example, if you're using SQL Server Always On to protect databases, you can use Azure Site Recovery to help manage failovers of your availability groups.
+If you're using other BCDR technologies, you may be able to integrate them too. For example, if you're using SQL Server Always On to protect databases, you can use Azure Site Recovery to help manage failover of your availability groups.
 
 ## Implement a solution using Site Recovery and Azure Backup
 
-![Azure Site Recovery and Azure Backup](../media/3-asr-backup-diagram.png)
+Let's look at a solution that incorporates Azure Backup and Azure Site Recovery.
 
-The example solution shown above incorporates Azure Backup and Azure Site Recovery.
+![Azure Site Recovery and Azure Backup](../media/3-asr-backup-diagram.png)
 
 There's an on-premises environment that has a Hyper-V host server for hosting virtual machines. You want to back up all the files and folders in this virtual machine to Azure. You also want to protect any workloads running on the virtual machine, and keep running them even if the virtual machine fails. Azure Backup and Azure Site Recovery can be used together as part of a single solution.
 
@@ -66,7 +68,9 @@ Your workloads will now fail over smoothly. Before the failover is triggered, yo
 ## Integrate Azure Site Recovery with Azure Traffic Manager
 
 Azure Site Recovery works with Azure Traffic Manager to protect your infrastructure.
+
 Consider a case where your organization has applications with public endpoints running on-premises. The organization wants to ensure these applications are protected in Azure if there's a disaster. If a disaster occurs, your organization wants to direct all traffic to Azure.
+
 You can achieve this aim by configuring a Traffic Manager profile. You use Azure Traffic Manager's priority routing to create two external endpoints. You'll need to create one primary endpoint for your on-premises, and set it as priority 1. You'll also need a failover endpoint for Azure, and set it as priority 2. Traffic Manager directs your traffic to the on-premises endpoint for as long as the endpoint is healthy.
 
 If there's a disaster, Azure Site Recovery performs a failover. Traffic Manager can probe your endpoints based on values you set – as frequent as every 10 seconds if necessary. When Traffic Manager sees the endpoint isn't healthy, traffic is directed to the failover endpoint. When you're ready to fail back to your on-premises environment, Azure Site Recovery can perform a failback for you. Traffic Manager then can confirm that the primary endpoint is healthy. Traffic is then automatically routed back to your primary endpoint.
