@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.creating-and-configuring-hdinsight-cluster.6-enabling-monitoring-hdinsight-jobs
+title: Enabling monitoring of HDInsight jobs
+metadata:
+  title: Enabling monitoring of HDInsight jobs
+  description: Enabling monitoring of HDInsight jobs
+  ms.date: 10/25/2019
+  author: wwlpublish
+  ms.author: Chris Testa O'Neill
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+
+durationInMinutes: 9
+content: |
+  [!include[](includes/6-enabling-monitoring-hdinsight-jobs.md)]
