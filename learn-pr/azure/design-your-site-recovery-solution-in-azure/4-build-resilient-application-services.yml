@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-build-resilience-into-your-application-services.md)]
+  [!include[](includes/4-build-resilient-application-services.md)]
 quiz:
   title: Check your knowledge
   questions:
