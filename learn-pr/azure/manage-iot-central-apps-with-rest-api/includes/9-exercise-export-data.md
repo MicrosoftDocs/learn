@@ -26,10 +26,9 @@ echo $STORAGE_CONNECTION_STRING
 Run the following command to create a data export for telemetry to the blob container. Use the **sources** array to specify the types of data to export. Add at least one of **telemetry**, **devices**, and **deviceTemplates**:
 
 ```azurecli
-az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/continuousDataExports \
+az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/preview/continuousDataExports/storagedataexport \
 --headers Authorization="$API_TOKEN" --body \
 '{
-    "@type": "ContinuousDataExport",
     "displayName": "Export telemetry",
     "endpoint": {
         "type": "StorageEndpoint",
@@ -81,4 +80,26 @@ az storage blob download --container-name dataexport \
 --name $FIRST_BLOB \
 --file telemetry.json
 cat telemetry.json | json_pp
+```
+
+The blob contains a message from one of your simulated devices. The telemetry is in the `Body` section. For example:
+
+```json
+{
+   "EnqueuedTimeUtc" : "2019-10-24T08:49:32.8210000Z",
+   "Body" : {
+      "humid" : 23.0369107599139,
+      "temp" : 91.5814283182951
+   },
+   "SystemProperties" : {
+      "contentEncoding" : "utf-8",
+      "contentType" : "application/json",
+      "enqueuedTime" : "2019-10-24T08:49:32.8210000Z",
+      "connectionDeviceGenerationId" : "637075032197474935",
+      "connectionDeviceId" : "storemon-sim-001",
+      "interfaceName" : "sensor",
+      "connectionAuthMethod" : "{\"scope\":\"device\",\"type\":\"sas\",\"issuer\":\"iothub\",\"acceptingIpFilterRule\":null}"
+   },
+   "Properties" : {}
+}
 ```
