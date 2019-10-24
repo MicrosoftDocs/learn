@@ -16,6 +16,8 @@ Recovery time objective (RTO) is the amount of time beyond which it's unacceptab
 
 Recovery point objective (RPO) refers to how old your working data is allowed to be at the point of recovery. For example, if your application is down, you might find it's only acceptable for it to run on data that's less than half an hour old after recovery. Some applications can function with older data, but for others it's critical to always run on the freshest data possible. You calculate RTO and RPO based on your organization's understanding of the risk and the cost incurred through the loss of data and downtime.
 
+![Availability Set](../media/2-rto-rpo.png)
+
 ## Identify any PaaS requirements
 
 Any PaaS services you might want to make part of your BCDR plan may have their own requirements. For example, SQL Database has the following considerations:
@@ -61,8 +63,6 @@ Consider creating availability sets. Availability sets will  allow you to isolat
 
 ![Availability Set](../media/2-availability-sets.png)
 
-<!---Feel free to format this diagram according to your own standards-->
-
 ### Availability zones
 
 To help keep your applications running, consider using Azure availability zones. These availability zones are separate physical places in a single Azure region. Each location consists of at least one data center, and is designed to use its own separate networking, cooling systems, and power. If one location fails, another can be used. You'll usually have a minimum of three zones in each region.
@@ -70,5 +70,3 @@ To help keep your applications running, consider using Azure availability zones.
 Implementing availability zones means that your machines are spread over at least three update domains and three fault domains. These virtual machines, in three different regions, are never updated simultaneously. You can manually set a specific type of resource to be in a specific zone with some resources – such as virtual machines. And some services, such as SQL Database, will automatically copy across multiple availability zones.
 
 ![Availability Zones](../media/2-availability-zones.png)
-
-<!---Feel free to format this diagram according to your own standards-->
