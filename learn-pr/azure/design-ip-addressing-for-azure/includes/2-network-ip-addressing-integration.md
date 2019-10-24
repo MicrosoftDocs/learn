@@ -17,7 +17,7 @@ A typical on-premises network design includes these components:
 
 The diagram shows a simplified version of a typical on-premises network. On the routers facing the internet service provider (ISP), you have public IP addresses that are used by your outbound Internet traffic as their source. These are also the addresses used for inbound traffic across the Internet. The ISP may assign you a block of IP addresses to assign to your devices, or you may have your own block of public IP addresses that your organization owns and controls. These addresses can be assigned to systems that you would like to make accessible from the internet, such as web servers.
 
-The DMZ and internal zone have private IP addresses. In the DMZ and internal zone, the IP addresses assigned to these devices are not accessible over the internet. As such, the administrator has full control over the IP address assignment, name resolution, security settings, and security rules. There are three ranges of non-routable IP addresses specifically designed for internal networks that will not be sent over internet routers. These are the following:
+The perimeter network and internal zone have private IP addresses. In the perimeter network and internal zone, the IP addresses assigned to these devices are not accessible over the internet. As such, the administrator has full control over the IP address assignment, name resolution, security settings, and security rules. There are three ranges of non-routable IP addresses specifically designed for internal networks that will not be sent over internet routers. These are the following:
 
 - 10.0.0.0 to 10.255.255.255
 - 172.16.0.0 to 172.31.255.255
