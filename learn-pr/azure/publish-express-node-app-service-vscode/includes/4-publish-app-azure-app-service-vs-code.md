@@ -1,14 +1,14 @@
-If you want to deploy your Express.js webapp to the Azure App Service, there is an Azure App Service extension for Visual Studio Code that makes your work easier.
+If you want to deploy your Express.js webapp to Azure App Service, there is an Azure App Service extension for Visual Studio Code that makes your work easier.
 
-Suppose, you've completed your proof-of-concept webapp that provides a countdown to the new video game's launch date. Now, you want to show that it works in the Azure App Service, which you want to use as the final host. You want a quick way to deploy the app and you'd like to be able to debug it in Azure as well.
+Suppose, you've completed your proof-of-concept webapp that provides a countdown to the new video game's launch date. Now, you want to show that it works in Azure App Service, which you want to use as the final host. You want a quick way to deploy the app and you'd like to be able to debug it in Azure as well.
 
-In this unit, you'll learn about the Azure App Service and how to work with it by using Visual Studio Code. 
+In this unit, you'll learn about Azure App Service and how to work with it by using Visual Studio Code. 
 
-## What is the Azure App Service?
+## What is Azure App Service?
 
-The Azure App Service is a Platform-as-a-Service (PaaS) implementation of a web server, and can host websites, REST APIs, and back-end services for mobile apps. Almost any service that you address using HTTP can be hosted in the App Service. Because the App Service is a PaaS system, you don't have to set up, run, and maintain virtual servers or underlying software such as operating systems and web servers. All of this infrastructure is managed by Azure and Microsoft engineers to provide high availability. Instead, you can concentrate on your code and how it responds to user requests. 
+Azure App Service is a Platform-as-a-Service (PaaS) implementation of a web server, and can host websites, REST APIs, and back-end services for mobile apps. Almost any service that you address using HTTP can be hosted in the App Service. Because the App Service is a PaaS system, you don't have to set up, run, and maintain virtual servers or underlying software such as operating systems and web servers. All of this infrastructure is managed by Azure and Microsoft engineers to provide high availability. Instead, you can concentrate on your code and how it responds to user requests. 
 
-The Azure App Service supports a wide range of languages and frameworks, that include:
+Azure App Service supports a wide range of languages and frameworks, that include:
 
 - ASP.NET and .NET Framework languages such as C# and Visual Basic.
 - Node.js and JavaScript.
@@ -16,11 +16,11 @@ The Azure App Service supports a wide range of languages and frameworks, that in
 - JSP and Java.
 - PHP and Python.
 
-So developers can work with the Azure App Service, regardless of their preferred technologies.
+So developers can work with Azure App Service, regardless of their preferred technologies.
 
 The App Service also integrates with many different code management and DevOps systems, including GitHub, Azure DevOps, BitBucket, and Docker Hub. So it's likely that you'll be able to continue using the same toolset when you migrate to the App Service.
 
-In this module, we're developing a Node.js webapp, which executes server-side JavaScript code. We've used the Express.js web application framework to make that task easier. Such a webapp is easy to publish to the Azure App Service.
+In this module, we're developing a Node.js webapp, which executes server-side JavaScript code. We've used the Express.js web application framework to make that task easier. Such a webapp is easy to publish to Azure App Service.
 
 ## What is an App Service Plan?
 
@@ -43,18 +43,18 @@ Use pricing tiers to control costs and match the scalability of your app to the 
 
 Visual Studio Code is a free Integrated Development Environment (IDE) for Windows, macOS, and Linux. It has support for JavaScript, TypeScript, and Node.js out-of-the-box, and you can install many extensions for other languages and runtimes. 
 
-If you are working with the Azure App Service, you can consider installing the Azure App Service extension for Visual Studio Code. With this extension, you get an extra explorer window that displays all the webapps in your subscription. You can use this explorer to connect your app to a backend database or configure GitHub deployment. You can also create deployment slots or define new application settings. You can also create new webapps and deploy source code straight from your local hard drive to Azure.
+If you are working with Azure App Service, you can consider installing the Azure App Service extension for Visual Studio Code. With this extension, you get an extra explorer window that displays all the webapps in your subscription. You can use this explorer to connect your app to a backend database or configure GitHub deployment. You can also create deployment slots or define new application settings. You can also create new webapps and deploy source code straight from your local hard drive to Azure.
 
 ![The Azure explorer in Visual Studio Code](../media/4-azure-explorer.png)
 
 ## Deploy a website to Azure
 
-You have many options when you want to deploy a website to the Azure App service. For example, you could use git to upload the source code to a GitHub repository, then use the Kudu deployment system to roll it out to the Azure App Service. Alternatively, you could implement a complete DevOps continuous deployment pipeline, by using Azure DevOps.
+You have many options when you want to deploy a website to Azure App service. For example, you could use git to upload the source code to a GitHub repository, then use the Kudu deployment system to roll it out to Azure App Service. Alternatively, you could implement a complete DevOps continuous deployment pipeline, by using Azure DevOps.
 
 However, if you want to complete the deployment fast, entirely within Visual Studio Code, you can use the Azure App Service extension:
 
 1. In the Azure explorer, connect to your Azure subscription and sign in.
-1. Create a new app in the Azure App service, with a globally unique name.
+1. Create a new app in Azure App Service, with a globally unique name.
 1. Select an operating system and version for the virtual machines. The extension creates a new App Service plan and resource group to contain your web app.
 1. Select a folder that contains the source code. The extension deploys this code and starts that webapp.
 

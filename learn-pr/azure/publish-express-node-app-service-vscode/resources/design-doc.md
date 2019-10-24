@@ -74,7 +74,7 @@ Create a JavaScript web application with Express.js and VS Code and publish it t
 
 5. **Exercise - Publish your application to Azure App Service with Visual Studio Code**
     - Install the Azure App Service extension
-    - Sign in to your Azure account through the Azure App Service explorer
+    - Sign in to your Azure account through the Azure Explorer
     - Deploy a new Azure App Service Web App using the Azure App Service extension
     - Browse your web app
     - Debug your web app
@@ -89,11 +89,11 @@ Create a JavaScript web application with Express.js and VS Code and publish it t
 
 7. **Exercise - Update the app in Visual Studio Code and publish the updates**
     - Make changes to your web app using Visual Studio Code
-    - Push your changes to the Azure App Service
+    - Push your changes to Azure App Service
 
 8. **Summary**
 
-    Your organization needed you to rapidly create a website for their upcoming video game event. You needed to be able to easily and rapidly make changes to the site whenever changes were required.  You decided to create an Express.js application using Visual Studio Code and publish your application to the Azure App Service for hosting. The Azure App Service also made it possible for you to easily publish any updates to your website.
+    Your organization needed you to rapidly create a website for their upcoming video game event. You needed to be able to easily and rapidly make changes to the site whenever changes were required.  You decided to create an Express.js application using Visual Studio Code and publish your application to Azure App Service for hosting. Azure App Service also made it possible for you to easily publish any updates to your website.
 
 ## Notes
 

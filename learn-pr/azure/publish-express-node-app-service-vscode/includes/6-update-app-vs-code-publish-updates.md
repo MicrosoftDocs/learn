@@ -6,7 +6,7 @@ In this unit, you'll learn how to deploy new versions and roll back a version in
 
 ## Push updates with Visual Studio Code
 
-To deploy a new version of your code to an existing webapp in the Azure App service, right-click on it in the Code Azure explorer window and then select **Deploy to Web App**. This operation overwrites the previous version of the app:
+To deploy a new version of your code to an existing webapp in Azure App service, right-click on it in the Code Azure explorer window and then select **Deploy to Web App**. This operation overwrites the previous version of the app:
 
 ![Deploy updated code from Visual Studio Code](../media/6-update-web-app.png)
 
@@ -16,7 +16,7 @@ In the Azure explorer, you can also see a list of deployments for your webapp un
 
 If you right-click on any deployment in the list, you can choose **Redeploy**. This technique is a good way to roll back to a previous version of the code in case any error arises with a new version. However, it requires the old code to be reuploaded so it can take time.
 
-## Use deployment slots in the Azure App Service
+## Use deployment slots in Azure App Service
 
 You can separate testing, staging, and production environments by placing them in separate webapp instances within the App Service. In this configuration, when you have finished your testing and staging, a new deployment is required to move your code into the production site. It's also up to you to provide a mechanism to roll back the website to the previous version, if undetected bugs or problems arise with the new version.
 

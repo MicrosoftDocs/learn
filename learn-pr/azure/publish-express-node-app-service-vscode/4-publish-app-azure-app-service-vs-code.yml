@@ -3,7 +3,7 @@ uid: learn.azure.publish-express-node-app-service-vscode.4-publish-app-azure-app
 title: Publish your application to Azure App Service with Visual Studio Code
 metadata:
   title: Publish your application to Azure App Service with Visual Studio Code
-  description: In this unit, you'll learn how to deploy a webapp built with Node.js and Express.js to the Azure App Service.
+  description: In this unit, you'll learn how to deploy a webapp built with Node.js and Express.js to Azure App Service.
   ms.date: 09/16/2019
   author: nickwalkmsft
   ms.author: nickwalk

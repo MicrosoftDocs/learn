@@ -19,79 +19,47 @@ Express.js is a webapp framework that extends the Node.js server-side JavaScript
 1. If the **User Account Control** dialog appears, select **Yes**.
 1. When the installation is complete, select **Finish**.
 
-## Create an app folder and install Express.js
+## Create an app folder
 
 You can use Visual Studio Code to run all the commands and edit all the code for your webapp. Here, you'll use its integrated terminal to set up a folder with Express.js installed:
 
 1. Start Visual Studio Code. 
-1. To bring up the command palette, press CTRL + SHIFT + P.
-1. Type **Terminal** and then select **View: Toggle Integrated Terminal**.
-
-    ![Open the integrated terminal in Code](../media/3-open-integrated-terminal.png)
-
-1. To check your version of `npm` type this command, and then press Enter:
-
-    ```PowerShell
-    npm --version
-    ```
-
+1. On the **View** menu, click **Terminal**.
 1. To create a new folder, type the following commands:
 
-    ```PowerShell
+    ```console
     cd ~
     mkdir countdownExpressApp
     cd countdownExpressApp
     ```
 
-1. To initialize the `npm` tool, type this command, and then accept all the defaults:
-
-    ```PowerShell
-    npm init
-    ```
-
- 1. To install Express.js, type this command:
-
-    ```PowerShell
-    npm install express --save
-    ```
+1. On the **File** menu, select **Open folder** and then browse to the **countdownExpressApp** folder.
 
 ## Scaffold an Express.js application
 
-Express in now installed, but you can use the Express Generator tool to create all the components of a boiler-plate webapp:
+You can use the Express Generator tool to create all the components of an Express.js boiler-plate webapp:
 
-1. To check the contents of the folder, type this command:
-
-    ```PowerShell
-    ls
-    ```
-
+1. In the Visual Studio Code Explorer window, notice that the **countdownExpressApp** folder is empty.
+1. If the integrated terminal is not visiblae, on the **View** menu, click **Terminal**.
 1. To run the Express Generator, use this command:
 
-    ```PowerShell
+    ```console
     npx express-generator
     ```
 
-1. To see the default Express.js scaffolding, type this command:
+1. Examine the contents of the Explorer window to see what files the generator has created.
 
-    ```PowerShell
-    ls
-    ```
+    ![Express generated files](../media/3-express-generator-files.png)
 
 ## Calculate the countdown
 
 You now have a functional webapp that Node.js can run. Let's modify its code to calculate the amount of time to display:
 
-1. To edit the **index.js** file in Code, type the following commands:
-
-    ```PowerShell
-    cd routes
-    code ./index.js
-    ```
-
-1. Add the following code, immediately after the `var router = express.Router();` line. In the first line of the inserted code, use a date around a month in the future:
+1. In the Visual Studio Code Explorer window, expand **routes**, and then select **index.js**. This JavaScript file defines routes for the app's homepage. We can add our code to calculate the countdown here.
+1. Add the following code, immediately after the `var router = express.Router();` line. In the first line of the inserted code, replace the `<Future Date>` placeholder with a date around a month in the future:
 
     ```JavaScript
-    var launchTime = new Date("January, 1, 2020").getTime();
+    var launchTime = new Date("<Future Date>").getTime();
     var currentTime = new Date().getTime();
     var numberOfMilliseconds = parseInt(launchTime - currentTime);
     ```
@@ -110,17 +78,14 @@ You now have a functional webapp that Node.js can run. Let's modify its code to 
 
 1. On the **File** menu, select **Save**, then close the **index.js** file.
 
+> [!NOTE]
+> For this initial version, you're happy to display the countdown in milliseconds. Later, we'll update the code to display a whole number of days, which is what a user might expect.
+
 ## Render the countdown 
 
 Now, modify the default homepage for the webapp to display the countdown:
 
-1. In the Code integrated terminal, to edit the **index.jade** view, type these commands:
-
-    ```PowerShell
-    cd ../views
-    code ./index.jade
-    ```
-
+1. In the Visual Studio Code Explorer window, expand **views**, and then select **index.jade**. This file defines a view for the app's homepage. We can add code to display the countdown here.
 1. Locate the following line of code:
 
     ```jade
@@ -145,16 +110,18 @@ Now, modify the default homepage for the webapp to display the countdown:
 
 Now the app is complete, let's run it on your local computer and see if it shows the countdown:
 
-1. In the Code integrated terminal, to install the webapp's dependencies, type these commands:
+1. The Express Generator creates a webapp that depends on several other Node.js package. You must ensure these are installed before you can run the webapp. In the Code integrated terminal, to install the webapp's dependencies, type these commands:
 
-    ```PowerShell
-    cd ..
+    ```console
     npm install
     ```
 
-1. To run the webapp on your local computer, type this command:
+   > [!NOTE]
+   > You may see warnings in the output from this command about vulnerabilities because you are using older versions of some Note.js package. It's not necessary to fix these vulnerabilities for our purposes.
 
-    ```PowerShell
+1. To run the webapp on your local computer, type this command. The command tells `npm` to run the command in the package's `scripts.start` property. The Express Generator sets this property to start Node.js in the /bin/www folder. This starts the webapp locally:
+
+    ```console
     npm start
     ```
 
@@ -162,4 +129,4 @@ Now the app is complete, let's run it on your local computer and see if it shows
 
     ![Browse the completed webapp](../media/3-complete-webapp.png)
 
-1. Close the web browser and then, in the Code integrated terminal, press CTRL-C to stop the webapp.
+1. Close the web browser. In the Code integrated terminal, press <kbd>CTRL-C</kbd> to stop the webapp, and then type **y** and press <kbd>Enter</kbd>.

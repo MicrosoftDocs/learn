@@ -2,7 +2,7 @@ The combination of Node.js and Express.js provides a framework that JavaScript d
 
 Suppose the launch date for your new video game is imminent and you still don't have the marketing website up and running. You want to know how your team of JavaScript developers can create that site as fast as possible. You've heard about Node.js and you want to find out if it will help you deliver a site quickly.
 
-Here, you'll learn about Node.js and Express.js and how to use them on development computers, servers, and the Azure App Service.
+Here, you'll learn about Node.js and Express.js and how to use them on development computers, servers, and Azure App Service.
 
 ## What is Node.js?
 
@@ -18,7 +18,7 @@ Node.js runs all its code asynchronously, which means that long-running requests
 
 ## What is Express.js?
 
-With Node.js alone, you could build an entire web server. However, it would take much work and would replicate what many developers have already done. If you want to build a Node.js web server quickly and with minimal custom code, you can install Express.js. 
+With Node.js alone, you could build an entire web app. However, it would take much work and would replicate what many developers have already done. If you want to build a Node.js web server quickly and with minimal custom code, you can install Express.js. 
 
 Express.js includes functions that make it easy to intercept HTTP requests, such as GET, POST, and DELETE requests, and then route them to code that formulates responses. It also implements an HTTP server on your local machine, which you can start when you want to try out your code. 
 
@@ -50,7 +50,7 @@ sudo apt-get install nodejs
 
 In Azure, you can use a virtual machine to host a Node.js application. Choose an image from the gallery that includes Node.js, or install it in the same way that you did on your development machine.
 
-Alternatively, consider hosting the webapp in the Azure App Service, which is a Platform-as-a-Service (PaaS) web host that you can use to service websites and web APIs. An instance of the Azure App Service includes Node.js by default and you don't have to perform any installation on it. You'll use the App Service later in this module.
+Alternatively, consider hosting the webapp in Azure App Service, which is a Platform-as-a-Service (PaaS) web host that you can use to service websites and web APIs. An instance of Azure App Service includes Node.js by default and you don't have to perform any installation on it. You'll use the App Service later in this module.
 
 ## Installing Express.js
 

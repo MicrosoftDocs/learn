@@ -8,30 +8,24 @@ In this unit, you'll modify the code and redeploy the website.
 
 Let's start by modifying the code, so that it calculates a whole number of days:
 
-1. Start Visual Studio Code. 
-1. To bring up the command palette, press CTRL + SHIFT + P.
-1. Type **Terminal** and then select **View: Toggle Integrated Terminal**.
-1. To open the **index.js** file, type this command:
-
-    ``` PowerShell
-    code ~/countdownExpressApp/routes/index.js
-    ```
-
+1. Start Visual Studio Code if it is not already running. 
+1. If the **countdownExpressApp** folder is not already open, then on the **File** menu, select **Open Folder...** and then browse to the folder. 
+1. In the Visual Studio Code Explorer window, expand **routes**, and then select **index.js**. 
 1. Locate this line of code:
 
-    ``` JavaScript
+    ```JavaScript
     var numberOfMilliseconds = parseInt(launchTime - currentTime);
     ```
 
 1. On the next line, type this new code:
 
-    ``` JavaScript
+    ```JavaScript
     var numberOfDays = parseInt(numberOfMilliseconds/(24 * 3600 * 1000));
     ```
 
 1. Locate this line of code:
 
-    ``` JavaScript
+    ```JavaScript
     res.render('index', { title: 'Countdown to Launch', countDown: numberOfMilliseconds });
     ```
 
@@ -49,7 +43,7 @@ You must also alter the view slightly:
 
 1. In Visual Studio Code, in the integrated terminal, type this command:
 
-    ``` PowerShell
+    ```console
     code ~/countdownExpressApp/views/index.jade
     ```
 
