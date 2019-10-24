@@ -125,7 +125,7 @@ git clone https://github.com/GeekEffect/load-balancer-setup.git
 cd load-balancer-setup
 bash setup.sh
 
-## Sanbox requirements
+## Sandbox requirements
 
 Microsoft.Compute/availabilitySets
 Microsoft.Compute/disks
