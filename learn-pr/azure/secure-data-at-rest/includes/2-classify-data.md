@@ -22,28 +22,25 @@ Classification is based on the importance of the data to the business and its st
 
 The terms used can vary between organizations but they generally fall into the following general levels: high, medium, and low. For example, an organization might have these three classifications:
 
-- **Confidential (high level)** – if this data is exposed or lost, it would be devastating to the organization or the concerned individual, whether they're a customer or an employee.
-  Here are some examples of the type of data that could be classified with this level:
+- **Confidential (high level)**: If this data is exposed or lost, it would substantially impact the organization or the concerned individual, whether they're a customer or an employee. Some examples of the type of data that could be classified with this level are:
 
-  - Personal data such as name and address
-  - Financial data such as account balances, deposits
-  - Code or intellectual property belonging to an organization
-  - Passwords, user/application credentials, cryptographic keys,and certificates
+  - Personal data such as name and address.
+  - Financial data such as account balances, deposits.
+  - Code or intellectual property belonging to an organization.
+  - Passwords, user/application credentials, cryptographic keys,and certificates.
   
-- **Internal use only (medium level)** – information that should only be viewed internally, and must not be shared with anyone external to the organization.
-
-  Here are some examples of the type of data that could be classified with this level:
+- **Internal use only (medium level)**: Information that should only be viewed internally, and must not be shared with anyone external to the organization. Some examples of the type of data that could be classified with this level are:
 
   - Emails that can be deleted or distributed without a severe impact.
   - Files that don't include any confidential data.
 
   Unless classified explicitly as confidential, or for public consumption, you should consider all data in an organization to be, at a minimum, classified at this medium level.
 
-- **Public (low)** – the data that can be shown publicly outside of the organization. Often, this is data that must be deliberately shared to the outside world for business purposes. Below are some examples.
+- **Public (low level)**: This data can be shown publicly outside of the organization. Often, this is data that must be deliberately shared to the outside world for business purposes. Some examples of the type of data that could be classified with this level are
 
-  - Manuals explaining a new product
-  - A new public website showcasing a new solution
-  - A public interview to make an announcement concerning a new strategy
+  - API documentation for a product or service the organization offers to customers.
+  - A new public website showcasing a new solution.
+  - A public interview to make an announcement concerning a new strategy.
 
 ## Structured and unstructured data
 
