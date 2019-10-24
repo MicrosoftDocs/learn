@@ -1,6 +1,6 @@
 :::row:::
   :::column:::
-    ![Image representing serverless computing](../media/6-serverless.png)
+    ![Illustration representing serverless computing](../media/6-serverless.png)
   :::column-end:::
     :::column span="3":::
     Serverless computing is the abstraction of servers, infrastructure, and OSs. With _serverless_ computing, Azure takes care of managing the server infrastructure and allocation/deallocation of resources based on demand. Infrastructure isn't your responsibility. Scaling and performance are handled automatically, and you are billed only for the exact resources you use. There's no need to even reserve capacity.
@@ -9,11 +9,11 @@
 
 Serverless computing encompasses three ideas: the abstraction of servers, an event-driven scale, and micro-billing:
 
-1. Serverless computing abstracts the servers you run on. You never explicitly reserve server instances; the platform manages that for you. Each function execution can run on a different compute instance, and this is completely transparent to the code. With serverless architecture, you simply deploy your code, which then runs with high availability.
+1. **Abstraction of servers**: Serverless computing abstracts the servers you run on. You never explicitly reserve server instances; the platform manages that for you. Each function execution can run on a different compute instance, and this execution context is completely transparent to the code. With serverless architecture, you simply deploy your code, which then runs with high availability.
 
-1. An event-driven scale. Serverless computing is an excellent fit for workloads that respond to incoming events. Events include those triggered by timers (for example, if a function needs to run every day at 10:00 AM), HTTP (API and webhook scenarios), queues (for example, with order processing), and much more. Instead of writing an entire application, the developer authors a function, which contains both code and metadata about its triggers and bindings. The platform automatically schedules the function to run and scales the number of compute instances based on the rate of incoming events. Triggers define how a function is invoked and bindings provide a declarative way to connect to services from within the code.
+1. **Event-driven scale**: Serverless computing is an excellent fit for workloads that respond to incoming events. Events include those triggered by timers (for example, if a function needs to run every day at 10:00 AM UTC), HTTP (API and webhook scenarios), queues (for example, with order processing), and much more. Instead of writing an entire application, the developer authors a function, which contains both code and metadata about its triggers and bindings. The platform automatically schedules the function to run and scales the number of compute instances based on the rate of incoming events. Triggers define how a function is invoked and bindings provide a declarative way to connect to services from within the code.
 
-1. Micro-billing. Traditional computing has the notion of per-second billing, but often, that’s not as useful as it seems. Even if a customer’s website gets only one hit a day, they still pay for a full day’s worth of availability. With serverless computing, they pay only for the time their code runs. If no active function executions occur, they’re not charged. For example, if the code runs once a day for two minutes, they’re charged for one execution and two minutes of computing time.
+1. **Micro-billing**: Traditional computing has the notion of per-second billing, but often, that's not as useful as it seems. Even if a customer's website gets only one hit a day, they still pay for a full day's worth of availability. With serverless computing, they pay only for the time their code runs. If no active function executions occur, they're not charged. For example, if the code runs once a day for two minutes, they're charged for one execution and two minutes of computing time.
 
 #### Serverless computing in Azure
 
@@ -34,7 +34,7 @@ Using a VM-based approach, you'd incur costs even when the VM is idle. With func
 
 Furthermore, Azure Functions can be either stateless (the default) where they behave as if they're restarted every time they respond to an event), or stateful (called "Durable Functions") where a context is passed through the function to track prior activity.
 
-Functions are a key component of serverless computing, but they’re also a general compute platform for running any type of code. If the needs of the developer’s app change, you can deploy the project in an environment that isn’t serverless, which provides the flexibility to manage scaling, run on virtual networks, and even completely isolate the functions.
+Functions are a key component of serverless computing, but they're also a general compute platform for running any type of code. If the needs of the developer's app change, you can deploy the project in an environment that isn't serverless, which provides the flexibility to manage scaling, run on virtual networks, and even completely isolate the functions.
 
 ## Azure Logic Apps
 
@@ -47,7 +47,7 @@ Azure provides over 200 different connectors and processing blocks to interact w
 As an example, let's say a ticket arrives in ZenDesk. You could:
 
 1. Detect the intent of the message with cognitive services
-1. Create an item in Sharepoint to track the issue
+1. Create an item in SharePoint to track the issue
 1. If the customer isn't in your database, add them to your Dynamics 365 CRM system
 1. Send a follow-up email to acknowledge their request
 
