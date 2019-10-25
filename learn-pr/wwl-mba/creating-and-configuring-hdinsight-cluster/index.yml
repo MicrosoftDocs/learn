@@ -25,10 +25,10 @@ abstract: |
 ratingEnabled: true
 prerequisites: |
   The following pre-requisite should be completed:
-  1. Successfully login to the Azure Portal
-  2. Understand the Azure storage options
-  3. Understand the Azure compute options
-  4. Create and configure a HDInsight Cluster in the Azure Portal
+  - Successfully login to the Azure Portal
+  - Understand the Azure storage options
+  - Understand the Azure compute options
+  - Create and configure a HDInsight Cluster in the Azure Portal
 iconUrl: /learn/achievements/learn-pr/achievements/creating-and-configuring-a-hdinsight-cluster.svg
 levels:
 - beginner

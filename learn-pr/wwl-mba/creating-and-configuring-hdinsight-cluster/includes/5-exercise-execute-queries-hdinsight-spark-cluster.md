@@ -51,7 +51,7 @@ Once the table is created, you can run an interactive query on the data.
 
     You can also see the results in other visualizations as well. To see an area graph for the same output, select Area then set other values as shown.
 
-    ![Dataset visualisation in Jupyter](../media/5-img04.png)
+    ![Dataset visualization in Jupyter](../media/5-img04.png)
 
 2. From the notebook menu bar, navigate to **File > Save and Checkpoint**.
 3. Shut down the notebook to release the cluster resources: from the notebook menu bar, navigate to **File > Close and Halt**.

@@ -10,6 +10,6 @@
 
 ![Accessing Apachi Ambari Host tab](../media/8-img02.png)
 
-5. You will see a screen that is like the one below, that will provide a summary of the components that are running, and a real time view of the hosts metrics including the CPU, disk and memory usage, current load, processes and network usage.
+5. You will see a screen that is like the one below, that will provide a summary of the components that are running, and a real-time view of the hosts metrics including the CPU, disk and memory usage, current load, processes and network usage.
 
 ![Accessing Apachi Ambari Host metrics](../media/8-img03.png)

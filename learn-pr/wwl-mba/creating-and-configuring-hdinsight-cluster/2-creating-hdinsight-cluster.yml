@@ -13,4 +13,4 @@ azureSandbox: false
 
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-creating-a-hdinsight-cluster.md)]
+  [!include[](includes/2-creating-hdinsight-cluster.md)]

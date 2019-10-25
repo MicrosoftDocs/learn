@@ -16,7 +16,7 @@ Spark clusters in HDInsight offer a rich support for building real-time analytic
 
 ### Create a Jupyter notebook
 
-Use the following steps to create a Jupyter notebook Open the Azure portal.
+Use the following steps to create a Jupyter notebook in the Azure portal.
 
 1. Select HDInsight clusters, and then select the cluster you created.
 
