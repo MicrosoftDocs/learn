@@ -46,12 +46,11 @@ Azure Site Recovery has plans that help automate your disaster recovery by allow
 
 ### Data backups
 
-Backups protect applications from accidental deletion or corruption of data. You can't decide to create a disaster recovery process and ignore backups. Your recovery point objective depends on how often and how regularly you run backup processes. For example, if you have a backup process configured to execute every two hours – and you experience a disaster five minutes before the next backup – you'll lose 1 hour and 55 minutes of data. Having more frequent backups means you achieve a reduced RPO. In your overall plan, you must include a detailed backup process.
+Backups protect applications from accidental deletion or corruption of data. You can't decide to create a disaster recovery process and ignore backups. Your recovery point objective depends on how often and how regularly you run backup processes. For example, if you have a backup process configured to execute every two hours, and you experience a disaster five minutes before the next backup, you'll lose 1 hour and 55 minutes of data. Having more frequent backups means you achieve a reduced RPO. In your overall plan, you must include a detailed backup process.
 
-Use Azure Backup to back up your on-premises data and machines to the cloud – or keep their backups on-premises. Depending on the type of machine, you can back up individual files, folders, volumes, or the entire machine.
-Backup allows you to secure backed up data, both at rest and while it's in transit. Your data is replicated three times in a data center, through locally redundant storage (LRS) for Azure Backup.
+Use Azure Backup to back up your on-premises data and machines to the cloud or keep their backups on-premises. Depending on the type of machine, you can back up individual files, folders, volumes, or the entire machine. Backup allows you to secure backed up data, both at rest and while it's in transit. Your data is replicated three times in a data center, through locally redundant storage (LRS) for Azure Backup.
 
-Additionally, you could replicate data to a secondary region that's miles away from the original data with geo-redundant storage (GRS) for Azure Backup. You can also achieve application-consistent backups so you don't need to add manual fixes to restore successfully. You might have up to 9,999 backup copies for each of your instances (machines or workloads) on Azure. If your backup frequency is daily – with a 24-hour recovery point – you could have recovery points that span a 27-year period before you hit the limit of recovery points you use for restoration.
+Additionally, you could replicate data to a secondary region that's miles away from the original data with geo-redundant storage (GRS) for Azure Backup. You can also achieve application-consistent backups so you don't need to add manual fixes to restore successfully. You might have up to 9,999 backup copies for each of your instances (machines or workloads) on Azure. If your backup frequency is daily with a 24-hour recovery point, you could have recovery points that span a 27-year period before you hit the limit of recovery points you use for restoration.
 
 ## Use Azure native features
 
@@ -59,7 +58,7 @@ Azure comes with features designed from the ground up to help you achieve your o
 
 ### Region pairing
 
-Most Azure regions are paired with a different region in the same part of the world geographically. However, there are exceptions – Brazil, for example, has a region pair that's not in the same part of the world. In a region pair, the regions are never updated simultaneously. Instead, the regions are updated one by one. If something happens to one region, another one becomes available. As part of your BCDR planning, it's important to use region pairing to take advantage of the isolation it provides. You'll reduce the amount of time it takes to recover from a failure and increase your availability.
+Most Azure regions are paired with a different region in the same part of the world geographically. However, there are exceptions. Brazil, for example, has a region pair that's not in the same part of the world. In a region pair, the regions are never updated simultaneously. Instead, the regions are updated one by one. If something happens to one region, another one becomes available. As part of your BCDR planning, it's important to use region pairing to take advantage of the isolation it provides. You'll reduce the amount of time it takes to recover from a failure and increase your availability.
 
 ### Availability sets
 
@@ -71,6 +70,6 @@ Consider creating availability sets. Availability sets will  allow you to isolat
 
 To help keep your applications running, consider using Azure availability zones. These availability zones are separate physical places in a single Azure region. Each location consists of at least one data center, and is designed to use its own separate networking, cooling systems, and power. If one location fails, another can be used. You'll usually have a minimum of three zones in each region.
 
-Implementing availability zones means that your machines are spread over at least three update domains and three fault domains. These virtual machines, in three different regions, are never updated simultaneously. You can manually set a specific type of resource to be in a specific zone with some resources – such as virtual machines. And some services, such as SQL Database, will automatically copy across multiple availability zones.
+Implementing availability zones means that your machines are spread over at least three update domains and three fault domains. These virtual machines, in three different regions, are never updated simultaneously. You can manually set a specific type of resource to be in a specific zone with some resources, such as virtual machines. And some services, such as SQL Database, will automatically copy across multiple availability zones.
 
 ![Availability Zones](../media/2-availability-zones.png)
