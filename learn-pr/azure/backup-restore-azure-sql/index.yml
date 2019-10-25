@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.backup-restore-azure-sql
+metadata:
+  title: Back up and restore your Azure SQL database
+  description: Protect the data in your Azure SQL database and recover from data loss or corruption with backup and restore.
+  ms.date: 09/25/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Back up and restore your Azure SQL database
+summary: Protect the data in your Azure SQL database and recover from data loss or corruption with backup and restore.
+abstract: | 
+  In this module, you will:
+  - Configure backup and retention of an Azure SQL database
+  - Restore an Azure SQL database
+prerequisites: | 
+  - Basic knowledge of the Azure SQL Database service
+  - Basic knowledge of Azure PowerShell
+iconUrl: /learn/achievements/backup-restore-azure-sql.svg
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.backup-restore-azure-sql.1-introduction
+- learn.backup-restore-azure-sql.2-protect-database-with-backup
+- learn.backup-restore-azure-sql.3-exercise-configure-backup
+- learn.backup-restore-azure-sql.4-long-term-retention-policies
+- learn.backup-restore-azure-sql.5-exercise-configure-long-term-retention-policies
+- learn.backup-restore-azure-sql.6-restore-database
+- learn.backup-restore-azure-sql.7-exercise-restore-database
+- learn.backup-restore-azure-sql.8-summary
+badge:
+  uid: learn.backup-restore-azure-sql.badge

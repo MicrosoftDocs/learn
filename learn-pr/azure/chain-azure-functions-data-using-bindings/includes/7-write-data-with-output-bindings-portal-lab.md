@@ -17,6 +17,8 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 ## Create an HTTP-triggered function
 
+::: zone pivot="javascript"
+
 1. Make sure you are signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 2. In the portal, navigate to the function app that you created in this module.
@@ -32,6 +34,28 @@ Just as Azure Functions supports input bindings for various integration sources,
     | Authorization level | **Function** |
 
 6. Select **Create** to create your function. This action opens the **index.js** file in the code editor and displays a default implementation of the HTTP-triggered function.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. Make sure you are signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+
+2. In the portal, navigate to the function app that you created in this module.
+
+3. Select the Add (**+**) button next to **Functions**. This action starts the function creation process. 
+4. The page shows us the current set of supported triggers. Select **HTTP trigger**.
+
+5. Fill out the **New Function** pane that's displayed at the right by using the following values:
+
+    |Field  |Value  |
+    |---------|---------|
+    |Name     |   [!INCLUDE [func-name-add](./func-name-add.md)]     |
+    | Authorization level | **Function** |
+
+6. Select **Create** to create your function. This action opens the **run.ps1** file in the code editor and displays a default implementation of the HTTP-triggered function.
+
+::: zone-end
 
 ## Add an Azure Cosmos DB input binding
 
@@ -59,9 +83,9 @@ You want to look up a bookmark with a specific ID, so let's tie the ID we receiv
     |---------|---------|---------|
     |Document parameter name     |  **bookmark**       |  The name used to identify this binding in your code.      |
     |Database name     |  [!INCLUDE [cosmos-db-name](./cosmos-db-name.md)]       | The database to work with. This value is the database name we set earlier in this lesson.        |
-    |Collection Name     |  [!INCLUDE [cosmos-db-name](./cosmos-coll-name.md)]        | The collection from which we'll read data. This setting was defined earlier in the lesson. |
-    |SQL Query (optional)    |   leave blank       |   We are only retrieving one document at a time based on the ID. So, filtering with the Document ID field is a better than using a SQL Query in this instance. We could craft a SQL Query to return one entry (`SELECT * from b where b.ID = {id}`). That query would indeed return a document, but it would return it in a document collection. Our code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents.   |
-    |Partition key (optional) | **{id}** |  Add the partition key that we defined when we created the [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] Azure Cosmos DB collection earlier.  The key entered here (specified in input binding format `{<key>}`) must match the one in the collection.|
+    |Collection Name     |  [!INCLUDE [cosmos-db-name](./cosmos-coll-name.md)]        | The container from which we'll read data. We defined this setting was earlier in the lesson. |
+    |SQL Query (optional)    |   leave blank       |   We are only retrieving one item at a time based on the ID. So, filtering with the Document ID field is  better than using a SQL Query in this instance. We could craft a SQL Query to return one entry (`SELECT * from b where b.ID = {id}`). That query would indeed return an item, but it would return it in a items collection. Our code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents.   |
+    |Partition key (optional) | **{id}** |  Add the partition key that we defined when we created the [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] Azure Cosmos DB container earlier.  The key entered here (specified in input binding format `{<key>}`) must match the one in the container.|
 
 9. Select **Save** to save all changes to this binding configuration.
 
@@ -84,8 +108,8 @@ We now have an Azure Cosmos DB input binding. It's time to add an output binding
     |---------|---------|---------|
     |Document parameter name     |  **newbookmark**       |  The name used to identify this binding in your code. This parameter is used to write a new bookmark entry.     |
     |Database name     |  [!INCLUDE [cosmos-db-name](./cosmos-db-name.md)]       | The database to work with. This value is the database name we set earlier in this lesson.        |
-    |Collection Name     |  [!INCLUDE [cosmos-db-name](./cosmos-coll-name.md)]        | The collection from which we'll read data. This setting was defined earlier in the lesson. |
-    |Partition key (optional) | **{id}** |  Add the partition key that we defined when we created the [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] Azure Cosmos DB collection earlier.  The key entered here (specified in input binding format `{<key>}`) must match the one in the collection. |
+    |Collection Name     |  [!INCLUDE [cosmos-db-name](./cosmos-coll-name.md)]        | The container from which we'll read data. We defined the container earlier in the lesson. |
+    |Partition key (optional) | **{id}** |  Add the partition key that we defined when we created the [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] Azure Cosmos DB container earlier.  The key entered here (specified in input binding format `{<key>}`) must match the one in the container. |
      |Collection throughput (optional)     |   leave blank      |  We can accept the default here.       |
 
 9. Select **Save** to save all changes to this binding configuration.
@@ -129,7 +153,9 @@ Here you can see that the new function, [!INCLUDE [func-name-add](./func-name-ad
 
 We now have all our bindings set up for the [!INCLUDE [func-name-add](./func-name-add.md)] function. It's time to use them in our function.
 
-1.  Select your function, [!INCLUDE [func-name-add](./func-name-add.md)], to open the **index.js** file in the code editor.
+::: zone pivot="javascript"
+
+1. Select your function, [!INCLUDE [func-name-add](./func-name-add.md)], to open the **index.js** file in the code editor.
 
 2. Replace all the code in the *index.js* file with the code from the following snippet and then **Save**:
 
@@ -148,6 +174,57 @@ Let's break down what this code does:
 ![Screenshot calling out that the queue will be auto-created.](../media/7-q-auto-create-small.png)
 
 So, that's it. Let's see our work in action in the next section.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. Select your function, [!INCLUDE [func-name-add](./func-name-add.md)], to open the **run.ps1** file in the code editor.
+
+2. Replace all the code in the *run.ps1* file with the code from the following snippet and then **Save**:
+
+   ```powershell
+   using namespace System.Net
+
+    param($Request, $bookmark, $TriggerMetadata)
+
+    if ($bookmark) {
+        $status = 422
+        $body = "Bookmark already exists."
+    }
+    else {
+        $newBookmark = @{ id = $Request.Body.id; url = $Request.Body.url }
+
+        Push-OutputBinding -Name newbookmark -Value $newBookmark
+
+        Push-OutputBinding -Name newmessage -Value $newBookmark
+
+        $status = [HttpStatusCode]::OK
+        $body = "bookmark added!"
+    }
+
+    Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
+        StatusCode = $status
+        Body = $body
+        ContentType = "application/json"
+    })
+   ```
+
+Let's break down what this code does:
+
+* Because this function changes our data, we expect the HTTP request to be a POST and the bookmark data to be part of the request body.
+* Our Azure Cosmos DB input binding attempts to retrieve a document, or bookmark, by using the `id` that we receive. If it finds an entry, the `bookmark` object will be set. The `if ($bookmark)` condition checks to see whether an entry was found.
+* Adding to the database is as simple as calling `Push-OutputBinding` with the name of the Cosmos DB output binding (`newbookmark`) and the value of the `$newBookmark` object.
+* Posting a message to our queue is as simple as calling `Push-OutputBinding` with the name of the queue output binding (`newmessage`) and the value of the `$newBookmark` object.
+
+> [!NOTE]
+> The only task you performed was to create a queue binding. You never created the queue explicitly. You are witnessing the power of bindings! As the following callout says, the queue is automatically created for you if it doesn't exist.
+
+![Screenshot calling out that the queue will be auto-created.](../media/7-q-auto-create-small.png)
+
+So, that's it. Let's see our work in action in the next section.
+
+::: zone-end
 
 ## Try it out
 

@@ -8,29 +8,32 @@ Let's start by setting up the environment. Setup includes provisioning a sample 
 
     ![Create a SQL data warehouse](../media/create-sql-data-warehouse.png)
 
-1. On the **Create SQL Data Warehouse** blade, enter this information:
+1. On the **Create SQL Data Warehouse** blade, enter this information in the **Basics** tab:
 
-   - _Database name_: Enter a unique name. (Make sure you see a green check mark.)
-   - _Subscription_: Select the subscription you're using for this module.
+   - _Subscription_: Select the subscription you're using for this module.  ***The subscription you use will incur charges, this is not a free exercise. Pricing is shown on New Server blade.***
    - _Resource group_: Select the resource group you're using for this module.
-   - _Select source_: Select **Blank database**.
-1. Select **Server (Configure required settings)**, and then select **Create new server**. On the **New server** blade, enter this information:
-   - _Server name_: Enter a unique name. (Make sure you see a green check mark.)
-   - _Server admin login_: Enter **dwlab**.
-   - _Password_: Enter a valid password, and then confirm the password.
-   - _Location_: Select the location you're using for resources in this module.
-   - _Allow Azure services to access server_: Select the check box.
-   - Click **Select**.
+   - _Database name_: Enter a unique name. (Make sure you see a green check mark.)
+
+      ![Create a SQL data warehouse basics tab](../media/create-sql-data-warehouse-basic-tab.png)
+1. Select **Create New** in the Server field to open the **New Server** blade and enter the following:
+
+     - _Server name_: Enter a unique name. (Make sure you see a green check mark.)
+     - _Server admin login_: Enter **dwlab**.
+     - _Password_: Enter a valid password, and then confirm the password.
+     - _Location_: Select the location you're using for resources in this module.
+     - _Allow Azure services to access server_: Select the check box.
+     - Click **Select**.
    
+       ![Create a SQL data warehouse server](../media/create-sql-data-warehouse-server.png )
 
-    ![Create a SQL data warehouse window](../media/create-sql-data-warehouse-form.png )
+       > [!Note]
+       > Remember the user name and password for SQL Server. You'll need them.
 
-   > [!Note]
-   > Remember the user name and password for SQL Server. You'll need them.
+1. Click **Select Performance level** to open the Configure performance blade and select **Gen2 DW100c**.
+1. In the **Additional settings** tab, select **None** under data source.
+1. Select **Review +Create**.
 
-1. On the **SQL Data Warehouse** blade, under **Performance level**, select **Gen2: DW500c**.
-
-1. Select **Create**.
+![Select database performance level](../media/select-data-warehouse-server-size.png)
 
 ## Add your client IP address
 

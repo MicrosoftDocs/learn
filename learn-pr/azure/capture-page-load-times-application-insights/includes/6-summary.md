@@ -1,6 +1,8 @@
 In this module, you learned how to enable and configure Application Insights so you can gather and analyze data. You also learned how to create custom charts that display exactly the data that interests you. 
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+## Clean up
+
+Use the Azure portal to delete the **mslearn-appinsights** resource group from your subscription.
 
 ## Learn more
 

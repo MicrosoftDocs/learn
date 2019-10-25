@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.incident-response-with-alerting-on-azure.2-explore-azure-monitor-alert-types
+metadata:
+  title: Explore the different alert types that Azure Monitor supports
+  description: Explore how Azure Monitor receives resource data, what makes up an alert, and how and when to use an alert. Then learn how to create and manage your own alerts.
+  ms.date: 10/10/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore the different alert types that Azure Monitor supports
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-explore-azure-monitor-alert-types.md)]
+quiz:
+  questions:
+    - content: What's the composition of an alert rule?
+      choices:
+        - content: Resource, condition, log, alert type
+          isCorrect: false
+          explanation: Incorrect. Log and alert type are not part of the composition of an alert rule.
+        - content: Metrics, logs, application, operating system
+          isCorrect: false
+          explanation: Incorrect. None of these make up an alert rule.
+        - content: Resource, condition, actions, alert details
+          isCorrect: true
+          explanation: Correct. These elements make up an alert rule.
+    - content: Which of the following is an example of a log data type?
+      choices:
+        - content: Percentage of CPU over time.
+          isCorrect: false
+          explanation: Percentage of CPU is an example of metric data.
+        - content: HTTP response records.
+          isCorrect: true
+          explanation: Correct. HTTP response records are examples of log data types.
+        - content: Database tables.
+          isCorrect: false
+          explanation: Incorrect. Database tables are not examples of log data types.
+        - content: Website requests per hour.
+          isCorrect: false
+          explanation: Incorrect. Website requests per hour is an example of metric data.

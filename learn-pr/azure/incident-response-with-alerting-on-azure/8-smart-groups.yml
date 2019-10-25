@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.incident-response-with-alerting-on-azure.8-smart-groups
+metadata:
+  title: Use smart groups to reduce alert noise in Azure Monitor
+  description: Investigate how to use smart groups, and see how they can help you manage alerts in Azure Monitor.
+  ms.date: 10/10/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use smart groups to reduce alert noise in Azure Monitor
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-smart-groups.md)]
+quiz:
+  questions:
+    - content: How are smart groups created?
+      choices:
+        - content: Through a template deployment.
+          isCorrect: false
+          explanation: Incorrect. Smart groups are not created through deployment of a template.
+        - content: Through the Azure CLI.
+          isCorrect: false
+          explanation: Incorrect. The Azure CLI can't be used to create a smart group.
+        - content: Automatically, using machine learning algorithms.
+          isCorrect: true
+          explanation: Correct.
+    - content: Which of the following is NOT a state of a smart group alert?
+      choices:
+        - content: Failed
+          isCorrect: true
+          explanation: Correct. Failed is not a smart group alert state.
+        - content: New
+          isCorrect: false
+          explanation: Incorrect. New is a valid smart group alert state.
+        - content: Acknowledged
+          isCorrect: false
+          explanation: Incorrect. Acknowledged is a valid smart group state.
+        - content: Closed
+          isCorrect: false
+          explanation: Incorrect. Closed is a valid smart group state.

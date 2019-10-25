@@ -83,7 +83,7 @@ To create this binding, we:
 
 1. Provide the storage `type`. In the preceding example, we are using Blob storage.
 
-1. Provide the `path`, which specifies the container and the item name that goes in it. The `path` property is required for blobs.
+1. Provide the `path`, which specifies the container and the item name that goes in it. The `path` property is required when using the Blob trigger, and should be provided in the style shown here, with curly braces around the filename portion of the path. This creates a *binding expression* that allows you to reference the blob's name in other bindings and in your function's code. In this example, a parameter on the function named *filename* would be populated with the filename of the blob that triggered the function.
 
 1. Provide the `connection` string setting name defined in the application's settings file. It's used as a key to find the connection string to connect to your storage account.
 

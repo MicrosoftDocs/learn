@@ -2,6 +2,8 @@ The Azure Machine Learning workspace is the foundational block in the cloud for 
 
 The workspace is a resource you create in Azure. The easiest way to create a deployment workspace is through the Azure portal.
 
+If you have already done one of the other Azure Machine Learning service Learning Path modules, you may have already created an Azure Machine Learning workspace.  If so, you can skip this step and just use that workspace. 
+
 1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with your Azure subscription.
 
 1. Select **+ Create a resource** in the left sidebar of the Azure portal.

@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure-security.create-security-baselines
+metadata:
+  title: Create security baselines
+  description: Create security baselines
+  ms.date: 09/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create security baselines
+summary: Create security baselines
+abstract: | 
+  In this module, you will:
+    - Learn Azure platform security baselines and how they were created
+    - Create and validate a security baseline for the most commonly used Azure services
+prerequisites: None
+iconUrl: /learn/achievements/create-security-baselines.svg
+levels:
+- beginner
+roles:
+- developer
+- solution-architect
+- security-engineer
+products:
+- azure
+units:
+- learn.azure-security.create-security-baselines.introduction
+- learn.azure-security.create-security-baselines.platform-security-baselines
+- learn.azure-security.create-security-baselines.create-an-identity-access-management-iam
+- learn.azure-security.create-security-baselines.create-an-azure-security-center-baseline
+- learn.azure-security.create-security-baselines.create-a-storage-accounts-baseline
+- learn.azure-security.create-security-baselines.create-an-azure-sql-database-baseline
+- learn.azure-security.create-security-baselines.create-a-logging-and-monitoring-baseline
+- learn.azure-security.create-security-baselines.create-a-networking-baseline
+- learn.azure-security.create-security-baselines.create-a-vms-baseline
+- learn.azure-security.create-security-baselines.other-security-considerations-for-a-baseline
+- learn.azure-security.create-security-baselines.summary
+badge:
+  uid: learn.azure-security.create-security-baselines.badge
