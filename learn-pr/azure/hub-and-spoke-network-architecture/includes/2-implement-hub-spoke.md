@@ -1,6 +1,6 @@
 By using virtual networks, network security groups, virtual network peering, and ExpressRoute in Azure you can create different network topologies hosted in the cloud.
 
-Your company is planning a migration of your on-premises resources to Azure. Your central data center is currently loacated at your headquarters and will eventually migrate completely to Azure. Initially you've been asked to move some of your satellite offices into the cloud, while also maintaining the connectivity to your headquarters. The ultimate goal for the migration is to host all your computing resources on Azure.
+Your company is planning a migration of your on-premises resources to Azure. Your central data center is currently located at your headquarters and will eventually migrate completely to Azure. Initially you've been asked to move some of your satellite offices into the cloud, while also maintaining the connectivity to your headquarters. The ultimate goal for the migration is to host all your computing resources on Azure.
 
 In this unit, you'll explore the hub and spoke architecture, the topology, the components that are needed in Azure, and how to plan implementing infrastructure using this model.
 
