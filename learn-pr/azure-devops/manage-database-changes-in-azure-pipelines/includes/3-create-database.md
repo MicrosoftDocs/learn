@@ -1,5 +1,11 @@
 In this part, you bring up Azure SQL Database and populate your database with sample data. To verify the setup, you then run a few queries against your database from the Azure portal.
 
+Mara has created a whiteboard drawing of the database tables and the relationships between them.
+
+![Whiteboard drawing of the database tables and relationships between them.](../media/3-database-diagram-1.png)
+
+The Profiles table ![Callout 1](../../shared/media/callout-01.png) contains information about the player. Notice the *id* column. This is how we can identify the player and find their related data. The Achievements table ![Callout 2](../../shared/media/callout-02.png) holds all of the possible achievements for this game. Since there is a many-to-many relationship between Profiles and Achievements, meaning many profiles can have many achievements and many achievements can be in many profiles, we need a table to define the specific profile and achievement relationship. This is the ProfileAchievements table ![Callout 3](../../shared/media/callout-03.png). Notice the *profileId* relates to the *id* in the Profile table and the *achievementsId* relates to the *id* in the Achievements table. Lastly, there is the Scores table ![Callout 4](../../shared/media/callout-04.png). This holds the score information for each player and related to the Profiles table through the *profileId* column.
+
 For learning purposes, here you bring up one instance of Azure SQL Database that is connected to the App Service environment for each of the _Dev_, _Test_, and _Staging_ stages. In practice, you might associate a separate database instance with each environment. As you move towards _Staging_, you might switch from working with a small set of fictitious data to working with a full copy of the real data you're running in production.
 
 > [!IMPORTANT]
