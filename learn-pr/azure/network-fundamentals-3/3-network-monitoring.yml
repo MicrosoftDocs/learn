@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.network-fundamentals-3.network-monitoring
+title: Network Monitoring
+metadata:
+  title:  Using monitoring in your network
+  description: Understand how to use monitoring to protect your network.
+  ms.date: 24/10/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-network-monitoring.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What operating systems are supported by Azure AD registered devices?"
+    choices:
+    - content: "Windows 10, iOS, Android, and MacOS"
+      isCorrect: true
+      explanation: "Azure AD register supports the any device running Windows 10, iOS, iPadOS, Android, and MacOS."
+    - content: "Windows 7, Windows 8.1 and Windows 10 only."
+      isCorrect: false
+      explanation: "Azure AD register supports the any device running Windows 10, iOS, iPadOS, Android, and MacOS."
+    - content: "Windows 10 and MacOS"
+      isCorrect: false
+      explanation: "Azure AD register supports the any device running Windows 10, iOS, iPadOS, Android, and MacOS."
+  - content: "When is Conditional Access applied?"
+    choices:
+    - content: "Before first factor authentication"
+      isCorrect: false
+      explanation: "No, Conditional Access policy is applied after first factor authentication."
+      content: "As part of first factor authentication"
+      isCorrect: false
+      explanation: "No, Conditional Access policy is applied after first factor authentication."
+    - content: "After first factor authentication"
+      isCorrect: true
+      explanation: "Conditional Access policies are applied after first factor authentication has taken place."
