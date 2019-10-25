@@ -6,8 +6,7 @@ In this unit, you'll see how Azure Site Recovery simplifies your business contin
 
 ## Simplify your BCDR with Azure Site Recovery
 
-Azure Site Recovery helps you simplify your BCDR. You can configure and manage your replication, failovers, and failbacks, all through the Azure portal.
-Use Azure Site Recovery to replicate different types of targets. For example, Azure Site Recovery can help you configure disaster recovery for Azure virtual machines. You can replicate Azure virtual machines from a primary to a secondary region. Your on-premises virtual machines can be replicated too, along with workloads.
+Azure Site Recovery helps you simplify your BCDR. You can configure and manage your replication, failover, and failback, all through the Azure portal, Azure CLI or Azure PowerShell. Use Azure Site Recovery to replicate different types of targets. For example, Azure Site Recovery can help you configure disaster recovery for Azure virtual machines. You can replicate Azure virtual machines from a primary to a secondary region. Your on-premises virtual machines can be replicated too, along with workloads.
 
 When you replicate over to Azure, the associated data goes into Azure storage and is kept resilient as a result. If a failover is triggered, Azure virtual machines are created for you, using this data that's replicated and stored in Azure storage.
 
@@ -29,13 +28,13 @@ Let's look at a solution that incorporates Azure Backup and Azure Site Recovery.
 
 There's an on-premises environment that has a Hyper-V host server for hosting virtual machines. You want to back up all the files and folders in this virtual machine to Azure. You also want to protect any workloads running on the virtual machine, and keep running them even if the virtual machine fails. Azure Backup and Azure Site Recovery can be used together as part of a single solution.
 
-You can configure both backup and site recovery for your infrastructure from a Recovery Services vault. For Azure Backup, identify where workloads are running, and what you want to back up – here, workloads are running on-premises, and you would be backing up files and folders. You then install any necessary agents before initiating or scheduling a backup into Azure.
+You can configure both backup and site recovery for your infrastructure from a Recovery Services vault. For Azure Backup, identify where workloads are running, and what you want to back up. In this example, workloads are running on-premises, and you would be backing up files and folders. You then install any necessary agents before initiating or scheduling a backup into Azure.
 
 For Azure Site Recovery, set your protection goal to define where machines are located and where you want to replicate them. You then run a deployment planner to help Azure Site Recovery estimate whether you'll meet network bandwidth, storage capacity, and other requirements. You then prepare your source and target environments by, for example, installing a configuration server if necessary. Finally, you'll enable replication and protect your virtual machines.
 
 In this scenario, Azure Backup periodically backs up the files and folders on the Windows machine to Azure. This process ensures they are secure and retrievable even if the whole on-premises environment stops functioning. Separately, Azure Site Recovery will be used to protect running workloads and keep them running. Because Azure Site Recovery can replicate frequently, the recovery time objective for your workloads can be reduced.
 
-To configure the backup portion of your solution in this scenario – and to protect files and folders – you download and install the Microsoft Azure Recovery Services agent. You can then create backup policies and automatically back up your data on a scheduled basis. The Microsoft Azure Recovery Services agent also lets you restore all your data to either the same source machine, or to an entirely different machine. With Azure Backup, your data is also encrypted before it's backed up.
+To configure the backup portion of your solution in this scenario, and to protect files and folders, you download and install the Microsoft Azure Recovery Services agent. You can then create backup policies and automatically back up your data on a scheduled basis. The Microsoft Azure Recovery Services agent also lets you restore all your data to either the same source machine, or to an entirely different machine. With Azure Backup, your data is also encrypted before it's backed up.
 
 To set up Azure Site Recovery, you install an Azure Site Recovery Services agent and a Site Recovery Provider on the Hyper-V server. These tools are used for replication and orchestration of failover to Azure. Your data is encrypted when it's in transit. Data also remains encrypted when it's at rest and stored in Azure. When a failover is triggered, new virtual machines can be created for you based on the machines that have been protected by Azure Site Recovery.
 
