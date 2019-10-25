@@ -4,4 +4,11 @@ You developed a business continuity and disaster recovery plan. You used Azure S
 
 Imagine if you didn't have a disaster recovery solution in place. Your organization's applications would be continually at risk. Your data would also be at risk. In the event of a failure, your organization would have likely incurred massive costs,  potential legal repercussions, and possible loss of reputation.
 
-By the end of this module, you were able to put together a disaster recovery solution to help keep your organization's applications running if there was a failure – whether small or large. You've learned how to use several Azure tools together as part of your solution to meet the organization's requirements.
+By the end of this module, you were able to put together a disaster recovery solution to help keep your organization's applications running if there was a failure, whether small or large. You've learned how to use several Azure tools together as part of your solution to meet the organization's requirements.
+
+## Learn more
+
+For more information on the services and capabilities to include in your BCDR plan, visit the following articles.
+
+- [Disaster recovery for on-premises apps](https://docs.microsoft.com/azure/site-recovery/site-recovery-workload)
+- [Resiliency checklist for specific Azure services](https://docs.microsoft.com/azure/architecture/checklist/resiliency-per-service)
