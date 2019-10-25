@@ -6,9 +6,9 @@ In this unit, you'll learn how geo-redundancy and availability clusters can help
 
 ## Add geo-redundancy for your applications
 
-Your applications run on infrastructure. You need to be able to keep your applications running, regardless of what happens to the infrastructure running your applications. In an ideal scenario, you also want to keep running your applications even if something happens to an entire geographical region where your infrastructure operates. Occasionally, natural disasters and other issues could cause an entire geographical area to be without power or internet access. Respond to these issues gracefully and keep your applications running. Geo-redundancy should be in place – but it can be costly if it is not done right.
+Your applications run on infrastructure. You need to be able to keep your applications running, regardless of what happens to the infrastructure running your applications. In an ideal scenario, you also want to keep running your applications even if something happens to an entire geographical region where your infrastructure operates. Occasionally, natural disasters and other issues could cause an entire geographical area to be without power or internet access. Respond to these issues gracefully and keep your applications running. Geo-redundancy should be in place, but it can be costly if it is not done right.
 
-You can use Azure to make your on-premises applications geo-redundant. The benefit of running redundant infrastructure for your applications in Azure is that you don't need to maintain and secure a physical location you're responsible for. Also, you don't have to face any traditionally associated costs. In fact, with Azure you can add redundancy to your applications with regions that might be on the other side of the world – and there's no maintenance for you to handle. Maintenance is done for you, which means you achieve geo-redundancy easily and cost effectively.
+You can use Azure to make your on-premises applications geo-redundant. The benefit of running redundant infrastructure for your applications in Azure is that you don't need to maintain and secure a physical location you're responsible for. Also, you don't have to face any traditionally associated costs. In fact, with Azure you can add redundancy to your applications with regions that might be on the other side of the world and there's no maintenance for you to handle. Maintenance is done for you, which means you achieve geo-redundancy easily and cost effectively.
 
 By using a VPN site-to-site connection, you can extend the on-premises network to a virtual network that's running a replica of your infrastructure in a different region inside Azure. Azure Traffic Manager can be used to monitor the health of your on-premises network. If something happens to the on-premises location, you could then use the replica infrastructure in Azure that's located in an entirely different geographical region.
 
@@ -18,7 +18,7 @@ Similarly, you could set up geo-redundancy for your applications running inside 
 
 High availability clustering helps you ensure your workloads remain available and running with minimal downtime. High availability clustering comes in different forms. You can achieve high availability clustering through active-active architectures, or through active-passive architectures.
 
-An active-active architecture lets you distribute and load balance demand between multiple nodes – such as two identical Azure virtual machines. You can have these Azure virtual machines running together and sharing the demand. You can also distribute demand to these nodes based on different routing methods.
+An active-active architecture lets you distribute and load balance demand between multiple nodes, such as two identical Azure virtual machines. You can have these Azure virtual machines running together and sharing the demand. You can also distribute demand to these nodes based on different routing methods.
 
 ![Active-active example](../media/4-active-active-cluster.png)
 
@@ -34,7 +34,7 @@ Resources like Azure availability sets help you to achieve high availability thr
 
 Your organization has infrastructure for its applications running on-premises. You must help ensure that compliance requirements are met and business continuity goals are achieved. By using Azure Site Recovery and Traffic Manager together, you can fail over to Azure, then fail back, to ensure you keep the applications running.
 
-If there's a failure, you can smoothly redirect client traffic to an infrastructure created for you in Azure. Use Traffic Manager to create a Traffic Manager profile and set a priority routing method. Then you create two endpoints – one for your on-premises environment and another for the environment that you want to set up on Azure.
+If there's a failure, you can smoothly redirect client traffic to an infrastructure created for you in Azure. Use Traffic Manager to create a Traffic Manager profile and set a priority routing method. Then you create two endpoints, one for your on-premises environment and another for the environment that you want to set up on Azure.
 
 Since you are normally running an on-premises environment and want another one in Azure only to fail over to, you can set priority 1 for the on-premises environment and priority 2 for your environment on Azure. This priority is how Traffic Manager knows how to route the traffic between the two environments. Traffic Manager keeps routing traffic to your on-premises environment until it notices that the endpoint isn't healthy anymore. If that's the case, Traffic Manager will route traffic to your second environment, in Azure. Azure Site Recovery only starts running your virtual machines in Azure if a failover is triggered. If a disaster occurs, you can use Azure Site Recovery to start a failover from the on-premises environment to the Azure environment.
 
@@ -46,7 +46,7 @@ After a failover is completed, clients are directed transparently to the new end
 
 It's important to understand that your applications and the associated infrastructure will experience periodic pressures and must respond by changing appropriately. You could be dealing with security patches, updates, and other changes that affect your applications and their infrastructures. You may even need to occasionally change your applications' configurations and structure substantially in response to serious pressures.
 
-You can't predict all the changes. Instead, you monitor for any changes so you can respond appropriately and timely – and then learn from them.
+You can't predict all the changes. Instead, you monitor for any changes so you can respond appropriately and timely and then learn from them.
 
 First, you should understand the options that are available for monitoring. There are many solutions and tools to help you, including Azure Monitor, Azure Application Insights, and Azure Security Center.
 
