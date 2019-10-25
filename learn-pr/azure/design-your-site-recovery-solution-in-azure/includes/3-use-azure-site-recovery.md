@@ -6,11 +6,11 @@ In this unit, you'll see how Azure Site Recovery simplifies your business contin
 
 ## Simplify your BCDR with Azure Site Recovery
 
-Azure Site Recovery helps you simplify your BCDR. You can configure and manage your replication, failover, and failback, all through the Azure portal, Azure CLI or Azure PowerShell. Use Azure Site Recovery to replicate different types of targets. For example, Azure Site Recovery can help you configure disaster recovery for Azure virtual machines. You can replicate Azure virtual machines from a primary to a secondary region. Your on-premises virtual machines can be replicated too, along with workloads.
+Azure Site Recovery helps you simplify your BCDR. You can configure and manage your replication, failover, and failback, all through the Azure portal, Azure CLI or Azure PowerShell. Use Azure Site Recovery to replicate different types of targets. For example, Azure Site Recovery can help you configure disaster recovery for Azure virtual machines. You can replicate Azure virtual machines from a primary to a secondary region. Your on-premises virtual machines can be replicated too, along with workloads such as SQL Server.
 
-When you replicate over to Azure, the associated data goes into Azure storage and is kept resilient as a result. If a failover is triggered, Azure virtual machines are created for you, using this data that's replicated and stored in Azure storage.
+When you replicate over to Azure, the replicated virtual machine disks go into Azure storage and are kept resilient as a result. If a failover is triggered, Azure virtual machines are created for you, using the disks replicated from the source.
 
-Azure Site Recovery helps you meet your recovery time objective because it can perform continuous replication for your virtual machines. Replication can occur as often as every 30 seconds for any Hyper-V virtual machine. This frequency means reduced recovery time objective. You can make recovery time objectives even shorter if you use Azure Traffic Manager with your Azure Site Recovery service.
+Azure Site Recovery helps you meet your recovery time objective because it can perform continuous replication for your virtual machines. Replication can occur as often as every 30 seconds for any Hyper-V virtual machine. This frequency means reduced recovery time objective.
 
 Site Recovery can recover to application-consistent snapshots. Site Recovery takes snapshots of all data that's in memory, all data on disk, and all transactions in process.
 
@@ -50,8 +50,6 @@ You can protect Azure virtual machines and replicate them from a source region t
 
 You can also replicate both Hyper-V and VMware-based machines (managed by System Center), and your physical servers to your own secondary site. Azure Site Recovery replicates any of your workloads that are running on the machines that are supported.
 
-There are some replication requirements and restrictions, depending on your scenario. For example, your physical servers should be 64-bit, and BitLocker must be turned off.
-
 ## Integrate your network with Azure Site Recovery
 
 You might have a multi-tier application, made up of a web tier and an app tier, consisting of two machines each. You can use Azure Site Recovery to protect the whole structure and replicate it to Azure.
@@ -64,7 +62,7 @@ You can keep your IP addresses from on-premises machines and use them for target
 
 Your workloads will now fail over smoothly. Before the failover is triggered, you also need to assign the same IP addresses you have on-premises for each machine in its properties in Azure Site Recovery. When failover is complete, Azure Site Recovery creates virtual machines with the same IP addresses.
 
-## Integrate Azure Site Recovery with Azure Traffic Manager
+<!-- ## Integrate Azure Site Recovery with Azure Traffic Manager
 
 Azure Site Recovery works with Azure Traffic Manager to protect your infrastructure.
 
@@ -72,4 +70,4 @@ Consider a case where your organization has applications with public endpoints r
 
 You can achieve this aim by configuring a Traffic Manager profile. You use Azure Traffic Manager's priority routing to create two external endpoints. You'll need to create one primary endpoint for your on-premises, and set it as priority 1. You'll also need a failover endpoint for Azure, and set it as priority 2. Traffic Manager directs your traffic to the on-premises endpoint for as long as the endpoint is healthy.
 
-If there's a disaster, Azure Site Recovery performs a failover. Traffic Manager can probe your endpoints based on values you set – as frequent as every 10 seconds if necessary. When Traffic Manager sees the endpoint isn't healthy, traffic is directed to the failover endpoint. When you're ready to fail back to your on-premises environment, Azure Site Recovery can perform a failback for you. Traffic Manager then can confirm that the primary endpoint is healthy. Traffic is then automatically routed back to your primary endpoint.
+If there's a disaster, Azure Site Recovery performs a failover. Traffic Manager can probe your endpoints based on values you set – as frequent as every 10 seconds if necessary. When Traffic Manager sees the endpoint isn't healthy, traffic is directed to the failover endpoint. When you're ready to fail back to your on-premises environment, Azure Site Recovery can perform a failback for you. Traffic Manager then can confirm that the primary endpoint is healthy. Traffic is then automatically routed back to your primary endpoint. -->
