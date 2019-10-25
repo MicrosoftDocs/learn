@@ -18,7 +18,7 @@ Always On Availability Groups run on top of a Windows Server Failover Cluster th
 
 Always On Availability Groups can be configured in Azure by creating two availability sets. Create one availability set for your Windows Server Failover Cluster nodes, and another for the domain controllers. Each availability set must be in its own subnet, with both sharing one virtual network. You also configure an internal load balancer between the two availability sets. The Windows Server Failover Cluster needs to contain at least three machines. There should be one SQL machine for the primary replica, and another for the secondary replica in the cluster. There will be a third machine as a file share witness server.
 
-## Auto fail over your Azure SQL Databases
+## Failover for Azure SQL Databases
 
 You can use SQL Database auto failover groups to configure the failover and replication of groups of databases on a SQL Database server. You put together defined policies that can perform failovers based on your needs. If necessary, you could also manually trigger failovers. SQL Database auto failover can automatically fail over your databases to a secondary server in a secondary region if a failure occurs. SQL Database auto failover secondary databases can be used as readable secondary databases. You can use these secondary databases to service read access to data for any connecting clients and spread usage and demand between primary and secondary databases.
 
@@ -26,7 +26,7 @@ If you're using automatic failover policies, and a failure occurs on at least on
 
 Databases in one database server can be included in a single auto failover group. You could also put all databases in an elastic pool in a single failover group. When primary databases are part of an elastic pool, your secondary databases are also provisioned in an elastic pool. This pool will have the same name as the primary elastic pool.
 
-## Automate backups with Azure SQL Database
+## Automated backup for Azure SQL Database
 
 Azure SQL Database can make backups of your databases that are stored between 7 and 35 days. SQL Database uses geo-redundant storage to store backups and provides read access to your data in a different region. Your databases are safe even if something happens to a data center. You can extend the retention of backups for up to 10 years by establishing long-term retention policies on single databases or elastic pools. All database backups in SQL Database are encrypted at rest and all SQL databases you create will automatically have transparent data encryption enabled by default.
 
