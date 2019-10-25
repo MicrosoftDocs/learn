@@ -26,7 +26,7 @@ prerequisites: |
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/run-non-functional-tests-azure-pipelines.svg
 levels:
-- intermediate
+- beginner
 roles:
 - devops-engineer
 - administrator

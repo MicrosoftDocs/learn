@@ -1,12 +1,12 @@
-The shipping company that you work for would like to avoid any future issues with updates to its applications on the Azure platform. To improve the alerting capabilities within Azure, you've chosen to use Azure metric alerting.
+The shipping company that you work for wants to avoid any future issues with updates to its applications on the Azure platform. To improve the alert capabilities in Azure, you've chosen to use Azure metric alerts.
 
-In this exercise you will create a Linux VM. This VM will run an application that will run the CPU at 100% utilization. You'll create monitoring rules in the Azure portal and the Azure CLI to alert you on high CPU usage.
+In this exercise, you'll create a Linux virtual machine (VM). This VM will run an application that will run the CPU at 100 percent utilization. You'll create monitoring rules in the Azure portal and in the Azure CLI to alert you on high CPU usage.
 
 ## Create the VM
 
 This VM will run a specific configuration that stresses the CPU and generates the metric monitoring data needed to trigger an alert.
 
-1. Let's start by creating the configuration script. Run this command in the Cloud Shell to create the `cloud-init.txt` file with the configuration for the virtual machine.
+1. Let's start by creating the configuration script. Run this command in Azure Cloud Shell to create the `cloud-init.txt` file with the configuration for the virtual machine.
 
     ```bash
     cat <<EOF > cloud-init.txt
@@ -19,7 +19,7 @@ This VM will run a specific configuration that stresses the CPU and generates th
     EOF
     ```
 
-1. Run the `az vm create` command to set up an Ubuntu Linux VM. This command will use the `cloud-init.txt` file you created in the previous step to configure the VM after it's created.
+1. Run the `az vm create` command to set up an Ubuntu Linux VM. This command will use the `cloud-init.txt` file that you created in the previous step to configure the VM after it's created.
 
     ```azurecli
     az vm create \
@@ -30,33 +30,33 @@ This VM will run a specific configuration that stresses the CPU and generates th
         --generate-ssh-keys
     ```
 
-## Create the Azure Metric Monitor through the Azure portal
+## Create the metric alert through the Azure portal
 
-You use either the Azure portal or the CLI to create a metric monitor. In this exercise we will cover both, starting with the Azure portal.
+You use either the Azure portal or the CLI to create a metric alert. In this exercise we'll cover both, starting with the Azure portal.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you used to activate the sandbox.
 
-1. On the left, select **Monitor**, then select **Alerts** in the left panel.
+1. On the left, select **Monitor**, and then select **Alerts** in the left panel.
 
-1. Select **+ New alert rule**. The **Create rule** page will be displayed.
+1. Select **+ New alert rule**. The **Create rule** page appears.
 
-    ![Image showing the create rule page](../media/4-create-monitor-rule.png)
+    ![Image that shows the "Create rule" page](../media/4-create-monitor-rule.png)
 
-1. In the **RESOURCE** section, press **Select**.
+1. In the **RESOURCE** section, choose **Select**.
 
-1. The **Filter by subscription** drop-down should already be populated with the **Concierge Subscription**. In the **Filter by resource type** drop-down select **Virtual machines**.
+1. The **Filter by subscription** drop-down list should already be populated with **Concierge Subscription**. In the **Filter by resource type** drop-down list, select **Virtual machines**.
 
-    Select the `vm1` virtual machine under the **<rgn>[sandbox resource group name]</rgn>** resource group, then select **Done** at the bottom of the page.
+    Select the **vm1** virtual machine under the **<rgn>[sandbox resource group name]</rgn>** resource group. Then select **Done** at the bottom of the page.
 
-    ![Image showing the create rule page](../media/4-select-resource.png)
+    ![Image showing the "Select a resource" page](../media/4-select-resource.png)
 
-1. Next you will configure the conditional logic for this resource. In the **CONDITION** section, select **Add**.
+1. Next, you'll configure the conditional logic for this resource. In the **CONDITION** section, select **Add**.
 
-1. For **Signal Type** select **Metrics** and for **Monitor Service** select **All**.
+1. For **Signal Type**, select **Metrics**. For **Monitor Service**, select **All**.
 
-    The list of available signals will change depending on the signal type selected. From the list of available signal types, select **Percentage CPU**.
+    The list of available signals will change depending on the selected signal type. From the list of available signal types, select **Percentage CPU**.
 
-    ![Image showing the create rule page](../media/4-configure-signal-logic.png)
+    ![Image that shows the "Configure signal logic" panel](../media/4-configure-signal-logic.png)
 
 1. In the **Configure signal logic** panel, configure the following settings:
 
@@ -71,7 +71,7 @@ You use either the Azure portal or the CLI to create a metric monitor. In this e
 
     Select **Done**.
 
-    ![Image showing the metric condition logics settings](../media/4-metric-alert-logic.png)
+    ![Image that shows the settings for metric condition logic](../media/4-metric-alert-logic.png)
 
 1. In the **ALERT DETAILS** section, provide the following information:
 
@@ -83,19 +83,19 @@ You use either the Azure portal or the CLI to create a metric monitor. In this e
     | Enabled rule upon creation | Yes |
     | | |
 
-    ![Image showing a completed alert details section](../media/4-metric-alert-details.png)
+    ![Image that shows a completed section for alert details](../media/4-metric-alert-details.png)
 
-1. Select **Create alert rule** to create the alert rule.
+1. Select **Create alert rule**.
 
-You have successfully created a metric alert rule that will trigger an alert when the CPU percentage on the  virtual machine exceeds 90%. The rule will check every minute and review one minute of data. It can take up to 10 minutes for a metric alert rule to become active.
+You have successfully created a metric alert rule that will trigger an alert when the CPU percentage on the virtual machine exceeds 90 percent. The rule will check every minute and review 1 minute of data. It can take up to 10 minutes for a metric alert rule to become active.
 
-## Create the Azure Metric Monitor through the CLI
+## Create the metric alert through the CLI
 
-You can set up metric alerts using the CLI. This process can be quicker compared to using the portal, especially if you are planning to set up a number of alerts.
+You can set up metric alerts by using the CLI. This process can be quicker compared to using the portal, especially if you're planning to set up more than one alert.
 
 Let's create a new metric alert similar to the one you set up in the Azure portal.
 
-1. Run this command in the Cloud Shell to obtain the resource ID of the virtual machine created earlier.
+1. Run this command in Cloud Shell to obtain the resource ID of the virtual machine created earlier.
 
     ```bash
     VMID=$(az vm show \
@@ -105,7 +105,7 @@ Let's create a new metric alert similar to the one you set up in the Azure porta
             --output tsv)
     ```
 
-1. Using the Cloud Shell create a new metric alert, that will be triggered when the VM CPU is greater than 80%.
+1. Run this command to create a new metric alert that will be triggered when the VM CPU is greater than 80 percent.
 
     ```azurecli
     az monitor metrics alert create \
@@ -121,22 +121,22 @@ Let's create a new metric alert similar to the one you set up in the Azure porta
 
 ## View your metric alerts in Azure Monitor
 
-In the example, you set up an Ubuntu VM and configured it to stress test the CPU. You also created a metric rule to detect when the maximum CPU percentage exceeds 80% and 90%.
+In the example, you set up an Ubuntu VM and configured it to stress test the CPU. You also created a metric rule to detect when the maximum CPU percentage exceeds 80 percent and 90 percent.
 
-It may take 10 minutes before you see the alerts show up in your portal.
+It might take 10 minutes before you see the alerts show up in your portal.
 
 1. Return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. On the left, select **Monitor**, then select **Alerts** in the left panel.
+1. On the left, select **Monitor**, and then select **Alerts** in the left panel.
 
-1. This will present the alert summary page where you can see the count of the number of alerts at each severity.
+   This step presents the alert summary page, where you can see the count of the number of alerts at each severity.
 
-    ![Image showing the alert summary page](../media/4-alert-summary-page.png)
+    ![Image that shows the alert summary page](../media/4-alert-summary-page.png)
 
-1. You configured your metric alerts with a severity of Sev2 and Sev3. Select one of the severity levels to show all the alerts for that level.
+1. You configured your metric alerts with a severity of 2 and 3. Select one of the severity levels to show all the alerts for that level.
 
-    ![Image showing the alert summary page](../media/4-all-alerts-sev4.png)
+    ![Image that shows the "All Alerts" area](../media/4-all-alerts-sev4.png)
 
 1. Selecting one of the alerts will display the details on the alert. After the issue is resolved, you can also change the alert state.
 
-    ![Image showing the alert details page](../media/4-alert-details.png)
+    ![Image that shows the alert details page](../media/4-alert-details.png)

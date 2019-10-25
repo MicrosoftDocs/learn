@@ -13,7 +13,7 @@ The _Dev_, _Test_, and _Staging_ stages each deploy the build artifact to its ow
 
 Keep in mind that this pipeline satisfies the Tailspin team's requirements. The shape of your pipeline as well as how changes flow through it depend on the needs of your own team and the needs of the apps and services your team builds.
 
-Although the team is making steps towards improving their release cadence, there's room for additional improvements. For example, Amita from QA must manually test and approve builds before the team can present new features to management. In the next module, you'll work with the Tailspin team as they automate UI tests so that changes can move through the pipeline even faster.
+Although the team is making steps towards improving their release cadence, there's room for additional improvements. For example, the _Dev_ stage is the perfect place to integrate the web application with a database server. In the next module, you'll work with the Tailspin team as they convert the _Space Game_ web application from reading sample data from local files to using a real SQL database that runs on Azure.
 
 ## Learn more
 
