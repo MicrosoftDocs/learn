@@ -34,7 +34,7 @@ Identify and inventory the services you depend on, so you can incorporate their 
 
 ## Site recovery
 
-Azure Site Recovery has plans that help automate your disaster recovery by allowing you to define how machines are failed over, and the order in which they're restarted after being successfully failed over. In this way, Azure Site Recovery helps to automate tasks and further reduce your recovery time objective. You also use Azure Site Recovery to periodically test failovers and the overall effectiveness of the recovery process.
+Azure Site Recovery is a service that provides BCDR features for your applications in Azure, on-premises, and in other cloud providers. Azure Site Recovery has plans that help automate your disaster recovery by allowing you to define how machines are failed over, and the order in which they're restarted after being successfully failed over. In this way, Azure Site Recovery helps to automate tasks and further reduce your recovery time objective. You also use Azure Site Recovery to periodically test failovers and the overall effectiveness of the recovery process.
 
 ## Data backups
 
