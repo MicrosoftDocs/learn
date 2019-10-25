@@ -72,7 +72,7 @@ For brevity, here you commit the changes to your branch, push your branch to Git
 
 Let's say that you deployed a change that you want to revert. At this point, you could roll back the change by swapping the *production* and *swap* slots again (for example, you can swap slots manually through the Azure portal), or you could roll forward by pushing another change through the pipeline.
 
-That's what you'll do here You'll revert your latest code changes and push another change through the pipeline. To do so, you use the `git revert` command. With Git, you seldom remove commits from a file's history. Unlike the "undo" operation in a text editor, `git revert` creates a new commit that's essentially the opposite of the specified set of commits. To see this, you also run the `git log` command to trace your commit history during the revert process.
+That's what you'll do here. You'll revert your latest code changes and push another change through the pipeline. To do so, you use the `git revert` command. With Git, you seldom remove commits from a file's history. Unlike the "undo" operation in a text editor, `git revert` creates a new commit that's essentially the opposite of the specified set of commits. To see this, you also run the `git log` command to trace your commit history during the revert process.
 
 1. In your terminal, run the following `git log` command to view your commit history.
 

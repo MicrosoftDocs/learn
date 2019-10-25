@@ -1,6 +1,6 @@
 In [Run functional tests in Azure Pipelines](/learn/modules/run-functional-tests-azure-pipelines?azure-portal=true), you and the Tailspin team added Selenium UI tests to the pipeline. UI tests are a form of *functional testing*. In this part, you explore the kinds of *non-functional* tests you can run in a pipeline.
 
-The team first defines what a non-functional test is and talks about some types of non-functional tests. Then, decide on a non-functional test to add to their pipeline.
+The team first defines what a non-functional test is and talks about some types of non-functional tests. Then, they decide on a non-functional test to add to their pipeline.
 
 ## Daily standup meeting
 

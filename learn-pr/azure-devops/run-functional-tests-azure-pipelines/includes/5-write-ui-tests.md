@@ -233,7 +233,7 @@ public void ClickLinkByXPath_ShouldDisplayModalByXPath(string linkXPath, string 
 1. Close the modal.
 1. Verify that the modal was displayed successfully.
 
-**Andy:** Great. We'll also need to handle a few other things, such as ignoring the test if the driver could'nt be loaded and closing the modal only if the modal was successfully displayed.
+**Andy:** Great. We'll also need to handle a few other things, such as ignoring the test if the driver couldn't be loaded and closing the modal only if the modal was successfully displayed.
 
 After refilling their coffee mugs, Andy and Amita add code to their test method. They use the helper methods they wrote to handle locating page elements and clicking links and buttons. Here's the result:
 
