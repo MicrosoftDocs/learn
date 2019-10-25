@@ -12,38 +12,41 @@ Let's start by creating a new stored procedure in the portal. The portal automat
 
 1. Select **Execute** to run the _sample_ stored procedure. This will open a sidebar on the right allowing you to supply parameters to the stored procedure.
 
-1. In the **Input parameters** box, type the name of a partition key, *33218896*, and then click **Execute**. Note that stored procedures work within a single partition.
+1. In the **Input parameters** pane, use the following value for **Partition key value**.
+   - **Type**: _String_
+   - **Value**: _33218896_
 
     ![Run a stored procedure in the portal](../media/6-stored-procedure.png)
+1. Select **Execute**. Note that stored procedures work within a single partition.
 
     The **Result** pane displays the feed from the first document in the container.
 
-```json
-{
-  "prefix": null,
-  "feed": {
-    "id": "1",
-    "productId": "33218896",
-    "category": "Women's Clothing",
-    "manufacturer": "Contoso Sport",
-    "description": "Quick dry crew neck t-shirt",
-    "price": "14.99",
-    "shipping": {
-      "weight": 1,
-      "dimensions": {
-        "width": 6,
-        "height": 8,
-        "depth": 1
-      }
-    },
-    "_rid": "hxoKANnJfPQBAAAAAAAAAA==",
-    "_self": "dbs/hxoKAA==/colls/hxoKANnJfPQ=/docs/hxoKANnJfPQBAAAAAAAAAA==/",
-    "_etag": "0b011de9-0000-0500-0000-5cdc96250000",
-    "_attachments": "attachments",
-    "_ts": "1557960229"
-  }
-}
-```
+    ```json
+    {
+      "prefix": null,
+      "feed": {
+         "id": "1",
+         "productId": "33218896",
+         "category": "Women's Clothing",
+         "manufacturer": "Contoso Sport",
+         "description": "Quick dry crew neck t-shirt", 
+         "price": "14.99",
+         "shipping": {
+           "weight": 1,
+           "dimensions": {
+           "width": 6,
+           "height": 8,
+           "depth": 1
+           }
+        },
+       "_rid": "hxoKANnJfPQBAAAAAAAAAA==",
+       "_self": "dbs/hxoKAA==/colls/hxoKANnJfPQ=/docs/hxoKANnJfPQBAAAAAAAAAA==/",
+       "_etag": "0b011de9-0000-0500-0000-5cdc96250000",
+       "_attachments": "attachments",
+       "_ts": "1557960229"
+       }
+     }
+     ```
 
 ## Create a stored procedure that creates documents
 
@@ -76,7 +79,11 @@ Now, let's create a stored procedure that creates documents.
     ```
 1. Select **Execute** to run the stored procedure.
 
-1. In the Input parameters box, enter a Partition Key Value of *33218898*, and then click **Execute**.
+1. In the **Input parameters** pane, use the following value for **Partition key value**.
+   - **Type**: _String_
+   - **Value**: _33218898_
+
+1. Select **Execute**.
 
     Data Explorer displays the newly created document in the Result area.
 
@@ -101,7 +108,7 @@ Now, let's create a stored procedure that creates documents.
 
 Now, let's create a UDF in Data Explorer.
 
-1. In the Data Explorer, click **New UDF**. You may need to click the down arrow next to **New Stored Prodedure** to see **New UDF**.
+1. In the Data Explorer, click **New UDF**. You may need to click the down arrow next to **New Stored Procedure** to see **New UDF**.
 
     ![Screenshot showing the New UDF dropdown in the Data Explorer](../media/6-create-udf.png)
 
@@ -132,4 +139,4 @@ Now, let's create a UDF in Data Explorer.
 
 1. Select **Execute Query** to run the updated query using your new UDF.
 
-![Screenshot showing the results of the UDF in the Data Explorer window](../media/6-run-the-udf.png)
+   ![Screenshot showing the results of the UDF in the Data Explorer window](../media/6-run-the-udf.png)

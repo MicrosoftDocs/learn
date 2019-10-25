@@ -4,17 +4,27 @@ In this unit, you'll configure a network security group and security rules to re
 
 ![Diagram of exercise scenario network security groups](../media/3-exercise-first-task.svg)
 
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
+
 ## Create a virtual network and network security group
 
-First, you'll create the virtual network and subnets for your server resources. You'll then create a network security group.
+First, you'll create a resource group, the virtual network, and subnets for your server resources. You'll then create a network security group.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
+1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and log in to the directory with access to the subscription you want to create resources in.
+
+1. Run the following command in the Cloud Shell to create a variable to store your resource group name, and a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region you'd like to deploy your resources in.
+
+    ```azurecli
+    rg=<resource group name>
+
+    az group create --name $rg --location <location>
+    ```
 
 1. Run the following command in Azure Cloud Shell to create the **ERP-servers** virtual network and the **Applications** subnet.
 
     ```azurecli
     az network vnet create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $rg \
         --name ERP-servers \
         --address-prefix 10.0.0.0/16 \
         --subnet-name Applications \
@@ -25,7 +35,7 @@ First, you'll create the virtual network and subnets for your server resources. 
 
     ```azurecli
     az network vnet subnet create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $rg \
         --vnet-name ERP-servers \
         --address-prefix 10.0.1.0/24 \
         --name Databases
@@ -35,7 +45,7 @@ First, you'll create the virtual network and subnets for your server resources. 
 
     ```azurecli
     az network nsg create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $rg \
         --name ERP-SERVERS-NSG
     ```
 
@@ -48,12 +58,13 @@ Next, you create two virtual machines called **AppServer** and **DataServer**. Y
     ```azurecli
     wget -N https://raw.githubusercontent.com/MicrosoftDocs/mslearn-secure-and-isolate-with-nsg-and-service-endpoints/master/cloud-init.yml && \
     az vm create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $rg \
         --name AppServer \
         --vnet-name ERP-servers \
         --subnet Applications \
         --nsg ERP-SERVERS-NSG \
         --image UbuntuLTS \
+        --size Standard_B1ls \
         --admin-username azureuser \
         --custom-data cloud-init.yml \
         --no-wait \
@@ -64,11 +75,12 @@ Next, you create two virtual machines called **AppServer** and **DataServer**. Y
 
     ```azurecli
     az vm create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $rg \
         --name DataServer \
         --vnet-name ERP-servers \
         --subnet Databases \
         --nsg ERP-SERVERS-NSG \
+        --size Standard_B1ls \
         --image UbuntuLTS \
         --admin-username azureuser \
         --custom-data cloud-init.yml \
@@ -79,7 +91,7 @@ Next, you create two virtual machines called **AppServer** and **DataServer**. Y
 
     ```azurecli
     az vm list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $rg \
         --show-details \
         --query "[*].{Name:name, Provisioned:provisioningState, Power:powerState}" \
         --output table
@@ -102,7 +114,7 @@ Now, you'll try to open a Secure Shell (SSH) session to each of your virtual mac
 
     ```azurecli
     az vm list \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $rg \
         --show-details \
         --query "[*].{Name:name, PrivateIP:privateIps, PublicIP:publicIps}" \
         --output table
@@ -112,13 +124,13 @@ Now, you'll try to open a Secure Shell (SSH) session to each of your virtual mac
 
    ```bash
    APPSERVERIP="$(az vm list-ip-addresses \
-                    --resource-group <rgn>[sandbox resource group name]</rgn> \
+                    --resource-group $rg \
                     --name AppServer \
                     --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
                     --output tsv)"
 
    DATASERVERIP="$(az vm list-ip-addresses \
-                    --resource-group <rgn>[sandbox resource group name]</rgn> \
+                    --resource-group $rg \
                     --name DataServer \
                     --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
                     --output tsv)"
@@ -157,7 +169,7 @@ As you've now experienced, the default rules in your **ERP-SERVERS-NSG** network
 
     ```azurecli
     az network nsg rule create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $rg \
         --nsg-name ERP-SERVERS-NSG \
         --name AllowSSHRule \
         --direction Inbound \
@@ -210,7 +222,7 @@ Now add a rule so that **AppServer** can communicate with **DataServer** over HT
 
     ```azurecli
     az network nsg rule create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $rg \
         --nsg-name ERP-SERVERS-NSG \
         --name httpRule \
         --direction Inbound \
@@ -258,7 +270,7 @@ Next, create an application security group for database servers, so that all ser
 
     ```azurecli
     az network asg create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $rg \
         --name ERP-DB-SERVERS-ASG
     ```
 
@@ -266,7 +278,7 @@ Next, create an application security group for database servers, so that all ser
 
     ```azurecli
     az network nic ip-config update \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $rg \
         --application-security-groups ERP-DB-SERVERS-ASG \
         --name ipconfigDataServer \
         --nic-name DataServerVMNic \
@@ -278,7 +290,7 @@ Next, create an application security group for database servers, so that all ser
 
     ```azurecli
     az network nsg rule update \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group $rg \
         --nsg-name ERP-SERVERS-NSG \
         --name httpRule \
         --direction Inbound \

@@ -13,4 +13,3 @@ In this module, you will:
 
 - Learn what the Face API is.
 - Learn concepts related to the Face API.
-- Explore the Emotion API.

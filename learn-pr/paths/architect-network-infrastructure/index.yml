@@ -1,0 +1,42 @@
+### YamlMime:LearningPath
+uid: learn.architect-network-infrastructure
+metadata:
+  title: Architect network infrastructure in Azure learning path
+  description: Learn how to architect a secure, flexible, network infrastructure in Azure and connect on-premises networks to your Azure resources.
+  brand: azure
+  ms.date: 10/23/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Architect network infrastructure in Azure
+summary: Learn how to architect a secure, flexible, network infrastructure in Azure and connect on-premises networks to your Azure resources.
+prerequisites: |
+  - Familiarity with network concepts, such as IP addressing and routing
+  - Familiarity with network connectivity methods, such as VPN
+iconUrl: /learn/achievements/architect-network-infrastructure.svg
+levels:
+- intermediate
+roles:
+- solution-architect
+products:
+- azure
+- azure-virtual-network
+- azure-expressroute
+- azure-vpn-gateway
+- azure-application-gateway
+- azure-traffic-manager
+modules:
+- learn.connect-on-premises-network-with-vpn-gateway
+- learn.connect-on-premises-network-with-expressroute
+- learn.secure-and-isolate-with-nsg-and-service-endpoints
+- learn.integrate-vnets-with-vnet-peering
+- learn.distribute-load-with-traffic-manager
+- learn.improve-app-scalability-resiliency-with-load-balancer
+- learn.load-balance-web-traffic-with-application-gateway
+- learn.control-network-traffic-flow-with-routes
+- learn.design-ip-addressing-for-azure
+- learn.hub-and-spoke-network-architecture
+- learn.troubleshoot-azure-network-infrastructure
+trophy:
+  uid: learn.architect-network-infrastructure.trophy

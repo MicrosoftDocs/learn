@@ -1,4 +1,4 @@
-The Azure Portal has a lot of features and services available; let's look at some of the more common areas you'll tend to use. First, take a moment to hover your mouse pointer over each of the icons in the top menu bar for a few seconds each. You should see a tooltip label pop up for each one. This is the name of the menu item. You will use these icons later.
+The Azure portal has several features and services available; let's look at some of the more common areas you'll tend to use. First, take a moment to hover your mouse pointer over each of the icons in the top menu bar for a few seconds each. You should see a tooltip label pop-up for each one. This label is the name of the menu item. You will use these icons later.
 
 ![Screenshot of the Azure portal icon bar](../media/5-portal-icon-bar.png)
 
@@ -22,13 +22,13 @@ The Azure Portal has a lot of features and services available; let's look at som
 
 ## Notifications blade
 
-1. On the icon bar menu bar, click the **Notifications** (bell) icon. This will list any pending notifications.
+1. On the icon bar menu bar, click the **Notifications** (bell) icon. This window will list any pending notifications.
 
     ![Screenshot of notifications window](../media/5-notifications-blade.png)
 
 1. If any notifications appear, hover your mouse over one of them. Click the **X** that appears in that notification to dismiss it.
 
-1. To the right of **Dismiss**, click **All**. You should have no notifications showing.
+1. Click **Dismiss all**. You should have no notifications showing.
 
 1. Click the **X** in the top right-hand corner to close the **Notifications** pane.
 
@@ -36,9 +36,12 @@ The Azure Portal has a lot of features and services available; let's look at som
 
 ![Icon representing the Azure Cloud Shell](../media/5-cloud-shell-icon.png)
 
-The Azure Cloud Shell allows you to use a command-line interface (CLI) to execute commands in your Azure subscription. You can access it by clicking the (`>_`) icon in the toolbar. However, it isn't available in the Sandbox environment - so you will only be able to do this in your own active subscriptions. You can also navigate to <https://shell.azure.com> to launch a Cloud Shell in the browser independent of the portal.
+The Azure Cloud Shell allows you to use a command-line interface (CLI) to execute commands in your Azure subscription. You can access it by clicking the (`>_`) icon in the toolbar. You can also navigate to <https://shell.azure.com> to launch a Cloud Shell in the browser independent of the portal.
 
-When you launch the shell, you will see a Welcome window. You can choose either a **Bash** or **PowerShell** environment, depending on your personal preferences. You can also change the shell at anytime through the language drop-down on the left side of the shell.
+> [!NOTE]
+> The Azure Cloud Shell is available in the Sandbox environment, but the Sandbox version of the shell has reduced functionality. To use all of the Azure Cloud Shell features, you will need to use your own Azure subscription.
+
+When you launch the shell, you will see a Welcome window. You can choose either a **Bash** or **PowerShell** environment, depending on your personal preferences. You can also change the shell at any time through the language drop-down on the left side of the shell.
 
 Finally, there are a variety of management and programming tools included in the created environment.
 
@@ -53,7 +56,7 @@ Finally, there are a variety of management and programming tools included in the
 
 ![Icon representing the settings panel](../media/5-settings-icon.png)
 
-1. Click the **Settings** (cog) icon to open the **Portal settings** pane.
+1. Click the **Settings** (cog) icon to open the **Portal settings** pane, showing the **General** settings by default.
 
 1. Drop down the **Log me out when inactive** setting, and select **After one hour**.
 
@@ -61,15 +64,11 @@ Finally, there are a variety of management and programming tools included in the
 
 1. Under **High contrast theme**, try the three different options.
 
-1. Disable Toast notifications. This means notifications will not appear as pop-up "toast"-style notifications, but will still show up in the Notifications (bell) icon as always.
+1. Click **Enable pop-up notifications**. When this option is checked, notifications will appear as pop-up "toast"-style notifications. They will still show up in the Notifications (bell) icon as well.
 
-1. Note the **Allow double-click on dashboard to change theme** setting, enabled by default. When enabled, you can use the mouse to cycle through the various color themes without opening this Settings menu by double-clicking the left mouse button in the Dashboard view's background area. Disable this option to avoid accidentally changing your color theme.
+1. Click the **Settings** (cog) icon in the top menu bar and switch to the **Language & region** settings. Select **Language** and pick **Español**, and then click the **Apply** button. If a **Translate this page** dialog box appears, close the box. The whole portal is now in Spanish.
 
-1. Click **Apply** to accept your changes.
-
-1. Click the **Settings** (cog) icon in the top menu bar and, under **Language**, select **Español**, and then click the **Refresh** button. If a **Translate this page** dialog box appears, close the box. Note that the whole portal is now in Spanish.
-
-1. Click the **Settings** (cog) icon in the top menu bar and, under **Language**, select **English**. Click the **Actualizar** button. The portal returns to English.
+1. To revert back to English, click the **Settings** (cog) icon in the top menu bar and switch to the **Idioma y región** settings. Select **Idioma** and pick **English**. Click the **Aplicar** button. The portal returns to English.
 
 ## Feedback blade
 
@@ -87,9 +86,9 @@ Finally, there are a variety of management and programming tools included in the
 
 1. Click the **Help** (`?`) icon to show the **Help** blade.
 
-1. Click the **Help + Support** button.
+1. Click the **Help + support** button.
 
-1. In the **Help + Support** blade, under **Support**, click **New support request**. To create a new support request, you would fill in the information in each of the following sections, and then click **Create** to lodge the issue.
+1. In the **Help + support** blade, under **Support**, click **New support request**. To create a new support request, you would fill in the information in each of the following sections, and then click **Create** to lodge the issue.
 
     - **Basics:** the issue type
     - **Problem:** severity of the problem, a summary and description, and any additional information
@@ -122,7 +121,7 @@ Finally, there are a variety of management and programming tools included in the
 
 1. Click the **Directory + Subscription** (book and filter) icon to show the **Directory + subscription** blade.  
 
-    This is where you can switch between multiple subscriptions or directories. You should see the Concierge subscription here, and if you have an Azure account tied to the same email address, your own subscription.
+    This is where you can switch between multiple subscriptions or directories. You should see that you are in the Concierge Subscription of the Microsoft Learn Sandbox directory here. If you have other Azure directories tied to the same email address, those subscriptions will be available as well.
 
     There is also a link to learn more about directories and subscriptions.
 
@@ -139,7 +138,7 @@ Finally, there are a variety of management and programming tools included in the
     - View your bill
     - Update your contact information
 
-    Note that some items do not appear unless you click the "..." icon.
+    Some of these items do not appear unless you click the "..." icon.
 
 1. Click "..." then **View my bill** to navigate to the **Cost Management + Billing - Invoices** page, which helps you analyze where Azure is generating costs.
 

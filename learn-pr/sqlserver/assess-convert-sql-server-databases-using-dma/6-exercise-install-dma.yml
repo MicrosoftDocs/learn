@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn-sqlserver.assess-convert-sql-server-databases-using-dma.6-exercise-install-dma
+title: Exercise - Install the Data Migration Assistant (DMA)
+metadata:
+  title: Exercise - Install the Data Migration Assistant (DMA)
+  description: Exercise - Install the Data Migration Assistant (DMA)
+  ms.date: 01/31/2019
+  author: geoffallix
+  ms.author: v-gea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+  ROBOTS: NOINDEX
+labId: 46511
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-exercise-install-dma.md)]

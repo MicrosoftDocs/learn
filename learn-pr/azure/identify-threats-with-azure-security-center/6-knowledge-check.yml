@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-security.identify-threats-with-azure-security-center.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 09/30/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: Which feature is _not_ available in the basic (free) tier?
+      choices:
+      - content: Monitor VM activity for intrusion attempts.
+        isCorrect: false
+      - content: Provide continuous security assessments.
+        isCorrect: false
+      - content: Monitor external cloud and non-Azure resources.
+        isCorrect: true
+        explanation: "Correct. The Standard tier is required to monitor non-Azure resources."
+    - content: True or False. You can collect boot-time diagnostics from VMs with Security Center.
+      choices:
+      - content: "True"
+        isCorrect: true
+        explanation: "Correct. The Data Collection option enables this support."
+      - content: "False"
+        isCorrect: false
+    - content: What level can you apply security policies to? (Select the best answer).
+      choices:
+      - content: Security policies are always turned on for every subscription and are not configurable.
+        isCorrect: false
+      - content: Security policies can be configured at the subscription level.
+        isCorrect: false
+      - content: Security policies can be configured at the subscription and resource group level.
+        isCorrect: true
+        explanation: "Correct. You can turn security policies (and the corresponding recommendations) on/off at either the subscription or resource group level."
+    - content: Select the best description of the Secure Score shown on the dashboard.
+      choices:
+      - content: The Secure Score is a calculation based on the ratio of healthy resources vs. total resources.
+        isCorrect: true
+        explanation: "Correct."
+      - content: The Secure Score is a count of recommendations made against your monitored resources.
+        isCorrect: false
+      - content: The Secure Score is a machine-learning based prediction of how likely your resources are to be infiltrated by a hacker. 
+        isCorrect: false

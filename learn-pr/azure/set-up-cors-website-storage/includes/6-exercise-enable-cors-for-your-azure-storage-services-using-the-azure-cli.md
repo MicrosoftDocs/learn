@@ -2,8 +2,6 @@ In the utilities company scenario, several members of your development are famil
 
 In this exercise, you'll learn how to use the Azure CLI to enable CORS for Azure storage.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Enable CORS using the Azure CLI
 
 1. Run the following command in the Cloud Shell to set environment variables that you will use in later commands; these variables specify the name of Azure storage account and account key for your storage account.

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.protect-virtual-machines-with-azure-backup.1-introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 08/27/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
