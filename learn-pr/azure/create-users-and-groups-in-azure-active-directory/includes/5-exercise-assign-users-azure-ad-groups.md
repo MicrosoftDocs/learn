@@ -21,7 +21,9 @@ You'll now assign members to the Developers group.
 
 1. Select the **Developers group**.
 1. Select **Members > Add members**.
-1. In the Add members pane, search for the user, and then select the **user** you want to add. In our case, we search for and select Chris Green.
+
+   ![Screenshot that shows Add member button](../media/5-add-group-member.png)
+1. Search for and select Chris Green.
 1. Click **Select**.
 1. You'll see this user in the member list for our Developers group.
 
@@ -31,7 +33,7 @@ You have added a new member to a group.
 
 You can change the group to use dynamic assignment. Membership will then depend on whether a user meets the rules you set on the group.
 
-1. In the Developers group pane, select **Properties**. The properties for this group are now listed.
+1. In the Developers group, select **Properties**. 
 1. Change **Membership type** to **Dynamic User**.
 1. Select **Yes** at the prompt to provide this new type of membership to existing members.  
 1. Select **Add dynamic query**. 
