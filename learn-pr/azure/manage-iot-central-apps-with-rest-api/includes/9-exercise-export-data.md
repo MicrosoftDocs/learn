@@ -11,7 +11,7 @@ Before you can configure the data export from IoT Central, you need to set up th
 Run the following commands to create storage account and container, and retrieve the connection string:
 
 ```azurecli
-STORAGE_ACCOUNT="storemanagement${SUFFIX}"
+STORAGE_ACCOUNT="storemanagement$RANDOM"
 az storage account create --name $STORAGE_ACCOUNT \
 --resource-group <rgn>[sandbox resource group name]</rgn> \
 --location centralus --sku Standard_LRS
