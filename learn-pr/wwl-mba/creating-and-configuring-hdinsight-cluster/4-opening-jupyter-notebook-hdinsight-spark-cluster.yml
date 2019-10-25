@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.creating-and-configuring-hdinsight-cluster.4-opening-jupyter-notebook-hdinsight-spark-cluster
-title: Opening a Jupyter Notebook on HDInsight Spark Cluster
+title: Opening a Jupyter Notebook on HDInsight Spark cluster
 metadata:
   title: Opening a Jupyter Notebook on HDInsight Spark Cluster
   description: Opening a Jupyter Notebook on HDInsight Spark Cluster

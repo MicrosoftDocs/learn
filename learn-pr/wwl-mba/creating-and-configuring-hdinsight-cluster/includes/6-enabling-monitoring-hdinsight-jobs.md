@@ -4,13 +4,13 @@ Monitoring of an HDInsight cluster is of interest to both data engineers and IT 
 - Resource utilization and performance
 - Workload information and logs
 
-IT admins will use monitoring to view the cluster health and availability, as well as monitoring the security of the cluster. Data engineers are more interested in workload information and logs watching out for the job’s failures or successes, performance of the cluster, and to view the workloads using logs. There are two main tools that can be used to perform monitoring: Apache Ambari and Azure Monitor.
+IT admins will use monitoring to view the cluster health and availability, as well as monitoring the security of the cluster. Data engineers are more interested in workload information and logs, watching out for the job’s failures or successes, performance of the cluster, and to view the workloads using logs. There are two main tools that can be used to perform monitoring: Apache Ambari and Azure Monitor.
 
 ## Apache Ambari
 
 This is an open source cluster management and monitoring tool. It provides a dashboard with a series of widgets that enable you to view the health of an HDInsight cluster from a hardware perspective at both the cluster and the node level and is accessible from the overview screen of the HDInsight cluster in the Azure portal.
 
-![Accessing Apachi Ambari from the Azure Portal](../media/6-img01.png)
+![Accessing Apachi Ambari from the Azure portal](../media/6-img01.png)
 
 Apache Ambari opens in a web browser provides a dashboard of monitoring tools
 
@@ -20,9 +20,9 @@ There are many areas of Apache Ambari that are useful to both IT admins and Data
 
 ## Monitoring
 
-Azure Monitor is an Azure wide monitoring tool which can be used on HD Insight clusters to monitor the health of your service. Aspects of Azure Monitor are exposed in the Azure Portal directly:
+Azure Monitor is an Azure-wide monitoring tool which can be used on HDInsight clusters to monitor the health of your service. Aspects of Azure Monitor are exposed in the Azure portal directly:
 
-![The monitoring options in the Azure Portal](../media/6-img03.png)
+![The monitoring options in the Azure portal](../media/6-img03.png)
 
 ## Alerts
 
@@ -30,7 +30,7 @@ Alerts are a useful tool to proactively monitor a resource in Azure, and to act 
 
 ## Metrics
 
-Metrics are a component of Azure Monitor that enables you to setup visual charts that contain metrics of a resource that you want to monitor. This enables you to view measure and correlations of data point to provide an indication of whether an aspect of a service is performing in an acceptable range. HDInsight metrics include Gateway Requests to see the load on your cluster, and the number of active workers, which allows you to keep an eye on your cluster size of the HDInsight cluster
+Metrics are a component of Azure Monitor that enables you to set up visual charts that contain metrics of a resource that you want to monitor. This enables you to view measure and correlations of data point to provide an indication of whether an aspect of a service is performing in an acceptable range. HDInsight metrics include Gateway Requests to see the load on your cluster, and the number of active workers, which allows you to keep an eye on your cluster size of the HDInsight cluster
 
 ## Diagnostic Settings
 

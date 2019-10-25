@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.learn-contact: ''
-title: Creating and configuring a HDInsight Cluster
+title: Creating and configuring a HDInsight cluster
 summary: In this module, you will learn how to create a HDInsight Cluster, monitor a cluster and be aware of common provisioning issues.
 abstract: |
   1. Introduction
@@ -25,10 +25,10 @@ abstract: |
 ratingEnabled: true
 prerequisites: |
   The following pre-requisite should be completed:
-  - Successfully login to the Azure Portal
+  - Successfully login to the Azure portal
   - Understand the Azure storage options
   - Understand the Azure compute options
-  - Create and configure a HDInsight Cluster in the Azure Portal
+  - Create and configure a HDInsight Cluster in the Azure portal
 iconUrl: /learn/achievements/learn-pr/achievements/creating-and-configuring-a-hdinsight-cluster.svg
 levels:
 - beginner

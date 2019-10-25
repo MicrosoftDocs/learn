@@ -1,4 +1,4 @@
-Once the HDInsight Spark cluster is created, you can run interactive Spark SQL queries or jobs against an Apache Spark cluster in Azure HDInsight. In order to do this, you must first create a notebook. A notebook is an interactive editor that enables Data Engineers and Data Scientists to use a range of languages to interact with data. This can include Python, SQL, Scala and other languages. HDInsight supports Jupyter, Zeppelin, and Livy to interact with data. The level of interaction depends on the workload that you are managing.
+Once the HDInsight Spark cluster is created, you can run interactive Spark SQL queries or jobs against an Apache Spark cluster in Azure HDInsight. In order to do this, you must first create a notebook. A notebook is an interactive editor that enables Data Engineers and Data Scientists to use a range of languages to interact with data. This can include Python, SQL, Scala, and other languages. HDInsight supports Jupyter, Zeppelin, and Livy to interact with data. The level of interaction depends on the workload that you are managing.
 
 Apache Spark on HDInsight supports the following workloads:
 
@@ -20,11 +20,11 @@ Use the following steps to create a Jupyter notebook in the Azure portal.
 
 1. Select HDInsight clusters, and then select the cluster you created.
 
-![Selecting your HDInsight Cluster in the Azure Portal](../media/4-img01.png)
+![Selecting your HDInsight Cluster in the Azure portal](../media/4-img01.png)
 
 2. From the portal, in the **Cluster dashboards** section, select **Jupyter Notebook**. If prompted, enter the **cluster login credentials** for the cluster.
 
-![Selecting your Jupyter Notebook in the Azure Portal](../media/4-img02.png)
+![Selecting your Jupyter Notebook in the Azure portal](../media/4-img02.png)
 
 3. Select **New > PySpark** to create a notebook.
 
