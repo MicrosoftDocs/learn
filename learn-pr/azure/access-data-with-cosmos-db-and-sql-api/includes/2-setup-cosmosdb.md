@@ -1,19 +1,14 @@
 The first thing we need to do is create an empty Azure Cosmos DB database and container to work with. We want them to match the ones you created in the last module in this Learning Path: a database named **"Products"** and a container named **"Clothing"**. Use the following instructions and the Azure Cloud Shell on the right side of the screen to recreate the database.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create an Azure Cosmos DB account + database with the Azure CLI
 
-We'll start by creating an environment variable to hold the Azure Cosmos DB account name so you don't have to type the same value each time in the following commands.
+We'll start by creating an environment variable to hold the Azure Cosmos DB account name so you don't have to type the same value each time in the following commands. The database account name must be unique across all Azure Cosmos DB instances.
 
-> [!IMPORTANT]
-> This name must be globally unique, between 3 and 31 characters, and can only contain lowercase letters, numbers, and the dash ('-') character. Try using a word prefix, dash and your initials, or some random numbers to the end to ensure it's unique.
+Use the following command to generate a random database account name, by using the Bash $RANDOM variable, and store it in an environment variable to use later. 
 
-1. Create a **NAME** environment variable in the Cloud Shell on the right with your selected name. Make sure to replace the `{account-name}` value below with your chosen name.
-
-    ```azurecli
-    export NAME="{account-name}"
-    ```
+```azurecli
+export NAME=cosmos$RANDOM
+```
 
 ### Create the Azure Cosmos DB account
 
@@ -35,14 +30,7 @@ We'll use the Azure CLI `cosmosdb create` command to create a new Azure Cosmos D
 
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
-    The command takes a few minutes to complete. If you get an error like:
-
-    ```output
-    Operation failed with status: 'BadRequest'. Details: DatabaseAccount name 'xyz-southcentralus' already exists.
-    ActivityId: 12c59444-7760-11e9-a9c9-0a580af45c60, Microsoft.Azure.Documents.Common/2.2.0.0
-    ```
-
-    Then your **NAME** environment variable isn't unique - some other database in the selected region is using that ID. Change your **NAME** value by re-typing the `export` command from above with a new name.
+    The command takes a few minutes to complete.
 
     The cloud shell displays the settings as a JSON object for the new account once it's deployed - something like the following:
 

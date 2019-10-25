@@ -4,8 +4,8 @@ metadata:
   title: Core Cloud Services - Manage services with the Azure portal
   description: "Tour the Azure portal features and services, and customize the portal."
   ms.date: 09/24/2018
-  author: markjulmar
-  ms.author: smmark
+  author: cwatson-cat
+  ms.author: scwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: smmark

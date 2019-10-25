@@ -26,7 +26,7 @@ products:
 modules:
 - learn.data-ai.intro-to-azure-machine-learning-service
 - learn.data-ai.train-local-model-with-azure-mls
-- learn.data-ai.automate-model-selection-with-azure-automl
 - learn.data-ai.register-and-deploy-model-with-amls
+- learn.data-ai.automate-model-selection-with-azure-automl
 trophy:
   uid: learn.data-ai.build-ai-solutions-with-azure-ml-service.trophy

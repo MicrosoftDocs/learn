@@ -35,7 +35,7 @@ In this unit, you'll use Visual Studio Code to place the code in a local Git rep
 
 1. Select the **App Service Kudu build service** option and select **Continue** and then **Finish**.
 
-1. Select **Deployment Credentials** from the top menu area, and then **User Credentials** in the opened view.
+1. Select **FTP/Credentials** from the top menu area, and then **User Credentials** in the opened view.
 
 1. Enter a username and password (must be 10+ characters) and click **Save Credentials**. Take note of this username and password.
 

@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview.03-evolution
+title: The evolution of cloud computing
+metadata:
+  title: The evolution of cloud computing
+  description: Evolution of Cloud Computing
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/03-evolution.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "When did the general ideas about cloud computing and utility computing emerge?"
+    choices:
+    - content: "Between 1950 and 1966"
+      isCorrect: true
+      explanation: "Correct! The idea of utility computing emerged in the 1950s and 1960s when mainframes were prevalent and expensive, and computer engineers were figuring out ways to share a mainframe among multiple users (such as time sharing). The idea of utility computing is mainly attributed to Professor John McCarthy in the 1960s."
+    - content: "Between 1995 and 2000"
+      isCorrect: false
+      explanation: "That is not quite right. The ideas behind utility computing have been around since much earlier than that."
+    - content: "Between 2006 and the present"
+      isCorrect: false
+      explanation: "That is not quite right. The ideas behind utility computing have been around since much earlier than that."
+
+  - content: "Which of the following did NOT contribute significantly to the rise of cloud computing?"
+    choices:
+    - content: "Privacy regulations passed by governmental entities"
+      isCorrect: true
+      explanation: "Correct! The rise of cloud computing predates privacy regulations such as GDPR."
+    - content: "Emergence of high-speed and ubiquitous networking"
+      isCorrect: false
+      explanation: "Incorrect. High-speed networking allows data to move more quickly to and from the cloud and within the cloud."
+    - content: "Rapid growth of the World Wide Web"
+      isCorrect: false
+      explanation: "Incorrect. The explosive growth of the web fueled the need for super-scalable systems."
+    - content: "Virtualization"
+      isCorrect: false
+      explanation: "Incorrect. Virtual machines are the backbone of cloud computing and are only possible because of virtualization."
+  
+  - content: "Which technology enables multiple servers to be consolidated into one physical server?"
+    choices:
+    - content: "Distributed computing"
+      isCorrect: false
+      explanation: "Incorrect. Distributed computing allows processing tasks to be shared among several computers."
+    - content: "Parallel processing"
+      isCorrect: false
+      explanation: "Incorrect. The Internet does enable fast, efficient communication between connected devices, but parallel processing doesn't help consolidate multiple servers into one."
+    - content: "Virtualization"
+      isCorrect: true
+      explanation: "Correct! Virtualization is the primary enabler for server consolidation, enabling one physical machine to host several virtual machines."
+    - content: "Grid computing"
+      isCorrect: false
+      explanation: "Incorrect. Grid computing consolidates a large number of computers as a distributed system to allow the execution of large compute problems."

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.hub-and-spoke-network-architecture.2-implement-hub-spoke
+metadata:
+  title: Implement a hub-spoke network topology on Azure
+  description: Implement a hub-spoke network topology on Azure
+  ms.date: 10/21/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement a hub-spoke network topology on Azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-implement-hub-spoke.md)]

@@ -8,3 +8,4 @@ Visit the following links to learn more about some of the topics we explored in 
 - [Azure geographies](https://azure.microsoft.com/global-infrastructure/geographies/)
 - [Azure Service Level Agreements](https://azure.microsoft.com/support/legal/sla/summary/)
 - [Designing resilient applications for Azure](https://docs.microsoft.com/azure/architecture/resiliency/)
+- [Criteria for choosing an Azure compute service](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-comparison#availability)

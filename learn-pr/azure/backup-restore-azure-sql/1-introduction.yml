@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.backup-restore-azure-sql.1-introduction
+metadata:
+  title: Introduction
+  description: In this unit, you'll learn about a business scenario in which it's critical to protect against data loss.
+  ms.date: 09/25/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

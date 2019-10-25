@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>NA/expose-multiple-function-apps-as-a-consistent-api-by-using-azure-api-management</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <path d="M45.362563,41.9560547 C32.06062,41.9560547 22.4029818,41.9560547 16.3896484,41.9560547 C7.36964844,41.9560547 0,37.4570312 0,28.7119141 C0,19.9667969 6.55859375,13.9710547 14.299,13.9710547 C14.299,13.9710547 18.0260553,7.93739635 22.1969275,4.65039063 C28.1969275,-0.078125 33.0180594,-0.000239089605 37.0957031,-0.000239089605 C42.7866141,-0.000239089605 48.7787472,2.26926805 52,4.65039063 C55.4785156,7.22167969 61,13.6605684 61,22.0100098 C61,26.477946 60.6666667,29.1608073 60,30.0585938 C63.9328262,29.8332411 66.5099746,29.9322377 67.7314453,30.3555837 C70.6773888,31.3766098 72.6787109,33.0585937 72.6787109,36.5585938 C72.6787109,40.490819 68.7350636,42.0096625 65.7314453,41.9560547 C49.5849609,41.6678764 52.0533156,41.6678764 52.0533156,42.0585938" id="path-3"></path>
+        <filter x="-4.1%" y="-7.1%" width="108.3%" height="119.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="2" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="N/A-56" transform="translate(-50.000000, -260.000000)">
+            <g id="NA/expose-multiple-function-apps-as-a-consistent-api-by-using-azure-api-management" transform="translate(50.000000, 260.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(12.000000, 19.000000)">
+                            <rect id="Rectangle" fill="#55A2FF" fill-rule="evenodd" x="11" y="37.5585938" width="34" height="9"></rect>
+                            <circle id="Oval" fill="#55A2FF" fill-rule="evenodd" cx="40" cy="42.0585938" r="10"></circle>
+                            <g id="Path-135" fill="none">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                                <use stroke="#E6E6E6" stroke-width="4" xlink:href="#path-3"></use>
+                            </g>
+                            <circle id="Oval" fill="#E6E6E6" fill-rule="evenodd" cx="40" cy="42.0585938" r="7"></circle>
+                            <path d="M40,27.0585938 C48.2842712,27.0585938 55,33.7743225 55,42.0585938 C55,50.342865 48.2842712,57.0585938 40,57.0585938 C36.8610074,57.0585938 33.9472147,56.0943982 31.5386347,54.4460199 L34.2518309,50.242442 C35.8779707,51.3867145 37.8605225,52.0585938 40,52.0585938 C45.5228475,52.0585938 50,47.5814412 50,42.0585938 C50,36.5357463 45.5228475,32.0585938 40,32.0585938 C38.3874693,32.0585938 36.8640833,32.440267 35.5152527,33.1182026 L33.462792,28.554235 C35.4386767,27.5959769 37.6565821,27.0585938 40,27.0585938 Z" id="Combined-Shape" fill="#E6E6E6" fill-rule="evenodd"></path>
+                        </g>
+                    </g>
+                    <path d="M40.1969275,88.2071624 C40.1969275,82.483078 35.584711,77.8708615 29.8606265,77.8708615 C35.584711,77.8708615 40.1969275,73.258645 40.1969275,67.5345605 C40.1969275,73.258645 44.809144,77.8708615 50.5332284,77.8708615 C44.809144,77.8708615 40.1969275,82.483078 40.1969275,88.2071624 Z M34.1969275,25.0984637 C28.050769,25.0984637 23.0984637,20.1461585 23.0984637,14 C23.0984637,20.1461585 18.1461585,25.0984637 12,25.0984637 C18.1461585,25.0984637 23.0984637,30.050769 23.0984637,36.1969275 C23.0984637,30.050769 28.050769,25.0984637 34.1969275,25.0984637 Z M90.29699,39.648495 C85.5075865,39.648495 81.648495,35.7894035 81.648495,31 C81.648495,35.7894035 77.7894035,39.648495 73,39.648495 C77.7894035,39.648495 81.648495,43.5075865 81.648495,48.29699 C81.7160597,43.5075865 85.5751113,39.648495 90.29699,39.648495 Z" id="Sparkle" fill="#FFFFFF" opacity="0.949999988" mask="url(#mask-2)"></path>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

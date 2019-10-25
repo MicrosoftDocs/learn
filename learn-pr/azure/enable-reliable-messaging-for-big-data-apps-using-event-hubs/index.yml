@@ -3,12 +3,11 @@ uid: learn.enable-reliable-messaging-for-big-data-applications-using-azure-event
 metadata:
   title: Enable reliable messaging for Big Data applications using Azure Event Hubs
   description: The insights gained from big data processing can be invaluable. You can detect fraudulent financial transactions, get real-time alerting from device telemetry, and so on. However, without a reliable means to process potentially millions of data messages per second, the value of such applications may be severely compromised. This module shows you how use Azure Event Hubs to reliably process high-volume data streams. You'll create and configure a new hub and then code applications to send/receive messages through the hub.
-  ms.date: 09/24/2018
-  author: kphillpotts
-  ms.author: kyphi
+  ms.date: 08/26/2019
+  author: cryophobia
+  ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: kyphi
 title: Enable reliable messaging for Big Data applications using Azure Event Hubs
 summary: Connect sending and receiving applications with Event Hubs so you can handle extremely high loads without losing data.
 abstract:  | 
@@ -30,7 +29,6 @@ products:
 - azure
 - azure-event-hubs
 units:
-#TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
 - learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.1-introduction
 - learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.2-create-an-event-hub-using-azure-cli
 - learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.3-exercise-create-an-event-hub-using-azure-cli
