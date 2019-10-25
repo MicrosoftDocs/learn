@@ -39,18 +39,11 @@ You can create web pages by formulating more complex HTML than "Hello World!" in
 
 When you want to create a skeleton webapp in Express.js, as a starting point for a customized site, you can use the Express Generator tool. With this command, you specify a templating engine and whether to support `git` and stylesheets. It creates a default set of views, routes, styles, and other infrastructure.
 
-## Installing Node.js for development or hosting
+## What is Visual Studio Code?
 
-If you're building a Node.js application, you'll need to install it on your development machine and servers that will host the application for testing, staging, and production. The method of installation depends on the platform you use. For Windows computers, you can download and run a .msi file. In Linux, you can use your prefer package manager tool, such as `apt` in Ubuntu or `yum` in Red Hat:
+Visual Studio Code is a free Integrated Development Environment (IDE) for Windows, macOS, and Linux. It has support for JavaScript, TypeScript, and Node.js out-of-the-box, and you can install many extensions for other languages and runtimes. 
 
-```bash
-sudo apt-get update
-sudo apt-get install nodejs
-```
-
-In Azure, you can use a virtual machine to host a Node.js application. Choose an image from the gallery that includes Node.js, or install it in the same way that you did on your development machine.
-
-Alternatively, consider hosting the webapp in Azure App Service, which is a Platform-as-a-Service (PaaS) web host that you can use to service websites and web APIs. An instance of Azure App Service includes Node.js by default and you don't have to perform any installation on it. You'll use the App Service later in this module.
+You can use VS Code as your preferred IDE regardless of the languages, frameworks, operating systems, and deployment mechanisms you use. There is also an extension for Azure App Service, which you will use later in this module to create webapps and deploy code.
 
 ## Installing Express.js
 

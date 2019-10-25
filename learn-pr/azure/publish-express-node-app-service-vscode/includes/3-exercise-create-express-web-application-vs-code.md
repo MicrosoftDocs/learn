@@ -2,28 +2,16 @@ With Node.js and Express.js, you can create a webapp very quickly.
 
 Suppose you've been asked to start building the website to promote the new video game launch. You've decided to use Node.js to run server-side code and, to make the development as quick as possible, you're going to use the Express.js framework for webapps. You want to create a quick, proof-of-concept webapp that displays a countdown to the launch date.
 
-Here, you'll install the necessary software and then use Visual Studio Code to create and test a website.
+Here, you'll install the necessary software and then use VS Code to create and test a website.
 
 > [!NOTE]
-> You must have Visual Studio Code installed on your Windows computer before you begin this exercise.
-
-## Install Node.js
-
-Express.js is a webapp framework that extends the Node.js server-side JavaScript runtime. Let's start by installing Node.js:
-
-1. Open a browser and go to the [Node.js download page](https://nodejs.org/en/download/). Download the right .msi installer for your operating system.
-1. When the .msi file has downloaded, double-click on it to start the installation wizard, and then select **Next**.
-1. Accept the license agreement and then select **Next**.
-1. Accept the default installation location and then select **Next**.
-1. Accept the default installation options, select **Next**, and then select **Install**.
-1. If the **User Account Control** dialog appears, select **Yes**.
-1. When the installation is complete, select **Finish**.
+> You must have VS Code and Node.js installed on your Windows computer before you begin this exercise.
 
 ## Create an app folder
 
-You can use Visual Studio Code to run all the commands and edit all the code for your webapp. Here, you'll use its integrated terminal to set up a folder with Express.js installed:
+You can use VS Code to run all the commands and edit all the code for your webapp. Here, you'll use its integrated terminal to set up a folder with Express.js installed:
 
-1. Start Visual Studio Code. 
+1. Start VS Code. 
 1. On the **View** menu, click **Terminal**.
 1. To create a new folder, type the following commands:
 
@@ -39,7 +27,7 @@ You can use Visual Studio Code to run all the commands and edit all the code for
 
 You can use the Express Generator tool to create all the components of an Express.js boiler-plate webapp:
 
-1. In the Visual Studio Code Explorer window, notice that the **countdownExpressApp** folder is empty.
+1. In the VS Code Explorer window, notice that the **countdownExpressApp** folder is empty.
 1. If the integrated terminal is not visiblae, on the **View** menu, click **Terminal**.
 1. To run the Express Generator, use this command:
 
@@ -55,7 +43,7 @@ You can use the Express Generator tool to create all the components of an Expres
 
 You now have a functional webapp that Node.js can run. Let's modify its code to calculate the amount of time to display:
 
-1. In the Visual Studio Code Explorer window, expand **routes**, and then select **index.js**. This JavaScript file defines routes for the app's homepage. We can add our code to calculate the countdown here.
+1. In the VS Code Explorer window, expand **routes**, and then select **index.js**. This JavaScript file defines routes for the app's homepage. We can add our code to calculate the countdown here.
 1. Add the following code, immediately after the `var router = express.Router();` line. In the first line of the inserted code, replace the `<Future Date>` placeholder with a date around a month in the future:
 
     ```JavaScript
@@ -85,7 +73,7 @@ You now have a functional webapp that Node.js can run. Let's modify its code to 
 
 Now, modify the default homepage for the webapp to display the countdown:
 
-1. In the Visual Studio Code Explorer window, expand **views**, and then select **index.jade**. This file defines a view for the app's homepage. We can add code to display the countdown here.
+1. In the VS Code Explorer window, expand **views**, and then select **index.jade**. This file defines a view for the app's homepage. We can add code to display the countdown here.
 1. Locate the following line of code:
 
     ```jade

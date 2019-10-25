@@ -1,4 +1,4 @@
-When you have changes to deploy to the webapp, you can use the same tools in Visual Studio Code.
+When you have changes to deploy to the webapp, you can use the same tools in VS Code.
 
 Suppose you want to make an improvement to the proof-of-concept website: Instead of displaying the count down in milliseconds, you want to display it in days. You want to make this change and deploy it to Azure before you display the page to stakeholders.
 
@@ -8,9 +8,9 @@ In this unit, you'll modify the code and redeploy the website.
 
 Let's start by modifying the code, so that it calculates a whole number of days:
 
-1. Start Visual Studio Code if it is not already running. 
+1. Start VS Code if it is not already running. 
 1. If the **countdownExpressApp** folder is not already open, then on the **File** menu, select **Open Folder...** and then browse to the folder. 
-1. In the Visual Studio Code Explorer window, expand **routes**, and then select **index.js**. 
+1. In the VS Code Explorer window, expand **routes**, and then select **index.js**. 
 1. Locate this line of code:
 
     ```JavaScript
@@ -41,7 +41,7 @@ Let's start by modifying the code, so that it calculates a whole number of days:
 
 You must also alter the view slightly:
 
-1. In Visual Studio Code, in the integrated terminal, type this command:
+1. In VS Code, in the integrated terminal, type this command:
 
     ```console
     code ~/countdownExpressApp/views/index.jade
@@ -65,7 +65,7 @@ You must also alter the view slightly:
 
 Your changes are complete. Let's deploy the finished website to Azure:
 
-1. In Visual Studio Code, in the **Azure** Explorer, right-click the webapp you created, and then select **Deploy to Web App**.
+1. In VS Code, in the **Azure** Explorer, right-click the webapp you created, and then select **Deploy to Web App**.
 1. Select the **countdownExpressApp** folder, and then select **Deploy**.
 1. When the deployment is complete, select **Browse Website**, and then select **Open Link**. Then Azure website is displayed in your browser. Notice that the countdown is now displayed in days.
 
