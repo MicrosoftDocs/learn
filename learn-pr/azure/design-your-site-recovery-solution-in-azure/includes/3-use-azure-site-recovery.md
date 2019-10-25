@@ -36,9 +36,9 @@ In this scenario, Azure Backup periodically backs up the files and folders on th
 
 To configure the backup portion of your solution in this scenario, and to protect files and folders, you download and install the Microsoft Azure Recovery Services agent. You can then create backup policies and automatically back up your data on a scheduled basis. The Microsoft Azure Recovery Services agent also lets you restore all your data to either the same source machine, or to an entirely different machine. With Azure Backup, your data is also encrypted before it's backed up.
 
-To set up Azure Site Recovery, you install an Azure Site Recovery Services agent and a Site Recovery Provider on the Hyper-V server. These tools are used for replication and orchestration of failover to Azure. Your data is encrypted when it's in transit. Data also remains encrypted when it's at rest and stored in Azure. When a failover is triggered, new virtual machines can be created for you based on the machines that have been protected by Azure Site Recovery.
+To set up Azure Site Recovery, you install an Azure Site Recovery Services agent and a Site Recovery Provider on the Hyper-V server. These tools are used for replication and orchestration of failover to Azure. When a failover is triggered, new virtual machines can be created for you based on the machines that have been protected by Azure Site Recovery.
 
-## Protect different scenarios with Site Recovery
+<!-- ## Protect different scenarios with Site Recovery
 
 Azure Site Recovery allows replication of different types of machines in different scenarios.
 
@@ -48,19 +48,19 @@ You can protect Azure virtual machines and replicate them from a source region t
 - Physical servers – both can be Linux and Windows based.
 - Machines hosted on other cloud providers such as Amazon Web Services.
 
-You can also replicate both Hyper-V and VMware-based machines (managed by System Center), and your physical servers to your own secondary site. Azure Site Recovery replicates any of your workloads that are running on the machines that are supported.
+You can also replicate both Hyper-V and VMware-based machines (managed by System Center), and your physical servers to your own secondary site. Azure Site Recovery replicates any of your workloads that are running on the machines that are supported. -->
 
 ## Integrate your network with Azure Site Recovery
 
-You might have a multi-tier application, made up of a web tier and an app tier, consisting of two machines each. You can use Azure Site Recovery to protect the whole structure and replicate it to Azure.
+<!-- You might have a multi-tier application, made up of a web tier and an app tier, consisting of two machines each. You can use Azure Site Recovery to protect the whole structure and replicate it to Azure.
 
 Your web tier and application tier will likely also have an internal load balancer and external load balancer attached to them. Azure Site Recovery can protect these load balancers too. To achieve this outcome, you first protect your virtual machines using the Recovery Services vault. Once protection is in place, you create an availability set for your protected application tier machines, and an availability set for the protected web tier machines. When you then create a recovery plan in the Recovery Services vault, you'll need to add the machines in two separate groups.
 
-Groups help you separate virtual machines, and dictate the actions that should take place for each group. With the help of Azure Automation, Azure Site Recovery can use your scripts to attach the appropriate load balancers to the virtual network interfaces of your virtual machines during a failover.
+Groups help you separate virtual machines, and dictate the actions that should take place for each group. With the help of Azure Automation, Azure Site Recovery can use your scripts to attach the appropriate load balancers to the virtual network interfaces of your virtual machines during a failover. -->
 
-You can keep your IP addresses from on-premises machines and use them for target Azure machines. You create a virtual network in Azure where your virtual machines will be provisioned when failover is triggered. This network acts as an extension of your on-premises network. You'll need to at least establish a VPN-based site-to-site connection between your virtual and on-premises networks.
+You can keep your private IP addresses from on-premises machines and use them for target Azure machines. You create a virtual network in Azure where your virtual machines will be provisioned when failover is triggered. This network acts as an extension of your on-premises network. As part of your failover you'll need establish or configure a site-to-site VPN connection or leverage ExpressRoute for connectivity between Azure and on-premises networks.
 
-Your workloads will now fail over smoothly. Before the failover is triggered, you also need to assign the same IP addresses you have on-premises for each machine in its properties in Azure Site Recovery. When failover is complete, Azure Site Recovery creates virtual machines with the same IP addresses.
+<!-- Your workloads will now fail over smoothly. Before the failover is triggered, you also need to assign the same IP addresses you have on-premises for each machine in its properties in Azure Site Recovery. When failover is complete, Azure Site Recovery creates virtual machines with the same IP addresses. -->
 
 <!-- ## Integrate Azure Site Recovery with Azure Traffic Manager
 
