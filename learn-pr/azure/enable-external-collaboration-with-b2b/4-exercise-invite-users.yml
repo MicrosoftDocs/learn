@@ -11,7 +11,6 @@ metadata:
   ROBOTS: NOINDEX
 title: Exercise - Invite guest users with Azure AD B2B through the Azure portal
 durationInMinutes: 15
-interactive: bash
-azureSandbox: false
+azureSandbox: true
 content: |
   [!include[](includes/4-exercise-invite-users.md)]
