@@ -24,14 +24,6 @@ The RTO and RPO for your application can be influenced by contractual or regulat
 
 While you may have control over downtime and recovery for applications you manage, this may not be the case for platform-as-a-service (PaaS) services. Any PaaS services you use may have their own availability guarantees and recovery plans that you need to consider in your BCDR plan.
 
-For example, SQL Database has the following considerations:
-
-- Turn on SQL Database Auditing. You can use auditing to monitor for suspicious activity or human error.
-- Create a readable secondary in a different region through Active Geo-Replication.
-- Shard your databases. Use sharding when you want to spread large numbers of similar data across separate databases.
-- Perform a geo-restore so you can recover from outage and restore your database to another region.
-- Point-in-time restore will help you recover from human mistakes. Only Standard and Premium tier give you longer point-in-time restores of up to 35 days. Basic tier gives you only seven days.
-
 Identify and inventory the services you depend on, so you can incorporate their recovery capabilities into your BCDR plan. It's important to understand the relevant requirements, so you know how they affect the BCDR process.
 
 ## Plan disaster recovery and data backup
@@ -42,7 +34,7 @@ Disaster recovery refers to a process that helps you restore your applications t
 
 To devise a successful disaster recovery process, you first need to evaluate what kind of business impact any potential failures will have. Consider automating the recovery process as much as possible. Inevitably, some parts of your disaster recovery process will involve human input, so you need to fully document the process. You need to also regularly simulate disasters, so your recovery process remains effective.
 
-Azure Site Recovery has plans that help automate your disaster recovery by allowing you to define how machines are failed over – and the order in which they're restarted after being successfully failed over. In this way, Azure Site Recovery helps to automate tasks and further reduce your recovery time objective. You also use Azure Site Recovery to periodically test failovers and the overall effectiveness of the recovery process.
+Azure Site Recovery has plans that help automate your disaster recovery by allowing you to define how machines are failed over, and the order in which they're restarted after being successfully failed over. In this way, Azure Site Recovery helps to automate tasks and further reduce your recovery time objective. You also use Azure Site Recovery to periodically test failovers and the overall effectiveness of the recovery process.
 
 ### Data backups
 
@@ -52,7 +44,7 @@ Use Azure Backup to back up your on-premises data and machines to the cloud or k
 
 Additionally, you could replicate data to a secondary region that's miles away from the original data with geo-redundant storage (GRS) for Azure Backup. You can also achieve application-consistent backups so you don't need to add manual fixes to restore successfully. You might have up to 9,999 backup copies for each of your instances (machines or workloads) on Azure. If your backup frequency is daily with a 24-hour recovery point, you could have recovery points that span a 27-year period before you hit the limit of recovery points you use for restoration.
 
-## Use Azure native features
+## Azure resilience features
 
 Azure comes with features designed from the ground up to help you achieve your objectives for business continuity and disaster recovery. Take a look at some of these features:
 
@@ -62,7 +54,7 @@ Most Azure regions are paired with a different region in the same part of the wo
 
 ### Availability sets
 
-Consider creating availability sets. Availability sets will  allow you to isolate virtual machines when you provision them in Azure. When you place virtual machines in availability sets, you're ensuring that they're running on separate servers, using multiple different network switches, and racks, among other things. Regardless of whether a software problem causes a failure, or a hardware failure occurs, availability sets can ensure you have another set of virtual machines running. Physical hardware in an availability set is spread across multiple update and fault domains. A single update domain consists of virtual machines – and the hardware they run on – that can be updated and restarted simultaneously. A fault domain refers to a set of virtual machines that use the same networking, power sources, and storage.
+Consider creating availability sets. Availability sets will  allow you to isolate virtual machines when you provision them in Azure. When you place virtual machines in availability sets, you're ensuring that they're running on separate servers, using multiple different network switches, and racks, among other things. Regardless of whether a software problem causes a failure, or a hardware failure occurs, availability sets can ensure you have another set of virtual machines running. Physical hardware in an availability set is spread across multiple update and fault domains. A single update domain consists of virtual machines, and the hardware they run on, that can be updated and restarted simultaneously. A fault domain refers to a set of virtual machines that use the same networking, power sources, and storage.
 
 ![Availability Set](../media/2-availability-sets.png)
 
