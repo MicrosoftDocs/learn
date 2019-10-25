@@ -36,6 +36,8 @@ Identify and inventory the services you depend on, so you can incorporate their 
 
 Azure Site Recovery is a service that provides BCDR features for your applications in Azure, on-premises, and in other cloud providers. Azure Site Recovery has plans that help automate your disaster recovery by allowing you to define how machines are failed over, and the order in which they're restarted after being successfully failed over. In this way, Azure Site Recovery helps to automate tasks and further reduce your recovery time objective. You also use Azure Site Recovery to periodically test failovers and the overall effectiveness of the recovery process.
 
+![An illustration showing the role of Azure site recovery in replicating the workloads on three virtual machines located in the East US to West US.](../media/2-asr.png)
+
 ## Data backups
 
 Backups protect applications from accidental deletion or corruption of data. Backups play an important role in any BCDR plan. Your recovery point objective depends on how often and how regularly you run backup processes. For example, if you have a backup process configured to execute every two hours, and you experience a disaster five minutes before the next backup, you'll lose 1 hour and 55 minutes of data. Having more frequent backups means you achieve a reduced RPO. In your overall plan, you must include a detailed backup process.
