@@ -10,15 +10,15 @@ A business requirement for the web API is to provide limited order information t
 * Each line item on the order should display the product name and the quantity.
 * The client needs to retrieve individual orders by unique ID.
 
-Your team decides to implement these requirements in the *ContosoPets.DataAccess* project.
+Your team decides to implement these requirements in the *:::no-loc text="ContosoPets.DataAccess":::* project.
 
-1. In the *Services/OrderService.cs* file of the *ContosoPets.DataAccess* project, replace the comment `// Add the ContosoPets.Domain.Models using statement` with the following code. Save your changes.
+1. In the *:::no-loc text="Services/OrderService.cs":::* file of the *:::no-loc text="ContosoPets.DataAccess":::* project, replace the comment `// Add the ContosoPets.Domain.Models using statement` with the following code. Save your changes.
 
     ```csharp
     using ContosoPets.Domain.Models;
     ```
 
-1. In the same *OrderService.cs* file, replace the comment `// Add the constructor code` with the following code. Save your changes.
+1. In the same *:::no-loc text="OrderService.cs":::* file, replace the comment `// Add the constructor code` with the following code. Save your changes.
 
     ```csharp
     private readonly ContosoPetsContext _context;
@@ -253,4 +253,4 @@ Your team decides to implement these requirements in the *ContosoPets.DataAccess
     * If the order is found, the parent record in the `Orders` table and all children in `ProductOrders` are deleted from the database. A value of `true` is returned.
     * If order isn't found, `false` is returned.
 
-1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]

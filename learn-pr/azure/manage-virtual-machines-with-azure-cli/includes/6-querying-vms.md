@@ -112,22 +112,31 @@ JMESQuery has several other interesting query features. When you have time, chec
 
 ## Filtering our Azure CLI queries
 
-With a basic understanding of JMES queries, we can add filers to the data being returned by queries like the `vm show` command. For example, we can retrieve the admin user name:
+With a basic understanding of JMES queries, we can add filters to the data being returned by queries like the `vm show` command. For example, we can retrieve the admin user name:
 
 ```azurecli
-az vm show --resource-group <rgn>[sandbox resource group name]</rgn> --name SampleVM --query "osProfile.adminUsername"
+az vm show \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name SampleVM \
+    --query "osProfile.adminUsername"
 ```
 
 We can get the size assigned to our VM:
 
 ```azurecli
-az vm show --resource-group <rgn>[sandbox resource group name]</rgn> --name SampleVM --query hardwareProfile.vmSize
+az vm show \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name SampleVM \
+    --query hardwareProfile.vmSize
 ```
 
 Or to retrieve all the IDs for your network interfaces, you can use the query:
 
 ```azurecli
-az vm show --resource-group <rgn>[sandbox resource group name]</rgn> --name SampleVM --query "networkProfile.networkInterfaces[].id"
+az vm show \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name SampleVM \
+    --query "networkProfile.networkInterfaces[].id"
 ```
 
 This query technique will work with any Azure CLI command and can be used to pull specific bits of data out on the command line. It is useful for scripting as well - for example, you can pull a value out of your Azure account and store it in an environment or script variable. If you decide to use it this way, a useful flag to add is the `--output tsv` parameter (which can be shortened to `-o tsv`). This will return the results in tab-separated values that only include the actual data values with tab separators.
@@ -135,7 +144,10 @@ This query technique will work with any Azure CLI command and can be used to pul
 As an example,
 
 ```azurecli
-az vm show --resource-group <rgn>[sandbox resource group name]</rgn> --name SampleVM --query "networkProfile.networkInterfaces[].id" -o tsv
+az vm show \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name SampleVM \
+    --query "networkProfile.networkInterfaces[].id" -o tsv
 ```
 
 returns the text: `/subscriptions/20f4b944-fc7a-4d38-b02c-900c8223c3a0/resourceGroups/2568d0d0-efe3-4d04-a08f-df7f009f822a/providers/Microsoft.Network/networkInterfaces/SampleVMVMNic`

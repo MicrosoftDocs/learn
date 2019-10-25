@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn-sqlserver.run-sql-server-2017-linux-containers.7-exercise-use-docker-compose-deploy-multiple-containers
+title: Exercise - Use Docker Compose to deploy multiple containers
+metadata:
+  title: Exercise - Use Docker Compose to deploy multiple containers
+  description: In this unit, you will script Docker Compose to deplot a web server and a database server as containers.
+  ms.date: 06/11/2019
+  author: alistairmatthews
+  ms.author: v-alism
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+## TODO: Insert the correct Lab ID here when we have it.
+labId: 51799
+content: |
+  [!include[](includes/7-exercise-use-docker-compose-deploy-multiple-containers.md)]

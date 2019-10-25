@@ -5,9 +5,8 @@ metadata:
   title: Automate secure VM deployments by adding encryption to Azure Resource Manager templates
   description: Automate secure VM deployments by adding encryption to Azure Resource Manager templates
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

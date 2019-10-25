@@ -47,7 +47,7 @@ The exercises in this section have you use Data Explorer in Azure Cosmos DB. You
 
 1. Expand the **mslearn** database. You see the three collections that you created in the setup unit: **Small**, **Orders**, and **HotPartition**.
 
-1. Expand the **Orders** collection and select **Documents**. You see the first 100 documents.
+1. Expand the **Orders** collection and select **Items**. You see the first 100 documents.
 
 1. Select the first document to see the JSON data for an order. It includes the following information:
 

@@ -6,13 +6,28 @@ Azure SQL Database has built-in features that can help you track what's happenin
 
 By enabling auditing, operations that occur on the database are stored for later inspection or to have automated tools analyze them. Auditing is also used for compliance management or understanding how your database is used. Auditing is also required if you wish to use Azure threat detection on your Azure SQL database.
 
+You can use SQL database auditing to:
+
+- Retain an audit trail of selected events. You can define categories of database actions to be audited.
+- Report on database activity. You can use pre-configured reports and a dashboard to get started quickly with activity and event reporting.
+- Analyze reports. You can find suspicious events, unusual activity, and trends.
+
 Audit logs are written to Append Blobs in an Azure Blob storage account that you designate. Audit policies can be applied at the server-level or database-level. Once enabled, you can use the Azure portal to view the logs, or send them to Log Analytics or Event Hub for further processing and analysis.
+
+## Auditing in practice
+
+As a best practice, avoid enabling both server blob auditing and database blob auditing together, unless:
+
+- You want to use a different storage account or retention period for a specific database.
+- You want to audit event types or categories for a specific database that differs from the rest of the databases on the server. For example, you might have table inserts that need to be audited but only for a specific database.
+
+Otherwise, it's recommended you enable only server-level blob auditing and leave the database-level auditing disabled for all databases.
 
 Let's look at the steps you take to set up auditing on your system.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. In the search bar at the top of the portal, search for **server<12345>**, then select the server in the portal.
+1. In the search bar at the top of the portal, search for **serverNNNN** (replacing `NNNN` with the number from your server name), then select the server in the portal.
 
 1. In the left menu, in the **Security** section, select the **Auditing** option.
 
@@ -20,7 +35,7 @@ Let's look at the steps you take to set up auditing on your system.
 
 1. Once the ON button is selected, select the **Storage** checkbox, then click **Storage details** to define the storage account.
 
-1. In the **Storage settings** dialog, you can select an existing storage account or create a new storage account to store your audits. The storage account must be configured to use the same region as your server. In this case, we'll define a new storage account. Click **Storage account**, which will then open up the **Create storage account** dialog. Name the storage account `server<12345>auditing` replacing the `<12345>` with the number from your logical server name. Leave the rest of the options at their defaults and select **OK**. Back in the **Storage settings** dialog, leave the defaults and click **OK**.
+1. In the **Storage settings** dialog, you can select an existing storage account or create a new storage account to store your audits. The storage account must be configured to use the same region as your server. In this case, we'll define a new storage account. Click **Storage account**, which will then open up the **Create storage account** dialog. Name the storage account `serverNNNNauditing`, replacing the `NNNN` with the number from your logical server name. Leave the rest of the options at their defaults and select **OK**. Back in the **Storage settings** dialog, leave the defaults and click **OK**.
 
 1. Click the **Save** button in the toolbar to save your changes and enable auditing on your database server.
 
@@ -29,7 +44,7 @@ Now let's generate some audit records and take a look at what you can expect.
 1. Let's log back in to the database as the _ApplicationUser_ user.
 
     ```bash
-    sqlcmd -S tcp:server<12345>.database.windows.net,1433 -d marketplaceDb -U 'ApplicationUser' -P '<password>' -N -l 30
+    sqlcmd -S tcp:serverNNNN.database.windows.net,1433 -d marketplaceDb -U 'ApplicationUser' -P '[password]' -N -l 30
     ```
 
 1. Run the following query.
@@ -53,50 +68,40 @@ These actions configure the audits at the database server level and will apply t
 
 Let's take a look at another feature that leverages these logs to increase the security of your database.
 
-## Advanced Threat Protection for Azure SQL Database
+## Advanced Data Security for Azure SQL Database
 
-The Advanced Threat Protection system analyzes audit logs to look for potential problems and threats against your database. It includes functionality for discovering and classifying sensitive data, surfacing and mitigating potential database vulnerabilities, and detecting anomalous activities that could indicate a threat to your database. It provides a single go-to location for enabling and managing these capabilities. With one click, you can enable ATP on your entire database server, applying to all databases on the server.
+Advanced Data Security (ADS) provides a set of advanced SQL security capabilities, including data discovery & classification, vulnerability assessment, and Advanced Threat Protection.
+
+- **Data discovery & classification** (currently in preview) provides capabilities built into Azure SQL Database for discovering, classifying, labeling & protecting the sensitive data in your databases. It can be used to provide visibility into your database classification state, and to track the access to sensitive data within the database and beyond its borders.
+- **Vulnerability assessment** is an easy to configure service that can discover, track, and help you remediate potential database vulnerabilities. It provides visibility into your security state, and includes actionable steps to resolve security issues, and enhance your database fortifications.
+- **Advanced Threat Protection** detects anomalous activities indicating unusual and potentially harmful attempts to access or exploit your database. It continuously monitors your database for suspicious activities, and provides immediate security alerts on potential vulnerabilities, SQL injection attacks, and anomalous database access patterns. Advanced Threat Protection alerts provide details of the suspicious activity and recommend action on how to investigate and mitigate the threat.
 
 ### Setup and configuration
 
-Let's enable Advanced Threat Protection on our database. Advanced Threat Protection is a server-level setting, so we'll start there.
+Let's enable Advanced Data Security on our database. Advanced Data Security is a server-level setting, so we'll start there.
 
-1. Back in the portal, navigate to your SQL server. In the search bar at the top of the portal, search for **server<12345>**, then select the server.
+1. Back in the portal, navigate to your SQL server. In the search bar at the top of the portal, search for **serverNNNN**, then select the server.
 
-1. In the left menu, in the **Security** section, select the **Advanced Threat Protection** option.
+1. In the left menu, in the **Security** section, select the **Advanced Data Security** option.
 
-1. Click the **ON** button to enable Advanced Threat Protection.
+1. Click the **ON** button to enable Advanced Data Security.
 
-1. You can optionally define where notification emails will be delivered as a list of semicolon separated email addresses. **Email service and co-administrators** are enabled by default to send the threats to the service administrators.
+1. In the **Vulnerability Assessment Settings** box, will see a default storage account that will be used to store the results of scans.
 
-1. You can optionally specify a storage account for historical logging of suspicious queries that have been alerted on. It is not a requirement for enabling Advanced Threat Protection, but can be useful for historical tracking. Click **Storage details** to open up the **Storage settings** dialog.
+1. You can also turn on **periodic recurring scans** to configure Vulnerability Assessment to run automatic scans once per week. A scan result summary is sent to the email address(es) you provide. In this case, we'll leave this **OFF**. Go ahead and click **Save** at the top to save your settings and enable Vulnerability Assessment.
 
-1. In the **Choose storage account** dialog, select the **server<12345>auditing** storage account you created in the previous section. Leave the other settings at the default and click **OK**.
+1. You can optionally define where notification emails will be delivered for both the vulnerability assessment and Advanced Threat Protection as a list of semicolon separated email addresses. **Also send email notification to admins and subscription owners** is enabled by default to send the threats to the service administrators.
 
-1. Finally, select **Threat Detection types** to take a quick look at those. The preferred option is All, which is the default setting.
+1. Select **Advanced Threat Protection Types** to take a quick look at those. The preferred option is All, which is the default setting.
 
     **All** represents the following values:
     - SQL injection reports where SQL injections attacks have occurred;
     - SQL injection vulnerability reports where the possibility of a SQL injection is likely; and
     - Anomalous client login looks at logins that are irregular and could be cause for concern, such as a potential attacker gaining access.
 
-1. Click the **Save** button to apply the changes and enable Advanced Threat Protection on your server.
+1. Click the **Save** button to apply the changes and enable Advanced Data Security on your server.
 
-There is one database-level setting that we'll want to enable as well, and that's the Vulnerability Assessment.
-
-1. Navigate to your *marketplace* database. In the search bar at the top of the portal, search for **marketplace**, then select the database in the portal.
-
-1. In the left menu, in the **Security** section, select the **Advanced Threat Protection** option.
-
-1. In the **Vulnerability Assessment** box, you should see a message that says "Click to configure a storage account for storing scan results". You'll need to do this to enable this feature, so go ahead and click to configure.
-
-1. In the **Choose storage account** dialog, select the **server<12345>auditing** storage account you created in the previous section.
-
-1. You can also turn on **periodic recurring scans** to configure Vulnerability Assessment to run automatic scans once per week. A scan result summary is sent to the email address(es) you provide. In this case, we'll leave this **OFF**. Go ahead and click **Save** at the top to save your settings and enable Vulnerability Assessment.
-
-1. Back in the main Vulnerability Assessment panel, go ahead and click **Scan** to initiate a scan of your database. When it's complete, you'll see recommendations to enhance the security of your database.
-
-Once Advanced Threat Protection is enabled, you'll view details and results at a database level.
+Once Advanced Data Security is enabled, you'll initiate vulnerability scans and view details and results at a database level.
 
 You'll receive email notifications as vulnerabilities are detected. The email will outline what occurred and the actions to take.
 
@@ -104,7 +109,11 @@ You'll receive email notifications as vulnerabilities are detected. The email wi
 
 ### Data Discovery & Classification
 
-Click on the **Data Discovery & Classification** panel.
+1. Navigate to your marketplace database. In the search bar at the top of the portal, search for marketplace, then select the database in the portal.
+
+1. In the **Security** section, select **Advanced Data Security**.
+
+1. Click on the **Data Discovery & Classification** panel.
 
 The Data Discovery & Classification panel shows columns within your tables that need to be protected. Some of the columns may have sensitive information or may be considered classified in different countries or regions.
 

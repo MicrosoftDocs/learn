@@ -18,10 +18,11 @@ In Azure, VHDs are stored in an Azure storage account as **page blobs**.
 
 This table shows the various kinds of storage accounts and which objects can be used with each.
 
-|**Type of storage account**|**General-purpose standard**|**General-purpose premium**|**Blob storage, hot and cool access tiers**|
+|Storage account type|Services supported|Types of blobs supported|
 |-----|-----|-----|-----|
-|**Services supported**| Azure Blob storage, Azure Files, Azure Queue storage | Blob storage | Blob storage|
-|**Types of blobs supported**|Block blobs, page blobs, and append blobs | Page blobs | Block blobs and append blobs|
+|General-purpose standard| Azure Blob storage, Azure Files, Azure Queue storage | Block blobs, page blobs, and append blobs|
+|General-purpose premium|Blob storage |Page blobs|
+|Blob storage, hot and cool access tiers|Blob storage|Block blobs and append blobs|
 
 Both general-purpose standard and premium storage support page blobs. Choose a standard storage account if cost is your primary concern. Premium storage will cost more, but will also deliver much higher I/O operations per second, or IOPS. If data performance is a requirement for your VM, consider using premium storage.
 

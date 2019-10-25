@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.backup-restore-azure-sql.4-long-term-retention-policies
+metadata:
+  title: Retain backup history with long-term retention policies
+  description: In this unit, you'll learn how to configure Azure SQL Database to keep data for up to 10 years.
+  ms.date: 09/25/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Retain backup history with long-term retention policies
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-long-term-retention-policies.md)]
