@@ -10,13 +10,20 @@ Although security is everyone's job, it's important to remember that not everyon
 
 ### Define security requirements
 
-Considering security and privacy is a fundamental aspect of developing highly secure applications and systems. Regardless of development methodology being used, security requirements must be continually updated to reflect changes in required functionality and changes to the threat landscape. Obviously, the optimal time to define the security requirements is during the initial design and planning stages as this allows development teams to integrate security in ways that minimize disruption.
+Considering security and privacy is a fundamental aspect of developing highly secure applications and systems. Regardless of development methodology in use, security requirements must be updated continuously in order to address changes in required functionality and changes to the threat landscape. Obviously, the optimal time to define the security requirements is during the initial design and planning stages, as this allows development teams to integrate security in ways that minimize disruption.
 
-Factors that influence security requirements include (but are not limited to) the legal and industry requirements, internal standards and coding practices, review of previous incidents, and known threats. These requirements should be tracked through either a work-tracking system or through telemetry derived from the engineering pipeline.
+Factors that influence security requirements include, but are not limited to:
+
+- Legal and industry requirements
+- Internal standards and coding practices
+- Review of previous incidents
+- Known threats
+
+These requirements should be tracked through a work-tracking system, or through telemetry that is derived from the engineering pipeline.
 
 ### Define metrics and compliance reporting
 
-It's essential for an organization to define the minimum acceptable levels of security quality, and to hold engineering teams accountable to meeting that criteria. Defining these expectations early helps a team understand risks associated with security issues, identify and fix security defects during development, and apply the standards throughout the entire project. Setting a meaningful security bar involves clearly defining the severity thresholds of security vulnerabilities (for example, all known vulnerabilities discovered with a "critical" or "important" severity rating must be fixed with a specified time frame), and never relaxing it after it's been set.
+It's essential for an organization to define the minimum acceptable levels of security quality, and to hold engineering teams accountable to meeting that criteria. Defining these expectations early helps a team understand the risks that are associated with security issues, identify and fix security defects during development, and apply the standards throughout the entire project. Setting a meaningful security bar involves clearly defining the severity thresholds of security vulnerabilities, and helps to establish a plan of action when vulnerabilities are encountered. For example, all known vulnerabilities discovered with a "critical" or "important" severity rating must be fixed with a specified time frame.
 
 To track key performance indicators (KPIs) and ensure security tasks are completed, bug tracking and/or work tracking mechanisms used by an organization (such as Azure DevOps) should allow for security defects and security work items to be clearly labeled as security, and marked with their appropriate security severity. This allows for accurate tracking and reporting of security work.
 
