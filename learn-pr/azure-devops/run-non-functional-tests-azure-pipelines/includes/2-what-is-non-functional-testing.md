@@ -4,11 +4,11 @@ The team first defines what a non-functional test is and talks about some types 
 
 ## Daily standup meeting
 
-The team is having their daily standup meeting and Mara and Amita are demoing the changes they made to the release pipeline. Amita shows the UI tests running on her laptop. The team watches how quickly each web browser comes up and runs through tests Amita would normally perform manually.
+The team is having their daily standup meeting and Mara and Amita are demoing the changes they made to the release pipeline. Amita shows the UI tests running on her laptop. The team watches how quickly each web browser comes up and runs through tests Amita would normally do manually.
 
-**Amita:** I must admit, I initially resisted this form of automation. But now I see how it gives me the freedom to do so much more. I'm already beginning to write my own UI tests. And I still have plenty of time to perform usability testing to verify that our websites are intuitive and meet the user's needs.
+**Amita:** I must admit, I initially resisted this form of automation. But now I see how it gives me the freedom to do so much more. I'm already beginning to write my own UI tests. And I still have plenty of time to do usability testing to verify that our websites are intuitive and meet the user's needs.
 
-**Tim:** I'm happy this helps speed things up for you, Amita. This improvement should help us move changes from _Test_ to _Staging_ more quickly. Given that, is there anything we should do in _Staging_ to help improve the quality of our releases?
+**Tim:** I'm happy this helps speed up things for you, Amita. This improvement should help us move changes from _Test_ to _Staging_ more quickly. Given that, is there anything we should do in _Staging_ to help improve the quality of our releases?
 
 **Andy:** UI tests are a form of *functional testing*. I suspect, Tim, that you're more concerned about performance &mdash; or the *non-functional* parts of the application. What kinds of tests do you normally run?
 

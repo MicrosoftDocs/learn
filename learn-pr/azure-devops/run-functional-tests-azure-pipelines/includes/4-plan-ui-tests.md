@@ -1,8 +1,8 @@
-In this section, you follow along with Amita and Andy as they talk about how to incorporate Selenium UI tests into the release pipeline. They begin by walking through the tests that Amita normally performs manually. Then they map Amita's manual steps to automated test cases.
+In this section, you follow along with Amita and Andy as they talk about how to incorporate Selenium UI tests into the release pipeline. They begin by walking through the tests that Amita normally does manually. Then they map Amita's manual steps to automated test cases.
 
 ## Run UI tests manually
 
-Amita is waiting for Andy to show up. Andy is going to help Amita write a UI test that will be added to the _Test_ stage of the pipeline. He sees Amita scribbling in her notebook, crossing something out, muttering, and then tearing out the page. "Hi," he says. "You don't look happy."
+Amita is waiting for Andy to show up. Andy is going to help Amita write a UI test that will be added to the _Test_ stage of the pipeline. He sees Amita scribbling in her notebook, crossing out something, muttering, and then tearing out the page. "Hi," he says. "You don't look happy."
 
 **Amita:** I'm not happy. I'm trying to figure out how to write an automated test but I don't know where to start. I don't code. I feel like I'm obsolete.
 
@@ -41,7 +41,7 @@ Next, Amita clicks on the top player on the leaderboard and sees the player's pr
 
 ![A browser showing the leaderboard modal window on the Space Game website](../media/4-website-leaderboard.png)
 
-**Amita:** That covers the modal window tests. I run these tests on Windows because that's how most players visit our site. I run the tests on Chrome, and when I have time I also run them on Firefox and Edge.
+**Amita:** That covers the modal window tests. I run these tests on Windows because that's how most players visit our site. I run the tests on Chrome, and when I have time I also run them on Firefox and Microsoft Edge.
 
 If I had the time, I would run everything again on macOS and Linux, just to ensure we're compatible with any operating system our users visit the site from. But there are many other tests that I need to run.
 
@@ -97,7 +97,7 @@ Here's what her table looks like:
 1. Create an NUnit project that includes Selenium. The project will exist along with the source code for the app.
 1. Write a test case that uses automation to click the specified link and that verifies that the expected modal window appears.
 1. Use the XPath data we saved to specify the parameters to the test case method. This creates a sequence, or series, of tests.
-1. Configure the tests to run on Chrome, Firefox and Edge. This creates a matrix of tests.
+1. Configure the tests to run on Chrome, Firefox, and Microsoft Edge. This creates a matrix of tests.
 1. Run the tests and watch each web browser come up automatically.
 1. Watch as Selenium automatically runs through the series of tests for each browser.
 1. See in the console window that all the tests pass.

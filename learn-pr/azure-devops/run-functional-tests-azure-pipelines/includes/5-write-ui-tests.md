@@ -1,6 +1,6 @@
 In this section, you help Andy and Amita write Selenium tests that verify the UI behaviors that Amita described.
 
-Although Amita normally runs her tests on Chrome, Firefox, and Edge, you'll set up tests that run on Chrome, Firefox, and Internet Explorer. For learning purposes, we choose these browsers because the Microsoft-hosted agent you'll use comes preconfigured to work with them. It does not yet support Edge.
+Although Amita normally runs her tests on Chrome, Firefox, and Microsoft Edge, you'll set up tests that run on Chrome, Firefox, and Internet Explorer. For learning purposes, we choose these browsers because the Microsoft-hosted agent you'll use comes preconfigured to work with them. It does not yet support Microsoft Edge.
 
 You can checkout [Use a Microsoft-hosted agent](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops&azure-portal=true#use-a-microsoft-hosted-agent) to see what kinds of agents Microsoft hosts and their capabilities. In practice, you can install additional software on your agent or provide your own agent that has the software you need preinstalled.
 
