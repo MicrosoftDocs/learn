@@ -55,7 +55,7 @@ For more information on encryption, see the [Microsoft SDL Cryptographic Recomme
 
 ### Manage security risks from using third-party components
 
-The vast majority of software projects today are built using third-party components (both commercial and open source). When selecting which third-party components to use, it's important to understand the impact that a security vulnerability in them could have to the security of the larger system into which they are integrated. Having an accurate inventory of these components and a plan to respond when new vulnerabilities are discovered, will go a long way toward mitigating this risk. However, you should also consider additional validation, depending on your organization's risk appetite, the type of component being used, and potential impact of a security vulnerability.
+The vast majority of software projects today are built using third-party components (both commercial and open source). When selecting which third-party components to use, it's important to understand the impact that a security vulnerability in them could have to the security of the larger system into which they are integrated. Having an accurate inventory of these components and a plan to respond when new vulnerabilities are discovered, will go a long way toward mitigating risks. However, you should also consider additional validation, depending on your organization's risk appetite, the type of component being used, and potential impact of a security vulnerability.
 
 Learn more about managing the security risks of using third-party components at:
 
@@ -103,7 +103,7 @@ More information is available at:
 
 ### Perform penetration testing
 
-Penetration testing is a security analysis of a software system performed by skilled security professionals simulating the actions of a hacker. The objective of a penetration test is to uncover potential vulnerabilities resulting from coding errors, system configuration faults, or other operational deployment weaknesses. By doing this, the test typically finds the broadest variety of vulnerabilities. Penetration tests are often performed in conjunction with automated and manual code reviews to provide a greater level of analysis than would ordinarily be possible.
+Penetration testing is a security analysis of a software system that is performed by skilled security professionals who simulate the actions of a hacker. The objective of a penetration test is to uncover potential vulnerabilities resulting from coding errors, system configuration faults, or other operational deployment weaknesses. Penetration tests typically find the broadest variety of vulnerabilities, and are often performed in conjunction with automated and manual code reviews to provide a greater level of analysis than would ordinarily be possible.
 
 More information is available at:
 
@@ -113,7 +113,11 @@ More information is available at:
 
 ### Establish a standard incident response process
 
-Preparing an incident response plan is crucial for addressing new threats that can emerge over time, and your plan should be created in coordination with your organization's dedicated Product Security Incident Response Team (PSIRT). The plan should include who to contact in case of a security emergency, and establish the protocol for security servicing, including plans for code inherited from other groups within the organization and for third-party code. The incident response plan should be tested before it is needed! (whitepaper)
+Preparing an incident response plan is crucial for addressing new threats that can emerge over time, and your plan should be created in coordination with your organization's dedicated Product Security Incident Response Team (PSIRT). Your incident response plan should:
+
+- Include who to contact in case of a security emergency
+- Establish the protocol for security servicing (including plans for code inherited from other groups within the organization and for third-party code)
+- Be tested before it is needed
 
 For more information about incident responses, see:
 
@@ -125,5 +129,4 @@ For more information about incident responses, see:
 
 * [Microsoft Security Response Center](https://www.microsoft.com/msrc)
 
-By introducing standardized security and compliance considerations throughout all phases of the development process, developers can help reduce the likelihood of vulnerabilities in products and services and avoid repeating the same security mistakes. Similarly, security integration throughout the operations lifecycle will assist in maintaining the integrity of those products and services. These Operational Security Assurance practices should align with the development processes. This will result in less time, and therefore cost, being spent on triage and response after the fact, and provide your customers with assurance that your products are highly secure.
-
+By introducing standardized security and compliance considerations throughout all phases of the development process, developers can reduce the likelihood of vulnerabilities in products and services, and avoid repeating the same security mistakes. Similarly, security integration throughout the operations lifecycle will assist in maintaining the integrity of those products and services. Operational Security Assurance practices should align with your development processes; this arrangement will result in less time and cost spent on triage and response after the fact, and provide your customers with assurance that your products are highly secure.
