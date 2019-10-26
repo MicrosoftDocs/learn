@@ -32,7 +32,7 @@ You can integrate Security Center into your workflows and use it in many ways. H
 
 1. Use Security Center for incident response.
 
-    Many organizations learn how to respond to security incidents only after suffering an attack. To reduce costs and damage, it’s important to have an incident response plan in place before an attack occurs. You can use Azure Security Center in different stages of an incident response.
+    Many organizations learn how to respond to security incidents only after suffering an attack. To reduce costs and damage, it's important to have an incident response plan in place before an attack occurs. You can use Azure Security Center in different stages of an incident response.
 
     ![Circular arrows point from the words detect, to assess, to diagnose, to stabilize, to close](../media/2a-security-center-incident-response.png)
 
