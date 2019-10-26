@@ -18,8 +18,7 @@ With software as a service (SaaS), you outsource almost everything. SaaS is soft
 
 ![An illustration showing how cloud providers and customers share security responsibilities under different types of compute service implementation: on-premises, infrastructure as a service, platform as a service, and software as a service.](../media/2-shared_responsibilities.png)
 
-For all cloud deployment types, you own your data and identities. You are responsible for helping secure your data and identities, your
-on-premises resources, and the cloud components you control (which vary by service type).
+For all cloud deployment types, you own your data and identities. You are responsible for helping secure your data and identities, your on-premises resources, and the cloud components you control (which vary by service type).
 
 Regardless of the deployment type, you always retain responsibility for the following:
 
@@ -41,10 +40,10 @@ Defense in depth can be visualized as a set of concentric rings, with the data t
 ![An illustration showing Defense in depth with Data at the center. The rings of security around data are: application, compute, network, perimeter, identity and access, and physical security.](../media/defense_in_depth_layers_small.PNG)
 
 :::row:::
-:::column:::
-![Image representing data](../media/2-data.png)
-:::column-end:::
-:::column span="3"::: 
+  :::column:::
+    ![Image representing data](../media/2-data.png)
+  :::column-end:::
+	:::column span="3":::  
 **Data**
 
 In almost all cases, attackers are after data:
@@ -55,14 +54,14 @@ In almost all cases, attackers are after data:
 - Stored in cloud storage
 
 It's the responsibility of those storing and controlling access to data to ensure that it's properly secured. Often, there are regulatory requirements that dictate the controls and processes that must be in place to ensure the confidentiality, integrity, and availability of the data.
-:::column-end:::
+  :::column-end:::
 :::row-end:::
 
 :::row:::
-:::column:::
-![Image of a file on the network](../media/2-application.png)
-:::column-end:::
-:::column span="3"::: 
+  :::column:::
+    ![Image of a file on the network](../media/2-application.png)
+  :::column-end:::
+	:::column span="3":::  
 **Application**
 
 - Ensure applications are secure and free of vulnerabilities.
@@ -70,28 +69,28 @@ It's the responsibility of those storing and controlling access to data to ensur
 - Make security a design requirement for all application development.
 
 Integrating security into the application development life cycle will help reduce the number of vulnerabilities introduced in code. We encourage all development teams to ensure their applications are secure by default, and that they're making security requirements non-negotiable.
-:::column-end:::
+  :::column-end:::
 :::row-end:::
 
 :::row:::
-:::column:::
-![A terminal representing compute](../media/2-compute.png)
-:::column-end:::
-:::column span="3"::: 
+  :::column:::
+    ![A terminal representing compute](../media/2-compute.png)
+  :::column-end:::
+	:::column span="3":::  
 **Compute**
 
 - Secure access to virtual machines.
 - Implement endpoint protection and keep systems patched and current.
 
 Malware, unpatched systems, and improperly secured systems open your environment to attacks. The focus in this layer is on making sure your compute resources are secure, and that you have the proper controls in place to minimize security issues.
-:::column-end:::
+  :::column-end:::
 :::row-end:::
 
 :::row:::
-:::column:::
-![Three connected systems representing networking](../media/2-networking.png)
-:::column-end:::
-:::column span="3"::: 
+  :::column:::
+    ![Three connected systems representing networking](../media/2-networking.png)
+  :::column-end:::
+	:::column span="3":::  
 **Networking**
 
 - Limit communication between resources.
@@ -100,28 +99,28 @@ Malware, unpatched systems, and improperly secured systems open your environment
 - Implement secure connectivity to on-premises networks.
 
 At this layer, the focus is on limiting the network connectivity across all your resources to allow only what is required. By limiting this communication, you reduce the risk of lateral movement throughout your network.
-:::column-end:::
+  :::column-end:::
 :::row-end:::
 
 :::row:::
-:::column:::
-![A physical barrier representing the network perimeter](../media/2-perimeter.png)
-:::column-end:::
-:::column span="3"::: 
+  :::column:::
+    ![A physical barrier representing the network perimeter](../media/2-perimeter.png)
+  :::column-end:::
+	:::column span="3":::  
 **Perimeter**
 
 - Use distributed denial of service (DDoS) protection to filter large-scale attacks before they can cause a denial of service for end users.
 - Use perimeter firewalls to identify and alert on malicious attacks against your network.
 
 At the network perimeter, it's about protecting from network-based attacks against your resources. Identifying these attacks, eliminating their impact, and alerting you when they happen are important ways to keep your network secure.
-:::column-end:::
+  :::column-end:::
 :::row-end:::
 
 :::row:::
-:::column:::
-![A badge representing a secure access](../media/2-policies-and-access.png)
-:::column-end:::
-:::column span="3"::: 
+  :::column:::
+    ![A badge representing a secure access](../media/2-policies-and-access.png)
+  :::column-end:::
+	:::column span="3":::  
 **Identity and access**
 
 - Control access to infrastructure and change control.
@@ -129,20 +128,20 @@ At the network perimeter, it's about protecting from network-based attacks again
 - Audit events and changes.
 
 The identity and access layer is all about ensuring identities are secure, access granted is only what is needed, and changes are logged.
-:::column-end:::
+  :::column-end:::
 :::row-end:::
 
 :::row:::
-:::column:::
-![A security camera representing physical security](../media/2-physical-security.png)
-:::column-end:::
-:::column span="3"::: 
+  :::column:::
+    ![A security camera representing physical security](../media/2-physical-security.png)
+  :::column-end:::
+	:::column span="3":::  
 **Physical security**
 
 - Physical building security and controlling access to computing hardware within the data center is the first line of defense.
 
 With physical security, the intent is to provide physical safeguards against access to assets. This ensures that other layers can't be bypassed, and loss or theft is handled appropriately.
-:::column-end:::
+  :::column-end:::
 :::row-end:::
 
-Azure helps a lot with your security concerns. But security is still a **shared responsibility**. How much of that responsibility falls on us depends on which model we use with Azure. We use the *defense in depth* rings as a guideline for considering what protections are adequate for our data and environments.
+Azure helps alleviate your security concerns. But security is still a **shared responsibility**. How much of that responsibility falls on us depends on which model we use with Azure. We use the *defense in depth* rings as a guideline for considering what protections are adequate for our data and environments.
