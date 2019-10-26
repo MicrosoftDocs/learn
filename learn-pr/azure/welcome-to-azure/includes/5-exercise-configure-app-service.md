@@ -61,7 +61,7 @@ For example, the **Settings** section gives you access to configure various aspe
     | Category | Description |
     | --- | --- |
     | **Dev / Test** | This category is ideal for less demanding workloads. This category is predominantly focused on providing shared infrastructure. In this category, you have additional features that become available to the App Service application. For example, Custom domains / SSL and manual scale. |
-    | **Production** | This category is ideal for less demanding workloads. In this category, you'll also notice added features such as staging slots, daily backups, and a traffic manager. |
+    | **Production** | This category is ideal for more demanding workloads. In this category, you'll also notice added features such as staging slots, daily backups, and a traffic manager. |
     | **Isolated** | This category is ideal for workloads that require advanced networking and fine-grained scaling. |
 
     Within each category, there are pricing tiers that will allow us to scale the resources available to our App service. These pricing tiers give us access to the additional features mentioned above.
