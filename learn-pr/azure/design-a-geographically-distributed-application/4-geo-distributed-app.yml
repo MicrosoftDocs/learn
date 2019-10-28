@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Design a geographically distributed application architecture
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/4-geo-distributed-app.md)]
 quiz:
