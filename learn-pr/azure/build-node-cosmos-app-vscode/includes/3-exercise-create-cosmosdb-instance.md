@@ -1,8 +1,8 @@
 The Azure Cosmos DB extension enables you to create and manage Cosmos DB databases, collections, and documents from within Visual Studio Code.
 
-In the sample scenario, you want to be able to work within Visual Studio Code, both as a development environment for building applications, and also as a tool for managing your Cosmos DB databases.
+In the sample scenario, you want to work within Visual Studio Code, both as a development environment for building applications, and as a tool for managing your Cosmos DB databases.
 
-In this exercise, you'll install the Cosmos DB extension for Visual Studio Code. Then, you'll use the extension to connect to your Azure account and create a Cosmos DB account. You'll add a database and collection for holding students' course grade information to the Cosmos DB account. Finally, you'll create some test documents in the collection, view them, and update them.
+In this exercise, you'll install the Cosmos DB extension for Visual Studio Code. Then you'll use the extension to connect to your Azure account and create a Cosmos DB account. You'll add a database and collection for holding students' course grade information to the Cosmos DB account. Finally, you'll create some test documents in the collection, then view and update them.
 
 This exercise runs on your desktop computer.
 
@@ -39,7 +39,7 @@ This exercise runs on your desktop computer.
 
     A web browser window will open. Follow the instructions and sign in to your Azure account. When you've signed in, close the browser window and return to Visual Studio Code.
 
-4. In the Cosmos DB pane, in the toolbar, click **Create Account** (the **+** sign)
+4. In the Cosmos DB pane, in the toolbar, click **Create Account** (the **+** sign).
 
     ![Screenshot of the Cosmos DB pane in Visual Studio Code. The user has selected the **Create Account** command](../media/3-add-comsosdb-account.png)
 
@@ -60,7 +60,7 @@ This exercise runs on your desktop computer.
 
 10. Wait while the Cosmos DB account is created.
 
-11. When the account has been created, in the Cosmos DB pane, expand your Azure account, and verify that the new Cosmos DB account appears:
+11. When the account has been created, in the Cosmos DB pane, expand your Azure account. Verify that the new Cosmos DB account appears:
 
     ![Screenshot of the Cosmos DB pane in Visual Studio Code. The new Cosmos DB account is listed under the user's Azure account](../media/3-new-comsosdb-account.png)
 
@@ -79,7 +79,7 @@ This exercise runs on your desktop computer.
     This collection will hold `Course` and `Student` documents. Course grades will be held as an array of subdocuments with each student. The data will be partitioned by academic year.
 
     > [!NOTE]
-    > Academic year might not seem to be the best partition key as it could lead to hot partitions when inserting and modifying data. Information for the current year is likely to attract the most traffic. It is used in this module to keep the example code simple. In a production system, you might partition the data by some other key that distributes inserts across multiple partitions. Student ID might appear to be a good example of such a key initially. However, you also have to consider other factors. For example, if you want to query course grades by academic year, the fastest way is to perform single partition queries. You must be prepared to consider the balance between different workloads and their frequency when determining the most optimal partition key.
+    > Academic year might not seem to be the best partition key as it could lead to hot partitions when inserting and modifying data. Information for the current year is likely to attract the most traffic. It's used in this module to keep the example code simple. In a production system, you might partition the data by some other key that distributes inserts across multiple partitions. Student ID might appear to be a good example of such a key initially. However, you have to consider other factors. For example, if you want to query course grades by academic year, the fastest way is to perform single partition queries. You must be prepared to consider the balance between different workloads and their frequency when determining the most optimal partition key.
 
 5. In the **Initial throughput capacity** box, accept the default value of **1000**, and then press Enter.
 
@@ -99,7 +99,7 @@ This exercise runs on your desktop computer.
 
 4. In the **Enter a value for the partition key** box, type the current year (for example, **2019**), and then press Enter.
 
-    The document will be created and will be displayed in Visual Studio Code, in JSON format. The **id** and **AcademicYear** fields will be populated with the values you specified. The document will also contain other fields that are added automatically by Cosmos DB for its own internal use.
+    The document will be created and displayed in Visual Studio Code, in JSON format. The **id** and **AcademicYear** fields will be populated with the values you specified. The document will also contain other fields that are added automatically by Cosmos DB for its own internal use.
 
     ![Screenshot of Visual Studio Code showing the newly created document](../media/3-new-document.png)
 
@@ -111,9 +111,9 @@ This exercise runs on your desktop computer.
 
     The new document will appear.
 
-8. Add another document with ID **SU001** and the same year as before. This document will represent the details of a student.
+8. Add another document with the ID **SU001** and the same year as before. This document will represent the details of a student.
 
-9. Add a final document with ID **SU002** (another student), and the same year.
+9. Add a final document with the ID **SU002** (another student), and the same year.
 
 10. In the **Documents** list in the Cosmos DB pane, click each document in turn, to view the data.
 
@@ -141,7 +141,7 @@ This exercise runs on your desktop computer.
 
 5. In the **Documents** list, select the **C102** document.
 
-6. Add the following field to the document after the **AcademicYear** field, and the save it:
+6. Add the following field to the document after the **AcademicYear** field, and then save it:
 
     ```text
     "CourseName": "Applied Mathematics",
@@ -158,7 +158,7 @@ This exercise runs on your desktop computer.
     },
     ```
 
-    This is a compound field, or subdocument. This is a useful approach to adopt if you have related fields that are typically used together.
+    This is a compound field, or subdocument. It's a useful approach to adopt if you have related fields that are typically used together.
 
 9. Add another field, after the new **Name** field:
 

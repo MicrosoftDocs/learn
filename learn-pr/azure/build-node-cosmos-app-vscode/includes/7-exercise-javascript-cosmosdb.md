@@ -1,8 +1,8 @@
 Cosmos DB provides a highly scalable document store suitable for holding a wide range of document types. The SQL API enables you to write applications that can easily query and maintain documents. 
 
-In the sample scenario, you've decided to use Cosmos DB to store the details of courses, students who have taken those courses, and the grades these students achieved. You have previously written and tested code to create course and student objects in memory, and you now need to add functionality to save these documents to Cosmos DB, and to query documents held in Cosmos DB.
+In the sample scenario, you're using Cosmos DB to store course details, students who have taken the courses, and the grades they achieved. You've written and tested code to create course and student objects in memory. You now need to add functionality to save these documents to Cosmos DB, and to query documents held in Cosmos DB.
 
-In this exercise, you'll extend the JavaScript app that you wrote previously. You'll add code that saves students and course documents to the Cosmos DB collection that you created in the first exercise in this module. You'll also add a query capability that enables users to find the course grades achieved by a specified student in a given academic year, and the grades received by all students that took a particular course.
+In this exercise, you'll extend the JavaScript app you wrote previously. You'll add code that saves students and course documents to the Cosmos DB collection you created in the first exercise of this module. You'll add a query capability that enables users to find the course grades achieved by a specified student in a given academic year. Then you'll see the grades received by students who took a particular course.
 
 This exercise runs on your desktop computer.
 
@@ -28,7 +28,7 @@ This exercise runs on your desktop computer.
 
 ## Configure a connection to Cosmos DB
 
-1. In the toolbar on the left-hand side of Visual Studio Code, select the **Azure** icon.
+1. In the toolbar on the left side of Visual Studio Code, select the **Azure** icon.
 
 2. In the **Cosmos DB** pane, click **Sign in to Azure** and sign in, if you aren't already connected.
 
@@ -80,11 +80,11 @@ This exercise runs on your desktop computer.
     const containerdata = containerref.items;
     ```
 
-    The `import` statements enable you to use the exported objects, types, and functions in the **config.js** and **studentgrades.js** scripts, as well as the **cosmos** package.
+    The `import` statements enable you to use the exported objects, types, and functions in the **config.js** and **studentgrades.js** scripts, in addition to the **cosmos** package.
 
-    You use the **CosmosClient** object to connect to your Cosmos DB account, using the connection string that you specified in the **config.js** script. The **containerref** object is a reference to the **StudentGrades** collection in the **SchoolDB** database in your Cosmos DB account. You'll use the **containerdata** object to access the documents in this collection.
+    You use the **CosmosClient** object to connect to your Cosmos DB account. Use the connection string that you specified in the **config.js** script. The **containerref** object is a reference to the **StudentGrades** collection in the **SchoolDB** database in your Cosmos DB account. You'll use the **containerdata** object to access the documents in this collection.
 
-11. Save the file as **cosmosgrades.js**
+11. Save the file as **cosmosgrades.js**.
 
 ## Maintain student and course documents in a collection
 
@@ -110,9 +110,9 @@ This exercise runs on your desktop computer.
     This function takes a **Student** object and adds it to the collection in the Cosmos DB database. If the insert was successful, the function displays a message indicating that the student document was added.
 
     > [!NOTE]
-    > If the **create** method returns an HTTP status code outside of the 200-299 range, it throws an exception. The empty **catch** handler is intended to catch and discard this exception as it is handled by the **isOK** statement.
+    > If the **create** method returns an HTTP status code outside of the 200-299 range, it throws an exception. The empty **catch** handler is intended to catch and discard this exception as it's handled by the **isOK** statement.
 
-3. Add the **updateStudent** function show below to the **cosmosdb.js** script:
+3. Add the **updateStudent** function shown below to the **cosmosdb.js** script:
 
     ```javascript
     async function updateStudent(student) {
@@ -121,7 +121,7 @@ This exercise runs on your desktop computer.
     }
     ```
 
-    This function uses the **upsert** operation of the collection to update the student document with the data provided in the *student** parameter. You use this function to modify a student document.
+    This function uses the **upsert** operation of the collection to update the student document with the data provided in the **student** parameter. You use this function to modify a student document.
 
 4. Add the function shown below:
 
@@ -143,7 +143,7 @@ This exercise runs on your desktop computer.
     }
     ```
 
-    This function follows the same pattern as the previous functions. It takes a **Course** object as the argument and uses it to create a document for the course in the database.
+    This function follows the same pattern as the previous functions. It takes a **Course** object as the argument, and uses it to create a document for the course in the database.
 
 6. Create the following function that deletes a course from the Cosmos DB collection:
 
@@ -211,7 +211,7 @@ This exercise runs on your desktop computer.
     }
     ```
 
-    This function uses the **query** function of the collection to find the documents for all students that have taken the course specified in the function argument. The function displays the details of each student, and the grade achieved.
+    This function uses the **query** function of the collection to find the documents for all students who have taken the course specified in the function argument. The function displays the details of each student, and the grade achieved.
 
 ## Test the cosmosgrades app
 
@@ -282,13 +282,13 @@ This exercise runs on your desktop computer.
 
     This code tests each of the functions you've created. It does the following tasks:
 
-    1. It creates two courses using values specified by the user with the **getCourseData** function you created in the previous exercises. The code adds both courses to the collection in Cosmos DB using the **addCourse** function, and verifies that the courses were added successfully by querying the with the **getCourse** function.
+    1. It creates two courses using values specified by the user with the **getCourseData** function you created in the previous exercises. The code adds both courses to the collection in Cosmos DB using the **addCourse** function. The code also verifies that the courses were added successfully by querying the collection with the **getCourse** function.
 
     2. It creates two students, and adds them to the collection using the **addStudent** function. The test verifies that the students were created using the **getStudent** function.
 
-    3. It assigns grades for each course to both students, and then updates the student documents in the collection in Cosmos DB with the **updateStudent** function. The **getStudent** function is run to retrieve and display the details of each student, which should now include the course grade data.
+    3. It assigns grades for each course to both students, then updates the student documents in the Cosmos DB collection with the **updateStudent** function. The **getStudent** function is run to retrieve and display the details of each student. These details should now include the course grade data.
 
-    4. It runs the **queryStudents** function to display the grades for all students that have taken each course.
+    4. It runs the **queryStudents** function to display the grades for all students who have taken each course.
 
     5. It removes the student documents from the collection in Cosmos DB with the **deleteStudent** function. The **getStudent** function is used to retrieve the student data afterwards. In both cases, the documents should no longer be present, and nothing will be displayed.
 
@@ -321,9 +321,9 @@ This exercise runs on your desktop computer.
 
 5. Save the **launch.json** file.
 
-6. On the **Debug** menu, click **Start Without Debugging**
+6. On the **Debug** menu, click **Start Without Debugging**.
 
-    The message **Testing addCourse** and **getCourse** appear in the terminal window.
+    The messages **Testing addCourse** and **getCourse** appear in the terminal window.
 
 7. At the first set of prompts, enter the values shown in the following table:
 
@@ -333,7 +333,7 @@ This exercise runs on your desktop computer.
     | Course name: | Computer Science |
     | Academic year: | 2019 |
 
-    The message **Added course with id: CS201** should appear after you've entered the academic year. This is followed by the message **Course data: C201: Computer Science: 2019**.  This is the data displayed by the **getCourse** function, after the course has been added to the Cosmos DB collection.
+    The message **Added course with id: CS201** should appear after you've entered the academic year. This is followed by the message **Course data: C201: Computer Science: 2019**. This is the data displayed by the **getCourse** function, after the course has been added to the Cosmos DB collection.
 
 8. At the next set of prompts, enter the following values:
 
@@ -354,7 +354,7 @@ This exercise runs on your desktop computer.
     | Lastname | Ffffff |
     | Academic year: | 2019 |
 
-    The messages **Added student with id: SU998** should appear, followed by **Student data: SU998: Eeeeee, Ffffff: 2019** displayed by the **getStudent** function.
+    The message **Added student with id: SU998** should appear, followed by **Student data: SU998: Eeeeee, Ffffff: 2019** displayed by the **getStudent** function.
 
 10. When prompted for the details of the second student, enter the following values:
 
@@ -439,7 +439,7 @@ This exercise runs on your desktop computer.
 
 3. Run the application again, and enter the same data as before.
 
-4. When the app has finished, in Visual Studio Code, in the left-hand toolbar, click the **Azure** icon.
+4. When the app has finished, in Visual Studio Code, in the left toolbar, click the **Azure** icon.
 
 5. In the **Cosmos DB** pane, expand your Azure account, expand the **\<your name or initials\>school** Cosmos DB account, expand the **SchoolDB** database, expand the **StudentCourseGrades** collection, right-click **Documents**, and then click **Refresh**.
 
@@ -496,4 +496,4 @@ This exercise runs on your desktop computer.
     }
     ```
 
-You've now used Visual Studio Code to create a Node.js application that can query, insert, update, and delete data in a Cosmos DB database.
+You've now used Visual Studio Code to create a Node.js application that can query, insert, update, and delete documents in a Cosmos DB database.

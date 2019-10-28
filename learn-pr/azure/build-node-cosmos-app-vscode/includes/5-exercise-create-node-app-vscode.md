@@ -2,7 +2,9 @@ Visual Studio Code provides a customizable IDE that enables you to build, test, 
 
 In the sample scenario, you want to use Visual Studio Code as the development environment for creating and testing your Node.js applications.
 
-In this exercise, you'll install node packages that enable you to configure Node.js for use in Visual Studio Code. You'll use this environment to write an application that prompts the user for details of courses, students, and grades, and then creates JavaScript objects that capture this information. In the next exercise, you'll see how to save these objects to a collection in Cosmos DB. You'll learn how to use the Visual Studio Code debugger to step through the code and verify it's working correctly.
+In this exercise, you'll install node packages that enable you to configure Node.js for use in Visual Studio Code. You'll use this environment to write an application that prompts the user for details of courses, students, and grades. The application then creates JavaScript objects that capture this information. 
+
+In the next exercise, you'll see how to save these objects to a collection in Cosmos DB. You'll learn how to use the Visual Studio Code debugger to step through the code and verify it's working correctly.
 
 This exercise runs on your desktop computer.
 
@@ -21,7 +23,7 @@ This exercise runs on your desktop computer.
     mkdir grades
     ```
 
-4. Type the following commands to move to the **grades** folder, and initializes a new Node application:
+4. Type the following commands to move to the **grades** folder, and initialize a new Node application:
 
     ```bash
     cd grades
@@ -72,7 +74,7 @@ This exercise runs on your desktop computer.
 
 1. In Visual Studio Code, on the **File** menu, click **New File**.
 
-2. On the **File** menu, click **Save As**. Save the new file with the name **studentgrades.js**
+2. On the **File** menu, click **Save As**. Save the new file with the name **studentgrades.js**.
 
 3. In the editor window, add the following lines to the top of the **studentgrades.js** file:
 
@@ -98,7 +100,7 @@ This exercise runs on your desktop computer.
     }
     ```
 
-    The **Course** class contains the details of a course. A **Course** object has three properties; **id** (the course code), **CourseName**, and **AcademicYear**. These properties correspond to the fields in a **Course** document in Cosmos DB. The class also contains a function named **toString** you can use to convert the contents of a Course object into a formatted string, suitable for display.
+    The **Course** class contains the details of a course. A **Course** object has three properties: **id** (the course code), **CourseName**, and **AcademicYear**. These properties correspond to the fields in a **Course** document in Cosmos DB. The class also contains a function named **toString** you can use to convert the contents of a Course object into a formatted string, suitable for display.
 
 5. Add the following **Student** class to the file, after the **Course** class:
   
@@ -129,7 +131,7 @@ This exercise runs on your desktop computer.
     }
     ```
 
-    The **Student** class represents a student. It has the properties **id** (the student id), **AcademicYear**, **Name**, and **CourseGrades**. The **Name** property is a composite type containing the **Forename** and **Lastname** properties. The **CourseGrades** property is an object. This object will contain course code/course grade key/value pairs for the student. The **addGrade** method enables a user to add a course code/course grade pair to this property, and the **getGrades** function returns a formatted string listing the course codes and grades for the student. The **toString** function returns a string containing the other details of the student.
+    The **Student** class represents a student. It has the properties **id** (the student id), **AcademicYear**, **Name**, and **CourseGrades**. The **Name** property is a composite type containing the **Forename** and **Lastname** properties. The **CourseGrades** property is an object. This object will contain course code/course grade key/value pairs for the student. The **addGrade** method enables a user to add a course code/course grade pair to this property. The **getGrades** function returns a formatted string listing the course codes and grades for the student. The **toString** function returns a string containing the other details of the student.
 
 6. Add the **getCourseData** function shown below to the **studentgrades.js** file.
 
@@ -186,7 +188,7 @@ This exercise runs on your desktop computer.
     }
     ```
 
-    This function is a test harness that creates two courses and two students. The function that adds grades foreach student, and displays the results.
+    This function is a test harness that creates two courses and two students. The function adds grades for each student, and displays the results.
 
 9. Add the following statement at the end of the file:
 
@@ -258,9 +260,9 @@ This exercise runs on your desktop computer.
 
 ## Step through the studentgrades.js app using the debugger
 
-1. In Visual Studio Code, on the **Debug** menu, click **Open Configurations**
+1. In Visual Studio Code, on the **Debug** menu, click **Open Configurations**.
 
-    The **launch.json** file is displayed in the editor. It looks like this:
+    The **launch.json** file is displayed in the editor. The file looks like this:
 
     ```json
     {
@@ -302,7 +304,7 @@ This exercise runs on your desktop computer.
     }
     ```
 
-    The **console** property specifies how the debugger displays and handles console input and output. The **Debug Console** built into Visual Studio Code is intended for output only, and can't read keyboard input (if you try to run the app using the **Debug Console**, the calls to the **question** function will throw an error). Using the **externalTerminal** option causes the debugger to create a separate, fully functional terminal window, that can handle input and output.
+    The **console** property specifies how the debugger displays and handles console input and output. The **Debug Console** built into Visual Studio Code is intended for output only, and can't read keyboard input. If you try to run the app using the **Debug Console**, the calls to the **question** function will throw an error. Using the **externalTerminal** option causes the debugger to create a separate, fully functional terminal window, that can handle input and output.
 
     The **runtimeArgs** property supplies the listed parameters as arguments to the runtime (the **node** app, in this case). The **-r esm** flag was described in the previous task.
 
@@ -316,7 +318,7 @@ This exercise runs on your desktop computer.
 
     ![Screenshot showing the debugger terminal window, and the breakpoint in Visual Studio Code](../media/5-debug-started.png)
 
-5. In the **Debug** toolbar above the editor in Visual Studio Code, click **Step Into**
+5. In the **Debug** toolbar, above the editor in Visual Studio Code, click **Step Into**.
 
     ![Screenshot showing **Debug** toolbar in Visual Studio Code. The **Step Into** button is highlighted](../media/5-debug-step-into.png)
 
@@ -347,7 +349,7 @@ This exercise runs on your desktop computer.
     ![Screenshot showing **Variables** window in Visual Studio Code. The **course1** object is being displayed](../media/5-course1-variable.png)
 
     > [!NOTE]
-    > You can right-click on any variable or property and use the **Set Value** command to change its value, for testing purposes.
+    > Right-click any variable or property and use the **Set Value** command to change its value, for testing purposes.
 
 12. In the **Debug** toolbar, click **Step Over** again.
 

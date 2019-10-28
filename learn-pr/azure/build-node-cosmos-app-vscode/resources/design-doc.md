@@ -70,9 +70,6 @@ Identify the subtasks of *module title*
     2. Create a Cosmos DB account (SQL API).
     3. Create a database in the account, for holding students' grade information.
     4. Create the `StudentCourseGrades` collection. This collection will hold `Course` and `Student` documents. Course grades will be held as an array of subdocuments with each student. The data will be partitioned by academic year.
-
-    <!-- NOTE TO REVIEWER AND AUTHOR. Academic year might not be the best partition key for a real world example as it could lead to hot partitions, but I have used it in this module to keep the scenario simple, and reduces complexity in the stored procedure unit later in this module. We should probably add a note to this effect when the module is written -->
-
     5. Insert a `Course` document.
     6. Insert two `Student` documents, each with a `Grade` subdocument that references a `Course` document.
     7. View the documents in Visual Studio Code.
