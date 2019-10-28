@@ -10,7 +10,7 @@ This unit explains how you can use cost analysis with several different default 
 
 **Pivot (donut) charts** - Provide dynamic pivots, breaking down the total cost by a common set of standard properties. They show the largest to smallest costs for the current month. You can change pivot charts at any time by selecting a different pivot. Costs are categorized by service (meter category), location (region), and child scope by default. For example, enrollment accounts are under billing accounts, resource groups are under subscriptions, and resources are under resource groups.
 
-![Initial view of cost analysis in the Azure portal](../media/3-cost-analysis-01.png)
+![Initial view of cost analysis in the Azure portal](../media/3-cost-analysis.png)
 
 ## Customized cost views
 
