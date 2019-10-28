@@ -8,9 +8,8 @@ metadata:
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Design a geographically distributed data architecture
-durationInMinutes: 10
+durationInMinutes: 6
 content: |
   [!include[](includes/5-geo-distributed-data.md)]
 quiz:
@@ -26,12 +25,12 @@ quiz:
       explanation: "By using an auto-failover group, you can configure the primary database to fail over onto the replica in the secondary region automatically."
     - content: "Use multiple write regions"
       isCorrect: false
-      explanation: "Azure SQL Database does not support multiple write regions. That's a Cosmos DB feature."
+      explanation: "Azure SQL Database does not support multiple write regions."
   - content: "You want to ensure that no completed transactions are lost in a regional outage. What should you do?"
     choices:
-    - content: "Use Cosmos DB with a single write region."
+    - content: "Use Azure Cosmos DB with a single write region."
       isCorrect: true
-      explanation: "Cosmos DB using synchronous replication, in which a transaction is only complete when it has replicated to a quorum of replicas."
+      explanation: "Azure Cosmos DB using synchronous replication, in which a transaction is only complete when it has replicated to a quorum of replicas."
     - content: "Use Azure SQL Database with active geo-replication."
       isCorrect: false
       explanation: "Active geo-replication uses asynchronous replication, in which a transaction replicates after it is complete on the writeable replica. If a failure occurs before replication occurs, the change may be lost."

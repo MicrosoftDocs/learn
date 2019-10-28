@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - Intermediate familiarity with Azure PaaS services
   - Intermediate familiarity with architecture principles
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/design-geographically-distributed-application-social.png
 levels:
 - advanced
 roles:
@@ -38,4 +38,4 @@ units:
 - learn.design-a-geographically-distributed-application.5-geo-distributed-data
 - learn.design-a-geographically-distributed-application.6-summary
 badge:
-  uid: learn.design-a-geographically-distributed-application.badge
+  uid: learn.design-geographically-distributed-application.badge
