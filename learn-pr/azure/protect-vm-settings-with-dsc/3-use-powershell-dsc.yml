@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.protect-vm-settings-with-dsc.use-powershell-dsc
+title: Use PowerShell DSC to achieve a desired state
+metadata:
+  title: Use PowerShell DSC to achieve a desired state
+  description: Use PowerShell DSC to achieve a desired state
+  ms.date: 09/13/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-use-powershell-dsc.md)]

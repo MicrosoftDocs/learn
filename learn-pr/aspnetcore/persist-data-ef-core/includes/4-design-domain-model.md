@@ -49,11 +49,6 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
     {
         public partial class Product
         {
-            public Product()
-            {
-                ProductOrders = new HashSet<ProductOrder>();
-            }
-
             public int Id { get; set; }
             [Required]
             public string Name { get; set; }
@@ -107,11 +102,6 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
     {
         public partial class Customer
         {
-            public Customer()
-            {
-                Orders = new HashSet<Order>();
-            }
-
             public int Id { get; set; }
             [Required]
             public string FirstName { get; set; }
@@ -147,11 +137,6 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
     {
         public partial class Order
         {
-            public Order()
-            {
-                ProductOrders = new HashSet<ProductOrder>();
-            }
-
             public int Id { get; set; }
             public DateTime OrderPlaced { get; set; }
             public DateTime? OrderFulfilled { get; set; }
@@ -190,11 +175,11 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
 
     Inclusion of the preceding namespace resolves the `DbSet<T>` references in the previous step.
 
-1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-command.md)]
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
 
 1. Run the following command to generate a migration for creating the database tables:
 
-    ```bash
+    ```dotnetcli
     dotnet ef migrations add InitialCreate \
         --project ../ContosoPets.DataAccess/ContosoPets.DataAccess.csproj \
         --context ContosoPetsContext
@@ -212,13 +197,16 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
 
 1. Run the following command to apply the *:::no-loc text="InitialCreate":::* migration:
 
-    ```bash
+    ```dotnetcli
     dotnet ef database update \
         --project ../ContosoPets.DataAccess/ContosoPets.DataAccess.csproj \
         --context ContosoPetsContext
     ```
 
     Execution of the preceding command results in DDL changes within the Azure SQL database.
+
+    > [!TIP]
+    > The `dotnet ef` tool is supported on all platforms. In Visual Studio on Windows, it's preferable to use the `Add-Migration` and `Update-Database` PowerShell cmdlets in the **Package Manager Console** window.
 
 1. Run the following command to list the tables in the Azure SQL database:
 
@@ -251,16 +239,16 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
     ```console
     Table          Column  Primary key
     -------------- ------- -----------------
-    Customers      Id      PK_Customers
     Orders         Id      PK_Orders
-    ProductOrders  Id      PK_ProductOrders
     Products       Id      PK_Products
-
+    ProductOrders  Id      PK_ProductOrders
+    Customers      Id      PK_Customers
+  
     Table          Column      Foreign key
     -------------- ----------- -----------------------------------
-    Orders         CustomerId  FK_Orders_Customers_CustomerId
     ProductOrders  OrderId     FK_ProductOrders_Orders_OrderId
     ProductOrders  ProductId   FK_ProductOrders_Products_ProductId
+    Orders         CustomerId  FK_Orders_Customers_CustomerId
     ```
 
     EF Core's primary key and foreign key constraint naming conventions are `PK_<Primary key property>` and `FK_<Dependent entity>_<Principal entity>_<Foreign key property>`, respectively. The `<Dependent entity>` and `<Principal entity>` placeholders correspond to the entity class names.

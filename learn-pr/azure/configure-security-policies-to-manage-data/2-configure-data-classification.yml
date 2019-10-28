@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-security.configure-security-policies-to-manage-data.configure-data-classification
+title: Classify your data at rest, in process, and in transit
+metadata:
+  title: Classify your data at rest, in process, and in transit
+  description: Classify your data
+  ms.date: 09/30/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-configure-data-classification.md)]

@@ -20,7 +20,7 @@ iconUrl: /learn/achievements/azure-devops/get-started-with-devops.svg
 ratingEnabled: true
 prerequisites: None
 levels: 
-- intermediate
+- beginner
 roles:
 - devops-engineer
 - administrator

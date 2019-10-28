@@ -3,10 +3,10 @@ uid: learn.control-and-organize-with-resource-manager.2-principles-of-resource-g
 title: Principles of resource groups
 metadata:
   title: Principles of resource groups
-  description: In this unit we'll cover the key principles of resource groups
+  description: In this unit, we'll cover the key principles of resource groups
   ms.date: 10/1/2018
-  author: markjulmar
-  ms.author: smmark
+  author: jboeshart
+  ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

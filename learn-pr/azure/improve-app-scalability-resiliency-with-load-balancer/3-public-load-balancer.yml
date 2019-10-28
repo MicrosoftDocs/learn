@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-app-scalability-resiliency-with-load-balancer.3-public-load-balancer
+metadata:
+  title: Configure a public load balancer
+  description: Configure a public load balancer
+  ms.date: 08/31/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Configure a public load balancer
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-public-load-balancer.md)]

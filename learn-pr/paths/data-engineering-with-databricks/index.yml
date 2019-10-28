@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Perform data engineering with Azure Databricks
-summary: Learn how to use Azure Databricks to accelerate the setup of Databricks in Azure. You'll work with data in an Azure SQL Data Warehouse with the built-in conector services. Explore the data services available with Azure Data Factory. Build streamlined workflows, and work with the interactive analytics workspace powered by Apache Spark.
+summary: Learn how to use Azure Databricks to accelerate the setup of Databricks in Azure. You'll work with data in an Azure SQL Data Warehouse with the built-in connector services. Explore the data services available with Azure Data Factory. Build streamlined workflows, and work with the interactive analytics workspace powered by Apache Spark.
 cardDescription: Learn the data engineering tools and techniques supported by Azure Databricks.
 prerequisites:  | 
   [!include[](../../includes/azure-subscription-prerequisite.md)]
@@ -18,8 +18,6 @@ iconUrl: /learn/achievements/modern-data-warehouse.svg
 levels:
 - intermediate
 roles:
-- developer
-- solution-architect
 - data-scientist
 - data-engineer
 products:
