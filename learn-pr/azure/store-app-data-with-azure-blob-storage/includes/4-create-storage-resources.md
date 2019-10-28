@@ -35,7 +35,7 @@ az storage account create \
   --kind StorageV2 \
   --resource-group <rgn>[sandbox resource group name]</rgn> \
   --location eastus \
-  --name <your-unique-storage-account-name>
+  --name [your-unique-storage-account-name]
 ```
 
 > [!NOTE]

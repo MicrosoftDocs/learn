@@ -27,7 +27,7 @@ The modules in this learning path form a progression, where you follow the Tails
 
 ### Run the template
 
-1. Run a template that sets up everything for you in your Azure DevOps organization.
+Run a template that sets up everything for you in your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=create-multi-stage-pipeline&azure-portal=true)
@@ -84,7 +84,7 @@ At the end of this module, you move the card to the **Done** column after you've
 
 ## Create the Azure App Service environments
 
-Here, you create the environments that define the pipeline stages. You create one App Service instance that corresponds to each stage: _Dev_, _Test_, and _Staging_.
+Here, you create the environments that define the pipeline stages. You create one App Service instance for each stage: _Dev_, _Test_, and _Staging_.
 
 In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you brought up App Service through the Azure portal. Although the portal is a great way to explore what's available on Azure or to perform basic tasks, bringing up components such as App Service can become tedious.
 
@@ -204,7 +204,7 @@ To do so, you:
 
     For example, for the environments that map to the _Dev_ and _Test_ stages, **B1 Basic** might be the appropriate choice because they're meant to be accessible to only your team.
 
-    For the _Staging_ environment, you would choose a plan that matches your production environment, which would likely provide greater CPU, memory, and storage resources. That way, you can run performance tests, like load tests, in an environment that resembles your production environment without affecting live traffic to your site.
+    For the _Staging_ environment, you would choose a plan that matches your production environment. That plan would likely provide greater CPU, memory, and storage resources. That way, you can run performance tests, like load tests, in an environment that resembles your production environment without affecting live traffic to your site.
 
 1. Run the following `az webapp list` command to list the hostname and state of each App Service instance.
 
@@ -249,7 +249,7 @@ To add the variables:
 1. Select **+ Variable group**.
 1. Under **Properties**, enter **Release** for the variable group name.
 1. Under **Variables**, select **+ Add**.
-1. Enter **WebAppNameDev** as the name of your variable. Enter the name of the App Service instance that corresponds do your _Dev_ environment, such as **tailspin-space-game-web-dev-1234**, as its value.
+1. Enter **WebAppNameDev** as the name of your variable. Enter the name of the App Service instance that corresponds to your _Dev_ environment, such as **tailspin-space-game-web-dev-1234**, as its value.
 1. Repeat steps 5 and 6 two more times to create variables for your _Test_ and _Staging_ environments, as shown in this table:
 
     | Variable name         | Example value                            |
