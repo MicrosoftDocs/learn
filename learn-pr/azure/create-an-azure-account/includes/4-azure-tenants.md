@@ -10,7 +10,7 @@ When it comes to Azure AD tenants, there is no concrete definition of "organizat
 > [!TIP]
 > The email address you use to sign in to Azure can be associated with more than one tenant. You might see this if you have an Azure account and you use Microsoft Learn's Azure Sandbox to complete exercises. In the Azure portal, you can only view resources belonging to one tenant at a time. To switch the tenant you're viewing resources for, select the **Book and filter** icon at the top of the portal and choose a different tenant in the **Switch directory** section.
 
-Azure AD tenants and subscriptions have a many-to-one trust relationship: A tenant can be associated with multiple Azure subscriptions, but every subscription is associated with only one tenant. This structure allows organizations to manage multiple subscriptions and set security rules across all the resources contained within them.
+Azure AD tenants and subscriptions have a one-to-many trust relationship: A tenant can be associated with multiple Azure subscriptions, but every subscription is associated with only one tenant. This structure allows organizations to manage multiple subscriptions and set security rules across all the resources contained within them.
 
 Here's a simple representation of how account owners, subscriptions, tenants, and resources work together.
 

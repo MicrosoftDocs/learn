@@ -10,6 +10,8 @@ The second customization tells the Azure Functions extension to use the advanced
 
 ### Add concierge tenant to Visual Studio Code
 
+The following steps associate the free Azure subscription created for you with Visual Studio Code. At the end of the tutorial you'll follow steps to restore Visual Studio Code back to its original settings. 
+
 1. In the Cloud Shell, run the following command and copy the tenant ID to your clipboard.
 
     ```bash
@@ -23,16 +25,6 @@ The second customization tells the Azure Functions extension to use the advanced
 1. Enter the tenant in the **Azure: Tenant** textbox.
 
 ![Add tenant ID to Visual Studio Code Azure extension configuration](../media/serverless-app-vs-code-tenant.png)
-
-### Enable Azure Functions advanced creation
-
-1. On Windows or Linux, select **File > Preferences > Settings**. On macOS, select **Code > Preferences > Settings**.
-
-1. Navigate through **User Settings > Extensions > Azure Functions**
-
-1. Check the checkbox for **Azure Function: Advanced Creation**
-
-    ![Enable advanced Functions creation](../media/serverless-app-extension-adv-creation.png)
 
 ### Sign out and back in
 
@@ -71,14 +63,15 @@ Now Visual Studio Code is configured to use the sandbox resources and avoid any 
 1. Follow the prompts to provide the following information.
 
    | Name              | Value                                                                    |
-   | ----------------- | ------------------------------------------------------------------------ |
-   | Function app      | Select **Create Function App in Azure**                              |
-   | Function app name | Enter a globally unique name. Valid characters are `a-z`, `0-9`, and `-`.|
-   | OS                | Select **Windows**                                                       |
-   | Plan              | Select **Consumption**                                                   |
-   | Language          | Select **JavaScript**                                                    |
-   | Resource group    | Select **<rgn>[sandbox resource group name]</rgn>**                      |
-   | Storage account   | Select the account you created earlier                                   |
+   | ------------------------------- | ------------------------------------------------------------------------ |
+   | Function app                    | Select **Create new Function App in Azure... Advanced**                  |
+   | Function app name               | Enter a globally unique name. Valid characters are `a-z`, `0-9`, and `-`.|
+   | OS                              | Select **Windows**                                                       |
+   | Plan                            | Select **Consumption**                                                   |
+   | Language                        | Select **JavaScript**                                                    |
+   | Resource group                  | Select **<rgn>[sandbox resource group name]</rgn>**                      |
+   | Storage account                 | Select the account you created earlier                                   |
+   | Application Insights resource   | Select **Skip for now**                                                  |
 
     A new function app is created in Azure and the deployment begins. The Azure Functions Visual Studio Code extension first creates the Azure resources and then deploys the function app.
 
@@ -90,7 +83,7 @@ Now Visual Studio Code is configured to use the sandbox resources and avoid any 
 
 1. Open **public/index.html.js** and replace `<FUNCTION_APP_ENDPOINT>` with the function's endpoint.
 
-1. Next, upload your local settings to Azure by opening the command palette via **F1** and select **Azure Functions: Upload local settings**. When prompted, choose to overwrite all settings.
+1. Next, upload your local settings to Azure by opening the command palette via **F1** and select **Azure Functions: Upload local settings**. When prompted, choose the function app you just created, and choose to overwrite all settings.
 
 ## Configure static websites in Azure Storage
 
@@ -104,7 +97,9 @@ Use the following steps to configure the Azure Storage account to host a static 
    | ----------------- | ----------------------------------------------------------------- |
    | Storage account   | Select the account you created earlier.                           |
    | Default file      | Select **index.html** as the index document name for the account. |
-   | Error document    | Press **Enter** to accept the default 404 error document path.    |
+   | Error document    | Enter **index.html** for the default 404 error document path.     |
+
+The error document path is the page the browser will load when a routing error occurs. This is important for JavaScript frameworks like Vue.js which have client-side routing.
 
 ## Deploy the web application to Azure Storage
 
@@ -154,7 +149,7 @@ Now you can make change to the application's data and observe how to the data is
 1. In Visual Studio integrated terminal, enter the following command and watch as the UI is automatically updated.
 
     ```bash
-    npm run update
+    npm run update-data
     ```
 
     ![End state of serverless web app](../media/serverless-app-deployed.png)

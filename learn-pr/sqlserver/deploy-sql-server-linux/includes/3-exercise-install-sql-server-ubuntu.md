@@ -4,8 +4,6 @@ You are a database administrator at the wholesale company Wide World Importers. 
 
 Here, you will see how to  deploy SQL Server on Ubuntu, install command-line tools and Azure Data Studio, and create a database on SQL Server.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 ## Create an Ubuntu Virtual Machine 

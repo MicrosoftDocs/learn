@@ -21,18 +21,18 @@ quiz:
   questions:
   - content: Azure Import/Export allows you to export data from ______________.
     choices:
-    - content: Azure file storage
+    - content: Azure Storage
       isCorrect: false
-      explanation: You can't export data held in Azure file storage.
-    - content:  Azure blob storage
+      explanation: You can't export data held in Azure Storage.
+    - content:  Azure Blob storage
       isCorrect: true
       explanation: You can only export blob data with the Azure Import/Export service.
-    - content:  Azure blob and file storage
+    - content:  Azure Blob and Azure Storage
       isCorrect: false
-      explanation: You can only export blob data using the Azure Import/Export service.
-  - content: You receive disk drives with your exported data from Microsoft. You attempt to copy the data from the disks back to on-premises storage, but you can't access the data. Why might this be the case?
+      explanation: You can only export blob data with the Azure Import/Export service.
+  - content: You receive disk drives with your exported data from Microsoft. You try to copy the data from the disks back to on-premises storage, but you can't access the data. Why might this be the case?
     choices:
-    - content: You don't have the privileges to view the data.  Ask the Azure tenant administrator to give you access to the storage account from where the data was exported.
+    - content: You don't have permissions to view the data. Ask the Azure tenant administrator to give you access to the storage account from which the data was exported.
       isCorrect: false
       explanation: Access to data on the disks is unrelated to the permissions you have on the Azure storage account.
     - content: You didn't specify the correct BitLocker encryption key when you tried to access the data. 

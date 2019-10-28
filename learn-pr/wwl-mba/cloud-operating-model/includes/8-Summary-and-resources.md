@@ -1,6 +1,6 @@
 Moving to the cloud is a complex undertaking. It requires the alignment of senior business leaders on the business value of making the move. They must then create an effective migration strategy that will be adopted by employees. The Microsoft Cloud Operating Model can help your business easily identify when to move to the cloud, how to create an effective migration strategy, and which approach to technology migration and modernization your business should take.
 
-Now that you've reviewed this module, you should be able to: 
+Now that you've reviewed this module, you should be able to:
 
 - Use the Cloud Operating Model to identify where you are in the digital transformation journey.
 - Identify triggers and opportunities for cloud migration.
@@ -17,7 +17,7 @@ Here are the three key takeaways of this module:
 - The key drivers for cloud computing services that represent migration opportunities are  cost, speed, global scale, productivity, performance, and reliability.
 :::column-end:::
 :::row-end:::
- 
+
 
 
 
@@ -49,7 +49,7 @@ Skill readiness paths:
 - [Principles of cloud computing](https://docs.microsoft.com/learn/modules/principles-cloud-computing/)
 - [Automate business process using Microsoft Flow](https://docs.microsoft.com/learn/paths/automate-process-using-flow/)
 
-Discover more:  
+Discover more:
 
 - [Microsoft Azure: The only consistent and comprehensive hybrid cloud](https://azure.microsoft.com/blog/microsoft-azure-the-only-consistent-comprehensive-hybrid-cloud/)
-- [Compliance offerings](http://aka.ms/allcompliance)
+- [Compliance offerings](https://aka.ms/allcompliance)

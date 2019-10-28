@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-security.secure-aad-users-with-mfa.exercise-mfa
+metadata:
+  title: Exercise - Enable Azure Multi-Factor Authentication
+  description: Exercise - Enable Azure Multi-Factor Authentication
+  ms.date: 10/02/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Exercise - Enable Azure Multi-Factor Authentication
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-exercise-mfa.md)]

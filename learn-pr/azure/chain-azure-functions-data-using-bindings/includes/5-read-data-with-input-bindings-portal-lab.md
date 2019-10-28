@@ -1,6 +1,6 @@
 Imagine that you want to create a simple bookmark lookup service. Your service is read-only initially. If users want to find an entry, they send a request with the ID of the entry and you return the URL. The following flowchart explains the flow:
 
-![Flow diagram showing the process of finding a bookmark in our Azure Cosmos DB back-end. When the Azure function receives a request with the bookmark id, it first checks whether the request is valid, if not an error response is generated. For valid requests, the function checks if the bookmark id is present in the Azure Cosmos DB database, if not present an error response is generated. If the bookmark id is found, a success response is generated.](../media/5-find-bookmark-flow-small.png)
+![Flow diagram showing the process of finding a bookmark in our Azure Cosmos DB back-end. When the Azure function receives a request with the bookmark ID, it first checks whether the request is valid, if not an error response is generated. For valid requests, the function checks if the bookmark ID is present in the Azure Cosmos DB database, if not present an error response is generated. If the bookmark ID is found, a success response is generated.](../media/5-find-bookmark-flow-small.png)
 
 When users send you a request with some text, you try to find an entry in your back-end database that contains this text as a key or ID. You return a result that indicates whether you found the entry.
 
@@ -27,13 +27,9 @@ A database account is a container for managing one or more databases. Before we 
     |Resource Group     |   <rgn>[sandbox resource group name]</rgn>      |  This field is pre-populated with the resource group from your sandbox.       |
     |Account Name     | *Enter a unique name*        |  Enter a unique name to identify this Azure Cosmos DB account. Because `documents.azure.com` is appended to the name that you provide to create your URI, use a unique but identifiable name.<br><br>The account name can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 50 characters.       |
     |API     | Core (SQL)        |  The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (document database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently require a separate account. <br><br>Select **Core (SQL)**. At this time, the Azure Cosmos DB trigger, input bindings, and output bindings only work with SQL API and Graph API accounts.        |
-    |Location     | Select from the list        | Choose the nearest one to you that is also one of the allowed *Sandbox regions* listed below.        |
+    |Location     | Select from the list        | Choose the region nearest to you.        |
 
      Leave all other fields in the **New account** blade at their default values.
-
-    ### Sandbox regions
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
-
 
 1. Select **Review + create** to review and validate the configuration. 
 
@@ -134,6 +130,8 @@ You now have a few entries in your [!INCLUDE [cosmos-coll-name](./cosmos-coll-na
 
 ## Create your function
 
+::: zone pivot="javascript"
+
 1. Navigate to the function app that you created in the preceding unit.
 
 1. Select the **Add** (**+**) button next to **Functions** to start the function creation process. 
@@ -150,6 +148,29 @@ You now have a few entries in your [!INCLUDE [cosmos-coll-name](./cosmos-coll-na
 
 1. Select **Create** to create your function.
     This action opens the *index.js* file in the code editor and displays a default implementation of the HTTP-triggered function.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. Navigate to the function app that you created in the preceding unit.
+
+1. Select the **Add** (**+**) button next to **Functions** to start the function creation process. 
+   The page displays the complete set of supported triggers.
+
+1. Select **HTTP trigger**
+
+1. Fill out the **New Function** dialog that appears to the right using the following values.
+
+    | Field | Value |
+    |----------|--------|
+    | Name     | [!INCLUDE [func-name-find](./func-name-find.md)] |
+    | Authorization level | **Function** |
+
+1. Select **Create** to create your function.
+    This action opens the *run.ps1* file in the code editor and displays a default implementation of the HTTP-triggered function.
+
+::: zone-end
 
 ### Verify the function
 
@@ -208,11 +229,44 @@ Now that you have your binding defined, it's time to use it in your function.
 
 ## Update function implementation
 
+::: zone pivot="javascript"
+
 1. Select your function, [!INCLUDE [func-name-find](./func-name-find.md)], to open *index.js* in the code editor. You've added an input binding to read from your database, so update the logic to use this binding.
 
 2. Replace all code in *index.js* with the code from the following snippet and hit **Save**.
 
    [!code-javascript[](../code/find-bookmark-single.js)]
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. Select your function, [!INCLUDE [func-name-find](./func-name-find.md)], to open *run.ps1* in the code editor. You've added an input binding to read from your database, so update the logic to use this binding.
+
+2. Replace all code in *run.ps1* with the code from the following snippet and hit **Save**.
+
+   ```powershell
+    using namespace System.Net
+
+    param($Request, $bookmark, $TriggerMetadata)
+
+    if ($bookmark) {
+        $status = [HttpStatusCode]::OK
+        $body = @{ url = $bookmark.url }
+    }
+    else {
+        $status = [HttpStatusCode]::NotFound
+        $body = "No bookmarks found"
+    }
+
+    Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
+        StatusCode = $status
+        Body = $body
+        ContentType = "application/json"
+    })
+    ```
+
+::: zone-end
 
 An incoming HTTP request triggers the function, and an `id` query parameter is passed to the Azure Cosmos DB input binding. If the database finds a document that matches this ID, then the `bookmark` parameter will be set to the located document. In that case, we construct a response that contains the URL value found in the bookmarked document. If no document is found matching this key, we would respond with a payload and status code that tells the user the bad news.
 

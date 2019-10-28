@@ -17,13 +17,14 @@ abstract: |
   - Query data in a graph database from an application using the Gremlin API
 prerequisites: |
   - Beginner-level knowledge of creating and using an Azure Cosmos DB
-iconUrl: /learn/achievements/store-and-access-data-with-cosmos-db-and-the-graph-api-social.svg
+iconUrl: /learn/achievements/store-and-access-data-with-cosmos-db-and-the-graph-api.svg
 levels:
 - beginner
 roles:
 - developer
 products:
 - azure
+- azure-cosmos-db
 units:
 - learn.azure.store-access-data-cosmos-graph-api.introduction
 - learn.azure.store-access-data-cosmos-graph-api.determine-graph-database-fits-data-needs-of-your-application

@@ -1,11 +1,14 @@
 Let's start by getting the sample data we'll use to train our ML models. We'll use Python to retrieve the data.
 
-> [!NOTE]
-> You can run the code from this module in several ways. You can use an Azure Data Science VM which has all the required tools preinstalled. Alternatively, you can use [Azure Notebooks](https://notebooks.azure.com/) which also has all the packages and tools available. Finally, you can execute it locally as long as you install the necessary packages.
+>[!IMPORTANT]
+>It is strongly recommended that you use [Azure Notebooks](https://notebooks.azure.com/) as described previously to run the code examples because everything is preconfigured and you get the latest version of Python. 
+
 
 ## Using a local development install
 
-We'll process the sample data using [NumPy](http://www.numpy.org/) and [scikit-learn](https://scikit-learn.org/stable/index.html) which are common scientific package for Python. You will need these package installed into your Python environment if you plan to execute the code locally. We'll also need the Azure Machine Learning SDK for Python to connect our Python code to the Azure Machine Learning service.
+If you are not using Azure Notebook and are running the code example locally, you need to perform the steps below to install the Python scikit-learn package and the Azure ML SDK.
+
+You will process the sample data using [NumPy](http://www.numpy.org/) and [scikit-learn](https://scikit-learn.org/stable/index.html) which are common scientific package for Python. You will also need to install the Azure ML SDK which connects you to the Azure Machine Learning service workspace. 
 
 You can execute the following commands to install the required packages into your Python environment.
 
@@ -17,7 +20,7 @@ This installs several related packages which are useful in processing data in Py
 
 ## Retrieve the MNIST data
 
-Run the following code in your Python editor of choice to retrieve the MNIST dataset and save it to a local **data** folder.
+Run the following code in a notebook cell to retrieve the MNIST dataset and save it to a local **data** folder.
 
 ```python
 import os
@@ -37,7 +40,7 @@ You will see output similar to this: `('./data/test-labels.gz', <http.client.HTT
 
 ## Split out the datasets
 
-The next step is to split the data into training and test sets. We'll need a function to load the compressed file and return numpy arrays we can process. Save the following code off to a file named **utils.py**.
+The next step is to split the data into training and test sets. We'll need a function to load the compressed file and return numpy arrays we can process.
 
 ```python
 import gzip
@@ -59,32 +62,33 @@ def load_data(filename, label=False):
             res = res.reshape(n_items[0], 1)
     return res
 
-
-# one-hot encode a 1-D array
-def one_hot_encode(array, num_of_classes):
-    return np.eye(num_of_classes)[array.reshape(-1)]
+print('Functions defined')
 ```
 
-Next, add the following code to your Python app, make sure **utils.py** is in the current folder so you can import the `load_data` function.
+With the load_data helper function defined, we can now use it to load the data using the code below. 
 
 ```python
-from utils import load_data
-
 # To help the model converge faster, shrink the intensity values (X) from 0-255 to 0-1
+
 X_train = load_data('./data/train-images.gz', False) / 255.0
 y_train = load_data('./data/train-labels.gz', True).reshape(-1)
 
 X_test = load_data('./data/test-images.gz', False) / 255.0
 y_test = load_data('./data/test-labels.gz', True).reshape(-1)
+
+print('Data loaded')
 ```
 
 ## Display sample images
 
-To verify we've loaded the data, let's display one of the sample images + labels using matplotlib.
+To verify we've loaded the data, let's display one of the sample images + labels using matplotlib.  This may take a minute or two to run.
 
 ```python
+%matplotlib inline 
+
 import matplotlib.pyplot as plt
 import numpy as np
+
 
 count = 0
 sample_size = 30
@@ -98,6 +102,8 @@ for i in np.random.permutation(X_train.shape[0])[:sample_size]:
     plt.imshow(X_train[i].reshape(28, 28), cmap=plt.cm.Greys)
     
 plt.show()
+
+print('Done')
 ```
 
 It should display an image which looks something like this:

@@ -7,7 +7,6 @@ metadata:
   ms.date: 12/27/2018
   author: markjulmar
   ms.author: smmark
-  #ms.learn-contact: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure fundamentals
@@ -43,7 +42,7 @@ products:
 - azure-virtual-machines
 modules:
 - learn.principles-cloud-computing
-#- learn.welcome-to-azure
+- learn.welcome-to-azure
 - learn.explore-azure-infrastructure
 - learn.create-azure-account
 - learn.tour-azure-portal-features

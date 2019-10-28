@@ -3,9 +3,14 @@ Some applications place greater demands on data storage than others. Apps such a
 When creating your VMs or adding new disks, you have a few choices which will have a dramatic impact on disk performance, starting with the _type_ of storage you choose.
 
 ## Types of disks 
+
 Azure Disks are designed for 99.999% availability. 
 
-There are three performance tiers for storage that you can choose from when creating your disks -- Premium SSD Disks, Standard HDD storage, and Standard SSD. Depending on the VM size, you can mix and match these disk types.
+There are four performance tiers for storage that you can choose from when creating your disks -- Ultra disks, Premium SSD Disks, Standard SSD, and Standard HDD storage. Depending on the VM size, you can mix and match these disk types.
+
+### Ultra disks
+
+Azure ultra disks deliver high throughput, high IOPS, and consistent low latency disk storage for Azure IaaS VMs. Ultra disks include the ability to dynamically change the performance of the disk without the need to restart your virtual machines (VM). Ultra disks are suited for data-intensive workloads such as SAP HANA, top tier databases, and transaction-heavy workloads. Ultra disks can only be used as data disks. We recommend using premium SSDs as OS disks.
 
 ### Premium SSD disks 
 
@@ -13,15 +18,15 @@ Premium SSD disks are backed by solid-state drives (SSDs), and deliver high-perf
 
 You can use Premium SSD disks with VM sizes that include an "s" in the series name. For example, there is the **Dv3-Series** and the **Dsv3-series**, the **Dsv3-series** can be used with Premium SSD disks.
 
-### Standard HDD storage
-
-Standard HDD disks are backed by traditional hard disk drives (HDDs). Standard HDD disks are billed at a lower rate than the Premium disks. Standard HDD disks can be used with any VM size.
-
 ### Standard SSD
 
 Premium storage is limited to specific VM sizes - so the VM type you create will impact the storage capabilities: size, max capacity, and storage type. What if you have a low-end VM, but you need SSD storage for I/O performance? That's what Standard SSDs are for. Standard SSDs are between standard HDDs and premium SSDs from a performance and cost perspective.
 
 You can use standard SSDs with any VM size, including VM sizes that don't support premium storage. Using standard SSDs is the only way to use SSDs with those VMs. This disk type is only available in specific regions and only with _managed disks_.
+
+### Standard HDD storage
+
+Standard HDD disks are backed by traditional hard disk drives (HDDs). Standard HDD disks are billed at a lower rate than the Premium disks. Standard HDD disks can be used with any VM size.
 
 ### Unmanaged versus managed disks
 
@@ -39,22 +44,26 @@ Managed disks are the newer and **recommended disk storage model**. They elegant
 With all the additional benefits, including the guaranteed performance characteristics, you should always choose managed disks for new VMs.
 
 ### Disk comparison
-The following table provides a comparison of Standard HDD, Standard SSD, and Premium SSD to help you decide what to use.
 
-|    | Azure Premium Disk |Azure Standard SSD Disk          | Azure Standard HDD Disk 
-|--- | ------------------ | ------------------------------- | ----------------------- 
-| **Disk Type** | Solid State Drives (SSD) | Solid State Drives (SSD) | Hard Disk Drives (HDD)  
-| **Overview**  | SSD-based high-performance, low-latency disk support for VMs running IO-intensive workloads or hosting mission-critical production environment |More consistent performance and reliability than HDD. Optimized for low-IOPS workloads| HDD-based cost-effective disk for infrequent access
-| **Scenario**  | Production and performance sensitive workloads |Web servers, lightly used enterprise applications, and Dev/Test| Backup, Non-critical, Infrequent access 
-| **Disk Size** | 32-4095 GiB | 128-4095 GiB | 32-4095 GiB 
-| **Max Throughput per disk** | 250 MiB/s | Up to 60 MiB/s | Up to 60 MiB/s 
-| **Max IOPS per disk** | 7500 IOPS | Up to 500 IOPS | Up to 500 IOPS 
+The following table provides a comparison of Ultra disk, Premium SSD, Standard SSD, and Standard HDD to help you decide what to use.
+
+
+|   | Ultra disk   | Premium SSD   | Standard SSD   | Standard HDD   |
+|---------|---------|---------|---------|---------|
+|Disk type   |SSD   |SSD   |SSD   |HDD   |
+|Scenario   |IO-intensive workloads such as SAP HANA, top tier databases (for example, SQL, Oracle), and other transaction-heavy workloads.   |Production and performance sensitive workloads   |Web servers, lightly used enterprise applications and dev/test   |Backup, non-critical, infrequent access   |
+|Max disk size   |65,536 gibibyte (GiB)    |32,767 GiB    |32,767 GiB   |32,767 GiB   |
+|Max throughput   |2,000 MiB/s    |900 MiB/s   |750 MiB/s   |500 MiB/s   |
+|Max IOPS   |160,000    |20,000   |6,000   |2,000   |
+
 
 There is more detail on disk performance below.
 
 ## Data replication
 
-The data in your Microsoft Azure storage account is always replicated to ensure durability and high availability. Azure Storage replication copies your data so that it's protected from planned and unplanned events like transient hardware failures, network or power outages, natural disasters, and so on. You can choose to replicate your data within the same data center, across zonal data centers within the same region, and even across regions. There are four types of replication:
+The data in your Microsoft Azure storage account is automatically replicated to ensure durability and high availability. Azure Storage replication copies your data so that it's protected from planned and unplanned events like transient hardware failures, network or power outages, natural disasters, and so on. You can choose to replicate your data within the same data center, across zonal data centers within the same region, and even across regions.
+
+There are four types of replication:
 
 - **Locally redundant storage (LRS)** - Azure replicates the data within the same Azure data center. The data remains available if a node fails. However, if an entire data center fails, data may be unavailable.
 - **Geo-redundant storage (GRS)** - Azure replicates your data to a second region that is hundreds of miles away from the primary region. If your storage account has GRS enabled, then your data is durable even if there's a complete regional outage or a disaster in which the primary region isn't recoverable.
@@ -67,7 +76,7 @@ Standard storage accounts support all replication types, but premium storage acc
 
 The performance of your disks depends on the type of disk you chose. Each disk is rated to a specific number of I/O operations per second, or IOPS (pronounced "eye-ops"). In addition, each drive has a throughput rating - this determines how much data you can read or write in a second. The combination of these two determines how fast the disk is.
 
-With standard storage, you get a maximum of **500 IOPS and 60 MB/second** throughput per disk (even on SSDs). With premium storage, the IOPS depends on the premium disks you choose and the VM size.
+For example, with standard storage, you get a maximum of **500 IOPS and 60 MB/second** throughput per disk (even on SSDs). With premium storage, the IOPS depends on the premium disks you choose and the VM size.
 
 |  | P4 | P6 | P10 | P15 | P20 | P30 | P40 | P50 | P60 | P70 | P80 |
 |--|----|----|-----|-----|-----|-----|-----|-----|-----|-----|-----|

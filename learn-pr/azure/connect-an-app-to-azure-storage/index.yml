@@ -4,11 +4,10 @@ metadata:
   title: Connect an app to Azure Storage
   description: Create a simple application and add configuration, client library references, and code to connect it to Azure Storage.
   ms.date: 09/24/2018
-  author: JesseDietrichson
-  ms.author: jediet
+  author: cryophobia
+  ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: jediet
 title: Connect an app to Azure Storage
 summary: Create a simple application and add configuration, client library references, and code to connect it to Azure Storage.
 abstract: | 
@@ -16,7 +15,7 @@ abstract: |
   - Explore the data types and services supported by an Azure storage account.
   - Create a new Azure storage account using the Azure portal.
   - Create a new application and connect the app to an Azure Storage account.
-prerequisites: Some programming expierience in either C# or Javascript
+prerequisites: Some programming experience in either C# or JavaScript
 iconUrl: /learn/achievements/connect-an-app-to-azure-storage.svg
 levels:
 - beginner

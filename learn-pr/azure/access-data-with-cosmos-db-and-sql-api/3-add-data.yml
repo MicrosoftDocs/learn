@@ -4,8 +4,8 @@ metadata:
   title: Exercise - add data using Data Explorer
   description: Learn how to add data to Azure Cosmos DB by using the Azure portal
   ms.date: 05/15/2019
-  author: markjulmar
-  ms.author: smmark
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

@@ -1,7 +1,5 @@
 Serving video files to global users will likely benefit from a Content Delivery Networks (CDN). Here you'll learn how to create a CDN endpoint and profile. Then you'll see how to configure the endpoint to cache content from a static website.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create a Content Delivery Network
 
 Now, you'll create a CDN and connect that CDN to the website that you've created from your storage account.

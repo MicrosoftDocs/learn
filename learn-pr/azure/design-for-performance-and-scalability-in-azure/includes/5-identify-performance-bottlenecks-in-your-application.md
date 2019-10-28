@@ -38,10 +38,29 @@ We want to be kept informed that our application is running smoothly. Proactive 
 
 ### Azure Monitor
 
-Azure Monitor provides a single management point for infrastructure-level logs and monitoring for most of your Azure services. It collects metrics, activity logs, and diagnostic logs and more. Azure Monitor provides us with a range of features including:
+Azure Monitor provides a single management point for infrastructure-level logs and monitoring for most of your Azure services. Azure Monitor maximizes the availability and performance of your applications by delivering a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments.
 
-- Azure alerts to proactively notify or take action on any breaches to metrics or activities arising.
-- Use Azure Dashboards to combine many monitoring sources into one view of our application.
+The following diagram depicts a high-level view of Azure Monitor. At the center of the diagram are the data stores for metrics and logs, which are the two fundamental types of data that Azure Monitor uses. On the left side are the sources of monitoring data that populate these data stores. On the right side are the different functions that Azure Monitor performs with this collected data such as analysis, alerting, and streaming to external systems.
+
+![Diagram that depicts a high-level view of Azure Monitor.](../media/5-azure-monitor.png)
+
+Azure Monitor can collect data from a variety of sources. You can think of monitoring data for your applications as occurring in tiers that range from your application to any OS and the services it relies on to the platform itself. Azure Monitor collects data from each of the following tiers:
+
+- **Application monitoring data** - Data about the performance and functionality of the code you have written, regardless of its platform.
+- **Guest OS monitoring data** - Data about the OS on which your application is running. It might be running in Azure, in another cloud, or on-premises.
+- **Azure resource monitoring data** - Data about the operation of an Azure resource.
+- **Azure subscription monitoring data** - Data about the operation and management of an Azure subscription and data about the health and operation of Azure itself.
+- **Azure tenant monitoring data** - Data about the operation of tenant-level Azure services, such as Azure Active Directory (Azure AD).
+
+As soon as you create an Azure subscription and start adding resources, such as VMs and web apps, Azure Monitor starts collecting data. Activity logs record when resources are created or modified and metrics tell you how the resource is performing and the resources that it's consuming. You can also extend the data you're collecting by enabling diagnostics in your apps and adding agents to collect telemetry data from Linux and Windows or Application Insights.
+
+You can then use this data to help scale your application based on load. **Autoscale** in Azure Monitor helps to enable the elastic scaling feature of the cloud. It allows you to have the right amount of resources running to handle the load on your application. 
+
+![Screenshot showing the Autoscale pane in the Azure portal for Azure monitor](../media/5-discover-autoscale-azure-monitor.png)
+
+It allows you to create rules that use metrics collected by Azure Monitor for two purposes: to determine when to automatically add resources to handle increases in the load and to save money by removing idle resources. You specify a minimum and a maximum number of instances and the logic for when to increase or decrease resources. For example, you can setup rules around CPU utilization that increase or decrease the number of instances available for a resource.
+
+![Screenshot showing the Autoscale setting for CPU usage in the Azure portal with Azure monitor](../media/5-scale-based-on-cpu.png)
 
 Azure Monitor is the place to start for all your near real-time resource metric insights. Many Azure resources will start outputting metrics automatically once deployed. For example, Azure Web App instances will output compute and application request metrics. Metrics from Application Insights are also collated here in addition to VM host diagnostic metrics. VM guest diagnostic metrics will also appear once you opt in.
 

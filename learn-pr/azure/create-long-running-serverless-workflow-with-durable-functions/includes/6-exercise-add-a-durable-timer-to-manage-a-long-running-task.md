@@ -4,6 +4,7 @@ The company has asked you to amend your new workflow to incorporate an escalatio
 In this unit, you'll add a timer to control timeout during the execution of your workflow. You'll also learn how to use the timeout to control which execution path the workflow takes.
 
 ## Add moment npm package to your function app
+
 Before changing our workflow, we'll add the **moment** npm package to our function app through the Kudo console. 
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) , go to the function app that you created in the previous exercise.

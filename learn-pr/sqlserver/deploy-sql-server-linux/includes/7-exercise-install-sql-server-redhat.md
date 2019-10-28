@@ -4,8 +4,6 @@ You are a database administrator at the wholesale company Wide World Importers a
 
 In this exercise, you will deploy SQL Server on RHEL, install command-line tools, and create a database on SQL Server. 
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 ## Create a Red Hat Virtual Machine 

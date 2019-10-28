@@ -69,9 +69,6 @@ The Azure CLI includes the `cognitiveservices` command to manage Cognitive Servi
 
 Let's create a Cognitive Services with the Azure CLI.
 
-<!-- Activate the sandbox -->
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create a Cognitive Services account
 
 We need an API access key to make calls to the Computer Vision API. To get access keys, we need a Cognitive Services account for the Computer Vision API. We'll use `az cognitiveservices create` to create the account in our subscription.
