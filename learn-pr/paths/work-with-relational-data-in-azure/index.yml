@@ -30,5 +30,6 @@ modules:
 - learn.create-azure-db-for-postgresql
 - learn.azure-scale-azure-sql-dbs-elastic-pools
 - learn.secure-your-azure-sql-database
+- learn.develop-app-that-queries-azure-sql
 trophy:
   uid: learn.work-with-relational-data-in-azure.trophy

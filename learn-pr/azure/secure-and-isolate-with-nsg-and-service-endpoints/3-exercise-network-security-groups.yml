@@ -11,7 +11,5 @@ metadata:
   ROBOTS: NOINDEX
 title: Exercise - Create and manage network security groups
 durationInMinutes: 15
-interactive: bash
-azureSandbox: true
 content: |
   [!include[](includes/3-exercise-network-security-groups.md)]

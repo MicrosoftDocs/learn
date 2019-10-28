@@ -12,7 +12,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
     ```azurecli
     az network vnet subnet create \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group $rg \
       --vnet-name vehicleAppVnet  \
       --name appGatewaySubnet \
       --address-prefixes 10.0.0.0/24
@@ -22,7 +22,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
     ```azurecli
     az network public-ip create \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group $rg \
       --name appGatewayPublicIp \
       --sku Standard \
       --dns-name vehicleapp${RANDOM}
@@ -39,7 +39,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
     ```azurecli
     az network application-gateway create \
-    --resource-group <rgn>[Sandbox resource group]</rgn> \
+    --resource-group $rg \
     --name vehicleAppGateway \
     --sku WAF_v2 \
     --capacity 2 \
@@ -58,13 +58,13 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
     ```azurecli
     WEBSERVER1IP="$(az vm list-ip-addresses \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group $rg \
       --name webServer1 \
       --query [0].virtualMachine.network.privateIpAddresses[0] \
       --output tsv)"
 
     WEBSERVER2IP="$(az vm list-ip-addresses \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group $rg \
       --name webserver2 \
       --query [0].virtualMachine.network.privateIpAddresses[0] \
       --output tsv)"
@@ -75,7 +75,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
     ```azurecli
     az network application-gateway address-pool create \
       --gateway-name vehicleAppGateway \
-      --resource-group <rgn>[Sandbox resource group]</rgn> \
+      --resource-group $rg \
       --name vmPool \
       --servers $WEBSERVER1IP $WEBSERVER2IP
     ```
@@ -84,7 +84,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
     ```azurecli
     az network application-gateway address-pool create \
-        --resource-group <rgn>[Sandbox resource group]</rgn> \
+        --resource-group $rg \
         --gateway-name vehicleAppGateway \
         --name appServicePool \
         --servers $APPSERVICE.azurewebsites.net
@@ -94,7 +94,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
     ```azurecli
     az network application-gateway frontend-port create \
-        --resource-group <rgn>[Sandbox resource group]</rgn> \
+        --resource-group $rg \
         --gateway-name vehicleAppGateway \
         --name port80 \
         --port 80
@@ -104,7 +104,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
     ```azurecli
     az network application-gateway http-listener create \
-        --resource-group <rgn>[Sandbox resource group]</rgn> \
+        --resource-group $rg \
         --name vehicleListener \
         --frontend-port port80 \
         --gateway-name vehicleAppGateway
@@ -118,7 +118,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
     ```azurecli
     az network application-gateway probe create \
-        --resource-group <rgn>[Sandbox resource group]</rgn> \
+        --resource-group $rg \
         --gateway-name vehicleAppGateway \
         --name customProbe \
         --path / \
@@ -133,7 +133,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
     ```azurecli
     az network application-gateway http-settings update \
-        --resource-group <rgn>[Sandbox resource group]</rgn> \
+        --resource-group $rg \
         --gateway-name vehicleAppGateway \
         --name appGatewayBackendHttpSettings \
         --host-name-from-backend-pool true \
@@ -143,13 +143,13 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
 ## Configure path-based routing
 
-Now we need to configure path-based routing for our Application gateway. We'll route requests to **/VehicleRegistration/** to the **vmPool** and requests to **/LicenseRenewal/** to the **appServicePool**. Any requests without any URL context will be routed to the **vmPool** ad a default.
+Now we need to configure path-based routing for our Application gateway. We'll route requests to **/VehicleRegistration/** to the **vmPool** and requests to **/LicenseRenewal/** to the **appServicePool**. Any requests without any URL context will be routed to the **vmPool** as a default.
 
 1. Run the following command to create the path map for the **vmPool**.
 
     ```azurecli
     az network application-gateway url-path-map create \
-        --resource-group <rgn>[Sandbox resource group]</rgn> \
+        --resource-group $rg \
         --gateway-name vehicleAppGateway \
         --name urlPathMap \
         --paths /VehicleRegistration/* \
@@ -161,7 +161,7 @@ Now we need to configure path-based routing for our Application gateway. We'll r
 
     ```azurecli
     az network application-gateway url-path-map rule create \
-        --resource-group <rgn>[Sandbox resource group]</rgn> \
+        --resource-group $rg \
         --gateway-name vehicleAppGateway \
         --name appServiceUrlPathMap \
         --paths /LicenseRenewal/* \
@@ -174,7 +174,7 @@ Now we need to configure path-based routing for our Application gateway. We'll r
 
     ```azurecli
     az network application-gateway rule create \
-        --resource-group <rgn>[Sandbox resource group]</rgn> \
+        --resource-group $rg \
         --gateway-name vehicleAppGateway \
         --name appServiceRule \
         --http-listener vehicleListener \
@@ -187,7 +187,7 @@ Now we need to configure path-based routing for our Application gateway. We'll r
 
     ```azurecli
     az network application-gateway rule delete \
-        --resource-group <rgn>[Sandbox resource group]</rgn> \
+        --resource-group $rg \
         --gateway-name vehicleAppGateway \
         --name rule1
     ```

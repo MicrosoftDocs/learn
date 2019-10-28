@@ -2,9 +2,9 @@ In this module, you'll create a build pipeline that produces a package that can 
 
 It's likely that you've used open-source or other third-party components in your software. Using components that are popular in the community and have already been built and tested is often the fastest way to get things done.
 
-You may also have your own application code that you can move into a library or package so that others can use it, whether as an open source project or software that only your team can access.
+You might also have your own application code that you can move into a library or package so that others can use it. This might be an open source project, or software that only your team can access.
 
-There are many ways to build and host your packages. The right solution depends largely on the kinds of programming languages and frameworks you use. Here you'll continue your work with the Tailspin web team by creating a NuGet package for .NET that's hosted on Azure Artifacts.
+There are many ways to build and host your packages. The right solution depends largely on the kinds of programming languages and frameworks you use. Here, you'll continue your work with the Tailspin web team, by creating a NuGet package for .NET that's hosted on Azure Artifacts.
 
 In this module, you will:
 
@@ -35,4 +35,4 @@ You met the _Space Game_ web team at Tailspin Toys in previous modules. As a ref
 
 :::row-end:::
 
-Mara has prior experience with DevOps and is helping the team adopt a more streamlined process using Azure DevOps.
+Mara has prior experience with DevOps, and is helping the team adopt a more streamlined process by using Azure DevOps.

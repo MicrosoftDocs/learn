@@ -221,13 +221,11 @@ In this exercise, we'll enhance our app to upload videos to blob storage.
     curl -L https://github.com/MicrosoftDocs/mslearn-apps-and-batch/raw/master/cutifypets/InputFiles/6.mp4 > ./InputFiles/6.mp4
     ```
 
-    <!-- Changed the git code repo -->
-
-1. Save the Azure Storage credentials to environment variables.
+1. Save the Azure Storage credentials to environment variables. The second command is using the *RESOURCE_GROUP* environment variable that we defined in the **Set up connection details for the application** section of the earlier exercise, **Exercise - Access your Batch account using the .NET client library**. The value is the name of the resource group you selected when you created your Batch account. 
 
     ```bash
     export STORAGE_NAME=$(az storage account list --query "[?contains(name,'cuti')].name" --output tsv)
-    export STORAGE_KEY=$(az storage account keys list --account-name $STORAGE_NAME --query [0].value --output tsv --resource-group <rgn>[sandbox resource group name]</rgn>)
+    export STORAGE_KEY=$(az storage account keys list --account-name $STORAGE_NAME --query [0].value --output tsv --resource-group $RESOURCE_GROUP)
     ```
 
 1. Build and run the app.

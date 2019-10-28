@@ -1,11 +1,8 @@
-Azure Search can be used in a code-free way via the Portal. The wizards and editors aren't as feature rich as the SDK and REST APIs, but they will enable you to explore the best features quickly.
+Azure Search can be used in a code-free way via the portal. The wizards and editors aren't as feature rich as the SDK and REST APIs, but they will enable you to explore the best features quickly.
 
-Your organization has a website where exercise videos are published. Your organization now needs to add a catalog index capability to enable users to search across the entire catalog using different properties. Azure Search has been chosen as the tool to enrich the web content.
+Your organization has a website where exercise videos are published. Your organization now needs to add a catalog index capability to enable users to search across the entire catalog using different properties. Azure Search has been chosen as the tool to provide the search functionality.
 
-In the unit, you'll create the Azure Search Service.
-
-<!-- Activate the sandbox -->
-[!INCLUDE [azure-sandbox-activate](../../../includes/azure-sandbox-activate.md)]
+In the unit, you'll create the Azure Search service.
 
 ## Create an Azure Search service in the Azure portal
 
@@ -26,7 +23,7 @@ In the unit, you'll create the Azure Search Service.
 
 1. Select **Create**.
 
-    Your Azure Search Service is now up and running. There are many options to further configure your new search instance.
+    Your Azure Search service will be up and running soon. There are many options to further configure your new search instance.
 
     If you were to continue to interact with the search service programmatically, you will need to obtain the URL and API key.
 

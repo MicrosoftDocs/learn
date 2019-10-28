@@ -153,7 +153,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 Run the following command:
 
-```bash
+```dotnetcli
 dotnet run > ContosoPets.Api.log &
 ```
 

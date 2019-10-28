@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-cosmos-db-for-scale.4-how-to-choose-a-partition-key
 metadata:
-  title: Choosing a partition key in Azure Cosmos DB?
+  title: Choose a partition key in Azure Cosmos DB
   description: Learn how to create a container with a partition key that will enable your database to scale as your needs grow.
   ms.date: 09/24/2018
-  author: mimig1
-  ms.author: mimig
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Choosing a partition key
+title: Choose a partition key in Azure Cosmos DB
 durationInMinutes: 6
 content: |
   [!include[](includes/4-how-to-choose-a-partition-key.md)]

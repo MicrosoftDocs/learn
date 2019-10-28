@@ -4,8 +4,6 @@ Suppose you have planned to implement caching for the Board Pricing API. You wan
 
 In this exercise, you'll import an API into Azure API Management and add a caching policy to it.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 > [!NOTE]

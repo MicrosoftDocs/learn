@@ -25,7 +25,7 @@ You'll do the following things:
     WEBAPPNAME=educationapp-$RANDOM
     az webapp up \
         --resource-group <rgn>[Sandbox resource group]</rgn> \
-        --sku B1 \
+        --sku F1 \
         --name $WEBAPPNAME
     ```
 

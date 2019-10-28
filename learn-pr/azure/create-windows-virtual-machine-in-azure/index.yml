@@ -4,14 +4,13 @@ metadata:
   title: Create a Windows virtual machine in Azure
   description: Azure virtual machines (VMs) enable you to create dedicated compute resources in minutes that can be used just like a physical desktop or server machine. Whether your virtual machine is a server that you connect to for administration purposes, or a virtual workstation for an end user, the remote desktop protocol (RDP) gives the same experience as sitting at the terminal of a local physical computer.
   ms.date: 09/24/2018
-  author: JesseDietrichson
-  ms.author: jediet
+  author: cryophobia
+  ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
- #ms.learn-contact: jediet
 title: Create a Windows virtual machine in Azure
 summary: Azure virtual machines (VMs) enable you to create dedicated compute resources in minutes that can be used just like a physical desktop or server machine.
-abstract:  | 
+abstract:  |
   In this module, you will:
   - Create a Windows virtual machine using the Azure portal
   - Connect to a running Windows virtual machine using Remote Desktop
@@ -25,19 +24,16 @@ levels:
 roles:
 - administrator
 - developer
-products: 
+products:
 - azure
-- azure-portal
 - azure-virtual-machines
 units:
-#TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
 - learn.create-a-windows-vm-in-azure.1-introduction
 - learn.create-a-windows-vm-in-azure.2-create-a-windows-virtual-machine
 - learn.create-a-windows-vm-in-azure.3-exercise-create-a-vm
 - learn.create-a-windows-vm-in-azure.4-connect-to-a-windows-virtual-machine
 - learn.create-a-windows-vm-in-azure.5-exercise-connect-to-a-windows-vm-using-rdp
 - learn.create-a-windows-vm-in-azure.6-manage-vm
-- learn.create-a-windows-vm-in-azure.7-exercise-manage-vm
 - learn.create-a-windows-vm-in-azure.8-summary
 badge:
   uid: learn.create-a-windows-vm-in-azure.badge

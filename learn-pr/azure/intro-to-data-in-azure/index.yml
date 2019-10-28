@@ -4,11 +4,10 @@ metadata:
   title: Core Cloud Services - Azure data storage options
   description: In this module, we'll explore the benefits of Azure data storage services versus on-premises storage.
   ms.date: 09/24/2018
-  author: sowmyasubramaniam 
-  ms.author: sosubra
+  author: patridge 
+  ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Core Cloud Services - Azure data storage options
 summary: In this module, we'll explore the benefits of Azure data storage versus on-premises storage.
 abstract:  | 
@@ -27,6 +26,10 @@ roles:
 products: 
 - azure
 - azure-storage
+- azure-sql-database
+- azure-cosmos-db
+- azure-data-lake
+- azure-files
 units:
 - learn.intro-to-data-in-azure.1-introduction
 - learn.intro-to-data-in-azure.2-benefits-of-using-azure-to-store-data
