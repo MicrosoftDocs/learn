@@ -11,7 +11,7 @@ The _Dev_, _Test_, and _Staging_ stages each deploy the build artifact to its ow
 * The _Test_ stage runs at 3 A.M. each morning. This stage runs only when the _release_ branch contains changes since the last run. You use a _scheduled trigger_ to specify when the _Test_ stage runs.
 * The _Staging_ stage runs only after you approve the changes in the _Test_ stage. You add a _release approval_ to the **staging** environment to pause the pipeline until you approve or reject the change.
 
-Keep in mind that this pipeline satisfies the Tailspin team's requirements. The shape of your pipeline as well as how changes flow through your pipeline depend on the needs of your own team and the needs of the apps and services your team builds.
+Keep in mind that this pipeline satisfies the Tailspin team's requirements. The shape of your pipeline as well as how changes flow through it depend on the needs of your own team and the needs of the apps and services your team builds.
 
 Although the team is making steps towards improving their release cadence, there's room for additional improvements. For example, the _Dev_ stage is the perfect place to integrate the web application with a database server. In the next module, you'll work with the Tailspin team as they convert the _Space Game_ web application from reading sample data from local files to using a real SQL database that runs on Azure.
 
