@@ -1,18 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.choose-the-right-disk-storage-for-vm-workload.2-managed-unmanaged-local-disk-storage
 title: Managed, unmanaged, and local disk storage
-
 metadata:
   title: Managed, unmanaged, and local disk storage
   description: Managed, unmanaged, and local disk storage
-  ms.date: 6/25/2019
+  ms.date: 11/04/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/2-managed-unmanaged-local-disk-storage.md)]
 quiz:

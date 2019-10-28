@@ -9,5 +9,7 @@ As you saw in the healthcare organization's scenarios, the choice of disk type c
 
 ## Learn more
 
+For more information on Azure virtual machine disks, visit the following articles.
+
 - [What disk types are available in Azure?](https://docs.microsoft.com/azure/virtual-machines/windows/disks-types)
 - [Managed Disks pricing](https://azure.microsoft.com/pricing/details/managed-disks/)

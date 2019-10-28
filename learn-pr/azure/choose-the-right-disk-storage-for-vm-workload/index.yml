@@ -3,7 +3,7 @@ uid: learn.choose-the-right-disk-storage-for-vm-workload
 metadata:
   title: Choose the right disk storage for your virtual machine workload
   description: Azure provides a variety of disk storage options for virtual machine workloads. Identify the features of capabilities of each type to ensure your application performs optimally.
-  ms.date: 6/25/2019
+  ms.date: 11/04/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial

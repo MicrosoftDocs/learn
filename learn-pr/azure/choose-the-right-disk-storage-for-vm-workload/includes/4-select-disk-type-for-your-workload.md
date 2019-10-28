@@ -38,4 +38,4 @@ The on-premises system includes a set of stored procedures that implement mainte
 
 Again you want to minimize costs. The site is used only by the team of 20 administrators and places low load on its disk drives, which are used only to store the web application's code files. This server does not have strict availability requirements, as it's not a business critical system.
 
-In this case, you can minimize costs by using standard HDDs in the web server. To minimize administrative requirements you will use managed disks.
+In this case, you can minimize costs by using standard HDDs in the web server. To minimize administrative requirements, you will use managed disks.

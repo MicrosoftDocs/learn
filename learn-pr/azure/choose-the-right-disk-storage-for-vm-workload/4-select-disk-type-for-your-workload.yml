@@ -1,18 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.choose-the-right-disk-storage-for-vm-workload.4-select-disk-type-for-your-workload
 title: Select a disk type for your workload
-
 metadata:
   title: Select a disk type for your workload
   description: Select a disk type for your workload
-  ms.date: 6/25/2019
+  ms.date: 11/04/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/4-select-disk-type-for-your-workload.md)]
 quiz:
