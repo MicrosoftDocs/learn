@@ -1,14 +1,5 @@
 After you've chosen whether to use managed or unmanaged disks, next you have to pick the best disk type for your virtual machines.
 
-<!-- Suppose that your on-premises network includes the following systems:
-
-- A business-critical sales database that supports a highly utilized sales app in the east of the United States.
-- The same sales database running in Brazil.
-- A web site that displays healthcare products from the sales database.
-- A test environment for new versions of the web site. -->
-
-You want to migrate each of these systems onto Azure virtual machines and you want to select the optimal disk types for each.
-
 Here, you'll learn about the performance and behavior of each disk type so that you can make the right choice.
 
 ## Disk performance measures
@@ -47,8 +38,6 @@ Ultra disks are a new disk type and currently have some limitations:
 
 Some workloads place intensive loads on disk storage. For example, top-tier databases and SAP HANA need fast performance and are transaction-heavy. If you have such a workload, and if premium SSDs have caused performance bottlenecks, consider using ultra SSDs.
 
-<!-- In the scenario above, ultra SSDs are the best disks to use for the sales database in the east of the United States. This system is business-critical and IO intensive. It's also located in the East US 2 region which does support ultra disks. -->
-
 ## Premium SSD
 
 Premium SSDs are the next tier down from ultra disks in terms of performance, but still provide high throughput and IOPS with low latency. Premium disks don't have the current limitations of ultra disks. For example, they are available in all regions and can be used with virtual machines that are outside of availability zones.
@@ -71,8 +60,6 @@ If you need higher performance than standard disks provide, or if you can't sust
 
 You can migrate a disk to a premium SSD at any time, if you have found that its performance is not good enough.
 
-<!-- In the scenario above, premium SSDs are the best disks to use for the localized sales database in Brazil. This system is business-critical but not as IO intensive as the primary system. Additionally, you cannot use ultra disks in South American datacenters currently, so they are not an option. Premium disks provide the maximum performance in this region. -->
-
 ![Creating a premium SSD](../media/3-create-premium-ssd.png)
 
 ## Standard SSD
@@ -93,8 +80,6 @@ These performance figures are not guaranteed but are achieved 99% of the time.
 
 Choose to use standard SSDs when you have budgetary constraints and a workload that is not disk-intensive. For example, web servers, lightly used enterprise applications, and test servers can all run on standard SSDs.
 
-<!-- In the scenario above, standard SSDs are the best disks to use for the web servers. This system is business-critical and requires good performance but it is not IO intensive.  -->
-
 ![Selecting a size for a standard SSD](../media/3-select-standard-ssd-size.png)
 
 ## Standard HDD
@@ -112,5 +97,3 @@ This table illustrates the performance characteristics of Standard HDDs in sever
 | | | |
 
 Choose to use standard HDDs when you want to minimize costs for less critical workloads and development or test environments.
-
-<!-- In the scenario above, standard HDDs are the best disks to use for the test environment. This system is not business-critical or IO intensive. Load is unlikely to be large and the impact of variations in performance is limited. -->
