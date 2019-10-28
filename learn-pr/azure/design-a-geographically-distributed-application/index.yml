@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - Intermediate familiarity with Azure PaaS services
   - Intermediate familiarity with architecture principles
-iconUrl: /learn/achievements/design-geographically-distributed-application.png
+iconUrl: /learn/achievements/design-geographically-distributed-application-social.png
 levels:
 - advanced
 roles:
