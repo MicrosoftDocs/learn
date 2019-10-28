@@ -2,7 +2,29 @@ You can choose whether to let Azure manage the storage infrastructure for your v
 
 Suppose you have a variety of virtual machines running healthcare workloads in your on-premises network that you want to migrate to Azure. In most cases, you're happy to let Azure manage virtual hard disks. However, you have a database server that hosts a large database. You've been asked to keep a close control over the storage for this database so that you can manage costs carefully. You're also interested in minimizing storage costs for two servers that host a microservice for your accounting application.
 
-In this unit, you'll see how to choose between managed and unmanaged disks. You'll also learn about disk roles and ephemeral disks.
+In this unit, you'll leran about disk roles and ephemeral disks. You'll also learn about the differences between managed and unmanaged disks.
+
+## Disk roles
+
+Each disk can take one of three roles in a virtual machine:
+
+- **OS Disk.** One disk in each virtual machine contains the operating system files. When you create a virtual machine, you select a virtual machine image and that fixes the operating system and the OS disk that is attached to the new machine. The OS disk has a maximum capacity of 2,048 GB.
+- **Data Disk.** You can add one or more data virtual disks to each virtual machine to store data. For example, database files, web site static content, or custom application code should be stored on data disks. The number of data disks you can add depends on the virtual machine size. Each data disk has a maximum capacity of 32,767 GB.
+- **Temporary Disk.** Each virtual machine contains a single temporary disk, which is used for short-term storage applications such as page files and swap files. The contents of temporary disks are lost during maintenance events so do not use these disks for critical data. Temporary disks are unmanaged in Azure. 
+
+You can administer OS disks and data disks in the **Disks** page of the virtual machine in the Azure portal:
+
+![Editing disks in the Azure portal](../media/2-edit-disks-portal.png)
+
+## Ephemeral OS disks
+
+An ephemeral disk is a virtual disk in the OS disk role that does not save data to an Azure Storage account. Instead, an ephemeral OS disk saves data on the local virtual machine storage. 
+
+An ephemeral disk has faster read and write latency than a managed disk. It is also faster to reset the image to the original boot state if you're using an ephemeral disk. Finally, an ephemeral disk incurs no storage costs. However, an individual virtual machine failure may destroy all the data on an ephemeral disk and leave the virtual machine unable to boot.
+
+Ephemeral disks work well when you want to host a stateless workload, such as the business logic for a multi-tier website, or a microservice. Such applications are tolerant of individual virtual machine failures, because requests can be rerouted to other virtual machines in the system. You can reset the failed virtual machine to its original boot state rapidly and get it back up and running faster than if it used managed disks. 
+
+Consider using an ephemeral OS disk for the accounting application microservice. 
 
 ## Managed disks
 
@@ -39,24 +61,4 @@ Unmanaged disks might be a good fit for the database server you want to migrate.
 > ```
 >
 
-## Disk roles
 
-Each disk can take one of three roles in a virtual machine:
-
-- **OS Disk.** One disk in each virtual machine contains the operating system files. When you create a virtual machine, you select a virtual machine image and that fixes the operating system and the OS disk that is attached to the new machine. The OS disk has a maximum capacity of 2,048 GB.
-- **Data Disk.** You can add one or more data virtual disks to each virtual machine to store data. For example, database files, web site static content, or custom application code should be stored on data disks. The number of data disks you can add depends on the virtual machine size. Each data disk has a maximum capacity of 32,767 GB.
-- **Temporary Disk.** Each virtual machine contains a single temporary disk, which is used for short-term storage applications such as page files and swap files. The contents of temporary disks are lost during maintenance events so do not use these disks for critical data. Temporary disks are unmanaged in Azure. 
-
-You can administer OS disks and data disks in the **Disks** page of the virtual machine in the Azure portal:
-
-![Editing disks in the Azure portal](../media/2-edit-disks-portal.png)
-
-## Ephemeral OS disks
-
-An ephemeral disk is a virtual disk in the OS disk role that does not save data to an Azure Storage account. Instead, an ephemeral OS disk saves data on the local virtual machine storage. 
-
-An ephemeral disk has faster read and write latency than a managed disk. It is also faster to reset the image to the original boot state if you're using an ephemeral disk. Finally, an ephemeral disk incurs no storage costs. However, an individual virtual machine failure may destroy all the data on an ephemeral disk and leave the virtual machine unable to boot.
-
-Ephemeral disks work well when you want to host a stateless workload, such as the business logic for a multi-tier website, or a microservice. Such applications are tolerant of individual virtual machine failures, because requests can be rerouted to other virtual machines in the system. You can reset the failed virtual machine to its original boot state rapidly and get it back up and running faster than if it used managed disks. 
-
-Consider using an ephemeral OS disk for the accounting application microservice. 
