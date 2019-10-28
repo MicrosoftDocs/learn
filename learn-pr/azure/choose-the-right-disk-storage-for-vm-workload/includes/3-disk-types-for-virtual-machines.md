@@ -35,11 +35,11 @@ The performance of an Ultra SSD depends on the size you select, as you can see i
 | Over 1,024 | 160,000 | 2,000 |
 | | |
 
-Ultra disks can have capacities from 4 GB up to 64 TB. A unique feature of ultra disks is that you can adjust the IOPS and throughput values while they are running and without detaching them from the host virtual machine. Performance adjustments can take up to an hour to take effect. 
+Ultra disks can have capacities from 4 GB up to 64 TB. A unique feature of ultra disks is that you can adjust the IOPS and throughput values while they are running and without detaching them from the host virtual machine. Performance adjustments can take up to an hour to take effect.
 
 Ultra disks are a new disk type and currently have some limitations:
 
-- They are only available in East US 2, SouthEast Asia, and North Europe.
+- They are only available in a subset of Azure regions.
 - They can only be attached to virtual machines that are in availability zones.
 - They can only be attached to ES/DS v3 virtual machines.
 - They can only be used as data disks and can only be created as empty disks.
@@ -57,12 +57,12 @@ You can't adjust performance without detaching these disks from their virtual ma
 
 This table illustrates the high performance of premium SSDs:
 
-| Disk Size Name | Disk Size (GB) | IOPS | Throughput (MBps) |
+| Disk Size Name | Disk Size | IOPS | Throughput (MBps) |
 | --- | --- | --- | --- |
-| P4 | 32 | 120 | 25 |
-| P15 | 256 | 1,100 | 125 |
-| P40 | 2,048 | 7,500 | 250 |
-| P80 | 32,767 | 20,000 | 900 |
+| P4 | 32 GiB | 120 | 25 |
+| P15 | 256 GiB | 1,100 | 125 |
+| P40 | 2 TiB | 7,500 | 250 |
+| P80 | 32 TiB | 20,000 | 900 |
 | | | |
 
 With premium SSDs, these performance figures are guaranteed. There is no such guarantee for standard tier disks, which can be impacted occasionally by high demand.
