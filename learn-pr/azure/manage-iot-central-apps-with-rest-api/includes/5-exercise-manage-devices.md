@@ -209,7 +209,7 @@ az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/stor
 
 ## View device telemetry
 
-You can use the REST API to view the last known value for a device's telemetry measurement. Run the following command to view the last known humidity value from the **storemon-sim-001** device:
+You can use the REST API to view the last known value for a device's telemetry measurement. Run the following command to view the last known humidity value from the **storemon-sim-001** device. You may need to wait a few minutes before the simulated device starts sending telemetry and this command can run successfully:
 
 ```azurecli
 az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/storemon-sim-001/components/sensor/telemetry/humid \
