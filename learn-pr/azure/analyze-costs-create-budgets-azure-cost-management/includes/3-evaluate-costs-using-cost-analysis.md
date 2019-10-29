@@ -95,7 +95,7 @@ Besides subscriptions, you can create exports on resource groups, accounts, depa
 
 Click  **Add**, type a name for the export, and then select the  **Daily export of month-to-date costs** option. Click **Next**.
 
-![New export example showing export type](../media/3-basics_exports.png)
+![New export example showing export type](../media/3-basics-exports.png)
 
 Specify the subscription for your Azure storage account, then select your storage account. Specify the storage container and the directory path that you'd like the export file to go to. Click **Next**.
 
