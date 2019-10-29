@@ -42,7 +42,7 @@ Identify the subtasks of *React to state changes in your Azure services using Ev
 
 1. **Introduction**
 
-    You work on an operations team for a large organization. You have a set of dedicated client virtual machines that are under strict regulatory and change control, and need to be notified if there are any changes to the virtual machines on Azure. You would like to receive emails if there are any changes to these virtual machines.
+    You work on an operations team for a large organization. You have a set of dedicated client virtual machines that are under strict regulatory and change control, and need to be notified if there are any changes to the virtual machines on Azure. You would like to receive emails if there are any changes to these virtual machines, so that you can address any issues as they arise.
 
 1. **Learning-content unit title**
 
