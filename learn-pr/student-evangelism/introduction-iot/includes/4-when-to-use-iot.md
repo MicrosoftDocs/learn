@@ -1,9 +1,7 @@
 In this section, we will discuss how you can decide whether Azure IoT is the right choice for your application.  
 
 The decision of how you can use Azure IoT to build your IoT solution is ultimately determined by:
-
-* Your business requirements
-
+- Your business requirements
 - The type of solution you want to develop from a cloud standpoint
 - Your organization's skill set in Azure IoT PaaS technologies
 
