@@ -17,11 +17,11 @@ A device template specifies the capabilities of a device you want to connect to 
 - Properties, such as target temperature, that IoT Central will set on your device.
 - Commands, such as reboot, that IoT Central will send to your device.
 
-![Device template](../media/4-device-template.png)
+![An example device template for an MXChip IoT DevKit device in the IoT Central UI](../media/4-device-template.png)
 
 The capabilities in a device template are grouped into interfaces. Interfaces enable you to share groups of related capabilities across templates. For example, the common *Device Information* interface defines device properties such as the manufacturer, model, and software version.
 
-![Device information](../media/4-device-information.png)
+![The Device Information interface in the example device template in the IoT Central UI](../media/4-device-information.png)
 
 You create and manage device templates using the IoT Central web UI or the REST API. In the IoT Central web UI, you can:
 
@@ -71,9 +71,19 @@ X.509 certificates are recommended in a production environment, but SAS keys are
 
 IoT Central can generate simulated devices from a device template. These simulated devices are useful for testing the behavior of your IoT Central application. A simulated device sends telemetry, reports property values, lets the application set property values, and responds to commands. In this module, you'll create some simulated devices to generate telemetry data to export.
 
+## Use the REST API to manage your device templates
+
+The [IoT Central REST API for device templates](https://docs.microsoft.com/rest/api/iotcentral/devices) lets you:
+
+- Create a device template
+- Update a device template
+- Delete a device template
+- Retrieve a device template
+- List the devices associated with a template
+
 ## Use the REST API to manage your devices
 
-The IoT Central REST API lets you:
+The [IoT Central REST API for devices](https://docs.microsoft.com/rest/api/iotcentral/devices) lets you:
 
 - Get a list of the devices in the application
 - Get a device by ID

@@ -45,7 +45,7 @@ az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/preview/continuousDa
 
 If you navigate to your application in your browser, you can see the data export configuration you added:
 
-![New devices](../media/9-data-export.png)
+![View the status of an export definition in the IoT Central UI](../media/9-data-export.png)
 
 ## View the data
 

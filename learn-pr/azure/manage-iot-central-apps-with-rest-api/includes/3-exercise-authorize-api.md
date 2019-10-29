@@ -43,15 +43,15 @@ The following steps create an IoT Central application and generate an API token 
 
 1. In another browser tab or window, navigate to URL shown in the output of the last command. This page in the web UI is where you generate API tokens:
 
-    ![API Tokens](../media/3-tokens.png)
+    ![The API Tokens page in the IoT Central UI with no tokens shown](../media/3-tokens.png)
 
 1. Select **+ Generate Token**. Enter `admin` as the **Token name** and make sure **Application Administrator** is selected as the **Role**. Then select **Generate**:
 
-    ![Generate API token](../media/3-generate-token.png)
+    ![Generate an API token with the Application Administrator role in the IoT Central UI](../media/3-generate-token.png)
 
 1. Copy the generated API token and save it locally in a text file. If you lose the token, you'll have to regenerate it:
 
-    ![Copy API token](../media/3-copy-token.png)
+    ![Copy a generated API token from the IoT Central UI](../media/3-copy-token.png)
 
 1. Replace the `ADD YOUR TOKEN HERE` in the following command and run it the Cloud Shell. This command saves the API token in an environment variable to use later in the module. Be sure to enclose the token in double quotation marks, `"..."`:
 

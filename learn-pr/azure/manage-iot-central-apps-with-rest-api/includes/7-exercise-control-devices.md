@@ -58,4 +58,4 @@ az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/preview/devices/sto
 
 If you navigate to your application in your browser, you can see the command history for the command you just called:
 
-![Command history](../media/7-command-history.png)
+![View the command history for the reboot command in the IoT Central UI](../media/7-command-history.png)

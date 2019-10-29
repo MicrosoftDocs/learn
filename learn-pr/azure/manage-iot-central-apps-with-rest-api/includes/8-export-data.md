@@ -12,7 +12,7 @@ When you set up data export, you choose from **Azure Blob Storage**, **Azure Eve
 
 ## Use the REST API to work with data export
 
-The IoT Central REST API lets you:
+The [IoT Central REST API for continuous data exports](https://docs.microsoft.com/rest/api/iotcentral/continuousdataexports) lets you:
 
 - List the existing data export definitions
 - View an existing data export definition

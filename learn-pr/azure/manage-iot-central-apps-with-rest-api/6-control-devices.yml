@@ -26,3 +26,14 @@ quiz:
     - content: "Set a cloud property"
       isCorrect: false
       explanation: "No. Cloud property values are never sent to a device."
+  - content: "Where are cloud properties stored?"
+    choices:
+    - content: "Only in the IoT Central application"
+      isCorrect: true
+      explanation: "Yes. Cloud properties are only stored in the IoT Central application, but the application associates them with individual devices."
+    - content: "In both the IoT Central application and real devices"
+      isCorrect: false
+      explanation: "No. Cloud properties are only stored in the IoT Central application, device properties are stored on real devices and synchronize with the IoT Central application."
+    - content: "In both the IoT Central application and simulated devices"
+      isCorrect: false
+      explanation: "No. Cloud properties are only stored in the IoT Central application, device properties are stored on simulated devices and synchronize with the IoT Central application."

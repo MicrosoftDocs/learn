@@ -31,9 +31,10 @@ The commands that a device supports are defined on interfaces in the device temp
 
 For example, a device could respond to a command that asks it to reboot or that asks it to change the frequency at which it sends telemetry values.
 
-## Use the REST API to send commands to devices
+## Use the REST API to control devices
 
-The IoT Central REST API lets you:
+The [IoT Central REST API for devices](https://docs.microsoft.com/rest/api/iotcentral/devices) lets you:
 
 - Execute a command on a device
 - View the history of sending a command to a device
+- Get, set, and update properties
