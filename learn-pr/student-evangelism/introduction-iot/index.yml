@@ -9,8 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot
 title: "Introduction to Azure IoT"
-summary:
-***Contributed by University of Oxford [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***
+summary: "***Contributed by University of Oxford [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
 abstract: |
   
 prerequisites: |
