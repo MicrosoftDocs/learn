@@ -4,13 +4,13 @@ title: Exercise - Determine your most expensive resource and see trends
 metadata:
   title: Exercise - Determine your most expensive resource and see trends
   description: Exercise - Determine your most expensive resource and see trends
-  ms.date: 7/31/2019
+  ms.date: 10/01/2019
   author: bandersmsft
   ms.author: banders
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-azureSandbox: true
+azureSandbox: false
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-see-trends.md)]
