@@ -1,0 +1,32 @@
+### YamlMime:Module
+uid: learn.oxford.intro-to-iot
+metadata:
+  title: "Introduction to Azure IoT"
+  description: In this module, we'll introduce various features and capabilities of Azure IoT
+  ms.date: 10/29/2019
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot
+title: "Introduction to Azure IoT Edge"
+summary:
+***Contributed by University of Oxford [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
+abstract: |
+  
+prerequisites: |
+    None
+iconUrl: /http://via.placeholder.com/120x120.%7C  #Using Place holder as mentioned in learning Guide
+badge:
+  uid: learn.introduction-to-iot.badge
+levels:
+- beginner
+roles:
+- ai-edge-engineer
+products:
+- azure-iot
+units:
+- learn.oxford.intro-to-iot.introduction
+- learn.oxford.intro-to-iot.what-is-iot
+- learn.oxford.intro-to-iot.how-iot-works
+- learn.oxford.intro-to-iot.when-to-use-iot
+
