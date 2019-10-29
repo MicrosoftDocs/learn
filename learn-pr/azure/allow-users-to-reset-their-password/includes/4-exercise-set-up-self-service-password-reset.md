@@ -7,8 +7,6 @@ Here, you will configure and test SSPR.
 > [!NOTE]
 > You will need to use your mobile phone to complete the password reset process in this exercise.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create a Directory
 
 The default directory in the Azure Sandbox does not support SSPR. So in this exercise, let's create a second directory and switch to it:
