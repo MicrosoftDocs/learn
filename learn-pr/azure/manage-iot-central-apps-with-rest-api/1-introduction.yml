@@ -5,11 +5,10 @@ metadata:
   title: Introduction
   description: Introduction
   ms.date: 11/5/2019
-  author: markjulmar
+  author: dominicbetts
   ms.author: dobetts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

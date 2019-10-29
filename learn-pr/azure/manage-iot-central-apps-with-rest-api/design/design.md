@@ -26,7 +26,7 @@ Azure IoT Central
 
 ## Summary
 
-Manage an IoT Central application programatically using the REST API and Azure CLI commands. You create an IoT Central application, add device templates and devices, and configure a continuous data export to Azure blob storage.
+Manage an IoT Central application programmatically using the REST API and Azure CLI commands. You create an IoT Central application, add device templates and devices, and configure a continuous data export to Azure blob storage.
 
 ## Learning objectives
 
@@ -43,10 +43,10 @@ Identify the subtasks of *Manage IoT Central applications by using the REST API*
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
 | Create an IoT Central application | Creating an IoT Central application to manage | Exercise | 1 | No, "Generate API token" |
-| Generate API token | Manage an IoT Central application programatically using the REST API  | Exercise & Knowledge Check | 2 | No, "Create an IoT Central application" |
+| Generate API token | Manage an IoT Central application programmatically using the REST API  | Exercise & Knowledge Check | 2 | No, "Create an IoT Central application" |
 | Create and publish a device template | Add device templates | Exercise & Knowledge Check | 3 | No, "Add real and simulated devices" |
 | Add real and simulated devices | Add devices  | Exercise & Knowledge Check | 3 | No, "Create and publish a device template" |
-| Monitor and control a device | Manage an IoT Central application programatically  | Exercise & Knowledge Check | 4 | Yes |
+| Monitor and control a device | Manage an IoT Central application programmatically  | Exercise & Knowledge Check | 4 | Yes |
 | Configure data export | configure a continuous data export to Azure blob storage | Exercise & Knowledge Check | 5 | Yes |
 
 ## Outline the units
@@ -55,7 +55,7 @@ Identify the subtasks of *Manage IoT Central applications by using the REST API*
 
 1. **Introduction**
 
-    You're building a store analytics solution for a retail company that plans to deploy IoT devices in stores to enable environmental monitoring and control. You want to integrate common device management functions into your existing store management application. To enable this scenario, you need to access your IoT Central application programatically using the REST API.
+    You're building a store analytics solution for a retail company that plans to deploy IoT devices in stores to enable environmental monitoring and control. You want to integrate common device management functions into your existing store management application. To enable this scenario, you need to access your IoT Central application programmatically using the REST API.
 
 1. **Create an IoT Central application and generate an API token**
 
@@ -94,7 +94,7 @@ Identify the subtasks of *Manage IoT Central applications by using the REST API*
     - What type of authorization does IoT Central require a REST API call to use?
     - How do you generate the authorization key?
 
-1. **Add device templates and devices to your application programatically**
+1. **Add device templates and devices to your application programmatically**
 
     List the content that will enable the learner to *Create and publish a device template*:
 
@@ -112,7 +112,7 @@ Identify the subtasks of *Manage IoT Central applications by using the REST API*
         - Real devices authenticate either with a SAS or an X.509 certificate
     - How to use the REST API to manage devices
 
-1. **Exercise - Add device templates and devices to your application programatically**
+1. **Exercise - Add device templates and devices to your application programmatically**
 
     List the steps which apply the learning content from previous unit:
 
@@ -140,7 +140,7 @@ Identify the subtasks of *Manage IoT Central applications by using the REST API*
         - Send commands
     - How to use the REST API to monitor and control devices
 
-1. **Exercise - Manage and control your devices**
+1. **Exercise - Monitor and control your devices**
 
     List the steps which apply the learning content from previous unit:
 
@@ -183,7 +183,7 @@ Identify the subtasks of *Manage IoT Central applications by using the REST API*
 
     How did you solve the problem in the initial scenario with the knowledge learned in the module?
 
-    You wanted to integrate common device management functions into your existing store management application. To enable this scenario, you needed to access your IoT Central application programatically.
+    You wanted to integrate common device management functions into your existing store management application. To enable this scenario, you needed to access your IoT Central application programmatically.
 
     Without integration, an operator would need to use both the existing store management application and the IoT Central dashboards to manage the store.
 
