@@ -46,7 +46,7 @@ How do you ensure that the actual data resident in files is encrypted? You need 
 
 That's where client-side encryption comes in. Your application can encrypt all of the data before it lands in Azure. The data is then decrypted by the application when it fetches this data back. You can use .NET, Python, or Java Azure Storage Client libraries to encrypt the data. You use Azure Key Vault with all of these libraries to take care of your encryption keys.
 
-![Envelope encryption](../media/3-envelope-technique.png)
+![Envelope encryption](../media/3-envelope-technique.svg)
 
 ### Encryption
 

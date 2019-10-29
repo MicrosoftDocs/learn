@@ -18,7 +18,7 @@ Below is an example showing how you can configure TDE in the portal:
 
 Cosmos DB databases allow your data to be stored in an unstructured format. Databases for Cosmos DB are physically stored in hard drives – solid state for Cosmos DB. Cosmos DB components, like backups, are stored in HDDs. Your media attachments, the actual databases, or back-ups can all be protected at rest. At the same time, none of this encryption affects the latency and throughput SLAs that Cosmos DB sets out to meet. Your data is automatically encrypted at rest, but is not automatically encrypted when it is generated, and when it is in use.
 
-![Cosmos DB Encryption behind the scenes](../media/4-cosmos-db-encryption.png)
+![Cosmos DB Encryption behind the scenes](../media/4-cosmos-db-encryption.svg)
 
 Data in your Cosmos DB is protected using AES-256 encryption. In the background, the Azure Cosmos DB management service, with the help of a secret store, manages all of your encryption keys and unwraps them when necessary. These keys are used to encrypt and decrypt your data. Microsoft manages the keys for you and the encryption keys are also rotated to keep your data secure.
 
