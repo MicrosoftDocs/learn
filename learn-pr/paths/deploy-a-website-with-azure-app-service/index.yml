@@ -7,7 +7,6 @@ metadata:
   ms.date: 09/24/2018
   author: markjulmar
   ms.author: smmark
-  #ms.learn-contact: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy a website to Azure with Azure App Service
@@ -26,6 +25,7 @@ modules:
 - learn.host-a-web-application-with-azure-web-apps
 - learn.publish-azure-web-app-with-visual-studio
 - learn.azure.stage-deploy-app-service-deployment-slots
+- learn.azure.app-service-scale-up-scale-out
 - learn.azure.deploy-run-container-app-service
 trophy:
   uid: learn.deploy-a-website-with-azure-app-service.trophy

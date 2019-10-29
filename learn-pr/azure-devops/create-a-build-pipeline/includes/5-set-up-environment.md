@@ -39,6 +39,9 @@ Recall that the team settled on these seven top issues:
 
 ![Backlog of tasks](../../shared/media/build-all-tasks.png)
 
+> [!NOTE]
+> Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
+
 You'll now move the first item, **Stabilize the build server** to the **Doing** column and assign yourself to the work item.
 
 Recall that **Stabilize the build server** relates to fixing the team's existing build server, which runs on spare hardware in the office. The goal is to see if build services on Azure Pipelines can simplify build server maintenance.

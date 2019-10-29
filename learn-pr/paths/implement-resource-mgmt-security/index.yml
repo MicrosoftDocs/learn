@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.security.implement-resource-mgmt-security
+metadata:
+  title: Implement resource management security in Azure
+  description: Learn how to secure resources using policy, role-based access control, and other Azure services
+  brand: azure
+  ms.date: 10/1/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement resource management security in Azure
+summary: Learn how to secure resources using policy, role-based access control, and other Azure services
+prerequisites: None
+iconUrl: /learn/achievements/implement-resource-mgmt-security.svg
+levels:
+- beginner
+- intermediate
+roles:
+- solution-architect
+- administrator
+- security-engineer
+products:
+- azure
+- azure-clis
+- azure-portal
+- azure-resource-manager
+- azure-blueprints
+- azure-policy
+modules:
+- learn.introduction-to-security
+- learn.intro-to-governance
+- learn.control-and-organize-with-resource-manager
+- learn.secure-azure-resources-with-rbac
+trophy:
+  uid: learn.security.implement-resource-mgmt-security.trophy

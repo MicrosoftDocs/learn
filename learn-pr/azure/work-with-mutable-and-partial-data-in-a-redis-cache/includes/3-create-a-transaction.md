@@ -1,8 +1,5 @@
 Let's start by creating an instance of Azure Cache for Redis, and then create a simple transaction that inserts two data values into the cache.
 
-<!-- Activate the sandbox -->
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create an Azure Cache for Redis
 
 Let's start by creating an Azure Cache for Redis with the Azure CLI. Use the Cloud Shell on the right side of the browser window to interact with Azure.

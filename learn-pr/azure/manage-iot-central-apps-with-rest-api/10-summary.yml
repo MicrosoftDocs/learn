@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.manage-iot-central-apps-with-rest-api.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 11/5/2019
+  author: dominicbetts
+  ms.author: dobetts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/10-summary.md)]

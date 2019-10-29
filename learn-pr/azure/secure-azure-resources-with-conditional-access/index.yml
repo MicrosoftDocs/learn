@@ -8,14 +8,12 @@ metadata:
   ms.author: joflore
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Secure your Azure resources with conditional access
 summary: There's a tradeoff between security and ease-of-access. The conditional-access feature of Azure Active Directory helps you implement a good balance between the two. Learn how to implement a conditional-access policy using Azure Active Directory.
 abstract: |
   In this module, you will:
   - Create a test user and a user group
   - Enable a conditional access policy that requires Multi-Factor Authentication (MFA)
-
 prerequisites: |
   - Knowledge of basic Azure concepts, such as resource groups and subscriptions
 iconUrl: /learn/achievements/secure-azure-resources-with-conditional-access.svg
@@ -24,6 +22,7 @@ levels:
 roles: 
 - administrator
 - solution-architect
+- security-engineer
 products: 
 - azure
 - azure-active-directory

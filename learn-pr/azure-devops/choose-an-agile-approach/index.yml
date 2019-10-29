@@ -15,12 +15,12 @@ abstract: |
   In this module, you will:
   - Create an Azure DevOps project
   - Add work items to Azure Boards using the Basic process
-  - Assign team members to work items
+  - Assign work items to team members
 prerequisites: An Azure DevOps organization
 iconUrl: /learn/achievements/azure-devops/choose-an-agile-approach-to-software-development.svg
 ratingEnabled: true
 levels:
-- intermediate
+- beginner
 roles:
 - devops-engineer
 - administrator
