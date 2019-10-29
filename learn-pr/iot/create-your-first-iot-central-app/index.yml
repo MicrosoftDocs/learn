@@ -26,6 +26,7 @@ prerequisites: |
 ### iconUrl: /learn/achievements/generic-badge.svg
 ### iconUrl: /learn/achievements/iot/iot-hub-conveyor-belt-vibration-detection.svg
 iconUrl: /learn/achievements/iot/iot-central-refrigerated-truck-module.svg
+hidden: true
 ratingEnabled: false
 levels:
 - beginner
