@@ -1,11 +1,11 @@
 
 The Azure Internet of Things (IoT) is a collection of Microsoft-managed cloud services that connect, monitor, and control up to millions of IoT assets. In simpler terms, an IoT solution is made up of one or more IoT devices and one or more back-end services running in the cloud that communicate with each other. We describe the three components below.
 
-**IoT devices: **IoT devices are made up of an electronic circuit board with attached sensors or actuators that connect to the internet. IoT devices include some form of radio mechanism to connect to the internet (such as Bluetooth or Wi-Fi).  Pressure sensors, temperature and humidity sensors, accelerometers are all examples of IoT devices. They capture information about a specific environment where they are located. For example, an accelerometer could indicate whether the elevator is at rest or in motion.  
+**IoT devices:** IoT devices are made up of an electronic circuit board with attached sensors or actuators that connect to the internet. IoT devices include some form of radio mechanism to connect to the internet (such as Bluetooth or Wi-Fi).  Pressure sensors, temperature and humidity sensors, accelerometers are all examples of IoT devices. They capture information about a specific environment where they are located. For example, an accelerometer could indicate whether the elevator is at rest or in motion.  
 
-**Communication: **Your device can communicate with back-end services in both directions. The device may send data to the service. It may also receive an indication from the service to increase the frequency of data collection. Communicating with IoT devices has some additional considerations. For example, IoT devices may have limited power and connectivity may be slow or intermittent.
+**Communication:** Your device can communicate with back-end services in both directions. The device may send data to the service. It may also receive an indication from the service to increase the frequency of data collection. Communicating with IoT devices has some additional considerations. For example, IoT devices may have limited power and connectivity may be slow or intermittent.
 
-**Back-end services: **The back-end services receive telemetry data at scale from the devices and determine how to process and store that data. They also communicate with the device and manage the device lifecycle by controlling and monitoring the state of the device.
+**Back-end services:** The back-end services receive telemetry data at scale from the devices and determine how to process and store that data. They also communicate with the device and manage the device lifecycle by controlling and monitoring the state of the device.
 
 ## Azure IoT Value
 
