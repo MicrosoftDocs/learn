@@ -3,7 +3,7 @@ uid: learn.azure.publish-express-node-app-service-vscode
 metadata:
   title: Create and publish an Express.js web application with Azure App Service and Visual Studio Code
   description: In this module, you'll learn how to create and publish webapps with the Express.js server-side framework and Azure App Service.
-  ms.date: 09/16/2019
+  ms.date: 10/30/2019
   author: nickwalkmsft
   ms.author: nickwalk
   ms.topic: interactive-tutorial
@@ -18,8 +18,8 @@ abstract: |
 prerequisites: |
   - Familiarity with web app concepts
   - Beginner-level programming knowledge
-  - Familiarity with local installations of Visual Studio Code and Node.js
-iconUrl: /learn/achievements/generic-badge.svg
+  - Local installations of Visual Studio Code and Node.js
+iconUrl: /learn/achievements/publish-express-node-app-service-vscode.svg
 levels:
 - beginner
 roles:

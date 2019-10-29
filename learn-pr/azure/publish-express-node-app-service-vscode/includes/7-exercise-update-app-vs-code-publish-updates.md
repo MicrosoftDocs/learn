@@ -41,11 +41,7 @@ Let's start by modifying the code, so that it calculates a whole number of days:
 
 You must also alter the view slightly:
 
-1. In VS Code, in the integrated terminal, type this command:
-
-    ```console
-    code ~/countdownExpressApp/views/index.jade
-    ```
+1. Using the Code Explorer window, open `/views/index.jade`.
 
 1. Locate this line of code:
 

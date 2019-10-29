@@ -4,13 +4,13 @@ title: Exercise - Update the app in Visual Studio Code and publish the updates
 metadata:
   title: Exercise - Update the app in Visual Studio Code and publish the updates
   description: In this unit, you'll complete your Launch Countdown website and deploy it to Azure.
-  ms.date: 09/16/2019
+  ms.date: 10/30/2019
   author: nickwalkmsft
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 azureSandbox: true
-durationInMinutes: 2
+durationInMinutes: 4
 content: |
   [!include[](includes/7-exercise-update-app-vs-code-publish-updates.md)]

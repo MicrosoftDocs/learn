@@ -25,12 +25,12 @@ Express.js includes functions that make it easy to intercept HTTP requests, such
 For example, a version of **Hello World** in Express.js might look like this:
 
 ```JavaScript
-var express = require('express')
-var app = express()
+var express = require('express');
+var app = express();
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/', (req, res) => res.send('Hello World!'));
  
-app.listen(3000) 
+app.listen(3000);
 ```
 
 In this code, Express.js is initiated and then the `app.get()` method is called to intercept any GET requests and respond with the "Hello World!" message. The last line configures the app to listen for requests on port 3000. 
@@ -41,34 +41,18 @@ When you want to create a skeleton webapp in Express.js, as a starting point for
 
 ## What is Visual Studio Code?
 
-Visual Studio Code is a free Integrated Development Environment (IDE) for Windows, macOS, and Linux. It has support for JavaScript, TypeScript, and Node.js out-of-the-box, and you can install many extensions for other languages and runtimes. 
+Visual Studio Code is a free code editor for Windows, macOS, and Linux. It has support for JavaScript, TypeScript, and Node.js out-of-the-box, and you can install many extensions for other languages and runtimes. 
 
-You can use VS Code as your preferred IDE regardless of the languages, frameworks, operating systems, and deployment mechanisms you use. There is also an extension for Azure App Service, which you will use later in this module to create webapps and deploy code.
-
-## Installing Express.js
-
-Express.js is a Node.js package, so you can install it by using Node's `npm` package manager tool. 
-
-Change to the app's root folder and then run these commands:
-
-```bash
-npm init
-npm install express --save
-```
+You can use VS Code as your editor regardless of the languages, frameworks, operating systems, and deployment mechanisms you use. There is also an extension for Azure App Service, which you will use later in this module to create webapps and deploy code.
 
 ## Use Express Generator to create a webapp scaffold
 
-Once Express.js is installed in an app, you can use the Express Generator to create the scaffolding for the app. In Node.js version 8.2.0 and later, you can use the `npx` package runner to execute this task:
+Express Generator is a utility that helps you get started on a new app. You can use the `npx` package runner to use Express Generator to create the files for a new app:
 
 ```bash
 npx express-generator --pug --css
 ```
 
-This example includes both the **pug** templating engine, and support for **css** stylesheets. For earlier versions of Node.js, use these commands instead:
-
-```bash
-npm install -g express-generator
-express --pug --css
-```
+This example includes both the **pug** templating engine, and support for **css** stylesheets.
 
 Once the generator has completed, you'll see a default set of files in your webapp, including views, routes, stylesheets, and the **app.js** entry point.

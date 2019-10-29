@@ -18,4 +18,4 @@ In this module, you will:
 
 - Familiarity with web app concepts
 - Beginner-level programming knowledge
-- Familiarity with local installations of Visual Studio Code and Node.js
+- Local installations of Visual Studio Code and Node.js
