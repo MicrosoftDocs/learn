@@ -1,13 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-for-performance-and-scalability.2-scaling-up-and-scaling-out
-title: Scaling up and scaling out
+title: Leverage scaling up and scaling out in your architecture
 metadata:
-  title: Scaling up and scaling out
-  description: In this unit we'll discuss how to leverage scaling up and scaling out in your architecture
+  title: Leverage scaling up and scaling out in your architecture
+  description: In this unit, we'll discuss how to leverage scaling up and scaling out in your architecture
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: jboeshart
+  ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -61,4 +60,4 @@ quiz:
       explanation: 'Startup time is an important consideration in a scaling strategy. As the time to start an instance decreases, the quicker your application can react to increased demand.'
     - content: 'Automating the scaling of your instances based on a metric or schedule'
       isCorrect: false
-      explanation: 'Scaling automation is an important piece of a scaling strategy. As you automate your scaling capabilities you will have greater ability to handle fluctuations in user load without manual intervention or poor user experience.'
+      explanation: 'Scaling automation is an important piece of a scaling strategy. As you automate your scaling capabilities, you will have greater ability to handle fluctuations in user load without manual intervention or poor user experience.'

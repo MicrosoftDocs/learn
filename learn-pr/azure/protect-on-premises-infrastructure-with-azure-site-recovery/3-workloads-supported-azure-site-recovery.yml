@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.3-workloads-supported-azure-site-recovery
+metadata:
+  title: Workloads supported for protection with Azure Site Recovery
+  description: Explore the application-level protection you can take advantage of to protect your company's different workloads.
+  ms.date: 08/01/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Workloads supported for protection with Azure Site Recovery
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-workloads-supported-azure-site-recovery.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which of the following features of Azure Site Recovery aid application workloads in a seamless failover?
+    choices:
+    - content: App-consistent snapshots, near synchronous replication, SQL Server Always On integration
+      isCorrect: true
+      explanation: All three are features within Site Recovery that aid application workloads with failover.
+    - content: App-consistent snapshots, flexible recovery plans, database mirroring
+      isCorrect: false
+      explanation: Database mirroring is a feature of SQL Server Always On, but not Site Recovery, specifically.
+    - content: Asynchronous replication, SQL Server Always On integration, database mirroring
+      isCorrect: false
+      explanation: Asynchronous replication and database mirroring aren't features of Site Recovery.
+  - content: How does IIS in particular benefit from application replication?
+    choices: 
+    - content: IIS virtual directory replication, load-balanced site traffic, script integration
+      isCorrect: false
+      explanation: IIS virtual directory replication and load-balanced site traffic aren't features of Site Recovery, but script integration is.
+    - content: One-click failover, script integration, network mapping
+      isCorrect: true
+      explanation: All of the above are features of Site Recovery that support application replication.
+    - content: Manual failover and failback only, DHCP network address backup, one-click failover
+      isCorrect: false
+      explanation: Manual failover and failback and DHCP network address backup aren't features of Site Recovery, but one-click failover is.

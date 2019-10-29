@@ -21,9 +21,9 @@ Follow these links for more examples of search queries:
 
 Follow these links to find out how to incorporate search into your apps:
 
-- [.NET](https://azure.microsoft.com/resources/samples/search-dotnet-getting-started)
-- [Java](https://azure.microsoft.com/resources/samples/search-java-getting-started)
-- [Node.js](https://github.com/Azure-Samples/search-node-indexer-demo)
+- [.NET](https://docs.microsoft.com/samples/browse/?products=azure-search&languages=csharp)
+- [Java](https://docs.microsoft.com/samples/browse/?languages=java&products=azure-search)
+- [Node.js](https://docs.microsoft.com/samples/browse/?products=azure-search&languages=nodejs)
 
 Follow these links for guidance on performance:
 

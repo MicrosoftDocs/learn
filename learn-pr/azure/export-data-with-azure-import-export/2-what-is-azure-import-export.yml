@@ -21,23 +21,23 @@ quiz:
   questions:
   - content: What does the Azure Import/Export service do?
     choices:
-    - content: Migrate large amounts of data between on-premises storage and Azure using disks supplied by Microsoft.
+    - content: Migrates large amounts of data between on-premises storage and Azure by using disks supplied by Microsoft
       isCorrect: false
       explanation: You supply the disks when you use Azure Import/Export.
-    - content: Transfer large amounts of data between on-premises storage and Azure using a high network bandwidth connection.
+    - content: Transfers large amounts of data between on-premises storage and Azure by using a high-bandwidth network connection
       isCorrect: false
-      explanation: Azure Import/Export is an offline solution. You transfer data by using disks that you ship to an Azure Datacenter.
-    - content: Transfer large amounts of data between on-premises storage and an Azure storage account without tying up network bandwidth.
+      explanation: Azure Import/Export is an offline solution. You transfer data by using disks that you ship to an Azure datacenter.
+    - content: Transfers large amounts of data between on-premises storage and an Azure Storage account without tying up network bandwidth
       isCorrect: true
       explanation: You send and receive physical disks holding your data between your on-premises location and an Azure datacenter.
-  - content: What is the purpose of the WAImportExport tool?
+  - content: What's the purpose of the WAImportExport tool?
     choices:
-    - content: Use it to copy files to a disk to import data into Azure storage.
+    - content: Use it to copy files to a disk to import data into Azure Storage.
       isCorrect: false
       explanation: Use a tool like Robocopy to copy files to the disk.
-    - content: It prepares a drive containing files for import into Azure storage.
+    - content: It prepares a drive containing files for import into Azure Storage.
       isCorrect: true
-      explanation: Your data must be written to disk using a specific format. The tool checks the drive and prepares a journal file that's then used by an import job.
-    - content: Use it create an import job. You specify the files that the disk contains and what should be imported into Azure storage.
+      explanation: Your data must be written to disk by using a specific format. The tool checks the drive and prepares a journal file that's then used by an import job.
+    - content: Use it to create an import job. You specify the files that the disk contains and what should be imported into Azure Storage.
       isCorrect: false
       explanation: You create the import job in the Azure portal.

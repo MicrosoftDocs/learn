@@ -3,7 +3,7 @@ uid: learn.azure.move-data-with-azure-data-box.what-is-azure-data-box-family
 title: What is the Azure Data Box family?
 metadata:
   title: What is the Azure Data Box family?
-  description: In this unit, you will learn about the online and offline data transfer products in the Azure Data Box family.
+  description: In this unit, you'll learn about the online and offline data transfer products in the Azure Data Box family.
   ms.date: 07/26/2019
   author: cwatson-cat
   ms.author: cwatson
@@ -16,14 +16,14 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You have network bandwidth constraints and ~70 TB of data to import into Azure. Which Azure Data Box device should you order?"
+  - content: "You have network bandwidth constraints and ~70 terabytes (TB) of data to import into Azure. Which Azure Data Box device should you order?"
     choices:
     - content: "Data Box or multiple orders of Data Box Disk"
       isCorrect: true
       explanation: "Data Box allows up to an 80-TB transfer. Two Data Box Disk orders allow up to 70 TB."
     - content: "Data Box Edge"
       isCorrect: false
-      explanation: "Data Box Edge is an online physical appliance that needs significant network bandwidth dedicated to it."
+      explanation: "Data Box Edge is an online physical appliance that needs a significant amount of dedicated network bandwidth."
     - content: "Data Box Heavy"
       isCorrect: false
       explanation: "Data Box Heavy allows for up to 800 TB of data transfer and is not applicable in this scenario."
@@ -34,7 +34,7 @@ quiz:
       explanation: "Data Box Edge is an online physical appliance that provides for data preprocessing and machine learning before transfer to the cloud."
     - content: "Data Box Gateway"
       isCorrect: false
-      explanation: "Data Box Gateway is an online virtual appliance that does not provide for data preprocessing and machine learning."
+      explanation: "Data Box Gateway is an online virtual appliance that doesn't provide for data preprocessing and machine learning."
     - content: "Data Box Heavy"
       isCorrect: false
-      explanation: "Data Box Heavy allows for up to 800 TB of data transfer, but it does not provide for data preprocessing and machine learning."
+      explanation: "Data Box Heavy allows for up to 800 TB of data transfer, but it doesn't provide for data preprocessing and machine learning."

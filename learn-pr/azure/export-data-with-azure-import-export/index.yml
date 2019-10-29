@@ -9,13 +9,13 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Export large amounts of data from Azure by using Azure Import/Export"
-summary: "Evaluate Azure Import/Export to copy data from Azure Blob storage to an on-premises server. Create an export job in your Azure storage account. Get the BitLocker keys to unlock the drives that you receive."
+summary: "Evaluate Azure Import/Export to copy data from Azure Blob storage to an on-premises server. Create an export job in your Azure Storage account. Get the BitLocker keys to unlock the drives that you receive."
 abstract: |
   In this module, you will:
   - Decide whether to use Azure Import/Export
-  - Identify the steps to export data from Azure
+  - Learn the steps to export data from Azure
 prerequisites: |
-  - Familiarity with Azure Storage and Azure Blobs
+  - Familiarity with Azure Storage and Azure Blob storage
 iconUrl: /learn/achievements/export-data-with-azure-import-export.svg
 levels: 
 - beginner

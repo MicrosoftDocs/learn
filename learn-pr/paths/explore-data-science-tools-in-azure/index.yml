@@ -5,9 +5,8 @@ metadata:
   description: Learn the tools available in Azure for data scientists to explore, analyze and process data with machine learning
   brand: azure
   ms.date: 03/15/2019
-  author: bcafferky
-  ms.author: brcaffer
-  #ms.learn-contact: smmark
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore AI solution development with data science services in Azure

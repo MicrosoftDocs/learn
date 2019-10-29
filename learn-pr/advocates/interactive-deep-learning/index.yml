@@ -18,7 +18,8 @@ abstract: |
   - Learn how to use Docker to set up a custom deep learning environment
   - Connect to Jupyter notebooks through Docker on the DSVM
   - Run your first deep learning experiment with Jupyter
-prerequisites: None
+prerequisites: |
+  [!include[](../../includes/azure-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/interactive-deep-learning.svg
 levels:
 - intermediate

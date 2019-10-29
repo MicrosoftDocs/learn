@@ -9,7 +9,6 @@ metadata:
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 9
 content: |
-  [!include[](includes/7-track-build-history.md)
+  [!include[](includes/7-track-build-history.md)]

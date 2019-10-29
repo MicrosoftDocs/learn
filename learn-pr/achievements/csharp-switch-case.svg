@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>NA/branch-the-flow-of-code-using-the-switch-case-construct-in-c#</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-9.1%" y="-6.6%" width="118.2%" height="113.1%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0983072917 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <circle id="path-4" cx="8.56697392" cy="8.56697392" r="4.28348696"></circle>
+        <filter x="-11.7%" y="-11.7%" width="123.3%" height="123.3%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="-2" dy="-2" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0999508304 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <circle id="path-6" cx="8.56697392" cy="8.56697392" r="4.28348696"></circle>
+        <filter x="-11.7%" y="-11.7%" width="123.3%" height="123.3%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="-2" dy="-2" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0999508304 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <circle id="path-8" cx="8.56697392" cy="8.56697392" r="4.28348696"></circle>
+        <filter x="-11.7%" y="-11.7%" width="123.3%" height="123.3%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="-2" dy="-2" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0999508304 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="N/A-46" transform="translate(-50.000000, -460.000000)">
+            <g id="NA/branch-the-flow-of-code-using-the-switch-case-construct-in-c#" transform="translate(50.000000, 460.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Heirachy" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(26.439655, 17.500000)">
+                            <path d="M8.57162989,9.2748668 L8.57162989,20.2463652 C8.57162989,25.7692127 13.0487824,30.2463652 18.5716299,30.2463652 L33.3367029,30.2463652" id="Path-2" stroke="#30404D" stroke-width="4"></path>
+                            <path d="M8.57162989,10.5294764 L8.57162989,41.1421456 C8.57162989,46.6649931 13.0487824,51.1421456 18.5716299,51.1421456 L33.3367029,51.1421456" id="Path-2" stroke="#30404D" stroke-width="4"></path>
+                            <g id="Head" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(0.004656, 0.707893)">
+                                <circle id="Oval" fill="#30404D" cx="8.56697392" cy="8.56697392" r="8.56697392"></circle>
+                                <path d="M14.6247393,14.6247393 C11.2791279,17.9703507 5.85479871,17.970372 2.50918729,14.6247606 C2.50918729,14.6247606 14.6247393,2.50920857 14.6247393,2.50920857 C17.9703507,5.85481999 17.9703507,11.2791279 14.6247393,14.6247393 Z" id="Oval" fill="#000000" opacity="0.200000003"></path>
+                                <g id="Oval">
+                                    <use fill="#DF5142" fill-rule="evenodd" xlink:href="#path-4"></use>
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                                </g>
+                            </g>
+                            <g id="1" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(25.146862, 21.679391)">
+                                <circle id="Oval" fill="#30404D" cx="8.56697392" cy="8.56697392" r="8.56697392"></circle>
+                                <path d="M14.6247393,14.6247393 C11.2791279,17.9703507 5.85479871,17.970372 2.50918729,14.6247606 C2.50918729,14.6247606 14.6247393,2.50920857 14.6247393,2.50920857 C17.9703507,5.85481999 17.9703507,11.2791279 14.6247393,14.6247393 Z" id="Oval" fill="#000000" opacity="0.200000003"></path>
+                                <g id="Oval">
+                                    <use fill="#F0A54B" fill-rule="evenodd" xlink:href="#path-6"></use>
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                                </g>
+                            </g>
+                            <g id="2" stroke="none" stroke-width="1" fill-rule="evenodd" transform="translate(25.146862, 42.575172)">
+                                <circle id="Oval" fill="#30404D" cx="8.56697392" cy="8.56697392" r="8.56697392"></circle>
+                                <path d="M14.6247393,14.6247393 C11.2791279,17.9703507 5.85479871,17.970372 2.50918729,14.6247606 C2.50918729,14.6247606 14.6247393,2.50920857 14.6247393,2.50920857 C17.9703507,5.85481999 17.9703507,11.2791279 14.6247393,14.6247393 Z" id="Oval" fill="#000000" opacity="0.200000003"></path>
+                                <g id="Oval">
+                                    <use fill="#F0A54B" fill-rule="evenodd" xlink:href="#path-8"></use>
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

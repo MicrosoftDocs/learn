@@ -4,11 +4,10 @@ metadata:
   title: Automate the ML model selection with Azure Machine Learning service
   description: Automate the ML model selection with Azure Machine Learning service
   ms.date: 03/18/2019
-  author: bcafferky
-  ms.author: brcaffer
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Automate the ML model selection with Azure Machine Learning service
 summary: Automate the ML model selection with Azure Machine Learning service
 abstract: | 

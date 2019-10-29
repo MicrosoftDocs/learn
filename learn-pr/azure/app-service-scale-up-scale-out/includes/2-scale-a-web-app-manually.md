@@ -20,7 +20,7 @@ Azure provides a series of well-defined App Service plan tiers. This list summar
 - The Isolated tier runs in a dedicated Azure virtual network, which gives you network and compute isolation. This tier can scale out to 100 instances and has an availability SLA of 99.95%.
 
 > [!NOTE]
-> Some tiers aren't available for all operating systems. For example, there is currently no Free tier for Linux.
+> Some tiers aren't available for all operating systems. For example, there is currently no Shared tier for Linux.
 
 ## Monitor and scale a web app
 
