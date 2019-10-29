@@ -17,16 +17,16 @@ quiz:
   questions:
   - content: "Which one of these is a way resources can communicate with each other inside Azure?"
     choices:
-    - content: "Have the resources communicate over an ExpressRoute."
+    - content: "Have the resources communicate over an ExpressRoute connection."
       isCorrect: false
-      explanation: "An ExpressRoute enables connection of your on-premises resources, with resources inside Azure."
+      explanation: "An ExpressRoute connection enables connection of your on-premises resources, with resources inside Azure."
     - content: "Having the resources inside a single virtual network."
       isCorrect: true
       explanation: "Correct, all resources within a virtual network can communicate in the private address space."
     - content: "Having each resource specify a network endpoint."
       isCorrect: false
-      explanation: "Network service endpoints allow your resources to communicate privately with other Azure resources like Azure Storage. They can't be used to communicate between your own resources."
-  - content: "What's the limit for the number of virtual networks you can connect to an ExpressRoute?"
+      explanation: "Network service endpoints allow your resources to communicate privately with other Azure resources, like Azure Storage. They can't be used to communicate between your own resources."
+  - content: "What's the limit for the number of virtual networks you can connect to ExpressRoute?"
     choices:
     - content: "10"
       isCorrect: false
@@ -34,6 +34,6 @@ quiz:
     - content: "100"
       isCorrect: false
       explanation: "This is correct for a premium-add on ExpressRoute with a 10-Gbps or larger circuit, but it isn't the only limit."
-    - content: Depends on the size of the circuit
+    - content: "It depends on the size of the circuit."
       isCorrect: true
-      explanation: "The limit is based on the SKU and size of ExpressRoute circuit. 100 is the maximum at present for all."
+      explanation: "The limit is based on the SKU and size of the ExpressRoute circuit. At present, 100 is the maximum for all."
