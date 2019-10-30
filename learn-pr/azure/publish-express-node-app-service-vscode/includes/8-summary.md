@@ -4,7 +4,7 @@ To implement a website on-premises requires hardware and the skills to set it up
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
-## Learn More
+## Learn more
 
 - [Node.js tutorial in Visual Studio Code](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial)
 - [App Service Documentation](https://docs.microsoft.com/azure/app-service/)
