@@ -22,7 +22,7 @@ levels:
 roles:
 - ai-edge-engineer
 products:
-- learning-azure-iot-hub
+- azure-iot-hub
 units:
 - learn.oxford.intro-to-iot.introduction
 - learn.oxford.intro-to-iot.what-is-iot
