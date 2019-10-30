@@ -38,6 +38,6 @@ modules:
 - learn.languages.csharp-code-blocks
 - learn.languages.csharp-switch-case
 - learn.languages.csharp-for
-- learn.languages.csharp-while-do
+- learn.languages.csharp-do-while
 trophy:
   uid: learn.languages.csharp-logic.trophy
