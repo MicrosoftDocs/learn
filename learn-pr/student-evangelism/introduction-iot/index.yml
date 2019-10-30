@@ -7,7 +7,7 @@ metadata:
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub, learning-azure-iot-edge
+  ms.prod: learning-azure-iot-hub
 title: "Introduction to Azure IoT"
 summary: "***Contributed by University of Oxford [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
 abstract: |
@@ -22,7 +22,7 @@ levels:
 roles:
 - ai-edge-engineer
 products:
-- learning-azure-iot-hub, learning-azure-iot-edge
+- learning-azure-iot-hub
 units:
 - learn.oxford.intro-to-iot.introduction
 - learn.oxford.intro-to-iot.what-is-iot
