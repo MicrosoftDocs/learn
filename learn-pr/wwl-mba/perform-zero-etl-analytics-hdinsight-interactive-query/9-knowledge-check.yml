@@ -9,11 +9,10 @@ metadata:
   ms.author: Chris Testa O'Neill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-
+azureSandbox: False
 durationInMinutes: 5
+
 quiz:
-  title: ""
   questions:
   - content: "Which user requirements are best suited for using HDInsight Interactive Query?"
     choices:

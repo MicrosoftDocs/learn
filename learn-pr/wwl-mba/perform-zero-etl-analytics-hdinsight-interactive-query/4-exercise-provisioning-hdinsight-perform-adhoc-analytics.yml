@@ -9,8 +9,7 @@ metadata:
   ms.author: Chris Testa O'Neill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-
+azureSandbox: False
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-provisioning-hdinsight-perform-adhoc-analytics.md)]

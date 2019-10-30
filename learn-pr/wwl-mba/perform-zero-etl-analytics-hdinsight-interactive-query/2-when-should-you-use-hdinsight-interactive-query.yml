@@ -9,8 +9,7 @@ metadata:
   ms.author: Chris Testa O'Neill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-
+azureSandbox: False
 durationInMinutes: 6
 content: |
   [!include[](includes/2-when-should-you-use-hdinsight-interactive-query.md)]
