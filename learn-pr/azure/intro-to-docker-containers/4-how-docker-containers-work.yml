@@ -28,13 +28,13 @@ quiz:
       explanation: "The Bridge network configuration is an internal, private network used by the container and isolates the container network from the Docker host network. We use the publish flag to map ports between the container and host ports."
     - content: "host"
       isCorrect: false
-      explanation: "The Host network configuration allows the container to use the host's IP address and ports. The publish flag is not used with this network."
+      explanation: "The Host network configuration allows the container to use the host's IP address and ports. The publish flag isn't used with this network."
  
-  - content: "Which storage option is the best choice that allow the host and container to share a file to manage name server resolution, for example the resolve.conf file on Linux?"
+  - content: "Which storage option is the best choice that allows the host and container to share a file to manage name server resolution, for example the resolve.conf file on Linux?"
     choices:
     - content: "A volume"
       isCorrect: false
-      explanation: "A volume is stored on the host filesystem at a specific folder location. However, volume data is not meant to be updated by the host."
+      explanation: "A volume is stored on the host filesystem at a specific folder location. However, volume data isn't meant to be updated by the host."
     - content: "Bind mount"
       isCorrect: true
-      explanation: "A bind mount, like a volume, is stored on the host filesystem at a specific folder location. However, bind mount data is expected to be updated by the host. The resolve.conf contents is expected to changed by the host and used by both the container and host."
+      explanation: "A bind mount, like a volume, is stored on the host filesystem at a specific folder location. However, bind mount data is expected to be updated by the host. The resolve.conf contents is expected to change by the host and used by both the container and host."
