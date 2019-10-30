@@ -21,10 +21,8 @@ iconUrl: /learn/achievements/introduction-to-ai.svg
 levels: 
 - beginner
 roles: 
-- functional-consultant
-- business-user
 - ai-engineer
-- developer
+- data-scientist
 products: 
 - azure
 units: 
