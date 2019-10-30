@@ -6,10 +6,10 @@ metadata:
   description: HDInsight configuration options
   ms.date: 10/25/2019
   author: wwlpublish
-  ms.author: Chris Testa O'Neill
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: False
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-hdinsight-configuration-options.md)]
+  [!include[](includes/2-hdinsight-config.md)]
