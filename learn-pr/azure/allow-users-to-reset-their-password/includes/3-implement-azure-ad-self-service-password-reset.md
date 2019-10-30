@@ -1,4 +1,4 @@
-Once you've planned a roll out of Self-Service Password Reset (SSPR), you can implement it by using the Azure portal.
+After you plan a roll out of Self-Service Password Reset (SSPR), you can implement it by using the Azure portal.
 
 Suppose you've decided to implement SSPR in the Azure Active Directory for your retail organization, so that your users can recover from forgotten or expired passwords. You want to start using SSPR for a group of 20 users in the marketing department as a trial deployment. If everything works well, you'll enable SSPR for your whole organization.
 
@@ -13,8 +13,7 @@ Before you start to configure SSPR, make sure you have these things in place:
 - A non-administrative user account. You'll use this account to test SSPR. It's important that this account is **not** an administrator, because Azure AD imposes extra requirements on administrative accounts for SSPR. This user, and all user accounts, must have a valid license to use SSPR.
 - A security group to test the configuration with. The non-administrative user account must be a member of this group.
 
-> [!NOTE]
-> SSPR is not permitted in the default Active Directory in the sandboxed Azure subscription, which you'll use in the exercises in this module. To enable SSPR, you'll create a second, Premium tier directory and enable SSPR in that.
+SSPR is not permitted in the default Active Directory in the sandboxed Azure subscription, which you'll use in the exercises in this module. To enable SSPR, you'll create a second, Premium tier directory and enable SSPR in that.
 
 You can use the security group to perform a phased roll-out of SSPR. There are three settings for the **Self-service password reset enabled** property:
 

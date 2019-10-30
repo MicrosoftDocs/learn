@@ -4,10 +4,9 @@ Suppose you've been asked to display your retail organization's branding to the 
 
 Here, you'll learn how to configure this custom branding.
 
-> [!NOTE]
-> To complete this exercise, you must have two image files:
-> - A page background image. This must be a PNG or JPG files, 1920 x 1080 pixels, and smaller than 300 KB.
-> - A company logo image. This must be a PNG or JPG files, 280 x 60 pixels, and smaller than 10 KB.
+To complete this exercise, you must have two image files:
+ - A page background image. This must be a PNG or JPG files, 1920 x 1080 pixels, and smaller than 300 KB.
+ - A company logo image. This must be a PNG or JPG files, 280 x 60 pixels, and smaller than 10 KB.
 
 ## Customize directory branding
 

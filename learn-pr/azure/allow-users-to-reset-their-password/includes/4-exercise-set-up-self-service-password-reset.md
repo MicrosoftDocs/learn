@@ -4,10 +4,7 @@ Suppose that you have decided to enable SSPR in your retail organization so that
 
 Here, you will configure and test SSPR.
 
-> [!NOTE]
-> You will need to use your mobile phone to complete the password reset process in this exercise.
-
-[!include[](../../../includes/azure-sandbox-activate.md)]
+You will need to use your mobile phone to complete the password reset process in this exercise.
 
 ## Create a Directory
 
