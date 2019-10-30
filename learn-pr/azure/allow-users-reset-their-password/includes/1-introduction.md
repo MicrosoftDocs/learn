@@ -1,5 +1,3 @@
-You can make it easier for users to remember passwords by allowing them to change them to something memorable.
-
 Suppose you're an IT administrator for a large retail organization. Your organization has started using Azure Active Directory to allow employees to securely sign in and use SaaS apps, and access the organization's resources in Office 365. You're overwhelmed with password reset requests because you currently reset employees' passwords manually. To get these employees back to being productive quickly and reduce your workload, you decide to evaluate and set up self-service password reset in Azure Active Directory.
 
 In this module, you'll learn how Azure supports this feature and how to set it up.
