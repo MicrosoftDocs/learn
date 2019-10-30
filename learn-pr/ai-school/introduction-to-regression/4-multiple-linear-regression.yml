@@ -3,7 +3,7 @@ uid: learn.introduction-to-regression.multiple-linear-regression
 title: Predict values with multiple linear regression
 metadata:
   title: Predict values with multiple linear regression
-  description: Here we use linear regression again - but this time we use multiple features for predictions.
+  description: Use multiple linear regression to predict values with multiple features.
   ms.date: 06/30/2019
   author: jasallen
   ms.author: jasdeb

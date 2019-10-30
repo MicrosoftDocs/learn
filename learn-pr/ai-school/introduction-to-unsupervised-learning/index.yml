@@ -1,21 +1,20 @@
 ### YamlMime:Module
 uid: learn.unsupervised-learning
 metadata:
-  title: Unsupervised Learning
-  description: Here we cover modelling data without labels - unsupervised learning.
+  title: Use unsupervised learning to analyze unlabeled data
+  description: Use unsupervised learning methods to predict groupings in data. Use variations of k-means clustering and spectral clustering to analyze and visualize difficult data sets.
   ms.date: 06/30/2019
   author: jasallen
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: markjulmar
-title: Unsupervised Learning
-summary: Here we cover modelling data without labels - unsupervised learning.
+title: Use unsupervised learning to analyze unlabeled data
+summary: Use unsupervised learning methods to predict groupings in data. Use variations of k-means clustering and spectral clustering to analyze and visualize difficult data sets.
 abstract: | 
   In this module, you will:
-  - Describe unsupervised learning.
-  - Articulate practical applications of unsupervised learning.
-  - Use k-means clustering to predict groupings in data.
+  - Define unsupervised learning.
+  - Apply k-means clustering to predict groupings in data.
 prerequisites: None
 iconUrl: /learn/achievements/introduction-to-unsupervised-learning.svg
 levels: 

@@ -3,7 +3,7 @@ uid: learn.introduction-to-classification.support-vector-machines
 title: Predict categories with support vector machines 
 metadata:
   title: Predict categories with support vector machines
-  description: Here we use Azure Notebooks to build a support vector machine model.
+  description: Support vector machines (SVMs) are a categorization model, one of the most elegant solutions in machine learning. Review the fundamentals behind SVMs - Hyperplanes, support vectors, and margins.
   ms.date: 06/30/2019
   author: jasallen
   ms.author: jasdeb

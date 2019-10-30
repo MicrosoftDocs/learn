@@ -3,7 +3,7 @@ uid: learn.introduction-to-regression.simple-linear-regression
 title: Predict values with simple linear regression
 metadata:
   title: Predict values with simple linear regression 
-  description: Let's quickly go through predicting a number using one feature.
+  description: Predicting a number using one feature using simple linear regression.
   ms.date: 06/30/2019
   author: jasallen
   ms.author: jasdeb

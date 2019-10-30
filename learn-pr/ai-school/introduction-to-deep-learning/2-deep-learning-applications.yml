@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.deep-learning.deep-learning-applications
-title: Deep Learning Applications
+title: Common applications of deep learning
 metadata:
-  title: Deep Learning Applications
-  description: Here we'll go over common applications of deep learning.
+  title: Common applications of deep learning
+  description: Review deep learning uses in analyzing language (Natural language processing) and images (computer vision).
   ms.date: 06/30/2019
   author: jasallen
   ms.author: jasdeb

@@ -3,7 +3,7 @@ uid: learn.deep-learning.introduction-to-cnns
 title: Introduction to CNNs
 metadata:
   title: Introduction to CNNs
-  description: Here we look at how CNNs work, what convolutional means, advantages of CNNs, and a popular implementation of real-time image analysis - YOLO.
+  description: Review how CNNs work, what convolutional means, advantages of CNNs, and a popular implementation of real-time image analysis - YOLO.
   ms.date: 06/30/2019
   author: jasallen
   ms.author: jasdeb
