@@ -1,8 +1,15 @@
-In this module, you've learned how you can use the Self-Service Password Reset (SSPR) feature in Azure Active Directory to enable users to recover when they've forgotten their passwords. This password reset doesn't require an administrator to be involved. It is secured by authentication methods of your choice, which can include a mobile authentication app, a code sent to you by an SMS text message, or security questions. 
+In this module, you've learned how you can use self-service password reset (SSPR) in Azure Active Directory (Azure AD) to allow users to reset their forgotten or expired passwords. An administrator doesn't have to do the password reset. SSPR is secured by authentication methods of your choice, which can include a mobile authentication app, a code sent to you by an SMS text message, or security questions. 
 
-SSPR reduces the amount of work required from administrators and prevents any impact on the productivity of users when they forget their passwords. 
+SSPR helps reduce the amount of work required from administrators. It also minimizes the productivity impact for users when they forget their password.
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+## Clean up
+
+Remember to clean up after you've finished.
+
+- Delete the user you created in Azure AD. Go to **Azure Active Directory** > **Manage** > **Users**. Select the user and click **Delete user**.
+- Turn off self-service password reset. Go to **Azure Active Directory** > **Manage** > **Password reset**. Under **Self service password reset enabled**, click **None**.
+
+If you created a Premium trial Azure AD tenant for this module, you can delete the tenant 30 days after the trial has expired.
 
 ## Learn more
 

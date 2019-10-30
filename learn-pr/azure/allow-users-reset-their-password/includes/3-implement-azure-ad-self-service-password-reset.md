@@ -11,7 +11,7 @@ Before you start to configure SSPR, you need these things in place:
 - A non-administrative user account. You'll use this account to test SSPR. It's important that this account isn't an administrator, because Azure AD imposes extra requirements on administrative accounts for SSPR. This user, and all user accounts, must have a valid license to use SSPR.
 - A security group to test the configuration with. The non-administrative user account must be a member of this group. You'll use this security group to limit who you roll SSPR out to.
 
-If you don't already have a tenant you can use for the exercises in this module, we'll set one up in the next unit.
+If you don't already have a tenant that you can use for this module, we'll set one up in the next unit.
 
 ## Scope of SSPR roll-out
 
@@ -24,27 +24,27 @@ enable SSPR for a restricted group of users, who can test it and verify that it 
 
 ## Configure SSPR
 
-Here are the high level steps to configure SSPR. We'll walk through these steps in more detail later.
+Here are the high-level steps to configure SSPR. We'll walk through these steps in the Azure portal later.
 
-1. In the Azure portal, go to **Active Directory** > **Password reset** .
+1. In the Azure portal, go to **Active Directory** > **Password reset**.
 1. Enable SSPR. You can either enable it for all users in the directory, or for selected users. To enable for selected users, you must specify the security group. Members of this group can use SSPR.
 
-    ![Enable SSPR](../media/3-enable-sspr.png)
+    ![Screenshot that shows how to enable SSPR](../media/3-enable-sspr.png)
 
 1. Choose whether to require one or two authentication methods.
 1. Choose the authentication methods that the users can use.
 
-    ![Choose authentication methods for SSPR](../media/3-auth-methods.png)
+    ![Screenshot that shows authentication methods for SSPR](../media/3-auth-methods.png)
 
 1. Specify whether users are required to register for SSPR when they next sign in.
 1. Specify how often users are asked to reconfirm their authentication information.
 
-    ![Choose registration options for SSPR](../media/3-registration-options.png)
+    ![Screenshot that shows choose registration options for SSPR](../media/3-registration-options.png)
 
 1. Choose whether to notify users and administrators of password resets.
 
-    ![Choose notification settings](../media/3-notification-settings.png)
+    ![Screenshot that shows notification settings](../media/3-notification-settings.png)
 
 1. Provide an email address or web page URL where your users can get help.
 
-    ![Choose customization settings](../media/3-customization-settings.png)
+    ![Screenshot that shows customization settings](../media/3-customization-settings.png)
