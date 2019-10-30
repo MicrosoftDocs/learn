@@ -1,4 +1,4 @@
-You've been asked to assess ways to reduce help desk costs in your retail organization. You've noticed that support staff spend a lot of time resetting passwords for users. Users often complain about delays with this process. The delay impacts their productivity. You want to understand how you can configure Azure to enable users to manage their own passwords.
+You've been asked to assess ways to reduce help desk costs in your retail organization. You've noticed that support staff spend much of their time resetting passwords for users. Users often complain about delays with this process. The delay impacts their productivity. You want to understand how you can configure Azure to enable users to manage their own passwords.
 
 In this unit, you'll learn how self-service password reset (SSPR) works in Azure Active Directory (Azure AD).
 
@@ -6,7 +6,7 @@ In this unit, you'll learn how self-service password reset (SSPR) works in Azure
 
 In Azure AD, any user can change their password if they're already signed in. But if they're not signed in and forgot their password or it's expired they'll need to reset their password. With SSPR, users can reset their passwords in a web browser to regain access to Azure, Office 365, and any other application that uses Azure AD for authentication.
 
-SSPR reduces the load on administrators, because users can fix password problems themselves, without having to call the help desk. Also, it minimizes the productivity impact of a forgotten or expired password, because users don't have to wait until an administrator is available to reset their password.
+SSPR reduces the load on administrators, because users can fix password problems themselves, without having to call the help desk. Also, it minimizes the productivity impact of a forgotten or expired password. Users don't have to wait until an administrator is available to reset their password.
 
 ## How SSPR works
 
@@ -18,11 +18,11 @@ The user initiates a password reset either by going directly to the password res
 1. **Password reset**: If the user passes the authentication tests, then they can enter a new password and confirm it.
 1. **Notification**: A message is usually sent to the user to confirm the reset.
 
-There are several ways you can customize the SSPR user experience. For example, you can add your company logo to the sign-in page so users are reassured that they're in the right place to reset their password.
+There are several ways you can customize the SSPR user experience. For example, you can add your company logo to the sign-in page so users know that they're in the right place to reset their password.
 
 ## Authenticate a password reset
 
-It's critical to verify the identify of a user before you allow a password reset. Malicious users may exploit any weakness in the system to impersonate that user. Azure supports six different ways to authenticate reset requests, and these methods are often referred to as "gates". 
+It's critical to verify the identity of a user before you allow a password reset. Malicious users may exploit any weakness in the system to impersonate that user. Azure supports six different ways to authenticate reset requests, and these methods are often referred to as "gates". 
 
 As an administrator, you choose the gates to use when you configure SSPR. It's highly recommended that you enable two or more of these gates so that users can choose methods that they can use easily. The gates are:
 
@@ -31,11 +31,11 @@ As an administrator, you choose the gates to use when you configure SSPR. It's h
 | Mobile app notification | Install the Microsoft Authenticator app on your mobile device, and then register it at the multi-factor authentication setup page. | Azure sends a notification to the app, which you can either verify or deny. |
 | Mobile app code | This method also uses the Authenticator app and you install and register it in the same way. | Enter the code from the app. |
 | Email | Provide an email address that's external to Azure and Office 365. | Azure sends a code to the address, which you enter in the reset wizard. |
-| Mobile phone | Provide a mobile phone number. | Azure sends a code the phone in an SMS message, which you must enter in the reset wizard. Alternatively, you can choose to get an automated call. |
+| Mobile phone | Provide a mobile phone number. | Azure sends a code the phone in an SMS message, which you must enter in the reset wizard. Or, you can choose to get an automated call. |
 | Office phone | Provide a non-mobile phone number. | You receive an automated call to this number and press #. |
 | Security questions | Select questions such as "In what city was your mother born?" and save responses to them. | Answer the questions. |
 
-In free and trial Azure AD tenants, phone call options are not supported.
+In free and trial Azure AD tenants, phone call options aren't supported.
 
 ### Require minimum number of authentication methods
 
