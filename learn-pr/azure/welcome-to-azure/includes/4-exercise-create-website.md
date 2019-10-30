@@ -46,7 +46,7 @@ In the free Azure sandbox environment you'll use the pre-created resource group 
 
 1. In the newly presented panel, you'll typically find additional information about the item you're about to install, including the publisher, a brief description of the resource, and links to more information. Make sure to review this information. Select **Create** to begin the process to create a WordPress app.
 
-    [![Screenshot showing WordPress image information](../media/4-create-site.png)](../media/4-create-site-expanded.png#lightbox)
+    ![Screenshot showing WordPress image information](../media/4-create-site.png)
 
 1. Next, you're presented several options to configure your deployment. Enter the following information:
 
