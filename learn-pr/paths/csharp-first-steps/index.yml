@@ -10,11 +10,11 @@ metadata:
   #ms.learn-contact: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Azure fundamentals
+title: Take your first steps with C#
 summary: |
   Interested in learning a programming language but aren't sure where to start?  Start here!  Learn the basic syntax and thought processes required to build simple applications using C#.
 
-  In this learning path, you will:
+  In this learning path, you'll:
     - Write your first lines of C# code
     - Store and manipulate data to modify its type and appearance
     - Execute built-in functionality available from libraries of code
