@@ -13,6 +13,9 @@ In this module you will:
 - Add Node.js code to support simulated devices, with routes selected by Azure Maps, using Visual Studio Code, or Visual Studio
 - Monitor and command the simulated devices, from an IoT Central dashboard
 
+    > [!NOTE]
+    > The IoT Central portal includes a preview of a new approach to creating IoT Central apps. This module uses the established portal features.
+
 ## Prerequisites
 
 - An introductory knowledge of the purpose of Azure IoT
@@ -39,21 +42,27 @@ In this module, you will build the app displayed in the above image.
 
 1. Navigate to [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true). It is a good idea to bookmark this URL, as it is the home for all your IoT Central apps.
 
-1. Click on **New Application**. Select the free **Trial** payment plan, the seven days that the trial gives you will be plenty of time to complete, and evaluate, the scenario.
+1. In the left-hand menu, click on **Build**, then select **Custom app**.
 
-    ![Screenshot showing how to create a new IoT Central app, using the IoT Central portal](../media/refrigerated-trucks-my-apps.png)
+1. Enter "Refrigerated Trucks" for the **Application name**.
 
-1. Select **Custom application**, and configure the app as shown in the following image:
+1. Add your own unique ID to the end of the **URL** entry.
+
+    > [!IMPORTANT]
+    > Your **Application name** can be any friendly name. However, the **URL** _must_ be unique. For example, `refrigerated-trucks-<your id>`, replacing `<your id>` with appropriate text.
+
+1. Change the **Application template** to **Custom application**. Setting the **Application template** is an important step. The default **Preview application** will enable preview features that are not used in this module.
+
+1. Click the **7 day free trial** toggle, so that the **Billing info** goes away, and is replaced by **Contact info**. Seven days gives you plenty of time to complete, and evaluate, the scenario.
 
     ![Screenshot showing how to configure the new IoT Central app](../media/refrigerated-trucks-new-app.png)
 
-    > [!IMPORTANT]
-    > Your **Application Name** can be any friendly name, such as "Refrigerated Trucks". However, the **URL** _must_ be unique, which is why you will add a unique ID to the end of the URL for the app. For example, `refrigerated-trucks-<your id>`, replacing `<your id>` with some unique ID.
-
-1. Enter the rest of the required fields (your contact information) appropriately.
+1. Fill in your contact information.
 
 1. Click **Create**, and wait a few seconds whilst the app resource is built.
 
-1. You should now see a **Dashboard** with a few default links. The next time you visit your home page, a large icon for your  **Refrigerated Trucks** app should appear.
+1. You should now see a **Dashboard** with a few default links. 
+
+The next time you visit your Azure central home page, select **My apps** in the left-hand menu, and an icon for your  **Refrigerated Trucks** app should appear.
 
 You have now created the app. The next step is to specify a _device template_.
