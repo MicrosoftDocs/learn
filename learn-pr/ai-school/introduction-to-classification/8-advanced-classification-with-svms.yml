@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-to-classification.advanced-svms
-title: Improving predictions with support vector machines  
+title: Improve categorization predictions with support vector machines  
 metadata:
-  title: Improving predictions with support vector machines
-  description: Here we look at how our model 'trained' itself to improve its accuracy.
+  title: Improve categorization predictions with support vector machines
+  description: Improve support vector machine predictions using different kernels.
   ms.date: 06/30/2019
   author: jasallen
   ms.author: jasdeb

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-to-classification.testing-predictions
-title: Test model accuracy 
+title: Analyze model accuracy with test data
 metadata:
-  title: Test model accuracy
-  description: Here we look at how our model 'trained' itself to improve its accuracy.
+  title: Analyze model accuracy with test data
+  description: When a model is trained, we can analyze its accuracy with a separate data - test data. Review how to analyze models with overfitting and underfitting.
   ms.date: 06/30/2019
   author: jasallen
   ms.author: jasdeb

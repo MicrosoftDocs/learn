@@ -1,35 +1,33 @@
 ### YamlMime:Module
 uid: learn.neural-networks
 metadata:
-  title: Neural Networks
-  description: Here we cover one of the hottest topics in computer systems - neural networks. We’ll work through the core principles behind neural networks, and how to make them easily with TensorFlow and Keras.
+  title: Make predictions from complex data with neural networks
+  description: Use neural network models to make predictions. Change neural network structures to refine predictions using TensorFlow and Keras.
   ms.date: 06/30/2019
   author: jasallen
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: markjulmar
-title: Neural Networks
-summary: Here we cover one of the hottest topics in computer systems - neural networks. We’ll work through the core principles behind neural networks, and how to make them easily with TensorFlow and Keras.
+title: Make predictions from complex data with neural networks
+summary: Use neural network models to make predictions. Change neural network structures to refine predictions using TensorFlow and Keras.
 abstract: | 
   In this module, you will:
   - Learn about neural network structures, layers, edges, and weights.
-  - Learn about different types of activation functions.
-  - Learn about practical types of gradient descent.
+  - Visualize predictions and refine neural network models.
+  - Apply different types of activation functions and optimizers.
 prerequisites: None
 iconUrl: /learn/achievements/introduction-to-neural-networks.svg
 levels: 
 - beginner
 roles: 
-- functional-consultant
-- business-user
 - ai-engineer
-- developer
+- data-scientist
 products: 
 - azure
 units: 
 - learn.neural-networks.introduction
-- learn.neural-networks.layers-edges-and-weights
+- learn.neural-networks.learning-rate
 - learn.neural-networks.programming-exercise-introduction-to-neural-networks
 - learn.neural-networks.activation-functions
 - learn.neural-networks.programming-exercise-advanced-neural-networks

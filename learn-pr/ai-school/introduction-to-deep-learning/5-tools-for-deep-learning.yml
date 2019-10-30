@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.deep-learning.tools-for-deep-learning
-title: Tools for Deep Learning
+title: Review popular tools used for deep learning
 metadata:
-  title: Tools for Deep Learning
-  description: Here we take a quick look at the standard tools used for custom deep learning.
+  title: Review popular tools used for deep learning
+  description: Review the popular tools used for custom deep learning.
   ms.date: 06/30/2019
   author: jasallen
   ms.author: jasdeb

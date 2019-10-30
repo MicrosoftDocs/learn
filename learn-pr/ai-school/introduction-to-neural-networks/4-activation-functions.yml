@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.neural-networks.activation-functions
-title: Activation Functions
+title: Improve neural networks with activation functions and optimizers 
 metadata:
-  title: Activation Functions
-  description: Here we describe how nodes regulate their output, and can turn “on” and “off” - by using activation functions.
+  title: Improve neural networks with activation functions and optimizers
+  description: Learn what activation functions and optimizers are, and popular choices to try.
   ms.date: 06/30/2019
   author: jasallen
   ms.author: jasdeb

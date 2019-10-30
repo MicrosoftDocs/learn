@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.neural-networks.layers-edges-and-weights
-title: Layers, edges, and weights
+uid: learn.neural-networks.learning-rate
+title: Train neural networks with learning rates and one-hot vectors
 metadata:
-  title: Layers, edges, and weights
-  description: Here we cover what puts neural networks together - layers, edges, and weights.
+  title: Train neural networks with learning rates and one-hot vectors
+  description: Learn how to train neural networks using selecting a learning rate and using one-hot vectors to use categories as features.
   ms.date: 06/30/2019
   author: jasallen
   ms.author: jasdeb
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-layers-edges-and-weights.md)]
+  [!include[](includes/2-learning-rate.md)]
 quiz:
   title: Check your knowledge
   questions:

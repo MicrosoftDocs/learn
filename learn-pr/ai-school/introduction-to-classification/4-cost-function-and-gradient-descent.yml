@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-to-classification.cost-function-and-gradient-descent
-title: Cost Function and Gradient Descent
+title: Review cost function and gradient descent
 metadata:
-  title: Cost Function and Gradient Descent
-  description: Here we look at the two main methods that improve our models behind the scenes - cost function and gradient descent.
+  title: Review cost function and gradient descent
+  description: The two main methods that improve our models behind the scenes are cost function and gradient descent.
   ms.date: 06/30/2019
   author: jasallen
   ms.author: jasdeb
