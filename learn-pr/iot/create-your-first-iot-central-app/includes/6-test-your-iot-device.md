@@ -42,7 +42,7 @@ To begin the testing, with your [Azure IoT Central](https://apps.azureiotcentral
 
 1. In the console for the Node.js app, you should see **Number of points=**, followed by a list of lat/lon coordinates. If you see a message including the text "Access denied due to invalid subscription key", then check your subscription key to Azure Maps.
 
-1. Go back to the **Measurements** view in IoT Central. Hover over the Truck state bar chart, does it say "enroute"? Now, select the map view. Is your truck on its way?
+1. Go back to the **Measurements** view in IoT Central. Hover over the Truck state bar chart, does it say "enroute"? Now, select the map view. Is your truck on its way? You might have to wait a short time for the apps to sync up.
 
     ![Screenshot showing the map view of our first truck delivery route](../media/refrigerated-trucks-first-delivery.png)
 
@@ -63,11 +63,6 @@ To begin the testing, with your [Azure IoT Central](https://apps.azureiotcentral
   > In the map view, to better see where a truck is at any one moment, change the **Location** settings to show **Latest**. For the full route, choose **History**.
   >
   > ![Screenshot showing how to change the map view mode to History or Latest](../media/refrigerated-trucks-history.png)
-
-## Check the dashboard
-
-1. Navigate to the dashboard you created a few units back (click **Dashboard**, to the right of **Rules**).
-1. Visually verify the map route, and contents temperature, are being updated.
 
 ## Next steps
 

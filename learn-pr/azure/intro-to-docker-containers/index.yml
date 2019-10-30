@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.intro-to-docker-containers
+metadata:
+  title: "Introduction to Docker containers"
+  description: "Introduction to Docker containers"
+  ms.date: 10/05/2019
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Introduction to Docker containers"
+summary: "Describes the benefits of using Docker containers as a containerization platform. Discuss the infrastructure provided by the Docker platform."
+abstract: | 
+  In this module, you will:
+  - Evaluate whether Docker is an appropriate containerization platform for you
+  - Describe how the components of Docker containers support compute container implementations
+prerequisites: | 
+  - Familiarity with command-line based applications
+iconUrl: /learn/achievements/intro-to-docker-containers-social.png
+levels:
+- beginner
+roles:
+- developer
+- administrator
+- devops-engineer
+- solution-architect
+products:
+- azure
+- azure-container-registry
+- azure-container-instances
+units:
+- learn.intro-to-docker-containers.1-introduction
+- learn.intro-to-docker-containers.2-what-is-docker
+- learn.intro-to-docker-containers.3-how-docker-images-work
+- learn.intro-to-docker-containers.4-how-docker-containers-work
+- learn.intro-to-docker-containers.5-when-use-docker-containers
+- learn.intro-to-docker-containers.6-summary
+badge:
+  uid: learn.intro-to-docker-containers.badge
