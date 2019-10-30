@@ -6,19 +6,19 @@ For example, assume we're developing an order tracking portal that our company's
 
 There are several challenges that we'll need to consider in the above scenario:
 
-1. **Management of hosting environments**
+- **Management of hosting environments**
 
     The different environments all require both software and hardware management. We have to ensure that both the installed software and configured hardware in each is the same. We also need to configure aspects such as network access, data storage, and security per environment in a consistent and easily reproducible manner.
 
-1. **Continuity in software delivery**
+- **Continuity in software delivery**
 
     The deployment of applications to our environments must happen consistently. Each deployment package must include all system packages, binaries, libraries, configuration files, and other items that will ensure a fully functional application. We also need to make sure that all of these dependencies match software versions and architecture.
 
-1. **Efficient use of hardware**
+- **Efficient use of hardware**
 
     Each deployed application must execute in such a way that it's isolated from other applications running on the same hardware. We aim to run more than one application per server to make the best use of resources without compromising each other.
 
-1. **Application portability**
+- **Application portability**
 
     There are several reasons why application portability is essential. A hosting environment might fail, or we need to scale out our application. In both instances, the potential result is a redeployment of our software to a new environment. We want to move software from one host to another even if the underlying infrastructure is different. Such a move needs to happen as fast as possible to reduce downtime for our customers.
 
@@ -46,7 +46,7 @@ The Docker platform consists of several components that we use to build, run, an
 
 The Docker Engine consists of several components configured as a client-server implementation where the client and server run simultaneously on the same host. The client communicates with the server using a REST API, which allows the client to also communicate with a remote server instance.
 
-![An illustration showing a high-level overview of the Docker architecture.](../media/2-docker-architecture.png)
+![An illustration showing a high-level overview of the Docker architecture.](../media/2-docker-architecture.svg)
 
 **The Docker client**
 

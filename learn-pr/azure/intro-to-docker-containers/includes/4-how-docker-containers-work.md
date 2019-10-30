@@ -8,7 +8,7 @@ In our previous unit, we looked at how a Docker image is built. Here we'll look 
 
 A Docker container has a life cycle that we can manage and track the state of the container.
 
-![Image of life cycle](../media/4-docker-container-lifecycle.png)
+![Image of life cycle](../media/4-docker-container-lifecycle.svg)
 
 We use the start command to place a container in the run state. We can also restart a container that is already running. When restarting a container, the container receives a termination signal to allow any running processes to shut down gracefully before the container's kernel is terminated.
 
@@ -42,11 +42,11 @@ d93d40cc1ce9    tmp-ubuntu:latest  "dotnet website.dll …"  6 seconds ago    Up
 
 There are three items to review in the above output:
 
-1. The image name listed in the _IMAGE_ column. In our example, *tmp-ubuntu: latest*. Notice how we're allowed to create more than one container from the same image. This feature is a powerful management feature that we use to enable scaling in our solutions.
+- The image name listed in the _IMAGE_ column. In our example, *tmp-ubuntu: latest*. Notice how we're allowed to create more than one container from the same image. This feature is a powerful management feature that we use to enable scaling in our solutions.
 
-1. The status of the container listed in the _STATUS_ column. In our example, we have one container that is running and one container that has exited. The container's status usually is our first indicator of the health of the container.
+- The status of the container listed in the _STATUS_ column. In our example, we have one container that is running and one container that has exited. The container's status usually is our first indicator of the health of the container.
 
-1. The name of the container listed in the _NAMES_ column. Apart from the container ID in the first column, containers will also receive a name. In our example, we didn't explicitly provide a name for each container, and as a result, Docker gave the container a random name. You give a container an explicit name using the `--name` flag using the run command.
+- The name of the container listed in the _NAMES_ column. Apart from the container ID in the first column, containers will also receive a name. In our example, we didn't explicitly provide a name for each container, and as a result, Docker gave the container a random name. You give a container an explicit name using the `--name` flag using the run command.
 
 ### Why are containers given a name?
 
