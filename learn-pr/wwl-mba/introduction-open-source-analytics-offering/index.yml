@@ -8,7 +8,6 @@ metadata:
   ms.author: Chris Testa O'Neill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.learn-contact: ''
 title: Introduction to the Open source Analytics Offering
 summary: At the end of this module, you will learn that Azure HDInsight is a fully managed cloud service that enables you to efficiently process massive amounts of data using the most popular open source frameworks.
 abstract: |

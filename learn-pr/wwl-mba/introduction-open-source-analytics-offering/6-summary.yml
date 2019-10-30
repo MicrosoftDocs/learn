@@ -9,8 +9,7 @@ metadata:
   ms.author: Chris Testa O'Neill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-
+azureSandbox: False
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]

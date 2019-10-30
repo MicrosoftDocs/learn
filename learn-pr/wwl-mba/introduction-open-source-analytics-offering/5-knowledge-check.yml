@@ -9,11 +9,10 @@ metadata:
   ms.author: Chris Testa O'Neill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-
+azureSandbox: False
 durationInMinutes: 5
+
 quiz:
-  title: ""
   questions:
   - content: "Apache Hadoop stores data in what type of file system?"
     choices:
