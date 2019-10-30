@@ -84,8 +84,7 @@ If there were any performance recommendations available, the tool would display 
 
 2. Click **New Note**, name the note Real Estate Data, and then click **Create**.
 
-![Create a new Zeppelin Notebook in the Azure Portal](../media/5-zepplin-new-note
-.png)
+![Create a new Zeppelin Notebook in the Azure Portal](../media/5-zepplin-new-note.png)
 
 3. Paste the following code snippet into the command prompt in the Zeppelin Window and click the play icon.
 

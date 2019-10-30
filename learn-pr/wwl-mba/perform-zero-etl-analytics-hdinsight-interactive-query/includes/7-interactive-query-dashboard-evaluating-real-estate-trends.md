@@ -44,9 +44,9 @@ Because we’re dealing with big data here, we don’t want to import this data 
 
 ![Power BI dashboard](../media/7-power-bi-visualizations.png)
 
-13. Click **File > Save As**, name the file RealEstate and save your pbix file locally. 
-14. Click **Publish > Save > and select My workspace** as a destination. 
-15. In the Publishing to Power BI window, click **Open ‘Real Estate.pbix’** in Power BI. If you get a message about adding permissions, enter your username (admin) and password, and then set the permissions to Organization.
+10. Click **File > Save As**, name the file RealEstate and save your pbix file locally. 
+11. Click **Publish > Save > and select My workspace** as a destination. 
+12. In the Publishing to Power BI window, click **Open ‘Real Estate.pbix’** in Power BI. If you get a message about adding permissions, enter your username (admin) and password, and then set the permissions to Organization.
 
 You can now use the Share button to share your report with your organization.
 

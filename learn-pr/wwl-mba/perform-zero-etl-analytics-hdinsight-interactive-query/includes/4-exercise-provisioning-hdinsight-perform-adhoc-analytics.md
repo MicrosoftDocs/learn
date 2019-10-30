@@ -86,10 +86,10 @@ And then click **Next**.
 
 ![The storage page in the Azure portal](../media/4-create-new-classic-storage.png)
 
-7. On the Applications (optional) page, click **Next**. 
-8. On the Cluster size page, click **Next**.
-9. On the Script actions page, click **Optional**, and then click **Submit new**.
-10. In the Submit script action page, fill out the following values:
+8. On the Applications (optional) page, click **Next**. 
+9. On the Cluster size page, click **Next**.
+10. On the Script actions page, click **Optional**, and then click **Submit new**.
+11. In the Submit script action page, fill out the following values:
 - **Script type**: Select Custom.
 - **Name**: Enter mslearnmodule6
 - **Bash script URI**: Enter https://hdiconfigactions.blob.core.windows.net/dasinstaller/LaunchDASInstaller.sh
@@ -98,18 +98,18 @@ And then click **Create**.
 
 ![The script actions page in the Azure portal](../media/4-script-actions.png)
 
-11. After the validation completes on the Script actions page, click **Select** and then click **Next**.
-12. In the Cluster summary page, after the validation completes, ensure the cluster type is set to **Interactive Query 3.1 (HDI 4.0)**, and then click **Create**.
+12. After the validation completes on the Script actions page, click **Select** and then click **Next**.
+13. In the Cluster summary page, after the validation completes, ensure the cluster type is set to **Interactive Query 3.1 (HDI 4.0)**, and then click **Create**.
 
 ![The HDInsight summary page in the Azure portal](../media/4-create-classic-hdinsight-review.png)
 
-13.	Click the Notification icon to watch the progress of the deployment. 
+14.	Click the Notification icon to watch the progress of the deployment. 
 
 ![The deployment in progress notification in the Azure portal](../media/4-deployment-in-progress.png)
 
 When the deployment succeeds, the message changes to Deployment succeeded.
 
-14.	Click Go to resource in the Notifications pane.
+15.	Click Go to resource in the Notifications pane.
 
 ![The HDInsight deployment succeeded screen in the Azure portal](../media/4-hdinsight-deployment-succeeded.png)
 
@@ -209,10 +209,10 @@ And then click **Next**.
 
 ![The storage page in the Azure portal](../media/4-create-new-classic-storage.png)
 
-7. On the Applications (optional) page, click **Next**. 
-8. On the Cluster size page, click **Next**.
-9. On the Script actions page, click **Optional**, and then click **Submit new**.
-10. In the Submit script action page, fill out the following values:
+8. On the Applications (optional) page, click **Next**. 
+9. On the Cluster size page, click **Next**.
+10. On the Script actions page, click **Optional**, and then click **Submit new**.
+11. In the Submit script action page, fill out the following values:
 - **Script type**: Select Custom.
 - **Name**: Enter mslearnmodule6
 - **Bash script URI**: Enter https://hdiconfigactions.blob.core.windows.net/dasinstaller/LaunchDASInstaller.sh
@@ -221,18 +221,18 @@ And then click **Create**.
 
 ![The script actions page in the Azure portal](../media/4-script-actions.png)
 
-11. After the validation completes on the Script actions page, click **Select** and then click **Next**.
-12. In the Cluster summary page, after the validation completes, ensure the cluster type is set to **Interactive Query 3.1 (HDI 4.0)**, and then click **Create**.
+12. After the validation completes on the Script actions page, click **Select** and then click **Next**.
+13. In the Cluster summary page, after the validation completes, ensure the cluster type is set to **Interactive Query 3.1 (HDI 4.0)**, and then click **Create**.
 
 ![The HDInsight summary page in the Azure portal](../media/4-create-classic-hdinsight-review.png)
 
-13.	Click the Notification icon to watch the progress of the deployment. 
+14.	Click the Notification icon to watch the progress of the deployment. 
 
 ![The deployment in progress notification in the Azure portal](../media/4-deployment-in-progress.png)
 
 When the deployment succeeds, the message changes to Deployment succeeded.
 
-14.	Click Go to resource in the Notifications pane.
+15.	Click Go to resource in the Notifications pane.
 
 ![The HDInsight deployment succeeded screen in the Azure portal](../media/4-hdinsight-deployment-succeeded.png)
 
