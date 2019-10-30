@@ -29,7 +29,7 @@ Suppose you run a company that operates a fleet of refrigerated trucks.
 
 In order to make these decisions, you will need an up-to-date picture of all that is going on with your trucks. You will need to know the location of each truck on a map, the state of the cooling system, and the state of the contents.
 
-IoT Central provides all you need to handle this scenario. In the following image, the colored circles show the locations of the trucks, truck 4 has been selected to receive a new command, and the exact location of truck 3 is being highlighted.
+IoT Central provides all you need to handle this scenario. In the following image, the colored circles show the locations of the trucks; truck 4 has been selected to receive a new command, and the exact location of truck 3 is being highlighted.
 
 ![Image of the finished app, showing Trucks on routes in an IoT Central dashboard](../media/refrigerated-trucks-intro-map.png)
 
