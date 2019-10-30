@@ -1,4 +1,4 @@
-Recall we said the container becomes the unit we use to distribute applications. We also mentioned the container is in a standardized format used by both our developer and operation teams.
+Recall we said the container image becomes the unit we use to distribute applications. We also mentioned the container is in a standardized format used by both our developer and operation teams.
 
 Here we'll look at the differences between software, packages, and images as used in Docker. Knowing the differences between these concepts will help us better understand how Docker images work.
 
@@ -18,7 +18,7 @@ A container image is immutable. Once you've built an image, the image can't be c
 
 ## What is the host OS?
 
-The host OS is the OS on which the Docker engine runs. Docker containers running on Linux share the host OS kernel and don't require a container OS as long as the binary access the OS kernel directly.
+The host OS is the OS on which the Docker engine runs. Docker containers running on Linux share the host OS kernel and don't require a container OS as long as the binary can access the OS kernel directly.
 
 ![An illustration showing a Docker image with no base OS and the dependency on the host OS Kernel.](../media/3-container-scratch-host-os.png)
 
@@ -42,7 +42,7 @@ In our example, we're using Ubuntu Linux as the container OS and this OS doesn't
 
 For example, assume we're building an image for our web application from earlier. We'll layer the Ubuntu distribution as a base image on top of the boot file system. Next we'll install Nginx and our web app. We're effectively layering Nginx and the web app on top of the original Ubuntu image.
 
-A finale writeable layer is created once the container is run from the image. This layer however, does not get persisted when the container is destroyed.
+A final writeable layer is created once the container is run from the image. This layer however, does not persist when the container is destroyed.
 
 ## What is a base image?
 
@@ -182,7 +182,7 @@ Here is another example. Suppose you want to use the .NET Core samples Docker im
 
 The Docker software automatically configures a local image registry on your machine. You can view the images in this registry with the `docker images` command.
 
-```bash
+```code
 docker images
 ```
 
@@ -192,7 +192,7 @@ The output looks like the example below.
 REPOSITORY          TAG                     IMAGE ID            CREATED                     SIZE
 tmp-ubuntu          latest             f89469694960        14 minutes ago         1.69GB
 tmp-ubuntu          version-1.0        f89469694960        14 minutes ago         1.69GB
-ubuntu              18.04                   a2a15febcdf3        5 weeks ago             64.2MB
+ubuntu              18.04                   a2a15febcdf3        5 weeks ago            64.2MB
 ```
 
 Notice how the image is listed with its *Name*, *Tag*, and an *Image ID*. Recall that we can apply multiple labels to an image. Here is such an example. Even though the image names are different, we can see the IDs are the same.
@@ -203,7 +203,7 @@ The image ID is a useful way to identify and manage images where the name or tag
 
 You can remove an image from the local docker registry with the `docker rmi` command. Specify the name or ID of the image to remove. This example removes the image for the sample web app using the image name:
 
-```bash
+```code
 docker rmi temp-ubuntu:version-1.0
 ```
 

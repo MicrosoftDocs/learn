@@ -2,6 +2,15 @@ As we've seen, Docker has several features for us to use. Here, we'll look at th
 
 These aspects will help you decide if Docker is a good fit for your containerization strategy.
 
+Recall from earlier, there were a number of challenges our team faced as they develop and publish our order tracking portal. They were looking for a solution to:
+
+- Manage our hosting environments with ease
+- Guarantee continuity in how we deliver our software
+- Ensure we make efficient use of server hardware
+- Allow for the portability of our applications
+
+Docker is a solution to these challenges. Let's have a look at all the benefits we've covered so far.
+
 ## Docker benefits
 
 When we use Docker, we immediately get access to the benefits containerization offer.
@@ -58,12 +67,12 @@ Docker containers provide us with many benefits, as we've seen. Keep in mind tha
 
 Containers provide a level of isolation. However, containers share a single host OS kernel, which can be a single point of attack.  
 
-We also need to take when we configure aspects such as storage and networks to make sure that we consider all security aspects.
-
-For example, all containers will use the bridge network by default and can access each other via IP address.
+We also need to take into account configure aspects such as storage and networks to make sure that we consider all security aspects. For example, all containers will use the bridge network by default and can access each other via IP address.
 
 Not all applications will benefit from containerization. In such instances, it may make more sense to use a VM.
 
 ### Service monitoring
 
 Managing the applications and containers are more complicated than traditional VM deployments. Logging features exist that tell us about the state of the running containers. However, more detailed information about services inside the container is harder to monitor.
+
+For example, Docker provides us with the `docker stats` command. This command returns information for the container such as percentage CPU usage, percentage memory usage, I/O written to disk, network data send and received and process IDs assigned. This information is useful as an immediate data stream, however no aggregation is done as the data isn't stored. We'll have to install third-party software for meaningful data capture over a period of time.

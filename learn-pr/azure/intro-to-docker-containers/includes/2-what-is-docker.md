@@ -2,7 +2,7 @@ Before we start our quick tour of Docker containers, let's have a look at how ou
 
 The process of developing and managing applications in your company typically includes one or more teams. There's a development team that creates the software, and an operations team responsible for the deployment of these applications. The operations team is also responsible for the management of the application hosting infrastructure.
 
-Several environments host our applications during this process. First, the development team develops and tests the software in a development environment. From here, the software is then deployed to a quality assurance (QA) environment, followed by pre-production, and a final production environment.
+For example, assume we're developing an order tracking portal that our company's various outlets will use. Several environments host our applications during the app's development and publish process. First, the development team develops and tests the software in a development environment. From here, the software is then deployed to a quality assurance (QA) environment, followed by pre-production, and a final production environment.
 
 There are several challenges that we'll need to consider in the above scenario:
 
@@ -26,9 +26,9 @@ Before we look at the Docker features that help solve these challenges, we'll di
 
 ## What is a container?
 
-A container is a loosely isolated environment that allows us to build and run software packages. These software packages include the code and all dependencies to run applications quickly and reliably on any computing environment. We call these packages container images.
+A container is a loosely isolated environment that allows us to build and run software packages. These software packages include the code and all dependencies to run applications quickly and reliably on any computing environment. We call these packages _container images_.
 
-The container becomes the unit we use to distribute our applications.
+The container image becomes the unit we use to distribute our applications.
 
 ## What is software containerization?
 
@@ -36,7 +36,7 @@ Software containerization is an OS virtualization method that is used to deploy 
 
 ## What is Docker?
 
-Docker is a containerization platform used to develop, ship, and run containers. Docker doesn't use hypervisor, and you can run Docker on your desktop or laptop if you're developing and testing applications. The desktop version of Docker supports Linux, Windows, and macOS. For production systems, Docker is available for server environments, including many variants of Linux and Microsoft Windows Server 2016. Many vendors also support Docker in the cloud.
+Docker is a containerization platform used to develop, ship, and run containers. Docker doesn't use a hypervisor, and you can run Docker on your desktop or laptop if you're developing and testing applications. The desktop version of Docker supports Linux, Windows, and macOS. For production systems, Docker is available for server environments, including many variants of Linux and Microsoft Windows Server 2016 and above. Many clouds, including Azure, supports Docker.
 
 ## Docker architecture
 
@@ -44,21 +44,21 @@ The Docker platform consists of several components that we use to build, run, an
 
 ### Docker Engine
 
-The Docker Engine consists of several components configured as a client-server implementation where the client and server run simultaneously on the same host. The client communicates with the server using a REST API, and this API allows the client to also communicate with a remote server instance.
+The Docker Engine consists of several components configured as a client-server implementation where the client and server run simultaneously on the same host. The client communicates with the server using a REST API, which allows the client to also communicate with a remote server instance.
 
 ![An illustration showing a high-level overview of the Docker architecture.](../media/2-docker-architecture.png)
 
 **The Docker client**
 
-The Docker client is a command-line application named `docker` that provides us with a CLI to interact with a Docker server. The `docker` command uses the Docker REST API to send instructions to either a local or remote server and functions as the primary interface we use to manage our containers.
+The Docker client is a command-line application named `docker` that provides us with a command line interface (CLI) to interact with a Docker server. The `docker` command uses the Docker REST API to send instructions to either a local or remote server and functions as the primary interface we use to manage our containers.
 
 **The Docker server**
 
-The Docker server is a daemon named `dockerd`. The `dockerd` daemon responds to request from the client via the Docker REST API and can interact with other daemons. The Docker server is also responsible for tracking the lifecycle of our containers.
+The Docker server is a daemon named `dockerd`. The `dockerd` daemon responds to requests from the client via the Docker REST API and can interact with other daemons. The Docker server is also responsible for tracking the lifecycle of our containers.
 
 **Docker objects**
 
-There are several objects that you'll create and configure to support your container deployments. These include networks, storage volumes, plugins, and other service objects. We'll not discuss all of these objects here, but it's good to keep in mind that these objects are items that we can create and deploy as needed.
+There are several objects that you'll create and configure to support your container deployments. These include networks, storage volumes, plugins, and other service objects. We won't cover all of these objects here, but it's good to keep in mind that these objects are items that we can create and deploy as needed.
 
 ### Docker Hub
 

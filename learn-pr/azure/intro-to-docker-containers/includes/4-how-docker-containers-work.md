@@ -28,7 +28,7 @@ We use the `docker ps` command to list running containers.  If you want to see a
 
 Here is an example.
 
-```bash
+```code
 docker -ps -a
 ```
 
@@ -58,7 +58,7 @@ Use the `docker run` command to start a container. We only need to specify the i
 
 Here, we're adding the `-d` flag to run the container with our website in the background.
 
-```bash
+```code
 docker run -d tmp-ubuntu
 ```
 
@@ -70,7 +70,7 @@ Once an image is specified to run, Docker finds the image, loads container from 
 
 We use the `docker pause` command to pause a container. Here is an example.
 
-```bash
+```code
 docker pause happy_wilbur
 ```
 
@@ -80,7 +80,7 @@ Pausing a container will suspend all processes. This command allows the containe
 
 We use the `docker restart` command to restart containers. Here is an example.
 
-```bash
+```code
 docker restart happy_wilbur
 ```
 
@@ -90,7 +90,7 @@ The container receives a stop command, followed by a start command. If the conta
 
 We use the `docker stop` command to stop a running container. Here is an example.
 
-```bash
+```code
 docker stop happy_wilbur
 ```
 
@@ -100,7 +100,7 @@ The stop command sends a termination signal to the container and the process run
 
 We use the `docker rm` command to remove a container. Here is an example.
 
-```bash
+```code
 docker rm happy_wilbur
 ```
 
@@ -110,7 +110,7 @@ All data in the container is destroyed once you remove the container. It's essen
 
 As we've mentioned earlier, we must always consider containers as temporary when the application in a container needs to store data.
 
-Let's assume ou tracking portal creates a log file in a subfolder to the root of the application, that is, directly to the file system of the container. When our app writes data to the log file, the system writes the data to the writable container layer.
+Let's assume our tracking portal creates a log file in a subfolder to the root of the application, that is, directly to the file system of the container. When our app writes data to the log file, the system writes the data to the writable container layer.
 
 Even though this approach works, it, unfortunately, has several drawbacks.
 
@@ -124,7 +124,7 @@ Even though this approach works, it, unfortunately, has several drawbacks.
 
 - Container storage drives are less performant
 
-    Containers implement storage a driver to allow our applications to write data. This driver introduces an extra abstraction to communicate with the host OS kernel and is less performant than writing directly to a host filesystem.
+    Containers implement a storage driver to allow our applications to write data. This driver introduces an extra abstraction to communicate with the host OS kernel and is less performant than writing directly to a host filesystem.
 
 Containers can make use of two options to persist data. The first option is to make use of _volumes_, and the second is _bind mounts_.
 
@@ -142,7 +142,7 @@ In our example, we can create a directory on our container host and mount this v
 
 ### What is a bind mount?
 
-A bind mount is conceptually the as a volume, however instead of using a specific folder on the container host, you can mount any file or folder on the host. We're also expecting the host can change the contents of these mounts. Just like volumes, the bind mount is created if we mount it, and it doesn't yet exist on the host.
+A bind mount is conceptually the same as a volume, however, instead of using a specific folder, you can mount any file or folder on the host. We're also expecting the host can change the contents of these mounts. Just like volumes, the bind mount is created if we mount it, and it doesn't yet exist on the host.
 
 Bind mounts have limited functionality compared to volumes, and even though they're more performant, they depend on the host having a specific folder structure in place.
 
@@ -168,11 +168,11 @@ Each container in the bridge network is assigned an IP address and subnet mask w
 
 By default, Docker doesn't publish any container ports. We use the Docker port  `--publish` flag to enable port mapping between the container ports and the Docker host ports.
 
-The publish flag effectively configures a firewall rule that maps the ports. 
+The publish flag effectively configures a firewall rule that maps the ports.
 
 In our example, our tracking portal is accessible to clients browsing to port 80. We'll have to map port 80 from the container to an available port on the host.  We have port 8080 open on the host, which allows us to set the flag like this:
 
-```bash
+```code
 --publish 80:8080
 ```
 
@@ -182,7 +182,7 @@ Any client browsing to the Docker host IP and port 8080 can access the tracking 
 
 The host network allows us to run the container on the host network directly. This configuration effectively removes the isolation between the host and the container at a network level.
 
-In our example, let's assume we decide to change the networking configuration to the host network option. Our tracking portal is still accessible using the host IP. We can now use the well know port 80 instead of a mapped port.
+In our example, let's assume we decide to change the networking configuration to the host network option. Our tracking portal is still accessible using the host IP. We can now use the well known port 80 instead of a mapped port.
 
 Keep in mind that the container can use only ports not already used by the host.
 

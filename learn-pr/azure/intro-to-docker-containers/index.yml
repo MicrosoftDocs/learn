@@ -3,7 +3,7 @@ uid: learn.intro-to-docker-containers
 metadata:
   title: "Introduction to Docker containers"
   description: "Introduction to Docker containers"
-  ms.date: 09/09/2019
+  ms.date: 05/10/2019
   author: cryophobia
   ms.author: chrvaw
   ms.topic: interactive-tutorial
@@ -13,13 +13,10 @@ summary: "Describes the benefits of using Docker containers as a containerizatio
 abstract: | 
   In this module, you will:
   - Evaluate whether Docker is an appropriate containerization platform for you
-  - Describe how the components of Docker containers support compute implementations
+  - Describe how the components of Docker containers support compute container implementations
 prerequisites: | 
   - Familiarity with command-line based applications
-#iconUrl: /learn/achievements/learn.intro-to-docker-containers.svg
 iconUrl: /learn/achievements/intro-to-docker-containers-social.png
-badge:
-  uid: learn.intro-to-docker-containers.badge
 levels:
 - beginner
 roles:
@@ -38,3 +35,5 @@ units:
 - learn.intro-to-docker-containers.4-how-docker-containers-work
 - learn.intro-to-docker-containers.5-when-use-docker-containers
 - learn.intro-to-docker-containers.6-summary
+badge:
+  uid: learn.intro-to-docker-containers.badge
