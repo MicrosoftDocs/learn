@@ -98,7 +98,7 @@ Now, modify the default homepage for the webapp to display the countdown:
 
 Now the app is complete, let's run it on your local computer and see if it shows the countdown:
 
-1. The Express Generator creates a webapp that depends on several other Node.js package. You must ensure these are installed before you can run the webapp. In the Code integrated terminal, to install the webapp's dependencies, run this command:
+1. The Express Generator creates a webapp that depends on several other Node.js packages. You must ensure these are installed before you can run the webapp. In the Code integrated terminal, to install the webapp's dependencies, run this command:
 
     ```console
     npm install
