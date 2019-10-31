@@ -6,11 +6,10 @@ metadata:
   description: 'Creating a HDInsight Cluster '
   ms.date: 10/25/2019
   author: wwlpublish
-  ms.author: Chris Testa O'Neill
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-
+azureSandbox: False
 durationInMinutes: 10
 content: |
   [!include[](includes/2-creating-hdinsight-cluster.md)]

@@ -5,23 +5,17 @@ metadata:
   description: Creating and configuring a HDInsight Cluster
   ms.date: 10/25/2019
   author: wwlpublish
-  ms.author: Chris Testa O'Neill
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.learn-contact: ''
 title: Creating and configuring a HDInsight cluster
 summary: In this module, you will learn how to create a HDInsight Cluster, monitor a cluster and be aware of common provisioning issues.
 abstract: |
-  1. Introduction
-  2. Creating a HDInsight Cluster
-  3. Exercise - Create a HDInsight cluster via the Azure portal
-  4. Opening a Jupyter Notebook on HDInsight Spark Cluster
-  5. Exercise - Execute Queries on HDInsight Spark Cluster
-  6. Enabling monitoring of HDInsight jobs
-  7. Common Provisioning Issues
-  8. Exercise - Monitor an HDInsight cluster
-  9. Summary
-  10. Knowledge Check
+  In this module you will:
+  - Create an HDInsight Spark Cluster
+  - Execute queries on an HDInsight Spark Cluster
+  - Monitor an HDInsight Spark Cluster
+  - Learn how to fix common provisioning issue
 ratingEnabled: true
 prerequisites: |
   The following pre-requisite should be completed:

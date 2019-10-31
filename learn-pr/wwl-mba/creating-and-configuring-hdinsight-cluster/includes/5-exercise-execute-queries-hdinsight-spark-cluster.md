@@ -1,4 +1,4 @@
-In this exercise, you learn how to create a dataframe from a csv file, and how to run interactive Spark SQL queries against an Apache Spark cluster in Azure HDInsight. In Spark, a dataframe is a distributed collection of data organized into named columns. The dataframe is conceptually equivalent to a table in a relational database or a data frame in R/Python.
+In this exercise, you learn how to create a dataframe from a csv file, and how to run interactive Spark SQL queries against an Apache Spark cluster in Azure HDInsight. In Spark, a dataframe is a distributed collection of data organized into named columns. The dataframe is conceptually equivalent to a table in a relational database or a data frame in R/Python. 
 
 In this tutorial, you learn how to:
 

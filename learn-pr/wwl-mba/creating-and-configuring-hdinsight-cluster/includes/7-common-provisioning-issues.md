@@ -1,4 +1,4 @@
-There are several common provisioning issues that you should be aware of when you create an HDInsight cluster. Some errors are transient and may succeed if you retry the creation after 15 minutes.
+There are several common provisioning issues that you should be aware of when you create an HDInsight cluster. Some errors are transient and may succeed if you retry the creation after 15 minutes. 
 
 Azure Policy and Firewall configuration
 

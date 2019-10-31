@@ -1,4 +1,4 @@
-In this exercise, you will create an Azure HDInsight Spark Cluster using the Azure portal:
+In this exercise, you will create an Azure HDInsight Spark Cluster using the Azure portal: 
 
 1. In the Azure portal (https://portal.azure.com), select **Create a resource > Analytics > HDInsight**
 
