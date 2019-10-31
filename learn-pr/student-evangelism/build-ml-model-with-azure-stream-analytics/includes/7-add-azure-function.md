@@ -4,7 +4,7 @@ The function, which is invoked each time Stream Analytics produces an output, ca
 
 1. In the [Azure portal](https://portal.azure.com?azure-portal=true), click **+ Create a resource**, followed by **Compute** and **Function App**.
 
-    [!include[](../../includes/functions-classic-workaround.md)]
+    [!include[](../../../azure/includes/functions-classic-workaround.md)]
 
     ![Creating an Azure Function App](../media/7-new-function-app.png)
 
