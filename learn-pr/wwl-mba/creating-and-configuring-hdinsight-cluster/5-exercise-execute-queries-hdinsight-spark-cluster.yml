@@ -6,11 +6,10 @@ metadata:
   description: Exercise - Execute Queries on HDInsight Spark Cluster
   ms.date: 10/25/2019
   author: wwlpublish
-  ms.author: Chris Testa O'Neill
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-
+azureSandbox: False
 durationInMinutes: 8
 content: |
   [!include[](includes/5-exercise-execute-queries-hdinsight-spark-cluster.md)]

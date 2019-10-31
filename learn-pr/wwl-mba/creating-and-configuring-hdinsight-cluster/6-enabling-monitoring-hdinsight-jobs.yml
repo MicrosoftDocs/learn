@@ -6,11 +6,10 @@ metadata:
   description: Enabling monitoring of HDInsight jobs
   ms.date: 10/25/2019
   author: wwlpublish
-  ms.author: Chris Testa O'Neill
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-
+azureSandbox: False
 durationInMinutes: 9
 content: |
   [!include[](includes/6-enabling-monitoring-hdinsight-jobs.md)]

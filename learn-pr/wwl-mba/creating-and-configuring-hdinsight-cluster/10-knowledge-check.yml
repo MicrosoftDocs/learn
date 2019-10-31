@@ -6,14 +6,13 @@ metadata:
   description: 'Knowledge Check '
   ms.date: 10/25/2019
   author: wwlpublish
-  ms.author: Chris Testa O'Neill
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-
+azureSandbox: False
 durationInMinutes: 5
+
 quiz:
-  title: ""
   questions:
   - content: "You want to enable integration with Azure Active Directory, what option should you select when you create an HDInsight cluster?"
     choices:

@@ -6,11 +6,10 @@ metadata:
   description: 'Exercise - Create a HDInsight cluster via the Azure portal '
   ms.date: 10/25/2019
   author: wwlpublish
-  ms.author: Chris Testa O'Neill
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-
+azureSandbox: False
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-create-hdinsight-cluster-via-azure-portal.md)]

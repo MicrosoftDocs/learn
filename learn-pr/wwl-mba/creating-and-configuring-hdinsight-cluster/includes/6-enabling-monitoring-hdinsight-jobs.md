@@ -1,4 +1,4 @@
-Monitoring of an HDInsight cluster is of interest to both data engineers and IT administrators, so they can monitor the following areas of the cluster:
+Monitoring of an HDInsight cluster is of interest to both data engineers and IT administrators, so they can monitor the following areas of the cluster: 
 
 - Cluster health and availability
 - Resource utilization and performance
@@ -37,7 +37,7 @@ Alerts are a useful tool to proactively monitor a resource in Azure, and to act 
 
 ## Metrics
 
-Metrics are a component of Azure Monitor that enable you to set up visual charts specific to what you want to monitor. Using visual chargs enables you to view, measure, and correlate data points to help determine if a service is performing in an acceptable range. HDInsight metrics include Gateway Requests to see the load on your cluster, and the number of active workers, which allows you to keep an eye on your cluster size of the HDInsight cluster
+Metrics are a component of Azure Monitor that enable you to set up visual charts specific to what you want to monitor. Using visual charts enables you to view, measure, and correlate data points to help determine if a service is performing in an acceptable range. HDInsight metrics include Gateway Requests to see the load on your cluster, and the number of active workers, which allows you to keep an eye on your cluster size of the HDInsight cluster
 
 ## Diagnostic Settings
 
