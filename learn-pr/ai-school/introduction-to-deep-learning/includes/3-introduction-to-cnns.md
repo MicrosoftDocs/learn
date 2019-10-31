@@ -30,7 +30,7 @@ As you can see above, Softmax outputs multiple probabilities adding up to 1. The
 
 It can be time consuming and computationally expensive to use a large training dataset only to find out at the end of training that overfitting has occurred and you have low accuracy on your test set. Validation sets are used alongside your training set *during training*, rather than test sets which are used after training.
 
-The validation set gives an unbiased result for your model to use to detect overfitting as it is occurring. If the validation sets error begins to increase by a certain amount, overfitting may be occurring, and training can be stopped. This process is called early stopping.
+The validation set gives an unbiased result for your algorithm to use to detect overfitting as it is occurring. If the validation sets error begins to increase by a certain amount, overfitting may be occurring, and training can be stopped. This process is called early stopping.
 
 ![Three rectangles are present, encompassing a whole dataset. The largest rectangle is labeled 'training set' and is joined to a smaller rectangle labeled 'validation set', separate from these two rectangles is the third rectangle labeled 'test set'.](../media/28-ts-2.png)
 
