@@ -26,6 +26,8 @@ Let's create a function app in the Azure portal.
 
     ![Screenshot of the Azure portal showing the Create a resource blade with the Compute section and Function App highlighted.](../media/3-create-function-app-blade.png)
 
+    [!include[](../../includes/functions-classic-workaround.md)]
+
 1. Choose a globally unique app name. This will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the x's can be replaced with your initials and your birth year. If this isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9 and -.
 
 1. Select the Azure sandbox subscription **Concierge Subscription**.
