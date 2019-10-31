@@ -26,8 +26,7 @@ In this module, we’ll go through a high-level overview of what exists in deep 
 
 **In this module, you will learn to:**
 
-* Articulate common applications for deep learning.
-* Apply convolutional neural networks and recurrent neural networks.
-* Describe the functions of popular deep learning tools.
+* Apply convolutional neural networks to image data.
+* Make text predictions using recurrent neural networks.
 
 Next we will look over different applications of deep learning.

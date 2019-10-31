@@ -4,8 +4,7 @@ We learned about k-means clustering, which can be given unlabeled data and ident
 
 Now that you have reviewed this module, you should be able to:
 
-* Describe unsupervised learning.
-* Articulate practical applications of unsupervised learning.
-* Use k-means clustering to predict groupings in data.
+* Define unsupervised learning.
+* Apply k-means clustering to predict groupings in data.
 
 Well done! You’ve completed the module on unsupervised learning.

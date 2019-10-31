@@ -1,4 +1,4 @@
-In machine learning, when we predict an example’s category, we __label__ the example with a category. Labels don’t have to be binary - a label might be a breed of a dog or the species of a tree. Email spam filters are another example of a classification algorithm (spam or not spam).
+In machine learning, when we predict an example’s category, we __label__ the example with a category. Labels don’t have to be binary - a label might be a breed of a dog or the species of a tree. Email spam filters are another example of classification (spam or not spam).
 
 ## How classification models predict labels
   
@@ -18,7 +18,7 @@ There are many different ways training can work. One common method is to start w
 
 ## Logistic Regression
 
-Logistic regression is a binary classification model, meaning it predicts 2 categories (e.g. yes or no, win or loss etc.). Don’t be fooled by the ‘regression’ in the name, this simply means that it predicts the probability of a category.
+Logistic regression is a binary classification algorithm, meaning it predicts 2 categories (e.g. yes or no, win or loss etc.). Don’t be fooled by the ‘regression’ in the name, this simply means that it predicts the probability of a category.
 
 In the plot below we compare customer satisfaction with different cocoa percentages using logistic regression.
 

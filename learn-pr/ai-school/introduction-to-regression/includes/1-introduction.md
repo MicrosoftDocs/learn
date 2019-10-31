@@ -12,13 +12,13 @@ For example, if we had a data set with just two features, year and temperature, 
 
 ![Scatter plot graph showing height and shoe size with a line of best fit showing a linear relationship between shoe size and height. The Y-axis represents show size and the X-axis represents height in centimeters. The graph shows shoe size beginning at 6, with height at 120 centimeters. As height increases to 200 centimeters, shoe size increases, almost perfectly linearly, from 6 to 15.](../media/2-1-d.png)
 
-Because these regression models let us understand relationships like shoe size in relation to height, we can use them to predict a label (someones shoe size) if we have a relevant feature (their height). If we have enough examples, the trend line can be very accurate.
+Because these regression algorithms let us understand relationships like shoe size in relation to height, we can use them to predict a label (someones shoe size) if we have a relevant feature (their height). If we have enough examples, the trend line can be very accurate.
 
 Seeing these trend lines is relatively easy when we only are using one feature to predict another. The accuracy of predictions goes up when we have more relevant features, but it's much harder to see the trends visually. Below we are charting three features, **car weight**, **horsepower**, and **fuel efficiency**.
 
 ![3D scatter plot showing Car fuel efficiency by car weight and horsepower. The Y-axis represents fuel efficiency (kilometers per liter), the X-axis represents car weight (tonne), and the Z-axis represents horsepower. Data points begin at 1 tonne, with a high efficiency around 11 kilometers per liter. All data points are between 100 horsepower and 600 horsepower. As car weight increases, the fuel efficiency decreases from 11 kilometers per liter to 6.](../media/2-1-c.png)
 
-Even with three features it is much more difficult to spot the trend in the previous chart. Regression models don't have the same limitation we have visually. Trends can be identified and used for predictions with hundreds or even thousands of features.
+Even with three features it is much more difficult to spot the trend in the previous chart. Regression algorithms don't have the same limitation we have visually. Trends can be identified and used for predictions with hundreds or even thousands of features.
 
 From the three examples above, if we have enough data points to plot, we might be able to accurately predict:
 
@@ -28,6 +28,6 @@ From the three examples above, if we have enough data points to plot, we might b
 
 **In this module, you will learn to:**
 
-* Build simple linear regression and multiple linear regression models
-* Model non-linear data with polynomial regression models
-* Use these models to predict numeric values
+* Define regression.
+* Make predictive models with variations of linear regression.
+* Make predictions on non-linear data with regression.

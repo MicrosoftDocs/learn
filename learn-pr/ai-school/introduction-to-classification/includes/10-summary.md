@@ -15,8 +15,8 @@ We also learned all about how we test models. Recall that a big dataset is norma
 
 Now that you have reviewed this module, you should be able to:
 
-* Define what classification is.
-* Build a logistic regression model.
+* Define classification.
+* Build logistic regression and support vector machine models.
 * Describe what training, irreducible error, and Bayes error are.
 
 In the next section, we’ll walk you through one of the most exciting areas in technology right now - neural networks.

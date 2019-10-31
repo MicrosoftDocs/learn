@@ -33,6 +33,4 @@ Often you may have a category in your dataset you want to use as a feature – s
 
 A one-hot vector is a vector (list) where each position in the list represents a different category. The vector is filled with 0’s and with one 1. In the example above we are representing 4 animals, where a 1 in the first position represents a cat, and a 1 in the fourth position represents a rabbit. Now your category is useable by a machine learning model.
 
-In the previous module, you saw the logistic regression algorithm optimize the number of correctly classified examples. Optimization is achieved by two methods that happen behind the scenes in AI: cost function and gradient descent.
-
 Up next we've got an exercise where you will code a simple neural network.

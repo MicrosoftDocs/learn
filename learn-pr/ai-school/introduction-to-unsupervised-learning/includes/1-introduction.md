@@ -24,8 +24,7 @@ We’ll cover the fundamentals of unsupervised learning, as well as introducing 
 
 **In this module, you will learn to:**
 
-* Describe unsupervised learning.
-* Articulate practical applications of unsupervised learning.
-* Use k-means clustering to predict groupings in data.
+* Define unsupervised learning.
+* Apply k-means clustering to predict groupings in data.
 
 Next up we'll cover k-means clustering.

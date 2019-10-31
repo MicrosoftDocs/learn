@@ -46,9 +46,9 @@ In this module, we’ll work through the fundamentals of neural networks and tra
 
 **In this module, you will learn to:**
 
-* Describe neural network structures, layers, edges, and weights.
-* Implement different activation functions and network structures.
-* Practically apply different types of gradient descent.
+* Learn about neural network structures, layers, edges, and weights.
+* Visualize predictions and refine neural network models.
+* Apply different types of activation functions and optimizers.
 
 We’ll introduce you to the key concepts of neural networks and get you building your first neural networks in Azure Notebooks.
 
