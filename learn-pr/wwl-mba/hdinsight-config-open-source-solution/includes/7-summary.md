@@ -2,7 +2,7 @@ Choosing the correct HDInsight cluster type is not only important to the efficie
 
 In this module, you have learned:
 
-1. The correct HDInsight configuration options
-1. Decision criteria for selecting the correct HDInsight configuration option
-1. Analyze a scenario and map it to a HDInsight configuration option
-1. Cost Optimization strategies for HDInsight clusters
+- The correct HDInsight configuration options
+- Decision criteria for selecting the correct HDInsight configuration option
+- Analyze a scenario and map it to a HDInsight configuration option
+- Cost Optimization strategies for HDInsight clusters

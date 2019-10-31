@@ -28,7 +28,7 @@ Therefore, it is important to select the correct cluster type to meet the busine
 
 **Apache ZooKeeper** - A centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services.  
 
-## Data Processing  
+## Data processing  
 
 **Apache Hadoop MapReduce** - A framework for easily writing applications which process vast amounts of data  
 
@@ -36,7 +36,7 @@ Therefore, it is important to select the correct cluster type to meet the busine
 
 **Apache Hive** - Facilitates managing large datasets residing in distributed storage using SQL.  
 
-## Data Analysis  
+## Data analysis  
 
 **Apache Pig** – Provides an abstraction layer over MapReduce to analyze large datasets  
 

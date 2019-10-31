@@ -23,7 +23,7 @@ prerequisites: |
   - Understand the Azure storage options
   - Understand the Azure compute options
   - Create a HDInsight Cluster in the Azure Portal
-iconUrl: /learn/achievements/learn-pr/achievements/choose-the-correct-hdinsight-configuration-to-build-open-source-analytical-solutions.svg
+iconUrl: /learn/achievements/learn-pr/achievements/hdinsight-config-build-oss-analytical-solutions.svg
 levels:
 - beginner
 roles:

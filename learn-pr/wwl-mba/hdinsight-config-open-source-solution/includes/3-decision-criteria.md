@@ -6,7 +6,7 @@ Many businesses have similar requirements when it comes to the scenarios f
 
 HDInsight can be used to extract, transform, and load (ETL) or extract, load, and transform (ELT) operations on both structured and unstructured data using either both Hadoop or Spark and the data processing frameworks including such as Hive and Sqoop.   
  
-## Data Warehousing  
+## Data warehousing  
 
 Traditionally done by on-premises relational database such as SQL Server, and more recently with Azure SQL Data Warehouse over structured data at petabyte scale. HDInsight enables interactive queries at petabyte scale over structured or unstructured data in many formats. This capability can work well if you manage your data operations and reporting requirements using HDInsight Hadoop with Hive.  
 
@@ -14,7 +14,7 @@ Traditionally done by on-premises relational database such as SQL Server, and mo
 
 Streaming data can be ingested from a variety of sources using HDInsight via an Event Hub or IoT Hub using Spark Streaming.   
 
-## Data Science  
+## Data science  
 
 Microsoft Machine Learning Server is available as a deployment option when you create HDInsight clusters in Azure. This capability provides data scientists, statisticians, and R programmers with on-demand access to scalable, distributed methods of analytics on HDInsight.  
 

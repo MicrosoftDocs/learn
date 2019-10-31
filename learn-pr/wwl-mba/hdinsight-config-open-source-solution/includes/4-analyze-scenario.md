@@ -1,6 +1,6 @@
-Read the following case study and answer the questions to map a scenario to an HDInsight cluster configuration 
+Read the following case study and answer the questions to map a scenario to an HDInsight cluster configuration.
 
-## Case Study – AdventureWorks Cycles 
+## Case study – AdventureWorks cycles 
 
 AdventureWorks sells bicycles and bicycle parts directly to customers and distributors. The company currently has a single office in the Netherlands. They have been selling bicycles in the United States, Germany, and Spain through a chain of distributors and through online sales on its website. The fulfillment of delivery is done by local distribution centers. 
 
@@ -21,13 +21,13 @@ As a Senior Data Engineer, you will assist AdventureWorks in solution design and
 
 In a discovery workshop, you determine the following information:
 
-### Data Analysis
+### Data analysis
 
 The business reporting is currently being provided by a single on-premises database that is configured as a data warehouse. It holds a database named AdventureWorksDW, which is used to provide historical reporting and descriptive analytics. In recent times, that server has been struggling to process the reporting data quickly, your team should ensure that access to the data is restricted.
 
 AdventureWorks would also like to take their data analytics further and start to utilize predictive analytics capabilities. This activity is not currently undertaken. The organization understands that a recommendation or a text analytics engine could be built. They would like you to direct them on what would be the best technology and approach to take in implementing such a solution that is also resilient and performant.
 
-### Social Media Analysis
+### Social media analysis
 
 In recent years, the marketing department at the organization has run a wide variety of twitter campaigns at various times of the year. They are keen to measure the impact of their work by tracking social media assets such as hashtags during those campaigns. They would like to have the capability of tracking any hashtag of any name.
 
@@ -44,7 +44,7 @@ AdventureWorks Bicycles can be equipped with an innovative built-in bicycle comp
 
 First party and third party applications can have access the information of the bicycle computer that must be secure. This information can be used for the integration into mobile applications, real-time display of location, and bike ride sharing information. Furthermore, daily summary data can be saved to flat files. This data includes bicycle model, serial number, registered owner, a summary of the total miles cycled per day, and the average speed.
 
-### Bicycle Maintenance services 
+### Bicycle maintenance services 
 
 Existing bicycle owners can opt in to getting notifications on when their bicycle needs repair, based on:
 
