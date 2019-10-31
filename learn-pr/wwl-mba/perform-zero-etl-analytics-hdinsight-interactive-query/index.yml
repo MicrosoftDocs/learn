@@ -5,7 +5,7 @@ metadata:
   description: Perform Zero ETL analytics with HDInsight Interactive Query
   ms.date: 10/25/2019
   author: wwlpublish
-  ms.author: Chris Testa O'Neill
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Perform Zero ETL analytics with HDInsight Interactive Query

@@ -6,7 +6,7 @@ metadata:
   description: Create a large scale interactive query dashboard for Evaluating Real Estate Trends
   ms.date: 10/25/2019
   author: wwlpublish
-  ms.author: Chris Testa O'Neill
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: False

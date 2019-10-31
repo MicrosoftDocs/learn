@@ -6,7 +6,7 @@ metadata:
   description: Integrate Apache Spark and Hive LLAP queries
   ms.date: 10/25/2019
   author: wwlpublish
-  ms.author: Chris Testa O'Neill
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: False
