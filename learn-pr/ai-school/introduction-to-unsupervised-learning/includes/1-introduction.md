@@ -4,7 +4,7 @@ Supervised learning is much more common than unsupervised learning, but unsuperv
 
 ![On a plot there are many unlabeled data points. Four circles are drawn over the data points, each circle labeling the data points a different color.](../media/71-ca.gif)
 
-In the example above the model finds four groups in the unlabeled data - commonly referred to as clusters.
+In the example above the algorithm finds four groups in the unlabeled data - commonly referred to as clusters.
 
 Unsupervised learning is commonly used in science and industry for cluster analysis and anomaly detection.
 
@@ -20,12 +20,11 @@ In practice clustering tends to be used for social network analysis, computer cl
 
 There many types of cluster analysis, but AI practitioners tend to use k-means clustering for quick analysis. For in-depth unsupervised learning, there are many tools - you can use support vector machines (support vector clustering), neural networks, and so on. Next we’ll look at k-means clustering.
 
-We’ll cover the fundamentals of unsupervised learning, as well as introducing some new unsupervised learning models.
+We’ll cover the fundamentals of unsupervised learning, as well as introducing some new unsupervised learning algorithms.
 
 **In this module, you will learn to:**
 
-* Describe unsupervised learning.
-* Articulate practical applications of unsupervised learning.
-* Use k-means clustering to predict groupings in data.
+* Define unsupervised learning.
+* Apply k-means clustering to predict groupings in data.
 
 Next up we'll cover k-means clustering.

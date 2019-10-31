@@ -3,7 +3,7 @@ uid: learn.introduction-to-regression.exercise-polynomial-regression
 title: Exercise - Polynomial regression
 metadata:
   title: Exercise - Polynomial regression
-  description: Here we build a polynomial regression model in Azure Notebooks.
+  description: Build a polynomial regression model in Azure Notebooks.
   ms.date: 06/30/2019
   author: jasallen
   ms.author: jasdeb

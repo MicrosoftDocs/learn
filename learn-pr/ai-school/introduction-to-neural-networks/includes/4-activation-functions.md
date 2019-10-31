@@ -20,7 +20,7 @@ SGD uses only one random example from the training set to calculate the cost (no
 
 There are different variations of SGD you can try, such as __Adam__ and __RMSProp__. Again you do not need to know how they work - you just need to know they exist and you can try different types of SGD to improve your models.
 
-If a neural network model is taking a long time to train, you can try SGD instead. Using SGD instead of normal gradient descent is similar to changing the kernel in an SVM - it’s a built in option that you need to select.
+If a neural network is taking a long time to train, you can try SGD instead. Using SGD instead of normal gradient descent is similar to changing the kernel in an SVM - it’s a built in option that you need to select.
 
 ### Forward propagation and backpropagation
 

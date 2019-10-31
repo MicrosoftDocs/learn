@@ -4,11 +4,11 @@ In the previous exercise, you saw the logistic regression algorithm optimize the
 
 * __Cost__ is our error metric, which we want to get as low as possible.
 * We determine our cost with the __cost function__.
-* Different AI models have different cost functions.
+* Different algorithms have different cost functions.
 
 ## Gradient descent
 
-Gradient descent optimizes the AI models to minimize their cost. It is the most widely used optimization algorithm in AI and is used in some form in almost all model training set-ups. There are several variations for different applications, but they all use the same core concepts.
+Gradient descent optimizes the models to minimize their cost. It is the most widely used optimization algorithm in AI and is used in some form in almost all model training set-ups. There are several variations for different applications, but they all use the same core concepts.
 
 Gradient descent alters model predictions to decrease the error by using calculus, but you don’t have to dive into the mathematics to do AI.
 

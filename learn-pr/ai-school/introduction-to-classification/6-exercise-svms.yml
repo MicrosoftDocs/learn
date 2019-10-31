@@ -3,7 +3,7 @@ uid: learn.introduction-to-classification.exercise-svms
 title: Exercise - Support vector machines 
 metadata:
   title: Exercise - Support vector machines
-  description: Here we look at how our model 'trained' itself to improve its accuracy.
+  description: Learn to build a support vector machine in Azure Notebooks.
   ms.date: 06/30/2019
   author: jasallen
   ms.author: jasdeb

@@ -16,8 +16,8 @@ We learned that:
 
 Now that you have reviewed this module, you should be able to:
 
-* Describe neural network structures, layers, edges, and weights.
-* Articulate different types of activation functions.
-* Describe practical types of gradient descent for neural networks.
+* Learn about neural network structures, layers, edges, and weights.
+* Visualize predictions and refine neural network models.
+* Apply different types of activation functions and optimizers.
 
 Next up we’ll cover some variations of neural networks in deep learning, and their modern applications.

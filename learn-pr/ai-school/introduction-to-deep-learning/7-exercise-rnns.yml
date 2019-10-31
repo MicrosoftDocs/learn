@@ -3,7 +3,7 @@ uid: learn.deep-learning.exercise-rnns
 title: Exercise - RNNs
 metadata:
   title: Exercise - RNNs
-  description: Here we will build an RNN model in Azure Notebooks.
+  description: Build an RNN model in Azure Notebooks.
   ms.date: 06/30/2019
   author: jasallen
   ms.author: jasdeb

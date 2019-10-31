@@ -4,7 +4,7 @@ When data travels through the edges, it is multiplied by a value that we call a 
 
 * __Cost__ is our error metric, which we want to get as low as possible.
 * We determine our cost with the __cost function__.
-* Different AI models have different cost functions.
+* Different algorithms have different cost functions.
 
 ### Gradient descent refresher
 
@@ -15,9 +15,9 @@ When data travels through the edges, it is multiplied by a value that we call a 
 
 ### Learning rate
 
-Using calculus, gradient descent repeatedly changes the variables models use to decrease the error rate. How much the variables change each time is called the __learning rate__. 
+Using calculus, gradient descent repeatedly changes the variables algorithms use to decrease the error rate. How much the variables change each time is called the __learning rate__. 
 
-Learning rates are particularly important in complex models - if a learning rate is too small, the training will take a long time. If it is too large, it is not likely to ever train to be accurate.
+Learning rates are particularly important for complex models - if a learning rate is too small, the training will take a long time. If it is too large, it is not likely to ever train to be accurate.
 
 ![Three plots are shown. All three plots have error rate as the Y-axis, with trend line's that are identical - with the low error rate in the middle of the x-axis, and symmetrical, high error rates either side of the minima. The title of the first graph is 'too high' showing a high error rate, which is shown by a red line. The red line jumps from either side of the minima, leaving a high error rate when it finishes. The caption for the first plot is 'A small learning rate requires many updates before reaching the minimum point.' The second plot is titled 'Just right' with a smooth progression down the left-hand side of the trend line by a far smaller learning rate. The minima of the error rate is found. The caption of the plot is 'The optimal learning rate swiftly reaches the minimum point.' The third plot is titled 'Too low', and has many iterations of the red line down the left-hand side of the trend line until it reaches the minima. The caption for the third plot is 'Too large of a learning rate causes drastic updates which lead to divergent behaviors.'](../media/23-lr-02.png)
 
@@ -32,7 +32,5 @@ Often you may have a category in your dataset you want to use as a feature – s
 ![A table shows four different classes (cat, dog, bird, and rabbit) represented by four different vectors (lists). The first vector represents cats, and shows a '1' at the beginning of the list, followed by 3 '0's. The next vector, representing dogs, has a '1' in the second position of the list, with the other 3 positions filled with 0's. For birds, the '1' is in the 3rd position, with the rest of the positions are '0', and for rabbits the '1' is in the final position, with the rest of the positions as '0'.](../media/32-ohv.png)
 
 A one-hot vector is a vector (list) where each position in the list represents a different category. The vector is filled with 0’s and with one 1. In the example above we are representing 4 animals, where a 1 in the first position represents a cat, and a 1 in the fourth position represents a rabbit. Now your category is useable by a machine learning model.
-
-In the previous module, you saw the logistic regression algorithm optimize the number of correctly classified examples. Optimization is achieved by two methods that happen behind the scenes in AI: cost function and gradient descent.
 
 Up next we've got an exercise where you will code a simple neural network.

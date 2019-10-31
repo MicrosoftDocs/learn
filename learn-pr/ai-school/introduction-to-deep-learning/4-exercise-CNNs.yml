@@ -3,7 +3,7 @@ uid: learn.deep-learning.exercise-cnns
 title: Exercise - CNNs
 metadata:
   title: Exercise - CNNs
-  description: Here we build a CNN model in Azure Notebooks.
+  description: Build a CNN model in Azure Notebooks.
   ms.date: 06/30/2019
   author: jasallen
   ms.author: jasdeb

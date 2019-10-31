@@ -12,8 +12,7 @@ Let’s recap on what we’ve learned in this module.
 
 Now that you have reviewed this module, you should be able to:
 
-* Articulate common applications for deep learning.
-* Apply convolutional neural networks and recurrent neural networks.
-* Describe the functions of popular deep learning tools.
+* Apply convolutional neural networks to image data.
+* Make text predictions using recurrent neural networks.
 
 Deep learning is an immensely deep field that is constantly improving. The next module is a short one - unsupervised learning. Let's get to it!
