@@ -42,7 +42,7 @@ To get useful blob objects out of `Results`, you can use the `OfType<>` method t
 var allBlobs = resultSegment.Results.OfType<ICloudBlob>();
 
 // Get only block blobs
-var blockBlobs = resultSegment.Results.OfType<CloudBlockBlob();
+var blockBlobs = resultSegment.Results.OfType<CloudBlockBlob>();
 ```
 
 > [!TIP]

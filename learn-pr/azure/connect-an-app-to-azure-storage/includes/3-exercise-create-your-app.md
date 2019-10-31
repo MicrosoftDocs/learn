@@ -1,7 +1,5 @@
 Recall that we are working on a photo-sharing application that will use Azure Storage to manage pictures and other bits of data we store on behalf of our users.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ::: zone pivot="csharp"
 
 To simplify our scenario so that we can focus on the Storage APIs, we will create a new .NET Core Console application. We will also assume it always has network connectivity. However, you should always harden your app to ensure network failures will not impact the user experience or result in a failure of the application itself.

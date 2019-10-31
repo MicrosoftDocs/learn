@@ -2,7 +2,7 @@ The healthcare industry saw much early excitement about the potential transforma
 
 Watch this video from Peter Zemsky, INSEAD’s Eli Lilly Chaired Professor of Strategy and Innovation, as he discusses a case involving a telemedicine provider where AI is already delivering real business value today. Peter will cover a wide range of topics from how can AI help unlock the value creation potential of telemedicine, to how MDLIVE used tools like natural language processing (NLP) effectively to improve customer satisfaction.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWtLqR]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3rc6C]
 
 In healthcare, patients, providers, and payors may see great benefits from the adoption of AI, from shorter wait times to improved patient outcomes, as well as increased patient and provider satisfaction. Data integration from diverse data sets for sophisticated analytics is a critical first step. This data integration, coupled with AI, will yield key insights that will drive value creation in healthcare.
 

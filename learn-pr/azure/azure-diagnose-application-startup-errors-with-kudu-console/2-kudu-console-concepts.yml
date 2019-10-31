@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-diagnose-application-startup-errors-with-kudu-console.2-kudu-console-concepts
+title: Describe Kudu console purpose and functionalities 
+metadata:
+  title: Describe Kudu console purpose and functionalities
+  description: Describe Kudu console purpose and functionalities
+  ms.date: 06/21/2019
+  author: sowmyasubramaniam 
+  ms.author: sosubra
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-kudu-console-concepts.md)]

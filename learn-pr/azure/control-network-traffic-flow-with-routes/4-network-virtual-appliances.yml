@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.control-network-traffic-flow-with-routes.4-network-virtual-appliances
+metadata:
+  title: What is an NVA?
+  description: Explain the purpose and role of an NVA
+  ms.date: 08/28/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: What is an NVA?
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-network-virtual-appliances.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What is the main benefit of using a network virtual appliance?"
+      choices:
+      - content: "To control outbound access to the internet."
+        isCorrect: false
+        explanation: "This answer is incorrect. A network virtual appliance doesn't control outbound internet access. This access can be controlled by policies."
+      - content: "To load balance incoming traffic from the internet across multiple Azure virtual machines and across two regions for DR purposes."
+        isCorrect: false
+        explanation: "This answer is incorrect. A network virtual appliance doesn't load balance traffic across virtual machines for DR purposes. Such load balancing is the role of Azure Application Gateway and Azure Traffic Manager."
+      - content: "To control incoming traffic from the perimeter network and allow only traffic that meets security requirements to pass through."
+        isCorrect: true
+        explanation: "This is the correct answer. A network virtual appliance acts like a firewall. It checks all inbound and outbound traffic, and it secures your environment by allowing or denying the traffic."
+      - content: "To control who can access Azure resources from the perimeter network."
+        isCorrect: false
+        explanation: "This answer is incorrect. To control inbound access to Azure, you would use authentication and authorization policies. Network virtual appliances aren't used to authenticate users."
+    - content: "How might you deploy a network virtual appliance?"
+      choices:
+      - content: "You can configure a Windows virtual machine and enable IP forwarding after routing tables, user-defined routes, and subnets have been updated. Or you can use a partner image from Azure Marketplace."
+        isCorrect: true
+        explanation: "This is the correct answer. Customers often create network virtual appliances. And you can download many appliances from Azure Marketplace."
+      - content: "Using Azure CLI, deploy a Linux virtual machine in Azure, connect this virtual machine to your production virtual network, and assign a public IP address."
+        isCorrect: false
+        explanation: "This answer is incorrect. Simply deploying a virtual machine won't let it function as a network virtual appliance."
+      - content: "Using the Azure portal, deploy a Windows 2016 Server instance. Next, using Azure Application Gateway, add the Windows 2016 Server instance as a target endpoint."
+        isCorrect: false
+        explanation: "This answer is incorrect. This solution only deploys a server that sits behind a load balancer. This server deployment has no effect on deploying a network virtual appliance."
+      - content: "Download a virtual appliance from Azure Marketplace and configure the appliance to connect to the production and perimeter networks."
+        isCorrect: false
+        explanation: "This answer is incorrect. Simply installing a virtual appliance and connecting it to your networks forms only half of the solution and won't control the flow of traffic."             

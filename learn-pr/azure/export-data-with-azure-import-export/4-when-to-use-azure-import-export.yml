@@ -1,0 +1,43 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.export-data-with-azure-import-export.when-to-use-azure-import-export
+title: When to use Azure Import/Export
+
+metadata:
+  title: When to use Azure Import/Export
+  description: When to use Azure Import/Export
+  ms.date: 7/26/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-when-to-use-azure-import-export.md)]
+
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: When should you use AzCopy instead of the Azure Import/Export service?
+    choices:
+    - content: To import or export small amounts of data from Azure Storage when network latency isn't an issue
+      isCorrect: true
+      explanation: Use AzCopy to transfer small to moderate amounts of data online across the network.
+    - content:  To import or export large amounts of data
+      isCorrect: false
+      explanation: Use Azure Import/Export to export large amounts of data offline. For import, use Azure Import/Export in regions where Azure Data Box devices aren't supported.
+    - content: To transfer data from Azure Storage to on-premises storage while you are offline
+      isCorrect: false
+      explanation: AzCopy requires an active connection to your storage account in Azure. To do an offline transfer, use the Import/Export service or Data Box Family.
+  - content: When should you use Azure Import/Export service instead of Data Box Family?
+    choices:
+    - content: To transfer data using an online connection
+      isCorrect: false
+      explanation: The Import/Export service is an offline solution. You can transfer data over a network connection using Data Box Edge or Data Box Gateway.
+    - content: To use a Microsoft-supplied device instead of disks you supply
+      isCorrect: false
+      explanation: Data Box Family uses Microsoft-supplied devices to transfer data from your on-premises location to Azure Storage. 
+    - content: To export data from Azure Storage while you're offline
+      isCorrect: true
+      explanation: Data Box Family doesn't support exporting data from Azure Storage. 

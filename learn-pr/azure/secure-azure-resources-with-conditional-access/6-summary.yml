@@ -4,9 +4,8 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 04/15/2019
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: MicrosoftGuyJFlo
+  ms.author: joflore
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

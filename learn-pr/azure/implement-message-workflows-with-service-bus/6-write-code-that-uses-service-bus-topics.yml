@@ -5,9 +5,8 @@ metadata:
   title: Write code that uses Service Bus topics
   description: Write code that uses Service Bus topics
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: AndrewJByrne
+  ms.author: anbyrne
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

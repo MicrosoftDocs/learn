@@ -20,7 +20,7 @@ content: |
 tasks:
 - action: exists
   environment: azure
-  hint: "Run the commands shown to create an App Service plan and web app."
+  hint: "Follow the steps to create an App Service plan and web app."
   azure:
     resource:
       type: "Microsoft.Web/sites"

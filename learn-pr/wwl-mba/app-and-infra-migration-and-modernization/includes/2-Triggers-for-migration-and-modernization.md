@@ -5,7 +5,7 @@ Businesses that decide to adopt the cloud are often motivated by specific trigge
 
 |  |  |
 | ------------ | -------------|
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to understand common triggers to modernize your apps.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to understand common triggers to modernize your apps.|
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWr1Vt]
 
@@ -16,7 +16,7 @@ Now that we’ve reviewed modernization triggers, let’s look at one example of
 A great online shopping experience begins with great software, and Alaska Airlines uses Microsoft Azure services—microservices and Windows Server Containers with Docker—to launch new e-commerce features faster: in minutes, not days. Travelers get new offers sooner, which in turn translates to happier customers and higher revenues. By running its e-commerce engine in Azure in hybrid fashion, Alaska can also scale more easily and cost-effectively, ensuring its sites run at the optimum point of performance and cost.
 
 -----------------------
-*Going forward, all new features will be built in the cloud. We’re best at building applications that our customers love, and Microsoft is best at putting software and servers in the cloud. It’s a good partnership.*
+![image of quotes](../media/quote.png)*Going forward, all new features will be built in the cloud. We’re best at building applications that our customers love, and Microsoft is best at putting software and servers in the cloud. It’s a good partnership.*
 
 ⸺Ralph Feltis, Senior Software Engineer, Alaska Airlines
 
@@ -25,16 +25,16 @@ A great online shopping experience begins with great software, and Alaska Airlin
 
 |  |  |
 | ------------ | -------------|
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to see how Alaska Airlines modernized their business using Microsoft Azure.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to see how Alaska Airlines modernized their business using Microsoft Azure.|
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2NNJa]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2WRoM]
 
 As you saw in the video, Alaska Airlines migrated from a traditional online shopping experience hosted in physical machines to running their applications on Azure. This shift allows Alaska Airlines to deploy faster, iterate rapidly, and experiment to find out what works best for their customers.
 
 
 |  |  |
-| ------------ | -------------:|
-|![Icon of lightbulb](../media/Lightbulb_icon.png)|*Which of the common migration and modernization triggers might be relevant for your business? Are you facing urgent capacity needs or new security threats? Can your business improve by delivering applications and features faster? Or, perhaps you are planning for change with expiring datacenter contracts or software end of support. There are many reasons for modernization. Write down your top three.*
+| ------------ | -------------|
+|![Icon of lightbulb](../media/lightbulb.png)|*Which of the common migration and modernization triggers might be relevant for your business? Are you facing urgent capacity needs or new security threats? Can your business improve by delivering applications and features faster? Or, perhaps you are planning for change with expiring datacenter contracts or software end of support. There are many reasons for modernization. Write down your top three.*
 |
 
 Now that we’ve explored common modernization triggers, let’s look more closely at application portfolio modernization.

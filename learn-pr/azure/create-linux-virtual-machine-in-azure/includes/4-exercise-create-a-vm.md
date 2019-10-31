@@ -8,7 +8,9 @@ We can create Linux VMs with the Azure portal, the Azure CLI, or Azure PowerShel
 
 1. Click **Create a resource** in the upper-left corner of the Azure portal.
 
-1. In the search box, enter  **Ubuntu Server** to see the different versions available. Select **Ubuntu Server 18.04 LTS** from the presented list.
+1. In the search box, enter  **Ubuntu Server**. 
+1. Under the **Marketplace** result, select the **All results** link on the top right-hand side to see the different versions available. 
+1. Select **Ubuntu Server 18.04 LTS Canonical** from the presented list.
 
 1. Click the **Create** button to start configuring the VM.
 
@@ -26,9 +28,9 @@ We'll start with the **Basics** section. These instructions are for the Sandbox 
 
 1. For **Subscription**, the sandbox subscription should be selected for you by default.
 
-1. For **Resource group**, the resource group with the name **<rgn>[sandbox resource group name]</rgn>** should be selected for you by default.
+1. For **Resource group**, the resource group with the name **<rgn>[sandbox resource group name]</rgn>** should be selected for you by default. 
 
-1. In the **INSTANCE DETAILS** section, enter a name for your web server VM, such as **test-web-eus-vm1**. This indicates the environment (**test**), the role (**web**), location (**East US**), service (**vm**), and instance number (**1**).
+1. In the **Instance details** section, enter a name for your web server VM, such as **test-web-eus-vm1**. This indicates the environment (**test**), the role (**web**), location (**East US**), service (**vm**), and instance number (**1**).
     - It's considered best practice to standardize your resource names, so you can quickly identify their purpose. Linux VM names must be between 1 and 64 characters and be comprised of numbers, letters, and dashes.
 
     > [!NOTE]
@@ -43,9 +45,9 @@ We'll start with the **Basics** section. These instructions are for the Sandbox 
 
 1. Ensure that the image is set to **Ubuntu Server 18.04 LTS**. You can open the drop-down list to see all the options available.
 
-1. The **Size** field is not directly editable and has a **DS2_v3** default size, which is one of the general-purpose computing selections. This choice is perfect for a public web server, but for demonstration click the **Change size** link to explore other VM sizes. Note that the resulting dialog allows you to filter based on **# of vCPUs**, **Name**, and **Disk Type**. Select the same **DS2_v3** choice, which gives you two vCPUs with 8 GB of RAM.
+1. Leave the **Size** field with the default of **D2s v3** choice, which gives you two vCPUs with 8 GB of RAM.
 
-1. Moving on to the **ADMINISTRATOR ACCESS** section, for **Authentication type** select the **SSH public key** option.
+1. Moving on to the **Administrator account** section, for **Authentication type** select the **SSH public key** option.
 
 1. Enter a **username** you'll use to sign in with SSH. Choose something you can remember or write it down.
 
@@ -68,13 +70,13 @@ We'll start with the **Basics** section. These instructions are for the Sandbox 
 
 Recall that we will get an OS disk (/dev/sda) and a temporary disk (/dev/sdb). Let's add a data disk as well:
 
-1. Click the **Create and attach a new disk** link in the **DATA DISKS** section.
+1. Click the **Create and attach a new disk** link in the **Data disks** section.
 
     ![Screenshot of the Azure portal showing the Create a new disk blade.](../media/3-add-data-disk.png)
 
 1. You can take all the defaults: **Premium SSD**, the auto-generated name, size of **1023** GiB, and **None (empty disk)** for **Source type**, although notice that source type is where you could use a snapshot or Azure Blob storage to create a VHD.
 
-1. Click **OK** to create the disk and go back to the **DATA DISKS** section.
+1. Click **OK** to create the disk and go back to the **Data disks** section.
 
 1. There should now be a new disk in the first row.
 
@@ -86,7 +88,7 @@ Recall that we will get an OS disk (/dev/sda) and a temporary disk (/dev/sdb). L
 
 1. In a production environment where we already have other components, you'd want to utilize an _existing_ virtual network. That way, your VM can communicate with the other cloud services in your solution. If there isn't one defined in this location yet, you can create it here and configure the:
     - **Address space**: The overall IPV4 space available to this network.
-    - **Subnet range**: The first subnet to subdivide the address space - it must fit within the defined address space. Once the VNet is created, you can add additional subnets.
+    - **Subnets**: The first subnet to subdivide the address space - it must fit within the defined address space. Once the VNet is created, you can add additional subnets.
 
 > [!NOTE]
 > By default, Azure will create a virtual network, network interface, and public IP for your VM. It's not trivial to change the networking options after the VM has been created, so always double-check the network assignments on services you create in Azure. For this exercise, the defaults should work fine.

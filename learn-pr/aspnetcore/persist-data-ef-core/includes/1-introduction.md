@@ -14,5 +14,5 @@ In this module, you will:
 
 ## Prerequisites
 
-* A basic understanding of C#
-* Knowledge of relational databases and SQL
+* Experience writing C# at the beginner level
+* Experience using relational databases and SQL as a developer

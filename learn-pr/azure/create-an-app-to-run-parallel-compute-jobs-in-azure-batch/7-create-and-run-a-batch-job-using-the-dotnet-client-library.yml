@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.create-and-run-a-batch-job-using-the-dotnet-client-library
+title: Create and run a Batch job using the .NET client library
+metadata:
+  title: Create and run a Batch job using the .NET client library
+  description: Define the missing the features that need to be added to your app, and see how the client libraries will help.
+  ms.date: 06/01/2019
+  author: AndrewJByrne
+  ms.author: anbyrne
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-create-and-run-a-batch-job-using-the-dotnet-client-library.md)]
