@@ -11,7 +11,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-interactive: bash
 durationInMinutes: 8
 content: |
   [!include[](includes/5-connect-to-jupyter-through-docker-on-the-dsvm.md)]
