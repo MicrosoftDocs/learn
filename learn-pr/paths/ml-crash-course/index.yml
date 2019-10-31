@@ -21,7 +21,6 @@ roles:
 products:
 - azure
 modules:
-- learn.introduction-to-ai
 - learn.introduction-to-regression
 - learn.introduction-to-classification
 - learn.neural-networks

@@ -3,7 +3,7 @@ uid: learn.introduction-to-classification.exercise-logistic-regression
 title: Exercise - Logistic Regression 
 metadata:
   title: Exercise - Logistic Regression
-  description: Here we use Azure Notebooks to build a logistic regression model. 
+  description: Learn to build a logistic regression model in Azure Notebooks. 
   ms.date: 06/30/2019
   author: jasallen
   ms.author: jasdeb
