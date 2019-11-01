@@ -16,32 +16,32 @@ quiz:
   title: Check your knowledge
   questions:
  
-  - content: "What does the following line of code require that you have done: var DeviceClient = require('azure-iot-device').Client?"
+  - content: "What library must you load for the device app to work?"
     choices:  
-    - content: 'Requires that you have created an IoT Hub, using the Azure IoT portal.'
+    - content: 'Chalk'
       isCorrect: false
-      explanation: You create an IoT Hub, but that is not required by the line of code shown above.
-    - content: 'Requires that you have assigned an ID to an IoT Hub device.'
-      isCorrect: false
-      explanation: You create an IoT Hub device, but that is not required by the line of code shown above.
-    - content: 'Requires that you have installed the npm package "azure-iot-device".'
+      explanation: This will help prettify your console output, but that is not a requirement for a device app.
+    - content: 'For Node.js - azure-iot-device, or for C# - Microsoft.Azure.Devices.Client'
       isCorrect: true
-      explanation: This line of code creates an object based on the Client instance, defined in the npm package "azure-iot-device".
+      explanation: These libraries help create an IoT device client.
+    - content: 'For Node.js - @azure/event-hubs, or for C# - Microsoft.Azure.EventHubs'
+      isCorrect: false
+      explanation: These libraries are required by the back-end app, not the device app.
 
-  - content: "What is the role of the string 'SetTelemetryInterval' in the following line of code (running on an IoT Hub device): client.onDeviceMethod('SetTelemetryInterval', onSetTelemetryInterval)?"
+  - content: "Only one of the following statements is true, which one?"
     choices:  
-    - content: 'It is a descriptive name to appear in system metrics.'
-      isCorrect: false
-      explanation: The onDeviceMethod does not require any descriptive names.
-    - content: 'It is the name of the method running in the device Node.js app.'
-      isCorrect: false
-      explanation: The name of the method running in the device app is the second parameter (onSetTelemetryInterval).  
-    - content: 'It is the methodName parameter that will be sent from IoT Hub, when the onSetTelemetryInterval method is to be run.'
+    - content: 'A direct method is referenced by a string of the same name in the device and back-end apps'
       isCorrect: true
-      explanation: The 'SetTelemetryInterval' parameter is important, as it must exactly match the method parameters specified in the backend app.
-    - content: 'It is a built-in method when coding Node.js console apps.'
+      explanation: This is how direct methods are called. In our sample, the string 'SetFanState' appears in both apps.
+    - content: 'Device twin tags are data shared with the IoT device'
       isCorrect: false
-      explanation: Node.js does not have a concept of telemetry.
+      explanation: Tags are not shared, and are not visible to the device.  
+    - content: 'A direct method can contain zero, or one, parameter'
+      isCorrect: false
+      explanation: Direct methods include a payload that can contain many parameters.
+    - content: 'To create a device twin, a single line of code is required.'
+      isCorrect: false
+      explanation: Device twins are created by default, no lines of code are required.
 
   - content: 'What is the role of an IoT Hub device twin?'
     choices:  

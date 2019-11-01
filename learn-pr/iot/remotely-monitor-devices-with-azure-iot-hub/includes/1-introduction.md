@@ -39,9 +39,9 @@ The first step to building this scenario is to create a custom IoT Hub.
 
 ## Jobs
 1. Decide how to handle vs/vsc as well as node/c# in one module - zone pivots
-2. Merge in c# code
+    options: a 4 node pivot?
+2. Merge in c# code - add reported properties patch code perhaps?
 3. Add c# code to the github hujamaflip
-4. Redo quizzes with non code specific questions
+4. Redo quizzes with non code specific questions -    done
 5. images of cheese cave
-6. images of graphs as conceptual art perhaps
-7. 
+ 
