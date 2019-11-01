@@ -2,6 +2,8 @@ In this unit, we will add code to the device app for the direct method, and then
 
 ## Add code to define a direct method in the device app
 
+::: zone pivot="node"
+
 1. Open up the app.js file for the device app.
 
 1. Append the following code to the end of the file. This code is the body of the direct method itself, and a single statement to record the direct method with the IoT Hub client.
@@ -47,6 +49,13 @@ function onSetFanState(request, response) {
 client.onDeviceMethod('SetFanState', onSetFanState);
 ```
 
+::: zone-end
+::: zone pivot="csharp"
+
+CSHARP CODE
+
+::: zone-end
+
 > [!NOTE]
 > The fan has three states: _on_, _off_, and _failed_. The method above sets the fan to either of the first two of these states. If the payload text does not match one of these two, or the fan is in a failed state, an error is returned.
 
@@ -55,6 +64,8 @@ You have completed what is needed at the device end of things. Next, we need to 
 ## Add code to call a direct method
 
 When setting up a call to invoke a direct method, it is best to divide the code into three parts: the parameters, a function handling the call, and one or more calls to that function.
+
+::: zone pivot="node"
 
 1. Open up the back-end service app.js file and add the following code to the end of the file.
 
@@ -101,6 +112,13 @@ function sendDirectMethod() {
 
     return eventHubClient.getPartitionIds();
 ```
+
+::: zone-end
+::: zone pivot="csharp"
+
+CSHARP CODE
+
+::: zone-end
 
 ## Test the direct method
 

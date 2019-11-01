@@ -4,6 +4,8 @@ In this unit, we will add some code to both the device app and back-end service 
 
 We will start this time with the back-end service app.
 
+::: zone pivot="node"
+
 1. Open the app.js file for the back-end app.
 1. Add the following code to the end of the file. This code sets the desired temperature of the device to 12 degrees C, humidity to 60 percent, and sets two **tags** (information only available to the IoT Hub). To verify the tags, a call is made to query the device twins based on a SQL search.
 
@@ -64,9 +66,18 @@ function queryTwins() {
 
 ```
 
+::: zone-end
+::: zone pivot="csharp"
+
+CSHARP CODE
+
+::: zone-end
+
 Now we need to add code to the device app.
 
 ## Add code to synchronize device twin settings for the device
+
+::: zone pivot="node"
 
 1. Open up the app.js file for the device.
 
@@ -134,6 +145,14 @@ client.getTwin(function (err, twin) {
             sendReportedProperties();
         }
 ```
+
+::: zone-end
+::: zone pivot="csharp"
+
+CSHARP CODE
+
+::: zone-end
+
 
 ## Test the device twin
 
