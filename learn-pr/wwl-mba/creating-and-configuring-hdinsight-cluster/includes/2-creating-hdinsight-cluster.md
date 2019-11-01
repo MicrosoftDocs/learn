@@ -1,4 +1,4 @@
-There are various methods for creating an HDInsight cluster, this can range from using the Azure portal for graphical setups, to scripted setups that can help with automated deployments. The following table shows the different methods you can use to setup an HDInsight cluster. 
+There are various methods for creating an HDInsight cluster, this can range from using the Azure Portal for graphical setups, to scripted setups that can help with automated deployments. The following table shows the different methods you can use to setup an HDInsight cluster. 
 
 |Clusters created with| Web browser| Command line| REST API| SDK|
 |-|-|-|-|-|
@@ -24,7 +24,7 @@ Defines the Azure subscription under which the HDInsight will be billed and mana
 
 A resource group is a logical grouping of Azure technologies and services that typically relate to the same application, or application life cycle. Grouping services in the same resource group eases administrative maintenance.
 
-![A screenshot of the basic tab in the Create HDInsight Cluster screen in the Azure portal](../media/2-img01.png)
+![A screenshot of the basic tab in the Create HDInsight Cluster screen in the Azure Portal](../media/2-img01.png)
 
 ### Cluster Details
 
