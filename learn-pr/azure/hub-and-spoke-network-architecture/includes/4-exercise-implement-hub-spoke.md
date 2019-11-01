@@ -58,9 +58,9 @@ Now that you've created the third spoke, you need to configure the virtual netwo
 
 1. Select **HubVNet**.
 
-1. Select the **Peerings** blade in the settings menu on the left.
+1. Select the **Peerings** pane in the settings menu on the left.
 
-1. On the **Peerings** blade, select **Add**, and fill in the fields as follows:
+1. On the **Peerings** pane, select **Add**, and fill in the fields as follows:
 
     |Property name | Field property  |
     |---------|---------|
@@ -77,7 +77,7 @@ Now that you've created the third spoke, you need to configure the virtual netwo
 
 1. Select **OK** to create the peering.
 
-1. Close the **hubVNet** blade.
+1. Close the **hubVNet** pane.
 
 You've now peered the hub virtual network to the spoke virtual network. You've allowed traffic to be forwarded from the hub to the spoke, by using a VPN gateway in the configuration.
 
@@ -105,13 +105,13 @@ Now you associate the network security group to the virtual network.
 
 1. In the search box, type **Network security group**, and then select **Network security groups**.
 
-1. In the **Network security groups** blade, you should see the network security groups you created.
+1. In the **Network security groups** pane, you should see the network security groups you created.
 
 1. Select the network security group you created for the spoke, **HRNsg**.
 
 1. Select the **Subnets** menu.
 
-1. On the **Subnets** blade, select **Associate**.
+1. On the **Subnets** pane, select **Associate**.
 
 1. Select the **HRappVnet** virtual network.
 
@@ -123,9 +123,9 @@ Now you associate the network security group to the virtual network.
 
 You have a security requirement to meet for the HR application to be hosted on HRappVnet. There shouldn't be any inbound internet traffic from the spoke, because only internal employees need access. Configure the network security group rule to meet this requirement.
 
-1. On the **HRNsg** blade, select **Inbound security rules** in the menu.
+1. On the **HRNsg** pane, select **Inbound security rules** in the menu.
 
-1. On the **Inbound security rules** blade, select **Add**.
+1. On the **Inbound security rules** pane, select **Add**.
 
     |Property name | Field property  |
     |---------|---------|

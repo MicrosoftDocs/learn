@@ -59,9 +59,9 @@ Azure Firewall is a fully stateful network firewall that tracks the operating st
 
 ![Diagram showing Azure Firewall features](../media/5-azure-firewall.png)
 
-The monitoring of Azure Firewall consists of reviewing the firewall and activity logs. Because Azure Firewall is integrated with Azure Monitor logs, you can view the full logs there. Some logs are also available to view in the Azure portal.
+The monitoring of Azure Firewall consists of reviewing the firewall and activity logs. Because Azure Firewall is integrated with Azure Monitor Logs, you can view the full logs there. Some logs are also available to view in the Azure portal.
 
-![Screenshot of Azure Monitor logs](../media/5-firewall-monitor.png)
+![Screenshot of Azure Monitor Logs](../media/5-firewall-monitor.png)
 
 The logs can be stored in an Azure Storage Account, streamed to an Azure Event Hub, or sent to Azure Monitor Logs.
 
