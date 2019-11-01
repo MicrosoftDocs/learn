@@ -3,10 +3,10 @@ In this module, you learned how to:
 
  - Create a custom Azure IoT Hub, using the Azure portal
  - Create a device ID for a custom device, using the Azure portal
- - Create a Node.js app to support a simulated device monitoring a cheese cave
- - Create a Node.js app to provide a back-end service to listen for the telemetry sent by the device
- - Add Node.js code to both apps to provide a _direct method_
- - Add Node.js code to both apps to show the role of _device twins_
+ - Create an app to support a simulated device monitoring a cheese cave
+ - Create an app to provide a back-end service to listen for the telemetry sent by the device
+ - Add code to both apps to provide a _direct method_
+ - Add code to both apps to show the role of _device twins_
 
   ![Conceptual art showing cheese maturing in a cave](../media/cheesecave-art2.png)
 
@@ -26,6 +26,6 @@ Take your interest further with:
 - [Azure Certified for IoT device catalog](https://catalog.azureiotsolutions.com/)
 - [Develop IoT Edge modules for Windows devices](https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-develop-for-windows#set-up-visual-studio-and-tools)
 
-And look out for additional Learn modules in this learning path.
+And look out for additional Learn modules on IoT Hub.
 
 To finish this module, and earn your rewards, complete a final knowledge check.

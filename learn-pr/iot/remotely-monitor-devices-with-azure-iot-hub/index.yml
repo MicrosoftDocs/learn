@@ -14,12 +14,12 @@ summary: >
 abstract: | 
   In this module, you will:
   - Create an Azure IoT Hub custom app, using the IoT Hub portal
-  - Create a Node.js app to send device telemetry to the custom IoT Hub
-  - Create a second Node.js app to handle the back-end service, and control the device through direct methods and device twins
+  - Create an app to send device telemetry to the custom IoT Hub
+  - Create a second app to handle the back-end service, and control the device through direct methods and device twins
 prerequisites: | 
   - An introductory knowledge of the purpose of Azure IoT
   -	Ability to navigate the Azure IoT portal 
-  -	Ability to use Node.js, at the beginner level 
+  -	Ability to use Node.js, or C#, at the beginner level
   -	Experience using Visual Studio, or Visual Studio Code, at the beginner level 
 iconUrl: /learn/achievements/iot/iot-hub-cheese-cave.svg
 ratingEnabled: false
@@ -32,8 +32,11 @@ products:
 units:
 - learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub.introduction
 - learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub.create-iot-hub-device-id
+- learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub.device-telemetry
 - learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub.write-telemetry-code
+- learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub.direct-methods
 - learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub.write-direct-method-code
+- learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub.device-twins
 - learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub.write-device-twins-code
 - learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub.summary
 badge:

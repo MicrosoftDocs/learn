@@ -2,7 +2,7 @@
 uid: learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub.write-device-twins-code
 metadata:
   title: Write code for device twins
-  description: Write code, in Node.js, to send, update, and report device twin properties. 
+  description: Write code, in Node.js or C#, to send, update, and report device twin properties. 
   ms.date: 10/01/2019
   author: PeterTurcan
   ms.author: Olivier.Bloch
@@ -11,4 +11,4 @@ metadata:
 title:  Write code for device twins
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-write-device-twins-code.md)]
+  [!include[](includes/8-write-device-twins-code.md)]

@@ -2,7 +2,7 @@
 uid: learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub.write-direct-method-code
 metadata:
   title: Write code to invoke a direct method
-  description: Write code, in Node.js, to send a command to invoke a direct method from a back-end app. Then add code to listen for that command in the device app. 
+  description: Write code, in Node.js or C#, to send a command to invoke a direct method from a back-end app. Then add code to listen for that command in the device app. 
   ms.date: 10/01/2019
   author: PeterTurcan
   ms.author: Olivier.Bloch
@@ -11,4 +11,4 @@ metadata:
 title: Write code to invoke a direct method
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-write-direct-method-code.md)]
+  [!include[](includes/6-write-direct-method-code.md)]
