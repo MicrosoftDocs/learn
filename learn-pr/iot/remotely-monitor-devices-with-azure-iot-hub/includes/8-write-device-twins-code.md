@@ -1,5 +1,3 @@
-An IoT Hub will maintain a _device twin_ for each device connected to it. The device twin is a JSON document containing state, configuration data, metadata, and similar information on the device. Device twins are designed for querying, and automatically synchronize with the IoT Hub device.
-
 In this unit, we will add some code to both the device app and back-end service app, to show device twin synchronization in operation.
 
 ## Add code to use device twins to synchronize device properties

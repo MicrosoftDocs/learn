@@ -1,5 +1,3 @@
-The coding in this module is broken down into three parts: sending and receiving telemetry, sending and receiving a direct method, and managing digital twins.
-
 At the end of this unit, you will be sending and receiving telemetry.
 
 ## Create an app to send telemetry

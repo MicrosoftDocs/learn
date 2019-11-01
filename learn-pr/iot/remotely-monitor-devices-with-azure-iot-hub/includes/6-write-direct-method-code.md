@@ -1,5 +1,3 @@
-A _direct method_ is a function on the device that can be invoked by the back-end app. The direct method call can include parameters as part of the payload, and are typically used to turn features of the device off and on, or specify settings for the device. In our scenario, we will set up a direct method to turn the fan on and off. There are several error conditions that need to be checked for when a device receives instructions to run a direct method. One of these checks is simply to respond with an error if the fan is in a failed state.
-
 In this unit, we will add code to the device app for the direct method, and then add code to the back-end service app to send the instruction to invoke the method.
 
 ## Add code to define a direct method in the device app
