@@ -84,13 +84,13 @@ HDInsight clusters can use the following storage options as shown in the storage
 
 The storage screen allows you to define the Primary storage account and default container. You can also link additional Azure Storage to the cluster. The Metastore settings enable you to define an external SQL database to store Hive tables after a cluster is deleted, and to improve the performance of Oozie by storing the metadata in an external store.
 
-![A screenshot of the storage tab in the Create HDInsight Cluster screen in the Azure Portal](../media/2-img02.png)
+![A screenshot of the storage tab in the Create HDInsight Cluster screen in the Azure portal](../media/2-img02.png)
 
 ## Security and Networking
 
 For Hadoop, Spark, HBase, Kafka, and Interactive Query cluster types, you can choose to enable the **Enterprise Security Package**. This package provides option to have a more secure cluster setup by using Apache Ranger and integrating with Azure Active Directory.
 
-![A screenshot of the Security and Networking tab in the Create HDInsight Cluster screen in the Azure Portal](../media/2-img03.png)
+![A screenshot of the Security and Networking tab in the Create HDInsight Cluster screen in the Azure portal](../media/2-img03.png)
 
 In addition, It is always recommended to deploy HDInsight clusters within a VNet and you can define and set the virtual networking in this screen. If your solution requires technologies that are spread across multiple HDInsight cluster types, an Azure virtual network can connect the required cluster types. This configuration allows the clusters, and any code you deploy to them, to directly communicate with each other.
 
@@ -98,4 +98,4 @@ In addition, It is always recommended to deploy HDInsight clusters within a VNet
 
 This page enables you to configure your cluster's size and performance and view estimated cost information. In this screen, you can define the virtual machines that will be used for the Head (Master) nodes and for the Workers Nodes too.
 
-![A screenshot of the Configuration and Pricing tab in the Create HDInsight Cluster screen in the Azure Portal](../media/2-img04.png)
+![A screenshot of the Configuration and Pricing tab in the Create HDInsight Cluster screen in the Azure portal](../media/2-img04.png)
