@@ -9,9 +9,12 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
 title: "Introduction to Azure IoT"
-summary: "***Contributed by University of Oxford [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
-abstract: |
-  
+summary: "Explain the significance of Azure IoT and the problems it solves. Describe Azure IoT components and explain how you combine them to solve IoT solutions which create value for enterprises.
+***Contributed by University of Oxford [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
+abstract: | 
+  In this module, you will:
+  -  Evaluate whether Azure IoT can address the problems associated with large scale IoT deployment
+  -  Describe how the components of Azure IoT work together to build a cloud-based IoT solution
 prerequisites: |
     None
 iconUrl: /http://via.placeholder.com/120x120.%7C  #Using Place holder as mentioned in learning Guide
