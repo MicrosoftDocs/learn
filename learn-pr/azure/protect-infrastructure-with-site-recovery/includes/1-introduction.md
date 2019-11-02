@@ -1,5 +1,8 @@
+Natural or human-made disasters may affect the continuity of your organization's cloud infrastructure. Planning for disaster and making sure recovery and business continuity plans are in place to deal with such an event is key to any organization's longevity. 
 
-Your organization has recently suffered an outage because of building damage in your datacenter from a hurricane. To reduce the chance of outages happening in the future, you're moving this infrastructure to Azure as you want to take advantage of the replication and recovery features available in Azure. You have a number of virtual machines running in Azure already, and now wish to configure protection for them to fail over to a secondary Azure region if there's a disaster.
+Azure Site Recovery provides disaster recovery for Azure infrastructure by managing and orchestrating replication, failover, and failback of Azure virtual machines.
+
+Assume you're working at a medical care organization with multiple facilities across the country. Your organization has recently suffered an outage because of building damage in your datacenter from a hurricane. You want to move this infrastructure to Azure and take advantage of the replication and recovery features available in Azure. You have several virtual machines running in Azure already, and now wish to configure protection for them to fail over to a secondary Azure region if there's a disaster.
 
 In this module, you'll learn about **Azure Site Recovery** and explore the features applicable to a business continuity and disaster recovery (BCDR) plan.
 

@@ -1,14 +1,12 @@
-Azure Site Recovery replicates your virtual machine workloads between Azure regions. You can also use Site Recovery to migrate VMs from other environments, such as on-premises infrastructure, to Azure.  You'll see that Site Recovery does much more than just a backing up and restoring infrastructure.
+Azure Site Recovery replicates your virtual machine workloads between Azure regions. You can also use Site Recovery to migrate VMs from other environments, such as on-premises infrastructure, to Azure.  You'll see that Site Recovery does much more than just backing up and restoring infrastructure.
 
-Your organization recently suffered an outage caused by a hurricane. You'll identify the Site Recovery features required to protect your Azure virtual machines (VMs) by enabling failing over to a secondary Azure region.
-
-In this unit, you'll learn about the Azure Site Recovery features that help handle future outages.
+Let's assume your organization recently suffered an outage caused by a hurricane. Here, we'll learn about the Azure Site Recovery features that help handle future interruptions. We'll also identify the Site Recovery features required to protect your Azure virtual machines (VMs) by enabling failing over to a secondary Azure region.
 
 ## Site Recovery features
 
-![Diagram showing a VM environment becoming unavailable and failing over to a secondary environment](../media/2-failover.png)
+![Diagram showing a VM environment that is unavailable and failing over to a secondary environment](../media/2-failover.png)
 
-Site Recovery manages the orchestration of disaster recovery in Azure. It is designed to replicate workloads from a primary site or region, to a secondary site. If the primary site has an issue, Site Recovery can replicate protected VMs to another Azure region.
+Site Recovery manages the orchestration of disaster recovery in Azure. It's designed to replicate workloads from a primary site or region, to a secondary site. If the primary site has an issue, Site Recovery can replicate protected VMs to another Azure region.
 
 Site Recovery manages the replication of Azure VMs between regions, or the replication of on-premises VMs to Azure and back again. Because it's built natively into Azure, Site Recovery can run seamless tests (disaster recovery drills) without affecting production workloads.
 
@@ -32,7 +30,7 @@ Installing the Site Recovery mobility service happens when you enable replicatio
 
 Site Recovery copies data stored in the cache and syncs it with either the target storage account or replicated managed disks. After the data is processed, crash-consistent recovery points are created. If app-consistent recovery points are enabled, they'll be generated on a schedule as set in the Site Recovery replication policy.
 
-Site Recovery can use accelerated networking for Azure virtual machines, reducing jitter, and decreasing CPU utilization.
+Site Recovery can use accelerated networking for Azure virtual machines, reducing jitter, and reduce CPU usage.
 
 ### Disaster recovery (DR) drills
 
@@ -40,4 +38,4 @@ Site Recovery allows you to do disaster recovery drills after all the pre-requis
 
 ### Flexible failover and failback
 
-Site Recovery failover and failback can be quickly started using the Azure portal. When running a failover, you select a recovery point then let Site Recovery take care of the failover. Failback is simply a reverse of this process. When a failover is successfully committed, it's available to failback.
+Site Recovery failover and failback can be quickly started using the Azure portal. When running a failover, you select a recovery point, then let Site Recovery take care of the failover. Failback is simply a reverse of this process. When a failover is successfully committed, it's available to failback.
