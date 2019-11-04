@@ -30,6 +30,7 @@ modules:
 - learn.manage-secrets-with-azure-key-vault
 - learn.secure-azure-resources-with-rbac
 - learn.end-to-end-encryption-with-app-gateway
+- learn.secure-data-at-rest
 - learn.secure-your-azure-sql-database
 trophy:
   uid: learn.architect-secure-infrastructure.trophy
