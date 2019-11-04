@@ -4,8 +4,6 @@ In [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-
 
 Although your branch produces a build artifact, that work exists only on the `build-pipeline` branch. You need to merge your branch into `master`.
 
-You've already done most of the work. You created the `build-pipeline` branch and verified that your build works. All you need to do now is submit a pull request and merge the change.
-
 Recall that a _pull request_ tells the other developers that you have code ready to review, if necessary, and you want your changes merged into another branch, such as `master`.
 
 Before we start, let's check in with Mara and Andy.
@@ -18,7 +16,7 @@ Before we start, let's check in with Mara and Andy.
 
 ## Create a branch and add starter code
 
-Although you could use the build pipeline you built in the previous module, let's create a new branch that's based off of `master` so that you can practice the process from the beginning. Your branch  includes a basic but complete build configuration in your *azure-piplines.yml* file.
+Although you could use the build pipeline you built in the previous module, let's create a new branch, named `code-workflow`, that's based off of `master` so that you can practice the process from the beginning. Your branch includes a basic but complete build configuration in your *azure-piplines.yml* file.
 
 1. In Visual Studio Code, open the integrated terminal.
 1. Switch to the master branch.
@@ -31,7 +29,7 @@ Although you could use the build pipeline you built in the previous module, let'
     ```bash
     git pull origin master
     ```
-1. Run the following `git checkout` command to create a branch named `code-workflow`.
+1. Create a branch named `code-workflow`.
 
     ```bash
     git checkout -b code-workflow
@@ -45,7 +43,7 @@ Although you could use the build pipeline you built in the previous module, let'
 
 1. From the file explorer, open *azure-pipelines.yml* and replace its contents with this:
 
-    [!code-yml[](code/2-azure-pipelines.yml)]
+    [!code-yml[](code/4-azure-pipelines.yml)]
 
     This configuration resembles the basic one you created previously. For brevity, it builds only your project's Release configuration.
 
@@ -59,18 +57,7 @@ Here, you push your `code-workflow` branch to GitHub and watch Azure Pipelines b
     git status
     ```
 
-    You see that *azure-piplelines* is not staged for commit:
-
-    ```output
-    On branch code-workflow
-    Changes not staged for commit:
-      (use "git add <file>..." to update what will be committed)
-      (use "git checkout -- <file>..." to discard changes in working directory)
-
-            modified:   azure-pipelines.yml
-
-    no changes added to commit (use "git add" and/or "git commit -a")
-    ```
+    You see that *azure-piplines.yml* has been modified. You'll commit that to your branch shortly, but you first need to make sure that Git is tracking this file. This is called _staging_ the file.
 
     Only staged changes are committed when you run `git commit`. Next, you run the `git add` command to add *azure-pipelines.yml* to the staging area, or index.
 
@@ -128,12 +115,12 @@ Here, you create a pull request for your branch.
 
 1. Ensure that the **base** specifies your forked repository and not the Microsoft repository.
 
-    ![Animation on how to set the correct base branch](../media/4-pull-request.gif)
+    Your selection looks like this:
 
     ![The compare to base dropdowns](../media/4-github-set-base.png)
 
     > [!IMPORTANT]
-    > This step is important because you can't merge your changes into the Microsoft repository. Make sure that the base repository points to your repository and not Microsoft.
+    > This step is important because you can't merge your changes into the Microsoft repository. Make sure that the base repository points to your repository and not MicrosoftDocs.
     >
     > When you work directly with your own repository, and not a fork, your `master` branch is selected by default.
 
@@ -162,7 +149,7 @@ Here, you create a pull request for your branch.
 
 1. Go back to your pull request on GitHub.
 
-    You see that the build succeeded. You're now ready to merge your pull request.
+    Wait for the build to complete. You're now ready to merge your pull request.
 
     ![A pull request on GitHub showing a successful build](../media/4-github-build-succeeded.png)
 
