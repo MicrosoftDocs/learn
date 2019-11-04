@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-edge
 title: "Introduction to Azure IoT Edge"
-summary: "Explain the essential characteristics of the IoT Edge and the functionality of the IoT Edge components(modules, runtime, and cloud interface). Characterize the types of problems that can be solved with IoT Edge.  Describe how the elements of IoT Edge can be combined to solve the problem of deploying IoT applications in the cloud.
+summary: "Explain the essential characteristics of the IoT Edge and the functionality of the IoT Edge components (modules, runtime, and cloud interface). Characterize the types of problems that you can solve with IoT Edge.  Describe how the elements of IoT Edge can be combined to solve the problem of deploying IoT applications in the cloud.
 ***Contributed by University of Oxford [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
 abstract: |
     In this module, you will:  
