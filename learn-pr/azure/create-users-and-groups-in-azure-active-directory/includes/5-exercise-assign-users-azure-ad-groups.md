@@ -35,11 +35,20 @@ You can change the group to use dynamic assignment. Membership will then depend 
 
 1. In the Developers group, select **Properties**. 
 1. Change **Membership type** to **Dynamic User**.
-1. Select **Yes** at the prompt to provide this new type of membership to existing members.  
 1. Select **Add dynamic query**. 
-1. In the **Add users where** dropdown, you'll see all of the rules you can apply. In this case, to keep things simple set the rule to **country**, and then to **Match** the  **United States**.  This action means that membership of this group depends on whether the user is in the United States.
+1. Select the following values for the rule:
 
    ![Screenshot that shows how to assign a dynamic membership rule](../media/5-dynamic-member.png)
-1. Select **Add query** and then **Save**.
+
+   |Field  |Value  |
+   |---------|---------|
+   |Property    |    Country     |
+   |Operator    | Equals         |
+   |Row3     |      United States  |
+
+   The membership of this group now depends on whether the user is in the United States.
+
+
+1. Select **Save**.
 
 You've now modified a group to use dynamic assignment.

@@ -29,7 +29,7 @@ Create a new directory to hold all of the users you create in this exercise.
 
 You'll need activate a free trial for Azure AD Premium to complete all the exercises in this module.
 
-1. Go to **Azure Active Directory** > **Get started**
+1. Go to **Azure Active Directory** > **Get started**.
 1. Under **Getting started with Azure AD**, select **Get a free trail for Azure AD Premium**.
 
     ![Screenshot that shows the link to create trial](../media/5-ad-get-started-get-trail.png)
