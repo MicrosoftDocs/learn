@@ -30,19 +30,18 @@ In this exercise, we'll complete the steps needed to run a disaster recovery dri
 
 1. Select **OK** at the bottom of the pane.
 
-    **Important**: It can happen that the configuration fails. If the configuration fails, delete the plan and create a new plan.
+    > [!NOTE]
+    > It can happen that the configuration fails. If the configuration fails, delete the plan and create a new plan.
 
 ## Run a test failover using a recovery plan
 
-![Screenshot showing the created disaster recovery plan](../media/6-view-dr-plans.png)
-
 1. View the details of the recovery plan you created above by selecting **asr-dr-drill**.
 
-    ![Screenshot showing the recovery plan details, highlighting the Test failover button](../media/6-recovery-plan-details.png)
+    ![Screenshot showing the created disaster recovery plan](../media/6-view-dr-plans.png)
 
 1. On the recovery plan details pane, at the top, select **Test failover**.
 
-    ![Screenshot of the test failover options](../media/6-starting-dr-drill.png)
+    ![Screenshot showing the recovery plan details, highlighting the Test failover button](../media/6-recovery-plan-details.png)
 
     **Important**: The network configuration failover support for each VM can take several minutes to auto configure as each VM also needs to complete an initial synchronization. Running a failover test may not be available immediately.
 
@@ -55,6 +54,9 @@ In this exercise, we'll complete the steps needed to run a disaster recovery dri
 1. Select **asr-vnet-asr** as the **Azure virtual network** value.
 
 1. Select **OK** to begin the failover.
+
+    ![Screenshot of the test failover options](../media/6-starting-dr-drill.png)
+
 
 ## Monitor failover progress
 

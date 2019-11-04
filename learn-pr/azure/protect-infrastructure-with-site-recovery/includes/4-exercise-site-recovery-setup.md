@@ -73,6 +73,4 @@ In this exercise, we'll complete the setup of Azure Site Recovery using the port
 
     ![Screenshot of the Enable replication job's progress](../media/4-replication-job.png)
 
-1. Todo (This job runs long update this sentence): 
-
 Two of these jobs will take the most time to complete. If you select either of the **Enable replication** jobs, you'll see that the **Installing Mobility Service and preparing target** step can take between five to 10 minutes to finish.

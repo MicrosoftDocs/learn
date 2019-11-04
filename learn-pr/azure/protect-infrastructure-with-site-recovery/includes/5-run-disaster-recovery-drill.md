@@ -8,7 +8,7 @@ Here, we'll learn about Azure Site Recovery disaster drills. What we need to con
 
 A disaster recovery (DR) drill is a way to check if we configured our solution correctly. The drill should give us, and our company, confidence that our data and services are available even if a disaster hits. Typically organizations set a recovery time objective (RTO) that indicates how long it takes to recover infrastructure. Alongside the RTO, our company should define a recovery point objective (RPO). The RPO defines the amount of data loss that is acceptable as a function of time. For example, if our company's RPO is a day, we'll need to create at least a backup of all our data each day. We'll also need to make sure it takes less than a day to restore this backup.
 
-![text](../media/5-failover-tests.png)
+![A screenshot that show the run breakdown of failover tests.](../media/5-failover-tests.png)
 
 To ensure that we run our DR tests, Azure Site Recovery actively prompts us to run them on the Site Recovery dashboard.
 
@@ -28,13 +28,13 @@ The steps are as follows:
 
 1. We'll create an isolated virtual network so that our production infrastructure isn't affected.
 
-    ![text](../media/5-vm-disaster.png)
+    ![A screenshot that shows the Operations' disaster recovery option for a selected VM.](../media/5-vm-disaster.png)
 
 1. On the target VMs' overview, select **Disaster recovery**.
 
 1. This option opens a new **Replicated items** pane.
 
-    ![text](../media/5-vm-running-test-failover.png)
+    ![A screenshot that shows the test failover button for a selected VM.](../media/5-vm-running-test-failover.png)
 
 1. Select **Test Failover** at the top of the pane.
 
@@ -46,11 +46,13 @@ The steps are as follows:
 
 ## Flexible failover of multiple machines
 
-![text](../media/5-flexible-dr-drill.png)
+Azure Site Recovery gives us the flexibility to run a full DR test scenario for all our virtual machines. We can create recovery plans that include one or more of our VMs. Failovers are runnable as many times as we like, and allow for a flexible policy to test different combinations of infrastructure.
 
-Azure Site Recovery gives us the flexibility to run a full DR test scenario for all our virtual machines. We can create recovery plans that include one or more of our VMs. Failovers are runnable as many times as we like, and allow for a flexible policy to test different combinations of infrastructure. Just like testing the single VMs, the same test cleanup is available for everything included in the recovery plan.
+![A Screenshot that shows a test failover dashboard used to track the failover job execution.](../media/5-flexible-dr-drill.png)
 
-![text](../media/5-test-success.png)
+Just like testing the single VMs, the same test cleanup is available for everything included in the recovery plan.
+
+![A Screenshot that shows the option to cleanup a test failover.](../media/5-test-success.png)
 
 ## Difference between a drill and production failover
 
