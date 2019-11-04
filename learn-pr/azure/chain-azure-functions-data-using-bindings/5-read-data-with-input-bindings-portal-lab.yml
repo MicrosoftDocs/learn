@@ -9,7 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-javascript-powershell
-  ROBOTS: NOINDEX
 title: Exercise - Read data with input bindings
 durationInMinutes: 20
 # interactive: azure-portal

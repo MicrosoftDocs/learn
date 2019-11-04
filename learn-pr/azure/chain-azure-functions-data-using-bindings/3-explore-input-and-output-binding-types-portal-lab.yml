@@ -9,7 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-javascript-powershell
-  ROBOTS: NOINDEX
 title: Exercise - Explore input and output binding types
 durationInMinutes: 10
 #interactive: azure-portal
