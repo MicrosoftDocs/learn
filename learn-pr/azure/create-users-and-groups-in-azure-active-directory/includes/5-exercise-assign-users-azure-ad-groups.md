@@ -44,7 +44,7 @@ You can change the group to use dynamic assignment. Membership will then depend 
    |---------|---------|
    |Property    |    Country     |
    |Operator    | Equals         |
-   |Row3     |      United States  |
+   |Value     |      United States  |
 
    The membership of this group now depends on whether the user is in the United States.
 
