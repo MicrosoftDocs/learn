@@ -1,4 +1,4 @@
-Azure Pipelines is a cloud service that you can use to automatically build and test your code project. You can also make it available to other users. And it works with just about any language or project type.
+Azure Pipelines is a cloud service that you can use to automatically build, test, and deploy your code project. You can also make it available to other users. And it works with just about any language or project type.
 
 Mara is excited about replicating the team's build process on Azure Pipelines. Amita, the tester, finally has some free time and wants to catch up. Mara decides that now is a great time to tell her about her plan: setting up an automated build pipeline for the *Space Game* web site by using Azure Pipelines.
 
@@ -14,7 +14,7 @@ When she hears Mara's plan, Amita is a bit hesitant. But since Mara's plan is to
 
 Our build server has problems. Even keeping it up to date is hard. Because Azure Pipelines provides build servers that Microsoft hosts and maintains, it always has the latest patches and security updates. We won't have to worry about maintaining build servers.
 
-Also, we have all kinds of scripts written by different people. We don't even understand how some of them work. Azure Pipelines comes with a catalog of tasks. A *task* is a packaged script or procedure that's been abstracted with a set of inputs. I'm going to try to map what the scripts do to those tasks. At least we can standardize how things get done and increase the level of automation.
+Also, we have all kinds of scripts written by different people. We don't even understand how some of them work. Azure Pipelines comes with a catalog of tasks. A *task* is a packaged script or procedure that's been abstracted with a set of inputs. I'm going to try to map what our build scripts do to those tasks. At least we can standardize how things get done and increase the level of automation.
 
 And Azure Pipelines works with many different languages and application types. If we want to expand in those directions, we won't have to retool.
 
