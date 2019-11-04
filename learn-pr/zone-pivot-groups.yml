@@ -222,3 +222,15 @@ groups:
       title: Visual Studio Code
     - id: vstudio
       title: Visual Studio
+- id: vs-vscode-language
+  title: IDE and language
+  prompt: Choose your Integrated Development Environment (IDE) and development language
+  pivots:
+    - id: vscode-node
+      title: Visual Studio Code and Node.js
+    - id: vscode-csharp
+      title: Visual Studio Code and C#
+    - id: vs-node
+      title: Visual Studio and Node.js
+    - id: vs-csharp
+      title: Visual Studio and C#

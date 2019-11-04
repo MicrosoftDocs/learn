@@ -2,7 +2,7 @@ At the end of this unit, you will be sending and receiving telemetry.
 
 ## Create an app to send telemetry
 
-::: zone pivot="vscode"
+::: zone pivot="vscode-node"
 
 1. Open Visual Studio Code. From the **Terminal** menu, open a **New Terminal**.
 
@@ -15,7 +15,10 @@ At the end of this unit, you will be sending and receiving telemetry.
 1. After you have entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the CheeseCave folder is the current folder of the terminal, when you run the app.
 
 ::: zone-end
-::: zone pivot="vstudio"
+::: zone pivot="vscode-csharp"
+TBD VSCODE CSHARP
+::: zone-end
+::: zone pivot="vs-node"
 
 1. Navigate to the **JavaScript** project types, and create a new **Blank Node.js Console Application** project, called "CheeseCave".
 
@@ -30,6 +33,9 @@ At the end of this unit, you will be sending and receiving telemetry.
 1. When you have entered the code below, you will be able to run the app with the **Start Without Debugging**, or **Start Debugging**, options. In the latter case, you can set breakpoints, examine data, and perform other debugging tasks.
 
 ::: zone-end
+::: zone pivot="vs-csharp"
+TBD VS CSHARP
+::: zone-end
 
 > [!NOTE]
 > This module does not require you to download any code. However, all of the code is available from [GitHub/MicrosoftDocs/mslearn-remotely-monitor-and-control-devices-with-iot-hub](https://github.com/MicrosoftDocs/mslearn-remotely-monitor-and-control-devices-with-iot-hub), if needed.
@@ -37,6 +43,8 @@ At the end of this unit, you will be sending and receiving telemetry.
 ### Add code to send telemetry
 
 This section adds code to send telemetry from a simulated device. The device sends temperature (in degrees centigrade) and humidity (in percentages) regardless of whether any back-end app is listening or not.
+
+::: zone pivot="vs-node,vscode-node"
 
 1. With the **app.js** file open, copy and paste the following code.
 
@@ -153,6 +161,11 @@ function sendMessage() {
 setInterval(sendMessage, intervalInMilliseconds);
 ```
 
+::: zone-end
+::: zone pivot="vs-csharp,vscode-csharp"
+TBD CSHARP
+::: zone-end
+
   > [!NOTE]
   > Read through the comments in the code, noting how the temperature and humidity settings from the description of the scenario in the introduction have worked their way into the code.
 
@@ -172,7 +185,7 @@ setInterval(sendMessage, intervalInMilliseconds);
 
 Now we have a device pumping out telemetry, we need to listen for that telemetry with a back-end app, also connected to our IoT Hub.
 
-::: zone pivot="vscode"
+::: zone pivot="vscode-node"
 
 1. Open Visual Studio Code. From the **Terminal** menu, open a **New Terminal**.
 
@@ -185,7 +198,10 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 1. After you have entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the "CheeseCaveOperator" folder is the current folder of the terminal, when you run the app.
 
 ::: zone-end
-::: zone pivot="vstudio"
+::: zone pivot="vscode-csharp"
+TBD VSCODE CSHARP
+::: zone-end
+::: zone pivot="vs-node"
 
 1. Navigate to the **JavaScript** project types, and create a new **Blank Node.js Console Application** project, called "CheeseCaveOperator".
 
@@ -196,8 +212,13 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 1. When you have entered the code below, you will be able to run the app with the **Start Without Debugging**, or **Start Debugging**, options.
 
 ::: zone-end
+::: zone pivot="vs-csharp"
+TBD VS CSHARP
+::: zone-end
 
 ### Add code to receive telemetry
+
+::: zone pivot="vs-node,vscode-node"
 
 1. With the **app.js** file open, copy and paste the following code.
 
@@ -273,6 +294,11 @@ EventHubClient.createFromIotHubConnectionString(connectionString).then(function 
     });
 }).catch(printError);
 ```
+
+::: zone-end
+::: zone pivot="vs-csharp,vscode-csharp"
+TBD CSHARP
+::: zone-end
 
 > [!NOTE]
 > Our implementation only reads messages after the app has been started. Any telemetry sent prior to this is not handled.
