@@ -21,22 +21,22 @@ quiz:
     - content: 'Chalk'
       isCorrect: false
       explanation: This library will help prettify your console output, but that is not a requirement for a device app.
-    - content: 'For Node.js - azure-iot-device, or for C# - Microsoft.Azure.Devices.Client'
+    - content: 'For Node.js - azure-iot-device. For C# - Microsoft.Azure.Devices.Client.'
       isCorrect: true
       explanation: These libraries help create an IoT device client.
-    - content: 'For Node.js - @azure/event-hubs, or for C# - Microsoft.Azure.EventHubs'
+    - content: 'For Node.js - @azure/event-hubs. For C# - Microsoft.Azure.EventHubs.'
       isCorrect: false
       explanation: These libraries are required by the back-end app, not the device app.
 
   - content: "Only one of the following statements is true, which one?"
     choices:  
-    - content: 'The name of a direct method in the device app appears as a string in the back-end app'
+    - content: 'The name of a direct method in the device app appears as a string in the back-end app.'
       isCorrect: true
       explanation: In our sample, 'SetFanState' appears in both apps to identify the direct method.
-    - content: 'Device twin tags are data shared with the IoT device'
+    - content: 'Device twin tags are data shared with the IoT device.'
       isCorrect: false
       explanation: Tags are not shared, and are not visible to the device.  
-    - content: 'A direct method can contain zero, or one, parameter'
+    - content: 'A direct method can contain zero, or one, parameter.'
       isCorrect: false
       explanation: Direct methods include a payload that can contain many parameters.
     - content: 'To create a device twin, a single line of code is required.'

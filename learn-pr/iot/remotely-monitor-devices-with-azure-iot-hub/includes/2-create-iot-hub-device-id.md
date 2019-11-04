@@ -1,16 +1,16 @@
-In this unit, we will create an IoT Hub, add a single device to that hub, and record the connection strings we need for the coding sections of this module.
+In this unit, we will first create an IoT Hub, and add a single device to that hub. Then we record the connection strings we need for the coding sections of this module.
 
 ## Create a custom IoT Hub
 
-1. Make sure you have activated the sandbox, using the button above. This creates a free temporary resource.
+1. Make sure you have activated the sandbox, using the button above. The sandbox creates a free temporary resource.
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 1. Select **+ Create a resource**, from the top of the left-hand menu. In the **Search the Marketplace** search box, enter "IoT Hub".
 1. Select **IoT Hub** from the search results, and click **Create**.
-1. You will be required to enter a **Subscription** from the selection offered to you. A sandbox subscription will be **Concierge Subscription**, so choose that. For **Resource Group** enter <rgn>[sandbox resource group name]</rgn>. A resource group is similar to a folder, it is largely there to help you organize your resources.
+1. You will be required to enter a **Subscription** from the selection offered to you. A sandbox subscription will be **Concierge Subscription**, so choose that. For **Resource Group**, enter <rgn>[sandbox resource group name]</rgn>. A resource group is similar to a folder, it is largely there to help you organize your resources.
 1. The **Region** should be the geographical region closest to you, and finally enter a friendly name (say "CheeseCaveHub-&lt;your ID&gt;") for **IoT Hub Name**.
     >[!IMPORTANT]
     >Your hub names are publicly discoverable, so take this into account when entering names.
-1. Select **Next: Size and scale** to view the capabilities of your hub, noting all the services we need are enabled. Open up **Advanced Settings** to see the number of partitions. You can leave all entries at their default settings. Or, for peace of mind, you can change **Pricing and scale tier** to **F1: Free tier**, although you will not be charged if you leave this at **S1: Standard tier**, as the sandbox is free.
+1. Select **Next: Size and scale** to view the capabilities of your hub, noting all the services we need are enabled. Open up **Advanced Settings** to see the number of partitions. You can leave all entries at their default settings. Or, for peace of mind, you can change **Pricing and scale tier** to **F1: Free tier**, although you will not be charged if you leave the tier at **S1: Standard tier**, as sandbox resources are free.
 
     > [!NOTE]
     > A single _partition_ has a maximum number of concurrent readers processing data. In our cheese cave scenario, we only have one reader (the back-end service app), so could get away with one partition. However, if high telemetry throughput is an issue, increasing the number of partitions, and number of concurrent connected readers, will aid in increasing efficiency.

@@ -16,7 +16,19 @@ At the end of this unit, you will be sending and receiving telemetry.
 
 ::: zone-end
 ::: zone pivot="vscode-csharp"
-TBD VSCODE CSHARP
+
+1. To use C# in Visual Studio Code, ensure both [.NET Core](https://dotnet.microsoft.com/download), and the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) are installed.
+
+1. Open a terminal in Visual Studio Code, and create a folder called "CheeseCaveDevice". Navigate to the CheeseCaveDevice folder.
+
+1. Enter the following command in the terminal: `dotnet new console'.
+
+1. When the project folder is first opened, select **Yes** to the question on adding required assets.
+
+1. In the terminal, enter **npm install azure-iot-device**. When this package has installed, enter **npm install chalk**.
+
+1. When the code has been developed in this unit, and the following units, run the code with the command `dotnet run`.
+
 ::: zone-end
 ::: zone pivot="vs-node"
 
@@ -34,7 +46,13 @@ TBD VSCODE CSHARP
 
 ::: zone-end
 ::: zone pivot="vs-csharp"
-TBD VS CSHARP
+
+1. Open Visual Studio, and create a new **Visual C#/Windows Desktop** project. Select **Console App (.NET Framework)**.
+
+1. Give the project a friendly name, such as "CheeseCaveDevice".
+
+1. Under **Tools/NuGet Package Manager** select **Manage NuGet Packages for Solution...**. Install **Microsoft.Azure.Devices.Client**, **Microsoft.Azure.Devices.Shared**, and **Newtonsoft.Json**.
+
 ::: zone-end
 
 > [!NOTE]
@@ -199,7 +217,17 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 
 ::: zone-end
 ::: zone pivot="vscode-csharp"
-TBD VSCODE CSHARP
+
+1. Open a terminal in Visual Studio Code, and create a folder called "CheeseCaveOperator". Navigate to the CheeseCaveOperator folder.
+
+1. Enter the following command in the terminal: `dotnet new console'.
+
+1. When the project folder is first opened, select **Yes** to the question on adding required assets.
+
+1. In the terminal, enter **npm install &#64;azure/event-hubs**. When this package has installed, enter **npm install azure-iothub**.
+
+1. When the code has been developed in this unit, and the following units, run the code with the command `dotnet run`.
+
 ::: zone-end
 ::: zone pivot="vs-node"
 

@@ -40,7 +40,7 @@ quiz:
     - content: 'SharedAccessKey'
       isCorrect: false
       explanation: This term does appear in connection strings, but does not start the string.  
-    - content: 'HostName='
+    - content: 'HostName'
       isCorrect: true
       explanation: In our scenario, the host name will first reference your custom IoT Hub.
     - content: 'azure-iot'
