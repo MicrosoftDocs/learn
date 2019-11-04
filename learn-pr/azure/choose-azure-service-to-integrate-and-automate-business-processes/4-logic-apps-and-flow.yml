@@ -5,8 +5,8 @@ metadata:
   title: Choose the best design-first technology to automate your business process
   description: Use Azure Logic Apps or Microsoft Flow to orchestrate a business workflow
   ms.date: 04/10/2019
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
