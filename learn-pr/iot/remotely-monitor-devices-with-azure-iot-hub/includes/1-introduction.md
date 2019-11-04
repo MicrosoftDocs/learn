@@ -3,14 +3,14 @@ Azure IoT Hub is a cloud service that can handle large volumes of telemetry sent
 
 An IoT Hub can scale to handle millions of devices. An IoT device can upload files, as well as send telemetry.
 
-In this module, you will learn about IoT Hub by implementing a system to monitor and control conditions in a cheese cave. A simple scenario, one IoT Hub and one remote device.
+In this module, you will learn about IoT Hub by implementing a system to monitor and control conditions in a cheese cave. A simple scenario, one IoT Hub, and one remote device.
 
 ## Learning objectives
 
 In this module you will:
   - Create a custom Azure IoT Hub, using the IoT Hub portal
   - Create an app to send device telemetry to the custom IoT Hub
-  - Create a app to handle the back-end service
+  - Create an app to handle the back-end service
   - Understand the role of _direct methods_, in communicating remote device settings
   - Understand the role of _device twins_, in maintaining remote device properties
 
@@ -36,12 +36,3 @@ In a southern location, a natural cave near the surface might have an ambient te
 ## The first step
 
 The first step to building this scenario is to create a custom IoT Hub.
-
-## Jobs
-1. Decide how to handle vs/vsc as well as node/c# in one module - zone pivots
-    options: a 4 node pivot?
-2. Merge in c# code - add reported properties patch code perhaps?
-3. Add c# code to the github hujamaflip
-4. Redo quizzes with non code specific questions -    done
-5. images of cheese cave
- 

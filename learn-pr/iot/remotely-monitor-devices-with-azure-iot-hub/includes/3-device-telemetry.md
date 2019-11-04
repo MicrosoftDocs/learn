@@ -6,7 +6,7 @@ An IoT device may contain one or more sensors, and have some computational power
 
 ## Cheese cave device
 
-In this module, we are assuming the IoT cheese cave monitoring device has temperature and humidity sensors. The device has a fan capable of both cooling or heating, and humidifying or de-humidifying. The device sends current temperature and humidity values to the IoT Hub, every few seconds. This rapid frequency is unrealistic for a cheese cave (maybe every 15 minutes, or less, would be granular enough), but every few seconds helps us understand what is going on.
+In this module, we are assuming the IoT cheese cave monitoring device has temperature and humidity sensors. The device has a fan capable of both cooling or heating, and humidifying or de-humidifying. The device sends current temperature and humidity values to the IoT Hub, every few seconds. This rapid frequency is unrealistic for a cheese cave (maybe every 15 minutes, or less, would be granular enough), except during code development when we want rapid activity!
 
 We assume, in the next unit, that the fan can be in one of three states: on, off, and failed. The fan is initialized to the _off_ state. In a later unit, the fan is turned on by use of a _direct method_.
 
