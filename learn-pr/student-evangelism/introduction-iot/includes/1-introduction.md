@@ -13,8 +13,8 @@ Suppose you run a logistics company responsible for transporting fruit and other
 ## Learning objectives
 
 In this module, you will:  
-
-- 
+- Evaluate whether Azure IoT can address the problems associated with large scale IoT deployment
+- Describe how the components of Azure IoT work together to build a cloud-based IoT solution
 
 ## Prerequisites
 
