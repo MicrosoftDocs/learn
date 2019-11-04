@@ -88,7 +88,7 @@ This branch contains the _Space Game_ project that you worked with in the previo
 
     ```bash
     git fetch upstream unit-tests
-    git checkout unit-tests
+    git checkout -b unit-tests upstream/unit-tests
     ```
 
     The format of this command enables you to get starter code from the Microsoft GitHub repository, known as `upstream`. Shortly, you'll push this branch to your GitHub repository, known as `origin`.
@@ -152,11 +152,11 @@ Here you configure the build pipeline to run your unit tests and collect the res
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* like this:
 
-    [!code-yml[](code/4-azure-pipelines.yml?highlight=45-51)]
+    [!code-yml[](code/4-azure-pipelines.yml?highlight=48-54)]
 
     This version introduces this `DotNetCoreCLI@2` build task.
 
-    [!code-yml[](code/4-azure-pipelines.yml?range=45-51)]
+    [!code-yml[](code/4-azure-pipelines.yml?range=48-54)]
 
     This build task runs the `dotnet test` command.
 
@@ -180,7 +180,7 @@ Here you push your changes to GitHub and see the pipeline run. Recall that you'r
 
 Here you see the tests run in the pipeline and then visualize the results from Azure Test Plans. Azure Test Plans provides all the tools you need to successfully test your applications. You can create and run manual test plans, generate automated tests, and collect feedback from stakeholders.
 
-1. In Azure DevOps, trace the build through each of the steps.
+1. In Azure Pipelines, trace the build through each of the steps.
 
     You see that the **Run unit tests - Release** task runs the unit tests just as you did manually from the command line.
 

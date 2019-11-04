@@ -13,11 +13,7 @@ This learning path also builds on the [Evolve your DevOps practices](/learn/path
 
 ## Run the template
 
-At this point, you can follow either of two options:
-
-* If you've completed the previous modules and have the Tailspin project set up in Azure DevOps, continue with the Azure DevOps project that you created in the _Evolve your DevOps practices_ learning path.
-
-* If you haven't set up the project or if you want to repeat this module from a fresh environment, run a template that sets up everything for you in your Azure DevOps organization.
+Run a template that sets up everything for you in your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=implement-code-workflow&azure-portal=true)
