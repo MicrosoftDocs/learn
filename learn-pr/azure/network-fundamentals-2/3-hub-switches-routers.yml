@@ -1,0 +1,55 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.network-fundamentals-2.hub-switches-routers
+title: Network Hub, Switches, and Routers
+metadata:
+  title:  Network Hub, Switches, and Routers
+  description: Discover the purpose and use of hubs, switches and routers in your network architecture.
+  ms.date: 24/10/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-hub-switches-routers.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of these infrastructure models is not a valid method of joining a device to your Azure AD?"
+    choices:
+    - content: "Manual user configuration"
+      isCorrect: false
+      explanation: "Manual user configuration supports using Azure AD join."
+    - content: "Smartcards and certificate-based authentication"
+      isCorrect: true
+      explanation: "Smartcards and certificate based authentication are not valid methods for joining devices to your Azure AD."
+    - content: "Federated environments"
+      isCorrect: false
+      explanation: "Federated environments require the use of an identity provider, but it is a valid method for joining an Azure AD."
+    - content: "A managed environment "
+      isCorrect: false
+      explanation: "A managed environment uses Pass-Through Authentication or Password Hash Sync to provide Seamless Single Sign-on to your devices."
+  - content: "What provisioning options are available through Azure AD join?"
+    choices:
+    - content: "Self-service using OOBE, Windows Autopilot, or Bulk enrollment"
+      isCorrect: true
+      explanation: "All three options allow devices to be joined to your Azure AD."
+    - content: "Self-service using MDM, Windows Autopilot, or Bulk enrollment"
+      isCorrect: false
+      explanation: "There is no self-service capability using MDM."
+    - content: "Self-service using Azure AD, Windows Autopilot, or Bulk enrollment"
+      isCorrect: false
+      explanation: "There is no self-service capability for joining a device to Azure AD."
+  - content: "What happens when a device is not in the MDM scope?"
+    choices:
+    - content: "The user will be asked to add the device to the MDM before the device can join the Azure AD."
+      isCorrect: false
+      explanation: "The user will never be asked to join the device to an MDM."
+    - content: "The device will not be able to join the Azure AD until the device has been registered with MDM."
+      isCorrect: false
+      explanation: "The device will be able to join the Azure AD, but will be un-managed."
+    - content: "The Azure AD Join completes without the MDM enrollment."
+      isCorrect: true
+      explanation: "The device will be be joined, but will be unmanaged by the MDM system."
+  
