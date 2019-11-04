@@ -2,7 +2,7 @@
 
 ## Title
 
-Networking Fundamentals - Principals
+Networking Fundamentals
 
 ## Role(s)
 
@@ -11,7 +11,7 @@ Networking Fundamentals - Principals
 
 ## Level
 
-beginner
+Beginner
 
 ## Product(s)
 
@@ -21,13 +21,11 @@ beginner
 
 ## Summary
 
-In this module, you'll learn the fundamental principals of computer networking.  You'll cover network protocols and standards, different network structures, and how networks communicate with each other. The content of this module will prepare you for the Azure Admin and Developer learning paths.
+In this module, you'll learn the fundamentals of computer networking to prepare you for the Azure Admin and Developer learning paths.
 
 ## Learning objectives
 
-1. Understand the different network protocols and network standards
-1. Understand the differences between WAN, PAN and LAN
-1. Understand network communication principals like TCP/IP, DNS, and ports
+1. Identify the core components of computer networking
 1. Understand how these core components map to Azure networking
 
 ## Chunk your content into subtasks
@@ -36,15 +34,19 @@ Identify the subtasks of *Networking Fundamentals*
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 |---|---|---|---|---|
-| Introduction to Network Standards and Protocols | Understanding the basics of how networks are put together | Knowledge Check | Understand the different network protocols and network standards, how these relate to Azure networking | Yes |
-| What are LANs, WANs, and PANs | Understanding the basics of how networks are put together | Knowledge Check | Understand the differences between WAN, PAN and LAN, how these relate to Azure networking | Yes |
-| An introduction to IP/TCP Basics | Understanding the basics of how networks are put together | Knowledge Check | Understand network commmunication principals, how these relate to Azure networking | Yes |
-
+| Introduction to Network Standards and Protocols | Understanding the basics of how networks are put together | Knowledge Check | Identify the core components of computer networking | Yes |
+| What are LANs, WANs, and PANs | Understanding the basics of how networks are put together | Knowledge Check | Identify the core components of computer networking | Yes |
+| An introduction to IP/TCP Basics | Understanding the basics of how networks are put together | Knowledge Check | Identify the core components of computer networking | Yes                                                          |
+| Understand Clients and Servers | Understanding the basics of how networks are put together | Knowledge Check | Identify the core components of computer networking, Understand how these core components map to Azure networking | Yes |
+| Introduction to Hubs, Switches, and Routers | foundations for how networking works, and how to use different devices to build networks | Knowledge Check | Identify the core components of computer networking, Understand how these core components map to Azure networking | Yes |
+| Using Authentication, Authorization, and Monitoring in your network | foundations for how networking works, and how to use different devices to build networks | Knowledge Check | Identify the core components of computer networking, Understand how these core components map to Azure networking | Yes |
+| Understand Firewalls and Network Security | foundations for how networking works, and how to use different devices to build networks | Knowledge Check | Identify the core components of computer networking, Understand how these core components map to Azure networking | Yes |
 
 ## Outline the units
 
 1. **Introduction**
-   Moving to the cloud and taking on a role as an Azure Developer, Solution Architect or Administrator requires knowing the foundations for how networking works, and how to use different devices to build networks. While networks are made up of various tangible element like network devices, switches, and routers. There are other aspects like network communication protocols, and network security which will protect your organizations assets and resources. Understanding the basic network protocols and standards, and how networks communicate is an important step in understanding Azure concepts.
+
+   Moving to the cloud and taking on a role as an Azure Developer or Administrator requires knowing the foundations for how networking works, and how to use different devices to build networks. Networks are made up of various devices—computers, switches, routers—connected together by cables or wireless signals. Understanding the basics of how networks are put together is an important step in understanding Azure concepts. 
 
 1. **Introduction to Network Standards and Protocols**
 
@@ -147,6 +149,135 @@ Identify the subtasks of *Networking Fundamentals*
         - What port number is associated with the FTP data transfer protocol?
              - 20
 
+1. **Understand Clients and Servers**
+
+   - Client
+     - A client is a different computer, such as your laptop or cell phone, that requests to view, download, or use the content. The client can connect over a network to exchange information.
+     - Types
+       - Fat, Thin, Hybrid
+   - Server
+     - A server is a computer that holds content and services such as a website, a media file, or a chat application.
+     - Operation of a server
+     - Types of server
+       - Application, Catalog, Communications, Computing, Database, etc.
+     - Advantages and Disadvantages of client server
+   - How this relates to what will be done in Azure.
+     - Azure Resource Manager
+     - Azure VM
+     - Azure 
+   - Knowledge check
+     - What is a thin client?
+       - A thin client only presents processed data provided by an application server. 
+     - What is the purpose of an Application server?
+       - Hosts web apps allowing users in the network to run and use them.
+
+1. **Introduction to Hubs, Switches, and Routers**
+
+   - Hub
+     - A network device that repeats the traffic it receives to all connected devices.
+     - Physical Layer function
+     - Connecting multiple hubs
+     - Types of hub
+       - Fast Ethernet
+       - Dual Speed
+       - Gigabit Ethernet
+   - Switch:
+     -  A network device that sends traffic it receives to a specific connected device, such as a single desktop computer or laptop.
+     - Role in a network
+     - Layer-specific functionality
+     - Types
+       - Unmanaged, Managed, Smart, Enterprise
+   - Router
+     - Router: A network device that can bridge between different networks, determine what traffic can pass between them, and perform other functions on a network, such as assigning IP addresses.
+     - Operation
+     - Uses of a router
+     - Security
+     - Usage
+   - Example as to how this relates to what will be done in Azure.
+     - Azure hub-spoke
+     - ExpressRoute
+   - Knowledge check
+     - What is the primary purpose of a hub?
+       - It allows connection for multiple ethernet devices making them act as a single network segment.
+     - What is the principle difference between hub routing and switch routing
+       - Hub routing sends all packets to all connected devices, whereas switch routing sends packets to specific devices.
+     - What does a router do?
+       - A router is a network device that forwards data packets between computer networks.
+
+1. **Using Authentication, Authorization, and Monitoring in your network**
+
+   - Network Authentication
+     - What is it?
+     - Types of Authentication
+       - Password
+       - Two-factor authentication
+       - Token Authentication
+       - Biometric Authentication
+       - Transactional Authentication
+       - Computer Recognition Authentication
+       - CAPTCHAs
+       - Single Sign-on
+     - Protocols
+       - Kerberos
+       - SSL/TLS
+   - Network Authorization
+     - What is it?
+     - Differences between authentication and authorization
+   - Network Monitoring
+     - What is it?
+       - Agent-Based Monitoring
+       - Agentless Based Monitoring
+     - Monitoring Intervals
+     - Protocols
+       - Ping, SNMP, Syslog
+     - Best Practice
+       - FCAPS
+         - Fault Management
+         - Configuration Management
+         - Accounting
+         - Performance Management
+         - Security
+       - Alerting and Reporting
+   - How this relates to what will be done in Azure.
+     - Azure Network Monitoring Solutions
+     - Azure Monitor
+     - Log Analytics
+   - Knowledge check
+     - What role does Authorization play during a sign-in event?
+       - Authorization is the process of determining whether the authenticated user has access to specific resources.
+     - Which of these are the two most common authentication protocols?
+       - Kerberos and SSL/TLS
+     - When monitoring your network using SNMP. what are the three core components?
+       - Managed Device, Agent, and Network Management System (NMS)
+
+1. **Understand Firewalls and Network Security**
+
+   - Overview of network security
+        - Types of network security
+             - Access Control, antivirus, application security, behavioral analytics, email security, intrusion prevention, VPN, web security, wireless security.
+   - Network security zones
+        - Zone filtering policies
+             - Inside-to-outside, outside-to-inside, DMZ too inside, Outside to DMZ, DMS to Outside.
+   - What are Network Firewalls
+        - Software vs Hardware
+        - Firewall Types
+             - Application-layer, packet filtering, circuit-level, proxy server, stateful, next generation.
+        - Importance of Firewalls
+   - Example as to how this relates to what will be done in Azure.
+        - Azure Network Security Groups
+        - Azure Virtual Network traffic routing
+        - Azure Firewall
+        - Point-to-site VPN Connectivity
+        - Azure DNS
+        - Azure best practices for network security
+        - Azure DDOS protection
+        - Logging for Azure Network security groups
+   - Knowledge check
+        - Which type of network security is needed to encrypt the connection from an endpoint to a network?
+             - VPN
+        - What type of firewall would you use to secure a UDP or TCP connection?
+             - Circuit-level
+
 1. **Summary**
 
    - Summary of this module.
@@ -189,6 +320,7 @@ The proposal is for three modules of around 30 minutes each logically grouped ba
   - 33.5 minutes (approx.)
   - Authentication, Authorization, and Monitoring
   - Firewalls and Security
+
 
 The proxy control document contains links to all the relevant materials.
 
