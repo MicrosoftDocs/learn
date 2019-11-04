@@ -1,5 +1,5 @@
 
-In this exercise, you'll create a Azure Active Directory (Azure AD) group to manage the developer team's access. You'll also add a rule on the group to manage the membership automatically.
+In this exercise, you'll create an Azure Active Directory (Azure AD) group to manage the developer team's access. You'll also add a rule on the group to manage the membership automatically.
 
 ## Add a new group
 
