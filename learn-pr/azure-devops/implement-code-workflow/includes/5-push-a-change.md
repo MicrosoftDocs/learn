@@ -109,12 +109,6 @@ Before you create a branch, it's a good idea to adhere to a naming convention. F
     git checkout -b feature/home-page-text
     ```
 
-    The `-b` argument specifies to create a new branch if it doesn't exist. Omit the `-b` argument when you want to switch to an existing branch.
-
-    By default, your new branch builds on the previous branch from where you ran the `git checkout` command. Here, the parent branch is `master`. But the parent branch can be another one, such as a feature branch someone else started that you want to build on or experiment with.
-
-    It's now safe to make whatever changes you need, because you're on your own local branch. If you want to see which branch you're on, run `git branch -v`.
-
 ## Make changes and test it locally
 
 1. In Visual Studio Code, open *Index.cshtml* in the *Tailspin.SpaceGame.Web/Views/Home* directory.
@@ -177,13 +171,6 @@ Here you'll stage your changes to *Index.cshtml*, commit the change to your bran
     ```bash
     git commit -m "Improve the text at the top of the home page"
     ```
-
-    The `-m` argument specifies the commit message. The commit message becomes part of a changed file's history. It helps reviewers understand the change as well as help future maintainers understand how the file changed over time.
-
-    > [!TIP]
-    > The best commit messages complete the sentence, "If you apply this commit, you will ..."
-
-    If you omit the `-m` argument, Git brings up a text editor where you can detail the change. This option is useful when you want to specify a commit message that spans multiple lines. The text up to the first blank line specifies the commit title.
 
 1. Run this `git push` command to push, or upload, the `feature/home-page-text` branch to your repository on GitHub.
 
