@@ -9,6 +9,6 @@ metadata:
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 13
+durationInMinutes: 19
 content: |
   [!include[](includes/5-push-a-change.md)]
