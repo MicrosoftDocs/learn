@@ -19,7 +19,7 @@ Let's set up a project on SonarCloud. You need to save some information, such as
     1. Select **Manually**.
     1. Under **What is your build technology?**, select **Other**.
     1. Under **What is your OS?**, choose the operating system you're running.
-    1. Under **Execute the Scanner from your computer**, you see a sample `sonar-scanner` command. Copy that command and paste is somewhere easy to refer back to later.
+    1. Under **Execute the Scanner from your computer**, you see a sample `sonar-scanner` command. Copy that command and paste it somewhere that's easy to refer back to later.
     1. Select **Finish**.
 
         Keep this browser tab open for later.
@@ -41,7 +41,6 @@ Here you get a copy of the _Space Game_ web project and work from a branch.
     ```
 
     As you did in previous modules, the format of these commands enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you push this branch up to your GitHub repository, known as `origin`.
-1. As an optional step, open *azure-pipelines.yml* from Visual Studio code and familiarize yourself with the initial configuration.
 
     The configuration resembles the one you created in the [Run quality tests in your build pipeline](/learn/modules/run-quality-tests-build-pipeline?azure-portal=true) module. It builds the application's Release configuration, runs unit tests, and produces a code coverage report.
 
@@ -52,7 +51,7 @@ Here you set up the SonarCloud scanner and scan your code locally. You then uplo
 The SonarCloud scanner runs Java code during the scanning process. So, you start by making sure your environment is set up to run Java code.
 
 > [!IMPORTANT]
-> We mention Java in the prerequisites, but if you don't have it installed, now is a good time. Install the latest version of [Java SE](https://www.oracle.com/technetwork/java/javase/downloads/index.html?azure-portal=true).
+> We mention Java in the prerequisites, but if you don't have it installed, now is a good time to do so. Install the latest version of [Java SE](https://www.oracle.com/technetwork/java/javase/downloads/index.html?azure-portal=true).
 
 1. From the integrated terminal, check whether the `JAVA_HOME` environment variable is set.
 
@@ -82,7 +81,7 @@ The SonarCloud scanner runs Java code during the scanning process. So, you start
     export JAVA_HOME=/usr/bin
     ```
 
-    For more information on how to set this variable, see [Set JAVA_HOME on Windows 7, 8, 10, Mac OS X, and Linux](https://www.baeldung.com/java-home-on-windows-7-8-10-mac-os-x-linux?azure-portal=true).
+    For more information about how to set this variable, see [Set JAVA_HOME on Windows 7, 8, 10, Mac OS X, and Linux](https://www.baeldung.com/java-home-on-windows-7-8-10-mac-os-x-linux?azure-portal=true).
 
 1. Run the following `dotnet tool install` command to install **dotnet-sonarscanner**:
 
