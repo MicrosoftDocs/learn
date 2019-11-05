@@ -35,7 +35,6 @@ divCloseLength += 1;
 output = output.Remove(divCloseStart, divCloseLength);
 
 Console.WriteLine($"Quantity: {quantity}");
-Console.WriteLine($"Input: {input}");
 Console.WriteLine($"Output: {output}");
 ```
 

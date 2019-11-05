@@ -24,7 +24,7 @@ Console.WriteLine(updatedData);
 When you run the code, you'll see the follow output.
 
 ```output
-What if I need something from a string?
+123455000  3  
 ```
 
 The `Remove()` method works similarly to the `Substring()` method.  You supply a starting position and the length to remove those characters from the string.
