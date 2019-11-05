@@ -22,7 +22,7 @@ prerequisites: |
   -	Ability to use Node.js, or C#, at the beginner level
   -	Experience using Visual Studio, or Visual Studio Code, at the beginner level 
 iconUrl: /learn/achievements/iot/iot-hub-cheese-cave.svg
-ratingEnabled: false
+ratingEnabled: true
 levels:
 - beginner
 roles:

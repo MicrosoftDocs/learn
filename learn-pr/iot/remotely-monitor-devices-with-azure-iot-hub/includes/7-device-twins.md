@@ -10,10 +10,10 @@ Much of the functionality of device twins is provided by Azure IoT, so not much 
 
 A device twin contains four types of information:
 
-* Tags. Information on the device that isn't visible to the device.
-* Desired properties. The desired settings specified by the back-end app.
-* Reported properties. The actual values of the settings on the device.
-* Device identity properties. Read-only information identifying the device.
+* **Tags**: information on the device that isn't visible to the device.
+* **Desired properties**: the desired settings specified by the back-end app.
+* **Reported properties**: the actual values of the settings on the device.
+* **Device identity properties**: read-only information identifying the device.
 
 There's some overlap between the functionality of device twins, and direct methods. We could set desired properties using direct methods, which might seem an intuitive way of doing things. However, using direct methods would require the back-end app to record those settings explicitly, if they ever needed to be accessed. Using device twins, this information is stored and maintained by default.
 

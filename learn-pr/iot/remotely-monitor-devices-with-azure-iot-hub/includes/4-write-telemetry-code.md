@@ -220,8 +220,8 @@ namespace simulated_device
 
         // Global variables.
         private static DeviceClient s_deviceClient;
-        private static stateEnum fanState = stateEnum.off;                      // Initial setting of the fan. 
-        private static double desiredTemperature = ambientTemperature - 10;     // Initial desired temperature, in degrees F. 
+        private static stateEnum fanState = stateEnum.off;                      // Initial setting of the fan.
+        private static double desiredTemperature = ambientTemperature - 10;     // Initial desired temperature, in degrees F.
         private static double desiredHumidity = ambientHumidity - 20;           // Initial desired humidity in relative percentage of air saturation.
 
         // Enum for the state of the fan for cooling/heating, and humidifying/de-humidifying.
@@ -546,8 +546,6 @@ namespace cheesecave_operator
         private static async Task ReceiveMessagesFromDeviceAsync(string partition)
         {
             // Create the receiver using the default consumer group.
-            // For the purposes of this sample, read only messages sent since 
-            // the time the receiver is created. Typically, you don't want to skip any messages.
             var eventHubReceiver = s_eventHubClient.CreateReceiver("$Default", partition, EventPosition.FromEnqueuedTime(DateTime.Now));
             Console.WriteLine("Created receiver on partition: " + partition);
 
@@ -581,8 +579,7 @@ namespace cheesecave_operator
         {
             colorMessage("Cheese Cave Operator\n", ConsoleColor.Yellow);
 
-            // Create an EventHubClient instance to connect to the
-            // IoT Hub Event Hubs-compatible endpoint.
+            // Create an EventHubClient instance to connect to the IoT Hub Event Hubs-compatible endpoint.
             var connectionString = new EventHubsConnectionStringBuilder(new Uri(s_eventHubsCompatibleEndpoint), s_eventHubsCompatiblePath, s_iotHubSasKeyName, s_iotHubSasKey);
             s_eventHubClient = EventHubClient.CreateFromConnectionString(connectionString.ToString());
 
