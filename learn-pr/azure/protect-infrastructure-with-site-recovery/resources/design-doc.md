@@ -1,4 +1,4 @@
-## Title
+# Title
 
 Protect your Azure infrastructure with Azure Site Recovery
 
@@ -117,11 +117,11 @@ In this unit, you have learned about the benefits of Azure Site Recovery and how
 
 ## Notes
 
-Detail the features of ASR for protecting resources (primarily VM-based) in Azure. Go through a basic activity of setting up ASR, failing over, and failing back.
+Detail the features of Azure Site Recovery for protecting resources (primarily VM-based) in Azure. Go through a basic activity of setting up Azure Site Recovery, failing over, and failing back.
 Supporting documentation:
 
-Enable replication - https://docs.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-enable-replication
+Enable replication - https://docs.microsoft.com/azure/site-recovery/azure-to-azure-tutorial-enable-replication
 
-Run a disaster recovery drill - https://docs.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-dr-drill
+Run a disaster recovery drill - https://docs.microsoft.com/azure/site-recovery/azure-to-azure-tutorial-dr-drill
 
-Fail over and fail back - https://docs.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-failover-failback
+Fail over and fail back - https://docs.microsoft.com/azure/site-recovery/azure-to-azure-tutorial-failover-failback
