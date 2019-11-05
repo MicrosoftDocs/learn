@@ -38,8 +38,8 @@ products:
 units:
 - learn.azdo.scan-for-vulnerabilities.1-introduction
 - learn.azdo.scan-for-vulnerabilities.2-implement-secure-process
-- learn.azdo.scan-for-vulnerabilities.3-scan-locally
 - learn.azdo.scan-for-vulnerabilities.4-set-up-environment
+- learn.azdo.scan-for-vulnerabilities.3-scan-locally
 - learn.azdo.scan-for-vulnerabilities.5-scan-pipeline
 - learn.azdo.scan-for-vulnerabilities.6-scan-pull-request
 - learn.azdo.scan-for-vulnerabilities.7-add-quality-badge
