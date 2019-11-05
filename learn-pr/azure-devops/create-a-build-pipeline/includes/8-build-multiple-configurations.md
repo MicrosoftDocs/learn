@@ -20,7 +20,7 @@ Mara, excited to share her results, tracks down Amita to show her the build pipe
 
 Consider the following tasks that build and publish the *Space Game* web project's Release configuration. (Don't add this code to your *azure-pipelines.yml* file.)
 
-[!code-yml[](code/8-azure-pipelines-partial-release.yml?highlight=2,5,9,14)]
+[!code-yml[](code/8-azure-pipelines-partial-release.yml?highlight=5,8,12,17)]
 
 To build the Debug configuration, you might repeat these two tasks, but replace `Release` with `Debug`.
 
@@ -57,7 +57,7 @@ You'll now create a template that can build any configuration that's defined in 
 
 1. In Visual Studio Code, add this code to *build.yml*:
 
-    [!code-yml[](code/8-build.yml?highlight=1-2,6,9,13,18)]
+    [!code-yml[](code/8-build.yml?highlight=4-5,9,12,16,21)]
 
     These tasks look like the ones you defined earlier to build and publish the application. But in a template you work with input parameters differently than you work with normal variables. Here are two differences:
 

@@ -71,7 +71,7 @@ The `models-package` branch doesn't contain an initial *azure-pipelines.yml* fil
 
 1. Copy the following YAML code into *azure-pipelines.yml*:
 
-    [!code-yml[](code/6-azure-pipelines-yaml.yml?highlight=36-42)]
+    [!code-yml[](code/6-azure-pipelines-yaml.yml?highlight=39-45)]
 
     The highlighted code shows where the pipeline restores dependencies, and looks in your Azure Artifacts feed for the dependencies that might be there.
 

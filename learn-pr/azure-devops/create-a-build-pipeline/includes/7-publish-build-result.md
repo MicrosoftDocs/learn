@@ -13,7 +13,7 @@ In .NET Core, you can package your application as a .zip file. You can then use 
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* as you see here:
 
-    [!code-yml[](code/7-azure-pipelines-1.yml?highlight=40-51)]
+    [!code-yml[](code/7-azure-pipelines-1.yml?highlight=43-54)]
 
     This version of *azure-pipelines.yml* looks like the previous version, but it adds two additional tasks.
 
@@ -81,7 +81,7 @@ You'll now use variables to define these values one time. You'll then reference 
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* as you see here:
 
-    [!code-yml[](code/7-azure-pipelines-2.yml?highlight=6-9,39,42,46,51,22,30,13,15)]
+    [!code-yml[](code/7-azure-pipelines-2.yml?highlight=9-12,42,44,49,54,25,33,16,18)]
 
     Notice the `variables` section, which defines these variables:
 

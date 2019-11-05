@@ -26,7 +26,7 @@ When you use a Microsoft-hosted agent, you specify the VM image to use from the 
 
 ```yml
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: 'ubuntu-16.04'
   demands:
     - npm
 ```
