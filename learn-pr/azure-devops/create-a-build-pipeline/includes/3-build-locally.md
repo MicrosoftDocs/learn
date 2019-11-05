@@ -149,6 +149,9 @@ Now that you have the web application, you can build and run it locally.
     dotnet build --configuration Release
     ```
 
+    > [!NOTE]
+    > If the `dotnet` command is not found, review the prerequisites at the start of this module. You may need to install .NET Core.
+
     .NET Core projects typically come with two build configurations: Debug and Release. Debug builds aren't optimized for performance. They make it easier for you to trace through your program and troubleshoot issues. Here we choose the Release configuration just to see the web app in action.
 
     You'll likely see a few build warnings in the output. These warnings are included intentionally. You can ignore them for now.
