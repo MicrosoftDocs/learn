@@ -6,7 +6,7 @@ In this unit, you'll explore failover and failback, how to reprotect a failed ov
 
 ## What is failover?
 
-![Diagram showing an unavailable source region, and a new target environment being failed over to](../media/2-failover.png)
+![Diagram showing an unavailable source region, and a new target environment being failed over to](../media/2-failover.svg)
 
 A failover happens when a decision is made to execute a DR plan for our organization. The existing production environment, protected by Azure Site Recovery, is replicated to a different region. The target environment becomes the de facto production environment and becomes the environment our organization's production services run on. Once the target region is active, and the source environment should no longer be used. We enforce this by leaving the source VMs stopped.
 

@@ -33,7 +33,7 @@ Our first step is to create our exercise environment. We'll run a script that cr
 
 1. Run the following command to create resource groups and the company's infrastructure.
 
-    ```azurecli
+    ```bash
     az group create --name west-coast-rg --location westus2
     az group create --name east-coast-rg --location eastus2
 
@@ -55,7 +55,7 @@ Azure Site Recovery will manage and orchestrate our DR process for Azure VMs or 
 - Configure outbound network connectivity
 - Set up replication on existing VMs
 
-![Diagram showing how Azure Site Recovery keeps an updated version of VM disks to enable replication from a source region to a target region.](../media/3-enable-replication-step-2.png)
+![Diagram showing how Azure Site Recovery keeps an updated version of VM disks to enable replication from a source region to a target region.](../media/3-enable-replication-step-2.svg)
 
 ### What is a Recovery Services vault?
 
