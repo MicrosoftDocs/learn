@@ -44,7 +44,7 @@ Now that you have a working build process, you can start to add build tasks.
 
 Remember that you're working from the `master` branch. You'll now create a branch named `build-pipeline` to hold your work. The branch gives you a place to experiment and get your build working completely without affecting the rest of the team.
 
-You can add build tasks to *azure-pipelines.yml* directly from Azure Pipelines. Azure Pipelines will commit your changes directly to your branch. But here you'll modify *azure-pipelines.yml* locally and push, or upload, your changes to GitHub. Doing it this way lets you practice your Git skills watch the pipeline automatically build the application when you push up changes.
+You can add build tasks to *azure-pipelines.yml* directly from Azure Pipelines. Azure Pipelines will commit your changes directly to your branch. But here you'll modify *azure-pipelines.yml* locally and push, or upload, your changes to GitHub. Doing it this way lets you practice your Git skills. Watch the pipeline automatically build the application when you push up changes.
 
 In practice, you might add build tasks one at a time, push up your changes, and watch the build run. Here, you'll add all the build tasks we identified earlier at one time.
 
