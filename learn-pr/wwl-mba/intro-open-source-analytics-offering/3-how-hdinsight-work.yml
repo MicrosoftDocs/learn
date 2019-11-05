@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-open-source-analytics-offering.3-how-does-hdinsight-work
+title: How does HDInsight work
+metadata:
+  title: How does HDInsight work
+  description: How does HDInsight work
+  ms.date: 10/25/2019
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: False
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-how-hdinsight-work.md)]

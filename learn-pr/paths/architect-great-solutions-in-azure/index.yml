@@ -5,9 +5,8 @@ metadata:
   description: Learn how to design and build secure, scalable, performant solutions in Azure by examining the core principles found in every good architecture.
   brand: azure
   ms.date: 09/24/2018
-  author: markjulmar
-  ms.author: smmark
-  #ms.learn-contact: smmark
+  author: jboeshart
+  ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Architect great solutions in Azure

@@ -21,7 +21,7 @@ In this step, we're going to create a VM with the following properties:
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Select **Create a resource** in the sidebar menu on the left.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
 1. _Windows Server 2016 VM_ should be in the list of **Popular** Marketplace elements. If not, try searching for "Windows Server 2016 DataCenter" using the search box on the top.
 

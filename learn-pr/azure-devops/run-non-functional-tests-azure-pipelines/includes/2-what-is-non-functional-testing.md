@@ -1,22 +1,20 @@
-In [Run functional tests in Azure Pipelines](/learn/modules/run-functional-tests-azure-pipelines?azure-portal=true), you and the Tailspin team added Selenium UI tests to the pipeline. UI tests are a form of *functional testing*. In this part, you explore the kinds of *non-functional* tests you can run in the pipeline.
+In [Run functional tests in Azure Pipelines](/learn/modules/run-functional-tests-azure-pipelines?azure-portal=true), you and the Tailspin team added Selenium UI tests to the pipeline. UI tests are a form of *functional testing*. In this part, you explore the kinds of *non-functional* tests you can run in a pipeline.
 
-The team defines what a non-functional test covers, some of the kinds of non-functional tests that you can run, and then decide on one to add to their pipeline.
+The team first defines what a non-functional test is and talks about some types of non-functional tests. Then, they decide on a non-functional test to add to their pipeline.
 
 ## Daily standup meeting
 
-The team is having their daily standup meeting and Mara and Amita are demoing the changes they made to the CI/CD pipeline. Amita shows the UI tests running on her laptop. The team watches how quickly each web browser comes up and runs through tests Amita would normally perform manually.
+The team is having their daily standup meeting and Mara and Amita are demoing the changes they made to the release pipeline. Amita shows the UI tests running on her laptop. The team watches how quickly each web browser comes up and runs through tests Amita would normally do manually.
 
-**Amita:** I love this. But I must admit, I initially resisted this form of automation. But now I see how it gives me the freedom to do so much more. I'm already beginning to write my own UI tests. And I still have plenty of time to perform usability testing to verify that our websites are intuitive and meets the user's needs.
+**Amita:** I must admit, I initially resisted this form of automation. But now I see how it gives me the freedom to do so much more. I'm already beginning to write my own UI tests. And I still have plenty of time to do usability testing to verify that our websites are intuitive and meet the user's needs.
 
-Tim raises his hand.
-
-**Tim:** I'm happy this helps speed things up for you, Amita. This improvement should help us move changes from _Test_ to _Staging_ more quickly. Given that, is there anything we should do in _Staging_ to help improve the quality of our releases?
+**Tim:** I'm happy this helps speed up things for you, Amita. This improvement should help us move changes from _Test_ to _Staging_ more quickly. Given that, is there anything we should do in _Staging_ to help improve the quality of our releases?
 
 **Andy:** UI tests are a form of *functional testing*. I suspect, Tim, that you're more concerned about performance &mdash; or the *non-functional* parts of the application. What kinds of tests do you normally run?
 
-**Tim:** Normally, once our sites are in production, I run performance, load, and stress tests. But I would like to start running other kinds of tests, such as compliance and security tests. Non-functional tests can be difficult to run manually, and I'd like to run these kinds of tests earlier and more frequently so that we can catch mistakes earlier in the process.
+**Tim:** Normally, once our sites are in production, I run performance, load, and stress tests. But I'd like to start running other kinds of tests as well, such as compliance and security tests. All those tests are difficult to run manually and, with automation, we could run them both earlier and more frequently.
 
-**Mara:** Tim, you've really developed a DevOps mindset! I think we can help you there. I think it might help if we first compared non-functional tests to functional tests. Then we can talk about the kinds of non-functional tests we can run.
+**Mara:** Tim, you've really developed a DevOps mindset! I think we can help you. First, let's first compare non-functional tests to functional tests. Then we can talk about the kinds of non-functional tests we can run.
 
 ## How do non-functional tests compare to functional tests?
 
@@ -24,9 +22,9 @@ In [Run functional tests in Azure Pipelines](/learn/modules/run-functional-tests
 
 In short, _functional tests_ verify that each function of the software does what it should. In other words, functional tests verify an application's functionality.
 
-_Non-functional tests_ check non-functional aspects of an application, such as performance and reliability. (Of course, you can also perform non-functional tests on other systems besides apps, such as infrastructure components.) One example of a non-functional test is to determine how many people can simultaneously log into an application before there is a problem, such as slower response times.
+_Non-functional tests_ check non-functional aspects of an application, such as performance and reliability. (Of course, you can also perform non-functional tests on other systems besides apps, such as infrastructure components.) One example of a non-functional test is to determine how many people can simultaneously log into an application before there's a problem, such as slower response times.
 
-Taking the _Space Game_ website as an example, a functional test might verify that the leaderboard displays correctly and that it shows the correct records when when the user selects a filter. A non-functional test might verify that leaderboard filtering completes in less than one second when many users are connected to the website at the same time.
+Taking the _Space Game_ website as an example, a functional test might verify that the leaderboard displays correctly and that it shows the correct records when the user selects a filter. A non-functional test might verify that leaderboard filtering completes in less than one second when many users are connected to the website at the same time.
 
 Non-functional testing always tests something that is measurable. The goal is to improve the product, such as by improving how efficiently the application uses resources or by improving response times when many customers use it simultaneously. Some of the questions non-functional tests can answer include:
 
@@ -58,7 +56,7 @@ Examples of times when applications must operate under abnormally heavy loads ar
 
 ### Security testing
 
-_Security testing_ ensures that applications are free from any vulnerabilities, threats, and risks. Thorough security testing finds all the possible loopholes and weaknesses of the system which might cause an information breach or a loss of revenue.
+_Security testing_ ensures that applications are free from any vulnerabilities, threats, and risks. Thorough security testing finds all the possible loopholes and weaknesses of the system that might cause an information breach or a loss of revenue.
 
 There are many types of security testing. Two of them are penetration testing and compliance testing.
 
@@ -70,13 +68,13 @@ _Penetration testing_, or _pen testing_, is a type of security testing that test
 
 _Compliance testing_ determines if an application is compliant with some set of requirements, whether external to the company or internal to it. For example, healthcare organizations usually need to comply with HIPAA (Health Insurance Portability and Accountability Act of 1996), which provides data privacy and security provisions for safeguarding medical information.
 
-In addition, an organization can also have its own security requirements and software must be tested to make sure it complies with them. For example, on Linux systems, there might be a requirement that the default user mask is *027* or more restrictive. A security test needs to exist to prove that this is true.
+In addition, an organization can have its own security requirements and software must be tested to make sure it complies with them. For example, on Linux systems, there might be a requirement that the default user mask is *027* or more restrictive. A security test needs to exist to prove that this is true.
 
 ## What does the team choose?
 
 **Andy:** Tim, this is your area. If you had to choose just one kind of testing to start with, which would you pick?
 
-**Tim:** Like Amita, I want our users to have a great experience. From my perspective, that happens when the page loads quickly. This is especially true when we launch a new game. On launch date, our site is where gamers come to download the game. Load testing helps me simulate expected usage.
+**Tim:** Like Amita, I want our users to have a great experience. From my perspective, that happens when the page loads quickly. This is especially true when we launch a new game. On launch day, our site is where gamers come to download the game. Load testing helps me simulate expected usage.
 
 **Mara:** What tool do you use for load testing, and what do your load tests measure?
 
@@ -96,6 +94,4 @@ In addition, an organization can also have its own security requirements and sof
 * We'll map his steps to tasks in Azure Pipelines.
 * We'll measure the load on the website and provide a report for you all to see.
 
-I'll work with Tim on this one.
-
-**Andy:** Great! See you later.
+**Tim:** Great! See you later.

@@ -4,11 +4,10 @@ metadata:
   title: Design a feedback sorter
   description: Let's consider a real-world scenario for times when sentiment analysis might come in handy. Here we talk about the scenario and how to implement it using Azure Functions and the Text Analytics API.
   ms.date: 09/24/2018
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Design a feedback sorter
 durationInMinutes: 6
 content: |
