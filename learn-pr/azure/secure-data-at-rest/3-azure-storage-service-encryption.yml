@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-data-at-rest.3-azure-storage-service-encryption
-title: Secure data at rest with Azure Storage Service Encryption
+title: Help secure data at rest by using Azure Storage Service Encryption
 metadata:
-  title: Secure data at rest with Azure Storage Service Encryption
-  description: Secure data at rest with Azure Storage Service Encryption
+  title: Help secure data at rest by using Azure Storage Service Encryption
+  description: Help secure data at rest by using Azure Storage Service Encryption
   ms.date: 10/29/2019
   author: jboeshart
   ms.author: jaboes
@@ -17,15 +17,15 @@ quiz:
   questions:
   - content: Your organization has Linux virtual machines on Azure, and you want to enable Azure Disk Encryption to ensure that all of the OS disks are secured. What must you do to achieve this?
     choices:
-    - content: Ensure the Azure Key Vault and the virtual machines are in the same region, create a backup, enable disk encryption, then sign in to the machine to monitor it while encryption takes place.
+    - content: Ensure that the key vault and the virtual machines are in the same region, create a backup, enable disk encryption, then sign in to the machine to monitor it while encryption takes place.
       isCorrect: false
       explanation: Don't use a Linux machine while this encryption is taking place.
-    - content: Ensure the Azure Key Vault and the virtual machines are in the same region, create a back-up, enable disk encryption, and avoid using the machines while encryption takes place.
+    - content: Ensure that the key vault and the virtual machines are in the same region, create a back-up, enable disk encryption, and avoid using the machines while encryption takes place.
       isCorrect: true
       explanation: Creating a backup or snapshot ensures your machines are safe if something goes wrong during encryption. Because we're dealing with Linux, it's a good idea to avoid using the machines while encryption takes place.
     - content: Ensure the virtual machines are in the same region, create a backup, enable disk encryption, and avoid using the machines while encryption is happening.
       isCorrect: false
-      explanation: You haven't ensured that the virtual machines are in the same region as the Key Vault that will be used. For encryption to succeed with ADE, the Key Vault must be created and in the same region.
+      explanation: You haven't ensured that the virtual machines are in the same region as the key vault that will be used. For encryption to succeed with Azure Disk Encryption, the key vault must be created and in the same region.
   - content: Your organization uses client-side encryption before storing data into Azure. What must be created first to encrypt data before it's sent to Azure?
     choices:
     - content: Create a disk encryption key.
@@ -41,10 +41,10 @@ quiz:
     choices:
     - content: Azure Disk Encryption.
       isCorrect:  false
-      explanation:  ADE would require a process to encrypt disks that are on Azure. Compared with SSE, where encryption is done automatically and by default, ADE is more complex. This process is for encrypting disks only – not other types of storage.
+      explanation:  Azure Disk Encryption would require a process to encrypt disks that are on Azure. Compared with Storage Service Encryption, where encryption is done automatically and by default, Azure Disk Encryption is more complex. This process is for encrypting disks only – not other types of storage.
     - content: Azure Storage Service Encryption.
       isCorrect: true
-      explanation: SSE allows encryption on all data stored on storage accounts. Encryption is automatically enabled by default.
+      explanation: Storage Service Encryption allows encryption on all data stored on storage accounts. Encryption is automatically enabled by default.
     - content: Client-side encryption with Azure.
       isCorrect: false
       explanation: Client-side encryption would involve a process where you're expected to encrypt and decrypt all of the data yourself using multiple encryption keys.
