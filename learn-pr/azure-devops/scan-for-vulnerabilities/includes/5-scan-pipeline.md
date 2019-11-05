@@ -137,7 +137,7 @@ Here you push your changes to GitHub and see the pipeline run. Recall that you'r
 
 ## Analyze the results
 
-Return to the SonarCloud portal, refresh the page, adn then examine the results. You see the same results as when you scanned locally because the project sources haven't changed.
+Return to the SonarCloud portal, refresh the page, and then examine the results. You see the same results as when you scanned locally because the project sources haven't changed.
 
 As you resolve issues from the report and add new features to your application, your report changes over time. Issues you resolve are removed from the report. Likewise, new issues might appear as you add features or the security community provides new recommendations.
 
