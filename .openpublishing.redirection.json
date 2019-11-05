@@ -531,17 +531,17 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl-mba/welcome-to-the-azure-generalist/index.md",
+      "source_path": "learn-pr/wwl-mba/welcome-to-azure-generalist/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl-mba/welcome-to-the-azure-generalist/introduction.md",
+      "source_path": "learn-pr/wwl-mba/welcome-to-azure-generalist/1-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl-mba/welcome-to-the-azure-generalist/2-executive-welcome.md",
+      "source_path": "learn-pr/wwl-mba/welcome-to-azure-generalist/2-executive-welcome.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
       "redirect_document_id": false
     }
