@@ -62,14 +62,14 @@ You see the directory and file tree in the file explorer.
 
 ## Add the pipeline configuration
 
-The `models-package` branch doesn't contain an initial **azure-pipelines.yml** file. Here's your chance to create it.
+The `models-package` branch doesn't contain an initial *azure-pipelines.yml* file. Here's your chance to create it.
 
-1. From Visual Studio Code, select **File** > **New File**. Then select **File** > **Save** to save the blank file as **azure-pipelines.yml** in your project's root directory, such as **~/mslearn-tailspin-spacegame-web**.
+1. From Visual Studio Code, select **File** > **New File**. Then select **File** > **Save** to save the blank file as *azure-pipelines.yml* in your project's root directory, such as *~/mslearn-tailspin-spacegame-web*.
 
     > [!IMPORTANT]
     > On Windows, ensure that you select **YAML** from the **Save as type** field.
 
-1. Copy the following YAML code into **azure-pipelines.yml**:
+1. Copy the following YAML code into *azure-pipelines.yml*:
 
     [!code-yml[](code/6-azure-pipelines-yaml.yml?highlight=36-42)]
 

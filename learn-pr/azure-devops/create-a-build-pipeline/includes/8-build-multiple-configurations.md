@@ -50,7 +50,7 @@ You'll now create a template that can build any configuration that's defined in 
 
     In practice, you can put a template file in any location. You don't need to put them in the *templates* directory.
 
-1. In Visual Studio Code, select **File > New File**. Then select **File > Save** to save the blank file as *build.yml* in your project's *templates* directory. (For example, **~/mslearn-tailspin-spacegame-web/templates**.)
+1. In Visual Studio Code, select **File > New File**. Then select **File > Save** to save the blank file as *build.yml* in your project's *templates* directory. (For example, *~/mslearn-tailspin-spacegame-web/templates*.)
 
     > [!IMPORTANT]
     > As before, on Windows, be sure to select **YAML** in the **Save as type** list.

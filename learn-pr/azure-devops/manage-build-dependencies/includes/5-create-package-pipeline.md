@@ -57,7 +57,7 @@ In Visual Studio Code, your terminal window points to the root directory of the 
 
     You see the directory and file tree in the file explorer.
 
-1. Open the **azure-pipelines.yml** file.
+1. Open the *azure-pipelines.yml* file.
 
     You see the steps where the package is built, the version is set, and the package is added to Azure Artifacts.
 
@@ -117,7 +117,7 @@ Here, you'll set up a second pipeline to build the package and upload that packa
     
     b. From the page that appears, scroll to the bottom and select **Approve and install**.
     
-    c. From the **Review** tab, you see the new pipeline's **azure-pipelines.yml** file.
+    c. From the **Review** tab, you see the new pipeline's *azure-pipelines.yml* file.
     
     d. Select **Run**.
 1. Watch the pipeline run.

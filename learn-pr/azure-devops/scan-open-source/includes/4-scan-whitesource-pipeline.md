@@ -9,7 +9,7 @@ Here you'll:
 
 In practice, you might scan your project locally from the command line as you did in previous modules. Doing so helps you understand the process and see what results to expect.
 
-For brevity, here you'll add a task directly to **azure-pipelines.yml** and run the change through your pipeline.
+For brevity, here you'll add a task directly to *azure-pipelines.yml* and run the change through your pipeline.
 
 ## Fetch the branch from GitHub
 
@@ -25,7 +25,7 @@ Here you'll get the starter code for the _Space Game_ web project from Microsoft
 
     As in previous modules, the format of this command enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
 
-1. As an optional step, open **azure-pipelines.yml**. Then inspect the initial configuration.
+1. As an optional step, open *azure-pipelines.yml*. Then inspect the initial configuration.
 
     For learning purposes, this configuration is very basic and omits running quality tests.
 
@@ -57,7 +57,7 @@ Here you'll install the **WhiteSource Bolt** extension for Azure Pipelines. This
 
 Here you'll use the built-in task `WhiteSource Bolt@19` that's provided by the WhiteSource Bolt extension to scan your open-source dependencies when the pipeline runs.
 
-1. From Visual Studio Code, open **azure-pipelines.yml** and replace its contents with the following:
+1. From Visual Studio Code, open *azure-pipelines.yml* and replace its contents with the following:
 
     [!code-yml[](code/4-azure-pipelines.yml?highlight=54-55)]
 
@@ -67,7 +67,7 @@ Here you'll use the built-in task `WhiteSource Bolt@19` that's provided by the W
 
 Here you'll push your changes to GitHub and see the pipeline run. Recall that you're currently on the `scan-open-source` branch.
 
-1. From the integrated terminal, add **azure-pipelines.yml** to the index, commit the changes, and push the branch up to GitHub.
+1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the changes, and push the branch up to GitHub.
 
     ```bash
     git add azure-pipelines.yml

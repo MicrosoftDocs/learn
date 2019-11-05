@@ -168,7 +168,7 @@ Here you configure the build pipeline to run your unit tests and collect the res
 
 Here you push your changes to GitHub and see the pipeline run. Recall that you're currently on the `unit-tests` branch.
 
-1. In the integrated terminal, add **azure-pipelines.yml** to the index, commit the changes, and push the branch up to GitHub.
+1. In the integrated terminal, add *azure-pipelines.yml* to the index, commit the changes, and push the branch up to GitHub.
 
     ```bash
     git add azure-pipelines.yml
