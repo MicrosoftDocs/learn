@@ -35,7 +35,7 @@ The release pipeline that you and the team built in this learning path reduced:
 * The time it takes to get the build into the _Test_ stage from **three days** to **one day**
 
     They did this by using a scheduled trigger to deploy to _Test_ every day at 3:00 AM.
-* The time is takes to get the tested build into _Staging_ from **two days** to **zero days**.
+* The time it takes to get the tested build into _Staging_ from **two days** to **zero days**.
 
     They did this by adding Selenium UI tests, a form of functional testing, to the _Test_ stage. These automated tests are much faster than the manual versions.
 * The time it takes to get the approved build from _Staging_ to live from **one day** to **less than one day**.
