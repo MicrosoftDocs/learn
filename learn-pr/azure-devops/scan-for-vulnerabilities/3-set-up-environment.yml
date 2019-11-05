@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-set-up-environment.md)]
+  [!include[](includes/3-set-up-environment.md)]
