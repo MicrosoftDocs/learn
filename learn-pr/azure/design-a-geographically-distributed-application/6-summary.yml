@@ -3,7 +3,7 @@ uid: learn.design-a-geographically-distributed-application.6-summary
 metadata:
   title: Summary
   description: In this unit, you'll review what you've learned about multi-region application architectures in Azure.
-  ms.date: 10/30/2019
+  ms.date: 11/07/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
