@@ -3,7 +3,7 @@ uid: learn.azdo.host-build-agent
 metadata:
   title: Host your own build agent in Azure Pipelines - Learn
   description: Learn how to use your own build agent when Microsoft-hosted agents don't meet your needs.
-  ms.date: 06/21/2019
+  ms.date: 11/04/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
