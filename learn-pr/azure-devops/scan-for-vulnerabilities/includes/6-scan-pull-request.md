@@ -164,7 +164,7 @@ In this part, you provide a condition to each build task that relates to SonarCl
 
     This time, you see a _pull request build_.
 
-    You see that all tasks, including the SonarCloud tasks, are run in the pull request build. That's because your pull request targets the `master` branch, which satisfy the conditions to run these tasks.
+    You see that all tasks, including the SonarCloud tasks, are run in the pull request build. That's because your pull request targets the `master` branch, which satisfies the conditions to run these tasks.
 
     ![Azure Pipelines showing a PR build that runs all tasks](../media/6-pr-build-tasks.png)
 
