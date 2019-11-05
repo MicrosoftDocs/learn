@@ -6,6 +6,8 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
 
 1. Select the **+ Create a resource** button found on the upper left-hand corner of the Azure portal, then select **Compute** > **Function App**.
 
+    [!include[](../../includes/functions-classic-workaround.md)]
+
 1. On the **Function App** page, enter the following settings:
 
     > [!NOTE]
@@ -23,6 +25,7 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
     | Storage | Create new, and accept the default name. |
 
     ### Sandbox regions
+
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 1. Select **Create**, and wait for the function app to be deployed before continuing.

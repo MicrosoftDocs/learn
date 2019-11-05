@@ -61,7 +61,7 @@ Our app is finished &mdash; let's deploy it and see it work. Create an App Servi
 The app name needs to be globally unique, so you'll need to choose your own name to fill in `<your-unique-app-name>`.
 
 ```azurecli
-az appservice plan create --name blob-exercise-plan --resource-group <rgn>[sandbox resource group name]</rgn> --sku FREE
+az appservice plan create --name blob-exercise-plan --resource-group <rgn>[sandbox resource group name]</rgn> --sku FREE --location centralus
 az webapp create --name <your-unique-app-name> --plan blob-exercise-plan --resource-group <rgn>[sandbox resource group name]</rgn>
 CONNECTIONSTRING=$(az storage account show-connection-string --name <your-unique-storage-account-name> --output tsv)
 az webapp config appsettings set --name <your-unique-app-name> --resource-group <rgn>[sandbox resource group name]</rgn> --settings AzureStorageConfig:ConnectionString=$CONNECTIONSTRING AzureStorageConfig:FileContainerName=files

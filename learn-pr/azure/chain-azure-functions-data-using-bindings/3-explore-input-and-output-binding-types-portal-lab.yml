@@ -4,11 +4,11 @@ metadata:
   title: Exercise - Explore input and output binding types
   description: In this unit, we'll use the Azure portal to explore and understand bindings and the array of supported bindings that are available to us.
   ms.date: 09/24/2018
-  author: andrewjbyrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
+  zone_pivot_groups: dev-lang-javascript-powershell
 title: Exercise - Explore input and output binding types
 durationInMinutes: 10
 #interactive: azure-portal

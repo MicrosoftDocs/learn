@@ -1,8 +1,8 @@
-In this module, you'll add non-functional tests &mdash; thats that check characteristics like performance and reliability &mdash; to the pipeline.
+In this module, you'll add non-functional tests &mdash; tests that check characteristics like performance and reliability &mdash; to the pipeline.
 
 In [Run functional tests in Azure Pipelines](/learn/modules/run-functional-tests-azure-pipelines?azure-portal=true), you and the Tailspin web team added UI tests, a form of functional testing, to the pipeline. Functional tests verify the functionality, or behavior, of software. In other words, functional tests verify that each function of the software does what it should.
 
-But what about the non-functional aspects of an application, such as performance and reliability? Once your service is operational and deployed to an environment, how can you determine the performance of your application under realistic and heavy loads? Does your application expose any possible loopholes or weaknesses which might cause an information breach?
+But what about the non-functional aspects of an application, such as performance and reliability? Once your service is operational and deployed to an environment, how can you determine the performance of your application under both realistic and heavy loads? Does your application expose any possible loopholes or weaknesses that might cause an information breach?
 
 In this module, you'll explore the types of non-functional tests you can run and run load tests in your pipeline with Apache JMeter.
 

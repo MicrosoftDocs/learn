@@ -36,7 +36,7 @@ To clean up your resource group:
 
 Here, you'll move the work item you assigned to yourself earlier in this module, **Create a multi-stage pipeline**, to the **Done** column.
 
-In practice, the definition of "Done" often means working software in the hands of your users. For learning purposes, here you'll mark this work as complete because the goal for the Tailspin team is to define a complete multi-stage pipeline that they can use to deliver new features.
+In practice, the definition of "Done" often means putting working software into the hands of your users. For learning purposes, here you'll mark this work as complete because the goal for the Tailspin team is to define a complete multi-stage pipeline that they can use to deliver new features.
 
 At the end of each sprint, or work iteration, you and your team might hold a retrospective meeting, where you share the work you completed, what went well in the sprint, and what could be improved.
 

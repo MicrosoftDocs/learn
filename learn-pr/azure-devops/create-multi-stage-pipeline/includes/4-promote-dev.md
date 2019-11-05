@@ -1,4 +1,4 @@
-The team has a plan and is ready to begin implementing their release pipeline. You have an Azure DevOps project set up and Azure App Service instances that are ready to receive build artifacts.
+The team has a plan and is ready to begin implementing their release pipeline. You have your Azure DevOps project set up and Azure App Service instances that are ready to receive build artifacts.
 
 At this point, remember that the team's pipeline has only two stages. The first stage produces the build artifact and the second stage deploys the _Space Game_ web application to App Service. Here, you follow along with Andy and Mara as they modify the pipeline to deploy to the App Service environment that corresponds to the _Dev_ stage.
 

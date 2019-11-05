@@ -12,7 +12,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. In the top left of the Azure portal, select **Create a resource**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
 1. In the selection panel that appears, select **Storage**.
 

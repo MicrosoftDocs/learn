@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.manage-iot-central-apps-with-rest-api.authorize-api
+title: Create an IoT Central application and generate an API token
+metadata:
+  title: Create an IoT Central application and generate an API token
+  description: Create an IoT Central application and generate an API token
+  ms.date: 11/5/2019
+  author: dominicbetts
+  ms.author: dobetts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-authorize-api.md)]
+quiz:
+  title: "Authorize with IoT Central"
+  questions:
+  - content: "Is an IoT Central API token associated with a specific user?"
+    choices:
+    - content: "No"
+      isCorrect: true
+      explanation: "An API token is issued by an IoT Central application and grants the caller access based on a role."
+    - content: "Yes"
+      isCorrect: false
+      explanation: "An API token is issued by an IoT Central application and grants the caller access based on a role."
+    - content: "It depends on how it was generated"
+      isCorrect: false
+      explanation: "However the API token is generated, it is never associated with a specific user."
+  - content: "How do you generate the first API token?"
+    choices:
+    - content: "In the Azure portal"
+      isCorrect: false
+      explanation: "You can't generate IoT Central API tokens in the Azure portal."
+    - content: "In the IoT Central application"
+      isCorrect: true
+      explanation: "Correct. You can generate a token in the Administration section of the web UI."
+    - content: "Using the REST API"
+      isCorrect: false
+      explanation: "No. You need an API token to use the REST API, so you must generate the first token in the web UI, or use a bearer token."

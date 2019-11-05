@@ -82,4 +82,4 @@ When the enrollment process is successful, the results returned from the `Get Pr
 }
 ```
 
-With a speaker verification or identification profile in place, you can now use Azure Cognitive Services to recognize that speaker.
+With a speaker verification or identification profile in place, you can now use Azure Cognitive Services to recognize that speaker. To make testing of this feature easier, ensure you follow the instructions to create the Cognitive Services account and then, using the service key, visit the [Speaker Recognition API page](https://westus.dev.cognitive.microsoft.com/docs/services/563309b6778daf02acc0a508/operations/5645c3271984551c84ec6797) for further information and then select the Open API Testing Console button on that page when you are ready to upload your own audio sample and test the identification features.  The API testing console helps you test without requiring a complete end-to-end application.

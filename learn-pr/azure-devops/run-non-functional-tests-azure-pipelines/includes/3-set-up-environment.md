@@ -26,7 +26,7 @@ The modules in this learning path form a progression, where you follow the Tails
 
 ### Run the template
 
-1. Run a template that sets up everything for you in your Azure DevOps organization.
+Run a template that sets up everything for you in your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=run-non-functional-tests&azure-portal=true)
@@ -175,7 +175,7 @@ Here, you create the App Service instances for the three stages you'll deploy to
 
     For learning purposes, here you apply the same App Service plan, **B1 Basic**, to each App Service instance. In practice, you would assign a plan that matches your expected workload.
 
-1. Run the following `az webapp list` command to list the hostname and state of each App Service instance.
+1. Run the following `az webapp list` command to list the host name and state of each App Service instance.
 
     ```azurecli
     az webapp list \
@@ -184,7 +184,7 @@ Here, you create the App Service instances for the three stages you'll deploy to
       --output table
     ```
 
-    Note the hostname for each running service. You'll need these hostnames later when you verify your work. Here's an example:
+    Note the host name for each running service. You'll need these host names later when you verify your work. Here's an example:
 
     ```output
     HostName                                                 State
@@ -229,7 +229,7 @@ To add the variables:
     Be sure to replace each example value with the App Service instance that corresponds to your environment.
 
     > [!IMPORTANT]
-    > Make sure you set the name of the App Service instance, and not its hostname. In this example, you would enter **tailspin-space-game-web-dev-1234** and not **tailspin-space-game-web-dev-1234.azurewebsites.net**.
+    > Make sure you set the name of the App Service instance, and not its host name. In this example, you would enter **tailspin-space-game-web-dev-1234** and not **tailspin-space-game-web-dev-1234.azurewebsites.net**.
 
 1. Select **Save** near the top of the page to save your variable to the pipeline.
 

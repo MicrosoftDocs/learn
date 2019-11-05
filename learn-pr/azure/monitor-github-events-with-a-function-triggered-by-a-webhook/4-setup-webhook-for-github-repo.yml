@@ -4,11 +4,10 @@ metadata:
   title: Set up a webhook for a GitHub repository
   description: Set up a webhook for a GitHub repository
   ms.date: 04/30/2019
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Set up a webhook for a GitHub repository
 durationInMinutes: 4
 content: |

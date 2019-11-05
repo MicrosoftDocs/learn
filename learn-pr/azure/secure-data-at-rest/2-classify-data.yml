@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-data-at-rest.2-classify-data
+title: Classify your data and protect confidential information
+metadata:
+  title: Classify your data and protect confidential information
+  description: Classify your data and protect confidential information.
+  ms.date: 10/29/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-classify-data.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which of the following items would be classified with a Public (Low) level classification?
+    choices:
+    - content: Account emails
+      isCorrect: false
+      explanation: Account emails are important and contain customer information and shouldn't be classified as Public.
+    - content: Credentials
+      isCorrect: false
+      explanation: Credentials let users access resources and applications securely and shouldn't be classified as Public.
+    - content: Press releases
+      isCorrect: true
+      explanation:  Press releases are deliberately sent out to the public to inform them and should be classified as Public.
+  - content: Your organization noticed customer financial data was almost lost because of a software issue in a server. Thankfully, because of the potential impact of this data on the organization, copies of this information were kept safe and secure in other locations. How was this data classified?
+    choices:
+    - content: Internal use only (medium)
+      isCorrect: false
+      explanation: This data is highly confidential, and doesn't belong to the organization. Even within the organization, customer financial information isn't circulated. Only a few authorized parts of the organization have access to this information.
+    - content: Public (low)
+      isCorrect: false
+      explanation: This data is highly confidential, and should never be considered Public. There would be serious problems if this data was exposed or lost.
+    - content: Confidential (high)
+      isCorrect: true
+      explanation: This data is highly confidential. There would be serious problems if this data was exposed or lost.
+

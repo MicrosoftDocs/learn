@@ -44,8 +44,8 @@ In this exercise, we will enable the registry admin account and use it to deploy
         --registry-login-server $ACR_NAME.azurecr.io \
         --ip-address Public \
         --location eastus \
-        --registry-username <username> \
-        --registry-password <password>
+        --registry-username [username] \
+        --registry-password [password]
     ```
 
 1. Get the IP address of the Azure container instance using the following command.

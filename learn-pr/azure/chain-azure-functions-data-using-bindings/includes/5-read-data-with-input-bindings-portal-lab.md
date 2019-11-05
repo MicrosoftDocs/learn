@@ -130,6 +130,8 @@ You now have a few entries in your [!INCLUDE [cosmos-coll-name](./cosmos-coll-na
 
 ## Create your function
 
+::: zone pivot="javascript"
+
 1. Navigate to the function app that you created in the preceding unit.
 
 1. Select the **Add** (**+**) button next to **Functions** to start the function creation process. 
@@ -146,6 +148,29 @@ You now have a few entries in your [!INCLUDE [cosmos-coll-name](./cosmos-coll-na
 
 1. Select **Create** to create your function.
     This action opens the *index.js* file in the code editor and displays a default implementation of the HTTP-triggered function.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. Navigate to the function app that you created in the preceding unit.
+
+1. Select the **Add** (**+**) button next to **Functions** to start the function creation process. 
+   The page displays the complete set of supported triggers.
+
+1. Select **HTTP trigger**
+
+1. Fill out the **New Function** dialog that appears to the right using the following values.
+
+    | Field | Value |
+    |----------|--------|
+    | Name     | [!INCLUDE [func-name-find](./func-name-find.md)] |
+    | Authorization level | **Function** |
+
+1. Select **Create** to create your function.
+    This action opens the *run.ps1* file in the code editor and displays a default implementation of the HTTP-triggered function.
+
+::: zone-end
 
 ### Verify the function
 
@@ -204,11 +229,44 @@ Now that you have your binding defined, it's time to use it in your function.
 
 ## Update function implementation
 
+::: zone pivot="javascript"
+
 1. Select your function, [!INCLUDE [func-name-find](./func-name-find.md)], to open *index.js* in the code editor. You've added an input binding to read from your database, so update the logic to use this binding.
 
 2. Replace all code in *index.js* with the code from the following snippet and hit **Save**.
 
    [!code-javascript[](../code/find-bookmark-single.js)]
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. Select your function, [!INCLUDE [func-name-find](./func-name-find.md)], to open *run.ps1* in the code editor. You've added an input binding to read from your database, so update the logic to use this binding.
+
+2. Replace all code in *run.ps1* with the code from the following snippet and hit **Save**.
+
+   ```powershell
+    using namespace System.Net
+
+    param($Request, $bookmark, $TriggerMetadata)
+
+    if ($bookmark) {
+        $status = [HttpStatusCode]::OK
+        $body = @{ url = $bookmark.url }
+    }
+    else {
+        $status = [HttpStatusCode]::NotFound
+        $body = "No bookmarks found"
+    }
+
+    Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
+        StatusCode = $status
+        Body = $body
+        ContentType = "application/json"
+    })
+    ```
+
+::: zone-end
 
 An incoming HTTP request triggers the function, and an `id` query parameter is passed to the Azure Cosmos DB input binding. If the database finds a document that matches this ID, then the `bookmark` parameter will be set to the located document. In that case, we construct a response that contains the URL value found in the bookmarked document. If no document is found matching this key, we would respond with a payload and status code that tells the user the bad news.
 

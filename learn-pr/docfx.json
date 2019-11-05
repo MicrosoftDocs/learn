@@ -111,6 +111,16 @@
                 "dest": "modules"
             },
             {
+                "src": "iot",
+                "files": [
+                    "**/*.yml"
+                ],
+                "exclude": [
+                    "**/includes/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "ai-business",
                 "files": [
                     "**/*.yml",
@@ -322,6 +332,25 @@
                     "sv-se"
                 ],
                 "student-evangelism/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
+                "iot/**/*.yml": [
                     "de-de",
                     "es-es",
                     "fr-fr",

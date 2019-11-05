@@ -6,7 +6,7 @@ Serverless compute can be thought of as a function as a service (FaaS), or a mic
 
 ## What is Azure Functions?
 
-Azure Functions is a serverless application platform. It allows developers to host business logic that can be executed without provisioning infrastructure. Functions provides intrinsic scalability and you are charged only for the resources used. You can write your function code in the language of your choice, including C#, F#, JavaScript and Python. Support for NuGet and NPM is also included, so you can use popular libraries in your business logic.
+Azure Functions is a serverless application platform. It allows developers to host business logic that can be executed without provisioning infrastructure. Functions provides intrinsic scalability and you are charged only for the resources used. You can write your function code in the language of your choice, including C#, F#, JavaScript, Python, and PowerShell Core. Support for package managers like NuGet and NPM is also included, so you can use popular libraries in your business logic.
 
 ## Benefits of a serverless compute solution
 

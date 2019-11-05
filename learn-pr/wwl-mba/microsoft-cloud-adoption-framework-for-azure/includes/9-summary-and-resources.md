@@ -49,7 +49,7 @@ Use these resources to discover more.
 
 - [Total Cost of Ownership (TCO) Calculator](https://www.tco.microsoft.com/)
 
-- [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/)
+- [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/)
 
 - [Azure Cost Management](https://azure.microsoft.com/services/cost-management/)
 

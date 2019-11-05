@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-data-at-rest.4-secure-azure-sql-cosmos-db-data
+title: Secure data at rest in Azure SQL and Cosmos DB
+metadata:
+  title: Secure data at rest in Azure SQL and Cosmos DB
+  description: Secure data at rest in Azure SQL and Cosmos DB
+  ms.date: 10/29/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-secure-azure-sql-cosmos-db-data.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: You've created a new Azure SQL DB. How would you enable encryption at rest for your SQL DB?
+    choices: 
+    - content: Go to the portal, find the SQL DB transparent data encryption setting, and turn it on.
+      isCorrect: false
+      explanation: While this would help you enable TDE, you don't need to do this, because you're dealing with a newly created SQL DB. Only older SQL DBs need you to enable TDE.
+    - content: Use PowerShell to work with the SQL DB, and use it to enable transparent data encryption.
+      isCorrect: false
+      explanation: While this would help you enable TDE, you don't need to do this because you're dealing with a newly created SQL DB. Only older SQL DBs need you to enable TDE.
+    - content: The SQL DB already has encryption enabled – there's nothing to be done.
+      isCorrect: true
+      explanation: Newly created SQL DBs automatically have TDE enabled.
+  - content: Keys are used to encrypt your Cosmos DB data. What must you do with these keys to protect the data?
+    choices:
+    - content: You must copy these keys. The keys can then always be used again to protect the data.
+      isCorrect: false
+      explanation: You don't access the keys yourself. Keys are managed for you automatically in Azure. 
+    - content: You don't have to do anything. The keys are rotated automatically to protect your data.
+      isCorrect: true
+      explanation: Cosmos DB automatically rotates the keys in the background to protect your data.
+    - content: You must rotate the keys. The keys need to be changed periodically to protect the data. 
+      isCorrect: false
+      explanation: You don't have to do anything. The keys are rotated automatically for you. 
