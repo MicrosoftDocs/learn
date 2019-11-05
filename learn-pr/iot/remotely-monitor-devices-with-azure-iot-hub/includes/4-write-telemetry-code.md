@@ -6,30 +6,30 @@ At the end of this unit, you will be sending and receiving telemetry.
 
 1. Open Visual Studio Code. From the **Terminal** menu, open a **New Terminal**.
 
-1. In the opened terminal, create an empty folder where you will develop your code, called "CheeseCave", by entering `mkdir CheeseCave`. Then, navigate to that folder with `cd CheeseCave`.
+1. In the opened terminal, create an empty folder where you will develop your code, called "cheesecave", by entering `mkdir cheesecave`. Then, navigate to that folder with `cd cheesecave`.
 
-1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Cheese Cave device app`. Save the file to the "CheeseCave" folder (locating this folder might involve a bit of navigation), with the name "app.js". By using the .js file extension, Visual Studio Code interprets this file as JavaScript and evaluates the contents with the JavaScript language service.
+1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Cheese Cave device app`. Save the file to the "cheesecave" folder (locating this folder might involve a bit of navigation), with the name "app.js". By using the .js file extension, Visual Studio Code interprets this file as JavaScript and evaluates the contents with the JavaScript language service.
 
-1. Back in the terminal, enter **npm install azure-iot-device**, then **npm install azure-iot-device-mqtt**, and then **npm install chalk**.
+1. Back in the terminal, install the required libraries. Enter **npm install azure-iot-device**, then **npm install azure-iot-device-mqtt**, and then **npm install chalk**.
 
-1. After you have entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the CheeseCave folder is the current folder of the terminal, when you run the app.
+1. After you have entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the cheesecave folder is the current folder of the terminal, when you run the app.
 
 ::: zone-end
 ::: zone pivot="vscode-csharp"
 
 1. To use C# in Visual Studio Code, ensure both [.NET Core](https://dotnet.microsoft.com/download), and the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) are installed.
 
-1. Open a terminal in Visual Studio Code, and create a folder called "CheeseCaveDevice" (enter `mkdir CheeseCaveDevice`). Navigate to the CheeseCaveDevice folder.
+1. Open a terminal in Visual Studio Code, and create a folder called "cheesecavedevice" (enter `mkdir cheesecavedevice`). Navigate to the cheesecavedevice folder.
 
 1. Enter the following command in the terminal: `dotnet new console`. This command creates a Program.cs file in your folder, along with a project file.
 
 1. Enter `dotnet restore` in the terminal. This command gives your app access to the required .NET packages.
 
-1. In the terminal, enter **dotnet add package Microsoft.Azure.Devices.Client**, and **dotnet add package Microsoft.Azure.Devices.Shared**, then **dotnet add package Newtonsoft.Json**.
+1. In the terminal, install the required libraries. Enter **dotnet add package Microsoft.Azure.Devices.Client**, and **dotnet add package Microsoft.Azure.Devices.Shared**, then **dotnet add package Newtonsoft.Json**.
 
 1. From the **File** menu, open up the Program.cs file, and delete the default contents.
 
-1. When the code has been developed in this unit, and the following units, run the code with the command `dotnet run`. This command will run the Program.cs file in the current folder, so ensure you are in the correct folder.
+1. After you have entered the code below into the Program.cs file, you can run the app with the command `dotnet run`. This command will run the Program.cs file in the current folder, so ensure you are in the cheesecavedevice folder.
 
 ::: zone-end
 ::: zone pivot="vs-node"
@@ -55,6 +55,8 @@ At the end of this unit, you will be sending and receiving telemetry.
 
 1. Under **Tools/NuGet Package Manager** select **Manage NuGet Packages for Solution...**. Install **Microsoft.Azure.Devices.Client**, **Microsoft.Azure.Devices.Shared**, and **Newtonsoft.Json**.
 
+1. Add all the code that follows to the Program.cs file.
+
 ::: zone-end
 
 > [!NOTE]
@@ -62,7 +64,7 @@ At the end of this unit, you will be sending and receiving telemetry.
 
 ### Add code to send telemetry
 
-This section adds code to send telemetry from a simulated device. The device sends temperature (in degrees centigrade) and humidity (in percentages) regardless of whether any back-end app is listening or not.
+This section adds code to send telemetry from a simulated device. The device sends temperature (in degrees centigrade) and humidity (in percentages), regardless of whether any back-end app is listening or not.
 
 ::: zone pivot="vs-node,vscode-node"
 
@@ -213,18 +215,18 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 
 1. Open Visual Studio Code. From the **Terminal** menu, open a **New Terminal**.
 
-1. In the opened terminal, create an empty folder where you will develop your code, called "CheeseCaveOperator", by entering `mkdir CheeseCaveOperator`. Then, navigate to that folder with `cd CheeseCaveOperator`.
+1. In the opened terminal, create an empty folder where you will develop your code, called "cheesecaveservice", by entering `mkdir cheesecaveservice`. Then, navigate to that folder with `cd cheesecaveservice`.
 
-1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Cheese Cave Operator back-end app`. Save the file to the "CheeseCaveOperator" folder (locating this folder might involve a bit of navigation), with the name "app.js".
+1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Cheese Cave back-end service app`. Save the file to the "cheesecaveservice" folder (locating this folder might involve a bit of navigation), with the name "app.js".
 
 1. Back in the terminal, enter **npm install &#64;azure/event-hubs**. When this package has installed, enter **npm install azure-iothub**. Then enter **npm install chalk**.
 
-1. After you have entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the "CheeseCaveOperator" folder is the current folder of the terminal, when you run the app.
+1. After you have entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the "cheesecaveservice" folder is the current folder of the terminal.
 
 ::: zone-end
 ::: zone pivot="vscode-csharp"
 
-1. Open a terminal in Visual Studio Code, and create a folder called "CheeseCaveOperator" (enter `mkdir CheeseCaveOperator`). Navigate to the CheeseCaveOperator folder.
+1. Open a terminal in Visual Studio Code, and create a folder called "cheesecaveoperator" (enter `mkdir cheesecaveoperator`). Navigate to the cheesecaveoperator folder.
 
 1. Enter the following command in the terminal: `dotnet new console`. This command creates a Program.cs file in your folder, along with a project file.
 
@@ -234,7 +236,7 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 
 1. From the **File** menu, open up the Program.cs file, and delete the default contents.
 
-1. When the code has been developed in this unit, and the following units, run the code with the command `dotnet run`. This command will run the Program.cs file in the current folder, so ensure you are in the correct folder.
+1. After you have entered the code below into the Program.cs file, run the code with the command `dotnet run`. This command will run the Program.cs file in the current folder, so ensure you are in the correct folder.
 
 ::: zone-end
 ::: zone pivot="vs-node"
@@ -249,7 +251,15 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 
 ::: zone-end
 ::: zone pivot="vs-csharp"
-TBD VS CSHARP
+
+1. Open Visual Studio, and create a new **Visual C#/Windows Desktop** project. Select **Console App (.NET Framework)**.
+
+1. Give the project a friendly name, such as "CheeseCaveOperator".
+
+1. Under **Tools/NuGet Package Manager** select **Manage NuGet Packages for Solution...**. Install **Microsoft.Azure.Devices**, **Microsoft.Azure.EventHubs**, and **Newtonsoft.Json**.
+
+1. Add all the code that follows to the Program.cs file.
+
 ::: zone-end
 
 ### Add code to receive telemetry
@@ -347,7 +357,7 @@ TBD CSHARP
 
 This test is important, checking whether your back-end app is picking up the telemetry being sent out by your simulated device. Remember that your device app is still running, and sending telemetry.
 
-1. Using Visual Studio, select **Debug/Start Without Debugging**. In Visual Studio Code, enter `node app.js` from a terminal opened to the "CheeseCaveOperator" folder.
+1. Run the service app.
 1. A second console window should open up, and immediately respond if it successfully connects to IoT Hub. If not, carefully check your IoT Hub service connection string, noting that this string should be the _service_ connection string, and not any other.
 
     ![Screenshot showing the temperature and humidity telemetry being received](../media/cheesecave-telemetry-received.png)
