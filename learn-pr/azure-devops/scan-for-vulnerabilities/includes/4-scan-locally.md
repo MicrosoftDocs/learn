@@ -42,6 +42,8 @@ Here you get a copy of the _Space Game_ web project and work from a branch.
 
     As you did in previous modules, the format of these commands enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you push this branch up to your GitHub repository, known as `origin`.
 
+1. As an optional step, open *azure-pipelines.yml* from Visual Studio code and familiarize yourself with the initial configuration.
+
     The configuration resembles the one you created in the [Run quality tests in your build pipeline](/learn/modules/run-quality-tests-build-pipeline?azure-portal=true) module. It builds the application's Release configuration, runs unit tests, and produces a code coverage report.
 
 ## Scan locally
