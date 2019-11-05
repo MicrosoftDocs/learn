@@ -40,7 +40,7 @@ Here you'll create a team for the project.
 
 ### Add team members
 
-Now's a good time to add members to your team. Although not required, if you'd like to add a coworker to your Azure DevOps organization, here's now:
+Now's a good time to add members to your team. Although not required, if you'd like to add a coworker to your Azure DevOps organization, here's how:
 
 1. Under **Members**, select **+ Add**.
 1. Enter the email address of the user you'd like to add. Then select **Save changes**.
