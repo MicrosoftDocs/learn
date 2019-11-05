@@ -15,7 +15,7 @@ In the *Tailspin.SpaceGame.Database* project, a change has been made to the Prof
 
     ```bash
     git fetch upstream schema-changes
-    git checkout schema-changes
+    git checkout -b schema-changes upstream/schema-changes
     ```
 
 1. Open the `dbo` folder in the database project. This will have the scripts for each of the tables. Open the **Profiles.sql** and see that the new column `favoriteMap` is there.

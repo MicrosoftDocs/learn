@@ -13,10 +13,10 @@ This branch serves as your _release_ branch. It contains the _Space Game_ projec
 
     ```bash
     git fetch upstream release
-    git checkout release
+    git checkout -b release upstream/release
     ```
 
-    The format of this command enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
+    The format of these commands enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
 
 1. As an optional step, open *azure-pipelines.yml* from Visual Studio Code and familiarize yourself with the initial configuration.
 

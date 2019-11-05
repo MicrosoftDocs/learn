@@ -64,6 +64,8 @@ After she runs the script, Mara realizes that it's incomplete. For example, it d
 
 ## What are Azure Pipelines tasks?
 
+In Azure Pipelines, a _task_ is a packaged script or procedure that's been abstracted with a set of inputs.
+
 An Azure Pipelines task abstracts away the underlying details. This abstraction makes it easier to run common build functions, like downloading build tools or packages your application depends on or running Visual Studio or Xcode to build your project.
 
 Here's an example that uses the `DotNetCoreCLI@2` task to build a C# project that targets .NET Core:

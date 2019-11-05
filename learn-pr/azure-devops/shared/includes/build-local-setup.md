@@ -3,7 +3,7 @@
 Here, you load the _Space Game_ project in Visual Studio Code, configure Git, clone your repository locally, and set the upstream remote so that you can download starter code.
 
 > [!NOTE]
-> If you're already set up with the [mslearn-tailspin-spacegame-web-deploy](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy?azure-portal=true) project locally, you can move to the next section.
+> If you're already set up with the [mslearn-tailspin-spacegame-web](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web?azure-portal=true) project locally, you can move to the next section.
 
 ### Open the integrated terminal
 
@@ -44,10 +44,6 @@ At a minimum, you'll need to complete the following steps. Run these commands fr
 
 ### Set up your project in Visual Studio Code
 
-In the [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true) learning path, you forked and then cloned a Git repository that contains the source code for the _Space Game_ website. Your fork was connected to your Azure DevOps projects so that the build runs when you push changes to GitHub.
-
-In this learning path, we switch to a different Git repository, [mslearn-tailspin-spacegame-web-deploy](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy?azure-portal=true). When you ran the template to set up your Azure DevOps project, the process forked the repository automatically for you.
-
 In this part, you clone your fork locally so that you can make changes and build out your pipeline configuration.
 
 ### Clone your fork locally
@@ -58,7 +54,7 @@ A clone, just a like a fork, is a copy of a repository. When you clone a reposit
 
 To clone the *Space Game* web project to your computer:
 
-1. Go to your fork of the *Space Game* web project (**mslearn-tailspin-spacegame-web-deploy**) on [GitHub](https://github.com?azure-portal=true).
+1. Go to your fork of the *Space Game* web project (**mslearn-tailspin-spacegame-web**) on [GitHub](https://github.com?azure-portal=true).
 1. Select **Clone or download**. Then select the button next to the URL that's shown to copy the URL to your clipboard:
 
     ![The Clone or download button on GitHub](../../shared/media/github-clone-button.png)
@@ -72,13 +68,13 @@ To clone the *Space Game* web project to your computer:
 1. Run the `git clone` command. Replace the URL that's shown here with the contents of your clipboard:
 
     ```bash
-    git clone https://github.com/your-name/mslearn-tailspin-spacegame-web-deploy.git
+    git clone https://github.com/your-name/mslearn-tailspin-spacegame-web.git
     ```
 
-1. Move to the `mslearn-tailspin-spacegame-web-deploy` directory. This is the root directory of your repository.
+1. Move to the `mslearn-tailspin-spacegame-web` directory. This is the root directory of your repository.
 
     ```bash
-    cd mslearn-tailspin-spacegame-web-deploy
+    cd mslearn-tailspin-spacegame-web
     ```
 
 ### Set the upstream remote
@@ -94,8 +90,8 @@ git remote -v
 You see that you have both fetch (download) and push (upload) access to your repository:
 
 ```output
-origin  https://github.com/username/mslearn-tailspin-spacegame-web-deploy.git (fetch)
-origin  https://github.com/username/mslearn-tailspin-spacegame-web-deploy.git (push)
+origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (fetch)
+origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (push)
 ```
 
 *Origin* specifies your repository on GitHub. When you fork code from another repository, it's common to name the original remote (the one you forked from) as *upstream*.
@@ -103,7 +99,7 @@ origin  https://github.com/username/mslearn-tailspin-spacegame-web-deploy.git (p
 Run this `git remote add` command to create a remote named *upstream* that points to the Microsoft repository:
 
 ```bash
-git remote add upstream https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy.git
+git remote add upstream https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.git
 ```
 
 Run `git remote` a second time to see the changes:
@@ -115,9 +111,9 @@ git remote -v
 You see that you still have both fetch (download) and push (upload) access to your repository. You also now have fetch access from the Microsoft repository:
 
 ```output
-origin  https://github.com/username/mslearn-tailspin-spacegame-web-deploy.git (fetch)
-origin  https://github.com/username/mslearn-tailspin-spacegame-web-deploy.git (push)
-upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy.git (fetch)
+origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (fetch)
+origin  https://github.com/username/mslearn-tailspin-spacegame-web.git (push)
+upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.git (fetch)
 ```
 
 ### Open the project in the file explorer
