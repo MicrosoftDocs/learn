@@ -1,4 +1,4 @@
-In this unit, we will add code to the device app for the direct method, and then add code to the back-end service app to send the instruction to invoke the method.
+In this unit, we will add code to the device app for a direct method to turn on the fan. Next, we add code to the back-end service app to send the instruction to invoke this method.
 
 ## Add code to define a direct method in the device app
 
@@ -133,4 +133,4 @@ To test the method, start the apps in the correct order.
 
     ![Screenshot showing the output when the direct method is run by the device app](../media/cheesecave-direct-method-received.png)
 
-You are now successfully monitoring and controlling a remote device. However, although we have turned on the fan, which will slowly move the environment in the cave to our initial desired settings, we might like to be able to remotely specify those desired settings. We could specify desired settings with a direct method (which is a valid approach), or we could use another feature of IoT Hub called _device twins_. Let's look into the technology of device twins.
+You are now successfully monitoring and controlling a remote device. We have turned on the fan, which will slowly move the environment in the cave to our initial desired settings. However, we might like to remotely specify those desired settings. We could specify desired settings with a direct method (which is a valid approach). Or we could use another feature of IoT Hub, called _device twins_. Let's look into the technology of device twins.

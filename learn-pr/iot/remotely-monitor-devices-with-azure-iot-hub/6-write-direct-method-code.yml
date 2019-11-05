@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-node
 title: Exercise - Write code to invoke a direct method
-durationInMinutes: 15
+durationInMinutes: 10
 content: |
   [!include[](includes/6-write-direct-method-code.md)]

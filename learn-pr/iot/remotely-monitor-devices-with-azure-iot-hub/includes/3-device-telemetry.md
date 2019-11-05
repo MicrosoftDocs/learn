@@ -1,4 +1,4 @@
-Telemetry is the output from sensors. There are many different types of sensors. The most common in the manufacturing, and commercial, applications that Azure IoT Hub targets are acceleration, humidity, location, pressure, temperature, and velocity.
+Telemetry is the output from sensors. There are many different types of sensors, though acceleration, humidity, location, pressure, temperature, and velocity are the most common.
 
 The frequency of telemetry output is an important factor. A temperature sensor in a refrigeration unit may only have to report every minute, or less. An acceleration sensor on an aircraft may have to report every second.
 
@@ -6,7 +6,7 @@ An IoT device may contain one or more sensors, and have some computational power
 
 ## Cheese cave device
 
-In this module, we are assuming the IoT cheese cave monitoring device has temperature and humidity sensors. The device has a fan capable of both cooling or heating, and humidifying or de-humidifying. The device sends current temperature and humidity values to the IoT Hub, every few seconds. This rapid frequency is unrealistic for a cheese cave (maybe every 15 minutes, or less, would be granular enough), except during code development when we want rapid activity!
+In this module, we assume the IoT cheese cave monitoring device has temperature and humidity sensors. The device has a fan capable of both cooling or heating, and humidifying or de-humidifying. Every few seconds, the device sends current temperature and humidity values to the IoT Hub. This rapid frequency is unrealistic for a cheese cave (maybe every 15 minutes, or less, would be granular enough), except during code development when we want rapid activity!
 
 We assume, in the next unit, that the fan can be in one of three states: on, off, and failed. The fan is initialized to the _off_ state. In a later unit, the fan is turned on by use of a _direct method_.
 
