@@ -20,10 +20,10 @@ Here you'll get the starter code for the _Space Game_ web project from Microsoft
 
     ```bash
     git fetch upstream scan-open-source
-    git checkout scan-open-source
+    git checkout -b scan-open-source upstream/scan-open-source
     ```
 
-    As in previous modules, the format of this command enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
+    As in previous modules, the format of these commands enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
 
 1. As an optional step, open *azure-pipelines.yml*. Then inspect the initial configuration.
 
@@ -59,7 +59,7 @@ Here you'll use the built-in task `WhiteSource Bolt@19` that's provided by the W
 
 1. From Visual Studio Code, open *azure-pipelines.yml* and replace its contents with the following:
 
-    [!code-yml[](code/4-azure-pipelines.yml?highlight=54-55)]
+    [!code-yml[](code/4-azure-pipelines.yml?highlight=57-58)]
 
     The `WhiteSource Bolt@19` task, which runs before the `PublishBuildArtifacts@1` task, is highlighted. It analyzes your open-source dependencies for known vulnerabilities, as well as licenses and prepares reports that you can review directly from Azure Pipelines.
 
@@ -75,21 +75,23 @@ Here you'll push your changes to GitHub and see the pipeline run. Recall that yo
     git push origin scan-open-source
     ```
 
-1. Watch the build.
+1. From Azure Pipelines, watch the build.
 
     You see the scan task complete successfully.
 
     ![WhiteSource scan completed in pipeline](../media/4-scan-success.png)
 
-1. Select the completed task, and then scroll to the bottom of the report details for that task.
+1. Select the completed **Run WhiteSource Bolt** task, and then scroll to the bottom of the report details for that task.
 
     ![WhiteSource scan completed details](../media/4-scan-task-detail.png)
 
-    You'll see that the data is being uploaded for the scan report.
+    You see that the data is being uploaded for the scan report.
 
 1. When the build completes, navigate to the **WhiteSource Bolt Build Report** tab.
 
     ![WhiteSource report screen](../media/4-scan-report.png)
+
+    This image is for illustration. You may see different results based on the current recommendations.
 
 ## Analyze the results
 
