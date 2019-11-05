@@ -33,10 +33,10 @@ You see the directory and file tree in the file explorer.
 
     ```bash
     git fetch upstream models-package
-    git checkout models-package
+    git checkout -b models-package upstream/models-package
     ```
 
-    The format of this command enables you to get starter code from the Microsoft GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
+    The format of these commands enables you to get starter code from the Microsoft GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
 1. As an optional step, verify that the **Models** directory no longer exists in the file explorer.
 
     Instead, you see **Controllers**, **Views**, and other directories.

@@ -118,10 +118,8 @@ To clone the *Space Game* web project to your computer:
 1. Run the `git clone` command. Replace the URL that's shown here with the contents of your clipboard:
 
     ```bash
-    git clone --branch master --single-branch https://github.com/your-name/mslearn-tailspin-spacegame-web-deploy.git
+    git clone https://github.com/your-name/mslearn-tailspin-spacegame-web-deploy.git
     ```
-
-    You can typically omit the `--branch` and `--single-branch` arguments. We include them here to help you get starter code from the Microsoft repository in later modules.
 
 1. Move to the `mslearn-tailspin-spacegame-web-deploy` directory. This is the root directory of your repository.
 
@@ -209,7 +207,7 @@ Here, you create an initial pipeline configuration that builds the web applicati
 
     ```bash
     git fetch upstream release-pipeline
-    git checkout release-pipeline
+    git checkout -b release-pipeline upstream/release-pipeline
     ```
 
     Recall that `upstream` refers to Microsoft's GitHub repository. Your project's Git configuration understands the `upstream` remote because you set up that relationship when you forked the project from Microsoft's repository and cloned it locally.

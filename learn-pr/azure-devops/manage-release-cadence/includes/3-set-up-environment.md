@@ -289,10 +289,10 @@ This branch contains the _Space Game_ project you worked with in the previous mo
 
     ```bash
     git fetch upstream blue-green
-    git checkout blue-green
+    git checkout -b blue-green upstream/blue-green
     ```
 
-    The format of this command enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
+    The format of these commands enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
 
 1. As an optional step, open *azure-pipelines.yml* from Visual Studio Code and familiarize yourself with the initial configuration.
 
