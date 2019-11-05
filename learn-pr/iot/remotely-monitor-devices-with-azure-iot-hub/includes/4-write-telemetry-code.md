@@ -53,7 +53,7 @@ At the end of this unit, you will be sending and receiving telemetry.
 
 1. Give the project a friendly name, such as "CheeseCaveDevice".
 
-1. Under **Tools/NuGet Package Manager** select **Manage NuGet Packages for Solution...**. Install **Microsoft.Azure.Devices.Client**, **Microsoft.Azure.Devices.Shared**, and **Newtonsoft.Json**.
+1. Under **Tools/NuGet Package Manager**, select **Manage NuGet Packages for Solution...**. Install **Microsoft.Azure.Devices.Client**, **Microsoft.Azure.Devices.Shared**, and **Newtonsoft.Json**.
 
 1. Add all the code that follows to the Program.cs file.
 
@@ -183,9 +183,173 @@ function sendMessage() {
 setInterval(sendMessage, intervalInMilliseconds);
 ```
 
+2. Save the app.js file.
+
 ::: zone-end
 ::: zone pivot="vs-csharp,vscode-csharp"
-TBD CSHARP
+
+1. Open the Program.cs file for the device app.
+
+2. Copy and paste the following code.
+
+``` cs
+// Copyright (c) Microsoft. All rights reserved.
+// Licensed under the MIT license. See LICENSE file in the project root for full license information.
+
+// This application uses the Azure IoT Hub device SDK for .NET
+// For samples see: https://github.com/Azure/azure-iot-sdk-csharp/tree/master/iothub/device/samples
+
+using System;
+using Microsoft.Azure.Devices.Client;
+using Microsoft.Azure.Devices.Shared;
+using Newtonsoft.Json;
+using System.Text;
+using System.Threading.Tasks;
+using Newtonsoft.Json.Linq;
+
+namespace simulated_device
+{
+    class SimulatedDevice
+    {
+       // Global constants.
+        const float ambientTemperature = 70;                    // Ambient temperature of a southern cave, in degrees F.
+        const double ambientHumidity = 99;                      // Ambient humidity in relative percentage of air saturation.
+        const double desiredTempLimit = 5;                      // Acceptable range above or below the desired temp, in degrees F.
+        const double desiredHumidityLimit = 10;                 // Acceptable range above or below the desired humidity, in percentages.
+        const int intervalInMilliseconds = 5000;                // Interval at which telemetry is sent to the cloud.
+
+        // Global variables.
+        private static DeviceClient s_deviceClient;
+        private static stateEnum fanState = stateEnum.off;                      // Initial setting of the fan. 
+        private static double desiredTemperature = ambientTemperature - 10;     // Initial desired temperature, in degrees F. 
+        private static double desiredHumidity = ambientHumidity - 20;           // Initial desired humidity in relative percentage of air saturation.
+
+        // Enum for the state of the fan for cooling/heating, and humidifying/de-humidifying.
+        enum stateEnum
+        {
+            off,
+            on,
+            failed
+        }
+
+        // The device connection string to authenticate the device with your IoT hub.
+        private readonly static string s_deviceConnectionString = "<your device connection string>";
+
+        private static void colorMessage(string text, ConsoleColor clr)
+        {
+            Console.ForegroundColor = clr;
+            Console.WriteLine(text);
+            Console.ResetColor();
+        }
+        private static void greenMessage(string text)
+        {
+            colorMessage(text, ConsoleColor.Green);
+        }
+
+        private static void redMessage(string text)
+        {
+            colorMessage(text, ConsoleColor.Red);
+        }
+
+        // Async method to send simulated telemetry
+        private static async void SendDeviceToCloudMessagesAsync()
+        {
+            double currentTemperature = ambientTemperature;         // Initial setting of temperature.
+            double currentHumidity = ambientHumidity;               // Initial setting of humidity.
+
+            Random rand = new Random();
+
+            while (true)
+            {
+                // Simulate telemetry.
+                double deltaTemperature = Math.Sign(desiredTemperature - currentTemperature);
+                double deltaHumidity = Math.Sign(desiredHumidity - currentHumidity);
+
+                if (fanState == stateEnum.on)
+                {
+                    // If the fan is on the temperature and humidity will be nudged towards the desired values most of the time.
+                    currentTemperature += (deltaTemperature * rand.NextDouble()) + rand.NextDouble() - 0.5;
+                    currentHumidity += (deltaHumidity * rand.NextDouble()) + rand.NextDouble() - 0.5;
+
+                    // Randomly fail the fan.
+                    if (rand.NextDouble() < 0.01)
+                    {
+                        fanState = stateEnum.failed;
+                        redMessage("Fan has failed");
+                    }
+                }
+                else
+                {
+                    // If the fan is off, or has failed, the temperature and humidity will creep up until they reaches ambient values, thereafter fluctuate randomly.
+                    if (currentTemperature < ambientTemperature - 1)
+                    {
+                        currentTemperature += rand.NextDouble() / 10;
+                    }
+                    else
+                    {
+                        currentTemperature += rand.NextDouble() - 0.5;
+                    }
+                    if (currentHumidity < ambientHumidity - 1)
+                    {
+                        currentHumidity += rand.NextDouble() / 10;
+                    }
+                    else
+                    {
+                        currentHumidity += rand.NextDouble() - 0.5;
+                    }
+                }
+
+                // Check: humidity can never exceed 100%.
+                currentHumidity = Math.Min(100, currentHumidity);
+
+                // Create JSON message.
+                var telemetryDataPoint = new
+                {
+                    temperature = Math.Round(currentTemperature, 2),
+                    humidity = Math.Round(currentHumidity, 2)
+                };
+                var messageString = JsonConvert.SerializeObject(telemetryDataPoint);
+                var message = new Message(Encoding.ASCII.GetBytes(messageString));
+
+                // Add custom application properties to the message.
+                message.Properties.Add("sensorID", "S1");
+                message.Properties.Add("fanAlert", (fanState == stateEnum.failed) ? "true" : "false");
+
+                // Send temperature or humidity alerts, only if they occur.
+                if ((currentTemperature > desiredTemperature + desiredTempLimit) || (currentTemperature < desiredTemperature - desiredTempLimit))
+                {
+                    message.Properties.Add("temperatureAlert", "true");
+                }
+                if ((currentHumidity > desiredHumidity + desiredHumidityLimit) || (currentHumidity < desiredHumidity - desiredHumidityLimit))
+                {
+                    message.Properties.Add("humidityAlert", "true");
+                }
+
+                Console.WriteLine("Message data: {0}", messageString);
+
+                // Send the telemetry message.
+                await s_deviceClient.SendEventAsync(message);
+                greenMessage("Message sent\n");
+
+                await Task.Delay(intervalInMilliseconds);
+            }
+        }
+        private static void Main(string[] args)
+        {
+            colorMessage("Cheese Cave device app.\n", ConsoleColor.Yellow);
+
+            // Connect to the IoT hub using the MQTT protocol.
+            s_deviceClient = DeviceClient.CreateFromConnectionString(s_deviceConnectionString, TransportType.Mqtt);
+
+            SendDeviceToCloudMessagesAsync();
+            Console.ReadLine();
+        }
+    }
+}
+```
+
+3. Save the Program.cs file.
+
 ::: zone-end
 
   > [!NOTE]
@@ -205,7 +369,6 @@ TBD CSHARP
 
 > [!NOTE]
 > The screenshots in this module are based on the Node.js version of the apps. If you are developing using C#, there will be minor differences in the screen output.
-
 
 ## Create a second app to receive telemetry
 
@@ -256,7 +419,7 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 
 1. Give the project a friendly name, such as "CheeseCaveOperator".
 
-1. Under **Tools/NuGet Package Manager** select **Manage NuGet Packages for Solution...**. Install **Microsoft.Azure.Devices**, **Microsoft.Azure.EventHubs**, and **Newtonsoft.Json**.
+1. Under **Tools/NuGet Package Manager**, select **Manage NuGet Packages for Solution...**. Install **Microsoft.Azure.Devices**, **Microsoft.Azure.EventHubs**, and **Newtonsoft.Json**.
 
 1. Add all the code that follows to the Program.cs file.
 
@@ -341,9 +504,125 @@ EventHubClient.createFromIotHubConnectionString(connectionString).then(function 
 }).catch(printError);
 ```
 
+2. Save the app.js file.
+
 ::: zone-end
 ::: zone pivot="vs-csharp,vscode-csharp"
-TBD CSHARP
+
+1. Open the Program.cs file for the back-end app.
+
+``` cs
+// Copyright (c) Microsoft. All rights reserved.
+// Licensed under the MIT license. See LICENSE file in the project root for full license information.
+
+using System;
+using System.Threading.Tasks;
+using System.Text;
+using System.Collections.Generic;
+using System.Linq;
+
+using Microsoft.Azure.EventHubs;
+using Microsoft.Azure.Devices;
+using Newtonsoft.Json;
+
+namespace cheesecave_operator
+{
+    class ReadDeviceToCloudMessages
+    {
+        // Global variables.
+        // The Event Hub-compatible endpoint.
+        private readonly static string s_eventHubsCompatibleEndpoint = "<your event hub endpoint>";
+
+        // The Event Hub-compatible name.
+        private readonly static string s_eventHubsCompatiblePath = "<your event hub path>";
+        private readonly static string s_iotHubSasKey = "<your event hub Sas key>";
+        private readonly static string s_iotHubSasKeyName = "service";
+        private static EventHubClient s_eventHubClient;
+
+        // Connection string for your IoT Hub
+        private readonly static string s_serviceConnectionString = "<your service connection string>";
+
+        // Asynchronously create a PartitionReceiver for a partition and then start reading any messages sent from the simulated client.
+        private static async Task ReceiveMessagesFromDeviceAsync(string partition)
+        {
+            // Create the receiver using the default consumer group.
+            // For the purposes of this sample, read only messages sent since 
+            // the time the receiver is created. Typically, you don't want to skip any messages.
+            var eventHubReceiver = s_eventHubClient.CreateReceiver("$Default", partition, EventPosition.FromEnqueuedTime(DateTime.Now));
+            Console.WriteLine("Created receiver on partition: " + partition);
+
+            while (true)
+            {
+                // Check for EventData - this methods times out if there is nothing to retrieve.
+                var events = await eventHubReceiver.ReceiveAsync(100);
+
+                // If there is data in the batch, process it.
+                if (events == null) continue;
+
+                foreach (EventData eventData in events)
+                {
+                    string data = Encoding.UTF8.GetString(eventData.Body.Array);
+
+                    greenMessage("Telemetry received: " + data);
+
+                    foreach (var prop in eventData.Properties)
+                    {
+                        if (prop.Value.ToString() == "true")
+                        {
+                            redMessage(prop.Key);
+                        }
+                    }
+                    Console.WriteLine();
+                }
+            }
+        }
+
+        public static void Main(string[] args)
+        {
+            colorMessage("Cheese Cave Operator\n", ConsoleColor.Yellow);
+
+            // Create an EventHubClient instance to connect to the
+            // IoT Hub Event Hubs-compatible endpoint.
+            var connectionString = new EventHubsConnectionStringBuilder(new Uri(s_eventHubsCompatibleEndpoint), s_eventHubsCompatiblePath, s_iotHubSasKeyName, s_iotHubSasKey);
+            s_eventHubClient = EventHubClient.CreateFromConnectionString(connectionString.ToString());
+
+            // Create a PartitionReceiver for each partition on the hub.
+            var runtimeInfo = s_eventHubClient.GetRuntimeInformationAsync().GetAwaiter().GetResult();
+            var d2cPartitions = runtimeInfo.PartitionIds;
+
+            // Create receivers to listen for messages.
+            var tasks = new List<Task>();
+            foreach (string partition in d2cPartitions)
+            {
+                tasks.Add(ReceiveMessagesFromDeviceAsync(partition));
+            }
+
+            // Wait for all the PartitionReceivers to finish.
+            Task.WaitAll(tasks.ToArray());
+        }
+
+        private static void colorMessage(string text, ConsoleColor clr)
+        {
+            Console.ForegroundColor = clr;
+            Console.WriteLine(text);
+            Console.ResetColor();
+        }
+        private static void greenMessage(string text)
+        {
+            colorMessage(text, ConsoleColor.Green);
+        }
+
+        private static void redMessage(string text)
+        {
+            colorMessage(text, ConsoleColor.Red);
+        }
+    }
+}
+
+```
+
+2. Save the Program.cs file.
+
 ::: zone-end
 
 > [!NOTE]

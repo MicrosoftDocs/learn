@@ -7,7 +7,7 @@ We will start this time with the back-end service app.
 ::: zone pivot="node"
 
 1. Open the app.js file for the back-end app.
-1. Add the following code to the end of the file. This code sets the desired temperature of the device to 12 degrees C, humidity to 60 percent, and sets two **tags** (information only available to the IoT Hub). To verify the tags, a call is made to query the device twins based on a SQL search.
+2. Add the following code to the end of the file. This code sets the desired temperature of the device to 12 degrees C, humidity to 60 percent, and sets two **tags** (information only available to the IoT Hub). To verify the tags, a call is made to query the device twins based on a SQL search.
 
 ``` javascript
 // Locate the device twin via the Registry, then update some tags and properties.
@@ -66,10 +66,56 @@ function queryTwins() {
 
 ```
 
+3. Save the app.js file.
+
 ::: zone-end
 ::: zone pivot="csharp"
 
-CSHARP CODE
+1. Open the Program.cs file, for the back-end app.
+
+2. Add the following code, perhaps to the end of the class.
+
+``` cs
+        // Device twins section.
+        private static RegistryManager registryManager;
+
+        private static async Task UpdateTwinProperties()
+        {
+            var twin = await registryManager.GetTwinAsync("CheeseCaveIDC");
+            var patch =
+                @"{
+                    tags: {
+                        customerID: 'Customer1',
+                        cellar: 'Cellar1'
+                    },
+                    properties: {
+                        desired: {
+                            patchId: 'set values',
+                            temperature: '50',
+                            humidity: '85'
+                        }
+                    }
+            }";
+            await registryManager.UpdateTwinAsync(twin.DeviceId, patch, twin.ETag);
+
+            var query = registryManager.CreateQuery(
+              "SELECT * FROM devices WHERE tags.cellar = 'Cellar1'", 100);
+            var twinsInCellar1 = await query.GetNextAsTwinAsync();
+            Console.WriteLine("Devices in Cellar1: {0}",
+              string.Join(", ", twinsInCellar1.Select(t => t.DeviceId)));
+
+        }
+```
+
+3. Now, add the following lines to the **Main** method, before the lines creating a service client.
+
+``` cs
+            // Digital twins:
+            registryManager = RegistryManager.CreateFromConnectionString(s_serviceConnectionString);
+            UpdateTwinProperties().Wait();
+```
+
+4. Save the Program.cs file.
 
 ::: zone-end
 
@@ -146,17 +192,74 @@ client.getTwin(function (err, twin) {
         }
 ```
 
+4. Save the app.js file.
+
 ::: zone-end
 ::: zone pivot="csharp"
 
-CSHARP CODE
+1. Open the Program.cs file for the device app.
+
+2. Add the following method to the class.
+
+``` cs
+        // Device twin reported properties.
+        private static void UpdateTwinProperties()
+        {
+            try
+            {
+                greenMessage("Updating twin properties");
+                greenMessage("Desired humidity: " + desiredHumidity);
+                greenMessage("Desired temperature: " + desiredTemperature);
+
+                // Report the changes back to the IoT Hub.
+                var reportedProperties = new TwinCollection();
+                reportedProperties["humidity"] = desiredHumidity;
+                reportedProperties["temperature"] = desiredTemperature;
+                s_deviceClient.UpdateReportedPropertiesAsync(reportedProperties).Wait();
+            }
+            catch
+            {
+                redMessage("Failed to update device twin reported properties");
+            }
+        }
+```
+
+3. Add the following line to the global variables section.
+
+``` cs
+        private static Twin deviceTwin;
+```
+
+4. Add the following code to the **Main** method, before the **SendDeviceToCloudMessagesAsync** call.
+
+``` cs
+            // Synchronize with the device twin.
+            try
+            {
+                // Create the device twin.
+                deviceTwin = s_deviceClient.GetTwinAsync().GetAwaiter().GetResult();
+
+                // Extract the desired properties.
+                dynamic data = JObject.Parse(deviceTwin.Properties.Desired.ToJson());
+
+                // Set the desired properties for the device app.
+                desiredHumidity = data.humidity;
+                desiredTemperature = data.temperature;
+                UpdateTwinProperties();
+            }
+            catch(Exception ex)
+            {
+                redMessage("Failed to sync with twin: " + ex.Message);
+            }
+```
+
+5. Save the Program.cs file.
 
 ::: zone-end
 
+## Test the device twins
 
-## Test the device twin
-
-Now for our final test of this module.
+Now for our final code test of this module.
 
 1. Start the telemetry running, by starting the device app.
 1. Start the back-end service app.
