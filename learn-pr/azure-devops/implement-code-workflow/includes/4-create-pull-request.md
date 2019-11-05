@@ -127,9 +127,11 @@ Here, you create a pull request for your branch.
 1. Enter a title and description for your pull request.
 
     * Title:
-    > _Configure Azure Pipelines_
+
+        > _Configure Azure Pipelines_
     * Description:
-    > _This pipeline configuration builds the application and produces a build for the Release configuration._
+
+        > _This pipeline configuration builds the application and produces a build for the Release configuration._
 
 1. To complete your pull request, select **Create pull request**.
 
