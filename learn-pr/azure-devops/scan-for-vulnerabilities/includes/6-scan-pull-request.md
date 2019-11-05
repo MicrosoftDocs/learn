@@ -79,13 +79,13 @@ In YAML, you use the `|` syntax to define a string that spans multiple lines. Yo
 
 In this part, you provide a condition to each build task that relates to SonarCloud. This condition limits scans to only when the build is for a pull request to the `master` branch.
 
-1. From Visual Studio Code, modify **azure-pipelines.yml** like this:
+1. From Visual Studio Code, modify *azure-pipelines.yml* like this:
 
     [!code-yml[](code/6-azure-pipelines.yml?highlight=49-55,85-91,95-101)]
 
     The highlighted parts show you where the conditions are applied to the SonarCloud build tasks.
 
-1. From the integrated terminal, add **azure-pipelines.yml** to the index, commit the changes, and push the branch up to GitHub.
+1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the changes, and push the branch up to GitHub.
 
     ```bash
     git add azure-pipelines.yml

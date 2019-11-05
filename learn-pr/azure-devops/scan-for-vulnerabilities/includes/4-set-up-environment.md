@@ -1,5 +1,12 @@
 In this part, you make sure that your Azure DevOps organization is set up to complete the rest of this module.
 
+To do this, you:
+
+> [!div class="checklist"]
+> * Set up an Azure DevOps project for this module.
+> * Move the work item for this module on Azure Boards to the **Doing** column.
+> * Make sure your project is set up locally so that you can push changes to the pipeline.
+
 The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey.
 
 This learning path also builds on the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path. There, you set up your Azure DevOps organization and created a task backlog on Azure Boards by using the Basic process.
@@ -67,3 +74,5 @@ To set up the work item:
     ![Azure Boards showing the card in the Doing column](../media/4-azure-boards-wi4-doing.png)
 
 At the end of this module, move the card to the **Done** column after you complete the task.
+
+[!include[](../../shared/includes/build-local-setup.md)]

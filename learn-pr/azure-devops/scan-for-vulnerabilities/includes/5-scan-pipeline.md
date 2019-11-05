@@ -44,7 +44,7 @@ Your pipeline tasks require access to SonarCloud. Here you create a service conn
 
 ## Create pipeline variables
 
-You're almost ready to add pipeline tasks to your pipeline configuration. First, you add a few variables to your pipeline. You define these pipeline variables directly from Azure Pipelines and not from your **azure-pipelines.yml** file as you did previously.
+You're almost ready to add pipeline tasks to your pipeline configuration. First, you add a few variables to your pipeline. You define these pipeline variables directly from Azure Pipelines and not from your *azure-pipelines.yml* file as you did previously.
 
 Recall that the SonarCloud Marketplace extension provides built-in task types that perform the scan. The first task you use, named `SonarCloudPrepare@1`, requires some information specific to your SonarCloud project, such as your project name and project key.
 
@@ -73,7 +73,7 @@ Let's add a few variables to the pipeline.
 
 ## Add tasks to the pipeline configuration
 
-Here you add the tasks that perform the scan to **azure-pipelines.yml**.
+Here you add the tasks that perform the scan to *azure-pipelines.yml*.
 
 Recall that when you scanned locally, you used the **dotnet-sonarscanner** tool. Here's the `dotnet-sonarscanner begin` command you ran to prepare the scanner to collect build and test data. (You don't need to run this command right now.)
 
@@ -99,7 +99,7 @@ An easier way is to use these built-in task types provided by the SonarCloud ext
 
 The other two commands map to the `dotnet-sonarscanner end` command, which analyzes the results and uploads the report to SonarCloud.
 
-1. From Visual Studio Code, open **azure-pipelines.yml** and replace its contents with this code. The new parts are highlighted.
+1. From Visual Studio Code, open *azure-pipelines.yml* and replace its contents with this code. The new parts are highlighted.
 
     [!code-yml[](code/5-azure-pipelines.yml?highlight=38-48,68,76-80)]
 
@@ -117,7 +117,7 @@ The other two commands map to the `dotnet-sonarscanner end` command, which analy
 
 Here you push your changes to GitHub and see the pipeline run. Recall that you're currently on the `security-scan` branch.
 
-1. From the integrated terminal, add **azure-pipelines.yml** to the index, commit the changes, and push the branch up to GitHub.
+1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the changes, and push the branch up to GitHub.
 
     ```bash
     git add azure-pipelines.yml

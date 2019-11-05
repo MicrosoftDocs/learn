@@ -16,15 +16,15 @@ Let's set up a project on SonarCloud. You need to save some information, such as
     ![Setting up a SonarCloud project manually through the web interface](../media/3-sonar-cloud-create-project.png)
 
 1. From the **Analyze your project** screen:
-    1. Under **Provide a token**:
-        * Select **Generate**.
-        * Save the generated token somewhere safe.
-        * Notice **Project Key** and **Organization Key** on the right. Save those values as well.
-        * Select **Continue**.
-    1. Under **Run analysis on your project**:
-        * Select **C# or VB .NET**.
+    1. Select **Manually**.
+    1. Under **What is your build technology?**, select **Other**.
+    1. Under **What is your OS?**, choose the operating system you're running.
+    1. Under **Execute the Scanner from your computer**, you see a sample `sonar-scanner` command. Copy that command and paste is somewhere easy to refer back to later.
+    1. Select **Finish**.
 
-           You see a few ways to run the scanner. We'll follow a slightly different process.
+        Keep this browser tab open for later.
+
+        You don't need to download the scanner software or run any other commands yet. We'll follow a slightly different process shortly.
 
 At this point, your SonarCloud project is created. You need to do a few more things before you can analyze your code.
 
@@ -37,11 +37,11 @@ Here you get a copy of the _Space Game_ web project and work from a branch.
 
     ```bash
     git fetch upstream security-scan
-    git checkout security-scan
+    git checkout -b security-scan upstream/security-scan
     ```
 
     As you did in previous modules, the format of this command enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you push this branch up to your GitHub repository, known as `origin`.
-1. As an optional step, open **azure-pipelines.yml** from Visual Studio code and familiarize yourself with the initial configuration.
+1. As an optional step, open *azure-pipelines.yml* from Visual Studio code and familiarize yourself with the initial configuration.
 
     The configuration resembles the one you created in the [Run quality tests in your build pipeline](/learn/modules/run-quality-tests-build-pipeline?azure-portal=true) module. It builds the application's Release configuration, runs unit tests, and produces a code coverage report.
 
@@ -92,31 +92,48 @@ The SonarCloud scanner runs Java code during the scanning process. So, you start
 
     There are a few ways to install the SonarCloud tools. Using **dotnet-sonarscanner** is an easy way to scan .NET Core code.
 
-1. Create the variables you need to run a scan. The values for these variables are the keys you saved earlier.
+1. Refer to the `sonar-scanner` command that you copied earlier. Here's an example:
+
+    ```bash
+    sonar-scanner \
+      -Dsonar.projectKey=space-game-web-333 \
+      -Dsonar.organization=mara-github \
+      -Dsonar.sources=. \
+      -Dsonar.host.url=https://sonarcloud.io \
+      -Dsonar.login=abcdefabcdefabcdefabcdefabcdefabcdef
+    ```
+
+    These values map to environment variables in the next step:
+
+    * `sonar.projectKey`: your SonarCloud project key
+    * `sonar.organization`: your SonarCloud organization
+    * `sonar.login`: your login token
+
+1. From the terminal, create these environment variables.
 
     Replace the placeholder values you see with yours. Don't include the parentheses.
 
     ```bash
-    SONAR_TOKEN=(your token)
-    SONAR_KEY=(your project key)
-    SONAR_ORGANIZATION=(your organization key)
+    SONAR_PROJECT_KEY=(your SonarCloud project key)
+    SONAR_ORGANIZATION=(your SonarCloud organization)
+    SONAR_LOGIN=(your login token)
     ```
 
     Here's an example:
 
     ```bash
-    SONAR_TOKEN=abcdefabcdefabcdefabcdefabcdefabcdef
-    SONAR_KEY=space-game-web-0000
-    SONAR_ORGANIZATION=username-github
+    SONAR_PROJECT_KEY=space-game-web-333
+    SONAR_ORGANIZATION=mara-github
+    SONAR_LOGIN=abcdefabcdefabcdefabcdefabcdefabcdef
     ```
 
 1. Run the following `dotnet-sonarscanner begin` command to prepare the scanner to collect build and test data:
 
     ```bash
     $HOME/.dotnet/tools/dotnet-sonarscanner begin \
-      /k:"$SONAR_KEY" \
+      /k:"$SONAR_PROJECT_KEY" \
       /d:sonar.host.url="https://sonarcloud.io" \
-      /d:sonar.login="$SONAR_TOKEN" \
+      /d:sonar.login="$SONAR_LOGIN" \
       /d:sonar.cs.opencover.reportsPaths="./Tailspin.SpaceGame.Web.Tests/TestResults/Coverage/coverage.opencover.xml" \
       /d:sonar.exclusions="**/wwwroot/lib/**/*" \
       /o:"$SONAR_ORGANIZATION"
@@ -126,9 +143,9 @@ The SonarCloud scanner runs Java code during the scanning process. So, you start
 
     ```bash
     MSYS2_ARG_CONV_EXCL="*" $HOME/.dotnet/tools/dotnet-sonarscanner begin \
-      /k:"$SONAR_KEY" \
+      /k:"$SONAR_PROJECT_KEY" \
       /d:sonar.host.url="https://sonarcloud.io" \
-      /d:sonar.login="$SONAR_TOKEN" \
+      /d:sonar.login="$SONAR_LOGIN" \
       /d:sonar.cs.opencover.reportsPaths="./Tailspin.SpaceGame.Web.Tests/TestResults/Coverage/coverage.opencover.xml" \
       /d:sonar.exclusions="**/wwwroot/lib/**/*" \
       /o:"$SONAR_ORGANIZATION"
@@ -138,7 +155,7 @@ The SonarCloud scanner runs Java code during the scanning process. So, you start
 
       * `/k:` specifies your project key.
       * `/d:sonar.host.url` specifies where to upload the results.
-      * `/d:sonar.login` specifies your token.
+      * `/d:sonar.login` specifies your login token.
       * `/d:sonar.cs.opencover.reportsPaths` specifies where to find code coverage information.
       * `/d:sonar.exclusions` specifies code paths to exclude from the scan.
       * `/o:` specifies your SonarCloud organization.
@@ -147,7 +164,7 @@ The SonarCloud scanner runs Java code during the scanning process. So, you start
 
     When you run this kind of analysis, it's common to scan only the source code your team has written so that you can more easily focus on just your code. This example uses wildcards to exclude all source code under the **wwwroot/lib** directory. This directory includes open-source components such as Bootstrap and JQuery.
 
-    You learn how to discover potential vulnerabilities in open-source components in a future module.
+    You learn how to discover potential vulnerabilities in open-source components in a later module.
 
 1. Run this `dotnet build` command to build the application under the Release configuration:
 
@@ -186,34 +203,32 @@ The SonarCloud scanner runs Java code during the scanning process. So, you start
 1. Run this `dotnet-sonarscanner end` command to complete the scanning session and upload the results to SonarCloud:
 
     ```bash
-    $HOME/.dotnet/tools/dotnet-sonarscanner end /d:sonar.login="$SONAR_TOKEN"
+    $HOME/.dotnet/tools/dotnet-sonarscanner end /d:sonar.login="$SONAR_LOGIN"
     ```
 
     If the command fails, try running it like this, as you did previously:
 
     ```bash
-    MSYS2_ARG_CONV_EXCL="*" $HOME/.dotnet/tools/dotnet-sonarscanner end /d:sonar.login="$SONAR_TOKEN"
+    MSYS2_ARG_CONV_EXCL="*" $HOME/.dotnet/tools/dotnet-sonarscanner end /d:sonar.login="$SONAR_LOGIN"
     ```
 
     You see that scanning results are written to the `.sonarqube` directory under the root of your project. These are intermediate files that SonarCloud uses to collect and analyze the results. These files aren't meant to be included in source control. We've already added an entry in the `.gitignore` file to exclude this directory on the `security-scan` branch.
 
 ## Examine the results
 
-Here you see the results from the SonarCloud portal.
+Here you return to the SonarCloud portal and review the results of your scan.
 
-1. From a web browser, go to the SonarCloud home page.
+1. From a web browser, go back to your SonarCloud project.
 
-    You see your project with a summary of the scan.
+    If you closed your browser tab, go to [SonarCloud](https://sonarcloud.io/?azure-portal=true), sign in, and then select your project.
 
-    ![The summary for the analysis on SonarCloud](../media/3-sonar-scan-summary.png)
+    You see the results of your scan.
 
-1. Select the name of the project to be taken to the results page.
-
-    There are several categories that you can examine. Start with **Reliability** at the top. If you have bugs, they show up here. We have one bug. Select it to see more details.
+    There are several categories that you can examine. Start with **Reliability** at the top. If you have bugs, they show up here. We have two bugs. Select it to see more details.
 
     ![The SonarCloud dashboard](../media/3-sonar-scan-dashboard.png)
 
-    This bug recommends that you replace the bold `<b>` tag with the `<strong>` tag.
+    The first bug recommends that you replace the bold `<b>` tag with the `<strong>` tag.
 
     ![Bug details on SonarCloud](../media/3-sonar-scan-bug.png)
 
