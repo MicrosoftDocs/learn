@@ -20,11 +20,11 @@ Follow along with the team by setting up your own free Azure DevOps organization
 
 ## Create an organization
 
-Next, set up an organization called Tailspin. Here's how:
+Next, set up an organization. Here's how:
 
-1. If you've never created an Azure DevOps organization, you'll see a window with a **Create new organization** button in the right pane. If you have, you'll see **+ New organization** at the bottom left. Select the button you see.
+1. If you've never created an Azure DevOps organization, you'll see a window with a **Create new organization** button. If you have, you'll see a link that reads **New organization**. Select the option you see.
 1. In the Azure DevOps Terms of Service and Privacy notification window, select **Continue**.
-1. Create an organization named **Tailspin** next to the **`dev.azure.com/`** field. If you're prompted that the name is already taken, just add some numbers to the end to make it unique. For example, Tailspin0523.
+1. Create an organization for the Microsoft Learn modules next to the **`dev.azure.com/`** field. If you're prompted that the name is already taken, just add some numbers to the end to make it unique. For example, Tailspin0523.
 1. Choose a location near you where your projects will be hosted.
 1. Select **Continue**.
 
