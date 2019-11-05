@@ -87,12 +87,12 @@ Recall that when you scanned locally, you used the **dotnet-sonarscanner** tool.
 
 ```bash
 $HOME/.dotnet/tools/dotnet-sonarscanner begin \
-  /k:"$KEY" \
+  /k:"$SONAR_PROJECT_KEY" \
   /d:sonar.host.url="https://sonarcloud.io" \
-  /d:sonar.login="$SONAR_TOKEN" \
+  /d:sonar.login="$SONAR_LOGIN" \
   /d:sonar.cs.opencover.reportsPaths="./Tailspin.SpaceGame.Web.Tests/TestResults/Coverage/coverage.opencover.xml" \
   /d:sonar.exclusions="**/wwwroot/lib/**/*" \
-  /o:"$ORGANIZATION"
+  /o:"$SONAR_ORGANIZATION"
 ```
 
 Although you could run this same command in your build pipeline, you would need to secure access to the `/d:sonar.login` argument, which defines your access token.
