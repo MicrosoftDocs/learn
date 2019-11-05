@@ -60,13 +60,13 @@ To ensure that you have a working copy to start your changes, build and run the 
 
 ## Verify that the application is running
 
-In development mode, the *Space Game* web site is configured to run on port 5000.
+In development mode, the *Space Game* website is configured to run on port 5000.
 
 In a new browser tab, navigate to [http://localhost:5000](http://localhost:5000?azure-portal=true) to see the running application.
 
 You see this:
 
-![The Space Game web site](../media/3-space-game-top.png)
+![The Space Game website](../media/3-space-game-top.png)
 
 You can interact with the page, including the leaderboard. When you select a player's name, you see details about that player.
 
