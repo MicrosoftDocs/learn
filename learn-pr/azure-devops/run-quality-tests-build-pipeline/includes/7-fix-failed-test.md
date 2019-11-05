@@ -73,7 +73,7 @@ As you did earlier, you fetch the `failed-test` branch from GitHub and check out
 
     ```bash
     git fetch upstream failed-test
-    git checkout failed-test
+    git checkout -b failed-test upstream/failed-test
     ```
 
     We named the branch `failed-test` for learning purposes. In practice, you would name a branch after its purpose or feature.
@@ -170,13 +170,13 @@ In this section, you reproduce the failure locally, just like Mara and Andy.
     You see the same errors that you saw in the pipeline. Here's part of the output:
 
     ```output
-    Failed   ReturnRequestedCount(10)
-    Error Message:
-       Expected: 10
+      X ReturnRequestedCount(10) [6ms]
+      Error Message:
+         Expected: 10
       But was:  9
 
-    Stack Trace:
-       at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+      Stack Trace:
+         at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
        at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.Execute(TestExecutionContext context)
        at NUnit.Framework.Internal.Execution.SimpleWorkItem.PerformWork()
        at NUnit.Framework.Internal.Execution.CompositeWorkItem.RunChildren()
@@ -185,9 +185,11 @@ In this section, you reproduce the failure locally, just like Mara and Andy.
        at System.Threading.Thread.ThreadMain_ThreadStart()
 
 
-    Total tests: 8. Passed: 6. Failed: 2. Skipped: 0.
     Test Run Failed.
-    Test execution time: 1.2035 Seconds
+    Total tests: 8
+         Passed: 6
+         Failed: 2
+     Total time: 1.3882 Seconds
     ```
 
 ### Find the cause of the error
@@ -276,9 +278,12 @@ In this section, you fix the error by changing the code back to its original sta
     You see that the tests pass.
 
     ```output
-    Total tests: 8. Passed: 8. Failed: 0. Skipped: 0.
+    Starting test execution, please wait...
+
     Test Run Successful.
-    Test execution time: 1.2248 Seconds
+    Total tests: 8
+         Passed: 8
+     Total time: 1.2506 Seconds
     ```
 
 1. In the integrated terminal, add each modified file to the index, commit the changes, and push the branch up to GitHub.

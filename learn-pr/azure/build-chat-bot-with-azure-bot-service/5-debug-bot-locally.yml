@@ -9,8 +9,7 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-#labId:  46466
+#labId: 46466
 durationInMinutes: 20
 content: |
   [!include[](includes/5-debug-bot-locally.md)]

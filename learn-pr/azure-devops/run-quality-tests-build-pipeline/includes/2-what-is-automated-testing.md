@@ -1,10 +1,10 @@
 In this unit, you learn about the benefits of automated testing and the kinds of testing you can perform. You also learn what makes a good test and be introduced to the various testing tools that are available to you.
 
-Let's begin by checking in with the Tailspin Toys web team.
+Let's begin by checking in with the Tailspin web team.
 
 ## The need for automated testing
 
-Mara, the newest member of the team, is slowly introducing her teammates to DevOps and Azure DevOps Services. In particular, she's using Azure Boards and Azure Pipelines to get everyone started.
+Mara, the newest member of the team, is slowly introducing her teammates to DevOps and Azure DevOps. In particular, she's using Azure Boards and Azure Pipelines to get everyone started.
 
 To begin the project, the team has identified three key needs to address:
 

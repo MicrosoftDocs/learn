@@ -1,90 +1,35 @@
-At this point, Mara has defined a build configuration for the *Space Game* web site. Now it's your turn. You're going to create a pipeline and produce your first build artifact.
+At this point, Mara has defined a build configuration for the *Space Game* website. Now it's your turn. You're going to create a pipeline and produce your first build artifact.
 
 As you saw, Mara uses a YAML file to define the build. When you create a pipeline, the process prompts you for your YAML file. The project doesn't have this file yet.
 
-You'll begin by creating a starter YAML file that contains a basic build definition. You'll commit the file to your `master` branch on GitHub. You'll then choose this file when you set up your pipeline.
-
-> [!NOTE]
-> Again, don't worry if you're new to Git. We'll show you what to do. We'll also go into more detail about Git in future modules.
-
-At a minimum, the YAML file needs to define the agent to use. Remember that a *build agent* builds or deploys the code. For this project, you'll use the Ubuntu 16.04 agent that's hosted by Microsoft. That's where we'll start.
-
-## Configure the basic pipeline
-
-1. In Visual Studio Code, select **File > New File**. Then select **File > Save** to save the blank file as **azure-pipelines.yml** in your project's root directory (for example, `~/mslearn-tailspin-spacegame-web`).
-
-    > [!IMPORTANT]
-    > On Windows, be sure to select **YAML** in the **Save as type** list.
-
-1. In **azure-pipelines.yml**, specify the Ubuntu 16.04 image pool and save the file.
-
-    ```yml
-    pool:
-      vmImage: 'Ubuntu-16.04'
-    ```
-
-1. From the integrated terminal, run `git status`:
-
-    ```bash
-    git status
-    ```
-
-    You see that **azure-pipelines.yml** is untracked. New files are untracked until you add them to Git's index, or staging area.
-
-1. Run `git add` to add the file to the index:
-
-    ```bash
-    git add azure-pipelines.yml
-    ```
-
-1. Run `git commit` to commit the change to the `master` branch:
-
-    ```bash
-    git commit -m "Add image pool"
-    ```
-
-1. Run `git push` to push, or upload, your `master` branch (including your changes) to your GitHub repository:
-
-    ```bash
-    git push origin master
-    ```
-
-    If this is your first time running `git push`, you'll be prompted to enter your GitHub credentials. Remember, if you're using two-factor authentication with GitHub, enter your personal access token instead of your password.
-
-If you return to your repo on GitHub and refresh the page, you'll see that **azure-pipelines.yml** is part of your `master` branch. You can select the file to verify its contents.
-
-![The YAML file on GitHub](../media/6-github-view-file.png)
+When you don't provide an initial YAML file for your project, Azure Pipelines can create one for you based on your application type. Here, you build an ASP.NET Core application, but Azure Pipelines provides starter build configurations for other project types as well, including Java, Go, and more.
 
 ## Create the pipeline
 
-1. In Azure DevOps, navigate to the **SpaceGame-Web** project.
+1. In Azure DevOps, go to your project.
 1. Select **Pipelines**, either from the project page or from the left pane.
-1. Select **Create pipeline**.
+1. Select **Create Pipeline**.
 1. On the **Connect** tab, select **GitHub**.
 
     When prompted, enter your GitHub credentials.
 1. On the **Select** tab, select your **mslearn-tailspin-spacegame-web** repository.
 1. You might be redirected to GitHub to install the Azure Pipelines app. If so, select **Approve and install**.
+1. On the **Configure** tab, select **ASP.NET Core**.
 1. On the **Review** tab, note the initial build configuration.
 
     ![Azure Pipelines showing the initial build configuration](../media/6-initial-pipeline-yml.png)
 
-    This is the configuration you pushed to GitHub earlier.
+    This is a very basic configuration that Azure DevOps provides for you based on your application type, ASP.NET Core.
 
-    > [!NOTE]
-    > For learning purposes, here you build your pipeline configuration one step at a time, starting with just the build agent.
-    > In practice, you can skip the creation of the initial *azure-pipelines.yml* file and let Azure Pipelines create it for you.
-    > Azure Pipelines can detect your project type, such as ASP.NET Core, Java, or Go, and provide an initial pipeline configuration for that app type.
-
-1. On the **Review** tab, select **Run** to save your changes and start the build.
+1. On the **Review** tab, select **Save and run**. Then select **Save and run** a second time to commit your changes to GitHub and start the build.
 
 ## Watch the pipeline run
 
-On the build screen, trace the build process through each of the steps.
+On the build screen, trace the build process through each of the steps. When the build completes, select the **Logs** tab.
 
-Remember that at this point your build definition specifies only the VM image to use. It doesn't yet specify any of the tasks that are needed to build your app.
+Remember that at this point, you have a very basic build definition. It doesn't yet specify all of the tasks that are needed to build your app.
 
-Here you see the minimum number of steps needed to prepare the VM, fetch the latest source code from GitHub, and clean up:
+Here you see the minimum number of steps needed to prepare the VM, fetch the latest source code from GitHub, run `dotnet build`, and clean up:
 
 ![Initial build configuration](../media/6-build-initial.png)
 
@@ -93,76 +38,39 @@ This configuration is a great start because now you have a starting point for ad
 > [!TIP]
 > Check your email. You might have already received a build notification with the results of your run. You can use these notifications to let your team members know when builds complete and whether each build passed or failed.
 
-Optionally, right-click the link to **Hosted Ubuntu 1604** and open the link in a new tab:
-
-![Link to build agent information](../media/6-hosted-agent.png)
-
-Then select **Details**.
-
-![Azure Pipelines showing details about the build agent](../media/6-hosted-agent-details.png)
-
-You see all the software that's available on the VM, including .NET Core, Docker, and many other development tools and compilers.
-
 ## Add build tasks
 
 Now that you have a working build process, you can start to add build tasks.
 
 Remember that you're working from the `master` branch. You'll now create a branch named `build-pipeline` to hold your work. The branch gives you a place to experiment and get your build working completely without affecting the rest of the team.
 
-You can add build tasks to **azure-pipelines.yml** directly from Azure Pipelines. Azure Pipelines will commit your changes directly to your branch. But here you'll modify **azure-pipelines.yml** locally and upload your changes. Doing it this way lets you practice your Git skills watch the pipeline automatically build the application when you push up changes.
+You can add build tasks to *azure-pipelines.yml* directly from Azure Pipelines. Azure Pipelines will commit your changes directly to your branch. But here you'll modify *azure-pipelines.yml* locally and push, or upload, your changes to GitHub. Doing it this way lets you practice your Git skills. Watch the pipeline automatically build the application when you push up changes.
 
 In practice, you might add build tasks one at a time, push up your changes, and watch the build run. Here, you'll add all the build tasks we identified earlier at one time.
 
-1. In Visual Studio Code, navigate to the integrated terminal and run this `git checkout` command to create a branch named `build-pipeline`:
+> [!NOTE]
+> You're about to run a few Git commands. Don't worry if you're new to Git. We'll show you what to do. We'll also go into more detail about Git in future modules.
+
+1. In Visual Studio Code, go to the integrated terminal.
+1. Run this `git pull` command to fetch the latest changes from GitHub and update your `master` branch.
+
+    ```bash
+    git pull origin master
+    ```
+
+    You see from the output that Git fetches a file named *azure-pipelines.yml*. This is the starter pipeline configuration that Azure Pipelines created for you. When you set up the pipeline, Azure Pipelines adds this file to your GitHub repository.
+
+1. Run this `git checkout` command to create a branch named `build-pipeline`:
 
     ```bash
     git checkout -b build-pipeline
     ```
 
-1. In Visual Studio Code, modify **azure-pipelines.yml** as you see here:
+1. In Visual Studio Code, modify *azure-pipelines.yml* as you see here:
 
-    ```yml
-    pool:
-      vmImage: 'Ubuntu-16.04'
-      demands:
-        - npm
+    [!code-yml[](code/6-azure-pipelines.yml)]
 
-    steps:
-    - task: DotNetCoreInstaller@0
-      displayName: 'Use .NET Core SDK 2.1.505'
-      inputs:
-        version: 2.1.505
-
-    - task: Npm@1
-      displayName: 'Run npm install'
-      inputs:
-        verbose: false
-
-    - script: './node_modules/.bin/node-sass Tailspin.SpaceGame.Web/wwwroot --output Tailspin.SpaceGame.Web/wwwroot'
-      displayName: 'Compile Sass assets'
-
-    - task: gulp@1
-      displayName: 'Run gulp tasks'
-
-    - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
-      displayName: 'Write build info'
-      workingDirectory: Tailspin.SpaceGame.Web/wwwroot
-
-    - task: DotNetCoreCLI@2
-      displayName: 'Restore project dependencies'
-      inputs:
-        command: 'restore'
-        projects: '**/*.csproj'
-
-    - task: DotNetCoreCLI@2
-      displayName: 'Build the project - Release'
-      inputs:
-        command: 'build'
-        arguments: '--no-restore --configuration Release'
-        projects: '**/*.csproj'
-    ```
-
-    The `demands` section beneath `pool` specifies that we need npm, the Node.js package manager, installed on the build system.
+    The `demands` section beneath `pool` specifies that we need npm, the Node.js package manager, installed on the build system. 
 
     Under the `steps` section, you see the build tasks that maps to each of the script commands that we identified earlier.
 
@@ -186,10 +94,10 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 
     You might have also noticed the `DotNetCoreInstaller@0` task, which is the first build step. Mara remembered that her build script didn't install required build tools. Although the build agent comes with a number of .NET Core SDK versions, this task lets her easily specify the version she needs to use on the build agent.
 
-1. Run the following Git commands from the integrated terminal to add **azure-pipelines.yml** to the index, commit the change, and push the change up to GitHub. These steps are similar to steps you performed earlier.
+1. Run the following Git commands from the integrated terminal to add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub. These steps are similar to steps you performed earlier.
 
     > [!TIP]
-    > Remember to save **azure-pipelines.yml** before you run these Git commands.
+    > Remember to save *azure-pipelines.yml* before you run these Git commands.
 
     ```bash
     git add azure-pipelines.yml
@@ -201,13 +109,12 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 
     Pushing the branch to GitHub triggers the build process in Azure Pipelines.
 
-1. In Azure DevOps, navigate to your build. To do so, select **Pipelines** on the side of the page and then select **Builds**. You see your commit message and that the build is running using the code from the `build-pipeline` branch:
+1. In Azure Pipelines, go to your build. To do so, select **Pipelines** on the side of the page and then select **Builds**. You see your commit message and that the build is running using the code from the `build-pipeline` branch:
 
     ![Azure Pipelines showing the latest build](../media/6-build-history.png)
 
     > [!TIP]
     > If you don't see the build right away, wait a few moments or refresh the page.
-    > In the rare case where Azure Pipelines doesn't pick up your build, you can manually queue the build by selecting **Queue**. When prompted, enter the Git branch you want to build from, in this case, `build-pipeline`.
 
 1. Select your build and trace the build tasks as they run.
 
@@ -217,11 +124,11 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 
     If any step fails, you'll see the error in the output so you can diagnose and repair the failure.
 
-    Earlier, you saw the minimum number of steps needed to prepare the VM, fetch the latest source code from GitHub, and clean up. This time, when the build completes, you see the entire set of tasks needed to build the application:
+    Earlier, you ran a more minimal build configuration. This time, when the build is completed, you see a more complete set of tasks needed to build the application:
 
     ![Azure Pipelines showing the complete list of build tasks](../media/6-add-build-tasks.png)
 
-1. After your build completes, select the **Summary** tab.
+1. After your build is completed, select the **Summary** tab.
 
     You see the overall progression of the build. From there, you can jump to the build logs or the associated change on GitHub.
 
