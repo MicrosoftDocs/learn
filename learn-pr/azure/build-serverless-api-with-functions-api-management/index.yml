@@ -4,8 +4,8 @@ metadata:
   title: Expose multiple Azure Function apps as a consistent API by using Azure API Management
   description: In this module, you will learn how to assemble multiple Azure Functions into a single API using Azure API Management.
   ms.date: 09/26/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Expose multiple Azure Function apps as a consistent API by using Azure API Management
