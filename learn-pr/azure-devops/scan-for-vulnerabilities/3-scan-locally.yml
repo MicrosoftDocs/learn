@@ -9,6 +9,6 @@ metadata:
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 12
+durationInMinutes: 22
 content: |
   [!include[](includes/3-scan-locally.md)]
