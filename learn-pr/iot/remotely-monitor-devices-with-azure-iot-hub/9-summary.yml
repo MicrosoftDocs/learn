@@ -15,12 +15,12 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  
-  - content: "The sending of temperature and humidity values is called telemetry. What value in the following list could also be considered telemetry?"
+
+  - content: 'The sending of temperature and humidity values is called telemetry. What value in the following list could also be considered telemetry?'
     choices:  
-    - content: 'Width and height of the remote IoT Hub device'
+    - content: 'Build date of the remote IoT Hub device'
       isCorrect: false
-      explanation: These would be properties of the device, not telemetry.
+      explanation: This would be a property of the device, not telemetry.
     - content: 'Sensor ID'
       isCorrect: false
       explanation: This could be a property of the device, or a tag in a device twin.
@@ -28,7 +28,7 @@ quiz:
       isCorrect: true
       explanation: A heart-rate monitor sends out a heartbeat as its telemetry.
 
-  - content: "What statement best describes a direct method?"
+  - content: 'What statement best describes a direct method?'
     choices:  
     - content: 'Direct methods are designed for querying, and automatically synchronizing, with the real IoT Hub device'
       isCorrect: false
