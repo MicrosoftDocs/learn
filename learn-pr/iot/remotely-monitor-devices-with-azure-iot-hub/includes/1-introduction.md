@@ -26,13 +26,15 @@ In this module you will:
 
 Suppose you manage a gourmet cheese making company in a southern location. The company is proud of its cheese, and is careful to maintain the perfect temperature and humidity of a natural cave that is used to age the cheese. There are sensors in the cave that report on the temperature and humidity. A remote operator can set a fan to new settings if needed, to maintain the perfect environment for the aging cheese. The fan is a device capable of both heating and cooling, and humidifying and de-humidifying.
 
-  ![Conceptual art showing cheese maturing in a cave](../media/cheesecave-art.png)
+  ![Conceptual art showing cheese maturing in a cave](../media/cheese-rect8.png)
 
 Caves are used to mature cheese, their constant temperature, humidity, and air flow make them nearly ideal for the process. Not to mention the cachet of having your cheese products mature in a natural cave, instead of a constructed cellar. Something to put on your product labels!
 
 The accepted ideal temperature for aging cheese is 50 degrees fahrenheit (10 degrees centigrade), with up to 5 degrees (2.78 degrees C) either side of this being acceptable. Humidity is also important. Measured in percentage of maximum saturation, a humidity of between 75 and 95 percent is considered fine. We will set 85 percent as the ideal, with a 10 percent variation as acceptable. These values apply to most cheeses. To achieve specific results, such as a certain condition of the rind, cheese makers will adjust these values for some of the time during aging.
 
 In a southern location, a natural cave near the surface might have an ambient temperature of around 70 degrees. The cave might also have a relative humidity of close to 100 percent, due to water seeping through the roof. These high numbers are not perfect conditions for aging cheese. At a more northerly location, the ambient temperature of a natural cave might well be the ideal of 50 degrees. Because of our southern location, we need some Azure IoT intervention!
+
+  ![Conceptual art showing cheese maturing in a cave](../media/cheese-circle1.png)
 
 ## The first step
 

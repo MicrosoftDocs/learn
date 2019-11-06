@@ -8,7 +8,7 @@ In this module, you learned how to:
  - Add code to both apps to provide a _direct method_
  - Add code to both apps to show the role of _device twins_
 
-  ![Conceptual art showing cheese maturing in a cave](../media/cheesecave-art2.png)
+  ![Conceptual art showing cheese maturing in a cave](../media/cheese-circle2.png)
 
 ## Clean up
 
