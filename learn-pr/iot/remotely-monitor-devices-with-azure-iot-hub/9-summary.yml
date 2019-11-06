@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
   
-- content: "The sending of temperature and humidity values is called telemetry. What value in the following list could also be considered telemetry?"
+  - content: "The sending of temperature and humidity values is called telemetry. What value in the following list could also be considered telemetry?"
     choices:  
     - content: 'Width and height of the remote IoT Hub device'
       isCorrect: false
