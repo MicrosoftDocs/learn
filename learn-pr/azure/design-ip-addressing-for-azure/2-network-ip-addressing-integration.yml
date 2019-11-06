@@ -22,10 +22,10 @@ quiz:
       explanation: " A VPN can connect through the internet. You do not need to have a leased line."
     - content: "A dedicated subnet for the gateway"
       isCorrect: true
-      explanation: "A dedicated subnet assigns an IP address to devices connected through the tunnel. You must have a dedicated subnet named GatewaySubnet for the Azure VPN gateway."
+      explanation: "A dedicated subnet assigns an IP address to devices connected through the tunnel. You must have a dedicated subnet named GatewaySubnet for the VPN gateway."
     - content: "A dedicated network security group"
       isCorrect: false
-      explanation: "A network security group is used to filter traffic. They are not required when you connect an on-premises network to a VNet."
+      explanation: "A network security group is used to filter traffic. They are not required when you connect an on-premises network to a virtual network."
   - content: "Which of the following IP address ranges is routable over the internet?"
     choices:
     - content: "10.0.0.0 to 10.255.255.255"
