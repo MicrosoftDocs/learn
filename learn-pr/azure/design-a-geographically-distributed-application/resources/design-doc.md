@@ -70,7 +70,7 @@ Identify the subtasks of *Design a geographically distributed application*
         - First describe how the app's networking, data, and application architecture has been designed with regard to business objectives and independently of concerns about cross-regional fault tolerance.
             - The shipping company has a website and web API hosted in Azure App Service for B2C and B2B respectively.
             - To improve scalability, static resources like images, CSS and HTML files are fetched from the Azure CDN.
-            - Typically, SQL DB provides the information to fulfil website read operations (like tracking shipments). But over time that kind of data will increasingly be fetched from Redis Cache.
+            - Typically, SQL DB provides the information to fulfill website read operations (like tracking shipments). But over time that kind of data will increasingly be fetched from Redis Cache.
             - Write operations (like creating, updating and deleting shipments) are added to an Azure Queue storage queue which triggers a Function App.
             - When the Function App is triggered by the addition of a message to the queue, it attempts to write to SQL DB, and remove the message from the queue if successful.
             - Cosmos DB is used to hold overall product catalog data. Different manufacturers may describe their offerings with very different schemas, which is ideal for Cosmos DB. Again, over time, this information may be retrieved from Redis Cache instead.
