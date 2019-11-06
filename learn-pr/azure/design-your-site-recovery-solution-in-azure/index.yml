@@ -28,9 +28,9 @@ products:
 - azure-backup
 - azure-site-recovery
 units:
-- learn.design-your-site-recovery-solution-in-azure.introduction
-- learn.design-your-site-recovery-solution-in-azure.develop-bcdr-plan
-- learn.design-your-site-recovery-solution-in-azure.use-azure-site-recovery
-- learn.design-your-site-recovery-solution-in-azure.build-resilient-application-services
-- learn.design-your-site-recovery-solution-in-azure.build-resilient-data-services
-- learn.design-your-site-recovery-solution-in-azure.summary
+- learn.design-your-site-recovery-solution-in-azure.1-introduction
+- learn.design-your-site-recovery-solution-in-azure.2-develop-bcdr-plan
+- learn.design-your-site-recovery-solution-in-azure.3-use-azure-site-recovery
+- learn.design-your-site-recovery-solution-in-azure.4-build-resilient-application-services
+- learn.design-your-site-recovery-solution-in-azure.5-build-resilient-data-services
+- learn.design-your-site-recovery-solution-in-azure.6-summary

@@ -56,7 +56,7 @@ These region pairs are also used for replication. Storage and many PaaS services
 
 Availability sets are a way for you to inform Azure that VMs that belong to the same application workload should be distributed to prevent simultaneous impact from hardware failure and scheduled maintenance. Availability sets are made up of *update domains* and *fault domains*.
 
-![Availability Set](../media/2-availability-sets.png)
+![Availability Set](../media/2-availability-sets.svg)
 
 Update domains ensure that a subset of your application's servers always remain running when the virtual machine hosts in an Azure datacenter require downtime for maintenance. Most updates can be performed with no impact to the VMs running on them, but there are times when this isn't possible. To ensure that updates don't happen to a whole datacenter at once, the Azure datacenter is logically sectioned into update domains. When a maintenance event, such as a performance update and critical security patch that needs to be applied to the host, the update is sequenced through update domains. The use of sequencing updates using update domains ensures that the whole datacenter isn't unavailable during platform updates and patching.
 
@@ -66,4 +66,4 @@ While update domains represent a logical section of the datacenter, fault domain
 
 Availability zones are independent physical datacenter locations within a region that include their own power, cooling, and networking. By taking availability zones into account when deploying resources, you can protect workloads from datacenter outages while retaining presence in a particular region. Services like virtual machines are *zonal services* and allow you to deploy them to specific zones within a region. Other services are *zone-redundant services* and will replicate across the availability zones in the specific Azure region. Both types ensure that within an Azure region there are no single points of failure.
 
-![Availability Zones](../media/2-availability-zones.png) -->
+![Availability Zones](../media/2-availability-zones.svg) -->

@@ -20,7 +20,7 @@ High availability clustering helps you ensure your workloads remain available an
 
 An active-active architecture lets you distribute and load balance demand between multiple nodes, such as two identical Azure virtual machines. You can have these Azure virtual machines running together and sharing the demand. You can also distribute demand to these nodes based on different routing methods.
 
-![Active-active example](../media/4-active-active-cluster.png)
+![Active-active example](../media/4-active-active-cluster.svg)
 
 Shown above is a high-level example of an active-active cluster in action.
 
@@ -58,4 +58,4 @@ You use Azure Monitor as a single solution to collect, analyze and take action, 
 
 Use these Azure tools together to address monitoring and notifications for your applications. You'll make smarter applications, keep them secure, and rapidly respond to demand when needed. -->
 
-![Hybrid network](../media/4-hybrid-network.png)
+![Hybrid network](../media/4-hybrid-network.svg)
