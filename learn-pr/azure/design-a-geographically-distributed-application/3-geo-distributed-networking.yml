@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.design-a-geographically-distributed-application.3-geo-distributed-networking
+metadata:
+  title: Design a geographically distributed networking architecture
+  description: In this unit, you'll learn how to configure networking components to reroute requests to a standby region when the primary region has failed.
+  ms.date: 11/07/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design a geographically distributed networking architecture
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-geo-distributed-networking.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When should you perform a full failover to another region?"
+    choices:
+    - content: "As soon as the application displays an error."
+      isCorrect: false
+      explanation: "Transitory, logic, or user errors, which may cause error messages to be displayed, aren't by themselves an indication of a complete regional failure."
+    - content: "If you experience notable slowness or a lack of responsiveness"
+      isCorrect: false
+      explanation: "An app running slowly might, for example, be the result of the database being overloaded with complex queries, rather than a sign of complete regional failure."
+    - content: "When you know definitively, that a region is down."
+      isCorrect: true
+      explanation: "First there may be isolated reports from different sources, but they combine together and grow in number and volume until regional failure is the only explanation. Additionally, the Azure team will update the Azure status page with this information."
+  - content: "What is the SLA for Azure DNS?"
+    choices:
+    - content: "100%"
+      isCorrect: true
+      explanation: "Azure DNS guarantees that valid DNS requests will receive a response from at least one name server 100% of the time."
+    - content: "99.95%"
+      isCorrect: false
+      explanation: "Because of the inherently multiregional nature of Azure DNS, it's much easier to provide a 100% uptime than for services running in a single region or a couple of regions."
+    - content: "99.85%"
+      isCorrect: false
+      explanation: "Because of the inherently multiregional nature of Azure DNS, it's much easier to provide a 100% uptime than for services running in a single region or a couple of regions."
