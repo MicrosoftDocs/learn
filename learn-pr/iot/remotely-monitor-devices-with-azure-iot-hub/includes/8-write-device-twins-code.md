@@ -107,7 +107,7 @@ function queryTwins() {
         }
 ```
 
-3. Now, add the following lines to the **Main** method, before the lines creating a service client.
+3. Now, add the following lines to the `Main` method, before the lines creating a service client.
 
 ``` cs
             // Digital twins:
@@ -229,7 +229,7 @@ client.getTwin(function (err, twin) {
         private static Twin deviceTwin;
 ```
 
-4. Add the following code to the **Main** method, before the **SendDeviceToCloudMessagesAsync** call.
+4. Add the following code to the `Main` method, before the `SendDeviceToCloudMessagesAsync` call.
 
 ``` cs
             // Synchronize with the device twin.
@@ -254,7 +254,7 @@ client.getTwin(function (err, twin) {
             }
 ```
 
-5. Add a line to the **SetFanState** task, before acknowledging the direct method call, to update the reported properties.
+5. Add a line to the `SetFanState` task, before acknowledging the direct method call, to update the reported properties.
 
 ``` cs
                     UpdateTwinProperties();

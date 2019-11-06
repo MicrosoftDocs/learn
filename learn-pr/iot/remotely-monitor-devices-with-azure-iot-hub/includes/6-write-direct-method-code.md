@@ -96,7 +96,7 @@ client.onDeviceMethod('SetFanState', onSetFanState);
         }
 ```
 
-3. Add the following lines of code to the **Main** method, after creating the device client.
+3. Add the following lines of code to the `Main` method, after creating the device client.
 
 ``` cs
             // Create a handler for the direct method call
@@ -177,7 +177,7 @@ function sendDirectMethod() {
 private static ServiceClient s_serviceClient;
 ```
 
-3. Add the following task, perhaps after the **Main** method.
+3. Add the following task, perhaps after the `Main` method.
 
 ``` cs
         // Handle invoking a direct method.
@@ -209,7 +209,7 @@ private static ServiceClient s_serviceClient;
         }
 ```
 
-4. Add the following code to the **Main** method, before creating the receivers to listen for messages.
+4. Add the following code to the `Main` method, before creating the receivers to listen for messages.
 
 ``` cs
             // Create a ServiceClient to communicate with service-facing endpoint on your hub.

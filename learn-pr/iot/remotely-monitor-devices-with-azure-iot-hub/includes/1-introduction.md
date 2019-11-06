@@ -8,12 +8,13 @@ In this module, you will learn about IoT Hub by implementing a system to monitor
 ## Learning objectives
 
 In this module you will:
-  - Create a custom Azure IoT Hub, using the IoT Hub portal
-  - Create an IoT Hub device ID, using the IoT Hub portal
-  - Create an app to send device telemetry to the custom IoT Hub, in C# or Node.js.
-  - Create a back-end service app to listen for the telemetry
-  - Implement a _direct method_, to communicate settings to the remote device
-  - Implement _device twins_, to maintain remote device properties
+
+- Create a custom Azure IoT Hub, using the IoT Hub portal
+- Create an IoT Hub device ID, using the IoT Hub portal
+- Create an app to send device telemetry to the custom IoT Hub, in C# or Node.js
+- Create a back-end service app to listen for the telemetry
+- Implement a _direct method_, to communicate settings to the remote device
+- Implement _device twins_, to maintain remote device properties
 
 ## Prerequisites
 
@@ -24,7 +25,7 @@ In this module you will:
 
 ## The scenario
 
-Suppose you manage a gourmet cheese making company in a southern location. The company is proud of its cheese, and is careful to maintain the perfect temperature and humidity of a natural cave that is used to age the cheese. There are sensors in the cave that report on the temperature and humidity. A remote operator can set a fan to new settings if needed, to maintain the perfect environment for the aging cheese. The fan can heat and cool, and humidify and de-humidify, the cave.
+Suppose you manage a gourmet cheese making company in a southern location. The company is proud of its cheese, and is careful to maintain the perfect temperature and humidity of a natural cave that is used to age the cheese. There are sensors in the cave that report on the temperature and humidity. A remote operator can set a fan to new settings if needed, to maintain the perfect environment for the aging cheese. The fan can heat and cool, and humidify and de-humidify.
 
   ![Conceptual art showing cheese maturing in a cave](../media/cheese-rect8.png)
 

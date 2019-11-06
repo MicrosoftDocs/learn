@@ -58,7 +58,7 @@ quiz:
       isCorrect: false
       explanation: Device twins are created by default, no lines of code are required.
 
-  - content: 'What is the role of an IoT Hub device twin?'
+  - content: 'What is an IoT Hub device twin?'
     choices:  
     - content: 'A device twin is a copy of the device state information, held on the device itself.'
       isCorrect: false

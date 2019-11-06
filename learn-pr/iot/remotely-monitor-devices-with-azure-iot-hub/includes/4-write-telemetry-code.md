@@ -81,7 +81,7 @@ This section adds code to send telemetry from a simulated device. The device sen
 
 ::: zone pivot="vs-node,vscode-node"
 
-1. With the **app.js** file open, copy and paste the following code.
+1. With the app.js file open, copy and paste the following code.
 
 ``` JavaScript
 // Copyright (c) Microsoft. All rights reserved.
@@ -461,7 +461,7 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 
 ::: zone pivot="vs-node,vscode-node"
 
-1. With the **app.js** file open, copy and paste the following code.
+1. With the app.js file open, copy and paste the following code.
 
 ``` JavaScript
 // Copyright (c) Microsoft. All rights reserved.
@@ -536,8 +536,8 @@ EventHubClient.createFromIotHubConnectionString(connectionString).then(function 
 }).catch(printError);
 ```
 
-    > [!NOTE]
-    > Our implementation only reads messages after the app has been started. Any telemetry sent prior to this isn't handled.
+> [!NOTE]
+> Our implementation only reads messages after the app has been started. Any telemetry sent prior to this isn't handled.
 
 2. Replace the &lt;your service connection string&gt; with the _service_ connection string you saved off in a text file, in the previous unit.
 

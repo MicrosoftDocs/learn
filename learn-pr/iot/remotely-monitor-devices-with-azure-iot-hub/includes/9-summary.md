@@ -3,7 +3,7 @@ In this module, you learned how to:
 
  - Create a custom Azure IoT Hub, using the Azure portal
  - Create a device ID for a custom device, using the Azure portal
- - Create an app to support a simulated device monitoring a cheese cave
+ - Create an app to simulate a device monitoring a cheese cave
  - Create an app to provide a back-end service to listen for the telemetry sent by the device
  - Add code to both apps to provide a _direct method_
  - Add code to both apps to show the role of _device twins_
