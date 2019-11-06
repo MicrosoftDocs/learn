@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.design-a-geographically-distributed-application.6-summary
+metadata:
+  title: Summary
+  description: In this unit, you'll review what you've learned about multi-region application architectures in Azure.
+  ms.date: 11/07/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]

@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.design-a-geographically-distributed-application
+metadata:
+  title: Design a geographically distributed application
+  description: Build an application that spans multiple geographic locations for high availability and resiliency.
+  ms.date: 11/07/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design a geographically distributed application
+summary: Build an application that spans multiple geographic locations for high availability and resiliency.
+abstract: | 
+  In this module, you will:
+  - Design the networking architecture for a geographically distributed application
+  - Design the application architecture for a geographically distributed application
+  - Design the data architecture for a geographically distributed application
+prerequisites: | 
+  - Intermediate familiarity with Azure PaaS services
+  - Intermediate familiarity with architecture principles
+iconUrl: /learn/achievements/design-geographically-distributed-application-social.png
+levels:
+- advanced
+roles:
+- solution-architect
+products:
+- azure
+- azure-cdn
+- azure-app-service
+- azure-redis-cache
+- azure-sql-database
+- azure-cosmos-db
+units:
+- learn.design-a-geographically-distributed-application.1-introduction
+- learn.design-a-geographically-distributed-application.2-geo-distributed-architecture
+- learn.design-a-geographically-distributed-application.3-geo-distributed-networking
+- learn.design-a-geographically-distributed-application.4-geo-distributed-app
+- learn.design-a-geographically-distributed-application.5-geo-distributed-data
+- learn.design-a-geographically-distributed-application.6-summary
+badge:
+  uid: learn.design-geographically-distributed-application.badge

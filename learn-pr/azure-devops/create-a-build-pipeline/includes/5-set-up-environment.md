@@ -4,14 +4,15 @@ The modules in this learning path form a progression in which you follow the Tai
 
 This learning path also builds on the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path. There, you set up your Azure DevOps organization and created a task backlog on Azure Boards by using the Basic process.
 
-## Run the template
+## Get the Azure DevOps project
 
-At this point, you have two options:
+Here, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You do this by running a template that creates a project for you in Azure DevOps.
 
-1. Continue with the Azure DevOps project that you created in the **Evolve your DevOps practices** learning path.
-1. Run a template that sets up everything for you in your Azure DevOps organization.
+The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey. For learning purposes, each module has an associated Azure DevOps project.
 
-You can continue using your existing project if you completed the previous modules and have the Tailspin project set up in Azure DevOps. Run the template if you don't have the project set up or want to repeat this module in a fresh environment.
+### Run the template
+
+Run a template that sets up everything for you in your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=create-build-pipeline&azure-portal=true)

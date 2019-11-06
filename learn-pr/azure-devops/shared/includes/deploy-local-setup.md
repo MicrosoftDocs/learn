@@ -3,7 +3,7 @@
 Here, you load the _Space Game_ project in Visual Studio Code, configure Git, clone your repository locally, and set the upstream remote so that you can download starter code.
 
 > [!NOTE]
-> If you're already set up with the [mslearn-tailspin-spacegame-web-deploy](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy?azure-portal=true) project locally, you can move to the next section, _Create the Azure App Service environments_.
+> If you're already set up with the [mslearn-tailspin-spacegame-web-deploy](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy?azure-portal=true) project locally, you can move to the next section.
 
 ### Open the integrated terminal
 
@@ -72,10 +72,8 @@ To clone the *Space Game* web project to your computer:
 1. Run the `git clone` command. Replace the URL that's shown here with the contents of your clipboard:
 
     ```bash
-    git clone --branch master --single-branch https://github.com/your-name/mslearn-tailspin-spacegame-web-deploy.git
+    git clone https://github.com/your-name/mslearn-tailspin-spacegame-web-deploy.git
     ```
-
-    You can typically omit the `--branch` and `--single-branch` arguments. We include them here to help you get starter code from the Microsoft repository in later modules.
 
 1. Move to the `mslearn-tailspin-spacegame-web-deploy` directory. This is the root directory of your repository.
 

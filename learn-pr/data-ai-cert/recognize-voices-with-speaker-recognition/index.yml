@@ -8,7 +8,6 @@ metadata:
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Recognize specific voices with the Speaker Recognition APIs in Azure Cognitive Services
 summary: Learn how to use the Speaker Recognition APIs to identify specific people through their voices.
 abstract: |

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query.5-exercise-upload-query-data-hdinsight
+title: Exercise - Upload and query data in HDInsight
+metadata:
+  title: Exercise - Upload and query data in HDInsight
+  description: Exercise - Upload and query data in HDInsight
+  ms.date: 10/25/2019
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: False
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-exercise-upload-query-data-hdinsight.md)]

@@ -23,9 +23,13 @@ levels:
 roles:
 - developer
 - administrator
+- security-engineer
 products:
 - azure
 - azure-virtual-machines
+- azure-virtual-network
+- azure-expressroute
+- azure-vpn-gateway
 - azure-virtual-network
 units:
 - learn.configure-the-network-for-your-virtual-machines.1-introduction

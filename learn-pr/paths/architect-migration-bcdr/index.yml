@@ -36,5 +36,6 @@ modules:
 - learn.build-app-with-scale-sets
 - learn.app-service-autoscale-rules
 - learn.azure.app-service-scale-up-scale-out
+- learn.design-a-geographically-distributed-application
 trophy:
   uid: learn.architect-migration-bcdr.trophy

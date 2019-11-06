@@ -1,8 +1,8 @@
-In this module, you'll add non-functional tests &mdash; thats that check characteristics like performance and reliability &mdash; to the pipeline.
+In this module, you'll add non-functional tests &mdash; tests that check characteristics like performance and reliability &mdash; to the pipeline.
 
 In [Run functional tests in Azure Pipelines](/learn/modules/run-functional-tests-azure-pipelines?azure-portal=true), you and the Tailspin web team added UI tests, a form of functional testing, to the pipeline. Functional tests verify the functionality, or behavior, of software. In other words, functional tests verify that each function of the software does what it should.
 
-But what about the non-functional aspects of an application, such as performance and reliability? Once your service is operational and deployed to an environment, how can you determine the performance of your application under realistic and heavy loads? Does your application expose any possible loopholes or weaknesses which might cause an information breach?
+But what about the non-functional aspects of an application, such as performance and reliability? Once your service is operational and deployed to an environment, how can you determine the performance of your application under both realistic and heavy loads? Does your application expose any possible loopholes or weaknesses that might cause an information breach?
 
 In this module, you'll explore the types of non-functional tests you can run and run load tests in your pipeline with Apache JMeter.
 
@@ -35,7 +35,7 @@ If you want to go through just this module, you need to set up a development env
 * [.NET Core 2.1](https://www.microsoft.com/net/download?azure-portal=true)
 * [Git](https://git-scm.com/downloads?azure-portal=true)
 
-You can get started with Azure and Azure DevOps for free.
+You can get started with Azure and Azure DevOps for free. You don't need an Azure subscription to work with Azure DevOps, but here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription.
 
 This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
 

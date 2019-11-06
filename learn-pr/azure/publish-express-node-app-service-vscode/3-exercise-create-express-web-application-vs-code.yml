@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-express-node-app-service-vscode.3-exercise-create-express-web-application-vs-code
+title: Exercise - Create an Express.js web application with Visual Studio Code
+metadata:
+  title: Exercise - Create an Express.js web application with Visual Studio Code
+  description: In this exercise, you'll install both Node.js and Express.js, and then use them to create a webapp that shows the count down.
+  ms.date: 10/30/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-exercise-create-express-web-application-vs-code.md)]

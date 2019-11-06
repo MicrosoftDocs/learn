@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>NA/iot-central-refrigerated-truck-module</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-5.8%" y="-9.3%" width="111.6%" height="118.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-4" points="66.6879163 15.0813774 65.3775665 15.0813774 65.7280516 24.0223707 68.1119001 24.0223707"></polygon>
+        <filter x="-73.1%" y="-22.4%" width="246.3%" height="144.7%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="-4" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <polygon id="path-6" points="64.3103498 15.0813774 58 15.0813774 58.350485 23.0223707 64.7343335 24.0223707"></polygon>
+        <filter x="-29.7%" y="-22.4%" width="159.4%" height="144.7%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="-4" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <filter x="-20.0%" y="-22.2%" width="140.0%" height="144.4%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="N/A-57" transform="translate(-50.000000, -460.000000)">
+            <g id="NA/iot-central-refrigerated-truck-module" transform="translate(50.000000, 460.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Truck" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(14.000000, 32.000000)">
+                            <rect id="Rectangle" fill="#30404D" fill-rule="evenodd" x="49" y="10" width="4" height="22"></rect>
+                            <path d="M23,0 L23,2 L50,2 L50,30 L0,30 L0,2 L6,2 L6,0 L23,0 Z" id="Combined-Shape" fill="#7CB65A" fill-rule="evenodd"></path>
+                            <rect id="Rectangle" fill="#69994E" fill-rule="evenodd" x="5" y="6" width="2" height="20"></rect>
+                            <rect id="Rectangle" fill="#69994E" fill-rule="evenodd" x="11" y="6" width="2" height="20"></rect>
+                            <rect id="Rectangle" fill="#69994E" fill-rule="evenodd" x="17" y="6" width="2" height="20"></rect>
+                            <rect id="Rectangle" fill="#69994E" fill-rule="evenodd" x="23" y="6" width="2" height="20"></rect>
+                            <rect id="Rectangle" fill="#69994E" fill-rule="evenodd" x="29" y="6" width="2" height="20"></rect>
+                            <rect id="Rectangle" fill="#69994E" fill-rule="evenodd" x="35" y="6" width="2" height="20"></rect>
+                            <rect id="Rectangle" fill="#69994E" fill-rule="evenodd" x="41" y="6" width="2" height="20"></rect>
+                            <path d="M50,2 L55,2 C55.5522847,2 56,2.44771525 56,3 L56,10 C56,10.5522847 55.5522847,11 55,11 L50,11 L50,11 L50,2 Z" id="Rectangle" fill="#69994E" fill-rule="evenodd"></path>
+                            <rect id="Rectangle" fill="#30404D" fill-rule="evenodd" x="0" y="30" width="67" height="6"></rect>
+                            <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 30.000000)">
+                                <path d="M67,0 L67,6 L61.9170737,6.00019152 C61.9716124,6.32533963 62,6.65935467 62,7 C62,10.3137085 59.3137085,13 56,13 C52.6862915,13 50,10.3137085 50,7 C50,6.65935467 50.0283876,6.32533963 50.0829263,6.00019152 L46,6 L46,10 L34,10 L34,6 L31,6 L31,8 L19.4169061,8.00080686 C18.9404956,10.8381232 16.4727145,13 13.5,13 C10.1862915,13 7.5,10.3137085 7.5,7 C7.5,6.65935467 7.52838765,6.32533963 7.58292631,6.00019152 L5,6 L5,9 L0,9 L0,0 L67,0 Z" id="Combined-Shape" fill="#30404D"></path>
+                                <circle id="Oval" fill="#7CB65A" cx="13.5" cy="7" r="3"></circle>
+                                <circle id="Oval-Copy" fill="#7CB65A" cx="56" cy="7.5" r="3.5"></circle>
+                            </g>
+                            <polygon id="Rectangle" fill="#7CB65A" fill-rule="evenodd" points="52 12 66 12 68.1119001 24.1671498 68.0097025 30 52 30"></polygon>
+                            <rect id="Rectangle" fill="#7CB65A" fill-rule="evenodd" x="39" y="36" width="4" height="4"></rect>
+                            <polygon id="Rectangle-Copy" fill="#7CB65A" fill-rule="evenodd" points="63 36 67 36 67 40 63 41"></polygon>
+                            <g id="Path-268" fill="none">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                            </g>
+                            <g id="Path-268-Copy" fill="none">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                            </g>
+                            <rect id="Rectangle" fill="#69994E" fill-rule="evenodd" x="52" y="22" width="3" height="8"></rect>
+                            <rect id="Rectangle" fill="#7CB65A" fill-rule="evenodd" x="51" y="4" width="4" height="1"></rect>
+                            <rect id="Rectangle-Copy-2" fill="#7CB65A" fill-rule="evenodd" x="51" y="6" width="4" height="1"></rect>
+                            <rect id="Rectangle-Copy-2" fill="#7CB65A" fill-rule="evenodd" x="51" y="8" width="4" height="1"></rect>
+                        </g>
+                    </g>
+                    <g id="Group-5" filter="url(#filter-8)" mask="url(#mask-2)" fill="#FFFFFF">
+                        <g transform="translate(37.000000, 12.000000)">
+                            <path d="M10.1446,0.11484 C13.3298,0.03359 16.2266,1.1914 18.8672,3.10944 C19.08596,3.268816 19.3047,3.4274 19.51798,3.59382 C20.0422,4.0032 20.15002,4.63444 19.78674,5.14694 C19.44456,5.62976 18.79298,5.74382 18.25236,5.40554 C17.01018,4.62742 15.73916,3.89772 14.34616,3.42898 C10.68516,2.19774 7.13996,2.5446 3.70936,4.27194 C3.0656,4.59616 2.44296,4.95788 1.82812,5.33522 C1.18594,5.72898 0.55936,5.63366 0.19295996,5.09146 C-0.16328006,4.5649 -0.017980052,3.94614 0.56484,3.50396 C2.59924,1.95708 4.82264,0.81416 7.35864,0.34856 L7.360202,0.347778 C8.278162,0.17356 9.210982,0.096218 10.145402,0.114958 L10.1446,0.11484 Z" id="Fill-1"></path>
+                            <path d="M10.011,5.0742 C12.1234,5.035138 13.9734,5.79296 15.7,6.92966 C15.97344,7.109348 16.24688,7.2859 16.50938,7.48122 C16.99844,7.84918 17.09532,8.41872 16.76406,8.8781 C16.4375,9.32966 15.86562,9.40466 15.35782,9.08592 C11.77962,6.84372 8.19922,6.84132 4.61722,9.078108 C4.0844,9.410928 3.51176,9.331228 3.18754,8.859348 C2.86254,8.386688 2.98754,7.814028 3.5063,7.446848 C4.85474,6.492948 6.2633,5.658568 7.9001,5.290648 C8.5962,5.13596 9.30166,5.082828 10.0111,5.074248 L10.011,5.0742 Z" id="Fill-2"></path>
+                            <path d="M10.2476,9.7812 C11.3312,9.78745 12.4866,10.31558 13.514,11.16244 C13.87806,11.46244 13.93744,11.93432 13.696032,12.32026 C13.461652,12.69448 13.005412,12.84214 12.571812,12.6687 C12.248372,12.539794 11.932752,12.39526 11.612432,12.2562 C10.482752,11.77182 9.358432,11.81558 8.240632,12.295262 C7.951572,12.41948 7.667972,12.556982 7.375012,12.673382 C6.963292,12.843694 6.488292,12.688226 6.258612,12.306202 C6.022672,11.924162 6.110174,11.427302 6.460952,11.148382 C7.485172,10.320262 8.626552,9.784322 10.247752,9.7812 L10.2476,9.7812 Z" id="Fill-3"></path>
+                            <path d="M9.961,17.8890348 C9.00632,17.8850938 8.22428,17.09368 8.2266104,16.13432 C8.225058,15.66244 8.41412,15.2101 8.75006,14.87886 C9.08678,14.54762 9.54224,14.36558 10.01412,14.3734 C10.99616,14.37965 11.75006,15.15464 11.74224,16.15308 C11.732084,17.12496 10.9438,17.89292 9.961,17.8890348 L9.961,17.8890348 Z" id="Fill-4"></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

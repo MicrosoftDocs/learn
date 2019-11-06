@@ -22,6 +22,7 @@ levels:
 - intermediate
 roles: 
 - administrator
+- security-engineer
 products: 
 - azure
 - azure-portal

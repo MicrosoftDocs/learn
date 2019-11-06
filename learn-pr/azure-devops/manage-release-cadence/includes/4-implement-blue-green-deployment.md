@@ -14,7 +14,7 @@ Here, you add a deployment slot to the App Service instance that corresponds to 
 
 By default, every App Service instance provides a default slot, named *production*. You deployed to the *production* slot when you set up the pipeline in the previous section.
 
-An App Service instance can have multiple slots. Here, you add second deployment slot to the App Service instance that corresponds to _Staging_. The deployment slot is named *swap*.
+An App Service instance can have multiple slots. Here, you add a second deployment slot to the App Service instance that corresponds to _Staging_. The deployment slot is named *swap*.
 
 To add the slot:
 
@@ -43,7 +43,7 @@ To add the slot:
     tailspin-space-game-web-staging-1234
     ```
 
-1. Run the following command to add a slot named *swap* to your _Staging_ environment.
+1. Run the following command to add a slot named *swap* to your **staging** environment.
 
     ```azurecli
     az webapp deployment slot create \
@@ -52,7 +52,7 @@ To add the slot:
       --slot swap
     ```
 
-1. Run the following command to list your deployment slot's hostname.
+1. Run the following command to list your deployment slot's host name.
 
     ```azurecli
     az webapp deployment slot list \
@@ -68,7 +68,7 @@ To add the slot:
     tailspin-space-game-web-staging-25391-swap.azurewebsites.net
     ```
 
-    Make note of this hostname for later.
+    Make note of this host name for later.
 
     As an optional step, navigate to your site in a browser. You see the default homepage because you haven't yet deployed your code to this slot.
 

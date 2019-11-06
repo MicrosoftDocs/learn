@@ -1,5 +1,3 @@
-# Cloud User Economics
-
 An organization's IT costs are many-fold, which include expenses for hardware and software as well as expenses for support and management. Typically, these costs fall into two categories:
 
 - **Capital expenses (CapEx):** The initial investment for a particular IT service or solution. For example, when an organization decides to implement a software solution to address a particular need -- for example, enterprise resource planning (ERP) -- CapEx would include all physical hardware and software purchases. CapEx investments are for the lifetime of the solution. CapEx are an up-front expense, which are either paid as a lump sum or financed with extra charges.

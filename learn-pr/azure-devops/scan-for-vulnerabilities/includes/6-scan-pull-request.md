@@ -8,7 +8,7 @@ In this part, you modify your build configuration to run the SonarCloud scanner 
 
 **Andy:** That's true, but it adds up. We want to get feedback on our builds as quickly as possible. Plus, the time will increase as we add more code and there's more to analyze.
 
-**Mara:** Fair point. We don't need to run these checks on every build, but it's important that we validate changes before we merge them into master. I believe there's a way we can conditionally run the scans.
+**Mara:** Fair point. We don't need to run these checks on every build, but it's important that we validate changes before we merge them into `master`. I believe there's a way we can conditionally run the scans.
 
 **Andy:** Perhaps when there's a pull request?
 
@@ -75,17 +75,51 @@ The first condition in the `and()` function checks whether the previous task suc
 
 In YAML, you use the `|` syntax to define a string that spans multiple lines. You could define the condition on a single line, but we write it this way to make it more readable.
 
+## Revert your master branch to its original state
+
+In other modules, you merged code to `master` that might not be compatible with the changes you make here. For learning purposes, here you ensure that your repository's `master` branch on GitHub is in its original state. This step is not typical, but it ensures that your pull request will run smoothly.
+
+You also remove the branch protection rule that you set up on the [Implement a code workflow in your build pipeline using Git and GitHub](/learn/modules/implement-code-workflow?azure-portal=true) module.
+
+To delete the branch protection rule:
+
+1. In GitHub, go to your _Space Game_ project repository.
+1. Select the **Settings** tab.
+1. On the menu, select **Branches**.
+1. Under **Branch protection rules**, locate the rule named **master**.
+
+    > [!NOTE]
+    > If you don't have this rule, you can skip the next step.
+1. Select **Delete**.
+
+   The rule is deleted.
+
+To reset your `master` branch:
+
+1. In Visual Studio Code, go to the integrated terminal, and then run these commands:
+
+    ```bash
+    git checkout master
+    git reset --hard upstream/master --
+    git push -f origin master
+    ```
+
+    This resets your `master` branch to the match the one provided in Microsoft's version of this repository.
+
+    > [!WARNING]
+    > Although we ordinarily don't recommend that you force-push changes, you do so here to reset the state of your GitHub repository. In practice, there are safer ways to [revert changes through Git](https://github.blog/2015-06-08-how-to-undo-almost-anything-with-git?azure-portal=true).
+
 ## Scan only pull requests to the master branch
 
 In this part, you provide a condition to each build task that relates to SonarCloud. This condition limits scans to only when the build is for a pull request to the `master` branch.
 
-1. From Visual Studio Code, modify **azure-pipelines.yml** like this:
+1. From Visual Studio Code, modify *azure-pipelines.yml* like this:
 
-    [!code-yml[](code/6-azure-pipelines.yml?highlight=49-55,85-91,95-101)]
+    [!code-yml[](code/6-azure-pipelines.yml?highlight=52-58,88-94,98-104)]
 
     The highlighted parts show you where the conditions are applied to the SonarCloud build tasks.
 
-1. From the integrated terminal, add **azure-pipelines.yml** to the index, commit the changes, and push the branch up to GitHub.
+1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the changes, and push the branch up to GitHub.
 
     ```bash
     git add azure-pipelines.yml
@@ -93,6 +127,13 @@ In this part, you provide a condition to each build task that relates to SonarCl
     git push origin security-scan
     ```
 
+1. As an optional step, go to your project in Azure Pipelines and trace the build as it runs.
+
+    You see that the scanning tasks that relate to SonarCloud are now skipped.
+
+    ![Azure Pipelines showing skipped tasks](../media/6-ci-skipped-tasks.png)
+
+    That's because this run is for a normal CI build, and not a PR build. The conditions you added to your pipeline configuration run these tasks only when the build is for a pull request.
 1. From a browser, go to [github.com](https://www.github.com?azure-portal=true) and sign in.
 1. Go to your **mslearn-tailspin-spacegame-web** repository.
 1. On the drop-down menu, go to your `security-scan` branch.
@@ -107,9 +148,11 @@ In this part, you provide a condition to each build task that relates to SonarCl
 1. Specify a title for your pull request and add a description.
 
     * Title:
-    > _Run SonarCloud only on pull requests to master_
+
+        > _Run SonarCloud only on pull requests to master_
     * Description:
-    > _Run SonarCloud less often to reduce build times for normal CI builds._
+
+        > _Run SonarCloud less often to reduce build times for normal CI builds._
 
 1. Select the **Create pull request** button to complete your pull request.
 
@@ -119,21 +162,9 @@ In this part, you provide a condition to each build task that relates to SonarCl
 
 1. From Azure DevOps, watch the build.
 
-    You see that the build happens two times.
+    This time, you see a _pull request build_.
 
-    ![Pull request triggers two builds](../media/6-ci-pr-builds.png)
-
-    The build shown on the bottom is the first build. Recall that Azure Pipelines builds your application each time you push up a branch. This build relates to the `git push` command you just ran. This kind of build is called a _CI build_.
-
-    The build shown on top is the second build. When you submit a pull request on GitHub, Azure Pipelines builds your application. This kind of build is called a _pull request build_.
-
-    Click through to each build task, starting with the CI build.
-
-    You see that the SonarCloud tasks are skipped. That's because the CI build is a normal build against the `security-scan` branch.
-
-    ![Azure Pipelines showing a CI build that skips unneeded tasks](../media/6-ci-build-tasks.png)
-
-    You see that all tasks, including the SonarCloud tasks, are run in the pull request build. That's because your pull request targets the `master` branch.
+    You see that all tasks, including the SonarCloud tasks, are run in the pull request build. That's because your pull request targets the `master` branch, which satisfies the conditions to run these tasks.
 
     ![Azure Pipelines showing a PR build that runs all tasks](../media/6-pr-build-tasks.png)
 
