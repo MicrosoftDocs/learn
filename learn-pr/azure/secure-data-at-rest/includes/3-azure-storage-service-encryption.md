@@ -10,7 +10,7 @@ Based on the type of classification, when your data is stored it will need conti
 
 A physical hard disk in an Azure datacenter is unlikely to be stolen. Personal devices and laptops in your organization are easier targets. It's important to have safeguards that meet your organization's regulatory obligations, and a strategy for keeping data secure.
 
-Storage Service Encryption uses 256-bit AES encryption. When your data is in any tier of an Azure storage account, it's encrypted by default. Each storage account is automatically encrypted as it's created. In fact, you can't disable encryption for storage accounts even if you want to. You do have the option to choose whether you want to use your own customer-managed keys (BYOK) or the default Microsoft-managed keys that are kept in Azure Key Vault.
+Storage Service Encryption uses 256-bit AES encryption. When your data is in any tier of an Azure storage account, it's encrypted by default. Each storage account is automatically encrypted as it's created. In fact, you can't disable encryption for storage accounts even if you want to. You have the option to choose whether you want to use your own customer-managed keys (BYOK) or the default Microsoft-managed keys that are kept in Azure Key Vault.
 
 Storage Service Encryption supports encryption for the following types of storage:
 
@@ -30,7 +30,7 @@ This encryption is achieved through DM-Crypt if you're dealing with Linux-based 
 
 Always take a snapshot of the VM, or create a backup, before you enable disk encryption. This action helps keep your VM safe if a problem occurs during the disk encryption process. 
 
-Another thing to keep in mind is that when you're in the process of encrypting Linux OS disks, you should consider those Linux machines unusable. And finally, the key vault for the keys and the virtual machine should always be in the same region.
+When you're in the process of encrypting Linux OS disks, you should consider those Linux machines unusable. Also, the key vault and the virtual machine should always be in the same region.
 
 When you've taken the appropriate precautions, you can enable disk encryption on a VM. You can also keep all of your disk encryption keys secure in Azure Key Vault. The following example shows how to use the Azure CLI to encrypt a VM running on Azure:
 
@@ -42,7 +42,7 @@ az vm encryption enable \
 --volume-type [All|OS|Data]
 ```
 
-Ensure that the disks have been encrypted by verifying:
+Ensure that the disks have been encrypted by using this command:
 
 ```azurecli
 az vm encryption show --name "YourSecureVM" --resource-group "YourVirtualMachineResourceGroup"

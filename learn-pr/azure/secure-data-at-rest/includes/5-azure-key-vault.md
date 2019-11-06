@@ -22,7 +22,7 @@ Azure Key Vault is supported on many Azure services, including database services
 
 You can interact with Azure Key Vault by using the Azure CLI, PowerShell, Azure Resource Manager templates, the Azure portal, and SDKs for many languages.
 
-The following example in Azure CLI shows how you would create a key vault and securely store a secret password the vault:
+The following example in Azure CLI shows how you would create a key vault to store a secret password:
 
 ```azurecli
 # Create a key vault

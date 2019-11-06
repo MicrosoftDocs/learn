@@ -50,7 +50,7 @@ The terms for classification can vary between organizations, but they generally 
 
 Generally, you can categorize data as either structured or unstructured. 
 
-Structured data can reside in a spreadsheet or a relational database. This type of data is in a fixed field that's part of a larger record. Think about a spreadsheet that shows employee details. You'd have columns for details about each employee – for example, employee ID, role, and salary. Here's an example that shows what that type of structured data might look like:
+Structured data can reside in a spreadsheet or a relational database. This type of data is in a fixed field that's part of a larger record. Think about a spreadsheet that shows employee details. You'd have columns for details about each employee, such as employee ID, role, and salary. Here's an example that shows what that type of structured data might look like:
 
 | Employee ID | Role     | Salary  |
 | ----------- | -------- | ------- |
