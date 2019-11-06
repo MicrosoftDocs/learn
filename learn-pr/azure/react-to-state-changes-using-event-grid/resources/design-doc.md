@@ -13,11 +13,13 @@ React to state changes in your Azure services using Event Grid
 
 ## Product(s)
 
-- Event Grid
+- Azure Logic Apps
+- Azure Event Grid
 
 ## Prerequisites
 
-- TBD based on module content
+- An Azure subscription
+- An email account to receive notifications
 
 ## Summary
 
@@ -34,9 +36,8 @@ Identify the subtasks of *React to state changes in your Azure services using Ev
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
+| Trigger a logic app with Event Grid | "...and need to be notified if there are any changes to the virtual machines on Azure" | Exercise | Describe the capabilities and use cases for Event Grid | Yes |
+| Build logic in a logic app | "You would like to receive emails if there are any changes to these virtual machines..." | Exercise | Create an application that handles events with Event Grid and Logic Apps | Yes |
 
 ## Outline the units
 
@@ -44,40 +45,70 @@ Identify the subtasks of *React to state changes in your Azure services using Ev
 
     You work on an operations team for a large organization. You have a set of dedicated client virtual machines that are under strict regulatory and change control, and need to be notified if there are any changes to the virtual machines on Azure. You would like to receive emails if there are any changes to these virtual machines, so that you can address any issues as they arise.
 
-1. **Learning-content unit title**
+1. **Trigger a logic app with Event Grid**
 
     List the content that will enable the learner to *subtask*:
 
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+    - Create a logic app
+        - What is Azure Logic Apps?
+        - What are connectors and triggers?
+        - The Logic Apps Designer
+    - Design a logic app that is triggered by Event Grid
+        - What is Event Grid?
+        - Capabilities and use cases for Event Grid
+        - Common event sources and event handlers
+        - Topics and event subscriptions
+        - The Azure Event Grid connector with its triggers and actions
 
-    **Knowledge check**
+1. **Exercise - Trigger a logic app with Event Grid**
 
-    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-knowledge-check)*
+    List the steps, which apply the learning content from previous unit:
 
-    - Question type
-    - Question type
+    1. Create a virtual machine
+        - Either in the portal or by running an Azure CLI command in the Cloud Shell
+    1. Create a blank logic app
+        - Complete **Create** page in Azure portal
+        - Select a blank template for the logic app
+    1. Add an Event Grid trigger
+        - Sign into Event Grid
+        - Subscribe to the event
+        - Save the incomplete logic app
 
-1. **Exercise - exercise unit title**
+1. **Build logic in a logic app**
 
-    List the steps which apply the learning content from previous unit:
+    List the content that will enable the learner to *Build logic in a logic app*:
 
-    1. Step
-    1. Step
-    1. Step
+    - Build logic using the Logic Apps designer
+        - What are actions?
+        - What are conditions, switches, loops, and branches?
+    - Edit a logic app's JSON code
+        - The Logic Apps code view editor
+        - Using Visual Studio Code to edit a logic app
+
+1. **Exercise - Email users when virtual machines change**
+
+    List the steps, which apply the learning content from previous unit:
+
+    1. Add a condition
+        - Check the event body for a data object where the operationName property is equal to Microsoft.Compute/virtualMachines/write
+    1. Send an email notification
+        - Add the Send an Email action in the If true box of the condition
+        - Full in the student's own email address with a subject and body
+        - Save the logic app
+    1. Test the logic app
+        - Resize the virtual machine
+        - Examine the email received from the logic app
+        - Review the trigger history for the logic app
 
 1. **Summary**
 
     How did you solve the problem in the initial scenario with the knowledge learned in the module? 
+
+    Your organization needed to carefully control the configuration of its virtual machines in Azure to comply with regulations. You needed to ensure that, when virtual machines were modified, administrators were notified so they could check the new setup. By creating a logic app in Azure and using an Event Grid trigger, you ensured that Azure could respond to such configuration changes and send an email to administrators.
+
+    By using an Event Grid trigger in Azure Logic Apps, you can complete this task without writing any code, unless to prefer to edit your logic app's JSON definition manually. By enabling administrators to intercept and respond to events without custom code, Event Grid makes it easy to ensure compliance with regulations.
     
-    *Add your summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-module-summary-unit)*
+    [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-module-summary-unit)
 
 ## Notes
 
