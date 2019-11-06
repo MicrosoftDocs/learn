@@ -96,7 +96,10 @@ Before Mara and Andy write any pipeline code, they decide to try things manually
 1. Run the following `reportgenerator` command to convert the Cobertura file to HTML:
 
     ```bash
-    $HOME/.dotnet/tools/reportgenerator -reports:./Tailspin.SpaceGame.Web.Tests/TestResults/Coverage/coverage.cobertura.xml -targetdir:./CodeCoverage -reporttypes:HtmlInline_AzurePipelines
+    $HOME/.dotnet/tools/reportgenerator \
+      -reports:./Tailspin.SpaceGame.Web.Tests/TestResults/Coverage/coverage.cobertura.xml \
+      -targetdir:./CodeCoverage \
+      -reporttypes:HtmlInline_AzurePipelines
     ```
 
     A number of HTML files appear in the **CodeCoverage** folder at the root of the project.
@@ -138,7 +141,7 @@ In this section, you add tasks that measure code coverage to your build pipeline
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* like this:
 
-    [!code-yml[](code/6-azure-pipelines.yml?highlight=45-68)]
+    [!code-yml[](code/6-azure-pipelines.yml?highlight=48-71)]
 
     This version builds upon your existing configuration. Here's a summary of what's new:
 
@@ -155,17 +158,17 @@ Here you push your changes to GitHub and see the pipeline run. Recall that you'r
 
 In the integrated terminal, add *azure-pipelines.yml* to the index, commit the changes, and push the branch up to GitHub.
 
-    ```bash
-    git add azure-pipelines.yml
-    git commit -m "Add code coverage"
-    git push origin code-coverage
-    ```
+```bash
+git add azure-pipelines.yml
+git commit -m "Add code coverage"
+git push origin code-coverage
+```
 
 ## Watch Azure Pipelines run the tests
 
 Here you see the tests run in the pipeline and then visualize the results from Azure Test Plans.
 
-1. In Azure DevOps, trace the build through each of the steps.
+1. In Azure Pipelines, trace the build through each of the steps.
 1. When the build finishes, select the **Code Coverage** tab.
 
     You view the same results that you did when you ran the tests locally.
@@ -186,7 +189,7 @@ Here you'll add a second widget that summarizes code coverage.
 1. Select **Get it free**.
 1. In the drop-down list, select your Azure DevOps organization.
 1. Select **Install**.
-1. Go to the **Azure DevOps** tab.
+1. Go back to Azure DevOps.
 1. Go to **Overview** > **Dashboards**.
 1. Select **Edit**.
 1. Search for **Code Coverage**, and then select **Code Coverage**.
