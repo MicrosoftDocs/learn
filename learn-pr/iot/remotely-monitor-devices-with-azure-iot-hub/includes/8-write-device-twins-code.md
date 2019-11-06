@@ -202,20 +202,19 @@ client.getTwin(function (err, twin) {
 2. Add the following method to the class.
 
 ``` cs
-        // Device twin reported properties.
         private static void UpdateTwinProperties()
         {
             try
             {
-                greenMessage("Updating twin properties");
-                greenMessage("Desired humidity: " + desiredHumidity);
-                greenMessage("Desired temperature: " + desiredTemperature);
+                greenMessage("\nTwin state reported");
 
                 // Report the changes back to the IoT Hub.
                 var reportedProperties = new TwinCollection();
+                reportedProperties["fanstate"] = fanState.ToString();
                 reportedProperties["humidity"] = desiredHumidity;
                 reportedProperties["temperature"] = desiredTemperature;
                 s_deviceClient.UpdateReportedPropertiesAsync(reportedProperties).Wait();
+                greenMessage(reportedProperties.ToJson());
             }
             catch
             {
@@ -245,6 +244,8 @@ client.getTwin(function (err, twin) {
                 // Set the desired properties for the device app.
                 desiredHumidity = data.humidity;
                 desiredTemperature = data.temperature;
+                greenMessage("Setting desired humidity to " + desiredHumidity);
+                greenMessage("Setting desired temperature to " + desiredTemperature);
                 UpdateTwinProperties();
             }
             catch(Exception ex)
@@ -253,7 +254,13 @@ client.getTwin(function (err, twin) {
             }
 ```
 
-5. Save the Program.cs file.
+5. Add a line to the **SetFanState** task, before acknowledging the direct method call, to update the reported properties.
+
+``` cs
+                    UpdateTwinProperties();
+```
+
+6. Save the Program.cs file.
 
 ::: zone-end
 
