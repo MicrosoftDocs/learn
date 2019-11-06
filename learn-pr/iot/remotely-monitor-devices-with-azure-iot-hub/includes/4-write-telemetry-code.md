@@ -10,7 +10,10 @@ At the end of this unit, you will be sending and receiving telemetry.
 
 1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Cheese Cave device app`. Save the file to the "cheesecave" folder (locating this folder might involve a bit of navigation), with the name "app.js". By using the .js file extension, Visual Studio Code interprets this file as JavaScript and evaluates the contents with the JavaScript language service.
 
-1. Back in the terminal, install the required libraries. Enter **npm install azure-iot-device**, then **npm install azure-iot-device-mqtt**, and then **npm install chalk**.
+1. Back in the terminal, install the required libraries. Enter:
+    * **npm install azure-iot-device**
+    * **npm install azure-iot-device-mqtt**
+    * **npm install chalk**
 
 1. After you have entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the cheesecave folder is the current folder of the terminal, when you run the app.
 
@@ -25,7 +28,10 @@ At the end of this unit, you will be sending and receiving telemetry.
 
 1. Enter `dotnet restore` in the terminal. This command gives your app access to the required .NET packages.
 
-1. In the terminal, install the required libraries. Enter **dotnet add package Microsoft.Azure.Devices.Client**, and **dotnet add package Microsoft.Azure.Devices.Shared**, then **dotnet add package Newtonsoft.Json**.
+1. In the terminal, install the required libraries. Enter:
+    * **dotnet add package Microsoft.Azure.Devices.Client**
+    * **dotnet add package Microsoft.Azure.Devices.Shared**
+    * **dotnet add package Newtonsoft.Json**
 
 1. From the **File** menu, open up the Program.cs file, and delete the default contents.
 
@@ -38,7 +44,9 @@ At the end of this unit, you will be sending and receiving telemetry.
 
     ![Screenshot showing how to create the blank Node.js Visual Studio project](../media/cheesecave-vs-project.png)
 
-1. In the **Solution Explorer** tab, right click **npm**, and select **Install New npm Packages**. Install **azure-iot-device**, and **chalk**.
+1. In the **Solution Explorer** tab, right click **npm**, and select **Install New npm Packages**. Install:
+    * **azure-iot-device**
+    * **chalk**
 
     ![Screenshot showing how to install npm packages into your Visual Studio project](../media/cheesecave-vs-npm.png)
 
@@ -53,7 +61,12 @@ At the end of this unit, you will be sending and receiving telemetry.
 
 1. Give the project a friendly name, such as "CheeseCaveDevice".
 
-1. Under **Tools/NuGet Package Manager**, select **Manage NuGet Packages for Solution...**. Install **Microsoft.Azure.Devices.Client**, **Microsoft.Azure.Devices.Shared**, and **Newtonsoft.Json**.
+1. Under **Tools/NuGet Package Manager**, select **Manage NuGet Packages for Solution**. Install the following libraries:
+    * **Microsoft.Azure.Devices.Client**
+    * **Microsoft.Azure.Devices.Shared**
+    * **Newtonsoft.Json**
+
+1. Delete the default contents of the Program.cs file.
 
 1. Add all the code that follows to the Program.cs file.
 
@@ -353,19 +366,19 @@ namespace simulated_device
 }
 ```
 
-3. Save the Program.cs file.
-
   > [!NOTE]
   > Read through the comments in the code, noting how the temperature and humidity settings from the description of the scenario in the introduction have worked their way into the code.
 
-4. Replace the &lt;your device connection string&gt; with the device connection string you saved off in the previous unit. No other lines of code need to be changed.
+3. Replace the &lt;your device connection string&gt; with the device connection string you saved off in the previous unit. No other lines of code need to be changed.
+
+4. Save the Program.cs file.
 
 ::: zone-end
 
 ### Test your code to send telemetry
 
 1. Run the app.
-1. You should quickly get a console screen, similar to the following image. Note the use green text, to show things are working as they should! If you do not get a screen similar to this image, check your device connection string carefully.
+1. You should quickly get a console screen, similar to the following image. Note the use of green text, to show things are working as they should! If you do not get a screen similar to this image, check your device connection string carefully.
 
     ![Screenshot showing the temperature and humidity telemetry being sent](../media/cheesecave-telemetry.png)
 
@@ -387,7 +400,10 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 
 1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Cheese Cave back-end service app`. Save the file to the "cheesecaveservice" folder (locating this folder might involve a bit of navigation), with the name "app.js".
 
-1. Back in the terminal, enter **npm install &#64;azure/event-hubs**. When this package has installed, enter **npm install azure-iothub**. Then enter **npm install chalk**.
+1. Back in the terminal, enter the following commands:
+    * **npm install &#64;azure/event-hubs**
+    * **npm install azure-iothub**
+    * **npm install chalk**
 
 1. After you have entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the "cheesecaveservice" folder is the current folder of the terminal.
 
@@ -400,7 +416,10 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 
 1. Enter `dotnet restore` in the terminal. This command gives your app access to the required .NET packages.
 
-1. In the terminal, enter **dotnet add package Microsoft.Azure.EventHubs**, and **dotnet add package Microsoft.Azure.Device**, then **dotnet add package Newtonsoft.Json**.
+1. In the terminal, enter the following commands:
+    * **dotnet add package Microsoft.Azure.EventHubs**
+    * **dotnet add package Microsoft.Azure.Device**
+    * **dotnet add package Newtonsoft.Json**.
 
 1. From the **File** menu, open up the Program.cs file, and delete the default contents.
 
@@ -411,7 +430,10 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 
 1. Navigate to the **JavaScript** project types, and create a new **Blank Node.js Console Application** project, called "CheeseCaveOperator".
 
-1. In the **Solution Explorer** tab, right click **npm**, and select **Install New npm Packages**. Install **&#64;azure/event-hubs**, **azure-iothub**, and **chalk**.
+1. In the **Solution Explorer** tab, right click **npm**, and select **Install New npm Packages**. Install the following libraries:
+    * **&#64;azure/event-hubs**
+    * **azure-iothub**
+    * **chalk**
 
 1. Delete the default contents of the app.js file. Add a comment line such as `// Cheese Cave Operator back-end app`.
 
@@ -424,7 +446,12 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 
 1. Give the project a friendly name, such as "CheeseCaveOperator".
 
-1. Under **Tools/NuGet Package Manager**, select **Manage NuGet Packages for Solution...**. Install **Microsoft.Azure.Devices**, **Microsoft.Azure.EventHubs**, and **Newtonsoft.Json**.
+1. Under **Tools/NuGet Package Manager**, select **Manage NuGet Packages for Solution**. Install the following libraries:
+    * **Microsoft.Azure.Devices**
+    * **Microsoft.Azure.EventHubs**
+    * **Newtonsoft.Json**
+
+1. Delete the default contents of Program.cs.
 
 1. Add all the code that follows to the Program.cs file.
 
@@ -630,16 +657,16 @@ namespace cheesecave_operator
 
 ```
 
-    > [!NOTE]
-    > Our implementation only reads messages after the app has been started. Any telemetry sent prior to this is not handled.
+> [!NOTE]
+> Our implementation only reads messages after the back-end app has been started. Any telemetry sent prior to this is not handled.
 
 2. Replace the &lt;your service connection string&gt; with the _service_ connection string you saved off in a text file, in the previous unit.
 
-3. Save the Program.cs file.
+3. Replace the &lt;your event hub endpoint&gt;, &lt;your event hub path&gt;, and the &lt;your event hub Sas key&gt; with the strings you saved off to your text file.
+
+4. Save the Program.cs file.
 
 ::: zone-end
-
-
 
 ### Test your code to receive telemetry
 
@@ -650,6 +677,6 @@ This test is important, checking whether your back-end app is picking up the tel
 
     ![Screenshot showing the temperature and humidity telemetry being received](../media/cheesecave-telemetry-received.png)
 
-1. Visually compare the telemetry sent and received. Is there an exact match? Is there much of a delay?
+1. Visually compare the telemetry sent and received. Is there an exact match? Is there much of a delay? If it looks good, close both the console windows for now.
 
-If everything is working so far, completing this unit is great progress. You have an app sending telemetry from a device, and a back-end app acknowledging receipt of the data. This unit covers the _monitoring_ side of our scenario. The next step handles the _control_ side - what to do when there are issues with the data. Clearly, there are issues, we are getting temperature and humidity alerts.
+Completing this unit is great progress. You have an app sending telemetry from a device, and a back-end app acknowledging receipt of the data. This unit covers the _monitoring_ side of our scenario. The next step handles the _control_ side - what to do when there are issues with the data. Clearly, there are issues, we are getting temperature and humidity alerts!
