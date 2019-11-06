@@ -1,4 +1,4 @@
-In the Customer Portal scenario, you've decided that you need more detailed information on the operations being performed rather than just the metrics that summarize performance. In this exercise, you'll enable logging for your storage account, run the sample application again, and then download the log data that is generated.
+In the Customer Portal scenario, you've decided that you need more detailed information on the operations being performed rather than just the metrics that summarize performance. In this exercise, you'll enable logging for your storage account, rerun the sample application, and then download the log data that is generated.
 
 ## Enable Storage Analytics logging
 
@@ -12,7 +12,7 @@ In the Customer Portal scenario, you've decided that you need more detailed info
 
 5. Click **Save**.
 
-    ![Screenshot of diagnostic settings page in the Azure portal, with logging enabled](../media/6-enable-logging.png)
+    ![Screenshot of the diagnostic settings page in the Azure portal, with logging, enabled](../media/6-enable-logging.png)
 
 6. Switch to the Cloud Shell running PowerShell.
 
@@ -40,7 +40,7 @@ In the Customer Portal scenario, you've decided that you need more detailed info
     cd $HOME/storageapps/StorageTest
     ```
 
-2. Run the sample app that as shown below. Replace *\<your connection string\>* with the connection string for your storage account. Ensure that you surround your connection string with double-quotes:
+2. Run the sample app as shown below. Replace *\<your connection string\>* with the connection string for your storage account. Ensure that you surround your connection string with double-quotes:
 
     ```powershell
     dotnet run "<your connection string>" testcontainer

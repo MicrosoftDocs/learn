@@ -1,6 +1,6 @@
 Diagnosing and troubleshooting issues for an application hosted in a cloud environment can be more complicated than in traditional environments. To support these types of applications successfully, you should monitor them and understand how to diagnose and troubleshoot any aspects of them and their dependent technologies. A combination of tools and logging can be used to identify issues. 
 
-The new Automobile Distribution customer portal uses Azure Storage to store uploaded files. As there are some concerns about the performance of storing files in the portal, the first step to diagnosing any issues is knowing which troubleshooting tools you can use.
+The new Automobile Distribution customer portal uses Azure Storage to store uploaded files. As there are some concerns about the performance of storing data in the portal, the first step to diagnosing any issues is knowing which troubleshooting tools you can use.
 
 In this unit, you'll learn about some of the different tools you can use to analyze issues with Azure Storage.
 
@@ -10,14 +10,14 @@ There are several tools you can use to monitoring Azure Storage. You can use the
 
 ### Azure portal
 
-The Azure portal gives you a graphical way to view and monitor storage performance in near real time. There can be a delay of a few minutes between capturing data and it appearing on the Azure portal. In the Azure portal, you can:
+The Azure portal gives you a graphical way to view and monitor storage performance in near real-time. There can be a delay of a few minutes between capturing data and it appearing on the Azure portal. In the Azure portal, you can:
 
 - Configure metrics and logging.
 - View graphs and charts, and select which metrics to visualize.
-- Assess how your applications are doing over time.
+- Assess how your applications are doing over some time.
 - Configure alerts to notify you of any behavior that is out of the ordinary.
 
-You can monitor the performance of a storage account using the **Overview** tab on the storage account page. Scroll down to the monitoring section and choose what to show data for. The image below shows an example the ingress, egress, average latency, and request breakdown for blob storage in a storage account:
+You can monitor the performance of a storage account using the **Overview** tab on the storage account page. Scroll down to the monitoring section and choose what data to show data. The image below shows an example that includes the ingress, egress, average latency, and request breakdown for blob storage in a storage account:
 
 ![Screenshot of the Metrics page for a storage account in the Azure portal](../media/2-block-blob-metrics.png)
 
@@ -25,7 +25,7 @@ You can monitor the performance of a storage account using the **Overview** tab 
 
 You can download the storage account logs to your local computer by using the [AzCopy](https://aka.ms/AzCopy) utility, or the desktop version of [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/). You can then analyze this data by using analysis tools on your desktop.
 
-The following command shows an example that retrieves the diagnostic logs for a storage account named *mystorageaccount*. The log files are saved to a folder named *C:\logs* on the local computer. Replace **\<storage account key\>** with the one of the keys that you can find on the **Access keys** page for the storage account in the Azure portal:
+The following command shows an example that retrieves the diagnostic logs for a storage account named *mystorageaccount*. The log files are saved to a folder named *C:\logs* on the local computer. Replace **\<storage account key\>** with one of the keys that you can find on the **Access keys** page for the storage account in the Azure portal:
 
 ```bash
 azcopy /source:"https://mystorageaccount.blob.core.windows.net/$logs" /dest:C:logs /sourceType:blob /SourceKey:<storage account key> /S
@@ -50,7 +50,7 @@ You can use Message Analyzer to examine many types of log files, including:
 - .NET client logs, created when client-side logging is enabled for a .NET Core application.
 - HTTP network trace log, created by a web server.
 
-Use Message Analyzer for reading log files. It displays log data in visual format. It allows searching, grouping, and filtering, enabling you to easily examine errors and locate the source of performance issues.
+Use the Message Analyzer for reading log files. It displays log data in a visual format. It allows searching, grouping, and filtering, enabling you to examine errors and locate the source of performance issues quickly.
 
 The image below shows Message Analyzer displaying diagnostic log information for a storage account. The log information was downloaded from Azure storage using the AzCopy command shown previously:
 

@@ -11,15 +11,29 @@ namespace StorageTest
     {
         static void Main(string[] args)
         {
-            string connection = args[0];
-            string container = args[1];
-            
-            CloudStorageAccount account = CloudStorageAccount.Parse(connection);
-            CloudBlobClient blobClient = account.CreateCloudBlobClient();
-            Console.WriteLine("Running");
+            if (args.Length == 2)
+            {
+                try
+                {
+                    string connection = args[0];
+                    string container = args[1];
 
-            UploadBlobAsync(blobClient, container).Wait();
-            DownloadBlobAsync(blobClient, container).Wait();
+                    CloudStorageAccount account = CloudStorageAccount.Parse(connection);
+                    CloudBlobClient blobClient = account.CreateCloudBlobClient();
+                    Console.WriteLine("Running");
+
+                    UploadBlobAsync(blobClient, container).Wait();
+                    DownloadBlobAsync(blobClient, container).Wait();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error executing storage test. {ex.Message}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Please provide two arguments.");
+            }
         }
                      
         static async Task UploadBlobAsync(CloudBlobClient client, string container)
@@ -27,10 +41,10 @@ namespace StorageTest
             byte[] data = new UnicodeEncoding().GetBytes("dummy data");
             CloudBlobContainer blobContainer = client.GetContainerReference(container);
             
-            for (int numiterations = 0; numiterations < 100; numiterations++)
+            for (int iterations = 0; iterations < 100; iterations++)
             {
-                CloudBlockBlob blockBlob = blobContainer.GetBlockBlobReference($"testblob{numiterations}.dat");
-                Console.WriteLine($"Uploading blob {numiterations}");
+                CloudBlockBlob blockBlob = blobContainer.GetBlockBlobReference($"testblob{iterations}.dat");
+                Console.WriteLine($"Uploading blob {iterations}");
                 using (MemoryStream stream = new MemoryStream())
                 {
                     for (int i = 1; i < 100000; i++)
@@ -47,10 +61,10 @@ namespace StorageTest
         {
             CloudBlobContainer blobContainer = client.GetContainerReference(container);
 
-            for (int numiterations = 0; numiterations < 100; numiterations++)
+            for (int iterations = 0; iterations < 100; iterations++)
             {
-                CloudBlockBlob blockBlob = blobContainer.GetBlockBlobReference($"testblob{numiterations}.dat");
-                Console.WriteLine($"Downloading blob {numiterations}");
+                CloudBlockBlob blockBlob = blobContainer.GetBlockBlobReference($"testblob{iterations}.dat");
+                Console.WriteLine($"Downloading blob {iterations}");
                 using (MemoryStream stream = new MemoryStream(100000))
                 {
                     await blockBlob.DownloadToStreamAsync(stream);
