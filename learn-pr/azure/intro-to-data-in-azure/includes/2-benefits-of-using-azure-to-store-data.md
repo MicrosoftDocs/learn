@@ -15,7 +15,7 @@ Here are some of the important benefits of Azure data storage:
 - **Support for data analytics**: supports performing analytics on your data consumption.
 - **Encryption capabilities**: data is encrypted to make it highly secure; you also have tight control over who can access the data.
 - **Multiple data types**: Azure can store almost any type of data you need. It can handle video files, text files, and even large binary files like virtual hard disks. It also has many options for your relational and NoSQL data.
-- **Data storage in virtual disks**: Azure also has the capability of storing up to 8 TB of data in its virtual disks. This capability is significant when you're storing heavy data such as videos and simulations.
+- **Data storage in virtual disks**: Azure also has the capability of storing up to 32 TB of data in its virtual disks. This capability is significant when you're storing heavy data such as videos and simulations.
 - **Storage tiers**: storage tiers to prioritize access to data based on frequently used versus rarely used information.
 
 ## Types of data

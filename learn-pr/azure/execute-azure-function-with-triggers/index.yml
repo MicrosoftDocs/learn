@@ -4,8 +4,8 @@ metadata:
   title: Execute an Azure Function with triggers
   description: A trigger is responsible for executing an Azure Function and there are dozens of triggers to choose from. This module will you show you some of the most common types of triggers and how to configure them to execute your logic.
   ms.date: 09/24/2018
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Execute an Azure Function with triggers

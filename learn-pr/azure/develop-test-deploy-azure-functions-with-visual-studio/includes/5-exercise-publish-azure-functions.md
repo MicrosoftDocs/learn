@@ -10,6 +10,8 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
 1. Click **Create a resource**, click **Compute**, and then click **Function App**.
 
+    [!include[](../../includes/functions-classic-workaround.md)]
+
 1. In the **Function App** window, specify the following settings:
 
     > [!NOTE]

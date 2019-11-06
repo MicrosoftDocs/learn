@@ -60,7 +60,7 @@ The deployment will take a couple minutes, during which time you'll see status o
 
 Let's browse to our application to see it live. The last line of text output from `az webapp up`, before the JSON output, has a link to your app. Click it to navigate there in a new browser tab. The page will take a moment to load, as App Service is initializing your app for the first time.
 
-Once it loads, you'll see the "Hello World!" message from your app &mdash; you've deployed successfully!
+Once it loads, you'll see the greeting message from your app &mdash; you've deployed successfully!
 
 ::: zone-end
 
@@ -89,7 +89,7 @@ cd ~/helloworld/target
 curl -v -X POST -u [username]:[password] https://[sitename].scm.azurewebsites.net/api/wardeploy --data-binary @helloworld.war
 ```
 
-When the command finishes running, open a new browser tab and navigate to `https://[web_app_name].azurewebsites.net`. You'll see the "Hello World!" message from your app &mdash; you've deployed successfully!
+When the command finishes running, open a new browser tab and navigate to `https://[web_app_name].azurewebsites.net`. You'll see the greeting message from your app &mdash; you've deployed successfully!
 
 ::: zone-end
 
@@ -122,6 +122,6 @@ The deployment will take a couple minutes, during which time you'll see status o
 
 Let's browse to our application to see it live. The last line of text output from `az webapp up`, before the JSON output, has a link to your app. Click it to navigate there in a new browser tab. The page will take a moment to load, as App Service is initializing your app for the first time.
 
-Once it loads, you'll see the "Hello World!" message from your app &mdash; you've deployed successfully!
+Once it loads, you'll see the greeting message from your app &mdash; you've deployed successfully!
 
 ::: zone-end
