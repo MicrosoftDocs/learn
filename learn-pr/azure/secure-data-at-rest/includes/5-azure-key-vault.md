@@ -1,26 +1,26 @@
-The credentials for the systems that your organization is moving to Azure need to be secured. You need to understand how Azure can help you protect these credentials.
+Your organization is moving systems to Azure. You need to understand how Azure can help you protect the credentials for these systems.
 
 Here, you'll learn about Azure Key Vault, and how you can use it to secure information such as credentials and secrets.
 
-## Separate your code and credentials with Azure Key Vault
+## Separate your code and credentials by using Azure Key Vault
 
-The Azure Key Vault service helps you securely store your secrets and keys. Any sensitive information that must be kept secure is a good candidate for Azure Key Vault. Sensitive information can range from passwords and keys, to connection strings, such as database connection strings. Certificates, such as x509 certificates for HTTPS/SSL connections, which would consist of a private key and public key, also need to be secure.
+The Azure Key Vault service helps you securely store your secrets and keys. Any sensitive information that must be kept secure is a good candidate for Azure Key Vault. Sensitive information can range from passwords and keys to connection strings, such as database connection strings. Certificates also need to be secure. An example is x509 certificates for HTTPS/SSL connections, which consist of a private key and public key.
 
-Azure Key Vault is secure. Your secrets aren't visible to anyone, even Microsoft. Azure Key Vault employs powerful algorithms, and hardware security modules to keep your keys and secrets secure. Using hardware security modules, Azure Key Vault keeps your keys in a secure device. This device is designed to actively resist tampering and other forms of non-authorized use.
+When you use Azure Key Vault, your secrets aren't visible to anyone. Even Microsoft can't view them. Azure Key Vault employs powerful algorithms and hardware security modules to help keep your keys and secrets secure. Azure Key Vault keeps your keys in a secure device. This device is designed to actively resist tampering and other forms of unauthorized use.
 
-An organization might find it's had parts of its code for an application leaked or in the wrong place because of a version control mistake. The source code could show the organization's credentials. If they had used Azure Key Vault to keep their secrets secure, then their application code would be free of their credentials. The application code and the credentials are entirely separated. If someone accessed the application code, the credentials would be secure and not visible in the application.
+An organization might find that parts of its code for an application have leaked or are in the wrong place because of a version control mistake. The source code might show the organization's credentials. If organization had used Azure Key Vault to store their secrets, the application code would be free of credentials. In Key Vault, the application code and the credentials are entirely separated. If someone accessed the application code, the credentials would be secure and not visible in the application.
 
-By separating these concerns, the organization has eliminated what might have been a serious problem. If credentials have to be changed, there's no need to update the applications. The organization would update the credentials in the Key Vault and all applications would automatically point to them.
+By separating these concerns, the organization has eliminated what might have been a serious problem. If credentials have to be changed, there's no need to update the applications. The organization would update the credentials in the key vault, and all applications would automatically point to them.
 
-Azure Key Vault is also sophisticated enough to let you monitor how and when your secrets and keys are used. Azure Key Vault lets you monitor activity on your vault, and enable logging. All this logging data can be archived on Azure storage, streamed for real-time reporting, or fed into Azure Monitor logs. This way, you can draw real insights from usage on your secrets and keys.
+Azure Key Vault is also sophisticated enough to let you monitor how and when your secrets and keys are used. Azure Key Vault lets you monitor activity on your vault, and enable logging. All this logging data can be archived on Azure Storage, streamed for real-time reporting, or fed into Azure Monitor logs. This way, you can draw real insights from usage on your secrets and keys.
 
-Azure Key Vault is supported on many Azure including database services, storage services, and app services.
+Azure Key Vault is supported on many Azure services, including database services, storage services, and app services.
 
-## Secure a secret with Azure Key Vault
+## Secure a secret by using Azure Key Vault
 
 You can interact with Azure Key Vault using the Azure CLI, PowerShell, Azure Resource Manager templates, the Azure portal, and through SDK's for many languages.
 
-Below is an example in Azure CLI, showing how you would create an Azure Key Vault and securely store a secret password into your Azure Key Vault:
+Below is an example in Azure CLI, showing how you would create an Azure key vault and securely store a secret password the vault:
 
 ```azurecli
 # Create a key vault
