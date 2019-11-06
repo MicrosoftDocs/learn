@@ -31,7 +31,7 @@ In this case, the index of the `(` character is 13.  Remember, these values are 
 
 Now that we have the two indexes, we can use them as the boundaries to retrieve the value between them.
 
-### Step 2 - Add code to retrieve the value between two those parenthesis characters
+### Step 2 - Add code to retrieve the value between two parenthesis characters
 
 Modify the code from step 1 to match the following code listing.
 

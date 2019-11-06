@@ -43,7 +43,7 @@ You'll perform three operations on the input using the tools and techniques you 
 
 Whether you get stuck and need to peek at the solution or you finish successfully, continue on to view a solution to this challenge.
 
-### Quick HTML Primer
+### Quick HTML primer
 
 In case you're not familiar with HTML, it's the markup language that is used to create all web pages.  This section can be skipped if you're already well versed in HTML.  It's not designed to be a comprehensive tutorial, but provides enough information to complete this challenge.
 

@@ -4,7 +4,7 @@ In this module, you'll use string helper methods to surgically identify and isol
 
 By the end of this module, you'll be able to modify a string's contents, isolating specific portions to extract, replace, or remove.
 
-## Learning Objectives
+## Learning objectives
 
 In this module, you will:
 
