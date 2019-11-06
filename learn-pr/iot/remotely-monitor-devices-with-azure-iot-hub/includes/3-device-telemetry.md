@@ -2,7 +2,7 @@ Telemetry is the output from sensors. There are many different types of sensors,
 
 The frequency of telemetry output is an important factor. A temperature sensor in a refrigeration unit may only have to report every minute, or less. An acceleration sensor on an aircraft may have to report at least every second.
 
-An IoT device may contain one or more sensors, and have some computational power. There may be LED lights, and even a small screen, on the IoT device. However, the device is not intended for direct use by human operators. An IoT device is designed to receive its instructions from the cloud.
+An IoT device may contain one or more sensors, and have some computational power. There may be LED lights, and even a small screen, on the IoT device. However, the device isn't intended for direct use by human operators. An IoT device is designed to receive its instructions from the cloud.
 
 ## Cheese cave device
 
@@ -16,4 +16,4 @@ Another feature of our IoT device is that it can accept _desired_ values from th
 
 The coding in this module is broken down into three parts: sending and receiving telemetry, sending and receiving a direct method, and managing device twins.
 
-Let's start by writing two apps: one for the device to send telemetry, and one back-end service to run in the cloud, to receive the telemetry. You will be able to select the language you wish to prepare the code in (Node.js or C#), and the development environment (Visual Studio Code, or Visual Studio).
+Let's start by writing two apps: one for the device to send telemetry, and one back-end service to run in the cloud, to receive the telemetry. You'll be able to select your preferred language (Node.js or C#), and development environment (Visual Studio Code, or Visual Studio).

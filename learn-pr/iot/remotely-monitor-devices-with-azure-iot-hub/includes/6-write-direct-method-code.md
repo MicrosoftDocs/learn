@@ -77,7 +77,7 @@ client.onDeviceMethod('SetFanState', onSetFanState);
                     // Remove quotes from data.
                     data = data.Replace("\"", "");
 
-                    // Parse the payload, and trigger an exception if it is not valid.
+                    // Parse the payload, and trigger an exception if it's not valid.
                     fanState = (stateEnum)Enum.Parse(typeof(stateEnum), data);
                     greenMessage("Fan set to: " + data);
 
@@ -110,13 +110,13 @@ client.onDeviceMethod('SetFanState', onSetFanState);
 > [!NOTE]
 > The fan has three states: _on_, _off_, and _failed_. The method above sets the fan to either of the first two of these states. If the payload text does not match one of these two, or the fan is in a failed state, an error is returned.
 
-You have completed what is needed at the device end of things. Next, we need to add code to the back-end service.
+You've completed what is needed at the device end of things. Next, we need to add code to the back-end service.
 
 ## Add code to call a direct method
 
 ::: zone pivot="node"
 
-When setting up a call to invoke a direct method, it is best to divide the code into three parts: the parameters, a function handling the call, and one or more calls to that function.
+When setting up a call to invoke a direct method, it's best to divide the code into three parts: the parameters, a function handling the call, and one or more calls to that function.
 
 1. Open up the back-end service app.js file and add the following code to the end of the file.
 
@@ -226,7 +226,7 @@ private static ServiceClient s_serviceClient;
 To test the method, start the apps in the correct order.
 
 1. Start the device app. A console window will open up, and telemetry will appear.
-1. Start the back-end app. This app immediately calls the direct method. Do you notice it is handled by the back-end app, with output similar to the following?
+1. Start the back-end app. This app immediately calls the direct method. Do you notice it's handled by the back-end app, with output similar to the following?
   
     ![Screenshot showing the output when the direct method is run by the back-end service app](../media/cheesecave-direct-method-sent.png)
 

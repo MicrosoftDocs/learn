@@ -12,7 +12,7 @@ In this module, you learned how to:
 
 ## Clean up
 
-When you are satisfied you do not need to return to the CheeseCaveHub, delete the device, then delete the hub. These options are available in your [Azure portal](https://ms.portal.azure.com/#home).
+When you're satisfied you do not need to return to the CheeseCaveHub, delete the device, then delete the hub. These options are available in your [Azure portal](https://ms.portal.azure.com/#home).
 
 No need to delete your project code though, keep it for future reference!
 

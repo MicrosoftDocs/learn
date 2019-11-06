@@ -35,7 +35,7 @@ quiz:
       explanation: In our sample, 'SetFanState' appears in both apps to identify the direct method.
     - content: 'Device twin tags are data shared with the IoT device.'
       isCorrect: false
-      explanation: Tags are not shared, and are not visible to the device.  
+      explanation: Tags aren't shared, and are invisible to the device.  
     - content: 'A direct method can contain zero, or one, parameter.'
       isCorrect: false
       explanation: Direct methods include a payload that can contain many parameters.
@@ -50,7 +50,7 @@ quiz:
       explanation: Device twins are stored in the cloud.
     - content: 'Device twins are duplicate hardware devices, in case one device malfunctions.'
       isCorrect: false
-      explanation: Duplicating devices may be a sensible approach, but they are not called IoT Hub device twins.
+      explanation: Duplicating devices may be a sensible approach, but they aren't called IoT Hub device twins.
     - content: 'Device twins are JSON documents that store, in the cloud, device information.'
       isCorrect: true
       explanation: Azure IoT Hub, by default, maintains a device twin for each device that you connect to IoT Hub. State information includes metadata, configuration settings, and conditions.

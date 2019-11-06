@@ -1,4 +1,4 @@
-At the end of this unit, you will be sending and receiving telemetry.
+At the end of this unit, you'll be sending and receiving telemetry.
 
 ## Create an app to send telemetry
 
@@ -6,7 +6,7 @@ At the end of this unit, you will be sending and receiving telemetry.
 
 1. Open Visual Studio Code. From the **Terminal** menu, open a **New Terminal**.
 
-1. In the opened terminal, create an empty folder where you will develop your code, called "cheesecave", by entering `mkdir cheesecave`. Then, navigate to that folder with `cd cheesecave`.
+1. In the opened terminal, create an empty folder where you'll develop your code, called "cheesecave", by entering `mkdir cheesecave`. Then, navigate to that folder with `cd cheesecave`.
 
 1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Cheese Cave device app`. Save the file to the "cheesecave" folder (locating this folder might involve a bit of navigation), with the name "app.js". By using the .js file extension, Visual Studio Code interprets this file as JavaScript and evaluates the contents with the JavaScript language service.
 
@@ -15,7 +15,7 @@ At the end of this unit, you will be sending and receiving telemetry.
     * **npm install azure-iot-device-mqtt**
     * **npm install chalk**
 
-1. After you have entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the cheesecave folder is the current folder of the terminal, when you run the app.
+1. After you've entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the cheesecave folder is the current folder of the terminal, when you run the app.
 
 ::: zone-end
 ::: zone pivot="vscode-csharp"
@@ -35,7 +35,7 @@ At the end of this unit, you will be sending and receiving telemetry.
 
 1. From the **File** menu, open up the Program.cs file, and delete the default contents.
 
-1. After you have entered the code below into the Program.cs file, you can run the app with the command `dotnet run`. This command will run the Program.cs file in the current folder, so ensure you are in the cheesecavedevice folder.
+1. After you've entered the code below into the Program.cs file, you can run the app with the command `dotnet run`. This command will run the Program.cs file in the current folder, so ensure you are in the cheesecavedevice folder.
 
 ::: zone-end
 ::: zone pivot="vs-node"
@@ -52,7 +52,7 @@ At the end of this unit, you will be sending and receiving telemetry.
 
 1. Delete the default contents of the app.js file. Add the line `// Cheese Cave device app`.
 
-1. When you have entered the code below, you will be able to run the app with the **Start Without Debugging**, or **Start Debugging**, options. In the latter case, you can set breakpoints, examine data, and perform other debugging tasks.
+1. When you've entered the code below, you'll be able to run the app with the **Start Without Debugging**, or **Start Debugging**, options. In the latter case, you can set breakpoints, examine data, and do other debugging tasks.
 
 ::: zone-end
 ::: zone pivot="vs-csharp"
@@ -383,7 +383,7 @@ namespace simulated_device
     ![Screenshot showing the temperature and humidity telemetry being sent](../media/cheesecave-telemetry.png)
 
 1. Watch the telemetry for a short while, checking that is it giving temperatures and humidity in the expected ranges.
-1. You can leave this app running, as it is needed for the next section.
+1. You can leave this app running, as it's needed for the next section.
 
 > [!NOTE]
 > The screenshots in this module are based on the Node.js version of the apps. If you are developing using C#, there will be minor differences in the screen output.
@@ -396,7 +396,7 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 
 1. Open Visual Studio Code. From the **Terminal** menu, open a **New Terminal**.
 
-1. In the opened terminal, create an empty folder where you will develop your code, called "cheesecaveservice", by entering `mkdir cheesecaveservice`. Then, navigate to that folder with `cd cheesecaveservice`.
+1. In the opened terminal, create an empty folder where you'll develop your code, called "cheesecaveservice", by entering `mkdir cheesecaveservice`. Then, navigate to that folder with `cd cheesecaveservice`.
 
 1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Cheese Cave back-end service app`. Save the file to the "cheesecaveservice" folder (locating this folder might involve a bit of navigation), with the name "app.js".
 
@@ -405,7 +405,7 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
     * **npm install azure-iothub**
     * **npm install chalk**
 
-1. After you have entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the "cheesecaveservice" folder is the current folder of the terminal.
+1. After you've entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the "cheesecaveservice" folder is the current folder of the terminal.
 
 ::: zone-end
 ::: zone pivot="vscode-csharp"
@@ -423,7 +423,7 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 
 1. From the **File** menu, open up the Program.cs file, and delete the default contents.
 
-1. After you have entered the code below into the Program.cs file, run the code with the command `dotnet run`. This command will run the Program.cs file in the current folder, so ensure you are in the correct folder.
+1. After you've entered the code below into the Program.cs file, run the code with the command `dotnet run`. This command will run the Program.cs file in the current folder, so ensure you are in the correct folder.
 
 ::: zone-end
 ::: zone pivot="vs-node"
@@ -437,7 +437,7 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 
 1. Delete the default contents of the app.js file. Add a comment line such as `// Cheese Cave Operator back-end app`.
 
-1. When you have entered the code below, you will be able to run the app with the **Start Without Debugging**, or **Start Debugging**, options.
+1. When you've entered the code below, you'll be able to run the app with the **Start Without Debugging**, or **Start Debugging**, options.
 
 ::: zone-end
 ::: zone pivot="vs-csharp"
@@ -537,7 +537,7 @@ EventHubClient.createFromIotHubConnectionString(connectionString).then(function 
 ```
 
     > [!NOTE]
-    > Our implementation only reads messages after the app has been started. Any telemetry sent prior to this is not handled.
+    > Our implementation only reads messages after the app has been started. Any telemetry sent prior to this isn't handled.
 
 2. Replace the &lt;your service connection string&gt; with the _service_ connection string you saved off in a text file, in the previous unit.
 
@@ -658,7 +658,7 @@ namespace cheesecave_operator
 ```
 
 > [!NOTE]
-> Our implementation only reads messages after the back-end app has been started. Any telemetry sent prior to this is not handled.
+> Our implementation only reads messages after the back-end app has been started. Any telemetry sent prior to this isn't handled.
 
 2. Replace the &lt;your service connection string&gt; with the _service_ connection string you saved off in a text file, in the previous unit.
 
@@ -679,4 +679,4 @@ This test is important, checking whether your back-end app is picking up the tel
 
 1. Visually compare the telemetry sent and received. Is there an exact match? Is there much of a delay? If it looks good, close both the console windows for now.
 
-Completing this unit is great progress. You have an app sending telemetry from a device, and a back-end app acknowledging receipt of the data. This unit covers the _monitoring_ side of our scenario. The next step handles the _control_ side - what to do when there are issues with the data. Clearly, there are issues, we are getting temperature and humidity alerts!
+Completing this unit is great progress. you've an app sending telemetry from a device, and a back-end app acknowledging receipt of the data. This unit covers the _monitoring_ side of our scenario. The next step handles the _control_ side - what to do when issues arise with the data. Clearly, there are issues, we're getting temperature and humidity alerts!

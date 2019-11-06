@@ -21,7 +21,7 @@ registry.getTwin(deviceId, function (err, twin) {
         const desiredHumidity = 85;
         const setDesiredValues = {
 
-            // Tags are not shared with the device, they are known only to IoT Hub.
+            // Tags aren't shared with the device, they are known only to IoT Hub.
             tags: {
                 customerID: 'Customer1',
                 cellar: 'Cellar1'
@@ -278,6 +278,6 @@ Now for our final code test of this module.
 
     ![Screenshot showing the output when the device twins are synchronized on the back-end service app](../media/cheesecave-device-twin-success.png)
 
-The code given in this module is not industrial quality. It does show how to use direct methods, and device twins. However, the messages are sent only when the back-end service app is first run. Typically, a back-end service app would require a browser interface, for an operator to send direct methods. Or set device twin properties, when required.
+The code given in this module isn't industrial quality. It does show how to use direct methods, and device twins. However, the messages are sent only when the back-end service app is first run. Typically, a back-end service app would require a browser interface, for an operator to send direct methods. Or set device twin properties, when required.
 
-You have nearly completed this module. Just a summary and a knowledge check to go!
+You've nearly completed this module. Just a summary and a knowledge check to go!
