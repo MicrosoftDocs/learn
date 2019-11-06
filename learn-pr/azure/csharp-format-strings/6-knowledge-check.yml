@@ -24,7 +24,7 @@ quiz:
     - content: "Use composite formatting."
       isCorrect: false
       explanation: "While composit formatting could be employed, it is not the mechanism that will add tabs into your strings."
-    - content: "Use \t between the values"
+    - content: "Use \\t between the values"
       isCorrect: true
       explanation: "Correct!"
   - content: 'Which format specifier would you use to present a decimal value with the following format to an en-US audience: `12,345.67`'
