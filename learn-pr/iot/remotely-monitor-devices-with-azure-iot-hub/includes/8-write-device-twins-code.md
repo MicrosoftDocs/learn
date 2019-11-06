@@ -7,7 +7,7 @@ We will start this time with the back-end service app.
 ::: zone pivot="node"
 
 1. Open the app.js file for the back-end app.
-2. Add the following code to the end of the file. This code sets the desired temperature of the device to 12 degrees C, humidity to 60 percent, and sets two **tags** (information only available to the IoT Hub). To verify the tags, a call is made to query the device twins based on a SQL search.
+2. Add the following code to the end of the file. This code sets the desired temperature of the device to 50 degrees F, humidity to 85 percent, and sets two **tags** (information only available to the IoT Hub). To verify the tags, a call is made to query the device twins based on a SQL search.
 
 ``` javascript
 // Locate the device twin via the Registry, then update some tags and properties.
@@ -271,6 +271,6 @@ Now for our final code test of this module.
 
     ![Screenshot showing the output when the device twins are synchronized on the back-end service app](../media/cheesecave-device-twin-success.png)
 
-The code given in this module is not industrial quality. It does show how to use direct methods, and device twins. However, the messages are sent only when the back-end service app is first run. Typically, a back-end service app would require a browser interface for an operator to send direct methods, or set device twin properties, when they are required.
+The code given in this module is not industrial quality. It does show how to use direct methods, and device twins. However, the messages are sent only when the back-end service app is first run. Typically, a back-end service app would require a browser interface, for an operator to send direct methods. Or set device twin properties, when required.
 
 You have nearly completed this module. Just a summary and a knowledge check to go!

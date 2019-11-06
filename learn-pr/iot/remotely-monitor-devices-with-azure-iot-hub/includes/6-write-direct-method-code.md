@@ -150,7 +150,7 @@ function sendDirectMethod() {
 ```
 
 > [!NOTE]
-> The first parameter of the `client.invokeDeviceMethod` call identifies the device the call is to go to. With multiple devices, this could be changed to a parameter of the function.
+> The first parameter of the `client.invokeDeviceMethod` call identifies the device the call is to go to. With multiple devices, this could be changed to a parameter of the `sendDirectMethod` function.
 
 3. Finally, add a call to the `sendDirectMethod` function into the `createFromIotHubConnectionString` function, after the `eventHubClient = client;` line of code.
 

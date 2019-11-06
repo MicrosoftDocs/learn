@@ -9,14 +9,15 @@ In this module, you will learn about IoT Hub by implementing a system to monitor
 
 In this module you will:
   - Create a custom Azure IoT Hub, using the IoT Hub portal
-  - Create an app to send device telemetry to the custom IoT Hub
-  - Create an app to handle the back-end service
-  - Understand the role of _direct methods_, in communicating remote device settings
-  - Understand the role of _device twins_, in maintaining remote device properties
+  - Create an IoT Hub device ID, using the IoT Hub portal
+  - Create an app to send device telemetry to the custom IoT Hub, in C# or Node.js.
+  - Create a back-end service app to listen for the telemetry
+  - Implement a _direct method_, to communicate settings to the remote device
+  - Implement _device twins_, to maintain remote device properties
 
 ## Prerequisites
 
-- An introductory knowledge of the purpose of Azure IoT
+- An introductory knowledge of Azure IoT
 - Ability to navigate Azure IoT portal
 - Ability to use Node.js, or C#, at the beginner level
 - Experience using Visual Studio, or Visual Studio Code, at the beginner level

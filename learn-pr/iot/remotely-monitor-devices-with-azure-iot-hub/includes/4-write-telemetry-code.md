@@ -64,7 +64,7 @@ At the end of this unit, you will be sending and receiving telemetry.
 
 ### Add code to send telemetry
 
-This section adds code to send telemetry from a simulated device. The device sends temperature (in degrees centigrade) and humidity (in percentages), regardless of whether any back-end app is listening or not.
+This section adds code to send telemetry from a simulated device. The device sends temperature (in degrees fahrenheit) and humidity (in percentages), regardless of whether any back-end app is listening or not.
 
 ::: zone pivot="vs-node,vscode-node"
 
@@ -183,7 +183,12 @@ function sendMessage() {
 setInterval(sendMessage, intervalInMilliseconds);
 ```
 
-2. Save the app.js file.
+  > [!NOTE]
+  > Read through the comments in the code, noting how the temperature and humidity settings from the description of the scenario in the introduction have worked their way into the code.
+
+2. Replace the &lt;your device connection string&gt; with the device connection string you saved off in the previous unit. No other lines of code need to be changed.
+
+3. Save the app.js file.
 
 ::: zone-end
 ::: zone pivot="vs-csharp,vscode-csharp"
@@ -350,17 +355,17 @@ namespace simulated_device
 
 3. Save the Program.cs file.
 
-::: zone-end
-
   > [!NOTE]
   > Read through the comments in the code, noting how the temperature and humidity settings from the description of the scenario in the introduction have worked their way into the code.
 
-2. Replace the &lt;your device connection string&gt; with the device connection string you saved off in the previous unit. No other lines of code need to be changed.
+4. Replace the &lt;your device connection string&gt; with the device connection string you saved off in the previous unit. No other lines of code need to be changed.
+
+::: zone-end
 
 ### Test your code to send telemetry
 
 1. Run the app.
-1. You should quickly get a console screen, similar to the following image. Note the use of the chalk utility to set some text to green. If you do not get a screen similar to this image, check your device connection string carefully.
+1. You should quickly get a console screen, similar to the following image. Note the use green text, to show things are working as they should! If you do not get a screen similar to this image, check your device connection string carefully.
 
     ![Screenshot showing the temperature and humidity telemetry being sent](../media/cheesecave-telemetry.png)
 
@@ -504,7 +509,14 @@ EventHubClient.createFromIotHubConnectionString(connectionString).then(function 
 }).catch(printError);
 ```
 
-2. Save the app.js file.
+    > [!NOTE]
+    > Our implementation only reads messages after the app has been started. Any telemetry sent prior to this is not handled.
+
+2. Replace the &lt;your service connection string&gt; with the _service_ connection string you saved off in a text file, in the previous unit.
+
+3. Replace the `const deviceId` if you did not use the suggested "CheeseCaveID".
+
+4. Save the app.js file.
 
 ::: zone-end
 ::: zone pivot="vs-csharp,vscode-csharp"
@@ -618,16 +630,16 @@ namespace cheesecave_operator
 
 ```
 
-2. Save the Program.cs file.
+    > [!NOTE]
+    > Our implementation only reads messages after the app has been started. Any telemetry sent prior to this is not handled.
+
+2. Replace the &lt;your service connection string&gt; with the _service_ connection string you saved off in a text file, in the previous unit.
+
+3. Save the Program.cs file.
 
 ::: zone-end
 
-> [!NOTE]
-> Our implementation only reads messages after the app has been started. Any telemetry sent prior to this is not handled.
 
-1. Replace the &lt;your service connection string&gt; with the _service_ connection string you saved off in a text file, in the previous unit.
-
-1. Replace the `const deviceId` if you did not use the suggested "CheeseCaveID".
 
 ### Test your code to receive telemetry
 
