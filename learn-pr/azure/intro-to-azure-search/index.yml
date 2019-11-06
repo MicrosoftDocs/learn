@@ -2,10 +2,10 @@
 uid: learn.azure-introduction-to-azure-search
 metadata:
   title: Introduction to Azure Search
-  description: Use Azure Search to make your data searchable.
+  description: Explore Azure Search to discover how to create an index, import data, and query the Azure Search index for better search results.
   ms.date: 06/13/2019
-  author: andrewjbyrne
-  ms.author: anbyrne
+  author: nickwalkmsft
+  ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: anbyrne
