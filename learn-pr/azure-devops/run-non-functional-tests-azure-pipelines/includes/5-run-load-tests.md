@@ -18,7 +18,7 @@ This branch contains the _Space Game_ project that you worked with in previous m
 
     ```bash
     git fetch upstream jmeter
-    git checkout jmeter
+    git checkout -b jmeter upstream/jmeter
     ```
 
     Recall that *upstream* refers to the Microsoft GitHub repository. Your project's Git configuration understands the upstream remote, because you set up that relationship when you forked the project from the Microsoft repository and cloned it locally.
@@ -88,7 +88,7 @@ In this section, you modify the pipeline to run your load tests during the _Stag
     > [!TIP]
     > You can replace the entire file or just update the part that's highlighted.
 
-    [!code-yml[](code/5-azure-pipelines.yml?highlight=133-154)]
+    [!code-yml[](code/5-azure-pipelines.yml?highlight=133-155)]
 
     To summarize the changes:
 

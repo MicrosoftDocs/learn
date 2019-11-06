@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-data-at-rest.2-data-classification
+title: Understand data discovery and classification with Azure SQL Server
+metadata:
+  title: Understand data discovery and classification with Azure SQL Server
+  description: Understand a data classification process and then use Azure SQL Database to discover and classify data.
+  ms.date: 29/03/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+interactive: bash
+azureSandbox: true  
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-data-classification.md)]

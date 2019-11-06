@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 10/25/2019
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: False
+durationInMinutes: 5
+
+quiz:
+  questions:
+  - content: "Which HDInsight cluster type is the best option to use for ad-hoc analytical workloads?"
+    choices:
+    - content: "Apache Interactive Query"
+      isCorrect: true
+      explanation: "Apache Interactive Query is the best option to use for ad-hoc analytical workloads"
+    - content: "Apache HBase"
+      isCorrect: false
+      explanation: "Apache HBase is the best option for transactional systems working with unstructured data."
+    - content: "Apache Kafka"
+      isCorrect: false
+      explanation: "Apache Kafka is the best option for streaming solutions"
+  - content: "Which open source system software is best to use for OLTP and operational analytics in Hadoop?"
+    choices:
+    - content: "Apache Pig"
+      isCorrect: false
+      explanation: "Apache Pig provides an abstraction layer over MapReduce to analyze large datasets."
+    - content: "Apache Phoenix"
+      isCorrect: true
+      explanation: "Apache Phoenix is best to use for OLTP and operational analytics in Hadoop"
+    - content: "Apache Mahout"
+      isCorrect: false
+      explanation: "Apache Mahout is an An algebra framework to create your own algorithms"
+  - content: "Which feature enables you to resize a cluster to optimize costs of a HDInsight Cluster? "
+    choices:
+    - content: "Autosize"
+      isCorrect: false
+      explanation: "This option is not available in a HDInsight Cluster"
+    - content: "Autoscale"
+      isCorrect: true
+      explanation: "Autosize or Autobot is not a feature of a HDInsight Cluster"
+    - content: "Autobot"
+      isCorrect: false
+      explanation: "This option is not available in a HDInsight Cluster"

@@ -7,7 +7,7 @@ In this unit, you will create a device template for a refrigerated truck. The Io
 
 1. Within the [Azure IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) portal (which you may still have open), select **Device Templates** from the menu on the left-hand side.
 
-1. On the right-hand side of the screen, click **+ New** to create a new template.
+1. On the right-hand side of the screen, click **+** to create a new template.
 
 1. You will next see a range  of **New Template** options, select **Custom**.
 
@@ -44,7 +44,7 @@ Notice that minimum and maximum values are specified for a telemetry entry, thes
     | Field Name | temperature |
     | Units | degC |
     | Minimum Value | -20 |
-    | Maximum Value | -20 |
+    | Maximum Value | 20 |
     | Decimal Places | 1 |
 
 1. Remember to click the **Save** icon after entering the data. If you are warned you are leaving a page with unsaved changes, it often means you have neglected to click the **Save** icon.

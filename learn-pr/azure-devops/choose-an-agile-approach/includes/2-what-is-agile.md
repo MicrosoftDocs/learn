@@ -1,4 +1,4 @@
-Agile is a process for planning the work that a team will do. It's based on iterative development and helps a team better plan for and react to the inevitable changes that occur in software development. Let's listen in on Mara's discussion with Andy after the latest release.
+Agile is a term that's used to describe approaches to software development, emphasizing incremental delivery, team collaboration, continual planning, and continual learning. Agile isn't a process as much as it is a philosophy or mindset for planning the work that a team will do. It's based on iterative development and helps a team better plan for and react to the inevitable changes that occur in software development. Let's listen in on Mara's discussion with Andy after the latest release.
 
 Mara felt she'd made a few small steps toward interesting the team in DevOps, but progress has stalled. The team has been too busy fixing bugs in the last release to think about anything else.
 

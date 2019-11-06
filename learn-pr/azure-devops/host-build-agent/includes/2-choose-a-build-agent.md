@@ -26,7 +26,7 @@ When you use a Microsoft-hosted agent, you specify the VM image to use from the 
 
 ```yml
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: 'ubuntu-16.04'
   demands:
     - npm
 ```
@@ -71,7 +71,7 @@ The build agent you choose depends mainly on what tools you use to build your co
 
 Your existing build configuration uses a Microsoft-hosted agent. Hosted agents run on infrastructure that Microsoft provides for you.
 
-A private agent uses infrastructure that you provide. Your agent can be a system that runs in the cloud or in your data center. Either system works, as long as the agent meets your requirements and can connect to Azure Pipelines. In this module, you use a VM that runs on Azure, which we provide.
+A private agent uses infrastructure that you provide. Your agent can be a system that runs in the cloud or in your datacenter. Either system works, as long as the agent meets your requirements and can connect to Azure Pipelines. In this module, you use a VM that runs on Azure, which we provide.
 
 ## When should I use my own build agent?
 

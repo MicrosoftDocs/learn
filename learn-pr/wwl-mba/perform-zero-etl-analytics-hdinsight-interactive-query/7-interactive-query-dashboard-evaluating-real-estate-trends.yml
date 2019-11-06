@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query.7-create-large-scale-interactive-query-dashboard-evaluating-real-estate-trends
+title: Create a large scale interactive query dashboard for Evaluating Real Estate Trends
+metadata:
+  title: Create a large scale interactive query dashboard for Evaluating Real Estate Trends
+  description: Create a large scale interactive query dashboard for Evaluating Real Estate Trends
+  ms.date: 10/25/2019
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: False
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-interactive-query-dashboard-evaluating-real-estate-trends.md)]

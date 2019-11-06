@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query.2-when-should-you-use-hdinsight-interactive-query
+title: When should you use HDInsight Interactive Query
+metadata:
+  title: When should you use HDInsight Interactive Query
+  description: When should you use HDInsight Interactive Query
+  ms.date: 10/25/2019
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: False
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-when-should-you-use-hdinsight-interactive-query.md)]

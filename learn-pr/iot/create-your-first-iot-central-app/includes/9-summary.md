@@ -20,6 +20,6 @@ Take your interest further with:
 - [Azure IoT Central Documentation](https://docs.microsoft.com/azure/iot-central/)
 - [Azure Certified for IoT device catalog](https://catalog.azureiotsolutions.com/)
 
-And look out for additional Learn modules in this learning path.
+And look out for additional Learn modules covering IoT Central.
 
 To finish this module, and earn your rewards, complete a final knowledge check.
