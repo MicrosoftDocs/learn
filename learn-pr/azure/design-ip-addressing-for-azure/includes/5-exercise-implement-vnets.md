@@ -32,7 +32,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
 ## Create the *CoreServicesVnet* virtual network
 
-1. In Cloud Shell, run the following command to create the **CoreServicesVnet** virtual network:
+1. In Azure Cloud Shell, run the following command to create the **CoreServicesVnet** virtual network:
 
     ```azurecli
     az network vnet create \

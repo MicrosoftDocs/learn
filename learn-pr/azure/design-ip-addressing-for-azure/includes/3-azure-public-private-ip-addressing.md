@@ -68,7 +68,7 @@ A subnet is a range of IP address within the virtual network. You can divide the
 
 Consider, for example, the CIDR 192.168.10.0/24. "192.168.10.0" is the network address. The "24" indicates that the first 24 bits are part of the network address, leaving the last 8 bits for specific host addresses. The address range can't overlap with other subnets in the virtual network or with the on-premises network.
 
-The first three IP addresses are reserved for all subnets by default in Azure. For protocol conformance, the first and last IP addresses of all subnets also are reserved. An internal DHCP service within Azure assigns and maintains the lease of IP addresses. The .1, .2, .3, and last IP address are not visible or configurable by the Azure customer. These addresses are reserved and used by internal Azure services. 
+The first three IP addresses are reserved for all subnets by default in Azure. For protocol conformance, the first and last IP addresses of all subnets also are reserved. An internal DHCP service within Azure assigns and maintains the lease of IP addresses. The .1, .2, .3, and last IP addresses are not visible or configurable by the Azure customer. These addresses are reserved and used by internal Azure services. 
 
 In Azure virtual networks, IP addresses can be allocated to the following types of resources:
 
