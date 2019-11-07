@@ -16,7 +16,7 @@ abstract: |
   - Learn about the unique value that Azure provides.
   - Review the Azure solutions.
 ratingEnabled: false
-prerequisites: ""
+prerequisites: "None"
 iconUrl: /learn/achievements/intro-to-azure-areas-and-solutions.svg
 levels:
 - beginner
