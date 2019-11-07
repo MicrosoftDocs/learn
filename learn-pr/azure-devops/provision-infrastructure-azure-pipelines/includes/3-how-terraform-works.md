@@ -113,7 +113,7 @@ Here's an example that outputs the host name of an App Service instance:
 
 [!code-terraform[](code/main.tf?range=55-58)]
 
-Later, you'll see how to fetch the name of an App Service instance who's name is generated dynamically and pass that name to a later job in Azure Pipelines.
+You can fetch output values after Terraform runs. Later, you'll see how to fetch the name of an App Service instance who's name is generated dynamically and pass that name to a later job in Azure Pipelines.
 
 ### Terraform settings
 
