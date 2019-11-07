@@ -12,7 +12,7 @@ metadata:
 title: Architect modern applications in Azure
 summary: Learn how to build modern applications using PaaS services for applications, caching, containers and Kubernetes in Azure.
 prerequisites: None
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/architect-modern-apps.svg
 levels:
 - intermediate
 roles:
