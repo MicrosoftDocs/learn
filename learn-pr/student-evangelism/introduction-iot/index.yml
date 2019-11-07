@@ -17,7 +17,7 @@ abstract: |
   -  Describe how the components of Azure IoT work together to build a cloud-based IoT solution
 prerequisites: |
     None
-iconUrl: /http://via.placeholder.com/120x120.%7C  #Using Place holder as mentioned in learning Guide
+iconUrl: /learn/achievements/student-evangelism/introduction-iot.svg
 badge:
   uid: learn.introduction-to-iot.badge
 levels:
