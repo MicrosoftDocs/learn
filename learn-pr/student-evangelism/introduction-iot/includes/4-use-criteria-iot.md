@@ -6,6 +6,7 @@ The decision of how you can use Azure IoT to build your IoT solution is ultimate
 - Your organization's skill set in Azure IoT PaaS technologies
 
 A more comprehensive list of considerations includes:
+
 |                                        |                                                              |
 | -------------------------------------- | ------------------------------------------------------------ |
 | **Business process realignment**       | Do you plan to use IoT to realign your organization business processes across Customers, Operations, Products/Assets, and Employees? |

@@ -10,6 +10,7 @@ The Azure Internet of Things (IoT) is a collection of Microsoft-managed cloud se
 ## Azure IoT Value
 
 Azure IoT enables you to:
+
 **Reimagine your business processes** by reducing data silos between Customers, Operations, Products/Assets, and Employees.
 
 **Deploy** managed software as a service for IoT with minimal cloud expertise (SaaS solutions) using Azure IoT Central.
