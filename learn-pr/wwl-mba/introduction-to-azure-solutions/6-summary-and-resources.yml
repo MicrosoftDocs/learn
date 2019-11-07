@@ -9,8 +9,7 @@ metadata:
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-
+azureSandbox: False
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary-and-resources.md)]
