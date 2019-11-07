@@ -1,4 +1,4 @@
-In this section, we will discuss how you can decide whether Azure IoT is the right choice for your application.  
+In this section, we'll discuss how you can decide whether Azure IoT is the right choice for your application.  
 
 The decision of how you can use Azure IoT to build your IoT solution is ultimately determined by:
 - Your business requirements
@@ -22,7 +22,7 @@ Below, we present a guidance summary for choosing an IoT approach to solve your 
 ## Guidance summary
 The Azure IoT product portfolio presents two paths for creating solutions, i.e. PaaS solutions and SaaS solutions. You also have access to the underlying PaaS technologies to develop a granular solution.
 
-If you have an industry specific problem within a specific vertical consider a PAAS solution such as Azure IoT solution accelerators. 
+If you have an industry-specific problem within a specific vertical, consider a PAAS solution such as Azure IoT solution accelerators. 
 
 If you have fewer device models and predictable scenarios, choose SaaS solutions
 
