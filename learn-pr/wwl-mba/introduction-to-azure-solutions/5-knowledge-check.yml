@@ -14,7 +14,7 @@ durationInMinutes: 2
 
 quiz:
   questions:
-  - content: "Artificial intelligence combined with Microsoft tools, services, and infrastructure can make AI real for your organization. Which of the following describes a scenario that uses AI to improve business outcomes?\"  "
+  - content: "Artificial intelligence combined with Microsoft tools, services, and infrastructure can make AI real for your organization. Which of the following describes a scenario that uses AI to improve business outcomes?"
     choices:
     - content: "Strategically moving on-premises applications and workloads to the cloud"
       isCorrect: false
