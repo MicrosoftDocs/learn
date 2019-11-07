@@ -220,6 +220,7 @@ _Andy writes down a few options on a napkin._
 * Azure Resource Manager templates
 * Ansible
 * Terraform
+* Azure SDK
 
 ### Azure CLI
 
@@ -233,6 +234,8 @@ az group create \
   --location westus
 ```
 
+If you run this command multiple times, you get the same resource group back each time, making this command an idempotent operation.
+
 ### Azure PowerShell
 
 Azure PowerShell is a module that you add to Windows PowerShell or PowerShell Core to enable you to connect to your Azure subscription and manage resources. Azure PowerShell requires PowerShell to function. PowerShell provides services like the shell window, command parsing, and so on. Azure PowerShell adds the Azure-specific commands.
@@ -244,6 +247,8 @@ New-AzResourceGroup `
   -Name my-rg `
   -Location "West US"
 ```
+
+If you run this command multiple times, you get the same resource group back each time, making this command an idempotent operation.
 
 Azure PowerShell is also available two ways: inside a browser via the Cloud Shell or locally on Windows, macOS, or Linux. In both cases, you have two modes to choose from. You can use it in interactive mode, in which you manually issue one command at a time, or in scripting mode, where you execute a script that consists of multiple commands.
 
@@ -275,7 +280,13 @@ A Resource Manager template is a JSON file, making it a form of declarative auto
 }
 ```
 
-You can run this template from Azure PowerShell, the Azure CLI, the Azure portal, or from application code through a REST service or API.
+You can run this template from Azure PowerShell, the Azure CLI, the Azure portal, or from application code through a REST service or API. Here's an example that uses the Azure CLI command `` to deploy the template.
+
+```azurecli
+az deployment create --template-file test.json
+```
+
+If you run this command multiple times, you get the same resource group back each time, making this command an idempotent operation.
 
 > [!NOTE]
 > You may hear others refer to Resource Manager templates as "ARM templates". We prefer the full names "Azure Resource Manager templates" or "Resource Manager templates".
@@ -299,7 +310,13 @@ You can run Ansible commands directly, or you can write _playbooks_ to deploy mo
       location: westus
 ```
 
-You use the `ansible-playbook` command to apply this configuration.
+You use the `ansible-playbook` command to apply this configuration, like this:
+
+```bash
+ansible-playbook example.yml
+```
+
+If you run this command multiple times, you get the same resource group back each time, making this command an idempotent operation.
 
 ### Terraform
 
@@ -314,6 +331,29 @@ resource "azurerm_resource_group" "my" {
   name     = "my-rg"
   location = "westus"
 }
+```
+
+You use the `terraform apply` command to apply this configuration, like this:
+
+```bash
+terraform apply
+```
+
+If you run this command multiple times, you get the same resource group back each time, making this command an idempotent operation.
+
+### Azure SDK
+
+The Azure SDK enables you to access and manage Azure resources from application code using your favorite programming languages.
+
+The Azure SDK is available for languages such as Java, Node, Python, Ruby, PHP, .NET, and Go. You can also use a REST API to access Azure resources from any programming language.
+
+Here's an example, written in C#, that uses the Azure SDK for .NET to create an Azure resource group named "my-rg" in the "westus" location.
+
+```csharp
+IResourceGroup resourceGroup = azure.ResourceGroups
+  .Define("my-rg")
+  .WithRegion(Region.USWest)
+  .Create();
 ```
 
 ## Where can I run my infrastructure code?
