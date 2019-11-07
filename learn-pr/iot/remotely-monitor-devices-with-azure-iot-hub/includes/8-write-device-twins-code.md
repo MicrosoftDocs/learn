@@ -79,9 +79,9 @@ function queryTwins() {
         // Device twins section.
         private static RegistryManager registryManager;
 
-        private static async Task UpdateTwinProperties()
+        private static async Task SetTwinProperties()
         {
-            var twin = await registryManager.GetTwinAsync("CheeseCaveIDC");
+            var twin = await registryManager.GetTwinAsync("CheeseCaveID");
             var patch =
                 @"{
                     tags: {
@@ -110,9 +110,13 @@ function queryTwins() {
 3. Now, add the following lines to the `Main` method, before the lines creating a service client.
 
 ``` cs
-            // Digital twins:
+           // A registry manager is used to access the digital twins.
             registryManager = RegistryManager.CreateFromConnectionString(s_serviceConnectionString);
-            UpdateTwinProperties().Wait();
+            SetTwinProperties().Wait();
+
+            // Create a ServiceClient to communicate with service-facing endpoint on your hub.
+            s_serviceClient = ServiceClient.CreateFromConnectionString(s_serviceConnectionString);
+            InvokeMethod().GetAwaiter().GetResult();
 ```
 
 4. Save the Program.cs file.
@@ -206,39 +210,10 @@ client.getTwin(function (err, twin) {
         {
             try
             {
-                greenMessage("\nTwin state reported");
+                // Get the current state of the device twin.
+                Twin deviceTwin = s_deviceClient.GetTwinAsync().GetAwaiter().GetResult();
 
-                // Report the changes back to the IoT Hub.
-                var reportedProperties = new TwinCollection();
-                reportedProperties["fanstate"] = fanState.ToString();
-                reportedProperties["humidity"] = desiredHumidity;
-                reportedProperties["temperature"] = desiredTemperature;
-                s_deviceClient.UpdateReportedPropertiesAsync(reportedProperties).Wait();
-                greenMessage(reportedProperties.ToJson());
-            }
-            catch
-            {
-                redMessage("Failed to update device twin reported properties");
-            }
-        }
-```
-
-3. Add the following line to the global variables section.
-
-``` cs
-        private static Twin deviceTwin;
-```
-
-4. Add the following code to the `Main` method, before the `SendDeviceToCloudMessagesAsync` call.
-
-``` cs
-            // Synchronize with the device twin.
-            try
-            {
-                // Create the device twin.
-                deviceTwin = s_deviceClient.GetTwinAsync().GetAwaiter().GetResult();
-
-                // Extract the desired properties.
+                // Extract the desired twin properties.
                 dynamic data = JObject.Parse(deviceTwin.Properties.Desired.ToJson());
 
                 // Set the desired properties for the device app.
@@ -246,21 +221,46 @@ client.getTwin(function (err, twin) {
                 desiredTemperature = data.temperature;
                 greenMessage("Setting desired humidity to " + desiredHumidity);
                 greenMessage("Setting desired temperature to " + desiredTemperature);
-                UpdateTwinProperties();
+
+                greenMessage("\nTwin state reported");
+
+                // Report the properties back to the IoT Hub.
+                var reportedProperties = new TwinCollection();
+                reportedProperties["fanstate"] = fanState.ToString();
+                reportedProperties["humidity"] = desiredHumidity;
+                reportedProperties["temperature"] = desiredTemperature;
+                s_deviceClient.UpdateReportedPropertiesAsync(reportedProperties).Wait();
+
+                greenMessage(reportedProperties.ToJson());
             }
-            catch(Exception ex)
+            catch
             {
-                redMessage("Failed to sync with twin: " + ex.Message);
+                redMessage("Failed to update device twin");
             }
+        }
 ```
 
-5. Add a line to the `SetFanState` task, before acknowledging the direct method call, to update the reported properties.
+3. Update the `Main` method. Add a call to `UpdateTwinProperties()`, after the statements creating a handler for the device method.
 
 ``` cs
+            // Create a handler for the direct method call
+            s_deviceClient.SetMethodHandlerAsync("SetFanState", SetFanState, null).Wait();
+
+            // Synchronize with the device twin.
+            UpdateTwinProperties();
+```
+
+4. Add a line to the `SetFanState` task, as the fan state is a reported property. Add it after the `greenMessage` call.
+
+``` cs
+                    // Parse the payload, which will trigger an exception if the payload is not valid.
+                    fanState = (stateEnum)Enum.Parse(typeof(stateEnum), data);
+                    greenMessage("Fan set to: " + data);
+
                     UpdateTwinProperties();
 ```
 
-6. Save the Program.cs file.
+5. Save the Program.cs file.
 
 ::: zone-end
 

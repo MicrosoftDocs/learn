@@ -191,7 +191,7 @@ private static ServiceClient s_serviceClient;
                 methodInvocation.SetPayloadJson(payload);
 
                 // Invoke the direct method asynchronously and get the response from the simulated device.
-                var response = await s_serviceClient.InvokeDeviceMethodAsync("CheeseCaveIDC", methodInvocation);
+                var response = await s_serviceClient.InvokeDeviceMethodAsync("CheeseCaveID", methodInvocation);
 
                 if (response.Status == 200)
                 {

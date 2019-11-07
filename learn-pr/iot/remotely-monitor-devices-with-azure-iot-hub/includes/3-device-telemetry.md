@@ -1,4 +1,4 @@
-Telemetry is the output from sensors. There are many different types of sensors. Acceleration, humidity, location, pressure, temperature, and velocity are the most commonly used in commercial applications. Less common, but equally important, sensors include radiation, motion-sensitivity, acoustics, air quality, heart rate, and so on. And they all pump out telemetry for some other process to consume.
+Telemetry is the output from sensors. There are many different types of sensors. Acceleration, humidity, location, pressure, temperature, and velocity are the most commonly used in commercial applications. Other sensors include radiation, motion-sensitivity, acoustics, air quality, heart rate, and so on. And they all pump out telemetry for some other process to consume.
 
 The frequency of telemetry output is an important factor. A temperature sensor in a refrigeration unit may only have to report every minute, or less. An acceleration sensor on an aircraft may have to report at least every second.
 
