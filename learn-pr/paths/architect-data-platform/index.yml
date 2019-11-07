@@ -14,7 +14,7 @@ summary: Learn how to architect a data platform in Azure and build solutions to 
 prerequisites: |
   - Familiarity with relational databases
   - Familiarity with NoSQL databases
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/architect-data-platform.svg
 levels:
 - intermediate
 roles:
