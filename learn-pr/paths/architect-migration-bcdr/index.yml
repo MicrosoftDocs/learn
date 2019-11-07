@@ -15,7 +15,7 @@ prerequisites: |
   - Familiarity with virtual machines
   - Familiarity with backup and restore concepts
   - Familiarity with high availability and autoscaling concepts
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/architect-migration-bcdr.svg
 levels:
 - intermediate
 roles:

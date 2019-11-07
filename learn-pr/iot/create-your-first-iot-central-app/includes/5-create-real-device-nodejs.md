@@ -14,7 +14,10 @@ Using your preferred development environment, build a Node.js app. Visual Studio
 
     ![Screenshot showing how to save the JavaScript file, in Visual Studio Code](../media/refrigerated-trucks-vscode.png)
 
-1. Back in the terminal, enter **npm install azure-iot-device**. When this package has installed, enter **npm install azure-maps-rest**.
+1. Back in the terminal, load the libraries you need with the following commands:
+    * **npm install azure-iot-device**
+    * **npm install azure-iot-device-mqtt**
+    * **npm install azure-maps-rest**
 
 1. After you have entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the RefrigeratedTrucks folder is the current folder of the terminal, when you run the app.
 
@@ -27,7 +30,10 @@ Using your preferred development environment, build a Node.js app. Visual Studio
 
 1. Install azure-iot-device and azure-maps-rest npm packages by right-clicking on the **npm** entry in Solution Explorer, and select **Install New npm Packages...**.
 
-1. In the dialog that follows, search for and install **azure-iot-device**, then **azure-maps-rest**.
+1. In the dialog that follows, search for and install the following libraries:
+    * **azure-iot-device**
+    * **azure-iot-device-mqtt**
+    * **azure-maps-rest**
 
     ![Screenshot showing how to add an npm package, in Visual Studio](../media/refrigerated-trucks-vs-npm.png)
 
