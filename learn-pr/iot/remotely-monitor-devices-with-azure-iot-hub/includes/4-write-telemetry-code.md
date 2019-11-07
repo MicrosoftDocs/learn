@@ -46,6 +46,7 @@ At the end of this unit, you'll be sending and receiving telemetry.
 
 1. In the **Solution Explorer** tab, right click **npm**, and select **Install New npm Packages**. Install:
     * **azure-iot-device**
+    * **azure-iot-device-mqtt**
     * **chalk**
 
     ![Screenshot showing how to install npm packages into your Visual Studio project](../media/cheesecave-vs-npm.png)
