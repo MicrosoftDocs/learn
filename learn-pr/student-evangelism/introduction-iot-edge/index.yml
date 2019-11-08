@@ -20,7 +20,7 @@ prerequisites: |
     - Basic programming knowledge in languages such as C, Python, Node.js
     - Basic knowledge of running Azure CLI
     - Basic knowledge of IoT applications and IoT Hub
-iconUrl: /http://via.placeholder.com/120x120.%7C  #Using Place holder as mentioned in learning Guide
+iconUrl: /learn/achievements/student-evangelism/introduction-to-iot-edge.svg
 badge:
   uid: learn.introduction-to-iot-edge.badge
 levels:
