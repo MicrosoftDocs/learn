@@ -1,6 +1,6 @@
-When considering the move to the cloud, it's important to know the fundamentals of how your network is composed. Now you need to know the different types, their topologies, and their uses. You can apply your network topology knowledge in your own organization's network.  As well as to more extensive networks like the world wide web. All networks are built on the same principals.
+When considering the move to the cloud, it's important to know the fundamentals of how your network is composed.  <!-- The first sentence is a repeat from the previous unit.--> Now you need to know the different types, their topologies, and their uses. You can apply your network topology knowledge in your own organization's network.  As well as to more extensive networks like the world wide web. All networks are built on the same principals.
 
-In this unit, you'll learn about the different types of networks that exist. You'll  gain an understanding of Ethernet. You'll learn about MAC address, and what ARP is and does.
+In this unit, you'll learn about the different types of networks that exist. You'll  gain an understanding of Ethernet. You'll learn about MAC addresses, and what ARP  <!-- Can we define what ARP stands for?--> is and does.
 
 ## Networks
 
@@ -24,6 +24,8 @@ The Local Area Network or LAN provides networking needs around a single location
 - **Ring Architecture** - In a ring architecture, each network device is connected to its neighbor until it forms a ring. This form of network is more resilient than a bus architecture. A break in the cable ring will affect the performance of the network.
 - **Mesh Architecture** - In a mesh architecture, each network device is connected to every other network device in the network. It dramatically increases the resilience of your network but has the physical overhead of connecting them all together. Few networks today are built as a full mesh. Most use a partial mesh, where some machines are connected to each other, but others connect through one device. However, there's a subtle difference between a physical mesh network and a logical one. We've just described a physical mesh network, but their usage is limited. However, the perception is that most modern networks are mesh-based because each device can see and communicate with any other device on the network. It is the logical mesh network and is primarily made possible through the use of network protocols.
 - **Star Topology** - The star topology is the most commonly used network architecture. Each network device is connected to a centralized hub or switch. Switches and hubs can be linked together to extend and build more extensive networks. This type of typology is, by far, the most robust and scalable.
+
+<!-- Some diagrams of one or two of these will work better for us :) -->
 
 ### LAN Transmission Methods
 
@@ -49,6 +51,10 @@ The Metropolitan Area Network or MAN provides networking capabilities between tw
 ### WAN
 
 The Wide Area Network or WAN provides networking capabilities between two different geographical locations locally or world-wide. You would use a WAN to connect your organization's head office with branch offices all over the country. A WAN links multiple LANs together to create one super network. As a MAN, you would use a virtual private network (VPN) to manage the connection between different LANs.
+
+
+
+<!-- Would an image like this work here?: http://www.am7s.com/wp-content/uploads/2019/04/MAN-net.jpg -->
 
 ### Differences between LAN and WAN networks
 
@@ -88,6 +94,8 @@ The Media Access Control address or MAC address is a unique identifier assigned 
 
 The MAC address has a standard composition of six hexadecimal numbers separated by a colon or dash, for example, AA-6A-BA-2B-68-C1. The first three numbers of the MAC address define the manufacturer's organizationally unique identifier (OUI). The remaining three numbers uniquely identify the device.
 
+<!-- And image here showing how to find a MAC address would be cool :https://www.howtogeek.com/wp-content/uploads/2017/06/mac_1.png -->
+
 ### Smartphone MAC address randomization
 
 Since a MAC address uniquely identifies an actual device on a network, most mobile phone manufacturers go to extreme lengths to ensure that they don't give out their MAC addresses. It has introduced the term MAC address randomization. While the smartphone is seeking a network to attach to, it uses a randomly generated MAC address. Once the device connects to an Access Point, it stops using a random one and provides the actual one.
@@ -105,6 +113,8 @@ Azure comes with several networking tools and services.
 ### Azure Virtual Networks
 
 Using Azure, you can build complex virtual networks that emulate the structure of your actual on-premises networks. Using Azure Virtual Network services, you can provision and manage your cloud-based virtual networks, or create hybrid virtual networks that integrate with your on-premises networks.
+
+<!-- Diagram of an Azure virtual network would be good. Like this: http://www.msserverpro.com/wp-content/uploads/2017/10/MSserverpro-Azure-Virtual-Network-1-1024x449.jpg -->
 
 ### Connectivity Services
 

@@ -6,6 +6,8 @@ In this unit, you'll learn about network protocols that are essential for commun
 
 A network protocol is a set of conditions and rules that specify how communication between one device and another will be handled. It provides a common framework for establishing and maintaining a communications channel. The protocol also defines how to handle errors or faults should they occur. Network protocols allow seamless communication between different devices, for example, laptops, tablets, smartphones, routers, and servers.
 
+<!-- Diagram showing devices communicating here, would be good. Easier to understand for people like me.-->
+
 The network protocol is an essential building block in the design of your organization's network architecture.
 
 There are many network protocols available, covering different network usages, including:
@@ -19,7 +21,7 @@ Each network protocol will have many properties that govern its use and implemen
 - Packet size
 - Address mapping
 - Routing, transmission speed
-- Handshaking techniques
+- Handshaking techniques <!-- What is a handshake?-->
 - Flow control
 - Error correction
 - Packet sequence
@@ -41,14 +43,16 @@ Here is a list of the most commonly used network communication protocols.
 
 - TCP (Transmission Control Protocol)  - TCP is a protocol that chunks up data into packets that can be sent securely and quickly while minimizing the chance of data loss.
 - IP (Internet Protocol) - IP is a protocol that holds the IP address of the sender and the receiver.
-- TCP/IP - TCP/IP is frequently used to represent the internet protocol suite. It's synonymous with network communications on the web and also within your organization's network. TCP/IP combines two protocols, the TCP and the IP. When more than one protocol is combined, it's called protocol stacking.
+- TCP/IP - TCP/IP is frequently used to represent the internet protocol suite. It's synonymous with network communications on the web and also within your organization's network. TCP/IP combines two protocols, the TCP and the IP. When more than one protocol is combined, it's called protocol stacking. <!-- Really good explanation-->
 - HTTP (Hypertext Transfer Protocol) - The HTTP protocol uses TCP/IP to deliver web page content from a server to your browser. The transmission protocol used is HTTP. HTTP also handles the downloading of files from remote servers.
-- HTTPS (Hypertext Transfer Protocol over Secure Socket Layer) - Provides a secure and encrypted method for transmission of data. The SSL allows secure data transfer for sensitive data, for example, credit card payments, or data captured from an online form.
+- HTTPS (Hypertext Transfer Protocol over Secure Socket Layer) - Provides a secure and encrypted method for transmission of data. The SSL allows secure data transfer for sensitive data, for example, credit card payments, or data captured from an online form. <!--- So HTTPS is the secure tunnel, and SSL encrypts data?-->
 - FTP (File Transfer Protocol) - FTP is used to transfer files between different computers on a network. Typically FTP is used to upload files to a server from a remote location. While you can use it download files, this is typically handled through HTTP. There's a secure flavor of FTP called SFTP or Secure Shell (SSH).
 - POP3 (Post Office Protocol) - POP3 is one of three email protocols. It's most commonly used by your email client to allow you to receive emails. This protocol uses TCP for the management and delivery of an email.
 - SMTP (Simple Mail Transfer Protocol) - SMTP is one of three email protocols. It's most commonly used to send emails from your email client. This protocol uses the TCP for management and transmission of the email.
 - IMAP (Interactive Mail Access Protocol) - IMAP is the more powerful of the three email protocols, and is often used to manage a single mailbox in your organization.
 - Bluetooth - is a data exchange protocol is designed for lightweight communications and combines a number of the previously mentioned protocols.
+
+<!-- Double check with Phil about the rules around bullet-points. I think we're not allowed to use capital letters. They basically have to be one sentence. Maybe a table would be better in this case?-->
 
 ## Internet protocol suite
 
@@ -71,9 +75,9 @@ Network security protocols use encryption and cryptographic principals to secure
 
 To implement a secure network, you must match the right security protocols for your needs. The following list explores the leading network security protocols:
 
-- **Hypertext Transfer Protocol Secure** (HTTPS) - HTTPS provides a more secure version of the standard HTTP protocol, by using the TSL or SSL encryption standard. This combination of protocols ensures that all data transmitted between the server and the web browser are encrypted and secure from eavesdropping or data packet sniffing.
-- **Secure Socket Layer** (SSL) - SSL was the standard encryption and security method used on the internet until it was replaced by Transport Layer Security (TSL). It provided a secure and encrypted connection between your computer and the target server or device when accessed over the internet. While TSL is now used, the replacement security protocol is often still called SSL. This level of security protocol, whether SSL or TSL, is what transforms a regular HTTP URL address into an HTTPS one.
-- **Transport Layer Security** (TSL) - is the successor to SSL and provides a stronger and more robust security encryption method. Based on the ITEF standard, it's designed to stop message forgery and tampering and eavesdropping. It's typically used to protect web browser communications, email, VOIP, and instant messaging.
+- **Hypertext Transfer Protocol Secure** (HTTPS) - HTTPS provides a more secure version of the standard HTTP protocol, by using the TLS or SSL encryption standard. This combination of protocols ensures that all data transmitted between the server and the web browser are encrypted and secure from eavesdropping or data packet sniffing.
+- **Secure Socket Layer** (SSL) - SSL was the standard encryption and security method used on the internet until it was replaced by Transport Layer Security (TLS)<!-- Fixed typo :)-->. It provided a secure and encrypted connection between your computer and the target server or device when accessed over the internet. While TLS is now used, the replacement security protocol is often still called SSL. This level of security protocol, whether SSL or TLS , is what transforms a regular HTTP URL address into an HTTPS one.
+- **Transport Layer Security** (TLS)<!-- Fixed typo :)--> - is the successor to SSL and provides a stronger and more robust security encryption method. Based on the ITEF standard, it's designed to stop message forgery and tampering and eavesdropping. It's typically used to protect web browser communications, email, VOIP, and instant messaging.
 - **Secure Shell** (SSH) - SSH is a cryptographic network security protocol that provides a secure data connection across a network. Designed to support command-line execution of instructions, including remote sign-in to servers. The FTP protocol uses many of the SSH functions to provide a secure file transfer mechanism.
 - **Kerberos** - This validation protocol provides a robust authentication for client-server based applications through secret-key cryptography. Kerberos assumes that all the endpoints in the network are insecure, and enforces strong encryption for all communications and data at all times.
 
