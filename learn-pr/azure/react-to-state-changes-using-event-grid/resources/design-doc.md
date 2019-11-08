@@ -36,7 +36,7 @@ Identify the subtasks of *React to state changes in your Azure services using Ev
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| Trigger a logic app with Event Grid | "...and need to be notified if there are any changes to the virtual machines on Azure" | Exercise | Describe the capabilities and use cases for Event Grid | Yes |
+| Respond to Azure events using Event Grid | "...and need to be notified if there are any changes to the virtual machines on Azure" | Exercise | Describe the capabilities and use cases for Event Grid | Yes |
 | Build logic that responds to an event | "You would like to receive emails if there are any changes to these virtual machines..." | Exercise | Create an application that handles events with Event Grid and Logic Apps | Yes |
 
 ## Outline the units
@@ -45,9 +45,9 @@ Identify the subtasks of *React to state changes in your Azure services using Ev
 
     You work on an operations team for a large organization. You have a set of dedicated client virtual machines that are under strict regulatory and change control, and need to be notified if there are any changes to the virtual machines on Azure. You would like to receive emails if there are any changes to these virtual machines, so that you can address any issues as they arise.
 
-1. **Trigger a logic app with Event Grid**
+1. **Respond to Azure events using Event Grid**
 
-    List the content that will enable the learner to *Trigger a logic app with Event Grid*:
+    List the content that will enable the learner to *Respond to Azure events using Event Grid*:
 
     - Use Event Grid to trigger a response in Azure
         - What is Event Grid?
