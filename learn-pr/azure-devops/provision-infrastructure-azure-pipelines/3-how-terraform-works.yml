@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What's the easist way to get the IP address of a virtual machine after Terraform runs?"
+  - content: "What's the easiest way to get the IP address of a virtual machine after Terraform runs?"
     choices:
     - content: "Run the `az vm list` command and query the IP address."
       isCorrect: false

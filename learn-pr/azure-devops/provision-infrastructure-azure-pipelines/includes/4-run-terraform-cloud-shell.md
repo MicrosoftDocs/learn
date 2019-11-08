@@ -307,7 +307,7 @@ Terraform is idempotent. That means you can run it as many times as you'd like. 
     terraform plan
     ```
 
-    This time, you see that Terraform proposes no changes. That's beacuse your Terraform plan did not change and you haven't modified any of your Azure resources.
+    This time, you see that Terraform proposes no changes. That's because your Terraform plan did not change and you haven't modified any of your Azure resources.
 
 1. Run `terraform apply` a second time.
 
