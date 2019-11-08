@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.data-anomaly-search-using-iot-hub.create-iot-hub-device-id
+metadata:
+  title: Exercise - Create an Azure IoT Hub, and a device ID
+  description: Describes the process of creating a new IoT Hub, a IoT Hub device identity, and obtaining the connection strings needed for the coding units.
+  ms.date: 12/01/2019
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-csharp-node
+title: Exercise - Create an Azure IoT Hub, and a device ID
+azureSandbox: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-create-iot-hub-device-id.md)]

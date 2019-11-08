@@ -1,0 +1,77 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.data-anomaly-search-using-iot-hub.summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 12/01/2019
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'question tbd?'
+    choices:  
+    - content: 'answer 1'
+      isCorrect: true
+      explanation: explanation 1.
+    - content: 'answer 2'
+      isCorrect: false
+      explanation: explanation 2.
+    - content: 'answer 3'
+      isCorrect: false
+      explanation: explanation 3.
+    - content: 'answer 4'
+      isCorrect: false
+      explanation: explanation 4.
+
+  - content: 'question tbd?'
+    choices:  
+    - content: 'answer 1'
+      isCorrect: true
+      explanation: explanation 1.
+    - content: 'answer 2'
+      isCorrect: false
+      explanation: explanation 2.
+    - content: 'answer 3'
+      isCorrect: false
+      explanation: explanation 3.
+    - content: 'answer 4'
+      isCorrect: false
+      explanation: explanation 4.
+
+  - content: 'question tbd?'
+    choices:  
+    - content: 'answer 1'
+      isCorrect: true
+      explanation: explanation 1.
+    - content: 'answer 2'
+      isCorrect: false
+      explanation: explanation 2.
+    - content: 'answer 3'
+      isCorrect: false
+      explanation: explanation 3.
+    - content: 'answer 4'
+      isCorrect: false
+      explanation: explanation 4.
+  
+  - content: 'question tbd?'
+    choices:  
+    - content: 'answer 1'
+      isCorrect: true
+      explanation: explanation 1.
+    - content: 'answer 2'
+      isCorrect: false
+      explanation: explanation 2.
+    - content: 'answer 3'
+      isCorrect: false
+      explanation: explanation 3.
+    - content: 'answer 4'
+      isCorrect: false
+      explanation: explanation 4.

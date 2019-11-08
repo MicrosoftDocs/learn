@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.iot.data-anomaly-search-using-iot-hub
+metadata:
+  title: Search for data anomalies with Azure machine learning, IoT Hub, and Stream Analytics
+  description: TBD. 
+  ms.date: 12/1/2019
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Search for data anomalies with Azure machine learning, IoT Hub, and Stream Analytics
+summary: >
+  tbd
+abstract: | 
+  In this module, you will:
+  - Create an Azure IoT Hub, using the IoT Hub portal
+  - Create an Azure IoT Hub device identity, using the IoT Hub portal
+  - Create an app to send device telemetry to the IoT Hub
+  - Create a second app to listen for the telemetry, and control the device through direct methods and device twins
+  - tbd
+prerequisites: | 
+  - An introductory knowledge of Azure IoT
+  -	Ability to navigate the Azure IoT portal 
+  -	Ability to use Node.js, or C#, at the beginner level
+  -	Experience using Visual Studio, or Visual Studio Code, at the beginner level
+  - tbd
+iconUrl: /learn/achievements/iot/iot-hub-conveyor-belt-vibration-detection.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure-iot-hub
+- azure-stream-analytics
+- azure-machine-learning-service
+units:
+- learn.iot.data-anomaly-search-using-iot-hub.introduction
+- learn.iot.data-anomaly-search-using-iot-hub.create-iot-hub-device-id
+###- learn.iot.data-anomaly-search-using-iot-hub.device-telemetry
+###- learn.iot.data-anomaly-search-using-iot-hub.write-telemetry-code
+###- learn.iot.data-anomaly-search-using-iot-hub.direct-methods
+###- learn.iot.data-anomaly-search-using-iot-hub.write-direct-method-code
+###- learn.iot.data-anomaly-search-using-iot-hub.device-twins
+###- learn.iot.data-anomaly-search-using-iot-hub.write-device-twins-code
+- learn.iot.data-anomaly-search-using-iot-hub.summary
+badge:
+  uid: learn.iot.iot-hub-conveyor-belt-vibration-detection.badge
