@@ -1,4 +1,4 @@
-Azure IoT Hub enables secure and reliable communication between your IoT solution and the devices it manages. IoT Hub provides a cloud-hosted solution backend to connect devices with per-device authentication, device management and scaled provisioning.
+Azure IoT Hub enables secure and reliable communication between your IoT solution and the devices it manages. IoT Hub provides a cloud-hosted solution backend to connect devices with per-device authentication, device management, and scaled provisioning.
 
 Let us first take a quick tour of some definitions, which will help you explore the suitability of IoT Hub for your business problems.
 

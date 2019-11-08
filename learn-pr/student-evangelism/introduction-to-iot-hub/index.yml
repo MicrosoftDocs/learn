@@ -14,7 +14,7 @@ summary: "Assess the characteristics of Azure IoT Hub and determine scenarios wh
 
 abstract: |
     In this module, you will:  
-    - Evaluate whether IoT Hub can effectively address the problems associated with large scale IoT deployment
+    - Evaluate whether IoT Hub can effectively address the problems associated with large-scale IoT deployment
     - Describe how the components of IoT hub work together to build IoT applications managed through the cloud
  
 prerequisites: |
