@@ -17,7 +17,7 @@ abstract: |
   - Use PowerShell to share variables among pipeline stages.
 prerequisites: |
   - An Azure subscription
-  - An Azure DevOps account
+  - An Azure DevOps organization
   - Visual Studio Code
   - .NET Core 2.1
   - Git

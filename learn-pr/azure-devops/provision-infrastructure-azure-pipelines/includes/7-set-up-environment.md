@@ -5,7 +5,9 @@ To do this, you:
 > [!div class="checklist"]
 > * Add a user to ensure Azure DevOps can connect to your Azure subscription.
 > * Set up an Azure DevOps project for this module.
-> * Add the build pipeline.
+> * Move the work item for this module on Azure Boards to the **Doing** column.
+> * Make sure your project is set up locally so that you can push changes to the pipeline.
+> * Create a service connection that enables Azure Pipelines to securely access your Azure subscription.
 
 ## Add a user to Azure DevOps
 
@@ -28,15 +30,12 @@ The modules in this learning path form a progression, where you follow the Tails
 Run a template that sets up everything for you in your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=create-release-pipeline&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=provision-infrastructure-azure-pipelines&azure-portal=true)
 
 From the Azure DevOps Demo Generator site, perform these steps to run the template.
 
 1. Select **Sign In** and accept the usage terms.
-1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - Release**.
-
-    ![Creating a project through the Azure DevOps Demo Generator](../media/4-create-new-project.png)
-
+1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - Terraform**.
 1. Select **Yes, I want to fork this repository** and then select **Authorize**.
 1. Select **Create Project**.
 
@@ -49,7 +48,39 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 1. Select **Navigate to project** to go to your project in Azure DevOps.
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/learn/modules/create-release-pipeline/8-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
+> The [Clean up your Azure DevOps environment](/learn/modules/provision-infrastructure-azure-pipelines/9-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
+
+## Move the work item to Doing
+
+In this part, you assign a work item to yourself on Azure Boards that relates to this module. You also move the work item to the **Doing** state. In practice, you and your team would assign work items at the start of each sprint, or work iteration.
+
+Assigning work in this way gives you a checklist to work from. It gives others on your team visibility into what you're working on and how much work is left. It also helps the team enforce Work in Progress (WIP) limits so that the team doesn't take on too much work at one time.
+
+Recall that the team settled on these three top issues for the current sprint.
+
+![Azure Boards showing the tasks for this sprint](../../shared/media/automate-all-tasks.png)
+
+> [!NOTE]
+> Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
+
+Here you move the first item, **Scale out the website** to the **Doing** column and assign yourself to the work item. **Scale out the website** relates to using automation to provision the infrastructure needed to run the _Space Game_ web site.
+
+To set up the work item:
+
+1. From Azure DevOps, navigate to **Boards** and then select **Boards** from the menu.
+
+    ![Azure DevOps showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
+
+1. From the **Scale out the website** work item, click the down arrow at the bottom of the card. Then assign the work item to yourself.
+
+    ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
+1. Move the work item from the **To Do** to the **Doing** column.
+
+    ![Azure Boards showing the card in the Doing column](../media/7-azure-boards-wi1-doing.png)
+
+At the end of this module, you move the card to the **Done** column after you've completed the task.
+
+[!include[](../../shared/includes/enable-multi-stage-pipelines.md)]
 
 ## Prepare Visual Studio Code
 
@@ -92,9 +123,9 @@ At a minimum, you'll need to complete the following steps. Run these commands fr
 
 ## Set up your project in Visual Studio Code
 
-In the [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true) learning path, you forked and then cloned a Git repository that contains the source code for the _Space Game_ website. Your fork was connected to your projects in Azure DevOps so that the build runs when you push changes to GitHub.
+In the [Deploy applications with Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops?azure-portal=true) learning path, you forked and then cloned a Git repository that contains the source code for the _Space Game_ website. Your fork was connected to your projects in Azure DevOps so that the build runs when you push changes to GitHub.
 
-In this learning path, we switch to a different Git repository, [mslearn-tailspin-spacegame-web-deploy](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy?azure-portal=true). When you ran the template to set up your Azure DevOps project, the process forked the repository automatically for you.
+In this learning path, we switch to a different Git repository, [mslearn-tailspin-spacegame-web-automate](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-automate?azure-portal=true). When you ran the template to set up your Azure DevOps project, the process forked the repository automatically for you.
 
 In this part, you clone your fork locally so that you can make changes and build out your pipeline configuration.
 
@@ -106,7 +137,7 @@ A clone, just a like a fork, is a copy of a repository. When you clone a reposit
 
 To clone the *Space Game* web project to your computer:
 
-1. Go to your fork of the *Space Game* web project (**mslearn-tailspin-spacegame-web-deploy**) on [GitHub](https://github.com?azure-portal=true).
+1. Go to your fork of the *Space Game* web project (**mslearn-tailspin-spacegame-web-automate**) on [GitHub](https://github.com?azure-portal=true).
 1. Select **Clone or download**. Then select the button next to the URL that's shown to copy the URL to your clipboard:
 
     ![The Clone or download button on GitHub](../../shared/media/github-clone-button.png)
@@ -120,13 +151,13 @@ To clone the *Space Game* web project to your computer:
 1. Run the `git clone` command. Replace the URL that's shown here with the contents of your clipboard:
 
     ```bash
-    git clone https://github.com/your-name/mslearn-tailspin-spacegame-web-deploy.git
+    git clone https://github.com/your-name/mslearn-tailspin-spacegame-web-automate.git
     ```
 
-1. Move to the `mslearn-tailspin-spacegame-web-deploy` directory. This is the root directory of your repository.
+1. Move to the `mslearn-tailspin-spacegame-web-automate` directory. This is the root directory of your repository.
 
     ```bash
-    cd mslearn-tailspin-spacegame-web-deploy
+    cd mslearn-tailspin-spacegame-web-automate
     ```
 
 ### Set the upstream remote
@@ -142,8 +173,8 @@ git remote -v
 You see that you have both fetch (download) and push (upload) access to your repository:
 
 ```output
-origin  https://github.com/username/mslearn-tailspin-spacegame-web-deploy.git (fetch)
-origin  https://github.com/username/mslearn-tailspin-spacegame-web-deploy.git (push)
+origin  https://github.com/username/mslearn-tailspin-spacegame-web-automate.git (fetch)
+origin  https://github.com/username/mslearn-tailspin-spacegame-web-automate.git (push)
 ```
 
 *Origin* specifies your repository on GitHub. When you fork code from another repository, it's common to name the original remote (the one you forked from) as *upstream*.
@@ -151,7 +182,7 @@ origin  https://github.com/username/mslearn-tailspin-spacegame-web-deploy.git (p
 Run this `git remote add` command to create a remote named *upstream* that points to the Microsoft repository:
 
 ```bash
-git remote add upstream https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy.git
+git remote add upstream https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-automate.git
 ```
 
 Run `git remote` a second time to see the changes:
@@ -163,9 +194,9 @@ git remote -v
 You see that you still have both fetch (download) and push (upload) access to your repository. You also now have fetch access from the Microsoft repository:
 
 ```output
-origin  https://github.com/username/mslearn-tailspin-spacegame-web-deploy.git (fetch)
-origin  https://github.com/username/mslearn-tailspin-spacegame-web-deploy.git (push)
-upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy.git (fetch)
+origin  https://github.com/username/mslearn-tailspin-spacegame-web-automate.git (fetch)
+origin  https://github.com/username/mslearn-tailspin-spacegame-web-automate.git (push)
+upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-automate.git (fetch)
 ```
 
 ### Open the project in the file explorer
@@ -182,34 +213,16 @@ You see the directory and file tree in the file explorer.
 > [!NOTE]
 > You might need to open the integrated terminal a second time after you open the folder.
 
-## Create the initial build pipeline
+## Fetch starter code from GitHub
 
-Here, you turn on multistage pipelines and create an initial pipeline configuration that builds the application and produces a build artifact.
-
-### Turn on multi-stage pipelines in Azure DevOps
-
-Mulit-stage pipelines are a preview feature of Azure Pipelines. Preview features provide early access to features that will soon become part of Azure DevOps. For now, you need to turn on this feature.
-
-From Azure DevOps:
-
-1. Select your profile from the upper corner.
-1. Select the ellipsis (...) button, then select **Preview features**.
-1. Turn on **Multi-stage Pipelines**.
-
-    ![Enabling multi-stage pipelines from Azure DevOps](../../shared/media/enable-preview-features.png)
-
-1. Notice that separate **Pipelines** menu entries for **Release** and **Build** are now gone. This is because you will now perform both build and release tasks from the same pipeline.
-
-### Create the initial pipeline configuration
-
-Here, you create an initial pipeline configuration that builds the web application. This ensures that your project is set up to build from your GitHub repository. This build configuration resembles the one you set up in previous modules.
+Here, you fetch and checkout a Git branch that contains starter code for this module.
 
 1. From Visual Studio Code, open the integrated terminal.
-1. Run the following `git fetch` and `git checkout` commands to download a branch named `release-pipeline` from Microsoft's repository and switch to that branch.
+1. Run the following `git fetch` and `git checkout` commands to download a branch named `terraform` from Microsoft's repository and switch to that branch.
 
     ```bash
-    git fetch upstream release-pipeline
-    git checkout -b release-pipeline upstream/release-pipeline
+    git fetch upstream terraform
+    git checkout -b terraform upstream/terraform
     ```
 
     Recall that `upstream` refers to Microsoft's GitHub repository. Your project's Git configuration understands the `upstream` remote because you set up that relationship when you forked the project from Microsoft's repository and cloned it locally.
@@ -222,40 +235,30 @@ Here, you create an initial pipeline configuration that builds the web applicati
 
     [!include[](../../shared/includes/pipeline-branches-note.md)]
 
-1. Run the following `git commit` command to add an empty entry to your commit history.
+## Create a service connection
 
-    ```bash
-    git commit --allow-empty -m "Trigger the pipeline"
-    ```
+Here, you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the [Deploy applications with Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops?azure-portal=true) learning path.
 
-    This step is for learning purposes and is not typical. We provide starter code that you don't need to modify now. The `--allow-empty` flag ensures that the next step successfully pushes the branch to GitHub and triggers Azure Pipelines to run.
+> [!IMPORTANT]
+> Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
 
-    If you omitted this step, the `git push` command you run in the next step wouldn't take any action, and therefore wouldn't trigger Azure Pipelines to run.
+1. In Azure DevOps, go to your **Space Game - web - Terraform** project.
+1. Select **Project settings** from the bottom corner of the page.
+1. Under **Pipelines**, select **Service connections**.
+1. Select **+ New service connection** and then choose **Azure Resource Manager**.
 
-1. Run the following `git push` command to upload the branch to your GitHub repository.
+    The **Add an Azure Resource Manager service connection** dialog appears.
+1. From the dialog, ensure **Service Principal Authentication** is selected. Then fill in these fields:
 
-    ```bash
-    git push origin release-pipeline
-    ```
+    | Field               | Value                                        |
+    |---------------------|----------------------------------------------|
+    | **Connection name** | **Resource Manager - Tailspin - Space Game** |
+    | **Scope level**     | **Subscription**                             |
+    | **Subscription**    | Your Azure subscription                      |
+    | **Resource Group**  | Leave this field blank                       |
 
-1. In Azure Pipelines, go to the build and trace the build as it runs.
+    During the process, you might be prompted to sign in to your Microsoft account.
 
-    ![Azure Pipelines showing a running job](../../shared/media/pipeline-trace-build.png)
+1. Select **OK**.
 
-1. After the build completes, select the back button to return to the summary page.
-
-    ![Navigating back to the summary page in Azure Pipelines](../../shared/media/pipeline-navigate-pipeline-summary.png)
-
-1. On the summary page, select your published artifact.
-
-    ![Selecting the artifact in Azure Pipelines](../../shared/media/pipeline-navigate-published-artifact.png)
-
-1. From the **Published artifacts** page, expand the **drop** folder.
-
-    You see a _zip_ file that contains your built application and its dependencies. This is your build artifact.
-
-    ![Azure Pipelines showing the published artifact](../../shared/media/pipeline-view-published-artifact.png)
-
-    You can manually download and install the build artifact in your own environment, just as Amita did in the previous learning path. In this module, you add a deployment stage that automatically deploys the build artifact to Azure App Service.
-
-You now have a build pipeline for the _Space Game_ web project. Next, you add the deployment stage to the pipeline.
+    Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps is unable to connect, you'll have the chance to sign in a second time.
