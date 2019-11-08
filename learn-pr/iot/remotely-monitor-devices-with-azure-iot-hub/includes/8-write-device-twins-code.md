@@ -110,7 +110,7 @@ function queryTwins() {
 3. Now, add the following lines to the `Main` method, before the lines creating a service client.
 
 ``` cs
-           // A registry manager is used to access the digital twins.
+            // A registry manager is used to access the digital twins.
             registryManager = RegistryManager.CreateFromConnectionString(s_serviceConnectionString);
             SetTwinProperties().Wait();
 
@@ -203,35 +203,26 @@ client.getTwin(function (err, twin) {
 
 1. Open the Program.cs file for the device app.
 
-2. Add the following method to the class.
+2. Add the following task to the class.
 
 ``` cs
-        private static void UpdateTwinProperties()
+        private static async Task OnDesiredPropertyChanged(TwinCollection desiredProperties, object userContext)
         {
             try
             {
-                // Get the current state of the device twin.
-                Twin deviceTwin = s_deviceClient.GetTwinAsync().GetAwaiter().GetResult();
-
-                // Extract the desired twin properties.
-                dynamic data = JObject.Parse(deviceTwin.Properties.Desired.ToJson());
-
-                // Set the desired properties for the device app.
-                desiredHumidity = data.humidity;
-                desiredTemperature = data.temperature;
-                greenMessage("Setting desired humidity to " + desiredHumidity);
-                greenMessage("Setting desired temperature to " + desiredTemperature);
-
-                greenMessage("\nTwin state reported");
+                desiredHumidity = desiredProperties["humidity"];
+                desiredTemperature = desiredProperties["temperature"];
+                greenMessage("Setting desired humidity to " + desiredProperties["humidity"]);
+                greenMessage("Setting desired temperature to " + desiredProperties["temperature"]);
 
                 // Report the properties back to the IoT Hub.
                 var reportedProperties = new TwinCollection();
                 reportedProperties["fanstate"] = fanState.ToString();
                 reportedProperties["humidity"] = desiredHumidity;
                 reportedProperties["temperature"] = desiredTemperature;
-                s_deviceClient.UpdateReportedPropertiesAsync(reportedProperties).Wait();
+                await s_deviceClient.UpdateReportedPropertiesAsync(reportedProperties);
 
-                greenMessage(reportedProperties.ToJson());
+                greenMessage("\nTwin state reported: " + reportedProperties.ToJson());
             }
             catch
             {
@@ -240,29 +231,23 @@ client.getTwin(function (err, twin) {
         }
 ```
 
-3. Update the `Main` method. Add a call to `UpdateTwinProperties()`, after the statements creating a handler for the device method.
+3. Update the `Main` method. Add the following lines after the statements creating a handler for the device method.
 
 ``` cs
-            // Create a handler for the direct method call
-            s_deviceClient.SetMethodHandlerAsync("SetFanState", SetFanState, null).Wait();
+            // Get the device twin to report the initial desired properties.
+            Twin deviceTwin = s_deviceClient.GetTwinAsync().GetAwaiter().GetResult();
+            greenMessage("Initial twin desired properties: " + deviceTwin.Properties.Desired.ToJson());
 
-            // Synchronize with the device twin.
-            UpdateTwinProperties();
+            // Set the device twin update callback.
+            s_deviceClient.SetDesiredPropertyUpdateCallbackAsync(OnDesiredPropertyChanged, null).Wait();
 ```
 
-4. Add a line to the `SetFanState` task, as the fan state is a reported property. Add it after the `greenMessage` call.
-
-``` cs
-                    // Parse the payload, which will trigger an exception if the payload is not valid.
-                    fanState = (stateEnum)Enum.Parse(typeof(stateEnum), data);
-                    greenMessage("Fan set to: " + data);
-
-                    UpdateTwinProperties();
-```
-
-5. Save the Program.cs file.
+4. Save the Program.cs file.
 
 ::: zone-end
+
+>[!NOTE]
+>Now you have added device twins to your app, you can reconsider having explicit variables such as  `desiredHumidity`. Instead, you can use the variables in the device twin object.
 
 ## Test the device twins
 
