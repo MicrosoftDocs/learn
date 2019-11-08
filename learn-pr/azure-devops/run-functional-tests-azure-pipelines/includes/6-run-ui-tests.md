@@ -1,12 +1,12 @@
-Before Andy and Amita run their tests in the pipeline, they want to verify that their tests accomplish their goals by first running them locally. In this section, you follow along by running the Selenium UI tests locally and then in the pipeline.
+Before Andy and Amita run their tests in the pipeline, they want to verify that their new UI tests do what they should. In this section, you follow along by first running the Selenium UI tests locally and then in the pipeline.
 
-Writing automated tests is an iterative process, just like writing any other kind of code. In practice, you'll likely need to try a few different approaches, refer to reference documentation and other example code, and fix build errors.
+Writing automated tests is an iterative process, just like writing any other kind of code. For your own apps, you'll likely need to try a few different approaches, refer to reference documentation and other example code, and fix build errors.
 
 ## Run the UI tests locally
 
 The `Setup` method in *HomePageTest.cs* navigates to the _Space Game_ homepage after it sets the `driver` member variable.
 
-Although you could hardcode the site URL, here we read the URL from an environment variable named `SITE_URL`. Doing so enables you to run the tests multiple times against different URLs.
+Although you could hardcode the site URL, here we read the URL from an environment variable named `SITE_URL`. This way, you can run the tests multiple times against different URLs.
 
 ```cs
 // Navigate to the site.
@@ -45,7 +45,7 @@ To run the tests locally:
     As the tests run, you see one or more browsers appear. Selenium controls each browser and performs the test steps that you defined.
 
     > [!NOTE]
-    > Don't worry if you don't see all three browsers appear. For example, you won't see the tests run on Chrome if you don't have Chrome installed. You also won't see Internet Explorer tests run on macOS or Linux. Seeing just one browser will help give you confidence that your tests are working. In practice, you might set up all browsers you want to test on in your local development environment so that you can verify that your tests behave as expected in each configuration before you run your tests in the pipeline.
+    > Don't worry if you don't see all three browsers appear. For example, you won't see the tests run on Chrome if you don't have Chrome installed. You also won't see Internet Explorer tests run on macOS or Linux. Seeing just one browser will help give you confidence that your tests are working. In practice, you might set up all browsers you want to test against in your local development environment so that you can verify that your tests behave as expected in each configuration before you run your tests in the pipeline.
 1. From the terminal, trace the output of each test. Also note the test run summary at the end.
 
     Here's an example that shows how out of the nine total tests, six succeeded and three were skipped.
@@ -60,7 +60,7 @@ To run the tests locally:
 
 ## Add the SITE_URL variable to Azure Pipelines
 
-Earlier, you set the `SITE_URL` environment variable locally so that your tests know where to point each browser. You can add this variable to Azure Pipelines, similar to how you added variables for your App Service instances earlier. When the agent runs, this variable is automatically exported to the agent as an environment variable.
+Earlier, you set the `SITE_URL` environment variable locally so that your tests know where to point each browser. You can add this variable to Azure Pipelines, similarly to how you added variables for your App Service instances earlier. When the agent runs, this variable is automatically exported to the agent as an environment variable.
 
 Let's add the pipeline variable now, before you update your pipeline configuration. To do so:
 
@@ -68,7 +68,7 @@ Let's add the pipeline variable now, before you update your pipeline configurati
 1. Under **Pipelines**, select **Library**.
 1. Select the **Release** variable group.
 1. Under **Variables**, select **+ Add**.
-1. Enter **SITE_URL** as the name of your variable. Enter the URL of the App Service instance that corresponds do your _Test_ environment, such as **http://tailspin-space-game-web-dev-10529.azurewebsites.net**, as its value.
+1. Enter **SITE_URL** as the name of your variable. Enter the URL of the App Service instance that corresponds do your **test** environment, such as **http://tailspin-space-game-web-dev-10529.azurewebsites.net**, as its value.
 1. Select **Save** near the top of the page to save your variable to the pipeline.
 
     Your variable group resembles this one:
@@ -86,21 +86,21 @@ In this section, you modify the pipeline configuration to run your Selenium UI t
 
     [!code-yml[](code/6-azure-pipelines.yml?highlight=3,57,110-134)]
 
-    This change includes these three changes:
+    The file includes these three changes:
 
-    * The `dotnetSdkVersion` variable is moved to the top of the file so that multiple stages can access it. Here, the _Build_ and _Test_ stages require the this version of .NET Core.
+    * The `dotnetSdkVersion` variable is moved to the top of the file so that multiple stages can access it. Here, the _Build_ and _Test_ stages require this version of .NET Core.
     * The _Build_ stage publishes only the _Space Game_ website package as the build artifact. Previously, you published the artifacts like this:
 
         [!code-yml[](code/6-azure-pipelines-publish.yml?highlight=5)]
 
-        Doing so would generate two build artifacts: the _Space Game_ website package and the compiled UI tests. We build the UI tests during the _Build_ stage to ensure they will compile during the _Test_ stage. But we don't need to publish the compiled test code because we build it again during the _Test_ stage when the tests are run.
-    * The _Test_ stage includes a second job that builds and runs the tests. This job resembles the one you used in the [Run quality tests in your build pipeline by using Azure Pipelines](https://docs.microsoft.com/learn/modules/run-quality-tests-build-pipeline/4-add-unit-tests?azure-portal=true) module, where you ran NUnit tests that verify the leaderboard's filtering functionality.
+        This task generates two build artifacts: the _Space Game_ website package and the compiled UI tests. We build the UI tests during the _Build_ stage to ensure they will compile during the _Test_ stage. But we don't need to publish the compiled test code because we build it again during the _Test_ stage when the tests are run.
+    * The _Test_ stage includes a second job that builds and runs the tests. This job resembles the one you used in the [Run quality tests in your build pipeline by using Azure Pipelines](https://docs.microsoft.com/learn/modules/run-quality-tests-build-pipeline/4-add-unit-tests?azure-portal=true) module, where you ran NUnit tests that verified the leaderboard's filtering functionality.
 
-        Recall that a _deployment job_ is a special type of job that plays an important role in your deployment stages. The second job is a normal job that runs the Selenium tests on a Windows Server 2019 agent. Although we use a Linux agent to build the application, here we use a Windows agent to run the UI tests because Amita performs her manual tests on Windows, which is where the majority of site traffic comes from.
+        Recall that a _deployment job_ is a special type of job that plays an important role in your deployment stages. The second job is a normal job that runs the Selenium tests on a Windows Server 2019 agent. Although we use a Linux agent to build the application, here we use a Windows agent to run the UI tests because Amita performs her manual tests on Windows, because that's what most customers use.
 
         The `RunUITests` job depends on the `Deploy` job to ensure that the jobs are run in the correct order. You need to deploy the website to App Service before you can run the UI tests. If you don't specify this dependency, jobs within the stage can run in any order or run in parallel.
 
-1. In the integrated terminal, add **azure-pipelines.yml** to the index, commit the changes, and push the branch up to GitHub.
+1. In the integrated terminal, add *azure-pipelines.yml* to the index, commit the changes, and push the branch up to GitHub.
 
     ```bash
     git add azure-pipelines.yml
@@ -137,6 +137,6 @@ Here you watch the pipeline run, including the Selenium UI tests, during the _Te
 
     If any test were to fail, you would see detailed results of the failure. From there, you can investigate the source of the failure, fix it locally, and then push up the necessary changes to make the tests pass in the pipeline.
 
-**Amita:** This is exciting! I now have UI tests that I can expand on and run in the pipeline. This will really save us time in the long run. Best of all, this gives us added confidence in our code quality.
+**Amita:** This is exciting! I now have UI tests that I can run in the pipeline. This will really save us time in the long run. I've also got a pattern I can follow to add more tests. Best of all, this gives us added confidence in our code quality.
 
-**Andy:** I'm glad. Tests that you find yourself running repeatedly are good candidates for automation. Good luck adding more. If you get stuck or need a code reviewer, you know where to find me.
+**Andy:** All true. Remember, tests that you find yourself repeatedly performing manually are good candidates for automation. Good luck adding more. If you get stuck or need a code reviewer, you know where to find me.

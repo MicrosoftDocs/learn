@@ -1,4 +1,4 @@
-The team has a plan and is ready to begin implementing their release pipeline. You have an Azure DevOps project set up and Azure App Service instances that are ready to receive build artifacts.
+The team has a plan and is ready to begin implementing their release pipeline. You have your Azure DevOps project set up and Azure App Service instances that are ready to receive build artifacts.
 
 At this point, remember that the team's pipeline has only two stages. The first stage produces the build artifact and the second stage deploys the _Space Game_ web application to App Service. Here, you follow along with Andy and Mara as they modify the pipeline to deploy to the App Service environment that corresponds to the _Dev_ stage.
 
@@ -13,10 +13,10 @@ This branch serves as your _release_ branch. It contains the _Space Game_ projec
 
     ```bash
     git fetch upstream release
-    git checkout release
+    git checkout -b release upstream/release
     ```
 
-    The format of this command enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
+    The format of these commands enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
 
 1. As an optional step, open *azure-pipelines.yml* from Visual Studio Code and familiarize yourself with the initial configuration.
 

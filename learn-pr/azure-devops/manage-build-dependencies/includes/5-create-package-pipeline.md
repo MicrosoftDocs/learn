@@ -39,7 +39,7 @@ To clone the **mslearn-tailspin-spacegame-web-models** projects to your computer
 1. From Visual Studio Code, go to the terminal window and run this `git clone` command. Replace the URL that's shown with the contents of your clipboard.
 
     ```bash
-    git clone --branch master --single-branch https://github.com/your-name/mslearn-tailspin-spacegame-web-models.git
+    git clone https://github.com/your-name/mslearn-tailspin-spacegame-web-models.git
     ```
 
 1. Move to the **mslearn-tailspin-spacegame-web-models** directory. This is the root directory of your repository.
@@ -57,7 +57,7 @@ In Visual Studio Code, your terminal window points to the root directory of the 
 
     You see the directory and file tree in the file explorer.
 
-1. Open the **azure-pipelines.yml** file.
+1. Open the *azure-pipelines.yml* file.
 
     You see the steps where the package is built, the version is set, and the package is added to Azure Artifacts.
 
@@ -117,7 +117,7 @@ Here, you'll set up a second pipeline to build the package and upload that packa
     
     b. From the page that appears, scroll to the bottom and select **Approve and install**.
     
-    c. From the **Review** tab, you see the new pipeline's **azure-pipelines.yml** file.
+    c. From the **Review** tab, you see the new pipeline's *azure-pipelines.yml* file.
     
     d. Select **Run**.
 1. Watch the pipeline run.

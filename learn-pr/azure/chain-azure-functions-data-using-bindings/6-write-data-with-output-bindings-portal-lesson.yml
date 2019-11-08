@@ -4,11 +4,10 @@ metadata:
   title: Write data with output bindings
   description: In this hands-on unit, we'll write data from our Azure function to Azure Cosmos DB with the help of an output binding.
   ms.date: 09/24/2018
-  author: andrewjbyrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Write data with output bindings
 durationInMinutes: 3
 content: |

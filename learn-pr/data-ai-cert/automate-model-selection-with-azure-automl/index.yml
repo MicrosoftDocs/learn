@@ -2,13 +2,12 @@
 uid: learn.data-ai.automate-model-selection-with-azure-automl
 metadata:
   title: Automate the ML model selection with Azure Machine Learning service
-  description: Automate the ML model selection with Azure Machine Learning service
+  description: Learn how the Azure Machine Learning service's AutoML can help with automation, find the best model for your experiment, and test it with Python code. 
   ms.date: 03/18/2019
-  author: bcafferky
-  ms.author: brcaffer
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Automate the ML model selection with Azure Machine Learning service
 summary: Automate the ML model selection with Azure Machine Learning service
 abstract: | 

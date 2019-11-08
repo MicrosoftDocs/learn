@@ -4,18 +4,17 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 10/18/2019
+  ms.date: 11/07/2019
   author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-
 durationInMinutes: 2
+
 quiz:
-  title: ""
   questions:
-  - content: "Artificial intelligence combined with Microsoft tools, services, and infrastructure can make AI real for your organization. Which of the following describes a scenario that uses AI to improve business outcomes?\"  "
+  - content: "Artificial intelligence combined with Microsoft tools, services, and infrastructure can make AI real for your organization. Which of the following describes a scenario that uses AI to improve business outcomes?"
     choices:
     - content: "Strategically moving on-premises applications and workloads to the cloud"
       isCorrect: false
