@@ -13,7 +13,7 @@ durationInMinutes: 5 # dummy number at present
 content: |
 quiz:
   questions:
-  - content: "Suppose, you are tasked with developing an IoT solutions that requires near real-time response to local events, you would consider using IoT Edge because:"
+  - content: "Suppose, you're tasked with developing an IoT solution that requires near real-time response to local events, you would consider using IoT Edge because:"
     choices:
     - content: "IoT Edge can run modules locally on IoT Edge devices."
       isCorrect: true
@@ -24,7 +24,7 @@ quiz:
     - content: "IoT Edge can communicate with the cloud."
       isCorrect: false
       explanation: "The ability to communicate with the cloud doesn't guarantee a rapid response time."
-  - content: "Suppose, you are tasked with monitoring the health of a diverse set of IoT devices in the field. Which component of IoT Edge would you use?"
+  - content: "Suppose, you're tasked with monitoring the health of a diverse set of IoT devices in the field. Which component of IoT Edge would you use?"
     choices:
     - content: "IoT Edge modules"
       isCorrect: false
