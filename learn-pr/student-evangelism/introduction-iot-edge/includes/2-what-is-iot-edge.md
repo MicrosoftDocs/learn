@@ -20,7 +20,7 @@ IoT Edge enables you to:
 
 **Provide security for edge deployments:** IoT Edge provides security in several ways. Working with the IoT Hub, we can ensure that only the right devices can communicate with each other and that they have the right software installed. IoT Edge can provide added security by integrating with Azure Security Center. Also, by IoT Edge can make use of any hardware security modules if available to provide strong authenticated connections for confidential computing.
 
-**Ensure privacy for IoT deployments:** IoT Edge can protect person-related data. Person-related data can be cleansed before it's sent to the cloud, in that way providing better privacy protection. By storing data on-premise, you can comply better with security, confidentiality, and privacy regulations. 
+**Ensure privacy for IoT deployments:** IoT Edge can protect person-related data. Person-related data can be cleansed before it's sent to the cloud, in that way providing better privacy protection. By storing data on-premises, you can comply better with security, confidentiality, and privacy regulations. 
 
 **Act as a gateway:** IoT Edge can function as a protocol gateway and thus provide connectivity and edge analytics to IoT devices that would otherwise not have these capabilities. 
 
