@@ -5,11 +5,10 @@ metadata:
   title: When to choose Azure Functions to run your business logic
   description: Use Azure Functions to run your business logic 
   ms.date: 04/10/2019
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
   [!include[](includes/5-web-jobs-and-functions.md)]

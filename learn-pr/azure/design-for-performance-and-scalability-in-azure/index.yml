@@ -33,6 +33,8 @@ products:
 - azure-traffic-manager
 - azure-redis-cache
 - azure-monitor
+- azure-expressroute
+- azure-virtual-network
 units:
 - learn.design-for-performance-and-scalability.1-introduction
 - learn.design-for-performance-and-scalability.2-scaling-up-and-scaling-out

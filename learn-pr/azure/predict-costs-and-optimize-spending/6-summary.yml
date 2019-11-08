@@ -16,7 +16,7 @@ content: |
 quiz:
     title: Check your knowledge
     questions:
-    - content: "Which of the following are used to determine Azure costs for each billing period?"
+    - content: "Which one of the following is used to determine Azure costs for each billing period?"
       choices:
       - content: "The Azure website"
         isCorrect: false
@@ -45,7 +45,7 @@ quiz:
       choices:
       - content: "Pay in advance"
         isCorrect: true
-        explanation: "Azure Reservations offer discounted prices on certain Azure products and resources. To get a discount, you reserve products and resources by paying in advance. You can prepay for one or three year's use of certain Azure resources."
+        explanation: "Azure Reservations offer discounted prices on certain Azure products and resources. To get a discount, you reserve products and resources by paying in advance. You can prepay for one or three year's of usage of certain Azure resources."
       - content: "Provision many resources"
         isCorrect: false
         explanation: "There is no requirement to provision many resources to use Azure Reservations."

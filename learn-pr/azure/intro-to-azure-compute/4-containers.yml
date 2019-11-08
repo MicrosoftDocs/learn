@@ -4,12 +4,11 @@ title: Explore Containers in Azure
 metadata:
   title: Explore Containers in Azure
   description: Explore Containers in Azure
-  ms.date: 12/21/2018
-  author: cryophobia
-  ms.author: chrvaw
+  ms.date: 10/21/2019
+  author: patridge
+  ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/4-containers.md)]

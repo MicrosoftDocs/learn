@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-hpc.3-azure-vm-hpc-instances
+metadata:
+  title: Azure VM HPC instances
+  description: In this unit, you'll learn about H-series Virtual Machines and the tasks you can use them for.
+  ms.date: 10/10/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure VM HPC instances
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-azure-vm-hpc-instances.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You're trying to provision several H-series Azure VMs in the Azure portal to solve some complex financial equations. How can you resolve the errors you are receiving?"
+    choices:
+    - content: "Use the Azure Virtual Machines pricing detail page to ensure that the problem you want to solve is supported by the kind of VM you're trying to deploy."
+      isCorrect: false
+      explanation: "These problems are often caused when you reach the limit for VM cores in your subscription. You can't solve them by using the pricing detail page."
+    - content: "Tell Azure that your subscription needs to support a greater number of cores than is allowed by default."
+      isCorrect: true
+      explanation: "Because H-series VMs use large numbers of cores, you can quickly reach the limit for your subscription. Open a support request to increase this limit."
+    - content: "Try again at a different time."
+      isCorrect: false
+      explanation: "These problems are often caused when you reach the limit for VM cores in your subscription. You will see the same errors at any later time."
+  - content: "You want to deploy an HB-series VM for a weather modeling startup. However, this type of VM doesn't appear as an option in the portal. What should you check?"
+    choices:
+    - content: "Check that your subscription is allowed to deploy VMs of this type."
+      isCorrect: false
+      explanation: "HB-series VMs are supported in all Azure subscription. However, they are not supported in all Azure regions."
+    - content: "Try again at a different time."
+      isCorrect: false
+      explanation: "The problem is that HB-series VMs are not supported in all Azure regions. This problem will be the same at a different time."
+    - content: "Check that this VM is supported in your preferred region of deployment."
+      isCorrect: true
+      explanation: "HB-series VMs are not supported in all Azure regions."

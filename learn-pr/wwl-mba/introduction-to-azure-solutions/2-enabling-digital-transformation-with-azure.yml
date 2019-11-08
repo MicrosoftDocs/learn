@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.introduction-to-azure-solutions.2-enabling-digital-transformation-with-azure
+title: Enable digital transformation with Azure
+metadata:
+  title: Enable digital transformation with Azure
+  description: Enable digital transformation with Azure
+  ms.date: 11/07/2019
+  author: wwlpublish
+  ms.author: rknapp
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-enabling-digital-transformation-with-azure.md)]

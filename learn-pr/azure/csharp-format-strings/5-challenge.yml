@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-format-strings.challenge
+title: Challenge
+metadata:
+  title: Challenge
+  description: Build a personalized marketing message using customer data.
+  ms.date: 10/18/2019
+  author: bobtabor-msft
+  ms.author: rtabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+azureSandbox: false
+interactive: csharp
+content: |
+  [!include[](includes/5-challenge.md)]

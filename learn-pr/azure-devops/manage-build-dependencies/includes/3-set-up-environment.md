@@ -1,4 +1,11 @@
-In this part, you'll make sure that your Azure DevOps organization is set up to complete the rest of this module.
+In this unit, you ensure that your Azure DevOps organization is set up to complete the rest of this module.
+
+To do this, you:
+
+> [!div class="checklist"]
+> * Set up an Azure DevOps project for this module.
+> * Move the work item for this module on Azure Boards to the **Doing** column.
+> * Make sure your project is set up locally so that you can push changes to the pipeline.
 
 The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey.
 
@@ -6,12 +13,7 @@ This learning path also builds on the [Evolve your DevOps practices](/learn/path
 
 ## Run the template
 
-At this point, you have two options:
-
-- Continue with the Azure DevOps project you created in the "Evolve your DevOps practices" learning path.
-- Run a template that sets up everything for you in your Azure DevOps organization.
-
-You can continue using your existing project if you completed the previous modules, and have the Tailspin project set up in Azure DevOps. Run the template if you don't have the project set up, or you want to repeat this module from a fresh environment.
+Run a template that sets up everything for you in your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=manage-build-dependencies&azure-portal=true)
@@ -44,7 +46,10 @@ Recall that the team settled on these seven top issues:
 
 ![Backlog of tasks](../../shared/media/build-all-tasks.png)
 
-Here you'll move the sixth item, **Move model data to its own package** to the **Doing** column, and assign yourself to the work item.
+> [!NOTE]
+> Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
+
+Here you move the sixth item, **Move model data to its own package** to the **Doing** column, and assign yourself to the work item.
 
 Recall that **Move model data to its own package** relates to moving reusable code to its own NuGet package, so that package can be shared among multiple applications.
 
@@ -64,3 +69,5 @@ To set up the work item:
     ![Screenshot of Azure Boards, showing the card in the Doing column](../media/3-azure-boards-wi6-doing.png)
 
 At the end of this module, you'll move the card to the **Done** column after you've completed the task.
+
+[!include[](../../shared/includes/build-local-setup.md)]

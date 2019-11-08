@@ -8,7 +8,6 @@ metadata:
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Identify faces and expressions by using the Computer Vision API in Azure Cognitive Services
 summary: Learn about the Computer Vision API in Azure that allows you to identify facial details in pictures.
 abstract: |

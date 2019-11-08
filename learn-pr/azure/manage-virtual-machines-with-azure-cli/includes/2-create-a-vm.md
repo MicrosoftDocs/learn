@@ -24,7 +24,7 @@ The Azure CLI includes the `vm` command to work with virtual machines in Azure. 
 > [!NOTE]
 > For a complete list of commands, you can check the [Azure CLI reference documentation](https://docs.microsoft.com/cli/azure/reference-index?view=azure-cli-latest).
 
-Let's start with the first one: `az vm create`. This command is used to create a virtual machine in a resource group. There are several parameters you can pass to configure all the aspects of the new VM. The three parameters that must be supplied are:
+Let's start with the first one: `az vm create`. This command is used to create a virtual machine in a resource group. There are several parameters you can pass to configure all the aspects of the new VM. The four parameters that must be supplied are:
 
 > [!div class="mx-tableFixed"]
 > | Parameter | Description |
@@ -53,7 +53,7 @@ az vm create \
 [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
 
-This command will create a new **Ubuntu** Linux virtual machine with the name `SampleVM`. Notice that the Azure CLI tool waits while the VM is being created. You can add the `--no-wait` option to tell the Azure CLI tool to return immediately and have Azure continue creating the VM in the background. This is useful if you're executing the command in a script. Later in the script, use the `azure vm wait --name [vm-name]` command to wait for the VM to finish being created.
+This command will create a new **Ubuntu** Linux virtual machine with the name `SampleVM`. Notice that the Azure CLI tool waits while the VM is being created. You can add the `--no-wait` option to tell the Azure CLI tool to return immediately and have Azure continue creating the VM in the background. This is useful if you're executing the command in a script.
 
 We are specifying the administrator account name through the `--admin-username` flag to be `azureuser`. If you omit this, the `az vm create` command will use your *current user name*. Since the rules for account names are different for each OS, it's safer to specify a specific name.
 

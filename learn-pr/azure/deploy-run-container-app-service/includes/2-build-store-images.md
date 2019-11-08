@@ -32,3 +32,5 @@ In addition to storing and hosting images, you can also use Container Registry t
 ```bash
 az acr build --file Dockerfile --registry myregistry --image myimage .
 ```
+
+Additional information about Azure Container Registry as well as a link to supported CLI commands to manage private registries are available in the learn more section of this module.

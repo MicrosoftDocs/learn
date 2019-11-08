@@ -18,15 +18,19 @@ When you create a function app, it must be linked to a storage account. You can 
 
 Let's create a function app in the Azure portal.
 
+::: zone pivot="javascript"
+
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal, and then select **Get started > Serverless Function App** to open the Function App *Create* blade. Alternatively, you can use the **Compute > Function App** option, which will open the same blade.
+
+    [!include[](../../includes/functions-classic-workaround.md)]
 
     ![Screenshot of the Azure portal showing the Create a resource blade with the Compute section and Function App highlighted.](../media/3-create-function-app-blade.png)
 
 1. Choose a globally unique app name. This will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the x's can be replaced with your initials and your birth year. If this isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9 and -.
 
-1. Select the Azure subscription where you would like the function app hosted.
+1. Select the Azure sandbox subscription **Concierge Subscription**.
 
 1. Select the existing resource group called "**<rgn>[sandbox resource group name]</rgn>**".
 
@@ -34,9 +38,7 @@ Let's create a function app in the Azure portal.
 
 1. For **Hosting Plan**, select **Consumption Plan**, which is the serverless hosting option.
 
-1. Select the geographical location closest to you from the list below. In a production system, you would want to select a location near your customers or consumers of the function.
-
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+1. Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function.
 
 1. For **Runtime Stack**, select **Node.js** from the dropdown, which is the language in which we implement the function examples in this exercise.
 
@@ -45,6 +47,40 @@ Let's create a function app in the Azure portal.
 1. Make sure that Azure Application Insights is **On** and select the region closest to you (or your customers).
 
 1. Select **Create**; deployment will take a few minutes. You'll receive a notification once it's complete.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+
+1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal, and then select **Get started > Serverless Function App** to open the Function App *Create* blade. Alternatively, you can use the **Compute > Function App** option, which will open the same blade.
+
+    [!include[](../../includes/functions-classic-workaround.md)]
+
+    ![Screenshot of the Azure portal showing the Create a resource blade with the Compute section and Function App highlighted.](../media/3-create-function-app-blade.png)
+
+1. Choose a globally unique app name. This will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the x's can be replaced with your initials and your birth year. If this isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9 and -.
+
+1. Select the Azure sandbox subscription **Concierge Subscription**.
+
+1. Select the existing resource group called "**<rgn>[sandbox resource group name]</rgn>**".
+
+1. Select **Windows** for **OS**.
+
+1. For **Hosting Plan**, select **Consumption Plan**, which is the serverless hosting option.
+
+1. Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function.
+
+1. For **Runtime Stack**, select **PowerShell Core (Preview)** from the dropdown, which is the language in which we implement the function examples in this exercise.
+
+1. Create a new storage account. Azure will give it a name based on the app name. You can change it if you like, but it must also be unique.
+
+1. Make sure that Azure Application Insights is **On** and select the region closest to you (or your customers).
+
+1. Select **Create**; deployment will take a few minutes. You'll receive a notification once it's complete.
+
+::: zone-end
 
 ## Verify your Azure function app
 

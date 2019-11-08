@@ -18,7 +18,6 @@ abstract: |
 prerequisites: |
   - Knowledge of JavaScript
   - Familiarity with Azure Functions, Azure Cosmos DB and Visual Studio Code
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:
 - beginner
 roles:

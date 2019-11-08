@@ -2,13 +2,12 @@
 uid: learn.data-ai.train-local-model-with-azure-mls
 metadata:
   title: Train a local ML model with Azure Machine Learning service
-  description: Train a local ML model with Azure Machine Learning service
+  description: This module guides you through training a simple logistic regression model and k-Nearest Neighbors (kNN) models to find the model with the highest accuracy.
   ms.date: 03/18/2019
-  author: bcafferky
-  ms.author: brcaffer
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Train a local ML model with Azure Machine Learning service
 summary: Train a local ML model with Azure Machine Learning service
 abstract: | 

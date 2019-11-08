@@ -18,6 +18,7 @@ First, you'll create a resource group, the virtual network, and subnets for your
     rg=<resource group name>
 
     az group create --name $rg --location <location>
+    ```
 
 1. Run the following command in Azure Cloud Shell to create the **ERP-servers** virtual network and the **Applications** subnet.
 
@@ -63,7 +64,7 @@ Next, you create two virtual machines called **AppServer** and **DataServer**. Y
         --subnet Applications \
         --nsg ERP-SERVERS-NSG \
         --image UbuntuLTS \
-        --size Standard_B1ls
+        --size Standard_B1ls \
         --admin-username azureuser \
         --custom-data cloud-init.yml \
         --no-wait \
@@ -79,7 +80,7 @@ Next, you create two virtual machines called **AppServer** and **DataServer**. Y
         --vnet-name ERP-servers \
         --subnet Databases \
         --nsg ERP-SERVERS-NSG \
-        --size Standard_B1ls
+        --size Standard_B1ls \
         --image UbuntuLTS \
         --admin-username azureuser \
         --custom-data cloud-init.yml \

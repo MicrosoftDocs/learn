@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions
+metadata:
+  title: Choose the correct HDInsight Configuration to build open source analytical solutions
+  description: Choose the correct HDInsight Configuration to build open source analytical solutions
+  ms.date: 10/25/2019
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Choose the correct HDInsight Configuration to build open source analytical solutions
+summary: In this module, you will learn the different configuration for ensuring optimal use of HDInsight from both a performance and cost perspective.
+abstract: |
+  At the end of this module you will understand:
+  - The correct HDInsight configuration options
+  - Decision criteria for selecting the correct HDInsight configuration option
+  - Analyze a scenario and map it to an HDInsight configuration option
+  - Cost Optimization strategies for HDInsight clusters
+ratingEnabled: true
+prerequisites: |
+  The following pre-requisite should be completed
+  - Successfully login to the Azure Portal
+  - Understand the Azure storage options
+  - Understand the Azure compute options
+  - Create a HDInsight Cluster in the Azure Portal
+iconUrl: /learn/achievements/learn-pr/achievements/hdinsight-config-build-oss-analytical-solutions.svg
+levels:
+- beginner
+roles:
+- data-engineer
+- data-scientist
+products:
+- azure-hdinsight
+units:
+- learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.1-introduction
+- learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.2-hdinsight-configuration-options
+- learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.3-decision-criteria-selecting-correct-hdinsight-configuration-option
+- learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.4-analyze-scenario-map-it-hdinsight-configuration-option
+- learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.5-cost-optimization-strategies-hdinsight-clusters
+- learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.6-knowledge-check
+- learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.7-summary
+badge:
+  uid: learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.badge

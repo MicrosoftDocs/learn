@@ -8,7 +8,6 @@ metadata:
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 abstract: | 
   In this module, you'll:
   - Learn what LUIS is.

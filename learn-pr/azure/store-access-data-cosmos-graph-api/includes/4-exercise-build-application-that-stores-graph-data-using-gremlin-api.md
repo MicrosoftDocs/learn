@@ -20,6 +20,7 @@ Start by creating the database in Azure, by adding an Azure Cosmos DB account th
    | Resource group | <rgn>[Sandbox resource group]</rgn> |
    | Account name | Use a globally unique value for your Azure Cosmos DB account. |
    | API | Gremlin (graph) |
+   | Apache Spark | None |
    | Location | Choose a region near you from the above list. |
    | Geo-Redundancy | Disable |
    | Multi-region Writes | Disable |

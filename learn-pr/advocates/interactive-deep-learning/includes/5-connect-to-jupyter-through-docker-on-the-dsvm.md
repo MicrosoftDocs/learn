@@ -4,7 +4,7 @@ Now that you have your Data Science Virtual Machine up and running, you decide t
 
 Make sure you're still connected to your VM through ssh. If not, just run this command again to remote back into the virtual machine.
 
-1. Execute the following command in Azure Cloud Shell to sign into the VM.
+1. Execute the following command in [Azure Cloud Shell](https://shell.azure.com?azure-portal=true) to sign into the VM.
 
     ```azurecli 
     ssh <USERNAME>@<IP>
