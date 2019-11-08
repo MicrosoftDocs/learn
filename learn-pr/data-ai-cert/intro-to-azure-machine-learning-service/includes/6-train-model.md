@@ -6,11 +6,9 @@ Follow these steps to create a workspace in the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true]) using your Azure subscription.
 
-1. In the Search box at the top of the portal, type **machine learning service workspaces**. 
+1. In the Search box at the top of the portal, type **machine learning**. 
 
-1. Select the "Machine Learning Service Workspaces" option under SERVICES.
-
-    ![The screenshot depicts Machine Learning service workspaces being selected in the search box results.](../media/6-select-ml-service-workspace.png)
+1. Select the "Machine Learning" option.
 
 1. Select **Add** at the top left of the Machine Learning service workspaces pane, and then enter the necessary information to create the workspace.
 
@@ -21,10 +19,6 @@ Follow these steps to create a workspace in the Azure portal.
     | Resource group | Use an existing resource group in your subscription or enter a name to create a new resource group. A *resource group* is a container that holds related resources for an Azure solution. In this example, you use **rgAMLSLearnworkspace**. |
     | Location | Select the location closest to your users and the data resources. This location is where the workspace is created. |
     
-    ![The screenshot depicts the required information for creating a Machine Learning service workspace, which includes boxes for Workspace name, Subscription, Resource group, and Location.](../media/6-create-ml-service-workspace.png)
-    
-
-
 ## Create a workspace by using Python in an Azure Notebook
 
 For this training, it is strongly encouraged that you use Azure Notebooks to run the code examples because they are preconfigured with everything you need.  Get your free subscription at [Free Azure Notebook Subscription](https://notebooks.azure.com/)
