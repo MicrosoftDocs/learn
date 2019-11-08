@@ -2,7 +2,7 @@ Azure IoT Hub is a cloud service that can handle large volumes of telemetry sent
 
 An IoT Hub can scale to handle millions of devices. An IoT device can upload files, as well as send telemetry.
 
-In this module, you will learn about IoT Hub by implementing a system to monitor and control conditions in a cheese cave. A simple scenario, one IoT Hub, and one remote device.
+In this module, you will learn about Azure IoT Hub, Azure Stream Analytics, and Azure Machine Learning, by creating an IoT system to detect vibration anomalies in a conveyor belt.
 
 ## Learning objectives
 
@@ -12,8 +12,8 @@ In this module you will:
 - Create an IoT Hub device ID, using the IoT Hub portal
 - Create an app to send device telemetry to the custom IoT Hub, in C# or Node.js
 - Create a back-end service app to listen for the telemetry
-- Implement a _direct method_, to communicate settings to the remote device
-- Implement _device twins_, to maintain remote device properties
+- Add stream analytics, and machine learning, to process the incoming telemetry
+- Add BI output to visualize the data anomalies
 
 ## Prerequisites
 
@@ -24,17 +24,23 @@ In this module you will:
 
 ## The scenario
 
-Suppose you manage a gourmet cheese making company in a southern location. The company is proud of its cheese, and is careful to maintain the perfect temperature and humidity of a natural cave that is used to age the cheese. There are sensors in the cave that report on the temperature and humidity. A remote operator can set a fan to new settings if needed, to maintain the perfect environment for the aging cheese. The fan can heat and cool, and humidify and de-humidify.
+Suppose you manage a packaging facility. Packages are assembled for shipping, then placed on a conveyor belt that takes the packages and drops them off in mailing bins. Your metric for success is the number of packages leaving the conveyor belt.
 
-  ![Close up photograph of matured cheese](../media/vibration1.png)
+The conveyor belt is a critical link in your process, and is monitored for vibration. The conveyor belt has three speeds: _stopped_, _slow_, and _fast_. The number of packages being delivered at slow speed is less than at the faster speed, though the vibration is also less at the slower speed. If the vibration becomes excessive, the conveyor belt has to be stopped and inspected. A broken conveyor wheel, for example, can exacerbate the vibrations, in a cyclical fashion.
 
-Caves are used to mature cheese, their constant temperature, humidity, and air flow make them nearly ideal for the process. Not to mention the cachet of having your cheese products mature in a natural cave, instead of a constructed cellar. Something to put on your product labels!
+  ![Graph of cyclical forced vibration](../media/vibration1.png)
 
-The accepted ideal temperature for aging cheese is 50 degrees fahrenheit (10 degrees centigrade), with up to 5 degrees (2.78 degrees C) either side of this being acceptable. Humidity is also important. Measured in percentage of maximum saturation, a humidity of between 75 and 95 percent is considered fine. We'll set 85 percent as the ideal, with a 10 percent variation as acceptable. These values apply to most cheeses. To achieve specific results, such as a certain condition of the rind, cheese makers will adjust these values for some of the time during aging.
+There are a number of different types of vibration. What is known as _forced vibration_, which is vibration caused by an external force, such as the broken wheel example, or a weighty package that has not been placed properly on the conveyor belt. There is also _increasing vibration_ where the vibration levels increase, slowly or quickly, due to, for example, a design limit being exceeded. _Damping vibration_ is the opposite of increasing vibration, where the vibration levels drop, but the causes of that drop may not be a good thing!
 
-In a southern location, a natural cave near the surface might have an ambient temperature of around 70 degrees. The cave might also have a relative humidity of close to 100 percent, because of water seeping through the roof. These high numbers aren't perfect conditions for aging cheese. At a more northerly location, the ambient temperature of a natural cave can be the ideal of 50 degrees. Because of our location, we need some Azure IoT intervention!
+Vibration is typically measured as an acceleration (meters per second squared, m/s<sup>2</sup>), or possibly g-forces.
 
-  ![Photograph of matured blue cheese](../media/vibration2.png)
+  ![Graph of increasing vibration](../media/vibration2.png)
+
+The goal here is clearly preventive maintenance. If you can detect that something is wrong, before any damage is caused, then your delivery metrics are unlikely to be affected nearly as much as a system failure.
+
+It is not always easy to visually detect that vibration levels are not normal. For this reason you are looking to Azure IoT Hub, and machine learning, to detect data anomalies before a human observer would notice anything was wrong. You plan to have an IoT Hub vibration detection device on the conveyor belt send continuous telemetry to an IoT Hub. An IoT Hub can cope with millions of telemetry readings, and is well suited to handle the volume of telemetry you have in mind. The IoT Hub will use Azure Stream Analytics, and machine learning, to give you advance warning of data anomalies. Gotta prevent that conveyor belt from failing!
+
+You decide to build a simulation prototype of the system.
 
 ## The first step
 

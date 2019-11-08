@@ -7,13 +7,13 @@ In this unit, we will first create an IoT Hub, and add a single device to that h
 1. Select **+ Create a resource**, from the top of the left-hand menu. In the **Search the Marketplace** search box, enter "IoT Hub".
 1. Select **IoT Hub** from the search results, and click **Create**.
 1. You'll be required to enter a **Subscription** from the selection offered to you. A sandbox subscription will be **Concierge Subscription**, so choose that. For **Resource Group**, enter <rgn>[sandbox resource group name]</rgn>. A resource group is similar to a folder, it's largely there to help you organize your resources.
-1. The **Region** should be the geographical region closest to you, and finally enter a friendly name (say "CheeseCaveHub-&lt;your ID&gt;") for **IoT Hub Name**.
+1. The **Region** should be the geographical region closest to you, and finally enter a friendly name (say "VibrationSensorHub-&lt;your ID&gt;") for **IoT Hub Name**.
     >[!IMPORTANT]
     >Your hub names are publicly discoverable, so take this into account when entering names. Hub names must also be unique, as they form part of the Azure URL.
 1. Select **Next: Size and scale** to view the capabilities of your hub, noting all the services we need are enabled. Open up **Advanced Settings** to see the number of partitions. You can leave all entries at their default settings. Or, for peace of mind, you can change **Pricing and scale tier** to **F1: Free tier**, although you'll not be charged if you leave the tier at **S1: Standard tier**, as sandbox resources are free.
 
     > [!NOTE]
-    > A single _partition_ has a maximum number of concurrent readers processing data. In our cheese cave scenario, we only have one reader (the back-end service app), so could get away with one partition. However, if high telemetry throughput is an issue, increasing the number of partitions, and number of concurrent connected readers, will aid in increasing efficiency.
+    > A single _partition_ has a maximum number of concurrent readers processing data. In our conveyor belt vibration scenario, we only have one reader (the back-end service app), so could get away with one partition. However, if high telemetry throughput is an issue, increasing the number of partitions, and number of concurrent connected readers, will aid in increasing efficiency.
 
 1. Now, select **Review + create**, this option gives you a chance to verify your choices before clicking **Create**, and building the hub. Building your hub can take a few minutes.
 1. With a sandbox, a containing resource with a name such as **Microsoft.IoTHub-&lt;id&gt;** is created. From this containing resource, click **Go to resource** to go to the home page for your temporary hub.
@@ -21,13 +21,13 @@ In this unit, we will first create an IoT Hub, and add a single device to that h
 
 ## Create an IoT Hub device identity
 
-Now we need to create a single device identity, the sensor monitoring the cheese cave.
+Now we need to create a single device identity, the sensor monitoring the conveyor belt vibration.
 
 1. With the home page of your hub open, locate and select the **IoT devices** entry in the left-hand menu.
 1. Click **+ New**.
-1. In the **Create a device** screen that follows, enter a **Device ID**, such as "CheeseCaveID". Ensure **Auto-generate keys** is enabled, as is **Connect this device to an IoT Hub**, and click **Save**.
+1. In the **Create a device** screen that follows, enter a **Device ID**, such as "VibrationSensorID". Ensure **Auto-generate keys** is enabled, as is **Connect this device to an IoT Hub**, and click **Save**.
 
-    ![Screenshot showing the creation of an IoT Hub device identity](../media/cheesecave-device-create.png)
+    ![Screenshot showing the creation of an IoT Hub device identity](../media/vibrations-device-create.png)
 
 1. You should now see your device in the list of devices for the IoT Hub. Click on the device name. Copy your **Device ID**, and the **Primary Connection String** to a text file (using Notepad, or similar text editor).
 
@@ -36,7 +36,7 @@ Now we need to create a single device identity, the sensor monitoring the cheese
 
 1. In the left-hand menu for your IoT Hub, select **Shared access policies**.
 1. Click the **iothubowner** entry under **Policy**, then, on the right-hand side, copy the **Connection string-primary key** and paste it into your text file. Again, add a note, this text is the service connection string.
-1. Save off the text file, with a name such as "Cave connections.txt", for reference in the next unit.
+1. Save off the text file, with a name such as "Vibration sensor.txt", for reference in the next unit.
 
 ::: zone pivot="csharp"
 
