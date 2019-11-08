@@ -17,7 +17,7 @@ abstract: |
   - Add a job to your Azure Pipelines configuration that provisions your infrastructure when the pipeline runs.
 prerequisites: |
   - An Azure subscription
-  - An Azure DevOps account
+  - An Azure DevOps organization
   - Visual Studio Code
   - .NET Core 2.1
   - Git
