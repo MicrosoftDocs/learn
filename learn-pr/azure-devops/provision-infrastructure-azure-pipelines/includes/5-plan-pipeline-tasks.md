@@ -14,13 +14,13 @@ Andy and Tim are taking a short break to discuss how they can run their Terrafor
 
 **Andy:** Almost. I see two questions that we need to answer first:
 
-1. How do we maintain the Terraform state file?
+* How do we maintain the Terraform state file?
 
     Our existing Terraform plan maintains its state file locally in Cloud Shell. How can we persist the state file so that it can be shared by multiple pipeline runs? If we don't persist the state file, the agent that performs the next pipeline run won't have one that it can access.
 
     Also, how can we ensure that the state file properly _locked_? In other words, how do we ensure that only one pipeline run can access the state file at a given time?
 
-1. How do we authenticate access to Azure from Azure Pipelines?
+* How do we authenticate access to Azure from Azure Pipelines?
 
     Our existing pipeline uses a service connection to deploy the _Space Game_ website to Azure App Service. The deployment task, `AzureWebApp@1`, understands how to work with the service connection. But a service connection does not enable us to authenticate arbitrary commands with Azure, such as `terraform apply`.
 
