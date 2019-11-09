@@ -24,15 +24,15 @@ There are several types of kernels you can use for the kernel trick, including l
 
 Parameters, such as kernels, that you can set before training a model are known **hyperparameters**. They change the way an algorithm trains and operates, so practitioners often change them to *tune* a model so it has better performance. While practitioners tend to try certain hyperparameters first, such as polynomial kernels and gaussian kernels, there is no general best choice for hyperparameters.
 
-###### Linear Kernel
+###### Linear kernel
 
 ![Scatter plot showing a linear kernel. The plot has two classes of data points - green and blue data points. They are on opposite diagonal sides of the plot, divided by a linear black line, which represents the hyperplane. There are two red lines either side of the black line, which intersects with several of the data points on each side - these are margins.](../media/30-k-01.png)
 
-###### Polynomial Kernel
+###### Polynomial kernel
 
 ![Scatter plot showing a polynomial kernel. The plot has two classes of data points - green and blue data points. They are on opposite diagonal sides of the plot, divided by a black line that is primarily linear, but there is a dip in the middle to accommodate several stray data points and classify them correctly. There are two red lines either side of the black line, which intersects with several of the data points on each side - these are margins.](../media/30-k-02.png)
 
-###### RBF Kernel
+###### RBF kernel
 
 ![Scatter plot showing an RBF kernel. The plot has three classes of data points - green, yellow, and blue data points. They are roughly in a circle shape divided into three. There is a non-linear black line which divides the three - with there being three lines coming from the center of the plot in order to classify the data points correctly. There are two red lines either side of the black line, which intersects with several of the data points on each side - these are margins. There are several data points that are within the margin.](../media/30-k-03.png)
 
