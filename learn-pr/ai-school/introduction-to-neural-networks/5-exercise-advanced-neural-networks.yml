@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.neural-networks.programming-exercise-advanced-neural-networks
-title: Exercise - Advanced Neural Networks
+title: Exercise - Advanced neural networks
 metadata:
-  title: Exercise - Advanced Neural Networks
+  title: Exercise - Advanced neural networks
   description: Learn to play around with neural networks - changing the activation functions of different layers to try to improve accuracy.
   ms.date: 06/30/2019
   author: jasallen
