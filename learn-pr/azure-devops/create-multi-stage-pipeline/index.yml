@@ -18,7 +18,7 @@ abstract: |
   - Promote a build through these stages: _Dev_, _Test_, and _Staging_.
 prerequisites: |
   - An Azure subscription
-  - An Azure DevOps account
+  - An Azure DevOps organization
   - Visual Studio Code
   - .NET Core 2.1
   - Git

@@ -2,7 +2,7 @@
 uid: learn.data-ai.provision-and-use-azure-dsvm
 metadata:
   title: Provision and use an Azure Data Science Virtual Machine
-  description: Provision and use an Azure Data Science Virtual Machine
+  description: Learn how to create an Azure Data Science Virtual Machine using the Azure portal with code, its output, and explanatory text integrated into a Jupyter Notebook.
   ms.date: 03/18/2019
   author: GraemeMalcolm
   ms.author: gmalc

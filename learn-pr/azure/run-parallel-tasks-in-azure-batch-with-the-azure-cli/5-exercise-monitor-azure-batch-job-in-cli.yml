@@ -4,11 +4,10 @@ metadata:
   title: Exercise - Monitor your Azure Batch job in the CLI
   description: Exercise - Monitor your Azure Batch job in the CLI
   ms.date: 05/06/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - Monitor your Azure Batch job in the CLI
 durationInMinutes: 6
 content: |
