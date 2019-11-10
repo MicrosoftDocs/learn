@@ -16,7 +16,7 @@ The diagram above shows an algorithm trying to find the line that best separates
 
 There are many different ways training can work. One common method is to start with a random guess (in this case, a random line), and see whether adjustments (for example, a more or less steep gradient) give a better result. This process is repeated until adjustments do not improve the model any further, until the improvements for a change are small, or some sort of attempt limit is reached.
 
-## Logistic Regression
+## Logistic regression
 
 Logistic regression is a binary classification algorithm, meaning it predicts 2 categories (e.g. yes or no, win or loss etc.). Don’t be fooled by the ‘regression’ in the name, this simply means that it predicts the probability of a category.
 

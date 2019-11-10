@@ -10,7 +10,7 @@ Instead, a soft-margin SVM can be used to increase your accuracy. Soft-margin us
 
 The plot above is an example of a hard-margin SVM. The hyperplane (black line) is currently doing a good job of separating blue and green dots. However, if the green dot labeled ‘violation’ was introduced and the SVM retrained, this line would have to move substantially, because it is within the margin. If it was moved even closer to the red dots, the SVM might fail to separate the dots properly and report that it ‘failed’, even though a 100% accuracy rate is unlikely on most datasets. A soft-margin SVM allows some degree of mislabeling, and so may be more useful here.  
   
-![Scatter plot showing a soft margin support vector machine. The plot has two classes of data points - green and blue data points. They are on opposite diagonal sides of the plot, divided by a black line, which represents the hyperplane. There are two red lines either side of the black line, which intersects with several of the data points on each side - these are margins. There are two green data points inside the margins, but unlike the hard margin svm they are not labeled as violations.](../media/29-asvm-01.png)
+![Scatter plot showing a soft margin support vector machine. The plot has two classes of data points - green and blue data points. They are on opposite diagonal sides of the plot, divided by a black line, which represents the hyperplane. There are two red lines either side of the black line, which intersects with several of the data points on each side - these are margins. There are two green data points inside the margins, but unlike the hard margin SVM, they are not labeled as violations.](../media/29-asvm-01.png)
 
 The plot above is a soft-margin SVM, where the algorithm is penalized less for data points that fall within the margin. As such, it fits a sensible hyperplane to the data rather than being skewed by a few data points.
 
@@ -24,15 +24,15 @@ There are several types of kernels you can use for the kernel trick, including l
 
 Parameters, such as kernels, that you can set before training a model are known **hyperparameters**. They change the way an algorithm trains and operates, so practitioners often change them to *tune* a model so it has better performance. While practitioners tend to try certain hyperparameters first, such as polynomial kernels and gaussian kernels, there is no general best choice for hyperparameters.
 
-###### Linear Kernel
+###### Linear kernel
 
 ![Scatter plot showing a linear kernel. The plot has two classes of data points - green and blue data points. They are on opposite diagonal sides of the plot, divided by a linear black line, which represents the hyperplane. There are two red lines either side of the black line, which intersects with several of the data points on each side - these are margins.](../media/30-k-01.png)
 
-###### Polynomial Kernel
+###### Polynomial kernel
 
 ![Scatter plot showing a polynomial kernel. The plot has two classes of data points - green and blue data points. They are on opposite diagonal sides of the plot, divided by a black line that is primarily linear, but there is a dip in the middle to accommodate several stray data points and classify them correctly. There are two red lines either side of the black line, which intersects with several of the data points on each side - these are margins.](../media/30-k-02.png)
 
-###### RBF Kernel
+###### RBF kernel
 
 ![Scatter plot showing an RBF kernel. The plot has three classes of data points - green, yellow, and blue data points. They are roughly in a circle shape divided into three. There is a non-linear black line which divides the three - with there being three lines coming from the center of the plot in order to classify the data points correctly. There are two red lines either side of the black line, which intersects with several of the data points on each side - these are margins. There are several data points that are within the margin.](../media/30-k-03.png)
 
