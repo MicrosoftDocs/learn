@@ -28,9 +28,9 @@ products:
 units: 
 - learn.neural-networks.introduction
 - learn.neural-networks.learning-rate
-- learn.neural-networks.programming-exercise-introduction-to-neural-networks
+- learn.neural-networks.exercise-neural-networks-introduction
 - learn.neural-networks.activation-functions
-- learn.neural-networks.programming-exercise-advanced-neural-networks
+- learn.neural-networks.exercise-neural-networks-advanced
 - learn.neural-networks.summary
 badge: 
   uid: learn.neural-networks.badge #add the uid for your achievement badge.

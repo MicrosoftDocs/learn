@@ -31,7 +31,7 @@ units:
 - learn.introduction-to-regression.exercise-simple-linear-regression
 - learn.introduction-to-regression.multiple-linear-regression
 - learn.introduction-to-regression.exercise-multiple-linear-regression
-- learn.introduction-to-regression.non-linear-data-sets-and-polynomial-regression
+- learn.introduction-to-regression.nonlinear-data-sets-with-polynomial-regression
 - learn.introduction-to-regression.exercise-polynomial-regression
 - learn.introduction-to-regression.summary
 

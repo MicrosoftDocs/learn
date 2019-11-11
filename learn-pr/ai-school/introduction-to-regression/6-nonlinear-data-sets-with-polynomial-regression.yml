@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-to-regression.non-linear-data-sets-and-polynomial-regression
+uid: learn.introduction-to-regression.nonlinear-data-sets-with-polynomial-regression
 title: Make predictions on non-linear data using polynomial regression
 metadata:
   title: Make predictions on non-linear data using polynomial regression
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-non-linear-data-sets-and-polynomial-regression.md)] 
+  [!include[](includes/6-nonlinear-data-sets-with-polynomial-regression.md)] 
