@@ -1,6 +1,6 @@
 A _direct method_ is a function on the device that can be invoked by the back-end app. 
 
-Calls from the back-end app to invoke direct methods can include multiple parameters as part of the payload. Direct methods are typically used to turn features of the device off and on, or specify settings for the device.
+Calls to invoke direct methods can include multiple parameters as part of the payload. Direct methods are typically used to turn features of the device off and on, or specify settings for the device.
 
 ## Error conditions
 
@@ -8,8 +8,8 @@ There are several error conditions that need to be checked for when a device rec
 
 ## Invoking a direct method
 
-Direct methods require that the back-end app prepares the parameters, then makes a call specifying a single device to invoke the method. The back-end app will then wait for, and report, a response.
+Direct methods require that the back-end app prepares the parameters, then makes a call specifying a single device to invoke the method. The back-end app will then wait for, and report, a response. The response is important. The back-end app may well have to initiate different actions, depending on whether the device responded or not.
 
-The device app contains the functional code for the direct method. The function name is registered with the IoT client for the device. This process ensures the client knows what function to run when the call comes from the IoT Hub (there could be many direct methods).
+The device app contains the functional code for the direct method. The function name is registered with the IoT client for the device. This process ensures the client correctly identifies the function to run when the call comes from the IoT Hub (there could be many direct methods).
 
 In the following unit, we add code for a direct method to turn on the cheese cave device fan.

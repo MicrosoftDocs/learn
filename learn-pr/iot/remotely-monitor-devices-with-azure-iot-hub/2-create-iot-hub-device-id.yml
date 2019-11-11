@@ -37,10 +37,10 @@ quiz:
     choices:  
     - content: 'Primary Key'
       isCorrect: false
-      explanation: A primary key is part of a connection string, but these exact words do not appear.
+      explanation: A primary key is part of a connection string, but these exact words don't appear.
     - content: 'SharedAccessKey'
       isCorrect: false
-      explanation: This term does appear in connection strings, but does not start the string.  
+      explanation: This term does appear in connection strings, but doesn't start the string.  
     - content: 'HostName'
       isCorrect: true
       explanation: In our scenario, the host name will first reference your custom IoT Hub.

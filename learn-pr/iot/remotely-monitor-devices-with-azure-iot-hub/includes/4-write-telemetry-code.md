@@ -74,7 +74,7 @@ At the end of this unit, you'll be sending and receiving telemetry.
 ::: zone-end
 
 > [!NOTE]
-> This module does not require you to download any code. However, all of the code is available from [GitHub/MicrosoftDocs/mslearn-remotely-monitor-and-control-devices-with-iot-hub](https://github.com/MicrosoftDocs/mslearn-remotely-monitor-and-control-devices-with-iot-hub), if needed.
+> This module doesn't require you to download any code. However, all of the code is available from [GitHub/MicrosoftDocs/mslearn-remotely-monitor-and-control-devices-with-iot-hub](https://github.com/MicrosoftDocs/mslearn-remotely-monitor-and-control-devices-with-iot-hub), if needed.
 
 ### Add code to send telemetry
 
@@ -379,7 +379,7 @@ namespace simulated_device
 ### Test your code to send telemetry
 
 1. Run the app.
-1. You should quickly get a console screen, similar to the following image. Note the use of green text, to show things are working as they should! If you do not get a screen similar to this image, check your device connection string carefully.
+1. You should quickly get a console screen, similar to the following image. Note the use of green text, to show things are working as they should! If you don't get a screen similar to this image, check your device connection string carefully.
 
     ![Screenshot showing the temperature and humidity telemetry being sent](../media/cheesecave-telemetry.png)
 
@@ -671,7 +671,7 @@ namespace cheesecave_operator
 
 ### Test your code to receive telemetry
 
-This test is important, checking whether your back-end app is picking up the telemetry being sent out by your simulated device. Remember that your device app is still running, and sending telemetry.
+This test is important, checking whether your back-end app is picking up the telemetry being sent out by your simulated device. Remember your device app is still running, and sending telemetry.
 
 1. Run the service app.
 1. A second console window should open up, and immediately respond if it successfully connects to IoT Hub. If not, carefully check your IoT Hub service connection string, noting that this string should be the _service_ connection string, and not any other.

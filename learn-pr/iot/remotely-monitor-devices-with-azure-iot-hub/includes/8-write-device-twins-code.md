@@ -1,8 +1,8 @@
-In this unit, we will add some code to both the device app and back-end service app, to show device twin synchronization in operation.
+In this unit, we'll add some code to both the device app and back-end service app, to show device twin synchronization in operation.
 
 ## Add code to use device twins to synchronize device properties
 
-We will start this time with the back-end service app.
+We'll start this time with the back-end service app.
 
 ::: zone pivot="node"
 
