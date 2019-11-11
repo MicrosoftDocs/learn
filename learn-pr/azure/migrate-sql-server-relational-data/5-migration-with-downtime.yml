@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.migrate-sql-server-relational-data.5-migration-with-downtime
+metadata:
+  title: Migration with downtime
+  description: Migration with downtime
+  ms.date: 12/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Migration with downtime
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-migration-with-downtime.md)]

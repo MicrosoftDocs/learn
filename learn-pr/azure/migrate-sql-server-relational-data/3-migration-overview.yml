@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.migrate-sql-server-relational-data.3-migration-overview
+metadata:
+  title: Migration process overview
+  description: Migration process overview
+  ms.date: 12/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Migration process overview
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-migration-overview.md)]
