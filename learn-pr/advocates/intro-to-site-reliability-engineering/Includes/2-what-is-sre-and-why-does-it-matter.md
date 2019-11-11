@@ -3,7 +3,7 @@ There are a number of answers to this question floating around, including [the o
 
 > Site Reliability Engineering is an engineering discipline devoted to helping an organization achieve the appropriate level of reliability in their systems, services, and products.
 
-Later on we may bring some other definitions into the picture, but let's start from here. There are two crucial parts to this definition we need to unpack that will leads us right to the “Why does it matter?” question.
+Later on we may bring some other definitions into the picture, but let's start from here. There are two crucial parts to this definition we need to unpack that will lead us right to the “Why does it matter?” question.
 
 ## Reliability
 
