@@ -75,11 +75,7 @@ During the design process, keep in mind the data your users will be searching, a
 
 - **Scoring profiles**: lets you customize results to have certain documents return higher in the query results
 
-<<<<<<< HEAD
-- **Cross-Origin Resource Sharing**: browsers prevent cross-origin requests for security reasons. Enable this option if you need your index to be queried via JavaScript from different urls. You can choose to lock down access to the index creating a list of urls that should have access, or using a wildcard to allow all origins access.
-=======
 - **Cross-Origin Resource Sharing**: browsers prevent cross-origin requests for security reasons. Enable this option if you need your index to be queried via JavaScript from different URLs. You can choose to lock down access to the index by using an allow list of origins, or you can allow all origins access.
->>>>>>> 89d549c413d60beccca2400c2de6ff1eec83239a
 
 #### Field Behaviors
 

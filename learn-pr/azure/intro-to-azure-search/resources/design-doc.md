@@ -2,7 +2,7 @@
 
 ## Title
 
-Introduction to Azure Cognitive Search
+Introduction to Azure Search
 
 ## Role(s)
 
@@ -23,23 +23,23 @@ Introduction to Azure Cognitive Search
 
 ## Summary
 
-Use Azure Cognitive Search to make your data searchable. Create a search index, import data and query the index from an application.
+Use Azure Search to make your data searchable. Create a search index, import data and query the index from an application.
 
 ## Learning objectives
 
-1. Create an Azure Cognitive Search index
+1. Create an Azure Search index
 2. Import data to the index
-3. Query the Azure Cognitive Search index
+3. Query the Azure Search index
 
 ## Chunk your content into subtasks
 
-Identify the subtasks of *Introduction to Azure Cognitive Search*
+Identify the subtasks of *Introduction to Azure Search*
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 |---|---|---|---|---|
-| Create an index in Azure Cognitive Search | Providing a searchable index of content | Knowledge Check | 1 | Yes |
-| Load data into Azure Cognitive Search | Loading catalog data into Azure Cognitive Search for cross property searching | Knowledge Check & Exercise | 2 |Yes |
-| Search content with Azure Cognitive Search | Working with Azure Cognitive Search to find videos in the catalog | Exercise | 3 | Yes |
+| Create an index in Azure Search | Providing a searchable index of content | Knowledge Check | 1 | Yes |
+| Load data into Azure Search | Loading catalog data into Azure Search for cross property searching | Knowledge Check & Exercise | 2 |Yes |
+| Search content with Azure Search | Working with Azure Search to find videos in the catalog | Exercise | 3 | Yes |
 ||||||
 
 ## Outline the units
@@ -48,15 +48,15 @@ Identify the subtasks of *Introduction to Azure Cognitive Search*
 
     You work for a fitness startup that publishes exercise videos. You're just getting started establishing your online presence and want to provide a searchable index of your video catalog. You have a number of videos in the catalog and want to search across a number of different properties, such as title, difficulty, length, and publication date.
 
-1. **What is Azure Cognitive Search?**
+1. **What is Azure Search?**
 
-    List the content that will enable the learner to *Create an index in Azure Cognitive Search*:
+    List the content that will enable the learner to *Create an index in Azure Search*:
 
-    - A brief introduction to Azure Cognitive Search
-        - Summary of Azure Cognitive Search
+    - A brief introduction to Azure Search
+        - Summary of Azure Search
         - What is Azure Cognitive Search
 
-    - What is an Index in Azure Cognitive Search
+    - What is an Index in Azure Search
         - Index Design
         - Index Workflows
         - Storage Implications
@@ -65,34 +65,34 @@ Identify the subtasks of *Introduction to Azure Cognitive Search*
     - Methods to create an index
         - Using the Azure portal
         - Using C#
-        - Using the REST API
+        - Azure Search REST API
 
-1. **Exercise - Create an Azure Cognitive Search service in the Azure portal**
+1. **Exercise - Create an Azure Search service in the Azure portal**
 
     - Focus here is to get the learner to use the Azure  portal to create an Azure Service in the sandbox resource group
     - Navigate to sandbox portal
-    - Create Azure Cognitive Search service
+    - Create Azure Search service
     - Explain parameters of the Create dialog
     - Explain the URL endpoint
 
-1. **Index data with Azure Cognitive Search**
+1. **Index data with Azure Search**
 
-    List the content that will enable the learner to *Index data with Azure Cognitive Search*:
+    List the content that will enable the learner to *Index data with Azure Search*:
 
-    - Loading data into Azure Cognitive Search
-        - Methods for importing data to Azure Cognitive Search
+    - Loading data into Azure Search
+        - Methods for importing data to Azure Search
         - Data Source Inputs
         - Index attributes
         - Data import monitoring and verification
 
-    - Azure Cognitive Search Index Maintenance
+    - Azure Search Index Maintenance
         - Rebuilding indexes
         - Handling large data volumes
 
-    - Enhancing Azure Cognitive Search indexes with AI
+    - Enhancing Azure Search indexes with AI
         - Overview of Cognitive Search
 
-1. **Create an Azure Cognitive Search index for your data in the Azure portal**
+1. **Create an Azure Search index for your data in the Azure portal**
 
     List the steps that apply the learning content from previous unit:
 
@@ -102,12 +102,12 @@ Identify the subtasks of *Introduction to Azure Cognitive Search*
     1. Run through the process to load data to an index
     1. Run through the process to rebuild an index
 
-1. **Query data in an Azure Cognitive Search index**
+1. **Query data in an Azure Search index**
 
-    List the content that will enable the learner to *Search content with Azure Cognitive Search*:
+    List the content that will enable the learner to *Search content with Azure Search*:
 
-    - Searching content using Azure Cognitive Search
-        - Query requests in an Azure Cognitive Search
+    - Searching content using Azure Search
+        - Query requests in an Azure Search
         - Query request Elements and Parsing
 
     - Query syntax
@@ -127,18 +127,18 @@ Identify the subtasks of *Introduction to Azure Cognitive Search*
 
 1. **Knowledge check**
 
-    What types of questions will test *Create an Azure Cognitive Search index*?
+    What types of questions will test *Create an Azure Search index*?
 
-    - What is a suggester in Azure Cognitive Search?
+    - What is a suggester in Azure Search?
     - Which of the following data sources can be used as an input data source?
-    - Which data structure is supported by Azure Cognitive Search?
+    - Which data structure is supported by Azure Search?
 
 1. **Summary**
 
    *{How did you solve the problem in the initial scenario with the knowledge learned in the module?}*
 
-    - Basics of Azure Cognitive Search to understand the concepts and construct an index.
-    - Overview of the methods to import data into Azure Cognitive Search.
+    - Basics of Azure search to understand the concepts and construct an index.
+    - Overview of the methods to import data into Azure Search.
     - Walk through how to query indexes, the syntax, and handling responses.
 
 ## Notes
