@@ -21,6 +21,6 @@ In this module, you will:
 - Perform basic management tasks using the Azure CLI.
 - Connect to a running VM with SSH and the Azure CLI.
 
-## Prerequsites
+## Prerequisites
 
 - Basic understanding of the Azure CLI tool from the **Control Azure services with the CLI** module.

@@ -4,8 +4,8 @@ metadata:
   title: Discover sentiment in text with the Text Analytics API
   description: Learn how to use the Text Analytics API and Azure Functions to discover what your customers are really saying in their feedback about your product or brand.
   ms.date: 09/24/2018
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title:  Discover sentiment in text with the Text Analytics API

@@ -5,11 +5,10 @@ metadata:
   title: Choose a messaging platform
   description: Choose a messaging platform
   ms.date: 09/24/2018
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 8
 content: |
   [!include[](includes/2-choose-a-messaging-platform.md)]

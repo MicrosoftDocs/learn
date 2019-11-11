@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>NA/format-values-for-display-using-composite-formatting-and-string-interpolation-in-c#</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-7.7%" y="-9.1%" width="115.4%" height="118.2%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.104895105 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="N/A-47" transform="translate(-50.000000, -460.000000)">
+            <g id="NA/format-values-for-display-using-composite-formatting-and-string-interpolation-in-c#" transform="translate(50.000000, 460.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Group-11" mask="url(#mask-2)">
+                        <g transform="translate(25.000000, 54.321886)">
+                            <path d="M44,23.001 L2,23.001 C0.895,23.001 0,22.105 0,21.001 C0,19.896 0.895,19.001 2,19.001 L44,19.001 C45.104,19.001 46,19.896 46,21.001 C46,22.105 45.104,23.001 44,23.001" id="Fill-453" fill="#182A37"></path>
+                            <polygon id="Fill-455" fill="#182A37" points="20 21.001 26 21.001 26 0.001 20 0.001"></polygon>
+                            <path d="M20,2 L20,3 L22,3 C22.552,3 23,3.448 23,4 L23,16 L26,16 L26,2 L20,2" id="Fill-473" fill="#12202B"></path>
+                            <path d="M0,21.001 C0,22.105 0.896,23.001 2,23.001 L44,23.001 C45.104,23.001 46,22.105 46,21.001 L46,21 L0,21 L0,21.001" id="Fill-474" fill="#12202B"></path>
+                            <path d="M40,26.001 L6,26.001 C5.45,26.001 5,25.551 5,25.001 L5,17.001 C5,16.451 5.45,16.001 6,16.001 L40,16.001 C40.55,16.001 41,16.451 41,17.001 L41,25.001 C41,25.551 40.55,26.001 40,26.001 Z" id="Fill-475" fill="#30404D"></path>
+                            <path d="M23,16.001 L23,22 C23,23.105 22.105,24 21,24 L5,24 L5,25.001 C5,25.551 5.45,26.001 6,26.001 L40,26.001 C40.55,26.001 41,25.551 41,25.001 L41,17.001 C41,16.451 40.55,16.001 40,16.001 L23,16.001 Z" id="Fill-476" fill="#182A37"></path>
+                        </g>
+                    </g>
+                    <g id="Group-9" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(22.400000, 19.400000)">
+                            <path d="M0,3.2 C0,1.44 1.44,0 3.2,0 L48,0 C49.76,0 51.2,1.44 51.2,3.2 L51.2,40 C51.2,41.76 49.76,43.2 48,43.2 L3.2,43.2 C1.44,43.2 0,41.76 0,40 L0,3.2" id="Fill-55" fill="#E1E4E1" fill-rule="evenodd"></path>
+                            <path d="M48,0 L25.6,0 L25.6,38.4 C25.6,40.1672 24.1672,41.6 22.4,41.6 L0.4472,41.6 C1.0032,42.5504 2.0248,43.2 3.2,43.2 L48,43.2 C49.76,43.2 51.2,41.76 51.2,40 L51.2,3.2 C51.2,1.44 49.76,0 48,0" id="Fill-56" fill="#C5CCCD" fill-rule="evenodd"></path>
+                            <path d="M1.6,3.2 C1.6,2.32 2.32,1.6 3.2,1.6 L48,1.6 C48.88,1.6 49.6,2.32 49.6,3.2 L49.6,32 C49.6,32.88 48.88,33.6 48,33.6 L3.2,33.6 C2.32,33.6 1.6,32.88 1.6,32 L1.6,3.2" id="Fill-57" fill="#30404D" fill-rule="evenodd"></path>
+                            <path d="M48,1.6 L3.2,1.6 C2.32,1.6 1.6,2.32 1.6,3.2 L1.6,4.8 C1.6,3.92 2.32,3.2 3.2,3.2 L24,3.2 C24.884,3.2 25.6,3.916 25.6,4.8 L25.6,33.6 L48,33.6 C48.88,33.6 49.6,32.88 49.6,32 L49.6,3.2 C49.6,2.32 48.88,1.6 48,1.6" id="Fill-58" fill="#182A37" fill-rule="evenodd"></path>
+                            <path d="M24.4704,39.5312 C23.8456,38.9064 23.8456,37.8928 24.4704,37.2688 C25.0952,36.6432 26.108,36.644 26.7328,37.2688 C27.3576,37.8936 27.3584,38.9064 26.7328,39.5312 C26.1088,40.1552 25.0952,40.156 24.4704,39.5312" id="Fill-59" fill="#A9B3B6" fill-rule="evenodd"></path>
+                            <path d="M18.0688,39.5312 C17.444,38.9064 17.444,37.8928 18.0688,37.2688 C18.6936,36.6432 19.7064,36.644 20.3312,37.2688 C20.956,37.8936 20.9568,38.9064 20.3312,39.5312 C19.7072,40.1552 18.6936,40.156 18.0688,39.5312" id="Fill-60" fill="#A9B3B6" fill-rule="evenodd"></path>
+                            <path d="M30.8688,39.5312 C30.244,38.9064 30.244,37.8928 30.8688,37.2688 C31.4936,36.6432 32.5064,36.644 33.1312,37.2688 C33.756,37.8936 33.7568,38.9064 33.1312,39.5312 C32.5072,40.1552 31.4936,40.156 30.8688,39.5312" id="Fill-61" fill="#A9B3B6" fill-rule="evenodd"></path>
+                            <path d="M26.1672,38.9656 C25.6408,39.492 24.8408,39.5696 24.2272,39.2088 C24.2944,39.3232 24.372,39.4328 24.4704,39.5312 C25.0952,40.156 26.1088,40.1552 26.7328,39.5312 C27.3584,38.9064 27.3576,37.8936 26.7328,37.2688 C26.6344,37.1704 26.5248,37.0936 26.4104,37.0256 C26.7712,37.6392 26.6944,38.4384 26.1672,38.9656" id="Fill-64" fill="#92A4AA" fill-rule="evenodd"></path>
+                            <path d="M32.5656,38.9656 C32.0392,39.492 31.2392,39.5696 30.6256,39.2088 C30.6928,39.3232 30.7704,39.4328 30.8688,39.5312 C31.4936,40.156 32.5072,40.1552 33.1312,39.5312 C33.7568,38.9064 33.756,37.8936 33.1312,37.2688 C33.0328,37.1704 32.9232,37.0936 32.8088,37.0256 C33.1696,37.6392 33.0928,38.4384 32.5656,38.9656" id="Fill-65" fill="#92A4AA" fill-rule="evenodd"></path>
+                            <path d="M19.7656,38.9656 C19.2392,39.492 18.4392,39.5696 17.8256,39.2088 C17.8928,39.3232 17.9704,39.4328 18.0688,39.5312 C18.6936,40.156 19.7072,40.1552 20.3312,39.5312 C20.9568,38.9064 20.956,37.8936 20.3312,37.2688 C20.2328,37.1704 20.1232,37.0936 20.0088,37.0256 C20.3696,37.6392 20.2928,38.4384 19.7656,38.9656" id="Fill-66" fill="#92A4AA" fill-rule="evenodd"></path>
+                            <text id="$157.38" fill="none" font-family="SegoeUI-Bold, Segoe UI" font-size="7.2" font-weight="bold">
+                                <tspan x="5.35273437" y="18.1" fill="#FFFFFF">$</tspan>
+                                <tspan x="9.49414062" y="18.1" font-size="11.52" fill="#FFFFFF">157.38</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <text id="15738" mask="url(#mask-2)" font-family="SegoeUI-Bold, Segoe UI" font-size="9.6" font-weight="bold" fill="#E1E4E1">
+                        <tspan x="34.1953125" y="78.4803733">15738</tspan>
+                    </text>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
