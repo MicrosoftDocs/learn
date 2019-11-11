@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.languages.csharp-data
 metadata:
-  title: Work with data using C#
+  title: Work with data in C#
   description: Dive deeper into data and types, learning how to manipulate string and numeric data.
   brand: azure
   ms.date: 11/06/2019
@@ -10,7 +10,7 @@ metadata:
   #ms.learn-contact: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Work with data using C#
+title: Work with data in C#
 summary: |
   Dive deeper into data and types, learning how to manipulate string and numeric data.
 
