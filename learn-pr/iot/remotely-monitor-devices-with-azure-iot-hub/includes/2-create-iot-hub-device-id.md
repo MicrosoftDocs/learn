@@ -32,7 +32,7 @@ Now we need to create a single device identity, the sensor monitoring the cheese
 1. You should now see your device in the list of devices for the IoT Hub. Click on the device name. Copy your **Device ID**, and the **Primary Connection String** to a text file (using Notepad, or similar text editor).
 
     > [!IMPORTANT]
-    > The connection string you've just copied is the _device_ connection string. There are many other connection strings , including the _service_ connection string, that we also will need. Add a note to your text file that this is the device connection string.
+    > The connection string you've just copied is the _device_ connection string. There are many other connection strings, including the _service_ connection string, that we also will need. Add a note to your text file that this is the device connection string.
 
 1. In the left-hand menu for your IoT Hub, select **Shared access policies**.
 1. Click the **iothubowner** entry under **Policy**, then, on the right-hand side, copy the **Connection string-primary key** and paste it into your text file. Again, add a note, this text is the service connection string.
