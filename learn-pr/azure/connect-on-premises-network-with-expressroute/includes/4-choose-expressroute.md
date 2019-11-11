@@ -57,6 +57,6 @@ The following table shows a comparison between ExpressRoute, point-to-site, and 
 
 | Connection | Azure services supported | Bandwidth | Protocols | Typical use case |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| Virtual network, point-to-site | Azure IaaS services, Azure Virtual Machines | <100 Mbps |  Active/passive | Dev, test, and lab environments for cloud services and virtual machines. |
-| Virtual network, site-to-site | Azure IaaS services, Azure Virtual Machines | <100 Mbps|  Active/passive | Dev, test, and lab environments. Small-scale production workloads and virtual machines.| 
+| Virtual network, point-to-site | Azure IaaS services, Azure Virtual Machines | Based on the gateway SKU |  Active/passive | Dev, test, and lab environments for cloud services and virtual machines. |
+| Virtual network, site-to-site | Azure IaaS services, Azure Virtual Machines | 	Typically < 1 Gbps aggregate|  Active/passive | Dev, test, and lab environments. Small-scale production workloads and virtual machines.| 
 | ExpressRoute | Azure IaaS and PaaS services, Microsoft Office 365 services | 50 Mbps up to 10 Gbps (100 Gbps for ExpressRoute Direct)| Active/active | Enterprise-class and mission-critical workloads. Big data solutions. |

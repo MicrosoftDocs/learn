@@ -1,0 +1,43 @@
+### YamlMime:LearningPath
+uid: learn.languages.csharp-data
+metadata:
+  title: Work with data in C#
+  description: Dive deeper into data and types, learning how to manipulate string and numeric data.
+  brand: azure
+  ms.date: 11/06/2019
+  author: bobtabor-msft
+  ms.author: rotabor
+  #ms.learn-contact: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Work with data in C#
+summary: |
+  Dive deeper into data and types, learning how to manipulate string and numeric data.
+
+  In this learning path, you'll:
+    - Choose the correct data type for the type of data you need to work with
+    - Cast and convert data from one type to another
+    - Modify string data, formatting it for display or changing the content of the string
+    - Manipulate arrays, adding, removing, and sorting data
+  
+  Once you complete this learning path, you'll take firm control of the data in your code.
+cardDescription: Dive deeper into data and types, learning how to manipulate string and numeric data.
+prerequisites: |
+    - Beginner level experience with C# concepts including declaring, initializing, and using variables
+    - Beginner level experience with the `if-elseif-else` statement
+    - Beginner level experience with arrays and the `foreach` statement
+iconUrl: /learn/achievements/csharp-data.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+modules:
+- learn.languages.csharp-choose-data-type
+- learn.languages.csharp-convert-cast
+- learn.languages.csharp-arrays-operations
+- learn.languages.csharp-format-strings
+- learn.languages.csharp-modify-content
+trophy:
+  uid: learn.languages.csharp-data.trophy

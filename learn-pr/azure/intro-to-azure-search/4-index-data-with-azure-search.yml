@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-introduction-to-azure-search.4-index-data-with-azure-search
-title: Index data with Azure Search
+title: Index data with Azure Cognitive Search
 metadata:
-  title: Index data with Azure Search
-  description: Load data into an index in an Azure Search service
+  title: Index data with Azure Cognitive Search
+  description: Load data into an index in an Azure Cognitive Search service
   ms.date: 06/13/2019
   author: rmcmurray
   ms.author: robmcm
