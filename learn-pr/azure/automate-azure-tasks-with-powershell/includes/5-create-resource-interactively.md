@@ -265,7 +265,7 @@ Get-AzResource | ft
 You can also filter it to specific resource groups to only list resources associated with that group:
 
 ```powershell
-Get-AzResource -ResourceGroup ExerciseResources
+Get-AzResource -ResourceGroupName ExerciseResources
 ```
 
 ### Creating an Azure Virtual Machine
