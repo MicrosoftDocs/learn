@@ -8,7 +8,7 @@ In this unit, you'll learn how to upload a Docker image to Azure Container Regis
 
 Azure Container Registry is a registry hosting service provided by Azure. Each Azure Container Registry resource you create is a separate registry with a unique URL. These registries are *private*: they require authentication to push or pull images. Azure Container Registry runs in the cloud, and provides similar levels of scalability and availability to many other Azure services.
 
-You create a registry either using the Azure portal, or using the *acr create* command in the Azure Command Line Interface, as shown in the following example. Keep in mind that you'll have to create a resource group before you create the registry. In this example our resource group name is `mygroup`.
+You create a registry either using the Azure portal, or using the *acr create* command in the Azure Command Line Interface, as shown in the following example. Keep in mind that you'll have to create a resource group before you create the registry. In this example, our resource group's name is `mygroup`.
 
 ```bash
 az acr create --name myregistry --resource-group mygroup --sku standard --admin-enabled true
