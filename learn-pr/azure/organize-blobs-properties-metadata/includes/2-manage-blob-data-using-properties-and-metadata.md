@@ -50,4 +50,4 @@ For example, if you wanted to use metadata to classify your documents that are s
 | **docClass** | *public* |
 | **docClass** | *confidential* |
 
-If you add metadata as files are uploaded to blob storage, they can be automatically indexed by Azure Search using the metadata to build the index. This can be useful for image files, where conventional content indexing can be difficult.
+If you add metadata as files are uploaded to blob storage, they can be automatically indexed by Azure Cognitive Search using the metadata to build the index. This can be useful for image files, where conventional content indexing can be difficult.
