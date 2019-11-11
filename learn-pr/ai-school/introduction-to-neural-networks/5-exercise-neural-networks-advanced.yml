@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.neural-networks.programming-exercise-advanced-neural-networks
+uid: learn.neural-networks.exercise-neural-networks-advanced
 title: Exercise - Advanced neural networks
 metadata:
   title: Exercise - Advanced neural networks
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 12
 content: |
-  [!include[](includes/5-exercise-advanced-neural-networks.md)] 
+  [!include[](includes/5-exercise-neural-networks-advanced.md)] 

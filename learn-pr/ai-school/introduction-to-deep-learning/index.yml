@@ -27,10 +27,10 @@ products:
 units: 
 - learn.deep-learning.introduction
 - learn.deep-learning.deep-learning-applications
-- learn.deep-learning.introduction-to-cnns
+- learn.deep-learning.cnn-introduction
 - learn.deep-learning.exercise-cnns
-- learn.deep-learning.tools-for-deep-learning
-- learn.deep-learning.introduction-to-rnns
+- learn.deep-learning.deep-learning-tools
+- learn.deep-learning.rnn-introduction
 - learn.deep-learning.exercise-rnns
 - learn.deep-learning.summary
 badge: 

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.deep-learning.introduction-to-cnns
+uid: learn.deep-learning.cnn-introduction
 title: Introduction to CNNs
 metadata:
   title: Introduction to CNNs
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-introduction-to-cnns.md)]
+  [!include[](includes/3-cnn-introduction.md)]
 quiz:
   title: Check your knowledge
   questions:
