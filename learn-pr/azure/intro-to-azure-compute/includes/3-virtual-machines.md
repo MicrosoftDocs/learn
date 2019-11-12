@@ -25,7 +25,7 @@ You can create and provision a VM in minutes when you select a pre-configured VM
 
 ## Moving to the cloud with VMs
 
-VMs are also an excellent choice when moving from a physical server to the cloud ("lift and shift"). You can create an image of the physical server and host it within a VM with little or no changes. Just like a physical on-premises server, you must maintain the VM. Update the OS and the software it runs.
+VMs are also an excellent choice when moving from a physical server to the cloud ("lift and shift"). You can create an image of the physical server and host it within a VM with little or no changes. Just like a physical on-premises server, you must maintain the VM. You update the installed OS and the software it runs.
 
 ## Scaling VMs in Azure
 

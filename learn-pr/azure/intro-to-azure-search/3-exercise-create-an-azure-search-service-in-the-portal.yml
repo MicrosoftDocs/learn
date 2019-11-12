@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-introduction-to-azure-search.3-exercise-create-an-azure-search-service-in-the-portal
-title: Exercise - Create an Azure Search Service in the Azure portal
+title: Exercise - Create an Azure Cognitive Search service in the Azure portal
 metadata:
-  title: Exercise - Create an Azure Search Service in the Azure portal
-  description: In this exercise, you'll create an Azure Search service in the Azure portal
+  title: Exercise - Create an Azure Cognitive Search service in the Azure portal
+  description: In this exercise, you'll create an Azure Cognitive Search service in the Azure portal
   ms.date: 06/13/2019
   author: rmcmurray
   ms.author: robmcm
