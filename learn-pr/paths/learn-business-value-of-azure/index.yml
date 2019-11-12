@@ -43,6 +43,6 @@ modules:
 - learn-wwl.azure-in-action
 - learn-wwl.microsoft-cloud-adoption-framework-for-azure
 #-  learn-wwl.cloud-operating-model
-- learn-wwl.microsoft-runs-on-trust
+#- learn-wwl.microsoft-runs-on-trust
 trophy: 
   uid: learn-wwl.learn-business-value-of-azure.trophy
