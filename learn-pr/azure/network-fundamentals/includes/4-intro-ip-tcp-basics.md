@@ -1,4 +1,4 @@
-When considering the move to the cloud, it's essential in your role as either an Azure Developer, Solution Architect, or Administrator to know the fundamentals of how your network works. <!-- The first sentence is a repeat from the previous unit.-->  The next step in understanding the composition of a network is a detailed look at the interoperability of your network. This knowledge applies whether it's your own organization's network or more extensive networks like the world wide web. All networks are built on the same principals.
+The next step in understanding the composition of a network is a detailed look at the interoperability of your network. This knowledge applies whether it's your own organization's network or more extensive networks like the world wide web. All networks are built on the same principals.
 
 In this unit, you'll learn about the main aspects of network communications, why networks are built using TCP/IP. You'll understand the differences between Internet Protocol address standards. Finally, you'll explore subnetting, the Domain Name System, ports, and the use and role of private IP addresses.
 
@@ -119,7 +119,7 @@ A more common way of defining the subnet and the routing prefix is to use the Cl
 
 Subnets allow multiple subnetworks to exist within one network. They can be used to enhance routing performance. Subnets can be arranged hierarchically to create routing trees.
 
-<!-- Maybe use a subnet diagram, like this: https://theithollow.com/wp-content/uploads/2016/07/AzureNet0.png -->
+![Image showing a subnet diagram](../media/4-subnet-diagram.png)
 
 ## Private IP Addressing
 
@@ -142,8 +142,6 @@ The Domain Name System (DNS) is a decentralized lookup service that translates a
 A DNS server serves two purposes. The first is to maintain a cache of recently searched for domain name, which improves performance and reduces network traffic. The second is to act as the start of authority (SOA) for all the domains under it. When a DNS server is looking to resolve a domain name that isn't held in its cache, it will start with the highest level, the dot, then work down the subdomains until it finds the DNS server acting as the SOA. Once found, it stores the IP address of the domain in its local cache.
 
 The DNS also holds specific records relating to the domain. These include the Start of Authority (SOA), IP Addressing (A and AAAA), SMTP Email (MX), Name Servers (NS), and domain name alias (CNAME) records.
-
-<!-- DNS diagram here maybe? Just a standard one. I've already found a good one for Azure DNS below :) -->
 
 ## Ports
 
@@ -188,7 +186,7 @@ The Azure DNS service won't replace your domain registrar, where you register an
 
 One of the core benefits provided by Azure DNS is the Alias record, which can use either an A, AAAA, or CNAME record. The Alias allows you to route traffic to an Azure resource.
 
-<!-- DNS diagram here maybe?  Look for Azure DNS. Has good diagrams. Like this: https://www.znetlive.com//images/Features-of-DNS-hosting.png -->
+![Image showing an Azure DNS](../media/4-azure-dns.png)
 
 ### Azure  Virtual Network
 

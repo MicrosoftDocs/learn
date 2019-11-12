@@ -1,6 +1,8 @@
-When considering the move to the cloud, it's important to know the fundamentals of how your network is composed.  <!-- The first sentence is a repeat from the previous unit.--> Now you need to know the different types, their topologies, and their uses. You can apply your network topology knowledge in your own organization's network.  As well as to more extensive networks like the world wide web. All networks are built on the same principals.
+When considering the move to the cloud, it's important to know the fundamentals of how your network is composed.
 
-In this unit, you'll learn about the different types of networks that exist. You'll  gain an understanding of Ethernet. You'll learn about MAC addresses, and what ARP  <!-- Can we define what ARP stands for?--> is and does.
+Now you need to know the different types, their topologies, and their uses. You can apply your network topology knowledge in your own organization's network.  As well as to more extensive networks like the world wide web. All networks are built on the same principals.
+
+In this unit, you'll learn about the different types of networks that exist. You'll  gain an understanding of Ethernet. You'll learn about MAC addresses, and what Address Resolution Protocol (ARP) is and does.
 
 ## Networks
 
@@ -21,11 +23,20 @@ The Local Area Network or LAN provides networking needs around a single location
 ### Common LAN Topologies
 
 - **Bus Architecture** - In a bus architecture, each network device is connected to a single network cable. It is the simplest type of network to implement. The many limitations to this type of network. The main two are the length of the main cable or bus. The longer it gets, the higher the chance of signal dropout. One constraint is all the devices have to be physically located near to each other, for example, in the same room. Finally, if the bus cable is damaged in any way, the whole network fails.
+
+  ![Image showing a bus architecture](../media/3-bus-architecture.gif)
+
 - **Ring Architecture** - In a ring architecture, each network device is connected to its neighbor until it forms a ring. This form of network is more resilient than a bus architecture. A break in the cable ring will affect the performance of the network.
+
+  ![Image showing a ring topology](../media/3-ring-network.gif)
+
 - **Mesh Architecture** - In a mesh architecture, each network device is connected to every other network device in the network. It dramatically increases the resilience of your network but has the physical overhead of connecting them all together. Few networks today are built as a full mesh. Most use a partial mesh, where some machines are connected to each other, but others connect through one device. However, there's a subtle difference between a physical mesh network and a logical one. We've just described a physical mesh network, but their usage is limited. However, the perception is that most modern networks are mesh-based because each device can see and communicate with any other device on the network. It is the logical mesh network and is primarily made possible through the use of network protocols.
+
+  ![Image showing a mesh network](../media/2-mesh-network.png)
+
 - **Star Topology** - The star topology is the most commonly used network architecture. Each network device is connected to a centralized hub or switch. Switches and hubs can be linked together to extend and build more extensive networks. This type of typology is, by far, the most robust and scalable.
 
-<!-- Some diagrams of one or two of these will work better for us :) -->
+  ![Image showing a star topology](../media/2-star-network.png)
 
 ### LAN Transmission Methods
 
@@ -48,13 +59,11 @@ Your network is comprised of several key elements that form the backbone of your
 
 The Metropolitan Area Network or MAN provides networking capabilities between two different locations within a city or metropolitan area to provide a single extensive network. Typically a MAN requires a dedicated and secure connection between each LAN joined to the MAN. Although VPNs are now allowing LANs to act as MANs using existing technology like the internet.
 
+![Image showing a Metropolitan Area Network](../media/2-MAN.jpg)
+
 ### WAN
 
 The Wide Area Network or WAN provides networking capabilities between two different geographical locations locally or world-wide. You would use a WAN to connect your organization's head office with branch offices all over the country. A WAN links multiple LANs together to create one super network. As a MAN, you would use a virtual private network (VPN) to manage the connection between different LANs.
-
-
-
-<!-- Would an image like this work here?: http://www.am7s.com/wp-content/uploads/2019/04/MAN-net.jpg -->
 
 ### Differences between LAN and WAN networks
 
@@ -94,7 +103,7 @@ The Media Access Control address or MAC address is a unique identifier assigned 
 
 The MAC address has a standard composition of six hexadecimal numbers separated by a colon or dash, for example, AA-6A-BA-2B-68-C1. The first three numbers of the MAC address define the manufacturer's organizationally unique identifier (OUI). The remaining three numbers uniquely identify the device.
 
-<!-- And image here showing how to find a MAC address would be cool :https://www.howtogeek.com/wp-content/uploads/2017/06/mac_1.png -->
+![Image showing how to find the physical MAC address](../media/2-mac-address.png)
 
 ### Smartphone MAC address randomization
 
@@ -114,7 +123,7 @@ Azure comes with several networking tools and services.
 
 Using Azure, you can build complex virtual networks that emulate the structure of your actual on-premises networks. Using Azure Virtual Network services, you can provision and manage your cloud-based virtual networks, or create hybrid virtual networks that integrate with your on-premises networks.
 
-<!-- Diagram of an Azure virtual network would be good. Like this: http://www.msserverpro.com/wp-content/uploads/2017/10/MSserverpro-Azure-Virtual-Network-1-1024x449.jpg -->
+![Image showing a simple virtual network](../media/2-virtual-network.jpg)
 
 ### Connectivity Services
 
