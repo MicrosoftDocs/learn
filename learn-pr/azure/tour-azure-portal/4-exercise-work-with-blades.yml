@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.tour-azure-portal-features.4-exercise-work-with-panes
+uid: learn.tour-azure-portal-features.4-exercise-work-with-blades
 title: Exercise - Work with panes
 metadata:
   title: Exercise - Work with panes
@@ -14,4 +14,4 @@ metadata:
 azureSandbox: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-exercise-work-with-panes.md)]
+  [!include[](includes/4-exercise-work-with-blades.md)]
