@@ -3,7 +3,7 @@ uid: learn.azure.network-fundamentals-2.hub-switches-routers
 title: Network Hub, Switches, and Routers
 metadata:
   title:  Network Hub, Switches, and Routers
-  description: Discover the purpose and use of hubs, switches and routers in your network architecture.
+  description: Discover the purpose and use of hubs, switches, and routers in your network architecture.
   ms.date: 24/10/2019
   author: cwatson-cat
   ms.author: cwatson
@@ -16,17 +16,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the primary purpose of a hub??"
+  - content: "What is the primary purpose of a hub?"
     choices:
     - content: "To allow one ethernet network device to send data packets to a specific ethernet device."
       isCorrect: false
       explanation: "Hubs connect ethernet network devices together, packets are sent to all devices connected to the hub."
     - content: "It allows the connection of multiple ethernet devices making them act as a single network segment."
       isCorrect: true
-      explanation: "Hubs offer a the simplest form of network, allowing multiple ethernet based network enabled devices to communicate with each other. "
+      explanation: "Hubs offer the simplest form of network, allowing multiple ethernet-based network enabled devices to communicate with each other. "
     - content: "To allow multiple ethernet network devices access to the internet. "
       isCorrect: false
-      explanation: "Hubs offer a the simplest form of network, allowing multiple ethernet based network enabled devices to communicate with each other."
+      explanation: "Hubs offer the simplest form of network, allowing multiple ethernet-based network enabled devices to communicate with each other."
   - content: "What is the principle difference between hub routing and switch routing"
     choices:
     - content: "Hub routing sends all packets to all connected devices, whereas switch routing sends packets to specific devices."
@@ -35,7 +35,7 @@ quiz:
     - content: "Hub routing sends packet to specific locations, whereas switch routing is only used to route traffic between switches."
       isCorrect: false
       explanation: "Hub routing sends all packets to all connected devices, whereas switch routing sends packets to specific devices."
-    - content: "Hub routing sends sends sends all packet to all connected devices, whereas switch routing is only used to route traffic between switches."
+    - content: "Hub routing sends all packet to all connected devices, whereas switch routing is only used to route traffic between switches."
       isCorrect: false
       explanation: "Hub routing sends all packets to all connected devices, whereas switch routing sends packets to specific devices."
   - content: "What does a router do?"
