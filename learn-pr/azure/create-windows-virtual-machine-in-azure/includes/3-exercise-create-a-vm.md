@@ -44,7 +44,7 @@ We'll start with the **Basics** section.
 
    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-1. Leave **Availability options** as "None". This option is used to ensure the VM is highly available by grouping multiple VMs together a set to deal with planned or unplanned maintenance events or outages.
+1. Leave **Availability options** as "No Infrastructure redundancy required". This option is used to ensure the VM is highly available by grouping multiple VMs together a set to deal with planned or unplanned maintenance events or outages.
 
 1. Ensure the image is set to "Windows Server 2016 Datacenter". You can open the drop-down list to see all the options available.
 
