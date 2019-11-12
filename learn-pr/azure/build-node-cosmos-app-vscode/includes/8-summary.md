@@ -1,4 +1,4 @@
-In this module, you learned how to use Node.js with Visual Studio Code to:
+In this module, you learned how to use Node.js with VS Code to:
 
 - Create a Cosmos DB instance for a Node.js app
 - Set up a new Node.js app in VS Code
@@ -6,10 +6,7 @@ In this module, you learned how to use Node.js with Visual Studio Code to:
 
 You can now use Node.js to build applications that create, query, and maintain data in a Cosmos DB database.
 
-> [!NOTE]
-> You should remove the Cosmos DB account and database when you've completed this module, to avoid charges.
-> 1. In the Cosmos DB pane in Visual Studio Code, right-click *\<your-cosmos-db-account-name\>*, and then click **Delete Account**.
-> 2. In the message box, click **Delete** to confirm the deletion.
+[!include[](../../../includes/azure-sandbox-cleanup.md)]
 
 ## Learn more
 

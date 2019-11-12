@@ -1,8 +1,8 @@
-Cosmos DB is a multi-model, globally distributed, NoSQL based database service. It stores data as collections of schemaless documents. Cosmos DB enables you to distribute data globally, scale performance horizontally, and apply varying levels of consistency according to your organization's requirements. 
+Cosmos DB is a multi-model, globally distributed, NoSQL based database service. It stores data as containers of schemaless documents. Cosmos DB enables you to distribute data globally, scale performance horizontally, and apply varying levels of consistency according to your organization's requirements. 
 
-You create and manage Cosmos DB databases using the Azure portal from a web browser, by writing your own applications, and from within tools like Visual Studio Code.
+You create and manage Cosmos DB databases using the Azure portal from a web browser, by writing your own applications, and from within tools like VS Code.
 
-In this unit, you'll learn more about how Cosmos DB organizes data. You'll see how to use Visual Studio Code to create and maintain Cosmos DB databases and collections.
+In this unit, you'll learn more about how Cosmos DB organizes data. You'll see how to use VS Code to create and maintain Cosmos DB databases and containers.
 
 ## What is Cosmos DB?
 
@@ -28,13 +28,17 @@ Cosmos DB database provides APIs that let you create, update, delete, and query 
 
 The Cosmos DB service is organized as a hierarchy. At the top, is a Cosmos DB account. The Cosmos DB account is the unit of security for a set of databases. The Cosmos DB account specifies the location of the databases together with the security information required to access those databases.
 
-Inside an account, you create one or more databases. You create one or more collections inside each database. You store documents in collections. The image below illustrates this hierarchy:
+Inside an account, you create one or more databases. You create one or more containers inside each database. You store documents in containers. The image below illustrates this hierarchy:
 
-![The account-database-collection-document hierarchy in Cosmos DB](../media/2-hierarchy.png)
+![The account-database-container-document hierarchy in Cosmos DB](../media/2-hierarchy.png)
 
-Each collection is organized as a series of partitions. Partitions *roughly* correspond to the physical files on disk. A large partition might have its own file, but several small partitions could be combined into a single file. Each document has a partition key that defines the partition to which it belongs. You use partitioning to store related documents together, and to help optimize the way you access data. 
+Each container is organized as a series of partitions. Partitions *roughly* correspond to the physical files on disk. A large partition might have its own file, but several small partitions could be combined into a single file. Each document has a partition key that defines the partition to which it belongs. You use partitioning to store related documents together, and to help optimize the way you access data.
 
-For example, in a retail database, if you store customer documents and the documents describing their orders in a collection, you could consider partitioning the documents by customer ID. If you needed to fetch customer and order information together for a specific customer, you could fetch the data from the same partition.
+For example, in a retail database, if you store customer documents and the documents describing their orders in a container, you could consider partitioning the documents by customer ID. If you needed to fetch customer and order information together for a specific customer, you could fetch the data from the same partition.
+
+### Cosmos DB throughput
+
+Cosmos DB uses the concept of Request Units per second (RU/s) to manage the performance and cost of databases. This measure abstracts the underlying physical resources that need to be provisioned to support the required performance. When you create a database or container, you specify how many RU/s to allocate. You'll incur charges accordingly.
 
 ## Cosmos DB APIs
 
@@ -46,29 +50,14 @@ Cosmos DB supports several programmatic APIs. These APIs conform as closely as p
 - Azure Table Storage
 - SQL
 
-The SQL API is a variant of the SQL language used by most relational database management systems. There are restrictions and adaptations for handling collections of schemaless documents rather than tables.
-
-## Cosmos DB throughput
-
-Cosmos DB uses the concept of Request Units per second (RU/s) to manage the performance and cost of databases. This measure abstracts the underlying physical resources that need to be provisioned to support the required performance. When you create a database or collection, you specify how many RU/s to allocate. You'll incur charges accordingly.
-
-Think of a request unit as a normalized value that's based on the amount of computation required to satisfy a read request made to the database. Microsoft gives a measure of approximately 1 RU = Reading 1-KB document with 10 properties. So 1 RU will support an application that reads 1 x 1-KB documents a second. If you underprovision (by specifying too few RUs), Cosmos DB will start throttling performance. When throttling begins, requests will be asked to retry later, when hopefully there are available resources to satisfy it. If an application makes too many attempts to retry a throttled request, the request could be aborted. However, overprovisioning can lead to higher costs for underused resources.
-
-You can change the RU/s for a collection at any time, either up or down. So when there's low activity, you reduce costs but then increase the RU/s at peak times to maintain performance.
+The SQL API is a variant of the SQL language used by most relational database management systems. There are restrictions and adaptations for handling sets of schemaless documents rather than tables.
 
 ## Use Visual Studio Code to manage Cosmos DB
 
-If you're using Visual Studio Code as your development environment for building Cosmos DB databases and applications, you can install the Azure Cosmos DB extension.
+If you're using VS Code as your development environment for building Cosmos DB databases and applications, you can install the Azure Cosmos DB extension.
 
-You install the extension from the Extensions Marketplace for Visual Studio Code.
+You install the extension from the Extensions Marketplace for VS Code.
 
-The Cosmos DB extension provides a graphical user interface that is integrated with Visual Studio Code. Using the extension, you can:
+The Cosmos DB extension provides a graphical user interface that is integrated with VS Code. Using the extension, you can create, delete, and manage Cosmos DB accounts, databases, containers, and documents.
 
-- Sign in to your Azure account, or create a new one
-- Create, delete, and manage a Cosmos DB account
-- Create and delete databases in the Cosmos DB account
-- Create and delete document collections in a database
-- Add, edit, and delete documents in a collection
-- View the documents in a collection
-
-![The Cosmos DB extension in Visual Studio Code](../media/2-cosmosdb-extension.png)
+![The Cosmos DB extension in VS Code](../media/2-cosmosdb-extension.png)

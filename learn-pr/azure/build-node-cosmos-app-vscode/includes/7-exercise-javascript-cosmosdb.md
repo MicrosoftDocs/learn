@@ -1,77 +1,53 @@
 Cosmos DB provides a highly scalable document store suitable for holding a wide range of document types. The SQL API enables you to write applications that can easily query and maintain documents. 
 
-In the sample scenario, you're using Cosmos DB to store course details, students who have taken the courses, and the grades they achieved. You've written and tested code to create course and student objects in memory. You now need to add functionality to save these documents to Cosmos DB, and to query documents held in Cosmos DB.
+In the sample scenario, you're using Cosmos DB to store the details of students, and the course grades they achieved. You've written and tested code to create student objects in memory. You now need to add functionality to save these documents to Cosmos DB, and to query documents held in Cosmos DB.
 
-In this exercise, you'll extend the JavaScript app you wrote previously. You'll add code that saves students and course documents to the Cosmos DB collection you created in the first exercise of this module. You'll add a query capability that enables users to find the course grades achieved by a specified student in a given academic year. Then you'll see the grades received by students who took a particular course.
+In this exercise, you'll extend the JavaScript app you wrote previously. You'll add code that saves student documents to the Cosmos DB container you created in the first exercise of this module. You'll add a query capability that enables users to find the course grades achieved by a specified student in a given academic year. Then you'll see the grades received by students who took a particular course.
 
-This exercise runs on your desktop computer.
+This exercise runs on your desktop computer, and uses an Azure sandbox for your resources.
 
-## Modularize the studentgrades.js script
-
-1. Start Visual Studio Code if it isn't already running.
-
-2. On the **File** menu, click **Open Folder**. Select the **grades** folder containing the code that you created in the previous exercise.
-
-3. In the **Explorer** window, select the **studentgrades.js** script to open it in the editor window.
-
-4. At the end of the file, comment out the code that calls the **test** function (leave the **test** function in place), and add the `export` statement shown below:
-
-    ```javascript
-    // test;
-
-    export {Course, Student, getCourseData, getStudentData};
-    ```
-
-    You'll use the exported types and functions in later tasks in this exercise.
-
-5. Save the file.
+[!include[](../../../includes/azure-sandbox-activate.md)]
 
 ## Configure a connection to Cosmos DB
 
-1. In the toolbar on the left side of Visual Studio Code, select the **Azure** icon.
+The first task is to enable your application to connect to the Cosmos DB account you created in the first exercise.
 
-2. In the **Cosmos DB** pane, click **Sign in to Azure** and sign in, if you aren't already connected.
+1. Start VS Code if it isn't already running, and open the **grades** folder, holding the **studentgrades.js** file.
 
-    ![Screenshot of Cosmos DB pane in Visual Studio Code. The user is about to sign in to Azure](../media/7-azure-sign-in.png)
+2. On the **Terminal** menu, click **New Terminal** if you don't currently have a terminal window open.
 
-3. Expand your Azure account, right-click the **\<*your name or initials*\>school** Cosmos DB account, and then click **Copy Connection String**.
-
-    ![Screenshot of Cosmos DB pane in Visual Studio Code. The user is copying the connection string for the Cosmos DB account to the clipboard](../media/7-connection.png)
-
-4. On the **File** menu, click **New File**.
-
-5. Add the following object to the config.js file. Paste the connection string for your Cosmos DB account where indicated in the **connectionString** property:
-
-    ```javascript
-    //@ts-check
-    var config = {
-        connectionString: "YOUR CONNECTION STRING HERE",
-        database: "SchoolDB",
-        container: "StudentCourseGrades"
-    }
-
-    export {config};
-    ```
-
-6. Save the file with the name **config.js**.
-
-7. On the **Terminal** menu, click **New Terminal** if you don't currently have a terminal window open.
-
-8. In the **Terminal** window, run the following command to install the Cosmos DB package for JavaScript:
+3. In the **Terminal** window, run the following command to install the Cosmos DB package for JavaScript:
 
     ```bash
     npm install @azure/cosmos
     ```
 
-9. On the **File** menu, click **New File** to create another file.
-
-10. In the new file, add the following code:
+4. Add the following code to the studentgrades.js file, immediately above the **Student** class. This object wraps the connection, database, and container information you'll use to access documents in the Cosmos DB database:
 
     ```javascript
-    //@ts-check
-    import {config} from "./config.js";
-    import * as cosmos from "@azure/cosmos";
-    import * as coursetypes from "./studentgrades.js";
+    var config = {
+        connectionString: "YOUR CONNECTION STRING WILL GO HERE SHORTLY",
+        database: "SchoolDB",
+        container: "StudentCourseGrades"
+    }
+    ```
+
+5. In the toolbar on the left side of VS Code, select the **Azure** icon.
+
+6. In the **Cosmos DB** pane, , if you aren't already connected, click **Sign in to Azure**. Sign in with the same credentials you used to set up the sandbox. In the command palette, type **Azure**, and then select **Azure: Select Subscriptions**. Select **Concierge Subscription**, and then click **OK**.
+
+    ![Screenshot of Cosmos DB pane in VS Code. The user is about to sign in to Azure](../media/7-azure-sign-in.png)
+
+7. Expand your Azure account, right-click the **\<*your name or initials*\>school** Cosmos DB account, and then click **Copy Connection String**.
+
+    ![Screenshot of Cosmos DB pane in VS Code. The user is copying the connection string for the Cosmos DB account to the clipboard](../media/7-connection.png)
+
+8. Paste the connection string for your Cosmos DB account where indicated in the **connectionString** property of the **config** object in your code.
+
+9. Add the following code between the **config** object and the **Student** class:
+
+    ```javascript
+    var cosmos = require("@azure/cosmos");
 
     const client = new cosmos.CosmosClient(config.connectionString);
     const databaseid = config.database;
@@ -80,15 +56,17 @@ This exercise runs on your desktop computer.
     const containerdata = containerref.items;
     ```
 
-    The `import` statements enable you to use the exported objects, types, and functions in the **config.js** and **studentgrades.js** scripts, in addition to the **cosmos** package.
+    The `require` statement loads the types and functions in the **cosmos** package.
 
-    You use the **CosmosClient** object to connect to your Cosmos DB account. Use the connection string that you specified in the **config.js** script. The **containerref** object is a reference to the **StudentGrades** collection in the **SchoolDB** database in your Cosmos DB account. You'll use the **containerdata** object to access the documents in this collection.
+    You use the **CosmosClient** object to connect to your Cosmos DB account. Use the connection string that you specified in the **config.js** script. The **containerref** object is a reference to the **StudentGrades** container in the **SchoolDB** database in your Cosmos DB account. You'll use the **containerdata** object to access the documents in this container.
 
-11. Save the file as **cosmosgrades.js**.
+10. Save the file.
 
-## Maintain student and course documents in a collection
+## Maintain student documents in a container
 
-1. In the **cosmosgrades.js** script, add the following function:
+You'll now use the Cosmos DB client to insert, update, and delete student documents in the database.
+
+1. Add the following function to your code, directly above the **Student** class:
 
     ```javascript
     function isOK(statusCode) {
@@ -98,7 +76,7 @@ This exercise runs on your desktop computer.
 
     This function takes an HTTP status code, and returns **true** if the code is in the 200 range. Codes in this range typically indicate that an operation was successful.
 
-2. Add the function shown below to the **cosmosdb.js** script:
+2. Add the function shown below to the script, after the **isOK** function:
 
     ```javascript
     async function addStudent(student) {
@@ -107,12 +85,12 @@ This exercise runs on your desktop computer.
     }
     ```
 
-    This function takes a **Student** object and adds it to the collection in the Cosmos DB database. If the insert was successful, the function displays a message indicating that the student document was added.
+    This function takes a **Student** object and adds it to the container in the Cosmos DB database. If the insert was successful, the function displays a message indicating that the student document was added.
 
     > [!NOTE]
     > If the **create** method returns an HTTP status code outside of the 200-299 range, it throws an exception. The empty **catch** handler is intended to catch and discard this exception as it's handled by the **isOK** statement.
 
-3. Add the **updateStudent** function shown below to the **cosmosdb.js** script:
+3. Add the **updateStudent** function shown below to the script, after the **addStudent** function:
 
     ```javascript
     async function updateStudent(student) {
@@ -121,84 +99,53 @@ This exercise runs on your desktop computer.
     }
     ```
 
-    This function uses the **upsert** operation of the collection to update the student document with the data provided in the **student** parameter. You use this function to modify a student document.
+    This function uses the **upsert** operation of the container to update the student document with the data provided in the **student** parameter. You use this function to modify a student document.
 
-4. Add the function shown below:
+4. Add the function shown below to the script, after the **updateStudent** function:
 
     ```javascript
     async function deleteStudent(student) {
-        const { item, statusCode } = await containerref.item(student.id, student.AcademicYear).delete().catch();;
+        const { item, statusCode } = await containerref.item(student.id, student.StudentID).delete().catch();
         isOK(statusCode) && process.stdout.write(`Deleted student with id: ${item.id}\n`);
     }
     ```
 
-    This function removes the document for the specified student from the collection in the Cosmos DB database.
+    This function removes the document for the specified student from the container in the Cosmos DB database.
 
-5. Create the following function:
+## Query and retrieve student documents from a container
 
-    ```javascript
-    async function addCourse(course) {
-        const { item, statusCode } = await containerdata.create(course).catch();;
-        isOK(statusCode) && process.stdout.write(`Added course with id: ${item.id}\n`);
-    }
-    ```
+In this task, you'll add a function that retrieve a student document using its ID. You'll also create a more generalized function that finds all students that have taken a particular course.
 
-    This function follows the same pattern as the previous functions. It takes a **Course** object as the argument, and uses it to create a document for the course in the database.
-
-6. Create the following function that deletes a course from the Cosmos DB collection:
+1. Add the function shown below to the script, after the **deleteStudent** function:
 
     ```javascript
-    async function deleteCourse(course) {
-        const { item, statusCode } = await containerref.item(course.id, course.AcademicYear).delete().catch();;
-        isOK(statusCode) && process.stdout.write(`Deleted course: ${item.id}\n`);
-    }
-    ```
-
-## Query and retrieve student and course documents from a collection
-
-1. Add the function shown below to the **cosmosgrades.js** script:
-
-    ```javascript
-    async function getCourse(id, year) {
-        const { resource, statusCode } = await containerref.item(id, year).read().catch();;
-        isOK(statusCode) && process.stdout.write(`Course data: ${resource.id}: ${resource.CourseName}: ${resource.AcademicYear}\n`);
-    }
-    ```
-
-    This function takes a course id and academic year (the partition key), and uses this information to retrieve the corresponding course document from the Cosmos DB collection.
-
-2. Add the following function to the script:
-
-    ```javascript
-    async function getStudent(id, year) {
-        const { resource, statusCode } = await containerref.item(id, year).read().catch();;
-        if (isOK(statusCode)) { 
-            process.stdout.write(`Student data: ${resource.id}: ${resource.Name.Forename}, ${resource.Name.Lastname}: ${resource.AcademicYear}\n`);
+    async function getStudent(studentID) {
+        const { resource, statusCode } = await containerref.item(studentID, studentID).read().catch();;
+        if (isOK(statusCode)) {
+            process.stdout.write(`Student data: ${resource.id}: ${resource.Forename}, ${resource.Lastname}\n`);
             resource.CourseGrades.forEach (function(coursegrade) {
                 process.stdout.write(`${coursegrade.Course}:${coursegrade.Grade}\n`);
             });
+            return new Student(resource.StudentID, resource.Forename, resource.Lastname);
         }
+        return null;
     }
     ```
 
-    This function fetches a student document, given the id and academic year. The details of the student are displayed. The `forEach` loop displays the grades for each course the student has taken, listed in the **CourseGrades** array for the student.
+    This function fetches a student document, given the id and the studentID (the partition key). The details of the student are displayed. The `forEach` loop displays the grades for each course the student has taken, listed in the **CourseGrades** array for the student. The function returns a **Student** object using the details retrieved from the database. If no matching student is found, the function returns a null reference.
 
-3. Create the following function:
+2. Add the following function, after the **getStudent** function:
 
     ```javascript
-    async function queryStudents(course) {
+    async function queryStudents(courseName) {
         const studentquery = {
-            query: "SELECT s.id, s.Name.Forename, s.Name.Lastname, c.Course, c.Grade \
+            query: "SELECT s.id, s.Forename, s.Lastname, c.Course, c.Grade \
                     FROM students s JOIN c IN s.CourseGrades \
-                    WHERE s.AcademicYear = @year AND c.Course = @coursename",
+                    WHERE c.Course = @coursename",
             parameters: [
                 {
-                    name: "@year",
-                    value: course.AcademicYear
-                },
-                {
                     name: "@coursename",
-                    value: course.CourseName
+                    value: courseName
                 }
             ]
         };
@@ -211,70 +158,71 @@ This exercise runs on your desktop computer.
     }
     ```
 
-    This function uses the **query** function of the collection to find the documents for all students who have taken the course specified in the function argument. The function displays the details of each student, and the grade achieved.
+    This function uses the **query** function of the container to find the documents for all students who have taken the course specified in the function argument. The function displays the details of each student, and the grade achieved.
 
 ## Test the cosmosgrades app
 
-1. Add the **test** function shown below to the **cosmosgrades.js** script:
+You can now create and run a test harness that verifies that your code creates student documents correctly.
+
+1. Replace the existing **test** function near the end of the script with the code shown below. Note that this is an asynchronous function:
 
     ```javascript
     async function test() {
-        process.stdout.write("Testing addCourse and getCourse\n\n");
-        let course1 = coursetypes.getCourseData();
-        await addCourse(course1).then(
-            () => getCourse(course1.id, course1.AcademicYear)
-        );
-
-        let course2 = coursetypes.getCourseData();
-        await addCourse(course2).then(
-            () => getCourse(course2.id, course2.AcademicYear)
-        );
-
         process.stdout.write("\n\nTesting addStudent and getStudent\n\n");
-        let student1 = coursetypes.getStudentData();
+
+        let student1 = getStudentData();
         await addStudent(student1).then(
-            () => getStudent(student1.id, student1.AcademicYear)
+            () => getStudent(student1.StudentID)
         );
-        process.stdout.write("\n\nTesting addStudent and getStudent\n\n");
-        let student2 = coursetypes.getStudentData();
+
+        process.stdout.write("\n\n");
+
+        let student2 = getStudentData();
         await addStudent(student2).then(
-            () => getStudent(student2.id, student2.AcademicYear)
+            () => getStudent(student2.StudentID)
         );
+
+        process.stdout.write("\n\n");
 
         process.stdout.write("\n\nTesting updateStudent\n\n");
-        student1.addGrade(course1.CourseName, "A");
-        student1.addGrade(course2.CourseName, "C");
+        student1.addGrade("Physics", "A");
+        student1.addGrade("Chemistry", "C");
         await updateStudent(student1).then(
-            () => getStudent(student1.id, student1.AcademicYear)
+            () => getStudent(student1.StudentID)
         );
 
-        student2.addGrade(course1.CourseName, "B");
-        student2.addGrade(course2.CourseName, "D");
+        process.stdout.write("\n");
+
+        student2.addGrade("Physics", "B");
+        student2.addGrade("Mathematics", "D");
         await updateStudent(student2).then(
-            () => getStudent(student2.id, student2.AcademicYear)
+            () => getStudent(student2.StudentID)
         );
+
+        process.stdout.write("\n\n");
 
         process.stdout.write("\n\nTesting queryStudents\n\n");
-        await queryStudents(course1);
-        await queryStudents(course2);
+        process.stdout.write("Students who have taken Physics\n");
+        await queryStudents("Physics");
 
+        process.stdout.write("\n\nStudents who have taken Computer Science\n");
+        await queryStudents("Computer Science");
 
+        // Delete the students created in the first exercise
         process.stdout.write("\n\nTesting deleteStudent\n\n");
-        await deleteStudent(student1).then(
-            () => getStudent(student1.id, student1.AcademicYear)
-        );
-        await deleteStudent(student2).then(
-            () => getStudent(student2.id, student2.AcademicYear)
-        );
+        let oldStudent = await getStudent("S101");
+        if (oldStudent) {
+            await deleteStudent(oldStudent).then(
+                () => getStudent(oldStudent.StudentID)
+            );
+        }
 
-
-        process.stdout.write("\n\nTesting deleteCourse\n\n");
-        await deleteCourse(course1).then(
-            () => getStudent(course1.id, course1.AcademicYear)
-        );
-        await deleteCourse(course2).then(
-            () => getCourse(course2.id, course2.AcademicYear)
-        );
+        oldStudent = await getStudent("S102");
+        if (oldStudent) {
+            await deleteStudent(oldStudent).then(
+                () => getStudent(oldStudent.StudentID)
+            );
+        }
 
         process.stdout.write("\n\nDone\n");
     }
@@ -282,174 +230,93 @@ This exercise runs on your desktop computer.
 
     This code tests each of the functions you've created. It does the following tasks:
 
-    1. It creates two courses using values specified by the user with the **getCourseData** function you created in the previous exercises. The code adds both courses to the collection in Cosmos DB using the **addCourse** function. The code also verifies that the courses were added successfully by querying the collection with the **getCourse** function.
+    1. It creates two students, and adds them to the container using the **addStudent** function. The test verifies that the students were created using the **getStudent** function.
 
-    2. It creates two students, and adds them to the collection using the **addStudent** function. The test verifies that the students were created using the **getStudent** function.
+    2. It assigns grades for each course to both students, then updates the student documents in the Cosmos DB container with the **updateStudent** function. The **getStudent** function is run to retrieve and display the details of each student. These details should now include the course grade data.
 
-    3. It assigns grades for each course to both students, then updates the student documents in the Cosmos DB collection with the **updateStudent** function. The **getStudent** function is run to retrieve and display the details of each student. These details should now include the course grade data.
+    3. It runs the **queryStudents** function to display the grades for all students who have taken each course.
 
-    4. It runs the **queryStudents** function to display the grades for all students who have taken each course.
+    4. It removes student documents from the container in Cosmos DB with the **deleteStudent** function. The students removed are those created manually, in the first exercise in this module. The **getStudent** function is used to retrieve the student data afterwards. In both cases, the documents should no longer be present, and nothing will be displayed.
 
-    5. It removes the student documents from the collection in Cosmos DB with the **deleteStudent** function. The **getStudent** function is used to retrieve the student data afterwards. In both cases, the documents should no longer be present, and nothing will be displayed.
+2. Save the file.
 
-    6. It deletes the course documents using the **deleteCourse** function, and calls the **getCourse** function to check that they've been removed.
+3. On the **View** menu, click **Terminal** to display the terminal window.
 
-2. Save the **cosmosgrades.js** file.
+4. In the Terminal window, run the **studentgrages** script:
 
-3. On the **Debug** menu, click **Open Configurations**.
-
-4. In the **launch.json** file, change the **program** property to reference the **cosmosgrades.js** script, as shown below:
-
-    ```json
-    {
-        // Use IntelliSense to learn about possible attributes.
-        // Hover to view descriptions of existing attributes.
-        // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-        "version": "0.2.0",
-        "configurations": [
-            {
-                "type": "node",
-                "request": "launch",
-                "name": "Launch Program",
-                "program": "${workspaceFolder}/cosmosgrades.js",
-                "console": "externalTerminal",
-                "runtimeArgs": ["-r", "esm"]
-            }
-        ]
-    }
+    ```bash
+    node studentgrades.js
     ```
 
-5. Save the **launch.json** file.
+    The messages **Testing addStudent** and **getStudent** appear in the terminal window.
 
-6. On the **Debug** menu, click **Start Without Debugging**.
-
-    The messages **Testing addCourse** and **getCourse** appear in the terminal window.
-
-7. At the first set of prompts, enter the values shown in the following table:
+5. At the first set of prompts, enter the values shown in the following table:
 
     | Prompt  | Value  |
     |---|---|
-    | Course code: | CS201 |
-    | Course name: | Computer Science |
-    | Academic year: | 2019 |
+    | Please enter the student's ID | S501 |
+    | Enter the student's forename: | ABC |
+    | Enter the student's last name: | DEF |
 
-    The message **Added course with id: CS201** should appear after you've entered the academic year. This is followed by the message **Course data: C201: Computer Science: 2019**. This is the data displayed by the **getCourse** function, after the course has been added to the Cosmos DB collection.
+    The following messages should appear. This is the data displayed by the **getStudent** function, after the course has been added to the Cosmos DB container by the **addStudent** function:
 
-8. At the next set of prompts, enter the following values:
+    ```text
+    Added student with id: S501
+    Student data: S501: ABC, DEF
+    ```
 
-    | Prompt  | Value  |
-    |---|---|
-    | Course code: | CS202 |
-    | Course name: | Statistics |
-    | Academic year: | 2019 |
-
-    The messages **Added course with id: CS202** and **Course data: C202: Statistics: 2019** should appear, indicating that the document for this course has also been added to the Cosmos DB collection.
-
-9. When prompted for the details of the first student, enter the following values:
+6. At the next set of prompts, enter the following values:
 
     | Prompt  | Value  |
     |---|---|
-    | Student id | SU998 |
-    | Forename | Eeeeee |
-    | Lastname | Ffffff |
-    | Academic year: | 2019 |
+    | Please enter the student's ID | S502 |
+    | Enter the student's forename: | TUV |
+    | Enter the student's last name: | XYZ |
 
-    The message **Added student with id: SU998** should appear, followed by **Student data: SU998: Eeeeee, Ffffff: 2019** displayed by the **getStudent** function.
+    The following message should appear, indicating that the document for this student has also been added to the Cosmos DB container.
 
-10. When prompted for the details of the second student, enter the following values:
+    ```text
+    Added student with id: S502
+    Student data: S502: TUV, XYZ
+    ```
 
-    | Prompt  | Value  |
-    |---|---|
-    | Student id | SU999 |
-    | Forename | Gggggg |
-    | Lastname | Hhhhhh |
-    | Academic year: | 2019 |
-
-    The messages **Added student with id: SU999** and **Student data: SU999: Gggggg, Hhhhhh: 2019** should be displayed.
-
-11. You should then see the following sequence of messages as the remaining functionality is tested:
+7. You should then see the following sequence of messages as the remaining functionality is tested:
 
     ```text
     Testing updateStudent
 
-    Updated student with id: SU998
-    Student data: SU998: Eeeeee, Ffffff: 2019
-    Computer Science:A
-    Statistics:C
-    Updated student with id: SU999
-    Student data: SU999: Gggggg, Hhhhhh: 2019
-    Computer Science:B
-    Statistics:D
+    Updated student with id: S501
+    Student data: S501: ABC, DEF
+    Physics:A
+    Chemistry:C
 
+    Updated student with id: S502
+    Student data: S502: TUV, XYZ
+    Physics:B
+    Mathematics:D
 
-    Testing queryStudents
-
-
-    Query returned {"id":"SU998","Forename":"Eeeeee","Lastname":"Ffffff","Course":"Computer Science","Grade":"A"}
-
-    Query returned {"id":"SU999","Forename":"Gggggg","Lastname":"Hhhhhh","Course":"Computer Science","Grade":"B"}
-
-    Query returned {"id":"SU998","Forename":"Eeeeee","Lastname":"Ffffff","Course":"Statistics","Grade":"C"}
-
-    Query returned {"id":"SU999","Forename":"Gggggg","Lastname":"Hhhhhh","Course":"Statistics","Grade":"D"}
-
-
-    Testing deleteStudent
-
-    Deleted student with id: SU998
-    Deleted student with id: SU999
-
-
-    Testing deleteCourse
-
-    Deleted course: CS201
-    Deleted course: CS202
-
+    STUFF HERE TO SORT OUT
 
     Done
     ```
 
-12. Close the debug terminal window.
+    **START ABOVE**
+
+8. Close the debug terminal window.
 
 ## Verify the documents in the Cosmos DB database
 
-1. Return to the **cosmosgrades.js** script.
+You'll now query the documents in the database directly, using the Azure Cosmos DB extension for VS Code. You'll verify that the documents created by the app have been stored in the database.
 
-2. In the **test** function, comment out the statements that test the **deleteStudent** and **deleteCourse** functions:
+1. In the **Cosmos DB** pane, expand your Azure account, expand the **\<your name or initials\>school** Cosmos DB account, expand the **SchoolDB** database, expand the **StudentCourseGrades** container, right-click **Documents**, and then click **Refresh**.
 
-    ```javascript
-    /*
-    process.stdout.write("\n\nTesting deleteStudent\n\n");
-    await deleteStudent(student1).then(
-        () => getStudent(student1.id, student1.AcademicYear)
-    );
-    await deleteStudent(student2).then(
-        () => getStudent(student2.id, student2.AcademicYear)
-    );
+    ![Screenshot of Cosmos DB pane in VS Code. The user has selected the **Refresh** command](../media/7-cosmosdb-refresh.png)
 
-    process.stdout.write("\n\nTesting deleteCourse\n\n");
-    await deleteCourse(course1).then(
-        () => getStudent(course1.id, course1.AcademicYear)
-    );
-    await deleteCourse(course2).then(
-        () => getCourse(course2.id, course2.AcademicYear)
-    );
-    */
-    ```
+2. Expand the **Documents** folder. You should see the four documents that you created in the first exercise (**C101**, **C102**, **SU001**, and **SU002**), together with the four documents created by the cosmosgrades.js app:
 
-3. Run the application again, and enter the same data as before.
+    ![Screenshot of Cosmos DB pane in VS Code showing the documents in the **StudentCourseGrades** container](../media/7-cosmosdb-documents.png)
 
-4. When the app has finished, in Visual Studio Code, in the left toolbar, click the **Azure** icon.
-
-5. In the **Cosmos DB** pane, expand your Azure account, expand the **\<your name or initials\>school** Cosmos DB account, expand the **SchoolDB** database, expand the **StudentCourseGrades** collection, right-click **Documents**, and then click **Refresh**.
-
-    ![Screenshot of Cosmos DB pane in Visual Studio Code. The user has selected the **Refresh** command](../media/7-cosmosdb-refresh.png)
-
-6. Expand the **Documents** folder. You should see the four documents that you created in the first exercise (**C101**, **C102**, **SU001**, and **SU002**), together with the four documents created by the cosmosgrades.js app:
-
-    ![Screenshot of Cosmos DB pane in Visual Studio Code showing the documents in the **StudentCourseGrades** collection](../media/7-cosmosdb-documents.png)
-
-7. Click the **CS201** document. It should look similar to this:
+3. Click the **CS201** document. It should look similar to this:
 
     ```json
     {
@@ -468,7 +335,7 @@ This exercise runs on your desktop computer.
 
     If time allows, also examine the **CS202** document.
 
-8. Click the **SU998** student document. You should see the details of the student, including the grades for each course in the **CourseGrades** array:
+4. Click the **SU998** student document. You should see the details of the student, including the grades for each course in the **CourseGrades** array:
 
     ```json
     {
@@ -496,4 +363,4 @@ This exercise runs on your desktop computer.
     }
     ```
 
-You've now used Visual Studio Code to create a Node.js application that can query, insert, update, and delete documents in a Cosmos DB database.
+You've now used VS Code to create a Node.js application that can query, insert, update, and delete documents in a Cosmos DB database.

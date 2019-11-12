@@ -54,12 +54,12 @@ Identify the subtasks of *module title*
 
    - Describe Cosmos DB
           - Provide a very brief overview of Cosmos DB
-          - Explain the hierarchy: Cosmos DB account, database, collection
+          - Explain the hierarchy: Cosmos DB account, database, container
           - Briefly explain the concept of documents and partitions.
           - Summarize how throughput capacity works.
    - Create a database and documents with Visual Studio Code
           - Describe how to install the Azure Cosmos DB extension for Visual Studio Code.
-          - Describe how to use the Azure Cosmos DB extension to create a Cosmos DB account, create a database, and create a collection.
+          - Describe how to use the Azure Cosmos DB extension to create a Cosmos DB account, create a database, and create a container.
           - Describe how to use the Azure Cosmos DB extension to add, query, modify, and delete a document.
 
 3. **Exercise - Create a Cosmos DB instance using Visual Studio Code**
@@ -69,7 +69,7 @@ Identify the subtasks of *module title*
     1. Install the Azure Cosmos DB extension for Visual Studio Code.
     2. Create a Cosmos DB account (SQL API).
     3. Create a database in the account, for holding students' grade information.
-    4. Create the `StudentCourseGrades` collection. This collection will hold `Course` and `Student` documents. Course grades will be held as an array of subdocuments with each student. The data will be partitioned by academic year.
+    4. Create the `StudentCourseGrades` container. This container will hold `Course` and `Student` documents. Course grades will be held as an array of subdocuments with each student. The data will be partitioned by academic year.
     5. Insert a `Course` document.
     6. Insert two `Student` documents, each with a `Grade` subdocument that references a `Course` document.
     7. View the documents in Visual Studio Code.
@@ -106,10 +106,10 @@ Identify the subtasks of *module title*
     - Summarize the purpose of the `@azure/cosmos` module.
     - Explain how to install the module using npm; `npm install @azure/cosmos`
     - Explain how to connect to a Cosmos DB account from JavaScript. (`CosmosClient` with the endpoint and primary key)
-    - Describe how to create a document and add it to a collection (`await client.database(databaseId).container(containerId).items.upsert(itemBody);`)
-    - Describe how to fetch a single document from a collection by using the document ID.
-    - Describe how to use a query to retrieve documents from a collection (`await client.database(databaseId).container(containerId).items.query(querySpec, {enableCrossPartitionQuery:true}).fetchAll();`)
-    - Describe how to modify a document in a collection (`await client.database(databaseId).container(containerId).item(itemBody.id, ...).replace(itemBody);`)
+    - Describe how to create a document and add it to a container (`await client.database(databaseId).container(containerId).items.upsert(itemBody);`)
+    - Describe how to fetch a single document from a container by using the document ID.
+    - Describe how to use a query to retrieve documents from a container (`await client.database(databaseId).container(containerId).items.query(querySpec, {enableCrossPartitionQuery:true}).fetchAll();`)
+    - Describe how to modify a document in a container (`await client.database(databaseId).container(containerId).item(itemBody.id, ...).replace(itemBody);`)
     - Describe how to delete a document (`await client.database(databaseId).container(containerId).item(itemBody.id, ...).delete(itemBody);`)
     - Describe how to handle exceptions raised by Cosmos DB.
 
@@ -121,7 +121,7 @@ Identify the subtasks of *module title*
     2. Create a separate JavaScript code file (`config.js`) that encapsulates the configuration information for connecting to Cosmos DB as an object.
     3. In the `studentgrades.js` file, add code to perform the following tasks:
              1. Use the configuration object in `config.js` to connect to the Cosmos DB account and create a `CosmosClient` object.
-             2. Create an async function that takes an object (a `course` or `student`), and a partition key, and inserts the document into the `StudentCourseGrades` collection in Cosmos DB.
+             2. Create an async function that takes an object (a `course` or `student`), and a partition key, and inserts the document into the `StudentCourseGrades` container in Cosmos DB.
              3. Create an async function that fetches a student document from the database by using the student ID.
              4. Create an async function that retrieves the student names and grades for a specified course.
              5. Create an async function that can be used to change the grade of course for a `Student` document in the database.
@@ -136,7 +136,7 @@ Identify the subtasks of *module title*
     - Describe the considerations for implementing a stored procedure:
             - You write the code for a stored procedure using JavaScript.
             - All operations in a stored procedure are synchronous.
-            - A stored procedure operates within the context of a single partition in a collection; it cannot access data in other partitions.
+            - A stored procedure operates within the context of a single partition in a container; it cannot access data in other partitions.
             - A stored procedure is transactional; if an operation in a stored procedure fails (or the stored procedure times out), all the work performed by the stored procedure is undone.
             - A stored procedure can throw an exception back to the caller if it detects an error condition. This will also cause the transaction to be undone.
             - A stored procedure runs in an environment that restricts the amount of time and resources available (a *bounded execution* environment), to prevent a rogue stored procedure from adversely affected other users.
@@ -153,7 +153,7 @@ Identify the subtasks of *module title*
 
     List the steps that apply the learning content from previous unit:
 
-    1. Using the Azure portal, create a new stored procedure named `deleteRecords` for the collection. The stored procedure should run in the partition containing the data for the academic year for which records should be removed. In the stored procedure, perform the following tasks:
+    1. Using the Azure portal, create a new stored procedure named `deleteRecords` for the container. The stored procedure should run in the partition containing the data for the academic year for which records should be removed. In the stored procedure, perform the following tasks:
              1. Run a query that finds all documents in the partition.
              2. Iterate through the documents returned by the query and delete each one. As each document is deleted, check whether the permitted execution time has been exhausted. If so, return the value `false` (to indicate that deletion is not yet finished), and the number of records deleted so far, in the response message.
              3. If the permitted execution time has not been exhausted when all records have been deleted, return `true`, together with the number of documents deleted, in the response message.
