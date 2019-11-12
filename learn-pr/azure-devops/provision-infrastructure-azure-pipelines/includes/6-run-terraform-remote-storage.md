@@ -424,10 +424,7 @@ During the process, you collect information about your service principal that yo
 1. Print out the details for your service principal one more time. Note their values somewhere safe, as you'll need them again later.
 
     ```bash
-    echo $ARM_CLIENT_ID
-    echo $ARM_CLIENT_SECRET
-    echo $ARM_TENANT_ID
-    echo $ARM_SUBSCRIPTION_ID
+    env | grep ARM
     ```
 
     Also note the name of your storage account. Here's a refresher:
