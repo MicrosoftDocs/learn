@@ -24,6 +24,7 @@ roles:
 - solution-architect
 - developer
 products: 
+- azure
 units: 
 - learn.azure.network-fundamentals.introduction
 - learn.azure.network-fundamentals.intro-network-standards-protocols
