@@ -8,7 +8,7 @@ There are several error conditions that need to be checked for when a device rec
 
 ## Invoke a direct method
 
-Direct methods require that the back-end app prepares the parameters, then makes a call specifying a single device to invoke the method. The back-end app will then wait for, and report, a response.
+Direct methods require that the back-end app prepares the parameters, then makes a call specifying a single device to invoke the method. The back-end app will then wait for, and report, a response. Included in the call from the back-end app is a timeout, in seconds. The expectation is the back-end app will have to run a different code path, if the device fails to respond, or responds with an error.
 
 The device app contains the functional code for the direct method. The function name is registered with the IoT client for the device. This process ensures the client knows what function to run when the call comes from the IoT Hub (there could be many direct methods).
 

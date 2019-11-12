@@ -108,8 +108,8 @@ In this unit, we'll add code to the device app for a direct method to turn on th
 
 ::: zone-end
 
-> [!NOTE]
-> The fan has three states: _on_, _off_, and _failed_. The method above sets the fan to either of the first two of these states. If the payload text doesn't match one of these two, or the fan is in a failed state, an error is returned.
+   > [!NOTE]
+   > The fan has three states: _on_, _off_, and _failed_. The method above sets the fan to either of the first two of these states. If the payload text doesn't match one of these two, or the fan is in a failed state, an error is returned.
 
 You've completed what is needed at the device end of things. Next, we need to add code to the back-end service.
 
