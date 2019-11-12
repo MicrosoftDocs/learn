@@ -7,74 +7,74 @@ We'll start this time with the back-end service app.
 ::: zone pivot="node"
 
 1. Open the **app.js** file for the back-end app.
-2. Add the following code to the end of the file. This code sets the desired temperature of the device to 50 degrees F, humidity to 85 percent, and sets two **tags** (information only available to the IoT Hub). To verify the tags, a call is made to query the device twins based on a SQL search.
+1. Add the following code to the end of the file. This code sets the desired temperature of the device to 50 degrees F, humidity to 85 percent, and sets two **tags** (information only available to the IoT Hub). To verify the tags, a call is made to query the device twins based on a SQL search.
 
-```javascript
-// Locate the device twin via the Registry, then update some tags and properties.
-const registry = Registry.fromConnectionString(connectionString);
+    ```javascript
+    // Locate the device twin via the Registry, then update some tags and properties.
+    const registry = Registry.fromConnectionString(connectionString);
 
-registry.getTwin(deviceId, function (err, twin) {
-    if (err) {
-        redMessage(err.constructor.name + ': ' + err.message);
-    } else {
-        const desiredTemp = 50;
-        const desiredHumidity = 85;
-        const setDesiredValues = {
-
-            // Tags aren't shared with the device, they are known only to IoT Hub.
-            tags: {
-                customerID: 'Customer1',
-                cellar: 'Cellar1'
-            },
-
-            // Properties are shared with the device.
-            properties: {
-                desired: {
-                    patchId: "Set values",
-                    temperature: desiredTemp.toString(),
-                    humidity: desiredHumidity.toString()
-                }
-            }
-        };
-
-        // Update the device twin.
-        twin.update(setDesiredValues, function (err) {
-            if (err) {
-                redMessage('Could not update twin: ' + err.constructor.name + ': ' + err.message);
-            } else {
-                greenMessage(twin.deviceId + ' twin updated successfully');
-
-                // Show how a query to the device twins is handled.
-                queryTwins();
-            }
-        });
-    }
-});
-
-function queryTwins() {
-
-    // Send a SQL query, to determine all the devices in "Cellar1".
-    const query = registry.createQuery("SELECT * FROM devices WHERE tags.cellar = 'Cellar1'", 100);
-    query.nextAsTwin(function (err, results) {
+    registry.getTwin(deviceId, function (err, twin) {
         if (err) {
-            redMessage('Failed to fetch the results: ' + err.message);
+            redMessage(err.constructor.name + ': ' + err.message);
         } else {
-            greenMessage("Devices in Cellar1: " + results.map(function (twin) { return twin.deviceId }).join(','));
+            const desiredTemp = 50;
+            const desiredHumidity = 85;
+            const setDesiredValues = {
+
+                // Tags aren't shared with the device, they are known only to IoT Hub.
+                tags: {
+                    customerID: 'Customer1',
+                    cellar: 'Cellar1'
+                },
+
+                // Properties are shared with the device.
+                properties: {
+                    desired: {
+                        patchId: "Set values",
+                        temperature: desiredTemp.toString(),
+                        humidity: desiredHumidity.toString()
+                    }
+                }
+            };
+
+            // Update the device twin.
+            twin.update(setDesiredValues, function (err) {
+                if (err) {
+                    redMessage('Could not update twin: ' + err.constructor.name + ': ' + err.message);
+                } else {
+                    greenMessage(twin.deviceId + ' twin updated successfully');
+
+                    // Show how a query to the device twins is handled.
+                    queryTwins();
+                }
+            });
         }
     });
-};
-```
 
-3. Save the **app.js** file.
+    function queryTwins() {
+
+        // Send a SQL query, to determine all the devices in "Cellar1".
+        const query = registry.createQuery("SELECT * FROM devices WHERE tags.cellar = 'Cellar1'", 100);
+        query.nextAsTwin(function (err, results) {
+            if (err) {
+                redMessage('Failed to fetch the results: ' + err.message);
+            } else {
+                greenMessage("Devices in Cellar1: " + results.map(function (twin) { return twin.deviceId }).join(','));
+            }
+        });
+    };
+    ```
+
+1. Save the **app.js** file.
 
 ::: zone-end
 ::: zone pivot="csharp"
 
 1. Open the **Program.cs** file, for the back-end app.
 
-2. Add the following code, perhaps to the end of the class.
+1. Add the following code, perhaps to the end of the class.
 
-```cs
+    ```cs
         // Device twins section.
         private static RegistryManager registryManager;
 
@@ -104,11 +104,11 @@ function queryTwins() {
               string.Join(", ", twinsInCellar1.Select(t => t.DeviceId)));
 
         }
-```
+    ```
 
-3. Now, add the following lines to the `Main` method, before the lines creating a service client.
+1. Now, add the following lines to the `Main` method, before the lines creating a service client.
 
-```cs
+    ```cs
             // A registry manager is used to access the digital twins.
             registryManager = RegistryManager.CreateFromConnectionString(s_serviceConnectionString);
             SetTwinProperties().Wait();
@@ -116,9 +116,9 @@ function queryTwins() {
             // Create a ServiceClient to communicate with service-facing endpoint on your hub.
             s_serviceClient = ServiceClient.CreateFromConnectionString(s_serviceConnectionString);
             InvokeMethod().GetAwaiter().GetResult();
-```
+    ```
 
-4. Save the **Program.cs** file.
+1. Save the **Program.cs** file.
 
 ::: zone-end
 
@@ -132,58 +132,58 @@ Now we need to add code to the device app.
 
 1. Add the following code to the end of the file.
 
-```javascript
-let deviceTwin;                                         // Global reference to device twin.
+    ```javascript
+    let deviceTwin;                                         // Global reference to device twin.
 
-// Create a patch to send to the hub.
-const reportedPropertiesPatch = {
-    firmwareVersion: '1.2.3',
-    lastPatchReceivedId: '',
-    fanState: '',
-    currentTemperature: '',
-    currentHumidity: ''
-};
-
-// Send the reported properties patch to the hub.
-function sendReportedProperties() {
-
-    // Prepare the patch.
-    reportedPropertiesPatch.fanState = fanState;
-    reportedPropertiesPatch.currentTemperature = currentTemperature.toFixed(2);
-    reportedPropertiesPatch.currentHumidity = currentHumidity.toFixed(2);
-
-    deviceTwin.properties.reported.update(reportedPropertiesPatch, function (err) {
-        if (err) {
-            redMessage(err.message);
-        } else {
-            greenMessage('\nTwin state reported');
-            greenMessage(JSON.stringify(reportedPropertiesPatch, null, 2));
-        }
-    });
-}
-
-// Handle changes to the device twin properties.
-client.getTwin(function (err, twin) {
-    if (err) {
-        redMessage('could not get twin');
-    } else {
-        deviceTwin = twin;
-        deviceTwin.on('properties.desired', function (v) {
-            desiredTemperature = parseFloat(v.temperature);
-            desiredHumidity = parseFloat(v.humidity);
-            greenMessage('Setting desired temperature to ' + v.temperature);
-            greenMessage('Setting desired humidity to ' + v.humidity);
-
-            // Update the reported properties, after processing the desired properties.
-            sendReportedProperties();
-        });
+    // Create a patch to send to the hub.
+    const reportedPropertiesPatch = {
+        firmwareVersion: '1.2.3',
+        lastPatchReceivedId: '',
+        fanState: '',
+        currentTemperature: '',
+        currentHumidity: ''
     };
-});
-```
 
-3. Change the `onSetFanState` function, so the success section of the function reports the updated state of the fan.
+    // Send the reported properties patch to the hub.
+    function sendReportedProperties() {
 
-```javascript
+        // Prepare the patch.
+        reportedPropertiesPatch.fanState = fanState;
+        reportedPropertiesPatch.currentTemperature = currentTemperature.toFixed(2);
+        reportedPropertiesPatch.currentHumidity = currentHumidity.toFixed(2);
+
+        deviceTwin.properties.reported.update(reportedPropertiesPatch, function (err) {
+            if (err) {
+                redMessage(err.message);
+            } else {
+                greenMessage('\nTwin state reported');
+                greenMessage(JSON.stringify(reportedPropertiesPatch, null, 2));
+            }
+        });
+    }
+
+    // Handle changes to the device twin properties.
+    client.getTwin(function (err, twin) {
+        if (err) {
+            redMessage('could not get twin');
+        } else {
+            deviceTwin = twin;
+            deviceTwin.on('properties.desired', function (v) {
+                desiredTemperature = parseFloat(v.temperature);
+                desiredHumidity = parseFloat(v.humidity);
+                greenMessage('Setting desired temperature to ' + v.temperature);
+                greenMessage('Setting desired humidity to ' + v.humidity);
+
+                // Update the reported properties, after processing the desired properties.
+                sendReportedProperties();
+            });
+        };
+    });
+    ```
+
+1. Change the `onSetFanState` function, so the success section of the function reports the updated state of the fan.
+
+    ```javascript
             fanState = request.payload;
 
             // Report success back to your hub.
@@ -191,18 +191,18 @@ client.getTwin(function (err, twin) {
 
             // Confirm changes to reported properties.
             sendReportedProperties();
-```
+    ```
 
-4. Save the **app.js** file.
+1. Save the **app.js** file.
 
 ::: zone-end
 ::: zone pivot="csharp"
 
 1. Open the **Program.cs** file for the device app.
 
-2. Add the following task to the class.
+1. Add the following task to the class.
 
-```cs
+    ```cs
         private static async Task OnDesiredPropertyChanged(TwinCollection desiredProperties, object userContext)
         {
             try
@@ -226,20 +226,20 @@ client.getTwin(function (err, twin) {
                 redMessage("Failed to update device twin");
             }
         }
-```
+    ```
 
-3. Update the `Main` method. Add the following lines after the statements creating a handler for the device method.
+1. Update the `Main` method. Add the following lines after the statements creating a handler for the device method.
 
-```cs
+    ```cs
             // Get the device twin to report the initial desired properties.
             Twin deviceTwin = s_deviceClient.GetTwinAsync().GetAwaiter().GetResult();
             greenMessage("Initial twin desired properties: " + deviceTwin.Properties.Desired.ToJson());
 
             // Set the device twin update callback.
             s_deviceClient.SetDesiredPropertyUpdateCallbackAsync(OnDesiredPropertyChanged, null).Wait();
-```
+    ```
 
-4. Save the **Program.cs** file.
+1. Save the **Program.cs** file.
 
 ::: zone-end
 

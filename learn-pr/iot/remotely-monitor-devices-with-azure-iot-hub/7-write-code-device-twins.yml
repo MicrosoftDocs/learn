@@ -11,4 +11,4 @@ metadata:
 title:  Write code for device twins
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-write-code-for-device-twins.md)]
+  [!include[](includes/7-write-code-device-twins.md)]

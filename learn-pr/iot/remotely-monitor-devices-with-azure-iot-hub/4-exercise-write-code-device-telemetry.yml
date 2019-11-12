@@ -12,4 +12,4 @@ metadata:
 title: Exercise - Write code to send and receive telemetry
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-exercise-write-code-for-device-telemetry.md)]
+  [!include[](includes/4-exercise-write-code-device-telemetry.md)]

@@ -11,4 +11,4 @@ metadata:
 title: Write code to send and receive telemetry
 durationInMinutes: 2
 content: |
-  [!include[](includes/3-write-code-for-device-telemetry.md)]
+  [!include[](includes/3-write-code-device-telemetry.md)]

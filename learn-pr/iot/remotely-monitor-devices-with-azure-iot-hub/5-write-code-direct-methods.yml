@@ -11,4 +11,4 @@ metadata:
 title: Write code to invoke a direct method
 durationInMinutes: 2
 content: |
-  [!include[](includes/5-write-code-for-direct-methods.md)]
+  [!include[](includes/5-write-code-direct-methods.md)]

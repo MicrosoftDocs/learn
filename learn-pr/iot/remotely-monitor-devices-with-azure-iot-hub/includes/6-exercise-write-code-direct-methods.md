@@ -6,58 +6,59 @@ In this unit, we'll add code to the device app for a direct method to turn on th
 
 1. Open the **app.js** file for the device app.
 
-2. Append the following code to the end of the file. This code is the body of the direct method itself, and a single statement to record the direct method with the IoT Hub client.
+1. Append the following code to the end of the file. This code is the body of the direct method itself, and a single statement to record the direct method with the IoT Hub client.
 
-```javascript
-// Function to handle the SetFanState direct method call from IoT hub.
-function onSetFanState(request, response) {
+    ```javascript
+    // Function to handle the SetFanState direct method call from IoT hub.
+    function onSetFanState(request, response) {
 
-    // Function to send a direct method response to your IoT hub.
-    function directMethodResponse(err) {
-        if (err) {
-            redMessage('An error ocurred when sending a method response:\n' + err.toString());
+        // Function to send a direct method response to your IoT hub.
+        function directMethodResponse(err) {
+            if (err) {
+                redMessage('An error ocurred when sending a method response:\n' + err.toString());
+            } else {
+                greenMessage('Response to method \'' + request.methodName + '\' sent successfully.');
+            }
+        }
+
+        greenMessage('Direct method payload received:' + request.payload);
+
+        // Check that a valid value was passed as a parameter.
+        if (fanState == stateEnum.failed) {
+            redMessage('Fan has failed and cannot have its state changed');
+
+            // Report fan failure back to your hub.
+            response.send(400, 'Fan has failed and cannot be set to: ' + request.payload, directMethodResponse);
         } else {
-            greenMessage('Response to method \'' + request.methodName + '\' sent successfully.');
+            if (request.payload != "on" && request.payload != "off") {
+                redMessage('Invalid state response received in payload');
+
+                // Report payload failure back to your hub.
+                response.send(400, 'Invalid direct method parameter: ' + request.payload, directMethodResponse);
+
+            } else {
+                fanState = request.payload;
+
+                // Report success back to your hub.
+                response.send(200, 'Fan state set: ' + request.payload, directMethodResponse);
+            }
         }
     }
 
-    greenMessage('Direct method payload received:' + request.payload);
+    // Set up the handler for the SetFanState direct method call.
+    client.onDeviceMethod('SetFanState', onSetFanState);
+    ```
 
-    // Check that a valid value was passed as a parameter.
-    if (fanState == stateEnum.failed) {
-        redMessage('Fan has failed and cannot have its state changed');
-
-        // Report fan failure back to your hub.
-        response.send(400, 'Fan has failed and cannot be set to: ' + request.payload, directMethodResponse);
-    } else {
-        if (request.payload != "on" && request.payload != "off") {
-            redMessage('Invalid state response received in payload');
-
-            // Report payload failure back to your hub.
-            response.send(400, 'Invalid direct method parameter: ' + request.payload, directMethodResponse);
-
-        } else {
-            fanState = request.payload;
-
-            // Report success back to your hub.
-            response.send(200, 'Fan state set: ' + request.payload, directMethodResponse);
-        }
-    }
-}
-
-// Set up the handler for the SetFanState direct method call.
-client.onDeviceMethod('SetFanState', onSetFanState);
-```
-3. Save the **app.js** file.
+1. Save the **app.js** file.
 
 ::: zone-end
 ::: zone pivot="csharp"
 
 1. Open the **Program.cs** file for the device app.
 
-2. Add the following method, perhaps to the end of the class.
+1. Add the following method, perhaps to the end of the class.
 
-```cs
+    ```cs
         // Handle the direct method call
         private static Task<MethodResponse> SetFanState(MethodRequest methodRequest, object userContext)
         {
@@ -94,16 +95,16 @@ client.onDeviceMethod('SetFanState', onSetFanState);
                 }
             }
         }
-```
+    ```
 
-3. Add the following lines of code to the `Main` method, after creating the device client.
+1. Add the following lines of code to the `Main` method, after creating the device client.
 
-```cs
+    ```cs
             // Create a handler for the direct method call
             s_deviceClient.SetMethodHandlerAsync("SetFanState", SetFanState, null).Wait();
-```
+    ```
 
-4. Save the **Program.cs** file.
+1. Save the **Program.cs** file.
 
 ::: zone-end
 
@@ -120,65 +121,65 @@ When setting up a call to invoke a direct method, it's best to divide the code i
 
 1. Open up the back-end service **app.js** file and add the following code to the end of the file.
 
-```javascript
-const methodParams = {
-    methodName: 'SetFanState',
-    payload: 'on',
-    responseTimeoutInSeconds: 30
-};
-```
+    ```javascript
+    const methodParams = {
+        methodName: 'SetFanState',
+        payload: 'on',
+        responseTimeoutInSeconds: 30
+    };
+    ```
 
-> [!NOTE]
-> The `methodName` parameter is an exact match of the first parameter in the `client.onDeviceMethod('SetFanState', onSetFanState);` call you entered into the device app.
+    > [!NOTE]
+    > The `methodName` parameter is an exact match of the first parameter in the `client.onDeviceMethod('SetFanState', onSetFanState);` call you entered into the device app.
 
-2. Now, enter the code to send the message to invoke the method.
+1. Now, enter the code to send the message to invoke the method.
 
-```javascript
-function sendDirectMethod() {
+    ```javascript
+    function sendDirectMethod() {
 
-    // Call the direct method on your device using the defined parameters.
-    client.invokeDeviceMethod(deviceId, methodParams, function (err, result) {
-        if (err) {
-            redMessage('Failed to invoke method \'' + methodParams.methodName + '\': ' + err.message);
-        } else {
-            greenMessage('Response from ' + methodParams.methodName + ' on ' + deviceId + ':');
-            greenMessage(JSON.stringify(result, null, 2));
-        }
-    });
-}
-```
+        // Call the direct method on your device using the defined parameters.
+        client.invokeDeviceMethod(deviceId, methodParams, function (err, result) {
+            if (err) {
+                redMessage('Failed to invoke method \'' + methodParams.methodName + '\': ' + err.message);
+            } else {
+                greenMessage('Response from ' + methodParams.methodName + ' on ' + deviceId + ':');
+                greenMessage(JSON.stringify(result, null, 2));
+            }
+        });
+    }
+    ```
 
-> [!NOTE]
-> The first parameter of the `client.invokeDeviceMethod` call identifies the device the call is to go to. With multiple devices, this could be changed to a parameter of the `sendDirectMethod` function.
+    > [!NOTE]
+    > The first parameter of the `client.invokeDeviceMethod` call identifies the device the call is to go to. With multiple devices, this could be changed to a parameter of the `sendDirectMethod` function.
 
-3. Finally, add a call to the `sendDirectMethod` function into the `createFromIotHubConnectionString` function, after the `eventHubClient = client;` line of code.
+1. Finally, add a call to the `sendDirectMethod` function into the `createFromIotHubConnectionString` function, after the `eventHubClient = client;` line of code.
 
-```javascript
-    // Save the client as a global variable.
-    eventHubClient = client;
+    ```javascript
+        // Save the client as a global variable.
+        eventHubClient = client;
 
-    // Send a direct method to turn the fan on.
-    sendDirectMethod();
+        // Send a direct method to turn the fan on.
+        sendDirectMethod();
 
-    return eventHubClient.getPartitionIds();
-```
+        return eventHubClient.getPartitionIds();
+    ```
 
-4. Save the **app.js** file.
+1. Save the **app.js** file.
 
 ::: zone-end
 ::: zone pivot="csharp"
 
 1. Open the **Program.cs** file for the back-end app.
 
-2. Add the following line to the global variables.
+1. Add the following line to the global variables.
 
-```cs
-private static ServiceClient s_serviceClient;
-```
+    ```cs
+    private static ServiceClient s_serviceClient;
+    ```
 
-3. Add the following task, perhaps after the `Main` method.
+1. Add the following task, perhaps after the `Main` method.
 
-```cs
+    ```cs
         // Handle invoking a direct method.
         private static async Task InvokeMethod()
         {
@@ -206,17 +207,17 @@ private static ServiceClient s_serviceClient;
                 redMessage("Direct method failed: timed-out");
             }
         }
-```
+    ```
 
-4. Add the following code to the `Main` method, before creating the receivers to listen for messages.
+1. Add the following code to the `Main` method, before creating the receivers to listen for messages.
 
-```cs
+    ```cs
             // Create a ServiceClient to communicate with service-facing endpoint on your hub.
             s_serviceClient = ServiceClient.CreateFromConnectionString(s_serviceConnectionString);
             InvokeMethod().GetAwaiter().GetResult();  
-```
+    ```
 
-5. Save the **Program.cs** file.
+1. Save the **Program.cs** file.
 
 ::: zone-end
 

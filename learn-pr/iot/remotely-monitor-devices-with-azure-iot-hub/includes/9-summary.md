@@ -21,7 +21,7 @@ Take your interest further with:
 
 - [Azure IoT Hub Documentation](https://docs.microsoft.com/azure/iot-hub//)
 - [Azure Certified for IoT device catalog](https://catalog.azureiotsolutions.com/)
-- [Develop IoT Edge modules for Windows devices](https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-develop-for-windows#set-up-visual-studio-and-tools)
+- [Develop IoT Edge modules for Windows devices](https://docs.microsoft.com/azure/iot-edge/tutorial-develop-for-windows#set-up-visual-studio-and-tools)
 
 And look out for additional Learn modules on IoT Hub.
 
