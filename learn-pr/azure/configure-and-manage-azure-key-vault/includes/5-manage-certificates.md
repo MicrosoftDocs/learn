@@ -4,7 +4,7 @@ Securely managing certificates is a challenge for every organization. You must e
 
 Azure Key Vault manages X.509 based certificates that can come from several sources.
 
-First, you can create self-signed certificates directly in the Azure portal. This process creates a public/private key pair and signs the certificate with it's own key. These certificates can be used for testing and development.
+First, you can create self-signed certificates directly in the Azure portal. This process creates a public/private key pair and signs the certificate with its own key. These certificates can be used for testing and development.
 
 Second, you can create an X.509 certificate signing request (CSR). This creates a public/private key pair in Key Vault along with a CSR you can pass over to your certification authority (CA). The signed X.509 certificate can then be merged with the held key pair to finalize the certificate in Key Vault as shown in the following diagram.
 
@@ -69,6 +69,6 @@ Once you have a public/private key pair certificate in your Azure Key Vault, you
 1. You can then select the vault, which must be in the same subscription, and the secret containing the certificate.
     - The certificate must be an X.509 cert with a content type of `application/x-pkcs12` and cannot have a password. 
 
-Finally, once the certificate is in place, you'll want to setup a _custom domain_. There's already a built-in certificate for `*.azurewebsites.net`. You can then associate your custom domain with the certificate you've assigned so the server uses your certificate to secure the connection to the browser.
+Finally, once the certificate is in place, you'll want to set up a _custom domain_. There's already a built-in certificate for `*.azurewebsites.net`. You can then associate your custom domain with the certificate you've assigned so the server uses your certificate to secure the connection to the browser.
 
 >
