@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-the-right-disk-storage-for-vm-workload.2-managed-unmanaged-local-disk-storage
+title: Managed, unmanaged, and local disk storage
+metadata:
+  title: Managed, unmanaged, and local disk storage
+  description: Managed, unmanaged, and local disk storage
+  ms.date: 11/06/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-managed-unmanaged-local-disk-storage.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of these disk roles should you use to store a set of help videos that explain how to use the accounting application?"
+    choices:
+    - content: "OS Disk"
+      isCorrect: false
+      explanation: "OS disks contain operating system files. Don't use them to store application data."
+    - content: "Data Disk"
+      isCorrect: true
+      explanation: "Place all your application data, including databases and static content files on data disks."
+    - content: "Temporary Disk"
+      isCorrect: false
+      explanation: "The content of temporary disks may be destroyed during maintenance. Don't use them to store anything other than temporary content such as swap files."
+  - content: "You have a business-critical database and you want to store it on a virtual disk with 99.999% availability. What kind of disk should you use?"
+    choices:
+    - content: "An ephemeral disk"
+      isCorrect: false
+      explanation: "Ephemeral disks don't support 99.999% availability because data is stored in local virtual machine storage and not replicated."
+    - content: "An unmanaged disk"
+      isCorrect: false
+      explanation: "Unmanaged disks don't guarantee 99.999% availability, although it may be possible to achieve this availability, if you choose a high-available storage account."
+    - content: "A managed disk"
+      isCorrect: true
+      explanation: "Managed disks guarantee 99.999% availability because data is automatically replicated."
