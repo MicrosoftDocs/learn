@@ -42,7 +42,7 @@ When you have more time, feel free to go through each section and explore the va
 
 ## How to change the App Service configuration
 
-The App Services has many configurable options available and group in sections of functionality.
+The App Services has many configurable options available and groups these options in sections of functionality.
 
 The first section displayed is a group of common options you'd access to get a view of the health of your application. However, each following section provides additional functionality and information.
 
