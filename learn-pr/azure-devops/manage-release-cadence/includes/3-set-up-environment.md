@@ -51,6 +51,8 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/learn/modules/manage-release-cadence/5-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
 
+[!include[](../../shared/includes/project-visibility.md)]
+
 ## Move the work item to Doing
 
 In this part, you assign a work item to yourself on Azure Boards that relates to this module. You also move the work item to the **Doing** state. In practice, you and your team would assign work items at the start of each sprint, or work iteration.

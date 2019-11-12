@@ -35,7 +35,9 @@ From the Azure DevOps Demo Generator site, take these steps to run the template.
 
     > [!IMPORTANT]
     > The [Clean up your Azure DevOps environment](/learn/modules/scan-open-source/5-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
-    
+
+[!include[](../../shared/includes/project-visibility.md)]
+
 ## Move the work item to Doing
 
 In this part, you'll assign a work item to yourself that relates to this module on Azure Boards. You'll also move the work item to the **Doing** state. In practice, you and your team would assign work items at the start of each Sprint, or work iteration.
