@@ -46,14 +46,14 @@ For C# versions of the code, you also need the _Event Hubs-compatible endpoint_,
 
 1. Open an [Azure Cloud Shell](https://shell.azure.com/).
 
-1. Copy the following three commands to your text file, and replace {YourIoTHubName} with the name of your hub.
+1. Copy the following three commands to your text file, and replace &lt;YourIoTHubName&gt; with the name of your hub.
 
     ``` Azure CLI
-    az iot hub show --query properties.eventHubEndpoints.events.endpoint --name {YourIoTHubName}
+    az iot hub show --query properties.eventHubEndpoints.events.endpoint --name <YourIoTHubName>
 
-    az iot hub show --query properties.eventHubEndpoints.events.path --name {YourIoTHubName}
+    az iot hub show --query properties.eventHubEndpoints.events.path --name <YourIoTHubName>
 
-    az iot hub policy show --name service --query primaryKey --hub-name {YourIoTHubName}
+    az iot hub policy show --name service --query primaryKey --hub-name <YourIoTHubName>
     ```
 
 1. One at a time, copy the commands from the text file into the Azure Cloud Shell, and run them. Record the results back into your text file.
