@@ -66,7 +66,7 @@ quiz:
 
   - content: "What would you use SNMP for?"
     choices:
-    - content: "For collecting and organizing information about email servers on your IP network"
+    - content: "For collecting and organizing information about email servers on your IP network."
       isCorrect: false
       explanation: "SNMP is a protocol for gathering and organizing information on your IP network."
     - content: "For collecting and organizing information about user access and behavior on your IP network."
