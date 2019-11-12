@@ -48,7 +48,7 @@ Here you modify your pipeline configuration by adding a job that runs Terraform 
 1. In Visual Studio Code, modify *azure-pipelines.yml* by adding a job during the _Dev_ stage.
     [!Tip] You can replace the entire file or just update the part that's highlighted.
 
-    [!code-yml[](code/8-azure-pipelines.yml?highlight=72-107,4109-111)]
+    [!code-yml[](code/8-azure-pipelines.yml?highlight=72-107,109-111)]
 
     This configuration resembles the one you built in the [Deploy applications with Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops?azure-portal=true) learning path. Here's a brief summary of what's new:
 
