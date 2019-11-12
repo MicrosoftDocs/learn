@@ -45,56 +45,6 @@ Identify the subtasks of *Networking Fundamentals - Topology*
 
    Moving to the cloud and taking on a role as an Azure Developer, Solution Architect or Administrator requires knowing the foundations for how networking works, and how to use different devices to build networks. While networks are made up of various tangible element like network devices, switches, and routers. There are other aspects like network communication protocols, and network security which will protect your organizations assets and resources. Understanding the basics of networks hardware is an important step in understanding Azure concepts.
 
-1. **An introduction to IP/TCP Basics**
-
-    - What is TCP
-         - One of the main protocols in the Internet protocol suite
-    - What is IP
-         -  [IP](https://searchunifiedcommunications.techtarget.com/definition/Internet-Protocol) defines how to [address](https://searchnetworking.techtarget.com/definition/address) and [route](https://searchnetworking.techtarget.com/definition/routing-table) each packet to make sure it reaches the right destination.
-    - What is TCP/IP
-         - TCP/IP, or the Transmission Control Protocol/Internet Protocol, is a suite of communication [protocols](https://searchnetworking.techtarget.com/definition/protocol) used to interconnect [network](https://searchnetworking.techtarget.com/definition/network) devices on the internet.
-         - TCP/IP model layers
-    - Internet Protocol Address standards
-            - IPv4
-                 - **Internet Protocol version 4** (**IPv4**) is the fourth version of the [Internet Protocol](https://en.wikipedia.org/wiki/Internet_Protocol) (IP). It is one of the core protocols of standards-based internetworking methods in the [Internet](https://en.wikipedia.org/wiki/Internet) and other [packet-switched](https://en.wikipedia.org/wiki/Packet-switched) networks.
-                 - Special Use addresses
-            - IPv6
-                 - **Internet Protocol version 6** (**IPv6**) is the most recent version of the [Internet Protocol](https://en.wikipedia.org/wiki/Internet_Protocol) (IP), the [communications protocol](https://en.wikipedia.org/wiki/Communication_protocol) that provides an identification and location system for computers on networks and routes traffic across the [Internet](https://en.wikipedia.org/wiki/Internet).
-                 - Address Space Exhaustion
-                 - IPv6 Addressing
-                      - [IPv6 addresses](https://en.wikipedia.org/wiki/IPv6_address) have 128 bits. The design of the IPv6 address space implements a different design philosophy than in IPv4, in which subnetting was used to improve the efficiency of utilization of the small address space. 
-       - Subnetting
-             - A **subnetwork** or **subnet** is a logical subdivision of an [IP network](https://en.wikipedia.org/wiki/IP_network).[[1\]](https://en.wikipedia.org/wiki/Subnetwork#cite_note-rfc950-1):1.16 The practice of dividing a network into two or more networks is called **subnetting**.
-       - Private IP Addressing
-             - Of the approximately four billion addresses defined in IPv4, about 18 million addresses in three ranges are reserved for use in [private networks](https://en.wikipedia.org/wiki/Private_network). 
-       - DNS
-             - The **Domain Name System** (**DNS**) is a [hierarchical](https://en.wikipedia.org/wiki/Hierarchy) and [decentralized](https://en.wikipedia.org/wiki/Decentralised_system) naming system for computers, services, or other resources connected to the [Internet](https://en.wikipedia.org/wiki/Internet) or a private network.
-             - Function of the DNS
-       - Ports
-             - In [computer networking](https://en.wikipedia.org/wiki/Computer_networking), a **port** is a communication endpoint. Physical as well as wireless connections are terminated at ports of hardware devices.
-             - Port Numbers
-                   - A port number is a 16-bit unsigned integer, thus ranging from 0 to 65535.
-                   - Common Port Numbers
-                         - The port numbers are divided into three ranges: the *well-known ports*, the *registered ports*, and the *dynamic* or *private ports*.
-    - How this relates to what will be done in Azure.
-         - Azure Subnets
-         - Azure DNS
-         - Azure VNET
-         - Azure Management Console
-    - Knowledge check
-         - What is the structure of an IPv4 address?
-              - It is comprised of four numbers, in the range 0-255, each separated by a decimal.
-         - What is TCP/IP
-              - It is a protocol used to interconnect network devices on the internet. 
-         - What is a subnet?
-              - It is the logical subdivision of an IP based network.
-         - How would you access a private network from the internet?
-              - It is not possible to access a private network from the internet.  A private network can access another private network using a Network address translation.
-         - What is the DNS?
-              - It is a hierarchical and decentralized naming system for computers, services, or other resources connected to the Internet or a private network.
-         - What port number is associated with the FTP data transfer protocol?
-              - 20
-
 1. **Understand Clients and Servers**
 
    - Client
@@ -116,6 +66,38 @@ Identify the subtasks of *Networking Fundamentals - Topology*
        - A thin client only presents processed data provided by an application server. 
      - What is the purpose of an Application server?
        - Hosts web apps allowing users in the network to run and use them.
+
+1. **Introduction to Hubs, Switches, and Routers**
+      - Hub
+        - A network device that repeats the traffic it receives to all connected devices.
+        - Physical Layer function
+        - Connecting multiple hubs
+        - Types of hub
+          - Fast Ethernet
+          - Dual Speed
+          - Gigabit Ethernet
+      - Switch:
+        -  A network device that sends traffic it receives to a specific connected device, such as a single desktop computer or laptop.
+        -  Role in a network
+        -  Layer-specific functionality
+        -  Types
+           - Unmanaged, Managed, Smart, Enterprise
+      - Router
+        - Router: A network device that can bridge between different networks, determine what traffic can pass between them, and perform other functions on a network, such as assigning IP addresses.
+        - Operation
+        - Uses of a router
+        - Security
+        - Usage
+      - Example as to how this relates to what will be done in Azure.
+        - Azure hub-spoke
+        - ExpressRoute
+      - Knowledge check
+        - What is the primary purpose of a hub?
+          - It allows connection for multiple ethernet devices making them act as a single network segment.
+        - What is the principle difference between hub routing and switch routing
+          - Hub routing sends all packets to all connected devices, whereas switch routing sends packets to specific devices.
+        - What does a router do?
+          - A router is a network device that forwards data packets between computer networks.
 
 1. **Summary**
 

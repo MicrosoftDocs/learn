@@ -10,46 +10,42 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 6
+durationInMinutes: 10
 content: |
   [!include[](includes/3-hub-switches-routers.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of these infrastructure models is not a valid method of joining a device to your Azure AD?"
+  - content: "What is the primary purpose of a hub??"
     choices:
-    - content: "Manual user configuration"
+    - content: "To allow one ethernet network device to send data packets to a specific ethernet device."
       isCorrect: false
-      explanation: "Manual user configuration supports using Azure AD join."
-    - content: "Smartcards and certificate-based authentication"
+      explanation: "Hubs connect ethernet network devices together, packets are sent to all devices connected to the hub."
+    - content: "It allows the connection of multiple ethernet devices making them act as a single network segment."
       isCorrect: true
-      explanation: "Smartcards and certificate based authentication are not valid methods for joining devices to your Azure AD."
-    - content: "Federated environments"
+      explanation: "Hubs offer a the simplest form of network, allowing multiple ethernet based network enabled devices to communicate with each other. "
+    - content: "To allow multiple ethernet network devices access to the internet. "
       isCorrect: false
-      explanation: "Federated environments require the use of an identity provider, but it is a valid method for joining an Azure AD."
-    - content: "A managed environment "
-      isCorrect: false
-      explanation: "A managed environment uses Pass-Through Authentication or Password Hash Sync to provide Seamless Single Sign-on to your devices."
-  - content: "What provisioning options are available through Azure AD join?"
+      explanation: "Hubs offer a the simplest form of network, allowing multiple ethernet based network enabled devices to communicate with each other."
+  - content: "What is the principle difference between hub routing and switch routing"
     choices:
-    - content: "Self-service using OOBE, Windows Autopilot, or Bulk enrollment"
+    - content: "Hub routing sends all packets to all connected devices, whereas switch routing sends packets to specific devices."
       isCorrect: true
-      explanation: "All three options allow devices to be joined to your Azure AD."
-    - content: "Self-service using MDM, Windows Autopilot, or Bulk enrollment"
+      explanation: "Hub routing sends all packets to all connected devices, whereas switch routing sends packets to specific devices."
+    - content: "Hub routing sends packet to specific locations, whereas switch routing is only used to route traffic between switches."
       isCorrect: false
-      explanation: "There is no self-service capability using MDM."
-    - content: "Self-service using Azure AD, Windows Autopilot, or Bulk enrollment"
+      explanation: "Hub routing sends all packets to all connected devices, whereas switch routing sends packets to specific devices."
+    - content: "Hub routing sends sends sends all packet to all connected devices, whereas switch routing is only used to route traffic between switches."
       isCorrect: false
-      explanation: "There is no self-service capability for joining a device to Azure AD."
-  - content: "What happens when a device is not in the MDM scope?"
+      explanation: "Hub routing sends all packets to all connected devices, whereas switch routing sends packets to specific devices."
+  - content: "What does a router do?"
     choices:
-    - content: "The user will be asked to add the device to the MDM before the device can join the Azure AD."
+    - content: "A router is a network device that works out the fastest and most efficient way of sending data across the network."
       isCorrect: false
-      explanation: "The user will never be asked to join the device to an MDM."
-    - content: "The device will not be able to join the Azure AD until the device has been registered with MDM."
+      explanation: "A router is designed to connect different networks together."
+    - content: "A router is a network device that forwards data packets around faults in your network."
       isCorrect: false
-      explanation: "The device will be able to join the Azure AD, but will be un-managed."
-    - content: "The Azure AD Join completes without the MDM enrollment."
+      explanation: "A router is used to link different networks together.  These can be on-premises or in the cloud via the internet."
+    - content: "A router is a network device that forwards data packets between computer networks."
       isCorrect: true
-      explanation: "The device will be be joined, but will be unmanaged by the MDM system."
-  
+      explanation: "A router is an essential part of your network.  A router, as well as connecting different networks, also connects to the internet."

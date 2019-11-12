@@ -1,11 +1,15 @@
+As an Azure Developer, Solution Architect, or Administrator. Before considering a move to the cloud, it's a good idea to have a fundamental understanding of the basics of networks, their components, and building blocks.  Networks are made up of many parts including communication protocols, tangible element like network devices, switches, and routers, and more fluid parts like monitoring and network security. Understanding the basic building blocks of your network including the client-server relationship, and the hardware that makes a network possible, is an important step in understanding Azure concepts.
 
-Moving to the cloud and taking on a role as an Azure Developer, Solution Architect or Administrator requires knowing the foundations for how networking works, and how to use different devices to build networks. While networks are made up of various tangible element like network devices, switches, and routers. There are other aspects like network communication protocols, and network security which will protect your organizations assets and resources. Understanding the basics of networks hardware is an important step in understanding Azure concepts.
+In the second of three network fundamentals modules, you'll be looking at the hardware that makes a network possible. You'll explore various network client options, and the multitude of servers.  Then you'll explore the hardware at the heart of any network, hubs, switches, and routers.
+
+While the contents of this module apply to any network, where possible you'll understand how Azure could replicate or assist.
+
 
 ## Learning objectives
 
 In this module, you'll:
-
-- 
+- Understand the difference between clients and servers.
+- Understand the difference between hubs, switches, and routers.
 
 ## Prerequisites
 

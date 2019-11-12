@@ -1,54 +1,101 @@
+As an Azure Developer, Solution Architect, or Administrator. Before considering a move to the cloud, it's a good idea to have a fundamental understanding of the basics of networks, their components, and building blocks. The first step in understanding the composition of a network is how they're built. Servers are the workhorses of the network. Interlinking is achieved throughout the network through a mix of hubs, switches, and routers. This knowledge applies whether it's your own organization's network or more extensive networks like the world wide web. All networks are built on the same principals.
 
-In this unit, you'll learn 
+In this unit, you'll get a better understanding of the various client options. You'll also explore the various server models and options available.
 
-**An introduction to IP/TCP Basics**
+## Clients
 
-- What is TCP
-  - One of the main protocols in the Internet protocol suite
-- What is IP
-  -  [IP](https://searchunifiedcommunications.techtarget.com/definition/Internet-Protocol) defines how to [address](https://searchnetworking.techtarget.com/definition/address) and [route](https://searchnetworking.techtarget.com/definition/routing-table) each packet to make sure it reaches the right destination.
-- What is TCP/IP
-  - TCP/IP, or the Transmission Control Protocol/Internet Protocol, is a suite of communication [protocols](https://searchnetworking.techtarget.com/definition/protocol) used to interconnect [network](https://searchnetworking.techtarget.com/definition/network) devices on the internet.
-  - TCP/IP model layers
-- Internet Protocol Address standards
-      - IPv4
-           - **Internet Protocol version 4** (**IPv4**) is the fourth version of the [Internet Protocol](https://en.wikipedia.org/wiki/Internet_Protocol) (IP). It is one of the core protocols of standards-based internetworking methods in the [Internet](https://en.wikipedia.org/wiki/Internet) and other [packet-switched](https://en.wikipedia.org/wiki/Packet-switched) networks.
-           - Special Use addresses
-      - IPv6
-           - **Internet Protocol version 6** (**IPv6**) is the most recent version of the [Internet Protocol](https://en.wikipedia.org/wiki/Internet_Protocol) (IP), the [communications protocol](https://en.wikipedia.org/wiki/Communication_protocol) that provides an identification and location system for computers on networks and routes traffic across the [Internet](https://en.wikipedia.org/wiki/Internet).
-           - Address Space Exhaustion
-           - IPv6 Addressing
-                - [IPv6 addresses](https://en.wikipedia.org/wiki/IPv6_address) have 128 bits. The design of the IPv6 address space implements a different design philosophy than in IPv4, in which subnetting was used to improve the efficiency of utilization of the small address space. 
-  - Subnetting
-        - A **subnetwork** or **subnet** is a logical subdivision of an [IP network](https://en.wikipedia.org/wiki/IP_network).[[1\]](https://en.wikipedia.org/wiki/Subnetwork#cite_note-rfc950-1):1.16 The practice of dividing a network into two or more networks is called **subnetting**.
-  - Private IP Addressing
-        - Of the approximately four billion addresses defined in IPv4, about 18 million addresses in three ranges are reserved for use in [private networks](https://en.wikipedia.org/wiki/Private_network). 
-  - DNS
-        - The **Domain Name System** (**DNS**) is a [hierarchical](https://en.wikipedia.org/wiki/Hierarchy) and [decentralized](https://en.wikipedia.org/wiki/Decentralised_system) naming system for computers, services, or other resources connected to the [Internet](https://en.wikipedia.org/wiki/Internet) or a private network.
-        - Function of the DNS
-  - Ports
-        - In [computer networking](https://en.wikipedia.org/wiki/Computer_networking), a **port** is a communication endpoint. Physical as well as wireless connections are terminated at ports of hardware devices.
-        - Port Numbers
-              - A port number is a 16-bit unsigned integer, thus ranging from 0 to 65535.
-              - Common Port Numbers
-                    - The port numbers are divided into three ranges: the *well-known ports*, the *registered ports*, and the *dynamic* or *private ports*.
+### What is a client
 
-- How this relates to what will be done in Azure.
-  - Azure Subnets
-  - Azure DNS
-  - Azure VNET
-  - Azure Management Console
-  
-- Knowledge check
-  - What is the structure of an IPv4 address?
-    - It is comprised of four numbers, in the range 0-255, each separated by a decimal.
-  - What is TCP/IP
-    - It is a protocol used to interconnect network devices on the internet. 
-  - What is a subnet?
-    - It is the logical subdivision of an IP based network.
-  - How would you access a private network from the internet?
-    - It is not possible to access a private network from the internet.  A private network can access another private network using a Network address translation.
-  - What is the DNS?
-    - It is a hierarchical and decentralized naming system for computers, services, or other resources connected to the Internet or a private network.
-  - What port number is associated with the FTP data transfer protocol?
-    - 20
+In the traditional sense, a client was a light-weight computer or device that was unable to run programs on their own. This type of client was typically used to access and interact with a mainframe computer. As technology has advanced, the client has transformed from a simple terminal, to represent any hardware or software system that interacts with services running on or made available on a server. This server is usually located elsewhere and is accessed via a network.
+
+In the latter definition, a client would be considered as part of a client-server model, a model that is in use today.
+
+### Types of clients
+
+There are three types of clients typically used in a client-server configuration.
+
+- Thick - The Thick client, sometimes known as a workstation, can process and store data locally, without using a server. These client types are the most common in today's network environments. Interaction with a server is minimal and may only be to store data on a shared network drive.
+- Thin - The Thin client is unable to process or store data locally, relying totally on the server to provide computational power and storage. Historically, a client would be terminal, like the VT100. Today, thin clients are represented by web-applications, which make requests of a server, and displays the results, regardless of the device they're running on.
+- Hybrid - The hybrid client blends the best of both thick and thin clients. It's capable of limited local data processing but has no local storage capability. This type of client might be seen in a device that renders content and stores the results on the server like you see in the automated rating systems.
+
+|               | Uses local storage | Uses local CPU |
+| :-----------: | :----------------: | -------------- |
+| Thick client  |        Yes         | Yes            |
+| Hybrid client |         No         | Yes            |
+|  Thin client  |         No         | No             |
+
+## Servers
+
+A server is a mercurial term for either a software system, a hardware device, or both. Historically, a server was the mainframe that occupied a large room and serviced hundreds of thin-clients throughout the organization. While the size of the hardware has shrunk, the essence of a server persists. A server's hardware is usually a high-end computer with dozens of CPUs or cores, and vast amounts of memory. Associated with a server are an array of switches, routers, load balancers, and firewalls. A server will usually run server software, for instance, Windows Server 2019, or Linux. 
+
+Servers and server software expose to their client's various services and functions. A server will support multiple clients, and a client is capable of connecting to and using the services from multiple different servers. For example, an application may use a media server to retrieve images and sounds while using a database server to pull data for display. Both services could be offered from the same server hardware, with each server service running as its own instance or virtual machine.
+
+### Server models
+
+There are many client-server models:
+
+- request-response - in this model, the client sends a request to the server, which carries out an activity, and sends back a response. It will either be as a result of the request, or as an acknowledgment.
+- Peer-To-Peer (P2P) - In this model, every network device attached to the network is both a client and a server. Each client can request services, like files from any other device on the network and vice-versa. P2P is an unstructured network suited for ad-hoc usage.
+- publish-subscribe - this model is a messaging pattern, where clients subscribe to a service on the server. When a server receives a new message, it sends a response to each client that has subscribed. An RSS feed is a typical publish-subscribe type client-server, where the user subscribes to the RSS feed, and when new items appear, they're automatically notified.
+
+Ultimately, the role of a server is to share data and resources to its clients.
+
+### Server types
+
+A server exists to provide services or processes to its clients. With an increase in the number of applications and users. Servers have also had to adapt and diversify. Now you'll find servers dedicated to one specific purpose. The table below shows a broad range of servers, their usage, and the type of client that uses them.
+
+| Server type           | Purpose                           | Clients                        |
+| :-------------------: | :-------------------------------: | :----------------------------: |
+| Application server | To host a web application, which can be run through a web browser. |   Any network device using a web browser   |
+| Computing server | Makes available CPU and memory to the client. This type of server might be a super-computer or mainframe. | Any networked computer that requires more CPU power and RAM to complete an activity. |
+| Database server | Maintains and provides access to any database. | Any form of software that requires access to structured data. |
+|   File server   | To make available shared files and folders across a network. | Any client that needs access to shared resources. |
+|   Game server   | Provision of a multiplayer game environment. | Personal computers, tablets, smartphones, or game consoles. |
+|   Mail server   | Hosts your email and makes it available across the network. |  User of email applications  |
+|  Media server  | Enables media streaming of digital video or audio over a network. | web and mobile applications. |
+|  Print server  | Shares printers over a network. |  Any device that needs to print. |
+|    Web server   | Hosts web pages either on the internet or on private internal networks. |   Any device with a browser. |
+
+## Advantages and Disadvantages of client-server networks
+
+The client-server model is the most common type of network architecture used today. As with all models, there are pros and cons in their use.
+
+### Advantages of client-server networks
+
+- All users are centrally managed, governing access and control to your servers and their services.
+- If your server architecture is design to scale, there will never be any performance issues when user usage increases.
+- Reduces the likelihood of data duplication, since all data can be stored and accessed centrally
+- A backup of centrally stored data to tape or other back-up mediums is easier.
+
+### Disadvantages of client-server networks
+
+- The failure of the server can stop users from accessing resources.
+- Setting up a client-server architecture can be expensive as it requires dedicated hardware and software.
+- Running and maintaining a network requires IT professionals with dedicated technical knowledge.
+- Multiple requests for the same operation impact the performance of the server, as might be seen in a Denial of Service Attack.
+
+## Advantages and disadvantages of peer to peer networks
+
+Another common network architecture type is the peer to peer network. Peer-to-peer is a distributed network model where every network device can be both being a client and a server.
+
+### Advantages of a peer to peer network
+
+- No requirement for a server-based operating system.
+- No expensive decentralized server.
+- No need for professional IT staff to run or manage the network.
+- If one of the computers in the network fails, it has minimal effect on the network.
+
+### Disadvantages of a peer to peer network
+
+- The performance of a peer-to-peer network can be slower.
+- Data is distributed, which can make backing up critical files difficult.
+- With a distributed network, if one machine goes offline, it means any data on that computer is no longer available.
+- Network security stays with the individual, and there's no enforced security
+
+## What is available in Azure
+
+Azure has several tools that can help with the configuration and management of clients and servers in your network. Here is a brief overview of some of the more common Azure tools.
+
+- Azure Resource Manager - It's a management service that provides a means to organize and secure your organization's assets and resources. It uses declarative templates to manage your infrastructure. It uses Role-Based Access Control to improve the security and access to your assets and resources.
+
+- Azure VM - Azure Virtual Machines are the perfect mechanism for implementing a server without the need to purchase and house server hardware. Virtualization provides the flexibility to have multiple dedicated servers all within a cloud environment. Azure VMs will work with both the cloud and your on-premises network. Azure VMs are scalable, and will dynamically adapt to meet your organization's needs as you grow.

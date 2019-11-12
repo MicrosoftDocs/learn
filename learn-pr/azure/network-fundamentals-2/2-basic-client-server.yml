@@ -10,31 +10,31 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 5
+durationInMinutes: 7
 content: |
   [!include[](includes/2-basic-client-server.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What operating systems are supported by Azure AD registered devices?"
+  - content: "What is a thin client?"
     choices:
-    - content: "Windows 10, iOS, Android, and MacOS"
+    - content: "A thin client can only display processed data provided by a server."
       isCorrect: true
-      explanation: "Azure AD register supports the any device running Windows 10, iOS, iPadOS, Android, and MacOS."
-    - content: "Windows 7, Windows 8.1 and Windows 10 only."
+      explanation: "A thin client makes requests of a server, and is incapable of running apps or storing data locally."
+    - content: "A thin client can process some data locally, but needs the server to store the data."
       isCorrect: false
-      explanation: "Azure AD register supports the any device running Windows 10, iOS, iPadOS, Android, and MacOS."
-    - content: "Windows 10 and MacOS"
+      explanation: "A thin client makes requests of a server, and is incapable of running apps or storing data locally."
+    - content: "A thin client can process and store data locally, and uses the server when it needs more processing power or storage."
       isCorrect: false
-      explanation: "Azure AD register supports the any device running Windows 10, iOS, iPadOS, Android, and MacOS."
-  - content: "When is Conditional Access applied?"
+      explanation: "A thin client makes requests of a server, and is incapable of running apps or storing data locally."
+  - content: "What is the purpose of an Application server?"
     choices:
-    - content: "Before first factor authentication"
+    - content: "Hosts non-web apps allowing users in the network to run them through a web browser."
       isCorrect: false
-      explanation: "No, Conditional Access policy is applied after first factor authentication."
-      content: "As part of first factor authentication"
+      explanation: "An App server provides application access to a client through a web browser."
+      content: "Hosts all your web and non-web apps in one place, so they can be accessed across the network."
       isCorrect: false
-      explanation: "No, Conditional Access policy is applied after first factor authentication."
-    - content: "After first factor authentication"
+      explanation: "An App server provides application access to a client through a web browser."
+    - content: "Hosts all your web apps allowing users in the network to run and use them in their browser."
       isCorrect: true
-      explanation: "Conditional Access policies are applied after first factor authentication has taken place."
+      explanation: "An App server provides application access to a client through a web browser."
