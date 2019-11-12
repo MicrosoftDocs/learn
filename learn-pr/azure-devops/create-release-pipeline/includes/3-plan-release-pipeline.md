@@ -115,8 +115,8 @@ To deploy a build artifact from the pipeline, you need a way to download it from
 
 This task requires a few inputs. The ones we need here are:
 
-* `buildType` specifies whether we want the artifacts from the current build or a specific build. For now, we want to deploy the current build.
-* `artifact` specifies the name of the artifact to download. We need this input to specify the name of the _.zip_ file.
+* `buildType`, which specifies whether we want the artifacts from the current build or a specific build. For now, we want to deploy the current build.
+* `artifact`, which specifies the name of the artifact to download. We need this input to specify the name of the _.zip_ file.
 
 This example downloads the latest package named "drop" from the pipeline to the build agent:
 
@@ -192,7 +192,7 @@ To deploy your app to an Azure resource, such as a virtual machine or App Servic
 You can learn more about these security models at the end of this module, but in short:
 
 * A _service principal_ is an identity with a limited role that can access Azure resources. Think of a service principal as a service account that can do automated tasks on your behalf.
-* _Managed identities for Azure resources are a feature of Azure Active Directory (Azure AD). Managed identities simplify the process of working with service principals. Because managed identities exist on the Azure AD tenant, Azure infrastructure can automatically authenticate the service and manage the account for you.
+* _Managed identities_ for Azure resources are a feature of Azure Active Directory (Azure AD). Managed identities simplify the process of working with service principals. Because managed identities exist on the Azure AD tenant, Azure infrastructure can automatically authenticate the service and manage the account for you.
 
 Managed identities simplify the process of working with service principals. But in this module you use service principal authentication because a service connection can automatically discover your Azure resources and assign the appropriate service principal roles for you.
 
