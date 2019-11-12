@@ -46,7 +46,8 @@ To add the variables:
 Here you modify your pipeline configuration by adding a job that runs Terraform to provision infrastructure to run the _Space Game_ website.
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* by adding a job during the _Dev_ stage.
-    [!Tip] You can replace the entire file or just update the part that's highlighted.
+    > [!Tip]
+    > You can replace the entire file or just update the part that's highlighted.
 
     [!code-yml[](code/8-azure-pipelines.yml?highlight=72-107,109-111)]
 
