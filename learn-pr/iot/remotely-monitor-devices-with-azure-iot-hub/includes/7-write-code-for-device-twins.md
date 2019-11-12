@@ -1,10 +1,10 @@
-An IoT Hub will maintain, in the cloud, a _device twin_ for each device connected to it. A device twin is a JSON document. The document contains state, configuration data, metadata, and similar information on each device. Device twins are designed for querying, and automatically synchronizing, with the real IoT Hub device.
+An IoT Hub will maintain, in the cloud, a _device twin_ for each device connected to it. A device twin is a JSON document containing state, configuration data, metadata, and similar information on each device. Device twins are designed for querying, and automatically synchronizing, with the real IoT Hub device.
 
-A device twin maintains information on a device, that the device itself doesn't have access to. This kind of information is called **tags**. Tags might include information such as customer IDs, connectivity specifics, and location.
+A device twin maintains information on a device, that the device itself does not have access to. This kind of information is called **tags**. Tags might include information such as customer IDs, connectivity specifics, and location.
+
+## Query device twins
 
 The device twin can be queried, at any time, by the back-end app. This query will return the current state information for the device. Getting this data doesn't involve a call to the device, as the device and twin will have synchronized automatically.
-
-## Device twin sections
 
 Much of the functionality of device twins is provided by Azure IoT, so not much code needs to be written to make use of them.
 
