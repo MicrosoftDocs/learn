@@ -6,8 +6,6 @@ In this exercise, you'll install the Cosmos DB extension for VS Code. Then you'l
 
 This exercise runs on your desktop computer, and uses an Azure sandbox for your resources.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 > [!NOTE]
 > This exercise assumes that you've already installed **Visual Studio Code** on your desktop computer.
 

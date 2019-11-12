@@ -6,8 +6,6 @@ In this exercise, you'll extend the JavaScript app you wrote previously. You'll 
 
 This exercise runs on your desktop computer, and uses an Azure sandbox for your resources.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Configure a connection to Cosmos DB
 
 The first task is to enable your application to connect to the Cosmos DB account you created in the first exercise.

@@ -8,8 +8,6 @@ In the next exercise, you'll see how to save these objects to a container in Cos
 
 This exercise runs on your desktop computer, and uses an Azure sandbox for your resources.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 > [!NOTE]
 > This exercise assumes that you've already installed **Node.js** and **npm** on your desktop computer.
 
