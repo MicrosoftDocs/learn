@@ -22,9 +22,9 @@ Resource Manager also allows you to create _templates_, which can be used to cre
 
 **Resource Manager templates** are JSON files that define the resources you need to deploy for your solution.
 
-You can create resource templates from the **Settings** section for a specific VM by selecting the Automation script option.
+You can create resource templates from the **Settings** section for a specific VM by selecting the _Export template_ option.
 
-![Automation script for our VM](../media/4-automation-script.png)
+![Screenshot showing Export template option for our VM](../media/4-automation-script.png)
 
 You have the option to save the resource template for later use or immediately deploy a new VM based on this template. For example, you might create a VM from a template in a test environment and find it doesn’t quite work to replace your on-premises machine. You can delete the resource group, which deletes all of the resources, tweak the template, and try again. If you only want to make changes to the existing deployed resources, you can change the template used to create it and deploy it again. Resource Manager will change the resources to match the new template.
 
