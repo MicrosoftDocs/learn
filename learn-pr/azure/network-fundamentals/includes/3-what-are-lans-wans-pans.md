@@ -32,11 +32,11 @@ The Local Area Network or LAN provides networking needs around a single location
 
 - **Mesh Architecture** - In a mesh architecture, each network device is connected to every other network device in the network. It dramatically increases the resilience of your network but has the physical overhead of connecting them all together. Few networks today are built as a full mesh. Most use a partial mesh, where some machines are connected to each other, but others connect through one device. However, there's a subtle difference between a physical mesh network and a logical one. We've just described a physical mesh network, but their usage is limited. However, the perception is that most modern networks are mesh-based because each device can see and communicate with any other device on the network. It is the logical mesh network and is primarily made possible through the use of network protocols.
 
-  ![Image showing a mesh network](../media/2-mesh-network.png)
+  ![Image showing a mesh network](../media/3-mesh-network.png)
 
 - **Star Topology** - The star topology is the most commonly used network architecture. Each network device is connected to a centralized hub or switch. Switches and hubs can be linked together to extend and build more extensive networks. This type of typology is, by far, the most robust and scalable.
 
-  ![Image showing a star topology](../media/2-star-network.png)
+  ![Image showing a star topology](../media/3-star-network.png)
 
 ### LAN Transmission Methods
 
@@ -59,7 +59,7 @@ Your network is comprised of several key elements that form the backbone of your
 
 The Metropolitan Area Network or MAN provides networking capabilities between two different locations within a city or metropolitan area to provide a single extensive network. Typically a MAN requires a dedicated and secure connection between each LAN joined to the MAN. Although VPNs are now allowing LANs to act as MANs using existing technology like the internet.
 
-![Image showing a Metropolitan Area Network](../media/2-MAN.jpg)
+![Image showing a Metropolitan Area Network](../media/3-MAN.jpg)
 
 ### WAN
 
@@ -103,7 +103,7 @@ The Media Access Control address or MAC address is a unique identifier assigned 
 
 The MAC address has a standard composition of six hexadecimal numbers separated by a colon or dash, for example, AA-6A-BA-2B-68-C1. The first three numbers of the MAC address define the manufacturer's organizationally unique identifier (OUI). The remaining three numbers uniquely identify the device.
 
-![Image showing how to find the physical MAC address](../media/2-mac-address.png)
+![Image showing how to find the physical MAC address](../media/3-mac-address.png)
 
 ### Smartphone MAC address randomization
 
@@ -123,7 +123,7 @@ Azure comes with several networking tools and services.
 
 Using Azure, you can build complex virtual networks that emulate the structure of your actual on-premises networks. Using Azure Virtual Network services, you can provision and manage your cloud-based virtual networks, or create hybrid virtual networks that integrate with your on-premises networks.
 
-![Image showing a simple virtual network](../media/2-virtual-network.jpg)
+![Image showing a simple virtual network](../media/3-virtual-network.jpg)
 
 ### Connectivity Services
 
