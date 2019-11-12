@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-introduction-to-azure-search.2-what-is-azure-search
-title: What is Azure Search?
+title: What is Azure Cognitive Search?
 metadata:
-  title: What is Azure Search?
-  description: Explore Azure Search, its concepts and how to create an Azure Search index
+  title: What is Azure Cognitive Search?
+  description: Explore Azure Cognitive Search, its concepts and how to create a search index
   ms.date: 06/13/2019
   author: rmcmurray
   ms.author: robmcm

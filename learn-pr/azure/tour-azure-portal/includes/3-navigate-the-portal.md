@@ -93,8 +93,8 @@ This button opens the main help and support area for the Azure portal and includ
 
 When you open a support ticket, you will complete the **Problem** section of the form by using provided dropdown lists and text-entry fields.
 
-    - In the **Title** text-entry field, describe your issue briefly. Provide additional information about your issue in the **Details** text-entry field.
-    - Provide your contact information by choosing your **preferred contact method** and entering your contact details, as prompted by the form.
+- In the **Title** text-entry field, describe your issue briefly. Provide additional information about your issue in the **Details** text-entry field.
+- Provide your contact information by choosing your **preferred contact method** and entering your contact details, as prompted by the form.
 
 Once you've filled out the form, select **Create** to submit your support request. The Azure support team will contact you after you submit your request.
 
