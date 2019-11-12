@@ -23,7 +23,7 @@ In this module you will:
 - Ability to use Node.js, or C#, at the beginner level
 - Experience using Visual Studio, or Visual Studio Code, at the beginner level
 
-## The scenario
+## Learn the scenario
 
 Suppose you manage a gourmet cheese making company in a southern location. The company is proud of its cheese, and is careful to maintain the perfect temperature and humidity of a natural cave that is used to age the cheese. There are sensors in the cave that report on the temperature and humidity. A remote operator can set a fan to new settings if needed, to maintain the perfect environment for the aging cheese. The fan can heat and cool, and humidify and de-humidify.
 

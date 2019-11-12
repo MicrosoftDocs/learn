@@ -9,7 +9,7 @@ We'll start this time with the back-end service app.
 1. Open the app.js file for the back-end app.
 2. Add the following code to the end of the file. This code sets the desired temperature of the device to 50 degrees F, humidity to 85 percent, and sets two **tags** (information only available to the IoT Hub). To verify the tags, a call is made to query the device twins based on a SQL search.
 
-``` javascript
+```javascript
 // Locate the device twin via the Registry, then update some tags and properties.
 const registry = Registry.fromConnectionString(connectionString);
 
@@ -75,7 +75,7 @@ function queryTwins() {
 
 2. Add the following code, perhaps to the end of the class.
 
-``` cs
+```cs
         // Device twins section.
         private static RegistryManager registryManager;
 
@@ -109,7 +109,7 @@ function queryTwins() {
 
 3. Now, add the following lines to the `Main` method, before the lines creating a service client.
 
-``` cs
+```cs
             // A registry manager is used to access the digital twins.
             registryManager = RegistryManager.CreateFromConnectionString(s_serviceConnectionString);
             SetTwinProperties().Wait();
@@ -133,7 +133,7 @@ Now we need to add code to the device app.
 
 1. Add the following code to the end of the file.
 
-``` javascript
+```javascript
 let deviceTwin;                                         // Global reference to device twin.
 
 // Create a patch to send to the hub.
@@ -184,7 +184,7 @@ client.getTwin(function (err, twin) {
 
 3. Change the `onSetFanState` function, so the success section of the function reports the updated state of the fan.
 
-``` javascript
+```javascript
             } else {
             fanState = request.payload;
 
@@ -205,7 +205,7 @@ client.getTwin(function (err, twin) {
 
 2. Add the following task to the class.
 
-``` cs
+```cs
         private static async Task OnDesiredPropertyChanged(TwinCollection desiredProperties, object userContext)
         {
             try
@@ -233,7 +233,7 @@ client.getTwin(function (err, twin) {
 
 3. Update the `Main` method. Add the following lines after the statements creating a handler for the device method.
 
-``` cs
+```cs
             // Get the device twin to report the initial desired properties.
             Twin deviceTwin = s_deviceClient.GetTwinAsync().GetAwaiter().GetResult();
             greenMessage("Initial twin desired properties: " + deviceTwin.Properties.Desired.ToJson());

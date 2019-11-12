@@ -8,7 +8,7 @@ In this unit, we'll add code to the device app for a direct method to turn on th
 
 2. Append the following code to the end of the file. This code is the body of the direct method itself, and a single statement to record the direct method with the IoT Hub client.
 
-``` javascript
+```javascript
 // Function to handle the SetFanState direct method call from IoT hub.
 function onSetFanState(request, response) {
 
@@ -57,7 +57,7 @@ client.onDeviceMethod('SetFanState', onSetFanState);
 
 2. Add the following method, perhaps to the end of the class.
 
-``` cs
+```cs
         // Handle the direct method call
         private static Task<MethodResponse> SetFanState(MethodRequest methodRequest, object userContext)
         {
@@ -98,7 +98,7 @@ client.onDeviceMethod('SetFanState', onSetFanState);
 
 3. Add the following lines of code to the `Main` method, after creating the device client.
 
-``` cs
+```cs
             // Create a handler for the direct method call
             s_deviceClient.SetMethodHandlerAsync("SetFanState", SetFanState, null).Wait();
 ```
@@ -120,7 +120,7 @@ When setting up a call to invoke a direct method, it's best to divide the code i
 
 1. Open up the back-end service app.js file and add the following code to the end of the file.
 
-``` javascript
+```javascript
 const methodParams = {
     methodName: 'SetFanState',
     payload: 'on',
@@ -134,7 +134,7 @@ const methodParams = {
 
 2. Now, enter the code to send the message to invoke the method.
 
-``` javascript
+```javascript
 function sendDirectMethod() {
 
     // Call the direct method on your device using the defined parameters.
@@ -154,7 +154,7 @@ function sendDirectMethod() {
 
 3. Finally, add a call to the `sendDirectMethod` function into the `createFromIotHubConnectionString` function, after the `eventHubClient = client;` line of code.
 
-``` javascript
+```javascript
     // Save the client as a global variable.
     eventHubClient = client;
 
@@ -173,13 +173,13 @@ function sendDirectMethod() {
 
 2. Add the following line to the global variables.
 
-``` cs
+```cs
 private static ServiceClient s_serviceClient;
 ```
 
 3. Add the following task, perhaps after the `Main` method.
 
-``` cs
+```cs
         // Handle invoking a direct method.
         private static async Task InvokeMethod()
         {
@@ -211,7 +211,7 @@ private static ServiceClient s_serviceClient;
 
 4. Add the following code to the `Main` method, before creating the receivers to listen for messages.
 
-``` cs
+```cs
             // Create a ServiceClient to communicate with service-facing endpoint on your hub.
             s_serviceClient = ServiceClient.CreateFromConnectionString(s_serviceConnectionString);
             InvokeMethod().GetAwaiter().GetResult();  

@@ -84,7 +84,7 @@ This section adds code to send telemetry from a simulated device. The device sen
 
 1. With the app.js file open, copy and paste the following code.
 
-``` JavaScript
+```JavaScript
 // Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
@@ -211,7 +211,7 @@ setInterval(sendMessage, intervalInMilliseconds);
 
 2. Copy and paste the following code.
 
-``` cs
+```cs
 // Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
@@ -464,7 +464,7 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 
 1. With the app.js file open, copy and paste the following code.
 
-``` JavaScript
+```JavaScript
 // Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
@@ -551,7 +551,7 @@ EventHubClient.createFromIotHubConnectionString(connectionString).then(function 
 
 1. Open the Program.cs file for the back-end app.
 
-``` cs
+```cs
 // Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 

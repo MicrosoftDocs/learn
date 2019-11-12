@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.remotely-monitor-and-control-devices-with-azure-iot-hub.create-iot-hub-device-id
 metadata:
-  title: Exercise - Create an Azure IoT Hub, and a device ID
+  title: Exercise - Create an Azure IoT Hub, and a device ID, using the Microsoft Azure portal
   description: Describes the process of creating a new IoT Hub, a IoT Hub device identity, and obtaining the connection strings needed for the coding units.
   ms.date: 10/01/2019
   author: PeterTurcan
@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-node
-title: Exercise - Create an Azure IoT Hub, and a device ID
+title: Exercise - Create an Azure IoT Hub, and a device ID, using the Microsoft Azure portal
 azureSandbox: true
 durationInMinutes: 10
 content: |
