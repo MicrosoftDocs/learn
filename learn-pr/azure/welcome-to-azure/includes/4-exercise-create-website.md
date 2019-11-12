@@ -20,7 +20,7 @@ We're going to use one of the WordPress application options from the Azure Marke
 
 Typically, the first thing we'd do is to create a *resource group* to hold all the things that we need to create. The *resource group* allows us to administer all the services, disks, network interfaces, and other elements that potentially make up our solution as a unit. We can use the Azure portal to create and manage our solution's resource groups. However, keep in mind that you can also manage resources via a command line using the Azure CLI. The Azure CLI is a useful option should you need to automate the process in the future.
 
-In the free Azure sandbox environment you'll use the pre-created resource group **<rgn>[sandbox resource group name]</rgn>**, and you don't need to do this step.
+In the free Azure sandbox environment, you'll use the pre-created resource group **<rgn>[sandbox resource group name]</rgn>**, and you don't need to do this step.
 
 ## Choosing a location
 
@@ -36,7 +36,7 @@ In the free Azure sandbox environment you'll use the pre-created resource group 
 
     ![Screenshot showing the Create a resource option](../media/4-create-resource.png)
 
-    This takes you to the **Azure Marketplace**.
+    This option takes you to the **Azure Marketplace**.
 
     ![Screenshot showing Azure marketplace](../media/4-azure-marketplace.png)]
 
@@ -63,7 +63,7 @@ In the free Azure sandbox environment you'll use the pre-created resource group 
 
     [![Screenshot showing app service configuration information](../media/4-config-info-create.png)](../media/4-config-info-create-expanded.png#lightbox)
 
-1. Now let's configure the App Service plan to use a specific pricing tier. This specifies the compute resources and location for the web app. Select **App Service plan/location**.
+1. Now let's configure the App Service plan to use a specific pricing tier. The App Service plan specifies the compute resources and location for the web app. Select **App Service plan/location**.
 
     ![Screenshot showing App Service plan link](../media/4-config-app-service-plan.png)
 
