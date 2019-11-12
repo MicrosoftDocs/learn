@@ -24,11 +24,11 @@ The Local Area Network or LAN provides networking needs around a single location
 
 - **Bus Architecture** - In a bus architecture, each network device is connected to a single network cable. It is the simplest type of network to implement. The many limitations to this type of network. The main two are the length of the main cable or bus. The longer it gets, the higher the chance of signal dropout. One constraint is all the devices have to be physically located near to each other, for example, in the same room. Finally, if the bus cable is damaged in any way, the whole network fails.
 
-  ![Image showing a bus architecture](../media/3-bus-architecture.gif)
+  ![Image showing a bus architecture](../media/3-bus-architecture.png)
 
 - **Ring Architecture** - In a ring architecture, each network device is connected to its neighbor until it forms a ring. This form of network is more resilient than a bus architecture. A break in the cable ring will affect the performance of the network.
 
-  ![Image showing a ring topology](../media/3-ring-network.gif)
+  ![Image showing a ring topology](../media/3-ring-network.png)
 
 - **Mesh Architecture** - In a mesh architecture, each network device is connected to every other network device in the network. It dramatically increases the resilience of your network but has the physical overhead of connecting them all together. Few networks today are built as a full mesh. Most use a partial mesh, where some machines are connected to each other, but others connect through one device. However, there's a subtle difference between a physical mesh network and a logical one. We've just described a physical mesh network, but their usage is limited. However, the perception is that most modern networks are mesh-based because each device can see and communicate with any other device on the network. It is the logical mesh network and is primarily made possible through the use of network protocols.
 
@@ -59,7 +59,7 @@ Your network is comprised of several key elements that form the backbone of your
 
 The Metropolitan Area Network or MAN provides networking capabilities between two different locations within a city or metropolitan area to provide a single extensive network. Typically a MAN requires a dedicated and secure connection between each LAN joined to the MAN. Although VPNs are now allowing LANs to act as MANs using existing technology like the internet.
 
-![Image showing a Metropolitan Area Network](../media/3-MAN.jpg)
+![Image showing a Metropolitan Area Network](../media/3-MAN.png)
 
 ### WAN
 
