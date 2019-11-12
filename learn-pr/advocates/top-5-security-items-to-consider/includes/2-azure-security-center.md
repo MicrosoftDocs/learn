@@ -24,9 +24,9 @@ Given the benefits of ASC, the security team at your company has decided that it
 
 1. Open the [Azure portal](https://portal.azure.com?azure-portal=true) and select **Azure Security Center** from the left-hand menu, if you don't see it there, you can select **All services** and find **Security Center** in the security section as shown below.
 
-   ![Screenshot showing the All services blade with Security Center highlighted.](../media/2-ASC-Menu.png)
+   ![Screenshot showing the All services pane with Security Center highlighted.](../media/2-ASC-Menu.png)
 
-1. If you have never opened ASC, the blade will start on the **Getting started** entry which might ask you to upgrade your subscription. Ignore that for now, select **Skip** at the bottom of the page, and then select **Overview**.
+1. If you have never opened ASC, the pane will start on the **Getting started** entry which might ask you to upgrade your subscription. Ignore that for now, select **Skip** at the bottom of the page, and then select **Overview**.
     - This will display the "big security picture" across all the elements available in your subscription.
     - This has a ton of great information you can explore.
 
@@ -38,7 +38,7 @@ Given the benefits of ASC, the security team at your company has decided that it
 
 ### Free vs. Standard pricing tier
 
-While you can use a free Azure subscription tier with ASC, it is limited to assessments and recommendations of Azure resources only. To really leverage ASC, you will need to upgrade to a Standard tier subscription as shown above. You can upgrade your subscription through the "Upgrade Now" button in the **Coverage** blade as noted above. You can also switch to the **Getting Started** blade in the ASC menu which will walk you through changing your subscription level. The pricing and features may change based on the region, you can get a full overview on the [pricing page](https://azure.microsoft.com/pricing/details/security-center/).
+While you can use a free Azure subscription tier with ASC, it is limited to assessments and recommendations of Azure resources only. To really leverage ASC, you will need to upgrade to a Standard tier subscription as shown above. You can upgrade your subscription through the "Upgrade Now" button in the **Coverage** pane as noted above. You can also switch to the **Getting Started** pane in the ASC menu which will walk you through changing your subscription level. The pricing and features may change based on the region, you can get a full overview on the [pricing page](https://azure.microsoft.com/pricing/details/security-center/).
 
 > [!NOTE]
 > To upgrade a subscription to the Standard tier, you must be assigned the role of Subscription Owner, Subscription Contributor, or Security Admin.
@@ -52,7 +52,7 @@ For production systems, you will definitely want to keep Azure Security Center t
 
 1. Open the [Azure portal](https://portal.azure.com?azure-portal=true) and select **Azure Security Center** from the left-hand menu, if you don't see it there, you can select **All services** and find **Security Center** in the security section as shown below.
 
-    ![Screenshot showing the All services blade with Security Center highlighted.](../media/2-ASC-Menu.png)
+    ![Screenshot showing the All services pane with Security Center highlighted.](../media/2-ASC-Menu.png)
 
 1. Select **Security Policy** from the left-hand menu.
 

@@ -11,7 +11,7 @@ You will create a new Active Directory for First Up Consultants in the Sandbox P
 
 1. In the left navigation pane, click **Create a resource** > **Identity** > **Azure Active Directory**.
 
-1. In the **Create directory** blade, provide the following values for the **Organization name** and **Initial domain name**:
+1. In the **Create directory** pane, provide the following values for the **Organization name** and **Initial domain name**:
 
    1. Organization Name: `First Up Consultants`.
    2. Initial Domain Name: `firstupconsultants<XXXXXXX>` where XXXXXXX is a word or number you add to give the domain a unique name.
@@ -57,6 +57,6 @@ We will be assigning the policy that we create to a group of users, but we need 
 
 1. Click **Create** (labeled "4" in the diagram below).
 
-![A screenshot showing Create Active Directory Group with selection boxes drawing attention to the previous steps](../media/3-group-blade.png)
+![A screenshot showing Create Active Directory Group with selection boxes drawing attention to the previous steps](../media/3-group-pane.png)
 
 In this unit, you learned how to create a trial licensed directory, a test user, and a pilot group in the Azure portal.

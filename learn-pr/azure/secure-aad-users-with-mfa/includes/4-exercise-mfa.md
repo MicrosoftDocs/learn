@@ -64,7 +64,7 @@ Finally, let's look at how to configure MFA for user accounts. This is another w
 1. Navigate back to the **Azure Active Directory** dashboard in the Azure portal.
 
 1. Select **Users**.
-1. At the top of the **Users** blade, select **Multi-Factor Authentication**.
+1. At the top of the **Users** pane, select **Multi-Factor Authentication**.
 
     ![Screenshot showing the MFA option](../media/4-user-mfa.png)
 

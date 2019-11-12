@@ -20,7 +20,7 @@ First, let's create a blank database named **DemoDW** in Azure SQL Data Warehous
     - Fill in the admin credentials. For example, use **dwdbadmin** for the admin name.
     - Select a **Location** to physically host the server. Typically, the location is close to the data consumer.
     
-1. Click **Select** to set the server information and go back to the **Create** blade.
+1. Click **Select** to set the server information and go back to the **Create** pane.
 1. Select **Performance level** > **Gen2**, and move the slider position to its lowest value, **Gen 2: DW100c**.
 1. Select **Apply** to set the performance level. Your settings look something like the following image.
 

@@ -14,7 +14,7 @@ Let’s start by creating an Azure Function app in the portal.
 
 1. Locate and select **Function App**. You can also optionally use the search bar to locate and create the new resource.
 
-    ![Screenshot of the Azure portal showing the Create a resource blade with the Function App highlighted.](../media/4-click-function-app.png)
+    ![Screenshot of the Azure portal showing the Create a resource pane with the Function App highlighted.](../media/4-click-function-app.png)
 
 1. Enter a globally unique **App name**.
 
@@ -46,7 +46,7 @@ Let’s start by creating an Azure Function app in the portal.
 
 1. Locate and select **Function App**. You can also optionally use the search bar to locate and create the new resource.
 
-    ![Screenshot of the Azure portal showing the Create a resource blade with the Function App highlighted.](../media/4-click-function-app.png)
+    ![Screenshot of the Azure portal showing the Create a resource pane with the Function App highlighted.](../media/4-click-function-app.png)
 
 1. Enter a globally unique **App name**.
 

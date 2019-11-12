@@ -17,7 +17,7 @@ To specify firewall rules:
 1. Go to the Azure portal from your browser.
 1. Select **SQL databases** in the left pane.
 1. Select the data warehouse that you created in the previous section.
-1. Select **Server name** in the right blade.
+1. Select **Server name** in the right pane.
 
    ![Screenshot of selecting a server name](../media/2-select-server-name.png)
 

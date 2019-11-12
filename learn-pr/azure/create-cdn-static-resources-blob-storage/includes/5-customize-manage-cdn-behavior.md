@@ -33,7 +33,7 @@ When you've configured the cdnverify subdomain and the CNAME for the domain mapp
 
 ### Adding a custom domain
 
-To add a custom domain, go to the CDN endpoint that you created, and under **Settings**, click **Custom domains**. In the **Custom domain** blade, click **Custom domain**, then in the **Add a custom domain**, under **Custom hostname**, enter the hostname that matches the CNAME record in your custom domain, such as www\.contoso.com.
+To add a custom domain, go to the CDN endpoint that you created, and under **Settings**, click **Custom domains**. In the **Custom domain** pane, click **Custom domain**, then in the **Add a custom domain**, under **Custom hostname**, enter the hostname that matches the CNAME record in your custom domain, such as www\.contoso.com.
 
 ![Add a custom domain](../media/5-custom-domain.png)
 
@@ -62,7 +62,7 @@ With the Azure CDN Standard for Microsoft Tier, caching rules are as simple as t
 - Bypass caching for query strings. Each query request from the client is passed directly to the origin server with no caching.
 - Cache every unique URL. Every time a requesting client generates a unique URL, that URL is passed back to the origin server and the response cached with its own TTL. This final method is inefficient where each request is a unique URL, as the cache-hit ratio becomes low.
 
-To change these settings, in the Endpoint blade, click **Caching rules** and then select the caching option that you want to apply to the endpoint and click **Save**.
+To change these settings, in the Endpoint pane, click **Caching rules** and then select the caching option that you want to apply to the endpoint and click **Save**.
 
 ## Caching and time to live
 

@@ -79,7 +79,7 @@ When you create a function from a template, several files are created. For examp
 
 When you select a function in your function app, a code editor opens and displays the code for your function, as illustrated in the following screenshot.
 
-![Screenshot of the Azure portal showing the function editor blade, including the expanded View files menu, with the selected "HttpTriggerJS1" function in our app service navigation and the View files menu highlighted.](../media/4-file-navigation.png)
+![Screenshot of the Azure portal showing the function editor pane, including the expanded View files menu, with the selected "HttpTriggerJS1" function in our app service navigation and the View files menu highlighted.](../media/4-file-navigation.png)
 
 As you can see in the preceding screenshot, there's a flyout menu on the right that includes a tab to **View files**. Selecting this tab shows the file structure that makes up your function.
 
@@ -99,7 +99,7 @@ The portal also provides a convenient way to test your functions. On the right s
 
 The ability to monitor your functions is critical during development and in production. The Azure portal provides a monitoring dashboard available if you turn on the Application Insights integration. In the function app navigation menu, once you expand the function node you'll see a **Monitor** menu item. This monitor dashboard provides a quick way to view the history of function executions and displays the timestamp, result code, duration, and operation ID populated by Application Insights.
 
-![Screenshot of the Azure portal showing an HTTP function Monitor blade with several function results and their corresponding HTTP status codes, with the Module menu item of the function highlighted.](../media/4-monitor-function.png)
+![Screenshot of the Azure portal showing an HTTP function Monitor pane with several function results and their corresponding HTTP status codes, with the Module menu item of the function highlighted.](../media/4-monitor-function.png)
 
 ## Streaming log window
 

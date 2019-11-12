@@ -13,7 +13,7 @@ Azure IoT Central has its native email capabilities to send notifications. In th
     - Water Temperature is less than Coffee Maker's Min Temperature
     - Device Warranty Expired equals 1
 
-    ![Screenshot showing the rules page of the connected coffee maker device template with a new rule added in the Configure Telemetry Rule blade.](../media/5-flow-a.png)
+    ![Screenshot showing the rules page of the connected coffee maker device template with a new rule added in the Configure Telemetry Rule pane.](../media/5-flow-a.png)
 
 1. Scroll down on the **Configure Telemetry Rule** panel and choose **+** next to **Actions**, and then choose **Email**.
 

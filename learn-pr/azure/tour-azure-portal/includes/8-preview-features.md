@@ -26,8 +26,8 @@ You can learn about preview features through the [preview features page](https:/
 You can also find Azure preview features in the portal as follows:
 
 - Sign in to Azure portal.
-- Select **Create a resource** in the resources panel to open the **New** blade.
-- Enter the word *preview* into the search box at the top of the **New** blade.
+- Select **Create a resource** in the resources panel to open the **New** pane.
+- Enter the word *preview* into the search box at the top of the **New** pane.
 - A list of available preview features is displayed, with the word **(preview)** next to each one.
 
 ## Azure portal preview features

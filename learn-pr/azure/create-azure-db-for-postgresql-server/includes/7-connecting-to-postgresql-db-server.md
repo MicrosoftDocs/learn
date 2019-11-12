@@ -14,9 +14,9 @@ You also need to disable the **Enforce SSL connection** option.
 
 1. Navigate to the server resource for which you would like to create a firewall rule.
 
-1. Select the **Connection Security** option to open the connection security blade to the right.
+1. Select the **Connection Security** option to open the connection security pane to the right.
 
-    ![Screenshot of the Azure portal showing the Connection security section of the PostgreSQL database resource blade](../media/6-db-security-settings.png)
+    ![Screenshot of the Azure portal showing the Connection security section of the PostgreSQL database resource pane](../media/6-db-security-settings.png)
 
 Recall that you want to allow access to PowerShell clients running `psql`.
 

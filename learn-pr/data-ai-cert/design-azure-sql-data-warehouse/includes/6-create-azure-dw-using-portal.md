@@ -25,9 +25,9 @@ Complete these steps to create a SQL data warehouse that contains the *Adventure
     - Enter the admin credentials. We use **dwdbadmin** for the admin name.
     - Select a **Location** to physically host the server. Typically, this is a location that's close to the data consumer.
 
-1. Select **Select** to set the server information and return to the Create blade.
+1. Select **Select** to set the server information and return to the Create pane.
 
-    ![Screenshot of the new database server blade](../media/6-create-sql-db.png)
+    ![Screenshot of the new database server pane](../media/6-create-sql-db.png)
 
 1. Select **Create** to provision the database. Provisioning takes a few minutes.
 

@@ -26,7 +26,7 @@ In this unit, you'll use Visual Studio Code to place the code in a local Git rep
 
 1. Return to the Azure portal in the browser.
 
-1. In the Web App Bot's Build blade in the Azure portal, select the **Publish updates automatically to Azure with Continuous Deployment** link under the **Publish** area in the main view. This is shown in the following screenshot. 
+1. In the Web App Bot's Build pane in the Azure portal, select the **Publish updates automatically to Azure with Continuous Deployment** link under the **Publish** area in the main view. This is shown in the following screenshot. 
 
 
     ![Bot's Build user interface with the Publish link highlighted](../media/4-publish-ui.png)
@@ -39,7 +39,7 @@ In this unit, you'll use Visual Studio Code to place the code in a local Git rep
 
 1. Enter a username and password (must be 10+ characters) and click **Save Credentials**. Take note of this username and password.
 
-    ![Screenshot of the Azure portal showing the new bot App Service blade displaying the Deployment credentials screen with the Deployment credentials menu item and Save button highlighted.](../media/4-portal-enter-ci-creds.png)
+    ![Screenshot of the Azure portal showing the new bot App Service pane displaying the Deployment credentials screen with the Deployment credentials menu item and Save button highlighted.](../media/4-portal-enter-ci-creds.png)
 
 1. Navigate back to the web app bot configuration and select **All App service settings** in the menu on the left. This will display the underlying web app your bot is hosted in.
 

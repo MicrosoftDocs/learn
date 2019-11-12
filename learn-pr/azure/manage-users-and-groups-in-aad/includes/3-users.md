@@ -6,7 +6,7 @@ You use the **Azure Active Directory** dashboard in the Azure portal to work wit
 
 To view the Azure AD users, select the **Users** entry under the **Manage** group - this will open the **All Users** view. Take a minute to access the portal and view your users. Notice the **USER TYPE** and **SOURCE** columns, as the following figure depicts.
 
-![Screenshot that depicts the All users blade, with the **USER TYPE** and **SOURCE** columns noted.](../media/M1-AAD-Users.png)
+![Screenshot that depicts the All users pane, with the **USER TYPE** and **SOURCE** columns noted.](../media/M1-AAD-Users.png)
 
 Typically, Azure AD defines users in three ways:
 
@@ -30,11 +30,11 @@ You can manually add new users through the Azure portal. This is the easiest way
 
 1. To add a new user with the Azure portal, select the the **+ New user** button in the toolbar.
 
-    ![Screenshot showing the New User button highlighted in the Azure AD portal](../media/2-new-user-all-users-blade.png)
+    ![Screenshot showing the New User button highlighted in the Azure AD portal](../media/2-new-user-all-users-pane.png)
 
 1. In addition to **Name** and **User name**, you can add profile information, like **Job Title** and **Department**.
 
-    ![Screenshot showing the New user dialog](../media/2-new-user-user-blade.png)
+    ![Screenshot showing the New user dialog](../media/2-new-user-user-pane.png)
 
     The default behavior is to create a new user in the organization. The user will have a username with the default domain name assigned to the directory such as alice@staracoustics.onmicrosoft.com.
 

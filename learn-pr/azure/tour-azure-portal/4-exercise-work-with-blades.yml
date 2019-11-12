@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.tour-azure-portal-features.4-exercise-work-with-blades
-title: Exercise - Work with blades
+uid: learn.tour-azure-portal-features.4-exercise-work-with-panes
+title: Exercise - Work with panes
 metadata:
-  title: Exercise - Work with blades
-  description: Log into the Azure portal and explore the basic UI with blades.
+  title: Exercise - Work with panes
+  description: Log into the Azure portal and explore the basic UI with panes.
   ms.date: 09/24/2018
   author: cwatson-cat
   ms.author: scwatson
@@ -14,4 +14,4 @@ metadata:
 azureSandbox: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-exercise-work-with-blades.md)]
+  [!include[](includes/4-exercise-work-with-panes.md)]

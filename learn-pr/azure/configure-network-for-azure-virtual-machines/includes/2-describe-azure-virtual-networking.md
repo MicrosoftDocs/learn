@@ -91,7 +91,7 @@ You can create and configure Azure virtual networks from the Azure portal, Azure
 
 When you create an Azure virtual network, you configure a number of basic settings. You'll have the option to configure advanced settings, such as multiple subnets, distributed denial of service (DDoS) protection, and service endpoints.
 
-![Screenshot of the Azure portal showing an example of the Create virtual network blade fields.](../media/2-create-virtual-network.PNG)
+![Screenshot of the Azure portal showing an example of the Create virtual network pane fields.](../media/2-create-virtual-network.PNG)
 
 You'll configure the following settings for a basic virtual network:
 
@@ -153,15 +153,15 @@ After creating a virtual network, you can then define further settings. These in
 
 You can also amend the service endpoints.
 
-![Screenshot of the Azure portal showing an example blade for editing virtual network settings.](../media/2-virtual-network-additional-settings.PNG)
+![Screenshot of the Azure portal showing an example pane for editing virtual network settings.](../media/2-virtual-network-additional-settings.PNG)
 
 ### Configure virtual networks
 
-When you have created a virtual network, you can change any further settings from the Virtual Networks blade in the Azure portal. Alternatively, you can use PowerShell commands or commands in Cloud Shell to make changes.
+When you have created a virtual network, you can change any further settings from the Virtual Networks pane in the Azure portal. Alternatively, you can use PowerShell commands or commands in Cloud Shell to make changes.
 
-![Screenshot of the Azure portal showing an example blade for configuring a virtual network.](../media/2-configure-virtual-network.PNG)
+![Screenshot of the Azure portal showing an example pane for configuring a virtual network.](../media/2-configure-virtual-network.PNG)
 
-You can then review and change settings in further sub-blades.
+You can then review and change settings in further sub-panes.
 These settings include:
 
 - Address spaces: You can add further address spaces to the initial definition

@@ -28,7 +28,7 @@ First, you will create a custom dashboard to display the metrics charts.
 
 1. On the left side, click **Monitor**.
 
-1. On the **Monitor - Overview** blade, click **Metrics**.
+1. On the **Monitor - Overview** pane, click **Metrics**.
 
 1. Under the chart toolbar, click **Select a resource**.
 

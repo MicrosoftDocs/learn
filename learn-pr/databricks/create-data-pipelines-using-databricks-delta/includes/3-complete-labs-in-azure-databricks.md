@@ -7,7 +7,7 @@ Now, let's jump into the Azure Databricks workspace and perform some basic Datab
 
 1. From the Azure portal, go to your Databricks workspace and select **Launch Workspace**.
 2. Within the workspace, use the command bar on the left to select **Workspace** > **Users**, and then select your user name (the entry with the house icon).
-3. In the blade that appears, select the arrow next to your name, and then select **Import**.
+3. In the pane that appears, select the arrow next to your name, and then select **Import**.
 
     ![A screenshot showing the menu option to import the archive](../media/import-archive.png)
 

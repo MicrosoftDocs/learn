@@ -41,7 +41,7 @@ In this step, you'll use Azure CLI to retrieve file system logs to your cloud sh
 In this step, you'll use the Kudu console to download file system logs to your computer.
 
 1. In the Azure portal, click **App Services** in the sidebar menu on the left.
-1. In the **App Services** list, click **contosofashions\<_your-number_\>**, and then in the **Development Tools** section, click **Advanced Tools**, and then on the Advanced Tools blade, click **Go**. 
+1. In the **App Services** list, click **contosofashions\<_your-number_\>**, and then in the **Development Tools** section, click **Advanced Tools**, and then on the Advanced Tools pane, click **Go**. 
 1. In the new Kudu Services tab, in the **Kudu** menu, click **Debug Console**, and then click **CMD**.
 1. In the file explorer section, click **LogFiles**.
 1. Click the **Download** button for the **Application** folder; the logs will be downloaded to your computer as **Application.zip**.
@@ -54,11 +54,11 @@ In this step, you'll open the verbose logs that were saved into your Azure Blob 
 
 1. In the Azure portal, click **Storage accounts** in the sidebar menu on the left.
 
-1. In the **Storage accounts** list, click **sacontosofashions\<_your-number_\>**, and then in the top section of the storage account blade, click **Storage Explorer (Preview)**. 
+1. In the **Storage accounts** list, click **sacontosofashions\<_your-number_\>**, and then in the top section of the storage account pane, click **Storage Explorer (Preview)**. 
 
-1. In the Storage Explorer (preview) blade, expand **BLOB CONTAINERS**, and then click **asp logs**.
+1. In the Storage Explorer (preview) pane, expand **BLOB CONTAINERS**, and then click **asp logs**.
 
-1. In the container blade, double-click **contosofashions\<_your-number_\>**, then double-click each of the year, month, and date folders.
+1. In the container pane, double-click **contosofashions\<_your-number_\>**, then double-click each of the year, month, and date folders.
 
 1. You should now see a folder for each hour that the application has been logging to blob storage. Double-click the hour folder (or the earliest, if there is more than one).
 
@@ -116,7 +116,7 @@ In this step, you'll use Azure CLI to retrieve file system logs to your cloud sh
 In this step, you'll use the Kudu console to retrieve file system logs.
 
 1. In the Azure portal, click **App Services** in the sidebar menu on the left.
-1. In the **App Services** list, click **contosofashions\<_your-number_\>**, and then in the **Development Tools** section, click **Advanced Tools**, and then on the Advanced Tools blade, click **Go**. 
+1. In the **App Services** list, click **contosofashions\<_your-number_\>**, and then in the **Development Tools** section, click **Advanced Tools**, and then on the Advanced Tools pane, click **Go**. 
 1. In the **Azure App Service** page, click the **Download as Zip** link next to **Current Docker Logs**; the logs will be downloaded to your computer as **dockerlogs\<_date-time_\>.zip**.
 1. On your computer, open **dockerlogs\<_date-time_\>.zip**, and view the **default_docker.log** file; this should be the same logs as you looked at using the Cloud Shell.
 1. Close the Kudu Services tab.

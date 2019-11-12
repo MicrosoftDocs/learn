@@ -27,7 +27,7 @@ Enable it for privileged and non-privileged users.
 1. Select **Multi-Factor Authentication**. This will open a new window.
 1. Ensure that **Multi-Factor Authentication Status** is **Enabled** for all users who are co-Administrators, Owners, or Contributors
 
-    ![Screenshot of the Azure portal showing the Multi-Factor Authentication option in the AAD blade](../media/2-mfa-ad-portal.png)
+    ![Screenshot of the Azure portal showing the Multi-Factor Authentication option in the AAD pane](../media/2-mfa-ad-portal.png)
 
 ### Block remembering MFA on trusted devices - Level 2
 

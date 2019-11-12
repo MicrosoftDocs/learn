@@ -8,7 +8,7 @@ Let's use some advanced ETL techniques in the Databricks workspace.
 
 1. In the Azure portal, navigate to your deployed Azure Databricks workspace and select **Launch Workspace**.
 2. In the left pane, select **Workspace** > **Users**, and select your username (the entry with house icon).
-3. In the blade that appears, select the arrow next to your name, and select **Import**.
+3. In the pane that appears, select the arrow next to your name, and select **Import**.
 4. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 
   ```html

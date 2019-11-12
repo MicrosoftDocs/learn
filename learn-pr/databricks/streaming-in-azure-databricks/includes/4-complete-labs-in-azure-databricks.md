@@ -7,7 +7,7 @@ Now it's time to perform some analytics on a sample data set by using Spark Stru
 
 1. From the Azure portal, go to your deployed Azure Databricks workspace and select **Launch Workspace**.
 2. In the Workspace, by using the command bar on the left, select **Workspace** > **Users** > your username (the entry with the house icon).
-3. In the blade that appears, select the downward-pointing chevron next to your name, and select **Import**.
+3. In the pane that appears, select the downward-pointing chevron next to your name, and select **Import**.
 4. In the **Import Notebooks** dialog box, select **URL** and paste in the following URL:
     ```
      https://github.com/MicrosoftDocs/mslearn-streaming-in-azure-databricks/blob/master/DBC/08-Streaming.dbc?raw=true

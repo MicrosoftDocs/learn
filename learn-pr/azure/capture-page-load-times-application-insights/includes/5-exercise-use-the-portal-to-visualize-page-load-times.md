@@ -24,7 +24,7 @@ Now you'll examine page load times for the previous thirty minutes in a scatter 
 1. In the Application Insights dashboard, select **Application Insights**.
 
     ![Application Insights resource link](../media/5-return-to-app-insights-resource.png)
-1. On the **Application Insights** blade, under **Monitoring**, select **Metrics**.
+1. On the **Application Insights** pane, under **Monitoring**, select **Metrics**.
 1. At the top of the **Metrics** page, select **Last 24 hours (Automatic)**.
 1. Select **Last 30 minutes** and then select **Apply**.
 1. In the **METRIC NAMESPACE** list, select **Standard metrics (preview)**.

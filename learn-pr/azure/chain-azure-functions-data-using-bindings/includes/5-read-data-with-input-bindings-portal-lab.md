@@ -29,7 +29,7 @@ A database account is a container for managing one or more databases. Before we 
     |API     | Core (SQL)        |  The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (document database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently require a separate account. <br><br>Select **Core (SQL)**. At this time, the Azure Cosmos DB trigger, input bindings, and output bindings only work with SQL API and Graph API accounts.        |
     |Location     | Select from the list        | Choose the region nearest to you.        |
 
-     Leave all other fields in the **New account** blade at their default values.
+     Leave all other fields in the **New account** pane at their default values.
 
 1. Select **Review + create** to review and validate the configuration. 
 

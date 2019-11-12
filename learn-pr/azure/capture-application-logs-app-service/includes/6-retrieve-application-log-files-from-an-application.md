@@ -46,7 +46,7 @@ All Azure Web apps have an associated Source Control Management (SCM) service si
 
 One way to access the KUDU console, is gone to **https://\<_app name_\>.scm.azurewebsites.net**, and then sign in using _**deployment credentials**_.  
 
-You can also access KUDU from the Azure portal. On the app blade, in the **Development Tools** section, click **Advanced Tools**, and then on the Advanced Tools blade, click **Go** to open a new Kudu Services tab.
+You can also access KUDU from the Azure portal. On the app pane, in the **Development Tools** section, click **Advanced Tools**, and then on the Advanced Tools pane, click **Go** to open a new Kudu Services tab.
 
 To download the log files from Windows apps:
 
