@@ -33,7 +33,6 @@ units:
 - learn.monitor-diagnose-and-troubleshoot-azure-storage.4-exercise-storage-metrics
 - learn.monitor-diagnose-and-troubleshoot-azure-storage.5-storage-logging
 - learn.monitor-diagnose-and-troubleshoot-azure-storage.6-exercise-storage-logging
-- learn.monitor-diagnose-and-troubleshoot-azure-storage.7-message-analyzer
-- learn.monitor-diagnose-and-troubleshoot-azure-storage.8-summary
+- learn.monitor-diagnose-and-troubleshoot-azure-storage.7-summary
 badge:
   uid: learn.monitor-diagnose-and-troubleshoot-azure-storage.badge

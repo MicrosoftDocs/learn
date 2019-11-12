@@ -19,7 +19,7 @@ In the Customer Portal scenario, you've decided that you need more detailed info
 7. Run the following command, to verify that logging for blob storage has been enabled successfully. Specify your storage account name, and account key where indicated:
 
     ```powershell
-    $context = New-AzureStorageContext -StorageAccountName <your-storage-account-name> -StorageAccountKey <your-storage-account-key>:
+    $context = New-AzureStorageContext -StorageAccountName <your-storage-account-name> -StorageAccountKey <your-storage-account-key>
 
     Get-AzureStorageServiceLoggingProperty -Context $context -ServiceType Blob
     ```
@@ -57,6 +57,9 @@ In the Customer Portal scenario, you've decided that you need more detailed info
 3. Double-click **blob** in the detail pane, and then navigate down through the folder structure to the folder containing the latest set of log files. You should see a set of files similar to those in the following image (your folder names will vary, as might the number of log files):
 
     ![Screenshot of Azure Storage Explorer, showing the log files in the $logs container](../media/6-storage-explorer-log-files.png)
+
+
+////////////// Remove content below ////////////
 
 4. Return to the desktop, and download and install the [AzCopy utility](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy-v10)
 
