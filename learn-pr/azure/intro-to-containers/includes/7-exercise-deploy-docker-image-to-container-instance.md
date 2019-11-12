@@ -10,7 +10,9 @@ In this exercise, you'll rebuild the image for the web app and upload it to Azur
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with your Azure subscription.
 
-1. Choose **Create a resource**, select **Containers**, and then click **Container Registry**
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+
+1. Select **Containers**, and then click **Container Registry**.
 
     ![Screenshot that shows the New blade in Azure portal showing the Container options available in Azure Marketplace](../media/7-search-container-registry.png)
 

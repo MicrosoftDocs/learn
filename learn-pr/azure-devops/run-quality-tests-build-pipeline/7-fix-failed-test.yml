@@ -4,11 +4,11 @@ title: Exercise - Fix a failed test
 metadata:
   title: Exercise - Fix a failed test
   description: See how a failed test can help uncover defects before the build reaches others.
-  ms.date: 06/21/2019
+  ms.date: 11/04/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 15
 content: |
   [!include[](includes/7-fix-failed-test.md)]

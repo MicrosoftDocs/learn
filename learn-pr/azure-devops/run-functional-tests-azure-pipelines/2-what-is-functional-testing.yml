@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Your customer service team is receiving too many refund requests from customers who accidently make purchaes from your mobile application. Customers report that the **Purchase** and **Cancel** buttons are too close together. Which kind of functional testing might help catch this sort of problem before it reaches your users?"
+  - content: "Your customer service team is receiving too many refund requests from customers who accidently make purchases from your mobile application. Customers report that the **Purchase** and **Cancel** buttons are too close together. Which kind of functional testing might help catch this sort of problem before it reaches your users?"
     choices:
     - content: "UI testing."
       isCorrect: false

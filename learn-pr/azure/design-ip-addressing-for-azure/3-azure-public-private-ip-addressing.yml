@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.design-ip-addressing-for-azure.3-azure-public-private-ip-addressing
+metadata:
+  title: Public and private IP addressing in Azure
+  description: Public and private IP addressing in Azure
+  ms.date: 10/17/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Public and private IP addressing in Azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-azure-public-private-ip-addressing.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following resources can you assign a public IP address to?"
+    choices:
+    - content: "A virtual machine"
+      isCorrect: true
+      explanation: "Correct. You can assign public IP addresses to virtual machines."
+    - content: "Azure Data Lake"
+      isCorrect: false
+      explanation: "Incorrect. While Azure Data Lake is accessible over the internet, you do not assign a public IP address to the service."
+    - content: "Azure Key Vault"
+      isCorrect: false
+      explanation: "Incorrect. While Azure Key Vault is accessible over the internet, you do not assign a public IP address to the service."
+  - content: "What must a virtual machine have to communicate with the other resources in the same virtual network?"
+    choices:
+    - content: "Load balancer"
+      isCorrect: false
+      explanation: "Incorrect. Load balancers distribute traffic between virtual machines and are not required for communication within a virtual network."
+    - content: "Network security group"
+      isCorrect: false
+      explanation: "Incorrect. While network security groups are recommended to filter traffic, they are not required to communicate within a virtual network."
+    - content: "Network interface"
+      isCorrect: true 
+      explanation: "Correct. An IP address is assigned to a network interface, which is assigned to a virtual machine."
+
+

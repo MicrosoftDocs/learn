@@ -12,7 +12,7 @@ metadata:
 title: Manage identity and access in Azure
 summary: Learn how to work with subscriptions, users, and groups by configuring Microsoft Azure Active Directory for workloads.
 prerequisites: None
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/manage-identity-and-access.svg
 levels:
 - beginner
 - intermediate

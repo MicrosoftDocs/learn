@@ -36,8 +36,8 @@ Up until now, you created Git branches locally to make changes to the _Space Gam
     ![Azure Pipelines showing the options menu to set the build badge](../media/6-pipeline-options-menu.png)
 
 1. Under **Sample Markdown**, select the **Copy** button to copy the Markdown code to the clipboard.
-1. In GitHub, go to your project page.
-1. Make sure you're in the `master` branch. In the files area, open the *README.md* file.
+1. In GitHub, go to your project.
+1. Make sure you're on the `master` branch. In the files area, open the *README.md* file.
 1. Select the pencil icon to open the file in the editor.
 1. At the top of the page, add a blank line, and then paste the contents of the clipboard.
 1. Select the **Preview changes** tab to see your proposed changes.
@@ -66,9 +66,9 @@ In this section, you commit your changes to the `master` branch on GitHub.
 
 **Andy**: Mara, you just made a change directly to `master`. Why didn't you use the flow you taught me? You know, with the feature branches.
 
-**Mara**: We could have done that. But sometimes when people are changing only the Readme file or other documentation files, they commit to `master` right then. Plus, you and I were able to verify the work together before we merged the change.
+**Mara**: We could have done that. But sometimes when people are changing only the README file or other documentation files, they commit to `master` right then. Plus, you and I were able to verify the work together before we merged the change.
 
-But this brings up a good point. If we can all just commit to `master` when we want to, we could be letting problems in the code slip into our master branch.
+But this brings up a good point. If we can all just commit to `master` when we want to, we could be letting problems in the code slip into our `master` branch.
 
 **Andy**: I've been meaning to talk to you about that.
 

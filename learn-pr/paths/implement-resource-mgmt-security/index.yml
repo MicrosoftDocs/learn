@@ -12,7 +12,7 @@ metadata:
 title: Implement resource management security in Azure
 summary: Learn how to secure resources using policy, role-based access control, and other Azure services
 prerequisites: None
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/implement-resource-mgmt-security.svg
 levels:
 - beginner
 - intermediate

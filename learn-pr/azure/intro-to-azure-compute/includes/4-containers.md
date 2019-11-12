@@ -7,9 +7,9 @@ If you wish to run multiple instances of an application on a single host machine
   :::column-end:::
 :::row-end:::
 
-A container is a modified runtime environment built on top of a host OS that executes your application. A container doesn’t use virtualization, so it doesn’t waste resources simulating virtual hardware with a redundant OS. This typically makes containers more lightweight than VMs. This design allows you to respond quickly to changes in demand or failure. Another benefit of containers is you can run multiple isolated applications on a single container host. Since containers are secured and isolated, you don't need separate servers for each app.
+A container is a modified runtime environment built on top of a host OS that executes your application. A container doesn't use virtualization, so it doesn't waste resources simulating virtual hardware with a redundant OS. This environment typically makes containers more lightweight than VMs. This design allows you to respond quickly to changes in demand or failure. Another benefit of containers is you can run multiple isolated applications on a single container host. Since containers are secured and isolated, you don't need separate servers for each app.
 
-#### VMs versus containers
+## VMs versus containers
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yuaq]
 
@@ -26,29 +26,29 @@ Azure Container Instances (ACI) offers the fastest and simplest way to run a con
 
 ### Azure Kubernetes Service
 
-The task of automating and managing and interacting with a large number of containers is known as orchestration. Azure Kubernetes Service (AKS) is a complete orchestration service for containers with distributed architectures with multiple containers.
+The task of automating, managing, and interacting with a large number of containers is known as orchestration. Azure Kubernetes Service (AKS) is a complete orchestration service for containers with distributed architectures with multiple containers.
 
 #### What is Kubernetes?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yEuX]
 
-### Using containers in your solutions
+## Using containers in your solutions
 
-Containers are often used to create solutions using a _microservice architecture_. This is where you break solutions into smaller, independent pieces. For example, you may split a website into a container hosting your front end, another hosting your back end, and a third for storage. This allows you to separate portions of your app into logical sections that can be maintained, scaled, or updated independently.
+Containers are often used to create solutions using a _microservice architecture_. This architecture is where you break solutions into smaller, independent pieces. For example, you may split a website into a container hosting your front end, another hosting your back end, and a third for storage. This split allows you to separate portions of your app into logical sections that can be maintained, scaled, or updated independently.
 
-#### What is a microservice?
+### What is a microservice?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yual]
 
 Imagine your website backend has reached capacity but the front end and storage aren't being stressed. You could scale the back end separately to improve performance, or you could decide to use a different storage service. Or you could even replace the storage container without affecting the rest of the application.
 
-### Migrating apps to containers
+## Migrating apps to containers
 
-You can move existing applications to containers and run them within AKS. You can control access via integration with Azure AD and access Service Level Agreement (SLA)–backed Azure services, such as Azure Database for MySQL for any data needs, via Open Service Broker for Azure (OSBA).
+You can move existing applications to containers and run them within AKS. You can control access via integration with Azure Active Directory (Azure AD) and access Service Level Agreement (SLA)–backed Azure services, such as Azure Database for MySQL for any data needs, via Open Service Broker for Azure (OSBA).
 
 ![Diagram that depicts moving existing applications to containers and running them within Azure Kubernetes Service, or AKS/](../media/4-kub-migration.png)
 
-The preceding figure depicts the process, as follows:
+The preceding figure depicts this process as follows:
 
 1. You convert an existing application to one or more containers and then publish one or more container images to the Azure Container Registry.
 1. By using the Azure portal or the command line, you deploy the containers to an AKS cluster.

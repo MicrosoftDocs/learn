@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure.8-operate
-title: Knowledge-Check
+uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.8-operate
+title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
@@ -13,7 +13,7 @@ azureSandbox: false
 
 durationInMinutes: 7
 quiz:
-  title: "Knowledge check"
+  title: ""
   questions:
   - content: "The Cloud Adoption Framework for Azure helps customers make their journey to the cloud. What are the three main stages of the framework?"
     choices:

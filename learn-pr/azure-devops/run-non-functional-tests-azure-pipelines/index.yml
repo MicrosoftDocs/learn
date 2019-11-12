@@ -19,14 +19,14 @@ abstract: |
   - Convert test results to a format that Azure Pipelines can visualize for you.
 prerequisites: |
   - An Azure subscription
-  - An Azure DevOps account
+  - An Azure DevOps organization
   - Visual Studio Code
   - .NET Core 2.1
   - Git
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/run-non-functional-tests-azure-pipelines.svg
 levels:
-- intermediate
+- beginner
 roles:
 - devops-engineer
 - administrator

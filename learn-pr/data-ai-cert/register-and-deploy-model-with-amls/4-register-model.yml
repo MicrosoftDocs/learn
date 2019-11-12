@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Register an Azure ML model with Python
   description: Exercise - Register an Azure ML model with Python
   ms.date: 01/31/2019
-  author: bcafferky
-  ms.author: brcaffer
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

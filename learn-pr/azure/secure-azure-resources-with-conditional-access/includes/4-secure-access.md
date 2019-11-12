@@ -15,7 +15,7 @@ The steps that follow will walk you through the process to create a conditional 
 
 1. Browse to **Azure Active Directory**, and in the resulting blade locate and select **Conditional access** in the **Security** subsection.
 
-![A screenshot showing Azure Portal navigation items with selection boxes drawing attention to the Azure Active Directory item and the Conditional access item](../media/4-portal-screenshot-1.png)
+    ![A screenshot showing Azure Portal navigation items with selection boxes drawing attention to the Azure Active Directory   item and the Conditional access item](../media/4-portal-screenshot-1.png)
 
 1. Click **New policy**. This will open a new blade for creating the new policy.
 

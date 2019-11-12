@@ -11,9 +11,9 @@ The Azure portal is the primary graphical user interface (GUI) for controlling M
     ![Screenshot of the resources and favorites blade](../media/3-favorites.png)
     :::column-end:::
     :::column span="3":::
-    **Resource Panel**
+    **Resource panel**
 
-    In the left-hand sidebar of the portal is the resource pane, which lists the main resource types. Note that Azure has more resource types than just those shown. The resources listed are part of your _favorites_.
+    In the left-hand sidebar of the portal is the resource panel, which lists the main resource types. Note that Azure has more resource types than just those shown. The resources listed are part of your _favorites_.
 
     You can customize this with the specific resource types you tend to create or administer most often.
 
@@ -93,8 +93,8 @@ This button opens the main help and support area for the Azure portal and includ
 
 When you open a support ticket, you will complete the **Problem** section of the form by using provided dropdown lists and text-entry fields.
 
-    - In the **Title** text-entry field, describe your issue briefly. Provide additional information about your issue in the **Details** text-entry field.
-    - Provide your contact information by choosing your **preferred contact method** and entering your contact details, as prompted by the form.
+- In the **Title** text-entry field, describe your issue briefly. Provide additional information about your issue in the **Details** text-entry field.
+- Provide your contact information by choosing your **preferred contact method** and entering your contact details, as prompted by the form.
 
 Once you've filled out the form, select **Create** to submit your support request. The Azure support team will contact you after you submit your request.
 

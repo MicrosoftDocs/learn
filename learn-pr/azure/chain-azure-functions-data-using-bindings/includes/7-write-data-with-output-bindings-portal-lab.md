@@ -17,6 +17,8 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 ## Create an HTTP-triggered function
 
+::: zone pivot="javascript"
+
 1. Make sure you are signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 2. In the portal, navigate to the function app that you created in this module.
@@ -32,6 +34,28 @@ Just as Azure Functions supports input bindings for various integration sources,
     | Authorization level | **Function** |
 
 6. Select **Create** to create your function. This action opens the **index.js** file in the code editor and displays a default implementation of the HTTP-triggered function.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. Make sure you are signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+
+2. In the portal, navigate to the function app that you created in this module.
+
+3. Select the Add (**+**) button next to **Functions**. This action starts the function creation process. 
+4. The page shows us the current set of supported triggers. Select **HTTP trigger**.
+
+5. Fill out the **New Function** pane that's displayed at the right by using the following values:
+
+    |Field  |Value  |
+    |---------|---------|
+    |Name     |   [!INCLUDE [func-name-add](./func-name-add.md)]     |
+    | Authorization level | **Function** |
+
+6. Select **Create** to create your function. This action opens the **run.ps1** file in the code editor and displays a default implementation of the HTTP-triggered function.
+
+::: zone-end
 
 ## Add an Azure Cosmos DB input binding
 
@@ -129,7 +153,9 @@ Here you can see that the new function, [!INCLUDE [func-name-add](./func-name-ad
 
 We now have all our bindings set up for the [!INCLUDE [func-name-add](./func-name-add.md)] function. It's time to use them in our function.
 
-1.  Select your function, [!INCLUDE [func-name-add](./func-name-add.md)], to open the **index.js** file in the code editor.
+::: zone pivot="javascript"
+
+1. Select your function, [!INCLUDE [func-name-add](./func-name-add.md)], to open the **index.js** file in the code editor.
 
 2. Replace all the code in the *index.js* file with the code from the following snippet and then **Save**:
 
@@ -148,6 +174,57 @@ Let's break down what this code does:
 ![Screenshot calling out that the queue will be auto-created.](../media/7-q-auto-create-small.png)
 
 So, that's it. Let's see our work in action in the next section.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. Select your function, [!INCLUDE [func-name-add](./func-name-add.md)], to open the **run.ps1** file in the code editor.
+
+2. Replace all the code in the *run.ps1* file with the code from the following snippet and then **Save**:
+
+   ```powershell
+   using namespace System.Net
+
+    param($Request, $bookmark, $TriggerMetadata)
+
+    if ($bookmark) {
+        $status = 422
+        $body = "Bookmark already exists."
+    }
+    else {
+        $newBookmark = @{ id = $Request.Body.id; url = $Request.Body.url }
+
+        Push-OutputBinding -Name newbookmark -Value $newBookmark
+
+        Push-OutputBinding -Name newmessage -Value $newBookmark
+
+        $status = [HttpStatusCode]::OK
+        $body = "bookmark added!"
+    }
+
+    Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
+        StatusCode = $status
+        Body = $body
+        ContentType = "application/json"
+    })
+   ```
+
+Let's break down what this code does:
+
+* Because this function changes our data, we expect the HTTP request to be a POST and the bookmark data to be part of the request body.
+* Our Azure Cosmos DB input binding attempts to retrieve a document, or bookmark, by using the `id` that we receive. If it finds an entry, the `bookmark` object will be set. The `if ($bookmark)` condition checks to see whether an entry was found.
+* Adding to the database is as simple as calling `Push-OutputBinding` with the name of the Cosmos DB output binding (`newbookmark`) and the value of the `$newBookmark` object.
+* Posting a message to our queue is as simple as calling `Push-OutputBinding` with the name of the queue output binding (`newmessage`) and the value of the `$newBookmark` object.
+
+> [!NOTE]
+> The only task you performed was to create a queue binding. You never created the queue explicitly. You are witnessing the power of bindings! As the following callout says, the queue is automatically created for you if it doesn't exist.
+
+![Screenshot calling out that the queue will be auto-created.](../media/7-q-auto-create-small.png)
+
+So, that's it. Let's see our work in action in the next section.
+
+::: zone-end
 
 ## Try it out
 

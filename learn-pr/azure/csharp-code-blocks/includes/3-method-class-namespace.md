@@ -62,7 +62,7 @@ namespace MyNewApp.Data
 }
 ```
 
-In the  namespace, we would expect to add classes that implemented the business logic of our application.  In the  namespace, we would expect to add classes that implemented the data access features of our application.  We can add as many namespaces as we want.  We can create namespaces as many levels deep as we need.  We would just keep appending child-namespace names using the dot operator.
+In the `MyNewApp.Business` namespace, we would expect to add classes that implemented the business logic of our application.  In the `MyNewApp.Data` namespace, we would expect to add classes that implemented the data access features of our application.  We can add as many namespaces as we want.  We can create namespaces as many levels deep as we need.  We would just keep appending child-namespace names using the dot operator.
 
 Most importantly for the purposes of this module, code blocks define the boundaries for each of these constructs.  Code blocks suggest an ownership, or containment, relationship.  So, the rules we just learned about variable scope and access are true at this level as well.
 

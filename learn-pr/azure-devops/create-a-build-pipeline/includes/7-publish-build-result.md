@@ -11,20 +11,20 @@ You can store build artifacts in Azure Pipelines so they're later available to o
 
 In .NET Core, you can package your application as a .zip file. You can then use the built-in `PublishBuildArtifacts@1` task to publish the .zip file to Azure Pipelines.
 
-1. In Visual Studio Code, modify **azure-pipelines.yml** as you see here:
+1. In Visual Studio Code, modify *azure-pipelines.yml* as you see here:
 
-    [!code-yml[](code/7-azure-pipelines-1.yml?highlight=40-51)]
+    [!code-yml[](code/7-azure-pipelines-1.yml?highlight=43-54)]
 
-    This version of **azure-pipelines.yml** looks like the previous version, but it adds two additional tasks.
+    This version of *azure-pipelines.yml* looks like the previous version, but it adds two additional tasks.
 
     The first task uses the `DotNetCoreCLI@2` task to *publish*, or package, the application's build results (including its dependencies) into a folder. The `zipAfterPublish` argument specifies to add the built results to a .zip file.
 
     The second task uses the `PublishBuildArtifacts@1` task to publish the .zip file to Azure Pipelines. The `condition` argument specifies to run the task only when the previous task succeeds. `succeeded()` is the default condition, so you don't need to specify it. But we show it here to illustrate its use.
 
-1. From the integrated terminal, add **azure-pipelines.yml** to the index, commit the change, and push the change up to GitHub.
+1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub.
 
     > [!TIP]
-    > Remember to save **azure-pipelines.yml** before you run these Git commands.
+    > Remember to save *azure-pipelines.yml* before you run these Git commands.
 
     ```bash
     git add azure-pipelines.yml
@@ -51,7 +51,7 @@ In .NET Core, you can package your application as a .zip file. You can then use 
 
 Mara steps back to examine her work. The build configuration does what she needs, but she wants to make sure Andy and others can easily help keep it up to date and extend it.
 
-Variables enable you to define values one time and refer to those values throughout your pipeline. The system replaces each variable with its current value when the pipeline runs.
+Variables enable you to define values one time and refer to those values throughout your pipeline. Azure Pipelines replaces each variable with its current value when the pipeline runs.
 
 Just like in other programming languages, variables enable you to do things like:
 
@@ -71,7 +71,7 @@ Use variables when you repeat the same value multiple times or when a value, lik
 
 You don't need to create a variable for every piece of your build configuration. In fact, too many variables can make your pipeline code harder for others to read and understand.
 
-Take a moment to examine **azure-pipelines.yml**. Notice that these values are repeated:
+Take a moment to examine *azure-pipelines.yml*. Notice that these values are repeated:
 
 * The build configuration: `Release`
 * The location of the **wwwroot** directory: `Tailspin.SpaceGame.Web/wwwroot`
@@ -79,9 +79,9 @@ Take a moment to examine **azure-pipelines.yml**. Notice that these values are r
 
 You'll now use variables to define these values one time. You'll then reference the variables throughout the pipeline.
 
-1. In Visual Studio Code, modify **azure-pipelines.yml** as you see here:
+1. In Visual Studio Code, modify *azure-pipelines.yml* as you see here:
 
-    [!code-yml[](code/7-azure-pipelines-2.yml?highlight=6-9,39,42,46,51,22,30,13,15)]
+    [!code-yml[](code/7-azure-pipelines-2.yml?highlight=9-12,42,44,49,54,25,33,16,18)]
 
     Notice the `variables` section, which defines these variables:
 
@@ -98,7 +98,7 @@ You'll now use variables to define these values one time. You'll then reference 
 
     The script command uses the variable to define both the source directory for Sass files and the directory in which to write CSS files. It also uses the variable to define the task name that's shown in the user interface.
 
-1. From the integrated terminal, add **azure-pipelines.yml** to the index, commit the change, and push the change up to GitHub:
+1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub:
 
     ```bash
     git add azure-pipelines.yml

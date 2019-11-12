@@ -54,7 +54,7 @@ The following snippet is the _function.json_ file for this scenario.
 }
 ```
 
-Our JSON configuration specifies that our function will be triggered when a message is added to a queue named **myqueue-items**. The return value of our function is then written to the **outTable** table in Azure Table storage. 
+Our JSON configuration specifies that our function will be triggered when a message is added to a queue named **myqueue-items**. The return value of our function is then written to the **outTable** table in Azure Table storage. For PowerShell functions, output bindings are explicitly written to with the `Push-OutputBinding` cmdlet.
 
 This example is a simple illustration of how we configure bindings for a function.  We could change the output to be an email using a SendGrid binding, or put an event onto a Service Bus to notify some other component in our architecture, or even have multiple output bindings to push data to various services.
 
@@ -67,19 +67,11 @@ Azure provides several pre-made function templates for common scenarios.
 
 ### Quickstart templates
 
-When adding your first function, you are presented with the Quickstart screen. This screen allows you to choose a trigger type (HTTP, Timer, or Data) and programming language (C#, JavaScript, F# or Java). Then, based on your selections, Azure will generate the function code and configuration for you with some sample code provided to display out the input data received in the log.
+When adding your first function, you are presented with the Quickstart screen where you can choose the trigger for your function. Based on your selections, Azure will generate the function code and configuration for you with some sample code provided to display out the input data received in the log.
 
 ### Custom function templates
 
 The selection of Quickstart templates provides easy access to the most common scenarios. However, Azure provides over 30 additional templates you can start with. These can be selected from the template list screen when creating subsequent functions or be selected by using the **Custom function** option on the Quickstart screen.
-
-- HTTP trigger w/ C#, F#, or JavaScript
-- Timer trigger w/ C#, F#, or JavaScript
-- Queue trigger w/ C#, F#, or JavaScript
-- Service Bus Queue trigger w/ C#, F#, or JavaScript
-- Azure Cosmos DB trigger w/ C# or JavaScript
-- IoT Hub (Event Hub) w/ C#, F#, or JavaScript
-- ... and many more
 
 ## Navigating to your function and files
 
@@ -116,13 +108,19 @@ You're also able to add logging statements to your function for debugging in the
 The following JavaScript code snippet shows how to log a message using the `context.log` method (the `context` object is passed to the handler).
 
 ```javascript
-  context.log('Enter your logging statement here');
+context.log('Enter your logging statement here');
 ```
 
 We could do the same thing in C# using the `log.Info` method. In this case, the `log` object is passed to the C# method processing the function.
 
 ```csharp
-  log.Info("Enter your logging statement here");
+log.Info("Enter your logging statement here");
+```
+
+In PowerShell, use `Write-Host` to write to the log:
+
+```powershell
+Write-Host "Enter your logging statement here"
 ```
 
 ### Errors and warnings window

@@ -18,14 +18,14 @@ abstract: |
   - Run automated UI tests locally and in the pipeline with Selenium.
 prerequisites: |
   - An Azure subscription
-  - An Azure DevOps account
+  - An Azure DevOps organization
   - Visual Studio Code
   - .NET Core 2.1
   - Git
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/run-functional-tests-azure-pipelines.svg
 levels:
-- intermediate
+- beginner
 roles:
 - devops-engineer
 - administrator

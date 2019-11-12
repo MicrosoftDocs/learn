@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.design-ip-addressing-for-azure.5-exercise-implement-vnets
+metadata:
+  title: Exercise - Design and implement IP addressing for Azure virtual networks
+  description: Exercise - Design and implement IP addressing for Azure virtual networks
+  ms.date: 10/17/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Design and implement IP addressing for Azure virtual networks
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/5-exercise-implement-vnets.md)]
+tasks:
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.Network/virtualNetworks"
+      name: CoreServicesVnet
+  hint: "Make sure you have created the CoreServicesVnet."
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.Network/virtualNetworks"
+      name: ManufacturingVnet
+  hint: "Make sure you have created the ManufacturingVnet."
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.Network/virtualNetworks"
+      name: ResearchVnet
+  hint: "Make sure you have created the ResearchVnet."

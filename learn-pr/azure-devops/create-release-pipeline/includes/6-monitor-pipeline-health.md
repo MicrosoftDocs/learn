@@ -10,7 +10,7 @@ It's the following morning. At the team meeting, Andy and Mara have just finishe
 
 **Amita:** This is fantastic. Having just the build pipeline was a great step, but I still had to manually install the build artifact in my lab so I could test it. If I can get these releases to my test environment on a regular schedule, that would save a lot of time getting new features through QA.
 
-**Mara:** Exactly! And remembember, we can always expand our release pipeline to include more stages. The final goal is to create a complete deployment workflow.
+**Mara:** Exactly! And remember, we can always expand our release pipeline to include more stages. The final goal is to create a complete deployment workflow.
 
 **Tim:** A staging environment would be great. I could do additional stress testing before we present new features to management for final approval.
 

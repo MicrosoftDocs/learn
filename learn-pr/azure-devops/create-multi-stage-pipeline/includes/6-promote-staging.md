@@ -26,7 +26,7 @@ To create the **staging** environment:
 1. Under **Name**, enter **staging**.
 1. Leave the remaining fields at their default values.
 1. Select **Create**.
-1. On the **staging** environment page, select the drop down menu, then select **Checks**.
+1. On the **staging** environment page, select the drop-down menu, then select **Checks**.
 
     ![Azure Pipelines showing the Checks menu option](../media/7-environments-staging-checks.png)
 
@@ -89,6 +89,6 @@ The Tailspin team gathers to discuss their progress. Amita approves changes in t
 
 **Tim:** To tell you the truth, at first I was a little nervous about automated release pipelines. But I really like this now that I see it working. Each stage can have its own environment, associated tests, and approvers. It automates so many things for us that we once had to do manually. But we still have control where we need it.
 
-**Amita:** I could imagine us doing something similar to promote changes from _Staging_ to _Production_. Speaking of which, when will we add a _Production_ environment?
+**Amita:** I could imagine us doing something similar to promote changes from _Staging_ to _Production_. Speaking of which, when will we add a **production** environment?
 
 **Andy:** We'll add that shortly. I think we still have a few pieces to fill in here first.
