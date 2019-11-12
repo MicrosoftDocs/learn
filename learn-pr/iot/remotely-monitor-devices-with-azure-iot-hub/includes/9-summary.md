@@ -1,4 +1,3 @@
-
 In this module, you learned how to:
 
 - Create a custom Azure IoT Hub, using the Azure portal

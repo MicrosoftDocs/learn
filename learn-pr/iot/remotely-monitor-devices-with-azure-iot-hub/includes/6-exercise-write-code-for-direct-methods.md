@@ -4,7 +4,7 @@ In this unit, we'll add code to the device app for a direct method to turn on th
 
 ::: zone pivot="node"
 
-1. Open the app.js file for the device app.
+1. Open the **app.js** file for the device app.
 
 2. Append the following code to the end of the file. This code is the body of the direct method itself, and a single statement to record the direct method with the IoT Hub client.
 
@@ -48,12 +48,12 @@ function onSetFanState(request, response) {
 // Set up the handler for the SetFanState direct method call.
 client.onDeviceMethod('SetFanState', onSetFanState);
 ```
-3. Save the app.js file.
+3. Save the **app.js** file.
 
 ::: zone-end
 ::: zone pivot="csharp"
 
-1. Open the Program.cs file for the device app.
+1. Open the **Program.cs** file for the device app.
 
 2. Add the following method, perhaps to the end of the class.
 
@@ -103,7 +103,7 @@ client.onDeviceMethod('SetFanState', onSetFanState);
             s_deviceClient.SetMethodHandlerAsync("SetFanState", SetFanState, null).Wait();
 ```
 
-4. Save the Program.cs file.
+4. Save the **Program.cs** file.
 
 ::: zone-end
 
@@ -118,7 +118,7 @@ You've completed what is needed at the device end of things. Next, we need to ad
 
 When setting up a call to invoke a direct method, it's best to divide the code into three parts: the parameters, a function handling the call, and one or more calls to that function.
 
-1. Open up the back-end service app.js file and add the following code to the end of the file.
+1. Open up the back-end service **app.js** file and add the following code to the end of the file.
 
 ```javascript
 const methodParams = {
@@ -126,7 +126,6 @@ const methodParams = {
     payload: 'on',
     responseTimeoutInSeconds: 30
 };
-
 ```
 
 > [!NOTE]
@@ -164,12 +163,12 @@ function sendDirectMethod() {
     return eventHubClient.getPartitionIds();
 ```
 
-4. Save the app.js file.
+4. Save the **app.js** file.
 
 ::: zone-end
 ::: zone pivot="csharp"
 
-1. Open the Program.cs file for the back-end app.
+1. Open the **Program.cs** file for the back-end app.
 
 2. Add the following line to the global variables.
 
@@ -217,7 +216,7 @@ private static ServiceClient s_serviceClient;
             InvokeMethod().GetAwaiter().GetResult();  
 ```
 
-5. Save the Program.cs file.
+5. Save the **Program.cs** file.
 
 ::: zone-end
 

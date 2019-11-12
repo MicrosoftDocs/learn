@@ -15,7 +15,7 @@ At the end of this unit, you'll be sending and receiving telemetry.
     * **npm install azure-iot-device-mqtt**
     * **npm install chalk**
 
-1. After you've entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the cheesecave folder is the current folder of the terminal, when you run the app.
+1. After you've entered the code below into the **app.js** file, you can run it from the terminal by entering `node app.js`. Ensure that the cheesecave folder is the current folder of the terminal, when you run the app.
 
 ::: zone-end
 ::: zone pivot="vscode-csharp"
@@ -24,7 +24,7 @@ At the end of this unit, you'll be sending and receiving telemetry.
 
 1. Open a terminal in Visual Studio Code, and create a folder called "cheesecavedevice" (enter `mkdir cheesecavedevice`). Navigate to the cheesecavedevice folder.
 
-1. Enter the following command in the terminal: `dotnet new console`. This command creates a Program.cs file in your folder, along with a project file.
+1. Enter the following command in the terminal: `dotnet new console`. This command creates a **Program.cs** file in your folder, along with a project file.
 
 1. Enter `dotnet restore` in the terminal. This command gives your app access to the required .NET packages.
 
@@ -33,9 +33,9 @@ At the end of this unit, you'll be sending and receiving telemetry.
     * **dotnet add package Microsoft.Azure.Devices.Shared**
     * **dotnet add package Newtonsoft.Json**
 
-1. From the **File** menu, open up the Program.cs file, and delete the default contents.
+1. From the **File** menu, open up the **Program.cs** file, and delete the default contents.
 
-1. After you've entered the code below into the Program.cs file, you can run the app with the command `dotnet run`. This command will run the Program.cs file in the current folder, so ensure you are in the cheesecavedevice folder.
+1. After you've entered the code below into the **Program.cs** file, you can run the app with the command `dotnet run`. This command will run the **Program.cs** file in the current folder, so ensure you are in the cheesecavedevice folder.
 
 ::: zone-end
 ::: zone pivot="vs-node"
@@ -51,7 +51,7 @@ At the end of this unit, you'll be sending and receiving telemetry.
 
     ![Screenshot showing how to install npm packages into your Visual Studio project](../media/cheesecave-vs-npm.png)
 
-1. Delete the default contents of the app.js file. Add the line `// Cheese Cave device app`.
+1. Delete the default contents of the **app.js** file. Add the line `// Cheese Cave device app`.
 
 1. When you've entered the code below, you'll be able to run the app with the **Start Without Debugging**, or **Start Debugging**, options. In the latter case, you can set breakpoints, examine data, and do other debugging tasks.
 
@@ -67,9 +67,9 @@ At the end of this unit, you'll be sending and receiving telemetry.
     * **Microsoft.Azure.Devices.Shared**
     * **Newtonsoft.Json**
 
-1. Delete the default contents of the Program.cs file.
+1. Delete the default contents of the **Program.cs** file.
 
-1. Add all the code that follows to the Program.cs file.
+1. Add all the code that follows to the **Program.cs** file.
 
 ::: zone-end
 
@@ -82,7 +82,7 @@ This section adds code to send telemetry from a simulated device. The device sen
 
 ::: zone pivot="vs-node,vscode-node"
 
-1. With the app.js file open, copy and paste the following code.
+1. With the **app.js** file open, copy and paste the following code.
 
 ```JavaScript
 // Copyright (c) Microsoft. All rights reserved.
@@ -202,12 +202,12 @@ setInterval(sendMessage, intervalInMilliseconds);
 
 2. Replace the &lt;your device connection string&gt; with the device connection string you saved off in the previous unit. No other lines of code need to be changed.
 
-3. Save the app.js file.
+3. Save the **app.js** file.
 
 ::: zone-end
 ::: zone pivot="vs-csharp,vscode-csharp"
 
-1. Open the Program.cs file for the device app.
+1. Open the **Program.cs** file for the device app.
 
 2. Copy and paste the following code.
 
@@ -372,7 +372,7 @@ namespace simulated_device
 
 3. Replace the &lt;your device connection string&gt; with the device connection string you saved off in the previous unit. No other lines of code need to be changed.
 
-4. Save the Program.cs file.
+4. Save the **Program.cs** file.
 
 ::: zone-end
 
@@ -406,14 +406,14 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
     * **npm install azure-iothub**
     * **npm install chalk**
 
-1. After you've entered the code below into the app.js file, you can run it from the terminal by entering `node app.js`. Ensure that the "cheesecaveservice" folder is the current folder of the terminal.
+1. After you've entered the code below into the **app.js** file, you can run it from the terminal by entering `node app.js`. Ensure that the "cheesecaveservice" folder is the current folder of the terminal.
 
 ::: zone-end
 ::: zone pivot="vscode-csharp"
 
 1. Open a terminal in Visual Studio Code, and create a folder called "cheesecaveoperator" (enter `mkdir cheesecaveoperator`). Navigate to the cheesecaveoperator folder.
 
-1. Enter the following command in the terminal: `dotnet new console`. This command creates a Program.cs file in your folder, along with a project file.
+1. Enter the following command in the terminal: `dotnet new console`. This command creates a **Program.cs** file in your folder, along with a project file.
 
 1. Enter `dotnet restore` in the terminal. This command gives your app access to the required .NET packages.
 
@@ -422,9 +422,9 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
     * **dotnet add package Microsoft.Azure.Device**
     * **dotnet add package Newtonsoft.Json**.
 
-1. From the **File** menu, open up the Program.cs file, and delete the default contents.
+1. From the **File** menu, open up the **Program.cs** file, and delete the default contents.
 
-1. After you've entered the code below into the Program.cs file, run the code with the command `dotnet run`. This command will run the Program.cs file in the current folder, so ensure you are in the correct folder.
+1. After you've entered the code below into the **Program.cs** file, run the code with the command `dotnet run`. This command will run the **Program.cs** file in the current folder, so ensure you are in the correct folder.
 
 ::: zone-end
 ::: zone pivot="vs-node"
@@ -436,7 +436,7 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
     * **azure-iothub**
     * **chalk**
 
-1. Delete the default contents of the app.js file. Add a comment line such as `// Cheese Cave Operator back-end app`.
+1. Delete the default contents of the **app.js** file. Add a comment line such as `// Cheese Cave Operator back-end app`.
 
 1. When you've entered the code below, you'll be able to run the app with the **Start Without Debugging**, or **Start Debugging**, options.
 
@@ -452,9 +452,9 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
     * **Microsoft.Azure.EventHubs**
     * **Newtonsoft.Json**
 
-1. Delete the default contents of Program.cs.
+1. Delete the default contents of **Program.cs**.
 
-1. Add all the code that follows to the Program.cs file.
+1. Add all the code that follows to the **Program.cs** file.
 
 ::: zone-end
 
@@ -462,7 +462,7 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 
 ::: zone pivot="vs-node,vscode-node"
 
-1. With the app.js file open, copy and paste the following code.
+1. With the **app.js** file open, copy and paste the following code.
 
 ```JavaScript
 // Copyright (c) Microsoft. All rights reserved.
@@ -544,12 +544,12 @@ EventHubClient.createFromIotHubConnectionString(connectionString).then(function 
 
 3. Replace the `const deviceId` if you did not use the suggested "CheeseCaveID".
 
-4. Save the app.js file.
+4. Save the **app.js** file.
 
 ::: zone-end
 ::: zone pivot="vs-csharp,vscode-csharp"
 
-1. Open the Program.cs file for the back-end app.
+1. Open the **Program.cs** file for the back-end app.
 
 ```cs
 // Copyright (c) Microsoft. All rights reserved.
@@ -655,7 +655,6 @@ namespace cheesecave_operator
         }
     }
 }
-
 ```
 
 > [!NOTE]
@@ -665,7 +664,7 @@ namespace cheesecave_operator
 
 3. Replace the &lt;your event hub endpoint&gt;, &lt;your event hub path&gt;, and the &lt;your event hub Sas key&gt; with the strings you saved off to your text file.
 
-4. Save the Program.cs file.
+4. Save the **Program.cs** file.
 
 ::: zone-end
 

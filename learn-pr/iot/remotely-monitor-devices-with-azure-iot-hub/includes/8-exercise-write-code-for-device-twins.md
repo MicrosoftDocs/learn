@@ -6,7 +6,7 @@ We'll start this time with the back-end service app.
 
 ::: zone pivot="node"
 
-1. Open the app.js file for the back-end app.
+1. Open the **app.js** file for the back-end app.
 2. Add the following code to the end of the file. This code sets the desired temperature of the device to 50 degrees F, humidity to 85 percent, and sets two **tags** (information only available to the IoT Hub). To verify the tags, a call is made to query the device twins based on a SQL search.
 
 ```javascript
@@ -63,15 +63,14 @@ function queryTwins() {
         }
     });
 };
-
 ```
 
-3. Save the app.js file.
+3. Save the **app.js** file.
 
 ::: zone-end
 ::: zone pivot="csharp"
 
-1. Open the Program.cs file, for the back-end app.
+1. Open the **Program.cs** file, for the back-end app.
 
 2. Add the following code, perhaps to the end of the class.
 
@@ -119,7 +118,7 @@ function queryTwins() {
             InvokeMethod().GetAwaiter().GetResult();
 ```
 
-4. Save the Program.cs file.
+4. Save the **Program.cs** file.
 
 ::: zone-end
 
@@ -129,7 +128,7 @@ Now we need to add code to the device app.
 
 ::: zone pivot="node"
 
-1. Open up the app.js file for the device.
+1. Open up the **app.js** file for the device.
 
 1. Add the following code to the end of the file.
 
@@ -185,7 +184,6 @@ client.getTwin(function (err, twin) {
 3. Change the `onSetFanState` function, so the success section of the function reports the updated state of the fan.
 
 ```javascript
-            } else {
             fanState = request.payload;
 
             // Report success back to your hub.
@@ -193,15 +191,14 @@ client.getTwin(function (err, twin) {
 
             // Confirm changes to reported properties.
             sendReportedProperties();
-        }
 ```
 
-4. Save the app.js file.
+4. Save the **app.js** file.
 
 ::: zone-end
 ::: zone pivot="csharp"
 
-1. Open the Program.cs file for the device app.
+1. Open the **Program.cs** file for the device app.
 
 2. Add the following task to the class.
 
@@ -242,7 +239,7 @@ client.getTwin(function (err, twin) {
             s_deviceClient.SetDesiredPropertyUpdateCallbackAsync(OnDesiredPropertyChanged, null).Wait();
 ```
 
-4. Save the Program.cs file.
+4. Save the **Program.cs** file.
 
 ::: zone-end
 
