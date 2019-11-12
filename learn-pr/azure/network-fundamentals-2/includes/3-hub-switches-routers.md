@@ -1,6 +1,9 @@
-As an Azure Developer, Solution Architect, or Administrator. Before considering a move to the cloud, it's a good idea to have a fundamental understanding of the basics of networks, their components, and building blocks. The next step in understanding the composition of a network is how they're built. A network cannot exist unless each of the devices has the means of communicating with each other. This knowledge applies whether it's your own organization's network or more extensive networks like the world wide web. All networks are built on the same principals.
+The next step in understanding the composition of a network is how they're built. A network cannot exist unless each of the devices has the means of communicating with each other. This knowledge applies whether it's your own organization's network or more extensive networks like the world wide web. All networks are built on the same principals.
 
 In this until, you'll learn about the hardware that forms the backbone of any network, hubs, switches, and routers.
+
+![text](../media/3-osi-model.png)
+**7 layer OSI network model**
 
 ## Network Infrastructure
 
@@ -8,11 +11,11 @@ All networks, regardless of their type or usage, are comprised of the same funda
 
 ## Hub
 
-To build a network, you need a means of connecting different devices together.  The simplest and most basic network device for achieving this is a hub.  It is also known as an Ethernet hub, multiport hub, repeater hub, or network hub.   Each of them operates in the same fundamental way.   The hub will contain multiple ports, which traditionally come in groups of 4, 8, 16, 24, and 32, etc. A port is an input/output Ethernet connection between the hub and a network device, like a computer.   A hub can only operate at one speed, and that is the speed of the slowest network device on the network.  A hub is unaware of the type or nature of the device connected to it.
+To build a network, you need a means of connecting different devices together.  The simplest and most basic network device for achieving this is a hub.  It is also known as an Ethernet hub, multiport hub, repeater hub, or network hub.   Each of them operates in the same fundamental way.   The hub will contain multiple ports, which traditionally come in groups of 4, 8, 16, 24, and 32, etc. A port is an input/output Ethernet connection between the hub and a network device, like a computer.   A hub can only operate at one speed, and that is the speed of the slowest network device on the network.  A hub is unaware of the type, or nature, of the devices connected to it.
 
 As a signal arrives at one port, it's replicated to every other active port in the hub.  An active port is one where a network device is connected.  For example, if you assume a four-port hub, with ports 1, 2, and 4 active.  When a signal is received by port 1, the signal is output to ports 2 and 4.
 
-A hub operates at the physical level of the OSI model.
+A hub operates at the physical level of the 7 layer OSI network model.
 
 ### Physical level functionality
 
