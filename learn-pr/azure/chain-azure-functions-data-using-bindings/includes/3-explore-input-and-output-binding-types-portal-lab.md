@@ -25,11 +25,10 @@ Let's create a function app that we'll use throughout this entire module. A func
 1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal, then select **Compute** > **Function App**.
 
 1. Set the function app properties as follows:
-
     | Property | Suggested value | Description |
     |---|---|---|
-    | **Subscription** | Choose _Concierge Subscription_ | Name of the subscription under which this new function app is created. |
-    | **Resource Group**|  Choose _<rgn>[sandbox resource group name]</rgn>_ | Name of the resource group in which to create your function app. |
+    | **Subscription** | _Concierge Subscription_ | The Azure subscription that you want to use for this Azure Cosmos DB account. |
+    | **Resource Group**| _<rgn>[sandbox resource group name]</rgn>_ | This field is pre-populated with the resource group from your sandbox. |
     | **Function App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`.  |
     | **Publish** | _Code_ | Option to publish code files or a Docker container.  |
     | **Runtime Stack** | _Node.js_ | The sample code in this module is written in JavaScript.  |
@@ -62,11 +61,11 @@ Let's create a function app that we'll use throughout this entire module. A func
 
     | Property     | Suggested value  | Description  |
     |--------------|------------------|--------------|
-    | **Subscription** | Choose _Concierge Subscription_ | Name of the subscription under which this new function app is created. |
-    | **Resource Group**|  Choose _<rgn>[sandbox resource group name]</rgn>_ | Name of the resource group in which to create your function app. |
+    | **Subscription** | _Concierge Subscription_ | The Azure subscription that you want to use for this Azure Cosmos DB account. |
+    | **Resource Group**| _<rgn>[sandbox resource group name]</rgn>_ | This field is pre-populated with the resource group from your sandbox. |
     | **Function App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`.  |
     | **Publish** | _Code_ | Option to publish code files or a Docker container.  |
-    | **Runtime Stack** | PowerShell Core | The sample code in this module is written in PowerShell.  |
+    | **Runtime Stack** | _PowerShell Core_ | The sample code in this module is written in PowerShell.  |
     | **Region** | _Central US_ | Choose the region nearest you. |
 
 1. Select **Review + create** and then **Create** to provision and deploy the function app.
