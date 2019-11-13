@@ -21,21 +21,15 @@ You can monitor the performance of a storage account using the **Overview** tab 
 
 ![Screenshot of the Metrics page for a storage account in the Azure portal](../media/2-block-blob-metrics.png)
 
+### Azure Storage Explorer (desktop version)
+
+The desktop version of [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/) gives you another way to view the logs and metrics gathered by Azure Storage Analytics. The **\$Metrics** tables and the **$logs** container are all accessible in Storage Explorer, and you can export the data, including the metrics in the **\$Metrics** tables, to a folder on your desktop computer.
+
 ### AzCopy
 
 You can download the storage account logs to your local computer by using the [AzCopy](https://aka.ms/AzCopy) utility, or the desktop version of [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/). You can then analyze this data by using analysis tools on your desktop.
 
-The following command shows an example that retrieves the diagnostic logs for a storage account named *mystorageaccount*. The log files are saved to a folder named *C:\logs* on the local computer. Replace **\<storage account key\>** with one of the keys that you can find on the **Access keys** page for the storage account in the Azure portal:
-
-```bash
-azcopy /source:"https://mystorageaccount.blob.core.windows.net/$logs" /dest:C:logs /sourceType:blob /SourceKey:<storage account key> /S
-```
+Unlike Azure Storage Explorer, you can't use AzCopy to download data from storage tables. As a result, you can't use this tool to retrieve the data from the **\$Metrics** tables.
 
 > [!NOTE]
 > The **\$logs** container is hidden from many Azure tools. For example, you won't see it appear in the online version of Storage Explorer used by the Azure portal, or Cloud Explorer in Visual Studio. AzCopy and the desktop version of Azure Storage Explorer are exceptions.
-
-You can't use AzCopy to download data from storage tables, so you can't use this tool to retrieve the data from the **\$Metrics** tables.
-
-### Azure Storage Explorer (desktop version)
-
-The desktop version of [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/) gives you another way to view the logs and metrics gathered by Azure Storage Analytics. The **\$Metrics** tables and the **$logs** container are all accessible in Storage Explorer, and you can export the data, including the metrics in the **\$Metrics** tables, to a folder on your desktop computer.

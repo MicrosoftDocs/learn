@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.architect-storage-infrastructure
+metadata:
+  title: Architect storage infrastructure in Azure learning path
+  description: Learn how to architect storage solutions for your applications in Azure.
+  brand: azure
+  ms.date: 10/23/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Architect storage infrastructure in Azure
+summary: Learn how to architect storage solutions for your applications in Azure.
+prerequisites: None
+iconUrl: /learn/achievements/architect-storage-infrastructure.svg
+levels:
+- intermediate
+roles:
+- solution-architect
+products:
+- azure
+- azure-storage
+modules:
+- learn.choose-storage-approach-in-azure
+- learn.create-azure-storage-account
+- learn.connect-app-to-azure-storage
+- learn.ha-application-storage-with-grs
+- learn.azure.secure-azure-storage-account
+- learn.monitor-diagnose-and-troubleshoot-azure-storage
+trophy:
+  uid: learn.architect-storage-infrastructure.trophy

@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Troubleshoot with storage logging
-durationInMinutes: 10
+durationInMinutes: 4
 content: |
   [!include[](includes/5-storage-logging.md)]

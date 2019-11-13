@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Exercise - Enable storage logging and view log data
-durationInMinutes: 10
+durationInMinutes: 8
 interactive: powershell
 azureSandbox: true
 content: |

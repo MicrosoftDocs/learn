@@ -60,7 +60,7 @@ az storage logging update \
 Like the **\$Metrics** tables, the **\$logs** container isn't visible too many tools. However, you can read blobs in the **\$logs** container using the desktop version of Azure Storage Explorer, using PowerShell, by using the AzCopy command as described in unit 2, or by writing your own code. The example below shows PowerShell. The storage account is specified by using the **New-AzureStorageContext** cmdlet.
 
 ```PowerShell
-$context = New-AzureStorageContext -StorageAccountName mystorageaccount -StorageAccountKey <storage account key>
+$context = New-AzureStorageContext -StorageAccountName <your-storage-account-name> -StorageAccountKey <storage account key>
 
 $logBlobs = Get-AzureStorageBlob -Container '$logs' -Context $context
 $destination = "C:\Logs"
