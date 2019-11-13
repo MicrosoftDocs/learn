@@ -1,4 +1,4 @@
-Use Azure AD Join to manage user and device identity in Azure.
+Use Azure AD join to manage user and device identity in Azure.
 
 You work for a large book publisher that's deploying Windows 10 to employees' laptops. Your organization uses Azure Active Directory with multi-factor authentication enabled. Using these services, you can manage user identities and help protect the organization's resources. You want to add another layer of security for devices. Specifically, you want to restrict access to the organization's resources to only those devices managed by your organization and considered compliant by your mobile device management (MDM) system. You also want to improve your organization's experience when switching between devices.
 
