@@ -1,6 +1,6 @@
 It's quite common for IT departments to manage a large set of Azure resources - ranging from Azure Virtual Machines to managed websites.
 
-While the Azure portal is easy to use for one-off tasks, navigating through the various blades adds time when you have to create, change, or delete multiple things. This is where the command line shines - you can issue commands quickly and efficiently, or even use scripts to run repetitive tasks. With Azure, you have two different command line tools you can work with: Azure PowerShell, and the Azure CLI.
+While the Azure portal is easy to use for one-off tasks, navigating through the various panes adds time when you have to create, change, or delete multiple things. This is where the command line shines - you can issue commands quickly and efficiently, or even use scripts to run repetitive tasks. With Azure, you have two different command line tools you can work with: Azure PowerShell, and the Azure CLI.
 
 With either of these tools, you can write scripts to check the status of cloud servers, deploy new configurations, open ports in the firewall, or connect to a virtual machine to change a setting. Windows admins tend to prefer Azure PowerShell, while developers and Linux admins often use the Azure CLI.
 

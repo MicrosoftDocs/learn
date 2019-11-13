@@ -51,6 +51,8 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/learn/modules/create-release-pipeline/8-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
 
+[!include[](../../shared/includes/project-visibility.md)]
+
 ## Prepare Visual Studio Code
 
 First you'll set up Visual Studio Code so you can build the website locally and work with source files.

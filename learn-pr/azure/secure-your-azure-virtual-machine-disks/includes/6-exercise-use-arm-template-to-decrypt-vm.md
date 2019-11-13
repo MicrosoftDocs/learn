@@ -35,6 +35,6 @@ The deployment may take a few minutes to complete.
 
 1. In the sidebar of the Azure portal, click **Virtual machines** and select your VM **fmdata-vm01**. Alternatively, you can search for your VM by name from **All Resources**.
 
-1. On the **Virtual machine** blade, under **SETTINGS**, click **Disks**.
+1. On the **Virtual machine** pane, under **SETTINGS**, click **Disks**.
 
-1. On the **Disks** blade, notice the OS disk encryption status is now **Disabled**.
+1. On the **Disks** pane, notice the OS disk encryption status is now **Disabled**.
