@@ -15,7 +15,6 @@ abstract: |
   - Learn how to leverage the Cloud Adoption Framework to identify where your organization is in the digital transformation journey.
   - Identify triggers and opportunities for cloud adoption.
   - Recognize the components needed to develop a digital transformation strategy around your business, people, and technology.
-ratingEnabled: false
 prerequisites: |
   None
 iconUrl: /learn/achievements/microsoft-cloud-adoption-framework-for-azure.svg
