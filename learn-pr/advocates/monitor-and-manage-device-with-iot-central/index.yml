@@ -2,7 +2,7 @@
 uid: learn.monitor-manage-device-with-iotcentral
 metadata:
   title: Monitor and manage your coffee machine with Azure IoT Central
-  description: Learn how to define the data and commands that create an Azure IoT Central application to manage an Internet of Things device.
+  description: Learn how to create an Azure IoT Central application to control Internet of Things devices that communicate through a unique connection string.
   ms.date: 09/24/2018
   author: lnyswonger
   ms.author: luken
