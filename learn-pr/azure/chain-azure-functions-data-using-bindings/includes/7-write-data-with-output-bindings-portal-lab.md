@@ -31,8 +31,8 @@ Just as Azure Functions supports input bindings for various integration sources,
 
     | Field | Value |
     |---|---|
-    | **Name** | `add-bookmark` |
-    | **Authorization level** | `Function` |
+    | **Name** | _add-bookmark_ |
+    | **Authorization level** | _Function_ |
 
 1. Select **Create** to create your function. This action opens the **index.js** file in the code editor and displays a default implementation of the HTTP-triggered function.
 
@@ -52,8 +52,8 @@ Just as Azure Functions supports input bindings for various integration sources,
 
     | Field | Value |
     |---|---|
-    | **Name** | `add-bookmark` |
-    | **Authorization level** | `Function` |
+    | **Name** | _add-bookmark_ |
+    | **Authorization level** | _Function_ |
 
 1. Select **Create** to create your function. This action opens the **run.ps1** file in the code editor and displays a default implementation of the HTTP-triggered function.
 
@@ -79,8 +79,8 @@ Let's repeat what we did in the preceding unit to add an Azure Cosmos DB input b
 
         | Property | Suggested value | Description |
         |---|---|---|
-        | **Connection**| `Azure Cosmos DB account` | This field is selected by default. |
-        | **Subscription** | `Concierge Subscription` | The Azure subscription that you want to use for this Azure Cosmos DB account. |
+        | **Connection**| _Azure Cosmos DB account_ | This field is selected by default. |
+        | **Subscription** | _Concierge Subscription_ | The Azure subscription that you want to use for this Azure Cosmos DB account. |
         | **Database account** | Cosmos DB account | Select the **Account Name** that you specified when you created your Azure Cosmos DB account. |
 
     1. Select **Select** to create your connection.
@@ -95,11 +95,11 @@ You want to look up a bookmark with a specific ID, so let's tie an ID that we re
 
     | Setting | Value | Description |
     |---|---|---|
-    | **Document parameter name** | `bookmark` | The name used to identify this binding in your code. |
-    | **Database name** | `func-io-learn-db` | The database to work with. This value is the database name we set earlier in this lesson. |
-    | **Collection Name** | `Bookmarks` | The container from which we'll read data. We defined this setting was earlier in the lesson. |
+    | **Document parameter name** | _bookmark_ | The name used to identify this binding in your code. |
+    | **Database name** | _func-io-learn-db_ | The database to work with. This value is the database name we set earlier in this lesson. |
+    | **Collection Name** | _Bookmarks_ | The container from which we'll read data. We defined this setting was earlier in the lesson. |
     | **SQL Query (optional)** | Leave blank | We are only retrieving one item at a time based on the ID. So, filtering with the Document ID field is better than using a SQL Query in this instance. We could craft a SQL Query to return one entry (`SELECT * from b where b.ID = {id}`). That query would indeed return an item, but it would return it in a items collection. Our code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
-    | **Partition key (optional)** | `{id}` | Add the partition key that we defined when we created the _Bookmarks_ Azure Cosmos DB container earlier. The key entered here (specified in input binding format `{<key>}`) must match the one in the container. |
+    | **Partition key (optional)** | _{id}_ | Add the partition key that we defined when we created the _Bookmarks_ Azure Cosmos DB container earlier. The key entered here (specified in input binding format `{<key>}`) must match the one in the container. |
 
 1. Select **Save** to save all changes to this binding configuration.
 
@@ -121,10 +121,10 @@ We now have an Azure Cosmos DB input binding. It's time to add an output binding
 
     | Setting | Value | Description |
     |---|---|---|
-    | **Document parameter name** | `newbookmark` | The name used to identify this binding in your code. This parameter is used to write a new bookmark entry. |
-    | **Database name** | `func-io-learn-db` | The database to work with. This value is the database name we set earlier in this lesson. |
-    | **Collection Name** | `Bookmarks` | The container from which we'll read data. We defined the container earlier in the lesson. |
-    | **Partition key (optional)** | `{id}` | Add the partition key that we defined when we created the _Bookmarks_ Azure Cosmos DB container earlier. The key entered here (specified in input binding format `{<key>}`) must match the one in the container. |
+    | **Document parameter name** | _newbookmark_ | The name used to identify this binding in your code. This parameter is used to write a new bookmark entry. |
+    | **Database name** | _func-io-learn-db_ | The database to work with. This value is the database name we set earlier in this lesson. |
+    | **Collection Name** | _Bookmarks_ | The container from which we'll read data. We defined the container earlier in the lesson. |
+    | **Partition key (optional)** | _{id}_ | Add the partition key that we defined when we created the _Bookmarks_ Azure Cosmos DB container earlier. The key entered here (specified in input binding format `{<key>}`) must match the one in the container. |
     | **Collection throughput (optional)** | Leave blank | We can accept the default here. |
 
 1. Select **Save** to save all changes to this binding configuration.
@@ -157,8 +157,8 @@ Next, we'll set up a storage account connection. This is where our queue will be
 
     | Property | Old value | New value | Description |
     |---|---|---|---|
-    | **Message parameter name** | `outputQueueItem` | `newmessage` | The binding property we'll use in code. |
-    | **Queue name** | `outqueue` | `bookmarks-post-process` | The name of the queue where we're placing bookmarks so that they can be processed further by another function. |
+    | **Message parameter name** | _outputQueueItem_ | _newmessage_ | The binding property we'll use in code. |
+    | **Queue name** | _outqueue_ | _bookmarks-post-process_ | The name of the queue where we're placing bookmarks so that they can be processed further by another function. |
 
 1. Remember to select **Save** to save your changes.
 
