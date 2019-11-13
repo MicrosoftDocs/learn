@@ -2,29 +2,29 @@ The Azure portal has several features and services available; let's look at some
 
 ![Screenshot of the Azure portal icon bar](../media/5-portal-icon-bar.png)
 
-## Services blade
+## Services pane
 
 1. In the left-hand pane, click **All services**. Take a couple of minutes to scroll down the list to see how many services Azure offers.
 
-    ![Screenshot of the services blade](../media/5-services.blade.png)
+    ![Screenshot of the services pane](../media/5-services.pane.png)
 
 1. You can search for services through the _filter_ box.
 
-1. Select **Virtual machines**. If you don't see it, use the filter box. The **Virtual Machines** blade appears. There is nothing currently showing because you have not defined any virtual machines.
+1. Select **Virtual machines**. If you don't see it, use the filter box. The **Virtual Machines** pane appears. There is nothing currently showing because you have not defined any virtual machines.
 
-1. Click the **+ Add** button. The **Create a virtual machine** blade appears, as in the previous exercise.
+1. Click the **+ Add** button. The **Create a virtual machine** pane appears, as in the previous exercise.
 
-1. Click the **X** in the top right-hand corner to close the **Create a virtual machine** blade.
+1. Click the **X** in the top right-hand corner to close the **Create a virtual machine** pane.
 
-1. Click the **X** in the top right-hand corner to close the **Virtual machines** blade. 
+1. Click the **X** in the top right-hand corner to close the **Virtual machines** pane. 
 
 1. You should now be back at the Dashboard page. If not, you can always click on **Dashboard** in the left-most pane.
 
-## Notifications blade
+## Notifications pane
 
 1. On the icon bar menu bar, click the **Notifications** (bell) icon. This window will list any pending notifications.
 
-    ![Screenshot of notifications window](../media/5-notifications-blade.png)
+    ![Screenshot of notifications window](../media/5-notifications-pane.png)
 
 1. If any notifications appear, hover your mouse over one of them. Click the **X** that appears in that notification to dismiss it.
 
@@ -70,25 +70,25 @@ Finally, there are a variety of management and programming tools included in the
 
 1. To revert back to English, click the **Settings** (cog) icon in the top menu bar and switch to the **Idioma y región** settings. Select **Idioma** and pick **English**. Click the **Aplicar** button. The portal returns to English.
 
-## Feedback blade
+## Feedback pane
 
 ![Icon representing the feedback panel](../media/5-feedback-icon.png)
 
-1. Click the **Feedback** (smiley face) icon to open the **Send us feedback** blade.
+1. Click the **Feedback** (smiley face) icon to open the **Send us feedback** pane.
 
 1. Type your impressions of Azure in the **Tell us about your experience** box, click the box that says **Microsoft can email you about your feedback**, and click **Submit Feedback**.
 
 1. A **Feedback sent** message will appear, and then close. You should now be back at the Dashboard.
 
-## Help blade
+## Help pane
 
 ![Icon representing the feedback panel](../media/5-help-icon.png)
 
-1. Click the **Help** (`?`) icon to show the **Help** blade.
+1. Click the **Help** (`?`) icon to show the **Help** pane.
 
 1. Click the **Help + support** button.
 
-1. In the **Help + support** blade, under **Support**, click **New support request**. To create a new support request, you would fill in the information in each of the following sections, and then click **Create** to lodge the issue.
+1. In the **Help + support** pane, under **Support**, click **New support request**. To create a new support request, you would fill in the information in each of the following sections, and then click **Create** to lodge the issue.
 
     - **Basics:** the issue type
     - **Problem:** severity of the problem, a summary and description, and any additional information
@@ -111,21 +111,21 @@ Finally, there are a variety of management and programming tools included in the
 - Show diagnostics
 - Privacy + terms
 
-1. Click the **X** in the top right-hand corner to close the **Help** blade.
+1. Click the **X** in the top right-hand corner to close the **Help** pane.
 
-1. Close the **What's new** blade. You should now be back to the Dashboard.
+1. Close the **What's new** pane. You should now be back to the Dashboard.
 
 ## Directory and subscription
 
 ![Icon representing the subscription panel](../media/5-subscription-icon.png)
 
-1. Click the **Directory + Subscription** (book and filter) icon to show the **Directory + subscription** blade.  
+1. Click the **Directory + Subscription** (book and filter) icon to show the **Directory + subscription** pane.  
 
     This is where you can switch between multiple subscriptions or directories. You should see that you are in the Concierge Subscription of the Microsoft Learn Sandbox directory here. If you have other Azure directories tied to the same email address, those subscriptions will be available as well.
 
     There is also a link to learn more about directories and subscriptions.
 
-1. Click the **X** in the top right-hand corner to close the **Directory + subscription** blade.
+1. Click the **X** in the top right-hand corner to close the **Directory + subscription** pane.
 
 ## Profile settings
 
@@ -148,7 +148,7 @@ Finally, there are a variety of management and programming tools included in the
 
 1. Note the service costs and check them against what you expect for your current subscription.
 
-1. Click the **X** in the top right-hand corner to close the **Costs by service** blade.
+1. Click the **X** in the top right-hand corner to close the **Costs by service** pane.
 
 1. Click the **X** in the top right-hand corner to close the **Cost Management + Billing - Invoices** page.
 

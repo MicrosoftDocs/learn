@@ -55,11 +55,11 @@ Let's classify the data in this sample Azure SQL database.
 
 1. Select the **Data Discovery and Classification** card.
 
-    ![Screenshot of the Advanced Threat Protection blade, with the Data Discovery and Classification preview card called out.](../media/M4_01_02_01.png)
+    ![Screenshot of the Advanced Threat Protection pane, with the Data Discovery and Classification preview card called out.](../media/M4_01_02_01.png)
 
 1. The initial state will have recommended columns - 15 in this case, but none of them will be classified yet. Select the recommendations info tip at the top of the screen to see the recommended columns.
 
-    ‎![Screenshot of the Data discovery and classification (preview) blade, Overview tab with the previously mentioned items displaying.](../media/M4_01_02_02.png)
+    ‎![Screenshot of the Data discovery and classification (preview) pane, Overview tab with the previously mentioned items displaying.](../media/M4_01_02_02.png)
 
 1. Select all the columns and then **Accept selected recommendations**.
 
@@ -67,11 +67,11 @@ Let's classify the data in this sample Azure SQL database.
 
 1. Review the **Overview** tab. Notice that it includes a summary of the current classification state of the database, including a detailed list of all classified columns. You can also filter this view to only see specific schema parts, information types, and labels.
 
-    ‎![Screenshot of the Data discovery and classification (preview) blade, Overview tab with the previously mentioned items displaying.](../media/M4_01_02_021.png)
+    ‎![Screenshot of the Data discovery and classification (preview) pane, Overview tab with the previously mentioned items displaying.](../media/M4_01_02_021.png)
 
 1. To download a report in Excel format, in the top menu of the window select Export.
 
-    ![Screenshot of the Data discovery and classification (preview) blade with Export selected.](../media/M4_01_02_03.png)
+    ![Screenshot of the Data discovery and classification (preview) pane with Export selected.](../media/M4_01_02_03.png)
 
 ### Customizing the classification
 
@@ -85,16 +85,16 @@ You can either take the suggested classifications as we did earlier, or manually
 
 1. In the top menu of the window, select **Add classification**.
 
-    ![Screenshot of the Data discovery and classification (preview) blade with Add classification selected.](../media/M4_01_02_06.png)
+    ![Screenshot of the Data discovery and classification (preview) pane with Add classification selected.](../media/M4_01_02_06.png)
 
-1. In the Add classification blade, configure the five fields that display, and then select Add classification:
+1. In the Add classification pane, configure the five fields that display, and then select Add classification:
    * Schema name
    * Table name
    * Column name
    * Information type
    * Sensitivity label.
 
-    ![In the Add classification blade, the previously mentioned fields are called out.](../media/M4_01_02_07.png)
+    ![In the Add classification pane, the previously mentioned fields are called out.](../media/M4_01_02_07.png)
 
 1. To complete your classification and persistently label (tag) the database columns with the new classification metadata, in the top menu of the window, select **Save**.
 

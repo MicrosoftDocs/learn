@@ -67,7 +67,7 @@ Over time if you realize you need additional compute power to keep up with deman
 
 1. From the portal, click **Create a resource** from the upper left-hand corner. Select **Databases**, then select **SQL Database**.
 
-   ![Screenshot of the Azure portal showing the Create a resource blade with the Databases section selected and the Create a resource, Databases, and SQL Database buttons highlighted.](../media/3-create-db.png)
+   ![Screenshot of the Azure portal showing the Create a resource pane with the Databases section selected and the Create a resource, Databases, and SQL Database buttons highlighted.](../media/3-create-db.png)
 
 1. Use these values to fill out the rest of the form.
 
@@ -127,15 +127,15 @@ For your prototype, you only need to access the database from your laptop. Later
 
 Let's enable your development computer to access the database through the firewall now.
 
-1. Go to the overview blade of the Logistics database. If you pinned the database earlier, you can click the **Logistics** tile on the dashboard to get there.
+1. Go to the overview pane of the Logistics database. If you pinned the database earlier, you can click the **Logistics** tile on the dashboard to get there.
 
 1. Click **Set server firewall**.
 
-    ![Screenshot of the Azure portal showing a SQL database overview blade with the Set server firewall button highlighted.](../media/3-set-server-firewall.png)
+    ![Screenshot of the Azure portal showing a SQL database overview pane with the Set server firewall button highlighted.](../media/3-set-server-firewall.png)
 
 1. Click **Add client IP**.
 
-    ![Screenshot of the Azure portal showing a SQL database Firewall settings blade with the Add client IP button highlighted.](../media/3-add-client-ip.png)
+    ![Screenshot of the Azure portal showing a SQL database Firewall settings pane with the Add client IP button highlighted.](../media/3-add-client-ip.png)
 
 1. Click **Save**.
 
