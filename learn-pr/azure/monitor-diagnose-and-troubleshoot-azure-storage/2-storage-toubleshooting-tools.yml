@@ -13,35 +13,3 @@ title: Identify the troubleshooting tools available in Azure
 durationInMinutes: 10
 content: |
   [!include[](includes/2-storage-troubleshooting-tools.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-  # - content: "You want to download the diagnostic logs from you storage account. You are attempting to use Azure Storage Explorer in the portal, but the $logs container appears to be missing. What would be the most likely cause?"
-  #   choices:
-  #   - content: "You have to create the $logs container yourself before Azure Storage Analytics will start capturing data."
-  #     isCorrect: false
-  #     explanation: "No. The $logs container is not visible using Azure Storage Explorer. You must use a tool such as AzCopy to download the data from this container."
-  #   - content: "The $logs container is not visible using Azure Storage Explorer. You must use a tool such as AzCopy to download the data from this container."
-  #     isCorrect: true
-  #     explanation: "This answer is correct."
-  #   - content: "You have to create a special storage account named $logs to store diagnostic logs. The $logs container will be created in this special account."
-  #     isCorrect: false
-  #     explanation: "No. The $logs container is not visible using Azure Storage Explorer. You must use a tool such as AzCopy to download the data from this container."
-  #   - content: "You must be an administrator for the Azure subscription holding the storage account. If you can't see the $logs container, you are probably connected to Azure using a non-administrative account."
-  #     isCorrect: false
-  #     explanation: "No. The $logs container is not visible using Azure Storage Explorer. You must use a tool such as AzCopy to download the data from this container."
-  - content: "How do you use Microsoft Message Analyzer to examine Azure Storage diagnostic logs?"
-    choices:
-    - content: "Attach Microsoft Message Analyzer to your Azure account and configure it to intercept all messages that are written to the diagnostic logs."
-      isCorrect: false
-      explanation: "No. Download the diagnostic logs from Azure storage to your local computer using a tool such as AzCopy, and then open the log files using Microsoft Message Analyzer."
-    - content: "Send all your requests to Azure Storage through a web app, and use Microsoft Message Analyzer to capture the HTTP network trace log for this web app."
-      isCorrect: false
-      explanation: "No. Download the diagnostic logs from Azure storage to your local computer using a tool such as AzCopy, and then open the log files using Microsoft Message Analyzer."
-    - content: "Download the diagnostic logs from Azure storage to your local computer using a tool such as AzCopy, and then open the log files using Microsoft Message Analyzer."
-      isCorrect: true
-      explanation: This answer is correct."
-    - content: "Create the storage account in a virtual network. Attach Microsoft Message Analyzer to the same virtual network, and monitor the messages that are directed to and from the storage account."
-      isCorrect: false
-      explanation: "No. Download the diagnostic logs from Azure storage to your local computer using a tool such as AzCopy, and then open the log files using Microsoft Message Analyzer."
-    
