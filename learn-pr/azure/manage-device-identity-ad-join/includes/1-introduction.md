@@ -4,7 +4,7 @@ You work for a large book publisher that's deploying Windows 10 to employees' la
 
 In this module, you'll gain an understanding of the various options available for managing device identities. You'll also explore enterprise state roaming and how that can benefit your Azure AD Joined users when they switch devices.
 
-By the end of this module, you'll have a full understanding of how to set up and configure devices through your AD using Azure AD Join. You'll also understand the benefits of using enterprise state roaming to reduce maintenance and improve the user experience when switching between devices.
+By the end of this module, you'll understand how to set up and configure devices in Azure Active Directory (Azure AD) for AD join.  You'll also understand the benefits of using enterprise state roaming to reduce maintenance and improve the user experience when switching between devices.
 
 ## Learning objectives
 
