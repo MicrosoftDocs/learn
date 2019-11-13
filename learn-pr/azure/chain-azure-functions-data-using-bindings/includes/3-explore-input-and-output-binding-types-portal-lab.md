@@ -25,6 +25,7 @@ Let's create a function app that we'll use throughout this entire module. A func
 1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal, then select **Compute** > **Function App**.
 
 1. Set the function app properties as follows:
+
     | Property | Suggested value | Description |
     |---|---|---|
     | **Subscription** | _Concierge Subscription_ | The Azure subscription that you want to use for this Azure Cosmos DB account. |
@@ -59,8 +60,8 @@ Let's create a function app that we'll use throughout this entire module. A func
 
 1. Set the function app properties as follows:
 
-    | Property     | Suggested value  | Description  |
-    |--------------|------------------|--------------|
+    | Property | Suggested value | Description |
+    |---|---|---|
     | **Subscription** | _Concierge Subscription_ | The Azure subscription that you want to use for this Azure Cosmos DB account. |
     | **Resource Group**| _<rgn>[sandbox resource group name]</rgn>_ | This field is pre-populated with the resource group from your sandbox. |
     | **Function App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`.  |
