@@ -2,7 +2,7 @@
 uid: learn.persist-data-ef-core
 metadata:
   title: Persist and retrieve relational data with Entity Framework Core
-  description: This module guides you through creation of a data access project, how to connect to a relational database hosted in Azure, and how to manage CRUD queries.
+  description: This module guides you through creating a data access project, connecting to a relational database, and writing CRUD queries.
   ms.date: 09/24/2019
   author: scottaddie
   ms.author: scaddie
