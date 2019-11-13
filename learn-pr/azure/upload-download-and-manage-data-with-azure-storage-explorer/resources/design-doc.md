@@ -1,4 +1,4 @@
-## Title
+# Title
 
 Upload, download, and manage data with Azure Storage Explorer
 
