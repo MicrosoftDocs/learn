@@ -33,7 +33,7 @@ Before you connect to your database, it's a good idea to verify it exists and is
 Here, you use the `az` utility to list your databases and show some information about the **Logistics** database, including its maximum size and status.
 
 1. The `az` commands you'll run require the name of your resource group and the name of your Azure SQL logical server. To save typing, run this `azure configure` command to specify them as default values.
-    Replace `<server-name>` with the name of your Azure SQL logical server. Note that depending on the blade you are on in the portal this may show as a FQDN (servername.database.windows.net), but you only need the logical name without the .database.windows.net suffix.
+    Replace `<server-name>` with the name of your Azure SQL logical server. Note that depending on the pane you are on in the portal this may show as a FQDN (servername.database.windows.net), but you only need the logical name without the .database.windows.net suffix.
 
     ```azurecli
     az configure --defaults group=<rgn>[sandbox resource group name]</rgn> sql-server=<server-name>

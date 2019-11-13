@@ -54,7 +54,7 @@ Before you can add blobs to a Storage Account, you need to create a blob contain
 
 1. To add a blob container, under **Blob service**, click **Blobs**.
 
-1. In the Blobs blade, click **+ Container**.
+1. In the Blobs pane, click **+ Container**.
 
 1. In the **Name** field, enter **monitor-blobs-container**, then click **OK**. When you click on your new container, notice the **No blobs found** status message.
 
@@ -64,7 +64,7 @@ You are now ready to upload files to the blob container.
 
 1. To upload a single file to the blob container, click **Upload**.
 
-1. In the **Upload blob** blade, click the folder icon.
+1. In the **Upload blob** pane, click the folder icon.
 
 1. In the **Open** dialog box, select a small text file from your local file system and click **Open**.
 
@@ -76,7 +76,7 @@ You are now ready to upload files to the blob container.
 
 1. To upload multiple files to the blob container, click **Upload**.
 
-1. In the **Upload blob** blade, click the folder icon.
+1. In the **Upload blob** pane, click the folder icon.
 
 1. In the **Open** dialog box, select several graphics files from your local file system and click **Open**. Ensure that you have at least 50 MB of files selected.
 
@@ -94,7 +94,7 @@ You can simply check the size of the data stored in a container and the number a
 
 1. On the **monitor-blobs-container** container, click **Properties**.
 
-1. On the **Properties** blade, click **Calculate size**.
+1. On the **Properties** pane, click **Calculate size**.
 
 1. The size and number of blobs will now appear.
 
@@ -225,7 +225,7 @@ Metric data can be viewed in other formats, including Line charts, bar charts, a
 
 1. Click the different chart types and notice the change in the data display.
 
-1. Click the X to close the **Chart settings** blade.
+1. Click the X to close the **Chart settings** pane.
 
 ## Export a Chart to Excel
 

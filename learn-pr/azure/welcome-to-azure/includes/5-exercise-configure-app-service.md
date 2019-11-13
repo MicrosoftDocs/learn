@@ -56,7 +56,7 @@ For example, the **Settings** section gives you access to configure various aspe
 
     ![Screenshot showing Scale up selection](../media/5-settings-scale.png)
 
-1. Notice that there are three workload categories to choose from in the configuration blade. These three categories make it easier to decide the type of workload we'll run.
+1. Notice that there are three workload categories to choose from in the configuration pane. These three categories make it easier to decide the type of workload we'll run.
 
     | Category | Description |
     | --- | --- |
