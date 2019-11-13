@@ -1,6 +1,6 @@
 Storage Analytics logging records each operation performed in your storage account, and the outcome of these operations. The storage log provides details about each request made, rather than providing the minute-by-minute summary of operations that the metrics show. Using the logging information, you can examine the nature of requests made to a storage account, and whether these requests are successful.
 
-In the example scenario, you've decided that you need to trace each file upload and download operation performed against the new Customer Portal. Azure Storage Analytics logging provides an ideal way to capture this information.
+In the example scenario, you've decided that you need to trace each file upload and download operation done against the new Customer Portal. Azure Storage Analytics logging provides an ideal way to capture this information.
 
 In this unit, you'll learn about Storage Analytics logging. You'll see how to enable logging, the different types of information captured when you enable logging, and how you might use this information to detect problems that might occur when an application uses Azure storage.
 
@@ -18,7 +18,7 @@ Details for the following types of anonymous requests are also recorded:
 
 - Successful requests
 - Server errors
-- Timeout errors for both client and server
+- Time out errors for both client and server
 - Failed GET requests with error code 304 (*Not Modified*)
 
 Requests made by the Storage Analytics service itself aren't recorded.
@@ -44,7 +44,7 @@ Set-AzureStorageServiceLoggingProperty -Context $context -ServiceType Blob -Logg
 
 You can disable logging for a service by running the same command and setting the `LoggingOperations` parameter to `none`.
 
-If you're using the Azure CLI, run the `az storage logging update` command to enable logging. The example below enables read, write, and delete (rwd) logging for blob (b) storage:
+If you're using the Azure CLI, run the `az storage logging update` command to enable logging. The example below enables read, write, and delete (`rwd`) logging for blob (`b`) storage:
 
 ```azurecli
 az storage logging update \
@@ -57,7 +57,7 @@ az storage logging update \
 
 ## Download logs
 
-Like the **\$Metrics** tables, the **\$logs** container isn't visible to many tools. However, you can read blobs in the **\$logs** container using the desktop version of Azure Storage Explorer, using PowerShell, by using the AzCopy command as described in unit 2, or by writing your own code. The example below shows PowerShell. The storage account is specified by using the **New-AzureStorageContext** cmdlet.
+Like the **\$Metrics** tables, the **\$logs** container isn't visible too many tools. However, you can read blobs in the **\$logs** container using the desktop version of Azure Storage Explorer, using PowerShell, by using the AzCopy command as described in unit 2, or by writing your own code. The example below shows PowerShell. The storage account is specified by using the **New-AzureStorageContext** cmdlet.
 
 ```PowerShell
 $context = New-AzureStorageContext -StorageAccountName mystorageaccount -StorageAccountKey <storage account key>

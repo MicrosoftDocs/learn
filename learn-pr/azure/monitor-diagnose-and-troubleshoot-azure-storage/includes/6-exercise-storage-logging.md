@@ -1,22 +1,22 @@
-In the Customer Portal scenario, you've decided that you need more detailed information on the operations being performed rather than just the metrics that summarize performance. In this exercise, you'll enable logging for your storage account, rerun the sample application, and then download the log data that is generated.
+In the Customer Portal scenario, you've decided you need more detailed information on the operations in progress rather than just the metrics that summarize performance. In this exercise, you'll enable logging for your storage account, rerun the sample application, and then download the log data that is generated.
 
 ## Enable Storage Analytics logging
 
 1. In the Azure portal, navigate to the storage account that you created in the previous exercise.
 
-2. In the menu pane, under **Monitoring (classic)**, click **Diagnostic settings (classic)**.
+1. In the menu pane, under **Monitoring (classic)**, click **Diagnostic settings (classic)**.
 
-3. Verify that **Status** is still set to **On**.
+1. Verify that **Status** is still set to **On**.
 
-4. On the **Blob properties** tab, set **Logging version** to **2.0**, select **Read**, **Write**, **Delete**, and **Delete data**. Set the retention period to seven days.
+1. On the **Blob properties** tab, set **Logging version** to **2.0**, select **Read**, **Write**, **Delete**, and **Delete data**. Set the retention period to seven days.
 
-5. Click **Save**.
+1. Click **Save**.
 
     ![Screenshot of the diagnostic settings page in the Azure portal, with logging, enabled](../media/6-enable-logging.png)
 
-6. Switch to the Cloud Shell running PowerShell.
+1. Switch to the Cloud Shell running PowerShell.
 
-7. Run the following command, to verify that logging for blob storage has been enabled successfully. Specify your storage account name, and account key where indicated:
+1. Run the following command, to verify that logging for blob storage has been enabled successfully. Specify your storage account name, and account key where indicated:
 
     ```powershell
     $context = New-AzureStorageContext -StorageAccountName <your-storage-account-name> -StorageAccountKey <your-storage-account-key>
@@ -40,7 +40,7 @@ In the Customer Portal scenario, you've decided that you need more detailed info
     cd $HOME/storageapps/StorageTest
     ```
 
-2. Run the sample app as shown below. Replace *\<your connection string\>* with the connection string for your storage account. Ensure that you surround your connection string with double-quotes:
+1. Run the sample app as shown below. Replace *\<your connection string\>* with the connection string for your storage account. Ensure that you surround your connection string with double-quotes:
 
     ```powershell
     dotnet run "<your connection string>" testcontainer
@@ -50,20 +50,19 @@ In the Customer Portal scenario, you've decided that you need more detailed info
 
 1. On your desktop, return to Azure Storage Explorer.
 
-2. Under **Storage Accounts**, under your storage account, expand **Blob Containers**, you should see a container named **\$logs**, with a folder named **blob**. If this container does not appear, wait for a few minutes while Storage Analytics processes the log data, and then click **Refresh** in the toolbar:
+1. Under **Storage Accounts**, under your storage account, expand **Blob Containers**, you should see a container named **\$logs**, with a folder named **blob**. If this container doesn't appear, wait for a few minutes while Storage Analytics processes the log data, and then click **Refresh** in the toolbar:
 
     ![Screenshot of Azure Storage Explorer, showing the $logs container](../media/6-storage-explorer-logs.png)
   
-3. Double-click **blob** in the detail pane, and then navigate down through the folder structure to the folder containing the latest set of log files. You should see a set of files similar to those in the following image (your folder names will vary, as might the number of log files):
+1. Select **blob** in the detail pane, and then navigate down through the folder structure to the folder containing the latest set of log files. You should see a set of files similar to the files in the following example image:
 
     ![Screenshot of Azure Storage Explorer, showing the log files in the $logs container](../media/6-storage-explorer-log-files.png)
 
-
 ////////////// Remove content below ////////////
 
-4. Return to the desktop, and download and install the [AzCopy utility](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy-v10)
+1. Return to the desktop, and download and install the [AzCopy utility](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy-v10)
 
-5. Once AzCopy is ready, open a command prompt window and run the following command. This command downloads the blobs in the **\$logs** container to a folder on your computer. Replace **\<storage account name\>** with the name of your storage account, and **\<storage account key\>** with the key for your account. Specify a convenient folder on your desktop computer for **\<dest folder\>**:  
+1. Once AzCopy is ready, open a command prompt window and run the following command. This command downloads the blobs in the **\$logs** container to a folder on your computer. Replace **\<storage account name\>** with the name of your storage account, and **\<storage account key\>** with the key for your account. Specify a convenient folder on your desktop computer for **\<dest folder\>**:  
 
     ```command
     azcopy /source:"https://<storage account name>.blob.core.windows.net/$logs" /dest:<dest folder> /sourceType:blob /SourceKey:<storage account key> /S
@@ -95,4 +94,4 @@ In the Customer Portal scenario, you've decided that you need more detailed info
     ...
     ```
 
-7. Close Notepad.
+1. Close Notepad.

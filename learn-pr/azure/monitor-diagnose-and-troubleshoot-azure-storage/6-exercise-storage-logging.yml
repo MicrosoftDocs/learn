@@ -11,7 +11,7 @@ metadata:
   ROBOTS: NOINDEX
 title: Exercise - Enable storage logging and view log data
 durationInMinutes: 10
-interactive: bash
+interactive: powershell
 azureSandbox: true
 content: |
   [!include[](includes/6-exercise-storage-logging.md)]
