@@ -2,7 +2,7 @@
 uid: learn.administer-infrastructure-resources-in-azure
 metadata:
   title: Administer infrastructure resources in Azure learning path
-  description: This learning path guides you through creation of virtual machines, features for Linux and Windows, and options for networking, templates, and health monitoring.
+  description: This learning path teaches how to create Windows and Linux virtual machines, customize them with templates, connect them together with virtual networks, and keep them updated and running smoothly.
   brand: azure
   ms.date: 10/24/2019
   author: markjulmar
