@@ -14,10 +14,10 @@ Considering security and privacy is a fundamental aspect of developing highly se
 
 Factors that influence security requirements include, but are not limited to:
 
-- Legal and industry requirements
-- Internal standards and coding practices
-- Review of previous incidents
-- Known threats
+* Legal and industry requirements
+* Internal standards and coding practices
+* Review of previous incidents
+* Known threats
 
 These requirements should be tracked through a work-tracking system, or through telemetry that is derived from the engineering pipeline.
 
@@ -30,9 +30,7 @@ To track key performance indicators (KPIs) and ensure security tasks are complet
 You can read more about defining metrics and compliance reporting at:
 
 * [SDL Privacy Bug Bar Sample](https://msdn.microsoft.com/library/cc307403.aspx)
-
 * [Add or modify a field to track work](https://docs.microsoft.com/azure/devops/reference/add-modify-field?view=tfs-2018&viewFallbackFrom=vsts)
-
 * [SDL Security Bug Bar Sample](https://msdn.microsoft.com/library/cc307404.aspx)
 
 ### Perform threat modeling
@@ -81,14 +79,10 @@ Analyzing source code prior to compilation provides a highly scalable method of 
 
 More information is available at:
 
-* [Microsoft DevSkim on GitHub ](https://github.com/Microsoft/DevSkim)
-
+* [Microsoft DevSkim on GitHub](https://github.com/Microsoft/DevSkim)
 * [Roslyn Security Guard Rules](https://dotnet-security-guard.github.io/rules.htm) 
-
 * [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=security&target=AzureDevOps&category=All%20categories&sortBy=Relevance) 
-
 * [Analyzing C/C++ Code Quality by Using Code Analysis](https://msdn.microsoft.com/library/ms182025.aspx)
-
 * [Microsoft binskim on GitHub](https://github.com/Microsoft/binskim)
 
 ### Perform Dynamic Analysis Security Testing
@@ -98,7 +92,6 @@ Performing run-time verification of your fully compiled or packaged software che
 More information is available at:
 
 * [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?term=security&target=AzureDevOps&category=All%20categories&sortBy=Relevance)
-
 * [Automated Penetration Testing with White-Box Fuzzing](https://msdn.microsoft.com/library/cc162782.aspx)
 
 ### Perform penetration testing
@@ -107,26 +100,22 @@ Penetration testing is a security analysis of a software system that is performe
 
 More information is available at:
 
-* [Attack Surface Analyzer](https://go.microsoft.com/?linkid=9758398)
-
+* [Attack Surface Analyzer](https://www.microsoft.com/download/details.aspx?id=58105)
 * [SDL Security Bug Bar Sample](https://msdn.microsoft.com/library/cc307404.aspx)
 
 ### Establish a standard incident response process
 
 Preparing an incident response plan is crucial for addressing new threats that can emerge over time, and your plan should be created in coordination with your organization's dedicated Product Security Incident Response Team (PSIRT). Your incident response plan should:
 
-- Include who to contact in case of a security emergency
-- Establish the protocol for security servicing (including plans for code inherited from other groups within the organization and for third-party code)
-- Be tested before it is needed
+* Include who to contact in case of a security emergency
+* Establish the protocol for security servicing (including plans for code inherited from other groups within the organization and for third-party code)
+* Be tested before it is needed
 
 For more information about incident responses, see:
 
 * [Microsoft Incident Response Reference Guide](https://info.microsoft.com/INCIDENT-RESPONSE-REFERENCE-GUIDE.html)
-
 * [Using Azure Security Center for an incident response](https://docs.microsoft.com/azure/security-center/security-center-incident-response)
-
 * [Microsoft Incident Response and shared responsibility for cloud computing](https://azure.microsoft.com/blog/microsoft-incident-response-and-shared-responsibility-for-cloud-computing/)
-
 * [Microsoft Security Response Center](https://www.microsoft.com/msrc)
 
 By introducing standardized security and compliance considerations throughout all phases of the development process, developers can reduce the likelihood of vulnerabilities in products and services, and avoid repeating the same security mistakes. Similarly, security integration throughout the operations lifecycle will assist in maintaining the integrity of those products and services. Operational Security Assurance practices should align with your development processes; this arrangement will result in less time and cost spent on triage and response after the fact, and provide your customers with assurance that your products are highly secure.
