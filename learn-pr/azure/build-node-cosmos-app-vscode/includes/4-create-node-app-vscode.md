@@ -20,9 +20,9 @@ You're now ready to start writing your JavaScript code.
 
 ## Use IntelliSense to help write your code
 
-When you import a module into a JavaScript file, the types for that module become available in that file, and IntelliSense can provide code completion and type checking.
+As you write your code, IntelliSense can perform type checking and code completion. For example, as you create functions, define types, or even import a module into a JavaScript file, the items that you have added or imported become available to IntelliSense.
 
-Add your JavaScript code to the application code file. As you type, IntelliSense will use a combination of type checking and type inference to show suggestions appropriate to the current context. Type inference enables IntelliSense to present valid code completion suggestions as you write your code:
+As you type, IntelliSense will use a combination of type checking and type inference to show suggestions appropriate to the current context. Type inference enables IntelliSense to present valid code completion suggestions as you write your code:
 
 ![Screenshot of the editor VS Code, showing an Intellisense prompt](../media/4-intellisense.png)
 
