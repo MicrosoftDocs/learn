@@ -133,11 +133,11 @@ Now we have a binding to read from our collection, and one to write to it.
 
 ## Add an Azure Queue Storage output binding
 
-Azure Queue storage is a service for storing messages that can be accessed from anywhere in the world. The size of a single message can be as much as 64 KB, and a queue can contain millions of messages&mdash;up to the total capacity of the storage account in which it is defined. The following diagram shows at a high level how a queue is used in our scenario:
+Azure Queue storage is a service for storing messages that can be accessed from anywhere in the world. The size of a single message can be as much as 64 KB, and a queue can contain millions of messages - up to the total capacity of the storage account in which it is defined. The following diagram shows at a high level how a queue is used in our scenario:
 
 ![An illustration showing a storage queue and two functions one pushing and the other popping messages onto the queue](../media/7-q-logical-small.png)
 
-Here you can see that the new function, **add-bookmark**, adds messages to a queue. Another function&mdash;for example, a fictitious function called *gen-qr-code*&mdash;will pop messages from the same queue and process the request. Since we write, or *push*, messages to the queue from **add-bookmark**, we'll add a new output binding to your solution. Let's create the binding through the portal UI this time.
+Here you can see that the new function, **add-bookmark**, adds messages to a queue. Another function - for example, a fictitious function called *gen-qr-code* - will pop messages from the same queue and process the request. Since we write, or *push*, messages to the queue from **add-bookmark**, we'll add a new output binding to your solution. Let's create the binding through the portal UI this time.
 
 1. Once again, select **Integrate** in the left function menu to open the integration tab.
 
