@@ -57,7 +57,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 8. On the **File** menu, click **Save**.
 
-9. In the **Terminal** window, run the following commands to install the **readline-sync**, and **`@types/node** packages:
+9. In the **Terminal** window, run the following commands to install the **readline-sync**, and **\@types/node** packages:
 
     ```bash
     npm install readline-sync
@@ -82,15 +82,15 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
     var question = require('readline-sync').question;
     ```
 
-    The **@ts-check** directive enables advanced type checking, using the **@types/mode** module that you added to the application in the previous task. The **require** statement imports the **question** function from the **readline-sync** module. You'll use the **question** function to prompt the user for input later in this application.
+    The **\@ts-check** directive enables advanced type checking, using the **\@types/mode** module that you added to the application in the previous task. The **require** statement imports the **question** function from the **readline-sync** module. You'll use the **question** function to prompt the user for input later in this application.
 
 4. After the **require** statement, add the following **class** definition to the file:
 
     ```javascript
     class Student {
-        constructor(studentID, forename, lastname) {
-            this.id = studentID;
-            this.StudentID = studentID;
+        constructor(ID, studentNumber, forename, lastname) {
+            this.id = ID;
+            this.StudentNumber = studentNumber;
             this.Forename = forename;
             this.Lastname = lastname;
             this.CourseGrades = [];
@@ -98,7 +98,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
                 this.CourseGrades.push({Course: coursename, Grade: grade});
             };
             this.toString = function () {
-                return `${this.id}: ${this.Forename}, ${this.Lastname}\n`;
+                return `${this.StudentNumber}: ${this.Forename}, ${this.Lastname}\n`;
             };
             this.getGrades = function () {
                 let grades = "";
@@ -111,16 +111,20 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
     }
     ```
 
-    The **Student** class represents a student. It has the properties **StudentID** (the student id), **Forename**, **Lastname**, and **CourseGrades**. For the purposes of this module, the **id** property is also set to the **StudentID**. The **CourseGrades** property is an object. This object will contain course code/course grade key/value pairs for the student. The **addGrade** method enables a user to add a course code/course grade pair to this property. The **getGrades** function returns a formatted string listing the course codes and grades for the student. The **toString** function returns a string containing the other details of the student.
+    The **Student** class represents a student. It has the properties **id**, **StudentNumber**, **Forename**, **Lastname**, and **CourseGrades**. The **CourseGrades** property is an object. This object will contain course code/course grade key/value pairs for the student. The **addGrade** method enables a user to add a course code/course grade pair to this property. The **getGrades** function returns a formatted string listing the course codes and grades for the student. The **toString** function returns a string containing the other details of the student.
+
+    > [!NOTE]
+    > It's important to distinguish between the **id** field, which is used by Cosmos DB to identify the document, and the **studentNumber** field, which is used to reference a student. The data in the **id** field is immutable, whereas the **studentNumber** field may change over time.
 
 5. Add the **getStudentData** function shown below to the **studentgrades.js** file, after the **Student** class:
 
     ```javascript
     function getStudentData () {
-        let studentID = question("Please enter the student's ID: ");
+        let ID = question("Please enter the student's document ID: ");
+        let studentNumber = question("Enter the student's number: ");
         let forename = question("Enter the student's forename: ");
         let lastname = question("Enter the student's last name: ");
-        let student = new Student(studentID, forename, lastname);
+        let student = new Student(ID, studentNumber, forename, lastname);
         return student;
     };
     ```
@@ -172,14 +176,15 @@ The application doesn't store student information in the Cosmos DB database. You
 
     | Prompt  | Value  |
     |---|---|
-    | Please enter the student's ID: | S001 |
+    | Please enter the student's document ID: | S001 |
+    | Enter the student's number: | 001 |
     | Enter the student's forename: | EEE |
     | Enter the student's lastname: | FFF |
 
     The following messages should be displayed, output by the statements `process.stdout.write(student1.toString());` and `process.stdout.write(student1.getGrades());` in the `test` function.
 
     ```text
-    S001: EEE, FFF
+    001: EEE, FFF
     Computer Science:A
     Applied Mathematics:C
     ```
@@ -188,14 +193,15 @@ The application doesn't store student information in the Cosmos DB database. You
 
     | Prompt  | Value  |
     |---|---|
-    | Please enter the student's ID: | S002 |
+    | Please enter the student's document ID: | S002 |
+    | Enter the student's number: | 002 |
     | Enter the student's forename: | GGG |
     | Enter the student's lastname: | HHH |
 
     The following messages should be displayed:
 
     ```text
-    S002: GGG, HHH
+    002: GGG, HHH
     Computer Science:A
     ```
 

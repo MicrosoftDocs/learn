@@ -4,7 +4,7 @@ In this unit, you'll learn how to use the JavaScript API for Cosmos DB to query 
 
 ## Install the JavaScript API for Cosmos DB
 
-The JavaScript API for Cosmos DB is supplied in a package named **`@azure/cosmos**. You install this package using the Node Package Manager (npm).
+The JavaScript API for Cosmos DB is supplied in a package named **\@azure/cosmos**. You install this package using the Node Package Manager (npm).
 
 ## Connect to a Cosmos DB account
 

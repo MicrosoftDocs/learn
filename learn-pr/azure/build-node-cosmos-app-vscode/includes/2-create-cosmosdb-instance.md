@@ -24,6 +24,9 @@ Cosmos DB is a service that implements document databases. The data in a documen
 
 Unlike a table in a relational database, documents in a Cosmos DB don't follow any defined schema. So the same database can hold a variety of documents with different *shapes* and sizes. For example, you could store varying information about different customers in the same database. Perhaps you could record a complete address history as an array for a customer. You might record additional information, such as their credit worthiness.
 
+> [!NOTE]
+> Cosmos DB adds some fields of its own to your documents. Many of these fields are used for internal purposes, and you shouldn't modify them directly. However, one field that Cosmos DB adds is named **id**. Cosmos DB uses this field to identify the document in the database, and each document must have a unique **id**. Cosmos DB will generate a value for the **id** field automatically, but you can specify your own value for each document if you prefer. Using your own values is useful if you need to use your own scheme for tracking documents.
+
 Cosmos DB database provides APIs that let you create, update, delete, and query documents.
 
 The Cosmos DB service is organized as a hierarchy. At the top, is a Cosmos DB account. The Cosmos DB account is the unit of security for a set of databases. The Cosmos DB account specifies the location of the databases together with the security information required to access those databases.

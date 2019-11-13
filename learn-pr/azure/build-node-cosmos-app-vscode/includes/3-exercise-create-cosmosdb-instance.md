@@ -74,7 +74,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 3. In the **Enter an id for your collection** box, enter **StudentCourseGrades**, and then press Enter.
 
-4. In the **Enter the partition key for the collection** box, type **StudentID**, and then press Enter.
+4. In the **Enter the partition key for the collection** box, type **StudentNUMBER**, and then press Enter.
 
     This container will hold `StudentCourseGrades` documents. Course grades will be held as an array of subdocuments with each student. The data will be partitioned by student ID.
 
@@ -96,7 +96,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 4. In the **Enter a value for the partition key** box, type **101**, and then press Enter.
 
-    The document will be created and displayed in VS Code, in JSON format. The **id** and **StudentID** fields will be populated with the values you specified. The document will also contain other fields that are added automatically by Cosmos DB for its own internal use.
+    The document will be created and displayed in VS Code, in JSON format. The **id** and **StudentNumber** fields will be populated with the values you specified. The document will also contain other fields that are added automatically by Cosmos DB for its own internal use.
 
     ![Screenshot of VS Code showing the newly created document](../media/3-new-document.png)
 
@@ -112,7 +112,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 1. In the **Documents** list, select the **S101** document.
 
-2. In the JSON document that appears, move to the end of the **StudentID** line, and press Enter.
+2. In the JSON document that appears, move to the end of the **StudentNumber** line, and press Enter.
 
 3. Add the following fields to the document. Don't forget to add a comma at the end of each line:
 
@@ -133,7 +133,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 5. In the **Documents** list, select the **S102** document.
 
-6. Add the following fields to the document after the **StudentID** field, and then save the updated document to the cloud:
+6. Add the following fields to the document after the **StudentNumber** field, and then save the updated document to the cloud:
 
     ```JSON
     "Forename": "CCC",

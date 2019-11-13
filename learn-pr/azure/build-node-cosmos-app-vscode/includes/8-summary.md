@@ -1,7 +1,7 @@
 In this module, you learned how to use Node.js with VS Code to:
 
 - Create a Cosmos DB instance for a Node.js app
-- Set up a new Node.js app in VS Code
+- Build a new Node.js app in VS Code
 - Add JavaScript code to work with Cosmos DB
 
 You can now use Node.js to build applications that create, query, and maintain data in a Cosmos DB database.
