@@ -44,12 +44,6 @@ quiz:
     - content: "Active"
       isCorrect: false
       explanation: "Off, Read only, and Read write are valid settings for Query Store in SQL Server 2017"
-    - content: "Read only"
-      isCorrect: true
-      explanation: "Off, Read only, and Read write are valid settings for Query Store in SQL Server 2017"
-    - content: "Read write"
-      isCorrect: true
-      explanation: "Off, Read only, and Read write are valid settings for Query Store in SQL Server 2017"
 
   - content: "On which version of SQL Server was Query Tuning Assistant first implemented? Select the correct answer."
     choices:
