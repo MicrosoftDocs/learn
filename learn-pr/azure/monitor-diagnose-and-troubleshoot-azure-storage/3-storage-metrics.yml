@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Troubleshoot with storage metrics
-durationInMinutes: 10
+durationInMinutes: 9
 content: |
   [!include[](includes/3-storage-metrics.md)]
