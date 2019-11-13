@@ -63,7 +63,7 @@ Identify the subtasks of *Upload, download, and manage data with Azure Storage E
         - Connect by using a shared access signature URI
         - Connect by using a storage account name and key
 
-1. **Exercise - Connect Azure Storage Explorer to a subscription**
+1. **Exercise - Connect Azure Storage Explorer to a storage account**
 
     List the steps, which apply the learning content from previous unit:
 

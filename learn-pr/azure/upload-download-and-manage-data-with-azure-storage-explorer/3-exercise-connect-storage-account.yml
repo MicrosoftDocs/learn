@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.upload-download-and-manage-data-with-azure-storage-explorer.3-exercise-connect-storage-account
+metadata:
+  title: Exercise - Connect Azure Storage Explorer to a storage account
+  description: Exercise - Connect Azure Storage Explorer to a storage account
+  ms.date: 12/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Connect Azure Storage Explorer to a storage account
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/3-exercise-connect-storage-account.md)]
