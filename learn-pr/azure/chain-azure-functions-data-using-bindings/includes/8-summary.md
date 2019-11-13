@@ -18,7 +18,7 @@ You can apply the approaches you have learned here to add and test bindings in y
 
 As we saw in this module, the Azure portal offers easy-to-use features to start building functions and connecting them to data and other services.
 
-If you're interested in doing serverless integrations like these with visual workflows and little or no custom code, check out Azure Logic Apps as well.
+If you're interested in doing serverless integrations like these with visual workflows and little or no custom code, check out [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/) as well.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
