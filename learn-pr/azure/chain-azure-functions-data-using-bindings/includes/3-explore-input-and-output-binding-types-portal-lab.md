@@ -28,12 +28,12 @@ Let's create a function app that we'll use throughout this entire module. A func
 
     | Property | Suggested value | Description |
     |---|---|---|
-    | **Subscription** | `Concierge Subscription` | The Azure subscription that you want to use for this Azure Cosmos DB account. |
-    | **Resource Group**| `<rgn>[sandbox resource group name]</rgn>` | This field is pre-populated with the resource group from your sandbox. |
-    | **Function App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`.  |
-    | **Publish** | `Code` | Option to publish code files or a Docker container.  |
-    | **Runtime Stack** | `Node.js` | The sample code in this module is written in JavaScript.  |
-    | **Region** | `Central US` | Choose the region nearest you. |
+    | **Subscription** | _Concierge Subscription_ | The Azure subscription that you want to use for this Azure Cosmos DB account. |
+    | **Resource Group**| _<rgn>[sandbox resource group name]</rgn>_ | This field is pre-populated with the resource group from your sandbox. |
+    | **Function App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
+    | **Publish** | _Code_ | Option to publish code files or a Docker container. |
+    | **Runtime Stack** | _Node.js_ | The sample code in this module is written in JavaScript. |
+    | **Region** | _Central US_ | Choose the region nearest you. |
 
 1. Select **Review + create** and then **Create** to provision and deploy the function app.
 
@@ -62,12 +62,12 @@ Let's create a function app that we'll use throughout this entire module. A func
 
     | Property | Suggested value | Description |
     |---|---|---|
-    | **Subscription** | `Concierge Subscription` | The Azure subscription that you want to use for this Azure Cosmos DB account. |
-    | **Resource Group**| `<rgn>[sandbox resource group name]</rgn>` | This field is pre-populated with the resource group from your sandbox. |
+    | **Subscription** | _Concierge Subscription_ | The Azure subscription that you want to use for this Azure Cosmos DB account. |
+    | **Resource Group**| _<rgn>[sandbox resource group name]</rgn>_ | This field is pre-populated with the resource group from your sandbox. |
     | **Function App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`.  |
-    | **Publish** | `Code` | Option to publish code files or a Docker container.  |
-    | **Runtime Stack** | `PowerShell Core` | The sample code in this module is written in PowerShell.  |
-    | **Region** | `Central US` | Choose the region nearest you. |
+    | **Publish** | _Code_ | Option to publish code files or a Docker container.  |
+    | **Runtime Stack** | _PowerShell Core_ | The sample code in this module is written in PowerShell.  |
+    | **Region** | _Central US_ | Choose the region nearest you. |
 
 1. Select **Review + create** and then **Create** to provision and deploy the function app.
 
