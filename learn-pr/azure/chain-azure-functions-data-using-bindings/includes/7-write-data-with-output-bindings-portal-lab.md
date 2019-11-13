@@ -10,7 +10,7 @@ Notice another step in the flowchart? So far we haven't done much with the data 
 
 What might be a good example of this offloading of work in our bookmarks scenario? Well, what if we send the new bookmark to a QR code generation service? That service would, in turn, generate a QR code for the URL, store the image in blob storage, and add the address of the QR image back into the entry in our bookmarks collection. Calling a service to generate a QR image is time consuming so, rather than wait for the result, we hand it off to a function and let it take care of this asynchronously.
 
-Just as Azure Functions supports input bindings for various integration sources, it also has a set of output bindings templates to make it easy for you to write data to data sources. Output bindings are also configured in the *function.json* file.  As you'll see in this exercise, we can configure our function to work with multiple data sources and services.
+Just as Azure Functions supports input bindings for various integration sources, it also has a set of output bindings templates to make it easy for you to write data to data sources. Output bindings are also configured in the *function.json* file. As you'll see in this exercise, we can configure our function to work with multiple data sources and services.
 
 > [!IMPORTANT]
 > This exercise builds on the previous one. It uses the same Azure Cosmos DB database and input binding. If you haven't worked through that unit, we recommend doing so before you proceed with this one.
@@ -21,19 +21,20 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 1. Make sure you are signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-2. In the portal, navigate to the function app that you created in this module.
+1. In the portal, navigate to the function app that you created in this module.
 
-3. Select the Add (**+**) button next to **Functions**. This action starts the function creation process. 
-4. The page shows us the current set of supported triggers. Select **HTTP trigger**.
+1. Select the Add (**+**) button next to **Functions**. This action starts the function creation process.
 
-5. Fill out the **New Function** pane that's displayed at the right by using the following values:
+1. The page shows us the current set of supported triggers. Select **HTTP trigger**.
 
-    |Field  |Value  |
-    |---------|---------|
-    |Name     |   [!INCLUDE [func-name-add](./func-name-add.md)]     |
-    | Authorization level | **Function** |
+1. Fill out the **New Function** pane that's displayed at the right by using the following values:
 
-6. Select **Create** to create your function. This action opens the **index.js** file in the code editor and displays a default implementation of the HTTP-triggered function.
+    | Field | Value |
+    |---|---|
+    | **Name** | _add-bookmark_ |
+    | **Authorization level** | _Function_ |
+
+1. Select **Create** to create your function. This action opens the **index.js** file in the code editor and displays a default implementation of the HTTP-triggered function.
 
 ::: zone-end
 
@@ -41,123 +42,135 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 1. Make sure you are signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-2. In the portal, navigate to the function app that you created in this module.
+1. In the portal, navigate to the function app that you created in this module.
 
-3. Select the Add (**+**) button next to **Functions**. This action starts the function creation process. 
-4. The page shows us the current set of supported triggers. Select **HTTP trigger**.
+1. Select the Add (**+**) button next to **Functions**. This action starts the function creation process. 
 
-5. Fill out the **New Function** pane that's displayed at the right by using the following values:
+1. The page shows us the current set of supported triggers. Select **HTTP trigger**.
 
-    |Field  |Value  |
-    |---------|---------|
-    |Name     |   [!INCLUDE [func-name-add](./func-name-add.md)]     |
-    | Authorization level | **Function** |
+1. Fill out the **New Function** pane that's displayed at the right by using the following values:
 
-6. Select **Create** to create your function. This action opens the **run.ps1** file in the code editor and displays a default implementation of the HTTP-triggered function.
+    | Field | Value |
+    |---|---|
+    | **Name** | _add-bookmark_ |
+    | **Authorization level** | _Function_ |
+
+1. Select **Create** to create your function. This action opens the **run.ps1** file in the code editor and displays a default implementation of the HTTP-triggered function.
 
 ::: zone-end
 
 ## Add an Azure Cosmos DB input binding
 
-Let's repeat what we did in the preceding module to add an Azure Cosmos DB input binding.
+Let's repeat what we did in the preceding unit to add an Azure Cosmos DB input binding.
 
-1. Make sure our new function, [!INCLUDE [func-name-add](./func-name-add.md)], is selected in the Functions list. 
+1. Make sure our new function, **add-bookmark**, is selected in the Functions list. 
+
 1. Select **Integrate** in the left pane to open the integration tab.
-   
+
 1. Select **New Input** in the **Inputs** column to display the list of all possible input binding types.
 
 1. Select **Azure Cosmos DB** in the list, followed by **Select**.
-1. If a message appears asking  you to install the Microsoft.Azure.WebJobs.Extensions.CosmosDB extension, select **install** and wait for it to finish. 
- 1. In the  **Azure Cosmos DB account connection** field, select **new**.
-   This action opens the **Connection** dialog. Select your subscription and database account and then choose **Select**. 
 
-1. A new connection to the database is configured and is shown in the **Azure Cosmos DB account connection** field. If you're curious about what is actually behind this abstract name, click *show value* to reveal the connection string.
+1. If a message appears asking you to install the Microsoft.Azure.WebJobs.Extensions.CosmosDB extension, select **install** and wait for it to finish. 
 
-You want to look up a bookmark with a specific ID, so let's tie the ID we receive to the binding.
+1. The **Azure Cosmos DB account connection** field should be pre-populated with the connection you created in the previous exercise. If you do not see your connection listed, use the following steps to create a new connection.
 
-1. In the **Document ID (optional)** field, enter `{id}`. This syntax is known as a *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up. Since IDs are unique in our collection, the binding will return either 0 (not found) or 1 (found) documents.
+    1. Click **new**.  This action opens the **Connection** window, where you will enter the settings for the new connection.
+
+        | Property | Suggested value | Description |
+        |---|---|---|
+        | **Connection**| _Azure Cosmos DB account_ | This field is selected by default. |
+        | **Subscription** | _Concierge Subscription_ | The Azure subscription that you want to use for this Azure Cosmos DB account. |
+        | **Database account** | Cosmos DB account | Select the **Account Name** that you specified when you created your Azure Cosmos DB account. |
+
+    1. Select **Select** to create your connection.
+
+You want to look up a bookmark with a specific ID, so let's tie an ID that we receive in the query string to the binding.
+
+1. In the **Document ID (optional)** field, enter `{id}`.
+
+    This syntax is known as a *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up. Since IDs are unique in our collection, the binding will return either 0 (not found) or 1 (found) documents.
 
 1. Carefully fill out the remaining fields on this page using the values in the following table. At any time, you can click on the information icon to the right of each field name to learn more about the purpose of each field.
 
-    |Setting  |Value  |Description  |
-    |---------|---------|---------|
-    |Document parameter name     |  **bookmark**       |  The name used to identify this binding in your code.      |
-    |Database name     |  [!INCLUDE [cosmos-db-name](./cosmos-db-name.md)]       | The database to work with. This value is the database name we set earlier in this lesson.        |
-    |Collection Name     |  [!INCLUDE [cosmos-db-name](./cosmos-coll-name.md)]        | The container from which we'll read data. We defined this setting was earlier in the lesson. |
-    |SQL Query (optional)    |   leave blank       |   We are only retrieving one item at a time based on the ID. So, filtering with the Document ID field is  better than using a SQL Query in this instance. We could craft a SQL Query to return one entry (`SELECT * from b where b.ID = {id}`). That query would indeed return an item, but it would return it in a items collection. Our code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents.   |
-    |Partition key (optional) | **{id}** |  Add the partition key that we defined when we created the [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] Azure Cosmos DB container earlier.  The key entered here (specified in input binding format `{<key>}`) must match the one in the container.|
+    | Setting | Value | Description |
+    |---|---|---|
+    | **Document parameter name** | _bookmark_ | The name used to identify this binding in your code. |
+    | **Database name** | _func-io-learn-db_ | The database to work with. This value is the database name we set earlier in this lesson. |
+    | **Collection Name** | _Bookmarks_ | The container from which we'll read data. We defined this setting was earlier in the lesson. |
+    | **SQL Query (optional)** | Leave blank | We are only retrieving one item at a time based on the ID. So, filtering with the Document ID field is better than using a SQL Query in this instance. We could craft a SQL Query to return one entry (`SELECT * from b where b.ID = {id}`). That query would indeed return an item, but it would return it in a items collection. Our code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
+    | **Partition key (optional)** | _{id}_ | Add the partition key that we defined when we created the _Bookmarks_ Azure Cosmos DB container earlier. The key entered here (specified in input binding format `{<key>}`) must match the one in the container. |
 
-9. Select **Save** to save all changes to this binding configuration.
+1. Select **Save** to save all changes to this binding configuration.
 
-We now have an Azure Cosmos DB input binding. It's time to add an output binding so we can write new entries to our collection.  
+We now have an Azure Cosmos DB input binding. It's time to add an output binding so we can write new entries to our collection.
 
 ## Add an Azure Cosmos DB output binding
 
-1. Make sure our function, [!INCLUDE [func-name-add](./func-name-add.md)], is still selected in the Functions list. 
+1. Make sure our function, **add-bookmark**, is still selected in the Functions list. 
+
 1. Select **Integrate** in the left pane to open the integration tab.
-   
+
 1. Select **New Output** in the **Outputs** column to display the list of all possible output binding types.
 
 1. Select **Azure Cosmos DB** in the list, and then choose **Select**.
 
-1. The  **Azure Cosmos DB account connection** field should be pre-populated with the connection you created when you added the Azure Cosmos DB input binding.  
+1. The **Azure Cosmos DB account connection** field should be pre-populated with the connection you created when you added the Azure Cosmos DB input binding.
 
 1. Carefully fill out the remaining fields on this page using the values in the following table. At any time, you can click on the information icon to the right of each field name to learn more about the purpose of each field.
 
-    |Setting  |Value  |Description  |
-    |---------|---------|---------|
-    |Document parameter name     |  **newbookmark**       |  The name used to identify this binding in your code. This parameter is used to write a new bookmark entry.     |
-    |Database name     |  [!INCLUDE [cosmos-db-name](./cosmos-db-name.md)]       | The database to work with. This value is the database name we set earlier in this lesson.        |
-    |Collection Name     |  [!INCLUDE [cosmos-db-name](./cosmos-coll-name.md)]        | The container from which we'll read data. We defined the container earlier in the lesson. |
-    |Partition key (optional) | **{id}** |  Add the partition key that we defined when we created the [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] Azure Cosmos DB container earlier.  The key entered here (specified in input binding format `{<key>}`) must match the one in the container. |
-     |Collection throughput (optional)     |   leave blank      |  We can accept the default here.       |
+    | Setting | Value | Description |
+    |---|---|---|
+    | **Document parameter name** | _newbookmark_ | The name used to identify this binding in your code. This parameter is used to write a new bookmark entry. |
+    | **Database name** | _func-io-learn-db_ | The database to work with. This value is the database name we set earlier in this lesson. |
+    | **Collection Name** | _Bookmarks_ | The container from which we'll read data. We defined the container earlier in the lesson. |
+    | **Partition key (optional)** | _{id}_ | Add the partition key that we defined when we created the _Bookmarks_ Azure Cosmos DB container earlier. The key entered here (specified in input binding format `{<key>}`) must match the one in the container. |
+    | **Collection throughput (optional)** | Leave blank | We can accept the default here. |
 
-9. Select **Save** to save all changes to this binding configuration.
+1. Select **Save** to save all changes to this binding configuration.
 
 Now we have a binding to read from our collection, and one to write to it. 
 
 ## Add an Azure Queue Storage output binding
 
-Azure Queue storage is a service for storing messages that can be accessed from anywhere in the world. The size of a single message can be as much as 64 KB, and a queue can contain millions of messages&mdash;up to the total capacity of the storage account in which it is defined. The following diagram shows at a high level how a queue is used in our scenario:
+Azure Queue storage is a service for storing messages that can be accessed from anywhere in the world. The size of a single message can be as much as 64 KB, and a queue can contain millions of messages - up to the total capacity of the storage account in which it is defined. The following diagram shows at a high level how a queue is used in our scenario:
 
 ![An illustration showing a storage queue and two functions one pushing and the other popping messages onto the queue](../media/7-q-logical-small.png)
 
-Here you can see that the new function, [!INCLUDE [func-name-add](./func-name-add.md)], adds messages to a queue. Another function&mdash;for example, a fictitious function called *gen-qr-code*&mdash;will pop messages from the same queue and process the request.  Since we write, or *push*, messages to the queue from [!INCLUDE [func-name-add](./func-name-add.md)], we'll add a new output binding to your solution. Let's create the binding through the portal UI this time.
+Here you can see that the new function, **add-bookmark**, adds messages to a queue. Another function - for example, a fictitious function called *gen-qr-code* - will pop messages from the same queue and process the request. Since we write, or *push*, messages to the queue from **add-bookmark**, we'll add a new output binding to your solution. Let's create the binding through the portal UI this time.
 
 1. Once again, select **Integrate** in the left function menu to open the integration tab.
 
-1. Select **New Output** in the **Outputs** column.
-    A list of all possible output binding types is displayed.
+1. Select **New Output** in the **Outputs** column. A list of all possible output binding types is displayed.
 
-1. In the list, select **Azure Queue Storage**, then select **Select**.
-    This action opens the Azure Queue Storage output configuration page.
+1. In the list, select **Azure Queue Storage**, then select **Select**. This action opens the Azure Queue Storage output configuration page.
 
-   Next, we'll set up a storage account connection. This is where our queue will be hosted.
-1. If a message appears asking  you to install the Microsoft.Azure.WebJobs.Extensions.Storage extension, select **install** and wait for it to finish. 
+    If a message appears asking you to install the Microsoft.Azure.WebJobs.Extensions.Storage extension, select **install** and wait for it to finish. 
 
-4. To the right of the **Storage account connection** field, select **new**.
-   The **Storage Account** selection pane opens.
+Next, we'll set up a storage account connection. This is where our queue will be hosted.
 
-5. When we started this module and you created your function app, a storage account was also created at that time. It's listed in this pane, so select it. The **Storage account connection** field is populated with the name of a connection. If you want to see the connection string value, select **show value**.
+1. To the right of the **Storage account connection** field, select **new**. The **Storage Account** selection pane opens.
 
-6. Although we could keep the default values in all the other fields, let's change the following to lend more meaning to the properties:
+1. When we started this module and you created your function app, a storage account was also created at that time. It's listed in this pane, so select it. The **Storage account connection** field is populated with the name of a connection. If you want to see the connection string value, select **show value**.
 
-    |Property  |Old value  |New value  | Description |
-    |---------|---------|---------|---------|
-    |Queue name     |    outqueue     |  **bookmarks-post-process**      | The name of the queue where we're placing bookmarks so that they can be processed further by another function. |
-    | Message parameter name    |  outputQueueItem       |   **newmessage**      | The binding property we'll use in code. |
+1. Although we could keep the default values in all the other fields, let's change the following to lend more meaning to the properties:
 
-7. Remember to select **Save** to save your changes.
+    | Property | Old value | New value | Description |
+    |---|---|---|---|
+    | **Message parameter name** | _outputQueueItem_ | _newmessage_ | The binding property we'll use in code. |
+    | **Queue name** | _outqueue_ | _bookmarks-post-process_ | The name of the queue where we're placing bookmarks so that they can be processed further by another function. |
+
+1. Remember to select **Save** to save your changes.
 
 ## Update function implementation
 
-We now have all our bindings set up for the [!INCLUDE [func-name-add](./func-name-add.md)] function. It's time to use them in our function.
+We now have all our bindings set up for the **add-bookmark** function. It's time to use them in our function.
 
 ::: zone pivot="javascript"
 
-1. Select your function, [!INCLUDE [func-name-add](./func-name-add.md)], to open the **index.js** file in the code editor.
+1. Select your function, **add-bookmark**, to open the **index.js** file in the code editor.
 
-2. Replace all the code in the *index.js* file with the code from the following snippet and then **Save**:
+1. Replace all the code in the *index.js* file with the code from the following snippet and then **Save**:
 
    [!code-javascript[](../code/add-bookmark.js)]
 
@@ -166,7 +179,7 @@ Let's break down what this code does:
 * Because this function changes our data, we expect the HTTP request to be a POST and the bookmark data to be part of the request body.
 * Our Azure Cosmos DB input binding attempts to retrieve a document, or bookmark, by using the `id` that we receive. If it finds an entry, the `bookmark` object will be set. The `if(bookmark)` condition checks to see whether an entry was found.
 * Adding to the database is as simple as setting the `context.bindings.newbookmark` binding parameter to the new bookmark entry, which we have created as a JSON string.
-* Posting a message to our queue is as simple as setting the  `context.bindings.newmessage` parameter.
+* Posting a message to our queue is as simple as setting the `context.bindings.newmessage` parameter.
 
 > [!NOTE]
 > The only task you performed was to create a queue binding. You never created the queue explicitly. You are witnessing the power of bindings! As the following callout says, the queue is automatically created for you if it doesn't exist.
@@ -179,12 +192,12 @@ So, that's it. Let's see our work in action in the next section.
 
 ::: zone pivot="powershell"
 
-1. Select your function, [!INCLUDE [func-name-add](./func-name-add.md)], to open the **run.ps1** file in the code editor.
+1. Select your function, **add-bookmark**, to open the **run.ps1** file in the code editor.
 
-2. Replace all the code in the *run.ps1* file with the code from the following snippet and then **Save**:
+1. Replace all the code in the *run.ps1* file with the code from the following snippet and then **Save**:
 
-   ```powershell
-   using namespace System.Net
+    ```powershell
+    using namespace System.Net
 
     param($Request, $bookmark, $TriggerMetadata)
 
@@ -208,7 +221,7 @@ So, that's it. Let's see our work in action in the next section.
         Body = $body
         ContentType = "application/json"
     })
-   ```
+    ```
 
 Let's break down what this code does:
 
@@ -230,16 +243,16 @@ So, that's it. Let's see our work in action in the next section.
 
 Now that we have multiple output bindings, testing becomes a little trickier. In previous labs we were content to test by sending an HTTP request and a query string, but we'll want to perform an HTTP post this time. We also need to check to see whether messages are making it into a queue.
 
-1. With our function, [!INCLUDE [func-name-add](./func-name-add.md)], selected in the Function Apps portal, select the Test menu item at the far right to expand it.
+1. With our function, **add-bookmark**, selected in the Function Apps portal, select the Test menu item at the far right to expand it.
 
-2. Select the **Test** menu item, and verify that you have the test pane open. The following screenshot shows what it should look like:
+1. Select the **Test** menu item, and verify that you have the test pane open. The following screenshot shows what it should look like:
 
     ![Screenshot showing the function Test Panel expanded.](../media/7-test-panel-open-small.png)
 
     > [!IMPORTANT]
     > Make sure that **POST** is selected in the HTTP method drop-down list.
 
-3. Replace the content of the request body with the following JSON payload:
+1. Replace the content of the request body with the following JSON payload:
 
     ```json
     {
@@ -248,13 +261,13 @@ Now that we have multiple output bindings, testing becomes a little trickier. In
     }
     ```
 
-4. Select **Run** at the bottom of the test pane.
+1. Select **Run** at the bottom of the test pane.
 
-5. Verify that the **Output** window displays the "Bookmark already exists" message, as shown in the following diagram:
+1. Verify that the **Output** window displays the "Bookmark already exists" message, as shown in the following diagram:
 
     ![Screenshot showing Test Panel and result of a failed test.](../media/7-test-exists-small.png)
 
-6. Replace the request body with the following payload:
+1. Replace the request body with the following payload:
 
     ```json
     {
@@ -262,13 +275,13 @@ Now that we have multiple output bindings, testing becomes a little trickier. In
         "url": "https://www.github.com"
     }
     ```
-7. Select **Run** at the bottom of the test pane.
+1. Select **Run** at the bottom of the test pane.
 
-8. Verify the that *Output* box displays the "bookmark added" message as shown in the following diagram.
+1. Verify the that *Output* box displays the "bookmark added" message as shown in the following diagram.
 
     ![Screenshot showing Test Panel and result of a successful test.](../media/7-test-success-small.png)
 
-Congratulations! The [!INCLUDE [func-name-add](./func-name-add.md)] works as designed, but what about that queue operation we had in the code? Well, let's go see whether something was written to a queue.
+Congratulations! The **add-bookmark** works as designed, but what about that queue operation we had in the code? Well, let's go see whether something was written to a queue.
 
 ### Verify that a message is written to the queue
 
@@ -276,23 +289,20 @@ Azure Queue Storage queues are hosted in a storage account. You already selected
 
 1. In the main search box in the Azure portal, type **storage accounts**, and in the results list, under **Services**, select **Storage accounts**.
 
-      ![Screenshot showing search results for Storage Account in the main search box.](../media/7-search-for-sa-small.png)
+    ![Screenshot showing search results for Storage Account in the main search box.](../media/7-search-for-sa-small.png)
 
-2. In the list of storage accounts that are returned, select the storage account that you used to create the **newmessage** output binding.
-   The storage account settings are displayed in the main window of the portal.
+1. In the list of storage accounts that are returned, select the storage account that you used to create the **newmessage** output binding. The storage account settings are displayed in the main window of the portal.
 
-3. In the **Services** list, select the **Queues** item.
-   A list of queues hosted by this storage account is displayed. Verify that the **bookmarks-post-process** queue exists, as shown in the following screenshot:
+1. In the **Services** list, select the **Queues** item. A list of queues hosted by this storage account is displayed. Verify that the **bookmarks-post-process** queue exists, as shown in the following screenshot:
 
-      ![Screenshot showing our queue in the list of queues hosted by this storage account](../media/7-q-in-list-small.png)
+    ![Screenshot showing our queue in the list of queues hosted by this storage account](../media/7-q-in-list-small.png)
 
-4. Select **bookmarks-post-process** to open the queue.
-   The messages that are in the queue are displayed in a list. If all went according to plan, the queue includes the message that you posted when you added a bookmark to the database. It should look like the following:
+1. Select **bookmarks-post-process** to open the queue. The messages that are in the queue are displayed in a list. If all went according to plan, the queue includes the message that you posted when you added a bookmark to the database. It should look like the following:
 
     ![Screenshot showing our message in the queue](../media/7-message-in-q-small.png)
 
-   In this example, you can see that the message was given a unique ID, and the **MESSAGE TEXT** field displays your bookmark in JSON string format.
+    In this example, you can see that the message was given a unique ID, and the **MESSAGE TEXT** field displays your bookmark in JSON string format.
 
-5. You can test the function further by changing the request body in the test pane with new id/url sets and running the function. Watch this queue to see more messages arrive. You can also look at the database to verify that new entries have been added.
+1. You can test the function further by changing the request body in the test pane with new id/url sets and running the function. Watch this queue to see more messages arrive. You can also look at the database to verify that new entries have been added.
 
-In this lab, we expanded your knowledge of bindings to output bindings, writing data to your Azure Cosmos DB. We went further and added another output binding to post messages to an Azure queue. This demonstrates the true power of bindings to help you shape and move data from incoming sources to a variety of destinations. We haven't written any database code or had to manage connection strings ourselves. Instead, we configured bindings declaratively and let the platform take care of securing connections, scaling our function, and scaling our connections.
+In this exercise, we expanded your knowledge of bindings to output bindings, writing data to your Azure Cosmos DB. We went further and added another output binding to post messages to an Azure queue. This demonstrates the true power of bindings to help you shape and move data from incoming sources to a variety of destinations. We haven't written any database code or had to manage connection strings ourselves. Instead, we configured bindings declaratively and let the platform take care of securing connections, scaling our function, and scaling our connections.
