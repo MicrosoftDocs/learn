@@ -2,7 +2,7 @@ Use Azure AD join to manage user and device identity in Azure.
 
 You work for a large book publisher that's deploying Windows 10 to employees' laptops. Your organization uses Azure Active Directory with multi-factor authentication enabled. Using these services, you can manage user identities and help protect the organization's resources. You want to add another layer of security for devices. Specifically, you want to restrict access to the organization's resources to only those devices managed by your organization and considered compliant by your mobile device management (MDM) system. You also want to improve your organization's experience when switching between devices.
 
-In this module, you'll gain an understanding of the various options available for managing device identities. You'll also explore enterprise state roaming and how that can benefit your Azure AD Joined users when they switch devices.
+In this module, you'll gain an understanding of the various options available for managing device identities. You'll also explore enterprise state roaming and how that can benefit your Azure AD joined users when they switch devices.
 
 By the end of this module, you'll understand how to set up and configure devices in Azure Active Directory (Azure AD) for AD join.  You'll also understand the benefits of using enterprise state roaming to reduce maintenance and improve the user experience when switching between devices.
 
