@@ -33,17 +33,23 @@ quiz:
       isCorrect: true
       explanation: "Database Experimentation Assistant enables you to automate the process of testing the workload of your current database on a target server."
 
-  - content: "Which of the following is a valid setting for Query Store in SQL Server 2017?"
+  - content: "Which of the following are valid settings for Query Store in SQL Server 2017?"
     choices:
-    - content: "Off"
+    - content: "Off, Read only, Read Write"
       isCorrect: true
-      explanation: "Off, Read only, and Read write are valid settings for Query Store in SQL Server 2017"
-    - content: "Passive"
+      explanation: "Off, Read Only, and Read Write are valid settings for Query Store in SQL Server 2017"
+    - content: "Off, On, Read Only"
       isCorrect: false
-      explanation: "Off, Read only, and Read write are valid settings for Query Store in SQL Server 2017"
-    - content: "Active"
+      explanation: "Off, Read Only, and Read Write are valid settings for Query Store in SQL Server 2017"
+    - content: "Off, Active, Passive"
       isCorrect: false
-      explanation: "Off, Read only, and Read write are valid settings for Query Store in SQL Server 2017"
+      explanation: "Off, Read Only, and Read Write are valid settings for Query Store in SQL Server 2017"
+    - content: "Off, On, Active"
+      isCorrect: false
+      explanation: "Off, Read Only, and Read Write are valid settings for Query Store in SQL Server 2017"
+    - content: "Active, Passive, Read Only"
+      isCorrect: false
+      explanation: "Off, Read Only, and Read Write are valid settings for Query Store in SQL Server 2017"
 
   - content: "On which version of SQL Server was Query Tuning Assistant first implemented? Select the correct answer."
     choices:
