@@ -1,19 +1,19 @@
-In this exercise, you run a second Terraform plan that provisions Azure App Service. The Terraform plan you run here more closely resembles what the Tailspin team needs to deploy the _Space Game_ website.
+In this exercise, you run a second Terraform plan that provisions Azure App Service. The Terraform plan that you run here more closely resembles what the Tailspin team needs to deploy the _Space Game_ website.
 
-The process you follow is similar to what you did earlier. This time, you:
+The process that you follow is similar to what you did earlier. This time, you:
 
 > [!div class="checklist"]
 > * Maintain the state file remotely by using Azure Blob storage.
 > * Use a service principal to authenticate access to Azure.
 
-You'll again work from Cloud Shell. Doing so helps you verify that you're able to authenticate with Azure and maintain the state file remotely. Later in this module, you'll apply the same configuration from Azure Pipelines.
+You'll again work from Azure Cloud Shell. Doing so helps you verify that you're able to authenticate with Azure and maintain the state file remotely. Later in this module, you'll apply the same configuration from Azure Pipelines.
 
-## Bring up Cloud Shell through the Azure portal
+## Open Cloud Shell through the Azure portal
 
-As you did earlier, bring up Cloud Shell through the Azure portal. Here's a quick refresher on how to do that.
+As you did earlier, open Cloud Shell through the Azure portal:
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
-1. From the menu bar, select Cloud Shell. When prompted, select the **Bash** experience.
+1. From the menu bar, select **Cloud Shell**. When you're prompted, select the **Bash** experience.
 
 ## Create a working directory
 
@@ -478,6 +478,8 @@ The version of Terraform you run in Cloud Shell might be different from the vers
     ```
 
     Your Terraform state file, *terraform.tfstate*, is now deleted from Blob storage.
+
+## The result
 
 **Tim:** I'm glad that we set up Terraform to use Blob storage and a service principal before we added anything to Azure Pipelines.
 
