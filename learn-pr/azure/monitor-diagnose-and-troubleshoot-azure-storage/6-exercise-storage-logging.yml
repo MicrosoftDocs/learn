@@ -3,15 +3,15 @@ uid: learn.monitor-diagnose-and-troubleshoot-azure-storage.6-exercise-storage-lo
 metadata:
   title: Exercise - Enable storage logging and view log data
   description: Enable storage logging and view log data
-  ms.date: 04/30/2019
+  ms.date: 11/15/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Exercise - Enable storage logging and view log data
-durationInMinutes: 10
-interactive: bash
+durationInMinutes: 8
+interactive: powershell
 azureSandbox: true
 content: |
   [!include[](includes/6-exercise-storage-logging.md)]
