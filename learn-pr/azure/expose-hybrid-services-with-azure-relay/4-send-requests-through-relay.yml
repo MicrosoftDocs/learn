@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.expose-hybrid-services-with-azure-relay.4-send-requests-through-relay
+metadata:
+  title: Send requests through a Relay Hybrid Connection
+  description: Send requests through a Relay Hybrid Connection
+  ms.date: 12/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Send requests through a Relay Hybrid Connection
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-send-requests-through-relay.md)]
