@@ -22,7 +22,7 @@ prerequisites: |
   - .NET Core 2.1
   - Git
   - A GitHub account
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/azure-devops/provision-infrastructure-azure-pipelines.svg
 levels:
 - intermediate
 roles:

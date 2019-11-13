@@ -20,13 +20,13 @@ If you haven't already, verify the CDN is delivering the same content as your so
 
 1. Click the storage account you use to host the static website. It should be the **cdnsitestorageXXXX** resource we created earlier.
 
-1. In the **Storage account** properties blade, under **Settings**, click **Static website**.
+1. In the **Storage account** properties pane, under **Settings**, click **Static website**.
 
 1. In the **Static website** page, click the **$web** link.
 
-1. In the **$web** blades, under Settings, click **Editor (preview)**.
+1. In the **$web** panes, under Settings, click **Editor (preview)**.
 
-1. In the **Editor (preview)** blade, click **index.html**.
+1. In the **Editor (preview)** pane, click **index.html**.
 
 1. In the **Index.html** tab, alter the page by adding text in the **H1** tag and click **Save**.
 
@@ -38,7 +38,7 @@ If you haven't already, verify the CDN is delivering the same content as your so
 
 1. Switch to the copy of the Azure portal showing the CDN endpoint settings, and click the **Purge** button.
 
-1. In the **Purge** blade, check the **Purge all** box, and click **Purge**.
+1. In the **Purge** pane, check the **Purge all** box, and click **Purge**.
 
 1. Switch to the browser tab displaying the CDN cached copy of the website, and refresh the page. The updated text will appear after a few minutes.
 
@@ -64,7 +64,7 @@ After 10 minutes, the new settings should have updated on the CDN endpoint. Cont
 
 1. Switch to the tab displaying the CDN cached copy of the website, and at the end of the url, add `/?Q=old`, then press Enter. The page shouldn't change.
 
-1. Switch to the second copy of the Azure portal, and in the **Editor (preview)** blade, click **index.html**.
+1. Switch to the second copy of the Azure portal, and in the **Editor (preview)** pane, click **index.html**.
 
 1. In the **Index.html** tab, add some more text to the file and then click **Save**.
 
@@ -76,7 +76,7 @@ After 10 minutes, the new settings should have updated on the CDN endpoint. Cont
 
 1. Switch back to the copy of the Azure portal that shows the CDN Endpoint settings.
 
-1. In the Caching rules blade, next to **Query string caching behavior**, select **Bypass caching for query strings**, then click **Save**.
+1. In the Caching rules pane, next to **Query string caching behavior**, select **Bypass caching for query strings**, then click **Save**.
 
 1. Wait for 10 minutes until the new settings have updated on the CDN endpoint.
 

@@ -33,7 +33,7 @@ To add the variables:
     > | **StorageAccountName**    | **tfsa4962** |
     > | **ResourceGroupLocation** | **westus** |
 
-    Select the ![Secret](../../shared/media/secret-variable-icon.png) lock icon next to **ARM_CLIENT_ID**, **ARM_CLIENT_SECRET**, **ARM_TENANT_ID**, and **ARM_SUBSCRIPTION_ID** to encrypt these values.
+    Select the ![Secret](../../shared/media/secret-variable-icon.png) lock icon next to  **ARM_CLIENT_SECRET** to encrypt this value.
 
 1. Select **Save**.
 
@@ -46,8 +46,10 @@ To add the variables:
 Here you modify your pipeline configuration by adding a job that runs Terraform to provision infrastructure to run the _Space Game_ website.
 
 1. In Visual Studio Code, modify *azure-pipelines.yml* by adding a job during the _Dev_ stage.
+    > [!Tip]
+    > You can replace the entire file or just update the part that's highlighted.
 
-    [!code-yml[](code/8-azure-pipelines.yml?highlight=5-40,42-44)]
+    [!code-yml[](code/8-azure-pipelines.yml?highlight=72-107,109-111)]
 
     This configuration resembles the one you built in the [Deploy applications with Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops?azure-portal=true) learning path. Here's a brief summary of what's new:
 

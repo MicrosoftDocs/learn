@@ -18,9 +18,7 @@ Let's assume you want to create a VM running an Ubuntu server. Setting up a site
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. You'll see the Azure resource creation and management menu on your left and the Azure portal home page in the center.
 
-    ![Screenshot that shows Azure portal home](../media/3-home-page.png)
 
 1. Click on the **Create a resource** option in the top-left corner of the portal page. The Azure Marketplace pane will open.
 

@@ -20,7 +20,7 @@ We're going to use one of the WordPress application options from the Azure Marke
 
 Typically, the first thing we'd do is to create a *resource group* to hold all the things that we need to create. The *resource group* allows us to administer all the services, disks, network interfaces, and other elements that potentially make up our solution as a unit. We can use the Azure portal to create and manage our solution's resource groups. However, keep in mind that you can also manage resources via a command line using the Azure CLI. The Azure CLI is a useful option should you need to automate the process in the future.
 
-In the free Azure sandbox environment you'll use the pre-created resource group **<rgn>[sandbox resource group name]</rgn>**, and you don't need to do this step.
+In the free Azure sandbox environment, you'll use the pre-created resource group **<rgn>[sandbox resource group name]</rgn>**, and you don't need to do this step.
 
 ## Choosing a location
 
@@ -36,7 +36,7 @@ In the free Azure sandbox environment you'll use the pre-created resource group 
 
     ![Screenshot showing the Create a resource option](../media/4-create-resource.png)
 
-    This takes you to the **Azure Marketplace**.
+    This option takes you to the **Azure Marketplace**.
 
     ![Screenshot showing Azure marketplace](../media/4-azure-marketplace.png)]
 
@@ -56,14 +56,14 @@ In the free Azure sandbox environment you'll use the pre-created resource group 
     | **Subscription** | Make sure the **Concierge Subscription** is selected. |
     | **Resource Group** | Select the **Use existing** radio button, then select the **<rgn>[sandbox resource group name]</rgn>** resource group from the drop-down list. |
     | **Database Provider** | Select **MySQL in App**. |
-    | **App Service plan/location** | Leave at the default configuration for the moment, you'll change the App Service plan in the next step. |
+    | **App Service plan/location** | You'll change the App Service plan in the next step. |
     | **Application Insights** | Leave at the default configuration. |
 
     Your configuration should look like this:
 
     [![Screenshot showing app service configuration information](../media/4-config-info-create.png)](../media/4-config-info-create-expanded.png#lightbox)
 
-1. Now let's configure the App Service plan. This specifies the compute resources and location for the web app. Select **App Service plan/location**.
+1. Now let's configure the App Service plan to use a specific pricing tier. The App Service plan specifies the compute resources and location for the web app. Select **App Service plan/location**.
 
     ![Screenshot showing App Service plan link](../media/4-config-app-service-plan.png)
 
@@ -84,6 +84,9 @@ In the free Azure sandbox environment you'll use the pre-created resource group 
 1. Back on the **New App Service plan** panel, select **OK** to create the new plan and close the panel.
 
 1. Finally, select the **Create** button to start the deployment of your new site.
+
+> [!NOTE]
+> If you encounter an issue creating the resources, verify you've selected the **F1** pricing tier in the new App Service plan. This is a requirement of the sandbox system when creating this WordPress site.
 
 ## Verify your website is running
 
