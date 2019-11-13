@@ -33,6 +33,19 @@
                 "dest": "modules"
             },
             {
+                "src": "ai-school",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "ai-business-school",
                 "files": [
                     "**/*.yml",
@@ -273,6 +286,15 @@
                     "sv-se"
                 ],
                 "ai-business-school/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "pt-br",
+                    "ja-jp",
+                    "zh-cn",
+                    "zh-tw"
+                ],
+                "ai-school/**/*.yml": [
                     "de-de",
                     "es-es",
                     "fr-fr",

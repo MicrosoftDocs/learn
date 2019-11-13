@@ -1,16 +1,16 @@
-Importing data into an Azure Search index is the first step to enabling your company to use search. With data loaded into an index, the next step is learning how to query it.
+Importing data into a search index is the first step to enabling your company to use search. With data loaded into an index, the next step is learning how to query it.
 
 In this unit, you'll see how to write simple search queries in the Search explorer, then append extra parameters to manipulate those results.
 
-## Searching content using Azure Search
+## Searching content using Azure Cognitive Search
 
 Index and query design are closely linked. A crucial component to understand is that the schema of the index determines what queries can be answered.
 
-Azure Search queries can be submitted as an HTTP or REST API request, with the response coming back as JSON. Queries can specify what fields are searched and returned, how search results are shaped, and how the results should be filtered or sorted. A query that doesn't specify the field to search will execute against all the searchable fields within the index.
+Azure Cognitive Search queries can be submitted as an HTTP or REST API request, with the response coming back as JSON. Queries can specify what fields are searched and returned, how search results are shaped, and how the results should be filtered or sorted. A query that doesn't specify the field to search will execute against all the searchable fields within the index.
 
-All of the methods of searching are made possible by the Azure Search REST API. You can choose to programmatically make GET requests to the API, in Powershell by running `Invoke-RestMethod`, or with tools like PostMan. In the portal, you can use the built-in Search explorer, enabling you to easily execute searches and view the JSON results. Or there's a rich SDK available for .NET programming languages, with which you can use the `SearchIndexClient` object to submit searches.
+All of the methods of searching are made possible by the Azure Cognitive Search REST API. You can choose to programmatically make GET requests to the API, in Powershell by running `Invoke-RestMethod`, or with tools like PostMan. In the portal, you can use the built-in Search explorer, enabling you to easily execute searches and view the JSON results. Or there's a rich SDK available for .NET programming languages, with which you can use the `SearchIndexClient` object to submit searches.
 
-Azure Search supports two types of syntax: simple and full Lucene. Simple syntax covers all of the common query scenarios, including geo-search. Full Lucene is useful for advanced scenarios such as wildcard and fuzzy search, or term boosting.
+Azure Cognitive Search supports two types of syntax: simple and full Lucene. Simple syntax covers all of the common query scenarios, including geo-search. Full Lucene is useful for advanced scenarios such as wildcard and fuzzy search, or term boosting.
 
 Which ever way you choose to search your content, you need to know the following information to write your queries.
 
@@ -27,7 +27,7 @@ A query request is a list or words (search terms) and query operators (simple or
 Search explorer uses the REST API. When using Search explorer, you can select the index and API version you want to use (service endpoint and API key are implicit). In the query you provide, you are only concerned with the last two items. Let's look what components make up a search query. Consider this search:
 
 ```
-calm easy meditation (-"iyengar yoga" + -"hot pilates)"
+calm easy meditation (-"iyengar yoga" + -"hot pilates")
 ```
 
 The above query is trying to find any video in your company's catalog that is calm and relaxing, but the person searching wants to exclude iyengar yoga and hot pilates.
@@ -38,7 +38,7 @@ By default, the search engine will match any of the terms in the query. A title 
 
 ### Simple Query Syntax
 
-The simple query syntax in Azure Search excludes some of the more complex features of the full Lucene query syntax, and it's the default search syntax for queries. The example search above is written in this simple query syntax.
+The simple query syntax in Azure Cognitive Search excludes some of the more complex features of the full Lucene query syntax, and it's the default search syntax for queries. The example search above is written in this simple query syntax.
 
 **Operators**
 
@@ -75,7 +75,7 @@ Can you see that using `&searchMode=all` means that the first group of terms now
 
 ### Full Lucene Query Syntax
 
-The full Lucene query syntax in Azure Search includes more complex query functionality including fuzzy search, regular expressions, and proximity searching. To use the full lucene query syntax in the Azure Search explorer append `&queryType=full` to the end of your search term.
+The full Lucene query syntax in Azure Cognitive Search includes more complex query functionality including fuzzy search, regular expressions, and proximity searching. To use the full lucene query syntax in the Search explorer append `&queryType=full` to the end of your search term.
 
 Let's write a query to look for videos that could have different spellings for some words, and require those words to be close to each other in the title. You know that you have a group of red colored shirt training videos, but think it may have been misspelled either colour, or colours. You'd also like the returned videos to have an 8 or higher difficulty rating. This type of search is made possible using the Lucene syntax.
 
@@ -95,7 +95,7 @@ If you need more specific control over string composition, Lucene also offers th
 
 ### Filtering data
 
-Filtering in Azure Search is additional criteria specified by a $filter expression Filtering is executed before your search query is parsed, so your query is running on a subset of the documents in the index. For example, a filter could be used to restrict the exercise videos returned in the catalog based on their difficulty level. You specify your filter criteria using OData expressions.
+Filtering in Azure Cognitive Search is additional criteria specified by a $filter expression Filtering is executed before your search query is parsed, so your query is running on a subset of the documents in the index. For example, a filter could be used to restrict the exercise videos returned in the catalog based on their difficulty level. You specify your filter criteria using OData expressions.
 
 `&$filter=fieldname operator value`: Both strings and numerical fields are supported. For string fields, `eq` and `ne` are supported. For numeric fields, OData supports `eq`, `ne`, `gt`, or `lt`.
 

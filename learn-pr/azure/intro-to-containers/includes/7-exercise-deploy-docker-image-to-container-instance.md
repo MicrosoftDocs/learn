@@ -10,9 +10,11 @@ In this exercise, you'll rebuild the image for the web app and upload it to Azur
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with your Azure subscription.
 
-1. Choose **Create a resource**, select **Containers**, and then click **Container Registry**
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-    ![Screenshot that shows the New blade in Azure portal showing the Container options available in Azure Marketplace](../media/7-search-container-registry.png)
+1. Select **Containers**, and then click **Container Registry**.
+
+    ![Screenshot that shows the New pane in Azure portal showing the Container options available in Azure Marketplace](../media/7-search-container-registry.png)
 
 1. Specify the values in the following table for each of the properties, and then click **Create**. For the registry name, select a name of your choice. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters. For more information on naming, see [Naming conventions for Azure resources](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)
 
@@ -87,7 +89,7 @@ For the rest of the exercise, you'll return to the Azure portal running in the s
 
 1. In the Azure portal, Choose **Create a resource**, select **Containers**, and then click **Container Instance**
 
-    ![Screenshot that shows the New blade in Azure portal showing the Container options available in Azure Marketplace](../media/7-search-container-instance.png)
+    ![Screenshot that shows the New pane in Azure portal showing the Container options available in Azure Marketplace](../media/7-search-container-instance.png)
 
     There are several pieces of information that need configuration for our Container Instance. We'll start by setting the resource group information and container details. Then we'll configure the container's network options and restart policy.
 
@@ -132,7 +134,7 @@ For the rest of the exercise, you'll return to the Azure portal running in the s
 
 1. On the **Overview** page, find the fully qualified domain name of the container instance.
 
-    ![Screenshot that shows the New blade in Azure portal showing the Container properties with the FQDN highlighted](../media/7-container-fqdn.png)
+    ![Screenshot that shows the New pane in Azure portal showing the Container properties with the FQDN highlighted](../media/7-container-fqdn.png)
 
 1. Using a web browser, navigate to the URL http://\<*fqdn*\>/api/reservations/1, where *\<fqdn\>*  is the fully qualified domain name of the container instance. The web app should respond with a JSON document containing the details for reservation 1, as in the previous exercise.
 

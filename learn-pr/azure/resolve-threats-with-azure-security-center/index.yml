@@ -17,7 +17,7 @@ abstract: |
   - Use a Security playbook to automate a security response
 prerequisites: |
   - Basic familiarity with Azure Security Center
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/resolve-threats-with-azure-security-center.svg
 levels:
 - intermediate
 roles:

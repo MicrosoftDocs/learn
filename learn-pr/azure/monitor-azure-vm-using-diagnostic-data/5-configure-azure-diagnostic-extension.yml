@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.monitor-azure-vm-using-diagnostic-data.configure-azure-diagnostic-extension
-title: Configure the Azure Diagnostic extension
+title: Configure the Azure Diagnostics extension
 metadata:
-  title: Configure the Azure Diagnostic extension
+  title: Configure the Azure Diagnostics extension
   description: Look at installing the Azure Diagnostics extension to monitor the health of a virtual machine. You'll learn how to enable guest diagnostics at virtual machine creation time and for an already created virtual machine.
   ms.date: 10/18/2019
   author: cwatson-cat

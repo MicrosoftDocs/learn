@@ -68,7 +68,7 @@ This approach is an excellent strategy for development environments. It's often 
 
 You can also use the auto-shutdown feature on a virtual machine to schedule automated shutdowns.
 
-![Screenshot of the Azure portal showing the Auto-shutdown section of a virtual machine blade with a shutdown time enabled.](../media/4-vm-auto-shutdown.png)
+![Screenshot of the Azure portal showing the Auto-shutdown section of a virtual machine pane with a shutdown time enabled.](../media/4-vm-auto-shutdown.png)
 
 ## Delete unused virtual machines
 

@@ -10,7 +10,7 @@ Dashboards are a flexible tool for managing different aspects of Azure services 
 
 1. In the tile gallery, drag the clock onto the workspace. Place it on the top right of the available space.
 
-1. On the **Edit clock** blade, change the Location to **Pacific Time (US & Canada)**.
+1. On the **Edit clock** pane, change the Location to **Pacific Time (US & Canada)**.
 
 1. Under **Time format**, click **24 hour**.
 
@@ -64,7 +64,7 @@ You now want to make this dashboard available to other users. To make this dashb
 
 1. On the **Sharing and access control** panel that appears, uncheck the **Publish to the 'dashboards' resource group** checkbox and choose the resource group <rgn>[sandbox resource group name]</rgn> from the **Resource group** dropdown.
 
-1. Click **Publish**, and then close the **Sharing + access control** blade.
+1. Click **Publish**, and then close the **Sharing + access control** pane.
 
 1. Use the dropdown at the top to navigate to the **Customer Dashboard**.
 
@@ -106,11 +106,11 @@ You've realized that you don't like the smaller clocks, and you want to return t
 
 1. Click **Browse all dashboards**.
 
-1. On the **All dashboards** blade, under **TYPE**, select **Shared dashboards**.
+1. On the **All dashboards** pane, under **TYPE**, select **Shared dashboards**.
 
 1. Click **Customer Dashboard**.
 
-1. Close the **All dashboards** blade.
+1. Close the **All dashboards** pane.
 
     The clocks have returned to their original size.
 
@@ -130,7 +130,7 @@ You've realized that you don't like the smaller clocks, and you want to return t
 
 If you want to prevent a shared dashboard from being available for selection, you can _unshare_ it. To unshare a dashboard, carry out the following steps:
 
-1. Click the **Unshare** button. The **Sharing + access control** blade appears.
+1. Click the **Unshare** button. The **Sharing + access control** pane appears.
 
 1. Click the **Unpublish** button.
 
@@ -140,11 +140,11 @@ If you want to prevent a shared dashboard from being available for selection, yo
 
 1. Click **Browse all dashboards**.
 
-1. On the **All dashboards** blade, under **TYPE**, select **Shared dashboards**.
+1. On the **All dashboards** pane, under **TYPE**, select **Shared dashboards**.
 
     **Customer Dashboard** no longer appears in the list of available dashboards.
 
-1. Close the **All dashboards** blade.
+1. Close the **All dashboards** pane.
 
 ## Delete a dashboard
 

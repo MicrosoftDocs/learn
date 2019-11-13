@@ -4,7 +4,7 @@ As a software developer at your company, you've the opportunity to grow your ski
 
 The Azure CLI is Microsoft's cross-platform command-line tool for managing Azure resources. It's available for macOS, Linux, and Windows, or in the browser using [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview). We have complete coverage of using this tool in the **Control Azure services with the CLI** module.
 
-You can use the Azure Cloud Shell by signing in to the panel on the right.
+You can use the Azure Cloud Shell by signing in at [https://shell.azure.com](https://shell.azure.com?azure-portal=true). Note you'll use your own Azure account for the exercises in this module and charges will apply.
 
 ## Managing deployments
 

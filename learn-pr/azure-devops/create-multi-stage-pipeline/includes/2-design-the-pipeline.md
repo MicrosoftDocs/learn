@@ -1,6 +1,6 @@
 In this part, you follow the Tailspin web team as they define their release pipeline for the _Space Game_ website.
 
-When you plan a release pipeline, you usually begin by identifying the stages, or major divisions of that pipeline. Each stage typically maps to an environment. For example, in the previous module, Andy and Mara's basic pipeline had a _Deploy_ stage which mapped to an Azure App Service instance.
+When you plan a release pipeline, you usually begin by identifying the stages, or major divisions, of that pipeline. Each stage typically maps to an environment. For example, in the previous module, Andy and Mara's basic pipeline had a _Deploy_ stage which mapped to an Azure App Service instance.
 
 In this module, you _promote_ changes from one stage to the next. Within each stage, you _deploy_ the _Space Game_ website to the environment that's associated with that stage.
 

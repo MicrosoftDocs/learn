@@ -15,7 +15,7 @@ The following sections demonstrate how to support each of these four actions in 
 
 ## Retrieve a product
 
-Replace the `// GET by ID action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following:
+Replace the `// GET by ID action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following code:
 
 ```csharp
 [HttpGet("{id}")]
@@ -47,7 +47,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 ## Add a product
 
-Replace the `// POST action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following:
+Replace the `// POST action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following code:
 
 ```csharp
 [HttpPost]
@@ -79,7 +79,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 ## Modify a product
 
-Replace the `// PUT action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following:
+Replace the `// PUT action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following code:
 
 ```csharp
 [HttpPut("{id}")]
@@ -101,7 +101,18 @@ The preceding action:
 
 * Responds only to the HTTP PUT verb, as denoted by the `[HttpPut]` attribute.
 * Requires that the `id` value is included in the URL segment after `products/`.
-* Updates the `Name` and `Price` properties of the product.
+* Updates the `Name` and `Price` properties of the product. The following code instructs EF Core to mark all of the `Product` entity's properties as modified:
+
+    ```csharp
+    _context.Entry(product).State = EntityState.Modified;
+    ```
+
+    It's a more maintainable alternative to individual property assignments that replaces the following hypothetical code:
+
+    ```csharp
+    product.Name = productIn.Name;
+    product.Price = productIn.Price;
+    ```
 
 > [!NOTE]
 > Because the controller is annotated with the `[ApiController]` attribute, it's implied that the `product` parameter will be found in the request body.
@@ -116,7 +127,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 ## Remove a product
 
-Replace the `// DELETE action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following:
+Replace the `// DELETE action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following code:
 
 ```csharp
 [HttpDelete("{id}")]

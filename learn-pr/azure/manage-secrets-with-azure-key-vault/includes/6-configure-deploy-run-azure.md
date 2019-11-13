@@ -4,7 +4,7 @@ Now it's time to run our app in Azure. We need to create an Azure App Service ap
 
 Creating an App Service app is a two-step process: First create the *plan*, then the *app*.
 
-The *plan* name only needs to be unique within your subscription, so you can use the same name we've used: **keyvault-exercise-plan**. The app name needs to be globally unique, though, so you'll need to pick your own. Use the same location you used when creating the vault.
+The *plan* name only needs to be unique within your subscription, so you can use the same name we've used: **keyvault-exercise-plan**. The app name needs to be globally unique, though, so you'll need to pick your own.
 
 In Azure Cloud Shell, run the following to create an App Service plan:
 
@@ -12,6 +12,7 @@ In Azure Cloud Shell, run the following to create an App Service plan:
 az appservice plan create \
     --name keyvault-exercise-plan \
     --sku FREE \
+    --location centralus \
     --resource-group <rgn>[sandbox resource group name]</rgn>
 ```
 

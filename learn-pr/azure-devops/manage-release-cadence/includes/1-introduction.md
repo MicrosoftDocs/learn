@@ -1,4 +1,4 @@
-Throughout this learning path, you helped the Tailspin team set up an automated CI/CD pipeline, complete with multiple stages and both functional and non-functional tests. 
+In this learning path, you've been helping the Tailspin team set up an automated release pipeline, complete with multiple stages and both functional and non-functional tests. 
 
 In this module, you help the team solve another problem. How do they implement a deployment pattern that lets them release to production in a way that's best both for the company and for their users? You'll help them evaluate the different possibilities and then implement the one they decide on.
 
@@ -30,7 +30,7 @@ If you want to go through just this module, you need to set up a development env
 * [.NET Core 2.1](https://www.microsoft.com/net/download?azure-portal=true)
 * [Git](https://git-scm.com/downloads?azure-portal=true)
 
-You can get started with Azure and Azure DevOps for free.
+You can get started with Azure and Azure DevOps for free. You don't need an Azure subscription to work with Azure DevOps, but here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription.
 
 This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
 
