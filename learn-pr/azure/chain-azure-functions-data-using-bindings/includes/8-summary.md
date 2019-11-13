@@ -1,4 +1,4 @@
-This module was all about integrating data and services into your functions. We started off with a quick tour of the binding types that show up when you add them to a function. We then looked at reading data from an Azure Cosmos DB by using an input binding. The platform takes care of managing connection strings, and we saw how easy it is to read data in our code by using the binding. Finally, we focused our attention on writing data to different sources with the help of output bindings. This journey is summarized in the following table:
+This module was about integrating data and services into your functions. We started with a quick tour of the binding types that show up when you add them to a function, then we looked at reading data from an Azure Cosmos DB by using an input binding. Azure Functions takes care of managing connection strings, and we saw how easy it is to read data in our code by using the binding. Finally, we focused our attention on writing data to different sources with the help of output bindings. This journey is summarized in the following table:
 
 [!INCLUDE [summary table](./summary-table.md)]
 
