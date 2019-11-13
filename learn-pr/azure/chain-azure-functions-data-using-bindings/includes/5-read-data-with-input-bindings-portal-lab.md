@@ -4,7 +4,7 @@ Imagine that you want to create a simple bookmark lookup service. Your service i
 
 When users send you a request with some text, you try to find an entry in your back-end database that contains this text as a key or ID. You return a result that indicates whether you found the entry.
 
-You need to store the data somewhere. In this flowchart, the data store is an Azure Cosmos DB instance. But how do you connect to a database from a function and read data? In the world of functions, you configure an *input binding* for that job.  Configuring a binding through the Azure portal is straightforward. As you'll see shortly, you don't have to write code for such tasks as opening a storage connection. The Azure Functions runtime and bindings take care of those tasks for you.
+You need to store the data somewhere. In this flowchart, the data store is an Azure Cosmos DB instance. But how do you connect to a database from a function and read data? In the world of functions, you configure an *input binding* for that job. Configuring a binding through the Azure portal is straightforward. As you'll see shortly, you don't have to write code for such tasks as opening a storage connection. The Azure Functions runtime and bindings take care of those tasks for you.
 
 ## Create an Azure Cosmos DB account
 
@@ -23,11 +23,11 @@ A database account is a container for managing one or more databases. Before we 
 
     | Property | Suggested value | Description |
     |---|---|---|
-    | **Subscription** | _Concierge Subscription_ | The Azure subscription that you want to use for this Azure Cosmos DB account. |
-    | **Resource Group**| _<rgn>[sandbox resource group name]</rgn>_ | This field is pre-populated with the resource group from your sandbox. |
+    | **Subscription** | `Concierge Subscription` | The Azure subscription that you want to use for this Azure Cosmos DB account. |
+    | **Resource Group**| `<rgn>[sandbox resource group name]</rgn>` | This field is pre-populated with the resource group from your sandbox. |
     | **Account Name** | Globally unique name | Enter a unique name to identify this Azure Cosmos DB account. Because `documents.azure.com` is appended to the name that you provide to create your URI, use a unique but identifiable name.<br><br>The account name can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 50 characters. |
-    | **API** | _Core (SQL)_ | The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (document database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently require a separate account. <br><br>Select **Core (SQL)**. At this time, the Azure Cosmos DB trigger, input bindings, and output bindings only work with SQL API and Graph API accounts. |
-    | **Location** | _Central US_ | Choose the region nearest you. |
+    | **API** | `Core (SQL)` | The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (document database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently require a separate account. <br><br>Select **Core (SQL)**. At this time, the Azure Cosmos DB trigger, input bindings, and output bindings only work with SQL API and Graph API accounts. |
+    | **Location** | `Central US` | Choose the region nearest you. |
 
      Leave all of the other fields in the **New account** pane at their default values.
 
@@ -56,20 +56,20 @@ Let's use the Data Explorer tool in the Azure portal to create a database and co
 
     | Property | Suggested value | Description |
     |---|---|---|
-    | **Database ID** | _[!INCLUDE [cosmos-db-name](./cosmos-db-name.md)]_ | Database names must contain from 1 through 255 characters, and they cannot contain /, \\, #, ?, or a trailing space.<br><br>You are free to enter whatever you want here, but we suggest [!INCLUDE [cosmos-db-name](./cosmos-db-name.md)] as the name for the new database, and that's what we'll refer to in this unit. |
-    | **Container ID** | _[!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)]_ | Enter [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] as the name for our new collection. Container IDs have the same character requirements as database names. |
-    | **Partition key** | _/id_ | The partition key specifies how the documents in Azure Cosmos DB collections are distributed across logical data partitions. We will use the `id` field as a convenience, as we are not concerned with database performance in this module. If you would like to learn more about Azure Cosmos DB partition key strategies, please explore the Microsoft Learn Azure Cosmos DB modules. |
-    | **Throughput** | _1000 RU_ |Change the throughput to 1000 request units per second (RU/s). If you want to reduce latency, you can scale up the performance later. |
+    | **Database ID** | `func-io-learn-db` | Database names must contain from 1 through 255 characters, and they cannot contain /, \\, #, ?, or a trailing space.<br><br>You are free to enter whatever you want here, but we suggest _func-io-learn-db_ as the name for the new database, and that's what we'll refer to in this unit. |
+    | **Container ID** | `Bookmarks` | Enter _Bookmarks_ as the name for our new collection. Container IDs have the same character requirements as database names. |
+    | **Partition key** | `/id` | The partition key specifies how the documents in Azure Cosmos DB collections are distributed across logical data partitions. We will use the `id` field as a convenience, as we are not concerned with database performance in this module. If you would like to learn more about Azure Cosmos DB partition key strategies, please explore the Microsoft Learn Azure Cosmos DB modules. |
+    | **Throughput** | `1000 RU` |Change the throughput to 1000 request units per second (RU/s). If you want to reduce latency, you can scale up the performance later. |
 
 1. Select **OK**. The Data Explorer displays the new database and container. Inside the database, we've defined a container. Next, we'll add some data, also known as items.
 
 ### Add test data
 
-We've defined a container in our database called [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)]. We want to store a URL and ID in each item, like a list of web page bookmarks.
+We've defined a container in our database called **Bookmarks**. We want to store a URL and ID in each item, like a list of web page bookmarks.
 
 You'll add data to the new container using Data Explorer.
 
-1. In Data Explorer, the new database appears in the Containers pane. Expand the [!INCLUDE [cosmos-db-name](./cosmos-db-name.md)] database, expand the [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] collection, select **Items**, and then select **New Item**.
+1. In Data Explorer, the new database appears in the Containers pane. Expand the **func-io-learn-db** database, expand the **Bookmarks** collection, select **Items**, and then select **New Item**.
 
 1. Replace the default content of the new item with the following JSON.
 
@@ -126,7 +126,7 @@ You'll add data to the new container using Data Explorer.
 
     ![The SQL API UI in the portal, showing the list of entries you added to your bookmarks container](../media/5-db-bookmark-coll.PNG)
 
-You now have a few entries in your [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] container. Our scenario will work as follows. If a request arrives with, for example, "id=docs", you'll look up that ID in your bookmarks container and return the URL `https://docs.microsoft.com/azure`. Let's make an Azure function that looks up values in this container.
+You now have a few entries in your **Bookmarks** container. Our scenario will work as follows. If a request arrives with, for example, "id=docs", you'll look up that ID in your bookmarks container and return the URL `https://docs.microsoft.com/azure`. Let's make an Azure function that looks up values in this container.
 
 ## Create your function
 
@@ -134,8 +134,7 @@ You now have a few entries in your [!INCLUDE [cosmos-coll-name](./cosmos-coll-na
 
 1. Navigate to the function app that you created in the preceding unit.
 
-1. Select the **Add** (**+**) button next to **Functions** to start the function creation process. 
-   The page displays the complete set of supported triggers.
+1. Select the **Add** (**+**) button next to **Functions** to start the function creation process. The page displays the complete set of supported triggers.
 
 1. Select **HTTP trigger**
 
@@ -143,8 +142,8 @@ You now have a few entries in your [!INCLUDE [cosmos-coll-name](./cosmos-coll-na
 
     | Field | Value |
     |---|---|
-    | **Name** | _[!INCLUDE [func-name-find](./func-name-find.md)]_ |
-    | **Authorization level** | _Function_ |
+    | **Name** | `find-bookmark` |
+    | **Authorization level** | `Function` |
 
 1. Select **Create** to create your function. This action opens the *index.js* file in the code editor and displays a default implementation of the HTTP-triggered function.
 
@@ -163,8 +162,8 @@ You now have a few entries in your [!INCLUDE [cosmos-coll-name](./cosmos-coll-na
 
     | Field | Value |
     |---|---|
-    | **Name** | _[!INCLUDE [func-name-find](./func-name-find.md)]_ |
-    | **Authorization level** | _Function_ |
+    | **Name** | `find-bookmark` |
+    | **Authorization level** | `Function` |
 
 1. Select **Create** to create your function. This action opens the *run.ps1* file in the code editor and displays a default implementation of the HTTP-triggered function.
 
@@ -178,7 +177,7 @@ You can verify what we have done so far by testing our new function as follows:
 
 1. Paste the function URL you copied into your browser's address bar. Add the query string value `&name=<yourname>` to the end of the URL and press **Enter** to execute the request. You should get a response from the Azure Function right in the browser.
 
-Now that we have our bare-bones function working, let's turn our attention to reading data from our Azure Cosmos DB, or in our scenario, our [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] container.
+Now that we have our bare-bones function working, let's turn our attention to reading data from our Azure Cosmos DB, or in our scenario, our **Bookmarks** container.
 
 ## Add an Azure Cosmos DB input binding
 
@@ -201,8 +200,8 @@ To read data from the database, you need to define an input binding. As you'll s
 
     | Property | Suggested value | Description |
     |---|---|---|
-    | **Connection**| _Azure Cosmos DB account_ | This field is selected by default. |
-    | **Subscription** | _Concierge Subscription_ | The Azure subscription that you want to use for this Azure Cosmos DB account. |
+    | **Connection**| `Azure Cosmos DB account` | This field is selected by default. |
+    | **Subscription** | `Concierge Subscription` | The Azure subscription that you want to use for this Azure Cosmos DB account. |
     | **Database account** | Cosmos DB account | Select the **Account Name** that you specified when you created your Azure Cosmos DB account. |
 
 1. Select **Select** to create your connection.
@@ -222,11 +221,11 @@ You want to look up a bookmark with a specific ID, so let's tie an ID that we re
 
     | Property | Suggested value | Description |
     |---|---|---|
-    | **Document parameter name** | _bookmark_ | The name used to identify this binding in your code. |
-    | **Database name** | _[!INCLUDE [cosmos-db-name](./cosmos-db-name.md)]_ | The database to work with. This value is the database name we set earlier in this lesson. |
-    | **Collection Name** | _[!INCLUDE [cosmos-db-name](./cosmos-coll-name.md)]_ | The collection from which we'll read data. This setting was defined earlier in the lesson. |
+    | **Document parameter name** | `bookmark` | The name used to identify this binding in your code. |
+    | **Database name** | `func-io-learn-db` | The database to work with. This value is the database name we set earlier in this lesson. |
+    | **Collection Name** | `Bookmarks` | The collection from which we'll read data. This setting was defined earlier in the lesson. |
     | **SQL Query (optional)** | Leave blank | We are only retrieving one document at a time based on the ID. So, filtering with the Document ID field is a better than using a SQL Query in this instance. We could craft a SQL Query to return one entry (`SELECT * from b where b.ID = {id}`). That query would indeed return a document, but it would return it in a document collection. Our code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
-    | **Partition key (optional)** | _{id}_ | Add the partition key that we defined when we created the [!INCLUDE [cosmos-coll-name](./cosmos-coll-name.md)] Azure Cosmos DB collection earlier.  The key entered here (specified in input binding format `{<key>}`) must match the one in the collection. |
+    | **Partition key (optional)** | `{id}` | Add the partition key that we defined when we created the _Bookmarks_ Azure Cosmos DB collection earlier. The key entered here (specified in input binding format `{<key>}`) must match the one in the collection. |
 
 9. Select **Save** to save all changes to this binding configuration.
 
@@ -236,7 +235,7 @@ Now that you have your binding defined, it's time to use it in your function.
 
 ::: zone pivot="javascript"
 
-1. Select your function, [!INCLUDE [func-name-find](./func-name-find.md)], to open *index.js* in the code editor. You've added an input binding to read from your database, so update the logic to use this binding.
+1. Select your function, **find-bookmark**, to open *index.js* in the code editor. You've added an input binding to read from your database, so update the logic to use this binding.
 
 1. Replace all code in *index.js* with the code from the following snippet and hit **Save**.
 
@@ -246,11 +245,11 @@ Now that you have your binding defined, it's time to use it in your function.
 
 ::: zone pivot="powershell"
 
-1. Select your function, [!INCLUDE [func-name-find](./func-name-find.md)], to open *run.ps1* in the code editor. You've added an input binding to read from your database, so update the logic to use this binding.
+1. Select your function, **find-bookmark**, to open *run.ps1* in the code editor. You've added an input binding to read from your database, so update the logic to use this binding.
 
 1. Replace all code in *run.ps1* with the code from the following snippet and hit **Save**.
 
-   ```powershell
+    ```powershell
     using namespace System.Net
 
     param($Request, $bookmark, $TriggerMetadata)
