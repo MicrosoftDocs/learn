@@ -6,7 +6,7 @@ Let's say you work for a company that sells a variety of products ranging from c
 
 ## Understand the business problem
 
-In any problem-solving method the problem must first be identified. This can either be in the form of a question or a statement. There is always a general business understanding that will motivate the data science process in each situation.
+In any problem-solving method, the problem must first be identified. This identification can either be in the form of a question or a statement. There is always a general business understanding that will motivate the data science process in each situation.
 
 In our example, your company understands they could be selling more brooms if they knew how many they could expect to sell each month, and stock their shelves accordingly.
 
