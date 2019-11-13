@@ -2,7 +2,7 @@ The following is a high-level illustration of what we're going to build in this 
 
 ::: zone pivot="javascript"
 
-![An illustration of default HTTP trigger, showing HTTP request and response as well as respective req and res binding parameters](../media/3-default-http-trigger-visual-small.PNG)
+![An illustration of default HTTP trigger, showing HTTP request and response as well as respective req and res binding parameters](../media/3-default-http-trigger-visual-small.png)
 
 ::: zone-end
 
@@ -28,12 +28,12 @@ Let's create a function app that we'll use throughout this entire module. A func
 
     | Property | Suggested value | Description |
     |---|---|---|
-    | **Subscription** | _Concierge Subscription_ | The Azure subscription that you want to use for this Azure Cosmos DB account. |
-    | **Resource Group**| _<rgn>[sandbox resource group name]</rgn>_ | This field is pre-populated with the resource group from your sandbox. |
+    | **Subscription** | `Concierge Subscription` | The Azure subscription that you want to use for this Azure Cosmos DB account. |
+    | **Resource Group**| `<rgn>[sandbox resource group name]</rgn>` | This field is pre-populated with the resource group from your sandbox. |
     | **Function App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`.  |
-    | **Publish** | _Code_ | Option to publish code files or a Docker container.  |
-    | **Runtime Stack** | _Node.js_ | The sample code in this module is written in JavaScript.  |
-    | **Region** | _Central US_ | Choose the region nearest you. |
+    | **Publish** | `Code` | Option to publish code files or a Docker container.  |
+    | **Runtime Stack** | `Node.js` | The sample code in this module is written in JavaScript.  |
+    | **Region** | `Central US` | Choose the region nearest you. |
 
 1. Select **Review + create** and then **Create** to provision and deploy the function app.
 
@@ -62,12 +62,12 @@ Let's create a function app that we'll use throughout this entire module. A func
 
     | Property | Suggested value | Description |
     |---|---|---|
-    | **Subscription** | _Concierge Subscription_ | The Azure subscription that you want to use for this Azure Cosmos DB account. |
-    | **Resource Group**| _<rgn>[sandbox resource group name]</rgn>_ | This field is pre-populated with the resource group from your sandbox. |
+    | **Subscription** | `Concierge Subscription` | The Azure subscription that you want to use for this Azure Cosmos DB account. |
+    | **Resource Group**| `<rgn>[sandbox resource group name]</rgn>` | This field is pre-populated with the resource group from your sandbox. |
     | **Function App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`.  |
-    | **Publish** | _Code_ | Option to publish code files or a Docker container.  |
-    | **Runtime Stack** | _PowerShell Core_ | The sample code in this module is written in PowerShell.  |
-    | **Region** | _Central US_ | Choose the region nearest you. |
+    | **Publish** | `Code` | Option to publish code files or a Docker container.  |
+    | **Runtime Stack** | `PowerShell Core` | The sample code in this module is written in PowerShell.  |
+    | **Region** | `Central US` | Choose the region nearest you. |
 
 1. Select **Review + create** and then **Create** to provision and deploy the function app.
 
@@ -231,7 +231,7 @@ As you can see, this function has a trigger binding named **Request** of type `h
 
     ![Screenshot showing the list of possible input bindings.](../media/3-func-input-bindings-selector-small.PNG)
 
-   Take a moment to consider each of these input bindings and how you might use them in a solution. There are a lot to choose from. This list might even have changed by the time you read this module, as we continue to support more data sources.
+    Take a moment to consider each of these input bindings and how you might use them in a solution. There are a lot to choose from. This list might even have changed by the time you read this module, as we continue to support more data sources.
 
 1. We'll get back to adding input bindings later in the module but, for now, select **Cancel** to dismiss this list.
 
@@ -239,6 +239,6 @@ As you can see, this function has a trigger binding named **Request** of type `h
 
     ![Screenshot showing the list of possible output bindings.](../media/3-func-output-bindings-selector-small.PNG)
 
-   As you can see, there are several output binding types at your disposal. We'll get back to adding output bindings later in the module but, for now, select **Cancel** to dismiss this list.
+    As you can see, there are several output binding types at your disposal. We'll get back to adding output bindings later in the module but, for now, select **Cancel** to dismiss this list.
 
 So far, we've learned how to create a function app and add a function to it. We've seen a simple function in action, one that runs when an HTTP request is made to it. We've also explored the Azure portal UI and types of input and output binding that are available to our functions. In the next unit, we'll use an input binding to read text from a database.
