@@ -33,8 +33,3 @@ Use these different methods to cater to your users' needs. For example, for acce
 You enable multi-factor authentication for your Azure AD B2C application through the Azure portal. When you create user sign-in and sign-up flows, you enable multi-factor authentication with a toggle.  If necessary, use the same toggle in your user flow to disable multi-factor authentication for your application.
 
 ![Enable MFA in user flow](../media/3-enable-mfa-user-flow.png)
-
-<!-- Author notes:  -->
-<!-- I am unable to find information on when to disable multi-factor authentication for Azure AD B2C. I have, however, covered how to disable MFA for B2C. -->
-
-<!-- Conditional Access policies are not in the documentation for AD B2C. If it is relevant, please feel free to point to some good information. There is information for Conditional Access policies in the documentation for Azure Active Directory, but this doesn't appear to be relevant for B2C.  -->

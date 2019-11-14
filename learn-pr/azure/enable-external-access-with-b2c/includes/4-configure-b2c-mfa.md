@@ -39,7 +39,7 @@ You use user flows to manage things like your user sign-ins and sign-ups. Your A
 
 ![Create user flows](../media/4-create-user-flows.png)
 
-You'll create a user flow for sign-ups and sign-ins for your users to sign up and access the application.
+You'll create a user flow for sign-ups and sign-ins for your users. You use the sign-up and sign-in user flow to handle the steps necessary for your users to create an account for the app and access the account. This user flow will guide the users through several pages that help them to sign in or sign up.
 
 ![Create a sign-up user flow](../media/4-create-sign-up-flow.png)
 
@@ -65,7 +65,7 @@ When your user has registered an account, they sign in. The sign-in form might l
 
 ![Sign-in form](../media/4-sign-in-form.png)
 
-After a user's credentials are verified, they'll complete a multi-factor authentication challenge. The user enters their phone number, and chooses to receive a code, either sent via text message or in a call.
+After a user's credentials are verified, they'll complete a multi-factor authentication challenge. The user enters their phone number, and chooses to receive a code, either sent via text message or in a call. 
 
 ![MFA form](../media/4-mfa-form.png)
 
