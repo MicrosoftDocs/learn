@@ -2,7 +2,7 @@
 uid: learn.host-a-web-application-with-azure-web-apps
 metadata:
   title: Host a web application with Azure App Service
-  description: Create a website through the hosted web app platform in Azure App Service.
+  description: Create a website in the programming language of your choice through the hosted web app platform in Azure App Service.
   ms.date: 12/12/2018
   author: nickwalkmsft
   ms.author: nickwalk
