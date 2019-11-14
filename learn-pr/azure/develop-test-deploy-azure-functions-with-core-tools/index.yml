@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn-pr.develop-test-deploy-azure-functions-core-tools
+metadata:
+  title: Develop, test, and publish Azure Functions by using Azure Functions Core Tools
+  description: In this module, you'll learn how to use the Azure Functions Core Tools to create, run, and publish functions from the command line in a local development environment.
+  ms.date: 11/13/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Develop, test, and publish Azure Functions by using Azure Functions Core Tools
+summary: Use the Azure Functions Core Tools to create and run functions on a development computer and publish them to Azure.
+abstract: |
+  By the end of this module, you will be able to use the Azure Functions Core Tools to:
+  - Create new functions projects and functions
+  - Run and test functions locally
+  - Publish functions to Azure
+prerequisites: |
+  - Beginner-level Azure Functions development experience
+  - Familiarity with basic command line usage
+iconUrl: /learn/achievements/develop-test-deploy-azure-functions-core-tools.svg
+levels: 
+- beginner
+roles: 
+- developer
+products: 
+- azure
+- azure-functions
+units:
+- learn-pr.develop-test-deploy-azure-functions-core-tools.1-introduction
+- learn-pr.develop-test-deploy-azure-functions-core-tools.2-create-run-functions-locally-core-tools
+- learn-pr.develop-test-deploy-azure-functions-core-tools.3-exercise-create-function-core-tools
+- learn-pr.develop-test-deploy-azure-functions-core-tools.4-publish-function-core-tools
+- learn-pr.develop-test-deploy-azure-functions-core-tools.5-exercise-publish-function-core-tools
+- learn-pr.develop-test-deploy-azure-functions-core-tools.6-summary
+badge:
+  uid: learn-pr.develop-test-deploy-azure-functions-core-tools.badge
