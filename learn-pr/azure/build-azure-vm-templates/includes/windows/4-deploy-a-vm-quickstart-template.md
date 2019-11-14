@@ -1,6 +1,6 @@
 Here you'll deploy the Quickstart template you explored in the previous part. The Quickstart template brings up a basic virtual machine configuration.
 
-[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
+[!include[](../../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 Before you do that, let's briefly review the deployment process.
 
@@ -39,7 +39,7 @@ First, we'll create a _resource group_ to hold all the things that we need to cr
     ```
     The following list has some location values you can use.
 
-    [!include[](../../../includes/azure-sandbox-regions-note.md)]
+    [!include[](../../../../includes/azure-sandbox-regions-note.md)]
 1. Run the following command to create a resource group.
     ```bash
     az group create --name $RESOURCEGROUP --location $LOCATION
