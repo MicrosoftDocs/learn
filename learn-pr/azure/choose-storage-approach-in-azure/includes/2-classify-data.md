@@ -18,7 +18,7 @@ Structured data is straightforward in that it's easy to enter, query, and analyz
 
 ## Semi-structured data
 
-Semi-structured data is less organized than structured data, and is not stored in a relational format, as the fields do not neatly fit into tables, rows, and columns. Semi-structured data contains tags that make the organization and hierarchy of the data apparent - for example, key/value pairs. Semi-structured data is also referred to as non-relational or **NoSQL data**. The expression and structure of the data in this style is defined by a *serialization language*.
+Semi-structured data is less organized than structured data, and is not stored in a relational format, as the fields do not neatly fit into tables, rows, and columns. Semi-structured data contains tags that make the organization and hierarchy of the data apparent - for example, key/value pairs. Semi-structured data is also referred to as non-relational or _NoSQL data_. The expression and structure of the data in this style is defined by a *serialization language*.
 
 For software developers, data serialization languages are important because they can be used to write data stored in memory to a file, sent to another system, parsed and read. The sender and receiver don’t need to know details about the other system, as long as the same serialization language is used, the data can be understood by both systems.
 
@@ -61,11 +61,11 @@ Here's the same person expressed in JSON.
 }
 ```
 
-Notice that this format isn't as formal - it's closer to a key/value pair model than a formal data expression. JavaScript has built-in support for this format and other languages have parsers you can use to work with this data style. The downside to this format is that it tends to be more machine-oriented making it harder for people to read and modify.
+Notice that this format isn't as formal as XML. It's closer to a key/value pair model than a formal data expression. As you might guess from the name, JavaScript has built-in support for this format - making it very popular for web development. Like XML, other languages have parsers you can use to work with this data format. The downside to JSON is that it tends to be more programmer-oriented making it harder for non-technical people to read and modify.
 
-**YAML** – or *YAML Ain’t Markup Language*, is a relatively new data language that’s growing quickly in popularity in part due to its human-friendliness. The data structure is defined by line separation and indentation, and reduces the dependency on structural characters like parentheses and brackets.
+**YAML** – or *YAML Ain’t Markup Language*, is a relatively new data language that’s growing quickly in popularity in part due to its human-friendliness. The data structure is defined by line separation and indentation, and reduces the dependency on structural characters like parentheses, commas and brackets.
 
-Here's the person data expressed in YAML.
+Here's the same person data expressed in YAML.
 
 ```yaml
 firstName: John
@@ -80,7 +80,7 @@ hobbies:
       value: Guitar
 ```
 
-This format is more readable than JSON and is often used for configuration files. However, YAML is the newest of these data formats and doesn't have as much support in programming languages as JSON and XML.
+This format is more readable than JSON and is often used for configuration files that need to be written by people but parsed by programs. However, YAML is the newest of these data formats and doesn't have as much support in programming languages as JSON and XML.
 
 #### What is NoSQL / semi-structured data?
 
