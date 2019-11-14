@@ -7,7 +7,7 @@ In this module, you learned how to:
 - Add stream analytics, and machine learning, to process the incoming telemetry
 - Add BI output to visualize the data anomalies
 
-![Graph of smooth vibrations](../media/vibration3neon.png)
+![Graph of smooth vibrations](../media/vibration3.png)
 
 ## Clean up
 
@@ -22,7 +22,7 @@ Take your interest further with:
 - [Azure IoT Hub Documentation](https://docs.microsoft.com/azure/iot-hub//)
 - [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/)
 - [Azure Certified for IoT device catalog](https://catalog.azureiotsolutions.com/)
-- [Develop IoT Edge modules for Windows devices](https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-develop-for-windows#set-up-visual-studio-and-tools)
+- [Develop IoT Edge modules for Windows devices](https://docs.microsoft.com/azure/iot-edge/tutorial-develop-for-windows#set-up-visual-studio-and-tools)
 
 And look out for additional Learn modules on IoT Hub.
 

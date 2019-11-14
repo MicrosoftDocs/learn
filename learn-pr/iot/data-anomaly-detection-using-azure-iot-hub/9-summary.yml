@@ -61,17 +61,17 @@ quiz:
       isCorrect: false
       explanation: explanation 4.
   
-  - content: 'question tbd?'
+  - content: 'What is the purpose of Azure Event Hubs?'
     choices:  
-    - content: 'answer 1'
+    - content: 'Azure Event Hubs is a central message hub, for bi-directional communications with remote devices.'
+      isCorrect: false
+      explanation: Bi-directional communications is the role of an IoT Hub.
+    - content: 'Azure Event Hubs is a fully managed service to move certain workloads to the edge of the network.'
+      isCorrect: false
+      explanation: Moving work to the edge of the network is the role of Azure Iot Edge.
+    - content: 'Azure Event Hubs is a data streaming platform and event ingestion service. It can receive and process millions of events per second.'
       isCorrect: true
-      explanation: explanation 1.
-    - content: 'answer 2'
+      explanation: The processed event data can be stored, run through Azure Stream Analytics, and other cloud processes.
+    - content: 'Azure Event Hubs is a real-time analytics service, designed for demanding workloads.'
       isCorrect: false
-      explanation: explanation 2.
-    - content: 'answer 3'
-      isCorrect: false
-      explanation: explanation 3.
-    - content: 'answer 4'
-      isCorrect: false
-      explanation: explanation 4.
+      explanation: Analyzing demanding streaming workloads is the role of Azure Stream Analytics.
