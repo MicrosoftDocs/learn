@@ -7,7 +7,7 @@ In this module, you learned how to:
 - Add stream analytics, and machine learning, to process the incoming telemetry
 - Add BI output to visualize the data anomalies
 
-![Graph of smooth vibrations](../media/vibration3.png)
+![Graph of smooth vibrations](../media/vibration3neon.png)
 
 ## Clean up
 

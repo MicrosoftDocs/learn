@@ -4,6 +4,8 @@ An IoT Hub can scale to handle millions of devices. An IoT device can upload fil
 
 In this module, you will learn about Azure IoT Hub, Azure Stream Analytics, and Azure Machine Learning, by creating an IoT system to detect vibration anomalies in a conveyor belt.
 
+  ![Conceptual art of a conveyor belt](../media/vibrations-art1.png)
+
 ## Learning objectives
 
 In this module you will:
