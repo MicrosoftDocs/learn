@@ -18,48 +18,48 @@ quiz:
 
   - content: 'Conveyor belt vibration is measured in what units?'
     choices:  
-    - content: 'acceleration'
-      isCorrect: true
-      explanation: The two common units of vibration are acceleration in m/s<sup>2</sup>, or in g-forces.
     - content: 'pressure'
       isCorrect: false
       explanation: Pressure sensors are common, but it is not a measure of vibration.
-    - content: 'deciBels'
+    - content: 'decibels'
       isCorrect: false
-      explanation: Perhaps sound vibrations could be measured in deciBels, but, realistically, not conveyor belts.
-    - content: 'rotational velocity'
+      explanation: Sound vibrations could be measured in decibels, but, realistically, not conveyor belts.
+    - content: 'velocity'
       isCorrect: false
       explanation: Vibration is a bit more complex than a simple velocity.
-
-  - content: 'question tbd?'
-    choices:  
-    - content: 'answer 1'
+    - content: 'acceleration'
       isCorrect: true
-      explanation: explanation 1.
-    - content: 'answer 2'
-      isCorrect: false
-      explanation: explanation 2.
-    - content: 'answer 3'
-      isCorrect: false
-      explanation: explanation 3.
-    - content: 'answer 4'
-      isCorrect: false
-      explanation: explanation 4.
+      explanation: The two common units of vibration are acceleration in m/s<sup>2</sup>, or in g-forces.
 
-  - content: 'question tbd?'
+  - content: 'An IoT Hub name must be unique across what space?'
     choices:  
-    - content: 'answer 1'
+    - content: 'The worldwide web'
       isCorrect: true
-      explanation: explanation 1.
-    - content: 'answer 2'
+      explanation: The IoT Hub name forms the unique part of the Azure URL, so must be unique across the web.
+    - content: 'Your Azure resources'
       isCorrect: false
-      explanation: explanation 2.
-    - content: 'answer 3'
+      explanation: The name needs to be unique across a wider space than just your resources.
+    - content: 'All Azure resources'
       isCorrect: false
-      explanation: explanation 3.
-    - content: 'answer 4'
+      explanation: The name needs to be unique across a wider space than all Azure resources.
+    - content: 'All Azure IoT Hub names'
       isCorrect: false
-      explanation: explanation 4.
+      explanation: The name needs to be unique across a wider space than all Azure IoT Hub names.
+
+  - content: 'How did our sample C# device app warn the operator if the conveyor belt stopped for greater than 5 seconds?'
+    choices:  
+    - content: 'As an entry in the message data'
+      isCorrect: false
+      explanation: An alert could be sent this way, however, our app does not use this approach.
+    - content: 'As a named property - beltAlert - with a value set to true if the condition was met.'
+      isCorrect: true
+      explanation: Properties can be simple, such as device IDs, or more complex types such as conditional alerts.
+    - content: 'As an attached event to the message'
+      isCorrect: false
+      explanation: There is no mechanism to attach events to messages.
+    - content: 'As a separate warning message, with an HTTP code of 400'
+      isCorrect: false
+      explanation: There is no need to send a separate message, alerts can be added to a message as message data, or as a message property.
   
   - content: 'What is the purpose of Azure Event Hubs?'
     choices:  
