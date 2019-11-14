@@ -17,7 +17,7 @@ Store and share files in your application with Azure Files
 
 ## Prerequisites
 
-- Basic knowledge of Windows Server file shares
+- Knowledge of Windows Server file shares
 
 ## Summary
 
@@ -45,28 +45,34 @@ Identify the subtasks of *Store and share files in your application with Azure F
 
     A financial company is moving an application to Azure that generates reports and data exports for users and other systems to consume. These reports and data exports are currently stored on both NAS devices and Windows file shares, so they can easily be shared between systems. They would like to consolidate the storage for these files to a native cloud service, while still leveraging SMB to access the files.
 
-1. **Learning-content unit title**
+1. **Plan your Azure Files deployment**
 
-    List the content that will enable the learner to *subtask*:
-
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
+    - Choosing your data access method
+        - Direct cloud access - mounted SMB share
+        - Azure File Sync, checking compatibility and cloud tiering
+    - Choosing your share performance
+    - Choosing your redundancy option
 
     **Knowledge check**
 
-    What types of questions will test *learning objective*? *[(Knowledge check guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-knowledge-check)*
+1. **Deploy Azure Files using direct cloud access**
 
-    - Question type
-    - Question type
+    
 
-1. **Exercise - exercise unit title**
+1. **Exercise - deploy Azure Files using direct cloud access**
+
+    List the steps which apply the learning content from previous unit:
+
+    1. Step
+    1. Step
+    1. Step
+
+1. **Deploy Azure File Sync**
+
+    - Evaluate whether it is compatible with your system using the Azure File Sync (Evaluation cmdlet)
+    - 
+
+1. **Exercise - deploy Azure File Sync**
 
     List the steps which apply the learning content from previous unit:
 
@@ -76,8 +82,13 @@ Identify the subtasks of *Store and share files in your application with Azure F
 
 1. **Summary**
 
-    How did you solve the problem in the initial scenario with the knowledge learned in the module? 
-
-    *Add your summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-module-summary-unit)*
+    - Restate the scenario problem(s)
+    - Show how you solved the scenario problem(s)
+    - Describe the experience without the product
+    - Describe the business impact
 
 ## Notes
+
+Reference links: 
+- [Tutorial: Extend Windows file servers with Azure File Sync](https://docs.microsoft.com/en-us/azure/storage/files/storage-sync-files-extend-servers)
+- [Data access method](https://docs.microsoft.com/en-us/azure/storage/files/storage-files-planning#data-access-method)
