@@ -1,9 +1,9 @@
-The team has been slowly integrating a DevOps strategy into their existing processes. In this section, you make sure that your environment reflects the team's efforts so far.
+The team has been slowly integrating a DevOps strategy into its existing processes. In this section, you make sure that your environment reflects the team's efforts so far.
 
 To do this, you:
 
 > [!div class="checklist"]
-> * Add a user to ensure Azure DevOps can connect to your Azure subscription.
+> * Add a user to ensure that Azure DevOps can connect to your Azure subscription.
 > * Set up an Azure DevOps project for this module.
 > * Move the work item for this module on Azure Boards to the **Doing** column.
 > * Make sure your project is set up locally so that you can push changes to the pipeline.
@@ -15,15 +15,15 @@ To complete this module, you need your own [Azure subscription](https://azure.mi
 
 Although you don't need an Azure subscription to work with Azure DevOps, here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, you need to sign in to both your Azure subscription and your Azure DevOps organization under the same Microsoft account.
 
-If you use different Microsoft accounts to sign into Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account you use to sign in to Azure. [Add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?view=azure-devops&tabs=browser&azure-portal=true) explains how to add a user. When you add the user, choose the **Basic** access level.
+If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?view=azure-devops&tabs=browser&azure-portal=true). When you add the user, choose the **Basic** access level.
 
-Then sign out of Azure DevOps and sign in again under the Microsoft account you use to sign in to your Azure subscription.
+Then sign out of Azure DevOps and sign in again under the Microsoft account that you use to sign in to your Azure subscription.
 
 ## Get the Azure DevOps project
 
-Here, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You do this by running a template that creates a project for you in Azure DevOps.
+Make sure that your Azure DevOps organization is set up to complete the rest of this module. You do this by running a template that creates a project for you in Azure DevOps.
 
-The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey. For learning purposes, each module has an associated Azure DevOps project.
+The modules in this learning path form a progression, where you follow the Tailspin web team through its DevOps journey. For learning purposes, each module has an associated Azure DevOps project.
 
 ### Run the template
 
@@ -35,8 +35,8 @@ Run a template that sets up everything for you in your Azure DevOps organization
 From the Azure DevOps Demo Generator site, perform these steps to run the template.
 
 1. Select **Sign In** and accept the usage terms.
-1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as **Space Game - web - Terraform**.
-1. Select **Yes, I want to fork this repository** and then select **Authorize**.
+1. From the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as **Space Game - web - Terraform**.
+1. Select **Yes, I want to fork this repository**, and then select **Authorize**.
 1. Select **Create Project**.
 
     It takes a few moments for the template to run.
@@ -54,31 +54,31 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 
 ## Move the work item to Doing
 
-In this part, you assign a work item to yourself on Azure Boards that relates to this module. You also move the work item to the **Doing** state. In practice, you and your team would assign work items at the start of each sprint, or work iteration.
+In this part, you assign a work item to yourself on Azure Boards. The work item relates to this module. You also move the work item to the **Doing** state. In practice, you and your team would assign work items at the start of each sprint or work iteration.
 
-Assigning work in this way gives you a checklist to work from. It gives others on your team visibility into what you're working on and how much work is left. It also helps the team enforce Work in Progress (WIP) limits so that the team doesn't take on too much work at one time.
+Assigning work in this way gives you a checklist. It gives others on your team visibility into what you're working on and how much work is left. It also helps the team enforce work-in-progress (WIP) limits so that the team doesn't take on too much work at one time.
 
-Recall that the team settled on these three top issues for the current sprint.
+Recall that the team settled on these three top issues for the current sprint:
 
-![Azure Boards showing the tasks for this sprint](../../shared/media/automate-all-tasks.png)
+![Azure Boards list that shows the tasks for this sprint](../../shared/media/automate-all-tasks.png)
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
 
-Here you move the first item, **Scale out the website** to the **Doing** column and assign yourself to the work item. **Scale out the website** relates to using automation to provision the infrastructure needed to run the _Space Game_ web site.
+Here you move the first item, **Scale out the website**, to the **Doing** column and assign yourself to the work item. **Scale out the website** relates to using automation to provision the infrastructure needed to run the _Space Game_ website.
 
 To set up the work item:
 
-1. From Azure DevOps, navigate to **Boards** and then select **Boards** from the menu.
+1. From Azure DevOps, go to **Boards** and then select **Boards** from the menu.
 
-    ![Azure DevOps showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
+    ![Azure DevOps with the Boards menu](../../shared/media/azure-devops-boards-menu.png)
 
-1. From the **Scale out the website** work item, click the down arrow at the bottom of the card. Then assign the work item to yourself.
+1. From the **Scale out the website** work item, select the arrow at the bottom of the card. Then assign the work item to yourself.
 
     ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
-1. Move the work item from the **To Do** to the **Doing** column.
+1. Move the work item from the **To Do** column to the **Doing** column.
 
-    ![Azure Boards showing the card in the Doing column](../media/7-azure-boards-wi1-doing.png)
+    ![Azure Boards with the card in the Doing column](../media/7-azure-boards-wi1-doing.png)
 
 At the end of this module, you move the card to the **Done** column after you've completed the task.
 
@@ -86,7 +86,7 @@ At the end of this module, you move the card to the **Done** column after you've
 
 ## Prepare Visual Studio Code
 
-First you'll set up Visual Studio Code so you can build the website locally and work with source files.
+Set up Visual Studio Code so you can build the website locally and work with source files.
 
 Visual Studio Code comes with an integrated terminal, so you can edit files and work from the command line all from one place.
 
@@ -98,9 +98,9 @@ Visual Studio Code comes with an integrated terminal, so you can edit files and 
 
     The terminal window lets you choose any shell that's installed on your system, like Bash, Zsh, and PowerShell.
 
-    Here you'll use Bash. Git for Windows provides Git Bash, which makes it easy to run Git commands.
+    Here you'll use Bash. Git for Windows provides Git Bash, which makes running Git commands easy.
 
-1. Run the `cd` command to navigate to the directory you want to work from, like your home directory (`~`). You can choose a different directory if you want.
+1. Run the `cd` command to go to the directory that you want to work from. You can choose your home directory (`~`) or a different one.
 
     ```bash
     cd ~
@@ -108,18 +108,16 @@ Visual Studio Code comes with an integrated terminal, so you can edit files and 
 
 ### Configure Git
 
-If you're new to Git and GitHub, you'll first need to run a few commands to associate your identity with Git and authenticate with GitHub.
+If you're new to Git and GitHub, you need to run a few commands to associate your identity with Git and authenticate with GitHub. [Set up Git](https://help.github.com/articles/set-up-git?azure-portal=true) explains the process in greater detail.
 
-[Set up Git](https://help.github.com/articles/set-up-git?azure-portal=true) explains the process in greater detail.
-
-At a minimum, you'll need to complete the following steps. Run these commands from the Visual Studio Code integrated terminal:
+At a minimum, complete the following steps. Run these commands from the Visual Studio Code integrated terminal.
 
 1. [Set your username](https://help.github.com/articles/setting-your-username-in-git?azure-portal=true).
 1. [Set your commit email address](https://help.github.com/articles/setting-your-commit-email-address-in-git?azure-portal=true).
 1. [Cache your GitHub password](https://help.github.com/articles/caching-your-github-password-in-git?azure-portal=true).
 
 > [!NOTE]
-> If you're already using two-factor authentication with GitHub, [create a personal access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line?azure-portal=true) and use your token in place of your password when prompted later.
+> If you're already using two-factor authentication with GitHub, [create a personal access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line?azure-portal=true). Use your token in place of your password when prompted later.
 >
 > Treat your access token like you would a password. Keep it in a safe place.
 
@@ -135,22 +133,22 @@ In this part, you clone your fork locally so that you can make changes and build
 
 You now have a copy of the *Space Game* web project in your GitHub account. Now you'll download, or *clone*, a copy to your computer so you can work with it.
 
-A clone, just a like a fork, is a copy of a repository. When you clone a repository, you can make changes, verify they work as you expect, and then upload those changes back to GitHub. You can also synchronize your local copy with changes other authenticated users have made to GitHub's copy of your repository.
+A clone, just a like a fork, is a copy of a repository. When you clone a repository, you can make changes, verify that your changes work as you expect, and then upload the changes back to GitHub. You can also synchronize your local copy with changes that other authenticated users have made to GitHub's copy of your repository.
 
 To clone the *Space Game* web project to your computer:
 
 1. Go to your fork of the *Space Game* web project (**mslearn-tailspin-spacegame-web-automate**) on [GitHub](https://github.com?azure-portal=true).
-1. Select **Clone or download**. Then select the button next to the URL that's shown to copy the URL to your clipboard:
+1. Select **Clone or download**. Then select the button that copies the URL to your clipboard.
 
-    ![The Clone or download button on GitHub](../../shared/media/github-clone-button.png)
+    ![The "Clone or download" button, and the button that copies to the clipboard](../../shared/media/github-clone-button.png)
 1. In Visual Studio Code, go to the terminal window.
-1. In the terminal, move to the directory you want to work from, like your home directory (`~`). You can choose a different directory if you want.
+1. In the terminal, move to the directory that you want to work from. You can choose your home directory (`~`) or a different one.
 
     ```bash
     cd ~
     ```
 
-1. Run the `git clone` command. Replace the URL that's shown here with the contents of your clipboard:
+1. Run the `git clone` command. Replace the URL that's shown here with the contents of your clipboard.
 
     ```bash
     git clone https://github.com/your-name/mslearn-tailspin-spacegame-web-automate.git
@@ -206,7 +204,7 @@ upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-
 In Visual Studio Code, your terminal window points to the root directory of the *Space Game* web project. You'll now open the project from the file explorer so you can view its structure and work with files.
 
 1. On the **File** menu, select **Open** or **Open Folder**.
-1. Navigate to the root directory of the *Space Game* web project.
+1. Go to the root directory of the *Space Game* web project.
 
     (You can run the `pwd` command in the terminal window to see the full path if you need a reminder.)
 
@@ -217,10 +215,10 @@ You see the directory and file tree in the file explorer.
 
 ## Fetch starter code from GitHub
 
-Here, you fetch and checkout a Git branch that contains starter code for this module.
+Fetch and check out a Git branch that contains starter code for this module.
 
 1. From Visual Studio Code, open the integrated terminal.
-1. Run the following `git fetch` and `git checkout` commands to download a branch named `terraform` from Microsoft's repository and switch to that branch.
+1. Run the following `git fetch` and `git checkout` commands. These commands download a branch named `terraform` from the Microsoft's repository and switch to that branch.
 
     ```bash
     git fetch upstream terraform
@@ -233,24 +231,22 @@ Here, you fetch and checkout a Git branch that contains starter code for this mo
 
 1. As an optional step, open *azure-pipelines.yml* from Visual Studio Code and familiarize yourself with the initial configuration.
 
-    The configuration resembles the basic one you created in the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline/6-create-the-pipeline?azure-portal=true) module. It builds only the application's Release configuration. For learning purposes, this configuration does not run the quality or security checks that you set up in previous modules.
+    The configuration resembles the basic one that you created in the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline/6-create-the-pipeline?azure-portal=true) module. It builds only the application's Release configuration. For learning purposes, this configuration does not run the quality or security checks that you set up in previous modules.
 
     [!include[](../../shared/includes/pipeline-branches-note.md)]
 
 ## Create a service connection
 
-Here, you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the [Deploy applications with Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops?azure-portal=true) learning path.
+Create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the [Deploy applications with Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops?azure-portal=true) learning path.
 
 > [!IMPORTANT]
 > Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
 
 1. In Azure DevOps, go to your **Space Game - web - Terraform** project.
-1. Select **Project settings** from the bottom corner of the page.
+1. Select **Project settings** from the bottom of the page.
 1. Under **Pipelines**, select **Service connections**.
-1. Select **+ New service connection** and then choose **Azure Resource Manager**.
-
-    The **Add an Azure Resource Manager service connection** dialog appears.
-1. From the dialog, ensure **Service Principal Authentication** is selected. Then fill in these fields:
+1. Select **+ New service connection**, and then select **Azure Resource Manager**.
+1. In the **Add an Azure Resource Manager service connection** dialog box, ensure that **Service Principal Authentication** is selected. Then fill in these fields:
 
     | Field               | Value                                        |
     |---------------------|----------------------------------------------|
@@ -263,4 +259,4 @@ Here, you create a service connection that enables Azure Pipelines to access you
 
 1. Select **OK**.
 
-    Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps is unable to connect, you'll have the chance to sign in a second time.
+    Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you'll have the chance to sign in a second time.
