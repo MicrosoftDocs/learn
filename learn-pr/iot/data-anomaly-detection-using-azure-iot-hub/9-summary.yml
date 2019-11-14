@@ -16,20 +16,20 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'question tbd?'
+  - content: 'Conveyor belt vibration is measured in what units?'
     choices:  
-    - content: 'answer 1'
+    - content: 'acceleration'
       isCorrect: true
-      explanation: explanation 1.
-    - content: 'answer 2'
+      explanation: The two common units of vibration are acceleration in m/s<sup>2</sup>, or in g-forces.
+    - content: 'pressure'
       isCorrect: false
-      explanation: explanation 2.
-    - content: 'answer 3'
+      explanation: Pressure sensors are common, but it is not a measure of vibration.
+    - content: 'deciBels'
       isCorrect: false
-      explanation: explanation 3.
-    - content: 'answer 4'
+      explanation: Perhaps sound vibrations could be measured in deciBels, but, realistically, not conveyor belts.
+    - content: 'rotational velocity'
       isCorrect: false
-      explanation: explanation 4.
+      explanation: Vibration is a bit more complex than a simple velocity.
 
   - content: 'question tbd?'
     choices:  
