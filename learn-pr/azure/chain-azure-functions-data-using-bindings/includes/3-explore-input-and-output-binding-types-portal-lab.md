@@ -2,7 +2,7 @@ The following is a high-level illustration of what we're going to build in this 
 
 ::: zone pivot="javascript"
 
-![An illustration of default HTTP trigger, showing HTTP request and response as well as respective req and res binding parameters](../media/3-default-http-trigger-visual-small.PNG)
+![An illustration of default HTTP trigger, showing HTTP request and response as well as respective req and res binding parameters](../media/3-default-http-trigger-visual-small.png)
 
 ::: zone-end
 
@@ -26,19 +26,16 @@ Let's create a function app that we'll use throughout this entire module. A func
 
 1. Set the function app properties as follows:
 
-    | Property     | Suggested value  | Description  |
-    |--------------|------------------|--------------|
-    | **App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`.  |
-    | **Subscription** | Your subscription | The subscription under which this new function app is created. |
-    | **Resource Group**|  Select **Use existing** and choose _<rgn>[sandbox resource group name]</rgn>_ | Name of the resource group in which to create your function app. |
-    | **OS** | Windows | The operating system that hosts the function app.  |
-    | **Hosting Plan** |   Consumption plan | Hosting plan that defines how resources are allocated to your function app. In the default **Consumption Plan**, resources are added dynamically as required by your functions. In this serverless hosting model, you only pay for the time your functions run.   |
-    | **Location** | Select from the list | Choose the region nearest you. |
-    | **Runtime Stack** | Node.js | The sample code in this module is written in JavaScript.  |
-    | **Storage** |  Globally unique name |  Name of the new storage account used by your function app. Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog populates the field with a unique name that is derived from the name you gave the app. However, feel free to use a different name or even an existing account. |
-    | **Application Insights** |  Leave default |  Options for collecting monitoring data with Application Insights. |
+    | Property | Suggested value | Description |
+    |---|---|---|
+    | **Subscription** | _Concierge Subscription_ | The Azure subscription that you want to use for this Azure Cosmos DB account. |
+    | **Resource Group**| _<rgn>[sandbox resource group name]</rgn>_ | This field is pre-populated with the resource group from your sandbox. |
+    | **Function App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
+    | **Publish** | _Code_ | Option to publish code files or a Docker container. |
+    | **Runtime Stack** | _Node.js_ | The sample code in this module is written in JavaScript. |
+    | **Region** | _Central US_ | Choose the region nearest you. |
 
-1. Select **Create** to provision and deploy the function app.
+1. Select **Review + create** and then **Create** to provision and deploy the function app.
 
 1. Select the Notification icon in the upper-right corner of the portal and watch for a **Deployment in progress** message similar to the following message.
 
@@ -63,19 +60,16 @@ Let's create a function app that we'll use throughout this entire module. A func
 
 1. Set the function app properties as follows:
 
-    | Property     | Suggested value  | Description  |
-    |--------------|------------------|--------------|
-    | **App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`.  |
-    | **Subscription** | Your subscription | The subscription under which this new function app is created. |
-    | **Resource Group**|  Select **Use existing** and choose _<rgn>[sandbox resource group name]</rgn>_ | Name of the resource group in which to create your function app. |
-    | **OS** | Windows | The operating system that hosts the function app.  |
-    | **Hosting Plan** |   Consumption plan | Hosting plan that defines how resources are allocated to your function app. In the default **Consumption Plan**, resources are added dynamically as required by your functions. In this serverless hosting model, you only pay for the time your functions run.   |
-    | **Location** | Select from the list | Choose the region nearest you. |
-    | **Runtime Stack** | PowerShell Core (Preview) | The sample code in this module is written in PowerShell.  |
-    | **Storage** |  Globally unique name |  Name of the new storage account used by your function app. Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog populates the field with a unique name that is derived from the name you gave the app. However, feel free to use a different name or even an existing account. |
-    | **Application Insights** |  Leave default |  Options for collecting monitoring data with Application Insights. |
+    | Property | Suggested value | Description |
+    |---|---|---|
+    | **Subscription** | _Concierge Subscription_ | The Azure subscription that you want to use for this Azure Cosmos DB account. |
+    | **Resource Group**| _<rgn>[sandbox resource group name]</rgn>_ | This field is pre-populated with the resource group from your sandbox. |
+    | **Function App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`.  |
+    | **Publish** | _Code_ | Option to publish code files or a Docker container.  |
+    | **Runtime Stack** | _PowerShell Core_ | The sample code in this module is written in PowerShell.  |
+    | **Region** | _Central US_ | Choose the region nearest you. |
 
-1. Select **Create** to provision and deploy the function app.
+1. Select **Review + create** and then **Create** to provision and deploy the function app.
 
 1. Select the Notification icon in the upper-right corner of the portal and watch for a **Deployment in progress** message similar to the following message.
 
@@ -89,7 +83,6 @@ Let's create a function app that we'll use throughout this entire module. A func
 
     >[!TIP]
     >If you are having trouble finding your function apps in the portal, find out how to [add function apps to your favorites in the portal](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings#favorite).
-
 
 ::: zone-end
 
@@ -107,7 +100,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. In the list of all templates available to this function app, select **HTTP Trigger** .
 
-1. On the **New Function** screen, change the name if you want, leave the **Authorization level** as _Function_, and click **Create**. The Authorization level option determines what kind of key is used to securely access your function. Choosing _Function_ requires callers of your function to provide a function-specific key with their requests.
+1. On the **New Function** screen, you can change the name if you want, but leave the **Authorization level** as _Function_, and then select **Create**. The Authorization level option determines what kind of key is used to securely access your function. Choosing _Function_ requires callers of your function to provide a function-specific key with their requests.
 
 1. In your new function, click the **</> Get function URL** link at the top right, select **default (Function key)**, and then select **Copy**.
 
@@ -119,7 +112,7 @@ Now that we have a function app, it's time to create a function. A function is a
     Hello Azure
     ```
 
-As you can see from this exercise so far, you have to select a trigger type when you create a function. Every function has one and only one trigger. In this example, we're using an HTTP trigger, which means that our function starts when it receives an HTTP request. The default implementation, shown in the following screenshot in JavaScript, responds with the value of the parameter *name* it received in the query string or body of the request. If no string was provided, the function responds with a message that asks whomever is calling to supply a name value.
+As you can see from this exercise so far, you have to select a trigger type when you create a function. Every function has a single trigger. In this example, we're using an HTTP trigger, which means that our function starts when it receives an HTTP request. The default implementation, shown in the following screenshot in JavaScript, responds with the value of the parameter *name* it received in the query string or body of the request. If no string was provided, the function responds with a message that asks whomever is calling to supply a name value.
 
 ![The default JavaScript implementation of an HTTP-triggered Azure function](../media/3-default-http-trigger-implementation-small.PNG)
 
@@ -169,7 +162,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. In the list of all templates available to this function app, select **HTTP Trigger** .
 
-1. On the **New Function** screen, change the name if you want, leave the **Authorization level** as _Function_, and click **Create**. The Authorization level option determines what kind of key is used to securely access your function. Choosing _Function_ requires callers of your function to provide a function-specific key with their requests.
+1. On the **New Function** screen, you can change the name if you want, but leave the **Authorization level** as _Function_, and then select **Create**. The Authorization level option determines what kind of key is used to securely access your function. Choosing _Function_ requires callers of your function to provide a function-specific key with their requests.
 
 1. In your new function, click the **</> Get function URL** link at the top right, select **default (Function key)**, and then select **Copy**.
 
@@ -183,7 +176,7 @@ Now that we have a function app, it's time to create a function. A function is a
     Hello Azure
     ```
 
-As you can see from this exercise so far, you have to select a trigger type when you create a function. Every function has one and only one trigger. In this example, we're using an HTTP trigger, which means that our function starts when it receives an HTTP request. The default implementation, shown in the following screenshot in PowerShell, uses the `Push-OutputBinding` cmdlet to respond with the value of the parameter *name* it received in the query string or body of the request. If no string was provided, the function responds with a message that asks whomever is calling to supply a name value.
+As you can see from this exercise so far, you have to select a trigger type when you create a function. Every function has a single trigger. In this example, we're using an HTTP trigger, which means that our function starts when it receives an HTTP request. The default implementation, shown in the following screenshot in PowerShell, uses the `Push-OutputBinding` cmdlet to respond with the value of the parameter *name* it received in the query string or body of the request. If no string was provided, the function responds with a message that asks whomever is calling to supply a name value.
 
 ![The default PowerShell implementation of an HTTP-triggered Azure function](../media/3-default-http-trigger-implementation-pwsh.png)
 
@@ -238,7 +231,7 @@ As you can see, this function has a trigger binding named **Request** of type `h
 
     ![Screenshot showing the list of possible input bindings.](../media/3-func-input-bindings-selector-small.PNG)
 
-   Take a moment to consider each of these input bindings and how you might use them in a solution. There are a lot to choose from. This list might even have changed by the time you read this module, as we continue to support more data sources.
+    Take a moment to consider each of these input bindings and how you might use them in a solution. There are a lot to choose from. This list might even have changed by the time you read this module, as we continue to support more data sources.
 
 1. We'll get back to adding input bindings later in the module but, for now, select **Cancel** to dismiss this list.
 
@@ -246,6 +239,6 @@ As you can see, this function has a trigger binding named **Request** of type `h
 
     ![Screenshot showing the list of possible output bindings.](../media/3-func-output-bindings-selector-small.PNG)
 
-   As you can see, there are several output binding types at your disposal. We'll get back to adding output bindings later in the module but, for now, select **Cancel** to dismiss this list.
+    As you can see, there are several output binding types at your disposal. We'll get back to adding output bindings later in the module but, for now, select **Cancel** to dismiss this list.
 
 So far, we've learned how to create a function app and add a function to it. We've seen a simple function in action, one that runs when an HTTP request is made to it. We've also explored the Azure portal UI and types of input and output binding that are available to our functions. In the next unit, we'll use an input binding to read text from a database.
