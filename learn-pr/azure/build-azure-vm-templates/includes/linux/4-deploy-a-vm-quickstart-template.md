@@ -19,11 +19,30 @@ The next step might be to visualize your template. [Azure Resource Manager Visua
 
 Finally, you can perform a test deployment from the Azure CLI or Azure PowerShell. A test deployment doesn't create any resources, but it provides you with feedback on what would happen when the deployment runs. You'll perform a test deployment shortly to see the process in action.
 
-## Creating resources in Azure
+## Create a resource group
 
-Normally, the first thing we'd do is to create a _resource group_ to hold all the things that we need to create. This allows us to administer all the VMs, disks, network interfaces, and other elements that make up our solution as a unit. We can use the Azure CLI to create a resource group with the `az group create` command. It takes a `--name` to give it a unique name in our subscription, and a `--location` to tell Azure what area of the world we want the resources to be located by default.
+First, we'll create a _resource group_ to hold all the things that we need to create. This allows us to administer all the VMs, disks, network interfaces, and other elements that make up our solution as a unit. We can use the Azure CLI to create a resource group with the `az group create` command. It takes a `--name` to give it a unique name in our subscription, and a `--location` to tell Azure what area of the world we want the resources to be located by default.
 
-Since we are in the free Azure sandbox environment, you don't need to do this step, instead, you will use the pre-created resource group **<rgn>[Resource Group Name]</rgn>**.
+<!---Since we are in the free Azure sandbox environment, you don't need to do this step, instead, you will use the pre-created resource group **<rgn>[Resource Group Name]</rgn>**.--->
+
+
+1. Sign in to the [Azure portal](https://portal.azure.com).
+1. From the menu bar on the top right-hand side, open **Cloud Shell**.
+1. Set the resource group name.
+    ```bash
+    RESOURCEGROUP=learn-quickstart-vm-rg
+    ```
+1. Set the location. Replace the eastus value with a location near you.
+    ```bash
+    LOCATION=eastus
+    ```
+    The following list has some location values you can use.
+
+    [!include[](../../../includes/azure-sandbox-regions-note.md)]
+1. Run the following command to create a resource group.
+    ```bash
+    az group create --name $RESOURCEGROUP --location $LOCATION
+    ```
 
 ## Create template parameters
 
@@ -53,6 +72,8 @@ Let's keep these parameters at their default values. For the remaining parameter
 
 For learning purposes, here you'll provide the values as command-line arguments. To make the template easy to deploy, you'll start by storing these values as Bash variables.
 
+1. Sign in to the [Azure portal](https://portal.azure.com).
+1. From the menu bar on the top right-hand side, open **Cloud Shell**.
 1. From Cloud Shell, create a username. For this example, let's use **azureuser**.
 
     ```bash
@@ -87,7 +108,7 @@ As a final verification step, you'll begin by validating that the template is sy
 
     ```azurecli
     az group deployment validate \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group $RESOURCEGROUP \
       --template-uri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.json" \
       --parameters adminUsername=$USERNAME \
       --parameters authenticationType=password \
@@ -108,7 +129,7 @@ As a final verification step, you'll begin by validating that the template is sy
     ```azurecli
     az group deployment create \
       --name MyDeployment \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group $RESOURCEGROUP \
       --template-uri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.json" \
       --parameters adminUsername=$USERNAME \
       --parameters authenticationType=password \
@@ -131,7 +152,7 @@ The deployment succeeded. But let's run a few commands just to verify.
     ```azurecli
     az group deployment show \
       --name MyDeployment \
-      --resource-group <rgn>[sandbox resource group name]</rgn>
+      --resource-group $RESOURCEGROUP
     ```
 
     You see the same JSON block as you did previously. You can run this command later if you ever need these details about the deployment. The output is structured as JSON to make it easier to feed into other tools you might use to track your deployments and cloud usage.
@@ -140,7 +161,7 @@ The deployment succeeded. But let's run a few commands just to verify.
 
     ```azurecli
     az vm list \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group $RESOURCEGROUP \
       --output table
     ```
 
@@ -149,7 +170,7 @@ The deployment succeeded. But let's run a few commands just to verify.
     ```bash
     Name        ResourceGroup                         Location        Zones
     ----------  ------------------------------------  --------------  -------
-    MyUbuntuVM  <rgn>[sandbox resource group name]</rgn>  southcentralus
+    MyUbuntuVM  learn-quickstart-vm-rg    southcentralus
     ```
 
     Recall that the template names the VM "MyUbuntuVM". Here you see that this VM exists in your resource group.
