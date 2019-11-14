@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.data-anomaly-search-using-iot-hub.device-telemetry
+uid: learn.iot.data-anomaly-search-using-iot-hub.write-code-device-telemetry
 metadata:
-  title: The basics of device telemetry
+  title: Write code for device telemetry
   description: Explains the process of sending and receiving device telemetry
   ms.date: 12/01/2019
   author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: The basics of device telemetry
+title: Write code for device telemetry
 durationInMinutes: 2
 content: |
-  [!include[](includes/3-device-telemetry.md)]
+  [!include[](includes/3-write-code-device-telemetry.md)]

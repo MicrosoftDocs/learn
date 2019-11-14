@@ -8,7 +8,6 @@ metadata:
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: dev-lang-csharp-node
 title: Exercise - Create an Azure IoT Hub, and a device ID
 azureSandbox: true
 durationInMinutes: 10

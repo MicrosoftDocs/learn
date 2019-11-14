@@ -37,8 +37,8 @@ products:
 units:
 - learn.iot.data-anomaly-search-using-iot-hub.introduction
 - learn.iot.data-anomaly-search-using-iot-hub.create-iot-hub-device-id
-- learn.iot.data-anomaly-search-using-iot-hub.device-telemetry
-###- learn.iot.data-anomaly-search-using-iot-hub.write-telemetry-code
+- learn.iot.data-anomaly-search-using-iot-hub.write-code-device-telemetry
+- learn.iot.data-anomaly-search-using-iot-hub.exercise-write-code-device-telemetry
 ###- learn.iot.data-anomaly-search-using-iot-hub.direct-methods
 ###- learn.iot.data-anomaly-search-using-iot-hub.write-direct-method-code
 ###- learn.iot.data-anomaly-search-using-iot-hub.device-twins
