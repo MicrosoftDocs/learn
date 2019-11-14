@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.azure-security.secure-vms-with-security-center
+metadata:
+  title: Protect your servers and VMs from brute-force and malware attacks with Azure Security Center
+  description: Stop hackers from getting into your Windows and Linux servers. In this module, you’ll discover how to protect VMs and servers with Azure Security Center
+  ms.date: 09/30/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Protect your servers and VMs from brute-force and malware attacks with Azure Security Center
+summary: In this module, you’ll discover how to protect VMs and servers with Azure Security Center
+abstract: | 
+  In this module, you will:
+  - Learn how to protect VM-based resources and networks with Azure Security Center
+  - Install and use malware protection to stop virus attacks on your exposed endpoints
+prerequisites: |
+  - Basic familiarity with Azure services, particularly Azure Security Center.
+  - Familiarity with Azure virtual machines and virtual networking.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+products:
+- azure
+units:
+- learn.azure-security.secure-vms-with-security-center.introduction
+- learn.azure-security.secure-vms-with-security-center.brute-force-attacks
+- learn.azure-security.secure-vms-with-security-center.exercise-jit-vm-access
+- learn.azure-security.secure-vms-with-security-center.malware-protection
+- learn.azure-security.secure-vms-with-security-center.exercise-configure-endpoint-security
+- learn.azure-security.secure-vms-with-security-center.summary
+badge:
+  uid: learn.azure-security.secure-vms-with-security-center.badge

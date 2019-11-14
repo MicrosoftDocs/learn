@@ -52,14 +52,14 @@ In this step, you're going to use the Azure portal to enable application logging
 You'll now set up the application logging.
 
 1. Switch to the tab showing the Azure portal.
-1. In the **App Service** blade, scroll down to the **Monitoring** section, and then click **Diagnostics logs**.
+1. In the **App Service** pane, scroll down to the **Monitoring** section, and then click **Diagnostics logs**.
 1. Under **Application logging (Filesystem)**, click **On**, and in the **Level** box, click **Error**.
 1. Under **Application logging (Blob)**, click **On**, and in the **Level** box, click **Verbose**.
-1. Click **Storage Settings**, and on the **Storage Accounts** blade, click **sacontosofashions\<_your-number_\>**, where \<_your-number_\> is the number suffix you noted when you created your app.
-1. On the **Containers** blade, click **+ Container**, and in the **Name** box, type **asp logs**, and then click **OK**.
+1. Click **Storage Settings**, and on the **Storage Accounts** pane, click **sacontosofashions\<_your-number_\>**, where \<_your-number_\> is the number suffix you noted when you created your app.
+1. On the **Containers** pane, click **+ Container**, and in the **Name** box, type **asp logs**, and then click **OK**.
 1. Click **asplogs**, and then click **Select**.
 1. In the **Retention Period (Days)** box, type **5**.
-1. Click **Save** to close the **Diagnostics logs** blade, and update the log settings.
+1. Click **Save** to close the **Diagnostics logs** pane, and update the log settings.
 
 
 ::: zone-end
@@ -111,9 +111,9 @@ In this step, you're going to use the Azure portal to enable application logging
 You'll now set up the application logging.
 
 1. Switch to the tab showing the Azure portal.
-1. In the **App Service** blade, scroll down to the **Monitoring** section, and then click **Diagnostics logs**.
+1. In the **App Service** pane, scroll down to the **Monitoring** section, and then click **Diagnostics logs**.
 1. Under **Application logging**, click **File System**, and in the **Retention Period (Days)** box, type **5**.
-1. Click **Save** to close the **Diagnostics logs** blade, and update the log settings.
+1. Click **Save** to close the **Diagnostics logs** pane, and update the log settings.
 
 ::: zone-end
 

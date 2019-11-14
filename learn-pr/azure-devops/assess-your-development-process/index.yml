@@ -20,7 +20,7 @@ prerequisites: None
 iconUrl: /learn/achievements/azure-devops/assess-your-software-development-process.svg
 ratingEnabled: true
 levels:
-- intermediate
+- beginner
 roles:
 - devops-engineer
 - administrator

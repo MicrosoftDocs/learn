@@ -4,7 +4,7 @@ The first step in creating a bot is to provide a location for the bot to be host
 
 1. Select **+ Create a resource**, followed by **AI + Machine Learning**, then **Web App Bot**.
 
-    ![Screenshot of the Azure portal showing the Create a resource blade with the Web App Bot resource type highlighted.](../media/2-new-bot-service.png)
+    ![Screenshot of the Azure portal showing the Create a resource pane with the Web App Bot resource type highlighted.](../media/2-new-bot-service.png)
 
 1. On the **New Web App Bot** page, enter the following settings for the new Web App Bot.
 
@@ -19,13 +19,13 @@ The first step in creating a bot is to provide a location for the bot to be host
 
 1. Then, select **Bot template**. Select **SDK v3** as the version, **Node.js** as the SDK language, and **Question and Answer** as the template type. Then, click **OK** at the bottom of the view.
 
-    ![Screenshot of the Azure portal showing the Bot template blade of the bot creation process with the Node.js SDK language and Question and Answer template options highlighted.](../media/2-portal-select-template.png)
+    ![Screenshot of the Azure portal showing the Bot template pane of the bot creation process with the Node.js SDK language and Question and Answer template options highlighted.](../media/2-portal-select-template.png)
 
 1. Now, select **App service plan/Location**, followed by **Create New**, then create an App Service plan named "qa-factbot-service-plan" or something similar in the same region that you selected in the prior step. Click **OK** to close the view.
 
 1. Leave the other options as their default values. You can compare your settings to the below screenshot if necessary.
 
-    ![Screenshot of the Azure portal showing a sample configuration blade for a new Web App Bot.](../media/2-portal-start-bot-creation.png)
+    ![Screenshot of the Azure portal showing a sample configuration pane for a new Web App Bot.](../media/2-portal-start-bot-creation.png)
 
 1. Click **Create** at the bottom of the "Web App Bot" panel to start the deployment.
 

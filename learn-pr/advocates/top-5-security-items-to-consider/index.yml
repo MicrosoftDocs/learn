@@ -9,7 +9,6 @@ metadata:
   ms.author: tajanca
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: luken
 title: Top 5 security items to consider before pushing to production
 summary: Secure your web applications on Azure and protect your apps against the most common and dangerous web application attacks.
 abstract: | 
@@ -22,11 +21,11 @@ abstract: |
 prerequisites: None
 iconUrl: /learn/achievements/top-5-security-items-to-consider.svg
 levels:
-- beginner
 - intermediate
 roles:
 - developer
 - administrator
+- security-engineer
 products:
 - azure
 - azure-key-vault

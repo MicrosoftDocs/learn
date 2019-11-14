@@ -5,11 +5,10 @@ metadata:
   title: Summary and knowledge check
   description: Confirm that you understand the steps required to classify images with the Microsoft Custom Vision Service.
   ms.date: 04/10/2019
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 content: |
   [!include[](includes/6-summary.md)]
 durationInMinutes: 10

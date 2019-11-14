@@ -18,9 +18,9 @@ Mara, excited to share her results, tracks down Amita to show her the build pipe
 
 ## How might you define both build configurations?
 
-Consider the following tasks that build and publish the *Space Game* web project's Release configuration. (Don't add this code to your **azure-pipelines.yml** file.)
+Consider the following tasks that build and publish the *Space Game* web project's Release configuration. (Don't add this code to your *azure-pipelines.yml* file.)
 
-[!code-yml[](code/8-azure-pipelines-partial-release.yml?highlight=2,5,9,14)]
+[!code-yml[](code/8-azure-pipelines-partial-release.yml?highlight=5,8,12,17)]
 
 To build the Debug configuration, you might repeat these two tasks, but replace `Release` with `Debug`.
 
@@ -42,22 +42,22 @@ Remember that a template enables you to define common build tasks one time and r
 
 You'll now create a template that can build any configuration that's defined in the project file.
 
-1. From the Visual Studio Code integrated console, create a **templates** directory at the root of your project:
+1. From the Visual Studio Code integrated console, create a *templates* directory at the root of your project:
 
     ```bash
     mkdir templates
     ```
 
-    In practice, you can put a template file in any location. You don't need to put them in the **templates** directory.
+    In practice, you can put a template file in any location. You don't need to put them in the *templates* directory.
 
-1. In Visual Studio Code, select **File > New File**. Then select **File > Save** to save the blank file as **build.yml** in your project's **templates** directory. (For example, **~/mslearn-tailspin-spacegame-web/templates**.)
+1. In Visual Studio Code, select **File > New File**. Then select **File > Save** to save the blank file as *build.yml* in your project's *templates* directory. (For example, *~/mslearn-tailspin-spacegame-web/templates*.)
 
     > [!IMPORTANT]
     > As before, on Windows, be sure to select **YAML** in the **Save as type** list.
 
-1. In Visual Studio Code, add this code to **build.yml**:
+1. In Visual Studio Code, add this code to *build.yml*:
 
-    [!code-yml[](code/8-build.yml?highlight=1-2,6,9,13,18)]
+    [!code-yml[](code/8-build.yml?highlight=4-5,9,12,16,21)]
 
     These tasks look like the ones you defined earlier to build and publish the application. But in a template you work with input parameters differently than you work with normal variables. Here are two differences:
 
@@ -69,21 +69,11 @@ You'll now create a template that can build any configuration that's defined in 
 
 You'll now call the template that you just built from the pipeline. You'll do so one time for the Debug configuration and then repeat the process for the Release configuration.
 
-1. In Visual Studio Code, modify **azure-pipelines.yml** as you see here:
+1. In Visual Studio Code, modify *azure-pipelines.yml* as you see here:
 
     [!code-yml[](code/8-azure-pipelines.yml?highlight=38-44)]
 
-    This file looks like the original, except that it calls the template to perform the build and publish tasks:
-
-    ```yml
-    - template: templates/build.yml
-      parameters:
-        buildConfiguration: 'Debug'
-
-    - template: templates/build.yml
-      parameters:
-        buildConfiguration: 'Release'
-    ```
+    This file looks like the original, except that it replaces the build and publish tasks with calls to the template that performs the same tasks.
 
     You see that the template is called one time for each configuration. Each `template` task uses the `parameters` argument to pass the configuration name to the template.
 
@@ -91,7 +81,7 @@ You'll now call the template that you just built from the pipeline. You'll do so
 
 You'll now push your changes to GitHub and see the pipeline run.
 
-1. From the integrated terminal, add **azure-pipelines.yml** and **templates/build.yml** to the index, commit the changes, and push the changes up to GitHub:
+1. From the integrated terminal, add *azure-pipelines.yml* and **templates/build.yml** to the index, commit the changes, and push the changes up to GitHub:
 
     ```bash
     git add azure-pipelines.yml templates/build.yml

@@ -38,7 +38,7 @@ az keyvault create \
 
 ### Azure portal
 
-An Azure Key Vault is a resource that can be created in the Azure portal using the normal resource creation process.
+An Azure Key Vault is a resource that can be created in the [Azure portal](https://aka.ms/portal) using the normal resource creation process.
 
 1. Click **Create a resource** in the sidebar on the left.
 
@@ -146,4 +146,4 @@ These commands disable encryption for volumes of type all for the specified virt
 > [!WARNING]
 > Disabling data disk encryption on Windows VM when both OS and data disks have been encrypted doesn't work as expected. You must disable encryption on all disks instead.
 
-Let's try some of these commands out on a new VM.
+In the next exercise, you'll try some of these commands out on a new VM.

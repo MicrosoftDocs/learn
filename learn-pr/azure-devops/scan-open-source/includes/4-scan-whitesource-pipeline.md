@@ -9,7 +9,7 @@ Here you'll:
 
 In practice, you might scan your project locally from the command line as you did in previous modules. Doing so helps you understand the process and see what results to expect.
 
-For brevity, here you'll add a task directly to **azure-pipelines.yml** and run the change through your pipeline.
+For brevity, here you'll add a task directly to *azure-pipelines.yml* and run the change through your pipeline.
 
 ## Fetch the branch from GitHub
 
@@ -20,12 +20,12 @@ Here you'll get the starter code for the _Space Game_ web project from Microsoft
 
     ```bash
     git fetch upstream scan-open-source
-    git checkout scan-open-source
+    git checkout -b scan-open-source upstream/scan-open-source
     ```
 
-    As in previous modules, the format of this command enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
+    As in previous modules, the format of these commands enables you to get starter code from Microsoft's GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
 
-1. As an optional step, open **azure-pipelines.yml**. Then inspect the initial configuration.
+1. As an optional step, open *azure-pipelines.yml*. Then inspect the initial configuration.
 
     For learning purposes, this configuration is very basic and omits running quality tests.
 
@@ -57,9 +57,9 @@ Here you'll install the **WhiteSource Bolt** extension for Azure Pipelines. This
 
 Here you'll use the built-in task `WhiteSource Bolt@19` that's provided by the WhiteSource Bolt extension to scan your open-source dependencies when the pipeline runs.
 
-1. From Visual Studio Code, open **azure-pipelines.yml** and replace its contents with the following:
+1. From Visual Studio Code, open *azure-pipelines.yml* and replace its contents with the following:
 
-    [!code-yml[](code/4-azure-pipelines.yml?highlight=54-55)]
+    [!code-yml[](code/4-azure-pipelines.yml?highlight=57-58)]
 
     The `WhiteSource Bolt@19` task, which runs before the `PublishBuildArtifacts@1` task, is highlighted. It analyzes your open-source dependencies for known vulnerabilities, as well as licenses and prepares reports that you can review directly from Azure Pipelines.
 
@@ -67,7 +67,7 @@ Here you'll use the built-in task `WhiteSource Bolt@19` that's provided by the W
 
 Here you'll push your changes to GitHub and see the pipeline run. Recall that you're currently on the `scan-open-source` branch.
 
-1. From the integrated terminal, add **azure-pipelines.yml** to the index, commit the changes, and push the branch up to GitHub.
+1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the changes, and push the branch up to GitHub.
 
     ```bash
     git add azure-pipelines.yml
@@ -75,21 +75,23 @@ Here you'll push your changes to GitHub and see the pipeline run. Recall that yo
     git push origin scan-open-source
     ```
 
-1. Watch the build.
+1. From Azure Pipelines, watch the build.
 
     You see the scan task complete successfully.
 
     ![WhiteSource scan completed in pipeline](../media/4-scan-success.png)
 
-1. Select the completed task, and then scroll to the bottom of the report details for that task.
+1. Select the completed **Run WhiteSource Bolt** task, and then scroll to the bottom of the report details for that task.
 
     ![WhiteSource scan completed details](../media/4-scan-task-detail.png)
 
-    You'll see that the data is being uploaded for the scan report.
+    You see that the data is being uploaded for the scan report.
 
 1. When the build completes, navigate to the **WhiteSource Bolt Build Report** tab.
 
     ![WhiteSource report screen](../media/4-scan-report.png)
+
+    This image is for illustration. You may see different results based on the current recommendations.
 
 ## Analyze the results
 

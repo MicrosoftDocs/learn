@@ -20,6 +20,10 @@ In our example here, the server admin account you are connecting with is a membe
 
 ## Authentication and authorization in practice
 
+As a best practice, your application should use a dedicated account to authenticate. This way, you can limit the permissions granted to the application and reduce the risks of malicious activity in case the application code is vulnerable to a SQL injection attack. The recommended approach is to create a contained database user, which allows your app to authenticate directly to the database. For more information, see [Contained Database Users - Making Your Database Portable](https://docs.microsoft.com/sql/relational-databases/security/contained-database-users-making-your-database-portable?view=sql-server-2017).
+
+Use Azure Active Directory authentication to centrally manage identities of database users and as an alternative to SQL Server authentication.
+
 Let's now take a look at how to set up a user and grant them access to a database. In this case we'll use SQL authentication for our user, but the process would be essentially the same if we were using Azure AD authentication.
 
 ### Create a database user

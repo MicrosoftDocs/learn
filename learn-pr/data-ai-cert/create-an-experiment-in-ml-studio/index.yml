@@ -7,7 +7,6 @@ metadata:
   author: gerryaobrien
   ms.author: gerryo
   ms.topic: interactive-tutorial
-  #ms.learn-contact: smmark
   ms.prod: learning-azure
 title: Create an Experiment in Azure Machine Learning Studio
 summary: Learn how to use Microsoft Azure Machine Learning Studio to create an experiment, test it, and then publish it as a web service.

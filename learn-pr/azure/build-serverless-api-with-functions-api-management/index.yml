@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.build-serverless-api-with-functions-api-management
 metadata:
-  title: Expose multiple function apps as a consistent API by using Azure API Management
+  title: Expose multiple Azure Function apps as a consistent API by using Azure API Management
   description: In this module, you will learn how to assemble multiple Azure Functions into a single API using Azure API Management.
   ms.date: 09/26/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Expose multiple function apps as a consistent API by using Azure API Management
+title: Expose multiple Azure Function apps as a consistent API by using Azure API Management
 summary: Combine multiple Azure Functions apps into a unified interface by importing them into a single Azure API Management instance.
 abstract: | 
   In this module, you will:
@@ -17,7 +17,7 @@ abstract: |
   - Import multiple Azure Functions apps as a single API in Azure API Management
 prerequisites: |
   - Basic knowledge of Azure API Management and Azure Functions
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/build-serverless-api-with-functions-api-management.svg
 levels: 
 - beginner
 roles: 

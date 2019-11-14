@@ -25,6 +25,7 @@ levels:
 roles:
 - data-engineer
 - solution-architect
+- security-engineer
 products:
 - azure
 - azure-storage

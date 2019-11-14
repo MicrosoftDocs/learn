@@ -26,6 +26,7 @@ levels:
 roles:
 - solution-architect
 - administrator
+- security-engineer
 products:
 - azure
 - azure-virtual-network

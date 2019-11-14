@@ -33,7 +33,7 @@ To begin creating your application, use git to clone the sample application code
 In order to grant your app permission to access Azure Monitor metrics, you must create a service principal in the Azure Active Directory. When your app identifies itself to Azure, it will use an access key. To create a service principal and access key, follow these steps:
 
 1. Go to the [Azure portal](https://portal.azure.com/) and in the navigation on the left, click **Azure Active Directory**.
-1. In the **Azure Active Directory** blade, under **Manage** click **App registrations**
+1. In the **Azure Active Directory** pane, under **Manage** click **App registrations**
 
     ![Access app registrations](../media/5-access-app-registrations.png)
 

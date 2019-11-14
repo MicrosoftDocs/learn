@@ -4,13 +4,12 @@ title: What is Azure Pipelines?
 metadata:
   title: What is Azure Pipelines?
   description: See how Azure Pipelines automatically builds and tests your code projects and makes them available to others.
-  ms.date: 06/21/2019
+  ms.date: 11/04/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-durationInMinutes: 3
+durationInMinutes: 6
 content: |
   [!include[](includes/2-what-is-azure-pipelines.md)]
 quiz:
