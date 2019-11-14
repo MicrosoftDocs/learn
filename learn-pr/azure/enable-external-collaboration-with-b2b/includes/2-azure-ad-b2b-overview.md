@@ -1,5 +1,5 @@
 
-You need to enable the clinicians to access to your organization's application. You'll use Azure Active Directory B2B (Azure AD B2B).
+The clinicians need to access to your organization's application. You'll use Azure Active Directory B2B (Azure AD B2B) give them access.
 
 Here, you'll have a brief overview of the concepts you need to understand to use Azure AD B2B effectively.
 
@@ -7,14 +7,26 @@ Here, you'll have a brief overview of the concepts you need to understand to use
 
 Your organization needs to work with external users. To collaborate with your organization, these users will need to have their required level of access to the applications. Azure Active Directory B2B is a service in Azure that enables you to collaborate with your external partners in a secure manner. Your partner users are invited as guest users. You remain in control of what they should have access to, and for how long.
 
+A typical Azure AD B2B workflow can be as follows:
+
 ![Azure AD B2B overview](../media/2-guest-user.png)
 
-<!--Original image: https://docs.microsoft.com/en-us/azure/active-directory/b2b/media/tutorial-mfa/aad-b2b-mfa-example.png TODO: This image should be reviewed by the design team and turned into a Learn version. The numbers should be removed, otherwise the reader expects them to be explained.-->
+<!--Original image: https://docs.microsoft.com/en-us/azure/active-directory/b2b/media/tutorial-mfa/aad-b2b-mfa-example.png -->
 
-Azure AD B2B's concept of guest users make it possible for external users to have the right level of access. Guest users are more restricted compared with regular default member users. Default member users are accounts meant for an organization's internal users. A user that is a default member user type can potentially be given access to read all administrative roles and memberships, read subscriptions or properties of policies, whereas guest users will not be able to do these things.
+You invite your external users, as guest users to your directory. For example, you can invite them using the Azure portal. Your guest users will show up in your directory, in your list of users.
 
-You can collaborate with your partners, even if they do not have an IT department that commonly manages the identities within an organization. You use your partner user's email address to collaborate with them. You can send an invitation to via their email address, or share a direct link, and they will only have to click a link to access your shared applications.
+![Invite user in the Azure portal](../media/2-invite-guest-user.png)
 
-You can use Conditional Access policies with Azure AD B2B to further protect your applications. These policies make it possible for you to ask users to complete an additional authentication step through multi-factor authentication before they can access an application.
+The guest user receives an invitation via email. The user uses the link in the email to access the apps you want to share with them. The user is asked for their consent the first time they use the link. Azure AD B2B helps you provide transparency for your partner users in this way. Your external users know what information they're sharing.
 
-Azure AD B2B also enables you to have a customized onboarding process. You can create self-service sign-up forms using the B2B invitation API so users can request the appropriate access the need. So you can build your own onboarding processes for your applications. You're also able to delegate specific owners of applications to handle the invitations for guest users for those applications. This feature is helpful if, for example, you want to make it possible for a sales manager to invite guest users to a sales application their team uses internally.
+![Permissions](../media/2-consentscreen.png)
+
+<!-- Original image: https://docs.microsoft.com/en-us/azure/active-directory/b2b/media/what-is-b2b/consentscreen.png -->
+
+Your guest users are then forwarded to the access panel page, where they can access all the applications and services you've shared with them.  These applications and services can be cloud-based, or on-premises based.
+
+![Shared apps](../media/2-shared-apps.png)
+
+<!-- Original image: https://docs.microsoft.com/en-us/azure/active-directory/b2b/media/what-is-b2b/access-panel-manage-app.png -->
+
+Optionally, you can add multi-factor authentication to an application, as an additional layer of protection for your guest users. Here, when the user then attempts to access an application, they user must enter a verification code sent to their mobile device, before they're granted access.

@@ -9,7 +9,7 @@ With Azure AD B2B, your external users can use their own identities to collabora
 
 ![External user using their identity](../media/3-user-added-using-their-identity.png)
 
- <!--Original image: https://www.youtube.com/watch?v=AhwrweCBdsc -->
+ <!--Original image is from video on this page: https://docs.microsoft.com/en-us/azure/active-directory/b2b/what-is-b2b -->
 
 Your collaborating partners don't have to deal with new identities that they need to keep track of themselves. And you don't take on the additional responsibility of managing external user identities.
 
