@@ -1,6 +1,8 @@
-This module is all about setting up a continuous integration (CI) pipeline for your application.
+In the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path, you helped the Tailspin team start their DevOps journey by evaluating their current processes and technologies and then planning their initial set of tasks on Azure Boards.
 
-The *Space Game* web team is being pulled in many directions. Andy, the lead dev, is running from one meeting to another and never has any time. Amita, the QA person, is helping a tester on another team. Tim, who's in ops, is upgrading his servers and hasn't been seen for days. Mara's dream of a true DevOps team is stalled (again).
+In this module, you help the team with their first task: setting up a continuous integration (CI) pipeline for their application.
+
+The Tailspin web team is being pulled in many directions. Andy, the lead dev, is running from one meeting to another and never has any time. Amita, the QA person, is helping a tester on another team. Tim, who's in ops, is upgrading his servers and hasn't been seen for days. Mara's dream of a true DevOps team is stalled (again).
 
 But she isn't giving up. She remembers that she and the team used Azure Boards to create a backlog of issues with the build process:
 
@@ -23,14 +25,19 @@ In this module, you will:
 
 ## Prerequisites
 
-If you don't already have an [Azure DevOps](https://dev.azure.com?azure-portal=true) organization, work through the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path before starting this module.
+The modules in this learning path and previous learning path form a progression.
 
-You'll also need to set up a development environment on your Windows, macOS, or Linux system. You'll need:
+To follow the progression from the beginning, be sure to first complete the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path.
 
+If you want to start with this learning path, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
+
+* An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
+* A [GitHub](https://github.com/join?azure-portal=true) account
 * [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
 * [.NET Core 2.1](https://www.microsoft.com/net/download?azure-portal=true)
 * [Git](https://git-scm.com/downloads?azure-portal=true)
-* A [GitHub](https://github.com/join?azure-portal=true) account
+
+If your company's policy doesn't allow you to create an Azure DevOps organization, you can create your own personal account. You can get started with Azure DevOps for free.
 
 This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
 

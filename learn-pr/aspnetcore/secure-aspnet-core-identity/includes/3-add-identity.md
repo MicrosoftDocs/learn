@@ -11,7 +11,7 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
 1. Install the ASP.NET Core code scaffolder:
 
     ```dotnetcli
-    dotnet tool install -g dotnet-aspnet-codegenerator
+    dotnet tool install -g dotnet-aspnet-codegenerator --version 2.2.4
     ```
 
     The following output appears:
@@ -30,7 +30,8 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
 1. Add the following NuGet package to the project:
 
     ```dotnetcli
-    dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+    dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design \
+        --version 2.2.4
     ```
 
     The package installs code generation templates that are used by the scaffolder.
@@ -77,7 +78,7 @@ In this unit, Identity will be added to the existing ASP.NET Core Razor Pages pr
 Run the following command from the project root to install the PostgreSQL database provider for EF Core:
 
 ```dotnetcli
-dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
+dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL --version 2.2.4
 ```
 
 This NuGet package provides EF Core with knowledge of how to interact with a PostgreSQL database.

@@ -23,6 +23,9 @@ Cloud Shell includes popular tools and text editors. Here's a brief look at `az`
 - `jq` is a command-line JSON parser. You'll pipe output from `az` commands to this tool to extract important fields from JSON output.
 - `sqlcmd` enables you to execute statements on SQL Server. You'll use `sqlcmd` to create an interactive session with your Azure SQL database.
 
+> [!TIP]
+> When running the T-SQL commands in this module using `sqlcmd`, the `GO` on the second line may not copy through to the `sqlcmd` prompt, so you will likely need to type this out. The T-SQL command won't execute without it, so make sure to run the `GO` command.
+
 ## Get information about your Azure SQL database
 
 Before you connect to your database, it's a good idea to verify it exists and is online.
@@ -30,7 +33,7 @@ Before you connect to your database, it's a good idea to verify it exists and is
 Here, you use the `az` utility to list your databases and show some information about the **Logistics** database, including its maximum size and status.
 
 1. The `az` commands you'll run require the name of your resource group and the name of your Azure SQL logical server. To save typing, run this `azure configure` command to specify them as default values.
-    Replace `<server-name>` with the name of your Azure SQL logical server. Note that depending on the blade you are on in the portal this may show as a FQDN (servername.database.windows.net), but you only need the logical name without the .database.windows.net suffix.
+    Replace `<server-name>` with the name of your Azure SQL logical server. Note that depending on the pane you are on in the portal this may show as a FQDN (servername.database.windows.net), but you only need the logical name without the .database.windows.net suffix.
 
     ```azurecli
     az configure --defaults group=<rgn>[sandbox resource group name]</rgn> sql-server=<server-name>

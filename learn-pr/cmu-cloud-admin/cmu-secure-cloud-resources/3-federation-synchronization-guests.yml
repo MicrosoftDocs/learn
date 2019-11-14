@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.secure-cloud-resources.3-federation-synchronization-guests
+title: Federation, synchronization, and guest accounts
+metadata:
+  title: Federation, synchronization, and guest accounts
+  description: Federation, Synchronization, and Guest Accounts
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-federation-synchronization-guests.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+    - content: "Which of the following mechanisms can be used to help manage users' access to cloud resources with identities already in place for on-premises resources?
+
+        I. Federation
+        II. Synchronization
+        III. Guest accounts"
+
+      choices:
+      - content: "II only"
+        isCorrect: false
+        explanation: "Incorrect. Synchronization is one solution, but not the only one."
+      - content: "I and II"
+        isCorrect: false
+        explanation: "Incorrect. Federation and synchronization are two solutions, but not the only ones."
+      - content: "I and III"
+        isCorrect: false
+        explanation: "Incorrect. Federation and guest accounts are two solutions, but not the only ones."
+      - content: "I, II, and III"
+        isCorrect: true
+        explanation: "Correct! Federation, synchronization, and guest accounts can all be used to provide access to external resources using internal accounts from one or more organizations."
+    
+    - content: "You work for an organization that uses Active Directory to store information about users. The organization is moving to the cloud and wants to use the existing Active Directory to control access to cloud resources. A chief requirement is that changes made to Active Directory must propagate immediately to the cloud. Which of the following solutions is most appropriate?"
+      choices:
+      - content: "Federation"
+        isCorrect: true
+        explanation: "Correct! Federation allows organizations to authenticate access to cloud resources using an on-premises directory service, and changes made in the on-premises directory are immediately visible in the cloud."
+      - content: "Synchronization"
+        isCorrect: false
+        explanation: "Incorrect. Synchronization allows organizations to authenticate access to cloud resources using an on-premises directory service, but changes made on-premises aren't visible in the cloud until the on-premises directory and cloud directory are synchronized."
+      - content: "Guest accounts"
+        isCorrect: false
+        explanation: "Incorrect. Guest accounts are a special case of federation, but the purpose of guest accounts is to allow external users to access cloud resources as if they were internal members of the organization."
+      - content: "None of the above"
+        isCorrect: false
+        explanation: "Incorrect. Federation allows organizations to authenticate access to cloud resources using an on-premises directory service, and changes made in the on-premises directory are immediately visible in the cloud."

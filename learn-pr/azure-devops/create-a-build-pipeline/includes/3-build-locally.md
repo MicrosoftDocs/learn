@@ -12,7 +12,7 @@ Visual Studio Code comes with an integrated terminal, so you can edit files and 
 1. On the **View** menu, select **Terminal** or **Integrated Terminal**. (The option you see depends on your operating system.)
 1. In the drop-down list, select **bash**:
 
-    ![Select the Bash shell in Visual Studio Code](../media/3-vscode-bash.png)
+    ![Selecting the Bash shell in Visual Studio Code](../../shared/media/vscode-terminal-bash.png)
 
     The terminal window lets you choose any shell that's installed on your system, like Bash, Zsh, and PowerShell.
 
@@ -73,14 +73,12 @@ To clone the *Space Game* web project to your computer:
 1. Go to your fork of the *Space Game* web project on GitHub.
 1. Select **Clone or download**. Then select the button next to the URL that's shown to copy the URL to your clipboard:
 
-    ![The Clone or download button on GitHub](../media/3-github-clone-button.png)
+    ![The Clone or download button on GitHub](../../shared/media/github-clone-button.png)
 1. In Visual Studio Code, go to the terminal window and run the `git clone` command. Replace the URL that's shown here with the contents of your clipboard:
 
     ```bash
-    git clone --branch master --single-branch https://github.com/your-name/mslearn-tailspin-spacegame-web.git
+    git clone https://github.com/your-name/mslearn-tailspin-spacegame-web.git
     ```
-
-    You can typically omit the `--branch` and `--single-branch` arguments. We include them here to help you get starter code from the Microsoft repository in later modules.
 
 1. Move to the `mslearn-tailspin-spacegame-web` directory. This is the root directory of your repository.
 
@@ -138,6 +136,9 @@ In Visual Studio Code, your terminal window points to the root directory of the 
 
 You see the directory and file tree in the file explorer.
 
+> [!NOTE]
+> You might need to open the integrated terminal a second time after you open the folder.
+
 ## Build and run the web application
 
 Now that you have the web application, you can build and run it locally.
@@ -147,6 +148,9 @@ Now that you have the web application, you can build and run it locally.
     ```bash
     dotnet build --configuration Release
     ```
+
+    > [!NOTE]
+    > If the `dotnet` command is not found, review the prerequisites at the start of this module. You may need to install .NET Core.
 
     .NET Core projects typically come with two build configurations: Debug and Release. Debug builds aren't optimized for performance. They make it easier for you to trace through your program and troubleshoot issues. Here we choose the Release configuration just to see the web app in action.
 

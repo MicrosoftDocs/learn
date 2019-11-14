@@ -18,7 +18,7 @@ The first step is to create a project that contains your unit tests, and add it 
 
 1. When the project has been added, right-click the **WatchFunctionTests** project in the **Solution Explorer** window, and then click **Manage NuGet Packages**.
 
-1. In the **NuGet: WatchFunctionTests** window, click the **Browse** tab. In the **Search** box, type **Microsoft.AspNetCore.Mvc**. Click the **Microsoft.AspNetCore.Mvs** package, and then click **Install**.
+1. In the **NuGet: WatchFunctionTests** window, click the **Browse** tab. In the **Search** box, type **Microsoft.AspNetCore.Mvc**. Click the **Microsoft.AspNetCore.Mvc** package, and then click **Install**.
 
     ![ Screenshot of the NuGet Package Manager window. The user is installing the Microsoft.AspNetCore.Mvc package ](../media/6-nuget-install-aspnet-mvc.png)
 

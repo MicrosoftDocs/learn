@@ -24,6 +24,7 @@ roles:
 - developer
 - administrator
 - solution-architect
+- security-engineer
 products:
 - azure
 units:

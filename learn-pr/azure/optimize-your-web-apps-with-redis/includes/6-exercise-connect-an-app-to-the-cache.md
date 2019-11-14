@@ -9,13 +9,13 @@ Now that we have a Redis cache created in Azure, let's create an application to 
 
 We'll use a simple Console Application so we can focus on the Redis implementation.
 
-1. In the Cloud Shell, create a new .NET Core Console Application, name it "SportsStatsTracker"
+1. In the Cloud Shell, create a new .NET Core Console Application, name it `SportsStatsTracker`.
 
     ```bash
     dotnet new console --name SportsStatsTracker
     ```
     
-1. This will create a folder for the project, go ahead and change the current directory.
+1. Change the current directory to the folder for the new project.
 
     ```bash
     cd SportsStatsTracker
@@ -95,7 +95,7 @@ Now that we have added the required libraries to enable reading configuration, w
         .Build();
     ```
 
-Your **Program.cs** file should now look like the following:
+Your **Program.cs** file should now look like the following example:
 
 ```csharp
 using System;
@@ -429,7 +429,7 @@ We'll use a simple console application so we can focus on the Redis implementati
 
 1. Our app is going to use the following npm packages:
 
-    - **redis**: The most commonly-used JavaScript package for connecting to redis.
+    - **redis**: The most commonly used JavaScript package for connecting to redis.
     - **bluebird**: Used to convert the callback-style methods in the `redis` package to awaitable Promises.
     - **dotenv**: Loads environment variables from a `.env` file, which is where we'll store our Redis connectivity information.
 
@@ -459,7 +459,7 @@ Let's add the connection information we got from the Azure portal into a `.env` 
     REDISPORT=
     ```
 
-1. Paste in the hostname, primary key, and port after the equals sign on each respective line. The complete file will look similar to the following:
+1. Paste in the hostname, primary key, and port after the equals sign on each respective line. The complete file will look similar to the following example:
 
     ```
     REDISHOSTNAME=myredishost.redis.cache.windows.net
@@ -568,7 +568,7 @@ We're ready to write code to interact with our Redis cache.
       console.log("Adding value to the cache");
       await client.setAsync("myKey", "myValue");
       console.log("Reading value back:");
-      console.log(wait client.getAsync("myKey"));
+      console.log(await client.getAsync("myKey"));
       console.log("Pinging the cache");
       console.log(await client.pingAsync());
       await client.flushdbAsync();
