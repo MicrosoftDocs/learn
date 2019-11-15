@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-data-at-rest.5-azure-key-vault
-title: Help keep your keys and secrets safe by using Azure Key Vault
+title: Keep your keys and secrets safe by using Azure Key Vault
 metadata:
-  title: Help keep your keys and secrets safe by using Azure Key Vault
-  description: Help keep your keys and secrets safe by using Azure Key Vault
+  title: Keep your keys and secrets safe by using Azure Key Vault
+  description: Keep your keys and secrets safe by using Azure Key Vault
   ms.date: 10/29/2019
   author: jboeshart
   ms.author: jaboes

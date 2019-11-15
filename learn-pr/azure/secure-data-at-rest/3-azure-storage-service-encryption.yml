@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-data-at-rest.3-azure-storage-service-encryption
-title: Help secure data at rest by using Azure Storage Service Encryption
+title: Secure data at rest by using Azure Storage Service Encryption
 metadata:
-  title: Help secure data at rest by using Azure Storage Service Encryption
-  description: Help secure data at rest by using Azure Storage Service Encryption
+  title: Secure data at rest by using Azure Storage Service Encryption
+  description: Secure data at rest by using Azure Storage Service Encryption
   ms.date: 10/29/2019
   author: jboeshart
   ms.author: jaboes

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-data-at-rest.2-classify-data
-title: Classify your data and help protect confidential information
+title: Classify your data and protect confidential information
 metadata:
-  title: Classify your data and help protect confidential information
-  description: Classify your data and help protect confidential information.
+  title: Classify your data and protect confidential information
+  description: Classify your data and protect confidential information.
   ms.date: 10/29/2019
   author: jboeshart
   ms.author: jaboes

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-data-at-rest.4-secure-azure-sql-cosmos-db-data
-title: Help secure data at rest in Azure SQL Database and Azure Cosmos DB
+title: Secure data at rest in Azure SQL Database and Azure Cosmos DB
 metadata:
-  title: Help secure data at rest in Azure SQL Database and Azure Cosmos DB
-  description: Help secure data at rest in Azure SQL Database and Azure Cosmos DB
+  title: Secure data at rest in Azure SQL Database and Azure Cosmos DB
+  description: Secure data at rest in Azure SQL Database and Azure Cosmos DB
   ms.date: 10/29/2019
   author: jboeshart
   ms.author: jaboes
