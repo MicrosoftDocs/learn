@@ -10,46 +10,31 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 6
+durationInMinutes: 10
 content: |
   [!include[](includes/4-understand-firewalls-network-security.md)]
 quiz:
-  title: "Check your knowledge"
+  title: Check your knowledge
   questions:
-  - content: "Which of these infrastructure models is not a valid method of joining a device to your Azure AD?"
+  - content: Which of the following best practices should you implement for your network security on Azure?
     choices:
-    - content: "Manual user configuration"
+    - content: Disable load-balancing of traffic
       isCorrect: false
-      explanation: "Manual user configuration supports using Azure AD join."
-    - content: "Smartcards and certificate-based authentication"
+      explanation: You shouldn't disable load-balancing, it helps you improve performance and availability. You should disable SSH/RDP protocols.
+    - content: Disable SSH/RDP protocols
       isCorrect: true
-      explanation: "Smartcards and certificate based authentication are not valid methods for joining devices to your Azure AD."
-    - content: "Federated environments"
+      explanation: You can enable it again once you've established a VPN tunnel for your connections.
+    - content: Disable network service endpoints
       isCorrect: false
-      explanation: "Federated environments require the use of an identity provider, but it is a valid method for joining an Azure AD."
-    - content: "A managed environment "
-      isCorrect: false
-      explanation: "A managed environment uses Pass-Through Authentication or Password Hash Sync to provide Seamless Single Sign-on to your devices."
-  - content: "What provisioning options are available through Azure AD join?"
+      explanation: You shouldn't disable network service endpoints, they help you isolate your Azure services from the public internet. You should disable SSH/RDP protocols.
+  - content: You need to prevent users' devices from directly requesting webpages from the internet themselves. Which tool would you use to do this?
     choices:
-    - content: "Self-service using OOBE, Windows Autopilot, or Bulk enrollment"
+    - content: Packet filtering firewall
+      isCorrect: false
+      explanation: This type of firewall checks your packets. Use a proxy server to hide details about your clients from the internet.
+    - content: Circuit-level  firewall
+      isCorrect: false
+      explanation: This type of firewall helps you check whether TCP and DUP connections are valid. Use a proxy server to hide details about your clients from the internet.
+    - content: Proxy server firewall
       isCorrect: true
-      explanation: "All three options allow devices to be joined to your Azure AD."
-    - content: "Self-service using MDM, Windows Autopilot, or Bulk enrollment"
-      isCorrect: false
-      explanation: "There is no self-service capability using MDM."
-    - content: "Self-service using Azure AD, Windows Autopilot, or Bulk enrollment"
-      isCorrect: false
-      explanation: "There is no self-service capability for joining a device to Azure AD."
-  - content: "What happens when a device is not in the MDM scope?"
-    choices:
-    - content: "The user will be asked to add the device to the MDM before the device can join the Azure AD."
-      isCorrect: false
-      explanation: "The user will never be asked to join the device to an MDM."
-    - content: "The device will not be able to join the Azure AD until the device has been registered with MDM."
-      isCorrect: false
-      explanation: "The device will be able to join the Azure AD, but will be un-managed."
-    - content: "The Azure AD Join completes without the MDM enrollment."
-      isCorrect: true
-      explanation: "The device will be be joined, but will be unmanaged by the MDM system."
-  
+      explanation: A proxy server helps you hide details about the requesting client.

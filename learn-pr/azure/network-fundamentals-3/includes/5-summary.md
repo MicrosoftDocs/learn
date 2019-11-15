@@ -1,7 +1,7 @@
-<Restate the scenario problem>
+In this module, you needed to investigate the basics of network security to protect your network. 
 
-<show how you solved the scenario problem>
+You explored how authentication and authorization are used to protect a network. You learned how a network is monitored for intrusion, performance, and availability. And you've seen which Azure tools can be used to protect your network.
 
-<describe the experience without the product>
+Without an appropriate understanding of security, your network is vulnerable to attacks and  performance issues. This vulnerability can negatively impact your organization from a financial and reputational perspective.
 
-<describe the business impact of using the product>
+Your investigation has helped you understand how the resources, devices, and users on your network can be better protected. So your organization is better protected financially and reputationally.

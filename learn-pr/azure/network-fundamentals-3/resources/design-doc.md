@@ -54,52 +54,34 @@ Identify the subtasks of *Networking Fundamentals*
           - Types of Authentication
         - Password
         - Two-factor authentication
-        - Token Authentication
-        - Biometric Authentication
-        - Transactional Authentication
-        - Computer Recognition Authentication
+        - Token authentication
+        - Biometric authentication
+        - Transactional authentication
+        - Computer recognition authentication
         - CAPTCHAs
         - Single Sign-on
-          - Protocols
         - Kerberos
         - SSL/TLS
-   
     - Network Authorization
       - What is it?
       - Differences between authentication and authorization
-    - Network Monitoring
-      - What is it?
-        - Agent-Based Monitoring
-        - Agentless Based Monitoring
-      - Monitoring Intervals
-      - Protocols
-        - Ping, SNMP, Syslog
-      - Best Practice
-        - FCAPS
-          - Fault Management
-          - Configuration Management
-          - Accounting
-          - Performance Management
-          - Security
-        - Alerting and Reporting
-    - How this relates to what will be done in Azure.
-      - Azure Network Monitoring Solutions
-      - Azure Monitor
-      - Log Analytics
     - Knowledge check
-      - What role does Authorization play during a sign-in event?
+      - What role does authorization play during a sign-in event?
         - Authorization is the process of determining whether the authenticated user has access to specific resources.
-      - Which of these are the two most common authentication protocols?
-        - Kerberos and SSL/TLS
-      - When monitoring your network using SNMP. what are the three core components?
-        - Managed Device, Agent, and Network Management System (NMS)
+        - Authorization is the process of determing whether a particular user or client is the author of specific resources.
+        - Authorization is the process of determining whether a client or user is indeed who they claim to be.
+       
+      - Which of the following happens in SSL/TLS protocol?
+        - The server sends a "ServerHello" message back, and this message includes a session ID, the server's digital certificate, and its public key.
+        - The server sends a "ServerHello" message back, and this message includes a session ID, the client's digital certificate, and a public key.
+        - The server sends a "ClientHello" message back, and this message includes a session ID, the server's digital certificate, and its public key.
 1. **Network Monitoring**
     - What is it?
       - Agent-Based Monitoring
       - Agentless Based Monitoring
     - Monitoring Intervals
     - Protocols
-      - Ping, SNMP, Syslog
+      - SNMP, WMI,Syslog
     - Best Practice
       - FCAPS
         - Fault Management
@@ -108,13 +90,19 @@ Identify the subtasks of *Networking Fundamentals*
         - Performance Management
         - Security
       - Alerting and Reporting
-    - How this relates to what will be done in Azure.
-      - Azure Network Monitoring Solutions
-      - Azure Monitor
-      - Log Analytics
+      - How this relates to what will be done in Azure.
+        - Azure Monitor
+        - Log Analytics
     - Knowledge Check
-      - When monitoring your network using SNMP. what are the three core components?
-        - Managed Device, Agent, and Network Management System (NMS)
+      - You need to query log data for applications across your network in Azure. Which tool do you use?
+        - You use Syslog to query the log data that has been collected.
+        - You use Log Analytics to query the data that has been collected.
+        - You use an Azure agent to query the data that has been collected.
+
+      - What is Syslog used for?
+        - Syslog is used to let your device send event messages.
+        - Syslog is used to schedule processes to be triggered.
+        - Syslog is used to update system properties on your device.
 1. **Understand Firewalls and Network Security**
 	- Overview of network security
         - Types of network security
@@ -128,19 +116,24 @@ Identify the subtasks of *Networking Fundamentals*
              - Application-layer, packet filtering, circuit-level, proxy server, stateful, next generation.
         - Importance of Firewalls
    - Example as to how this relates to what will be done in Azure.
-        - Azure Network Security Groups
-        - Azure Virtual Network traffic routing
+        - Azure Network Security Groups and logging for Azure network security groups
         - Azure Firewall
-        - Point-to-site VPN Connectivity
-        - Azure DNS
+        - Site-to-site and point-to-site VPN Connectivity
         - Azure best practices for network security
-        - Azure DDOS protection
-        - Logging for Azure Network security groups
-   - Knowledge check
-        - Which type of network security is needed to encrypt the connection from an endpoint to a network?
-             - VPN
-        - What type of firewall would you use to secure a UDP or TCP connection?
-             - Circuit-level
+          - Azure network security appliances
+          - Azure Virtual Network Service Endpoints
+          - Disable SSH/RDP
+          - Load-balancing
+          - Azure DDOS protection
+    - Knowledge check
+      - Which of the following best practices should you implement for your network security on Azure?
+        - Disable load-balancing of traffic
+        - Disable SSH/RDP protocols
+        - Disable network service endpoints
+      - You need to prevent users from directly requesting webpages from the internet. Which tool would you use to do this?
+        - Packet filtering firewall
+        - Application-layer firewall
+        - Proxy server firewall
 1. **Summary**
 
    - Summary of this module.
