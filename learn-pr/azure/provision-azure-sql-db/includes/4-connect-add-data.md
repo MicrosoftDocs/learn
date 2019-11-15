@@ -127,7 +127,10 @@ Remember that CRUD stands for **create**, **read**, **update**, and **delete**. 
     > You may see an error message that is similar to the following example:
     >
     > ```output
-    > Sqlcmd: Error: Microsoft ODBC Driver 17 for SQL Server : Cannot open server 'contoso' requested by the login. Client with IP address 'nnn.nnn.nnn.nnn' is not allowed to access the server. To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.  It may take up to five minutes for this change to take effect.
+    > Sqlcmd: Error: Microsoft ODBC Driver 17 for SQL Server : Cannot open server 'contoso' requested by the login.
+    > Client with IP address 'nnn.nnn.nnn.nnn' is not allowed to access the server.
+    > To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.
+    > It may take up to five minutes for this change to take effect.
     > ```
     >
     > If this happens, you will need to add a firewall rule for your client. To do so, use the following steps:
