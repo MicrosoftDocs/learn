@@ -7,7 +7,7 @@ In this unit, you'll explore use cases to elevate access. You'll also discover h
 
 Azure AD and Azure role-based access control (RBAC) are independent permission schemes. RBAC is for managing access to Azure resources like virtual machines, key vaults, storage and much more. Azure AD administrator roles are for managing directory resources such as user accounts and passwords.
 
-![User Access Admin Elevated Privilege](../media/2-elevate-access.png)
+![Diagram that shows User Access Admin elevated privilege relationships](../media/2-elevate-access.png)
 
 However, the global administrator for Azure AD can temporarily elevate permissions to the RBAC role of *User Access Administrator*. This action grants the RBAC permissions needed to manage Azure resources, even at a subscription level. The User Access Administrator is assigned at the scope of root. The role can view all resources, and assign access, in any subscription or management group in that Azure AD directory.
 
@@ -22,7 +22,7 @@ Although the two permission schemes are separate, there are many instances where
 
 ## Manage access to Azure subscriptions
 
-You can assign employee management access to a subscription with the Azure portal, or you can use Azure PowerShell, Azure CLI, or use a REST API Elevate Access call.
+You can assign employee management access to a subscription with the Azure portal. You can also use Azure PowerShell, Azure CLI, or use a REST API Elevate Access call.
 
 Below is an example showing how you can view roles assignments set for a user using Azure PowerShell.
 
@@ -33,4 +33,4 @@ Below is an example showing how to remove a role assignment for a user using Azu
 ```PowerShell
 Remove-AzRoleAssignment -ResourceGroupName rg1 -SignInName jenny.doe@contoso.com -RoleDefinitionName Reader
 ```
-It is important that you revoke permissions once the user has accomplished their tasks. You are able to easily and rapidly do this through any of the methods available to you in Azure.
+Make sure you revoke permissions after the user has finished their tasks.

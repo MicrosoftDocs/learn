@@ -20,7 +20,7 @@ The built-in default roles are:
 
 There's also a **User Access Administrator** role that allows for management of user access to Azure resources. The following diagram shows some approaches to determine which roles you should give to which users.
 
-![Best practices to determine which roles should be given to which users](../media/4-best-practices.png)
+![Diagram that shows which roles should be given to which users](../media/4-best-practices.png)
 
 ## Identify the right scope
 
@@ -40,7 +40,7 @@ Azure AD also has its own set of roles that are more concerned with users, passw
 
 The **Global Administrator** can manage access to administrative features in Azure AD. This role can give admin roles to other users, and handle password reset for any user or administrator. By default, whoever signs up for the Azure Active Directory tenant is automatically assigned this role.
 
-The **User Administrator** can manage all aspects of users and groups, including support tickets, monitoring service health, and changing passwords for certain classes of user. 
+The **User Administrator** can manage all aspects of users and groups, including support tickets, monitoring service health, and changing passwords for certain types of users. 
 
 The **Billing Administrator** can make purchases, manage subscriptions and support tickets, and monitor service health.
 
