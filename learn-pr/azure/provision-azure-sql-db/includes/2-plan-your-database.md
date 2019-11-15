@@ -4,7 +4,7 @@ Here you'll learn why Azure SQL Database is a convenient, cost-effective, and se
 
 ## Why choose Azure SQL Database?
 
-Your transportation logistics application requires stored procedures that run basic CRUD (**Create**, **Read**, **Update**, and **Delete**) operations. You have experience working with SQL Server and other relational databases.
+Your transportation logistics application requires stored procedures that run basic CRUD (_Create_, _Read_, _Update_, and _Delete_) operations. You have experience working with SQL Server and other relational databases.
 
 You consider two choices for your database:
 
@@ -40,6 +40,6 @@ You've decided to build the web and application tiers for your logistics app on 
 
     You can allow access to specific IP addresses that you trust. Doing so allows you to use Visual Studio, SQL Server Management Studio, or other tools to manage your Azure SQL database.
 
-To recap - with Azure SQL Database, we manage the hardware, software updates, and OS patches for you. We provide buying options to help you get the performance you need at a predictable cost. Azure SQL Database also comes with a firewall so that you can control access to your data.
+To recap - with Azure SQL Database, Microsoft Azure manages the hardware, software updates, and OS patches for you. We provide buying options to help you get the performance you need at a predictable cost. Azure SQL Database also comes with a firewall so that you can control access to your data.
 
 Although you don't need to be a DBA to use Azure SQL Database, there are a few concepts you should understand before you start. We'll cover these concepts in the next unit.
