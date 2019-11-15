@@ -7,30 +7,34 @@ You'll now create a B2C tenant, register an application, and put together a sign
 First, you create an Azure AD B2C tenant.
 
 1. [Sign in](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to the Azure portal as a global administrator. If you're the person who signed up for the Azure account, you'll be the global administrator.
-1. Make sure you're in the directory that holds your subscription by selecting the **Directory + subscription** filter at the top of the Azure portal. Select your directory.
 
-    ![Select a tenant](../media/5-select-directory.png)
-
-1. Create a new resource by selecting **Create a resource** on the left of the Azure portal. Search for **Active Directory B2C**, select the search result, and then select **Create**.
+1. Create a new resource by selecting **Create a resource** on the left of the Azure portal. Search for **Active Directory B2C**, select the search result.
 
     ![Create a B2C resource](../media/5-create-b2c-resource.png)
+
+1. Select **Create**.
+
+    ![text](../media/5-choose-azure-active-b2c.png)
 
 1. Select  **Create a new Azure AD B2C Tenant**. Fill in the form then select **Create**
 
     ![Create tenant form ](../media/5-create-tenant-form.png)
 
-1. Select the link at the top of your form then select **Link an existing Azure AD B2C Tenant to my Azure subscription**.
+1. Select the link at the top of your form, **Create new B2C Tenant or Link to existing Tenant**. 
 
     ![Select tenant link](../media/5-select-tenant-link.png)
 
+1. Select **Link an existing Azure AD B2C Tenant to my Azure subscription**.
+
     ![Link an existing tenant to your subscription](../media/5-link-existing-tenant.png)
-1. For the **Azure AD B2C Tenant** field, select the tenant you created. Create a new resource group for your tenant using the **Create new** link under the **Resource Group** field. Select a location for your resource group in the **Resource group location** field.
+
+1. For the **Azure AD B2C Tenant** field, select the tenant you created. 
+
+1. Select **<rgn>[sandbox resource group name]</rgn>** for the **Resource group**.
 
     ![Link existing tenant form](../media/5-link-existing-tenant-form.png)
 
-1. Select **Create**, then switch to your newly created tenant. Select the **Directory + subscription** filter at the top of the portal then select your tenant. You might have to refresh your browser to see the new tenant.
-
-    ![Switch to your new tenant](../media/5-switch-tenant.png)
+1. Select **Create**. In the confirmation dialog select the new directory.
 
 ## Register your application
 
