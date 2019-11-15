@@ -14,7 +14,7 @@ summary: Learn how to architect API integration in Azure, and provide secure, sc
 prerequisites: |
   - Familiarity with REST-based APIs
   - Familiarity with C#
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/architect-api-integration.svg
 levels:
 - intermediate
 roles:

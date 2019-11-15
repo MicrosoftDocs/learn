@@ -5,11 +5,10 @@ metadata:
   title: Query data in an Azure Search index
   description: Write simple search queries in the Azure Search explorer, then append extra parameters to manipulate those results
   ms.date: 06/13/2019
-  author: andrewjbyrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/6-query-data-in-an-azure-search-index.md)]

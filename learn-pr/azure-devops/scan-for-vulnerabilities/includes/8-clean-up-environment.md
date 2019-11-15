@@ -7,7 +7,7 @@ You're all done with the tasks for this module. Here, you move the work item to 
 
 Here, you move the work item you assigned to yourself earlier in this module, **Check code for vulnerabilities**, to the **Done** column.
 
-In practice, the definition of "Done" often means working software in the hands of your users. For learning purposes, mark this work as complete because you can scan your code for potential vulnerabilities in your build pipeline.
+In practice, the definition of "Done" often means putting working software into the hands of your users. For learning purposes, mark this work as complete because you can scan your code for potential vulnerabilities in your build pipeline.
 
 At the end of each sprint, or work iteration, you and your team might hold a retrospective meeting, where you share the work you completed, what went well in the sprint, and what could be improved.
 
@@ -19,9 +19,6 @@ To complete the work item:
     ![Azure Boards showing the card in the Done column](../media/8-azure-boards-wi4-done.png)
 
 ## Disable the pipeline or delete your project
-
-> [!IMPORTANT]
-> You can skip this part if you plan to continue to the next module using the same Azure DevOps project.
 
 Each module in this learning path provides a template you can run to create a clean environment for the duration of the module.
 

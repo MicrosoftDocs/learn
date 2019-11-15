@@ -1,10 +1,10 @@
-In this part, you see your deployment slots in action. Here, you make a few visual changes to the website. You do so by changing the background color and by changing the text on the hero banner at the top of the homepage. You then push your change to GitHub, watch the pipeline run, and verify the change.
+In this part, you see your deployment slots in action. Here, you make a few visual changes to the website. You do this by changing the background color and by changing the text on the hero banner at the top of the home page. You then push your change to GitHub, watch the pipeline run, and verify the change.
 
 To further practice the process, you then revert the changes you made and watch the pipeline run as a way of *rolling forward*.
 
 ## Change the text on the hero banner
 
-Here, you change the text on the hero banner so you can visually see the change when you deploy the change to App Service.
+Here, you change the text on the hero banner. You'll see the change when you deploy to App Service.
 
 1. In Visual Studio Code, open *Index.cshtml* in the *Tailspin.SpaceGame.Web/Views/Home* directory.
 1. Look for this text near the top of the page:
@@ -16,7 +16,7 @@ Here, you change the text on the hero banner so you can visually see the change 
     > [!TIP]
     > Visual Studio Code also provides an easy way to search for text in files. To access the search pane, select the magnifying glass icon in the side pane.
 
-1. Replace the text in the previous step with the following, and then save the file:
+1. Replace the text in the previous step with this new text and then save the file:
 
     ```html
     <p>Welcome to the official Space Game site!</p>
@@ -24,7 +24,7 @@ Here, you change the text on the hero banner so you can visually see the change 
 
 ## Change the background color
 
-Here, you change the background color of the hero banner from gray to green. This can also help you visualize the change.
+Here, you change the background color of the hero banner from gray to green. 
 
 1. In Visual Studio Code, open *site.scss* under the *Tailspin.SpaceGame.Web/wwwroot/css* directory.
 
@@ -54,7 +54,7 @@ For brevity, here you commit the changes to your branch, push your branch to Git
     ```
 
 1. From Azure Pipelines, trace the build through each of the steps.
-1. Navigate to the URL that corresponds to the *production* slot for your _Staging_ environment. This is the default slot you set up initially when you set up the pipeline earlier.
+1. Navigate to the URL that corresponds to the *production* slot for your _Staging_ environment. This is the default slot you configured when you set up the pipeline earlier.
 
     You see the website deployed with the color and text changes.
 
@@ -72,7 +72,7 @@ For brevity, here you commit the changes to your branch, push your branch to Git
 
 Let's say that you deployed a change that you want to revert. At this point, you could roll back the change by swapping the *production* and *swap* slots again (for example, you can swap slots manually through the Azure portal), or you could roll forward by pushing another change through the pipeline.
 
-Here, you revert your latest code changes and push another change through the pipeline. To do so, you use the `git revert` command. With Git, you seldom remove commits from a file's history. Unlike the "undo" operation in a text editor, `git revert` creates a new commit that's essentially the opposite of the specified set of commits. To see this, you also run the `git log` command to trace your commit history during the revert process.
+That's what you'll do here. You'll revert your latest code changes and push another change through the pipeline. To do so, you use the `git revert` command. With Git, you seldom remove commits from a file's history. Unlike the "undo" operation in a text editor, `git revert` creates a new commit that's essentially the opposite of the specified set of commits. To see this, you also run the `git log` command to trace your commit history during the revert process.
 
 1. In your terminal, run the following `git log` command to view your commit history.
 
@@ -142,12 +142,12 @@ Great work! The team now has a way to automate the releases and they can get new
 
 The team gathers to demo the pipeline. This time, Tim pushes a change through the pipeline while everyone else watches. But not everyone's convinced.
 
-**Andy:** It's great seeing deployment slots at work, but I don't get it. The _Staging_ environment is only for our team and management. How do we benefit from zero-downtime deployments here?
+**Andy:** It's great seeing deployment slots at work, but I don't get it, since _Staging_ is only for our team and management. How do we benefit from zero-downtime deployments here?
 
-**Tim:** Indeed, we won't see much benefit here, in the _Staging_ environment. But imagine when we apply blue-green deployments to our _Production_ environment. We'll still have the manual approval from management before we promote to _Production_. But when we do release new features, the swap process will make the rollout nearly instantaneous. It'll be seamless to our users.
+**Tim:** Indeed, we won't see much benefit right now. But imagine when we apply blue-green deployments to a _Production_ stage. We'll still have the manual approval from management before we promote to _Production_. But when we do release new features, the swap process will make the rollout nearly instantaneous. It'll be seamless to our users.
 
 **Andy:** OK, I think I understand now. I like this improvement. This was easy to set up, and it'll benefit our users. Everyone wins.
 
-**Amita:** Speaking of improvements, why don't we revisit our value stream mapping exercise we performed a few weeks ago? I bet we can identify some real progress against how quickly we can release new features.
+**Amita:** Speaking of improvements, why don't we revisit our value stream mapping exercise we performed a few weeks ago? I bet we'll see some real progress in terms of how quickly we can release new features.
 
 **Mara:** Great, let's put that on the agenda for our next team meeting.

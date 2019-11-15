@@ -29,19 +29,13 @@ Complete validation of the device template will not be possible until you have s
 
 1. Clicking on any of the blue circles provides more location information.
 
-1. Investigate the map icons top-right of the screen. You can zoom in and out, rotate the map, show various backgrounds, and reset the map to the starting point. Open up the background options, and select _night_ view.
-
-    ![Screenshot showing the night-time map for the simulated device](../media/refrigerated-trucks-night.png)
-
-1. You are interested in the night view, or the dark gray-scale view, as there is greater contrast with the device icons (the circles). These dark views can be helpful when the map view shows state information for each device, which will be shown as different colored circles.
-
 ## Create an elementary dashboard
 
 In this final exercise for this unit, you create a dashboard to monitor a single device. Later on in this series of units, you are going to create a more specific dashboard for all devices. The two processes are similar, so the experience you gain here will be useful in creating any IoT dashboard.
 
 1. In the left-hand menu, open **Device Templates**, then select the **RefrigeratedTruck** template.
 
-1. Click on **Dashboard** (not the one in the left-hand menu, the one to the right of **Rules**), then select **New** top-right of the screen.
+1. Click on **Dashboard** (not the one in the left-hand menu, the one to the right of **Rules**).
 
 1. Select the **Map** from the range of **Library** options.
 

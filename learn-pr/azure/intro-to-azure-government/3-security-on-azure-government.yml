@@ -5,11 +5,10 @@ metadata:
   title: Security on Azure Government
   description: Learn about physical and digital security offered on Azure Government
   ms.date: 10/11/2018
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/3-security-on-azure-government.md)]

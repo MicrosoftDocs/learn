@@ -19,7 +19,18 @@ Examples of structured data include:
 
 ## Semi-structured data
 
-Semi-structured data is less organized than structured data, and is not stored in a relational format, as the fields do not neatly fit into tables, rows, and columns. Semi-structured data contains tags that make the organization and hierarchy of the data apparent. Semi-structured data is also referred to as non-relational or NoSQL data.
+Semi-structured data is less organized than structured data, and is not stored in a relational format, as the fields do not neatly fit into tables, rows, and columns. Semi-structured data contains tags that make the organization and hierarchy of the data apparent. Semi-structured data is also referred to as non-relational or NoSQL data. The data structure is defined by a *serialization language*.
+
+For software developers, data serialization languages are particularly important because they can be used to write data stored in memory to a file, sent to another system, parsed and read. The sender and receiver don’t need to know details about the other system, as long as the same serialization language is used, the data can be understood by both systems.
+
+Today, there are three common serialization languages you'll like encounter:
+
+**XML**, or *extensible markup language*, was one of the first languages to receive widespread support.  Parsers for it can be found for almost all popular development platforms. XML relies on tags surrounded by angle braces, as a result, the data is somewhat verbose and can be challenging to read or edit by hand.
+
+**JSON** – or *JavaScript Object Notation*, has a lightweight specification and relies on curly braces to indicate data structure. Compared to XML, it is less verbose and easier to read by humans. It is  frequently used today by REST services to return data.
+
+**YAML** – or *YAML Ain’t Markup Language*, is a relatively new language that’s growing quickly in popularity in part due to its human-friendliness. The data structure is defined by line separation and indentation, and reduces the dependency on structural characters like parentheses and brackets.
+
 
 #### What is NoSQL?
 

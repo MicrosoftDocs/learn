@@ -4,6 +4,8 @@ Recall that in [Scan code for vulnerabilities in your build pipeline](/learn/mod
 
 Let's check in with the team at their weekly meeting and see how things are progressing.
 
+## Weekly meeting
+
 **Andy**: Tim, before we start, how did your meeting go with the security consultant?
 
 **Tim**: I was nervous going into it, but it went really well considering the topic. What impressed him most was how easily we were able to produce such a thorough report. Although our source code is far from clean, we can identify potential security holes and prioritize the order in which we address them. Plus, we can identify issues before the code goes to QA or production.
@@ -36,10 +38,8 @@ Andy and Mara review the slides and investigate further. They find a few options
 
 ### Black Duck
 
-[Black Duck](https://www.blackducksoftware.com?azure-portal=true) by Synopsys scans your open-source dependencies against their own database. They keep that database up-to-date with the latest vulnerabilities and give you timely information on fixes, workarounds, and on the exploits. They cover over 80 programming languages, and get their information from many sources. 
+[Black Duck](https://www.blackducksoftware.com?azure-portal=true) by Synopsys scans your open-source dependencies against their own database. They keep that database up-to-date with the latest vulnerabilities and give you timely information on fixes, workarounds, and on the exploits. They cover over 80 programming languages, and get their information from many sources.
 
-Their [Azure Pipelines extension](https://marketplace.visualstudio.com/items?itemName=black-duck-software.detect-for-tfs&azure-portal=true) enables you to set policies that affect the build and send alerts.
- 
 ### GitLab
 
 [GitLab](https://about.gitlab.com?azure-portal=true) is a CI/CD pipeline tool that enables you to scan the dependencies in code that comes from GitLab repositories. It supports Javascript, Ruby, Python, PHP, and Java. 

@@ -5,9 +5,8 @@ metadata:
   description: Azure includes a variety of services for designing and deploying machine learning models. Learn how to leverage these services in your data analysis
   brand: azure
   ms.date: 03/15/2019
-  author: bcafferky
-  ms.author: brcaffer
-  #ms.learn-contact: smmark
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build AI solutions with Azure Machine Learning service

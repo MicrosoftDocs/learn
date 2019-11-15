@@ -5,11 +5,10 @@ metadata:
   title: What is Azure Search?
   description: Explore Azure Search, its concepts and how to create an Azure Search index
   ms.date: 06/13/2019
-  author: andrewjbyrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/2-what-is-azure-search.md)]

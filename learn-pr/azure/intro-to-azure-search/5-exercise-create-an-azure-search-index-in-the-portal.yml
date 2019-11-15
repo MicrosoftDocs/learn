@@ -5,11 +5,10 @@ metadata:
   title: Exercise - Create an Azure Search index in the Azure portal
   description: In this exercise, you'll load and index JSON data in the Azure Search service
   ms.date: 06/13/2019
-  author: andrewjbyrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 interactive: bash
 azureSandbox: true

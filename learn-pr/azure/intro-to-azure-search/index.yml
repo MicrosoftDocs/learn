@@ -4,11 +4,11 @@ metadata:
   title: Introduction to Azure Search
   description: Use Azure Search to make your data searchable.
   ms.date: 06/13/2019
-  author: andrewjbyrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: anbyrne
+  #ms.learn-contact: robmcm
 title: Introduction to Azure Search
 summary: Use Azure Search to make your data searchable.
 abstract: |

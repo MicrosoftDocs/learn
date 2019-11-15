@@ -1,16 +1,19 @@
 In this unit, you ensure that your Azure DevOps organization is set up to complete the rest of this module.
 
+To do this, you:
+
+> [!div class="checklist"]
+> * Set up an Azure DevOps project for this module.
+> * Move the work item for this module on Azure Boards to the **Doing** column.
+> * Make sure your project is set up locally so that you can push changes to the pipeline.
+
 The modules in this learning path form a progression in which you follow the Tailspin web team through their DevOps journey.
 
 This learning path also builds on the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path, where you've already set up your Azure DevOps organization and created a task backlog on Azure Boards by using the Basic process.
 
 ## Run the template
 
-At this point, you can follow either of two options:
-
-* If you've completed the previous modules and have the Tailspin project set up in Azure DevOps, continue with the Azure DevOps project that you created in the _Evolve your DevOps practices_ learning path.
-
-* If you haven't set up the project or if you want to repeat this module from a fresh environment, run a template that sets up everything for you in your Azure DevOps organization.
+Run a template that sets up everything for you in your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=implement-code-workflow&azure-portal=true)
@@ -67,3 +70,5 @@ To set up the work item:
     ![Azure Boards showing the card in the Doing column](../media/3-azure-boards-wi2-doing.png)
 
 At the end of this module, after you've completed the task, you'll move the card to the **Done** column.
+
+[!include[](../../shared/includes/build-local-setup.md)]
