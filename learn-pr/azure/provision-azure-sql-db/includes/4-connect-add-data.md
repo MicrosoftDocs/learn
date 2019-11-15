@@ -99,7 +99,7 @@ Here, you use the `az` utility to list your databases and show some information 
 
 Now that you understand a bit about your database, let's connect to it using `sqlcmd`, create a table that holds information about transportation drivers, and perform a few basic CRUD operations.
 
-Remember that CRUD stands for **create**, **read**, **update**, and **delete**. These terms refer to operations you perform on table data and are the four basic operations you need for your app. Now's a good time to verify you can perform each of them.
+Remember that CRUD stands for _Create_, _Read_, _Update_, and _Delete_. These terms refer to operations you perform on table data and are the four basic operations you need for your app. Now's a good time to verify you can perform each of them.
 
 1. Run this `az sql db show-connection-string` command to get the connection string to the **Logistics** database in a format that `sqlcmd` can use.
 
@@ -127,13 +127,15 @@ Remember that CRUD stands for **create**, **read**, **update**, and **delete**. 
     > You may see an error message that is similar to the following example:
     >
     > ```output
-    > Sqlcmd: Error: Microsoft ODBC Driver 17 for SQL Server : Cannot open server 'contoso' requested by the login.
+    > Sqlcmd: Error: Microsoft ODBC Driver 17 for SQL Server:
+    > Cannot open server 'contoso' requested by the login.
     > Client with IP address 'nnn.nnn.nnn.nnn' is not allowed to access the server.
-    > To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule on the master database to create a firewall rule for this IP address or address range.
+    > To enable access, use the Windows Azure Management Portal or run sp_set_firewall_rule
+    > on the master database to create a firewall rule for this IP address or address range.
     > It may take up to five minutes for this change to take effect.
     > ```
     >
-    > If this happens, you will need to add a firewall rule for your client. To do so, use the following steps:
+    > If this happens, you will need to add another firewall rule for your client. To do so, use the following steps:
     >
     > 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
     > 1. Click **SQL databases** in the left-hand pane, then click on the name of your database.
@@ -205,11 +207,16 @@ Remember that CRUD stands for **create**, **read**, **update**, and **delete**. 
     ```sql
     UPDATE Drivers SET OriginCity='Boston' WHERE DriverID=123;
     GO
+    ```
+
+1. Run the following T-SQL statements to list the `DriverID` and `OriginCity` columns again.
+
+    ```sql
     SELECT DriverID, OriginCity FROM Drivers;
     GO
     ```
 
-    You should see the following output. Notice how the `OriginCity` reflects the update to Boston.
+    You should now see the following output. Notice how the `OriginCity` reflects the update to Boston.
 
     ```output
     DriverID    OriginCity
@@ -252,4 +259,4 @@ Cloud Shell makes it easy to access and work with your Azure resources. Because 
 
 You gained some hands-on experience running Azure CLI commands to get information about your Azure SQL database. As a bonus, you practiced your T-SQL skills.
 
-Finally, let's wrap up and see how to tear down your database.
+In the next unit, we'll wrap up this module and discuss how to tear down your database.
