@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics
+hidden: true
 metadata:
   title: Analyze images in real-time with machine learning, Azure IoT Hub and Azure Stream Analytics
   description: Analyze streaming data with a machine learning model and visualize the output. 
