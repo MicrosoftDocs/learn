@@ -35,9 +35,10 @@ Identify the subtasks of *Store and share files in your application with Azure F
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
+| Explore File Share options | TODO | KC | 1 | Yes |
+| Moving data into Azure Files | TODO | Exercise | 1,2 | No, 1 |
+| Create Storage account and Azure Files | TODO | Exercise | 2 | Yes |
+| Securing access over SMB | TODO | Exercise | 3 | Yes |
 
 ## Outline the units
 
@@ -47,38 +48,67 @@ Identify the subtasks of *Store and share files in your application with Azure F
 
 1. **Plan your Azure Files deployment**
 
+    - What is Azure Files?
+        - Replace internal file shares and NAS devices
+        - Simplify cloud development
+        - Fully managed
+        - Resiliency
     - Choosing your data access method
-        - Direct cloud access - mounted SMB share
-        - Azure File Sync, checking compatibility and cloud tiering
-    - Choosing your share performance
+        - Is SMB and a REST API the only access you need? (Direct access is ok, Azure File Sync if you need FTPS, NFS etc)
+        - Where does your workload run? (Do you have on premises with poor internet connectivity, Azure File Sync, or is it running on Azure?)
+        - How much granularity do you need in your ACL? (Most granular supported by Azure File Sync)
+        - In our scenario Direct Access (Azure Files mapped over SMB) is the best option and will be used in the exercise
     - Choosing your redundancy option
+        - What kind of storage account do you need?
+        - LRS, ZRS, GRS, RA-GRS, GZRS, or RA-GZRS
+    - Choosing your data migration solution
+        - AzCopy
+        - Azure Storage Explorer
+        - Azure portal
+        - Azure Data Box
+        - In our scenario small files, low volumes will transfer with AzCopy in the exercise
 
     **Knowledge check**
 
-1. **Deploy Azure Files using direct cloud access**
+    1. Use a scenario and ask which is the best way to access Direct or through Azure File Sync.
+    1. Use a scenario and ask what level of redundancy is the best option.
+    1. Use a scenario and ask which is the best data transfer solution.
 
-    
+1. **Create Azure Files account and connect over SMB**
 
-1. **Exercise - deploy Azure Files using direct cloud access**
+    - Creating a storage account using Azure CLI
+        - What are the parameters?
+        - Which options should we use for our scenario
+    - Create a file share
+    - Create an SMB share
+        - Can't use Kerberos authentication, use the storage account key
+        - Persist credentials with cmdkey
 
-    List the steps which apply the learning content from previous unit:
+1. **Exercise - create Azure Files account and connect over SMB**
 
-    1. Step
-    1. Step
-    1. Step
+    1. Create a Windows 2019 Data Center VM
+    1. Create storage account
+    1. Create file share
+    1. Connect to VM, create mapped drive over SMB
 
-1. **Deploy Azure File Sync**
+1. **Secure access to files stored on Azure Files**
 
-    - Evaluate whether it is compatible with your system using the Azure File Sync (Evaluation cmdlet)
-    - 
+    - Secure access from on-premises
+        - Open port 445
+        - Remove SMB 1.0
+        - Limit access with firewall to public IP address ranges
+    - Enable Secure transfer required
+    - Enable Azure AD DS authentication
+        - Discuss exceptions
 
-1. **Exercise - deploy Azure File Sync**
+1. **Exercise - secure access to files stored on Azure Files**
 
-    List the steps which apply the learning content from previous unit:
-
-    1. Step
-    1. Step
-    1. Step
+    1. Enable secure transfer required
+    1. Add firewall rules to block IP address
+    1. Test trying to access, update rules
+    1. Use AzCopy to export local files (git clone) to file share
+    1. Change a file, create a snapshot on the portal
+    1. View the snapshot on the VM
 
 1. **Summary**
 
@@ -92,3 +122,4 @@ Identify the subtasks of *Store and share files in your application with Azure F
 Reference links: 
 - [Tutorial: Extend Windows file servers with Azure File Sync](https://docs.microsoft.com/en-us/azure/storage/files/storage-sync-files-extend-servers)
 - [Data access method](https://docs.microsoft.com/en-us/azure/storage/files/storage-files-planning#data-access-method)
+- [Quickstart: Create and manage Azure Files share with Windows virtual machines](https://docs.microsoft.com/en-gb/azure/storage/files/storage-files-quick-create-use-windows#create-a-share-snapshot)
