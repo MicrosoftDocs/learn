@@ -74,7 +74,7 @@ Identify the subtasks of *Store and share files in your application with Azure F
     1. Use a scenario and ask what level of redundancy is the best option.
     1. Use a scenario and ask which is the best data transfer solution.
 
-1. **Create Azure Files account and connect over SMB**
+1. **Create and connect to an Azure Files share**
 
     - Creating a storage account using Azure CLI
         - What are the parameters?
@@ -84,14 +84,14 @@ Identify the subtasks of *Store and share files in your application with Azure F
         - Can't use Kerberos authentication, use the storage account key
         - Persist credentials with cmdkey
 
-1. **Exercise - create Azure Files account and connect over SMB**
+1. **Exercise - Create and connect to an Azure Files share**
 
     1. Create a Windows 2019 Data Center VM
     1. Create storage account
     1. Create file share
     1. Connect to VM, create mapped drive over SMB
 
-1. **Secure access to files stored on Azure Files**
+1. **Secure access to files stored in Azure Files**
 
     - Secure access from on-premises
         - Open port 445
@@ -101,7 +101,7 @@ Identify the subtasks of *Store and share files in your application with Azure F
     - Enable Azure AD DS authentication
         - Discuss exceptions
 
-1. **Exercise - secure access to files stored on Azure Files**
+1. **Exercise - secure access to files stored in Azure Files**
 
     1. Enable secure transfer required
     1. Add firewall rules to block IP address
