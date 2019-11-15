@@ -20,7 +20,7 @@ For now, you need just one database. But a logical server enables you to add mor
 
 ## Choose performance: DTUs versus vCores
 
-Azure SQL Database has two purchasing models: DTU and vCore.
+Azure SQL Database has two purchasing models: _DTU_ and _vCore_.
 
 - **What are DTUs?**
 
