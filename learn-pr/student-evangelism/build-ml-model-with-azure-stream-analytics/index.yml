@@ -13,7 +13,7 @@ title: Analyze images in real time with machine learning, Azure IoT Hub, and Azu
 summary: Analyze streaming data with a machine learning model and visualize the output.
 abstract:  | 
   In this module, you will:
-  - Create an Azure Storage accoun, an IoT hub, and use a Node.js app to connect them to a simulated camera
+  - Create an Azure Storage account, an IoT hub, and use a Node.js app to connect them to a simulated camera
   - Use Azure Stream Analytics to run queries on live streams to analyze input and an Azure Function to return output
   - Use Azure Cognitive Services to train an image classification model and call the model from an app or service
   - Connect Power BI to an Azure SQL database and visualize data from the database
