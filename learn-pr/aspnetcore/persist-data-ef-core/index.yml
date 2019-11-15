@@ -25,14 +25,14 @@ levels:
 roles:
 - developer
 products:
-- azure
-- azure-monitor
-- azure-sql-database
 - dotnet
 - aspnet-core
 - dotnet-core
 - dotnet-standard
 - ef-core
+- azure
+- azure-monitor
+- azure-sql-database
 units:
 - learn.persist-data-ef-core.1-introduction
 - learn.persist-data-ef-core.2-setup-environment
