@@ -30,9 +30,9 @@ Azure AD B2C also supports industry standard OAuth 2.0 and OpenID Connect authen
 
 Use identity providers to let users sign in with their social identities. You can let your users sign in with social accounts like Microsoft, Facebook, Twitter, and LinkedIn.
 
-You'll need to choose the identity providers you want for your application. You can create your own identity provider, or you can choose from the list of providers. 
+You'll need to choose the identity providers you want for your application. You can create your own identity provider, or you can choose from the list of providers.
 
-![Identity providers](C:\Users\adnana\OneDrive - Agylia Group Ltd\In progress\learn-pr\good\enable-external-access-with-b2c\media\2-identity-providers.png)
+![Identity providers](../media/2-identity-providers.png)
 
 ### Customize your user interface
 
