@@ -16,7 +16,7 @@ If your user account has the User Administrator or Global Administrator role, yo
 
 ## Member users
 
-A member users account is a native member of the tenant that has a set of default permissions like being able to manage their profile information. When someone new joins your organization, they would typically have this type of account created for them.  
+A member user account is a native member of the tenant that has a set of default permissions like being able to manage their profile information. When someone new joins your organization, they would typically have this type of account created for them.  
 
 Anyone who isn't a guest user or isn't assigned an administrator role falls into this type. A member user is meant for users who are considered internal to an organization and are members of the directory. However, these users shouldn't be able to manage other users by, for example, creating and deleting users. Member users don't have the same restrictions that are typically placed on guest users.  
 

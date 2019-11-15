@@ -29,25 +29,29 @@ Create a new directory to hold all of the users you create in this exercise.
 
 You'll need to activate a free trial for Azure AD Premium to complete all the exercises in this module.
 
-1. Go to **Azure Active Directory** > **Get started**.
+1. In the directory you just created, select **Get started**.
 1. Under **Getting started with Azure AD**, select **Get a free trial for Azure AD Premium**.
 
     ![Screenshot that shows the link to create trial](../media/3-ad-get-started-get-trial.png)
 1. Under **Azure AD Premium 2**, select **Free trial** > **Activate**.
+1. In the left-hand pane, click **Overview**. 
+1. Refresh the browser until you see **Azure AD Premium P2** under the directory name.
+
+    ![Screenshot that shows trial enabled](../media/3-azure-ad-premium-2.png)
 
 ## Add a new user
 
 1. First, let's make sure you're logged in as an administrator for the organization you created earlier.
 
-   In the Active AD tenant you created, under **Manage**, select **Roles and administrators**.  Your role should be set as Global Administrator.
+   In the Azure AD directory you created, under **Manage**, select **Roles and administrators**.  Your role should be set as Global Administrator.
 
       ![Screenshot that shows your role in Azure AD](../media/3-check-role.png)
    
    If it's not, on the top right of the Azure portal select your profile and **Switch directory**. Under **All directories**, select the directory you created. 
 
-1. Now let's create a new user.
+1. Now let's create a user account.
 
-   In the Active AD tenant you created, under **Manage**, select **Users   >  New User**.
+   In the Azure AD directory you created, under **Manage**, select **Users   >  New User**.
 1. The **User** pane now  appears.   Provide the following values:
 
     - Name:  **Chris Green**
@@ -62,9 +66,9 @@ A new user has been created.
 
 You can delete users after they've been created.
 
-1. In the Active AD tenant, under **Manage**, select **Users**.
+1. In your Azure AD directory, under **Manage**, select **Users**.
 1. Select Chris Green from the list.
-1. Select **Delete user**.
+1. Select **Delete user**. If you don't see that option, select **More**.
 1. You'll be asked to confirm your deletion. Select **Yes**.
 
 This action removes the user.
@@ -73,7 +77,7 @@ This action removes the user.
 
 You can restore deleted users. View the list of the deleted users and then restore one.
 
-1. In the Active AD tenant, under **Manage**, select **Users** > **Deleted users**.
+1. In your Azure AD directory, under **Manage**, select **Users** > **Deleted users**.
 1. You now see all of the users that were deleted within the last 30 days.
 1. Select **Chris Green** and **Restore user**.
 1. Select **Yes** to confirm.

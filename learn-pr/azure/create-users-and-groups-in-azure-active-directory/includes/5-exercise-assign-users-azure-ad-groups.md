@@ -4,7 +4,7 @@ In this exercise, you'll create an Azure Active Directory (Azure AD) group to ma
 ## Add a new group
 
 1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>)
-1. Select **Azure Active Directory  > Groups  >  New Groups**.  
+1. Select **Azure Active Directory**  > **Groups**  >  **New Group**.  
 1. Enter the following information:
     
    - **Group type**: _Security_

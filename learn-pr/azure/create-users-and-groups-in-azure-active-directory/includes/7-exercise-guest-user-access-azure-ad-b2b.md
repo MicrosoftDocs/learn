@@ -11,6 +11,7 @@ After adding a guest user to the directory, send them a direct link to a shared 
 1. Select **Azure Active Directory  > Users  > New guest user**.
 
    ![Screenshot that shows the new guest user button](../media/7-new-guest-user.png)
+1. **Invite user** should be selected.
 1. Enter a name and an email address that you have access to.
 
 1. Select **Invite**.  An invitation is sent to the email address you  provided for the guest user.
@@ -21,7 +22,7 @@ You've added a guest user to the directory.
 
 ## Add guest users to a group
 
-1. Select **Azure Active Directory  >  Groups**, then select the **Developers group** in the list of groups.
+1. In your Azure AD directory, select **Groups** and then select the **Developers group** in the list of groups.
 1. Select **Members >  Add members**.
 1. Search for the guest account you added to the directory.
 1. Select the account and click **Select**.  
@@ -31,7 +32,7 @@ You've added a guest user to a group.
 
 ## Add guest users to an application
 
-1. Select **Azure Active Directory**  > **Enterprise Applications** > **All Applications**.  
+1. In your Azure AD directory, select **Enterprise Applications** > **All Applications**.  
 1. Select **New Application**.
 
    ![Screenshot that shows the New application button](../media/7-enterprise-application.png)
@@ -62,7 +63,7 @@ You've added a guest user to an application.
 
  If the guest user didn't receive the first email invitation, you can resend an invitation email.
 
-1. Select **Azure Active Directory  > Users**.
+1. In your Azure AD directory, select **Users**.
 1. Select the user.
 1. Select **Resend invitation**.
 
