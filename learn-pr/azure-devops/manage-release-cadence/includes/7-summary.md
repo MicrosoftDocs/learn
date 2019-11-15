@@ -61,7 +61,15 @@ In this learning path, you accomplished a lot, including:
 * Running both functional and non-functional tests in the pipeline.
 * Implementing a blue-green deployment that updates the application with minimal downtime.
 
-You can apply what you've learned to the applications and services that you work on. You can also find more self-paced, hands-on learning around Azure DevOps at [Azure DevOps Labs](https://www.azuredevopslabs.com?azure-portal=true).
+You can apply what you've learned to the applications and services that you work on.
+
+## Continue the journey
+
+This learning path focused on deploying applications with Azure Pipelines. Although you can use the Azure portal, the Azure CLI, or Azure PowerShell to provision resources on Azure, how will you scale out your deployments to meet global demand?
+
+In [Provision infrastructure in Azure Pipelines](/learn/modules/provision-infrastructure-azure-pipelines/?azure-portal=true), you'll help the Tailspin team answer this question. There, you learn how _infrastructure as code_ enables you to describe and automatically provision the infrastructure you need for your application.
+
+For more self-paced, hands-on learning around Azure DevOps, also check out [Azure DevOps Labs](https://www.azuredevopslabs.com?azure-portal=true).
 
 ## Learn more
 

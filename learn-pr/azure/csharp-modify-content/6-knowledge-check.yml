@@ -1,0 +1,43 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-modify-content.knowledge-check
+title: Knowledge check
+metadata:
+  title: Check your knowledge
+  description: Review what you've learned
+  ms.date: 11/05/2019
+  author: bobtabor-msft
+  ms.author: rtabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 2
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following helper methods won't help you if you need to eliminate the char `-` from a string?"
+    choices:
+    - content: "IndexOfAny()"
+      isCorrect: true
+      explanation: "Correct!  Since we already know that we only need to eliminate the char `-` from a string, we should prefer using `IndexOf()` instead."
+    - content: "Remove()"
+      isCorrect: false
+      explanation: "Actually, the `Remove()` method could easily eliminate a char from a string."
+    - content: "IndexOf()"
+      isCorrect: false
+      explanation: "The `IndexOf()` could be used to find the position of the char `-` in a string.  You would then use `Replace()` to eliminate it."
+    - content: "Replace()"
+      isCorrect: false
+      explanation: "Actually, the `Replace()` method could easily eliminate a char from a string."
+  - content: "What is a constant variable?"
+    choices:
+    - content: "A magic string or number."
+      isCorrect: false
+      explanation: "A constant might be used to replace a magic string or number, but they aren't the same thing."
+    - content: "A variable whose name must match its value."
+      isCorrect: false
+      explanation: "A constant's value is not constrained by its name."
+    - content: "A variable that can only be used in the scope of the method."
+      isCorrect: false
+      explanation: "While a constant's scope is the same as any local variable, that isn't the purpose of a constant."
+    - content: "A value that once initialized can never be changed."
+      isCorrect: true
+      explanation: "Correct!"

@@ -34,7 +34,7 @@ In this exercise, we will enable the registry admin account and use it to deploy
 
 ## Deploy a container with Azure CLI
 
-1. Execute the following `az container create` command to deploy a container instance. Replace `<username>` and `<password>` in the following command with your registry's admin username and password.
+1. Execute the following `az container create` command to deploy a container instance. Replace `<username>`,`<password>` in the following command with your registry's admin username and password. Replace `<location>` with the location value returned when you created the container registry earlier.
 
     ```azurecli
     az container create \
@@ -43,7 +43,7 @@ In this exercise, we will enable the registry admin account and use it to deploy
         --image $ACR_NAME.azurecr.io/helloacrtasks:v1 \
         --registry-login-server $ACR_NAME.azurecr.io \
         --ip-address Public \
-        --location eastus \
+        --location <location> \
         --registry-username [username] \
         --registry-password [password]
     ```

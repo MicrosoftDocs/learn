@@ -51,6 +51,8 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/learn/modules/create-release-pipeline/8-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
 
+[!include[](../../shared/includes/project-visibility.md)]
+
 ## Prepare Visual Studio Code
 
 First you'll set up Visual Studio Code so you can build the website locally and work with source files.
@@ -92,7 +94,7 @@ At a minimum, you'll need to complete the following steps. Run these commands fr
 
 ## Set up your project in Visual Studio Code
 
-In the [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true) learning path, you forked and then cloned a Git repository that contains the source code for the _Space Game_ website. Your fork was connected to your Azure DevOps projects so that the build runs when you push changes to GitHub.
+In the [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true) learning path, you forked and then cloned a Git repository that contains the source code for the _Space Game_ website. Your fork was connected to your projects in Azure DevOps so that the build runs when you push changes to GitHub.
 
 In this learning path, we switch to a different Git repository, [mslearn-tailspin-spacegame-web-deploy](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy?azure-portal=true). When you ran the template to set up your Azure DevOps project, the process forked the repository automatically for you.
 

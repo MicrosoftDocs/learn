@@ -7,11 +7,13 @@ To do this, you:
 > * Move the work item for this module on Azure Boards to the **Doing** column.
 > * Make sure your project is set up locally so that you can push changes to the pipeline.
 
-The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey.
+## Get the Azure DevOps project
 
-This learning path also builds on the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path. There, you set up your Azure DevOps organization and create a task backlog on Azure Boards by using the Basic process.
+Here, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You do this by running a template that creates a project for you in Azure DevOps.
 
-## Run the template
+The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey. For learning purposes, each module has an associated Azure DevOps project.
+
+### Run the template
 
 Run a template that sets up everything for you in your Azure DevOps organization.
 
@@ -35,7 +37,9 @@ From the Azure DevOps Demo Generator site, take these steps to run the template.
 
     > [!IMPORTANT]
     > The [Clean up your Azure DevOps environment](/learn/modules/scan-open-source/5-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
-    
+
+[!include[](../../shared/includes/project-visibility.md)]
+
 ## Move the work item to Doing
 
 In this part, you'll assign a work item to yourself that relates to this module on Azure Boards. You'll also move the work item to the **Doing** state. In practice, you and your team would assign work items at the start of each Sprint, or work iteration.
