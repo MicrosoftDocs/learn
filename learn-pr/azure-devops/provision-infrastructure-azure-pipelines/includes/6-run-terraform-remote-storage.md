@@ -38,7 +38,7 @@ Similar to what you did earlier, here you create a directory to hold your Terraf
 
 ## Download the Terraform plan
 
-Here, you download a more complete Terraform plan to a file named *main.tf*.
+Download a more complete Terraform plan to a file named *main.tf*.
 
 1. Run this `curl` command to download the Terraform plan from GitHub.
 
@@ -109,7 +109,7 @@ For learning purposes, here you generate a random number that you'll include in 
 
 ## Create a Blob storage account
 
-Here, you create a Blob storage account to hold your state file. To do so, you:
+Create a Blob storage account to hold your state file. To do so, you:
 
 1. Create a resource group to hold your storage account.
 1. Create a storage account.
@@ -256,7 +256,7 @@ To create the *backend.tfvars* file:
 
 ## Run Terraform to use the remote state file
 
-Here, you run Terraform to apply your configuration. This time, you use a remote state file that's maintained in Blob storage.
+Run Terraform to apply your configuration. This time, you use a remote state file that's maintained in Blob storage.
 
 1. Run the following `terraform init` command to initialize Terraform.
 

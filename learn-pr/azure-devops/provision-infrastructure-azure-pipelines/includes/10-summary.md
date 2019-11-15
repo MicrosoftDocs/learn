@@ -1,22 +1,22 @@
-Nice work! In this module, you learned how infrastructure as code enables you to describe the infrastructure you need for your application. You also learned the difference between declarative and imperative code, as well as a few tools you can use to automate your deployments.
+Nice work! In this module, you learned how infrastructure as code enables you to describe the infrastructure that you need for your application. You also learned the difference between declarative and imperative code, as well as a few tools that you can use to automate your deployments.
 
-Terraform is just one tool you can use to automate your deployments. Terraform operations are idempotent, which means that you can run Terraform as many times as you'd like without affecting infrastructure resources that haven't changed.
+Terraform is just one tool for automating your deployments. Terraform operations are idempotent. That means you can run Terraform as many times as you want without affecting infrastructure resources that haven't changed.
 
-You can run Terraform locally or from Cloud Shell to experiment and incrementally build out your infrastructure configuration. After you have the configuration you need, you can integrate automated provisioning in the pipeline. Maintaining your infrastructure code along with your application code provides you with everything you need to build, test, and deploy your application as a unit.
+You can run Terraform locally or from Azure Cloud Shell to experiment and incrementally build out your infrastructure configuration. After you have the configuration, you can integrate automated provisioning in the pipeline. Maintaining your infrastructure code along with your application code gives you everything that you need to build, test, and deploy your application as a unit.
 
 ## Challenge
 
-If you're looking for a challenge, see if you can modify the pipeline to provision infrastructure for all three deployment stages, _Dev_, _Test_, and _Staging_, just like the release pipeline you set up in the [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true) module.
+If you're looking for a challenge, see if you can modify the pipeline to provision infrastructure for all three deployment stages: _dev_, _test_, and _staging_. See if you can modify it just like the release pipeline that you set up in the [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true) module.
 
-One approach might be to modify your Terraform plan to provision all three App Service environments. You can add a stage that runs after the _Build_ stage that provisions all three App Service environments before you run your deployment stages. You can use the [for_each](https://www.terraform.io/docs/configuration/resources.html#for_each-multiple-resource-instances-defined-by-a-map-or-set-of-strings&azure-portal=true) syntax to provision all three App Service environments from a single block of code.
+One approach might be to modify your Terraform plan to provision all three App Service environments. You can add a stage that runs after the _build_ stage and that provisions all three App Service environments before you run your deployment stages. You can use the [for_each](https://www.terraform.io/docs/configuration/resources.html#for_each-multiple-resource-instances-defined-by-a-map-or-set-of-strings&azure-portal=true) syntax to provision all three App Service environments from a single block of code.
 
-Another approach might be to use the same pattern you used in this module. Here, you would specify a Terraform variable that defines the App Service name for the corresponding environment: **dev**, **test**, or **staging**. You'll also need a separate state file to manage each deployment. For example, you might name the state file for the _Dev_ stage *terraform-dev.tfstate* instead of just *terraform.tfstate*.
+Another approach might be to use the same pattern that you used in this module. Here, you can specify a Terraform variable that defines the App Service name for the corresponding environment: *dev*, *test*, or *staging*. You'll also need a separate state file to manage each deployment. For example, you might name the state file for the dev stage *terraform-dev.tfstate* instead of just *terraform.tfstate*.
 
-As a bonus, you can map each App Service instance to an App Service plan that more closely matches your infrastructure requirements. For example, you might use the **B1 Basic** plan, which is intended for apps that have lower traffic requirements, for your **dev** and **test** environments. Then, you might use the **Standard** or **Premium** plan, which are for production workloads, for your **staging** environment because this environment more closely matches your production environment.
+As a bonus, you can map each App Service instance to an App Service plan that more closely matches your infrastructure requirements. For example, you might use the B1 Basic plan for your dev and test environments. The the B1 Basic plan is intended for apps that have lower traffic requirements. Then, you might use the Standard or Premium plan for your staging environment. The Standard and Premium palns are for production workloads, and the staging environment more closely matches your production environment.
 
 ## Learn more
 
-In this module, you saw a few tools you can use to automate your deployments. Here's more information about each option:
+In this module, you saw a few tools that you can use to automate your deployments. Here's more information about each option.
 
 ### Azure CLI
 

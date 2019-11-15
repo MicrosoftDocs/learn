@@ -181,7 +181,7 @@ Here, you have full control over the order of each step and how to run each comm
 
 [!code-terraform[](code/2-main-1.tf)]
 
-This code is written in HCL, a declarative language that supports Terraform. Here, you have less control over the order of the steps or how Terraform accomplishes each step. The advantage is that you need only to specify the infrastructure that you want. Terraform figures out the details.
+This code is written in Hashicorp Configuration Language (HCL), a declarative language that supports Terraform. Here, you have less control over the order of the steps or how Terraform accomplishes each step. The advantage is that you need only to specify the infrastructure that you want. Terraform figures out the details.
 
 ### Which approach is better?
 
@@ -333,7 +333,7 @@ Terraform generates an execution plan that describes what it will do to reach th
 
 In addition to Azure, Terraform supports other public clouds and private cloud frameworks.
 
-You typically write Terraform code in a language called Hashicorp Configuration Language (HCL). But you can also express your Terraform configuration by using JSON. HCL and JSON are forms of declarative automation. Here's a basic example written in HCL that defines an Azure resource group named "my-rg" in the "westus" location:
+You typically write Terraform code in HCL. But you can also express your Terraform configuration by using JSON. HCL and JSON are forms of declarative automation. Here's a basic example written in HCL that defines an Azure resource group named "my-rg" in the "westus" location:
 
 ```terraform
 resource "azurerm_resource_group" "my" {

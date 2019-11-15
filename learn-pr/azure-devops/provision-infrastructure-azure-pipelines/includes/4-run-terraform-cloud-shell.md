@@ -14,7 +14,7 @@ During the process, you:
 
 ## Open Cloud Shell through the Azure portal
 
-Here, you open Azure Cloud Shell through the Azure portal so that you can work with Terraform code and run your configuration. We use Cloud Shell here because it comes with Terraform already set up for you.
+Open Azure Cloud Shell through the Azure portal so that you can work with Terraform code and run your configuration. We use Cloud Shell here because it comes with Terraform already set up for you.
 
 You can also install and run Terraform locally from a terminal or a PowerShell window. Later, you'll run Terraform from Azure Pipelines.
 
@@ -28,7 +28,7 @@ You can also install and run Terraform locally from a terminal or a PowerShell w
 
 ## Create a working directory
 
-Here, you create a directory to hold your Terraform plan. Doing so helps keep your Terraform code separate from your other work.
+Create a directory to hold your Terraform plan. Doing so helps keep your Terraform code separate from your other work.
 
 1. In Cloud Shell, create a directory named *mslearn-terraform-local-state*.
 
@@ -44,7 +44,7 @@ Here, you create a directory to hold your Terraform plan. Doing so helps keep yo
 
 ## Add the Terraform plan
 
-Here, you create a basic Terraform plan in a file named *main.tf*.
+Create a basic Terraform plan in a file named *main.tf*.
 
 1. From the *mslearn-terraform-local-state* directory, open the editor.
 
@@ -119,7 +119,7 @@ The `azurerm_app_service` resource defines the App Service instance.
 
 Like the `azurerm_app_service_plan` resource, this resource reads the location and parent resource group name from the `azurerm_resource_group` resource named "my." It reads the App Service plan ID from the `azurerm_app_service_plan` resource.
 
-Azure uses the App Service name to form the host hame. To specify the App Service name, the plan combines (or _interpolates_) the prefix variable and the variable that holds the name of the App Service instance.
+Azure uses the App Service name to form the host name. To specify the App Service name, the plan combines (or _interpolates_) the prefix variable and the variable that holds the name of the App Service instance.
 
 ### The host name output value
 
@@ -168,7 +168,7 @@ To make the commands easier to run, start by selecting a default region. After y
 
 ## Create the variables file
 
-Here, you create the Terraform variables file, *terraform.tfvars*. In the file, you add the Azure region that you just chose.
+Create the Terraform variables file, *terraform.tfvars*. In the file, you add the Azure region that you just chose.
 
 This file can also contain values for your other variables. But for learning purposes, here you only need to specify the region.
 
@@ -192,7 +192,7 @@ This file can also contain values for your other variables. But for learning pur
 
 ## Provision your infrastructure
 
-Here, you initialize Terraform, examine the proposed execution plan, and then apply the plan.
+Initialize Terraform, examine the proposed execution plan, and then apply the plan.
 
 1. Run `terraform init` to initialize your Terraform environment.
 
@@ -269,7 +269,7 @@ After the plan finishes, Terraform writes the output value that contains the hos
 
     Later, you'll deploy the _Space Game_ website to App Service from Azure Pipelines.
 
-1. Run the following `az webapp list` command. This command verfies that App Service is running and that the correct parent resource group contains it.
+1. Run the following `az webapp list` command. This command verifies that App Service is running and that the correct parent resource group contains it.
 
     ```azurecli
     az webapp list --resource-group my-rg --output table
