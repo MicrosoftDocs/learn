@@ -17,7 +17,7 @@ To add the variables:
 1. In Azure DevOps, go to your **Space Game - web - Terraform** project.
 1. Under **Pipelines**, select **Library**.
 
-    ![Azure Pipelines with the Library menu option](../../create-release-pipeline/media/5-pipelines-library.png)
+    ![Azure Pipelines showing the Library menu option](../../create-release-pipeline/media/5-pipelines-library.png)
 1. Select **+ Variable group**.
 1. Under **Properties**, enter **Release** for the variable group name.
 1. Under **Variables**, select **+ Add**.
@@ -62,7 +62,7 @@ Modify your pipeline configuration by adding a job that runs Terraform to provis
         * Adds the service principal credentials to the script's environment so that Terraform can access them securely.
     * The **Deploy** deployment job reads the ``WebAppNameDev`` variable from the **RunTerraform** task in the provisioning job.
 
-1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub.
+1. From the integrated terminal, add *azure-pipelines.yml* to the index, commit the change, and push the change to GitHub.
 
     > [!TIP]
     > Remember to save *azure-pipelines.yml* before running these Git commands.
@@ -88,7 +88,7 @@ Here, you see your website to verify the deployment.
 1. Select **tailspin-space-game-rg**.
 1. From the list of resources, select your App Service instance.
 
-    The name of your App Service instance begins with **tailspin-space-game-web-dev-**, followed by a number. This is the App Service instance that Terraform provisioned for you in the pipeline.
+    The name of your App Service instance begins with **tailspin-space-game-web-dev-**, followed by a number. This is the instance that Terraform provisioned for you in the pipeline.
 1. From the top of the page, select the URL to go to your website.
 
     You see the _Space Game_ website deployed to App Service.
@@ -102,7 +102,7 @@ Here, you see your website to verify the deployment.
 
 ## Repair your infrastructure
 
-Recall that Terraform operations are idempotent. This means that Terraform applies configuration changes only when the configuration defined in your plan differs from the running environment. This behavior enables you to repair your infrastructure if a piece is removed or changed by an another process.
+Recall that Terraform operations are idempotent. This means that Terraform applies configuration changes only when the configuration defined in your plan differs from the running environment. This behavior enables you to repair your infrastructure if a piece is removed or changed by another process.
 
 To see this repair process in action, here you delete your App Service instance from the Azure portal. You then manually trigger the pipeline to run.
 
@@ -114,7 +114,7 @@ To see this repair process in action, here you delete your App Service instance 
 1. From the top of the page, select your resource group, **tailspin-space-game-rg**.
 1. Wait for the App Service instance to be removed from the list.
 
-    You can periodically select the **Refresh** button to update status. Note that your App Service plan is not deleted. Only your web app is deleted.
+    You can periodically select the **Refresh** button to update the status. Note that your App Service plan is not deleted. Only your web app is deleted.
 1. As an optional step, refresh the web browser tab that shows the _Space Game_ website.
 
     You see that the website is no longer available.
@@ -129,11 +129,11 @@ To see this repair process in action, here you delete your App Service instance 
     You see that the deployment finished successfully.
 1. Refresh the web browser tab that shows the _Space Game_ website.
 
-    You see the _Space Game_ website is redeployed to App Service.
+    You see that the _Space Game_ website is redeployed to App Service.
 
     ![Space Game in App Service](../media/8-space-game-home-page.png)
 
-    Because the state file holds your random number, Terraform is able to bring up a new App Service instance that has the same name.
+    Because the state file holds your random number, Terraform can bring up a new App Service instance that has the same name.
 
 ## The result
 

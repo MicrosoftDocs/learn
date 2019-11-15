@@ -71,14 +71,14 @@ To set up the work item:
 
 1. From Azure DevOps, go to **Boards** and then select **Boards** from the menu.
 
-    ![Azure DevOps with the Boards menu](../../shared/media/azure-devops-boards-menu.png)
+    ![Azure DevOps showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
 
 1. From the **Scale out the website** work item, select the arrow at the bottom of the card. Then assign the work item to yourself.
 
     ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
 1. Move the work item from the **To Do** column to the **Doing** column.
 
-    ![Azure Boards with the card in the Doing column](../media/7-azure-boards-wi1-doing.png)
+    ![Azure Boards showing the card in the Doing column](../media/7-azure-boards-wi1-doing.png)
 
 At the end of this module, you move the card to the **Done** column after you've completed the task.
 
