@@ -2,7 +2,7 @@
 uid: learn.predict-costs-and-optimize-spending
 metadata:
   title: Predict costs and optimize spending for Azure
-  description: Discover how to use Azure pricing calculator, Azure Cost Management, and Azure Advisor to predict and manage your cloud expenses.
+  description: Discover how to use Azure pricing calculator, Azure Cost Management, and Azure Advisor to predict and manage your cloud expenses. 
   ms.date: 12/28/2018
   author: patridge
   ms.author: adpatrid
