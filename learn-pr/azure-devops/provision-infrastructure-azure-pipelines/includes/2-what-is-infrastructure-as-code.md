@@ -150,7 +150,7 @@ But when you run the script for the second time, you get an error message:
 mkdir: /var/log/my-service: File exists
 ```
 
-Because the `mkdir` command failed, the script produces a nonzero status code, which can indicate a failure to another process.
+Because the `mkdir` command failed, the script produces a nonzero status code. This status code can indicate a failure to another process.
 
 When an operation isn't idempotent, you can use a condition to make it behave like one. Here's an example that uses **if..then** syntax to create the directory, but only if that directory does not exist:
 

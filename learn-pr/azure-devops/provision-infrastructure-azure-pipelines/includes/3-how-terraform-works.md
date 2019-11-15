@@ -143,7 +143,7 @@ The `terraform plan` command produces an execution plan that's based on your con
 
 This command is useful for developing your Terraform configuration because it helps you visualize and understand the effect that your plan will have.
 
-The output resembles how many file difference tools work. You see a plus **+** symbol next to resources that Terraform will create. You see a minus **-** symbol next to resources that Terraform will destroy. The output also shows each attribute that's applied to each resource, such as the resource group's name or the storage account tier.
+The output resembles how many file difference tools work. You see a plus (**+**) symbol next to resources that Terraform will create. You see a minus (**-**) symbol next to resources that Terraform will destroy. The output also shows each attribute that's applied to each resource, such as the resource group's name or the storage account tier.
 
 You typically omit this command when running Terraform in a CI/CD pipeline. By the time your plan reaches the pipeline, your plan should express your infrastructure requirements and you should understand the effect that your plan will have.
 

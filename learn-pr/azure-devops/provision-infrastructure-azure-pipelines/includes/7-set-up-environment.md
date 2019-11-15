@@ -32,7 +32,7 @@ Run a template that sets up everything for you in your Azure DevOps organization
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=provision-infrastructure-azure-pipelines&azure-portal=true)
 
-From the Azure DevOps Demo Generator site, perform these steps to run the template.
+From the Azure DevOps Demo Generator site, perform these steps to run the template:
 
 1. Select **Sign In** and accept the usage terms.
 1. From the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as **Space Game - web - Terraform**.
@@ -218,7 +218,7 @@ You see the directory and file tree in the file explorer.
 Fetch and check out a Git branch that contains starter code for this module.
 
 1. From Visual Studio Code, open the integrated terminal.
-1. Run the following `git fetch` and `git checkout` commands. These commands download a branch named `terraform` from the Microsoft's repository and switch to that branch.
+1. Run the following `git fetch` and `git checkout` commands. These commands download a branch named `terraform` from Microsoft's repository and switch to that branch.
 
     ```bash
     git fetch upstream terraform

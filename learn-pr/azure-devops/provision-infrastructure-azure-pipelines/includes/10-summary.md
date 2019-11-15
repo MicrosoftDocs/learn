@@ -12,7 +12,7 @@ One approach might be to modify your Terraform plan to provision all three App S
 
 Another approach might be to use the same pattern that you used in this module. Here, you can specify a Terraform variable that defines the App Service name for the corresponding environment: *dev*, *test*, or *staging*. You'll also need a separate state file to manage each deployment. For example, you might name the state file for the *dev* stage *terraform-dev.tfstate* instead of just *terraform.tfstate*.
 
-As a bonus, you can map each App Service instance to an App Service plan that more closely matches your infrastructure requirements. For example, you might use the B1 Basic plan for your *dev* and *test* environments. The the B1 Basic plan is intended for apps that have lower traffic requirements. Then, you might use the Standard or Premium plan for your *staging* environment. The Standard and Premium palns are for production workloads, and the *staging* environment more closely matches your production environment.
+As a bonus, you can map each App Service instance to an App Service plan that more closely matches your infrastructure requirements. For example, you might use the B1 Basic plan for your *dev* and *test* environments. The the B1 Basic plan is intended for apps that have lower traffic requirements. Then, you might use the Standard or Premium plan for your *staging* environment. The Standard and Premium plans are for production workloads, and the *staging* environment more closely matches your production environment.
 
 ## Learn more
 

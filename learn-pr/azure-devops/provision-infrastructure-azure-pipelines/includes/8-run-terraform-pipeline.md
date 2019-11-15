@@ -56,7 +56,7 @@ Modify your pipeline configuration by adding a job that runs Terraform to provis
     * The _dev_ stage includes a new job, **Provision**, that runs before the deployment job.
     * The **Provision** job:
         * Writes *terraform.tfvars* and *backend.tfvars*, just as you did from Cloud Shell.
-        * Uses the `-input=false` argument to close Terraform with an error status if there are any variables whose values could not be set.
+        * Uses the `-input=false` argument to close Terraform with an error status if the values for any variables could not be set.
         * Initializes Terraform and provisions your Azure infrastructure.
         * Uses the `##vso[]` syntax to write the `WebAppNameDev` variable to the pipeline.
         * Adds the service principal credentials to the script's environment so that Terraform can access them securely.
