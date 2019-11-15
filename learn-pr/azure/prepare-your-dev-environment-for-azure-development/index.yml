@@ -2,7 +2,7 @@
 uid: learn.prepare-azure-dev-environment
 metadata:
   title: Prepare your development environment for Azure development
-  description: Learn about preparing for Azure development, setting up Visual Studio, and incorporating Java tools.
+  description: Learn about preparing for Azure development, setting up Visual Studio, and incorporating Java tools. 
   ms.date: 07/01/2019
   author: patridge
   ms.author: adpatrid
