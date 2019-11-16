@@ -123,7 +123,7 @@ To clone the *Space Game* web project to your computer:
     git clone https://github.com/your-name/mslearn-tailspin-spacegame-web-deploy.git
     ```
 
-1. Move to the **mslearn-tailspin-spacegame-web-deploy** directory. This directory is the root of your repository.
+1. Move to the *mslearn-tailspin-spacegame-web-deploy* directory. This directory is the root of your repository.
 
     ```bash
     cd mslearn-tailspin-spacegame-web-deploy

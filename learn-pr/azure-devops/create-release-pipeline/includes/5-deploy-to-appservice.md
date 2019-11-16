@@ -30,17 +30,17 @@ We won't go into many of the details about how App Service works or the configur
 
     | Field                | Value                                                                                         |
     |----------------------|-----------------------------------------------------------------------------------------------|
-    | Subscription     | Your Azure subscription.                                                                       |
-    | Resource Group   | Select **Create new** and then enter *tailspin-space-game-rg* as the resource group name.   |
-    | Name             | Provide a unique name, such as *tailspin-space-game-web-1234*.                               |
-    | Publish          | **Code**                                                                                      |
-    | Runtime stack    | **.NET Core 2.1**                                                                            |
-    | Operating System | **Linux**                                                                                     |
-    | Region           | Select any region, preferably one close to you.                                               |
-    | Linux Plan       | Keep the default value.                                                                       |
-    | Sku and size     | Select **Change size** > **Dev/Test** tab > **B1** > **Apply**. |
+    | **Subscription**     | Your Azure subscription.                                                                       |
+    | **Resource Group**   | Select **Create new** and then enter *tailspin-space-game-rg* as the resource group name.   |
+    | **Name**             | Provide a unique name, such as *tailspin-space-game-web-1234*. Your App Service instance requires a unique name because the name becomes part of the domain name. In practice, choose a name that describes your service. Note the name for later.                              |
+    | **Publish**          | **Code**                                                                                      |
+    | **Runtime stack**    | **.NET Core 2.1**                                                                            |
+    | **Operating System** | **Linux**                                                                                     |
+    | **Region**           | Select any region, preferably one close to you.                                               |
+    | **Linux Plan**       | Keep the default value.                                                                       |
+    | **Sku and size**     | Select **Change size** > **Dev/Test** tab > **B1** > **Apply**. |
 
-    Your App Service instance requires a unique name because the name becomes part of the domain name. In practice, choose a name that describes your service. Note the name for later.
+   
 
 1. Select **Review and Create** > **Create**.
 
@@ -123,9 +123,9 @@ A _multistage pipeline_ enables you to define distinct phases that your change p
 
 To convert your existing build configuration to a multistage pipeline, you add a `stages` section to your configuration. You then add one or more `stage` sections to define each phase of your pipeline. Stages break down into jobs, which are a series of steps that run sequentially as a unit.
 
-Before we add the Deploy stage to the pipeline, let's first convert the existing build configuration to a multistage pipeline.
+Before we add the _Deploy_ stage to the pipeline, let's first convert the existing build configuration to a multistage pipeline.
 
-1. From your project in Visual Studio Code, open the *azure-pipelines.yml* file and replace its contents with this code:
+1. From your project in Visual Studio Code, open *azure-pipelines.yml* and replace its contents with this code:
 
     [!code-yml[](code/5-azure-pipelines-1.yml?highlight=4-8)]
 
@@ -152,7 +152,7 @@ Before we add the Deploy stage to the pipeline, let's first convert the existing
 
 Here you add a variable to your pipeline to store the name of your web app in App Service.
 
-When you set up App Service earlier, you assigned it a name, such as **tailspin-space-game-web-1234**. The Deploy stage you'll define uses this name to identify which App Service instance to deploy to.
+When you set up App Service earlier, you assigned it a name, such as **tailspin-space-game-web-1234**. The _Deploy_ stage you'll define uses this name to identify which App Service instance to deploy to.
 
 Although you could hard-code this name in your pipeline configuration, defining it as a variable makes your configuration more reusable.
 
