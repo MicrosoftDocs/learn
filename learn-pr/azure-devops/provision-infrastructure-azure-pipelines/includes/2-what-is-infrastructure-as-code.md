@@ -14,7 +14,7 @@ Irwin added a few more requirements:
 
 * The game development team has a number of back-end systems that perform in-game matchmaking, collect leaderboard data, and so on. These systems are virtual machines that run on Azure. We need the ability to scale out these systems to accommodate any number of active users playing the game. Each system needs to come up quickly and be configured identically.
 * Our security officer is running an audit on our systems. They require that we adhere not only to application security requirements, but also to infrastructure security requirements.
-* Currently, we deploy one Azure SQL database that connects to each of our _dev_, _test_, and _staging_ environments. We need each environment to have its own database server so that we can test and roll out changes incrementally. A change made in _dev_ might break other environments, such as _test_ and _staging_, until that change reaches those stages.
+* Currently, we deploy one Azure SQL database that connects to each of our **dev**, **test**, and **staging** environments. We need each environment to have its own database server so that we can test and roll out changes incrementally. A change made in **dev** might break other environments, such as **test** and **staging**, until that change reaches those stages.
 
 All this means that there's a lot more infrastructure to manage. I'm just one person, and we don't plan on hiring others to help. I honestly don't know what to do. I know that some of these issues, like our back-end systems, aren't your problem. But I'd appreciate the help.
 

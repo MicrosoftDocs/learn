@@ -2,7 +2,7 @@ At this point, you have a basic Terraform plan that you can run from the command
 
 However, when you add a provisioning step to Azure Pipelines, Terraform needs permission to make infrastructure changes on your behalf. You don't want to check your credentials in to source control, so you need a better plan.
 
-Also, Terraform maintains a state file to help it understand how your infrastructure configuration maps to active Azure resources. When your pipeline closes, the agent and its environment are destroyed and you will lose your Terraform state file.
+Also, Terraform maintains a state file to help it understand how your infrastructure configuration maps to active Azure resources. When your pipeline exits, the agent and its environment are destroyed and you will lose your Terraform state file.
 
 In this part, you learn how Azure Blob storage and service principals enable you to run your Terraform plan from Azure Pipelines.
 
@@ -127,7 +127,7 @@ When you don't provide a default value, and you don't provide the `-var` argumen
 
 What happens when this occurs in the pipeline? You're not able to enter a value because the pipeline does not provide interactivity. So, the pipeline will stall.
 
-The answer is to provide the `-input=false` argument to the `terraform init` and `terraform apply` commands. This argument tells Terraform to close with an error status if there are any variables whose values could not be set. This prevents the pipeline from stalling forever while waiting for user input.
+The answer is to provide the `-input=false` argument to the `terraform init` and `terraform apply` commands. This argument tells Terraform to exit with an error status if there are any variables whose values could not be set. This prevents the pipeline from stalling forever while waiting for user input.
 
 That way, if you make changes to your Terraform plan but forget to set a variable's value, the pipeline simply fails. From here, you can specify the variable's value and push the change through the pipeline a second time.
 
@@ -148,7 +148,7 @@ One answer is to use the `##vso[]` syntax to write the name to the pipeline as a
 Later in this module, you'll use a Bash script to run Terraform from a pipeline task. After Terraform runs, you run `terraform output` to get the name of the App Service instance. Here's an example:
 
 ```bash
-# Get the App Service name for the dev environment.
+# Get the App Service name for the Dev environment.
 WebAppNameDev=$(terraform output appservice_name_dev)
 ```
 
@@ -176,6 +176,6 @@ The part in brackets loads the `WebAppNameDev` variable from the task named `Run
 1. Set up the service principal.
 1. Export environment variables that enable Terraform to run the plan as the service principal.
 
-Let's also modify the Terraform plan to define an App Service instance that maps to our *dev* environment. Later, we can add additional App Service instances for our *test* and *staging* environments.
+Let's also modify the Terraform plan to define an App Service instance that maps to our **dev** environment. Later, we can add additional App Service instances for our **test** and **staging** environments.
 
 **Andy:** Let's get to work!

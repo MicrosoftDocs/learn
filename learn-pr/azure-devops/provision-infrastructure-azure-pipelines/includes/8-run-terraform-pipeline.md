@@ -45,7 +45,7 @@ To add the variables:
 
 Modify your pipeline configuration by adding a job that runs Terraform to provision infrastructure to run the _Space Game_ website.
 
-1. In Visual Studio Code, modify *azure-pipelines.yml* by adding a job during the _dev_ stage.
+1. In Visual Studio Code, modify *azure-pipelines.yml* by adding a job during the _Dev_ stage.
     > [!Tip]
     > You can replace the entire file or just update the part that's highlighted.
 
@@ -53,7 +53,7 @@ Modify your pipeline configuration by adding a job that runs Terraform to provis
 
     This configuration resembles the one you built in the [Deploy applications with Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops?azure-portal=true) learning path. Here's a brief summary of what's new:
 
-    * The _dev_ stage includes a new job, **Provision**, that runs before the deployment job.
+    * The _Dev_ stage includes a new job, **Provision**, that runs before the deployment job.
     * The **Provision** job:
         * Writes *terraform.tfvars* and *backend.tfvars*, just as you did from Cloud Shell.
         * Uses the `-input=false` argument to close Terraform with an error status if the values for any variables could not be set.

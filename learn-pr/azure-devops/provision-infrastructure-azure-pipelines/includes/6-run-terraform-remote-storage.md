@@ -53,7 +53,7 @@ Download a more complete Terraform plan to a file named *main.tf*.
     This configuration resembles the one you used earlier, with these changes:
 
     * The variables named "my" are replaced with more realistic names that relate to the _Space Game_ website.
-    * The App Service instance name corresponds to the *dev* environment in Azure Pipelines. You learned about this environment in the [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true) module.
+    * The App Service instance name corresponds to the **dev** environment in Azure Pipelines. You learned about this environment in the [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true) module.
     * The App Service instance includes a `site_config` block that defines how to run the web service. It specifies the .NET Core 2.1 runtime and the startup command `dotnet Tailspin.SpaceGame.Web.dll`.
 
         > [!NOTE]
