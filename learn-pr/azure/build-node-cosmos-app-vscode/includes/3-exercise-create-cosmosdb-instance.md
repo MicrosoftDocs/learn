@@ -47,15 +47,15 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 6. Select **Concierge Subscription** from the "Select subscription" menu.
 
-7. In the **Account name** box, enter an account name. The name must be globally unique; we suggest using something like **\<*your name or initials*\>school**. Use this name wherever you see *\<your-cosmos-db-account-name\>* in this exercise.
+7. In the **Account name** box, enter an account name. The name must be globally unique; we suggest using something like **\<*your name or initials*\>school**.
 
 8. In the **Select an API for your Cosmos DB account** list, select **SQL (DocumentDB)**.
 
-9. In the **Select a resource group for new resources** list, select <rgn>[sandbox resource group]</rgn>, the resource group created for you by the Learn sandbox.
+9. In the **Select a resource group for new resources** list, select **<rgn>[sandbox resource group]</rgn>**, the resource group created for you by the Learn sandbox.
 
 10. In the **Select a location for new resources** list, select a location near you.
 
-11. Wait while the Cosmos DB account is created.
+11. Wait while the Cosmos DB account is created. This will take a few minutes.
 
 12. When the account has been created, in the Cosmos DB pane, expand the Concierge Subscription. Verify that the new Cosmos DB account appears:
 
@@ -63,7 +63,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 ## Create a database and container
 
-1. In the Cosmos DB pane, right-click *\<your-cosmos-db-account-name\>*, and then click **Create Database**.
+1. In the Cosmos DB pane, right-click the Cosmos DB account you created and then click **Create Database**.
 
     ![Screenshot of the Cosmos DB pane in VS Code. The user has selected the **Create Database** command for the Cosmos DB account](../media/3-cosmosdb-create-database.png)
 

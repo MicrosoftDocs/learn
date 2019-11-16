@@ -4,13 +4,7 @@ In this unit, you'll learn how to create a JavaScript application using VS Code.
 
 ## Create a JavaScript application for Node.js
 
-You can create a new JavaScript application for Node.js from within VS Code using a terminal window. Create a new folder, and run the following command to initialize the Node application.
-
-```bash
-npm init -y
-```
-
-The `npm init` command creates a new file, named **package.json** in the application folder. This file contains metadata that you use to describe your application to the Node.js runtime.
+You can create a new JavaScript application for Node.js from within VS Code using a terminal window. The `npm init -y` command creates a new file, named **package.json** in the application folder. This file contains metadata that you use to describe your application to the Node.js runtime.
 
 Edit the **package.json** file and add a description to the **description** property. Also replace the text **main.js** in the **main** property with the name of the JavaScript file that will hold your application code.
 
@@ -40,11 +34,7 @@ Other IntelliSense features available in VS Code include:
   
 ## Run and debug a Node.js application
 
-The simplest way to run a Node.js application from VS Code is to use the `node` command from a terminal window. For example, to run the code in a file named **myapp.js**, use the following command:
-
-```bash
-node myapp
-```
+The simplest way to run a Node.js application from VS Code is to use the `node` command from a terminal window. For example, to run the code in a file named **myapp.js**, run `node myapp.js`.
 
 You can use the native Node.js debugger (for example, `node inspect myapp`) from a terminal window, but VS Code provides an enhanced environment for stepping through and debugging Node.js applications.
 
@@ -82,8 +72,4 @@ When the debugger reaches a breakpoint in your application, execution will pause
 
 ![Screenshot of the VS Code debugger](../media/4-debugger-at-breakpoint.png)
 
-The **Debug** toolbar appears above the editor window. This toolbar contains commands that enable you to single step through your code. If a statement contains a function call, you can step into that function, or step over it. The step out command continues execution until the function finishes. You can also continue running the application, either until the debugger reaches another breakpoint, or the application finishes. The other two commands enable you to restart the application from the beginning, or terminate the application:
-
-![Image of the VS Code Debug toolbar](../media/4-debug-toolbar.png)
-
-Most JavaScript engines (including Node.js) implement just-in-time compilation. You can make changes to the application code while the debugger is running. These changes become effective immediately. You don't need to stop and restart the debugger.
+The **Debug** toolbar appears above the editor window. This toolbar contains commands that enable you to single step through your code. If a statement contains a function call, you can step into that function, or step over it. The step out command continues execution until the function finishes. You can also continue running the application, either until the debugger reaches another breakpoint, or the application finishes.

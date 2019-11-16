@@ -82,7 +82,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
     var question = require('readline-sync').question;
     ```
 
-    The **\@ts-check** directive enables advanced type checking, using the **\@types/mode** module that you added to the application in the previous task. The **require** statement imports the **question** function from the **readline-sync** module. You'll use the **question** function to prompt the user for input later in this application.
+    The **\@ts-check** directive enables advanced type checking, using the **\@types/node** module that you added to the application in the previous task. The **require** statement imports the **question** function from the **readline-sync** module. You'll use the **question** function to prompt the user for input later in this application.
 
 4. After the **require** statement, add the following **class** definition to the file:
 
@@ -114,7 +114,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
     The **Student** class represents a student. It has the properties **id**, **StudentNumber**, **Forename**, **Lastname**, and **CourseGrades**. The **CourseGrades** property is an object. This object will contain course code/course grade key/value pairs for the student. The **addGrade** method enables a user to add a course code/course grade pair to this property. The **getGrades** function returns a formatted string listing the course codes and grades for the student. The **toString** function returns a string containing the other details of the student.
 
     > [!NOTE]
-    > It's important to distinguish between the **id** field, which is used by Cosmos DB to identify the document, and the **studentNumber** field, which is used to reference a student. The data in the **id** field is immutable, whereas the **studentNumber** field may change over time.
+    > It's important to distinguish between the **id** field, which is used by Cosmos DB to identify the document, and the **StudentNumber** field, which is used to reference a student. The data in the **id** field is immutable, whereas the **StudentNumber** field may change over time.
 
 5. Add the **getStudentData** function shown below to the **studentgrades.js** file, after the **Student** class:
 
