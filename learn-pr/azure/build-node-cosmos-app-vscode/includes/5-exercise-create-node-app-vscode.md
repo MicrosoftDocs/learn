@@ -67,7 +67,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
     The **readline-sync** package contains functions that enable you to gather user input from the command line. The **\@types/node** package contains additional type definitions for Node.js.
 
     > [!NOTE]
-    > You can ignore the **No repository field** warning, and the **extraneous** messages that appear.
+    > You can ignore any **No repository field** warnings that appear for now.
 
 ## Create the studentgrades app
 

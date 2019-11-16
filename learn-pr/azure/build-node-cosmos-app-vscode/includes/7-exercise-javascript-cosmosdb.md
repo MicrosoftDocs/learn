@@ -32,11 +32,11 @@ The first task is to enable your application to connect to the Cosmos DB account
 
 5. In the toolbar on the left side of VS Code, select the **Azure** icon.
 
-6. In the **Cosmos DB** pane, if you aren't already connected, click **Sign in to Azure**. Sign in with the same credentials you used to set up the sandbox. In the command palette, type **Azure**, and then select **Azure: Select Subscriptions**. Select **Concierge Subscription**, and then click **OK**.
+6. In the **Cosmos DB** pane, if you aren't already connected, click **Sign in to Azure**. Sign in with the same credentials you used to set up the sandbox.
 
     ![Screenshot of Cosmos DB pane in VS Code. The user is about to sign in to Azure](../media/7-azure-sign-in.png)
 
-7. Expand your Azure account, right-click the **\<*your name or initials*\>school** Cosmos DB account, and then click **Copy Connection String**.
+7. Expand your Azure account, right-click your Cosmos DB account, and then click **Copy Connection String**.
 
     ![Screenshot of Cosmos DB pane in VS Code. The user is copying the connection string for the Cosmos DB account to the clipboard](../media/7-connection.png)
 
@@ -277,15 +277,15 @@ You can now create and run a test harness that verifies that your code creates s
     | Prompt  | Value  |
     |---|---|
     | Please enter the student's document ID: | S902 |
-    | Enter the student's number | | 902 |
+    | Enter the student's number | 902 |
     | Enter the student's forename: | TUV |
     | Enter the student's last name: | XYZ |
 
     The following message should appear, indicating that the document for this student has also been added to the Cosmos DB container.
 
     ```text
-    Added student with id: S502
-    Student data: S502: TUV, XYZ
+    Added student with id: S902
+    Student data: S902: TUV, XYZ
     ```
 
 7. You should then see the following sequence of messages as the **updateStudent** function is tested:

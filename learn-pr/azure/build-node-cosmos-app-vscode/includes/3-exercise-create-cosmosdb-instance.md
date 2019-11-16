@@ -39,28 +39,25 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 4. Sign in with the same credentials you used to set up the sandbox and then close the browser page.
 
-5. In the command palette, type **Azure**, and then select **Azure: Select Subscriptions**. Select **Concierge Subscription**, and then click **OK**.
-
-6. In the toolbar above the Cosmos DB pane, click **Create Account** (the **+** sign).
+5. In the toolbar above the Cosmos DB pane, click **Create Account** (the **+** sign).
 
     ![Screenshot of the Cosmos DB pane in VS Code. The user has selected the **Create Account** command](../media/3-add-comsosdb-account.png)
 
     A wizard will start that prompts you for the details of the new account.
 
-    > [!NOTE]
-    > The Cosmos DB account must have a unique name. We suggest using something like **\<*your name or initials*\>school**. Use this name wherever you see *\<your-cosmos-db-account-name\>* in this exercise.
+6. Select **Concierge Subscription** from the "Select subscription" menu.
 
-7. In the **Account name** box, type **\<your-cosmos-db-account-name\>**, and then press Enter.
+7. In the **Account name** box, enter an account name. The name must be globally unique; we suggest using something like **\<*your name or initials*\>school**. Use this name wherever you see *\<your-cosmos-db-account-name\>* in this exercise.
 
 8. In the **Select an API for your Cosmos DB account** list, select **SQL (DocumentDB)**.
 
-9. In the **Select a resource group for new resources** list, select the existing resource group created in the Azure sandbox (it will have a name that starts with **learn-** followed by a GUID), and then press Enter.
+9. In the **Select a resource group for new resources** list, select <rgn>[sandbox resource group]</rgn>, the resource group created for you by the Learn sandbox.
 
-10. In the **Select a location for new resources** list, select your nearest location.
+10. In the **Select a location for new resources** list, select a location near you.
 
 11. Wait while the Cosmos DB account is created.
 
-12. When the account has been created, in the Cosmos DB pane, expand your Azure account. Verify that the new Cosmos DB account appears:
+12. When the account has been created, in the Cosmos DB pane, expand the Concierge Subscription. Verify that the new Cosmos DB account appears:
 
     ![Screenshot of the Cosmos DB pane in VS Code. The new Cosmos DB account is listed under the user's Azure account](../media/3-new-comsosdb-account.png)
 
@@ -74,7 +71,7 @@ This exercise runs on your desktop computer, and uses an Azure sandbox for your 
 
 3. In the **Enter an id for your collection** box, enter **StudentCourseGrades**, and then press Enter.
 
-4. In the **Enter the partition key for the collection** box, type **StudentNUMBER**, and then press Enter.
+4. In the **Enter the partition key for the collection** box, type **StudentNumber**, and then press Enter.
 
     This container will hold `StudentCourseGrades` documents. Course grades will be held as an array of subdocuments with each student. The data will be partitioned by student ID.
 
