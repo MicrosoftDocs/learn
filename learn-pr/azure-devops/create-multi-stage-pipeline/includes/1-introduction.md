@@ -10,7 +10,7 @@ A good release-management workflow enables you to release more frequently and mo
 
 In this module, you will:
 
-- Identify the stages, or major divisions of the pipeline, that you need to implement a multi-stage pipeline.
+- Identify the stages, or major divisions of the pipeline, that you need to implement a multistage pipeline.
 - Understand when to use conditions, triggers, and approvals to promote changes from one stage to the next.
 - Promote a build through these stages: _Build_, _Dev_, _Test_, and _Staging_.
 
