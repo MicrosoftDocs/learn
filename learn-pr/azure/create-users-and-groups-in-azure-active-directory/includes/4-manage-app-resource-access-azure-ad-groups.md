@@ -1,13 +1,12 @@
 
 You want to give the developers within your organization the same access. You also want to manage who is part of the developers' group and who isn't.
 
-Azure Active Directory (Azure AD) helps you to manage your cloud-based apps, on-premises apps, and resources using your organization's groups. Your resources can be part of the directory, like permissions to manage objects through roles. Or your resources can be external to the directory, like software as a service (SaaS) apps, Azure services, SharePoint sites, and on-premises resources.
+Azure Active Directory (Azure AD) helps you to manage your cloud-based apps, on-premises apps, and resources using your organization's groups. Your resources can be part of the Azure AD organization, like permissions to manage objects through roles. Or your resources can be external to the organization, like software as a service (SaaS) apps, Azure services, SharePoint sites, and on-premises resources.
 
 ## Access management in Azure AD
 
-With role-based access control (RBAC), you can manage how Azure resources are accessed. For example, you could use RBAC to allow a group of users to view virtual machines in a resource group. You could allow only a single user to access, manage, and delete SQL databases in a specific resource group or subscription.
-
-While Azure RBAC roles are used to manage access to Azure resources, Azure AD administrator roles let you manage Azure AD-related resources like users, groups, billing, licensing, application registration, and more.
+- **Azure AD roles**: Let you manage Azure AD-related resources like users, groups, billing, licensing, application registration, and more.
+- **Role-based access control (RBAC) for Azure resources**: Use RBAC roles to manage access to Azure resources like virtual machines, SQL databases, or storage. For example, you could assign an RBAC role to a user to manage and delete SQL databases in a specific resource group or subscription.
 
 ## Access rights through single user or group assignment
 
