@@ -14,7 +14,7 @@ Site Recovery helps you meet your recovery time objective because it can perform
 
 Site Recovery can recover to application-consistent snapshots. Site Recovery takes snapshots of all data in memory and on disk, and all transactions in process.
 
-Use Site Recovery's recovery plans to group your virtual machines, add scripts, manual actions, and failover, and recover multi-tier applications that are spread across different virtual machines. You can set up Azure automation runbooks to work with your recovery plans.
+Use Site Recovery's recovery plans to group your virtual machines, add scripts, manual actions, and failover, and recover multi-tier applications that are spread across different virtual machines. You can set up Azure automation runbooks to work with your recovery plans and automate steps necessary to recover systems.
 
 Always test your disaster recovery plan. Site Recovery lets you run disaster recovery tests with no disruption to your running replication.
 
@@ -34,40 +34,21 @@ For Site Recovery, set your protection goal to define where machines are located
 
 In this scenario, Azure Backup periodically backs up the files and folders on the Windows machine to Azure. This process ensures they are secure and retrievable even if the whole on-premises environment stops functioning. Separately, Site Recovery will be used to protect running workloads and keep them running. Because Site Recovery can replicate frequently, the recovery time objective for your workloads can be reduced.
 
-To configure the backup portion of your solution in this scenario, and to protect files and folders, you download and install the Microsoft Azure Recovery Services agent. You can then create backup policies and automatically back up your data on a scheduled basis. The Microsoft Azure Recovery Services agent also lets you restore all your data to either the same source machine, or to an entirely different machine. With Azure Backup, your data is also encrypted before it's backed up.
+To configure the backup portion of your solution in this scenario, and to protect files and folders, you download and install the Microsoft Azure Recovery Services (MARS) agent. You can then create backup policies and automatically back up your data on a scheduled basis. The MARS agent also lets you restore all your data to either the same source machine, or to an entirely different machine. With Azure Backup, your data is also encrypted before it's backed up.
 
 To set up Site Recovery, you install an Site Recovery Services agent and a Site Recovery Provider on the Hyper-V server. These tools are used for replication and orchestration of failover to Azure. When a failover is triggered, new virtual machines can be created for you based on the machines that have been protected by Site Recovery.
 
-<!-- ## Protect different scenarios with Site Recovery
-
-Site Recovery allows replication of different types of machines in different scenarios.
-
-You can protect Azure virtual machines and replicate them from a source region to an entirely different target region. You can replicate:
-
-- On-premises virtual machines to Azure, whether they're Hyper-V or VMware based.
-- Physical servers – both can be Linux and Windows based.
-- Machines hosted on other cloud providers such as Amazon Web Services.
-
-You can also replicate both Hyper-V and VMware-based machines (managed by System Center), and your physical servers to your own secondary site. Site Recovery replicates any of your workloads that are running on the machines that are supported. -->
-
-## Integrate your network with Site Recovery
-
-<!-- You might have a multi-tier application, made up of a web tier and an app tier, consisting of two machines each. You can use Site Recovery to protect the whole structure and replicate it to Azure.
-
-Your web tier and application tier will likely also have an internal load balancer and external load balancer attached to them. Site Recovery can protect these load balancers too. To achieve this outcome, you first protect your virtual machines using the Recovery Services vault. Once protection is in place, you create an availability set for your protected application tier machines, and an availability set for the protected web tier machines. When you then create a recovery plan in the Recovery Services vault, you'll need to add the machines in two separate groups.
-
-Groups help you separate virtual machines, and dictate the actions that should take place for each group. With the help of Azure Automation, Site Recovery can use your scripts to attach the appropriate load balancers to the virtual network interfaces of your virtual machines during a failover. -->
+## Integrate your on-premises network with Site Recovery
 
 You can keep your private IP addresses from on-premises machines and use them for target Azure machines. You create a virtual network in Azure where your virtual machines will be provisioned when failover is triggered. This network acts as an extension of your on-premises network. As part of your failover you'll need establish or configure a site-to-site VPN connection or leverage ExpressRoute for connectivity between Azure and on-premises networks.
 
-<!-- Your workloads will now fail over smoothly. Before the failover is triggered, you also need to assign the same IP addresses you have on-premises for each machine in its properties in Site Recovery. When failover is complete, Site Recovery creates virtual machines with the same IP addresses. -->
+## Protect different scenarios with Site Recovery
 
-<!-- ## Integrate Site Recovery with Azure Traffic Manager
+Site Recovery allows replication of different types of machines in different scenarios. You can protect:
 
-Site Recovery works with Azure Traffic Manager to protect your infrastructure.
+- Azure virtual machines and replicate them from a source region to different target region.
+- On-premises virtual machines to Azure, whether they're Hyper-V or VMware based.
+- Physical servers running Linux or Windows.
+- Virtual machines hosted on other cloud providers.
 
-Consider a case where your organization has applications with public endpoints running on-premises. The organization wants to ensure these applications are protected in Azure if there's a disaster. If a disaster occurs, your organization wants to direct all traffic to Azure.
-
-You can achieve this aim by configuring a Traffic Manager profile. You use Traffic Manager's priority routing to create two external endpoints. You'll need to create one primary endpoint for your on-premises, and set it as priority 1. You'll also need a failover endpoint for Azure, and set it as priority 2. Traffic Manager directs your traffic to the on-premises endpoint for as long as the endpoint is healthy.
-
-If there's a disaster, Site Recovery performs a failover. Traffic Manager can probe your endpoints based on values you set – as frequent as every 10 seconds if necessary. When Traffic Manager sees the endpoint isn't healthy, traffic is directed to the failover endpoint. When you're ready to fail back to your on-premises environment, Site Recovery can perform a failback for you. Traffic Manager then can confirm that the primary endpoint is healthy. Traffic is then automatically routed back to your primary endpoint. -->
+You can also replicate both Hyper-V and VMware-based machines (managed by System Center), and your physical servers to your own secondary site. Site Recovery replicates any of your workloads that are running on the machines that are supported.
