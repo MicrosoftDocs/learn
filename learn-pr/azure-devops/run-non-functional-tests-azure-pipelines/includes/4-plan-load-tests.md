@@ -53,7 +53,7 @@ Next, Tim adds **Http Request Defaults** and an **Http Request** sampler to the 
 Tim opens up a terminal window and runs his test plan, like this:
 
 ```bash
-apache-jmeter-5.1.1/bin/./jmeter -n -t LoadTest.jmx -o Results.xml
+apache-jmeter-5.2/bin/./jmeter -n -t LoadTest.jmx -o Results.xml
 ```
 
 The `-n` argument specifies to run JMeter in non-GUI mode. The `-t` argument specifies the test plan file, *LoadTest.jmx*. The `-o` argument specifies the report file, *Results.xml*.

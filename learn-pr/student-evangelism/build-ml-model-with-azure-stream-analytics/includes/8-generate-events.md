@@ -11,6 +11,10 @@ export ACCOUNT_NAME={storage-account-name}
 
 1. In the Cloud Shell on the right, make sure you are in the project folder `photoproc`. Recall you can use the `cd` command in the shell to switch to the proper folder.
 
+    ```bash
+    cd photoproc
+    ```
+
 1. Copy the **run.js** app into the project folder from assets.
 
     ```bash
