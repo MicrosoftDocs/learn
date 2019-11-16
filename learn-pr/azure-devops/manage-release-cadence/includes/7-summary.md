@@ -35,7 +35,7 @@ The release pipeline that you and the team built in this learning path reduced:
 * The time it takes to get the build into the _Test_ stage from **three days** to **one day**
 
     They did this by using a scheduled trigger to deploy to _Test_ every day at 3:00 AM.
-* The time is takes to get the tested build into _Staging_ from **two days** to **zero days**.
+* The time it takes to get the tested build into _Staging_ from **two days** to **zero days**.
 
     They did this by adding Selenium UI tests, a form of functional testing, to the _Test_ stage. These automated tests are much faster than the manual versions.
 * The time it takes to get the approved build from _Staging_ to live from **one day** to **less than one day**.
@@ -61,7 +61,15 @@ In this learning path, you accomplished a lot, including:
 * Running both functional and non-functional tests in the pipeline.
 * Implementing a blue-green deployment that updates the application with minimal downtime.
 
-You can apply what you've learned to the applications and services that you work on. You can also find more self-paced, hands-on learning around Azure DevOps at [Azure DevOps Labs](https://www.azuredevopslabs.com?azure-portal=true).
+You can apply what you've learned to the applications and services that you work on.
+
+## Continue the journey
+
+This learning path focused on deploying applications with Azure Pipelines. Although you can use the Azure portal, the Azure CLI, or Azure PowerShell to provision resources on Azure, how will you scale out your deployments to meet global demand?
+
+In [Provision infrastructure in Azure Pipelines](/learn/modules/provision-infrastructure-azure-pipelines/?azure-portal=true), you'll help the Tailspin team answer this question. There, you learn how _infrastructure as code_ enables you to describe and automatically provision the infrastructure you need for your application.
+
+For more self-paced, hands-on learning around Azure DevOps, also check out [Azure DevOps Labs](https://www.azuredevopslabs.com?azure-portal=true).
 
 ## Learn more
 

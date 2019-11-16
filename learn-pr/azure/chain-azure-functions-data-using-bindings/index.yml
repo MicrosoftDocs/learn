@@ -4,8 +4,8 @@ metadata:
   title: Chain Azure Functions together by using input and output bindings
   description: In this module, we'll learn how to integrate your Azure Function with various data sources by using bindings.
   ms.date: 09/24/2018
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Chain Azure Functions together using input and output bindings

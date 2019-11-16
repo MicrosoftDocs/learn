@@ -79,10 +79,10 @@ os.makedirs(folder_training_script, exist_ok=True)
 print('Done')
 ```
 
-Finally, let's prepare our model training script (note that in this script, you are defining three parameters):
+Finally, let's prepare our model training script (note that in this script, you are defining two parameters):
 
-- The first parameter is for finding the data in the cloud or for the path.
-- The other parameter **regularization** parameter in the algorithm.
+- The first parameter is for finding the data in the cloud or for setting the path to the data.
+- The other parameter is the **regularization** parameter in the algorithm.
 
 ```python
 %%writefile $folder_training_script/train.py

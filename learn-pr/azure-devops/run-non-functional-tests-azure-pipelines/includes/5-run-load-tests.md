@@ -18,7 +18,7 @@ This branch contains the _Space Game_ project that you worked with in previous m
 
     ```bash
     git fetch upstream jmeter
-    git checkout jmeter
+    git checkout -b jmeter upstream/jmeter
     ```
 
     Recall that *upstream* refers to the Microsoft GitHub repository. Your project's Git configuration understands the upstream remote, because you set up that relationship when you forked the project from the Microsoft repository and cloned it locally.
@@ -52,7 +52,7 @@ The corresponding test plan file, *LoadTest.jmx* specifies and uses this variabl
 When you run JMeter from the command line, you use the `-J` argument to set the `hostname` property. Here's an example:
 
 ```bash
-apache-jmeter-5.1.1/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=tailspin-space-game-web-staging-1234.azurewebsites.net
+apache-jmeter-5.2/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=tailspin-space-game-web-staging-1234.azurewebsites.net
 ```
 
 Here, you set the `STAGING_HOSTNAME` variable in Azure Pipelines. This variable points to your site's host name that's running on App Service for your **staging** environment.
@@ -60,7 +60,7 @@ Here, you set the `STAGING_HOSTNAME` variable in Azure Pipelines. This variable 
 When the agent runs, this variable is automatically exported to the agent as an environment variable. Therefore, your pipeline configuration can run JMeter like this:
 
 ```bash
-apache-jmeter-5.1.1/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=$(STAGING_HOSTNAME)
+apache-jmeter-5.2/bin/./jmeter -n -t LoadTest.jmx -o Results.xml -Jhostname=$(STAGING_HOSTNAME)
 ```
 
 Let's add the pipeline variable now, before you update your pipeline configuration. To do so:
@@ -88,7 +88,7 @@ In this section, you modify the pipeline to run your load tests during the _Stag
     > [!TIP]
     > You can replace the entire file or just update the part that's highlighted.
 
-    [!code-yml[](code/5-azure-pipelines.yml?highlight=133-154)]
+    [!code-yml[](code/5-azure-pipelines.yml?highlight=133-155)]
 
     To summarize the changes:
 

@@ -33,6 +33,19 @@
                 "dest": "modules"
             },
             {
+                "src": "ai-school",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "ai-business-school",
                 "files": [
                     "**/*.yml",
@@ -113,10 +126,13 @@
             {
                 "src": "iot",
                 "files": [
-                    "**/*.yml"
+                    "**/*.yml",
+                    "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -281,6 +297,15 @@
                     "zh-cn",
                     "zh-tw"
                 ],
+                "ai-school/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "pt-br",
+                    "ja-jp",
+                    "zh-cn",
+                    "zh-tw"
+                ],
                 "aspnetcore/**/*.yml": [
                     "de-de",
                     "es-es",
@@ -313,6 +338,25 @@
                     "sv-se"
                 ],
                 "databricks/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
+                "iot/**/*.yml": [
                     "de-de",
                     "es-es",
                     "fr-fr",
