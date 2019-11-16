@@ -27,13 +27,11 @@ Unlike a table in a relational database, documents in a Cosmos DB don't follow a
 > [!NOTE]
 > Cosmos DB adds some fields of its own to your documents. Many of these fields are used for internal purposes, and in most cases you shouldn't modify them directly. The exception is a field named **id**. Cosmos DB uses this field to identify the document in the database, and each document must have a unique **id**. Cosmos DB will generate a value for the **id** field automatically, but you can specify your own value for each document if you prefer. Specifying your own values is useful if you need to use your own scheme for tracking documents.
 
-Cosmos DB database provides APIs that let you create, update, delete, and query documents.
+Cosmos DB provides APIs that let you create, update, delete, and query documents.
 
-The Cosmos DB service is organized as a hierarchy. At the top, is a Cosmos DB account. The Cosmos DB account is the unit of security for a set of databases. The Cosmos DB account specifies the location of the databases together with the security information required to access those databases.
+The Cosmos DB service is organized as a hierarchy. At the top is a Cosmos DB account. The Cosmos DB account is the unit of security for a set of databases. The Cosmos DB account specifies the location of the databases together with the security information required to access those databases.
 
-Inside an account, you create one or more databases. You create one or more containers inside each database. You store documents in containers. The image below illustrates this hierarchy:
-
-![The account-database-container-document hierarchy in Cosmos DB](../media/2-hierarchy.png)
+Inside an account, you create one or more databases. You create one or more containers inside each database. You store documents in containers.
 
 Each container is organized as a series of partitions. Partitions *roughly* correspond to the physical files on disk. A large partition might have its own file, but several small partitions could be combined into a single file. Each document has a partition key that defines the partition to which it belongs. You use partitioning to store related documents together, and to help optimize the way you access data.
 
