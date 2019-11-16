@@ -10,6 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
+azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-create-node-app-vscode.md)]
