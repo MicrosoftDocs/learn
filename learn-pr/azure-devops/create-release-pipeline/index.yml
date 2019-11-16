@@ -18,7 +18,7 @@ abstract: |
   - Examine pipeline analytics to understand the health and history of your releases.
 prerequisites: |
   - An Azure subscription
-  - An Azure DevOps account
+  - An Azure DevOps organization
   - Visual Studio Code
   - .NET Core 2.1
   - Git

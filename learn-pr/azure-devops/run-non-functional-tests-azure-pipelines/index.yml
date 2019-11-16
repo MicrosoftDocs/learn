@@ -19,7 +19,7 @@ abstract: |
   - Convert test results to a format that Azure Pipelines can visualize for you.
 prerequisites: |
   - An Azure subscription
-  - An Azure DevOps account
+  - An Azure DevOps organization
   - Visual Studio Code
   - .NET Core 2.1
   - Git

@@ -8,7 +8,7 @@ In this unit, you'll use Search explorer to write queries, review top results, a
 
 1. If you aren't still signed into the Azure portal, sign in [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. In the **All Resources** view of the portal, select the Azure Search resource you created to navigate to its overview page.
+1. In the **All Resources** view of the portal, select the Azure Cognitive Search resource you created to navigate to its overview page.
 
     ![Screenshot of the Azure portal, showing the search service overview page](../media/5-exercise-screenshot-7.png)
 

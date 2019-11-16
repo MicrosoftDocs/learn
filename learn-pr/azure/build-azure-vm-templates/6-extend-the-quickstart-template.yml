@@ -11,8 +11,8 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
   zone_pivot_groups: platform-cloud
-interactive: bash
-azureSandbox: true
+#interactive: bash
+#azureSandbox: true
 durationInMinutes: 7
 content: |
   [!include[](includes/6-extend-the-quickstart-template.md)]

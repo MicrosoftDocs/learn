@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="118px" viewBox="0 0 100 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Work with data using C#/work-with-data-using-c#</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M44.5234375,1.54914609 C46.2234375,0.516382029 48.1109375,0 50,0 C51.8890625,0 53.778125,0.516382029 55.475,1.54914609 L94.365625,25.1853599 C97.846875,27.3028615 100,31.2629081 100,35.5582677 L100,82.4417323 C100,86.7354153 97.846875,90.698815 94.365625,92.8146401 L55.475,116.45253 C53.778125,117.483618 51.8890625,118 50,118 C48.1109375,118 46.2234375,117.483618 44.5234375,116.45253 L5.634375,92.8146401 C2.1515625,90.698815 0,86.7354153 0,82.4417323 L0,35.5582677 C0,31.2629081 2.1515625,27.3028615 5.634375,25.1853599 L44.5234375,1.54914609 Z" id="path-1"></path>
+        <filter x="-6.7%" y="-6.8%" width="115.0%" height="113.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Work-with-data-using-C#" transform="translate(-50.000000, -50.000000)">
+            <g id="Work-with-data-using-C#/work-with-data-using-c#" transform="translate(50.000000, 50.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <g id="Hex" transform="translate(-2.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Trophy-1" fill="#FF0000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <g id="Color-/-Microsoft-365" mask="url(#mask-2)" fill="#0078D4" fill-rule="evenodd">
+                            <rect id="Rectangle" x="0" y="0" width="100" height="118"></rect>
+                        </g>
+                    </g>
+                    <g id="Group" filter="url(#filter-3)" transform="translate(19.000000, 28.000000)">
+                        <rect id="Rectangle" fill="#F7CB64" x="0" y="5.60578662" width="17.435333" height="17.9385172"></rect>
+                        <polygon id="Rectangle" fill="#F1BF70" points="8.71766648 5.09407666e-13 25.0632911 -6.37304154e-13 17.435333 5.60578662 0 5.60578662"></polygon>
+                        <polygon id="Path-269" fill="#EFB252" points="17.435333 23.5443038 25.0632911 18.3228201 25.0632911 0 17.435333 5.60578662"></polygon>
+                        <rect id="Rectangle" fill="#7CB65A" x="17.4683544" y="23.074141" width="17.435333" height="17.9385172"></rect>
+                        <polygon id="Rectangle" fill="#73A755" points="25.0963126 17.4683544 42.5316456 17.4683544 34.9036874 23.074141 17.4683544 23.074141"></polygon>
+                        <polygon id="Path-269" fill="#5C8942" points="34.9036874 41.0126582 42.5316456 35.7911746 42.5316456 17.4683544 34.9036874 23.074141"></polygon>
+                        <rect id="Rectangle" fill="#DF5142" x="34.9367089" y="40.5424955" width="17.435333" height="17.9385172"></rect>
+                        <polygon id="Rectangle" fill="#BF5348" points="42.564667 34.9367089 60 34.9367089 52.3720418 40.5424955 34.9367089 40.5424955"></polygon>
+                        <polygon id="Path-269" fill="#B44135" points="52.3720418 58.4810127 60 52.1383717 60 34.9367089 52.3720418 40.5424955"></polygon>
+                        <rect id="Rectangle" fill="#DF5142" x="0" y="23.5443038" width="17.4683544" height="17.4683544"></rect>
+                        <rect id="Rectangle" fill="#F7CB64" x="17.4683544" y="41.0126582" width="17.4683544" height="17.4683544"></rect>
+                        <rect id="Rectangle" fill="#7CB65A" x="0" y="41.0126582" width="17.4683544" height="17.4683544"></rect>
+                        <text id="C#" font-family="SegoeUI-Semibold, Segoe UI" font-size="10" font-weight="500" fill="#FFFFFF">
+                            <tspan x="2.43798828" y="54">C#</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Azure-Hex-Border" stroke="#0064B0" stroke-width="4">
+                    <path d="M45.5618501,3.25844398 L45.5621963,3.25823359 L6.67338401,26.8942953 C3.79673288,28.6432593 2,31.9508238 2,35.5582677 L2,82.4417323 C2,86.0486597 3.79764663,89.3586805 6.67318764,91.1055853 L45.560618,114.742485 C46.9289662,115.572418 48.4546283,116 50,116 C51.5458817,116 53.0723633,115.572188 54.4362178,114.743457 L93.3268764,91.1055464 C96.2016145,89.3583456 98,86.0476286 98,82.4417323 L98,35.5582677 C98,31.9518547 96.202529,28.6435953 93.3268966,26.8944659 L54.4351916,3.25759524 C53.0721095,2.42798656 51.5462432,2 50,2 C48.4542664,2 46.9292165,2.42775755 45.5618501,3.25844398 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

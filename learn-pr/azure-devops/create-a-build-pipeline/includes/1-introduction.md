@@ -37,7 +37,7 @@ If you want to start with this learning path, you need to set up a development e
 * [.NET Core 2.1](https://www.microsoft.com/net/download?azure-portal=true)
 * [Git](https://git-scm.com/downloads?azure-portal=true)
 
-You can get started with Azure DevOps for free.
+If your company's policy doesn't allow you to create an Azure DevOps organization, you can create your own personal account. You can get started with Azure DevOps for free.
 
 This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
 

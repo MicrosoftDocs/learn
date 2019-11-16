@@ -68,9 +68,9 @@ You can also view **Metrics** for your app, which can help you profile how your 
 
 ## Enable logging using the Azure portal 
 
-In the portal, application logging is managed from the Diagnostics logs blade of the web app.
+In the portal, application logging is managed from the Diagnostics logs pane of the web app.
 
-![Diagnostics logs blade in the Azure portal](../media/2-portal-diagnostics-logs-blade.png)
+![Diagnostics logs pane in the Azure portal](../media/2-portal-diagnostics-logs-pane.png)
 
 
 To enable application logging to the Web app's file system, set **Application logging (Filesystem)** to **On**, and then set the **Level** to Error, Warning, Information, or Verbose. Logging to the file system will be automatically reset to Off after 12 hours.

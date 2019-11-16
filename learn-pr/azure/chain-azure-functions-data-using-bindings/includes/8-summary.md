@@ -1,6 +1,12 @@
-This module was all about integrating data and services into your functions. We started off with a quick tour of the binding types that show up when you add them to a function. We then looked at reading data from an Azure Cosmos DB by using an input binding. The platform takes care of managing connection strings, and we saw how easy it is to read data in our code by using the binding. Finally, we focused our attention on writing data to different sources with the help of output bindings. This journey is summarized in the following table:
+This module was about integrating data and services into your functions. We started with a quick tour of the binding types that show up when you add them to a function, then we looked at reading data from an Azure Cosmos DB by using an input binding. Azure Functions takes care of managing connection strings, and we saw how easy it is to read data in our code by using the binding. Finally, we focused our attention on writing data to different sources with the help of output bindings.
 
-[!INCLUDE [summary table](./summary-table.md)]
+This journey is summarized in the following table, which shows the different bindings that you used in each of the units listed:
+
+| Learning Unit | Triggers | Input bindings | Output bindings |
+|---|---|---|---|
+| [Explore input and output binding types](../2-explore-input-and-output-binding-types-portal-lesson.yml) | _HTTP_ | _HTTP_ | _HTTP_ |
+| [Read data with input bindings](../4-read-data-with-input-bindings-portal-lesson.yml) | _HTTP_ | _HTTP_<br/>_Azure Cosmos DB_ | _HTTP_ |
+| [Write data with output bindings](../6-write-data-with-output-bindings-portal-lesson.yml) | _HTTP_ | _HTTP_<br/>_Azure Cosmos DB_ | _HTTP_<br/>_Azure Cosmos DB_<br/>_Azure Queue Storage_ |
 
 You can apply the approaches you have learned here to add and test bindings in your functions. Here are a few interesting ideas to get more practice with bindings and to build on what you have learned here.
 
@@ -12,7 +18,7 @@ You can apply the approaches you have learned here to add and test bindings in y
 
 As we saw in this module, the Azure portal offers easy-to-use features to start building functions and connecting them to data and other services.
 
-If you're interested in doing serverless integrations like these with visual workflows and little or no custom code, check out Azure Logic Apps as well.
+If you're interested in doing serverless integrations like these with visual workflows and little or no custom code, check out [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps/) as well.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 

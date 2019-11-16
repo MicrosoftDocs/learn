@@ -42,6 +42,8 @@ To begin, we'll define an environment variable in the Cloud Shell called **ACR_N
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
     The following snippet is an example response from the `az acr create` command. In this example, the registry name was *myACR*. Note that the loginServer value below is the registry name in lowercase, by default.  
+    
+    Make sure to note the value returned for the `location` value as we'll need in a later exercise.
 
     ```output
     {

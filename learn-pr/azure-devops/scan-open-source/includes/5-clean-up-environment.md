@@ -20,9 +20,6 @@ To complete the work item:
 
 ## Disable the pipeline or delete your project
 
-> [!IMPORTANT]
-> You can skip this part if you plan to continue to the next module using the same Azure DevOps project.
-
 Each module in this learning path provides a template you can run to create a clean environment for the duration of the module.
 
 Running multiple templates gives you multiple Azure Pipelines projects, each pointing to the same GitHub repository. This can trigger multiple pipelines to run each time you push a change to your GitHub repository, which can cause you to run out of free build minutes on our hosted agents. Therefore, it's important that you disable or delete your pipeline before moving on to the next module.

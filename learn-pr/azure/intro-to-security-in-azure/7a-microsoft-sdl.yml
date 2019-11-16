@@ -5,8 +5,8 @@ metadata:
   title: Understand Security Considerations for Application Lifecycle Management Solutions
   description: Learn about the Microsoft Security Development Lifecycle process
   ms.date: 9/1/2019
-  author: markjulmar
-  ms.author: marksm
+  author: patridge
+  ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

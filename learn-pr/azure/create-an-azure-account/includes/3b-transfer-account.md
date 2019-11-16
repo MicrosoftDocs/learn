@@ -26,4 +26,4 @@ Occasionally, you might need to transfer a subscription from one billing account
 
 1. Azure completes the subscription transfer.
 
-At this point, billing ownership of the Azure subscription, would be transferred to the new subscription. The details for this process are [in the documentation](https://docs.microsoft.com/azure/billing/billing-subscription-transfer).
+At this point, billing ownership of the Azure subscription would be transferred to the new owner. The details for this process are [in the documentation](https://docs.microsoft.com/azure/billing/billing-subscription-transfer).
