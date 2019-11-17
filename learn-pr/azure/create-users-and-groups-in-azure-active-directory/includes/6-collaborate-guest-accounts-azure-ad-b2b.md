@@ -7,7 +7,7 @@ Azure Active Directory (Azure AD) business-to-business (B2B) allows you to add p
 
 In any scenario where external users need temporary or restricted access to your organization's resources, give them guest user access. You can grant guest user access with the appropriate restrictions in place. Then remove access when the work is done.
 
-You can use the Azure portal to invite B2B collaboration users. Invite guest users to the directory, group, or application. After you invite a user, their account is added to Azure AD as a guest account.
+You can use the Azure portal to invite B2B collaboration users. Invite guest users to the Azure AD organization, group, or application. After you invite a user, their account is added to Azure AD as a guest account.
 
 The guest can get the invitation through email. Or you can share the invitation to an application by using a direct link. The guest then redeems their invitation to access the resources.
 

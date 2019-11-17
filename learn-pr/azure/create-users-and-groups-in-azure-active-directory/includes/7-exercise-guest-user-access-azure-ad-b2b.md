@@ -1,10 +1,10 @@
 So the external and internal developer teams can work together, you decide to create guest user access for the external developer team. 
 
-You'll use the Azure portal to invite B2B collaboration users. You can invite guest users to a directory, group, or application. After you invite a user, their account is added to Azure Active Directory (Azure AD), with a guest user type.
+You'll use the Azure portal to invite B2B collaboration users. You can invite guest users to a Azure Active Directory (Azure AD) organization, group, or application. After you invite a user, their account is added to Azure AD, with a guest user type.
 
-After adding a guest user to the directory, send them a direct link to a shared app. Have the guest user open the redemption URL in the invitation email.
+After adding a guest user to the organization, send them a direct link to a shared app. Have the guest user open the redemption URL in the invitation email.
 
-## Add guest users to the directory
+## Add guest users to the organization
 
 1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>).
 
@@ -18,13 +18,13 @@ After adding a guest user to the directory, send them a direct link to a shared 
 
 1. Notice that the user now appears in the list of users, and has Guest as user type.
 
-You've added a guest user to the directory.
+You've added a guest user to the organization.
 
 ## Add guest users to a group
 
-1. In your Azure AD directory, select **Groups** and then select the **Developers group** in the list of groups.
+1. In your Azure AD organization, select **Groups** and then select the **Developers group** in the list of groups.
 1. Select **Members >  Add members**.
-1. Search for the guest account you added to the directory.
+1. Search for the guest account you added to the organization.
 1. Select the account and click **Select**.  
 1. You'll now see the user in the list of members for this group.
 
@@ -32,7 +32,7 @@ You've added a guest user to a group.
 
 ## Add guest users to an application
 
-1. In your Azure AD directory, select **Enterprise Applications** > **All Applications**.  
+1. In your Azure AD organization, select **Enterprise Applications** > **All Applications**.  
 1. Select **New Application**.
 
    ![Screenshot that shows the New application button](../media/7-enterprise-application.png)
@@ -63,7 +63,7 @@ You've added a guest user to an application.
 
  If the guest user didn't receive the first email invitation, you can resend an invitation email.
 
-1. In your Azure AD directory, select **Users**.
+1. In your Azure AD organization, select **Users**.
 1. Select the user.
 1. Select **Resend invitation**.
 
