@@ -9,7 +9,7 @@ metadata:
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 7
+durationInMinutes: 5
 azureSandbox: true
 content: |
   [!include[](includes/5-exercise-customize-directory-branding.md)]
