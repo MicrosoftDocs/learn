@@ -10,9 +10,9 @@
 
 ### Content/Media/assets
 - [X ] Remove locale from urls
-- [ ] Final images/screenshots are present
+- [ X] Final images/screenshots are present
 - [ X] Badge images are present
-- [ ] Verify Acrolinx score for all content (score > 80)
+- [X ] Verify Acrolinx score for all content (score > 80)
 
 ### Index.yml
 - [X ] *title* is set
@@ -31,10 +31,10 @@
 - [X ] *title* is set
 - [ X] *ms.date* is set 
 - [ X] *author* and *ms.author* are set
-- [ ] *durationInMinutes* is set and IS ACCURATE
-- [ ] *interactive* is set to **bash** or **azure-portal** (if exercise)
-- [ ] *azureSandbox* is set to true if needed
-- [ ]  Knowledge checks reviewed for spelling and accuracy
+- [ X] *durationInMinutes* is set and IS ACCURATE
+- [ X] *interactive* is set to **bash** or **azure-portal** (if exercise)
+- [ X] *azureSandbox* is set to true if needed
+- [ X]  Knowledge checks reviewed for spelling and accuracy
 
 ### Exercises
-- [ ] All exercise units have *Exercise - * prefix on titles
+- [X ] All exercise units have *Exercise - * prefix on titles
