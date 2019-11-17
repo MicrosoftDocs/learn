@@ -1,8 +1,8 @@
 In this unit, you'll configure and test SSPR  using your mobile phone. You'll need to use your mobile phone to complete the password reset process in this exercise.
 
-## Create a Directory
+## Create an Azure AD organization
 
-The default directory in the Azure Sandbox doesn't support SSPR. So in this exercise, let's create a second directory and switch to it:
+The default Azure AD organization in the Azure Sandbox doesn't support SSPR. So in this exercise, let's create a second organization and switch to it:
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **+ Create a resource**.
 1. In the **Search the Marketplace** textbox, type **Directory**, and then press Enter
@@ -16,12 +16,12 @@ The default directory in the Azure Sandbox doesn't support SSPR. So in this exer
     | Country or region | United States |
     | | |
 
-1. When the directory has been created press F5 to refresh the page, then in the top-right, click your user account, and then click **Switch directory**.
-1. Click the directory you just created.
+1. When the organization has been created press F5 to refresh the page, then in the top-right, click your user account, and then click **Switch directory**.
+1. Click the organization you just created.
 
 ## Create an Azure AD Premium P2 trial subscription
 
-Now, we must obtain a trial Premium subscription for the directory, to test SSPR:
+Now, we must obtain a trial Premium subscription for the organization, to test SSPR:
 
 1. Go to **Azure Active Directory** > **Password reset**.
 1. Click **Get a free Premium trial to use this feature**.
@@ -85,7 +85,7 @@ Now, you're ready to enable SSPR for the group:
 
 Now that the SSPR configuration is complete, we can register a mobile phone number for the user you created:
 
-1. In a new browser window, navigate to **https://aka.ms/ssprsetup**.
+1. In a new browser window, go to **https://aka.ms/ssprsetup**.
 1. Sign in with the username **birgit@<your directory name>.onmicrosoft.com** and the password that you noted earlier.
 1. If you're asked to replace your password, assign a new password of your choice. Make sure you note the new password.
 1. Next to **Authentication phone is not configured** click **Set it up now**.
@@ -100,7 +100,7 @@ Now that the SSPR configuration is complete, we can register a mobile phone numb
 
 Now let's test whether the user can reset their password:
 
-1. In a new browser window, navigate to **https://aka.ms/sspr**.
+1. In a new browser window, go to **https://aka.ms/sspr**.
 1. In the **Get back into your account** page, in the **User ID** textbox, type **birgit@<your directory name>.onmicrosoft.com**.
 1. Complete the Captcha, and then click **Next**.
 

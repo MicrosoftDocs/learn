@@ -8,7 +8,7 @@ To complete this exercise, you must have two image files:
  - A page background image. This must be a PNG or JPG files, 1920 x 1080 pixels, and smaller than 300 KB.
  - A company logo image. This must be a PNG or JPG files, 280 x 60 pixels, and smaller than 10 KB.
 
-## Customize directory branding
+## Customize Azure AD organization branding
 
 Let's use Azure Active Directory (Azure AD) to set up the custom branding:
 
@@ -18,11 +18,11 @@ Let's use Azure Active Directory (Azure AD) to set up the custom branding:
 
     ![Screenshot that shows the configure company branding form](../media/5-customize-ui.png)
 
-## Test directory branding
+## Test organization's branding
 
 Now, let's use the account that we created in the last exercise to test the branding:
 
-1. In a new browser window, navigate to **https://login.microsoft.com**.
+1. In a new browser window, go to **https://login.microsoft.com**.
 1. Pick the account **birgit@<your directory name>.onmicrosoft.com**. Your custom branding is displayed.
 1. Enter the password you noted in the previous exercise to authenticate.
 
