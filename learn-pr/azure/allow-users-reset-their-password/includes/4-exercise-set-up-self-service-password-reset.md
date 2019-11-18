@@ -27,6 +27,7 @@ Now activate a trial Premium subscription for the organization so you can test S
 1. Go to **Azure Active Directory** > **Password reset**.
 1. Click **Get a free Premium trial to use this feature**.
 1. Under **AZURE AD PREMIUM P2**, expand **Free trial** and then click **Activate**.
+1. Refresh the browser to see the **Password reset - Properties** page.
 
 ## Create a group 
 
