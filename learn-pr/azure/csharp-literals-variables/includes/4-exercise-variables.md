@@ -24,7 +24,7 @@ Assigning a value is also referred to as "setting the variable", or simply, a "s
 
 ### Step 3:  Attempt to improperly assign a value to a variable.
 
-It's important to notice that assignment happens from left to right.  If you reverse the order, you'll confuse the C# compiler.
+It's important to notice that assignment happens from right to left.  In other words, the C# compiler must first understand the value on the right side of the assignment operator, then it can perform the assignment to the variable on the left side of the assignment operator.  If you reverse the order, you'll confuse the C# compiler.
 
 Modify the code you wrote in Step 2 to match the following code:
 
