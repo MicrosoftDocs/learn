@@ -2,7 +2,7 @@ Along with our foundational principles and guidelines at Microsoft, we have also
 
 Watch this video from Dr. Sarah Bird, Principal Program Manager for Azure Machine Learning at Microsoft, as she describes some tools and resources that can help organizations address concerns related to the following principles: security and privacy, fairness, inclusiveness, reliability and safety, transparency, and accountability.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3NW80]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4b8Iv]
 
 In this video, you heard Dr. Sarah Bird explain some of the tools that help combat new AI-specific security and privacy threats and those that help test and monitor for reliability. Dr. Bird says that it’s important to make sure AI works well for everyone using guidelines, assessment tools, mitigation techniques, and continuous monitoring. Finally, tools for transparency and accountability help ensure that AI models are adhering to other ethical principles.
 

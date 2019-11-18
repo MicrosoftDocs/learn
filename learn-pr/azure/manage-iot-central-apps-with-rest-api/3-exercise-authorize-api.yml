@@ -14,3 +14,10 @@ azureSandbox: true
 interactive: bash
 content: |
   [!include[](includes/3-exercise-authorize-api.md)]
+tasks:
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.IoTCentral/IoTApps"
+  hint: "Use the instructions above to create an IoT Central application."
