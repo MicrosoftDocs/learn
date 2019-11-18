@@ -13,20 +13,20 @@ durationInMinutes: 2
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following helper methods won't help you if you need to eliminate the char `-` from a string?"
+  - content: "You want to find the next index of either the `-` char, the `=` char, or the `_` char.  Which method should you use?"
     choices:
     - content: "IndexOfAny()"
       isCorrect: true
-      explanation: "Correct!  Since we already know that we only need to eliminate the char `-` from a string, we should prefer using `IndexOf()` instead."
+      explanation: "Correct!  Use `IndexOfAny()` when you need to retrieve the next index for any of several chars in a string."
     - content: "Remove()"
       isCorrect: false
-      explanation: "Actually, the `Remove()` method could easily eliminate a char from a string."
+      explanation: "The `Remove()` method won't help you find an index."
     - content: "IndexOf()"
       isCorrect: false
-      explanation: "The `IndexOf()` could be used to find the position of the char `-` in a string.  You would then use `Replace()` to eliminate it."
+      explanation: "The `IndexOf()` could be used to find the position of a single char in a string.  However, in this case we want to find any of several chars."
     - content: "Replace()"
       isCorrect: false
-      explanation: "Actually, the `Replace()` method could easily eliminate a char from a string."
+      explanation: "The `Replace()` method won't help you find an index."
   - content: "What is a constant variable?"
     choices:
     - content: "A magic string or number."
