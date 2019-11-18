@@ -88,13 +88,13 @@ if ($containsWord -contains $true) {
     Name = "Release"}
   $vg = Get-VSTeamVariableGroup @methodParameters
   $vars = @{}
-  $vg.value.variables | Get-Member -MemberType *Property | %{$vars.($_.Name) = $vg.value.variables.($_.Name)}
+  $vg.variables | Get-Member -MemberType *Property | %{$vars.($_.Name) = $vg.variables.($_.Name)}
   $varName = "schemaChanged"
   $vars.$varName= @{}
   $vars.$varName.value = "True"
   $vars.$varName.isSecret = $false
   $methodParameters = @{
-    id = $vg.value.id
+    id = $vg.id
     ProjectName = "$(System.TeamProject)"
     Name = "Release"
     Description = ""
@@ -113,10 +113,10 @@ $methodParameters = @{
   Name = "Release"}
 $vg = Get-VSTeamVariableGroup  @methodParameters 
 $vars = @{}
-$vg.value.variables | Get-Member -MemberType *Property | %{$vars.($_.Name) = $vg.value.variables.($_.Name)}
+$vg.variables | Get-Member -MemberType *Property | %{$vars.($_.Name) = $vg.variables.($_.Name)}
 $vars.Remove("schemaChanged")
 $methodParameters = @{
-  id = $vg.value.id
+  id = $vg.id
   ProjectName = "$(System.TeamProject)"
   Name = "Release"
   Description = ""
@@ -131,9 +131,11 @@ Here, you add a condition to the `DBAVerificationApply` stage to check that the 
 
 ```yml
 - stage: DBAVerificationApply
+  variables:
+    - group: 'Release'
   displayName: 'Apply database schema changes'
   dependsOn: DBAVerificationScript
-  condition: and(succeeded(), eq(variables['schemaChanged'], 'True'))
+  condition: and(succeeded('DBAVerificationScript'), eq(variables['schemaChanged'], True))
 ```
 
 ## Make the changes to the pipeline
@@ -169,7 +171,7 @@ The VSTeam library needs to access your Azure DevOps organization, so it require
 1. Open the *azure-pipelines.yml* file you got when you switched to the `schema-changes` branch.
 1. Copy the new pipeline below and replace the code that is already in the *azure-pipelines.yml* file.
 
-    [!code-yml[](code/azure-pipelines2.yml?highlight=131-163,168,196-217,221-229)]
+    [!code-yml[](code/azure-pipelines2.yml?highlight=131-163,166-170,198-219,223-231)]
 
     This pipeline adds to the PowerShell script to check the generated SQL script for the keywords **CREATE**, **ALTER**, or **DROP**. If any of these words are found, the script creates a variable named `schemaChanged` to the pipeline variable group. Then a condition is added to the `DBAVerificationApply` stage to check for this variable. If this variable is `True`, there is a change that needs approval. If the variable is not present, then there are no changes in the script and this stage is skipped because the condition fails.
 
