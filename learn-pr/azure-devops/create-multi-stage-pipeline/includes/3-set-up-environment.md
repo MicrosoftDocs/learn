@@ -1,11 +1,11 @@
 In this section, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You also create the Azure App Service environments that you will deploy to.
 
-To do this, you:
+To accomplish these goals, you:
 
 > [!div class="checklist"]
 > * Add a user to ensure Azure DevOps can connect to your Azure subscription.
 > * Set up an Azure DevOps project for this module.
-> * Move the work item for this module on Azure Boards to the **Doing** column.
+> * On Azure Boards, move the work item for this module to the **Doing** column.
 > * Make sure your project is set up locally so that you can push changes to the pipeline.
 > * Create the Azure App Service environments by using the Azure CLI in Azure Cloud Shell.
 > * Create pipeline variables that define the names of your App Service environments.
@@ -15,11 +15,11 @@ To do this, you:
 
 To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). You can get started with Azure for free.
 
-Although you don't need an Azure subscription to work with Azure DevOps, here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, you need to sign in to both your Azure subscription and your Azure DevOps organization under the same Microsoft account.
+You don't need an Azure subscription to work with Azure DevOps. But here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, you need to sign in to both your Azure subscription and your Azure DevOps organization under the same Microsoft account.
 
-If you use different Microsoft accounts to sign into Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account you use to sign in to Azure. [Add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?view=azure-devops&tabs=browser&azure-portal=true) explains how to add a user. When you add the user, choose the **Basic** access level.
+If you use different Microsoft accounts to sign into Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. [Add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?view=azure-devops&tabs=browser&azure-portal=true) explains how to add a user. When you add the user, choose the **Basic** access level.
 
-Then sign out of Azure DevOps and sign in again under the Microsoft account you use to sign in to your Azure subscription.
+Then sign out of Azure DevOps and sign in again under the Microsoft account that you use to sign in to your Azure subscription.
 
 ## Get the Azure DevOps project
 
@@ -105,7 +105,7 @@ In this module, you bring up three App Service instances using the Azure command
     ![Selecting Cloud Shell from the menu bar](../../shared/media/azure-portal-menu-cloud-shell.png)
 
     > [!NOTE]
-    > Cloud Shell requires an Azure storage resource to persist any files you create while working in Cloud Shell. On first launch, Cloud Shell prompts to create a resource group, storage account, and Azure Files share on your behalf. This is a one-time step and will be automatically attached for all future Cloud Shell sessions.
+    > Cloud Shell requires an Azure storage resource to persist any files that you create while you work in Cloud Shell. On first launch, Cloud Shell prompts to create a resource group, storage account, and Azure Files share on your behalf. This is a one-time step and will be automatically attached for all future Cloud Shell sessions.
 
 ### Select an Azure region
 

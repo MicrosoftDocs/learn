@@ -73,7 +73,7 @@ Mara updates her drawing on the whiteboard. She replaces "Deploy" with "Dev" to 
 
 In Azure Pipelines, a _condition_ enables you to run a task or job based on the state of the pipeline. You worked with conditions in previous modules.
 
-Remember, some of the conditions you can specify are:
+Remember, some of the conditions that you can specify are:
 
 > [!div class="checklist"]
 > * Only when all previous dependent tasks have succeeded.
@@ -127,7 +127,7 @@ The first condition in the `and()` function checks whether the previous task suc
 In YAML, you use the pipe (`|`) syntax to define a string that spans multiple lines. You could define the condition on a single line, but we write it this way to make it more readable.
 
 > [!NOTE]
-> In this module, we use the _release_ branch as an example. You can combine conditions to define the behavior you need. For example, you could build a condition that runs the stage only when the build is triggered by a pull request against the _master_ branch.
+> In this module, we use the _release_ branch as an example. You can combine conditions to define the behavior that you need. For example, you could build a condition that runs the stage only when the build is triggered by a pull request against the _master_ branch.
 
 You'll work with a more complete example shortly when you set up the _Dev_ stage.
 
@@ -267,9 +267,9 @@ Recall that in [Create a release pipeline with Azure Pipelines](/learn/modules/c
 
 [!code-yml[](code/2-azure-pipelines.yml?highlight=8)]
 
-In this example, Azure Pipelines creates the dev environment for you if it doesn't already exist. You can also define an environment that includes specific criteria for your release. The criteria can specify which pipelines can deploy to that environment and what human approvals are needed to promote the release from one stage to the next.
+In this example, Azure Pipelines creates the **dev** environment for you if it doesn't already exist. You can also define an environment that includes specific criteria for your release. The criteria can specify which pipelines can deploy to that environment and what human approvals are needed to promote the release from one stage to the next.
 
-Later in this module, you'll define the staging environment and assign yourself as an approver to promote the _Space Game_ web application from the _Test_ stage to _Staging_.
+Later in this module, you'll define the **staging** environment and assign yourself as an approver to promote the _Space Game_ web application from the _Test_ stage to _Staging_.
 
 ## Automate as little or as much as you need
 
