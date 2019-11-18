@@ -2,7 +2,7 @@ You can take different measures to build resilience for your data.
 
 Your organization has multiple workloads spread across different environments. All workloads rely on data that's kept safe and timely.
 
-In this unit, you'll learn how Always On Availability Groups help replicate your data. You'll see how automated backups and auto failover in Azure SQL Database helps keep data safe. You will also learn how you can use Azure Cosmos DB's geo-replication feature to transparently replicate data to other regions and have it accessible for reading and writing.
+In this unit, you'll learn how Always On Availability Groups help replicate your data. You'll see how automated backups and auto failover in Azure SQL Database helps keep data safe. You will also learn how you can use the Azure Cosmos DB geo-replication feature to transparently replicate data to other regions and have it accessible for reading and writing.
 
 ## Replicate databases with Always On Availability Groups
 
@@ -38,12 +38,12 @@ Databases can be restored to a version that's been backed up. If you've configur
 
 Azure Cosmos DB is a low-latency, multi-model database service that allows you to distribute data globally and easily scale, elastically and rapidly.
 
-In Cosmos DB, all data is replicated transparently in the regions you've set for your Cosmos DB account. Cosmos DB saves data inside containers that make up your database, and all your containers are partitioned.
+In Azure Cosmos DB, all data is replicated transparently in the regions you've set for your Azure Cosmos DB account. Azure Cosmos DB saves data inside containers that make up your database, and all your containers are partitioned.
 
 All your partitions are replicated across each region. Inside every region, your partitions are copied before each copy is distributed between different fault domains.
 
-Your data is replicated at least four times. You can set up a Cosmos DB account, and configure your Cosmos DB database to be distributed across five regions. Because you've configured this database for five regions, Cosmos DB will guarantee that you'll have at least 4 x 5 copies of all your data.
+Your data is replicated at least four times. You can set up a Azure Cosmos DB account, and configure your Azure Cosmos DB database to be distributed across five regions. Because you've configured this database for five regions, Azure Cosmos DB will guarantee that you'll have at least 4 x 5 copies of all your data.
 
-You should configure your Cosmos DB database to span at least two regions. The more regions you have, the more resilient your data becomes. You should also explicitly set your Cosmos DB database to have multiple write regions. All your regions will then allow you to perform read and write operations.
+You should configure your Azure Cosmos DB database to span at least two regions. The more regions you have, the more resilient your data becomes. You should also explicitly set your Azure Cosmos DB database to have multiple write regions. All your regions will then allow you to perform read and write operations.
 
-You can also configure zone redundancy for some regions. With this feature, Cosmos DB puts replicas of data across multiple different availability zones in any single region, providing additional resiliency.
+You can also configure zone redundancy for some regions. With this feature, Azure Cosmos DB puts replicas of data across multiple different availability zones in any single region, providing additional resiliency.
