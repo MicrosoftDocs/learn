@@ -67,7 +67,7 @@ You'll create a user flow that lets your users sign up, and sign in to your appl
 
 1. Select the **Sign up and sign in** user flow.
 
-    ![Select a user flow](../media/2-select-user-signin-flow.png)
+    ![Select a user flow](../media/5-select-user-signin-flow.png)
 
 1. In the form that appears, give your user flow a name. Select **Email signup** in the **Identity providers** section. At this point, you could enable multi-factor authentication. However, we'll do it later to show how you can enable multi-factor authentication on existing user flows.
 
