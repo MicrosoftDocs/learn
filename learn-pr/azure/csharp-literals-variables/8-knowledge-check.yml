@@ -14,7 +14,7 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following variable names should be **avoided**."
+  - content: "Which of the following variable names should or must be **avoided**?"
     choices:
     - content: "$DATA"
       isCorrect: true
