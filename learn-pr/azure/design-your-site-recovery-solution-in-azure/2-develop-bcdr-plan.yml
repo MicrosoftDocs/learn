@@ -4,7 +4,7 @@ title: Develop a business continuity and disaster recovery plan
 metadata:
   title: Develop a business continuity and disaster recovery plan
   description: Develop a business continuity and disaster recovery plan
-  ms.date: 11/21/2019
+  ms.date: 11/18/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
@@ -26,7 +26,7 @@ quiz:
     - content: Azure Site Recovery can be used for retaining long-term data, Azure Backup is only used for short-term data retention. You would use Azure Backup to trigger a test failover on from on-premises infrastructure to an Azure infrastructure.
       isCorrect: false
       explanation: Azure Site Recovery is not used for long-term retention of data. Azure Backup is used for long-term data retention. You have 9999 retention points. Daily usage would mean you wouldn't run out of retention points for 27 years. You also would not use Azure Backup to trigger a test failover to another site. Azure Site Recovery is used for this.
-  - content: What are some Azure features that contribute to High Availability of virtual machines?
+  - content: What are some Azure features that contribute to high availability of virtual machines?
     choices:
     - content: Availability Sets, Recovery Zones.
       isCorrect: false
