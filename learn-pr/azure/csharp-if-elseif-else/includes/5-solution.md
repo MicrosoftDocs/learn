@@ -11,7 +11,7 @@ if (daysUntilExpiration == 0)
 }
 else if (daysUntilExpiration == 1)
 {
-    Console.WriteLine("Your subscription exires within a day!");
+    Console.WriteLine("Your subscription expires within a day!");
     discountPercentage = 20;
 }
 else if (daysUntilExpiration <= 5)
