@@ -55,6 +55,6 @@ Here's the main takeaways you've learned so far about variables:
 
 - Variables are temporary values you store in the computer's memory.
 - Before you can use a variable, you have to declare it.
-- To declare a variable. you first select a data type for the kind of data you want to store, and then give the variable a name that follows the rules.
+- To declare a variable, you first select a data type for the kind of data you want to store, and then give the variable a name that follows the rules.
 
 Now that we know how to declare a variable, let's learn how to set, retrieve, and initialize the value of a variable.
