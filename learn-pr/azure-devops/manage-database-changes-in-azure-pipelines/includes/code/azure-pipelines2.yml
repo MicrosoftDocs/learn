@@ -163,9 +163,11 @@ stages:
                   Update-VSTeamVariableGroup @methodParameters}
 
 - stage: DBAVerificationApply
+  variables: 
+    - group: 'Release'
   displayName: 'Apply database schema changes'
   dependsOn: DBAVerificationScript
-  condition: and(succeeded(), eq(variables['schemaChanged'], 'True'))
+  condition: and(succeeded('DBAVerificationScript'), eq(variables['schemaChanged'], True))
   jobs:
   - deployment: DBAVerificationApply
     pool:
