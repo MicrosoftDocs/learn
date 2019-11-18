@@ -6,7 +6,7 @@ In this unit, you'll see how Site Recovery simplifies your business continuity a
 
 ## Simplify your BCDR with Site Recovery
 
-Site Recovery helps you simplify your BCDR. You can configure and manage your replication, failover, and failback, all through the Azure portal, Azure CLI or Azure PowerShell. Use Site Recovery to replicate different types of targets. For example, Site Recovery can help you configure disaster recovery for Azure virtual machines. You can replicate Azure virtual machines from a primary to a secondary region. Your on-premises virtual machines can be replicated too, along with workloads such as SQL Server.
+Site Recovery helps you simplify your BCDR. You can configure and manage your replication, failover, and failback, all through the Azure portal, Azure CLI, or Azure PowerShell. Use Site Recovery to replicate different types of targets. For example, Site Recovery can help you configure disaster recovery for Azure virtual machines. You can replicate Azure virtual machines from a primary to a secondary region. Your on-premises virtual machines can be replicated too, along with workloads such as SQL Server.
 
 When you replicate over to Azure, the replicated virtual machine disks go into Azure storage and are kept resilient as a result. If a failover is triggered, Azure virtual machines are created for you, using the disks replicated from the source.
 
@@ -36,11 +36,11 @@ In this scenario, Azure Backup periodically backs up the files and folders on th
 
 To configure the backup portion of your solution in this scenario, and to protect files and folders, you download and install the Microsoft Azure Recovery Services (MARS) agent. You can then create backup policies and automatically back up your data on a scheduled basis. The MARS agent also lets you restore all your data to either the same source machine, or to an entirely different machine. With Azure Backup, your data is also encrypted before it's backed up.
 
-To set up Site Recovery, you install an Site Recovery Services agent and a Site Recovery Provider on the Hyper-V server. These tools are used for replication and orchestration of failover to Azure. When a failover is triggered, new virtual machines can be created for you based on the machines that have been protected by Site Recovery.
+To set up Site Recovery, you install the Site Recovery Services agent and a Site Recovery Provider on the Hyper-V server. These tools are used for replication and orchestration of failover to Azure. When a failover is triggered, new virtual machines can be created for you based on the machines that have been protected by Site Recovery.
 
 ## Integrate your on-premises network with Site Recovery
 
-You can keep your private IP addresses from on-premises machines and use them for target Azure machines. You create a virtual network in Azure where your virtual machines will be provisioned when failover is triggered. This network acts as an extension of your on-premises network. As part of your failover you'll need establish or configure a site-to-site VPN connection or leverage ExpressRoute for connectivity between Azure and on-premises networks.
+You can keep your private IP addresses from on-premises machines and use them for target Azure machines. You create a virtual network in Azure where your virtual machines will be provisioned when failover is triggered. This network acts as an extension of your on-premises network. As part of your failover, you'll need establish or configure a site-to-site VPN connection or leverage ExpressRoute for connectivity between Azure and on-premises networks.
 
 ## Protect different scenarios with Site Recovery
 
