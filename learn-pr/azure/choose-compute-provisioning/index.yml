@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.choose-compute-provisioning
+metadata:
+  title: Choose a compute provisioning solution for your application
+  description: Discover the services and tools available to automate the deployment and configuration of your Azure infrastructure.
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Choose a compute provisioning solution for your application
+summary: Discover the services and tools available to automate the deployment and configuration of your Azure infrastructure.
+abstract: | 
+  In this module, you will:
+  - Identify the solutions available to provision compute on Azure
+  - Choose an appropriate provisioning platform based on your requirements
+prerequisites: | 
+  - Basic knowledge of Azure virtual machines
+iconUrl: /learn/achievements/choose-compute-provisioning.svg
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.choose-compute-provisioning.1-introduction
+- learn.choose-compute-provisioning.2-provisioning-technologies
+- learn.choose-compute-provisioning.3-azure-native-solutions
+- learn.choose-compute-provisioning.4-third-party-solutions
+- learn.choose-compute-provisioning.5-exercise-deploy-template
+- learn.choose-compute-provisioning.6-summary
+badge:
+  uid: learn.choose-compute-provisioning.badge
