@@ -29,7 +29,7 @@ The user's physical attributes are used for authentication. These are unique hum
 
 **Transactional authentication**
 
-You may not always want to rely only on information provided by a user. Instead, transactional authentication lets you scrutinize characteristics about the user. You could, for example, expect your users to regularly access the network from the United States during work hours. But if there's a sign-in from the other side of the world at midnight, then it would be flagged. 
+You may not always want to rely only on information provided by a user. Instead, transactional authentication lets you scrutinize characteristics about the user. You could, for example, expect your users to regularly access the network from the United States during work hours. But if there's a sign-in from the other side of the world at midnight, then it would be flagged.
 
 You don't have to necessarily block their access. There's a possibility that this particular user is traveling for work. They could be asked to complete an additional verification step before authentication. Transactional authentication gives an additional layer of protection for your network.
 
@@ -86,7 +86,7 @@ original image: https://www.youtube.com/watch?v=sEkw8ZcxtFk -->
 
 When authentication is completed successfully, you'll need to ensure the authenticated user or client is authorized to access the resources or services they're requesting. Authorization can be granular. For example, a particular database user might have the permissions to access and make changes to a single database. But the user couldn't access any other database because they don't have the permissions. 
 
-Permissions can include read, write, delete, and more. You use the <!--CE: Is this correct - or should it say 'write'?-->right permissions for the right user or client. If a user or client switches roles, you can change their permissions to match the new level of access. Give each user or client the least number of permissions needed to get the job done. Never give a user or client any permissions they don't need.
+Permissions can include read, write, delete, and more. You use the right permissions for the right user or client. If a user or client switches roles, you can change their permissions to match the new level of access. Give each user or client the least number of permissions needed to get the job done. Never give a user or client any permissions they don't need.
 
 ### Differences between authentication and authorization
 

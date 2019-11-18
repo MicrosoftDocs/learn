@@ -4,4 +4,4 @@ You explored how authentication and authorization are used to protect a network.
 
 Without an appropriate understanding of security, your network is vulnerable to attacks and  performance issues. This vulnerability can negatively impact your organization from a financial and reputational perspective.
 
-Your investigation has helped you understand how the resources, devices, and users on your network can be better protected. So your organization is better protected financially and reputationally.
+Your investigation has helped you understand how the resources, devices, and users on your network can be better protected. So your organization is better protected financially and its reputation is also protected.
