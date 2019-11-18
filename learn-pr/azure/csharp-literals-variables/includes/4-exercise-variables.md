@@ -1,4 +1,4 @@
-Since variables are temporary storage containers for data, they're meant to be *written to* and *read from*.  You'll get a chance do both in the following exercise.
+Since variables are temporary storage containers for data, they're meant to be *written to* and *read from*.  You'll get a chance to do both in the following exercise.
 
 ## Exercise - Working with variables
 
