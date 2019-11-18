@@ -5,8 +5,12 @@ metadata:
   title: Introduction
   description: Introduction
   ms.date: 10/02/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: 
+    - nickwalkmsft
+    - burkeholland
+  ms.author: 
+    - nickwalk
+    - buhollan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

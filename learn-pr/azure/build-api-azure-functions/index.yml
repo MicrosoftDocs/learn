@@ -1,29 +1,37 @@
 ### YamlMime:Module
 uid: learn.azure.build-api-azure-functions
 metadata:
-  title: TODO Build APIs with Azure Functions
-  description: TODO Build APIs with Azure Functions
+  title: Build Serverless APIs with Azure Functions
+  description: Build Serverless APIs with Azure Functions
   ms.date: 10/02/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author:
+    - nickwalkmsft
+    - burkeholland
+  ms.author:
+    - nickwalk
+    - buhollan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: TODO Build APIs with Azure Functions
-summary: TODO Build APIs with Azure Functions
-abstract: TODO Build APIs with Azure Functions
-prerequisites: TODO
+title: Build Serverless APIs with Azure Functions
+summary: Build Serverless APIs with Azure Functions
+abstract: Build Serverless APIs with Azure Functions
+prerequisites:
+  - Must have [Node.js](https://nodejs.org/en/) installed
+  - Must have [Visual Studio Code](https://code.visualstudio.com/) installed
+  - Must have [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) installed
+  - Must have the [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension installed
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
-- beginner
+  - beginner
 roles:
-- developer
+  - developer
 products:
-- azure
-- azure-functions
+  - azure
+  - azure-functions
 units:
-- learn.azure.build-api-azure-functions.1-introduction
-- learn.azure.build-api-azure-functions.2-content
-- learn.azure.build-api-azure-functions.3-exercise
-- learn.azure.build-api-azure-functions.4-summary
+  - learn.azure.build-api-azure-functions.1-introduction
+  - learn.azure.build-api-azure-functions.2-content
+  - learn.azure.build-api-azure-functions.3-exercise
+  - learn.azure.build-api-azure-functions.4-summary
 badge:
   uid: learn.azure.build-api-azure-functions.badge
