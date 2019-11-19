@@ -20,7 +20,7 @@ quiz:
     choices:  
     - content: 'pressure'
       isCorrect: false
-      explanation: Pressure sensors are common, but it is not a measure of vibration.
+      explanation: Pressure sensors are common, but not to measure vibration.
     - content: 'decibels'
       isCorrect: false
       explanation: Sound vibrations could be measured in decibels, but, realistically, not conveyor belts.
@@ -68,7 +68,7 @@ quiz:
       explanation: Bi-directional communications is the role of an IoT Hub.
     - content: 'Azure Event Hubs is a fully managed service to move certain workloads to the edge of the network.'
       isCorrect: false
-      explanation: Moving work to the edge of the network is the role of Azure Iot Edge.
+      explanation: Moving work to the edge of the network is the role of Azure IoT Edge.
     - content: 'Azure Event Hubs is a data streaming platform and event ingestion service. It can receive and process millions of events per second.'
       isCorrect: true
       explanation: The processed event data can be stored, run through Azure Stream Analytics, and other cloud processes.

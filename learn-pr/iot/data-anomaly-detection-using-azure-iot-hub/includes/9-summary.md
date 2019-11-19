@@ -1,11 +1,11 @@
 In this module, you learned how to:
 
-- Create a custom Azure IoT Hub, using the Azure portal
-- Create a device ID for a custom device, using the Azure portal
-- Create an app to simulate a device monitoring conveyor belt vibrations
-- Create an app to provide a back-end service to listen for the telemetry sent by the device
-- Add stream analytics, and machine learning, to process the incoming telemetry
-- Add BI output to visualize the data anomalies
+- Create an Azure IoT Hub, using the Azure portal
+- Create an Azure IoT Hub device identity, using the Azure portal
+- Create a C# app to send device telemetry to the IoT Hub, using Visual Studio or Visual Studio code
+- Create a message route, through to blob storage, using the Azure portal
+- Create a second message route, through to an Azure Analytics job, using the Azure portal
+- Create a dashboard to visualize data anomalies, using Power BI
 
 ![Graph of smooth vibrations](../media/vibration3.png)
 
