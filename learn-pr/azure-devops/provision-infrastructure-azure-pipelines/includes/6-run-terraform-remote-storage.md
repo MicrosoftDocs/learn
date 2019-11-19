@@ -1,19 +1,19 @@
-In this exercise, you run a second Terraform plan that provisions Azure App Service. The Terraform plan you run here more closely resembles what the Tailspin team needs to deploy the _Space Game_ website.
+In this exercise, you run a second Terraform plan that provisions Azure App Service. The Terraform plan that you run here more closely resembles what the Tailspin team needs to deploy the _Space Game_ website.
 
-The process you follow is similar to what you did earlier. This time, you:
+The process that you follow is similar to what you did earlier. This time, you:
 
 > [!div class="checklist"]
 > * Maintain the state file remotely by using Azure Blob storage.
 > * Use a service principal to authenticate access to Azure.
 
-You'll again work from Cloud Shell. Doing so helps you verify that you're able to authenticate with Azure and maintain the state file remotely. Later in this module, you'll apply the same configuration from Azure Pipelines.
+You'll again work from Azure Cloud Shell. Doing so helps you verify that you're able to authenticate with Azure and maintain the state file remotely. Later in this module, you'll apply the same configuration from Azure Pipelines.
 
-## Bring up Cloud Shell through the Azure portal
+## Open Cloud Shell through the Azure portal
 
-As you did earlier, bring up Cloud Shell through the Azure portal. Here's a quick refresher on how to do that.
+As you did earlier, open Cloud Shell through the Azure portal:
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
-1. From the menu bar, select Cloud Shell. When prompted, select the **Bash** experience.
+1. From the menu bar, select **Cloud Shell**. When you're prompted, select the **Bash** experience.
 
 ## Create a working directory
 
@@ -38,7 +38,7 @@ Similar to what you did earlier, here you create a directory to hold your Terraf
 
 ## Download the Terraform plan
 
-Here, you download a more complete Terraform plan to a file named *main.tf*.
+Download a more complete Terraform plan to a file named *main.tf*.
 
 1. Run this `curl` command to download the Terraform plan from GitHub.
 
@@ -59,13 +59,11 @@ Here, you download a more complete Terraform plan to a file named *main.tf*.
         > [!NOTE]
         > In this part, you won't deploy the _Space Game_ website to App Service. You'll do that later, when you provision your infrastructure from Azure Pipelines.
 
-    * This configuration provides two output values: the name of the App Service and its host name. Later in this module, you'll write the name of the App Service as a pipeline variable that can later be read by the deployment task.
+    * This configuration provides two output values: the name of the App Service instance and its host name. Later in this module, you'll write the name of the App Service instance as a pipeline variable that the deployment task can read.
 
 ## Create the variables file
 
-The Terraform plan you use here requires the same variables file, *terraform.tfvars*, that you used earlier.
-
-The easiest way to reuse this file is to copy the one you set up earlier.
+The Terraform plan that you use here requires the same variables file, *terraform.tfvars*, that you used earlier. The easiest way to reuse this file is to copy it.
 
 1. Run the following command to copy this file from the *~/mslearn-terraform-local-state* directory to the current directory.
 
@@ -73,7 +71,7 @@ The easiest way to reuse this file is to copy the one you set up earlier.
     cp ~/mslearn-terraform-local-state/terraform.tfvars .
     ```
 
-1. Print *terraform.tfvars* to confirm that it copied over correctly.
+1. Print *terraform.tfvars* to confirm that it was copied over correctly.
 
     ```bash
     cat terraform.tfvars
@@ -89,7 +87,7 @@ The easiest way to reuse this file is to copy the one you set up earlier.
 
 The names of both your storage account and your service principal need to be unique.
 
-For learning purposes, here you generate a random number that you'll include in the name of each.
+For learning purposes, here you generate a random number that you'll include in each name.
 
 1. From Cloud Shell, generate a random number and assign it to the `UNIQUE_ID` Bash variable.
 
@@ -109,9 +107,9 @@ For learning purposes, here you generate a random number that you'll include in 
     13904
     ```
 
-## Create Blob storage to hold the state file
+## Create a Blob storage account
 
-Here, you create a Blob storage account to hold your state file. To do so, you:
+Create a Blob storage account to hold your state file. To do so, you:
 
 1. Create a resource group to hold your storage account.
 1. Create a storage account.
@@ -119,7 +117,7 @@ Here, you create a Blob storage account to hold your state file. To do so, you:
 
 To create the Blob storage account:
 
-1. Run the following `az group create` command to create a resource group that's named **tf-storage-rg**.
+1. Run the following `az group create` command to create a resource group named "tf-storage-rg."
 
     You can use the region that's shown here or replace it with the one you chose earlier.
 
@@ -130,7 +128,7 @@ To create the Blob storage account:
     ```
 
     > [!NOTE] 
-    > You create a resource group that's separate from the one you use to manage your Terraform configuration to ensure that the resource group is not destroyed when you run `terraform destroy`.
+    > You create a resource group that's separate from the one you use to manage your Terraform configuration. This separation ensures that the resource group is not destroyed when you run `terraform destroy`.
 
 1. Run the following `az storage account create` command to create a storage account whose name includes your unique ID.
 
@@ -141,7 +139,7 @@ To create the Blob storage account:
       --sku Standard_LRS
     ```
 
-1. Run the following `az storage account list` command to print the name of the storage account you just created.
+1. Run the following `az storage account list` command to print the name of the storage account that you just created.
 
     ```azurecli
     az storage account list \
@@ -158,7 +156,7 @@ To create the Blob storage account:
 
     Note this name for later.
 
-1. Run the following `az storage container create` command to create a storage container named **tfstate** in your storage account.
+1. Run the following `az storage container create` command to create a storage container named "tfstate" in your storage account.
 
     ```azurecli
     az storage container create \
@@ -181,7 +179,7 @@ To create the Blob storage account:
     tfstate
     ```
 
-## Add the backend configuration to your plan
+## Add the back-end configuration to your plan
 
 Your Terraform plan file, *main.tf*, contains a `terraform` block that contains a `backend` block that's associated with Azure.
 
@@ -194,7 +192,7 @@ terraform {
 }
 ```
 
-To specify your Blob storage account in this `backend` block, you could modify your plan like this:
+To specify your Blob storage account in this `backend` block, you can modify your plan like this:
 
 ```terraform
 terraform {
@@ -209,13 +207,13 @@ terraform {
 }
 ```
 
-You would replace `storage_account_name` with the name of your storage account.
+You replace `storage_account_name` with the name of your storage account.
 
-To make the configuration easier to reuse, here you write a file named *backend.tfvars* that contains this information. When you initialize Terraform, you provide this file as an argument so that Terraform can initialize its state to use a remote state file.
+To make the configuration easier to reuse, here you write a file named *backend.tfvars* that contains this information. When you initialize Terraform, you provide this file as an argument. Terraform can then initialize its state to use a remote state file.
 
 To create the *backend.tfvars* file:
 
-1. Write the resource group name, **tf-storage-rg** to *backend.tfvars*.
+1. Write the resource group name "tf-storage-rg" to *backend.tfvars*.
 
     ```bash
     echo 'resource_group_name = "tf-storage-rg"' | tee backend.tfvars
@@ -228,12 +226,12 @@ To create the *backend.tfvars* file:
       --query [].name \
       --output tsv)'"' | tee -a backend.tfvars
     ```
-1. Append the container name, **tfstate** to *backend.tfvars*.
+1. Append the container name "tfstate" to *backend.tfvars*.
 
     ```bash
     echo 'container_name = "tfstate"' | tee -a backend.tfvars
     ```
-1. Append the state file name, **terraform.tfstate** to *backend.tfvars*.
+1. Append the state file name "terraform.tfstate" to *backend.tfvars*.
 
     ```bash
     echo 'key = "terraform.tfstate"' | tee -a backend.tfvars
@@ -258,7 +256,7 @@ To create the *backend.tfvars* file:
 
 ## Run Terraform to use the remote state file
 
-Here, you run Terraform to apply your configuration. This time, you use a remote state file that's maintained in Blob storage.
+Run Terraform to apply your configuration. This time, you use a remote state file that's maintained in Blob storage.
 
 1. Run the following `terraform init` command to initialize Terraform.
 
@@ -268,7 +266,7 @@ Here, you run Terraform to apply your configuration. This time, you use a remote
 
     This command includes the `-backend-config` argument to specify your *backend.tfvars* file.
 
-    You see from the output that Terraform initializes the backend and then downloads the plugins it needs.
+    You see from the output that Terraform initializes the back end and then downloads the necessary plug-ins.
 
     > [!IMPORTANT]
     > If you don't finish this exercise, be sure to run the `terraform destroy` command shown here to ensure that you're not charged for Azure resources you no longer need.
@@ -279,7 +277,7 @@ Here, you run Terraform to apply your configuration. This time, you use a remote
     terraform plan
     ```
 
-    Like before, you see that the plan includes the resource group, the random number, the App Service plan, and the App Service instance.
+    You again see that the plan includes the resource group, the random number, the App Service plan, and the App Service instance.
 
     In practice, you would verify that this plan meets your infrastructure requirements.
 
@@ -291,15 +289,15 @@ Here, you run Terraform to apply your configuration. This time, you use a remote
 
     This time, you specify the `-auto-approve` argument to skip the prompt that confirms the operation. Later, you use this argument to automatically apply the configuration in Azure Pipelines.
 
-1. Verify that the configuration succeeded. To do so, run `terraform output` to print your output values. Then, from a separate browser tab, navigate to the host name that's shown.
+1. Verify that the configuration succeeded. To do so, run `terraform output` to print your output values. Then, from a separate browser tab, go to the host name that's shown.
 
     ```bash
     terraform output
     ```
 
-    As before, you see the default App Service home page.
+    You see the default App Service home page.
 
-    ![](../media/6-default-website.png)
+    ![App Service home page](../media/6-default-website.png)
 
 1. As an optional step, download the state file from Blob storage to */tmp/terraform.tfstate* and view its contents.
 
@@ -315,7 +313,7 @@ Here, you run Terraform to apply your configuration. This time, you use a remote
     cat /tmp/terraform.tfstate
     ```
 
-    Like before, the state file describes the current state of your Azure resources. This time, the state file is maintained in Blob storage.
+    The state file describes the current state of your Azure resources. This time, the state file is maintained in Blob storage.
 
 1. Run the following `terraform destroy` command to destroy your resources.
 
@@ -323,7 +321,7 @@ Here, you run Terraform to apply your configuration. This time, you use a remote
     terraform destroy -auto-approve
     ```
 
-    Like before, the `-auto-approve` argument skips the prompt that confirms the operation.
+    The `-auto-approve` argument skips the prompt that confirms the operation.
 
 ## Create a service principal
 
@@ -331,7 +329,7 @@ You've configured Terraform to access the state file remotely. Next, you create 
 
 During the process, you collect information about your service principal that you'll later need when you run your configuration in Azure Pipelines.
 
-1. Run the following `az account list` to get your Azure subscription ID.
+1. Run the following `az account list` command to get your Azure subscription ID.
 
     ```azurecli
     ARM_SUBSCRIPTION_ID=$(az account list \
@@ -353,11 +351,11 @@ During the process, you collect information about your service principal that yo
 
     The service principal's name begins with "http://tf-sp-" and ends with your unique ID.
 
-    **Contributor** is the default role for a service principal. This role has full permissions to read and write to an Azure subscription.
+    *Contributor* is the default role for a service principal. This role has full permissions to read and write to an Azure subscription.
 
     The output from this command is your only opportunity to retrieve the generated password for the service principal. The `--query` argument reads the password field from the output. The output is assigned to the Bash variable named `ARM_CLIENT_SECRET`.
 
-1. Run the following `az ad sp show` command to get your service principal's client ID and assign the result to a Bash variable named `ARM_CLIENT_ID`.
+1. Run the following `az ad sp show` command. It gets your service principal's client ID and assigns the result to a Bash variable named `ARM_CLIENT_ID`.
 
     ```azurecli
     ARM_CLIENT_ID=$(az ad sp show \
@@ -366,7 +364,7 @@ During the process, you collect information about your service principal that yo
       --output tsv)
     ```
 
-1. Run the following `az ad sp show` command to get your service principal's tenant ID and assign the result to a Bash variable named `ARM_TENANT_ID`.
+1. Run the following `az ad sp show` command. It gets your service principal's tenant ID and assigns the result to a Bash variable named `ARM_TENANT_ID`.
 
     ```azurecli
     ARM_TENANT_ID=$(az ad sp show \
@@ -375,7 +373,7 @@ During the process, you collect information about your service principal that yo
       --output tsv)
     ```
 
-1. Print each of the Bash variables you collected in this part to verify their contents.
+1. Print each of the Bash variables that you collected in this part to verify their contents.
 
     ```bash
     echo $ARM_SUBSCRIPTION_ID
@@ -413,7 +411,7 @@ During the process, you collect information about your service principal that yo
 
     For brevity, here you skip the `terraform plan` phase.
 
-    As before, you see Terraform apply the configuration. As an optional step, you can confirm that the default website appears in a new browser tab.
+    You see Terraform apply the configuration. As an optional step, you can confirm that the default website appears on a new browser tab.
 
 1. Run the following `terraform destroy` command to destroy your resources.
 
@@ -421,7 +419,7 @@ During the process, you collect information about your service principal that yo
     terraform destroy -auto-approve
     ```
 
-1. Print out the details for your service principal one more time. Note their values somewhere safe, as you'll need them again later.
+1. Print out the details for your service principal one more time. Note their values somewhere safe, because you'll need them again later.
 
     ```bash
     env | grep ARM
@@ -436,7 +434,7 @@ During the process, you collect information about your service principal that yo
       --output tsv
     ```
 
-    Finally, note the name of the Azure region you want to use for your deployment when you run Terraform from Azure Pipelines. Here's a refresher on how to list your available regions:
+    Finally, note the name of the Azure region that you want to use for your deployment when you run Terraform from Azure Pipelines. Here's a refresher on how to list your available regions:
 
     ```azurecli
     az account list-locations \
@@ -446,7 +444,7 @@ During the process, you collect information about your service principal that yo
 
 ## Delete the state file from Blob storage
 
-The version of Terraform you run in Cloud Shell might be different from the version you run in Azure Pipelines. To ensure that there are no incompatibilities in the state file format between the two versions, here you delete your state file from Blob storage. Terraform recreates this state file when you provision your Azure resources from the pipeline.
+The version of Terraform that you run in Cloud Shell might be different from the version that you run in Azure Pipelines. Here, you delete your state file from Blob storage. This procedure ensures that there are no incompatibilities in the state file format between the Terraform versions. Terraform re-creates this state file when you provision your Azure resources from the pipeline.
 
 1. From Cloud Shell, run the following `az storage account list` command to list your storage account name.
 
@@ -468,7 +466,7 @@ The version of Terraform you run in Cloud Shell might be different from the vers
     tfsa13534
     ```
 
-1. Run the following `az storage blob delete` command to delete the state file from Blob storage.
+1. Run the following `az storage blob delete` command to delete the state file *terraform.tfstate* from Blob storage.
 
     ```azurecli
     az storage blob delete \
@@ -477,7 +475,7 @@ The version of Terraform you run in Cloud Shell might be different from the vers
       --name terraform.tfstate
     ```
 
-    Your Terraform state file, *terraform.tfstate*, is now deleted from Blob storage.
+## The result
 
 **Tim:** I'm glad that we set up Terraform to use Blob storage and a service principal before we added anything to Azure Pipelines.
 

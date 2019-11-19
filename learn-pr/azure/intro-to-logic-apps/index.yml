@@ -2,7 +2,7 @@
 uid: learn.azure-intro-to-logic-apps
 metadata:
   title: "Introduction to Azure Logic Apps"
-  description: "Introduction Azure to Logic Apps"
+  description: Learn how to evaluate Logic Apps as an automation choice for your organization using criteria for integration, performance, conditionals, and connectors.
   ms.date: 4/25/2019
   author: rmcmurray
   ms.author: robmcm

@@ -5,8 +5,8 @@ metadata:
   description: Azure Logic Apps is a cloud service that automates the execution of your business processes. Learn how to leverage logic apps to create serverless workflows that run automatically when data is available. 
   brand: azure
   ms.date: 6/28/2019
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build automated workflows to integrate data and apps with Azure Logic Apps
