@@ -1,6 +1,6 @@
 Now that you have had the opportunity to learn about the cost analysis tool it's time to put that tool to work. In this exercise, you'll choose one of your Azure subscriptions and identify the your most costly resource. You use the cost analysis tool to look at your costs, group them, and narrow results.
 
-## Access the Azure Portal
+## Access the Azure portal
 
 To start, sign in to the Azure portal using the following step.
 
