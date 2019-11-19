@@ -87,7 +87,7 @@ This section adds code to send telemetry from a simulated device. The device sen
             // Vibration globals.
             private static double forcedSeconds = 0;                                    // Time since forced vibration started.
             private static double increasingSeconds = 0;                                // Time since increasing vibration started.
-            private static double basicConstant;                                        // Constant identifying the severity of normal vibration.
+            private static double naturalConstant;                                      // Constant identifying the severity of natural vibration.
             private static double forcedConstant = 0;                                   // Constant identifying the severity of forced vibration.
             private static double increasingConstant = 0;                               // Constant identifying the severity of increasing vibration.
     
@@ -224,8 +224,8 @@ This section adds code to send telemetry from a simulated device. The device sen
                             }
                         }
     
-                        // Apply the vibrations, starting with basic (normal) vibration.
-                        vibration = basicConstant * Math.Sin(seconds);
+                        // Apply the vibrations, starting with natural vibration.
+                        vibration = naturalConstant * Math.Sin(seconds);
     
                         if (forcedConstant > 0)
                         {
@@ -324,7 +324,7 @@ This section adds code to send telemetry from a simulated device. The device sen
                 s_deviceClient = DeviceClient.CreateFromConnectionString(s_deviceConnectionString, TransportType.Mqtt);
     
                 // Create a number between 2 and 4, as a constant for normal vibration levels.
-                basicConstant = 2 + 2 * rand.NextDouble();
+                naturalConstant = 2 + 2 * rand.NextDouble();
     
                 SendDeviceToCloudMessagesAsync(rand);
                 Console.ReadLine();

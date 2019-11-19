@@ -20,9 +20,9 @@ In this module you will:
 ## Prerequisites
 
 - An introductory knowledge of Azure IoT
--	Ability to navigate the Azure IoT portal
--	Ability to use C#, at the beginner level
--	Experience using Visual Studio, or Visual Studio Code, at the beginner level
+- Ability to navigate the Azure IoT portal
+- Ability to use C#, at the beginner level
+- Experience using Visual Studio, or Visual Studio Code, at the beginner level
 - A Microsoft account, to log into Office Power BI
 
 ## The scenario
@@ -33,7 +33,7 @@ The conveyor belt is a critical link in your process, and is monitored for vibra
 
 ![Graph of cyclical forced vibration](../media/vibration1.png)
 
-There are a number of different types of vibration. What is known as _forced vibration_, which is vibration caused by an external force, such as the broken wheel example, or a weighty package that has not been placed properly on the conveyor belt. There is also _increasing vibration_ where the vibration levels increase, slowly or quickly, due to, for example, a design limit being exceeded. _Damping vibration_ is the opposite of increasing vibration, where the vibration levels drop, but the causes of that drop may not be a good thing!
+There are a number of different types of vibration. What is known as _forced vibration_, which is vibration caused by an external force, such as the broken wheel example, or a weighty package that has not been placed properly on the conveyor belt. There is also _increasing vibration_ where the vibration levels increase, slowly or quickly, due to, for example, a design limit being exceeded.
 
 Vibration is typically measured as an acceleration (meters per second squared, m/s<sup>2</sup>), or possibly g-forces.
 

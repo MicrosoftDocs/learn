@@ -1,4 +1,5 @@
-
+    
+    ![Graph of cyclical forced vibration](../media/vibration-hub-new-input.png)
 
 ## Route the logging message to Azure storage
 
@@ -54,7 +55,11 @@ Before creating the second route, let's verify that this route is working. This 
 
 1. In the Azure portal **Home** page, select **Create a resource**. Search for and select **Stream Analytics job**. Click **Create**.
 
+    ![Graph of cyclical forced vibration](../media/vibration-hub-new-job-create.png)
+
 1. Enter "vibrationJob" for the name. Select one of the subscriptions available to you, and select, or create, a resource group.
+
+    ![Graph of cyclical forced vibration](../media/vibration-stream-job.png)
 
 1. Select the location nearest to you.
 
@@ -74,6 +79,8 @@ Before creating the second route, let's verify that this route is working. This 
 1. Ensure **Select IoT Hub from your subscriptions** is selected.
 
 1. For **IoT Hub** select **VibrationSensorHub**. The **Endpoint** must have **Messaging** selected. The **Shared access policy name** should have **iothubowner**. No need to change the other fields from their defaults.
+
+    ![Graph of cyclical forced vibration](../media/vibration-log-stream-input.png)
 
 1. Click **Save**.
 
@@ -106,6 +113,8 @@ Before creating the second route, let's verify that this route is working. This 
 
 1. Click **Save query**.
 
+    ![Graph of cyclical forced vibration](../media/vibration-stream-query.png)
+
 ## Test the logging route
 
 Now for the fun part. Does the telemetry your device app is pumping out work its way along the route and into the storage container?
@@ -113,6 +122,8 @@ Now for the fun part. Does the telemetry your device app is pumping out work its
 1. Ensure your device app is running.
 
 1. In the **vibrationJob** page, click **Start**. Then again in the **Start job** box.
+
+    ![Graph of cyclical forced vibration](../media/vibration-job-start.png)
 
 1. Select **Home** in the Azure portal. If the **vibrationstorage** resource is not available in the **Recent resources** list, then search for it under **All resources**.
 

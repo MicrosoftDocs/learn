@@ -5,7 +5,9 @@ In this exercise we are going to add a query to the Stream Analytics job, and th
 
 TBD
 
+    ![Graph of cyclical forced vibration](../media/vibration-hub-new-bi.png)
 
+    ![Graph of cyclical forced vibration](../media/vibration-hub-new-output.png)
 
 
 ## Add a query to the Azure Stream Analytics job
@@ -55,6 +57,8 @@ In order for a human operator to make much sense of the output from this query, 
 
 1. Use the nine dots icon (top left) to display a drop-down list. Select **All apps**. Scroll down and select **Power BI**.
 
+    ![Graph of cyclical forced vibration](../media/vibration-outlook-power-bi.png)
+
 1. Open **My workspace**.
 
 1. Under **Datasets** verify that **vibrationBI** is displayed. If not, you might have to wait a short time for this to populate.
@@ -64,6 +68,8 @@ In order for a human operator to make much sense of the output from this query, 
 1. Give the dashboard a friendly name, say "vibration dash".
 
 1. In the blank screen that follows, click **Add tile**. Select **Custom Streaming Data**, **Next**, and select the **vibrationBI** from the list of Datasets.
+
+    ![Graph of cyclical forced vibration](../media/vibration-dashboard-add-tile.png)
 
 1. For the first card, select **Visualization Type** as **Gauge**, **Value** as **vibe**, and enter "Vibration" for the title (in the **Tile details** box).
 
