@@ -19,7 +19,7 @@ prerequisites: |
   - "Owner" access to an Azure subscription (a free trial is sufficient)
   - Five or more Azure resources created within your subscription that have been accruing cost for at least one month
   - Basic familiarity with the Azure portal
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/analyze-costs-create-budgets-azure-cost-management.svg
 levels:
 - beginner
 roles:
