@@ -1,19 +1,39 @@
-Telemetry is the output from sensors. There are many different types of sensors. Acceleration, humidity, location, pressure, temperature, and velocity are the most commonly used in commercial applications. Other sensors include radiation, motion-sensitivity, acoustics, air quality, heart rate, and so on. And they all pump out telemetry for some other process to consume.
+The key to monitoring our conveyor belt is the output of vibration telemetry. Vibration is usually measured as an acceleration (m/s<sup>2</sup>), although sometimes it is meaasured in g-forces, where 1g = 9.81 m/s<sup>2</sup>. There are three types of vibration.
 
-The frequency of telemetry output is an important factor. A temperature sensor in a refrigeration unit may only have to report every minute, or less. An acceleration sensor on an aircraft may have to report at least every second.
+* _Natural vibration_, which is just the frequency a structure tends to oscillate.
+* _Free vibration_, which occurs when the structure is impacted, but then left to oscillate without interference.
+* _Forced vibration_, which occurs when the structure is under some stress.
 
-An IoT device may contain one or more sensors, and have some computational power. There may be LED lights, and even a small screen, on the IoT device. However, the device isn't intended for direct use by a human operator. An IoT device is designed to receive its instructions from the cloud.
+Forced vibration is the dangerous one for our structure (the conveyor belt), even if it starts at a low level this vibration can build so that the structure fails prematurely. There is less of a case for free vibration in conveyor belt operation. Most machines though have a natural vibration.
 
-## Vibration sensor device
+## Simulate a vibration sensor device
 
-In this module, we assume the IoT vibration sensor monitoring device has temperature and humidity sensors. The device has a fan capable of both cooling or heating, and humidifying or de-humidifying. Every few seconds, the device sends current temperature and humidity values to the IoT Hub. This rapid frequency is unrealistic for a vibration sensor (maybe every 15 minutes, or less, would be granular enough), except during code development when we want rapid activity!
+The code sample we will write has a conveyor belt running at a range of speeds (stopped, slow, fast). The faster the belt is running, the more packages are delivered, but the greater the effects of vibration. We will add natural vibration, based on a sine wave with some randomization. It is possible our anomaly detection system will falsely identify a spike or dip in this sine wave as an anomaly. We will then add two forms of forced vibration, one that has the effect of a cyclic increase in vibration (multiple sine waves added together). And an increasing vibration, were an additional sine wave is added, starting small but growing.
 
-We assume, in the next unit, that the fan can be in one of three states: _on_, _off_, and _failed_. The fan is initialized to the off state. In a later unit, the fan is turned on by use of a _direct method_.
+The natural vibration will vary from a minimum to a maximum level, similar to the following diagram.
 
-Another feature of our IoT device is that it can accept _desired_ values from the IoT Hub. The device can then adjust its fan to target these desired values. These values are coded in this module using a feature called _device twins_. Desired values will override any default settings for the device.
+![Screenshot showing the temperature and humidity telemetry being sent](../media/vibration-minmax-basic.png)
 
-## Coding the sample
+Forced vibration will also vary from a minimum to a maximum level.
 
-The coding in this module is broken down into three parts: sending and receiving telemetry, sending and receiving a direct method, and managing device twins.
+![Screenshot showing the temperature and humidity telemetry being sent](../media/vibration-minmax-forced.png)
 
-Let's start by writing two apps: one for the device to send telemetry, and one back-end service to run in the cloud, to receive the telemetry. You'll be able to select your preferred language (Node.js or C#), and development environment (Visual Studio Code, or Visual Studio).
+When forced vibration is added to natural vibration, the resulting vibration wave gets more complicated.
+
+![Screenshot showing the temperature and humidity telemetry being sent](../media/vibration-minmax-forced-basic.png)
+
+Increasing vibration starts almost undetectable.
+
+![Screenshot showing the temperature and humidity telemetry being sent](../media/vibration-minmax-increasing.png)
+
+When we add all three vibrations, notice how the extreme highs and lows slowly increase.
+
+![Screenshot showing the temperature and humidity telemetry being sent](../media/vibration-basic-forced-increasing.png)
+
+We assume that our conveyor belt has just one sensor, and it also pumps out some other data. This is just to give us something to archive!
+
+## Code the simulator and telemetry messages
+
+Almost all the coding in this module is in the next unit. We build the conveyor belt simulator, and send telemetry messages to the IoT Hub created in the previous unit. In later units there is a small amount of SQL coding.
+
+You'll be able to select your preferred development environment (Visual Studio Code, or Visual Studio). The simulator is written in C#.

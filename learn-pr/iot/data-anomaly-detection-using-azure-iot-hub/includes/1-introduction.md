@@ -23,6 +23,7 @@ In this module you will:
 - Ability to navigate Azure IoT portal
 - Ability to use Node.js, or C#, at the beginner level
 - Experience using Visual Studio, or Visual Studio Code, at the beginner level
+- A Microsoft Office account
 
 ## The scenario
 

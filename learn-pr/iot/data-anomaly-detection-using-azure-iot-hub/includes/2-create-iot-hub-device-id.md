@@ -40,4 +40,4 @@ Now we need to create a single device identity, the sensor monitoring the convey
 
 
 
-You've now completed the preparatory work for this module, the next steps are all coding and testing. Before we advance though, a quick knowledge check!
+You've now completed the preparatory work for this module. The next step is to code the sending of telemetry messages. Before we advance though, a quick knowledge check!

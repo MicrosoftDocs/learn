@@ -1,5 +1,12 @@
 
-In this exercise we are going to add a query to the Stream Analytics job, and then use Microsoft Power Bi to visualize the output from the query. The query searches for spikes and dips in the vibration data, reporting anomalies.
+In this exercise we are going to add a query to the Stream Analytics job, and then use Microsoft Power Bi to visualize the output from the query. The query searches for spikes and dips in the vibration data, reporting anomalies. First, we must create the second route.
+
+## Create a route to an Event Hub
+
+TBD
+
+
+
 
 ## Add a query to the Azure Stream Analytics job
 
@@ -44,7 +51,7 @@ In order for a human operator to make much sense of the output from this query, 
 
 ## Create a Microsoft Power BI dashboard
 
-1. In your browser, navigate to `outlook.office365.com`. This will take you to the mail inbox.
+1. In your browser, navigate to `outlook.office365.com`. This will take you to the mail inbox. You may have to enter your Microsoft Account login information.
 
 1. Use the nine dots icon (top left) to display a drop-down list. Select **All apps**. Scroll down and select **Power BI**.
 

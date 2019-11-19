@@ -2,7 +2,7 @@
 uid: learn.iot.data-anomaly-search-using-iot-hub.introduction
 metadata:
   title: Introduction
-  description: Describes the scenario of monitoring the vibrations on a conveyor belt, and trying to detect anomalies.
+  description: Describes the role of Azure IoT, in the scenario of monitoring the vibrations of a conveyor belt.
   ms.date: 12/01/2019
   author: PeterTurcan
   ms.author: Olivier.Bloch

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.data-anomaly-search-using-iot-hub.exercise-search-anomalies-machine-learning-query
+metadata:
+  title: Exercise -  Add a route to Azure Stream Analytics, and a query to detect anomalies
+  description: Create the second route, via an IoT Event Hub, to an Azure Stream Analytics job. The job adds a SQL query for anomaly detection. Create a Microsoft Power BI dashboard to visualize the output in a friendly and understandable format.
+  ms.date: 12/01/2019
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise -  Add a route to Azure Stream Analytics, and a query to detect anomalies
+durationInMinutes: 15
+content: |
+  [!include[](includes/8-exercise-search-anomalies-machine-learning-query.md)]
