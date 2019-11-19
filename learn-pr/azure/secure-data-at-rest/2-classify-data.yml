@@ -15,26 +15,26 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: Which of the following items would be classified with a Public (Low) level classification?
+  - content: Which of the following items would be classified with a public (low) level of confidentiality?
     choices:
     - content: Account emails
       isCorrect: false
-      explanation: Account emails are important and contain customer information and shouldn't be classified as Public.
+      explanation: Account emails are important and contain customer information. They shouldn't be classified as public.
     - content: Credentials
       isCorrect: false
-      explanation: Credentials let users access resources and applications securely and shouldn't be classified as Public.
+      explanation: Credentials let users access resources and applications securely. They shouldn't be classified as public.
     - content: Press releases
       isCorrect: true
-      explanation:  Press releases are deliberately sent out to the public to inform them and should be classified as Public.
-  - content: Your organization noticed customer financial data was almost lost because of a software issue in a server. Thankfully, because of the potential impact of this data on the organization, copies of this information were kept safe and secure in other locations. How was this data classified?
+      explanation:  Press releases are deliberately sent out to the public to inform them. They should be classified as public.
+  - content: Your organization noticed that customer financial data was almost lost because of a software issue in a server. Thankfully, because of the potential impact on the organization, copies of this data stayed safe and secure in other locations. How was this data classified?
     choices:
     - content: Internal use only (medium)
       isCorrect: false
-      explanation: This data is highly confidential, and doesn't belong to the organization. Even within the organization, customer financial information isn't circulated. Only a few authorized parts of the organization have access to this information.
+      explanation: This data is highly confidential and doesn't belong to the organization. Even within the organization, customer financial information isn't circulated. Only a few authorized parts of the organization have access to this information.
     - content: Public (low)
       isCorrect: false
-      explanation: This data is highly confidential, and should never be considered Public. There would be serious problems if this data was exposed or lost.
+      explanation: This data is highly confidential and should never be considered public. Exposure or loss of this data would cause serious problems.
     - content: Confidential (high)
       isCorrect: true
-      explanation: This data is highly confidential. There would be serious problems if this data was exposed or lost.
+      explanation: This data is highly confidential. Exposure or loss of this data would cause serious problems.
 

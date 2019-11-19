@@ -2,5 +2,5 @@ Our goal was to display a formatted message using a combination of literal and v
 
 Using basic C# syntax, we created literal values of several different data types.  We declared variables, then set and retrieved values from those variables.  We initialized variables, and learned how to use the `var` keyword to implicitly type a variable by inferring the type from the initialization.
 
-Congratulations on taking another step towards to building more sophisticated applications.  If you're following the learning path, continue on to the next module: "Perform basic operations on data in C#".
+Congratulations on taking another step towards to building more sophisticated applications.
 

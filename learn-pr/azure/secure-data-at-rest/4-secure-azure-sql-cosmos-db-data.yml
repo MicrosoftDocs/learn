@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-data-at-rest.4-secure-azure-sql-cosmos-db-data
-title: Secure data at rest in Azure SQL and Cosmos DB
+title: Secure data at rest in Azure SQL Database and Azure Cosmos DB
 metadata:
-  title: Secure data at rest in Azure SQL and Cosmos DB
-  description: Secure data at rest in Azure SQL and Cosmos DB
+  title: Secure data at rest in Azure SQL Database and Azure Cosmos DB
+  description: Secure data at rest in Azure SQL Database and Azure Cosmos DB
   ms.date: 10/29/2019
   author: jboeshart
   ms.author: jaboes
@@ -15,25 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: You've created a new Azure SQL DB. How would you enable encryption at rest for your SQL DB?
+  - content: You've created a new SQL database. How can you enable encryption at rest for that database?
     choices: 
-    - content: Go to the portal, find the SQL DB transparent data encryption setting, and turn it on.
+    - content: Go to the portal, find transparent data encryption for Azure SQL Database, and turn it on.
       isCorrect: false
-      explanation: While this would help you enable TDE, you don't need to do this, because you're dealing with a newly created SQL DB. Only older SQL DBs need you to enable TDE.
-    - content: Use PowerShell to work with the SQL DB, and use it to enable transparent data encryption.
+      explanation: Although this would help you enable transparent data encryption, it isn't necessary because you're dealing with a newly created SQL database. Only older SQL databases require you to enable transparent data encryption.
+    - content: Use PowerShell to work with the SQL database, and use it to enable transparent data encryption.
       isCorrect: false
-      explanation: While this would help you enable TDE, you don't need to do this because you're dealing with a newly created SQL DB. Only older SQL DBs need you to enable TDE.
-    - content: The SQL DB already has encryption enabled – there's nothing to be done.
+      explanation: Although this would help you enable transparent data encryption, it isn't necessary because you're dealing with a newly created SQL database. Only older SQL databases require you to enable transparent data encryption.
+    - content: The SQL database already has encryption enabled. There's nothing to be done.
       isCorrect: true
-      explanation: Newly created SQL DBs automatically have TDE enabled.
-  - content: Keys are used to encrypt your Cosmos DB data. What must you do with these keys to protect the data?
+      explanation: Newly created SQL databases automatically have transparent data encryption enabled.
+  - content: Keys are used to encrypt your Azure Cosmos DB data. What must you do with these keys to protect the data?
     choices:
-    - content: You must copy these keys. The keys can then always be used again to protect the data.
+    - content: You must copy these keys. You can then reuse the keys to help protect the data.
       isCorrect: false
-      explanation: You don't access the keys yourself. Keys are managed for you automatically in Azure. 
-    - content: You don't have to do anything. The keys are rotated automatically to protect your data.
+      explanation: You don't access the keys yourself. Azure manages the keys for you. 
+    - content: You don't have to do anything. The keys are rotated automatically.
       isCorrect: true
-      explanation: Cosmos DB automatically rotates the keys in the background to protect your data.
-    - content: You must rotate the keys. The keys need to be changed periodically to protect the data. 
+      explanation: Azure Cosmos DB automatically rotates the keys in the background to help protect your data.
+    - content: You must rotate the keys. The keys need to be changed periodically to help protect the data. 
       isCorrect: false
-      explanation: You don't have to do anything. The keys are rotated automatically for you. 
+      explanation: You don't have to do anything. The keys are rotated automatically. 
