@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-users-and-groups-in-azure-active-directory.manage-app-resource-access-azure-ad-groups
+title: Manage app and resource access using Azure Active Directory groups
+metadata:
+  title: Manage app and resource access using Azure Active Directory groups
+  description: Manage app and resource access using Azure Active Directory groups
+  ms.date: 10/25/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-manage-app-resource-access-azure-ad-groups.md)]
