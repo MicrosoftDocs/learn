@@ -22,7 +22,7 @@ In the following exercise, we'll rewrite the previous messages using string conc
 
 Use your mouse to highlight all of the text in the code editor, then select the `backspace` or `del` key to remove everything.
 
-### Step 2: Use string interpolation to combine a literal string and a variable value.
+### Step 2: Use string concatenation to combine a literal string and a variable value.
 
 To concatenate two strings together, you prefix the literal string *string concatenation operator*, which is the plus symbol `+`.
 
