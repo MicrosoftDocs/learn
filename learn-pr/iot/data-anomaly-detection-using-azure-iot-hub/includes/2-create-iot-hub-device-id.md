@@ -38,22 +38,6 @@ Now we need to create a single device identity, the sensor monitoring the convey
 1. Click the **iothubowner** entry under **Policy**, then, on the right-hand side, copy the **Connection string-primary key** and paste it into your text file. Again, add a note, this text is the service connection string.
 1. Save off the text file, with a name such as "Vibration sensor.txt", for reference in the next unit.
 
-## Record the event hub endpoint, path, and key
 
-For C# versions of the code, you also need the _Event Hubs-compatible endpoint_, _Event Hubs-compatible path_, and _service primary key_ from your IoT hub. These strings enable the back-end app to connect to your IoT Hub, and retrieve messages.
-
-1. Open an [Azure Cloud Shell](https://shell.azure.com/).
-
-1. Copy the following three commands to your text file, and replace &lt;YourIoTHubName&gt; with the name of your hub.
-
-    ```Azure CLI
-    az iot hub show --query properties.eventHubEndpoints.events.endpoint --name <YourIoTHubName>
-
-    az iot hub show --query properties.eventHubEndpoints.events.path --name <YourIoTHubName>
-
-    az iot hub policy show --name service --query primaryKey --hub-name <YourIoTHubName>
-    ```
-
-1. One at a time, copy the commands from the text file into the Azure Cloud Shell, and run them. Record the results back into your text file.
 
 You've now completed the preparatory work for this module, the next steps are all coding and testing. Before we advance though, a quick knowledge check!

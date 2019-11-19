@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.data-anomaly-search-using-iot-hub.power-bi-visualize-telemetry
+metadata:
+  title: Exercise - Write code for device telemetry
+  description: Create a C# project for an IoT device that sends out vibration telemetry.
+  ms.date: 12/01/2019
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: vsandcode
+title: Exercise - Write code for device telemetry
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-exercise-write-code-device-telemetry.md)]
