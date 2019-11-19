@@ -2,7 +2,7 @@
 uid: learn.access-data-with-cosmos-db-and-sql-api
 metadata:
   title: Insert and query data in your Azure Cosmos DB database
-  description: Learn how to add data and query NoSQL data in your Azure Cosmos DB database.
+  description: Discover the Azure Cosmos DB Data Explorer tool that enables you to add or modify data and to create and run stored procedures.
   ms.date: 09/24/2018
   author: rmcmurray
   ms.author: robmcm
