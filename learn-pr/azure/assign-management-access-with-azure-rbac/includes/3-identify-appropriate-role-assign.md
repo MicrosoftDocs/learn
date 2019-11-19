@@ -20,7 +20,7 @@ The built-in default roles are:
 
 There's also a **User Access Administrator** role that allows for management of user access to Azure resources. The following diagram shows some approaches to determine which roles you should give to which users.
 
-![Diagram that shows which roles should be given to which users](../media/4-best-practices.png)
+![Diagram that shows which roles should be given to which users](../media/3-scope-role-access-type.png)
 
 ## Identify the right scope
 

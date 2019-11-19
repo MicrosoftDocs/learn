@@ -12,7 +12,7 @@ title: Assign management access to a subscription with Azure role-based access c
 summary: Identify the appropriate role to assign to an employee for management access to a subscription. Elevate your access to manage the subscription. Assign the role. Then, turn off your management access.
 abstract: | 
   In this module, you will:
-  - Identify scenarios where the global administrator for Azure AD may need to elevate their access in Azure.
+  - Identify scenarios where the global administrator for Azure Active Directory may need to elevate their access in Azure.
   - Identify the appropriate role to assign to an employee.
   - Grant the employee management access to a subscription.
 prerequisites: | 
