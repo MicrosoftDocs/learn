@@ -8,10 +8,10 @@ While the content of this module apply to any network, where possible you'll und
 
 In this module you'll learn:
 
-1. Understand the different network protocols and network standards
-1. Understand the differences between WAN, PAN and LAN
-1. Understand network communication principals like TCP/IP, DNS, and ports
-1. Understand how these core components map to Azure networking
+1. List the different network protocols and network standards
+1. Describe the differences between WAN, PAN and LAN
+1. Describe network communication principals like TCP/IP, DNS, and ports
+1. Describe how these core components map to Azure networking
 
 ## Prerequisites
 
