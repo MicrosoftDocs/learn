@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.intro-to-azure-devtest-labs
+metadata:
+  title: Introduction to Azure DevTest Labs
+  description: Discover the services available on Azure for IT administrators to manage development machines and test environments whilst minimizing costs.
+  ms.date: 01/15/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure DevTest Labs
+summary: Discover the services available on Azure for IT administrators to manage development machines and test environments whilst minimizing costs.
+abstract: | 
+  In this module, you will:
+  - Identify the need for DevTest Labs
+  - Understand Azure DevTest Labs concepts
+  - Identify the scenarios where DevTest Labs is a fit
+prerequisites: | 
+  - Basic familiarity with Azure Virtual Machines
+iconUrl: /learn/achievements/intro-to-azure-devtest-labs.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.intro-to-azure-devtest-labs.1-introduction
+- learn.intro-to-azure-devtest-labs.2-what-is-azure-devtest-labs
+- learn.intro-to-azure-devtest-labs.3-how-azure-devtest-labs-works
+- learn.intro-to-azure-devtest-labs.4-when-to-use-azure-devtest-labs
+- learn.intro-to-azure-devtest-labs.5-knowledge-check
+- learn.intro-to-azure-devtest-labs.6-summary
+badge:
+  uid: learn.intro-to-azure-devtest-labs.badge

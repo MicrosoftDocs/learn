@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-devtest-labs.4-when-to-use-azure-devtest-labs
+metadata:
+  title: When to use Azure DevTest Labs
+  description: In this unit, you'll learn about common use cases and business problems that Azure DevTest Labs can be used to address.
+  ms.date: 01/15/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: When to use Azure DevTest Labs
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-when-to-use-azure-devtest-labs.md)]

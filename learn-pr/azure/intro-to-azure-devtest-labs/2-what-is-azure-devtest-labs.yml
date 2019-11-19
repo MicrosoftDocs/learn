@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-devtest-labs.2-what-is-azure-devtest-labs
+metadata:
+  title: What is Azure DevTest Labs?
+  description: In this unit, you'll learn what the Azure DevTest Labs is and how it compares to similar products, such as Azure Lab Services.
+  ms.date: 01/15/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: What is Azure DevTest Labs?
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-what-is-azure-devtest-labs.md)]
