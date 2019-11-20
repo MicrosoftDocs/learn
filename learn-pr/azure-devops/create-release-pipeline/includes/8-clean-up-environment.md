@@ -35,7 +35,7 @@ To disable the pipeline:
 1. Select the **Edit** button.
 
     ![Azure Pipelines, showing the location of the Edit button](../../shared/media/azure-pipelines-edit-button.png)
-1. From the menu in the upper corner, select **Settings**.
+1. Select **Edit**. From the menu in the upper corner, select **Settings**.
 
     ![Azure Pipelines, showing the Settings menu option](../../shared/media/azure-pipelines-settings-button.png)
 1. Under **Processing of new run requests**, select **Disabled** > **Save**.

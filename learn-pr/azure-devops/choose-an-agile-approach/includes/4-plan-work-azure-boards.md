@@ -82,18 +82,9 @@ Although Mara and her team identified a number of issues, here you'll add the th
 
     ![Azure Boards showing the initial three tasks](../../shared/media/build-initial-tasks.png)
 
-
 ### Define a sprint
 
 **Mara**: This is looking great. Now let's define a sprint.
-
-**Tim**: What's a sprint?
-
-**Mara**: Good question. A sprint is the amount of time we have to complete our tasks. Sprints help keep us focused. At the end, we can have a short retrospective meeting to share what we've accomplished. After that, we can plan the next one.
-
-Everyone looks nervous.
-
-**Mara**: We're still learning. A sprint is typically two to four weeks long. Let's just say two weeks and see how that goes. These are mostly tasks Andy and I can tackle. We'll share our progress as we go. Then we can find ways to include everybody.
 
 When you create an Azure Boards project, you get an initial sprint called **Sprint 1**. All you need to do is assign dates to the sprint and add tasks. Here's how to follow along with the team:
 
