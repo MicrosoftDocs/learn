@@ -20,7 +20,7 @@ quiz:
     choices:  
     - content: 'pressure'
       isCorrect: false
-      explanation: Pressure sensors are common, but not to measure vibration.
+      explanation: Pressure sensors do not measure vibration.
     - content: 'decibels'
       isCorrect: false
       explanation: Sound vibrations could be measured in decibels, but, realistically, not conveyor belts.
@@ -46,17 +46,17 @@ quiz:
       isCorrect: false
       explanation: The name needs to be unique across a wider space than all Azure IoT Hub names.
 
-  - content: 'How did our sample C# device app warn the operator if the conveyor belt stopped for greater than 5 seconds?'
+  - content: 'How did our sample C# device app warn the operator if the conveyor belt stopped for more than 5 seconds?'
     choices:  
     - content: 'As an entry in the message data'
       isCorrect: false
-      explanation: An alert could be sent this way, however, our app does not use this approach.
-    - content: 'As a named property - beltAlert - with a value set to true if the condition was met.'
+      explanation: An alert could be sent this way. However, our app does not use this approach.
+    - content: 'As a property named beltAlert, with a value set to true if the condition was met'
       isCorrect: true
       explanation: Properties can be simple, such as device IDs, or more complex types such as conditional alerts.
-    - content: 'As an attached event to the message'
+    - content: 'By setting off an alarm'
       isCorrect: false
-      explanation: There is no mechanism to attach events to messages.
+      explanation: A remote operator will probably not hear the alarm.
     - content: 'As a separate warning message, with an HTTP code of 400'
       isCorrect: false
       explanation: There is no need to send a separate message, alerts can be added to a message as message data, or as a message property.
@@ -83,10 +83,10 @@ quiz:
       explanation: A message route does not define streaming input.
     - content: 'Event Hub, Blob storage, SQL query'
       isCorrect: false
-      explanation: The SQL query is the machinery of the job, not one of its inputs.
+      explanation: The SQL query provides the processing for the job, not one of its inputs.
     - content: 'IoT Hub, Event Hub, Blob storage'
       isCorrect: true
       explanation: These three options appear in the Add Stream input drop-down list.
     - content: 'BI dashboard, BI dataset, IoT Hub message route'
       isCorrect: false
-      explanation: None of these are streaming inputs.
+      explanation: None of these features are streaming inputs.

@@ -1,8 +1,6 @@
-Azure IoT Hub is a cloud service that can handle large volumes of telemetry sent from remote devices. The remote devices typically contain a number of sensors (temperature, humidity, location, velocity, to name a few). These sensors send out telemetry on a regular basis. An IoT Hub processes this data in a number of ways, including storing it, or running a back-end app on the data. The IoT Hub also communicates new settings back to the devices.
+An Azure IoT Hub can direct the telemetry messages from one, or millions, of devices. The messages can be directed to services for analysis, for storage, for visualization, or for any combination of these objectives. 
 
-An IoT Hub can scale to handle millions of devices. An IoT device can upload files, as well as send telemetry.
-
-In this module, you will learn about Azure IoT Hub, Azure Stream Analytics, and Azure Machine Learning, by creating an IoT system to detect vibration anomalies in a conveyor belt.
+In this module, you will learn about Azure IoT Hub, IoT Hub message routing, Azure storage, Azure Stream Analytics, and Azure Machine Learning. You will achieve this by creating an IoT system to monitor and detect vibration anomalies in a conveyor belt. You will learn a little about vibration, and a lot more about Azure IoT services!
 
 ![Conceptual art of conveyor belt](../media/vibrations-art1.png)
 
@@ -12,9 +10,10 @@ In this module you will:
 
 - Create an Azure IoT Hub, using the Azure portal
 - Create an Azure IoT Hub device identity, using the Azure portal
-- Create a C# app to send device telemetry to the IoT Hub, using Visual Studio or Visual Studio code
-- Create a message route, through to blob storage, using the Azure portal
-- Create a second message route, through to an Azure Analytics job, using the Azure portal
+- Build a C# app to send device telemetry to the IoT Hub, using Visual Studio or Visual Studio code
+- Define a message route, through to blob storage, using the Azure portal
+- Define a second message route, through to an Azure Analytics job, using the Azure portal
+- Create a query to apply machine learning for anomaly detection, using SQL
 - Create a dashboard to visualize data anomalies, using Power BI
 
 ## Prerequisites
@@ -51,9 +50,10 @@ The first step to building this scenario is to create a custom IoT Hub.
 
 ## Jobs
 
-1. check images for private stuff, overwrite
-1. verify knowledge check text
+1. check images for private stuff, overwrite - done
+1. verify knowledge check text - done
 1. acrolinx fixes
 1. read from start to finish, edit
 1. check input/output names match images, code
 1. clear resources, and test end-to-end
+1. Not sure about vibrationTelemetryEndpoint as the correct name
