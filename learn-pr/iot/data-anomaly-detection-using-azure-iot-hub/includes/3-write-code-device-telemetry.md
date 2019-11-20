@@ -12,23 +12,23 @@ The code sample we will write has a conveyor belt running at a range of speeds (
 
 The natural vibration will vary from a minimum to a maximum level, similar to the following diagram.
 
-![Screenshot showing the temperature and humidity telemetry being sent](../media/vibration-minmax-basic.png)
+![Graph showing the minimum and maximum natural vibration sine waves](../media/vibration-minmax-basic.png)
 
 Forced cyclic vibration will also vary from a minimum to a maximum level.
 
-![Screenshot showing the temperature and humidity telemetry being sent](../media/vibration-minmax-forced.png)
+![Graph showing the minimum and maximum forced vibration sine waves](../media/vibration-minmax-forced.png)
 
 When forced vibration is added to natural vibration, the resulting vibration wave gets more complicated.
 
-![Screenshot showing the temperature and humidity telemetry being sent](../media/vibration-minmax-forced-basic.png)
+![Graph showing the addition of forced vibration to natural vibration sine waves](../media/vibration-minmax-forced-basic.png)
 
 Increasing vibration starts almost undetectable.
 
-![Screenshot showing the temperature and humidity telemetry being sent](../media/vibration-minmax-increasing.png)
+![Graph showing the increasing vibration sine waves](../media/vibration-minmax-increasing.png)
 
 When we add all three vibrations, notice how the extreme highs and lows slowly increase.
 
-![Screenshot showing the temperature and humidity telemetry being sent](../media/vibration-basic-forced-increasing.png)
+![Graph showing the addition of natural, forced, and increasing sine waves](../media/vibration-basic-forced-increasing.png)
 
 We assume that our conveyor belt has just one sensor, and it also pumps out some other data (packages delivered, ambient temperature, and similar metrics). This is just to give us something to archive!
 

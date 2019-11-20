@@ -21,7 +21,7 @@ In this exercise we are going to add a query to the Stream Analytics job, and th
 
 1. Verify that your two message routes look like the following image.
 
-    ![Graph of cyclical forced vibration](../media/vibration-two-routes.png)
+    ![Screenshot showing the summary of the settings for the two message routes](../media/vibration-two-routes.png)
 
     > [!NOTE]
     > Notice how simple it is to send data down different routes. Define an ID in your telemetry, and divert the data traffic based solely on that ID.
@@ -60,8 +60,8 @@ With this new route in place, now we need to update our Stream Analytics job.
    ```
 
     > [!NOTE]
-    > This first section of this query takes the vibration data, and examines the previous 120 seconds worth. The `AnomalyDetection_SpikeAndDip` function will return a `Score` parameter, and an `IsAnomaly` parameter. The score is how certain the machine learning algorithm is that the given value is an anomaly, given as a percentage. If the score exceeds 95% certainty, the `IsAnomaly` parameter has a value of 1, otherwise the parameter has a value of 0. Notice the 120 and 95 parameters in the first section of the query.
-    The second section of the query sends the time, vibration, and anomaly parameters to `vibrationOutput`.
+    > This first section of this query takes the vibration data, and examines the previous 120 seconds worth. The `AnomalyDetection_SpikeAndDip` function will return a `Score` parameter, and an `IsAnomaly` parameter. The score is how certain the machine learning algorithm is that the given value is an anomaly, given as a percentage. If the score exceeds 95%, the `IsAnomaly` parameter has a value of 1, otherwise `IsAnomaly` has a value of 0. Notice the 120 and 95 parameters in the first section of the query.
+    The second section of the query sends the time, vibration, and anomaly parameters to `vibrationBI`.
 
 1. Save the query.
 
@@ -77,13 +77,13 @@ With this new route in place, now we need to update our Stream Analytics job.
 
 1. Click **+ Add**, then select **Power BI**.
 
-    ![Graph of cyclical forced vibration](../media/vibration-hub-new-output.png)
+    ![Screenshot showing the Power BI selection, for a new output.](../media/vibration-hub-new-output.png)
 
 1. Authorize the connection. You might need to sign up for a free Microsoft account, if you do not have one already.
 
 1. Complete the **Power BI** entry. For **Output alias** enter "vibrationBI", for **Group workspace** search for **My workspace**, for **Dataset name** enter "vibrationDataset", for **Table name** enter "vibrationTable", and for **Authentication mode** ensure **User token** is selected.
 
-    ![Graph of cyclical forced vibration](../media/vibration-hub-new-bi.png)
+    ![Screenshot showing the completed fields of a Power BI output](../media/vibration-hub-new-bi.png)
 
 1. Click **Save**.
 
@@ -91,9 +91,9 @@ With this new route in place, now we need to update our Stream Analytics job.
 
 1. Carefully verify you have used the same names in the SQL query, as you have in the **Inputs** and **Outputs**.
 
-    ![Graph of cyclical forced vibration](../media/vibration-two-query.png)
+    ![Screenshot showing the new SQL query, and the inputs and outputs to the query](../media/vibration-two-query.png)
 
-1. If all looks good, start the job again!
+1. If all looks good, start the job again.
 
 In order for a human operator to make much sense of the output from this query, we need to visualize the data in a friendly way. One way of doing this is to create a Power BI dashboard.
 
@@ -103,7 +103,7 @@ In order for a human operator to make much sense of the output from this query, 
 
 1. Use the nine dots icon (top left) to display a drop-down list. Select **All apps**. Scroll down and select **Power BI**.
 
-    ![Graph of cyclical forced vibration](../media/vibration-outlook-power-bi.png)
+    ![Screenshot showing the selection of Power BI from the Office 365 portal](../media/vibration-outlook-power-bi.png)
 
 1. Open **My workspace**.
 
@@ -111,13 +111,13 @@ In order for a human operator to make much sense of the output from this query, 
 
 1. Select **+ Create** (top right), and select **Dashboard** from the drop-down list.
 
-1. Give the dashboard a friendly name, say "vibration dash".
+1. Give the dashboard a friendly name, say "Vibration Dash".
 
 1. In the blank screen that follows, click **Add tile**. Select **Custom Streaming Data**, **Next**, and select the **vibrationBI** from the list of datasets.
 
-    ![Graph of cyclical forced vibration](../media/vibration-dashboard-add-tile.png)
+    ![Screenshot showing the options when adding a dashboard tile](../media/vibration-dashboard-add-tile.png)
 
-1. For the first card, select **Visualization Type** as **Gauge**, **Value** as **vibe**, and enter "Vibration" for the title (in the **Tile details** box).
+1. For the first card, select **Visualization Type** as **Gauge**, **Value** as **vibe**. Enter "Vibration" for the title (in the **Tile details** box).
 
 1. Click **Apply**.
 
@@ -133,10 +133,12 @@ In order for a human operator to make much sense of the output from this query, 
 
 1. This time expand the tile to a size three times larger than the smallest tiles, and arrange your dashboard similar to the following image:
 
-    ![Screenshot showing the temperature and humidity telemetry being sent](../media/vibration-anomalies-detected.png)
+    ![Screenshot showing the completed Power BI dashboard identifying anomalies](../media/vibration-anomalies-detected.png)
 
 1. There is a latency with so many routes and connections, but are you now seeing the vibration data coming through?
 
 1. Let the job run for a while, several minutes at least before the machine learning will kick in. Compare the console output of the device app, with the Power BI dashboard. Are you able to correlate the forced and increasing vibrations to a run of anomaly detections?
 
-If you are seeing an active Power BI dashboard, similar to the one above, you have just about completed this module. Good work. Finish the module off with a short knowledge check.
+If you are seeing an active Power BI dashboard, similar to the one above, you have just about completed this module. Great work. 
+
+Finish the module off with a short knowledge check.

@@ -53,8 +53,9 @@ The first step to building this system is to create a custom IoT Hub.
 1. check images for private stuff, overwrite - done
 1. verify knowledge check text - done
 1. acrolinx fixes
-1. read from start to finish, edit
+1. read from start to finish, edit - done 1
 1. check input/output names match images, code
 1. clear resources, and test end-to-end
-1. Not sure about vibrationTelemetryEndpoint as the correct name
+1. Not sure about vibrationTelemetryEndpoint as the correct name - nope, its wrong
 1. upload code to: mslearn-data-anomaly-detection-using-azure-iot-hub
+1. alertnative text for images - done

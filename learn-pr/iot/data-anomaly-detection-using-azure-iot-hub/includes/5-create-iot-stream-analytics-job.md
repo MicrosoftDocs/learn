@@ -27,13 +27,13 @@ In addition to storage and Event Hubs, messages can be routed to Azure Service B
 
 ## Create an Azure Stream Analytics job
 
-Azure Stream Analytics is a service for analyzing the volumes of data that an IoT Hub, or Event Hub, can pump out. Stream Analytics can analyze input from a file, perhaps held in Azure storage. However, Stream Analytics is really all about real-time (or, in reality, near real-time).
+Azure Stream Analytics is a service for analyzing the volumes of data that an IoT Hub, or Event Hub, can pump out. Stream Analytics can analyze input from a file, perhaps held in Azure storage. However, Stream Analytics is really all about real time (or, in reality, near real time).
 
 A Stream Analytics job takes one or more inputs, runs these through an SQL query, and returns results to one or more outputs.
 
 Storing data in log files, as we are doing here, is at the boring end of what a Stream Analytics job is capable of. Boring, but necessary.
 
-Examples of the fun end of what Stream Analytics can handle includes geospatial analysis of fleets of trucks, or perhaps, driverless vehicles. The real-time analysis of point-of-sale data, to optimize inventory control and maximize sales. The remote monitoring of machinery, for predictive maintenance. The predictions being done by machine learning algorithms running on the telemetry data. Given the power of SQL queries, there is really a limitless supply of possible scenarios.
+Examples of the fun end of what Stream Analytics can handle includes geospatial analysis of fleets of trucks, or perhaps, driverless vehicles. The real time analysis of point-of-sale data, to optimize inventory control and maximize sales. The remote monitoring of machinery, for predictive maintenance. The predictions being done by machine learning algorithms running on the telemetry data. Given the power of SQL queries, there is really a limitless supply of possible scenarios.
 
 ## Move one step at a time
 

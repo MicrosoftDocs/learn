@@ -343,7 +343,7 @@ The following app simulates a conveyor belt, and reports vibration sensor data e
 1. Run the app.
 1. You should quickly get a console screen, similar to the following image. Note the use of green text, to show things are working as they should. And red text when bad stuff is happening. If you don't get a screen similar to this image, check your device connection string carefully.
 
-    ![Screenshot showing the temperature and humidity telemetry being sent](../media/vibration-telemetry.png)
+    ![Screenshot showing the vibration telemetry messages](../media/vibration-telemetry.png)
 
 1. Watch the telemetry for a short while, checking that is it giving vibrations in the expected ranges.
 1. You can leave this app running, as it's needed for the next section.
@@ -351,7 +351,9 @@ The following app simulates a conveyor belt, and reports vibration sensor data e
 ## Verify the IoT Hub is receiving telemetry
 
 1. To verify that your IoT Hub is receiving the telemetry, open the **Overview** page for the hub, and scroll down to the bottom of the page. The **Device to cloud messages** plot should show some activity.
-    ![Screenshot showing the temperature and humidity telemetry being sent](../media/vibration-hub-overview.png)
+
+    ![Screenshot showing the count of telemetry messages being received by the IoT Hub](../media/vibration-hub-overview.png)
+
 1. If no activity is shown, wait a short while, as there is some latency.
 
 With your device pumping out telemetry, and your hub receiving it, the next step is to route the messages to their correct endpoints.
