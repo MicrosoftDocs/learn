@@ -14,12 +14,11 @@ At the end of this unit, you'll be sending and receiving telemetry.
 
 1. In the terminal, install the required libraries. Enter:
     * **dotnet add package Microsoft.Azure.Devices.Client**
-    * **dotnet add package Microsoft.Azure.Devices.Shared**
     * **dotnet add package Newtonsoft.Json**
 
 1. From the **File** menu, open up the **Program.cs** file, and delete the default contents.
 
-1. After you've entered the code below into the **Program.cs** file, you can run the app with the command `dotnet run`. This command will run the **Program.cs** file in the current folder, so ensure you are in the vibrationdevice folder.
+1. After you've entered the code below into the **Program.cs** file, you can run the app with the command `dotnet run`. This command will run the **Program.cs** file in the current folder.
 
 ::: zone-end
 
@@ -31,7 +30,6 @@ At the end of this unit, you'll be sending and receiving telemetry.
 
 1. Under **Tools/NuGet Package Manager**, select **Manage NuGet Packages for Solution**. Install the following libraries:
     * **Microsoft.Azure.Devices.Client**
-    * **Microsoft.Azure.Devices.Shared**
     * **Newtonsoft.Json**
 
 1. Delete the default contents of the **Program.cs** file.
@@ -41,11 +39,11 @@ At the end of this unit, you'll be sending and receiving telemetry.
 ::: zone-end
 
 > [!NOTE]
-> This module doesn't require you to download any code. However, all of the code is available from [GitHub/MicrosoftDocs/mslearn-remotely-monitor-and-control-devices-with-iot-hub](https://github.com/MicrosoftDocs/mslearn-remotely-monitor-and-control-devices-with-iot-hub), if needed.
+> This module doesn't require you to download any code. However, all of the code is available from [GitHub/MicrosoftDocs/mslearn-data-anomaly-detection-using-azure-iot-hub](https://github.com/MicrosoftDocs/mslearn-data-anomaly-detection-using-azure-iot-hub), if needed.
 
 ### Add code to send telemetry
 
-This section adds code to send telemetry from a simulated device. The device sends temperature (in degrees fahrenheit) and humidity (in percentages), regardless of whether any back-end app is listening or not.
+The following app simulates a conveyor belt, and reports vibration sensor data every two seconds.
 
 1. Open the **Program.cs** file for the device app.
 
@@ -333,8 +331,8 @@ This section adds code to send telemetry from a simulated device. The device sen
     }
     ```
 
-    > [!NOTE]
-    > Read through the comments in the code. Notice how the vibration math from the description of the scenario in the introduction have worked their way into the code.
+    > [!IMPORTANT]
+    > Take a few minutes, and read through the comments in the code. Notice how the vibration math from the description of the scenario in the introduction has worked its way into the code. The most important section of code for learning about IoT messages, starts with the "Create two messages:" comment.
 
 1. Replace the &lt;your device connection string&gt; with the device connection string you saved off in the previous unit. No other lines of code need to be changed.
 
@@ -343,7 +341,7 @@ This section adds code to send telemetry from a simulated device. The device sen
 ### Test your code to send telemetry
 
 1. Run the app.
-1. You should quickly get a console screen, similar to the following image. Note the use of green text, to show things are working as they should! If you don't get a screen similar to this image, check your device connection string carefully.
+1. You should quickly get a console screen, similar to the following image. Note the use of green text, to show things are working as they should. And red text when bad stuff is happening. If you don't get a screen similar to this image, check your device connection string carefully.
 
     ![Screenshot showing the temperature and humidity telemetry being sent](../media/vibration-telemetry.png)
 
@@ -354,7 +352,7 @@ This section adds code to send telemetry from a simulated device. The device sen
 
 1. To verify that your IoT Hub is receiving the telemetry, open the **Overview** page for the hub, and scroll down to the bottom of the page. The **Device to cloud messages** plot should show some activity.
     ![Screenshot showing the temperature and humidity telemetry being sent](../media/vibration-hub-overview.png)
-1. If no activity is shown, wait a short while, as there is some latency. If there is still no activity, go back and check your connection string is correct.
+1. If no activity is shown, wait a short while, as there is some latency.
 
 With your device pumping out telemetry, and your hub receiving it, the next step is to route the messages to their correct endpoints.
 

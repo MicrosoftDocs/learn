@@ -4,17 +4,17 @@ The key to monitoring our conveyor belt is the output of vibration telemetry. Vi
 * _Free vibration_, which occurs when the structure is impacted, but then left to oscillate without interference.
 * _Forced vibration_, which occurs when the structure is under some stress.
 
-Forced vibration is the dangerous one for our structure (the conveyor belt), even if it starts at a low level this vibration can build so that the structure fails prematurely. There is less of a case for free vibration in conveyor belt operation. Most machines though have a natural vibration.
+Forced vibration is the dangerous one for our conveyor belt, even if it starts at a low level this vibration can build so that the structure fails prematurely. There is less of a case for free vibration in conveyor belt operation. Most machines though have a natural vibration.
 
 ## Simulate a vibration sensor device
 
-The code sample we will write has a conveyor belt running at a range of speeds (stopped, slow, fast). The faster the belt is running, the more packages are delivered, but the greater the effects of vibration. We will add natural vibration, based on a sine wave with some randomization. It is possible our anomaly detection system will falsely identify a spike or dip in this sine wave as an anomaly. We will then add two forms of forced vibration, one that has the effect of a cyclic increase in vibration (multiple sine waves added together). And an increasing vibration, were an additional sine wave is added, starting small but growing.
+The code sample we will write has a conveyor belt running at a range of speeds (stopped, slow, fast). The faster the belt is running, the more packages are delivered, but the greater the effects of vibration. We will add natural vibration, based on a sine wave with some randomization. It is possible our anomaly detection system will falsely identify a spike or dip in this sine wave as an anomaly. We will then add two forms of forced vibration. The first has the effect of a cyclic increase in vibration (see the images below). And secondly, an increasing vibration, were an additional sine wave is added, starting small but growing.
 
 The natural vibration will vary from a minimum to a maximum level, similar to the following diagram.
 
 ![Screenshot showing the temperature and humidity telemetry being sent](../media/vibration-minmax-basic.png)
 
-Forced vibration will also vary from a minimum to a maximum level.
+Forced cyclic vibration will also vary from a minimum to a maximum level.
 
 ![Screenshot showing the temperature and humidity telemetry being sent](../media/vibration-minmax-forced.png)
 
@@ -30,7 +30,7 @@ When we add all three vibrations, notice how the extreme highs and lows slowly i
 
 ![Screenshot showing the temperature and humidity telemetry being sent](../media/vibration-basic-forced-increasing.png)
 
-We assume that our conveyor belt has just one sensor, and it also pumps out some other data. This is just to give us something to archive!
+We assume that our conveyor belt has just one sensor, and it also pumps out some other data (packages delivered, ambient temperature, and similar metrics). This is just to give us something to archive!
 
 ## Code the simulator and telemetry messages
 

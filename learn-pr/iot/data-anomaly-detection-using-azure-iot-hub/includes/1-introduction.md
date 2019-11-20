@@ -40,13 +40,13 @@ Vibration is typically measured as an acceleration (meters per second squared, m
 
 The goal here is clearly preventive maintenance. If you can detect that something is wrong, before any damage is caused, then your delivery metrics are unlikely to be affected nearly as much as a system failure.
 
-It is not always easy to visually detect that vibration levels are not normal. For this reason you are looking to Azure IoT Hub, and machine learning, to detect data anomalies before a human observer would notice anything was wrong. You plan to have an IoT Hub vibration detection device on the conveyor belt send continuous telemetry to an IoT Hub. An IoT Hub can cope with millions of telemetry readings, and is well suited to handle the volume of telemetry you have in mind. The IoT Hub will use Azure Stream Analytics, and machine learning, to give you advance warning of data anomalies. Gotta prevent that conveyor belt from failing!
+It is not always easy to detect abnormal vibration levels. For this reason you are looking to Azure IoT Hub, and machine learning, to detect data anomalies before a human observer would notice anything was wrong. You plan to have a vibration detection sensor on the conveyor belt, sending continuous telemetry to an IoT Hub. An IoT Hub can cope with a huge volume of telemetry readings, and is well suited to handle the frequency of telemetry you have in mind. The IoT Hub will use Azure Stream Analytics, and machine learning, to give you advance warning of data anomalies. You must prevent that conveyor belt from failing!
 
-You decide to build a simulation prototype of the system.
+You decide to build a prototype of the planned system, initially using simulated telemetry.
 
 ## The first step
 
-The first step to building this scenario is to create a custom IoT Hub.
+The first step to building this system is to create a custom IoT Hub.
 
 ## Jobs
 
@@ -57,3 +57,4 @@ The first step to building this scenario is to create a custom IoT Hub.
 1. check input/output names match images, code
 1. clear resources, and test end-to-end
 1. Not sure about vibrationTelemetryEndpoint as the correct name
+1. upload code to: mslearn-data-anomaly-detection-using-azure-iot-hub
