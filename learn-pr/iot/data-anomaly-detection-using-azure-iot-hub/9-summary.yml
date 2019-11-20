@@ -59,7 +59,7 @@ quiz:
       explanation: A remote operator will probably not hear the alarm.
     - content: 'As a separate warning message, with an HTTP code of 400'
       isCorrect: false
-      explanation: There is no need to send a separate message, alerts can be added to a message as message data, or as a message property.
+      explanation: There's no need to send a separate message, alerts can be added to a message as message data, or as a message property.
   
   - content: 'What is the purpose of Azure Event Hubs?'
     choices:  

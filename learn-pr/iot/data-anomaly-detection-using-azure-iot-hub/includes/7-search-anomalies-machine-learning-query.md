@@ -2,7 +2,7 @@
 
 The second message route we need to create uses an Azure Event Hub to handle the large volume of data. This route is created in the IoT Hub, then added as an input to the Azure Stream Analytics job.
 
-The job needs to be updated to handle two inputs and two outputs, and a more complex query.
+We need to update the job to handle two inputs and two outputs, and a more complex query.
 
 The process of creating the second route follows a similar process to the first, though it diverges at the creation of an endpoint. An Event Hub is chosen as the endpoint for the telemetry route.
 
@@ -16,7 +16,7 @@ As the flow of data continues, the algorithm establishes a _normal_ range of val
 
 There are always complications, like when there are gaps in the data (the conveyor belt stops for a while, perhaps). The algorithm handles this by imputing values.
 
-Spikes and dips in telemetry data are temporary anomalies. However, as we're dealing with sine waves for vibration, we can expect that a short period of "normal" values will be returned after a high or low value that triggers an anomaly alert. The operator, human or machine, is looking for a cluster of anomalies occurring in a short time span. Such a cluster indicates something is wrong.
+Spikes and dips in telemetry data are temporary anomalies. However, as we're dealing with sine waves for vibration, we can expect a short period of "normal" values follow a high or low value that triggers an anomaly alert. The operator is looking for a cluster of anomalies occurring in a short time span. Such a cluster indicates something is wrong.
 
 There are other built-in machine learning functions in Azure, such as detecting trends. We don't include these functions as part of this module, but the student is encouraged to investigate further.
 
@@ -26,7 +26,7 @@ Visualizing numerical data, especially volumes of it, is a challenge in itself. 
 
 The solution we use in this module is to use some built-in functionality of Power BI. And the ability of Azure Stream Analytics to send data in a real time format that Power BI can ingest.
 
-We use the dashboard feature of Power BI to create a number of _tiles_. One tile contains the actual vibration measurement. Another tile is a gauge, showing from 0.0 to 1.0 the confidence level that the value is an anomaly. A third tile indicates if the 95% confidence level is reached. The main tile though shows the number of anomalies detected over the past hour. This makes it clear if a clutch of anomalies were detected in short succession.
+We use the dashboard feature of Power BI to create a number of _tiles_. One tile contains the actual vibration measurement. Another tile is a gauge, showing from 0.0 to 1.0 the confidence level that the value is an anomaly. A third tile indicates if the 95% confidence level is reached. The main tile though shows the number of anomalies detected over the past hour. This tile makes it clear if a clutch of anomalies were detected in short succession.
 
 The fourth tile includes time as the x-axis. This tile allows you to compare the anomalies with the red text in the telemetry console window. Is there a cluster of anomalies being detected when forced, or increasing, or both, vibrations are in effect?
 

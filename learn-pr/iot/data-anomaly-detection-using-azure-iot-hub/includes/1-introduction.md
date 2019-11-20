@@ -1,6 +1,6 @@
-An Azure IoT Hub can direct the telemetry messages from one, or millions, of devices. The messages can be directed to services for analysis, for storage, for visualization, or for any combination of these objectives. 
+An Azure IoT Hub can direct the telemetry messages from one, or millions, of devices. The messages can be directed to services for analysis, for storage, for visualization. Or for any combination of these objectives. 
 
-In this module, you will learn about Azure IoT Hub, IoT Hub message routing, Azure storage, Azure Stream Analytics, and Azure Machine Learning. You will achieve this knowledge by creating an IoT system to monitor and detect vibration anomalies in a conveyor belt. You will learn a little about vibration, and a lot more about Azure IoT services!
+In this module, you'll learn about Azure IoT Hub, IoT Hub message routing, Azure storage, Azure Stream Analytics, and Azure Machine Learning. You'll achieve this knowledge by creating an IoT system to monitor and detect vibration anomalies in a conveyor belt. You'll learn a little about vibration, and a lot more about Azure IoT services!
 
 ![Conceptual art of conveyor belt](../media/vibrations-art1.png)
 
@@ -32,7 +32,7 @@ The conveyor belt is a critical link in your process, and is monitored for vibra
 
 ![Graph of cyclical forced vibration](../media/vibration1.png)
 
-There are a number of different types of vibration. What is known as _forced vibration_, which is vibration caused by an external force, such as the broken wheel example, or a weighty package that has not been placed properly on the conveyor belt. There is also _increasing vibration_ where the vibration levels increase, slowly or quickly, due to, for example, a design limit being exceeded.
+There are a number of different types of vibration. _Forced vibration_ is vibration caused by an external force. Such a force as the broken wheel example, or a weighty package placed improperly on the conveyor belt. There's also _increasing vibration_ where the vibration levels increase, slowly or quickly. Increasing vibration might happen if a design limit is exceeded.
 
 Vibration is typically measured as an acceleration (meters per second squared, m/s<sup>2</sup>), or possibly g-forces.
 
@@ -40,7 +40,7 @@ Vibration is typically measured as an acceleration (meters per second squared, m
 
 The goal here is clearly preventive maintenance. If you can detect that something is wrong, before any damage is caused, then your delivery metrics are unlikely to be affected nearly as much as a system failure.
 
-It's not always easy to detect abnormal vibration levels. For this reason you are looking to Azure IoT Hub, and machine learning, to detect data anomalies before a human observer would notice anything was wrong. You plan to have a vibration detection sensor on the conveyor belt, sending continuous telemetry to an IoT Hub. An IoT Hub can cope with a huge volume of telemetry readings, and is well suited to handle the frequency of telemetry you have in mind. The IoT Hub will use Azure Stream Analytics, and machine learning, to give you advance warning of data anomalies. You must prevent that conveyor belt from failing!
+It's not always easy to detect abnormal vibration levels. For this reason, you are looking to Azure IoT Hub, and machine learning, to detect data anomalies before a human observer would notice anything was wrong. You plan to have a vibration detection sensor on the conveyor belt, sending continuous telemetry to an IoT Hub. An IoT Hub can cope with a huge volume of telemetry readings, and is well suited to handle the frequency of telemetry you've in mind. The IoT Hub will use Azure Stream Analytics, and machine learning, to give you advance warning of data anomalies. The conveyor belt mustn't fail!
 
 You decide to build a prototype of the planned system, initially using simulated telemetry.
 
@@ -52,10 +52,9 @@ The first step to building this system is to create a custom IoT Hub.
 
 1. check images for private stuff, overwrite - done
 1. verify knowledge check text - done
-1. acrolinx fixes
+1. acrolinx fixes - done 1
 1. read from start to finish, edit - done 1
-1. check input/output names match images, code
+1. check input/output names match images, code - needs addressed
 1. clear resources, and test end-to-end
-1. Not sure about vibrationTelemetryEndpoint as the correct name - nope, its wrong
 1. upload code to: mslearn-data-anomaly-detection-using-azure-iot-hub
-1. alertnative text for images - done
+1. alternative text for images - done

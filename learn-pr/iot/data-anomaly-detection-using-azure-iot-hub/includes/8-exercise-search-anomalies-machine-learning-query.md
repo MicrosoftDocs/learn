@@ -89,7 +89,7 @@ With this new route in place, now we need to update our Stream Analytics job.
 
 1. Again, navigate using the breadcrumbs back to the job.
 
-1. Carefully verify you have used the same names in the SQL query, as you have in the **Inputs** and **Outputs**.
+1. Carefully verify you've used the same names in the SQL query, as you've in the **Inputs** and **Outputs**.
 
     ![Screenshot showing the new SQL query, and the inputs and outputs to the query](../media/vibration-two-query.png)
 
@@ -135,10 +135,10 @@ In order for a human operator to make much sense of the output from this query, 
 
     ![Screenshot showing the completed Power BI dashboard identifying anomalies](../media/vibration-anomalies-detected.png)
 
-1. There is a latency with so many routes and connections, but are you now seeing the vibration data coming through?
+1. There's a latency with so many routes and connections, but are you now seeing the vibration data coming through?
 
 1. Let the job run for a while, several minutes at least before the machine learning will kick in. Compare the console output of the device app, with the Power BI dashboard. Are you able to correlate the forced and increasing vibrations to a run of anomaly detections?
 
-If you are seeing an active Power BI dashboard, similar to the one above, you have just about completed this module. Great work.
+If you are seeing an active Power BI dashboard, similar to the one above, you've just about completed this module. Great work.
 
 Finish the module off with a short knowledge check.

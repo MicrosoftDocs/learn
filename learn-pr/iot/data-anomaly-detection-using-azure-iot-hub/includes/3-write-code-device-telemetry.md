@@ -1,10 +1,10 @@
-The key to monitoring our conveyor belt is the output of vibration telemetry. Vibration is usually measured as an acceleration (m/s<sup>2</sup>), although sometimes it's meaasured in g-forces, where 1 g = 9.81 m/s<sup>2</sup>. There are three types of vibration.
+The key to monitoring our conveyor belt is the output of vibration telemetry. Vibration is usually measured as an acceleration (m/s<sup>2</sup>), although sometimes it's measured in g-forces, where 1 g = 9.81 m/s<sup>2</sup>. There are three types of vibration.
 
 * _Natural vibration_, which is just the frequency a structure tends to oscillate.
 * _Free vibration_, which occurs when the structure is impacted, but then left to oscillate without interference.
 * _Forced vibration_, which occurs when the structure is under some stress.
 
-Forced vibration is the dangerous one for our conveyor belt, even if it starts at a low level this vibration can build so that the structure fails prematurely. There's less of a case for free vibration in conveyor belt operation. Most machines though have a natural vibration.
+Forced vibration is the dangerous one for our conveyor belt. Even if it starts at a low level this vibration can build so that the structure fails prematurely. There's less of a case for free vibration in conveyor belt operation. Most machines, as well all know, have a natural vibration.
 
 ## Simulate a vibration sensor device
 

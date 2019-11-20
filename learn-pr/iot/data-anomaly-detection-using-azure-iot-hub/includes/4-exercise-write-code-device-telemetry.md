@@ -350,7 +350,7 @@ The following app simulates a conveyor belt, and reports vibration sensor data e
 
 ## Verify the IoT Hub is receiving telemetry
 
-1. To verify that your IoT Hub is receiving the telemetry, open the **Overview** page for the hub, and scroll down to the bottom of the page. The **Device to cloud messages** plot should show some activity.
+1. To verify that your IoT Hub is receiving the telemetry, open the **Overview** page for the hub. Scroll down to the bottom of the page. The **Device to cloud messages** plot should show some activity.
 
     ![Screenshot showing the count of telemetry messages being received by the IoT Hub](../media/vibration-hub-overview.png)
 

@@ -45,7 +45,7 @@ The process of routing messages to Azure storage involves digging a few levels d
 
 1. You should now see the **Add a route** screen. Leave the **Data source** parameter as **Device Telemetry Messages**, as that is exactly what we want.
 
-1. You have nearly finished the logging route. One last step, change the **Routing query** from simply **true** to **sensorID = "VSLog"**. This query is a very important step in routing, determining which messages are to follow this route.
+1. You've nearly finished the logging route. One last step, change the **Routing query** from simply **true** to **sensorID = "VSLog"**. This query is an important step in routing, determining which messages are to follow this route.
 
 1. Click **Save**. Wait for the **Success** message.
 
@@ -74,7 +74,7 @@ Before creating the second route, let's verify that the logging route is working
     > [!TIP]
     > If you miss the message to go to the new resource, or need to find a resource at any time, select **Home/All resources**. Enter enough of the resource name for it to appear in the list of resources, then select the resource.
 
-1. You will now see the empty job, no inputs or outputs, and a skeleton query. The next step is to populate these entries. Click on inputs.
+1. You'll now see the empty job, no inputs or outputs, and a skeleton query. The next step is to populate these entries. Click on inputs.
 
 1. Click **+ Add stream input**, and select **IoT Hub** from the drop-down list.
 
@@ -92,7 +92,7 @@ Before creating the second route, let's verify that the logging route is working
 
 1. Select **Add**, to add an output, then **Blob storage/Data Lake** from the drop-down list.
 
-1. For **Output alias** enter "vibrationOutput".
+1. For **Output alias**, enter "vibrationOutput".
 
 1. Ensure **Select storage from your subscriptions** is selected.
 
@@ -138,10 +138,10 @@ Now for the fun part. Does the telemetry your device app is pumping out work its
     > [!NOTE]
     > The Storage Explorer is currently in preview mode, so its exact mode of operation may change.
 
-1. You will need to navigate down a number of folder style entries, that make up dates and times. You should eventually see a text screen of all the telemetry data.
+1. You'll need to navigate down a number of folder style entries, that make up dates and times. You should eventually see a text screen of all the telemetry data.
 
 1. Navigate your way back to your job home page, and select **Stop**, to end the job for now.
 
-You should now feel comfortable that your logging route is working as intended. You have traced the activity from the device app, to the hub, down the route, and to the storage container. Great progress!
+You've traced the activity from the device app, to the hub, down the route, and to the storage container. Great progress!
 
 Now, we need to add the second route, sending the telemetry data to an updated Azure Stream Analytics query.

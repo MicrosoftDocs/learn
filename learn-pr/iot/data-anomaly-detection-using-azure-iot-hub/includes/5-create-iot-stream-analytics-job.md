@@ -2,7 +2,7 @@ The architecture of our vibration monitoring system requires that data be sent t
 
 ## Set up message routing
 
-Message routing enables data to be sent to a range of endpoints. These endpoints include _blob storage_ and _Event Hubs_. Blob storage is clearly for archiving the data. Event Hubs is a data streaming platform. We don't really test the bandwidth of Event Hubs much in this module, with just one telemetry message every two seconds. However, Event Hubs can handling huge quantities of data: millions of telemetry readings per second. Event Hubs are designed to scale, so if your telemetry requirements increased massively, your code and Azure resources would not have to change much.
+Message routing enables data to be sent to a range of endpoints. These endpoints include _blob storage_ and _Event Hubs_. Blob storage is clearly for archiving the data. Event Hubs is a data streaming platform. We don't really test the bandwidth of Event Hubs much in this module, with just one telemetry message every two seconds. However, Event Hubs can handle huge quantities of data: millions of telemetry readings per second. Event Hubs are designed to scale, so if your telemetry requirements increased massively, your code and Azure resources would not have to change much.
 
 ### Send data into cloud storage
 
@@ -19,9 +19,9 @@ An SQL query embedded into our message route can determine if the message is one
 
 ### Analyze data for anomalies hidden in plain sight
 
-The second route will be to an Event Hub, because Event Hubs are a convenient input to Stream Analytics. And Stream Analytics are a convenient way of handling anomaly detection.
+The second route will be to an Event Hub, because Event Hubs are a convenient input to Stream Analytics. And Stream Analytics is a convenient way of handling anomaly detection.
 
-Anomalies in data include the excessive vibration we're looking for in our scenario. Anomalies also include such things as fraud detection, identifying of outliers, and identifying hidden trends. And any scenario where something is not right, but the trouble can be well hidden in the sheer mass of data.
+Anomalies in data include the excessive vibration we're looking for in our scenario. Anomalies also include such things as fraud detection, identifying of outliers, and identifying hidden trends. And any scenario where something isn't right, but the trouble can be well hidden in the sheer mass of data.
 
 In addition to storage and Event Hubs, messages can be routed to Azure Service Bus Queues, and Azure Service Bus Topics. We don't use these more advanced features in this module, but Service Buses can be used to decouple apps and services. This decoupling allows for situations such as the app client and service not being online at the same time. Also, there might be one provider of data, but many subscribers to that data. Deferring messages for later analysis is another use of Service Buses.
 
@@ -29,11 +29,11 @@ In addition to storage and Event Hubs, messages can be routed to Azure Service B
 
 Azure Stream Analytics is a service for analyzing the volumes of data that an IoT Hub, or Event Hub, can pump out. Stream Analytics can analyze input from a file. However, Stream Analytics is really all about real time (or, in reality, near real time).
 
-A Stream Analytics job takes one or more inputs, runs these through an SQL query, and returns results to one or more outputs.
+A Stream Analytics job takes one or more inputs, runs the data through an SQL query, and returns results to one or more outputs.
 
 Storing data in log files, as we're doing here, is at the boring end of what a Stream Analytics job can do. Boring, but necessary.
 
-Examples of the fun end of what Stream Analytics can handle includes geospatial analysis of fleets of trucks, or perhaps, driverless vehicles. The real time analysis of point-of-sale data, to optimize inventory control and maximize sales. The remote monitoring of machinery, for predictive maintenance. The predictions being done by machine learning algorithms running on the telemetry data. Given the power of SQL queries, there's really a limitless supply of possible scenarios.
+Examples of the fun end of what Stream Analytics can handle includes geospatial analysis of fleets of trucks, or perhaps, driverless vehicles. The real-time analysis of point-of-sale data, to optimize inventory control and maximize sales. The remote monitoring of machinery, for predictive maintenance. The predictions being done by machine learning algorithms running on the telemetry data. Given the power of SQL queries, there's really a limitless supply of possible scenarios.
 
 ## Move one step at a time
 
