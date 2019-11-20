@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Azure Government - module summary
   ms.date: 10/11/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
