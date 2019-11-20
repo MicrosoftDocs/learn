@@ -54,10 +54,18 @@ Eventually the team settles on seven top issues. Andy volunteers to add tasks to
 
 After some more discussion, the team decides to take on the three issues Mara originally proposed:
 
-* **Stabilize the build server**
-* **Create a Git-based workflow**
-* **Create unit tests**
+* Stabilize the build server.
+* Create a Git-based workflow.
+* Create unit tests.
 
 **Mara**: These seem like the easiest issues to take on, and they address some recent challenges that came up. Let's set up a project, a team, and a sprint. Then we can decide who does what.
+
+**Tim**: What's a sprint?
+
+**Mara**: Good question. A sprint is the amount of time we have to complete our tasks. Sprints help keep us focused. At the end, we can have a short retrospective meeting to share what we've accomplished. After that, we can plan the next one.
+
+Everyone looks nervous.
+
+**Mara**: We're still learning. A sprint is typically two to four weeks long. Let's just say two weeks and see how that goes. These are mostly tasks Andy and I can tackle. We'll share our progress as we go. Then we can find ways to include everybody.
 
 Mara and the team are off to a good start. Next, you'll set up the project, team, and some tasks on Azure Boards.
