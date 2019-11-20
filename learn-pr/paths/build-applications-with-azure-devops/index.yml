@@ -2,7 +2,7 @@
 uid: learn.azdo.build-applications-with-azure-devops
 metadata:
   title: Build applications with Azure DevOps learning path
-  description: In this learning path, find out how to collaborate with others to continuously build, test, and deploy your applications using Azure Pipelines and GitHub.
+  description: In this learning path, find out how to collaborate with others to continuously build, test, and verify your applications using Azure Pipelines and GitHub.
   brand: azure
   ms.date: 9/1/2019
   author: tpetchel
