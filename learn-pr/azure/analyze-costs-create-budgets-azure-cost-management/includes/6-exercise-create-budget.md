@@ -1,10 +1,12 @@
 Now that you have learned how to create a budget, it is time to try creating your first one on your own. You should have determined your most expensive resource in a previous exercise. If this resource starts accruing more cost, you could see a significantly higher bill at the end of the month. In this exercise, you create a budget to help ensure that costs are monitored. When costs exceed the budget, email alerts are sent to people responsible.
 
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
+
 ## Access the Azure portal
 
 To start, sign in to the Azure portal using the following step.
 
-- Sign in to the Azure portal at https://portal.azure.com and enter your credentials.
+- Sign in to the [Azure portal](https://portal.azure.com) and enter your credentials.
 Navigate to Budgets
 
 ## Navigate to budgets

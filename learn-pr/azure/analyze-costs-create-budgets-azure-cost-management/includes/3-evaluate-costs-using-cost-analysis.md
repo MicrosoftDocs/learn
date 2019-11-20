@@ -44,7 +44,7 @@ This view answers the question: How has my monthly usage varied over the past th
 
 ## Group by and filtering
 
-Cost Management has man grouping and filtering options. In this module's summary, there's a link to view all available group and filter options.
+Cost Management has many grouping and filtering options. In this module's summary, there's a link to view all available group and filter options.
 
 ## Actual versus amortized cost
 
