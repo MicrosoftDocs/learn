@@ -54,7 +54,7 @@ Private IP addresses are used for communication within a virtual network. Privat
 
 **Dynamic private IP addresses** are assigned through a DHCP lease and can change over the lifespan of the Azure resource.
 
-**Static public IP addresses** are assigned through a DHCP reservation and do not change throughout the lifespan of the Azure resource. Status public IP addresses persist if a resource is stopped or deallocated.
+**Static public IP addresses** are assigned through a DHCP reservation and do not change throughout the lifespan of the Azure resource. Static public IP addresses persist if a resource is stopped or deallocated.
 
 ## IP addressing for Azure virtual networks
 
