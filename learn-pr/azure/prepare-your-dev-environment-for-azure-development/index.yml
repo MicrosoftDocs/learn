@@ -2,11 +2,7 @@
 uid: learn.prepare-azure-dev-environment
 metadata:
   title: Prepare your development environment for Azure development
-<<<<<<< HEAD
-  description: Learn how to choose and install the appropriate IDE for your requirements that enables you to build, deploy, monitor, and scale cloud-hosted solutions.
-=======
   description: Learn how to choose and install the appropriate IDE for your requirements to help you build, deploy, monitor, and scale cloud-hosted solutions.
->>>>>>> 80c9cf8f4466730facb847b7681cd171b8934be5
   ms.date: 07/01/2019
   author: patridge
   ms.author: adpatrid
