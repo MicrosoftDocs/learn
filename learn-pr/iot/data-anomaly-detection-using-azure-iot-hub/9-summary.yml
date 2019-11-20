@@ -75,3 +75,18 @@ quiz:
     - content: 'Azure Event Hubs is a real-time analytics service, designed for demanding workloads.'
       isCorrect: false
       explanation: Analyzing demanding streaming workloads is the role of Azure Stream Analytics.
+
+  - content: 'Streaming input to an Azure Stream Analytics job can come from three sources, which three?'
+    choices:  
+    - content: 'IoT Hub message route, Event Hub, Blob storage'
+      isCorrect: false
+      explanation: A message route does not define streaming input.
+    - content: 'Event Hub, Blob storage, SQL query'
+      isCorrect: false
+      explanation: The SQL query is the machinery of the job, not one of its inputs.
+    - content: 'IoT Hub, Event Hub, Blob storage'
+      isCorrect: true
+      explanation: These three options appear in the Add Stream input drop-down list.
+    - content: 'BI dashboard, BI dataset, IoT Hub message route'
+      isCorrect: false
+      explanation: None of these are streaming inputs.

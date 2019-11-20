@@ -10,6 +10,16 @@ Event Hubs are ideal for anomaly detection. Anomalies in data include the excess
 
 In our scenario, we need one route to storage, which we will keep simple and use Azure Blob storage (though Data Lake storage is also an option). The second route will be to an Event Hub. Event Hubs are a convenient input to Stream Analytics. One key feature of message routing is that we can filter incoming data, and stream the output down the route only when certain conditions are met.
 
-In addition to storage and Event Hubs, messages can be routed to Azure Service Bus Queues, and Azure Service Bus Topics. We don't use these more advanced features in this module, but Service Buses can be used to decouple apps and services. This decoupling allows for situations such as the app client and service not being online at the same time. Also, there might be one provider of data, but many subscribers to that data. Deferring messages for later analysis is another use of Service Buses. 
+In addition to storage and Event Hubs, messages can be routed to Azure Service Bus Queues, and Azure Service Bus Topics. We don't use these more advanced features in this module, but Service Buses can be used to decouple apps and services. This decoupling allows for situations such as the app client and service not being online at the same time. Also, there might be one provider of data, but many subscribers to that data. Deferring messages for later analysis is another use of Service Buses.
+
+## Create an Azure Stream Analytics job
+
+Azure Stream Analytics (ASA) is a service for analyzing the volumes of data that an IoT Hub, or Event Hub, can pump out. ASA can analyze input from a file, perhaps held in Azure storage. However, ASA is really all about real-time.
+
+Storing data in log files, as we are doing here, is at the boring end of what ASA is capable of. Boring, but necessary. An ASA job takes one or more inputs, runs these through an SQL query, and returns results to one or more outputs.
+
+Examples of the fun end of what ASA can handle includes geospatial analysis of fleets of trucks, or perhaps, driverless vehicles. The real-time analysis of point-of-sale data, to optimize inventory control and maximize sales. The remote monitoring of machinery, for predictive maintenance. The predictions being done by machine learning algorithms running on the telemetry data. Given the power of SQL queries, there is really a limitless supply of possible scenarios.
+
+## Move one step at a time
 
 Message routes are best built and tested one at a time. To build the storage route, all the features are in the Azure portal. We will call this the "logging" route, and it involves digging a few levels deep into the creation of Azure resources.

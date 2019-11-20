@@ -1,5 +1,3 @@
-    
-    ![Graph of cyclical forced vibration](../media/vibration-hub-new-input.png)
 
 ## Route the logging message to Azure storage
 
@@ -139,5 +137,3 @@ Now for the fun part. Does the telemetry your device app is pumping out work its
 1. Navigate your way back to your job home page, and select **Stop**, to end the job for now.
 
 You should now feel comfortable that your logging route is working as intended. You have traced the activity from the device app, to the hub, down the route, and to the storage container. Good progress! Now we need to add the second route, sending just the telemetry data to different Azure Stream Analytics query.
-
-

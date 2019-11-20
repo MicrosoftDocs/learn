@@ -38,6 +38,4 @@ Now we need to create a single device identity, the sensor monitoring the convey
 1. Click the **iothubowner** entry under **Policy**, then, on the right-hand side, copy the **Connection string-primary key** and paste it into your text file. Again, add a note, this text is the service connection string.
 1. Save off the text file, with a name such as "Vibration sensor.txt", for reference in the next unit.
 
-
-
 You've now completed the preparatory work for this module. The next step is to code the sending of telemetry messages. Before we advance though, a quick knowledge check!

@@ -25,7 +25,7 @@ In this module you will:
 - Experience using Visual Studio, or Visual Studio Code, at the beginner level
 - A Microsoft account, to log into Office Power BI
 
-## The scenario
+## Learn the scenario
 
 Suppose you manage a packaging facility. Packages are assembled for shipping, then placed on a conveyor belt that takes the packages and drops them off in mailing bins. Your metric for success is the number of packages leaving the conveyor belt.
 

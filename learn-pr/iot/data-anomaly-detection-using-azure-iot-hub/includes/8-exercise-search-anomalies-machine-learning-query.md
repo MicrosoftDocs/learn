@@ -3,12 +3,30 @@ In this exercise we are going to add a query to the Stream Analytics job, and th
 
 ## Create a route to an Event Hub
 
-TBD
+1. Locate the **VibrationSensorHub** overview page.
 
-    ![Graph of cyclical forced vibration](../media/vibration-hub-new-bi.png)
+1. Select **Message routing** from the left-hand menu, then **+ Add**, to add a route.
 
-    ![Graph of cyclical forced vibration](../media/vibration-hub-new-output.png)
+1. Name the route "vibrationTelemetryRoute", then click **+ Add endpoint**. This time. select **Event Hubs** for the type of endpoint.
 
+1. Enter "vibrationEventInput", for the **Endpoint name**.
+
+1. From the drop-down list of available namespaces, choose an entry for **Event hub namespace**.
+
+1. Similarly, choose one of the available Event hub instances.
+
+1. Click **Create**, and wait for the success message.
+
+1. You should now be back in the **Add a route** window. Change the **Routing query** to `sensorID = "VSTel"`. Remember that "VSTel" is a string we used in the device app.
+
+1. Verify that your two message routes look like the following image.
+
+    ![Graph of cyclical forced vibration](../media/vibration-two-routes.png)
+
+    > [!NOTE]
+    > Notice how simple it is to send data down different routes. Define an ID in your telemetry, and divert the data traffic based solely on that ID.
+
+With this new route in place, now we need to update our Stream Analytics job.
 
 ## Add a query to the Azure Stream Analytics job
 
@@ -28,7 +46,7 @@ TBD
             CAST(vibration AS float) AS vibe,
             AnomalyDetection_SpikeAndDip(CAST(vibration AS float), 95, 120, 'spikesanddips')
                 OVER(LIMIT DURATION(second, 120)) AS SpikeAndDipScores
-        FROM vibrationInput
+        FROM vibrationEventInput
     )
     SELECT
         time,
@@ -37,7 +55,7 @@ TBD
         SpikeAndDipScore,
         CAST(GetRecordPropertyValue(SpikeAndDipScores, 'IsAnomaly') AS bigint) AS
         IsSpikeAndDipAnomaly
-    INTO vibrationOutput
+    INTO vibrationBI
     FROM AnomalyDetectionStep
    ```
 
@@ -47,7 +65,35 @@ TBD
 
 1. Save the query.
 
-1. Start the job again.
+1. In the **Inputs** section, add another input.
+
+1. Click **+ Add stream input**. In the **Input details** box, ensure **Select Event Hub from your subscriptions** is selected, as is your working subscription.
+
+1. In **Event Hub namespace**, select the namespace you chose in the previous section on adding a second route. You can leave the other fields at their default values.
+
+1. Click **Save**.
+
+1. In the breadcrumbs, go back to your job. You should now see two inputs. Select the icon to add an output.
+
+1. Click **+ Add**, then select **Power BI**.
+
+    ![Graph of cyclical forced vibration](../media/vibration-hub-new-output.png)
+
+1. Authorize the connection. You might need to sign up for a free Microsoft account, if you do not have one already.
+
+1. Complete the **Power BI** entry. For **Output alias** enter "vibrationBI", for **Group workspace** search for **My workspace**, for **Dataset name** enter "vibrationDataset", for **Table name** enter "vibrationTable", and for **Authentication mode** ensure **User token** is selected.
+
+    ![Graph of cyclical forced vibration](../media/vibration-hub-new-bi.png)
+
+1. Click **Save**.
+
+1. Again, navigate using the breadcrumbs back to the job.
+
+1. Carefully verify you have used the same names in the SQL query, as you have in the **Inputs** and **Outputs**.
+
+    ![Graph of cyclical forced vibration](../media/vibration-two-query.png)
+
+1. If all looks good, start the job again!
 
 In order for a human operator to make much sense of the output from this query, we need to visualize the data in a friendly way. One way of doing this is to create a Power BI dashboard.
 
@@ -67,7 +113,7 @@ In order for a human operator to make much sense of the output from this query, 
 
 1. Give the dashboard a friendly name, say "vibration dash".
 
-1. In the blank screen that follows, click **Add tile**. Select **Custom Streaming Data**, **Next**, and select the **vibrationBI** from the list of Datasets.
+1. In the blank screen that follows, click **Add tile**. Select **Custom Streaming Data**, **Next**, and select the **vibrationBI** from the list of datasets.
 
     ![Graph of cyclical forced vibration](../media/vibration-dashboard-add-tile.png)
 

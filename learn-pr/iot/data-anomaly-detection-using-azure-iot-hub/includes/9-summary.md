@@ -22,10 +22,10 @@ No need to delete your project code though, keep it for future reference!
 Take your interest further with:
 
 - [Azure IoT Hub Documentation](https://docs.microsoft.com/azure/iot-hub//)
-- [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/)
+- [Azure Stream Analytics portal](https://azure.microsoft.com/services/stream-analytics/)
+- [Azure Stream Analytics documentation](https://docs.microsoft.com/azure/stream-analytics/)
 - [Azure Certified for IoT device catalog](https://catalog.azureiotsolutions.com/)
-- [Develop IoT Edge modules for Windows devices](https://docs.microsoft.com/azure/iot-edge/tutorial-develop-for-windows#set-up-visual-studio-and-tools)
 
-And look out for additional Learn modules on IoT Hub.
+And look out for additional Learn modules on IoT Hub, and Stream Analytics.
 
-To finish this module, and earn your rewards, complete a final knowledge check.
+To complete this module, and earn your just rewards, complete a final knowledge check.
