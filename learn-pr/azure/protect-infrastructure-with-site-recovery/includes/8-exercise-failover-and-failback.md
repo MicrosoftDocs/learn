@@ -34,7 +34,7 @@ In this exercise, we'll complete failover for a VM using PowerShell, and failbac
     The PowerShell commands above:
     - Store the Azure Site Recovery vault in a variable
     - Set the context for the session to your vault
-    - Store the protected parent-records from the vault
+    - Store the protected patient-records from the vault
     - Get a list of all the recovery points
     - Trigger a failover for the latest recovery point
     - Show the result of the failover
@@ -46,7 +46,7 @@ In this exercise, we'll complete failover for a VM using PowerShell, and failbac
     > [!NOTE]
     > You can view the progress of the failover job at the same time as the script is running.
 
-1. In the portal, select **Virtual machines** to check that the parent-record VM has been failed over to the east coast region.
+1. In the portal, select **Virtual machines** to check that the patient-record VM has been failed over to the east coast region.
 
 1. There are now three VMs, with two named **patient-records**.
 
