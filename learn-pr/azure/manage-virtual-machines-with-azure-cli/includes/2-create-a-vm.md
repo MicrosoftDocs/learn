@@ -38,7 +38,7 @@ In addition, it's helpful to add the `--verbose` flag to see progress while the 
 
 ## Create a Linux virtual machine
 
-Let's create a new Linux virtual machine. Execute the following command in Azure Cloud Shell to create a Debian Linux machine in the "West US" location. Change the location if that one isn't nearby.
+Let's create a new Linux virtual machine. Execute the following command in Azure Cloud Shell to create an Ubuntu VM in the "West US" location. Change the location if that one isn't nearby.
 
 ```azurecli
 az vm create \

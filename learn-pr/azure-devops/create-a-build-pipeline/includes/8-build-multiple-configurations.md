@@ -97,7 +97,9 @@ You'll now push your changes to GitHub and see the pipeline run.
 
 1. When the build completes, select the **Artifacts** button, select **drop**, and then expand the **drop** folder.
 
-    You see that the pipeline produces a .zip file for both the Debug configuration and the Release configuration.
+    ![Azure Pipelines showing the Artifacts button](../media/8-artifacts-button.png)
+
+    You see that the pipeline produces a *.zip* file for both the Debug configuration and the Release configuration.
 
     ![The packaged application for Debug and Release configurations in the Artifacts explorer](../media/8-artifacts-explorer.png)
 
