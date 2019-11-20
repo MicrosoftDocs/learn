@@ -1,0 +1,32 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Patient Diagnostic Image Sytem</h1>
+    <div class="container">
+        <div class="row mt-3 justify-content-center align-items-center">
+            <button id="btn-all" class="btn btn-primary">Get all patients</button>
+        </div>
+        <div class="row mt-5 justify-content-center align-items-center">
+            <div id="result" role="alert"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('#btn-all').on('click', function () {
+            $.get('api/PatientRecords', function (data) {
+                $('#result').empty();
+                $.each(data, function (i, v) {
+                    $('#result').html($('#result').html() + '<p>' + v.name + '<p/>');
+                });
+                $('#result').addClass("alert alert-success");
+            }, 'json');
+
+        });
+    });
+</script>

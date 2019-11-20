@@ -45,7 +45,7 @@ Identify the subtasks of *Control access to Azure Storage with shared access sig
 
 1. **Introduction**
 
-    You work for a healthcare organization and are developing an application that stores patient diagnostic images on blob storage. These images are very sensitive, and you need to ensure that your application is accessing them securely. Your application will integrate with other providers and will need to be able to provide authorization to the images to those provider’s applications.
+    You work for a healthcare organization and are developing an application that stores patient diagnostic images on blob storage. These images are very sensitive, and you need to ensure that your application is accessing them securely. Your application will integrate with other providers and will need to be able to provide authorization to the images to those provider's applications.
 
 1. **Learning-content unit title**
 
@@ -85,3 +85,17 @@ Identify the subtasks of *Control access to Azure Storage with shared access sig
 ## Notes
 
 This is a combined architect/dev module. The exercise should be hands-on with code, developing a portion of an app that uses the valet key pattern to provide temporary blob storage SAS keys to clients.
+
+## References
+
+- [Grant limited access to Azure Storage resources using shared access signatures (SAS)](https://docs.microsoft.com/en-gb/azure/storage/common/storage-sas-overview)
+- [Concept](https://docs.microsoft.com/en-gb/azure/storage/common/storage-sas-overview)
+- [Valet Key Pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/valet-key)
+- [SAS example](https://github.com/Azure-Samples/storage-dotnet-sas-getting-started/tree/master/)
+- https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-3.0&tabs=windows#enable-secret-storage
+
+- https://github.com/Azure/azure-sdk-for-net/tree/master/sdk/storage/Azure.Storage.Blobs/samples
+
+- https://www.mikesdotnetting.com/article/261/integrating-web-api-with-asp-net-razor-web-pages
+
+- https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-javascript?view=aspnetcore-3.0
