@@ -5,12 +5,11 @@ title: Cost management principles
 metadata:
   title: Cost management principles
   description: Cost management principles
-  ms.date: 10/01/2019
+  ms.date: 11/20/2019
   author: bandersmsft
   ms.author: banders
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 
 durationInMinutes: 5
 content: |
@@ -19,7 +18,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: Which of the following approaches is the best way to approach Cost Management?
+  - content: Which of the following strategies is the best way to approach Cost Management?
     choices:
     - content: Assign people to review costs when needed.
       isCorrect: false

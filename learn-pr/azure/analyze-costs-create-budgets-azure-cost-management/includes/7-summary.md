@@ -2,6 +2,7 @@ In this module, you read about the example scenario and assumed the role of a ma
 
 We hope that you've found the Analyze costs and create budgets with Azure Cost Management module useful. To conclude, take the knowledge that you've learned here and apply it practically in your organization to monitor and control your Azure costs and to optimize your resource use.
 
-## Further reading
+## Learn more
+
 - [Cost analysis group and filter options](https://docs.microsoft.com/azure/cost-management/quick-acm-cost-analysis#understanding-grouping-and-filtering-options)
 - [Trigger an action group with budgets](https://docs.microsoft.com/azure/cost-management/tutorial-acm-create-budgets#trigger-an-action-group)

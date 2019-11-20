@@ -3,7 +3,7 @@ uid: learn.azure.analyze-costs-create-budgets-azure-cost-management
 metadata:
   title: "Analyze costs and create budgets with Azure Cost Management"
   description: "Learn how to use cost analysis to understand how your costs accrue each month."
-  ms.date: 10/01/2019
+  ms.date: 11/20/2019
   author: bandersmsft
   ms.author: banders
   ms.topic: interactive-tutorial
@@ -25,8 +25,6 @@ levels:
 roles:
 - administrator
 - business-analyst
-- developer
-- devops-engineer
 - solution-architect
 products:
 - azure-cost-management
