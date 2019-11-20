@@ -48,3 +48,12 @@ You decide to build a simulation prototype of the system.
 ## The first step
 
 The first step to building this scenario is to create a custom IoT Hub.
+
+## Jobs
+
+1. check images for private stuff, overwrite
+1. verify knowledge check text
+1. acrolinx fixes
+1. read from start to finish, edit
+1. check input/output names match images, code
+1. clear resources, and test end-to-end

@@ -41,7 +41,7 @@ The process of routing messages to Azure storage involves digging a few levels d
 
 1. You have nearly finished the logging route. One last step, change the **Routing query** from simply **true** to **sensorID = "VSLog"**. This is a very important step in routing, determining which messages are to follow this route.
 
-1. Click **Save**. Wait for the **Success Route added** message.
+1. Click **Save**. Wait for the **Success** message.
 
 1. Verify that your route has the following settings:
 
