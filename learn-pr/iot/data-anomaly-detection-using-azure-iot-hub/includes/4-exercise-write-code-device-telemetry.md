@@ -354,7 +354,7 @@ The following app simulates a conveyor belt, and reports vibration sensor data e
 
     ![Screenshot showing the count of telemetry messages being received by the IoT Hub](../media/vibration-hub-overview.png)
 
-1. If no activity is shown, wait a short while, as there is some latency.
+1. If no activity is shown, wait a short while, as there's some latency.
 
 With your device pumping out telemetry, and your hub receiving it, the next step is to route the messages to their correct endpoints.
 

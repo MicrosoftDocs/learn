@@ -12,7 +12,7 @@ In this module, you learned how to:
 
 ## Clean up
 
-When you're satisfied you do not need to return to the VibrationSensorHub, delete the device, then delete the hub. These options are available in your [Azure portal](https://ms.portal.azure.com/#home).
+When you're satisfied you don't need to return to the VibrationSensorHub, delete the device, then delete the hub. These options are available in your [Azure portal](https://ms.portal.azure.com/#home).
 
 All resources created using the sandbox will be automatically deleted.
 

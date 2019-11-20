@@ -20,7 +20,7 @@ quiz:
     choices:  
     - content: 'pressure'
       isCorrect: false
-      explanation: Pressure sensors do not measure vibration.
+      explanation: Pressure sensors don't measure vibration.
     - content: 'decibels'
       isCorrect: false
       explanation: Sound vibrations could be measured in decibels, but, realistically, not conveyor belts.
@@ -50,7 +50,7 @@ quiz:
     choices:  
     - content: 'As an entry in the message data'
       isCorrect: false
-      explanation: An alert could be sent this way. However, our app does not use this approach.
+      explanation: An alert could be sent this way. However, our app doesn't use this approach.
     - content: 'As a property named beltAlert, with a value set to true if the condition was met'
       isCorrect: true
       explanation: Properties can be simple, such as device IDs, or more complex types such as conditional alerts.
@@ -80,7 +80,7 @@ quiz:
     choices:  
     - content: 'IoT Hub message route, Event Hub, Blob storage'
       isCorrect: false
-      explanation: A message route does not define streaming input.
+      explanation: A message route doesn't define streaming input.
     - content: 'Event Hub, Blob storage, SQL query'
       isCorrect: false
       explanation: The SQL query provides the processing for the job, not one of its inputs.

@@ -2,7 +2,7 @@
 uid: learn.iot.data-anomaly-search-using-iot-hub
 metadata:
   title: Search for data anomalies using Azure machine learning, IoT Hub routing, and Stream Analytics
-  description: This module describes Azure IoT message routing, Event Hubs, Azure Stream Analytics jobs, anomaly detection, as well as Azure IoT Hubs. The scenario is detecting vibration in a conveyor belt. The student writes an app to simulate vibration telemetry, and then builds all the Azure resources needed to analyze the data.
+  description: This module builds an app to show Azure IoT Hub message routing, and Azure Stream Analytics anomaly detection. The app simulates conveyor belt vibration, the Azure IoT services store the data, and analyze the telemetry for vibration anomalies.
   ms.date: 12/12/2019
   author: PeterTurcan
   ms.author: Olivier.Bloch
@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Search for data anomalies using Azure machine learning, IoT Hub routing, and Stream Analytics
 summary: >
-  This module describes Azure IoT message routing, Event Hubs, Azure Stream Analytics jobs, anomaly detection, as well as Azure IoT Hubs. The scenario is detecting vibration in a conveyor belt. The student writes an app to simulate vibration telemetry, and then builds all the Azure resources needed to analyze the data.
+  This module builds an app to show Azure IoT Hub message routing, and Azure Stream Analytics anomaly detection. The app simulates conveyor belt vibration, the Azure IoT services store the data, and analyze the telemetry for vibration anomalies.
 abstract: | 
   In this module, you will:
   - Create an Azure IoT Hub, using the Azure portal

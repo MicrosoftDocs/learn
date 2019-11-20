@@ -1,14 +1,14 @@
-The key to monitoring our conveyor belt is the output of vibration telemetry. Vibration is usually measured as an acceleration (m/s<sup>2</sup>), although sometimes it is meaasured in g-forces, where 1g = 9.81 m/s<sup>2</sup>. There are three types of vibration.
+The key to monitoring our conveyor belt is the output of vibration telemetry. Vibration is usually measured as an acceleration (m/s<sup>2</sup>), although sometimes it's meaasured in g-forces, where 1 g = 9.81 m/s<sup>2</sup>. There are three types of vibration.
 
 * _Natural vibration_, which is just the frequency a structure tends to oscillate.
 * _Free vibration_, which occurs when the structure is impacted, but then left to oscillate without interference.
 * _Forced vibration_, which occurs when the structure is under some stress.
 
-Forced vibration is the dangerous one for our conveyor belt, even if it starts at a low level this vibration can build so that the structure fails prematurely. There is less of a case for free vibration in conveyor belt operation. Most machines though have a natural vibration.
+Forced vibration is the dangerous one for our conveyor belt, even if it starts at a low level this vibration can build so that the structure fails prematurely. There's less of a case for free vibration in conveyor belt operation. Most machines though have a natural vibration.
 
 ## Simulate a vibration sensor device
 
-The code sample we will write has a conveyor belt running at a range of speeds (stopped, slow, fast). The faster the belt is running, the more packages are delivered, but the greater the effects of vibration. We will add natural vibration, based on a sine wave with some randomization. It is possible our anomaly detection system will falsely identify a spike or dip in this sine wave as an anomaly. We will then add two forms of forced vibration. The first has the effect of a cyclic increase in vibration (see the images below). And secondly, an increasing vibration, were an additional sine wave is added, starting small but growing.
+The code sample we'll write has a conveyor belt running at a range of speeds (stopped, slow, fast). The faster the belt is running, the more packages are delivered, but the greater the effects of vibration. We'll add natural vibration, based on a sine wave with some randomization. It's possible our anomaly detection system will falsely identify a spike or dip in this sine wave as an anomaly. We'll then add two forms of forced vibration. The first has the effect of a cyclic increase in vibration (see the images below). And secondly, an increasing vibration, were an additional sine wave is added, starting small but growing.
 
 The natural vibration will vary from a minimum to a maximum level, similar to the following diagram.
 
@@ -30,10 +30,10 @@ When we add all three vibrations, notice how the extreme highs and lows slowly i
 
 ![Graph showing the addition of natural, forced, and increasing sine waves](../media/vibration-basic-forced-increasing.png)
 
-We assume that our conveyor belt has just one sensor, and it also pumps out some other data (packages delivered, ambient temperature, and similar metrics). This is just to give us something to archive!
+We assume that our conveyor belt has just one sensor, and it also pumps out some other data (packages delivered, ambient temperature, and similar metrics). These extra values are just to give us something to archive!
 
 ## Code the simulator and telemetry messages
 
-Almost all the coding in this module is in the next unit. We build the conveyor belt simulator, and send telemetry messages to the IoT Hub created in the previous unit. In later units there is a small amount of SQL coding.
+Almost all the coding in this module is in the next unit. We build the conveyor belt simulator, and send telemetry messages to the IoT Hub created in the previous unit. In later units, there's a small amount of SQL coding.
 
 You'll be able to select your preferred development environment (Visual Studio Code, or Visual Studio). The simulator is written in C#.

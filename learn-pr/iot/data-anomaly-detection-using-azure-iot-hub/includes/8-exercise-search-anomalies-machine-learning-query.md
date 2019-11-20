@@ -1,5 +1,5 @@
 
-In this exercise we are going to add a query to the Stream Analytics job, and then use Microsoft Power Bi to visualize the output from the query. The query searches for spikes and dips in the vibration data, reporting anomalies. First, we must create the second route.
+In this exercise, we're going to add a query to the Stream Analytics job, and then use Microsoft Power BI to visualize the output from the query. The query searches for spikes and dips in the vibration data, reporting anomalies. First, we must create the second route.
 
 ## Create a route to an Event Hub
 
@@ -24,7 +24,7 @@ In this exercise we are going to add a query to the Stream Analytics job, and th
     ![Screenshot showing the summary of the settings for the two message routes](../media/vibration-two-routes.png)
 
     > [!NOTE]
-    > Notice how simple it is to send data down different routes. Define an ID in your telemetry, and divert the data traffic based solely on that ID.
+    > Notice how simple it's to send data down different routes. Define an ID in your telemetry, and divert the data traffic based solely on that ID.
 
 With this new route in place, now we need to update our Stream Analytics job.
 
@@ -79,9 +79,9 @@ With this new route in place, now we need to update our Stream Analytics job.
 
     ![Screenshot showing the Power BI selection, for a new output.](../media/vibration-hub-new-output.png)
 
-1. Authorize the connection. You might need to sign up for a free Microsoft account, if you do not have one already.
+1. Authorize the connection. You might need to sign up for a free Microsoft account, if you don't have one already.
 
-1. Complete the **Power BI** entry. For **Output alias** enter "vibrationBI", for **Group workspace** search for **My workspace**, for **Dataset name** enter "vibrationDataset", for **Table name** enter "vibrationTable", and for **Authentication mode** ensure **User token** is selected.
+1. Complete the **Power BI** entry. For **Output alias** enter "vibrationBI", and for **Group workspace** search for **My workspace**. For **Dataset name** enter "vibrationDataset", and for **Table name** enter "vibrationTable". For **Authentication mode** ensure **User token** is selected.
 
     ![Screenshot showing the completed fields of a Power BI output](../media/vibration-hub-new-bi.png)
 
@@ -95,7 +95,7 @@ With this new route in place, now we need to update our Stream Analytics job.
 
 1. If all looks good, start the job again.
 
-In order for a human operator to make much sense of the output from this query, we need to visualize the data in a friendly way. One way of doing this is to create a Power BI dashboard.
+In order for a human operator to make much sense of the output from this query, we need to visualize the data in a friendly way. One way of doing this visualization is to create a Power BI dashboard.
 
 ## Create a Microsoft Power BI dashboard
 
@@ -107,7 +107,7 @@ In order for a human operator to make much sense of the output from this query, 
 
 1. Open **My workspace**.
 
-1. Under **Datasets** verify that **vibrationBI** is displayed. If not, you might have to wait a short time for this to populate.
+1. Under **Datasets** verify that **vibrationBI** is displayed. If not, you might have to wait a short time for this list to populate.
 
 1. Select **+ Create** (top right), and select **Dashboard** from the drop-down list.
 
@@ -121,7 +121,7 @@ In order for a human operator to make much sense of the output from this query, 
 
 1. Click **Apply**.
 
-1. Use the bottom right corner icon on the tile to shrink it to the smallest allowable size.
+1. Use the bottom-right corner icon on the tile to shrink it to the smallest allowable size.
 
 1. Repeat the process for a second tile. This time with **Clustered bar chart** as the **Visualization Type**, and **SpikeAndDipScore** as the **Value**. No need to add a title, click **Apply**.
 
@@ -131,7 +131,7 @@ In order for a human operator to make much sense of the output from this query, 
 
 1. Now create a fourth tile, this time a bit more complex. Select **Line chart** for the **Visualization Type**, and **time** for the **Axis**. Under **Values**, select **IsSpikeAndDipAnomaly**. For the time window, select the last 60 minutes. Enter "Anomalies over the hour" for the tile title. Click **Apply**.
 
-1. This time expand the tile to a size three times larger than the smallest tiles, and arrange your dashboard similar to the following image:
+1. This time, expand the tile to a size three times larger than the smallest tiles, and arrange your dashboard similar to the following image:
 
     ![Screenshot showing the completed Power BI dashboard identifying anomalies](../media/vibration-anomalies-detected.png)
 
@@ -139,6 +139,6 @@ In order for a human operator to make much sense of the output from this query, 
 
 1. Let the job run for a while, several minutes at least before the machine learning will kick in. Compare the console output of the device app, with the Power BI dashboard. Are you able to correlate the forced and increasing vibrations to a run of anomaly detections?
 
-If you are seeing an active Power BI dashboard, similar to the one above, you have just about completed this module. Great work. 
+If you are seeing an active Power BI dashboard, similar to the one above, you have just about completed this module. Great work.
 
 Finish the module off with a short knowledge check.

@@ -1,5 +1,5 @@
 
-In this unit, we will create and test the logging route.
+In this unit, we'll create and test the logging route.
 
 ## Route the logging message to Azure storage
 
@@ -37,7 +37,7 @@ The process of routing messages to Azure storage involves digging a few levels d
 
 1. Leave the **Public access level** as private, and click **OK**. Wait for your container to be available. Highlight the container in the list, and click **Select**.
 
-1. The **Add a storage endpoint** page should re-appear. Notice the URL under the **Azure Storage container** title.
+1. The **Add a storage endpoint** page should reappear. Notice the URL under the **Azure Storage container** title.
 
 1. Leave the other fields at their default values, and click **Create**.
 
@@ -45,7 +45,7 @@ The process of routing messages to Azure storage involves digging a few levels d
 
 1. You should now see the **Add a route** screen. Leave the **Data source** parameter as **Device Telemetry Messages**, as that is exactly what we want.
 
-1. You have nearly finished the logging route. One last step, change the **Routing query** from simply **true** to **sensorID = "VSLog"**. This is a very important step in routing, determining which messages are to follow this route.
+1. You have nearly finished the logging route. One last step, change the **Routing query** from simply **true** to **sensorID = "VSLog"**. This query is a very important step in routing, determining which messages are to follow this route.
 
 1. Click **Save**. Wait for the **Success** message.
 
@@ -96,9 +96,9 @@ Before creating the second route, let's verify that the logging route is working
 
 1. Ensure **Select storage from your subscriptions** is selected.
 
-1. You should be able to locate **vibrationstorage** in the list for **Storage account**.
+1. Locate **vibrationstorage** in the list for **Storage account**.
 
-1. For **Container**, you should now be able to select **vibrationcontainer**, the container you created in the previous section.
+1. For **Container**, you should now select **vibrationcontainer**, the container you created in the previous section.
 
 1. No need to change any of the other fields, so click **Save**.
 
@@ -131,14 +131,14 @@ Now for the fun part. Does the telemetry your device app is pumping out work its
 
 1. Select **Home** in the Azure portal. If the **vibrationstorage** resource is not available in the **Recent resources** list, then search for it under **All resources**.
 
-1. Select **vibrationstorage**. You should be able to see activity in the charts.
+1. Select **vibrationstorage**. You should see activity in the charts.
 
-1. For added reassurance that all the data is getting to the account, select **Storage Explorer**. Under **BLOB CONTAINERS** select **vibrationcontainer**.
+1. For added reassurance that all the data is getting to the account, select **Storage Explorer**. Under **BLOB CONTAINERS**, select **vibrationcontainer**.
 
     > [!NOTE]
     > The Storage Explorer is currently in preview mode, so its exact mode of operation may change.
 
-1. You will need to navigate down a number of folder style entries, that make up dates and times, and should eventually be able to see a text screen of all the telemetry data.
+1. You will need to navigate down a number of folder style entries, that make up dates and times. You should eventually see a text screen of all the telemetry data.
 
 1. Navigate your way back to your job home page, and select **Stop**, to end the job for now.
 

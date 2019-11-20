@@ -1,4 +1,4 @@
-In this unit, we will first create an IoT Hub, and then add a single device to that hub. To complete the unit, we record the connection strings needed for the coding parts of this module.
+In this unit, we'll first create an IoT Hub, and then add a single device to that hub. To complete the unit, we record the connection strings needed for the coding parts of this module.
 
 ## Create a custom IoT Hub
 
