@@ -24,7 +24,7 @@ A software developer once famously said "The hardest part of software developmen
 
 Here's a few important considerations about variable names:
 
-- Variable names can contain alphanumeric characters and the understore character.  Special characters like the hash symbol `#` (also known as the number symbol or pound symbol) or dollar symbol `$` are not allowed.
+- Variable names can contain alphanumeric characters and the underscore character.  Special characters like the hash symbol `#` (also known as the number symbol or pound symbol) or dollar symbol `$` are not allowed.
 - Variable names must begin with an alphabetical letter or an underscore, not a number.  Developers use the underscore for a special purpose, so try to not use that for now.
 - Variable names must **not** be a C# keyword.  For example, you cannot use the following variable declarations: `decimal decimal;` or `string string;`.
 - Variable names are case-sensitive, meaning that `string Value;` and `string value;` are two different variables.
