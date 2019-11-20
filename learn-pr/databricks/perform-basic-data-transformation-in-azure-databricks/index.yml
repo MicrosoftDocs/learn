@@ -2,7 +2,7 @@
 uid: learn.perform-basic-data-transformation-in-azure-databricks
 metadata:
   title: Perform basic data transformations in Azure Databricks
-  description: Find out how Azure Databricks uses DataFrames to query, process, and analyze data to change the format of the original data through data transformation.
+  description: Find out how to use the tools and techniques of DataFrames in Azure Databricks to query, process, and transform data.
   ms.date: 02/20/2019
   author: jasallen
   ms.author: jasdeb

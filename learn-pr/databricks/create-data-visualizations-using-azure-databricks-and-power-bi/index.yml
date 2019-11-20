@@ -2,7 +2,7 @@
 uid: learn.create-data-visualizations-using-azure-databricks-and-power-bi
 metadata:
   title: Create data visualizations by using Azure Databricks and Power BI
-  description: Learn how to use Azure Databricks to create basic to Matplotlib advanced visualizations connected to Power BI to create shared dashboards.
+  description: Learn how to use Azure Databricks to create Matplotlib visualizations connected to Power BI to create shared dashboards.
   ms.date: 02/20/2019
   author: jasallen
   ms.author: jasdeb
