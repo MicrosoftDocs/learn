@@ -47,35 +47,41 @@ namespace test.Controllers
         }
 
         // GET PatientRecord/patient-nnnnnn
-        [HttpGet("{Name}")]
+        // Get Patient information
+        [HttpGet("{name}")]
         public PatientRecord Get(string name)
         {
             BlobClient blob = _container.GetBlobClient(name);
             return new PatientRecord { Name=blob.Name, ImageURI=blob.Uri.AbsoluteUri };
         }
 
-        // GET PatientRecord/patient-nnnnnn/secure
-        [HttpGet("{Name}/{secure}")]
-        public PatientRecord Get(string name, string flag)
+        // GET PatientRecord/patient-nnnnnn/secure 
+        // Using this API will return a Patient Record with a SAS validated image URI
+        [HttpGet("{name}/{password}")]
+        public PatientRecord Get(string name, string password)
         {
-            BlobClient blob = _container.GetBlobClient(name);
-            return new PatientRecord { Name=blob.Name, ImageURI=BuildSASUri(blob.Uri).AbsoluteUri };
+            if (password == "Lamna123") {
+                BlobClient blob = _container.GetBlobClient(name);
+                return new PatientRecord { Name=blob.Name, ImageURI=BuildSASUri(blob.Uri).AbsoluteUri };
+            } else {
+                return null;
+            }
         }
 
+        // Create a SAS token for a given image URI
         private Uri BuildSASUri(Uri StorageAccountBlobUri)
         {
-            // Create a service level SAS that only allows reading from service
-            // level APIs
+            // Create an object level SAS
             AccountSasBuilder sas = new AccountSasBuilder
             {
                 // Allow access to blobs
                 Services = AccountSasServices.Blobs,
 
-                // Allow access to the container
+                // Allow access to images
                 ResourceTypes = AccountSasResourceTypes.Object,
 
-                // Access expires in 5 minutes!
-                ExpiresOn = DateTimeOffset.UtcNow.AddMinutes(5)
+                // Access expires in 1 minute
+                ExpiresOn = DateTimeOffset.UtcNow.AddMinutes(1)
             };
             // Allow read access
             sas.SetPermissions(AccountSasPermissions.Read);
@@ -86,6 +92,7 @@ namespace test.Controllers
                 _iconfiguration.GetValue<string>("StorageAccount:AccountKey")
             );
 
+            // Finish building a URI with the SAS token appended 
             UriBuilder sasUri = new UriBuilder(StorageAccountBlobUri);
             sasUri.Query = sas.ToSasQueryParameters(credential).ToString();
         

@@ -14,9 +14,10 @@
             <input type="text" class="form-control" id="patientID" aria-describedby="help" placeholder="patient-nnnnnn">
             <small id="help" class="form-text text-muted">Ensure you have been given a vaild id.</small>
         </div>
-        <div class="form-check mb-5">
-            <input type="checkbox" class="form-check-input" id="requestAccess">
-            <label class="form-check-label" for="requestAccess">Request 5 minutes access</label>
+        <div class="form-group mb-5">
+            <label for="secureID">Secret</label>
+            <input type="text" class="form-control" id="secureID" aria-describedby="helpPass" placeholder="password">
+            <small id="helpPass" class="form-text text-muted">Enter the secure password sent to you.</small>
         </div>
         <button id="btn-submit" type="submit" class="btn btn-primary">Submit</button>
         </form>
@@ -33,10 +34,15 @@
             $('#result').empty();
             $('#result').removeClass();
 
-            if ($('#requestAccess').is(':checked')) {
-                $.get('api/PatientRecords/' + $('#patientID').val() + '/secure', function (data) {
-                    $('#result').html('<img src="' + data.imageURI + '" class="" alt="brain scan" //>');
-                    $('#result').addClass("alert alert-success");
+            if ($('#secureID').val() != "") {
+                $.get('api/PatientRecords/' + $('#patientID').val() + '/' + $('#secureID').val(), function (data) {
+                    if (data != null) {
+                        $('#result').html('<img src="' + data.imageURI + '" class="rounded mx-auto d-block" alt="brain scan" />');
+                        $('#result').addClass("alert alert-success");
+                    } else {
+                        $('#result').html('Invalid password - please try again.');
+                        $('#result').addClass("alert alert-danger");                        
+                    }
                 }, 'json');
             } else {
                 $.get('api/PatientRecords/' + $('#patientID').val(), function (data) {
