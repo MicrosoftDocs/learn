@@ -14,7 +14,7 @@ abstract: |
   In this module, you will:
   - Add users to Azure Active Directory.
   - Manage app and resource access using Azure Active Directory groups.
-  - Give guest users access in Azure Active Directory B2B.
+  - Give guest users access in Azure Active Directory business to business (B2B).
 prerequisites: | 
   - None
 iconUrl: /learn/achievements/create-users-and-groups-in-azure-active-directory.svg
