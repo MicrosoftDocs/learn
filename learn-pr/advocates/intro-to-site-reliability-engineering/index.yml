@@ -2,7 +2,7 @@
 uid: learn.intro-to-site-reliability-engineering
 metadata:
   title: Introduction to Site Reliability Engineering (SRE)
-  description: Learn how to maintain code reliability during rapid business changes with the tools provided by Site Reliability Engineering.
+  description: Get acquainted with how Site Reliability Engineering helps achieve the appropriate level of reliability in systems, services, and products.
   ms.date: 09/26/2018
   author: dnblankedelman
   ms.author: dnb
