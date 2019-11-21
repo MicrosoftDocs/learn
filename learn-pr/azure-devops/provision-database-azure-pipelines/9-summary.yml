@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.provision-databases-azure-pipelines.9-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 11/15/2019
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-summary.md)]

@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.azdo.provision-databases-azure-pipelines
+metadata:
+  title: Provision databases in Azure Pipelines - Learn
+  description: Provision databases in Azure Pipelines
+  ms.date: 09/01/2019
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  #ms.learn-contact: thpetche
+  ms.prod: learning-azure
+title: Provision databases in Azure Pipelines
+summary: Provision databases in Azure Pipelines
+abstract: |
+  In this module, you will:
+  - Deploy your infrastructure using an Azure Resource Manager template in Azure Pipelines.
+  - Create your Azure SQL database with data from a .bacpac file in your Azure Resource Manager template.
+  - Use Azure Key Vault to store and access secrets from Azure Pipelines and your Azure Resource Manager template. 
+prerequisites: |
+  - An Azure DevOps account
+  - Visual Studio Code
+  - .NET Core 2.1
+  - Git
+  - A GitHub account
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure
+- azure-devops
+units:
+- learn.azdo.provision-databases-azure-pipelines.1-introduction
+- learn.azdo.provision-databases-azure-pipelines.2-automate-infrastructure-azure-resource-manager-template
+- learn.azdo.provision-databases-azure-pipelines.3-deploy-azure-resources
+- learn.azdo.provision-databases-azure-pipelines.4-set-up-environment
+- learn.azdo.provision-databases-azure-pipelines.5-deploy-azure-resources-in-azure-pipelines
+- learn.azdo.provision-databases-azure-pipelines.8-clean-up-environment
+- learn.azdo.provision-databases-azure-pipelines.9-summary
+badge:
+  uid: learn.azdo.provision-databases-azure-pipelines.badge
