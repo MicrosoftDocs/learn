@@ -1,0 +1,77 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.network-fundamentals.intro-network-standards-protocols
+title: Introduction to Network Standards and Protocols
+metadata:
+  title:  Introduction to Network Standards and Protocols
+  description: An introduction to network standards and protocols including network security and network management protocols.
+  ms.date: 25/10/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-intro-network-standards-protocols.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What are network standards used for?"
+    choices:
+    - content: "To ensure that hardware conforms to a minimum standard necessary for a good network development. "
+      isCorrect: false
+      explanation: "Network standards are designed to ensure that hardware and software made by different vendors work seamlessly together."
+    - content: "To ensure that software is tightly constrained and meets the needs of the organizations network."
+      isCorrect: false
+      explanation: "Network standards are designed to ensure that hardware and software made by different vendors work seamlessly together."
+    - content: "To ensure that hardware and software made by different vendors can work together seamlessly."
+      isCorrect: true
+      explanation: "Network standards are designed to ensure that hardware and software made by different vendors work seamlessly together."
+
+  - content: "Which of these standards and protocols are used predominately for email?"
+    choices:
+    - content: "FTP"
+      isCorrect: false
+      explanation: "FTP is a file transfer protocol. POP3, SMPT, and IMAP are the core email protocols"
+    - content: "TCP"
+      isCorrect: false
+      explanation: "The Transmission Control Protocol is used for controlling the message. POP3, SMPT, and IMAP are the core email protocols. "
+    - content: "SMTP"
+      isCorrect: true
+      explanation: "POP3, SMTP, and IMAP are all email protocols"
+
+  - content: "Which network security protocol provides a cryptographic network security protocol?"
+    choices:
+    - content: "IPSec"
+      isCorrect: false
+      explanation: "IPSec is not a cryptographic protocol"
+    - content: "HTTP"
+      isCorrect: false
+      explanation: "HTTP is an unsecured network protocol."
+    - content: "SSH"
+      isCorrect: true
+      explanation: "Is a network protocol that provides cryptographic network security protocols."
+  
+  - content: "What is ICMP used for?"
+    choices:
+    - content: "To send alerts when an intrusion is detected."
+      isCorrect: false
+      explanation: "ICMP is used to report on the success or failure of operations and activities on the network."
+    - content: "To send warning messages when the network is about to fail."
+      isCorrect: false
+      explanation: "ICMP is used to report on the success or failure of operations and activities on the network."
+    - content: "To send error messages and operational information indicating success or failure when communicating with another IP address."
+      isCorrect: true
+      explanation: "ICMP is a protocol for sending the success or failure of any network operation."
+
+  - content: "What would you use SNMP for?"
+    choices:
+    - content: "For collecting and organizing information about email servers on your IP network."
+      isCorrect: false
+      explanation: "SNMP is a protocol for gathering and organizing information on your IP network."
+    - content: "For collecting and organizing information about user access and behavior on your IP network."
+      isCorrect: false
+      explanation: "SNMP is a protocol for gathering and organizing information on your IP network."
+    - content: "For collecting and organizing information about managed devices on IP networks and for modifying that information to change device behavior."
+      isCorrect: true
+      explanation: "SNMP is a protocol for gathering and organizing information on your IP network."

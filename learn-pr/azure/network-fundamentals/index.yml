@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.azure.network-fundamentals
+metadata:
+  title: Networking Fundamentals - Principals
+  description: You'll learn the fundamental principals of computer networking to prepare you for the Azure Admin and Developer learning paths
+  ms.date: 24/10/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Networking Fundamentals - Principals
+summary: You'll learn the fundamental principals of computer networking to prepare you for the Azure Admin and Developer learning paths
+abstract: | 
+  In this module, you will:
+  - 1. Identify the core components of computer networking
+  - 1. Understand how these core components map to Azure networking
+prerequisites: | 
+  - None
+iconUrl: /learn/achievements/network-fundamentals.svg
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+- developer
+products: 
+- azure
+units: 
+- learn.azure.network-fundamentals.introduction
+- learn.azure.network-fundamentals.intro-network-standards-protocols
+- learn.azure.network-fundamentals.what-are-lans-wans-pans
+- learn.azure.network-fundamentals.intro-ip-tcp-basics
+- learn.azure.network-fundamentals.summary
+badge:
+  uid: learn.azure.network-fundamentals.badge
