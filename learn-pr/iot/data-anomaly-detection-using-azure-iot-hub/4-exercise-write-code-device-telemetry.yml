@@ -4,7 +4,7 @@ metadata:
   title: Exercise - Write code for vibration telemetry
   description: Create a C# project for an IoT device. The app simulates vibration, and sends vibration telemetry.
   ms.date: 12/01/2019
-  author: Olivier.Bloch
+  author: OlivierBloch
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

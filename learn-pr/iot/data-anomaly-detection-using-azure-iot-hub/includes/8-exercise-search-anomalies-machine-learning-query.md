@@ -78,7 +78,7 @@ With this new route in place, now we need to update our Stream Analytics job.
 
 1. Authorize the connection. You might need to sign up for a free Microsoft account, if you don't have one already.
 
-1. Complete the **Power BI** entry. For **Output alias** enter "vibrationBI", and for **Group workspace** search for **My workspace**. For **Dataset name** enter "vibrationDataset", and for **Table name** enter "vibrationTable". For **Authentication mode**, ensure **User token** is selected.
+1. Complete the **Power BI** entry. For **Output alias** enter "vibrationBI". For **Group workspace**, search for **My workspace**. For **Dataset name** enter "vibrationDataset". For **Table name**, enter "vibrationTable". For **Authentication mode**, ensure **User token** is selected.
 
     ![Screenshot showing the completed fields of a Power BI output](../media/vibration-hub-new-bi.png)
 
@@ -136,6 +136,6 @@ In order for a human operator to make much sense of the output from this query, 
 
 1. Let the job run for a while, several minutes at least before the machine learning will kick in. Compare the console output of the device app, with the Power BI dashboard. Are you able to correlate the forced and increasing vibrations to a run of anomaly detections?
 
-If you are seeing an active Power BI dashboard, similar to the one above, you've just about completed this module. Great work.
+If you're seeing an active Power BI dashboard, similar to the one above, you've just about completed this module. Great work.
 
 Finish the module off with a short knowledge check.

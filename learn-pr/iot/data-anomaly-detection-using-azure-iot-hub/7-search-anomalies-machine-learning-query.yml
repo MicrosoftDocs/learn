@@ -4,7 +4,7 @@ metadata:
   title: Add a route to Azure Stream Analytics, and a query to detect anomalies
   description: Create the second route, through an Event Hub, to an Azure Stream Analytics job. Detect anomalies and visualize the output in Microsoft Power BI.
   ms.date: 12/01/2019
-  author: Olivier.Bloch
+  author: OlivierBloch
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

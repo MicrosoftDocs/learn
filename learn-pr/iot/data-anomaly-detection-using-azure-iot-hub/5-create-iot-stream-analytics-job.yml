@@ -4,7 +4,7 @@ metadata:
   title: Create a message route to Azure blob storage
   description: Create the first of two routes, the logging route. This route takes all the telemetry data and archives it in blob storage.
   ms.date: 12/01/2019
-  author: Olivier.Bloch
+  author: OlivierBloch
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
