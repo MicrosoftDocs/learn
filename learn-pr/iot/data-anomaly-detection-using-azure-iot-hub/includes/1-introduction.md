@@ -47,14 +47,3 @@ You decide to build a prototype of the planned system, initially using simulated
 ## The first step
 
 The first step to building this system is to create a custom IoT Hub.
-
-## Jobs
-
-1. check images for private stuff, overwrite - done
-1. verify knowledge check text - done
-1. acrolinx fixes - done 1
-1. read from start to finish, edit - done 1
-1. check input/output names match images, code - needs addressed
-1. clear resources, and test
-1. upload code to: mslearn-data-anomaly-detection-using-azure-iot-hub
-1. alternative text for images - done

@@ -4,7 +4,7 @@ metadata:
   title: Introduction
   description: Describes the role of Azure IoT, in the scenario of monitoring the vibrations of a conveyor belt.
   ms.date: 12/01/2019
-  author: PeterTurcan
+  author: Olivier.Bloch
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
