@@ -3,8 +3,6 @@ In this unit, we'll create and test the logging route.
 
 ## Route the logging message to Azure storage
 
-The process of routing messages to Azure storage involves digging a few levels deep into the Azure portal. 
-
 1. In the Azure portal, ensure the **Overview** page for the **VibrationSensorHub** is open.
 
 1. In the left-hand menu, select **Message routing**.
@@ -72,9 +70,9 @@ Before creating the second route, let's verify that the logging route is working
 1. Click **Create**. Wait for the **Deployment succeeded** message. Open the new resource.
 
     > [!TIP]
-    > If you miss the message to go to the new resource, or need to find a resource at any time, select **Home/All resources**. Enter enough of the resource name for it to appear in the list of resources, then select the resource.
+    > If you miss the message to go to the new resource, or need to find a resource at any time, select **Home/All resources**. Enter enough of the resource name for it to appear in the list of resources.
 
-1. You'll now see the empty job, no inputs or outputs, and a skeleton query. The next step is to populate these entries. Click on inputs.
+1. You'll now see the empty job, no inputs or outputs, and a skeleton query. The next step is to populate these entries. Click on **Inputs**.
 
 1. Click **+ Add stream input**, and select **IoT Hub** from the drop-down list.
 

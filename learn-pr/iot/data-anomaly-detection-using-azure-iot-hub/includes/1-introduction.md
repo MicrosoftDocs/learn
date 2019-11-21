@@ -34,7 +34,7 @@ The conveyor belt is a critical link in your process, and is monitored for vibra
 
 There are a number of different types of vibration. _Forced vibration_ is vibration caused by an external force. Such a force as the broken wheel example, or a weighty package placed improperly on the conveyor belt. There's also _increasing vibration_ where the vibration levels rise, slowly or quickly. Increasing vibration might happen if a design limit is exceeded.
 
-Vibration is typically measured as an acceleration (meters per second squared, m/s<sup>2</sup>), or possibly g-forces.
+Vibration is typically measured as an acceleration (meters per second squared, m/s<sup>2</sup>).
 
 ![Graph of increasing vibration](../media/vibration2.png)
 

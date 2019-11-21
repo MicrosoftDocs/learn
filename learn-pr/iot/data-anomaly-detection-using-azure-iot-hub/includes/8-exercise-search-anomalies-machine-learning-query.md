@@ -9,9 +9,9 @@ In this exercise, we're going to add a query to the Stream Analytics job, and th
 
 1. Name the route "vibrationTelemetryRoute", then click **+ Add endpoint**. This time. select **Event Hubs** for the type of endpoint.
 
-1. Enter "vibrationEventInput", for the **Endpoint name**.
+1. Enter "vibrationTelemetryEndpoint", for the **Endpoint name**.
 
-1. From the drop-down list of available namespaces, choose an entry for **Event hub namespace**.
+1. From the drop-down list of available namespaces, choose an entry for **Event hub namespace**. Doesn't really matter which namespace.
 
 1. Similarly, choose one of the available Event hub instances.
 
@@ -22,9 +22,6 @@ In this exercise, we're going to add a query to the Stream Analytics job, and th
 1. Verify that your two message routes look like the following image.
 
     ![Screenshot showing the summary of the settings for the two message routes](../media/vibration-two-routes.png)
-
-    > [!NOTE]
-    > Notice how simple it's to send data down different routes. Define an ID in your telemetry, and divert the data traffic based solely on that ID.
 
 With this new route in place, now we need to update our Stream Analytics job.
 
@@ -46,7 +43,7 @@ With this new route in place, now we need to update our Stream Analytics job.
             CAST(vibration AS float) AS vibe,
             AnomalyDetection_SpikeAndDip(CAST(vibration AS float), 95, 120, 'spikesanddips')
                 OVER(LIMIT DURATION(second, 120)) AS SpikeAndDipScores
-        FROM vibrationEventInput
+        FROM vibrationTelemetryEndpoint
     )
     SELECT
         time,
@@ -111,7 +108,7 @@ In order for a human operator to make much sense of the output from this query, 
 
 1. Select **+ Create** (top right), and select **Dashboard** from the drop-down list.
 
-1. Give the dashboard a friendly name, say "Vibration Dash".
+1. Give the dashboard a friendly name, say "Vibration dash".
 
 1. In the blank screen that follows, click **Add tile**. Select **Custom Streaming Data**, **Next**, and select the **vibrationBI** from the list of datasets.
 

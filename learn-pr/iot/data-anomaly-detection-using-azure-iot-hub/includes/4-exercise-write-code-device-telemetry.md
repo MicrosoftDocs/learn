@@ -341,11 +341,11 @@ The following app simulates a conveyor belt, and reports vibration sensor data e
 ### Test your code to send telemetry
 
 1. Run the app.
-1. You should quickly get a console screen, similar to the following image. Note the use of green text, to show things are working as they should. And red text when bad stuff is happening. If you don't get a screen similar to this image, check your device connection string carefully.
+1. You should quickly get a console screen, similar to the following image. Note the use of green text, to show things are working as they should. And red text when bad stuff is happening. If you don't get a screen similar to this image, start by checking your device connection string.
 
     ![Screenshot showing the vibration telemetry messages](../media/vibration-telemetry.png)
 
-1. Watch the telemetry for a short while, checking that is it giving vibrations in the expected ranges.
+1. Watch the telemetry for a short while, checking that it is giving vibrations in the expected ranges.
 1. You can leave this app running, as it's needed for the next section.
 
 ## Verify the IoT Hub is receiving telemetry
