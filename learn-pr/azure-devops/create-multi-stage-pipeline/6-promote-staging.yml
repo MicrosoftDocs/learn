@@ -3,7 +3,7 @@ uid: learn.azdo.create-multi-stage-pipeline.6-promote-staging
 title: Exercise - Promote to Staging
 metadata:
   title: Exercise - Promote to Staging
-  description: Promote to Staging by using a manual approval
+  description: Promote to Staging by using a manual approval.
   ms.date: 09/30/2019
   author: tpetchel
   ms.author: thpetche

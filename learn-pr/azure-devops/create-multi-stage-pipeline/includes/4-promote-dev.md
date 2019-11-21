@@ -65,7 +65,7 @@ Here you modify your pipeline configuration to promote the build to the _Dev_ st
 
     If you still have the browser tab open, refresh the page. If you don't remember the URL, find it in the Azure portal, on the App Service details page.
 
-    You see that the _Space Game_ website was successfully deployed to App Service, and it's running.
+    You see that the _Space Game_ website is deployed to App Service and is running.
 
     ![A browser showing the Space Game website in the Dev environment](../media/4-app-service-dev.png)
 
