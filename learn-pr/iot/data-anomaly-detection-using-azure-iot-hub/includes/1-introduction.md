@@ -32,15 +32,15 @@ The conveyor belt is a critical link in your process, and is monitored for vibra
 
 ![Graph of cyclical forced vibration](../media/vibration1.png)
 
-There are a number of different types of vibration. _Forced vibration_ is vibration caused by an external force. Such a force as the broken wheel example, or a weighty package placed improperly on the conveyor belt. There's also _increasing vibration_ where the vibration levels increase, slowly or quickly. Increasing vibration might happen if a design limit is exceeded.
+There are a number of different types of vibration. _Forced vibration_ is vibration caused by an external force. Such a force as the broken wheel example, or a weighty package placed improperly on the conveyor belt. There's also _increasing vibration_ where the vibration levels rise, slowly or quickly. Increasing vibration might happen if a design limit is exceeded.
 
 Vibration is typically measured as an acceleration (meters per second squared, m/s<sup>2</sup>), or possibly g-forces.
 
 ![Graph of increasing vibration](../media/vibration2.png)
 
-The goal here is clearly preventive maintenance. If you can detect that something is wrong, before any damage is caused, then your delivery metrics are unlikely to be affected nearly as much as a system failure.
+The goal here is clearly preventive maintenance. Detect that something is wrong, before any damage is caused.
 
-It's not always easy to detect abnormal vibration levels. For this reason, you are looking to Azure IoT Hub, and machine learning, to detect data anomalies before a human observer would notice anything was wrong. You plan to have a vibration detection sensor on the conveyor belt, sending continuous telemetry to an IoT Hub. An IoT Hub can cope with a huge volume of telemetry readings, and is well suited to handle the frequency of telemetry you've in mind. The IoT Hub will use Azure Stream Analytics, and machine learning, to give you advance warning of data anomalies. The conveyor belt mustn't fail!
+It's not always easy to detect abnormal vibration levels. For this reason, you are looking to Azure IoT Hub, and machine learning, to detect data anomalies before a human observer would notice anything was wrong. You plan to have a vibration detection sensor on the conveyor belt, sending continuous telemetry to an IoT Hub. The IoT Hub will use Azure Stream Analytics, and machine learning, to give you advance warning of data anomalies. 
 
 You decide to build a prototype of the planned system, initially using simulated telemetry.
 
@@ -55,6 +55,6 @@ The first step to building this system is to create a custom IoT Hub.
 1. acrolinx fixes - done 1
 1. read from start to finish, edit - done 1
 1. check input/output names match images, code - needs addressed
-1. clear resources, and test end-to-end
+1. clear resources, and test
 1. upload code to: mslearn-data-anomaly-detection-using-azure-iot-hub
 1. alternative text for images - done

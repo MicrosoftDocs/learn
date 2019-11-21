@@ -36,4 +36,4 @@ We assume that our conveyor belt has just one sensor, and it also pumps out some
 
 Almost all the coding in this module is in the next unit. We build the conveyor belt simulator, and send telemetry messages to the IoT Hub created in the previous unit. In later units, there's a small amount of SQL coding.
 
-You'll be able to select your preferred development environment (Visual Studio Code, or Visual Studio). The simulator is written in C#.
+You can select your preferred development environment (Visual Studio Code, or Visual Studio). The simulator is written in C#.

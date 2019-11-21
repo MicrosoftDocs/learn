@@ -82,7 +82,7 @@ Before creating the second route, let's verify that the logging route is working
 
 1. Ensure **Select IoT Hub from your subscriptions** is selected.
 
-1. For **IoT Hub** select **VibrationSensorHub**. The **Endpoint** must have **Messaging** selected. The **Shared access policy name** should have **iothubowner**. No need to change the other fields from their defaults.
+1. For **IoT Hub**, select **VibrationSensorHub**. The **Endpoint** must have **Messaging** selected. The **Shared access policy name** should have **iothubowner**. No need to change the other fields from their defaults.
 
     ![Screenshot showing the completed fields of the new stream input](../media/vibration-log-stream-input.png)
 

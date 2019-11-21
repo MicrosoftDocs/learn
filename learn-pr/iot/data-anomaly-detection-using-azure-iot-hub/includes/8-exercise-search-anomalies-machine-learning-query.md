@@ -81,7 +81,7 @@ With this new route in place, now we need to update our Stream Analytics job.
 
 1. Authorize the connection. You might need to sign up for a free Microsoft account, if you don't have one already.
 
-1. Complete the **Power BI** entry. For **Output alias** enter "vibrationBI", and for **Group workspace** search for **My workspace**. For **Dataset name** enter "vibrationDataset", and for **Table name** enter "vibrationTable". For **Authentication mode** ensure **User token** is selected.
+1. Complete the **Power BI** entry. For **Output alias** enter "vibrationBI", and for **Group workspace** search for **My workspace**. For **Dataset name** enter "vibrationDataset", and for **Table name** enter "vibrationTable". For **Authentication mode**, ensure **User token** is selected.
 
     ![Screenshot showing the completed fields of a Power BI output](../media/vibration-hub-new-bi.png)
 
@@ -99,7 +99,7 @@ In order for a human operator to make much sense of the output from this query, 
 
 ## Create a Microsoft Power BI dashboard
 
-1. In your browser, navigate to `outlook.office365.com`. This will take you to the mail inbox. You may have to enter your Microsoft Account login information.
+1. In your browser, navigate to `outlook.office365.com`. This URL will take you to the mail inbox. You may have to enter your Microsoft Account login information.
 
 1. Use the nine dots icon (top left) to display a drop-down list. Select **All apps**. Scroll down and select **Power BI**.
 

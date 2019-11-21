@@ -72,7 +72,7 @@ quiz:
     - content: 'Azure Event Hubs is a data streaming platform and event ingestion service. It can receive and process millions of events per second.'
       isCorrect: true
       explanation: The processed event data can be stored, run through Azure Stream Analytics, and other cloud processes.
-    - content: 'Azure Event Hubs is a real time analytics service, designed for demanding workloads.'
+    - content: 'Azure Event Hubs is a real-time analytics service, designed for demanding workloads.'
       isCorrect: false
       explanation: Analyzing demanding streaming workloads is the role of Azure Stream Analytics.
 
