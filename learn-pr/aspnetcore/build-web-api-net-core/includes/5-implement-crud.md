@@ -100,6 +100,7 @@ public async Task<IActionResult> Update(long id, Product product)
 The preceding action:
 
 * Responds only to the HTTP PUT verb, as denoted by the `[HttpPut]` attribute.
+* Returns `IActionResult` because the `ActionResult` return type isn't known until runtime. The `BadRequest` and `NoContent` methods return `BadRequestResult` and `NoContentResult` types, respectively.
 * Requires that the `id` value is included in the URL segment after `products/`.
 * Updates the `Name` and `Price` properties of the product. The following code instructs EF Core to mark all of the `Product` entity's properties as modified:
 
