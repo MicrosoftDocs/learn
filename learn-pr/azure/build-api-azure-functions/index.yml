@@ -4,18 +4,14 @@ metadata:
   title: Build Serverless APIs with Azure Functions
   description: Build Serverless APIs with Azure Functions
   ms.date: 10/02/2019
-  author:
-    - nickwalkmsft
-    - burkeholland
-  ms.author:
-    - nickwalk
-    - buhollan
+  author: burkeholland
+  ms.author: buhollan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build Serverless APIs with Azure Functions
 summary: Build Serverless APIs with Azure Functions
 abstract: Build Serverless APIs with Azure Functions
-prerequisites:
+prerequisites: /
   - Must have [Node.js](https://nodejs.org/en/) installed
   - Must have [Visual Studio Code](https://code.visualstudio.com/) installed
   - Must have [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) installed
