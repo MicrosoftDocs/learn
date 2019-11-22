@@ -17,9 +17,9 @@ You've now created a new group.
 
 ## Use direct assignment to add a user to this group
 
-You'll now assign members to the Developers group.
+You'll now assign members to the Developer group.
 
-1. Select the **Developers group**.
+1. Select the **Developer group**.
 1. Select **Members** > **Add members**.
 
    ![Screenshot that shows Add member button](../media/5-add-group-member.png)
@@ -33,7 +33,7 @@ You've now added a new member to a group.
 
 You can change the group to use dynamic assignment. Membership then depends on whether a user meets the rules you set for the group.
 
-1. In the Developers group, select **Properties**. 
+1. In the **Developer group**, select **Properties**. 
 1. Change **Membership type** to **Dynamic User**.
 1. Select **Add dynamic query**. 
 1. Select the following values for the rule:

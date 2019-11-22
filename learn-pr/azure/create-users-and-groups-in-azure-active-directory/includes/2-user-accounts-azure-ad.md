@@ -46,7 +46,7 @@ For Azure PowerShell, use the following cmdlet:
 New-AzureADUser
 ```
 
-You can bulk-create member users and guests accounts. The following example shows how to bulk-invite guest users.
+You can bulk create member users and guests accounts. The following example shows how to bulk invite guest users.
 
 ```powershell
 $invitations = import-csv c:\bulkinvite\invitations.csv

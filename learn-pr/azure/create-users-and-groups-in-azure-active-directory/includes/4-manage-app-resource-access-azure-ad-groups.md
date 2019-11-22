@@ -5,7 +5,7 @@ Azure Active Directory (Azure AD) helps you to manage your cloud-based apps, on-
 
 ## Access management in Azure AD
 
-- **Azure AD roles**: Let you manage Azure AD-related resources like users, groups, billing, licensing, application registration, and more.
+- **Azure AD roles**: Use Azure AD roles to manage Azure AD-related resources like users, groups, billing, licensing, application registration, and more.
 - **Role-based access control (RBAC) for Azure resources**: Use RBAC roles to manage access to Azure resources like virtual machines, SQL databases, or storage. For example, you could assign an RBAC role to a user to manage and delete SQL databases in a specific resource group or subscription.
 
 ## Access rights through single user or group assignment

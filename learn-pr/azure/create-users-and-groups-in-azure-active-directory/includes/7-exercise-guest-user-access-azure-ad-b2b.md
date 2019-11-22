@@ -22,7 +22,7 @@ You've now added a guest user to the organization.
 
 ## Add guest users to a group
 
-1. In your Azure AD organization, select **Groups** and then select **Developers group** in the list of groups.
+1. In your Azure AD organization, select **Groups** and then select **Developer group** in the list of groups.
 1. Select **Members** > **Add members**.
 1. Search for the guest account you added to the organization.
 1. Select the account, and click **Select**. 
@@ -32,13 +32,13 @@ You've now added a guest user to a group.
 
 ## Add guest users to an application
 
-1. In your Azure AD organization, select **Enterprise Applications** > **All Applications**. 
-1. Select **New Application**.
+1. In your Azure AD organization, select **Enterprise applications** > **All applications**. 
+1. Select **New application**.
 
    ![Screenshot that shows the New Application button](../media/7-enterprise-application.png)
 
 1. Under **Add from the gallery**, enter *Twitter* and add it.
-1. Select **Users and groups** > **Add users**.
+1. Select **Users and groups** > **Add user**.
 
    ![Screenshot that shows the Twitter application overview page](../media/7-application-users-groups.png)
 

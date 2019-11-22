@@ -13,7 +13,7 @@ summary: Create users in Azure Active Directory. Understand different types of g
 abstract: | 
   In this module, you will:
   - Add users to Azure Active Directory.
-  - Manage app and resource access using Azure Active Directory groups.
+  - Manage app and resource access by using Azure Active Directory groups.
   - Give guest users access in Azure Active Directory business to business (B2B).
 prerequisites: | 
   - None

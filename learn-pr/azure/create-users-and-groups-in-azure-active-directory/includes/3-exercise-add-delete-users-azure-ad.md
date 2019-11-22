@@ -45,7 +45,7 @@ You'll need to activate a free trial for Azure AD Premium to complete all the ex
 
    In the Azure AD organization you created, under **Manage**, select **Roles and administrators**. Your role should be set as **Global Administrator**.
 
-        ![Screenshot that shows your role in Azure AD](../media/3-check-role.png)
+    ![Screenshot that shows your role in Azure AD](../media/3-check-role.png)
    
         If it's not, in the upper-right corner of the Azure portal, select your profile and select **Switch directory**. Under **All directories**, select the organization you created.
 
@@ -55,7 +55,7 @@ You'll need to activate a free trial for Azure AD Premium to complete all the ex
 1. The **User** pane now appears. Provide the following values:
 
     - Name: **Chris Green**
-    - User Name: chris@contosomarketingXXXXXX.onmicrosoft.com. Use the domain name you noted earlier.
+    - User Name: **chris@contosomarketingXXXXXX.onmicrosoft.com**. Use the domain name you noted earlier.
 1. Select **Show Password**, and copy it somewhere you can refer to it later.
 
 1. Select **Create**. The user is now created and registered to your organization.
