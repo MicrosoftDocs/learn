@@ -101,7 +101,7 @@ Now that the SSPR configuration is complete, register a mobile phone number for 
 Now let's test whether the user can reset their password.
 
 1. In a new browser window, go to https://aka.ms/sspr.
-1. For **User ID**, type balas@organization-domain-name.onmicrosoft.com. Replace ""organization-domain-name" with the domain you used for your Azure AD organization.
+1. For **User ID**, type balas@organization-domain-name.onmicrosoft.com. Replace "organization-domain-name" with the domain you used for your Azure AD organization.
 
     ![Screenshot that shows the password reset](../media/4-start-password-reset.png)
 1. Complete the captcha, and then select **Next**.
