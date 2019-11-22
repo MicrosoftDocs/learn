@@ -1,4 +1,4 @@
-While Alice is working on the CSS, Bob is sitting in an apartment on the other side of town blissfully unaware of what Alice is doing (which is OK since they're both using branches). Bob decides to make some changes of his own.
+While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of what Alice is doing. This is just fine because they're both using branches! Bob decides to make some changes of his own.
 
 ## Create a branch for Bob
 
@@ -9,14 +9,14 @@ While Alice is working on the CSS, Bob is sitting in an apartment on the other s
     git checkout -b add-cat
     ```
 
-1. Download the zip file containing the [resources that accompany this lesson](https://topcs.blob.core.windows.net/public/git-resources.zip), then unzip them with these commands:
+1. Download the zip file containing the [some website resources](https://topcs.blob.core.windows.net/public/git-resources.zip), then unzip them with these commands:
 
     ```bash
     wget https://topcs.blob.core.windows.net/public/git-resources.zip
     unzip git-resources.zip
     ```
 
-1. Now, copy **bobcat2-317x240.jpg** into Bob's **Assets** directory, deleting the other files (we will re-download and use them later):
+1. Now, copy **bobcat2-317x240.jpg** into Bob's **Assets** directory, deleting the other files (we'll redownload and use them later):
 
     ```bash
     mv bobcat2-317x240.jpg Assets/bobcat2-317x240.jpg
@@ -24,13 +24,15 @@ While Alice is working on the CSS, Bob is sitting in an apartment on the other s
     rm bombay-cat-180x240.jpg
     ```
 
-1. Now open **index.html** and replace the line that says "Eventually we will put cat pictures here" with the following statement, and then save and close the file:
+1. Now open **index.html** and replace the line that says "Eventually we will put cat pictures here" with the following line:
 
     ```html
     <img src="Assets/bobcat2-317x240.jpg">
     ```
 
-1. You have now made two changes to Bob's "add-cat" branch: You have added one file and modified another. Use `git status` to double check your changes:
+    Now save and close the file.
+
+1. You've now made two changes to Bob's "add-cat" branch: added one file and modified another. Use `git status` to double check your changes:
 
     ```bash
     git status
@@ -72,11 +74,11 @@ While Alice is working on the CSS, Bob is sitting in an apartment on the other s
     git push
     ```
 
-Bob did not use the `--ff-only` option because he was aware that "master" had changed. A fast-forward-only merge would have failed.
+Bob didn't use the `--ff-only` option because he knew "master" had changed. A fast-forward-only merge would have failed.
 
 ## Sync the repos
 
-At this point, Bob has an up-to-date repo, but Alice does not. Alice needs to a do a `git pull` from the shared repo to make sure she has the latest and greatest version of the site.
+At this point, Bob has an up-to-date repo, but Alice doesn't. Alice needs to a do a `git pull` from the shared repo to make sure she has the latest and greatest version of the site.
 
 1. Use the following commands to sync Alice's repo with the shared repo:
 
@@ -85,9 +87,9 @@ At this point, Bob has an up-to-date repo, but Alice does not. Alice needs to a 
     git pull
     ```
 
-Take a moment to verify that Alice's repo and Bob's repo are synced. Each of them should have a JPG file in the **assets** directory and an `<img>` element declared in **index.html**. In addition, the **site.css** file in each repo's **assets** folder should contain a line defining a CSS style named `cat` (the style that Alice added when she made her changes).
+Take a moment to verify that Alice's repo and Bob's repo are synced. Each of them should have a JPG file in the **assets** directory and an `<img>` element declared in **index.html**. The **site.css** file in each repo's **assets** folder should contain a line defining a CSS style named `cat` (the style that Alice added when she made her changes).
 
-Moreover, if you were to open **index.html** in a browser, you would see this:
+If you were to open **index.html** in a browser, you would see:
 
 ![There be cats!](../media/first-cat.png)
 

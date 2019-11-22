@@ -1,4 +1,4 @@
-Alice wants to add some CSS to style the cat pictures, and she'll want to work in her own branh to do so.
+Alice wants to add some CSS to style the cat pictures, and she'll want to work in her own branch to do so.
 
 ## Setup
 
