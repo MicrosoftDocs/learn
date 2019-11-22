@@ -200,7 +200,7 @@
                     "**/resources/**"
                 ],
                 "dest": "modules"
-            },
+            }
             {
                 "files": [
                     "**/*.md",
