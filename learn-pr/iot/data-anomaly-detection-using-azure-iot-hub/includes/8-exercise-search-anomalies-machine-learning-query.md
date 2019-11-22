@@ -17,7 +17,11 @@ In this exercise, we're going to add a query to the Stream Analytics job, and th
 
 1. Click **Create**, and wait for the success message.
 
-1. You should now be back in the **Add a route** window. Change the **Routing query** to `sensorID = "VSTel"`. Remember that "VSTel" is a string we used in the device app.
+1. You should now be back in the **Add a route** window. Remember that "VSTel" is a string we used in the device app. Change the **Routing query** to the following.
+
+    ```sql
+    sensorID = "VSTel"
+    ```
 
 1. Verify that your two message routes look like the following image.
 
@@ -25,46 +29,13 @@ In this exercise, we're going to add a query to the Stream Analytics job, and th
 
 With this new route in place, now we need to update our Stream Analytics job.
 
-## Add a query to the Azure Stream Analytics job
+## Add a new input and output to the Azure Stream Analytics job
 
 1. In your Azure portal, select **vibrationJob** from your list of resources.
 
-1. The **Overview** page for the job includes the **Query**. Select **Edit query**, to the right of the window.
-
-1. Add to the existing contents of the query.
-
-1. Copy and paste the following SQL query, before the existing short query.
-
-   ```sql
-    WITH AnomalyDetectionStep AS
-    (
-        SELECT
-            EVENTENQUEUEDUTCTIME AS time,
-            CAST(vibration AS float) AS vibe,
-            AnomalyDetection_SpikeAndDip(CAST(vibration AS float), 95, 120, 'spikesanddips')
-                OVER(LIMIT DURATION(second, 120)) AS SpikeAndDipScores
-        FROM vibrationTelemetryEndpoint
-    )
-    SELECT
-        time,
-        vibe,
-        CAST(GetRecordPropertyValue(SpikeAndDipScores, 'Score') AS float) AS
-        SpikeAndDipScore,
-        CAST(GetRecordPropertyValue(SpikeAndDipScores, 'IsAnomaly') AS bigint) AS
-        IsSpikeAndDipAnomaly
-    INTO vibrationBI
-    FROM AnomalyDetectionStep
-   ```
-
-    > [!NOTE]
-    > This first section of this query takes the vibration data, and examines the previous 120 seconds worth. The `AnomalyDetection_SpikeAndDip` function will return a `Score` parameter, and an `IsAnomaly` parameter. The score is how certain the machine learning algorithm is that the given value is an anomaly, given as a percentage. If the score exceeds 95%, the `IsAnomaly` parameter has a value of 1, otherwise `IsAnomaly` has a value of 0. Notice the 120 and 95 parameters in the first section of the query.
-    The second section of the query sends the time, vibration, and anomaly parameters to `vibrationBI`.
-
-1. Save the query.
-
 1. In the **Inputs** section, add another input.
 
-1. Click **+ Add stream input**. In the **Input details** box, ensure **Select Event Hub from your subscriptions** is selected, as is your working subscription.
+1. Click **+ Add stream input**. In the **Input details** box, enter "vibrationEventInput" as the **Input alias**. Ensure **Select Event Hub from your subscriptions** is selected, as is your working subscription.
 
 1. In **Event Hub namespace**, select the namespace you chose in the previous section on adding a second route. You can leave the other fields at their default values.
 
@@ -86,9 +57,44 @@ With this new route in place, now we need to update our Stream Analytics job.
 
 1. Again, navigate using the breadcrumbs back to the job.
 
+## Add a query to the Azure Stream Analytics job
+
+1. The **Overview** page for the job includes the **Query**. Select **Edit query**, to the right of the window.
+
+1. Add to the existing contents of the query.
+
+1. Copy and paste the following SQL query, before the existing short query.
+
+   ```sql
+    WITH AnomalyDetectionStep AS
+    (
+        SELECT
+            EVENTENQUEUEDUTCTIME AS time,
+            CAST(vibration AS float) AS vibe,
+            AnomalyDetection_SpikeAndDip(CAST(vibration AS float), 95, 120, 'spikesanddips')
+                OVER(LIMIT DURATION(second, 120)) AS SpikeAndDipScores
+        FROM vibrationEventInput
+    )
+    SELECT
+        time,
+        vibe,
+        CAST(GetRecordPropertyValue(SpikeAndDipScores, 'Score') AS float) AS
+        SpikeAndDipScore,
+        CAST(GetRecordPropertyValue(SpikeAndDipScores, 'IsAnomaly') AS bigint) AS
+        IsSpikeAndDipAnomaly
+    INTO vibrationBI
+    FROM AnomalyDetectionStep
+   ```
+
+    > [!NOTE]
+    > This first section of this query takes the vibration data, and examines the previous 120 seconds worth. The `AnomalyDetection_SpikeAndDip` function will return a `Score` parameter, and an `IsAnomaly` parameter. The score is how certain the machine learning algorithm is that the given value is an anomaly, given as a percentage. If the score exceeds 95%, the `IsAnomaly` parameter has a value of 1, otherwise `IsAnomaly` has a value of 0. Notice the 120 and 95 parameters in the first section of the query.
+    The second section of the query sends the time, vibration, and anomaly parameters to `vibrationBI`.
+
 1. Carefully verify you've used the same names in the SQL query, as you've in the **Inputs** and **Outputs**.
 
     ![Screenshot showing the new SQL query, and the inputs and outputs to the query](../media/vibration-two-query.png)
+
+1. Save the query.
 
 1. If all looks good, start the job again.
 

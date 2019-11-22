@@ -340,7 +340,17 @@ The following app simulates a conveyor belt, and reports vibration sensor data e
 
 ### Test your code to send telemetry
 
-1. Run the app.
+::: zone pivot="vscode"
+
+1. Run the app in the terminal, with the command `dotnet run`. This command will run the **Program.cs** file in the current folder.
+
+::: zone-end
+::: zone pivot="vstudio"
+
+1. Run the app by selecting **Debug/Start Without Debugging**.
+
+::: zone-end
+
 1. You should quickly get a console screen, similar to the following image. Note the use of green text, to show things are working as they should. And red text when bad stuff is happening. If you don't get a screen similar to this image, start by checking your device connection string.
 
     ![Screenshot showing the vibration telemetry messages](../media/vibration-telemetry.png)

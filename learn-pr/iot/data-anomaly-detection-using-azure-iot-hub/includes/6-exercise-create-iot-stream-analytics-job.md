@@ -11,7 +11,7 @@ In this unit, we'll create and test the logging route.
 
 1. Name the route "vibratonLoggingRoute".
 
-1. Click **+ endpoint**, and select **Storage** from the drop-down list.
+1. Click **+ Add endpoint**, and select **Storage** from the drop-down list.
 
 1. Give the endpoint a descriptive name, such as "vibrationLogEndpoint".
 
@@ -25,7 +25,7 @@ In this unit, we'll create and test the logging route.
 
     ![Screenshot showing the completed fields for a new storage account](../media/vibration-storage-account.png)
 
-1. Click **Ok**. Wait until the resource is validated.
+1. Click **Ok**. Wait until the resource is validated. This can take a few minutes.
 
 1. In the **Storage accounts** screen that now appears, search for "vibrationstorage", and select it. A screen named **Containers** should appear.
 
@@ -43,7 +43,13 @@ In this unit, we'll create and test the logging route.
 
 1. You should now see the **Add a route** screen. Leave the **Data source** parameter as **Device Telemetry Messages**, as that is exactly what we want.
 
-1. You've nearly finished the logging route. One last step, change the **Routing query** from simply **true** to **sensorID = "VSLog"**. This query is an important step in routing, determining which messages are to follow this route.
+1. You've nearly finished the logging route. One last step, change the **Routing query** from **true** to the following.
+
+    ```sql
+    sensorID = "VSLog"
+    ```
+
+    This query is an important step, determining which messages are to follow this route.
 
 1. Click **Save**. Wait for the **Success** message.
 
