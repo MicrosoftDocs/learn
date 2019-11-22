@@ -1,4 +1,4 @@
-You've decided to implement self-service password reset (SSPR) in Azure Active Directory (Azure AD) for your  organization. You want to start using SSPR for a group of 20 users in the marketing department as a trial deployment. If everything works well, you'll enable SSPR for your whole organization.
+You've decided to implement self-service password reset (SSPR) in Azure Active Directory (Azure AD) for your organization. You want to start using SSPR for a group of 20 users in the marketing department as a trial deployment. If everything works well, you'll enable SSPR for your whole organization.
 
 In this unit, you'll learn how to enable SSPR in Azure AD.
 
@@ -13,14 +13,14 @@ Before you start to configure SSPR, you need these things in place:
 
 If you don't already have an Azure AD organization that you can use for this module, we'll set one up in the next unit.
 
-## Scope of SSPR roll-out
+## Scope of SSPR rollout
 
 There are three settings for the **Self-service password reset enabled** property:
 
 - **Disabled**: No users in the Azure AD organization can use SSPR. This value is the default.
 - **Enabled**: All users in the Azure AD organization can use SSPR.
-- **Selected**: Only the members of the specified security group can use SSPR. This allows you to 
-enable SSPR for a targeted group of users, who can test it and verify that it works as expected. When you're ready to roll it out broadly, set the property to **Enabled** so that all users have access to the SSPR.
+- **Selected**: Only the members of the specified security group can use SSPR. You can use this option to 
+enable SSPR for a targeted group of users, who can test it and verify that it works as expected. When you're ready to roll it out broadly, set the property to **Enabled** so that all users have access to SSPR.
 
 ## Configure SSPR
 
@@ -29,7 +29,7 @@ Here are the high-level steps to configure SSPR.
 1. In the Azure portal, go to **Active Directory** > **Password reset**.
 1. Properties:
    - Enable SSPR.
-   - You can either enable it for all users in the Azure AD organization, or for selected users.
+   - You can enable it for all users in the Azure AD organization or for selected users.
    - To enable for selected users, you must specify the security group. Members of this group can use SSPR.
 
     ![Screenshot that shows how to enable SSPR](../media/3-enable-sspr.png)
@@ -44,7 +44,7 @@ Here are the high-level steps to configure SSPR.
    - Specify whether users are required to register for SSPR when they next sign in.
    - Specify how often users are asked to reconfirm their authentication information.
 
-    ![Screenshot that shows choose registration options for SSPR](../media/3-registration-options.png)
+    ![Screenshot that shows registration options for SSPR](../media/3-registration-options.png)
 
 1. Notifications: Choose whether to notify users and administrators of password resets.
 
