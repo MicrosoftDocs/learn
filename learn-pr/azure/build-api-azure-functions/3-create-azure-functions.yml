@@ -2,11 +2,11 @@
 uid: learn.azure.build-api-azure-functions.3-exercise
 title: Exercise
 metadata:
-  title: Exercise
-  description: Exercise
+  title: Create Azure Functions Project
+  description: Create Azure Functions Project
   ms.date: 10/02/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: burkeholland
+  ms.author: buhollan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
