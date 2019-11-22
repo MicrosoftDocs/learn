@@ -6,7 +6,7 @@ After you create budgets, they show a simple view of your current spending again
 
 ## Create a budget
 
-Let's create a budget. Click **Add**.
+Let's create a budget. Select **Add**.
 
 ![Example showing a list of budgets already created](../media/5-budgets01.png)
 
@@ -24,7 +24,7 @@ Based on the fields chosen in the budget so far, a graph is shown to help you se
 
 ## Email and alert configuration
 
-After you configure the budget amount, click **Next** to configure budget alerts. Budgets require at least one cost threshold (% of budget) and a corresponding email address. You can optionally include up to five thresholds and five email addresses in a single budget. When a budget threshold is met, email notifications are normally received in less than eight hours.
+After you configure the budget amount, select **Next** to configure budget alerts. Budgets require at least one cost threshold (% of budget) and a corresponding email address. You can optionally include up to five thresholds and five email addresses in a single budget. When a budget threshold is met, email notifications are normally received in less than eight hours.
 
 Set an alert condition when 90% of the budget is reached.
 
