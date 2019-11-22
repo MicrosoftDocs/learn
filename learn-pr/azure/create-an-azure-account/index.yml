@@ -2,7 +2,7 @@
 uid: learn.create-azure-account
 metadata:
   title: Create an Azure account
-  description: "The first step to using Azure is to create an account. Your account holds the Azure services you provision and handles your personal settings like identity, billing, and preferences."
+  description: Find out how to start using Azure by creating an account where you’ll see services and personal settings for identity, billing, and preferences.
   ms.date: 01/1/2019
   author: cwatson-cat
   ms.author: cwatson
