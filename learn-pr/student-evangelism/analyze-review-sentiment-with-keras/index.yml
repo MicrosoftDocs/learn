@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.analyze-review-sentiment-with-keras
 metadata:
   title: Analyze the sentiment of reviews with Keras
-  description: Keras is a high-level neural networks API, written in Python, that runs on top of other deep learning tools like TensorFlow. This module uses Keras to build a neural network that scores text, such as user reviews, for sentiment.
+  description: Learn about Keras, a high-level neural networks API running on Python, to build a neural network that scores text, such as user reviews, for sentiment.
   ms.date: 02/24/2019
   author: JeffProsise
   ms.author: shanama
