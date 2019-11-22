@@ -2,7 +2,7 @@
 uid: learn.data-ai.upload-data-to-azure-data-lake-storage
 metadata:
   title: Upload data to Azure Data Lake Storage
-  description: Learn various ways to upload data to Data Lake Storage Gen 2. Upload data through the Azure portal, Azure Storage Explorer, or .NET. Or copy the data in Azure Data Factory.
+  description: Learn about creating an Azure Data Lake Storage account and uploading data to Data Lake Storage Gen 2 through the Azure Storage Explorer or .NET.
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill
