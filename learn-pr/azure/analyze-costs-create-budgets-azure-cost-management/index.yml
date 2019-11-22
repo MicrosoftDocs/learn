@@ -16,7 +16,7 @@ abstract: |
   - Analyze costs on a subscription using cost analysis
   - Create your first Azure budget based on your analysis
 prerequisites: |
-  - "Owner" access to an Azure subscription (a free trial is sufficient)
+  - *Owner* access to an Azure subscription (a free trial is sufficient)
   - Five or more Azure resources created within your subscription that have been accruing cost for at least one month
   - Basic familiarity with the Azure portal
 iconUrl: /learn/achievements/analyze-costs-create-budgets-azure-cost-management.svg

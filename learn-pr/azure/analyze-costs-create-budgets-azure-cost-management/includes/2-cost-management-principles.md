@@ -37,4 +37,4 @@ The Cost Management tools are accessed from a variety of locations in the Azure 
   ![Navigation to Cost Management from subscriptions and resource groups](../media/2-principles-subscription-resource-group.png)
 
 - Cost Management + Billing window  
-![Navigation to Cost Management from the Cost Management + Billing window](../media/2-principles-cost-management-billing.png)
+  ![Navigation to Cost Management from the Cost Management + Billing window](../media/2-principles-cost-management-billing.png)

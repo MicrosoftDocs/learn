@@ -62,13 +62,13 @@ Due to the change in how costs are represented, it's important to note that actu
 
 ## Saving and sharing views
 
-Customizing a view in cost analysis is easy. Just pick the date range you need, group the data to see a breakdown, and then choose the visualization that you want. **Pin** your view to a dashboard for one-click access, then share the dashboard with your team so everyone can track costs from a single place.
+Customizing a view in cost analysis is easy. Just pick the date range you need, group the data to see a breakdown, and then choose the visualization that you want. **Pin** your view to a dashboard for quick access, then share the dashboard with your team so everyone can track costs from a single place.
 
 ![Example showing pinning a view to a dashboard](../media/3-save-share-view01.png)
 
-You can also share a direct link to your customized view so others can copy and personalize it for themselves. To share a link to a view, click **Share**.
+You can also share a direct link to your customized view so others can copy and personalize it for themselves. To share a link to a view, select **Share**.
 
-Both sharing options offer flexibility, but you need something more convenient. You can save customized views and share them with others, directly from within cost analysis. In the view, click **Save**.
+Both sharing options offer flexibility, but you need something more convenient. You can save customized views and share them with others, directly from within cost analysis. In the view, select **Save**.
 
 People with Cost Management Contributor (or greater) access can create shared views. You can create up to 50 shared views per scope.
 
@@ -89,19 +89,19 @@ The filter bar shows:
 
 Let's start by creating a daily export of your cost and usage data.
 
-Navigate to **Subscriptions**, select a subscription from the list, and then select **Cost analysis** in the menu. At the top of the Cost analysis page, click **Export** and then choose an export option. For example, click  **Schedule export**.
+Navigate to **Subscriptions**, select a subscription from the list, and then select **Cost analysis** in the menu. At the top of the Cost analysis page, select **Export** and then choose an export option. For example, select  **Schedule export**.
 
 Besides subscriptions, you can create exports on resource groups, accounts, departments, and enrollments.
 
-Click  **Add**, type a name for the export, and then select the  **Daily export of month-to-date costs** option. Click **Next**.
+Select  **Add**, type a name for the export, and then select the  **Daily export of month-to-date costs** option. Select **Next**.
 
 ![New export example showing export type](../media/3-basics-exports.png)
 
-Specify the subscription for your Azure storage account, then select your storage account. Specify the storage container and the directory path that you'd like the export file to go to. Click **Next**.
+Specify the subscription for your Azure storage account, then select your storage account. Specify the storage container and the directory path that you'd like the export file to go to. Select **Next**.
 
-Review your export details and click **Create**.
+Review your export details and select **Create**.
 
-Your new export appears in the list of exports. By default, new exports are enabled. If you want to disable or delete a scheduled export, click any item in the list and then click either **Disable**  or **Delete**.
+Your new export appears in the list of exports. By default, new exports are enabled. If you want to disable or delete a scheduled export, select any item in the list and then select either **Disable**  or **Delete**.
 
 Initially, it can take one to two hours before the export runs. However, it can take up to four hours before data is shown in exported files.
 
@@ -125,11 +125,11 @@ If you have a Pay-As-You-Go, MSDN, or Visual Studio subscription, your invoice b
 
 You can easily verify that your Cost Management data is being collected and view the exported CSV file using Azure Storage Explorer.
 
-In the export list, click the storage account name. On the storage account page, click **Open in Explorer**. If you see a confirmation box, click  **Yes**  to open the file in Azure Storage Explorer.
+In the export list, select the storage account name. On the storage account page, select **Open in Explorer**. If you see a confirmation box, select  **Yes**  to open the file in Azure Storage Explorer.
 
 ![Storage account page showing example information and link to Open in Explorer](../media/3-storage-account-page.png)
 
-In Storage Explorer, navigate to the container that you want to open and select the folder corresponding to the current month. A list of CSV files is shown. Select one and then click  **Open**.
+In Storage Explorer, navigate to the container that you want to open and select the folder corresponding to the current month. A list of CSV files is shown. Select one and then select  **Open**.
 
 ![Example information shown in Storage Explorer](../media/3-storage-explorer.png)
 
