@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Extract knowledge and insights from your data with Azure Databricks
-summary: Learn how to use Azure Databricks to perform predictive and analytical data science techniques, such as exploratory data analysis, model training, text analytics and deep learning.
+summary: Learn how to use Azure Databricks to perform predictive and analytical data science techniques, such as exploratory data analysis, model training, text analytics, and deep learning.
 prerequisites: |
   An Azure subscription. 
 iconUrl: /learn/achievements/data-science.svg
