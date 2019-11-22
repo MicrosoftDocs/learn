@@ -2,7 +2,7 @@
 uid: learn.data-ai.translate-speech-with-speech-services
 metadata:
   title: Process and translate speech with Azure Cognitive Speech Services
-  description: Microsoft Cognitive Services provides functionality to enable speech services in your applications. Learn how to convert speech to text and recognize specific speakers in your applications by integrating the Cognitive Speech Services
+  description: With this learning path, discover how Cognitive Speech Services converts speech to text and recognizes specific speakers in your applications.
   brand: azure
   ms.date: 02/25/2019
   author: gerryaobrien
