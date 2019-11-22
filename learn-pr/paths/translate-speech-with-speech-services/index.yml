@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Process and translate speech with Azure Cognitive Speech Services
-summary: Microsoft Cognitive Services provides functionality to enable speech services in your applications. Learn how to convert speech to text and recognize specific speakers in your applications by integrating the Cognitive Speech Services.
+summary: Azure Cognitive Services provides functionality to enable speech services in your applications. Learn how to convert speech to text and recognize specific speakers in your applications by integrating the Cognitive Speech Services.
 cardDescription: Learn how to convert speech to text and recognize specific speakers in your applications by integrating the Cognitive Speech Services.
 prerequisites: Azure Fundamentals
 iconUrl: /learn/achievements/data-ai/translate-speech-with-speech-services.svg
