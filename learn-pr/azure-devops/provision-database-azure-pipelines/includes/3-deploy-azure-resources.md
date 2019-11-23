@@ -16,7 +16,7 @@ You can also [install and run Azure CLI locally](https://docs.microsoft.com/cli/
 
 ## Create a working directory
 
-Here, you create a directory to hold your Azure Resource Manager template.
+Here, you create a directory to hold your Resource Manager template.
 
 1. In Cloud Shell, create a directory named *mslearn-resource-manager-template*.
 
@@ -96,7 +96,7 @@ The rest of the file is the resources that will be created. Take a moment to rea
 
 ### The SQL Server instance
 
-Notice the name parameter. Here you use the default name of the resource you set up in the parameters section and concatenate the `uniqueName` from the variables section. You get the administrator login password from the `adminPassword` parameter.
+Notice the `name` parameter. Here you use the default name of the resource you set up in the parameters section and concatenate the `uniqueName` from the variables section. You get the administrator login password from the `adminPassword` parameter.
 
 ```json
 "type": "Microsoft.Sql/servers",
@@ -150,7 +150,7 @@ The App Service plan does not need the unique suffix. It uses the name of the pl
 
 ### The App Service instance
 
-Here, the name properties concatenate the name of the web site from the parameter default with the unique suffix. You also disable ssl in the hostNameSslStates property.
+Here, the name properties concatenate the name of the web site from the parameter default with the unique suffix. You also disable SSL in the `hostNameSslStates` property.
 
 ```json
 "type": "Microsoft.Web/sites",
@@ -179,7 +179,7 @@ Here, the name properties concatenate the name of the web site from the paramete
     }
 ```
 
-The hostNameBindings type sets the web site name and the type.
+The `hostNameBindings` type sets the web site name and the type.
 
 ```json
 "type": "Microsoft.Web/sites/hostNameBindings",
@@ -195,7 +195,7 @@ The hostNameBindings type sets the web site name and the type.
     }
 ```
 
-1. Save the file. Select the ellipsis (...) and choose save.
+1. Save the file. Select the ellipsis (...) and choose **Save**.
 
 > [!TIP]
 > In Cloud Shell, you can close the editor now if you'd like. But leave the command window open for the next part.
@@ -242,11 +242,11 @@ To make the commands easier to run, start by selecting a default region. After y
 
 ## Make your resource names unique
 
-The mane of the SQL Server instance and the WebApp must be unique.
+The name of the SQL Server instance and the web app must be unique.
 
-For learning purposes, here you generate a random number and assign it to the UNIQUE_ID Bash variable.
+For learning purposes, here you generate a random number and assign it to the `UNIQUE_ID` Bash variable.
 
-1. From Cloud Shell, generate a random number and assign it to the UNIQUE_ID variable.
+1. From Cloud Shell, generate a random number and assign it to the `UNIQUE_ID` variable.
 
     ```bash
     UNIQUE_ID=$RANDOM
@@ -264,31 +264,54 @@ For learning purposes, here you generate a random number and assign it to the UN
     24536
     ```
 
+## Create a random password
+
+Here, you generate a random password to use with your Azure SQL Database.
+
+There are many ways generate random passwords. The method you choose depends on your workflow and requirements. This method uses the **openssl** utility to generate 32 random bytes and base64 encode the output. Base64 encoding ensures that the result contains only printable characters.
+
+Run the **openssl** utility to generate a random password.
+
+```bash
+SQL_PASSWORD=$(openssl rand -base64 32)
+```
+
 ## Run the template
 
 1. Run the following to create a resource group for the template to deploy into.
 
     ```azurecli
-    az group create -l $AZ_LOCATION -n tailspin-spacegame-web-rg
+    az group create --name tailspin-spacegame-web-rg
     ```
 
-1. Run the following to deploy the template. Be sure to replace **[Your Password]** with a suitable strong password.
+1. Run the following to deploy the template.
 
     ```azurecli
     az group deployment create \
-        --name deploytemplate \
-        --resource-group tailspin-spacegame-web-rg \
-        --template-file template.json \
-        --parameters deployPrefix="-dev-" uniqueSuffix=$UNIQUE_ID adminPassword="[Your Password]"
+      --name deploytemplate \
+      --resource-group tailspin-spacegame-web-rg \
+      --template-file template.json \
+      --parameters deployPrefix="-dev-" uniqueSuffix=$UNIQUE_ID adminPassword="$SQL_PASSWORD"
     ```
+
+az group deployment create \
+  --name deploytemplate \
+  --resource-group tailspin-spacegame-web-rg \
+  --template-file template.json \
+  --parameters deploymentParameters.json
 
     It might take a minute to get running. Notice that we are passing in the parameters we need. Later you'll move them to a parameter file, pipeline variables, and Azure Key Vault.
 
-1. Navigate to the Azure portal and choose **Resource groups**, then the **tailspin-spacegame-web-rg** resource group. Notice that you have an App Service Plan, App Service, and a SQL Server instance. Take note of the suffix on each of these resources. It is made from the deployPrefix and your uniqueSuffix.
+1. Navigate to the Azure portal and choose **Resource groups**, then the **tailspin-spacegame-web-rg** resource group. Notice that you have an App Service Plan, App Service, and a SQL Server instance. Take note of the suffix on each of these resources. It is made from the `deployPrefix` and your `uniqueSuffix`.
 
     ![List of resources created by the template run](../media/3-resource-list.png)
 
-1. Run the template again. Notice that it is idempotent, meaning it will not try to create a resource that is already there. However, if you delete a resource or change some of its properties, the new resource or resource changes will be created.
-1. Delete the resources group by selecting the resources in the resource group and selecting **Delete** in the menu bar. Do not delete the resource group. You need to type **Yes** to confirm.  This will delete everything in the resource group along but not the resource group. Make sure the resources are deleted but the resource group remains.
+1. Run the template a second time. Notice that it is idempotent, meaning it will not try to create a resource that is already there. However, if you delete a resource or change some of its properties, the new resource or resource changes will be created.
 
-    ![Delete resources in the resource group](../media/3-delete-resources.png)
+## Clean up
+
+Here, you delete everything in your resource group, but not the resource group itself. You'll add more resources to your resource group shortly.
+
+From the Azure portal, delete the resources group by selecting the resources in the resource group and then selecting **Delete** from the menu bar. Do not delete the resource group. When prompted, enter *Yes* to confirm. This will delete everything in the resource group along but not the resource group. Make sure the resources are deleted but the resource group remains.
+
+![Delete resources in the resource group](../media/3-delete-resources.png)

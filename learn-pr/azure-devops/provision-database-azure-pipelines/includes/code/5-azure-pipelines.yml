@@ -8,7 +8,7 @@ stages:
   - job: 'Build'
     displayName: 'Build job'
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-16.04'
       demands:
         - npm
 
@@ -97,7 +97,7 @@ stages:
   - job: 'DeployInfrastructure'
     displayName: 'Deploy infrastructure job'
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-16.04'
     variables:
     - group: 'Release'
     steps:
@@ -199,58 +199,56 @@ stages:
   condition: and(succeeded('DBAVerificationScript'), eq(variables['schemaChanged'], True))
   jobs:
   - deployment: DBAVerificationApply
-  pool:
-    vmImage: 'windows-2019'
-  variables:
-  - group: 'Release'
-  environment: 'dbaverificationapply'
-  strategy:
-    runOnce:
-      deploy:
-        steps:
-        - task: AzureKeyVault@1
-          inputs:
-            azureSubscription: 'Resource Manager - Tailspin - Space Game'
-            keyVaultName: '$(keyVaultName)'
-            secretsFilter: '*'
-        - download: current
-          artifact: dropDacpac
-          patterns: '**/*'
-        - task: SqlAzureDacpacDeployment@1
-          displayName: 'Deploy SQL schema'
-          inputs:
-            azureSubscription: 'Resource Manager - Tailspin - Space Game'
-            authenticationType: 'server'
-            serverName: 'tailspin-space-game-sql-dev-$(uniqueSuffix).database.windows.net'
-            databaseName: 'tailspindatabase'
-            sqlUsername: 'azuresql'
-            sqlPassword: '$(adminPassword)'
-            deployType: 'DacpacTask'
-            deploymentAction: 'Publish'
-            dacpacFile: '$(Pipeline.Workspace)/dropDacpac/Tailspin.SpaceGame.Database/bin/Debug/Tailspin.SpaceGame.Database.dacpac'
-            ipDetectionMethod: 'AutoDetect'
-        - task: PowerShell@2
-          displayName: 'Remove "schemaChanged" pipeline variable'
-          inputs:
-            targetType: 'inline'
-            script: | 
-              Install-Module VSTeam -Scope CurrentUser -Force
-              Set-VSTeamAccount –Account $(Acct) -PersonalAccessToken $(PAT)
-              $methodParameters = @{
-                ProjectName = "$(System.TeamProject)"
-                Name = "Release"}
-              $vg = Get-VSTeamVariableGroup  @methodParameters 
-              $vars = @{}
-              $vg.variables | Get-Member -MemberType *Property | %{$vars.($_.Name) = $vg.variables.($_.Name)}
-              $vars.Remove("schemaChanged")
-              $methodParameters = @{
-                id = $vg.id
-                ProjectName = "$(System.TeamProject)"
-                Name = "Release"
-                Description = ""
-                Type = "Vsts"
-                Variables = $vars}
-              Update-VSTeamVariableGroup @methodParameters
+    pool:
+      vmImage: 'windows-2019'
+    environment: 'dbaverificationapply'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: AzureKeyVault@1
+            inputs:
+              azureSubscription: 'Resource Manager - Tailspin - Space Game'
+              keyVaultName: '$(keyVaultName)'
+              secretsFilter: '*'
+          - download: current
+            artifact: dropDacpac
+            patterns: '**/*'
+          - task: SqlAzureDacpacDeployment@1
+            displayName: 'Deploy SQL schema'
+            inputs:
+              azureSubscription: 'Resource Manager - Tailspin - Space Game'
+              authenticationType: 'server'
+              serverName: 'tailspin-space-game-sql-dev-$(uniqueSuffix).database.windows.net'
+              databaseName: 'tailspindatabase'
+              sqlUsername: 'azuresql'
+              sqlPassword: '$(adminPassword)'
+              deployType: 'DacpacTask'
+              deploymentAction: 'Publish'
+              dacpacFile: '$(Pipeline.Workspace)/dropDacpac/Tailspin.SpaceGame.Database/bin/Debug/Tailspin.SpaceGame.Database.dacpac'
+              ipDetectionMethod: 'AutoDetect'
+          - task: PowerShell@2
+            displayName: 'Remove "schemaChanged" pipeline variable'
+            inputs:
+              targetType: 'inline'
+              script: | 
+                Install-Module VSTeam -Scope CurrentUser -Force
+                Set-VSTeamAccount –Account $(Acct) -PersonalAccessToken $(PAT)
+                $methodParameters = @{
+                  ProjectName = "$(System.TeamProject)"
+                  Name = "Release"}
+                $vg = Get-VSTeamVariableGroup  @methodParameters 
+                $vars = @{}
+                $vg.variables | Get-Member -MemberType *Property | %{$vars.($_.Name) = $vg.variables.($_.Name)}
+                $vars.Remove("schemaChanged")
+                $methodParameters = @{
+                  id = $vg.id
+                  ProjectName = "$(System.TeamProject)"
+                  Name = "Release"
+                  Description = ""
+                  Type = "Vsts"
+                  Variables = $vars}
+                Update-VSTeamVariableGroup @methodParameters
 
 - stage: 'DeployToDevAppService'
   displayName: 'Deploy to the dev app service'
@@ -266,7 +264,7 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-16.04'
     environment: dev
     variables:
     - group: Release
@@ -286,7 +284,7 @@ stages:
             inputs:
               azureSubscription: 'Resource Manager - Tailspin - Space Game'
               appName: 'tailspin-space-game-web-dev-$(uniqueSuffix)'
-              package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'         
+              package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
           - task: AzureAppServiceSettings@1
             displayName: Azure App Service Settings
             inputs:

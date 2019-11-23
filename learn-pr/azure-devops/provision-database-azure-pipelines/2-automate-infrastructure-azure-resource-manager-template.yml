@@ -18,13 +18,13 @@ quiz:
 
   - content: "Azure Key Vault is a good place to store what kind of information?"
     choices:
-    - content: "Passwords only"
+    - content: "Passwords only."
       isCorrect: false
       explanation: "Azure Key Vault is a tool used to securely store not only passwords, but any information that needs tight control over who has access to it."
-    - content: "API keys only"
+    - content: "API keys only."
       isCorrect: false
       explanation: "Azure Key Vault is a tool used to securely store not only API keys, but any information that needs tight control over who has access to it."
-    - content: "Anything that needs tight control over who has access to it"
+    - content: "Anything that needs tight control over who has access to it."
       isCorrect: true
       explanation: "Azure Key Vault is a tool used to securely store not only passwords and API keys, but any information that needs tight control over who has access to it."
   

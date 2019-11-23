@@ -5,9 +5,9 @@ You're all done with the tasks for this module. Here, you'll move the work item 
 
 ## Clean up Azure resources
 
-Here, you delete your Azure App Service instances and the database server and database. The easiest way to do that is to delete their parent resource group. Deleting a resource group deletes all resources in that group.
+Here, you delete your Key Vault, your Azure App Service instances, and the database server and database. The easiest way to do that is to delete their parent resource group. Deleting a resource group deletes all resources in that group.
 
- Here, you tear down your deployment by using the Azure CLI through Azure Cloud Shell, similar to how you created these resources earlier in this module.
+You do so by using the Azure CLI through Azure Cloud Shell.
 
 To clean up your resource group:
 
@@ -16,7 +16,7 @@ To clean up your resource group:
 
     ![Selecting Cloud Shell from the menu bar](../../shared/media/azure-portal-menu-cloud-shell.png)
 
-1. Run the following `az group delete` command to delete the resource group you used in this module, **tailspin-space-game-rg**.
+1. Run the following `az group delete` command to delete the resource group you used in this module, **tailspin-spacegame-web-rg**.
 
     ```azurecli
     az group delete --name tailspin-space-game-rg
@@ -30,20 +30,20 @@ To clean up your resource group:
     az group list --output table
     ```
 
-    You see that the resource group **tailspin-space-game-rg** no longer exists.
+    You see that the resource group **tailspin-spacegame-web-rg** no longer exists.
 
 ## Move the work item to Done
 
 Here, you'll move the work item you assigned to yourself earlier in this module, **Manage database schema changes**, to the **Done** column.
 
-In practice, the definition of "Done" often means working software in the hands of your users. For learning purposes, here you'll mark this work as complete because the goal for the Tailspin team is to connect the web app to a database.
+In practice, the definition of "Done" often means working software in the hands of your users. For learning purposes, here you'll mark this work as complete because the goal for the Tailspin team is to provision the database through automation.
 
 At the end of each sprint, or work iteration, you and your team might hold a retrospective meeting, where you share the work you completed, what went well in the sprint, and what could be improved.
 
 To complete the work item:
 
 1. From Azure DevOps, navigate to **Boards** and then select **Boards** from the menu.
-1. Move the **Connect the app to a database** work item from the **Doing** to the **Done** column.
+1. Move the **Provision a database in each environment** work item from the **Doing** to the **Done** column.
 
     ![Azure Boards showing the card in the Done column](../media/8-boards.png)
 
@@ -78,7 +78,7 @@ This option deletes your Azure DevOps project, including what's on Azure Boards 
 
 To delete the project:
 
-1. From Azure DevOps, navigate to your project. Earlier, we recommended that you name this project **Space Game - web - Database**.
+1. From Azure DevOps, navigate to your project. Earlier, we recommended that you name this project **Space Game - web - ProvisionDB**.
 1. Click the gear icon next to the project name.
 
     The icon might not appear until you move your mouse over that area.
