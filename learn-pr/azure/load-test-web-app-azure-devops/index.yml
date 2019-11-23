@@ -22,7 +22,7 @@ prerequisites: |
   - Understand how to build basic websites.
   - Know how to navigate resources in the Azure portal.
   - Understand how web servers deliver pages to browsers by using the HTTP protocol.
-  - An Azure subscription and an Azure DevOps account is required for the exercises.
+  - An Azure subscription and an Azure DevOps organization is required for the exercises.
 iconUrl: /learn/achievements/load-test-web-app-azure-devops.svg
 levels:
 - beginner
