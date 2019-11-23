@@ -2,84 +2,96 @@ In this exercise, you'll create a new project in Azure Functions that will be th
 
 ## Create a new Azure Functions project
 
-From VS Code, select the "New Function Project" button in the Azure Functions extension.
+1. From VS Code, select the "New Function Project" button in the Azure Functions extension.
 
-1. Clone the frontend project repo
+![The products admin interface with no data present.](../media/create-functions-project.png)
 
-   ```bash
-   git clone https://github.com/burkeholland/tailwind-products-editor
-   ```
+1. Select "Browse" and create a new folder in the same parent folder as the "frontend" folder
 
-1. Open the project in VS Code
+![The products admin interface with no data present.](../media/api-folder.png)
 
-   ```bash
-   cd tailwind-products-editor
-   code .
-   ```
+1. Select "TypeScript" as the language type.
+
+![The products admin interface with no data present.](../media/select-language.png)
+
+1. Select "HTTP trigger" as the template for the function.
+
+![The products admin interface with no data present.](../media/http-trigger.png)
+
+1. Name the function "GetProducts".
+
+![The products admin interface with no data present.](../media/get-products.png)
+
+1. Select "Function" authorization level.
+
+![The products admin interface with no data present.](../media/function-authorization.png)
+
+1. Select "Add to workspace".
+
+![The products admin interface with no data present.](../media/add-to-workspace.png)
+
+There will now be a second folder in VS Code called "api". When you have multiple top-level folders in VS Code, this is called a "Workspace".
+
+The `index.ts` file from the "GetProducts" folder should be open. This file is what is executed by Azure Functions when the Azure Function's project is run.
 
 ## Run the project
 
-In order to run the project, you'll need to install a small web server. For this exercise, we're going to use the `lite-server` npm package. Install that and then run it from within VS Code.
+Azure Functions projects can be run and debugged locally from within VS Code.
 
-1. Open the integrated terminal in VS Code by pressing <kbd>Ctrl + `</kbd>.
+1. Switch to the "Debug View" in VS Code by clicking on the debug icon in the action bar.
 
-1. Install the `lite-server` npm package
+![The products admin interface with no data present.](../media/debug-view.png)
 
-   ```bash
-   npm install -g lite-server
+1. Make sure that "Attach to Node Functions" is selected in the dropdown list at the top and press the green "Start Debugging" triangle button.
+
+![The products admin interface with no data present.](../media/start-debugging.png)
+
+1. The Azure Functions project will launch. Notice that the terminal shows you what URL the function is running on. Press Cmd/Ctrl and click on the link to open it in a browser.
+
+![The products admin interface with no data present.](../media/get-products-page.png)
+
+1. The default function template takes in a name parameter and returns a greeting. To pass in the name parameter, modify the url to pass in a query string parameter called "name"
+
+   ```
+   http://localhost:7071/api/GetProducts?name=YourName
    ```
 
-1. Run the `lite-server` web server on the current directory
+![The products admin interface with no data present.](../media/hello-message.png)
 
-   ```bash
-   lite-server
-   ```
+## Debug the GetProducts function
 
-Your browser will open and the site will be loaded. Note that from here on out you can leave this instance of the application running. Any changes that you make to the application will be reflected automatically.
+1. Return to the `index.ts` file in VS Code. Click in the left-hand gutter next to line number 7.
 
-![The products admin interface with no data present.](../media/exercise-products-app.png)
+![The products admin interface with no data present.](../media/set-breakpoint.png)
 
-## Create the database
+This will set a breakpoint in the code. You can hit this breakpoint by executing the function from the browser.
 
-Now that the project is running, it's time to setup the database that will be used to provide data to the API.
+1. Return to the browser where the greeting message was returned. Press refresh on the page. VS Code will break on line 7.
 
-1. Run the following command in the command shell to create the database and populate it with sample data.
+![The products admin interface with no data present.](../media/vs-code-broken.png)
 
-```bash
-./CREATE_DB.sh
-```
+1. Press F5 to continue the program execution and see the greeting in the browser. Remove the breakpoint in the editor by clicking on the red dot next to line 7.
 
-[!INCLUDE[OS-specific keyboard shortcuts](../../../includes/azure-cloudshell-copy-paste-tip.md)]
+## Create the UpdateProduct function
 
-This command will create a new database account in the format "tailwind-xxxx". The name of the database itself is "tailwind" and there will be a single collection inside called "products".
+1. Create a new Function called "UpdateProducts" by pressing Cmd/Ctrl + Shift + P and typing "create function". Select "Azure Functions: Create Function" from the list.
 
-    > [!IMPORTANT]
-    > The database creation step can take upwards of 10 minutes to complete. While it may look like nothing is happening in the terminal, the database creation process is underway in Azure. Please wait for it to fully complete.
+![The products admin interface with no data present.](../media/create-update-function.png)
 
-Now that the database has been created, you can view it within VS Code via the Cosmos DB extension.
+1. Select the "api" folder.
 
-1. Open Visual Studio Code and select the "Azure" item in the Action Bar. This will open the Azure extension area in the sidebar.
+![The products admin interface with no data present.](../media/create-update-function.png)
 
-![](../media/action-bar-azure-button.png)
+1. Select the "Http Trigger" type. Name it "UpdateProduct" and select "Function" as the authorization type.
 
-1. Click on the "Sign In to Azure" option in the "Cosmos DB" section.
+A new folder called "UpdateProduct will be added under the "api" folder. This folder contains an `index.ts` which is the code for the "UpdateProduct" function.
 
-![](../media/sign-in-to-azure.png)
+![The products admin interface with no data present.](../media/update-product-folder.png)
 
-This will open a browser window where you can sign in.
+1. repeat the steps in this section to create a "CreateProduct" function and a "DeleteProduct" function.
 
-![](../media/sign-in.png)
+When you are finished, your project should look like this...
 
-1. Return to VS Code and expand your subscription in the "Cosmos DB" sidebar explorer. Notice the account named "tailwind-xxxx"
+![The products admin interface with no data present.](../media/api-with-all-endpoints.png)
 
-![](../media/view-cosmos-accounts.png)
-
-1. Expand this account, expand the "tailwind" database, expand the "products" collection and then the "Documents" node.
-
-![](../media/fully-expanded.png)
-
-1. Click on the "Artificial Tree" item to view the document in the database
-
-![](../media/view-document.png)
-
-You now have the frontend running, and you have a database with the products in it. The next step is to create a Serverless API that connects the frontend web page to the backend database.
+You have now learned how to create a new Azure Functions project. How to run Azure Functions locally, how to pass query string parameters to an Azure Function, how to debut an Azure Function in Visual Studio Code and how to create additional Azure Functions in your project. The next step is to connect the newly generated Create, Read, Update and Delete (CRUD) endpoints to the database.
