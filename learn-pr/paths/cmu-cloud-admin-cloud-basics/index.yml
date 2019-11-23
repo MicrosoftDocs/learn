@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.cmu-cloud-admin.cmu-cloud-admin-cloud-basics
+metadata:
+  title: Cloud Administration Basics
+  description: asfasdfsad can mention CMU
+  brand: azure
+  ms.date: 12/01/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: Cloud Administration Basics
+summary: asfasdfsad
+cardDescription: asfasdfsad
+prerequisites: none
+iconUrl: /learn/achievements/cmu-cloud-admin/cmu-cloud-admin-cloud-basics.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+products:
+- azure
+- azure-portal
+- azure-language-understanding
+- azure-bot-service
+modules:
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview
+- learn.cmu-cloud-admin.cloud-admin-provision-manage
+- learn.cmu-cloud-admin.secure-cloud-resources
+trophy:
+  uid: learn.cmu-cloud-admin.cmu-cloud-admin-cloud-basics.trophy
