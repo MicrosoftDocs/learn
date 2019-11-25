@@ -162,7 +162,7 @@ You will want to memorize this format to execute your Python scripts in Linux: `
 
 ::: zone-end
 
-::: zone pivot="macOS"
+::: zone pivot="macos"
 
 #### Execute a Python script in macOS
 

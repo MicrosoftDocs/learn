@@ -50,7 +50,7 @@ You should now see the following prompt:
 
 ::: zone-end
 
-::: zone pivot="macOS"
+::: zone pivot="macos"
 
 #### Launch Python's Interactive Mode in macOS
 

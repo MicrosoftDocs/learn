@@ -98,7 +98,7 @@ In this case, you'll need to install Python 3.  We'll walk through the installat
 
 ::: zone-end
 
-::: zone pivot="macOS"
+::: zone pivot="macos"
 
 ### macOS
 

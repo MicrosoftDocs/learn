@@ -191,7 +191,7 @@ If you needed to use `scl enable` to run `python3 --version`, then you may need 
 ::: zone-end
 
 
-::: zone pivot="macOS"
+::: zone pivot="macos"
 
 ### Install Python on macOS
 

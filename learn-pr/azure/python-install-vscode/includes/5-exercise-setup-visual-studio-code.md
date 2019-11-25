@@ -82,7 +82,7 @@ Click the Visual Studio Code icon to launch the application.
 
 ::: zone-end
 
-::: zone pivot="macOS"
+::: zone pivot="macos"
 
 ### Step 1 - Download the installer using your web browser.
 
