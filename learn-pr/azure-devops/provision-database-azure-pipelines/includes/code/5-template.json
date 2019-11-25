@@ -106,6 +106,7 @@
                 "name": "Import",
                 "type": "extensions",
                 "apiVersion": "2014-04-01",
+                "condition": "[empty(resourceId('Microsoft.Sql/servers/databases', concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName')), 'tailspindatabase'))]",
                 "dependsOn": [
                     "[resourceId('Microsoft.Sql/servers/databases', concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName')), 'tailspindatabase')]"
                 ],

@@ -1,3 +1,6 @@
+trigger:
+- '*'
+
 variables:
   buildConfiguration: 'Release'
 
@@ -8,7 +11,7 @@ stages:
   - job: 'Build'
     displayName: 'Build job'
     pool:
-      vmImage: 'ubuntu-16.04'
+      vmImage: 'Ubuntu-16.04'
       demands:
         - npm
 
@@ -97,7 +100,7 @@ stages:
   - job: 'DeployInfrastructure'
     displayName: 'Deploy infrastructure job'
     pool:
-      vmImage: 'ubuntu-16.04'
+      vmImage: 'Ubuntu-16.04'
     variables:
     - group: 'Release'
     steps:
@@ -194,13 +197,13 @@ stages:
 - stage: DBAVerificationApply
   displayName: 'Apply database schema changes'
   dependsOn: DBAVerificationScript
-  variables: 
-  - group: 'Release'
   condition: and(succeeded('DBAVerificationScript'), eq(variables['schemaChanged'], True))
   jobs:
   - deployment: DBAVerificationApply
     pool:
       vmImage: 'windows-2019'
+    variables:
+    - group: 'Release'
     environment: 'dbaverificationapply'
     strategy:
       runOnce:
@@ -264,7 +267,7 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-      vmImage: 'ubuntu-16.04'
+      vmImage: 'Ubuntu-16.04'
     environment: dev
     variables:
     - group: Release
