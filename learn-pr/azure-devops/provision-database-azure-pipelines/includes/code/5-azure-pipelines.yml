@@ -11,7 +11,7 @@ stages:
   - job: 'Build'
     displayName: 'Build job'
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-16.04'
       demands:
         - npm
 
@@ -100,7 +100,7 @@ stages:
   - job: 'DeployInfrastructure'
     displayName: 'Deploy infrastructure job'
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-16.04'
     variables:
     - group: 'Release'
     steps:
@@ -198,6 +198,8 @@ stages:
   displayName: 'Apply database schema changes'
   dependsOn: DBAVerificationScript
   condition: and(succeeded('DBAVerificationScript'), eq(variables['schemaChanged'], True))
+  variables:
+  - group: 'Release'
   jobs:
   - deployment: DBAVerificationApply
     pool:
@@ -253,8 +255,8 @@ stages:
                   Variables = $vars}
                 Update-VSTeamVariableGroup @methodParameters
 
-- stage: 'DeployToDevAppService'
-  displayName: 'Deploy to the dev app service'
+- stage: 'Dev'
+  displayName: 'Deploy to the dev environment'
   dependsOn:
   - DBAVerificationScript
   - DBAVerificationApply
@@ -267,7 +269,7 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-      vmImage: 'Ubuntu-16.04'
+      vmImage: 'ubuntu-16.04'
     environment: dev
     variables:
     - group: Release
