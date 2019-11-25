@@ -96,7 +96,7 @@ The _Space Game_ web application currently reads leaderboard data from JSON file
 
 Recall that the _Space Game_ web application uses ASP.NET Core and is written in C#. The source code defines the `IDocumentDBRepository` interface to fetch leaderboard data. The `LocalDocumentDBRepository` class implements `IDocumentDBRepository` to read from local JSON files.
 
-To update the code to read from a database, instead of from files, Mara creates another implementation of `IDocumentDBRepository` that connects to Azure SQL Database. This code gets the connection string from the website configuration.
+Mara wants to update the code to read from a database instead of from files. So Mara creates another implementation of `IDocumentDBRepository` that connects to Azure SQL Database. This code gets the connection string from the website configuration.
 
   ```C#
     public class RemoteDBRepository : IDocumentDBRepository
@@ -111,13 +111,13 @@ To update the code to read from a database, instead of from files, Mara creates 
         }
   ```
 
-The connection string uses SQL Authentication, which includes the username and password. Storing this information in plain text in *appsettings.json* would mean that the username and password would be readable by anyone who can access this file. Instead, Mara uses the Secret Manager tool in Visual Studio to store this string in a file that is not maintained in source control. Let's listen in as she explains this to the team.
+The connection string uses SQL Authentication, which includes the username and password. If Mara stores this information in plain text in *appsettings.json*, the username and password can be read by anyone who can access this file. Instead, Mara uses the Secret Manager tool in Visual Studio. The tool stores the string in a file that isn't maintained in source control. Let's listen in as she explains her decision to the team.
 
-**Mara:** When developing the app locally, we can use a file that's named *secrets.json*, which doesn't get pushed to GitHub. Visual Studio can set that up for us using the Secret Manager tool. But when the deployed web app needs this information, it will be in Azure App Service *appsettings.json* file. App Service has strict limited permissions about who can see the files there. We can provide this information to App Service  through Azure Pipelines. That means we won't need to add it to our local *appsettings.json*.
+**Mara:** When we're developing the app locally, we can use a file that's named *secrets.json*, which doesn't get pushed to GitHub. We set that up in Visual Studio by using the Secret Manager tool. But when the deployed web app needs the username and password, it will be in the Azure App Service *appsettings.json*. App Service has strict limited permissions for who can see the file. We can provide the information to App Service through Azure Pipelines. So we won't need to add it to our local *appsettings.json*.
 
 **Andy:** Good idea, Mara. We're making progress.
 
-**Tim:** Don't start celebrating yet. We need to make sure we have a plan for when the database schema changes. Mara mentioned that might happen. How do we make sure that the DBA is happy with the changes and that the changes are applied at the right time?
+**Tim:** Don't start celebrating yet. We need a plan for when the database schema changes. Mara mentioned that the schema might change. How do we make sure that the DBA is happy with the changes and that the changes are applied at the right time?
 
 In this short video, Abel Wang, Cloud Advocate at Microsoft, explains the concept of database changes in Azure Pipelines.
 
@@ -127,17 +127,17 @@ In this short video, Abel Wang, Cloud Advocate at Microsoft, explains the concep
 
 ## The role of the SQL Server Data Tools database project in Azure Pipelines
 
-SQL Server Data Tools, which runs on Windows, provides a project type that you can use to define a database schema from Visual Studio. This kind of project produces what's called a _dacpac_ file. When you unpack this file, you see the SQL scripts for creating the database schema. For example, you might see a `CREATE TABLE` script for each table that's defined in the database project. SQL Database can unpack that file and apply the schema changes.
+SQL Server Data Tools, which runs on Windows, provides a project type that you can use to define a database schema from Visual Studio. This kind of project produces a _dacpac_ file. When you unpack the _dacpac_, you see the SQL scripts for creating the database schema. For example, you might see a `CREATE TABLE` script for each table that's defined in the database project. SQL Database can unpack the _dacpac_ and apply the schema changes.
 
 ![The database project in Visual Studio on Windows](../media/2-database-project.png)
 
 Let's go back to the team discussion and see how they plan to handle any changes to their database schema.
 
-**Mara:** The SQL Server Data Tools project that I mentioned can help. It creates a file, called a _dacpac_, that contains the current schema. This is the file that we use to deploy the schema. Let's see if we can find a way for Azure Pipelines to create a file that shows the differences between what the database schema is now and what changes the _dacpac_ is proposing. Then, the DBA can look at the changes and approve them. We just got release approvals working. I think we can take advantage of that here so that we can automate as much as possible.
+**Mara:** The SQL Server Data Tools project that I mentioned can help. It creates a file, called a _dacpac_, that contains the current schema. We use this file use to deploy the schema. Let's see if Azure Pipelines can create a file that shows the differences between the current database schema and the changes that the _dacpac_ proposes. Then the DBA can look at the changes and approve them. We just got release approvals working. I think we can take advantage of that here so that we can automate as much as possible.
 
-*Andy types on his laptop.*
+Andy types on his laptop.
 
-**Andy:** I found an Azure Pipelines task that we can use. The [SqlAzureDacpacDeployment@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/sql-azure-dacpac-deployment?view=azure-devops&azure-portal=true) task generates a file with the schema differences between the current database schema and the _dacpac_.
+**Andy:** I found an Azure Pipelines task that we can use. The [SqlAzureDacpacDeployment@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/sql-azure-dacpac-deployment?view=azure-devops&azure-portal=true) task generates a file that identifies the schema differences between the current database schema and the _dacpac_.
 
 ## Approve database schema changes in Azure Pipelines
 
@@ -153,11 +153,11 @@ After you create the database change file, you can use PowerShell to write its c
       Get-Content d:\a\1\s\GeneratedOutputFiles\$(databasename)_Script.sql | foreach {Write-Output $_}
 ```
 
-You can use a manual approval to pause the pipeline at the stage where the changes would be applied, just as you did in the [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true) module. You create an Azure Pipelines environment that specifies the DBA as the approver. If the DBA approves the changes, the pipeline continues and the changes are applied to the database. If the DBA rejects the changes, the pipeline is halted. From there, you can discuss the proposed change with the DBA and plan some other approach.
+You can use a manual approval to pause the pipeline at the stage where the changes would be applied, just as you did in the [Create a multistage pipeline by using Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true) module. You create an Azure Pipelines environment that specifies the DBA as the approver. If the DBA approves the changes, the pipeline continues and the changes are applied to the database. If the DBA rejects the changes, the pipeline is paused. Then you can discuss the proposed change with the DBA and plan some other approach.
 
 Let's listen in on the team's discussion.
 
-**Tim:** I can create a PowerShell script that reads that file and outputs its contents so that the DBA can review and approve the changes.
+**Tim:** I can create a PowerShell script that reads the database change file. The script provides the file's contents so that the DBA can review and approve the changes.
 
 **Andy:** After the change is approved, we use `SqlAzureDacpacDeployment@1` again to apply the changes.
 
@@ -165,20 +165,20 @@ Let's listen in on the team's discussion.
 
 ## The plan
 
-**Andy:** So if we are all in agreement, here is the plan moving forward.
+**Andy:** So if we all agree, here's the plan moving forward.
 
-_Andy moves to the whiteboard and sketches out the plan._
+Andy moves to the whiteboard and sketches out the plan.
 
-![Whiteboard image of the pipeline with the two database stages added](../media/2-whiteboard-pipeline.png)
+![Whiteboard image of the pipeline with the two database stages](../media/2-whiteboard-pipeline.png)
 
-**Andy:** Here's is what we need to build. First, we add a job to the _Build_ stage that builds the database project. ![Callout 1](../../shared/media/callout-01.png) This produces a _.dacpac_ file that we treat as a build artifact.
+**Andy:** Here's what we need to build. First we add a job to the _Build_ stage to build the database project. ![Callout 1](../../shared/media/callout-01.png) This job produces a _.dacpac_ file that we treat as a build artifact.
 
-We then add a stage that ![Callout 2](../../shared/media/callout-02.png) scripts the database changes so that the ![Callout 3](../../shared/media/callout-03.png) DBA can verify the changes before the changes are applied.
+We then add a stage that ![Callout 2](../../shared/media/callout-02.png) scripts the database changes. The ![Callout 3](../../shared/media/callout-03.png) DBA uses the script output to verify the changes before they're applied.
 
-We add an ![Callout 4](../../shared/media/callout-04.png) approval to another stage that ![Callout 5](../../shared/media/callout-05.png) applies the database changes. And then we ![Callout 6](../../shared/media/callout-06.png) deploy to _Dev_, _Test_, and _Staging_ just like we did before.
+We add an ![Callout 4](../../shared/media/callout-04.png) approval to another stage. The approval ![Callout 5](../../shared/media/callout-05.png) applies the database changes. And then we ![Callout 6](../../shared/media/callout-06.png) deploy to _Dev_, _Test_, and _Staging_ just like we did before.
 
 **Tim:** I'll get started on the PowerShell script.
 
 **Mara:** I'll make the database project and update the website to use the database.
 
-**Andy:** I'll get with our DBA to get the database set up. But first, more coffee.
+**Andy:** I'll get with our DBA to set up the database. But first, more coffee.
