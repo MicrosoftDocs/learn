@@ -321,13 +321,14 @@ Here you create the manual approval for the `DBAVerificationApply` stage. You le
 1. Under **Name**, enter **dbaverificationapply**.
 1. Leave the remaining fields at their default values.
 1. Select **Create**.
-1. On the **dbaverificationapply** environment page, select the drop down menu, then select **Checks**.
 
-    ![Azure Pipelines showing the Checks menu option](../media/6-add-check-to-environment.png)
+1. On the **dbaverificationapply** environment page, select the drop down menu, then select **Approvals and checks**.
 
-1. On the **Use manual approvals** page, select **Create**.
+    ![Azure Pipelines showing the approvals and checks](../../shared/media/pipeline-add-check-to-environment.png)
+
+1. Select **Approvals**.
 1. Under **Approvers**, select **Add users and groups** and then select your account.
-1. Under **Instructions to approvers**, enter **Approve this change to the database schema**.
+1. Under **Instructions to approvers**, enter *Approve this change to the database schema*.
 1. Select **Create**.
 
 ## Run the pipeline
