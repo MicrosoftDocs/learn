@@ -25,7 +25,7 @@ prerequisites: |
   - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
   - Understand the economic benefits of the cloud for cloud users and cloud service providers
   - Know the terms SLA and SLO 
-iconUrl: /learn/achievements/cloud-admin-provision-manage.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
