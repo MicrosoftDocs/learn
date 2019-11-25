@@ -17,7 +17,7 @@ Azure Service Bus topics are like queues, but can have multiple subscribers. Whe
 Internally, topics use queues. When you post to a topic, the message is copied and dropped into the queue for each subscription. The queue means that the message copy will stay around to be processed **by each subscription branch** even if the component processing that subscription is too busy to keep up.
 
 ## Benefits of queues
-Queue infrastructures can support many advanced features that make them very useful in 
+Queue infrastructures can support many advanced features that make them very useful in the following ways.
 
 ### Increased reliability
 Queues are used by distributed applications as a temporary storage location for messages pending delivery to a destination component. The source component can add a message to the queue and destination components can retrieve the message at the front of the queue for processing. Queues increase the reliability of the message exchange because, at times of high demand, messages can simply wait until a destination component is ready to process them.

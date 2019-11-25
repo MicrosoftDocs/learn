@@ -125,7 +125,7 @@ Having a great web experience is critical in today's business world. Azure inclu
 > | Azure App Service | Quickly create powerful cloud web-based apps |
 > | Azure Notification Hubs |Send push notifications to any platform from any back end. |
 > | Azure API Management | Publish APIs to developers, partners, and employees securely and at scale. |
-> | Azure Search | Fully managed search as a service. |
+> | Azure Cognitive Search | Fully managed search as a service. |
 > | Web Apps feature of Azure App Service | Create and deploy mission-critical web apps at scale. |
 > | Azure SignalR Service | Add real-time web functionalities easily. |
 
@@ -140,7 +140,7 @@ There are a number of services that can assist and drive end-to-end solutions fo
 > |--------------|-------------|
 > | IoT Central | Fully-managed global IoT software as a service (SaaS) solution that makes it easy to connect, monitor, and manage your IoT assets at scale |
 > | Azure IoT Hub | Messaging hub that provides secure communications and monitoring between millions of IoT devices |
-> | IoT Edge | Push your data analysis onto your IoT devices instead of in the cloud allowing them to react more quickly to state changes. 
+> | IoT Edge | Push your data analysis models directly onto your IoT devices, allowing them to react quickly to state changes without needing to consult cloud-based AI models.
 
 ### Big Data
 

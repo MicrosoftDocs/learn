@@ -13,28 +13,3 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/4-deploy-a-web-app-by-swapping-deployment-slots.md)]
-quiz:
-  title: Deploy a web app by using deployment slots
-  questions:
-  - content: "Which of the following are always slot settings?"
-    choices:
-    - content: "Connection strings"
-      isCorrect: false
-      explanation: "By default, connection strings aren't slot settings. But you can choose to make them slot settings."
-    - content: "Private certificates"
-      isCorrect: true
-      explanation: "Private certificates are always slot settings, which means they're not swapped."
-    - content: "Public certificates"
-      isCorrect: false
-      explanation: "Public certificates are never slot settings, which means they're swapped."
-  - content: "What happens to a slot setting when a web app's staging slot is swapped with its production slot?"
-    choices:
-    - content: "The value from the production slot moves to the staging slot."
-      isCorrect: false
-      explanation: "A slot setting isn't swapped. The value in the production slot remains in the production slot."
-    - content: "The value from the staging slot moves to the production slot."
-      isCorrect: false
-      explanation: "A slot setting isn't swapped. The value in the staging slot remains in the staging slot."
-    - content: "The value from the staging slot remains in the staging slot."
-      isCorrect: true
-      explanation: "A slot setting isn't swapped. Both the staging values and the production values remain in their original slots."

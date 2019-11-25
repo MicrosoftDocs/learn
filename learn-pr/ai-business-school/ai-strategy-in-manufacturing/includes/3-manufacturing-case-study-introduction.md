@@ -6,21 +6,35 @@ This case study shows how one of the world’s largest manufacturing solutions p
 
 ## Industry context
 
+:::row:::
+:::column span="2":::
 Established in 1966, Jabil is one of the world’s largest manufacturing solution providers. With 170,000 employees in a global operation spanning 102 locations in 29 countries, Jabil works with leading companies in a diverse range of industries to create innovative and reliable products.
 
 The manufacturing industry forms the backbone of modern economies worldwide, with revolutionary developments in manufacturing processes enabling modern society as we currently know it. However, the global share of GDP from manufacturing has been declining for several decades. Manufacturing is now racing to keep up with the emergence of new digital technology, and the challenges of a changing global economy.
 
 Jabil operates a business-to-business (B2B) model that requires extremely complex manufacturing work for a wide variety of industries, including consumer products, defense & aerospace, healthcare, automotive, energy, industrial & building, networking and telecommunications.
+:::column-end:::
+:::column span="2":::
+![Jabil Context: Jabil is one of the world's largest manufacturing solution providers. 102 locations, 170,000 employees, 29 countries](../media/1.5.2.B.Jabil-case-study-introduction.jpg)
+:::column-end:::
+:::row-end:::
 
 Outsourcing manufacturing services to companies like Jabil has been an integral part of electronics OEMs’ business models for the last several decades. With the rise of the digital economy, Jabil has been rapidly growing in value and increasing its use of innovative technology.
 
 ## Challenge
 
+:::row:::
+:::column span="2":::
 Jabil’s customers face numerous competitive challenges within the fast-moving electronic consumer goods industry, which in turn requires Jabil to respond quickly to their demands for speed and customization. This creates high revenue volatility for Jabil and increases the pressure to “get it right first time” during the manufacturing process. Even automated inspection equipment might not make the process fast enough to meet the customer’s deadline. “We have many products that customers expect to be delivered within a week,” says Matt Behringer, Vice-President, Information Technology at Jabil. “And that’s including transit.”
 
 In addition, because of the extremely variable demands of the electronic consumer goods market, many of Jabil’s customers cannot commit to firm production schedules for more than one quarter. This puts further pressure on Jabil to maximize the efficiency of its manufacturing capacity and supply chain.
 
 Jabil recognized this need to modernize in its 2017 Annual Report, stating, “If we are unable to offer technologically advanced, cost effective, quick response manufacturing services that are differentiated from our competition and adapt those services as our customers’ requirements change, demand for our services will decline.”
+:::column-end:::
+:::column span="2":::
+![“If we are unable to offer technologically advanced, cost effective, quick response manufacturing services that are differentiated from our competition and adapt those services as our customers’ requirements change, demand for our services will decline.” - Jabil 2017 Annual Report](../media/1.5.2.A.Jabil-case-study-introduction.jpg)
+:::column-end:::
+:::row-end:::
 
 Jabil also needed to modernize its quality inspection techniques to meet the demands of one-off production lines. In today’s market, even very large global manufacturers behave much like boutique manufacturers, often making a particular product only once. The first product run might be the only one created, or there might be smaller lots of only 5 to 10 items, and no time for multiple iterations. As a result, traditional inspection techniques for ensuring product quality are quickly becoming outdated. For example, it is no longer cost-effective to use a process called first-article inspection, where an initial model is manufactured, checked, and then reworked before production even starts. The wasted time and materials that have always been part of the manufacturing process are becoming less sustainable.
 

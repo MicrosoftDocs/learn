@@ -1,17 +1,20 @@
 Recall that our company processes video content on Windows VMs. A new city has contracted us to process their traffic cameras, but it's a model we've not worked with before. We need to create a new Windows VM and install some proprietary codecs so we can begin processing and analyzing their images.
 
-<!-- Activate the sandbox -->
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create a new Windows virtual machine
 
 We can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell. The easiest approach is the portal because it walks you through the required information and provides hints and helpful messages during the creation of the VM.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Click **Create a resource** in the upper left corner of the Azure portal.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-1. In the search box, enter  **Windows Server 2016 Datacenter**  and then click on the link with the same title in the presented list.
+1. In the search box, enter  **Windows Server**  and then click on the link with the same title in the presented list.
+
+    ![Screenshot showing the virtual machine image search result.](../media/3-azure-portal-search-image.png)
+
+1. There are several Windows Server versions we can select from to create our VM. In the *Windows Server* image overview panel, click on the **Select a software plan** dropdown list and find the **[smalldisk] Windows Server 2016 Datacenter** option.
+
+    [![](../media/3-select-windows-server.png "A screenshot that shows which software plan to select.")](../media/3-select-windows-server-expanded.png#lightbox)
 
 1. Click the **Create** button to start configuring the VM.
 
@@ -19,7 +22,7 @@ We can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell.
 
 The VM creation experience in the portal is presented in a "wizard" format to walk you through all the configuration areas for the VM. Clicking the "Next" button will take you to the next configurable section. However, you can move between the sections at will with the tabs running across the top that identify each section.
 
-![Screenshot showing the create a virtual machine experience in the Azure portal.](../media/3-azure-portal-create-vm.png)
+![Screenshot showing the virtual machine creation experience in the Azure portal.](../media/3-azure-portal-create-vm.png)
 
 Once you fill in all the required options (identified with red stars), you can skip the remainder of the wizard experience and start creating the VM through the **Review + Create** button at the bottom.
 
@@ -41,7 +44,7 @@ We'll start with the **Basics** section.
 
    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-1. Leave **Availability options** as "None". This option is used to ensure the VM is highly available by grouping multiple VMs together a set to deal with planned or unplanned maintenance events or outages.
+1. Leave **Availability options** as "No Infrastructure redundancy required". This option is used to ensure the VM is highly available by grouping multiple VMs together a set to deal with planned or unplanned maintenance events or outages.
 
 1. Ensure the image is set to "Windows Server 2016 Datacenter". You can open the drop-down list to see all the options available.
 
@@ -90,7 +93,7 @@ Recall we will get an OS disk (C:) and Temporary disk (D:). Let's add a data dis
 
 1. Click **Next** to move to the Networking section.
 
-1. In a production system where we already have other components, we'd want to utilize an _existing_ virtual network. That way our VM can communicate with the other cloud services in our solution. If there isn't one defined in this location yet, we can create it here and configure the:
+1. In a production system, where we already have other components, we'd want to utilize an _existing_ virtual network. That way our VM can communicate with the other cloud services in our solution. If there isn't one defined in this location yet, we can create it here and configure the:
     - **Address space**: the overall IPV4 space available to this network.
     - **Subnet range**: the first subnet to subdivide the address space - it must fit within the defined address space. Once the VNet is created you can add additional subnets.
 

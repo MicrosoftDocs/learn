@@ -31,9 +31,9 @@ To do some hands-on exercises for visualizing data by using Databricks, switch t
 
 ## Complete the following notebooks
 
-- *01-Querying-Files*: This notebook contains some basic visualizations that use built-in Databricks functions and DataFrames.
-- *02-Exploratory-Data-Analysis*: In this notebook, you do some basic exploratory analysis on a sample dataset to prepare it for advanced visualization in the next notebooks.
-- *03-Power-BI*: In this notebook, you connect your Databricks cluster to Power BI and create visualizations by using Power BI tools.
-- *04-Matplotlib*: In this notebook, you use Matplotlib to create custom visualizations for your data.
+- **01-Querying-Files**: This notebook contains some basic visualizations that use built-in Databricks functions and DataFrames.
+- **02-Exploratory-Data-Analysis**: In this notebook, you do some basic exploratory analysis on a sample dataset to prepare it for advanced visualization in the next notebooks.
+- **03-Power-BI**: In this notebook, you connect your Databricks cluster to Power BI and create visualizations by using Power BI tools.
+- **04-Matplotlib**: In this notebook, you use Matplotlib to create custom visualizations for your data.
 
 After you've completed the notebooks, return to this screen, and continue to the next step.

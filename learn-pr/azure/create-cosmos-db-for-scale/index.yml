@@ -2,21 +2,20 @@
 uid: learn.create-cosmos-db-for-scale
 metadata:
   title: Create an Azure Cosmos DB database built to scale
-  description: Learn how to create an Azure Cosmos DB account, database, and collection built to scale as your application grows.
+  description: Learn how to create an Azure Cosmos DB account, database, and container built to scale as your application grows.
   ms.date: 09/24/2018
-  author: mimig1
-  ms.author: mimig
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-support: smmark
 title: Create an Azure Cosmos DB database built to scale
-summary: Learn how to create an Azure Cosmos DB account, database, and collection built to scale as your application grows.
+summary: Learn how to create an Azure Cosmos DB account, database, and container built to scale as your application grows.
 abstract: |
   In this module, you will:
   - Create a NoSQL database with Azure Cosmos DB
   - Set the initial throughput volume for your database using request units
   - Choose a partition key
-  - Create a database and collection in Azure Cosmos DB
+  - Create a database and container in Azure Cosmos DB
 prerequisites: None
 iconUrl: /learn/achievements/create-cosmos-db-for-scale.svg
 levels:

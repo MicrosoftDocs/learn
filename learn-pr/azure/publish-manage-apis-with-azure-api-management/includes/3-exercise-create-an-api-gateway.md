@@ -4,8 +4,6 @@ In the shoe company example, NorthWind Shoes have decided to share an inventory 
 
 Here, you'll create an API gateway to publish an inventory app that exposes an OpenAPI endpoint.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Deploy the ShoeCompany Web API
 You have developed a .NET Core app that generates inventory and product information. The app includes Swashbuckle to generate OpenAPI Swagger documentation.
 

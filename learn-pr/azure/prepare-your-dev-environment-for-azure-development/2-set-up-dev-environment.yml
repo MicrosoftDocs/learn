@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.prepare-azure-dev-environment.2-set-up-dev-environment
+title: Set up your development environment
+metadata:
+  title: Set up your development environment
+  description: Set up your development environment
+  ms.date: 07/01/2019
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+  zone_pivot_groups: ide
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-set-up-dev-environment.md)]

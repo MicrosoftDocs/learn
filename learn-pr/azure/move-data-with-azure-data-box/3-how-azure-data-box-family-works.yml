@@ -1,0 +1,43 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.move-data-with-azure-data-box.how-azure-data-box-family-works
+title: How the Azure Data Box family works
+metadata:
+  title: How the Azure Data Box family works
+  description: In this unit, you'll learn how administrators use Azure Data Box products to get data into Azure.
+  ms.date: 07/26/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-how-azure-data-box-family-works.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What method would you use to unlock the disks you've received?"
+    choices:
+    - content: "Get the passkey from the **Device Details** page in the Azure portal."
+      isCorrect: true
+      explanation: "The passkey is shown on the **Device Details** page in the Azure portal."
+    - content: "Look on the reverse side of the Data Box Disk device for the passkey."
+      isCorrect: false
+      explanation: "The security key is too sensitive to be displayed on the device."
+    - content: "Use the passkey in the root folder of the Data Box Disk device."
+      isCorrect: false
+      explanation: "The device is encrypted, so you can't get the passkey from the device itself."
+  - content: "You want to copy a virtual hard disk in the VHDX format to an Azure Data Box Disk. What folder do you copy the VHDX to?"
+    choices:
+    - content: "PageBlob folder"
+      isCorrect: true
+      explanation: "The PageBlob folder is the correct place to copy the VHDX."
+    - content: "BlockBlob folder"
+      isCorrect: false
+      explanation: "The BlockBlob folder is more suited to discrete storage objects like media and log files."
+    - content: "AzureFiles folder"
+      isCorrect: false
+      explanation: "The AzureFiles folder is more appropriate for tools that you might need to access from multiple VMs."
+    - content: "ManagedDisk folder"
+      isCorrect: false
+      explanation: "Use the ManagedDisk folder to migrate virtual hard disks that are in the VHD format."

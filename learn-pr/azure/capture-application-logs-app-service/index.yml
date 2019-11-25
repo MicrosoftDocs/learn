@@ -23,8 +23,12 @@ levels:
 - beginner
 roles:
 - developer
+- security-engineer
 products:
 - azure
+- dotnet
+- aspnet-core
+- dotnet-core
 units:
 - learn.azure.capture-application-logs-app-service.1-introduction
 - learn.azure.capture-application-logs-app-service.2-enable-and-configure-app-service-application-logging

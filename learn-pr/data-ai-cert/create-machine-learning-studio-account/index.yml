@@ -7,7 +7,6 @@ metadata:
   author: gerryaobrien
   ms.author: gerryo
   ms.topic: interactive-tutorial
-  #ms.learn-contact: smmark
   ms.prod: learning-azure
 title: Create an Azure Machine Learning Studio Account
 summary: Get a high-level overview of machine learning and Microsoft Azure Machine Learning Studio.
@@ -17,7 +16,6 @@ abstract: |
   - Set up and use Microsoft Azure Machine Learning Studio
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/create-machine-learning-studio-account.svg
-ratingEnabled: true
 levels:
 - beginner
 - intermediate

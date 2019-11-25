@@ -2,6 +2,8 @@ Suppose you work in the analytics department of a large retail warehouse. Your o
 
 Azure Databricks is an Apache Spark–based analytics platform that supports SQL analytics and can be integrated with SQL Data Warehouse to run high-performance analytics. It allows faster interactive processing of batch and streaming data and has built-in functions for machine learning and big data processing.
 
+[!INCLUDE [azure-databricks-free-trial-note](../../../includes/azure-databricks-free-trial-note.md)]
+
 ## Learning objectives
 
 In this module, you will:

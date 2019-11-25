@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.manage-iot-central-apps-with-rest-api.exercise-manage-devices
+title: Exercise - Add device templates and devices to your application programmatically
+metadata:
+  title: Exercise - Add device templates and devices to your application programmatically
+  description: Exercise - Add device templates and devices to your application programmatically
+  ms.date: 11/5/2019
+  author: dominicbetts
+  ms.author: dobetts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+azureSandbox: true
+interactive: bash
+content: |
+  [!include[](includes/5-exercise-manage-devices.md)]

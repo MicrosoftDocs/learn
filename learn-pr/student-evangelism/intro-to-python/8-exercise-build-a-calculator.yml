@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.intro-to-python.exercise-build-a-calculator
+title: Exercise - Build a simple calculator app
+metadata:
+  title: Exercise - Build a simple calculator app
+  description: Use input and print to build a simple calculator
+  ms.date: 04/30/2019
+  author: ShanaMatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+azureSandbox: true
+interactive: bash-editor
+content: |
+  [!include[](includes/8-exercise-build-a-calculator.md)]

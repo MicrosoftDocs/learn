@@ -120,7 +120,7 @@ First, let's store some resource names so we can use them later.
     ```
     
     ```output
-    Name            : fotosharesVM-data
+    Name            : fotoshareVM-data
     DiskSizeGB      : 1023
     Lun             : 0
     Caching         : ReadOnly
@@ -175,7 +175,7 @@ We have only one data disk at the moment. The `Lun` field is important. It's the
     ```
     
     ```output
-    Name            : fotosharesVM-data
+    Name            : fotoshareVM-data
     DiskSizeGB      : 1023
     Lun             : 0
     Caching         : ReadOnly
@@ -210,4 +210,4 @@ We now have two disks. Our new disk has a `Lun` of `1` and the default value for
     
 Here's a view from the portal of what we've accomplished in this exercise. Our VM now has two data disks, and we've adjusted all **HOST CACHING** settings. We did all of that with just a few commands. That's the power of Azure PowerShell.
 
-![Screenshot of the Azure portal showing the Disks section of our VM blade with two data disks.](../media/disks-final-config-portal2.png)
+![Screenshot of the Azure portal showing the Disks section of our VM pane with two data disks.](../media/disks-final-config-portal2.png)

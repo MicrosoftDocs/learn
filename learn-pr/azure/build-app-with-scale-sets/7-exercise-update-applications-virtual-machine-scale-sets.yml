@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.build-app-with-scale-sets.exercise-update-applications-virtual-machine-scale-sets
+title: Exercise - Update applications in virtual machine scale sets
+
+metadata:
+  title: Exercise - Update applications in virtual machine scale sets
+  description: Exercise - Update applications in virtual machine scale sets
+  ms.date: 09/02/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+
+durationInMinutes: 10
+azureSandbox: false
+content: |
+  [!include[](includes/7-exercise-update-applications-virtual-machine-scale-sets.md)]

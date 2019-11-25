@@ -8,7 +8,7 @@ Let's explore some of the key components from the above process.
 
 ## What is a Workspace?
 
-A *workspace* is the top-level resource for the Azure Machine Learning service. It serves as a hub for building and deploying models. You can create a workspace in the Azure portal, or you can create and access it by using Python on an IDE of your choice.
+A *workspace* is the top-level resource for the Azure Machine Learning service. It serves as a hub for building and deploying models. You can create a workspace in the Azure portal, or you can create and access it by using Python in an IDE of your choice.
 
 All models must be registered in the workspace for future use. Together with the scoring scripts, you create an image for deployment.
 

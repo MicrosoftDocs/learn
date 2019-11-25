@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-open-source-analytics-offering
+metadata:
+  title: Introduction to the Open source Analytics Offering
+  description: Introduction to the Open source Analytics Offering
+  ms.date: 10/25/2019
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to the Open source Analytics Offering
+summary: At the end of this module, you will learn that Azure HDInsight is a fully managed cloud service that enables you to efficiently process massive amounts of data using the most popular open source frameworks.
+abstract: |
+  At the end of this module, you will understand:
+  - What HDInsight is
+  - How HDInsight works
+  - When to use HDInsight
+ratingEnabled: true
+prerequisites: |
+  The following pre-requisite should be completed
+  - Successfully login to the Azure portal
+  - Understand the Azure storage options
+  - Understand the Azure compute options
+iconUrl: /learn/achievements/learn-pr/achievements/introduction-to-the-open-source-analytics-offering.svg
+levels:
+- beginner
+roles:
+- data-engineer
+- data-scientist
+products:
+- azure-hdinsight
+units:
+- learn.wwl.introduction-open-source-analytics-offering.1-introduction
+- learn.wwl.introduction-open-source-analytics-offering.2-what-is-hdinsight
+- learn.wwl.introduction-open-source-analytics-offering.3-how-does-hdinsight-work
+- learn.wwl.introduction-open-source-analytics-offering.4-when-use-hdinsight
+- learn.wwl.introduction-open-source-analytics-offering.5-knowledge-check
+- learn.wwl.introduction-open-source-analytics-offering.6-summary
+badge:
+  uid: learn.wwl.introduction-open-source-analytics-offering.badge

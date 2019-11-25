@@ -27,8 +27,6 @@ IaaS is commonly used in the following scenarios:
 
 - **Test and development.** Teams can quickly set up and dismantle test and development environments, bringing new applications to market faster. IaaS makes scaling development and testing environments, fast and economical.
 
-- **Website hosting.** Running websites using IaaS can be less expensive compared to traditional web hosting.
-
 - **Storage, backup, and recovery.** Organizations avoid the capital outlay and complexity of storage management, which typically requires skilled staff to manage data and meet legal and compliance requirements. IaaS is useful for managing unpredictable demand and steadily growing storage needs. IaaS can also simplify the planning and management of backup and recovery systems.
 
 :::row:::
@@ -82,6 +80,6 @@ One thing to understand is that these categories are layers on top of each other
 - PaaS requires less user management. The cloud provider manages the operating systems, and the user is responsible for the applications and data they run and store.
 - SaaS requires the least amount of management. The cloud provider is responsible for managing everything, and the end user just uses the software.
 
-## Summary
+## Combine cloud services to fit your needs
 
-IaaS, PaaS, and SaaS each contain different levels of managed services. You may easily use a combination of these types of infrastructure. You could use Office 365 on your company’s computers (SaaS), and in Azure, you could host your VMs (IaaS) and use Azure SQL Database (PaaS) to store your data. With the cloud’s flexibility, you can use any combination that provides you with the maximum result.
+IaaS, PaaS, and SaaS each contain different levels of managed services. You may easily use a combination of these types of infrastructure. You could use Office 365 on your company's computers (SaaS), and in Azure, you could host your VMs (IaaS) and use Azure SQL Database (PaaS) to store your data. With the cloud's flexibility, you can use any combination that provides you with the maximum result.

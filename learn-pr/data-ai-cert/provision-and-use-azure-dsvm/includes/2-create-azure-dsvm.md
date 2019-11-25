@@ -36,7 +36,8 @@ You can start right in the Azure portal and use the **+ Create New Resource** su
     - **Subscription**. Verify that _Concierge Subscription_ is selected. If it's not present in the list, make sure you activated the Sandbox and are logged in with the same credentials.
     - **Resource group**. A *resource group* is a container that holds related resources for an Azure solution. Make sure the pre-created Sandbox resource group <rgn>[Sandbox Resource Group Name]</rgn> is selected.
     - **Virtual Machine name**. Enter a name for the data science server you are creating. For this example, we'll use **Win2016**.
-    - **Region**. [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+    - **Region**.
+        [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
     - **Image**: Do not change this setting, but verify that it says **Data Science Virtual Machine – Windows 2016**.
     - **Size**. Normally you would leave this setting alone - you want a lot of CPUs and memory to perform data science tasks. However, for this exercise, change the size to be **DS2_v2 (Standard)**.
     - **User Name**. Enter an administration account ID. You will need this later to access the VM.
@@ -47,4 +48,4 @@ You can start right in the Azure portal and use the **+ Create New Resource** su
 
 1. Select the **Create** button to provision the DSVM.
 
-VM provisioning takes a few minutes. You should see an icon of a blue line under a bell [Screenshot of the bell icon.](../media/2-bell-icon.png), which indicates that Azure is busy building the VM. After this process completes, the VM main properties window will appear.
+VM provisioning takes a few minutes. You should see an icon of a blue line under a bell ![Screenshot of the bell icon.](../media/2-bell-icon.png), which indicates that Azure is busy building the VM. After this process completes, the VM main properties window will appear.

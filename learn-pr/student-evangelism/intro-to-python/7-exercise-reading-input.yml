@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.intro-to-python.exercise-reading-input
+title: Exercise - Build a program to say Hello
+metadata:
+  title: Exercise - Build a program to say Hello
+  description: Read input from the user with the keyboard
+  ms.date: 04/30/2019
+  author: ShanaMatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+azureSandbox: true
+interactive: bash-editor
+content: |
+  [!include[](includes/7-exercise-reading-input.md)]

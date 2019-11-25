@@ -8,7 +8,6 @@ metadata:
   ms.author: chris.testaoneill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Understand the evolving world of data
 summary: Learn how data systems are evolving and how the changes affect data professionals. Explore the differences between on-premises and cloud data solutions, and consider sample business cases that apply cloud technologies.
 abstract: | 
@@ -17,7 +16,6 @@ abstract: |
   - Compare on-premises data technologies to cloud data technologies.
   - Outline how the role of the data professional is changing.
   - Identify use cases that apply these changes.
-ratingEnabled: true
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/evolving-world-of-data-badge.svg
 levels:

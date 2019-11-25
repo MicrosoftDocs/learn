@@ -5,9 +5,8 @@ metadata:
   title: Optimize network performance
   description: In this unit we'll discuss how to optimize network performance for your architecture
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: jboeshart
+  ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

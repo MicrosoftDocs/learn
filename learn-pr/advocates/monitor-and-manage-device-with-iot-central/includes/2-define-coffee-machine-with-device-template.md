@@ -62,7 +62,7 @@ A device template defines the behavior and capabilities of a device or in this c
     > [!NOTE]
     > Enter field names exactly as shown in the table in the device template. If the field names do not match the property names in the corresponding device code, the telemetry cannot be displayed in the application. Do the same when you enter settings and properties information.
 
-    ![Screenshot showing Measurements page of the connected coffee maker device template with water temperature telemetry added on the edit telemetry blade.](../media/2-device-template-a.png)
+    ![Screenshot showing Measurements page of the connected coffee maker device template with water temperature telemetry added on the edit telemetry pane.](../media/2-device-template-a.png)
 
 ## Define state measurement for brewing/not brewing and cup detected/cup not detected
 Add the following states in the **Measurements** page by choosing **Edit Template**, and then choosing **+ New Measurement**. Then choose **State** as the measurement type:

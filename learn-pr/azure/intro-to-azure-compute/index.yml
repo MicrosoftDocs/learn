@@ -2,13 +2,12 @@
 uid: learn.intro-to-compute
 metadata:
   title: Core Cloud Services - Introduction to Azure compute
-  description: Review the Azure compute services and explore how they can solve common business needs.
-  ms.date: 09/24/2018
-  author: markjulmar
-  ms.author: smmark
+  description: Explore essential Azure concepts to find out how virtual machines, containers, and apps combined with serverless computing services can fortify your business.
+  ms.date: 10/21/2019
+  author: patridge
+  ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Core Cloud Services - Azure compute options
 summary: Review the Azure compute services and explore how they can solve common business needs.
 abstract:  | 
@@ -17,16 +16,21 @@ abstract:  |
   - Select compute options that will solve your specific business needs
 prerequisites: None
 iconUrl: /learn/achievements/intro-to-azure-compute.svg
-ratingEnabled: true
 levels:
 - beginner
 roles:
 - developer
 - solution-architect
 - administrator
+- security-engineer
 products:
 - azure
 - azure-virtual-machines
+- azure-app-service
+- azure-container-instances
+- azure-kubernetes-service
+- azure-functions
+- azure-logic-apps
 units:
 - learn.intro-to-compute.1-introduction
 - learn.intro-to-compute.2-essential-azure-compute-concepts

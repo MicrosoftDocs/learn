@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.get-started-with-devops.3-what-is-azure-devops
+metadata:
+  title: What is Azure DevOps?
+  description: What is Azure DevOps?
+title: What is Azure DevOps?
+durationInMinutes: 4
+content: |
+ [!include[](includes/3-what-is-azure-devops.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is DevOps?"
+    choices:
+    - content: "A job title for QA engineers"
+      isCorrect: false
+      explanation: "DevOps isn't necessarily a job title or for just one specific role. It brings together people from all disciplines to enable continuous delivery of value to your end users."
+    - content: "The union of people, process, and products to enable continuous delivery of value to our customers"
+      isCorrect: true
+      explanation: "A sign of a healthy DevOps practice is when everyone works together with a shared set of practices and tools"
+    - content: "A methodology that teams implement quickly to solve all their challenges"
+      isCorrect: false
+      explanation: "Most teams adopt DevOps gradually, starting with their most immediate challenges."
+  - content: "DevOps is:"
+    choices:
+    - content: "A gradual process"
+      isCorrect: true
+      explanation: "Most teams adopt DevOps gradually, starting with their most immediate challenges."
+    - content: "Only for startups"
+      isCorrect: false
+      explanation: "A DevOps practice can scale to thousands of team members."
+    - content: "A piece of specialized software"
+      isCorrect: false
+      explanation: "There's no one piece of software that provides a complete DevOps practice. It often combines multiple tools and also includes people and processes working together."
+  - content: "Azure DevOps is:"
+    choices:
+    - content: "Meant for teams that deploy to Azure"
+      isCorrect: false
+      explanation: "You can use Azure DevOps whether you deploy to the cloud or on-premises."
+    - content: "A suite of services that provide an end-to-end tool chain"
+      isCorrect: true
+      explanation: "Azure DevOps can help you throughout your application's entire life cycle &mdash; from planning all the way to deploying your application."
+    - content: "A DevOps course offered by Microsoft"
+      isCorrect: false
+      explanation: "Although you can take our courses, Azure DevOps is a collection of software and services."

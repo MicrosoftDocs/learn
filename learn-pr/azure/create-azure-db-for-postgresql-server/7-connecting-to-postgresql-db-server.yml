@@ -5,12 +5,11 @@ metadata:
   title: Exercise - Connect to an Azure Database for PostgreSQL server
   description: In this lab, you'll connect to an Azure Database for PostgreSQL server using the `psql` command.
   ms.date: 09/24/2018
-  author: markjulmar
-  ms.author: smmark
+  author: cryophobia
+  ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-# TODO: Portal support
 interactive: bash
 azureSandbox: true
 durationInMinutes: 5

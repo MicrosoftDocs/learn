@@ -10,14 +10,12 @@ metadata:
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 abstract: |
   In this module, you will:
     - Explore the physical structure of Azure infrastructure
     - Understand the service level agreements provided by Azure
     - Learn how to provide your own service level agreements for your apps
 prerequisites: None
-ratingEnabled: true
 iconUrl: /learn/achievements/explore-azure-infrastructure.svg
 levels:
 - beginner

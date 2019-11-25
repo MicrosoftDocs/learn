@@ -5,11 +5,11 @@ metadata:
   title: Knowledge check
   description: Test your knowledge by answering questions about skills you learned from the lab.
   ms.date: 02/20/2019
-  author: barlan
-  ms.author: barlan
+  author: jasallen 
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 3
 content: |
   [!include[](includes/4-knowledge-check.md)]
 quiz:
@@ -28,15 +28,15 @@ quiz:
           explanation: Incorrect. REST API isn't the correct connection type between Power BI and Databricks tables.
     - content: "In notebooks, which function can be used for visualizing data in any language?"
       choices:
-        - content: display()
-          explanation: All notebooks, no matter their language, support Databricks visualization by using the display() function.
-          isCorrect: true
         - content: show()
           isCorrect: false
           explanation: Incorrect. display() is the correct function for visualizing data in notebooks.
         - content: visualize()
           isCorrect: false
           explanation: Incorrect. display() is the correct function for visualizing data in notebooks.
+        - content: display()
+          explanation: All notebooks, no matter their language, support Databricks visualization by using the display() function.
+          isCorrect: true
     - content: "Matplotlib is a library that's included with Databricks and doesn't need to be imported as a third-party library."
       choices:
         - content: Correct

@@ -31,6 +31,9 @@ roles:
 - administrator
 products:
 - azure
+- dotnet
+- aspnet-core
+- dotnet-core
 units:
 - learn.app-service-autoscale-rules.1-introduction
 - learn.app-service-autoscale-rules.2-identify-scenarios

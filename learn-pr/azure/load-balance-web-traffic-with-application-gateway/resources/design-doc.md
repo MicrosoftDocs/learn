@@ -60,7 +60,7 @@ Identify the subtasks of *Load balance HTTP applications with Application Gatewa
 
     List the content that will enable the learner to *Describe Application Gateway*:
 
-    - Provide an overview of Application Gateway, including its purpose and key components. See [How Application Gateway Works](https://docs.microsoft.com/en-us/azure/application-gateway/how-application-gateway-works) and [Application gateway components](https://docs.microsoft.com/en-us/azure/application-gateway/application-gateway-components).
+    - Provide an overview of Application Gateway, including its purpose and key components. See [How Application Gateway Works](https://docs.microsoft.com/azure/application-gateway/how-application-gateway-works) and [Application gateway components](https://docs.microsoft.com/azure/application-gateway/application-gateway-components).
 
     - Video\Animation: Show how an incoming request from a client is routed through an Application Gateway to a selected web server. Include load balancing and content-based routing in the animation.
 
@@ -79,7 +79,7 @@ Identify the subtasks of *Load balance HTTP applications with Application Gatewa
 
       - What is OSI Layer 7 routing? (*multiple-choice question*)
       - How does Appliaction Gateway direct requests to a VM (make sure students know about Backend Pools, HTTP Listeners and Rules)? (*get students to map the flow through the various components of App Gateway, starting with an incoming request and finishing at the web server handling the request*)
-      - What features does the Web Application Firewall provide? (*get students to select items from a list. See [Features](https://docs.microsoft.com/en-us/azure/application-gateway/application-gateway-components) for source material*)
+      - What features does the Web Application Firewall provide? (*get students to select items from a list. See [Features](https://docs.microsoft.com/azure/application-gateway/application-gateway-components) for source material*)
 
 3. **Exercise - Create virtual machines for the web servers**
     
@@ -221,7 +221,7 @@ List the content that will enable the learner to *Create web servers*:
     ***Note:** Add a graphic to help illustrate the items that are created by this unit.*
 
     - Highlight that Application Gateway requires a secure virtual network in which to operate. Explain the requirements for a subnet specifically for the App Gateway.
-    **Note:** From [Frequently asked questions for Application Gateway](https://docs.microsoft.com/en-us/azure/application-gateway/application-gateway-faq)
+    **Note:** From [Frequently asked questions for Application Gateway](https://docs.microsoft.com/azure/application-gateway/application-gateway-faq)
     *Application Gateway consumes one private IP address per instance, plus another private IP address if a private frontend IP configuration is configured. Also, Azure reserves the first four and last IP address in each subnet for internal usage. For example, if an application gateway is set to three instances and no private frontend IP, then a /29 subnet size or greater is needed. In this case, the application gateway uses three IP addresses. If you have three instances and an IP address for the private frontend IP configuration, then a /28 subnet size or greater is needed as four IP addresses are required.*
 
     - Animation: How traffic is directed towards a specific web server in a backend pool from a listener by using a rule, including:
@@ -234,7 +234,7 @@ List the content that will enable the learner to *Create web servers*:
         - Selecting the tier (Standard, Standard V2, WAF, WAF V2). Briefly list the features of each tier and why you might use them.
         - Specifying the capacity type (Autoscale, Manual, and the number of scale units). Emphasize that the capacity refers to the number of instances of Application Gateway, **not** the size of the backend pools.
         - Specifying the availability zone.
-        **Note:** For an overview of scaling and availability with Application Gateway, see [Autoscaling and Zone-redundant Application Gateway](https://docs.microsoft.com/en-us/azure/application-gateway/application-gateway-autoscaling-zone-redundant)
+        **Note:** For an overview of scaling and availability with Application Gateway, see [Autoscaling and Zone-redundant Application Gateway](https://docs.microsoft.com/azure/application-gateway/application-gateway-autoscaling-zone-redundant)
         - Deciding whether to expose the Application Gateway to the public, or keep it private inside an organization/application-specific VNET.
         - Selecting the protocol (HTTP/HTTPS) and port to listen on for incoming requests
         - Supporting the HTTP2 protocol

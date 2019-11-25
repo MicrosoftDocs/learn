@@ -24,7 +24,7 @@ Azure Security Center is available in two tiers:
 1. *Free*. Available as part of your Azure subscription, this tier is limited to assessments and recommendations of Azure resources only.
 1. *Standard*. This tier provides a full suite of security-related services including continuous monitoring, threat detection, just-in-time access control for ports, and more.
 
-To access the full suite of Azure Security Center services, you will need to upgrade to a Standard tier subscription. You can access the 60-day free trial from within the Azure Security Center dashboard in the Azure portal. After the 60-day trial period is over, Azure Security Center is $15 per node per month.
+To access the full suite of Azure Security Center services, you will need to upgrade to a Standard tier subscription. You can access the 30-day free trial from within the Azure Security Center dashboard in the Azure portal. After the 30-day trial period is over, Azure Security Center is $15 per node per month.
 
 ## Usage scenarios
 
@@ -32,7 +32,7 @@ You can integrate Security Center into your workflows and use it in many ways. H
 
 1. Use Security Center for incident response.
 
-    Many organizations learn how to respond to security incidents only after suffering an attack. To reduce costs and damage, it’s important to have an incident response plan in place before an attack occurs. You can use Azure Security Center in different stages of an incident response.
+    Many organizations learn how to respond to security incidents only after suffering an attack. To reduce costs and damage, it's important to have an incident response plan in place before an attack occurs. You can use Azure Security Center in different stages of an incident response.
 
     ![Circular arrows point from the words detect, to assess, to diagnose, to stabilize, to close](../media/2a-security-center-incident-response.png)
 

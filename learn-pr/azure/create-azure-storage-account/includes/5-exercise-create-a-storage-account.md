@@ -8,13 +8,11 @@ The surf report site lets users upload photos and videos of local beach conditio
 
 To fulfill these requirements, you decide to buffer uploaded content in an Azure Queue for processing and then transfer it to an Azure Blob for persistent storage. You need a storage account that can hold both queues and blobs while delivering low-latency access to your content.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Use the Azure portal to create a storage account
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. In the top left of the Azure portal, select **Create a resource**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
 1. In the selection panel that appears, select **Storage**.
 
@@ -28,7 +26,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 Under **PROJECT DETAILS**:
 
-1. Select the appropriate **Subscription**.
+1. Select the _Concierge Subscription_ from the **Subscription** drop-down list.
 
 1. Select the existing Resource Group ("**<rgn>[sandbox resource group name]</rgn>**") from the drop-down list.
 
@@ -53,6 +51,14 @@ The following screenshot shows the completed settings for the **Basics** tab. No
 
 ![Screenshot of a Create a storage account pane with the **Basics** tab selected.](../media/5-create-storage-account-basics.png)
 
+### Configure the networking options
+
+1. Click the **Next: Networking >** button to move to the **Networking** tab, or select the **Networking** tab at the top of the screen.
+
+1. Set the **Connectivity method** option to _Public endpoint (all networks)_. This option allows you to isolate the storage account on an Azure virtual network. We want to use public Internet access. Our content is public facing and you need to allow access from public clients.
+
+![Screenshot of a Create a storage account pane with the **Basics** tab selected.](../media/5-create-storage-account-network.png)
+
 ### Configure the advanced options
 
 1. Click the **Next: Advanced >** button to move to the **Advanced** tab, or select the **Advanced** tab at the top of the screen.
@@ -62,7 +68,9 @@ The following screenshot shows the completed settings for the **Basics** tab. No
     > [!WARNING]
     > If this option is enabled, it will enforce some additional restrictions. Azure files service connections without encryption will fail, including scenarios using SMB 2.1 or 3.0 on Linux. Because Azure storage doesn’t support SSL for custom domain names, this option cannot be used with a custom domain name.
 
-1. Set the **Virtual networks** option to _All networks_. This option allows you to isolate the storage account on an Azure virtual network. We want to use public Internet access. Our content is public facing and you need to allow access from public clients.
+1. Leave the **Large file shares** option set to _Disabled_. Large file shares provides support up to a 100TiB, however this type of storage account can't convert to a Geo-redundant storage offering and upgrades are permanent.
+
+1. Leave the **Blob Soft delete** option set to _Disabled_. Soft delete lets you recover your blob data in many cases where blobs or blob snapshots are deleted accidentally or overwritten.
 
 1. Leave the **Data Lake Storage Gen2** option as _Disabled_. This is for big-data applications that aren't relevant to this module.
 
@@ -83,20 +91,5 @@ It will take a few minutes to deploy the account. While Azure is working on that
 1. Select the **Storage accounts** link in the left sidebar.
 
 1. Locate the new storage account in the list to verify that creation succeeded.
-
-<!-- Cleanup sandbox -->
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
-
-When you're working in your own subscription, you can use the following steps in the Azure portal to delete the resource group and all associated resources.
-
-1. Select the **Resource groups** link in the left sidebar.
-
-1. Locate the resource group you created in the list.
-
-1. Right-click on the resource group entry and select **Delete resource group** from the context menu. You can also click the "..." menu element on the right side of the entry to get to the same context menu.
-
-1. Type the resource group name into the confirmation field.
-
-1. Click the **Delete** button. This may take several minutes.
 
 You created a storage account with settings driven by your business requirements. For example, you might have selected a West US datacenter because your customers were primarily located in southern California. This is a typical flow: first analyze your data and goals, and then configure the storage account options to match.

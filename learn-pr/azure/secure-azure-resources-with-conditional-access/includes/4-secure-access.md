@@ -13,33 +13,33 @@ The steps that follow will walk you through the process to create a conditional 
 
 1. log into the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Browse to **Azure Active Directory**, and in the resulting blade locate and select **Conditional access** in the **Security** subsection.
+1. Browse to **Azure Active Directory**, and in the resulting pane locate and select **Conditional access** in the **Security** subsection.
 
-![A screenshot showing Azure Portal navigation items with selection boxes drawing attention to the Azure Active Directory item and the Conditional access item](../media/4-portal-screenshot-1.png)
+    ![A screenshot showing Azure Portal navigation items with selection boxes drawing attention to the Azure Active Directory   item and the Conditional access item](../media/4-portal-screenshot-1.png)
 
-1. Click **New policy**. This will open a new blade for creating the new policy.
+1. Click **New policy**. This will open a new pane for creating the new policy.
 
 1. Name the policy **Require MFA for Azure portal**.
 
-1. Under **Assignments** select **Users and groups** to open the next blade.
+1. Under **Assignments** select **Users and groups** to open the next pane.
 
-1. Click **Select users and groups** and then **Select** below it. This will open the selection blade.
+1. Click **Select users and groups** and then **Select** below it. This will open the selection pane.
 
-1. Select the group that we created in the previous unit, **CA-MFA-AzurePortal**, then click the **Select** button at the bottom. This will close the selection blade.
+1. Select the group that we created in the previous unit, **CA-MFA-AzurePortal**, then click the **Select** button at the bottom. This will close the selection pane.
 
-1. Click the **Done** button to complete this step and close the blade. You should once again see the new policy blade you opened in the second step above.
+1. Click the **Done** button to complete this step and close the pane. You should once again see the new policy pane you opened in the second step above.
 
-1. Under **Assignments** select **Cloud apps** to open the next blade.
+1. Under **Assignments** select **Cloud apps** to open the next pane.
 
-1. Click **Select apps** and then **Select** below it. This will open the selection blade.
+1. Click **Select apps** and then **Select** below it. This will open the selection pane.
 
-1. Select **Microsoft Azure Management**, and then the **Select** button at the bottom. This will close the selection blade.
+1. Select **Microsoft Azure Management**, and then the **Select** button at the bottom. This will close the selection pane.
 
-1. Click the **Done** button to complete this step and close the blade. You should once again see the new policy blade you opened in the second step above.
+1. Click the **Done** button to complete this step and close the pane. You should once again see the new policy pane you opened in the second step above.
 
-1. Under **Access controls** select **Grant** to open the next blade.
+1. Under **Access controls** select **Grant** to open the next pane.
 
-1. Click **Grant access** and then **Require multi-factor authentication**. Click the **Select** button to complete this step and close the blade. You should once again see the new policy blade you opened in the second step above.
+1. Click **Grant access** and then **Require multi-factor authentication**. Click the **Select** button to complete this step and close the pane. You should once again see the new policy pane you opened in the second step above.
 
 1. Set **Enable policy** to **On**.
 

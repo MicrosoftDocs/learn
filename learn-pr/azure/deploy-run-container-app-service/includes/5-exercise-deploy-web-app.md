@@ -12,38 +12,52 @@ In this unit, you'll create a new web app by using the Docker image stored in Az
 
     ![Screenshot that shows the Azure Marketplace with Web App selected](../media/5-search-web-app-annotated.png)
 
-1. Specify these settings:
+1. Specify these settings for each of the properties:
 
-    | Property         | Value                                                                |
-    |------------------|----------------------------------------------------------------------|
-    | Name             | Enter a unique name and make a note of it for later.                 |
-    | Subscription     | **Concierge Subscription**                                           |
-    | Resource Group   | Use the existing resource group <rgn>[Sandbox resource group]</rgn>. |
-    | OS               | **Linux**                                                            |
-    | Publish          | **Docker Image**                                                     |
-    | App Service plan | Use the default.                                                     |
+    | Property | Value |
+    |---|---|
+    | Subscription | Select your default Azure subscription in which you are allowed to create and manage resources. |
+    | Resource Group | Reuse the existing resource group **learn-deploy-container-acr-rg**. |
+    | Name | Enter a unique name and make a note of it for later. |
+    | Publish | **Docker Image** |
+    | OS | **Linux** |
+    | App Service plan | Use the default. |
 
-1. Select **Configure container**.
+1. Click **Next:&nbsp;Docker&nbsp;&gt;**.
 
-1. In the **Configure Container** window, select the **Single Container** tab. For the image source, select **Azure Container Registry**, and then enter these settings:
+1. In the **Docker** tab, specify these settings for each of the properties:
 
-    | Property     | Value                 |
-    |--------------|-----------------------|
-    | Registry     | Select your registry. |
-    | Image        | `webimage`          |
-    | Tag          | `latest`            |
-    | Startup File | Leave this empty.     |
+    | Property | Value |
+    |---|---|
+    | Options | **Single Container** |
+    | Image Source | **Azure Container Registry** |
+    | Registry | Select your registry. |
+    | Image | `webimage` |
+    | Tag | `latest` |
+    | Startup Command | Leave this empty. |
 
-1. Select **Apply**, and then on the **Web App** page, select **Create**. Wait until the web app has been deployed before you continue.
+1. Select **Review and create**, and then click **Create**. Wait until the web app has been deployed before you continue.
 
 ## Test the web app
 
-1. Use the **All resources** view in the Azure portal to go to the Overview page of the web app you just created. Select the **Browse** button to open the site in a new browser tab.
+1. Use the **All resources** view in the Azure portal to go to the **Overview** page of the web app you just created.
 
-1. After the cold-start delay while your app's Docker image loads and starts, you'll see a page like this:
+2. Select the **Browse** button to open the site in a new browser tab.
 
-    ![Screenshot of the sample web app](../media/5-sample-web-app.png)
+::: zone pivot="csharp"
 
-1. Select the arrows in the carousel control at the top of the page to rotate through three pages of content.
+3. After the cold-start delay while your app's Docker image loads and starts, you'll see a page like this:
+
+    ![Screenshot of the sample web app](../media/5-sample-web-app-dotnet.png)
+
+::: zone-end
+
+::: zone pivot="javascript"
+
+3. After the cold-start delay while your app's Docker image loads and starts, you'll see a page like this:
+
+    ![Screenshot of the sample web app](../media/5-sample-web-app-node.png)
+
+::: zone-end
 
 App Service is now hosting the app from your Docker image.

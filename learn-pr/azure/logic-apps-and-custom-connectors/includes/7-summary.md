@@ -3,4 +3,3 @@ In this module, you have learned how to create a custom Logic Apps connector. To
 Now that you’ve created the connector, you can also use it to connect Microsoft Flow and PowerApps to your REST API.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
-

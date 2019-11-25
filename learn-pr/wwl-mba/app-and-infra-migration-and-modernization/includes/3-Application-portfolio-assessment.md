@@ -3,7 +3,7 @@ Organizations that have decided to move to the cloud need to assess their applic
 
 |  |  |
 | ------------ | -------------|
-|![Icon indicating play video](../media/video_icon.png)|Watch this short video to review the options you can use to update your company’s application portfolio.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this short video to review the options you can use to update your company’s application portfolio.|
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWr1XF]
 
@@ -18,7 +18,7 @@ An **Application Portfolio Assessment** helps an organization better understand 
 
 |  |  |
 | ------------ | -------------|
-|![Icon indicating play video](../media/video_icon.png)|Watch the video below to learn about how Microsoft assessed our own application portfolio.|
+|![Icon indicating play video](../media/video-icon.png)|Watch the video below to learn about how Microsoft assessed our own application portfolio.|
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWr1XG]
 
@@ -31,7 +31,7 @@ Just as your current assets were built or acquired over a long period of time, a
 
 |  |  |
 | ------------ | -------------|
-|![Icon indicating play video](../media/video_icon.png)|Watch this short video to see how Allscripts evaluated their applications and infrastructure and made strategic decisions to modernize.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this short video to see how Allscripts evaluated their applications and infrastructure and made strategic decisions to modernize.|
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2NDea]
 

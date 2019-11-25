@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-azure-bot-services-bot.4-deploy-bot
-title: Deploy a bot with Visual Studio Code
+title: Exercise - Deploy a bot with Visual Studio Code
 metadata:
-  title: Deploy a bot with Visual Studio Code
+  title: Exercise - Deploy a bot with Visual Studio Code
   description: Deploy a bot with Visual Studio Code
   ms.date: 09/24/2018
-  author: JeffProsise
-  ms.author: shanama
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-#labId:  46466
+#labId: 46466
 durationInMinutes: 20
 content: |
   [!include[](includes/4-deploy-bot.md)]

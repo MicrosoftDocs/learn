@@ -9,8 +9,7 @@ metadata:
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-  zone_pivot_groups: dev-lang-csharp-java-node
+  zone_pivot_groups: dev-lang-csharp-java-node-python
 # TODO:Consider Azure Portal Interactivity
 # interactive: azure-portal
 azureSandbox: true
@@ -20,7 +19,7 @@ content: |
 tasks:
 - action: exists
   environment: azure
-  hint: "Run the commands shown to create an App Service plan and web app."
+  hint: "Follow the steps to create an App Service plan and web app."
   azure:
     resource:
       type: "Microsoft.Web/sites"

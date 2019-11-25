@@ -9,90 +9,182 @@
             {
                 "src": "advocates",
                 "files": [
-                    "**/*.yml"
+                    "**/*.yml",
+                    "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
             {
                 "src": "aspnetcore",
                 "files": [
-                    "**/*.yml"
+                    "**/*.yml",
+                    "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "ai-school",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
             {
                 "src": "ai-business-school",
                 "files": [
-                    "**/*.yml"
+                    "**/*.yml",
+                    "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
             {
                 "src": "azure",
                 "files": [
-                    "**/*.yml"
+                    "**/*.yml",
+                    "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "azure-devops",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "cmu-cloud-admin",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
             {
                 "src": "data-ai-cert",
                 "files": [
-                    "**/*.yml"
+                    "**/*.yml",
+                    "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
             {
                 "src": "databricks",
                 "files": [
-                    "**/*.yml"
+                    "**/*.yml",
+                    "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "iot",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
             {
                 "src": "ai-business",
                 "files": [
-                    "**/*.yml"
+                    "**/*.yml",
+                    "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
-            },        
+            },
             {
                 "src": "student-evangelism",
                 "files": [
-                    "**/*.yml"
+                    "**/*.yml",
+                    "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "sqlserver",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
             {
                 "src": "wwl-mba",
                 "files": [
-                    "**/*.yml"
+                    "**/*.yml",
+                    "**/*.md"
                 ],
                 "exclude": [
-                    "**/includes/**"
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
                 ],
                 "dest": "modules"
             },
@@ -109,7 +201,9 @@
                     "README.md",
                     "LICENSE",
                     "LICENSE-CODE",
-                    "ThirdPartyNotices"
+                    "ThirdPartyNotices",
+                    "**/design/**",
+                    "**/resources/**"
                 ]
             }
         ],
@@ -148,32 +242,184 @@
             "feedback_system": "GitHub",
             "feedback_github_repo": "MicrosoftDocs/learn",
             "clicktale": true,
-            "uhfHeaderId": "MSDocsHeader-Learn",
-            "localization_scopes": [
-                "de-de",
-                "es-es",
-                "fr-fr",
-                "it-it",
-                "ja-jp",
-                "pt-br",
-                "zh-cn",
-                "zh-tw",
-                "ko-kr",
-                "ru-ru",
-                "nl-nl",
-                "hu-hu",
-                "cs-cz",
-                "pl-pl",
-                "pt-pt",
-                "sv-se",
-                "tr-tr"
-            ]
+            "uhfHeaderId": "MSDocsHeader-Learn"
         },
         "fileMetadata": {
             "brand": {
                 "azure/**/*.yml": "azure"
             },
-            "sandbox-disabled": {}
+            "sandbox-disabled": {},
+            "localization_scopes": {
+                "azure/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
+                "advocates/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
+                "ai-business-school/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "pt-br",
+                    "ja-jp",
+                    "zh-cn",
+                    "zh-tw"
+                ],
+                "ai-school/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "pt-br",
+                    "ja-jp",
+                    "zh-cn",
+                    "zh-tw"
+                ],
+                "aspnetcore/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw"
+                ],
+                "data-ai-cert/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
+                "databricks/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
+                "iot/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
+                "student-evangelism/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
+                "iot/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
+                "wwl-mba/**/*.yml": [
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw"
+                ]
+            }
         },
         "template": [],
         "dest": "learn-pr",

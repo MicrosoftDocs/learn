@@ -2,11 +2,11 @@
 uid: learn.monitor-azure-cosmos-db.8-index-exercise
 title: Exercise - Measure the impact of index policy choice
 metadata:
-  title: Learn how to measure the impact of different index policy choices for Azure Cosmos DB
-  description: Interactive demonstration of the impact of index configuration.
+  title: Exercise - Learn how to measure the impact of index policy choices for Azure Cosmos DB
+  description: Interactive demonstration of the impact of index configuration
   ms.date: 02/25/2019
-  author: natke
-  ms.author: nakersha
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -18,28 +18,28 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Indexing all properties in a collection results in"
+  - content: "Indexing all properties in a collection results in:"
     choices:
-    - content: Higher demand writes to the database and lower demand queries
+    - content: Higher-demand writes to the database and lower-demand queries.
       isCorrect: true
-      explanation: More resources are consumed when updating the index. But using the index to find documents is more efficient.
-    - content: Lower demand writes to the database and higher demand queries
+      explanation: More resources are consumed when Azure Cosmos DB is updating the index. But using the index to find documents is more efficient.
+    - content: Lower-demand writes to the database and higher-demand queries.
       isCorrect: false
       explanation: The opposite is true. The index needs to be updated whenever a document is written. Indexing all properties would make querying very efficient.
-    - content: Higher demand writes and queries
+    - content: Higher-demand writes and queries.
       isCorrect: false
       explanation: Only the writes consume more RUs. You save on the required capacity for queries.
-  - content: For read-heavy workloads, with an unknown query pattern, the best starting indexing strategy is
+  - content: "For read-heavy workloads with an unknown query pattern, the best starting indexing strategy is:"
     choices: 
-    - content: Set the indexing policy to `none`
+    - content: Set the indexing policy to `none`.
       isCorrect: false
       explanation: Having no properties indexed means that your read-heavy operations are less efficient.
-    - content: Index all properties
+    - content: Index all properties.
       isCorrect: true
-      explanation: "This is a safe choice because you can perform queries efficiently. It's also the Cosmos DB default."
-    - content: Index only the specific properties that will be queried
+      explanation: "This is a safe choice because you can perform queries efficiently. It's also the Azure Cosmos DB default."
+    - content: Index only the specific properties that will be queried.
       isCorrect: false
       explanation: In this case, you don't know ahead of time which properties will be queried.
-    - content: Only index the `id` property of your documents
+    - content: Index only the `id` property of your documents.
       isCorrect: false
-      explanation: "This would save on the consumption of write operations. But as you have a read-heavy workload, this isn't a good choice."    
+      explanation: "This would save on the consumption of write operations. But because you have a read-heavy workload, this isn't a good choice."    

@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.provision-manage.5-metering-monitoring
+title: Metering and Monitoring
+metadata:
+  title: Metering and Monitoring
+  description: Metering and Monitoring
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-metering-monitoring.md)]
+quiz:
+  title: Check your knowledge
+  questions: 
+
+    - content: "To be able to bill users accurately, which of the following does a CSP NOT need to monitor?"
+      choices:
+      - content: "The start time of every resource that a customer owns"
+        isCorrect: false
+        explanation: "Incorrect. It Is necessary to know resources' start times to determine how long they have been in use."
+      - content: "The number of bytes of data sent out by a customer's resources"
+        isCorrect: false
+        explanation: "Incorrect. Most CSP's charge for data egress from their data centers."
+      - content: "The number of unique users who use a web application hosted by a customer."
+        isCorrect: true
+        explanation: "Correct! Once resources are provisioned, CSPs are generally not concerned with how many unique users are consuming those resources."
+      - content: "All of the above must be monitored."
+        isCorrect: false
+        explanation: "Incorrect."
+    
+    - content: "Azure Cost Management can be used to monitor costs for which cloud service provider(s)?"
+      choices:
+      - content: "Microsoft Azure"
+        isCorrect: false
+        explanation: "Incorrect. Azure Cost Management can also be used to track costs in AWS."
+      - content: "Amazon AWS"
+        isCorrect: false
+        explanation: "Incorrect. Azure Cost Management can also be used to track costs in Azure."
+      - content: "Microsoft Azure and Amazon AWS"
+        isCorrect: true
+        explanation: "Correct! Azure Cost Management can track costs in Azure and can be integrated with AWS to track costs there, too."
+      - content: "None of the above"
+        isCorrect: false
+        explanation: "Incorrect."

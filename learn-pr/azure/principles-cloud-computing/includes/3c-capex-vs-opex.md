@@ -8,7 +8,7 @@ These two approaches to investment are referred to as:
 
 ## CapEx computing costs
 
-A typical on-premises data center includes costs such as:
+A typical on-premises datacenter includes costs such as:
 
 ### Server costs
 
@@ -24,7 +24,7 @@ Networking costs include all on-premises hardware components, including cabling,
 
 ### Backup and archive costs
 
-This is the cost to back up, copy, or archive data. Options might include setting up a backup to or from the cloud. There’s an upfront cost for the hardware and additional costs for backup maintenance and consumables like tapes.
+This is the cost to back up, copy, or archive data. Options might include setting up a backup to or from the cloud. There's an upfront cost for the hardware and additional costs for backup maintenance and consumables like tapes.
 
 ### Organization continuity and disaster recovery costs
 
@@ -36,15 +36,11 @@ These are costs for electricity, floor space, cooling, and building maintenance.
 
 ### Technical personnel
 
-Based on the technology used, you’ll need technical expertise and workforce to install, deploy, and manage the systems in the datacenter and at the data recovery site.
+While not a capital expenditure, the personnel required to work on your infrastructure are specific to on-premises datacenters. You will need the technical expertise and workforce to install, deploy, and manage the systems in the datacenter and at the data recovery site.
 
 ## OpEx cloud computing costs
 
 With cloud computing, many of the costs associated with an on-premises datacenter are shifted to the service provider. Instead of thinking about physical hardware and datacenter costs, cloud computing has a different set of costs. For accounting purposes, all these costs are operational expenses:
-
-### Leasing a cloud-based server
-
-If you lease a server or use a cloud-based server, the cost is typically based on the pay-per-use model. 
 
 ### Leasing software and customized features
 

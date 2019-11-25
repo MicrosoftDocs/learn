@@ -4,8 +4,8 @@ metadata:
   title: Introduction
   description: Learn how to distribute data globally with Azure Cosmos DB.
   ms.date: 09/24/2018
-  author: mimig1
-  ms.author: mimig
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

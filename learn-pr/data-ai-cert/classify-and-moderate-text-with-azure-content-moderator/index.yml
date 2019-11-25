@@ -8,7 +8,6 @@ metadata:
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 abstract: | 
   In this module, you'll:
   - Learn what text content moderation is.
@@ -18,7 +17,6 @@ title: Classify and moderate text with Azure Content Moderator
 summary: In this module, we'll introduce you to Azure Content Moderator and show how to use it for text moderation.
 cardDescription: Learn how to implement text moderation with the Azure Content Moderator service.
 prerequisites: None
-ratingEnabled: true
 iconUrl: /learn/achievements/data-ai/classify-and-moderate-text-with-azure-content-moderator.svg
 levels: 
 - intermediate

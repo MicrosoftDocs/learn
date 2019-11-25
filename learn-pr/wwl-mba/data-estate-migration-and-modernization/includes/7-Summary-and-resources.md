@@ -11,7 +11,7 @@ Microsoft offers a comprehensive suite of solutions that provide options for mig
 Here are the four key takeaways from this module:
 
 :::row:::
-![Icon of key](../media/Key_Takeaway_4questions.png)
+![Icon of key](../media/key-takeaway.png)
   :::column span="1":::
 1. Microsoft offers solutions for customers who want to migrate and modernize their data estate on-premises (SQL Server 2017) or in a fully-managed cloud platform (Azure’s Managed Instance, SQL on IaaS, and OSS database) in order take advantage of cloud, data, and AI technologies to gain important insights and fuel innovation. 
 1. Globally distributed data enables applications to replicate data anywhere in the world, allowing for fast response times and high availability. Azure Cosmos DB is Microsoft’s solutions for building fast, scalable applications using globally distributed data. 

@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn-sqlserver.introduction-sql-server-linux.3-sql-server-linux-features
+title: SQL Server on Linux features
+metadata:
+  title: SQL Server on Linux features
+  description: In this unit, you will learn the features of SQL Server, so that you can decide whether it supports a specific workload.
+  ms.date: 06/11/2019
+  author: alistairmatthews
+  ms.author: v-alism
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-sql-server-linux-features.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What features does SQL Server on Linux provide to support business continuity?"
+    choices:
+    - content: "Always On availability groups, Always On failover cluster instances, and Log Shipping."
+      isCorrect: true
+      explanation: "These three features all support high availability and are key to providing business continuity."   
+    - content: "Always Encrypted, Row-level security, and dynamic data masking."
+      isCorrect: false
+      explanation: "These three features are security-related."
+    - content: "In-Memory OLTP, Columnstore Index, and the Query Store."
+      isCorrect: false
+      explanation: "These three features are performance-related."
+  - content: "If data is encrypted using Always Encrypted, when will the data be decrypted?"
+    choices:
+    - content: "In the database"
+      isCorrect: false
+      explanation: "Always Encrypted encrypts and decrypts the data in the client application. It is stored in the database in its encrypted form."
+    - content: "Before sending over the network"
+      isCorrect: false
+      explanation: "Always Encrypted encrypts and decrypts the data in the client application. It is sent encrypted, and stored in the database in its encrypted form."
+    - content: "In the client application"
+      isCorrect: true
+      explanation: "Always Encrypted encrypts and decrypts the data in the client application."

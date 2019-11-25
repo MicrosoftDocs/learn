@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.backup-restore-azure-sql.2-protect-database-with-backup
+metadata:
+  title: Back up Azure SQL Database
+  description: In this unit, you'll learn how to plan a backup regime for your Azure SQL Database service.
+  ms.date: 09/25/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Back up Azure SQL Database
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-protect-database-with-backup.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You've created a new database in Azure SQL Database. When will the first full backup run?"
+    choices:
+    - content: "At midnight in the local region"
+      isCorrect: false
+      explanation: "Azure schedules a full backup to run as soon as the database is created."
+    - content: "Immediately"
+      isCorrect: true
+      explanation: "Azure schedules a full backup to run as soon as the database is created."
+    - content: "When you manually run the backup"
+      isCorrect: false
+      explanation: "Azure schedules a full backup to run as soon as the database is created."
+  - content: "Where are SQL Server backups stored, by default?"
+    choices:
+    - content: "In the on-premises location that you specify"
+      isCorrect: false
+      explanation: "The default location for backups is a read-access geo-redundant storage account that's replicated to a paired datacenter."
+    - content: "In a locally redundant storage account"
+      isCorrect: false
+      explanation: "The default location for backups is a read-access geo-redundant storage account that's replicated to a paired datacenter."
+    - content: "In a read-access geo-redundant storage account"
+      isCorrect: true
+      explanation: "The default location for backups is a read-access geo-redundant storage account that's replicated to a paired datacenter."

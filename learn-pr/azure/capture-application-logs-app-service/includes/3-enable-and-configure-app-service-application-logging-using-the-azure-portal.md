@@ -10,8 +10,6 @@ You're going to deploy a sample ASP.NET Core Web app from GitHub; this app inclu
 
 In this step, you're going to use Azure CLI commands to create an ASP.NET Web app using code from a GitHub repository. You will also create a new storage account, in the same region as the Web app, for log storage.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 1. Run the following commands in the Cloud Shell to set some variables, replacing  _\<your-local-Azure-region\>_, with the closest region to you from the following list.
    [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
@@ -54,14 +52,14 @@ In this step, you're going to use the Azure portal to enable application logging
 You'll now set up the application logging.
 
 1. Switch to the tab showing the Azure portal.
-1. In the **App Service** blade, scroll down to the **Monitoring** section, and then click **Diagnostics logs**.
+1. In the **App Service** pane, scroll down to the **Monitoring** section, and then click **Diagnostics logs**.
 1. Under **Application logging (Filesystem)**, click **On**, and in the **Level** box, click **Error**.
 1. Under **Application logging (Blob)**, click **On**, and in the **Level** box, click **Verbose**.
-1. Click **Storage Settings**, and on the **Storage Accounts** blade, click **sacontosofashions\<_your-number_\>**, where \<_your-number_\> is the number suffix you noted when you created your app.
-1. On the **Containers** blade, click **+ Container**, and in the **Name** box, type **asp logs**, and then click **OK**.
+1. Click **Storage Settings**, and on the **Storage Accounts** pane, click **sacontosofashions\<_your-number_\>**, where \<_your-number_\> is the number suffix you noted when you created your app.
+1. On the **Containers** pane, click **+ Container**, and in the **Name** box, type **asp logs**, and then click **OK**.
 1. Click **asplogs**, and then click **Select**.
 1. In the **Retention Period (Days)** box, type **5**.
-1. Click **Save** to close the **Diagnostics logs** blade, and update the log settings.
+1. Click **Save** to close the **Diagnostics logs** pane, and update the log settings.
 
 
 ::: zone-end
@@ -76,8 +74,6 @@ You're going to deploy a sample Node.js app from GitHub; this app includes code 
 
 In this step, you're going to use Azure CLI commands to create a Node.js Web app using code from a GitHub repository. 
 <!-- TODO App code is currently in a personal repo, so needs to be moved to a Learn repo. -->
-
-[!include[](../../../includes/azure-sandbox-activate.md)]
 
 1. Run the following commands in the Cloud Shell to set some variables, replacing  _\<your-local-Azure-region\>_, with the closest region to you from the following list.
    [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
@@ -94,8 +90,8 @@ In this step, you're going to use Azure CLI commands to create a Node.js Web app
 1. Run the following commands in the Cloud Shell to deploy the web app.
 
    ```azurecli
-   az appservice plan create --name $appPlan --resource-group $resourcegroupName --location $appLocation --sku B1 --is-linux
-   az webapp create --name $appName --resource-group $resourcegroup --plan $appPlan --runtime "node|6.10" --deployment-source-url $gitRepo
+   az appservice plan create --name $appPlan --resource-group $resourceGroup --location $appLocation --sku FREE --is-linux
+   az webapp create --name $appName --resource-group $resourceGroup --plan $appPlan --runtime "node|6.10" --deployment-source-url $gitRepo
    ```
 
 1. Make a note of the random number suffix in your app name; this was generated to uniquely identify your app.
@@ -115,9 +111,9 @@ In this step, you're going to use the Azure portal to enable application logging
 You'll now set up the application logging.
 
 1. Switch to the tab showing the Azure portal.
-1. In the **App Service** blade, scroll down to the **Monitoring** section, and then click **Diagnostics logs**.
+1. In the **App Service** pane, scroll down to the **Monitoring** section, and then click **Diagnostics logs**.
 1. Under **Application logging**, click **File System**, and in the **Retention Period (Days)** box, type **5**.
-1. Click **Save** to close the **Diagnostics logs** blade, and update the log settings.
+1. Click **Save** to close the **Diagnostics logs** pane, and update the log settings.
 
 ::: zone-end
 

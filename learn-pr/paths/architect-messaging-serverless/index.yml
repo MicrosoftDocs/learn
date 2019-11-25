@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.architect-messaging-serverless
+metadata:
+  title: Architect message brokering and serverless applications in Azure learning path
+  description: Learn how to create reliable messaging for your applications, and how to take advantage of serverless application services in Azure.
+  brand: azure
+  ms.date: 10/22/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Architect message brokering and serverless applications in Azure
+summary: Learn how to create reliable messaging for your applications, and how to take advantage of serverless application services in Azure.
+prerequisites: |
+  - Familiarity with C#
+iconUrl: /learn/achievements/architect-messaging-serverless.svg
+levels:
+- intermediate
+roles:
+- solution-architect
+products:
+- azure
+- azure-functions
+- azure-event-hubs
+- azure-event-grid
+- azure-service-bus
+- azure-logic-apps
+modules:
+- learn.create-serverless-logic-with-functions
+- learn.azure.route-and-process-data-logic-apps
+- learn.choose-messaging-model
+- learn.communicate-between-applications-with-azure-queue-storage
+- learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs
+- learn.implement-message-workflows-with-service-bus
+trophy:
+  uid: learn.architect-messaging-serverless.trophy

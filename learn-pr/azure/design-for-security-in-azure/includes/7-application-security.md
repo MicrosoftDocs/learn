@@ -17,42 +17,6 @@ The primary areas that concern customer applications are:
 
 Microsoft's [Security Development Lifecycle](https://www.microsoft.com/sdl) (SDL) process can be used during the application design stage to ensure security concerns are incorporated in the software development lifecycle. Security and compliance issues are far easier to address when designing an application and can mitigate many common errors that can lead to security flaws in the final product. Fixing issues early in the software development journey is also far less costly. The typical sequence of SDL steps a software project can use are as follows:
 
-1. Training
-
-    - Core security training
-
-1. Requirements
-
-    - Define requirements and quality gates
-    - Analyze security and privacy risks
- 
-1. Design
-
-    - Attack surface analysis
-    - Threat modeling
- 
-1. Implementation
-
-    - Specify tools to ensure code quality can be measured
-    - Enforce banned APIs and functions
-    - Perform static code analysis
-    - Scan repositories for stored secrets
- 
-1. Verification
-
-    - Dynamic/Fuzz testing
-    - Verify threat models/attack surface
- 
-1. Release
-
-    - Form security response plan
-    - Perform a final security review
-    - Release archive
- 
-1. Response 
-
-    - Execute threat response execution
-
 ![An illustraton showing the Security development lifecycle](../media/sdl.png)
 
 The SDL is as much a cultural aspect as it is a process or set of tools. Building a culture where security is a primary focus and requirement of any application development can make great strides in evolving an organization's capabilities around security.
@@ -66,8 +30,14 @@ Once an application has been deployed, it's essential to continually evaluate it
 
 Security vulnerability scanning software services are available to help automate this process and assess security concerns on a regular cadence, without burdening teams with costly manual processes, such as penetration testing.
 
-Azure Security Center is a free service, now enabled by default for all Azure subscriptions, that is tightly integrated with other Azure application level services, such as Azure Application Gateway and Azure Web Application Firewall. By analyzing logs from these services, ASC can report on known vulnerabilities in real time, recommend responses to mitigate them, and even be configured to automatically execute playbooks in response to attacks.
+**Azure Security Center** is a free service, now enabled by default for all Azure subscriptions, that is tightly integrated with other Azure application level services, such as Azure Application Gateway and Azure Web Application Firewall. By analyzing logs from these services, ASC can report on known vulnerabilities in real time, recommend responses to mitigate them, and even be configured to automatically execute playbooks in response to attacks.
+<!--
+## Configure Synthetic Security Transactions
 
+Distributed applications and services running in the cloud are by their nature complex pieces of software that comprise many moving parts. In a production environment, it's important to be able to track the way in which users utilize your system, trace resource utilization, and monitor the health and performance of your system. You can use this information as a diagnostic aid to detect and correct issues, and to help spot potential problems and prevent them from occurring.
+
+**Synthetic transactions are the capability to check the availability of an application across a network**. These transactions are automated, self-contained, simulated user transactions. When run, they do not cause regression. There's a link in the summary of this module to learn more about this topic.
+-->
 <!-- SDL culture
 Key Vault / MSI
 CSE = App  -> DB & App Storage

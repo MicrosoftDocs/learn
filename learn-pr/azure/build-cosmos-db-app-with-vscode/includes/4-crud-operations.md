@@ -1,5 +1,3 @@
-<!--TODO: explain Etag in knowledge needed-->
-
 Once the connection to Azure Cosmos DB has been made, the next step is to create, read, replace, and delete the documents that are stored in the database. In this unit, you will create User documents in your `WebCustomer` collection. Then, you'll retrieve them by ID, replace them, and delete them.
 
 ## Working with documents programmatically
@@ -302,6 +300,7 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
     ```bash
     dotnet run
     ```
+
     The terminal displays the following output, where the output "Replaced last name for Suh" indicates the document was replaced.
 
     ```output

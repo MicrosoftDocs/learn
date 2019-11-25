@@ -8,7 +8,6 @@ metadata:
   ms.author: chris.testaoneill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Transform data by using Azure Stream Analytics
 summary: Learn how to create Azure Stream Analytics jobs to process input data, transform it with a query, and return results.
 abstract: | 
@@ -20,7 +19,6 @@ abstract: |
   - Write a transformation query.
   - Start a Stream Analytics job.
 prerequisites: An Azure account or active trial
-ratingEnabled: true
 iconUrl: /learn/achievements/data-ai/transform-data-with-azure-stream-analytics-badge.svg
 levels:
 - beginner

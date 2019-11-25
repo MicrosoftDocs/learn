@@ -22,7 +22,7 @@ In this module, you will:
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this short video to learn more.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this short video to learn more.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqM96]
 

@@ -4,10 +4,9 @@ metadata:
   title: Secure your cloud data in Azure learning path
   description: Azure was designed for security and compliance. Learn how to leverage the built-in services to store your app data securely to ensure that only authorized services and clients have access to it.
   brand: azure
-  ms.date: 09/24/2018
+  ms.date: 10/1/2019
   author: markjulmar
   ms.author: smmark
-  #ms.learn-contact: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Secure your cloud data
@@ -23,17 +22,18 @@ roles:
 products:
 - azure
 - azure-key-vault
-- azure-active-directory
-- azure-portal
+- azure-storage
+- azure-cosmos-db
+- azure-sql-data-warehouse
+- azure-sql-database
 modules:
-- learn.design-for-security
+- learn.introduction-to-security
 - learn.top-5-security-items-to-consider
+- learn.azure-security.configure-security-policies-to-manage-data
 - learn.azure.secure-azure-storage-account
-- learn.manage-secrets-with-azure-key-vault
-#TODO: Add - secure/protect resources with azure security center (POST-IGNITE)
-- learn.authenticate-browser-based-apps-with-azure-app-services
-- learn.secure-access-azure-ad-multi-factor-authentication
+- learn.azure-security.configure-and-manage-azure-key-vault
 - learn.secure-azure-resources-with-rbac
 - learn.secure-your-azure-sql-database
+- learn.data-ai.data-warehouse-security
 trophy:
   uid: learn.secure-your-cloud-data.trophy

@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-kubernetes-service.knowledge-check
+title: Knowledge check
+
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 6/25/2019
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+
+durationInMinutes: 5
+content: |
+
+quiz:
+
+  questions:
+  
+  - content: "Suppose you work for a company that builds a Massively Multiplayer Online (MMO) game. You decide to move all your services to Azure Kubernetes service. Which of the following components will contribute to your monthly Azure charge?"
+    choices:
+    - content: "The Master node"
+      isCorrect: false
+      explanation: "In an AKS cluster, the Master node is free and there's no charge for Cluster Management."
+    - content: "Per deployed Pod"
+      isCorrect: false
+      explanation: "Deploying and running Pods on an AKS cluster is free."
+    - content: "Per node VM"
+      isCorrect: true
+      explanation: "You only pay for the virtual machines instances, storage, and networking resources consumed by your Kubernetes cluster."
+
+  - content: "Suppose you work for an event management company. Your events website needs persisted storage. Which feature of AKS will you use?"
+    choices:
+    - content: "Use Azure Container Registry"
+      isCorrect: false
+      explanation: "Azure Container Registry allows you to store images for all types of container deployments."
+    - content: "Storage volume support"
+      isCorrect: true
+      explanation: "AKS supports both static and dynamic storage volumes for containers that need persisted storage."
+    - content: "Enable the horizontal pod autoscaler"
+      isCorrect: false
+      explanation: "The horizontal pod autoscaler watches the resource demand of pods and will increase pods to match demand."
+
+  - content: "Suppose you work for a company that monitors weather conditions. Your team of developers needs to do end-to-end testing with other components in your AKS cluster. The team wants to do testing without replicating or mocking up dependencies. Which service should they use?"
+    choices:
+    - content: "Deployment Center"
+      isCorrect: false
+      explanation: "Deployment center simplifies setting up continuous integration and continuous delivery pipelines to AKS Kubernetes clusters."
+    - content: "Draft"
+      isCorrect: false
+      explanation: "Draft streamlines the development workflow to easily initialize a container build and push the build to Kubernetes."
+    - content: "Azure Dev Spaces"
+      isCorrect: true
+      explanation: "Azure Dev Spaces allows for the development of code in isolation, and do end-to-end testing with other components without replicating or mocking up dependencies."

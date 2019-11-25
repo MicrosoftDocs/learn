@@ -15,6 +15,8 @@ If the structure of your raw data is more complex, or you are required to prepar
 
 In this module, we'll focus on some of these advanced techniques that are supported by Azure Databricks.
 
+[!INCLUDE [azure-databricks-free-trial-note](../../../includes/azure-databricks-free-trial-note.md)]
+
 ## Learning objectives
 
 In this module, you will:

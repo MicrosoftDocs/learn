@@ -4,7 +4,7 @@ Now that you have your Data Science Virtual Machine up and running, you decide t
 
 Make sure you're still connected to your VM through ssh. If not, just run this command again to remote back into the virtual machine.
 
-1. Execute the following command in Azure Cloud Shell to sign into the VM.
+1. Execute the following command in [Azure Cloud Shell](https://shell.azure.com?azure-portal=true) to sign into the VM.
 
     ```azurecli 
     ssh <USERNAME>@<IP>
@@ -58,9 +58,9 @@ Once the Jupyter notebook is running in the container, you'll  see a message sim
     > [!TIP]
     > You can get the FQDN and IP address of your VM with the following command:
     > 
-    > `az vm show -d --name <HOSTNAME> --resource-group <rgn>[sandbox resource group name]</rgn> --output table`
+    > `az vm show -d --name <HOSTNAME> --resource-group learn-deep-dsvm --output table`
     >
-    > Remember to replace `<HOSTNAME>` with the name you gave your VM. 
+    > Remember to replace `<HOSTNAME>` with the name you gave your VM.
     
     This time we only see a single notebook. That's because we're in a container and only copied down this notebook. In the next exercise, we'll experiment with this notebook. 
     

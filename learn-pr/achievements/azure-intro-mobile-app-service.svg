@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>NA/introduction-to-mobile-apps-in-azure-app-service</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-10.5%" y="-6.2%" width="121.1%" height="112.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0964956975 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="N/A-21" transform="translate(-50.000000, -1260.000000)">
+            <g id="NA/introduction-to-mobile-apps-in-azure-app-service" transform="translate(50.000000, 1260.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Mobile" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(29.000000, 16.000000)">
+                            <path d="M38,60 C38,62.2 36.2,64 34,64 L4,64 C1.8,64 0,62.2 0,60 L0,4 C0,1.8 1.8,0 4,0 L34,0 C36.2,0 38,1.8 38,4 L38,60" id="Fill-1355" fill="#3F4A4D"></path>
+                            <polygon id="Fill-1356" fill="#252A2C" points="3 53 35 53 35 8 3 8"></polygon>
+                            <path d="M22,58 C22,59.657 20.657,61 19,61 C17.343,61 16,59.657 16,58 C16,56.343 17.343,55 19,55 C20.657,55 22,56.343 22,58" id="Fill-1357" fill="#252A2C"></path>
+                            <path d="M23,6 L15,6 C14.448,6 14,5.553 14,5 C14,4.447 14.448,4 15,4 L23,4 C23.552,4 24,4.447 24,5 C24,5.553 23.552,6 23,6" id="Fill-1358" fill="#252A2C"></path>
+                            <polyline id="Fill-1359" fill="#2E3537" points="35 45 16 8 35 8 35 45"></polyline>
+                        </g>
+                    </g>
+                    <path d="M38.2078098,86.6035812 C38.2078098,80.8794968 33.5955933,76.2672803 27.8715089,76.2672803 C33.5955933,76.2672803 38.2078098,71.6550638 38.2078098,65.9309793 C38.2078098,71.6550638 42.8200263,76.2672803 48.5441107,76.2672803 C42.8200263,76.2672803 38.2078098,80.8794968 38.2078098,86.6035812 Z M35.2078098,24.4948825 C29.0616513,24.4948825 24.1093461,19.5425773 24.1093461,13.3964188 C24.1093461,19.5425773 19.1570408,24.4948825 13.0108823,24.4948825 C19.1570408,24.4948825 24.1093461,29.4471878 24.1093461,35.5933463 C24.1093461,29.4471878 29.0616513,24.4948825 35.2078098,24.4948825 Z M82.9891177,43.2418413 C78.1997142,43.2418413 74.3406227,39.3827497 74.3406227,34.5933463 C74.3406227,39.3827497 70.4815312,43.2418413 65.6921277,43.2418413 C70.4815312,43.2418413 74.3406227,47.1009328 74.3406227,51.8903363 C74.4081874,47.1009328 78.267239,43.2418413 82.9891177,43.2418413 Z" id="Sparkle" fill="#FFFFFF" opacity="0.949999988" mask="url(#mask-2)"></path>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -5,13 +5,11 @@ metadata:
   title: Exercise - Write code that uses Service Bus queues
   description: Exercise - Write code that uses Service Bus queues
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-interactive: bash-editor
+interactive: bash
 azureSandbox: true
 durationInMinutes: 10
 content: |

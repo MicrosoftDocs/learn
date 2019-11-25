@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-app-with-oidc-and-azure-ad.4-exercise-create-aad-register-app
+metadata:
+  title: Exercise - Create an Azure AD tenant and configure registration for your application
+  description: Create a new Azure AD tenant and then register your application with that tenant.
+  ms.date: 07/17/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Exercise - Create an Azure AD tenant and configure registration for your application
+durationInMinutes: 10
+azureSandbox: true
+content: |
+  [!include[](includes/4-exercise-create-aad-register-app.md)]

@@ -1,30 +1,30 @@
-Now that you have set up a function app to be triggered by a webhook, you have to set up a webhook for your company's Technology Wiki. 
-
-In this exercise, you'll set up a webhook for a GitHub repository. You'll learn how to listen for specific events, in this case the *Gollum* event, and how to make your webhook callback to your Azure Function when the event is triggered.
+In this exercise, you'll set up a webhook for a GitHub repository. You'll learn how to listen for specific events, in this case the *Gollum* event, and how to make your webhook callback to your function when the event is triggered.
 
 ## Setup
 
 1. Using your web browser, sign in to your [GitHub account](https://www.github.com).
 
-1. Create a new repository by clicking the **New** button and give it a meaningful name such as **LearnWebhookTest**.
+1. Create a new **public** repository by clicking the **New** button and give it a meaningful name such as **LearnWebhookTest**.
 
-1. Click the **Wiki** tab.
+1. Select the **Wiki** tab.
 
-1. Click **Create the first page**.
+1. Select **Create the first page**.
 
-1. Add some text, and then click *Save Page*.
+1. Add some text, and then select *Save Page*.
 
 ## Add a webhook for the Gollum Event
 
+The **Gollum** event is the name of the event in GitHub that is fired whenever a page in the repo's wiki is created or updated. 
+
 1. Go back to main page for your repository.
 
-1. Click the **Settings** tab.
+1. Select the **Settings** tab.
 
-1. Click **Webhooks** in the navigation panel to the left of the page.
+1. Select **Webhooks** in the navigation panel to the left of the page.
 
-1. Click the **Add webhook** button on the top-right.
+1. Select the **Add webhook** button on the top-right.
 
-1. Set the payload to the URL for your Function App's function from the previous exercise. Remember that it looks similar to this:
+1. Set the payload to the URL for your function app's function from the previous exercise. Remember that it looks similar to this:
 
     ```text
     https://<your-functionapp-name>.azurewebsites.net/api/HttpTrigger1?code=aUjXIpqdJ0ZHPQuB0SzFegxGJu0nAXmsQBnmkCpJ6RYxleRaoxJ8cQ==
@@ -36,7 +36,7 @@ In this exercise, you'll set up a webhook for a GitHub repository. You'll learn 
 
 1. Select the **Wiki** checkbox. Make sure no other check boxes are selected.
 
-1. At the bottom of the page, ensure **Active** is checked and click **Add webhook**.
+1. At the bottom of the page, ensure **Active** is checked and select **Add webhook**.
 
 1. Verify that your new webhook appears when the **Webhooks** page is displayed.
 
@@ -46,28 +46,28 @@ In this exercise, you'll set up a webhook for a GitHub repository. You'll learn 
 
 1. Select the page that you created earlier.
 
-1. Click **Edit**.
+1. Select **Edit**.
 
-1. In the text area of the page, type: 
+1. In the text area of the page, enter the following text: 
 
     ```text
     Testing Webhook
     ```
 
-1. Click **Save Page**.
+1. Select **Save Page** to save your update.
 
 1. Select the **Settings** tab.
 
 1. Click **Webhooks** in the navigation panel on the left.
 
     > [!NOTE]
-    > The webhook will indicate that the message was not processed correctly; it will generate an HTTP 400 error. The webhook is providing a payload that the Function App wasn't expecting, and doesn't include a **name** parameter. You will learn how to parse the payload for a *Gollum* event in the next unit.
+    > The webhook will indicate that the message was not processed correctly; it will generate an HTTP 400 error. The webhook is providing a payload that your function app wasn't expecting, and doesn't include a **name** parameter. You will learn how to parse the payload for a *Gollum* event in the next unit.
 
-1. Click **Edit** next to your webhook.
+1. Select **Edit** next to your webhook.
 
 1. Scroll down to the **Recent Deliveries** section.
 
-1. Select the latest delivery entry by clicking on the ellipsis (...).
+1. Select the latest delivery entry by clicking on the ellipsis (**...**).
 
     You'll see the *Header* information, including the *Event Type*:
 
@@ -81,7 +81,7 @@ In this exercise, you'll set up a webhook for a GitHub repository. You'll learn 
     X-GitHub-Event: gollum
     ```
 
-   You'll also see that the payload contains information indicating that your Wiki page was edited. The payload contains **pages**, **repository**, and **sender** sections, which should look something like the example shown below:
+   You'll also see that the payload contains information indicating that your wiki page was edited. The payload contains **pages**, **repository**, and **sender** sections, which should look something like the example shown below:
 
     ```json
         "pages": [
@@ -105,6 +105,6 @@ In this exercise, you'll set up a webhook for a GitHub repository. You'll learn 
         }
     ```
 
-2. Click the **Response** tab.
+2. Select the **Response** tab.
 
     You'll see the response message generated by the Azure function. For this example, the body should contain the message. *Please pass a name on the query string or in the request body*.

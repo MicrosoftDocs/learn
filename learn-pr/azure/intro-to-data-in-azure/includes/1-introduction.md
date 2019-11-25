@@ -1,4 +1,4 @@
-Suppose you manage an online sales learning portal for your organization. The majority of your sales team are often in different geographical areas, so the online learning portal is an essential requirement. It's even more important as your organization continues to increase the skills and knowledge enhancement training for the sales staff.
+Suppose you manage an online sales learning portal for your organization. The majority of your sales team is often in different geographical areas, so the online learning portal is an essential requirement. It's even more important as your organization continues to increase the skills and knowledge enhancement training for the sales staff.
 
 ![An empty bag on a map of the world representing the need for a storage solution](../media/1-heading.png)
 

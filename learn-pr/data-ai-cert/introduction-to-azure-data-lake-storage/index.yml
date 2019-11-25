@@ -8,7 +8,6 @@ metadata:
   ms.author: chris.testaoneill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Introduction to Azure Data Lake storage
 summary: Learn how Azure Data Lake Storage provides a cloud storage service that is highly available, secure, durable, scalable, and redundant and brings new efficiencies to processing big data analytics workloads.
 abstract: | 
@@ -19,7 +18,6 @@ abstract: |
   - Explore the stages for processing big data by using Azure Data Lake Store
   - List the supported open-source platforms
 prerequisites: None
-ratingEnabled: true
 iconUrl: /learn/achievements/data-ai/introduction-to-azure-data-lake-storage-badge.svg
 levels:
 - beginner

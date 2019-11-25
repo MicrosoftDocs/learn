@@ -4,6 +4,7 @@ The company has asked you to amend your new workflow to incorporate an escalatio
 In this unit, you'll add a timer to control timeout during the execution of your workflow. You'll also learn how to use the timeout to control which execution path the workflow takes.
 
 ## Add moment npm package to your function app
+
 Before changing our workflow, we'll add the **moment** npm package to our function app through the Kudo console. 
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) , go to the function app that you created in the previous exercise.
@@ -30,7 +31,7 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 
 1. Name the function **Escalation**, and then select **Create**.
 
-1. In the **Index.js** JavaScript file, replace the code with the following snippet. This code returns a message indicating that the workflow has been escalated. In a production system, this function would contain the logic to remind the recipient, or reassign the task.
+1. Once the function is created, replace the code in **index.js** for this function with the following snippet. This code returns a message indicating that the workflow has been escalated. In a production system, this function would contain the logic to remind the recipient, or reassign the task.
 
     ``` javascript
     module.exports = async function (context) {
@@ -44,13 +45,13 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 
 1. In our function app, select the  orchestration function, which we earlier named **OrchFunction**.
 
-1. In the **undex.js** code file, add a reference to the **moment** library
+1. In the **index.js** code file, add a reference to the **moment** library
 
     ```javascript
     const moment = require("moment");
     ```
 
-1. Replace the b ody of the function with the following code. The logic tests whether the deadline for approval has passed. To keep things brief for the purposes of this exercise, if the **Approval** function doesn't respond within 20 seconds, the **Escalation** function is called. The code also changes the call to **Approval** to wait for an external input. This way we can control when the response comes back for testing purposes.
+1. Replace the body of the function with the following code. The logic tests whether the deadline for approval has passed. To keep things brief for the purposes of this exercise, if the **Approval** function doesn't respond within 20 seconds, the **Escalation** function is called. The code also changes the call to **Approval** to wait for an external input. This way we can control when the response comes back for testing purposes.
 
     ```javascript
     module.exports = df.orchestrator(function* (context) {
@@ -81,9 +82,10 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 
 ## Verify that the Durable Functions workflow starts
 
-1. Select the **HttpStart** function we created in the preceding exercise, the select **</> Get function URL, and copy the URL.
+1. Select the **HttpStart** function we created in the preceding exercise.
+1. Select **</> Get function URL**, and copy the URL.
 
-1. Open another browser window and move to the URL that you copied, replacing **{functionName}** with **OrchFunction**.
+1. Open another browser window and navigate to the URL that you copied, replacing **{functionName}** with **OrchFunction**.
 
 1. The response message contains a set of URI endpoints that you can use to monitor and manage the execution, which looks like the following example:
 

@@ -1,18 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.access-data-with-cosmos-db-and-sql-api.5-run-queries
 metadata:
-  title: Run queries in the Azure portal
+  title: Exercise - run queries using Data Explorer
   description: Learn how to run queries on the data in Azure Cosmos DB by using the Azure portal.
-  ms.date: 09/24/2018
-  author: mimig1
-  ms.author: mimig
+  ms.date: 05/15/2019
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-# TODO: Consider Azure Portal Interactivity
-# interactive: azure-portal
 azureSandbox: true
-title: Run queries in the Azure portal
-durationInMinutes: 5
+title: Exercise - run queries using Data Explorer
+durationInMinutes: 10
 content: |
   [!include[](includes/5-run-queries.md)]

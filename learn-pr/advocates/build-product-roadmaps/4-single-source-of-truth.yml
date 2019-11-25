@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.build-product-road-maps.4-single-source-of-truth
+title: Finding a tool to manage your road map
+metadata:
+  title: Finding a tool to manage your road map
+  description: This unit teaches you about finding a tool to help you manage your road map.
+  author: jamtur01
+  ms.date: 04/16/2019
+  ms.author: jaturnbu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-startups
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-single-source-of-truth.md)]
+quiz:
+   title: Check your knowledge
+   questions:
+   - content: "Why might you want to use a tool to manage your product road map?"
+     choices:
+     - content: So you know who to blame when things go wrong
+       isCorrect: false
+     - content: So you can keep track of what you're building
+       isCorrect: true
+       explanation: "A product road map management tool helps you maintain a central, single source of truth, for your road map. Making it easier to share the data to a variety of audiences."
+     - content: To make it easier to manage meetings
+       isCorrect: false
+       content: To keep track of the names of the features you want to build
+       isCorrect: false

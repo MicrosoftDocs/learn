@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 01/31/2019
-  author: bcafferky
-  ms.author: brcaffer
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -16,17 +16,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which step below is not part of using AutoML?"
+  - content: "Which step below isn't part of using AutoML?"
     choices: 
-    - content: "Define the machine learning objective and constraints."
+    - content: "Configure the compute target to run the experiment."
       isCorrect: false
-      explanation: "This is correct. Hyperparameters control how the model training executes and must be set before model training."
-    - content: "Launch the AutoML process."
+      explanation: "This is not correct. You must configure the compute target to use AutoML."
+    - content: "Select the experiment type."
       isCorrect: false
-      explanation: "That is not correct. Hyperparameters cannot be determined from the source data."
+      explanation: "That's not correct. You need to tell AutoML the experiment type."
     - content: "Deploy the model."
       isCorrect: true
-      explanation: "This is not correct.  A Hyperparameter is set before each model training execution."
+      explanation: "This is correct.  Deploying the model is separate from using AutoML."
   
   - content: "Which service below is not included as part of AutoML?"
     choices: 
@@ -35,7 +35,7 @@ quiz:
       explanation: "That is correct.  Data preparation should be done prior to using AutoML."
     - content: "Machine learning model recommendation"
       isCorrect: false
-      explanation: "That is not correct.  AutoML supports automation evaluation of models and recommendation of the best one to use."
+      explanation: "That's not correct.  AutoML supports automation evaluation of models and recommendation of the best one to use."
     - content: "Hyperparameter tuning"
       isCorrect: false
       explanation: "That is correct.  AutoML supports automatics hyperparameter tuning which is covered in detail in another module."
@@ -44,10 +44,10 @@ quiz:
     choices: 
     - content: "bayesian_correlation"
       isCorrect: true
-      explanation: "That is correct.  bayesian_correlation is not a valid value."
+      explanation: "That is correct.  bayesian_correlation isn't a valid value."
     - content: "normalized_root_mean_squared_error"
       isCorrect: false
-      explanation: "That is not correct.  normalized_root_mean_squared_error is a valid value."
+      explanation: "That's not correct.  normalized_root_mean_squared_error is a valid value."
     - content: "spearman_correlation"
       isCorrect: false 
-      explanation: "That is not correct.  spearman_correlation is a valid value."  
+      explanation: "That's not correct.  spearman_correlation is a valid value."  

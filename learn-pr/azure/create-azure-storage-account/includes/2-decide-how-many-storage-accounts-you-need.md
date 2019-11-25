@@ -22,7 +22,7 @@ A storage account is an Azure resource and is included in a resource group. The 
 
 ![Illustration of an Azure subscription containing multiple resource groups and storage accounts.](../media/2-resource-groups-and-storage-accounts.png)
 
-Other Azure data services like Azure SQL and Cosmos DB are managed as independent Azure resources and cannot be included in a storage account. The following illustration shows a typical arrangement: Blobs, Files, Queues, and Tables are inside storage accounts, while other services are not.
+Other Azure data services like Azure SQL and Azure Cosmos DB are managed as independent Azure resources and cannot be included in a storage account. The following illustration shows a typical arrangement: Blobs, Files, Queues, and Tables are inside storage accounts, while other services are not.
 
 ![Illustration of an Azure subscription showing some data services that cannot be placed in a storage account.](../media/2-typical-subscription-organization.png)
 

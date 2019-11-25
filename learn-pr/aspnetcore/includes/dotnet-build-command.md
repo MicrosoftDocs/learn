@@ -1,6 +1,6 @@
 Run the following command to build the app:
 
-```bash
+```dotnetcli
 dotnet build
 ```
 

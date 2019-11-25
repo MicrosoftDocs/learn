@@ -5,7 +5,7 @@ metadata:
   title: What is Azure?
   description: Learn what cloud computing means and how Azure is more than just a place to run your virtual machines.
   ms.date: 09/24/2018
-  author: markjulmar
+  author: cryophobia
   ms.author: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

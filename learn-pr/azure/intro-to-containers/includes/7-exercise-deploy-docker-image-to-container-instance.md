@@ -4,37 +4,37 @@ You previously packaged and tested your web app as a local Docker image. You now
 
 In this exercise, you'll rebuild the image for the web app and upload it to Azure Container Registry. You'll use the Azure Container Instance service to run the image.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 ## Create a container registry
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your MSLearn account.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with your Azure subscription.
 
-1. Choose **Create a resource**, select **Containers**, and then click **Container Registry**
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+1. Select **Containers**, and then click **Container Registry**.
 
-    ![Screenshot that shows the New blade in Azure portal showing the Container options available in Azure Marketplace](../media/7-search-container-registry.png)
+    ![Screenshot that shows the New pane in Azure portal showing the Container options available in Azure Marketplace](../media/7-search-container-registry.png)
 
-2. Specify the values in the following table for each of the properties, and then click **Create**. For the registry name, select a name of your choice. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters. For more information on naming, see [Naming conventions for Azure resources](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)
+1. Specify the values in the following table for each of the properties, and then click **Create**. For the registry name, select a name of your choice. The registry name must be unique within Azure, and contain 5-50 alphanumeric characters.
 
     | Property  | Value  |
     |---|---|
     | Name | Choose a unique name |
-    | Subscription | Concierge Subscription  |
-    | Resource Group | Use the existing resource group <rgn>[Sandbox resource group]</rgn> |
-    | Location | Use the default location |
-    | Admin user | Enable |
-    | SKU | Standard |
+    | Subscription | Select your default Azure subscription in which you are allowed to create and manage resources. |
+    | Resource Group | Create a new resource group with the name **learn-deploy-container-aci-rg** so that it will be easier to clean up these resources when you're finished with the module. If you choose a different resource group name, remember it for the rest of the exercises in this module. |
+    | Location | Select a location that is close to you. |
+    | Admin user | **Enable** |
+    | SKU | **Standard** |
 
     > [!NOTE]
     > This exercise enables the admin account, for uploading images and testing the registry. In a production environment, you should disable the admin account and switch to Azure Active Directory Identities once you are satisfied that the registry is operating as expected.
 
-3. Wait until the container registry has been deployed before continuing.
+1. Wait until the container registry has been deployed before continuing.
 
-4. Select **All resources**, select your registry, and then click **Access keys**.
+1. Select **All resources**, select your registry, and then click **Access keys**.
 
-5. Make a note of the **Registry name**, **Login server**, **Username**, and **password** for your registry.
+1. Make a note of the **Registry name**, **Login server**, **Username**, and **password** for your registry.
 
     ![Screenshot that shows the Access Key information for the registry](../media/7-access-keys.png)
 
@@ -89,46 +89,52 @@ For the rest of the exercise, you'll return to the Azure portal running in the s
 
 1. In the Azure portal, Choose **Create a resource**, select **Containers**, and then click **Container Instance**
 
-    ![Screenshot that shows the New blade in Azure portal showing the Container options available in Azure Marketplace](../media/7-search-container-instance.png)
+    ![Screenshot that shows the New pane in Azure portal showing the Container options available in Azure Marketplace](../media/7-search-container-instance.png)
 
-1. On the **Basics** page, specify the values in the following table for each of the properties, and then click **OK**.
+    There are several pieces of information that need configuration for our Container Instance. We'll start by setting the resource group information and container details. Then we'll configure the container's network options and restart policy.
+
+1. On the **Basics** page, specify the values in the following table for each of the properties, and then click **Next: Networking &gt;**.
 
     | Property  | Value  |
     |---|---|
-    | Name | hotelsysteminstance |
-    | Container image type | Private |
-    | Container image | \<*registry-name*\>.azurecr.io/reservationsystem:latest |
+    | Subscription | Select your default Azure subscription in which you are allowed to create and manage resources.  |
+    | Resource Group | Reuse the existing resource group **learn-deploy-container-aci-rg**. |
+    | Container Name | hotelsysteminstance |
+    | Region | Use the default location |
+    | Image type | Private |
+    | Image name | \<*registry-name*\>.azurecr.io/reservationsystem:latest |
     | Image registry login server | Enter the login server name for your registry |
     | Image registry username | Enter the username for your registry |
     | Image registry password | Enter the password for your registry |
-    | Subscription | Concierge Subscription  |
-    | Resource Group | Use the existing resource group <rgn>[Sandbox resource group]</rgn> |
-    | Location | Use the default location |
+    | OS Type | Linux |
+    | Size | Leave the default *Size* set a **1 vcpu, 1.5 Gib memory, 0 gpus** |
 
-1. On the **Configuration** page, specify the values in the following table for each of the properties, and then click **OK**.
+1. On the **Networking** page, specify the values in the following table for each of the properties, and then click **Next: Advanced &gt;**.
 
     | Property  | Value  |
     |---|---|
-    | OS Type | Linux |
-    | Number of cores | 1 |
-    | Memory (GB) | 1.5 |
-    | Public IP address | Yes  |
-    | DNS name label | Choose a unique name. This will be used as part of the container's URL. |
+    | Include public IP address | Yes  |
     | Port | 80 |
     | Open additional ports | No |
     | Port protocol | TCP |
+    | DNS name label | Choose a unique name. This will be used as part of the container's URL. |
+
+1. On the **Advanced** page, specify the values in the following table for each of the properties, and then click **Review + create**.
+
+    | Property  | Value  |
+    |---|---|
     | Restart policy | Always |
     | Environment variable | *leave blank* |
     | Add additional environment variables | No |
     | Command override | *leave blank *|
 
-1. On the **Summary** page, wait for validation to complete, and correct any errors if necessary. Click **OK**.
+1. On the **Summary** page, wait for validation to complete, and correct any errors if necessary. Click **Create**.
 
 1. When the container instance has been created, click **All resources**, and go to the page for the container instance.
 
 1. On the **Overview** page, find the fully qualified domain name of the container instance.
 
-    ![Screenshot that shows the New blade in Azure portal showing the Container properties with the FQDN highlighted](../media/7-container-fqdn.png)
+    ![Screenshot that shows the New pane in Azure portal showing the Container properties with the FQDN highlighted](../media/7-container-fqdn.png)
 
 1. Using a web browser, navigate to the URL http://\<*fqdn*\>/api/reservations/1, where *\<fqdn\>*  is the fully qualified domain name of the container instance. The web app should respond with a JSON document containing the details for reservation 1, as in the previous exercise.
 
