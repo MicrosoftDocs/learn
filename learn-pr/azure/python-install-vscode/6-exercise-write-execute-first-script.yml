@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.python-install-vscode.exercise-write-execute-first-script
+title: Install the Python Extension and execute your first Python script
+metadata:
+  title: Install the Python Extension and execute your first Python script
+  description: Follow the instructions to install the Python extension for Visual Studio Code.  Create a new Python script and execute it.
+  ms.date: 11/25/2019
+  author: bobtabor-msft
+  ms.author: rtabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: platform-cloud  
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-exercise-write-execute-first-script.md)]
