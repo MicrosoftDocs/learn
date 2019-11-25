@@ -1,85 +1,104 @@
-When considering the move to the cloud, it's important in your role as either an Azure Developer, Solution Architect, or Administrator to know the fundamentals of how your network works. The first step in understanding the composition of a network is how they communicate with each other. This knowledge applies whether it's your own organization's network or more extensive networks like the world wide web. All networks are built on the same principals.
+When considering the move to the cloud, it's essential to know the fundamentals of how your network works. The first step in understanding the composition of a network is understanding how network devices communicate with each other. This knowledge applies to your own organization's network as well as more extensive networks like the world wide web. The same principals apply to all networks.
 
-In this unit, you'll learn about network protocols that are essential for communication across your network. You'll also learn about network standards that form the ground rules for all networks, whether hardware or software. Finally, you'll touch on network security and management protocols.
+In this unit, we'll learn about network standards and network protocols that are essential for communication across our networks. We'll also see how this knowledge applies to the same concepts in Azure.
 
-## Network Protocols
-
-A network protocol is a set of conditions and rules that specify how communication between one device and another will be handled. It provides a common framework for establishing and maintaining a communications channel. The protocol also defines how to handle errors or faults should they occur. Network protocols allow seamless communication between different devices, for example, laptops, tablets, smartphones, routers, and servers.
-
-The network protocol is an essential building block in the design of your organization's network architecture.
-
-There are many network protocols available, covering different network usages, including:
-
-- Basic communication protocols like TCP/IP and HTTP
-- Security protocols like SSL and HTTPS
-- Management protocols that keep your network healthy, like Internet Control Message Protocol (ICMP), and Simple Network Management Protocol (SNMP).
-
-Each network protocol will have many properties that govern its use and implementation. Some of the more common features include:
-
-- Packet size
-- Address mapping
-- Routing, transmission speed
-- Handshaking techniques
-- Flow control
-- Error correction
-- Packet sequence
-- Address formatting
-
-## Network Standards
+## Network standards
 
 While network protocols provide a unified method for communication, network standards govern the hardware and software that uses them.
 
-Today, there are hundreds of thousands of hardware suppliers offering technology to solve everything. All of their technology, for the most part, seamlessly integrates with your computer or network with minimal effort. Network standards provide a framework that enables interoperability.
+Today, there are hundreds of thousands of hardware suppliers yet all of their technology, seamlessly integrates with your computer or network with minimal effort. Network standards provide the framework that enables this interoperability
 
-Network standards improve the interoperability of different hardware with different computers. It provides backward compatibility between product revisions, and between differing vendors. Without network standards, it would be impossible to build networks and network devices that would interact reliably and without significant configuration and maintenance effort.
+Network standards improve the interoperability of different network-enabled devices and provide backward compatibility between product revisions, and differing vendors. There are several official bodies that publish regulated standards, they're the International Telecommunication Union (ITU), the American National Standards Institute (ANSI), and the Institute of Electrical and Electronics Engineers (IEEE).
+
+It would be impossible to build networks and connect network-enabled devices reliably without network standards.
+
+## Network protocols
+
+A network protocol is a set of conditions and rules that specify how network devices communicate on a given network. It provides a common framework for establishing and maintaining a communications channel, and how to handle errors or faults should they occur. Network protocols allow communication between different network-enabled devices, for example, laptops, tablets, smartphones, desktops, servers, and other network enabled devices.
+
+![An image showing devices connected to a network](../media/2-network-devices.png)
+
+The network protocol is an essential building block in the design of our organization's network architecture. There are many network protocols available, and each network protocol has many properties that govern its use and implementation.
+
+Let's define a few terms before we look at some of the commonly used network protocols.
+
+### What is a network address?
+
+A network address is a unique identifier that identifies a network-enabled device. A network-enabled device may have more than one address type. Although there are more address types, for our discussion, we'll only focus on two of these address types.
+
+The first is a media access control (MAC) address that identifies the network interface on the hardware level. The second is an Internet Protocol (IP) address that identifies die network interface on a software level.
+
+We'll explore these two address types in more detail later.
+
+### What is a data packet?
+
+A data packet is a unit we use to describe the message two devices on a network send each other. A data packet consists of raw data, headers, and potentially also a trailer. The header contains several information items. For example, the sender and destination device addresses, size of the packet, the protocol used, and packet number. The trailer in a data packet deals with error checking.
+
+The concept is analogous to sending someone a letter in the post. The difference, though, is instead of sending several pages in one envelope, we send each page in a separate envelope. We'll make sure to add enough information to each envelope to allow the recipient to piece together the complete message once they have all the pages.
+
+### What is a datagram?
+
+A datagram is considered the same as a data packet. However, datagrams commonly refer to data packets of an unreliable service, where delivery can't be guaranteed.
+
+### What is routing?
+
+Routing, in the context of networks, refer to the mechanism used to make sure data packets follow the correct delivery path between the sending and receiving device on a network.
+
+For example, think about the pc we're currently using and the server that is serving the page we're reading. Multiple networks may connect our PC, and the server and various paths may be available between these two devices.
+
+## Protocol Categories
+
+We find several types of applications and hardware devices that depend on specific network protocols on a typical network. For example, browsing the internet using a web browser relies on a different protocol than sending or receiving an email. Converting the data that we see in the browser and send this information over the network will require another protocol.
+
+We categorize the protocols that we use into three categories.
+
+- Network communication protocols
+- Network Security protocols
+- Network management protocols
+
+Let's have a look at some of the protocols that we'll find in these categories.
 
 ## Network communication protocols
 
-Communication protocols focus on establishing and maintaining a connection between devices.
+Communication protocols focus on establishing and maintaining a connection between devices. As we work with different devices and network services, we'll make use of various network communication protocols.
 
-Here is a list of the most commonly used network communication protocols.
+First, we need to define three foundational protocols of all Internet-based networks. These two protocols are Transmission Control Protocol (TCP), Internet Protocol (IP) and User Datagram Protocol (UDP). These protocols concern themselves with the logical transmission of data over the network.
 
-- TCP (Transmission Control Protocol)  - TCP is a protocol that chunks up data into packets that can be sent securely and quickly while minimizing the chance of data loss.
-- IP (Internet Protocol) - IP is a protocol that holds the IP address of the sender and the receiver.
-- TCP/IP - TCP/IP is frequently used to represent the internet protocol suite. It's synonymous with network communications on the web and also within your organization's network. TCP/IP combines two protocols, the TCP and the IP. When more than one protocol is combined, it's called protocol stacking.
-- HTTP (Hypertext Transfer Protocol) - The HTTP protocol uses TCP/IP to deliver web page content from a server to your browser. The transmission protocol used is HTTP. HTTP also handles the downloading of files from remote servers.
-- HTTPS (Hypertext Transfer Protocol over Secure Socket Layer) - Provides a secure and encrypted method for transmission of data. The SSL allows secure data transfer for sensitive data, for example, credit card payments, or data captured from an online form.
-- FTP (File Transfer Protocol) - FTP is used to transfer files between different computers on a network. Typically FTP is used to upload files to a server from a remote location. While you can use it download files, this is typically handled through HTTP. There's a secure flavor of FTP called SFTP or Secure Shell (SSH).
-- POP3 (Post Office Protocol) - POP3 is one of three email protocols. It's most commonly used by your email client to allow you to receive emails. This protocol uses TCP for the management and delivery of an email.
-- SMTP (Simple Mail Transfer Protocol) - SMTP is one of three email protocols. It's most commonly used to send emails from your email client. This protocol uses the TCP for management and transmission of the email.
-- IMAP (Interactive Mail Access Protocol) - IMAP is the more powerful of the three email protocols, and is often used to manage a single mailbox in your organization.
-- Bluetooth - is a data exchange protocol is designed for lightweight communications and combines a number of the previously mentioned protocols.
+- **Transmission Control Protocol (TCP)** - is a protocol that chunks up data into data packets that can be sent securely and quickly while minimizing the chance of data loss. It provides a stable and reliable mechanism for the delivery of data packets across an IP-based network. However, even though TCP is an effective connection-orientated protocol, it has overhead.
 
-## Internet protocol suite
+- **Internet Protocol (IP)** - is responsible for the addressing of a data packet. IP encapsulates the data packet to be delivered, adding an address header. The header contains information on the sender and recipient IP addresses. This protocol isn't concerned about the order the packets are sent or received and doesn't guarantee a packet will be delivered, only the address.
 
-The Internet protocol suite (IPS) is a collection of communication protocols that define how data should be handled during transmission and receipt. It defines the type of packet to be used, how it will be routed, and the addressing method to use. It's sometimes called the TCP/IP protocol suite since both TCP and IP are primary protocols used in the suite. There's some similarity between the Internet protocol suite and the OSI model that came after it. Both of which describe different abstract layers needed to send and receive a packet of data,
+- **User Datagram Protocol (UDP)** - is a connectionless protocol that offers a low-latency and a loss-tolerant implementation. We use UDP with processes that don't need to verify that the recipient device received a datagram.
 
-The Internet protocol suite is functionally arranged into a layered protocol stack. Each layer of the stack is responsible for a specific function or behavior. Each layer knows how to communicate with the layer above and below it. The structure of the Internet protocol suite is:
+The rest of the protocols that we'll discuss here, are based on some kind of application. Here is a list of the most commonly used network communication protocols.
 
-![image shows the four layers of the internet protocol suite](../media/2-internet-protocol-suite-layers.png)
+- **Hypertext Transfer Protocol (HTTP)** - The HTTP protocol uses TCP/IP to deliver web page content from a server to our browser. The transmission protocol used is HTTP. HTTP can also handle the download and upload of files from remote servers.
 
-- **Application layer** - The top layer of this stack. The application layer is responsible for determining which communication protocols will be used based on where the message originated. If the message is an email, it will assign the correct email protocols, if it's based around a web page, it will use HTTP protocols. The protocols associated with this layer are DNS, FTP, HTTP, IMAP, LDAP, POP, SMTP, SNMP, SSH, Telnet, and TLS/SSL.
-- **Transport layer** - This layer receives information from the application layer about the type of application that is going to receive it, for example, email or a web browser. This layer is controlled by the TCP, which doesn't care where the data is going, that's the next layers job. All it wants to do is split the application data into manageable chunks and ensure they're sent using the right port, based on the protocol being used. When the transport layer receives data from the internet layer (below), it does the reverse. It will piece the data together and then send it to the target application. The protocols associated with this layer are TCP and UDP.
-- **Internet layer** - Also know as the network layer. It's responsible for packaging the data into datagrams. A datagram contains the data from the transport layer and adds in the origin and recipient IP addresses. This layer only wants to make sure the data packet gets to its destination. It isn't interested in how or even if the packets are received, or are in the right order. The protocols associated with this layer are IP, IPv4, IPv6, ICMP, and IPsec.
-- **Network access layer** - This is the bottom layer of the TCP/IP stack. It's responsible for defining how the data is sent across the network. This layer is responsible for getting the data packet delivered. The protocols associated with this layer are ARP, MAC, Ethernet, DSL, and ISDN.
+- **File Transfer Protocol (FTP)** - FTP is used to transfer files between different computers on a network. Typically FTP is used to upload files to a server from a remote location. While we can use FTP to download files, web-based downloads are typically handled through HTTP.
+
+- **Post Office Protocol (POP3)** - POP3 is one of three email protocols. It's most commonly used by our email client to allow us to receive emails. This protocol uses TCP for the management and delivery of an email.
+
+- **Simple Mail Transfer Protocol (SMTP)** - SMTP is one of three email protocols. It's most commonly used to send emails from our email client via an email server. This protocol uses the TCP for management and transmission of the email.
+
+- **Interactive Mail Access Protocol (IMAP)** - IMAP is the more powerful of the three email protocols. IMAP allows us, using en email client, to manage a single mailbox on an email server in our organization.
 
 ## Network Security protocols
 
-Network security protocols are designed to maintain the security and network of data across your network. They've been created to prevent unauthorized access by users, services, applications to your organization's resources and assets.
+Network security protocols are designed to maintain the security and network of data across your network. The intent of these protocols is to encrypt in-transmission messages between users, services, and applications.
 
-Network security protocols use encryption and cryptographic principals to secure the data. Some of the more popular security protocols include HTTPS, TLS, SSH, and SSL.
+Network security protocols use encryption and cryptographic principals to secure messages. Some of the more popular security protocols include SSL, TLS, HTTPS, POPS, IMAPS, and SSH.
 
 To implement a secure network, you must match the right security protocols for your needs. The following list explores the leading network security protocols:
 
-- **Hypertext Transfer Protocol Secure** (HTTPS) - HTTPS provides a more secure version of the standard HTTP protocol, by using the TSL or SSL encryption standard. This combination of protocols ensures that all data transmitted between the server and the web browser are encrypted and secure from eavesdropping or data packet sniffing.
-- **Secure Socket Layer** (SSL) - SSL was the standard encryption and security method used on the internet until it was replaced by Transport Layer Security (TSL). It provided a secure and encrypted connection between your computer and the target server or device when accessed over the internet. While TSL is now used, the replacement security protocol is often still called SSL. This level of security protocol, whether SSL or TSL, is what transforms a regular HTTP URL address into an HTTPS one.
-- **Transport Layer Security** (TSL) - is the successor to SSL and provides a stronger and more robust security encryption method. Based on the ITEF standard, it's designed to stop message forgery and tampering and eavesdropping. It's typically used to protect web browser communications, email, VOIP, and instant messaging.
+- **Secure Socket Layer** (SSL) - SSL is a standard encryption and security protocol. It provides a secure and encrypted connection between our computer and the target server or device that we accessed over the internet.
+- **Transport Layer Security** (TSL) - TSL is the successor to SSL and provides a stronger and is a more robust security encryption protocol. Based on the (Internet Engineering Task Force) ITEF standard, it's designed to stop message forgery and tampering and eavesdropping. It's typically used to protect web browser communications, email, VOIP, and instant messaging. While TSL is now used, the replacement security protocol is often still called SSL.
+- **Hypertext Transfer Protocol Secure** (HTTPS) - HTTPS provides a more secure version of the standard HTTP protocol, by using the TSL or SSL encryption standard. This combination of protocols ensures that all data transmitted between the server and the web browser are encrypted and secure from eavesdropping or data packet sniffing. The same principal is applied to POPS, SMTPS, and IMAPS to create secure versions of the POP, SMTP, and IMAP protocols we saw earlier.
 - **Secure Shell** (SSH) - SSH is a cryptographic network security protocol that provides a secure data connection across a network. Designed to support command-line execution of instructions, including remote sign-in to servers. The FTP protocol uses many of the SSH functions to provide a secure file transfer mechanism.
 - **Kerberos** - This validation protocol provides a robust authentication for client-server based applications through secret-key cryptography. Kerberos assumes that all the endpoints in the network are insecure, and enforces strong encryption for all communications and data at all times.
 
 ## Network management protocols
 
-In your network, it's perfectly acceptable to have multiple different protocols running concurrently. Previously, we've discussed communications and network protocols. It's equally important to the successful day-to-day running and operating of the network are the management protocols. The focus of this type of protocol is the sustainability of the network, looking at faults and performance.
+In our network, it's perfectly acceptable to have multiple different protocols running concurrently. Previously, we've discussed communications and network protocols. It's equally important to the successful day-to-day running and operating of the network are the management protocols. The focus of this type of protocol is the sustainability of the network, looking at faults and performance.
 
 Network administrators need to monitor their networks and any devices attached to them. Each device in your network will expose some indicators about the state and health of the device. These indicators are requested by the network administrator tool and can be used for monitoring and reporting.
 
@@ -89,9 +108,33 @@ There are two network management protocols available: SNMP and ICMP.
 
 - **Internet Control Message Protocol** (ICMP) - The ICMP is one of the protocols included within the Internet protocol suite. It allows network-connected devices to send warning and error messages, along with operation information about the success or failure of a connection request, or if a service is unavailable. Unlike other network transport protocols like UDP and TCP, ICMP isn't used to send or receive data from devices on the network.
 
-### Monitoring your network in Azure
+## The internet protocol suite (IPS)
 
-Azure has two network monitoring tools to assist in maintaining and managing the health of your network. The first is the Network Performance Monitor (NPM), and the other is the Performance Monitor.
+The Internet protocol suite (IPS) is a collection of communication protocols, also called a protocol stack. It's also sometimes referred to as the TCP/IP protocol suite since both TCP and IP are primary protocols used in the suite.
 
-- Network Performance Monitor (NPM) - NPM has been designed to monitor and report on the health of your network, provide insights into its performance, and report on connectivity between your applications. While NPM is cloud-based, it can provide a hybrid service to monitor both cloud and on-premises networks.
-- Performance Monitor - This is a capability within the NPM. Designed to monitor network connectivity across your entire estate, whether on-premises or cloud-based, it will report network issues as they occur. It can monitor all network routes, including redundant paths, and report any issues. It can identify particular network segments that are degrading network performance. Performance Monitor can report on the health of the network without needing to rely on SNMP.
+The IPS defines how network devices and software handle data during transmission and receipt. It describes the type of data packet to be used, how the packets route between the sender and receiver, and the addressing method to use.
+
+The IPS is an abstract, layered networking reference model that describes the different layered protocols used to send and receive data on the Internet and similar networks.
+
+The IPS model is one of several similar networking models that varies between three and seven layers. The best-known model is the Open Systems Interconnection (OSI) networking reference model. In contrast, the IPS model has four layers compared to the OSI model's seven layers. We're not going to cover the OSI model here. However, a documentation link is available in our learn more section at the end of this module.
+
+Each layer of the OSI model is responsible for a specific function or behavior and contains protocols the describe these functions. Each layer also knows how to communicate with the layer above and below it.
+
+Here is the structure of the Internet protocol suite.
+
+![image shows the four layers of the internet protocol suite](../media/2-internet-protocol-suite-layers.png)
+
+- **Application layer** - The top layer of this stack and is concerned with application or process communication. The application layer is responsible for determining which communication protocols will be used based on what type of message is transmitted. For example, the layer will assign the correct email protocols such as POP, SMTP or IMAP if the message is email content.
+- **Transport layer** - This layer is responsible for host-to-host communication on the network. The protocols associated with this layer are TCP and UDP. TCP is responsible for flow control and UDP for providing a datagram service.
+- **Internet layer** - This layer is responsible for exchanging datagrams. A datagram contains the data from the transport layer and adds in the origin and recipient IP addresses. The protocols associated with this layer are IP, ICMP, and IPsec.
+- **Network access layer** - The bottom layer of this stack and is responsible for defining how the data is sent across the network. The protocols associated with this layer are ARP, MAC, Ethernet, DSL, and ISDN.
+
+## Monitoring your network in Azure
+
+Maintaining and managing the health of your network is the same across all networks irrespective of the location of the network. For example, our local organization's network uses the same network standards and protocols as an Azure-based network.
+
+Azure provides us with three network monitoring tools to assist in maintaining and managing the health of your networks. We can also extend some of the monitoring features to our on-premises networks.
+
+- **Network Watcher** - Network Watcher allows us to capture packet data from the azure services we use. It also allows us to understand the flow of data in network traffic patterns and troubleshoot network-related problems on out network.
+- **Network Performance Monitor (NPM)** - NPM has been designed to monitor and report on the health of your network, provide insights into its performance, and report on connectivity between your applications. While NPM is cloud-based, it can provide a hybrid service to monitor both cloud and on-premises networks.
+- **Performance Monitor** - Performance Monitor is a capability within the NPM. Designed to monitor network connectivity across your entire estate, whether on-premises or cloud-based, it will report network issues as they occur. It can monitor all network routes, including redundant paths, and report any issues. It can identify particular network segments that are degrading network performance. Performance Monitor can report on the health of the network without needing to rely on SNMP.
