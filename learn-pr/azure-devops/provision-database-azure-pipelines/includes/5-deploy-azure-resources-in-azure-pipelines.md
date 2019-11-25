@@ -272,67 +272,67 @@ Here, you add a variable group and variables to the pipeline.
 
     Remember that you can create a template from scratch, download a starter template, or generate one from resources you already have. The [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines/?azure-portal=true) module had you create the necessary infrastructure manually in the Azure portal. This template file is the result of exporting the resource group that was created in that module. It has been modified to add the parts that the team discussed for pipeline deployment, and to remove the _Test_ and _Staging_ App Service deployments. For learning purposes, the default policies have also been removed.
 
-Notice the creation of the database. Just as you did in the [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines/?azure-portal=true) module, the database is created and the data is inserted by using a *.bacpac* file and an import extension in the resources section in a resource called *Import*.
+    Notice the creation of the database. Just as you did in the [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines/?azure-portal=true) module, the database is created and the data is inserted by using a *.bacpac* file and an import extension in the resources section in a resource called *Import*.
 
-```json
-{
-    "type": "Microsoft.Sql/servers/databases",
-    "apiVersion": "2017-03-01-preview",
-    "name": "[concat(concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName')), '/tailspindatabase')]",
-    "location": "[parameters('location')]",
-    "dependsOn": [
-        "[resourceId('Microsoft.Sql/servers', concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName')))]"
-    ],
-    "sku": {
-        "name": "S1",
-        "tier": "Standard"
+    ```json
+    {
+        "type": "Microsoft.Sql/servers/databases",
+        "apiVersion": "2017-03-01-preview",
+        "name": "[concat(concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName')), '/tailspindatabase')]",
+        "location": "[parameters('location')]",
+        "dependsOn": [
+            "[resourceId('Microsoft.Sql/servers', concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName')))]"
+        ],
+        "sku": {
+            "name": "S1",
+            "tier": "Standard"
+        },
+        "kind": "v12.0,user,vcore",
+        "properties": {
+            "collation": "SQL_Latin1_General_CP1_CI_AS",
+            "catalogCollation": "SQL_Latin1_General_CP1_CI_AS",
+            "zoneRedundant": false
+        },
+        "resources": [{
+            "name": "Import",
+            "type": "extensions",
+            "apiVersion": "2014-04-01",
+            "condition": "[empty(resourceId('Microsoft.Sql/servers/databases', concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName')), 'tailspindatabase'))]",
+            "dependsOn": [
+                "[resourceId('Microsoft.Sql/servers/databases', concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName')), 'tailspindatabase')]"
+            ],
+            "properties": {
+                "storageKeyType": "SharedAccessKey",
+                "storageKey": "?",
+                "storageUri": "https://sqldbtutorial.blob.core.windows.net/bacpacs/tailspindatabase.bacpac",
+                "administratorLogin": "azuresql",
+                "administratorLoginPassword": "[parameters('adminPassword')]",
+                "operationMode": "Import"
+            }
+        }]
     },
-    "kind": "v12.0,user,vcore",
-    "properties": {
-        "collation": "SQL_Latin1_General_CP1_CI_AS",
-        "catalogCollation": "SQL_Latin1_General_CP1_CI_AS",
-        "zoneRedundant": false
-    },
-    "resources": [{
-        "name": "Import",
-        "type": "extensions",
-        "apiVersion": "2014-04-01",
-        "condition": "[empty(resourceId('Microsoft.Sql/servers/databases', concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName')), 'tailspindatabase'))]",
+    ```
+
+    The `condition` part is important here. Recall that Azure Resource Manager templates are idempotent. This means that Resource Manager applies infrastructure changes only when the configuration defined in your template differs from the running environment. However, you can import a *.bacpac* file only when the database is empty. If you attempt to import a *.bacpac* file a second time, the operation fails.
+
+    To make the *Import* resource idempotent, here we use a condition. Resource Manager applies a resource only when its condition is true. The condition shown here returns true when the SQL Database has an empty unique identifier. This situation happens only when the database hasn't yet been created. If the SQL Database is present, the condition returns false and Resource Manager moves to the next resource.
+
+    The next part is the creation of Key Vault secrets. Here, you add the database connection string to the Key Vault. You will use this secret to add the connection string to the App Service configuration in the pipeline after the web app is deployed. This is the reason you need the `keyVaultName` parameter.
+
+    ```json
+    {
+        "type": "Microsoft.KeyVault/vaults/secrets",
+        "name": "[concat(parameters('keyVaultName'),'/connectionString')]",
+        "apiVersion": "2015-06-01",
+        "properties": {
+            "contentType": "text/plain",
+            "value": "[concat('Server=tcp:',reference(concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName'))).fullyQualifiedDomainName,',1433;Initial Catalog=tailspindatabase;Persist Security Info=False;User ID=',reference(concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName'))).administratorLogin,';Password=',parameters('adminPassword'),';MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;')]"
+        },
         "dependsOn": [
             "[resourceId('Microsoft.Sql/servers/databases', concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName')), 'tailspindatabase')]"
-        ],
-        "properties": {
-            "storageKeyType": "SharedAccessKey",
-            "storageKey": "?",
-            "storageUri": "https://sqldbtutorial.blob.core.windows.net/bacpacs/tailspindatabase.bacpac",
-            "administratorLogin": "azuresql",
-            "administratorLoginPassword": "[parameters('adminPassword')]",
-            "operationMode": "Import"
-        }
-    }]
-},
-```
-
-The `condition` part is important here. Recall that Azure Resource Manager templates are idempotent. This means that Resource Manager applies infrastructure changes only when the configuration defined in your template differs from the running environment. However, you can import a *.bacpac* file only when the database is empty. If you attempt to import a *.bacpac* file a second time, the operation fails.
-
-To make the *Import* resource idempotent, here we use a condition. Resource Manager applies a resource only when its condition is true. The condition shown here returns true when the SQL Database has an empty unique identifier. This situation happens only when the database hasn't yet been created. If the SQL Database is present, the condition returns false and Resource Manager moves to the next resource.
-
-The next part is the creation of Key Vault secrets. Here, you add the database connection string to the Key Vault. You will use this secret to add the connection string to the App Service configuration in the pipeline after the web app is deployed. This is the reason you need the `keyVaultName` parameter.
-
-```json
-{
-    "type": "Microsoft.KeyVault/vaults/secrets",
-    "name": "[concat(parameters('keyVaultName'),'/connectionString')]",
-    "apiVersion": "2015-06-01",
-    "properties": {
-        "contentType": "text/plain",
-        "value": "[concat('Server=tcp:',reference(concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName'))).fullyQualifiedDomainName,',1433;Initial Catalog=tailspindatabase;Persist Security Info=False;User ID=',reference(concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName'))).administratorLogin,';Password=',parameters('adminPassword'),';MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;')]"
+        ]
     },
-    "dependsOn": [
-        "[resourceId('Microsoft.Sql/servers/databases', concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName')), 'tailspindatabase')]"
-    ]
-},
-```
+    ```
 
 1. Save *template.json* and commit it, along with *deploymentParameters.json*. But do not push your branch to GitHub yet.
 
