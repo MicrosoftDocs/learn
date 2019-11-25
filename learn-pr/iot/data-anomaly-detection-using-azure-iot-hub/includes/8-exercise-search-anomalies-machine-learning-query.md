@@ -1,4 +1,3 @@
-
 In this exercise, we're going to add a query to the Stream Analytics job, and then use Microsoft Power BI to visualize the output from the query. The query searches for spikes and dips in the vibration data, reporting anomalies. We must create the second route, after creating an instance of Event Hubs.
 
 ## Create an Event Hubs namespace
@@ -21,7 +20,7 @@ In this exercise, we're going to add a query to the Stream Analytics job, and th
 
     ![Screenshot showing the button to create Event Hubs](../media/vibration-add-event-hub.png)
 
-1. In the **Create Event Hub** page, enter "vibrationeventhubinstance" for the **Name**. Leave the other fields at their defaults, and click **Create**. 
+1. In the **Create Event Hub** page, enter "vibrationeventhubinstance" for the **Name**. Leave the other fields at their defaults, and click **Create**.
 
     ![Screenshot showing the fields required to create an Event Hub instance](../media/vibration-create-event-hub-instance.png)
 
@@ -57,19 +56,19 @@ In this exercise, we're going to add a query to the Stream Analytics job, and th
 
 With this new route in place, now we need to update our Stream Analytics job.
 
-## Add a new input and output to the Azure Stream Analytics job
+## Add a new input to the Azure Stream Analytics job
 
 1. In your Azure portal, select **vibrationJob** from your list of resources.
 
-1. In the **Inputs** section, add another input.
+1. Select the **Inputs** section, and click **+ Add stream input**, selecting **Event Hub**.
 
-1. Click **+ Add stream input**. In the **Input details** box, 
+1. In the **Input details** box, enter "vibrationEventInput" as the **Input alias**. Ensure **Select Event Hub from your subscriptions** is selected, as is your working subscription.
 
-1. Enter "vibrationEventInput" as the **Input alias**. Ensure **Select Event Hub from your subscriptions** is selected, as is your working subscription.
-
-1. In **Event Hub namespace**, select the namespace you chose in the previous section on adding a second route. You can leave the other fields at their default values.
+1. In **Event Hub namespace**, select the namespace you entered in the previous section. And select the instance you created for **Event Hub name**. You can leave the other fields at their default values.
 
 1. Click **Save**.
+
+## Add a new output to the Azure Stream Analytics job
 
 1. In the breadcrumbs, go back to your job. You should now see two inputs. Select the icon to add an output.
 
@@ -81,7 +80,9 @@ With this new route in place, now we need to update our Stream Analytics job.
 
 1. Complete the **Power BI** entry. For **Output alias** enter "vibrationBI". For **Group workspace**, search for **My workspace**.
 
-1. For **Dataset name** enter "vibrationDataset". For **Table name**, enter "vibrationTable". For **Authentication mode**, ensure **User token** is selected.
+1. For **Dataset name** enter "vibrationDataset". For **Table name**, enter "vibrationTable". 
+
+1. For **Authentication mode**, ensure **User token** is selected.
 
     ![Screenshot showing the completed fields of a Power BI output](../media/vibration-hub-new-bi.png)
 
