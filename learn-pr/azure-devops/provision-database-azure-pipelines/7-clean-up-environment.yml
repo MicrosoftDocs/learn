@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.provision-databases-azure-pipelines.8-clean-up-environment
+uid: learn.azdo.provision-databases-azure-pipelines.7-clean-up-environment
 title: Exercise - Clean up your environment
 metadata:
   title: Exercise - Clean up your environment
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |
-  [!include[](includes/8-clean-up-environment.md)]
+  [!include[](includes/7-clean-up-environment.md)]
