@@ -3,7 +3,7 @@ uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics
 hidden: true
 metadata:
   title: Analyze images in real time with machine learning, Azure IoT Hub, and Azure Stream Analytics
-  description: Analyze streaming data with a machine learning model and visualize the output. 
+  description: Find out how to use Azure Storage, Azure IoT Hub, and Azure Stream Analytics to analyze streaming data with a machine learning model and visualize the output. 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.date: 5/1/2019
