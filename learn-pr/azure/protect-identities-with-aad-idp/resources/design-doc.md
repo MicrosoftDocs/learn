@@ -129,7 +129,7 @@ Identify the subtasks of *Protect your identities with Azure AD Identity Protect
             - Confirm sign-in compromised, dismiss user risk, confirm user compromised
     - Password reset is not an option for you, because the user has been deleted. What action can you take?
             - Confirm user compromised
-            - Select dismiss user risk
+            - Dismiss user risk
             - Confirm sign-in compromised
 
 1. **Summary**
