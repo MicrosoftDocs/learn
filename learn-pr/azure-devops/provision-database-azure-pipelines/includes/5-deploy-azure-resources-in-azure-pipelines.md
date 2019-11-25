@@ -161,7 +161,7 @@ Here, you create a service connection that enables Azure Pipelines to access you
     |---------------------|----------------------------------------------|
     | Scope level     | **Subscription**                             |
     | Subscription    | Your Azure subscription.                     |
-    | Resource Group*  | Leave this blank to include all resource groups. |
+    | Resource Group  | Leave this blank to include all resource groups. |
     | Service connection name | *Resource Manager - Tailspin - Space Game* |
 
     During the process, you might be prompted to sign in to your Microsoft account.
