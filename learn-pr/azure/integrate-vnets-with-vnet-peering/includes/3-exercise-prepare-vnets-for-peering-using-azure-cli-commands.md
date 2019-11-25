@@ -14,58 +14,59 @@ You'll create the following resources:
 | MarketingVNet | North Europe | 10.2.0.0/16 | Apps | 10.2.1.0/24 |
 | ResearchVNet | West Europe | 10.3.0.0/16 | Data | 10.3.1.0/24 |
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create the virtual networks
 
 1. In Cloud Shell, run the following command to create the virtual network and subnet for the **Sales** systems.
 
-   ```azurecli
-   az network vnet create --resource-group <rgn>[sandbox resource group name]</rgn> \
-       --name SalesVNet \
-       --address-prefix 10.1.0.0/16 \
-       --subnet-name Apps \
-       --subnet-prefix 10.1.1.0/24 \
-       --location northeurope
-   ```
+    ```azurecli
+    az network vnet create \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --name SalesVNet \
+        --address-prefix 10.1.0.0/16 \
+        --subnet-name Apps \
+        --subnet-prefix 10.1.1.0/24 \
+        --location northeurope
+    ```
 
 1. Run the following command to create the virtual network and subnet for the **Marketing** systems.
 
-   ```azurecli
-   az network vnet create --resource-group <rgn>[sandbox resource group name]</rgn> \
-       --name MarketingVNet \
-       --address-prefix 10.2.0.0/16 \
-       --subnet-name Apps \
-       --subnet-prefix 10.2.1.0/24 \
-       --location northeurope
-   ```
+    ```azurecli
+    az network vnet create \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --name MarketingVNet \
+        --address-prefix 10.2.0.0/16 \
+        --subnet-name Apps \
+        --subnet-prefix 10.2.1.0/24 \
+        --location northeurope
+    ```
 
 1. Run the following command to create the virtual network and subnet for the **Research** systems.
 
-   ```azurecli
-   az network vnet create --resource-group <rgn>[sandbox resource group name]</rgn> \
-       --name ResearchVNet \
-       --address-prefix 10.3.0.0/16 \
-       --subnet-name Data \
-       --subnet-prefix 10.3.1.0/24 \
-       --location westeurope
-   ```
-
+    ```azurecli
+    az network vnet create \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --name ResearchVNet \
+        --address-prefix 10.3.0.0/16 \
+        --subnet-name Data \
+        --subnet-prefix 10.3.1.0/24 \
+        --location westeurope
+    ```
+    
 ## Confirm the virtual network configuration
 
 Let's take a quick look at what you created.
 
 1. In Cloud Shell, run the following command to view the virtual networks.
 
-   ```azurecli
-   az network vnet list --output table
-   ```
+    ```azurecli
+    az network vnet list --output table
+    ```
 
 1. You should see an output like this:
 
     ```output
-    Name           ResourceGroup                        Location    NumSubnets   Prefixes    DnsServers   DDOSProtection   VMProtection
-    -------------- ------------------------------------ ----------- ------------ ----------- ------------ ---------------- --------------
+    Name           ResourceGroup                              Location    NumSubnets   Prefixes    DnsServers   DDOSProtection   VMProtection
+    -------------- ------------------------------------------ ----------- ------------ ----------- ------------ ---------------- --------------
     MarketingVNet <rgn>[sandbox resource group name]</rgn> northeurope 1            10.2.0.0/16              False            False
     SalesVNet     <rgn>[sandbox resource group name]</rgn> northeurope 1            10.1.0.0/16              False            False
     ResearchVNet  <rgn>[sandbox resource group name]</rgn> westeurope  1            10.3.0.0/16              False            False
@@ -78,7 +79,8 @@ Now you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual netw
 1. In Cloud Shell, run the following command to create an Ubuntu VM in the **Apps** subnet of **SalesVNet**. In the command, replace `<password>` with a password that meets the [requirements for Linux VMs](https://docs.microsoft.com/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm). Note this password for later use.
 
     ```azurecli
-    az vm create --resource-group <rgn>[sandbox resource group name]</rgn> \
+    az vm create \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
         --no-wait \
         --name SalesVM \
         --location northeurope \
@@ -95,7 +97,8 @@ Now you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual netw
 1. Run the following command to create another Ubuntu VM in the **Apps** subnet of **MarketingVNet**. Replace `<password>` with a password that meets the [requirements for Linux VMs](https://docs.microsoft.com/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm). Note this password for later use.
 
     ```azurecli
-    az vm create --resource-group <rgn>[sandbox resource group name]</rgn> \
+    az vm create \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
         --no-wait \
         --name MarketingVM \
         --location northeurope \
@@ -109,7 +112,8 @@ Now you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual netw
 1. Run the following command to create an Ubuntu VM in the **Data** subnet of **ResearchVNet**. Replace `<password>` with a password that meets the [requirements for Linux VMs](https://docs.microsoft.com/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm). Note this password for later use.
 
     ```azurecli
-    az vm create --resource-group <rgn>[sandbox resource group name]</rgn> \
+    az vm create \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
         --no-wait \
         --name ResearchVM \
         --location westeurope \
@@ -122,12 +126,14 @@ Now you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual netw
 
     The VMs might take several minutes to reach a running state.
 
-1. To confirm that the VMs are running, in the following command, replace `<vm-name>` with the name of the VM you want to check. Then run the command.
+1. To confirm that the VMs are running, run the following command. This uses the Linux `watch` command which will refresh every five seconds.
 
-    ```azurecli
-    az vm get-instance-view --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --output table \
-        --name <vm-name>
+    ```bash
+    watch -d -n 5 "az vm list \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --show-details \
+        --query '[*].{Name:name, ProvisioningState:provisioningState, PowerState:powerState}' \
+        --output table"
     ```
 
-    A **ProvisioningState** of **Succeeded** and a **PowerState** of **VM running** indicates a successful deployment. When your VMs are running, you're ready to move on.
+    A **ProvisioningState** of **Succeeded** and a **PowerState** of **VM running** indicates a successful deployment. When your VMs are running, you're ready to move on. Press `Ctrl-c` to stop the command and continue on with the exercise.

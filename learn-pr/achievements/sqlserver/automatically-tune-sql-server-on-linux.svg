@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>SQL Server 2017 on Linux/automatically-tune-sql-server-on-linux</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-19.0%" y="-6.2%" width="138.1%" height="112.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.101732337 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SQL-Server-2017-on-Linux" transform="translate(-50.000000, -660.000000)">
+            <g id="SQL-Server-2017-on-Linux/automatically-tune-sql-server-on-linux" transform="translate(50.000000, 660.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#C0DDF4" xlink:href="#path-1"></use>
+                    <path d="M39.4679221,67.1958327 L30.5641559,67.1958327 C27.5638686,67.1958327 25.1229654,64.7549295 25.1229654,61.7546422 C25.1229654,58.754355 27.5638686,56.3134518 30.5641559,56.3134518 C30.8394999,56.3134518 31.1162932,56.3383279 31.4133773,56.3907414 C32.4654809,52.8264797 35.7111609,50.3776076 39.4679221,50.3776076 C44.1048155,50.3776076 47.8770346,54.1498267 47.8770346,58.7867202 C47.8770346,63.4236136 44.1048155,67.1958327 39.4679221,67.1958327 Z" id="Cloud" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                    <g id="Group-10" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(37.500000, 16.000000)">
+                            <path d="M16.001,0 C14.896,0 14.001,0.896 14.001,2 L14.001,24 C14.001,26.206 12.206,28 10.001,28 C7.796,28 6.001,26.206 6.001,24 L6.001,2 C6.001,0.896 5.105,0 4.001,0 C2.896,0 2.001,0.896 2.001,2 L2.001,24 C2.001,27.72 4.556,30.845 8.001,31.736 L8.001,54 C8.001,55.104 8.896,56 10.001,56 C11.105,56 12.001,55.104 12.001,54 L12.001,31.736 C15.446,30.845 18.001,27.72 18.001,24 L18.001,2 C18.001,0.896 17.105,0 16.001,0" id="Fill-179" fill="#EFB252"></path>
+                            <path d="M8.001,31.737 L8.001,32.77 C8.646,32.916 9.313,33 10.001,33 C10.689,33 11.356,32.916 12.001,32.77 L12.001,31.737 C11.36,31.903 10.692,32 10.001,32 C9.31,32 8.642,31.903 8.001,31.737" id="Fill-180" fill="#CC9547"></path>
+                            <path d="M16.001,58 L4.001,58 C1.382,58 -0.04,59.6 0.002,62 L0.001,62 L0.001,63 C0.001,63.55 0.451,64 1.001,64 L19.001,64 C19.551,64 20.001,63.55 20.001,63 L20.001,62 C20.001,59.6 18.62,58 16.001,58" id="Fill-181" fill="#30404D"></path>
+                            <path d="M15.001,58 L14.101,50.995 C14.046,50.447 13.551,50 13.001,50 L7.001,50 C6.451,50 5.956,50.447 5.901,50.995 L5.001,58 L15.001,58" id="Fill-182" fill="#546670"></path>
+                        </g>
+                    </g>
+                    <path d="M72.3261062,44.1132321 L55.4306745,44.1132321 C52.4363212,44.1132321 50,41.6769108 50,38.6825576 C50,36.3525991 51.4896642,34.3051987 53.6734832,33.5600679 C54.1292797,28.6164223 58.2665184,24.8041673 63.274982,24.8041673 C68.1561688,24.8041673 72.2598157,28.4835458 72.8470164,33.2766349 C75.598003,33.5397391 77.7567806,35.8638022 77.7567806,38.6825576 C77.7567806,41.6769108 75.3204594,44.1132321 72.3261062,44.1132321 Z" id="Cloud" fill="#FFFFFF" fill-rule="nonzero" opacity="0.900000036" mask="url(#mask-2)"></path>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

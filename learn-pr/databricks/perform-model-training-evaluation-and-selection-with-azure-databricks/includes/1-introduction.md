@@ -8,6 +8,8 @@ You can train and evaluate your data model by using the machine-learning capabil
 
 In this module, we'll look at various techniques for training and evaluating your data model.
 
+[!INCLUDE [azure-databricks-free-trial-note](../../../includes/azure-databricks-free-trial-note.md)]
+
 ## Learning objectives
 
 In this module, you'll:

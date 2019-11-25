@@ -4,11 +4,10 @@ metadata:
   title: Train, evaluate, and select machine-learning models with Azure Databricks
   description: Learn the fundamentals of using Azure Databricks notebooks for machine-learning model training, evaluation, and selection.
   ms.date: 11/05/2018
-  author: barlan
-  ms.author: barlan
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: barlan
 title: Train, evaluate, and select machine-learning models with Azure Databricks
 summary: Training a machine-learning model to have high predictive accuracy is crucial if you're a data scientist. This module focuses on basic and advanced techniques for training a machine-learning model and how these techniques are supported by Azure Databricks.
 cardDescription: Learn the fundamentals of using Azure Databricks notebooks for machine-learning model training, evaluation, and selection.
@@ -18,14 +17,13 @@ abstract: |
   - Train and evaluate the performance of classification models.
   - Use feature engineering to create new features that are used when you're training models.
 prerequisites:  | 
-  [!include[](../../includes/azure-subscription-prerequisite.md)]
+  [!include[](../../includes/azure-databricks-subscription-prerequisite.md)]
 iconUrl: /learn/achievements/performing-model-training-evaluation-and-selection-with-azure-databricks.svg
 levels:
 - intermediate
 roles:
 - developer
-- solution-architect
-- business-analyst
+- data-scientist
 products:
 - azure
 - azure-databricks

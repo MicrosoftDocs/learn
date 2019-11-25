@@ -1,10 +1,11 @@
 PowerShell lets you write commands and execute them immediately. This is known as **interactive mode**.
 
-Recall that the overall goal in the Customer Relationship Management (CRM) example is to create three test environments containing VMs. You will use resource groups to ensure the VMs are organized into separate environments: one for unit testing, one for integration testing, and one for acceptance testing. You only need to create the resource groups once, which means using the interactive mode of PowerShell is a good choice.
+Recall that the overall goal in the Customer Relationship Management (CRM) example is to create three test environments containing Virtual Machines. You will use resource groups to ensure the VMs are organized into separate environments: one for unit testing, one for integration testing, and one for acceptance testing. You only need to create the resource groups once, which means using the interactive mode of PowerShell is a good choice.
 
 When you type a command into PowerShell, it matches it to a _cmdlet_ which then performs the requested action. We're going to look at some of the common commands you can use, and then look at installing the Azure support for PowerShell.
 
 ## What are PowerShell cmdlets?
+
 A PowerShell command is called a **cmdlet** (pronounced "command-let"). A cmdlet is a command that manipulates a single feature. The term **cmdlet** is intended to imply "small command". By convention, cmdlet authors are encouraged to keep cmdlets simple and single-purpose.
 
 The base PowerShell product ships with cmdlets that work with features such as sessions and background jobs. You add modules to your PowerShell installation to get cmdlets that manipulate other features. For example, there are third-party modules to work with ftp, administer your operating system, access the file system, and so on.
@@ -19,7 +20,7 @@ Get-Help Get-ChildItem -detailed
 
 ## What is a PowerShell module?
 
-Cmdlets are shipped in _modules_. A PowerShell Module is a DLL that includes the code to proces each available cmdlet. You load cmdlets into PowerShell by loading the module they are contained in. You can get a list of loaded modules using the `Get-Module` command:
+Cmdlets are shipped in _modules_. A PowerShell Module is a DLL that includes the code to process each available cmdlet. You load cmdlets into PowerShell by loading the module they are contained in. You can get a list of loaded modules using the `Get-Module` command:
 
 ```powershell
 Get-Module
@@ -38,6 +39,7 @@ Script     2.0.0      PSReadline                          {Get-PSReadLineKeyHand
 ```
 
 ## What is the Az module?
+
 **Az** is the formal name for the Azure PowerShell module containing cmdlets to work with Azure features. It contains hundreds of cmdlets that let you control nearly every aspect of every Azure resource. You can work with resource groups, storage, virtual machines, Azure Active Directory, containers, machine learning, and so on. This module is an open source component [available on GitHub](https://github.com/Azure/azure-powershell).
 
 > [!NOTE]
@@ -85,6 +87,7 @@ InstallationPolicy value by running the Set-PSRepository cmdlet. Are you sure yo
 ```
 
 #### Script execution failed
+
 Depending on your security configuration, `Import-Module` might fail with something like the following.
 
 ```output
@@ -151,6 +154,7 @@ Update-Module -Name Az
 As with the `Install-Module` command, answer **Yes** or **Yes to All** when prompted to trust the module. You can also use the `Update-Module` command to re-install a module if you are having trouble with it.
 
 ## Example: How to create a resource group with Azure PowerShell
+
 Once you have the Azure module loaded, you can begin working with Azure. Let's do a common task - create a Resource Group. As you know, we use resource groups to administer related resources together. Creating a new resource group is one of the first tasks you'll do when starting a new Azure solution.
 
 There are four steps we need to perform:
@@ -170,6 +174,7 @@ The following illustration shows an overview of these steps.
 Each step corresponds to a different cmdlet.
 
 ### Import the Azure cmdlets
+
 At startup, PowerShell loads only the core cmdlets by default. This means the cmdlets you need to work with Azure won't be loaded. The most reliable way to load the cmdlets you need is to import them manually at the start of your PowerShell session.
 
 You use the **Import-Module** cmdlet to load modules. This cmdlet has many parameters to handle a variety of situations. For example, it can load multiple modules, a specific module version, part of a module, and so on.
@@ -184,6 +189,7 @@ Import-Module Az
 > If you find that you work with Azure PowerShell frequently, there are two ways you can automate the module-loading process. You can add an entry to your PowerShell profile to import the Azure module at startup or use the latest versions of PowerShell, which loads the containing module automatically when you use a cmdlet.
 
 ### Connect
+
 When you are working with a local install of Azure PowerShell, you will need to authenticate before you can execute Azure commands. The **Connect-AzAccount** cmdlet prompts for your Azure credentials and then connects to your Azure subscription. It has many optional parameters, but if all you need is an interactive prompt, no parameters are needed:
 
 ```powershell
@@ -192,8 +198,8 @@ Connect-AzAccount
 
 You'll need to repeat these steps for every new PowerShell session you start since this module is not part of the core set.
 
-
 ### Working with subscriptions
+
 If you are new to Azure, you probably only have a single subscription. But if you have been using Azure for a while, you may have created multiple Azure subscriptions. You can configure Azure PowerShell to execute commands against a particular subscription.
 
 You can only be in one subscription at a time. Use the `Get-AzContext` cmdlet to determine which subscription is active. If it's not the correct one, you can change it.
@@ -243,6 +249,7 @@ New-AzResourceGroup -Name <name> -Location <location>
 > Remember, we will be working in the Azure sandbox which creates the Resource Group for you. The above command would be used if you work in your own subscription.
 
 ### Verify the resources
+
 The `Get-AzResource` lists your Azure resources. This is useful here to verify whether creation of the resource group was successful.
 
 ```powershell
@@ -258,7 +265,7 @@ Get-AzResource | ft
 You can also filter it to specific resource groups to only list resources associated with that group:
 
 ```powershell
-Get-AzResource -ResourceGroup ExerciseResources
+Get-AzResource -ResourceGroupName ExerciseResources
 ```
 
 ### Creating an Azure Virtual Machine

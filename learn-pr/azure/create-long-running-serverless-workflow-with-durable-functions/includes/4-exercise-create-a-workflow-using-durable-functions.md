@@ -2,8 +2,6 @@ In this unit, using the example from the previous unit, you'll learn how to crea
 
 ## Create a Function App
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account with which you activated the sandbox.
 
 1. Select the **Create a resource** button found on the upper left-hand corner of the Azure portal.
@@ -17,17 +15,19 @@ In this unit, using the example from the previous unit, you'll learn how to crea
     |--------------|------------------|--------------|
     | **App name** | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`.  |
     | **Subscription** | Concierge subscription| The subscription under which this new function app is created. |
-    | **Resource Group**|  Select **Use existing** and choose _<rgn>[sandbox resource group name]</rgn>_ | Name of the resource group in which to create your function app. |
+    | **Resource Group**|  Select **Use existing** and choose _<rgn>[sandbox resource group name]</rgn>_ | Name of the resource group in which to create your function app. We'll create the function app in the sandbox resource group that was assigned when we activated the sandbox, namely, _<rgn>[sandbox resource group name]</rgn>_.|
     | **OS** | Windows | The operating system that hosts the function app.  |
     | **Hosting Plan** |   Consumption plan | Hosting plan that defines how resources are allocated to your function app. In the default **Consumption Plan**, resources are added dynamically as required by your functions. In this serverless hosting model, you only pay for the time your functions run.   |
     | **Location** | Select from the list | Choose the nearest one to you that is also one of the allowed *Sandbox regions* listed below. |
-    | **Runtime Stack** | JavaScript | The sample code in this module is written in JavaScript.  |
+    | **Runtime Stack** | Node.js | The sample code in this module is written in JavaScript.  |
     | **Storage** |  Globally unique name |  Name of the new storage account used by your function app. Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog populates the field with a unique name that is derived from the name you gave the app. However, feel free to use a different name or even an existing account. |
 
     ### Sandbox regions
+
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-1. Select **Create** to provision and deploy the function app. Wait for the process to complete before continuing.
+1. Select **Create** to provision and deploy the function app. 
+1. Wait for the process to complete before continuing.
 
 ## Install the durable-functions npm package 
 
@@ -54,11 +54,12 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
     npm install durable-functions
     ```
 
-    This command installs the durable-functions package (and any required supporting packages). 
+    This command installs the durable-functions package (and any required supporting packages). This may take a few minutes to complete and will display some warnings, which can be ignored.
 
 1. Installing the durable-functions package and its dependencies takes a couple of minutes. Wait until all packages have finished installing. You can ignore any warnings that appear from the node package manager.
 
 1. Close the Kudu window and return to the Function App page in the Azure portal.
+1. In the **Overview** pane of the function app, select **Restart** and wait for restart to complete. 
 
 ## Create the client function for submitting a design proposal
 
@@ -70,12 +71,12 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
 
 1. In the search field, type  **durable**, and then select the **Durable Functions HTTP starter** template. This template creates a durable function that runs in response to an HTTP request
 
-1. In the **Extensions not Installed** window, select **Install** to install the Azure DurableTask extension and any other dependencies in the function app. You only need to install the extension once for a give function app. 
+1. In the **Extensions not Installed** window, select **Install** to install the Azure DurableTask extension and any other dependencies in the function app. You only need to install the extension once per function app. 
 1. Installation of the DurableTask extension takes a while. When the installation has completed, select **Continue**.
 
 1. Name the function **HttpStart**, and then click **Create**.
 
-1. When the function has been created, the code for the Index.js file should appear. The JavaScript code in this file runs when the user visits the web site hosting the function. It invokes an orchestration function (which you'll define shortly). The code in the file should look like this:
+1. When the function is created, the code for the **index.js** file appears in the editor. The JavaScript code in this file runs when the user visits the web site hosting the function. It invokes an orchestration function (which you'll define shortly). The code in the file should look like this:
 
     ```javascript
     const df = require("durable-functions");
@@ -92,7 +93,7 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
 
 1. In the right-hand panel, select **View Files**. You might have to scroll horizontally to the right in order to see this menu. 
 
-1. Select **function.json** to view the bindings associated with your new function. TThis information specifies any authentication requirements, together with the HTTP methods that can trigger the function. This file also specifies that the function is a client that starts the orchestration process. The file should look like this:
+1. Select **function.json** to view the bindings associated with your new function. This information specifies any authentication requirements, together with the HTTP methods that can trigger the function. This file also specifies that the function is a client that starts the orchestration process. The file should look like this:
 
     > [!NOTE]
     > A binding associates resources and other items with a trigger. It is a declarative mechanism that removes the need to hard-code references to other services and functions in your code.
@@ -136,10 +137,9 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
 
 1. Name the new function **OrchFunction**, and then select **Create**.
 
-1. When the **Index.js** file containing the JavaScript code for the function appears, modify code as shown below. This code calls an Activity function named **Approval**. You'll add this function shortly. The code in the orchestrator function invokes the **Approval** function twice; the first time simulates accepting the proposal, and the second time tests the proposal rejection logic. The value returned by each call is combined together, and passed back to the client function. In a production environment, your orchestration function would call a series of activity functions that make the accept/reject decision, and return the result of these activities.
+1. When the function is created, the **index.js** file appears in the editor for this function. Replace this code with the code in the following snippet. This code calls an Activity function named **Approval**. You'll add this function shortly. The code in the orchestrator function invokes the **Approval** function twice; the first time simulates accepting the proposal, and the second time tests the proposal rejection logic. The value returned by each call is combined together, and passed back to the client function. In a production environment, your orchestration function would call a series of activity functions that make the accept/reject decision, and return the result of these activities.
 
     ```JavaScript
-    ...
     const df = require("durable-functions");
 
     module.exports = df.orchestrator(function* (context) {
@@ -166,7 +166,7 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
 
 1. Name the function **Approval**, and then select **Create**.
 
-1. When the **Index.js** JavaScript file for this function appears, modify the code as shown below. The function returns a message indicating the status of the proposal. The expression `context.bindings.name` will either be `Accepted` or `Rejected`, depending on the parameter passed to the function from the orchestrator. In the real world, you would add logic that handles the accept or reject operations here:
+1. Replace the code in the **index.js** field for this new function with the code in the following snippet. The function returns a message indicating the status of the proposal. The expression `context.bindings.name` will either be `Accepted` or `Rejected`, depending on the parameter passed to the function from the orchestrator. In the real world, you would add logic that handles the accept or reject operations here:
 
     ```javascript
     module.exports = async function (context) {

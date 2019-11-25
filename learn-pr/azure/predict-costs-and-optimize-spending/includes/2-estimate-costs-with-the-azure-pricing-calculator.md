@@ -17,11 +17,12 @@ The options that you can configure in the pricing calculator vary between produc
 
 ### Try out the Azure pricing calculator
 
-In another browser window or tab, open the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/). On the pricing calculator page, you'll see three tabs:
+In another browser window or tab, open the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/). On the pricing calculator page, you'll see several tabs:
 
 1. **Products.** This tab is where you'll do most of your activity. This tab has all the Azure services listed and is where you'll add or remove services to put together your estimate.
-2. **Estimates.** This tab has all of your previously saved estimates. We'll go through this process in a moment.
-3. **FAQ.** Just as it says, this tab has answers to some frequently asked questions.
+1. **Example Scenarios** This tab has several examples of infrastructure involved in common cloud-based solutions. You can add all the components of the entire scenario to estimate the cost.
+1. **Estimates.** This tab has all of your previously saved estimates. We'll go through this process in a moment.
+1. **FAQ.** Just as it says, this tab has answers to some frequently asked questions.
 
 Let's start with the **Products** tab. You'll see the full listing of service categories down the left-hand side. Clicking on any of the categories will display the services in that category. There's also a search box where you can search through all services for the service you're looking for. Clicking on the service will add that service to your estimate. You can add just one service, or you can add as many as you need, including multiples of the same service (for example, multiple virtual machines).
 
@@ -29,11 +30,11 @@ After you've added the services, you'll want to price them. Scrolling down on th
 
 ## Estimate a solution
 
-From our original scenario, let's imagine that this system will run on two Azure VMs and will connect to an Azure SQL Database instance. We also want to have a layer 7 firewall in place to ensure we have enhanced load-balancing capabilities. The following illustration shows an application gateway connected to two virtual machines that are connected to a single Azure SQL Database instance.
+From our original scenario, let's imagine that this system will run on two Azure VMs and will connect to an Azure SQL Database instance. We also want to have a layer 7 load balancer in place to ensure we have enhanced load-balancing capabilities. The following illustration shows an application gateway connected to two virtual machines that are connected to a single Azure SQL Database instance.
 
 ![An illustration of a sample architecture that will be used as an example to demonstrate estimating costs.](../media/2-estimate-costs-architecture.png)
 
-We can use the Azure pricing calculator to figure out what the solution will cost and export our estimate to share with the team.
+We can use the Azure pricing calculator to figure out what the solution will cost and export our estimate to share with the team. From the **Example Scenarios** tab, you can add all the resources involved with a common solution to the problem you are trying to solve to estimate all the potential costs. You can also add individual products from the **Products** tab to create an estimate for your custom solution.
 
 > [!TIP]
 > Make sure you have a clean calculator with nothing listed in the estimate. If you have anything present in your estimate, click the trash can icon on each item to reset the estimate.
@@ -46,25 +47,24 @@ In the Azure pricing calculator, on the **Products** tab, add the following serv
 
 We can configure the details of each, on the **Estimates** tab, to get a solid estimate of our costs. Use the **West US** region for all resources.
 
-* **Virtual Machines.** This is an ASP.NET application, so we'll need to use a **Windows OS** VM. This application doesn't require a massive amount of computing power, so select the **D2 v3** instance size. We'll need two virtual machines, and they will run all the time (730 hours/month). We're going to use standard SSD storage for these VMs and will require just one disk per VM of size **E10**, for a total of two disks.
+* **Virtual Machines.** This project is an ASP.NET application, so we'll need to use a **Windows OS** VM. This application doesn't require a massive amount of computing power, so select the **D2 v3** instance size. We'll need two virtual machines, and they will run all the time (730 hours/month). We're going to use standard SSD storage for these VMs and will require just one disk per VM of size **E10**, for a total of two disks.
 
 * **SQL Database.** For the database, we're going to provision a **single database type** using the **vCore model**. We want a General Purpose, Gen 5 database with 8 vCores. We'll need 32 GB of storage.
 
 * **Application Gateway.** For Application Gateway, we're going to use the Web Application Firewall tier, so we have some protection for our environment. And we're going to go with just two instances and medium size, as our load isn't going to be high. We expect to process 1 TB of data per month. We don't expect to process any data in Europe (Zone 1).
 
-Looking through your estimate, you should see a summary cost for each service you've added and a full total for the entire estimate. In this case, your estimate should be around **$2,100.00 per month**. You can try playing with some of the options - particularly the _location_ you place these resources in to see the estimate go up and down. 
+Looking through your estimate, you should see a summary cost for each service you've added and a full total for the entire estimate. You can try playing with some of the options - particularly the _location_ you place these resources in - to see the estimate go up and down.
 
 > [!TIP]
 > If you have resources that are not location-sensitive, you can save a lot of money by locating them in less expensive regions. Checking the pricing calculator can help you determine the most cost-effective place to put these services.
-
 
 ## Share and save your estimate
 
 We now have an estimate for our solution. We can save this estimate, so we can come back to it later and adjust it if necessary. We can also export it to Excel for further analysis or share the estimate via a URL.
 
-To export the estimate, click `Export` at the bottom of the estimate. This will download your estimate in Excel (**.xlsx**) format and will include all the services you added to your estimate.
+To export the estimate, click `Export` at the bottom of the estimate. Exporting will download your estimate in Excel (**.xlsx**) format and will include all the services you added to your estimate.
 
-We can either share the Excel spreadsheet, or we can click on the `Share` button in the calculator. This gives you a URL that you can use to share this estimate. Anyone with this link will be able to access it, making it easy to share with your team.
+We can either share the Excel spreadsheet, or we can click on the `Share` button in the calculator. Sharing will give you a URL that you can use to share this estimate. Anyone with this link will be able to access it, making it easy to share with your team.
 
 If you are logged in with your Azure account, you can save the estimate, so you can come back to it later. Go ahead and click the **Save** button. If you are signed in, you should see a notification that your estimate was saved. If you aren't signed in, you'll see a message to sign in to save your estimate. After you've saved the estimate, scroll back up to the top of the page and select the **Estimates** tab. You will see your estimate there. You can then select it to pull it back up or delete it if you no longer need it.
 

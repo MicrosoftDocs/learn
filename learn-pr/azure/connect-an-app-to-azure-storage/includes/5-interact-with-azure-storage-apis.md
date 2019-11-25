@@ -113,6 +113,6 @@ blobService.listBlobsSegmented(containerName, null, function (error, results) {
 ```
 
 > [!NOTE]
-> The client libraries are just thin _wrappers_ over the REST API. They are doing exactly what you would do if you used the web services directly. These libraries are also open source, making them very transparent. Look for them on GitHub.
+> The client libraries are just thin _wrappers_ over the REST API. They are doing exactly what you would do if you used the web services directly. These libraries are also open source, making them very transparent. See the Additional Resources section at the end of this module for links to the source code for these libraries on GitHub.
 
 Let's add client library support to our application.

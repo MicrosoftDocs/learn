@@ -2,21 +2,22 @@
 uid: learn.prepare-azure-dev-environment
 metadata:
   title: Prepare your development environment for Azure development
-  description: Set up your local development environment with several popular IDEs.
-  ms.date: 09/24/2018
-  author: adrianstevens
-  ms.author: adsteven
+  description: Learn how to choose and install the appropriate IDE for your requirements to help you build, deploy, monitor, and scale cloud-hosted solutions.
+  ms.date: 07/01/2019
+  author: patridge
+  ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: adsteven
 title: Prepare your development environment for Azure development
 summary: Set up your local development environment with several popular IDEs.
-abstract:   | 
+abstract:   |
   In this module, you will:
+  - Prepare your IDE for Azure development
   - Set up Visual Studio Code
   - Set up Visual Studio
   - Set up Eclipse for Java development
-  - Prepare your IDE for Azure development
+  - Set up IntelliJ IDEA for Java development
 prerequisites: None
 iconUrl: /learn/achievements/prepare-your-dev-environment-for-azure-development.svg
 levels:
@@ -25,17 +26,14 @@ roles:
 - developer
 products:
 - azure
+- vs
 - vs-code
+- vs-mac
 - azure-sdks
 units:
-#TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
 - learn.prepare-azure-dev-environment.1-introduction
-- learn.prepare-azure-dev-environment.2-set-up-visual-studio-code
-- learn.prepare-azure-dev-environment.3-exercise-set-up-visual-studio-code
-- learn.prepare-azure-dev-environment.4-set-up-visual-studio
-- learn.prepare-azure-dev-environment.5-exercise-set-up-visual-studio
-- learn.prepare-azure-dev-environment.6-set-up-eclipse-ide-for-java-developers
-- learn.prepare-azure-dev-environment.7-exercise-set-up-eclipse
-- learn.prepare-azure-dev-environment.8-summary
+- learn.prepare-azure-dev-environment.2-set-up-dev-environment
+- learn.prepare-azure-dev-environment.3-exercise-set-up-dev-environment
+- learn.prepare-azure-dev-environment.4-summary
 badge:
   uid: learn.prepare-azure-dev-environment.badge

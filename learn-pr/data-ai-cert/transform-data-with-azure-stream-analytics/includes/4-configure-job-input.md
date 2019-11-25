@@ -60,6 +60,10 @@ Next connect your Stream Analytics job to your new Azure Blob storage account:
 1. Under **Path pattern**, enter **input/**.
 1. Leave the default values in the rest of the fields.
 
+
+    > [!TIP]
+    > Take note of the date format on this pane.  It may differ in your region and you will need to know the format for the exercise "Write an Azure Stream Analytics transformation query".
+
     > [!NOTE]
     > If the job and storage account are in different locations, you'll get a warning like the one in the following image.
 

@@ -10,8 +10,7 @@ A standard Dockerfile provides build instructions. Azure Container Registry Task
 
 We'll use a new Dockerfile for our example.
 
-<!-- Activate the sandbox -->
-[!include[](../../../includes/azure-sandbox-activate.md)]
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 The first step is to create a new file named `Dockerfile`. You can use any text editor to edit the file. We'll use Cloud Shell Editor for this example.
 
@@ -54,7 +53,7 @@ The first step is to create a new file named `Dockerfile`. You can use any text 
     ```
 
     The output from this command should look similar to the following:
-    
+
     ```console
     Result
     -------------

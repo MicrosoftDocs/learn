@@ -1,0 +1,43 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-security.manage-users-and-groups-in-aad.create-aad
+title: What is Azure Active Directory?
+metadata:
+  title: What is Azure Active Directory?
+  description: What is Azure Active Directory?
+  ms.date: 09/30/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-create-aad.md)]
+quiz:
+   title: Check your knowledge
+   questions:
+   - content: "An Azure subscription is a _______________."
+     choices:
+     - content: billing entity and security boundary
+       isCorrect: true
+       explanation: "Correct. Azure subscriptions manage resources, limits, and provide the charges billed to the account owner."
+     - content: container that holds users
+       isCorrect: false
+     - content: monthly charge for Azure services
+       isCorrect: false
+   - content: "Which of the following best describes the relationship between a subscription and an Azure AD directory?"
+     choices:
+     - content: An Azure AD directory has a 1:1 relationship with a subscription.
+       isCorrect: false
+     - content: An Azure AD directory can be associated with multiple subscriptions, but a subscription is always tied to a single directory.
+       isCorrect: true
+       explanation: "Correct. Azure subscriptions can only trust a single directory, but multiple subscriptions can be associated to a single Azure AD instance."
+     - content: An Azure AD directory is associated with a single subscription, but a subscription can trust multiple directories.
+       isCorrect: false
+   - content: "True or False, an organization can have more than one Azure AD directory."
+     choices:
+     - content: "True"
+       isCorrect: true
+       explanation: "Correct. While a single directory is created for the organization initially, more can be created to divide the security across boundaries."
+     - content: "False"
+       isCorrect: false

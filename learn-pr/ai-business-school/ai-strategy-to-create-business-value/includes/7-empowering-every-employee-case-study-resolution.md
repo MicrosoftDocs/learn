@@ -18,15 +18,23 @@ Behind the scenes, Marcel is a platform that uses AI to bring order to Publicis�
 To make sure that communication is enabled without harming productivity, Marcel filters all comms channels, and each day hand-picks six items for each employee that they may be interested in. It also frees employees from repetitive administrative tasks, such as timesheets, through automation.
 
 Marcel helps on the client side as well. Clients can post videos or project descriptions to the platform, polling Publicis employees for ideas. The client can then select the idea and associated team that they find most suited to them. No mass emails, delays, or repetitive phone calls.
-
+:::row:::
+:::column span="2":::
 Marcel also takes into account existing workloads when making recommendations. The result is a transformative way for employees to find one another in seconds, properly leveraging the expertise of tens of thousands of people. This results in a more flexible, collaborative, environment where silos are broken down without losing the information they contain.
 
 “In June 2018, Publicis Groupe announced the creation of Marcel, to connect our 80,000 employees and completely reinvent the way that we work, for ourselves and our clients,” says Arthur Sadoun.
 
 “Since then, our industry has gone through unprecedented challenges, demonstrating that incremental change is not a solution. The need for reinvention is stronger than ever. At Publicis Groupe, we haven’t waited to act. We are breaking the barriers between talent and opportunity with Marcel.”
+:::column-end:::
+:::column span="2":::
+![“In June 2018, Publicis Groupe announced the creation of Marcel, to connect our 80,000 employees and completely reinvent the way that we work, for ourselves and our clients,”  Arthur Sadoun.](../media/1-7-3-A-Publicis-case-study-resolution1.jpg)
+:::column-end:::
+:::row-end:::
 
 ## Result
 
+:::row:::
+:::column span="2":::
 “We are ahead on all the strategic and operational KPIs of our transformation to become the market leader in marketing and business transformation,” says Publicis Groupe CEO Arthur Sadoun.
 
 With the power of AI, the beta version of Marcel is already helping Publicis transform from a holding company into a platform for idea sharing and client engagement, with a goal for 90% of the company to be on the platform by 2020.
@@ -34,6 +42,11 @@ With the power of AI, the beta version of Marcel is already helping Publicis tra
 Early indications are that Sadoun’s bold silo-breaking strategy is working. After the official unveiling of Marcel in late May 2018, Publicis had a very strong Q3, achieving their aim of organic growth acceleration (up 2.2 percent). Thanks to their unique data strategy and new platform approach, Publicis won four separate pitches with GlaxoSmithKline (GSK), alongside key wins with Western Union, Cathay Pacific, and the Government of Singapore.
 
 “Our model connecting data, dynamic creativity and technology is working beautifully and fits the current and future needs of the clients,” says Sadoun.
+:::column-end:::
+:::column span="2":::
+![A goal of 90% of the company to be on the platform for idea sharing by 2020](../media/1-7-3-B-Publicis-case-study-resolution.jpg)
+:::column-end:::
+:::row-end:::
 
 “This is why we won the majority of the biggest pitches of 2018, such as Daimler, Campbell's, Marriott, Carrefour, Cathay Pacific, Smucker's, GSK and Fiat-Chrysler. These last two wins represent more than one billion dollars in billings each.”
 

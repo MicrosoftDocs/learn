@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.intro-to-python.exercise-create-your-first-app
+title: Exercise - Create your first app
+metadata:
+  title: Exercise - Create your first app
+  description: Use CPython to run a simple app and output a message to the console
+  ms.date: 04/30/2019
+  author: ShanaMatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+azureSandbox: true
+interactive: bash
+content: |
+  [!include[](includes/3-exercise-create-your-first-app.md)]

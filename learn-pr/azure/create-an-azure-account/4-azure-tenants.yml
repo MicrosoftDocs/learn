@@ -5,8 +5,8 @@ metadata:
   title: Authenticate access with Azure Active Directory
   description: Authenticate access with Azure Active Directory
   ms.date: 01/1/2019
-  author: markjulmar
-  ms.author: smmark
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

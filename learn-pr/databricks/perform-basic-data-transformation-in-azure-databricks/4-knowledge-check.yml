@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Test your knowledge by answering questions about skills you learned from the lab.
   ms.date: 02/20/2019
-  author: barlan
-  ms.author: barlan
+  author: jasallen 
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
@@ -16,23 +16,23 @@ quiz:
   questions:
     - content: "How do you specify parameters when you're reading data?"
       choices:
-        - content: Using .option() during your read allows you to pass key/value pairs that specify aspects of your read.
-          explanation: Using .option() during your read allows you to pass key/value pairs that specify aspects of your read. For instance, options for reading CSV data include header, delimiter, and inferSchema.
-          isCorrect: true
         - content: Using .parameter() during your read allows you to pass key/value pairs that specify aspects of your read.
           isCorrect: false
           explanation: .parameter() isn't the correct method name.
+        - content: Using .option() during your read allows you to pass key/value pairs that specify aspects of your read.
+          explanation: Using .option() during your read allows you to pass key/value pairs that specify aspects of your read. For instance, options for reading CSV data include header, delimiter, and inferSchema.
+          isCorrect: true   
         - content: Using .keys() during your read allows you to pass key/value pairs that specify aspects of your read.
           isCorrect: false
           explanation: .keys() isn't the correct method name.
     - content: "How do you connect your Spark cluster to Azure Blob storage?"
       choices:
-        - content: By mounting it.
-          explanation: Correct. Mounts require Azure credentials, such as shared access signature (SAS) keys.
-          isCorrect: true
         - content: By calling the .connect() function on the Spark cluster.
           isCorrect: false
           explanation: Incorrect. There's no such method.
+        - content: By mounting it.
+          explanation: Correct. Mounts require Azure credentials, such as shared access signature (SAS) keys.
+          isCorrect: true
         - content: By calling the .connect() function on the Azure Blob storage account.
           isCorrect: false
           explanation: Incorrect. There's no such method.

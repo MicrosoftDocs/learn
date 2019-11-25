@@ -8,12 +8,12 @@ In this module, you'll learn about several common techniques for moving data in 
 
 In this module, you will:
 
-  - Identify when to use synchronous and asynchronous methods for transferring blobs
-  - Copy and move blobs between Azure storage accounts using .NET Storage Client library
-  - Copy and move blobs between Azure storage accounts using the Azure CLI
-  - Copy and move blobs between Azure storage accounts using the AzCopy tool
+- Identify when to use synchronous and asynchronous methods for transferring blobs
+- Copy and move blobs between Azure storage accounts using .NET Storage Client library
+- Copy and move blobs between Azure storage accounts using the Azure CLI
+- Copy and move blobs between Azure storage accounts using the AzCopy tool
 
 ## Prerequisites
 
-  - Beginner-level knowledge of Azure storage and blobs
-  - Beginner-level knowledge C# .NET
+- Beginner-level knowledge of Azure storage and blobs
+- Beginner-level knowledge C# .NET

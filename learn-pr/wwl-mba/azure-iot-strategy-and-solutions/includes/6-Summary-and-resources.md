@@ -12,7 +12,7 @@ Now that you have reviewed this module, you should be able to:
 Here are the three key takeaways from this module:
 
 :::row:::
-![Icon of key](../media/Key_Takeaway.png)
+![Icon of key](../media/key-takeaway.png)
   :::column span="1":::
 1.	Microsoft Azure IoT addresses common business challenges that can help accelerate business transformation by reducing cost and complexity while improving security at scale.
 2.	Insights uncovered from connected devices and backend systems can be transformed into powerful applications and services to achieve business success.
@@ -30,7 +30,7 @@ Use these resources to discover more.
 Learn more about IoT Products:
 - [Azure IoT](http://azure.com/iot)
 
-Learn more about IoT Reference Architecture: 
+Learn more about IoT Reference Architecture:
 - [Azure IoT Reference Architecture](https://aka.ms/iotrefarchitecture)
 
 Learn more about IoT customer Stories:
@@ -39,6 +39,6 @@ Learn more about IoT customer Stories:
 - [Alaska Department of Transportation](https://customers.microsoft.com/story/alaskadotpf-government-azure-iot)
 - [Royal Dutch Shell](https://customers.microsoft.com/story/shell-mining-oil-gas-azure-databricks)
 - [Schneider Electric](https://customers.microsoft.com/story/schneider-electric-process-mfg-resources-azure-machine-learning)
-- [ExxonMobil](http://customers.microsoft.com/story/exxonmobil-mining-oil-gas-azure)
+- [ExxonMobil](https://customers.microsoft.com/story/exxonmobil-mining-oil-gas-azure)
 - [Kohler](https://customers.microsoft.com/story/kohler-konnect-azure-iot)
 - [Roche Diagnostics](https://customers.microsoft.com/story/roche-diagnostics)

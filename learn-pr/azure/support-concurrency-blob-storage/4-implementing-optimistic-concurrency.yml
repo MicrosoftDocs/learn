@@ -1,9 +1,9 @@
 ﻿### YamlMime:ModuleUnit
 uid: learn.support-concurrency-blob-storage.4-implementing-optimistic-concurrency
-title: Implementing optimistic concurrency
+title: Implement optimistic concurrency
 metadata:
-  title: Implementing optimistic concurrency
-  description: Implementing optimistic concurrency
+  title: Implement optimistic concurrency
+  description: Implement optimistic concurrency
   ms.date: 04/06/2019
   author: nickwalkmsft
   ms.author: nickwalk

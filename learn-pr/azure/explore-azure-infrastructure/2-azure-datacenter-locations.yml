@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.explore-azure-infrastructure.2-azure-datacenter-locations
-title: Datacenters and Regions in Azure
+title: Understand Datacenters and Regions in Azure
 metadata:
-  title: Datacenters and Regions in Azure
-  description: Datacenters and Regions in Azure
+  title: Understand Datacenters and Regions in Azure
+  description: Understand Datacenters and Regions in Azure
   ms.date: 01/1/2019
-  author: markjulmar
-  ms.author: smmark
+  author: patridge
+  ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

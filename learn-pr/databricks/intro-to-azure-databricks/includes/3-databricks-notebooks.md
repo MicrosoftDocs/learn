@@ -11,20 +11,17 @@ The notebooks are backed by clusters, or networked computers, that work together
 
 ## Create a cluster
 
+1. In the Azure portal, click **All resources** menu on the left side navigation and select the Databricks workspace you created in the last unit.
+1. Select **Launch Workspace** to open your Databricks workspace in a new tab.
 1. In the left-hand menu of your Databricks workspace, select **Clusters**.
 1. Select **Create Cluster** to add a new cluster.
 
     ![The create cluster page](../media/create-a-cluster.png)
 
 1. Enter a name for your cluster. Use your name or initials to easily differentiate your cluster from your coworkers.
-1. Select the **Databricks RuntimeVersion**. We recommend the latest runtime (4.0 or newer) and **Scala 2.11**.
-1. Specify your cluster configuration.
-    - For clusters that are created on a Community Edition, the default values are sufficient for the remaining fields.
-    - For all other environments, refer to your company's policy on creating and using clusters.
+1. Select the **Databricks RuntimeVersion**. We recommend the latest runtime and **Scala 2.11**.
+1. Specify your cluster configuration. While on the 14 day free trial, the defaults will be sufficient. When the trial is ended, you may prefer to change `Min Workers` to zero. That will allow the compute resources to shut down when you are not in a coding exercise and reduce your charges.
 1. Select **Create Cluster**.
-
-> [!NOTE]
-> Check with your local system administrator to see if there is a recommended default cluster at your company to use for the rest of the class. Making new cluster will incur costs.
 
 ## Create a notebook
 

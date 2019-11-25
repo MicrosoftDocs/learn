@@ -2,11 +2,11 @@
 uid: learn.connect-app-to-azure-storage.3-exercise-create-your-app
 title: Exercise - Create a new app to work with Azure storage
 metadata:
-  title: Create a new app to work with Azure storage
-  description: Create a new app to work with Azure storage
+  title: Exercise - Create a new app to work with Azure storage
+  description: Exercise - Create a new app to work with Azure storage
   ms.date: 09/24/2018
-  author: markjulmar
-  ms.author: smmark
+  author: cryophobia
+  ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

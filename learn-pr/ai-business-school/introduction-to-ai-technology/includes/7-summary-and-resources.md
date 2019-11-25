@@ -10,4 +10,4 @@ Now that you have reviewed this module, you should be able to:
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-* [Stay up to date with Microsoft AI](http://www.microsoft.com/ai)
+* [Stay up to date with Microsoft AI](https://www.microsoft.com/ai)

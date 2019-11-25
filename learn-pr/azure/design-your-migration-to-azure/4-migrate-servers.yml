@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.design-your-migration-to-azure.4-migrate-servers
+metadata:
+  title: Migrate servers with Azure Site Recovery
+  description: Review Azure Site Recovery and see how to use it to migrate specific workloads to Azure.
+  ms.date: 07/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Migrate servers with Azure Site Recovery
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-migrate-servers.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following are features provided by Azure Site Recovery?"
+    choices:
+    - content: "Customized recovery plans, flexible failovers, storage replication"
+      isCorrect: false
+      explanation: "Storage replication is not a feature of Azure Site Recovery."
+    - content: "On-premises VM replication, flexible failovers, customized recovery plans"
+      isCorrect: true
+      explanation: "These are all features provided by Azure Site Recovery."
+    - content: "Network integration, flexible failovers, physical Unix server recovery"
+      isCorrect: false
+      explanation: "A physical Unix server is not a supported operating system that can be used with Azure Site Recovery."
+  - content: "Which of these source server configurations are supported by Azure Site Recovery?"
+    choices:
+    - content: "VMware VMs, physical Unix, physical Windows"
+      isCorrect: false
+      explanation: "Physical Unix servers are not supported by Azure Site Recovery."
+    - content: "Azure VMs, physical Unix, physical Sun Solaris"
+      isCorrect: false
+      explanation: "Neither physical Unix nor physical Sun operating systems is supported."
+    - content: "Azure VMs, VMware VMs, physical Windows"
+      isCorrect: true
+      explanation: "All three configurations are supported."

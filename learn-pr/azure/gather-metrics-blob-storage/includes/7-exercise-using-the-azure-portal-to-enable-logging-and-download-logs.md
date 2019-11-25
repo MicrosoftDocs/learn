@@ -97,7 +97,7 @@ If you have microsoft Excel, you can download and import the log data for more e
 
 1. In **Excel**, on the **Data** tab, click the **Get Data** menu, click **From File**, then click **From Text/CSV**.
 
-1. In the **Import Data** dialog box, in the **Text Files (*.prn;*.txt;*.csv)** drop down, select **All Files (*.*)**.
+1. In the **Import Data** dialog box, in the **Text Files (\*.prn;\*.txt;\*.csv)** drop down, select **All Files (*.*)**.
 
 1. In the **Import Data** dialog box, browse to the location you downloaded the log file, such as **Downloads**, select the downloaded log file, and click **Import**.
 

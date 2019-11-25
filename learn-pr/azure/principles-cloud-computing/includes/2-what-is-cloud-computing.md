@@ -22,7 +22,7 @@ When you send an email, book a reservation on the Internet, pay a bill online, o
 When you build solutions using cloud computing, you can choose how you want work to be done based on your resources and needs. For example, if you want to have more control and responsibility over maintenance, you could create a _virtual machine_ (VM). A VM is an emulation of a computer - just like your desktop or laptop you're using now. Each VM includes an operating system and hardware that appears to the user like a physical computer running Windows or Linux. You can then install whatever software you need to do the tasks you want to run in the cloud.
   :::column-end:::
   :::column:::
-![Compute power gauge](../media/2-compute-power.png)
+![Illustration showing a compute power gauge](../media/2-compute-power.png)
   :::column-end:::
 :::row-end:::
 
@@ -32,7 +32,7 @@ VMs aren't the only computing choice - there are two other popular options: _con
 
 #### What are containers?
 
-**Containers** provide a consistent, isolated execution environment for applications. They're similar to VMs except they don't require a guest operating system. Instead, the application and all its dependencies is packaged into a "container" and then a standard runtime environment is used to execute the app. This allows the container to start up in just a few seconds because there's no OS to boot and initialize. You only need the app to launch.
+**Containers** provide a consistent, isolated execution environment for applications. They're similar to VMs except they don't require a guest operating system. Instead, the application and all its dependencies is packaged into a "container" and then a standard runtime environment is used to execute the app. This allows the container to start up in just a few seconds, because there's no OS to boot and initialize. You only need the app to launch.
 
 The open-source project, Docker, is one of the leading platforms for managing containers. Docker containers provide an efficient, lightweight approach to application deployment because they allow different components of the application to be deployed independently into different containers. Multiple containers can be run on a single machine, and containers can be moved between machines. The portability of the container makes it easy for applications to be deployed in multiple environments, either on-premises or in the cloud, often with no changes to the application.
 
@@ -46,12 +46,12 @@ Here's a diagram comparing the three compute approaches we've covered.
 
 ![Diagram showing a comparison of virtual machines, containers, and serverless computing](../media/2-vm-vs-container-vs-serverless.png)
 
-
 :::row:::
   :::column span="3":::
 ### Storage
 
 Most devices and applications read and/or write data. Here are some examples:
+
 - Buying a movie ticket online
 - Looking up the price of an online item
 - Taking a picture
@@ -61,7 +61,7 @@ Most devices and applications read and/or write data. Here are some examples:
 In all of these cases, data is either _read_ (looking up a price) or _written_ (taking a picture). The type of data and how it's stored can be different in each of these cases.
   :::column-end:::
   :::column:::
-![Storage gauge](../media/2-storage.png)
+![Illustration representing storage](../media/2-storage.png)
   :::column-end:::
 :::row-end:::
 

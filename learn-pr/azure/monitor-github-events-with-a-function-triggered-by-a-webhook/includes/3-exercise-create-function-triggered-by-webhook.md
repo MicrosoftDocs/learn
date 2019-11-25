@@ -1,14 +1,12 @@
-Imagine that your IT department's management want to monitor the Company's Technology Wiki, and you've decided that an Azure Function will need to be triggered by Wiki updates for this to happen.
-
-In this exercise, you'll create an Azure Function, and trigger the function using a webhook.
+In this first exercise, you'll create your code to parse the GitHub wiki event messages in Azure Functions. You'll configure your function to run when a webhook message is received.
 
 ## Create a Function App
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your MS Learn account.
 
-1. Select the **+ Create a resource** button found on the upper left-hand corner of the Azure portal, click **Compute**, and then click **Function App**.
+1. Select the **+ Create a resource** button found on the upper left-hand corner of the Azure portal, then select **Compute** > **Function App**.
+
+    [!include[](../../includes/functions-classic-workaround.md)]
 
 1. On the **Function App** page, enter the following settings:
 
@@ -19,24 +17,28 @@ In this exercise, you'll create an Azure Function, and trigger the function usin
     |---|---|
     | Name | *\<your-functionapp-name\>* |
     | Subscription | Concierge Subscription  |
-    | Resource Group | <rgn>[sandbox resource group name]</rgn> |
+    | Resource Group | Select **Use existing** and choose the sandbox resource group, _<rgn>[sandbox resource group name]</rgn>_. |
     | OS | Windows |
     | Hosting Plan | Consumption plan |
-    | Location | Accept the default location |
-    | Runtime Stack | **JavaScript** |
-    | Storage | Create new, and accept the default name |
+    | Location | Choose the nearest location to you that is also one of the allowed *Sandbox regions* listed below. |
+    | Runtime Stack | **Node.js** |
+    | Storage | Create new, and accept the default name. |
 
-1. Click **Create**, and wait for the function app to be deployed before continuing.
+    ### Sandbox regions
+
+    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+
+1. Select **Create**, and wait for the function app to be deployed before continuing.
 
 ## Create a webhook triggered function
 
-1. In the left-hand pane of the portal, click **All resources**, and then click your function app.
+1. In the left-hand pane of the portal, select **All resources**, and then select the function app you just created.
 
 1. On the function app page, expand your new function app, and then select the **+** button next to **Functions**.
 
-1. In the **Azure Function for JavaScript - getting started** pane, click **In-portal**, and then click **Continue**.
+1. In the **Azure Function for JavaScript - getting started** pane, select **In-portal**, and then **Continue**.
 
-1. Click **WebHook + API**, and then click **Create**.
+1. Select **WebHook + API**, and then select **Create**.
 
    The portal will create a JavaScript function that looks similar to this:
 
@@ -89,16 +91,18 @@ In this exercise, you'll create an Azure Function, and trigger the function usin
 
 ## Test triggering your function
 
-1. In your new function, click **</> Get function URL** at the top.
+1. In your new function, select **</> Get function URL** at the top.
 
-2. In the **Get function URL** message box, select **default (Function key)**, and then click **Copy**. The URL will look something like this:
+2. In the **Get function URL** message box, select **default (Function key)**, and then select **Copy**. The URL will look something like this:
 
     ```text
     https://<your-functionapp-name>.azurewebsites.net/api/HttpTrigger1?code=aUjXIpqdJ0ZHPQuB0SzFegxGJu0nAXmsQBnmkCpJ6RYxleRaoxJ8cQ==
     ```
 
-3. Paste the function URL into your browser's address bar. Add the query string value &name=*\<yourname\>* to the end of this URL and press the Enter key on your keyboard to execute the request. You should see the response returned by the function displayed in the browser. It will look something like this:
+3. Paste your function URL into your browser's address bar. Add the query string value &name=*\<yourname\>* to the end of this URL and press the Enter key on your keyboard to execute the request. You should see the response returned by the function displayed in the browser. It will look something like this:
 
     ```text
     Hello John Smith
     ```
+
+Congratulations! You now have a function that can be triggered by a URL!

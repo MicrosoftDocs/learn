@@ -5,11 +5,11 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 durationInMinutes: 3
 quiz:
   title: Check your knowledge

@@ -1,34 +1,33 @@
 ### YamlMime:ModuleUnit
 uid: learn.predict-costs-and-optimize-spending.3-predict-and-optimize-with-cost-management-and-advisor
-title: Predict and optimize with Cost Management and Azure Advisor
+title: Exercise - Predict and optimize with Cost Management and Azure Advisor
 metadata:
-  title: Predict and optimize with Cost Management and Azure Advisor 
+  title: Exercise - Predict and optimize with Cost Management and Azure Advisor 
   description: In this unit, we'll discuss how to predict and optimize with Cost Management and Azure Advisor
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: patridge
+  ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 15
-# TODO: Consider Azure Portal Interactivity, but quiz will have to be removed
-# interactive: azure-portal
 content: |
   [!include[](includes/3-predict-and-optimize-with-cost-management-and-advisor.md)]
 quiz:
     title: Check your knowledge
     questions:
 
-    - content: "True or false: Azure Advisor provides recommendations on cost only."
+    - content: "Azure Advisor provides recommendations for _________."
       choices:
-      - content: "True"
+      - content: "Costs only"
         explanation: "Azure Advisor provides recommendations on high availability, security, performance, and cost."
         isCorrect: false
-      - content: "False"
+      - content: "High availability, security, performance, and cost"
         explanation: "Azure Advisor provides recommendations on high availability, security, performance, and cost."
         isCorrect: true
-
+      - content: "High availability, performance, and cost"
+        explanation: "Azure Advisor provides recommendations on high availability, security, performance, and cost."
+        isCorrect: false
     - content: "Azure Cost Management allows you to _________."
       choices:
       - content: "See historical breakdowns of what services you are spending your money on."

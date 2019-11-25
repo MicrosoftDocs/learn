@@ -20,6 +20,6 @@ So what does a typical Azure Batch workflow actually look like? As shown in the 
 
 The Batch service will then handle bringing the nodes online and scheduling tasks for execution onto the nodes. Before the tasks begin execution, they may download any data and application files from storage that they need for processing. While the tasks are executing, it's possible to query the status of the nodes and the progress of the tasks. Once the nodes complete their tasks, their task output can be examined or pushed to Azure storage.  
 
-<!-- TODO: Graphic similar to the one here, but please replace 'Application or service' with 'Azure CLI' and an image of a terminal window https://docs.microsoft.com/en-gb/azure/batch/batch-technical-overview> -->
+<!-- TODO: Graphic similar to the one here, but please replace 'Application or service' with 'Azure CLI' and an image of a terminal window https://docs.microsoft.com/azure/batch/batch-technical-overview> -->
 
 ![Azure Batch workflow](../media/2-azure-batch-workflow.png)

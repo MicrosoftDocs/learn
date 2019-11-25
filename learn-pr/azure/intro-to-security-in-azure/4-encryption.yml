@@ -5,9 +5,8 @@ metadata:
   title: Encryption
   description: In this unit, we'll discuss how to use encryption to secure your data.
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: patridge
+  ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

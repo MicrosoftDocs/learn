@@ -1,10 +1,10 @@
 As a software developer at your company, you've the opportunity to grow your skills and become part of the in-house AI team. While you ramp-up on this exciting new role, you still have your day job to do. The senior AI engineer on your team has told you about some useful Jupyter notebooks that have PyTorch-based labs to train an image classification model. Exciting stuff, but you don't want to install a set of frameworks onto your dev rig. Instead, you decide to create a virtual machine based on the Data Science Virtual Machine (DSVM) image. 
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## What is the Azure CLI
 
 The Azure CLI is Microsoft's cross-platform command-line tool for managing Azure resources. It's available for macOS, Linux, and Windows, or in the browser using [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview). We have complete coverage of using this tool in the **Control Azure services with the CLI** module.
+
+You can use the Azure Cloud Shell by signing in at [https://shell.azure.com](https://shell.azure.com?azure-portal=true). Note you'll use your own Azure account for the exercises in this module and charges will apply.
 
 ## Managing deployments
 
@@ -30,7 +30,7 @@ We're going to create our VM using an Azure Resource Manager template. The templ
     code .
     ```
     <!-- TODO add a link to official doc that explains the built-in editor when it becomes available -->
-    This command opens and empty file in the built-in editor. 
+    This command opens and empty file in the built-in editor.
 
 1. Paste the following JSON snippet into the empty file in the code editor.
 
@@ -61,10 +61,19 @@ We're going to create our VM using an Azure Resource Manager template. The templ
     > [!IMPORTANT]
     > Remember the values you chose for adminUsername, adminPassword and vmName. We'll use them again in this exercise.
 
-## Create a resource group 
+## Create a resource group
 
-> [!IMPORTANT]
-> Normally you'd create a resource group in a region of your choice. However, the sandbox session you are currently in supplies a resource group for you to use. Your resource group for this session is **<rgn>[sandbox resource group name]</rgn>**.
+First, create a resource group to contain all of the resources you'll create in this module. You need a region in which to create the group. Run the following command in the cloud shell to find a list of locations.
+
+```azurecli
+az account list-locations -o table
+```
+
+Now, create the group itself. Name it `learn-deep-dsvm` and replace `<location>` in the following command with the name of the region in which you'd like the group to be created.
+
+```azurecli
+az group create --location <location> --name learn-deep-dsvm
+```
 
 ## Deploy the DSVM to your resource group
 
@@ -74,14 +83,14 @@ We now have a resource group and have defined parameters for the DSVM Resource M
 
     ```azurecli
     az group deployment create \
-    --resource-group  <rgn>[sandbox resource group name]</rgn> \
+    --resource-group learn-deep-dsvm \
     --template-uri https://raw.githubusercontent.com/Azure/DataScienceVM/master/Scripts/CreateDSVM/Ubuntu/azuredeploy.json \
     --parameters parameter_file.json
     ```
 
     [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
-    The command uses the Resource Manager template and our parameters to create the virtual machine in our resource group. 
+    The command uses the Resource Manager template and our parameters to create the virtual machine in our resource group.
 
 2. Deploying a virtual machine takes a few minutes to complete. The console displays ` - Running ..` and not much else until the operation completes. When the operation finishes, a JSON response is output to the screen. Scroll to the bottom of the JSON and check that the field **"provisioningState"** has the value *Succeeded*.
 
@@ -93,7 +102,7 @@ We now have a resource group and have defined parameters for the DSVM Resource M
     ```azurecli
     az vm show -d \
     --name <HOSTNAME> \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group learn-deep-dsvm \
     --output table
     ```
 
@@ -109,7 +118,7 @@ By default, our VM doesn't have any ports open. Our goal is to connect remotely,
 
     ```azurecli
     az vm open-port \
-    -g <rgn>[sandbox resource group name]</rgn> \
+    -g learn-deep-dsvm \
     -n <HOSTNAME> \
     --port 22 \
     --priority 900
@@ -126,7 +135,7 @@ As mentioned previously, the DSVM image comes pre-installed with software, tools
 
     ```azurecli
     az vm open-port \
-    -g <rgn>[sandbox resource group name]</rgn> \
+    -g learn-deep-dsvm \
     -n <HOSTNAME> \
     --port 8888 \
     --priority 901
@@ -140,7 +149,7 @@ Again, this command can take up to a minute to complete. When the command finish
 
     ```azurecli
     az vm list-ip-addresses \
-    -g <rgn>[sandbox resource group name]</rgn> \
+    -g learn-deep-dsvm \
     -n <HOSTNAME> \
     --output table
     ```

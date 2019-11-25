@@ -4,17 +4,17 @@ Billing for compute and storage is separate. If you don't need to use your data 
 
 ## Scale SQL Data Warehouse in the Azure portal
 
-To perform a scale operation, SQL Data Warehouse first ends all incoming queries and then rolls back transactions to ensure a consistent state. Scaling occurs only after the transaction rollback is complete. For a scale operation, the system detaches the storage layer from the Compute nodes, adds Compute nodes, and then reattaches the storage layer to the Compute layer. 
+To perform a scale operation, SQL Data Warehouse first ends all incoming queries and then rolls back transactions to ensure a consistent state. Scaling occurs only after the transaction rollback is complete. For a scale operation, the system detaches the storage layer from the Compute nodes, adds Compute nodes, and then reattaches the storage layer to the Compute layer.
 
 Each data warehouse is stored as 60 distributions, which are evenly distributed to the Compute nodes. Adding more Compute nodes adds more compute power. As the number of Compute nodes increases, the number of distributions per Compute node decreases, providing more compute power for your queries. Similarly, decreasing data warehouse units reduces the number of Compute nodes, which reduces the compute resources for queries.
 
 To scale your SQL Data Warehouse instance, take these steps:
 
 1. Go to your data warehouse in the Azure portal.
-1. Under **Common Tasks** in the left pane, select **Scale**.
+1. In the top menu bar, select **Scale**.
 
     ![Select Scale](../media/sql-dw-scale-link.png)
-1. On the **Scale** blade, move the slider left or right to change the DWU setting.
+1. On the **Scale** pane, move the slider left or right to change the DWU setting.
 
     ![The scale slider](../media/sql-dw-scale.png)
 1. Select **Save** to change performance units. A confirmation message appears. Select **Yes** to confirm or **No** to cancel.
@@ -23,11 +23,11 @@ To scale your SQL Data Warehouse instance, take these steps:
 
 You can pause your data warehouse if you don't need to use it for a while. This can help you save money because you'll pay only for the compute that you need.
 
-1. Go to your data warehouse in the [Azure portal](http://portal.azure.com/) and select **Overview**. Notice that the **Status** is **Online**.
+1. Go to your data warehouse in the [Azure portal](https://portal.azure.com/) and select **Overview**. Notice that the **Status** is **Online**.
 1. To suspend compute and memory resources, select **Pause**. When the confirmation message appears, select **Yes** to confirm or **No** to cancel.
 
     ![Select Pause](../media/sql-dw-pause.png)
-1. To resume SQL Data Warehouse, go to your data warehouse in the [Azure portal](http://portal.azure.com/) and select **Overview**. Notice that the **Status** is **Paused**.
+1. To resume SQL Data Warehouse, go to your data warehouse in the [Azure portal](https://portal.azure.com/) and select **Overview**. Notice that the **Status** is **Paused**.
 
 1. To resume the database, select **Resume**. When the confirmation message appears, select **Yes** to confirm or **No** to cancel.
 
@@ -39,8 +39,8 @@ You can also restore a database. The steps you take depend on whether the data w
 
 ### Restore an active or paused database in the Azure portal
 
-1. Go to your data warehouse in the [Azure portal](http://portal.azure.com/).
-1. At the top of the data warehouse **Overview** blade, select **Restore**.
+1. Go to your data warehouse in the [Azure portal](https://portal.azure.com/).
+1. At the top of the data warehouse **Overview** pane, select **Restore**.
 
     ![Automatic Restore Points](../media/sql-dw-restore-link.png)
 1. In the **Restore Point Type** box, select **Automatic Restore Points**. This restore point type will allow you to select restore points that are automatically created every 8 hours.
@@ -53,20 +53,20 @@ You can also restore a database. The steps you take depend on whether the data w
 
     ![User-Defined Restore Points](../media/sql-dw-restore-user-defined.png)
 
-1. Select **OK** at the bottom of blade.
+1. Select **OK** at the bottom of pane.
 1. The database restore process will begin. You can use notifications to monitor the process.
 
 ### Restore a deleted database in the Azure portal
 
-1. Go to your data warehouse in the [Azure portal](http://portal.azure.com/). Select the SQL Server instance associated with your data warehouse by selecting it in the **Overview** blade. You'll be redirected to the SQL Server instance on which the database should be restored.
+1. Go to your data warehouse in the [Azure portal](https://portal.azure.com/). Select the SQL Server instance associated with your data warehouse by selecting it in the **Overview** pane. You'll be redirected to the SQL Server instance on which the database should be restored.
 1. In the navigation pane of SQL Server, select **Deleted databases** in the menu on the left under the **Settings** subsection.
 
     ![Select Deleted Databases](../media/sql-dw-deleted-databases-link.png)
 1. Select the database that you want to restore.
 
     ![Select the database you want to restore](../media/sql-dw-deleted-databases.jpg)
-1. On the **Restore** blade, enter the new name of the database to be
+1. On the **Restore** pane, enter the new name of the database to be
     restored.
 
     ![Restore deleted database](../media/sql-dw-restore.jpg)
-1. Select **Ok** at the bottom of blade.
+1. Select **Ok** at the bottom of pane.

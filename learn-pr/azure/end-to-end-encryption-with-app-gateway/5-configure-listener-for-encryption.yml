@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.end-to-end-encryption-with-app-gateway.5-configure-listener-for-encryption
+metadata:
+  title: Configure an Application Gateway listener for encryption
+  description: Configure an Application Gateway listener for encryption
+  ms.date: 06/28/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Configure an Application Gateway listener for encryption
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-configure-listener-for-encryption.md)]

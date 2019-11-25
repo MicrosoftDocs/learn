@@ -1,6 +1,7 @@
-The *Gollum* event enables you to listen for wiki updates. when this event occurs, and the Azure Function is triggered, you can parse the payload to retrieve and process the data sent.
+The GitHub *Gollum* event enables you to listen for wiki updates. When this event occurs, and our Azure Functions function is triggered, you can parse the payload to retrieve and process the data sent.
 
-You've shown the IT department that you can listen for *Gollum* events on your Company GitHub repository, by setting up a webhook in GitHub. You've also demonstrated that an Azure Function can be triggered by a webhook. Next you'll update the function to parse update details from the payload.
+You've shown the IT department that you can listen for *Gollum* events on your company's GitHub repository, by setting up a webhook in GitHub. You've also demonstrated how Azure Functions enables you to run code when the function receives a webhook request. 
+In this unit, we'll examine the payload from the Gollum event so we can update our function to parse it correctly.
 
 ## Gollum event payload
 
@@ -47,11 +48,11 @@ For example, a payload might look like this:
 
 ```
 
-This information ia passed as the body of an HTTP POST request. In your Azure function, you must be prepared to parse and process this information.
+This information is passed as the body of an HTTP POST request. We'll need to update our function logic to be able to parse and process this information correctly.
 
 ## Parsing information from the Gollum event
 
-Recall that the webhook runs is when a specific event occurs. The webhook then sends a request to the URL on which your Azure Function is listening, using the **Payload URL** for your Azure Function. The payload is passed to the Azure Function. Your function can parse the request body to extract the fields from the payload and take the appropriate actions.
+Recall that the webhook runs when a specific event occurs. The webhook then sends a request to the URL on which your Azure Functions code is set up to listen, using the **URL** for your function. The payload is passed to the Azure Function. Your function can parse the request body to extract the fields from the payload and take the appropriate actions.
 
 The following example retrieves the repository name from the payload. The event type is available in the *x-github-event* request header. This data is output in the function response:
 
@@ -62,3 +63,5 @@ if (req.body.repository.name){
     };
 }
 ```
+
+In the next exercise, we'll update our function code to be able to handle incoming **Gollum** event correctly.

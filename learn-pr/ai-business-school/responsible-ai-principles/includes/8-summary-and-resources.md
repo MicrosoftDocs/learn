@@ -1,53 +1,67 @@
-## Summary
+Through this module we have walked through some of the steps Microsoft is taking to prioritize responsible AI in the hope that our experience can help others. However, we recognize that we do not have all the answers and every individual, company, and region will have their own beliefs and standards that should be reflected in their path towards responsible AI. We should also recognize that as organizations and as a society, our steps towards responsible AI will need to continually evolve to reflect new innovations and lessons from both our mistakes and accomplishments. The processes, tools, and resources mentioned can be a starting point from which organizations can create their own AI strategy.
 
-Through this module we have walked through some of the steps Microsoft is taking to prioritize responsible AI in the hope that our experience can help other enterprises. However, we recognize that we do not have all the answers and every individual, company, and region will have their own beliefs and standards that should be reflected in their path towards responsible AI. We should also recognize that as organizations and as a society, our steps towards responsible AI will need to continually evolve to reflect new innovations and lessons from both our mistakes and accomplishments. The processes, tools, and resources mentioned can be a starting point from which organizations can create their own AI strategy.
-
-As the use of AI increases across the private and public sectors, it is essential that we continue to foster open dialogue among businesses, governments, NGOs, academic researchers, and all other interested individuals and organizations. Enterprises that embrace AI early have an important role to play in promoting the responsible use of AI and preparing society for its impacts. Their firsthand experience in dealing with the ethical challenges of AI will be crucial knowledge for later adopters and those trying to study or regulate AI technology.
+As the use of AI increases across the private and public sectors, it is essential that we continue to foster open dialogue among businesses, governments, NGOs, academic researchers, and all other interested individuals and organizations. Those who embrace AI early have an important role to play in promoting the responsible use of AI and preparing society for its impacts. Their firsthand experience in dealing with the ethical challenges of AI will be crucial knowledge for later adopters and those trying to study or regulate AI technology.
 
 Now that you have reviewed this module, you should be able to:
 
 * Describe the importance of engaging with AI in a responsible manner.
 * Identify six guiding principles to develop and use AI responsibly.
-* Determine the elements of an AI governance system.
 
 ## Actions your organization can take
 
-To help you consider how to leverage governance and external engagements in your own organization, we developed the recommendations below.
+To help you consider how to implement these principles in your own organization, we developed the following recommendations:
 
-### Establishing an AI governance system
+### Fairness
 
-* **Choose a governance structure** that best fits your organization’s AI maturity, unique characteristics, culture, and business objectives
-* **Encourage your governance system to develop a set of guiding ethical principles** based on your organization’s foundational values.
-* **Outline the specific role of your governance system** within your organization. Consider having them develop and implement policies, standards, and best practices, build a culture of integrity, provide advice, educate employees, help mitigate risks associated with AI systems, and respond to violations in a timely and consistent manner.
-* **Provide your governance system with the financial and human resources they need** to affect real change within your organization.
-* **Adapt your governance system(s)** as your AI maturity and business objectives change and industry best practices improve.
+* **Understand the scope, spirit, and potential uses of the AI system** by asking questions such as, how is the system intended to work? Who is the system designed to work for? Will it work for everyone equally? How can it harm others?
+* **Attract a diverse pool of talent.** Ensure the design team reflects the world in which we live by including team members that have different backgrounds, experiences, education and perspectives.
+* **Identify bias in datasets** by evaluating where the data came from, understanding how it was organized, and testing to ensure it is represented. Bias can be introduced at every stage in creation, from collection to modeling to operation.
+* **Identify bias in machine learning algorithms** by leveraging tools and techniques that improve the transparency and intelligibility of models. Examples of these tools can be found in the next unit.
+* **Leverage human review and domain expertise.** Train employees to understand the meaning and implications of AI results to ensure that they are ultimately accountable for decisions that leverage AI, especially when AI is used to inform consequential decisions about people. Finally, include relevant subject matter experts (such as those with consumer credit expertise for a credit scoring AI system) in the design process and in deployment decisions.
+* **Research and employ best practices, analytical techniques, and tools** from other institutions and enterprises to help detect, prevent, and address bias in AI systems.
 
-### Governing AI engagement
+### Reliability and Safety
 
-* **Create a handbook or manual to govern the use of AI in your organization** to help ensure your employees follow the policies your governance system establishes.
-* **Train employees** on the policies, standards, and best practices that your governance system establishes.
+* **Understand your organization’s AI Maturity** by taking Microsoft’s AI Ready Assessment accessible from the link in the resources section. Use the results to determine which AI technologies will fit your organization’s current maturity level and how your organization can best take advantage of AI.
+* **Develop processes for auditing AI systems** in order to evaluate the quality and suitability of data and models, monitor ongoing performance, and verify that systems are behaving as intended based on established performance measures.
+* **Provide detailed explanation of system operation** including design specifications, information about training data, training failures that occurred and potential inadequacies with training data, and the inferences and significant predictions generated.
+* **Design for unintended circumstances** such as accidental system interactions, the introduction of malicious data, or cyberattacks.
+* **Involve domain experts in the design and implementation processes**, especially when AI is being used to help make consequential decisions about people.
+* **Conduct rigorous testing during AI system development and deployment** to ensure that systems can respond safely to unanticipated circumstances, don’t have unexpected performance failures, and don’t evolve in unexpected ways. AI systems involved in high-stakes scenarios that affect human safety or large populations should be tested both in lab and real-world scenarios.
+* **Evaluate when and how an AI system should seek human input for impactful decisions or during critical situations.** Consider how an AI system should transfer control to a human in a manner that is meaningful and intelligible. Design AI systems to ensure humans have the necessary level of input on highly impactful decisions.
+* **Develop a robust feedback mechanism for users to report performance issues** so that they can be resolved quickly.
 
-### Third party AI systems
+### Privacy and Security
 
-* Research the third party’s stance on responsible design before purchasing out-of-the-box AI solutions to ensure they were designed in a manner consistent with your principles, policies, and standards.
-* Include your principles in your request for proposal, so the solution can be design with your principles in mind.
-* Create guidelines on how to safely operate and monitor the system and train your employees on these guidelines before deploying the system.
-* Rigorously test the system to ensure it operates as intended and in a manner consistent with your principles, policies, and standards.
+* **Comply with relevant data protection, privacy, and transparency laws** like GDPR or the California Privacy Act by investing resources in developing compliance technologies and processes or working with a technology leader during the development of AI systems. Develop processes to continually check that the AI systems are satisfying all aspects of these laws.
+* **Design AI systems to maintain the integrity of personal data** so that they can only use personal data during the time it’s required and for the defined purposes that have been shared with customers. Delete inadvertently collected personal data or data that is no longer relevant to the defined purpose.
+* **Protect AI systems from bad actors** by designing AI systems in accordance with secure development and operations foundations, using role-based access, and protecting personal and confidential data that is transferred to third parties. Design AI systems to identify abnormal behaviors and to prevent manipulation and malicious attacks. Learn more about how to protect against new AI-specific security threats by reading our paper, Securing the Future of Artificial Intelligence and Machine Learning at Microsoft accessible in the resources section of this module.
+* **Design AI systems with appropriate controls** for customers to make choices about how and why their data is collected and used.
+* **Ensure your AI system maintains anonymity** by de-identifying personal data.
+* **Conduct privacy and security reviews** for all AI systems.
+* **Research and implement industry best practices** for tracking relevant information about customer data, accessing and using that data, and auditing access and use.
 
-### First party AI systems
+### Inclusiveness
 
-* **Consider having your governance system review or provide advice before the release of any new AI system**, especially for sensitive use cases.
-* **Create processes for employees to analyze an AI system’s** purpose, technical capabilities, reliability, and use case prior to its release.
-* **Provide clear guidelines to ensure your ethical principles are reflected in an AI system** if you are developing AI systems in-house. Support your developers by using industry-established guidelines or developing your own, especially for AI systems that raise complex ethical or human rights considerations.
-* **Consider integrating internal guidelines into project management processes**, such as a checklist aligned to the phases of a data science project.
-* **Leverage tools and resources** to make it easier for developers to spot and design against potentially harmful issues like biases, safety and privacy gaps, and exclusionary practices.
+* **Comply with laws regarding accessibility and inclusiveness** such as the Americans with Disabilities Act, the Communications and Video Accessibility Act, and the European Union laws and U.S. regulations that mandate the procurement of accessible technology.
+* **Use the** Inclusive Design toolkit, available in the resources section of this module, to help system developers understand and address potential barriers in a product environment that could unintentionally exclude people.
+* **Have people with disabilities test your systems** to help you determine whether the system can be used as intended by the broadest possible audience.
+* **Consider commonly used accessibility standards** to help ensure your system is accessible for people of all abilities.
 
-### Participating in external engagements
+### Transparency
 
-* **Engage in public and private partnerships to advance responsible use of AI.** Collaboration between enterprises, public organizations, government, and non-profits is crucial as we address the concern and challenges of AI, while maximizing its potential to deliver broad benefits.
-* **Join coalitions with organizations to foster a technologically savvy workforce** and help ensure workers are prepared for the changing economy.
-* **Share your AI perspective with the greater community, such as governments, businesses, and standards organizations**, to help guide responsible policies and legislation.
-* **Apply your AI expertise and technologies to benefit your community** and improve the lives of people around the world.
+* **Share key characteristics of datasets** to help developers understand if a specific dataset is appropriate for their use case. For more information on tools and techniques for increasing transparency, please see the next unit, Governance and external engagements.
+* **Improve model intelligibility** by leveraging simpler models and generating intelligible explanations of the model’s behavior. Techniques to simplify models without sacrificing accuracy and tools to generate explanations of model’s behaviors can be found in the next unit.
+* **Train employees on how to interpret AI outputs** and ensure that they remain accountable for making consequential decisions based on the results.
+
+### Accountability
+
+* **Set up internal review boards** to provide oversight and guidance on the responsible development and deployment of AI systems.
+* **Ensure your employees are trained** to use and maintain the solution in a responsible and ethical manner and understand when the solution may require additional technical support.
+* **Keep humans with requisite expertise in the loop** by reporting to them and involving them in decisions about model execution. When automation of decisions is required, ensure they are able to inspect, identify, and resolve challenges with model output and execution.
+* **Put in place a clear system of accountability and governance** to conduct remediation or correction activities if models are seen as behaving in an unfair or potentially harmful manner.
+
+At Microsoft, we developed these six principles to guide our use of AI with the aim of respecting collective values while helping society realize the full potential of AI. We encourage organizations to do the same, by either creating or adapting existing principles or guidelines to fit with their culture and priorities.
 
 ## Use these resources to discover more
 
@@ -55,52 +69,5 @@ To help you consider how to leverage governance and external engagements in your
 
 To learn more about our perspective on responsible AI as well as the impact of AI on our future, read our book [The Future Computed](https://blogs.microsoft.com/uploads/2018/02/The-Future-Computed_2.8.18.pdf).
 
-* [Download PDF](https://aka.ms/AIBSRESPGUIIMPDWL) of Implications of responsible AI in business - Practical guide to share with others.
-* [Download PDF](https://aka.ms/AIBSRESPGUIPRIDWL) of Responsible AI: Establishing guiding principles to share with others.
-* [Download PDF](https://aka.ms/AIBSRESPGUIGOVDWL) of Responsible AI: Governance and external engagement to share with others.
-
-Understand your organization’s AI Maturity by taking Microsoft’s [AI Ready Assessment](https://info.microsoft.com/ww-landing-ai-maturity-model-website.html).
-
-### Security and Privacy
-
-* **[Securing the Future of Artificial Intelligence and Machine Learning at Microsoft](https://www.microsoft.com/security/blog/2019/02/07/securing-the-future-of-ai-and-machine-learning-at-microsoft/)** provides guidance on how to protect algorithms, data, and services from new AI-specific security threats. While security is a constantly changing field, this paper outlines emerging engineering challenges and shares initial thoughts on potential remediation.
-* **Homomorphic encryption** is a special type of encryption technique that allows users to compute on encrypted data without decrypting it. The results of the computations are encrypted and can be revealed only by the owner of the decryption key. To further the use of this important encryption technique, we developed the [Simple Encrypted Arithmetic Library](https://www.microsoft.com/en-us/research/project/simple-encrypted-arithmetic-library/) (SEAL) and made it open source.
-* **Multi-party computation (MPC)** allows a set of parties to share encrypted data and algorithms with each other while preserving input privacy and ensuring that no party sees information about other members. For example, with MPC we can build a system that analyzes data from all three hospitals without any of them gaining access to each other’s health data.
-
-### Transparency and fairness
-
-* [Datasheets for datasets](https://arxiv.org/abs/1803.09010) is a paper that proposes information that dataset creators should include in a datasheet for their dataset, such as training datasets, model inputs and outputs, and model features. Like a datasheet for electronic components, a datasheet for datasets would help developers understand if a specific dataset is appropriate for their use case.
-* [Local Interpretable Model-agnostics Explanations (LIME)](https://arxiv.org/pdf/1602.04938.pdf) provides an easily understood description of a machine learning classifier by perturbing the input and seeing how the predictions change.
-* [Methodology for reducing bias in word embedding](https://arxiv.org/pdf/1607.06520.pdf) helps reduce gender biases by modifying embeddings to remove gender stereotypes, such as the association between receptionist and female, while maintaining potentially useful associations such as the association between the words queen and female.
-* [A reductions approach to fair classification](https://www.microsoft.com/en-us/research/publication/a-reductions-approach-to-fair-classification/) provides a method for turning any common classifier into a “fair” classifier according to any of a wide range of fairness definitions. For example, consider a machine learning system tasked with choosing applicants to interview for a job. This method can turn a classifier that predicts who should be interviewed based on previous hiring decisions into a classifier that predicts who should be interviewed while also respecting demographic parity (or another fairness definition).
-* [Generalized Additive Models plus interactions (GA2M)](https://www.microsoft.com/en-us/research/wp-content/uploads/2017/06/kdd13.pdf) is a learning method based on generalized additive models that improves the transparency and intelligibility of a model without sacrificing its accuracy. By leveraging GA2M models, users can better understand what the models have learned and more easily remove bias and other errors that may have been introduced in the learning process.
-
-### Leverage principles and guides
-
-* Use the [Inclusive Design toolkit](https://download.microsoft.com/download/b/0/d/b0d4bf87-09ce-4417-8f28-d60703d672ed/inclusive_toolkit_manual_final.pdf) to help system developers understand and address potential barriers in a product environment that could unintentionally exclude people.
-* [Inclusive design practices](https://www.microsoft.com/design/inclusive/) can help system developers understand and address potential barriers in a product environment that could unintentionally exclude people.
-* Guide facial recognition work with these [six principles](https://blogs.microsoft.com/on-the-issues/2018/12/17/six-principles-to-guide-microsofts-facial-recognition-work/).
-* Discuss the need for [public regulation and corporate responsibility of facial recognition technology.](https://blogs.microsoft.com/on-the-issues/2018/07/13/facial-recognition-technology-the-need-for-public-regulation-and-corporate-responsibility/)  
-* Reference this [methodology for reducing gender bias in word embedding.](https://arxiv.org/pdf/1607.06520.pdf)
-* Learn the lessons from Tay and many other AI-based security to better prepare your AI systems for these new privacy and security threats in [Securing the Future of Artificial Intelligence and Machine Learning at Microsoft.](https://www.microsoft.com/en-us/download/details.aspx?id=57597)
-* Design bots that adhere to ethical principles by following these [ten guidelines.](https://www.microsoft.com/en-us/research/uploads/prod/2018/11/Bot_Guidelines_Nov_2018.pdf)
-* Benefit from 150+ design recommendations our researchers documented into a unified set of guidelines for [human-AI interaction](https://www.microsoft.com/en-us/research/blog/guidelines-for-human-ai-interaction-design/) to help developers design human-centered AI systems.
-* [Partnership on AI](https://www.partnershiponai.org/) (PAI) is a group of researchers, non-profits, non-governmental organizations (NGOs), and companies dedicated to ensuring that AI is developed and utilized in a responsible manner.
-
-### Skill up
-
-* [2018 WEF Future of Jobs Report](http://www3.weforum.org/docs/WEF_Future_of_Jobs_2018.pdf) states many companies have been focusing their upskilling and retraining efforts on those people who already have higher skills and value to the company.
-* The [Microsoft Professional Program](https://academy.microsoft.com/professional-program/tracks/artificial-intelligence/) now has an AI track bringing together expert instructors, provide hands-on labs, offer AI-specific online courses and instructional videos.
-* Developer-focused [AI School](https://aischool.microsoft.com), which provides online videos and other assets that help build professional AI skills.
-* The [Skillful Initiative](https://www.markle.org/rework-america/skillful), a partnership with the Markle Foundation in the US, helps match people with employers and fill high-demand jobs.
-
-### Microsoft Programs
-
-AI for Good includes three programs: [AI for Accessibility](https://www.microsoft.com/ai-for-accessibility), [AI for Earth](https://www.microsoft.com/ai-for-earth/), and [AI for Humanitarian Action](https://www.microsoft.com/ai/ai-for-humanitarian-action), which are already supporting nearly 250 projects across the globe. Learn more about how to protect against new AI-specific security threats by reading our paper, [Securing the Future of Artificial Intelligence and Machine Learning at Microsoft](https://www.microsoft.com/download/details.aspx?id=57597) and follow along with the news. For example, last year we publicly [called for regulation](https://blogs.microsoft.com/on-the-issues/2018/07/13/facial-recognition-technology-the-need-for-public-regulation-and-corporate-responsibility/) of facial recognition technology and outlined our recommendations for the public and private sector alike.
-
-## References
-
-[(1) Inc., “31 Tech Predictions for 2019.” Christina DesMarais, 12 December 2018. and Forbes, “Five Trends Shaping the Future of Customer Experience in 2019.” Blake Morgan, 5 December 2018.](https://www.inc.com/christina-desmarais/31-tech-predictions-for-2019.html)  
-[(2) Gartner Press Release, “Gartner Predicts 70 Percent of Organizations Will Integrate AI to Assist Employees’ Productivity by 2021,” January 24, 2019.](https://www.gartner.com/en/newsroom/press-releases/2019-01-24-gartner-predicts-70-percent-of-organizations-will-int)  
-[(3) Accenture, “Artificial Intelligence is the Future of Growth.” Mark Purdy and Paul Daugherty, September 2016.](https://www.accenture.com/us-en/insight-artificial-intelligence-future-growth)  
-[(4) McKinsey Global Institute, “The age of analytics: Competing in a data-driven world.” Nicolaus Henke, Jacques Bughin, Michael Chui, James Manyika, Tamim Saleh, Bill Wiseman, and Guru Sethupathy, December 2016.](https://www.mckinsey.com/business-functions/mckinsey-analytics/our-insights/the-age-of-analytics-competing-in-a-data-driven-world)
+* [Download PDF](https://aka.ms/AA62hp7) of Implications of responsible AI - Practical guide to share with others.
+* [Download PDF](https://aka.ms/AA629xb) of Responsible AI - Identify guiding principles to share with others.

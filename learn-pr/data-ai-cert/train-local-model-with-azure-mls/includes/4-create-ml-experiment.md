@@ -1,5 +1,3 @@
-You might notice that, depending on your local machine capacity, it takes a long time to fit models with parameters of different values or to find a value of `k` that returns the best results. In this case, you should try running the model on a remote cluster.
-
 ## Run and experiment overview
 
 Before you begin, it's imperative to familiarize yourself with two concepts: run and experiment.
@@ -20,9 +18,9 @@ Locate the subscription you want to use and replace the `{azure-subscription-id}
 from azureml.core import Workspace,Experiment,Run
 
 ws = Workspace.create(
-            name='learn-workspace',
+            name='AMLSWorkspace',
             subscription_id='{azure-subscription-id}', 
-            resource_group='mslearn-amls',
+            resource_group='rgAMLSLearnworkspace',
             create_resource_group=True,
             location='eastus2'
 )
@@ -34,6 +32,7 @@ ws = Workspace.create(
 With a `Workspace` object, you can create an `Experiment` and a `run` with the Azure ML SDK:
 
 ```python
+from azureml.core import Experiment
 #Create an experiment
 experiment = Experiment(workspace = ws, name = "my-first-experiment")
 
@@ -43,9 +42,19 @@ run.log("trial",1)
 run.complete()
 ```
 
+
+
 ## View the logged results
 
-When the run finishes, you can view the experiment run in the Azure portal. To print a URL that links to the results for the last run, use the following code:
+Once the job has finished, the code below will display some details about the job you just ran. 
+
+```python
+from azureml.widgets import RunDetails
+
+RunDetails(run).show()
+```
+
+You can view the experiment run in the Azure portal. To print a URL that links to the results for the last run, use the following code:
 
 ```python
 print(run.get_portal_url())
@@ -53,4 +62,4 @@ print(run.get_portal_url())
 
 Navigate to the presented URL in a browser window to see the results of the experiment. It should open the Azure portal and display something like the below screenshot.
 
-![The screenshot depicts the my-first-experiment results in a browser window.](../media/5-experiment-result.png)
+![A screenshot showing the my-first-experiment results in a browser window.](../media/5-experiment-result.png)

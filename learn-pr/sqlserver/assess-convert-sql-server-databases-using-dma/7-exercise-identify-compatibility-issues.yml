@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn-sqlserver.assess-convert-sql-server-databases-using-dma.7-exercise-identify-compatibility-issues
+title: "Exercise: Identify compatibility issues"
+metadata:
+  title: "Exercise: Identify compatibility issues"
+  description: "Exercise: Identify compatibility issues"
+  ms.date: 01/31/2019
+  author: geoffallix
+  ms.author: v-gea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+  ROBOTS: NOINDEX
+labId: 46511
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-exercise-identify-compatibility-issues.md)]

@@ -7,7 +7,6 @@ metadata:
   author: markjulmar
   ms.author: smmark
   ms.date: 9/24/2018
-  #ms.learn-contact: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Administer containers in Azure
@@ -23,10 +22,12 @@ products:
 - azure-container-instances
 - azure-container-registry
 modules:
-#- learn.intro-to-containers
+- learn.intro-to-docker-containers
+- learn.intro-to-containers
 - learn.azure-container-registry
 - learn.run-docker-containers-aci
 - learn.azure.deploy-run-container-app-service
+- learn.intro-to-azure-kubernetes-service
 #TODO: Add - Orchestrate containerized application (POST-IGNITE)
 trophy:
   uid: learn.administer-containers-in-azure.trophy

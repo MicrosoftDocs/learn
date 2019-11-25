@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn-sqlserver.run-sql-server-2017-linux-containers.5-exercise-run-sql-server-2017-linux-containers
+title: Exercise - Run SQL Server 2017 on Linux conainers
+metadata:
+  title: Exercise - Run SQL Server 2017 on Linux conainers
+  description: In this unit, you will install Docker and use it to run a SQL Server container.
+  ms.date: 06/11/2019
+  author: alistairmatthews
+  ms.author: v-alism
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+## TODO: Insert the correct Lab ID here when we have it.
+labId: 51799
+content: |
+  [!include[](includes/5-exercise-run-sql-server-2017-linux-containers.md)]

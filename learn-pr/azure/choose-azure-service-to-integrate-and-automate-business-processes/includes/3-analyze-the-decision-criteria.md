@@ -8,8 +8,6 @@ The following diagram shows a simplified flow chart that you can use to choose t
 
 ![Server choice flow chart](../media/3-service-choice-flow-diagram.png)
 
-<!-- TODO: In the design, a video that animates this flow chart was suggested -->
-
 The first question to ask is whether you prefer to design the workflow in a GUI designer tool or by writing code. The following list has some  valid reasons for using a design-first tool:
 
 - People who design the workflow have no coding experience.

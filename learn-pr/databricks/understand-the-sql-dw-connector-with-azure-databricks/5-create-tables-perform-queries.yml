@@ -5,10 +5,10 @@ metadata:
   title: Create tables and perform queries
   description: Learn how to create tables and perform queries.
   ms.date: 02/20/2019
-  author: barlan
-  ms.author: barlan
+  author: jasallen 
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 15
+durationInMinutes: 10
 content: |
   [!include[](includes/5-create-tables-perform-queries.md)]

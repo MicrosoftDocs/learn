@@ -9,7 +9,8 @@ Follow these steps to create connections between the virtual networks and to con
 1. In Cloud Shell, run the following command to create the peering connection between the **SalesVNet** and **MarketingVNet** virtual networks. This command also permits virtual network access across this peering connection.
 
     ```azurecli
-    az network vnet peering create --name SalesVNet-To-MarketingVNet \
+    az network vnet peering create \
+        --name SalesVNet-To-MarketingVNet \
         --remote-vnet MarketingVNet \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --vnet-name SalesVNet \
@@ -19,7 +20,8 @@ Follow these steps to create connections between the virtual networks and to con
 1. Run the following command to create a reciprocal connection from **MarketingVNet** to **SalesVNet**. This step completes the connection between these virtual networks.
 
     ```azurecli
-    az network vnet peering create --name MarketingVNet-To-SalesVNet \
+    az network vnet peering create \
+        --name MarketingVNet-To-SalesVNet \
         --remote-vnet SalesVNet \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --vnet-name MarketingVNet \
@@ -31,7 +33,8 @@ Now that you have connections between Sales and Marketing, create connections be
 1. In Cloud Shell, run the following command to create the peering connection between the **MarketingVNet** and **ResearchVNet** virtual networks.
 
     ```azurecli
-    az network vnet peering create --name MarketingVNet-To-ResearchVNet \
+    az network vnet peering create \
+        --name MarketingVNet-To-ResearchVNet \
         --remote-vnet ResearchVNet \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --vnet-name MarketingVNet \
@@ -41,7 +44,8 @@ Now that you have connections between Sales and Marketing, create connections be
 1. Run the following command to create the reciprocal connection between **ResearchVNet** and **MarketingVNet**.
 
     ```azurecli
-    az network vnet peering create --name ResearchVNet-To-MarketingVNet \
+    az network vnet peering create \
+        --name ResearchVNet-To-MarketingVNet \
         --remote-vnet MarketingVNet \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --vnet-name ResearchVNet \
@@ -55,7 +59,8 @@ Now that you've created the peering connections between the virtual networks, ma
 1. In Cloud Shell, run the following command to check the connection between **SalesVNet** and **MarketingVNet**.
 
     ```azurecli
-    az network vnet peering list --resource-group <rgn>[sandbox resource group name]</rgn> \
+    az network vnet peering list \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
         --vnet-name SalesVNet \
         --output table
     ```
@@ -65,7 +70,8 @@ Now that you've created the peering connections between the virtual networks, ma
 1. Run the following command to check the peering connection between the **ResearchVNet** and **MarketingVNet** virtual networks.
 
     ```azurecli
-    az network vnet peering list --resource-group <rgn>[sandbox resource group name]</rgn> \
+    az network vnet peering list \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
         --vnet-name ResearchVNet \
         --output table
     ```
@@ -75,7 +81,8 @@ Now that you've created the peering connections between the virtual networks, ma
 1. Run the following command to check the peering connections for the **MarketingVNet** virtual network.
 
     ```azurecli
-    az network vnet peering list --resource-group <rgn>[sandbox resource group name]</rgn> \
+    az network vnet peering list \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
         --vnet-name MarketingVNet \
         --output table
     ```
@@ -93,7 +100,8 @@ You can further check the peering connection by looking at the routes that apply
 1. Run the following command to look at the routes that apply to the **SalesVM** network interface.
 
     ```azurecli
-    az network nic show-effective-route-table --resource-group <rgn>[sandbox resource group name]</rgn> \
+    az network nic show-effective-route-table \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name SalesVMVMNic \
         --output table
     ```
@@ -114,7 +122,8 @@ You can further check the peering connection by looking at the routes that apply
 1. Look at the routes for **MarketingVM**.
 
     ```azurecli
-    az network nic show-effective-route-table --resource-group <rgn>[sandbox resource group name]</rgn> \
+    az network nic show-effective-route-table \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name MarketingVMVMNic \
         --output table
     ```
@@ -136,7 +145,8 @@ You can further check the peering connection by looking at the routes that apply
 1. Look at the routes for **ResearchVM**.
 
     ```azurecli
-    az network nic show-effective-route-table --resource-group <rgn>[sandbox resource group name]</rgn> \
+    az network nic show-effective-route-table \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name ResearchVMVMNic \
         --output table
     ```
@@ -154,4 +164,4 @@ You can further check the peering connection by looking at the routes that apply
     Default   Active   10.2.0.0/16       VNetGlobalPeering
     ```
 
-Now that your peering is configured, let's take a look at how this affects the communication between VMs.
+Now that your peering connections are configured, let's take a look at how this affects the communication between VMs.

@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn-sqlserver.deploy-sql-server-linux.10-knowledge-check
+title: Knowledge check - client tools
+metadata:
+  title: Knowledge check - client tools
+  description: In this unit, you will test your understanding of SQL Server on Linux by answering questions.
+  ms.date: 06/11/2019
+  author: alistairmatthews
+  ms.author: v-alism
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You want to install SQL Server on a Linux container. Which is the most straightforward method? Select the best answer."
+    choices:
+    - content: "Install a SQL Server for Linux container image on any operating system."
+      isCorrect: false
+      explanation: "Containers use components of the host operating system and so must use the same operating system as the host. There are container images available that include SQL Server."
+    - content: "Install a SQL Server for Linux container image on a Linux distribution."
+      isCorrect: true
+      explanation: "Containers use components of the host operating system and so must use the same operating system as the host. There are container images available that include SQL Server."
+    - content: "Install SQL Server for Linux on a Docker container image."
+      isCorrect: false
+      explanation: "Containers use components of the host operating system and so must use the same operating system as the host. There are container images available that include SQL Server."
+    - content: "Install SQL Server for Linux on a Windows container image."
+      isCorrect: false
+      explanation: "Containers use components of the host operating system and so must use the same operating system as the host. There are container images available that include SQL Server."
+  - content: "By default, which components does SQL Server for Linux include? Select the best answer."
+    choices:
+    - content: "Database Engine"
+      isCorrect: true
+      explanation: "The default installation only includes the database engine although you can add command-line tools and a graphical tool, where appropriate."
+    - content: "Command-line tools"
+      isCorrect: false
+      explanation: "The default installation only includes the database engine although you can add command-line tools and a graphical tool, where appropriate."
+    - content: "Graphical tools"
+      isCorrect: false
+      explanation: "The default installation only includes the database engine although you can add command-line tools and a graphical tool, where appropriate." 
+  - content: "You want to deploy SQL Server on a Docker container. What is the correct process? Select the best answer."
+    choices:
+    - content: "Install Docker. It already contains SQL Server."
+      isCorrect: false
+      explanation: "To install SQL Server on a Docker container, pull and run the SQL Server image."
+    - content: "Use the sudo zypper install command."
+      isCorrect: false
+      explanation: "To install SQL Server on a Docker container, pull and run the SQL Server image."
+    - content: "Pull and run the SQL Server container image."
+      isCorrect: true
+      explanation: "To install SQL Server on a Docker container, pull and run the SQL Server image."
+ 

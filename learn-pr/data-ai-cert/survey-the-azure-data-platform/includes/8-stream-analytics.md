@@ -8,7 +8,7 @@ Data engineers use Azure Stream Analytics to process streaming data and respond 
 
 If your organization must respond to data events in real time or analyze large batches of data in a continuous time-bound stream, Stream Analytics is a good solution. Your organization must decide whether to work with streaming data or batch data.
 
-In real time, Stream Analytics ingests streaming data from applications or IoT devices and gateways into an event hub or IoT hub. The event hub or IoT hub then streams the data into Stream Analytics for real-time analysis.
+In real time, data is ingested from applications or IoT devices and gateways into an event hub or IoT hub. The event hub or IoT hub then streams the data into Stream Analytics for real-time analysis.
 
 Batch systems process groups of data that are stored in an Azure Blob store. They do this in a single job that runs at a predefined interval. Don't use batch systems for business intelligence systems that can't tolerate the predefined interval. For example, an autonomous vehicle can't wait for a batch system to adjust its driving. Similarly, a fraud-detection system must decline a questionable financial transaction in real time.
 
@@ -26,7 +26,7 @@ You can use Azure Storage to store data before you process it in batches.
 
 ![Table comparing streaming IoT capabilities](../media/8-streaming-comparison.png)
 
-## Data processing 
+## Data processing
 
 To process streaming data, set up Stream Analytics jobs with input and output pipelines. Inputs are provided by Event Hubs, IoT Hubs, or Azure Storage. Stream Analytics can route job output to many storage systems. These systems include Azure Blob, Azure SQL Database, Azure Data Lake Storage, and Azure Cosmos DB.
 
@@ -34,7 +34,7 @@ After storing the data, run batch analytics in Azure HDInsight. Or send the outp
 
 ## Queries
 
-To define job transformations, use a simple, declarative Stream Analytics query language. The language should let you use simple SQL constructs to write complex temporal queries and analytics. 
+To define job transformations, use a simple, declarative Stream Analytics query language. The language should let you use simple SQL constructs to write complex temporal queries and analytics.
 
 The Stream Analytics query language is consistent with the SQL language. If you're familiar with the SQL language, you can start creating jobs.
 

@@ -15,8 +15,6 @@ As you have seen, Azure includes the following technologies that you can use to 
 
 Your choice of technology depends on whether you prefer a design-first or a code-first approach, and whether you have skilled developers to work on the project.
 
-Remember that you can use a combination of these technologies for any given project. That's because, for example, you can call a Microsoft Flow from an action within an Azure Logic App. These technologies constitute a rich toolbox that will help you improve quality in your organization by building strict business processes.
-
 ## Further reading
 
 - [What are Microsoft Flow, Logic Apps, Functions, and WebJobs?](https://docs.microsoft.com/azure/azure-functions/functions-compare-logic-apps-ms-flow-webjobs)

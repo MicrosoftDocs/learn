@@ -4,7 +4,7 @@ In your first week on your new job, you've  looked through the existing resource
 
 ## What are resource groups?
 
-Resource groups are a fundamental element of the Azure platform. A resource group is a logical container for resources deployed on Azure. These resources are anything you create in an Azure subscription like virtual machines, Application Gateways, and CosmosDB instances. All resources must be in a resource group and a resource can only be a member of a single resource group. Resources can be moved between resource groups at any time. Resource groups can't be nested. Before any resource can be provisioned, you need a resource group for it to be placed in.
+Resource groups are a fundamental element of the Azure platform. A resource group is a logical container for resources deployed on Azure. These resources are anything you create in an Azure subscription like virtual machines, Application Gateways, and CosmosDB instances. All resources must be in a resource group and a resource can only be a member of a single resource group. Many resources can be moved between resource groups with some services having specific limitations or requirements to move. Resource groups can't be nested. Before any resource can be provisioned, you need a resource group for it to be placed in.
 
 ### Logical grouping
 
@@ -35,7 +35,7 @@ Let's walk through the steps you'd take to create a resource group in the Azure 
 1. Open a web browser and sign into the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
     > [!IMPORTANT]
-    > Make sure to use your _own_ subscription. When you are in the free sandbox environment, it will not allow you to create resource groups. You can tell which subscription you are by looking at the tenant name under your profile picture. You can switch tenants by clicking on your profile picture and selecting **Switch Directory** from the options menu.
+    > Make sure to use your _own_ subscription. When you are in the free sandbox environment, it will not allow you to create resource groups. You can tell which subscription you are using by looking at the tenant name under your profile picture. You can switch tenants by clicking on your profile picture and selecting **Switch Directory** from the options menu.
 
 1. On the left pane, select **+ Create a resource**
 
@@ -91,7 +91,7 @@ You can start with using an understandable naming convention. We named our resou
 
 ### Organizing principles
 
-Resource groups can be organized in a number of ways, let's take a look at a few examples. We might put all resources that are _core infrastructure_ into this resource group. But we could also organize them strictly by resource type. For example, put all VNets in one resource group, all virtual machines in another resource group, and all Cosmos DB instances in yet another resource group.
+Resource groups can be organized in a number of ways, let's take a look at a few examples. We might put all resources that are _core infrastructure_ into this resource group. But we could also organize them strictly by resource type. For example, put all VNets in one resource group, all virtual machines in another resource group, and all Azure Cosmos DB instances in yet another resource group.
 
 ![Image of resources organized by type](../media/2-resource-type-rg.png)
 

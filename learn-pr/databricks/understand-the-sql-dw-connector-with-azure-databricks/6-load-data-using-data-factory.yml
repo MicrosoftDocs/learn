@@ -5,10 +5,10 @@ metadata:
   title: Load data by using Data Factory
   description: Learn how to load data by using Data Factory.
   ms.date: 02/20/2019
-  author: barlan
-  ms.author: barlan
+  author: jasallen 
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 20
+durationInMinutes: 15
 content: |
   [!include[](includes/6-load-data-using-data-factory.md)]

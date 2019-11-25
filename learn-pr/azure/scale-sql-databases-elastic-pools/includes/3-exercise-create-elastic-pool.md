@@ -1,7 +1,5 @@
 In this exercise, we'll create two Azure SQL databases to represent two fitness locations, and then create a SQL elastic pool to manage two databases.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Create SQL servers
 
 We'll start by creating a SQL server for our fitness databases and we'll add databases for two locations. The steps use Vancouver and Paris but feel free to use other location names. 
@@ -18,7 +16,7 @@ We'll start by creating a SQL server for our fitness databases and we'll add dat
     PASSWORD=<password>
     ```
 
-1. Create a server named **FitnessSQLServer-#**.
+1. Create a server named **FitnessSQLServer-nnnn**.
     ```azurecli
     az sql server create \
     --name $SERVERNAME \
@@ -28,7 +26,7 @@ We'll start by creating a SQL server for our fitness databases and we'll add dat
     --admin-password $PASSWORD
     ```
 
-1. Add a database named **FitnessVancouverDB** to **FitnessSQLServer-#**.
+1. Add a database named **FitnessVancouverDB** to **FitnessSQLServer-nnnn**.
     ```azurecli
     az sql db create \
     --resource-group $RESOURCE_GROUP \
@@ -36,7 +34,7 @@ We'll start by creating a SQL server for our fitness databases and we'll add dat
     --name FitnessVancouverDB
     ```
 
-1. Add a database named **FitnessParisDB** to **FitnessSQLServer-#**.
+1. Add a database named **FitnessParisDB** to **FitnessSQLServer-nnnn**.
     ```azurecli
     az sql db create \
     --resource-group $RESOURCE_GROUP \
@@ -56,9 +54,13 @@ We're ready to set up the resources for the SQL elastic pool. We'll switch to th
 
 1. Give your new elastic pool a meaningful name such as **FitnessSQLPool**, and ensure the <rgn>[sandbox resource group name]</rgn> resource group is selected.
 
-1. In the **Server** section, ensure your existing **FitnessSQLServer-#** server is selected.
+1. In the **Server** section, ensure your existing **FitnessSQLServer-nnnn** server is selected
 
-1. Press **Create**. The SQL elastic pool may take several minutes to provision.
+1. In the **Compute + storage** section, click **Configure elastic pool**.
+
+1. Click **Basic**, and then click **Apply**.
+
+1. Click **Review + create**. Review your information, and then click **Create**. The SQL elastic pool may take several minutes to provision.
 
 ## Add existing databases to the elastic pool
 

@@ -5,10 +5,10 @@ metadata:
   title: Manage SQL Data Warehouse
   description: Learn how to manage SQL Data Warehouse.
   ms.date: 02/20/2019
-  author: barlan
-  ms.author: barlan
+  author: jasallen 
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 15
+durationInMinutes: 10
 content: |
   [!include[](includes/4-manage.md)]

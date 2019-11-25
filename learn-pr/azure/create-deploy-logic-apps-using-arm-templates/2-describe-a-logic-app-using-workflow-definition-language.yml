@@ -5,11 +5,10 @@ metadata:
   title: Describe a Logic Apps workflow using the Workflow Definition Language
   description: Describe a Logic Apps workflow using the Workflow Definition Language
   ms.date: 05/03/2019
-  author: andrewjbyrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 12
 content: |
   [!include[](includes/2-describe-a-logic-app-using-workflow-definition-language.md)]
@@ -29,7 +28,7 @@ quiz:
       isCorrect: false
       explanation: 'The parameters section is where variables to be used at run time can be defined'
 
-  - content: 'In which section of a Logic Apps workflow definition can you send a response to an HTTP request, returning a message bidy, status code , and message headers?'
+  - content: 'In which section of a Logic Apps workflow definition can you send a response to an HTTP request, returning a message body, status code , and message headers?'
     choices:
     - content: 'The triggers section'
       isCorrect: false

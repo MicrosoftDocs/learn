@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-code-blocks.solution
+title: Solution
+metadata:
+  title: Solution
+  description: Solution to the challenge in this module.
+  ms.date: 09/26/2019
+  author: bobtabor-msft
+  ms.author: rtabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 1
+azureSandbox: false
+interactive: csharp
+content: |
+  [!include[](includes/6-solution.md)]

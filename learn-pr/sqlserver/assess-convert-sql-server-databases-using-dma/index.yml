@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn-sqlserver.assess-convert-sql-server-databases-using-dma
+metadata:
+  title: Assess and convert SQL Server databases using the Data Migration Assistant (DMA) 
+  description: The Data Migration Assistant is a standalone application that can find compatibility issues between the current version of your database, and the target. Furthermore, it guides you towards new features that would enhance the performance of your database when upgraded. This module shows you how to install DMA on your client machine, use it to find compatibility issues, and how to upgrade your database.
+  ms.date: 01/31/2019
+  author: geoffallix
+  ms.author: v-gea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+title: Assess and convert SQL Server Databases using the Data Migration Assistant (DMA)
+summary: The Data Migration Assistant (DMA) is a standalone application that can find compatibility issues between the current version of your database, and the target. Furthermore, it guides you towards new features that would enhance the performance of your database when upgraded. This module shows you how to install DMA on your client machine, use it to find compatibility issues, and how to upgrade your database.
+abstract: |
+ In this module, you will:
+ - Decide if the DMA is the best tool to use for a given administration task
+ - Install the DMA on your client machine
+ - Identify compatibility issues prior to upgrade 
+ - Upgrade a database using the DMA
+prerequisites: |
+  - Experience administering SQL Server databases
+  - Knowledge of SQL Server editions and versions
+  - Understanding of upgrading SQL Server databases
+iconUrl: /learn/achievements/sqlserver/assess-and-convert-sql-server-databases-using-dma.svg
+levels:
+- beginner
+roles:
+- administrator
+products: 
+- sql-server
+units:
+- learn-sqlserver.assess-convert-sql-server-databases-using-dma.1-introduction
+- learn-sqlserver.assess-convert-sql-server-databases-using-dma.2-decide-dma-right-your-task
+- learn-sqlserver.assess-convert-sql-server-databases-using-dma.3-install-dma
+- learn-sqlserver.assess-convert-sql-server-databases-using-dma.4-identify-compatibility-issues
+- learn-sqlserver.assess-convert-sql-server-databases-using-dma.5-upgrade-database
+- learn-sqlserver.assess-convert-sql-server-databases-using-dma.6-exercise-install-dma
+- learn-sqlserver.assess-convert-sql-server-databases-using-dma.7-exercise-identify-compatibility-issues
+- learn-sqlserver.assess-convert-sql-server-databases-using-dma.8-exercise-upgrade-database
+- learn-sqlserver.assess-convert-sql-server-databases-using-dma.9-module-summary
+badge: 
+  uid: learn-sqlserver.assess-convert-sql-server-databases-using-dma.badge

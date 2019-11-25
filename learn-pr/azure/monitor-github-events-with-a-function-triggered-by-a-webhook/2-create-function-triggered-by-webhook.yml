@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.create-function-triggered-by-webhook
 metadata:
-  title: Create an Azure function triggered by a webhook
-  description: Create an Azure function triggered by a webhook
+  title: Create a function that is triggered by a webhook
+  description: Create a function that is triggered by a webhook
   ms.date: 04/30/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-title: Create an Azure function triggered by a webhook
+title: Create a function that is triggered by a webhook
 durationInMinutes: 4
 content: |
   [!include[](includes/2-create-function-triggered-by-webhook.md)]

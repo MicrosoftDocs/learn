@@ -2,16 +2,18 @@ Complex or repetitive tasks often take a great deal of administrative time. Orga
 
 This is important in the Customer Relationship Management (CRM) company example. There, you test your software on multiple Linux Virtual Machines (VMs) that you need to continuously delete and recreate. You want to use a PowerShell script to automate the creation of the VMs vs. creating them manually each time like we just did.
 
-Beyond the core operation of creating a VM you have a few additional requirements for your script. 
+Beyond the core operation of creating a VM you have a few additional requirements for your script.
+
 - You will create multiple VMs, so you want to put the creation inside a loop
 - You need to create VMs in three different resource groups, so the name of the resource group should be passed to the script as a parameter
 
 In this section, you will see how to write and execute an Azure PowerShell script that meets these requirements.
 
 ## What is a PowerShell script?
+
 A PowerShell script is a text file containing commands and control constructs. The commands are invocations of cmdlets. The control constructs are programming features like loops, variables, parameters, comments, etc. supplied by PowerShell.
 
-PowerShell script files have a **.ps1** file extension. You can create and save these files with any text editor. 
+PowerShell script files have a **.ps1** file extension. You can create and save these files with any text editor.
 
 > [!TIP]
 > If you’re writing PowerShell scripts under Windows, you can use the Windows PowerShell Integrated Scripting Environment (ISE). This editor provides features such as syntax coloring and a list of available cmdlets.
@@ -27,9 +29,11 @@ Once you have written the script, execute it from the PowerShell command line by
 ```
 
 ## PowerShell techniques
+
 PowerShell has many features found in typical programming languages. You can define variables, use branches and loops, capture command-line parameters, write functions, add comments, and so on. We will need three features for our script: variables, loops, and parameters.
 
 ### Variables
+
 As you saw in the last unit, PowerShell supports variables. Use **$** to declare a variable and **=** to assign a value. For example:
 
 ```powershell
@@ -51,6 +55,7 @@ New-AzResourceGroup -Name "MyResourceGroup" -Location $loc
 ```
 
 ### Loops
+
 PowerShell has several loops: **For**, **Do...While**, **For...Each**, and so on. The **For** loop is the best match for our needs because we will execute a cmdlet a fixed number of times.
 
 The core syntax is shown below; the example runs for two iterations and prints the value of **i** each time. The comparison operators are written **-lt** for "less than", **-le** for "less than or equal", **eq** for "equal", **ne** for "not equal", etc.
@@ -63,6 +68,7 @@ For ($i = 1; $i -lt 3; $i++)
 ```
 
 ### Parameters
+
 When you execute a script, you can pass arguments on the command line. You can provide names for each parameter to help the script extract the values. For example:
 
 ```powershell

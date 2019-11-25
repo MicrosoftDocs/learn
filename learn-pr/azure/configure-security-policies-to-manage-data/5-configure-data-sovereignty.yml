@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-security.configure-security-policies-to-manage-data.configure-data-sovereignty
+title: Understand data sovereignty
+metadata:
+  title: Understand data sovereignty
+  description: Understand data sovereignty
+  ms.date: 09/30/2019
+  author: markjulmar
+  ms.author: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-configure-data-sovereignty.md)]

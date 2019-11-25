@@ -5,9 +5,8 @@ metadata:
   title: Exercise - Add a data disk to a VM
   description: Exercise - Add a data disk to a VM
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -16,13 +15,13 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-add-data-disks-to-azure-virtual-machines.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.Compute/virtualMachines"
-  hint: "Run the `az vm create` command as shown to create your virtual machine."
+#tasks:
+#- action: exists
+#  environment: azure
+#  azure:
+#    resource:
+#      type: "Microsoft.Compute/virtualMachines"
+#  hint: "Run the `az vm create` command as shown to create your virtual machine."
 # TODO: See https://github.com/MicrosoftDocs/learn-pr/issues/2816
 # - action: exists
 #   environment: azure

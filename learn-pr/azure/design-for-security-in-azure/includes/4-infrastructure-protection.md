@@ -35,6 +35,26 @@ In addition to managing Azure resource access with RBAC, a comprehensive approac
 
 ![Screenshot of Privileged identity management dashboard](../media/PIM_Dashboard.png)
 
+With the Azure AD Privileged Identity Management (PIM) service, you can manage, control, and monitor access to important resources in your organization. This includes access to resources in Azure AD; Azure; and other Microsoft Online Services, like Office 365 and Microsoft Intune. This control does not eliminate the need for users to carry out privileged operations in Azure AD, Azure, Office 365, and Software as a Service (SaaS) apps.
+
+Organizations can give users just-in-time (JIT) privileged access to Azure resources and Azure AD. Oversight is needed for what those users do with their administrator privileges. PIM helps mitigate the risk of excessive, unnecessary, or misused access rights.
+
+Here are some of the key features of PIM:
+
+* Providing just-in-time privileged access to Azure AD and Azure resources
+* Assigning time-bound access to resources by using start and end dates
+* Requiring approval to activate privileged roles
+* Enforcing Azure Multi-Factor Authentication (MFA) to activate any role
+* Using justification to understand why users activate
+* Getting notifications when privileged roles are activated
+* Conducting access reviews to ensure that users still need roles
+* Downloading an audit history for an internal or external audit
+
+To use PIM, you need one of the following paid or trial licenses:
+
+* Azure AD Premium P2
+* Enterprise Mobility + Security (EMS) E5
+
 ## Providing identities to services
 
 It's often valuable for services to have identities. Often times, and against best practices, credential information is embedded in configuration files. With no security around these configuration files, anyone with access to the systems or repositories can access these credentials and risk exposure.

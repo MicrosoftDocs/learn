@@ -7,6 +7,7 @@ You have been executing multiple rounds of tests on a single VM but noticed that
 Here, you will see how to manage Azure resources using Azure PowerShell. You will use Azure PowerShell interactively for one-off tasks and write scripts to automate repeated tasks. 
 
 ## Learning objectives
+
 In this module, you will:
 
 - Decide if Azure PowerShell is the right tool for your Azure administration tasks

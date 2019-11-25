@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Test your knowledge by answering questions about skills you learned from the lab.
   ms.date: 02/20/2019
-  author: barlan
-  ms.author: barlan
+  author: jasallen 
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
@@ -16,15 +16,15 @@ quiz:
   questions:
     - content: "Which DataFrame method do you use to create a temporary view?"
       choices:
-        - content: createOrReplaceTempView()
-          explanation: Correct. You use this method to create temporary views in DataFrames.
-          isCorrect: true
         - content: createTempView()
           isCorrect: false
           explanation: This method name is incorrect.
         - content: createTempViewDF()
           isCorrect: false
           explanation: This method name is incorrect.
+        - content: createOrReplaceTempView()
+          explanation: Correct. You use this method to create temporary views in DataFrames.
+          isCorrect: true
     - content: "How do you create a DataFrame object?"
       choices:
         - content: Introduce a variable name and equate it to something like myDataFrameDF =.
@@ -38,23 +38,23 @@ quiz:
           explanation: This syntax is incorrect, and this approach isn't the right way to create DataFrame objects.
     - content: "What is the DataFrame equivalent of the SQL statement SELECT count(*) AS total?"
       choices:
-        - content: .agg(count("*").alias("total"))
-          explanation: Correct. In DataFrames, this syntax produces the same result as the SQL statement shown earlier.
-          isCorrect: true
         - content: .select(count("*").alias("total"))
           isCorrect: false
           explanation: This syntax is incorrect.
         - content: .select(agg("*").alias("total"))
           isCorrect: false
           explanation: This syntax is incorrect.
+        - content: .agg(count("*").alias("total"))
+          explanation: Correct. In DataFrames, this syntax produces the same result as the SQL statement shown earlier.
+          isCorrect: true  
     - content: "What is the Python syntax for defining a DataFrame in Spark from an existing Parquet file in DBFS?"
       choices:
-        - content: IPGeocodeDF = spark.read.parquet("dbfs:/mnt/training/ip-geocode.parquet")
-          explanation: This syntax is correct.
-          isCorrect: true
         - content: IPGeocodeDF = parquet.read("dbfs:/mnt/training/ip-geocode.parquet")
           isCorrect: false
           explanation: This syntax is incorrect.
+        - content: IPGeocodeDF = spark.read.parquet("dbfs:/mnt/training/ip-geocode.parquet")
+          explanation: This syntax is correct.
+          isCorrect: true
         - content: IPGeocodeDF = spark.parquet.read("dbfs:/mnt/training/ip-geocode.parquet")
           isCorrect: false
           explanation: This syntax is incorrect.

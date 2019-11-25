@@ -8,11 +8,11 @@ Recall the two terms we defined:
 
 ## Cleanup
 
-To avoid additional costs in your Azure account, delete the **mslearn-amls** resource group. To remove all the resources we created in this module, follow these steps.
+To avoid additional costs in your Azure account, delete the resource group you created for this learning path. To remove all the resources we created in this module, follow these steps.
 
 1. Sign into the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Find the **mslearn-amls** resource group by selecting **Resource groups** in the Azure sidebar.
+1. Find the resource group by selecting **Resource groups** in the Azure sidebar.
 
 1. Select the resource group, and right-click on the row to open the context menu. You also can use the "..." button on the far-right side of the row.
 
@@ -24,5 +24,5 @@ To avoid additional costs in your Azure account, delete the **mslearn-amls** res
 
 Check out the following documentation links to learn more about using Azure Notebooks.
 
-- [Azure Notebooks QuickStart](https://docs.microsoft.com/azure/notebooks/quickstart-sign-in-azure-notebooks)
-- [Explore HyperDrive with a Jupyter Notebook](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/training-with-deep-learning/train-hyperparameter-tune-deploy-with-tensorflow/train-hyperparameter-tune-deploy-with-tensorflow.ipynb)
+- [Azure Notebooks quickstart](https://docs.microsoft.com/azure/notebooks/quickstart-sign-in-azure-notebooks)
+- [How to Tune Hyperparameters](https://docs.microsoft.com/azure/machine-learning/service/how-to-tune-hyperparameters)

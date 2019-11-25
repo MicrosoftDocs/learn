@@ -4,9 +4,8 @@ metadata:
   title: Exercise - Secure access to resources
   description: Learn how to create a conditional access rule to require users to perform multi-factor authentication when they access the Azure portal.
   ms.date: 04/15/2019
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: MicrosoftGuyJFlo
+  ms.author: joflore
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

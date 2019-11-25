@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-azure-bot-services-bot.2-create-web-app-bot
-title: Create an Azure web app bot
+title: Exercise - Create an Azure web app bot
 metadata:
-  title: Create an Azure web app bot
+  title: Exercise - Create an Azure web app bot
   description: Create an Azure web app bot
   ms.date: 09/24/2018
-  author: JeffProsise
-  ms.author: shanama
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 #labId: 46466
 durationInMinutes: 15
 content: |

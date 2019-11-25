@@ -8,29 +8,32 @@ Let's start by setting up the environment. Setup includes provisioning a sample 
 
     ![Create a SQL data warehouse](../media/create-sql-data-warehouse.png)
 
-1. On the **Create SQL Data Warehouse** blade, enter this information:
+1. On the **Create SQL Data Warehouse** pane, enter this information in the **Basics** tab:
 
-   - _Database name_: Enter a unique name. (Make sure you see a green check mark.)
-   - _Subscription_: Select the subscription you're using for this module.
+   - _Subscription_: Select the subscription you're using for this module.  ***The subscription you use will incur charges, this is not a free exercise. Pricing is shown on New Server pane.***
    - _Resource group_: Select the resource group you're using for this module.
-   - _Select source_: Select **Blank database**.
-1. Select **Server (Configure required settings)**, and then select **Create new server**. On the **New server** blade, enter this information:
-   - _Server name_: Enter a unique name. (Make sure you see a green check mark.)
-   - _Server admin login_: Enter **dwlab**.
-   - _Password_: Enter a valid password, and then confirm the password.
-   - _Location_: Select the location you're using for resources in this module.
-   - _Allow Azure services to access server_: Select the check box.
-   - Click **Select**.
+   - _Database name_: Enter a unique name. (Make sure you see a green check mark.)
+
+      ![Create a SQL data warehouse basics tab](../media/create-sql-data-warehouse-basic-tab.png)
+1. Select **Create New** in the Server field to open the **New Server** pane and enter the following:
+
+     - _Server name_: Enter a unique name. (Make sure you see a green check mark.)
+     - _Server admin login_: Enter **dwlab**.
+     - _Password_: Enter a valid password, and then confirm the password.
+     - _Location_: Select the location you're using for resources in this module.
+     - _Allow Azure services to access server_: Select the check box.
+     - Click **Select**.
    
+       ![Create a SQL data warehouse server](../media/create-sql-data-warehouse-server.png )
 
-    ![Create a SQL data warehouse window](../media/create-sql-data-warehouse-form.png )
+       > [!Note]
+       > Remember the user name and password for SQL Server. You'll need them.
 
-   > [!Note]
-   > Remember the user name and password for SQL Server. You'll need them.
+1. Click **Select Performance level** to open the Configure performance pane and select **Gen2 DW100c**.
+1. In the **Additional settings** tab, select **None** under data source.
+1. Select **Review +Create**.
 
-1. On the **SQL Data Warehouse** blade, under **Performance level**, select **Gen2: DW500c**.
-
-1. Select **Create**.
+![Select database performance level](../media/select-data-warehouse-server-size.png)
 
 ## Add your client IP address
 
@@ -40,7 +43,7 @@ To connect to your database, add your computer's IP address to the SQL Server in
 
     ![Select Go to resource](../media/go-to-resource-sqldw.png)
 
-1. At the top of the **Overview** blade, select the **Server name** link to go to the associated SQL Server instance.
+1. At the top of the **Overview** pane, select the **Server name** link to go to the associated SQL Server instance.
 
     ![Select the Server name link](../media/sql-dw-server-link.png)
 
@@ -48,7 +51,7 @@ To connect to your database, add your computer's IP address to the SQL Server in
 
     ![Select Firewalls and virtual networks](../media/firewall-link.png)
 
-1. On the **Firewalls and virtual networks** blade, select **Add client IP**. This will add your detected IP address to the allowed IP addresses list. The client IP needs to be added so you can connect to SQL Data Warehouse from your computer. Select **Save**.
+1. On the **Firewalls and virtual networks** pane, select **Add client IP**. This will add your detected IP address to the allowed IP addresses list. The client IP needs to be added so you can connect to SQL Data Warehouse from your computer. Select **Save**.
 
    ![Select Add client IP](../media/add-client-ip.png)
 
@@ -65,7 +68,7 @@ To connect to your database, add your computer's IP address to the SQL Server in
 When you connect to your data warehouse, you need to connect through the logical SQL Server instance that you created when you provisioned SQL Data Warehouse earlier.
 
 1. Go to the Azure portal and select your data warehouse from the resource group that you created for this module.
-1. Find the full name of the logical SQL Server instance at the top of the **Overview** blade, as you did in step 2 of the "Add your client IP address" section. Remember this name.
+1. Find the full name of the logical SQL Server instance at the top of the **Overview** pane, as you did in step 2 of the "Add your client IP address" section. Remember this name.
 
     ![SQL Server instance name](../media/sql-dw-server-link.png)
 
@@ -88,7 +91,7 @@ When you connect to your data warehouse, you need to connect through the logical
 
 Now you need to create a connection to the **master** database on the same server.
 1. Select **Servers** in the menu on the left.
-1. Select the **New Connection** icon at the top of the blade.
+1. Select the **New Connection** icon at the top of the pane.
 
     ![Select New Connection](../media/azure-data-studio-new-connection.png)
 1. Repeat steps 1 through 3 of the preceding procedure. You should see the SQL Data Warehouse connection you created earlier listed under Recent history. If you select this connection, the **Server** and **User name** boxes will automatically populate.
