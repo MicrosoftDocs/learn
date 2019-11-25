@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.design-a-hybrid-network-architecture.1-introduction
+uid: learn.module-uid.1-introduction
 metadata:
   title: Introduction
-  description: You'll look at the hybrid networking capabilities in Azure, the services for on-premises integration using tools like ExpressRoute and the scenarios that apply to the design of your company's hybrid architecture.
+  description: TODO
   ms.date: 04/30/2019
   author: jboeshart
   ms.author: jaboes
