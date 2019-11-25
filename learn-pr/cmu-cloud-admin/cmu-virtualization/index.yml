@@ -1,6 +1,5 @@
 ### YamlMime:Module
-#LP name: Introduction to the Cloud with Carnegie Mellon
-uid: learn.cmu-cloud-admin.secure-cloud-resources
+uid: learn.cmu-cloud-admin.cmu-virtualization
 metadata:
   title: Secure your cloud resources with access control
   description: Identity Management and Access Control
@@ -34,12 +33,12 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-cloud-admin.secure-cloud-resources.0-intro
-- learn.cmu-cloud-admin.secure-cloud-resources.1-cloud-identity-management
-- learn.cmu-cloud-admin.secure-cloud-resources.2-user-groups
-- learn.cmu-cloud-admin.secure-cloud-resources.3-federation-synchronization-guests
-- learn.cmu-cloud-admin.secure-cloud-resources.4-rbac
-- learn.cmu-cloud-admin.secure-cloud-resources.5-summary
+- learn.cmu-cloud-admin.cmu-virtualization.0-intro
+- learn.cmu-cloud-admin.cmu-virtualization.1-cloud-identity-management
+- learn.cmu-cloud-admin.cmu-virtualization.2-user-groups
+- learn.cmu-cloud-admin.cmu-virtualization.3-federation-synchronization-guests
+- learn.cmu-cloud-admin.cmu-virtualization.4-rbac
+- learn.cmu-cloud-admin.cmu-virtualization.5-summary
 
 badge:
-  uid: learn.cmu-cloud-admin.secure-cloud-resources.badge
+  uid: learn.cmu-cloud-admin.cmu-virtualization.badge
