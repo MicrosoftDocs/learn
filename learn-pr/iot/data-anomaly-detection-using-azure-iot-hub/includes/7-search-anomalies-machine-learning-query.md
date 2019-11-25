@@ -6,6 +6,8 @@ We need to update the job to handle two inputs and two outputs, and a more compl
 
 The process of creating the second route follows a similar process to the first, though it diverges at the creation of an endpoint. An Event Hub is chosen as the endpoint for the telemetry route.
 
+In the next exercise, you will create an Event Hubs _namespace_. You then have to create an _instance_ of the namespace to complete the setting up of an Event Hub. You can then use this instance as the source for the new message route.
+
 After the route is created, we move on to updating the query.
 
 ### Make a call to a machine learning algorithm
@@ -32,4 +34,4 @@ We use the dashboard feature of Power BI to create a number of _tiles_. One tile
 
 The fourth tile includes time as the x-axis. This tile allows you to compare the anomalies with the red text in the telemetry console window. Is there a cluster of anomalies being detected when forced, or increasing, or both, vibrations are in action?
 
-Let's create the second route, update the SQL query, create a Power BI dashboard, and let it all run!
+Let's create the Event Hub, create the second route, update the SQL query, create a Power BI dashboard, and let it all run!

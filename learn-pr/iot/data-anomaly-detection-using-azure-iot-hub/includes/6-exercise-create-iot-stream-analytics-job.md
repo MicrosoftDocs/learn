@@ -135,7 +135,7 @@ Now for the fun part. Does the telemetry your device app is pumping out work its
 
 1. Select **Home** in the Azure portal. If the **vibrationstorage** resource is not available in the **Recent resources** list, then search for it under **All resources**.
 
-1. Select **vibrationstorage**. You should see activity in the charts.
+1. Select **vibrationstorage**. Change the time range to **1 hour**. You should see activity in the charts.
 
 1. For added reassurance that all the data is getting to the account, select **Storage Explorer**. Under **BLOB CONTAINERS**, select **vibrationcontainer**.
 

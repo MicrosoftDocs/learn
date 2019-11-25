@@ -3,10 +3,10 @@ In this unit, we first create an IoT Hub, and then add a single device to that h
 ## Create a custom IoT Hub
 
 1. Make sure you've activated the sandbox, using the button above. The sandbox creates a free temporary resource.
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Using this link will ensure you are using the sandbox.
 1. Select **+ Create a resource**, from the top of the left-hand menu. In the **Search the Marketplace** search box, enter "IoT Hub".
 1. Select **IoT Hub** from the search results, and click **Create**.
-1. You'll be required to enter a **Subscription** from the selection offered to you. A sandbox subscription will be **Concierge Subscription**, so choose that. For **Resource Group**, enter <rgn>[sandbox resource group name]</rgn>. A resource group is similar to a folder, it's largely there to help you organize your resources.
+1. You'll be required to enter a **Subscription** from the selection offered to you. A sandbox subscription will be **Concierge Subscription**, so choose that. For **Resource Group**, select <rgn>[sandbox resource group name]</rgn>.
 1. The **Region** should be the geographical region closest to you.
 1. Enter a unique friendly name (say "VibrationSensorHub-&lt;your ID&gt;") for **IoT Hub Name**.
     >[!IMPORTANT]
