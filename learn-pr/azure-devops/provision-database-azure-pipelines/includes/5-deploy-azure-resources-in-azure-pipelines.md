@@ -267,13 +267,13 @@ Here, you add a variable group and variables to the pipeline.
 
 ## Explore the Azure Resource Manager template and Azure Pipelines pipeline files
 
-1. Open the *template.json* file that came with the projects. This is the same file you used in the last exercise. Replace the code in that file with the following:
+1. Open the *template.json* file that comes with the project. This is the same file you used in the last exercise. Replace the code in that file with the following:
 
-[!code-json[](code/5-template.json?highlight=88-119,123-133,189-194)]
+[!code-json[](code/5-template.json?highlight=31-33,68-72,87-134,158-265,281-282)]
 
-Recall that you can create a template from scratch, download a starter template, or generate one from resources you already have. The [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines/?azure-pipelines=true) module had you create the necessary infrastructure manually in the Azure portal. This template file is the result of exporting the resource group that was created in that module. It has been modified to add the parts that the team discussed for pipeline deployment, and to remove the _Test_ and _Staging_ App Service deployments. For learning purposes, the default policies have also been removed.
+Remember that you can create a template from scratch, download a starter template, or generate one from resources you already have. The [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines/?azure-portal=true) module had you create the necessary infrastructure manually in the Azure portal. This template file is the result of exporting the resource group that was created in that module. It has been modified to add the parts that the team discussed for pipeline deployment, and to remove the _Test_ and _Staging_ App Service deployments. For learning purposes, the default policies have also been removed.
 
-Notice the creation of the database. Just as you did in the [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines/?azure-pipelines=true) module, the database is created and the data is inserted by using a *.bacpac* file and an import extension in the resources section in a resource called *Import*.
+Notice the creation of the database. Just as you did in the [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines/?azure-portal=true) module, the database is created and the data is inserted by using a *.bacpac* file and an import extension in the resources section in a resource called *Import*.
 
 ```json
 {
@@ -298,6 +298,7 @@ Notice the creation of the database. Just as you did in the [Manage database cha
         "name": "Import",
         "type": "extensions",
         "apiVersion": "2014-04-01",
+        "condition": "[empty(resourceId('Microsoft.Sql/servers/databases', concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName')), 'tailspindatabase'))]",
         "dependsOn": [
             "[resourceId('Microsoft.Sql/servers/databases', concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName')), 'tailspindatabase')]"
         ],
@@ -313,7 +314,7 @@ Notice the creation of the database. Just as you did in the [Manage database cha
 },
 ```
 
-The next part is the creation of Key Vault secrets. Here you add the database connection string to the Key Vault. You will use this secret to add the connection string to the App Service configuration in the pipeline after the web app is deployed. This is the reason you need the `keyVaultName` parameter.
+The next part is the creation of Key Vault secrets. Here, you add the database connection string to the Key Vault. You will use this secret to add the connection string to the App Service configuration in the pipeline after the web app is deployed. This is the reason you need the `keyVaultName` parameter.
 
 ```json
 {
@@ -337,11 +338,11 @@ The next part is the creation of Key Vault secrets. Here you add the database co
     git commit -m "Add complete provisioning to template.json"
     ```
 
-1. In the code editor, open the *azure-pipelines.yml*. This is the same file you used in the [Manage database changes in Azure Pipelines](https://docs.microsoft.com/learn/modules/manage-database-changes-in-azure-pipelines/?azure-pipelines=true) module. Replace the code in that file with this:
+1. In the code editor, open the *azure-pipelines.yml*. This is the same file you used in the [Manage database changes in Azure Pipelines](https://docs.microsoft.com/learn/modules/manage-database-changes-in-azure-pipelines/?azure-portal=true) module. Replace the code in that file with this:
 
-[!code-yml[](code/5-azure-pipelines.yml?highlight=94-116,132-136,211-215,277-281,290-296)]
+[!code-yml[](code/5-azure-pipelines.yml?highlight=97-119,135-139,212-216,278-282,291-297)]
 
-Notice the addition of the *Provision* stage. Here you have the task `AzureResourceManagerTemplateDeployment@3` to deploy the *template.json* file using the *deploymentParameters.json* file.
+Notice the addition of the *Provision* stage. Here you have the task `AzureResourceManagerTemplateDeployment@3` to deploy the *template.json* file by using the *deploymentParameters.json* file.
 
 ```yml
 - task: AzureResourceManagerTemplateDeployment@3

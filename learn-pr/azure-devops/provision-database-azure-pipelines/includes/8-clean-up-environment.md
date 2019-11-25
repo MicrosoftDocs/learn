@@ -19,7 +19,7 @@ To clean up your resource group:
 1. Run the following `az group delete` command to delete the resource group you used in this module, **tailspin-spacegame-web-rg**.
 
     ```azurecli
-    az group delete --name tailspin-space-game-rg
+    az group delete --name tailspin-spacegame-web-rg
     ```
 
     When prompted, enter **y** to confirm the operation.

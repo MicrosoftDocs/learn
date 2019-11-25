@@ -1,8 +1,10 @@
-In this module, you use _infrastructure as code_ to deploy the _Space Game_ web application that is using an Azure SQL database. You deploy your infrastructure using an Azure Resource Manager template and a multi-stage pipeline with Azure Pipelines. This pipeline will also manage changes to the database schema. You use Azure Key Vault to store secrets and learn to access and store these secrets from the Azure Resource Manager template as well as Azure Pipelines.
+This module is about building automation to provision databases in Azure Pipelines, using Azure Resource Manager templates and Azure SQL Database as an example.
+
+In this module, you use _infrastructure as code_ to deploy the _Space Game_ web application that is using an Azure SQL Database. You deploy your infrastructure using an Azure Resource Manager template and a multi-stage pipeline with Azure Pipelines. This pipeline will also manage changes to the database schema. You use Azure Key Vault to store secrets and later access those secrets from the Azure Resource Manager template as well as Azure Pipelines.
 
 In [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines/?azure-portal=true), you added stages to your pipeline that checked for database schema changes, waited for DBA approval of those changes, and then applied the changes to the database.
 
-However, the Azure SQL Server logical instance, Azure SQL database, and the App Service infrastructure were created manually. Here, you automate the infrastructure creation from a stage in Azure Pipelines.
+However, you created the Azure SQL Server logical instance, the SQL database, and the App Service infrastructure manually. Here, you automate the infrastructure creation from a stage in Azure Pipelines.
 
 ## Learning objectives
 

@@ -20,7 +20,7 @@ There was quite a bit already in place at the beginning of this module. If you w
 
 For discussion on approvals and triggers in Azure Pipelines, see [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline/index?azure-portal=true).
 
-To understand how to manage database schema changes in Azure Pipelines, see [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines/?azure-pipelines=true)
+To understand how to manage database schema changes in Azure Pipelines, see [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines/?azure-portal=true)
 
 For information on Resource Manager templates, see [Build Azure Resource Manager templates](/learn/modules/build-azure-vm-templates/?azure-portal=true).
 
@@ -28,7 +28,7 @@ Here are additional resources that go into greater depth on other areas we cover
 
 - [Quickstart template gallery](https://azure.microsoft.com/resources/templates?azure-portal=true)
 - [Export the entire resource group as a template from the Azure portal](https://docs.microsoft.com/azure/azure-resource-manager/export-template-portal?azure-portal=true)
-- [AzureResourceManagerTemplateDeployment@3](https://github.com/microsoft/azure-pipelines-tasks/blob/master/Tasks/AzureResourceManagerTemplateDeploymentV3/README.md?azure-pipelines=true)
+- [AzureResourceManagerTemplateDeployment@3](https://github.com/microsoft/azure-pipelines-tasks/blob/master/Tasks/AzureResourceManagerTemplateDeploymentV3/README.md?azure-portal=true)
 - [AzureAppServiceSettings@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-app-service-settings?view=azure-devops&azure-portal=true)
 - [AzureKeyVault@1](https://docs.microsoft.com/azure/devops/pipelines/tasks/deploy/azure-key-vault?view=azure-devops&azure-portal=true)
 - [Install and run Azure CLI locally](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true)

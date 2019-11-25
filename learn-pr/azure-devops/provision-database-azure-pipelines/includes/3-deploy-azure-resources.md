@@ -1,4 +1,4 @@
-In this exercise, you use a template that creates an Azure SQL Server logical instance, an Azure App Service Plan, and an Azure App Service. You deploy this template from Azure Cloud Shell and see that the resources are deployed. Then you delete the resource group and all of the resources in it.
+In this exercise, you use a template that creates an Azure SQL Server logical instance, an Azure App Service plan, and an Azure App Service instance. You deploy this template from Azure Cloud Shell and see that the resources are deployed. Then you delete the resource group and all of the resources in it.
 
 ## Bring up Cloud Shell through the Azure portal
 
@@ -42,7 +42,7 @@ Here, you create a basic Resource Manager template in a file named *template.jso
 
 1. Add this to *template.json* and then save the file.
 
-    [!code-json[](code/startertemplate.json)]
+    [!code-json[](code/3-template.json)]
 
 ## Understand the template
 
@@ -84,7 +84,7 @@ The `parameters` section of the template file specifies the information that nee
 },
 ```
 
-The variables section creates a uniqueName variable that is a combination of the `deploymentPrefix` parameter and the `uniqueSuffix` parameter. This will be used to create unique names for the resources.
+The variables section creates a `uniqueName` variable that is a combination of the `deploymentPrefix` parameter and the `uniqueSuffix` parameter. This will be used to create unique names for the resources.
 
 ```json
 "variables": {
@@ -92,7 +92,7 @@ The variables section creates a uniqueName variable that is a combination of the
     },
 ```
 
-The rest of the file is the resources that will be created. Take a moment to read through those.
+The rest of the file defines the resources that will be created. Take a moment to read through those.
 
 ### The SQL Server instance
 
@@ -128,7 +128,7 @@ You also set a firewall rule to allow Azure to access the server. You need this 
 
 ### The App Service plan
 
-The App Service plan does not need the unique suffix. It uses the name of the plan directly from the parameter default.
+The App Service plan does not need the unique suffix. It uses the name of the plan directly from the parameter's default value.
 
 ```json
 "type": "Microsoft.Web/serverfarms",
@@ -150,7 +150,7 @@ The App Service plan does not need the unique suffix. It uses the name of the pl
 
 ### The App Service instance
 
-Here, the name properties concatenate the name of the web site from the parameter default with the unique suffix. You also disable SSL in the `hostNameSslStates` property.
+Here, the name property concatenates the name of the web site from the parameter default with the unique suffix. You also disable SSL in the `hostNameSslStates` property.
 
 ```json
 "type": "Microsoft.Web/sites",
@@ -195,14 +195,12 @@ The `hostNameBindings` type sets the web site name and the type.
     }
 ```
 
-1. Save the file. Select the ellipsis (...) and choose **Save**.
-
 > [!TIP]
 > In Cloud Shell, you can close the editor now if you'd like. But leave the command window open for the next part.
 
 ## Select an Azure region for deployment
 
-A _region_ is one or more Azure datacenters within a specific geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an App Service instance, is assigned a region.
+A _region_ is one or more Azure datacenters within a specific geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an App Service instance or SQL Database, is assigned a region.
 
 To make the commands easier to run, start by selecting a default region. After you specify the default region, later commands use that region unless you specify a different region.
 
@@ -294,24 +292,28 @@ SQL_PASSWORD=$(openssl rand -base64 32)
       --parameters deployPrefix="-dev-" uniqueSuffix=$UNIQUE_ID adminPassword="$SQL_PASSWORD"
     ```
 
-az group deployment create \
-  --name deploytemplate \
-  --resource-group tailspin-spacegame-web-rg \
-  --template-file template.json \
-  --parameters deploymentParameters.json
+    Wait for the deployment to finish. Notice that we are passing in the parameters we need. Later you'll move them to a parameters file, pipeline variables, and Azure Key Vault.
 
-    It might take a minute to get running. Notice that we are passing in the parameters we need. Later you'll move them to a parameter file, pipeline variables, and Azure Key Vault.
-
-1. Navigate to the Azure portal and choose **Resource groups**, then the **tailspin-spacegame-web-rg** resource group. Notice that you have an App Service Plan, App Service, and a SQL Server instance. Take note of the suffix on each of these resources. It is made from the `deployPrefix` and your `uniqueSuffix`.
+1. Go to the Azure portal and choose **Resource groups**, then the **tailspin-spacegame-web-rg** resource group. Notice that you have an App Service plan, App Service, and a SQL Server instance. Take note of the suffix on each of these resources. It is made from the `deployPrefix` and your `uniqueSuffix`.
 
     ![List of resources created by the template run](../media/3-resource-list.png)
 
-1. Run the template a second time. Notice that it is idempotent, meaning it will not try to create a resource that is already there. However, if you delete a resource or change some of its properties, the new resource or resource changes will be created.
+1. Run the template a second time.
+
+    ```azurecli
+    az group deployment create \
+      --name deploytemplate \
+      --resource-group tailspin-spacegame-web-rg \
+      --template-file template.json \
+      --parameters deployPrefix="-dev-" uniqueSuffix=$UNIQUE_ID adminPassword="$SQL_PASSWORD"
+    ```
+
+    Notice that the operation is idempotent, meaning it doesn't try to create a resource that is already there. However, if you delete a resource or change some of its properties, the new resource or resource changes will be created.
 
 ## Clean up
 
 Here, you delete everything in your resource group, but not the resource group itself. You'll add more resources to your resource group shortly.
 
-From the Azure portal, delete the resources group by selecting the resources in the resource group and then selecting **Delete** from the menu bar. Do not delete the resource group. When prompted, enter *Yes* to confirm. This will delete everything in the resource group along but not the resource group. Make sure the resources are deleted but the resource group remains.
+From the Azure portal, delete the resources group by selecting the resources in the resource group and then selecting **Delete** from the menu bar. Do not delete the resource group. When prompted, enter *Yes* to confirm. This deletes everything in the resource group but not the resource group itself. Verify that the resources are deleted but the resource group remains.
 
 ![Delete resources in the resource group](../media/3-delete-resources.png)
