@@ -1,4 +1,4 @@
-In this exercise, we're going to add a query to the Stream Analytics job, and then use Microsoft Power BI to visualize the output from the query. The query searches for spikes and dips in the vibration data, reporting anomalies. We must create the second route, after creating an instance of Event Hubs.
+In this exercise, we're going to add a query to the Stream Analytics job, and then use Microsoft Power BI to visualize the output from the query. The query searches for spikes and dips in the vibration data, reporting anomalies. We must create the second route, after creating an instance of an Event Hubs namespace.
 
 ## Create an Event Hubs namespace
 
@@ -14,9 +14,9 @@ In this exercise, we're going to add a query to the Stream Analytics job, and th
 
 ### Create an Event Hubs instance
 
-1. In your Azure home page, search for the namespace you created in **All resources**.
+1. In your Azure home page, search ***All resources** for the namespace you created in the previous section.
 
-1. Select the namespace, and click **+ Event Hub**. We need to create an instance of the namespace.
+1. Select the namespace, and click **+ Event Hub**. We need to create an instance of this namespace. Notice the **NAMESPACE CONTENTS** section has zero entries.
 
     ![Screenshot showing the button to create Event Hubs](../media/vibration-add-event-hub.png)
 
@@ -24,7 +24,7 @@ In this exercise, we're going to add a query to the Stream Analytics job, and th
 
     ![Screenshot showing the fields required to create an Event Hub instance](../media/vibration-create-event-hub-instance.png)
 
-1. Wait for the resource to be deployed. When this happens, we can start to build the route itself.
+1. Wait for the resource to be deployed. When deployment happens, we can start to build the route itself.
 
 ## Create a route to an Event Hub
 
@@ -36,7 +36,7 @@ In this exercise, we're going to add a query to the Stream Analytics job, and th
 
 1. Enter "vibrationTelemetryEndpoint", for the **Endpoint name**.
 
-1. For **Event hub namespace**, choose your entry from the previous section, **vibrationNamespace**.
+1. For **Event hub namespace**, choose your entry from the previous section: **vibrationNamespace**.
 
 1. For the instance, locate your **vibrationeventhubinstance**.
 
@@ -54,9 +54,11 @@ In this exercise, we're going to add a query to the Stream Analytics job, and th
 
     ![Screenshot showing the summary of the settings for the two message routes](../media/vibration-two-routes.png)
 
+## Update the Azure Stream Analytics job query
+
 With this new route in place, now we need to update our Stream Analytics job.
 
-## Add a new input to the Azure Stream Analytics job
+### Add a new input to the job
 
 1. In your Azure portal, select **vibrationJob** from your list of resources.
 
@@ -68,7 +70,7 @@ With this new route in place, now we need to update our Stream Analytics job.
 
 1. Click **Save**.
 
-## Add a new output to the Azure Stream Analytics job
+### Add a new output to the job
 
 1. In the breadcrumbs, go back to your job. You should now see two inputs. Select the icon to add an output.
 
@@ -78,9 +80,9 @@ With this new route in place, now we need to update our Stream Analytics job.
 
 1. Authorize the connection. You might need to sign up for a free Microsoft account, if you don't have one already.
 
-1. Complete the **Power BI** entry. For **Output alias** enter "vibrationBI". For **Group workspace**, search for **My workspace**.
+1. Complete the **Power BI** entry. For **Output alias**, enter "vibrationBI". For **Group workspace**, search for **My workspace**.
 
-1. For **Dataset name** enter "vibrationDataset". For **Table name**, enter "vibrationTable". 
+1. For **Dataset name**, enter "vibrationDataset". For **Table name**, enter "vibrationTable". 
 
 1. For **Authentication mode**, ensure **User token** is selected.
 
@@ -90,7 +92,7 @@ With this new route in place, now we need to update our Stream Analytics job.
 
 1. Again, navigate using the breadcrumbs back to the job.
 
-## Add a query to the Azure Stream Analytics job
+### Update the SQL query for the job
 
 1. Select **Edit query**, to the right of the window.
 
@@ -131,7 +133,7 @@ With this new route in place, now we need to update our Stream Analytics job.
 
 In order for a human operator to make much sense of the output from this query, we need to visualize the data in a friendly way. One way of doing this visualization is to create a Power BI dashboard.
 
-## Create a Microsoft Power BI dashboard
+## Create a dashboard to visualize the query, using Microsoft Power BI
 
 1. In your browser, navigate to `outlook.office365.com`. This URL will take you to the mail inbox. You may have to enter your Microsoft Account login information.
 

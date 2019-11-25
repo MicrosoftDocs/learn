@@ -25,7 +25,7 @@ In this unit, we'll create and test the logging route.
 
     ![Screenshot showing the completed fields for a new storage account](../media/vibration-storage-account.png)
 
-1. Click **Ok**. Wait until the resource is validated. This can take a few minutes.
+1. Click **Ok**. Wait until the resource is validated. Validation can take a few minutes.
 
 1. In the **Storage accounts** screen that now appears, search for "vibrationstorage", and select it. A screen named **Containers** should appear.
 
@@ -133,7 +133,7 @@ Now for the fun part. Does the telemetry your device app is pumping out work its
 
     ![Screenshot showing the job start button](../media/vibration-job-start.png)
 
-1. Select **Home** in the Azure portal. If the **vibrationstorage** resource is not available in the **Recent resources** list, then search for it under **All resources**.
+1. Select **Home** in the Azure portal. If the **vibrationstorage** resource isn't available in the **Recent resources** list, then search for it under **All resources**.
 
 1. Select **vibrationstorage**. Change the time range to **1 hour**. You should see activity in the charts.
 
