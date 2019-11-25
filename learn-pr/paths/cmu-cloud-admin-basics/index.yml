@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.cmu-cloud-admin.cmu-cloud-admin-basics
 metadata:
-  title: Cloud Administration Basics
+  title: Cloud administration basics
   description: The first learning path in a course on Cloud Administration from Carnegie Mellon University. Learn about the basics of the cloud, including the history, building blocks, and types of services, in preparation for real-world cloud practice on Azure.
   brand: azure
   ms.date: 12/01/2019
@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   showCreativeCommonsFooter: true
-title: Cloud Administration Basics
+title: Cloud administration basics
 summary: |
   Learn about the basics of the cloud, including the history, building blocks, and types of services, in preparation for real-world cloud practice on Azure.
 
@@ -24,7 +24,8 @@ summary: |
 
   In Partnership with Dr. Majd Sakr and Carnegie Mellon University.
 prerequisites: none
-iconUrl: /learn/achievements/cmu-cloud-admin/cmu-cloud-admin-basics.svg
+#placeholder
+iconUrl: /learn/achievements/ai-business-school-education.svg
 levels:
 - beginner
 roles:
@@ -32,7 +33,7 @@ roles:
 products:
 - azure
 modules:
-- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview
+- learn.cmu-cloud-admin.cmu-cloud-admin-overview
 - learn.cmu-cloud-admin.cloud-admin-provision-manage
 - learn.cmu-cloud-admin.secure-cloud-resources
 trophy:
