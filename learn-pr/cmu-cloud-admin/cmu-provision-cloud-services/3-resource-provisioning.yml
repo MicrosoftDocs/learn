@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.provision-manage.3-resource-provisioning
+title: Resource Provisioning
+metadata:
+  title: Resource Provisioning
+  description: Resource Provisioning
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-resource-provisioning.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Provisioning a new virtual machine in the cloud requires many steps that can take several minutes to complete. At what point during the provisioning process does the cloud service provider typically start charging the customer for a virtual machine?"
+    choices: 
+    - content: "When the provisioning process begins"
+      isCorrect: false
+      explanation: "Incorrect. This would mean that the customer is charged for a virtual machine that is not yet available."
+    - content: "Midway through the provisioning process"
+      isCorrect: false
+      explanation: "Incorrect. This would mean that the customer is charged for a virtual machine that is not yet available."
+    - content: "When the provisioning process ends"
+      isCorrect: true
+      explanation: "Correct! This prevents the customer from being charged before the virtual machine is ready to be used."

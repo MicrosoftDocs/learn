@@ -14,13 +14,11 @@ In Azure Functions, bindings provide a declarative way to connect to data from w
 
 There are two kinds of bindings you can use with functions:
 
-1. **Input binding**
-    An input binding is a connection to a data **source**. Our function can read data from these inputs.
+1. **Input binding** - An input binding is a connection to a data **source**. Our function can read data from these inputs.
 
-1. **Output binding**
-    An output binding is a connection to a data **destination**. Our function can write data to these destinations.
+1. **Output binding** - An output binding is a connection to a data **destination**. Our function can write data to these destinations.
 
-There are also triggers. Triggers are special types of input bindings that cause a function to execute. For example, an Azure Event Grid notification can be configured as a trigger. When an event occurs, the function will run.
+There are also _triggers_, which are special types of input bindings that cause a function to execute. For example, an Azure Event Grid notification can be configured as a trigger. When an event occurs, the function will run.
 
 ### Types of supported bindings
 
@@ -43,19 +41,15 @@ These types are just a sample. There are more, plus functions have an extensibil
 
 Three properties are required in all bindings. You may have to supply additional properties based on the type of binding and storage you are using.
 
-1. **Name**
-    Defines the function parameter through which you access the data. For example, in a queue input binding, this is the name of the function parameter that receives the queue message content. 
+1. **Name** - Defines the function parameter through which you access the data. For example, in a queue input binding, this is the name of the function parameter that receives the queue message content. 
 
-1. **Type**
-    Identifies the type of binding, i.e., the type of data or service we want to interact with.
+1. **Type** - Identifies the type of binding, i.e., the type of data or service we want to interact with.
 
-1. **Direction**
-    Indicates the direction data is flowing, i.e., is it an input or output binding?
+1. **Direction** - Indicates the direction data is flowing, i.e., is it an input or output binding?
 
 Additionally, most binding types also need a fourth property: 
 
-4. **Connection**
-    Provides the name of an app setting key that contains the connection string. Bindings use connection strings stored in app settings to keep secrets out of the function code. This makes your code more configurable and secure.
+4. **Connection** - Provides the name of an app setting key that contains the connection string. Bindings use connection strings stored in app settings to keep secrets out of the function code. This makes your code more configurable and secure.
 
 ## Create a binding
 
@@ -83,7 +77,7 @@ To create this binding, we:
 
 1. Provide the storage `type`. In the preceding example, we are using Blob storage.
 
-1. Provide the `path`, which specifies the container and the item name that goes in it. The `path` property is required for blobs.
+1. Provide the `path`, which specifies the container and the item name that goes in it. The `path` property is required when using the Blob trigger, and should be provided in the style shown here, with curly braces around the filename portion of the path. This creates a *binding expression* that allows you to reference the blob's name in other bindings and in your function's code. In this example, a parameter on the function named *filename* would be populated with the filename of the blob that triggered the function.
 
 1. Provide the `connection` string setting name defined in the application's settings file. It's used as a key to find the connection string to connect to your storage account.
 

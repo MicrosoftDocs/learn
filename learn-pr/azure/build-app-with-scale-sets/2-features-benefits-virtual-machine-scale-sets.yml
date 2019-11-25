@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.build-app-with-scale-sets.features-benefits-virtual-machine-scale-sets
+title: Features and benefits of virtual machine scale sets
+
+metadata:
+  title: Features and benefits of virtual machine scale sets
+  description: Features and benefits of virtual machine scale sets
+  ms.date: 09/02/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-features-benefits-virtual-machine-scale-sets.md)]

@@ -5,9 +5,8 @@ metadata:
   title: Knowledge check
   description: Azure Container Registry knowledge check.
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: cryophobia
+  ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -46,7 +45,7 @@ quiz:
       isCorrect: false
       explanation: "Azure Container Registry is a private registry and cannot be accessed without authentication."
  
-  - content: "Suppose you use container images to run compute workloads in multiple regions throughout the world. You plan to enable the geo-replication feature of Azure Container Registry to decrease the time required to provision an instance. Which regions should you choose for your replicas when configuring geo-replication?"
+  - content: "Suppose you use container images to run compute workloads in multiple regions throughout the world. You plan to enable the geo-replication feature of Azure Container Registry to decrease the time required to provision an instance. In which regions should you configure the Azure Container Registry geo-replication feature?"
     choices:
     - content: "Place a container registry in the region closest to your development team."
       isCorrect: false

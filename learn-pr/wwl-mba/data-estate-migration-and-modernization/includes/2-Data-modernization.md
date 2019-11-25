@@ -2,7 +2,7 @@
 
 Data modernization is the process of making progressive changes to the way you collect, store, and manage data so that customers can unlock new insights to drive their digital transformation initiatives. Azure provides organizations with many options for modernizing data. Below are a few approaches that organizations can take to move their data from on-premises to Azure.
 
-- **Managed Instance**: With Azure SQL Database Managed Instance, databases can be easily migrated with no code changes and near zero downtime. Customers also benefit from running their databases in a fully managed service environment, with capabilities like automatic patching and version updates, automated backups, high availability, and reduced management overhead. With Azure Hybrid Benefit and reserved capacity pricing, customers can save up to 59% compared to Amazon Web Services (AWS) when migrating to Azure SQL Database.
+- **Managed Instance**: With Azure SQL Database Managed Instance, databases can be easily migrated with little to no code changes and near zero downtime. Customers also benefit from running their databases in a fully managed service environment, with capabilities like automatic patching and version updates, automated backups, high availability, and reduced management overhead. With Azure Hybrid Benefit and reserved capacity pricing, customers can save up to 80% compared to Amazon Web Services (AWS) when migrating to Azure SQL Database.
 
 - **SQL on Infrastructure as a Service (IaaS)**: Organizations with certain requirements or preferences may choose to run SQL Server on Azure Virtual Machines. This includes those who desire operating system and database control or have BI requirements such as SQL Server Reporting Services or ISV certification. Customers can save up to 43% compared to AWS when migrating their databases to SQL Server on Azure Virtual Machines.
 
@@ -12,7 +12,7 @@ Data modernization is the process of making progressive changes to the way you c
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to learn more.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn more.|
 
  >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqU0Y]
 
@@ -25,11 +25,11 @@ Azure SQL Database is the intelligent, fully-managed relational cloud database s
 
 #### Azure SQL Database Managed Instance
 
-Azure SQL Database Managed Instance is an expansion of the existing SQL Database service. It is designed to enable friction-free database migration to a fully-managed database service, with no code changes and near zero downtime. 
+Azure SQL Database Managed Instance is an expansion of the existing SQL Database service. It is designed to enable friction-free database migration to a fully-managed database service, with little to no code changes and near zero downtime. 
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to learn more.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn more.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqZ7h]
 
@@ -39,7 +39,7 @@ Using the Azure Database Migration Service, databases can be modernized to Azure
 
 The following diagram illustrates how databases can be modernized.  Azure Database Migration Services can take your existing on-premises databases and migrate them to equivalent database services on Azure.
 
-![Azure Database Migration Services](../media/IC-GM05-diagram-3B.png)
+![Azure Database Migration Services](../media/ic-gm05-diagram-3b.png)
 
 ### What about hybrid and on-premises solutions?
 
@@ -51,7 +51,7 @@ Microsoft SQL Server 2017 can meet the needs of modernizing your on-premises dat
 
 ------------
 :::row:::
-![Icon of lightbulb](../media/Lightbulb_icon.png)
+![Icon of lightbulb](../media/lightbulb.png)
   :::column span="3":::
 
 *Now that you’ve seen some examples of data modernization, can you identify the key advantages and capabilities of on-premises modernization and migration to Azure?*

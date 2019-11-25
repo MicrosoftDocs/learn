@@ -16,7 +16,7 @@ abstract: |
   - Add Azure Monitor metrics charts to a custom portal dashboard
   - Use the portal to enable logging and download the logs
 prerequisites: |
-  - Knowledge of Azure Portal
+  - Knowledge of Azure portal
   - Knowledge of Azure Blob Storage Containers
 iconUrl: /learn/achievements/gather-metrics-from-blob-storage.svg
 levels:
@@ -26,7 +26,6 @@ roles:
 products:
 - azure
 units:
-#TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
 - learn.azure.gather-metrics-from-blob-storage.1-introduction
 - learn.azure.gather-metrics-from-blob-storage.2-viewing-blob-metrics-in-azure-portal
 - learn.azure.gather-metrics-from-blob-storage.3-exercise-specify-monitor-blob-metrics

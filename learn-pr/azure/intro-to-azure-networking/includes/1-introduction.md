@@ -1,8 +1,8 @@
-You just started working at startup that's fundamentally disrupting the vitamin industry with simple customization and affordable monthly subscriptions. While business is booming on the e-commerce site, your data center is starting to struggle to keep up with user demand. Your service fails when too many users login at the same time, and you're facing more scheduled and unscheduled maintenance windows than you'd like.
+You just started working at a startup that's fundamentally disrupting the vitamin industry with simple customization and affordable monthly subscriptions. While business is booming on the e-commerce site, your data center is starting to struggle to keep up with user demand. Your service fails when too many users sign in at the same time, and you're facing more scheduled and unscheduled maintenance windows than you'd like.
 
 ![An overloaded server in your data center](../media/1-heading.png)
 
-Your site is based in Silicon Valley, so you also find that a network delay is especially bad for users located in other regions, such as Europe and Asia. 
+Your site is based in Silicon Valley, so you also find that a network delay is especially bad for users who are located in other regions, such as Europe and Asia. 
 
 Therefore, you convince your team to move the site to the cloud to help save costs. But how can Azure, specifically, help your site run better?
 

@@ -1,17 +1,14 @@
 ### YamlMime:ModuleUnit
-# Unit uids are manually created by the content author and should follow the format (repo).(module-short-name).(unit-short-name). Keep it easy on yourself and keep the unit-short-name the same as the unit YAML file name.
 uid: learn.classify-user-feedback-with-the-text-analytics-api.5-exercise-create-function-app
 metadata:
   title: Exercise - Create a function app from the portal to host our business logic
   description: In this hands-on lab, we'll prepare our feedback sorter solution by creating a function app and a function to host our logic.
   ms.date: 09/24/2018
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Exercise - Create a function app from the portal to host our business logic
-# interactive: azure-portal
 azureSandbox: true
 durationInMinutes: 7
 content: |

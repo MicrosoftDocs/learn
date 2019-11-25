@@ -57,7 +57,7 @@ groups:
     - id: powershell
       title: PowerShell
     - id: portal
-      title: Azure Portal
+      title: Azure portal
 - id: dev-lang-csharp-javascript
   title: Development language
   prompt: Choose your development language
@@ -84,6 +84,42 @@ groups:
       title: Java
     - id: node
       title: Node.js
+- id: dev-lang-csharp-java-node-python
+  title: Development language
+  prompt: Choose your development language
+  pivots:
+    - id: csharp
+      title: C#
+    - id: java
+      title: Java
+    - id: node
+      title: Node.js
+    - id: python
+      title: Python
+- id: dev-lang-csharp-node
+  title: Development language
+  prompt: Choose your development language
+  pivots:
+    - id: csharp
+      title: C#
+    - id: node
+      title: Node.js
+- id: dev-lang-javascript-powershell
+  title: Development language
+  prompt: Choose your development language
+  pivots:
+    - id: javascript
+      title: JavaScript
+    - id: powershell
+      title: PowerShell
+- id: dev-lang-csharp-powershell
+  title: Development language
+  prompt: Choose your development language
+  pivots:
+    - id: csharp
+      title: C#
+    - id: powershell
+      title: PowerShell
 - id: platform-cloud
   title: Platform
   prompt: Choose which platform you want to run in the cloud
@@ -164,3 +200,53 @@ groups:
       title: LINQ
     - id: fluent
       title: Fluent
+- id: ide
+  title: IDE
+  prompt: Choose your app Integrated Development Environment (IDE)
+  pivots:
+    - id: eclipse
+      title: Eclipse
+    - id: intellij
+      title: Intellij IDEA
+    - id: vscode
+      title: Visual Studio Code
+    - id: vstudio
+      title: Visual Studio
+- id: visualstudio
+  title: Visual Studio
+  prompt: Choose your version of Visual Studio
+  pivots:
+    - id: vs2015
+      title: Visual Studio 2015
+    - id: vs2017
+      title: Visual Studio 2017
+    - id: vs2019
+      title: Visual Studio 2019
+- id: aspnet-core-identity-data-store
+  title: Identity-Data-Store
+  prompt: Choose the ASP.NET Core Identity data store
+  pivots:
+    - id: pg
+      title: PostgreSQL
+    - id: sql
+      title: SQL Server
+- id: vsandcode
+  title: IDE
+  prompt: Choose your app Integrated Development Environment (IDE)
+  pivots:
+    - id: vscode
+      title: Visual Studio Code
+    - id: vstudio
+      title: Visual Studio
+- id: vs-vscode-language
+  title: IDE and language
+  prompt: Choose your Integrated Development Environment (IDE) and development language
+  pivots:
+    - id: vscode-node
+      title: Visual Studio Code + Node.js
+    - id: vscode-csharp
+      title: Visual Studio Code + C#
+    - id: vs-node
+      title: Visual Studio + Node.js
+    - id: vs-csharp
+      title: Visual Studio + C#

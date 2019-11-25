@@ -4,8 +4,8 @@ metadata:
   title: Write to multiple regions
   description: Learn how to use Azure Cosmos DB to write your data to multiple regions at the same time.
   ms.date: 09/24/2018
-  author: mimig1
-  ms.author: mimig
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -29,7 +29,7 @@ quiz:
     choices:
     - content: "Last-Writer-Wins"
       isCorrect: true
-      explanation: "Conflict resolution is built-in to Cosmos DB and is performed on the server, inside the database engine. Last-Writer-Wins is the default policy."
+      explanation: "Conflict resolution is built-in to Azure Cosmos DB and is performed on the server, inside the database engine. Last-Writer-Wins is the default policy."
     - content: "A custom user-defined procedure"
       isCorrect: false
       explanation: "User-defined procedures are supported, but they are not the default mechanism for handling conflicts."

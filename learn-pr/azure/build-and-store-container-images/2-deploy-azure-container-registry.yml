@@ -4,22 +4,19 @@ metadata:
   title: Exercise - Deploy Azure Container Registry
   description: Deploy Azure Container Registry
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: cryophobia
+  ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Deploy Azure Container Registry
+title: Exercise - Deploy Azure Container Registry
 durationInMinutes: 2
-interactive: bash
-azureSandbox: true
 content: |
   [!include[](includes/2-deploy-acr.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.ContainerRegistry/registries"
-  hint: "Run the `az acr create` command as shown to create your container registry."
+#tasks:
+#- action: exists
+#  environment: azure
+#  azure:
+#    resource:
+#      type: "Microsoft.ContainerRegistry/registries"
+#  hint: "Run the `az acr create` command as shown to create your container registry."

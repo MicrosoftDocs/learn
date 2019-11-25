@@ -4,8 +4,8 @@ metadata:
   title: Knowledge check
   description: Test your knowledge by answering questions about skills you learned from the lab.
   ms.date: 02/20/2019
-  author: barlan
-  ms.author: barlan
+  author: jasallen 
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Knowledge check
@@ -52,12 +52,12 @@ quiz:
           explanation: Correct. The corr() method is invoked on a Pandas DataFrame to calculate the correlation on all features in the DataFrame.
     - content: "Which method is used in Python cells to display the results as a formatted table or chart visualization?"
       choices:
-        - content: display(df)
-          explanation: Correct. This syntax renders the output of the cell as a formatted table or chart.
-          isCorrect: true
         - content: df.display()
           isCorrect: false
           explanation: This syntax is invalid.
+        - content: display(df)
+          explanation: Correct. This syntax renders the output of the cell as a formatted table or chart.
+          isCorrect: true
         - content: print(df)
           isCorrect: false
           explanation: The print() method displays the DataFrame as a text-only table, not a formatted table.

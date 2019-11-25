@@ -20,9 +20,13 @@ roles:
 - business-user
 products:
 - azure
+- dynamics
+- m365
 modules:
 - learn-wwl.ai-strategy-to-create-business-value
 - learn-wwl.ai-strategy-in-financial-services
+- learn-wwl.ai-strategy-in-government
+- learn-wwl.ai-strategy-in-education
 - learn-wwl.ai-strategy-in-retail
 - learn-wwl.ai-strategy-in-manufacturing
 - learn-wwl.ai-strategy-in-healthcare

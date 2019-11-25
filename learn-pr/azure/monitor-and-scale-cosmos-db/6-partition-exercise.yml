@@ -2,11 +2,11 @@
 uid: learn.monitor-azure-cosmos-db.6-partition-exercise
 title: Exercise - Measure the impact of partition key choice
 metadata:
-  title: Learn how to measure the impact of different data distribution choices for Azure Cosmos DB
-  description: Visualize data throughput and storage when a partition design results in a hot partition, and evenly distributed partitions
+  title: Exercise - Learn how to measure the impact of data distribution choices for Azure Cosmos DB
+  description: Visualize data throughput and storage when a partition design results in a hot partition and evenly distributed partitions
   ms.date: 02/25/2019
-  author: natke
-  ms.author: nakersha
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

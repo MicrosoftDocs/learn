@@ -2,7 +2,9 @@ In this module, you learned how to use deployment slots in Azure App Service. Yo
 
 When you consider using deployment slots, remember that Azure warms up an app before a swap, and traffic redirection is instantaneous. The result is that your app is deployed without service interruptions or performance drops.
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+## Clean up
+
+Use the Azure portal to delete the **mslearn-slots** resource group from your subscription.
 
 ## Learn more
 

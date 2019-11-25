@@ -1,7 +1,13 @@
-AI exists within the wider world of digital transformation. Understanding the recent history of AI investment and adoption helps to provide not only this context, but also suggests a road map for business decision-makers who are looking to define an AI strategy for their own business. Watch this video from Peter Zemsky, INSEAD’s Eli Lilly Chaired Professor of Strategy and Innovation, as he outlines how AI is driving business value across industries and companies.
+There is a lot of hype around AI. But with significant ongoing investment from venture capitalists, major technology companies, and companies across industries over the past decade, it’s clear that AI is an essential technology of the future. While the complexity underpinning AI may seem intimidating, a high-level understanding of AI capabilities is all you need to drive substantial value.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtTaE]
+Watch this video from Peter Zemsky, Eli Lilly Chaired Professor of Strategy and Innovation, as he outlines how AI is driving real business value across companies and broader society.
 
-AI is important for the future evolution of business and our broader society. Peter Zemsky explains that while there is significant ongoing investment in AI from major technology companies, there remain those who see AI as a threat rather than an opportunity. The complexity underpinning AI is sometimes seen as intimidating, which becomes its own barrier to exploring how AI can be leveraged in business, and how organizations can strategically select the right use cases for adopting AI as a part of creating an AI strategy. Peter Zemsky suggests building a high-level understanding of AI to remove that barrier. The case studies in this module are a great place to start.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3rhk7]
 
-Next, let’s see how Telefónica, one of the world’s largest telecommunications companies, used AI to transform its relationship with customers. With AI, they increased customer loyalty and retention by improving their experience while giving them more choice about how they interact with the company and consume its products and services.
+How can organizations take advantage of this opportunity? Watch this next video from Peter Zemsky as he presents a framework for creating an AI strategy that drives business value.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Z51L]
+
+Keep this framework in mind when considering your own organization’s AI strategy and when reading the following case studies.
+
+Next, let’s see how Telefónica, one of the world’s largest telecommunications companies, used AI to transform its relationship with customers. With AI, they increased customer loyalty and retention by improving their experience while offering more communication and transaction options.

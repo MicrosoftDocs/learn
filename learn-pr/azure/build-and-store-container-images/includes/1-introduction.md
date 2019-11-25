@@ -11,7 +11,7 @@ In this module, you will:
 - Deploy an Azure container registry
 - Build a container image using Azure Container Registry Tasks
 - Deploy the container to an Azure container instance
-- Replicate the container image to multiple Azure datacenters
+- Replicate the container image to multiple Azure regions
 
 ## Prerequisites  
 

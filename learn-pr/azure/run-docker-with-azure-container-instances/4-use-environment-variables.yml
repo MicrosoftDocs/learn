@@ -1,40 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.run-docker-containers-aci.4-use-environment-variables
 metadata:
-  title: Set environment variables
+  title: Exercise - Set environment variables
   description: Set environment variables in Azure Container Instances.
-  ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  ms.date: 07/26/2019
+  author: cryophobia
+  ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Set environment variables
-interactive: bash
-azureSandbox: true
+title: Exercise - Set environment variables
 durationInMinutes: 10
 content: |
   [!include[](includes/4-use-environment-variables.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.ContainerInstance/containerGroups"
-      name: aci-demo
-  hint: ""
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.ContainerInstance/containerGroups"
-      name: aci-demo-secure
-  hint: ""
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.DocumentDB/databaseAccounts"
-      kind: GlobalDocumentDB
-  hint: ""

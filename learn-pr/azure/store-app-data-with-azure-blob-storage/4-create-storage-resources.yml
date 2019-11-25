@@ -1,13 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.store-app-data-with-azure-blob-storage.4-create-storage-resources
-title: Create Azure storage resources
+title: Exercise - Create Azure storage resources
 metadata:
-  title: Create Azure storage resources
-  description: Create Azure storage resources
+  title: Exercise - Create Azure storage resources
+  description: Exercise - Create Azure storage resources
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: nickwalkmsft
+  ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

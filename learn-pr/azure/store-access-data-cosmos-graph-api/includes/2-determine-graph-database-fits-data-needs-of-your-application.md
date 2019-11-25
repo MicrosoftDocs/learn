@@ -20,7 +20,7 @@ More formally, this data model is known as a *Property Graph Model*, and Azure C
 
 ![Screenshot showing the data graph and their relationships](../media/2-graph-data-relationships.png)
 
-Typically graph databases are implemented as NoSQL stores, such as Cosmos DB or MongoDB, and usually require schema flexibility and rapid iteration. With the graph data model, changes to the data model can be achieved with little or no impact to the application. Because relationships are treated as data rather than schema structure, there are many scenarios where graph databases are useful, as they let you model and store efficiently in a non-tabular format.
+Typically graph databases are implemented as NoSQL stores, such as Azure Cosmos DB or MongoDB, and usually require schema flexibility and rapid iteration. With the graph data model, changes to the data model can be achieved with little or no impact to the application. Because relationships are treated as data rather than schema structure, there are many scenarios where graph databases are useful, as they let you model and store efficiently in a non-tabular format.
 
 ## Strengths and weaknesses of graph databases
 

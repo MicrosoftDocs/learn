@@ -34,10 +34,10 @@ A confusion matrix includes the following:
 
 This data is formatted in a matrix format to understand how accurate the predictive model is:
 
-|                  | Predicted No       | **Predicted Yes**  |
+|                  | **Predicted No**       | **Predicted Yes**  |
 |------------------|:------------------:|:------------------:|
-| Actually No      | True Negative      | **True Positive**  |
-| **Actually Yes** | **False Negative** | **False Positive** |
+| **Actually No**  | True Negative      | False Positive  |
+| **Actually Yes** | False Negative | True Positive |
 
 **Accuracy** is the value of accurate predictions of yes and no over the total number of predictions. You want this number to be as close to 1 as possible.
 

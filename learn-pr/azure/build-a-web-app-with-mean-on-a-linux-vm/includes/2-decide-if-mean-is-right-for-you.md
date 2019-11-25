@@ -6,19 +6,15 @@ The main reason you might consider MEAN is if you're familiar with JavaScript. H
 
 All of the components of the MEAN stack are reliable, well-understood, and open source, but so are many other development stacks. Here are some reasons you might choose MEAN over other development stacks.
 
-**You're familiar with JavaScript**
-
-Familiarity and experience with JavaScript is one of the biggest reasons to pick the MEAN stack for web development. You can use the MEAN stack to create applications that run either on the server (for example, to handle web requests) or the client (for example, in a web browser.)
-
 **Your data isn't highly structured**
 
 MongoDB is what's called a **NoSQL** database. A NoSQL database doesn't require data to be structured in a pre-defined way as it would with a relational database like Microsoft SQL Server or MySQL. Instead, MongoDB stores its data in JSON-like documents that don't require the rigid data structures that MySQL or other relational databases require.
 
-**It's well documented**
+**MEAN is well documented**
 
 The components of the MEAN stack are all popular right now. Resources for working with MongoDB, Express, AngularJS, and Node.js are easy to find.
 
-**It runs almost anywhere**
+**MEAN runs almost anywhere**
 
 You can also develop MEAN stack applications from your favorite development environment &ndash; whether that's Windows, macOS, or Linux.
 

@@ -1,23 +1,22 @@
 ### YamlMime:Module
 uid: learn.azure.store-access-data-cosmos-table-api
 metadata:
-  title: Store and Access NoSQL Data with Cosmos DB and the Table API
-  description: By using the Cosmos DB Table API, you will benefit from the low latency, high availability, and scalability of Azure Cosmos DB in a Table storage application.
+  title: Store and Access NoSQL Data with Azure Cosmos DB and the Table API
+  description: By using the Azure Cosmos DB Table API, you will benefit from the low latency, high availability, and scalability of Azure Cosmos DB in a Table storage application.
   ms.date: 04/30/2019
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Store and Access NoSQL Data with Cosmos DB and the Table API
+title: Store and Access NoSQL Data with Azure Cosmos DB and the Table API
 summary: Get lower latency, higher availability, and easier scaling by moving your Azure Storage Tables application to Azure Cosmos DB.
 abstract: |
   At the end of this module, you will be able to:
-  - Describe the advantages of Table Storage and Cosmos DB
-  - Modify an existing Table API application to use Cosmos DB
+  - Describe the advantages of Table Storage and Azure Cosmos DB
+  - Modify an existing Table API application to use Azure Cosmos DB
 prerequisites: |
   - Ability to create and develop NoSQL databases
-  - Ability to create and develop Cosmos DB databases
-  - Ability to parse JSON data by using C#
+  - Ability to create and develop Azure Cosmos DB databases
 iconUrl: /learn/achievements/store-and-access-data-cosmos-db-table-api.svg
 levels:
 - beginner

@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-azure-resources-with-rbac.6-view-activity-logs
 metadata:
-  title: View activity logs for RBAC changes
-  description: Learn how to use Azure Activity Log to list RBAC changes in the portal and generate a simple report.
+  title: Exercise - View activity logs for RBAC changes
+  description: Exercise - View activity logs for RBAC changes
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: View activity logs for RBAC changes
+title: Exercise - View activity logs for RBAC changes
 labId: 46468
 labModal: true
 durationInMinutes: 4

@@ -1,13 +1,6 @@
 Container images can be pulled from Azure Container Registry using many container management platforms, such as Azure Container Instances, Azure Kubernetes Service, and Docker for Windows or Mac. Here, we will deploy our image to an Azure Container Instance.
 
-<!-- Activate the sandbox -->
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
-First, create a variable in the Cloud Shell named `ACR_NAME` with the name of your container registry in lowercase (for example, instead of "MyContainer" make the value "mycontainer"). This variable is used throughout this unit.
-
-```azurecli
-ACR_NAME=<acrName>
-```
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 ## About registry authentication
 
@@ -25,51 +18,40 @@ The admin account provides a quick option to try a new registry. You enable the 
 
 In this exercise, we will enable the registry admin account and use it to deploy your image to an Azure Container Instance from the command line.
 
-Run the following commands to enable the admin account on your registry and retrieve its username and password.
+1. Run the following command in the Cloud Shell to enable the admin account on your registry.
 
-```azurecli
-az acr update -n $ACR_NAME --admin-enabled true
-az acr credential show --name $ACR_NAME
-```
+    ```azurecli
+    az acr update -n $ACR_NAME --admin-enabled true
+    ```
 
-The output is similar to below. Take note of the `username` and the value for `password`.
+1. Now run the following command in the Cloud Shell to retrieve the username and password for the admin account you enabled in the preceding step.
 
-```output
-{  
-  "passwords": [
-    {
-      "name": "password",
-      "value": "aaaaa"
-    },
-    {
-      "name": "password2",
-      "value": "bbbbb"
-    }
-  ],
-  "username": "ccccc"
-}
-```
+    ```azurecli
+    az acr credential show --name $ACR_NAME
+    ```
+
+    Take note of the `username` and  `password` values that are returned from this command. You will need them in this exercise.
 
 ## Deploy a container with Azure CLI
 
-1. Execute the following `az container create` command to deploy a container instance. Replace `<username>` and `<password>` in the following command with your registry's admin username and password.
+1. Execute the following `az container create` command to deploy a container instance. Replace `<username>`,`<password>` in the following command with your registry's admin username and password. Replace `<location>` with the location value returned when you created the container registry earlier.
 
     ```azurecli
     az container create \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group learn-deploy-acr-rg \
         --name acr-tasks \
         --image $ACR_NAME.azurecr.io/helloacrtasks:v1 \
         --registry-login-server $ACR_NAME.azurecr.io \
         --ip-address Public \
-        --location eastus \
-        --registry-username <username> \
-        --registry-password <password>
+        --location <location> \
+        --registry-username [username] \
+        --registry-password [password]
     ```
 
 1. Get the IP address of the Azure container instance using the following command.
 
     ```azurecli
-    az container show --resource-group  <rgn>[sandbox resource group name]</rgn> --name acr-tasks --query ipAddress.ip --output table
+    az container show --resource-group  learn-deploy-acr-rg --name acr-tasks --query ipAddress.ip --output table
     ```
 
 1. Open a browser and navigate to the IP address of the container. If everything has been configured correctly, you should see the following results:

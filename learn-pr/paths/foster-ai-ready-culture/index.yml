@@ -20,6 +20,8 @@ roles:
 - business-user
 products:
 - azure
+- dynamics
+- m365
 modules:
 - learn-wwl.build-an-ai-ready-culture
 - learn-wwl.foster-ai-culture-finance

@@ -4,10 +4,11 @@ metadata:
   title: Knowledge check
   description: Test your knowledge 
   ms.date: 11/09/2018
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ROBOTS: NOINDEX
 title: Knowledge check
 durationInMinutes: 5
 content: |
@@ -56,6 +57,6 @@ quiz:
     choices:
     - content: "Yes"
       isCorrect: true
-      explanation: Azure SQL Database enforces encryption (SSL/TLS) at all times for all conections
+      explanation: Azure SQL Database enforces encryption (SSL/TLS) at all times for all connections
     - content: "No"
       isCorrect: false

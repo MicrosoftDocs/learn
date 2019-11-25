@@ -2,8 +2,8 @@ Organizations preparing to digitally transform their business must determine how
 
 
 |  |  |
-| ------------ | -------------:|
-|![Icon of lightbulb](../media/Lightbulb_icon.png)|*The decision to migrate or modernize is a big one. You may have some questions, including: How do I ensure that my existing applications take maximum advantage of the cloud? How can server migration help my business save money? How can I minimize disruption to my business as I modernize my apps? We will answer these questions as you complete this module.*
+| ------------ | -------------|
+|![Icon of lightbulb](../media/lightbulb.png)|*The decision to migrate or modernize is a big one. You may have some questions, including: How do I ensure that my existing applications take maximum advantage of the cloud? How can server migration help my business save money? How can I minimize disruption to my business as I modernize my apps? We will answer these questions as you complete this module.*
 |
 
 This module explains how to start the journey to the cloud for your business. It explains what to ask about workloads, servers, and the applications you currently run, and whether they are ready for the cloud.

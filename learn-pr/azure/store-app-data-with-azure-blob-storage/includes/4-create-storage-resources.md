@@ -20,15 +20,11 @@ Our app works like a shared folder that accepts file uploads and makes them avai
 
 The code we'll start with compiles and runs, but the parts responsible for storing and loading data are empty. After we complete the code, we'll deploy the app to Azure App Service and test it.
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 Let's set up the storage infrastructure for our app.
 
 ### Storage account
 
-We'll use the Azure Cloud Shell with the Azure CLI to create a storage account. You'll need to provide a unique name for the storage account &mdash; make a note of it for later. We're using "East US" in the example below, but you can change it to any of the available locations from list.
-
-[!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
+We'll use the Azure Cloud Shell with the Azure CLI to create a storage account. You'll need to provide a unique name for the storage account &mdash; make a note of it for later.
 
 Execute the following command to create the storage account. 
 
@@ -36,12 +32,12 @@ Execute the following command to create the storage account.
 az storage account create \
   --kind StorageV2 \
   --resource-group <rgn>[sandbox resource group name]</rgn> \
-  --location eastus \
-  --name <your-unique-storage-account-name>
+  --location centralus \
+  --name [your-unique-storage-account-name]
 ```
 
 > [!NOTE]
-> Why `--kind StorageV2`? There are a few different kinds of storage accounts. For most scenarios, you should use general-purpose v2 accounts. The only reason you need to explicitly specify `--kind StorageV2` is that general-purpose v2 accounts are still fairly new and have not yet been made the default in the Azure Portal or the Azure CLI.
+> Why `--kind StorageV2`? There are a few different kinds of storage accounts. For most scenarios, you should use general-purpose v2 accounts. The only reason you need to explicitly specify `--kind StorageV2` is that general-purpose v2 accounts have not yet been made the default kind in the Azure CLI.
 
 ### Container
 

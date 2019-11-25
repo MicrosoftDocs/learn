@@ -1,13 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-linux-vm-in-azure.6-exercise-connect-to-a-linux-vm-using-ssh
-title: Connect to a Linux virtual machine with SSH
+title: Exercise - Connect to a Linux virtual machine with SSH
 metadata:
-  title: Connect to a Linux virtual machine with SSH
+  title: Exercise - Connect to a Linux virtual machine with SSH
   description: Connect to a Linux virtual machine with SSH
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

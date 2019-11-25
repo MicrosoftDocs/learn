@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.setup-webhook-for-github-repo
 metadata:
-  title: Setup a webhook for a GitHub repository
-  description: Setup a webhook for a GitHub repository
+  title: Set up a webhook for a GitHub repository
+  description: Set up a webhook for a GitHub repository
   ms.date: 04/30/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-title: Setup a webhook for a GitHub repository
+title: Set up a webhook for a GitHub repository
 durationInMinutes: 4
 content: |
   [!include[](includes/4-setup-webhook-for-github-repo.md)]

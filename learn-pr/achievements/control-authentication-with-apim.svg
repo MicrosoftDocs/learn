@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Host an API with Azure App Service/control-authentication-for-your-apis-with-azure-api-management</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-7.8%" y="-9.3%" width="115.7%" height="118.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0981657609 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-26.5%" y="-13.2%" width="152.9%" height="126.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Host-an-API-with-Azure-App-Service" transform="translate(-50.000000, -860.000000)">
+            <g id="Host-an-API-with-Azure-App-Service/control-authentication-for-your-apis-with-azure-api-management" transform="translate(50.000000, 860.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Browser" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(22.000000, 26.000000)">
+                            <path d="M3.1875,43 C1.434375,43 0,41.5666667 0,39.8148148 L0,3.18518519 C0,1.43333333 1.434375,0 3.1875,0 L47.8125,0 C49.565625,0 51,1.43333333 51,3.18518519 L51,39.8148148 C51,41.5666667 49.565625,43 47.8125,43 L3.1875,43" id="Fill-1485" fill="#30404D"></path>
+                            <path d="M3.984375,40.6111111 C3.1078125,40.6111111 2.390625,39.8944444 2.390625,39.0185185 L2.390625,8.75925926 C2.390625,7.88333333 3.1078125,7.16666667 3.984375,7.16666667 L47.015625,7.16666667 C47.8921875,7.16666667 48.609375,7.88333333 48.609375,8.75925926 L48.609375,39.0185185 C48.609375,39.8944444 47.8921875,40.6111111 47.015625,40.6111111 L3.984375,40.6111111" id="Fill-1486" fill="#E1E4E1"></path>
+                            <path d="M3.1875,3.58333333 C3.1875,2.9232037 3.723,2.38888889 4.3828125,2.38888889 C5.04342188,2.38888889 5.578125,2.9232037 5.578125,3.58333333 C5.578125,4.24266667 5.04342188,4.77777778 4.3828125,4.77777778 C3.723,4.77777778 3.1875,4.24266667 3.1875,3.58333333" id="Fill-1487" fill="#DF5142"></path>
+                            <path d="M7.96875,3.58333333 C7.96875,2.9232037 8.50425,2.38888889 9.1640625,2.38888889 C9.82467188,2.38888889 10.359375,2.9232037 10.359375,3.58333333 C10.359375,4.24266667 9.82467188,4.77777778 9.1640625,4.77777778 C8.50425,4.77777778 7.96875,4.24266667 7.96875,3.58333333" id="Fill-1488" fill="#EFB252"></path>
+                            <path d="M12.75,3.58333333 C12.75,2.9232037 13.2855,2.38888889 13.9453125,2.38888889 C14.6059219,2.38888889 15.140625,2.9232037 15.140625,3.58333333 C15.140625,4.24266667 14.6059219,4.77777778 13.9453125,4.77777778 C13.2855,4.77777778 12.75,4.24266667 12.75,3.58333333" id="Fill-1489" fill="#7CB65A"></path>
+                            <path d="M47.4140625,4.77777778 L20.3203125,4.77777778 C19.6605,4.77777778 19.125,4.24266667 19.125,3.58333333 C19.125,2.924 19.6605,2.38888889 20.3203125,2.38888889 L47.4140625,2.38888889 C48.073875,2.38888889 48.609375,2.924 48.609375,3.58333333 C48.609375,4.24266667 48.073875,4.77777778 47.4140625,4.77777778" id="Fill-1490" fill="#697D85"></path>
+                        </g>
+                    </g>
+                    <g id="Api-Hosting" mask="url(#mask-2)" fill-rule="nonzero" stroke="#30404D" stroke-width="2">
+                        <g transform="translate(31.000000, 37.000000)">
+                            <circle id="Oval" cx="4.5" cy="12.5" r="4.5"></circle>
+                            <circle id="Oval" cx="21" cy="3" r="3"></circle>
+                            <circle id="Oval" cx="21" cy="21" r="3"></circle>
+                            <circle id="Oval" cx="29" cy="12" r="3"></circle>
+                            <path d="M9,12.5 L26,12.5" id="Path-110"></path>
+                            <path d="M8,15.1820524 L18,19.4677667" id="Path-110"></path>
+                            <path d="M8,10 L18,5" id="Path-110"></path>
+                        </g>
+                    </g>
+                    <g id="Key" filter="url(#filter-4)" mask="url(#mask-2)">
+                        <g transform="translate(67.815696, 60.222162) rotate(-140.000000) translate(-67.815696, -60.222162) translate(59.315696, 43.222162)">
+                            <path d="M5.80016971,18.1830306 L5.81620746,3.89193471 L9.17388363,-2.03215222e-12 L12.2637974,3.89860551 L10.0302843,6.01746217 L12.2637974,8.41263411 L10.048411,10.5604408 L12.2637974,13.0342612 L10.3046722,15.2351009 L12.2637974,17.4964889 L12.2637974,18.2122028 C15.0551262,19.5003485 17,22.3900242 17,25.7482444 C17,30.3055632 13.418278,34 9,34 C4.581722,34 1,30.3055632 1,25.7482444 C1,22.3644304 2.97463141,19.4563299 5.80016971,18.1830306 Z M8.98615357,27.6756607 L7.71195519,27.6756607 C6.60738042,27.6756512 5.71194564,28.5710859 5.71194564,29.6756607 C5.71194564,30.335568 6.03746473,30.9530007 6.58194775,31.325849 C7.22193744,31.7640978 8.02333938,31.9839001 8.98615357,31.9852556 C9.95249154,31.9866129 10.757651,31.7668566 11.401632,31.3259868 C12.3130875,30.702018 12.5461283,29.4573083 11.9221498,28.5458595 C11.5493183,28.0012624 10.9318177,27.6756607 10.2718258,27.6756607 L8.98615357,27.6756607 Z" id="Combined-Shape" fill="#A8ADAE"></path>
+                            <path d="M9,27.6741705 L8.94970946,27.6741705 L7.39576701,27.6741705 C6.29120678,27.6741872 5.39578379,28.5696102 5.39578379,29.6741705 C5.39578379,30.4145788 5.80483427,31.0944065 6.45900272,31.4412034 C7.14025391,31.8023579 7.97048949,31.9835504 8.94970946,31.9847809 C8.96651648,31.9848019 8.98327999,31.9847697 9,31.9846843 L9,33.9999392 C8.988414,33.9999797 8.97682283,34 8.96522651,34 C4.01386863,34 -1.45519152e-11,30.3046927 -1.45519152e-11,25.7463 C-1.45519152e-11,22.3967468 2.16727225,19.513213 5.28123922,18.2194048 L5.28123922,3.89151255 L8.96522651,4.49063009e-12 L9,0.0369974923 L9,27.6741705 Z" id="Combined-Shape" fill="#8A8F90"></path>
+                            <polygon id="Path-215" fill="#A8ADAE" points="8 3 7 4.11974697 7 17 8 17"></polygon>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

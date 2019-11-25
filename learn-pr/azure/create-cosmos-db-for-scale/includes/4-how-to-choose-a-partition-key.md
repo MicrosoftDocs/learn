@@ -6,7 +6,7 @@ Having a partition strategy ensures that when your database needs to grow, it ca
 
 If you continue to add new data to a single server or a single partition, it will eventually run out of space. To prepare for this, you need a partitioning strategy to **scale out** instead of up. Scaling out is also called horizontal scaling, and it enables you to add more partitions to your database as your application needs them.
 
-The partition and scale-out strategy in Azure Cosmos DB is driven by the partition key, which is a value set when you create a collection. Once the partition key is set, it cannot be changed without recreating the collection, so selecting the right partition key is an important decision to make early in your development process.  
+The partition and scale-out strategy in Azure Cosmos DB is driven by the partition key, which is a value set when you create a container. Once the partition key is set, it cannot be changed without recreating the container, so selecting the right partition key is an important decision to make early in your development process.  
 
 In this unit, you will learn how to choose a partition key that's right for your scenario and will take advantage of the autoscaling that Azure Cosmos DB can do for you.
 

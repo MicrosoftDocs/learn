@@ -2,6 +2,8 @@ Azure Databricks is a fully-managed version of the open-source [Apache Spark](ht
 
 Databricks provides a notebook-oriented Apache Spark as-a-service workspace environment, making it easy to manage clusters and explore data interactively.
 
+[!INCLUDE [azure-databricks-free-trial-note](../../../includes/azure-databricks-free-trial-note.md)]
+
 ## Learning objectives
 
 In this module, you will:

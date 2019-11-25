@@ -72,7 +72,7 @@ Similar to what you did previously, run `az group deployment validate` to valida
 
 ```azurecli
 az group deployment validate \
-  --resource-group <rgn>[sandbox resource group name]</rgn> \
+  --resource-group $RESOURCEGROUP \
   --template-file azuredeploy.json \
   --parameters adminUsername=$USERNAME \
   --parameters authenticationType=password \
@@ -93,7 +93,7 @@ Run `az group deployment create` to update your deployment.
 ```azurecli
 az group deployment create \
   --name MyDeployment \
-  --resource-group <rgn>[sandbox resource group name]</rgn> \
+  --resource-group $RESOURCEGROUP \
   --template-file azuredeploy.json \
   --parameters adminUsername=$USERNAME \
   --parameters authenticationType=password \
@@ -114,7 +114,7 @@ The deployment succeeded, so let's see the resulting configuration in action.
     ```azurecli
     IPADDRESS=$(az vm show \
       --name MyUbuntuVM \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group $RESOURCEGROUP \
       --show-details \
       --query [publicIps] \
       --output tsv)

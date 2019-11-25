@@ -8,6 +8,8 @@ Deep-learning techniques have the following advantages:
 - **Robustness:** Artificial neural networks can work directly on a raw dataset without requiring any cleanup or engineering.
 - **Adaptability:** Pretrained deep neural networks can be easily transferred and used with varied domains.
 
+[!INCLUDE [azure-databricks-free-trial-note](../../../includes/azure-databricks-free-trial-note.md)]
+
 ## Learning objectives
 
 In this module, you'll:

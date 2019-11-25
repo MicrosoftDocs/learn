@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.protect-vm-settings-with-dsc.exercise-setup-dsc-configuration
+title: Exercise - Set up a DSC and configure a desired state
+metadata:
+  title: Exercise - Set up a DSC and configure a desired state
+  description: Exercise - Set up a DSC and configure a desired state
+  ms.date: 09/13/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 30
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/4-exercise-setup-dsc-configuration.md)]
+tasks:
+- action: exists
+  environment: azure
+  hint: "Run the `az vm create` command as shown to create your virtual machine."
+  azure:
+    resource:
+      type: "Microsoft.Compute/virtualMachines"
+- action: exists
+  environment: azure
+  hint: "Create an Azure Automation account in the Azure portal."
+  azure:
+    resource:
+      type: "Microsoft.Automation/automationAccounts"

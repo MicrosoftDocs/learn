@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-hpc.2-azure-batch
+metadata:
+  title: Azure Batch
+  description: In this unit, you'll learn about the Azure Batch service and how it helps you to manage high-performance compute tasks.
+  ms.date: 10/10/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Batch
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-azure-batch.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What's the advantage of using Azure Batch, rather than provisioning the required number of VMs for the task at hand?"
+    choices:
+    - content: "Because Azure Batch is a managed service, you get a discount on the compute capacity you purchase."
+      isCorrect: false
+      explanation: "There is no discount on capacity. Azure Batch helps by scheduling and managing nodes for HPC."
+    - content: "Azure Batch handles the scheduling and managing of nodes for you, free of charge."
+      isCorrect: true
+      explanation: "Azure Batch makes it easier to run HPC tasks by scheduling and managing nodes."
+    - content: "Only by using Azure Batch can you access the most high-performing VM SKUs on Azure."
+      isCorrect: false
+      explanation: "You can create high-performance VMs manually without Azure Batch. Azure Batch helps by scheduling and managing nodes for HPC."
+  - content: "You've analyzed a problem and found that it has 1000 separate subtasks. To solve this problem, your boss agrees to budget 20 VM nodes to run in Azure Batch. Compared to running on a single VM node of the same size, approximately how much quicker would you expect the problem's solution to be?"
+    choices:
+    - content: "1/50 of the time"
+      isCorrect: false
+      explanation: "Because there are many small subtasks, work can be evenly distributed by Azure Batch and 20 VMs can complete the tasks in approximately 1/20 of the time."
+    - content: "1/20 of the time"
+      isCorrect: true
+      explanation: "Because there are many small subtasks, work can be evenly distributed by Azure Batch and 20 VMs can complete the tasks in approximately 1/20 of the time."
+    - content: "The same length of time — but results are more accurate"
+      isCorrect: false
+      explanation: "Because there are many small subtasks, work can be evenly distributed by Azure Batch and 20 VMs can complete the tasks in approximately 1/20 of the time."

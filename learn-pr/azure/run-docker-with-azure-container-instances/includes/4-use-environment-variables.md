@@ -1,6 +1,6 @@
 Environment variables enable you to dynamically configure the application or script the container runs. You can use the Azure CLI, PowerShell, or the Azure portal to set variables when you create the container. Secured environment variables enable you to prevent sensitive information from displaying in the container's output.
 
-Here, you'll create an Azure Cosmos DB instance and use environment variables to pass the connection information to an Azure container instance. An application in the container uses the variables to write and read data from Cosmos DB. You will create both an environment variable and a secured environment variable so you can see the difference between them.
+Here, you'll create an Azure Cosmos DB instance and use environment variables to pass the connection information to an Azure container instance. An application in the container uses the variables to write and read data from Azure Cosmos DB. You will create both an environment variable and a secured environment variable so you can see the difference between them.
 
 ## Deploy Azure Cosmos DB
 
@@ -14,7 +14,7 @@ Here, you'll create an Azure Cosmos DB instance and use environment variables to
 
     ```azurecli
     COSMOS_DB_ENDPOINT=$(az cosmosdb create \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name $COSMOS_DB_NAME \
       --query documentEndpoint \
       --output tsv)
@@ -24,11 +24,11 @@ Here, you'll create an Azure Cosmos DB instance and use environment variables to
 
     `$COSMOS_DB_NAME` specifies your unique database name. The command prints the endpoint address for your database. Here, the command saves this address to the Bash variable `COSMOS_DB_ENDPOINT`.
 
-1. Run `az cosmosdb list-keys` to get the Azure Cosmos DB connection key and store it in a Bash variable named `COSMOS_DB_MASTERKEY`.
+1. Run `az cosmosdb keys list` to get the Azure Cosmos DB connection key and store it in a Bash variable named `COSMOS_DB_MASTERKEY`.
 
     ```azurecli
-    COSMOS_DB_MASTERKEY=$(az cosmosdb list-keys \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+    COSMOS_DB_MASTERKEY=$(az cosmosdb keys list \
+      --resource-group learn-deploy-aci-rg \
       --name $COSMOS_DB_NAME \
       --query primaryMasterKey \
       --output tsv)
@@ -44,7 +44,7 @@ The two environment variables you created in the last part, `COSMOS_DB_ENDPOINT`
 
     ```azurecli
     az container create \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name aci-demo \
       --image microsoft/azure-vote-front:cosmosdb \
       --ip-address Public \
@@ -62,7 +62,7 @@ The two environment variables you created in the last part, `COSMOS_DB_ENDPOINT`
 
     ```azurecli
     az container show \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name aci-demo \
       --query ipAddress.ip \
       --output tsv
@@ -89,7 +89,7 @@ In this part, you'll learn how to prevent sensitive information, such as connect
 
     ```azurecli
     az container show \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name aci-demo \
       --query containers[0].environmentVariables
     ```
@@ -119,7 +119,7 @@ In this part, you'll learn how to prevent sensitive information, such as connect
 
     ```azurecli
     az container create \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name aci-demo-secure \
       --image microsoft/azure-vote-front:cosmosdb \
       --ip-address Public \
@@ -135,7 +135,7 @@ In this part, you'll learn how to prevent sensitive information, such as connect
 
     ```azurecli
     az container show \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group learn-deploy-aci-rg \
       --name aci-demo-secure \
       --query containers[0].environmentVariables
     ```

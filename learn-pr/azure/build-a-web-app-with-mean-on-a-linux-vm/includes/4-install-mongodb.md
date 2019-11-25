@@ -21,42 +21,42 @@ Later, you can [check out the installation guide](https://docs.mongodb.com/manua
 
 ## Install MongoDB
 
-Here you'll install MongoDB with just a few commands. The process involves registering the MongoDB repository so that `apt` can locate the package.
+Here you'll install MongoDB with just a few commands. You'll work from the SSH connection to the Ubuntu VM that you created in the previous unit.
 
-> [!IMPORTANT]
-> Here, you'll work from the SSH connection to the Ubuntu VM that you created in the previous unit.
-
-1. Import the encryption key for the MongoDB repository. This  allows the package manager to verify that the packages you install are coming from MongoDB Inc.
+1. First, we'll make sure all current packages are up to date.
 
     ```bash
-    sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+    sudo apt update && sudo apt upgrade -y
     ```
 
     > [!NOTE]
     > The `sudo` part means that we want to run the command with administrative privileges.
 
-1. Register the MongoDB repository so the package manager can locate the packages, like this.
-
-    ```bash
-    echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
-    ```
-
-1. Update the `apt` package database so you have the latest package information.
-
-    ```bash
-    sudo apt-get update
-    ```
-
 1. Install the MongoDB package.
 
     ```bash
-    sudo apt-get install -y mongodb-org
+    sudo apt-get install -y mongodb
     ```
 
-1. Start the MongoDB service.
+1. Once the installation completes, the service should automatically start up. Let's confirm this by running this command.
 
     ```bash
-    sudo service mongod start
+    sudo systemctl status mongodb
+    ```
+
+    You should see the service running.
+
+    ```output
+    azureuser@MeanStack:~$ sudo systemctl status mongodb
+    ● mongodb.service - An object/document-oriented database
+      Loaded: loaded (/lib/systemd/system/mongodb.service; enabled; vendor preset: enabled)
+      Active: active (running) since Thu 2019-08-22 16:46:30 UTC; 9s ago
+        Docs: man:mongod(1)
+    Main PID: 18360 (mongod)
+      CGroup: /system.slice/mongodb.service
+              └─18360 /usr/bin/mongod --config /etc/mongodb.conf
+
+    Aug 22 16:46:30 MeanStack systemd[1]: Started An object/document-oriented database.
     ```
 
 1. Run `mongod --version` to verify the installation.

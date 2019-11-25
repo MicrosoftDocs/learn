@@ -52,10 +52,10 @@ Any Windows App Service web app can benefit from the runtime instrumentation tec
 
 You can enable runtime instrumentation for a Windows App Service web app when you create the app or at a later time.
 
-- To enable it when you create the web app, on the web app **Create** blade, select **Application Insights** and then select **Enable**.
+- To enable it when you create the web app, on the web app **Create** pane, select the **Monitoring** tab and then select **Yes** next to **Enable Application Insights**. This screen will also give you the opportunity to create a new Application Insights resource.
 
     ![Enable Application Insights you you create a web app](../media/2-enable-app-insights-at-web-app-creation.png)
-- If you choose to create a web app without enabling Application Insights, you can enable it later on the **Application Insights** page of the web app's blade.
+- If you choose to create a web app without enabling Application Insights, you can enable it later on the **Application Insights** page of the web app's pane.
 
 Both options open a wizard that will help you create a new Application Insights resource if you don't already have one in your subscription.
 

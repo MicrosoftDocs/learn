@@ -5,9 +5,8 @@ metadata:
   title: Knowledge check - IaaS, PaaS & SaaS
   description: Knowledge check - IaaS, PaaS & SaaS
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: jboeshart
+  ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -52,14 +51,15 @@ quiz:
       isCorrect: true
       explanation: "A SaaS solution such as Office 365 would be a good solution for the collaboration requirements."
 
-  - content: "Which cloud service model is described in the following scenario? You have two datacenters in your organization. One datacenter has a database that can only reside in one of the datacenters because of a regulatory requirement. You want to access the database from the other datacenter. You create a VPN using a cloud provider to connect the two datacenters."
-    choices:
-    - content: IaaS
-      isCorrect: true
-      explanation: "VPN is an IaaS resource so this would be considered an IaaS solution."
-    - content: PaaS
-      isCorrect: false
-      explanation: "VPN is an IaaS resource so this would be considered an IaaS solution."
-    - content: SaaS
-      isCorrect: false
-      explanation: "VPN is an IaaS resource so this would be considered an IaaS solution."
+### REMOVING THIS QUESTION: IS A VPN IAAS OR PAAS?
+###  - content: "Which cloud service model is described in the following scenario? You have two datacenters in your organization. One datacenter has a database that can only reside in one of the datacenters because of a regulatory requirement. You want to access the database from the other datacenter. You create a VPN using a cloud provider to connect the two datacenters."
+###    choices:
+###    - content: IaaS
+###      isCorrect: true
+###      explanation: "VPN is an IaaS resource so this would be considered an IaaS solution."
+###    - content: PaaS
+###      isCorrect: false
+###      explanation: "VPN is an IaaS resource so this would be considered an IaaS solution."
+###    - content: SaaS
+###      isCorrect: false
+###      explanation: "VPN is an IaaS resource so this would be considered an IaaS solution."

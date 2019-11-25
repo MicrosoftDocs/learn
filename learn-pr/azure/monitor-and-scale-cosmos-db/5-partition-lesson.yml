@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-azure-cosmos-db.5-partition-lesson
-title: Identify partition strategy for your Cosmos DB data
+title: Identify a partition strategy for your Azure Cosmos DB data
 metadata:
   title: Learn the best methods of data distribution in a NoSQL database
   description: Partition design is fundamental to scaling unstructured data collections
   ms.date: 02/08/2019
-  author: natke
-  ms.author: nakersha
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -18,26 +18,26 @@ quiz:
   questions:
   - content: "What causes a hot partition in a distributed NoSQL database collection?"
     choices:
-    - content: "A partition key with a large number of values"
+    - content: "A partition key with a large number of values."
       isCorrect: false
       explanation: "Partition key values with a large number of matches are distributed across partitions."
-    - content: "A partition key that doesn't distribute requests evenly over storage and time"
+    - content: "A partition key that doesn't distribute requests evenly over storage and time."
       isCorrect: true
       explanation: "Access that's concentrated to fewer values of the partition key can cause bottlenecks on a single partition."
-    - content: "A read-heavy workload"
+    - content: "A read-heavy workload."
       isCorrect: false
       explanation: "Requests should be evenly distributed across partitions regardless of workload type, partition key values, and access."
-    - content: "Querying a large volume of data"
+    - content: "Querying a large volume of data."
       isCorrect: false  
       explanation: "Requests should be evenly distributed across partitions regardless of workload type, partition key values, and access."
-  - content: "What is the best way to maximize the efficiency of an individual database query?"
+  - content: "What's the best way to maximize the efficiency of an individual database query?"
     choices: 
     - content: "Minimize the number of queries to the database."
       isCorrect: false
       explanation: "Running fewer queries does reduce the demands on your database. But that's not practical in most operational scenarios."
     - content: "Spread your write workload across partitions."
       isCorrect: false
-      explanation: "To use your allocated throughput efficiently, both write and query workloads should be distributed across partitions."
+      explanation: "To use your allocated throughput efficiently, distribute both write and query workloads across partitions."
     - content: "Design a partition key strategy so that your most frequent queries don't cross partitions."
       isCorrect: true
-      explanation: "Querying within a partition places far fewer demands on Cosmos DB than querying across partitions."  
+      explanation: "Querying within a partition places far fewer demands on Azure Cosmos DB than querying across partitions."  

@@ -17,7 +17,7 @@ In addition, the Windows-based DSVM includes several preinstalled programming la
 - Azure PowerShell
 - AzCopy
 - Azure Data Lake Storage
-- Migration tools for various databases (DocumentDB, Cosmos DB, etc.)
+- Migration tools for various databases (DocumentDB, Azure Cosmos DB, etc.)
 - Data Management Gateway
 
 ## Data science tools

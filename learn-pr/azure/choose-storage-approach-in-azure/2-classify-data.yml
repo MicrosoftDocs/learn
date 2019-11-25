@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.choose-storage-approach-in-azure.2-classify-data
 metadata:
-  title: Knowledge check
-  description: Knowledge check
-  ms.date: 09/24/2018
-  author: mimig1
-  ms.author: mimig
+  title: Classify your data
+  description: Classify your data
+  ms.date: 11/03/2019
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

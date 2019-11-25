@@ -5,9 +5,8 @@ metadata:
   title: Develop a disaster recovery strategy
   description: Develop a disaster recovery strategy
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: jboeshart
+  ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

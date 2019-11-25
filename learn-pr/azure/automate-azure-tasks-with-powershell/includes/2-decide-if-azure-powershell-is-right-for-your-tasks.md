@@ -3,6 +3,7 @@ Suppose you need to choose a tool to administer the Azure resources used to test
 You want something that is easy for administrators to learn, but powerful enough to automate the installation and setup of multiple virtual machines or script a full application environment. There are multiple tools available; you need to find the best one for your people and your tasks.
 
 ## What tools are available?
+
 Azure provides three administration tools to choose from:
 
 - The Azure portal
@@ -14,11 +15,13 @@ They all offer approximately the same amount of control; any task that you can d
 Here, we will describe each of the three options and give some guidance on how to decide among them. 
 
 ## What is the Azure portal?
+
 The Azure portal is a website that lets you create, configure, and alter the resources in your Azure subscription. The portal is a Graphical User Interface (GUI) that makes it convenient to locate the resource you need and execute any required changes. It also guides you through complex administrative tasks by providing wizards and tooltips.
 
 The portal does not provide any way to automate repetitive tasks. For example, to set up 15 VMs, you would need to create them one-by-one by completing the wizard for each VM. This can be time-consuming and error-prone for complex tasks. 
 
 ## What is the Azure CLI?
+
 The Azure CLI is a cross-platform command-line program to connect to Azure and execute administrative commands on Azure resources. For example, to create a VM, you would use a command like the following:
 
 ```azurecli
@@ -32,6 +35,7 @@ az vm create \
 The Azure CLI is available two ways: inside a browser via the Azure Cloud Shell or with a local install on Linux, Mac, or Windows. In both cases, it can be used interactively or scripted. For interactive use, you first launch a shell such as `cmd.exe` on Windows or Bash on Linux or macOS and then issue the command at the shell prompt. To automate repetitive tasks, you assemble the commands into a shell script using the script syntax of your chosen shell and then execute the script.
 
 ## What is Azure PowerShell?
+
 Azure PowerShell is a module that you add to Windows PowerShell or PowerShell Core to let you connect to your Azure subscription and manage resources. Azure PowerShell requires PowerShell to function. PowerShell provides services like the shell window, command parsing, and so on. Azure PowerShell adds the Azure-specific commands.
 
 For example, Azure PowerShell provides the **New-AzVM** command that creates a virtual machine for you inside your Azure subscription. To use it, you would launch the PowerShell application and then issue a command like the following:
@@ -47,6 +51,7 @@ New-AzVm `
 Azure PowerShell is also available two ways: inside a browser via the Azure Cloud Shell or with a local install on Linux, Mac, or Windows. In both cases, you have two modes to choose from. You can use it in interactive mode, in which you manually issue one command at a time, or in scripting mode, where you execute a script that consists of multiple commands.
 
 ## How to Choose an administrative tool
+
 There is approximate parity between the portal, the Azure CLI, and Azure PowerShell with respect to the Azure objects they can administer and the configurations they can create. They are also all cross-platform. This means you will typically consider several other factors when making your choice:
 
 - **Automation**: Do you need to automate a set of complex or repetitive tasks? Azure PowerShell and the Azure CLI support this while the portal does not.
@@ -56,10 +61,11 @@ There is approximate parity between the portal, the Azure CLI, and Azure PowerSh
 - **Team skillset**: Does your team have existing expertise? For example, your team may have used PowerShell to administer Windows. If so, they will quickly become comfortable using Azure PowerShell.
 
 ## Example
+
 Recall that you are choosing an administrative tool to create the test environments for your CRM application. Your administrators have two specific Azure tasks they will need to do:
 
 1. Create one resource group for each category of testing (unit, integration, and acceptance).
-2. Create multiple VMs in each resource group before every round of testing.
+1. Create multiple VMs in each resource group before every round of testing.
 
 To create the resource groups, the Azure portal is a reasonable choice. These are one-off tasks, so you don't need scripts to do them.
 

@@ -11,7 +11,7 @@ Azure supports triggers for the following services.
 | Service                 | Trigger description  |
 |-------------------------|---------|
 | Blob storage            | Start a function when a new or updated blob is detected.       |
-| Cosmos DB               | Start a function when inserts and updates are detected.      |
+| Azure Cosmos DB               | Start a function when inserts and updates are detected.      |
 | Event Grid              | Start a function when an event is received from Event Grid.       |
 | HTTP                    | Start a function with an HTTP request.      |
 | Microsoft Graph Events  | Start a function in response to an incoming webhook from the Microsoft Graph. Each instance of this trigger can react to one Microsoft Graph resource type.       |
@@ -54,7 +54,7 @@ The following snippet is the _function.json_ file for this scenario.
 }
 ```
 
-Our JSON configuration specifies that our function will be triggered when a message is added to a queue named **myqueue-items**. The return value of our function is then written to the **outTable** table in Azure Table storage. 
+Our JSON configuration specifies that our function will be triggered when a message is added to a queue named **myqueue-items**. The return value of our function is then written to the **outTable** table in Azure Table storage. For PowerShell functions, output bindings are explicitly written to with the `Push-OutputBinding` cmdlet.
 
 This example is a simple illustration of how we configure bindings for a function.  We could change the output to be an email using a SendGrid binding, or put an event onto a Service Bus to notify some other component in our architecture, or even have multiple output bindings to push data to various services.
 
@@ -67,19 +67,11 @@ Azure provides several pre-made function templates for common scenarios.
 
 ### Quickstart templates
 
-When adding your first function, you are presented with the Quickstart screen. This screen allows you to choose a trigger type (HTTP, Timer, or Data) and programming language (C#, JavaScript, F# or Java). Then, based on your selections, Azure will generate the function code and configuration for you with some sample code provided to display out the input data received in the log.
+When adding your first function, you are presented with the Quickstart screen where you can choose the trigger for your function. Based on your selections, Azure will generate the function code and configuration for you with some sample code provided to display out the input data received in the log.
 
 ### Custom function templates
 
 The selection of Quickstart templates provides easy access to the most common scenarios. However, Azure provides over 30 additional templates you can start with. These can be selected from the template list screen when creating subsequent functions or be selected by using the **Custom function** option on the Quickstart screen.
-
-- HTTP trigger w/ C#, F#, or JavaScript
-- Timer trigger w/ C#, F#, or JavaScript
-- Queue trigger w/ C#, F#, or JavaScript
-- Service Bus Queue trigger w/ C#, F#, or JavaScript
-- Cosmos DB trigger w/ C# or JavaScript
-- IoT Hub (Event Hub) w/ C#, F#, or JavaScript
-- ... and many more
 
 ## Navigating to your function and files
 
@@ -87,7 +79,7 @@ When you create a function from a template, several files are created. For examp
 
 When you select a function in your function app, a code editor opens and displays the code for your function, as illustrated in the following screenshot.
 
-![Screenshot of the Azure portal showing the function editor blade, including the expanded View files menu, with the selected "HttpTriggerJS1" function in our app service navigation and the View files menu highlighted.](../media/4-file-navigation.png)
+![Screenshot of the Azure portal showing the function editor pane, including the expanded View files menu, with the selected "HttpTriggerJS1" function in our app service navigation and the View files menu highlighted.](../media/4-file-navigation.png)
 
 As you can see in the preceding screenshot, there's a flyout menu on the right that includes a tab to **View files**. Selecting this tab shows the file structure that makes up your function.
 
@@ -107,7 +99,7 @@ The portal also provides a convenient way to test your functions. On the right s
 
 The ability to monitor your functions is critical during development and in production. The Azure portal provides a monitoring dashboard available if you turn on the Application Insights integration. In the function app navigation menu, once you expand the function node you'll see a **Monitor** menu item. This monitor dashboard provides a quick way to view the history of function executions and displays the timestamp, result code, duration, and operation ID populated by Application Insights.
 
-![Screenshot of the Azure portal showing an HTTP function Monitor blade with several function results and their corresponding HTTP status codes, with the Module menu item of the function highlighted.](../media/4-monitor-function.png)
+![Screenshot of the Azure portal showing an HTTP function Monitor pane with several function results and their corresponding HTTP status codes, with the Module menu item of the function highlighted.](../media/4-monitor-function.png)
 
 ## Streaming log window
 
@@ -116,13 +108,19 @@ You're also able to add logging statements to your function for debugging in the
 The following JavaScript code snippet shows how to log a message using the `context.log` method (the `context` object is passed to the handler).
 
 ```javascript
-  context.log('Enter your logging statement here');
+context.log('Enter your logging statement here');
 ```
 
 We could do the same thing in C# using the `log.Info` method. In this case, the `log` object is passed to the C# method processing the function.
 
 ```csharp
-  log.Info("Enter your logging statement here");
+log.Info("Enter your logging statement here");
+```
+
+In PowerShell, use `Write-Host` to write to the log:
+
+```powershell
+Write-Host "Enter your logging statement here"
 ```
 
 ### Errors and warnings window

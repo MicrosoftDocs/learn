@@ -4,10 +4,9 @@ title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  ms.date: 08/26/2019
+  author: cryophobia
+  ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -42,11 +41,17 @@ quiz:
       isCorrect: true
       explanation: "Event Hubs default to 4 partitions. Partitions are the buckets within an Event Hub. Each publication will go into only one partition. Each consumer group may read from one or more than one partition."
  
-  - content: "If an Event Hub goes offline before a consumer group can process the events it holds, those events will be lost."
+  - content: "What is the maximum size for a single publication (individual or batch) that is allowed by Azure Event Hub?"
     choices:
-    - content: "True"
+    - content: "64 KB"
       isCorrect: false
-      explanation: "Events are persistent. Each consumer group has its own cursor maintaining its position within the partition. The consumer groups can resume processing at their cursor position when the Event Hub is again available."
-    - content: "False"
+      explanation: "64 KB is less than the maximum size for a single publication (individual or batch) that is allowed by Azure Event Hub."
+    - content: "128 KB"
+      isCorrect: false
+      explanation: "128 KB is less than the maximum size for a single publication (individual or batch) that is allowed by Azure Event Hub."
+    - content: "256 KB"
       isCorrect: true
-      explanation: "Events are persistent. Each consumer group has its own cursor maintaining its position within the partition. The consumer groups can resume processing at their cursor position when the Event Hub is again available."
+      explanation: "The maximum size for a single publication (individual or batch) that is allowed by Azure Event Hub is 256 KB."
+    - content: "512 KB"
+      isCorrect: false
+      explanation: "512 KB is more than the maximum size for a single publication (individual or batch) that is allowed by Azure Event Hub."

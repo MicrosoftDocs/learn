@@ -7,25 +7,46 @@ As the diagram illustrates, AutoML automates the processes for model selection a
 - Define the source and format of the model-training data.
 - Configure the compute target to run the experiment.
 - Define the machine learning objective and constraints.
-- Start the AutoML process, which allows the Azure Machine Learning service to select the right algorithm and tune the hyperparameters automatically. In the process, AutoML iterates over different combinations of algorithms and hyperparameters until it finds the best model based on the objective.
+- Start the AutoML process.  This  allows the Azure Machine Learning service to select the right algorithm and tune the hyperparameters automatically. In the process, AutoML iterates over different combinations of algorithms and hyperparameters until it finds the best model based on the objective.
 - Retrieve and test the best model.
 
 ## Connect to your workspace
 
-You created a workspace earlier in, **Introduction to the Azure Machine Learning service**, if that workspace is not available, you can create a new one to run the following code in. You will need to sign in with your Azure account and replace the *name*, *subscription_id*, and *resource_group* parameters with ones from your workspace:
+You created a workspace earlier in, **Introduction to the Azure Machine Learning service**.  If that workspace is not available, you can create a new one to run the following code in. You will need to sign in with your Azure account and replace the *name*, *subscription_id*, and *resource_group* parameters with ones from your workspace:
 
 ```python
 from azureml.core import Workspace, Experiment, Run
+
 ws = Workspace.get(name='{name}',
                    subscription_id='{azure-subscription-id}',
                    resource_group='{resource-group-name}'
                   )
+
+print('Done')
 ```
 
-Now, you will create an experiment in this workspace by using the following code:
+For input data, you will use a dataset built into Python's sklearn.datasets module that contains some sample diabetes data. The columns include age, sex, body mass index, average blood pressure, and six blood serum measurements on 442 diabetes patients, as well a quantitative measure of disease progression.  We want to build a model that can predict the disease progression after one year based given the same input variables.  
 
 ```python
+# Load the diabetes dataset, a well-known built-in small dataset that comes with scikit-learn.
+from sklearn.datasets import load_diabetes
+from sklearn.model_selection import train_test_split
+
+X, y = load_diabetes(return_X_y = True)
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
+
+print('Done')
+```
+
+Now, you'll create an experiment in this workspace by using the following code:
+
+```python
+from azureml.core.experiment import Experiment
+
 experiment = Experiment(workspace = ws, name = "my-third-experiment")
+
+print('Done')
 ```
 
 ## Define the machine learning objective and constraints
@@ -33,16 +54,22 @@ experiment = Experiment(workspace = ws, name = "my-third-experiment")
 The first step is to define the machine learning objective by using AutoMLConfig, as illustrated in the following code:
 
 ```python
+from azureml.core.experiment import Experiment
+from azureml.core.workspace import Workspace
+from azureml.train.automl import AutoMLConfig
+import logging
+
 automl_config = AutoMLConfig(task = 'regression',
                   iteration_timeout_minutes = 10,
-                  iterations = 10,
+                  iterations = 3,
                   primary_metric = 'spearman_correlation',
                   n_cross_validations = 5,
                   debug_log = 'automl.log',
                   verbosity = logging.INFO,
                   X = X_train, 
-                  y = y_train,
-                  path = project_folder)
+                  y = y_train)
+
+print('Done')
 ```
 
 In this example, the following properties are set:
@@ -57,7 +84,7 @@ In this example, the following properties are set:
 
 - **n_cross_validations**: This is the number of cross-validation splits.
 
-Depending on what you want to do, you might need to set other properties; AutoML will run multiple experiments in parallel and select the best algorithm and hyperparameters for you during the run.
+Depending on what you want to do, you might need to set other properties.  AutoML will run multiple experiments in parallel and select the best algorithm and hyperparameters for you during the run.
 
 ## Start the AutoML process
 

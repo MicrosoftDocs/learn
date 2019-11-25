@@ -1,0 +1,43 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.export-data-with-azure-import-export.what-is-azure-import-export
+title: What is Azure Import/Export?
+
+metadata:
+  title: What is Azure Import/Export?
+  description: What is Azure Import/Export?
+  ms.date: 7/26/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-what-is-azure-import-export.md)]
+
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: What does the Azure Import/Export service do?
+    choices:
+    - content: Migrates large amounts of data between on-premises storage and Azure by using disks supplied by Microsoft
+      isCorrect: false
+      explanation: You supply the disks when you use Azure Import/Export.
+    - content: Transfers large amounts of data between on-premises storage and Azure by using a high-bandwidth network connection
+      isCorrect: false
+      explanation: Azure Import/Export is an offline solution. You transfer data by using disks that you ship to an Azure datacenter.
+    - content: Transfers large amounts of data between on-premises storage and an Azure Storage account without tying up network bandwidth
+      isCorrect: true
+      explanation: You send and receive physical disks holding your data between your on-premises location and an Azure datacenter.
+  - content: What's the purpose of the WAImportExport tool?
+    choices:
+    - content: Use it to copy files to a disk to import data into Azure Storage.
+      isCorrect: false
+      explanation: Use a tool like Robocopy to copy files to the disk.
+    - content: It prepares a drive containing files for import into Azure Storage.
+      isCorrect: true
+      explanation: Your data must be written to disk by using a specific format. The tool checks the drive and prepares a journal file that's then used by an import job.
+    - content: Use it to create an import job. You specify the files that the disk contains and what should be imported into Azure Storage.
+      isCorrect: false
+      explanation: You create the import job in the Azure portal.

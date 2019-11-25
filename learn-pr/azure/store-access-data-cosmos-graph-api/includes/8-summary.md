@@ -1,4 +1,4 @@
-In this module, you learned about Graph Databases and their uses, and how to create an application that uses Cosmos DB as a graph database. You also learned how to store, retrieve, and manipulate graph data and visualize it using the Data Explorer in the Azure portal.
+In this module, you learned about Graph Databases and their uses, and how to create an application that uses Azure Cosmos DB as a graph database. You also learned how to store, retrieve, and manipulate graph data and visualize it using the Data Explorer in the Azure portal.
 
 You've learned how to:
 
@@ -13,4 +13,3 @@ You've learned how to:
 - [Introduction to Azure Cosmos DB: Gremlin API](https://docs.microsoft.com/azure/cosmos-db/graph-introduction)
 - [Quickstart: Create, query, and traverse an Azure Cosmos DB graph database using the Gremlin console](https://docs.microsoft.com/azure/cosmos-db/create-graph-gremlin-console)
 - [Tutorial: Query Azure Cosmos DB Gremlin API by using Gremlin](https://docs.microsoft.com/azure/cosmos-db/tutorial-query-graph)
- -[Source: Gremlin.Net](https://github.com/apache/tinkerpop/tree/master/gremlin-dotnet)

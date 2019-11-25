@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.pitch-your-product-prototype.2-develop-your-elevator-pitch
+title: Develop your elevator pitch
+metadata:
+  title: Develop your elevator pitch
+  description: This unit teaches you how to develop your elevator pitch.
+  author: jamtur01
+  ms.date: 04/25/2019
+  ms.author: jaturnbu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-startups
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-develop-your-elevator-pitch.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of these statements is a good elevator pitch?"
+    choices:
+    - content: "We're building a cool product that will change the world!"
+      isCorrect: false
+      explanation: "Gives no detail of the product or how it will change the world."
+    - content: "Fabrikam is building a platform that will help consumers find and buy the fashions they love."
+      isCorrect: true
+      explanation: "Clear and direct expression of the Fabrikam mission."
+    - content: "At Fabrikam, we strive to build an amazing online fashion platform."
+      isCorrect: false
+      explanation: "Doesn't provide a why for building the product."

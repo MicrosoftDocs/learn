@@ -21,7 +21,3 @@ Under this initiative, you would have the following policy definitions:
 You can define initiatives using the Azure portal, or command-line tools. In the portal, you use the "Authoring" section.
 
 ![Screenshot showing Azure portal defining initiatives and definitions](../media/3-define-initiatives.png)
-
-### Assigning initiatives
-
-Like a policy assignment, an *initiative assignment* is an initiative definition assigned to a specific scope. Initiative assignments reduce the need to make several initiative definitions for each scope. This scope could also range from a management group to a resource group.

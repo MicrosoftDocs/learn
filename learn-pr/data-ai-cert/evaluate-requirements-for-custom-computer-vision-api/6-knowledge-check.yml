@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-requirements-for-custom-computer-vision-api.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 07/22/2019
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+azureSandbox: false
+durationInMinutes: 8
+quiz:
+  title: ""
+  questions:
+  - content: "Which of these APIs would be the best choice for making image classification predictions based on custom classification models?"
+    choices:
+    - content: "Custom Vision Training API"
+      isCorrect: false
+      explanation: "The Custom Vision Training API doesn't provide custom image prediction methods."
+    - content: "Computer Vision API"
+      isCorrect: false
+      explanation: "The Computer Vision API doesn't provide custom image prediction methods."
+    - content: "Custom Vision Prediction API"
+      isCorrect: true
+      explanation: "The Custom Vision Prediction API is designed to make image classification predictions based on classification models. The Computer Vision and Custom Vision Training APIs don't provide custom image prediction methods."
+  - content: "What's the minimum number images required for each tag in order to perform a successful training?"
+    choices:
+    - content: "2"
+      isCorrect: false
+      explanation: "Two images per tag isn't enough images for a successful training."
+    - content: "5"
+      isCorrect: true
+      explanation: "To perform a successful training, at least five images are required per tag. The recommended number of images per tag is 30-50, but only five are required. Note that two tags are required per image."
+    - content: "40"
+      isCorrect: false
+      explanation: "Although 40 images per tag is in the recommended range, the minimum required number is lower."
+  - content: "What's the reported precision value for a model that correctly identifies 96 out of 100 images?"
+    choices:
+    - content: "Precise"
+      isCorrect: false
+      explanation: "The term \"Precise\" isn't a valid precision value."
+    - content: "96%"
+      isCorrect: true
+      explanation: "When a model correctly identifies 96 out of 100 images, the resulting precision is 96/100, or 96%."
+    - content: "Excellent"
+      isCorrect: false
+      explanation: "The term \"Excellent\" isn't a valid precision value. Precision is reported as a numeric ratio or percentage value, not a qualitative measure of the result."
+  - content: "When you authorize requests to the Custom Vision Training API, either via the query string or the request header, which of these values do you need to supply?"
+    choices:
+    - content: "Subscription-Key"
+      isCorrect: false
+      explanation: "A generic \"Subscription-Key\" value isn't used in Azure Cognitive Vision Services."
+    - content: "Training-Key"
+      isCorrect: true
+      explanation: "Every programmatic call to the Custom Vision Training API requires that you pass a training key (\"Training-Key\") to the service. You can pass this key via a value in the query string parameter or specify it in the request header. \"Prediction-Key\" is used for the Prediction API, and \"Ocp-Apim-Subscription-Key\" is used for the Computer Vision, Face, and Emotion APIs. A generic \"Subscription-Key\" value isn't used in Azure Cognitive Vision Services."
+    - content: "Prediction-Key"
+      isCorrect: false
+      explanation: "The \"Prediction-Key\" is used for the Prediction API."
+  - content: "Which of these tasks would be a good fit for the Custom Vision APIs?"
+    choices:
+    - content: "Creating a service to identify the formats and color variations in images."
+      isCorrect: false
+      explanation: "Creating a service to identify image formats and color variations is a built-in feature of the Computer Vision APIs. This task isn't likely to be an effective use of the Custom Vision APIs."
+    - content: "Creating a service to identify a plant species in images."
+      isCorrect: true
+      explanation: "Correct! The Custom Vision APIs are designed to identify tagged (classified) elements of any type of image or characteristic of an image."
+    - content: "Creating a service to identify the textual information in images."
+      isCorrect: false
+      explanation: "Creating a service to extract printed text from an image is a built-in feature of the Computer Vision API. This task isn't likely to be an effective use of the Custom Vision APIs."

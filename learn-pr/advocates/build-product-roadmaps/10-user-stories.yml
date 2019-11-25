@@ -1,0 +1,27 @@
+### YamlMime:ModuleUnit
+uid: learn.build-product-road-maps.10-user-stories
+title:  User stories
+metadata:
+  title: User stories
+  description: This unit teaches how to write user stories.
+  author: jamtur01
+  ms.date: 04/16/2019
+  ms.author: jaturnbu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-startups
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/10-user-stories.md)]
+quiz:
+   title: Check your knowledge
+   questions:
+   - content: What do you do to a user story if it becomes too complex?
+     choices:
+     - content: Stop working on the story
+       isCorrect: false
+     - content: Nothing.
+       isCorrect: false
+     - content: Break the story into smaller stories
+       isCorrect: true
+       explanation: "Complex stories should be broken down into smaller stories."

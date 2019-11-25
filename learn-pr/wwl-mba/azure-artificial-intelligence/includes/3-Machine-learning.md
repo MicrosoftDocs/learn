@@ -6,7 +6,7 @@ Azure’s advanced machine learning capabilities allow your business to quickly 
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Watch this video to learn about the different layers of machine learning.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn about the different layers of machine learning.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWqOXa]
 
@@ -21,7 +21,7 @@ To simplify and accelerate machine learning, Azure Machine Learning has been bui
 - Accelerate time-to-value by offering end-to-end machine learning lifecycle capabilities.
 
 There are three main steps for using machine learning:
-![Process flow shows how to use machine learning](../media/IC-GM06-AI_Diagram-PrepTrain.png)
+![Process flow shows how to use machine learning](../media/ic-gm06-ai-diagram-preptrain.png)
 
 Azure Machine Learning service provides a cloud-based environment that you can use to develop, train, test, deploy, manage, and track machine learning models.  
 
@@ -29,7 +29,7 @@ Azure Machine Learning service provides a cloud-based environment that you can u
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video_icon.png)|Discover how TAL, a 150-year-old life insurance company, is embracing AI with Microsoft Azure Machine Learning to transform its business.|
+|![Icon indicating play video](../media/video-icon.png)|Discover how TAL, a 150-year-old life insurance company, is embracing AI with Microsoft Azure Machine Learning to transform its business.|
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE2NAE7]
 

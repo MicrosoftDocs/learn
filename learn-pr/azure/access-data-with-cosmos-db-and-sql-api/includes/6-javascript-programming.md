@@ -1,82 +1,60 @@
-Multiple documents in your database frequently need to be updated at the same time. 
+Let's start by creating a new stored procedure in the portal. The portal automatically populates a simple stored procedure that retrieves the first item in the container, so we'll run this stored procedure first.
 
-For your online retail application, when a user places an order and wants to use a coupon code, a credit, or a dividend (or all three at once), you need to query their account for those options, make updates to their account indicating they used them, update the order total, and process the order.
+1. Switch back to the Data Explorer window.
 
-All of these actions need to happen at the same time, within a single transaction. If the user chooses to cancel the order, you want to roll back the changes and not modify their account information, so that their coupon codes, credits, and dividends are available for their next purchase.
+1. In the Data Explorer, select **New Stored Procedure** from the toolbar as shown in the following image.
 
-The way to perform these transactions in Azure Cosmos DB is by using stored procedures and user-defined functions (UDFs). Stored procedures are the only way to ensure ACID (Atomicity, Consistency, Isolation, Durability) transactions because they are run on the server, and are thus referred to as server-side programming. UDFs are also stored on the server and are used during queries to perform computational logic on values or documents within the query. 
-
-In this module, you'll learn about stored procedures and UDFs, and then run some in the portal.
-
-## Stored procedure basics
-
-Stored procedures perform complex transactions on documents and properties. Stored procedures are written in JavaScript and are stored in a collection on Azure Cosmos DB. By performing the stored procedures on the database engine and close to the data, you can improve performance over client-side programming.
-
-Stored procedures are the only way to achieve atomic transactions within Azure Cosmos DB; the client-side SDKs do not support transactions.
-
-Performing batch operations in stored procedures is also recommended because of the reduced need to create separate transactions.
-
-## Stored procedure example
-
-The following sample is a simple HelloWorld stored procedure that gets the current context and sends a response that displays "Hello, World".
-
-```javascript
-function helloWorld() {
-    var context = getContext();
-    var response = context.getResponse();
-
-    response.setBody("Hello, World");
-}
-```
-
-## User-defined function basics
-
-UDFs are used to extend the Azure Cosmos DB SQL query language grammar and implement custom business logic, such as calculations on properties and documents. UDFs can be called only from inside queries and, unlike stored procedures, they do not have access to the context object, so they cannot read or write documents.
-
-In an online commerce scenario, a UDF could be used to determine the sales tax to apply to an order total or a percentage discount to apply to products or orders.
-
-## User-defined function example
-
-The following sample creates a UDF to calculate tax on a product in a fictitious company based the product cost:
-
-```javascript
-function producttax(price) {
-    if (price == undefined) 
-        throw 'no input';
-
-    var amount = parseFloat(price);
-
-    if (amount < 1000) 
-        return amount * 0.1;
-    else if (amount < 10000) 
-        return amount * 0.2;
-    else
-        return amount * 0.4;
-}
-```
-
-## Create a stored procedure in the portal
-
-Let's create a new stored procedure in the portal. The portal automatically populates a simple stored procedure that retrieves the first item in the collection, so we'll run this stored procedure first.
-
-1. In the Data Explorer, click **New Stored Procedure**.
+    ![Screenshot showing the New Stored Procedure feature in the Data Explorer](../media/6-create-stored-procedure.png)
 
     Data Explorer displays a new tab with a sample stored procedure.
 
-2. In the **Stored Procedure Id** box, enter the name *sample*, click **Save**, and then click **Execute**.
+1. In the **Stored Procedure Id** box, enter the name *sample*, and select **Save** to save the entry.
 
+1. Select **Execute** to run the _sample_ stored procedure. This will open a sidebar on the right allowing you to supply parameters to the stored procedure.
 
-3. In the **Input parameters** box, type the name of a partition key, *33218896*, and then click **Execute**. Note that stored procedures work within a single partition.
+1. In the **Input parameters** pane, use the following value for **Partition key value**.
+   - **Type**: _String_
+   - **Value**: _33218896_
 
-    ![Run a stored procedure in the portal](../media/6-stored-procedure.gif)
+    ![Run a stored procedure in the portal](../media/6-stored-procedure.png)
+1. Select **Execute**. Note that stored procedures work within a single partition.
 
-    The **Result** pane displays the feed from the first document in the collection.
+    The **Result** pane displays the feed from the first document in the container.
+
+    ```json
+    {
+      "prefix": null,
+      "feed": {
+         "id": "1",
+         "productId": "33218896",
+         "category": "Women's Clothing",
+         "manufacturer": "Contoso Sport",
+         "description": "Quick dry crew neck t-shirt", 
+         "price": "14.99",
+         "shipping": {
+           "weight": 1,
+           "dimensions": {
+           "width": 6,
+           "height": 8,
+           "depth": 1
+           }
+        },
+       "_rid": "hxoKANnJfPQBAAAAAAAAAA==",
+       "_self": "dbs/hxoKAA==/colls/hxoKANnJfPQ=/docs/hxoKANnJfPQBAAAAAAAAAA==/",
+       "_etag": "0b011de9-0000-0500-0000-5cdc96250000",
+       "_attachments": "attachments",
+       "_ts": "1557960229"
+       }
+     }
+     ```
 
 ## Create a stored procedure that creates documents
 
 Now, let's create a stored procedure that creates documents.
 
-1. In the Data Explorer, click **New Stored Procedure**. Name this stored procedure *createMyDocument*, copy and paste the following code into the **Stored Procedure Body** box, click **Save**, and then click **Execute**.
+1. In the Data Explorer, click **New Stored Procedure**. Name this stored procedure *createMyDocument*.
+
+1. Paste the following code into the **Stored Procedure Body** box and click **Save**.
 
     ```javascript
     function createMyDocument() {
@@ -99,37 +77,66 @@ Now, let's create a stored procedure that creates documents.
         if (!accepted) return;
     }
     ```
+1. Select **Execute** to run the stored procedure.
 
-2. In the Input parameters box, enter a Partition Key Value of *33218898*, and then click **Execute**.
+1. In the **Input parameters** pane, use the following value for **Partition key value**.
+   - **Type**: _String_
+   - **Value**: _33218898_
+
+1. Select **Execute**.
 
     Data Explorer displays the newly created document in the Result area.
 
-    You can go back to the Documents tab, click the **Refresh** button and see the new document. 
+    ```json
+    {
+        "id": "3",
+        "productId": "33218898",
+        "description": "Contoso microfleece zip-up jacket",
+        "price": "44.99",
+        "_rid": "hxoKANnJfPQDAAAAAAAAAA==",
+        "_self": "dbs/hxoKAA==/colls/hxoKANnJfPQ=/docs/hxoKANnJfPQDAAAAAAAAAA==/",
+        "_etag": "\"0b0145e9-0000-0500-0000-5cdc98340000\"",
+        "_attachments": "attachments/"
+    }
+    ```
+
+    You can go back to the Documents tab and click the **Refresh** button and see the new document as shown below.
+
+    ![Screenshot showing the refresh button in the Data Explorer](../media/6-refresh-document-view.png)
 
 ## Create a user-defined function
 
 Now, let's create a UDF in Data Explorer.
 
-In the Data Explorer, click **New UDF**. You may need to click the down arrow next to **New Stored Prodedure** to see **New UDF**. Copy the following code into the window, name the UDF *producttax*, and then click **Save**.
+1. In the Data Explorer, click **New UDF**. You may need to click the down arrow next to **New Stored Procedure** to see **New UDF**.
 
-```javascript
-function producttax(price) {
-    if (price == undefined) 
-        throw 'no input';
+    ![Screenshot showing the New UDF dropdown in the Data Explorer](../media/6-create-udf.png)
 
-    var amount = parseFloat(price);
+1. Paste the following code into the window, name the UDF *producttax*, and then click **Save**.
 
-    if (amount < 1000) 
-        return amount * 0.1;
-    else if (amount < 10000) 
-        return amount * 0.2;
-    else
-        return amount * 0.4;
-}
-```
+    ```javascript
+    function producttax(price) {
+        if (price == undefined) 
+            throw 'no input';
+    
+        var amount = parseFloat(price);
+    
+        if (amount < 1000) 
+            return amount * 0.1;
+        else if (amount < 10000) 
+            return amount * 0.2;
+        else
+            return amount * 0.4;
+    }
+    ```
 
-Once you have defined the UDF, go to the **Query 1** tab and copy and paste the following query into the query area to run the UDF.
+1. Switch to the **Query 1** tab in the Data Explorer.
+1. Paste the following query into the query area to run the UDF.
 
-```sql
-SELECT c.id, c.productId, c.price, udf.producttax(c.price) AS producttax FROM c
-```
+    ```sql
+    SELECT c.id, c.productId, c.price, udf.producttax(c.price) AS producttax FROM c
+    ```
+
+1. Select **Execute Query** to run the updated query using your new UDF.
+
+   ![Screenshot showing the results of the UDF in the Data Explorer window](../media/6-run-the-udf.png)

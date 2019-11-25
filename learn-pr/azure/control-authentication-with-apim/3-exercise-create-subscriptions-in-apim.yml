@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.control-authentication-with-apim.3-exercise-create-subscriptions-in-apim
+metadata:
+  title: Exercise - Create subscriptions in Azure API Management
+  description: In this unit, you will create an API and add it to an instance of API Management. You will use a subscription key to secure access to the API.
+  ms.date: 07/08/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Exercise - Create subscriptions in Azure API Management
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/3-exercise-create-subscriptions-in-apim.md)]
