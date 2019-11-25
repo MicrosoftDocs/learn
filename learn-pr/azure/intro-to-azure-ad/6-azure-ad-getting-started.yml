@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-ad.6-azure-ad-getting-started
+metadata:
+  title: Getting started with Azure AD
+  description: Getting started with Azure AD
+  ms.date: 12/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Getting started with Azure AD
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-azure-ad-getting-started.md)]

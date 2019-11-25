@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-ad.2-azure-ad-overview
+metadata:
+  title: What is Azure AD?
+  description: Learn the basics of Azure AD.
+  ms.date: 12/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: What is Azure AD?
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-azure-ad-overview.md)]

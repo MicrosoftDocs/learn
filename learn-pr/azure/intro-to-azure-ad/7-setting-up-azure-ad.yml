@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-ad.7-setting-up-azure-ad
+metadata:
+  title: Setting up Azure AD
+  description: Setting up Azure AD
+  ms.date: 12/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Setting up Azure AD
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-setting-up-azure-ad.md)]

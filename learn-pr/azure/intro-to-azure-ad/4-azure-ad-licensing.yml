@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-ad.4-azure-ad-licensing
+metadata:
+  title: Licensing Azure AD
+  description: Licensing Azure AD
+  ms.date: 12/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Licensing Azure AD
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-azure-ad-licensing.md)]

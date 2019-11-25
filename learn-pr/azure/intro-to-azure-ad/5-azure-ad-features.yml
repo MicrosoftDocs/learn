@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-ad.5-azure-ad-features
+metadata:
+  title: Essential features of Azure AD
+  description: Essential features of Azure AD
+  ms.date: 12/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Essential features of Azure AD
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-azure-ad-features.md)]
