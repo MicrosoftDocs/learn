@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.branch-merge-git.2-exercise-create-branch-alice
+title: Exercise - Create a branch as Alice
+metadata:
+  title: Exercise - Create a branch as Alice
+  description: Setup and create branches
+  ms.date: 06/24/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-git
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+azureSandbox: true
+interactive: bash
+content: |
+  [!include[](includes/2-exercise-create-branch-alice.md)]
