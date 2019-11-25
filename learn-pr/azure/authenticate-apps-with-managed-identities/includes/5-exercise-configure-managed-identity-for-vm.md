@@ -2,9 +2,6 @@ The VM you use to host your app has been deployed in Azure. You now need to enab
 
 In the unit, you'll configure a managed identity on your virtual machine. You'll create a system-assigned managed identity for the VM, and see how to access Azure resources from inside the VM.
 
-<!-- Activate the sandbox -->
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 ## Set up the enivironment
 
 1. Create a VM to host your companies app, and store the public IP address in an environment variable.
