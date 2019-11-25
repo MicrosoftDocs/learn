@@ -12,7 +12,7 @@ Here, you manually delete your App Service instance from the Azure portal to sim
 1. Select **tailspin-spacegame-web-rg**.
 1. From the list of resources, select your App Service instance.
 
-    ![](../media/6-portal-select-app-service.png)
+    ![Selecting the App Service resource in the Azure portal](../media/6-portal-select-app-service.png)
 
     > [!NOTE]
     > You can also select other resources if you'd like. Just be sure not to select your Key Vault. Your Resource Manager template requires data from Key Vault to provision your infrastructure.

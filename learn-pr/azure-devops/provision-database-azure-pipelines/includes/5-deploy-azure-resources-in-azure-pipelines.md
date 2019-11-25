@@ -43,7 +43,7 @@ In the previous exercise, you forked and cloned the repo you'll need for this mo
 
 1. Run this command to get your Key Vault ID.
 
-    ```bash
+    ```azurecli
     az keyvault show --name tailspin-vault-$UNIQUE_ID --query id --output tsv
     ```
 
@@ -153,21 +153,20 @@ Here, you create a service connection that enables Azure Pipelines to access you
 1. In Azure DevOps, go to your _Space Game_ web project.
 1. Select **Project settings** from the bottom corner of the page.
 1. Under **Pipelines**, select **Service connections**.
-1. Select **+ New service connection** and then choose **Azure Resource Manager**.
-
-    The **Add an Azure Resource Manager service connection** dialog appears.
-1. From the dialog, ensure **Service Principal Authentication** is selected. Then fill in these fields:
+1. Select **New service connection**, then choose **Azure Resource Manager**, then select **Next**.
+1. Select **Service principal (automatic)**, then select **Next**.
+1. Fill in these fields:
 
     | Field               | Value                                        |
     |---------------------|----------------------------------------------|
-    | **Connection name** | **Resource Manager - Tailspin - Space Game** |
-    | **Scope level**     | **Subscription**                             |
-    | **Subscription**    | Your Azure subscription.                     |
-    | **Resource Group**  | Leave this blank to include all resource groups.|
+    | Scope level     | **Subscription**                             |
+    | Subscription    | Your Azure subscription.                     |
+    | Resource Group*  | Leave this blank to include all resource groups. |
+    | Service connection name | *Resource Manager - Tailspin - Space Game* |
 
     During the process, you might be prompted to sign in to your Microsoft account.
 
-1. Select **OK**.
+1. Select **Save**.
 
     Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps is unable to connect, you'll have the chance to sign in a second time.
 
@@ -269,9 +268,9 @@ Here, you add a variable group and variables to the pipeline.
 
 1. Open the *template.json* file that comes with the project. This is the same file you used in the last exercise. Replace the code in that file with the following:
 
-[!code-json[](code/5-template.json?highlight=31-33,68-72,87-134,158-265,281-282)]
+    [!code-json[](code/5-template.json?highlight=31-33,68-72,87-134,158-265,281-282)]
 
-Remember that you can create a template from scratch, download a starter template, or generate one from resources you already have. The [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines/?azure-portal=true) module had you create the necessary infrastructure manually in the Azure portal. This template file is the result of exporting the resource group that was created in that module. It has been modified to add the parts that the team discussed for pipeline deployment, and to remove the _Test_ and _Staging_ App Service deployments. For learning purposes, the default policies have also been removed.
+    Remember that you can create a template from scratch, download a starter template, or generate one from resources you already have. The [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines/?azure-portal=true) module had you create the necessary infrastructure manually in the Azure portal. This template file is the result of exporting the resource group that was created in that module. It has been modified to add the parts that the team discussed for pipeline deployment, and to remove the _Test_ and _Staging_ App Service deployments. For learning purposes, the default policies have also been removed.
 
 Notice the creation of the database. Just as you did in the [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines/?azure-portal=true) module, the database is created and the data is inserted by using a *.bacpac* file and an import extension in the resources section in a resource called *Import*.
 
@@ -314,6 +313,10 @@ Notice the creation of the database. Just as you did in the [Manage database cha
 },
 ```
 
+The `condition` part is important here. Recall that Azure Resource Manager templates are idempotent. This means that Resource Manager applies infrastructure changes only when the configuration defined in your template differs from the running environment. However, you can import a *.bacpac* file only when the database is empty. If you attempt to import a *.bacpac* file a second time, the operation fails.
+
+To make the *Import* resource idempotent, here we use a condition. Resource Manager applies a resource only when its condition is true. The condition shown here returns true when the SQL Database has an empty unique identifier. This situation happens only when the database hasn't yet been created. If the SQL Database is present, the condition returns false and Resource Manager moves to the next resource.
+
 The next part is the creation of Key Vault secrets. Here, you add the database connection string to the Key Vault. You will use this secret to add the connection string to the App Service configuration in the pipeline after the web app is deployed. This is the reason you need the `keyVaultName` parameter.
 
 ```json
@@ -331,56 +334,56 @@ The next part is the creation of Key Vault secrets. Here, you add the database c
 },
 ```
 
-1. Save *template.json* and commit it, but do not push your branch to GitHub yet.
+1. Save *template.json* and commit it, along with *deploymentParameters.json*. But do not push your branch to GitHub yet.
 
     ```bash
-    git add template.json
-    git commit -m "Add complete provisioning to template.json"
+    git add template.json deploymentParameters.json
+    git commit -m "Add provisioning template"
     ```
 
 1. In the code editor, open the *azure-pipelines.yml*. This is the same file you used in the [Manage database changes in Azure Pipelines](https://docs.microsoft.com/learn/modules/manage-database-changes-in-azure-pipelines/?azure-portal=true) module. Replace the code in that file with this:
 
-[!code-yml[](code/5-azure-pipelines.yml?highlight=97-119,135-139,212-216,278-282,291-297)]
+    [!code-yml[](code/5-azure-pipelines.yml?highlight=97-119,135-139,214-218,280-284,293-299)]
 
-Notice the addition of the *Provision* stage. Here you have the task `AzureResourceManagerTemplateDeployment@3` to deploy the *template.json* file by using the *deploymentParameters.json* file.
+    Notice the addition of the *Provision* stage. Here you have the task `AzureResourceManagerTemplateDeployment@3` to deploy the *template.json* file by using the *deploymentParameters.json* file.
 
-```yml
-- task: AzureResourceManagerTemplateDeployment@3
-    inputs:
-    deploymentScope: 'Resource Group'
-    ConnectedServiceName: 'Resource Manager - Tailspin - Space Game'
-    subscriptionName: '$(subscription)'
-    action: 'Create Or Update Resource Group'
-    resourceGroupName: 'tailspin-spacegame-web-rg'
-    location: '$(location)'
-    templateLocation: 'Linked artifact'
-    csmFile: 'template.json'
-    csmParametersFile: 'deploymentParameters.json'
-    deploymentMode: 'Incremental'
-    deploymentOutputs: ResourceGroupDeploymentOutputs
-```
+    ```yml
+    - task: AzureResourceManagerTemplateDeployment@3
+        inputs:
+        deploymentScope: 'Resource Group'
+        ConnectedServiceName: 'Resource Manager - Tailspin - Space Game'
+        subscriptionName: '$(subscription)'
+        action: 'Create Or Update Resource Group'
+        resourceGroupName: 'tailspin-spacegame-web-rg'
+        location: '$(location)'
+        templateLocation: 'Linked artifact'
+        csmFile: 'template.json'
+        csmParametersFile: 'deploymentParameters.json'
+        deploymentMode: 'Incremental'
+        deploymentOutputs: ResourceGroupDeploymentOutputs
+    ```
 
-Several stages need the information stored in Key Vault. They use the `AzureKeyVault@1` task to get the secrets. The `secretsFilter` parameter can specify just one secret, or get them all. This task adds the secret to the job variables for easy access within that job.
+    Several stages need the information stored in Key Vault. They use the `AzureKeyVault@1` task to get the secrets. The `secretsFilter` parameter can specify just one secret, or get them all. This task adds the secret to the job variables for easy access within that job.
 
-```yml
-- task: AzureKeyVault@1
-    inputs:
-    azureSubscription: 'Resource Manager - Tailspin - Space Game'
-    keyVaultName: '$(keyVaultName)'
-    secretsFilter: '*'
-```
+    ```yml
+    - task: AzureKeyVault@1
+        inputs:
+        azureSubscription: 'Resource Manager - Tailspin - Space Game'
+        keyVaultName: '$(keyVaultName)'
+        secretsFilter: '*'
+    ```
 
-The `AzureAppServiceSettings@0` task sets the connection string that it gets from from the Key Vault as a `connectionStrings` setting in the App Service configuration.
+    The `AzureAppServiceSettings@0` task sets the connection string that it gets from from the Key Vault as a `connectionStrings` setting in the App Service configuration.
 
-```yml
-- task: AzureAppServiceSettings@1
-    displayName: Azure App Service Settings
-    inputs:
-    azureSubscription: 'Resource Manager - Tailspin - Space Game'
-    appName: $(webAppName)
-    connectionStrings: |
-    [{ "name": "DefaultConnection","value": "$(connectionString)","type": "SQLAzure","slotSetting": false }]
-```
+    ```yml
+    - task: AzureAppServiceSettings@1
+        displayName: Azure App Service Settings
+        inputs:
+        azureSubscription: 'Resource Manager - Tailspin - Space Game'
+        appName: $(webAppName)
+        connectionStrings: |
+        [{ "name": "DefaultConnection","value": "$(connectionString)","type": "SQLAzure","slotSetting": false }]
+    ```
 
 1. Save *azure-pipelines.yml* and commit it, but do not push your branch to GitHub yet.
 
@@ -418,13 +421,13 @@ Here you create the manual approval for the `DBAVerificationApply` stage. You le
 1. Go to your pipeline and wait for the manual approval of the database schema.
 
     When the pipeline stops for approval, click on the `DBAVerificationScript` stage and look at the change script that was created. It will be in the **Show automated SQL Script** section. The script will contain an **ALTER** query that changes `Profiles` table by adding a `favoriteMap` column.
-1. Go back to the pipeline and select the **Waiting** button on the `DBAVerificationApply`. Select **Review** and then **Approve**.
+1. Go back to the pipeline and select the **Waiting** button on the `DBAVerificationApply`. Select **Review** and then select **Approve**.
 1. Wait for the pipeline to finish the deployment.
 1. After the build completes, press the back button to return to the summary page.
 
     You see that the deployment completed successfully.
 
-    ![](../media/5-pipeline-stages-overview.png)
+    ![Azure Pipelines showing the completed stages](../media/5-pipeline-stages-overview.png)
 
 ## Verify the result
 
