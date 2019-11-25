@@ -24,7 +24,8 @@ summary: |
 
   In Partnership with Dr. Majd Sakr and Carnegie Mellon University.
 prerequisites: none
-iconUrl: /learn/achievements/cmu-cloud-admin/cmu-cloud-admin-basics.svg
+#placeholder
+iconUrl: learn/achievements/ai-business-school-education.svg
 levels:
 - beginner
 roles:
@@ -32,7 +33,7 @@ roles:
 products:
 - azure
 modules:
-- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview
+- learn.cmu-cloud-admin.cmu-cloud-admin-overview
 - learn.cmu-cloud-admin.cloud-admin-provision-manage
 - learn.cmu-cloud-admin.secure-cloud-resources
 trophy:
