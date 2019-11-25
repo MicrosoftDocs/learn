@@ -19,13 +19,13 @@ abstract: |
   - Understand Advanced Threat Protection.
   - Control network access.
 prerequisites: None
-ratingEnabled: true
 iconUrl: /learn/achievements/data-ai/secure-azure-storage-account-badge.svg
 levels:
 - beginner
 roles:
 - data-engineer
 - solution-architect
+- security-engineer
 products:
 - azure
 - azure-storage

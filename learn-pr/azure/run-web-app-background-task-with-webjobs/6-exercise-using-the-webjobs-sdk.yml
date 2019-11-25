@@ -11,7 +11,5 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 7
-azureSandbox: true
-interactive: bash
 content: |
   [!include[](includes/6-exercise-using-the-webjobs-sdk.md)]

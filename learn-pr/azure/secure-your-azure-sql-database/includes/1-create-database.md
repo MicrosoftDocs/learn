@@ -6,17 +6,14 @@ Here you'll set up the resources you'll need for use throughout this module. Let
 
 Let's get things set up!
 
-<!-- Activate the sandbox -->
-[!INCLUDE [azure-sandbox-activate](../../../includes/azure-sandbox-activate.md)]
-
 ## Create an Azure SQL Database
 
-1. First, let's set up some variables. Replace values below that are shown in `<>` with values of your choice. Note that the `<password>` must have at least eight characters and contain characters from at least three of these categories: uppercase characters, lowercase characters, numbers, and non-alphanumeric characters. Save the login for use later.
+1. First, let's set up some variables. Replace values below that are shown in `[]` with values of your choice. Note that the `[password]` must have at least eight characters and contain characters from at least three of these categories: uppercase characters, lowercase characters, numbers, and non-alphanumeric characters. Save the login for use later.
 
     ```bash
     # Set an admin login and password for your database
-    export ADMINLOGIN='<ServerAdmin>'
-    export PASSWORD='<password>'
+    export ADMINLOGIN='[ServerAdmin]'
+    export PASSWORD='[password]'
     # Set the logical SQL server name. We'll add a random string as it needs to be globally unique.
     export SERVERNAME=server$RANDOM
     export RESOURCEGROUP=<rgn>[sandbox resource group name]</rgn>
@@ -51,10 +48,10 @@ Let's get things set up!
     az sql db show-connection-string --client sqlcmd --name marketplaceDb --server $SERVERNAME | jq -r
     ```
 
-    Your output resembles this. Keep this handy, you'll need this command to connect to your database later in this module. Note the `<username>` and `<password>` placeholders in the command that you will want to replace with the `ADMINLOGIN` and `PASSWORD` credentials you specified in variables earlier.
+    Your output resembles this. Keep this handy, you'll need this command to connect to your database later in this module. Note the `[username]` and `[password]` placeholders in the command that you will want to replace with the `ADMINLOGIN` and `PASSWORD` credentials you specified in variables earlier.
 
     ```output
-    sqlcmd -S tcp:server12345.database.windows.net,1433 -d marketplaceDb -U <username> -P <password> -N -l 30
+    sqlcmd -S tcp:server12345.database.windows.net,1433 -d marketplaceDb -U [username] -P [password] -N -l 30
     ```
 
 ## Create and configure a Linux virtual machine
@@ -75,7 +72,7 @@ Now let's create the Linux VM that we'll use through some examples.
 1. Once your VM is successfully created, connect to it via SSH.
 
     ```azurecli
-    ssh <X.X.X.X>
+    ssh [X.X.X.X]
     ```
 
     > [!NOTE]

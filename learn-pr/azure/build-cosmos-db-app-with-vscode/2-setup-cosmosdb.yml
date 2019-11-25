@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.cosmos-db-app-with-vscode.2-setup-cosmosdb
 metadata:
-  title: Create Azure Cosmos DB resources in Visual Studio Code
-  description: Learn how to create Azure Cosmos DB resources by using the Azure Cosmos DB extension for Visual Studio Code.
+  title: Exercise - Create Azure Cosmos DB resources in Visual Studio Code
+  description: Exercise - Create Azure Cosmos DB resources in Visual Studio Code
   ms.date: 09/24/2018
-  author: mimig1
-  ms.author: mimig
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Create Azure Cosmos DB resources in Visual Studio Code
+title: Exercise - Create Azure Cosmos DB resources in Visual Studio Code
 durationInMinutes: 12
 azureSandbox: true
 content: |

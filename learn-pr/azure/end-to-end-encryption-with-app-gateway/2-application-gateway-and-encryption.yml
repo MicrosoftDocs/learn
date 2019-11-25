@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.end-to-end-encryption-with-app-gateway.2-application-gateway-and-encryption
+metadata:
+  title: Application Gateway and encryption
+  description: Application Gateway and encryption
+  ms.date: 06/28/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Application Gateway and encryption
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-application-gateway-and-encryption.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What are the benefits of using Application Gateway to help protect traffic sent to or from your applications?"
+    choices:
+    - content: "Application Gateway can implement an SSL connection with clients. There's no need to encrypt data sent from the gateway to the servers running your application."
+      isCorrect: false
+      explanation: "No. Although Application Gateway can use SSL to help protect communications with clients, you still need to encrypt data that passes between Application Gateway and the servers running your application."
+    - content: "Application Gateway can implement an SSL connection with clients. Application Gateway can also implement an SSL connection with the servers running your application."
+      isCorrect: true
+      explanation: "This answer is correct."
+    - content: "Application Gateway doesn't require an SSL connection with clients. All encryption is carried out by the connection with the servers running your application."
+      isCorrect: false
+      explanation: "No. You should configure Application Gateway to use SSL to communicate with clients and for connecting to the servers running your application."
+    - content: "Application Gateway automatically protects the communications between clients and the servers running your application. You don't need to do any additional configuration."
+      isCorrect: false
+      explanation: "No. You must configure SSL for incoming requests from clients to Application Gateway, and for traffic transmitted between Application Gateway and the servers running your application."
+  - content: "Which of the following can't be placed in the backend pool of an application gateway?"
+    choices:
+    - content: "Azure App Service"
+      isCorrect: false
+      explanation: "Azure App Service can be placed in a backend pool."
+    - content: "Azure virtual machines"
+      isCorrect: false
+      explanation: "Azure virtual machines can be placed in a backend pool."
+    - content: "Azure Cosmos DB"
+      isCorrect: true
+      explanation: "Correct. Azure Cosmos DB can't be placed in a backend pool."
+    - content: "Azure virtual machine scale sets"
+      isCorrect: false
+      explanation: "Azure virtual machine scale sets can be placed in a backend pool."

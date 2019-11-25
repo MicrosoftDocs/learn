@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.intro-to-python.variables-and-data-types
+title: Variables and basic data types in Python
+metadata:
+  title: Variables and basic data types in Python
+  description: Learn about basic data types in Python and how to declare and assign variables
+  ms.date: 04/30/2019
+  author: ShanaMatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-variables-and-data-types.md)]

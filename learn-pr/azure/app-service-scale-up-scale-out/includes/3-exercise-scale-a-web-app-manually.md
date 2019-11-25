@@ -10,9 +10,9 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 ## Create an App Service plan and web app
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
+[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with your MSLearn account.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
 1. Select **Create a resource** > **Web** > **Web App**.
 
@@ -24,8 +24,8 @@ The exercise also runs a client app that simulates a number of users issuing POS
     | Property  | Value  |
     |---|---|
     | App name | \<your-webapp-name\> |
-    | Subscription | Concierge Subscription  |
-    | Resource Group | Use the existing resource group <rgn>[Sandbox resource group]</rgn> |
+    | Subscription | Select the Azure subscription you'd like to use for this exercise  |
+    | Resource Group | Create a new resource group called **mslearn-scale** |
     | OS | Windows |
     | Publish | Code |
     | App Service plan/Location | *Leave default* |
@@ -34,7 +34,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 ## Build and deploy the web app
 
-1. In the Cloud Shell window on the right side of the screen, run this command to download the source code for the hotel reservation system:
+1. Open the Cloud Shell in the Azure portal. Run this command to download the source code for the hotel reservation system:
 
      ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-hotel-reservation-system.git
@@ -64,7 +64,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
      ```bash
     cd website
     zip website.zip *
-    az webapp deployment source config-zip --src website.zip --name <your-webapp-name> --resource-group <rgn>[Sandbox resource group]</rgn>
+    az webapp deployment source config-zip --src website.zip --name <your-webapp-name> --resource-group mslearn-scale
     ```
 
 1. Use your web browser to go to http://<your-webapp-name>.azurewebsites.net/api/reservations/1. You should see a JSON document that contains the details for reservation number 1:
@@ -77,6 +77,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
     ```bash
    cd ~/mslearn-hotel-reservation-system/src/HotelReservationSystemTestClient
+    ```
 
 1. Edit the App.config file in this folder by using the code editor:
 
@@ -116,7 +117,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
    ![Screenshot of a running client app, showing the responses and error messages that occur](../media/3-web-client.png)
 
-1. In the Azure portal, go to the blade for your web app (not the service plan). Under **Monitoring**, select **Metrics**.
+1. In the Azure portal, go to the pane for your web app (not the service plan). Under **Monitoring**, select **Metrics**.
 
 1. Add the following metrics to the chart, set the time range to **Last 30 minutes**, and then pin the chart to the current dashboard.
 
@@ -133,7 +134,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 ## Scale out the web app and verify the performance improvement
 
-1. In the Azure portal, in the blade for your web app, under **Settings**, select **Scale out (App Service Plan)**.
+1. In the Azure portal, in the pane for your web app, under **Settings**, select **Scale out (App Service Plan)**.
 
 1. On the **Configure** page, set the **Instance count** to **5**, and then select **Save**.
 

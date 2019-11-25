@@ -3,10 +3,10 @@ uid: learn.control-and-organize-with-resource-manager.6-use-resource-locks-to-pr
 title: Use resource locks to protect resources
 metadata:
   title: Use resource locks to protect resources
-  description: In this unit we'll discuss how to use resource locks to protect resources
+  description: In this unit, we'll discuss how to use resource locks to protect resources
   ms.date: 10/1/2018
-  author: markjulmar
-  ms.author: smmark
+  author: jboeshart
+  ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

@@ -9,7 +9,7 @@ Tags are name/value pairs of text data that you can apply to resources and resou
 - cost center
 - life cycle and automation (like shutdown and startup of virtual machines).
 
-A resource can have up to 15 tags. The name is limited to 512 characters for all types of resources except storage accounts, which have a limit of 128 characters. The tag value is limited to 256 characters for all types of resources. Tags aren't inherited from parent resources. Not all resource types support tags, and tags can't be applied to classic resources.
+A resource can have up to 50 tags. The name is limited to 512 characters for all types of resources except storage accounts, which have a limit of 128 characters. The tag value is limited to 256 characters for all types of resources. Tags aren't inherited from parent resources. Not all resource types support tags, and tags can't be applied to classic resources.
 
 Tags can be added and manipulated through the Azure portal, Azure CLI, Azure PowerShell, Resource Manager templates, and through the REST API. For example, to add a resource tag to a virtual network using the Azure CLI, you could use the following command:
 
@@ -26,7 +26,7 @@ You can use Azure Policy to automatically add or enforce tags for resources your
 
 Let's apply some tags to the resources you created. Recall that we created a resource group **msftlearn-core-infrastructure-rg** and two VNets inside that resource group, **msftlearn-vnet1** and **msftlearn-vnet2**. The names of the VNets are relatively generic, so we'd like to associate the VNets with services from different departments. 
 
-1. Go ahead and pull up the [Azure portal](https://portal.azure.com/?azure-portal=true). Navigate to your **msftlearn-core-infrastructure-rg** resource group.
+1. Open the [Azure portal](https://portal.azure.com/?azure-portal=true), and navigate to your **msftlearn-core-infrastructure-rg** resource group.
 
 1. On the **Overview** tab of your resource group, you should see your two VNets listed. The default view doesn't display the tags column, so let's add that to the display. Select **Edit columns** at the top. In the **Available columns** list, select **Tags** and click **->** to add it to the **Selected columns** list. Click **Apply** to apply your changes.
 
@@ -55,6 +55,10 @@ Let's apply some tags to the resources you created. Recall that we created a res
 1. Let's take a look at how we can use tags to filter your resources. On the main Azure menu on the left, select **All resources**.
 
 1. In the **All tags** drop down, under **Environment** select **Training**. You should see only your two VNets displayed, since we tagged those resources with the **Environment:Training** tag.
+
+    Note that there is currently a preview of the filtering capabilities that you may see in your portal. If you are in this preview, you will need to instead select **Add filter**. In the **Tags**, select **Environment**, then select **Training**.
+
+    You can also join or leave this preview at any time by selecting  **Try preview** or **Leave preview**.
 
     ![Image of all resources filtered on the Training tag](../media/3-all-resources-tag-filter.PNG)
 

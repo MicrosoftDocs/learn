@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn-sqlserver.deploy-sql-server-linux.3-exercise-install-sql-server-ubuntu
+title: Exercise - Install SQL Server on Ubuntu
+metadata:
+  title: Exercise - Install SQL Server on Ubuntu
+  description: In this unit, you will install and use SQL Server on Ubuntu.
+  ms.date: 06/11/2019
+  author: alistairmatthews
+  ms.author: v-alism
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/3-exercise-install-sql-server-ubuntu.md)]

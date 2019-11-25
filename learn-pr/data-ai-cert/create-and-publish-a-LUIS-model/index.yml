@@ -8,7 +8,6 @@ metadata:
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 abstract: | 
   In this module, you'll:
   - Learn what LUIS is.
@@ -19,7 +18,6 @@ summary: In this module, we'll introduce you to Language Understanding Intellige
 cardDescription: Introduction to adding conversational intelligence to your apps by using language understanding (LUIS)
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/create-and-publish-a-luis-model.svg
-ratingEnabled: true
 levels: 
 - intermediate
 roles:

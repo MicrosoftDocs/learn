@@ -4,8 +4,8 @@ metadata:
   title: Build a containerized web application with Docker
   description: In this module, you'll learn how to use Docker to quickly deploy a web application. You'll download an existing Docker image from Docker Hub, and customize it to run your own application. You'll upload the image to an Azure Container Registry, and run the application in Azure from an Azure Container Instance. 
   ms.date: 04/05/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: cryophobia
+  ms.author: chrvaw
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build a containerized web application with Docker

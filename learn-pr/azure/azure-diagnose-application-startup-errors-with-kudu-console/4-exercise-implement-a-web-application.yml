@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-diagnose-application-startup-errors-with-kudu-console.4-exercise-implement-a-web-application
+title: Exercise -  Implement a web application
+metadata:
+  title: Exercise -  Implement a web application
+  description: Implement a web application
+  ms.date: 06/21/2019
+  author: sowmyasubramaniam 
+  ms.author: sosubra 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+azureSandbox: true
+durationInMinutes: 6
+interactive: bash
+content: |
+  [!include[](includes/4-exercise-implement-a-web-application.md)]
+tasks:
+# Verify the resource web app is created.
+- action: exists
+  environment: azure
+  azure:
+    resource:
+
+      type: "Microsoft.Web/sites"
+      
+  hint: "Deploy the web app creation step in the Update the web project code section."
+

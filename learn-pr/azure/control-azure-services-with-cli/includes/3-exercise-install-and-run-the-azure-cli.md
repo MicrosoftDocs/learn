@@ -10,7 +10,7 @@ Let's install the Azure CLI on your local machine, and then run a command to ver
 Here you will install the Azure CLI on **Ubuntu Linux** using the Advanced Packaging Tool (**apt**) and the Bash command line.
 
 > [!TIP]
-> The commands listed below are for Ubuntu version 18.04. Other versions and distributions of Linux have different instructions. Check the [official documentation](https://docs.microsoft.com/cli/azure/install-azure-cli) if you are using a different Linux version.
+> The commands listed below are for Ubuntu version 18.04. Other versions and distributions of Linux have different instructions. Follow the instructions in [Install the Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli) if you are using a different Linux version or have any problems.
 
 1. Modify your sources list so that the Microsoft repository is registered, and the package manager can locate the Azure CLI package.
 

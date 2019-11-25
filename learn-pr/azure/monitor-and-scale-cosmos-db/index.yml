@@ -1,23 +1,23 @@
 ### YamlMime:Module
 uid: learn.monitor-azure-cosmos-db
 metadata:
-  title: Optimize performance of Azure Cosmos DB by using partitioning and indexing strategies
-  description: Learn how to measure the performance of your NoSQL Azure Cosmos database, by monitoring, partitioning, and indexing.
+  title: Optimize the performance of Azure Cosmos DB by using partitioning and indexing strategies
+  description: Learn how to measure the performance of your NoSQL Azure Cosmos DB database, by monitoring, partitioning, and indexing
   ms.date: 02/28/2019
-  author: natke
-  ms.author: nakersha
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Optimize performance of Azure Cosmos DB by using partitioning and indexing strategies
+title: Optimize the performance of Azure Cosmos DB by using partitioning and indexing strategies
 summary: Learn how to measure the throughput of your NoSQL database and assess the impact of partition key and indexing strategies on throughput.  
 abstract: | 
   In this module, you will:
-  - Measure the throughput of your Cosmos DB
-  - Identify partition strategy for your Cosmos DB data
-  - Measure the impact of different indexing strategies
+  - Measure the throughput of your Azure Cosmos DB database.
+  - Identify a partition strategy for your Azure Cosmos DB data.
+  - Measure the impact of different indexing strategies.
 prerequisites: |
   - Familiarity with NoSQL database concepts
-  - Familiarity with Cosmos DB concepts like databases, collections, and documents
+  - Familiarity with Azure Cosmos DB concepts like databases, collections, and documents
 iconUrl: /learn/achievements/monitor-azure-cosmos-db.svg
 levels:
 - intermediate

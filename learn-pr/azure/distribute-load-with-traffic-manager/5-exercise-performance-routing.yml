@@ -10,8 +10,8 @@ metadata:
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Exercise - Optimize applications across regions by using performance routing
-durationInMinutes: 7
 interactive: bash
 azureSandbox: true
+durationInMinutes: 7
 content: |
   [!include[](includes/5-exercise-performance-routing.md)]

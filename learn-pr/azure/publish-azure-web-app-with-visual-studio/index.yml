@@ -2,15 +2,12 @@
 uid: learn.publish-azure-web-app-with-visual-studio
 metadata:
   title: Publish a web app to Azure with Visual Studio
-  description: Azure App Service makes it quick for you to publish and update web apps directly from Visual Studio. Here, you'll learn how to install the necessary tools, create a new ASP.NET-based web application, and publish it to Azure. Finally, you'll learn how to make changes to the app, and you'll see how simple it is to republish those changes to Azure.
+  description: Learn how to use Azure App Service to create a new ASP.NET-based web app, then publish and update directly from Visual Studio.
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: nickwalkmsft
+  ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #TODO: Update support contact.
-  #ms.learn-contact: nakersha
 title: Publish a web app to Azure with Visual Studio
 summary: Use the publishing features of Visual Studio 2017 to deploy and manage an ASP.NET Core web application hosted on Azure.
 abstract: | 
@@ -31,8 +28,11 @@ roles:
 - developer
 products:
 - azure
+- dotnet
+- aspnet-core
+- dotnet-core
+- dotnet-standard
 units:
-#TODO: None of these units have a knowledge task or task validation component (need to add somewhere so users don't get marked complete solely by viewing the pages).
 - learn.publish-azure-web-app-with-visual-studio.1-introduction
 - learn.publish-azure-web-app-with-visual-studio.2-install-the-necessary-workloads
 - learn.publish-azure-web-app-with-visual-studio.3-exercise-create-a-new-aspnet-app

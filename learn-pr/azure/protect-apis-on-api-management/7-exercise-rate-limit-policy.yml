@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.protect-apis-on-api-management.7-exercise-rate-limit-policy
+title: Exercise - Throttle API requests
+metadata:
+  title: Exercise - Throttle API requests
+  description: In this exercise, you will set up and test throttling policies in API Management.
+  ms.date: 05/10/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+azureSandbox: true
+content: |
+  [!include[](includes/7-exercise-rate-limit-policy.md)]

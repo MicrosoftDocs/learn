@@ -4,15 +4,12 @@ metadata:
   title: Summary and cleanup
   description: Summary and cleanup
   ms.date: 09/24/2018
-  author: mimig1
-  ms.author: mimig
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 title: Summary and cleanup
-# TODO: Consider Azure Portal Interactivity
-# interactive: azure-portal
-azureSandbox: true
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary-cleanup.md)] 

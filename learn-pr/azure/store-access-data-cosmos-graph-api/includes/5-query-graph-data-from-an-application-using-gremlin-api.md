@@ -1,6 +1,6 @@
 Applications that use graph databases primarily use them to query data.
 
-Suppose you have built your graph database in Cosmos DB. Now you must write code that executes queries against that database so that you can display it to users.
+Suppose you have built your graph database in Azure Cosmos DB. Now you must write code that executes queries against that database so that you can display it to users.
 
 ## Query graph data from an application using the gremlin API
 

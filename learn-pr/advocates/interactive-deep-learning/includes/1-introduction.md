@@ -2,8 +2,6 @@ Your company has decided to invest in a better system for detecting defects in t
 
 Building the right tool chain for deep learning is time-consuming and expensive. Investing in the hardware to train a model is expensive. Azure and the Data Science Virtual Machine (DSVM) is a great option to control your costs and scale as needed. You get all the deep learning tools you need and the ability to deploy powerful virtual machines to crunch data and train a neural network.  
 
-In this module, we'll create a DSVM and train our first model with it. 
-
 ## Learning objectives
 
 In this module, you will:
@@ -12,4 +10,8 @@ In this module, you will:
   - Create a DSVM with the Azure CLI
   - Learn how to use Docker to set up a custom deep learning environment
   - Connect to Jupyter notebooks through Docker on the DSVM
-  - Run your first deep learning experiment with Jupyter
+  - Run your first deep learning experiment with Jupyter Notebooks
+  
+## Prerequisites
+
+[!include[](../../../includes/azure-subscription-prerequisite.md)]

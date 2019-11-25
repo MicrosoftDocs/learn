@@ -1,13 +1,13 @@
-Azure Key Vault is a *secret store*: a centralized cloud service for storing application secrets. Key Vault helps you control your applications' secrets by keeping them in a single central location and providing secure access, permissions control, and access logging.
+Azure Key Vault is a *secret store*: a centralized cloud service for storing application secrets - configuration values like passwords and connection strings that must remain secure at all times. Key Vault helps you control your applications' secrets by keeping them in a single central location and providing secure access, permissions control, and access logging.
 
 The main benefits of using Key Vault are:
 
-- Reduced risk of accidental secret leaks by storing secrets securely, outside of configuration and source control, and eliminating scenarios where secrets are copied around in files or pasted into emails or chats
+- Separation of sensitive application information from other configuration and code, reducing risk of accidental leaks
 - Restricted secret access with access policies tailored to the applications and individuals that need them
-- Centralized secret storage, so that multiple users and instances of applications can access secret values that only need to be updated in one place
+- Centralized secret storage, allowing required changes to happen in only one place
 - Access logging and monitoring to help you understand how and when secrets are accessed
 
-Secrets are stored in individual *vaults*, which are Azure resources with their own configuration and security policies that you can create with any of the standard Azure management tools like the Azure portal or the Azure CLI. Secret access and vault management is accomplished via a REST API, which is also supported by all of the Azure management tools as well as client libraries available for many popular languages. Every vault has a unique URL where its API is hosted.
+Secrets are stored in individual *vaults*, which are Azure resources used to group secrets together. Secret access and vault management is accomplished via a REST API, which is also supported by all of the Azure management tools as well as client libraries available for many popular languages. Every vault has a unique URL where its API is hosted.
 
 > [!IMPORTANT]
 > **Key Vault is designed to store configuration secrets for server applications.** It's not intended for storing data belonging to your app's users, and it shouldn't be used in the client-side part of an app. This is reflected in its performance characteristics, API, and cost model.
@@ -23,3 +23,16 @@ In Key Vault, a secret is a name-value pair of strings. Secret names must be 1-1
 
 > [!NOTE]
 > Key Vault supports two additional kinds of secrets beyond strings &mdash; *keys* and *certificates* &mdash; and provides useful functionality specific to their use cases. This module does not cover these features and concentrates on secret strings like passwords and connection strings.
+
+## Vault authentication and permissions
+
+Azure Key Vault's API uses Azure Active Directory to authenticate users and applications. Vault access policies are based on *actions*, and are applied across an entire vault. For example, an application with **Get** (read secret values), **List** (list names of all secrets), and **Set** (create or update secret values) permissions to a vault is able to create secrets, list all secret names, and get and set all secret values in that vault.
+
+*All* actions performed on a vault require authentication and authorization &mdash; there is no way to grant any kind of anonymous access.
+
+> [!TIP]
+> When granting vault access to developers and apps, grant only the minimum set of permissions needed. Permissions restrictions help avoid accidents caused by code bugs and reduce the impact of stolen credentials or malicious code injected into your app.
+
+Developers will usually only need **Get** and **List** permissions to a development-environment vault. Some engineers will need full permissions to change and add secrets when necessary.
+
+For apps, often only **Get** permissions are required. Some apps may require **List** depending on the way the app is implemented. The app we'll implement in this module's exercise requires the **List** permission because of the technique it uses to read secrets from the vault.

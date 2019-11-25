@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-app-with-oidc-and-azure-ad.5-exercise-deploy-app-with-oidc-auth
+metadata:
+  title: Exercise - Deploy an application that uses OpenID Connect to authenticate users
+  description: Create a web app and configure it to use the OpenID Connect standard to authenticate with Azure AD.
+  ms.date: 07/17/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Exercise - Deploy an application that uses OpenID Connect to authenticate users
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/5-exercise-deploy-app-with-oidc-auth.md)]

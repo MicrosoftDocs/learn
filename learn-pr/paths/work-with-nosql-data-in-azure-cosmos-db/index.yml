@@ -7,7 +7,6 @@ metadata:
   ms.date: 09/24/2018
   author: markjulmar
   ms.author: smmark
-  #ms.learn-contact: smmark
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Work with NoSQL data in Azure Cosmos DB
@@ -28,7 +27,10 @@ products:
 - azure-clis
 modules:
 - learn.create-cosmos-db-for-scale
+- learn.azure.choose-the-appropriate-api-for-cosmos-db-storage
 - learn.access-data-with-cosmos-db-and-sql-api
+- learn.azure.store-access-data-cosmos-graph-api
+- learn.azure.store-access-data-cosmos-table-api
 - learn.cosmos-db-app-with-vscode
 - learn.monitor-azure-cosmos-db
 - learn.distribute-data-globally-with-cosmos-db

@@ -4,7 +4,7 @@ The *performance* traffic routing method connects users with the server that per
 
 You don't have to do anything more than configure a Traffic Manager profile and select **performance** as the routing method. Endpoints don't need to be prioritized, Traffic Manager will route all the traffic automatically to the fastest responding server.
 
-In the following example, if endpoint A stopped performing as well as endpoint B, customer traffic is automatically routed to endpoint B.
+In the following example, if endpoint A stopped performing as efficiently as endpoint B, customer traffic is automatically routed to endpoint B.
 
 ![Example showing Traffic Manager routing traffic to the best performing endpoint](../media/4-performance-example.svg)
 

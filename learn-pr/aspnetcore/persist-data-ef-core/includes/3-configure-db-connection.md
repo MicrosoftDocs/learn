@@ -3,24 +3,29 @@ In this unit, you'll configure a database connection to an existing, empty *Cont
 > [!IMPORTANT]
 > Secret Manager isn't intended for production deployments. Consider using [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-overview).
 
-1. In the *ContosoPets.Api/ContosoPets.Api.csproj* file, replace the `<!-- Replace this comment with the UserSecretsId element -->` comment with the following XML. Save your changes.
+1. Run the following command to initialize Secret Manager for use in the *:::no-loc text="ContosoPets.Api":::* project:
 
-    ```xml
-    <UserSecretsId>$(AssemblyName)</UserSecretsId>
+    ```dotnetcli
+    dotnet user-secrets init --id '$(AssemblyName)'    
     ```
 
-    Secret Manager uses the `UserSecretsId` element's inner text to associate secrets with the project. The inner text must be a string that uniquely identifies the app on the development machine or server. In the preceding example, the MSBuild `AssemblyName` project property resolves to the assembly name *ContosoPets.Api*.
+    The preceding command:
+
+    * Adds a `<UserSecretsId>` element to a `<PropertyGroup>` within the project file.
+    * Sets the `<UserSecretsId>` element's inner text to the MSBuild `AssemblyName` project property.
+
+    Secret Manager uses the `<UserSecretsId>` element's inner text to associate secrets with the project. The inner text must be a string that uniquely identifies the app on the development machine or server. In the preceding example, the MSBuild `AssemblyName` project property resolves to the assembly name *:::no-loc text="ContosoPets.Api":::*.
 
     [!INCLUDE[OS-specific keyboard shortcuts](../../includes/keyboard-shortcuts-table.md)]
 
 1. Run the following command to store the Azure SQL database credentials using Secret Manager:
 
-    ```bash
+    ```dotnetcli
     dotnet user-secrets set "ContosoPetsCredentials:UserId" $sqlUsername && \
         dotnet user-secrets set "ContosoPetsCredentials:Password" $sqlPassword
     ```
 
-1. In *appsettings.Development.json*, replace the `// Add the ConnectionStrings:ContosoPets JSON` comment with the following. Save your changes.
+1. In *:::no-loc text="appsettings.Development.json":::*, replace the `// Add the ConnectionStrings:ContosoPets JSON` comment with the following. Save your changes.
 
     ```json
     "ConnectionStrings": {
@@ -28,7 +33,7 @@ In this unit, you'll configure a database connection to an existing, empty *Cont
     },
     ```
 
-    The *appsettings.Development.json* file will be used whenever the app is run in a development environment. The following are two options for setting the environment:
+    The *:::no-loc text="appsettings.Development.json":::* file will be used whenever the app is run in a development environment. The following are two options for setting the environment:
 
     * The `ASPNETCORE_ENVIRONMENT` environment variable
     * The `--environment` command-line parameter
@@ -39,7 +44,7 @@ In this unit, you'll configure a database connection to an existing, empty *Cont
     echo $sqlConnectionString
     ```
 
-1. In *appsettings.Development.json*, replace the `ContosoPets` key's value of `""` with the connection string stored in your clipboard. Save your changes.
+1. In *:::no-loc text="appsettings.Development.json":::*, replace the `ContosoPets` key's value of `""` with the connection string stored in your clipboard. Save your changes.
 
     The file now resembles the following JSON:
 
@@ -58,7 +63,7 @@ In this unit, you'll configure a database connection to an existing, empty *Cont
     }
     ```
 
-1. In the *Startup.cs* file's `ConfigureServices` method, replace the `// Add the SqlConnectionStringBuilder code` comment with the following code. Save your changes.
+1. In the *:::no-loc text="Startup.cs":::* file's `ConfigureServices` method, replace the `// Add the SqlConnectionStringBuilder code` comment with the following code. Save your changes.
 
     ```csharp
     var builder = new SqlConnectionStringBuilder(
@@ -73,7 +78,7 @@ In this unit, you'll configure a database connection to an existing, empty *Cont
     The preceding code:
 
     * Instantiates a `SqlConnectionStringBuilder` object, which is used for concatenating strings to produce a valid database connection string.
-    * Retrieves the database connection string from the `ConnectionStrings:ContosoPets` property of the *appsettings.Development.json* file.
+    * Retrieves the database connection string from the `ConnectionStrings:ContosoPets` property of the *:::no-loc text="appsettings.Development.json":::* file.
     * Retrieves the `UserId` and `Password` property values from the `ContosoPets` section of the local secret store.
     * Injects the `UserId` and `Password` property values into the database connection string.
 
@@ -90,7 +95,7 @@ In this unit, you'll configure a database connection to an existing, empty *Cont
     * Defines the Database Provider as SQL Server.
     * Provides a connection string to the Database Provider for the Azure SQL database.
 
-1. In *Startup.cs*, replace the `// Add the System.Data.SqlClient using statement` comment with the following code. Save your changes.
+1. In *:::no-loc text="Startup.cs":::*, replace the `// Add the System.Data.SqlClient using statement` comment with the following code. Save your changes.
 
     ```csharp
     using System.Data.SqlClient;

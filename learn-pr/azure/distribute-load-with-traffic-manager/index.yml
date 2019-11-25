@@ -2,7 +2,7 @@
 uid: learn.distribute-load-with-traffic-manager
 metadata:
   title: Enhance your service availability and data locality by using Azure Traffic Manager
-  description: Azure Traffic Manager provides DNS load balancing to your application, so you improve your ability to distribute your application around the world. Use Traffic Manager to improve the performance and availability of your application.
+  description: Discover how Azure Traffic Manager provides DNS load balancing for your application to improve the performance and availability of your application.
   ms.date: 04/15/2019
   author: jboeshart
   ms.author: jaboes
@@ -26,6 +26,8 @@ roles:
 - administrator
 products:
 - azure
+- azure-traffic-manager
+- azure-virtual-network
 units:
 - learn.distribute-load-with-traffic-manager.1-introduction
 - learn.distribute-load-with-traffic-manager.2-routing-with-traffic-manager

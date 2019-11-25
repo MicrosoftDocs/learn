@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery
+metadata:
+  title: Protect your on-premises infrastructure from disasters with Azure Site Recovery
+  description: Provide disaster recovery for your on-premises infrastructure by managing and orchestrating replication, failover, and failback of VMware virtual machines, Hyper-V virtual machines, and physical servers with Azure Site Recovery.
+  ms.date: 08/01/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Protect your on-premises infrastructure from disasters with Azure Site Recovery
+summary: Provide disaster recovery for your on-premises infrastructure by managing and orchestrating replication, failover, and failback of VMware virtual machines, Hyper-V virtual machines, and physical servers with Azure Site Recovery.
+abstract: | 
+  In this module, you will:
+  - Identify the features and protection capabilities Azure Site Recovery provides to on-premises infrastructure
+  - Identify the requirements for enabling protection of on-premises infrastructure
+prerequisites: | 
+  - Basic understanding of Azure virtual machines
+  - Basic understanding of Azure virtual networking
+  - Basic understanding of disaster recovery concepts
+iconUrl: /learn/achievements/protect-on-premises-infrastructure-with-azure-site-recovery.svg
+levels:
+- intermediate
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.protect-on-premises-infrastructure-with-azure-site-recovery.1-introduction
+- learn.protect-on-premises-infrastructure-with-azure-site-recovery.2-azure-site-recovery-overview
+- learn.protect-on-premises-infrastructure-with-azure-site-recovery.3-workloads-supported-azure-site-recovery
+- learn.protect-on-premises-infrastructure-with-azure-site-recovery.4-run-disaster-recovery-drill
+- learn.protect-on-premises-infrastructure-with-azure-site-recovery.5-failover-failback
+- learn.protect-on-premises-infrastructure-with-azure-site-recovery.6-summary
+badge:
+  uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.badge

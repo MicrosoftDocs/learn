@@ -1,10 +1,10 @@
 Now that we have our IoT hub connected to the blob container, let's connect a Stream Analytics job to process the input.
 
-1. Select **+ Create a resource** in the left-hand sidebar of the Azure portal, followed by **Internet of Things** and **Stream Analytics job**.
+1. Select **+ Create a resource** in the left-hand navigation menu of the Azure portal, followed by **Internet of Things** and **Stream Analytics job**.
 
     ![Creating a Stream Analytics job](../media/6-new-stream-analytics-job.png)
 
-1. Name the job "polar-bear-analytics" and place it in the resource group that you created earlier.
+1. Name the job `polar-bear-analytics` and place it in the resource group that you created earlier.
 
 1. Specify **South Central US** as the location. This was the same location used for the IoT Hub.
 
@@ -74,7 +74,7 @@ The sample data we'll test with is in the same GitHub repo the assets came from.
 
 1. Return to the Stream Analytics job in the portal and click **Query** in the menu on the left side of the view.
 
-1. Click the **ellipsis** (the three dots) to the right of **CameraInput** and select **Upload sample data from file** from the menu.
+1. Select **Upload sample data from file** in the bottom panel.
 
     ![Uploading sample data](../media/6-upload-test-data-1.png)
 
@@ -84,7 +84,7 @@ The sample data we'll test with is in the same GitHub repo the assets came from.
 
     ![Uploading sample-data.json](../media/6-upload-test-data-2.png)
 
-1. When the upload is complete, type the following query into the query window. Then click the **Test** button to execute it:
+1. When the upload is complete, type the following query into the query window. Then click the **Test query** button to execute it:
 
     ```sql
     SELECT * FROM CameraInput
@@ -145,6 +145,6 @@ Now it's time to check for two photos snapped by the same camera within 10 secon
 
 1. Finish up by clicking the **Save** button at the top of the view to save the query.
 
-1. Select **Yes** when asked to confirm. This will be the query that's executed when you run the Stream Analytics job.
+1. Select **Yes** if asked to confirm. This will be the query that's executed when you run the Stream Analytics job.
 
 The query that you tested employs simple logic: if the same camera snaps two pictures within 10 seconds, there *might* be a polar bear. But the ultimate goal is to determine with a great deal of confidence whether there really *is* a polar bear. That means supplementing Stream Analytics with machine learning.

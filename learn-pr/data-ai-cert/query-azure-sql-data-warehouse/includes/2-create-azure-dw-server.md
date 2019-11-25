@@ -10,21 +10,15 @@ Let's create a sample data warehouse in Azure with sample data. You need an Azur
 
     ![Creating a SQL data warehouse](../media/2-create-sql-dw.png)
 
-1. Give the database a name, such as **demodW**. 
-
-1. Select a subscription to own the database. Ideally, select one with available Azure credit to avoid any cost to your account.
+1. On the **Basics** page, select a subscription for the database. Ideally, select one with available Azure credit to avoid any cost to your account.
 
 1. Create a new resource group named **mslearn-demodw**. Use this name so that you can clean up everything at the end of this module.
 
-1. Under **Select source**, select **Sample**. 
-1. Under **Select sample**, select **AdventureWorksDW**. 
+1. Give the database a name, such as **demodw**.
 
-    - These two options create the Azure service to deploy the traditional *AdventureWorksDW* sample database to the Azure SQL Data Warehouse server.
-
-1. Select the **Server** box to open the server configuration blade. You create a new server here. In a production system, you might select an existing database server to share the physical resources.
-1. Select **Create a new server** to open the **New server** blade if it's not visible already.
+1. Under the **Server** text box, click **Create new** to open the **New server** panel if it's not visible already.
     
-    a. Provide a valid **Server name**. Use **demo-dw-server**, which makes the full name of the server `demo-dw-server.database.windows.net`.
+1. Use **demo-dw-server** for the **Server name**. The full name of the server should be `demo-dw-server.database.windows.net`.
 
 1. Enter a valid username and password in **Server admin login**.
 
@@ -34,13 +28,17 @@ Let's create a sample data warehouse in Azure with sample data. You need an Azur
 
     ![Choosing the SQL Data Warehouse server](../media/2-select-asdw-server.png)
 
-1. Click **Select** to continue.
+1. Select **OK** to continue.
 
-1. Select the **Performance level** entry to open the **Configure performance** blade. The default performance level is **DW1000c**, under **Gen 2**. Move the slider to the left end. The performance level of the server is downgraded to **DW100c**. This level reduces the cost per hour. 
+1. Select the **Select Performance level** hyperlink to open the **Configure performance** view. The default performance level is **DW1000c**, under **Gen 2**. Move the slider to the left end. The performance level of the server is downgraded to **DW100c**. This level reduces the cost per hour. Click **Apply**.
 
     ![Selecting performance level](../media/2-select-performance-level.png)
 
-1. Select **Apply** to continue.
+1. In the Azure Portal, click on the button **Next: Additional Settings >**
+
+1. Under **Data source**, select **Sample**, AdventureWorksDW is the default database that is created. 
+
+1. Select **Review + Create** at the top of the screen.
 
 1. Select **Create** to start the deployment process.
 

@@ -5,14 +5,10 @@ metadata:
   title: Exercise - Implement a Service Bus topic and queue
   description: Exercise - Implement a Service Bus topic and queue
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
-#TODO: Portal interactivity
-#interactive: azure-portal
 azureSandbox: true
 durationInMinutes: 10
 content: |

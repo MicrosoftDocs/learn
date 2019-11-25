@@ -84,9 +84,9 @@ Azure AD addresses this problem through two methods: service principals and mana
 
 To understand service principals, it's useful to first understand the words **identity** and **principal**, because of how they are used in the identity management world.
 
-An **identity** is just a thing that can be authenticated. Obviously, this includes users with a user name and password, but it can also include applications or other servers, which might authenticate with secret keys or certificates. As a bonus definition, an **account** is data associated with an identity.
+An **identity** is just a thing that can be authenticated. Obviously, this includes users with a user name and password, but it can also include applications or other servers, which might authenticate with secret keys or certificates.
 
-A **principal** is an identity acting with certain roles or claims. Usually, it is not useful to consider identity and principal separately, but think of using `sudo` on a Bash prompt in Linux or on Windows using "run as Administrator." In both those cases, you are still logged in as the same identity as before, but you've changed the role under which you are executing. Groups are often also considered principals because they can have rights assigned.
+A **principal** is an identity acting with certain roles or claims. Usually, it is not useful to consider identity and principal separately, but think of using 'sudo' on a Bash prompt in Linux or on Windows using "run as Administrator." In both those cases, you are still logged in as the same identity as before, but you've changed the role under which you are executing. Groups are often also considered principals because they can have rights assigned.
 
 A **service principal** is an identity that is used by a service or application. And like other identities, it can be assigned roles.
   :::column-end:::
@@ -101,7 +101,7 @@ A **service principal** is an identity that is used by a service or application.
 
 The creation of service principals can be a tedious process, and there are a lot of touch points that can make maintaining them difficult. Managed identities for Azure services are much easier and will do most of the work for you. 
 
-A managed identity can be instantly created for any Azure service that supports it&mdash;and the list is constantly growing. When you create a managed identity for a service, you are creating an account on the Azure AD tenant. The Azure infrastructure will automatically take care of authenticating the service and managing the account. You can then use that account like any other Azure AD account, including securely letting the authenticated service access other Azure resources.
+A managed identity can be instantly created for any Azure service that supports it&mdash;and the list is constantly growing. When you create a managed identity for a service, you are creating an account on your organization's Active Directory (a specific organization's Active Directory instance is known as an "Active Directory Tenant"). The Azure infrastructure will automatically take care of authenticating the service and managing the account. You can then use that account like any other Azure AD account, including securely letting the authenticated service access other Azure resources.
   :::column-end:::
 :::row-end:::
 
@@ -115,7 +115,7 @@ Roles can be granted at the individual service instance level, but they also flo
 
 Here's a diagram that shows this relationship. Roles assigned at a higher scope, like an entire subscription, are inherited by child scopes, like service instances.
 
-![An illustration showing the hierarchal representation of role-based access in a management group.](../media/3-role-assignment-scope.png)
+![An illustration showing the hierarchical representation of role-based access in a management group.](../media/3-role-assignment-scope.png)
 
 ### Privileged Identity Management
 

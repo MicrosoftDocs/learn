@@ -40,6 +40,7 @@ You will install PowerShell Core on Ubuntu Linux using the Advanced Packaging To
     ```bash
     pwsh
     ```
+
 ::: zone-end
 
 ::: zone pivot="macos"
@@ -54,7 +55,7 @@ On macOS, the first step is to install **PowerShell Core**. This is done using t
 1. Install Homebrew-Cask to obtain more packages, including the PowerShell Core package:
 
     ```bash
-    brew tap caskroom/cask
+    brew tap homebrew/cask
     ```
 
 1. Install PowerShell Core:
@@ -74,6 +75,7 @@ On macOS, the first step is to install **PowerShell Core**. This is done using t
 ::: zone pivot="windows"
 
 ## Windows
+
 PowerShell is included with Windows, however there may be an update available for your machine. The Azure support we are going to use requires PowerShell version 5.0 or higher. You can check the version you have installed through the following steps:
 
 1. Open the **Start** menu and type **Windows PowerShell**. There may be multiple shortcut links available:
@@ -89,7 +91,7 @@ PowerShell is included with Windows, however there may be an update available fo
     ```powershell
     $PSVersionTable.PSVersion
     ```
-    
+
 If the version number is lower than 5.0, follow these instructions for [upgrading existing Windows PowerShell](https://docs.microsoft.com/powershell/scripting/setup/installing-windows-powershell?view=powershell-6#upgrading-existing-windows-powershell).
 
 ::: zone-end

@@ -3,7 +3,7 @@ uid: learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.5-use-the-grem
 title: Use the Gremlin (graph) API as a recommendation engine
 metadata:
   title: Use the Gremlin (graph) API as a recommendation engine
-  description: Describe a scenario where the Gremlin API might be a good choice for Cosmos DB.
+  description: Describe a scenario where the Gremlin API might be a good choice for Azure Cosmos DB.
   ms.date: 04/24/2019
   author: rmcmurray
   ms.author: robmcm

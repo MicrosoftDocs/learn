@@ -15,7 +15,8 @@ Let's add a new method that retrieves the next message from the queue.
     static async Task<string> ReceiveArticleAsync()
     {
     }
-
+    ```
+    
 1. All of the setup code to get a `CloudQueue` will be identical to what we did in the last exercise. Code duplication is a bad habit, even in samples so go ahead and, refactor the code that obtains the `CloudQueue` to a new method named `GetQueue` and change the `SendArticleAsync` to use your new method.
      - Make sure to leave the code that _creates_ the queue in the `SendArticleAsync` method; remember only the **publisher** should create the queue.
 

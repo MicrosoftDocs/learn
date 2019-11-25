@@ -1,4 +1,4 @@
-﻿### YamlMime:Module
+### YamlMime:Module
 uid: learn-wwl.app-and-infra-migration-and-modernization
 metadata:
   title: Applications and infrastructure migration and modernization
@@ -19,7 +19,6 @@ abstract: |
   - Identify the advantages of different migration and modernization strategies.
 prerequisites: None
 iconUrl: /learn/achievements/apps-and-infra-migration-modernization.svg
-ratingEnabled: true
 levels:
 - beginner
 roles:

@@ -21,6 +21,8 @@ roles:
 - business-user
 products:
 - azure
+- dynamics
+- m365
 modules:
 - learn-wwl.ai-strategy-to-create-business-value
 - learn-wwl.ai-strategy-in-healthcare
@@ -30,6 +32,8 @@ modules:
 - learn-wwl.foster-ai-culture-sales
 - learn-wwl.foster-ai-culture-customer-service
 - learn-wwl.responsible-ai-guiding-principles
+- learn-wwl.responsible-ai-governing-practices
+- learn-wwl.microsoft-responsible-ai-practices
 - learn-wwl.intro-to-ai-technology
 - learn-wwl.microsoft-approach-to-ai
 trophy:

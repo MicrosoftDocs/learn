@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.provision-manage.1-cloud-services
+title: Cloud Services
+metadata:
+  title: Cloud Services
+  description: Cloud Services
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 13
+content: |
+  [!include[](includes/1-cloud-services.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+    - content: "Which of the following is NOT an example of a core cloud resource type?"
+      choices:
+      - content: "Compute services"
+        isCorrect: false
+        explanation: "Incorrect. Compute, networking, and storage are core cloud services."
+      - content: "Machine-learning services"
+        isCorrect: true
+        explanation: "Correct! Machine learning is not a core cloud service."
+      - content: "Networking services"
+        isCorrect: false
+        explanation: "Incorrect. Compute, networking, and storage are core cloud services."
+      - content: "Storage services"
+        isCorrect: false
+        explanation: "Incorrect. Compute, networking, and storage are core cloud services."
+
+    - content: "Azure Active Directory simplifies the task of building applications that authenticate users using third-party identity providers such as Facebook and Google. What is the primary motivation for using trusted third-party identity providers rather than authenticating users yourself?"
+      choices:
+      - content: "It speeds the development process by reducing the amount of code you have to write."
+        isCorrect: false
+        explanation: "Incorrect. Using third-party identity providers does usually reduce the amount of code you have to write, but it's not the only reason to use trusted third parties."
+      - content: "Third parties such as Facebook and Google have vast experience authenticating users securely and are more likely to do it in a way that is resistant to attack."
+        isCorrect: false
+        explanation: "Incorrect. Third-party identity providers have the experience and expertise to write secure authentication code, but it's not the only reason to use trusted third parties."
+      - content: "Third parties such as Facebook and Google have vast experience storing login credentials securely and are more likely to store them in a way that is resistant to attack."
+        isCorrect: false
+        explanation: "Incorrect. Third-party identity providers have the experience and expertise to store login credentials securely, but it's not the only reason to use trusted third parties."
+      - content: "All of the above"
+        isCorrect: true
+        explanation: "Correct!"

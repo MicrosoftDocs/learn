@@ -5,10 +5,10 @@ metadata:
   title: Overview of Databricks visualization options
   description: Overview of Databricks visualization options
   ms.date: 02/20/2019
-  author: barlan
-  ms.author: barlan
+  author: jasallen 
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 3
 content: |
   [!include[](includes/2-visualization-options.md)]

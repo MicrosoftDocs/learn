@@ -11,7 +11,5 @@ metadata:
   ROBOTS: NOINDEX
 title: Exercise - Test your Application Gateway
 durationInMinutes: 10
-interactive: bash
-azureSandbox: true
 content: |
   [!include[](includes/6-exercise-test-application-gateway.md)]

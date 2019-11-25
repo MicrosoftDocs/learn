@@ -8,7 +8,6 @@ metadata:
   ms.author: chris.testaoneill
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Query data in Azure SQL Data Warehouse
 summary: Learn how to issue simple queries against Azure SQL Data Warehouse and how to visualize the data in both Excel and Power BI.
 abstract: | 
@@ -17,7 +16,6 @@ abstract: |
   - Query the sample database with the SELECT statement and its clauses.
   - Use the queries in different client applications, such as SQL Server Management Studio and Power BI.
 prerequisites: None
-ratingEnabled: true
 iconUrl: /learn/achievements/data-ai/query-azure-sql-data-warehouse-badge.svg
 levels:
 - beginner

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.build-product-road-maps.11-conclusion
+title: Summary
+metadata:
+  title: Summary
+  description: This unit concludes the module.
+  author: jamtur01
+  ms.date: 04/16/2019
+  ms.author: jaturnbu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-startups
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/11-conclusion.md)]

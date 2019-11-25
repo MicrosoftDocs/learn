@@ -26,8 +26,8 @@ IoT can be easily understood as a set of technologies connected across three mai
 - **Action:** The systems and tools that enable people and machines to take actions based on data, in an automated or predictive manner.
 
 |  |  |
-| ------------ | -------------:| 
-|![Icon of lightbulb](../media/Lightbulb_icon.png)|*Let’s review one example of an IoT-enabled object: an engine (a thing) collects pressure and temperature data that is used to evaluate if the engine is performing as expected (an insight). This data is used to proactively prioritize the engine maintenance schedule (an action).  Now think about the things that you use every day. Pick one and list out some insights that this item could collect. What actions would these insights enable? How might these actions simplify your work?*
+| ------------ | -------------| 
+|![Icon of lightbulb](../media/lightbulb.png)|*Let’s review one example of an IoT-enabled object: an engine (a thing) collects pressure and temperature data that is used to evaluate if the engine is performing as expected (an insight). This data is used to proactively prioritize the engine maintenance schedule (an action).  Now think about the things that you use every day. Pick one and list out some insights that this item could collect. What actions would these insights enable? How might these actions simplify your work?*
 |
 
 Now that you know more about IoT in everyday devices, let’s apply it to Microsoft Azure IoT.

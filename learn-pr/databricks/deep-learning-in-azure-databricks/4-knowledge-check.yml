@@ -4,8 +4,8 @@ metadata:
   title: Knowledge check
   description: Test your knowledge by answering questions about skills you learned from the lab.
   ms.date: 02/20/2019
-  author: barlan
-  ms.author: barlan
+  author: jasallen 
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Knowledge check
@@ -16,15 +16,15 @@ quiz:
  questions:
     - content: "Which library can you use to achieve parallelized deep learning in Azure Databricks?"
       choices:
-        - content: Spark Deep Learning
-          explanation: Spark Deep Learning supports parallelized deep learning in Spark and Azure Databricks. 
-          isCorrect: true
         - content: Tensorflow
           isCorrect: false
           explanation: Tensorflow on its own doesn't support parallelized deep learning in Azure Databricks.
-          content: TFLearn
+        - content: TFLearn
           isCorrect: false
           explanation: TFLearn doesn't support parallelized deep learning in Azure Databricks.
+        - content: Spark Deep Learning
+          explanation: Spark Deep Learning supports parallelized deep learning in Spark and Azure Databricks. 
+          isCorrect: true
     - content: "When dealing with images, which of the following deep-learning techniques might be used?"
       choices:
         - content: Convolution
@@ -35,12 +35,12 @@ quiz:
           explanation: Lemmatization is used in text preprocessing, not for images.
     - content: "Which of these definitions best describes the function of an autoencoder neural-network architecture?"
       choices:
-        - content: A network that encodes an image into a compressed feature vector and then re-creates the image from the vector.
-          explanation: This definition correctly describes an autoencoder.
-          isCorrect: true
         - content: A network that automatically encodes image data into a vector.
           isCorrect: false
           explanation: This definition of an autoencoder is incomplete.
+        - content: A network that encodes an image into a compressed feature vector and then re-creates the image from the vector.
+          explanation: This definition correctly describes an autoencoder.
+          isCorrect: true
         - content: A network that automatically decodes a vector into image data.
           isCorrect: false
           explanation: This definition of an autoencoder is incomplete.

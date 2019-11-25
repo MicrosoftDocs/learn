@@ -2,7 +2,7 @@
 uid: learn.run-web-app-background-task-with-webjobs
 metadata:
   title: Run a background task in an App Service Web App with WebJobs
-  description: In this module, you will use a WebJob to automate a background task in an Azure Web App.
+  description: In this module, we'll guide you through creating a WebJob in the same project as an existing Web App and automating tasks with WebJobs.
   ms.date: 2/28/2019
   author: alistairmatthews
   ms.author: v-alism
@@ -25,6 +25,9 @@ roles:
 - developer
 products:
 - azure
+- dotnet
+- aspnet-core
+- dotnet-core
 units:
 - learn.run-web-app-background-task-with-webjobs.1-introduction
 - learn.run-web-app-background-task-with-webjobs.2-what-are-webjobs

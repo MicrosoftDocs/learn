@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.microsoft-responsible-ai-practices.ai-for-good
+title: Engaging externally - AI for good
+metadata:
+  title: Engaging externally - AI for good 
+  description: With technology, resources, and expertise we are working to empower those striving to solve humanitarian issues and create a more sustainable and accessible world.
+  ms.date: 10/01/2019
+  author: RWortmanMorris
+  ms.author: rawortma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-ai-for-good.md)] 

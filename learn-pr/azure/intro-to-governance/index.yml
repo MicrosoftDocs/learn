@@ -2,13 +2,12 @@
 uid: learn.intro-to-governance
 metadata:
   title: Apply and monitor infrastructure standards with Azure Policy
-  description: Learn about governance and management in Azure services.
+  description: Learn about tools Azure provides for policy and standards management that support your teams' ownership and development of their resources in the cloud.
   ms.date: 12/27/2018
-  author: markjulmar
-  ms.author: smmark
+  author: patridge
+  ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Apply and monitor infrastructure standards with Azure Policy
 summary: Learn about governance and management in Azure services.
 abstract: |
@@ -18,7 +17,6 @@ abstract: |
   - Understand Microsoft's policies and privacy guarantees
   - Learn how to monitor your resources
 prerequisites: None
-ratingEnabled: true
 iconUrl: /learn/achievements/intro-to-governance.svg
 levels:
 - beginner
@@ -26,6 +24,7 @@ roles:
 - developer
 - administrator
 - solution-architect
+- security-engineer
 products:
 - azure
 units:

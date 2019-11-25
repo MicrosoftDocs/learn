@@ -1,18 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.access-data-with-cosmos-db-and-sql-api.3-add-data
 metadata:
-  title: Add data using the portal
+  title: Exercise - add data using Data Explorer
   description: Learn how to add data to Azure Cosmos DB by using the Azure portal
-  ms.date: 09/24/2018
-  author: mimig1
-  ms.author: mimig
+  ms.date: 05/15/2019
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-# TODO:Add Azure Portal Interactivity
-# interactive: azure-portal
 azureSandbox: true
-title: Add data using the portal
+title: Exercise - add data using Data Explorer
 durationInMinutes: 5
 content: |
   [!include[](includes/3-add-data.md)]

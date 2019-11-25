@@ -1,6 +1,6 @@
 To make an API available through an API gateway, you need to import and publish the API.
 
-In the shoe company example, NorthWind Shoes wants to enable select partners to be able to query inventory and stock levels.
+In the shoe company example, NorthWind Shoes wants to enable selected partners to be able to query inventory and stock levels.
 
 Here, you'll learn how to import an API into Azure API Management, and how to make an API available to clients.
 

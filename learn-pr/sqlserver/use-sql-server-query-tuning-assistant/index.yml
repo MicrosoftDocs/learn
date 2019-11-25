@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn-sqlserver.use-sql-server-query-tuning-assistant
+metadata:
+  title: Use the SQL Server Query Tuning Assistant 
+  description: Use the SQL Server Query Tuning Assistant
+  ms.date: 01/31/2019
+  author: geoffallix
+  ms.author: v-gea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+title: Use the SQL Server Query Tuning Assistant
+summary: The Query Store feature introduced in SQL Server 2016 continuously monitors the performance of your queries. It caches query plans and gathers information that you can use to troubleshoot slow running queries. You can enable Query Store on any database on an instance of SQL Server 2016 or higher, including databases that have been migrated and continue to operate with an older compatibility level. The Query Tuning Assistant works alongside the Query Store. It uses the query performance statistics gathered when a database was migrated with its original compatibility level and compares them to the metrics gathered after the compatibility level is moved. By analyzing the differences, QTA finds queries that are regressing.
+abstract: |
+ In this module, you will:
+ - Decide if QTA is the right solution for them.
+ - Use the Query Store to assess query performance.
+ - Understand how QTA works to find regressing queries.
+ - Tune queries after migration to maintain performance
+prerequisites: | 
+  - Experience of query tuning and performance
+  - Knowledge of database properties and options
+  - Understanding of query plans
+iconUrl: /learn/achievements/sqlserver/using-the-sql-server-query-tuning-assistant.svg
+levels:
+- beginner
+roles:
+- administrator
+products: 
+- sql-server
+units:
+- learn-sqlserver.use-sql-server-query-tuning-assistant.1-introduction
+- learn-sqlserver.use-sql-server-query-tuning-assistant.2-decide-qta-right
+- learn-sqlserver.use-sql-server-query-tuning-assistant.3-get-started-qta
+- learn-sqlserver.use-sql-server-query-tuning-assistant.4-tune-queries-qta
+- learn-sqlserver.use-sql-server-query-tuning-assistant.5-knowledge-check
+- learn-sqlserver.use-sql-server-query-tuning-assistant.6-module-summary
+badge: 
+  uid: learn-sqlserver.use-sql-server-query-tuning-assistant.badge

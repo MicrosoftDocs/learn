@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.6-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 08/01/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]

@@ -1,0 +1,43 @@
+### YamlMime:ModuleUnit
+uid: learn.connect-on-premises-network-with-expressroute.4-choose-expressroute
+metadata:
+  title: When to choose Azure ExpressRoute
+  description: When to choose Azure ExpressRoute
+  ms.date: 07/17/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+title: When to choose Azure ExpressRoute
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-choose-expressroute.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "When should you use Azure ExpressRoute instead of Azure site-to-site connectivity?"
+    choices:
+    - content: "For handling enterprise-class and mission-critical workloads."
+      isCorrect: true
+      explanation: "This answer is correct."
+    - content: "For connecting mobile users directly to your virtual network running in Azure."
+      isCorrect: false
+      explanation: "No. Use a point-to-site connection for this scenario."
+    - content: "For handling small-scale production workloads running on Azure virtual machines."
+      isCorrect: false
+      explanation: "No. Consider using a site-to-site connection for this scenario."
+    - content: "To save connection costs for occasionally connected users to the Microsoft cloud."
+      isCorrect: false
+      explanation: "No. ExpressRoute is intended for an always-on connection to the Microsoft cloud."
+  - content: "Which connection type is best to use for Office 365 users?"
+    choices:
+    - content: "Point-to-site over a VPN connection through an Azure network gateway."
+      isCorrect: false
+      explanation: "No. Use ExpressRoute to connect directly to Office 365 services."
+    - content: "Site-to-site over a VPN connection through an Azure network gateway."
+      isCorrect: false
+      explanation: "No. Use ExpressRoute to connect directly to Office 365 services."
+    - content: "An ExpressRoute connection."
+      isCorrect: true
+      explanation: "This is the correct answer."

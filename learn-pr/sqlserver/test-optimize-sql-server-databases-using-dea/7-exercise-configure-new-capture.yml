@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn-sqlserver.test-optimize-sql-server-databases-using-dea.7-exercise-configure-new-capture
+title: Exercise - Configure a new capture with DEA
+metadata:
+  title: Exercise - Configure a new capture with DEA
+  description: Exercise - Configure a new capture with DEA
+  ms.date: 01/31/2019
+  author: geoffallix
+  ms.author: v-gea
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
+  ROBOTS: NOINDEX
+labId: 46875
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-exercise-configure-new-capture.md)]

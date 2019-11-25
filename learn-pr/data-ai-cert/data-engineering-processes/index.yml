@@ -15,7 +15,6 @@ abstract: |
   - List the roles involved in modern data projects.
   - Outline data-engineering practices.
   - Explore the high-level process for designing a data-engineering project.
-ratingEnabled: true
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/data-engineering-processes-badge.svg
 levels:

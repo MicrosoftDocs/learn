@@ -5,10 +5,10 @@ metadata:
   title: Load data by using PolyBase
   description: Learn how to load data by using PolyBase.
   ms.date: 02/20/2019
-  author: barlan
-  ms.author: barlan
+  author: jasallen 
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 15
+durationInMinutes: 10
 content: |
   [!include[](includes/7-load-data-using-polybase.md)]

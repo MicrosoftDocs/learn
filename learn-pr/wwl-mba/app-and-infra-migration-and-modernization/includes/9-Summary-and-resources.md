@@ -10,7 +10,7 @@ Now that you have reviewed this module, you should be able to:
 ### Key takeaways
 
 :::row:::
-![Icon of key](../media/2_key.png)
+![Icon of key](../media/key-takeaway.png)
 :::column span="1":::
 
 1. Some of the common modernization triggers include the need to deliver applications and features faster, urgent capacity needs, or a software or hardware refresh.

@@ -20,7 +20,6 @@ abstract: |
     - Learn how to gain insights from data using modern business intelligence.
 prerequisites: None
 iconUrl: /learn/achievements/data-estate-migration-and-modernization.svg
-ratingEnabled: true
 levels:
 - beginner
 roles:

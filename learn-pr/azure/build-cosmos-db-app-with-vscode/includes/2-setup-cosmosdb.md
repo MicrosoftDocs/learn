@@ -14,8 +14,6 @@ In this unit you will install the Azure Cosmos DB extension for Visual Studio, a
 
 ## Create an Azure Cosmos DB account in Visual Studio Code
 
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 1. In Visual Studio Code, sign in to Azure by clicking **View** > **Command Palette** and typing **Azure: Sign In**. You must have the [Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account&azure-portal=true) extension installed to use Azure: Sign In.
 
     > [!IMPORTANT]
@@ -28,7 +26,7 @@ In this unit you will install the Azure Cosmos DB extension for Visual Studio, a
     > [!NOTE]
     > If you do not see the Concierge Subscription listed, ensure you logged into Azure in Visual Studio Code using the same account used to create the sandbox. Additionally, if you have filtered your Azure subscriptions in the Azure Account extension, verify the Concierge Subscription is checked in the `> Azure: Select Subscriptions` command.
 
-1. Click the __+__ button to start creating a Cosmos DB account. You will be asked to select the subscription if you have more than one.
+1. Click the __+__ button to start creating an Azure Cosmos DB account. You will be asked to select the subscription if you have more than one.
 
 1. In the text box at the top of the screen, enter a unique name for your Azure Cosmos DB account, and then press enter. The account name can contain only lowercase letters, numbers and the '-' character, and must be between 3 and 31 characters.
 

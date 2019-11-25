@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.secure-cloud-resources.5-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-summary.md)]
+  

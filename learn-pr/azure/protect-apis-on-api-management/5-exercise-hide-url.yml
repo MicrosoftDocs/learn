@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.protect-apis-on-api-management.5-exercise-hide-url
+title: Exercise - Mask URLs with a transformation policy
+metadata:
+  title: Exercise - Mask URLs with a transformation policy
+  description: In this module, you use a policy to hide the URL of the hosted URL to ensure that its location is not passed to users.
+  ms.date: 05/17/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+azureSandbox: true
+content: |
+  [!include[](includes/5-exercise-hide-url.md)]

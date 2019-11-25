@@ -12,4 +12,4 @@ In this module, you will:
  
 ## Prerequisites
  
-Some programming experience in either C# or Java is assumed.
+Some programming experience in either C# or JavaScript is assumed.

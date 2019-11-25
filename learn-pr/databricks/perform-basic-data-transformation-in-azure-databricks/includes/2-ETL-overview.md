@@ -9,7 +9,7 @@ ETL may seem simple: applying structure to data so that it’s in the desired fo
 - Handle corrupt records.
 - Automate workloads.
 
-![An illustration showing an overview of the ETL process.](../media/ETL-overview.png)
+![An illustration showing an overview of the ETL process.](../media/etl-overview.png)
 
 ## The Spark approach
 
@@ -26,7 +26,7 @@ The following principles make up the Spark approach to ETL and provide a unified
   - Spark's query engine connects to any number of data sources, such as S3, Azure Blob storage, Redshift, and Kafka.
   - This approach minimizes costs because there's no need to maintain a dedicated cluster, and you can easily update the compute cluster to the latest version of Spark.
 
-![An illustration showing the various capabilities of Apache Spark.](../media/Spark-approach.png)
+![An illustration showing the various capabilities of Apache Spark.](../media/spark-approach.png)
 
 ## ETL process
 

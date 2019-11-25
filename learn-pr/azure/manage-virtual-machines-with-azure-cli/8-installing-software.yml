@@ -1,13 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.manage-vms-with-azure-cli-data.8-installing-software
-title: Install software on your VM
+title: Exercise - Install software on your VM
 metadata:
-  title: Install software on your VM
+  title: Exercise - Install software on your VM
   description: Install software to run a web server on your Linux VM
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: cwatson-cat
+  ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

@@ -5,11 +5,10 @@ metadata:
   title: Exercise - Call the model's prediction endpoint over HTTP
   description: Exercise - Call the model's prediction endpoint over HTTP
   ms.date: 04/10/2019
-  author: shanamatthews
-  ms.author: shanama
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 interactive: bash
 azureSandbox: true
 durationInMinutes: 5

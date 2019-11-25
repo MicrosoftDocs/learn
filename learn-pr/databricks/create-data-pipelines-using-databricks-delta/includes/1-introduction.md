@@ -4,6 +4,8 @@ You need a solution that matches Data Lake in scalability but is also reliable a
 
 Databricks Delta can solve your problem. It's a unified data-management system that combines the best capabilities of Data Lake, data warehousing, and a streaming ingestion system.
 
+[!INCLUDE [azure-databricks-free-trial-note](../../../includes/azure-databricks-free-trial-note.md)]
+
 ## Learning objectives
 
 In this module, you will:

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-requirements-for-custom-computer-vision-api.investigate-service-authorization
+title: Custom Vision APIs
+metadata:
+  title: Custom Vision APIs
+  description: Custom Vision APIs
+  ms.date: 07/22/2019
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-custom-vision-api.md)]

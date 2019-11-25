@@ -1,8 +1,5 @@
 Suppose you are developing a financial management application for new business startups. You want to ensure that all your customers' data is secured, so you have decided to implement Azure Disk Encryption (ADE) across all OS and data disks on the servers that will host this application. As part of your compliance requirements, you also need to be responsible for your own encryption key management.
 
-<!-- Activate the sandbox -->
-[!include[](../../../includes/azure-sandbox-activate.md)]
-
 In this unit, you'll encrypt disks on an existing virtual machine, and manage the encryption keys using your own Azure Key Vault.
 
 ## Prepare the environment
