@@ -4,7 +4,7 @@ title: Exercise - Run a basic Azure Resource Manager template from Azure Cloud S
 metadata:
   title: Exercise - Run a basic Azure Resource Manager template from Azure Cloud Shell
   description: Run an Azure Resource Manager template from Azure Cloud Shell to provision infrastructure for a webapp with a database.
-  ms.date: 11/15/2019
+  ms.date: 11/25/2019
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial

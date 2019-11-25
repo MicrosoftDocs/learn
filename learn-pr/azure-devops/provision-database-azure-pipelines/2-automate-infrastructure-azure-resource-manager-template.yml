@@ -4,7 +4,7 @@ title: Automate infrastructure deployment by using Azure Resource Manager templa
 metadata:
   title: Automate infrastructure deployment by using Azure Resource Manager templates
   description: Learn how to provision webapp and database infrastructure by using Azure Resource Manager templates
-  ms.date: 11/15/2019
+  ms.date: 11/25/2019
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
