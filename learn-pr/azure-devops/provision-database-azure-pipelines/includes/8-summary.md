@@ -18,7 +18,7 @@ For learning purposes, in this module you provisioned a database for the website
 
 There was quite a bit already in place at the beginning of this module. If you want to go back and get more background on what was done, check out these links:
 
-For discussion on approvals and triggers in Azure Pipelines, see [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline/index?azure-portal=true).
+For discussion on approvals and triggers in Azure Pipelines, see [Create a multistage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline/index?azure-portal=true).
 
 To understand how to manage database schema changes in Azure Pipelines, see [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines/?azure-portal=true)
 

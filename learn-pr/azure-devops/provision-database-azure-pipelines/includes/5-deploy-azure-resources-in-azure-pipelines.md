@@ -422,7 +422,7 @@ Here, you add a variable group and variables to the pipeline.
 
 ### Create an environment for manual approval
 
-Here you create the manual approval for the `DBAVerificationApply` stage. You learned about manual approvals in [Create a multi-stage pipeline with Azure Pipelines](https://docs.microsoft.com/learn/modules/create-multi-stage-pipeline/index?azure-portal=true). Recall that you need to set up an environment and add an approver.
+Here you create the manual approval for the `DBAVerificationApply` stage. You learned about manual approvals in [Create a multistage pipeline with Azure Pipelines](https://docs.microsoft.com/learn/modules/create-multi-stage-pipeline/index?azure-portal=true). Recall that you need to set up an environment and add an approver.
 
 1. From Azure Pipelines, select **Environments**.
 1. Select **Create environment**.
