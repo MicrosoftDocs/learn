@@ -6,9 +6,11 @@ In this exercise, you'll provision a web server to meet the requirements.
 
 ### Provision a web server
 
-You'll use multiple tools together. Azure Resource Manager templates will enable you to create a template outlining the environment for your web server. Your Azure Resource Manager template can also help you define a state that you apply to your web server at the point of provisioning. You can apply your desired state by putting a DSC extension handler inside of your Azure Resource Manager template. The DSC handler helps you enforce a state that you define in a DSC configuration.
+You'll use a couple of tools together. Azure Resource Manager templates will enable you to create a template outlining the environment for your web server. Your Azure Resource Manager template can also help you define a state that you apply to your web server at the point of provisioning. You can apply your desired state by putting a DSC extension handler inside of your Azure Resource Manager template. The DSC handler helps you enforce a state that you define in a DSC configuration.
 
-In the following exercise, you'll use an Azure Resource Manager template to provision a virtual machine. The DSC extension handler that will be included in the template will enforce your state on the virtual machine.
+In the following exercise, you'll use an Azure Resource Manager template to provision a virtual machine. The DSC extension handler that will be included in the template will enforce your state on the virtual machine. You'll use an Azure storage account to host your DSC configuration file.
+
+### Create your state configuration file
 
 1. First, create your state configuration. You'll configure an IIS web server on your machine. Copy the following code to an empty file.
 
@@ -44,9 +46,62 @@ In the following exercise, you'll use an Azure Resource Manager template to prov
 
 1. Save the file as Webserver.ps1
 
-1. Compress your Webserver.ps1 file into a *.zip* folder named Webserver.
+1. Compress your Webserver.ps1 file into a *.zip* folder named Webserver in a folder of your choice, on your computer.
 
-1. Now you create an Azure Resource Manager template. Below is a skeleton template, which you can use as a baseline. Save it as *template.json*.
+### Create a storage account
+
+1. Sign into the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>).
+
+1. Select **All Services**, search for *Storage Accounts*, then select **Storage Accounts** in the list of results.
+
+   ![Search for Storage Accounts](../media/5-search-storage-account-portal.png)
+
+1. Select **Add** at the top of the **Storage Accounts** pane.
+
+1. The **Create storage account** form appears.
+
+   ![Create Storage Account](../media/5-create-storage-account.png)
+
+1. Give your storage account a name using the **Storage account name** field. For resource group, use <rgn>[sandbox resource group name]</rgn>. Leave the rest of the form fields at their default values.
+
+1. Select **Review + create**.
+
+1. Select **Create**.
+
+### Upload your configuration file
+
+1. Navigate to your storage account.  Select **Resource groups**, select your resource group, then select your storage account.
+
+1. Select **Containers** under **Blob service** on the left hand side, then select **+ Container**.
+
+1. Give your container a unique name.
+
+1. From the Public access level dropdown, select **Container (anonymous read access for containers and blobs)**.
+
+1. Select **OK**.
+
+    ![Add a container](../media/5-create-container.png)
+
+1. Select your container, select **Upload**, browse for your *Webserver.zip* file, then select **Upload** at the bottom of the form.
+
+    ![Upload the zip file](../media/5-upload-file-to-storage-account.png)
+
+1. Select the file, then copy the file's URL and paste it somewhere safe.
+
+    ![Copy the URL](../media/5-copy-file-url.png)
+
+### Create a template
+
+1. To create the template you'll use the Azure Cloud Shell. Open your Azure Cloud Shell and use this command to open the Code editor. 
+
+    ```bash
+    code .
+    ```
+    
+    ![Save template](../media/5-save-template-file.png)
+    
+1. Now you'll need to create an Azure Resource Manager template.  Below is a skeleton template, which you'll use as a baseline. Copy the code, and use <kbd>Ctrl</kbd>+<kbd>S</kbd> to save it.  When prompted, enter the filename *template.json*.
+
     ```json
     {
         "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
@@ -57,7 +112,9 @@ In the following exercise, you'll use an Azure Resource Manager template to prov
     }
     ```
 
-1. You use the parameters section to define which values you can input when you are deploying your template. In the parameters section, add parameters as shown below. Remove any comments.
+1. Now you'll need to flesh out the skeleton.  To start, you will need to update the parameters section. The parameters section defines which values should be provided every time your template is deployed. Replace the parameters section with the code below.  In this code fragment there are comments to help explain the purpose of some of the settings. Use <kbd>Ctrl</kbd>+<kbd>F</kbd> to search for "/*" and remove any comments, otherwise the template is not valid.
+
+    When copying and pasting, be careful not to remove the comma (,) at the end of the line: "parameters": {  }**,** in your *template.json* skeleton.
 
     ```json
     "parameters": {  
@@ -113,7 +170,7 @@ In the following exercise, you'll use an Azure Resource Manager template to prov
             "modulesUrl": {
                 "type": "string",
                 "metadata": {
-                    "description": "URL for the DSC configuration module. NOTE: Can be a Github url(raw) to the zip file"
+                    "description": "URL for the DSC configuration module."
                 }
             },
     /* The function to run in your DSC configuration */
@@ -134,7 +191,7 @@ In the following exercise, you'll use an Azure Resource Manager template to prov
     }
     ```
 
-1. The variables section allows you to define variables you can reuse in your template. Use variables for your template as shown below.
+1. The variables section allows you to define variables you can reuse in your template. Replace the variable section in your template with the code below.
 
     ```json
     "variables": {
@@ -153,8 +210,9 @@ In the following exercise, you'll use an Azure Resource Manager template to prov
     }
     ```
 
-1. The resources section holds all of the resources you want to provision. Because you will be provisioning a virtual machine, you will have to include a virtual network, a public IP address, a network interface, along with the DSC extension handler for your desired state configuration. You use individual resources to add all of those components. Add resources as shown below. Remember to remove any comments.
-
+1. The resources section holds all of the resources you want to provision. Because you will be provisioning a virtual machine, you will have to include a virtual network, a public IP address, a network interface, along with the DSC extension handler for your desired state configuration. You use individual resources to add all of those components. Replace the resources section with the code below. 
+You can use <kbd>Ctrl</kbd>+<kbd>F</kbd> to search for "/*" and remove any comments.
+   
     ```json
     "resources": [
         {   /* Your IP address resource*/
@@ -283,51 +341,47 @@ In the following exercise, you'll use an Azure Resource Manager template to prov
     ]
     ```
 
-1. Enter the following command in your Azure Cloud Shell. Be sure to include the "." when you enter the command. You'll get access to a browser-based editor with this command.
+1. Save your template file using <kbd>Ctrl</kbd>+<kbd>S</kbd>. If prompted, enter the name **template.json** and select **Save**.  
 
-    ```bash
-    code .
-    ```
+1. You can close the editor using <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
 
-    ![Save template](../media/5-save-template-file.png)
+### Validate your template
 
-1. Copy and paste the template code into the editor, then save it by selecting the three dots at the top right of the editor. Save the file as *template.json*.
-
-1. Validate and test your deployment before you attempt a real deployment. Run the below command to test whether your deployment would be successful.
+1. Validate and test your deployment before you attempt a real deployment. Run this command to test whether your deployment would be successful.
 
     ```bash
     az group deployment validate  --resource-group <rgn>[sandbox resource group name]</rgn>  --template-file template.json
     ```
 
-1. Follow the prompts. Use a strong username and password combination when you are asked for **adminUsername** and **adminPassword**.
+1. You'll be prompted to enter a **vmName**.  This is the name of the virtual machine you want to create.  Enter a memorable name here.
 
-1. When you're prompted for a **modulesUrl**, input the location of your configuration file. For this exercise, we've chosen to upload it to a GitHub repository. If you want to use GitHub, you need to go to GitHub.com and create a new account if you don't already have one.
+1. Use a strong username and password combination when you are asked for **adminUsername** and **adminPassword**. Use a username that has at least 1 uppercase letter, a symbol, and a number. Remember that the password you use must be between 8-123 characters long and must satisfy at least 3 of these password needs:
 
-1. If you want to use GitHub to host your configuration file, you'll need to create a new repo on GitHub.
+    1. Contains an uppercase character
+    1. Contains a lowercase character
+    1. Contains a numeric digit
+    1. Contains a special character
+    1. Control characters are not allowed
 
-    ![Create a new repo](../media/5-create-new-repo.png)
+1. When you're prompted for a **modulesUrl**, use the URL of your configuration *.zip* file you copied down earlier.
 
-1. You'll then upload the configuration's *.zip* file to your repo by selecting **Upload files**. Then select **Commit changes** once you've selected your file to upload.
+1. Press <kbd> ENTER</kbd>, Azure will try and validate your template.
 
-    ![Upload a file](../media/5-upload-file.png)
-
-1. You can get the URL of the file on GitHub. Select the file once you've uploaded it, then copy the location of the raw file. You right-click and copy the link address from the **View raw** link.
-
-    ![Raw file](../media/5-raw-file.png)
-
-1. Paste this address into the **modulesUrl** prompt. After this prompt, Azure will attempt to validate your template.
-
-1. If your deployment is validated, you'll see information about your deployment. Pay special attention to the error property, it should be null.
+1. If your deployment is validated, you'll see information about your deployment. Pay special attention to the error property, which can be found by scrolling back through the output text. It should be null.
 
     ![No error](../media/5-error-null.png)
 
-1. If there are no errors, your template has been validated and can be deployed. Run the below command to deploy the template.
+1. If there are no errors, your template has been validated and can be deployed.
+
+### Deploy your template
+
+1. Run the below command to deploy the template.
 
     ```bash
     az group deployment create --resource-group <rgn>[sandbox resource group name]</rgn> --template-file template.json
     ```
 
-1. Follow the prompts to complete your deployment. It may take a few minutes for deployment to finish.
+1. Follow the prompts to complete your deployment. If you are running on a sandbox this will take around ten minutes.  As long as you see the response "Running.." the deployment is still busy.
 
 1. Once everything has been set up, your virtual machine will be created and configured as an IIS webserver. List all of the resources in the resource group to confirm everything has been set up. Run the below command.
 
@@ -335,7 +389,7 @@ In the following exercise, you'll use an Azure Resource Manager template to prov
     az resource list --resource-group <rgn>[sandbox resource group name]</rgn>
     ```
 
-1. You'll see all of your resources listed. This means deployment was successful.
+1. You'll see all of your resources listed, which means your deployment was successful.
 
 1. Test if your IIS server is running. Run the following command in the shell.
 
