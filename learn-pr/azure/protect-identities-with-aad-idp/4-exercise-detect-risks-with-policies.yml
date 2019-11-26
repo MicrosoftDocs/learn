@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.protect-identities-with-aad-idp.4-exercise-detect-risks-with-policies
+metadata:
+  title: Exercise - Detect risks with Identity Protection policies
+  description: Exercise - Detect risks with Identity Protection policies
+  ms.date: 12/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Detect risks with Identity Protection policies
+durationInMinutes: 10
+azureSandbox: true
+content: |
+  [!include[](includes/4-exercise-detect-risks-with-policies.md)]

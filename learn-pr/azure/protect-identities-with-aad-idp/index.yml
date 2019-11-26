@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.protect-identities-with-aad-idp
+metadata:
+  title: Protect your identities with Azure AD Identity Protection
+  description: Use the advanced detection and remediation of identity-based threats to protect your Azure AD identities and applications from compromise
+  ms.date: 12/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Protect your identities with Azure AD Identity Protection
+summary: Use the advanced detection and remediation of identity-based threats to protect your Azure AD identities and applications from compromise
+abstract: | 
+  In this module, you will:
+  - Describe the features of Azure AD Identity Protection
+  - Configure and simulate a risk detection
+prerequisites: | 
+  - Basic familiarity with Azure AD
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- intermediate
+roles:
+- solution-architect
+- administrator
+products:
+- azure
+- azure-active-directory
+units:
+- learn.protect-identities-with-aad-idp.1-introduction
+- learn.protect-identities-with-aad-idp.2-azure-ad-idp-overview
+- learn.protect-identities-with-aad-idp.3-detect-risks-with-policies
+- learn.protect-identities-with-aad-idp.4-exercise-detect-risks-with-policies
+- learn.protect-identities-with-aad-idp.5-investigate-detected-risks
+- learn.protect-identities-with-aad-idp.6-remediate-detected-risks
+- learn.protect-identities-with-aad-idp.7-summary
+badge:
+  uid: learn.protect-identities-with-aad-idp.badge
