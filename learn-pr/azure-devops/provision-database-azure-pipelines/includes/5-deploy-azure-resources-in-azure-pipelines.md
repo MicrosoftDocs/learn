@@ -64,7 +64,7 @@ In the previous exercise, you forked and cloned the repo you'll need for this mo
       --value "$SQL_PASSWORD"
     ```
 
-1. To make sure our template is idempotent, you add a variable to Key Vault to specify if this run of the pipeline is a first run. You set it to `true` here and the template will set it to `false` after the first run. You check this variable when provisioning the database using a .bacpac file. You don't want to run that .bacpac more than once.
+1. To make sure our template is idempotent, you add a variable to Key Vault to specify if this run of the pipeline is the first run. You set it to `true` here and the template will set it to `false` after the first run. You check this variable when provisioning the database by using a *.bacpac* file. You don't want to run that *.bacpac* file more than one time.
 
     ```azurecli
     az keyvault secret set \
@@ -115,7 +115,7 @@ In the previous exercise, you forked and cloned the repo you'll need for this mo
 
     * **keyVaultName.value** - The name of your Key Vault, for example, *tailspin-vault-11272*.
     * **uniqueSuffix.value** - Any combination of four or five digits. This helps keep your resource names unique.
-    * **keyVault.id** - The Key Vault ID that you obtained earlier.
+    * **keyVault.id** - The Key Vault ID that you obtained earlier. There are two occurrences of this value. Be sure to set both.
 
     If you need a help settings these values, run the following commands in Cloud Shell:
 

@@ -30,12 +30,12 @@ We also recommend that you go through [Provision infrastructure in Azure Pipelin
 
 If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
 
-* An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
-* An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
-* A [GitHub](https://github.com/join?azure-portal=true) account
-* [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-* [.NET Core 2.1](https://www.microsoft.com/net/download?azure-portal=true)
-* [Git](https://git-scm.com/downloads?azure-portal=true)
+* An [Azure DevOps organization](https://dev.azure.com?azure-portal=true).
+* An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true).
+* A [GitHub](https://github.com/join?azure-portal=true) account.
+* [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
+* [.NET Core 2.1](https://www.microsoft.com/net/download?azure-portal=true).
+* [Git](https://git-scm.com/downloads?azure-portal=true).
 
 You can get started with Azure and Azure DevOps for free.
 

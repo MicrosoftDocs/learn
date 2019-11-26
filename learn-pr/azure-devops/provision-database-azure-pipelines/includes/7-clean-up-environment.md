@@ -43,7 +43,7 @@ At the end of each sprint, or work iteration, you and your team might hold a ret
 To complete the work item:
 
 1. From Azure DevOps, navigate to **Boards** and then select **Boards** from the menu.
-1. Move the **Provision a database in each environment** work item from the **Doing** to the **Done** column.
+1. Move the *Provision a database in each environment* work item from the **Doing** to the **Done** column.
 
     ![Azure Boards showing the card in the Done column](../media/8-boards.png)
 

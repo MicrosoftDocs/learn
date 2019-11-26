@@ -57,7 +57,7 @@ Recall that the team settled on these top issues for the current sprint.
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
 
-Here you move the last item, **Provision a database in each environment** to the **Doing** column and assign yourself to the work item. **Provision a database in each environment** relates to provisioning the _Space Game_ web application and database using an Azure Resource Manager template and managing changes to the database schema in Azure Pipelines.
+Here you move the last item, *Provision a database in each environment* to the **Doing** column and assign yourself to the work item. *Provision a database in each environment* relates to provisioning the _Space Game_ web application and database using an Azure Resource Manager template and managing changes to the database schema in Azure Pipelines.
 
 To set up the work item:
 
@@ -65,7 +65,7 @@ To set up the work item:
 
     ![Azure DevOps showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
 
-1. From the **Connect the web app to a database** work item, click the down arrow at the bottom of the card. Then assign the work item to yourself.
+1. From the *Provision a database in each environment* work item, click the down arrow at the bottom of the card. Then assign the work item to yourself.
 
     ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
 1. Move the work item from the **To Do** to the **Doing** column.
