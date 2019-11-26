@@ -64,7 +64,16 @@ In the previous exercise, you forked and cloned the repo you'll need for this mo
       --value "$SQL_PASSWORD"
     ```
 
-1. In VS Code, add a file in the root directory of the _Space Game_ project named *deploymentParameters.json*. Then add these contents to the file.
+1. To make sure our template is idempotent, you add a variable to Key Vault to specify if this run of the pipeline is a first run. You set it to `true` here and the template will set it to `false` after the first run. You check this variable when provisioning the database using a .bacpac file. You don't want to run that .bacpac more than once.
+
+    ```azurecli
+    az keyvault secret set \
+      --vault-name tailspin-vault-$UNIQUE_ID \
+      --name "firstRun" \
+      --value "true"
+    ```
+
+1. In VS Code, add a file in the root directory of the _Space Game_ solution named *deploymentParameters.json*. Then add these contents to the file.
 
     ```json
     {
@@ -87,12 +96,20 @@ In the previous exercise, you forked and cloned the repo you'll need for this mo
                   },
                   "secretName": "adminPassword"
                 }
+            },
+            "firstRun": {
+                "reference": {
+                    "keyVault": {
+                        "id": ""
+                    },
+                    "secretName": "firstRun"
+                }
             }
         }
     }
     ```
 
-    The Resource Manager template reads this file to discover the `deploymentPrefix` and `uniqueSuffix` we want to use for this specific deployment, the `adminPassword` for the SQL Server instance it will create, and the `keyVaultName`. The template will need the name of the Key Vault to add the database connection string to the Key Vault for us.
+    The Resource Manager template reads this file to discover the `deploymentPrefix` and `uniqueSuffix` we want to use for this specific deployment, the `adminPassword` for the SQL Server instance it will create, the `keyVaultName`, and the `firstRun` value. The template will need the name of the Key Vault to add the database connection string to the Key Vault for us.
 
 1. In *deploymentParameters.json*, set these values:
 
@@ -268,11 +285,11 @@ Here, you add a variable group and variables to the pipeline.
 
 1. Open the *template.json* file that comes with the project. This is the same file you used in the last exercise. Replace the code in that file with the following:
 
-    [!code-json[](code/5-template.json?highlight=31-33,68-72,87-134,158-265,281-282)]
+    [!code-json[](code/5-template.json?highlight=31-39,91-125,127-148,184-281,296)]
 
     Remember that you can create a template from scratch, download a starter template, or generate one from resources you already have. The [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines/?azure-portal=true) module had you create the necessary infrastructure manually in the Azure portal. This template file is the result of exporting the resource group that was created in that module. It has been modified to add the parts that the team discussed for pipeline deployment, and to remove the _Test_ and _Staging_ App Service deployments. For learning purposes, the default policies have also been removed.
 
-    Notice the creation of the database. Just as you did in the [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines/?azure-portal=true) module, the database is created and the data is inserted by using a *.bacpac* file and an import extension in the resources section in a resource called *Import*.
+    Notice the creation of the database. Just as you did in the [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines/?azure-portal=true) module, the database is created and the data is inserted by using a *.bacpac* file and an import extension in the resources section in a resource called *Import*. You don't want to import the database twice, so you use the `firstRun` parameter as a condition here.
 
     ```json
     {
@@ -297,7 +314,7 @@ Here, you add a variable group and variables to the pipeline.
             "name": "Import",
             "type": "extensions",
             "apiVersion": "2014-04-01",
-            "condition": "[empty(resourceId('Microsoft.Sql/servers/databases', concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName')), 'tailspindatabase'))]",
+            "condition": "[equals(parameters('firstRun'), 'true')]",
             "dependsOn": [
                 "[resourceId('Microsoft.Sql/servers/databases', concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName')), 'tailspindatabase')]"
             ],
@@ -315,9 +332,9 @@ Here, you add a variable group and variables to the pipeline.
 
     The `condition` part is important here. Recall that Azure Resource Manager templates are idempotent. This means that Resource Manager applies infrastructure changes only when the configuration defined in your template differs from the running environment. However, you can import a *.bacpac* file only when the database is empty. If you attempt to import a *.bacpac* file a second time, the operation fails.
 
-    To make the *Import* resource idempotent, here we use a condition. Resource Manager applies a resource only when its condition is true. The condition shown here returns true when the SQL Database has an empty unique identifier. This situation happens only when the database hasn't yet been created. If the SQL Database is present, the condition returns false and Resource Manager moves to the next resource.
+    To make the *Import* resource is idempotent, here we use a condition. Resource Manager applies a resource only when its condition is true. Recall we set the `firstRun` variable to `true` in the Key Vault. This will be read by the *deploymentParameters.json* file.
 
-    The next part is the creation of Key Vault secrets. Here, you add the database connection string to the Key Vault. You will use this secret to add the connection string to the App Service configuration in the pipeline after the web app is deployed. This is the reason you need the `keyVaultName` parameter.
+    The next part is the creation of Key Vault secrets. Here, you add the database connection string to the Key Vault. You will use this secret to add the connection string to the App Service configuration in the pipeline after the web app is deployed. You also set the `firstRun` variable to false since we have provisioned the database by now. This is the reason you need the `keyVaultName` parameter.
 
     ```json
     {
@@ -327,6 +344,17 @@ Here, you add a variable group and variables to the pipeline.
         "properties": {
             "contentType": "text/plain",
             "value": "[concat('Server=tcp:',reference(concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName'))).fullyQualifiedDomainName,',1433;Initial Catalog=tailspindatabase;Persist Security Info=False;User ID=',reference(concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName'))).administratorLogin,';Password=',parameters('adminPassword'),';MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;')]"
+        },
+        "dependsOn": [
+            "[resourceId('Microsoft.Sql/servers/databases', concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName')), 'tailspindatabase')]"
+        ]
+    },
+    {
+        "type": "Microsoft.KeyVault/vaults/secrets",
+        "name": "[concat(parameters('keyVaultName'),'/firstRun')]",
+        "apiVersion": "2015-06-01",
+        "properties": {
+            "value": "false"
         },
         "dependsOn": [
             "[resourceId('Microsoft.Sql/servers/databases', concat(parameters('servers_tailspin_space_game_sql_name'), variables('uniqueName')), 'tailspindatabase')]"

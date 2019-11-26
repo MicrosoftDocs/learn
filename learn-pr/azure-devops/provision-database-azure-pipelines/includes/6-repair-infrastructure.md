@@ -15,7 +15,7 @@ Here, you manually delete your App Service instance from the Azure portal to sim
     ![Selecting the App Service resource in the Azure portal](../media/6-portal-select-app-service.png)
 
     > [!NOTE]
-    > You can also select other resources if you'd like. Just be sure not to select your Key Vault. Your Resource Manager template requires data from Key Vault to provision your infrastructure.
+    > You can also select other resources if you'd like. Just be sure not to select your Key Vault or the database. Your Resource Manager template requires data from Key Vault to provision your infrastructure and your database has data in it that you don't want to lose.
 
 1. From the top of the page, select **Delete**. Then enter *Yes* in the text box and then select **Delete**.
 
@@ -39,10 +39,9 @@ Here, you manually trigger the pipeline to run so that Resource Manager can repa
 1. Go to the build and trace the build as it runs.
 1. After the build finishes, select the back button to return to the summary page.
 
-    ![Azure Pipelines showing the completed stages](../media/5-pipeline-stages-overview.png)
+    ![Azure Pipelines showing the completed stages](../media/6-pipeline-stages-overview.png)
 
-
-    You see that the deployment finished successfully.
+    You see that the deployment finished successfully. Notice that the *Apply database schema changes* stage was skipped. This is because the changes were applied in the last pipeline run and there are no database schema changes to be approved for this pipeline run.
 1. Refresh the web browser tab that shows the _Space Game_ website.
 
     You see that the _Space Game_ website is redeployed to App Service.
