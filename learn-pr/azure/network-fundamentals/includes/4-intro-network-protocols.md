@@ -1,16 +1,6 @@
 When considering the move to the cloud, it's essential to know the fundamentals of how your network works. The first step in understanding the composition of a network is understanding how network devices communicate with each other. This knowledge applies to your own organization's network as well as more extensive networks like the world wide web. The same principals apply to all networks.
 
-In this unit, we'll learn about network standards and network protocols that are essential for communication across our networks. We'll also see how this knowledge applies to the same concepts in Azure.
-
-## Network standards
-
-While network protocols provide a unified method for communication, network standards govern the hardware and software that uses them.
-
-Today, there are hundreds of thousands of hardware suppliers yet all of their technology, seamlessly integrates with your computer or network with minimal effort. Network standards provide the framework that enables this interoperability
-
-Network standards improve the interoperability of different network-enabled devices and provide backward compatibility between product revisions, and differing vendors. There are several official bodies that publish regulated standards, they're the International Telecommunication Union (ITU), the American National Standards Institute (ANSI), and the Institute of Electrical and Electronics Engineers (IEEE).
-
-It would be impossible to build networks and connect network-enabled devices reliably without network standards.
+In this unit, we'll learn about network protocols that are essential for communication across our networks.
 
 ## Network protocols
 
@@ -108,19 +98,44 @@ There are two network management protocols available: SNMP and ICMP.
 
 - **Internet Control Message Protocol** (ICMP) - The ICMP is one of the protocols included within the Internet protocol suite. It allows network-connected devices to send warning and error messages, along with operation information about the success or failure of a connection request, or if a service is unavailable. Unlike other network transport protocols like UDP and TCP, ICMP isn't used to send or receive data from devices on the network.
 
+### Ports
+
+A port is a logical construct that allows the routing of incoming messages to specific processes. There's a particular port for every type of Internet protocol suite. A port is an unsigned 16-bit number in the range 0 to 65535 and is also known as a port number. Ports are assigned by the sending TCP or UDP layer based on the communications protocol used.
+
+There are specific port numbers reserved for every service. The first 1024 ports, called the well-known port numbers, are reserved for the commonly used services. The high-numbered ports, called the ephemeral ports, are unreserved and used by dedicated applications.
+
+Every port links to a specific service or communications protocol. It means the target network device, say a server, can receive multiple requests on each port and service each of them without conflict.
+
+### The well-known port numbers
+
+Much in the same way, IP addresses are split into classes, so are ports. There are three ranges of ports: the well-known ports, the registered ports, and the dynamic/private ports. The Internet Assigned Numbers Authority (IANA) manages the allocation of port numbers, the regional assignment of IP addresses, DNS Root zones, and a central repository for protocol name and registry used in Internet protocols.
+
+The table below lists some of the more common well-known port numbers.
+
+| Port number | Assignment |
+| ----------- | ------------------------------------------------------------ |
+| 20 | File Transfer Protocol (FTP) Data Transfer |
+| 21 | File Transfer Protocol (FTP) Command Control |
+| 22 | Secure Shell (SSH) Secure Login |
+| 23 | Telnet remote login service, unencrypted text messages |
+| 25 | Simple Mail Transfer Protocol (SMTP) Email routing |
+| 53 | Domain Name System (DNS) service |
+| 80 | Hypertext Transfer Protocol (HTTP) used in the World Wide Web |
+| 110 | Post Office Protocol (POP3) |
+| 119 | Network News Transfer Protocol (NNTP) |
+| 123 | Network Time Protocol (NTP) |
+| 143 | Internet Message Access Protocol (IMAP) Management of digital mail |
+| 161 | Simple Network Management Protocol (SNMP) |
+| 194 | Internet Relay Chat (IRC) |
+| 443 | HTTP Secure (HTTPS) HTTP over TLS/SSL |
+
 ## The internet protocol suite (IPS)
 
 The Internet protocol suite (IPS) is a collection of communication protocols, also called a protocol stack. It's also sometimes referred to as the TCP/IP protocol suite since both TCP and IP are primary protocols used in the suite.
 
-The IPS defines how network devices and software handle data during transmission and receipt. It describes the type of data packet to be used, how the packets route between the sender and receiver, and the addressing method to use.
-
 The IPS is an abstract, layered networking reference model that describes the different layered protocols used to send and receive data on the Internet and similar networks.
 
-The IPS model is one of several similar networking models that varies between three and seven layers. The best-known model is the Open Systems Interconnection (OSI) networking reference model. In contrast, the IPS model has four layers compared to the OSI model's seven layers. We're not going to cover the OSI model here. However, a documentation link is available in our learn more section at the end of this module.
-
-Each layer of the OSI model is responsible for a specific function or behavior and contains protocols the describe these functions. Each layer also knows how to communicate with the layer above and below it.
-
-Here is the structure of the Internet protocol suite.
+The IPS model is one of several similar networking models that varies between three and seven layers. The best-known model is the Open Systems Interconnection (OSI) networking reference model. We're not going to cover the OSI model here. However, a documentation link is available in our learn more section at the end of this module.
 
 ![image shows the four layers of the internet protocol suite](../media/2-internet-protocol-suite-layers.png)
 
@@ -129,7 +144,7 @@ Here is the structure of the Internet protocol suite.
 - **Internet layer** - This layer is responsible for exchanging datagrams. A datagram contains the data from the transport layer and adds in the origin and recipient IP addresses. The protocols associated with this layer are IP, ICMP, and IPsec.
 - **Network access layer** - The bottom layer of this stack and is responsible for defining how the data is sent across the network. The protocols associated with this layer are ARP, MAC, Ethernet, DSL, and ISDN.
 
-## Monitoring your network in Azure
+## How to monitor networks in Azure
 
 Maintaining and managing the health of your network is the same across all networks irrespective of the location of the network. For example, our local organization's network uses the same network standards and protocols as an Azure-based network.
 

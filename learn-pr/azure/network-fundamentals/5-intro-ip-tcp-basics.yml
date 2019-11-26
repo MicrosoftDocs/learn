@@ -10,9 +10,9 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 17
+durationInMinutes: 13
 content: |
-  [!include[](includes/4-intro-ip-tcp-basics.md)]
+  [!include[](includes/5-intro-ip-tcp-basics.md)]
 quiz:
   title: "Check your knowledge"
   questions:

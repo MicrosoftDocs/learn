@@ -77,7 +77,6 @@ In an IPv4 network, for a packet of data to be routed to the correct network and
 
 A more common way of defining the subnet and the routing prefix is to use the Classless Inter-Domain Routing (CIDR) notation. CIDR applies to the IP address as the number of bits we want to allocate to our subnet. Using CIDR notation, at the end of the IP address, we would add a / and then the number of bits. For example, 198.51.100.0/24 is the same as using the dotted-decimal format subnet mask 255.255.255.0. It will offer an address range of 198.51.100.0 to 198.51.100.255.
 
-
 ![An diagram of a subnet](../media/4-subnet-diagram.png)
 
 Subnets allow multiple subnetworks to exist within one network. They can be used to enhance routing performance. Subnets can be arranged hierarchically to create routing trees.
@@ -148,37 +147,6 @@ The Domain Name System (DNS) is a decentralized lookup service that translates a
 A DNS server serves two purposes. The first is to maintain a cache of recently searched for a domain name, which improves performance and reduces network traffic. The second is to act as the start of authority (SOA) for all the domains under it. When a DNS server is looking to resolve a domain name that isn't held in its cache, it will start with the highest level, the dot, then work down the subdomains until it finds the DNS server acting as the SOA. Once found, it stores the IP address of the domain in its local cache.
 
 The DNS also holds specific records relating to the domain. These records include the Start of Authority (SOA), IP Addressing (A and AAAA), SMTP Email (MX), Name Servers (NS), and domain name alias (CNAME) records.
-
-## Ports
-
-A port is a logical construct that allows the routing of incoming messages to specific processes. There's a particular port for every type of Internet protocol suite. A port is an unsigned 16-bit number in the range 0 to 65535 and is also known as a port number. Ports are assigned by the sending TCP or UDP layer based on the communications protocol used.
-
-There are specific port numbers reserved for every service. The first 1024 ports, called the well-known port numbers, are reserved for the commonly used services. The high-numbered ports, called the ephemeral ports, are unreserved and used by dedicated applications.
-
-Every port links to a specific service or communications protocol. It means the target network device, say a server, can receive multiple requests on each port and service each of them without conflict.
-
-### The well-known port numbers
-
-Much in the same way, IP addresses are split into classes, so are ports. There are three ranges of ports: the well-known ports, the registered ports, and the dynamic/private ports. The Internet Assigned Numbers Authority (IANA) manages the allocation of port numbers, the regional assignment of IP addresses, DNS Root zones, and a central repository for protocol name and registry used in Internet protocols.
-
-The table below lists some of the more common well-known port numbers.
-
-| Port number | Assignment |
-| ----------- | ------------------------------------------------------------ |
-| 20 | File Transfer Protocol (FTP) Data Transfer |
-| 21 | File Transfer Protocol (FTP) Command Control |
-| 22 | Secure Shell (SSH) Secure Login |
-| 23 | Telnet remote login service, unencrypted text messages |
-| 25 | Simple Mail Transfer Protocol (SMTP) Email routing |
-| 53 | Domain Name System (DNS) service |
-| 80 | Hypertext Transfer Protocol (HTTP) used in the World Wide Web |
-| 110 | Post Office Protocol (POP3) |
-| 119 | Network News Transfer Protocol (NNTP) |
-| 123 | Network Time Protocol (NTP) |
-| 143 | Internet Message Access Protocol (IMAP) Management of digital mail |
-| 161 | Simple Network Management Protocol (SNMP) |
-| 194 | Internet Relay Chat (IRC) |
-| 443 | HTTP Secure (HTTPS) HTTP over TLS/SSL |
 
 ## What does Azure offer
 

@@ -1,18 +1,18 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.network-fundamentals.intro-network-standards-protocols
-title: Introduction to Network Standards and Protocols
+uid: learn.azure.network-fundamentals.intro-network-protocols
+title: Introduction to network protocols
 metadata:
-  title:  Introduction to Network Standards and Protocols
-  description: An introduction to network standards and protocols including network security and network management protocols.
+  title:  Introduction to network protocols
+  description: An introduction to network protocols including.
   ms.date: 25/10/2019
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 10
+durationInMinutes: 13
 content: |
-  [!include[](includes/2-intro-network-standards-protocols.md)]
+  [!include[](includes/4-intro-network-protocols.md)]
 quiz:
   title: "Check your knowledge"
   questions:

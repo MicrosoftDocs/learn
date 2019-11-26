@@ -1,6 +1,6 @@
 When building a network, we need to know about the different types of networks, their topologies, and their uses. We can apply this knowledge either to the design of our organization's local network or the design of our cloud-based network. All networks are built on the same principals.
 
-In this unit, you'll learn about the different types of networks, the devices that connect them, and the Ethernet protocol.
+In this unit, you'll learn about the different types of networks.
 
 ## What is a network?
 
@@ -80,46 +80,6 @@ Keep in mind that there's a subtle difference between a physical mesh network an
 ![A diagram of a star topology](../media/3-star-network.png)
 
 The star topology is the most commonly used network architecture. Each network device connects to a centralized hub or switch. Switches and hubs can be linked together to extend and build more extensive networks. This type of typology is, by far, the most robust and scalable.
-
-## Network Infrastructure Devices
-
-There are several devices with which a network can't operate. Depending on the network's size, we might use several of these devices to build the backbone of our network. These devices are:
-
-- Repeaters
-- Hubs
-- Bridges
-- Switches
-- Routers
-
-Nearly all of these devices depend on a Media Access Control (MAC) address to send and deliver data on the network.
-
-### What is a Media Access Control (MAC) address?
-
-The Media Access Control address or MAC address is a unique identifier assigned to every network-enabled device at the time of manufacture. It's sometimes referred to as the burned-in address, the Ethernet hardware address, or a physical address.
-
-![A screenshot showing a network device's address information](../media/3-mac-address.png)
-
-The MAC address has a standard composition of six hexadecimal numbers separated by a colon or dash, for example, AA-6A-BA-2B-68-C1. The first three numbers of the MAC address define the manufacturer's organizationally unique identifier (OUI). The remaining three numbers uniquely identify the device.
-
-### What is a repeater?
-
-A repeater is a two-port device that repeats network signals. We use repeaters where we have network devices that are some distance from each other. The repeater doesn't modify or interpret data packets before resending them and doesn't amplify the signal. Instead, it will regenerate the data packet at the original strength, bit by bit.
-
-### What is a bridge?
- 
-A bridge divides a network into network segments and can filter and forward data packets between these segments. Bridges use the network device's MAC address to decide the data package's destination. We'll typically use a bridge to improve network performance by reducing unnecessary network traffic on network segments.
-
-### What is a Hub?
-
-A hub also acts as a multiport repeater. We use hubs to connect more than one device and allow us to structure the layout of our network. For example, we can cascade hubs to create network branches or as an endpoint to create a star layout with multiple user type devices. A hub doesn't interpret or filter data packets and will send copies of each data packet to all attached devices.
-
-### What is a switch?
-
-A switch combines the functionality of a bridge and a hub. It segments networks and can interpret and filter packet data to send it directly to an attached network device. Switches use the network device's MAC address to decide the data package's destination. Switch operates in full-duplex mode, which means it can send and received data to and from network devices at the same time.
-
-### What is a router?
-
-Routers link networks with different ranged addresses together. They can interpret and filter data packets, sending them to the correct network. Routers use the network device's IP address information to route the data package to its destination. Most routers can now detect issues with data traffic flowing to any attached network and route or reroute it around the issue. A router is also called a gateway. When we configure network devices, we'll usually configure it with a default gateway IP address.
 
 ## Ethernet
 
