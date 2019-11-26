@@ -17,8 +17,8 @@ Monitor and report on security events in Azure AD
 
 ## Prerequisites
 
-- Basic familiarity with Azure AD
-- Basic familiarity with Azure Monitor
+- Familiarity with Azure AD
+- Familiarity with Azure Monitor
 
 ## Summary
 
@@ -27,6 +27,9 @@ Keep tabs on security events in your Azure AD resources by using built-in report
 ## Learning objectives
 
 1. *Add numbered Learning Objectives [(Learning objective guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-learning-objectives)*
+
+1. Create alerts for security events in Azure Monitor.
+1. View 
 
 ## Chunk your content into subtasks
 
@@ -83,6 +86,8 @@ Identify the subtasks of *Monitor and report on security events in Azure AD*
 
 Look at structuring the module based on the sections in the following doc. Consider creating a new tenant and going through the logging and monitoring configuration steps as hands-on activities. If we can generate some activity to populate queries and reports, great, but that may take extended time.
 
-https://docs.microsoft.com/azure/active-directory/reports-monitoring/
+- https://docs.microsoft.com/azure/active-directory/reports-monitoring/
 
-https://docs.microsoft.com/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics
+- https://docs.microsoft.com/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics
+
+- https://docs.microsoft.com/en-gb/azure/active-directory/reports-monitoring/howto-install-use-log-analytics-views
