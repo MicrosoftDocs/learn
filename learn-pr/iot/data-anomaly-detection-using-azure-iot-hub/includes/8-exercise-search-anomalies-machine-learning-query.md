@@ -1,4 +1,4 @@
-In this exercise, we're going to add a query to the Stream Analytics job, and then use Microsoft Power BI to visualize the output from the query. The query searches for spikes and dips in the vibration data, reporting anomalies. We must create the second route, after creating an instance of an Event Hubs namespace.
+In this exercise, we're going to add a query to the Stream Analytics job, and then use Microsoft Power BI to visualize the output from the query. The query searches for spikes and dips in the vibration data, reporting anomalies. We must create the second route, after first creating an instance of an Event Hubs namespace.
 
 ## Create an Event Hubs namespace
 
@@ -6,15 +6,15 @@ In this exercise, we're going to add a query to the Stream Analytics job, and th
 
     ![Screenshot showing the button to create Event Hubs](../media/vibration-create-event-hubs.png)
 
-1. For **Name**, enter "vibrationNamespace". Pricing tier can be any selection, as notice the **Subscription** entries are from the free sandbox resources.  **Throughput Units** can be set to **1**.
+1. For **Name**, enter "vibrationNamespace". Pricing tier can be the recommended selection, as notice the **Subscription** entries are from the free sandbox resources.  **Throughput Units** can be set to **1**.
 
     ![Screenshot showing the button to create Event Hubs](../media/vibration-create-namespace.png)
 
-1. Click **Create**, and wait for the resource to be available.
+1. Click **Create**, and wait for the resource to be deployed. This can take a few minutes.
 
 ### Create an Event Hubs instance
 
-1. In your Azure home page, search ***All resources** for the namespace you created in the previous section.
+1. In your Azure home page, search recent resources, or **All resources**, for the namespace you created in the previous section.
 
 1. Select the namespace, and click **+ Event Hub**. We need to create an instance of this namespace. Notice the **NAMESPACE CONTENTS** section has zero entries.
 
@@ -50,7 +50,7 @@ In this exercise, we're going to add a query to the Stream Analytics job, and th
     sensorID = "VSTel"
     ```
 
-1. Verify that your two message routes look like the following image.
+1. Click **Save**, and verify that your two message routes look like the following image.
 
     ![Screenshot showing the summary of the settings for the two message routes](../media/vibration-two-routes.png)
 
@@ -80,9 +80,11 @@ With this new route in place, now we need to update our Stream Analytics job.
 
 1. Authorize the connection. You might need to sign up for a free Microsoft account, if you don't have one already.
 
-1. Complete the **Power BI** entry. For **Output alias**, enter "vibrationBI". For **Group workspace**, search for **My workspace**.
+1. Complete the **Power BI** entry. For **Output alias**, enter "vibrationBI".
 
-1. For **Dataset name**, enter "vibrationDataset". For **Table name**, enter "vibrationTable". 
+1. For **Dataset name**, enter "vibrationDataset". For **Table name**, enter "vibrationTable".
+
+1. For **Group workspace**, search for **My workspace**.
 
 1. For **Authentication mode**, ensure **User token** is selected.
 
@@ -96,7 +98,7 @@ With this new route in place, now we need to update our Stream Analytics job.
 
 1. Select **Edit query**, to the right of the window.
 
-1. Copy and paste the following SQL query, before the existing short query.
+1. Copy and paste the following SQL query, _before_ the existing short query.
 
    ```sql
     WITH AnomalyDetectionStep AS
@@ -123,11 +125,11 @@ With this new route in place, now we need to update our Stream Analytics job.
     > This first section of this query takes the vibration data, and examines the previous 120 seconds worth. The `AnomalyDetection_SpikeAndDip` function will return a `Score` parameter, and an `IsAnomaly` parameter. The score is how certain the machine learning algorithm is that the given value is an anomaly, given as a percentage. If the score exceeds 95%, the `IsAnomaly` parameter has a value of 1, otherwise `IsAnomaly` has a value of 0. Notice the 120 and 95 parameters in the first section of the query.
     The second section of the query sends the time, vibration, and anomaly parameters to `vibrationBI`.
 
+1. Click **Save query**, and navigate back to the home page of the job.
+
 1. Carefully verify you've used the same names in the SQL query, as you've in the **Inputs** and **Outputs**.
 
     ![Screenshot showing the new SQL query, and the inputs and outputs to the query](../media/vibration-two-query.png)
-
-1. Save the query.
 
 1. If all looks good, start the job again.
 
@@ -153,19 +155,19 @@ In order for a human operator to make much sense of the output from this query, 
 
     ![Screenshot showing the options when adding a dashboard tile](../media/vibration-dashboard-add-tile.png)
 
-1. For the first card, select **Visualization Type** as **Gauge**, **Value** as **vibe**. Enter "Vibration" for the title (in the **Tile details** box).
+1. For the first card, select **Visualization Type** as **Gauge**, **Value** as **vibe**. Click **Next**, then enter "Vibration" for the title (in the **Tile details** box).
 
 1. Click **Apply**.
 
 1. Use the bottom-right corner icon on the tile to shrink it to the smallest allowable size.
 
-1. Repeat the process for a second tile. This time with **Clustered bar chart** as the **Visualization Type**, and **SpikeAndDipScore** as the **Value**. No need to add a title, click **Apply**.
+1. Repeat the process, with the same dataset and tile source, for a second tile. This time with **Clustered bar chart** as the **Visualization Type**, and **SpikeAndDipScore** as the **Value**. No need to add a title, click **Next**, then **Apply**.
 
 1. Again, shrink this tile to the smallest possible.
 
 1. Create a third tile. This time with **Card** as the **Visualization Type**, and **IsSpikeAndDipAnomaly** under **Fields**. Again, click **Apply**, and shrink the tile.
 
-1. Now create a fourth tile, this time a bit more complex. Select **Line chart** for the **Visualization Type**, and **time** for the **Axis**. Under **Values**, select **IsSpikeAndDipAnomaly**. For the time window, select the last 60 minutes. Enter "Anomalies over the hour" for the tile title. Click **Apply**.
+1. Now create a fourth tile, this time a bit more complex. Select **Line chart** for the **Visualization Type**, and **time** for the **Axis**. Under **Values**, again select **IsSpikeAndDipAnomaly**. For the time window, select the last 60 minutes. Enter "Anomalies over the hour" for the tile title. Click **Apply**.
 
 1. This time, expand the tile to a size three times larger than the smallest tiles, and arrange your dashboard similar to the following image:
 

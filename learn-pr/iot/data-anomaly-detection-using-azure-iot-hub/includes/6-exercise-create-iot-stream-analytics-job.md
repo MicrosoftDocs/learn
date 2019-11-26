@@ -119,7 +119,7 @@ Before creating the second route, let's verify that the logging route is working
         vibrationInput
     ```
 
-1. Click **Save query**.
+1. Click **Save query**, and return to your job.
 
     ![Screenshot showing the completed SQL logging query](../media/vibration-stream-query.png)
 
@@ -143,6 +143,8 @@ Now for the fun part. Does the telemetry your device app is pumping out work its
     > The Storage Explorer is currently in preview mode, so its exact mode of operation may change.
 
 1. You'll need to navigate down a number of folder style entries, that make up dates and times. You should eventually see a text screen of all the telemetry data.
+
+    ![Screenshot showing the storage explorer log of entries ](../media/vibration-storage-explorer.png)
 
 1. Navigate your way back to your job home page, and select **Stop**, to end the job for now.
 
