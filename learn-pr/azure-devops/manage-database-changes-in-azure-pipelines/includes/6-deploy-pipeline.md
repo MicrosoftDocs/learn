@@ -1,32 +1,34 @@
-At this point, the team's pipeline has four stages. The first stage produces the build artifact and the second stage deploys the _Space Game_ web application to App Service in the _dev_ environment. The third and fourth stages deploy the _Space Game_ web application to the _test_ and _staging_ environments. We have taken out the triggers and approvals from the previous module to concentrate on just this section of the pipeline.
+At this point, the team's pipeline has four stages. The first stage produces the build artifact. The second stage deploys the _Space Game_ web application to App Service in the _dev_ environment. The third and fourth stages deploy the _Space Game_ web application to the _test_ and _staging_ environments. We removed the triggers and approvals from the previous module to concentrate on just this section of the pipeline.
 
-Here, you follow along with Andy, Mara, and Tim as they modify the pipeline to add stages that will script the database changes for the DBA, and apply those changes after they are approved.
+Here you follow Andy, Mara, and Tim as they modify the pipeline to add stages. The stages will script the database changes for the DBA. The stages will then apply those changes after the DBA approves the changes.
 
 ## Create the Azure App Service environments
 
-In [Create a release management workflow with Azure Pipelines](/learn/modules/create-a-release-management-workflow?azure-portal=true), you created one App Service instance that corresponds to each of the _dev_, _test_, and _staging_ environments. There you worked through it step by step. Here, you use the Azure command-line interface (CLI) through Azure Cloud Shell to create them all in one step.
+In the [Create a release management workflow with Azure Pipelines](/learn/modules/create-a-release-management-workflow?azure-portal=true) module, you created one App Service instance for each of the _dev_, _test_, and _staging_ environments. There you worked through it step by step. Here you use the Azure CLI in Azure Cloud Shell to create all of the environments in one step.
 
 ### Bring up Cloud Shell through the Azure portal
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
-1. From the menu bar, select Cloud Shell. Make sure to select **Bash** from the drop-down menu at the upper left of the cloud shell.
+1. From the menu, select **Cloud Shell**. In the upper-left, in the drop-down menu, select **Bash**.
 
     ![Selecting Cloud Shell from the menu bar](../../shared/media/azure-portal-menu-cloud-shell.png)
 
     > [!NOTE]
-    > Cloud Shell requires an Azure storage resource to persist any files you create while working in Cloud Shell. On first launch, Cloud Shell prompts to create a resource group, storage account, and Azure Files share on your behalf. This is a one-time step and will be automatically attached for all future Cloud Shell sessions.
+    > To persist any files that you create in Cloud Shell, you must have an Azure Storage resource. When you first open Cloud Shell, you're prompted to create a resource group, storage account, and Azure Files share. This is a one-time step. The assets are automatically attached for all future Cloud Shell sessions.
 
 ### Select an Azure region
 
 To make the commands easier to run, start by selecting a default region. After you specify the default region, later commands use that region unless you specify a different region.
 
-1. Run `az configure` to set your default region. Replace **\<REGION>** with the name of the region you chose for your database.
+To set your default region
+
+* Run `az configure`. Replace **\<REGION>** with the name of the region that you chose for your database.
 
     ```azurecli
     az configure --defaults location=<REGION>
     ```
 
-    Here's an example that sets **westus2** as the default region.
+    This example sets **westus2** as the default region.
 
     ```azurecli
     az configure --defaults location=westus2
@@ -34,25 +36,25 @@ To make the commands easier to run, start by selecting a default region. After y
 
 ### Create the App Service instances
 
-Here, you create the App Service instances for the three stages you'll deploy to: _Dev_, _Test_, and _Staging_.
+Here you create the App Service instances for the three stages that you'll deploy to: _Dev_, _Test_, and _Staging_.
 
-To do so, you:
+To create the App Service instances, you:
 
 > [!div class="checklist"]
 > * Generate a random number that makes your web app's domain name unique.
 > * Create an App Service plan.
 > * Create the App Service instances, one for each of the _dev_, _test_, and _staging_ environments.
-> * Set an Application Configuration key/value pair to store the connection string to the database.
-> * Get the hostname for each of your environments.
+> * Set an application configuration key/value pair to store the connection string in the database.
+> * Get the host name for each of your environments.
 > * Verify that each environment is running and that the home page is accessible.
 
-1. From Cloud Shell, generate a random number that makes your web app's domain name unique
+1. In Cloud Shell, generate a random number that makes your web app's domain name unique:
 
     ```bash
     webappsuffix=$RANDOM
     ```
 
-1. Run the following `az appservice plan create` command to create an app service plan that's named **tailspin-space-game-asp**.
+1. Run the following `az appservice plan create` command to create an App Service plan that's named `tailspin-space-game-asp`.
 
     ```azurecli
     az appservice plan create \
@@ -64,7 +66,7 @@ To do so, you:
     The `--sku` argument specifies the **B1** plan, which runs on the **Basic** tier.
 
     > [!IMPORTANT]
-    > If the **B1** SKU is not available as part of your Azure subscription, [choose a different plan](https://azure.microsoft.com/pricing/details/app-service/linux/), such as **S1** (**Standard**).
+    > If the **B1** SKU is unavailable in your Azure subscription, [choose a different plan](https://azure.microsoft.com/pricing/details/app-service/linux/), such as **S1** (**Standard**).
 
 1. Run the following `az webapp create` commands to create the three App Service instances, one for each of the _dev_, _test_, and _staging_ environments.
 
@@ -85,7 +87,7 @@ To do so, you:
       --plan tailspin-space-game-asp
     ```
 
-1. Run the following `az webapp list` command to list the hostname and state of each App Service instance.
+1. Run the following `az webapp list` command to list the host name and state of each App Service instance.
 
     ```azurecli
     az webapp list \
@@ -94,7 +96,7 @@ To do so, you:
       --output table
     ```
 
-    Note the hostname for each running service. You'll need these hostnames to set the connection string to the database later when you verify your work. Here's an example:
+    Note the host name for each running service. You'll need these host names to set the connection string to the database later when you verify your work. Here's an example:
 
     ```output
     HostName                                                 State
