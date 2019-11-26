@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.control-access-to-azure-storage-with-sas.4-exercise-use-shared-access-signatures
+metadata:
+  title: Exercise - Use shared access signatures (SAS) to delegate access to Azure storage
+  description: Exercise - Use shared access signatures (SAS) to delegate access to Azure storage
+  ms.date: 12/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Use shared access signatures (SAS) to delegate access to Azure storage
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/4-exercise-use-shared-access-signatures.md)]

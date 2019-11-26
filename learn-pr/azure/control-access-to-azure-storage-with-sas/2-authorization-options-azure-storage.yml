@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.control-access-to-azure-storage-with-sas.2-authorization-options-azure-storage
+metadata:
+  title: Authorization options for Azure Storage
+  description: Authorization options for Azure Storage
+  ms.date: 12/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Authorization options for Azure Storage
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-authorization-options-azure-storage.md)]

@@ -72,21 +72,7 @@ Identify the subtasks of *Control access to Azure Storage with shared access sig
     1. Your organization has an internal system to share patient appointment information and notes. You can secure the access based on a users membership of an AD group. Which kind of authorization supports this scenario best, and why?
     1. Your public facing static website stores all its UI images in blob storage. The web site needs to display the graphics without any kind of authorization. Which is the best option?
 
-1. **How to use stored access policies**
-
-    - What are stored access policies, use them to group levels of access together
-    - Creating stored access policies with the portal, Azure CLI, or .NET code
-    - Can only be used with service SAS
-
-1. **Exercise - how to use stored access policies**
-
-    1. Create azure storage account.
-    1. Create a blob container.
-    1. Upload example medical images.
-    1. Create a stored access policy to be used by the app.
-    1. Clone the app - the app won't have external access - just uses Shared Key to view blob data.
-
-1. **How to use Shared Access Signatures (SAS)**
+1. **Use shared access signatures (SAS) to delegate access to Azure storage**
 
     - Two forms of SAS:
         - Ad hoc, all three kinds user, account, and service can be accessed with ad-hoc
@@ -96,12 +82,26 @@ Identify the subtasks of *Control access to Azure Storage with shared access sig
     - Create a Service SAS with a stored access policy in .NET
     - Best practices when using SAS
 
-1. **Exercise - how to use Shared Access Signatures**
+1. **Exercise - Use shared access signatures (SAS) to delegate access to Azure storage**
 
     1. Add code to build an ad-hoc SAS URI for the external access page.
     1. Add client-side code to call the secure access page.
     1. Test the image can be displayed.
     1. Test the access is lost after 1 minute.
+
+1. **Use stored access policies to delegate access to Azure storage**
+
+    - What are stored access policies, use them to group levels of access together
+    - Creating stored access policies with the portal, Azure CLI, or .NET code
+    - Can only be used with service SAS
+
+1. **Exercise - Use stored access policies to delegate access to Azure storage**
+
+    1. Create azure storage account.
+    1. Create a blob container.
+    1. Upload example medical images.
+    1. Create a stored access policy to be used by the app.
+    1. Clone the app - the app won't have external access - just uses Shared Key to view blob data.
 
 1. **Summary**
 

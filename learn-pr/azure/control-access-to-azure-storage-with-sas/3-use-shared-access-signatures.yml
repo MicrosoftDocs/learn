@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.control-access-to-azure-storage-with-sas.3-use-shared-access-signatures
+metadata:
+  title: Use shared access signatures (SAS) to delegate access to Azure storage
+  description: Use shared access signatures (SAS) to delegate access to Azure storage
+  ms.date: 12/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use shared access signatures (SAS) to delegate access to Azure storage
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-use-shared-access-signatures.md)]
