@@ -3,8 +3,8 @@ uid: learn.iot.data-anomaly-search-using-iot-hub.summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 12/01/2019
-  author: OlivierBloch
+  ms.date: 11/26/2019
+  author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

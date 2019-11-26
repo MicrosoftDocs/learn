@@ -3,8 +3,8 @@ uid: learn.iot.data-anomaly-search-using-iot-hub.exercise-write-code-device-tele
 metadata:
   title: Exercise - Write code for vibration telemetry
   description: Create a C# project for an IoT device. The app simulates vibration, and sends vibration telemetry.
-  ms.date: 12/01/2019
-  author: OlivierBloch
+  ms.date: 11/26/2019
+  author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
