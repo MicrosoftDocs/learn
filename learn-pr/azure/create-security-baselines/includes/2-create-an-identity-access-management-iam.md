@@ -37,7 +37,7 @@ Remember Multi-Factor Authentication feature for devices and browsers that are t
 1. On the left, select **Azure Active Directory** > **Users** > **All users**.
 1. Select **Multi-Factor Authentication**.
 1. Select **users**, then click **Manage users settings**.
-1. Ensure that **Restore multi-factoe authentication on all remembered devices** is **Selected**.
+1. Ensure that **Restore multi-factor authentication on all remembered devices** is **Selected**.
 
     ![Screenshot of the Azure portal showing the Multi-Factor Authentication option to Manage user settings](../media/2-block-remembering-mfa-on-trusted-devices.png)
 
