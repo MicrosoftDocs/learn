@@ -1,0 +1,38 @@
+### YamlMime:LearningPath
+uid: learn.architect-data-platform
+metadata:
+  title: Architect a data platform in Azure learning path
+  description: Learn how to architect a data platform in Azure and build solutions to store relational and NoSQL data.
+  brand: azure
+  ms.date: 10/22/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Architect a data platform in Azure
+summary: Learn how to architect a data platform in Azure and build solutions to store relational and NoSQL data.
+prerequisites: |
+  - Familiarity with relational databases
+  - Familiarity with NoSQL databases
+iconUrl: /learn/achievements/architect-data-platform.svg
+levels:
+- intermediate
+roles:
+- solution-architect
+products:
+- azure
+- azure-sql-database
+- azure-sql-data-warehouse
+- azure-cosmos-db
+modules:
+- learn.intro-to-data-in-azure
+- learn.provision-azure-sql-db
+- learn.azure-scale-azure-sql-dbs-elastic-pools
+- learn.develop-app-that-queries-azure-sql
+- learn.create-cosmos-db-for-scale
+- learn.distribute-data-globally-with-cosmos-db
+- learn.access-data-with-cosmos-db-and-sql-api
+- learn.data-ai.design-azure-sql-data-warehouse
+- learn.data-ai.import-data-into-asdw-with-polybase
+trophy:
+  uid: learn.architect-data-platform.trophy

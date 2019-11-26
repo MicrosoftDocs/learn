@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.protect-vm-settings-with-dsc.exercise-setup-dsc-configuration
-title: Exercise - Set up a DSC configuration and configure a desired state
+title: Exercise - Set up a DSC and configure a desired state
 metadata:
-  title: Exercise - Set up a DSC configuration and configure a desired state
-  description: Exercise - Set up a DSC configuration and configure a desired state
-  ms.date: 9/13/2019
+  title: Exercise - Set up a DSC and configure a desired state
+  description: Exercise - Set up a DSC and configure a desired state
+  ms.date: 09/13/2019
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial

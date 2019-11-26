@@ -40,9 +40,9 @@ Let's look at the decisions and steps you make to configure an Azure Database fo
 
 Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with. Navigate to the server resource for which you'd like to create a firewall rule.
 
-Then, you'll select the **Connection Security** option to open the connection security blade to the right.
+Then, you'll select the **Connection Security** option to open the connection security pane to the right.
 
-![Screenshot of the Azure portal showing the Connection security section of the PostgreSQL database resource blade](../media/6-db-security-settings.png)
+![Screenshot of the Azure portal showing the Connection security section of the PostgreSQL database resource pane](../media/6-db-security-settings.png)
 
 On this screen, you have several options. You can:
 

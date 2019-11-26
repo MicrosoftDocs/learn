@@ -38,7 +38,7 @@ In addition, it's helpful to add the `--verbose` flag to see progress while the 
 
 ## Create a Linux virtual machine
 
-Let's create a new Linux virtual machine. Execute the following command in Azure Cloud Shell to create a Debian Linux machine in the "West US" location. Change the location if that one isn't nearby.
+Let's create a new Linux virtual machine. Execute the following command in Azure Cloud Shell to create an Ubuntu VM in the "West US" location. Change the location if that one isn't nearby.
 
 ```azurecli
 az vm create \
@@ -53,7 +53,7 @@ az vm create \
 [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
 
-This command will create a new **Ubuntu** Linux virtual machine with the name `SampleVM`. Notice that the Azure CLI tool waits while the VM is being created. You can add the `--no-wait` option to tell the Azure CLI tool to return immediately and have Azure continue creating the VM in the background. This is useful if you're executing the command in a script. Later in the script, use the `azure vm wait --name [vm-name]` command to wait for the VM to finish being created.
+This command will create a new **Ubuntu** Linux virtual machine with the name `SampleVM`. Notice that the Azure CLI tool waits while the VM is being created. You can add the `--no-wait` option to tell the Azure CLI tool to return immediately and have Azure continue creating the VM in the background. This is useful if you're executing the command in a script.
 
 We are specifying the administrator account name through the `--admin-username` flag to be `azureuser`. If you omit this, the `az vm create` command will use your *current user name*. Since the rules for account names are different for each OS, it's safer to specify a specific name.
 

@@ -46,7 +46,7 @@ Here, you'll work from the copy of Visual Studio Code for the **Tailspin.SpaceGa
 
 Now that you've added the new property to the `Score` class, and verified the project builds successfully, you can update the package's version. You can then push your change to GitHub so that Azure Pipelines can build and publish the updated package.
 
-1. Open **azure-pipelines.yml** and change the `majorVersion` from `1` to `2` and save the file.
+1. Open *azure-pipelines.yml* and change the `majorVersion` from `1` to `2` and save the file.
 
     ```yml
     majorVersion: '2'

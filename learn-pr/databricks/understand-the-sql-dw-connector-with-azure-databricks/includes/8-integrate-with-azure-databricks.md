@@ -49,7 +49,7 @@ Both the Azure Databricks cluster and the SQL Data Warehouse instance access a c
 
 1. In the Azure portal, go to your deployed Azure Databricks workspace and select **Launch Workspace**.
 1. In the workspace, on the menu on the left side, select **Workspace**, select **Users**, and then select your user name (the entry with house icon).
-1. In the blade that appears, select the down arrow next to your name, and then select **Import**.
+1. In the pane that appears, select the down arrow next to your name, and then select **Import**.
 1. In the **Import Notebooks** dialog box, select **URL** and paste in this URL:
     ```
        https://github.com/MicrosoftDocs/mslearn-understanding-the-sql-dw-connector-with-azure-databricks/blob/master/DBC/02-Azure-SQL-DW.dbc?raw=true

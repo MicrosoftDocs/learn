@@ -12,7 +12,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. In the top left of the Azure portal, select **Create a resource**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
 1. In the selection panel that appears, select **Storage**.
 
@@ -67,6 +67,8 @@ The following screenshot shows the completed settings for the **Basics** tab. No
 
     > [!WARNING]
     > If this option is enabled, it will enforce some additional restrictions. Azure files service connections without encryption will fail, including scenarios using SMB 2.1 or 3.0 on Linux. Because Azure storage doesn’t support SSL for custom domain names, this option cannot be used with a custom domain name.
+
+1. Leave the **Large file shares** option set to _Disabled_. Large file shares provides support up to a 100TiB, however this type of storage account can't convert to a Geo-redundant storage offering and upgrades are permanent.
 
 1. Leave the **Blob Soft delete** option set to _Disabled_. Soft delete lets you recover your blob data in many cases where blobs or blob snapshots are deleted accidentally or overwritten.
 

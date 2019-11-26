@@ -15,7 +15,7 @@ The following sections demonstrate how to support each of these four actions in 
 
 ## Retrieve a product
 
-Replace the `// GET by ID action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following:
+Replace the `// GET by ID action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following code:
 
 ```csharp
 [HttpGet("{id}")]
@@ -35,7 +35,7 @@ public async Task<ActionResult<Product>> GetById(long id)
 The preceding action:
 
 * Responds only to the HTTP GET verb, as denoted by the `[HttpGet]` attribute.
-* Requires that the `id` value is included in the URL segment after `api/products/`. Remember, the `/api/products` pattern was defined by the controller-level `[Route]` attribute.
+* Requires that the `id` value is included in the URL segment after `products/`. Remember, the `/products` pattern was defined by the controller-level `[Route]` attribute.
 * Queries the database for a product matching the provided `id` parameter.
 
 Each `ActionResult` used in the preceding action is mapped to the corresponding HTTP status code in the following table.
@@ -47,7 +47,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 ## Add a product
 
-Replace the `// POST action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following:
+Replace the `// POST action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following code:
 
 ```csharp
 [HttpPost]
@@ -79,7 +79,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 ## Modify a product
 
-Replace the `// PUT action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following:
+Replace the `// PUT action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following code:
 
 ```csharp
 [HttpPut("{id}")]
@@ -100,8 +100,20 @@ public async Task<IActionResult> Update(long id, Product product)
 The preceding action:
 
 * Responds only to the HTTP PUT verb, as denoted by the `[HttpPut]` attribute.
-* Requires that the `id` value is included in the URL segment after `api/products/`.
-* Updates the `Name` and `Price` properties of the product.
+* Returns `IActionResult` because the `ActionResult` return type isn't known until runtime. The `BadRequest` and `NoContent` methods return `BadRequestResult` and `NoContentResult` types, respectively.
+* Requires that the `id` value is included in the URL segment after `products/`.
+* Updates the `Name` and `Price` properties of the product. The following code instructs EF Core to mark all of the `Product` entity's properties as modified:
+
+    ```csharp
+    _context.Entry(product).State = EntityState.Modified;
+    ```
+
+    It's a more maintainable alternative to individual property assignments that replaces the following hypothetical code:
+
+    ```csharp
+    product.Name = productIn.Name;
+    product.Price = productIn.Price;
+    ```
 
 > [!NOTE]
 > Because the controller is annotated with the `[ApiController]` attribute, it's implied that the `product` parameter will be found in the request body.
@@ -116,7 +128,7 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 ## Remove a product
 
-Replace the `// DELETE action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following:
+Replace the `// DELETE action` comment in *:::no-loc text="Controllers/ProductsController.cs":::* with the following code:
 
 ```csharp
 [HttpDelete("{id}")]
@@ -151,13 +163,16 @@ Each `ActionResult` used in the preceding action is mapped to the corresponding 
 
 ## Build and run
 
-Run the following command:
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
 
-```dotnetcli
-dotnet run > ContosoPets.Api.log &
-```
+1. Start the web API by running the following command:
 
-The web API is running and is ready for testing via `curl`.
+    ```dotnetcli
+    dotnet ./bin/Debug/netcoreapp3.0/ContosoPets.Api.dll \
+        > ContosoPets.Api.log &
+    ```
 
-> [!IMPORTANT]
-> Don't forget to check *:::no-loc text="ContosoPets.Api.log":::* for troubleshooting information, if required.
+    The web API is running and is ready for testing via `curl`.
+
+    > [!IMPORTANT]
+    > Don't forget to check *:::no-loc text="ContosoPets.Api.log":::* for troubleshooting information, if required.

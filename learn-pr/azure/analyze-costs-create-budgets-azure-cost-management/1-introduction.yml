@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.analyze-costs-create-budgets-azure-cost-management.introduction
+title: Introduction
+
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 11/20/2019
+  author: bandersmsft
+  ms.author: banders
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

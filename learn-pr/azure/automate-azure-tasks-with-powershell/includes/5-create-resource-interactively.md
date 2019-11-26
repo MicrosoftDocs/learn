@@ -1,6 +1,6 @@
 PowerShell lets you write commands and execute them immediately. This is known as **interactive mode**.
 
-Recall that the overall goal in the Customer Relationship Management (CRM) example is to create three test environments containing VMs. You will use resource groups to ensure the VMs are organized into separate environments: one for unit testing, one for integration testing, and one for acceptance testing. You only need to create the resource groups once, which means using the interactive mode of PowerShell is a good choice.
+Recall that the overall goal in the Customer Relationship Management (CRM) example is to create three test environments containing Virtual Machines. You will use resource groups to ensure the VMs are organized into separate environments: one for unit testing, one for integration testing, and one for acceptance testing. You only need to create the resource groups once, which means using the interactive mode of PowerShell is a good choice.
 
 When you type a command into PowerShell, it matches it to a _cmdlet_ which then performs the requested action. We're going to look at some of the common commands you can use, and then look at installing the Azure support for PowerShell.
 
@@ -20,7 +20,7 @@ Get-Help Get-ChildItem -detailed
 
 ## What is a PowerShell module?
 
-Cmdlets are shipped in _modules_. A PowerShell Module is a DLL that includes the code to proces each available cmdlet. You load cmdlets into PowerShell by loading the module they are contained in. You can get a list of loaded modules using the `Get-Module` command:
+Cmdlets are shipped in _modules_. A PowerShell Module is a DLL that includes the code to process each available cmdlet. You load cmdlets into PowerShell by loading the module they are contained in. You can get a list of loaded modules using the `Get-Module` command:
 
 ```powershell
 Get-Module
@@ -265,7 +265,7 @@ Get-AzResource | ft
 You can also filter it to specific resource groups to only list resources associated with that group:
 
 ```powershell
-Get-AzResource -ResourceGroup ExerciseResources
+Get-AzResource -ResourceGroupName ExerciseResources
 ```
 
 ### Creating an Azure Virtual Machine

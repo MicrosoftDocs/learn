@@ -40,14 +40,15 @@ Here you'll create a team for the project.
 
 ### Add team members
 
-Here you'll add members to the **Space Game - web Team** team.
+Now's a good time to add members to your team. Although not required, if you'd like to add a coworker to your Azure DevOps organization, here's how:
 
 1. Under **Members**, select **+ Add**.
-1. Enter "andy@tailspin.com" and select **Save changes**. In a few moments, Andy's name appears.
-1. Do the same for "amita@tailspin.com", "mara@tailspin.com", and "tim@tailspin.com".
+1. Enter the email address of the user you'd like to add. Then select **Save changes**.
+1. Repeat the process for any other members you'd like to add.
 
-> [!TIP]
-> For learning purposes, you added fictitious team members here. In practice, you might manage your team through an identity and access management service such as Azure Active Directory and set the appropriate permission levels for each team member. We'll point you to more resources at the end of this module.
+Mara adds entries for herself and her team members: "andy@tailspintoys.com", "amita@tailspintoys.com", "mara@tailspintoys.com", and "tim@tailspintoys.com".
+
+In practice, you might manage your team through an identity and access management service such as Azure Active Directory and set the appropriate permission levels for each team member. We'll point you to more resources at the end of this module.
 
 ### Create the board
 
@@ -81,18 +82,9 @@ Although Mara and her team identified a number of issues, here you'll add the th
 
     ![Azure Boards showing the initial three tasks](../../shared/media/build-initial-tasks.png)
 
-
 ### Define a sprint
 
 **Mara**: This is looking great. Now let's define a sprint.
-
-**Tim**: What's a sprint?
-
-**Mara**: Good question. A sprint is the amount of time we have to complete our tasks. Sprints help keep us focused. At the end, we can have a short retrospective meeting to share what we've accomplished. After that, we can plan the next one.
-
-Everyone looks nervous.
-
-**Mara**: We're still learning. A sprint is typically two to four weeks long. Let's just say two weeks and see how that goes. These are mostly tasks Andy and I can tackle. We'll share our progress as we go. Then we can find ways to include everybody.
 
 When you create an Azure Boards project, you get an initial sprint called **Sprint 1**. All you need to do is assign dates to the sprint and add tasks. Here's how to follow along with the team:
 

@@ -339,6 +339,211 @@
       "source_path": "learn-pr/azure/authenticate-browser-based-apps-with-azure-app-services/9-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-mobile-app-service/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/app-center/intro-to-app-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-mobile-app-service/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/app-center/intro-to-app-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/modules/intro-to-mobile-app-service/2-what-are-mobile-apps.md",
+      "redirect_url": "https://docs.microsoft.com/learn/app-center/intro-to-app-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-mobile-app-service/3-how-mobile-apps-work.md",
+      "redirect_url": "https://docs.microsoft.com/learn/app-center/intro-to-app-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-mobile-app-service/4-when-to-use-mobile-apps.md",
+      "redirect_url": "https://docs.microsoft.com/learn/app-center/intro-to-app-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-mobile-app-service/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/app-center/intro-to-app-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-mobile-app-service/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/app-center/intro-to-app-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/2-intelligent-bot-demo.md",
+      "redirect_url": "https://docs.microsoft.com/learn/microsoft-approach-to-ai/3-intelligent-bot-demo",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/3-pre-trained-cognitive-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/microsoft-approach-to-ai/4-pre-trained-cognitive-services",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/4-cognitive-search.md",
+      "redirect_url": "https://docs.microsoft.com/learn/microsoft-approach-to-ai/5-cognitive-search",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/5-conversational-ai.md",
+      "redirect_url": "https://docs.microsoft.com/learn/microsoft-approach-to-ai/6-conversational-ai",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/6-saas-ai-and-embedded-ai.md",
+      "redirect_url": "https://docs.microsoft.com/learn/microsoft-approach-to-ai/7-saas-ai-and-embedded-ai",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/microsoft-approach-to-ai/8-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/8-summary-and-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/microsoft-approach-to-ai/9-summary-and-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/3-motivations.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/3-define-strategy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/4-strategy.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/3-define-strategy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/5-plan.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/4-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/6-ready.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/5-ready",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/7-adopt.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/6-adopt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/8-operate.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/7-govern-and-manage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/8-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/microsoft-cloud-adoption-framework-for-azure/10-summary-and-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/9-summary-and-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/cloud-operating-model/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/cloud-operating-model/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/cloud-operating-model/2-Cloud-Operating-Model-Overview.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/cloud-operating-model/3-modernization-triggers.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/cloud-operating-model/4-business-strategy.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/cloud-operating-model/5-people-strategy.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/cloud-operating-model/6-technology-strategy.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/cloud-operating-model/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/cloud-operating-model/8-summary-and-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/intro-azure-areas-and-solutions/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/intro-azure-areas-and-solutions/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/intro-azure-areas-and-solutions/2-enabling-digital-transformation-with-azure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/intro-azure-areas-and-solutions/3-the-unique-value-of-azure.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/intro-azure-areas-and-solutions/4-azure-solutions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/intro-azure-areas-and-solutions/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/intro-azure-areas-and-solutions/6-summary-and-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/welcome-to-azure-generalist/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/welcome-to-azure-generalist/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-mba/welcome-to-azure-generalist/2-executive-welcome.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/introduction-to-azure-solutions/",
+      "redirect_document_id": false
     }
   ]
 }

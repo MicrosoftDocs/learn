@@ -65,7 +65,9 @@ Congratulations. You've completed the final module in the _Build applications wi
 
 The focus of this learning path is on building applications and receiving build artifacts that you can hand off to your QA or operations teams.
 
-You can automate the handoff process by deploying build artifacts to running infrastructure automatically when the build finishes successfully. Check back soon with Microsoft Learn. We're working on additional learning paths that cover deployment, automation, and monitoring topics, all by using Azure DevOps.
+## Continue the journey
+
+You and the team have made a lot of progress, but the big release is coming up. How will the team deploy their build artifacts to development, test, and staging environments so they can run further test and verify their work? If you want to work along with them and learn how configure release pipelines that continuously build, test, and deploy your applications, go to [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops?azure-portal=true).
 
 For more self-paced, hands-on learning around Azure DevOps, also check out [Azure DevOps Labs](https://www.azuredevopslabs.com?azure-portal=true).
 
@@ -88,6 +90,6 @@ If you're interested in creating your own VM images for use with Azure Pipelines
 
 ### Practice running VMs on Azure
 
-For more hands-on practice working with virtual machines on Azure, check out [Core Cloud Services - Introduction to Azure](/learn/modules/welcome-to-azure?azure-portal=true) from the [Azure fundamentals](/learn/paths/azure-fundamentals?azure-portal=true) learning path.
+For more hands-on practice working with virtual machines on Azure, check out the [Administer infrastructure resources in Azure](/learn/paths/administer-infrastructure-resources-in-azure/?azure-portal=true) learning path.
 
 We also mentioned how you can use Azure Resource Manager templates to automate the process of creating build agents. To learn more about Resource Manager templates, see [Build Azure Resource Manager templates](/learn/modules/build-azure-vm-templates?azure-portal=true).

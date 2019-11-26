@@ -14,9 +14,25 @@ In this module, you will:
 
 ## Prerequisites
 
-The prerequisites are the same as those in the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true) module.
+The modules in this learning path form a progression.
 
-Make sure that your _Space Game_ project is loaded in Visual Studio Code and available on GitHub.
+To follow the progression from the beginning, be sure to first complete the [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true) learning path.
+
+We also recommend you start at the beginning of this learning path, [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true).
+
+If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
+
+* An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
+* A [GitHub](https://github.com/join?azure-portal=true) account
+* [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+* [.NET Core 2.1](https://www.microsoft.com/net/download?azure-portal=true)
+* [Git](https://git-scm.com/downloads?azure-portal=true)
+
+You can get started with Azure DevOps for free.
+
+This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
+
+[!include[](../../shared/includes/project-details-note.md)]
 
 ## Meet the team
 
