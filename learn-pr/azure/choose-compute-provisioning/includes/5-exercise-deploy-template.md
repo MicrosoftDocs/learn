@@ -46,7 +46,7 @@ In the following exercise, you'll use an Azure Resource Manager template to prov
 
 1. Save the file as Webserver.ps1
 
-1. Compress your Webserver.ps1 file into a *.zip* folder named Webserver.
+1. Compress your Webserver.ps1 file into a *.zip* folder named Webserver in a folder of your choice, on your computer.
 
 ### Create a storage account
 
@@ -170,7 +170,7 @@ In the following exercise, you'll use an Azure Resource Manager template to prov
             "modulesUrl": {
                 "type": "string",
                 "metadata": {
-                    "description": "URL for the DSC configuration module. NOTE: Can be a Github url(raw) to the zip file"
+                    "description": "URL for the DSC configuration module."
                 }
             },
     /* The function to run in your DSC configuration */
