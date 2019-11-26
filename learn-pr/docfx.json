@@ -189,6 +189,19 @@
                 "dest": "modules"
             },
             {
+                "src": "wwl",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "files": [
                     "**/*.md",
                     "**/*.yml"
@@ -414,6 +427,12 @@
                     "sv-se"
                 ],
                 "wwl-mba/**/*.yml": [
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw"
+                ],
+                "wwl/**/*.yml": [
                     "ja-jp",
                     "ko-kr",
                     "zh-cn",
