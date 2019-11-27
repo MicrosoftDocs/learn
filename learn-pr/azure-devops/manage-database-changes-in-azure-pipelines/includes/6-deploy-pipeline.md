@@ -28,7 +28,7 @@ To set your default region:
     az configure --defaults location=<REGION>
     ```
 
-    This example sets **westus2** as the default region.
+    This example sets **westus2** as the default region:
 
     ```azurecli
     az configure --defaults location=westus2
@@ -229,7 +229,7 @@ Here you add the Azure Pipelines stage that checks for SQL Database schema chang
 
     [!code-yml[](code/azure-pipelines1.yml?highlight=65-161,165)]
 
-    This pipeline adds a new build job for the *Tailspin.SpaceGame.Database* project. The project will create a *.dacpac* file that contains information about the database schema. That *.dacpac* file will be copied to a staging directory in the pipeline. Then the file will be published as an artifact called **dropDacpac**.
+    This pipeline adds a new build job for the *Tailspin.SpaceGame.Database* project. The project will create a *dacpac* file that contains information about the database schema. That *dacpac* file will be copied to a staging directory in the pipeline. Then the file will be published as an artifact called **dropDacpac**.
 
     ```yml
     - task: VSBuild@1
@@ -254,7 +254,7 @@ Here you add the Azure Pipelines stage that checks for SQL Database schema chang
 
     The new stages are `DBAVerificationScript` and `DBAVerificationApply`.
 
-    The `DBAVerificationScript` stage will read the *.dacpac* file and create a change script for the database. Then you use a PowerShell script to write out that change script. By using the script output, the database administrator can approve the changes before the changes are applied to the database.
+    The `DBAVerificationScript` stage will read the *dacpac* file and create a change script for the database. Then you use a PowerShell script to write out that change script. By using the script output, the database administrator can approve the changes before the changes are applied to the database.
 
     ```yml
     - task: SqlAzureDacpacDeployment@1

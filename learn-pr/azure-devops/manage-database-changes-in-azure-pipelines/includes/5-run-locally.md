@@ -28,7 +28,7 @@ To fetch and check out the `database` branch from GitHub:
 
 If you're interested specifically in SQL Server, you can check out the database project. Find the project, *Tailspin.SpaceGame.Database.sqlproj*, in the *Tailspin.SpaceGame.Database* directory. We discussed this SQL Server Data Tools project earlier. The *Tables* directory contains *.sql* files that define the four SQL tables that you worked with in the previous part.
 
-> [NOTE]
+> [!NOTE]
 > You won't need to build the database project locally. But keep in mind that this projects builds only on Windows.
 
 To see how the _Space Game_ web app runs SQL queries against the database, open the *RemoteDBRepository.cs* file in the *Tailspin.SpaceGame.Web* directory.

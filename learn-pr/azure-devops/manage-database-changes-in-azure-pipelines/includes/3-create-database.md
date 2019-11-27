@@ -21,7 +21,7 @@ Azure SQL Database can create a populated SQL database by using a file called a 
 
 Mara gives the team a *bacpac* file. They'll use the file to create the populated database. Then they'll test the changes to the application locally by using the SQL database that they created.
 
-Here, follow along with Andy, Mara, and Tim as they create the database.
+In the next section, follow along with Andy, Mara, and Tim as they create the database.
 
 > [!NOTE]
 > In this section, you bring up Azure SQL Database. You verify that it contains sample data through the Azure portal because the portal is a great way to explore Azure services. In a future learning path, you'll learn how to automate the process.

@@ -18,7 +18,7 @@ Here the team discusses how to add a database as the data storage solution for t
 
 **Andy:** Good morning. We've all seen how Azure Pipelines has accelerated our release process and improved the quality of what we do. Because we've made so much progress, we're ready to connect the website to a real database. I think this integration can happen as early as the _Dev_ stage. By connecting the website to the database early in the pipeline, we can track changes and measure performance all the way through the pipeline. Ultimately, we want the leaderboard to pull its data from the database. Here's what the leaderboard looks like now.
 
-Andy shows the _Space Game_ site running on Azure App Service.
+Andy shows the _Space Game_ site that's running on Azure App Service.
 
 ![The Space Game leaderboard](../../assess-your-development-process/media/2-space-game-leaderboard.png)
 
