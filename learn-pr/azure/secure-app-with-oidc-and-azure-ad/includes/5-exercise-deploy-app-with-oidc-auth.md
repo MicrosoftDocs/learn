@@ -59,6 +59,7 @@ In this exercise, you'll configure an application to authenticate users against 
     ```azurecli
     az webapp up \
         --resource-group <rgn>[Sandbox resource group]</rgn> \
+        --location centralus
         --sku F1 \
         --name educationapp-$RANDOM
     ```
