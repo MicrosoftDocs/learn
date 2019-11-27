@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.introduction-to-git.5-exercise-make-and-track-changes
+title: Exercise - Make and track changes
+metadata:
+  title: Exercise - Make and track changes
+  description: Make changes in your working tree and track them with Git
+  ms.date: 06/24/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-git
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+azureSandbox: true
+interactive: bash
+content: |
+  [!include[](includes/5-exercise-make-and-track-changes.md)]

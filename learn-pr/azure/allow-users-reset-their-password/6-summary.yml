@@ -3,7 +3,7 @@ uid: learn.azure.allow-users-to-reset-their-password.summary
 title: Summary
 metadata:
   title: Summary
-  description: In this unit, you'll review what you have learned about self-service password reset in Azure Active Directory.
+  description: In this unit, you'll review what you've learned about self-service password reset in Azure Active Directory.
   ms.date: 11/18/2019
   author: cwatson-cat
   ms.author: cwatson
