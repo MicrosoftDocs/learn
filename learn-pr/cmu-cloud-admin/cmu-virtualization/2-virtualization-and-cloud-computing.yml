@@ -28,7 +28,7 @@ quiz:
         isCorrect: false
         explanation: "Incorrect. Increased server utilization means you need fewer servers to handle a given workload, and fewer servers means less power consumption."
       - content: "Improved memory efficiency by sharing one operating system among multiple VMs"
-        isCorret: true
+        isCorrect: true
         explanation: "Correct! Every VM runs its own operating system, and VMs cannot share an operating system any more than two physical computers can share one copy of an operating system."
       - content: "Server consolidation"
         isCorrect: false
