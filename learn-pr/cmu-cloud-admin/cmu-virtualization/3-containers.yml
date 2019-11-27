@@ -15,38 +15,46 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-
-    - content: "Which of the following mechanisms can be used to help manage users' access to cloud resources with identities already in place for on-premises resources?
-
-        I. Federation
-        II. Synchronization
-        III. Guest accounts"
-
-      choices:
-      - content: "II only"
-        isCorrect: false
-        explanation: "Incorrect. Synchronization is one solution, but not the only one."
-      - content: "I and II"
-        isCorrect: false
-        explanation: "Incorrect. Federation and synchronization are two solutions, but not the only ones."
-      - content: "I and III"
-        isCorrect: false
-        explanation: "Incorrect. Federation and guest accounts are two solutions, but not the only ones."
-      - content: "I, II, and III"
-        isCorrect: true
-        explanation: "Correct! Federation, synchronization, and guest accounts can all be used to provide access to external resources using internal accounts from one or more organizations."
     
-    - content: "You work for an organization that uses Active Directory to store information about users. The organization is moving to the cloud and wants to use the existing Active Directory to control access to cloud resources. A chief requirement is that changes made to Active Directory must propagate immediately to the cloud. Which of the following solutions is most appropriate?"
+    - content: "Which of the following statements regarding containers is NOT true?"
       choices:
-      - content: "Federation"
+      - content: "Because containers are smaller than VMs, they start faster, consume fewer resources, and are more easily transported from one server to another"
+        isCorrect: false
+        explanation: "Incorrect. This statement regarding containers is true."
+      - content: "Because containers are smaller than VMs, a server can typically host more containers than it can VMs"
+        isCorrect: false
+        explanation: "Incorrect. This statement regarding containers is true."
+      - content: "Containers permit different operating systems to run side by side on the same computer"
         isCorrect: true
-        explanation: "Correct! Federation allows organizations to authenticate access to cloud resources using an on-premises directory service, and changes made in the on-premises directory are immediately visible in the cloud."
-      - content: "Synchronization"
+        explanation: "Correct! VMs permit different operating systems to run on the same computer, but containers do not because they use the host's operating system."
+      - content: "Containers virtualize the operating system; they do not virtualize hardware"
         isCorrect: false
-        explanation: "Incorrect. Synchronization allows organizations to authenticate access to cloud resources using an on-premises directory service, but changes made on-premises aren't visible in the cloud until the on-premises directory and cloud directory are synchronized."
-      - content: "Guest accounts"
+        explanation: "Incorrect. This statement regarding containers is true."
+
+    - content: "You are trying to decide whether an application that your company built and wants to replicate should be hosted in a VM or a container. The application is a web application that runs on Linux and Node.js. However, rather than store data in the local file system, the app stores data in Azure Blob Storage. Is this app a candidate for containerization?"
+      choices:
+      - content: "Yes"
+        isCorrect: true
+        explanation: "Correct! Containerized apps can access other cloud services just as non-containerized apps can."
+      - content: "Yes, but only if it is rewritten so that it doesn't rely on Azure Storage"
         isCorrect: false
-        explanation: "Incorrect. Guest accounts are a special case of federation, but the purpose of guest accounts is to allow external users to access cloud resources as if they were internal members of the organization."
-      - content: "None of the above"
+        explanation: "Incorrect. Containerized apps can access other cloud services just as non-containerized apps can."
+      - content: "No"
         isCorrect: false
-        explanation: "Incorrect. Federation allows organizations to authenticate access to cloud resources using an on-premises directory service, and changes made in the on-premises directory are immediately visible in the cloud."
+        explanation: "Incorrect. Containerized apps can access other cloud services just as non-containerized apps can."
+
+    - content: "What is the difference between a container and a container image?"
+      choices:
+      - content: "A container can run on Linux or Windows, but a container image can only run on Linux"
+        isCorrect: false
+        explanation: "Incorrect. Container images don't run; they provide a blueprint for running containers."
+      - content: "A container is an instance of a container image"
+        isCorrect: true
+        explanation: "Correct! Containers are created from container images just as VMs are created from virtual-machine images."
+      - content: "A container image hosts running applications, while a container provides the manifest that specifies what's loaded into a container image"
+        isCorrect: false
+        explanation: "Incorrect. Container images don't run; they provide a blueprint for running containers."
+      - content: "There is no difference between containers and container images; the terms are synonymous"
+        isCorrect: false
+        explanation: "Incorrect. Container images provide a blueprint for running containers, while containers host running software."
+
