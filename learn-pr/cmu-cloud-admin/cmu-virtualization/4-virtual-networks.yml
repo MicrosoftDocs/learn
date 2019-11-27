@@ -9,7 +9,7 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 9
+durationInMinutes: 11
 content: |
   [!include[](includes/4-virtual-networks.md)]
 quiz:
