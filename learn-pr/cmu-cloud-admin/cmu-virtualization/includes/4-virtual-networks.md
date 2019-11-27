@@ -1,28 +1,18 @@
----
-title: Virtual Networks
----
-
-+----------------------------------------------------------------------------------------------------------------------------------------+
-| # Learning Objectives                                                                                                                  |
-+========================================================================================================================================+
-| Recall key design considerations for data-center networks and describe the need for network virtualization to support multiple tenants |
-+----------------------------------------------------------------------------------------------------------------------------------------+
-
 Large data centers are part of the core infrastructure that supports cloud services. To be cost-effective, these data centers must have networks that are agile and easy to configure and update. In addition, these networks must lend themselves to the concept of *network virtualization*, in which virtual networks are created on top of physical networks in much the way that virtual machines are created on physical servers. While a complete treatment of data-center networking and the technologies that underly it are beyond the scope of this course, it is important to understand the motivation for network virtualization within cloud data centers, and of some of the challenges it entails.
 
-# Challenges in Designing Cloud Data Centers
+## Challenges in Designing Cloud Data Centers
 
 Computer networks are collections of nodes and links. A node can be any network appliance such as a switch, router, or server. A link is a physical or logical connection between two nodes in the network. Networks also comprise identification resources (addresses) and labeling tags. Often, a mechanism for identifying devices (IP address and MAC address), links (flow ID), and networks (VLAN ID and VPN ID) is needed for the management and monitoring of a virtualized infrastructure. High-level organizational structures such as network topologies can be created by assembling these resources.
 
-Designers of large data-center networks must contend with several (sometimes contradictory) requirements^ ^[^1]. They must:
+Designers of large data-center networks must contend with several (sometimes contradictory) requirements<sup>1</sup>. They must:
 
-1.  Ensure that the topology used is scalable to cope with future demand
+1. Ensure that the topology used is scalable to cope with future demand
 
-2.  Maximize throughput while minimizing hardware cost
+1. Maximize throughput while minimizing hardware cost
 
-3.  Ensure that their design guarantees availability and integrity of the system despite failures
+1. Ensure that their design guarantees availability and integrity of the system despite failures
 
-4.  Have power-saving features to reduce operating costs (and be environment-friendly)
+1. Have power-saving features to reduce operating costs (and be environment-friendly)
 
 An important consideration in designing the network for a large data center is selecting the right network fabric. Choices include Ethernet, InfiniBand, and other high-speed fabrics such as Myrinet. Each has different cost, latency, bandwidth, and communication criteria and must be chosen carefully. A physical comparison of these fabrics is not within our scope. What interests us more is the topology and addressing scheme selected to interconnect these resources. For instance, if we choose to use an Ethernet-addressed network (where endpoints are identified based on a flat 6-byte MAC address), it is likely that such a network will be flat, where each interface is assigned a MAC address that does not depend upon its location. This makes routing difficult and forwarding tables large, since all addresses must be stored.
 
@@ -34,11 +24,11 @@ Traffic within large data centers may be carefully engineered to minimize conges
 
 Finally, data center networks must be designed for fault tolerance. Such networks often use *gossip protocols*, where neighbors talk to each other to disseminate information about failures quickly. It is important to design such mechanisms so that they do not consume large amounts of bandwidth. There must also be mechanisms to recover from failure and reincorporate failed components within the network.
 
-# Network Virtualization
+## Network Virtualization
 
 By now, it should be clear that implementing a large data center network is extremely complex and needs a higher-level abstraction to be easy to design and configure. However, the situation is even more complex for cloud data centers, largely due to multi-tenancy requirements. The cloud computing paradigm is only relevant if it can ensure isolation amongst multiple tenants. A cloud service provider must ensure traffic isolation so that one tenant's traffic is not visible to another. For example, packets transmitted to or from a banking application hosted in one tenant must not be visible to a gaming application in another tenant. The address space must also be isolated so that each tenant has access to their own private address space.
 
-Both traffic and address-space isolation are achieved by building *virtual networks* for each tenant, with traffic between these networks restricted to a few strictly defined channels. These virtual networks are generally built as "overlays" on top of physical networks. An *overlay network* is a virtual network in which the separation of tenants is hidden from the underlying physical infrastructure, such that the underlying transport network does not need to know about the different tenants to correctly forward traffic. We refer to network virtualization as the process of provisioning these overlays, associating them with the tenant's network interfaces, and maintaining the lifecycle of this network as VM instances are launched, stopped, and terminated[^2].
+Both traffic and address-space isolation are achieved by building *virtual networks* for each tenant, with traffic between these networks restricted to a few strictly defined channels. These virtual networks are generally built as "overlays" on top of physical networks. An *overlay network* is a virtual network in which the separation of tenants is hidden from the underlying physical infrastructure, such that the underlying transport network does not need to know about the different tenants to correctly forward traffic. We refer to network virtualization as the process of provisioning these overlays, associating them with the tenant's network interfaces, and maintaining the lifecycle of this network as VM instances are launched, stopped, and terminated<sup>2</sup>.
 
 One of the important benefits of virtualizing the network is that it allows VM migration between hosts while retaining its network state (IP and MAC addresses). Changes in MAC addresses can cause many unexpected disruptions -- for example, by invalidating software licenses. Thus, physical hosts can be assigned IP addresses hierarchically, whereas a VM can have an IP address that is within a pool of valid addresses for that subnet.
 
@@ -48,9 +38,9 @@ Virtualization also helps provide individual tenants with control over the addre
 
 Finally, the presence of multiple tenants and the overcommitting of the shared network bandwidth leads to a traffic and flow management challenge. CSPs must ensure a quality of service (QoS) in line with the guaranteed SLAs and must shape traffic from each tenant according to the peak utilization provisioned.
 
-In summary, network virtualization is simply a sharing mechanism that allows multiple isolated virtual networks to use the same physical network infrastructure. This allows virtual networks to be dynamically allocated and deployed on-demand precisely like virtual machines^ ^[^3]. On a practical level, consumers of cloud services must be able to deploy virtual networks that support all the features of physical networks, including subnets, Classless Inter-Domain Routine (CIDR) addressing, firewalls, and peering for cloud computing to be a viable computing paradigm. This is precisely what cloud service providers such as Amazon, Microsoft, and Google allow you to do.
+In summary, network virtualization is simply a sharing mechanism that allows multiple isolated virtual networks to use the same physical network infrastructure. This allows virtual networks to be dynamically allocated and deployed on-demand precisely like virtual machines<sup>3</sup>. On a practical level, consumers of cloud services must be able to deploy virtual networks that support all the features of physical networks, including subnets, Classless Inter-Domain Routine (CIDR) addressing, firewalls, and peering for cloud computing to be a viable computing paradigm. This is precisely what cloud service providers such as Amazon, Microsoft, and Google allow you to do.
 
-# Case Study: Virtual Networks in Azure
+## Case Study: Virtual Networks in Azure
 
 All major cloud service providers support virtual networks, albeit sometimes using different terminology and abstractions. Azure, for example, doesn't offer virtual firewalls per se, but it does support *network security groups* (NSGs), which are an abstraction of firewalls. Figure 4.10 shows an Azure virtual network (VNet) set up to serve content to customers from virtual web servers fronted by a virtual load balancer that's assigned a virtual public IP address. The load balancer and the web-server VMs are located in one subnet, while back-end databases and other resources are isolated in an entirely different subnet. Each subnet is in a different NSG, with different firewall rules applied to each. For example, the public-facing subnet opens ports 80 and 443 to the outside world to support HTTP and HTTPS traffic, while the private subnet is accessible only from the other subnet and opens only those ports required for the web servers to connect to the databases. Not shown in the diagram are other virtual network resources such as the virtual network interface cards (NICs) that connect the VMs to the network.
 
@@ -62,10 +52,10 @@ This mirrors the topology you might design for a physical network to support sec
 
 In summary, virtual networking is as mature a technology as virtual machines, and it is no less vital in the context of cloud computing. While the details are largely hidden from end users, data centers and the networks that comprise them are expertly and purposefully designed to support virtual networking and everything that entails.
 
-\[Activity M3-P4-A, M4-P4-B\]
+### References
 
-[^1]: Liu, Yang and Muppala, Jogesh K and Veeraraghavan, Malathi and Lin, Dong and Hamdi, Mounir (2013). \"Data Center Networks: Topologies, Architectures and Fault-Tolerance Characteristics.\" Springer Science and Business Media.
+1. _Liu, Yang and Muppala, Jogesh K and Veeraraghavan, Malathi and Lin, Dong and Hamdi, Mounir (2013). \"Data Center Networks: Topologies, Architectures and Fault-Tolerance Characteristics.\" Springer Science and Business Media._
 
-[^2]: Liu, Yang and Muppala, Jogesh K and Veeraraghavan, Malathi and Lin, Dong and Hamdi, Mounir (2014). \"Problem statement: Overlays for network virtualization.\" RFC 7364.
+2. _Liu, Yang and Muppala, Jogesh K and Veeraraghavan, Malathi and Lin, Dong and Hamdi, Mounir (2014). \"Problem statement: Overlays for network virtualization.\" RFC 7364._
 
-[^3]: Wen, Heming and Tiwary, Prabhat Kumar and Le-Ngoc, Tho (2013). \"Wireless virtualization.\" Springer.
+3. _Wen, Heming and Tiwary, Prabhat Kumar and Le-Ngoc, Tho (2013). \"Wireless virtualization.\" Springer._
