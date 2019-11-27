@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.cmu-cloud-admin.cmu-virtualization.4-virtual-networks
-title: Role-based access control
+title: Virtualization and networks
 metadata:
-  title: Role-based access control
-  description: Role-based Access Control
+  title: Virtualization and networks
+  description: Networks can also take advantage of virtualization to scale.
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.cmu-cloud-admin.cmu-virtualization.3-containers
-title: Federation, synchronization, and guest accounts
+title: Containers and virtualization
 metadata:
-  title: Federation, synchronization, and guest accounts
-  description: Federation, Synchronization, and Guest Accounts
+  title: Containers and virtualization
+  description: Discover how containers work - it's virtualization again!
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama

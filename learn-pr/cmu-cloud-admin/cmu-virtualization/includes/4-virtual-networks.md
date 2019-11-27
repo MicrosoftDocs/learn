@@ -54,9 +54,9 @@ In summary, network virtualization is simply a sharing mechanism that allows mul
 
 All major cloud service providers support virtual networks, albeit sometimes using different terminology and abstractions. Azure, for example, doesn't offer virtual firewalls per se, but it does support *network security groups* (NSGs), which are an abstraction of firewalls. Figure 4.10 shows an Azure virtual network (VNet) set up to serve content to customers from virtual web servers fronted by a virtual load balancer that's assigned a virtual public IP address. The load balancer and the web-server VMs are located in one subnet, while back-end databases and other resources are isolated in an entirely different subnet. Each subnet is in a different NSG, with different firewall rules applied to each. For example, the public-facing subnet opens ports 80 and 443 to the outside world to support HTTP and HTTPS traffic, while the private subnet is accessible only from the other subnet and opens only those ports required for the web servers to connect to the databases. Not shown in the diagram are other virtual network resources such as the virtual network interface cards (NICs) that connect the VMs to the network.
 
-![Image result for azure virtual network](media/image1.png){width="4.349273840769904in" height="4.989583333333333in"}
+![Figure 4.10: Virtual network in Azure](../media/fig4-10.png)
 
-Figure 4.10: Virtual network in Azure.
+_Figure 4.10: Virtual network in Azure._
 
 This mirrors the topology you might design for a physical network to support security and scalability. And it merely scratches the surface of what savvy cloud administrators can accomplish with virtual networks. Azure, for example, supports VNet peering, enabling two or more virtual networks to be connected, even if the networks are located in different Azure regions. It also supports point-to-site and site-to-site virtual private networks (VPNs), which enable on-premises devices and network appliances to securely connect to virtual networks, and Azure ExpressRoute, which provides secure, dedicated, and high-bandwidth connectivity between on-premises networks and virtual networks. AWS and Google do the same through services such as Virtual Private Cloud (AWS and Google), AWS Direct Connect, and Google Cloud interconnect.
 

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.cmu-cloud-admin.cmu-virtualization.1-virtual-machines
-title: Virtual machines
+title: Virtualization in virtual machines
 metadata:
-  title: Virtual machines
-  description: Virtual machines
+  title: Virtualization in virtual machines
+  description: Learn what virtual machines are and how they work.
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
