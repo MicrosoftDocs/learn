@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.manage-database-changes-in-azure-pipelines.7-deploy-schema-change
-title: Exercise - Wait for approval only when there are changes to the database schema
+title: Exercise - Wait for approval only when the database schema changes
 metadata:
-  title: Exercise - Wait for approval only when there are changes to the database schema
-  description: Wait for approval only when there are changes to the database schema.
+  title: Exercise - Wait for approval only when the database schema changes
+  description: Wait for approval only when the database schema changes.
   ms.date: 10/17/2019
   author: jamcneil
   ms.author: jumcn
