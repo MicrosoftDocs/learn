@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.cmu-cloud-admin.cmu-virtualization
+metadata:
+  title: Virtualize resources in the cloud
+  description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Discover virtualization and how it enables many technologies in the cloud, including virtual machines, containers and networks.
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: Virtualize resources in the cloud
+summary: Discover virtualization and how it enables many technologies in the cloud, including virtual machines, containers and networks.
+abstract: | 
+  In this module you will:
+  - Identify the two main types of virtual machines and provide examples of each
+  - Identify major reasons that virtualization is an essential technology for cloud computing
+  - List the key advantages that containers have over virtual machines
+  - Understand key terms such as Docker containers, container images, and container registries
+  - Identify some of the ways in which major cloud platforms support containers
+  - Recall key design considerations for data-center networks and describe the need for network virtualization to support multiple tenants
+
+  In Partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models, and common cloud providers
+  - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
+  - Understand how cloud resource provisioning works
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.cmu-cloud-admin.cmu-virtualization.0-intro
+- learn.cmu-cloud-admin.cmu-virtualization.1-virtual-machines
+- learn.cmu-cloud-admin.cmu-virtualization.2-virtualization-and-cloud-computing
+- learn.cmu-cloud-admin.cmu-virtualization.3-containers
+- learn.cmu-cloud-admin.cmu-virtualization.4-virtual-networks
+- learn.cmu-cloud-admin.cmu-virtualization.5-summary
+
+badge:
+  uid: learn.cmu-cloud-admin.cmu-virtualization.badge
