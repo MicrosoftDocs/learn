@@ -8,7 +8,7 @@ All of these virtual machines are instances of *system VMs*, which virtualize an
 
 A process VM (Figure 4.1) is a VM capable of supporting an individual process as long as the process is alive. A process VM terminates when the process that it hosts ends. From a process VM perspective, a machine consists of a virtual memory address space, user-level registers, and instructions for executing a program. According to this definition, a process in a general-purpose operating system can also be called a "machine." However, a regular process can only support program binaries compiled for the processor architecture or *instruction-set architecture* (ISA) of the host machine. Executing binaries compiled for an ISA different than that of the host machine -- for example, running programs compiled for ARM processors on machines equipped with Intel CPUs -- is not supported by regular processes. However, a process VM allows that to happen.
 
-![https://oli.cmu.edu/repository/webcontent/0ea6fc470a0001dc68390ea2588ab51d/\_u03\_virtualizing\_resources\_for\_cloud/\_u03\_m02\_virtualization/webcontent/process\_vm.png](media/image1.png){width="3.9166666666666665in" height="3.7291666666666665in"}
+![https://oli.cmu.edu/repository/webcontent/0ea6fc470a0001dc68390ea2588ab51d/\_u03\_virtualizing\_resources\_for\_cloud/\_u03\_m02\_virtualization/webcontent/process\_vm.png](../media/fig4-1.png)
 
 _Figure 4.1: Process VM._
 
