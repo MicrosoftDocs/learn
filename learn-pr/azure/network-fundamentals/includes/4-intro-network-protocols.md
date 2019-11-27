@@ -62,7 +62,7 @@ First, we need to define three foundational protocols of all Internet-based netw
 
 The rest of the protocols that we'll discuss here are based on a type of application, for example, an email client or web browser. Here is a list of the most commonly used network communication protocols.
 
-- **Hypertext Transfer Protocol (HTTP)** - The HTTP protocol uses TCP/IP to deliver web page content from a server to our browser. The transmission protocol used is HTTP. HTTP can also handle the download and upload of files from remote servers.
+- **Hypertext Transfer Protocol (HTTP)** - The HTTP protocol uses TCP/IP to deliver web page content from a server to our browser. HTTP can also handle the download and upload of files from remote servers.
 
 - **File Transfer Protocol (FTP)** - FTP is used to transfer files between different computers on a network. Typically FTP is used to upload files to a server from a remote location. While we can use FTP to download files, web-based downloads are typically handled through HTTP.
 
@@ -94,7 +94,7 @@ Network administrators need to monitor their networks and any devices attached t
 
 There are two network management protocols available: SNMP and ICMP.
 
-- **Simple Network Management Protocol** (SNMP) - The SNMP is an internet protocol that allows the collection of data from devices on your network, and the management of those devices. The device has to support SNMP for information to gather information. Typically, these types of devices support SNMP: switches, routers, servers, laptops, desktops, and printers.
+- **Simple Network Management Protocol** (SNMP) - The SNMP is an internet protocol that allows for the collection of data from devices on your network, and the management of those devices. The device has to support SNMP for information to gather information. Typically, these types of devices support SNMP: switches, routers, servers, laptops, desktops, and printers.
 
 - **Internet Control Message Protocol** (ICMP) - The ICMP is one of the protocols included within the Internet protocol suite. It allows network-connected devices to send warning and error messages, along with operation information about the success or failure of a connection request, or if a service is unavailable. Unlike other network transport protocols like UDP and TCP, ICMP isn't used to send or receive data from devices on the network.
 
@@ -143,7 +143,7 @@ The IPS model is one of several similar networking models that varies between th
 
 - **Application layer** - The top layer of this stack and is concerned with application or process communication. The application layer is responsible for determining which communication protocols will be used based on what type of message is transmitted. For example, the layer will assign the correct email protocols such as POP, SMTP, or IMAP if the message is email content.
 - **Transport layer** - This layer is responsible for host-to-host communication on the network. The protocols associated with this layer are TCP and UDP. TCP is responsible for flow control and UDP for providing a datagram service.
-- **Internet layer** - This layer is responsible for exchanging datagrams. A datagram contains the data from the transport layer and adds in the origin and recipient IP addresses. The protocols associated with this layer are IP, ICMP, and IPsec.
+- **Internet layer** - This layer is responsible for exchanging datagrams. A datagram contains the data from the transport layer and adds in the origin and recipient IP addresses. The protocols associated with this layer are IP, ICMP, and the Internet Protocol Security suite (IPsec).
 - **Network access layer** - The bottom layer of this stack and is responsible for defining how the data is sent across the network. The protocols associated with this layer are ARP, MAC, Ethernet, DSL, and ISDN.
 
 ## How to monitor networks in Azure
