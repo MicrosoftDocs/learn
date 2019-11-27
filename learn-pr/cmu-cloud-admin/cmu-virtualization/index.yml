@@ -1,16 +1,16 @@
 ### YamlMime:Module
 uid: learn.cmu-cloud-admin.cmu-virtualization
 metadata:
-  title: Virtualization
-  description: Virtualization
+  title: Virtualize resources in the cloud
+  description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Discover virtualization and how it enables many technologies in the cloud, including virtual machines, containers and networks.
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   showCreativeCommonsFooter: true
-title: Virtualization
-summary: Discover the cloud, how it works, and why it matters to you, with Carnegie Mellon's online Cloud Administration course content. 
+title: Virtualize resources in the cloud
+summary: Discover virtualization and how it enables many technologies in the cloud, including virtual machines, containers and networks.
 abstract: | 
   In this module you will:
   - Identify the two main types of virtual machines and provide examples of each
@@ -22,7 +22,9 @@ abstract: |
 
   In Partnership with Dr. Majd Sakr and Carnegie Mellon University.
 prerequisites: |
-  - Virtualization
+  - Understand what cloud computing is, including cloud service models, and common cloud providers
+  - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
+  - Understand how cloud resource provisioning works
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
