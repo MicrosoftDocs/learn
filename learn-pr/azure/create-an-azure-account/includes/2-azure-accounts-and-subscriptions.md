@@ -11,6 +11,6 @@ The Azure free account includes free access to popular Azure products for 12 mon
 
 With flexible purchasing options, you can choose the option that works best for you. Use one of the following three ways to buy Azure: 
 
-- **[Azure.com](http://azure.com)**:  Buying directly through [Azure.com](http://azure.com) is the fastest and easiest way for organizations of all sizes to get started with Azure. You can manage your Azure deployments and usage yourself and get a monthly bill from Microsoft for the services used.  
+- **Azure.com**:  Buying directly through [Azure.com](http://azure.com) is the fastest and easiest way for organizations of all sizes to get started with Azure. You can manage your Azure deployments and usage yourself and get a monthly bill from Microsoft for the services used.  
 - **Microsoft representative**: Buying Azure through a Microsoft representative is intended for large organizations or customers who already work with one. You’ll also manage your Azure deployments and usage yourself and get a monthly bill from Microsoft for the services used.  
 - **Microsoft partner**: If you buy Azure as a managed service through your partner, your partner will provide you with access to Azure, manage your billing, and provide support.
