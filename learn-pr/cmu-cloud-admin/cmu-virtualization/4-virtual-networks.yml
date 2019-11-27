@@ -16,17 +16,32 @@ quiz:
   title: Check your knowledge
   questions:
 
-    - content: "Which elements are parts of a role-based access control (RBAC) assignment?"
+    - content: "What is the primary reason for placing Azure resources in separate network security groups (NSGs)?"
       choices:
-      - content: "Objects, permissions, and users"
+      - content: "To perform load balancing between the resources in the NSGs."
         isCorrect: false
-        explanation: "Incorrect. Role assignments bring together users or groups and define the permissions that describe the actions they can perform on a certain scope of resources."
-      - content: "Users, groups, permissions, and resource scopes"
+        explanation: "Incorrect. NSGs are an abstraction of firewalls, and two NSGs can have different firewall rules applied."
+      - content: "To allow multiple NSGs to share a network interface adapter (NIC)."
+        isCorrect: false
+        explanation: "Incorrect. NSGs are an abstraction of firewalls, and two NSGs can have different firewall rules applied."
+      - content: "To prevent an application that crashes on a host in one NSG from affecting resources in the other NSGs."
+        isCorrect: false
+        explanation: "Incorrect. NSGs are an abstraction of firewalls, and two NSGs can have different firewall rules applied."
+      - content: "To apply different firewall rules to each set of resources."
         isCorrect: true
-        explanation: "Correct! Role assignments bring together users or groups and define the permissions that describe the actions they can perform on a certain scope of resources."
-      - content: "Organizations, applications, and federations"
-        isCorrect: false
-        explanation: "Incorrect. Role assignments bring together users or groups and define the permissions that describe the actions they can perform on a certain scope of resources."
-      - content: "Forests, trees, and domains"
-        isCorrect: false
-        explanation: "Incorrect. Forests, trees, and domains are associations that can be maintained in Microsoft's Active Directory product, not elements of a role assignment."
+        explanation: "Correct! NSGs are an abstraction of firewalls, and two NSGs can have different firewall rules applied."
+
+    - content: "Azure supports VNet peering for VNets in the same region, and global VNet peering for VNets in different Azure regions. What is the purpose of VNet peering?"
+      choices:
+        - content: "To connect VNets so together so that they function as one network."
+          isCorrect: true
+          explanation: "Correct! Once peered, resources in one VNet can be accessed as if they were part of the other VNet."
+        - content: "To isolate traffic in one VNet from traffic in the other."
+          isCorrect: false
+          explanation: "Incorrect. Once peered, resources in one VNet can be accessed as if they were part of the other VNet."
+        - content: "To conserve memory by reducing the size of the network routing tables."
+          isCorrect: false
+          explanation: "Incorrect. Once peered, resources in one VNet can be accessed as if they were part of the other VNet."
+        - content: "To ensure that each VNet has its own network security group."
+          isCorrect: false
+          explanation: "Incorrect. Once peered, resources in one VNet can be accessed as if they were part of the other VNet."
