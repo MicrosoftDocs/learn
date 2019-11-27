@@ -23,6 +23,4 @@ Depending on your needs, you can set up multiple invoices within the same billin
 
 The following diagram shows an overview of how billing is structured:
 
-**TODO: Add in updated diagram**
-
 If you've signed up for Azure or if your organization has an Enterprise Agreement, your billing might be set up differently.
