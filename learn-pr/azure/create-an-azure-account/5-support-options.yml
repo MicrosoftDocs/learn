@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-azure-account.6-support-options
+uid: learn.create-azure-account.support-options
 title: Azure support options
 metadata:
   title: Azure support options - Get help with your Azure subscription
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 8
 content: |
-  [!include[](includes/6-support-options.md)]
+  [!include[](includes/5-support-options.md)]
