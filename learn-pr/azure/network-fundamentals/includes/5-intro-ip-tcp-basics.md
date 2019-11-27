@@ -138,7 +138,7 @@ The structure of an IPv6 is different from IPv4. Instead of four decimal numbers
 - One or more leading zeros from any group are removed. So `0042` becomes `42`.
 - Consecutive sections of zeros are replaced with a double colon (::), which can only be used once in an address. So the three `0000's in our example are replaced by three colons (`:::`).
 
-The shortened version of our IPv6 example is `2001:db8::8a2e:370:7334`. We'll notice that all the `0000s is removed.
+The shortened version of our IPv6 example is `2001:db8::8a2e:370:7334`. We'll notice that all the `0000s ' are removed.
 
 ## DNS
 

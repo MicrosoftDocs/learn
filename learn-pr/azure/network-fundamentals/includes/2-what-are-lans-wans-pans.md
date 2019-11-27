@@ -1,10 +1,10 @@
-When building a network, we need to know about the different types of networks, their topologies, and their uses. We can apply this knowledge either to the design of our organization's local network or the design of our cloud-based network. All networks are built on the same principals.
+All networks are built on the same principals, and we can apply these principals to design and build our organization's local or cloud-based networks.  When building a network, we need to know about the different types of networks, their topologies, and their uses. 
 
-In this unit, you'll learn about the different types of networks.
+In this unit, you'll explore some of the common types of network topologies we use to create Internet-based networks.
 
 ## What is a network?
 
-A network is a collection of network-enabled devices, typically comprising computers, switches, routers, printers, and servers. Networks are a fundamental part of our day-to-day lives and exist in our homes, workplace, and public areas and allow all types of network-enabled devices to interact with each other.
+A network is a collection of network-enabled devices, typically comprising computers, switches, routers, printers, and servers. Networks are a fundamental part of our day-to-day lives and exist in our homes, workplace, and public areas and allow all types of network-enabled devices to communicate.
 
 ## Network Types
 
@@ -17,7 +17,7 @@ Networks vary in size, shape, and usage. To make it easier to identify different
 
 ### What is a Personal Area Network (PAN)?
 
-The Personal Area Network provides networking needs around an individual. An excellent example of a PAN is where our smartphone, smartwatch, tablet, and laptop all connect and share data with each other without the need to connect to an Access Point or other third-party network services. PAN networks typically use Bluetooth to communicate as it provides a low-power short-range data sharing capability. The network standards associated with a PAN are Bluetooth, and IEEE 802.15.
+The Personal Area Network provides networking needs around an individual. An excellent example of a PAN is where our smartphone, smartwatch, tablet, and laptop all connect and share data without the need to connect to an Access Point or other third-party network services. PAN networks typically use Bluetooth to communicate as it provides a low-power short-range data sharing capability. The network standards associated with a PAN are Bluetooth, and IEEE 802.15.
 
 ### What is a Local Area Network (LAN)?
 
@@ -27,7 +27,7 @@ The Local Area Network provides networking needs around a single location. This 
 
 ![A diagram of a Metropolitan Area Network](../media/3-man-diagram.png)
 
-The Metropolitan Area Network provides networking capabilities between two different locations within a city or metropolitan area to provide a single extensive network. Typically a MAN requires a dedicated and secure connection between each LAN joined to the MAN. Although virtual private networks (VPNs) are now allowing LANs to act as MANs using existing technology like the internet.
+The Metropolitan Area Network provides networking capabilities between two different locations within a city or metropolitan area to provide a single extensive network. Typically a MAN requires a dedicated and secure connection between each LAN joined to the MAN.
 
 ### What is a Wide Area Network (WAN)?
 
@@ -57,13 +57,13 @@ A network topology describes the physical composition of a network. Let's look a
 
 ![A diagram of a bus topology](../media/3-bus-network.png)
 
-In a bus topology, each network device is connected to a single network cable. It's the simplest type of network to implement. The many limitations to this type of network. The main two are the length of the main cable or bus. The longer it gets, the higher the chance of signal dropout. One constraint is all the devices have to be physically located near to each other, for example, in the same room. Finally, if the bus cable is damaged in any way, the whole network fails.
+In a bus topology, each network device is connected to a single network cable. Even though it's the simplest type of network to implement, there are limitations to it. The first limitation is the length of the main cable or bus. The longer it gets, the higher the chance of signal dropout. This limitation constrains the physical layout of the network.  All devices have to be physically located near to each other, for example, in the same room. Finally, if there is a break in the bus cable, the whole network fails.
 
 ### Ring topology
 
 ![A diagram of a ring topology](../media/3-ring-network.png)
 
-In a ring topology, each network device is connected to its neighbor until it forms a ring. This form of network is more resilient than a bus architecture. A break in the cable ring will affect the performance of the network.
+In a ring topology, each network device is connected to its neighbor to form a ring. This form of network is more resilient than the bus topology. However, a break in the cable ring will still affect the performance of the network.
 
 ### Mesh topology
 
@@ -79,7 +79,7 @@ Keep in mind that there's a subtle difference between a physical mesh network an
 
 ![A diagram of a star topology](../media/3-star-network.png)
 
-The star topology is the most commonly used network architecture. Each network device connects to a centralized hub or switch. Switches and hubs can be linked together to extend and build more extensive networks. This type of typology is, by far, the most robust and scalable.
+The star topology is the most commonly used network topology. Each network device connects to a centralized hub or switch. Switches and hubs can be linked together to extend and build more extensive networks. This type of typology is, by far, the most robust and scalable.
 
 ## Ethernet
 
@@ -99,11 +99,11 @@ Fast Ethernet (IEEE 802.3u) was developed to support data transmission speeds of
 
 ### Gigabit Ethernet
 
-Gigabit Ethernet (IEEE 802.3ab) was developed to support faster communication networks that can support services like streaming multimedia and Voice over IP (VOIP). The 1000BASE-T standard runs 10 times faster than the 100BASE-TX standard. Gigabit Ethernet is now included in the 802.3 standards and recommended for enterprise networks. The new standard is backward compatible with the 100BASE-T and the older 10BASE-T standards.
+Gigabit Ethernet (IEEE 802.3ab) was developed to support faster communication networks that can support services like streaming multimedia and Voice over IP (VOIP). The 1000BASE-T standard runs ten times faster than the 100BASE-TX standard. Gigabit Ethernet is now included in the 802.3 standards and recommended for enterprise networks. The new standard is backward compatible with the 100BASE-T and the older 10BASE-T standards.
 
 ### 10 Gigabit Ethernet
 
-10 Gigabit Ethernet (IEEE 802.3ae) is 10 Gigabit Ethernet has a nominal data transfer speed of 10 Gbit/s, which is 10 times faster than its predecessor. This speed improvement is only made possible by using fiber-optics. The standard now requires that 10-Gigabit Ethernet networks use area-based routing rather than broadcasting data to all nodes, in that way reducing network noise and traffic.
+10 Gigabit Ethernet (IEEE 802.3ae) is 10 Gigabit Ethernet has a nominal data transfer speed of 10 Gbit/s, which is ten times faster than its predecessor. This speed improvement is only made possible by using fiber-optics. The standard now requires that 10-Gigabit Ethernet networks use area-based routing rather than broadcasting data to all nodes, in that way, reducing network noise and traffic.
 
 ### Terabit Ethernet
 
