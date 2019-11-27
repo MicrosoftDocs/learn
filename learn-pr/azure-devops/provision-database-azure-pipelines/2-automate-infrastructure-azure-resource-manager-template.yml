@@ -47,7 +47,7 @@ quiz:
       explanation: "The parameter file can access the Key Vault secret and create a parameter for the template to use."
     - content: "The parameter file can access the Key Vault secret and create a parameter for the template to use."
       isCorrect: true
-      explanation: "The parameter has a resources property that can hold the Key Vault type and the specific Key Vault id."
+      explanation: "The parameter has a resources property that can hold the Key Vault type and the specific Key Vault ID."
     - content: "The Key Vault can inject secrets into the template with a `KeyVault@1` task."
       isCorrect: false
       explanation: "The parameter file can access the Key Vault secret and create a parameter for the template to use."
