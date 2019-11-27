@@ -58,6 +58,12 @@ More recently, cloud service providers have begun adding container support to se
 
 Docker provides the infrastructure for building and running containers, but a higher level of supervision is needed to orchestrate the actions of containers and scale containerized workloads the same way VMs are scaled. While an assortment of container-orchestration tools exists, the industry has largely settled on Kubernetes, which grew out of an open-source project by Google, as the orchestrator of choice. Today, major cloud service providers offer managed implementations of Kubernetes that make it easy to run containers on their platforms and manage them with Kubernetes. The "EKS" in Figure 4.9 stands for Elastic Kubernetes Service. Azure offers a complementary service called Azure Kubernetes Service (AKS), while the Google Cloud Platform offers the Kubernetes Engine.
 
-[^1]: Docker (2019). *What is a Container?* <https://www.docker.com/resources/what-container>.
+### References
 
-[^2]: Amazon (2019). *How Amazon ECS Works*. <https://aws.amazon.com/ecs/>.
+1. _Docker (2019). *What is a Container?* <https://www.docker.com/resources/what-container>._
+
+_Amazon (2019). *How Amazon ECS Works*. <https://aws.amazon.com/ecs/>._
+
+[^1]: <https://www.docker.com/resources/what-container>  "Docker (2019). *What is a Container?*"
+
+[^2]: <https://aws.amazon.com/ecs/>  "Amazon (2019). *How Amazon ECS Works*."
