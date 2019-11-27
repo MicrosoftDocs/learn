@@ -13,11 +13,12 @@ title: Virtualization
 summary: Discover the cloud, how it works, and why it matters to you, with Carnegie Mellon's online Cloud Administration course content. 
 abstract: | 
   In this module you will:
-  - Explain the concept of digital identity and the purpose of a directory service
-  - Describe the purpose of users and user groups in an identity-management system
-  - Explain how synchronization and federation can be used to extend identities beyond organizational boundaries
-  - Discuss the advantages of using guest identities to authenticate users external to the organization
-  - Discuss the use of role-based access control (RBAC) to secure access to resources
+  - Identify the two main types of virtual machines and provide examples of each
+  - Identify major reasons that virtualization is an essential technology for cloud computing
+  - List the key advantages that containers have over virtual machines
+  - Understand key terms such as Docker containers, container images, and container registries
+  - Identify some of the ways in which major cloud platforms support containers
+  - Recall key design considerations for data-center networks and describe the need for network virtualization to support multiple tenants
 
   In Partnership with Dr. Majd Sakr and Carnegie Mellon University.
 prerequisites: |
