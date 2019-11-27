@@ -5,6 +5,7 @@ metadata:
   description: Running the latest version of SQL Server provides you with numerous performance and functionality benefits while also extending the support of your database platform. In this learning path you will learn how to take an inventory of your SQL Server deployments using the Microsoft Assessment and Planning toolkit, how to upgrade SQL Server databases using the Data Migration Assistant, and how to optimize your updated system using both the Database Experimentation Assistant and Query Tuning Assistant.
   author: geoffallix
   ms.author: v-gea
+  ms.date: 11/20/2019
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 title: SQL Server upgrades
