@@ -1,9 +1,8 @@
 ### YamlMime:Module
-#LP name: Introduction to the Cloud with Carnegie Mellon
 uid: learn.cmu-cloud-admin.secure-cloud-resources
 metadata:
   title: Secure your cloud resources with access control
-  description: Identity Management and Access Control
+  description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Learn about digital identities and how they can be managed and synchronized within an organization.
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
@@ -11,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   showCreativeCommonsFooter: true
 title: Secure your cloud resources with access control
-summary: Discover the cloud, how it works, and why it matters to you, with Carnegie Mellon's online Cloud Administration course content. 
+summary: Learn about digital identities and how they can be managed and synchronized within an organization.
 abstract: | 
   In this module you will:
   - Explain the concept of digital identity and the purpose of a directory service
@@ -20,7 +19,7 @@ abstract: |
   - Discuss the advantages of using guest identities to authenticate users external to the organization
   - Discuss the use of role-based access control (RBAC) to secure access to resources
 
-  In Partnership with Dr. Majd Sakr and Carnegie Mellon University.
+  This content is provided in partnership with Dr. Majd Sakr and Carnegie Mellon University.
 prerequisites: |
   - Understand what cloud computing is, including cloud service models, and common cloud providers
   - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them

@@ -2,7 +2,7 @@
 uid: learn.design-for-availability-and-recoverability
 metadata:
   title: Design for availability and recoverability in Azure
-  description: Learn how to handle infrastructure and service failure, recover from the loss of data, and recover from a disaster by designing availability and recoverability into your architecture.
+  description: Learn how to recover from infrastructure and service failure, loss of data, and disasters by designing availability into your architecture.
   ms.date: 09/24/2018
   author: jboeshart
   ms.author: jaboes
