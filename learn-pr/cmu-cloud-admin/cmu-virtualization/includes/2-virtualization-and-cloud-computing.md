@@ -6,7 +6,7 @@ Let us examine the benefits of virtualization and understand why it is so import
 
 **Elasticity:** A major benefit of the cloud is elasticity, or the ability to respond quickly to user demands by expanding and contracting resources dynamically. This applies to all cloud service models -- that is, SaaS, PaaS, and IaaS. As shown in Figure 4.4, virtualization enhances elasticity by allowing providers and users to dynamically increase or decrease the cloud resources devoted to a task. For instance, Google App Engine automatically expands servers during demand spikes and contracts them when demand diminishes. Amazon EC2 allows users to expand and contract virtual clusters manually or automatically, the latter by using Amazon Auto Scaling. Azure does the same with Virtual Machine Scale Sets. In short, virtualization is the key technology needed for elasticity in the cloud, and the fact that VMs can be quickly created and deleted is key to elasticity.
 
-![(C) CMU Cloud Computing Course](../media/fig4-4.png)
+![Figure 4.4: Provisioning a VM on a physical system](../media/fig4-4.png)
 
 _Figure 4.4: Provisioning a VM on a physical system._
 
@@ -14,7 +14,7 @@ _Figure 4.4: Provisioning a VM on a physical system._
 
 As shown in Figure 4.5, sandboxing presents other interesting possibilities as well. A specific VM can be used as a sandbox whereby security attacks -- for example, denial-of-service attacks or malicious packets inserted into legitimate IP communication streams -- can be safely permitted and monitored. This allows researchers to inspect the effects of such attacks, gather information on their specific behaviors, and replay them if necessary to design defenses against future attacks without fear of compromising a physical server. Furthermore, suspicious network packets or input can be sent to a clone (a specific VM) before it is forwarded to the intended VM to preclude any potential ill effect. A VM can be thrown away after it has served its purpose, whereas reprovisioning a physical server is both expensive and time-consuming.
 
-![(C) CMU Cloud Computing Course](../media/fig4-5.png)
+![Figure 4.5: Using virtual machines to isolate and analyze attacks](../media/fig4-5.png)
 
 _Figure 4.5: Using virtual machines to isolate and analyze attacks._
 
@@ -28,7 +28,7 @@ Reducing energy consumption in cloud data centers is currently deemed as one of 
 
 **Mixed-OS environment:** As shown in Figure 4.6, a single hardware platform hosting virtual machines can support multiple operating systems simultaneously. This provides tremendous flexibility for users by allowing them to install their own operating systems, libraries, and applications. For instance, a user can install one operating system for office productivity tools and another for application development and testing, all on a single desktop computer or in the cloud.
 
-![(C) CMU Cloud Computing Course](../media/fig4-6.png)
+![Figure 4.6: Mixed-OS environment offered by system virtualization](../media/fig4-6.png)
 
 _Figure 4.6: Mixed-OS environment offered by system virtualization._
 
