@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.provision-databases-azure-pipelines.5-deploy-azure-resources-in-azure-pipelines
+uid: learn.azdo.provision-databases-azure-pipelines.5-deploy-azure-resources-azure-pipelines
 title: Exercise - Deploy Azure Resources in Azure Pipelines by using an Azure Resource Manager template
 metadata:
   title: Exercise - Deploy Azure Resources in Azure Pipelines by using an Azure Resource Manager template
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-deploy-azure-resources-in-azure-pipelines.md)]
+  [!include[](includes/5-deploy-azure-resources-azure-pipelines.md)]

@@ -192,7 +192,7 @@ Here, you create a service connection that enables Azure Pipelines to access you
 Here, you create a personal access token to enable the Azure Pipelines REST API to access the pipeline variables. You need this to set the template outputs to pipeline variables. This enables the variables to be accessed across stages.
 
 1. In Azure DevOps, select your profile.
-1. Select the ellipis (**...**), then **User Settings**, then **Personal access tokens**.
+1. Select the ellipsis (**...**), then **User Settings**, then **Personal access tokens**.
 
     ![Profile page select personal access token](../media/5-select-personal-access-token.png)
 
@@ -274,7 +274,7 @@ Here, you add a variable group and variables to the pipeline.
 1. Navigate to the Azure portal and choose **Resource groups**, then the **tailspin-spacegame-web-rg** resource group.
 1. Select your Key Vault.
 1. Choose **Access policies**, then **+ Add Access Policy**.
-1. On the **Add access policy** pane, choose **Select principal** and search for the service principal for your client account. It will be the **[organization name]-[project name]-[subscription id]** format.
+1. On the **Add access policy** pane, choose **Select principal** and search for the service principal for your client account. It will be the **[organization name]-[project name]-[subscription ID]** format.
 
     If you see many choices, enter your Azure DevOps organization into the search bar to narrow your choices.
 1. On the **Add access policy** pane, choose **Secret permissions** and ensure that **Get** and **List** are checked.

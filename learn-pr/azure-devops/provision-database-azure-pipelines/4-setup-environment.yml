@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.provision-databases-azure-pipelines.4-set-up-environment
+uid: learn.azdo.provision-databases-azure-pipelines.4-setup-environment
 title: Exercise - Set up your Environment
 metadata:
   title: Exercise - Set up your Environment
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-set-up-environment.md)]
+  [!include[](includes/4-setup-environment.md)]

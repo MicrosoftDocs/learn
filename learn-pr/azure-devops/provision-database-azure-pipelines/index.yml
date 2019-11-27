@@ -37,10 +37,10 @@ units:
 - learn.azdo.provision-databases-azure-pipelines.1-introduction
 - learn.azdo.provision-databases-azure-pipelines.2-automate-infrastructure-azure-resource-manager-template
 - learn.azdo.provision-databases-azure-pipelines.3-deploy-azure-resources
-- learn.azdo.provision-databases-azure-pipelines.4-set-up-environment
-- learn.azdo.provision-databases-azure-pipelines.5-deploy-azure-resources-in-azure-pipelines
+- learn.azdo.provision-databases-azure-pipelines.4-setup-environment
+- learn.azdo.provision-databases-azure-pipelines.5-deploy-azure-resources-azure-pipelines
 - learn.azdo.provision-databases-azure-pipelines.6-repair-infrastructure
-- learn.azdo.provision-databases-azure-pipelines.7-clean-up-environment
+- learn.azdo.provision-databases-azure-pipelines.7-cleanup-environment
 - learn.azdo.provision-databases-azure-pipelines.8-summary
 badge:
   uid: learn.azdo.provision-databases-azure-pipelines.badge
