@@ -37,7 +37,7 @@ Run a template that sets up your Azure DevOps organization:
 From the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. Select **Sign In** and accept the usage terms.
-1. On the **Create New Project** page, select your Azure DevOps organization. Enter a project name, such as *Space Game - web - multistage*.
+1. On the **Create New Project** page, select your Azure DevOps organization. Enter a project name, such as *Space Game - web - Multistage*.
 
     ![Creating a project through Azure DevOps Demo Generator](../media/4-create-new-project.png)
 
@@ -244,7 +244,7 @@ You could hard-code these names in your pipeline configuration, but if you defin
 
 To add the variables:
 
-1. In Azure DevOps, go to your **Space Game - web - multistage** project.
+1. In Azure DevOps, go to your **Space Game - web - Multistage** project.
 1. Under **Pipelines**, select **Library**.
 
     ![Azure Pipelines showing the Library menu option](../../create-release-pipeline/media/5-pipelines-library.png)
@@ -277,7 +277,7 @@ Here you create a service connection that enables Azure Pipelines to access your
 > [!IMPORTANT]
 > Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
 
-1. In Azure DevOps, go to your **Space Game - web - multistage** project.
+1. In Azure DevOps, go to your **Space Game - web - Multistage** project.
 1. Select **Project settings** from the bottom corner of the page.
 1. Under **Pipelines**, select **Service connections**.
 1. Select **+ New service connection** > **Azure Resource Manager**.

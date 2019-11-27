@@ -6,7 +6,7 @@ In this module, you learned ways to control how changes move from one stage of a
 
 The _Dev_, _Test_, and _Staging_ stages each deploy the build artifact to their own Azure App Service environment.
 
-* When a change is pushed to GitHub, a _CI trigger_ causes the _Build_ stage to run. The _Build_ stage produces a build artifact as its output.
+* When a change is pushed to GitHub, a _trigger_ causes the _Build_ stage to run. The _Build_ stage produces a build artifact as its output.
 * The _Dev_ stage runs only when the change happens in the _release_ branch. You use a _condition_ to specify this requirement.
 * The _Test_ stage runs at 3 A.M. each morning. This stage runs only when the _release_ branch contains changes since the last run. You use a _scheduled trigger_ to specify when the _Test_ stage runs.
 * The _Staging_ stage runs only after you approve the changes in the _Test_ stage. You add a _release approval_ to the **staging** environment to pause the pipeline until you approve or reject the change.

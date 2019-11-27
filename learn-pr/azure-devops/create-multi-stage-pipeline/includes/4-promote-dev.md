@@ -1,6 +1,8 @@
-The team has a plan and is ready to begin implementing their release pipeline. You've set up your Azure DevOps project, and your Azure App Service instances are ready to receive build artifacts.
+The team has a plan and is ready to begin implementing their release pipeline. You've set up your Azure DevOps project, and your Azure App Service instances are ready to receive build artifacts. 
 
 At this point, remember that the team's pipeline has only two stages. The first stage produces the build artifact. The second stage deploys the _Space Game_ web application to App Service. Here you follow along with Andy and Mara as they modify the pipeline. They'll deploy to the App Service environment that corresponds to the _Dev_ stage.
+
+The _Dev_ stage resembles the deployment stage that you made in the [Create a release pipeline in Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true) module. There, you used a CI trigger to start the build process. Here you do the same.
 
 ## Fetch the branch from GitHub
 
