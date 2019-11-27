@@ -1,27 +1,37 @@
-Here is a brief summary of the important concepts learned in this module:
+---
+title: Summary
+---
 
-- Securing access to resources, whether on-premises or in the cloud, requires us to identify the users accessing those resources.
+Here are some of the important concepts covered in this module:
 
-- For authenticating web-site users, relying on a trusted third-party identity provider offers a number of advantages over implementing authentication yourself. Among those advantages are tighter security, support for single sign-on (SSO), and reduced development time.
+-   Virtualization is a key enabling technology for cloud computing. It allows the provisioning of virtual hardware images (virtual machines, or VMs) from underlying physical machines.
 
-- With third-party identity providers, user credentials are stored by the provider and are never seen by the application.
+-   There are two types of VMs: process VMs and system VMs. VMs created in the cloud are system VMs.
 
-- Cloud service providers offer identity-provider services, as do popular social-media companies such as Facebook and Twitter.
+-   A system VM provides a complete system environment. An operating system can run in a system VM.
 
-- Identity information regarding users within an organization (for example, a company) are usually stored in directory services such as Active Directory.
+-   An underlying physical machine is called a host, and an operating system running in a system VM is called a guest operating system.
 
-- Directory services store identities for users, groups, and applications.
+-   Virtualization enhances cloud elasticity by allowing providers and users to expand or contract services manually or automatically.
 
-- Federation allows users accessing cloud resources to be authenticated using on-premises directory systems.
+-   Virtualization provides resource sandboxing by making it difficult for one cloud user to observe or alter another\'s data and activity.
 
-- Synchronization allows users accessing cloud resources to be authenticated using cloud-based directory systems whose contents are synced with on-premises directory systems.
+-   Virtualization provides fault containment by preventing a software failure in one virtual machine (VM) from propagating to another VM, even if both are hosted on the same physical machine.
 
-- Guest accounts allow users accessing an organization's resources to be authenticated using identities established outside the organization.
+-   Virtualization supports server consolidation by allowing multiple VMs to run on a single physical machine, thereby improving system utilization and reducing costs.
 
-- Federation, synchronization, and guest accounts reduce account sprawl and simplify identity management and access control.
+-   Although virtualization allows running multiple VMs side by side on the same host, it provides full isolation (security, resource, and failure isolation) between VMs.
 
-- Role-based access control (RBAC) is used to implement identity and access management (IAM) in cloud solutions.
+-   A VM can run only at a single host at a certain point in time, yet can be migrated to a different host at a different point in time.
 
-- Roles specify actions that can be performed on resources and are assigned to users and groups.
+-   A system VM can offer resources different in quantity and in type than the physical machine that hosts it. For example, a host can contain one Intel IA-32 physical CPU, while a VM can include eight PowerPC virtual CPUs that all map to the single physical CPU.
 
-- Roles can be applied to individual resources, groups of resources, subscriptions, and in some cases, groups of subscriptions. The level at which a role is applied is termed the resource scope.
+-   In multi-tenant networks, there is a strong need for virtualization, as overlay networks are constructed to allow tenants to flexibly share network resources.
+
+-   Networks can be virtualized, too, and virtual networks (VNets) are just as vital to cloud computing as virtual machines.
+
+-   Virtual networks can be provisioned, migrated, reconfigured, and snapshotted just like virtual machines.
+
+-   Containers are an emerging technology that provide many of the benefits of virtualization without some of the drawbacks.
+
+-   Containers abstract operating systems while virtual machines abstract entire machines, including the hardware.
