@@ -22,13 +22,13 @@ In summary, a process VM is similar to a regular process running on an OS. Howev
 
 Unlike process VMs, a system VM virtualizes an entire machine by virtualizing a complete set of hardware resources including processors, memory, and I/O devices. The virtualization software, or *hypervisor*, which is also known as a *virtual-machine monitor* (VMM), sits between the hardware and the operating system and creates the illusion that the operating system and the applications it hosts are running on stand-alone machines (Figure 4.2).
 
-![(C) CMU Cloud Computing Course](media/image2.png){width="4.4375in" height="3.5in"}
+![(C) CMU Cloud Computing Course](../media/fig4-2.png)
 
 _Figure 4.2: System VM._
 
 The hypervisor manages the allocation of and access to underlying hardware resources. It allows multiple VMs to run side by side and gives each VM the illusion of owning all of those resources. The physical machine is called the *host*, and an operating system running in a VM on a host is called a *guest operating system*, or guest OS (Figure 4.3). Every VM can be booted, shut down, and rebooted just like a regular host. A VM can only run on one host at a time, but it can be shut down, moved to another host, and started there. Thus, while a VM can only be running on one host at a given point in time, it can be migrated to different hosts over a span of time.
 
-![https://oli.cmu.edu/repository/webcontent/0ea6fc470a0001dc68390ea2588ab51d/\_u03\_virtualizing\_resources\_for\_cloud/\_u03\_m02\_virtualization/webcontent/virtualization\_on\_entire\_physical\_system.png](media/image3.png){width="6.5in" height="4.925in"}
+![https://oli.cmu.edu/repository/webcontent/0ea6fc470a0001dc68390ea2588ab51d/\_u03\_virtualizing\_resources\_for\_cloud/\_u03\_m02\_virtualization/webcontent/virtualization\_on\_entire\_physical\_system.png](../media/fig4-3.png)
 
 _Figure 4.3: Single system hosting multiple VMs._
 
@@ -42,6 +42,6 @@ Unlike a process VM, a system VM can present to the operating system and applica
 
 Data centers that offer cloud computing as a service to customers use system VMs to virtualize workloads and consolidate servers. From this point forward, when we use the term "virtual machine" or "VM," we are referring to system VMs unless otherwise specified. In the next lesson, we will discuss how system VMs benefit cloud computing and why cloud computing might not even exist -- and certainly could not be as cost-effective -- without virtualization.
 
-\[Activity M3-P1-A, M3-P1-B, M3-P1-C, M3-P1-D\]
+### References
 
-[^1]: Barham et al. (2003). \"Xen and The Art of Virtualization.\" In Proceedings of the nineteenth ACM symposium on operating systems principles (SOSP \'03). ACM, New York, NY, USA.
+1. _Barham et al. (2003). \"Xen and The Art of Virtualization.\" In Proceedings of the nineteenth ACM symposium on operating systems principles (SOSP \'03). ACM, New York, NY, USA._
