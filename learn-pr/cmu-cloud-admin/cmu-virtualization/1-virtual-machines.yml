@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.cmu-virtualization.1-cloud-identity-management
-title: Cloud identity management
+uid: learn.cmu-cloud-admin.cmu-virtualization.1-virtual-machines
+title: 
 metadata:
-  title: Cloud identity management
-  description: Cloud Identity Management
+  title: 
+  description: 
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
@@ -11,14 +11,14 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 13
 content: |
-  [!include[](includes/1-cloud-identity-management.md)]
+  [!include[](includes/1-virtual-machines.md)]
 quiz:
   title: Check your knowledge
   questions:
 
-    - content: "Which of the following choices isn't an advantage of using a third-party identity provider for authentication to use web applications?"
+    - content: ""
       choices:
-      - content: "Better application performance"
+      - content: ""
         isCorrect: true
         explanation: "Correct. There's no guarantee that an application's performance will be improved by using a third-party identity provider. In fact, there are cases where certain activities may be slower, because of the need to contact external services. However performance impact is usually outweighed by the security benefits of this approach."
       - content: "Stronger security"
