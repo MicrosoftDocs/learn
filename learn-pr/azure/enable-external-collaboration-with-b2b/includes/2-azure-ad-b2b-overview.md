@@ -7,7 +7,7 @@ Here, you'll have a brief overview of the concepts you need to understand to use
 
 Your organization needs to work with external users. To collaborate with your organization, these users will need to have their required level of access to the applications. Azure Active Directory B2B is a service in Azure that enables you to collaborate with your external partners in a secure manner. Your partner users are invited as guest users. You remain in control of what they should have access to, and for how long.
 
-The typical Azure AD B2B process goes as follows:
+Azure AD B2B let's you collaborate with your external partner users through the following process:
 
 ![Azure AD B2B overview](../media/2-guest-user.png)
 
