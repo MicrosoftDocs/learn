@@ -9,7 +9,7 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 13
+durationInMinutes: 11
 content: |
   [!include[](includes/1-virtual-machines.md)]
 quiz:
@@ -30,6 +30,7 @@ quiz:
       - content: "Hyperhost"
         isCorrect: false
         explanation: "Incorrect. A hypervisor creates and manages virtual machines, typically using a combination of firmware and software."
+    
     - content: "Given that each virtual machine runs its own guest operating system, can two different operating systems (for example, Linux and Windows) run side by side in two VMs on the same host?"
       choices:
       - content: "Yes"
@@ -38,6 +39,7 @@ quiz:
       - content: "No"
         isCorrect: false
         explanation: "Incorrect. One of the benefits of virtualization is that guest operating systems running in different VMs do not have to be identical."
+    
     - content: "True or false? When a VM is rebooted, the host also has to be rebooted."
       choices:
       - content: "True"
@@ -46,6 +48,7 @@ quiz:
       - content: "False"
         isCorrect: true
         explanation: "Correct! VMs can be rebooted without rebooting the computer that hosts them."
+    
     - content: "Which of the following statements is true?"
       choices:
       - content: "A system VM can present an ISA different than that of the host system to the applications that it hosts, but a process VM cannot."
