@@ -15,3 +15,5 @@ By the end of this module, you will be able to identify situations where Azure R
 
 - Familiarity with HTTP requests and responses
 - Familiarity with C# programming
+- Git installed locally
+- Visual Studio Code installed locally
