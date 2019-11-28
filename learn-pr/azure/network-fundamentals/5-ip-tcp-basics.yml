@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.network-fundamentals.intro-ip-tcp-basics
-title: What is enterprise state roaming?
+uid: learn.azure.network-fundamentals.ip-tcp-basics
+title: IP address standards and services
 metadata:
-  title:  What is enterprise state roaming?
-  description: Learn about enterprise state roaming
+  title: IP address standards and services
+  description: Explore the IP address standards and services to use when implementing an Internet-based network.
   ms.date: 10/08/2019
   author: cwatson-cat
   ms.author: cwatson
@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 13
 content: |
-  [!include[](includes/5-intro-ip-tcp-basics.md)]
+  [!include[](includes/5-ip-tcp-basics.md)]
 quiz:
   title: "Check your knowledge"
   questions:

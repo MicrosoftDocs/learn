@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.network-fundamentals.intro-network-protocols
-title: Introduction to network protocols
+uid: learn.azure.network-fundamentals.network-protocols
+title: Network protocols to use when implementing a network
 metadata:
-  title:  Introduction to network protocols
-  description: An introduction to network protocols including.
+  title:  Network protocols to use when implementing a network
+  description: Explore the network protocols to use when implementing services on a network.
   ms.date: 25/10/2019
   author: cwatson-cat
   ms.author: cwatson
@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 13
 content: |
-  [!include[](includes/4-intro-network-protocols.md)]
+  [!include[](includes/4-network-protocols.md)]
 quiz:
   title: "Check your knowledge"
   questions:

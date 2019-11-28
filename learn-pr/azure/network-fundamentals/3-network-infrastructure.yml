@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.network-fundamentals.intro-network-infrastructure
-title: Network Hub, Switches, and Routers
+uid: learn.azure.network-fundamentals.network-infrastructure
+title: Types of network devices to use when building a network
 metadata:
-  title:  Network Hub, Switches, and Routers
-  description: Discover the purpose and use of hubs, switches, and routers in your network architecture.
+  title:  Types of network devices to use when building a network
+  description: Explore network standards as well as the purpose and use of repeaters, hubs, switches, and routers when building networks.
   ms.date: 24/10/2019
   author: cwatson-cat
   ms.author: cwatson
@@ -12,7 +12,7 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 11
 content: |
-  [!include[](includes/3-intro-network-infrastructure.md)]
+  [!include[](includes/3-network-infrastructure.md)]
 quiz:
   title: "Check your knowledge"
   questions:
