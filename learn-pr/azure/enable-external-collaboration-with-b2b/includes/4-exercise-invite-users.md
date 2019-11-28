@@ -34,14 +34,17 @@ By default, all users and guest users can invite external users. Make sure that 
 
 Invite a guest user to add them to your directory.
 
-1. Select **Azure Active Directory > Users > New Guest user**.
+1. Select **Azure Active Directory > Users > New Guest user**. 
 
     ![Send an invitation](../media/4-send-invitation.png)
 
-1. Use your guest user's email address for the **Email address** field.
+1. Use your guest user's email address for the **Email address** field. For the purpose of this exercise, enter an email address that you can access, but don't use the same email address you use for your Azure account.
+
 1. For the personal message text area, you can write your own customized invitation message.
+
 1. Select **Invite** to send your invitation.
-1. The user will receive an email, they will select **Get Started**.
+
+1. An invitation email will be sent to the email address you've specified. Go to the email inbox. Open the email. Select **Get started**.
 
     ![text](../media/4-email-confirmation.png)
 
@@ -71,15 +74,28 @@ Now give your guest user access to an application.
 
     ![Screenshot showing the All applications pane](../media/4-new-application.png)
 
-1. In the search box look for GitHub, then select **GitHub.com** in the returned list, then select **Add**.
+1. In the search box look for Twitter, then select **Twitter** in the returned list, then select **Add**.
 
-    ![text](../media/4-add-github.png)
+    ![text](../media/4-add-application.png)
 
-1. Go to your newly added application. Select **Azure Active Directory > Enterprise applications > All applications**, then select **GitHub.com**.
+1. Go to your newly added application. Select **Azure Active Directory > Enterprise applications > All applications**, then select **Twitter**.
+
 1. On the overview page, select **Assign users and groups**, then select **Add user**.
+
 1. In the Add Assignment form, select **Users**.
 
     ![Add a user to the application](../media/4-add-user-to-application.png)
 
 1. Select your user in the list of users, then select **Select**.
+
 1. Select **Assign** at the bottom of the form.
+
+## Guest user experience
+
+1. Once you've added your guest user to your application, go back to your guest email inbox and select the **Get Started** link in the invitation email.
+
+1. You'll be forwarded to the access panel.
+
+    ![Access panel](../media/4-access-panel.png)
+
+1. The access panel lists the applications the guest user has been allowed to access. To access an application, you select the application you want.
