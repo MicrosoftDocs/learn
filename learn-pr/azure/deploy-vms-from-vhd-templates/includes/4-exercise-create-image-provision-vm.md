@@ -276,7 +276,7 @@ az image create \
                     --output tsv)
     ```
 
-1. In the web browser, go to the public IP address of the new virtual machine. Verify that a webpage displays the name of the virtual machine from which the image was built, *MyUbuntuVM*.
+1. In the web browser, go to the public IP address of the new virtual machine. Verify that a webpage displays the name of the virtual machine from which the image was built, *MyVMFromImage*.
 
 ::: zone-end
 
@@ -311,6 +311,6 @@ az image create \
                     --output tsv)
     ```
 
-1. In the web browser, go to the public IP address of the new virtual machine. Verify that a webpage displays the name of the virtual machine from which the image was built, *MyWindowsVM*.
+1. In the web browser, go to the public IP address of the new virtual machine. Verify that a webpage displays the name of the virtual machine from which the image was built, *MyVMFromImage*.
 
 ::: zone-end

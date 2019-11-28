@@ -30,13 +30,13 @@ Your pipeline tasks require access to SonarCloud. Here you create a service conn
 1. From Azure DevOps, navigate to your project.
 1. Select **Project settings** in the lower corner.
 1. Under **Pipelines**, select **Service connections**.
-1. Select **New service connection**, and then select **SonarCloud**.
+1. Select **New service connection**, then select **SonarCloud**, and then select **Next**.
 
     SonarCloud appears here because you installed the SonarCloud extension in the previous step.
 1. In the dialog box that appears, enter these fields:
 
-    * **Connection name**: **SonarCloud connection 1**
     * **SonarCloud Token**: This is the login token that you worked with in the previous part.
+    * **Connection name**: **SonarCloud connection 1**
 
     You can print your `SONAR_LOGIN` Bash variable if you need to get this value.
 
@@ -44,10 +44,9 @@ Your pipeline tasks require access to SonarCloud. Here you create a service conn
     echo $SONAR_LOGIN
     ```
 
-1. Select **Verify connection**.
+1. Select **Verify and save**.
 
-    You see that the connection is verified. ![Creating the SonarCloud service connection from Azure DevOps](../media/3-sonar-cloud-service-connection.png)
-1. Select **OK**.
+    Azure DevOps performs a test connection to verify that it can connect to Sonar Cloud. If Azure DevOps is unable to connect, you'll have the chance to sign in a second time.
 
 ## Create pipeline variables
 
