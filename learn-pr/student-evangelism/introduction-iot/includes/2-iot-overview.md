@@ -7,8 +7,6 @@ The Azure Internet of Things (IoT) is a collection of Microsoft-managed cloud se
 
 **Back-end services:** The back-end services receive telemetry data at scale from the devices and determine how to process and store that data. They also communicate with the device and manage the device lifecycle by controlling and monitoring the state of the device.
 
-## Azure IoT Value
-
 Azure IoT enables you to:
 
 **Reimagine your business processes** by reducing data silos between Customers, Operations, Products/Assets, and Employees.

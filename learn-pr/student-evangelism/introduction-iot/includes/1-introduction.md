@@ -10,6 +10,7 @@ Suppose you run a logistics company responsible for transporting fruit and other
 
 ![An illustration is showing how IoT solutions are used by logistics company.](../media/iot.png)
 
+This module is a part of the AI Edge Engineer learning path. In this module, several engineering themes can be explored – especially the impact of IoT on other domains such as logistics. From an engineering standpoint, we view the entire process from the farm to retailer as a single holistic system. Through IoT, we capture data to understand, monitor and predict the behaviour of individual components – and the entire system.  To successfully build this solution, we need to consider design, safety, aesthetics and scale.
 
 ## Learning objectives
 

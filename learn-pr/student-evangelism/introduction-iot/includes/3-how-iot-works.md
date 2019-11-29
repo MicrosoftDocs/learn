@@ -16,7 +16,7 @@ Platform-as-a-Service (PaaS) technologies provide a granular option to control a
 ### 1) Device Support
 Azure IoT provides various means to support a range of devices. These include Azure IoT Device SDK,  Azure IoT certified devices, Security Program for Azure IoT and Windows 10 IoT.
 
-###  2) IoT
+### 2) IoT
 The suite of IoT technologies include:
 
 **Azure IoT Hub:** Azure IoT Hub is a managed service that enables bidirectional communications between millions of IoT devices and a solution back end. IoT Hub allows you to Connect, manage and scale billions of IoT devices from the edge to the cloud.
@@ -37,10 +37,10 @@ Thus, Azure sphere allows you to build new devices and connect existing equipmen
 
 **Azure Maps:** Azure Maps is a collection of geospatial services that use fresh mapping data to provide accurate geographic context to web and mobile applications. You can add spatial analytics, mapping services and mobility services to your app using APIs.
 
-###  3) Data and Analytics
+### 3) Data and Analytics
 **Azure Machine Learning:** Azure machine learning represents a suite of products to build, train, and deploy machine learning models in Azure. Data and analytics solutions from Azure represent a set of solutions to store and analyze IoT data. These include Azure Stream Analytics, Azure Hdinsight, Azure Data Lake, Azure Cosmos DB, and Azure Data Fabric. You can also build your system using Azure functions to enable a serverless application. Azure Functions enable you to run small pieces of code, or "functions," in the cloud.  These functions can then be combined to create a more comprehensive application. You pay only for the time your code runs (serverless application).
 
-###  4) Visualization and Integration
+### 4) Visualization and Integration
 Visualization and Integration solutions for IoT solutions include Microsoft Flow, Azure Logic Apps, Azure Web App, Notification Hubs, Azure Active Directory, Microsoft Power BI, Azure Monitor, and Power Apps.
 
 ## How do Azure IoT components fit together to solve the scenario  
