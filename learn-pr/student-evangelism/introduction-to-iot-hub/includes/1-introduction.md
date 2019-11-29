@@ -14,7 +14,7 @@ Your solution needs to extend beyond the basic telemetry service. To manage thes
 
 Data thus managed by Azure IoT Hub from a diverse set of sensors can be used as a foundation for your analytics solution in the cloud.
 
-![An illustration showing the flow for IoT devices connecting to IoT Hub, and managing and controlling by IoT Hub.](../media/iot-hub.png)
+![An illustration showing the flow for IoT devices connecting to IoT Hub, and managing and controlling by IoT Hub.](../media/iot-hub-architecture.png)
 
 This module is a part of the AI Edge Engineer learning path.  In this module, we explore systems thinking approaches to solving complex, multi-faceted problems. Systems thinking is based on the idea that the component parts of a system will act differently when analysed on their own. The systems thinking approach studies the system in a holistic manner by examining the inter-relationships and interactions between the components of the entire system.  The approach can be used to model complex problems like traffic management where each actor (such as a vehicle) can act autonomously and each actor is evolving in capability. 
 
