@@ -31,7 +31,7 @@ Thinking about security is part of every phase of your development lifecycle. Mi
 In this module, you learned about some of the tools and processes you can use to analyze your code. Here's where you can learn more:
 
 * [OWASP](http://www.owasp.org?azure-portal=true)
-* [Roslyn analyzers](https://docs.microsoft.com/visualstudio/code-quality/roslyn-analyzers-overview?view=vs-2017#source-code-analysis-versus-legacy-analysis&azure-portal=true)
+* [Roslyn analyzers](https://docs.microsoft.com/visualstudio/code-quality/roslyn-analyzers-overview?view=vs-2017#source-code-analysis-versus-legacy-analysis)
 * [Common Weakness Enumeration](https://cwe.mitre.org/index.html?azure-portal=true) (CWE)
 * [Common Vulnerabilities and Exposures](https://cve.mitre.org/cve/?azure-portal=true) (CVE)
 * [Microsoft Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/?azure-portal=true)
