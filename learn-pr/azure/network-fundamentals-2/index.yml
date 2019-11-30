@@ -1,22 +1,24 @@
 ### YamlMime:Module
 uid: learn.azure.network-fundamentals-2
 metadata:
-  title: Networking Fundamentals - Topology
-  description: Learn about client and servers, and the building blocks of a network with hubs, switches and routers.
+  title: Networking Fundamentals - Security
+  description: Explore the fundamentals of computer networking security and monitoring.
   ms.date: 24/10/2019
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Networking Fundamentals - Topology
-summary: Learn about client and servers, and the building blocks of a network, with hubs, switches and routers.
+title: Networking Fundamentals - Security
+summary: Explore the fundamentals of computer networking security and monitoring.
 abstract: | 
   In this module, you will:
-  - 1. Identify the difference between a client and a server.
-  - 1. Identify the differences between hubs, switches and routers.
-  - 1. Understand how these elements map to Azure networking services and systems
+  - Describe the client-server network model
+  - Describe the difference between authentication and authorization
+  - List the different network firewall options
+  - List the types of items to monitor in a network
+  - Map core network components to Azure networking
 prerequisites: | 
-  - None
+  - Network Fundamentals - Principals
 iconUrl: /learn/achievements/network-fundamentals-2.svg
 levels:
 - beginner
@@ -29,7 +31,9 @@ products:
 units:
 - learn.azure.network-fundamentals-2.introduction
 - learn.azure.network-fundamentals-2.basic-client-server
-- learn.azure.network-fundamentals-2.hub-switches-routers
+- learn.azure.network-fundamentals-2.authentication-authorization
+- learn.azure.network-fundamentals-2.firewalls-network-security
+- learn.azure.network-fundamentals-2.network-monitoring
 - learn.azure.network-fundamentals-2.summary
 badge:
   uid: learn.azure.network-fundamentals-2.badge
