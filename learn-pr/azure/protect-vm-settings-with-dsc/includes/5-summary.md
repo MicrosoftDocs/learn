@@ -11,6 +11,6 @@ In particular, you've seen how to:
 ## Learn more
 
 - [Install and configure WMF 5.1](https://docs.microsoft.com/powershell/scripting/wmf/setup/install-configure)
-- [Troubleshoot DSC - WinRM dependency](https://docs.microsoft.com/powershell/scripting/dsc/troubleshooting/troubleshooting#winrm-dependency)
+- [Troubleshoot DSC - WinRM dependency](https://docs.microsoft.com/powershell/scripting/dsc/troubleshooting/troubleshooting?view=powershell-6#winrm-dependency)
 - [PowerShell DSC for Linux](https://github.com/Microsoft/PowerShell-DSC-for-Linux)
 - [DSC Resource Kit](https://www.powershellgallery.com/packages?q=Tags%3A%22DSCResourceKit%22)
