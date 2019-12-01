@@ -22,4 +22,4 @@ Take a deeper dive into the documentation. The following ASP.NET Core features a
 
 * [Dependency Injection](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2)
 
-* [Make HTTP requests using a Typed Client pattern](https://docs.microsoft.com/aspnet/core/fundamentals/http-requests?view=aspnetcore-2.2#consumption-patterns)
+* [Make HTTP requests using a Typed Client pattern](https://docs.microsoft.com/aspnet/core/fundamentals/http-requests#consumption-patterns-1)

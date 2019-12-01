@@ -114,7 +114,7 @@ To check which version of PowerShell you have on your computer, run this command
 $PSVersionTable.PSVersion
 ```
 
-If you have an outdated version or need to install PowerShell, see [Installing various versions of PowerShell](https://docs.microsoft.com/powershell/scripting/setup/installing-powershell). You can find links to installation
+If you have an outdated version or need to install PowerShell, see [Installing various versions of PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell). You can find links to installation
 information for your platform on that page.
 
 If you're using PowerShell 5.*x* on Windows, you also need to have .NET Framework 4.7.2 installed. For instructions
