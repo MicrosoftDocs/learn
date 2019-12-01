@@ -1,18 +1,18 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.network-fundamentals.intro-network-standards-protocols
-title: Introduction to Network Standards and Protocols
+uid: learn.azure.network-fundamentals.network-protocols
+title: Network protocols to use when implementing a network
 metadata:
-  title:  Introduction to Network Standards and Protocols
-  description: An introduction to network standards and protocols including network security and network management protocols.
+  title:  Network protocols to use when implementing a network
+  description: Explore the network protocols to use when implementing services on a network.
   ms.date: 25/10/2019
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 10
+durationInMinutes: 13
 content: |
-  [!include[](includes/2-intro-network-standards-protocols.md)]
+  [!include[](includes/4-network-protocols.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -32,27 +32,27 @@ quiz:
     choices:
     - content: "FTP"
       isCorrect: false
-      explanation: "FTP is a file transfer protocol. POP3, SMPT, and IMAP are the core email protocols"
+      explanation: "FTP is a file transfer protocol. POP3, SMPT, and IMAP are the core email protocols."
     - content: "TCP"
       isCorrect: false
       explanation: "The Transmission Control Protocol is used for controlling the message. POP3, SMPT, and IMAP are the core email protocols. "
     - content: "SMTP"
       isCorrect: true
-      explanation: "POP3, SMTP, and IMAP are all email protocols"
+      explanation: "POP3, SMTP, and IMAP are all email protocols."
 
-  - content: "Which network security protocol provides a cryptographic network security protocol?"
+  - content: "Which network security protocol provides a cryptographic network protocol?"
     choices:
-    - content: "IPSec"
+    - content: "SNMP"
       isCorrect: false
-      explanation: "IPSec is not a cryptographic protocol"
+      explanation: "SNMP is a protocol that allows for the collection of data from devices on your network, and the management of those devices."
     - content: "HTTP"
       isCorrect: false
-      explanation: "HTTP is an unsecured network protocol."
+      explanation: "HTTP is an unsecured network protocol that delivers web page content from a server to our browser."
     - content: "SSH"
       isCorrect: true
-      explanation: "Is a network protocol that provides cryptographic network security protocols."
+      explanation: "SSH is a network protocol that provides a cryptographic network protocol to operate services securely over an unsecured network." 
   
-  - content: "What is ICMP used for?"
+  - content: "What is the Internet Control Message Protocol (ICMP) used for?"
     choices:
     - content: "To send alerts when an intrusion is detected."
       isCorrect: false
@@ -64,7 +64,7 @@ quiz:
       isCorrect: true
       explanation: "ICMP is a protocol for sending the success or failure of any network operation."
 
-  - content: "What would you use SNMP for?"
+  - content: "What would you use Simple the Network Management Protocol (SNMP) for?"
     choices:
     - content: "For collecting and organizing information about email servers on your IP network."
       isCorrect: false
