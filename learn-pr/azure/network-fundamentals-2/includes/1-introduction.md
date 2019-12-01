@@ -16,4 +16,3 @@ In this module, you'll learn:
 ## Prerequisites
 
 - Network Fundamentals – Principals
-- Network Fundamentals – Topology
