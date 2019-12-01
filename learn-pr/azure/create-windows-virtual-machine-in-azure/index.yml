@@ -2,7 +2,7 @@
 uid: learn.create-a-windows-vm-in-azure
 metadata:
   title: Create a Windows virtual machine in Azure
-  description: Azure virtual machines (VMs) enable you to create dedicated compute resources in minutes that can be used just like a physical desktop or server machine. Whether your virtual machine is a server that you connect to for administration purposes, or a virtual workstation for an end user, the remote desktop protocol (RDP) gives the same experience as sitting at the terminal of a local physical computer.
+  description: Learn to create an Azure virtual machine in minutes that can be used like a local physical desktop or server.
   ms.date: 09/24/2018
   author: cryophobia
   ms.author: chrvaw
