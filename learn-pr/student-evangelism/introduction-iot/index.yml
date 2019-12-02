@@ -2,19 +2,22 @@
 uid: learn.oxford.intro-to-iot
 metadata:
   title: "Introduction to Azure IoT"
-  description: "In this module, we'll introduce various features and capabilities of Azure IoT"
+  description: "University of Oxford"
   ms.date: 10/29/2019
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
 title: "Introduction to Azure IoT"
-summary: "Explain the significance of Azure IoT and the problems it solves. Describe Azure IoT components and explain how you combine them to solve IoT solutions, which create value for enterprises.
-***Contributed by University of Oxford [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
+summary: "Explain the significance of Azure IoT and the problems it solves. Describe Azure IoT components and explain how you combine them to solve IoT solutions, which create value for enterprises."
+
 abstract: | 
   In this module, you will:
   -  Evaluate whether Azure IoT can address the problems associated with large-scale IoT deployment
-  -  Describe how the components of Azure IoT work together to build a cloud-based IoT solution
+  -  Describe how the components of Azure IoT work together to build a cloud-based IoT solution0
+     
+  "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence:Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
+
 prerequisites: |
     None
 iconUrl: /learn/achievements/student-evangelism/introduction-iot-badge.PNG
