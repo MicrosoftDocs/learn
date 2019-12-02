@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.network-fundamentals-2.firewalls-network-security
-title: Understand Firewalls and Network Security
+title: Understand firewalls and network security
 metadata:
-  title:  Understand Firewalls and Network Security
+  title:  Understand firewalls and network security
   description: Understanding what firewalls are and how to use them, and network security.
   ms.date: 15/12/2019
   author: cwatson-cat
