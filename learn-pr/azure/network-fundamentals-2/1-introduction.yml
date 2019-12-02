@@ -3,13 +3,12 @@ uid: learn.azure.network-fundamentals-2.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Learn the fundamentals of computer networking security. You'll cover the core difference between authentication and authorization. You'll also explore monitoring of network access and traffic usage. Finally, you'll explore network security and how firewalls can be used to protect your network and your organizations assets and resources.  The content of this module will prepare you for the Azure Admin and Developer learning paths.
-  ms.date: 24/10/2019
+  description: Learn the fundamentals of computer networking security. You'll cover the core difference between authentication and authorization. You'll also explore monitoring of network access and traffic usage. Finally, you'll explore network security and how firewalls can be used to protect your network and your organizations assets and resources.
+  ms.date: 15/12/2019
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

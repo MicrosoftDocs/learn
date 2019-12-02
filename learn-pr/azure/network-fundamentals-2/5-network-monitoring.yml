@@ -2,14 +2,13 @@
 uid: learn.azure.network-fundamentals-2.network-monitoring
 title: Network Monitoring
 metadata:
-  title:  Using monitoring in your network
+  title: Use monitoring in your network
   description: Understand how to use monitoring to protect your network.
-  ms.date: 24/10/2019
+  ms.date: 15/12/2019
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
   [!include[](includes/5-network-monitoring.md)]

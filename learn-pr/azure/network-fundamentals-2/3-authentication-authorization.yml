@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.network-fundamentals-2.authentication-authorization
-title: Using Authentication and Authorization in your network
+title: Use Authentication and Authorization in your network
 metadata:
-  title:  Using Authentication and Authorization in your network
+  title:  Use Authentication and Authorization in your network
   description: Understand how authentication and authorization can protect your network.
-  ms.date: 24/10/2019
+  ms.date: 15/12/2019
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 9
 content: |
   [!include[](includes/3-authentication-authorization.md)]
