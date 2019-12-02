@@ -1,33 +1,67 @@
-Identity plays an important role in cloud administration because permissions applied to cloud resources are useless if we don't know who is accessing those resources. If Bob lacks permission to delete a VM but attempts to delete it anyway, we can only stop him if we know that it's Bob. However, if Bob is one of thousands of employees in the organization and permissions must be defined for each individual user and each individual cloud resource, IT will be overwhelmed trying to lock everything down so that only users who *should* be able to access those resources *can* access those resources.
+---
+title: Scaling
+---
 
-As we will learn later, permissions can be applied not only to individual cloud resources, but to groups of cloud resources. Similarly, users such as Bob can be placed into groups and permissions applied to cloud resources can reference user groups as well as individual users. Modern identity-management systems support the concept of user groups in order to simplify cloud administration and reduce the likelihood of error. An administrator is less likely to make a mistake if she can apply permissions at the group level rather than for each and every individual.
++---------------------------------------------------------------------------+
+| # Learning Objectives                                                     |
++===========================================================================+
+| Enumerate the strategies and considerations in scaling cloud applications |
++---------------------------------------------------------------------------+
 
-Identity-management systems must be able to assign identities to groups as well as individual users. But that's not all. A person might authenticate by entering a user name and password or placing a finger on a biometric reader. Software applications sometimes have to authenticate, too, because they may communicate with other services or applications that will only respond if they know the identity of the caller. As such, it is just as important to be able to assign identities to applications as it is to assign them to users and groups of users.
+One of the important advantages of the cloud is the ability to scale resources into a system on-demand. Scaling up (provisioning larger resources) or scaling out (provisioning additional resources) can help in reducing the load on a system by decreasing utilization as a result of increased capacity or broader distribution of the workload.
 
-The consequence of all this is that enterprise directory services support three types of entities: users, groups of users, and applications. Users represent people in an organization. Groups are collections of users or other entities, and application entities enable identities to be assigned to running applications. Collectively, these are known as *security principals*. Let's examine the three types of security principals and discuss their importance to cloud administration.
+Scaling can help improve responsiveness (and perceived performance from the user's perspective) by increasing the throughput since a larger number of requests can now be served. This can also help in decreasing latency during peak loads since a reduced number of requests are queued during peak loads on a single resource. In addition, scaling can improve the reliability of the system by reducing resource utilization and preventing it from nearing the breaking point.
 
-## Users
+It is important to note that although the cloud enables us to easily provision newer or better resources, cost is always an opposing factor that needs to be considered. Therefore, even though it is beneficial to scale up or out, it is also important to recognize when to scale in or down in order to conserve costs. In an *n*-tier application, it is also essential to pinpoint where the bottlenecks are and which tier to scale, whether it is the data tier or the server tier.
 
-A user is a registered identity that has permission to perform some function (or set of functions) within a computer system. One user might be granted permission to upload data to a storage service provisioned in the cloud but have no ability to provision or deprovision such services. Another might have more global permissions that allow them to provision and deprovision services at will.
+# Horizontal Scaling (Scaling In and Out)
 
-Users are abstractions over individual persons within an organization. As such, they have attributes that might include names, phone numbers, addresses, and other features that distinguish one person from another (Figure 3.2). These attributes also help to make user information human-readable. It is easier for an administrator to refer to "Laurel King" than "48d31887-5fad-4d73-a9f5-3c356e68a038". Modern directory services enable administrators to define the attributes stored on behalf of individual users using whatever schema makes sense for the organization.
+Horizontal scaling is a strategy whereby additional resources are added to the system or extraneous resources are removed from the system over time. This type of scaling is beneficial for the server tier when the load on the system fluctuates inconsistently or in an unpredictable manner. The nature of the fluctuating load makes it essential to provision the correct amount of resources to handle the load at all times.
 
-![Figure 3.2: Example of the attributes describing a user](../media/fig3-2.png)
+A few considerations that make this a challenging task is the spin-up time of an instance (for example, a virtual machine), the pricing model of the cloud service provider, and the potential loss in revenue from degrading Quality of Service (QoS) by not scaling out in time. As an example, consider the load pattern in Figure 5.5:
 
-_Figure 3.2: Example of the attributes describing a user._
+![A close up of a map Description automatically generated](media/image1.png){width="6.5in" height="3.196527777777778in"}
 
-## Groups
+Figure 5.5: Sample load pattern.
 
-Because an identity system must scale to handle large numbers of users, it is useful to create abstractions over collections of similar users. A key abstraction is the *group*. Groups are named entities in an identity-management system. They can reflect organizational structure (for example, Accounting, Engineering, or IT), job functions (Developer, Tester, or Administrator), geographic locations, or anything else that lends itself to logically organizing users. In most identity-management systems, users can be members of multiple groups, permitting a Developer to be assigned to the Accounting department in the Pittsburgh office. Figure 3.3 shows a group structure that organizes users by department.
+Suppose we are using Amazon Web Services, that each unit of time is equivalent to 1 hour of actual time, and that we require one server to serve 5,000 requests. Demand peaks between units 6 and 8 and units 14 and 16. Let's take the latter as an example. We can detect a fall in demand around time unit 16 and start to reduce the number of allocated resources. Since we are going from roughly 90,000 requests to 10,000 in the space of 3 hours, academically we can save the cost of a dozen or more additional instances that would have been online at time 15.
 
-![Figure 3.3: Users organized into departmental groups](../media/fig3-3.png)
+Figure 5.6 shows a scaling pattern that adjusts the instance count on the fly to match the load pattern, with instance counts shown in red. During times of peak demand, the number of instances is scaled out to 20 and 18, respectively, to provide the resources needed to handle the traffic. At other times, the instance count is reduced (scaled in) to keep resource utilization relatively constant. If we assume that each instance costs 20 cents an hour, then the cost of keeping 20 instances running for 24 hours is \$96. Scaling the instance count as shown reduces the cost to about \$42 for an annualized savings of more than \$15,000 per year. That's a substantial amount of money for almost any IT budget.
 
-_Figure 3.3: Users organized into departmental groups._
+![](media/image2.png){width="6.5in" height="3.1902777777777778in"}
 
-Groups support applying management settings in bulk, which can simplify onboarding and managing users in an organization. As users join an organization, administrators don't have to individually assign specific permissions to new users -- instead, they add users to existing groups and focus on managing group permissions. Assigning permissions at the group level reduces chances for error and makes it easier for administrators to quickly determine what permissions a user has simply by examining the user's group memberships.
+Figure 5.6: Scaling in and out with demand.
 
-## Applications
+Scaling depends on the characteristics of the traffic and its ensuing load generated at a web service. If the traffic follows a predictable pattern -- for example, based on human behavior such as streaming movies from a web service in the evening -- then the scaling can be ***predictive*** in order to maintain the QoS. However, in many instances, the traffic cannot be predicted, and the scaling systems need to be ***reactive*** based on different criteria.
 
-Additional considerations are required when a cloud-hosted application makes calls to a service that requires authentication. Credentials could be stored in configuration data accompanying the application, or they could be embedded in the application's code. Both, however, present a security risk. Credentials stored this way can be read by users who have access to the cloud service that hosts the application, or to the source code of the application itself.
+It is worth noting that scaling in and out can be performed with container instances as well as VM instances. Workloads have traditionally run in the cloud in VMs, but it is becoming increasingly common for them to run in containers. Scaling is achieved with VM-based workloads by increasing and decreasing the VM count. Similarly, container-based workloads may be scaled by varying the number of containers. Because containers tend to start more quickly than VMs, elasticity is slightly greater since new container instances can be brought online in less time than VM instances.
 
-As an alternative, cloud service providers enable the applications that they host to be supplied with an identity assigned by the system at runtime. This feature is known as Managed Identities in Azure and Service Accounts in GCP. AWS provides similar functionality by allowing you to attach roles to instances and leverage them to obtain temporary credentials for the application to use. The fact that the cloud solution "knows" about the application and can provide it with an identity for accessing secured resources removes the need to store credentials such as user names and passwords or access keys with the applications.
+# Vertical Scaling (Scaling Up and Down)
+
+Horizontal scaling is one way to achieve elasticity, but it's not the only way. Suppose the traffic to your web site rarely exceeds 15,000 requests per unit of time and you provision a single large instance that can handle 20,000 -- enough to serve normal traffic rather well and account for minor peaks, too. If the load on the web site grows, you could reasonably accommodate the increase in traffic by replacing the server instance with one that has twice as many CPU cores and twice as much RAM. This is known as *scaling up*.
+
+The primary challenge in vertical scaling is that there is generally some switch-over time that can be considered as down time. This is because in order to move all operations from the smaller instance to a larger instance, even if the switch-over time is mere minutes, the Quality of Service degrades during that interval.
+
+Another limitation of vertical scaling is reduced granularity. If you have 10 server instances online and need to temporarily increase capacity by 10%, you can scale out from 10 instances to 11 and achieve the desired result. With vertical scaling, however, the next larger instance size typically has about twice the capacity of the previous one, which would be the equivalent of horizontally scaling from 10 instances to 20 just to accommodate a 10% increase in traffic. This is less cost-effective than scaling horizontally.
+
+A final consideration to take into account regarding vertical scaling is availability. If you have one large instance serving all of a web site's customers and that instance goes down, the web site goes down, too. By contrast, if you provision 10 small instances to handle the same load and one of them goes down, users might notice a slight decrease in performance, but they will still be able to access the site. Consequently, even if the load is predictable and steadily increasing as the popularity of the service increases, many cloud administrators choose to scale horizontally rather than vertically.
+
+# Scaling the Server Tier
+
+Scalability is sometimes more nuanced than simply provisioning more resources (scaling out) or larger resources (scaling up). On the server tier, increased demand can increase contention for specific types of resources such as CPU, memory, and network bandwidth. Cloud service providers typically offer VMs that are optimized for compute-heavy workloads, memory-intensive workloads, and network-intensive workloads. Knowing your workload and picking the right type of VM is as essential as throwing more or larger VMs at the problem. It is better to have five VMs handling compute-heavy workloads than 10, even if VMs optimized for CPU-intensive workloads cost 20% than more generic VMs.
+
+Increasing hardware resources isn't always the best solution for increasing the performance of a service. Increasing the efficiency of the algorithms used by the service can also reduce resource contention and improve utilization, removing the need to scale physical resources.
+
+An important consideration when it comes to scaling is statefulness (or lack thereof). A stateless service design lends itself to a scalable architecture. A stateless service essentially means that the client request contains all the information necessary to serve a request by the server. The server does not store any client-related information in the instance and does store any session-related information in the server instance.
+
+Having a stateless service helps in switching resources at will, without any configuration required to maintain the context (state) of the client connection for subsequent requests. If the service is stateful, then resource scaling requires a strategy to transfer the context from the existing node configuration to the new node configuration. Note that there are techniques for implementing stateful services -- for example, maintaining a network cache so the context can be shared across servers.
+
+# Scaling the Data Tier
+
+In data-oriented applications, where there are a high number of reads and writes (or both) to a database or storage system, the round-trip time for each request is often limited by hard-disk read and write times. Larger instances allow for higher I/O performance, which can improve seek times on the hard disk and in turn reduce the latency of the service. Whereas having multiple data instances in the data tier can improve the reliability and availability of the application by providing failover redundancies, replicating data across multiple instances has additional advantages in reducing network latency if the client is served by a data center physically closer to it. *Sharding*, or partitioning of the data across multiple resources, is another horizontal data-scaling strategy where instead of simply replicating the data across multiple instances, data is partitioned into segments and stored across multiple data servers.
+
+An additional challenge when it comes to scaling the data tier is that of maintaining consistency (a read operation on all replicas is the same), availability (reads and writes always succeed), and partition tolerance (guaranteed properties in the system are maintained when failures prevent communication across nodes). This is often referred to as the *CAP theorem*, which states that in a distributed database system, it is very difficult to obtain all three properties completely and thus may at most exhibit a combination of two of the properties[^1].
+
+\[Activity M5-P2-A, M5-P2-B\]
+
+[^1]: Wikipedia. *CAP Theorem*. <https://en.wikipedia.org/wiki/CAP_theorem>.

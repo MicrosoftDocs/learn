@@ -1,27 +1,43 @@
-Here is a brief summary of the important concepts learned in this module:
+---
+title: Summary
+---
 
-- Securing access to resources, whether on-premises or in the cloud, requires us to identify the users accessing those resources.
+Here are some of the key points presented in this module regarding elasticity:
 
-- For authenticating web-site users, relying on a trusted third-party identity provider offers a number of advantages over implementing authentication yourself. Among those advantages are tighter security, support for single sign-on (SSO), and reduced development time.
+-   VMs and other cloud resources rarely experience constant loads. Instead, they experience variable loads -- sometimes loads that vary by an order of magnitude or more over time.
 
-- With third-party identity providers, user credentials are stored by the provider and are never seen by the application.
+-   Sizing compute capacity to fit peak loads ensures quality of service (QoS) but results in increased costs and energy usage.
 
-- Cloud service providers offer identity-provider services, as do popular social-media companies such as Facebook and Twitter.
+-   Elasticity refers to the ability to add resources to handle higher loads and remove resources when the load decreases.
 
-- Identity information regarding users within an organization (for example, a company) are usually stored in directory services such as Active Directory.
+-   Elasticity is achieved in the cloud by scaling resources such as VMs and databases.
 
-- Directory services store identities for users, groups, and applications.
+-   Scaling in and out (horizontal scaling) refers to increasing and decreasing the number of resources devoted to a task -- for example, increasing the number of VMs serving web-site users from 10 to 15.
 
-- Federation allows users accessing cloud resources to be authenticated using on-premises directory systems.
+-   Scaling up and down (vertical scaling) refers to replacing existing resources with more or less powerful ones -- for example, replacing a web-server VM containing two cores and 4 GB of RAM with one containing four cores and 8 GB of RAM.
 
-- Synchronization allows users accessing cloud resources to be authenticated using cloud-based directory systems whose contents are synced with on-premises directory systems.
+-   Scaling resources to match demand keeps resource utilization relatively constant, decreases costs, and decreases energy usage.
 
-- Guest accounts allow users accessing an organization's resources to be authenticated using identities established outside the organization.
+-   Auto-scaling allows scaling to occur based on rules or policies established by a cloud administrator. The rules or policies can be time-based, metrics-based, or both. An example of metrics-based auto-scaling is bringing additional instances online when average CPU utilization reaches a predetermined threshold such as 70%.
 
-- Federation, synchronization, and guest accounts reduce account sprawl and simplify identity management and access control.
+-   Time-based auto-scaling, also known as scheduled auto-scaling, is most appropriate when loads are cyclical and predictable.
 
-- Role-based access control (RBAC) is used to implement identity and access management (IAM) in cloud solutions.
+-   Metrics-based auto-scaling can handle predictable as well as unpredictable loads.
 
-- Roles specify actions that can be performed on resources and are assigned to users and groups.
+-   Effective load balancing is crucial to implementing scalable cloud services.
 
-- Roles can be applied to individual resources, groups of resources, subscriptions, and in some cases, groups of subscriptions. The level at which a role is applied is termed the resource scope.
+-   Load balancers use a variety of different algorithms to distribute load, including round-robin and hashed-based algorithms.
+
+-   Some load balancers attempt to dispatch requests more intelligently by using metrics such as request-execution time and CPU utilization at each node.
+
+-   Load balancers also increase availability by monitoring the health of back-end resources and recognizing when those resources are not available.
+
+-   Because a single load balancer represents a single point of failure, load balancers are often deployed in pairs.
+
+-   Serverless computing offers benefits that include consumption-based pricing, automatic scalability, and reduced administrative costs
+
+-   One example of serverless computing is serverless functions, which let you upload code to the cloud and define when it executes.
+
+-   Another example is serverless workflows, which let you define business workflows (typically using graphical designers and without writing code) and specify when they execute.
+
+-   Serverless computing also extends to databases, which scale to meet the demand placed on them.

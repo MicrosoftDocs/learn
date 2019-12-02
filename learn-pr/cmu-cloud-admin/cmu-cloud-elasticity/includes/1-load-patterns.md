@@ -1,63 +1,53 @@
-A common challenge in computing is accurately determining who is using a system at a given point in time. An end user's identity is important for several reasons, the most significant of which is to limit that user's ability to access resources they're not entitled to access and perform actions they're not entitled to perform. For example, a person using web email shouldn't see emails sent to other users. Similarly, when a database administrator accesses a cloud service, they should not be able to access databases for which they have no responsibility or perform other administrative tasks that are beyond the scope of their job duties. None of this is possible if we don't know who the user is.
+---
+title: Load Patterns
+---
 
-Examples of how identity is established and presented for verification in everyday life are numerous. Many countries use ID numbers such as social-security numbers to identify individuals for tax purposes or grant them access to governmental programs. Law enforcement requires that automobile drivers present drivers' licenses and vehicle-registration receipts to identify themselves and prove they are qualified to operate a motor vehicle. International border-control agencies require travelers to carry passports to indicate their citizenship.
++--------------------------------------------------------------------+
+| # Learning Objectives                                              |
++====================================================================+
+| Describe common load patterns and how they drive the need to scale |
++--------------------------------------------------------------------+
 
-In the online world, identity is typically determined by challenging a user to provide credentials that uniquely identify them -- for example, a user name and password, a fingerprint, or, as is becoming increasingly common on smart phones, a face. (Recent advances in artificial intelligence have elevated facial recognition from magic to science.) They might be challenged to enter credentials when they first log into the system, which is typically the case with administrative portals for cloud services. Or they might not be challenged until they access a secure resource such as a web page that's available only to authenticated users. *Authentication* is the process of determining who someone is -- that is, confirming their identity beyond a reasonable doubt. It is separate from *authorization*, which determines what a user can and cannot do once they are authenticated.
+If traffic to a cloud resource such as a VM (or set of VMs) or a web app were constant and unchanging, there would be no need to scale. A cloud administrator could simply provision the number of instances needed to handle the load and be done with it. But traffic patterns *do* change over time -- sometimes predictably, and sometimes not. In the real world, an administrator must diagnose the load on the resources she manages and use scaling to ensure that the system can keep up with demand.
 
-Examples of how online identity is determined are both varied and numerous. They are also highly scenario-dependent. Let us consider two common examples of how authentication is used to establish a user's identity. The first involves a public web site that requires a user to log in before accessing some or all of the web site's resources. The second involves authenticating users who access file shares, network devices, and other internal resources. In both cases, determining the user's identity before granting them access is paramount to implementing a secure and robust system.
+Before we discuss how to scale, let's discuss *why* we scale by breaking down some of the common load patterns that VMs and other cloud resources experience.
 
-## Authenticating external website users
+# Consistent Growth
 
-One common use of digital identity is to sign into a web page that is only available to authenticated users -- for example, users who have purchased subscriptions to the online edition of a newspaper. The first decision that the developers of the web site have to make is whether they will write the logic that permits users to register (create accounts) and log in themselves, or use a third-party identity provider. An *identity provider* is a service that authenticates users using standard protocols such as OAuth 2.0, OpenID Connect, and SAML 2.0, each of which implements mechanisms for ensuring the authenticity of the exchanged information. For example, they use digital signatures to ensure that identity information isn't altered as it travels over the Internet.
+One of the most common drivers for the need to scale is consistent growth in demand. Figure 5.1 shows the traffic to a company's web site over a period of 24 months. The company is growing rapidly, and the traffic to its web site reflects that. If we assume that one web server can handle 5,000 requests per unit of time, the company starts with perhaps three or four web servers but needs roughly 20 two years later in order to keep up with increasing demand and continue serving its customers well.
 
-There are many digital identity-provider services. Social-media companies such as Facebook and Twitter can act as identity providers, allowing users to use credentials established on their sites to access other sites. Microsoft and Google offer identity-provider services as well, allowing users to log into other sites using their Microsoft or Google accounts. This is precisely what happens when you use your Microsoft account to log into Outlook Mail or your Google account to log into Gmail, YouTube, or other sites that support Google accounts. Cloud service providers offer identity-provider services as well as means for integrating themselves or other identity providers into web sites. With Azure Active Directory, for example, it is a relatively simple matter to build a web site that accepts private logins, "public" logins using Facebook, Twitter, Microsoft, or Google accounts, or any combination of the two.
+![](media/image1.png){width="6.5in" height="3.1798611111111112in"}
 
-Using third-party identity providers to authenticate users offers three advantages:
+Figure 5.1: Consistent growth.
 
-**Stronger security**: Third-party identity providers such as Microsoft and Google have deep experience storing and exchanging login credentials securely. Some of the high-profile security breaches that have occurred in recent years happened because developers who weren't experts in security implemented their own sign-in systems and fell victim to common mistakes such as storing plaintext passwords in a database. Passwords should *never* be stored, even if encrypted. One-way password hashes should be stored instead, and well-known techniques such as *salting* should be used to make passwords more difficult to crack<sup>[1][^1]</sup>.
+Consistent growth is among the easiest load patterns to compensate for because change is steady and gradual. We could probably scale using physical servers since we can anticipate when the next server (or set of servers) will be needed and have weeks if not months to prepare, but cloud computing allows us to bring new virtual servers online in a matter of minutes. And while the 24-month trend shows steady and predictable growth, loads might fluctuate substantially within shorter time periods. Cloud computing is much more adaptive to micro-trends than scaling with physical servers.
 
-In addition, many identity providers support *multi-factor authentication* (MFA) to make stolen credentials harder to use. An example of MFA at work is when you log into a web site and are prompted to enter an access code sent by SMS to your cell phone. Finally, third-party identity providers frequently implement *conditional access*, which erects additional security barriers on the fly if warranted by login history, geographic location, or other factors. This is why you're sometimes prompted for additional information if you log into a web site while you're traveling. The identity provider detects an IP address from which you haven't logged in before and adds an extra layer of security to the authentication process.
+# Constantly Fluctuating Loads
 
-**Support for single sign-on (SSO)**: Using 20 user names and passwords to log into 20 different web sites is not only an inconvenience, it's a security issue. Users faced with managing dozens of user names and passwords are more likely to adopt weak security postures, selecting easy-to-guess passwords or using the same password for multiple accounts. One report indicates that the number of accounts users must keep track of doubles every five years -- a phenomenon known as *account sprawl*.<sup>[2][^2]</sup>
+The rapid elasticity offered by cloud computing is essential when loads fluctuate in an unpredictable manner over relatively short periods of time. Figure 5.2 shows the load on a web site over a 24-hour period. Once more assuming that one server can handle 5,000 requests per unit of time, the number of servers needed varies from two to 16 over the course of the day. We could accommodate this traffic by keeping 16 virtual web servers online at all times, but recall that cloud service providers charge for VMs even when idle. The excess capacity would not only waste energy, but roughly double the cost.
 
-By contrast, if 20 unrelated web sites allow users to log in with their Microsoft accounts, Google accounts, or Facebook accounts, one set of credentials can be used for all 20 sites. This is known as *single-sign on*. It reduces account sprawl (and therefore enhances security) by reducing the number of credentials users are required to manage.
+![](media/image2.png){width="6.5in" height="3.183333333333333in"}
 
-**Less development time**: Writing your own code to manage logins and login credentials also means writing code to create new accounts, change passwords, recover forgotten passwords, implement MFA and conditional access, and more. Third-party identity providers offer these services for free. Most of the coding work involves communicating with identity providers using established protocols, and there are numerous libraries available to help with that. It is not uncommon when using identity providers to implement a complete account-management and login system in less than 100 lines of code. The code that the identity provider wrote, by contrast, is several orders of magnitude lengthier and more complex.
+Figure 5.2: Constantly fluctuating load.
 
-A simplified representation of the interaction between a user and a web site that uses a third-party identity provider to authenticate users is shown in Figure 3.1:
+# Cyclical Loads
 
-1. The site is configured to use an identity provider that it trusts to authenticate users. When the user navigates to the site or accesses a page that requires authentication, the site contacts the identity provider and requests that it authenticate the user.
+Figure 5.3 shows a load that increases and decreases in a regular and somewhat predictable pattern -- for example, demand goes up during working hours and falls back during evening and nighttime hours. At its peak, this load requires about 20 servers to handle demand, once more assuming 5,000 requests per unit of time per server. It's unreasonable to rotate physical servers in and out 24 hours a day, but virtual servers can easily be provisioned and deprovisioned on a schedule to make sure that server capacity roughly equals demand. Physical servers sitting idle or lightly utilized 12 hours a day represent unwanted CapEx and unnecessary energy consumption. Virtual servers come at a cost as well, but they can be deprovisioned when they're not needed and quickly created again when demand requires it.
 
-1. The identity provider challenges the user to enter her credentials. The provider uses those credentials to establish the user's identity and issues a secure token asserting that identity. The token is digitally signed to prevent tampering, and it sometimes includes information such as a user's first and last name and e-mail address.
+![](media/image3.png){width="6.5in" height="3.1868055555555554in"}
 
-1. The browser transmits the token to the web site. The web site verifies the authenticity of the token.
+Figure 5.3: Cyclical load that repeats every 24 hours.
 
-1. If validation succeeds, the user is allowed to proceed.
+# Unpredictable Bursts
 
-![Figure 3.1: Authenticating users of a web site.](../media/fig3-1.png)
+One of the most difficult patterns to deal with from a cost and maintenance standpoint is one that incurs unpredictable bursts (Figure 5.4). If peaks are predictable -- for example, if the web site serves a pizza-delivery service that experiences higher loads on weekends and holidays -- then extra capacity can be planned for. But if they're not predictable, we must be prepared to deal with them at any time.
 
-_Figure 3.1: Authenticating users of a web site._
+![](media/image4.png){width="6.5in" height="3.196527777777778in"}
 
-Typically, once the web site has confirmed the validity of the token, it issues an encrypted HTTP cookie with information about the user's identity so the user can return to the page for some period of time without having to log in again. The cookie effectively authenticates the user in subsequent requests as the ID token did following the initial request.
+Figure 5.4: Unpredictable bursts.
 
-An important feature of this flow is that the site never sees the user's credentials. In fact, it is not aware of how the user was authenticated. Consequently, responsibility falls to the identity provider to store the user's credentials and do so in a secure manner. Moreover, the web-site owner can change the physical mechanism used to authenticate users -- for example, switch from user names and passwords to fingerprints -- by making a configuration change to the identity provider rather than rewriting a lot of code.
+We may envision excess cost (the cost of servers provisioned to handle peak loads but that are relatively idle during times of lower traffic) as the area between the top of the curve and a horizontal line drawn through the highest point. In that case, the cost of providing capacity for 100,000 requests per unit of time for the load in Figure 5.4 is substantially higher than the cost of providing equivalent capacity in Figure 5.3.
 
-## Authenticating users internal to the organization
+If we can anticipate the magnitude of peak demand (not necessarily the timing of it) and don't care about cost, we can provide adequate capacity at all times by provisioning enough servers to handle the highest loads. Cloud computing lets us bring resources online when they're needed and take them offline (and stop incurring charges for them) when they're not. Elasticity is enacted by *scaling* cloud resources. Let's examine the concept of scaling more closely and see why it is a key factor in the economics of cloud computing.
 
-The discussion in the previous section is relevant to a software-development team building a web site that supports authenticated users outside the organization. But suppose you're an IT administrator and the goal is to authenticate users *within* the organization in order to secure access to file shares and other on-premises resources. This requires a different approach to identity.
-
-Most enterprises store identity information regarding users within the organization (for example, the employees of a company) on-premises in a *directory service*. The service stores user names, password hashes, and other information in a database -- typically a distributed database that supports hierarchical graphs -- and surfaces its contents through standard protocols such as the *Lightweight Directory Access Protocol*, or LDAP. (Some directory services use proprietary protocols, but these are becoming less common as organizations increasingly migrate toward open source and open standards.) As users enter and exit the organization, administrators update the directory accordingly. When a user leaves the organization and is removed from the directory, she can no longer access resources in the organization's network.
-
-One of the most popular directory services is Microsoft's Active Directory, which is a family of services designed to store information about users and secure access to networked resources. Active Directory stores *objects*, which can represent users, computers, file shares, printers, and other resources. Objects can be organized into *domains*, domains can be organized into *trees*, and trees can be organized into *forests*, providing the flexibility needed to model organizations large and small.
-
-It is not important to understand how directory services work, the protocols that they employ, or the flow of information that takes place using those protocols. What's important is to know that directory services provide a central repository for identity information regarding users within an organization. As you will learn, on-premises directory services can be extended so that they apply to cloud resources as well, allowing organizations to authenticate users who access cloud resources the same way they authenticate users who access on-premises resources. Among other things, this permits administrators to secure access to cloud resources using the same identities that they use to secure access to on-premises resources. Moreover, it allows users to use one set of credentials to access both.
-
-### References
-
-1. _Auth0 (2018). *Adding Salt to Hashing: A Better Way to Store Passwords*. <https://auth0.com/blog/adding-salt-to-hashing-a-better-way-to-store-passwords/>._
-
-1. _Dashlane (2015). *Online Overload – It’s Worse Than You Thought*. <https://blog.dashlane.com/infographic-online-overload-its-worse-than-you-thought/>_
-
-[^1]: <https://auth0.com/blog/adding-salt-to-hashing-a-better-way-to-store-passwords/>  "Auth0 (2018). *Adding Salt to Hashing: A Better Way to Store Passwords*."
-
-[^2]: <https://blog.dashlane.com/infographic-online-overload-its-worse-than-you-thought/>  "Dashlane (2015). *Online Overload – It’s Worse Than You Thought*."
+\[Activity M5-P1\]
