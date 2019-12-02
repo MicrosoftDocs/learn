@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Connect Azure Storage Explorer to a storage account
-durationInMinutes: 10
+durationInMinutes: 8
 interactive: bash
 azureSandbox: true
 content: |

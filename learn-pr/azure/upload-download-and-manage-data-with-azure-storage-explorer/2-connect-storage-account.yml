@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Connect Azure Storage Explorer to a storage account
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/2-connect-storage-account.md)]
