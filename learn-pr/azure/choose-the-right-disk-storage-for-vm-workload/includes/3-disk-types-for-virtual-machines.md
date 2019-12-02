@@ -6,7 +6,7 @@ Here, you'll learn about the performance and behavior of each disk type so that 
 
 To choose the right disk type, it's critical to understand its performance. Performance is expressed in two key measures:
 
-- **Input/output operations per second (IOPS)**. IOPS measure the rate at which the disk can complete a mix of read-and-write operations. Higher performance disks have higher IOPS values.
+- **Input/output operations per second (IOPS)**. IOPS measure the rate at which the disk can complete a mix of read and write operations. Higher performance disks have higher IOPS values.
 - **Throughput**. Throughput measures the rate at which data can be moved onto the disk from the host computer and off the disk to the host computer. Throughput is also called *data transfer rate* and is measured in megabytes per second (MBps). Higher performance disks have higher throughput.
 
 For physical disks, solid-state disks (SSDs) usually realize higher IOPS and throughput than hard disk drives (HDDs). Virtual disks that you can choose for an Azure virtual machine are based on SSDs of several types or HDDs. Their performance varies widely based on the disk type that you choose. Let's examine the types that are available.
