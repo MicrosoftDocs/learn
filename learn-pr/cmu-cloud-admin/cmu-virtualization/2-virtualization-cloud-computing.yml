@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.cmu-virtualization.2-virtualization-and-cloud-computing
+uid: learn.cmu-cloud-admin.cmu-virtualization.2-virtualization-cloud-computing
 title: Understanding virtualization
 metadata:
   title: Understanding virtualization
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 11
 content: |
-  [!include[](includes/2-virtualization-and-cloud-computing.md)]
+  [!include[](includes/2-virtualization-cloud-computing.md)]
 quiz:
   title: Check your knowledge
   questions:

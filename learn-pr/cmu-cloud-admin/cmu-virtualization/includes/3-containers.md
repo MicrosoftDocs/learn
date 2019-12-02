@@ -8,17 +8,17 @@ Virtualization using hypervisors such as Zen and Hyper-V partitions a physical s
 
 These are just some of the reason why *containers* are seeing widespread adoption, not only in cloud computing, but in on-premises data centers and individual computers as well. In this lesson, we discuss what containers are, how they work, and the benefits they offer. We also introduce Docker, the world's most popular containerization platform, and present some of the ways in which it has been integrated into popular cloud platforms.
 
-## What is a Container?
+## What is a container?
 
 Containers are revolutionizing IT and software development. They permit software and files to be bundled into self-contained packages known as *container images* that run on different computers (real or virtual) and do so in a consistent and predictable manner. The following description comes from the Docker web site:
 
 *A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.*
 
-Whereas hypervisors virtualize hardware, containers virtualize operating systems. Figure 4.7 illustrates the key differences between VMs and containers<sup>[1][^1]</sup>. On the left, a server hosts one copy of the operating system and one copy of the Docker runtime. It also hosts six applications in six containers, each of which utilizes the host's operating system. On the right, the same server host three VMs, each of which loads its own copy of the operating system. A given server can typically host several times more containers than it can VMs due to the containers' smaller resource requirements.
+Whereas hypervisors virtualize hardware, containers virtualize operating systems. Figure 7 illustrates the key differences between VMs and containers<sup>[1][^1]</sup>. On the left, a server hosts one copy of the operating system and one copy of the Docker runtime. It also hosts six applications in six containers, each of which utilizes the host's operating system. On the right, the same server host three VMs, each of which loads its own copy of the operating system. A given server can typically host several times more containers than it can VMs due to the containers' smaller resource requirements.
 
-![Figure 4.7: Containers vs. virtual machines](../media/fig4-7.png)
+![Figure 7: Containers vs. virtual machines](../media/fig4-7.png)
 
-_Figure 4.7: Containers vs. virtual machines._
+_Figure 7: Containers vs. virtual machines._
 
 Containers are similar to virtual machines in that they provide a predictable and isolated environment in which software can run. But because containers are smaller than VMs, they require less RAM and are moved more easily from machine to machine. They also start more quickly -- often in just a second or two -- because they neither have to virtualize hardware nor load and initialize an operating system. Multiple containers running on a single machine share the same operating system kernel, even if the containers themselves are completely different -- that is, contain different software and are created from different container images.
 
@@ -30,33 +30,33 @@ Containers do not replace virtual machines, nor should they be regarded as a fun
 
 Docker is far and away the most popular container platform. It is free and open-source, and it runs on all major Linux distributions as well as on Windows Server 2016. In 2015, Docker donated the container-image specification and runtime code to the Open Container Initiative (OCI) to help standardize and grow the container ecosystem. In 2017, Docker donated an industry-standard container runtime to the Cloud Native Computing Foundation (CNCF). That runtime was created with an emphasis on simplicity, robustness, and portability.
 
-Figure 4.8 shows how a system that runs applications in Docker containers is architected. It starts with the *Docker client*, which is a tool used to create, run, and manage containers and container images. (A container image constitutes a blueprint for a running container, just a VM image defines what's loaded into a running VM.) Various Docker clients exist, including Docker's own command-line interface, which runs on all popular operating systems, and Kitematic, which features a graphical user interface and runs on Windows and macOS. Docker acquired Kitematic in 2015 and made it part of the Docker Toolbox, which is available free of charge.
+Figure 8 shows how a system that runs applications in Docker containers is architected. It starts with the *Docker client*, which is a tool used to create, run, and manage containers and container images. (A container image constitutes a blueprint for a running container, just a VM image defines what's loaded into a running VM.) Various Docker clients exist, including Docker's own command-line interface, which runs on all popular operating systems, and Kitematic, which features a graphical user interface and runs on Windows and macOS. Docker acquired Kitematic in 2015 and made it part of the Docker Toolbox, which is available free of charge.
 
-![Figure 4.8: Docker architecture](../media/fig4-8.png)
+![Figure 8: Docker architecture](../media/fig4-8.png)
 
-_Figure 4.8: Docker architecture._
+_Figure 8: Docker architecture._
 
 Once a container image is built, it is uploaded to a repository in a container registry. The purpose of a container registry is to store container images and make them available either publicly or privately. Docker offers a cloud-based container registry of its own known as *Docker Hub*, which provides users with unlimited free public repositories and one free private repository. It also allows -- even encourages -- others to create registries of their own and offers the open-source *Docker Registry* to aid their efforts. This is one reason why major cloud service providers including Amazon, Microsoft, and Google have been able to offer Docker-compatible registries in their cloud platforms.
 
 A container is started by using the Docker client to issue a command to the *Docker daemon* and specifying which image the container should be created from. (A daemon is a program that runs in the background on the host computer.) The daemon then creates a container and loads the image into it. Once running, a container can be started and stopped by issuing commands from the Docker client. The Docker client and Docker daemon don't have to reside on the same computer. In a typical scenario, the client runs on one machine while the daemon runs on a remote server, and the client uses the Secure Shell (SSH) protocol to transmit commands to the daemon.
 
-## Container Services in Cloud Computing
+## Container services in cloud computing
 
 While users are free to take an IaaS approach to containers by creating VMs and installing the Docker runtime in them, cloud service providers, in a nod to the importance of containers, offer PaaS services to support running containerized applications in the cloud. Azure offers Azure Container Instances, which provide a robust, scalable, and easy-to-use environment for hosting containerized applications, as well as the Azure Container Registry, which allows container images to be hosted in Azure rather than in Docker Hub or other external registries and loaded quickly into Azure Container Instances. Amazon offers the AWS Elastic Container Registry (ECR) and AWS Elastic Container Service (ECS), while Google offers Container Registry and Containers on Compute Engine.
 
-Figure 4.9 illustrates how Amazon's ECR and ECS work together to provide a cloud-based Docker stack for hosting containers and container images<sup>[2][^2]</sup>. Container images are built and uploaded to ECR, which is a Docker-compatible container registry similar to Docker Hub. (Container images run in AWS don't have to be stored in ECR, but storing them there offers several advantages, including fine-grained access control using AWS Identity, automatic encryption, support for versioning container images, and faster loading, particularly if the container images are stored and run in the same data center.) From there, images are loaded into containers hosted in ECS or other cloud services.
+Figure 9 illustrates how Amazon's ECR and ECS work together to provide a cloud-based Docker stack for hosting containers and container images<sup>[2][^2]</sup>. Container images are built and uploaded to ECR, which is a Docker-compatible container registry similar to Docker Hub. (Container images run in AWS don't have to be stored in ECR, but storing them there offers several advantages, including fine-grained access control using AWS Identity, automatic encryption, support for versioning container images, and faster loading, particularly if the container images are stored and run in the same data center.) From there, images are loaded into containers hosted in ECS or other cloud services.
 
-![Figure 4.9: Containers in AWS](../media/fig4-9.png)
+[![Figure 9: Containers in AWS ](../media/fig4-9.png "Figure 9: Containers in AWS")](../media/fig4-9.png#lightbox)
 
-_Figure 4.9: Containers in AWS._
+_Figure 9: Containers in AWS._
 
 Azure Container Registry and Azure Container Instances work in much the same way but use Azure Active Directory rather than AWS Identity to control access to container images. One difference between the container support in AWS and Azure is that AWS uses a combination of open-source software and proprietary technology, whereas Azure's container stack is 100% built from open-source. Consequently, any tool that works with Docker works with Azure, too. In addition, the Azure Cloud Shell and Azure CLI feature commands for building and managing Docker container images. These commands don't totally obviate the need for Docker clients, but they do cover the most common use cases and are optimized for Azure.
 
 More recently, cloud service providers have begun adding container support to selected PaaS services. Azure, for example, offers Azure Web Apps for Containers, which is essentially Azure App Service with the added ability to load software from a container image. Amazon has taken similar steps to integrate Docker containers with Elastic Beanstalk.
 
-## Container Orchestration
+## Container orchestration
 
-Docker provides the infrastructure for building and running containers, but a higher level of supervision is needed to orchestrate the actions of containers and scale containerized workloads the same way VMs are scaled. While an assortment of container-orchestration tools exists, the industry has largely settled on Kubernetes, which grew out of an open-source project by Google, as the orchestrator of choice. Today, major cloud service providers offer managed implementations of Kubernetes that make it easy to run containers on their platforms and manage them with Kubernetes. The "EKS" in Figure 4.9 stands for Elastic Kubernetes Service. Azure offers a complementary service called Azure Kubernetes Service (AKS), while the Google Cloud Platform offers the Kubernetes Engine.
+Docker provides the infrastructure for building and running containers, but a higher level of supervision is needed to orchestrate the actions of containers and scale containerized workloads the same way VMs are scaled. While an assortment of container-orchestration tools exists, the industry has largely settled on Kubernetes, which grew out of an open-source project by Google, as the orchestrator of choice. Today, major cloud service providers offer managed implementations of Kubernetes that make it easy to run containers on their platforms and manage them with Kubernetes. The "EKS" in Figure 9 stands for Elastic Kubernetes Service. Azure offers a complementary service called Azure Kubernetes Service (AKS), while the Google Cloud Platform offers the Kubernetes Engine.
 
 ### References
 

@@ -35,7 +35,7 @@ products:
 units:
 - learn.cmu-cloud-admin.cmu-virtualization.0-intro
 - learn.cmu-cloud-admin.cmu-virtualization.1-virtual-machines
-- learn.cmu-cloud-admin.cmu-virtualization.2-virtualization-and-cloud-computing
+- learn.cmu-cloud-admin.cmu-virtualization.2-virtualization-cloud-computing
 - learn.cmu-cloud-admin.cmu-virtualization.3-containers
 - learn.cmu-cloud-admin.cmu-virtualization.4-virtual-networks
 - learn.cmu-cloud-admin.cmu-virtualization.5-summary

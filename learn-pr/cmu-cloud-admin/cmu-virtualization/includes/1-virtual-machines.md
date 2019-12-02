@@ -4,13 +4,13 @@ Virtual machines find uses outside cloud computing as well. For example, a popul
 
 All of these virtual machines are instances of *system VMs*, which virtualize an entire system (physical machine). But there are also *process VMs*, which provide the basis for popular programming languages such as Java and C\#. Let's examine both types, discuss how they work, and understand why it is that of the two, it is system VMs that provide the foundation for cloud computing.
 
-## Process Virtual Machines
+## Process virtual machines
 
-A process VM (Figure 4.1) is a VM capable of supporting an individual process as long as the process is alive. A process VM terminates when the process that it hosts ends. From a process VM perspective, a machine consists of a virtual memory address space, user-level registers, and instructions for executing a program. According to this definition, a process in a general-purpose operating system can also be called a "machine." However, a regular process can only support program binaries compiled for the processor architecture or *instruction-set architecture* (ISA) of the host machine. Executing binaries compiled for an ISA different than that of the host machine -- for example, running programs compiled for ARM processors on machines equipped with Intel CPUs -- is not supported by regular processes. However, a process VM allows that to happen.
+A process VM (Figure 1) is a VM capable of supporting an individual process as long as the process is alive. A process VM terminates when the process that it hosts ends. From a process VM perspective, a machine consists of a virtual memory address space, user-level registers, and instructions for executing a program. According to this definition, a process in a general-purpose operating system can also be called a "machine." However, a regular process can only support program binaries compiled for the processor architecture or *instruction-set architecture* (ISA) of the host machine. Executing binaries compiled for an ISA different than that of the host machine -- for example, running programs compiled for ARM processors on machines equipped with Intel CPUs -- is not supported by regular processes. However, a process VM allows that to happen.
 
-![Figure 4.1: Process VM](../media/fig4-1.png)
+![Figure 1: Process VM](../media/fig4-1.png)
 
-_Figure 4.1: Process VM._
+_Figure 1: Process VM._
 
 Process VMs support ISAs that differ from host ISAs via *emulation*, which allows the interfaces and functionalities of one system (the source) to be implemented on a system with different interfaces and functionalities (the target). An example of emulation is executing a program compiled for the vintage 6502/6510 family of processors used by early Apple computers on an *x*86 processor. The abstraction of the process VM is provided by a piece of virtualizing software called the *runtime*. The runtime sits above the host operating system and the underlying hardware. It is this runtime that emulates the instructions and/or system calls when guest and host ISAs are different.
 
@@ -18,19 +18,19 @@ Process VMs have been around since the mid-1960s and were first used to convert 
 
 In summary, a process VM is similar to a regular process running on an OS. However, a process VM allows, via emulation, the execution of applications compiled for an ISA different than that of the host machine. In addition, HLL process VMs provide the foundation for popular managed languages such as Java and C\#. The term "managed" in this context refers to the fact that Java and C\# manage memory on behalf of their applications and provide safeguards against common programming errors such as misuse of pointers and overstepping the bounds of in-memory arrays.
 
-## System Virtual Machines
+## System virtual machines
 
-Unlike process VMs, a system VM virtualizes an entire machine by virtualizing a complete set of hardware resources including processors, memory, and I/O devices. The virtualization software, or *hypervisor*, which is also known as a *virtual-machine monitor* (VMM), sits between the hardware and the operating system and creates the illusion that the operating system and the applications it hosts are running on stand-alone machines (Figure 4.2).
+Unlike process VMs, a system VM virtualizes an entire machine by virtualizing a complete set of hardware resources including processors, memory, and I/O devices. The virtualization software, or *hypervisor*, which is also known as a *virtual-machine monitor* (VMM), sits between the hardware and the operating system and creates the illusion that the operating system and the applications it hosts are running on stand-alone machines (Figure 2).
 
-![Figure 4.2: System VM](../media/fig4-2.png)
+![Figure 2: System VM](../media/fig4-2.png)
 
-_Figure 4.2: System VM._
+_Figure 2: System VM._
 
-The hypervisor manages the allocation of and access to underlying hardware resources. It allows multiple VMs to run side by side and gives each VM the illusion of owning all of those resources. The physical machine is called the *host*, and an operating system running in a VM on a host is called a *guest operating system*, or guest OS (Figure 4.3). Every VM can be booted, shut down, and rebooted just like a regular host. A VM can only run on one host at a time, but it can be shut down, moved to another host, and started there. Thus, while a VM can only be running on one host at a given point in time, it can be migrated to different hosts over a span of time.
+The hypervisor manages the allocation of and access to underlying hardware resources. It allows multiple VMs to run side by side and gives each VM the illusion of owning all of those resources. The physical machine is called the *host*, and an operating system running in a VM on a host is called a *guest operating system*, or guest OS (Figure 3). Every VM can be booted, shut down, and rebooted just like a regular host. A VM can only run on one host at a time, but it can be shut down, moved to another host, and started there. Thus, while a VM can only be running on one host at a given point in time, it can be migrated to different hosts over a span of time.
 
-![Figure 4.3: Single system hosting multiple VMs](../media/fig4-3.png)
+![Figure 3: Single system hosting multiple VMs](../media/fig4-3.png)
 
-_Figure 4.3: Single system hosting multiple VMs._
+_Figure 3: Single system hosting multiple VMs._
 
 The first hypervisors ran on IBM mainframes in the 1960s. Early hypervisors were either implemented entirely in software or relied on hardware to boost performance. Indeed, some mainframes shipped with special hardware just to support virtualization. Today, popular microprocessors from Intel and AMD have virtualization support built in, a feature that can be enabled or disabled on most computers through firmware settings. Native virtualization support in CPUs is the primary reason that the popularity of VMs exploded in the mid-to-late 2000s. It gave rise to a generation of inexpensive but fully featured hypervisors such as VMware, Hyper-V, and VirtualBox, as well as open-source hypervisors such as Xen<sup>1</sup>. Even before cloud computing came into vogue, organizations began using these hypervisors to virtualize workloads in their own data centers. This accelerated the transition to cloud computing by allowing organizations already using virtualized servers to "lift and shift" workloads to the cloud by uploading existing virtual-machine images and creating VMs from them.
 
