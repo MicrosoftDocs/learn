@@ -4,12 +4,11 @@ title: An introduction to network client and server technology
 metadata:
   title:  An introduction to network client and server technology
   description: An introduction to network based client technology and the various server options available.
-  ms.date: 24/10/2019
+  ms.date: 15/12/2019
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
   [!include[](includes/2-basic-client-server.md)]
