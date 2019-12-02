@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-azure-account.introduction
+uid: learn.create-azure-account.1-introduction
 title: Introduction
 metadata:
   title: Create a free Azure account
@@ -9,7 +9,6 @@ metadata:
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

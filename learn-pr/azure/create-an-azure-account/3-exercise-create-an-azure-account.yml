@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-azure-account.exercise-create-an-azure-account
+uid: learn.create-azure-account.5-exercise-create-an-azure-account
 title: Exercise - Create an Azure account
 metadata:
   title: Exercise - Create an Azure account
@@ -9,7 +9,6 @@ metadata:
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-create-an-azure-account.md)]

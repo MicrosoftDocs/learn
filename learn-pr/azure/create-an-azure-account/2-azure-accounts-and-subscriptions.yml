@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-azure-account.azure-accounts-and-subscriptions
+uid: learn.create-azure-account.2-azure-accounts-and-subscriptions
 title: Sign up for Azure
 metadata:
   title: Sign up for Azure
@@ -9,7 +9,6 @@ metadata:
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 4
 content: |
   [!include[](includes/2-azure-accounts-and-subscriptions.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-azure-account.multiple-subscriptions
+uid: learn.create-azure-account.3-multiple-subscriptions
 title: Understand Azure billing
 metadata:
   title: Understand Azure billing
@@ -9,7 +9,6 @@ metadata:
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 8
 content: |
   [!include[](includes/4-multiple-subscriptions.md)]

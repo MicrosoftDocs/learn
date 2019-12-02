@@ -31,12 +31,12 @@ products:
 - azure
 - azure-portal
 units:
-- learn.create-azure-account.introduction
-- learn.create-azure-account.azure-accounts-and-subscriptions
-- learn.create-azure-account.exercise-create-an-azure-account
-- learn.create-azure-account.multiple-subscriptions
-- learn.create-azure-account.support-options
+- learn.create-azure-account.1-introduction
+- learn.create-azure-account.2-azure-accounts-and-subscriptions
+- learn.create-azure-account.5-exercise-create-an-azure-account
+- learn.create-azure-account.3-multiple-subscriptions
+- learn.create-azure-account.6-support-options
 - learn.create-azure-account.knowledge-check
-- learn.create-azure-account.summary
+- learn.create-azure-account.7-summary
 badge:
   uid: learn.create-azure-account.badge
