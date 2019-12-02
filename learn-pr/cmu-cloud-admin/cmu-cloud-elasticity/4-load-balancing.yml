@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.secure-cloud-resources.4-rbac
+uid: learn.cmu-cloud-admin.secure-cloud-resources.4-load-balancing
 title: Role-based access control
 metadata:
   title: Role-based access control
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 9
 content: |
-  [!include[](includes/4-rbac.md)]
+  [!include[](includes/4-load-balancing.md)]
 quiz:
   title: Check your knowledge
   questions:

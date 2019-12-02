@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cmu-cloud-admin.secure-cloud-resources.3-federation-synchronization-guests
+uid: learn.cmu-cloud-admin.secure-cloud-resources.3-auto-scaling
 title: Federation, synchronization, and guest accounts
 metadata:
   title: Federation, synchronization, and guest accounts
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-federation-synchronization-guests.md)]
+  [!include[](includes/3-auto-scaling.md)]
 quiz:
   title: Check your knowledge
   questions:
