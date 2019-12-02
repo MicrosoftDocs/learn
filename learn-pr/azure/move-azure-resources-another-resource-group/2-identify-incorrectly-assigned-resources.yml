@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.move-azure-resources-to-another-resource-group.identify-incorrectly-assigned-resources
+title: Identify incorrectly assigned resources in Azure
+metadata:
+  title: Identify incorrectly assigned resources in Azure
+  description: Identify incorrectly assigned resources in Azure
+  ms.date: 05/23/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-identify-incorrectly-assigned-resources.md)]

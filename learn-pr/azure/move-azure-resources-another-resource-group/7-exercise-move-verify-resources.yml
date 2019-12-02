@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.move-azure-resources-to-another-resource-group.exercise-move-verify-resources
+title: Exercise - Move and verify resources between Azure resource groups
+metadata:
+  title: Exercise - Move and verify resources between Azure resource groups
+  description: Exercise - Move and verify resources between Azure resource groups
+  ms.date: 05/23/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-exercise-move-verify-resources.md)]

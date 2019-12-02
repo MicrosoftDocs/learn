@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.azure.move-azure-resources-to-another-resource-group
+metadata:
+  title: Move Azure resources to another resource group
+  description: Learn how to identify Azure resources you can move and how to move them to a new resource group.
+  ms.date: 05/23/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Move Azure resources to another resource group
+summary: Identify Azure resources that you can move to a different resource group. Use the Azure portal to move resources.
+abstract: | 
+  In this module, you will:
+  - Identify whether you can move resources
+  - Move resources to another resource group
+prerequisites: | 
+  - Familiarity with Azure resource groups
+iconUrl: /learn/achievements/move-azure-resources-to-another-resource-group.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+- azure-resource-manager
+units:
+- learn.azure.move-azure-resources-to-another-resource-group.introduction
+- learn.azure.move-azure-resources-to-another-resource-group.identify-incorrectly-assigned-resources
+- learn.azure.move-azure-resources-to-another-resource-group.exercise-identify-incorrectly-assigned-resources
+- learn.azure.move-azure-resources-to-another-resource-group.assess-resources
+- learn.azure.move-azure-resources-to-another-resource-group.validate-resources
+- learn.azure.move-azure-resources-to-another-resource-group.move-verify-resources
+- learn.azure.move-azure-resources-to-another-resource-group.exercise-move-verify-resources
+- learn.azure.move-azure-resources-to-another-resource-group.summary
+badge:
+  uid: learn.azure.move-azure-resources-to-another-resource-group.badge
