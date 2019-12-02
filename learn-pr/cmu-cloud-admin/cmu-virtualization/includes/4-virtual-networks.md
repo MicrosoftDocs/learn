@@ -6,13 +6,10 @@ Computer networks are collections of nodes and links. A node is any network appl
 
 Designers of large data-center networks must contend with several (sometimes contradictory) requirements<sup>1</sup>. They must:
 
-1. Ensure that the topology used is scalable to cope with future demand
-
-1. Maximize throughput while minimizing hardware cost
-
-1. Ensure that their design guarantees availability and integrity of the system despite failures
-
-1. Have power-saving features to reduce operating costs (and be environment-friendly)
+- Ensure that the topology used is scalable to cope with future demand
+- Maximize throughput while minimizing hardware cost
+- Ensure that their design guarantees availability and integrity of the system despite failures
+- Have power-saving features to reduce operating costs (and be environment-friendly)
 
 An important consideration in designing the network for a large data center is selecting the right network fabric. Choices include Ethernet, InfiniBand, and other high-speed fabrics such as Myrinet. Each has different cost, latency, bandwidth, and communication criteria and must be chosen carefully. A physical comparison of these fabrics isn't within our scope. What interests us more is the topology and addressing scheme selected to interconnect these resources. For instance, if we choose to use an Ethernet-addressed network where endpoints are identified with a flat 6-byte MAC address, it's likely that such a network will be flat. THis means each interface is assigned a MAC address that doesn't depend upon its location. A setup like this makes routing difficult and forwarding tables large, since all addresses must be stored.
 
