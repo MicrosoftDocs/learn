@@ -16,7 +16,7 @@ abstract: |
   - Move resources to another resource group
 prerequisites: | 
   - Familiarity with Azure resource groups
-iconUrl: /learn/achievements/move-azure-resources-to-another-resource-group.svg
+iconUrl: /learn/achievements/move-azure-resources-another-resource-group.svg
 levels:
 - beginner
 roles:
