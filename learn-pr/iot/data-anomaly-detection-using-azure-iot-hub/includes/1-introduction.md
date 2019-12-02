@@ -1,6 +1,6 @@
 An Azure IoT Hub can direct the telemetry messages from one, or millions, of devices. The messages can be directed to services for analysis, for storage, for visualization. Or for any combination of these objectives. 
 
-In this module, you'll learn about Azure IoT Hub, IoT Hub message routing, Azure storage, Azure Stream Analytics, and Azure Machine Learning. You'll achieve this knowledge by creating an IoT system to monitor and detect vibration anomalies in a conveyor belt. You'll learn a little about vibration, and a lot more about Azure IoT services!
+In this module, you'll learn about Azure IoT Hub, IoT Hub message routing, Azure storage, Azure Stream Analytics, and how to call a built-in ML model. You'll achieve this knowledge by creating an IoT system to monitor and detect vibration anomalies in a conveyor belt. You'll learn a little about vibration, and a lot more about Azure IoT services!
 
 ![Conceptual art of conveyor belt](../media/vibrations-art1.png)
 
@@ -13,7 +13,7 @@ In this module you will:
 - Build a C# app to send device telemetry to the IoT Hub, using Visual Studio or Visual Studio code
 - Define a message route, through to blob storage, using the Azure portal
 - Define a second message route, through to an Azure Analytics job, using the Azure portal
-- Create a query to apply machine learning for anomaly detection, using SQL
+- Create a query to apply a built-in ML model for anomaly detection, using SQL
 - Create a dashboard to visualize data anomalies, using Power BI
 
 ## Prerequisites
@@ -40,7 +40,7 @@ Vibration is typically measured as an acceleration (meters per second squared, m
 
 The goal here is clearly preventive maintenance. Detect that something is wrong, before any damage is caused.
 
-It's not always easy to detect abnormal vibration levels. For this reason, you are looking to Azure IoT Hub, and machine learning, to detect data anomalies before a human observer would notice anything was wrong. You plan to have a vibration detection sensor on the conveyor belt, sending continuous telemetry to an IoT Hub. The IoT Hub will use Azure Stream Analytics, and machine learning, to give you advance warning of data anomalies. 
+It's not always easy to detect abnormal vibration levels. For this reason, you are looking to Azure IoT Hub to detect data anomalies. You plan to have a vibration detection sensor on the conveyor belt, sending continuous telemetry to an IoT Hub. The IoT Hub will use Azure Stream Analytics, and a built-in ML model, to give you advance warning of vibration anomalies. You also plan to archive all the telemetry data, just in case it's ever needed.
 
 You decide to build a prototype of the planned system, initially using simulated telemetry.
 
