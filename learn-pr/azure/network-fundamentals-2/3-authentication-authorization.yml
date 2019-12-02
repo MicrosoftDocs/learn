@@ -20,7 +20,7 @@ quiz:
     - content: Authorization is the process of determining whether the authenticated user or client has access to specific resources.
       isCorrect: true
       explanation: Once it has been confirmed that the user or client has the right permissions, they can access the resource. 
-    - content: Authorization is the process of determing whether a particular user or client is the author of specific resources.
+    - content: Authorization is the process of determining whether a particular user or client is the author of specific resources.
       isCorrect: false
       explanation: Authorization is about whether the user has the right permissions to access a resource or service.
     - content: Authorization is the process of determining whether a client or user is indeed who they claim to be.
