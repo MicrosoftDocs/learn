@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.configure-infrastructure-azure-pipelines.7-run-ansible-pipeline
+title: Exercise - Configure Azure resources in Azure Pipelines with Ansible
+metadata:
+  title: Exercise - Configure Azure resources in Azure Pipelines with Ansible
+  description: Introduction
+  ms.date: 11/15/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-run-ansible-pipeline.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.configure-infrastructure-azure-pipelines.5-plan-configuration-tasks
+title: Plan configuration tasks for Azure Pipelines
+metadata:
+  title: Plan configuration tasks for Azure Pipelines
+  description: Introduction
+  ms.date: 12/04/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-plan-configuration-tasks.md)]

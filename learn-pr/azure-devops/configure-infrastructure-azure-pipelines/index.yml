@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.azdo.configure-infrastructure-azure-pipelines
+metadata:
+  title: Configure infrastructure in Azure Pipelines - Learn
+  description: Run configuration management tools in Azure Pipelines to help keep your infrastructure configured as you need.
+  ms.date: 12/04/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure infrastructure in Azure Pipelines
+summary: Run configuration management tools in Azure Pipelines to help keep your infrastructure configured as you need.
+abstract: |
+  In this module, you will:
+  - Learn what we mean by _configuration as code_ and the kinds of tools you can use to configure your systems.
+  - Apply a Ansible playbook that configures service accounts on a Linux virtual machine running on Azure.
+  - Add a job to your Azure Pipelines configuration that configures your infrastructure when the pipeline runs.
+prerequisites: |
+  - An Azure subscription
+  - An Azure DevOps organization
+  - Visual Studio Code
+  - .NET Core 2.1
+  - Git
+  - A GitHub account
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure
+- azure-devops
+units:
+- learn.azdo.configure-infrastructure-azure-pipelines.1-introduction
+- learn.azdo.configure-infrastructure-azure-pipelines.2-what-is-configuration-as-code
+- learn.azdo.configure-infrastructure-azure-pipelines.3-tools-overview
+- learn.azdo.configure-infrastructure-azure-pipelines.4-run-ansible-cloud-shell
+- learn.azdo.configure-infrastructure-azure-pipelines.5-plan-configuration-tasks
+- learn.azdo.configure-infrastructure-azure-pipelines.6-set-up-environment
+- learn.azdo.configure-infrastructure-azure-pipelines.7-run-ansible-pipeline
+- learn.azdo.configure-infrastructure-azure-pipelines.8-clean-up-environment
+- learn.azdo.configure-infrastructure-azure-pipelines.9-summary
+badge:
+  uid: learn.azdo.configure-infrastructure-azure-pipelines.badge
