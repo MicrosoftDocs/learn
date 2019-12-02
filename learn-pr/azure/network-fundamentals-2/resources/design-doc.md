@@ -68,7 +68,7 @@ Identify the subtasks of *Networking Fundamentals*
     - Knowledge check
       - What role does authorization play during a sign-in event?
         - Authorization is the process of determining whether the authenticated user has access to specific resources.
-        - Authorization is the process of determing whether a particular user or client is the author of specific resources.
+        - Authorization is the process of determining whether a particular user or client is the author of specific resources.
         - Authorization is the process of determining whether a client or user is indeed who they claim to be.
        
       - Which of the following happens in SSL/TLS protocol?
