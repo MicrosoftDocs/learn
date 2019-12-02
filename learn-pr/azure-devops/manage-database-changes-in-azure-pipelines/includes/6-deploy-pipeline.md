@@ -4,7 +4,7 @@ Here, you follow along with Andy, Mara, and Tim as they modify the pipeline to a
 
 ## Create the Azure App Service environments
 
-In [Create a release management workflow with Azure Pipelines](/learn/modules/create-a-release-management-workflow?azure-portal=true), you created one App Service instance that corresponds to each of the _dev_, _test_, and _staging_ environments. There you worked through it step by step. Here, you use the Azure command-line interface (CLI) through Azure Cloud Shell to create them all in one step.
+In [Create a release management workflow with Azure Pipelines](/learn/modules/create-multi-stage-pipeline), you created one App Service instance that corresponds to each of the _dev_, _test_, and _staging_ environments. There you worked through it step by step. Here, you use the Azure command-line interface (CLI) through Azure Cloud Shell to create them all in one step.
 
 ### Bring up Cloud Shell through the Azure portal
 

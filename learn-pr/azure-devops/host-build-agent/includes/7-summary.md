@@ -81,7 +81,7 @@ To learn more about build agents and agent pools, see the following articles:
 * [Self-hosted macOS agents](https://docs.microsoft.com/azure/devops/pipelines/agents/v2-osx?view=azure-devops&azure-portal=true)
 * [Self-hosted Windows agents](https://docs.microsoft.com/azure/devops/pipelines/agents/v2-windows?view=azure-devops&azure-portal=true)
 * [Container jobs](https://docs.microsoft.com/azure/devops/pipelines/process/container-phases?view=azure-devops&tabs=yaml&azure-portal=true)
-* [Pool](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#pool&azure-portal=true) (YAML schema)
+* [Pool](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?view=azure-devops&tabs=schema#pool) (YAML schema)
 * [Create a multi-platform pipeline](https://docs.microsoft.com/azure/devops/pipelines/get-started-multiplatform?view=azure-devops&azure-portal=true)
 
 ### Create your own VM images
