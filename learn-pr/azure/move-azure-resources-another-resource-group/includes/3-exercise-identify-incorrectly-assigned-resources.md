@@ -11,7 +11,7 @@ You will need to create a resource group that will act as a production resource 
 1. [Sign in](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to the Azure portal.
 1. Select **Resource groups**, then select **Add** and fill in the form. Make sure to give it a name that indicates it is a production resource group.
 1. Select **Review + create** to create your resource group.
-1. You will need to create some resources to into your production resource group. You can use this [template](https://azure.microsoft.com/en-us/resources/templates/101-vm-simple-linux/) that will help you easily deploy a Linux virtual machine with related resources.  
+1. You will need to create some resources to into your production resource group. You can use this [template](https://azure.microsoft.com/resources/templates/101-vm-simple-linux/) that will help you easily deploy a Linux virtual machine with related resources.  
 1. Select **Deploy to Azure** on the template page.
 1. For resource group field, make sure to select the resource group you have created. Fill in the rest of the form as appropriate.
 1. Select **Purchase**.
