@@ -47,7 +47,7 @@ Identify the subtasks of *Monitor and report on security events in Azure AD*
 
     You work for an organization that has recently begun integrating their identities with Azure AD. Your security team would like to ensure that proper security reporting and monitoring are in place, as a recent incident with compromised identities led to exposed customer data. You need to demonstrate the reporting capabilities in Azure AD, and ensure that proper monitoring is in place to alert on security events.
 
-1. **How to use sign-in, audit, and provisioning logs**
+1. **Use sign-in, audit, and provisioning logs to detect suspicious activity**
 
     - Overview of what data is contained in sign-in logs
         - Users flagged for risk
@@ -63,7 +63,7 @@ Identify the subtasks of *Monitor and report on security events in Azure AD*
     - In which log would you find information about the MFA method used?
     - In which log would you find information about Identity Protection?
 
-1. **How to integrate activity logs with Azure Monitor logs**
+1. **Integrate activity logs with Azure Monitor logs**
 
     - Create a Log Analytics workspace
     - Send logs to Azure Monitor
@@ -84,8 +84,9 @@ Identify the subtasks of *Monitor and report on security events in Azure AD*
     - Save reports to security dashboard
     - Export a report to Excel and Power BI
 
-1. **Exercise - set up reports and dashboards to visualize the information**
+1. **Exercise - Set up reports and dashboards to visualize the information**
 
+    1. Create an AAD tenant
     1. Create a Log Analytics workspace
     1. Navigate in the portal to diagnostic settings
     1. Save Audit and sing-in logs to Azure Monitor
