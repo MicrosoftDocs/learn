@@ -46,7 +46,7 @@ While users are free to take an IaaS approach to containers by creating VMs and 
 
 Figure 4.9 illustrates how Amazon's ECR and ECS work together to provide a cloud-based Docker stack for hosting containers and container images<sup>[2][^2]</sup>. Container images are built and uploaded to ECR, which is a Docker-compatible container registry similar to Docker Hub. (Container images run in AWS don't have to be stored in ECR, but storing them there offers several advantages, including fine-grained access control using AWS Identity, automatic encryption, support for versioning container images, and faster loading, particularly if the container images are stored and run in the same data center.) From there, images are loaded into containers hosted in ECS or other cloud services.
 
-![Figure 4.9: Containers in AWS](../media/fig4-9.png)
+[![Containers in AWS ](../media/fig4-9.png "Containers in AWS")](../media/fig4-9.png#lightbox)
 
 _Figure 4.9: Containers in AWS._
 
