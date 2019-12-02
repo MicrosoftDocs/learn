@@ -21,8 +21,7 @@ If you have multiple subscriptions, you can organize them into invoice sections.
 
 Depending on your needs, you can set up multiple invoices within the same billing account. To do this, create additional billing profiles. Each billing profile has its own monthly invoice and payment method.
 
-The following diagram shows an overview of how billing is structured:
+The following diagram shows an overview of how billing is structured. If you've signed up for Azure or if your organization has an Enterprise Agreement, your billing might be set up differently.
 
-![Diagram that shows an overview of how billing is structured](../media/4-billing-structure-overview.png)
+![Diagram that shows an overview of how billing is structured with the billing account at the top](../media/4-billing-structure-overview.png)
 
-If you've signed up for Azure or if your organization has an Enterprise Agreement, your billing might be set up differently.
