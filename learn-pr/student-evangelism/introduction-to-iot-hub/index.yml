@@ -2,26 +2,25 @@
 uid: learn.oxford.intro-to-iot-hub
 metadata:
   title: "Introduction to Azure IoT Hub"
-  description: "In this module, we'll introduce various features and capabilities of IoT Hub"
+  description: "University of Oxford"
   ms.date: 9/29/2019
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
 title: "Introduction to Azure IoT Hub"
-summary: "Assess the characteristics of Azure IoT Hub and determine scenarios when to use IoT Hub.
-***Contributed by University of Oxford [Artificial Intelligence:Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
-
+summary: "Assess the characteristics of Azure IoT Hub and determine scenarios when to use IoT Hub."
 abstract: |
     In this module, you will:  
-    - Evaluate whether IoT Hub can effectively address the problems associated with large scale IoT deployment
+    - Evaluate whether IoT Hub can effectively address the problems associated with large-scale IoT deployment
     - Describe how the components of IoT hub work together to build IoT applications managed through the cloud
  
+    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence:Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
 prerequisites: |
     - Basic programming knowledge of C, Python, Node.js
     - Basic knowledge of running Azure command-Line interface
     - Basic knowledge of IoT applications and deploying applications in the Cloud
-iconUrl: /http://via.placeholder.com/120x120.%7C  #Using Place holder as mentioned in learning Guide
+iconUrl: /learn/achievements/student-evangelism/introduction-to-iot-hub.svg
 badge:
   uid: learn.introduction-to-iot-hub.badge
 levels:

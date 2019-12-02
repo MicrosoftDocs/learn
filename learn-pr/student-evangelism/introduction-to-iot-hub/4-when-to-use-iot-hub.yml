@@ -9,6 +9,6 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
-durationInMinutes: 8 # dummy number at present
+durationInMinutes: 7 # dummy number at present
 content: |
   [!include[](includes/4-when-to-use-iot-hub.md)]
