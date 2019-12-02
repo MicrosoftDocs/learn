@@ -8,6 +8,7 @@ Suppose you're a doctor who specializes in diabetic treatment. You want to monit
 
 ![Scenario-based image shows how you can use Azure IoT Edge device for your need and connect to IoT Hub](../media/iot-edge.png)
 
+This module is a part of the AI Edge Engineer learning path.  In this module, we explore engineering-based themes such as: edge computing, security, large-scale deployment and managing response times based on system and device constrains. 
 
 ## Learning objectives
 
