@@ -4,7 +4,7 @@ Virtual machines find uses outside cloud computing as well. For example, a popul
 
 All of these virtual machines are instances of *system VMs*, which virtualize an entire system (physical machine). But there are also *process VMs*, which provide the basis for popular programming languages such as Java and C\#. Let's examine both types, discuss how they work, and understand why it is that of the two, it is system VMs that provide the foundation for cloud computing.
 
-## Process Virtual Machines
+## Process virtual machines
 
 A process VM (Figure 1) is a VM capable of supporting an individual process as long as the process is alive. A process VM terminates when the process that it hosts ends. From a process VM perspective, a machine consists of a virtual memory address space, user-level registers, and instructions for executing a program. According to this definition, a process in a general-purpose operating system can also be called a "machine." However, a regular process can only support program binaries compiled for the processor architecture or *instruction-set architecture* (ISA) of the host machine. Executing binaries compiled for an ISA different than that of the host machine -- for example, running programs compiled for ARM processors on machines equipped with Intel CPUs -- is not supported by regular processes. However, a process VM allows that to happen.
 
@@ -18,7 +18,7 @@ Process VMs have been around since the mid-1960s and were first used to convert 
 
 In summary, a process VM is similar to a regular process running on an OS. However, a process VM allows, via emulation, the execution of applications compiled for an ISA different than that of the host machine. In addition, HLL process VMs provide the foundation for popular managed languages such as Java and C\#. The term "managed" in this context refers to the fact that Java and C\# manage memory on behalf of their applications and provide safeguards against common programming errors such as misuse of pointers and overstepping the bounds of in-memory arrays.
 
-## System Virtual Machines
+## System virtual machines
 
 Unlike process VMs, a system VM virtualizes an entire machine by virtualizing a complete set of hardware resources including processors, memory, and I/O devices. The virtualization software, or *hypervisor*, which is also known as a *virtual-machine monitor* (VMM), sits between the hardware and the operating system and creates the illusion that the operating system and the applications it hosts are running on stand-alone machines (Figure 2).
 

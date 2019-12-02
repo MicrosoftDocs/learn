@@ -1,6 +1,6 @@
 Large data centers are part of the core infrastructure that supports cloud services. To be cost-effective, these data centers must have agile networks that are easy to configure and update. These networks must also lend themselves to the concept of *network virtualization*. Network virtualization is where you create virtual networks on top of physical networks similar to how creating virtual machines on physical servers. While a complete understanding of data-center networking and its underlying technologies are beyond the scope of this module, its important to understand the reason for network virtualization.
 
-## Challenges in Designing Cloud Data Centers
+## Challenges in designing cloud data centers
 
 Computer networks are collections of nodes and links. A node is any network appliance such as a switch, router, or server. A link is a physical or logical connection between two nodes in the network. Networks also have identification resources (addresses) and labeling tags. You also often need a mechanism for identifying devices (IP address and MAC address), links (flow ID), and networks (VLAN ID and VPN ID) to manage and monitor of a virtualized infrastructure. High-level organizational structures such as network topologies are created by assembling these resources.
 
@@ -21,7 +21,7 @@ Traffic within large data centers may be carefully engineered to minimize conges
 
 Finally, data center networks must be designed for fault tolerance. Such networks often use *gossip protocols*, where neighbors talk to each other to share information about failures quickly. It's important to design such mechanisms so that they don't consume large amounts of bandwidth. There must also be mechanisms to recover from failure and reincorporate failed components within the network.
 
-## Network Virtualization
+## Network virtualization
 
 By now, it's clear that implementing a large data center network is complex and needs a higher-level abstraction to be easy to design and configure. However, the situation is even more complex for cloud data centers, largely because of multi-tenancy requirements. The cloud computing paradigm is only relevant if it can ensure isolation between multiple tenants. A cloud service provider must ensure traffic isolation so that one tenant's traffic isn't visible to another. For example, packets transmitted to or from a banking application hosted in one tenant must not be visible to a gaming application in another tenant. The address space must also be isolated so that each tenant has access to their own private address space.
 
@@ -37,7 +37,7 @@ Finally, the presence of multiple tenants and the overcommitting of the shared n
 
 In summary, network virtualization is simply a sharing mechanism that allows multiple isolated virtual networks to use the same physical network infrastructure. This sharing allows virtual networks to be dynamically allocated and deployed on-demand precisely like virtual machines<sup>3</sup>. On a practical level, consumers of cloud services must be able to deploy virtual networks that support all the features of physical networks, including subnets, Classless Inter-Domain Routine (CIDR) addressing, firewalls, and peering for cloud computing to be a useful computing paradigm. This is exactly what cloud service providers such as Amazon, Microsoft, and Google allow you to do.
 
-## Case Study: Virtual Networks in Azure
+## Case study: Virtual networks in Azure
 
 All major cloud service providers support virtual networks, albeit sometimes using different terminology and abstractions. Azure, for example, doesn't offer virtual firewalls, but it does support *network security groups* (NSGs), which are an abstraction of firewalls. Figure 10 shows an Azure virtual network (VNet) configured to serve content to customers from virtual web servers fronted by a virtual load balancer that's assigned a virtual public IP address. The load balancer and the web-server VMs are located in one subnet, while back-end databases and other resources are isolated in an entirely different subnet. Each subnet is in a different NSG, with different firewall rules applied to each. For example, the public-facing subnet opens ports 80 and 443 to the outside world to support HTTP and HTTPS traffic, while the private subnet is accessible only from the other subnet and opens only those ports required for the web servers to connect to the databases. Not shown in the diagram are other virtual network resources such as the virtual network interface cards (NICs) that connect the VMs to the network.
 

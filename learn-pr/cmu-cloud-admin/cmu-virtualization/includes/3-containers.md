@@ -8,7 +8,7 @@ Virtualization using hypervisors such as Zen and Hyper-V partitions a physical s
 
 These are just some of the reason why *containers* are seeing widespread adoption, not only in cloud computing, but in on-premises data centers and individual computers as well. In this lesson, we discuss what containers are, how they work, and the benefits they offer. We also introduce Docker, the world's most popular containerization platform, and present some of the ways in which it has been integrated into popular cloud platforms.
 
-## What is a Container?
+## What is a container?
 
 Containers are revolutionizing IT and software development. They permit software and files to be bundled into self-contained packages known as *container images* that run on different computers (real or virtual) and do so in a consistent and predictable manner. The following description comes from the Docker web site:
 
@@ -40,7 +40,7 @@ Once a container image is built, it is uploaded to a repository in a container r
 
 A container is started by using the Docker client to issue a command to the *Docker daemon* and specifying which image the container should be created from. (A daemon is a program that runs in the background on the host computer.) The daemon then creates a container and loads the image into it. Once running, a container can be started and stopped by issuing commands from the Docker client. The Docker client and Docker daemon don't have to reside on the same computer. In a typical scenario, the client runs on one machine while the daemon runs on a remote server, and the client uses the Secure Shell (SSH) protocol to transmit commands to the daemon.
 
-## Container Services in Cloud Computing
+## Container services in cloud computing
 
 While users are free to take an IaaS approach to containers by creating VMs and installing the Docker runtime in them, cloud service providers, in a nod to the importance of containers, offer PaaS services to support running containerized applications in the cloud. Azure offers Azure Container Instances, which provide a robust, scalable, and easy-to-use environment for hosting containerized applications, as well as the Azure Container Registry, which allows container images to be hosted in Azure rather than in Docker Hub or other external registries and loaded quickly into Azure Container Instances. Amazon offers the AWS Elastic Container Registry (ECR) and AWS Elastic Container Service (ECS), while Google offers Container Registry and Containers on Compute Engine.
 
@@ -54,7 +54,7 @@ Azure Container Registry and Azure Container Instances work in much the same way
 
 More recently, cloud service providers have begun adding container support to selected PaaS services. Azure, for example, offers Azure Web Apps for Containers, which is essentially Azure App Service with the added ability to load software from a container image. Amazon has taken similar steps to integrate Docker containers with Elastic Beanstalk.
 
-## Container Orchestration
+## Container orchestration
 
 Docker provides the infrastructure for building and running containers, but a higher level of supervision is needed to orchestrate the actions of containers and scale containerized workloads the same way VMs are scaled. While an assortment of container-orchestration tools exists, the industry has largely settled on Kubernetes, which grew out of an open-source project by Google, as the orchestrator of choice. Today, major cloud service providers offer managed implementations of Kubernetes that make it easy to run containers on their platforms and manage them with Kubernetes. The "EKS" in Figure 9 stands for Elastic Kubernetes Service. Azure offers a complementary service called Azure Kubernetes Service (AKS), while the Google Cloud Platform offers the Kubernetes Engine.
 
