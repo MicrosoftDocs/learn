@@ -1,6 +1,6 @@
-Your organization is moving all its systems from an on-premises location to Azure. In the previous environment, there were several times when systems failed, or issues arose, and this caused extended delays to resolve problems as they occurred. With the migration to Azure, your organization wants to avoid similar issues. You've been asked to implement a monitoring strategy. 
+Your organization is moving all its systems from an on-premises location to Azure. You've been asked to implement a monitoring strategy. 
 
-In this unit, you'll learn why a continuous monitoring strategy can save time and money for your company.
+In this unit, you'll learn why a continuous monitoring strategy can improve your ability to identify issues within your applications, and improve customer experience.
 
 ## Why use continuous monitoring?
 
@@ -10,11 +10,9 @@ Your response must be appropriate to the kind of issue. You may respond with sec
 
 ![Monitor continuously](../media/2-monitor-continuously.png)
 
-<!-- TODO: please feel free to update to Learn standards-->
+With the right tools, you can monitor the performance of your infrastructure and applications. You can also monitor for security risks and suspicious activity. You can collect information on issues as soon as they arise, analyze the information you've collected, and respond appropriately.
 
-With the right tools, you can monitor the performance of your infrastructures, and your applications. Among other things, you'll also monitor for security risks and suspicious activities. You'll collect information on issues as soon as they arise. Then you'll analyze the information you've collected, and respond appropriately.
-
-By monitoring your applications and infrastructures continuously, you respond to changes and issues appropriately, and on time. In the long run, your organization will become more productive, cost-effective, secure, and competitive.
+By monitoring your applications and infrastructure continuously, you respond to changes and issues appropriately, and on time. In the long run, your organization will become more productive, cost-effective, secure, and competitive.
 
 ## Why monitor your applications?
 
@@ -23,8 +21,6 @@ You want to improve your application's health, and build better applications in 
 By monitoring your application for issues as it's being developed, you prevent errors and exceptions later, when your application goes to production. You ensure your code only gets pushed to the next stage of the development cycle if it has successfully passed the necessary checks. This way, you're improving your development lifecycle.
 
 ![Availability of applications](../media/2-availability.png)
-
-<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/azure-monitor/app/media/overview-dashboard/overview.png -->
 
 You also monitor your application when it's live and in use. As you can see above, you might be faced with failing requests, or issues that cause an application to be unavailable altogether. By monitoring for live issues, you'll identify these types of problems and risks promptly, and respond effectively to keep your application healthy.
 
@@ -36,8 +32,6 @@ You want to deal with any issues that arise in a timely and effective manner. Co
 
 ![Error chart](../media/2-error-chart.png)
 
-<!--TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/media/get-started-portal/pie-chart.png -->
+You'll also want to gather the data for analysis. As the example above shows, you can collect the types of errors identified for an entire infrastructure. You can put them into a single chart to help you make decisions. The example above shows the MSSQLSERVER type error makes up around 48 percent of errors from the Contoso retail infrastructure. As a result, you understand that you need to focus on improving the SQL Server setup.
 
-You'll also want to gather the data for analysis. As the example above shows, you can collect the types of errors identified for an entire infrastructure. You can put them into a single chart to help you make decisions. The chart shows the MSSQLSERVER type error makes up around 48 percent of errors from the Contoso retail infrastructure. As a result, you understand that you need to focus on improving the SQL Server setup.
-
-Continuously monitoring your infrastructure in this way helps you respond appropriately and more effectively to issues. It also helps you gain better insight, and you'll learn from the issues affecting your infrastructure. You can strengthen your protection, and build improved infrastructures.
+Continuously monitoring your infrastructure in this way helps you respond appropriately and more effectively to issues. It also helps you gain better insight, and you'll learn from the issues affecting your infrastructure. You can strengthen your protection, and build improved infrastructure.
