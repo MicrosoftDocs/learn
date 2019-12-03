@@ -3,7 +3,7 @@ uid: learn.design-monitoring-strategy-on-azure
 metadata:
   title: Design a holistic monitoring strategy on Azure
   description: Use monitoring services on Azure to bring operational excellence to your applications and infrastructure.
-  ms.date: 04/30/2019
+  ms.date: 12/11/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial

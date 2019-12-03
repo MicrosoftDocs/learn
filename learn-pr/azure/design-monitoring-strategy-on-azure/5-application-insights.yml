@@ -3,12 +3,11 @@ uid: learn.design-monitoring-strategy-on-azure.5-application-insights
 metadata:
   title: Analyze web applications using Azure Application Insights
   description: Analyze web applications using Azure Application Insights
-  ms.date: 04/30/2019
+  ms.date: 12/11/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Analyze web applications using Azure Application Insights
 durationInMinutes: 10
 content: |
