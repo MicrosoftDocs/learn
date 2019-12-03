@@ -18,17 +18,42 @@ quiz:
 
   - content: 'What answer best describes lambda architecture?'
     choices:  
-    - content: 'a1'
-      isCorrect: false
-      explanation: e1
-    - content: 'a2'
-      isCorrect: false
-      explanation: d2
-    - content: 'a3'
-      isCorrect: false
-      explanation: d3
-    - content: 'a4'
+    - content: 'Lambda architecture supports two outputs from a message data source. A real-time stream for quick analysis, and batch processing for bulk operations.'
       isCorrect: true
-      explanation: e4
+      explanation: Lambda architecture is a hybrid approach.
+    - content: 'Lambda architecture prioritizes speed over batch processing, enabling quick queries and responses.'
+      isCorrect: false
+      explanation: Lambda architecture does not prioritize one form of processing over the other.
+    - content: 'Lambda architecture batch processes large quantities of data, enabling a complete analysis, though with some latency.'
+      isCorrect: false
+      explanation: Lambda architecture includes a real-time processing stream.
 
-  
+  - content: 'Which consistency level supports data writes being available immediately in the write-region, but when the data updates arrive in the read-regions?'
+    choices:  
+    - content: 'Eventual'
+      isCorrect: false
+      explanation: Eventual consistency is a free-for-all, where each region has updated information available when it arrives.
+    - content: 'Strong'
+      isCorrect: false
+      explanation: In Strong consistency, a region must wait until all regions have access to the latest data.
+    - content: 'Bounded'
+      isCorrect: false
+      explanation: Bounded consistency requires a time limit, or update limit, as a threshold. If the threshold is exceeded, the region will wait for the latest data.
+    - content: 'Session'
+      isCorrect: true
+      explanation: Session data consistency is often chosen as the default.
+
+  - content: 'A Cosmos DB is a well structured database. What is the structure hierarchy?'
+    choices:  
+    - content: 'database -> documents -> json'
+      isCorrect: false
+      explanation: The CosmosDB structure is more flexible than this system would allow.
+    - content: 'database -> documents -> containers -> json'
+      isCorrect: false
+      explanation: Think of containers as more like folders than files.
+    - content: 'containers -> databases -> documents -> json'
+      isCorrect: false
+      explanation: There can be only one database.
+    - content: 'database -> containers -> documents -> json'
+      isCorrect: true
+      explanation: A database can contain many containers. A container can include more containers, or documents, or both. The documents can be tables, graphs, or json structured data.
