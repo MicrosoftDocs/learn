@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.design-azure-sql-data-warehouse.create-azure-dw-using-portal
-title: Exercise - Create a data warehouse in Azure SQL Data Warehouse by using the portal
+title: Exercise - Create a data warehouse in Azure Synapse Analytics by using the portal
 metadata:
-  title: Exercise - Create a data warehouse in Azure SQL Data Warehouse by using the portal
-  description: Exercise - Create a data warehouse in Azure SQL Data Warehouse by using the portal
+  title: Exercise - Create a data warehouse in Azure Synapse Analytics by using the portal
+  description: Exercise - Create a data warehouse in Azure Synapse Analytics by using the portal
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill

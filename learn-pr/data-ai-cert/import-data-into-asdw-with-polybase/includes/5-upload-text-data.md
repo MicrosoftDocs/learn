@@ -1,4 +1,4 @@
-PolyBase can read data from several file formats and data sources. Before you upload your data into Azure SQL Data Warehouse, you must prepare the source data into an acceptable format for PolyBase. These formats include:
+PolyBase can read data from several file formats and data sources. Before you upload your data into Azure Synapse Analytics, you must prepare the source data into an acceptable format for PolyBase. These formats include:
 
 - Comma-delimited text files (UTF-8 and UTF-16).
 - Hadoop file formats, such as RC files, Optimized Row Columnar (ORC) files, and Parquet files.

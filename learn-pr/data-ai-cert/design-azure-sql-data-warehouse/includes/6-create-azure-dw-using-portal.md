@@ -3,31 +3,49 @@ Now that we've covered the major design principles, let's see how easy it is to 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account or if you prefer not to do the exercise in your account, you can read through the instructions to understand the steps that are involved in creating a data warehouse in Azure SQL Data Warehouse.
 
-Complete these steps to create a SQL data warehouse that contains the *AdventureWorksDW* sample data:
+Complete these steps to create a data warehouse that contains the *AdventureWorksDW* sample data:
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
-1. In the upper-left corner, select **Create a resource**.
-1. Select **Databases** > **SQL Data Warehouse**.
+
+1. In the upper-left corner, select **+ Create a resource**.
+
+Select **Databases** > **Azure Synapse Analytics (formerly SQL DW)** to start the creation process.
 
     ![Screenshots of creating an Azure data warehouse](../media/6-create-azure-data-warehouse.png)
 
-1. On the new SQL data warehouse page, set the following values:
-    - For **Database name**, enter **sampleDataWH**.
-    - Select the **Subscription** you want to use.
-    - Create a new **Resource group** named **mslearn-demodw**.
+1. From the **SQL Data Warehouse** blade, create an Azure Synapse Analytics  with the following settings:
 
-1. In the **Select source** list, select **Sample**.
+    - Subscription: the name of the subscription you are using in this lab
 
-1. In the **Select sample** list, select **AdventureWorksDW**.
+    - In **Additional setting** tab, under data source, click **Sample**. Clivk on the **Basics** tab
 
-1. Select **Server** to create and configure a new server for your new database. Fill in the **New server form** with the following information:
-    - Use a unique name for the database name. We use **sampledatawh**. You must select a globally unique name.
-    - Enter the admin credentials. We use **dwdbadmin** for the admin name.
-    - Select a **Location** to physically host the server. Typically, this is a location that's close to the data consumer.
+    - Resource group name: **mslearn-demodw**.
 
-1. Select **Select** to set the server information and return to the Create pane.
+    - Database warehouse name: **sampleDataWH**.
+
+    - Server: Create a new server by clicking **Create new** with the following settings and click on **OK**:
+        - Server name: **sampledatawhxx**, where **xx** are your initials
+        - Server admin login: **dwdbadmin**.
+        - Password: **Pa55w.rd**
+        - Confirm Password: **Pa55w.rd**
+        - Location: choose a **location** near to you.
+        - Select the checkbox to Allow Azure services to access server
+        - click on **OK**
+
+    - Server: **SQLServicexx**
+
+    - Performance Level: Click **Select performance level** and select **Gen2 DW100C**
+
+1. In the **SQL Data Warehouse*** blade, click **Review + create**.
 
     ![Screenshot of the new database server pane](../media/6-create-sql-db.png)
+
+1. In the **SQL Data Warehouse*** blade, click **Create**.
+
+
+
+
+
 
 1. Select **Create** to provision the database. Provisioning takes a few minutes.
 
