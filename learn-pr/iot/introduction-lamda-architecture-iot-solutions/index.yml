@@ -1,0 +1,33 @@
+### YamlMime:Module
+uid: learn.iot.introduction-lambda-architecture-iot-solutions
+metadata:
+  title: Introduction to implementing lambda architecture for IoT solutions
+  description:  TBD
+  ms.date: 12/20/2019
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title:  Introduction to implementing lambda architecture for IoT solutions
+summary: >
+  TBD.
+abstract: | 
+  In this module, you will:
+  - Learn TBD
+  - Learn TBD
+prerequisites: | 
+  - An introductory knowledge of Azure IoT
+iconUrl: /learn/achievements/iot/introduction-lambda-architecture-iot-solutions.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure-iot
+- azure-storage
+units:
+- learn.iot.introduction-lambda-architecture-iot-solutions.introduction
+- learn.iot.introduction-lambda-architecture-iot-solutions.summary
+badge:
+  uid: learn.iot.introduction-lambda-architecture-iot-solutions.badge
