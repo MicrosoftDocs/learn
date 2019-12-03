@@ -16,8 +16,6 @@ Azure Monitor centralizes and combines your metrics and log data from different 
 
 ![Azure Monitor overview](../media/7-azure-monitor-overview.png)
 
-<!--TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/azure-monitor/media/overview/overview.png -->
-
 Additionally, you can run a single query over the logs collected from your different services. You can then analyze log data collected from several different sources, and have a unified understanding of all of your data.
 
 Azure Monitor requires little to no configuration to get started. For example, Azure Monitor automatically makes log data available to you from your virtual machines. That's because Azure Security Center's Log Analytics Agent automatically collects all the data into a workspace for Azure Monitor. The agent is enabled and deployed on all your virtual machines using a switch on the portal.
@@ -36,21 +34,17 @@ Log data in workspaces can be analyzed using Log Analytics. Log Analytics is an 
 
 ![Log Analytics](../media/7-log-analytics-a.png)
 
-<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/media/get-started-portal/homepage.png -->
-
 ## Integration with Application Insights
 
 Azure Application Insights and Azure Monitor come integrated. Your Application Insights data is collected and stored in logs that you can view and analyze using Log Analytics. You can open Log Analytics from your Application Insights by selecting **Analytics** from the **Overview** pane of your application.
 
 ![Log Analytics in action](../media/7-application-insight-log-analytics.png)
 
-<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/media/log-query-overview/log-analytics.png -->
-
 From here, you create and run queries on your logs and view results.
 
 Queries for logs are written in the Kusto query language (KQL). A KQL query might look like this:
 
-```Kusto
+```kusto
 SecurityEvent
 | where TimeGenerated > ago(7d)
 | where EventID == 12345
@@ -64,11 +58,9 @@ You can use cross-resource querying to analyze the log data collected from other
 
 ![Cross-resource query](../media/7-cross-resource-query.png)
 
-<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/azure-monitor/platform/media/data-platform-logs/workspaces.png TODO: Please format according to Learn standards.-->
-
 Your cross-resource-query might look like the query below.
 
-```Kusto
+```kusto
 union Update, workspace("contosofinance-it").Update, workspace("c65g7445-914x-4h7j-6nbv-w876499056").Update
 | where TimeGenerated >= ago(24h)
 | where UpdateState == "Needed"
@@ -88,5 +80,3 @@ From this point on, we can use this function for cross-resource-querying. In the
 The query renders its results to a time chart.
 
 ![Time chart](../media/7-time-chart.png)
-
- <!-- TODO: please feel free to update to Learn standards. Original image:  https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/media/cross-workspace-query/chart.png -->

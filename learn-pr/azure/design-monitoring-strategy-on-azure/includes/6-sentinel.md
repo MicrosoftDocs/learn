@@ -22,19 +22,13 @@ Use the Sentinel dashboard to view all of your data connectors.
 
 ![Data connectors](../media/6-connectors.png)
 
-<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/sentinel/media/collect-data/collect-data-page.png  -->
-
 You'll need to choose the appropriate data connector for your data source.
 
 ![Connector](../media/6-connector-prerequisites.png)
 
-<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/sentinel/media/collect-data/opened-connector-page.png -->
-
 From there, you'll need to look at the prerequisites for your connector and address them to successfully connect your data source.
 
 ![Data received](../media/6-data-received.png)
-
-<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/sentinel/media/collect-data/opened-connector-page.png -->
 
 When you connect the data source, your logs will be synced to Sentinel. You'll see a summary of the data that's been collected in the **DATA RECEIVED** graph for your connector. You'll also see the different data types that have been collected for the source. For example, the Azure Active Directory connector collects sign-in logs and audit logs for you.
 
@@ -44,13 +38,9 @@ When your data sources have been connected, Sentinel begins to monitor your ente
 
 ![Alert map](../media/6-enterprise-monitoring.png)
 
-<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/sentinel/media/qs-get-visibility/map.png -->
-
 You'll need to create alert rules. These rules allow you to specify the threats and activities that should raise alerts. You can respond manually or by using playbooks for automated responses.
 
 ![View all alerts](../media/6-detection-rules.png)
-
-<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/sentinel/media/tutorial-detect-threats-custom/create-scheduled-query.png -->
 
 The analytics pane of your Sentinel dashboard allows you to view all the rules that you have in place. The pane also lets you create new rules.
 
@@ -58,7 +48,7 @@ The analytics pane of your Sentinel dashboard allows you to view all the rules t
 
 When you create a rule, you'll need to specify whether it should be enabled or disabled at the outset. You'll also specify the severity of the alert, along with a rule query. For example, the following query is used to discover if a suspicious number of virtual machines are created or updated on Azure, or if a suspicious number of deployments for resources have occurred:
 
-``` 
+```kusto
 AzureActivity
  | where OperationName == "Create or Update Virtual Machine" or OperationName == "Create Deployment"
  | where ActivityStatus == "Succeeded"
@@ -75,51 +65,35 @@ Use the **Incidents** pane to see details about your incidents, such as how many
 
 ![Incidents](../media/6-incidents.png)
 
-<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/sentinel/media/tutorial-investigate-cases/incident-severity.png -->
-
 You select an incident to start to investigate it. You'll see information about the incident on the right side, and view more details when you select **View full details**.
 
 ![Incident detail](../media/6-incident-detail.png)
-
-<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/sentinel/media/tutorial-investigate-cases/alert-details.png -->
 
 You see that this incident has multiple entities that have been mapped to it. When you want to investigate an incident, you'll set its status from **New** to **In progress**, and assign it to an owner.
 
 ![Incident owner](../media/6-incident-owner.png)
 
-<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/sentinel/media/tutorial-investigate-cases/assign-incident-to-user.png -->
-
 You'll then be ready to **Investigate**. You'll get an investigation map, and use it to get a better idea of what caused an incident and the affected scope. Use the map to correlate data surrounding an incident.
 
 ![Investigation map](../media/6-investigation-map.png)
-
-<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/sentinel/media/tutorial-investigate-cases/map1.png -->
 
 The investigation map lets you drill down into an incident. You can, for example, get details about a user who is identified as part of an incident. 
 
 ![Entity](../media/6-entity.png)
 
-<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/sentinel/media/tutorial-investigate-cases/map-entities.png -->
-
 If you hover over an entity, you'll also see a list of **exploration queries**, designed by Microsoft security analysts and experts. You use **exploration queries** to investigate more effectively.
 
 ![Exploration queries](../media/6-exploration-queries.png)
-
-<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/sentinel/media/tutorial-investigate-cases/exploration-cases.png -->
 
 The investigation map also gives you a timeline you can use to understand which event occurred at any given time. Use the timeline feature to understand the path a particular threat might have taken over time.
 
 ![Timeline](../media/6-timeline.png)
 
-<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/sentinel/media/tutorial-investigate-cases/use-timeline.png -->
-
-## How to respond to threats with Azure Sentinel
+## Respond to threats with playbooks
 
 Playbooks can help you automatically respond to threats in Sentinel. You create a new playbook through the **Playbooks** pane in your Sentinel dashboard.
 
 ![Sentinel playbooks](../media/6-sentinel-playbooks.png)
-
-<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/sentinel/media/tutorial-respond-threats-playbook/playbookimg.png  -->
 
 You'll need to add a new playbook by creating a Logic App.
 
@@ -136,8 +110,6 @@ You'll need to search for "Azure Sentinel", to find its related connectors and t
 Choose the trigger you want, then you can put together a step-by-step process detailing what should happen when a response to a Sentinel alert is triggered. You've then configured a playbook.
 
 ![Complete playbook](../media/6-complete-playbook.png)
-
-<!-- Original image: https://docs.microsoft.com/en-us/azure/sentinel/media/tutorial-respond-threats-playbook/logic-app.png -->
 
 When you've configured your playbook, you can point to it in your alert rules. The alert rule below, for example, triggers a playbook called **ProcessExecuted**.
 
