@@ -1,22 +1,22 @@
 Your organization uses different resources for production and development environments. Some resources that were created for development work were put into the same resource group as production resources. You need to be able to identify which resources belong to a development resource group.
 
-In this unit, you'll create both development and production resources and put them all in a production resource group. You'll tag all your resources appropriately. You'll then filter the resources to identify all your development resources from a single location.
+In this unit, you'll create both development and production resources and put them in a production resource group. You'll tag your resources appropriately. You'll then filter the resources to identify all your development resources from a single location.
 
 [!include[](../../../includes/azure-subscription-prerequisite.md)]
 
 ## Create resources
 
-You will need to create a resource group that will act as a production resource group.
+You'll need to create a resource group that will act as a production resource group.
 
 1. [Sign in](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to the Azure portal.
-1. Select **Resource groups**, then select **Add** and fill in the form. Make sure to give it a name that indicates it is a production resource group.
+1. Select **Resource groups**, then select **Add** and fill in the form. Make sure to give it a name that indicates it's a production resource group.
 1. Select **Review + create** to create your resource group.
-1. You will need to create some resources to into your production resource group. You can use this [template](https://azure.microsoft.com/resources/templates/101-vm-simple-linux/) that will help you easily deploy a Linux virtual machine with related resources.  
+1. You'll need to create some resources to into your production resource group. You can use this [template](https://azure.microsoft.com/resources/templates/101-vm-simple-linux/) that will help you easily deploy a Linux virtual machine with related resources.  
 1. Select **Deploy to Azure** on the template page.
-1. For resource group field, make sure to select the resource group you have created. Fill in the rest of the form as appropriate.
+1. For resource group field, make sure to select the resource group you've created. Fill in the rest of the form as appropriate.
 1. Select **Purchase**.
 
-Now you need to create some additional resources that you will eventually move to a development resource group.
+Now you need to create some additional resources that you'll eventually move to a development resource group.
 
 1. Select **Create a resource** on the left side of the Azure portal.
 1. Search for "Storage account", select **Storage account** in the results list, then select **Create**.
@@ -24,14 +24,14 @@ Now you need to create some additional resources that you will eventually move t
 1. Select **Review + create**
 1. Create another storage account by repeating step 1 to 4 again.
 
-You now have a production resource group with two additional storage accounts that you will move to a development resource group.
+You now have a production resource group with two additional storage accounts that you'll move to a development resource group.
 
 ## Apply tags to your resources
 
 Now, use the Azure portal to apply useful tags to resources so you can identify and locate them later.
 
 1. [Sign in](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to the Azure portal.
-1. Select **Resource groups** then select your production resource group. You will see all the resources in your resource group.
+1. Select **Resource groups** then select your production resource group. You'll see all the resources in your resource group.
 1. Select the **checkbox** next to the **name** field for both storage accounts.
 
     ![Select your development resources](../media/3-select-dev-resources.png)

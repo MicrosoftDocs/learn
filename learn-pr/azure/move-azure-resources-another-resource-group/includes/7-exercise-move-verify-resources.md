@@ -1,6 +1,4 @@
-You've identified the development resources that are incorrectly placed in the production resource group and you've checked that they will move successfully. Now, you want to move your development resources from the production resource group into the dedicated development resource group.
-
-In this unit, you'll go through and successfully complete this move for your use case.
+You've identified the development resources that are incorrectly placed in the production resource group and you've checked that they'll move successfully. Now, you want to move your development resources from the production resource group into the dedicated development resource group.
 
 ## Create a resource group for development resources
 

@@ -1,4 +1,4 @@
-You've assessed all the development resources that are in the incorrect production resource group. You think they will move without problems but you'd like to test it before you execute the move operation.
+You've assessed all the development resources that are in the incorrect production resource group. You think they'll move without problems but you'd like to test it before you execute the move operation.
 
 In this unit, you'll learn how to predetermine if a move would be successful. You'll also see how to use the Azure REST API validate move operation to test and validate your moves.
 
