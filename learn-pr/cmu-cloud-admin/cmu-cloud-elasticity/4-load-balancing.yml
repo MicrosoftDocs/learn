@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.cloud-elasticity.4-load-balancing
+title: Role-based access control
+metadata:
+  title: Role-based access control
+  description: Role-based Access Control
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-load-balancing.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+    - content: "Which elements are parts of a role-based access control (RBAC) assignment?"
+      choices:
+      - content: "Objects, permissions, and users"
+        isCorrect: false
+        explanation: "Incorrect. Role assignments bring together users or groups and define the permissions that describe the actions they can perform on a certain scope of resources."
+      - content: "Users, groups, permissions, and resource scopes"
+        isCorrect: true
+        explanation: "Correct! Role assignments bring together users or groups and define the permissions that describe the actions they can perform on a certain scope of resources."
+      - content: "Organizations, applications, and federations"
+        isCorrect: false
+        explanation: "Incorrect. Role assignments bring together users or groups and define the permissions that describe the actions they can perform on a certain scope of resources."
+      - content: "Forests, trees, and domains"
+        isCorrect: false
+        explanation: "Incorrect. Forests, trees, and domains are associations that can be maintained in Microsoft's Active Directory product, not elements of a role assignment."

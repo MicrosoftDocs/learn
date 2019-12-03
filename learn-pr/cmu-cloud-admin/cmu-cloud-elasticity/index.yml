@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.cmu-cloud-admin.cloud-elasticity
+metadata:
+  title: Scale your cloud resources with elasticity
+  description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Discover what cloud elasticity means and different ways to scale your cloud resources.
+  ms.date: 08/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: Scale your cloud resources with elasticity
+summary: Discover what cloud elasticity means and different ways to scale your cloud resources.
+abstract: | 
+  In this module you will:
+  - Describe common load patterns and how they drive the need to scale
+  - Enumerate the strategies and considerations in scaling cloud applications
+  - Discuss the advantages of auto-scaling and the mechanisms used to achieve it
+  - Describe the importance of load balancing in cloud applications and enumerate various methods to achieve it
+  - List the primary benefits of serverless computing and explain the concept of serverless functions
+
+  This content is provided in partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models, and common cloud providers
+  - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them
+  - Understand how cloud resource provisioning works
+  - Be familiar with different approaches to organizing and managing cloud resources
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.cmu-cloud-admin.cloud-elasticity.0-introduction
+- learn.cmu-cloud-admin.cloud-elasticity.1-load-patterns
+- learn.cmu-cloud-admin.cloud-elasticity.2-scaling
+- learn.cmu-cloud-admin.cloud-elasticity.3-auto-scaling
+- learn.cmu-cloud-admin.cloud-elasticity.4-load-balancing
+- learn.cmu-cloud-admin.cloud-elasticity.5-serverless-computing
+- learn.cmu-cloud-admin.cloud-elasticity.6-summary
+
+badge:
+  uid: learn.cmu-cloud-admin.cloud-elasticity.badge

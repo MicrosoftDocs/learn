@@ -143,7 +143,7 @@ On the vulnerability page you will see the details such as the risk level, which
 
 Click on the **Threat Detection** panel.
 
-This displays a list of detected threats. For example, in this list you one potential SQL injection attacks.
+This displays a list of detected threats. For example, here you can see one potential SQL injection attack listed.
 
 ![Threat Detection](../media/5-threat-detection-dashboard.png)
 
