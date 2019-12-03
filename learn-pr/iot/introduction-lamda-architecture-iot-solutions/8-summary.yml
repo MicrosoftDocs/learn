@@ -35,7 +35,7 @@ quiz:
       explanation: Eventual consistency is a free-for-all, where each region has updated information available when it arrives.
     - content: 'Strong'
       isCorrect: false
-      explanation: In Strong consistency, a region must wait until all regions have access to the latest data.
+      explanation: In Strong consistency, a region must wait until all regions have read access to the latest data.
     - content: 'Bounded'
       isCorrect: false
       explanation: Bounded consistency requires a time limit, or update limit, as a threshold. If the threshold is exceeded, the region will wait for the latest data.
