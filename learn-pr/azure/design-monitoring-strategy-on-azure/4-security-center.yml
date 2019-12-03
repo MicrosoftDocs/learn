@@ -3,7 +3,7 @@ uid: learn.design-monitoring-strategy-on-azure.4-security-center
 metadata:
   title: Analyze infrastructure security using Azure Security Center
   description: Analyze infrastructure security using Azure Security Center
-  ms.date: 12/11/2019
+  ms.date: 12/03/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
