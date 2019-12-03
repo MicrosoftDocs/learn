@@ -4,7 +4,7 @@ In the [Provision infrastructure in Azure Pipelines](/learn/modules/provision-in
 
 _Configuration as code_ is a similar concept. However, instead of describing the infrastructure itself, with configuration as code you describe how your infrastructure needs to be configured to run your application or service.
 
-If you’ve ever received a middle-of-the-night emergency support call because of a crashed server, you know the pain of searching through multiple spreadsheets &mdash; or even your memory &mdash; to access the manual steps of setting up a new machine. There is also the difficulty of keeping the development and production environments consistent. An easier way to remove the possibility of human error when initializing machines is to configure them automatically through code. By treating configuration as code, you can configure many systems identically from a single consistent definition.
+If you've ever received an emergency support call in the middle of the night because of a crashed server, you know the pain of searching through multiple spreadsheets &mdash; or even your memory &mdash; to access the manual steps of setting up a new machine. There is also the difficulty of keeping the development and production environments consistent. An easier way to remove the possibility of human error when initializing machines is to configure them automatically through code. By treating configuration as code, you can configure many systems identically from a single consistent definition.
 
 In this module, you continue your journey with the Tailspin team as they add automatic configuration tasks to their CI/CD pipeline for the _Space Game_ website.
 

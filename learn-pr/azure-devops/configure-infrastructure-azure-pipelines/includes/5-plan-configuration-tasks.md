@@ -208,7 +208,7 @@ The **Ansible** extension is not installed by default in Visual Studio Code. Let
 1. In VS Code, on the **View** menu, select **Extensions**.
 1. In the **Search Extensions in Marketplace** textbox, enter *Ansible*, and then select the **Ansible** extension.
 
-    ![Adding the Azure Account extension in VS Code](../media/4-add-ansbile-extension.png)
+    ![Adding the Azure Account extension in VS Code](../media/4-add-ansible-extension.png)
 
 1. Select **Install**.
 1. Select **Reload** to activate the extension.

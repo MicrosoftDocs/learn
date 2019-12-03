@@ -110,13 +110,58 @@ Here, `remote_user` specifies the user to use to connect to complete the tasks.
 
 `become` 
 
-## Bring up Cloud Shell through the Visual Studio Code
+## Prepare your development environment
 
-TODO: In previous modules...
+### Add Visual Studio Code to your system PATH
 
-Here, you bring up Cloud Shell through the Azure portal so that you can work with Ansbile code and run your configuration. We use Cloud Shell here because it comes with Ansible already set up for you.
+TODO: This step ensures that you can launch Visual Studio Code from the terminal.
 
-You can also install and run Ansible locally from a terminal or Visual Studio Code. Later, you'll run Ansible from Azure Pipelines.
+1. Open Visual Studio Code.
+1. In VS Code, press <kbd>F1</kbd> or select **View > Command Palette** to access the command palette.
+1. In the command palette, enter *Shell Command: Install 'code' command in PATH*.
+
+### Create a working directory
+
+Here, you create a directory to hold your Ansible playbook. Doing so helps keep your Ansible code separate from your other work.
+
+1. On the **View** menu, select **Terminal** or **Integrated Terminal**. (The option you see depends on your operating system.)
+1. In the drop-down list, select **bash**:
+
+    ![Selecting the Bash shell in Visual Studio Code](../../shared/media/vscode-terminal-bash.png)
+
+    The terminal window lets you choose any shell that's installed on your system, like Bash, Zsh, and PowerShell.
+
+    Here you'll use Bash. Git for Windows provides Git Bash, which makes it easy to run Git commands.
+
+1. Run the `cd` command to navigate to the directory you want to work from, like your home directory (`~`). You can choose a different directory if you want.
+
+    ```bash
+    cd ~
+    ```
+
+1. Create a directory to hold your work and then move to that directory.
+
+    ```bash
+    mkdir mslearn-ansible
+    cd mslearn-ansible
+    ```
+
+### Configure Git
+
+If you're new to Git and GitHub, you'll first need to run a few commands to associate your identity with Git and authenticate with GitHub.
+
+[Set up Git](https://help.github.com/articles/set-up-git?azure-portal=true) explains the process in greater detail.
+
+At a minimum, you'll need to complete the following steps. Run these commands from the Visual Studio Code integrated terminal:
+
+1. [Set your username](https://help.github.com/articles/setting-your-username-in-git?azure-portal=true).
+1. [Set your commit email address](https://help.github.com/articles/setting-your-commit-email-address-in-git?azure-portal=true).
+1. [Cache your GitHub password](https://help.github.com/articles/caching-your-github-password-in-git?azure-portal=true).
+
+> [!NOTE]
+> If you're already using two-factor authentication with GitHub, [create a personal access token](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line?azure-portal=true) and use your token in place of your password when prompted later.
+>
+> Treat your access token like you would a password. Keep it in a safe place.
 
 ### Install the Azure Account extension
 
@@ -149,7 +194,119 @@ TODO
 1. Paste your authentication code into the text box in your browser.
 1. Select your Microsoft account that's associated with your Azure subscription. Then follow the steps to sign in.
 
-### Bring up Cloud Shell
+## Create a Git repository
+
+```bash
+git init
+```
+
+In practice, you might add your Ansible files to an existing Git repository that contains your application code.
+
+## Open the project in Visual Studio Code
+
+1. Run the following command to open the TODO
+
+    ```bash
+    code -r .
+    ```
+
+    TODO: NO FILES YET. YOU'LL ADD SOME SHORTLY
+
+1. Reopen the integrated terminal.
+
+## Create the Ansible configuration file
+
+Ansible reads configuration settings from *~/ansible.cfg*. Here, you add settings that:
+
+* Hide warnings that you don't need to understand yet.
+* Disables host key checking so that you're not prompted to verify the authenticity of your servers.
+
+1. In Cloud Shell, run this `code` command to open *~/ansible.cfg* in the editor:
+
+    ```bash
+    touch ansible.cfg
+    ```
+
+1. Add these contents to the file:
+
+    ```ini
+    [defaults]
+    deprecation_warnings = False
+    host_key_checking = False
+    ```
+
+1. Save the file and then close the code editor.
+
+### Create the inventory file
+
+Here, you specify your machine inventory. Recall that the _inventory_ is a list of managed nodes. You typically describe your inventory in an *.ini* file or a YAML file.
+
+For your VM deployment on Azure, you could define your inventory file similar to this:
+
+```yml
+hosts:
+  vm1:
+    ansible_host: 13.79.22.89
+ vm2:
+    ansible_host: 40.87.135.194
+```
+
+If these IP addresses change, or if you add or remove systems, you would need to update this inventory file over time.
+
+A more flexible approach is to use a _dynamic inventory_. A dynamic inventory enables Ansible to discover which systems to configure at run time.
+
+The format of the dynamic inventory file depends on your environment. Ansible provides inventory plugins for Azure and other cloud providers, as well as environments such as Docker, Kubernetes, and VMware.
+
+Here's the dynamic inventory file you're going to use:
+
+```yml
+plugin: azure_rm
+include_vm_resource_groups:
+- learn-ansible-rg
+auth_source: auto
+keyed_groups:
+- prefix: tag
+  key: tags
+```
+
+TODO: keyed_groups is wrong. Fix it or remove it.
+
+Here's what each part means:
+
+* `plugin` tells Ansible that the inventory is stored on Azure.
+* `include_vm_resource_groups` specifies the list of resource groups to search for virtual machines.
+* `auth_source` specifies how to authenticate with Azure. Here, we specify `auto` to use Ansible's default precedence for authenticating with Azure. You can configure Ansible to authenticate by using an Azure CLI profile, environment variables, or a credentials file.
+* `keyed_groups` specifies filters Ansible should use to select which virtual machines to configure. This configuration filters VMs by tag name. When you run Ansible, you specify which tags to include. You can filter by other tags as well, such as a VMs location in Azure.
+
+1. In Cloud Shell, run this `code` command to open *azure_rm.yml* in the editor:
+
+    ```bash
+    touch azure_rm.yml
+    ```
+
+1. Add these contents to the file:
+
+    ```yml
+    plugin: azure_rm
+    include_vm_resource_groups:
+    - learn-ansible-rg
+    auth_source: auto
+    keyed_groups:
+    - prefix: tag
+      key: tags
+    ```
+
+    > [!NOTE] When using a dynamic inventory with Azure, this file must end with the name *azure_rm.yml* or *azure_rm.yaml*.
+
+
+
+## Bring up Cloud Shell through the Visual Studio Code
+
+TODO: In previous modules...
+
+Here, you bring up Cloud Shell through the Azure portal so that you can work with Ansible code and run your configuration. We use Cloud Shell here because it comes with Ansible already set up for you.
+
+You can also install and run Ansible locally from a terminal or Visual Studio Code. Later, you'll run Ansible from Azure Pipelines.
 
 1. In VS Code, press <kbd>F1</kbd> or select **View > Command Palette** to access the command palette.
 1. In the command palette, enter *Azure: Open Bash in Cloud Shell*.
@@ -158,20 +315,58 @@ TODO
 
     ![](../media/4-cloud-shell-vs-code.png)
 
-## Create a working directory
+    You can use the drop-down menu to switch between your Cloud Shell session and your local shell.
 
-Here, you create a directory to hold your Ansible playbook. Doing so helps keep your Ansible code separate from your other work.
+    ![](../media/4-code-terminals.png)
 
-1. In Cloud Shell, create a directory named *mslearn-ansible*.
+## Upload files to Cloud Shell
+
+TODO: Uploaded to home dir
+
+1. In VS Code, press <kbd>F1</kbd> or select **View > Command Palette** to access the command palette.
+1. In the command palette, enter *Azure: Upload to Cloud Shell*.
+1. Select *ansible.cfg*.
+1. Repeat the process to upload *azure_rm.yml*.
+
+## Verify the files in Cloud Shell
+
+1. In VS Code, go to your Cloud Shell session.
+1. Run the following `ls` command to list your files:
 
     ```bash
-    mkdir ~/mslearn-ansible
+    ls azure_rm.yml ansible.cfg
     ```
 
-1. Move to the *mslearn-ansible* directory.
+1. Run the following `ansible-config` command to verify your settings:
 
     ```bash
-    cd ~/mslearn-ansible
+    ansible-config view
+    ```
+
+    You see this:
+
+    ```output
+    [defaults]
+    deprecation_warnings = False
+    host_key_checking = False
+    ```
+
+1. Run the following `ansible-inventory` command to verify that Ansible can discover your inventory.
+
+    ```bash
+    ansible-inventory --inventory azure_rm.yml --graph
+    ```
+
+    TODO: Won't be there yet! Run this again later.
+
+    Your output resembles this:
+
+    ```output
+    @all:
+      |--@tag_Ansible_mslearn:
+      |  |--vm1_1bbf
+      |  |--vm2_867a
+      |--@ungrouped:
     ```
 
 ## Create Linux VMs to manage
@@ -255,7 +450,7 @@ Here you create two virtual machines, each running Ubuntu.
 
     The `--ssh-key-values` argument specifies your SSH public key. The VM stores this file, which you later use to connect.
 
-    The `--tags` argument specifies a tag to apply to the VM. Think of a tag as metadata that helps you logically organize your resources. This syntax creates the tag as a key-value pair, where "Ansible" is the key and "mslearn" is its value. You'll use this tag later to create a dynamic inventory in Ansbile.
+    The `--tags` argument specifies a tag to apply to the VM. Think of a tag as metadata that helps you logically organize your resources. This syntax creates the tag as a key-value pair, where "Ansible" is the key and "mslearn" is its value. You'll use this tag later to create a dynamic inventory in Ansible.
 
 1. Run `az vm create` a second time to create a VM that's named **vm2**:
 
@@ -287,109 +482,13 @@ Here you create two virtual machines, each running Ubuntu.
     vm2
     ```
 
-## Create the Ansible configuration file
-
-Ansible reads configuration settings from *~/ansible.cfg*. Here, you add settings that:
-
-* Hide warnings that you don't need to understand yet.
-* Disables host key checking so that you're not prompted to verify the authenticity of your servers.
-
-1. In Cloud Shell, run this `code` command to open *~/ansible.cfg* in the editor:
-
-    ```bash
-    code ~/ansible.cfg
-    ```
-
-1. Add these contents to the file:
-
-    ```ini
-    [defaults]
-    deprecation_warnings = False
-    host_key_checking = False
-    ```
-
-1. Save the file and then close the code editor.
-
-1. Run the following `ansible-config` command to verify your settings:
-
-    ```bash
-    ansible-config view
-    ```
-
-    You see this:
-
-    ```output
-    [defaults]
-    deprecation_warnings = False
-    host_key_checking = False
-    ```
-
-### Create the inventory file
-
-Here, you specify your machine inventory. Recall that the _inventory_ is a list of managed nodes. You typically describe your inventory in an *.ini* file or a YAML file.
-
-For your VM deployment on Azure, you could define your inventory file similar to this:
-
-```yml
-hosts:
-  vm1:
-    ansible_host: 13.79.22.89
- vm2:
-    ansible_host: 40.87.135.194
-```
-
-If these IP addresses change, or if you add or remove systems, you would need to update this inventory file over time.
-
-A more flexible approach is to use a _dynamic inventory_. A dynamic inventory enables Ansible to discover which systems to configure at run time.
-
-The format of the dynamic inventory file depends on your environment. Ansible provides inventory plugins for Azure and other cloud providers, as well as environments such as Docker, Kubernetes, and VMware.
-
-Here's the dynamic inventory file you're going to use:
-
-```yml
-plugin: azure_rm
-include_vm_resource_groups:
-- learn-ansible-rg
-auth_source: auto
-keyed_groups:
-- prefix: tag
-  key: tags
-```
-
-TODO: keyed_groups is wrong. Fix it or remove it.
-
-Here's what each part means:
-
-* `plugin` tells Ansible that the inventory is stored on Azure.
-* `include_vm_resource_groups` specifies the list of resource groups to search for virtual machines.
-* `auth_source` specifies how to authenticate with Azure. Here, we specify `auto` to use Ansible's default precedence for authenticating with Azure. You can configure Ansible to authenticate by using an Azure CLI profile, environment variables, or a credentials file.
-* `keyed_groups` specifies filters Ansible should use to select which virtual machines to configure. This configuration filters VMs by tag name. When you run Ansible, you specify which tags to include. You can filter by other tags as well, such as a VMs location in Azure.
-
-1. In Cloud Shell, run this `code` command to open *azure_rm.yml* in the editor:
-
-    ```bash
-    code azure_rm.yml
-    ```
-
-1. Add these contents to the file:
-
-    ```yml
-    plugin: azure_rm
-    include_vm_resource_groups:
-    - learn-ansible-rg
-    auth_source: auto
-    keyed_groups:
-    - prefix: tag
-      key: tags
-    ```
-
-    > [!NOTE] When using a dynamic inventory with Azure, this file must end with the name *azure_rm.yml* or *azure_rm.yaml*.
-
 1. Run the following `ansible-inventory` command to verify that Ansible can discover your inventory.
 
     ```bash
     ansible-inventory --inventory azure_rm.yml --graph
     ```
+
+    TODO: Won't be there yet! Run this again later.
 
     Your output resembles this:
 
@@ -405,9 +504,9 @@ Here's what each part means:
 
 Although you typically write _playbooks_ to express your desired configurations, you can also run Ansible commands directly.
 
-To verify that Ansible can apply configuration changes to your inventory, here you run the `ping` module directly to ensure that your VMs are discoverable and that Ansbile can connect to each VM.
+To verify that Ansible can apply configuration changes to your inventory, here you run the `ping` module directly to ensure that your VMs are discoverable and that Ansible can connect to each VM.
 
-The `ping` module doesn't connect over ICMP. Think of this module as a way to verify that Ansbile can connect and that Python is correctly installed on each node. You typically wouldn't use this module in a playbook.
+The `ping` module doesn't connect over ICMP. Think of this module as a way to verify that Ansible can connect and that Python is correctly installed on each node. You typically wouldn't use this module in a playbook.
 
 To run the `ping` module directly, run this `ansible` command:
 
@@ -422,7 +521,7 @@ ansible \
 
 The `tag_Ansible_mslearn` argument relates to the `keyed_groups` section in your inventory file. It ensures that the `ping` module is run only on the VMs that are tagged in your resource group.
 
-Recall that when you created your VMs, you provided the `--tags Ansible=mslearn` to create a tag named "Ansbile" whose value is "mslearn". In the `tag_Ansible_mslearn` argument:
+Recall that when you created your VMs, you provided the `--tags Ansible=mslearn` to create a tag named "Ansible" whose value is "mslearn". In the `tag_Ansible_mslearn` argument:
 
 * `tag` maps to the feature you're grouping by.
 * `Ansible` maps to the tag name.
@@ -449,17 +548,21 @@ vm1_1bbf | SUCCESS => {
 
 You see "SUCCESS" as well as "pong" in the output, which tell you that the command succeeded.
 
-## Run the users playbook on your VMs
+## Create the users playbook
 
 Now that you've verified that your VMs are connectable through Ansible, here you apply a playbook that configures service accounts on your VMs. You reviewed this playbook in the previous unit.
 
-1. In Cloud Shell, open *users.yml* in the editor:
+1. From your local Bash session (and not your Cloud Shell session), create a file named *users.yml*.
 
     ```bash
-    code users.yml
+    touch users.yml
     ```
 
-1. Add these contents to the file:
+    Remember that you can use the drop-down menu to switch between your Cloud Shell session and your local Bash shell.
+
+    ![](../media/4-code-terminals.png)
+
+1. In VS Code, add these contents to the file:
 
     ```yml
     ---
@@ -480,7 +583,22 @@ Now that you've verified that your VMs are connectable through Ansible, here you
         - testuser2
     ```
 
-1. Save the file and then close the code editor.
+1. Save the file.
+
+1. Upload *users.yml* to Cloud Shell. To do so:
+
+    1. In VS Code, press <kbd>F1</kbd> or select **View > Command Palette** to access the command palette.
+    1. In the command palette, enter *Azure: Upload to Cloud Shell*.
+    1. Select *users.yml*.
+
+## Run the users playbook on your VMs
+
+1. In VS Code, switch to your Cloud Shell session.
+1. Run the following `ls` command to verify that *users.yml* exists in your Cloud Shell.
+
+    ```bash
+    ls users.yml
+    ```
 
 1. Run the following `ansible-playbook` command to apply your playbook:
 

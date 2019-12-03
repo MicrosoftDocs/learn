@@ -144,7 +144,7 @@ In configuration management, an _agent_ is a background process, such as a servi
 
 In this module, you apply configuration changes each time a change moves through Azure Pipelines. But you can also schedule your systems, or nodes, to . 
 
-Ansible is agent-less, that means no need of any agent installation on remote nodes, so it means there are no any background daemons or programs are executing for Ansible, when it’s not managing any nodes.
+Ansible is agent-less, that means no need of any agent installation on remote nodes, so it means there are no any background daemons or programs are executing for Ansible, when it's not managing any nodes.
 
 Some configuration management tools use an agent-based model; some use an agentless model. Some let you choose which model you want to use.
 
