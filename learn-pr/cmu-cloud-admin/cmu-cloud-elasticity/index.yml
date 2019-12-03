@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.cmu-cloud-admin.cloud-elasticity
+uid: learn.cmu-cloud-admin.cmu-cloud-elasticity
 metadata:
   title: Scale your cloud resources with elasticity
   description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Discover what cloud elasticity means and different ways to scale your cloud resources.
@@ -33,13 +33,13 @@ roles:
 products:
 - azure
 units:
-- learn.cmu-cloud-admin.cloud-elasticity.0-introduction
-- learn.cmu-cloud-admin.cloud-elasticity.1-load-patterns
-- learn.cmu-cloud-admin.cloud-elasticity.2-scaling
-- learn.cmu-cloud-admin.cloud-elasticity.3-auto-scaling
-- learn.cmu-cloud-admin.cloud-elasticity.4-load-balancing
-- learn.cmu-cloud-admin.cloud-elasticity.5-serverless-computing
-- learn.cmu-cloud-admin.cloud-elasticity.6-summary
+- learn.cmu-cloud-admin.cmu-cloud-elasticity.0-introduction
+- learn.cmu-cloud-admin.cmu-cloud-elasticity.1-load-patterns
+- learn.cmu-cloud-admin.cmu-cloud-elasticity.2-scaling
+- learn.cmu-cloud-admin.cmu-cloud-elasticity.3-auto-scaling
+- learn.cmu-cloud-admin.cmu-cloud-elasticity.4-load-balancing
+- learn.cmu-cloud-admin.cmu-cloud-elasticity.5-serverless-computing
+- learn.cmu-cloud-admin.cmu-cloud-elasticity.6-summary
 
 badge:
-  uid: learn.cmu-cloud-admin.cloud-elasticity.badge
+  uid: learn.cmu-cloud-admin.cmu-cloud-elasticity.badge
