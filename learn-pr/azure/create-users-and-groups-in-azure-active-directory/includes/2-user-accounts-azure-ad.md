@@ -68,8 +68,6 @@ foreach ($email in $invitations)
 
 You create the comma-separated values (CSV) file with the list of all the users you want to add. An invitation is sent to each user in that CSV file.
 
-You create the CSV file with the list of all the users you want to add. An invitation is sent to each user in that CSV file.
-
 ## Delete user accounts
 
 You can also delete user accounts through the Azure portal, Azure PowerShell, or the Azure CLI. In PowerShell, use the cmdlet `Remove-AzureADUser`. In the Azure CLI, use the cmdlet `az ad user delete`. 
