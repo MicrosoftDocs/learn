@@ -8,7 +8,7 @@ By using the various services on Azure, you can continuously monitor application
 
 ## Learn more
 
-Vist the following articles to learn more about monitoring solutions on Azure.
+Visit the following articles to learn more about monitoring solutions on Azure.
 
 - [What is Application Insights?](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview)
 - [Azure Monitor overview](https://docs.microsoft.com/azure/azure-monitor/overview)
