@@ -14,7 +14,7 @@ You use Azure Monitor if:
 
 Azure Monitor centralizes and combines your metrics and log data from different sources. In the diagram below, on the left, you'll see the different sources that Azure Monitor supports. On the right, you'll see what Azure Monitor lets you do with the data collected from those sources. You can analyze data, respond to alerts, and visualize using different tools.
 
-![Azure Monitor overview](../media/7-azure-monitor-overview.png)
+![Azure Monitor overview](../media/7-azure-monitor-overview.svg)
 
 Additionally, you can run a single query over the logs collected from your different services. You can then analyze log data collected from several different sources, and have a unified understanding of all of your data.
 
