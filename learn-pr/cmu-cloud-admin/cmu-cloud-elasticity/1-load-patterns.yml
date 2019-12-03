@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.cmu-cloud-admin.cmu-cloud-elasticity.1-load-patterns
-title: Cloud identity management
+title: Compute load patterns
 metadata:
-  title: Cloud identity management
-  description: Cloud Identity Management
+  title: Compute load patterns
+  description: Compute load patterns
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
@@ -16,31 +16,17 @@ quiz:
   title: Check your knowledge
   questions:
 
-    - content: "Which of the following choices isn't an advantage of using a third-party identity provider for authentication to use web applications?"
+    - content: "Assume that one server can handle 5,000 requests per unit of time, and that a web site experiences loads that vary relatively evenly from a low of 5,000 to a peak of 25,000. Assuming the site is hosted in the cloud using virtual machines and that each VM costs $4 per day, what is the approximate annual difference in cost between providing elastic capacity that is sized to meet demand and constant capacity sized to handle peak loads?"
       choices:
-      - content: "Better application performance"
+      - content: "$600"
+        isCorrect: false
+        explanation: "Incorrect. If the average capacity is 15,000 requests per unit time and peak is 25,000, then the difference equates to two servers. (2 servers) X ($4/day) X (365 days/year) = $2,920."
+      - content: "$1,240"
+        isCorrect: false
+        explanation: "Incorrect. If the average capacity is 15,000 requests per unit time and peak is 25,000, then the difference equates to two servers. (2 servers) X ($4/day) X (365 days/year) = $2,920."
+      - content: "$2,920"
         isCorrect: true
-        explanation: "Correct. There's no guarantee that an application's performance will be improved by using a third-party identity provider. In fact, there are cases where certain activities may be slower, because of the need to contact external services. However performance impact is usually outweighed by the security benefits of this approach."
-      - content: "Stronger security"
+        explanation: "Correct! If the average capacity is 15,000 requests per unit time and peak is 25,000, then the difference equates to two servers. (2 servers) X ($4/day) X (365 days/year) = $2,920."
+      - content: "$4,680"
         isCorrect: false
-        explanation: "Incorrect. Stronger security is a benefit of using a third-party identity provider. Implementing an identity service can be complicated, nuanced, and tedious. Large companies can devote significant resources and expertise to ensuring the service is secure, which will increase the overall security of your solution."
-      - content: "Support for single sign-on"
-        isCorrect: false
-        explanation: "Incorrect. Single sign-on is a benefit of using a third-party identity provider. SSO helps reduce the number of accounts and passwords that users need to remember, which can help avoid bad habits like password reuse."
-      - content: "Reduced development time"
-        isCorrect: false
-        explanation: "Incorrect. Reduced development time is a benefit of using a third-party identity provider. Implementing an identity service can be complicated, nuanced, and tedious. Using an existing service will allow the organization the opportunity to focus on implementations more closely aligned with their core mission."
-    - content: "Which of the following choices is the key reason for using directory services within an organization?"
-      choices:
-      - content: "They provide a central repository for identity information on users within an organization."
-        isCorrect: true
-        explanation: "Correct!"
-      - content: "They can be extended to allow users to access cloud resources with their on-premises credentials."
-        isCorrect: false
-        explanation: "Incorrect. While this is one of many benefits afforded by some directory services, not all organizations who need directory services need cloud access."
-      - content: "They allow users to reuse credentials from social-media sites to access corporate resources, reducing account sprawl."
-        isCorrect: false
-        explanation: "Incorrect. While some directory services allow integration with third-party identity providers like social media services, the main purpose is to handle internal identities rather than external ones."
-      - content: "They allow flexible configurations that can be used to model organizations large and small. "
-        isCorrect: false
-        explanation: "Incorrect. Most directory services do allow flexible configurations to help the service meet each organization's unique needs. However, this isn't a key reason why an organization would choose to deploy a directory service."
+        explanation: "Incorrect. If the average capacity is 15,000 requests per unit time and peak is 25,000, then the difference equates to two servers. (2 servers) X ($4/day) X (365 days/year) = $2,920."
