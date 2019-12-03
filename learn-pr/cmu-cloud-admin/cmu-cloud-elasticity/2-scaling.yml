@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.cmu-cloud-admin.cmu-cloud-elasticity.2-scaling
-title: Cloud users and groups
+title: Scaling compute resources
 metadata:
-  title: Cloud users and groups
-  description: Users and User Groups
+  title: Scaling compute resources
+  description: Scaling compute resources
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
@@ -16,17 +16,33 @@ quiz:
   title: Check your knowledge
   questions:
 
-    - content: "Which one of the following choices is NOT an entity that is typically supported by an identity system?"
+    - content: "Which of the following is NOT one of the benefits of scaling when scaling is performed well?"
       choices:
-      - content: "Groups"
+      - content: "Reduced resource cost (compared to provisioning for peak utilization)"
         isCorrect: false
-        explanation: "Incorrect. Groups are used in online identity-management systems to help manage groups of users, applications, or other entity types."
-      - content: "Users"
-        isCorrect: false
-        explanation: "Incorrect. Users are the abstractions over individual people in an organization."
-      - content: "Applications"
-        isCorrect: false
-        explanation: "Incorrect. Applications hosted in the cloud can be given identities to securely connect to other services that require authentication."
-      - content: "Departments"
+        explanation: "Incorrect. This is one of the benefits of scalability."
+      - content: "Less complexity in deployment"
         isCorrect: true
-        explanation: "Correct! Although departments can be represented by concepts like groups, departments and other organizational entities are not usually first-class objects in an online identity-management system."
+        explanation: "Correct! Scaling does not reduce the complexity of the system."
+      - content: "Stable performance irrespective of the load on the system"
+        isCorrect: false
+        explanation: "Incorrect. This is one of the benefits of scalability."
+      - content: "Fewer failures due to overwhelming the capacity of a single resource"
+        isCorrect: false
+        explanation: "Incorrect. This is one of the benefits of scalability."
+
+    - content: "Which of the following is a benefit of horizontal scaling compared to vertical scaling?"
+      choices:
+      - content: "Higher availability"
+        isCorrect: false
+        explanation: "Incorrect. This is one benefit of horizontal scaling, but it's not the only one."
+      - content: "Higher granularity in scaling"
+        isCorrect: false
+        explanation: "Incorrect. This is one benefit of horizontal scaling, but it's not the only one."
+      - content: "Zero down-time as scaling occurs"
+        isCorrect: false
+        explanation: "Incorrect. This is one benefit of horizontal scaling, but it's not the only one."
+      - content: "All of the above"
+        isCorrect: true
+        explanation: "Correct! All three are reasons that horizontal scaling is more popular than vertical scaling in the cloud."
+    
