@@ -55,7 +55,7 @@ Below is a Custom Script Extension configuration, which can be added to an Azure
 
 ## DSC extensions
 
-Desired State Configuration Extensions make it possible for you to deal with the configurations on your infrastructure that may need more complex installation procedures, such as reboots. Desired State Configuration helps you define a state for your machines, rather than having to write detailed instructions on how to achieve that state for each machine. State configurations are relatively easy to read and implement.
+Desired State Configuration (DSC) extensions make it possible for you to deal with the configurations on your infrastructure that may need more complex installation procedures, such as reboots. DSC helps you define a state for your machines, rather than having to write detailed instructions on how to achieve that state for each machine. State configurations are relatively easy to read and implement.
 
 By using a DSC extension handler, which you can define for a virtual machine, you can enforce your states. The configurations for your states can be located in various places, including Azure blob storage or your internal file storage. The DSC extension handler grabs the configuration and implements the state on the target virtual machine. If reboots are necessary for a configuration, DSC continues to execute the state configuration after the reboots are completed.
 
