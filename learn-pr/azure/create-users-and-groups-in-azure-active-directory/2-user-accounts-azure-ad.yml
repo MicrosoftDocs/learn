@@ -31,9 +31,9 @@ quiz:
     - content: A guest user account for each member of the external team.
       isCorrect: true
       explanation: A guest user account restricts users to just the access they need.
-    - content: An external  account for each member of the external team.
+    - content: An external account for each member of the external team.
       isCorrect: false
-      explanation: There is no such thing as an external account.
+      explanation: There's no such thing as an external account.
     - content: An administrator account for each member of the external team.
       isCorrect: false
       explanation: Administrator accounts should be restricted to a limited number of users responsible for your organization's identity management.
