@@ -8,8 +8,6 @@ Your applications and the infrastructure could face different kinds of potential
 
 Your response must be appropriate to the kind of issue. You may respond with security patches or by adding new features. You might also respond with changes in the configuration and code of your application or infrastructure. You'll need to monitor continuously for these issues.
 
-![Monitor continuously](../media/2-monitor-continuously.png)
-
 With the right tools, you can monitor the performance of your infrastructure and applications. You can also monitor for security risks and suspicious activity. You can collect information on issues as soon as they arise, analyze the information you've collected, and respond appropriately.
 
 By monitoring your applications and infrastructure continuously, you respond to changes and issues appropriately, and on time. In the long run, your organization will become more productive, cost-effective, secure, and competitive.
