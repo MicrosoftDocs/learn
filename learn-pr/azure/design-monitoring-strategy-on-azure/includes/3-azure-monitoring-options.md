@@ -1,4 +1,4 @@
-As a financial organization, your company's reputation depends on the reliability and security of its systems. It's critical to monitor your systems closely to ensure that any problems or attacks are identified before they can affect users. For example, if a malicious user attacks your payment system, you need to know quickly to neutralize the threat, or your customers' personal data may be at risk.
+As a financial organization, the reputation of your company depends on the reliability and security of its systems. It's critical to monitor your systems closely to ensure that any problems or attacks are identified before they can affect users. For example, if a malicious user attacks your payment system, you need to know quickly to neutralize the threat, or your customers' personal data may be at risk.
 
 You'll explain the solutions in Azure that will enable you to continuously monitor your organization's services.
 
@@ -12,8 +12,6 @@ Attacks are becoming more intelligent, and the number of people with the right s
 
   ![Health of resources and security recommendations](../media/3-recommendations.png)
 
-<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/security-center/media/security-center-intro/sc-secure-score.png -->
-
 - **Ease the configuration of your security**. Security Center is natively integrated with other Azure services, such as PaaS services like SQL Database. For IaaS services, enable automatic provisioning in Security Center.
 
   ![Automatic provisioning](../media/3-automatic-provisioning.png)
@@ -26,19 +24,13 @@ You use Azure Application Insights to monitor and manage the performance of your
 
 ![Exceptions](../media/3-exceptions-app-insights.png)
 
-<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/azure-monitor/app/media/asp-net-exceptions/end-to-end.png -->
-
 Through usage analysis, you'll understand how your application is being used by your users.
 
 ![Usage reports](../media/3-usage-reports.png)
 
-<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/azure-monitor/app/media/usage-overview/users.png -->
-
 Use Application Insights to monitor the release pipelines for your application. You'll take appropriate action to resolve issues that affect your application before it's deployed to production. Use Application Insights to improve your development lifecycle in this way.
 
 ![Release pipeline](../media/3-release-pipeline.png)
-
-<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/azure-monitor/app/media/continuous-monitoring/001.png -->
 
 ## What is Azure Monitor?
 
@@ -50,13 +42,9 @@ Other services like Security Center also rely on Azure Monitor. Security Center,
 
 ![Azure Monitor dashboard](../media/3-azure-monitor.png)
 
-<!-- TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/azure-monitor/learn/media/tutorial-logs-dashboards/log-analytics-portal-dashboard.png -->
-
 Use Azure Monitor for a detailed view of your application's health, along with the health of your infrastructure, from one single location.  
 
 ![Query](../media/3-azure-monitor-save-query.png)
-
-<!-- TODO: please feel free to update to Learn standards. https://docs.microsoft.com/en-us/azure/azure-monitor/learn/media/tutorial-logs-dashboards/save-query.png -->
 
 Through Azure Monitor's Log Analytics, you analyze data by querying log data from your workspaces.
 
@@ -68,28 +56,18 @@ You connect your data sources to Sentinel. These sources include Microsoft servi
 
 ![Sentinel dashboard](../media/3-sentinel-dashboard.png)
 
-<!--TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/sentinel/media/qs-get-visibility/overview.png -->
-
 Incidents help you group and combine alerts that are related. You use incidents to reduce the noise generated because of the scale of the data. Incidents also help you to further investigate any anomalous activities or threats that have raised alerts.
 
 ![Investigate incidents](../media/3-investigate-incidents.png)
-
-<!--TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/sentinel/media/overview/investigation.png  -->
 
 Use playbooks to automate your response to alerts in Sentinel. You configure playbooks using Azure Logic Apps. Your playbook details the steps to take when an alert is triggered in Sentinel, as shown below.
 
 ![Playbooks](../media/3-playbooks-sentinel.png)
 
-<!--TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/sentinel/media/tutorial-respond-threats-playbook/logic-app.png -->
-
 Use hunting queries to look for threats across your enterprise before alerts are raised. You use built-in hunting queries maintained by Microsoft security researchers as a base for when you build your own queries.
 
 ![Hunting queries](../media/3-hunting-queries.png)
 
-<!--TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/sentinel/media/overview/hunting.png -->
-
 Use notebooks to automate your investigations. Notebooks are playbooks that can consist of investigation or hunting step-by-steps that you reuse or share with others. Use Azure Notebooks for Azure Sentinel to develop and run your notebooks. For example, you could use the **Guided hunting - Office365-Exploring** notebook to hunt for anomalous activities in Office 365 across your enterprise.
 
 ![Notebooks](../media/3-sentinel-notebooks.png)
-
-<!--TODO: please feel free to update to Learn standards. Original image: https://docs.microsoft.com/en-us/azure/sentinel/media/notebooks/sentinel-open-notebook2.png -->
