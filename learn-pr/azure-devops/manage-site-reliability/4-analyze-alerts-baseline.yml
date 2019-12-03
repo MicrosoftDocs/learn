@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.manage-site-reliability.4-analyze-alerts-baseline
+title: Analyze alerts to establish a baseline
+metadata:
+  title: Analyze alerts to establish a baseline
+  description: Learn ....
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-analyze-alerts-baseline.md)]

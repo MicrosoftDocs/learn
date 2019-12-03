@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azdo.manage-site-reliability
+metadata:
+  title: Manage site reliability - Learn
+  description: Learn with the Space Game web team how to use manage your site reliability.
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  #ms.learn-contact: thpetche
+  ms.prod: learning-azure
+title: Manage site reliability
+summary: Learn to ..
+abstract: |
+  In this module, you will:
+  - A
+  - B
+  - C
+prerequisites: An Azure DevOps organization
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure-devops
+units:
+- learn.azdo.manage-site-reliability.1-introduction
+- learn.azdo.manage-site-reliability.2-analyze-telemetry-baseline
+- learn.azdo.manage-site-reliability.3-perform-ongoing-tuning
+- learn.azdo.manage-site-reliability.4-analyze-alerts-baseline
+- learn.azdo.manage-site-reliability.5-blameless-postmortem
+badge:
+  uid: learn.azdo.manage-site-reliability.badge

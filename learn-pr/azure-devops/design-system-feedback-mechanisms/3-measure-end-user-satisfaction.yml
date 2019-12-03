@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.design-system-feedback-mechanisms.3-measure-end-user-satisfaction
+title: Measure end-user satisfaction
+metadata:
+  title: Measure end-user satisfaction
+  description: Discover ...
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-measure-end-user-satisfaction.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.design-system-feedback-mechanisms.2-continuous-experimentation-mindset
+title: Continuous experimentation mindset
+metadata:
+  title: Continuous experimentation mindset
+  description: Learn ...
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-continuous-experimentation-mindset.md)]

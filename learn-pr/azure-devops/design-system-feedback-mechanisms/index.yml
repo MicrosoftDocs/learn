@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azdo.design-system-feedback-mechanisms
+metadata:
+  title: Recommend and design system feedback mechanisms - Learn
+  description: Learn ...
+  ms.date: 06/21/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  #ms.learn-contact: thpetche
+  ms.prod: learning-azure
+title: Recommend and design system feedback mechanisms
+summary: Learn ...
+abstract: |
+  In this module, you will:
+  - A
+  - B
+  - C
+prerequisites: An Azure DevOps organization
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure-devops
+units:
+- learn.azdo.design-system-feedback-mechanisms.1-introduction
+- learn.azdo.design-system-feedback-mechanisms.2-continuous-experimentation-mindset
+- learn.azdo.design-system-feedback-mechanisms.3-measure-end-user-satisfaction
+- learn.azdo.design-system-feedback-mechanisms.4-capture-analyze-user-feedback
+- learn.azdo.design-system-feedback-mechanisms.5-automate-application-analytics
+badge:
+  uid: learn.azdo.design-system-feedback-mechanisms.badge
