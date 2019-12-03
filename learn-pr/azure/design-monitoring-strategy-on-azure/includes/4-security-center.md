@@ -26,7 +26,7 @@ Use Security Center's access and application controls to protect your resources.
 
 You enable JIT through the **Just in time VM access** option in the **ADVANCED CLOUD DEFENSE** section of Security Center in the Azure portal. You'll see all virtual machines that already have JIT enabled, and a list of recommended virtual machines that should have JIT enabled. Choose a virtual machine in the recommended list then use the **Enable JIT on (number) VM** option to configure JIT for the virtual machine. Security Center will show you a list of default ports that JIT will target, but you can configure your own as shown below.
 
-![JIT configuration](../media/4-JIT.png)
+![JIT configuration](../media/4-just-in-time.png)
 
 You can control which applications are allowed to run on your virtual machines through adaptive application controls. In the background, Security Center is using machine learning to look at the processes running on your virtual machine. It will then create whitelisting rules for each resource group holding your virtual machines, and give recommendations.
 

@@ -22,11 +22,7 @@ Use the Sentinel dashboard to view all of your data connectors.
 
 ![Data connectors](../media/6-connectors.png)
 
-You'll need to choose the appropriate data connector for your data source.
-
-![Connector](../media/6-connector-prerequisites.png)
-
-From there, you'll need to look at the prerequisites for your connector and address them to successfully connect your data source.
+You'll need to choose the appropriate data connector for your data source. Next, you'll need to look at the prerequisites for your connector and address them to successfully connect your data source.
 
 ![Data received](../media/6-data-received.png)
 

@@ -8,8 +8,8 @@ By the end of this module, you'll design a continuous monitoring strategy for yo
 
 ## Learning objectives
 
-1. Select the appropriate monitoring solution based on use case.
-1. Integrate monitoring solutions to create a unified monitoring strategy.
+- Select the appropriate monitoring solution based on use case.
+- Integrate monitoring solutions to create a unified monitoring strategy.
 
 ## Prerequisites
 

@@ -12,5 +12,5 @@ Visit the following articles to learn more about monitoring solutions on Azure.
 
 - [What is Application Insights?](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview)
 - [Azure Monitor overview](https://docs.microsoft.com/azure/azure-monitor/overview)
-- [What is Azure Sentinel?](https://docs.microsoft.com/en-us/azure/sentinel/overview)
+- [What is Azure Sentinel?](https://docs.microsoft.com/azure/sentinel/overview)
 - [What is Azure Security Center?](https://azure.microsoft.com/services/security-center/)
