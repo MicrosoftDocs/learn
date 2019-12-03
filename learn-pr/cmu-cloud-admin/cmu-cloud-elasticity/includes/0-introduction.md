@@ -14,7 +14,7 @@ In this module, we examine the mechanics of elasticity. The enabling principle i
 - Describe the importance of load balancing in cloud applications and enumerate various methods to achieve it
 - List the primary benefits of serverless computing and explain the concept of serverless functions
 
-### Prerequisites
+## Prerequisites
 
 - Understand what cloud computing is, including cloud service models, and common cloud providers
 - Recognize cloud service models such as IaaS, PaaS, and SaaS and differentiate between them

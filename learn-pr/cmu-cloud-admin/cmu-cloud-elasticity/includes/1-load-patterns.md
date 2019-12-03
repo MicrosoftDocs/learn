@@ -1,24 +1,14 @@
----
-title: Load Patterns
----
-
-+--------------------------------------------------------------------+
-| # Learning Objectives                                              |
-+====================================================================+
-| Describe common load patterns and how they drive the need to scale |
-+--------------------------------------------------------------------+
-
 If traffic to a cloud resource such as a VM (or set of VMs) or a web app were constant and unchanging, there would be no need to scale. A cloud administrator could simply provision the number of instances needed to handle the load and be done with it. But traffic patterns *do* change over time -- sometimes predictably, and sometimes not. In the real world, an administrator must diagnose the load on the resources she manages and use scaling to ensure that the system can keep up with demand.
 
 Before we discuss how to scale, let's discuss *why* we scale by breaking down some of the common load patterns that VMs and other cloud resources experience.
 
-# Consistent Growth
+## Consistent Growth
 
 One of the most common drivers for the need to scale is consistent growth in demand. Figure 5.1 shows the traffic to a company's web site over a period of 24 months. The company is growing rapidly, and the traffic to its web site reflects that. If we assume that one web server can handle 5,000 requests per unit of time, the company starts with perhaps three or four web servers but needs roughly 20 two years later in order to keep up with increasing demand and continue serving its customers well.
 
-![](media/image1.png){width="6.5in" height="3.1798611111111112in"}
+![Figure 1: Consistent growth.](media/image1.png)
 
-Figure 5.1: Consistent growth.
+_Figure 5.1: Consistent growth._
 
 Consistent growth is among the easiest load patterns to compensate for because change is steady and gradual. We could probably scale using physical servers since we can anticipate when the next server (or set of servers) will be needed and have weeks if not months to prepare, but cloud computing allows us to bring new virtual servers online in a matter of minutes. And while the 24-month trend shows steady and predictable growth, loads might fluctuate substantially within shorter time periods. Cloud computing is much more adaptive to micro-trends than scaling with physical servers.
 
