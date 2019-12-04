@@ -1,4 +1,4 @@
-You've assessed all the development resources that are in the incorrect production resource group. You think they will move without problems but you'd like to test it before you execute the move operation.
+You've assessed all the development resources that are in the incorrect production resource group. You think they'll move without problems but you'd like to test it before you execute the move operation.
 
 In this unit, you'll learn how to predetermine if a move would be successful. You'll also see how to use the Azure REST API validate move operation to test and validate your moves.
 
@@ -61,7 +61,7 @@ pragma: no-cache
 expires: -1
 location: https://management.azure.com/subscriptions/<your-subscription-id>/operationresults/<your-operation-id>?api-version=2018-02-01
 retry-after: 15
-...
+```
 
 At this stage, the API has only validated your request. It hasn't yet validated whether your move would be successful. This response gives you a location URL as shown above. You use this location URL to test your move. Wait for the amount of time shown in the "retry-after" value in the request validation above before attempting to test your validation. The value here would be 15 seconds.
 

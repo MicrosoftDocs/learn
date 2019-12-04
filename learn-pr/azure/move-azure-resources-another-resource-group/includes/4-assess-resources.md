@@ -23,7 +23,7 @@ After identifying the resource types of your resources, you must investigate whe
 - Azure App Service web apps can be moved, but you can't move any third-party SSL certificates that they use.
 - Azure App Service gateways can't be moved.
 
-In your case, you will need to move a pair of storage accounts that support the development version of an application. The storage accounts have been put into the production resource group wrongly. According to the move operation support for resources list, you will be able to move these storage accounts between resource groups and between subscriptions without any limitations.
+In your case, you'll need to move a pair of storage accounts that support the development version of an application. The storage accounts have been put into the production resource group wrongly. According to the move operation support for resources list, you can move these storage accounts between resource groups and between subscriptions without any limitations.
 
 The list also gives links to guidance on moving specific resource types. For example, in the list you'll see that App Service resources have some limitations. The move guidance for Azure App Service states that, if you're moving a Web App to another resource group in the same subscription, you can't automatically move third-party SSL certificates. 
 
