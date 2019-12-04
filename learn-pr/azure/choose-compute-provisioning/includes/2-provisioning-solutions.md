@@ -4,18 +4,18 @@ Creating and managing compute resources manually would require much administrati
 
 ## Why automate compute provisioning?
 
-It would take a long time to manually implement an architecture with many servers. You'd need to manually configure the operating system, install software, configure that software, and apply updates. You'd need to do these tasks for each virtual machine. The tasks can become complex. When you have to carry out those complex tasks many times, it's easy to make mistakes.
+It would take a long time to implement an architecture with many servers manually. You'd need to configure the operating system, install software, configure that software, and apply updates. You'd need to do these tasks for each virtual machine. The tasks can become complex. When you have to carry out those complex tasks many times, it's easy to make mistakes.
 
 You may also need to redeploy your architecture, for example to recover from an attack or disaster. Your architecture might need to support software testing, so you'd need to be able to redeploy it for every testing cycle. If your manual deployment takes several hours, it isn't ideal.
 
 You need some way to automate the deployment of virtual machines, to deal with these issues and difficulties. For each virtual machine, such a solution must be able to:
 
 - Configure the virtual machine. For example, in Azure you need to specify an image from the Azure Marketplace, a tier, a size, IP addresses, and other values.
-- Configure the operating system for the virtual machine. For example, if the OS includes a firewall, you must be able to set firewall rules that filter traffic.
+- Configure the operating system for the virtual machine. For example, if the operating system includes a firewall, you must be able to set firewall rules that filter traffic.
 - Install software. For example, you might need to install a web server or a database server.
 - Apply updates. For example, you might need to apply service packs or hotfixes to the operating system and the installed software.
 
-To reduce the complexity of deployment configuration, you can create a complete architecture in the form of a script or a configuration file, and then deploy it in a single operation. This way, you can automate your configuration to reduce mistakes, and accelerate deployment. You'll help your organization become more productive and cost-effective.
+To reduce the complexity of a deployment configuration, you can create a complete architecture in the form of a script or a configuration file, and then deploy it in a single operation. This way, you can automate your configuration to reduce mistakes and accelerate deployment. You'll help your organization become more productive and cost-effective.
 
 ## Custom scripts
 
@@ -93,9 +93,9 @@ Below is an example, which defines a DSC extension handler for a virtual machine
 
 A Chef server can handle 10,000 nodes (machines) at a time. Chef makes it possible for you to automate the deployment of your infrastructure and fit it into your workflow, whether on-premises or in the cloud.
 
-A Chef server is typically hosted for you and runs as a service. Chef works by using the Chef server to manage your recipes. Recipes are commands to run to achieve a configuration. Use Chef's knife tool to deploy virtual machines and simultaneously apply recipes to them. You install the knife tool on your admin workstation, the machine where you create policies and execute commands. Then run your knife commands from your admin workstation.
+A Chef server is typically hosted for you and runs as a service. Chef works by using the Chef server to manage your recipes. Recipes are commands to run to achieve a configuration. Use Chef's knife tool to deploy virtual machines and simultaneously apply recipes to them. You install the knife tool on your admin workstation, which is the machine where you create policies and execute commands. Then run your knife commands from your admin workstation.
 
-Below is an example showing how a knife command can be used to create a virtual machine on Azure. And also simultaneously apply a recipe that installs a webserver on the machine.
+Below is an example showing how a knife command can be used to create a virtual machine on Azure. The command simultaneously applies a recipe that installs a webserver on the machine.
 
 ```powershell
 knife azurerm server create `
@@ -115,7 +115,7 @@ knife azurerm server create `
 ```
 
 You can also use the Chef extension to apply recipes to the target machines.
-Below is an example that defines a Chef Extension for a virtual machine in an Azure Resource Manager template. It points to a Chef server using the *chef_server_url* property, and points to a recipe to run on the virtual machine to put it in the desired state.
+Below is an example that defines a Chef extension for a virtual machine in an Azure Resource Manager template. It points to a Chef server using the *chef_server_url* property, and points to a recipe to run on the virtual machine to put it in the desired state.
 
 ```json
 {
@@ -167,7 +167,7 @@ end
 
 ## Terraform
 
-Terraform is an open source infrastructure-as-code software tool. You can create infrastructures using Hashicorp Configuration Language (HCL). This language is created by Hashicorp. You can also use JSON. Terraform let's you create relatively easy-to-read script templates that define what type of resources to create, regardless of the cloud service provider. You can build your environments using different cloud service providers, including Microsoft Azure and Amazon Web Services (AWS). This way you can ensure your environments are identical across cloud providers. The process requires you to install Terraform, either locally or on Azure. You can then use Terraform to execute a Terraform script.
+Terraform is an open source infrastructure-as-code software tool. You can create infrastructures using Hashicorp Configuration Language (HCL). This language is created by Hashicorp. You can also use JSON. Terraform lets you create relatively easy-to-read script templates that define what type of resources to create, regardless of the cloud service provider. You can build your environments using different cloud service providers, including Microsoft Azure and Amazon Web Services (AWS). This way you can ensure your environments are identical across cloud providers. The process requires you to install Terraform, either locally or on Azure. You can then use Terraform to execute a Terraform script.
 
 Below is an example of a Terraform script that provisions a virtual machine on Azure:
 
@@ -255,7 +255,7 @@ Azure Automation State Configuration makes it possible for you to ensure that al
 
 Azure Resource Manager templates are JSON files that allow you to define the Azure resources you want to provision in Azure through object notation. You can define an entire infrastructure this way. They're relatively easy to read and work with, depending on your exposure to JSON.
 
-Azure Resource Manager templates allow you to make sure your deployments are consistent. You can ensure, for example, that all virtual machines you create have the same properties. And embed extensions into virtual machines in a template to make sure they're configured exactly the same. You deploy any Azure Resource Manager template through Azure PowerShell, Azure CLI, or the Azure portal. Azure Resource Manager templates should be tested before they're deployed. Test your deployment. You'll ensure your template is something Azure can deploy before attempting a real deployment.
+Azure Resource Manager templates allow you to make sure your deployments are consistent. You can ensure, for example, that all virtual machines you create have the same properties. And embed extensions into virtual machines in a template to make sure their configuration is exactly the same. You deploy any Azure Resource Manager template through Azure PowerShell, Azure CLI, or the Azure portal. Azure Resource Manager templates should be tested before they're deployed. When you test your deployment, you'll ensure your template is something Azure can deploy before attempting a real deployment.
 
 Below is an example of how a virtual machine would be defined in an Azure Resource Manager template. You can see the type of the virtual machine, the operating system, and its storage details among other things.
 
