@@ -1,0 +1,32 @@
+### YamlMime:Module
+uid: 
+metadata:
+  title: React to state changes in your Azure services using Event Grid
+  description: Build serverless application architecture, automate your operations, and integrate applications with by handling Azure events with Event Grid.
+  ms.date: 03/27/2019
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: React to state changes in your Azure services using Event Grid
+summary: Build serverless application architecture, automate your operations, and integrate applications with by handling Azure events with Event Grid.
+abstract: | 
+  In this module, you will:
+  - Create a virtual machine.
+  - Create a Logic App which can be triggered by Event Grid.
+  - Configure the Event Grid connector.
+  - Send a notification email.
+prerequisites: |
+  - 
+iconUrl: 
+levels:
+- intermediate
+roles:
+- developer
+- solution-architect
+products:
+
+units:
+
+badge:
+  uid: 

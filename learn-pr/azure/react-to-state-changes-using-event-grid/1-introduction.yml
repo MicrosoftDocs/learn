@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: 
+title: Introduction
+metadata:
+  title: Introduction
+  description: Learn about the kind of problems that Event Grid can solve.
+  ms.date: 
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
