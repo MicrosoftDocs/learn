@@ -1,4 +1,6 @@
 
+
+
 ![Graph of cyclical forced vibration](../media/lambda-write-read-regions.png)
 
 ![Graph of cyclical forced vibration](../media/lambda-consistency-strong.png)
