@@ -154,8 +154,8 @@ Here, create the App Service instances for the three stages you'll deploy to: _D
 1. Get the host name for each environment.
 1. Verify that each environment is running and that the home page is accessible.
 
-> [!NOTE]
-> For learning purposes, here you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not internet routable and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.
+   > [!NOTE]
+   > For learning purposes, here you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not internet routable and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.
 
 1. From Cloud Shell, generate a random number that makes your web app's domain name unique.
 
