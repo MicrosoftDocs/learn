@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-capture-analyze-user-feedback)]
+  [!include[](includes/4-capture-analyze-user-feedback.md)]
