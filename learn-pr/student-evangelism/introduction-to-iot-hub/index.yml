@@ -17,8 +17,6 @@ abstract: |
  
     "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence:Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
 prerequisites: |
-    - Basic programming knowledge of C, Python, Node.js
-    - Basic knowledge of running Azure command-Line interface
     - Basic knowledge of IoT applications and deploying applications in the Cloud
 iconUrl: /learn/achievements/student-evangelism/introduction-to-iot-hub.svg
 badge:
