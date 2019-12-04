@@ -61,7 +61,7 @@ pragma: no-cache
 expires: -1
 location: https://management.azure.com/subscriptions/<your-subscription-id>/operationresults/<your-operation-id>?api-version=2018-02-01
 retry-after: 15
-...
+```
 
 At this stage, the API has only validated your request. It hasn't yet validated whether your move would be successful. This response gives you a location URL as shown above. You use this location URL to test your move. Wait for the amount of time shown in the "retry-after" value in the request validation above before attempting to test your validation. The value here would be 15 seconds.
 
