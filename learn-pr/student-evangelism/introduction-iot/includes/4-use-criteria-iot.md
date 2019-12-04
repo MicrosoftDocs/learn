@@ -18,13 +18,13 @@ A more comprehensive list of considerations includes:
 | **Secure IoT devices**                 | Do you need to manage secure devices?                        |
 
 ## Applying the decision criteria
-Below, we present a guidance summary for choosing an IoT approach to solve your business problems.
+Below we present a guidance summary for choosing an IoT approach to solve your business problems.
 
 ## Guidance summary
 The Azure IoT product portfolio presents two paths for creating solutions, i.e. PaaS solutions and SaaS solutions. You also have access to the underlying PaaS technologies to develop a granular solution.
 
 If you have an industry-specific problem within a specific vertical, consider a PAAS solution such as Azure IoT solution accelerators. 
 
-If you have fewer device models and predictable scenarios, choose SaaS solutions
+If you have fewer device models and predictable scenarios, choose SaaS solutions.
 
 If you want to maintain all aspects of your solution, choose the underlying PaaS technologies such as Azure Sphere, Azure IoT Edge etc.
