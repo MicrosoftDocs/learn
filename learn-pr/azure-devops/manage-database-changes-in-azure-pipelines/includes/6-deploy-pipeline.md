@@ -4,11 +4,7 @@ Here you follow Andy, Mara, and Tim as they modify the pipeline to add stages. T
 
 ## Create the Azure App Service environments
 
-<<<<<<< HEAD
-In the [Create a release management workflow with Azure Pipelines](/learn/modules/create-a-release-management-workflow?azure-portal=true) module, you created one App Service instance for each of the _dev_, _test_, and _staging_ environments. There you worked through the process step by step. Here you use the Azure CLI in Azure Cloud Shell to create all of the environments in one step.
-=======
-In [Create a release management workflow with Azure Pipelines](/learn/modules/create-multi-stage-pipeline), you created one App Service instance that corresponds to each of the _dev_, _test_, and _staging_ environments. There you worked through it step by step. Here, you use the Azure command-line interface (CLI) through Azure Cloud Shell to create them all in one step.
->>>>>>> 32925fb3fb226a9591c09e5735b31120bac3cd0a
+In the [Create a release management workflow by using Azure Pipelines](/learn/modules/create-multi-stage-pipeline) module, you created one App Service instance that corresponds to each of the _dev_, _test_, and _staging_ environments. There you worked through the creation process step by step. Here you use the Azure CLI through Azure Cloud Shell to create all of the App Service instances in one step.
 
 ### Bring up Cloud Shell through the Azure portal
 
@@ -327,16 +323,10 @@ Here you create the manual approval for the `DBAVerificationApply` stage. You le
 1. Under **Name**, enter *dbaverificationapply*.
 1. Leave the remaining fields at their default values.
 1. Select **Create**.
-<<<<<<< HEAD
-1. On the **dbaverificationapply** environment page, in the drop-down menu, select **Checks**.
 
-    ![Azure Pipelines, showing the Checks menu option](../media/6-add-check-to-environment.png)
-=======
+1. On the **dbaverificationapply** environment page, open the drop-down menu and then select **Approvals and checks**.
 
-1. On the **dbaverificationapply** environment page, select the drop down menu, then select **Approvals and checks**.
-
-    ![Azure Pipelines showing the approvals and checks](../../shared/media/pipeline-add-check-to-environment.png)
->>>>>>> 32925fb3fb226a9591c09e5735b31120bac3cd0a
+    ![Azure Pipelines, showing the approvals and checks](../../shared/media/pipeline-add-check-to-environment.png)
 
 1. Select **Approvals**.
 1. Under **Approvers**, select **Add users and groups** and then select your account.
