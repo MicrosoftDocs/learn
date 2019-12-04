@@ -1,0 +1,13 @@
+uid: learn.iot.introduction-lambda-architecture-iot-solutions.learn-about-cosmos-db-structure-consistency
+metadata:
+  title: Learn about Cosmos DB structure and consistency
+  description: TBD
+  ms.date: 12/20/2019
+  author: PeterTurcan
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-learn-about-cosmos-db-structure-consistency.md)]

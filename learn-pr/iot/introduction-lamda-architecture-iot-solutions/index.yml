@@ -28,6 +28,10 @@ products:
 - azure-storage
 units:
 - learn.iot.introduction-lambda-architecture-iot-solutions.introduction
+- learn.iot.introduction-lambda-architecture-iot-solutions.learn-about-hot-cold-paths-lambda-architecture
+- learn.iot.introduction-lambda-architecture-iot-solutions.learn-about-blob-storage
+- learn.iot.introduction-lambda-architecture-iot-solutions.learn-about-cosmos-db-structure-consistency
+- learn.iot.introduction-lambda-architecture-iot-solutions.learn-about-data-through-time-series-insights
 - learn.iot.introduction-lambda-architecture-iot-solutions.summary
 badge:
   uid: learn.iot.introduction-lambda-architecture-iot-solutions.badge
