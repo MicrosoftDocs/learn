@@ -71,7 +71,7 @@ Here you fetch the connection string for your database. You store it in a file n
 
 ### Specify the connection string locally
 
-1. In Visual Studio Code, in the **Tailspin.SpaceGame.Web** directory, open **Tailspin.SpaceGame.Web.csproj**. Notice the entry for `UserSecretsId`. The web project uses this `UserSecretsId` GUID to locate your *secrets.json* file. The GUID in the *secrets.json* file name must match the GUID in the directory.
+1. In Visual Studio Code, in the **Tailspin.SpaceGame.Web** directory, open **Tailspin.SpaceGame.Web.csproj**. Notice the entry for `UserSecretsId`. The web project uses this `UserSecretsId` GUID to locate your *secrets.json* file. The GUID in the *secrets.json* file matches the GUID that is the name of the directory where the secrets file is located.
 
     ```xml
     <UserSecretsId>d7faad9d-d27a-4122-89ff-b9376c13b153</UserSecretsId>
@@ -145,7 +145,7 @@ Here you build and run the web application locally to verify that the applicatio
 
 1. On a new browser tab, navigate to [http://localhost:5000](http://localhost:5000?azure-portal=true) to see the running application.
 
-    You see this:
+    You see this interface:
 
     ![The Space Game website](../media/5-space-game-top.png)
 

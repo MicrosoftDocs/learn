@@ -16,6 +16,6 @@ The first step is to load the source data. This is referred to as _data ingestio
 If you have a lot of data, each of the previous steps could be computationally expensive. Azure Machine Learning pipelines can be used so data sources and intermediate data are automatically reused inside the pipeline, unchanged steps are automatically skipped, and the retraining process becomes much faster and less expensive.
 
 > [!TIP]
-> You can use the [Azure Machine Learning SDK for Python](https://docs.microsoft.com/azure/machine-learning/service/concept-ml-pipelines#the-python-sdk-for-pipelines) to create machine learning pipelines and to submit and track individual pipeline runs.
+> You can use the [Azure Machine Learning SDK for Python](https://docs.microsoft.com/azure/machine-learning/service/concept-ml-pipelines#building-pipelines-with-the-python-sdk) to create machine learning pipelines and to submit and track individual pipeline runs.
 
 With Azure Machine Learning pipelines and the AutoML capability, you can more easily train your algorithms with just a few lines of code. The next two units discuss AutoML.

@@ -4,7 +4,11 @@ Here you follow Andy, Mara, and Tim as they modify the pipeline to add stages. T
 
 ## Create the Azure App Service environments
 
+<<<<<<< HEAD
 In the [Create a release management workflow with Azure Pipelines](/learn/modules/create-a-release-management-workflow?azure-portal=true) module, you created one App Service instance for each of the _dev_, _test_, and _staging_ environments. There you worked through the process step by step. Here you use the Azure CLI in Azure Cloud Shell to create all of the environments in one step.
+=======
+In [Create a release management workflow with Azure Pipelines](/learn/modules/create-multi-stage-pipeline), you created one App Service instance that corresponds to each of the _dev_, _test_, and _staging_ environments. There you worked through it step by step. Here, you use the Azure command-line interface (CLI) through Azure Cloud Shell to create them all in one step.
+>>>>>>> 32925fb3fb226a9591c09e5735b31120bac3cd0a
 
 ### Bring up Cloud Shell through the Azure portal
 
@@ -159,21 +163,20 @@ Here you create a service connection that enables Azure Pipelines to access your
 1. In Azure DevOps, go to your **Space Game - web - Database** project.
 1. From the bottom corner of the page, select **Project settings**.
 1. Under **Pipelines**, select **Service connections**.
-1. Select **+ New service connection** > **Azure Resource Manager**.
-
-    The **Add an Azure Resource Manager service connection** dialog box appears.
-1. In the dialog box, ensure that **Service Principal Authentication** is selected. Then fill in these fields:
+1. Select **New service connection**, choose **Azure Resource Manager**, and then select **Next**.
+1. Select **Service principal (automatic)**, and then select **Next**.
+1. Fill in these fields:
 
     | Field               | Value                                        |
     |---------------------|----------------------------------------------|
-    | **Connection name** | **Resource Manager - Tailspin - Space Game** |
-    | **Scope level**     | **Subscription**                             |
-    | **Subscription**    | Your Azure subscription                      |
-    | **Resource Group**  | **tailspin-space-game-rg**                   |
+    | Scope level     | **Subscription**                             |
+    | Subscription    | Your Azure subscription                      |
+    | Resource Group  | **tailspin-space-game-rg**                   |
+    | Service connection name | *Resource Manager - Tailspin - Space Game* |
 
     During the process, you might be prompted to sign in to your Microsoft account.
 
-1. Select **OK**.
+1. Select **Save**.
 
     Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you'll have the chance to sign in a second time.
 
@@ -324,11 +327,18 @@ Here you create the manual approval for the `DBAVerificationApply` stage. You le
 1. Under **Name**, enter *dbaverificationapply*.
 1. Leave the remaining fields at their default values.
 1. Select **Create**.
+<<<<<<< HEAD
 1. On the **dbaverificationapply** environment page, in the drop-down menu, select **Checks**.
 
     ![Azure Pipelines, showing the Checks menu option](../media/6-add-check-to-environment.png)
+=======
 
-1. On the **Use manual approvals** page, select **Create**.
+1. On the **dbaverificationapply** environment page, select the drop down menu, then select **Approvals and checks**.
+
+    ![Azure Pipelines showing the approvals and checks](../../shared/media/pipeline-add-check-to-environment.png)
+>>>>>>> 32925fb3fb226a9591c09e5735b31120bac3cd0a
+
+1. Select **Approvals**.
 1. Under **Approvers**, select **Add users and groups** and then select your account.
 1. Under **Instructions to approvers**, enter *Approve this change to the database schema*.
 1. Select **Create**.

@@ -38,7 +38,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template.
 
     ![Creating a project through the Azure DevOps Demo Generator](../media/4-create-new-project.png)
 
-1. Select **Yes, I want to fork this repository** > **Authorize**.
+1. Select **Yes, I want to fork this repository**, and then select **Authorize**.
 1. Select **Create Project**.
 
     The template takes a few moments to run.

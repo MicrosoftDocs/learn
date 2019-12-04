@@ -120,15 +120,13 @@ Let's create the database and server to store the data for the app.
 
     For the server, specify the following details in the **New server** pane, and then click **Select**.
 
-    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
-
     | Property  | Value  |
     |---|---|
     | Server name | **courseserver<em>NNN</em>**, where *NNN* is the same number that you selected for the database |
     | Server admin login | azuresql |
     | Password | Enter a password that meets the requirements. |
     | Confirm password | Confirm your password. |
-    | Location | Accept the default location. |
+    | Location | Central US |
     | Allow Azure services to access server | Checked |
 
 1. Select **Review + create**.

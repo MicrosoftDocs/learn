@@ -148,8 +148,7 @@ The _Space Game_ web application reads from these tables to get the latest leade
     > 1. Copy the IP address to your clipboard.
     > 1. Select the link in the error message to return to the firewall rules. 
     > 1. In the **LocalIP** firewall rule, update the IP addresses with the contents of the clipboard.
-    > 1. Select **Save** > **OK**.
-    > 1. Repeat this step.
+    > 1. Select **Save**, and then select **OK**.
     >
 
 1. Expand **Tables** and then expand each table. You see four tables: **dbo.Profiles**, **dbo.Scores**, **dbo.Achievements**, and **dbo.ProfileAchievements**. You also see the columns and keys for each table.

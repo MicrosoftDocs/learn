@@ -1,4 +1,4 @@
-Tim and Andy are happy with the pipeline and the manual approval of schema changes. But one piece is still missing: the pipeline halts every time the DBA needs to approve the changes. We want the pipeline to halt only when the database schema changes.
+Tim and Andy are happy with the pipeline and the manual approval of schema changes. But every time the pipeline runs, it halts to wait for DBA approval even if the database schema hasn't changed. They want the pipeline to halt only when the database schema changes.
 
 In this section, you modify the pipeline to halt only when the database schema changes. To do so, you write a variable to the pipeline that flags the schema change. You then modify the `DBAVerificationApply` stage to run only when this variable is set.
 
