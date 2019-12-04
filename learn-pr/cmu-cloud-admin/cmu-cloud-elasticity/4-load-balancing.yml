@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.cmu-cloud-admin.cmu-cloud-elasticity.4-load-balancing
-title: Role-based access control
+title: Load balancing
 metadata:
-  title: Role-based access control
-  description: Role-based Access Control
+  title: Load balancing
+  description: Load balancing
   ms.date: 08/15/2019
   author: shanamatthews
   ms.author: shanama
@@ -16,17 +16,28 @@ quiz:
   title: Check your knowledge
   questions:
 
-    - content: "Which elements are parts of a role-based access control (RBAC) assignment?"
+    - content: "Consider the following scenario: you are using a load balancer with a round-robin scheduler as a front-end to two web servers. One web server is a medium instance that contains 2 cores and 8 GB RAM, while the other is a large instance containing 4 cores and 16 GB RAM. Which of the following scenarios is likely?
+
+        I. Both instances will receive an equal number of requests.
+        II. Both instances will be equally utilized in terms of percentage of CPU and memory.
+        III. The large instance will receive twice as many requests as the medium instance.
+        IV. The medium instance will receive twice as many requests as the large instance.
+        V. The large instance will have twice the utilization (in terms of percentage of CPU and memory) of the medium Instance.
+        VI. The large instance will have half the utilization (in terms of percentage of CPU and memory) of the medium instance."
+      
       choices:
-      - content: "Objects, permissions, and users"
-        isCorrect: false
-        explanation: "Incorrect. Role assignments bring together users or groups and define the permissions that describe the actions they can perform on a certain scope of resources."
-      - content: "Users, groups, permissions, and resource scopes"
+      - content: "I and VI"
         isCorrect: true
-        explanation: "Correct! Role assignments bring together users or groups and define the permissions that describe the actions they can perform on a certain scope of resources."
-      - content: "Organizations, applications, and federations"
+        explanation: "Correct!"
+      - content: "III and V"
         isCorrect: false
-        explanation: "Incorrect. Role assignments bring together users or groups and define the permissions that describe the actions they can perform on a certain scope of resources."
-      - content: "Forests, trees, and domains"
+        explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance. It does not take into account the resource utilization of individual instances."
+      - content: "III and VI"
         isCorrect: false
-        explanation: "Incorrect. Forests, trees, and domains are associations that can be maintained in Microsoft's Active Directory product, not elements of a role assignment."
+        explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance. It does not take into account the resource utilization of individual instances."
+      - content: "II and IV"
+        isCorrect: false
+        explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance. It does not take into account the resource utilization of individual instances."
+      - content: "I and V"
+        isCorrect: false
+        explanation: "Incorrect. Round-robin distribution effectively alternates in sending requests to each instance. It does not take into account the resource utilization of individual instances."
