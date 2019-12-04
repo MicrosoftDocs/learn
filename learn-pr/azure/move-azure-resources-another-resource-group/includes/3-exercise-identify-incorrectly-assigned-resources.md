@@ -6,29 +6,32 @@ In this unit, you'll create both development and production resources and put th
 
 ## Create resources
 
-You will need to create a resource group that will act as a production resource group.
+Create a resource group to act as the production resource group.
 
 1. [Sign in](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to the Azure portal.
-1. Select **Resource groups**, then select **Add** and fill in the form. Make sure to give it a name that indicates it is a production resource group.
-1. Select **Review + create** to create your resource group.
-1. You will need to create some resources to into your production resource group. You can use this [template](https://azure.microsoft.com/resources/templates/101-vm-simple-linux/) that will help you easily deploy a Linux virtual machine with related resources.  
+1. Select **Resource groups** > **Add**.
+1. Enter **production-learn-rg** as the name for the resource group.
+1. Select **Review + create** > **Create**.
+1. Use the following quickstart template to create a virtual machine (VM) in your production resource group: [Deploy a simple Windows VM](https://azure.microsoft.com/resources/templates/101-vm-simple-windows/).  
 1. Select **Deploy to Azure** on the template page.
-1. For resource group field, make sure to select the resource group you have created. Fill in the rest of the form as appropriate.
+1. For **Resource group**, select  **production-learn-rg**.
+1. Enter a username, password, and **DNS Label Prefix**.
 1. Select **Purchase**.
 
 Now you need to create some additional resources that you will eventually move to a development resource group.
 
-1. Select **Create a resource** on the left side of the Azure portal.
-1. Search for "Storage account", select **Storage account** in the results list, then select **Create**.
-1. The create storage account pane appears. Make sure to give your storage account a meaningful name, such as adding "dev" as a prefix. This name will make it easy to identify them as we go along.  Also make sure to select your production resource group in the resource group field as you fill in the form.
-1. Select **Review + create**
+1. Select **Create a resource** on the left-hand side of the Azure portal.
+1. Search for **Storage account** and select **Create**.
+1. Select the resource group **production-learn-rg**.
+1. Enter a unique storage account name that starts with the prefix **dev**.
+1. Select **Review + create** > **Create**.
 1. Create another storage account by repeating step 1 to 4 again.
 
 You now have a production resource group with two additional storage accounts that you will move to a development resource group.
 
 ## Apply tags to your resources
 
-Now, use the Azure portal to apply useful tags to resources so you can identify and locate them later.
+Now, use the Azure portal to apply tags to resources so you can identify and locate them later.
 
 1. [Sign in](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to the Azure portal.
 1. Select **Resource groups** then select your production resource group. You will see all the resources in your resource group.
