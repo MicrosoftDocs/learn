@@ -18,11 +18,11 @@ To help identify and organize your resource groups, we recommended that you use 
 
 ## Navigate resource groups
 
-Find resource groups in the Azure portal by selecting **Resource Groups** from the left-hand side navigation pane. You'll see a list of all your resource groups.
+Find resource groups in the Azure portal by selecting **Resource Groups** from the left-hand side. You'll see a list of all your resource groups.
 
-![View resource groups](../media/2-view-resource-groups.png)
+![Screenshot that shows the resource groups page](../media/2-view-resource-groups.png)
 
-You'll find all the resources in a resource group by selecting it. Within the resource group, you can:
+When you select a resource group, you see all the resources in it. Within the resource group, you can:
 
 - Search for specific resources.
 - Filter resource based on type.
@@ -33,20 +33,20 @@ You'll find all the resources in a resource group by selecting it. Within the re
 
 Tags are name and value pairs that you apply to resources. For example, you can set the name "environment" and its value as "development" for all resources that aren't meant for production. In this way, you ensure that you can easily find related resources and keep them organized. 
 
-Many resource types have a **Tags** page in the portal that you can use to add tags:
+Many resource types have a **Tags** page in the portal that you can use to add tags.
 
-![Add tags](../media/2-add-tags.png)
+![Screenshot that shows the Assign tags pane](../media/2-add-tags.png)
 
-Both users and custom code can use tags to find resources. In the portal, to see a list of all the tags that have been assigned, use the search bar to find **Tags**.
+Both users and custom code can use tags to find resources. In the portal, to see a list of all the tags that have been assigned, search on **Tags**.
 
-![Viewing all tags](../media/2-list-of-tags.png)
+![Screenshot that shows the list of all tags](../media/2-list-of-tags.png)
 
-If you click on a tag in the list, you can see a list of all the resources with that tag. Or, on the **All resources** page, you can filter the resources by tags.
+If you click on a tag in the list, you see a list of all the resources with that tag. Or, on the **All resources** page, you can filter the resources by tags.
 
 Tags have limitations:
 
 - Always check whether your Azure resource supports tags. For example, you can't set tags on generalized VMs. 
-- You can apply tags on resource groups but tags are not automatically inherited by resources from their resource group. If you want all the resources in a resource group to have a tag, you must manually assign it. 
-- A maximum of 50 tags can be applied to a single resource or resource group in Azure.
+- You can apply tags on resource groups but tags aren't automatically inherited by resources from their resource group. If you want all the resources in a resource group to have a tag, you must manually assign it.
+- You can apply a maximum of 50 tags to a single resource or resource group in Azure.
 
 Carefully consider how you assign your tags so that they help your organization locate and identify resources.
