@@ -20,7 +20,5 @@ In this module, you will:
 
 ## Prerequisites
 
-- Basic programming knowledge in languages such as C, Python, Node.js  
-- Basic knowledge of running Azure CLI
 - Basic knowledge of IoT applications and IoT Hub
 
