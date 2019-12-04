@@ -17,7 +17,7 @@ Follow these links for more examples of search queries:
 
 - [Simple query examples](https://docs.microsoft.com/azure/search/search-query-simple-examples#how-to-invoke-simple-query-parsing)
 - [Lucene query examples](https://docs.microsoft.com/azure/search/search-query-lucene-examples#how-to-invoke-full-lucene-parsing)
-- [OData filter examples](https://docs.microsoft.com/azure/search/query-odata-filter-orderby-syntax#filter-examples)
+- [OData filter examples](https://docs.microsoft.com/azure/search/search-query-odata-filter#examples)
 
 Follow these links to find out how to incorporate search into your apps:
 

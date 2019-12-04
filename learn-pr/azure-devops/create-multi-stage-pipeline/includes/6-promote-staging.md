@@ -26,13 +26,13 @@ To create the **staging** environment:
 1. Under **Name**, enter *staging*.
 1. Leave the remaining fields at their default values.
 1. Select **Create**.
-1. On the **staging** environment page, open the drop-down menu, and then select **Checks**.
+1. On the **staging** environment page, open the drop-down menu, and then select **Approvals and checks**.
 
-    ![Azure Pipelines, showing the Checks menu option](../media/7-environments-staging-checks.png)
+    ![Azure Pipelines, showing the approvals and checks](../../shared/media/pipeline-add-check-to-environment.png)
 
-1. On the **Use manual approvals** page, select **Create**.
-1. Under **Approvers**, select **Add users and groups**. Then select your account.
-1. Under **Instructions to approvers**, enter this text: *Approve this change when it's ready for staging.*
+1. Select **Approvals**.
+1. Under **Approvers**, select **Add users and groups** and then select your account.
+1. Under **Instructions to approvers**, enter *Approve this change when it's ready for staging*.
 1. Select **Create**.
 
 ## Promote changes to Staging
