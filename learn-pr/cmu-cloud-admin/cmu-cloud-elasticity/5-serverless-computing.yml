@@ -30,6 +30,6 @@ quiz:
       - content: "A well-defined business workflow that kicks in every time an invoice is uploaded to cloud storage."
         isCorrect: false
         explanation: "Incorrect. This is an ideal application for serverless functions."
-      - content: "Code that serves as the "glue" between other cloud services."
+      - content: "Code that serves as the 'glue' between other cloud services."
         isCorrect: false
         explanation: "Incorrect. This is an ideal application for serverless functions."
