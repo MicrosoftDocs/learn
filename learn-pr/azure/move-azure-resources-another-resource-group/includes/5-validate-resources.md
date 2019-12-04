@@ -1,10 +1,10 @@
-You've assessed all the development resources that are in the incorrect production resource group. You think they will move without problems but you'd like to test it before you execute the move operation.
+You've assessed all the development resources that are in the incorrect production resource group. You think they'll move without problems but you'd like to test it before you execute the move operation.
 
-In this unit, you'll learn how to predetermine if a move would be successful. You'll also see how to use the Azure REST API validate move operation to test and validate your moves.
+In this unit, you'll learn how to validate that a move would be successful. You'll also see how to use the Azure REST API validate move operation to test and validate your moves.
 
 ## Prepare to test your move
 
-Before attempting a move, you can test whether it will be successful by calling the `validate move` operation from the Azure REST API. This test is especially useful if you're trying to move resources using, for example, Azure PowerShell or the Azure CLI. You can use these tools to script moves, with minimal human interaction. However, you want to be sure a move will be successful before you execute it. Testing a move doesn't affect your resources. The operation only tests whether your move operation would succeed, based on the options you provide.
+Before attempting to move a resource, you can test whether it will be successful by calling the `validate move` operation from the Azure REST API. This test is especially useful if you're trying to move resources using, for example, Azure PowerShell or the Azure CLI. You can use these tools to script moves, with minimal human interaction. Testing a move doesn't affect your resources. The operation only tests whether your move operation would succeed, based on the options you provide.
 
 If you're trying to move resources through the Azure portal, you don't need to validate the move before attempting it. The Azure portal does an automatic validation before allowing you to move resources.
 
@@ -22,8 +22,7 @@ To formulate the correct REST URI to call, and to provide the other necessary de
 - The [resource ID](https://docs.microsoft.com/powershell/module/azurerm.resources/get-azurermresourcegroup?view=azurermps-6.13.0) for the destination resource group where you want to move your resources.
 - Your account [access token](https://docs.microsoft.com/rest/api/azure/#acquire-an-access-token).
 
-> [!NOTE]
-> When you use the Azure CLI to call an Azure REST API operation, you don't have to provide a subscription ID or an access token because the CLI includes these values automatically.
+When you use the Azure CLI to call an Azure REST API operation, you don't have to provide a subscription ID or an access token because the CLI includes these values automatically.
 
 ## Test the validity of your move
 
@@ -61,7 +60,7 @@ pragma: no-cache
 expires: -1
 location: https://management.azure.com/subscriptions/<your-subscription-id>/operationresults/<your-operation-id>?api-version=2018-02-01
 retry-after: 15
-...
+```
 
 At this stage, the API has only validated your request. It hasn't yet validated whether your move would be successful. This response gives you a location URL as shown above. You use this location URL to test your move. Wait for the amount of time shown in the "retry-after" value in the request validation above before attempting to test your validation. The value here would be 15 seconds.
 
