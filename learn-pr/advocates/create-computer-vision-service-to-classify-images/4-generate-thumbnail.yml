@@ -5,9 +5,8 @@ metadata:
   title: Generate a thumbnail
   description: Generate a thumbnail
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: AndrewJByrne
-  ms.author: marouill
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
