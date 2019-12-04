@@ -1,4 +1,4 @@
-You've identified the development resources that are incorrectly placed in the production resource group and you've checked that they'll move successfully. Now, you want to move your development resources from the production resource group into the dedicated development resource group by using the Azure portal.
+You've identified the development resources that are in the production resource group and you've checked that they'll move successfully. Now, you want to move your development resources from the production resource group into the dedicated development resource group by using the Azure portal.
 
 ## Create a resource group for development resources
 
@@ -38,6 +38,6 @@ Now that you've created a devgroup resource group, you can move your development
 1. On the Azure portal home page, select **Resource groups** > **devgroup**. 
 1. You'll see that the development resources have been moved to the devgroup resource group.
 
-    ![Screenshot that shows resources have been moved](../media/7-exercise-resources-moved.png)
+    ![Screenshot that shows resources moved](../media/7-exercise-resources-moved.png)
 
 In a real environment, you would now update the resource IDs in any tools and scripts that reference your resources.
