@@ -14,7 +14,7 @@ In this new reality, software development and operations capabilities set the bo
 
 By using feature flags in the continuous delivery process, teams are able to efficiently integrate release, deployment, and operational management into the software development cycle.
 
-![A a graphic showing continuous delivery timelines](../media/2-scontinuous-delivery.png)
+![A a graphic showing continuous delivery timelines](../media/2-continuous-delivery.png)
 
 From their onset, feature flagging platforms have accelerated the progression of DevOps practices. Feature flags have always fit into DevOps practices due to the increased control over the delivery cycle that they offer, but the mitigation of risk and prevention of associated technical debt has brought flagging platforms to the spotlight as quintessentially “DevOps”. These changes alongside the newly offered ability to monitor all changes to a flag via an audit log have widened the reach of the methodology. Simultaneously, these systems deeply supplement the methodology as it currently exists and provide additional use cases and benefits that push the limits of DevOps beyond what was possible before.
 
