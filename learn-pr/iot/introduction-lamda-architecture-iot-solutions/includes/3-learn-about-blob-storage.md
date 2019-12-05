@@ -4,7 +4,7 @@ An example of _structured_ storage would be a large database, each entry in the 
 
 When you create a _storage account_ via the Azure portal, blob storage is the default option. In the following image, note the use of the hot and cool metaphors to identify the purpose of the storage.
 
-![Graph of cyclical forced vibration](../media/lambda-blob-storage-create.png)
+![Screenshot of the Create Storage Account page of the Azure portal](../media/lambda-blob-storage-create.png)
 
 ### Specify the type of blob storage
 
@@ -12,7 +12,7 @@ Blob storage, by default, as a _general purpose_ setting applied. Whatever data 
 
 You can improve the efficiency of your blobs by specifying a role for them when uploading data. There are three roles: _block blob_, _page blob_, and _append blob_.
 
-![Graph of cyclical forced vibration](../media/lambda-blob-type.png)
+![Screenshot of the Upload Blob page of the Azure portal](../media/lambda-blob-type.png)
 
 Let's start with the append blobs as it's the easiest to describe. An append blob can, as its name implies, _only_ be appended to. This is ideal for log files. A log file should never be edited, and just grows and grows! There is plenty of space in the cloud.
 

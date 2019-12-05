@@ -8,15 +8,15 @@ Using the portal, you can route the data and start looking at some charts.
 
 In the image below, conveyor belt data is being read and displayed. The chart shows when the belt is running fast, slow, or stopped. In a commercial environment, we usually don't want our delivery conveyor belt to be stopped, so checking on this gives us a clear indication when something is wrong.
 
-![Graph of cyclical forced vibration](../media/lambda-tsi-chart.png)
+![Screenshot of the chart page, when using Time Series Insights on conveyor belt data](../media/lambda-tsi-chart.png)
 
 The second display option is to visualize the data using a _heat map_. The time chunks show the various speeds the conveyor belt is running at, using a color code. The times when the belt is stopped are pretty obvious here too.
 
-![Graph of cyclical forced vibration](../media/lambda-tsi-heatmap.png)
+![Screenshot of the heat map pag, when using Time Series Insights on conveyor belt data](../media/lambda-tsi-heatmap.png)
 
 The third option is a table of results, again divided up into time chunks. A table is not as fun to look at as the chart or heat map. But, depending on your application, this might indeed be a helpful way of visualizing your data.
 
-![Graph of cyclical forced vibration](../media/lambda-tsi-table.png)
+![Screenshot of the table page, when using Time Series Insights on conveyor belt data](../media/lambda-tsi-table.png)
 
 ### In summary
 

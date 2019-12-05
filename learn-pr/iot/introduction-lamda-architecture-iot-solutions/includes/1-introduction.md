@@ -20,5 +20,5 @@ In this module you will:
 
 tbd
 
-![Graph of cyclical forced vibration](../media/lambda-cloud-storage.png)
+![Conceptual illustration of worldwide technology](../media/lambda-cloud-storage.png)
 
