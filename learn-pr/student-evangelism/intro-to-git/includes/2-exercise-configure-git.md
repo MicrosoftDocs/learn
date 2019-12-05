@@ -18,10 +18,10 @@ Before you can create your first repo, you make sure Git is installed and config
 
 1. To configure Git, you must define some global variables: `user.name` and `user.email`. Both are required for commits.
 
-1. Set your name in Cloud Shell with this command, replacing `<USER_NAME>` with the user name you wish to use (for example, "shana"):
+1. Set your name in Cloud Shell with this command, replacing `<USER_NAME>` with the user name you wish to use (for example, "Shana"):
 
     ```bash
-    git config --global user.name <USER_NAME>
+    git config --global user.name "<USER_NAME>"
     ```
 
 1. Now use this command to create a `user.email` configuration variable, replacing `<USER_EMAIL>` with your e-mail address:
@@ -39,7 +39,7 @@ Before you can create your first repo, you make sure Git is installed and config
 1. Confirm that the output includes four lines similar to the following. Your name and e-mail address will be different, of course:
 
     ```output
-    user.name=shana
+    user.name=Shana
     user.email=shana@email.com
     ```
 
@@ -74,7 +74,7 @@ inside it.
     git status
     ```
 
-    Git responds by saying "Nothing to commit." It also says "On branch master" indicating that "master" is the current branch. (It's also the only branch.) So far, so good.
+    Git responds by saying "nothing to commit." It also says "On branch master" indicating that "master" is the current branch. (It's also the only branch.) So far, so good.
 
 1. Use an `ls` command to show the contents of the working tree:
 
@@ -86,9 +86,9 @@ inside it.
 
 You typically don't do anything with the ".git" directory directly. Git updates the metadata there as the status of the working tree changes to keep track of whats changed in your files. This directory is hands-off for you, but it's incredibly important to Git.
 
-## "Gitting" help
+## Getting help from Git
 
-Git, like most command line tools has a built-in help function you can use to lookup commands and keywords.
+Git, like most command line tools has a built-in help function you can use to look up commands and keywords.
 
 1. Type the following command to get help with what you can do with Git:
 

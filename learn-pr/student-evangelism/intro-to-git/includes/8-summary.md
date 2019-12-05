@@ -1,4 +1,5 @@
-Congratulations! In this module, you learned the basics of using Git. 
+Congratulations! In this module, you learned the basics of using Git.
+
 You learned:
 
 - how to configure Git
