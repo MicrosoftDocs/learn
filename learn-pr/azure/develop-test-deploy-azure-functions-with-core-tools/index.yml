@@ -2,7 +2,7 @@
 uid: learn-pr.develop-test-deploy-azure-functions-core-tools
 metadata:
   title: Develop, test, and publish Azure Functions by using Azure Functions Core Tools
-  description: In this module, you'll learn how to use the Azure Functions Core Tools to create, run, and publish functions from the command line in a local development environment.
+  description: Find out how to develop an Azure Function in Visual Studio with a test framework to create, deploy, and test this scalable and secure service.
   ms.date: 11/13/2019
   author: nickwalkmsft
   ms.author: nickwalk
