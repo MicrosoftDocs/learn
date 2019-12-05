@@ -26,9 +26,9 @@ Once another developer, like Alice, has cloned your repo and made some changes l
 
 For now, Alice would have to submit a *pull request* asking you to pull her changes. She can do that with `git request-pull`, which might look like this:
 
-    ```bash
-    git request-pull -p origin/master .
-    ```
+```bash
+git request-pull -p origin/master .
+```
 
 `origin/master` is Alice's way of referring to the "master" branch on the "origin" remote.
 

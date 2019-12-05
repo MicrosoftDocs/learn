@@ -13,8 +13,8 @@ Alice starts working on the Web site. Her first decision is to change the site's
 1. Assume Alice's identity by executing the following commands:
 
     ```bash
-    git config user.name Alice
-    git config user.email alice@contoso.com
+    git config user.name "Alice"
+    git config user.email "alice@contoso.com"
     ```
 
     These config settings are stored in the repo in **.git/config**, so you won't have to enter them again. Each time you `cd` into the "Alice" directory, you effectively assume Alice's identity.

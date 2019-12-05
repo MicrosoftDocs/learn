@@ -22,11 +22,11 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
      git init
      ```
 
-1. Configure Git by adding your credentials:
+1. Configure Git by adding your credentials, replacing `<USER_NAME>` and `<USER_EMAIL>` with your own information (for example, "Shana" and "shana@email.com")
 
     ```bash
-    git config user.name "Your Name"
-    git config user.email "you@example.com"
+    git config user.name "<USER_NAME>"
+    git config user.email "<USER_EMAIL>"
     ```
 
 1. Create some files with the Linux `touch` command, then stage them and commit using Git:

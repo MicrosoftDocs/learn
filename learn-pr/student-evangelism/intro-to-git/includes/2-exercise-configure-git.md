@@ -27,7 +27,7 @@ Before you can create your first repo, you make sure Git is installed and config
 1. Now use this command to create a `user.email` configuration variable, replacing `<USER_EMAIL>` with your e-mail address:
 
     ```bash
-    git config --global user.email <USER_EMAIL>
+    git config --global user.email "<USER_EMAIL>"
     ```
 
 1. Now execute the following command to check that your changes worked:

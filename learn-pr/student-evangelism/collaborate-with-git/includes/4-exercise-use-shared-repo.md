@@ -103,7 +103,7 @@ Now that Bob is set up to work on the Web site, he decides to add a footer to th
     git config user.email bob@contoso.com
     ```
 
-1. Open **index.html** and replace the `<hr>` element near the bottom of the page with this:
+1. Open **index.html** and replace the `<hr>` element with this (found at the end of the `<body>` element):
 
     ```html
     <footer><hr>Copyright (c) 2019 Contoso Cats</footer>
@@ -157,7 +157,7 @@ Now that Bob is set up to work on the Web site, he decides to add a footer to th
     <nav><a href="./index.html">home</a></nav>
     ```
 
-1. Save and close the file, then open **site.css** in the "CSS" subdirectory and add the following line at the bottom:
+1. Save and close the file, then open **site.css** in the **CSS** folder and add the following line at the bottom:
 
     ```css
     nav { background-color: #C0D8DF; }
@@ -240,7 +240,7 @@ Now that Bob is set up to work on the Web site, he decides to add a footer to th
 
     At this point Alice can continue working, or simply commit and push her changes. Let's make another change as Alice by assigning footers the same style as nav bars.
 
-1. Open **site.css** and replace the third line — the one that styles `<nav>` elements — with this one, and, as usual, save your changes and close:
+1. Open **site.css** in the **CSS** folder and replace the third line — the one that styles `<nav>` elements — with this one, and, as usual, save your changes and close:
 
     ```html
     nav, footer { background-color: #C0D8DF; }

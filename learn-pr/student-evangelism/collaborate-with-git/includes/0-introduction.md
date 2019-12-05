@@ -2,7 +2,7 @@ Imagine you're a new software developer at a firm that writes avionics software 
 
 You've already started a little website that lets you and your friends share pictures of your cats to practice Git. You enlist a couple of friends who are also software developers to help out.
 
-You'll be using Git to aid in collaboration, keep track of changes (and who makes them), make sure nothing bad happens when two people change the same file, and keep all the source-code files backed up.
+You'll be using Git to aid in collaboration, keep track of changes (and who makes them), make sure nothing bad happens when two people change the same file, and keep all the source code files backed up.
 
 In this module, you accomplish all this and more with Git.
 
