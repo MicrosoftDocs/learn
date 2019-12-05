@@ -2,7 +2,7 @@
 uid: learn.choose-messaging-model
 metadata:
   title: Choose a messaging model in Azure to loosely connect your services
-  description: Learn how Azure’s storage queues, event hubs, event grid, and service bus can improve your communication between devices.
+  description: Learn how Azure's storage queues, event hubs, event grid, and service bus can improve your communication between devices.
   ms.date: 09/24/2018
   author: rmcmurray
   ms.author: robmcm
