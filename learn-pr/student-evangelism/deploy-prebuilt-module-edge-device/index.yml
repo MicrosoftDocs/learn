@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.oxford.deploy-prebuilt-module-iot-edge
+uid: learn.oxford.deploy-prebuilt-module-edge-device
 metadata:
   title: "Deploy a prebuilt module to the Edge device"
   description: "University of Oxford"
@@ -32,10 +32,10 @@ roles:
 products:
 - azure-iot-hub
 units:
-- learn.oxford.deploy-prebuilt-module-iot-edge.introduction
-- learn.oxford.deploy-prebuilt-module-iot-edge.what-is-prebuilt-module
-- learn.oxford.deploy-prebuilt-module-iot-edge.how-setup-communication
-- learn.oxford.deploy-prebuilt-module-iot-edge.exercise-setup-communication
-- learn.oxford.deploy-prebuilt-module-iot-edge.how-deploy-prebuilt-module
-- learn.oxford.deploy-prebuilt-module-iot-edge.deploying-prebuilt-module
-- learn.oxford.deploy-prebuilt-module-iot-edge.summary
+- learn.oxford.deploy-prebuilt-module-edge-device.1-introduction
+- learn.oxford.deploy-prebuilt-module-edge-device.2-what-is-prebuilt-module
+- learn.oxford.deploy-prebuilt-module-edge-device.3-how-setup-communication
+- learn.oxford.deploy-prebuilt-module-edge-device.4-exercise-setup-communication
+- learn.oxford.deploy-prebuilt-module-edge-device.5-how-deploy-prebuilt-module
+- learn.oxford.deploy-prebuilt-module-edge-device.6-deploying-prebuilt-module
+- learn.oxford.deploy-prebuilt-module-edge-device.7-summary
