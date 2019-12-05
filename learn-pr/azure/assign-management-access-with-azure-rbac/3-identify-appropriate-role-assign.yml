@@ -4,12 +4,11 @@ title: Identify the appropriate role to assign
 metadata:
   title: Identify the appropriate role to assign
   description: Identify the appropriate role to assign
-  ms.date: 06/07/2019
+  ms.date: 12/13/2019
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
   [!include[](includes/3-identify-appropriate-role-assign.md)]

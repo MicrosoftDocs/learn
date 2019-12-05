@@ -4,12 +4,11 @@ title: Elevate your access to User Access Administrator
 metadata:
   title: Elevate your access to User Access Administrator
   description: Elevate your access to User Access Administrator
-  ms.date: 06/07/2019
+  ms.date: 12/13/2019
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 7
 content: |
   [!include[](includes/2-elevate-your-access-user-access-admin.md)]
@@ -18,23 +17,23 @@ quiz:
   questions:
   - content: A user who had owner access to a subscription has left your company. How can their access be revoked and reassigned to another employee?
     choices:
-    - content: Using the relevant portal, PowerShell or REST API commands.
+    - content: Using the Azure portal, PowerShell, or REST API commands.
       isCorrect: true
       explanation: This is the correct workflow.
     - content: Ask the former employee for their password.
       isCorrect: false
-      explanation: A robust security system for your organization cannot depend on the good will of former employees.
-    - content: Ask the former employee to log in and select a different employee to grant their privileges to.
+      explanation: A robust security system for your organization can't depend on the good will of former employees.
+    - content: Ask the former employee to sign in and select a different employee to grant their privileges to.
       isCorrect: false
-      explanation: A robust security system for your organization cannot depend on the good will of former employees.
-  - content: A manager currently has access to the main Pay-As-You-Go subscription for your company. However, they also need owner access to an MSDN subscription for dev/test purposes. How can this be assigned?
+      explanation: A robust security system for your organization can't depend on the good will of former employees.
+  - content: A manager currently has access to the subscription used for the organization's production environment. They also need owner access to the subscription used for the organization's development environment. How can this be assigned?
     choices:
-    - content: The global AD administrator should grant themselves the RBAC User Access Administrator role, and then give owner access to the MSDN subscription to the manager. 
+    - content: The global administrator for the Azure AD organization can grant themselves the RBAC User Access Administrator role, and then give the manager owner access to the subscription. 
       isCorrect: true
-      explanation: This is the correct workflow.
-    - content: The manager should select the MSDN subscription from the dropdown in the Azure portal.
+      explanation: The global administrator can elevate their access to grant others permissions to manage a management group or subscription.
+    - content: The manager should go to the switch directory option in the Azure portal and select the subscription.
       isCorrect: false
-      explanation: They need a user access administrator to grant them this role.
-    - content: The manager should select and assign the MSDN subscription to themselves in PowerShell.
+      explanation: They need a User Access Administrator to grant them owner access to the subscription.
+    - content: The manager should use PowerShell to assign themselves owner access to the subscription.
       isCorrect: false
-      explanation: They need a user access administrator to grant them this role.
+      explanation: They need a User Access Administrator to grant them this role.
