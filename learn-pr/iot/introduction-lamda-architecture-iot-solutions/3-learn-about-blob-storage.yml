@@ -1,7 +1,7 @@
 uid: learn.iot.introduction-lambda-architecture-iot-solutions.learn-about-blob-storage
 metadata:
-  title: Learn about blob storage
-  description: TBD
+  title: Learn about Blob storage
+  description: Provides a brief overview of Blob storage, and when to use it.
   ms.date: 12/20/2019
   author: PeterTurcan
   ms.author: Olivier.Bloch

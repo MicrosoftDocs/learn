@@ -2,7 +2,7 @@
 uid: learn.iot.introduction-lambda-architecture-iot-solutions
 metadata:
   title: Introduction to implementing lambda architecture for IoT solutions
-  description:  TBD
+  description: An overview of the concepts and resources behind Azure IoT storage. After completing the module, you should be able to determine when to use Blob storage, Data Lake storage, CosmosBD, and Time Series Insights.
   ms.date: 12/20/2019
   author: PeterTurcan
   ms.author: Olivier.Bloch
@@ -10,11 +10,13 @@ metadata:
   ms.prod: learning-azure
 title:  Introduction to implementing lambda architecture for IoT solutions
 summary: >
-  TBD.
+  An overview of the concepts and resources behind Azure IoT storage. After completing the module, you should be able to determine when to use Blob storage, Data Lake storage, CosmosBD, and Time Series Insights.
 abstract: | 
   In this module, you will:
-  - Learn TBD
-  - Learn TBD
+  - Learn about the hybrid lambda architecture of IoT
+  - Learn when to use blob storage and data lake storage
+  - Learn when to create a Cosmos DB database
+  - Learn the basics of Time Series Insights
 prerequisites: | 
   - An introductory knowledge of Azure IoT
 iconUrl: /learn/achievements/iot/introduction-lambda-architecture-iot-solutions.svg

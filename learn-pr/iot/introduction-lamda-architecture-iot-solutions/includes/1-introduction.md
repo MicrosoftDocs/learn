@@ -14,7 +14,7 @@ In this module you will:
 
 tbd
 
-
+![Graph of cyclical forced vibration](../media/lambda-cloud-storage.png)
 
 
 

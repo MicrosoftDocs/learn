@@ -1,7 +1,7 @@
 uid: learn.iot.introduction-lambda-architecture-iot-solutions.learn-about-data-through-time-series-insights
 metadata:
   title: Learn about data through Time Series Insights
-  description: TBD
+  description: Describes how an Azure Time Series Insights resource provides ways to visualize and make sense of incoming data.
   ms.date: 12/20/2019
   author: PeterTurcan
   ms.author: Olivier.Bloch
