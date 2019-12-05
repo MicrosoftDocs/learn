@@ -11,7 +11,7 @@ You also need to add the Azure IoT extension to the cloud shell instance Azure C
 az extension add --name azure-cli-iot-ext
 ```
 
-![An illustration is showing that adding azure cli extension.](../media/cli-iot-ext.png)
+![An illustration is showing that adding azurecli extension.](../media/cli-iot-ext.png)
 
 ## Creating a resource group
 
@@ -33,7 +33,7 @@ Create the virtual machine named EdgeVM using the following commands:
 az vm image accept-terms --urn microsoft_iot_edge:iot_edge_vm_ubuntu:ubuntu_1604_edgeruntimeonly:latest
 ```
 
-![An illustration is showing that accepting licence terms to create the virtual device.](../media/vm-accept-licence.png)
+![An illustration is showing that accepting licence terms to create the virtual device.](../media/vm-accept-license.png)
 
 ```azurecli
 az vm create --resource-group IoTEdgeResources --name EdgeVM --image microsoft_iot_edge:iot_edge_vm_ubuntu:ubuntu_1604_edgeruntimeonly:latest --admin-username azureuser --generate-ssh-keys
@@ -43,7 +43,7 @@ az vm create --resource-group IoTEdgeResources --name EdgeVM --image microsoft_i
 
 It may take a few minutes to create and start the new virtual machine.
 
-Note the public IP address (publicIpAddress) which is provided as part of the create command output. You will use this to connect to the virtual machine in subsequent steps.
+Note the public IP address (publicIpAddress) which is provided as part of the create command output. You'll use this to connect to the virtual machine in later steps.
 
 ## Create an IoT hub
 
@@ -90,7 +90,7 @@ You need to configure your device with the device connection string that you ret
 az vm run-command invoke -g IoTEdgeResources -n EdgeVM --command-id RunShellScript --script "/etc/iotedge/configedge.sh '{device_connection_string}'"
 ```
 
-![An illustration is showing how to setup connection string to the virtual device.](../media/setup-conn-string.png)
+![An illustration is showing how to set up connection string to the virtual device.](../media/setup-conn-string.png)
 
 ## Viewing the IoT Edge runtime status
 
@@ -106,7 +106,7 @@ ssh azureuser@{publicIpAddress}
 
 ## Checking if the IoT Edge device is configured
 
-You will check to see that the IoT Edge security daemon is running as a system service by using iotedge commands. You need elevated privileges to run iotedge commands.  
+You'll check to see that the IoT Edge security daemon is running as a system service by using iotedge commands. You need elevated privileges to run iotedge commands.  
 
 You run the following commands to test the status of the IoT Edge device.
 

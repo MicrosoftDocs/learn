@@ -14,4 +14,4 @@ The Simulated Temperature Sensor module creates sample data that you can use for
 
 ## Clean up resources
 
-To avoid changes, delete Azure resources as needed, including the device that you created, the resource group. Ensure that the resources deleted will not be needed again.
+To avoid changes, delete Azure resources as needed, including the device that you created, the resource group. Ensure that the resources deleted won't be needed again.

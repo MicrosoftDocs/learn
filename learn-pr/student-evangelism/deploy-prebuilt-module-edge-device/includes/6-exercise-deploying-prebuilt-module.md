@@ -6,7 +6,7 @@ To deploy the Simulated temperature sensor module from the Azure Marketplace, us
 
 3. Select Create.
 
-4. Using the three-step wizard, define exactly how to deploy the module. In the **Add Modules** step of the wizard, the SimulatedTemperatureSensor module should be is autopopulated.  In the **Specify Routes step** of the wizard, you define how messages are passed between modules and to IoT Hub. If this setting is not autopopulated to $upstream, add the following code:
+4. Using the three-step wizard, define exactly how to deploy the module. In the **Add Modules** step of the wizard, the SimulatedTemperatureSensor module should be is autopopulated.  In the **Specify Routes step** of the wizard, you define how messages are passed between modules and to IoT Hub. If this setting isn't autopopulated to $upstream, add the following code:
 
    ```
     {
