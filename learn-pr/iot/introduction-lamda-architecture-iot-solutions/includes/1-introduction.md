@@ -1,10 +1,16 @@
-intro
+
+Taking a first step into building an Azure IoT app, even a short test app, is going to require you to think about your storage options. If you are new to Azure, the range of resources available can be bewildering. This module introduces the architectural concepts of IoT, and how they relate to cloud storage. The most common storage options are described at a high level. You will not be asked to do any coding, nor build an app using the portal. To complete the module you'll have to read the units, and pass a few knowledge checks along the way!
+
+The purpose of this module is to give you enough background info about Azure storage for IoT, that you will be able to make an informed decision when you do build your first IoT app.
 
 ## Learning objectives
 
 In this module you will:
 
-- Learn TBD
+- Learn about the hybrid lambda architecture of IoT
+- Learn when to use blob storage and data lake storage
+- Learn when to create a Cosmos DB database
+- Learn the basics of Time Series Insights
 
 ## Prerequisites
 
@@ -16,27 +22,3 @@ tbd
 
 ![Graph of cyclical forced vibration](../media/lambda-cloud-storage.png)
 
-
-
-## Cosmos DB
-
-well ordered universe: write at one location, treated as local in many other locations
-primary write db, secondary read db
-consistency between dbs
-Make the decision:
-Strong consistency - latency, but consistent. all geo locations see same data until acks from all received by primary
-Strong performance - inconsistent data 
-Bounded: Set a staleness value at T time, data will be tolerated if its stale up to T minutes, but if it is stale beyond that, it will wait for strong.
-Session: clients with access to write db see changes as they are made, all others in sync when all acks received
-Prefix: sequence by ??
-
-Multi-api : SQL API, MONGO API, GRAPH API, TABLE API, CASSANDRA APi - all used with CosmosDB
-
-Structure: database, container, documents, json
-a container is a collection or a table or a graph
-
-Be choosy on locations - read locations
-
-manual/automatic failover is what?
-failover - a hubs operation is moved to a second site (disasters, power outages, hacking)
-autofailover - zero downtime - but some risk in handing over control to an auto process

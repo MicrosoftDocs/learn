@@ -1,16 +1,20 @@
-In this module, you learned how to:
+In this module, you learned about:
 
-- TBD
+- The hybrid lambda architecture of IoT
+- Blob storage and data lake storage
+- Cosmos DB databases
+- The basics of Time Series Insights
 
 ## Next steps
 
 Take your interest further with:
 
-- [IoT Hub message routing query syntax](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-routing-query-syntax/)
-- [Azure Stream Analytics portal](https://azure.microsoft.com/services/stream-analytics/)
-- [Azure Stream Analytics documentation](https://docs.microsoft.com/azure/stream-analytics/)
+- [Simplify IoT development](https://azure.microsoft.com/free/iot/)
+- [Azure Blob storage documentation](https://docs.microsoft.com/azure/storage/blobs/)
+- [Azure Time Series Insights documentation](https://azure.microsoft.com/services/time-series-insights/)
+- [Azure Cosmos DB documentation](https://docs.microsoft.com/azure/cosmos-db/)
 - [Azure Certified for IoT device catalog](https://catalog.azureiotsolutions.com/)
 
 And look out for additional Learn modules on IoT.
 
-To complete this module, and earn your just rewards, complete a final knowledge check.
+To finish this module, complete a final knowledge check.

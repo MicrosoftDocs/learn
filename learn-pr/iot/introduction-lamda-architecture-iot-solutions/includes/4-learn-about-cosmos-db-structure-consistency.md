@@ -5,7 +5,7 @@ Access to the data in a Cosmos DB resource is made through queries built from AP
 
 A Cosmos DB resource is about big data, and world-wide access. An example of the issues this raises might help.
 
-## A worldwide scenario
+## Consider a worldwide scenario
 
 Suppose you run a company that sells products from one location in the US, and two in Australia. Each location has its own copy of the pricing data. The price data is set only by the US location.
 
@@ -16,6 +16,10 @@ You might define the following regions when you set up your Cosmos DB database.
 The reason that there are local versions of the data, is that there will be little latency when your local customers and sales staff are accessing the price data. Let's not leave any customers waiting!
 
 Whenever a new price is set in the US West 2 location, that update is automatically propagated to all read locations. You _can_ have multiple write locations, but as that complicates the explanation of data consistency, we will leave it out for now!
+
+### Prepare for the worst
+
+Secondary read locations should not be confused with _failover_ locations. A failover location, which is also set in the Azure portal, specifies the regional servers which should take over when something bad happens in your primary region. Something bad could be a natural disaster, power outages, civil disturbance, or anything that might bring the reliability of cloud servers in that region into question. Sometimes a cloud user will specify a _manual failover_, where human operator intervention is needed to trigger the failover. Sometimes _automatic failover_ is required, where the responsiveness of a region is constantly tested, and a failover occurs if the tests are failed. Leaving things entirely up to automated testing though, can be a bit scary.
 
 Having set up your price database, you have to consider how important it is that everyone the world over gets exactly the same price at exactly the same time.
 

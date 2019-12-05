@@ -13,7 +13,7 @@ Append blobs - log files
 Page blobs - - frequent r/w - serve as disks
 
 Unstructured data is data that does not adhere to a particular data model or definition, such as text or binary data.
-- 
+
 
 Extended to Data Lake - more hierarchical for big data
 
