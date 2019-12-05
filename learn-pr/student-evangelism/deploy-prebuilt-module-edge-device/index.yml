@@ -12,7 +12,7 @@ title: "Deploy a prebuilt module to the Edge device"
 summary: "Assess the characteristics of Azure IoT Hub and determine scenarios when to use IoT Hub."
 abstract: |
     In this module, you will:  
-    - Launch a module from Azure Portal to IoT Edge 
+    - Launch a module from Azure portal to IoT Edge 
     - Generate simulated data from an edge device
     - Verify data generated from the edge device
    
@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
     - Ability to use IoT Hub in Azure
     - Ability to use Azure Cloud Shell
-    - Experience creating and managing resources using the Azure Portal or Azure Cloud Shell at the beginner level
+    - Experience creating and managing resources using the Azure portal or Azure Cloud Shell at the beginner level
     - Basic knowledge of Azure IoT Edge
 iconUrl: /learn/achievements/student-evangelism/deploy-pre-built-module-iot-edge.svg
 badge:
@@ -37,5 +37,5 @@ units:
 - learn.oxford.deploy-prebuilt-module-edge-device.3-how-setup-communication
 - learn.oxford.deploy-prebuilt-module-edge-device.4-exercise-setup-communication
 - learn.oxford.deploy-prebuilt-module-edge-device.5-how-deploy-prebuilt-module
-- learn.oxford.deploy-prebuilt-module-edge-device.6-deploying-prebuilt-module
+- learn.oxford.deploy-prebuilt-module-edge-device.6-exercise-deploying-prebuilt-module
 - learn.oxford.deploy-prebuilt-module-edge-device.7-summary

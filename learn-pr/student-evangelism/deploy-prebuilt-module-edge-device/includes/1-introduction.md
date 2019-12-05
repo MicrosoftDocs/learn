@@ -17,7 +17,7 @@ In this module, you'll register an IoT Edge device to your IoT hub. You'll then 
 ## Learning objectives
 
 In this module, you'll:
-- Launch a module from Azure Portal to IoT Edge  
+- Launch a module from Azure portal to IoT Edge  
 - Generate simulated data from an edge device
 - Verify data generated from the edge device
 
@@ -25,5 +25,5 @@ In this module, you'll:
 
 - Ability to use IoT Hub in Azure
 - Ability to use Azure Cloud Shell
-- Experience creating and managing resources using the Azure Portal or Azure Cloud Shell at the beginner level
+- Experience creating and managing resources using the Azure portal or Azure Cloud Shell at the beginner level
 - Basic knowledge of Azure IoT Edge

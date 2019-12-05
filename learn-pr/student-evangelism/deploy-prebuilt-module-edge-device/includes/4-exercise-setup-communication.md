@@ -33,7 +33,7 @@ Create the virtual machine named EdgeVM using the following commands:
 az vm image accept-terms --urn microsoft_iot_edge:iot_edge_vm_ubuntu:ubuntu_1604_edgeruntimeonly:latest
 ```
 
-![An illustration is showing that accepting licence terms to create the virtual device.](../media/vm-accept-license.png)
+![An illustration is showing that accepting license terms to create the virtual device.](../media/vm-accept-license.png)
 
 ```azurecli
 az vm create --resource-group IoTEdgeResources --name EdgeVM --image microsoft_iot_edge:iot_edge_vm_ubuntu:ubuntu_1604_edgeruntimeonly:latest --admin-username azureuser --generate-ssh-keys

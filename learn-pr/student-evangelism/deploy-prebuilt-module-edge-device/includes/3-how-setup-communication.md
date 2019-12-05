@@ -1,6 +1,6 @@
 ## Overview 
 
-In this module, we use an existing Ubuntu-based virtual machine to act as your IoT Edge device. Alternately, you could run the Azure IoT Edge runtime on your own physical Linux device (X64, ARM32, or ARM64). Below, we consider only the scenario of a virtual device.  
+In this module, we use an existing Ubuntu-based virtual machine to act as your IoT Edge device. Alternately, you could run the Azure IoT Edge runtime on your own physical Linux device (X64, ARM32, or ARM64). Below we consider only the scenario of a virtual device.  
 
 We set up communications between IoT Edge and IoT Hub so that we can deploy our module to the IoT device.  To set up communications between the IoT Hub and IoT Edge, you start by creating a Microsoft provided Ubuntu virtual device by using the scripts provided. This virtual device has all the prerequisites installed. You then create an IoT Hub using the Cloud Shell. Next, you register the IoT Edge device to the IoT Hub and retrieve the connection string. We'll need this string to configure the IoT Edge device in later steps. 
 
