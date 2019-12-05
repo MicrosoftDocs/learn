@@ -11,4 +11,4 @@ In this module, you will:
 ## Prerequisites
 
 - Basic understanding of how role-based access control (RBAC) works in Azure
-- Access to an Azure account where you have the Global Administrator role (optional)
+- Access to an Azure subscription where you have the Global Administrator role for your account (optional)
