@@ -5,6 +5,12 @@ In this module, you learned about:
 - Cosmos DB databases
 - The basics of Time Series Insights
 
+And you learned that Azure IoT can have a worldwide reach.
+
+| | |
+| -- | -- |
+|![Graph illustration of telemetry](../media/lambda-cloud-storage.png)|![Graph illustration of telemetry](../media/lambda-cloud-storage.png)|
+
 ## Next steps
 
 Take your interest further with:
