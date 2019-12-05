@@ -7,7 +7,7 @@ You'll need a valid credit card to create your Azure free account. **This card i
 
 ## Sign up for a free account
 
-1. In a web browser, go to [azure.microsoft.com](https://azure.microsoft.com/free?azure-portal=true).
+1. In a web browser, go to [azure.microsoft.com](http://azure.microsoft.com/free).
 
 1. Scroll down through the page to learn more about the benefits and free services available.
 
