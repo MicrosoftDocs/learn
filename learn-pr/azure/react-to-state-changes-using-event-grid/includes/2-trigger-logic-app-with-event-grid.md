@@ -15,7 +15,17 @@ Event publishers and subscribers are decoupled by using the publisher/subscriber
 
 ## Capabilities
 
-Event Grid doesn't require provisioning or managing, it is native to Azure, with the ability to extend out and customise. 
+Event Grid doesn't require provisioning or managing, it is native to Azure, with the ability to extend out and customise. Some of the main advantages are
+
+| Cabability | Summary |
+| ---------- | ------- |
+| Simple     | Point and click to add and collect your events from Azure resources |
+| Filtering  | Filter events so that handlers only receive relevant events |
+| Multiple Subscribers | Attach multiple handlers to a single event |
+| Reliability | 24 hr retry backing off exponentially to ensure events are delivered |
+| High throughput | Capabale of a high volume of events, millions per second |
+| Built-in events | Get started quickly with built-in events |
+| Custom Events | Use Event Grid to reliably deliver custom events.
 
 ## Event sources and Event handlers
 
