@@ -79,7 +79,8 @@ Here's what each part means:
       key: tags
     ```
 
-    > [!NOTE] When using a dynamic inventory with Azure, this file must end with the name *azure_rm.yml* or *azure_rm.yaml*.
+    > [!NOTE]
+    > When using a dynamic inventory with Azure, this file must end with the name *azure_rm.yml* or *azure_rm.yaml*.
 
 ## Upload files to Cloud Shell
 
