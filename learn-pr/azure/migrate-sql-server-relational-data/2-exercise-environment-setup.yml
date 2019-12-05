@@ -11,6 +11,6 @@ metadata:
 title: Exercise - Environment setup
 durationInMinutes: 10
 interactive: bash
-azureSandbox: true
+#azureSandbox: true
 content: |
   [!include[](includes/2-exercise-environment-setup.md)]
