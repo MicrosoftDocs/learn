@@ -143,8 +143,8 @@ As a final setup step we will add our base website files and push them to the sh
     It's just letting users new about a change to Git's default behaviors. If you'd like to make sure you don't see this warning again, you can type
 
     ```bash
-     `git config --global push.default simple`.
-     ```
+    git config --global push.default simple
+    ```
 
 1. You should see this output indicating success:
 
@@ -162,7 +162,7 @@ As a final setup step we will add our base website files and push them to the sh
 
 Alice wants to creates a _topic branch_ called "add-style" to do her work. Let's assume the role of Alice, create the branch, and add some code in that branch.
 
-1. Navigate back to the "Alice" directory. The first thing we must do is `git pull` to make sure our copy of the shared repo is up to date:
+1. Navigate back to the **Alice** directory. The first thing we must do is `git pull` to make sure our copy of the shared repo is up to date:
 
     ```bash
     cd ../Alice
@@ -187,7 +187,7 @@ Alice wants to creates a _topic branch_ called "add-style" to do her work. Let's
     git checkout add-style
     ```
 
-1. Open **site.css** in the "Alice/Assets" directory and add the following CSS class definition to the bottom of the file:
+1. Open **site.css** in the **Alice/Assets** directory and add the following CSS class definition to the bottom of the file:
 
     ```css
     .cat { max-width: 40%; padding: 5 }

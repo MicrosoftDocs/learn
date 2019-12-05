@@ -32,7 +32,7 @@ Let's assume Alice's role again and make a change to the Web site's home page by
     cd ../Alice
     ```
 
-1. Again, download the zip file containing the [resources that accompany this lesson](https://topcs.blob.core.windows.net/public/git-resources.zip), then unzip them with these commands:
+1. If you didn't download the resources previously, download the zip file containing the [resources that accompany this lesson](https://topcs.blob.core.windows.net/public/git-resources.zip), and then unzip them with these commands:
 
     ```bash
     wget https://topcs.blob.core.windows.net/public/git-resources.zip
@@ -50,13 +50,13 @@ Let's assume Alice's role again and make a change to the Web site's home page by
 1. Then open **index.html** and replace this line:
 
     ```html
-    <img src="Assets/bobcat2-317x240.jpg">
+    <img src="Assets/bobcat2-317x240.jpg" />
     ```
 
     With this one:
 
     ```html
-    <img class="cat" src="Assets/bombay-cat-180x240.jpg">
+    <img class="cat" src="Assets/bombay-cat-180x240.jpg" />
     ```
 
     Then save and close the file.
@@ -87,7 +87,7 @@ Without knowing what Alice is doing, Bob notices that Alice's last push added a 
 1. Open **index.html**, add a `class="cat"` attribute to the `<img>` element, and save the file:
 
     ```html
-    <img class="cat" src="assets/bobcat2-317x240.jpg">
+    <img class="cat" src="assets/bobcat2-317x240.jpg" />
     ```
 
 1. Now commit the change, switch back to "master," do a pull, and merge:

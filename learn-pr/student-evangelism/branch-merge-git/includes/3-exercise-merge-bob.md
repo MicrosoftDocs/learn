@@ -27,7 +27,7 @@ While Alice is working on the CSS, Bob is sitting at home, blissfully unaware of
 1. Now open **index.html** and replace the line that says "Eventually we will put cat pictures here" with the following line:
 
     ```html
-    <img src="Assets/bobcat2-317x240.jpg">
+    <img src="Assets/bobcat2-317x240.jpg" />
     ```
 
     Now save and close the file.

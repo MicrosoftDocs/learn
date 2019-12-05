@@ -1,4 +1,5 @@
 Congratulations! In this module, you learned how to use branches Git to collaborate with other developers and resolve merge conflicts.
+
 You learned:
 
 - What branches are, how, and when to use them
