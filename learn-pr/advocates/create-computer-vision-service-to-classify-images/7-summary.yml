@@ -29,7 +29,7 @@ quiz:
       isCorrect: true
       explanation: The two visual feature types you can specify are Celebrities and Landmarks.
   
-  - content: Which of the following describes what *smart cropping* does when generating a thumbnail with the `generateThumbnail` operation?
+  - content: Which of the following choices describes what *smart cropping* does when generating a thumbnail with the `generateThumbnail` operation?
     choices:
     - content: It crops images from the top left.
       isCorrect: false
@@ -42,10 +42,10 @@ quiz:
     choices: 
     - content: eastus2.api.cognitive.microsoft.com/vision/v2.0/ocr
       isCorrect: false
-      explanation: You did not sign up for an access key to make requests from this region. Remember, the endpoint specifies the region you chose during sign up, the service URL, and a resource used on the request.
+      explanation: You did not sign up for an access key to make requests from this region. Remember, the endpoint specifies the region you chose during sign-up, the service URL, and a resource used on the request.
     - content: eastus.api.cognitive.microsoft.com/vision/v2.0/describe
       isCorrect: false
       explanation: This address sends a request to the entities resource.
     - content:  eastus.api.cognitive.microsoft.com/vision/v2.0/ocr
       isCorrect: true
-      explanation: The endpoint specifies the region you chose during sign up, the service URL, and a resource used on the request.
+      explanation: The endpoint specifies the region you chose during sign-up, the service URL, and a resource used on the request.
