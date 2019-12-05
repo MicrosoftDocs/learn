@@ -8,6 +8,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction
-durationInMinutes: 2
+durationInMinutes: 5
 content: |
   [!include[](includes/2-learn-about-hot-cold-paths-lambda-architecture.md)]

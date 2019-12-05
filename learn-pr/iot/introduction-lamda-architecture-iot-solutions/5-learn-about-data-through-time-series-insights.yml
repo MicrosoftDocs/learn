@@ -8,6 +8,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction
-durationInMinutes: 2
+durationInMinutes: 4
 content: |
   [!include[](includes/5-learn-about-data-through-time-series-insights.md)]
