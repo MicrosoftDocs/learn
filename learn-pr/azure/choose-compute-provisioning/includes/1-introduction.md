@@ -15,3 +15,5 @@ At the end of this module, you'll be able to:
 
 - Basic knowledge of Azure virtual machines.
 - Basic knowledge of PowerShell.
+- `git` installed on your local machine.
+- Azure CLI installed on your local machine.
