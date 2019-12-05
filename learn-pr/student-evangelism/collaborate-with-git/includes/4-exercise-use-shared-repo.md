@@ -1,6 +1,6 @@
 Directly pulling from someone else's repository works, provided you're both on the same network, but it's a clumsy process — and most collaborators are not on the same network. It's much better to set up a central repository to which everyone involved can push as well as pull from.
 
-When you tell Bob about your project, and he asks to participate too, that's exactly what you decide to do.
+When you tell Bob about your project, and Bob asks to participate too, that's exactly what you decide to do.
 
 ## Create a bare repository
 
@@ -52,7 +52,7 @@ Creating a bare repo for sharing is easy.
      * [new branch]      master -> master
     ```
 
-1. You want `push` and `pull` to use "origin's" master branch by default, just as if you had made your repo by cloning it in the first place. To do so, you need to tell Git which branch to track:
+1. You want `push` and `pull` to use "origin's" master branch by default, as if you had made your repo by cloning it in the first place. To do so, you need to tell Git which branch to track:
 
     ```bash
     git branch --set-upstream-to origin/master
@@ -64,7 +64,7 @@ Creating a bare repo for sharing is easy.
     Branch master set up to track remote branch master from origin.
     ```
 
-Git would have complained if you had tried to do this before the initial push, because the new repository had no branches. Git can't track a branch that doesn't exist. All Git is doing under the hood is looking in ".git/refs/remotes/origin" for a file named **trunk**.
+Git would have complained if you had tried to do this command before the initial push, because the new repository had no branches. Git can't track a branch that doesn't exist. All Git is doing under the hood is looking in ".git/refs/remotes/origin" for a file named **trunk**.
 
 ## Set up for collaborators
 
@@ -93,7 +93,7 @@ The next step is for Bob to clone the bare repository, and then for Alice to set
 
 ## Start collaborating
 
-Now that Bob is set up to work on the Web site, he decides to add a footer to the bottom of the page. Let's take on Bob and Alice's persona for a few moments and learn the basics of collaboration.
+Now that Bob is set up to work on the Web site, they decide to add a footer to the bottom of the page. Let's take on Bob and Alice's persona for a few moments and learn the basics of collaboration.
 
 1. Begin by navigating to the "Bob" directory and impersonating Bob:
 
@@ -103,7 +103,7 @@ Now that Bob is set up to work on the Web site, he decides to add a footer to th
     git config user.email bob@contoso.com
     ```
 
-1. Open **index.html** and replace the `<hr>` element with this (found at the end of the `<body>` element):
+1. Open **index.html** and replace the `<hr>` element with this line (found at the end of the `<body>` element):
 
     ```html
     <footer><hr>Copyright (c) 2019 Contoso Cats</footer>
@@ -143,9 +143,9 @@ Now that Bob is set up to work on the Web site, he decides to add a footer to th
     'current' instead of 'simple' if you sometimes use older versions of Git)
     ```
 
-    It's just letting users new about a change to Git's default behaviors. If you'd like to make sure you don't see this warning again, you can type `git config --global push.default simple`.
+    It's just letting users know about a change to Git's default behaviors. If you'd like to make sure you don't see this warning again, you can type `git config --global push.default simple`.
 
-1. While Bob is editing the site, Alice is, too. She decides to add a nav bar to the page. This requires her to modify two files: **index.html** and **site.css**. Begin by returning to the "Alice" directory:
+1. While Bob is editing the site, Alice is, too. They decide to add a nav bar to the page. This addition requires them to modify two files: **index.html** and **site.css**. Begin by returning to the "Alice" directory:
 
     ```bash
     cd ../Alice
@@ -163,7 +163,7 @@ Now that Bob is set up to work on the Web site, he decides to add a footer to th
     nav { background-color: #C0D8DF; }
     ```
 
-1. Save and close. Now let's assume that Alice receives an e-mail from Bob saying he has made changes to the site. She decides to pull his changes before committing her own. (If she had already committed her changes, she would have a different problem which is discussed in another module.) Do a pull with `git pull`:
+1. Save and close. Now let's assume that Alice receives an e-mail from Bob saying they have made changes to the site. Alice decides to pull Bob's changes before committing their own. (If Alice had already committed their changes, they would have a different problem, which is discussed in another module.) Do a pull with `git pull`:
 
     ```bash
     git pull
@@ -219,7 +219,7 @@ Now that Bob is set up to work on the Web site, he decides to add a footer to th
     git stash pop
     ```
 
-    Popping the stash merges the changes. If changes overlap, there may be a conflict.There is a more advanced module on Git where you learn show to resolve those situations.
+    Popping the stash merges the changes. If changes overlap, there may be a conflict. There is a more advanced module on Git where you learn how to resolve those situations.
 
 1. You'll see this output letting you know that the merge was successful, and your changes are back, but not yet staged for commit:
 
@@ -240,7 +240,7 @@ Now that Bob is set up to work on the Web site, he decides to add a footer to th
 
     At this point Alice can continue working, or simply commit and push her changes. Let's make another change as Alice by assigning footers the same style as nav bars.
 
-1. Open **site.css** in the **CSS** folder and replace the third line — the one that styles `<nav>` elements — with this one, and, as usual, save your changes and close:
+1. Open **site.css** in the **CSS** folder and replace the third line — the one that styles `<nav>` elements — with this shared CSS rule, and, as usual, save your changes and close:
 
     ```html
     nav, footer { background-color: #C0D8DF; }

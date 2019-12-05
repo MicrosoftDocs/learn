@@ -7,7 +7,7 @@ You learned:
 - how to track changes
 - how to recover from simple mistakes with Git
 
-At this point, you know enough about Git to use version control by yourself on a little project. Of course, where version control shines, is collaboration with other developers. Check out the other modules in this Learning Path for more on using Git with others!
+At this point, you know enough about Git to use version control by yourself on a little project. Where version control shines is collaboration with other developers. Check out the other modules in this Learning Path for more on using Git with others!
 
 In addition if you would like to dig deeper, here are some other resources that you'll find helpful:
 

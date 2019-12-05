@@ -52,7 +52,7 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
 
 ### Add base files
 
-As a final setup step we will add our base website files and push them to the shared repo.
+As a final setup step, we will add our base website files and push them to the shared repo.
 
 1. Create some files with the Linux `touch` command, then stage them and commit using Git:
 
@@ -64,7 +64,7 @@ As a final setup step we will add our base website files and push them to the sh
     git commit index.html -m "Create empty index.html, site.css files"
     ```
 
-1. Now add some HTML to your file using Cloud Shell's code editor which you can open with the `code` command. Open **index.html** in the online editor by typing `code index.html` at the terminal prompt:
+1. Now add some HTML to your file using Cloud Shell's code editor, which you can open with the `code` command. Open **index.html** in the online editor by typing `code index.html` at the terminal prompt:
 
     ```bash
     code index.html
@@ -140,7 +140,7 @@ As a final setup step we will add our base website files and push them to the sh
     'current' instead of 'simple' if you sometimes use older versions of Git)
     ```
 
-    It's just letting users new about a change to Git's default behaviors. If you'd like to make sure you don't see this warning again, you can type
+    It's just letting users know about a change to Git's default behaviors. If you'd like to make sure you don't see this warning again, you can type
 
     ```bash
     git config --global push.default simple
@@ -160,7 +160,7 @@ As a final setup step we will add our base website files and push them to the sh
 
 ## Create a branch for Alice
 
-Alice wants to creates a _topic branch_ called "add-style" to do her work. Let's assume the role of Alice, create the branch, and add some code in that branch.
+Alice wants to create a _topic branch_ called "add-style" to do her work. Let's assume the role of Alice, create the branch, and add some code in that branch.
 
 1. Navigate back to the **Alice** directory. The first thing we must do is `git pull` to make sure our copy of the shared repo is up to date:
 
@@ -206,7 +206,7 @@ Alice wants to creates a _topic branch_ called "add-style" to do her work. Let's
     git pull
     ```
 
-1. The output says that "master" is up to date (in other words, "master" on Alice's computer matches "master" in the shared repo), so Alice merges the "add-style" branch into "master" using `git merge --ff-only` to perform a fast-forward merge. Then she pushes "master" from her repo to the shared repo:
+1. The output says that "master" is up to date (in other words, "master" on Alice's computer matches "master" in the shared repo), so Alice merges the "add-style" branch into "master" using `git merge --ff-only` to perform a fast-forward merge. Then Alice pushes "master" from their repo to the shared repo:
 
     ```bash
     git merge --ff-only add-style

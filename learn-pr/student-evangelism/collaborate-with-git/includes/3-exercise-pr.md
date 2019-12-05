@@ -8,7 +8,7 @@ Right now there's nothing for Alice to pull because you haven't made any changes
 
 ## Make a change and submit a pull request
 
-Alice starts working on the Web site. Her first decision is to change the site's background color. She experiments locally, and ultimately chooses her favorite shade of light blue.
+Alice starts working on the Web site. Their first decision is to change the site's background color. They experiment locally, and ultimately chooses their favorite shade of light blue.
 
 1. Assume Alice's identity by executing the following commands:
 
@@ -81,7 +81,7 @@ Alice starts working on the Web site. Her first decision is to change the site's
 
 ## Create a remote and complete the pull request
 
-Because your project directory and the "Alice" directory are on the same computer, you can pull directly from the "Alice" directory. In real life, the "Alice" directory will be on Alice's computer. You solve this by setting up a *remote* using the `git remote` command and using that remote for pulls and pull requests. Since it's not practical to set up two machines to do this, we'll set up a remote that uses a local path name. In reality, you would use a network path or URL instead.
+Because your project directory and the "Alice" directory are on the same computer, you can pull directly from the "Alice" directory. In real life, the "Alice" directory will be on Alice's computer. You solve this situation by setting up a *remote* using the `git remote` command and using that remote for pulls and pull requests. Since it's not practical to set up two machines to do these steps, we'll set up a remote that uses a local path name. In reality, you would use a network path or URL instead.
 
 1. `cd` back to the project directory and use a `git remote` command to create a remote named "alice" that targets Alice's project directory:
 

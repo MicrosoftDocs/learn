@@ -7,14 +7,14 @@ With a version-control system, you can:
 - See all the changes made to your project, when the changes were made, and who made them.
 - Include a message with every change explaining the reasoning behind it.
 - Retrieve past versions of the entire project or individual files.
-- Create *branches*, where changes can be made experimentally. This allows several different sets of changes (for example, features or bug fixes) to be worked on at the same time, possibly by different people, without impacting the master branch. Later, you can merge the changes you want to keep back into master.
+- Create *branches*, where changes can be made experimentally. This feature allows several different sets of changes (for example, features or bug fixes) to be worked on at the same time, possibly by different people, without impacting the master branch. Later, you can merge the changes you want to keep back into master.
 - Attach a tag to a version — for example, to mark a new release.
 
 Git is a fast, versatile, highly scalable, free, open-source version-control system. Its primary author is Linus Torvalds, the creator of Linux.
 
 ## Distributed version control
 
-Earlier VCSs, such as CVS, Subversion (SVN), and Perforce, used a centralized server to store a project's history. This meant that one server was also a single point of failure.
+Earlier VCSs, such as CVS, Subversion (SVN), and Perforce, used a centralized server to store a project's history. This centralization meant that one server was also a single point of failure.
 
 Git is _distributed_, which means that a project's complete history is stored on the client as well as the server. You can edit files without a network connection, check them in locally, and sync with the server when a connection becomes available. If a server goes down, you still have a local copy of the project. Technically, you don't even have to have a server. Changes could be passed around in e-mail or shared using removable media, but no one uses Git this way in practice.
 
@@ -22,7 +22,7 @@ Git is _distributed_, which means that a project's complete history is stored on
 
 To understand Git, you have to understand the terminology. Here is a short list of terms that Git users frequently use. Don't sweat the details for now; all of these terms will become familiar as you work your way through the exercises in this module.
 
-- **Working tree:** The set of nested directories and files that contains the project being worked on.
+- **Working tree:** The set of nested directories and files that contain the project being worked on.
 
 - **Repository (repo):** The directory, located at the top level of a working tree, where Git keeps all of the history and metadata for a project. Repositories are almost always referred to as *repos*. A *bare repository* is one that is not part of a working tree; it is used for sharing or backup. A bare repo is usually a directory with a name ending in **.git** — for example, **project.git**.
 
@@ -42,8 +42,8 @@ These terms and others such as "push" and "pull" will make more sense shortly. B
 
 ## The Git command line
 
-There are several different GUIs available for for Git, such as GitHub Desktop. Many program editors such as Microsoft's [Visual Studio Code](https://code.visualstudio.com/) also have an interface to Git. They all work differently and have different limitations. None of them implement _all_ of Git's functionality.
+There are several different GUIs available for Git, such as GitHub Desktop. Many program editors such as Microsoft's [Visual Studio Code](https://code.visualstudio.com/) also have an interface to Git. They all work differently and have different limitations. None of them implement _all_ of Git's functionality.
 
-The exercises in this module use the Git command line — specifically, Git commands executed in Azure's Cloud Shell. However, Git's command line interface works the same no matter what operating system you're using. Plus, the command line lets you tap into *all* of Git's functionality. Developers who see Git only through a GUI sometimes find themselves confronted with error messages they can't resolve, and have to resort to the command line to get going again.
+The exercises in this module use the Git command line — specifically, Git commands executed in Azure's Cloud Shell. However, Git's command-line interface works the same no matter what operating system you're using. Plus, the command line lets you tap into *all* of Git's functionality. Developers who see Git only through a GUI sometimes find themselves confronted with error messages they can't resolve, and have to resort to the command line to get going again.
 
-The next step is to try Git out for yourself!
+The next step is to try out Git for yourself!

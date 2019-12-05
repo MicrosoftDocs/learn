@@ -76,7 +76,7 @@ Finish up by confirming that the push succeeded.
 
 ## Make a change as Bob
 
-Without knowing what Alice is doing, Bob notices that Alice's last push added a CSS style named `cats` to **site.css**. So he decides to apply that class to his cat picture.
+Without knowing what Alice is doing, Bob notices that Alice's last push added a CSS style named `cats` to **site.css**. So Bob decides to apply that class to his cat picture.
 
 1. Return to the "Bob" directory:
 
@@ -111,7 +111,7 @@ The output identifies **index.html** as the source of the conflict. The question
 
 ## Resolve the merge conflict
 
-Bob has a few options at this point. One is to use `git merge --abort` to restore "master" to what it was before the attempted merge. Bob could then do a pull to get Alice's changes, create a new branch, make his changes, merge the branch into "master," and push his changes. Bob could also use `git reset --hard` to get back to where he was.
+Bob has a few options at this point. One is to use `git merge --abort` to restore "master" to what it was before the attempted merge. Bob could then do a pull to get Alice's changes, create a new branch, make his changes, merge the branch into "master," and push his changes. Bob could also use `git reset --hard` to get back to where they were.
 
 The preferred option in many cases is to resolve the conflict using information Git inserted into the affected files. When Git detects a conflict in a file, it inserts *both* conflicting versions into the file between lines starting with `<<<<<<<`, `=======`, and `>>>>>>>`.  
 
