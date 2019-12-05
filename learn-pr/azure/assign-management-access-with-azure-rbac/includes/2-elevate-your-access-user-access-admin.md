@@ -3,13 +3,15 @@ The administrator for the marketing department's Azure subscription recently lef
 
 In this unit, you'll explore when you may need to elevate access. You'll also discover how you can manage access to Azure subscriptions, either through the Azure portal or, through Azure PowerShell.
 
-## When to elevated user access
+## When to elevate management access
 
-Azure Active Directory (Azure AD) and Azure role-based access control (RBAC) have independent permission schemes. RBAC is for managing access to Azure resources like virtual machines, key vaults, storage and much more. Azure AD administrator roles are for managing Azure AD resources such as user accounts and passwords.
+Azure Active Directory (Azure AD) and role-based access control (RBAC) for Azure have independent permission schemes. RBAC is for managing access to Azure resources like virtual machines, key vaults, storage and much more. Azure AD administrator roles are for managing Azure AD resources such as user accounts and passwords.
+
+By default, the Global Administrator doesn't have access to Azure resources. The global administrator for Azure AD can temporarily elevate their permissions to the RBAC role of *User Access Administrator*. This action grants the RBAC permissions needed to manage Azure resources, even at a subscription level. The User Access Administrator is assigned at the scope of root. The role can view all resources, and assign access, in any subscription or management group in that Azure AD organization.
+
+The following diagram shows what resources the Global Administrator has access to when their permissions are elevated to User Access Administrator.
 
 ![Diagram that shows User Access Admin elevated privilege relationships](../media/2-globaladmin-user-access-admin.png)
-
-The global administrator for Azure AD can temporarily elevate their permissions to the RBAC role of *User Access Administrator*. This action grants the RBAC permissions needed to manage Azure resources, even at a subscription level. The User Access Administrator is assigned at the scope of root. The role can view all resources, and assign access, in any subscription or management group in that Azure AD organization.
 
 A global administrator may need to elevate their permissions to:
 
