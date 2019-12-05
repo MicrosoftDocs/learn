@@ -19,7 +19,7 @@ Azure offers customers reactive and proactive technical support. Choose the supp
 > [!div class="mx-tableFixed"]
 > |  |  Developer | Standard  | Professional Direct |
 > | --- | --- | --- | --- | 
-> | Best for |Non-critical workloads |Production workload environments |Business-critical workloads |
+> | Best for |Non-critical workloads |Production workloads |Business-critical workloads |
 > | Reactive technical support | 1 business day response |1-hour response for critical cases |1-hour response + priority tracking of critical cases |
 > | Proactive technical support |  Not applicable | Not applicable  | Access to a pool of technical experts |
 
