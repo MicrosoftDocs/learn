@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-create-azure-dw-using-portal.md)]
+  [!include[](includes/7-create-azure-dw-using-portal.md)]
