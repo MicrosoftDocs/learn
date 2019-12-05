@@ -318,7 +318,7 @@ Here you add the Azure Pipelines stage that checks for SQL Database schema chang
 
 Here you create the manual approval for the `DBAVerificationApply` stage. You learned about manual approvals in the previous module. Recall that you need to set up an environment and add an approver.
 
-1. From Azure Pipelines, select **Environments**
+1. From Azure Pipelines, select **Environments**.
 1. Select **Create environment**.
 1. Under **Name**, enter *dbaverificationapply*.
 1. Leave the remaining fields at their default values.
