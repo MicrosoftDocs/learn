@@ -1,48 +1,48 @@
 In this section, you join the Tailspin team as they define _functional tests_ for their pipeline. Functional tests verify that each function of the software does what it should.
 
-The team first defines what a functional test covers and some types of functional tests that you can run. Then, they decide on the first test that they'll add to their pipeline.
+The team first defines what a functional test covers. They explore some types of functional tests. Then they decide on the first test to add to their pipeline.
 
 ## Weekly meeting
 
-The team is having their weekly meeting and Andy is demoing the release pipeline. They watch as a successful build moves through the pipeline, from one stage to another, until the web app is finally promoted to _Staging_.
+The team is having their weekly meeting. Andy is demonstrating the release pipeline. The team watches as a successful build moves through the pipeline, from one stage to another. Finally, the web app is promoted to _Staging_.
 
 **Amita:** I'm so happy with the pipeline. It makes my life much easier. For one thing, I automatically get a release deployed to the **test** environment. That means I don't have to manually download and install build artifacts on my test servers. That's a big time saver.
 
-Also, the unit tests that Mara and Andy wrote eliminate all the regression bugs before I get the release. That's a major source of frustration gone and I don't spend time finding and documenting them.
+Also, the unit tests that Mara and Andy wrote eliminate all the regression bugs before I get the release. That removes a major source of frustration. I don't spend time finding and documenting regression bugs.
 
-But I'm worried that all the testing I do is still manual. It's slow and we can't show anything to management until I'm done. It's hard because the testing is important. It's how we make sure the users get the right experience. On the other hand, the pressure is on to do everything faster.
+But I'm worried that all of my testing is still manual. The process is slow, and we can't show anything to management until I finish. It's hard because the testing is important. Testing ensures that the users get the right experience. But the pressure is on to deliver faster.
 
 **Andy:** I'm sure we can help you. What kind of tests take up most of your time?
 
-**Amita:** I think it's the UI tests. I have to click through every step to make sure I get the correct result and I have to do it for every browser we support. It's very time consuming and, as the website grows in complexity, won't be practical in the long run.
+**Amita:** I think the UI tests do. I have to click through every step to make sure I get the correct result. And I have to do that for every browser we support. It's very time consuming. And as the website grows in complexity, it won't be practical in the long run.
 
 **Mara:** UI tests are considered to be _functional tests_.
 
-**Tim:** As opposed to what, _non-functional_ tests?
+**Tim:** As opposed to what, _nonfunctional_ tests?
 
-**Mara:** Exactly. And non-functional tests are something you, in particular, care about.
+**Mara:** Exactly. And nonfunctional tests are something that you, in particular, care about.
 
 **Tim:** Okay, I'm confused.
 
-## What are functional and non-functional tests?
+## What are functional and nonfunctional tests?
 
-**Mara:** _Functional tests_ verify that each function of the software does what it should. How the software implements each function isn't important, only that the software does the right thing. You provide an input and check that the output is what you expect. That's how Amita tests the UI. For example, if she selects the top player on the leaderboard, she expects to see that player's profile.
+**Mara:** _Functional tests_ verify that each function of the software does what it should. How the software implements each function isn't important. What's important is that the software behaves correctly. You provide an input and check that the output is what you expect. That's how Amita tests the UI. For example, if she selects the top player on the leaderboard, she expects to see that player's profile.
 
-_Non-functional tests_ check characteristics like performance and reliability. An example of a non-functional test is checking to see how many people can simultaneously sign in to the app at the same time. Load testing would be another example. Those are things you care about, Tim.
+_Nonfunctional tests_ check characteristics like performance and reliability. An example of a nonfunctional test is checking to see how many people can simultaneously sign in to the app at the same time. Load testing would be another example of a nonfunctional test. Those characteristics are things you care about, Tim.
 
-**Tim:** They are, indeed. I need to think about this for a bit. I might want to add some automation to the pipeline myself but I'm not sure yet what I want to do. What kinds of automated tests can I run?
+**Tim:** They are, indeed. I need to think about this for a bit. I might want to add some automation to the pipeline too, but I'm not sure what I want to do. What kinds of automated tests can I run?
 
-**Mara:** For now, let's focus on functional testing. It's the kind of testing that Amita performs and it sounds like an area where we want to improve.
+**Mara:** For now, let's focus on functional testing. It's the kind of testing that Amita performs. And it sounds like an area where we want to improve.
 
 ## What kinds of functional tests can I run?
 
-There are many kinds of functional tests. Each kind varies by the functionality you need to test for and the time (or effort) that's typically required to run it.
+There are many kinds of functional tests. They vary by the functionality that you need to test and the time (or effort) that they typically require to run.
 
-Here are some of the most commonly used functional tests.
+The following sections present some commonly used functional tests.
 
 ### Smoke testing
 
-_Smoke testing_ verifies the most basic functionality of your application or service. Smoke tests are often run before running more complete and exhaustive tests. Smoke tests should run quickly.
+_Smoke testing_ verifies the most basic functionality of your application or service. Smoke tests are often run before more complete and exhaustive tests. Smoke tests should run quickly.
 
 For example, say you're developing a website. Your smoke test might use `curl` to verify that the site is reachable and that fetching the home page produces a 200 (OK) HTTP status. If fetching the home page produces another status code, such as 404 (Not Found) or 500 (Internal Server Error), then you know that the website is fundamentally not working and there's no point to running other tests. Instead, you would diagnose the error and restart your tests when it's fixed.
 
