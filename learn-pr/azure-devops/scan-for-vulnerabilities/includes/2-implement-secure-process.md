@@ -123,3 +123,25 @@ But how do these tools fit into a DevOps world? In this short video, Abel Wang, 
 **Ask Abel**
 
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/How-do-you-handle-security-in-a-DevOps-world--One-Dev-Question/player?format=ny]
+
+## The importance of a secure development strategy
+
+It's now a commonplace that security for applications is extremely important. News services frequently carry stories about some company's systems that have been breached and private company and customer data that was stolen. 
+
+So, what are the issues to think about when planning a secure development strategy? Clearly, we need to protect information from being disclosed to people that should not have access to it. But more importantly than that, we need to ensure that the information isn't inappropriately altered or destroyed, and that it is actually destroyed when it's supposed to be.
+
+We need to make sure we properly authenticate who is accessing the data and that they have the correct permissions to do so. Through historical or archival data or logs, we need to be able to find evidence when something has gone wrong.
+
+There are many aspects to building and deploying secure applications. First, there is a general knowledge problem. Many developers and other staff members assume they understand security, but they don't. Cybersecurity is a constantly evolving discipline. A program of ongoing education and training is essential.
+
+Second, we need to ensure that the code is created correctly, and securely implements the required features. We also need to make sure that the features were designed with security in mind in the first place.
+
+Third, we need to ensure that the application complies with the rules and regulations that it's required to meet. We have to test for compliance while building the code and retest periodically, even after deployment.
+
+Security isn't something you can just add to an application or a system later. Secure development must be part of every stage of the software development life cycle. This is even more important for critical applications and those that process sensitive or highly confidential information.
+
+Application security concepts haven't been a focus for developers in the past. Apart from the education and training issues, it's because their organizations have emphasized fast development of features.
+
+With the introduction of DevOps practices however, security testing is much easier to integrate into the pipeline. Rather than being a task performed by security specialists, security testing should just be part of the day-to-day delivery processes.
+
+Overall, when the time for rework is taken into account, adding security to your DevOps practices can actually reduce the overall time it takes to develop quality software.
