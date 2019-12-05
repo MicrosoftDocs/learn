@@ -93,7 +93,7 @@ During the process, you collect information about your service principal that yo
     ]
     ```
 
-    Save somewhere safe for later.
+    Save your name somewhere safe for later.
 
 1. Print each of the Bash variables you collected in this part to verify their contents.
 
@@ -133,46 +133,63 @@ During the process, you collect information about your service principal that yo
 
 ## Create the control machine
 
-1. Go to [Red Hat Ansible instance on Linux](https://azuremarketplace.microsoft.com/marketplace/apps/azure-oss.ansible?azure-portal=true) on Azure Marketplace.
-1. Select **GET IT NOW**.
+1. From Cloud Shell, print out the SSH public key that you created earlier.
 
-    A window appears that details the Terms of Use, Privacy Policy, and Use of Azure Marketplace Terms.
-1. Review the terms of service, then select **Continue**.
+    ```bash
+    cat ~/.ssh/ansible_rsa.pub
+    ```
 
-    You're taken to the Azure portal.
+    Copy the output somewhere safe or keep your Cloud Shell session available for the next step.
+
+1. Go to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in.
+1. Select **Create a resource**.
+1. In the search bar, enter *Ansible*.
 1. Select **Create**.
+
+    ![](../media/7-portal-ansible.png)
+
 1. Under **Basics**, fill in these fields:
 
     * **Name** - *ansiblehost*
     * **User name** - *azureuser*
     * **Authentication type** - *SSH public key*
-    * **SSH public key** - Enter the SSH public key that you copied in the previous section.
+    * **SSH public key** - Enter your SSH public key.
     * **Subscription** - Select your Azure subscription.
     * **Resource group** - Select **Create new**. Then enter *learn-ansible-control-machine-rg* and select **OK**.
     * **Location** - Choose a location. You can use the same location that you used earlier to create your VMs to manage.
 
     Select **OK**.
 
-1. Under **Additional Settings**, enter a unique name in the **Domain name label** field, such as *test1234*. For this module, the domain name label isn't important. Then select **OK**.
-1. Under **Integration Settings**, select *Auto(MSI)*. Then select **OK**.
+1. Under **Additional Settings**, enter a unique name in the **Domain name label** field, such as *test1234*. In practice, you would choose a domain name that matches your team's naming convention. Then select **OK**.
+1. Under **Integration Settings**, select *Off*. Then select **OK**.
 1. Under **Summary**, wait for the validation process to finish and then select **OK**.
 1. Under **Buy**, scroll to the end and then select **Create**.
+1. Wait a few minutes for your deployment to finish.
 
-    ![](../media/notifications-deployment.png)
+    You can monitor your deployment's progress from the **Notifications** tab at the top of the page.
 
-## Get your control machine's public IP address
+    ![](../media/7-notifications-deployment.png)
 
-TODO: Hostname instead?
+## Get your control machine's hostname
 
-```bash
-echo $IPADDRESS
+```azurecli
+az network public-ip list \
+  --resource-group learn-ansible-control-machine-rg \
+  --query [].dnsSettings.fqdn \
+  --output tsv
 ```
+
+```output
+test1234.northeurope.cloudapp.azure.com
+```
+
+Copy the output somewhere for later.
 
 ## Copy files to your control machine
 
 * SSH private keys => VMs under management
-* .cfg file
-* inventory file
+* NO - .cfg file
+* NO - inventory file
 * Service principal - credentials file
 
 ```bash
@@ -181,22 +198,33 @@ IPADDRESS=$(az vm list-ip-addresses \
   --name ansiblehost \
   --query [0].virtualMachine.network.publicIpAddresses[0].ipAddress \
   --output tsv)
+```
 
-scp -i ~/.ssh/id_ansible-vm \
-  ~/.ssh/id_ansible-vm \
+```bash
+ssh -i ~/.ssh/ansible_rsa -o StrictHostKeyChecking=no \
+  azureuser@$IPADDRESS 'mkdir -p /home/azureuser/.azure'
+```
+
+```bash
+scp -i ~/.ssh/ansible_rsa -o StrictHostKeyChecking=no \
+  ~/.ssh/ansible_rsa \
   azureuser@$IPADDRESS:/home/azureuser/.ssh
 
-scp -i ~/.ssh/id_ansible-vm \
+scp -i ~/.ssh/ansible_rsa -o StrictHostKeyChecking=no \
+  ~/credentials \
+  azureuser@$IPADDRESS:/home/azureuser/.azure
+
+scp -i ~/.ssh/ansible_rsa -o StrictHostKeyChecking=no \
   ~/ansible.cfg \
   azureuser@$IPADDRESS:/home/azureuser
 
-scp -i ~/.ssh/id_ansible-vm \
-  azure_rm.yml \
+scp -i ~/.ssh/ansible_rsa -o StrictHostKeyChecking=no \
+  ~/azure_rm.yml \
   azureuser@$IPADDRESS:/home/azureuser
 
-scp -i ~/.ssh/id_ansible-vm \
-  credentials \
-  azureuser@$IPADDRESS:/home/azureuser/.azure
+scp -i ~/.ssh/ansible_rsa -o StrictHostKeyChecking=no \
+  ~/users.yml \
+  azureuser@$IPADDRESS:/home/azureuser
 ```
 
 ## Install the Ansible extension in VS Code
@@ -223,7 +251,7 @@ You run the Ansible extension from the command palette. The process prompts you 
 
 There are a few additional options that you need to specify, including the location of your SSH private key and the path to your inventory file. These options are stored in your VS Code user settings. Here's how to TODO:
 
-1. In VS Code, press <kbd>F1</kbd> or select **View > Command Palette** to access the command palette.
+1. In VS Code, select <kbd>F1</kbd> or select **View > Command Palette** to access the command palette.
 1. In the command palette, enter *Preferences: Open User Settings*.
 
     A tab appears that displays your current settings.
@@ -234,7 +262,7 @@ There are a few additional options that you need to specify, including the locat
     > User setting are in JSON format. Be sure to add a comma (**,**) to the end of the last setting listed before you add yours.
 
     ```json
-    "ansible.customOptions": "--private-key ~/.ssh/id_ansible-vm -i /home/azureuser/azure_rm.yml"
+    "ansible.customOptions": "--private-key ~/.ssh/ansible_rsa -i /home/azureuser/azure_rm.yml"
     ```
 
     Both path names refer to locations on your control machine.
@@ -245,55 +273,46 @@ There are a few additional options that you need to specify, including the locat
 
     ![](../media/4-vs-code-user-settings.png)
 
-### Create the TODO file
-
-TODO: 
-
-1. In VS Code, open the integrated terminal.
-1. Create a directory named *mslearn-ansible* in a location you choose, such as your home directory. Her
-
-    ```bash
-    mkdir ~/mslearn-ansible
-    ```
-
-    TODO: Don't confuse with what you set up in CS (move this above?)
-1. Select **File > New File**.
-1. Add this code to your file:
-
-    ```yml
-    - hosts: all
-      remote_user: azureuser
-      become: yes
-      tasks:
-      - name: Add service accounts
-        user:
-          name: "{{ item }}"
-          comment: service account
-          create_home: no
-          shell: /usr/sbin/nologin
-          password: '*'
-          state: present
-        loop:
-        - testuser1
-        - testuser2
-    ```
-
-    TODO: It's the same...
-
-1. Select **File > Save As** and then save your file to *users.yml* in your *mslearn-ansible* directory.
-
 ### Run Ansible
 
 TODO: 
 
-1. In VS Code, press <kbd>F1</kbd> or select **View > Command Palette** to access the command palette.
+1. In VS Code, select **File > New File**. Then add these contents:
+
+    ```json
+    [
+      {
+        "host": "your host",
+        "port": 22,
+        "user": "azureuser",
+        "key": "your private key"
+      }
+    ]
+    ```
+1. Replace `your host` with your Ansible control machine's hostname, such as *test1234.northeurope.cloudapp.azure.com*.
+1. Replace `your private key` with the full path to your SSH private key file, *ansible_rsa*, on your local computer.
+1. Save the file as *~/.ssh/servers.json*.
+
+    Here's an example of the complete file:
+
+    ```json
+    [
+      {
+        "host": "test1234.northeurope.cloudapp.azure.com",
+        "port": 22,
+        "user": "azureuser",
+        "key": "/Users/jane/.ssh/ansible_rsa"
+      }
+    ]
+    ```
+
+1. In VS Code, open your playbook file, *users.yml*.
+1. Select <kbd>F1</kbd> or select **View > Command Palette** to access the command palette.
 1. In the command palette, enter *Ansible: Run Ansible Playbook Remotely via ssh*.
-1. When prompted, enter these values:
+1. When prompted, specify:
 
     * The full path to your playbook file, *users.yml*.
-    * Your control machine's public IP address or hostname.
-
-    TODO: When prompted whether to copy your workspace to the remote host, select **no, not show this again**. This TODO. TODO: Asks you per playbook, so you can specify a different value later?
+    * Your control machine's hostname, such as *test1234.northeurope.cloudapp.azure.com*.
 
     From the output, you see that (TODO: Succeeded, but no changes are made; show sample output)
 

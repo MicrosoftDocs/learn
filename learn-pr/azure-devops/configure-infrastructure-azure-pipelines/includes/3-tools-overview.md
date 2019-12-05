@@ -59,7 +59,7 @@ You use the `ansible-playbook` command to apply this configuration, like this:
 ansible-playbook \
   --inventory ./azure_rm.yml \
   --user azureuser \
-  --private-key ~/.ssh/id_ansible-vm \
+  --private-key ~/.ssh/ansible_rsa \
   --limit=tag_Ansible_test1 \
   ./users.yml \
 ```

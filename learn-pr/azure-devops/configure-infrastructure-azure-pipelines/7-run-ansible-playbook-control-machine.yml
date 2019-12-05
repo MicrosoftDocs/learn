@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.configure-infrastructure-azure-pipelines.5-plan-configuration-tasks
+uid: learn.azdo.configure-infrastructure-azure-pipelines.7-run-ansible-playbook-control-machine
 title: Plan configuration tasks for Azure Pipelines
 metadata:
   title: Plan configuration tasks for Azure Pipelines
   description: Introduction
-  ms.date: 12/04/2019
+  ms.date: 12/06/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-plan-configuration-tasks.md)]
+  [!include[](includes/7-run-ansible-playbook-control-machine.md)]

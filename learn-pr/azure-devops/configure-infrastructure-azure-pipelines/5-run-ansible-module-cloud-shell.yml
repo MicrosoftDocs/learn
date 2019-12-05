@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.configure-infrastructure-azure-pipelines.4-run-ansible-cloud-shell
+uid: learn.azdo.configure-infrastructure-azure-pipelines.5-run-ansible-module-cloud-shell
 title: Exercise - Run an Ansible playbook from Azure Cloud Shell
 metadata:
   title: Exercise - Run an Ansible playbook from Azure Cloud Shell
   description: Introduction
-  ms.date: 12/04/2019
+  ms.date: 12/06/2019
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-run-ansible-cloud-shell.md)]
+  [!include[](includes/5-run-ansible-module-cloud-shell.md)]

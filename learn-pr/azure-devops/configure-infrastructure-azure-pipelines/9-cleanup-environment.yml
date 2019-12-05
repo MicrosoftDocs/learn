@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.configure-infrastructure-azure-pipelines.9-cleanup-environment
+title: Exercise - Clean up your development environment
+metadata:
+  title: Exercise - Clean up your development environment
+  description: Clean up your Azure DevOps project and your Azure resources.
+  ms.date: 12/06/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/9-cleanup-environment.md)]
