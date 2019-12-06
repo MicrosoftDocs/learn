@@ -23,7 +23,7 @@ quiz:
       explanation: Lambda architecture is indeed a hybrid approach.
     - content: 'Lambda architecture prioritizes speed over batch processing, enabling quick queries and responses.'
       isCorrect: false
-      explanation: Lambda architecture does not prioritize one form of processing over the other.
+      explanation: Lambda architecture doesn't prioritize one form of processing over the other.
     - content: 'Lambda architecture batch processes large quantities of data, enabling a complete analysis, though with some latency.'
       isCorrect: false
       explanation: Lambda architecture can also include a real-time processing stream.
@@ -73,9 +73,24 @@ quiz:
       isCorrect: true
       explanation: Session data consistency is often chosen as the default.
 
-  - content: 'What is the difference between a failover region, and a secondary read region?'
+  - content: 'What are the three visualizations available in Time Series Insights?'
     choices:  
-    - content: 'Nothing, they're the same.'
+    - content: 'Line charts, Heat maps, Tables'
+      isCorrect: false
+      explanation: Charts are not limited to line charts.
+    - content: 'Hot maps, cold maps, tables'
+      isCorrect: false
+      explanation: There's no such concept as hot or cold maps.
+    - content: 'Charts, Heat maps, Telemetry'
+      isCorrect: false
+      explanation: Telemetry isn't a form of data visualization.
+    - content: 'Charts, Heat maps, Tables'
+      isCorrect: true
+      explanation: There are options within each of these types of display, such as line charts and bar charts.
+
+  - content: 'What is the difference between a failover region, and a secondary read region?'
+    choices:
+    - content: 'Nothing, they are the same.'
       isCorrect: false
       explanation: Both have their own distinct roles.
     - content: 'A failover region takes over primary control, when the primary region fails. A secondary read region reads and writes data.'
@@ -87,20 +102,5 @@ quiz:
     - content: 'A failover region takes over primary control, when the primary region fails. A secondary read region receives data updates from the primary region, but cannot write data.'
       isCorrect: true
       explanation: Failover is only used when a local disaster of some sort occurs. Secondary regions are active all the time.
-
-  - content: 'What are the three visualizations available in Time Series Insights?'
-    choices:  
-    - content: 'Line charts, Heat maps, Tables'
-      isCorrect: false
-      explanation: Charts are not limited to line charts.
-    - content: 'Hot maps, cold maps, tables'
-      isCorrect: false
-      explanation: There is no such concept as hot or cold maps.
-    - content: 'Charts, Heat maps, Telemetry'
-      isCorrect: false
-      explanation: Telemetry isn't a form of data visualization.
-    - content: 'Charts, Heat maps, Tables'
-      isCorrect: true
-      explanation: There are options within each of these types of display, such as line charts and bar charts.
 
   

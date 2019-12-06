@@ -1,12 +1,12 @@
 With streams of IoT telemetry data coming in hot from your IoT devices, you might well like to visualize that data quickly and easily.
 
-The basis of an IoT solution is often the IoT Hub, the cloud service built to handle millions of telemetry readings, and channel that data someplace useful. Perhaps to blob storage for archive, perhaps to blob storage for a colder deeper analysis. Also, the data can be routed to some immediate queries, for some warmer analytics to be run.
+The basis of an IoT solution is often the IoT Hub, the cloud service built to handle millions of telemetry readings, and channel that data somewhere useful. Perhaps to blob storage for archive, perhaps to blob storage for a colder deeper analysis. Also, the data can be routed to some immediate queries, for some warmer analytics to be run.
 
 Another option, is to route the data to the built-in _Time Series Analytics_ services. These services enable you to visualize your data without writing any SQL queries, or doing any dirty work. This routing and visualization can all be done via the Azure portal.
 
 Using the portal, you create the required resources, then route the data. Now you can start looking at some charts.
 
-In the image below, conveyor belt data is being read and displayed. The chart shows when the belt is running fast, slow, or stopped. In a commercial environment, we usually don't want our delivery conveyor belt to be stopped, so checking on this gives us a clear indication when something is wrong.
+In the image below, conveyor belt data is being read and displayed. The chart shows when the belt is running fast, slow, or stopped. In a commercial environment, we usually don't want our delivery conveyor belt to be stopped, so checking on this chart gives us a clear indication when something is wrong.
 
 ![Screenshot of the chart page, when using Time Series Insights on conveyor belt data](../media/lambda-tsi-chart.png)
 
@@ -20,6 +20,6 @@ The third option is a table of results, again divided up into time chunks. A tab
 
 ### In summary
 
-The key point here is that the three visualization methods shown above are easily made available through an Azure Time Series Insights resource. Set up time can be measured in minutes, and off you go! Multiple charts can be displayed on one page, and complex queries can be built up, either using the user interface, or typing in some SQL conditions. More complex visualizations of IoT data can be built, using the Time Series Insights portal, or API, but for some applications simplest is best.
+The key point here is that the three visualization methods shown above are easily made available through an Azure Time Series Insights resource. Set up time can be measured in minutes, and off you go! Multiple charts can be displayed on one page, and complex queries can be built up, either using the user interface, or typing in some SQL conditions. More complex visualizations of IoT data can be built, using the Time Series Insights portal, or API, but for some applications, simplest is best.
 
 It makes sense to check out the abilities and features of Time Series Insights, before engaging in more costly options.

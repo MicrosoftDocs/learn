@@ -2,15 +2,15 @@ Hybrid systems are the result of conflicting goals. However, having conflicting 
 
 ## Data paths
 
-The conflict in Azure IoT is as follows. Telemetry data is coming in hot, there is lots of it, and it needs to be analyzed quickly. Preventive maintenance is the goal of this analysis. All the data should also be stored, both to archive it, and to run some deeper analysis over longer time periods. The deeper analysis is to try to detect longer term trends, or failure patterns, that might be difficult to detect with a shorter real-time sample.
+The conflict in Azure IoT is as follows. Telemetry data is coming in hot, there's lots of it, and it needs to be analyzed quickly. Preventive maintenance is the goal of this analysis. All the data should also be stored, both to archive it, and to run some deeper analysis over longer time periods. The deeper analysis is to try to detect longer term trends, or failure patterns, that might be difficult to detect with a shorter real-time sample.
 
 One of the easiest ways of handling this duality at the device sensor end of things, is to send two messages. The first message contains only the telemetry data that needs analyzed in real-time. The second message contains the telemetry, and all the other data that might be needed for deeper analysis or archiving.
 
-The IoT Hub routes these two messages to different resources. It is common to use the familiar terms _hot_, _warm_, _cool_, and _cold_ in data analysis. Hot clearly means a real-time approach is needed. Warm can have the same meaning, though perhaps the data is "near" real-time, or at least, recent. Cool means the flow of data is slow. Cold means that the data is stored and not "flowing".
+The IoT Hub routes these two messages to different resources. It's common to use the familiar terms _hot_, _warm_, _cool_, and _cold_ in data analysis. Hot clearly means a real-time approach is needed. Warm can have the same meaning, though perhaps the data is "near" real-time, or at least, recent. Cool means the flow of data is slow. Cold means that the data is stored and not "flowing".
 
 ## Understand lambda architecture
 
-The _Lambda architecture_ of Azure IoT enables multiple paths. However, for the sake of explanation, let's limit this to two paths, hot and cold. The hot path is the streaming telemetry routed into real-time analysis. This path is also the right path to trigger warnings and alerts.
+The _Lambda architecture_ of Azure IoT enables multiple paths. However, for the sake of explanation, let's work with two paths, hot and cold. The hot path is the streaming telemetry routed into real-time analysis. This path is also the right path to trigger warnings and alerts.
 
 The cold path is a batch processing path for telemetry data storage.
 
