@@ -2,11 +2,11 @@ Hybrid systems are the result of conflicting goals. However, having conflicting 
 
 ## Data paths
 
-The conflict in Azure IoT is as follows. Telemetry data is coming in hot, there's lots of it, and it needs to be analyzed quickly. Preventive maintenance is the goal of this analysis. All the data should also be stored, both to archive it, and to run some deeper analysis over longer time periods. The deeper analysis is to try to detect longer term trends, or failure patterns, that might be difficult to detect with a shorter real-time sample.
+The conflict in Azure IoT is as follows. Telemetry data is coming in hot, there's lots of it, and it needs to be analyzed quickly. Preventive maintenance is the goal of this analysis. Also, all the data should be stored, both to archive it, and to run some deeper analysis over longer time periods. The deeper analysis is to try to detect longer term trends, or failure patterns, that might be difficult to detect with a shorter real-time sample.
 
-One of the easiest ways of handling this duality at the device sensor end of things, is to send two messages. The first message contains only the telemetry data that needs analyzed in real-time. The second message contains the telemetry, and all the other data that might be needed for deeper analysis or archiving.
+One of the easiest ways of handling this duality at the device sensor end of things, is to send two messages. The first message contains only the telemetry data that needs analyzed in real time. The second message contains the telemetry, and all the other data that might be needed for deeper analysis or archiving.
 
-The IoT Hub routes these two messages to different resources. It's common to use the familiar terms _hot_, _warm_, _cool_, and _cold_ in data analysis. Hot clearly means a real-time approach is needed. Warm can have the same meaning, though perhaps the data is "near" real-time, or at least, recent. Cool means the flow of data is slow. Cold means that the data is stored and not "flowing".
+The IoT Hub routes these two messages to different resources. It's common to use the familiar terms _hot_, _warm_, _cool_, and _cold_ in data analysis. Hot clearly means a real-time approach is needed. Warm can have the same meaning, though perhaps the data is "near" real time, or at least, recent. Cool means the flow of data is slow. Cold means that the data is stored and not "flowing".
 
 ## Understand lambda architecture
 

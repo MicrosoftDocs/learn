@@ -35,7 +35,7 @@ quiz:
       explanation: Only Append blobs in this list is correct.
     - content: 'Append blobs, Block blobs, Hot blobs'
       isCorrect: false
-      explanation: Blobs are storage, and cannot be hot or cold.
+      explanation: Blobs are storage, and can't be hot or cold.
     - content: 'Append blobs, Cosmos DB blobs, Data Lake blobs'
       isCorrect: false
       explanation: Cosmos DB isn't blob storage.
@@ -96,10 +96,10 @@ quiz:
     - content: 'A failover region takes over primary control, when the primary region fails. A secondary read region reads and writes data.'
       isCorrect: false
       explanation: Read regions do not write data.
-    - content: 'A failover region is bypassed if a disaster occurs in the primary region. A secondary read region receives data updates from the primary region, but cannot write data.'
+    - content: "A failover region is bypassed if a disaster occurs in the primary region. A secondary read region receives data updates from the primary region, but can't write data."
       isCorrect: false
       explanation: Failover regions are not bypassed if a primary region disaster occurs.
-    - content: 'A failover region takes over primary control, when the primary region fails. A secondary read region receives data updates from the primary region, but cannot write data.'
+    - content: "A failover region takes over primary control, when the primary region fails. A secondary read region receives data updates from the primary region, but can't write data."
       isCorrect: true
       explanation: Failover is only used when a local disaster of some sort occurs. Secondary regions are active all the time.
 

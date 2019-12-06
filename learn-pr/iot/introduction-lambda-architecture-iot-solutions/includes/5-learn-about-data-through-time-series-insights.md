@@ -20,6 +20,6 @@ The third option is a table of results, again divided up into time chunks. A tab
 
 ### In summary
 
-The key point here is that the three visualization methods shown above are easily made available through an Azure Time Series Insights resource. Set up time can be measured in minutes, and off you go! Multiple charts can be displayed on one page, and complex queries can be built up, either using the user interface, or typing in some SQL conditions. More complex visualizations of IoT data can be built, using the Time Series Insights portal, or API, but for some applications, simplest is best.
+The key point here is that the three visualization methods shown above are easily made available through an Azure Time Series Insights resource. Set up time is measured in minutes, and off you go! Multiple charts can be displayed on one page. Precise queries can be constructed, either by using the user interface, or typing in some SQL conditions.
 
 It makes sense to check out the abilities and features of Time Series Insights, before engaging in more costly options.
