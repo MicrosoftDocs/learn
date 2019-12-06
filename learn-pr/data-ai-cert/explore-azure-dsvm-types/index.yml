@@ -2,7 +2,7 @@
 uid: learn.data-ai.explore-azure-dsvm-types
 metadata:
   title: Explore the types of Azure Data Science Virtual Machines
-  description: You learn about the types of Azure Data Science Virtual Machines (DSVM) and when to use each type.  You will learn about the Windows-based and Linux-based DSVMs which each support different needs.
+  description: Learn about the types of Azure Data Science Virtual Machines and the different capabilities of the Windows-based and Linux-based DSVMs.
   ms.date: 03/18/2019
   author: GraemeMalcolm
   ms.author: gmalc
