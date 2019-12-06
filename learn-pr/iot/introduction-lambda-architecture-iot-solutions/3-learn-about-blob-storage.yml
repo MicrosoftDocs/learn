@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.introduction-lambda-architecture-iot-solutions.learn-about-blob-storage
 metadata:
-  title: Learn about Blob storage
-  description: Provides a brief overview of Blob storage, and when to use it.
+  title: Learn about blob storage
+  description: Provides a brief overview of blob storage, and when to use it.
   ms.date: 12/20/2019
   author: PeterTurcan
   ms.author: Olivier.Bloch
@@ -30,13 +30,13 @@ quiz:
 
   - content: 'Blob storage by default is general purpose, but it can be set to one of three specific roles?'
     choices:  
-    - content: 'Append blobs, Big blobs, Data Lake storage'
+    - content: 'Append blobs, Big blobs, Data lake storage'
       isCorrect: false
       explanation: Only Append blobs in this list is correct.
     - content: 'Append blobs, Block blobs, Hot blobs'
       isCorrect: false
       explanation: Blobs are storage, and can't be hot or cold.
-    - content: 'Append blobs, Cosmos DB blobs, Data Lake blobs'
+    - content: 'Append blobs, Cosmos DB blobs, Data lake blobs'
       isCorrect: false
       explanation: Cosmos DB isn't blob storage.
     - content: 'Append blobs, Page blobs, Block blobs'

@@ -32,9 +32,9 @@ Azure blob storage is automatically mirrored, at no extra cost and with no extra
 
 ## Upgrade to Data Lake Storage Gen2
 
-The time to consider upgrading from Blob to Data Lake storage comes when you have an enormous amount of data, _big data_ in cloud terminology. Blob storage is easily accessible, secure, and low-cost. However, with big data, data organization becomes an issue. A Data Lake provides additional features to help organize, and secure, vast amounts of data.
+The time to consider upgrading from blob to data lake storage comes when you have an enormous amount of data, _big data_ in cloud terminology. Blob storage is easily accessible, secure, and low-cost. However, with big data, data organization becomes an issue. A data lake provides additional features to help organize, and secure, vast amounts of data.
 
-To help organize data, a concept called _hierarchical namespaces_ is available in a Data Lake. A hierarchical namespace can be used to encapsulate a collection, large or small, of data objects and files. It basically adds another level of reference, that is used to make access to the data more efficient.
+To help organize data, a concept called _hierarchical namespaces_ is available in a data lake. A hierarchical namespace can be used to encapsulate a collection, large or small, of data objects and files. It basically adds another level of reference, that is used to make access to the data more efficient.
 
 Security in a data lake is on the file or folder level, or greater granularity if needed.
 

@@ -59,4 +59,4 @@ So what consistency level would be right for our vibration data example?  _Stron
 
 ## In summary
 
-A Cosmos DB resource is usually a more expensive option than Blob storage. Create a Cosmos DB resource when you have a mass of well-structured time critical data that needs to be available in several locations across the globe.
+A Cosmos DB resource is usually a more expensive option than blob storage. Create a Cosmos DB resource when you have a mass of well-structured time critical data that needs to be available in several locations across the globe.
