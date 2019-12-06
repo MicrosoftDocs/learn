@@ -44,13 +44,6 @@ Finally, data lake analytics, available through REST APIs, are optimized for big
 
 Blob storage is your _go to_ solution for cloud IoT storage. Blob storage is almost always the right starting point for any venture into Azure IoT. You may never need to look at other storage options. However, for _big data_ there's the option of upgrading to a data lake. Upgrade if organization, or security requirements, or analytics performance, becomes an issue with your blob storage.
 
-Next, we'll look at the solution for _structured_ storage, when your data is more akin to a database, than a collection of files and folders.
+In the next unit, we'll look at the solution for _structured_ storage, when your data is more akin to a database, than a collection of files and folders.
 
-
-
-
-
-
-
-
-
+You are half way through this module, time for a quick knowledge check!
