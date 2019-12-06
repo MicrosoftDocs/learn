@@ -8,7 +8,7 @@ The purpose of this module is to give you enough background info about Azure sto
 In this module you will:
 
 - Learn about the hybrid lambda architecture of IoT
-- Learn when to use blob storage and data lake storage
+- Learn when to use blob storage, and data lake storage
 - Learn when to create a Cosmos DB database
 - Learn the basics of Time Series Insights
 

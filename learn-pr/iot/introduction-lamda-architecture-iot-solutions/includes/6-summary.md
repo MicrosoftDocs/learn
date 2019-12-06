@@ -1,9 +1,9 @@
 In this module, you learned about:
 
-- The hybrid lambda architecture of IoT
+- The hybrid lambda architecture of IoT, best described as hot and cold paths
 - Blob storage and data lake storage
 - Cosmos DB databases
-- The basics of Time Series Insights
+- The charts available in Time Series Insights
 
 And you learned that Azure IoT can have a worldwide reach!
 

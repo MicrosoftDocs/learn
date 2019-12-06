@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Summary
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/6-summary.md)]
 quiz:
@@ -18,15 +18,45 @@ quiz:
 
   - content: 'What answer best describes lambda architecture?'
     choices:  
-    - content: 'Lambda architecture supports two outputs from a message data source. A real-time stream for quick analysis, and batch processing for bulk operations.'
+    - content: 'Lambda architecture supports multiple outputs from a message data source.  Typically, a real-time stream for quick analysis, and batch processing for bulk operations.'
       isCorrect: true
-      explanation: Lambda architecture is a hybrid approach.
+      explanation: Lambda architecture is indeed a hybrid approach.
     - content: 'Lambda architecture prioritizes speed over batch processing, enabling quick queries and responses.'
       isCorrect: false
       explanation: Lambda architecture does not prioritize one form of processing over the other.
     - content: 'Lambda architecture batch processes large quantities of data, enabling a complete analysis, though with some latency.'
       isCorrect: false
-      explanation: Lambda architecture includes a real-time processing stream.
+      explanation: Lambda architecture can also include a real-time processing stream.
+
+  - content: 'Blob storage by default is general purpose, but it can be set to one of three specific roles?'
+    choices:  
+    - content: 'Append blobs, Big blobs, Data Lake storage'
+      isCorrect: false
+      explanation: Only Append blobs in this list is correct.
+    - content: 'Append blobs, Block blobs, Hot blobs'
+      isCorrect: false
+      explanation: Blobs are storage, and cannot be hot or cold.
+    - content: 'Append blobs, Cosmos DB blobs, Data Lake blobs'
+      isCorrect: false
+      explanation: Cosmos DB is not blob storage.
+    - content: 'Append blobs, Page blobs, Block blobs'
+      isCorrect: true
+      explanation: Append blobs for logging, Page blobs for read/write access, Block blobs for big data.
+
+  - content: 'What construct does Data Lake Gen 2 storage add to enhance data organization?'
+    choices:  
+    - content: 'Hot and cold paths'
+      isCorrect: false
+      explanation: These are features of lambda architecture, and are available to all IoT solutions.
+    - content: 'Time Series Insights'
+      isCorrect: false
+      explanation: Tine Series Insights enhance data visualization, not data organization.
+    - content: 'Failover regions'
+      isCorrect: false
+      explanation: Failover regions are part of disaster recovery.
+    - content: 'Hierarchical namespaces'
+      isCorrect: true
+      explanation: Hierarchical namespaces can be used to encapsulate data across folders, files and objects.
 
   - content: 'Which consistency level supports data writes being available immediately in the write-region, but when the data updates arrive in the read-regions?'
     choices:  
@@ -35,25 +65,42 @@ quiz:
       explanation: Eventual consistency is a free-for-all, where each region has updated information available when it arrives.
     - content: 'Strong'
       isCorrect: false
-      explanation: In Strong consistency, a region must wait until all regions have read access to the latest data.
+      explanation: In Strong consistency, all regions must wait until all regions have read access to the latest data.
     - content: 'Bounded'
       isCorrect: false
-      explanation: Bounded consistency requires a time limit, or update limit, as a threshold. If the threshold is exceeded, the region will wait for the latest data.
+      explanation: Bounded consistency requires a time limit, or update limit, as a threshold. If the threshold is exceeded, the region will wait for less stale data.
     - content: 'Session'
       isCorrect: true
       explanation: Session data consistency is often chosen as the default.
 
-  - content: 'A Cosmos DB is a well structured database. What is the structure hierarchy?'
+  - content: 'What is the difference between a failover region, and a secondary read region?'
     choices:  
-    - content: 'database -> documents -> json'
+    - content: 'Nothing, they are the same.'
       isCorrect: false
-      explanation: The CosmosDB structure is more flexible than this system would allow.
-    - content: 'database -> documents -> containers -> json'
+      explanation: Both have their own distinct roles.
+    - content: 'A failover region takes over primary control, when the primary region fails. A secondary read region reads and writes data.'
       isCorrect: false
-      explanation: Think of containers as more like folders than files.
-    - content: 'containers -> databases -> documents -> json'
+      explanation: Read regions do not write data.
+    - content: 'A failover region is bypassed in the event of a disaster in the primary region. A secondary read region receives data updates from the primary region, but cannot write data.'
       isCorrect: false
-      explanation: There can be only one database.
-    - content: 'database -> containers -> documents -> json'
+      explanation: Failover regions are not bypassed in the event of a primary region disaster.
+    - content: 'A failover region takes over primary control, when the primary region fails. A secondary read region receives data updates from the primary region, but cannot write data.'
       isCorrect: true
-      explanation: A database can contain many containers. A container can include more containers, or documents, or both. The documents can be tables, graphs, or json structured data.
+      explanation: Failover is only used when a local disaster of some sort occurs. Secondary regions are active all the time.
+
+  - content: 'What are the three visualizations available in Time Series Insights?'
+    choices:  
+    - content: 'Line charts, Heat maps, Tables'
+      isCorrect: false
+      explanation: Charts are not limited to line charts.
+    - content: 'Hot maps, cold maps, tables'
+      isCorrect: false
+      explanation: There is no such concept as hot or cold maps.
+    - content: 'Charts, Heat maps, Telemetry'
+      isCorrect: false
+      explanation: Telemetry is not a form of data visualization.
+    - content: 'Charts, Heat maps, Tables'
+      isCorrect: true
+      explanation: There are options within each of these types of display, such as line charts and bar charts.
+
+  

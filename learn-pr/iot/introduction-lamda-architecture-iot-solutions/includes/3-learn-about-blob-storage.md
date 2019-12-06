@@ -8,7 +8,7 @@ When you create a _storage account_ via the Azure portal, blob storage is the de
 
 ### Specify the type of blob storage
 
-Blob storage, by default, as a _general purpose_ setting applied. Whatever data you route to the account is stored with reasonable access settings.
+Blob storage, by default, has a _general purpose_ setting applied. Whatever data you route to the account is stored with reasonable access settings.
 
 You can improve the efficiency of your blobs by specifying a role for them when uploading data. There are three roles: _block blob_, _page blob_, and _append blob_.
 

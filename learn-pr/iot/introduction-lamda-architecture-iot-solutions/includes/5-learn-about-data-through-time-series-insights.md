@@ -4,7 +4,7 @@ The basis of an IoT solution is often the IoT Hub, the cloud service built to ha
 
 Another option, is to route the data to the built-in _Time Series Analytics_ services. These services enable you to visualize your data without writing any SQL queries, or doing any dirty work. This routing and visualization can all be done via the Azure portal.
 
-Using the portal, you can route the data and start looking at some charts.
+Using the portal, you create the required resources, then route the data. Now you can start looking at some charts.
 
 In the image below, conveyor belt data is being read and displayed. The chart shows when the belt is running fast, slow, or stopped. In a commercial environment, we usually don't want our delivery conveyor belt to be stopped, so checking on this gives us a clear indication when something is wrong.
 

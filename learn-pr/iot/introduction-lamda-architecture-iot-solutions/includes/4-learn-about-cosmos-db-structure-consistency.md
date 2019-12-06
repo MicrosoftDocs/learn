@@ -55,7 +55,8 @@ The last of the five options is called _Prefix_ consistency. With this setting, 
 
 After a Cosmos DB resource has been set up, you get to choose the default consistency level in your Azure portal.
 
+So what consistency level would be right for our vibration data example?  _Strong_ consistency would unnecessarily delay the US West location's real-time analysis. _Eventual_ consistency might provide unwanted skipped data for deeper analysis. Probably the default _Session_ consistency would work well.
+
 ## In summary
 
-A Cosmos DB resource is usually a more expensive option than Blob storage. Create this resource when you have a mass of time critical data that needs to be available in several locations across the globe. And quick access from any of these locations is important. And when this mass of data is well structured, typically in the form of a traditional database.
-
+A Cosmos DB resource is usually a more expensive option than Blob storage. Create a Cosmos DB resource when you have a mass of well structured time critical data that needs to be available in several locations across the globe.
