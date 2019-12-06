@@ -11,7 +11,7 @@ TODO: You create files locally because you'll use them later in Azure Pipelines.
 
 Ansible reads configuration settings from *~/ansible.cfg*. Here, you add settings that:
 
-* Hide warnings that you don't need to understand yet.
+* Hide warnings that you don't yet need to understand.
 * Disables host key checking so that you're not prompted to verify the authenticity of your servers.
 
 1. In VS Code, select **New File** from the files pane. Name the file *ansible.cfg*.
