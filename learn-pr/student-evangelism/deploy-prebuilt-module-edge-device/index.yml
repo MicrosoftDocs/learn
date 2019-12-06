@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
 title: "Deploy a prebuilt module to the Edge device"
-summary: "Assess the characteristics of Azure IoT Hub and determine scenarios when to use IoT Hub."
+summary: "."
 abstract: |
     In this module, you will:  
     - Launch a module from Azure portal to IoT Edge 
