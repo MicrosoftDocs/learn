@@ -1,6 +1,6 @@
 Recall that your analysts' financial models are run on Azure virtual machines. To further automate your deployments, you want to move from Azure CLI commands and scripts to Resource Manager templates.
 
-Before you begin, you might first wonder what existing templates exist that you can learn from and build upon.
+Before you begin, you may wonder what existing templates are available to learn from and build upon.
 
 Here you'll explore what an Azure Quickstart template is and what prebuilt templates are available for you to use right now.
 

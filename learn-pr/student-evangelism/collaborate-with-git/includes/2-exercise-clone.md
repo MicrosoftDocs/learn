@@ -22,11 +22,11 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
      git init
      ```
 
-1. Configure Git by adding your credentials:
+1. Configure Git by adding your credentials, replacing `<USER_NAME>` and `<USER_EMAIL>` with your own information (for example, "Shana" and "shana@email.com")
 
     ```bash
-    git config user.name "Your Name"
-    git config user.email "you@example.com"
+    git config user.name "<USER_NAME>"
+    git config user.email "<USER_EMAIL>"
     ```
 
 1. Create some files with the Linux `touch` command, then stage them and commit using Git:
@@ -39,7 +39,7 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
     git commit index.html -m "Create empty index.html, site.css files"
     ```
 
-1. Now add some HTML to your file using Cloud Shell's code editor which you can open with the `code` command. Open **index.html** in the online editor by typing `code index.html` at the terminal prompt:
+1. Now add some HTML to your file using Cloud Shell's code editor, which you can open with the `code` command. Open **index.html** in the online editor by typing `code index.html` at the terminal prompt:
 
     ```bash
     code index.html
@@ -109,7 +109,7 @@ Git is already installed for us in Azure Cloud Shell, so we can use Git in Cloud
 
 Now, let's pretend we're Alice and practice cloning a repository to collaborate on.
 
-To simulate Alice cloning your repo onto her computer, you'll create a directory named "Alice" on your computer and clone your project directory into there. In real life, you would accomplish this by setting up a network share or a remote reachable by URL.
+To simulate Alice cloning your repo onto her computer, you'll create a directory named "Alice" on your computer and clone your project directory into there. In real life, you would accomplish this collaboration by setting up a network share or a remote reachable by URL.
 
 1. Create a directory named "Alice" to clone the repo into. It must *not* be a subdirectory of your project directory (**Cats**), so `cd` up again to the parent directory from your project directory to make "Alice" a sibling of the project directory. Then `cd` into the "Alice" directory:
 
@@ -127,7 +127,7 @@ To simulate Alice cloning your repo onto her computer, you'll create a directory
 
     `../Cats` tells Git where to clone from and `.` tells Git where to clone to. In Unix, `.` refers to your current directory.
 
-1. Git should output this to let you know it worked:
+1. Git should output this text to let you know it worked:
 
     ```output
     Cloning into '.'...
