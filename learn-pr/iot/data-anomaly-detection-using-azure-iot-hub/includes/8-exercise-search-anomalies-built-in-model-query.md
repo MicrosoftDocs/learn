@@ -122,7 +122,7 @@ With this new route in place, now we need to update our Stream Analytics job.
    ```
 
     > [!NOTE]
-    > This first section of this query takes the vibration data, and examines the previous 120 seconds worth. The `AnomalyDetection_SpikeAndDip` function will return a `Score` parameter, and an `IsAnomaly` parameter. The score is how certain the machine learning algorithm is that the given value is an anomaly, given as a percentage. If the score exceeds 95%, the `IsAnomaly` parameter has a value of 1, otherwise `IsAnomaly` has a value of 0. Notice the 120 and 95 parameters in the first section of the query.
+    > This first section of this query takes the vibration data, and examines the previous 120 seconds worth. The `AnomalyDetection_SpikeAndDip` function will return a `Score` parameter, and an `IsAnomaly` parameter. The score is how certain the ML model is that the given value is an anomaly, specified as a percentage. If the score exceeds 95%, the `IsAnomaly` parameter has a value of 1, otherwise `IsAnomaly` has a value of 0. Notice the 120 and 95 parameters in the first section of the query.
     The second section of the query sends the time, vibration, and anomaly parameters to `vibrationBI`.
 
 1. Click **Save query**, and navigate back to the home page of the job.
@@ -175,7 +175,7 @@ In order for a human operator to make much sense of the output from this query, 
 
 1. There's a latency with so many routes and connections, but are you now seeing the vibration data coming through?
 
-1. Let the job run for a while, several minutes at least before the machine learning will kick in. Compare the console output of the device app, with the Power BI dashboard. Are you able to correlate the forced and increasing vibrations to a run of anomaly detections?
+1. Let the job run for a while, several minutes at least before the ML model will kick in. Compare the console output of the device app, with the Power BI dashboard. Are you able to correlate the forced and increasing vibrations to a run of anomaly detections?
 
 If you're seeing an active Power BI dashboard, similar to the one above, you've just about completed this module. Great work.
 
