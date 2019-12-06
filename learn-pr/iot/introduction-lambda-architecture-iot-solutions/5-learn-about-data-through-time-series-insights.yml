@@ -8,7 +8,7 @@ metadata:
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction
+title: Learn about data through Time Series Insights
 durationInMinutes: 4
 content: |
   [!include[](includes/5-learn-about-data-through-time-series-insights.md)]

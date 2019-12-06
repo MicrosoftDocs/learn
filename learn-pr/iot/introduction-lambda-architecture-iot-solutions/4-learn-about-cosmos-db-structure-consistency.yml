@@ -8,7 +8,7 @@ metadata:
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction
+title: Learn about Cosmos DB structure and consistency
 durationInMinutes: 6
 content: |
   [!include[](includes/4-learn-about-cosmos-db-structure-consistency.md)]
