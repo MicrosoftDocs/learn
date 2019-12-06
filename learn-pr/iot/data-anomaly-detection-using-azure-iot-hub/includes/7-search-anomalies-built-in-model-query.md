@@ -10,9 +10,9 @@ In the next exercise, you will create an Event Hubs _namespace_. You then have t
 
 After the route is created, we move on to updating the query.
 
-### Make a call to a machine learning algorithm
+### Make a call to a built-in ML model
 
-The machine learning function we're going to call is built into Azure Stream Analytics. The function is `AnomalyDetection_SpikeAndDip`. 
+The built-in function we're going to call is `AnomalyDetection_SpikeAndDip`.
 
 The `AnomalyDetection_SpikeAndDip` function takes a _sliding window_ of data, and examines it for anomalies. The sliding window could be, say, the most recent two minutes of telemetry data. This sliding window keeps up with the flow of telemetry in close to real time. If the size of the sliding window is increased, generally the accuracy of anomaly detection will increase too. As will the latency.
 
@@ -22,7 +22,7 @@ There are always complications, like when there are gaps in the data (the convey
 
 Spikes and dips in telemetry data are temporary anomalies. However, as we're dealing with sine waves for vibration, we can expect a short period of "normal" values follow a high or low value that triggers an anomaly alert. The operator is looking for a _cluster_ of anomalies occurring in a short time span. Such a cluster indicates something is wrong.
 
-There are other built-in machine learning functions in Azure, such as detecting trends. We don't include these functions as part of this module, but the student is encouraged to investigate further.
+There are other built-in ML models, such as a model for detecting trends. We don't include these models as part of this module, but the student is encouraged to investigate further.
 
 ### Visualize data using Power BI
 
