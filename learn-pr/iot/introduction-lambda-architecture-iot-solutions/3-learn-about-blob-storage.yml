@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction
-durationInMinutes: 6
+durationInMinutes: 7
 content: |
   [!include[](includes/3-learn-about-blob-storage.md)]
 quiz:
@@ -43,17 +43,3 @@ quiz:
       isCorrect: true
       explanation: Append blobs for logging, Page blobs for read/write access, Block blobs for big data.
 
-  - content: 'What construct does Data Lake Gen 2 storage add to enhance data organization?'
-    choices:  
-    - content: 'Hot and cold paths'
-      isCorrect: false
-      explanation: These paths are features of lambda architecture, and are available to all IoT solutions.
-    - content: 'Time Series Insights'
-      isCorrect: false
-      explanation: Tine Series Insights enhance data visualization, not data organization.
-    - content: 'Failover regions'
-      isCorrect: false
-      explanation: Failover regions are part of disaster recovery.
-    - content: 'Hierarchical namespaces'
-      isCorrect: true
-      explanation: Hierarchical namespaces can be used to encapsulate data across folders, files, and objects.

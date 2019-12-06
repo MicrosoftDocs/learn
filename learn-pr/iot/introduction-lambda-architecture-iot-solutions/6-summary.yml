@@ -16,20 +16,35 @@ quiz:
   title: Check your knowledge
   questions:
 
+  - content: 'What construct does Data Lake Gen 2 storage add to enhance data organization?'
+    choices:  
+    - content: 'Hot and cold paths'
+      isCorrect: false
+      explanation: These paths are features of lambda architecture, and are available to all IoT solutions.
+    - content: 'Time Series Insights'
+      isCorrect: false
+      explanation: Tine Series Insights enhance data visualization, not data organization.
+    - content: 'Failover regions'
+      isCorrect: false
+      explanation: Failover regions are part of disaster recovery.
+    - content: 'Hierarchical namespaces'
+      isCorrect: true
+      explanation: Hierarchical namespaces can be used to encapsulate data across folders, files, and objects.
+
   - content: 'Which consistency level supports data writes being available immediately in the write-region, but when the data updates arrive in the read-regions?'
     choices:  
-    - content: 'Eventual'
+    - content: 'Eventual consistency'
       isCorrect: false
       explanation: Eventual consistency is a free-for-all, where each region has updated information available when it arrives.
-    - content: 'Strong'
+    - content: 'Strong consistency '
       isCorrect: false
       explanation: In Strong consistency, all regions must wait until all regions have read access to the latest data.
-    - content: 'Bounded'
+    - content: 'Bounded consistency'
       isCorrect: false
       explanation: Bounded consistency requires a time limit, or update limit, as a threshold. If the threshold is exceeded, the region will wait for less stale data.
-    - content: 'Session'
+    - content: 'Session consistency'
       isCorrect: true
-      explanation: Session data consistency is often chosen as the default.
+      explanation: Session consistency works for many applications, and is the default.
 
   - content: 'What are the three visualizations available in Time Series Insights?'
     choices:  
