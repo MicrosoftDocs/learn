@@ -1,14 +1,14 @@
-You were asked to design a monitoring strategy that encompasses all solutions your organization uses. Your strategy needed to provide insights and alerting for the log data accumulated. Your strategy also had to ensure that they can quickly identify and minimize impact of failures.
+You were asked to design a monitoring strategy that encompasses all solutions that your organization uses. Your strategy needed to provide insights and alerts for accumulated log data. Your strategy also had to ensure that the organization can quickly identify and minimize the impact of failures.
 
-You've seen how Azure Security Center, Azure Application Insights, and Azure Sentinel are used to continuously monitor your applications and infrastructures. And you've learned how Azure Monitor is used to unify the various solutions.
+You've seen how to use Azure Security Center, Azure Application Insights, and Azure Sentinel to continuously monitor your applications and infrastructures. And you've learned how Azure Monitor can unify the various solutions.
 
-Without Security Center, you couldn't identify and address risks and threats to the infrastructure. Without Application Insights, you couldn't analyze and address issues that affect the health of our applications. Without Sentinel, you wouldn't have a detailed overview of the security and health of our entire enterprise. Without Monitor, you wouldn't have a single solution to unify our various services – and query and analyze data from one place.
+Without Security Center, you couldn't identify and address risks and threats to the infrastructure. Without Application Insights, you couldn't analyze and address issues that affect the health of your applications. Without Sentinel, you wouldn't have a detailed overview of the security and health of the entire organization. Without Monitor, you wouldn't have a single solution to unify the various services – and query and analyze data from one place.
 
-By using the various services on Azure, you can continuously monitor applications and infrastructures, and address issues faster and better. As a result, your organization becomes more secure, productive, cost-effective, and competitive.
+By using the various services on Azure, you can continuously monitor applications and infrastructures. You can address issues faster and more effectively. As a result, your organization becomes more secure, productive, cost-effective, and competitive.
 
 ## Learn more
 
-Visit the following articles to learn more about monitoring solutions on Azure.
+To learn more about monitoring solutions on Azure, see the following articles:
 
 - [What is Application Insights?](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview)
 - [Azure Monitor overview](https://docs.microsoft.com/azure/azure-monitor/overview)

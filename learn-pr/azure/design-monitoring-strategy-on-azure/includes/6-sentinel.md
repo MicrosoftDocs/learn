@@ -1,4 +1,4 @@
-Your financial organization deals with customers and partners on a constant basis. Your organization is also active across different regions in the world. Many transactions happen on a daily basis. Each transaction must be monitored and protected regardless of the type of transaction, and the device or users involved. You have been asked to extend your earlier investigation, to focus on enterprise-wide security and monitoring.
+Your financial organization deals with customers and partners on a constant basis. Your organization is also active across different regions in the world. Many transactions happen every day. Each transaction must be monitored and protected regardless of its type, and regardless of the device or users involved. You've been asked to extend your earlier investigation, to focus on enterprise-wide security and monitoring.
 
 You'll detail how Azure Sentinel will help monitor and respond to security threats across your organization.
 
@@ -8,7 +8,7 @@ You use Azure Sentinel if:
 
 - You want a detailed overview of your organization, potentially across multiple clouds and on-premises locations.
 - You want to avoid having to rely on complex and disparate tools.
-- You want to use enterprise-grade AI, built by experts to identify and handle threats across your organization.
+- You want to use enterprise-grade AI, built by experts, to identify and handle threats across your organization.
 
 ## Connect your data sources
 
@@ -16,13 +16,13 @@ You create an Azure Sentinel resource in the Azure portal. The process for creat
 
 ![Create a workspace](../media/6-create-workspace.png)
 
-When you've created a Sentinel resource, you'll need to connect data sources for your enterprise. Sentinel integrates with Microsoft solutions, including Azure Active Directory and Office 365, through connectors. It also comes with connectors for non-Microsoft solutions. Sentinel also has a REST API that allows you to connect to other data sources.
+When you've created a Sentinel resource, you need to connect data sources for your enterprise. Sentinel integrates with Microsoft solutions, including Azure Active Directory and Office 365, through connectors. It also comes with connectors for non-Microsoft solutions. Sentinel also has a REST API that allows you to connect to other data sources.
 
 Use the Sentinel dashboard to view all of your data connectors.  
 
 ![Data connectors](../media/6-connectors.png)
 
-You need to choose the appropriate data connector for your data source. Next, you need to look at the prerequisites for your connector and address them to successfully connect your data source.
+Choose the appropriate data connector for your data source. Next, look at the prerequisites for your connector and address them to successfully connect your data source.
 
 ![Data received](../media/6-data-received.png)
 
@@ -67,23 +67,23 @@ You select an incident to start to investigate it. You see information about the
 
 ![Incident detail](../media/6-incident-detail.png)
 
-You see that this incident has multiple entities that have been mapped to it. When you want to investigate an incident, you set its status from **New** to **In progress**, and assign it to an owner.
+You see that multiple entities have been mapped to this incident. When you want to investigate an incident, you set its status from **New** to **In progress** and assign it to an owner.
 
 ![Incident owner](../media/6-incident-owner.png)
 
-You'll then be ready to **Investigate**. You'll get an investigation map, and use it to get a better idea of what caused an incident and the affected scope. Use the map to correlate data surrounding an incident.
+You're then ready to investigate. When you select **Investigate**, you get an investigation map. You use the map to better understand what caused an incident and the affected scope. You also use the map to correlate data surrounding an incident.
 
 ![Investigation map](../media/6-investigation-map.png)
 
-The investigation map lets you drill down into an incident. You can, for example, get details about a user who is identified as part of an incident. 
+The investigation map lets you drill down into an incident. You can, for example, get details about a user who is identified as part of the incident. 
 
 ![Entity](../media/6-entity.png)
 
-If you hover over an entity, you'll also see a list of **exploration queries**, designed by Microsoft security analysts and experts. You use **exploration queries** to investigate more effectively.
+If you hover over an entity, you also see a list of *exploration queries* that were designed by Microsoft security analysts and experts. You use exploration queries to investigate more effectively.
 
 ![Exploration queries](../media/6-exploration-queries.png)
 
-The investigation map also gives you a timeline you can use to understand which event occurred at any given time. Use the timeline feature to understand the path a particular threat might have taken over time.
+The investigation map also gives you a timeline that helps you understand which event occurred at a particular time. Use the timeline feature to understand the path that a threat might have taken over time.
 
 ![Timeline](../media/6-timeline.png)
 
@@ -93,22 +93,22 @@ Playbooks can help you automatically respond to threats in Sentinel. You create 
 
 ![Sentinel playbooks](../media/6-sentinel-playbooks.png)
 
-You'll need to add a new playbook by creating a Logic App.
+You add a new playbook by creating a logic app.
 
-![Create a Logic App](../media/6-create-logic-app.png)
+![Create a logic app](../media/6-create-logic-app.png)
 
- You'll use the Logic App Designer and configure a new blank Logic App.
+ You use the Aure Logic Apps Designer to configure a new blank logic app.
 
-![Logic App designer](../media/6-logic-app-designer.png)
+![Logic Apps Designer](../media/6-logic-app-designer.png)
 
-You'll need to search for "Azure Sentinel", to find its related connectors and triggers.
+Search for "Azure Sentinel" to find its related connectors and triggers.
 
 ![Search for Azure Sentinel](../media/6-search-azure-sentinel.png)
 
-Choose the trigger you want, then you can put together a step-by-step process detailing what should happen when a response to a Sentinel alert is triggered. You've then configured a playbook.
+Choose the trigger that you want. You can then put together a step-by-step process that details what should happen when a response to a Sentinel alert is triggered. You've then configured a playbook.
 
 ![Complete playbook](../media/6-complete-playbook.png)
 
-When you've configured your playbook, you can point to it in your alert rules. The alert rule below, for example, triggers a playbook called **ProcessExecuted**.
+When you've configured your playbook, you can point to it in your alert rules. The following alert rule, for example, triggers a playbook called **ProcessExecuted**.
 
 ![Trigger a playbook](../media/6-trigger-playbook.png)
