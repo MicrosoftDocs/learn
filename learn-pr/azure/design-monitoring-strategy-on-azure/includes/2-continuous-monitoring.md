@@ -8,9 +8,9 @@ Your applications and the infrastructure might face different kinds of potential
 
 Your response must be appropriate to the kind of issue. You might respond with security patches or by adding new features. You might also respond with changes in the configuration and code of your application or infrastructure. You'll need to monitor continuously for these issues.
 
-With the right tools, you can monitor the performance of your infrastructure and applications. You can also monitor for security risks and suspicious activity. You can collect information on issues as soon as they arise, analyze the information you've collected, and respond appropriately.
+With the right tools, you can monitor the performance of your infrastructure and applications. You can also monitor for security risks and suspicious activity. You can collect information on issues as soon as they arise, analyze the information you've collected, and respond.
 
-By monitoring your applications and infrastructure continuously, you respond to changes and issues appropriately, and on time. In the long run, your organization will become more productive, cost-effective, secure, and competitive.
+By monitoring your applications and infrastructure continuously, you respond to changes and issues appropriately and on time. In the long run, your organization will become more productive, cost-effective, secure, and competitive.
 
 ## Why monitor your applications?
 
@@ -20,13 +20,13 @@ By monitoring your application for issues as it's being developed, you prevent e
 
 ![Availability of applications](../media/2-availability.png)
 
-You also monitor your application when it's live and in use. As you can see in the figure, you might be faced with failing requests, or issues that cause an application to be unavailable altogether. By monitoring for live issues, you'll identify these types of problems and risks promptly. You'll respond effectively to keep your application healthy.
+You also monitor your application when it's live and in use. As you can see in the charts, you might be faced with failing requests, or issues that cause an application to be unavailable altogether. By monitoring for live issues, you'll identify these types of problems and risks promptly. You'll respond effectively to keep your application healthy.
 
 ## Why monitor your infrastructure?
 
 Different kinds of issues can affect your infrastructure. You might have to deal with performance issues, or problems that could render your entire infrastructure unavailable, or threats to your security. Any of these issues can result in an impact on productivity, financial loss, or damage to your organization's reputation. Monitor the health of your infrastructure to ensure that it remains protected and available at all times.
 
-You want to deal with any issues that arise in a timely and effective manner. You configure alerts on your infrastructure to monitor for various issues. For example, you configure alerts for:
+You want to deal with any issues that arise in a timely and effective way. You configure alerts on your infrastructure to monitor for various issues. For example, you configure alerts for:
 
 - Risks to the security of your infrastructure, such as suspicious user accounts or malicious IP addresses.
 - The availability and health of your infrastructure. 

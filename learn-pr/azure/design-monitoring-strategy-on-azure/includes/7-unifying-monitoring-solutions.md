@@ -77,7 +77,7 @@ The following query checks workspaces from multiple applications for requests. T
 
 ![Create a function](../media/7-create-function.png)
 
-From this point on, we can use this function for cross-resource querying. In the following cross-resource query, the returned result for `applicationFunction` is further filtered by the new query for any requests that have failed.
+From this point on, we can use this function for cross-resource querying. In the following cross-resource query, the returned result for `applicationsFunction` is further filtered by the new query for any requests that have failed.
 
 ![Cross-resource query](../media/7-cross-query.png)
 

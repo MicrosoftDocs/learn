@@ -41,7 +41,7 @@ quiz:
     choices:
     - content: Use just-in-time access to automate your response to alerts.
       isCorrect: false
-      explanation: just-in-time access is used to block virtual machine access.
+      explanation: Just-in-time access is used to block virtual machine access.
     - content: Use adaptive controls to automate your response to alerts.
       isCorrect: false
       explanation: You use adaptive controls to control which applications are allowed to run on your virtual machines.

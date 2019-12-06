@@ -7,7 +7,7 @@ You'll detail how Azure Sentinel will help monitor and respond to security threa
 You use Azure Sentinel if:
 
 - You want a detailed overview of your organization, potentially across multiple clouds and on-premises locations.
-- You want to avoid having to rely on complex and disparate tools.
+- You want to avoid reliance on complex and disparate tools.
 - You want to use enterprise-grade AI, built by experts, to identify and handle threats across your organization.
 
 ## Connect your data sources
@@ -26,7 +26,7 @@ Choose the appropriate data connector for your data source. Next, look at the pr
 
 ![Data received](../media/6-data-received.png)
 
-When you connect the data source, your logs will be synced to Sentinel. You'll see a summary of the data that's been collected in the **DATA RECEIVED** graph for your connector. You'll also see the different data types that have been collected for the source. For example, the Azure Active Directory connector collects sign-in logs and audit logs for you.
+When you connect the data source, your logs will be synced to Sentinel. You'll see a summary of the data that has been collected in the **DATA RECEIVED** graph for your connector. You'll also see the different data types that have been collected for the source. For example, the Azure Active Directory connector collects sign-in logs and audit logs for you.
 
 ## Use alerts to monitor your enterprise
 
@@ -53,7 +53,7 @@ AzureActivity
  | make-series dcount(ResourceId)  default=0 on EventSubmissionTimestamp in range(ago(7d), now(), 1d) by Caller
 ```
 
-In the query scheduling section, you set how often the query should run, and which period of data to look up. In the alert threshold section, you specify when an alert is raised.
+In the query scheduling section, you set how often the query should run and which period of data to look up. In the alert threshold section, you specify when an alert is raised.
 
 ## Investigate incidents
 
@@ -97,7 +97,7 @@ You add a new playbook by creating a logic app.
 
 ![Create a logic app](../media/6-create-logic-app.png)
 
- You use the Aure Logic Apps Designer to configure a new blank logic app.
+ You use the Azure Logic Apps Designer to configure a new blank logic app.
 
 ![Logic Apps Designer](../media/6-logic-app-designer.png)
 

@@ -1,4 +1,4 @@
-Because your company is a financial organization, it needs to meet the highest standards for security. Each transaction that a customer or partner initiates must be entirely protected from threats. Your company must also respond effectively to each potential threat. For example, if a virtual machine is compromised, you must act rapidly and address the issue.
+Because your company is a financial organization, it needs to meet the highest standards for security. Each transaction that a customer or partner starts must be entirely protected from threats. Your company must also respond effectively to each potential threat. For example, if a virtual machine is compromised, you must act rapidly and address the issue.
 
 You'll provide information on how to protect resources and respond to threats by using Azure Security Center.
 
@@ -58,7 +58,7 @@ Edit your playbook by selecting it and using the Azure Logic Apps Designer that 
 
 ![Logic App designer](../media/4-logic-app-designer.png)
 
-After you create a new blank logic app, you can use the designer to search for Security Center connectors and triggers for your playbook. For example, look for *Azure Security Center* and see all the triggers you can use. You then choose a trigger that details what should happen when the playbook is triggered.
+After you create a new blank logic app, you can use the designer to search for Security Center connectors and triggers for your playbook. For example, look for **Azure Security Center** and see all the triggers you can use. You then choose a trigger that details what should happen when the playbook is triggered.
 
 ![Select a trigger](../media/4-select-trigger.png)
 

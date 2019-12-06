@@ -58,7 +58,7 @@ You also need to configure an alert rule for your availability test. Use alert r
 
 ![Configuring an alert rule](../media/5-alert-rule.png)
 
-You specify under which conditions an alert should be triggered, for example, if a certain number of locations are unavailable. And you specify who should be notified. Send notifications through email or text message. Or use runbooks and webhooks to respond to alerts in an automated way.
+You specify the conditions that should trigger an alert. For example, Application Insights can send an alert if a certain number of locations are unavailable. And you specify who should be notified. Send notifications through email or text message. Or use runbooks and webhooks to respond to alerts in an automated way.
 
 ![Locations](../media/5-availability-in-locations.png)
 

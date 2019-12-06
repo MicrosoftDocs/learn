@@ -1,4 +1,4 @@
-The reputation of your company depends on the reliability and security of its systems. It's critical to monitor your systems closely to identify any problems or attacks before they can affect users. For example, if a malicious user attacks your payment system, you need to know quickly to neutralize the threat, or your customers' personal data might be at risk.
+The reputation of your organization depends on the reliability and security of its systems. It's critical to monitor your systems closely to identify any problems or attacks before they can affect users. For example, if a malicious user attacks your payment system, you need to know quickly to neutralize the threat, or your customers' personal data might be at risk.
 
 You'll explain the solutions in Azure that will enable you to continuously monitor your organization's services.
 
