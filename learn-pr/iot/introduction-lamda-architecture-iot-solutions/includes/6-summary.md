@@ -1,6 +1,6 @@
 In this module, you learned about:
 
-- The hybrid lambda architecture of IoT, best described as hot and cold paths
+- The hybrid lambda architecture of IoT
 - Blob storage and data lake storage
 - Cosmos DB databases
 - The charts available in Time Series Insights

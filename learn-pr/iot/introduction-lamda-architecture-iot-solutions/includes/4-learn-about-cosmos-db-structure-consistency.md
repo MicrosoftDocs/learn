@@ -1,9 +1,9 @@
 
-Cosmos, another word for "universe", implies that this is the solution for world-wide applications. Another feature of the Cosmos DB resource is that it is well structured, not the collection of stuff that can be stored in a blob. The obvious example is a database, where each entry in the database has a consistent set of entries.
+Cosmos, another word for "universe", implies that this is the solution for world-wide applications. Another feature of the Cosmos DB resource is that it is well-structured, not the collection of stuff that can be stored in a blob. The obvious example is a database, where each entry in the database has a consistent set of entries.
 
 Access to the data in a Cosmos DB resource is made through queries built from API calls. Cosmos DB supports a range of APIs, including, SQL API, Mongo API, Graph API, Table API, and the Cassandra API.
 
-A Cosmos DB resource is about big data, and world-wide access. An example of the issues this raises might help.
+A Cosmos DB resource is about big data, and world-wide access. An example might help.
 
 ## Consider a worldwide scenario
 
@@ -25,11 +25,11 @@ Having set up your database, you have to consider how important it is that every
 
 ## Set the data consistency
 
-In our scenario, there are three company data locations: US West, Australia East and Australia Central. Only US West writes to the data, but all three locations can read it. Data consistency answers the following question. After US West writes an update to the data, what should all read locations get when they read the data. If there was zero latency, then this question would be mute. However, latency is a real issue in the cloud and it needs to be addressed.
+In our scenario, there are three company data locations: US West, Australia East, and Australia Central. Only US West writes to the data, but all three locations can read it. Data consistency answers the following question. After US West writes an update to the data, what should all read locations get when they read the data. If there was zero latency, then this question would be mute. However, latency is a real issue in the cloud and it needs to be addressed.
 
 When a write is made to update data in US West, that change will be propagated automatically to the other locations. However, the update will exist in an inaccessible state, until the go-ahead is received that the update can now be read. This inaccessible state exists in all three locations, even the write location.
 
-If all locations, including US West, should get the same result after a read, then _Strong_ consistency should be applied. In this case, the system waits for an acknowledgement from all locations that they have received the update, before giving the all clear to make the data readable. This ensures worldwide consistency, but comes at the cost of all locations having to wait for the slowest to receive the update. This latency may only be seconds, but the latency exists so should be considered.
+If all locations, including US West, should get the same result after a read, then _Strong_ consistency should be applied. In this case, the system waits for an acknowledgment from all locations that they have received the update, before giving the all clear to make the data readable. This ensures worldwide consistency, but comes at the cost of all locations having to wait for the slowest to receive the update. This latency may only be seconds, but the latency exists so should be considered.
 
 In _Strong_ consistency, every location will get identical data on every read. Note, in the following image, how all locations get exactly the same notes (updates) at the same time, but that there is a short delay before any location can read an update.
 
@@ -41,7 +41,7 @@ At the other end of the spectrum, there is _Eventual_ consistency. In this scena
 
 These two consistency strategies are the most established in the data propagation world. However, three variations are available in Cosmos DB.
 
-With _Bounded_ consistency you set a time threshold, or version update count threshold. This threshold is the tolerance of each location for stale data. If a location reads data, only to find the data is outside of the threshold, then the system will wait till a value is available that is within the threshold. For example, if a threshold is set at 20 seconds, then only data that is stale by 20 seconds or less, is acceptable. Set this threshold to zero, and you have _Strong_ consistency.
+With _Bounded_ consistency, you set a time threshold, or version update count threshold. This threshold is the tolerance of each location for stale data. If a location reads data, only to find the data is outside of the threshold, then the system will wait until a value is available that is within the threshold. For example, if a threshold is set at 20 seconds, then only data that is stale by 20 seconds or less, is acceptable. Set this threshold to zero, and you have _Strong_ consistency.
 
 ![Screenshot showing the Bounded consistency option for a Cosmos DB, in the Azure portal](../media/lambda-consistency-bounded.png)
 
@@ -59,4 +59,4 @@ So what consistency level would be right for our vibration data example?  _Stron
 
 ## In summary
 
-A Cosmos DB resource is usually a more expensive option than Blob storage. Create a Cosmos DB resource when you have a mass of well structured time critical data that needs to be available in several locations across the globe.
+A Cosmos DB resource is usually a more expensive option than Blob storage. Create a Cosmos DB resource when you have a mass of well-structured time critical data that needs to be available in several locations across the globe.

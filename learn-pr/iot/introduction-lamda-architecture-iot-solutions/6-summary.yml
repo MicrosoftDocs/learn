@@ -38,7 +38,7 @@ quiz:
       explanation: Blobs are storage, and cannot be hot or cold.
     - content: 'Append blobs, Cosmos DB blobs, Data Lake blobs'
       isCorrect: false
-      explanation: Cosmos DB is not blob storage.
+      explanation: Cosmos DB isn't blob storage.
     - content: 'Append blobs, Page blobs, Block blobs'
       isCorrect: true
       explanation: Append blobs for logging, Page blobs for read/write access, Block blobs for big data.
@@ -47,7 +47,7 @@ quiz:
     choices:  
     - content: 'Hot and cold paths'
       isCorrect: false
-      explanation: These are features of lambda architecture, and are available to all IoT solutions.
+      explanation: These paths are features of lambda architecture, and are available to all IoT solutions.
     - content: 'Time Series Insights'
       isCorrect: false
       explanation: Tine Series Insights enhance data visualization, not data organization.
@@ -56,7 +56,7 @@ quiz:
       explanation: Failover regions are part of disaster recovery.
     - content: 'Hierarchical namespaces'
       isCorrect: true
-      explanation: Hierarchical namespaces can be used to encapsulate data across folders, files and objects.
+      explanation: Hierarchical namespaces can be used to encapsulate data across folders, files, and objects.
 
   - content: 'Which consistency level supports data writes being available immediately in the write-region, but when the data updates arrive in the read-regions?'
     choices:  
@@ -75,15 +75,15 @@ quiz:
 
   - content: 'What is the difference between a failover region, and a secondary read region?'
     choices:  
-    - content: 'Nothing, they are the same.'
+    - content: 'Nothing, they're the same.'
       isCorrect: false
       explanation: Both have their own distinct roles.
     - content: 'A failover region takes over primary control, when the primary region fails. A secondary read region reads and writes data.'
       isCorrect: false
       explanation: Read regions do not write data.
-    - content: 'A failover region is bypassed in the event of a disaster in the primary region. A secondary read region receives data updates from the primary region, but cannot write data.'
+    - content: 'A failover region is bypassed if a disaster occurs in the primary region. A secondary read region receives data updates from the primary region, but cannot write data.'
       isCorrect: false
-      explanation: Failover regions are not bypassed in the event of a primary region disaster.
+      explanation: Failover regions are not bypassed if a primary region disaster occurs.
     - content: 'A failover region takes over primary control, when the primary region fails. A secondary read region receives data updates from the primary region, but cannot write data.'
       isCorrect: true
       explanation: Failover is only used when a local disaster of some sort occurs. Secondary regions are active all the time.
@@ -98,7 +98,7 @@ quiz:
       explanation: There is no such concept as hot or cold maps.
     - content: 'Charts, Heat maps, Telemetry'
       isCorrect: false
-      explanation: Telemetry is not a form of data visualization.
+      explanation: Telemetry isn't a form of data visualization.
     - content: 'Charts, Heat maps, Tables'
       isCorrect: true
       explanation: There are options within each of these types of display, such as line charts and bar charts.

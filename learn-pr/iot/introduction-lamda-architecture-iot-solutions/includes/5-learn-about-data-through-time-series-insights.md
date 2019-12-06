@@ -10,16 +10,16 @@ In the image below, conveyor belt data is being read and displayed. The chart sh
 
 ![Screenshot of the chart page, when using Time Series Insights on conveyor belt data](../media/lambda-tsi-chart.png)
 
-The second display option is to visualize the data using a _heat map_. The time chunks show the various speeds the conveyor belt is running at, using a color code. The times when the belt is stopped are pretty obvious here too.
+The second display option is to visualize the data using a _heat map_. The time chunks show the various speeds the conveyor belt is running at, using a color code. The times when the belt is stopped are obvious here too.
 
-![Screenshot of the heat map pag, when using Time Series Insights on conveyor belt data](../media/lambda-tsi-heatmap.png)
+![Screenshot of the heat map page, when using Time Series Insights on conveyor belt data](../media/lambda-tsi-heatmap.png)
 
-The third option is a table of results, again divided up into time chunks. A table is not as fun to look at as the chart or heat map. But, depending on your application, this might indeed be a helpful way of visualizing your data.
+The third option is a table of results, again divided up into time chunks. A table isn't as fun to look at as the chart or heat map. But, depending on your application, this format might indeed be a helpful way of visualizing your data.
 
 ![Screenshot of the table page, when using Time Series Insights on conveyor belt data](../media/lambda-tsi-table.png)
 
 ### In summary
 
-The key point here is that the three visualization methods shown above are easily made available through an Azure Time Series Insights resource. Set up time can be measured in minutes, and off you go! Multiple charts can be displayed on one page, and quite complex queries can be built up, either using the user interface, or typing in some SQL conditions. More complex visualizations of IoT data can be built, using the Time Series Insights portal, or API, but for some applications simplest is best.
+The key point here is that the three visualization methods shown above are easily made available through an Azure Time Series Insights resource. Set up time can be measured in minutes, and off you go! Multiple charts can be displayed on one page, and complex queries can be built up, either using the user interface, or typing in some SQL conditions. More complex visualizations of IoT data can be built, using the Time Series Insights portal, or API, but for some applications simplest is best.
 
 It makes sense to check out the abilities and features of Time Series Insights, before engaging in more costly options.

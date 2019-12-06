@@ -1,6 +1,6 @@
-_Blob storage_ is a fun term, but is not quite as unstructured as it sounds. It is referred to as _unstructured_ storage, but that means each entry in the storage does not conform to any particular model. For example, one entry might be video, another an audio recording, a third a group of text files, and so on. Blob storage is very similar to the files and folders structure you are almost certainly used to on your laptop or desktop computer.
+_Blob storage_ is a fun term, but isn't as unstructured as it sounds. It is referred to as _unstructured_ storage, but that means each entry in the storage does not conform to any particular model. For example, one entry might be video, another an audio recording, a third a group of text files, and so on. Blob storage is similar to the files and folders structure you are almost certainly used to on your laptop or desktop computer.
 
-An example of _structured_ storage would be a large database, each entry in the database containing similar information, and each entry accessible by a set of similar API calls. Blob storage is not particularly suitable for storing large quantities of well ordered data. For that kind of data, consider the Cosmos DB resource, described in the next unit.
+An example of _structured_ storage would be a large database, each entry in the database containing similar information, and each entry accessible by a set of similar API calls. Blob storage isn't particularly suitable for storing large quantities of well-ordered data. For that kind of data, consider the Cosmos DB resource, described in the next unit.
 
 When you create a _storage account_ via the Azure portal, blob storage is the default option. In the following image, note the use of the hot and cool metaphors to identify the purpose of the storage.
 
@@ -14,13 +14,13 @@ You can improve the efficiency of your blobs by specifying a role for them when 
 
 ![Screenshot of the Upload Blob page of the Azure portal](../media/lambda-blob-type.png)
 
-Let's start with the append blobs as it's the easiest to describe. An append blob can, as its name implies, _only_ be appended to. This is ideal for log files. A log file should never be edited, and just grows and grows! There is plenty of space in the cloud.
+Let's start with the append blobs as it's the easiest to describe. An append blob can, as its name implies, _only_ be appended to, and is ideal for log files. A log file should never be edited, and just grows and grows! There is plenty of space in the cloud.
 
 Page blobs are there for data that needs frequent read/write access. Consider a page blob to be like a remote hard disk. For any data that might be a work-in-progress, a page blob might be the ideal cloud storage. High performance, and low latency, are the key assets of page blobs.
 
-Block blobs are a bit more complex. When you have a very large volume of data, it can be more efficient to access that data if it is divided into blocks. Each block has a unique ID, that you have access to, and can use to write and read the block. Block blobs can be written to in parallel, and can be uploaded in any order. Basically, block blobs are for handling very large amounts of data over a network. There is not really an equivalent kind of storage on your home PC.
+Block blobs are a bit more complex. When you have a large volume of data, it can be more efficient to access that data if it is divided into blocks. Each block has a unique ID, that you have access to, and can use to write and read the block. Block blobs can be written to in parallel, and can be uploaded in any order. Basically, block blobs are for handling large amounts of data over a network. There isn't really an equivalent kind of storage on your home PC.
 
-There are upper limits to blob storage pages and block sizes, but these limits are very high (hundreds of Gigabytes, or even Terabytes). These limits have been increased over time. Refer to the documentation links, given in the summary of this module, to educate yourself on the current limits. As limits are reached you will need to increase your storage allocation. For text based telemetry data though, the limits may not be reached for years, if ever!
+There are upper limits to blob storage pages and block sizes, but these limits are high (hundreds of Gigabytes, or even Terabytes). These limits have been increased over time. Refer to the documentation links, given in the summary of this module, to educate yourself on the current limits. As limits are reached, you will need to increase your storage allocation. For text-based telemetry data though, the limits may not be reached for years, if ever!
 
 ### API access to blob storage
 
@@ -38,11 +38,11 @@ To help organize data, a concept called _hierarchical namespaces_ is available i
 
 Security in a data lake is on the file or folder level, or greater granularity if needed.
 
-Finally, data lake analytics, available through REST APIs, are optimized for big data. Your queries should still run in a decent amount of time, even if they are trawling through a sea of data.
+Finally, data lake analytics, available through REST APIs, are optimized for big data. Your queries should still run in a decent amount of time, even if they're trawling through a sea of data.
 
 ### In summary
 
-Blob storage is your _go to_ solution for cloud IoT storage. Blob storage is almost always the right starting point for any venture into Azure IoT. You may well never need to look at other storage options. However, for _big data_ there is the option of upgrading to a data lake. Upgrade if organization, or security requirements, or analytics performance, becomes an issue with your blob storage.
+Blob storage is your _go to_ solution for cloud IoT storage. Blob storage is almost always the right starting point for any venture into Azure IoT. You may never need to look at other storage options. However, for _big data_ there is the option of upgrading to a data lake. Upgrade if organization, or security requirements, or analytics performance, becomes an issue with your blob storage.
 
 Next, we will look at the solution for _structured_ storage, when your data is more akin to a database, than a collection of files and folders.
 

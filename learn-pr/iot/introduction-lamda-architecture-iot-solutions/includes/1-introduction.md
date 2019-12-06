@@ -1,7 +1,7 @@
 
-Taking a first step into building an Azure IoT app, even a short test app, is going to require you to think about your storage options. If you are new to Azure, the range of resources available can be bewildering. This module introduces the architectural concepts of IoT, and how they relate to cloud storage. The most common storage options are described at a high level. You will not be asked to do any coding, nor build an app using the portal. To complete the module you'll have to read the units, and pass a few knowledge checks along the way!
+Taking a first step into building an Azure IoT app, even a short test app, is going to require you to think about your storage options. If you're new to Azure, the range of resources available can be bewildering. This module introduces the architectural concepts of IoT, and how they relate to cloud storage. The most common storage options are described at a high level. You will not be asked to do any coding, nor build an app using the portal. To complete the module you'll have to read the units, and pass a few knowledge checks along the way!
 
-The purpose of this module is to give you enough background info about Azure storage for IoT, that you will be able to make an informed decision when you do build your first IoT app.
+The purpose of this module is to give you enough info on Azure storage for IoT, that you can make an informed decision when you do build your first IoT app.
 
 ## Learning objectives
 
