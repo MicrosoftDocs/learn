@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.5-application-insights
 metadata:
-  title: Analyze web applications using Azure Application Insights
-  description: Analyze web applications using Azure Application Insights
+  title: Analyze web applications by using Azure Application Insights
+  description: Analyze web applications by using Azure Application Insights
   ms.date: 12/03/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Analyze web applications using Azure Application Insights
+title: Analyze web applications by using Azure Application Insights
 durationInMinutes: 10
 content: |
   [!include[](includes/5-application-insights.md)]
@@ -17,13 +17,13 @@ quiz:
   questions:
   - content: Why would you use Azure Application Insights?
     choices:
-    - content: You want to analyze and address problems affecting your cloud infrastructure's security.
+    - content: You want to analyze and address problems that affect your cloud infrastructure's security.
       isCorrect: false
       explanation: Azure Application Insights is used for your applications. You use Azure Security Center for your infrastructure's security.
-    - content: You want to analyze and address problems affecting your on-premises infrastructure's security.
+    - content: You want to analyze and address problems that affect your on-premises infrastructure's security.
       isCorrect: false
       explanation: You use Azure Security Center for your infrastructure's security. Azure Application Insights is used for your applications.
-    - content: You want to analyze and address problems affecting your application's health.
+    - content: You want to analyze and address problems that affect your application's health.
       isCorrect: true
       explanation: You can analyze and address issues such as exceptions, failures, and availability problems.
   - content: How can you continuously monitor your applications from different geographic locations?
@@ -41,10 +41,10 @@ quiz:
     choices:
     - content: Use availability tests to monitor your release pipelines.
       isCorrect: false
-      explanation: Use a continuous monitoring gate to monitor release pipelines. Use availability tests to monitor your application's performance once it's live.
+      explanation: Use a continuous monitoring gate to monitor release pipelines. Use availability tests to monitor your application's performance after it's live.
     - content: Use a continuous monitoring gate to monitor release pipelines.
       isCorrect: true
-      explanation: Use the gate to stop deployment when an issue has been identified. Deployment will continue automatically when the issue has been resolved. 
+      explanation: Use the gate to stop deployment when an issue has been identified. Deployment will continue automatically when the issue is resolved. 
     - content: Use the application map to monitor your release pipelines.
       isCorrect: false
       explanation: The application map gives you a typology of your application and doesn't monitor your pipelines. Instead, use a continuous monitoring gate to monitor release pipelines.
