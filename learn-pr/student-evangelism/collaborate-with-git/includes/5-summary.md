@@ -1,4 +1,5 @@
 Congratulations! In this module, you learned how to use Git to collaborate with other developers.
+
 You learned:
 
 - How to clone a repository
