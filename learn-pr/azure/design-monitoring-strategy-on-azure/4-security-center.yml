@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.design-monitoring-strategy-on-azure.4-security-center
+metadata:
+  title: Analyze infrastructure security using Azure Security Center
+  description: Analyze infrastructure security using Azure Security Center
+  ms.date: 12/03/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Analyze infrastructure security using Azure Security Center
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-security-center.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Why would you use Azure Security Center?
+    choices:
+    - content: You want to secure an infrastructure that may consist of on-premises and cloud resources.
+      isCorrect: True
+      explanation: Azure Security Center helps you secure your on-premises and cloud resources.
+    - content: You want to secure an infrastructure that only consists of cloud resources.
+      isCorrect: false
+      explanation: Azure Security Center helps you secure both your on-premises and cloud resources.
+    - content: You want to secure an infrastructure that only consists of on-premises resources.
+      isCorrect: false
+      explanation: Azure Security Center helps you secure both your on-premises and cloud resources.
+  - content: How can you prevent persistent access to your virtual machines using Azure Security Center?
+    choices:
+    - content: Use playbooks to block access.
+      isCorrect: false
+      explanation: You use just-in-time access. Playbooks are for automating how you respond to alerts.
+    - content: Use just-in-time access to prevent persistent access.
+      isCorrect: true
+      explanation: With just-in-time access, your virtual machines are only accessed based on rules that you configure.
+    - content: Use automation and orchestration to block access.
+      isCorrect: false
+      explanation: You use just-in-time access. Your virtual machines are only accessed based on audited access that you configure.
+  - content: Which tool allows you to automate your responses to alerts?
+    choices:
+    - content: Use just-in-time access to automate your response to alerts.
+      isCorrect: false
+      explanation: just-in-time access is used to block virtual machine access.
+    - content: Use adaptive controls to automate your response to alerts.
+      isCorrect: false
+      explanation: You use adaptive controls to control which applications are allowed to run on your virtual machines.
+    - content: Use playbooks to automate your response to alerts. 
+      isCorrect: true
+      explanation: Playbooks are automated procedures that you can run against alerts.

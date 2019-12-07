@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.design-monitoring-strategy-on-azure.7-unifying-monitoring-solutions
+metadata:
+  title: Unifying monitoring solutions in Azure
+  description: Unifying monitoring solutions in Azure
+  ms.date: 12/03/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Unifying monitoring solutions in Azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-unifying-monitoring-solutions.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: You need to write queries to analyze your log data. How would you do this?
+    choices:
+    - content: Use the Log Analytics agent to write your queries.
+      isCorrect: false
+      explanation: Use Log Analytics to write your queries. The agent gathers security-related information from resources into a workspace.
+    - content: Use Log Analytics to write your queries.
+      isCorrect: true
+      explanation: You can create and run queries on your logs and view results with Log Analytics.
+    - content: Use a workspace to write your queries.
+      isCorrect: false
+      explanation: Workspaces are where your data is stored. Use Log Analytics to write your queries.
+  - content: How can you automatically collect security-related data from all newly created virtual machines into one central location?
+    choices:
+    - content: Use the Log Analytics agent.
+      isCorrect: true
+      explanation: The agent gathers security-related information from resources into a workspace.
+    - content: Use an instance of Application Insights.
+      isCorrect: false
+      explanation: Application Insights is used to collect information about your application's health.
+    - content: Use a cross-resource-query.
+      isCorrect: false
+      explanation: Use the Log Analytics agent. You use cross-resource querying to analyze the log data collected from separate workspaces. 
+  - content: How can you analyze both security-related data, and application performance data, together?
+    choices:
+    - content: Use Log Analytics agent to query Azure Security Center and Application Insights workspaces together.
+      isCorrect: false
+      explanation: Use a cross-resource-query. The agent gathers security-related information from resources into a workspace.
+    - content: Use a cross-query to query Azure Security Center and Application Insights workspaces together.
+      isCorrect: true
+      explanation: You use cross-resource querying to analyze the log data collected from separate workspaces. 
+    - content: Use automatic provisioning to query Azure Security Center and Application Insights workspaces together.
+      isCorrect: false
+      explanation: Automatic provisioning will install the Log Analytics agent on virtual machines. Use cross-resource querying to analyze the log data collected from separate workspaces. 
