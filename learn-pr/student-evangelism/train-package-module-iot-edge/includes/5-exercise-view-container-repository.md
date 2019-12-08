@@ -1,17 +1,31 @@
-## Submitting a new deployment to an IoT Edge device
+1. Go to Azure portal and navigate to machine learning workspace.
 
-To deploy a pre-built module to the edge device, you must first choose an IoT Edge module from the Azure Marketplace and also choose the IoT Edge device to receive the module
+![An illustration showing ](/home/aysmtl/Documents/train-package-module-iot-edge/media/ml-portal.png)
 
-You can access the module **Simulated Temperature Sensor** by searching the marketplace accessed through the Azure portal. Once you identify this module, choose the IoT Edge device to receive this module. A three-step wizard helps to define the stages to deploy the module
+2. Click on machine learning then select your workspace you created in the notebook. 
 
-In the first step (Add Modules), choose only the **Simulated Temperature Sensor** module
+![An illustration showing ](/home/aysmtl/Documents/train-package-module-iot-edge/media/ml-directory.png)
 
-The second stage of the wizard is the (**specify routes**) stage. Routing specifies how messages are passed between modules and to IoT Hub.  In this case, we specify all messages from all modules to go to IoT Hub. In the third step (**Review Deployment**), you can preview the JSON file that defines all the modules that get deployed to your IoT Edge device. When you submit a new deployment to an IoT Edge device, nothing is pushed to your device. Instead, the device queries IoT Hub regularly for any new instructions. If the device finds an updated **deployment manifest**, it uses the information about the new deployment to pull the module images from the cloud then starts running the modules locally.  The wizard creates a deployment manifest through the three steps. A deployment manifest is a JSON document that describes which modules to deploy, how data flows between the modules and desired properties of the module twins. The deployment manifest is used to tell your device which modules to install and how to configure them to work together. All IoT Edge devices must be configured with a deployment manifest
+3. When you click on the workspace, you will be seeing **Overview** section of the ML workspace and you can see details of the workspace such as resource group, location, subscription ID, storage, registry, key vault, application insight.
 
-## View generated data
+![An illustration showing ](/home/aysmtl/Documents/train-package-module-iot-edge/media/ml-registry.png)
 
-The Simulated Temperature Sensor module creates sample data that you can use for testing. The module also generates environment data, that is data for the machine and the environment around the machine. For example, this sensor might be in a server room, on a factory floor, or on a wind turbine. The message includes ambient temperature and humidity, machine temperature and pressure, and a timestamp.  
+4. Click on **Registry** value to get into container registry.
 
-## Clean up resources
+![An illustration showing ](/home/aysmtl/Documents/train-package-module-iot-edge/media/ml-overview.png)
 
-To avoid changes, delete Azure resources as needed, including the device that you created, the resource group. Ensure that the resources deleted won't be needed again.
+5. When you scroll down from the Overview section you will see Services section and then select the **Repositories** in Services. You will see the **tempanomalydetection** repository that you created in the notebook.
+
+![An illustration showing ](/home/aysmtl/Documents/train-package-module-iot-edge/media/ml-repo.png)
+
+6. Select tempanomalydetection. You will repository has one tag. Now that your full image path of the container in the format: **.azurecr.io/tempanomalydetection:1**. You can use the image path to deploy this container to IoT Edge devices.
+
+![An illustration showing ](/home/aysmtl/Documents/train-package-module-iot-edge/media/ml-repo-tag.png)
+
+7. When you scroll down from the **Overview** section, you will see **Settings** section. Select **Access Key.** 
+
+   You will see a number of access credentials such as **Login server**, **Username**, **Password** for an admin user. These credentials can be included in the deployment manifest to give your IoT Edge device access to pull container images from the registry.
+
+![An illustration showing ](/home/aysmtl/Documents/train-package-module-iot-edge/media/ml-access-keys.png)
+
+
