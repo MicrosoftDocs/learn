@@ -11,11 +11,10 @@ metadata:
 title: "Train and package an Azure machine learning module for deployment to IoT Edge device"
 summary: "Deploy a trained machine learning module to the edge using a container. The machine learning module you create will be deployed to an IoT edge device. You will check that your container image was successfully created and stored in the Azure container registry. You will view the data from the deployed module from the IoT Edge."
 abstract: |
-	In this module, you will develop a machine learning module and deploy it to a Linux device running Azure IoT Edge. Your solution will
-	- Create an Azure Machine Learning module
-	- Push a module container to an Azure container registry
-	- Deploy an Azure Machine Learning module to your IoT Edge device
-	- View generated data
+	In this module, you will:  
+    - Launch a module from Azure portal to IoT Edge using a container
+    - Generate simulated data from an edge device
+    - Verify data generated from the edge device
    
     "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence:Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
 prerequisites: |
