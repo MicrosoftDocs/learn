@@ -1,12 +1,12 @@
 ## Overview
 
-In this module, your objective is to train a machine learning model and deploy the trained model into an Azure Machine Learning container. The components required for training the model and deploying the container are in the [AI Toolkit for Azure IoT Edge Git repo](https://github.com/Azure/ai-toolkit-iot-edge/tree/master/IoT Edge anomaly detection tutorial). You will run the notebook in the exercise below.  
+In this module, your objective is to train a machine learning model and deploy the trained model into an Azure Machine Learning container. The components required for training the model and deploying the container are in the [AI Toolkit for Azure IoT Edge Git repo](https://github.com/Azure/ai-toolkit-iot-edge/tree/master/IoT Edge anomaly detection tutorial). You'll run the notebook in the exercise below.  
 
-Firstly, you **set up the parameters** for the IoT Hub and Azure ML workspace. These include the resource group, the Azure region, your Azure IoT Hub name, IoT Edge device ID, Azure subscription ID , your Azure ML service workspace name. You should also specify the module name which is "machinelearningmodule". In this case, **we are using the decision tree classifier as an anomaly detector**. You will **build, evaluate and test** the model. You will also **store the model to disk** and then **register the model**  
+Firstly, you **set up the parameters** for the IoT Hub and Azure ML workspace. These include the resource group, the Azure region, your Azure IoT Hub name, IoT Edge device ID, Azure subscription ID, your Azure ML service workspace name. You should also specify the module name that is "machinelearningmodule". In this case, **we're using the decision tree classifier as an anomaly detector**. You'll **build, evaluate, and test** the model. You'll also **store the model to disk** and then **register the model**  
 
-You will next use the registered model to **create a docker image**. You can then **test the performance of your model** by deploying the container to ACI.  Call the web service with some dummy input data to **get a prediction**.
+You'll next use the registered model to **create a docker image**. You can then **test the performance of your model** by deploying the container to Azure container instance (ACI).  Call the web service with some dummy input data to **get a prediction**.
 
-Finally, you will **deploy the container to Azure IoT Edge device**. You create a a **deployment.json file** that contains the modules you want to deploy to the device and the routes. Then you **push this file to the IoT Hub**, which will then **send it to the IoT Edge device**. The IoT Edge agent will then pull the Docker images and run them. In the sections below, we describe these steps in greater detail.   
+Finally, you'll **deploy the container to Azure IoT Edge device**. You create a **deployment.json file** that contains the modules you want to deploy to the device and the routes. Then you **push this file to the IoT Hub**, which will then **send it to the IoT Edge device**. The IoT Edge agent will then pull the Docker images and run them. In the sections below, we describe these steps in greater detail.   
 
 ## Azure model management
 
@@ -42,7 +42,7 @@ Azure IoT Edge
 
 Azure Data Box Edge.  
 
-In this instance, you will use **Azure Container Instance** as a compute target.  After the model is created in a container, you can deploy the model as a container as a web service to IoT Edge devices.
+In this instance, you'll use **Azure Container Instance** as a compute target.  After the model is created in a container, you can deploy the model as a container as a web service to IoT Edge devices.
 
 To deploy the model, you need the following items:
 
