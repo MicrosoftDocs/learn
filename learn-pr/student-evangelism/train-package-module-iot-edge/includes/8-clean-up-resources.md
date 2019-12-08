@@ -1,0 +1,1 @@
+Clean up resources if you do not intend to reuse them. Deleting Azure resources and resource groups is irreversible. You should ensure that you want to delete the resources. 
