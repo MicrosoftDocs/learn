@@ -18,9 +18,9 @@ abstract: |
   
   "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence:Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
 prerequisites: |
-	- Ability to use IoT Hub Azure in
-	- Ability to use Azure Cloud Shell
-	- Experience creating and managing resources using the Azure portal or Azure Cloud Shell at the beginner level
+  - Ability to use IoT Hub Azure in
+  - Ability to use Azure Cloud Shell
+  - Experience creating and managing resources using the Azure portal or Azure Cloud Shell at the beginner level
 iconUrl: /learn/achievements/student-evangelism/train-and-package-an-azure-machine-learning-module-for-deployment-to-iot-edge.svg
 badge:
   uid: learn.train-package-azure-ml-model.badge
