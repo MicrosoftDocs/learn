@@ -69,7 +69,7 @@ Notice that this configuration creates just one user: *testuser1*. Although you 
 
 Tim and Andy update their configuration, like this:
 
-[!code-yml[](code/6-users-1.yml?highlight=11-13)]
+[!code-yml[](code/7-users-1.yml?highlight=11-13)]
 
 The `loop` block applies the configuration for each item in the list. The `name` attribute uses the `{{ }}` syntax to interpolate, or replace, the value with the current element in the list.
 
@@ -79,7 +79,7 @@ Next, Tim and Andy need to consider under which user account the configuration w
 
 To do so, they need to add the `become` directive to their configuration, like this:
 
-[!code-yml[](code/6-users-1.yml?highlight=3)]
+[!code-yml[](code/7-users-2.yml?highlight=3)]
 
 A related setting, not shown here, is `become_user`. The default value of this setting is `root`. When this configuration runs, Ansible activates privilege escalation as the *root* user.
 
